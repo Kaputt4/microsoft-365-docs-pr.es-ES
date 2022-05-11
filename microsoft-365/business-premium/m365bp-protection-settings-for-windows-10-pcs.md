@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger los dispositivos Windows 10.
-ms.openlocfilehash: ef4df7b308c52275db8d43c1c0619a64594ed690
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: eb9ab2b1c1873695e6655aedf2edd64da9cf9ef2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096247"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317459"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos para equipos Windows 10
 
@@ -98,4 +98,4 @@ Para obtener más información, consulte [Cómo se asignan las características 
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas de proteger con planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md) 
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md) 

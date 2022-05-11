@@ -101,6 +101,7 @@
 ###### [Configurar y validar exclusiones](mac-exclusions.md)
 ###### [Definir las preferencias](mac-preferences.md)
 ###### [Detectar y bloquear aplicaciones potencialmente no deseadas](mac-pua.md)
+###### [Protección de la configuración de seguridad de macOS con la protección contra alteraciones](tamperprotection-macos.md)
 ###### [Control de dispositivos]()
 ####### [Información general sobre el control de dispositivos](mac-device-control-overview.md)
 ####### [Ejemplos de JAMF](mac-device-control-jamf.md)

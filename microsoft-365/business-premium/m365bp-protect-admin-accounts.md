@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: b054267264b8440929559ad1a2e335449f3c0309
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1428ee6b447f3f841e7e8e9b77cfd82c2f7a6444
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091531"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320019"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Proteger las cuentas de administrador en Microsoft 365 Empresa Premium
 
-Dado que las cuentas de administrador incluyen privilegios elevados, son un objetivo de valor para hackers y ciberdelincuentes. Este artículo describe:
+Dado que las cuentas de administrador incluyen privilegios elevados, son un objetivo de valor para hackers y ciberdelincuentes. En este artículo se describe:
 
 - Cómo configurar otra cuenta Administrador para emergencias.
 - Cómo proteger estas cuentas.
@@ -50,17 +50,17 @@ Para crear cuentas de administrador adicionales:
 
     ![Elija Usuarios y, a continuación, Usuarios activos en el panel de navegación izquierdo.](../media/Activeusers.png)
 
- 2. En la página **Usuarios activos**, seleccione **Agregar un usuario** en la parte superior de la página y, en el panel **Nuevo usuario**, escriba el nombre y cualquier otra información.
+ 1. En la página **Usuarios activos**, seleccione **Agregar un usuario** en la parte superior de la página. 
 
- 3. Expanda la sección **Roles** y elija **Administrador global** para conceder a este usuario acceso de administrador global. También puede elegir **Administrador personalizado** y elegir cualquiera de los roles que se muestran.
+ 1. En el panel **Agregar un usuario**, escriba información básica, como la información de nombre y nombre de usuario.
 
-    Escriba un correo electrónico alternativo en el cuadro de texto **Dirección de correo electrónico alternativa**. Podrá usar esta dirección para recuperar la información de contraseña si no puede acceder. En el caso de los administradores globales, también se enviará un extracto de facturación a esta dirección.
+ 1. Escriba y configure la información de **Licencias de productos**.
 
-    ![Elija el rol de administrador.](../media/adminroles.png)
+ 1. En **Configuración opcional**, defina el rol del usuario, incluida la adición del acceso al centro de administración si procede.
 
- 4. En la sección **Licencias de producto**, mueva el selector de **Microsoft 365 Empresa** a **Desactivado** y **Crear usuario sin licencia de producto** a **Activado**.
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Definir nuevos roles de usuario.":::
 
-    ![Elija la licencia del producto.](../media/productlicense.png)
+ 1. Finalice y revise la configuración y seleccione **Finalizar la adición** para confirmar los detalles.
 
 ## <a name="create-an-emergency-admin-account"></a>Crear una cuenta de administrador de emergencia
 
@@ -68,17 +68,19 @@ También debería crear una cuenta como copia de seguridad que no esté configur
 
 ## <a name="create-a-user-account-for-yourself"></a>Crear una cuenta de usuario propia
 
-Use su cuenta de usuario para colaborar con su organización, incluido comprobar el correo electrónico. Lo que significa que las credenciales de administrador pueden ser similares a  *Alice.Chavez <span></span>@Contoso.org* y la cuenta de usuario habitual podría asemejarse a *Alice <span></span>@Contoso.com*.
+Use su cuenta de usuario para colaborar con su organización, incluido comprobar el correo electrónico. Lo que significa que las credenciales de administrador pueden ser similares a  *Alice.Chavez <span></span>@Contoso.org*, por ejemplo, y la cuenta de usuario habitual podría asemejarse a *Alice <span></span>@Contoso.com*.
 
 Para crear una nueva cuenta de usuario:
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centro de administración de Microsoft 365</a> y elija **Usuarios** \> **Usuarios activos** en el panel de navegación izquierdo.
 
-2. En la página **Usuarios activos**, seleccione **Agregar un usuario** en la parte superior de la página y, en el panel **Nuevo usuario**, escriba el nombre y cualquier otra información.
+1. En la página **Usuarios activos**, seleccione **Agregar un usuario** en la parte superior de la página y, en el panel **Agregar un usuario**, escriba el nombre y cualquier otra información.
 
-3. Expanda la sección **Roles** y elija **Usuario (sin acceso administrativo)**.
+1. En la sección **Licencias de productos**, seleccione la casilla de **Microsoft 365 Empresa Premium (sin acceso administrativo)**.
 
-4. En la sección **Licencias de producto**, mueva el selector de **Microsoft 365 Empresa** a **Activado**.
+1. En la sección **Configuración opcional**, deje seleccionado el botón de radio predeterminado para **Usuario (sin acceso al centro de administración)**.
+
+1. Finalice y revise la configuración y seleccione **Finalizar la adición** para confirmar los detalles.
 
 ## <a name="additional-recommendations"></a>Recomendaciones adicionales
 

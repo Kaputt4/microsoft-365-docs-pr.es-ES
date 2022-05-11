@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: f888556ea32d9d59c53728b30b629169bc9db45d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093248"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317992"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -53,9 +53,9 @@ Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración b
 - [Agregar usuarios y asignar licencias](../admin/add-users/add-users.md)
 - [Actualizar los registros DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Básico, que funciona de la misma manera en Microsoft 365 Empresa Premium.<br/><br/>
+En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Estándar, que funciona de la misma manera en Microsoft 365 Empresa Premium.<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > Una vez que haya agregado usuarios, asígneles un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md). La guía le guía a través del inicio de sesión, la obtención de aplicaciones de Office y el almacenamiento, la copia y el uso compartido de archivos.
@@ -72,8 +72,13 @@ Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microso
 
 4. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
 
-También consulte [Buscar un asociado o distribuidor](../admin/manage/find-your-partner-or-reseller.md).
+## <a name="see-also"></a>Vea también
 
+- [Buscar un asociado o distribuidor](../admin/manage/find-your-partner-or-reseller.md)
+
+- [Configurar las contraseñas de autoservicio](../admin/add-users/let-users-reset-passwords.md)
+
+- [Configurar la administración de grupos de autoservicio](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## <a name="next-objectives"></a>Siguientes objetivos
 
 Una vez finalizado el proceso de configuración inicial, los siguientes objetivos son configurar las funcionalidades de seguridad y el cumplimiento:

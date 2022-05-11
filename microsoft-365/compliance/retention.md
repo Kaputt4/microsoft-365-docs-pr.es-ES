@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286932"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302232"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -101,9 +101,11 @@ A diferencia de las directivas de retención, la configuración de retención de
 
 - Uso de [clasificadores que se pueden entrenar](classifier-learn-about.md) para identificar el contenido que se va a etiquetar.
 
-- Aplicación de una etiqueta predeterminada a los documentos de SharePoint.
+- Aplique una etiqueta predeterminada para los elementos de SharePoint o los mensajes de Exchange.
 
-- Soporte técnico de [revisión de eliminación](./disposition.md) para revisar el contenido antes de que se elimine de forma permanente.
+- Acciones admitidas al final del período de retención:
+    - [Revisión para eliminación](./disposition.md) para revisar el contenido antes de que se elimine permanentemente.
+    - Aplicar automáticamente una etiqueta de retención
 
 - Marcado del contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta y tener siempre una [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
 
@@ -219,14 +221,18 @@ Para las etiquetas de retención estándar (no marcan los elementos como un [reg
 
 - Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra etiqueta predeterminada o quitarse automáticamente.
 
-  Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
-
-  - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con dos posibles excepciones: 
+    
+    - La etiqueta existente está configurada para aplicar automáticamente una etiqueta de retención diferente al final del período de retención.
+    - La etiqueta existente se aplicó como una etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra o quitarse automáticamente. 
+        
+        Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
+        - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Si hay varias directivas de etiqueta de aplicación automática que podrían aplicar una etiqueta de retención y el contenido cumple las condiciones de varias directivas, se aplica la etiqueta de retención de la directiva de aplicación automática más antigua (por fecha de creación).
 
-Cuando las etiquetas de retención marcan los elementos como un registro o un registro normativo, estas etiquetas nunca se cambian automáticamente. Solo los administradores del contenedor pueden cambiar o quitar manualmente las etiquetas de retención que marcan los elementos como un registro, pero no los registros reglamentarios. Para más información, vea [Comparar restricciones de acciones permitidas o bloqueadas](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Cuando las etiquetas de retención marcan elementos como un registro o un registro normativo, estas etiquetas nunca se cambian automáticamente durante el período de retención configurado. Solo los administradores del contenedor pueden cambiar o quitar manualmente las etiquetas de retención que marcan los elementos como un registro, pero no los registros reglamentarios. Para más información, vea [Comparar restricciones de acciones permitidas o bloqueadas](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### <a name="monitoring-retention-labels"></a>Supervisar las etiquetas de retención
 
@@ -254,6 +260,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Configuración de retención que puede conservar y, después, eliminar, solo conservar o solo eliminar. |Sí |Sí |
 |Cargas de trabajo compatibles: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Grupos de Microsoft 365 <br />- Skype Empresarial <br />- Teams<br />- Yammer|<br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí | <br /> Sí, excepto carpetas públicas <br /> Sí <br /> Sí <br /> Sí <br /> No <br /> No <br /> No |
 |Retención aplicada automáticamente | Sí | Sí |
+|Aplicar automáticamente diferentes configuraciones de retención al final del período de retención | No | Sí |
 |La retención aplicada se basa en las condiciones <br /> - tipos de información confidencial, consultas KQL y palabras clave, clasificadores de aprendizaje, archivos adjuntos en la nube| No | Sí |
 |Retención aplicada manualmente | No | Sí |
 |Interacción del usuario final | No | Sí |

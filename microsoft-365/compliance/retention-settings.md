@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285388"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302130"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -396,6 +396,8 @@ Al final del período de retención, usted elige si desea que el contenido se el
 
 ![Página de configuración de retenciones.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
+Como se explica en la sección siguiente, las etiquetas de retención tienen otra opción; aplicar otra etiqueta de retención con su propio período de retención.
+
 Antes de configurar la retención, familiarícese primero con los límites de capacidad y almacenamiento de las cargas de trabajo correspondientes:
 
 - Para SharePoint y OneDrive, los elementos retenidos se almacenan en la biblioteca de conservación de documentos del sitio, que se incluye en la cuota de almacenamiento del sitio. Para obtener más información, consulte [Administrar los límites de almacenamiento del sitio](/sharepoint/manage-site-collection-storage-limits) de la documentación de SharePoint.
@@ -403,6 +405,55 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 - Para Exchange, Teams y Yammer, donde los mensajes retenidos se almacenan en buzones, consulte [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) y habilite [archivo de expansión automática](autoexpanding-archiving.md).
     
     En casos extremos en los que un gran volumen de correo electrónico se elimina en un breve período de tiempo, ya sea por parte de los usuarios o desde la configuración de directiva de manera automática, es posible que también necesite configurar Exchange para mover con más frecuencia elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables en el buzón de archivo. Para obtener instrucciones paso a paso, vea [Aumentar la cuota de elementos recuperables para buzones de correo en suspensión](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+
+#### <a name="relabeling-at-the-end-of-the-retention-period"></a>Volver a etiquetar al final del período de retención
+
+> [!NOTE]
+> Esta opción se está implementando actualmente en versión preliminar y está sujeta a cambios.
+
+Al configurar una etiqueta de retención para aplicar automáticamente otra etiqueta de retención al final del período de retención, el elemento está sujeto a la configuración de retención de la etiqueta de retención recién seleccionada. Esta opción le permite cambiar automáticamente la configuración de retención del elemento.
+
+Puede cambiar la etiqueta de reemplazo después de crear y guardar la etiqueta de retención principal. Para los elementos que ya tienen aplicada la etiqueta de retención principal y dentro del período de retención configurado, el cambio de etiqueta de reemplazo se sincronizará con estos elementos. Al igual que con otros cambios de etiqueta, espere hasta 7 días para este período de sincronización.
+
+Para la etiqueta de reemplazo, normalmente elegirá una etiqueta que tenga un período de retención más largo que la etiqueta de retención principal. Sin embargo, este no siempre es el caso y depende de la configuración de la etiqueta respecto al inicio del período de retención. Por ejemplo, la etiqueta de retención principal está configurada para iniciar el período de retención cuando se crea el elemento y la etiqueta de reemplazo inicia el período de retención cuando se etiqueta o cuando se produce un evento.
+
+Si también hay un cambio en si la etiqueta [marca el elemento como un registro o un registro regular](declare-records.md), la etiqueta de retención de reemplazo también podrá cambiar las [restricciones sobre qué acciones se permiten o bloquean](records-management.md#records) para ese elemento.
+
+##### <a name="relabeling-example-configuration"></a>Volver a etiquetar la configuración de ejemplo
+
+Cree y configure una etiqueta de retención para que un requisito de cumplimiento del sector conserve el contenido durante tres años después de su creación y marque el elemento como un registro. Cuando se aplique esta etiqueta, los usuarios no podrán eliminar el elemento de su aplicación, porque es una de las restricciones de un registro.
+
+Al final de los tres años, desea conservar automáticamente el contenido durante dos años más debido a las directivas de cumplimiento interno, pero no es necesario marcarlo como un registro con las restricciones que aplica esta configuración.
+
+Para completar la configuración, seleccione la configuración de etiqueta para cambiar la etiqueta al final del período de retención y elija una etiqueta que conserve el contenido durante cinco años después de crearlo y que no marque el elemento como registro. 
+
+Con esta configuración concatenada, los usuarios podrán eliminar el elemento de su aplicación después de tres años, pero seguirá siendo accesible para las búsquedas de exhibición de documentos electrónicos durante cinco años.
+
+##### <a name="considerations-for-the-relabeling-option"></a>Consideraciones para la opción de reetiquetado
+
+- No se puede volver a etiquetar un registro normativo, pero la etiqueta de reemplazo se puede configurar para marcar el contenido como un registro normativo.
+
+- No podrá eliminar una etiqueta de retención seleccionada como etiqueta de reemplazo.
+
+- Puede elegir una etiqueta de reemplazo que esté configurada para aplicar otra etiqueta de reemplazo. No hay ningún límite en el número de etiquetas de reemplazo que puede tener un elemento.
+
+- Si la etiqueta de reemplazo marca el elemento como un registro o registro normativo, pero no se puede aplicar porque el archivo está actualmente desprotegido, se reintenta el proceso de volver a etiquetar cuando se vuelve a proteger el archivo o se descarta la desprotección.
+
+- Debido a un problema conocido de esta versión preliminar, una etiqueta de reemplazo solo es visible para los usuarios de Outlook cuando se incluye en una directiva de etiqueta publicada para la misma ubicación o se configura para solo eliminación.
+
+##### <a name="configuration-paths-for-relabeling"></a>Rutas de configuración para volver a etiquetar
+
+Al crear una etiqueta de retención, existen dos rutas de configuración para volver a etiquetar al final del período de retención:
+
+- Si necesita conservar inicialmente el contenido con la etiqueta principal (lo más habitual): en la página **Definir configuración de etiqueta**, seleccione **Conservar elementos indefinidamente o durante un período específico** y especifique el período de retención. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Cambiar la etiqueta** > **Elegir una etiqueta**.
+
+- Si no necesita conservar inicialmente el contenido con la etiqueta principal: en la página **Definir configuración de etiqueta**, seleccione **Aplicar acciones después de un período específico**, especifique el período de retención y, a continuación, seleccione **Cambiar la etiqueta** > **Elegir una etiqueta**.
+
+En ambos casos, la etiqueta de reemplazo ya debe haberse creado, pero no es necesario incluirla en una directiva de etiqueta existente.
+
+![Cambie la opción de etiqueta después del período de retención.](../media/change-label-option.png)
+
+Otra opción es que los revisores de eliminación seleccionen manualmente una etiqueta de reemplazo como parte del [proceso de revisión de eliminación](disposition.md#disposition-reviews) si la configuración de etiqueta **Iniciar una revisión de eliminación** está seleccionada en la página **Elegir lo que sucede después del período de retención**.
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminar el contenido que supera una antigüedad determinada
 

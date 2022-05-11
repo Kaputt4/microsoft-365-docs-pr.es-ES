@@ -1,5 +1,5 @@
 ---
-title: Editar o establecer la configuración de protección de aplicaciones para dispositivos Windows 10
+title: Editar o establecer la configuración de protección de aplicaciones para dispositivos Windows
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
@@ -27,22 +27,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Obtenga información sobre cómo crear o editar directivas de administración de aplicaciones y proteger archivos de trabajo en los dispositivos de Windows 10 personales de los usuarios.
-ms.openlocfilehash: f636c138d9364d9bc4739cc5ee11737707d32913
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo crear o editar directivas de administración de aplicaciones y proteger archivos de trabajo en los dispositivos de Windows personales de los usuarios.
+ms.openlocfilehash: e01cafb882e71537bffca3fefd2f84d57c112c7e
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096015"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318203"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Establecer o editar la configuración de protección de aplicaciones para dispositivos Windows 10
+# <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>Establecer o editar la configuración de protección de aplicaciones para dispositivos Windows
 
-Este artículo aplica a Microsoft 365 Empresa Premium.
+En este artículo se describe cómo configurar directivas de protección de aplicaciones para los dispositivos Windows de la empresa.
 
-> [!NOTE]
-> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
-
-## <a name="edit-an-app-management-policy-for-windows-10"></a>Editar una directiva de administración de aplicaciones para Windows 10
+## <a name="edit-an-app-management-policy-for-windows-devices"></a>Editar una directiva de administración de aplicaciones para dispositivos Windows
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 
@@ -52,9 +49,9 @@ Este artículo aplica a Microsoft 365 Empresa Premium.
 
 4. Elija **Editar** junto a una configuración que quiera cambiar y, luego, **Guardar**.
 
-## <a name="create-an-app-management-policy-for-windows-10"></a>Crear una directiva de administración de aplicaciones para Windows 10
+## <a name="create-an-app-management-policy-for-windows-devices"></a>Crear una directiva de administración de aplicaciones para dispositivos Windows
 
-Si los usuarios tienen dispositivos de Windows 10 personales en los que realizan tareas de trabajo, también puede proteger los datos en ellos.
+Si los usuarios tienen dispositivos de Windows personales en los que realizan tareas de trabajo puede proteger los datos en ellos.
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 
@@ -86,4 +83,8 @@ Si los usuarios tienen dispositivos de Windows 10 personales en los que realizan
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas de proteger con planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>Siguiente objetivo
+
+[Proteger dispositivos Windows](m365bp-secure-windows-devices.md)

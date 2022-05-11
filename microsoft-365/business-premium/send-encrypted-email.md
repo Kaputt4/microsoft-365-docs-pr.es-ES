@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar un correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 02dc3b7720f6aa46ffaf3cf4a04511c725798a24
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095174"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316840"
 ---
 # <a name="encrypt-or-label-sensitive-email"></a>Cifre o etiquete su correo electrónico confidencial
 
@@ -71,5 +71,6 @@ Para obtener más información, consulte [Definir reglas de flujo de correo para
 
 También puede aplicar la personalización para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, consulte [Agregar la marca de su organización a los mensajes cifrados](../compliance/email-encryption.md).
 
-Si ha llegado hasta aquí, ha completado correctamente otra misión, así que ¡felicitaciones! No hay tiempo para descansar en nuestros éxitos, así que comencemos a configurar un entorno seguro en el que el equipo pueda [colaborar de forma segura](m365bp-collaborate-share-securely.md). 
+## <a name="next-mission"></a>Próxima misión
 
+Si ha llegado hasta aquí, ha completado correctamente otra misión, así que ¡felicitaciones! No hay tiempo para descansar en nuestros éxitos, así que comencemos a configurar un entorno seguro en el que el equipo pueda [colaborar de forma segura](m365bp-collaborate-share-securely.md).

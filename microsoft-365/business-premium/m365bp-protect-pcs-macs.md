@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o sus propios dispositivos (BYOD) frente a ciberataques con Microsoft 365 Empresa Premium. Cómo configurar la ciberseguridad para equipos Windows y Mac.
-ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094171"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318842"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows 10 no administrados en Microsoft 365 Empresa Premium
 
@@ -71,6 +71,8 @@ También puede reducir el riesgo de malware usando solo software de orígenes fi
 
 **Activar la protección de firewall**<p>
 Use la configuración de firewall para impedir contactos no deseados con su Mac iniciados por otros equipos cuando esté conectado a Internet o a una red. Sin esta protección su Mac podría ser más vulnerable al acceso no autorizado. Consulte [sobre la aplicación firewall](https://support.apple.com/HT201642) para obtener instrucciones.
+
+## <a name="next-mission"></a>Próxima misión
 
 ¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
 

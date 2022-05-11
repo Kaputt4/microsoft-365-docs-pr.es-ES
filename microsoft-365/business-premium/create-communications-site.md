@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un sitio de comunicaciones de SharePoint para su campaña o negocio con Microsoft 365, y proteja al equipo de ciberataques y ataques de malware y otras amenazas debido a un uso compartido incorrecto de archivos.
-ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100189"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319536"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Un sitio de comunicación en SharePoint Online
 
@@ -72,5 +72,7 @@ Obtenga información sobre todos los [sitios de comunicaciones](https://support.
 ## <a name="admin-settings"></a>Configuración de administrador
 
 Si no ve el vínculo de **+ Crear sitio**, es posible que la creación de sitios sin intervención del administrador no esté disponible en Microsoft 365. Para crear un sitio de grupo, póngase en contacto con la persona que administra Microsoft 365 en su organización. Si es un administrador de Microsoft 365, consulte [Administrar la creación de sitios en SharePoint Online](/sharepoint/manage-site-creation) para habilitar la creación de sitios sin intervención del administrador en su organización o [Administrar sitios en el nuevo Centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center) para crear un sitio desde el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>.
+
+## <a name="next-mission"></a>Próxima misión
 
 Enhorabuena &mdash; ha completado la misión. Ahora, de inmediato, centre su atención en [proteger los dispositivos administrados](m365bp-protect-devices.md) para toda la organización.

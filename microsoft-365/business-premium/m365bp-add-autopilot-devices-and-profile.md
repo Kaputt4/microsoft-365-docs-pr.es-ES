@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Obtenga información sobre cómo usar Windows AutoPilot para configurar nuevos dispositivos de Windows 10 para su empresa para que estén listos para su uso por parte de los empleados.
-ms.openlocfilehash: 6bedb478d0ef8f961c7b75eb7013b2b5e51ce2c9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: afbf793a107e286c28a589e0bbaa1a9d05ae229d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092612"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318855"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar esta guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 

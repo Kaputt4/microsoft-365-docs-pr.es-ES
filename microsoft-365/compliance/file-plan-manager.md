@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d025dc7637b9c7b494a5bff3447fe4429ba24701
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286086"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302209"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
@@ -221,9 +221,11 @@ Use la siguiente información para rellenar la plantilla descargada e importar n
 
 La configuración de etiqueta no se admite actualmente para la importación:
 
-- Revisión para eliminación en varias fases: aunque puede configurar las opciones de una sola fase de revisión para eliminación al importar las etiquetas de retención con una plantilla, no puede especificar las fases de revisión adicionales. En su lugar, configúrelas en el centro de cumplimiento después de que la importación se realice correctamente.
+- Revisión para eliminación en varias fases: aunque puede configurar las opciones de una sola fase de revisión para eliminación al importar las etiquetas de retención con una plantilla, no puede especificar las fases de revisión adicionales. En su lugar, configúrelas en el portal de cumplimiento después de que la importación se realice correctamente.
 
-- Desbloquee este registro de forma predeterminada (actualmente se está implementando en versión preliminar): esta configuración no está disponible en la plantilla para importar y no puede seleccionar esta configuración en el centro de cumplimiento después de que la importación se realice correctamente.
+- Desbloquee este registro de forma predeterminada (actualmente se está implementando en versión preliminar): esta configuración no está disponible en la plantilla para importar y no puede seleccionar esta configuración en el portal de cumplimiento después de que la importación se realice correctamente.
+
+- Etiqueta de reemplazo (actualmente en versión preliminar): esta configuración no está disponible en la plantilla para importar, pero puede seleccionarla en el portal de cumplimiento cuando la importación se realice correctamente.
 
 
 ## <a name="next-steps"></a>Siguientes pasos

@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo configurar y proteger dispositivos administrados frente a amenazas de seguridad y ciberataques. Implemente defensas de ciberseguridad y protección de puntos de conexión mediante la inscripción e incorporación de todos los dispositivos. Obtenga información sobre cómo configurar directivas de dispositivo y administrar grupos de dispositivos.
-ms.openlocfilehash: 17d637e980be09e8e936ef85ca2ed05767a12cfb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 12a80864c0bd131c96dc57d89d2638521290827e
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101833"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319925"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configuración y protección de dispositivos administrados
 
-Le damos la bienvenida a su misión crítica final. Aquí, incorporará e implementará la protección para todos los dispositivos administrados de su organización. Incorpore Defender para asegurarse de que el malware y el antivirus siempre están actualizados y establezca directivas que ayuden a bloquear los sistemas. Tenga la seguridad de que ha hecho lo que puede para protegerse una vez que se han logrado estos objetivos.
+Le damos la bienvenida a su misión crítica final. Aquí, incorporará e implementará la protección para todos los dispositivos administrados de su organización. Le beneficiará incorporar Defender para asegurarse de que el malware y el antivirus siempre están actualizados y establecer directivas que ayuden a bloquear los sistemas. A continuación, asegúrese de que todos los dispositivos Windows estén protegidos y configurados para la implementación de Office. Tenga la seguridad de que ha hecho lo que puede para protegerse una vez que se han logrado estos objetivos.
 
 Sus objetivos de misión:
 
