@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664158"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368119"
 ---
 # <a name="exclude-devices"></a>Excluir dispositivos
 
@@ -33,11 +33,11 @@ ms.locfileid: "64664158"
 
 > ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>Excluir dispositivos de Administración de amenazas y vulnerabilidades
+## <a name="exclude-devices-from-vulnerability-management"></a>Excluir dispositivos de administración de vulnerabilidades
 
-Excluir dispositivos inactivos, duplicados o fuera del ámbito le permite centrarse en detectar y priorizar los riesgos en los dispositivos activos. Esta acción también puede ayudar a reflejar una puntuación de exposición de Administración de amenazas y vulnerabilidades más precisa, ya que los dispositivos excluidos no serán visibles en los informes de Administración de amenazas y vulnerabilidades.
+Excluir dispositivos inactivos, duplicados o fuera del ámbito le permite centrarse en detectar y priorizar los riesgos en los dispositivos activos. Esta acción también puede ayudar a reflejar una puntuación de exposición de administración de vulnerabilidades más precisa, ya que los dispositivos excluidos no serán visibles en los informes de administración de vulnerabilidades.
 
-Una vez que se excluyen los dispositivos, no podrá ver información actualizada o relevante sobre vulnerabilidades y software instalado en estos dispositivos. Afecta a todas las páginas Administración de amenazas y vulnerabilidades, informes y tablas relacionadas en la búsqueda avanzada.
+Una vez que se excluyen los dispositivos, no podrá ver información actualizada o relevante sobre vulnerabilidades y software instalado en estos dispositivos. Afecta a todas las administración de vulnerabilidades páginas, informes y tablas relacionadas en la búsqueda avanzada.
 
 Aunque la característica de exclusión de dispositivos quita los datos del dispositivo de administración de vulnerabilidades páginas e informes, los dispositivos permanecen conectados a la red y pueden seguir siendo un riesgo para la organización. Podrá cancelar la exclusión del dispositivo en cualquier momento.
 
@@ -58,7 +58,7 @@ Puede optar por excluir un solo dispositivo o varios dispositivos al mismo tiemp
     - Dispositivo duplicado
     - El dispositivo no existe
     - Fuera de ámbito
-    - Other
+    - Otro
 
 4. Escriba una nota y seleccione **Excluir dispositivo**.
 

@@ -1,7 +1,7 @@
 ---
-title: Comparar Microsoft Defender para el plan de extremo 1 con el plan 2
-description: Compare Defender for Endpoint Plan 1 con plan 2. Obtenga información sobre las diferencias entre los planes y seleccione el plan que se adapte a las necesidades de su organización.
-keywords: Defender para endpoint, protección contra amenazas avanzada, protección de puntos de conexión
+title: Comparar planes de Microsoft Defender para punto de conexión
+description: Compare el plan 1 de Defender para punto de conexión con el plan 2. Obtenga información sobre las diferencias entre los planes y seleccione el plan que se adapte a las necesidades de su organización.
+keywords: Defender para punto de conexión, protección contra amenazas avanzada, endpoint protection
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,37 +17,32 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d1ed6f5b45bc488c998c99efa1c35d5af869194e
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 3fb31e985e0f6d2191e45c9e4350399e4bb7eb40
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464136"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368273"
 ---
-# <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Endpoint
+# <a name="compare-microsoft-defender-for-endpoint-plans"></a>Comparar planes de Microsoft Defender para punto de conexión
 
-**Se aplica a**
+Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas. Defender para punto de conexión proporciona protección contra amenazas avanzada que incluye antivirus, antimalware, mitigación de ransomware, etc., junto con la administración centralizada y la generación de informes. Puede elegir entre las siguientes opciones para Microsoft Defender para punto de conexión:
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas. Defender for Endpoint proporciona protección contra amenazas avanzada que incluye antivirus, antimalware, mitigación de ransomware y mucho más, junto con la administración centralizada y los informes. Hay dos planes disponibles:   
- 
-- [Plan 1 de Microsoft Defender para endpoints](defender-endpoint-plan-1.md); y 
-- [Plan 2 de Microsoft Defender para Endpoint](microsoft-defender-endpoint.md), anteriormente conocido como [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
+Puede usar este artículo para ayudar a aclarar qué protección proporcionan las diferentes características disponibles en El plan 1 de Defender para punto de conexión, El plan 2 de Defender para punto de conexión y el complemento Administración de vulnerabilidades de Defender.
 
-## <a name="compare-defender-for-endpoint-plans"></a>Comparar planes de Defender para endpoints
+| [Plan 1 de Defender para punto de conexión](defender-endpoint-plan-1.md) | [Plan 2 de Defender para punto de conexión](microsoft-defender-endpoint.md) | [Complemento de Administración de vulnerabilidades de Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)|
+|:---|:---|:---|
+| [Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) <br/>(incluye antimalware y antivirus) <p> [Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Acciones de contestación manual](defender-endpoint-plan-1.md#manual-response-actions) <p> [Administración centralizada](defender-endpoint-plan-1.md#centralized-management) <p>[Informes de seguridad](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis) | Funcionalidades del plan 1 de Defender para punto de conexión, además de: <p> <p> [Detección de dispositivo](device-discovery.md) <p> [Inventario de dispositivos](machines-view-overview.md) <p> [Funcionalidades de administración de vulnerabilidades de Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) <p> [Análisis de amenazas](threat-analytics.md) <p> [Investigación y respuesta automatizadas](automated-investigations.md) <p> [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) <p> [EDR](overview-endpoint-detection-response.md) <p> [Expertos en amenazas de Microsoft](microsoft-threat-experts.md) | Administración adicional de vulnerabilidades de Defender para Defender para el plan de punto de conexión 2: <p> [Evaluación de líneas base de seguridad](../defender-vulnerability-management/tvm-security-baselines.md) <p> [Bloquear aplicaciones vulnerables](../defender-vulnerability-management/tvm-block-vuln-apps.md) <p> [Extensiones del explorador](../defender-vulnerability-management/tvm-browser-extensions.md) <p> [Evaluación de certificados digitales](../defender-vulnerability-management/tvm-certificate-inventory.md) <p> [Análisis de recursos compartidos de red](../defender-vulnerability-management/tvm-network-share-assessment.md)|
+| [Compatibilidad con dispositivos Windows 10, iOS, sistema operativo Android y macOS](defender-endpoint-plan-1.md#cross-platform-support) | Compatibilidad con plataformas Windows (cliente y servidor) y no Windows<br/> (macOS, iOS, Android y Linux) | Compatibilidad con plataformas Windows (cliente y servidor) y no Windows<br/> (macOS, iOS, Android y Linux) |
+| Para probar el plan 1 de Defender para punto de conexión, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) | Para probar el plan 2 de Defender para punto de conexión, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) | Para probar Administración de vulnerabilidades de Microsoft Defender complemento, visite [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). Para obtener más información, consulte [Get Defender Vulnerability Management](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-En la tabla siguiente se describe lo que se incluye en cada plan en un nivel alto. <br/><br/>
+## <a name="next-steps"></a>Pasos siguientes
 
-| [Plan 1 de Defender para punto de conexión](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
-|:---|:---|
-| [Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) <br/>(incluye antimalware y antivirus) <p> [Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Acciones de respuesta manuales](defender-endpoint-plan-1.md#manual-response-actions) <p> [Administración centralizada](defender-endpoint-plan-1.md#centralized-management) <p>[Informes de seguridad](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), además de: <p> [Detección de dispositivo](device-discovery.md) <p> [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md) <p> [Análisis de amenazas](threat-analytics.md) <p> [Investigación y respuesta automatizadas](automated-investigations.md) <p> [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) <p> [EDR](overview-endpoint-detection-response.md) <p> [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)  |
-| [Compatibilidad con Windows 10, iOS, sistema operativo Android y dispositivos macOS](defender-endpoint-plan-1.md#cross-platform-support) | Compatibilidad con Windows (cliente y servidor) y plataformas no Windows web<br/> (macOS, iOS, Android y Linux) |
-| Para probar Defender for Endpoint Plan 1, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | Para probar Defender for Endpoint Plan 2, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial). |
-
-## <a name="next-steps"></a>Siguientes pasos
-
-- [Obtener información general sobre Microsoft Defender para endpoint Plan 1](defender-endpoint-plan-1.md)
-- [Configurar y configurar Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
-- [Introducción al uso de Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
+- [Obtenga información general sobre Microsoft Defender para punto de conexión plan 1](defender-endpoint-plan-1.md)
+- [Configurar Defender para punto de conexión plan 1](mde-p1-setup-configuration.md)
+- [Comenzar mediante el plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)

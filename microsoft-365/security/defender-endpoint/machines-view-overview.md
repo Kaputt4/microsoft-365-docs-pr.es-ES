@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 631a141ca6c898c6394bfd34839fd65d351fe8fc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665544"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368185"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -30,13 +30,17 @@ ms.locfileid: "64665544"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-En la **lista Dispositivos** se muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.
+El **inventario de** dispositivos muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.
 
 De un vistazo verá información como dominio, nivel de riesgo, plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
+
+> [!NOTE]
+> El inventario de dispositivos está disponible en diferentes servicios de Microsoft 365 Defender. La información disponible para usted variará en función de su licencia. Obtendrá el conjunto más completo de funcionalidades al usar [Microsoft Defender para punto de conexión plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 Hay varias opciones entre las que puede elegir para personalizar la vista de lista de dispositivos. En la navegación superior, puede hacer lo siguiente:
 
@@ -119,7 +123,7 @@ Filtro | Descripción
 **Estado del sensor** </br> | Filtre por los siguientes estados de mantenimiento del sensor para los dispositivos incorporados a Microsoft Defender para punto de conexión:</br> - **Activo**: dispositivos que informan activamente de los datos del sensor al servicio.</br> - **Inactivo**: dispositivos que han dejado de enviar señales durante más de 7 días. </br> - **Mal configurado**: los dispositivos que han deteriorado las comunicaciones con el servicio o no pueden enviar datos del sensor. </br> Los dispositivos mal configurados se pueden clasificar aún más en: </br>  - Sin datos del sensor </br>  - Comunicaciones afectadas </br>  Para obtener más información sobre cómo solucionar problemas en dispositivos mal configurados, consulte [Corrección de sensores incorrectos](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado de incorporación** </br> | El estado de incorporación indica si el dispositivo está incorporado actualmente a Microsoft Defender para punto de conexión o no. Puede filtrar por los siguientes estados: </br> - **Incorporado**: el punto de conexión se incorpora a Microsoft Defender para punto de conexión.  </br> - **Se puede incorporar**: el punto de conexión se detectó en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos. </br> - **No compatible**: el punto de conexión se detectó en la red, pero no es compatible con Microsoft Defender para punto de conexión. </br> - **Información insuficiente**: el sistema no pudo determinar la compatibilidad del dispositivo.</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado del antivirus** </br> | Filtre la vista en función de si el estado del antivirus está deshabilitado, no actualizado o desconocido.</br></br> (_Solo equipos y dispositivos móviles_)
-**Group** </br> | Filtre la lista según el grupo que le interesa investigar. </br></br> (_Solo equipos y dispositivos móviles_)
+**Grupo** </br> | Filtre la lista según el grupo que le interesa investigar. </br></br> (_Solo equipos y dispositivos móviles_)
 **Administrado por** </br> | Administrado por indica cómo se administra el dispositivo. Se puede filtrar por:</br>- Microsoft Defender para punto de conexión </br> - Administración de dispositivos móviles (MDM) </br>- Desconocido: esto podría deberse a la ejecución de una versión Windows obsoleta, a que SCCM esté en su lugar o a otra MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_)
 **Tipo de dispositivo** </br> | Filtre por el tipo de dispositivo que le interesa investigar.</br></br> (_solo dispositivos IoT_)
 

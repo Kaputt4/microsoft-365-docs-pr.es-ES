@@ -1,5 +1,5 @@
 ---
-title: Paso 2. Usar Microsoft Teams para crear el canal de administración de contratos
+title: Paso 2. Uso de Microsoft Teams para crear el canal de administración de contratos
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,55 +11,55 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución Microsoft 365 contrato.
-ms.openlocfilehash: a5a42bedcb6acba4caf8f6f114812c63869ee92e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución de Microsoft 365.
+ms.openlocfilehash: 6020b6e57af285e96c7998454dc46e5eb19bc5f9
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172124"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368053"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Usar Microsoft Teams para crear el canal de administración de contratos
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Uso de Microsoft Teams para crear el canal de administración de contratos
 
-Cuando su organización configura una solución de administración de contratos, necesita una ubicación central en la que las partes interesadas puedan revisar y administrar contratos. Para ello, puede usar [Microsoft Teams](/microsoftteams/) para configurar un canal de Teams y usar las características de Teams para:
+Cuando su organización configura una solución de administración de contratos, necesita una ubicación central en la que las partes interesadas puedan revisar y administrar los contratos. Para ello, puede usar [Microsoft Teams](/microsoftteams/) para configurar un canal de Teams y usar las características de Teams para:
 
-- **Cree una ubicación para que las partes interesadas puedan ver fácilmente todos los contratos que requieren acción.** Por ejemplo, en Teams puede crear una pestaña Contratos en el canal de administración de **contratos** en la que los miembros pueden ver una vista de icono útil de todos los contratos que necesitan aprobación. También puede configurar la vista para que cada "tarjeta" enumera los datos importantes que le importan (como *El* *cliente,* el contratista y el importe de *la cuota).*
+- **Cree una ubicación para que las partes interesadas vean fácilmente todos los contratos que requieren acción.** Por ejemplo, en Teams puede crear una pestaña **Contratos** en el canal Administración de contratos en la que los miembros pueden ver una vista de icono útil de todos los contratos que necesitan aprobación. También puede configurar la vista para que cada "tarjeta" muestre los datos importantes que le importan (como *cliente*, *contratista* y *importe de cuota*).
 
-     ![Ficha Contratos.](../media/content-understanding/tile-view.png)
+     ![Pestaña Contratos.](../media/content-understanding/tile-view.png)
 
-- **Tener una ubicación para que los miembros interactúen entre sí y vean eventos importantes.** Por ejemplo, en Teams, la pestaña **Publicaciones** se puede usar para tener conversaciones, obtener actualizaciones y ver acciones (como un miembro que rechaza un contrato). Cuando ha ocurrido algo (como un nuevo contrato  enviado para su aprobación), la pestaña Publicaciones se puede usar no solo para anunciarlo, sino también para mantener un registro de él. Y si los miembros se suscriben a las notificaciones, se les notificará siempre que haya una actualización.
+- **Tener una ubicación para que los miembros interactúen entre sí y vean eventos importantes.** Por ejemplo, en Teams, la pestaña **Publicaciones** se puede usar para tener conversaciones, obtener actualizaciones y ver acciones (como un miembro que rechaza un contrato). Cuando ha ocurrido algo (como un nuevo contrato enviado para su aprobación), la pestaña **Publicaciones** se puede usar no solo para anunciarlo, sino también para mantener un registro del mismo. Y si los miembros se suscriben a las notificaciones, se les notificará cada vez que haya una actualización.
 
      ![Pestaña Publicaciones.](../media/content-understanding/posts.png)
 
-- **Tener una ubicación para que los miembros vean los contratos aprobados para saber cuándo se pueden enviar para el pago.** En SharePoint, deberá crear una lista  De pago e incluir columnas para el importe de  **cliente,** contratista y **tarifa,** seleccionando Línea única de texto como tipo de columna. Deberá agregar la pestaña  Para pago como un Teams en el canal administración de [ **contratos,**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)de forma similar a lo que hará para la pestaña Contratos . La **pestaña Para pago** enumerará todos los contratos que tendrán que enviarse para el pago. Puede extender fácilmente esta solución para escribir esta información directamente en una aplicación financiera de terceros (por ejemplo, Dynamics CRM). 
+- **Tener una ubicación para que los miembros vean los contratos aprobados para saber cuándo se pueden enviar para el pago.** En SharePoint, deberá crear una lista **De pago** e incluir columnas para **el cliente**, **el contratista** y **el importe de la tarifa**, seleccionando **Línea única de texto** como tipo de columna. Tendrá que agregar la lista **Para pago** como una pestaña de Teams en el canal Administración de contratos, de forma similar a [lo que hará para la pestaña **Contratos**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). La pestaña **Para pago** enumerará todos los contratos que deberán enviarse para el pago. Puede ampliar fácilmente esta solución para escribir esta información directamente en una aplicación financiera de terceros (por ejemplo, Dynamics CRM). 
 
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Adjuntar la SharePoint de documentos a la pestaña Contratos
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Adjuntar la biblioteca de documentos de SharePoint a la pestaña Contratos
 
-Después de crear una **pestaña Contratos** en el canal de administración de contratos, debe adjuntar la biblioteca de documentos SharePoint a [él.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) La SharePoint de documentos que desea adjuntar es la a la que aplicó el modelo de SharePoint Syntex de documentos en la sección anterior.
+Después de crear una pestaña **Contratos** en el canal De administración de contratos, debe [adjuntar su biblioteca de documentos de SharePoint a ella](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La biblioteca de documentos SharePoint que desea adjuntar es la que aplicó el modelo de comprensión de documentos SharePoint Syntex en la sección anterior.
 
-Después de adjuntar la SharePoint de documentos, podrá ver los contratos clasificados a través de una vista de lista predeterminada.
+Después de adjuntar la biblioteca de documentos SharePoint, podrá ver los contratos clasificados a través de una vista de lista predeterminada.
 
    ![Vista de lista de SharePoint biblioteca.](../media/content-understanding/list-view.png)
 
-## <a name="customize-your-contracts-tab-tile-view"></a>Personalizar la vista de icono de pestaña Contratos
+## <a name="customize-your-contracts-tab-tile-view"></a>Personalizar la vista de icono de la pestaña Contratos
 
 > [!NOTE]
-> En esta sección se hace referencia a ejemplos de código contenidos en el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) que se incluye en el repositorio de activos de solución de administración [de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management).
+> Esta sección hace referencia a ejemplos de código incluidos en el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) que se incluye en el [repositorio Recursos de solución de administración de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-Aunque Teams permite ver los contratos en una vista de icono, es posible que desee personalizarlo para ver los datos del contrato que desea hacer visibles en la tarjeta de contrato. Por ejemplo, para la pestaña **Contratos,** es importante que los miembros vean el cliente, el contratista y el importe de la cuota en la tarjeta de contrato. Todos estos campos se extrajeron de cada contrato SharePoint Syntex modelo que se aplicó a la biblioteca de documentos. También desea poder cambiar la barra de encabezado de icono a diferentes colores para cada estado para que los miembros puedan ver fácilmente dónde se encuentra el contrato en el proceso de aprobación. Por ejemplo, todos los contratos aprobados tendrán una barra de encabezado azul.
+Aunque Teams permite ver los contratos en una vista de icono, es posible que quiera personalizarlos para ver los datos de contrato que desea que sean visibles en la tarjeta de contrato. Por ejemplo, en la pestaña **Contratos** , es importante que los miembros vean el cliente, el contratista y el importe de la tarifa en la tarjeta del contrato. Todos estos campos se extrajeron de cada contrato a través del modelo de SharePoint Syntex que se aplicó a la biblioteca de documentos. También quiere poder cambiar la barra de encabezado del icono a colores diferentes para cada estado para que los miembros puedan ver fácilmente dónde está el contrato en el proceso de aprobación. Por ejemplo, todos los contratos aprobados tendrán una barra de encabezado azul.
 
-   ![Vista de icono de SharePoint biblioteca.](../media/content-understanding/tile.png)
+   ![Vista de mosaico de SharePoint biblioteca.](../media/content-understanding/tile.png)
 
-La vista de icono personalizada que use requiere que realice cambios en el archivo JSON usado para dar formato a la vista de mosaico actual. Para hacer referencia al archivo JSON usado para crear la vista de tarjeta, consulte el [archivo ContractTileFormatting.json.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) En las secciones siguientes, verá secciones específicas del código para las características que están en las tarjetas de contrato.
+La vista de icono personalizada que use requiere que realice cambios en el archivo JSON que se usa para dar formato a la vista de icono actual. Puede hacer referencia al archivo JSON usado para crear la vista de tarjeta examinando el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) . En las secciones siguientes, verá secciones específicas del código para las características que se encuentran en las tarjetas de contrato.
 
-Si desea ver o realizar cambios en el código JSON de la vista en el canal de Teams, en el canal Teams, seleccione el menú desplegable ver y, a continuación, seleccione Formato de vista **actual.**
+Si desea ver o realizar cambios en el código JSON de la vista en el canal de Teams, en el canal Teams, seleccione el menú desplegable vista y, a continuación, seleccione **Dar formato a la vista actual**.
 
    ![Captura de pantalla del formato json en Teams canal.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Tamaño y forma de la tarjeta
 
-En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) consulte la sección siguiente para ver el código de cómo se da formato al tamaño y la forma de la tarjeta.
+En el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , examine la sección siguiente para ver el código de cómo se da formato al tamaño y la forma de la tarjeta.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-sampl
 
 ## <a name="contract-status"></a>Estado del contrato
 
-El siguiente código le permite definir el estado de cada tarjeta de título. Tenga en cuenta que cada valor de estado (*New*, *In review*, *Approved* y *Rejected*) mostrará un código de color diferente para cada uno. En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) vea la sección que define el estado.
+El código siguiente le permite definir el estado de cada tarjeta de título. Tenga en cuenta que cada valor de estado (*Nuevo*, *En revisión*, *Aprobado* y *Rechazado*) mostrará un código de color diferente para cada uno. En el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , examine la sección que define el estado.
 
 ```JSON
           {
@@ -106,13 +106,13 @@ El siguiente código le permite definir el estado de cada tarjeta de título. Te
 
 ## <a name="extracted-fields"></a>Campos extraídos
 
-Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contrato (*Client*, *Contractor* y *Fee Amount*). Además, también desea mostrar la hora/fecha en que el archivo se clasificó mediante el SharePoint Syntex usado para identificarlo.
+Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contrato (*Cliente*, *Contratista* y *Importe de cuota*). Además, también desea mostrar la hora y la fecha en que el modelo de SharePoint Syntex ha clasificado el archivo para identificarlo.
 
-En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) las siguientes secciones definen cada una de ellas.
+En el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , las secciones siguientes definen cada una de ellas.
 
 ### <a name="client"></a>Cliente
 
-En esta sección se define cómo se mostrará "Cliente" en la tarjeta y se usará el valor para el contrato específico.
+En esta sección se define cómo se mostrará "Client" en la tarjeta y se usa el valor para el contrato específico.
 
 ```JSON
                       {
@@ -136,7 +136,7 @@ En esta sección se define cómo se mostrará "Cliente" en la tarjeta y se usar�
 
 ### <a name="contractor"></a>Contratista
 
-En esta sección se define cómo se mostrará el "contratista" en la tarjeta y se usará el valor para el contrato específico.
+En esta sección se define cómo se mostrará el "Contratista" en la tarjeta y se usa el valor para el contrato específico.
 
 ```JSON
                         {
@@ -160,7 +160,7 @@ En esta sección se define cómo se mostrará el "contratista" en la tarjeta y s
 
 ### <a name="fee-amount"></a>Importe de la cuota
 
-En esta sección se define cómo se mostrará el "Importe de tarifa" en la tarjeta y se usará el valor para el contrato específico.
+En esta sección se define cómo se mostrará el "Importe de cuota" en la tarjeta y se usa el valor para el contrato específico.
 
 ```JSON
                       {
@@ -184,7 +184,7 @@ En esta sección se define cómo se mostrará el "Importe de tarifa" en la tarje
 
 ### <a name="classification-date"></a>Fecha de clasificación
 
-En esta sección se define cómo se mostrará "Clasificación" en la tarjeta y se usará el valor para el contrato específico.
+En esta sección se define cómo se mostrará "Clasificación" en la tarjeta y se usa el valor para el contrato específico.
 
 ```JSON
                       {

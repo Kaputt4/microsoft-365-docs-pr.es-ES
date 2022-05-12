@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944357"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368339"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "64944357"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
 
@@ -47,6 +47,7 @@ Con la solución integrada Microsoft 365 Defender, los profesionales de segurida
 
 <center><h2>Las API de Microsoft 365 Defender</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender para punto de conexión</b></center></a></td>
+<td><center><b><a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Administración de vulnerabilidades de Microsoft Defender</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender para Office 365</b></center></a></td>
 <td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
 <td><center><b><a href="/cloud-app-security/"><b>Microsoft Defender for Cloud Apps</b></a></center></td>
@@ -65,8 +66,9 @@ En esta guía interactiva, aprenderá a proteger su organización con Microsoft 
 los servicios de Microsoft 365 Defender protegen:
 
 - **Puntos de conexión con Defender para punto de conexión** : Defender para punto de conexión es una plataforma de punto de conexión unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta.
+- **Recursos con La administración de vulnerabilidades de Defender**: Administración de vulnerabilidades de Microsoft Defender ofrece visibilidad continua de los recursos, evaluaciones inteligentes basadas en riesgos y herramientas de corrección integradas para ayudar a los equipos de TI y seguridad a priorizar y abordar vulnerabilidades críticas y configuraciones incorrectas en toda la organización.
 - **Correo electrónico y colaboración con Defender para Office 365**: Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.
-- **Identidades con Defender for Identity y Azure Active Directory (Azure AD) Identity Protection** - Defender for Identity usa las señales de Active Directory local Domain Services (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su Organización. Azure AD Identity Protection automatiza la detección y corrección de riesgos basados en identidades en la Azure AD basada en la nube.
+- **Identidades con Defender for Identity y Azure Active Directory (Azure AD) Identity Protection** - Defender for Identity usa las señales de Active Directory local Domain Services (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización. Azure AD Identity Protection automatiza la detección y corrección de riesgos basados en identidades en Azure AD basado en la nube.
 - **Aplicaciones con Microsoft Defender for Cloud Apps**: Microsoft Defender for Cloud Apps es una solución completa entre SaaS que ofrece visibilidad profunda, controles de datos seguros y protección contra amenazas mejorada para las aplicaciones en la nube.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
@@ -176,7 +178,7 @@ Los controles y el contenido comunes aparecen en el mismo lugar o se condensan e
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="Los roles de puntos de conexión & grupos que se muestran en la página Permisos & roles" lightbox="../../media/converged-roles-5.png":::
 
-El acceso a Microsoft 365 Defender se configura con Azure AD roles globales o mediante roles personalizados. Para Defender para punto de conexión, consulte [Asignación de acceso de usuario al portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Para obtener Defender para Office 365, consulte [Permisos en el portal de cumplimiento de Microsoft Purview y Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+El acceso a Microsoft 365 Defender se configura con roles globales de Azure AD o mediante roles personalizados. Para Defender para punto de conexión, consulte [Asignación de acceso de usuario al portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Para obtener Defender para Office 365, consulte [Permisos en el portal de cumplimiento Microsoft Purview y Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Más información sobre cómo [administrar el acceso a Microsoft 365 Defender](m365d-permissions.md)
 - Obtenga más información sobre cómo [crear roles personalizados](custom-roles.md) en Microsoft 365 Defender
@@ -288,7 +290,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 
 |Aprendizaje:|Detectar y responder a ataques cibernéticos con Microsoft 365 Defender|
 |---|---|
-|![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifica las señales de amenazas entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar una protección integrada frente ataques cibernéticos sofisticados. Microsoft 365 Defender es una experiencia central desde la cual investigar y responder a incidentes y buscar proactivamente actividades de ciberseguridad malintencionadas en curso.<p> 1 h 38 min - Learning ruta de acceso - 5 módulos|
+|![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifica las señales de amenazas entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar una protección integrada frente ataques cibernéticos sofisticados. Microsoft 365 Defender es una experiencia central desde la cual investigar y responder a incidentes y buscar proactivamente actividades de ciberseguridad malintencionadas en curso.<p> 1 h 38 min - Ruta de aprendizaje - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/paths/defender-detect-respond/)
