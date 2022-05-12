@@ -18,16 +18,22 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939485"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363200"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
 En este artículo se proporciona un plan de implementación para crear **Confianza cero** seguridad con Microsoft 365. Confianza cero es un nuevo modelo de seguridad que supone una infracción y comprueba cada solicitud como si se originase en una red no controlada. Independientemente de dónde se origine la solicitud o del recurso al que acceda, el modelo de Confianza cero nos enseña a "no confiar nunca, comprobar siempre".
+
+Use este artículo junto con este póster.
+
+| Elemento | Descripción |
+|:-----|:-----|
+|[![Ilustración del plan de implementación de Microsoft 365 Confianza cero.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Actualizado en marzo de 2022 | **Guías de soluciones relacionadas** <br/> <ul><li>[Implementación de la infraestructura de identidad para Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configuraciones recomendadas de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Administrar dispositivos con Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Evaluar Microsoft 365 Defender y realizar una prueba piloto](../security/defender/eval-overview.md)</li><li>[Implementar una solución de Microsoft Information Protection](../compliance/information-protection-solution.md)</li><li>[Implementación de la protección de la información para las regulaciones de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
 ## <a name="zero-trust-security-architecture"></a>arquitectura de seguridad de Confianza cero
 
@@ -89,7 +95,7 @@ Vaya a [**_Administración de dispositivos con Intune_**](../solutions/manage-de
 
 |Incluye|Requisitos previos|No incluye|
 |---------|---------|---------|
-|Inscribir dispositivos con Intune: <ul><li>Dispositivos corporativos</li><li>Autopilot/automatizado</li><li>Inscripción</li></ul> <br> Configurar directivas: <ul><li>Directivas de App Protection</li><li>Directivas de cumplimiento</li><li>Directivas de perfil de dispositivo</li></ul>|Registro de puntos de conexión con Azure AD|Configuración de funcionalidades de protección de la información, entre las que se incluyen: <ul><li>Tipos de información confidencial</li><li>Etiquetas</li><li>Directivas DLP</li></ul> <br> Para obtener estas funcionalidades, consulte [el paso 5. Proteger y controlar la información confidencial](#step-5-protect-and-govern-sensitive-data) (más adelante en este artículo).|
+|Inscribir dispositivos con Intune: <ul><li>Dispositivos de propiedad corporativa</li><li>Autopilot/automatizado</li><li>Inscripción</li></ul> <br> Configurar directivas: <ul><li>Directivas de App Protection</li><li>Directivas de cumplimiento</li><li>Directivas de perfil de dispositivo</li></ul>|Registro de puntos de conexión con Azure AD|Configuración de funcionalidades de protección de la información, entre las que se incluyen: <ul><li>Tipos de información confidencial</li><li>Etiquetas</li><li>Directivas DLP</li></ul> <br> Para obtener estas funcionalidades, consulte [el paso 5. Proteger y controlar la información confidencial](#step-5-protect-and-govern-sensitive-data) (más adelante en este artículo).|
 
 ## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Paso 3. Incorporación de la protección de acceso a dispositivos e identidades de Confianza cero: directivas de Enterprise
 
@@ -115,9 +121,9 @@ Vaya a [**_Evaluación y Microsoft 365 Defender piloto_**](defender/eval-overvie
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Paso 5. Protección y control de datos confidenciales
 
-Implemente microsoft Purview Information Protection para ayudarle a detectar, clasificar y proteger información confidencial dondequiera que viva o viaje.
+Implemente Microsoft Purview Information Protection para ayudarle a detectar, clasificar y proteger información confidencial dondequiera que viva o viaje.
 
-Las funcionalidades de Information Protection de Microsoft Purview se incluyen con Microsoft Purview y proporcionan las herramientas para conocer los datos, proteger los datos y evitar la pérdida de datos.
+Microsoft Purview Information Protection funcionalidades se incluyen con Microsoft Purview y proporcionan las herramientas para conocer los datos, proteger los datos y evitar la pérdida de datos.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Funcionalidades de protección de la información que protegen los datos mediante la aplicación de directivas" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
@@ -127,6 +133,6 @@ Microsoft Purview Information Protection proporciona un marco, un proceso y func
 
 ![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-Para obtener más información sobre cómo planear e implementar la protección de la información, consulte [**_Implementación de una solución Information Protection de Microsoft Purview_**](../compliance/information-protection-solution.md). 
+Para obtener más información sobre cómo planear e implementar la protección de la información, consulte [**_Implementación de una solución de Microsoft Purview Information Protection_**](../compliance/information-protection-solution.md). 
 
 Si va a implementar la protección de la información para las regulaciones de privacidad de datos, esta guía de solución proporciona un marco recomendado para todo el proceso: [**_Implementar la protección de la información para las regulaciones de privacidad de datos con Microsoft 365_**](../solutions/information-protection-deploy.md).

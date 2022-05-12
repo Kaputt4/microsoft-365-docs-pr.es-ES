@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d37723e45c5c4049e913422b2500b74d36c701eb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789720"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363273"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789720"
 > [!TIP]
 > ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[La protección de red](network-protection.md) ayuda a evitar que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. Puede [auditar la protección de red](evaluate-network-protection.md) en un entorno de prueba para ver qué aplicaciones se bloquearían antes de habilitarla.
+[La protección de red](network-protection.md) ayuda a evitar que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. Puede [auditar la protección de red](evaluate-network-protection.md) en un entorno de prueba para ver qué aplicaciones se bloquearían antes de habilitar la protección de red.
 
 [Obtenga más información sobre las opciones de configuración de filtrado de red.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
@@ -97,7 +97,7 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Def
 [Actualice la plataforma antimalware de Microsoft Defender a la versión más reciente](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) antes de habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
 
 
-### <a name="microsoft-endpoint-manager"></a>Administrador de puntos de conexión de Microsoft
+### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
 1. Inicie sesión en el centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
 
@@ -140,27 +140,19 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
    > [!IMPORTANT]
    > Para habilitar completamente la protección de red, debe establecer la opción directiva de grupo **en Habilitado** y también seleccionar **Bloquear** en el menú desplegable de opciones.
 
-Confirme que la protección de red está habilitada en un equipo local mediante el editor del Registro:
-
-1. Seleccione **Iniciar** y escriba **regedit** para abrir **el Editor del Registro**.
-
-2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
-
-3. Seleccione **EnableNetworkProtection** y confirme el valor:
-   - 0=Desactivado
-   - 1=Activado
-   - 2=Auditoría
+   > [!NOTE]
+   > Opcional: siga los pasos descritos en [Comprobación de si la protección de red está habilitada](#check-if-network-protection-is-enabled) para comprobar que la configuración de directiva de grupo es correcta.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Abre la consola de Configuration Manager.
 
-2. Vaya a **Activos y cumplimiento** >  **Endpoint Protection** >  **Windows Defender Protección contra vulnerabilidades de seguridad**. 
+2. Vaya a **Activos y cumplimiento** >  **Endpoint Protection** >  **Windows Defender Protección contra vulnerabilidades de seguridad**.
 
 3. Seleccione **Crear directiva de Protección contra vulnerabilidades** en la cinta de opciones para crear una nueva directiva.
    - Para editar una directiva existente, seleccione la directiva y, a continuación, seleccione **Propiedades** en la cinta de opciones o en el menú contextual. Edite la opción **Configurar protección de red** en la pestaña **Protección de red** .  
 
-4. En la página **General** , especifique un nombre para la nueva directiva y compruebe que la opción **Protección** de red está habilitada. 
+4. En la página **General** , especifique un nombre para la nueva directiva y compruebe que la opción **Protección** de red está habilitada.
 
 5. En la página **Protección** de red, seleccione una de las opciones siguientes para la opción **Configurar protección de red** :
    - **Bloquear**
@@ -191,7 +183,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 > $exploitGuardObject.Put()
 >```  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección de red](network-protection.md)
 

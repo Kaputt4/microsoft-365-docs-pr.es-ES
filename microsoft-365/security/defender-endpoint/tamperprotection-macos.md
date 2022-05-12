@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d31c99ddc1f64f78fa62d28805b6c2f19af5a31f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 39e12aa910b4e01b93d428246d929d50eb121870
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320963"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363278"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de macOS configuración de seguridad con protección contra alteraciones 
 
@@ -80,8 +80,8 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 **Configuración muy recomendada:** 
 
-1. Protección de integridad del sistema (SIP) habilitada
-1. Uso de una herramienta de administración de dispositivos móviles (MDM) para configurar Microsoft Defender para punto de conexión
+1. Protección de integridad del sistema (SIP) habilitada. Para obtener más información, consulte [Deshabilitación y habilitación de la protección de integridad del sistema](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+1. Use una herramienta de administración de dispositivos móviles (MDM) para configurar Microsoft Defender para punto de conexión.
 
  
 

@@ -15,21 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 70a7e5d1c44e0fb80860ce0a1932b00616dcfe94
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: cbcde8f0593adb54d3496156b1bf83dca1cd5064
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952696"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363090"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
 El kit de laboratorio de implementación Windows y Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise o Windows 11 Empresas y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, etc. Este kit es muy recomendable para las organizaciones que se preparan para las actualizaciones de escritorio. Como entorno aislado, el laboratorio también es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
-**Windows 10 y Windows 11 versiones del kit de laboratorio de implementación ahora están disponibles para su descarga gratuita en el Centro de evaluación de Microsoft.**
+Hay dos versiones del laboratorio disponibles para descarga gratuita:  
 
-[Descarga de Windows 11 con Office 365 kit de laboratorio de implementación](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
-[Descarga de Windows 10 con Office 365 kit de laboratorio de implementación](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+|laboratorio de Windows 10|laboratorio de Windows 11|
+|---|---|
+|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
@@ -38,7 +40,7 @@ El laboratorio proporciona un entorno de laboratorio virtual aprovisionado autom
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
 |Windows 10 Enterprise, versión 21H1|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager, versión 2103|Microsoft Endpoint Configuration Manager, versión 2111|
+|Microsoft Endpoint Configuration Manager, versión 2203|Microsoft Endpoint Configuration Manager, versión 2203|
 |Windows Assessment and Deployment Kit para Windows 10|Kit de evaluación e implementación de Windows para Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -96,7 +98,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 - Windows Hello para empresas
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El laboratorio de Windows 10 expira el 16 de mayo de 2022. El laboratorio de Windows 11 expira el 6 de mayo de 2022. Las nuevas versiones se publicarán antes de la expiración.
+> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El laboratorio de Windows 10 expira el 16 de mayo de 2022. El laboratorio de Windows 11 expira el 7 de agosto de 2022. Las nuevas versiones se publicarán antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

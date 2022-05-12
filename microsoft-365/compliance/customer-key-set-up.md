@@ -11,19 +11,21 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo configurar la clave de cliente para Microsoft 365.
-ms.openlocfilehash: 38b8a73a1c4654e1922f4f8e4600727a978af431
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Obtenga información sobre cómo configurar la clave de cliente.
+ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759974"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363178"
 ---
 # <a name="set-up-customer-key"></a>Configuración de la clave de cliente
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Con La clave de cliente, puede controlar las claves de cifrado de su organización y, a continuación, configurar Microsoft 365 para usarlas para cifrar los datos en reposo en los centros de datos de Microsoft. En otras palabras, La clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves.
 
-Configure Azure antes de poder usar la clave de cliente para Office 365. En este artículo se describen los pasos que debe seguir para crear y configurar los recursos de Azure necesarios y, a continuación, se proporcionan los pasos para configurar la clave de cliente en Office 365. Después de configurar Azure, se determina qué directiva y, por lo tanto, qué claves se van a asignar para cifrar los datos en varias cargas de trabajo Microsoft 365 de la organización. Para obtener más información sobre la clave de cliente o para obtener información general, consulte [Cifrado de servicio con clave de cliente en Office 365](customer-key-overview.md).
+Configure Azure para poder usar la clave de cliente. En este artículo se describen los pasos que debe seguir para crear y configurar los recursos de Azure necesarios y, a continuación, se proporcionan los pasos para configurar la clave de cliente. Después de configurar Azure, se determina qué directiva y, por lo tanto, qué claves se van a asignar para cifrar los datos en varias cargas de trabajo Microsoft 365 de la organización. Para obtener más información sobre la clave de cliente o para obtener información general, consulte [Cifrado de servicio con Microsoft Purview clave de cliente](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Se recomienda encarecidamente seguir los procedimientos recomendados de este artículo. Se denominan **TIP** e **IMPORTANTE**. Clave de cliente proporciona control sobre las claves de cifrado raíz cuyo ámbito puede ser tan grande como toda la organización. Esto significa que los errores cometidos con estas claves pueden tener un gran impacto y pueden dar lugar a interrupciones del servicio o pérdida irrevocable de los datos.
@@ -43,7 +45,7 @@ Antes de empezar, asegúrese de que tiene las suscripciones de Azure y las licen
 
 Se seguirán admitiendo las licencias de Cumplimiento avanzado de Office 365 existentes.
 
-Para comprender los conceptos y procedimientos de este artículo, revise la documentación [de Azure Key Vault](/azure/key-vault/). Además, familiarícese con los términos usados en Azure, por ejemplo, [Azure AD inquilino](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Para comprender los conceptos y procedimientos de este artículo, revise la documentación [de Azure Key Vault](/azure/key-vault/). Además, familiarícese con los términos usados en Azure, por ejemplo, [inquilino de Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
 Si necesita más soporte técnico que la documentación, póngase en contacto con Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) o con un asociado de Microsoft para obtener ayuda. Para proporcionar comentarios sobre la clave del cliente, incluida la documentación, envíe sus ideas, sugerencias y perspectivas a customerkeyfeedback@microsoft.com.
   
@@ -144,7 +146,7 @@ La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudici
 
 - Para habilitar la clave de cliente para asignar DEP para cifrar SharePoint contenido en línea y OneDrive para la Empresa (incluidos los archivos Teams) para todos los usuarios del inquilino, póngase en contacto con [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- Para habilitar la clave de cliente para asignar DEP para cifrar el contenido en varias cargas de trabajo de Microsoft 365 (Exchange Online, Teams, MIP EDM) para todos los usuarios del inquilino, póngase en contacto con [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- Para habilitar la clave de cliente para asignar DEP para cifrar el contenido en varias cargas de trabajo de Microsoft 365 (Exchange Online, Teams, Microsoft Purview Information Protection) para todos los usuarios del inquilino, póngase en contacto con [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - Incluya la siguiente información en su correo electrónico:
 
@@ -232,7 +234,7 @@ Tendrá que definir tres conjuntos de permisos independientes para cada almacén
    - *el nombre del almacén* de claves es el nombre del almacén de claves que ha creado.
    - Para Exchange Online y Skype Empresarial, reemplace *Office 365 appID* por`00000002-0000-0ff1-ce00-000000000000`
    - Para SharePoint archivos en línea, OneDrive para la Empresa y Teams, reemplace *Office 365 appID* por`00000003-0000-0ff1-ce00-000000000000`
-   - Para la directiva de varias cargas de trabajo (Exchange, Teams, Microsoft Information Protection) que se aplica a todos los usuarios del inquilino, reemplace *Office 365 appID* por`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - Para la directiva de varias cargas de trabajo (Exchange, Teams, Microsoft Purview Information Protection) que se aplica a todos los usuarios del inquilino, reemplace *Office 365 appID* por`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Ejemplo: Establecer permisos para Exchange Online y Skype Empresarial:
 
@@ -354,7 +356,7 @@ En Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya completado los pasos de este artículo, estará listo para crear y asignar DEP. Para obtener instrucciones, consulte [Administrar clave de cliente](customer-key-manage.md).
 

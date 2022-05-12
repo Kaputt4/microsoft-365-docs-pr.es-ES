@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182658"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363322"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -248,7 +248,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ge
 
 - Se permiten caracteres comodín (*) en los siguientes escenarios:
 
-  - Un carácter comodín izquierdo debe ir seguido de un punto para especificar un subdominio.
+  - Un carácter comodín izquierdo debe ir seguido de un punto para especificar un subdominio. (solo se aplica a bloques)
 
     Por ejemplo, `*.contoso.com` se permite; `*contoso.com` no se permite.
 
@@ -265,8 +265,6 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ge
   - Una tilde izquierda implica un dominio y todos los subdominios.
 
     Por ejemplo `~contoso.com` , incluye `contoso.com` y `*.contoso.com`.
-
-- Se producirá un error en las entradas de dirección URL que contienen protocolos (por ejemplo, `http://`, `https://`o `ftp://`), porque las entradas de dirección URL se aplican a todos los protocolos.
 
 - No se admite ni se requiere un nombre de usuario o contraseña.
 
@@ -285,7 +283,6 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 - **Permitir coincidencia**: contoso.com
 
 - **Permitir no coincidente**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -295,7 +292,6 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
   - www.contoso.com/q=a@contoso.com
 
 - **Coincidencia de bloques**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -308,15 +304,16 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Escenario: Carácter comodín izquierdo (subdominio)
 
+> [!NOTE]
+> Este escenario solo se aplica a bloques.
+
 **Entrada**: `*.contoso.com`
 
-- **Permitir coincidencia** y **Bloquear coincidencia**:
-
+- **Coincidencia de bloques**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Permitir no coincidente** y **Bloquear no coincidente**:
-
+- **Bloque no coincidente**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -327,13 +324,11 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 **Entrada**: `contoso.com/a/*`
 
 - **Permitir coincidencia** y **Bloquear coincidencia**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Permitir no coincidente** y **Bloquear no coincidente**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -344,13 +339,11 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 **Entrada**: `~contoso.com`
 
 - **Permitir coincidencia** y **Bloquear coincidencia**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Permitir no coincidente** y **Bloquear no coincidente**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -360,7 +353,6 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 **Entrada**: `contoso.com/*`
 
 - **Permitir coincidencia** y **Bloquear coincidencia**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -373,17 +365,19 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Escenario: Subdominio de caracteres comodín izquierdos y sufijo comodín derecho
 
+> [!NOTE]
+> Este escenario solo se aplica a bloques.
+
 **Entrada**: `*.contoso.com/*`
 
-- **Permitir coincidencia** y **Bloquear coincidencia**:
-
+- **Coincidencia de bloques**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Permitir no coincidente** y **Bloquear no coincidente**: contoso.com/b
+- **Bloquear no coincidente**: contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>Escenario: tilde izquierda y derecha
 
