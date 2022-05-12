@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Use Bookings en Outlook para permitir que otros usuarios programe reuniones con usted en Outlook.
-ms.openlocfilehash: fb74b345a9c1985388ed4754b3f9913a46e5d9de
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9f8e1c4428133dce6f6ec9e539464271abfd8ffd
+ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363047"
+ms.locfileid: "65364284"
 ---
 # <a name="bookings-in-outlook"></a>Bookings en Outlook
 
@@ -25,7 +25,7 @@ Bookings en Outlook es una página de programación personal basada en web que s
 
 Bookings en Outlook tiene dos vistas diferentes:
 
-- **Vista organizador** Una página de reserva personal donde puede crear tipos de reunión que otros usuarios pueden reservar con usted. Los tipos de reunión personalizados le ofrecen la capacidad de personalizar cuándo desea reunirse y cómo se comparte ese tipo de reunión con otros usuarios. Puede controlar si cada tipo de reunión es público en la página de programación o si es privado y solo puede acceder a él un grupo de personas seleccionado. También puede elegir agregar una reunión de Teams a todas las reuniones reservadas a través de su Bookings en Outlook página. Puede acceder a la Bookings en Outlook página a través de Outlook en la Web o yendo a [https://outlook.office.com/bookwithme/](https://outlook.office.com/bookwithme/). Después de configurar la página y publicarla, puede compartirla con otros usuarios. Por ejemplo, puede agregarlo a la firma de Outlook.
+- **Vista organizador** Una página de reserva personal donde puede crear tipos de reunión que otros usuarios pueden reservar con usted. Los tipos de reunión personalizados le ofrecen la capacidad de personalizar cuándo desea reunirse y cómo se comparte ese tipo de reunión con otros usuarios. Puede controlar si cada tipo de reunión es público en la página de programación o si es privado y solo puede acceder a él un grupo de personas seleccionado. También puede elegir agregar una reunión de Teams a todas las reuniones reservadas a través de su Bookings en Outlook página. Puede acceder a la Bookings en Outlook página a través de Outlook en la Web. Después de configurar la página y publicarla, puede compartirla con otros usuarios. Por ejemplo, puede agregarlo a la firma de Outlook.
 
 - **Vista programación** Cuando comparta su Bookings en Outlook página con otros usuarios, verán la vista de programación. Las reuniones que se muestran en la vista de programación dependen de si ha compartido el vínculo a la Bookings en Outlook página con reuniones públicas o si ha compartido un vínculo privado para una reunión individual.
     - Cualquier persona que tenga su Bookings en Outlook vínculo de página puede ver y programar reuniones públicas. Tiene el control de con quién comparte ese vínculo. Todos los tipos de reuniones públicas serán visibles para cualquier persona que tenga el Bookings en Outlook vínculo de página.

@@ -26,20 +26,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a habilitar Microsoft 365 para proteger dispositivos locales unidos a Active Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: 2c764f8f6eb32b1ecc2e3bbf8dab3e4ad170f8b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094625"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319099"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitación de dispositivos Windows 10 unidos a un dominio para que los administre Microsoft 365 Empresa Premium
 
+Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local.
+
+Para configurar esta protección, puede implementar **Dispositivos unidos a Azure AD híbrido**. Estos dispositivos se unen tanto al Active Directory local como a Azure Active Directory.
+
 > [!NOTE]
 > Microsoft Defender para Empresas se implementará para los clientes de Microsoft 365 Empresa Premium a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
-
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local.
-Para configurar esta protección, puede implementar **Dispositivos unidos a Azure AD híbrido**. Estos dispositivos se unen tanto al Active Directory local como a Azure Active Directory.
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Vea: Configurar la unión a Azure Active Directory híbrido
 
@@ -144,10 +145,18 @@ En este momento, debería poder ver disponible la directiva **Habilitar la inscr
 
 ## <a name="related-content"></a>Contenido relacionado
 
-- [Sincronizar usuarios del dominio con Microsoft 365](../admin/setup/manage-domain-users.md)(artículo)\
+- [Sincronizar usuarios del dominio con Microsoft 365](../admin/setup/manage-domain-users.md)
 
-- [Crear un grupo en el centro de administración](../admin/create-groups/create-groups.md) (artículo)\
+- [Crear un grupo en el centro de administración](../admin/create-groups/create-groups.md) 
 
-- [Tutorial: Configuración de la unión a Azure Active Directory híbrido para dominios administrados](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (artículo)
+- [Tutorial: Configurar la unión a Azure Active Directory híbrido para dominios administrados](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) 
 
-- [Las 10 mejores formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+- [Configurar las contraseñas de autoservicio](../admin/add-users/let-users-reset-passwords.md)
+
+- [Configurar la administración de grupos de autoservicio](/azure/active-directory/enterprise-users/groups-self-service-management)
+
+- [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>Siguiente objetivo:
+
+[Prepararse para la implementación del cliente Office](m365bp-prepare-for-office-client-deployment.md)

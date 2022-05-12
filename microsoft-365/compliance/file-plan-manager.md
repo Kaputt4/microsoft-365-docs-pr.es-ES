@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
-ms.custom: seo-marvel-may2020
-ms.openlocfilehash: d025dc7637b9c7b494a5bff3447fe4429ba24701
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302209"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319056"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
@@ -52,9 +52,7 @@ Para acceder al plan de archivos, debe tener uno de los siguientes roles de admi
 
 - Administrador de retención con permiso de vista
 
-En el Portal de cumplimiento de Microsoft Purview, vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**:
-
-![Página del plan de archivos](../media/compliance-file-plan.png). 
+En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**.
 
 Si **Administración de registros** no se muestra en el panel de navegación, desplácese hacia abajo y seleccione **Mostrar todo**.
 
@@ -86,6 +84,9 @@ A excepción de la etiqueta **Nombre**, todas las columnas se pueden mostrar u o
 - **Está desbloqueado de forma predeterminada**, al estar implementado, identifica si el elemento marcado como registro está desbloqueado cuando se aplica la etiqueta. Valores válidos:
     - No
     - Sí
+
+- **Volver a etiquetar a**, actualmente en implementación, identifica si la etiqueta está configurada para aplicar otra etiqueta al final del período de retención. Valores válidos:
+    - En blanco o el nombre de la etiqueta seleccionada
 
 - **Duración de la retención** identifica el período de retención. Valores válidos:
     - Días
@@ -153,9 +154,7 @@ Sin embargo, podría tomarle hasta dos días al explorador de contenido mostrar 
 
 Desde su administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv, para facilitar las revisiones de cumplimiento periódicas con las partes interesadas del gobierno de datos de su organización.
 
-Para exportar todas las etiquetas de retención: en la página **Plan de archivos**, haga clic en **Exportar**:
-
-![Opción para exportar el plan de archivos.](../media/compliance-file-plan-export-labels.png)
+Para exportar todas las etiquetas de retención: en la página **Plan de archivos**, haga clic en **Exportar**.
 
 Se abrirá un archivo *.csv que contiene todas las etiquetas de retención existentes. Por ejemplo:
 

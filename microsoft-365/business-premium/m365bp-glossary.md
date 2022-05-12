@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Glosario de términos para Microsoft 365 Empresa Premium
-ms.openlocfilehash: c9aaac1c7cf1eab8092efa0475cd94ceb1e1418d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2f5dc9d09d380ad1958fd73a096c00c258371edb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101918"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318237"
 ---
 # <a name="glossary-of-terms"></a>Glosario de términos
 
@@ -48,6 +48,7 @@ ms.locfileid: "65101918"
 |filtración de datos |Archivos de datos que se roban y envían fuera de la red a través del correo electrónico u otros medios. |
 |Defender |Programa antivirus de Microsoft, Antivirus de Microsoft Defender. Vaya aquí para obtener más información sobre [Microsoft Defender](https://support.microsoft.com/topic/.getting-started-with-microsoft-defender-9df0cb0f-4866-4433-9cbc-f83e5cf77693).|
 |Grupo de dispositivos |Un grupo de dispositivos es una colección de dispositivos que se agrupan por determinados criterios especificados, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que se excluyan. En Microsoft 365 Empresa Premium (y Defender para empresas), los grupos de dispositivos se almacenan en Azure Active Directory. |
+|administración de dispositivos |La administración de dispositivos es cuando la organización protege activamente los recursos y los datos de todos los ordenadores portátiles, PC, tabletas y dispositivos móviles de la organización.|
 |cifrado |El cifrado es el proceso por el que se codifica la información para que solo un destinatario autorizado pueda descodificar y consumir la información. |
 |vulnerabilidad de seguridad |Un fragmento de código que usa vulnerabilidades de software para obtener acceso al dispositivo y realizar otras tareas, como la instalación de malware. |
 |firewall |Un firewall es un sistema de seguridad para proteger una red interna frente a servidores y redes no autorizados en función de ciertas reglas predefinidas. Actúa como una barrera y solo permite que la red protegida envíe o reciba datos. |
@@ -64,10 +65,10 @@ ms.locfileid: "65101918"
 |correo no deseado |Cuando se envía un gran número de contenidos a una gran cantidad de destinatarios, normalmente a través del correo electrónico y que, a menudo, contienen malware.  |
 |suplantación de identidad (spoofing) |Cuando un remitente suplanta una dirección de correo electrónico y parece que fuera un usuario de uno de los dominios de la organización o un usuario de un dominio externo que envía correo electrónico a su organización. |
 |spyware |Software que tiene como objetivo recopilar información sobre una persona u organización y enviarla a otra entidad de forma que produzca daño al usuario. |
-|inquilino (espacio empresarial) |Una instancia única dedicada de los servicios de Microsoft 365 y los datos de la organización, almacenada en una ubicación predeterminada específica, como Europa o Norteamérica. Esta ubicación se especifica al crear el inquilino para su organización. |
+|inquilino (espacio empresarial) |Una instancia única dedicada a los servicios de Microsoft 365 y a los datos de su organización, almacenada en una ubicación específica por defecto, como Europa o Norteamérica. Esta ubicación se especifica al crear el inquilino para su organización. |
 |panorama de amenazas |El panorama de amenazas es el ámbito de las amenazas virulentas y tenaces, con atacantes que han pasado de enfocar sus esfuerzos hacia el reconocimiento a querer ganar dinero, por ejemplo, manteniendo dispositivos y datos en peligro hasta que el propietario pague el rescate solicitado. Los ataques modernos se centran cada vez más en el robo de propiedad intelectual a gran escala, en la degradación del sistema que puede dar lugar a pérdidas financieras y en el ciberterrorismo, que amenaza la seguridad de las personas, las empresas y los intereses nacionales en todo el mundo. Estos atacantes suelen ser personas con un alto entrenamiento y expertos en seguridad. Algunos de ellos trabajan en estados que tienen grandes presupuestos y recursos humanos aparentemente ilimitados. |
 |caballo de Troya |Un tipo de malware que intenta parecer inofensivo. A diferencia de un virus o un gusano, un troyano no se propaga por sí mismo. Lo que intenta es parecer legítimo para engañar a los usuarios y que lo descarguen e instalen. Una vez instalados, los troyanos realizan diversas actividades malintencionadas, como robar información personal, descargar otro malware o dar acceso a los atacantes al dispositivo. |
-|dispositivos no administrados |Dispositivos como equipos, portátiles, tabletas y dispositivos móviles que no están administrados por la organización y, por tanto, suponen más riesgo. (Consulte BYOD). |
+|dispositivos no administrados |Dispositivos como equipos, portátiles, tabletas y dispositivos móviles que no están administrados por la organización y, por tanto, suponen más riesgo. (Consulte BYODs). |
 |virus | Un fragmento de código que es capaz de copiarse a sí mismo y suele realizar acciones perjudiciales, como dañar el sistema o destruir datos. |
 |gusano |Un tipo de malware que se propaga a otros dispositivos. Los gusanos pueden propagarse por correo electrónico, mensajería instantánea, plataformas de uso compartido de archivos, redes sociales, recursos compartidos de red y unidades extraíbles. Los gusanos más sofisticados aprovechan las vulnerabilidades de software para propagarse. |
 |confianza cero |Confianza cero es un enfoque proactivo e integrado para la seguridad en todos los niveles del patrimonio digital que comprueba explícita y continuamente cada transacción, declara los privilegios mínimos y se basa en inteligencia, detección avanzada y respuesta a las amenazas en tiempo real. |

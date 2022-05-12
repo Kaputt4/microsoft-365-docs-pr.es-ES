@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094205"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318190"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos inscritos a Microsoft Defender para empresas
 
@@ -131,7 +131,7 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 
 1. En la pantalla de confirmación, revise la información y elija **Descargar** para continuar.
 
-1. Seleccione **Descargar paquete de desincorporación**. Se recomienda guardar el paquete de retirada en una unidad extraíble.
+1. Seleccione **Descargar paquete de retirada**. Se recomienda guardar el paquete de retirada en una unidad extraíble.
 
 1. Ejecute el script en cada dispositivo que quiera desincorporar. ¿Necesita ayuda con esta tarea? Vea los siguientes recursos:   
 
@@ -144,5 +144,4 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Tómese tiempo para [revista y edite las directivas](m365bp-view-edit-create-mdb-policies.md).
-
+[Configurar la protección para los dispositivos Windows](m365bp-protection-settings-for-windows-10-devices.md).

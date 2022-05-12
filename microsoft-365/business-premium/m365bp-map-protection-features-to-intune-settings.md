@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: b5493199b7a2593097d3e4efbf1d4a405fc1ae4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090638"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320317"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 
@@ -97,7 +97,7 @@ Haga clic en el nombre de la directiva que desea seleccionar y, a continuación,
 
 La siguiente tabla detalla cómo se asigna a la configuración de Intune los valores de configuración del dispositivo de Windows 10.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), seleccione **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune** \> **Configuración del dispositivo** \> **Perfiles**. A continuación, seleccione **Directiva del dispositivo para Windows 10** \> **Propiedades** \> **Configuración**.
+Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), seleccione **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune** \> **Configuración del dispositivo** \> **Perfiles**. A continuación, seleccione **Directiva de dispositivo para Windows 10** \> **Propiedades** \> **Configuración**.
   
 |**Configuración de la directiva de dispositivo de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
@@ -111,4 +111,4 @@ Para buscar la configuración de Intune, inicie sesión con sus credenciales de 
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas principales de proteger los planes de Microsoft 365 for Business](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

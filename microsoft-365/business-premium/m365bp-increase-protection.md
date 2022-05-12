@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: c653e4f84ad3f4dd537ab82382e8a57da7d2876e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099931"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319141"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
@@ -183,7 +183,7 @@ En función de la alerta específica, puede ver las alertas en el portal de Micr
 
 | Tipo de la alerta.  | Qué hacer  |
 |---------|---------|
-| Alerta de seguridad, como cuando un usuario hace clic en un vínculo malintencionado, se notifica un correo electrónico como malware o phish, o se detecta que un dispositivo contiene malware.     | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y, en **Correo electrónico & colaboración**, seleccione **Directivas & reglas** > **Directiva de alertas**. O puede ir directamente a <https://security.microsoft.com/alertpolicies>. |
+| Alerta de seguridad, como cuando un usuario hace clic en un vínculo malintencionado, se notifica un correo electrónico como malware o phish, o se detecta que un dispositivo contiene malware.     | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y, en **Correo electrónico & colaboración**, seleccione **Directivas & reglas** > **Directiva de alertas**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies>. |
 | Alerta de cumplimiento, como cuando un usuario comparte información delicada o confidencial (alerta de prevención de pérdida de datos) o hay un volumen inusual de uso compartido de archivos externos (alerta de gobernanza de la información)    | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y, a continuación, seleccione **Directivas** > **Alerta** > **Directivas de alerta**.  |
 
 Para obtener más información, vea [Ver alertas](../compliance/alert-policies.md#view-alerts).
@@ -212,4 +212,6 @@ Puede evitar que las personas de su organización compartan sus calendarios. Tam
 
 Si los usuarios pueden compartir sus calendarios, consulte [estas instrucciones](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) sobre cómo compartir desde Outlook en la Web.
 
-Bien, ahora es el momento de comenzar su misión de [**configurar dispositivos BYOD**](m365bp-devices-overview.md).
+## <a name="next-steps"></a>Siguientes pasos
+
+Bien, ahora vamos a iniciar la misión para [**configurar dispositivos BYOD**](m365bp-devices-overview.md).
