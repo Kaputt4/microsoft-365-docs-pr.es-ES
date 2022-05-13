@@ -17,19 +17,21 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173708"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65367954"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,10 +39,13 @@ ms.locfileid: "65173708"
 Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas.
 
 > [!TIP]
-> Microsoft Defender para punto de conexión está disponible en dos planes: Defender para punto de conexión Plan 1 y Plan 2. En este artículo se describen las características y funcionalidades que se incluyen en cada plan. [Obtenga más información sobre Microsoft Defender para punto de conexión plan 1 y plan 2](defender-endpoint-plan-1-2.md).
-> 
+> Microsoft Defender para punto de conexión está disponible en dos planes: Defender para punto de conexión Plan 1 y Plan 2. Ahora hay un complemento nuevo de Administración de vulnerabilidades de Microsoft Defender disponible para el Plan 2.
+>
+> Para obtener más información sobre las características y funcionalidades que se incluyen en cada plan, incluido el nuevo complemento de administración de vulnerabilidades de Defender, consulte [Comparación de planes de Microsoft Defender para punto de conexión](defender-endpoint-plan-1-2.md).
 
 <p><p>
+
+Vea el siguiente vídeo para obtener más información sobre Defender para punto de conexión:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -55,7 +60,7 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 <center><h2>Microsoft Defender para punto de conexión</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Administración de vulnerabilidades y amenazas</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Administración de vulnerabilidades de Defender</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Reducción de la superficie expuesta a ataques</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Protección de última generación</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Detección y respuesta de puntos de conexión</b></a></center></td>
@@ -86,9 +91,11 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 
 <a name="tvm"></a>
 
-**[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)**
+**[Administración de vulnerabilidades de Defender](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades de puntos de conexión y configuraciones incorrectas.
+Las funcionalidades de administración de vulnerabilidades básicas integradas usan un enfoque moderno basado en riesgos para detectar, evaluar, priorizar y corregir vulnerabilidades de puntos de conexión y configuraciones incorrectas. Para mejorar aún más la capacidad de evaluar el nivel de seguridad y de reducir el riesgo, está disponible un complemento nuevo de administración de vulnerabilidades de Defender para el Plan 2.
+
+Para obtener más información sobre las distintas funcionalidades de administración de vulnerabilidades disponibles, consulte [Comparación de ofertas de Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 

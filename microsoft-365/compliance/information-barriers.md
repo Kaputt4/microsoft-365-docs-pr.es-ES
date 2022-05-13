@@ -17,12 +17,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214a2614b6ca7381bbded39ff5f5143236f6c001
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: f5db5fbe81913666f052cbd664e8a7f813da6a7c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363126"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396209"
 ---
 # <a name="learn-about-information-barriers"></a>Más información acerca de las barreras de información
 
@@ -83,5 +83,5 @@ Actualmente, solo se admiten las implementaciones Exchange Online para las direc
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 - [Introducción a las barreras de información](information-barriers-policies.md)
-- [Administración de directivas de barrera de información](information-barriers-edit-segments-policies.md)
-- [Consulte los atributos que se pueden usar para las directivas de barrera de información.](information-barriers-attributes.md)
+- [Administración de directivas de IB](information-barriers-edit-segments-policies.md)
+- [Consulte los atributos que se pueden usar para las directivas de IB.](information-barriers-attributes.md)
