@@ -16,20 +16,20 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef2c8c5c4dfdbb1598c8f6edc5344da9351b6ad7
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363300"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396253"
 ---
 # <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-En este artículo se describe cómo configurar directivas de barrera de información (IB) en su organización. Hay varios pasos implicados, por lo que asegúrese de revisar todo el proceso antes de empezar a configurar las directivas de IB.
+En este artículo se describe cómo configurar directivas de barreras de información (IB) en su organización. Hay varios pasos implicados, por lo que asegúrese de revisar todo el proceso antes de empezar a configurar las directivas de IB.
 
-Debe estar familiarizado con [los cmdlets de PowerShell](/powershell/exchange/scc-powershell) para definir, validar o editar directivas de IB. Aunque en este artículo se proporcionan varios ejemplos de cmdlets de PowerShell, deberá conocer otros detalles (como los valores de parámetros) de su organización.
+Configurará IB en su organización mediante el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) o mediante [Office 365 PowerShell de seguridad y cumplimiento](/powershell/exchange/scc-powershell). Para las organizaciones que configuran IB por primera vez, se recomienda usar la solución **Barreras de información** en el portal de cumplimiento. Si está administrando una configuración de IB existente y se siente cómodo con PowerShell, todavía tiene esta opción.
 
 Para obtener más información sobre los escenarios y características de IB, consulte [Más información sobre las barreras de información](information-barriers.md).
 
@@ -59,30 +59,30 @@ Para obtener más información acerca de roles y permisos, consulte [Permisos de
 
 ## <a name="configuration-concepts"></a>Conceptos de configuración
 
-Al definir directivas para IB, trabajará con varios objetos y conceptos.
+Al configurar IB, trabajará con varios objetos y conceptos.
 
-- **Los atributos de cuenta de usuario** están definidos en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil de trabajo.
-- **Los segmentos son conjuntos** de usuarios que se definen en el portal de cumplimiento Microsoft Purview mediante un **atributo de cuenta de usuario** seleccionado. Consulte la lista de [atributos admitidos por IB](information-barriers-attributes.md) para obtener más información.
-- **Visibilidad de usuarios y grupos que no son de IB**. Los usuarios y grupos que no son del IB son usuarios y grupos excluidos de los segmentos y directivas de IB. En función del tipo de directivas de IB (bloquear o permitir), el comportamiento de estos usuarios y grupos variará en Microsoft Teams, SharePoint, OneDrive y en la lista global de direcciones. Para los usuarios definidos en las directivas *allow* , los grupos y usuarios que no son del IB no serán visibles para los usuarios incluidos en los segmentos y directivas de IB. Para los usuarios definidos en las directivas de *bloque* , los grupos y los usuarios que no son de IB serán visibles para los usuarios incluidos en los segmentos y directivas de IB.
-- **Compatibilidad con grupos**. Actualmente, solo los grupos modernos se admiten en IB y las listas de distribución o los grupos de seguridad se tratan como grupos que no son del IB.
-- **Cuentas de usuario ocultas o deshabilitadas**. En el caso de las cuentas ocultas o deshabilitadas de la organización, el parámetro *HiddenFromAddressListEnabled* se establece automáticamente en *True* cuando las cuentas de los usuarios están ocultas o deshabilitadas. En las organizaciones habilitadas para IB, se impide que estas cuentas se comuniquen con todas las demás cuentas de usuario. En Microsoft Teams, todos los chats, incluidas estas cuentas, están bloqueados o los usuarios se quitan automáticamente de las conversaciones.
-- **Las directivas de IB** determinan límites o restricciones de comunicación. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
+- **Los atributos de cuenta de usuario** están definidos en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil de trabajo. Asignará usuarios o grupos a segmentos con estos atributos.
+- **Los segmentos son conjuntos** de grupos o usuarios definidos en el portal de cumplimiento o mediante PowerShell que usan atributos de cuenta de usuario o grupo seleccionados. Consulte la lista de [atributos admitidos por IB](information-barriers-attributes.md) para obtener más información.
+- **Las directivas de IB** determinan límites o restricciones de comunicación. Al definir directivas de IB, puede elegir entre dos tipos de directivas:
   - Las directivas de *bloqueo* impiden que un segmento se comunique con otro segmento.
   - Las directivas de *permiso* permiten que un segmento se comunique solo con otros segmentos determinados.
 
     > [!NOTE]
-    > En el caso de las directivas **permitidas** , los usuarios y grupos que no son del IB no serán visibles para los usuarios incluidos en los segmentos y directivas de IB. Si necesita que los grupos y usuarios que no son de IB sean visibles para los usuarios incluidos en los segmentos y directivas de IB, debe usar directivas de **bloque** .
+    > En el caso de las directivas *permitidas* , los usuarios y grupos que no son del IB no serán visibles para los usuarios incluidos en los segmentos y directivas de IB. Si necesita que los grupos y usuarios que no son de IB sean visibles para los usuarios incluidos en los segmentos y directivas de IB, debe usar directivas de *bloque* .
 
-- *La aplicación de directivas* se realiza una vez definidas todas las directivas de IB y está listo para aplicarlas en su organización.
+- **La aplicación de directivas** se realiza una vez definidas todas las directivas de IB y está listo para aplicarlas en su organización.
+- **Visibilidad de usuarios y grupos que no son de IB**. Los usuarios y grupos que no son del IB son usuarios y grupos excluidos de los segmentos y directivas de IB. En función del tipo de directivas de IB (bloquear o permitir), el comportamiento de estos usuarios y grupos variará en Microsoft Teams, SharePoint, OneDrive y en la lista global de direcciones. Para los usuarios definidos en las directivas *allow* , los grupos y usuarios que no son del IB no serán visibles para los usuarios incluidos en los segmentos y directivas de IB. Para los usuarios definidos en las directivas de *bloque* , los grupos y los usuarios que no son de IB serán visibles para los usuarios incluidos en los segmentos y directivas de IB.
+- **Compatibilidad con grupos**. Actualmente, solo los grupos modernos se admiten en IB y las listas de distribución o los grupos de seguridad se tratan como grupos que no son del IB.
+- **Cuentas de usuario ocultas o deshabilitadas**. En el caso de las cuentas ocultas o deshabilitadas de la organización, el parámetro *HiddenFromAddressListEnabled* se establece automáticamente en *True* cuando las cuentas de los usuarios están ocultas o deshabilitadas. En las organizaciones habilitadas para IB, se impide que estas cuentas se comuniquen con todas las demás cuentas de usuario. En Microsoft Teams, todos los chats, incluidas estas cuentas, están bloqueados o los usuarios se quitan automáticamente de las conversaciones.
 
-## <a name="configuration-at-a-glance"></a>Configuración de un vistazo
+## <a name="configuration-overview"></a>Descripción general de la configuración
 
 | **Pasos** | **Lo que implica** |
 |:------|:----------------|
-| **Paso 1**: [Asegúrese de que se cumplen los requisitos previos](#step-1-make-sure-prerequisites-are-met) | : compruebe que tiene las suscripciones y permisos necesarios. <br/>- Comprobar que el directorio incluye datos para segmentar usuarios<br/>- Habilitar [la búsqueda por nombre para Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Asegurarse de que el registro de auditoría está activado<br/>- Asegurarse de que no se han aplicado directivas de libreta de direcciones de Exchange<br/>- Uso de PowerShell (se proporcionan ejemplos)<br/>- Proporcionar consentimiento del administrador para Microsoft Teams (se incluyen los pasos) |
+| **Paso 1**: [Asegúrese de que se cumplen los requisitos previos](#step-1-make-sure-prerequisites-are-met) | : compruebe que tiene las suscripciones y permisos necesarios. <br/>- Comprobar que el directorio incluye datos para segmentar usuarios<br/>- Habilitar [la búsqueda por nombre para Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Asegurarse de que el registro de auditoría está activado<br/>- Asegurarse de que no se han aplicado directivas de libreta de direcciones de Exchange <br/>- Proporcionar consentimiento del administrador para Microsoft Teams (se incluyen los pasos) |
 | **Paso 2**: [Segmentar usuarios de la organización](#step-2-segment-users-in-your-organization) | - Determinar qué directivas se necesitan<br/>- Crear una lista de segmentos que definir<br/>- Identificar qué atributos usar<br/>- Definir segmentos en términos de filtros de directiva |
-| **Paso 3**: [Definir directivas de barrera de información](#step-3-define-information-barrier-policies) | - Definir las directivas (aún no se aplican)<br/>- Elegir entre dos tipos (bloquear o permitir) |
-| **Paso 4**: [Aplicación de directivas de barrera de información](#step-4-apply-information-barrier-policies) | - Establecer directivas en estado activo<br/>- Ejecutar la aplicación de la directiva<br/>- Ver el estado de la directiva |
+| **Paso 3**: [Crear directivas de barreras de información](#step-3-create-ib-policies) | - Crear las directivas (aún no se aplican)<br/>- Elegir entre dos tipos (bloquear o permitir) |
+| **Paso 4**: [Aplicación de directivas de barreras de información](#step-4-apply-ib-policies) | - Establecer directivas en estado activo<br/>- Ejecutar la aplicación de la directiva<br/>- Ver el estado de la directiva |
 | **Paso 5**: [Configuración de barreras de información en SharePoint y OneDrive (opcional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configuración de IB para SharePoint y OneDrive |
 | **Paso 6**: [Modos de barreras de información (opcional)](#step-6-information-barriers-modes) | - Actualización de los modos de IB si procede |
 
@@ -91,7 +91,7 @@ Al definir directivas para IB, trabajará con varios objetos y conceptos.
 Además de las suscripciones y permisos necesarios, asegúrese de que se cumplen los siguientes requisitos antes de configurar IB:
 
 - **Datos del directorio**: asegúrese de que la estructura de su organización se refleja en los datos del directorio. Para realizar esta acción, asegúrese de que los atributos de la cuenta de usuario (como la pertenencia a grupos, el nombre del departamento, etc.) se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
-  - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
+  - [Atributos para directivas de barreras de información](information-barriers-attributes.md)
   - [Agregar o actualizar la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
@@ -101,15 +101,15 @@ Además de las suscripciones y permisos necesarios, asegúrese de que se cumplen
 
 - **Quitar directivas de libreta de direcciones Exchange Online existentes**: antes de definir y aplicar directivas de IB, debe quitar todas las directivas de libreta de direcciones Exchange Online existentes en su organización. Las directivas de IB se basan en directivas de libreta de direcciones y las directivas ABP existentes no son compatibles con los AAP creados por IB. Para quitar las directivas de libreta de direcciones existentes, consulte [Quitar una directiva de libreta de direcciones en Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Para obtener más información sobre las directivas y Exchange Online de IB, consulte [Barreras de información y Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Administrar mediante PowerShell**: actualmente, las directivas de IB se definen y administran en PowerShell del Centro de seguridad & cumplimiento. Aunque en este artículo se proporcionan varios ejemplos, deberá estar familiarizado con los cmdlets y parámetros de PowerShell. También necesitará el módulo de PowerShell Azure Active Directory.
-  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+- **Administrar mediante PowerShell (opcional):** los segmentos y las directivas de IB se pueden definir y administrar en Office 365 Security & Compliance PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá estar familiarizado con los cmdlets y parámetros de PowerShell si decide usar PowerShell para configurar y administrar segmentos y directivas de IB. También necesitará el módulo de PowerShell Azure Active Directory si elige esta opción de configuración.
+  - [PowerShell de cumplimiento de Conectar a seguridad &](/powershell/exchange/connect-to-scc-powershell)
   - [Instalación de Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2)
 
 - **Consentimiento del administrador para IB en Microsoft Teams**: cuando se aplican las directivas de IB, pueden quitar usuarios de cumplimiento no IB de grupos (por ejemplo, Teams canales, que se basan en grupos). Esta configuración ayuda a garantizar que su organización siga siendo compatible con las directivas y las regulaciones. Use el procedimiento siguiente para permitir que las directivas de IB funcionen según lo previsto en Microsoft Teams.
 
    1. Requisito previo: [instale Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2).
 
-   1. Ejecute los siguientes cmdlets de PowerShell:
+   2. Ejecute los siguientes cmdlets de PowerShell:
 
       ```powershell
       Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
@@ -119,18 +119,15 @@ Además de las suscripciones y permisos necesarios, asegúrese de que se cumplen
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   1. Cuando se le pida, inicie sesión con su cuenta de profesional o educativa de Office 365.
+   3. Cuando se le pida, inicie sesión con su cuenta de profesional o educativa de Office 365.
 
-   1. En el cuadro de diálogo **Permisos solicitados** , revise la información y elija **Aceptar**. Los permisos solicitados por la aplicación se proporcionan a continuación.
-
-      > [!div class="mx-imgBorder"]
-      > ![Imagen.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+   4. En el cuadro de diálogo **Permisos solicitados** , revise la información y elija **Aceptar**.
 
 Cuando se cumplan todos los requisitos previos, continúe con el paso siguiente.
 
 ## <a name="step-2-segment-users-in-your-organization"></a>Paso 2: Segmentar usuarios de la organización
 
-Durante este paso, determinará qué directivas de IB son necesarias, creará una lista de segmentos que definir y, a continuación, definirá los segmentos.
+En este paso, determinará qué directivas de IB son necesarias, creará una lista de segmentos para definir y definirá los segmentos. La definición de segmentos no afecta a los usuarios, sino que simplemente establece la fase para que se definan y se apliquen las directivas de IB.
 
 ### <a name="determine-what-policies-are-needed"></a>Determinar qué directivas son necesarias
 
@@ -159,15 +156,32 @@ Determine qué atributos de los datos de directorio de la organización usará p
 > [!IMPORTANT]
 > **Antes de continuar con la sección siguiente, asegúrese de que los datos de directorio tienen valores para los atributos que puede usar para definir segmentos**. Si los datos de directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esa información antes de continuar con la configuración de IB. Para obtener ayuda con esto, consulte los siguientes recursos:<br/>- [Configuración de las propiedades de la cuenta de usuario con Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Agregar o actualizar la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
+### <a name="define-segments-using-the-compliance-portal"></a>Definición de segmentos mediante el portal de cumplimiento
+
+Para definir segmentos en el portal de cumplimiento, siga estos pasos:
+
+1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+2. En el portal de cumplimiento, seleccione **Barreras** >  de **informaciónSegments**.
+3. En la página **Segmentos** , seleccione **Nuevo segmento** para crear y configurar un nuevo segmento.
+4. En la página **Nombre** , escriba un nombre para el segmento. No se puede cambiar el nombre de un segmento una vez creado.
+5. Seleccione **Siguiente**.
+6. En la página **Filtro de grupo de** usuarios, seleccione **Agregar** para configurar los atributos de grupo y usuario para el segmento. Elija un atributo para el segmento de la lista de atributos disponibles.
+7. Para el atributo seleccionado, seleccione *Igual* o *No igual* y, a continuación, escriba el valor del atributo. Por ejemplo, si seleccionó *Department* como atributo e *Equals*, podría escribir *Marketing* como *departamento definido para* esta condición de segmento. Para agregar condiciones adicionales para un atributo, seleccione **Agregar condición**. Si necesita eliminar un atributo o una condición de atributo, seleccione el icono de eliminación para el atributo o la condición.
+8. Agregue atributos adicionales según sea necesario en la página **Filtro de grupo** de usuarios y, a continuación, seleccione **Siguiente**.
+9. En la página **Revisar la configuración** , revise la configuración que ha elegido para el segmento y las sugerencias o advertencias de las selecciones. Seleccione **Editar** para cambiar cualquiera de los atributos y condiciones del segmento o seleccione **Enviar** para crear el segmento.
+
+    > [!IMPORTANT]
+    > **Asegúrese de que los segmentos no se superpongan**. Cada usuario que se verá afectado por las directivas de IB debe pertenecer a un segmento (y solo a uno). Ningún usuario debe pertenecer a dos o más segmentos. Consulte [Ejemplo: Segmentos definidos por Contoso](#contosos-defined-segments) en este artículo para ver un escenario de ejemplo.
+
 ### <a name="define-segments-using-powershell"></a>Definición de segmentos mediante PowerShell
 
-La siguiente tarea consiste en definir segmentos para su organización. La definición de segmentos no afecta a los usuarios, sino que simplemente establece la fase para que se definan y se apliquen las directivas de IB.
+Para definir segmentos con PowerShell, complete los pasos siguientes:
 
 1. Use el cmdlet **New-OrganizationSegment** con el parámetro **UserGroupFilter** que corresponde al [atributo](information-barriers-attributes.md) que desea usar.
 
     | Sintaxis | Ejemplo |
     |:---------|:----------|
-    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>En este ejemplo, un segmento denominado *RR. HH* . se define mediante *RR. HH*., un valor en el atributo *Department* . La parte **-eq** del cmdlet hace referencia a "equals". (Como alternativa, puede usar **-ne** para significar "no es igual". Consulte [Uso de "equals" y "not equals" en las definiciones de segmento).](#using-equals-and-not-equals-in-segment-definitions) |
+    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>En este ejemplo, un segmento denominado *RR. HH* . se define mediante *RR. HH*., un valor en el atributo *Department* . La parte **-eq** del cmdlet hace referencia a "equals". (Como alternativa, puede usar **-ne** para significar "no es igual". Consulte [Uso de "equals" y "not equals" en las definiciones de segmento).](#using-equals-and-not-equals-in-powershell-segment-definitions) |
 
     Después de ejecutar cada cmdlet, debería ver una lista de detalles sobre el nuevo segmento. Los detalles incluyen el tipo del segmento, quién lo creó o modificó por última vez, etc. 
 
@@ -176,11 +190,11 @@ La siguiente tarea consiste en definir segmentos para su organización. La defin
     > [!IMPORTANT]
     > **Asegúrese de que los segmentos no se superpongan**. Cada usuario que se verá afectado por las directivas de IB debe pertenecer a un segmento (y solo a uno). Ningún usuario debe pertenecer a dos o más segmentos. Consulte [Ejemplo: Segmentos definidos por Contoso](#contosos-defined-segments) en este artículo para ver un escenario de ejemplo.
 
-Después de definir los segmentos, vaya al [Paso 3: Definir directivas de barrera de información](#step-3-define-information-barrier-policies).
+Después de definir los segmentos, vaya al [Paso 3: Crear directivas de IB](#step-3-create-ib-policies).
 
-### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Usar "equals" y "not equals" en definiciones de segmento
+### <a name="using-equals-and-not-equals-in-powershell-segment-definitions"></a>Uso de "equals" y "not equals" en las definiciones de segmento de PowerShell
 
-En el ejemplo siguiente, vamos a definir un segmento de modo que "Department es igual a RR. HH." 
+En el ejemplo siguiente, estamos configurando segmentos ib mediante PowerShell y definiendo un segmento como "Department equals HR".
 
 | Ejemplo | Nota: |
 |:----------|:-------|
@@ -204,9 +218,9 @@ Además de definir segmentos con "equals" o "not equals", puede definir un segme
 > [!TIP]
 > Si es posible, use definiciones de segmento que incluyan "-eq" o "-ne". Intente no definir definiciones de segmento complejas.
 
-## <a name="step-3-define-information-barrier-policies"></a>Paso 3: Definir directivas de barrera de información
+## <a name="step-3-create-ib-policies"></a>Paso 3: Creación de directivas de IB
 
-Determine si necesita impedir las comunicaciones entre determinados segmentos o limitar las comunicaciones con determinados segmentos. Idealmente, usará el número mínimo de directivas de IB para asegurarse de que su organización cumple los requisitos internos, legales y del sector.
+Al crear las directivas de IB, determinará si necesita impedir las comunicaciones entre determinados segmentos o limitar las comunicaciones con determinados segmentos. Idealmente, usará el número mínimo de directivas de IB para asegurarse de que su organización cumple los requisitos internos, legales y del sector. Puede usar el portal de cumplimiento o PowerShell para crear y aplicar directivas de IB.
 
 > [!TIP]
 > Para la coherencia de la experiencia del usuario, se recomienda usar directivas de bloque para la mayoría de los escenarios si es posible.
@@ -217,13 +231,42 @@ Con la lista de segmentos de usuario y las directivas de IB que desea definir, s
 - [Escenario 2: Permitir que un segmento solo se comunique con otro segmento](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **Asegúrese de que, a medida que defina directivas, no asigne más de una directiva a un segmento**. Por ejemplo, si define una directiva para un segmento denominado *Ventas*, no defina una directiva adicional para *Sales*.<p> Además, a medida que defina las directivas de IB, asegúrese de establecer esas directivas en estado inactivo hasta que esté listo para aplicarlas. La definición (o edición) de directivas no afecta a los usuarios hasta que esas directivas se establecen en estado activo y, a continuación, se aplican.
+> **Asegúrese de que, a medida que defina directivas, no asigne más de una directiva a un segmento**. Por ejemplo, si define una directiva para un segmento denominado *Ventas*, no defina una directiva adicional para el segmento *Ventas* .<br> Además, a medida que defina las directivas de IB, asegúrese de establecer esas directivas en estado inactivo hasta que esté listo para aplicarlas. La definición (o edición) de directivas no afecta a los usuarios hasta que esas directivas se establecen en estado activo y, a continuación, se aplican.
 
 ### <a name="scenario-1-block-communications-between-segments"></a>Escenario 1: Bloquear las comunicaciones entre segmentos
 
 Si desea impedir que los segmentos se comuniquen entre sí, defina dos directivas: una para cada dirección. Cada directiva bloquea la comunicación solo en una dirección.
 
-Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento A y el segmento B. En este caso, definirá una directiva que impida que el segmento A se comunique con el segmento B y, a continuación, definirá una segunda directiva para evitar que el segmento B se comunique con el segmento A.
+Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento A y el segmento B. En este caso, definiría dos directivas:
+
+- Una directiva que impide que el segmento A se comunique con el segmento B
+- Una segunda directiva para evitar que el segmento B se comunique con el segmento A
+
+#### <a name="create-policies-using-the-compliance-portal-for-scenario-1"></a>Creación de directivas mediante el portal de cumplimiento para el escenario 1
+
+Para definir directivas en el portal de cumplimiento, siga estos pasos:
+
+1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+2. En el portal de cumplimiento, seleccione **Barreras** >  **de informaciónDirectivas**.
+3. En la página **Directivas** , seleccione **Crear directiva** para crear y configurar una nueva directiva de IB.
+4. En la página **Nombre** , escriba un nombre para la directiva y, a continuación, seleccione **Siguiente**.
+5. En la página **Segmento asignado** , seleccione **Elegir segmento**. Use el cuadro de búsqueda para buscar un segmento por nombre o desplazarse para seleccionar el segmento de la lista mostrada. Seleccione **Agregar** para agregar el segmento seleccionado a la directiva. Solo puede seleccionar un segmento.
+6. Seleccione **Siguiente**.
+7. En la página **Comunicación y colaboración** , seleccione el tipo de directiva en el campo **Comunicación y colaboración** . Las opciones de directiva son *Permitido* o *Bloqueado*. En este escenario de ejemplo, Se seleccionaría *Bloqueado* para la primera directiva.
+
+    >[!IMPORTANT]
+    >El estado Permitido y Bloqueado de los segmentos no se puede cambiar después de crear una directiva. Para cambiar el estado después de crear una directiva, debe eliminarla y crear una nueva.
+
+8. Seleccione **Elegir segmento** para definir las acciones del segmento de destino. Puede asignar más de un segmento en este paso. Por ejemplo, si quisiera impedir que los usuarios de un segmento denominado *Ventas* se comunicaran con los usuarios de un segmento denominado *Investigación*, habría definido el segmento *Ventas* en el paso 5 y asignaría *Investigación* en la opción **Elegir segmento** en este paso.
+9. Seleccione **Siguiente**.
+10. En la página **Estado de** la directiva, cambie el estado de la directiva activa a **Activado**. Seleccione **Siguiente** para continuar.
+11. En la página **Revisar la configuración** , revise la configuración que ha elegido para la directiva y las sugerencias o advertencias de las selecciones. Seleccione **Editar** para cambiar cualquiera de los segmentos y el estado de la directiva o seleccione **Enviar** para crear la directiva.
+
+En este ejemplo, repetiría los pasos anteriores para crear una segunda directiva *de bloque* para impedir que los usuarios de un segmento denominado *Investigación* se comuniquen con los usuarios de un segmento denominado *Ventas*. Habría definido el segmento *De investigación* en el paso 5 y asignaría *Ventas* (o varios segmentos) en la opción **Elegir segmento** .
+
+#### <a name="create-policies-using-powershell-for-scenario-1"></a>Creación de directivas mediante PowerShell para el escenario 1
+
+Para definir directivas con PowerShell, complete los pasos siguientes:
 
 1. Para definir la primera directiva de bloqueo, use el cmdlet **New-InformationBarrierPolicy** con el parámetro **SegmentsBlocked** .
 
@@ -240,11 +283,35 @@ Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento 
 3. Continúe con una de las siguientes acciones:
 
    - (Si es necesario) [Definición de una directiva para permitir que un segmento se comunique solo con otro segmento](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - (Una vez definidas todas las directivas) [Aplicación de directivas de barrera de información](#step-4-apply-information-barrier-policies)
+   - (Una vez definidas todas las directivas) [Aplicación de directivas de IB](#step-4-apply-ib-policies)
 
 ### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Escenario 2: Permitir que un segmento solo se comunique con otro segmento
 
 Si desea permitir que un segmento se comunique solo con otro segmento, defina solo una directiva para ese segmento. El segmento con el que se comunica no requiere una directiva direccional similar (porque pueden comunicarse y colaborar con todos de forma predeterminada).
+
+#### <a name="create-a-policy-using-the-compliance-portal-for-scenario-2"></a>Creación de una directiva mediante el portal de cumplimiento para el escenario 2
+
+Para definir directivas en el portal de cumplimiento, siga estos pasos:
+
+1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+2. En el portal de cumplimiento, seleccione **Barreras** >  **de informaciónDirectivas**.
+3. En la página **Directivas** , seleccione **Crear directiva** para crear y configurar una nueva directiva de IB.
+4. En la página **Nombre** , escriba un nombre para la directiva y, a continuación, seleccione **Siguiente**.
+5. En la página **Segmento asignado** , seleccione **Elegir segmento**. Use el cuadro de búsqueda para buscar un segmento por nombre o desplazarse para seleccionar el segmento de la lista mostrada. Seleccione **Agregar** para agregar el segmento seleccionado a la directiva. Solo puede seleccionar un segmento.
+6. Seleccione **Siguiente**.
+7. En la página **Comunicación y colaboración** , seleccione el tipo de directiva en el campo **Comunicación y colaboración** . Las opciones de directiva son *Permitido* o *Bloqueado*. En este escenario de ejemplo, Se seleccionaría *Permitido* para la directiva.
+
+    >[!IMPORTANT]
+    >El estado Permitido y Bloqueado de los segmentos no se puede cambiar después de crear una directiva. Para cambiar el estado después de crear una directiva, debe eliminarla y crear una nueva.
+
+8. Seleccione **Elegir segmento** para definir las acciones del segmento de destino. Puede asignar más de un segmento en este paso. Por ejemplo, si quisiera permitir que los usuarios de un segmento denominado *Fabricación* se comunicaran con los usuarios de un segmento denominado *RR. HH*., habría definido el segmento *De fabricación* en el paso 5 y asignaría *RR. HH* . en la opción **Elegir segmento** de este paso.
+9. Seleccione **Siguiente**.
+10. En la página **Estado de** la directiva, cambie el estado de la directiva activa a **Activado**. Seleccione **Siguiente** para continuar.
+11. En la página **Revisar la configuración** , revise la configuración que ha elegido para la directiva y las sugerencias o advertencias de las selecciones. Seleccione **Editar** para cambiar cualquiera de los segmentos y el estado de la directiva o seleccione **Enviar** para crear la directiva.
+
+#### <a name="create-a-policy-using-powershell-for-scenario-2"></a>Creación de una directiva mediante PowerShell para el escenario 2
+
+Para definir directivas con PowerShell, complete los pasos siguientes:
 
 1. Para permitir que un segmento se comunique solo con otro segmento, use el cmdlet **New-InformationBarrierPolicy** con el parámetro **SegmentsAllowed** .
 
@@ -263,11 +330,26 @@ Si desea permitir que un segmento se comunique solo con otro segmento, defina so
 2. Continúe con una de las siguientes acciones:
 
    - (Si es necesario) [Definición de una directiva para bloquear las comunicaciones entre segmentos](#scenario-1-block-communications-between-segments) 
-   - (Una vez definidas todas las directivas) [Aplicación de directivas de barrera de información](#step-4-apply-information-barrier-policies)
+   - (Una vez definidas todas las directivas) [Aplicación de directivas de IB](#step-4-apply-ib-policies)
 
-## <a name="step-4-apply-information-barrier-policies"></a>Paso 4: Aplicación de directivas de barrera de información
+## <a name="step-4-apply-ib-policies"></a>Paso 4: Aplicar directivas de IB
 
 Las directivas de IB no están en vigor hasta que las establezca en estado activo y aplique las directivas.
+
+### <a name="apply-policies-using-the-compliance-portal"></a>Aplicación de directivas mediante el portal de cumplimiento
+
+Para aplicar directivas en el portal de cumplimiento, siga estos pasos:
+
+1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+2. En el portal de cumplimiento, seleccione **Barreras** >  de **informaciónDirectiva de la aplicación**.
+3. En la página **aplicación Directivas** , seleccione **Aplicar todas las directivas** para aplicar todas las directivas de IB de su organización.
+
+    >[!NOTE]
+    >Espere 30 minutos para que el sistema empiece a aplicar las directivas. El sistema aplica las directivas usuario por usuario. El sistema procesa unas 5 000 cuentas de usuario por hora.
+
+### <a name="apply-policies-using-powershell"></a>Aplicación de directivas mediante PowerShell
+
+Para aplicar directivas mediante PowerShell, complete los pasos siguientes:
 
 1. Use el cmdlet **Get-InformationBarrierPolicy** para ver una lista de las directivas que se han definido. Tenga en cuenta el estado y la identidad (GUID) de cada directiva.
 
@@ -281,7 +363,7 @@ Las directivas de IB no están en vigor hasta que las establezca en estado activ
 
     Repita este paso según corresponda para cada directiva.
 
-3. Cuando haya terminado de establecer las directivas de IB en estado activo, use el cmdlet **Start-InformationBarrierPoliciesApplication** en PowerShell security & Compliance Center.
+3. Cuando haya terminado de establecer las directivas de IB en estado activo, use el cmdlet **Start-InformationBarrierPoliciesApplication** en PowerShell de seguridad & cumplimiento.
 
     Sintaxis: `Start-InformationBarrierPoliciesApplication`
 
@@ -293,11 +375,11 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 
 | Para ver esta información | Realizar esta acción |
 |:---------------|:----------|
-| Cuentas de usuario | Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros identity. <p> Sintaxis: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Puede usar cualquier valor que identifique de forma única a cada usuario, como nombre, alias, nombre distintivo, nombre de dominio canónico, dirección de correo electrónico o GUID. <p> Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> En este ejemplo, nos referimos a dos cuentas de usuario en Office 365: *meganb* para *Megan* y *alexw* para *Alex*. <p> (También puede usar este cmdlet para un único usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p> Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
+| Cuentas de usuario | Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros identity. <p> Sintaxis: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Puede usar cualquier valor que identifique de forma única a cada usuario, como nombre, alias, nombre distintivo, nombre de dominio canónico, dirección de correo electrónico o GUID. <p> Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> En este ejemplo, nos referimos a dos cuentas de usuario en Office 365: *meganb* para *Megan* y *alexw* para *Alex*. <p> (También puede usar este cmdlet para un único usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p> Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de IB que se aplican.|
 | Segmentos | Use el cmdlet **Get-OrganizationSegment** .<p> Sintaxis: `Get-OrganizationSegment` <p> Este cmdlet mostrará una lista de todos los segmentos definidos para su organización. |
-| Directivas de barreras de información | Use el cmdlet **Get-InformationBarrierPolicy** . <p> Sintaxis: `Get-InformationBarrierPolicy` <p> Este cmdlet mostrará una lista de directivas de barrera de información que se definieron y su estado. |
-| La aplicación de directiva de barrera de información más reciente | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p> Sintaxis: `Get-InformationBarrierPoliciesApplicationStatus`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se completó, produjo un error o está en curso. |
-| Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se completó, produjo un error o está en curso.|
+| Directivas de IB | Use el cmdlet **Get-InformationBarrierPolicy** . <p> Sintaxis: `Get-InformationBarrierPolicy` <p> Este cmdlet mostrará una lista de las directivas de IB que se definieron y su estado. |
+| La aplicación de directiva de IB más reciente | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p> Sintaxis: `Get-InformationBarrierPoliciesApplicationStatus`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se completó, produjo un error o está en curso. |
+| Todas las aplicaciones de directivas de IB|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se completó, produjo un error o está en curso.|
 
 ### <a name="what-if-i-need-to-remove-or-change-policies"></a>¿Qué ocurre si necesito quitar o cambiar directivas?
 
@@ -322,7 +404,7 @@ Los siguientes modos de IB son compatibles con los recursos de Microsoft 365:
 |:-----|:------------|:--------|
 | **Abrir** | No hay directivas o segmentos de IB asociados al recurso de Microsoft 365. Se puede invitar a cualquier persona a ser miembro del recurso. | Un sitio de equipo creado para un evento de picnic para su organización. |
 | **Moderado por el propietario (versión preliminar)** | La directiva ib del recurso Microsoft 365 se determina a partir de la directiva ib del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros según su directiva de IB. | El vicepresidente de RR. HH. quiere colaborar con los VPs de Ventas e Investigación. Un nuevo sitio SharePoint que se establece con el modo *IB Propietario moderado* para agregar usuarios de segmento de ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
-| **Implícita** | La directiva de IB o los segmentos del recurso Microsoft 365 se heredan de la directiva ib de los miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este es el modo ib predeterminado para Microsoft Teams. | El usuario del segmento Ventas crea un equipo de Microsoft Teams para colaborar con otros segmentos compatibles de la organización. |
+| **Implícita** | La directiva de IB o los segmentos del recurso Microsoft 365 se heredan de la directiva ib de los miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este modo es el modo IB predeterminado para Microsoft Teams. | El usuario del segmento Ventas crea un equipo de Microsoft Teams para colaborar con otros segmentos compatibles de la organización. |
 | **Explicit** | La directiva ib del recurso de Microsoft 365 se realiza según los segmentos asociados al recurso. El propietario del recurso o el administrador de SharePoint tiene la capacidad de administrar los segmentos del recurso.  | Un sitio creado solo para que los miembros del segmento Ventas colaboren asociando el segmento Ventas con el sitio.   |
 
 Para obtener más información sobre los modos de IB y cómo se configuran entre servicios, consulte los artículos siguientes:
@@ -369,14 +451,14 @@ Contoso usará el atributo Department en Azure Active Directory para definir seg
 
 Con los segmentos definidos, Contoso continúa definiendo las directivas de IB.
 
-### <a name="contosos-information-barrier-policies"></a>Directivas de barreras de información de Contoso
+### <a name="contosos-ib-policies"></a>Directivas de IB de Contoso
 
 Contoso define tres directivas de IB, como se describe en la tabla siguiente:
 
 | Policy | Definición de directiva |
 |:---------|:--------------------|
-| **Directiva 1: impedir que Ventas se comunique con Investigación** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Ventas-Investigación*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Ventas se comuniquen con usuarios en el segmento Investigación. Esta directiva es una directiva unidireccional; no impedirá que Research se comunique con Sales. Para eso, es necesaria la directiva 2. |
-| **Directiva 2: impedir que Investigación se comunique con Ventas** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Investigación-Ventas*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Investigación se comuniquen con usuarios en el segmento Ventas. |
+| **Directiva 1: impedir que Ventas se comunique con Investigación** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la directiva de IB se denomina *Sales-Research*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Ventas se comuniquen con usuarios en el segmento Investigación. Esta directiva es una directiva unidireccional; no impedirá que Research se comunique con Sales. Para eso, es necesaria la directiva 2. |
+| **Directiva 2: impedir que Investigación se comunique con Ventas** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la directiva de IB se denomina *Research-Sales*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Investigación se comuniquen con usuarios en el segmento Ventas. |
 | **Directiva 3: Permitir que la fabricación se comunique solo con RR. HH. y marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> En este caso, la directiva de IB se denomina *Manufacturing-HRMarketing*. Cuando esta directiva está activa y se aplica, Industria solo puede comunicarse con RR. HH. y Marketing. RR. HH. y Marketing no están restringidos a comunicarse con otros segmentos. |
 
 Con los segmentos y las directivas definidos, Contoso aplica las directivas mediante la ejecución del cmdlet **Start-InformationBarrierPoliciesApplication** .
