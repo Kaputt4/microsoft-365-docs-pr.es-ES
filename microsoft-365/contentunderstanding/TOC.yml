@@ -110,6 +110,8 @@
       href: adoption-getstarted.md
     - name: Escenarios y casos de uso
       href: adoption-scenarios.md
+    - name: Evaluar el entorno actual
+      href: adoption-assessment-tool.md
     - name: Ejecutar una prueba
       href: trial-syntex.md
     - name: Administrar contratos en Microsoft 365
@@ -120,7 +122,7 @@
           href: solution-manage-contracts-step1.md
         - name: Paso 2. Usar Microsoft Teams.
           href: solution-manage-contracts-step2.md
-        - name: Paso 3. Usar Power Automate
+        - name: Paso 3. Use Power Automate
           href: solution-manage-contracts-step3.md
     - name: Plantilla del sitio Administración de contratos
       href: use-contracts-management-site.md

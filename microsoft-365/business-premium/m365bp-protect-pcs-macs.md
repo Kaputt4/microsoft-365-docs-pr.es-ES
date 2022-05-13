@@ -1,5 +1,5 @@
 ---
-title: Protección de equipos Mac y Windows 10 no administrados en Microsoft 365 Empresa Premium
+title: Protección de equipos Mac y Windows no administrados en Microsoft 365 para la Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o sus propios dispositivos (BYOD) frente a ciberataques con Microsoft 365 Empresa Premium. Cómo configurar la ciberseguridad para equipos Windows y Mac.
-ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318842"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393250"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows 10 no administrados en Microsoft 365 Empresa Premium
+# <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows no administrados en Microsoft 365 para la Empresa Premium
 
 Este objetivo se centra en la creación de protección para los equipos Mac y Windows 10 no administrados que no estén inscritos en Microsoft Intune. Es muy probable que su pequeña empresa o campaña tenga personal que lleve sus propios dispositivos (BYOD) y estos dispositivos no estén administrados. Los BYOD incluyen teléfonos, tabletas y PC de propiedad personal. 
 
