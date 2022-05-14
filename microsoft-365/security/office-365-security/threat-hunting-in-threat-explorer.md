@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973847"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418026"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -52,6 +52,9 @@ Con estas herramientas, puede:
 - Investigar el correo electrónico malintencionado y mucho más
 
 Para obtener más información, consulte [Seguridad de correo electrónico con el Explorador de amenazas](email-security-in-microsoft-defender.md).
+
+Vea este breve vídeo para aprender a buscar e investigar amenazas basadas en el correo electrónico y la colaboración mediante Microsoft Defender para Office 365. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
 
 ## <a name="threat-explorer-walk-through"></a>Tutorial del Explorador de amenazas
 
