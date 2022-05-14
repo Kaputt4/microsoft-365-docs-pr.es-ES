@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependerán de la Microsoft 365 producto que haya comprado, como Aplicaciones Microsoft 365 para negocios.
-ms.date: 07/01/2020
-ms.openlocfilehash: fca1e5239745e28c32c200c76cc229aedeccf2a4
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 05/12/2022
+ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841687"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403236"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias en Microsoft 365 para empresas
 

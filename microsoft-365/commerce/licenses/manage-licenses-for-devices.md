@@ -1,5 +1,5 @@
 ---
-title: Administrar licencias para dispositivos
+title: Administración de licencias para dispositivos
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -19,41 +19,41 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
-ms.date: 08/27/2021
-ms.openlocfilehash: fd452cb52a1c65a59e478fb80438ac95a57e8bf6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/12/2022
+ms.openlocfilehash: 5603fd947abdfbc6bede01fe7545a5a0fa99a67d
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311793"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403280"
 ---
-# <a name="manage-licenses-for-devices"></a>Administrar licencias para dispositivos
+# <a name="manage-licenses-for-devices"></a>Administración de licencias para dispositivos
 
-Si tienes Aplicaciones Microsoft 365 para empresas (dispositivo) o Aplicaciones Microsoft 365 para Educación (dispositivo), puedes asignar licencias a dispositivos mediante Azure AD grupos. Cuando un dispositivo tiene una licencia, cualquier persona que use ese dispositivo puede usar Aplicaciones Microsoft 365 para empresas (anteriormente denominado Office 365 ProPlus). Por ejemplo, supongamos que tiene 20 portátiles y tabletas que usan los usuarios de su organización. Cuando asignas una licencia a cada dispositivo, cada persona que inicia sesión en uno de los dispositivos usa Aplicaciones Microsoft 365 para empresas sin necesidad de su propia licencia.
-
-> [!IMPORTANT]
-> Las licencias basadas en dispositivos Aplicaciones Microsoft 365 para empresas solo están disponibles como una licencia de complemento para algunos clientes comerciales y algunos clientes de educación. Para los clientes comerciales, la licencia *Aplicaciones Microsoft 365 para empresas (dispositivo)* y solo está disponible a través Enterprise Agreement/Enterprise Agreement suscripción. Para los clientes de educación, la *licencia Aplicaciones Microsoft 365 para Educación (dispositivo)* y solo está disponible a través de Enrollment for Education Solutions (EES). Para obtener más información, lea la entrada de blog sobre [disponibilidad educativa](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). Para obtener disponibilidad comercial, póngase en contacto con el representante de la cuenta microsoft.
-
-Para empezar, creas un grupo en el centro Azure Active Directory administración y, a continuación, asignas dispositivos al grupo. Para obtener más información sobre las licencias de dispositivos, incluidos los requisitos de dispositivo, los tipos de grupos que puedes usar y cómo configurar Aplicaciones Microsoft 365 para empresas para usar licencias de dispositivos, consulta Licencias basadas en [dispositivos para Aplicaciones Microsoft 365 para empresas](/deployoffice/device-based-licensing).
+Si tiene Aplicaciones Microsoft 365 para empresas (dispositivo) o Aplicaciones Microsoft 365 para Educación (dispositivo), puede asignar licencias a los dispositivos mediante grupos de Azure AD. Cuando un dispositivo tiene una licencia, cualquier usuario que use ese dispositivo puede usar Aplicaciones Microsoft 365 para empresas (anteriormente denominado Office 365 ProPlus). Por ejemplo, supongamos que tiene 20 portátiles y tabletas que usan los usuarios de su organización. Al asignar una licencia a cada dispositivo, cada persona que inicia sesión en uno de los dispositivos usa Aplicaciones Microsoft 365 para empresas sin necesidad de su propia licencia.
 
 > [!IMPORTANT]
-> Debe ser un administrador global para completar las tareas de este artículo.
+> Las licencias basadas en dispositivos para Aplicaciones Microsoft 365 para empresas solo están disponibles como licencia de complemento para algunos clientes comerciales y algunos clientes educativos. Para los clientes comerciales, la licencia está *Aplicaciones Microsoft 365 para empresas (dispositivo)* y solo está disponible a través de Enterprise Agreement o Enterprise Agreement Suscripción. Para los clientes de educación, la licencia es *Aplicaciones Microsoft 365 para Educación (dispositivo)* y solo está disponible a través de Enrollment for Education Solutions (EES). Para obtener más información, lea la entrada de blog sobre [la disponibilidad educativa](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). Para obtener disponibilidad comercial, póngase en contacto con el representante de su cuenta Microsoft.
 
-## <a name="assign-licenses-to-devices"></a>Asignar licencias a dispositivos
+Para empezar, cree un grupo en el centro de administración de Azure Active Directory y, a continuación, asigne dispositivos al grupo. Para obtener más información sobre las licencias de dispositivos, incluidos los requisitos de dispositivo, los tipos de grupos que puede usar y cómo configurar Aplicaciones Microsoft 365 para empresas para usar licencias de dispositivos, consulte [Licencias basadas en dispositivos para Aplicaciones Microsoft 365 para empresas](/deployoffice/device-based-licensing).
 
-Al asignar licencias a un grupo, se asignan licencias a todos los dispositivos del grupo. Solo puede asignar una suscripción a cualquier grupo.
+> [!IMPORTANT]
+> Debe ser administrador global para completar las tareas de este artículo.
 
-1. En el Centro de administración de Microsoft 365, vaya a la **página** <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
-2. En la **página Licencias**, elija **Aplicaciones Microsoft 365 educación (dispositivo)** **o Aplicaciones Microsoft 365 para empresas (dispositivo).**.
-3. En la página siguiente, elija una suscripción y, a continuación, **elija Asignar licencias**.
-4. En el **panel Asignar licencias a** un grupo, empiece a escribir un nombre de grupo y, a continuación, elija en los resultados para agregarlo a la lista.
-5. Elija **Asignar** y, a continuación, **seleccione Cerrar**.
+## <a name="assign-licenses-to-devices"></a>Asignación de licencias a dispositivos
 
-## <a name="unassign-licenses-from-devices"></a>Unassign licenses from devices
+Al asignar licencias a un grupo, se asignan licencias a todos los dispositivos del grupo. Solo puede asignar una suscripción a cualquier grupo único.
 
-Cuando se quitan las licencias de un grupo, se quitan las licencias de todos los dispositivos del grupo. A continuación, todas las aplicaciones y sus datos asociados son de solo lectura.
+1. En el Centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
+2. En la página **Licencias**, elija **Aplicaciones Microsoft 365 para Educación (dispositivo)** o **Aplicaciones Microsoft 365 para empresas (dispositivo).**
+3. En la página siguiente, elija una suscripción y, a continuación, elija **Asignar licencias**.
+4. En el panel **Asignar licencias a un grupo** , empiece a escribir un nombre de grupo y, a continuación, selecciónelo en los resultados para agregarlo a la lista.
+5. Elija **Asignar** y, a continuación, **elija Cerrar**.
 
-1. En el Centro de administración, vaya a la **página** <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
-2. En la **página Licencias**, elija **Aplicaciones Microsoft 365 educación (dispositivo)** **o Aplicaciones Microsoft 365 para empresas (dispositivo).**.
-3. En la página siguiente, elija una suscripción, seleccione los tres puntos (más acciones) y, a continuación, elija **Unassign licenses**.
-4. En el **cuadro de diálogo Unassign licenses** , elija **Unassign**.
+## <a name="unassign-licenses-from-devices"></a>Anulación de la asignación de licencias de dispositivos
+
+Al anular la asignación de licencias de un grupo, se quitan las licencias de todos los dispositivos del grupo. Todas las aplicaciones y sus datos asociados son de solo lectura.
+
+1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
+2. En la página **Licencias**, elija **Aplicaciones Microsoft 365 para Educación (dispositivo)** o **Aplicaciones Microsoft 365 para empresas (dispositivo).**
+3. En la página siguiente, elija una suscripción, seleccione los tres puntos (más acciones) y, a continuación, elija **Anular la asignación de licencias**.
+4. En el cuadro de diálogo **Anular asignación de licencias** , elija **Quitar la asignación**.
