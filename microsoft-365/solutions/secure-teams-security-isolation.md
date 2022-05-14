@@ -1,5 +1,5 @@
 ---
-title: Configuración de un equipo con aislamiento de seguridad
+title: Configue un equipo con aislamiento de seguridad mediante una etiqueta de confidencialidad única
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,14 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943137"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393118"
 ---
-# <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
+# <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Configue un equipo con aislamiento de seguridad mediante una etiqueta de confidencialidad única
 
 Este artículo contiene recomendaciones y pasos para configurar un equipo privado en Microsoft Teams y usar una etiqueta de confidencialidad única para cifrar los archivos de forma que solo los miembros del equipo puedan descifrarlos.
 
@@ -261,7 +261,7 @@ Esta formación debería incluir ejercicios prácticos para que los miembros del
 
 En las semanas después de la formación haga lo siguiente:
 
-- Responda rápidamente a los comentarios de los miembros del equipo y ajuste las directivas y las configuraciones.
+- Solucione rápidamente los comentarios de los miembros del equipo y ajuste las directivas y configuraciones.
 - Analice el uso del equipo y compárelo con las expectativas de uso.
 - Compruebe que los archivos altamente regulados se hayan etiquetado de forma correcta con la etiqueta de confidencialidad. (Puede ver qué archivos tienen una etiqueta asignada viendo una carpeta en SharePoint y añadiendo la columna **Confidencialidad** a través de la opción **Mostrar/ocultar columnas** que está en **Añadir columna**).
 
