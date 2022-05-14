@@ -1,5 +1,5 @@
 ---
-title: Asignación de permisos de eDiscovery en el portal de cumplimiento de Microsoft Purview
+title: Asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,23 +16,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento de Microsoft Purview.
+description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090525"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419448"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Asignación de permisos de eDiscovery en el portal de cumplimiento
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento de Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del centro de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
-  
+Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del portal de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
+
+> [!TIP]
+> Puede ver sus propios permisos en la página de información general de eDiscovery (Premium) en el portal de cumplimiento. Debe tener al menos un rol asignado para que se muestren los permisos.
+
 El grupo de roles principal relacionado con eDiscovery en el portal de cumplimiento se denomina **Administrador de exhibición de documentos electrónicos**. Hay dos subgrupos dentro de este grupo de roles.
   
 - **Administrador de exhibición de** documentos electrónicos: un Administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como la vista previa y la exportación de resultados de búsqueda. Los miembros también pueden crear y administrar casos en Microsoft Purview eDiscovery (Estándar) y Microsoft Purview eDiscovery (Premium), agregar y quitar miembros a un caso, crear retenciones de mayúsculas y minúsculas, ejecutar búsquedas asociadas a un caso y acceder a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
@@ -41,7 +44,7 @@ El grupo de roles principal relacionado con eDiscovery en el portal de cumplimie
   
   - Acceda a todos los casos que aparecen en las páginas **eDiscovery (Estándar)** y **eDiscovery (Premium)** del portal de cumplimiento.
 
-  - Acceda a los datos de casos en eDiscovery (Premium) en cualquier caso de la organización.
+  - Acceder a los datos de los casos en eDiscovery (Premium) para cualquier caso en la organización.
   
   - Administrar cualquier caso de eDiscovery después de agregarse como miembro del caso.
   
@@ -91,7 +94,7 @@ En la tabla siguiente se enumeran los roles RBAC relacionados con eDiscovery en 
 |Custodio <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Export <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Versión preliminar <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Revisar <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> |
 |Descifrado de RMS <br/>  ||![Marca de verificación](../media/checkmark.png) <br/> |||
 |Buscar y purgar <br/> | <br/> | <br/> |![Marca de verificación](../media/checkmark.png)<br/> | <br/> |
@@ -103,11 +106,11 @@ En las secciones siguientes se describen cada uno de los roles de RBAC relaciona
 
 Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento. Como se explicó anteriormente, se debe asignar a un usuario el rol Administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertirlo en administrador de eDiscovery.
 
-Para más información, consulte lo siguiente:
+Para más información, vea:
 
 - [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md)
 
-- [Comenzar con eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
+- [Introducción a eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
 
 ### <a name="communication"></a>Comunicación
 
@@ -135,7 +138,7 @@ Para obtener más información, vea [Trabajar con custodios en eDiscovery (Premi
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para su análisis en eDiscovery (Premium).
 
-Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde el portal de cumplimiento de Microsoft Purview](export-search-results.md).
+Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde portal de cumplimiento Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Hold
 
@@ -147,7 +150,7 @@ Para obtener más información sobre las retenciones, consulte:
 
 - [Crear una suspensión en eDiscovery (Premium)](add-custodians-to-case.md)
 
-### <a name="preview"></a>Preview
+### <a name="preview"></a>Versión preliminar
 
 Este rol permite a los usuarios ver una lista de elementos devueltos desde una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 

@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131160"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418278"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Abordar las cuentas de usuario en peligro con una investigación y respuesta automatizadas
 
@@ -62,6 +62,9 @@ Cuando una cuenta de usuario está en peligro, se desencadenan alertas. Y, en al
 
 > [!IMPORTANT]
 > Debe tener los permisos adecuados para realizar las siguientes tareas. Consulte [Permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
+
+Vea este breve vídeo para aprender a detectar y responder a los riesgos del usuario en Microsoft Defender para Office 365 mediante la investigación y respuesta automatizadas (AIR) y las alertas de usuario en peligro.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualización e investigación de usuarios restringidos
 

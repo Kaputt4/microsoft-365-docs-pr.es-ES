@@ -18,12 +18,12 @@ ms.date: 10/22/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6a0667e52474fe5e04f547d12b1f53ca47c6ea6e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 195e929c0de1be9ab05f2685ba60e56c13dd3629
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787586"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415236"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender
 
@@ -56,7 +56,7 @@ En la tabla siguiente se resumen las características y funcionalidades que depe
 > [!TIP]
 > Para más información sobre los planes de Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión Plan 1 y Plan 2](defender-endpoint-plan-1-2.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que tiene información general sobre la protección en la nube y su rol en Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
 
@@ -72,10 +72,10 @@ Ahora que tiene información general sobre la protección en la nube y su rol en
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

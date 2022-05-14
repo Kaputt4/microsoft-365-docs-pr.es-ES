@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f582e33f2d77c8560b773b79d54026e38bcde8c9
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e7f8327dc4bae972528943eceb8cf5c6f28fb0c4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790380"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416362"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
@@ -45,7 +45,7 @@ Hay dos configuraciones que son útiles para estos dispositivos:
 
 Los artículos siguientes también pueden ser útiles en estas situaciones:
 - [Configuración de exámenes programados y de puesta al día](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin una conexión WSUS
@@ -104,15 +104,15 @@ Esta acción evita que las actualizaciones de protección se descarguen cuando e
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Actualizar y administrar Antivirus de Microsoft Defender en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

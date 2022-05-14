@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788950"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416318"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -42,14 +42,14 @@ ms.locfileid: "64788950"
 La protección contra alteraciones está disponible para los dispositivos que ejecutan una de las siguientes versiones de Windows:
 
 - Windows 11
-- Windows 11 Empresas sesiones múltiples 
+- Sesión múltiple de Windows 11 Enterprise 
 - Windows 10
 - Sesión múltiple de Windows 10 Enterprise
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
@@ -67,7 +67,7 @@ Durante algunos tipos de ciberataques, los actores malintencionados intentan des
 - Eliminación de actualizaciones de inteligencia de seguridad
 - Deshabilitación de acciones automáticas en amenazas detectadas
 
-### <a name="how-it-works"></a>Cómo funciona
+### <a name="how-it-works"></a>Funcionamiento
 
 La protección contra alteraciones básicamente bloquea Antivirus de Microsoft Defender a sus valores seguros y predeterminados e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos como:
 
@@ -117,14 +117,14 @@ La protección contra alteraciones se puede activar o desactivar para el inquili
 - Los dispositivos Windows deben ejecutar una de las siguientes versiones de Windows:
   
   - Windows 11
-  - Windows 11 Empresas sesiones múltiples 
+  - Sesión múltiple de Windows 11 Enterprise 
   - Windows 10
   - Sesión múltiple de Windows 10 Enterprise
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server, versión 1803 o posterior
   - Windows Server 2016
-  - Windows Server 2012 R2
+  - Windows Server 2012 R2
 
 Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information).
 
@@ -248,12 +248,12 @@ La protección contra alteraciones se integra con las funcionalidades [de admini
 
 Para más información sobre Threat & Vulnerability Management, consulte [Información del panel: Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
 - Windows 11
-- Windows 11 Empresas sesiones múltiples
+- Sesión múltiple de Windows 11 Enterprise
 - Windows 10 sistema operativo [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior junto con [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint).
 - Sesión múltiple de Windows 10 Enterprise
   
@@ -319,16 +319,18 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 
 - [Ayuda a proteger equipos Windows con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Obtener información general de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint)
 - [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
+- [Habilitación del modo de solución de problemas](enable-troubleshooting-mode.md)
+- [Escenarios de modo de solución de problemas](troubleshooting-mode-scenarios.md)

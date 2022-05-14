@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b5dc8832839c86fee98e9f27264b70e6a63f380c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 23c079f8f845e6116bc39b9edb3fb186883ef576
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790710"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418234"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errores comunes para evitarlos cuando se definen exclusiones
 
@@ -106,7 +106,7 @@ En general, no defina exclusiones para las siguientes ubicaciones de carpeta:
 
 `C:\Windows\Temp\*`
 
-#### <a name="linux-and-macos-platforms"></a>Plataformas Linux y macOS
+#### <a name="linux-and-macos-platforms"></a>Plataformas linux y macOS
 
 `/`
 
@@ -273,7 +273,7 @@ En general, no defina exclusiones para los procesos siguientes:
 
 `windbg.exe`
 
-#### <a name="linux-and-macos-platforms"></a>Plataformas Linux y macOS
+#### <a name="linux-and-macos-platforms"></a>Plataformas linux y macOS
 
 `bash`
 
@@ -304,10 +304,10 @@ Consulte [Uso de caracteres comodín en las listas de exclusión de extensiones 
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286634"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417180"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -43,6 +43,9 @@ Hay varios informes disponibles en el portal de Microsoft 365 Defender en <https
 > Algunos de los informes de la página **Informes de colaboración de & por correo electrónico** requieren Microsoft Defender para Office 365. Para obtener información sobre estos informes, vea [Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender](view-reports-for-mdo.md).
 >
 > Los informes relacionados con el flujo de correo están ahora en el centro de administración de Exchange. Para obtener más información sobre estos informes, consulte [Informes de flujo de correo en el nuevo centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+Vea este breve vídeo para obtener información sobre cómo puede usar informes para comprender la eficacia de Defender para Office 365 en su organización.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Cambios en el informe de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 

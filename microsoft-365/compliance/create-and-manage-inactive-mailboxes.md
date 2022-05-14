@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cree y administre buzones inactivos que conserven el contenido de los buzones eliminados en Microsoft 365.
-ms.openlocfilehash: 485352f292321ccfa56e59451cf017c01f3d7fdd
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393376"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417410"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -72,9 +72,11 @@ Para ver una lista de los buzones inactivos de la organización:
 
    ![Opción Buzón inactivo en la página Directivas de retención de la administración del ciclo de vida de datos.](../media/inactive-mailbox-option.png)
 
-4. La página **Buzones inactivos** muestra una lista de buzones inactivos. Seleccione uno para ver detalles sobre ese buzón inactivo. Los detalles incluyen cuánto tiempo ha estado inactivo, el identificador de Exchange, cuándo lo puso en espera.
+4. La página **Buzones inactivos** muestra una lista de buzones inactivos. Seleccione uno para ver detalles sobre ese buzón inactivo. Los detalles incluyen el identificador de Exchange del buzón de correo y si está en [suspensión por juicio](create-a-litigation-hold.md).
+    
+    No verá otros tipos de retenciones en el panel de detalles, por ejemplo, una directiva de retención de Microsoft 365 o una suspensión de eDiscovery. Para encontrar esta información, consulte [Cómo identificar el tipo de retención colocado en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-En la página **Buzones inactivos** , seleccione el ![icono Exportar resultados de búsqueda.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Exporte** para ver o descargar un archivo CSV que contenga información adicional sobre los buzones inactivos de su organización.
+Si tiene muchos buzones inactivos, es posible que le resulte más fácil buscar y ordenar un archivo CSV para obtener los detalles que ve en la lista: en la página **Buzones inactivos** , seleccione :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: **Exportar**.
 
 Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar la lista de buzones inactivos:
 

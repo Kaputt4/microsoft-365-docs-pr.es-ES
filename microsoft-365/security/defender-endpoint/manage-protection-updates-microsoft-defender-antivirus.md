@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f6c43da4940ddee099c515a5dc8889cb5aca62b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101411"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416626"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -287,7 +287,7 @@ Configure un recurso compartido de archivos de red (unidad UNC/asignada) para de
     > No agregue la carpeta x64 (o x86) en la ruta de acceso. El proceso de mpcmdrun.exe lo agrega automáticamente.
 
 > [!TIP]
-> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Haga un hash y cargue la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c40802a76ab09dc86dcada5ebfd17187136f42e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0277a53b74359bdcac1de8fa6013082b991247f4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760237"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417532"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se muestra cómo aplicar hash y cargar la tabla de origen de información confidencial.
 

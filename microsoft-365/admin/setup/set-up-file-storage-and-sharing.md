@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: 2cc7354a5f22f170a097d7960d936e36999bde49
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202326"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417246"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 

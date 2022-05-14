@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de ServiceNow desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 775838210a6809d03643ecc4d042398fadb9ed69
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: d46369896e0fc99cb6e01b9dfaa56a03fe7cb226
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317834"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419426"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Configuración de un conector para archivar datos de ServiceNow
 

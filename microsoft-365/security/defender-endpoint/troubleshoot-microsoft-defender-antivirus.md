@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6a9b346d4e423d46244eeedbb8136b91a165473a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 52105373f0bc6bb70f6433eba4dacb4580a0f804
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788576"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416724"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -50,7 +50,7 @@ La lista de tablas:
 > - Bloqueo de aplicaciones potencialmente no deseados
 
 > [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 <a id="windows-defender-av-ids"></a>
 ## <a name="microsoft-defender-antivirus-event-ids"></a>identificadores de eventos de Antivirus de Microsoft Defender
@@ -990,7 +990,7 @@ UACUser</dt>
 <li>Configuración de Chrome</li>
 <li>Datos de control de arranque</li>
 <li>Regedit y la configuración del Registro del Administrador de tareas</li>
-<li>Windows Update, servicio de transferencia inteligente en segundo plano y servicio de llamada a procedimiento remoto</li>
+<li>Windows Update, Servicio de transferencia inteligente en segundo plano y servicio de llamada a procedimiento remoto</li>
 <li>Windows archivos del sistema operativo</li></ul>
 El contexto anterior se aplica a las siguientes versiones de cliente y servidor:
 <table>
@@ -1210,7 +1210,7 @@ Acción del usuario:
 El cliente Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el punto de conexión no esté protegido. Revise la descripción del error y, a continuación, siga los pasos pertinentes <b>de la acción Usuario</b> que se indican a continuación.
 <table>
 <tr>
-<th>Action</th>
+<th>Acción</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -1526,7 +1526,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar la
 </dt>
 <dt>Fase de actualización: &lt;fase&gt; de actualización, por ejemplo:
 <ul>
-<li>Búsqueda</li>
+<li>Buscar </li>
 <li>Descargar</li>
 <li>Instalar</li>
 </ul>
@@ -2696,7 +2696,7 @@ Use la información de estas tablas para ayudar a solucionar Antivirus de Micros
 <th colspan="2">Código de error: 0x80508007</th>
 </tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2722,7 +2722,7 @@ Este error indica que es posible que se haya quedado sin memoria.
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x8050800C</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2746,7 +2746,7 @@ Nota: El tamaño del archivo de definiciones descargado del sitio puede superar 
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x80508020</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2756,7 +2756,7 @@ Este error indica que podría haber un error de configuración del motor; Normal
 <tr>
 <th colspan="2">Código de error: 0x805080211
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2766,7 +2766,7 @@ Este error indica que Antivirus de Microsoft Defender no pudo poner en cuarenten
 <tr>
 <th colspan="2">Código de error: 0x80508022
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2777,7 +2777,7 @@ Este error indica que se requiere un reinicio para completar la eliminación de 
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2791,7 +2791,7 @@ Ejecute el <a href="https://www.microsoft.com/security/scanner/default.aspx">Exa
 <tr>
 <th colspan="2">Código de error: 0x80508024 </th></tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2805,7 +2805,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508025
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2816,7 +2816,7 @@ Siga los pasos de corrección manual descritos en la <a href="https://www.micros
 <tr>
 <th colspan="2">Código de error: 0x80508026
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2828,7 +2828,7 @@ Antivirus de Microsoft Defender no puede corregir las amenazas detectadas dentro
 <tr>
 <th colspan="2">Código de error: 0x80508027
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2840,7 +2840,7 @@ Compruebe las amenazas detectadas y resuelvalas según sea necesario.
 <tr>
 <th colspan="2">Código de error: 0x80508029
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2852,7 +2852,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508030
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2864,7 +2864,7 @@ Ejecute Antivirus de Microsoft Defender sin conexión. Puede leer sobre cómo ha
 <tr>
 <th colspan="2">Código de error: 0x80508031
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -3203,13 +3203,13 @@ Se trata de un error interno. Es posible que se haya desencadenado cuando un exa
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 
 ## <a name="related-topics"></a>Temas relacionados

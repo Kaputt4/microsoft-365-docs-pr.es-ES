@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c6564d191b3d3302f818e20fe08e64b415c2b0bb
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131430"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416495"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Aprenda a administrar la vulnerabilidad de Log4Shell en Microsoft Defender para punto de conexión
 
@@ -54,7 +54,7 @@ Amenazas y administración de vulnerabilidades proporciona las siguientes funcio
 >
 > La compatibilidad con Linux requiere Microsoft Defender para punto de conexión cliente Linux versión 101.52.57 (30.121092.15257.0) o posterior.
 >
-> La compatibilidad con macOS requiere Microsoft Defender para punto de conexión cliente de macOS versión 20.121111.15416.0 o posterior.
+> La compatibilidad con macOS requiere Microsoft Defender para punto de conexión macOS versión de cliente 20.121111.15416.0 o posterior.
 >
 >Para obtener más información sobre las versiones [admitidas, consulte Plataformas y funcionalidades de sistemas operativos compatibles](tvm-supported-os.md).
 
@@ -97,7 +97,7 @@ Amenazas y administración de vulnerabilidades proporciona capas de detección p
 
 En esta tabla se describen las funcionalidades de búsqueda compatibles con plataformas y versiones:
 
-|Funcionalidad|Tipo de archivo|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux y macOS|
+|Funcionalidad|Tipo de archivo|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux + macOS|
 |:---|:---|:---|:---|:---|:---|
 |Buscar en memoria  | Log4j-core | Sí |Sí<sup>[1]| - | Sí |
 | |Uber-JARs | Sí |Sí<sup>[1]| - | Sí |
@@ -145,8 +145,8 @@ En la tabla siguiente se enumeran los posibles estados de mitigación:
 |:---|:---|
 | Solución alternativa aplicada | _Windows_: se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS antes del reinicio del dispositivo más reciente. <br/><br/> _Linux + macOS_: todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
 | Solución alternativa pendiente de reinicio | Se establece la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS, pero no se ha detectado ningún reinicio siguiente. |
-| No aplicado | _Windows_: No se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS. <br/><br/> _Linux y macOS_: no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno y la acción de mitigación no se aplicó en el dispositivo. |
-| Parcialmente mitigado | _Linux y macOS_: aunque se aplicó una acción de mitigación en el dispositivo, no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
+| No aplicado | _Windows_: No se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS. <br/><br/> _Linux + macOS_: no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno y la acción de mitigación no se aplicó en el dispositivo. |
+| Parcialmente mitigado | _Linux + macOS_: aunque se aplicó una acción de mitigación en el dispositivo, no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
 |No aplicable | Dispositivos que tienen archivos vulnerables que no están en el intervalo de versiones de la mitigación. |
 |Unknown | El estado de mitigación no se pudo determinar en este momento. |
 
@@ -180,9 +180,9 @@ El cambio surtirá efecto después de reiniciar el dispositivo.
 
 Quite el archivo setenv. LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ de las carpetas siguientes:
 
-  - */Library/LaunchDaemons/*
-  - */Library/LaunchAgents/*
-  - */Users/\[username\]/Library/LaunchAgents/ - para todos los usuarios*
+- */Library/LaunchDaemons/*
+- */Library/LaunchAgents/*
+- */Users/\[username\]/Library/LaunchAgents/ - para todos los usuarios*
 
 El cambio surtirá efecto después de reiniciar el dispositivo.
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d171db0d5009cc32c34c3bf95da907221f275410
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 50c7a6a4563e8231d28b11144347ca0fb1de46a9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789280"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418212"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -54,7 +54,7 @@ El panel se estructura en dos secciones:
 |Sección|Descripción|
 |---|---|
 |1|Tendencias de dispositivos|
-|2|Resumen del dispositivo (día actual)|
+|2 |Resumen del dispositivo (día actual)|
 |||
 
 ## <a name="device-trends"></a>Tendencias de dispositivos
@@ -106,13 +106,13 @@ Por ejemplo, para mostrar datos sobre Windows 10 dispositivos con estado de mant
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-topic"></a>Tema relacionado
 

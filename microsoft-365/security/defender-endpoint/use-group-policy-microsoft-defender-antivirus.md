@@ -16,12 +16,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8cda6f387814ed6ec613db8cb53ff030243a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 53b24f0566b9b9d43ad725a832bb1e0fa8013923
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789436"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416384"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Use directiva de grupo configuración para configurar y administrar Antivirus de Microsoft Defender
 
@@ -115,9 +115,9 @@ En la tabla siguiente se enumeran las opciones de configuración de directiva de
 |Raíz|Aleatorizar los tiempos de las tareas programadas|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Examinar|Permitir a los usuarios pausar el examen|[Impedir que los usuarios vean o interactúen con la interfaz de usuario de Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) (no se admite en Windows 10)|
 |Examinar|Compruebe las definiciones de virus y spyware más recientes antes de ejecutar un examen programado.|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Examinar|Definir el número de días después de los cuales se fuerza un examen de puesta al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen completo para ponerse al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen rápido para ponerse al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Definir el número de días después de los cuales se fuerza un examen de puesta al día|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen completo para ponerse al día|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen rápido para ponerse al día|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Examinar|Configuración de la invalidación de configuración local para el porcentaje máximo de uso de CPU|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Examinar|Configuración de la invalidación de configuración local para el día del examen de programación|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Examinar|Configuración de la invalidación de configuración local para el tiempo de examen rápido programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -149,27 +149,27 @@ En la tabla siguiente se enumeran las opciones de configuración de directiva de
 |Actualizaciones de inteligencia de seguridad|Permitir actualizaciones de inteligencia de seguridad en tiempo real basadas en informes de Microsoft MAPS|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Comprobación de las definiciones de virus y spyware más recientes en el inicio|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Definición de recursos compartidos de archivos para descargar actualizaciones de inteligencia de seguridad|[Administración de actualizaciones de inteligencia de seguridad y protección Antivirus de Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días después de los cuales se requiere una actualización de inteligencia de seguridad|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de spyware se consideren obsoletas|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de virus se consideren obsoletas|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días después de los cuales se requiere una actualización de inteligencia de seguridad|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de spyware se consideren obsoletas|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de virus se consideren obsoletas|[Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Definir el orden de los orígenes para descargar las actualizaciones de inteligencia de seguridad|[Administración de actualizaciones de inteligencia de seguridad y protección Antivirus de Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Inicio de la actualización de inteligencia de seguridad|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Especificar el día de la semana para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Especificar el intervalo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Especificar el tiempo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Especificar el día de la semana para comprobar si hay actualizaciones de inteligencia de seguridad|[Administre cuándo deben descargarse y aplicarse las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Especificar el intervalo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administre cuándo deben descargarse y aplicarse las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Especificar el tiempo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administre cuándo deben descargarse y aplicarse las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Activar el examen después de la actualización de Inteligencia de seguridad|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Amenazas|Especificar los niveles de alerta de amenaza en los que no se debe realizar una acción predeterminada cuando se detecte|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 |Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 

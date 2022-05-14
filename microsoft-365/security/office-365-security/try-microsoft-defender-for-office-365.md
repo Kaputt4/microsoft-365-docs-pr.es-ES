@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: 17c7dd9a7b92f4a540f16cd5768067dd52991f22
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145233"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415539"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
 
@@ -43,6 +43,9 @@ El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporc
   En estos entornos, puede probar Defender para Office 365 en modo *de auditoría* o en *modo de bloqueo*.
 
 Se le invita a iniciar la prueba en varias ubicaciones de características de Defender para Office 365 en el portal de Microsoft 365 Defender en <https://security.microsoft.com>. La ubicación centralizada para iniciar la prueba se encuentra en la página **Pruebas** en <https://security.microsoft.com/atpEvaluation>.
+
+Vea este breve vídeo para obtener más información sobre cómo puede hacer más en menos tiempo con Microsoft Defender para Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
 
 En el resto de este artículo se explica la diferencia entre el modo de bloqueo del modo de auditoría, cómo configurar las evaluaciones y otros detalles.
 
@@ -220,7 +223,7 @@ Los permisos necesarios en **Azure AD** para configurar una evaluación de Defen
 - **Crear, modificar o eliminar una evaluación**: Administrador de seguridad o Administrador global.
 - **Ver directivas e informes de evaluación**: Administrador de seguridad o Lector de seguridad.
 
-Para obtener más información sobre los permisos de Azure AD en el portal de Microsoft 365 Defender, consulte [roles de Azure AD en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal).
+Para obtener más información sobre los permisos de Azure AD en el portal de Microsoft 365 Defender, consulte [Roles de Azure AD en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal).
 
 ## <a name="evaluation-policy-settings"></a>Configuración de la directiva de evaluación
 
@@ -233,27 +236,27 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |AdminDisplayName|Directiva de evaluación|
 |AuthenticationFailAction|MoveToJmf|
 |Habilitado|Verdadero|
-|EnableFirstContactSafetyTips|False|
+|EnableFirstContactSafetyTips|Falso|
 |EnableMailboxIntelligence|Verdadero|
 |EnableMailboxIntelligenceProtection|Verdadero|
-|EnableOrganizationDomainsProtection|False|
-|EnableSimilarDomainsSafetyTips|False|
-|EnableSimilarUsersSafetyTips|False|
+|EnableOrganizationDomainsProtection|Falso|
+|EnableSimilarDomainsSafetyTips|Falso|
+|EnableSimilarUsersSafetyTips|Falso|
 |EnableSpoofIntelligence|Verdadero|
 |EnableSuspiciousSafetyTip|Falso|
-|EnableTargetedDomainsProtection|False|
+|EnableTargetedDomainsProtection|Falso|
 |EnableTargetedUserProtection|False|
 |EnableUnauthenticatedSender|Verdadero|
-|EnableUnusualCharactersSafetyTips|False|
+|EnableUnusualCharactersSafetyTips|Falso|
 |EnableViaTag|Verdadero|
 |Guid|Valor DE GUID|
 |ImpersonationProtectionState|Manual|
-|IsDefault|False|
+|IsDefault|Falso|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
 |Nombre|Directiva de evaluación|
-|PhishThresholdLevel|1|
+|PhishThresholdLevel|1 |
 |RecommendedPolicyType|Evaluation|
 |SpoofQuarantineTag|DefaultFullAccessPolicy|
 |TargetedDomainActionRecipients|{}|
@@ -291,12 +294,12 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |EnableOrganizationBranding|False|
 |Guid|Valor DE GUID|
 |IsBuiltInProtection|False|
-|IsDefault|False|
+|IsDefault|Falso|
 |Nombre|Directiva de evaluación|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|Evaluation|
-|Redirect|False|
+|Redirigir|False|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -305,7 +308,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |Configuración|Valor|
 |---|---|
 |AdminDisplayName|Directiva de evaluación|
-|AllowClickThrough|False|
+|AllowClickThrough|Falso|
 |CustomNotificationText|Blanco|
 |DeliverMessageAfterScan|Verdadero|
 |DisableUrlRewrite|Verdadero|

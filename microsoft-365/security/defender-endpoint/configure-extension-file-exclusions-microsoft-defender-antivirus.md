@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4db7b8f13f1f4860d8cd88f6dec0ff588a89ab41
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098920"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419910"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -379,7 +379,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarlo con el nombre de archivo o en la carpeta que intenta excluir.
 
 > [!TIP]
-> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

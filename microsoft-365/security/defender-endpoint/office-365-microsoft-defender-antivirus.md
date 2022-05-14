@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1690a100a2743d35bc85f116398d94325ad47fbc
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e8bdeb114e4a3e6be8981f859d69e8c069517b8a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788466"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418792"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -73,7 +73,7 @@ Microsoft Defender para Office 365 integrado con Microsoft Defender para punto d
 
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp) protege a su organización frente a amenazas malintencionadas planteadas en mensajes de correo electrónico, datos adjuntos de correo electrónico y vínculos (DIRECCIONES URL) en Office documentos.
 
-    AND
+    Y
 
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md) protege los dispositivos frente a ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora su posición de seguridad.
 
@@ -91,13 +91,13 @@ La protección contra ransomware es una gran razón para poner sus archivos en O
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="want-to-learn-more-see-these-resources"></a>¿Quiere obtener más información? Consulte estos recursos:
 

@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 08f8e0c861bfd19f11c5b011d0a8db41ce3e73bc
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789060"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419954"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
@@ -71,16 +71,16 @@ Antivirus de Microsoft Defender y protección en la nube bloquean automáticamen
 
       2. **Siempre preguntar**
          - Si está configurado, siempre se le pedirá al usuario su consentimiento antes del envío de archivos.
-         - Esta configuración no está disponible en la protección en la nube de macOS.
+         - Esta configuración no está disponible en macOS protección en la nube
 
       3. **Enviar todos los ejemplos automáticamente**
          - Si se configura, todos los ejemplos se enviarán automáticamente.
          - Si desea que el envío de ejemplo incluya macros incrustadas en documentos de Word, debe elegir "Enviar todos los ejemplos automáticamente".
-         - Esta configuración no está disponible en la protección en la nube de macOS.
+         - Esta configuración no está disponible en macOS protección en la nube
 
       4. **No enviar**
          - Impide "bloquear a primera vista" en función del análisis de ejemplo de archivo
-         - "No enviar" es el equivalente a la configuración "Deshabilitado" en la directiva de macOS
+         - "No enviar" es el equivalente a la configuración "Deshabilitado" en macOS directiva
          - Los metadatos se envían para las detecciones incluso cuando el envío de ejemplo está deshabilitado
 
    3. Después de enviar metadatos o archivos a la protección en la nube, puede usar **ejemplos**, **detonaciones** o modelos de aprendizaje automático de **análisis de macrodatos** para llegar a un veredicto. La desactivación de la protección entregada en la nube limitará el análisis solo a lo que el cliente puede proporcionar a través de modelos de aprendizaje automático locales y funciones similares.
@@ -142,13 +142,13 @@ Hay dos escenarios más en los que Defender para punto de conexión podría soli
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 

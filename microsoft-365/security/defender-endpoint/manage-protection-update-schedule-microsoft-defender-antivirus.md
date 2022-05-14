@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1624cec49b6c1e242be7fd1120ef87bdf05a5af7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5ffa9d623b89bc19c7c3ec8817f2df6bc174384b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091663"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419844"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 
@@ -55,7 +55,7 @@ También puede aleatorizar las veces en que cada punto de conexión comprueba y 
 3. Para comprobar y descargar actualizaciones en un momento determinado:
       1. Establezca **Comprobar Endpoint Protection actualizaciones de inteligencia de seguridad en un intervalo específico... en** **0**.
       2. Establezca **Check for Endpoint Protection security intelligence updates daily at... (Comprobar Endpoint Protection actualizaciones de inteligencia de seguridad diariamente en... en** el momento en que se deben comprobar las actualizaciones).
-      3
+      3 
 4. Para comprobar y descargar actualizaciones en un intervalo continuo, establezca **Comprobar Endpoint Protection actualizaciones de inteligencia de seguridad en un intervalo específico...** en el número de horas que deben producirse entre las actualizaciones.
 
 5. [Implemente la directiva actualizada como de costumbre](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
@@ -105,7 +105,7 @@ Consulte lo siguiente para obtener más información y los parámetros permitido
 - [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 > [!TIP]
-> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

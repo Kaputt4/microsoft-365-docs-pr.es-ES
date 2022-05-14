@@ -14,13 +14,13 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicio con la clave de cliente de Microsoft Purview.
-ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+description: En este artículo, obtendrá información sobre cómo funciona el cifrado del servicio con Microsoft Purview clave de cliente.
+ms.openlocfilehash: 3a0533b94cb70c9fc46d6246e99d3f9fdb5eb6e6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145220"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415093"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Cifrado de servicio con clave de cliente de Microsoft Purview
 

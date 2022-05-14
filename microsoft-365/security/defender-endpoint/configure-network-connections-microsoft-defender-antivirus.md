@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 70360ac3b9ade0e6039239fe257d83c7ba3a2db0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787612"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418640"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -41,7 +41,7 @@ Para asegurarse de que Antivirus de Microsoft Defender protección entregada en 
 
 
 > [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Permitir conexiones al servicio en la nube Antivirus de Microsoft Defender
 
@@ -84,7 +84,7 @@ Use el argumento siguiente con la utilidad de línea de comandos Antivirus de Mi
 ```
 
 > [!NOTE]
-> Abra el símbolo del sistema como administrador. Haga clic con el botón derecho en el elemento en el menú **Inicio** , haga clic en **Ejecutar como administrador** y haga clic en **Sí** en el símbolo del sistema de permisos. Este comando solo funcionará en Windows 10, versión 1703 o posterior, o Windows 11.
+> Abra una ventana de Símbolo de sistema como administrador. Haga clic con el botón derecho en el elemento en el menú **Inicio** , haga clic en **Ejecutar como administrador** y haga clic en **Sí** en el símbolo del sistema de permisos. Este comando solo funcionará en Windows 10, versión 1703 o posterior, o Windows 11.
 
 Para obtener más información, vea [Administrar Antivirus de Microsoft Defender con la herramienta de línea de comandos mpcmdrun.exe](command-line-arguments-microsoft-defender-antivirus.md).
 
@@ -120,13 +120,13 @@ Se produce un mensaje similar si usa Internet Explorer:
 
     > [!TIP]
     > Si busca información relacionada con antivirus para otras plataformas, consulte:
-    > - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+    > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
     > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-    > - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+    > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
     > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
     > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-    > - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-    > - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+    > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+    > - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 
 ## <a name="see-also"></a>Vea también

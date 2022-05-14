@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
-ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092279"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414874"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar microsoft Purview eDiscovery (Premium) con el fin de conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
+En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar Microsoft Purview eDiscovery (Premium) para conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
 
 Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante eDiscovery (Premium):
 
@@ -70,7 +70,7 @@ Para crear un caso:
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento de Microsoft Purview, haga clic en **eDiscovery > Avanzado**.
+2. En el panel de navegación izquierdo del portal de cumplimiento Microsoft Purview, haga clic en **eDiscovery > Avanzadas**.
 
 3. En la página **eDiscovery (Premium),** haga clic en la pestaña **Casos** y, a continuación, haga clic en **Crear un caso**.
 
@@ -276,7 +276,7 @@ En la tabla siguiente se describen las propiedades de metadatos para Teams conte
 |FamilyId|GUID que identifica el archivo de transcripción de una conversación de chat. Los datos adjuntos tendrán el mismo valor para esta propiedad que el archivo de transcripción que contiene el mensaje al que se ha adjuntado el archivo.|
 |FileClass|Indica ese tipo de contenido. Los elementos de Teams chats tienen el valor `Conversation`. Por el contrario, Exchange mensajes de correo electrónico tienen el valor `Email`.|
 |MessageKind|Propiedad de tipo de mensaje. Teams contenido tiene el valor `microsoftteams , im`.|
-|Recipientes|Lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
+|Destinatarios|Lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
 |TeamsChannelName|Nombre del canal Teams de la transcripción.|
 
 Para obtener descripciones de otras propiedades de metadatos de eDiscovery (Premium), vea [Campos de metadatos del documento en eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).

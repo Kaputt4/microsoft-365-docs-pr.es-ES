@@ -16,12 +16,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo quitar conectores bloqueados en Microsoft 365 Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d248129c7dec83541c4b340fdac7e881344bbf0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: d0797f0ec16b8f813cf7db9b2fd27468c141ea53
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131468"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417005"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Eliminación de conectores bloqueados del portal de entidades restringidas
 
@@ -33,28 +33,28 @@ ms.locfileid: "65131468"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si se detecta que un conector de entrada está potencialmente en peligro, se le restringe el envío de cualquier correo electrónico de retransmisión. A continuación, el conector se agrega a la página **Entidades restringidas** del portal de Microsoft 365 Defender. Cuando se usa el conector para enviar correo electrónico, el mensaje se devuelve en un informe de no entrega (también conocido como NDR o mensaje devuelto) con el código de error 550;5.7.711 y el texto siguiente: 
+Si se detecta que un conector de entrada está potencialmente en peligro, se le restringe el envío de cualquier correo electrónico de retransmisión. A continuación, el conector se agrega a la página **Entidades restringidas** del portal de Microsoft 365 Defender. Cuando se usa el conector para enviar correo electrónico, el mensaje se devuelve en un informe de no entrega (también conocido como NDR o mensaje devuelto) con el código de error 550;5.7.711 y el texto siguiente:
 
-> No se pudo entregar el mensaje. La razón más común para esto es que el conector de correo electrónico de su organización es sospechoso de enviar correo no deseado o phish y ya no tiene permiso para enviar correo electrónico. Póngase en contacto con el administrador de correo electrónico para obtener ayuda. 
-> Servidor remoto devolvió '550;5.7.711 Acceso denegado, conector de entrada incorrecto. AS(2204).' 
+> No se pudo entregar el mensaje. La razón más común para esto es que el conector de correo electrónico de su organización es sospechoso de enviar correo no deseado o phish y ya no tiene permiso para enviar correo electrónico. Póngase en contacto con el administrador de correo electrónico para obtener ayuda.
+> Servidor remoto devolvió '550;5.7.711 Acceso denegado, conector de entrada incorrecto. AS(2204).'
 
-Los administradores pueden quitar conectores de la página Entidades restringidas en Microsoft 365 Defender o en Exchange Online PowerShell. 
+Los administradores pueden quitar conectores de la página Entidades restringidas en Microsoft 365 Defender o en Exchange Online PowerShell.
 
 ## <a name="learn-more-on-restricted-entities"></a>Más información sobre las entidades restringidas
 
-Una entidad restringida es una entidad que se ha bloqueado para enviar correo electrónico porque se ha visto potencialmente comprometida o ha superado el límite de envío.
+Una entidad restringida es una entidad a la que se le ha bloqueado el envío de correo electrónico porque se ha puesto en peligro o ha superado el límite de envío.
 
-Hay dos tipos de entidades restringidas: 
+Hay 2 tipos de entidades restringidas:
 
-- **Usuario restringido**: para obtener más información sobre por qué se puede restringir un usuario y cómo controlar usuarios restringidos, consulte [Eliminación de usuarios bloqueados del portal de entidades restringidas](removing-user-from-restricted-users-portal-after-spam.md). 
+- **Usuario restringido**: para obtener más información sobre por qué se puede restringir un usuario y cómo controlar usuarios restringidos, consulte [Eliminación de usuarios bloqueados del portal de entidades restringidas](removing-user-from-restricted-users-portal-after-spam.md).
 
-- **Conector restringido**: obtenga información sobre por qué se puede restringir un conector y cómo controlar conectores restringidos (en este artículo).  
+- **Conector restringido**: obtenga información sobre por qué se puede restringir un conector y cómo controlar conectores restringidos (en este artículo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Entidades restringidas** , use <https://security.microsoft.com/restrictedentities>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener permisos en **Exchange Online** para poder seguir los procedimientos mencionados en este artículo:
   - Para quitar conectores del portal de entidades restringidas, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
@@ -129,5 +129,5 @@ Remove-BlockedConnector -ConnectorId <connectorId>
 
 ## <a name="more-information"></a>Más información
 
-- [Respuesta a un conector en peligro](respond-compromised-connector.md)
-- [Eliminación de usuarios bloqueados](removing-user-from-restricted-users-portal-after-spam.md)
+- [Responder a un conector en peligro](respond-compromised-connector.md)
+- [Quitar usuarios bloqueados](removing-user-from-restricted-users-portal-after-spam.md)

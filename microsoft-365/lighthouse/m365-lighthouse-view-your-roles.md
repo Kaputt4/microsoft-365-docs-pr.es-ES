@@ -16,16 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los técnicos del proveedor de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de clientes que administra su organización.
-ms.openlocfilehash: b4d3e461d6af940181156a95aada86d59553b11b
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 501faef8aba711763ad9464085ce76221957ea80
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188906"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415493"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse
 
-En este artículo se proporcionan instrucciones sobre cómo ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de clientes que administra su organización. El rol determina qué acciones puede realizar en Lighthouse.
+En este artículo se proporcionan instrucciones sobre cómo ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de clientes que administra la organización. El rol determina qué acciones puede realizar en Lighthouse.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -41,11 +41,11 @@ Debe tener acceso a un inquilino de asociado que se haya incorporado al servicio
 
     Si tiene uno o varios roles en un inquilino de cliente, verá una marca de verificación verde en la columna **Habilitado** para ese inquilino, junto con el número de roles que tiene. Si no tiene ningún rol en un inquilino, verá una **X** roja.
  
-4. En el caso de los inquilinos de clientes con una marca de verificación verde junto a ellos, expanda el inquilino para ver la lista de roles que tiene en ese inquilino. Para obtener más información sobre Azure AD roles y los permisos que conceden, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+4. En el caso de los inquilinos de clientes con una marca de verificación verde junto a ellos, expanda el inquilino para ver la lista de roles que tiene en ese inquilino. Para obtener más información sobre los roles de Azure AD y los permisos que conceden, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
 
     La página **Roles** también muestra las etiquetas personalizadas que se han aplicado a los inquilinos. Puede filtrar los datos de la página por roles o etiquetas asignados.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no tiene permiso para realizar una acción que necesita realizar en Lighthouse, póngase en contacto con un administrador del inquilino del asociado que pueda asignarle el rol adecuado para la acción que intenta realizar.
 

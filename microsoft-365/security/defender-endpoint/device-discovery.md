@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172935"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418256"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -113,7 +113,6 @@ Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabi
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Panel de recomendaciones de seguridad" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Uso de la búsqueda avanzada en dispositivos detectados
 
 Puede usar consultas de búsqueda avanzadas para obtener visibilidad en los dispositivos detectados. Busque detalles sobre los dispositivos detectados en la tabla DeviceInfo o información relacionada con la red sobre esos dispositivos en la tabla DeviceNetworkInfo.
@@ -128,19 +127,19 @@ Ejecute esta consulta, en la tabla DeviceInfo, para devolver todos los dispositi
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-Al invocar la función **SeenBy** , en la consulta de búsqueda avanzada, puede obtener detalles sobre qué dispositivo incorporado ha visto un dispositivo detectado.Esta información puede ayudar a determinar la ubicación de red de cada dispositivo detectado y, posteriormente, ayudar a identificarlo en la red.  
+Al invocar la función **SeenBy** , en la consulta de búsqueda avanzada, puede obtener detalles sobre qué dispositivo incorporado ha visto un dispositivo detectado. Esta información puede ayudar a determinar la ubicación de red de cada dispositivo detectado y, posteriormente, ayudar a identificarlo en la red.
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 Para obtener más información, vea la función [SeenBy().](/microsoft-365/security/defender/advanced-hunting-seenby-function)
@@ -162,7 +161,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas más frecuentes sobre la detección de dispositivos](device-discovery-faq.md)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -20,23 +20,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento Microsoft Purview.
+ms.openlocfilehash: 0efb96f8d36868f182476a0eb7b0087beb3134f9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188798"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417048"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Una búsqueda de exhibición de documentos electrónicos de Microsoft Purview que se ejecuta desde el portal de cumplimiento de Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. En Exchange, un elemento parcialmente indexado normalmente contiene un archivo (de un tipo de archivo que no se puede indexar) que está asociado a un mensaje de correo electrónico. Estas son algunas otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
+Una búsqueda Microsoft Purview eDiscovery que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos indizados parcialmente en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. En Exchange, un elemento parcialmente indexado normalmente contiene un archivo (de un tipo de archivo que no se puede indexar) que está asociado a un mensaje de correo electrónico. Estas son algunas otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
 - El tipo de archivo no se admite o está deshabilitado para la indexación.
 
-- Los mensajes tienen un archivo adjunto que no se puede abrir, como archivos de imagen; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
+- Los mensajes tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
 
 - El tipo de archivo se admite para indización pero se produjo un error de indización en un archivo específico.
 
@@ -105,7 +105,7 @@ Tenga en cuenta lo siguiente sobre los elementos indizados parcialmente:
   
 ## <a name="workaround-for-using-a-date-range-to-exclude-partially-indexed-items"></a>Solución alternativa para usar un intervalo de fechas para excluir elementos parcialmente indizados
 
-En Búsqueda de contenido y Exhibición de documentos electrónicos de Microsoft Purview (estándar), no puede usar un intervalo de fechas para excluir que una consulta de búsqueda devuelva elementos parcialmente indizados. Es decir, los elementos indizados parcialmente que se encuentran fuera de un intervalo de fechas se siguen incluyendo como elementos indizados parcialmente en las estadísticas de búsqueda y al exportar elementos parcialmente indizados. En eDiscovery (Premium), puede excluir elementos parcialmente indexados mediante un intervalo de fechas en una consulta de búsqueda.
+En Búsqueda de contenido y Microsoft Purview eDiscovery (Estándar), no se puede usar un intervalo de fechas para excluir que una consulta de búsqueda devuelva elementos parcialmente indizados. Es decir, los elementos indizados parcialmente que se encuentran fuera de un intervalo de fechas se siguen incluyendo como elementos indizados parcialmente en las estadísticas de búsqueda y al exportar elementos parcialmente indizados. En eDiscovery (Premium), puede excluir elementos parcialmente indexados mediante un intervalo de fechas en una consulta de búsqueda.
 
 Como solución alternativa a esta limitación, se recomienda el procedimiento siguiente.
 
@@ -173,6 +173,6 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Si crea una suspensión basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos indizados parcialmente se colocan en suspensión. Esto incluye elementos parcialmente indexados que no coinciden con los criterios de consulta de búsqueda para la suspensión. Para obtener más información sobre cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Crear una suspensión de eDiscovery](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Investigación de elementos parcialmente indexados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

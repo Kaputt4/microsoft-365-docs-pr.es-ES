@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,20 +18,20 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos no indizados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 03d68a02765a85066e41ba2b4dee54441d971190
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: aa9071cfb99219bea6c5c0d640c9e6e4255e316d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077932"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419976"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indexados en eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento de Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
+Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
-- Los mensajes de correo electrónico tienen un archivo adjunto que no se puede abrir, como archivos de imagen; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
+- Los mensajes de correo electrónico tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
 
 - Se han adjuntado demasiados archivos a un mensaje de correo electrónico.
 
@@ -166,7 +166,7 @@ En los pasos siguientes se muestra cómo ejecutar un script de PowerShell que bu
      }
    ```
 
-2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell).
+2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell).
 
 3. En PowerShell de Security & Compliance Center, vaya a la carpeta donde guardó el script en el paso 1 y, a continuación, ejecute el script; por ejemplo:
 
@@ -185,6 +185,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Una lista de etiquetas de error y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Elementos indizados parcialmente en eDiscovery](partially-indexed-items-in-content-search.md)

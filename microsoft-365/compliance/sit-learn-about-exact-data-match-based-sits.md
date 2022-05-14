@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre los tipos de información confidencial basados en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759775"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415934"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Los tipos de información confidencial](sensitive-information-type-learn-about.md) se usan para ayudar a identificar elementos confidenciales de modo que pueda evitar que se compartan involuntariamente o de forma inapropiada, para ayudar a localizar los datos pertinentes en eDiscovery y para aplicar acciones de gobernanza a determinados tipos de información. Defina un tipo de información confidencial (SIT) personalizado en función de:
 
@@ -44,10 +46,10 @@ ms.locfileid: "64759775"
 
 ![Clasificación basada en EDM.](../media/EDMClassification.png)
 
-La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) o [directivas de archivo de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Además, puede usar la clasificación basada en EDM con [directivas, como Microsoft Purview directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) o [directivas de archivos de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection es compatible con los idiomas del juego de caracteres de doble byte para:
+> Microsoft Purview Information Protection admite idiomas de juego de caracteres de doble byte para:
 >
 > - Chino (simplificado)
 > - Chino (tradicional)
@@ -93,7 +95,7 @@ Proximidad: número de caracteres entre el elemento principal y el elemento auxi
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Proporcione su propio esquema y datos.
 
-[Microsoft 365 incluye más de 200 SITS](sensitive-information-type-entity-definitions.md) con esquemas predefinidos, patrones regex, palabras clave y niveles de confianza. Con los SIT de EDM, es responsable de definir el esquema, así como los campos primarios y secundarios que identifican elementos confidenciales. Dado que el esquema y los valores de datos principales y secundarios son muy confidenciales, los cifrará a través de una función [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) que incluya un valor [de sal](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) generado o autosufirmado aleatoriamente. Esos valores hash se cargan en el servicio, por lo que los datos confidenciales nunca están abiertos.
+[Microsoft Purview incluye más de 200 SITS](sensitive-information-type-entity-definitions.md) con esquemas predefinidos, patrones regex, palabras clave y niveles de confianza. Con los SIT de EDM, es responsable de definir el esquema, así como los campos primarios y secundarios que identifican elementos confidenciales. Dado que el esquema y los valores de datos principales y secundarios son muy confidenciales, los cifrará a través de una función [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) que incluya un valor [de sal](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) generado o autosufirmado aleatoriamente. Esos valores hash se cargan en el servicio, por lo que los datos confidenciales nunca están abiertos.
 
 ### <a name="primary-and-secondary-support-elements"></a>Elementos de soporte técnico principal y secundario
 
@@ -107,7 +109,6 @@ EDM busca coincidencias comparando el contenido que encuentra con una tabla de d
 > [!TIP]
 > Una práctica común consiste en combinar el uso de tipos de información confidencial de EDM y los tipos de información confidencial normales en los que se basan en reglas DLP, con umbrales diferentes. Por ejemplo, podría usar un tipo de información confidencial de EDM que busque números de seguridad social y otros datos, con requisitos estrictos y tolerancia baja donde una o varias coincidencias provocarán una alerta DLP y usarán el tipo de información confidencial normal, como el número de seguridad social de EE. UU. integrado, para recuentos más altos.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

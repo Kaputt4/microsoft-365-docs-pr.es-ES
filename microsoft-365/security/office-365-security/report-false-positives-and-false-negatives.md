@@ -13,12 +13,12 @@ ms.collection:
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook mediante la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974111"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416980"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -34,11 +34,11 @@ ms.locfileid: "64974111"
 
 En Microsoft 365 organizaciones con buzones de correo en buzones de Exchange Online o locales mediante la autenticación moderna híbrida, puede enviar falsos positivos (buen correo electrónico que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phish que se entregó a la bandeja de entrada) para Exchange Online Protection (EOP).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para obtener la mejor experiencia de envío de usuario, use el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
 
-- El complemento Mensaje de informe y el complemento De suplantación de identidad de informe funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y Escritorio).
+- El complemento Mensaje de informe y el complemento De suplantación de identidad de informe funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y escritorio).
 
 - Si es administrador de una organización con buzones de Exchange Online, use el portal Envíos en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del envío de administrador para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
 
@@ -47,6 +47,9 @@ En Microsoft 365 organizaciones con buzones de correo en buzones de Exchange Onl
 - Para obtener más información sobre cómo obtener y habilitar el mensaje de informe o los complementos de suplantación de identidad de informe, vea [Habilitar el mensaje de informe o los complementos de suplantación de identidad de informe](enable-the-report-message-add-in.md).
 
 - Para obtener más información sobre cómo informar de mensajes a Microsoft, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Vea este breve vídeo para obtener información sobre cómo puede usar Microsoft Defender para Office 365 para investigar fácilmente los envíos de los usuarios para determinar el contenido de un mensaje y responder al envío aplicando la acción de corrección adecuada. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>Desactivar la experiencia de generación de informes integrada
 

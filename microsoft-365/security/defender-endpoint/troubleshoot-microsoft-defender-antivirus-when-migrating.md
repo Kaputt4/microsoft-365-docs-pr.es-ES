@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 74843a71131ae8f10628dac96086e68e25acb2b0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 24e43ac3e99f99061489e2719c76245270422c57
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788444"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419668"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -54,7 +54,7 @@ Este problema se puede manifestar en forma de varios identificadores de evento d
 
 Identificador de evento|Nombre de registro|Descripción|Origen
 ---|---|---|---
-15 |Aplicación|Se ha actualizado Windows Defender estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Security Center
+15|Aplicación|Se ha actualizado Windows Defender estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Security Center
 5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender configuración ha cambiado. Si se trata de un evento inesperado, debe revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor anterior:** Default\IsServiceRunning = 0x0 <p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender examen de spyware y otro software potencialmente no deseado está deshabilitado.|Windows Defender
 
@@ -104,7 +104,7 @@ DisableAntiSpyware|-
 GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
-Action|Actualizar
+Acción|Actualizar
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 Ruta de acceso de clave|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -140,13 +140,13 @@ Otra característica, conocida como [examen periódico limitado](limited-periodi
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 
 ### <a name="see-also"></a>Vea también

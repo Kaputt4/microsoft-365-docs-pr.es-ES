@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: 38c9547c93fec5028ad11262ce5c317773fc276c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ee7f5e5b4744d9299d122b4ba6b0dffe6734eca7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759688"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414831"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envío de archivos en Microsoft Defender para punto de conexión
 
@@ -40,7 +40,7 @@ ms.locfileid: "64759688"
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una evaluación gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-En Microsoft Defender para punto de conexión, los administradores pueden usar la característica envíos unificados para enviar archivos y hash de archivos (SHA) a Microsoft para su revisión. La experiencia de envíos unificados es una tienda integral para enviar correos electrónicos, direcciones URL, datos adjuntos de correo electrónico y archivos en una experiencia de envío fácil de usar. Los administradores pueden usar el portal de Microsoft 365 Defender o la página alerta de Microsoft Defender para punto de conexión para enviar archivos sospechosos.  
+En Microsoft Defender para punto de conexión, los administradores pueden usar la característica envíos unificados para enviar archivos y hash de archivos (SHA) a Microsoft para su revisión. La experiencia de envíos unificados es una tienda integral para enviar correos electrónicos, direcciones URL, datos adjuntos de correo electrónico y archivos en una experiencia de envío fácil de usar. Los administradores pueden usar el portal de Microsoft 365 Defender o la página alerta de Microsoft Defender para punto de conexión para enviar archivos sospechosos.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -58,51 +58,51 @@ Si tiene un archivo que sospecha que puede ser malware o que se está detectando
 
 ### <a name="submit-a-file-or-file-hash"></a>Envío de un archivo o hash de archivo
 
-1. Abra Microsoft 365 Defender en <https://security.microsoft.com/>, haga clic en **Acciones & envíos**, haga clic en **Envíos**, vaya a la pestaña **Archivos** y seleccione **Agregar nuevo envío**. 
+1. Abra Microsoft 365 Defender en <https://security.microsoft.com/>, haga clic en **Acciones & envíos**, haga clic en **Envíos**, vaya a la pestaña **Archivos** y seleccione **Agregar nuevo envío**.
 
     > [!div class="mx-imgBorder"]
-    > ![Agregar nuevo envío](../../media/unified-admin-submission-new.png) 
+    > ![Agregar nuevo envío](../../media/unified-admin-submission-new.png)
 
-2. Use el control flotante **Enviar elementos a Microsoft para revisar** que parece enviar el hash **Archivo** o **Archivo**.  
+2. Use el control flotante **Enviar elementos a Microsoft para revisar** que parece enviar el hash **Archivo** o **Archivo**.
 
-3. En el cuadro **Seleccionar el tipo de envío** , seleccione **Archivo** o **Hash de archivo** en la lista desplegable. 
+3. En el cuadro **Seleccionar el tipo de envío** , seleccione **Archivo** o **Hash de archivo** en la lista desplegable.
 
-4. Al enviar un archivo, haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**. Tenga en cuenta que para los envíos **de hash** de archivos, tendrá que copiar o escribir el hash de archivo. 
+4. Al enviar un archivo, haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**. Tenga en cuenta que para los envíos **de hash** de archivos, tendrá que copiar o escribir el hash de archivo.
 
 5. En la sección **Este archivo debe haberse clasificado como** , elija **Malware** (falso negativo) o **Software no deseado** o **Limpiar** (falso positivo).
-  
+
 6. A continuación, **elija la prioridad**. Tenga en cuenta que, en el caso de los envíos **hash** de archivos, el envío bajo de **archivos masivos o hash de archivos** es la única opción y se selecciona automáticamente.
 
     > [!div class="mx-imgBorder"]
-    > ![Enviar elementos a Microsoft para su revisión](../../media/unified-admin-submission-file.png) 
+    > ![Enviar elementos a Microsoft para su revisión](../../media/unified-admin-submission-file.png)
 
-8. Haga clic en **Enviar**. 
- 
+7. Haga clic en **Enviar**.
+
    Si desea ver los detalles del envío, seleccione el envío en la lista **Nombre de envíos** para abrir el control flotante **Detalles** del resultado.
 
 ## <a name="report-items-to-microsoft-from-the-alerts-page"></a>Notificar elementos a Microsoft desde la página Alertas
 
-También puede enviar un hash de archivo o archivo directamente desde la lista de alertas en la página **Alertas** . 
+También puede enviar un hash de archivo o archivo directamente desde la lista de alertas en la página **Alertas** .
 
 1. Abra el Microsoft 365 Defender en <https://security.microsoft.com/>, haga clic en **Incidentes & alertas** y, a continuación, haga clic en **Alertas** para ver la lista de alertas.
 
-2. Seleccione la alerta que desea notificar. Tenga en cuenta que va a enviar un archivo que se encuentra dentro de la alerta.  
+2. Seleccione la alerta que desea notificar. Tenga en cuenta que va a enviar un archivo que se encuentra dentro de la alerta.
 
 3. Haga clic en los puntos suspensivos situados junto a **Administrar alerta** para ver opciones adicionales. Seleccione **Enviar elementos a Microsoft para su revisión**.
 
     > [!div class="mx-imgBorder"]
-    > ![Envío de elementos desde la cola de alertas](../../media/unified-admin-submission-alerts-queue.png) 
+    > ![Envío de elementos desde la cola de alertas](../../media/unified-admin-submission-alerts-queue.png)
 
-4. En el siguiente control flotante que se abre, seleccione el tipo de envío. 
+4. En el siguiente control flotante que se abre, seleccione el tipo de envío.
 
     > [!div class="mx-imgBorder"]
-    > ![Completar los campos necesarios](../../media/unified-admin-submission-alert-queue-flyout.png) 
+    > ![Completar los campos necesarios](../../media/unified-admin-submission-alert-queue-flyout.png)
 
     Si selecciona **Archivo** como tipo de envío, cargue el archivo, clasifique el envío y elija la prioridad.
-  
-    Si selecciona **Hash de archivo** como tipo de envío, elija los hashes de archivo que están disponibles en la lista desplegable. Puede seleccionar varios hashes de archivo. 
- 
-5. Haga clic en **Enviar**. 
+
+    Si selecciona **Hash de archivo** como tipo de envío, elija los hashes de archivo que están disponibles en la lista desplegable. Puede seleccionar varios hashes de archivo.
+
+5. Haga clic en **Enviar**.
 
 ## <a name="related-information"></a>Información relacionada
 

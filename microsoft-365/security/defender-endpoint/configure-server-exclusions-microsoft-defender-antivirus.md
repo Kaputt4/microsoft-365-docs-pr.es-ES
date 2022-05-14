@@ -15,12 +15,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 3d1fce680062f2ca63f220754ac1ab3f8b9b33d3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320648"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419866"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones de Antivirus de Microsoft Defender en Windows Server
 
@@ -377,7 +377,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configuración y validación de exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

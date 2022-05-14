@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3ef53a6e3cdbd578475b90b198359411a4102859
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789324"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416428"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -53,7 +53,7 @@ En esta guía se describe cómo configurar las máquinas virtuales para una prot
 También puede descargar las notas del [producto Antivirus de Microsoft Defender en Infraestructura de escritorio virtual](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), que examina la nueva característica de actualización de inteligencia de seguridad compartida, junto con las pruebas de rendimiento y las instrucciones sobre cómo puede probar el rendimiento del antivirus en su propia VDI.
 
 > [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 > [!IMPORTANT]
 > Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutarse Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.
@@ -269,13 +269,13 @@ Para obtener más información, vea [Configurar exclusiones de Antivirus de Micr
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

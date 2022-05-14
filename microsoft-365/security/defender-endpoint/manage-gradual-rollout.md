@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789390"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416340"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para las actualizaciones de Microsoft Defender
 
@@ -85,7 +85,7 @@ Están disponibles los siguientes canales de actualización:
 
 |Nombre de canal|Descripción|Aplicación|
 |---|---|---|
-|Canal beta: versión preliminar|Prueba de actualizaciones antes que otros usuarios|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la notificación de problemas a Microsoft. Los dispositivos del programa Windows Insider están suscritos a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
+|Canal beta: versión preliminar|Prueba de actualizaciones antes que otros usuarios|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la notificación de problemas a Microsoft. Los dispositivos de la Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
 |Canal actual (vista previa)|Obtener actualizaciones del canal actual **anteriormente** durante la versión gradual|A los dispositivos establecidos en este canal se les ofrecerán las actualizaciones más pronto durante el ciclo de versión gradual. Se recomienda para entornos de preproducción y validación.|
 |Canal actual (preconfigurado)|Obtener actualizaciones del canal actual más adelante durante la versión gradual|Se ofrecerán actualizaciones a los dispositivos más adelante durante el ciclo de versión gradual. Se recomienda aplicar a una parte pequeña y representativa de la población del dispositivo (~10 %).|
 |Canal actual (amplio)|Obtener actualizaciones al final de la versión gradual|Solo se ofrecerán actualizaciones a los dispositivos una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (aproximadamente entre el 10 y el 100 %).|
@@ -129,22 +129,22 @@ Adopción de este modelo:
 - Permite probar versiones tempranas antes de que lleguen a un entorno de producción
 - Asegúrese de que el entorno de producción sigue recibiendo actualizaciones periódicas y de garantizar la protección contra amenazas críticas.
 
-## <a name="management-tools"></a>Herramientas de administración
+## <a name="management-tools"></a>Management tools
 
 Para crear su propio proceso de implementación gradual personalizado para las actualizaciones mensuales, puede usar las siguientes herramientas:
 
 - Directiva de grupo
-- Administrador de puntos de conexión de Microsoft
+- Microsoft Endpoint Manager
 - PowerShell
 
 Para obtener más información sobre cómo usar estas herramientas, consulte [Creación de un proceso de implementación gradual personalizado para las actualizaciones de Microsoft Defender](configure-updates.md).
 
 > [!TIP]
 > Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
