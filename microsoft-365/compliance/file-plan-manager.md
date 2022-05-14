@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
-ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7cb963106551951fb6ae1e2455d21fa44d47a77c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319056"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396361"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
@@ -49,10 +49,11 @@ Para obtener información sobre qué son las etiquetas de retención y cómo usa
 Para acceder al plan de archivos, debe tener uno de los siguientes roles de administrador:
     
 - Administrador de retención
-
 - Administrador de retención con permiso de vista
 
-En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**.
+En el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**:
+
+![Página del plan de archivos](../media/compliance-file-plan.png). 
 
 Si **Administración de registros** no se muestra en el panel de navegación, desplácese hacia abajo y seleccione **Mostrar todo**.
 
@@ -154,7 +155,9 @@ Sin embargo, podría tomarle hasta dos días al explorador de contenido mostrar 
 
 Desde su administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv, para facilitar las revisiones de cumplimiento periódicas con las partes interesadas del gobierno de datos de su organización.
 
-Para exportar todas las etiquetas de retención: en la página **Plan de archivos**, haga clic en **Exportar**.
+Para exportar todas las etiquetas de retención, en la página **Plan de archivos**, seleccione **Exportar**:
+
+![Opción para exportar el plan de archivos.](../media/compliance-file-plan-export-labels.png)
 
 Se abrirá un archivo *.csv que contiene todas las etiquetas de retención existentes. Por ejemplo:
 
@@ -164,7 +167,7 @@ Se abrirá un archivo *.csv que contiene todas las etiquetas de retención exist
 
 En el plan de archivos, puede importar en masa nuevas etiquetas de retención mediante un archivo .csv con un formato específico: 
 
-1. En la página **Plan de archivos**, haga clic en **Importar**: ![Opción para importar el plan de archivos](../media/compliance-file-plan-import-labels.png)
+1. En la página **Plan de archivos**, seleccione **Importar**: ![Opción para importar el plan de archivos](../media/compliance-file-plan-import-labels.png)
 
 2. En el panel **Rellenar e importar el plan de archivos**, seleccione **Descargar una plantilla en blanco**:
 
