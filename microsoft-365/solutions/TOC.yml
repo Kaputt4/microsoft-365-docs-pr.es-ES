@@ -61,7 +61,7 @@
               href: configure-teams-sensitive-protection.md
             - name: Configurar la protección altamente confidencial
               href: configure-teams-highly-sensitive-protection.md
-            - name: Configurar un equipo con aislamiento de seguridad
+            - name: Configuración de un equipo con una etiqueta de confidencialidad única
               href: secure-teams-security-isolation.md
         - name: Configurar el uso compartido externo
           items:
