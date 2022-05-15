@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: af9b19dcf33f1b79d4057662cf759ace27aec38f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095276"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417850"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
@@ -51,7 +51,7 @@ Los valores predeterminados de seguridad se diseñaron para ayudar a proteger la
 
 - Requerir que todos los usuarios y administradores se registren en MFA mediante la aplicación Microsoft Authenticator.
 - Poner una prueba a los usuarios con MFA, sobre todo cuando aparecen en un nuevo dispositivo o aplicación, pero con más frecuencia para roles y tareas críticos.
-- Deshabilitar la autenticación de clientes de autenticación heredados que no pueden realizar MFA.
+- Deshabilitar la autenticación de los clientes de autenticación heredados que no pueden hacer MFA.
 - Proteger a los administradores mediante un requisito de autenticación adicional cada vez que inicien sesión.
 
 MFA es un primer paso importante para proteger su empresa, y los valores predeterminados de seguridad facilitan la implementación de MFA. Si la suscripción se creó el 22 de octubre de 2019 o después, es posible que los valores predeterminados de seguridad se hayan habilitado automáticamente&mdash;debe comprobar la configuración para confirmar.
@@ -107,4 +107,3 @@ Para obtener más información sobre el acceso condicional, consulte [¿Qué es 
 ## <a name="next-objective"></a>Siguiente objetivo
 
 Configure formas de [protección contra malware y otras amenazas](m365bp-increase-protection.md).
-

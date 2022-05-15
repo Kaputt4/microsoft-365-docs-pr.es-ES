@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
-ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098898"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415268"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -49,17 +49,17 @@ Complementos opcionales:
 
 ## <a name="compliance-actions-with-microsoft-purview"></a>Acciones de cumplimiento con Microsoft Purview
 
-Comience a probar las soluciones de cumplimiento de Microsoft de forma fácil y rápida sin cambiar los metadatos de su organización. En función de sus prioridades, puede empezar con cualquiera de estas áreas de solución para ver el valor inmediato. A continuación se muestran las cinco principales preocupaciones de la organización que comunican nuestros clientes y las soluciones recomendadas para empezar.
+Comience a probar fácil y rápidamente las soluciones de cumplimiento de Microsoft sin cambiar los metadatos de su organización. En función de sus prioridades, puede empezar con cualquiera de estas áreas de solución para ver el valor inmediato. A continuación se muestran las cinco principales preocupaciones de la organización que comunican nuestros clientes y las soluciones recomendadas para empezar.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Acciones de cumplimiento con Microsoft 365":::
 
 ## <a name="audit-premium"></a>Auditoría (Premium)
 
-**Realizar investigaciones**
+**Realizar investigaciones**:
 
 La auditoría de Microsoft Purview (Premium) permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y proporcionar un acceso más rápido a la API de Actividad de administración de Office 365.
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Paso 1: [Aplicar la licencia de E5 a cada usuario para el que quiera generar eventos E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Paso 1: [aplicar la licencia E5 a cada usuario para el que desee generar eventos E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
@@ -86,7 +86,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 
 ## <a name="communication-compliance"></a>Cumplimiento de la comunicación
 
-**Identifique y actúe según las infracciones de la directiva de código de conducta**
+**Identificar y actuar sobre las violaciones de la directiva del código de conducta**:
 
 El cumplimiento de comunicaciones de Microsoft Purview le ayuda a identificar de forma inteligente las infracciones de comunicación para promover un entorno de trabajo compatible y correcto, ya que le ayuda a detectar mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlas.
 
@@ -114,7 +114,7 @@ Para utilizar esta característica, active la auditoría para que su organizaci�
 
 ## <a name="compliance-manager"></a>Administrador de cumplimiento
 
-**Administrar fácilmente el cumplimiento de la organización**
+**Administrar fácilmente el cumplimiento de su organización**:
 
 El Administrador de cumplimiento de Microsoft Purview puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
 
@@ -172,11 +172,12 @@ Las evaluaciones personalizadas son útiles para:
 
 ## <a name="data-lifecycle-management"></a>Administración del ciclo de vida de los datos
 
-**Gobernar a escala con la automatización**
+**Gobernar a escala con la automatización**:
 
 Mejore su capacidad para adaptarse a los cambios de su organización con ámbitos de directiva que se actualizan automáticamente. Automatice el etiquetado de contenido para reducir los esfuerzos manuales y mejorar la posición de cumplimiento.
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Paso 1: Dirigir dinámicamente las directivas de retención con ámbitos de directiva adaptables
+
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
@@ -197,7 +198,7 @@ Las etiquetas predeterminadas le permiten aplicar automáticamente una etiqueta 
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
-**Proteger los datos confidenciales**
+**Proteger los datos confidenciales**:
 
 Para cumplir con los estándares de la empresa y las normativas del sector, las organizaciones han de proteger la información confidencial e impedir su divulgación involuntaria. Configure directivas de prevención de pérdida de datos de Microsoft Purview para identificar, supervisar y proteger automáticamente la información confidencial en Microsoft 365.
 
@@ -242,9 +243,9 @@ Tiene flexibilidad en la configuración de las directivas DLP. Puede empezar con
 
 ## <a name="ediscovery"></a>eDiscovery
 
-**Descubrir más con un flujo de trabajo de un extremo a otro**
+**Descubrir más con un flujo de trabajo de un extremo a otro**:
 
-Aproveche un flujo de trabajo de un extremo a otro para conservar, recopilar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Los equipos jurídicos también pueden administrar todo el proceso de notificaciones de suspensión legal mediante la comunicación con los custodios implicados en un caso.
+Aproveche un flujo de trabajo completo para conservar, recopilar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Los equipos jurídicos también pueden administrar todo el proceso de notificaciones de suspensión legal mediante la comunicación con los custodios implicados en un caso.
 
 ### <a name="step-1-required-permissions"></a>Paso 1 (obligatorio): [Permisos](https://aka.ms/ediscoveryninja)
 
@@ -296,7 +297,7 @@ Use la herramienta Búsqueda de contenido del portal de cumplimiento de Microsof
 
 ## <a name="information-protection"></a>Protección de la información
 
-**Detectar, clasificar y proteger su información confidencial**
+**Detectar, clasificar y proteger su información confidencial**:
 
 Implemente Microsoft Purview Information Protection y etiquetas de confidencialidad para ayudarle a descubrir, clasificar y proteger su contenido confidencial dondequiera que este se encuentre o viaje.
 
@@ -343,7 +344,7 @@ Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opc
 
 ## <a name="insider-risk-management"></a>Administración de riesgos de Insider
 
-**Detectar y corregir los riesgos internos**
+**Detectar y corregir los riesgos internos**:
 
 Aproveche la inteligencia artificial para identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo interno y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación.
 
@@ -382,7 +383,7 @@ Para habilitar el Análisis de riesgos internos, debe ser miembro o administrado
 
 ## <a name="records-management"></a>Records Management
 
-**Administre los elementos de gran valor para los requisitos de mantenimiento de registros empresariales, legales o normativos**
+**Administrar elementos de gran valor para los requisitos de mantenimiento de registros empresariales, legales o reglamentarios**:
 
 Use características de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Aproveche las funcionalidades de automatización, desde la creación hasta la colaboración, para declarar los registros, conservar los contenidos y eliminarlos al final.
 
@@ -395,12 +396,12 @@ Cuando el contenido se declara como un registro, se aplican restricciones en el 
 
 - Crear una etiqueta de retención que declara el contenido como un registro o un registro normativo
 
-### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Paso 2: Revisar el contenido que se debe aprobar antes de que se elimine de forma permanente
+### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Paso 2: revisar el contenido para aprobarlo antes de que se elimine definitivamente
 
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Al final del período de retención, los usuarios que especifique ("revisores") pueden ser notificados para revisar el contenido y aprobar la acción de eliminación permanente. Esto apoya si una acción diferente a la eliminación es más apropiada, como asignar un período de retención diferente al contenido o suspender la eliminación para una auditoría.
+Al final del período de retención, los usuarios que usted especifique ("revisores") pueden ser notificados para revisar el contenido y aprobar la acción de eliminación permanente. Esto apoya si una acción diferente a la eliminación es más apropiada, como asignar un período de retención diferente al contenido o suspender la eliminación para una auditoría.
 
 - Crear una etiqueta de retención que use la revisión para eliminación
 
@@ -419,7 +420,7 @@ La aplicación automática de etiquetas elimina la necesidad de que los usuarios
 
 ### <a name="compliance-manager-premium-assessments"></a>Evaluaciones premium del Administrador de cumplimiento
 
-**Evaluar los riesgos y responder de forma eficaz**
+**Evaluar los riesgos y responder de forma eficaz**:
 
 Ayude a su organización a evaluar los riesgos y a responder eficazmente a los requisitos nacionales, regionales e industriales que rigen la recopilación y el uso de datos.
 
@@ -429,7 +430,7 @@ Ayude a su organización a evaluar los riesgos y a responder eficazmente a los r
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva
 
-**Identificar y evitar riesgos de privacidad**
+**Identificar y evitar riesgos de privacidad**:
 
 Identifique y proteja de forma proactiva los riesgos para la privacidad, como el acaparamiento de datos, las transferencias de datos y el uso compartido excesivo de datos, y ayude a su organización a automatizar y administrar las solicitudes de los sujetos a gran escala.
 

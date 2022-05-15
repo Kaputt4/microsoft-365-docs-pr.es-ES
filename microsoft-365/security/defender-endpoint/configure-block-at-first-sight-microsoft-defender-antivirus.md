@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: fb65e1ad898427c3f0a2fc1ba9a13685c1617bc1
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788114"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416286"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -223,12 +223,12 @@ Si tiene un dispositivo personal que no está administrado por una organización
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directiva antivirus macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurar Defender para punto de conexión en características Android](android-configure.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
 > - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también

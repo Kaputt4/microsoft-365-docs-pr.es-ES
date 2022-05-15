@@ -329,6 +329,10 @@
 ##### [Exclusiones para Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Errores comunes que debe evitar](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Modo de resolución de problemas para Microsoft Defender para punto de conexión
+##### [Introducción al modo de resolución de problemas](enable-troubleshooting-mode.md)
+##### [Escenarios del modo de resolución de problemas](troubleshooting-mode-scenarios.md)
+
 #### Diagnóstico y rendimiento de Antivirus de Microsoft Defender
 ##### [Informes de cumplimiento y mantenimiento del dispositivo](machine-reports.md)
 ##### [Solucionar problemas de rendimiento relacionados con la protección en tiempo real](troubleshoot-performance-issues.md) 

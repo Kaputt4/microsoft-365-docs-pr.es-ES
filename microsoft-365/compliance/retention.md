@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302232"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419536"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -104,8 +104,8 @@ A diferencia de las directivas de retención, la configuración de retención de
 - Aplique una etiqueta predeterminada para los elementos de SharePoint o los mensajes de Exchange.
 
 - Acciones admitidas al final del período de retención:
-    - [Revisión para eliminación](./disposition.md) para revisar el contenido antes de que se elimine permanentemente.
-    - Aplicar automáticamente una etiqueta de retención
+  - [Revisión de la disposición](./disposition.md) para revisar el contenido antes de que se elimine definitivamente.
+  - Aplicar automáticamente una etiqueta de retención
 
 - Marcado del contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta y tener siempre una [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
 
@@ -221,14 +221,15 @@ Para las etiquetas de retención estándar (no marcan los elementos como un [reg
 
 - Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra etiqueta predeterminada o quitarse automáticamente.
 
-- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con dos posibles excepciones: 
-    
-    - La etiqueta existente está configurada para aplicar automáticamente una etiqueta de retención diferente al final del período de retención.
-    - La etiqueta existente se aplicó como una etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra o quitarse automáticamente. 
-        
-        Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
-        - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con dos posibles excepciones:
+
+  - La etiqueta existente está configurada para aplicar automáticamente una etiqueta de retención diferente al final del período de retención.
+  - La etiqueta existente se aplicó como una etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra o quitarse automáticamente.
+
+  Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
+
+  - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Si hay varias directivas de etiqueta de aplicación automática que podrían aplicar una etiqueta de retención y el contenido cumple las condiciones de varias directivas, se aplica la etiqueta de retención de la directiva de aplicación automática más antigua (por fecha de creación).
 
@@ -285,7 +286,7 @@ Los ejemplos siguientes son solo algunas de las formas en que puede combinar dir
 
 Para obtener más información acerca de cómo funcionan las directivas de retención y las etiquetas de retención conjuntamente y cómo determinar el resultado combinado, consulte la siguiente sección en la que se explican [los principios de la retención y las prioridades](#the-principles-of-retention-or-what-takes-precedence).
 
-**Ejemplo para que los usuarios invaliden la eliminación automática**
+#### <a name="example-for-users-to-override-automatic-deletion"></a>Ejemplo para que los usuarios invaliden la eliminación automática
 
 Escenario: de forma predeterminada, el contenido de las cuentas de OneDrive de los usuarios se elimina automáticamente después de cinco años, pero los usuarios deben tener la opción de invalidar esta acción para documentos específicos.
 
@@ -293,7 +294,7 @@ Escenario: de forma predeterminada, el contenido de las cuentas de OneDrive de l
 
 2. Puede crear y configurar una etiqueta de retención que mantenga el contenido para siempre y agregarla a una directiva de etiquetas que publique en todas las cuentas de OneDrive. Debe explicar a los usuarios cómo aplicar manualmente esta etiqueta a documentos específicos que se deban excluir de la eliminación automática si no se modifican después de cinco años.
 
-**Ejemplo para conservar elementos durante más tiempo**
+Ejemplo para conservar los artículos durante más tiempo**
 
 Escenario: de forma predeterminada, los elementos de SharePoint se conservan automáticamente y luego se eliminan después de cinco años, pero los documentos de bibliotecas específicas deben conservarse durante diez años.
 
@@ -301,7 +302,7 @@ Escenario: de forma predeterminada, los elementos de SharePoint se conservan aut
 
 2. Cree y configure una etiqueta de retención que retenga automáticamente el contenido durante diez años. Esta etiqueta se publica para los administradores de sitios de SharePoint, de modo que puedan aplicarla como etiqueta predeterminada para que la hereden todos los elementos de bibliotecas de documentos específicas.
 
-**Ejemplo para eliminar elementos en un período de tiempo más corto**
+#### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Ejemplo para eliminar elementos en un período de tiempo más corto
 
 Escenario: de forma predeterminada, los correos electrónicos no se conservan, pero se eliminan automáticamente después de diez años. Sin embargo, los correos electrónicos relacionados con un proyecto específico que tiene un nombre de código de versión preliminar deben eliminarse automáticamente después de un año.
 

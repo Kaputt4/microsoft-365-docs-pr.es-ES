@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941553"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417828"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -91,7 +91,11 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
 - Si su suscripción actual no incluye Microsoft Defender para Office 365 y quiere tenerlo, [contacte al departamento de ventas para iniciar un periodo de prueba](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) y descubra cómo funciona Microsoft Defender para Office 365 en su organización.
 
-- Los clientes de Microsoft Defender para Office 365 P2 tienen acceso a **Integración de Microsoft Defender para Office 365** para detectar, revisar y responder eficazmente a incidentes y alertas.
+- Los clientes de Microsoft Defender para Office 365 P2 tienen acceso a **Integración de Microsoft Defender para Office 365** para detectar, revisar y responder eficazmente a incidentes y alertas. 
+
+Vea este breve vídeo para obtener más información sobre las capacidades de Microsoft Defender para Office 365 P2 que se han trasladado al portal de Microsoft 365 Defender.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurar las directivas de Microsoft Defender para Office 365
 
