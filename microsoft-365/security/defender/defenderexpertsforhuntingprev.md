@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78775b31833f16771d7010f3ea92c9695016463d
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4fe0518c47ec5d2db96ec939ca62b25192440c54
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438124"
+ms.locfileid: "65444266"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting preview
 
@@ -56,7 +56,7 @@ Expertos de Defender para la búsqueda proporciona notificaciones de ataque diri
 
 Si aún no lo ha hecho, puede solicitar expertos de Defender para la búsqueda:
 
-1. Haga clic en [**Aplicar**](https://aka.ms/expandedMTEprev). Solo los administradores globales pueden registrar y completar el proceso de aplicación. Si no es un administrador global, póngase en contacto con el administrador global para rellenar el formulario de aplicación.
+1. Haga clic en [**Aplicar**](https://aka.ms/expandedMTEprev). 
 2. Escriba el **identificador de correo electrónico de su empresa**.
 3. Seleccione **Enviar**. Recibirá un mensaje de confirmación de que se ha recibido la aplicación.  
 

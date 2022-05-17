@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145363"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444253"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
 
@@ -168,14 +168,16 @@ Si su organización tiene una suscripción que admite Auditoría (Premium), real
 
 Para obtener instrucciones más detalladas, vea [Configurar Auditoría (Premium)](set-up-advanced-audit.md).
 
-## <a name="encrypt-audit-records-using-customer-key"></a>Cifrado de registros de auditoría mediante la clave de cliente
+<!--
+## Encrypt audit records using Customer Key
 
-Puede habilitar el cifrado de claves de cliente para los registros de auditoría. La auditoría se basa en el [cifrado del servicio con clave de cliente](customer-key-overview.md) para cifrar información confidencial de los datos de auditoría de la organización. La implementación de la clave de cliente proporcionará protección adicional al impedir que los sistemas no autorizados o el personal del centro de datos de Microsoft vean los datos de auditoría en la canalización de auditoría y en reposo. El uso de la clave de cliente para cifrar los datos de auditoría también le ayudará a cumplir las obligaciones normativas o de cumplimiento, ya que su organización proporcionará y controlará las claves de cifrado.
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
-Para implementar la clave de cliente para la auditoría, deberá crear una directiva de cifrado de datos (DEP) de varias cargas de trabajo que defina la jerarquía de cifrado. Para obtener instrucciones detalladas paso a paso, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
 
 > [!NOTE]
-> No todos los registros de auditoría de su organización están cifrados. El servicio Microsoft Purview, que genera registros de auditoría específicos para la actividad de ese servicio, define si el registro de auditoría está cifrado o no.
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## <a name="training"></a>Formación
 
