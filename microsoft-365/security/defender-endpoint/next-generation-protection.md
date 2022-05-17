@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00f0471e32147f7171f60887d28386d6b7df204d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414731"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438869"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
@@ -29,6 +29,7 @@ ms.locfileid: "65414731"
 - Antivirus de Microsoft Defender
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/index.yml)
 
 **Plataformas**
 - Windows
@@ -40,7 +41,7 @@ Microsoft Defender para punto de conexión incluye servicios de protección de �
 - [Protección dedicada y actualizaciones de productos](manage-updates-baselines-microsoft-defender-antivirus.md), que incluye actualizaciones relacionadas con mantener actualizado Antivirus de Microsoft Defender.
 
 > [!TIP]
-> La protección de última generación se incluye tanto en el plan 1 de Microsoft Defender para punto de conexión como en el plan 2. [Obtenga más información sobre Defender para punto de conexión Plan 1 y plan 2](defender-endpoint-plan-1-2.md)
+> La protección de última generación se incluye tanto en el plan 1 de Microsoft Defender para punto de conexión como en el plan 2. [Obtenga más información sobre Defender para punto de conexión plan 1 y plan 2](defender-endpoint-plan-1-2.md) La protección de última generación también se incluye en Microsoft Defender para Empresas y Microsoft 365 Empresa Premium. [Comparar las características de seguridad de los planes de Microsoft 365 para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="try-a-demo"></a>Pruebe una demostración.
 
