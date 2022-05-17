@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287230"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438035"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -228,6 +228,23 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 - Para que Outlook sea compatible con el etiquetado recomendado, en primer lugar debe configurar una [configuración de directiva avanzada](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
 - La información confidencial se detecta en el texto del cuerpo de los documentos y correos electrónicos, y en los encabezados y pies de página, pero no en la línea de asunto o en los datos adjuntos de correo electrónico.
+
+### <a name="convert-your-label-settings-into-an-auto-labeling-policy"></a>Convertir la configuración de etiquetas en una directiva de etiquetado automático
+
+> [!NOTE]
+> Esta opción se está implementando de forma gradual.
+
+Si la etiqueta incluye tipos de información confidencial para las condiciones configuradas, verá una opción al final del proceso de creación o edición de etiquetas para crear de forma automática una directiva de etiquetado automático basada en la misma configuración de etiquetado automático.
+
+Dado que las directivas de etiquetado automático no admiten clasificadores entrenables:
+
+- Si las condiciones de la etiqueta contienen solo clasificadores entrenables, no verá la opción de crear de forma automática una directiva de etiquetado automático.
+
+- Si las condiciones de la etiqueta contienen clasificadores entrenables y tipos de información de confidencialidad, se creará una directiva de etiquetado automático solo para los tipos de información confidencial. 
+
+Aunque una directiva de etiquetado automático se crea de forma automática al rellenarse automáticamente los valores que tendría que seleccionar manualmente si crea la directiva desde cero, puede ver y editar los valores antes de guardarlos.
+
+De forma predeterminada, todas las ubicaciones de SharePoint, OneDrive y Exchange se incluyen en la directiva de etiquetado automático y, cuando se guarda la directiva, se ejecuta en [modo de simulación](#learn-about-simulation-mode). No existe comprobación de que haya [habilitado etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), que es uno de los requisitos previos para que el etiquetado automático se aplique al contenido de SharePoint y OneDrive.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange
 
