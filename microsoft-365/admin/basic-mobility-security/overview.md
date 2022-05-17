@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Use Basic Mobility and Security para establecer directivas de seguridad de dispositivos y reglas de acceso.
-ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Administre y proteja los dispositivos móviles conectados a su organización Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
+ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780861"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435709"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Introducción a la movilidad y la seguridad básicas para Microsoft 365
 
@@ -46,7 +46,7 @@ Este es un resumen de los pasos:
 
 **Paso 1:** Active Basic Mobility and Security siguiendo los pasos descritos en [Configuración de Basic Mobility and Security](set-up.md).
 
-**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, la creación de un certificado APNs para administrar dispositivos iOS y la adición de un registro del sistema de nombres de dominio (DNS) para que el dominio admita Windows teléfonos.
+**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, crear un certificado APNs para administrar dispositivos iOS y agregar un registro del sistema de nombres de dominio (DNS) para que el dominio admita Windows teléfonos.
 
 **Paso 3:** Cree directivas de dispositivo y aplíquelas a grupos de usuarios. Al hacerlo, los usuarios reciben un mensaje de inscripción en su dispositivo y, cuando han completado la inscripción, sus dispositivos están restringidos por las directivas que ha configurado para ellos. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md). 
 

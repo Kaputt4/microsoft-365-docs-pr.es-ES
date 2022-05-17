@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre las características de protección contra la suplantación de identidad en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
+description: Los administradores pueden obtener información sobre las características de protección contra phishing en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81cd2870ff3471fbd535415229b3ced20bba1fbf
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8d62d2a32342aa6d409e49d790af717b1ccf7d61
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372161"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438759"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad en Microsoft 365
 
@@ -39,38 +39,38 @@ ms.locfileid: "61372161"
 
 *Phishing* es un ataque de correo electrónico que intenta robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. Hay categorías específicas de phishing. Por ejemplo:
 
-- **La suplantación** de identidad de lanza usa contenido centrado y personalizado que está específicamente adaptado a los destinatarios dirigidos (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
+- **La suplantación de identidad (phishing** ) de Spear usa contenido personalizado y centrado que se adapta específicamente a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
 
 - **El phishing de altos cargos** se dirige a ejecutivos u otros objetivos de alto valor dentro de una organización para obtener el máximo efecto.
 
-- El compromiso de correo electrónico empresarial **(BEC)** usa remitentes de confianza falsificados (responsables financieros, clientes, socios de confianza, etc.) para engañar a los destinatarios para que aprueben pagos, transfieran fondos o revelen datos de clientes. Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
+- **El compromiso por correo electrónico empresarial (BEC)** usa remitentes de confianza falsificados (responsables financieros, clientes, asociados de confianza, etc.) para engañar a los destinatarios para que aprueben pagos, transfieran fondos o revelen datos de clientes. Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
-- **Ransomware** que cifra los datos y exige el pago para descifrarlo casi siempre comienza en los mensajes de suplantación de identidad. La protección contra la suplantación de identidad no puede ayudarle a descifrar archivos cifrados, pero puede ayudar a detectar los mensajes iniciales de suplantación de identidad (phishing) asociados a la campaña de ransomware. Para obtener más información acerca de la recuperación de un ataque de ransomware, vea [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
+- **Ransomware** que cifra los datos y exige el pago para descifrarlos casi siempre comienza en los mensajes de phishing. La protección contra la suplantación de identidad no puede ayudarle a descifrar archivos cifrados, pero puede ayudar a detectar los mensajes iniciales de suplantación de identidad (phishing) asociados a la campaña de ransomware. Para obtener más información sobre cómo recuperarse de un ataque de ransomware, vea [Recuperarse de un ataque de ransomware en Microsoft 365](recover-from-ransomware.md).
 
-Con la creciente complejidad de los ataques, es incluso difícil para los usuarios capacitados identificar mensajes de suplantación de identidad sofisticados. Afortunadamente, Exchange Online Protection (EOP) y las características adicionales de Microsoft Defender para Office 365 pueden ayudar.
+Con la creciente complejidad de los ataques, incluso es difícil que los usuarios entrenados identifiquen mensajes sofisticados de phishing. Afortunadamente, Exchange Online Protection (EOP) y las características adicionales de Microsoft Defender para Office 365 pueden ayudar.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Protección contra phishing en EOP
 
-EOP (es decir, Microsoft 365 sin Microsoft Defender para Office 365) contiene características que pueden ayudar a proteger su organización de amenazas de suplantación de identidad:
+EOP (es decir, Microsoft 365 organizaciones sin Microsoft Defender para Office 365) contiene características que pueden ayudar a proteger su organización frente a amenazas de suplantación de identidad (phishing):
 
-- **Inteligencia** suplantada: use la información de inteligencia suplantada para revisar los remitentes suplantados detectados en mensajes de dominios externos e internos, y permitir o bloquear manualmente los remitentes detectados. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
+- **Inteligencia de suplantación** de identidad: use la información de inteligencia de suplantación de identidad para revisar los remitentes suplantados detectados en los mensajes de dominios externos e internos, y permitir o bloquear manualmente los remitentes detectados. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
-- Directivas contra suplantación de identidad en **EOP:** active o desactive la inteligencia de suplantación de identidad, active o desactive la identificación de remitentes no autenticados en Outlook y especifique la acción para remitentes suplantados bloqueados. Para obtener más información, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+- **Directivas contra suplantación de identidad (phishing) en EOP**: active o desactive la inteligencia de suplantación de identidad, active o desactive los indicadores de remitente no autenticados en Outlook y especifique la acción para los remitentes falsificados bloqueados. Para obtener más información, consulte [Configuración de directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
 - **Permitir o bloquear remitentes a los que se les ha suplantado la identidad en la lista de permitidos y bloqueados del espacio empresarial**: al invalidar el veredicto en la información de inteligencia contra la suplantación de identidad, el remitente a que se la ha suplantado la identidad se convierte en una entrada manual de permitido o bloqueado que solo aparece en la pestaña **Suplantación de identidad** en la lista de permitidos o bloqueados del espacio empresarial. También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 
-- Autenticación implícita de correo **electrónico:** EOP mejora las comprobaciones de autenticación de correo electrónico estándar para el correo electrónico entrante ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md) con reputación del remitente, historial de remitentes, historial de destinatarios, análisis de comportamiento y otras técnicas avanzadas para ayudar a identificar remitentes falsificados. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
+- **Autenticación implícita de correo electrónico**: EOP mejora las comprobaciones de autenticación de correo electrónico estándar para el correo electrónico entrante ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) y [DMARC](use-dmarc-to-validate-email.md) con reputación del remitente, historial de remitentes, historial de destinatarios, análisis de comportamiento y otras técnicas avanzadas para ayudar a identificar remitentes falsificados. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-microsoft-defender-for-office-365"></a>Protección adicional contra phishing en Microsoft Defender para Office 365
 
 Microsoft Defender para Office 365 contiene características contra phishing adicionales y más avanzadas:
 
-- Directivas contra suplantación de identidad en **Microsoft Defender para Office 365:** Configure la configuración de protección de suplantación para remitentes de mensajes y dominios de remitente específicos, configuración de inteligencia de buzones de correo y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md). Para obtener más información acerca de las diferencias entre las directivas contra suplantación de identidad en EOP y las directivas contra suplantación de identidad en Defender para Office 365, consulte [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
-- **Vistas de** campaña: aprendizaje automático y otras heurísticas identifican y analizan los mensajes implicados en ataques de suplantación de identidad coordinados contra todo el servicio y la organización. Para obtener más información, vea [Vistas de campaña en Microsoft Defender para Office 365](campaigns.md).
-- **Aprendizaje de simulación de** ataques: los administradores pueden crear mensajes de suplantación de identidad falsos y enviarlos a usuarios internos como una herramienta educativa. Para obtener más información, vea [Simulate a phishing attack](attack-simulation-training.md).
+- **Directivas contra suplantación de identidad en Microsoft Defender para Office 365**: configure la configuración de protección de suplantación para remitentes y dominios de remitente de mensajes específicos, opciones de inteligencia de buzones y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Configuración de directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md). Para obtener más información sobre las diferencias entre las directivas anti phishing en EOP y las directivas contra phishing en Defender para Office 365, consulte [Directivas contra suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md).
+- **Vistas de campaña**: El aprendizaje automático y otras heurísticas identifican y analizan los mensajes implicados en ataques de suplantación de identidad (phishing) coordinados contra todo el servicio y su organización. Para obtener más información, consulte [Vistas de campaña en Microsoft Defender para Office 365](campaigns.md).
+- **Entrenamiento de simulación de ataques**: los administradores pueden crear mensajes de suplantación de identidad falsos y enviarlos a usuarios internos como una herramienta de educación. Para obtener más información, consulte [Simulación de un ataque de suplantación de identidad (phishing).](attack-simulation-training.md)
 
 ## <a name="other-anti-phishing-resources"></a>Otros recursos contra la suplantación de identidad
 
-- Para los usuarios finales: [protéjase de esquemas de suplantación de identidad (phishing)](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)y otras formas de fraude en línea .
+- Para los usuarios finales: [protéjase de los esquemas de suplantación de identidad (phishing) y otras formas de fraude en línea](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
 
-- [Cómo Microsoft 365 valida la dirección From para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md).
+- [Cómo Microsoft 365 valida la dirección Desde para evitar la suplantación de identidad (phishing](how-office-365-validates-the-from-address.md)).

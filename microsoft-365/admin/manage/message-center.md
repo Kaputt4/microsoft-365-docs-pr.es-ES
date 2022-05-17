@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre Microsoft 365 Centro de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022919"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437709"
 ---
-# <a name="message-center"></a>Centro de mensajes
+# <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Seguimiento de características nuevas y modificadas en el centro de mensajes de Microsoft 365
 
 Para realizar un seguimiento de los próximos cambios, incluidas las características nuevas y modificadas, el mantenimiento planeado u otros anuncios importantes, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centro de</a> mensajes.
   

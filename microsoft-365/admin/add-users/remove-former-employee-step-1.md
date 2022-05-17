@@ -1,5 +1,5 @@
 ---
-title: 'Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios'
+title: 'Paso 1: Impedir que un antiguo empleado inicie sesión y bloquee el acceso a Microsoft 365 servicios'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,54 +25,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Bloquear el inicio de sesión de un antiguo empleado y bloquear el acceso a Microsoft 365 servicios.
-ms.openlocfilehash: abd6a6f47952b5af190b08f1ecae337840eaa312
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Los administradores globales pueden impedir que un antiguo empleado inicie sesión y bloquear su acceso a Microsoft 365 servicios.
+ms.openlocfilehash: eec436a182f5e065f445167dea38fe99390ca105
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315965"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436655"
 ---
-# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
+# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: Impedir que un antiguo empleado inicie sesión y bloquee el acceso a Microsoft 365 servicios
 
-Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, debe restablecer su contraseña. En este paso, fuerza la salida del usuario de Microsoft 365.
+Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, debe restablecer su contraseña. En este paso, fuerce el cierre de sesión del usuario de Microsoft 365.
 
 > [!NOTE]
-> Debe ser un administrador global para iniciar el inicio de sesión para otros administradores. Para usuarios que no son administradores, puede usar un administrador de usuarios o un usuario de administrador del departamento de soporte técnico para realizar esta acción. [Más información sobre los roles de administrador](about-admin-roles.md)
+> Debe ser administrador global para iniciar el cierre de sesión de otros administradores. Para los usuarios que no son administradores, puede usar un administrador de usuarios o un usuario de administrador del departamento de soporte técnico para realizar esta acción. [Más información sobre los roles de administrador](about-admin-roles.md)
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el cuadro situado junto al nombre del usuario y, a continuación, seleccione **Restablecer contraseña**.
-3. Escriba una nueva contraseña y, a continuación, **seleccione Restablecer**. (No se lo envíe).
-4. Seleccione el nombre del usuario para ir al panel de propiedades y, en la pestaña  Cuenta, seleccione **Cerrar sesión de todas las sesiones**.
+3. Escriba una nueva contraseña y, a continuación, seleccione **Restablecer**. (No se lo envíes).
+4. Seleccione el nombre del usuario para ir al panel de propiedades y, en la pestaña **Cuenta** , seleccione **Cerrar sesión de todas las sesiones**.
 
-Dentro de una hora , o después de salir de la página Microsoft 365 actual en la que se encuentran, se les pedirá que inicien sesión de nuevo. Un token de acceso es bueno durante una hora, por lo que la escala de tiempo depende de cuánto tiempo queda en ese token y de si navegan fuera de su página web actual.
+En un plazo de una hora, o después de salir de la página de Microsoft 365 actual en la que se encuentra, se les pedirá que vuelvan a iniciar sesión. Un token de acceso es bueno durante una hora, por lo que la escala de tiempo depende de cuánto tiempo queda en ese token y de si salen de su página web actual.
   
 > [!IMPORTANT]
-> Si el usuario está en Outlook en la Web, simplemente haciendo clic en su buzón, es posible que no se eche inmediatamente. Tan pronto como seleccionen un icono diferente, como OneDrive, o actualicen su explorador, se inicia el inicio de sesión.
+> Si el usuario está en Outlook en la Web, simplemente haciendo clic en su buzón, es posible que no se le eche inmediatamente. En cuanto seleccionan un icono diferente, como OneDrive, o actualizan su explorador, se inicia el cierre de sesión.
   
 Para usar PowerShell para cerrar la sesión de un usuario inmediatamente, consulte el cmdlet [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) .
   
 Para obtener más información sobre cuánto se tarda en quitar a un usuario del correo, vea [Todo lo que debe saber sobre el cierre de la sesión de un empleado](remove-former-employee-step-7.md#what-you-need-to-know-about-terminating-an-employees-email-session).
 
-## <a name="block-a-former-employees-access-to-microsoft-365-services"></a>Bloquear el acceso de un antiguo empleado a Microsoft 365 servicios
+## <a name="block-a-former-employees-access-to-microsoft-365-services"></a>Bloquear el acceso de un antiguo empleado a los servicios Microsoft 365
 
 > [!IMPORTANT]
- > El bloqueo de una cuenta puede tardar hasta 24 horas en tener efecto. Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, siga los pasos anteriores y restablezca su contraseña.
+ > Bloquear una cuenta puede tardar hasta 24 horas en surtir efecto. Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, siga los pasos anteriores y restablezca su contraseña.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-2. Seleccione el nombre del empleado que desea bloquear y, bajo el nombre del usuario, seleccione el símbolo para **Bloquear a este usuario**.
-3. Seleccione **Bloquear al usuario para que no inicie sesión** y, a continuación, **seleccione Guardar**.
+2. Seleccione el nombre del empleado que desea bloquear y, bajo el nombre del usuario, seleccione el símbolo **Bloquear este usuario**.
+3. Seleccione **Bloquear el inicio de sesión del usuario** y, a continuación, seleccione **Guardar**.
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquear el acceso de un antiguo empleado al correo electrónico (Exchange Online)
 
-Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie sesión en el Centro de administración de Exchange y siga estos pasos para impedir que el antiguo empleado tenga acceso <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">a</a> su correo electrónico.
+Si tiene correo electrónico como parte de su suscripción de Microsoft 365, inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y siga estos pasos para impedir que el antiguo empleado acceda a su correo electrónico.
   
-1. Vaya al Centro Exchange de administración > **buzones** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">de destinatarios</a>.
-1. Selecciona el buzón de usuario de la lista y, a continuación, en el Panel de *detalles (a* la derecha), selecciona **Administrar** la configuración de aplicaciones de correo electrónico en **Aplicaciones de correo electrónico**. Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),****Outlook en la Web**, **Outlook de escritorio (MAPI),****Exchange web services**, **POP3** e **IMAP**.
+1. Vaya al centro de administración de Exchange > **buzones de destinatarios**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank"></a>
+1. Seleccione el buzón de usuario de la lista y, a continuación, en el *panel Detalles* (en el lado derecho), seleccione **Administrar la configuración de aplicaciones de correo electrónico** en **Aplicaciones de correo electrónico**. **Desactive** el control deslizante para todas las opciones; **Mobile (Exchange ActiveSync),****Outlook en la Web**, **Outlook desktop (MAPI)**, **Exchange servicios web**, **POP3** e **IMAP**.
 1. Seleccione **Guardar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) (artículo)\
 
-[Restaurar un usuario](restore-user.md) (artículo)
+[Restauración de un usuario](restore-user.md) (artículo)

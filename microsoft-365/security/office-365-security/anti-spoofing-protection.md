@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 446b82d668041a476d748956008002c42a92a7f3
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475177"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435465"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -56,7 +56,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
 - **Directivas contra el phishing**: En EOP y Microsoft Defender para Office 365, las directivas contra el phishing contienen las siguientes opciones de configuración contra suplantación de identidad:
   - Activar o desactivar la inteligencia contra la suplantación de identidad.
-  - Activar o desactivar la identificación del remitente sin autenticar en Outlook.
+  - Activar o desactivar los indicadores de remitente no autentificado en Outlook.
   - Especificar la acción para los remitentes bloqueados a los que se les ha suplantado la identidad.
 
   Para obtener más información, consulte [Configuración de suplantación de identidad en las directivas contra phishing](set-up-anti-phishing-policies.md#spoof-settings).

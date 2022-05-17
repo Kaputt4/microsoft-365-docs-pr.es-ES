@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b8d75bbb520a2f31ff1d1b55d97e445748a110c
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349860"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438891"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -106,7 +106,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
   > - No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - Al deshabilitar la protección contra la suplantación de identidad solo se deshabilita la protección de suplantación _implícita_ de las comprobaciones de [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) . Si el remitente produce un error en las comprobaciones [de DMARC](use-dmarc-to-validate-email.md) _explícitas_ en las que la directiva está establecida en cuarentena o rechazo, el mensaje sigue en cuarentena o se rechaza.
 
-- **Notificaciones de remitente no autenticadas**: estas notificaciones solo están disponibles cuando la inteligencia de suplantación de identidad está activada. Consulte la información de la sección siguiente.
+- **Indicadores de remitente no autenticados**: disponible en la sección **Consejos de seguridad & indicadores** solo cuando la inteligencia de suplantación de identidad está activada. Consulte los detalles de la sección siguiente.
 - **Acciones**: para los mensajes de remitentes falsificados bloqueados (bloqueados automáticamente por inteligencia de suplantación de identidad o bloqueados manualmente en la lista Permitir o bloquear inquilinos), también puede especificar la acción que debe realizar en los mensajes:
   - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
@@ -116,17 +116,17 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
     Si selecciona **Poner en cuarentena el mensaje**, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que se pusieron en cuarentena mediante la protección de inteligencia de suplantación de identidad. Las directivas de cuarentena definen qué pueden hacer los usuarios en los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
-### <a name="unauthenticated-sender"></a>Remitente no autenticado
+### <a name="unauthenticated-sender-indicators"></a>Indicadores de remitente no autenticados
 
-Las notificaciones de remitentes no autenticados forman parte de la [configuración de suplantación de identidad](#spoof-settings) que están disponibles en las directivas contra suplantación de identidad en EOP y Defender para Office 365 como se describe en la sección anterior. La siguiente configuración solo está disponible cuando la inteligencia de suplantación de identidad está activada:
+Los indicadores de remitente no autenticados forman parte de la [configuración de suplantación](#spoof-settings) de identidad que están disponibles en la sección **Consejos de seguridad & indicadores de las directivas** contra la suplantación de identidad en EOP y Defender para Office 365. La siguiente configuración solo está disponible cuando la inteligencia de suplantación de identidad está activada:
 
-- **Mostrar (?) para remitentes no autenticados para la suplantación**: esta notificación agrega un signo de interrogación a la foto del remitente en el cuadro De si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) o DMARC. Cuando esta configuración está desactivada, el signo de interrogación no se agrega a la foto del remitente.
+- **Mostrar (?) para remitentes no autenticados para suplantación de identidad**: agrega un signo de interrogación a la foto del remitente en el cuadro De si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa DMARC o [autenticación compuesta](email-validation-and-authentication.md#composite-authentication). Cuando esta configuración está desactivada, el signo de interrogación no se agrega a la foto del remitente.
 
-- **Mostrar etiqueta "via"**: esta notificación agrega la etiqueta via (chris@contoso.com <u>a través</u> de fabrikam.com) en el cuadro From si el dominio de la dirección De (el remitente del mensaje que se muestra en los clientes de correo electrónico) es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** . Para obtener más información sobre estas direcciones, consulte [Introducción a los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- **Mostrar etiqueta "via"**: agrega la etiqueta via (chris@contoso.com <u>a través</u> de fabrikam.com) en el cuadro Desde si el dominio de la dirección De (el remitente del mensaje que se muestra en los clientes de correo electrónico) es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** . Para obtener más información sobre estas direcciones, consulte [Introducción a los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
 Para evitar que el signo de interrogación o la etiqueta se agreguen a mensajes de remitentes específicos, tiene las siguientes opciones:
 
-- Permitir al remitente suplantado en la [información de inteligencia de suplantación](learn-about-spoof-intelligence.md) o manualmente en la [lista de permitidos o bloqueados](tenant-allow-block-list.md) de inquilinos. Permitir que el remitente suplantado impida que la etiqueta via aparezca en los mensajes del remitente cuando la identificación del remitente no autenticada esté deshabilitada.
+- Permitir al remitente suplantado en la [información de inteligencia de suplantación](learn-about-spoof-intelligence.md) o manualmente en la [lista de permitidos o bloqueados](tenant-allow-block-list.md) de inquilinos. Permitir que el remitente suplantado impida que la etiqueta via aparezca en los mensajes del remitente, incluso si la opción **Mostrar etiqueta "a través"** está activada en la directiva.
 - [Configure la autenticación por correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio remitente.
   - Para el signo de interrogación en la foto del remitente, SPF o DKIM son los más importantes.
   - En el caso de la etiqueta via, confirme que el dominio de la firma DKIM o la dirección **MAIL FROM** coinciden (o es un subdominio de) con el dominio en la dirección From.

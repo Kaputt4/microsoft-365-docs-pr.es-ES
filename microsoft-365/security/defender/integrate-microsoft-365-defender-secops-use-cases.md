@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ae77d89a568f79e3369f9ded4cfb0a96aa0255d0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 4c65943ac28315f54e6c2f4cc8b2314e810b291f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782553"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438087"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
@@ -102,7 +102,7 @@ Además, los equipos de SOC podrían haber realizado las detecciones descritas e
 
 |Equipo de SOC|Requisito|Personas para cumplir los requisitos|Proceso para cumplir los requisitos|Tecnología pertinente|Brecha identificada|Registro de cambios de casos de uso|Exento (Y/N)|
 |---|---|---|---|---|---|---|---|
-|Supervisión de SOC|Todos los recursos conectados a redes aprobadas se identifican y clasifican|Supervisión de SOC, propietarios de BU, propietarios de aplicaciones, propietarios de recursos de TI, etc.|Sistema centralizado de administración de recursos para detectar y enumerar la categoría de recursos y los atributos en función del riesgo.|ServiceNow u otros recursos. <br><br>[inventario de dispositivos de Microsoft 365](/security/defender-endpoint/device-discovery)|Solo se ha descubierto el 70 % de los recursos. Microsoft 365 Defender seguimiento de corrección solo es efectivo para los recursos conocidos|Servicios de administración del ciclo de vida de activos maduros para garantizar que Microsoft 365 Defender tenga una cobertura del 100 %|N|
+|Supervisión de SOC|Todos los recursos conectados a redes aprobadas se identifican y clasifican|Supervisión de SOC, propietarios de BU, propietarios de aplicaciones, propietarios de recursos de TI, etc.|Sistema centralizado de administración de recursos para detectar y enumerar la categoría de recursos y los atributos en función del riesgo.|ServiceNow u otros recursos. <br><br>[inventario de dispositivos de Microsoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|Solo se ha descubierto el 70 % de los recursos. Microsoft 365 Defender seguimiento de corrección solo es efectivo para los recursos conocidos|Servicios de administración del ciclo de vida de activos maduros para garantizar que Microsoft 365 Defender tenga una cobertura del 100 %|N|
 |Ingeniería & SecOps Teams|El alto impacto y las vulnerabilidades críticas en los recursos se corrigen según la directiva|Ingenieros de SecOps, analistas de SOC: Cumplimiento de vulnerabilidades &, ingeniería de seguridad|Proceso definido para clasificar vulnerabilidades críticas y de alto riesgo|[Paneles de administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender para punto de conexión ha identificado dispositivos de alerta alta y de alto impacto sin ningún plan de corrección o implementación de la actividad recomendada por Microsoft.|Agregue un flujo de trabajo para notificar a los propietarios de recursos cuando se requiera la actividad de corrección en un plazo de 30 días por directiva; Implemente un sistema de vales para notificar a los propietarios de recursos los pasos de corrección.|N|
 |Supervisión Teams|El estado de amenazas y vulnerabilidades se notifica a través del portal de intranet de la empresa|Analista de SOC de nivel 2|Informes generados automáticamente a partir de Microsoft 365 Defender que muestran el progreso de corrección de los recursos|[Alertas en el Centro de cumplimiento de & de seguridad](/microsoft-365/security/office-365-security/alerts) <br><br> Supervisión de puntuación segura|No se comunican vistas ni informes de panel a los propietarios de recursos con respecto al estado de amenaza y vulnerabilidad de los recursos.|Cree un script de automatización para rellenar el estado de la corrección de vulnerabilidad de recursos críticos y de alto riesgo para la organización.|N|
 

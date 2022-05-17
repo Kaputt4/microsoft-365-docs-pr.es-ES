@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de Exchange Online.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f199cb3dbaddc47416c24a82b3066a2631641706
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847407"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438913"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -99,10 +99,10 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **Usuarios, grupos y dominios** que aparece, identifique los destinatarios internos a los que se aplica la directiva (condiciones de destinatario):
-   - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+   - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
    - **Grupos**:
-     - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-     - El Grupos de Microsoft 365 especificado.
+     - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+     - Los Grupos de Microsoft 365 especificados.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
@@ -138,7 +138,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
 
      Para activar una configuración, active la casilla . Para desactivarlo, desactive la casilla.
 
-     <sup>\*</sup> Esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación de identidad** en la página anterior. Para obtener más información, vea [Remitente no autenticado](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> Esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación de identidad** en la página anterior. Para obtener más información, consulte [Indicadores de remitente no autenticados](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    Cuando termine, haga clic en **Siguiente**.
 

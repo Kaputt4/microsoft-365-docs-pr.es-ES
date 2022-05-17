@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6367781d38046edce1c1941e7c4264788b1ab64b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 78775b31833f16771d7010f3ea92c9695016463d
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417423"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438124"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting preview
 
@@ -59,7 +59,6 @@ Si aún no lo ha hecho, puede solicitar expertos de Defender para la búsqueda:
 1. Haga clic en [**Aplicar**](https://aka.ms/expandedMTEprev). Solo los administradores globales pueden registrar y completar el proceso de aplicación. Si no es un administrador global, póngase en contacto con el administrador global para rellenar el formulario de aplicación.
 2. Escriba el **identificador de correo electrónico de su empresa**.
 3. Seleccione **Enviar**. Recibirá un mensaje de confirmación de que se ha recibido la aplicación.  
-4. Tras la aprobación, recibirá un correo electrónico para registrarse.
 
 ## <a name="register-to-microsoft-defender-experts-for-hunting-service-preview"></a>Registrarse en la versión preliminar del servicio Expertos de Microsoft Defender para la búsqueda
 

@@ -17,34 +17,36 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Obtenga información sobre cómo restaurar (o combinar) el contenido de un buzón inactivo en un buzón existente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aaf0ce7f67ae0146beceeeb667263908d7cff75d
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 66f9e75a76b4fb1bda0f9ae0f70cfe12c816d2bb
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241556"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438233"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurar un buzón inactivo
 
-Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa para retener el correo electrónico de un antiguo empleado después de que abandone la organización. Si otro empleado asume las responsabilidades del empleado que se marchó o si dicho empleado vuelve a la organización, hay dos maneras en que puede hacer que el contenido del buzón inactivo esté disponible para un usuario:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- **Restaurar un buzón inactivo** Si otro empleado asume las responsabilidades del empleado que se marchó o si otro usuario necesita acceso al contenido del buzón inactivo, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente. También puede restaurar el archivo desde un buzón inactivo. Una vez restaurado, el buzón inactivo se conserva y se mantiene como un buzón inactivo. En este tema se describen los procedimientos para restaurar un buzón inactivo.
+Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa para conservar el correo electrónico de un antiguo empleado después de abandonar la organización. Si otro empleado asume las responsabilidades del empleado que se marchó o si dicho empleado vuelve a la organización, hay dos maneras en que puede hacer que el contenido del buzón inactivo esté disponible para un usuario:
 
-- **Recuperar un buzón inactivo** Si el empleado que se marchó vuelve a la organización o si se contrata a un nuevo empleado para que asuma las responsabilidades del empleado anterior, puede recuperar el contenido del buzón inactivo. Este método convierte el buzón inactivo en un buzón nuevo que contiene el contenido del buzón inactivo. Una vez recuperado, el buzón inactivo deja de existir. Para los procedimientos paso a paso, vea Recuperar un buzón inactivo [en Office 365](recover-an-inactive-mailbox.md).
+- **Restaurar un buzón inactivo** Si otro empleado asume las responsabilidades del empleado que se marchó o si otro usuario necesita acceso al contenido del buzón inactivo, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente. También puede restaurar el archivo desde un buzón inactivo. Una vez restaurado, el buzón inactivo se conserva y se mantiene como un buzón inactivo. En este artículo se describen los procedimientos para restaurar un buzón inactivo.
 
-Vea la [sección Más información](#more-information) de este artículo para obtener más información sobre las diferencias entre restaurar y recuperar un buzón inactivo.
+- **Recuperar un buzón inactivo** Si el empleado que se marchó vuelve a la organización o si se contrata a un nuevo empleado para que asuma las responsabilidades del empleado anterior, puede recuperar el contenido del buzón inactivo. Este método convierte el buzón inactivo en un buzón nuevo que contiene el contenido del buzón inactivo. Una vez recuperado, el buzón inactivo deja de existir. Para ver los procedimientos paso a paso, consulte [Recuperación de un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
+
+Consulte la sección [Más información](#more-information) de este artículo para obtener más información sobre las diferencias entre restaurar y recuperar un buzón inactivo.
 
 > [!NOTE]
-> No puede recuperar ni restaurar un buzón inactivo configurado con un archivo de expansión automática. Si necesita recuperar datos de un buzón inactivo con un archivo de expansión automática, use la búsqueda de contenido para exportar los datos del buzón y luego importarlos a otro buzón. Para obtener instrucciones, consulte los temas siguientes:
+> No se puede recuperar ni restaurar un buzón inactivo configurado con un archivo de expansión automática. Si necesita recuperar datos de un buzón inactivo con un archivo de expansión automática, use la búsqueda de contenido para exportar los datos del buzón y, a continuación, importarlos a otro buzón. Para obtener instrucciones, consulte los artículos siguientes:
 >
 > - [Búsqueda de contenido](content-search.md)
 > - [Exportar resultados de búsqueda de contenido](export-search-results.md)
 
 ## <a name="requirements-to-restore-an-inactive-mailbox"></a>Requisitos para restaurar un buzón inactivo
 
-- Debe usar powershell Exchange Online para restaurar un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Debe usar Exchange Online PowerShell para restaurar un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento Microsoft Purview para este procedimiento. Para obtener instrucciones paso a paso para usar Exchange Online PowerShell, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Ejecute el siguiente comando en Exchange Online PowerShell para obtener información de identidad para los buzones inactivos de la organización.
+- Ejecute el siguiente comando en Exchange Online PowerShell para obtener información de identidad de los buzones inactivos de la organización.
 
   ```powershell
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
@@ -52,13 +54,13 @@ Vea la [sección Más información](#more-information) de este artículo para ob
 
   Use la información devuelta por este comando para identificar y restaurar un buzón inactivo específico.
 
-- Para obtener más información acerca de los buzones inactivos, vea [Buzones](inactive-mailboxes-in-office-365.md)inactivos en Office 365 .
+- Para obtener más información sobre los buzones inactivos, vea [Buzones inactivos en Office 365](inactive-mailboxes-in-office-365.md).
 
-## <a name="restore-inactive-mailboxes"></a>Restaurar buzones inactivos
+## <a name="restore-inactive-mailboxes"></a>Restauración de buzones inactivos
 
 Use el cmdlet **New-MailboxRestoreRequest** con los parámetros  _SourceMailbox_ y  _TargetMailbox_ para restaurar el contenido de un buzón inactivo en un buzón existente. Para obtener más información sobre el uso de este cmdlet, vea [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest).
 
-Para poder restaurar un buzón inactivo, debe agregar el LegacyExchangeDN del buzón inactivo al buzón de destino, como una dirección proxy X500 del buzón de destino. Esto debe hacerse porque el cmdlet **New-MailboxRestoreRequest** comprueba que el valor de la propiedad **LegacyExchangeDN** en los buzones de origen y de destino sea el mismo. Después de restaurar el buzón inactivo, opcionalmente puede quitar el LegacyExchangeDN del buzón inactivo del buzón de origen. Asegúrese de esperar hasta que se complete la solicitud de restauración del buzón antes de quitar el LegacyExchangeDN.
+Para poder restaurar un buzón inactivo, debe agregar legacyExchangeDN del buzón inactivo al buzón de destino, como una dirección de proxy X500 del buzón de destino. Esto tiene que hacerse porque el cmdlet **New-MailboxRestoreRequest** comprueba si el valor de la propiedad **LegacyExchangeDN** en los buzones de origen y de destino es el mismo. Después de restaurar el buzón inactivo, opcionalmente puede quitar legacyExchangeDN del buzón inactivo del buzón de origen. Asegúrese de esperar hasta que se complete la solicitud de restauración del buzón antes de quitar LegacyExchangeDN.
 
 Siga estos pasos para restaurar un buzón inactivo en un buzón existente:
 
@@ -71,13 +73,13 @@ Siga estos pasos para restaurar un buzón inactivo en un buzón existente:
    > [!IMPORTANT]
    > En el comando anterior, use el valor de la propiedad **DistinguishedName** o **ExchangeGUID** para identificar el buzón inactivo. Estas propiedades son únicas para cada buzón en su organización, mientras que es posible que un buzón activo e inactivo puedan tener la misma dirección SMTP principal.
 
-2. Muestre el LegacyExchangeDN del buzón inactivo para que pueda agregarlo como una dirección proxy al buzón de destino en el paso siguiente.
+2. Muestre legacyExchangeDN del buzón inactivo para que pueda agregarlo como una dirección de proxy al buzón de destino en el paso siguiente.
 
    ```powershell
    $inactiveMailbox.LegacyExchangeDN
    ```
 
-3. Agregue el LegacyExchangeDN del buzón inactivo como una dirección proxy X500 al buzón de destino.
+3. Agregue LegacyExchangeDN del buzón inactivo como una dirección de proxy X500 al buzón de destino.
 
    ```powershell
    Set-Mailbox <identity of target mailbox> -EmailAddresses @{Add="X500:<LegacyExchangeDN of inactive mailbox>"}
@@ -97,7 +99,7 @@ Siga estos pasos para restaurar un buzón inactivo en un buzón existente:
    New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox <identity of target mailbox> -TargetRootFolder "Inactive Mailbox"
    ```
 
-5. Una vez completada la solicitud de restauración, puede quitar opcionalmente el LegacyExchangeDN del buzón inactivo del buzón de destino. Salir de LegacyExchangeDN desde el buzón inactivo no afectará al buzón de destino.
+5. Una vez completada la solicitud de restauración, puede quitar opcionalmente legacyExchangeDN del buzón inactivo del buzón de destino. Salir de LegacyExchangeDN desde el buzón inactivo no afectará al buzón de destino.
 
    ```powershell
    Set-Mailbox <identity of target mailbox> -EmailAddresses @{Remove="X500:<LegacyExchangeDN of inactive mailbox>"}
@@ -116,13 +118,13 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
    > [!NOTE]
    > En el comando anterior, use el valor de la propiedad **DistinguishedName** o **ExchangeGUID** para identificar el buzón inactivo. Estas propiedades son únicas para cada buzón en su organización, mientras que es posible que un buzón activo e inactivo puedan tener la misma dirección SMTP principal.
 
-2. Muestre el LegacyExchangeDN del buzón inactivo para que pueda agregarlo como una dirección proxy al buzón de destino en el paso siguiente.
+2. Muestre legacyExchangeDN del buzón inactivo para que pueda agregarlo como una dirección de proxy al buzón de destino en el paso siguiente.
 
    ```powershell
    $inactiveMailbox.LegacyExchangeDN
    ```
 
-3. Agregue el LegacyExchangeDN del buzón inactivo como una dirección proxy X500 al buzón de destino.
+3. Agregue LegacyExchangeDN del buzón inactivo como una dirección de proxy X500 al buzón de destino.
 
    ```powershell
    Set-Mailbox <identity of target mailbox> -EmailAddresses @{Add="X500:<LegacyExchangeDN of inactive mailbox>"}
@@ -134,7 +136,7 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
    New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox <identity of target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive"
    ```
 
-5. Una vez completada la solicitud de restauración, puede quitar opcionalmente el LegacyExchangeDN del buzón inactivo del buzón de destino. Salir de LegacyExchangeDN desde el buzón inactivo no afectará al buzón de destino.
+5. Una vez completada la solicitud de restauración, puede quitar opcionalmente legacyExchangeDN del buzón inactivo del buzón de destino. Salir de LegacyExchangeDN desde el buzón inactivo no afectará al buzón de destino.
 
    ```powershell
    Set-Mailbox <identity of target mailbox> -EmailAddresses @{Remove="X500:<LegacyExchangeDN of inactive mailbox>"}
@@ -142,7 +144,7 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
 
 ## <a name="more-information"></a>Más información
 
-- **¿Cuál es la diferencia principal entre recuperar y restaurar un buzón inactivo?** Al recuperar un buzón inactivo, el buzón se convierte en un buzón nuevo. El contenido y la estructura de carpetas del buzón inactivo se conservan y el buzón está vinculado a una nueva cuenta de usuario. Una vez recuperado, el buzón inactivo deja de existir y los cambios realizados en el contenido en el nuevo buzón afectarán el contenido que se encontraba originalmente en retención en el buzón inactivo. Por el contrario, cuando se restaura un buzón inactivo, el contenido simplemente se copia a otro buzón de correo. El buzón inactivo se conserva y sigue siendo un buzón inactivo. Los cambios realizados en el contenido del buzón de destino no afectan el contenido original del buzón inactivo. El buzón inactivo todavía se puede buscar mediante la herramienta de búsqueda de [contenido,](content-search.md)su contenido se puede restaurar en otro buzón o puede recuperarse o eliminarse en una fecha posterior.
+- **¿Cuál es la diferencia principal entre recuperar y restaurar un buzón inactivo?** Cuando se recupera un buzón inactivo, el buzón se convierte en un nuevo buzón. El contenido y la estructura de carpetas del buzón inactivo se conservan y el buzón está vinculado a una nueva cuenta de usuario. Una vez recuperado, el buzón inactivo deja de existir y los cambios realizados en el contenido en el nuevo buzón afectarán el contenido que se encontraba originalmente en retención en el buzón inactivo. Por el contrario, cuando se restaura un buzón inactivo, el contenido simplemente se copia a otro buzón de correo. El buzón inactivo se conserva y sigue siendo un buzón inactivo. Los cambios realizados en el contenido del buzón de destino no afectan el contenido original del buzón inactivo. El buzón inactivo todavía se puede buscar mediante la [herramienta Búsqueda de contenido](content-search.md), su contenido se puede restaurar en otro buzón o se puede recuperar o eliminar en una fecha posterior.
 
 - **¿Cómo se encuentran los buzones inactivos?** Para obtener una lista de los buzones inactivos en la organización y mostrar información útil para restaurar un buzón inactivo, puede ejecutar este comando.
 
@@ -150,9 +152,9 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Use una directiva Microsoft 365 de retención o retención por juicio o para conservar el contenido inactivo del buzón.** Si desea conservar el estado de un buzón inactivo después de restaurarlo, puede aplicar una directiva de retención de [Microsoft 365](retention.md) al buzón de destino o colocar el buzón de destino en [Retención por juicio](crear-a-litigation-hold.md antes de restaurar el buzón inactivo. Esto evitará la eliminación permanente de los elementos del buzón inactivo después de que se restauran en el buzón de destino.
+- **Use una directiva de retención de Microsoft 365 o una suspensión por juicio o para conservar el contenido del buzón inactivo.** Si desea conservar el estado de un buzón inactivo después de restaurarlo, puede aplicar una [directiva de retención de Microsoft 365](retention.md) al buzón de destino o colocar el buzón de destino en [suspensión por juicio](create-a-litigation-hold.md) antes de restaurar el buzón inactivo. Esto evitará la eliminación permanente de los elementos del buzón inactivo después de que se restauran en el buzón de destino.
 
-- **Habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo.** Como los elementos del buzón de un buzón inactivo podrían ser antiguos, considere la posibilidad de habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo. Al colocar un buzón en suspensión de retención, no se procesará la directiva de retención que se le asigna hasta que se elimine la suspensión de retención o hasta que expire el período de suspensión de retención. De este modo, el propietario del buzón de destino tiene tiempo para administrar los mensajes antiguos del buzón inactivo. De lo contrario, la directiva de retención puede eliminar los elementos antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado en función de las opciones de retención configuradas para el buzón de destino. Para obtener más información, vea [Colocar un buzón en](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)retención en Exchange Online .
+- **Habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo.** Como los elementos del buzón de un buzón inactivo podrían ser antiguos, considere la posibilidad de habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo. Al colocar un buzón en suspensión de retención, no se procesará la directiva de retención que se le asigna hasta que se elimine la suspensión de retención o hasta que expire el período de suspensión de retención. De este modo, el propietario del buzón de destino tiene tiempo para administrar los mensajes antiguos del buzón inactivo. De lo contrario, la directiva de retención puede eliminar los elementos antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado en función de las opciones de retención configuradas para el buzón de destino. Para obtener más información, vea [Colocar un buzón en retención en Exchange Online](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
 - **Puede usar otros parámetros con el cmdlet New-MailboxRestoreRequest para implementar escenarios de restauración diferentes para los buzones inactivos.**. Por ejemplo, puede ejecutar este comando para restaurar el archivo desde el buzón inactivo en el buzón principal del buzón de destino.
 

@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta guía de laboratorio de pruebas para crear un entorno de prueba ligero para probar Microsoft 365 para empresas.
-ms.openlocfilehash: fa83bb7681752b40c924af9b8d085447cd7fe074
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da4a38ad951d30a536e653336571e7bad04a889
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100537"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435311"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -56,22 +56,22 @@ Use el entorno resultante para probar las características y la funcionalidad de
 Comenzamos con una suscripción de prueba de Microsoft 365 E5 y, a continuación, le agregamos la suscripción Microsoft 365 E5.
 
 >[!NOTE]
->Se recomienda crear una suscripción de prueba de Office 365 para que el entorno de prueba tenga un inquilino Azure AD independiente de las suscripciones de pago que tenga actualmente. Esta separación significa que puede agregar y quitar usuarios y grupos en el inquilino de prueba sin afectar a las suscripciones de producción.
+>Se recomienda crear una suscripción de prueba de Office 365 para que el entorno de prueba tenga un inquilino de Azure AD independiente de las suscripciones de pago que tenga actualmente. Esta separación significa que puede agregar y quitar usuarios y grupos en el inquilino de prueba sin afectar a las suscripciones de producción.
 
 Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar necesita un nombre de compañía ficticio y una nueva cuenta de Microsoft.
   
 1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![Línea.](../media/Common-Images/TableLine.png)
-    
-2. Para registrarse para obtener una nueva cuenta Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta y una dirección de correo electrónico. Usará esta cuenta para suscribirse a Office 365.
-    
+
+2. Para registrarse para obtener una nueva cuenta de Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta de correo electrónico y una dirección. Usará esta cuenta para registrarse para Office 365.
+
     - Anote aquí el nombre y los apellidos de la nueva cuenta: ![Línea.](../media/Common-Images/TableLine.png)
-    
+
     - Anote la dirección de la cuenta de correo electrónico nueva aquí: ![Línea.](../media/Common-Images/TableLine.png)Outlook.com
-    
+
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba de Office 365 E5
 
 1. En el explorador, vaya a [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
+
 2. En el paso 1 de la página **Gracias por elegir Office 365 E5**, escriba su nueva dirección de cuenta de correo electrónico.
 3. En el paso 2 del proceso de suscripción de seguimiento, escriba la información solicitada y, a continuación, realice la comprobación.
 4. En el paso 3, escriba un nombre de organización y, a continuación, un nombre de cuenta que será el administrador global de la suscripción.
@@ -83,10 +83,10 @@ Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar nece
 8. En Office 365 E5 programa de instalación, seleccione **Continue using *your organization.onmicrosoft.com* for email and sign in (Continuar usando su organización).onmicrosoft.com para el correo electrónico y el inicio de sesión** y, a continuación, seleccione **Salir y continuar más adelante**.
 
 Debería ver el Centro de administración de Microsoft 365.
-    
+
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Fase 2: configurar la suscripción de prueba de Office 365
 
-En esta fase, se configura la suscripción con usuarios adicionales y se les asignan licencias de Office 365 E5.
+En esta fase, configurará la suscripción con otros usuarios y las asignará Office 365 E5 licencias.
   
 Para conectarse a la suscripción con el módulo Azure Active Directory PowerShell for Graph desde el equipo, use las instrucciones de [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
     
@@ -113,6 +113,7 @@ for($i=2;$i -le 4; $i++) {
     Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
 }
 ```
+
 > [!NOTE]
 > Aquí se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba. Evidentemente, esto no se recomienda en el caso de suscripciones de producción. 
 
@@ -121,34 +122,34 @@ for($i=2;$i -le 4; $i++) {
 Si aún no ha registrado estos valores, anote estos valores ahora:
   
 - Administrador global nombre: ![Línea.](../media/Common-Images/TableLine.png). onmicrosoft.com (del paso 6 de la fase 1)
-    
+
     Guarde también la contraseña de esta cuenta en una ubicación segura.
-    
+
 - Nombre de la organización de la suscripción de prueba: ![Línea.](../media/Common-Images/TableLine.png) (en el paso 4 de la fase 1)
-    
-- Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
-    
+
+- Para enumerar las cuentas de User 2, User 3, User 4 y User 5, ejecute el siguiente comando desde el módulo Azure Active Directory para Windows PowerShell símbolo del sistema:
+
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     Anote aquí los nombres de las cuentas:
-    
+
   - Nombre de la cuenta de usuario 2: usuario2 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nombre de la cuenta de usuario 3: usuario3 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nombre de la cuenta de usuario 4: usuario4 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nombre de la cuenta de usuario 5: usuario5 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     También puede guardar la contraseña común de estas cuentas en un lugar seguro.
-   
+
 ### <a name="using-an-office-365-test-environment"></a>Usar un entorno de prueba de Office 365
 
 Si solo necesita un entorno de prueba Office 365, no es necesario leer el resto de este artículo.
 
-Para obtener más guías de laboratorio de pruebas que se aplican tanto a Office 365 como a Microsoft 365, consulte [Microsoft 365 para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
+Para ver otras guías de laboratorio de pruebas que se aplican tanto a Office 365 como a Microsoft 365, consulte [Microsoft 365 para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Fase 3: agregar una suscripción de prueba a Microsoft 365 E5
 
@@ -198,15 +199,21 @@ En esta fase se crea un equipo independiente que ejecuta Windows 10 Enterprise c
   
 ### <a name="physical-computer"></a>Equipo físico
 
-En un equipo personal, instale Windows 10 Enterprise. Puede descargar la versión de prueba de Windows 10 Enterprise [aquí](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+En un equipo personal, instale Windows 10 Enterprise. Puede descargar una versión de evaluación de Windows 10 Enterprise.
+
+> [!NOTE]
+> El Centro de evaluación de Microsoft no está disponible temporalmente. Para acceder a esta descarga, consulte [Acceso a pruebas y kits para Windows (solución alternativa del Centro Eval).](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)<!-- 6049663 -->
+
 ### <a name="virtual-machine"></a>Máquina virtual
 
-Use el hipervisor que prefiera para crear una máquina virtual y, a continuación, instale Windows 10 Enterprise en ella. Puede descargar la versión de prueba de Windows 10 Enterprise [aquí](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+Use el hipervisor que prefiera para crear una máquina virtual y, a continuación, instale Windows 10 Enterprise en ella. Puede descargar una versión de evaluación de Windows 10 Enterprise.
+
+> [!NOTE]
+> El Centro de evaluación de Microsoft no está disponible temporalmente. Para acceder a esta descarga, consulte [Acceso a pruebas y kits para Windows (solución alternativa del Centro Eval).](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)<!-- 6049663 -->
+
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual de Azure
 
-Para crear una máquina virtual con Windows 10 en Microsoft Azure ***necesita tener una suscripción basada en Visual Studio***, que tiene acceso a la imagen de Windows 10 Enterprise. Otros tipos de suscripciones de Azure, como las suscripciones de prueba y suscripciones de pago, no tienen acceso a esta imagen. Para obtener la información más reciente, vea [Usar el cliente de Windows en Azure para escenarios de desarrollo y pruebas](/azure/virtual-machines/windows/client-images).
+Para crear una máquina virtual Windows 10 en Microsoft Azure, ***debe tener una suscripción basada en Visual Studio***, que tenga acceso a la imagen para Windows 10 Enterprise. Otros tipos de suscripciones de Azure, como las suscripciones de prueba y de pago, no tienen acceso a esta imagen. Para obtener la información más reciente, consulte [Uso de Windows cliente en Azure para escenarios de desarrollo y pruebas](/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](/powershell/azureps-cmdlets-docs/). Estos conjuntos de comandos crean una máquina virtual Windows 10 Enterprise denominada WIN10 y toda su infraestructura necesaria, incluido un grupo de recursos, una cuenta de almacenamiento y una red virtual. Si ya está familiarizado con los servicios de infraestructura de Azure, adapte estas instrucciones para que se adapten a la infraestructura implementada actualmente.
@@ -246,7 +253,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-A continuación, cree una nueva red virtual y la máquina virtual WIN10 con estos comandos. Cuando se le solicite, proporcione el nombre y la contraseña de la cuenta de administrador local para WIN10 y guárdelos en una ubicación segura.
+A continuación, cree una nueva red virtual y la máquina virtual WIN10 con estos comandos. Cuando se le solicite, proporcione el nombre y la contraseña de la cuenta de administrador local para WIN10 y almacene esta información en una ubicación segura.
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -278,47 +285,46 @@ Después de crear la máquina física o virtual con Windows 10 Enterprise, inici
 Después, una el equipo WIN10 al espacio empresarial de Azure AD de la suscripción de Microsoft 365 E5.
   
 1. En el escritorio del equipo WIN10, seleccione **Iniciar cuentas de > Configuración > > > Conectar profesional o educativa de Access**.
-    
+
 2. En el cuadro de diálogo **Configurar una cuenta profesional o educativa**, seleccione **Unir este dispositivo para Azure Active Directory**.
-    
+
 3. En **Cuenta profesional o educativa**, escriba el nombre de la cuenta de administrador global de la suscripción Microsoft 365 E5 y, a continuación, seleccione **Siguiente**.
-    
+
 4. En **Escribir contraseña**, escriba la contraseña de la cuenta de administrador global y, a continuación, seleccione **Iniciar sesión**.
-    
-5. Cuando se le pida que asegúrese de que esta es su organización, seleccione **Unirse** y, a continuación, seleccione **Listo**.
-    
+
+5. Cuando se le pida que asegúrese de que esta organización es suya, seleccione **Unirse** y, a continuación, seleccione **Listo**.
+
 6. Cierre la ventana de configuración.
-    
+
 A continuación, instale Aplicaciones Microsoft 365 para empresas en el equipo WIN10:
   
 1. Abra el explorador Microsoft Edge e inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de la cuenta de administrador global.
-    
+
 2. En la pestaña **Inicio de Microsoft Office**, seleccione **Instalar Office**.
-    
+
 3. Cuando se le pida qué hacer, seleccione **Ejecutar** y, a continuación, seleccione **Sí** en **Control de cuentas de usuario**.
-    
+
 4. Espere a que Office complete su instalación. Cuando vea **You're all set!**, seleccione **Cerrar** dos veces.
-    
+
 El entorno resultante tiene este aspecto:
 
 ![Fase 5 del entorno de prueba de Microsoft 3656 Enterprise.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Esto incluye el equipo WIN10 que tiene:
+Este entorno incluye el equipo WIN10 que tiene:
 
 - Se unió al espacio empresarial de Azure AD de su suscripción de Microsoft 365 E5.
 - Se inscribió como un dispositivo de Azure AD en Microsoft Intune (EMS).
 - Aplicaciones Microsoft 365 para empresas instalado.
   
-Ya está listo para experimentar con características adicionales de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise).
+Ya está listo para experimentar con más características de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise).
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
-Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
+Explore estos otros conjuntos de guías de laboratorio de pruebas:
   
 - [Identidad](m365-enterprise-test-lab-guides.md#identity)
 - [Administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [Protección de la información](m365-enterprise-test-lab-guides.md#information-protection)
-   
 
 ## <a name="see-also"></a>Vea también
 

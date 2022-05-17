@@ -24,14 +24,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada a su Microsoft 365 para la cuenta empresarial. '
-ms.openlocfilehash: 19303cb2c60455713595dbe23a23bae7e57efb71
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2951b5eef21748ace22bee50afb24f86123fa46a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780223"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437467"
 ---
-# <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
+# <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Agregar otro alias de correo electrónico para un usuario Microsoft 365 suscripción empresarial
   
 Este artículo está destinado a Microsoft 365 administradores que tienen suscripciones empresariales. No está dirigido a usuarios particulares.
   

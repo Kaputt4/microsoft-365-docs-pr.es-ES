@@ -14,22 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 30b2d2a7190ab8d79b4e80db389198026595cdd4
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: f290af2808db1aa56f39593ec4f9fac68c0f76d8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862486"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438825"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión, planes 1 y 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender para Empresas](/microsoft-365/security/defender-business/mdb-overview)
-
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 Responda rápidamente a los ataques detectados mediante el aislamiento de dispositivos o la recopilación de un paquete de investigación. Después de realizar acciones en los dispositivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 
@@ -48,13 +46,11 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 [![Imagen de las acciones de respuesta.](images/response-actions.png)](images/response-actions.png#lightbox)
 
 > [!IMPORTANT]
-> [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) incluye las siguientes acciones de respuesta manual:
+> El plan 1 y [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) de [Defender para punto de conexión](defender-endpoint-plan-1.md) incluyen solo las siguientes acciones de respuesta manual:
 > - Ejecutar examen de antivirus
 > - Aislar el dispositivo
 > - Detener y poner en cuarentena un archivo
-> - Adición de un indicador para bloquear o permitir un archivo
-
-> La suscripción debe incluir el plan 2 de Defender para punto de conexión para tener todas las acciones de respuesta descritas en este artículo.
+> - Agregue un indicador para bloquear o permitir un archivo La suscripción debe incluir el plan 2 de Defender para punto de conexión para tener todas las acciones de respuesta descritas en este artículo.
 
  Puede encontrar páginas de dispositivo desde cualquiera de las vistas siguientes:
 
@@ -64,7 +60,6 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
 > [!IMPORTANT]
->
 > - Estas acciones de respuesta solo están disponibles para dispositivos en Windows 10, versión 1703 o posterior, Windows 11, Windows Server 2019 y Windows Server 2022.
 > - En el caso de las plataformas que no son Windows, las funcionalidades de respuesta (como el aislamiento de dispositivos) dependen de las funcionalidades de terceros.
 > - Para los agentes de primera entidad de Microsoft, consulte el vínculo "más información" de cada característica para conocer los requisitos mínimos del sistema operativo.
@@ -100,7 +95,9 @@ Como parte del proceso de investigación o respuesta, puede recopilar un paquete
 Para descargar el paquete (archivo Zip) e investigar los eventos que se produjeron en un dispositivo
 
 1. Seleccione **Recopilar paquete de investigación** en la fila de acciones de respuesta en la parte superior de la página del dispositivo.
+
 2. Especifique en el cuadro de texto por qué desea realizar esta acción. Seleccione **Confirmar**.
+
 3. El archivo zip se descargará
 
 Forma alternativa:
@@ -115,15 +112,11 @@ Forma alternativa:
 
 El paquete contiene las siguientes carpetas:
 
-<br>
-
-****
-
 |Folder|Descripción|
 |---|---|
 |Autoruns|Contiene un conjunto de archivos que representan el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: El sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este archivo .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, vea [Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
-|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad con direcciones URL sospechosas, la infraestructura de comandos y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La caché arp puede revelar otros hosts en una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haberse usado para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la caché del solucionador de cliente DNS, que incluye ambas entradas precargadas desde el archivo hosts local y los registros de recursos obtenidos recientemente para las consultas de nombres resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico local.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, consulte [Configuración del firewall de Windows Defender con el registro de seguridad avanzada](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log).<div>|
+|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad con direcciones URL sospechosas, la infraestructura de comandos y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La caché arp puede revelar otros hosts en una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haberse usado para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la caché del solucionador de cliente DNS, que incluye ambas entradas precargadas desde el archivo hosts local y los registros de recursos obtenidos recientemente para las consultas de nombres resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico local.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, consulte [Configuración de la Firewall de Windows Defender con el registro de seguridad avanzada](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log).<div>|
 |Archivos de captura previa|Windows archivos de captura previa están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haberse eliminado, pero que todavía se pueden encontrar en la lista de archivos de captura previa. <ul><li>Carpeta de captura previa: contiene una copia de los archivos de captura previa de `%SystemRoot%\Prefetch`. NOTA: Se recomienda descargar un visor de archivos de captura previa para ver los archivos de captura previa.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento de si se produjo algún error de copia en la carpeta de captura previa.</li></ul>|
 |Procesos|Contiene un archivo .CSV que enumera los procesos en ejecución y proporciona la capacidad de identificar los procesos actuales que se ejecutan en el dispositivo. Esto puede ser útil al identificar un proceso sospechoso y su estado.|
 |Tareas programadas|Contiene un archivo .CSV que enumera las tareas programadas, que se pueden usar para identificar las rutinas realizadas automáticamente en un dispositivo elegido para buscar código sospechoso que se estableció para ejecutarse automáticamente.|
@@ -141,9 +134,9 @@ El paquete contiene las siguientes carpetas:
 
 Como parte del proceso de investigación o respuesta, puede iniciar de forma remota un examen antivirus para ayudar a identificar y corregir el malware que podría estar presente en un dispositivo en peligro.
 
->[!IMPORTANT]
->- Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
->- Un examen de Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si El antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [compatibilidad Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> [!IMPORTANT]
+> - Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
+> - Un examen de Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si El antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [compatibilidad Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Una vez que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
@@ -153,9 +146,7 @@ El Centro de acciones mostrará la información de examen y la escala de tiempo 
 
 > [!NOTE]
 > Al desencadenar un examen mediante la acción de respuesta de Defender para punto de conexión, el valor "ScanAvgCPULoadFactor" del antivirus de Microsoft Defender sigue aplicando y limita el impacto de la CPU del examen.
->
 > Si ScanAvgCPULoadFactor no está configurado, el valor predeterminado es un límite del 50 % de carga máxima de CPU durante un examen.
->
 > Para obtener más información, consulte [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## <a name="restrict-app-execution"></a>Restringir ejecución de aplicación
@@ -189,11 +180,11 @@ Cuando una aplicación está restringida, se muestra la siguiente notificación 
 
 En función de la gravedad del ataque y de la confidencialidad del dispositivo, es posible que desee aislar el dispositivo de la red. Esta acción puede ayudar a evitar que el atacante controle el dispositivo en peligro y realice otras actividades, como la filtración de datos y el movimiento lateral.
 
->[!IMPORTANT]
->- Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
->- El aislamiento completo está disponible para dispositivos en Windows 10, versión 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
->- El aislamiento selectivo está disponible para los dispositivos en Windows 10, versión 1709 o posterior y Windows 11.
->- Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
+> [!IMPORTANT]
+> - Actualmente no se admite el aislamiento de dispositivos de la red para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
+> - El aislamiento completo está disponible para dispositivos en Windows 10, versión 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
+> - El aislamiento selectivo está disponible para los dispositivos en Windows 10, versión 1709 o posterior y Windows 11.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivo desconecta el dispositivo en peligro de la red mientras conserva la conectividad con el servicio Defender para punto de conexión, que sigue supervisando el dispositivo.
 

@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: c1248c7192c9bd085938ae6436589a4445dd8ee8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302296"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437969"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -65,7 +65,7 @@ Para crear y configurar directivas contra correo no deseado, consulte [Configura
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbral de correo electrónico masivo & propiedades de correo no deseado**|||||
-|**Umbral de correo electrónico masivo** <br/><br/> _BulkThreshold_|7 |6 |4|Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
+|**Umbral de correo electrónico masivo** <br/><br/> _BulkThreshold_|7 |6 |4 |Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Esta configuración solo está disponible en PowerShell.|
 |**Aumentar la configuración de puntuación de correo no deseado**|Desactivado|Desactivado|Desactivado|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
 |**Marcar como configuración de correo no deseado**|Desactivado|Desactivado|Desactivado|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
@@ -120,7 +120,7 @@ Para obtener más información sobre los límites de envío predeterminados en e
 > [!NOTE]
 > Las directivas de correo no deseado saliente no forman parte de las directivas de seguridad preestablecidas Estándar o Estricta. Los valores **Estándar** y **Estricto** indican nuestros valores **recomendados** en la directiva de correo no deseado saliente predeterminada o en las directivas de correo no deseado de salida personalizadas que cree.
 
-|Nombre de la característica de seguridad|Predeterminado|Recomendado<br/>Estándar|Recomendado<br/>Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Recomendado<br/>Estándar|Recomendado<br/>Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Establecimiento de un límite de mensajes externos** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
 |**Establecimiento de un límite de mensajes interno** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
@@ -172,8 +172,8 @@ La configuración de suplantación de identidad está relacionada entre sí, per
 |**Acciones**|||||
 |**Si el mensaje se detecta como suplantación de identidad** <br/><br/> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|Esta configuración se aplica a los remitentes suplantados que se bloquearon automáticamente como se muestra en la [información de inteligencia sobre suplantación de identidad](learn-about-spoof-intelligence.md) o que se bloquearon manualmente en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). <br/><br/> Si selecciona **Poner en cuarentena el mensaje**, hay disponible un cuadro **Aplicar directiva de cuarentena** para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer en los mensajes que se ponen en cuarentena como suplantación de identidad. Al crear una nueva directiva contra suplantación de identidad (phishing), un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las funcionalidades históricas de los mensajes que se pusieron en cuarentena como suplantación de identidad (DefaultFullAccessPolicy). <br/><br/> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definan funcionalidades más restrictivas o menos restrictivas para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Mostrar el primer consejo de seguridad de contacto** <br/><br/> _EnableFirstContactSafetyTips_|No seleccionada <br/><br/> `$false`|No seleccionada <br/><br/> `$false`|No seleccionada <br/><br/> `$false`|Para obtener más información, consulte [Primer contacto consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Mostrar (?) para remitentes no autenticados para suplantación de identidad** <br/><br/> _EnableUnauthenticatedSender_|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Remitente no autenticado](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Mostrar etiqueta "via"** <br/><br/> _EnableViaTag_|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección From si es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** . <br/><br/> Para obtener más información, vea [Remitente no autenticado](set-up-anti-phishing-policies.md#unauthenticated-sender).|
+|**Mostrar (?) para remitentes no autenticados para suplantación de identidad** <br/><br/> _EnableUnauthenticatedSender_|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, consulte [Indicadores de remitente no autenticados](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**Mostrar etiqueta "via"** <br/><br/> _EnableViaTag_|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Seleccionado <br/><br/> `$true`|Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección From si es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** . <br/><br/> Para obtener más información, consulte [Indicadores de remitente no autenticados](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>seguridad de Microsoft Defender para Office 365
 
@@ -288,7 +288,7 @@ En PowerShell, se usa el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchan
 |Nombre de la característica de seguridad|Predeterminado|Protección integrada|Comentario|
 |---|:---:|:---:|---|
 |**Bloquear las siguientes direcciones URL** <br/><br/> _ExcludedUrls_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|No tenemos ninguna recomendación específica para esta configuración. <br/><br/> Para obtener más información, consulte [la lista "Bloquear las siguientes direcciones URL" para Caja fuerte Vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
-|**Uso de vínculos de Caja fuerte en aplicaciones de Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos de Caja fuerte en aplicaciones de escritorio y dispositivos móviles (iOS y Android) compatibles con Office 365. Para obtener más información, consulte [configuración de vínculos de Caja fuerte para aplicaciones de Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Uso de vínculos de Caja fuerte en aplicaciones de Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos de Caja fuerte en aplicaciones compatibles Office 365 de escritorio y móviles (iOS y Android). Para obtener más información, consulte [configuración de vínculos de Caja fuerte para aplicaciones de Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
 |**No realizar un seguimiento cuando los usuarios hacen clic en vínculos protegidos en Office 365 aplicaciones** <br/><br/> _TrackClicks_|Activada <br/><br/> `$false`|Desactivada <br/><br/> `$true`|Al desactivar esta configuración (establecer _TrackClicks_ `$true`en ) se realiza un seguimiento de los clics del usuario en las aplicaciones Office 365 admitidas.|
 |**No permitir que los usuarios hagan clic en la dirección URL original en Office 365 aplicaciones** <br/><br/> _AllowClickThrough_|Activado <br/><br/> `$false`|Activado <br/><br/> `$false`|Al activar esta configuración (establecer _AllowClickThrough_ `$false`en ) se impide hacer clic en la dirección URL original en las aplicaciones Office 365 admitidas.|
 

@@ -18,13 +18,13 @@ ms.technology: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.date: 05/16/2022
+ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787718"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438107"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Descripción y uso de funcionalidades de reducción de superficie expuesta a ataques
 
@@ -32,9 +32,9 @@ ms.locfileid: "64787718"
 
 **Se aplica a:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus de Microsoft Defender
 
 **Plataformas**
@@ -69,9 +69,9 @@ Para configurar la reducción de la superficie expuesta a ataques en el entorno,
 
 7. Configure el firewall de red.
 
-   1. Obtenga información general sobre [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Use la [guía de diseño Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) para decidir cómo desea diseñar las directivas de firewall.
-   3. Use la [guía de implementación Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) para configurar el firewall de su organización con seguridad avanzada.
+   1. Obtenga información general sobre [Firewall de Windows Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use la [guía de diseño de Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) para decidir cómo desea diseñar las directivas de firewall.
+   3. Use la [guía de implementación de Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) para configurar el firewall de su organización con seguridad avanzada.
 
 > [!TIP]
 > En la mayoría de los casos, al configurar funcionalidades de reducción de superficie expuesta a ataques, puede elegir entre varios métodos:
@@ -105,7 +105,7 @@ Puede habilitar el modo de auditoría mediante directiva de grupo, PowerShell y 
 > También puede visitar el sitio web Windows Defender Testground en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las características funcionan y ver cómo funcionan.
 
 > [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 | Opciones de auditoría | Habilitación del modo de auditoría | Visualización de eventos |
 |---|---|---|
@@ -170,7 +170,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
    > [!div class="mx-imgBorder"]
    > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos.](images/events-create.gif)
 
-3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente**. Verá una advertencia que indica que no puede editar la consulta mediante la pestaña **Filtro** si usa la opción XML. Seleccione **Sí**.
+3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente**. Verá una advertencia que indica que no puede editar la consulta mediante la pestaña **Filtro** si usa la opción XML. Haga clic en **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
@@ -247,11 +247,11 @@ Puede acceder a estos eventos en Windows Visor de eventos:
 
 |Característica|Proveedor u origen|Id. de evento|Descripción|
 |---|---|:---:|---|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1|Auditoría de ACG|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1 |Auditoría de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4|No permitir procesos secundarios de bloqueo|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5|Bloquear auditoría de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5 |Bloquear auditoría de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
@@ -259,9 +259,9 @@ Puede acceder a estos eventos en Windows Visor de eventos:
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|10|Deshabilitar bloqueo de llamadas del sistema de Win32k|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|11|Auditoría de protección de integridad de código|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|12 |Bloque de protección de integridad de código|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13|Auditoría de EAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|14 |Aplicación de EAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|15 |Auditoría de EAF+|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13 |Auditoría de EAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|14|Aplicación de EAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|15|Auditoría de EAF+|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|16|Aplicación de EAF+|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|17 |Auditoría de IAF|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|18 |Aplicación de IAF|
@@ -271,7 +271,7 @@ Puede acceder a estos eventos en Windows Visor de eventos:
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|22|Aplicación de ROP CallerCheck|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|23|Auditoría de ROP SimExec|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|24|Aplicación de ROP SimExec|
-|Protección contra vulnerabilidades de seguridad|Diagnósticos WER|5|Bloque CFG|
+|Protección contra vulnerabilidades de seguridad|Diagnósticos WER|5 |Bloque CFG|
 |Protección contra vulnerabilidades de seguridad|Win32K (operativo)|260|Fuente que no es de confianza|
 |Protección de red|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
 |Protección de red|Windows Defender (operativo)|1125|Evento cuando se activa la protección de red en modo de auditoría|

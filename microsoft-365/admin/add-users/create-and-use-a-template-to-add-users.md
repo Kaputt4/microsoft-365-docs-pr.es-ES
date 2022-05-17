@@ -19,32 +19,32 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios.
-ms.openlocfilehash: cacb3fc6ef2a145cbfe4c4131b2e5e38eca2c257
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 0f0d737bcf600acb4084c5e2b85e5595c6387fee
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161851"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436999"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
-Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios. Las plantillas son especialmente útiles si tiene usuarios que comparten muchas propiedades comunes, como los que tienen el mismo rol y trabajan en la misma ubicación y los que requieren el mismo software. Por ejemplo, es posible que tenga un equipo de ingenieros de soporte técnico que trabajen en la misma oficina.  
+Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios. Las plantillas son especialmente útiles si tiene usuarios que comparten muchas propiedades comunes, como las que tienen el mismo rol y trabajan en la misma ubicación y las que requieren el mismo software. Por ejemplo, es posible que tenga un equipo de ingenieros de soporte técnico que trabajen en la misma oficina.  
 
 ## <a name="create-a-template"></a>Creación de una plantilla
 
-Las plantillas son fáciles de crear, puede seleccionar Usuarios Usuarios activos Plantillas de usuario y, a continuación, seleccionar Agregar una plantilla de la lista desplegable, o puede agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como &mdash;   >    >  plantilla. 
+Las plantillas son fáciles de crear&mdash; Puede seleccionar **UsuariosUsuarios** >  activos  > **Plantillas** de usuario y, a continuación, seleccione **Agregar una plantilla** en la lista desplegable, o bien puede agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como plantilla.
 
 Al crear una plantilla después de agregar un usuario, los valores que elija para la siguiente configuración se guardan en la plantilla:
 
 - Nombre de dominio
-- Opción de configuración de contraseña: puede elegir crear contraseñas o generarlas automáticamente
-- Opción de contraseña única: puede requerir que el usuario cree una nueva contraseña después del primer inicio de sesión
+- Opción de configuración de contraseña: puede elegir crear contraseñas o generarlas automáticamente.
+- Elección de contraseña única: puede requerir que el usuario cree una nueva contraseña después del primer inicio de sesión
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
 - Rol
-- La mayoría de la información de perfil, como **Perfil** de trabajo, **Departamento**, **Office**, **Office teléfono** y Dirección de **la calle** 
+- La mayoría de la información de perfil, como **perfil de trabajo**, **departamento**, **Office**, **teléfono Office** y **dirección de calle** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:
 
@@ -54,42 +54,42 @@ La siguiente información es específica del usuario y no se guarda en la planti
 - Elección para enviar la contraseña por correo electrónico y a quién se envía el correo electrónico de contraseña
 - Número de teléfono móvil
 
-Si decide no especificar información para una configuración dentro de una sección, ese valor estará en blanco y esa configuración no se mostrará en la plantilla. Por ejemplo, si deja **el** título de trabajo en blanco, al revisar la plantilla y al usar la **plantilla,** el título del trabajo no aparecerá en absoluto. Si dejas en blanco toda la **configuración de** la sección Perfil, la sección **Perfil** mostrará **Ninguno proporcionado** en la plantilla final.
+Si decide no escribir información para una configuración dentro de una sección, ese valor estará en blanco y esa configuración no se mostrará en la plantilla. Por ejemplo, si deja el **título del trabajo** en blanco, al revisar la plantilla y al usar la plantilla, el **título del trabajo** no aparecerá en absoluto. Si deja en blanco toda la configuración de la sección **Perfil** , la sección **Perfil** mostrará **Ninguno proporcionado** en la plantilla final.
 
-Al crear una plantilla seleccionando la **opción Agregar una** plantilla, puede elegir los valores que desea completar. Todo lo que se deja en blanco aparecerá **como Ninguno proporcionado** en la plantilla.
+Al crear una plantilla seleccionando la opción **Agregar una plantilla** , puede elegir qué valores completar. Todo lo que se deje en blanco aparecerá como **Ninguno proporcionado** en la plantilla.
 
-## <a name="use-a-template-to-add-a-user"></a>Usar una plantilla para agregar un usuario
+## <a name="use-a-template-to-add-a-user"></a>Uso de una plantilla para agregar un usuario
 
 Para usar una plantilla existente para agregar un usuario:
 
-1. En el Centro de administración, seleccione **Usuarios**  >  **usuarios activos.**
+1. En el Centro de administración, seleccione **UsuariosUsuarios** >  **activos**.
 
-2. Seleccione **Plantillas de usuario** y, a continuación, seleccione una plantilla en la lista desplegable. (La lista solo contendrá las plantillas que haya creado, no las creadas por otros administradores).
+2. Seleccione **Plantillas de usuario** y, a continuación, seleccione una plantilla en la lista desplegable. (La lista contendrá solo las plantillas que creó, no las creadas por otros administradores).
 
    > [!NOTE]
-   > También puede usar una plantilla para agregar un usuario seleccionando Plantillas de usuario Administrar plantillas, seleccionando una plantilla y, a continuación,  >   **seleccionando Usar plantilla**.
+   > También puede usar una plantilla para agregar un usuario seleccionando **Plantillas** >  de **usuarioAdministrar plantillas**, seleccionando una plantilla y, a continuación, seleccionando **Usar plantilla**.
 
 3. Siga los pasos para crear un usuario a partir de la plantilla seleccionada.
 
    > [!NOTE]
-   > Si no dispone de licencias suficientes para un usuario que agregue y la información de pago esté disponible, intentaremos comprar otra licencia con la información de pago existente. Si la información de pago no está disponible, el usuario se creará como un usuario sin licencia.
+   > Si no tiene suficientes licencias disponibles para un usuario que agregue y su información de pago está disponible, intentaremos comprar otra licencia con su información de pago existente. Si la información de pago no está disponible, el usuario se creará como un usuario sin licencia.
 
 ## <a name="manage-templates"></a>Administrar plantillas
 
 Solo puede eliminar plantillas que ya no necesite y agregar otras nuevas. Para eliminar una plantilla:
 
-1. En el Centro de administración, seleccione **Usuarios**  >  **usuarios activos.**
+1. En el Centro de administración, seleccione **UsuariosUsuarios** >  **activos**.
 
-2. Seleccione **Plantillas** y, a continuación, **seleccione Administrar plantillas** en la lista desplegable.
+2. Seleccione **Plantillas** y, a continuación, seleccione **Administrar plantillas** en la lista desplegable.
 
-3. Aparecerá una lista de plantillas. Puede eliminar una plantilla mediante cualquiera de las acciones siguientes:
-    - Seleccione una o más plantillas y, a continuación, **seleccione Eliminar**. 
-    - Seleccione los tres puntos a la derecha del nombre de la plantilla y, a continuación, **seleccione Eliminar**.
-    - Seleccione el nombre de la plantilla. Cuando aparezcan los detalles de la plantilla en el lado derecho de la pantalla, seleccione **Eliminar plantilla**.
+3. Aparecerá una lista de plantillas. Puede eliminar una plantilla mediante cualquiera de las siguientes acciones:
+    - Seleccione una o más plantillas y, a continuación, seleccione **Eliminar**. 
+    - Seleccione los tres puntos situados a la derecha del nombre de la plantilla y, a continuación, seleccione **Eliminar**.
+    - Seleccione el nombre de la plantilla. Cuando los detalles de la plantilla aparezcan en el lado derecho de la pantalla, seleccione **Eliminar plantilla**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Agregar usuarios y asignar licencias al mismo tiempo](add-users.md)
 
-[Quitar un antiguo empleado de Microsoft 365](remove-former-employee.md)
+[Eliminación de un antiguo empleado de Microsoft 365](remove-former-employee.md)
   

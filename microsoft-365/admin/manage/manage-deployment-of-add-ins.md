@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos en usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 2dfd92e2dd38487a444362cdbb88ec217e62ca28
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093732"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437533"
 ---
-# <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
+# <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Implementación de complementos en el Centro de administración de Microsoft 365
 
 Office Complementos le ayudan a personalizar los documentos y a simplificar la forma en que accede a la información en la web (consulte [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Como administrador, puede implementar complementos de Office para los usuarios de su organización mediante la característica Implementación centralizada en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. La implementación centralizada es la manera recomendada y más rica en características para que la mayoría de los administradores implementen complementos en usuarios y grupos dentro de una organización.
 

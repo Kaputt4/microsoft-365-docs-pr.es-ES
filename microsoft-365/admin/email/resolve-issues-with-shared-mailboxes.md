@@ -22,34 +22,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Es posible que reciba errores al configurar buzones compartidos. Pruebe estas soluciones si tiene problemas con buzones compartidos.
-ms.openlocfilehash: 2be12810e6651da5b062afbd0a3437913b9a4d60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Es posible que se produzcan errores al configurar buzones compartidos. Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
+ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164877"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437115"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
 Si ve mensajes de error al crear o usar un buzón compartido, pruebe estas posibles soluciones. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Error al crear buzones compartidos
-<a name="bkmk_Fix"> </a>
 
-Si ve el mensaje de error, la dirección proxy "smtp:<nombre de buzón compartido" ya está siendo usada por las direcciones proxy o **\> LegacyExchangeDN de " \<name> ". Elija otra dirección de proxy,** significa que está intentando dar al buzón compartido un nombre que ya está en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Hay dos formas de hacerlo:
+Si ve el mensaje de error, **las direcciones proxy o LegacyExchangeDN de "\<name>" ya usan la dirección de proxy "smtp:<nombre\> de buzón compartido". Elija otra dirección de proxy**, lo que significa que está intentando asignar al buzón compartido un nombre que ya esté en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Hay dos formas de hacerlo:
 
-  - Use Windows PowerShell. Vea esta entrada de blog para obtener instrucciones: [Crear buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Use Windows PowerShell. Consulte esta entrada de blog para obtener instrucciones: [Creación de buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Asigne al segundo buzón compartido un nombre diferente del inicio para evitar el error. A continuación, en el Centro de administración, cambie el nombre del buzón compartido a lo que desea que sea.
+  - Asigne al segundo buzón compartido un nombre diferente del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que quiera que sea.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Error sobre no tener permisos de envío al usar un buzón compartido
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Error al no tener permisos de envío al usar un buzón compartido
 
-Si creó un buzón compartido y, a continuación, intenta enviar un mensaje desde él, puede obtener esto:
+Si ha creado un buzón compartido y, a continuación, intenta enviar un mensaje desde él, puede obtener lo siguiente:
 
 **No se pudo enviar este mensaje. No tiene permiso para enviar el mensaje en nombre del usuario especificado.**
 
-Este mensaje aparece cuando Microsoft 365 está experimentando un problema de latencia de replicación. Debería desaparecer en una hora aproximadamente, cuando la información sobre el nuevo buzón compartido (o usuario agregado) se replique en todos nuestros centros de datos. Espere una hora y vuelva a intentar enviar un mensaje.
+Este mensaje aparece cuando Microsoft 365 experimenta un problema de latencia de replicación. Debería desaparecer en una hora aproximadamente, cuando la información sobre el nuevo buzón compartido (o el usuario agregado) se replica en todos nuestros centros de datos. Espere una hora e inténtelo de nuevo para enviar un mensaje.
 
 ## <a name="related-content"></a>Contenido relacionado
 
@@ -58,7 +57,3 @@ Este mensaje aparece cuando Microsoft 365 está experimentando un problema de la
 [Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)\
 [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)\
 [Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
-
-
-    
-

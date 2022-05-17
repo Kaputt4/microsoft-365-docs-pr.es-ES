@@ -13,23 +13,23 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Administrar dispositivos iOS en Basic Mobility and Security.
-ms.openlocfilehash: 99aa909bf9adab1464ad3858cfac4a04cc541609
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Para administrar iOS dispositivos como iPads y iPhone en Basic Mobility and Security, empiece por crear un certificado APNs.
+ms.openlocfilehash: 8bcbcdeac9f1cadd945c3f7c44e9192d57db7c82
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781169"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435797"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Crear certificados de APN para dispositivos iOS
 
-Para administrar dispositivos iOS como iPads y iPhone en Basic Mobility and Security, cree un certificado APNs.
+Para administrar iOS dispositivos como iPads y iPhone en Basic Mobility and Security, cree un certificado APNs.
 
 1. Inicie sesión en Microsoft 365 con su cuenta de administrador global.
 
 2. En el explorador, escriba <https://protection.office.com/>.
 
-3. Seleccione **Prevención de pérdida de** \> datos **Administración de** dispositivos y elija **Certificado de APNs para dispositivos iOS**.
+3. Seleccione **Data loss prevention** **Device management (Administración de** dispositivos de prevención \> de pérdida de datos) y elija **APNs Certificate for iOS devices (Certificado de APNs para dispositivos iOS**).
 
 4. En la página Configuración certificado de notificación push de Apple, elija **Siguiente**.
 

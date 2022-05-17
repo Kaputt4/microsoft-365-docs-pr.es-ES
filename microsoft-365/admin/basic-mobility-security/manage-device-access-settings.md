@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Basic Mobility and Security puede ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 96deda323c6dedcae860811a1e538aaa0bffa25d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: En el caso de los dispositivos que no se pueden administrar con Basic Mobility and Security, debe bloquear Exchange ActiveSync acceso de la aplicación a Microsoft 365 correo electrónico.
+ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414852"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435841"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administración de la configuración de acceso a dispositivos en Basic Mobility and Security
 

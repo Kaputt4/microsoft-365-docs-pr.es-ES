@@ -24,36 +24,36 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: En un plazo de 30 días después de eliminar una cuenta de usuario, puede restaurar la cuenta y todos los datos, y el usuario puede iniciar sesión con la misma cuenta.
-ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 2f9a28e5000c1ba826b5458916f30c3e8a438253
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074491"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436215"
 ---
-# <a name="restore-a-user"></a>Restaurar un usuario
+# <a name="restore-a-user-in-the-microsoft-365-admin-center"></a>Restauración de un usuario en el Centro de administración de Microsoft 365
    
 Al restaurar una cuenta de usuario en un plazo de 30 días después de eliminarla, se restaurará la cuenta y todos los datos asociados. El usuario podrá iniciar sesión con la misma cuenta profesional o educativa. Su buzón se restaurará por completo. Para conocer cuánto falta para que una cuenta de usuario específica ya no se pueda restaurar, [póngase en contacto con nosotros](../../business-video/get-help-support.md).
   
 Aquí tiene un par de sugerencias:
   
-- Asegúrese de que las licencias están disponibles para asignar a la cuenta.
+- Asegúrese de que las licencias están disponibles para asignarlas a la cuenta.
     
-- Si su empresa usa Active Directory, para obtener instrucciones sobre cómo restaurar una cuenta de usuario, vea [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- Si su empresa usa Active Directory, para obtener instrucciones sobre cómo restaurar una cuenta de usuario, consulte [Solución de problemas de cuentas de usuario eliminadas en Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurar una o más cuentas de usuario
 
-Debe ser un administrador Microsoft 365 global o administrador de administración de usuarios para realizar estos pasos. 
+Debe ser Microsoft 365 administrador global o administrador de administración de usuarios para realizar estos pasos. 
 
-1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
 
-2. En la **página Usuarios eliminados,** seleccione los nombres de los usuarios que desea restaurar y, a continuación, **seleccione Restaurar**.
+2. En la página **Usuarios eliminados** , seleccione los nombres de los usuarios que desea restaurar y, a continuación, seleccione **Restaurar**.
     
 3. Siga las indicaciones para establecer su contraseña y, a continuación, seleccione **Restaurar**.
     
-4. Si el usuario se restaura correctamente, seleccione **Enviar correo electrónico y cierre**. Si se produce un conflicto de nombres o un conflicto de direcciones de proxy, vea las instrucciones a continuación sobre cómo restaurar esas cuentas.
+4. Si el usuario se ha restaurado correctamente, seleccione **Enviar correo electrónico y cerrar**. Si se produce un conflicto de nombres o un conflicto de direcciones de proxy, vea las instrucciones a continuación sobre cómo restaurar esas cuentas.
     
-Después de restaurar un usuario, asegúrate de notificarles que su contraseña cambió y sigues con ellos.
+Después de restaurar un usuario, asegúrese de notificarle que ha cambiado la contraseña y de realizar un seguimiento con ellos.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Restaurar un usuario con un conflicto de nombre de usuario
 
@@ -61,9 +61,9 @@ Se produce un conflicto de nombres de usuario al eliminar una cuenta de usuario,
   
 Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a restaurar. También puede asignar otro nombre de usuario a la cuenta que vaya a restaurar, de modo que no haya dos cuentas con el mismo nombre de usuario. Siga estos pasos.
 
-1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
   
-2. En la **página Usuarios eliminados,** seleccione los nombres de los usuarios que desea restaurar y, a continuación, **seleccione Restaurar**.
+2. En la página **Usuarios eliminados** , seleccione los nombres de los usuarios que desea restaurar y, a continuación, seleccione **Restaurar**.
     
     > [!NOTE]
     > Si se produce un error al restaurar dos o más usuarios, un mensaje de error le advierte sobre ello. Vea el registro para comprobar qué usuarios no se restauraron y, después, restaure las cuentas en las que se haya producido el error de una en una. 
@@ -82,13 +82,13 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 Se produce un conflicto de direcciones de proxy al eliminar una cuenta de usuario que contiene una dirección de proxy, asignar la misma dirección de proxy a otra cuenta y, después, intentar restaurar la cuenta eliminada. Siga los pasos que se indican a continuación para solucionar este problema.
   
-Debe tener permisos [de administrador en](about-admin-roles.md) Microsoft 365 para ello. 
+Para ello, debe tener [permisos de administrador](about-admin-roles.md) en Microsoft 365. 
 
-1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
 
 2. En la página **Usuarios eliminados**, seleccione los usuarios que quiere restaurar y luego seleccione **Restaurar**. 
     
-3. En la **página Restaurar,** siga las instrucciones para establecer la contraseña y seleccione **Restaurar**. Las direcciones del proxy que estén en conflicto se eliminan automáticamente del usuario que vaya a restaurar.
+3. En la página **Restaurar** , siga las instrucciones para establecer la contraseña y seleccione **Restaurar**. Las direcciones del proxy que estén en conflicto se eliminan automáticamente del usuario que vaya a restaurar.
     
 4. Después de revisar los resultados, seleccione **Cerrar**.
 
@@ -96,4 +96,4 @@ Debe tener permisos [de administrador en](about-admin-roles.md) Microsoft 365 pa
 
 [Eliminar un usuario](delete-a-user.md) (artículo)\
 [Asignar roles de administrador](assign-admin-roles.md) (vídeo)\
-[Asignar licencias a usuarios](../manage/assign-licenses-to-users.md) (artículo)
+[Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md) (artículo)

@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Basic Mobility and Security forman parte de los planes de Microsoft 365.
-ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Basic Mobility and Security forma parte de los planes de Microsoft 365, mientras que Microsoft Intune es un producto independiente incluido con determinados planes de Microsoft 365.
+ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781191"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435775"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elija entre Basic Mobility and Security o Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "64781191"
 
 La movilidad básica y la seguridad y Intune se incluyen en una variedad de planes, que se describen en la tabla siguiente.
 
-| Plan | Movilidad y seguridad básicas | Microsoft Intune |
+| Planear | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|
 |Aplicaciones de Microsoft 365|Sí|No|
 |Microsoft 365 Empresa Básico|Sí|No|
@@ -67,8 +67,8 @@ Microsoft Intune y basic mobility and security integrados le ofrecen la capacida
 
 | Área de característica | Resaltados de características | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Tipos de dispositivo|Administración de distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, sistema operativo iPad|
-|Cumplimiento de dispositivos|Establezca y administre directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones en dispositivos Android. Consulte [los detalles](capabilities.md). |Sí|
+|Tipos de dispositivo|Administración de distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android samsung KNOX<br/>mac OS, sistema operativo iPad|
+|Cumplimiento de dispositivos|Establezca y administre directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones en Android dispositivos. Consulte [los detalles](capabilities.md). |Sí|
 |Acceso condicional basado en el cumplimiento del dispositivo |Impedir que los dispositivos no conformes accedan al correo electrónico corporativo y a los datos desde la nube. |No se admite en Windows 10.<br/>Limitado a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
 |Configuración de dispositivos  |Configurar la configuración del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de configuraciones.|Sí|
 |Perfiles de correo electrónico  |Aprovisione un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|
@@ -92,7 +92,7 @@ Con Intune tiene el siguiente conjunto de acciones:
 - [Inicio nuevo](/mem/intune/remote-actions/device-fresh-start) (solo Windows)
 - [Examen completo](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
 - [Buscar dispositivo](/mem/intune/remote-actions/device-locate) (solo para iOS)
-- [Modo perdido](/mem/intune/remote-actions/device-lost-mode) (solo iOS): [examen rápido](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
+- [Modo perdido](/mem/intune/remote-actions/device-lost-mode) (solo iOS) - [Examen rápido](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
 - [Control remoto en Android](/mem/intune/remote-actions/teamviewer-support)
 - [Bloqueo remoto](/mem/intune/remote-actions/device-remote-lock)
 - [Cambiar el nombre del dispositivo](/mem/intune/remote-actions/device-rename)

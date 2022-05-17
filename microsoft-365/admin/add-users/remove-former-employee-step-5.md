@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga los pasos de este artículo para proporcionar a otro empleado acceso a los datos de OneDrive y Outlook del empleado anterior.
-ms.openlocfilehash: c710826d0403c6935127f14dade3dfe30a8b5c13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Siga los pasos de este artículo para acceder a los datos de OneDrive y Outlook de un empleado anterior, realizar una copia de seguridad de ellos y elegir si desea conceder acceso a otro empleado.
+ms.openlocfilehash: 2ec2b2418fd5ca287c51950c23e403168d09f48f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129208"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436567"
 ---
 # <a name="step-5---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 5: Dar a otro empleado acceso a datos de OneDrive y Outlook
 
@@ -77,7 +77,7 @@ También puede conceder acceso a otro usuario para acceder a la OneDrive de un e
 
 9. Agregue el usuario a **los administradores de la colección de sitios** y seleccione **Aceptar**.
 
-10. Ahora, el usuario podrá acceder al OneDrive del empleado anterior mediante la dirección URL de OneDrive. Para obtener más información, consulte [Acerca de las direcciones URL de OneDrive](/onedrive/list-onedrive-urls#about-onedrive-urls).
+10. Ahora, el usuario podrá acceder al OneDrive del empleado anterior mediante la dirección URL de OneDrive. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocar el acceso de administrador a la OneDrive de un usuario
 

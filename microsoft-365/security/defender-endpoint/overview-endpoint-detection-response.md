@@ -1,8 +1,8 @@
 ---
-title: Información general sobre detección y respuesta de puntos de conexión funcionalidades
+title: Introducción a las funcionalidades de detección y respuesta de puntos de conexión
 ms.reviewer: ''
-description: Obtenga información sobre las detección y respuesta de puntos de conexión de Microsoft Defender para endpoint
-keywords: Microsoft Defender para endpoint, detección y respuesta de puntos de conexión, response, detection, cybersecurity, protection
+description: Obtenga información sobre las funcionalidades de detección y respuesta de puntos de conexión en Microsoft Defender para punto de conexión
+keywords: Microsoft Defender para punto de conexión, detección y respuesta de puntos de conexión, respuesta, detección, ciberseguridad, protección
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,31 +15,35 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf09e20b0f11713152070b12c30efc4820d6678c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 78f05c9e366d2f8b4d5b4d7697961f0d702581f8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167759"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438536"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Introducción a la EDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión, planes 1 y 2](defender-endpoint-plan-1-2.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
+Las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión proporcionan detecciones avanzadas de ataques casi en tiempo real y accionables. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
 
 Cuando se detecta una amenaza, se crean alertas en el sistema para que un analista la investigue. Las alertas con las mismas técnicas de ataque o atribuidas al mismo atacante se agregan a una entidad denominada _incidente_. Agregar alertas de esta manera permite a los analistas investigar y responder de forma colectiva a las amenazas con facilidad.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
 
-Inspirada en la mentalidad de "asumir vulneración", Defender for Endpoint recopila continuamente la telemetría cibernética de comportamiento. Esto incluye la información de procesos, las actividades de red, ópticas produndas en el kernel y el administrador de memoria, las actividades de inicio de sesión de usuario, los cambios en el registro y el sistema de archivos, entre otros. La información se almacena durante seis meses, lo que permite que un analista se desplace hacia el tiempo de inicio de un ataque. El analista puede dinamizar varias vistas y enfocar una investigación a través de varios vectores.
+> [!IMPORTANT]
+> El plan 1 y [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) de [Defender para punto de conexión](defender-endpoint-plan-1.md) incluyen solo las siguientes acciones de respuesta manual:
+> - Ejecutar examen de antivirus
+> - Aislar el dispositivo
+> - Detener y poner en cuarentena un archivo
+> - Adición de un indicador para bloquear o permitir un archivo
+
+Inspirado en la mentalidad de "suponer vulneración", Defender para punto de conexión recopila continuamente la telemetría cibernética del comportamiento. Esto incluye la información de procesos, las actividades de red, ópticas profundas en el kernel y el administrador de memoria, las actividades de inicio de sesión de usuario, los cambios en el registro y el sistema de archivos, entre otros. La información se almacena durante seis meses, lo que permite que un analista se desplace hacia el tiempo de inicio de un ataque. El analista puede dinamizar varias vistas y enfocar una investigación a través de varios vectores.
 
 Las capacidades de respuesta le ofrecen la posibilidad de solucionar rápidamente las amenazas al actuar en las entidades afectadas.
 

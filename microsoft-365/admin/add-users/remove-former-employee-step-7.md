@@ -1,5 +1,5 @@
 ---
-title: 'Paso 7: Eliminar la cuenta de usuario de un antiguo empleado'
+title: 'Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,15 +24,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 631405b66c777060463a4e98620ff3c8b06c7e77
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Después de guardar y acceder a todos los datos de usuario de un empleado anterior, puede eliminar la cuenta del empleado anterior en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157247"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436281"
 ---
-# <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
+# <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado
 
 Después de haber guardado y accedido a todos los datos de usuario del antiguo empleado, puede suprimir su cuenta.
 
@@ -41,11 +41,11 @@ Después de haber guardado y accedido a todos los datos de usuario del antiguo e
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el nombre del empleado que desea eliminar.
-3. En el nombre del usuario, seleccione **Eliminar usuario**. Elija las opciones que desee para este usuario y, a continuación, **seleccione Eliminar usuario**. Si ya ha concedido a otro usuario acceso al correo electrónico y al OneDrive, no tiene que volver a hacerlo aquí.
+3. En el nombre del usuario, seleccione **Eliminar usuario**. Elija las opciones que desee para este usuario y, a continuación, seleccione **Eliminar usuario**. Si ya ha dado a otro usuario acceso al correo electrónico de este usuario y OneDrive, no tiene que volver a hacerlo aquí.
 
 Al eliminar un usuario, la cuenta se vuelve inactiva durante aproximadamente 30 días. Tiene tiempo hasta ese momento para restaurar la cuenta antes de que se elimine de forma permanente.
 
-## <a name="watch-delete-a-former-employees-user-account"></a>Watch: Delete a former employee's user account
+## <a name="watch-delete-a-former-employees-user-account"></a>Inspección: Eliminación de la cuenta de usuario de un antiguo empleado
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
@@ -53,11 +53,11 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 ## <a name="does-your-organization-use-active-directory"></a>¿Su organización utiliza Active Directory?
 
-Si su organización sincroniza las cuentas de usuario Microsoft 365 desde un entorno local de Active Directory, debe eliminar y restaurar esas cuentas de usuario en el servicio de Active Directory local. No puede suprimirlas ni restaurarlas en Office 365.
+Si su organización sincroniza las cuentas de usuario para Microsoft 365 desde un entorno local de Active Directory, debe eliminar y restaurar esas cuentas de usuario en el servicio Active Directory local. No puede suprimirlas ni restaurarlas en Office 365.
 
-Para obtener información sobre cómo eliminar y restaurar una cuenta de usuario en Active Directory, vea [Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
+Para obtener información sobre cómo eliminar y restaurar una cuenta de usuario en Active Directory, consulte [Eliminación de una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-Si usas Azure Active Directory, consulta el cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell.
+Si usa Azure Active Directory, consulte el cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) de PowerShell.
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Todo lo que debe saber sobre el cierre de la sesión de un empleado
 
@@ -70,8 +70,8 @@ Aquí tiene información sobre cómo quitar a un empleado del correo electrónic
 |Qué puede hacer|Cómo debe hacerlo|
 |:-----|:-----|
 |Cerrar una sesión (de Outlook en la Web, Outlook, Exchange Active Sync, etc.) y forzar el inicio de una sesión nueva|Restablecer la contraseña|
-|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)|Deshabilite la cuenta. Por ejemplo, (en el centro Exchange administración o mediante PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Cerrar la sesión de un protocolo en particular (como ActiveSync)|Deshabilite el protocolo. Por ejemplo, (en el centro Exchange administración o mediante PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)|Deshabilite la cuenta. Por ejemplo, (en el centro de administración de Exchange o mediante PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Cerrar la sesión de un protocolo en particular (como ActiveSync)|Deshabilite el protocolo. Por ejemplo, (en el centro de administración de Exchange o mediante PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 Las operaciones anteriores se pueden realizar en tres lugares:
@@ -95,6 +95,6 @@ Las operaciones anteriores se pueden realizar en tres lugares:
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Restaurar un usuario](restore-user.md) (artículo)
+[Restauración de un usuario](restore-user.md) (artículo)
 
 [Restablecer contraseñas](reset-passwords.md) (artículo)

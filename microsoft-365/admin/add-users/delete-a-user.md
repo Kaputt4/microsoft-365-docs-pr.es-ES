@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: 894bcef6cc273c067b3d9b622f244d361ed24d96
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo eliminar una cuenta de usuario Microsoft 365, qué hacer con el correo electrónico del usuario y OneDrive contenido, y si desea conservar la licencia del producto.
+ms.openlocfilehash: faa971fa8419f6bcc80855fd9dcd559a542e00a8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090715"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436787"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -54,7 +54,7 @@ Antes de empezar, piense en lo que quiere hacer con el correo electrónico del u
 |Correo electrónico  <br/> | Dar a otro usuario acceso al correo electrónico del usuario eliminado convertirá el buzón del usuario eliminado en un buzón compartido. A continuación, el nuevo propietario del buzón puede acceder al buzón y supervisar el nuevo correo electrónico. También tendrá las siguientes opciones:  <br/>  <br/>Cambiar el nombre para mostrar: se recomienda cambiar el nombre para mostrar para que sea fácil identificar el buzón compartido en la lista **Usuarios activos** .  <br/>  <br/>  Activar respuestas automáticas: ya hemos escrito una respuesta automática educada para usted. Puede enviar diferentes respuestas automáticas a personas de su organización y personas de fuera de la organización. <br/> <br/> [Quite los permisos de calendario existentes](/powershell/module/exchange/remove-mailboxfolderpermission?view=exchange-ps) mediante PowerShell. <br/> <br/> Limpieza de alias: los alias son direcciones de correo electrónico adicionales para los usuarios. Algunas organizaciones no las usan, por lo que, si no tiene ninguna, no es necesario hacer nada más aquí. Si el usuario tiene alias, se recomienda quitarlos para que pueda reutilizar esas direcciones de correo electrónico. De lo contrario, no puede reutilizar esas direcciones de correo electrónico hasta que haya pasado el período de retención de los buzones eliminados. De forma predeterminada, un buzón eliminado se puede recuperar durante 30 días. Para obtener más información, vea [Eliminar o restaurar buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Si su empresa usa **Active Directory** que está sincronizando con Azure AD, debe eliminar la cuenta de usuario de Active Directory. No podrá hacerlo a través de Office 365. Para obtener instrucciones, consulte [Eliminación de una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
-### <a name="get-started"></a>Introducción
+### <a name="get-started"></a>Comenzar
 
 Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí se muestra cómo empezar.
 
@@ -139,4 +139,4 @@ Estos son los problemas más comunes que los usuarios encuentran al eliminar un 
 [Eliminar permanentemente un buzón](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artículo)\
 [Eliminación de un antiguo empleado de Office 365](remove-former-employee.md) (artículo)\
 [Agregar un nuevo empleado a Office 365](add-new-employee.md) (artículo)\
-[Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): siga estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365. (artículo)
+[Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): use estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365. (artículo)

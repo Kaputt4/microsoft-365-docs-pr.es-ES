@@ -1,5 +1,5 @@
 ---
-title: 'Paso 6: Quitar y eliminar la Microsoft 365 de un antiguo empleado'
+title: 'Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,37 +24,37 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga estos pasos para quitar la Microsoft 365 de un antiguo empleado.
-ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Puede quitar la licencia de Microsoft 365 de un empleado anterior y, a continuación, eliminarla de la suscripción o asignarla a otro usuario.
+ms.openlocfilehash: 95f95403a316e176f91c7f120ce5a26487a7a59f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315167"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436237"
 ---
-# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Quitar y eliminar la Microsoft 365 de un antiguo empleado
+# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior
 
-Si no quieres pagar una licencia después de que alguien salga de la organización, debes quitar su licencia de Microsoft 365 y, a continuación, eliminarla de la suscripción. Puedes asignar una licencia a otro usuario si no la eliminas.
+Si no quiere pagar una licencia después de que alguien deje la organización, debe quitar su licencia de Microsoft 365 y, a continuación, eliminarla de la suscripción. Puede asignar una licencia a otro usuario si no la elimina.
 
-Si las personas autorizadas a las que se les ha concedido permisos de exhibición de documentos electrónicos por motivos legales o de cumplimiento, deben tener acceso al buzón de correo, se le debe asignar una licencia del Plan 2 de Exchange Online (o una licencia del Plan 1 de Exchange Online con una Archivado de Exchange Online  licencia de complemento) para que se pueda aplicar una retención al buzón antes de eliminarla. Después de eliminar la cuenta de usuario, cualquier licencia Exchange Online asociada con la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
+Si las personas autorizadas a las que se les han concedido permisos de exhibición de documentos electrónicos por motivos legales o de cumplimiento deben tener acceso al buzón de correo, se le debe asignar una licencia de Exchange Online Plan 2 (o una licencia de Exchange Online Plan 1 con una Archivado de Exchange Online  licencia de complemento) para que se pueda aplicar una suspensión al buzón antes de que se elimine. Una vez eliminada la cuenta de usuario, cualquier licencia de Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
   
 Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Después de 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan permanentemente de Microsoft 365 y no se pueden recuperar.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la pestaña **Licencias y** aplicaciones.
-3. Desactive las casillas de las licencias que desea quitar y, a continuación, **seleccione Guardar cambios**.
+2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la pestaña **Licencias y aplicaciones** .
+3. Desactive las casillas de las licencias que desea quitar y, a continuación, seleccione **Guardar cambios**.
 
-**Para reducir el número de licencias que está pagando** hasta que contrate a otra persona, siga estos pasos:
+**Para reducir el número de licencias que paga** hasta que contrate a otra persona, siga estos pasos:
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> y seleccione la **pestaña** Productos.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> y seleccione la pestaña **Productos** .
 2. Seleccione la suscripción de la que desea quitar licencias.
 3. En la página de detalles, seleccione **Quitar licencias**.
-4. En el **panel Quitar licencias** , en Nueva cantidad, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
+4. En el panel **Quitar licencias** , en Nueva cantidad, en el cuadro **Total de licencias** , escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
 5. Seleccione **Guardar**.
 
-Cuando [agregues otra persona](add-users.md) a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
+Cuando [agregue otra persona](add-users.md) a su empresa, se le pedirá que compre una licencia al mismo tiempo, con un solo paso.
 
-Para obtener más información acerca de la administración de licencias de usuario para Microsoft 365 para empresas, vea Asignar licencias a usuarios de [Microsoft 365](../manage/assign-licenses-to-users.md) para empresas y [Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
+Para obtener más información sobre cómo administrar licencias de usuario para Microsoft 365 para empresas, consulte [Asignación de licencias a usuarios de Microsoft 365 para empresas](../manage/assign-licenses-to-users.md) y [Anulación de la asignación de licencias de usuarios en Microsoft 365 para empresas](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Cómo afectan las cuentas de empleados eliminadas a Skype Empresarial
 
@@ -62,6 +62,6 @@ Al quitar una licencia de usuario de Office 365, el número de RTC asociado con 
   
 Si el usuario pertenece a un grupo de cola, ya no será un destino apto de los agentes de cola de llamadas. Por lo tanto, le recomendamos quitar también al usuario de los grupos asociados con la cola de llamadas.
 
-## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurar el reenvío de llamadas a personas de la organización
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configuración del reenvío de llamadas a personas de la organización
 
-Si necesita configurar el reenvío de llamadas para el número de teléfono del empleado terminado, la configuración de reenvío de llamadas en las directivas de llamadas puede configurar el reenvío donde las llamadas entrantes se pueden reenviar a otros usuarios o pueden llamar a otra persona al mismo tiempo. Para obtener más información, vea [Calling policies in Microsoft Teams](/microsoftteams/teams-calling-policy).
+Si necesita configurar el reenvío de llamadas para el número de teléfono del empleado terminado, la configuración de reenvío de llamadas en las directivas de llamada puede configurar el reenvío donde las llamadas entrantes se pueden reenviar a otros usuarios o pueden llamar a otra persona al mismo tiempo. Para obtener más información, vea [Directivas de llamada en Microsoft Teams](/microsoftteams/teams-calling-policy).

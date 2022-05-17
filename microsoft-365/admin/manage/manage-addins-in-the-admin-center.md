@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos en usuarios y grupos de la organización.
-ms.openlocfilehash: dadb308d45b17d98c7bf6a5dd0c214691d264b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094292"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435443"
 ---
-# <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
+# <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Administración de complementos en el Centro de administración de Microsoft 365
 
 Office Complementos le ayudan a personalizar los documentos y a simplificar la forma en que accede a la información en la web. Consulte [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
@@ -114,7 +114,7 @@ La compatibilidad con la desactivación de Office Store está disponible en las 
     
 - Mac: 16.10.18011401 - Actualmente disponible.
     
-- iOS: 2.9.18010804: disponible actualmente.
+- iOS: 2.9.18010804 - Disponible actualmente.
     
 - Web: disponible actualmente.
     

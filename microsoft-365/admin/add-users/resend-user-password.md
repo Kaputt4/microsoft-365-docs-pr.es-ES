@@ -19,33 +19,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico a un nuevo Microsoft 365 usuario.
-ms.openlocfilehash: 83b1dd5a82189947dae42a2c659032f97d17a256
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: 'Vuelva a enviar el correo electrónico de notificación a un nuevo usuario en Microsoft 365 restableciendo la contraseña del usuario si no recibe el correo electrónico original con su nueva contraseña. '
+ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530180"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436303"
 ---
-# <a name="resend-a-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario: ayuda para administradores
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario Microsoft 365: Ayuda del administrador
 
-En este artículo se explica cómo reenviar el correo electrónico de notificación a un nuevo usuario en Office 365. Esto puede ocurrir cuando se crea un usuario nuevo y no se obtiene un correo electrónico con su nueva contraseña. Para ello, restablezca la contraseña del usuario.
+En este artículo se explica cómo volver a enviar el correo electrónico de notificación a un nuevo usuario en Office 365. Esto puede ocurrir cuando se crea un nuevo usuario y no recibe un correo electrónico con su nueva contraseña. Para ello, restablezca la contraseña del usuario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Introducción a la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](Información general del Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md).
 
-Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
+Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
 ## <a name="resend-user-password"></a>Reenviar la contraseña de usuario
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. En la **página Usuarios activos,** seleccione el usuario y, a continuación, **seleccione Restablecer contraseña.**
+2. En la página **Usuarios activos** , seleccione el usuario y, a continuación, seleccione **Restablecer contraseña**.
 
-3. Siga las instrucciones de la **página Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
+3. Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
 
-4. Escriba una dirección de correo electrónico a la que pueda llegar el usuario para que reciba la nueva contraseña y realice un seguimiento con ellos para asegurarse de que la obtuvo.
+4. Escriba una dirección de correo electrónico a la que el usuario pueda acceder para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.
 
 ## <a name="related-content"></a>Contenido relacionado
 

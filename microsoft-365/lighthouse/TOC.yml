@@ -48,7 +48,7 @@
       href: m365-lighthouse-search-for-users.md
     - name: Visualización y administración de usuarios de riesgo
       href: m365-lighthouse-view-manage-risky-users.md
-- name: Administración de dispositivos
+- name: Administrar dispositivos
   items:
     - name: Información general de la página Cumplimiento de dispositivos
       href: m365-lighthouse-device-compliance-page-overview.md
@@ -56,6 +56,8 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Información general de la página Windows 365 (PC en la nube)
       href: m365-lighthouse-win365-page-overview.md
+    - name: Reprovisione un PC en la nube Windows 365
+      href: m365-lighthouse-reprovision-cloudpc.md
 - name: Administrar amenazas
   items:
     - name: Información general de la página Administración de amenazas

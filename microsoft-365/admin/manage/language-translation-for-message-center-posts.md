@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Las publicaciones del centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: d622118b63b5fdfdab4fea4f62362e1df468e6aa
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 23f94654e01697c3ebbc74df4f2409411ca14b9a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530636"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437599"
 ---
-# <a name="language-translation-for-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes
+# <a name="language-translation-for-microsoft-365-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes de Microsoft 365
 
-Las publicaciones del Centro de mensajes se escriben solo en inglés debido a la inmediatez de la información que publicamos, pero se pueden mostrar automáticamente en el idioma que se haya especificado en la configuración de idioma personal de Microsoft 365. Si establece el idioma preferido a uno que no sea el inglés, verá una opción en el Centro de mensajes para traducir automáticamente las publicaciones. Los mensajes se traducen en máquina al idioma preferido, lo que significa que un equipo hizo la traducción. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
+Las publicaciones del Centro de mensajes se escriben solo en inglés debido a la inmediatez de la información que publicamos, pero se pueden mostrar automáticamente en el idioma que se haya especificado en la configuración de idioma personal de Microsoft 365. Si establece el idioma preferido a uno que no sea el inglés, verá una opción en el Centro de mensajes para traducir automáticamente las publicaciones. Los mensajes se traducen automáticamente al idioma que prefiera, lo que significa que un equipo realizó la traducción. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
 
 ## <a name="before-you-begin"></a>Antes de empezar
   
@@ -52,9 +52,9 @@ Si quiere configurar las publicaciones del Centro de mensajes para que se traduz
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Overview of the Centro de administración de Microsoft 365](Overview of the Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)\
+[Información general de la Centro de administración de Microsoft 365](Información general de la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)\
 [¿Qué suscripción tengo?](../admin-overview/what-subscription-do-i-have.md) (artículo)\
-[Mantenerse al tanto de los cambios](../manage/stay-on-top-of-updates.md) (artículo)
+[Manténgase al tanto de los cambios](../manage/stay-on-top-of-updates.md) (artículo)
 
 
 

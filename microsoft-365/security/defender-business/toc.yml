@@ -51,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: Visualización y uso de los informes
           href: mdb-reports.md
-    - name: Visualización o edición de directivas de seguridad
+    - name: Ver o editar las directivas de seguridad
       items:
         - name: 'Ver, editar y crear directivas'
           href: mdb-view-edit-create-policies.md
@@ -63,7 +63,7 @@
           href: mdb-firewall.md
         - name: Administrar reglas para directivas de firewall
           href: mdb-custom-rules-firewall.md
-    - name: Supervisión o administración de dispositivos
+    - name: Monitorear o administrar dispositivos
       items:
         - name: Ver y administrar dispositivos
           href: mdb-manage-devices.md
@@ -73,14 +73,14 @@
           href: mdb-offboard-devices.md
     - name: Información de referencia
       items:
-        - name: Información de referencia de API
-          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
           href: mdb-get-help.md
         - name: Preguntas frecuentes
           href: mdb-faq.yml
         - name: Solución de problemas
           href: mdb-troubleshooting.yml
+        - name: Información de referencia de API
+          href: ../defender-endpoint/exposed-apis-create-app-partners.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: Microsoft 365 Empresa Premium
           href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse

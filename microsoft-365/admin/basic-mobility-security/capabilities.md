@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Basic Mobility and Security puede ayudarle a proteger y administrar sus dispositivos móviles.
-ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Basic Mobility and Security le ayuda a proteger y administrar dispositivos móviles con directivas que controlan el acceso a la organización Microsoft 365 correo electrónico y documentos.
+ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937771"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435863"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -40,7 +40,7 @@ Puede usar Basic Mobility and Security para proteger y administrar los siguiente
 - Android (incluido Samsung Knox)<sup>1</sup>
 - Windows <sup>2, 3</sup>
 
-<sup>1</sup> Después de junio de 2020, las versiones de Android posteriores a 9 no pueden administrar la configuración de contraseñas, excepto en dispositivos Samsung Knox.
+<sup>1</sup> Después de junio de 2020, Android versiones posteriores a 9 no pueden administrar la configuración de contraseñas excepto en dispositivos Samsung Knox.
 
 <sup>2</sup> El control de acceso para Windows 8.1 dispositivos RT está limitado a Exchange ActiveSync.
 
@@ -63,7 +63,7 @@ Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de 
 > [!NOTE]
 >
 > - La compatibilidad con iOS 10.0 y versiones posteriores incluye dispositivos iPhone y iPad.
-> - La administración de dispositivos BlackBerry OS no es compatible con basic security and mobility. Use BlackBerry Business Cloud Services (BBCS) de BlackBerry para administrar dispositivos BlackBerry OS. Los dispositivos Blackberry que ejecutan el sistema operativo Android se admiten como dispositivos Android estándar.
+> - La administración de dispositivos BlackBerry OS no es compatible con basic security and mobility. Use BlackBerry Business Cloud Services (BBCS) de BlackBerry para administrar dispositivos BlackBerry OS. Los dispositivos Blackberry que ejecutan Android sistema operativo se admiten como dispositivos de Android estándar
 > - No se pedirá a los usuarios que se inscriban y no se les bloqueará ni se notificará por infracción de directiva si usan el explorador móvil para acceder a Microsoft 365 SharePoint sitios, documentos en Office Online o correo electrónico en Outlook Web App.
 
 En el diagrama siguiente se muestra lo que sucede cuando un usuario con un nuevo dispositivo inicia sesión en una aplicación que admite el control de acceso con Basic Mobility and Security. Se impide que el usuario acceda a Microsoft 365 recursos de la aplicación hasta que inscriba su dispositivo.
@@ -183,7 +183,7 @@ Puede establecer la siguiente configuración de directiva adicional mediante cmd
 
 ## <a name="settings-supported-by-windows"></a>Configuración admite Windows
 
-Puede administrar Windows 10 dispositivos inscribiéndolos como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 deberán inscribirse en Basic Mobility and Security la primera vez que usen la aplicación de correo electrónico integrada para acceder a su correo electrónico Microsoft 365 (requiere Azure AD suscripción Premium).
+Puede administrar Windows 10 dispositivos inscribiéndolos como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 deberán inscribirse en Basic Mobility and Security la primera vez que usen la aplicación de correo electrónico integrada para acceder a su Microsoft 365 correo electrónico (requiere una suscripción Premium de Azure AD).
 
 La siguiente configuración es compatible con los dispositivos Windows 10 inscritos como dispositivos móviles. Esta configuración no impedirá que los usuarios accedan a Microsoft 365 recursos.
 
@@ -230,7 +230,7 @@ Puede establecer esta configuración de directiva adicional mediante cmdlets de 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Borrar de forma remota un dispositivo móvil
 
-Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 realizando un borrado del portal  >  de **cumplimiento de Microsoft PurviewAdministración** de dispositivos de **pérdida** >  de **datos.** Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
+Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 mediante la eliminación de **portal de cumplimiento Microsoft Purview** >  **Data la prevención** >  de **pérdidasDispositivos**. Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
 
 Para obtener más información, consulte [Borrado de un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
 

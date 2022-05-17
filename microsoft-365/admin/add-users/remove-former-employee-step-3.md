@@ -25,26 +25,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga estos pasos para bloquear el acceso a dispositivos móviles de un antiguo empleado.
-ms.openlocfilehash: 8d6423611b1bf228fbfd5bf13037ade4033013a0
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Use el centro de administración de Exchange para borrar y bloquear el dispositivo de un empleado anterior para que se quiten todos los datos de la organización y ya no se conecten a Microsoft 365.
+ms.openlocfilehash: 5ee94e9f9bfff2e4f257bf0ff3364806136e3f42
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765977"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436611"
 ---
 # <a name="step-3---wipe-and-block-a-former-employees-mobile-device"></a>Paso 3: Borrar y bloquear el dispositivo móvil de un antiguo empleado
 
-Si tu antiguo empleado tenía un teléfono de la organización, puedes usar el Centro de administración de Exchange para borrar y bloquear ese dispositivo de modo que todos los datos de la organización se quiten del dispositivo y ya no se puedan conectar <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">a</a> Office 365. Si su organización usa Movilidad y seguridad básicas para administrar dispositivos móviles, puede borrar y bloquear esos dispositivos con Movilidad y seguridad básicas.
+Si el antiguo empleado tenía un teléfono de la organización, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> para borrar y bloquear ese dispositivo de modo que todos los datos de la organización se quiten del dispositivo y ya no se puedan conectar a Office 365. Si su organización usa Basic Mobility and Security para administrar dispositivos móviles, puede borrar y bloquear esos dispositivos mediante Basic Mobility and Security.
 
-## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Borrar el dispositivo móvil mediante el centro Exchange administración
+## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Borrado del dispositivo móvil mediante el centro de administración de Exchange
 
-1. Vaya al Centro Exchange de administración > **buzones** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">de destinatarios</a>.
+1. Vaya al centro de administración de Exchange > **buzones de destinatarios**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank"></a>
 1. Seleccione el usuario y, en **Dispositivos móviles**, seleccione **Ver detalles**.
-1. En la **página Detalles del** dispositivo móvil, en **Dispositivos** móviles, seleccione el dispositivo móvil, seleccione **Borrar dispositivo DataWipe**![ y](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), a continuación, **seleccione Bloquear**.
-1. Haga clic en **Guardar**.
+1. En la página **Detalles del dispositivo móvil**, en **Dispositivos móviles**, seleccione el dispositivo móvil, seleccione **Borrar dispositivo de DataWipe**![](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) y, a continuación, seleccione **Bloquear**.
+1. Seleccione **Guardar**.
    > [!TIP]
-   > Asegúrese de quitar o deshabilitar al usuario de su servicio de Enterprise Blackberry local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario.
+   > Asegúrese de quitar o deshabilitar el usuario del servicio de Enterprise Blackberry local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario.
 
 ## <a name="related-content"></a>Contenido relacionado
 

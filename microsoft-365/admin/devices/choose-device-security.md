@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Elija entre diferentes métodos MDM y MAM.
-ms.openlocfilehash: 49c8fe8e61026e56b1698d7da2fdbac07896c858
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: cc2eef0fde261ed8ee6eace288d70c53235fc88e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317502"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435421"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>Opciones para proteger los dispositivos y los datos de la aplicación
+# <a name="options-for-protecting-your-devices-and-app-data-with-microsoft-365"></a>Opciones para proteger los dispositivos y los datos de la aplicación con Microsoft 365
 
 Tiene varias maneras de proteger los dispositivos y los datos de las organizaciones con Microsoft 365 para empresas y empresas. Puede usar los siguientes planes independientes:
 

@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 1e518bda3d11ff17c4ce5aa1ebb6997f8bc09c4d
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363141"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438466"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -38,7 +38,7 @@ Consulte la sección [Más información](#more-information) para ver una descrip
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Antes de eliminar un buzón inactivo
 
-- Tiene que usar Exchange Online PowerShell para quitar una suspensión por juicio de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Debe usar Exchange Online PowerShell para quitar las retenciones de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento Microsoft Purview para estos procedimientos. Para obtener instrucciones paso a paso para usar Exchange Online PowerShell, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Puede copiar el contenido de un buzón inactivo a otro buzón antes de quitar la retención y eliminar un buzón inactivo. Para obtener más información, consulte [Restauración de un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +50,7 @@ Consulte la sección [Más información](#more-information) para ver una descrip
 
 Como se indicó anteriormente, se podría colocar una directiva de retención, suspensión In-Place o litigio en un buzón inactivo. El primer paso es identificar las retenciones de un buzón inactivo.
   
-Ejecute el siguiente comando para mostrar la información de la retención de todos los buzones inactivos en su organización.
+[Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y, a continuación, ejecute el siguiente comando para mostrar la información de retención de todos los buzones inactivos de la organización.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -83,7 +83,7 @@ Tras identificar el tipo de retención que está colocada en el buzón inactivo 
   
 ### <a name="remove-a-litigation-hold"></a>Quitar una retención de litigios
 
-Como se mencionó anteriormente, tiene que usar Windows PowerShell para quitar una retención de litigios de un buzón inactivo. No puede usar el EAC. Ejecute el siguiente comando para quitar una retención de litigios.
+Ejecute el siguiente comando de PowerShell para quitar una suspensión por juicio.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -102,7 +102,7 @@ El procedimiento para quitar un buzón inactivo de una directiva de retención d
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>Eliminación de un buzón inactivo de una directiva de retención de toda la organización
 
-Ejecute el siguiente comando en Exchange Online PowerShell para excluir un buzón inactivo de una directiva de retención de toda la organización.
+Ejecute el siguiente comando de PowerShell para excluir un buzón inactivo de una directiva de retención de toda la organización.
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -110,7 +110,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 Para obtener más información sobre cómo identificar las directivas de retención de toda la organización aplicadas a un buzón inactivo y obtener el GUID de una directiva de retención, consulte la sección "Get-OrganizationConfig" en [Cómo identificar el tipo de retención colocado en un buzón](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
 
-Como alternativa, puede ejecutar el siguiente comando para quitar el buzón inactivo de todas las directivas de toda la organización:
+Como alternativa, puede ejecutar el siguiente comando de PowerShell para quitar el buzón inactivo de todas las directivas de toda la organización:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -118,13 +118,13 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Quitar un buzón inactivo de una directiva de retención de ubicación específica
 
-Ejecute el siguiente comando en [PowerShell del Centro de seguridad & cumplimiento](/powershell/exchange/connect-to-scc-powershell) para quitar un buzón inactivo de una directiva de retención explícita.
+Use [PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell) para quitar un buzón inactivo de una directiva de retención explícita:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-Para obtener más información sobre cómo identificar directivas de retención de ubicación específicas aplicadas a un buzón inactivo y obtener el GUID de una directiva de retención, vea la sección "Get-Mailbox" en [How to identify the type of hold placed on a mailbox (Cómo identificar el tipo de suspensión colocada en un buzón](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox)).
+Para obtener más información sobre cómo identificar directivas de retención de ubicación específicas que se aplican a un buzón inactivo y obtener el GUID de una directiva de retención, vea la sección "Get-Mailbox" en [Cómo identificar el tipo de retención colocada en un buzón](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
 
 ### <a name="remove-in-place-holds"></a>Quitar retenciones locales
 
