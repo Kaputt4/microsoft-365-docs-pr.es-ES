@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Obtenga información sobre las etiquetas y directivas predeterminadas para que Microsoft Purview Information Protection clasifique y proteja el contenido confidencial.
-ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286458"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444188"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Etiquetas y directivas predeterminadas para proteger los datos
 
@@ -135,9 +135,9 @@ El etiquetado automático del lado servicio ayuda a etiquetar documentos confide
 
 El etiquetado automático predeterminado del lado servicio tiene la siguiente configuración: 
 
-- Si hay entre 1 y 9 instancias de números de tarjeta de crédito que se encuentran en un documento, aplique la etiqueta de confidencialidad **Confidencial** \ **Cualquier usuario (sin restricciones)**
+- Si hay entre 1 y 9 instancias de números de tarjeta de crédito que se encuentran en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Cualquier usuario (sin restricciones)**
 
-- Si hay 10 o más instancias de números de tarjeta de crédito que se encuentren en un documento o correo electrónico, recomendamos que el usuario aplique la etiqueta de confidencialidad **Confidencial** \ **Todos los empleados** 
+- Si hay 10 o más instancias de números de tarjeta de crédito que se encuentren en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Todos los empleados** 
 
 > [!NOTE]
 > Si detectamos que tiene sus propias etiquetas de confidencialidad publicadas, le pediremos que seleccione una de sus propias etiquetas para su directiva de etiquetado automático.
