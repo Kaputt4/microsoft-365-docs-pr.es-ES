@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cac0965ba9cd4b11280e1efd263f49137672399f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286832"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463217"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -31,7 +31,7 @@ ms.locfileid: "65286832"
 
 Cuando haya [publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etiquetas de confidencialidad desde el portal de cumplimiento de Microsoft Purview, empezarán a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos a medida que se creen o editen.
 
-Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesitará para admitir características específicas de etiquetado integrado, cualquier información de configuración adicional para estas características y, además, comprenda las interacciones con el cliente de etiquetado unificado de Azure Information Protection y otras aplicaciones y servicios.
+Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesitará para características específicas de etiquetado integrado, cualquier información de configuración adicional para estas características y, además, comprenda las interacciones con el cliente de etiquetado unificado de Azure Information Protection y otras aplicaciones y servicios.
 
 ## <a name="labeling-client-for-desktop-apps"></a>Cliente de etiquetado para aplicaciones de escritorio
 
@@ -41,7 +41,7 @@ Si no puede actualizar a Aplicaciones de Microsoft 365 para empresas para las v
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
-Para cada función, las siguientes tablas enumeran la versión mínima de Office que se necesita para que sea compatible con las etiquetas de confidencialidad utilizando el etiquetado integrado. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
+En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -178,7 +178,7 @@ Para una experiencia de etiquetado más uniforme con los informes significativos
 
 - Puede deshabilitar la configuración de IRM para impedir que los usuarios los seleccionen:
     - Outlook para Windows: 
-        - Claves del Registro (DWORD:00000001) *DisableDNDE* y *DisableEO* de HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DOMAIN
+        - Claves del Registro `DWORD:00000001` *DisableDNF* y *DisableEO* de `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM`
         - Asegúrese de que la configuración de directiva de grupo **Configuración de cifrado predeterminada para el botón Cifrar** no está configurada
     - Outlook para Mac: 
         - Claves *DisableEncryptOnly* y *DisableDoNotForward* documentadas en [Establecer preferencias para Outlook para Mac](/DeployOffice/mac/preferences-outlook)
