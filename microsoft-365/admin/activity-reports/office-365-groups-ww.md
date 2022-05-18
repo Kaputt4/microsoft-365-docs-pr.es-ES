@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: Obtenga un informe de grupos Microsoft 365 para conocer los grupos y sus actividades.
-ms.openlocfilehash: d4130d577341bbc8c4516234964ea9e805be81ee
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga un informe de Grupos de Microsoft 365 para obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
+ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781685"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467380"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365
 
@@ -68,7 +68,7 @@ El informe de **grupos** se puede ver para ver las tendencias de los últimos 7 
 |Mensajes en Yammer (publicados) |Número de mensajes publicados en el grupo de Yammer durante el período de informes. |
 |Mensajes en Yammer (lectura) |Número de conversaciones leídas en el grupo de Yammer durante el período de informes. |
 |Mensajes en Yammer (me gusta) |El número de mensajes que se han gustado en el grupo de Yammer durante el período de informes. |
-|Miembros |Número de miembros del grupo. |
+|Members |Número de miembros del grupo. |
 |Miembros externos |Número de usuarios externos en el grupo.|
 
 

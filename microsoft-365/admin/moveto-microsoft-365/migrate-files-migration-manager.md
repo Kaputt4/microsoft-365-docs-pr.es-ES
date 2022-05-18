@@ -1,5 +1,5 @@
 ---
-title: Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
+title: Migración de archivos de Google a Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,58 +20,58 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo migrar archivos de Google a Microsoft 365 para empresas mediante el administrador de migración SharePoint migración.
-ms.openlocfilehash: d22056a090ae288b01419f0435adbf8bd38f59b1
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: Obtenga información sobre cómo migrar archivos de Google a Microsoft 365 para empresas mediante el Administrador de migración de SharePoint.
+ms.openlocfilehash: 1e2bf548aea8ff95ad49c5b6161fbd03e65786d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825701"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468994"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
+# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migración de archivos de Google a Microsoft 365 para empresas con Migration Manager
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 
-Cuando pases a Microsoft 365 para empresas desde Google Workspace, querrás migrar los archivos desde Google Drive. Puede usar el Administrador de SharePoint migración para mover archivos de unidades personales y compartidas. Este vídeo y resumen de los pasos necesarios le ofrece información general sobre cómo hacerlo. Para más información, consulte [Migrar Google Workspace a Microsoft 365 con el Administrador de migración](/sharepointmigration/mm-google-overview).
+Al pasar a Microsoft 365 para empresas desde Google Workspace, querrá migrar los archivos desde Google Drive. Puede usar el Administrador de migración de SharePoint para mover archivos de unidades personales y compartidas. Este vídeo y resumen de los pasos necesarios le proporcionan información general sobre cómo hacerlo. Para más información, consulte [Migrar Google Workspace a Microsoft 365 con el Administrador de migración](/sharepointmigration/mm-google-overview).
 
 > [!NOTE]
 > El Administrador de migración realizará una copia de los archivos y moverá las copias a Microsoft 365 para empresas. Los archivos originales también permanecerán en Google Drives.
 
 ## <a name="before-you-start"></a>Antes de empezar
 
-Todos los usuarios deben haber iniciado sesión en Microsoft 365 para empresas y configurar sus OneDrive para la Empresa. Para ello, vaya a [office.com](https://office.com), inicie sesión con las credenciales de Microsoft 365 para empresas y, a continuación, elija OneDrive.
+Todos los usuarios deben haber iniciado sesión en Microsoft 365 para empresas y configurar sus OneDrive para la Empresa. Para ello, vaya a [office.com](https://office.com), inicie sesión con su Microsoft 365 para obtener credenciales empresariales y, a continuación, elija OneDrive.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-### <a name="install-the-microsoft-365-migration-app"></a>Instalar la aplicación Microsoft 365 migración de datos
-Sigue estos pasos para instalar la aplicación Microsoft 365 migración en el entorno de Google Workspace. 
-1. En el Centro SharePoint administración, seleccione **Migración**.
-2. En la **página Migración**, en la sección **Google Workspace**, seleccione **Introducción**.
-3. En la **página Migrar el contenido de Google Workspace a Microsoft 365**, selecciona **Conectar a Google Workspace**.
+### <a name="install-the-microsoft-365-migration-app"></a>Instalación de la aplicación de migración de Microsoft 365
+Siga estos pasos para instalar la aplicación de migración de Microsoft 365 en el entorno de Google Workspace. 
+1. En el centro de administración de SharePoint, seleccione **Migración**.
+2. En la página **Migración**, en la sección **Área de trabajo de Google**, seleccione **Introducción**.
+3. En la página **Migrar el contenido del área de trabajo de Google a Microsoft 365**, seleccione **Conectar a Google Workspace**.
 4. Seleccione **Instalar y autorizar**.
-5. En la **página Google Workspace Marketplace** , seleccione **Iniciar sesión** e introduzca sus credenciales de administrador de Google Workspace.
-6. Seleccione **Instalación de dominio**.
+5. En la página **Google Workspace Marketplace** , seleccione **Iniciar sesión** y escriba las credenciales de administrador de Google Workspace.
+6. Seleccione **Instalar dominio**.
 7. Seleccione **Continuar**.
-8. Active la casilla y, a continuación, **seleccione Permitir**.
+8. Active la casilla y, a continuación, seleccione **Permitir**.
 9. Cuando finalice la instalación, seleccione **Listo**.
-10. Vuelva a la **página Instalar la aplicación de migración** y seleccione **Siguiente**.
-11. Selecciona **Iniciar sesión en Google Workspace** y, a continuación, escribe tus credenciales de administrador de Google Workspace.
+10. Vuelva a la página **Instalar la aplicación de migración** y seleccione **Siguiente**.
+11. Seleccione **Iniciar sesión en Google Workspace** y, a continuación, escriba sus credenciales de administrador de Área de trabajo de Google.
 12. Seleccione **Finalizar**.
 
 
-### <a name="select-and-scan-your-drives"></a>Seleccionar y examinar las unidades
-Después de instalar la aplicación de migración de Microsoft 365 en el entorno de Google, ahora puedes seleccionar las unidades que quieres migrar y, a continuación, examinarlas para asegurarte de que son seguras para copiarlas en Microsoft 365.
+### <a name="select-and-scan-your-drives"></a>Selección y examen de las unidades
+Después de instalar la aplicación de migración de Microsoft 365 en el entorno de Google, ahora puede seleccionar las unidades que desea migrar y, a continuación, examinarlas para asegurarse de que son seguras para copiarlas en Microsoft 365.
 
-1. En la **pestaña** Examinar, selecciona las unidades de Google que quieres copiar a Microsoft 365.
-2. Seleccione **Examinar**. Cuando se complete el examen, las unidades mostrarán un estado de examen listo **para migrar**.
+1. En la pestaña **Examinar**, seleccione las unidades de Google que desea copiar en Microsoft 365.
+2. Seleccione **Examinar**. Cuando se complete el examen, las unidades mostrarán el estado de examen **Listo para migrar**.
 3. Seleccione **Copiar a la migración**.
 
 
-### <a name="start-the-migration"></a>Iniciar la migración
+### <a name="start-the-migration"></a>Inicio de la migración
 Después de seleccionar y examinar las unidades que desea migrar, siga estos pasos para migrarlas.
-1. En la **pestaña** Migración, compruebe las rutas de destino de las unidades que desea migrar. Edite si es necesario.
-2. Seleccione las unidades que desea migrar y, a continuación, **seleccione Migrar**. 
-3. Cuando la migración se complete correctamente, cada unidad mostrará un **estado de migración completado****.**
+1. En la pestaña **Migración** , compruebe las rutas de acceso de destino de las unidades que desea migrar. Edítelos si es necesario.
+2. Seleccione las unidades que desea migrar y, a continuación, seleccione **Migrar**. 
+3. Cuando la migración se complete correctamente, cada unidad mostrará un **estado de migración** **completado**.
 
 
 

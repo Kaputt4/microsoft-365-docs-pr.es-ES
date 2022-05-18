@@ -1,5 +1,5 @@
 ---
-title: Comprobación de la información de contacto de ICANN
+title: Comprobación de LA ICANN de la información de contacto
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,21 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo validar su información de contacto para cumplir con las normativas de ICANN.
-ms.openlocfilehash: a1ea60422ebd503ff1cfaac325a5a74433756831
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenga información sobre cómo validar su información de contacto para cumplir con las regulaciones de la ICANN.
+ms.openlocfilehash: f3c35bd258800ef7edc0cd1f7fda0b2f319ded4c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324919"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467918"
 ---
-# <a name="icann-verification-of-contact-information"></a>Comprobación de la información de contacto de ICANN
+# <a name="icann-verification-of-contact-information"></a>Comprobación de LA ICANN de la información de contacto
 
-Al comprar un dominio o realizar cambios en la información de contacto de un dominio, se requiere que el registrador valide su información de contacto para cumplir con las normativas de ICANN.
+Al comprar un dominio o realizar cambios en la información de contacto de un dominio, el registrador debe validar su información de contacto para cumplir con las regulaciones de la ICANN.
 
-Para la validación, se envía un correo electrónico a la dirección del registrador.
+Para la validación, se envía un correo electrónico a la dirección del solicitante de registro.
 
- **Para comprobar la información de contacto, seleccione el vínculo en el correo electrónico de verificación.** Si los propietarios del dominio no comprueban la dirección de correo electrónico, se suspenderá el dominio. A continuación, vaya a la [página Dominios](https://admin.microsoft.com/adminportal/home?ref=Domains) del Centro de administración y compruebe el estado del dominio.
+ **Para comprobar la información de contacto, seleccione el vínculo en el correo electrónico de verificación.** Si los propietarios del dominio no comprueban la dirección de correo electrónico, el dominio se suspenderá. A continuación, vaya a la [página Dominios](https://admin.microsoft.com/adminportal/home?ref=Domains) del Centro de administración y compruebe el estado del dominio.
 
 El correo electrónico tendrá este aspecto:
 

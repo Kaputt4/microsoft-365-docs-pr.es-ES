@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Obtenga información sobre cómo mantenerse al tanto de las actualizaciones de Microsoft 365 mediante el Centro de mensajes, la versión dirigida, la hoja de ruta y los blogs y Community.
-ms.openlocfilehash: f38805b3c09c3b40198930014a3083a3ebc03cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: cf4adf2e603517dfb4db57811e291195a1536488
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129318"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468534"
 ---
-# <a name="stay-on-top-of-changes"></a>Mantenerse al día de los cambios
+# <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>Manténgase al tanto de los cambios de características y productos Microsoft 365
 
 Con Microsoft 365, recibirá nuevas actualizaciones de productos y características a medida que estén disponibles en lugar de actualizaciones programadas con meses o años de diferencia. Como resultado, usted y sus usuarios experimentarán en todo momento formas nuevas y mejoradas de realizar el trabajo, en lugar de una actualización costosa y lenta en toda la empresa. El reto que supone un modelo de este tipo es mantenerse al día de los cambios y las actualizaciones. Estas son algunas maneras de mantenerse al tanto de las actualizaciones Microsoft 365 de su organización.
 

@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 757545231a7bbe544bfbacf082fc03d88fb2df2f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174167"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469181"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para Empresas
 
@@ -174,13 +174,11 @@ En la tabla siguiente se describe la configuración que se va a ver (y, si es ne
 
 3. En la lista de configuraciones, seleccione un elemento para ver o editar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con una o varias de las siguientes tareas:
 
 - [Comenzar mediante Microsoft Defender para Empresas](mdb-get-started.md)
 - [Administración de dispositivos en Microsoft Defender para Empresas](mdb-manage-devices.md)
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md)
-
 - [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md)

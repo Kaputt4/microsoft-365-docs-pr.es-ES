@@ -1,6 +1,6 @@
 ---
 title: Casos de administración de riesgos internos
-description: Más información sobre los casos de administración de riesgos internos en Microsoft Purview
+description: Obtenga información sobre los casos de administración de riesgos internos en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 687eb92693d3343fb0ef5b2392d4622d9af4bb9d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971955"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469390"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos internos
 
@@ -145,7 +145,7 @@ El panel de notas del caso muestra las notas del usuario que creó la nota y el 
 
 Para agregar una nota a un caso:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Casos** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione la pestaña **Notas del caso** .
 3. Seleccione **Agregar nota de caso**.
 4. En el cuadro de diálogo **Agregar nota de caso** , escriba la nota para el caso. Seleccione **Guardar** para agregar la nota al caso o seleccione **Cancelar** cierre sin guardar la nota en el caso.
@@ -162,7 +162,7 @@ Se puede conceder acceso temporal a un caso agregando un usuario como colaborado
 
 Para agregar un colaborador a un caso:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Casos** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione la pestaña **Colaboradores** .
 3. Seleccione **Agregar colaborador**.
 4. En el cuadro de diálogo **Agregar colaborador** , empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario en la lista de usuarios sugeridos. Esta lista se genera a partir del Azure Active Directory de la suscripción de inquilino.
@@ -170,7 +170,7 @@ Para agregar un colaborador a un caso:
 
 ## <a name="case-actions"></a>Acciones de casos
 
-Los investigadores de riesgo pueden tomar medidas sobre un caso en uno de varios métodos, en función de la gravedad del caso, el historial de riesgo del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que tenga que escalar un caso a un usuario o a una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la administración de soluciones de un extremo a otro.
+Los investigadores de riesgo pueden tomar medidas sobre un caso en uno de varios métodos, en función de la gravedad del caso, el historial de riesgo del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que tenga que escalar un caso a un usuario o a una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la administración de la resolución de un extremo a otro.
 
 ### <a name="send-email-notice"></a>Enviar notificación por correo electrónico
 
@@ -180,7 +180,7 @@ Es importante recordar que el envío de un aviso de correo electrónico a un usu
 
 Para enviar un aviso al usuario asignado a un caso:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Casos** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione el botón **Enviar aviso de correo electrónico** en la barra de herramientas de acciones de caso.
 3. En el cuadro **de diálogo Enviar aviso de correo electrónico** , seleccione el control desplegable **Elegir una plantilla de aviso** para seleccionar la plantilla de aviso para el aviso. Esta selección rellena previamente los demás campos del aviso.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
@@ -188,17 +188,17 @@ Para enviar un aviso al usuario asignado a un caso:
 
 ### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Escale el caso para la investigación del usuario en situaciones en las que se necesite una revisión legal adicional para la actividad de riesgo del usuario. Esta escalación abre un nuevo caso de exhibición de documentos electrónicos de Microsoft Purview (Premium) en la organización de Microsoft 365. eDiscovery (Premium) proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones legales internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de exhibición de documentos electrónicos (Premium) creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la conservación del contenido. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre eDiscovery (Premium) de Microsoft Purview](overview-ediscovery-20.md).
+Escale el caso para la investigación del usuario en situaciones en las que se necesite una revisión legal adicional para la actividad de riesgo del usuario. Esta escalación abre un nuevo caso Microsoft Purview eDiscovery (Premium) en la organización de Microsoft 365. eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones legales internas y externas de la organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Escalar a un caso de exhibición de documentos electrónicos (Premium) de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la conservación del contenido. Para obtener más información sobre los casos de eDiscovery (Premium), vea [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 Para escalar un caso a una investigación de usuario:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Casos** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione el botón **Escalar para investigación** en la barra de herramientas de acciones de caso.
 3. En el cuadro de diálogo **Escalar para investigación** , escriba un nombre para la nueva investigación de usuario. Si es necesario, escriba notas sobre el caso y seleccione **Escalar**.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Confirmar** para crear el caso de investigación del usuario o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un nuevo caso de investigación de usuario.
 
-Una vez que el caso de administración de riesgos internos se ha escalado a un nuevo caso de investigación de usuarios, puede revisar el nuevo caso en el área **eDiscoveryAdvanced**  >  en el portal de cumplimiento de Microsoft Purview.
+Una vez que el caso de administración de riesgos internos se ha escalado a un nuevo caso de investigación de usuarios, puede revisar el nuevo caso en el área **eDiscoveryAdvanced**  >  de la portal de cumplimiento Microsoft Purview.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ejecución de tareas automatizadas con flujos de Power Automate para el caso
 
@@ -236,7 +236,7 @@ Una vez que los analistas e investigadores de riesgo han completado su revisión
 
 Para resolver un caso:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Casos** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione el botón **Resolver caso** en la barra de herramientas de acciones de caso.
 3. En el cuadro de diálogo **Resolver caso** , seleccione el control desplegable **Resolver como** para seleccionar la clasificación de resolución del caso. Las opciones son **Infracciones de directivas benignas** o **confirmadas**.
 4. En el cuadro de diálogo **Resolver caso** , escriba los motivos de la clasificación de resolución en el campo **De texto Acción realizada** .

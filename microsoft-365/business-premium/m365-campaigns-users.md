@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo estas recomendaciones de seguridad para Microsoft 365 Empresa Premium afectan a los usuarios y protegen los datos.
-ms.openlocfilehash: 202df778e74fb0f14a92b572df977088f8319595
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ffd25f52c0f230506a43a3f611ce933f59d26802
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099969"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469237"
 ---
-# <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
+# <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios de Microsoft 365
 
 Las recomendaciones de seguridad para Microsoft 365 en esta solución hacen que sea mucho más difícil para los hackers obtener acceso a su entorno. El inconveniente es que los usuarios tendrán que saber cómo trabajar dentro de este entorno más seguro. Sabemos que se requiere un poco de paciencia adicional, pero merece la pena mantener protegida su organización.
 

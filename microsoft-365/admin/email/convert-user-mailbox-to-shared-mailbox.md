@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que pueden acceder varias personas en lugar de una sola persona. '
-ms.openlocfilehash: 4838dc7bd4856c89448cb501fdd20066d1c97aa2
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 07b36e5c8b2cb7b2e88dfedd80b31353cb8f7e32
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861948"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466226"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
@@ -76,7 +76,7 @@ Para todo lo demás que necesita saber sobre los buzones compartidos, consulte [
 
 2. Seleccione **Buzones de destinatarios**\>.
 
-3. Seleccione el buzón de usuario. En la pestaña **Buzón** , en **Más acciones**, seleccione **Convertir en buzón compartido**.
+3. Seleccione el buzón de usuario. En la pestaña **Otros** , seleccione **Convertir en buzón compartido**.
 
 4. Si el buzón es menor que 50 GB, puede quitar la [licencia del usuario](../manage/remove-licenses-from-users.md) y dejar de pagar por ella. No elimine la cuenta del usuario. El buzón compartido lo necesita allí como delimitador. Si va a convertir el buzón de un empleado que sale de su organización, debe realizar pasos adicionales para asegurarse de que ya no pueden iniciar sesión. Consulte [Eliminación de un empleado anterior de Microsoft 365](../add-users/remove-former-employee.md).
 

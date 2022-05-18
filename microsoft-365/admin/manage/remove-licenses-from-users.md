@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: El método que use para anular la asignación de licencias de productos depende de si anula la asignación de licencias de usuarios específicos o de un producto específico.
 ms.date: 04/22/2022
-ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093710"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465808"
 ---
-# <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
+# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulación de la asignación de licencias de Microsoft 365 de usuarios
 
 Puede anular la asignación de licencias de los usuarios en la página **Usuarios activos** o en la página **Licencias** . El método que use dependerá de si desea anular la asignación de licencias de productos de usuarios específicos o de anular la asignación de licencias de usuarios de un producto específico.
 
@@ -125,7 +125,7 @@ Cuando se usa la página **Usuarios activos** para anular la asignación de lice
 - Para obtener información sobre cómo bloquear el acceso de un usuario a Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
 - Si quita la licencia de un usuario y sigue teniendo instaladas Office aplicaciones, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones Office.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no va a [reasignar las licencias sin usar a otros usuarios](../../managed-desktop/get-started/assign-licenses.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 

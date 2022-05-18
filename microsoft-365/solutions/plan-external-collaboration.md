@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre la diferencia entre la colaboración de invitados y los canales compartidos en Teams y cómo elegir cuál usar.
-ms.openlocfilehash: c1cf57aa2125638d9155c209d85360a5154b3606
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09948b49d0c4f3e21d03c1e3994e4dd2d609ed13
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953370"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465787"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planear la colaboración externa con conversaciones de canal, colaboración de archivos y aplicaciones compartidas
 
@@ -38,13 +38,13 @@ En este artículo se describe la cuarta opción, la colaboración en grupos con 
 
 ## <a name="terms"></a>Términos
 
-- **Azure AD colaboración B2B**: una característica que permite a los usuarios compartir archivos, carpetas, sitios, grupos y equipos con personas de fuera de la organización. Estos usuarios tienen acceso a recursos compartidos mediante cuentas de invitado en el directorio.
-- **Azure AD conexión directa B2B**: una característica que permite a los usuarios compartir recursos de su organización con personas de otras organizaciones Azure AD. Estas personas acceden a los recursos compartidos mediante su propia cuenta profesional o educativa. No se crea ninguna cuenta de invitado en la organización.
+- **Colaboración B2B de Azure AD** : una característica que permite a los usuarios compartir archivos, carpetas, sitios, grupos y equipos con personas de fuera de la organización. Estos usuarios tienen acceso a recursos compartidos mediante cuentas de invitado en el directorio.
+- **Conexión directa B2B de Azure AD** : una característica que permite a los usuarios compartir recursos de su organización con personas de otras organizaciones de Azure AD. Estas personas acceden a los recursos compartidos mediante su propia cuenta profesional o educativa. No se crea ninguna cuenta de invitado en la organización.
 - **Participante externo** : una persona de fuera de la organización que participa en un recurso(por ejemplo, un canal compartido) que usa su propia identidad y no una cuenta de invitado en el directorio.
 - **Organización externa** : otra organización con la que comparte recursos.
 - **Invitado** : una persona de fuera de la organización que accede a recursos compartidos iniciando sesión en una cuenta de invitado en el directorio.
 - **Organización host** : la organización que hospeda un recurso compartido, como un canal compartido.
-- **Canal compartido**: un canal Teams que se puede compartir con personas ajenas al equipo. Estas personas pueden estar dentro de su organización o de otras organizaciones Azure AD.
+- **Canal compartido**: un canal Teams que se puede compartir con personas ajenas al equipo. Estas personas pueden estar dentro de su organización o de otras organizaciones de Azure AD.
 - **Compartir vínculos** : vínculos con permisos a un archivo o carpeta que se usan para compartir ese archivo o carpeta con otros usuarios. Las personas con las que se comparten pueden estar dentro o fuera de su organización.
 
 ## <a name="options-for-collaboration-in-a-team"></a>Opciones para la colaboración en un equipo
@@ -53,7 +53,7 @@ Al colaborar en un equipo con personas ajenas a su organización, hay dos opcion
 
 ### <a name="guest-sharing"></a>Uso compartido de invitados
 
-El uso compartido de invitados usa Azure AD colaboración B2B para permitir el uso compartido y la colaboración con personas ajenas a su organización mediante la adición de una cuenta de invitado en Azure AD para cada persona. Las cuentas de invitado se pueden usar para lo siguiente:
+El uso compartido de invitados usa la colaboración B2B de Azure AD para permitir el uso compartido y la colaboración con personas ajenas a la organización mediante la adición de una cuenta de invitado en Azure AD para cada persona. Las cuentas de invitado se pueden usar para lo siguiente:
 
 - Pertenencia de invitado a equipos, sitios de SharePoint y grupos de Microsoft 365
 - Uso compartido de archivos y carpetas individuales
@@ -62,7 +62,7 @@ Los invitados de un equipo tienen funcionalidades similares a las de los miembro
 
 ### <a name="external-participants-in-shared-channels"></a>Participantes externos en canales compartidos
 
-Los participantes externos acceden a los recursos compartidos de su organización mediante su propia identidad de Azure AD o Microsoft 365. Esto se habilita mediante Azure AD conexión directa B2B a través de una relación organizativa configurada por ambas organizaciones. Las cuentas de invitado no se usan en esta relación.
+Los participantes externos acceden a los recursos compartidos de su organización mediante su propia identidad de Azure AD o Microsoft 365. Esto se habilita mediante la conexión directa de Azure AD B2B a través de una relación organizativa configurada por ambas organizaciones. Las cuentas de invitado no se usan en esta relación.
 
 La principal ventaja de los participantes externos en los canales compartidos frente al uso compartido de invitados es que las personas de fuera de su organización pueden colaborar con los usuarios en Teams sin tener que cambiar su contexto de usuario. Al usar cuentas de invitado, los usuarios deben cerrar la sesión de Teams con su cuenta profesional o educativa e iniciar sesión de nuevo con la cuenta de invitado. Como alternativa, pueden tener una copia independiente de Teams en ejecución en una sesión del explorador privado. Este cambio entre organizaciones tarda tiempo y puede hacer que los usuarios pierdan comunicaciones importantes mientras cierran sesión en una organización determinada.
 
@@ -72,7 +72,7 @@ Con los canales compartidos, los usuarios pueden permanecer conectados a su orga
 
 En la tabla siguiente se describen las experiencias disponibles en función del tipo de cuenta utilizada.
 
-|Característica|Usuario (su organización)|Invitado (colaboración Azure AD)|Participante externo (Azure AD conexión directa)|
+|Característica|Usuario (su organización)|Invitado (colaboración de Azure AD)|Participante externo (Conexión directa de Azure AD)|
 |:-----|:-----|:------|:-------|
 |Acceso al equipo|v|v|N|
 |Acceso a canales compartidos|v|N|v|
@@ -98,12 +98,12 @@ Aunque los canales compartidos están activados de forma predeterminada en Teams
 
 Si tiene previsto usar canales compartidos con otras organizaciones, puede elegir entre un modelo de autoservicio y un modelo por solicitud.
 
-- Autoservicio: puede configurar el acceso entre inquilinos para permitir el acceso entrante y saliente a todas las demás organizaciones Azure AD. Como alternativa, puede bloquear una lista de organizaciones con las que no quiere que los usuarios compartan, dejando todas las demás organizaciones disponibles. Esto permite a los usuarios invitar a personas ajenas a la organización a participar en canales compartidos sin tener que ponerse en contacto con su departamento de soporte técnico o departamento de TI.
+- Autoservicio: puede configurar el acceso entre inquilinos para permitir el acceso entrante y saliente a todas las demás organizaciones de Azure AD. Como alternativa, puede bloquear una lista de organizaciones con las que no quiere que los usuarios compartan, dejando todas las demás organizaciones disponibles. Esto permite a los usuarios invitar a personas ajenas a la organización a participar en canales compartidos sin tener que ponerse en contacto con su departamento de soporte técnico o departamento de TI.
 - Por solicitud: puede configurar el acceso entre inquilinos para cada organización individual con la que desea permitir canales compartidos. Al elegir este modelo, es importante tener un proceso empresarial documentado que los usuarios puedan seguir para solicitar acceso entre inquilinos con otra organización.
 
 ## <a name="compliance-in-shared-channels"></a>Cumplimiento en canales compartidos
 
-Los canales compartidos se integran con las características de Microsoft Purview.
+Los canales compartidos se integran con características Microsoft Purview.
 
 ### <a name="communications-compliance"></a>Cumplimiento de comunicaciones
 
@@ -111,16 +111,18 @@ Los administradores pueden establecer directivas para supervisar el contenido de
 
 ### <a name="conditional-access"></a>Acceso condicional
 
-Las [directivas de acceso condicional](/azure/active-directory/conditional-access/overview) de la organización host se aplican a los participantes externos, incluidos los usuarios de conexión directa B2B. No se usan las directivas de la organización externa. Los siguientes tipos de directivas de acceso condicional se admiten con canales compartidos:
+Las [directivas de acceso condicional](/azure/active-directory/conditional-access/overview) admitidas de la organización host se pueden aplicar a los usuarios de conexión directa B2B. (No se usan las directivas de la organización externa). Los siguientes tipos de directivas de acceso condicional se admiten con canales compartidos:
 
-- Directivas con ámbito para todos los invitados, participantes externos y SharePoint aplicaciones en la nube en línea.
-- Conceda controles de acceso que requieran MFA, un dispositivo compatible o un dispositivo híbrido Azure AD unido.
+- Directivas que tienen como ámbito **Todos los usuarios invitados y externos**, y la **aplicación en la nube Office 365 SharePoint Online**.
+- Conceda controles de acceso que requieran MFA, un dispositivo compatible o un dispositivo unido a Azure AD híbrido.
 
 Las directivas basadas en IP se admiten en el nivel de archivo SharePoint. Por lo tanto, un participante externo podría acceder al canal compartido desde una ubicación restringida, pero bloquearse al intentar abrir un archivo.
 
+Para obtener más información sobre el acceso condicional para identidades externas, consulte [Autenticación y acceso condicional para identidades externas](/azure/active-directory/external-identities/authentication-conditional-access).
+
 ### <a name="data-loss-prevention-dlp"></a>Prevención de pérdida de datos (DLP)
 
-Los administradores pueden aplicar [directivas DLP de Microsoft Purview](/microsoft-365/compliance/dlp-policy-design) a un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva. Los canales compartidos heredan la directiva de la organización host.
+Los administradores pueden aplicar [Microsoft Purview directivas DLP](/microsoft-365/compliance/dlp-policy-design) a un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva. Los canales compartidos heredan la directiva de la organización host.
 
 ### <a name="retention-policy"></a>Directiva de retención
 

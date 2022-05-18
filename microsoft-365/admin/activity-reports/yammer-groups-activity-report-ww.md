@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga el informe de actividad de grupos de Yammer para conocer el número de grupos de Yammer que se crean y usan en su organización y su actividad.
-ms.openlocfilehash: 443129beaf39a2e46bd5fbcb18bdb9cd9b4770c3
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga el informe de actividad de grupos de Yammer para obtener más información sobre el número de grupos de Yammer que se crean y usan en su organización y su actividad.
+ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781274"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467150"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>informes de Microsoft 365 en el centro de administración: informe de actividad de grupos de Yammer
 
@@ -46,7 +46,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 Puede visualizar el informe **Actividad de grupos de Yammer** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
@@ -55,9 +55,9 @@ Puede visualizar el informe **Actividad de grupos de Yammer** para ver las tende
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo de Yammer también es un grupo de Microsoft 365. <br/> |
 |Fecha de la última actividad (UTC)  <br/> | La última fecha en que el grupo leyó, publicó o gustó un mensaje.  <br/> |
-|Miembros  <br/> | Número de miembros del grupo.  <br/> |
+|Members  <br/> | Número de miembros del grupo.  <br/> |
 |Publicado  <br/> |Número de mensajes publicados en el grupo de Yammer durante el período de informes. <br/>|
-|Leer  <br/> |Número de conversaciones leídas en el grupo de Yammer durante el período de informes.  <br/> |
+|Leído  <br/> |Número de conversaciones leídas en el grupo de Yammer durante el período de informes.  <br/> |
 |Etiquetado como “Me gusta”  <br/> |El número de mensajes que se han gustado en el grupo de Yammer durante el período de informes. <br/>|
 |Nombre de red  <br/> |Nombre completo de la red a la que pertenece el grupo. |
 |||

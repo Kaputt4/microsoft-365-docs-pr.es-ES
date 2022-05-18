@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de la empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022523"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469611"
 ---
-# <a name="enter-your-business-information"></a>Escribir la información de su empresa
+# <a name="enter-your-business-information-in-microsoft-bookings"></a>Escriba la información empresarial en Microsoft Bookings
 
 > [!NOTE]
 > Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.

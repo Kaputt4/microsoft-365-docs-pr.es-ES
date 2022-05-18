@@ -1,5 +1,5 @@
 ---
-title: Agregar la personal de marca de la empresa a la página Iniciar sesión
+title: Agregar la personalización de marca de la empresa a la página de inicio de sesión de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Personalice la Microsoft 365 de inicio de sesión mediante el Azure Active Directory. Puede agregar una ilustración, un logotipo y texto a la página de inicio de sesión.
-ms.openlocfilehash: 39bbda08e280c5bc1eb0eee321de9e8f4eeeabce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Personalice la página de inicio de sesión de Microsoft 365 mediante el Azure Active Directory. Puede agregar una ilustración, un logotipo y texto a la página de inicio de sesión.
+ms.openlocfilehash: ec1fb413b8b8b3fa0100e0751a7971b6c5dd5441
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171644"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466336"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>Agregar la personal de marca de la empresa a la página Iniciar sesión
+# <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Agregar la personalización de marca de la empresa a la página de inicio de sesión de Microsoft 365
 
- Ahora puede usar la suscripción Azure Active Directory (AD) que se incluye con su suscripción Microsoft 365 para personalizar la página de inicio de sesión que ven los usuarios. 
+ Ahora puede usar la suscripción de Azure Active Directory (AD) que se incluye con la suscripción de Microsoft 365 para personalizar la página de inicio de sesión que ven los usuarios. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Agregar la personalización de marca de la empresa a la página de inicio de sesión y a las páginas de Panel de acceso
 
-Si tienes una suscripción de pago a Microsoft 365 para empresas, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otras servicios Microsoft, tienes una suscripción gratuita a Azure Active Directory. Puede usar Azure Active Directory para crear y administrar las cuentas de usuario y de grupo y para agregar la personalización de marca de la empresa a las páginas. Para activar esta suscripción y acceder al portal de administración de Microsoft Azure, tiene que completar un proceso de registro único. Cuando termine, puede acceder a Azure Active Directory desde el servicio de Microsoft que lo usa. Para obtener instrucciones sobre cómo registrar la suscripción Microsoft 365, consulte [Registrar](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)la suscripción Azure Active Directory gratuita y vea Administrar el directorio de la suscripción Microsoft 365 en [Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) para obtener instrucciones de administración general. 
+Si tiene una suscripción de pago para Microsoft 365 para empresas, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, tiene una suscripción gratuita para Azure Active Directory. Puede usar Azure Active Directory para crear y administrar las cuentas de usuario y de grupo y para agregar la personalización de marca de la empresa a las páginas. Para activar esta suscripción y acceder al portal de administración de Microsoft Azure, tiene que completar un proceso de registro único. Cuando termine, puede acceder a Azure Active Directory desde el servicio de Microsoft que lo usa. Para obtener instrucciones sobre cómo registrar la suscripción de Microsoft 365, consulte Registro de la [suscripción gratuita Azure Active Directory](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md) y consulte [Administración del directorio de la suscripción de Microsoft 365 en Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) para obtener instrucciones generales de administración. 
   
 La siguiente ilustración muestra qué partes de la página de inicio de sesión se pueden modificar en Azure.
   
@@ -56,6 +56,6 @@ Si está listo para agregar la personalización de marca, explore las opciones d
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Personalizar el Microsoft 365 de la organización](customize-your-organization-theme.md) (artículo)\
-[Diferencia entre el asistente para la instalación y la página De instalación](o365-setup-wizard-and-setup-page.md) (artículo)\
-[Configurar dispositivos móviles para Microsoft 365 usuarios empresariales](../../business/set-up-mobile-devices.md) (vídeo)
+[Personalice el tema de Microsoft 365 para su organización](customize-your-organization-theme.md) (artículo)\
+[Diferencia entre el asistente para la instalación y la página Configuración](o365-setup-wizard-and-setup-page.md) (artículo)\
+[Configuración de dispositivos móviles para Microsoft 365 para usuarios empresariales](../../business/set-up-mobile-devices.md) (vídeo)

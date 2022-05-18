@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar inquilinos desde una sola ubicación.
-ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713963"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468094"
 ---
-# <a name="multi-tenant-management"></a>Administración multiinquilino
+# <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Administración multiinquilino para administradores de asociados de Microsoft 365
 
 La administración multiinquilino ofrece una forma unificada de administración que permite a Microsoft 365 administradores de asociados administrar todos los inquilinos que administran desde una sola ubicación. Si es un asociado que tiene un rol de administrador delegado y administra varios inquilinos, puede:
 

@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Obtenga información sobre cómo obtener un Aplicaciones Microsoft 365 para el informe de uso de Ideas Viva actividad en el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
-ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga información sobre cómo obtener un Aplicaciones Microsoft 365 para el informe de uso para obtener más información, por ejemplo, sobre la adopción por parte del usuario de Ideas Viva por parte de los usuarios activos.
+ms.openlocfilehash: ae79a1c547c695d86289544159e3492ae8d9bf86
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781323"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467216"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>informes de Microsoft 365 en el centro de administración: actividad de Ideas Viva
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363200"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469281"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -49,11 +49,13 @@ En la ilustración:
 - Las identidades, los dispositivos, los datos, las aplicaciones, la red y otros componentes de infraestructura están configurados con la seguridad adecuada. Las directivas que se configuran para cada uno de estos componentes se coordinan con la estrategia general de Confianza cero. Por ejemplo, las directivas de dispositivo determinan los criterios para los dispositivos en buen estado y las directivas de acceso condicional requieren dispositivos en buen estado para el acceso a aplicaciones y datos específicos.
 - La protección contra amenazas y la inteligencia supervisan el entorno, exponen los riesgos actuales y toman medidas automatizadas para corregir los ataques.
 
+Para obtener más información sobre Confianza cero, consulte [_**el Centro de orientación de Confianza cero**_](/security/zero-trust) de Microsoft.
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-Para obtener más información sobre Confianza cero, consulte [_**el Centro de orientación de Confianza cero**_](/security/zero-trust) de Microsoft.
+
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de Confianza cero para Microsoft 365
 
@@ -68,6 +70,9 @@ En esta ilustración:
 - Confianza cero comienza con una base de protección de dispositivos e identidades.
 - Las funcionalidades de protección contra amenazas se basan en esta base para proporcionar supervisión y corrección en tiempo real de las amenazas de seguridad.
 - La protección de la información y la gobernanza proporcionan controles sofisticados dirigidos a tipos específicos de datos para proteger su información más valiosa y ayudarle a cumplir con los estándares de cumplimiento, incluida la protección de la información personal.
+
+
+En este artículo se supone que ya ha configurado la identidad en la nube. Si necesita instrucciones para este objetivo, consulte Implementación de la [**infraestructura de identidad para Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
 ## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>Paso 1. Configuración de la protección de acceso a dispositivos e identidades de Confianza cero: directivas de punto de partida
 

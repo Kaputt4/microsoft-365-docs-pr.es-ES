@@ -1,5 +1,5 @@
 ---
-title: 'Puntuación de productividad de Microsoft: estado de las aplicaciones Microsoft 365'
+title: Puntuación de productividad y estado de las aplicaciones de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la Aplicaciones Microsoft 365 salud: experiencias tecnológicas Puntuación de productividad.'
-ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a87bd49ace301eeb6f48edc31fba5a02d0386de6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782157"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466380"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas
 
-La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través de su uso de Microsoft 365 y las experiencias tecnológicas que lo respaldan. La puntuación de su organización refleja las mediciones de la experiencia de las personas y la tecnología y se puede comparar con las pruebas comparativas de organizaciones similares a las suyas. La categoría de estado de las aplicaciones forma parte de las medidas que se encuentran en las experiencias tecnológicas. Para más información, consulte la [introducción a la puntuación de productividad](productivity-score.md) y lea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través de su uso de Microsoft 365 y las experiencias tecnológicas que lo respaldan. La puntuación de la organización refleja las medidas de la experiencia de las personas y la tecnología y se puede comparar con las pruebas comparativas de organizaciones similares a las suyas. La categoría de estado de las aplicaciones forma parte de las medidas que se encuentran en las experiencias tecnológicas. Para más información, consulte la [introducción a la puntuación de productividad](productivity-score.md) y lea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organizations-microsoft-365-apps-health-score-matters"></a>¿Por qué importa la puntuación de estado de las aplicaciones Microsoft 365 de su organización?
 

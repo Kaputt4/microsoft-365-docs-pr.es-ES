@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Obtenga información sobre cómo obtener un Aplicaciones Microsoft 365 para el informe de uso mediante el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
-ms.openlocfilehash: 229797921de2e24754203efc466f63661eb26bc8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga información sobre cómo obtener un informe de uso de Aplicaciones Microsoft 365 para ver la actividad del usuario con licencia en todas las aplicaciones y cómo se usan las aplicaciones entre plataformas.
+ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781619"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467534"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>informes de Microsoft 365 en el centro de administración: uso de Aplicaciones Microsoft 365
 
@@ -46,7 +46,7 @@ Puede obtener una vista de la actividad de Aplicaciones Microsoft 365 del usuari
 > [!div class="mx-imgBorder"]
 > ![Aplicaciones Microsoft 365 informe de uso.](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|Item|Descripción|
+|Elemento|Descripción|
 |---|---|
 |1.|El informe de **uso de Aplicaciones Microsoft 365** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).|
 |2.|Los datos de cada informe suelen cubrirse hasta los últimos dos días. Cada seis días, actualizaremos el informe con actualizaciones secundarias para garantizar la calidad de los datos.|

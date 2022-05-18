@@ -21,13 +21,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 'Obtenga el informe de uso de OneDrive para la Empresa para conocer el número total de archivos y almacenamiento que se usan en toda la organización. '
-ms.openlocfilehash: f212a29a5fb41aae9ecb0daeae0638d7af1e5dd1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga el informe de uso de OneDrive para la Empresa para obtener más información sobre el número total de archivos y almacenamiento que se usan en toda la organización.
+ms.openlocfilehash: d195a521fba9dc82867821e27414d125dca09c61
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781591"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467282"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>informes de Microsoft 365 en el centro de administración: uso de OneDrive para la Empresa
 
@@ -50,7 +50,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 El informe de **uso de OneDrive para la Empresa** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |URL  <br/> |Dirección web del OneDrive del usuario. <br/> |

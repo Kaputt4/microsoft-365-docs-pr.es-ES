@@ -5,8 +5,7 @@ keywords: novedades de Microsoft Defender para Office 365, ga, disponibilidad ge
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
@@ -16,17 +15,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 8c2321ce8ed367db386fa97640564d07208db78b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65215801"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466270"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -50,8 +48,10 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
 ## <a name="april-2022"></a>Abril de 2022
 
+- [Presentación de la tabla URLClickEvents en Microsoft 365 Defender búsqueda avanzada](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): introducción a la tabla UrlClickEvents en la búsqueda avanzada con Microsoft Defender para Office 365.
 - [Mejoras de corrección manual del correo electrónico](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): llevar las acciones de purga de correo electrónico manual realizadas en Microsoft Defender para Office 365 al Centro de acciones unificado de Microsoft 365 Defender (M365D) mediante una nueva investigación centrada en la acción.
  
 ## <a name="march-2022"></a>Marzo de 2022
@@ -120,8 +120,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ¿Sabías que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
-[Microsoft 365 hoja de ruta](https://www.microsoft.com/microsoft-365/roadmap)
-
-[Descripción del servicio Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [Microsoft 365 hoja de ruta](https://www.microsoft.com/microsoft-365/roadmap)
+- [Descripción del servicio Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

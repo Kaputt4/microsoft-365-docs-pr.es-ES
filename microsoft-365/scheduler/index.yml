@@ -12,24 +12,30 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 04/23/2021
+  ms.openlocfilehash: 1a0bacdaf7630c6385b1dbbf37fd5a4eb50d77aa
+  ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 05/18/2022
+  ms.locfileid: "65468358"
 additionalContent:
   sections:
-    - items:
-        - title: ¿Qué es Scheduler para Microsoft 365?
-          summary: 'Obtenga información sobre Scheduler para Microsoft 365 y sus características, y quién y cómo se beneficiará.'
-          url: scheduler-overview.md
-        - title: Confianza y privacidad
-          summary: Obtenga información sobre cómo Scheduler for Microsoft 365 garantiza que su confianza y privacidad están protegidas.
-          url: scheduler-trust-privacy.md
-        - title: Configuración del Planificador para Microsoft 365
-          summary: Obtenga información sobre lo que se necesita para configurar Scheduler para Microsoft 365.
-          url: scheduler-setup.md
-        - title: Usar Scheduler para Microsoft 365
-          summary: Obtenga información sobre cómo usar Scheduler para Microsoft 365.
-          url: scheduler-using.md
-        - title: Programar reuniones periódicas dinámicas
-          summary: Obtenga más información sobre programación de reuniones periódicas dinámicas.
-          url: scheduler-recurring-meetings.md
-        - title: Preguntas más frecuentes sobre Scheduler
-          summary: Preguntas y respuestas más frecuentes en Scheduler para Microsoft 365.
-          url: scheduler-faqs.md
+  - items:
+    - title: ¿Qué es Scheduler para Microsoft 365?
+      summary: Obtenga información sobre Scheduler para Microsoft 365 y sus características, y quién y cómo se beneficiará.
+      url: scheduler-overview.md
+    - title: Confianza y privacidad
+      summary: Obtenga información sobre cómo Scheduler for Microsoft 365 garantiza que su confianza y privacidad están protegidas.
+      url: scheduler-trust-privacy.md
+    - title: Configuración del Planificador para Microsoft 365
+      summary: Obtenga información sobre lo que se necesita para configurar Scheduler para Microsoft 365.
+      url: scheduler-setup.md
+    - title: Usar Scheduler para Microsoft 365
+      summary: Obtenga información sobre cómo usar Scheduler para Microsoft 365.
+      url: scheduler-using.md
+    - title: Programar reuniones periódicas dinámicas
+      summary: Obtenga más información sobre programación de reuniones periódicas dinámicas.
+      url: scheduler-recurring-meetings.md
+    - title: Preguntas más frecuentes sobre Scheduler
+      summary: Preguntas y respuestas más frecuentes en Scheduler para Microsoft 365.
+      url: scheduler-faqs.md

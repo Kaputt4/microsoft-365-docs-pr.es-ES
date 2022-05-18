@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en los dispositivos Windows 10.
-ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d75149f8bcb4ea13e1e474acbb1dedfccb4ec50
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319317"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469478"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y actuar al respecto
+# <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Revisar las amenazas detectadas por Antivirus de Microsoft Defender y tomar medidas
 
 En cuanto se detecta un archivo o software malintencionado, Antivirus de Microsoft Defender lo bloquea e impide que se ejecute. Y con la protección entregada en la nube activada, las amenazas recién detectadas se agregan al motor antivirus y antimalware para que los demás dispositivos y usuarios también estén protegidos.
 

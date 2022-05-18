@@ -21,14 +21,14 @@ ms.custom:
 - admindeeplinkMAC
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: bef05f3377bcac46e7f40e60b149dbf6a227a294
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841656"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468906"
 ---
-# <a name="download-perpetual-software-and-product-license-keys"></a>Descarga de claves de licencia de productos y software perpetuos
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Descargue las claves de licencia de productos y software perpetuos en Microsoft 365
 
 En este artículo se explica cómo descargar claves de licencia de software y productos para software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 

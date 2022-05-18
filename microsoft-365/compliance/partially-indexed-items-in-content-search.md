@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento Microsoft Purview.
-ms.openlocfilehash: 0efb96f8d36868f182476a0eb7b0087beb3134f9
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0f3d7d4b2e2a7d4c3c23d89ad6c2b8ba20fd6afb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417048"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468840"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
@@ -164,15 +164,12 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Los archivos que se cifran con [tecnologías de cifrado de Microsoft](encryption.md) y se adjuntan a un mensaje de correo electrónico que coincide con los criterios de una búsqueda se pueden obtener en versión preliminar y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente. 
 
-   > [!NOTE]
-   > Los archivos cifrados mediante etiquetas de confidencialidad no se descifrarán.
-
 - Los mensajes de correo electrónico cifrados con S/MIME se indizan parcialmente. Esto incluye los mensajes cifrados con o sin datos adjuntos.
 
 - Los mensajes de correo electrónico protegidos mediante Azure Rights Management se indexan y se incluirán en los resultados de búsqueda si coinciden con la consulta de búsqueda. Los mensajes de correo electrónico protegidos con derechos se descifran y se pueden obtener en vista previa y exportar. Esta funcionalidad requiere que se le asigne el rol Descifrado de RMS, que se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos.
 
 - Si crea una suspensión basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos indizados parcialmente se colocan en suspensión. Esto incluye elementos parcialmente indexados que no coinciden con los criterios de consulta de búsqueda para la suspensión. Para obtener más información sobre cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Crear una suspensión de eDiscovery](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Investigación de elementos parcialmente indexados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

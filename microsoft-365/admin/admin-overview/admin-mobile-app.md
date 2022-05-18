@@ -1,5 +1,5 @@
 ---
-title: Acerca de la aplicación móvil Administración de Microsoft 365
+title: Acerca de la aplicación móvil de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación Administración de Microsoft 365, tu compañero de la Centro de administración de Microsoft 365 basada en web, para administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: b4d3759002b7ad175a98a6619fc5cbcade16f7a7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a6e267a06ea902638d9c5ef5a9c0c7aee44823d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436171"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466754"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil Administración de Microsoft 365
 
@@ -70,7 +70,7 @@ Debe ser administrador de una organización Microsoft 365 para usar la aplicaci�
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
@@ -83,7 +83,7 @@ Para usar la aplicación, debe tener permisos de administrador y una suscripció
 - Microsoft 365 Empresa Premium
 - Microsoft 365 Empresa Estándar
 - Microsoft 365 Empresa Básico
-- Microsoft 365 E3/E5
+- Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
 - plan de Exchange Online
 - OneDrive para el plan de negocio
@@ -125,7 +125,7 @@ En el menú de navegación izquierdo, vaya a **Configuración** >  **Notificatio
 
 Envíe [feedback365@microsoft.com](mailto:feedback365@microsoft.com) por correo electrónico para notificar un problema con la aplicación. O bien, puede enviar comentarios en la parte inferior de este artículo.
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya descargado el dispositivo móvil de administración, puede agregar usuarios para empezar.
   

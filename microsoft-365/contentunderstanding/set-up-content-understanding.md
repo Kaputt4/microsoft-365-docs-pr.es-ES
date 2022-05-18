@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configurar SharePoint Syntex
-ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935377"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463151"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -45,7 +45,13 @@ Antes de la configuración, asegúrese de planear la mejor forma de configurar l
 
 Como administrador, también puede realizar cambios en la configuración seleccionada en cualquier momento después de la configuración, y a lo largo de la introducción al contenido de la configuración de administración en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
-Si tiene previsto usar un entorno de Power Platform personalizado, deberá [instalar la aplicación *Generador de IA para Proyecto Cortex* en este entorno](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) y [asignar los créditos de Generador de AI](/power-platform/admin/capacity-add-on) a esta antes de poder crear modelos de procesamiento de formularios. Cuando se usa un entorno personalizado, a los creadores de modelos se les debe asignar el rol de seguridad Creador de entorno y a los usuarios del modelo se les debe asignar el rol de seguridad Usuario básico. Consulte [Asignar un rol de seguridad a un usuario](/power-platform/admin/assign-security-roles) para obtener más información.
+### <a name="custom-power-platform-environments"></a>Entornos de Power Platform personalizados
+
+Si tiene previsto usar un entorno de Power Platform personalizado, deberá instalar la aplicación *AI Builder para Proyecto Cortex* en este entorno. Consulte [Administración de aplicaciones de Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) para obtener más información y busque la aplicación *AI Builder para Proyecto Cortex* en la lista de aplicaciones de Dynamics 365.
+
+También debe [asignar créditos de AI Builder](/power-platform/admin/capacity-add-on) al entorno personalizado antes de poder crear modelos de procesamiento de formularios. 
+
+Cuando se usa un entorno personalizado, a los creadores de modelos se les debe asignar el rol de seguridad Creador de entorno y a los usuarios de modelos se les debe asignar el rol de seguridad Usuario básico. Consulte [Asignar un rol de seguridad a un usuario](/power-platform/admin/assign-security-roles) para obtener más información.
 
 Los usuarios que crean modelos en un [sitio del centro de contenido](/microsoft-365/contentunderstanding/create-a-content-center) deben ser miembros del sitio. Los usuarios que crean modelos localmente fuera del centro de contenido deben ser propietarios de los sitios.
 

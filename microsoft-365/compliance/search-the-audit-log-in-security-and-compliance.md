@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320614"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465984"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
@@ -532,7 +532,6 @@ En la siguiente tabla se describen las actividades relacionadas cuando los usuar
 |Lista de elementos actualizada|ListItemUpdated|Un usuario ha actualizado una lista de elementos de SharePoint modificando una o más propiedades.|
 |Una columna de sitio actualizada.|SiteColumnUpdated|Un usuario ha actualizado una de columna de sitio de SharePoint modificando una o más propiedades.|
 |Tipo de contenido de sitio actualizado|SiteContentTypeUpdated|Un usuario ha actualizado una lista de tipo de contenido modificando una o más propiedades.|
-|Elemento de lista visualizado|ListItemViewed|Un usuario ha visto un elemento de lista de SharePoint. Una vez que un usuario visualiza un elemento de lista, el evento ListItemViewed no se vuelve a registrar para el mismo usuario durante los próximos cinco minutos.|
 
 ### <a name="sharing-and-access-request-activities"></a>Actividades de solicitud de acceso y uso compartido
 

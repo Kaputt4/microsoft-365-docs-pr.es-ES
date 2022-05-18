@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285998"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468862"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -82,7 +82,7 @@ Los usuarios también ven un mensaje de error si intentan eliminar un elemento e
     
     Para comprobar o cambiar esta configuración, vaya a la solución de **Administración de registros** en el Portal de cumplimiento de Microsoft Purview > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**. Hay configuraciones independientes para SharePoint y OneDrive.
     
-    Como alternativa, y si no tiene acceso a la solución de **Administración de registros**, puede usar *AllowFilesWithKeepLabelToBeDeletedSPO* y *AllowFilesWithKeepLabelToBeDeletedODB* de [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) y [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
+    Como alternativa, y si no tiene acceso a la solución de **Administración de registros**, puede usar *AllowFilesWithKeepLabelToBeDeletedSPO* y *AllowFilesWithKeepLabelToBeDeletedODB* de [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) y [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
 - La etiqueta de retención marca los elementos como un registro y está [bloqueada](record-versioning.md).
     

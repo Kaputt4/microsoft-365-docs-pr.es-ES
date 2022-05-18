@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
-ms.openlocfilehash: 19e2a0d0514b9d5722ec9649c08a4d6a97025873
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel Informes y averiguar cómo colaboran los usuarios con licencia.
+ms.openlocfilehash: c8c7678991635139f2bdfb97a8baf7ccc2c667aa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781959"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467610"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>informes de Microsoft 365 en el centro de administración: actividad de voz del cliente de Dynamics 365
 
@@ -48,7 +48,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 El informe de **actividad de Voz del cliente de Dynamics 365** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |Dirección de correo electrónico del usuario que realizó la actividad en Microsoft Forms.  <br/> |

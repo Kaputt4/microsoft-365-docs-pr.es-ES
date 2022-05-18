@@ -1,5 +1,5 @@
 ---
-title: Centro de mensajes
+title: Centro de mensajes en el Centro de administración de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre Microsoft 365 Centro de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 498267d62dadef0ec9c0e8811708416dd138eb58
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437709"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466798"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Seguimiento de características nuevas y modificadas en el centro de mensajes de Microsoft 365
 
@@ -51,7 +51,7 @@ También puede usar la [aplicación Administración de Microsoft 365](https://go
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte [Cancelar la suscripción a los correos electrónicos del Centro de mensajes](#unsubscribe-from-message-center-emails) en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 <br>
 

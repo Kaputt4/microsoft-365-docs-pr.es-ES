@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga el informe de uso del dispositivo Yammer para saber en qué dispositivos usan Yammer los usuarios.
-ms.openlocfilehash: 265cef494349daba8b7e526ad6b7c6abd61adcf7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga el informe de uso del dispositivo Yammer para obtener más información sobre los dispositivos en los que los usuarios usan Yammer, el número de usuarios diarios por tipo de dispositivo y los detalles por usuario.
+ms.openlocfilehash: faf5b364090fe4ed88e0a6dd977238e65f3e6c68
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781281"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467194"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>informes de Microsoft 365 en el centro de administración: Yammer informe de uso del dispositivo
 
@@ -48,7 +48,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 El **informe de uso de Yammer dispositivo** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. En esta cuadrícula se muestran los usuarios que han iniciado sesión en Yammer con la cuenta de Microsoft 365 o que han iniciado sesión en la red mediante el inicio de sesión único. <br/> |

@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga el informe de uso de OneDrive para su organización y conozca la actividad de cada usuario OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: 48edb30eae60f6e7dcac5bc63dc9676dc27e0a90
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga el informe de uso OneDrive de su organización y descubra la actividad de cada usuario OneDrive, el número de archivos compartidos y el uso del almacenamiento.
+ms.openlocfilehash: 65046154e17cdb79ee671ec14aa45d089730ca97
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781597"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467260"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>informes de Microsoft 365 en el centro de administración: actividad de OneDrive para la Empresa
 
@@ -48,7 +48,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 Puede visualizar el informe de **actividad de OneDrive para la Empresa** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |Nombre de usuario del propietario de la cuenta de OneDrive.  <br/> |

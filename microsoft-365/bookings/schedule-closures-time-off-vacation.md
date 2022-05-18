@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Programe cierres de oficinas y permisos de empleados en el calendario de Bookings para que los empleados queden marcados como no disponibles para reservas durante horas especificadas.
-ms.openlocfilehash: 1f20a28fa56f57680c547981f1c4d8357d75728e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747308"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468402"
 ---
-# <a name="schedule-business-closures-time-off-and-vacation-time"></a>Programar cierres comerciales, permisos y vacaciones
+# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Programar Bookings cierres de negocios, tiempo libre y tiempo de vacaciones
 
 > [!NOTE]
 > Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
@@ -55,7 +55,7 @@ Cuando un cliente intenta programar el servicio un día en que la oficina está 
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-   :::image type="content" source="../media/bookings-applauncher.png" alt-text="Iniciador de aplicaciones":::
+   :::image type="content" source="../media/bookings-applauncher.png" alt-text="Iniciador de aplicaciones.":::
 
 1. Elija el calendario.
 

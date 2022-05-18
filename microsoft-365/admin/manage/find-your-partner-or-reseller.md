@@ -1,5 +1,5 @@
 ---
-title: Buscar un asociado o distribuidor
+title: Buscar el partner o revendedor de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: Obtenga información sobre cómo encontrar un nuevo partner Microsoft 365 o obtener información de contacto de un partner con el que ha trabajado en el pasado.
-ms.openlocfilehash: 3fe7a2ded991bf8b3603ea992fcd64c6d7866c90
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 338ea8e9c1f0fd75143ec97ca7ea06b7ee15a1c5
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437574"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468490"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Buscar el partner o revendedor de suscripciones de Microsoft 365
 

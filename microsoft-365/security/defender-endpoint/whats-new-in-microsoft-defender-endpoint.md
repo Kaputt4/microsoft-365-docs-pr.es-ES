@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319207"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468808"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "65319207"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Las siguientes características están en versión preliminar o están disponibles con carácter general en la versión más reciente de Microsoft Defender para punto de conexión.
 
@@ -125,7 +125,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - [Las definiciones de grupos de](/microsoft-365/security/defender-endpoint/machine-groups) dispositivos ahora pueden incluir varios valores para cada condición. Puede establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
 
-- [Compatibilidad con la administración de aplicaciones móviles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Esta mejora permite Microsoft Defender para punto de conexión proteger los datos de una organización dentro de una aplicación administrada cuando se usa Intune para administrar aplicaciones móviles. Para obtener más información sobre la administración de aplicaciones móviles, consulte [esta documentación](/microsoft-365/mem/intune/apps/mam-faq).
+- [Compatibilidad con la administración de aplicaciones móviles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Esta mejora permite Microsoft Defender para punto de conexión proteger los datos de una organización dentro de una aplicación administrada cuando se usa Intune para administrar aplicaciones móviles. Para obtener más información sobre la administración de aplicaciones móviles, consulte [esta documentación](/mem/intune/apps/mam-faq).
 
 - [Microsoft Tunnel integración de VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel funcionalidades de VPN ahora se integra con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, lo que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
 

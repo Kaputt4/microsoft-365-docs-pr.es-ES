@@ -1,5 +1,5 @@
 ---
-title: Lista de dispositivos CSV-file
+title: Archivo CSV de lista de dispositivos
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,20 +23,20 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear un archivo CSV para AutoPilot en Microsoft 365 para empresas.
-ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: af695448e31ea93d36b36a8831702acb84a92410
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311763"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469566"
 ---
-# <a name="device-list-csv-file"></a>Lista de dispositivos CSV-file
+# <a name="windows-autopilot-device-list-csv-file"></a>Windows archivo CSV de lista de dispositivos Autopilot
 
-## <a name="device-list-csv-file-format"></a>Lista de dispositivos .csv formato de archivo
+## <a name="device-list-csv-file-format"></a>Formato de archivo .csv lista de dispositivos
 
-Para administrar e implementar dispositivos mediante Windows Autopilot, necesitarás un archivo .csv que contenga información específica sobre los dispositivos.
+Para administrar e implementar dispositivos a través de Windows Autopilot, necesitará un archivo .csv que contenga información específica sobre los dispositivos.
   
-Las columnas del archivo de lista de dispositivos deben tener los siguientes encabezados en el orden especificado:
+Las columnas del archivo de lista de dispositivos deben tener los encabezados siguientes en el orden especificado:
   
 - Columna A: Número de serie del dispositivo
 
@@ -46,10 +46,10 @@ Las columnas del archivo de lista de dispositivos deben tener los siguientes enc
 
 Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), que generará un archivo CSV. 
 
-Al agregar dispositivos, también debes agregarlos a un perfil. Un perfil se usa para aplicar perfiles de implementación de AutoPilot a un dispositivo o un grupo de dispositivos.
+Al agregar dispositivos, también debe agregarlos a un perfil. Un perfil se usa para aplicar perfiles de implementación de AutoPilot a un dispositivo o un grupo de dispositivos.
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 documentación y recursos para empresas](../../index.yml)
+[Microsoft 365 para la documentación y los recursos empresariales](../../index.yml)
   
-[Introducción a Microsoft 365 para empresas](../../admin/admin-overview/what-is-microsoft-365.md)
+[Comenzar con Microsoft 365 para empresas](../../admin/admin-overview/what-is-microsoft-365.md)

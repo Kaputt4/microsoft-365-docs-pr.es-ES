@@ -1,5 +1,5 @@
 ---
-title: Es posible que su dominio esté en uso si otro usuario de la organización lo usó para registrarse
+title: Su dominio puede estar en uso si otra persona se registró con él
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Aprenda a usar el correo electrónico de trabajo o escuela para registrarse en los servicios en línea de Microsoft sin que su departamento de TI se implique. '
-ms.openlocfilehash: adcbad88e098a06d5220e10a0c6d365b47bd2303
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 'Aprenda a usar el correo electrónico profesional o educativo para registrarse en Microsoft servicios en línea sin implicar a su departamento de TI. '
+ms.openlocfilehash: db31c62099d07d27ac0ffe4529b34db9fa5d6d19
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319817"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466666"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Su dominio puede estar en uso si otra persona se ha registrado con él
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Su dominio puede estar en uso si otra persona se registró con él
 
 Los usuarios con un correo electrónico profesional o educativo pueden [registrarse para algunos servicios en línea de Microsoft](self-service-sign-up.md) sin la intervención de su departamento de TI. Por ejemplo, servicios como Office 365, Power BI y Rights Management Services. Al completar el registro de autoservicio, que hacen al proporcionar las direcciones de correo electrónico profesionales o educativas, tienen acceso a características incluidas en el servicio, pero no podrán administrar el servicio (agregar usuarios, agregar licencias, administrar el dominio, etc.). 
   
