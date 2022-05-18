@@ -18,19 +18,19 @@ ms.custom:
 - intro-overview
 search.appverid:
 - MET150
-description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
+description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 48644f2b823c441ce6db8b10eac6213699792b9c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934189"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435819"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: Qué es Microsoft 365 Empresa Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: ¿Qué es Microsoft 365 Empresa Premium?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
