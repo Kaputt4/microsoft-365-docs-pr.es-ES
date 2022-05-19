@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285136"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463272"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -51,18 +51,18 @@ Además:
 
 - Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **Visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, aún pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa en miniatura del Portal de cumplimiento de Microsoft Purview.
 
-- De forma predeterminada, cada persona que tiene acceso a la página **Eliminación** solo ve los elementos que están asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención configuradas para revisión de eliminación: vaya a **Configuración de administración de registros** > **Eliminación** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
+- De forma predeterminada, cada usuario que accede a la página **Eliminación** solo verá los elementos que se han asignado para revisar. Para que un administrador de gestión de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que se han establecido para su revisión para eliminación: vaya a **Configuración de administración de registros** > **Eliminación** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
     > [!IMPORTANT]
-    > Después de habilitar el grupo, no puede cambiarlo en el Portal de cumplimiento de Microsoft Purview. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
+    > Después de habilitar el grupo, no podrá cambiarlo en el portal de cumplimiento de Microsoft Purview. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
 
 - La opción **Configuración de administración de registros** solo está visible para los administradores de administración de registros. 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Habilitar otro grupo de seguridad para su eliminación
 
-Después de habilitar un grupo de seguridad para su eliminación de la **Configuración de administración de registros** en el Portal de cumplimiento de Microsoft Purview, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el portal de cumplimiento de Microsoft Purview. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo si usa el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Después de habilitar un grupo de seguridad para la eliminación desde **Configuración de administración de registros** en el portal de cumplimiento de Microsoft Purview, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el portal de cumplimiento de Microsoft Purview. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo mediante el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
 Por ejemplo: 
 
@@ -88,7 +88,7 @@ Cuando se desencadena una revisión para eliminación al final del período de r
 
 Puede personalizar el correo electrónico de notificación que reciben los revisores, incluidas las instrucciones en distintos idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
 
-Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir directamente a la página **Administración de registros** > **Eliminación** en el Portal de cumplimiento de Microsoft Purview para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden navegar a la página **Eliminación** en el Portal de cumplimiento de Microsoft Purview. Luego:
+Los usuarios reciben una notificación inicial por correo electrónico por etiqueta al final del periodo de retención del elemento y un recordatorio por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir directamente a la página **Administración de registros** > **Eliminación** en el Portal de cumplimiento de Microsoft Purview para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden navegar a la página **Eliminación** en el Portal de cumplimiento de Microsoft Purview. Luego:
 
 - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
 
@@ -122,32 +122,32 @@ El siguiente diagrama muestra el flujo de trabajo básico de una revisión para 
 
 Desencadenar una revisión para eliminación al final del período de retención es una opción de configuración que solo está disponible con una etiqueta de retención. La revisión para eliminación no está disponible para una directiva de retención. Para más información sobre estas dos soluciones de retención, consulte [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md).
 
-En la página **Definir la configuración de retención** de una etiqueta de retención:
+En la página **Elegir lo que sucede después del período de retención** para una etiqueta de retención:
 
 ![Configuración de retención para una etiqueta.](../media/disposition-review-option.png)
  
-Después de seleccionar la opción **Desencadenar una revisión para eliminación**, en la siguiente página de la configuración, especifique cuántas fases consecutivas de eliminación quiere y los revisores de eliminación para cada fase:
+Después de seleccionar la opción **Iniciar una revisión para eliminación**, seleccione **+ Crear fases y asignar revisores**. En la siguiente página de la configuración, especifique cuántas fases consecutivas de eliminación quiere y los revisores para eliminación por cada fase:
 
 ![Especificar revisores de eliminación.](../media/disposition-reviewers.png) 
 
-Seleccione **Agregar una fase** y asigne un nombre a la fase para fines de identificación. Después, especifique los revisores de esa fase.
+Seleccione **+ Agregar una fase** y asigne un nombre a la fase para poder identificarla. Después, especifique los revisores de esa fase.
 
-Para los revisores, especifique un usuario o un grupo de seguridad habilitado para correo. En esta opción no se admiten los grupos de Microsoft 365 ([anteriormente llamados grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
+Para los revisores, especifique hasta 10 usuarios individuales o grupos de seguridad habilitados para correo. En esta opción no se admiten los grupos de Microsoft 365 ([anteriormente llamados grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
 
-Si necesita que más de una persona revise un elemento al final del periodo de retención, seleccione **Agregar una fase** de nuevo y repita el proceso de configuración para el número de fases que necesita, con un máximo de cinco fases. 
+Si necesita que más de un usuario revise un elemento al final del periodo de retención, seleccione **Agregar otra fase** y repita el proceso de configuración para el número de fases que necesita, con un máximo de cinco fases. 
 
 Dentro de cada fase individual de eliminación, cualquiera de los usuarios que especifique para esa fase están autorizados para realizar la siguiente acción para el elemento al final del período de retención. Estos usuarios también pueden agregar otros usuarios a su fase de revisión para eliminación.
 
 > [!NOTE]
-> Si configuró etiquetas de retención antes de que estuviera disponible la revisión para eliminación de varias fases, puede actualizar las etiquetas para admitir esta característica: en el asistente para etiquetas, seleccione **Agregar una fase**, edite los revisores existentes o agregue nuevos revisores.
+> Si configuró etiquetas de retención antes de que estuviera disponible la revisión para eliminación de varias fases, puede actualizar las etiquetas para admitir esta característica: edite la etiqueta y seleccione **Editar fases y revisores** en la página **Elegir lo que sucede después del período de retención**.
 
-Durante la fase de configuración, para cada fase especificada, puede cambiar el nombre, cambiar el orden o quitarla seleccionando la opción de Acciones de fase (**...**): 
+Durante la fase de configuración, por cada fase especificada, puede cambiar el nombre, el orden o quitarla seleccionando **Editar fases y revisores** que ahora se muestran para la opción **Iniciar una revisión para eliminación**. A continuación, para cada fase, puede seleccionar la opción Acciones de fase (**...**): 
 
 ![Acciones de fase para revisiones para eliminación.](../media/stage-actions-disposition-review.png)
 
-Sin embargo, no puede reordenar o quitar una fase después de haber creado la etiqueta de retención.
+Sin embargo, no puede reordenar o quitar una fase después de haber creado la etiqueta de retención. Solo verá disponibles las opciones **Agregar una fase** y **Cambiar el nombre de una fase**. Aún podrá editar los revisores.
 
-Después de especificar a los revisores, recuerde concederles el permiso de rol de **Administración de eliminación**. Para más información, vea la sección [Permisos de eliminación](#permissions-for-disposition) en esta página.
+Después de especificar los revisores, recuerde concederles el permiso del rol **Administración de eliminación**. Para más información, vea la sección [Permisos de eliminación](#permissions-for-disposition) en esta página.
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>Cómo personalizar los mensajes de correo electrónico para la revisión para eliminación
 
@@ -188,8 +188,8 @@ Si utiliza la barra de desplazamiento horizontal o cierra el panel de revisión 
 Como puede ver en el ejemplo que se muestra, las acciones admitidas son las siguientes: 
   
 - **Aprobar eliminación**:
-    - Cuando se selecciona esta acción para una fase provisional de revisión para eliminación (ha configurado varias fases): el elemento se mueve a la siguiente fase de eliminación.
-    - Cuando esta acción se selecciona para la última fase de revisión de eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente, que luego se activa en un trabajo del temporizador dentro de los 7 días. El tiempo exacto para que el elemento se elimine de forma permanente depende de la carga de trabajo. Para obtener más información, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) y [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+    - Cuando se selecciona esta acción para una fase provisional de revisión para eliminación (se han configurado varias fases): el elemento pasa a la siguiente fase de eliminación.
+    - Cuando esta acción se selecciona en la última fase de revisión para eliminación o en caso de que solo haya una fase de eliminación: el elemento se marca como apto para la eliminación permanente y un trabajo de temporizador lo activa dentro de 7 días. El tiempo exacto para que el elemento se elimine de forma permanente depende de la carga de trabajo. Para obtener más información, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) y [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
 - **Volver a etiquetar**:
     - Cuando se selecciona esta acción, el elemento sale del proceso de revisión para eliminación de la etiqueta original. Después, el elemento está sujeto a la configuración de retención de la nueva etiqueta de retención seleccionada.

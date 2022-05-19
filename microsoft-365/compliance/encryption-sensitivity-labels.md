@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285092"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469456"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -165,6 +165,9 @@ Configuración de control de acceso para contenido cifrado:
 ![Configuración de permisos definidos por el administrador.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
+
+> [!NOTE]
+> Aunque puede configurar las opciones de cifrado para permitir el acceso sin conexión, es posible que algunas aplicaciones no admitan el acceso sin conexión para el contenido cifrado. Por ejemplo, los archivos etiquetados y cifrados en [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) no se abrirán sin conexión.
 
 Cuando un usuario abre un documento o correo electrónico que está protegido mediante cifrado del servicio de Azure Rights Management, se concede una licencia de uso de Azure Rights Management para el usuario. Esta licencia de uso es un certificado que contiene los derechos de uso del usuario para el documento o correo electrónico, y la clave de cifrado que se usó para cifrar el contenido. La licencia de uso también contiene una fecha de vencimiento (si se ha configurado) y el tiempo durante el que la licencia de uso es válida.
 

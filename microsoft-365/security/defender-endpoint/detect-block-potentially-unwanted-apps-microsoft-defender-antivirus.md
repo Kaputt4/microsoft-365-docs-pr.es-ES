@@ -14,14 +14,13 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418366"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468314"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -114,7 +113,7 @@ Para System Center 2012 Configuration Manager, consulte [Cómo implementar una d
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>Usar una directiva de grupo para configurar la protección contra PUA
 
-1. Descargue e instale [Plantillas administrativas (.admx) para la actualización de octubre de 2020 de Windows 10 (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
+1. Descargar e instalar [Plantillas administrativas (.admx) para la actualización de octubre de 2021 de Windows 11 (21H2)](https://www.microsoft.com/download/details.aspx?id=103507)
 
 2. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 

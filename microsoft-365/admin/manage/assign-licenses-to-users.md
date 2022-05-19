@@ -1,5 +1,5 @@
 ---
-title: Asignar licencias a los usuarios
+title: Asignar licencias a usuarios en el centro de administración de Microsoft 365
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -26,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 04/22/2022
-ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5402a3f2b1f1e702b0d8f3e8b021206c9131710d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437575"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465830"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Asignar licencias de Microsoft 365 a usuarios
 

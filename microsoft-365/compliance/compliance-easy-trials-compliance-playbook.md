@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
-ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415268"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466292"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -444,4 +444,4 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 **Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
 
-**Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos que se adecuan a las necesidades de seguridad de su organización. [Visitar Recursos](/security/business/resources).
+**Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos importantes para cubrir las necesidades de seguridad de la organización.
