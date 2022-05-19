@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465918"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535434"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 

@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,21 +18,21 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789808"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535788"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Antivirus de Microsoft Defender
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
 
 **Plataformas**
 - Windows
@@ -53,15 +52,10 @@ En este artículo se proporciona información general sobre AIR e incluye víncu
 
 Una investigación automatizada puede iniciarse cuando se desencadena una alerta o cuando un operador de seguridad inicia la investigación.
 
-<br>
-
-****
-
 |Situación|Qué ocurre|
 |---|---|
 |Se desencadena una alerta|En general, se inicia una investigación automatizada cuando se desencadena una [alerta](review-alerts.md) y se crea un [incidente](view-incidents-queue.md) . Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Se inicia un proceso de investigación automatizado en el dispositivo. A medida que se generan otras alertas debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.|
 |Una investigación se inicia manualmente|El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un alto nivel de riesgo. El operador de seguridad puede seleccionar el dispositivo de la lista para abrir su control flotante y, a continuación, seleccionar **Iniciar investigación automatizada**.|
-|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Cómo expande su ámbito una investigación automatizada
 
@@ -84,11 +78,11 @@ En función [del nivel de automatización](automation-levels.md) establecido par
 Todas las acciones de corrección, ya sean pendientes o completadas, se realizan en el [Centro de acciones](auto-investigation-action-center.md). Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para más información, consulte [Revisar y aprobar acciones de corrección después de una investigación automatizada](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Consulte la nueva página de investigación unificada en el portal de Microsoft 365 Defender. Para obtener más información, consulte [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consulte la nueva página de investigación unificada en el portal de Microsoft 365 Defender. Para obtener más información, consulte [la página De investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>Requisitos de AIR
 
-Su organización debe tener Defender para punto de conexión (consulte [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md)).
+La suscripción debe incluir [Defender para punto de conexión](microsoft-defender-endpoint.md) o [Defender para empresas](../defender-business/mdb-overview.md).
 
 > [!NOTE]
 > La investigación y la respuesta automatizadas requieren Antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si Antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
@@ -110,7 +104,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulte la guía interactiva: Investigación y corrección de amenazas con Microsoft Defender para punto de conexión](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar funcionalidades automatizadas de investigación y corrección en Microsoft Defender para punto de conexión](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

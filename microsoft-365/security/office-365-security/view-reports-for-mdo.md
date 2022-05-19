@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ed83064d1686d1cf556e0b2dcca5766556c5fa3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970955"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535854"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender
 
@@ -88,7 +88,7 @@ En la página **Informe de latencia de correo** , las pestañas siguientes está
 
 Independientemente de la pestaña que seleccione, el gráfico muestra los mensajes organizados en las categorías siguientes:
 
-- **En general**
+- **General**
 - **Detonación**
 
 Al mantener el puntero sobre una categoría del gráfico, puede ver un desglose de la latencia en cada categoría.
@@ -247,10 +247,10 @@ Para obtener más información, consulte [Permisos en el portal de Microsoft 365
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
-Si no ve datos en los informes de Defender para Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener definidas [directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md) y [directivas de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md) para que Defender para Office 365 protección esté en vigor. Consulte también [Protección contra correo no deseado y antimalware](anti-spam-and-anti-malware-protection.md).
+Si no ve datos en los informes de Defender para Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener definidas [directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md) y [directivas de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md) para que Defender para Office 365 protección esté en vigor. Consulte también [protección contra correo no deseado](anti-spam-protection.md) y [antimalware](anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 [Informes inteligentes e información en el portal de Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
-[Azure AD roles integrados](/azure/active-directory/roles/permissions-reference)
+[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)

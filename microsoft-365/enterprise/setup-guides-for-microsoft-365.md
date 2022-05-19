@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias del inquilino. Busque una guía para configurar un servicio o una aplicación que necesite ejecutar.
-ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188732"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535932"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -67,7 +67,7 @@ Al migrar el buzón de correo de un usuario de Gmail a Microsoft 365, se migran 
 
 La [guía de configuración de Microsoft 365](https://aka.ms/microsoft365setupguide) proporciona instrucciones al configurar herramientas de productividad, directivas de seguridad y funcionalidades de administración de dispositivos. Con un Microsoft 365 Empresa Premium o Microsoft 365 para una suscripción empresarial, puede usar este asesor para configurar y configurar los dispositivos de su organización.
 
-Recibirá orientación y acceso a los recursos para habilitar los servicios en la nube, actualizar los dispositivos a la versión compatible más reciente de Windows 10 y unir dispositivos a Azure Active Directory (Azure AD), todo en una ubicación central.
+Recibirá instrucciones y acceso a los recursos para habilitar los servicios en la nube, actualizar los dispositivos a la versión compatible más reciente de Windows 10 y unir dispositivos a Azure Active Directory (Azure AD), todo en una ubicación central.
 
 ### <a name="remote-work-setup-guide"></a>Guía de configuración de trabajo remoto
 
@@ -103,11 +103,11 @@ La [guía Seguridad de identidad para equipos](https://admin.microsoft.com/Admin
 
 ### <a name="add-or-sync-users-to-microsoft-365"></a>Agregar o sincronizar usuarios a Microsoft 365
 
-[Esta guía](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) le ayudará a simplificar el proceso de configuración de las cuentas de usuario en **Microsoft 365**. En función del entorno y las necesidades, puede elegir agregar usuarios individualmente, migrar el directorio local con Azure AD sincronización en la nube o Azure AD Conectar, o solucionar problemas de sincronización existentes cuando sea necesario.
+[Esta guía](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) le ayudará a simplificar el proceso de configuración de las cuentas de usuario en **Microsoft 365**. En función del entorno y las necesidades, puede elegir agregar usuarios de forma individual, migrar el directorio local con azure AD cloud sync o Azure AD Conectar o solucionar problemas de sincronización existentes cuando sea necesario.
 
-### <a name="azure-ad-setup-guide"></a>guía de configuración de Azure AD
+### <a name="azure-ad-setup-guide"></a>Guía de configuración de Azure AD
 
-La [guía de configuración de Azure AD](https://aka.ms/aadpguidance) proporciona información para asegurarse de que su organización tiene una base de seguridad sólida. En esta guía configurará características iniciales, como el control de acceso basado en rol de Azure (RBAC de Azure) para administradores, Azure AD Conectar para el directorio local y Azure AD Conectar Health, para que pueda supervisar el estado de la identidad híbrida durante las sincronizaciones automatizadas.
+La [guía de configuración de Azure AD](https://aka.ms/aadpguidance) proporciona información para asegurarse de que su organización tiene una base de seguridad sólida. En esta guía configurará características iniciales, como el control de acceso basado en rol de Azure (Azure RBAC) para administradores, azure AD Conectar para el directorio local y Azure AD Conectar Health, para que pueda supervisar el estado de la identidad híbrida durante las sincronizaciones automatizadas.
 
 También incluye información esencial sobre cómo habilitar el autoservicio de restablecimiento de contraseña, el acceso condicional y el inicio de sesión integrado de terceros, incluida la protección de identidades avanzada opcional y la automatización del aprovisionamiento de usuarios.
 
@@ -181,13 +181,13 @@ Las soluciones de esta guía le ayudarán a obtener visibilidad sobre las activi
 * Con la solución de cumplimiento de comunicaciones, puede identificar y actuar sobre los riesgos de comunicación de elementos como la violencia en el lugar de trabajo, el comercio interno, el acoso, el código de conducta y las infracciones de cumplimiento normativo.
 * La solución de administración de riesgos internos le ayuda a identificar, investigar y tomar medidas sobre los riesgos de robo de propiedad intelectual, fugas de datos confidenciales, infracciones de seguridad, derrames de datos e infracciones de confidencialidad.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Guía de configuración de Microsoft Purview Information Protection
+### <a name="microsoft-purview-information-protection-setup-guide"></a>guía de configuración de Microsoft Purview Information Protection
 
 Obtenga información general sobre las funcionalidades que puede aplicar a su estrategia de protección de la información para que pueda estar seguro de que la información confidencial está protegida. Aplique un planteamiento de ciclo de vida de cuatro fases con el que detectar, clasificar, proteger y supervisar la información confidencial. La [guía de configuración de Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) proporciona instrucciones para completar cada una de estas fases.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guía de configuración de Administración del ciclo de vida de datos de Microsoft Purview
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>guía de configuración de Administración del ciclo de vida de Microsoft Purview
 
-La [guía de configuración de Administración del ciclo](https://aka.ms/migsetupguide) de vida de datos de Microsoft Purview proporciona la información que necesitará para configurar y administrar la estrategia de gobernanza de su organización, para asegurarse de que los datos se clasifican y administran según las directrices específicas del ciclo de vida que establezca. Con esta guía, aprenderá a crear, aplicar automáticamente o publicar etiquetas de retención, directivas de etiquetas de retención y directivas de retención que se aplican al contenido y a los registros de cumplimiento de su organización. También obtendrá información sobre cómo importar archivos CSV con un plan de archivos para escenarios masivos o para aplicarlos manualmente a documentos individuales.
+La [guía de configuración de Administración del ciclo de vida de Microsoft Purview](https://aka.ms/migsetupguide) le proporciona la información que necesitará para configurar y administrar la estrategia de gobernanza de su organización, para asegurarse de que los datos se clasifican y administran según las directrices específicas del ciclo de vida que establezca. Con esta guía, aprenderá a crear, aplicar automáticamente o publicar etiquetas de retención, directivas de etiquetas de retención y directivas de retención que se aplican al contenido y a los registros de cumplimiento de su organización. También obtendrá información sobre cómo importar archivos CSV con un plan de archivos para escenarios masivos o para aplicarlos manualmente a documentos individuales.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>guía de configuración de Microsoft Defender for Cloud Apps
 
@@ -205,11 +205,15 @@ La [guía de configuración de Aplicaciones Microsoft 365](https://aka.ms/OPPqui
 
 ### <a name="mobile-apps-setup-guide"></a>Guía de configuración de aplicaciones móviles
 
-La [guía de configuración de aplicaciones móviles](https://aka.ms/officeappguidance) proporciona instrucciones para la descarga e instalación de aplicaciones Office en los dispositivos móviles Windows, iOS y Android. En esta guía se proporciona información paso a paso para descargar e instalar aplicaciones Microsoft 365 y Office 365 en los dispositivos móviles y tabletas.
+La [guía de configuración de aplicaciones móviles](https://aka.ms/officeappguidance) proporciona instrucciones para la descarga e instalación de aplicaciones de Office en los dispositivos móviles Windows, iOS y Android. En esta guía se proporciona información paso a paso para descargar e instalar aplicaciones Microsoft 365 y Office 365 en los dispositivos móviles y tabletas.
 
 ### <a name="microsoft-teams-setup-guide"></a>guía de configuración de Microsoft Teams
 
 La [guía de configuración de Microsoft Teams](https://aka.ms/teamsguidance) proporciona a su organización instrucciones para configurar áreas de trabajo de equipo que hospedan conversaciones en tiempo real a través de mensajería, llamadas y reuniones de audio o vídeo para la comunicación privada y del equipo. Use las herramientas de esta guía para configurar el acceso de invitado, establecer quién puede crear equipos y agregar miembros del equipo desde un archivo .csv, todo ello sin necesidad de abrir una sesión de PowerShell. También obtendrá los procedimientos recomendados para determinar los requisitos de red de su organización y garantizar una implementación correcta Teams.
+
+### <a name="teams-phone-setup-guide"></a>guía de configuración de Teams Teléfono
+
+La [guía de configuración de Teams Teléfono](https://aka.ms/teamsphonesetupguide) le ayuda a mantenerse conectado con el uso de soluciones de llamada modernas. Aplique funcionalidades clave con un sistema de control de llamadas basado en la nube que admita la carga de trabajo de telefonía para Teams. Puede elegir e implementar características en las opciones de conectividad de red telefónica conmutada (RTC) disponibles. También puede encontrar ayuda para otras características, como operador automático, colas de llamadas, Audioconferencia, identificador de llamada y eventos en directo.
 
 ### <a name="sharepoint-setup-guide"></a>guía de configuración de SharePoint
 

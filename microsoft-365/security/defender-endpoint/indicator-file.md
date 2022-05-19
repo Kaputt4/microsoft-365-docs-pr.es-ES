@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101455"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535600"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -28,12 +28,13 @@ ms.locfileid: "65101455"
 
 **Se aplica a:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender para punto de conexión Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
 
 > [!TIP]
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Evite la propagación de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o sospechas de malware. Si conoce un archivo ejecutable portátil (PE) potencialmente malintencionado, puede bloquearlo. Esta operación impedirá que se lea, escriba o ejecute en dispositivos de su organización.
 
@@ -54,11 +55,14 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 - Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivo personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en la [versión preliminar pública para las funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivos personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en la [versión preliminar pública para las funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Para empezar a bloquear archivos, primero debe [activar la característica "bloquear o permitir"](advanced-features.md) en Configuración.
 
 Esta característica está diseñada para evitar que se descargue malware sospechoso (o archivos potencialmente malintencionados) desde la web. Actualmente admite archivos ejecutables portátiles (PE), incluidos los archivos .exe y .dll. La cobertura se ampliará con el tiempo.
+
+> [!IMPORTANT]
+> En El plan 1 de Defender para punto de conexión y Defender para empresas, puede crear un indicador para bloquear o permitir un archivo. En Defender para empresas, el indicador se aplica en todo el entorno y no se puede limitar a dispositivos específicos.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Creación de un indicador para archivos desde la página de configuración
 
@@ -71,7 +75,7 @@ Esta característica está diseñada para evitar que se descargue malware sospec
 4. Especifique los detalles siguientes:
     - Indicador: especifique los detalles de la entidad y defina la expiración del indicador.
     - Acción: especifique la acción que se va a realizar y proporcione una descripción.
-    - Ámbito: defina el ámbito del grupo de dispositivos.
+    - Ámbito: defina el ámbito del grupo de dispositivos (el ámbito no está disponible en [Defender para empresas](../defender-business/mdb-overview.md)).
 
 5. Revise los detalles de la pestaña Resumen y, a continuación, seleccione **Guardar**.
 
@@ -175,7 +179,7 @@ Las características de aplicación vulnerables a bloques de amenazas y administ
 |exclusión de Antivirus de Microsoft Defender|Permitir|Bloquear|Permitir|
 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438935"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535456"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -177,7 +177,7 @@ Para agregar una nueva directiva, siga estos pasos:
 4. Especifique el ámbito de la directiva. Seleccione los grupos de dispositivos para especificar dónde aplicar la directiva. Solo se impedirá que los dispositivos de los grupos de dispositivos seleccionados accedan a sitios web de las categorías seleccionadas.
 
    > [!IMPORTANT]
-   > Si usa Defender para empresas, el ámbito no se aplica. Omita este paso y continúe con el paso 5.
+   > Si usa Defender para empresas, la directiva de filtrado de contenido web se aplica a todos los usuarios de forma predeterminada. No se aplica el ámbito.
 
 5. Revise el resumen y guarde la directiva. La actualización de la directiva puede tardar hasta 2 horas en aplicarse a los dispositivos seleccionados.
 

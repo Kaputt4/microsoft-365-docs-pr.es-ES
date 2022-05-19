@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre las directivas de expiración de grupos de Microsoft 365.
-ms.openlocfilehash: 9287d61b95d635eccbbef64d307c0aa0e3d12357
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738565"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535810"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 directiva de expiración de grupo
 
@@ -41,8 +41,6 @@ Los grupos que se usen activamente se renovarán automáticamente. Cualquiera de
 - Yammer: vea una publicación dentro de una comunidad de Yammer o un correo electrónico interactivo en Outlook.
 - Formularios: ver, crear o editar formularios, o enviar una respuesta a un formulario. 
 
-Tenga en cuenta que la única actividad Yammer que desencadenará una renovación automática del grupo es la carga de un documento en SharePoint dentro de la comunidad.
-
 > [!IMPORTANT]
 > Al cambiar la directiva de expiración, el servicio vuelve a calcular la fecha de expiración de cada grupo. Siempre comienza a contar desde la fecha en que se creó el grupo y, a continuación, aplica la nueva directiva de expiración.
 
@@ -56,7 +54,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 |Rol|Qué pueden hacer|
 |---------|---------|
 |Office 365 administrador global (en Azure, administrador de empresa), administrador de usuarios|Cree, lea, actualice o elimine la configuración de la directiva de expiración de grupos de Microsoft 365.|
-|Usuario|Renovación o [restauración](/azure/active-directory/users-groups-roles/groups-restore-deleted) de un grupo de Microsoft 365 de su propiedad|
+|User|Renovación o [restauración](/azure/active-directory/users-groups-roles/groups-restore-deleted) de un grupo de Microsoft 365 de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la directiva de expiración
 

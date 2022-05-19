@@ -1,5 +1,5 @@
 ---
-title: Enviar correo a Microsoft 365
+title: Envío de correo a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,27 +16,27 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información como remitente invitado, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. También obtenga información sobre cómo notificar los intentos & correo electrónico no deseado como invitado.
+description: Obtenga información como remitente invitado, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. Aprenda también a notificar el correo electrónico no deseado & intentos de suplantación de identidad (phishing) como invitado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0313025675c59d563a96d2554a94b5102080a3d5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c6d0f594da174236ce03ab0fd9b2af045f57f9f0
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682997"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535910"
 ---
-# <a name="sending-mail-to-microsoft-365"></a>Enviar correo a Microsoft 365
+# <a name="sending-mail-to-microsoft-365"></a>Envío de correo a Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Estos artículos ayudan a los remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios en Microsoft 365. También proporcionan información sobre cómo puede informar de intentos de correo electrónico no deseado e intentos de suplantación de identidad incluso si no es un usuario Microsoft 365 usuario.
+Estos artículos ayudan a los remitentes externos a mejorar su reputación y a aumentar su capacidad de entregar correo electrónico a los usuarios en Microsoft 365. También proporcionan información sobre cómo puede notificar los intentos de correo electrónico no deseado y de suplantación de identidad incluso si no es un usuario Microsoft 365 usted mismo.
 
-Si no es un cliente, pero está intentando enviar correo a alguien en el que se encuentra, está en el lugar correcto. Si eres administrador y necesitas ayuda para combatir el correo no deseado, esta no es la sección adecuada para ti. En su lugar, vaya [a Protección contra correo no deseado y antimalware en Microsoft 365](anti-spam-and-anti-malware-protection.md).
+Si no es cliente, pero está intentando enviar correo a alguien en quien está, está en el lugar correcto. Si es administrador y necesita ayuda para combatir el correo no deseado, esta no es la sección adecuada para usted. En su lugar, vaya a [antispam](anti-spam-protection.md) y [antimalware](anti-malware-protection.md).
 
-|Para obtener información sobre...|Vea...|
+|Para obtener información sobre...|Ver...|
 |---|---|
-|Servicios proporcionados a los administradores de sistemas de correo electrónico que envían correo electrónico individual y masivo a los clientes.|[Servicios de envío de correo de no clientes a Office 365](services-for-non-customers.md)|
-|Cómo solucionar problemas que llegan a los clientes en Microsoft 365 a través del correo electrónico. Procedimientos recomendados para enviar correo masivo a Microsoft 365 destinatarios.|[Correo de solución de problemas enviado a Office 365](troubleshooting-mail-sent-to-office-365.md)|
-|Cómo Microsoft 365 correo no deseado, incluido el correo electrónico de suplantación de identidad y suplantación de identidad, se envía a nuestros clientes.|[Protección contra correo no deseado en Microsoft 365](anti-spam-protection.md)|
-|Cómo usted, un administrador que envía correo electrónico Microsoft 365 clientes, puede evitar que el correo electrónico se bloquee si se adhiere a nuestras directivas contra correo no deseado. Estas son las cuestiones legales que necesita conocer.|[Referencia: Políticas, prácticas y directrices](reference-policies-practices-and-guidelines.md)|
+|Servicios proporcionados a los administradores del sistema de correo electrónico que envían correo electrónico individual y masivo a los clientes.|[Servicios de envío de correo de no clientes a Office 365](services-for-non-customers.md)|
+|Cómo solucionar problemas al llegar a los clientes en Microsoft 365 a través del correo electrónico. Procedimientos recomendados para enviar correo masivo a Microsoft 365 destinatarios.|[Correo de solución de problemas enviado a Office 365](troubleshooting-mail-sent-to-office-365.md)|
+|Cómo Microsoft 365 evita que el correo electrónico no deseado, incluido el correo electrónico de suplantación de identidad y suplantación de identidad, se envíe a nuestros clientes.|[Protección contra correo no deseado en Microsoft 365](anti-spam-protection.md)|
+|Cómo usted, un administrador que envía correo electrónico a Microsoft 365 clientes, puede evitar que el correo electrónico se bloquee si se adhiere a nuestras directivas contra correo no deseado. Estas son las cuestiones legales que necesita conocer.|[Referencia: Políticas, prácticas y directrices](reference-policies-practices-and-guidelines.md)|

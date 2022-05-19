@@ -1,6 +1,6 @@
 ---
-title: Revisar acciones de corrección tras investigaciones automatizadas
-description: Revisar y aprobar (o rechazar) acciones de corrección después de una investigación automatizada.
+title: Revisar las acciones de corrección después de las investigaciones automatizadas
+description: Revise y apruebe (o rechace) las acciones de corrección después de una investigación automatizada.
 keywords: autoir, automatizado, investigación, detección, corrección, acción, pendiente, aprobado
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,124 +16,137 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 952e5a057f893cfc11b928e40e2038255a93601c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329049"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535876"
 ---
-# <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar las acciones de corrección después de una investigación automatizada
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
 
 ## <a name="remediation-actions"></a>Acciones de corrección
 
-Cuando se [ejecuta una investigación automatizada](automated-investigations.md) , se genera un veredicto para cada pieza de evidencia investigada. Los veredictos pueden *ser malintencionados*, *sospechosos* o *no se encuentran amenazas*.
+Cuando se ejecuta una [investigación automatizada](automated-investigations.md) , se genera un veredicto para cada pieza de evidencia investigada. Los veredictos pueden ser *Malintencionados*, *Sospechosos* o *No se encuentran amenazas*.
 
-Dependiendo de
+Dependiendo
 
 - el tipo de amenaza,
-- el veredicto resultante y
-- cómo se configuran los grupos [de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) de la organización,
+- el veredicto resultante, y
+- cómo se configuran los [grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) de la organización,
 
-las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad de la organización.
+las acciones de corrección pueden producirse automáticamente o solo tras la aprobación por parte del equipo de operaciones de seguridad de la organización.
 
 Estos son algunos ejemplos:
 
-- **Ejemplo 1**: Los grupos de dispositivos de Fabrikam se establecen en **Completo: corregir** las amenazas automáticamente (la configuración recomendada). En este caso, las acciones de corrección se toman automáticamente para artefactos que se consideran malintencionados después de una investigación automatizada (vea [Revisar acciones completadas](#review-completed-actions)).
+- **Ejemplo 1**: Los grupos de dispositivos de Fabrikam se establecen en **Completo: corregir amenazas automáticamente** (la configuración recomendada). En este caso, las acciones de corrección se realizan automáticamente para los artefactos que se consideran malintencionados después de una investigación automatizada (consulte [Revisar las acciones completadas](#review-completed-actions)).
 
-- **Ejemplo 2**: Los dispositivos de Contoso se incluyen en un grupo de dispositivos establecido para Semi: requiere la aprobación **de cualquier corrección**. En este caso, el equipo de operaciones de seguridad de Contoso debe revisar y aprobar todas las acciones de corrección después de una investigación automatizada (vea [Revisar acciones pendientes](#review-pending-actions)).
+- **Ejemplo 2**: Los dispositivos de Contoso se incluyen en un grupo de dispositivos establecido para **Semi: requieren aprobación para cualquier corrección**. En este caso, el equipo de operaciones de seguridad de Contoso debe revisar y aprobar todas las acciones de corrección después de una investigación automatizada (consulte [Revisión de las acciones pendientes](#review-pending-actions)).
 
-- **Ejemplo 3**: Tailspin Toys tiene sus grupos de dispositivos establecidos en **No automated response** (no se recomienda). En este caso, no se producen investigaciones automatizadas. No se han realizado acciones de corrección ni están pendientes y no se registra [](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) ninguna acción en el Centro de acciones para sus dispositivos (consulta [Administrar grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
+- **Ejemplo 3**: Tailspin Toys tiene sus grupos de dispositivos establecidos en **Sin respuesta automatizada** (no recomendado). En este caso, no se producen investigaciones automatizadas. No se realizan acciones de corrección o están pendientes, y no se registran acciones en el [Centro](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) de acciones para sus dispositivos (consulte [Administración de grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
-Independientemente de si se realiza automáticamente o tras la aprobación, una investigación automatizada puede dar como resultado una o varias de las acciones de corrección:
+Ya sea que se realice automáticamente o tras la aprobación, una investigación automatizada puede dar lugar a una o varias de las acciones de corrección:
 
 - Poner en cuarentena un archivo
-- Quitar una clave del Registro
+- Eliminación de una clave del Registro
 - Eliminación de un proceso
 - Detener un servicio
 - Deshabilitar un controlador
-- Quitar una tarea programada
+- Eliminación de una tarea programada
 
-## <a name="review-pending-actions"></a>Revisar acciones pendientes
+## <a name="review-pending-actions"></a>Revisión de las acciones pendientes
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> e inicie sesión.
+
 2. En el panel de navegación, elija **Centro de actividades**.
-3. Revise los elementos de la **pestaña** Pendiente.
-4. Seleccione una acción para abrir su panel desplegable.
-5. En el panel desplegable, revise la información y, a continuación, siga uno de los pasos siguientes:
+
+3. Revise los elementos de la pestaña **Pendiente** .
+
+4. Seleccione una acción para abrir su panel flotante.
+
+5. En el panel flotante, revise la información y, a continuación, realice uno de los pasos siguientes:
+
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
    - Seleccione **Aprobar** para iniciar una acción pendiente.
-   - Seleccione **Rechazar** para evitar que se haga una acción pendiente.
-   - Seleccione **Ir a la búsqueda** para ir a [Búsqueda avanzada](advanced-hunting-overview.md).
+   - Seleccione **Rechazar** para evitar que se realice una acción pendiente.
+   - Seleccione **Ir a buscar** para ir a [Búsqueda avanzada](advanced-hunting-overview.md).
 
-## <a name="review-completed-actions"></a>Revisar acciones completadas
+## <a name="review-completed-actions"></a>Revisar las acciones completadas
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> e inicie sesión.
+
 2. En el panel de navegación, elija **Centro de actividades**.
-3. Revise los elementos de la **pestaña** Historial.
+
+3. Revise los elementos de la pestaña **Historial** .
+
 4. Seleccione un elemento para ver más detalles sobre esa acción de corrección.
 
 ## <a name="undo-completed-actions"></a>Deshacer acciones completadas
 
-Si has determinado que un dispositivo o un archivo no es una amenaza, puedes deshacer las acciones de corrección que se realizaron, independientemente de si dichas acciones se realizaron de forma automática o manual. En el Centro de acciones, en la **ficha** Historial, puede deshacer cualquiera de las siguientes acciones:
-
-<br>
-
-****
+Si ha determinado que un dispositivo o un archivo no es una amenaza, puede deshacer las acciones de corrección que se realizaron, independientemente de si esas acciones se realizaron de forma automática o manual. En el Centro de acciones, en la pestaña **Historial** , puede deshacer cualquiera de las siguientes acciones:
 
 |Origen de la acción|Acciones admitidas|
 |---|---|
-|<ul><li>Investigación automatizada</li><li>Antivirus de Microsoft Defender</li><li>Acciones de respuesta manuales</li></ul>|<ul><li>Aislar el dispositivo</li><li>Restringir la ejecución del código</li><li>Poner en cuarentena un archivo</li><li>Quitar una clave del Registro</li><li>Detener un servicio</li><li>Deshabilitar un controlador</li><li>Quitar una tarea programada</li></ul>|
-|
+|<ul><li>Investigación automatizada</li><li>Acciones de respuesta manual (consulte la nota siguiente)</li><li>Antivirus de Microsoft Defender</li></ul>|<ul><li>Deshabilitar un controlador</li><li>Aislar el dispositivo</li><li>Poner en cuarentena un archivo</li><li>Eliminación de una clave del Registro</li><li>Eliminación de una tarea programada</li><li>Restringir la ejecución del código</li><li>Detener un servicio</li></ul>|
+
+> [!NOTE]
+> El plan 1 y [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) de [Defender para punto de conexión](defender-endpoint-plan-1.md) incluyen solo las siguientes acciones de respuesta manual:
+>
+> - Ejecutar examen de antivirus
+> - Aislar el dispositivo
+> - Detener y poner en cuarentena un archivo
+> - Adición de un indicador para bloquear o permitir un archivo
+>
+> Para más información, consulte [Comparación de planes de Microsoft Defender para punto de conexión](defender-endpoint-plan-1-2.md) y [Comparación de características de seguridad en Microsoft 365 planes para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md).
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Para deshacer varias acciones a la vez
 
 1. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) e inicie sesión.
-2. En la **pestaña** Historial, seleccione las acciones que desea deshacer. Asegúrese de seleccionar los elementos que tienen el mismo tipo de acción. Se abre un panel desplegable.
-3. En el panel desplegable, seleccione **Deshacer**.
+
+2. En la pestaña **Historial** , seleccione las acciones que desea deshacer. Asegúrese de seleccionar elementos que tengan el mismo tipo de acción. Se abre un panel flotante.
+
+3. En el panel flotante, seleccione **Deshacer**.
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Para quitar un archivo de la cuarentena en varios dispositivos
 
 1. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) e inicie sesión.
-2. En la **pestaña** Historial, seleccione un elemento que tenga el archivo cuarentena del tipo **de acción**.
-3. En el panel desplegable, seleccione **Aplicar a X más instancias de este** archivo y, a continuación, seleccione **Deshacer**.
+
+2. En la pestaña **Historial** , seleccione un elemento que tenga el **archivo de cuarentena** Tipo de acción.
+
+3. En el panel flotante, seleccione **Aplicar a X más instancias de este archivo** y, a continuación, seleccione **Deshacer**.
 
 ## <a name="automation-levels-automated-investigation-results-and-resulting-actions"></a>Niveles de automatización, resultados de investigación automatizados y acciones resultantes
 
-Los niveles de automatización afectan a si determinadas acciones de corrección se toman automáticamente o solo después de su aprobación. A veces, el equipo de operaciones de seguridad tiene que seguir más pasos, según los resultados de una investigación automatizada. En la tabla siguiente se resumen los niveles de automatización, los resultados de las investigaciones automatizadas y qué hacer en cada caso.
-
-<br>
-
-****
+Los niveles de automatización afectan a si ciertas acciones de corrección se realizan automáticamente o solo tras la aprobación. A veces, el equipo de operaciones de seguridad tiene más pasos que seguir, en función de los resultados de una investigación automatizada. En la tabla siguiente se resumen los niveles de automatización, los resultados de las investigaciones automatizadas y qué hacer en cada caso.
 
 |Configuración del grupo de dispositivos|Resultados de la investigación automatizada|Qué hacer|
 |---|---|---|
-|**Completa: corregir las amenazas automáticamente** (la configuración recomendada)|Se alcanza un veredicto *de* malintencionado para obtener una prueba. <p> Las acciones de corrección apropiadas se toman automáticamente.|[Revisar acciones completadas](#review-completed-actions)|
-|**Completa: corregir las amenazas automáticamente**|Se alcanza un veredicto *de Sospechoso* para obtener una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
-|**Semi: requerir aprobación para cualquier corrección**|Se alcanza un veredicto *de malintencionado* *o* sospechoso para obtener una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
-|**Semi: requerir aprobación para la corrección de carpetas principales**|Se alcanza un veredicto *de* malintencionado para obtener una prueba. <p> Si el artefacto es un archivo o ejecutable y se encuentra en un directorio del sistema operativo, como la carpeta Windows o la carpeta Archivos de programa, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto no *está en* un directorio del sistema operativo, las acciones de corrección se toman automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar acciones completadas](#review-completed-actions)</li></ol>|
-|**Semi: requerir aprobación para la corrección de carpetas principales**|Se alcanza un veredicto *de Sospechoso* para obtener una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions).|
-|**Semi: requerir aprobación para la corrección de carpetas no temporales**|Se alcanza un veredicto *de* malintencionado para obtener una prueba. <p> Si el artefacto es un archivo o ejecutable que no está en una carpeta temporal, como la carpeta de descargas del usuario o la carpeta temporal, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto es un archivo o ejecutable *que se encuentra* en una carpeta temporal, las acciones de corrección se toman automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar acciones completadas](#review-completed-actions)</li></ol>|
-|**Semi: requerir aprobación para la corrección de carpetas no temporales**|Se alcanza un veredicto *de Sospechoso* para obtener una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
-|Cualquiera de los **niveles de automatización** completa **o** semi|Un veredicto *de No se han encontrado amenazas* se alcanza para obtener una prueba. <p> No se han realizado acciones de corrección y no hay ninguna acción pendiente de aprobación.|[Ver detalles y resultados de las investigaciones automatizadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
-|**Sin respuesta automatizada** (no recomendada)|No se ejecutan investigaciones automatizadas, por lo que no se alcanzan los veredictos y no se toman medidas de corrección ni se espera su aprobación.|[Considera la posibilidad de configurar o cambiar los grupos de dispositivos para usar **la automatización** completa **o** semi](/microsoft-365/security/defender-endpoint/machine-groups)|
-|
+|**Completo: corrección automática de amenazas**<br/>(recomendado)|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Revisar las acciones completadas](#review-completed-actions)|
+|**Completo: corrección automática de amenazas**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
+|**Semi: requiere aprobación para cualquier corrección.**|Se llega a un veredicto de *malintencionada* o *sospechosa* para una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
+|**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Si el artefacto es un archivo o ejecutable y se encuentra en un directorio del sistema operativo, como la carpeta Windows o la carpeta Archivos de programa, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto *no* está en un directorio del sistema operativo, las acciones de corrección se realizan automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar las acciones completadas](#review-completed-actions)</li></ol>|
+|**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) las acciones pendientes](#review-pending-actions).|
+|**Semi: se requiere aprobación para la corrección de carpetas no temporales**|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Si el artefacto es un archivo o ejecutable que no está en una carpeta temporal, como la carpeta de descargas del usuario o la carpeta temporal, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto es un archivo o ejecutable que *se encuentra* en una carpeta temporal, las acciones de corrección se realizan automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar las acciones completadas](#review-completed-actions)</li></ol>|
+|**Semi: se requiere aprobación para la corrección de carpetas no temporales**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
+|Cualquiera de los niveles de automatización **completa** o **semiautomatización**|Se llega a un veredicto de *No se encontraron amenazas* para una prueba. <p> No se realizan acciones de corrección y no hay ninguna acción pendiente de aprobación.|[Ver detalles y resultados de las investigaciones automatizadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
+|**Ninguna respuesta automatizada** (no recomendada)|No se ejecutan investigaciones automatizadas, por lo que no se alcanza ningún veredicto y no se toman medidas correctivas ni se espera la aprobación.|[Considere la posibilidad de configurar o cambiar los grupos de dispositivos para usar la automatización **completa** o **semiautomatización**](/microsoft-365/security/defender-endpoint/machine-groups)|
 
-En Microsoft Defender para endpoint, se realiza un seguimiento de todos los veredictos en el [Centro de acciones](auto-investigation-action-center.md#new-a-unified-action-center).
+Se realiza un seguimiento de todos los veredictos en el [Centro de acción](auto-investigation-action-center.md#the-unified-action-center).
 
-## <a name="next-steps"></a>Pasos siguientes
+> [!NOTE]
+> En [Defender para empresas](../defender-business/mdb-overview.md), las funcionalidades automatizadas de investigación y corrección están preestablecidas para usar **Full : corregir amenazas automáticamente**. Estas funcionalidades se aplican a todos los dispositivos de forma predeterminada.
 
-- [Obtenga información sobre las capacidades de respuesta en directo](live-response.md)
+## <a name="next-steps"></a>Siguientes pasos
+
+- [Más información sobre las funcionalidades de respuesta en vivo](live-response.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

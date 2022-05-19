@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1324effe6e7a0b7e52e82b7e55a968a68665a9c1
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: db45e53534b323e32b77197ed568324c5d692615
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420108"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535469"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión
 
@@ -31,8 +31,7 @@ ms.locfileid: "65420108"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
-
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
 
@@ -40,29 +39,29 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 - Use el modo de solución de problemas para deshabilitar o cambiar la configuración de protección contra alteraciones para realizar lo siguiente:
 
-    - Antivirus de Microsoft Defender solución de problemas funcional /compatibilidad de aplicaciones (bloques de aplicación falsos positivos).  
+  - Antivirus de Microsoft Defender solución de problemas funcional /compatibilidad de aplicaciones (bloques de aplicación falsos positivos).
 
-    - Antivirus de Microsoft Defender solución de problemas de rendimiento mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
+  - Antivirus de Microsoft Defender solución de problemas de rendimiento mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
 
 - Si se produce un evento de manipulación (por ejemplo, la `MpPreference` instantánea se modifica o elimina), el modo de solución de problemas finalizará y se habilitará la protección contra alteraciones en el dispositivo.
 
 - Los administradores locales, con los permisos adecuados, pueden cambiar las configuraciones en puntos de conexión individuales que normalmente están bloqueados por la directiva. Tener un dispositivo en modo de solución de problemas puede ser útil al diagnosticar Antivirus de Microsoft Defender escenarios de rendimiento y compatibilidad.
 
-    - Los administradores locales no podrán desactivar Antivirus de Microsoft Defender ni desinstalarla.
+  - Los administradores locales no podrán desactivar Antivirus de Microsoft Defender ni desinstalarla.
 
-    - Los administradores locales podrán configurar todas las demás opciones de seguridad del conjunto de Antivirus de Microsoft Defender (por ejemplo, protección en la nube, protección contra alteraciones).
+  - Los administradores locales podrán configurar todas las demás opciones de seguridad del conjunto de Antivirus de Microsoft Defender (por ejemplo, protección en la nube, protección contra alteraciones).
 
 - Los administradores con permisos de "Administrar configuración de seguridad" tendrán acceso para activar el modo de solución de problemas.
 
 - Microsoft Defender para punto de conexión recopila registros y datos de investigación a lo largo del proceso de solución de problemas.
 
-    - La instantánea de se tomará antes de `MpPreference` que comience el modo de solución de problemas.
+  - La instantánea de se tomará antes de `MpPreference` que comience el modo de solución de problemas.
 
-    - La segunda instantánea se tomará justo antes de que expire el modo de solución de problemas.
+  - La segunda instantánea se tomará justo antes de que expire el modo de solución de problemas.
 
-    - También se recopilarán los registros operativos de durante el modo de solución de problemas.
+  - También se recopilarán los registros operativos de durante el modo de solución de problemas.
 
-    - Todos los registros e instantáneas anteriores se recopilarán y estarán disponibles para que un administrador lo recopile mediante la característica [Recopilar paquete de investigación](respond-machine-alerts.md#collect-investigation-package-from-devices) en la página del dispositivo. Tenga en cuenta que Microsoft no quitará estos datos del dispositivo hasta que un administrador los recopile. 
+  - Todos los registros e instantáneas anteriores se recopilarán y estarán disponibles para que un administrador lo recopile mediante la característica [Recopilar paquete de investigación](respond-machine-alerts.md#collect-investigation-package-from-devices) en la página del dispositivo. Tenga en cuenta que Microsoft no quitará estos datos del dispositivo hasta que un administrador los recopile.
 
 - Los administradores también pueden revisar los cambios en la configuración que tienen lugar durante el modo de solución de problemas en **Visor de eventos** en la página del dispositivo.
 
@@ -98,17 +97,17 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 ## <a name="enable-the-troubleshooting-mode"></a>Habilitación del modo de solución de problemas
 
-1. Vaya al portal de Microsoft 365 Defender (https://security.microsoft.com)e inicie sesión). 
+1. Vaya al portal de Microsoft 365 Defender (<https://security.microsoft.com>) e inicie sesión.
 
 2. Vaya a la página del dispositivo o la página del equipo del dispositivo que desea activar en el modo de solución de problemas. Seleccione **Activar el modo de solución de problemas**. Tenga en cuenta que esto requiere permisos de "Administrar la configuración de seguridad en Security Center" para Microsoft Defender para punto de conexión.
 
    :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Activar el modo de solución de problemas" lightbox="../../media/ts-mode-menu.png":::
 
-3. Confirme que desea activar el modo de solución de problemas para el dispositivo. 
+3. Confirme que desea activar el modo de solución de problemas para el dispositivo.
 
    :::image type="content" source="../../media/ts-mode-conf-flyout.png" alt-text="Control flotante de configuración" lightbox="../../media/ts-mode-conf-flyout.png":::
- 
-4. La página del dispositivo muestra que el dispositivo está ahora en modo de solución de problemas.  
+
+4. La página del dispositivo muestra que el dispositivo está ahora en modo de solución de problemas.
 
    :::image type="content" source="../../media/ts-mode-option-greyed-out.png" alt-text="El dispositivo está ahora en modo de solución de problemas" lightbox="../../media/ts-mode-option-greyed-out.png":::
 
@@ -119,55 +118,55 @@ Estas son algunas consultas de búsqueda avanzadas pregeneradas para proporciona
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>Obtención de eventos de solución de problemas para un dispositivo determinado
 
 ```kusto
-let deviceName = "<device name>";   // update with device name 
-let deviceId = "<device id>";   // update with device id 
-search in (DeviceEvents)  
-(DeviceName == deviceName  
-) and ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,  
- _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,  
- _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,  
- _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource 
+let deviceName = "<device name>";   // update with device name
+let deviceId = "<device id>";   // update with device id
+search in (DeviceEvents)
+(DeviceName == deviceName
+) and ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+ _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
+ _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
+ _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### <a name="devices-currently-in-troubleshooting-mode"></a>Dispositivos actualmente en modo de solución de problemas 
+### <a name="devices-currently-in-troubleshooting-mode"></a>Dispositivos actualmente en modo de solución de problemas
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(3h)    
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-|summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(3h)
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+|summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
 ### <a name="count-of-troubleshooting-mode-instances-by-device"></a>Recuento de instancias de modo de solución de problemas por dispositivo
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(30d)  // choose the date range you want  
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId  
-| sort by count_  
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(30d)  // choose the date range you want
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| sort by count_
 ```
 
 ### <a name="total-count"></a>Recuento total
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(2d) //beginning of time range  
-| where Timestamp < ago(1d) //end of time range  
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()   
-| where count_ > 5          // choose your max # of TS mode instances for your time range
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(2d) //beginning of time range
+| where Timestamp < ago(1d) //end of time range
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
+| where count_ > 5          // choose your max # of TS mode instances for your time range
 ```
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Escenarios de modo de solución de problemas](troubleshooting-mode-scenarios.md)
+- [Escenarios del modo de resolución de problemas](troubleshooting-mode-scenarios.md)
 - [Configuración de seguridad de la protección con protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)

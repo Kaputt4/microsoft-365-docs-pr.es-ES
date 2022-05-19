@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre Caja fuerte Documentos en Microsoft 365 E5/A5 o Microsoft 365 E5/A5 Security.
+description: Obtenga información sobre Caja fuerte Documentos en Microsoft 365 A5 o E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fa1c7e07c1e1cd117ee20f4712dbbadad3c2b5c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4e9e83ec902ec3beafff76e26fff3ce13d0a9b9a
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174129"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535534"
 ---
-# <a name="safe-documents-in-microsoft-365-e5a5"></a>Caja fuerte documentos en Microsoft 365 E5/A5
+# <a name="safe-documents-in-microsoft-365-a5-or-e5-security"></a>Caja fuerte documentos en seguridad de Microsoft 365 A5 o E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -108,7 +108,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [Se
 Si desea permitir o bloquear de forma selectiva el acceso a la característica documentos Caja fuerte, siga estos pasos:
 
 1. Active Caja fuerte Documents en el portal de Microsoft 365 Defender o Exchange Online PowerShell, como se describió anteriormente en este artículo.
-2. Use Azure AD PowerShell para deshabilitar Caja fuerte Documentos para usuarios específicos, como se describe en [Deshabilitar servicios de Microsoft 365 específicos para usuarios específicos para un plan de licencias específico](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan).
+2. Use PowerShell de Azure AD para deshabilitar Caja fuerte Documentos para usuarios específicos, como se describe en [Deshabilitar servicios de Microsoft 365 específicos para usuarios específicos para un plan de licencias específico](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan).
 
   El nombre del plan de servicio que se va a deshabilitar en PowerShell es **SAFEDOCS**.
 

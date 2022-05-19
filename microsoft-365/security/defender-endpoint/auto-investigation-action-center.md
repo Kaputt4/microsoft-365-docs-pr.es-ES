@@ -1,7 +1,7 @@
 ---
-title: Visite el Centro de acciones para ver acciones de corrección
-description: Usar el centro de acción para ver detalles y resultados después de una investigación automatizada
-keywords: acción, centro, autoir, automatizado, investigación, respuesta, corrección
+title: Visite el Centro de acciones para ver las acciones de corrección.
+description: Uso del centro de acciones para ver los detalles y los resultados después de una investigación automatizada
+keywords: action, center, autoir, automated, investigation, response, remediation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,80 +17,80 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 3cd45506601202a4a1bd5a400eeb51a0e07cecc0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6a2cc5d4315c5dd64a852c74176272061789b1ba
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473043"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535412"
 ---
-# <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
+# <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver las acciones de corrección.
 
-Durante y después de una investigación automatizada, se identifican las acciones de corrección para las detecciones de amenazas. Según la amenaza en particular y la configuración de [Microsoft Defender para](/windows/security/threat-protection) endpoint para su organización, algunas acciones de corrección se toman automáticamente y otras requieren aprobación. Si forma parte del equipo de operaciones de seguridad de su organización, puede ver las acciones de corrección pendientes y completadas [en el](manage-auto-investigation.md#remediation-actions) **Centro de acciones**.
-
+Durante y después de una investigación automatizada, se identifican las acciones de corrección para las detecciones de amenazas. En función de la amenaza en particular y de cómo [se configuren las funcionalidades automatizadas de investigación y corrección](configure-automated-investigations-remediation.md) para su organización, algunas acciones de corrección se realizan automáticamente y otras requieren aprobación. Si forma parte del equipo de operaciones de seguridad de la organización, puede ver [las acciones de corrección](manage-auto-investigation.md#remediation-actions) pendientes y completadas en el **Centro de acciones**.
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
 
-## <a name="new-a-unified-action-center"></a>(¡NUEVO!) Un centro de acción unificado
+## <a name="the-unified-action-center"></a>Centro de acciones unificado
 
+Recientemente, se actualizó el Centro de acciones. Ahora tiene una experiencia unificada del Centro de acciones. Para acceder al Centro de acciones, vaya a [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) e inicie sesión.
 
-Nos complace anunciar un nuevo centro de acción unificado ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Página del Centro de acciones en el portal de Microsoft 365 Defender" lightbox="images/mde-action-center-unified.png":::
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Página del Centro de acciones en el portal de Microsoft 365 Defender web" lightbox="images/mde-action-center-unified.png":::
+### <a name="whats-changed"></a>¿Qué ha cambiado?
 
 En la tabla siguiente se compara el nuevo centro de acciones unificado con el centro de acciones anterior.
 
-|El nuevo centro de acciones unificado  |El centro de acciones anterior  |
+|El nuevo centro de acciones unificado  |Centro de acciones anterior  |
 |---------|---------|
-|Enumera las acciones pendientes y completadas para dispositivos y correo electrónico en una ubicación <br/>([Microsoft Defender para Endpoint](microsoft-defender-endpoint.md) más [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Enumera las acciones pendientes y completadas para dispositivos <br/> ([Solo Microsoft Defender para punto de](microsoft-defender-endpoint.md) conexión)   |
+|Enumera las acciones pendientes y completadas para los dispositivos y el correo electrónico en una ubicación <br/>([Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md) más [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Enumera las acciones pendientes y completadas para los dispositivos <br/> (solo [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md))   |
 |Se encuentra en:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se encuentra en:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, elija **Centro de acciones**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Panel de navegación al Centro de acciones en el portal de Microsoft 365 Defender web" lightbox="images/action-center-nav-new.png"::: | En el portal Microsoft 365 Defender, elija **Centro de investigaciones automatizadas** > **.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Una versión anterior del panel de navegación al Centro de acciones en el portal Microsoft 365 Defender navegación" lightbox="images/action-center-nav-old.png":::  |
+| En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Centro de acciones**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Panel de navegación al Centro de acciones en el portal de Microsoft 365 Defender" lightbox="images/action-center-nav-new.png"::: | En el portal de Microsoft 365 Defender, elija **Automated investigationsAction** **center (Centro de** investigaciones automatizadas > ). <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Una versión anterior del panel de navegación al Centro de acciones en el portal de Microsoft 365 Defender" lightbox="images/action-center-nav-old.png":::  |
 
-El Centro de acción unificado reúne acciones de corrección en Defender para Endpoint y Defender para Office 365. Define un lenguaje común para todas las acciones de corrección y proporciona una experiencia de investigación unificada.
+El Centro de acciones unificado reúne acciones de corrección en Defender para punto de conexión y Defender para Office 365. Define un lenguaje común para todas las acciones de corrección y proporciona una experiencia de investigación unificada.
 
 Puede usar el Centro de acciones unificado si tiene los permisos adecuados y una o varias de las siguientes suscripciones:
 
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Defender para punto de conexión](microsoft-defender-endpoint.md)
 - [Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
-
-> [!TIP]
-> Para obtener más información, consulte [Requisitos](/microsoft-365/security/mtp/prerequisites).
+- [Defender para Empresas](../defender-business/mdb-overview.md)
 
 ## <a name="using-the-action-center"></a>Uso del Centro de acciones
 
-Para llegar al Centro de acciones unificado en el portal de Microsoft 365 Defender mejorado:
+Para acceder al centro de acciones unificado en el portal de Microsoft 365 Defender mejorado:
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> e inicie sesión.
+
 2. En el panel de navegación, seleccione **Centro de acciones**.
 
-Cuando visita el Centro de acciones, verá dos pestañas: **Acciones pendientes** e **Historial**. En la tabla siguiente se resume lo que verá en cada pestaña:
+3. Use las **pestañas Acciones pendientes** e **Historial** . En la tabla siguiente se resume lo que verá en cada pestaña:
 
-|Pestaña|Descripción|
-|---|---|
-|**Pending**|Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el **archivo de cuarentena**). <p> **SUGERENCIA**: Asegúrese de revisar y aprobar (o rechazar [)](manage-auto-investigation.md) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan completarse de forma oportuna.|
-|**Historial**|Sirve como registro de auditoría para las acciones que se han realizado, como: <ul><li>Acciones de corrección que se realizaron como resultado de investigaciones automatizadas</li><li>Acciones de corrección aprobadas por el equipo de operaciones de seguridad</li><li>Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de Live Response</li><li>Acciones de corrección realizadas por las características de protección contra amenazas en Antivirus de Microsoft Defender</li></ul> <p> Proporciona una forma de deshacer determinadas acciones (vea [Deshacer acciones completadas](manage-auto-investigation.md#undo-completed-actions)).|
+   |Pestaña|Descripción|
+   |---|---|
+   |**Pendiente**|Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el **archivo de cuarentena**). <p> **SUGERENCIA**: Asegúrese de [revisar y aprobar (o rechazar) las acciones pendientes](manage-auto-investigation.md) lo antes posible para que las investigaciones automatizadas puedan completarse de forma oportuna.|
+   |**Historial**|Actúa como registro de auditoría para las acciones que se realizaron, como: <ul><li>Acciones de corrección que se realizaron como resultado de investigaciones automatizadas</li><li>Acciones de corrección aprobadas por el equipo de operaciones de seguridad</li><li>Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de live response</li><li>Acciones de corrección adoptadas por las características de protección contra amenazas en Antivirus de Microsoft Defender</li></ul> <p> Proporciona una manera de deshacer ciertas acciones (consulte [Deshacer acciones completadas](manage-auto-investigation.md#undo-completed-actions)).|
 
-Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
+4. Para personalizar, ordenar, filtrar y exportar datos en el Centro de acciones, realice uno o varios de los pasos siguientes:
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="El Centro de acciones con columnas y filtros" lightbox="images/new-action-center-columnsfilters.png":::
+   :::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Centro de acciones con columnas y filtros" lightbox="images/new-action-center-columnsfilters.png":::
 
-- Seleccione un encabezado de columna para ordenar los elementos en orden ascendente o descendente.
-- Use el filtro de período de tiempo para ver los datos del último día, semana, 30 días o 6 meses.
-- Elija las columnas que desea ver.
-- Especifique cuántos elementos se deben incluir en cada página de datos.
-- Use filtros para ver solo los elementos que desea ver.
-- Seleccione **Exportar** para exportar resultados a un .csv archivo.
+   - Seleccione un encabezado de columna para ordenar los elementos en orden ascendente o descendente.
+   - Use el filtro de período de tiempo para ver los datos del último día, semana, 30 días o 6 meses.
+   - Elija las columnas que desea ver.
+   - Especifique cuántos elementos se van a incluir en cada página de datos.
+   - Use filtros para ver solo los elementos que desea ver.
+   - Seleccione **Exportar** para exportar los resultados a un archivo .csv.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
-- [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Consulte la guía interactiva: Investigación y corrección de amenazas con Microsoft Defender para punto de conexión](https://aka.ms/MDATP-IR-Interactive-Guide)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
+- [Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md)

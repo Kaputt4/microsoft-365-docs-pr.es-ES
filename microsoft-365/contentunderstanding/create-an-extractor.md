@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7d9e04b26e04a3145f5008121bfde162387a9f6b
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882536"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535490"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -75,13 +75,13 @@ La característica Buscar es útil si está buscando un documento grande o si ha
 
 ## <a name="add-an-explanation"></a>Agregue una explicación
 
-En nuestro ejemplo, vamos a crear una explicación que proporcione una sugerencia sobre el propio formato de entidad y las variaciones que podría tener en los documentos de ejemplo. Por ejemplo, el valor de una fecha puede estar en varios formatos diferentes, como:
+En nuestro ejemplo, vamos a crear una explicación que proporcione una sugerencia sobre el propio formato de entidad y las variaciones que podría tener en los documentos de ejemplo. Por ejemplo, un valor de fecha puede estar en varios formatos diferentes, como:
 
 - 14/10/2019
 - 14 de octubre de 2019
 - Lunes 14 de octubre de 2019
 
-Para ayudar a identificar la *Fecha de inicio del servicio*, puede crear una explicación del patrón.
+Para ayudar a identificar la *fecha de inicio del servicio*, puede crear una explicación de patrón.
 
 1. En la sección de Explicación, seleccione **Nuevo** y escriba un nombre (por ejemplo, *Fecha*).
 2. Para Tipo, seleccione **Lista de patrones**.
@@ -140,15 +140,15 @@ Si vuelve a recibir un **No coincidencia** en sus archivos etiquetados, es proba
 
 ## <a name="test-your-model"></a>Pruebe el modelo
 
-Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes. Esto es opcional, pero un paso útil para evaluar la "adecuación" o preparación del modelo antes de usarlo, mediante la prueba en los archivos que el modelo no ha visto antes.
+Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes. Este paso es opcional, pero útil para evaluar la "adecuación" o preparación del modelo antes de usarlo, mediante la prueba en los archivos que el modelo no ha visto antes.
 
-1. En la página principal del modelo, haga clic en la pestaña **Probar**. Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
+1. En la página principal del modelo, seleccione la pestaña **Prueba** .  Esto ejecutará el modelo en los archivos de ejemplo sin etiquetar.
 
 2. En la lista de **Archivos de prueba**, sus archivos de ejemplo son presentados para mostrar si el modelo es capaz de extraer la información que necesita. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
     ![Prueba en los archivos.](../media/content-understanding/test-filies-extractor.png)
 
-### <a name="further-refine-an-extractor"></a>Refinar aún más un extractor
+## <a name="further-refine-an-extractor"></a>Refinar aún más un extractor
 
 Si tiene entidades duplicadas y desea extraer solo un valor o un determinado número de valores, puede establecer una regla para especificar cómo desea que se procese. Para agregar una regla para refinar la información extraída, siga estos pasos:
 
