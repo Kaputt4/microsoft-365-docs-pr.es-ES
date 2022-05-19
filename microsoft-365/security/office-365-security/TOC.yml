@@ -11,21 +11,17 @@
         - name: Protección contra amenazas paso a paso en Defender para Office 365
           href: protection-stack-microsoft-defender-for-office365.md
         - name: Probar Defender para Office 365
-          href: try-microsoft-defender-for-office-365.md
+          items:
+            - name: Probar Defender para Office 365
+              href: try-microsoft-defender-for-office-365.md
+            - name: Cuaderno de estrategias de prueba de Defender para Office 365
+              href: trial-playbook-defender-for-office-365.md
         - name: Novedades de Microsoft Defender para Office 365
           href: whats-new-in-defender-for-office-365.md
         - name: Defender para Office 365 en el portal de Microsoft 365 Defender
           href: ../defender/microsoft-365-security-center-mdo.md
-        - name: Exchange Online Protection
-          items:
-            - name: Información general de Exchange Online Protection
-              href: exchange-online-protection-overview.md
-            - name: Flujo de correo en EOP
-              href: mail-flow-in-eop.md
-            - name: Cuarentena
-              href: quarantine-email-messages.md
-        - name: 'Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
-          href: turn-on-mdo-for-spo-odb-and-teams.md
+        - name: Información general de Exchange Online Protection
+          href: exchange-online-protection-overview.md
         - name: Información general del portal del Centro de Microsoft 365 Defender
           href: ../defender/microsoft-365-defender.md
         - name: Página de la entidad de correo electrónico
@@ -38,20 +34,6 @@
           href: email-analysis-investigations.md
         - name: Acciones de corrección
           href: air-remediation-actions.md
-        - name: Protección antimalware
-          href: anti-malware-protection.md
-        - name: Protección contra correo no deseado
-          href: anti-spam-protection.md
-        - name: Protección contra phishing
-          href: anti-phishing-protection.md
-        - name: Protección contra la suplantación de identidad
-          href: anti-spoofing-protection.md
-        - name: Datos adjuntos seguros en Microsoft Defender para Office 365
-          href: safe-attachments.md
-        - name: Vínculos seguros en Microsoft Defender para Office 365
-          href: safe-links.md
-        - name: Protección contra el spam de salida
-          href: outbound-spam-controls.md
         - name: Introducción al Panel de seguridad
           href: security-dashboard.md
         - name: Cómo funciona la investigación y respuesta ante amenazas
@@ -64,66 +46,130 @@
           href: protect-against-threats.md
         - name: Integrar Microsoft Defender para Office 365 con Microsoft Defender para punto de conexión
           href: integrate-office-365-ti-with-mde.md
-        - name: Permisos en el portal de Microsoft 365 Defender
-          href: permissions-microsoft-365-security-center.md
-        - name: Permisos en el Centro de seguridad y cumplimiento
-          href: permissions-in-the-security-and-compliance-center.md
+        - name: Permisos
+          items:
+            - name: Permisos en el portal de Microsoft 365 Defender
+              href: permissions-microsoft-365-security-center.md
+            - name: Permisos en el Centro de seguridad y cumplimiento
+              href: permissions-in-the-security-and-compliance-center.md
+            - name: Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
+              href: grant-access-to-the-security-and-compliance-center.md
         - name: Integración de servidor SIEM
           href: siem-server-integration.md
         - name: Integración de SIEM con Microsoft Defender para Office 365
           href: siem-integration-with-office-365-ti.md
         - name: Seguridad predeterminada
           href: secure-by-default.md
-        - name: Configurar directivas contra suplantación de identidad (phishing) en Defender para Office 365
-          href: configure-mdo-anti-phishing-policies.md
-        - name: Configuración de directivas contra phishing en EOP
-          href: configure-anti-phishing-policies-eop.md
-        - name: Configurar directivas antimalware
-          href: configure-anti-malware-policies.md
-        - name: Configurar directivas contra correo electrónico no deseado
+        - name: Protección antimalware
           items:
+            - name: Protección antimalware
+              href: anti-malware-protection.md
+            - name: Configurar directivas antimalware
+              href: configure-anti-malware-policies.md
+            - name: Detección de virus en SharePoint Online
+              href: virus-detection-in-spo.md
+        - name: Protección contra correo no deseado
+          items:
+            - name: Protección contra correo no deseado
+              href: anti-spam-protection.md
             - name: Configurar directivas contra correo electrónico no deseado
               href: configure-your-spam-filter-policies.md
             - name: Configuración del filtro de Spam avanzado (ASF)
               href: advanced-spam-filtering-asf-options.md
-        - name: Configurar EOP para entregar correo no deseado a las carpetas de Correo no deseado en la implementación híbrida
-          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-        - name: Configurar las opciones del correo no deseado en buzones de Exchange Online
-          href: configure-junk-email-settings-on-exo-mailboxes.md
-        - name: Configurar el filtrado de la conexión
-          href: configure-the-connection-filter-policy.md
-        - name: Configuración global para Vínculos seguros en Microsoft Defender para Office 365
-          href: configure-global-settings-for-safe-links.md
-        - name: Configurar el filtrado de spam de salida
-          href: configure-the-outbound-spam-policy.md
-        - name: Configurar y revisar las cuentas prioritarias
-          href: configure-review-priority-account.md
-        - name: Crear listas de remitentes bloqueados
-          href: Create-block-sender-lists-in-office-365.md
-        - name: Crear listas de remitentes seguros
-          href: Create-safe-sender-lists-in-office-365.md
+            - name: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
+              href: what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: Nivel de confianza del spam (SCL)
+              href: spam-confidence-levels.md
+            - name: Nivel de quejas en masa (BCL)
+              href: bulk-complaint-level-values.md
+            - name: Reenvío masivo de correo electrónico en EOP
+              href: backscatter-messages-and-eop.md
+            - name: Reglas de flujo del correo (reglas de transporte)
+              items:
+                - name: Reglas de flujo del correo (reglas de transporte)
+                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+                - name: Usar reglas de flujo de correo para bloquear mensajes con datos adjuntos ejecutables
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+                - name: Usar reglas de flujo de correo para filtrar correo electrónico masivo
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
+                - name: Usar las reglas de flujo de correo para establecer el SCL en los mensajes
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
+            - name: Configurar las opciones del correo no deseado en buzones de Exchange Online
+              href: configure-junk-email-settings-on-exo-mailboxes.md
+            - name: Configurar el filtrado de la conexión
+              href: configure-the-connection-filter-policy.md
+            - name: Protección contra el spam de salida
+              items:
+                - name: Protección contra el spam de salida
+                  href: outbound-spam-controls.md
+                - name: Configurar el filtrado de spam de salida
+                  href: configure-the-outbound-spam-policy.md
+                - name: Controlar el reenvío automático de correo electrónico externo
+                  href: external-email-forwarding.md
+                - name: Grupos de entrega de salida
+                  href: high-risk-delivery-pool-for-outbound-messages.md
+        - name: Protección contra phishing
+          items:
+            - name: Protección contra phishing
+              href: anti-phishing-protection.md
+            - name: Protección contra la suplantación de identidad
+              href: anti-spoofing-protection.md
+            - name: Directivas de protección contra phishing
+              href: set-up-anti-phishing-policies.md
+            - name: Configuración de directivas contra phishing en EOP
+              href: configure-anti-phishing-policies-eop.md
+            - name: Configurar directivas contra suplantación de identidad (phishing) en Defender para Office 365
+              href: configure-mdo-anti-phishing-policies.md
+            - name: Cómo Office 365 valida la dirección del remitente para evitar phishing
+              href: how-office-365-validates-the-from-address.md
+        - name: Purga automática (ZAP)
+          href: zero-hour-auto-purge.md
+        - name: Cómo se combinan las directivas y las protecciones
+          href: how-policies-and-protections-are-combined.md
+        - name: Datos adjuntos seguros en Microsoft Defender para Office 365
+          items:
+            - name: Datos adjuntos seguros en Microsoft Defender para Office 365
+              href: safe-attachments.md
+            - name: Configurar directivas de Datos adjuntos seguros en Microsoft Defender para Office 365
+              href: set-up-safe-attachments-policies.md
+            - name: 'Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
+              href: mdo-for-spo-odb-and-teams.md
+            - name: 'Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
+              href: turn-on-mdo-for-spo-odb-and-teams.md
+            - name: Documentos seguros en seguridad A5 o E5
+              href: safe-docs.md
+        - name: Vínculos seguros en Microsoft Defender para Office 365
+          items:
+            - name: Vínculos seguros en Microsoft Defender para Office 365
+              href: safe-links.md
+            - name: Configurar directivas de Vínculos seguros en Microsoft Defender para Office 365
+              href: set-up-safe-links-policies.md
+            - name: Configuración global para Vínculos seguros en Microsoft Defender para Office 365
+              href: configure-global-settings-for-safe-links.md
+        - name: Etiquetas de usuario en Microsoft Defender para Office 365
+          items:
+            - name: Etiquetas de usuario en Microsoft Defender para Office 365
+              href: user-tags.md
+            - name: Configurar y revisar las cuentas prioritarias
+              href: configure-review-priority-account.md
         - name: Autenticación de correo electrónico
-          href: email-validation-and-authentication.md
-        - name: Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
-          href: grant-access-to-the-security-and-compliance-center.md
-        - name: Documentos seguros en Microsoft Defender para Office 365
-          href: safe-docs.md
-        - name: Configurar directivas de Vínculos seguros en Microsoft Defender para Office 365
-          href: set-up-safe-links-policies.md
-        - name: Configurar directivas de Datos adjuntos seguros en Microsoft Defender para Office 365
-          href: set-up-safe-attachments-policies.md
-        - name: Configurar SPF para ayudar a evitar la suplantación de identidad
-          href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+          items:
+            - name: Autenticación de correo electrónico
+              href: email-validation-and-authentication.md
+            - name: Usar DKIM para validar el correo saliente
+              href: use-dkim-to-validate-outbound-email.md
+            - name: Compatibilidad para la validación de mensajes firmados con DKIM
+              href: support-for-validation-of-dkim-signed-messages.md
+            - name: Usar DMARC para validar el correo electrónico
+              href: use-dmarc-to-validate-email.md
+            - name: Configurar SPF para ayudar a evitar la suplantación de identidad
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Cómo Microsoft 365 usa SPF para evitar la suplantación de identidad
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
+        - name: Flujo de correo en EOP
+          href: mail-flow-in-eop.md
         - name: Directivas de envíos de usuario
           href: user-submission.md
-        - name: Etiquetas de usuario en Microsoft Defender para Office 365
-          href: user-tags.md
-        - name: 'Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
-          href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: Usar DKIM para validar el correo saliente
-          href: use-dkim-to-validate-outbound-email.md
-        - name: Usar DMARC para validar el correo electrónico
-          href: use-dmarc-to-validate-email.md
         - name: Agregar la compatibilidad para el correo electrónico entrante anónimo a través de IPv6
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Instalar Protección de aplicaciones para Office
@@ -184,18 +230,14 @@
               href: manage-tenant-allows.md
             - name: Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
               href: modify-remove-entries-tenant-allow-block.md
+        - name: Crear listas de remitentes bloqueados
+          href: Create-block-sender-lists-in-office-365.md
+        - name: Crear listas de remitentes seguros
+          href: Create-safe-sender-lists-in-office-365.md
         - name: Seguimiento de mensajes
           href: message-trace-scc.md
-        - name: Usar reglas de flujo de correo para bloquear mensajes con datos adjuntos ejecutables
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-        - name: Usar reglas de flujo de correo para filtrar correo electrónico masivo
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-        - name: Usar las reglas de flujo de correo para establecer el SCL en los mensajes
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
-        - name: 'Purga automática cero horas: protección contra correo no deseado y malware'
-          href: zero-hour-auto-purge.md
-        - name: Controlar el reenvío automático de correo electrónico externo
-          href: external-email-forwarding.md
+        - name: Supervisar pérdidas de datos personales
+          href: monitor-for-leaks-of-personal-data.md
     - name: Detección
       items:
         - name: Explorador de amenazas para Defender para Office 365
@@ -210,10 +252,6 @@
           href: threat-trackers.md
         - name: Directivas de alerta
           href: ../../compliance/alert-policies.md
-        - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
-          href: reports-and-insights-in-security-and-compliance.md
-        - name: Reglas de flujo del correo (reglas de transporte)
-          href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: Ejecución de un informe de grupo de funciones de administrador
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: Investigar
@@ -248,6 +286,8 @@
               href: view-reports-for-mdo.md
             - name: Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
               href: view-mail-flow-reports.md
+            - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
+              href: reports-and-insights-in-security-and-compliance.md
         - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
           items:
             - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
@@ -320,14 +360,20 @@
           href: air-review-approve-pending-completed-actions.md
         - name: Ajustar protección contra phishing
           href: tuning-anti-phishing.md
-        - name: Buscar y liberar mensajes en cuarentena como usuario
-          href: find-and-release-quarantined-messages-as-a-user.md
-        - name: Administrar mensajes en cuarentena y archivos como administrador
-          href: manage-quarantined-messages-and-files.md
-        - name: Directivas de cuarentena
-          href: quarantine-policies.md
-        - name: Liberar mensajes en cuarentena de buzones compartidos
-          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+        - name: Cuarentena
+          items:
+            - name: Cuarentena
+              href: quarantine-email-messages.md
+            - name: Administrar mensajes en cuarentena y archivos como administrador
+              href: manage-quarantined-messages-and-files.md
+            - name: Buscar y liberar mensajes en cuarentena como usuario
+              href: find-and-release-quarantined-messages-as-a-user.md
+            - name: Directivas de cuarentena
+              href: quarantine-policies.md
+            - name: Liberar mensajes en cuarentena de buzones compartidos
+              href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+            - name: Notificaciones de cuarentena
+              href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: Preguntas más frecuentes
@@ -354,24 +400,8 @@
           href: help-and-support-for-eop.md
         - name: Correo de solución de problemas enviado a Microsoft 365
           href: troubleshooting-mail-sent-to-office-365.md
-        - name: Cómo Microsoft 365 usa SPF para evitar la suplantación de identidad
-          href: how-office-365-uses-spf-to-prevent-spoofing.md
-        - name: Cómo Office 365 valida la dirección del remitente para evitar phishing
-          href: how-office-365-validates-the-from-address.md
-        - name: Cómo se combinan las directivas y las protecciones
-          href: how-policies-and-protections-are-combined.md
         - name: Encabezados de mensajes de correo no deseado
           href: anti-spam-message-headers.md
-        - name: Directivas de protección contra phishing
-          href: set-up-anti-phishing-policies.md
-        - name: Reenvío masivo de correo electrónico en EOP
-          href: backscatter-messages-and-eop.md
-        - name: Nivel de quejas en masa (BCL)
-          href: bulk-complaint-level-values.md
-        - name: Notificaciones de cuarentena
-          href: use-spam-notifications-to-release-and-report-quarantined-messages.md
-        - name: Grupos de entrega de salida
-          href: high-risk-delivery-pool-for-outbound-messages.md
         - name: Inteligencia de flujo de correo en EOP
           href: mail-flow-intelligence-in-office-365.md
         - name: 'Referencia: Políticas, prácticas y directrices'
@@ -380,14 +410,8 @@
           href: sending-mail-to-office-365.md
         - name: Servicios para no clientes
           href: services-for-non-customers.md
-        - name: Nivel de confianza del spam (SCL)
-          href: spam-confidence-levels.md
-        - name: Compatibilidad para la validación de mensajes firmados con DKIM
-          href: support-for-validation-of-dkim-signed-messages.md
-        - name: Detección de virus en SharePoint Online
-          href: virus-detection-in-spo.md
-        - name: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
-          href: what-s-the-difference-between-junk-email-and-bulk-email.md
+        - name: Configurar EOP para entregar correo no deseado a las carpetas de Correo no deseado en la implementación híbrida
+          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
     - name: Documentos de Microsoft 365 Defender
       items:
         - name: Microsoft 365 Defender
