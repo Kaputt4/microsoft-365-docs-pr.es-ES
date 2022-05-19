@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
-ms.openlocfilehash: 3c3b83028ba2086cc167895075b9099795d988dc
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre.
+ms.openlocfilehash: f48cbf3428988ce50b9f8913dd4f6c4e47858b2d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765509"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466732"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -145,7 +145,7 @@ Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida
 
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Lo sentimos, no se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
 
-Si recibió el mensaje de error "**No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**". significa que no es un administrador global y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
+Si recibe el mensaje de error "**Lo sentimos, no se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**.", significa que no es un administrador global y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Qué hacer con las direcciones de correo electrónico antiguas
 
@@ -166,7 +166,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 ```
 
 > [!TIP]
-> Esto cambia el atributo **userPrincipalName** de la persona y no influirá en su dirección de correo electrónico Microsoft Online Email Routing Address (MOERA). Sin embargo, es recomendable, que el inicio de sesión del usuario UPN coincida con su dirección SMTP principal.
+> Esto cambia el atributo **userPrincipalName** de la persona y no afecta a su dirección de correo electrónico de Microsoft Online Email Routing Address (MOERA). Sin embargo, se recomienda que el UPN de inicio de sesión de la persona coincida con su dirección SMTP principal.
 
 Para obtener información sobre cómo cambiar el nombre de usuario de una persona en Active Directory, en Windows Server 2003 y en las versiones anteriores, vea [Cambiar el nombre de una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
 
