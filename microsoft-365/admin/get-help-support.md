@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 54c25cd9b6a7fcca46bd434f4e195c088d8d0986
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560113"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465896"
 ---
-# <a name="get-support"></a>Obtener soporte técnico
+# <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, es porque no es un administrador. Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para acceder a esta página o realizar esta acción, no es administrador. Para obtener más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. En la parte inferior derecha de la página, seleccione **Ayuda y soporte técnico**.
 3. Escriba una pregunta o palabra clave en el cuadro de texto. Si aparece una lista desplegable, seleccione la que más se acerque a su pregunta, o siga escribiendo su pregunta, y luego pulse **Aceptar**.
 4. Si los resultados no ayudan, en la parte inferior, seleccione **Ponerse en contacto con el soporte técnico**.

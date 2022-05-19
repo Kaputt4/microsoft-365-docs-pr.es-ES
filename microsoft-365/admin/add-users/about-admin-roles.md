@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Obtenga más información sobre los roles de administrador, como el rol de administrador de servicios, que se asignan a funciones empresariales específicas y conceden permisos para realizar tareas específicas en el centro de administración.
+ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435333"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467128"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Acerca de los roles de administrador en el Centro de administración de Microsoft 365
 
