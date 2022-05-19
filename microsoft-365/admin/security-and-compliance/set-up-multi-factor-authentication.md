@@ -28,14 +28,14 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1279220ceb8de5c5fdb4361a258e2c2bfc1f7061
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c37e9126b7cf06929ca9c97533cddf19d1b71f6e
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767429"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468972"
 ---
-# <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
+# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurar la autenticación multifactor para Microsoft 365
 
 La autenticación multifactor significa que usted y sus empleados deben proporcionar más de una manera de iniciar sesión en Microsoft 365 es una de las formas más fáciles de proteger su negocio. En función de su comprensión de [autenticación multifactor (MFA) y su compatibilidad con Microsoft 365](multi-factor-authentication-microsoft-365.md), es el momento de configurarla e implementarla en su organización. 
 
@@ -56,7 +56,7 @@ La autenticación multifactor significa que usted y sus empleados deben proporci
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para poder gestionar la MFA, debe ser administrador global. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
+- Debe ser administrador global para administrar MFA. Para obtener más información, consulte [Acerca de los roles de administrador](../add-users/about-admin-roles.md).
 - Si tiene activada la MFA heredada por usuario, [Desactive la MFA heredada por usuario](#turn-off-legacy-per-user-mfa).
 - Si tiene clientes de Office 2013 en dispositivos Windows, [habilite la autenticación moderna para clientes de Office 2013](./enable-modern-authentication.md).
 - Configuración avanzada: si tiene servicios de directorio de terceros con Servicios de federación de Active Directory (AD FS), configure el Servidor Azure MFA. Consulte [escenarios avanzados con Azure AD Multifactor Authentication y soluciones VPN de terceros](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) para obtener más información.
@@ -100,7 +100,7 @@ Si su organización tiene necesidades de seguridad de inicio de sesión más por
 
 El acceso condicional está disponible para los clientes que hayan adquirido Azure AD Premium P1 o licencias que lo incluyan, como Microsoft 365 Empresa Premium y Microsoft 365 E3. Para obtener más información, vea [Crear una directiva de acceso condicional](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-El acceso condicional basado en el riesgo está disponible con la licencia de Azure AD Premium P2 o las licencias que lo incluyen, como Microsoft 365 E5. Para más información, vea [Acceso condicional basado en el riesgo](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+El acceso condicional basado en riesgos está disponible a través de Azure AD Premium licencia P2 o de licencias que lo incluyen, como Microsoft 365 E5. Para obtener más información, consulte [Acceso condicional basado en riesgos](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Para obtener más información sobre Azure AD P1 y P2, vea [Precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 

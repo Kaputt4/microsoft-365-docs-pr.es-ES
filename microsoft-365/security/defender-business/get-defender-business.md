@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 6ac255fecaad4fd442116d4abb951be71d3ce6c7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173121"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587400"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -46,7 +46,7 @@ Si se ha registrado para obtener una evaluación, después de recibir el correo 
 3. Vaya a [Agregar usuarios y asigne licencias](mdb-add-users.md).
 
 > [!TIP]
-> Asegúrese de ver el [cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
+> Consulte el [cuaderno de estrategias de prueba para Defender para empresas](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
 
@@ -84,8 +84,8 @@ Cuando reciba el correo electrónico de aceptación, aquí le mostremos cómo ac
 
    | Escenario | Procedure |
    |:---|:---|
-   | Está configurando una suscripción de Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<br/><br/>1. Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).<br/><br/>2. Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.<br/><br/>3. Agregar usuarios y asignar licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md). |
-   | Va a agregar una prueba a un inquilino de Microsoft 365 existente. | 1. Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.<br/><br/>2. En el panel de navegación, elija **UsuariosUsuarios** >  **activos**. Revise la lista de usuarios. <br/><br/>3. Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md). |
+   | Está configurando una suscripción de Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<ol><li>Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).</li><li>Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.</li><li>Agregue usuarios y asigne licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md).</li></ol> |
+   | Va a agregar una prueba a un inquilino de Microsoft 365 existente. | <ol><li>Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.</li><li>En el panel de navegación, elija **UsuariosUsuarios** >  **activos**. Revise la lista de usuarios. </li><li>Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Dos portales para la instalación
 
@@ -93,14 +93,14 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 
 |Portal  |Descripción  |
 |---------|---------|
-| El Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use el Centro de administración de Microsoft 365 para activar la prueba e iniciar sesión por primera vez.<br/><br/> También usará el Centro de administración de Microsoft 365 para: <br/>- Agregar o quitar usuarios.<br/>- Asignar licencias de usuario.<br/>- Ver sus productos y servicios.<br/>- Complete las tareas de configuración de la suscripción de Microsoft 365. <br/><br/> Para obtener más información, consulte [Información general de la Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Use el portal de Microsoft 365 Defender para configurar Defender para empresas. <br/><br/>Usará el portal de Microsoft 365 Defender para: <br/>- Ver los dispositivos y las directivas de protección de dispositivos.<br/>- Ver las amenazas detectadas y tomar medidas.<br/>- Ver recomendaciones de seguridad y administrar la configuración de seguridad.<br/><br/>Para obtener más información, consulte [Comenzar mediante el portal de Microsoft 365 Defender](mdb-get-started.md).        |
+| El Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use el Centro de administración de Microsoft 365 para activar la prueba e iniciar sesión por primera vez.<p> También usará el Centro de administración de Microsoft 365 para: <ul><li>Agregar o quitar usuarios.</li><li>Asignar licencias de usuario.</li><li>Vea sus productos y servicios.</li><li>Complete las tareas de configuración de la suscripción de Microsoft 365.</li></ul><p>Para obtener más información, consulte [Información general de la Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Use el portal de Microsoft 365 Defender para configurar Defender para empresas.<p>Usará el portal de Microsoft 365 Defender para: <ul><li>Vea los dispositivos y las directivas de protección de dispositivos.</li><li>Vea las amenazas detectadas y tome medidas.</li><li>Vea las recomendaciones de seguridad y administre la configuración de seguridad.</li></ul><p>Para obtener más información, consulte [Comenzar mediante el portal de Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
 > Si tiene Microsoft 365 Empresa Premium, también tiene Microsoft Intune. Puede usar el centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) para administrar dispositivos y configurar las opciones de seguridad. Para obtener más información sobre Intune, consulte [Microsoft Intune es un proveedor de MDM y MAM para los dispositivos](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).

@@ -3,6 +3,7 @@ title: Administración de puntos de conexión de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar puntos de conexión Office 365 para que funcionen con la arquitectura de red de la organización empresarial.
-ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090349"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587476"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -47,6 +48,9 @@ Microsoft está trabajando con proveedores de SD-WAN para habilitar la configura
 Use archivos PAC o WPAD para administrar las solicitudes de red que están asociadas con Office 365 pero no tienen una dirección IP. Normalmente, las solicitudes de red que se envían a través de un dispositivo proxy o perimetral aumentan la latencia. Mientras que la característica de Inspección e interrupción SSL crea la latencia más grande, otros servicios, como la autenticación de proxy y la búsqueda de la reputación, pueden ocasionar peor rendimiento y una experiencia de usuario deficiente. Además, estos dispositivos de red perimetral necesitan capacidad suficiente para procesar todas las solicitudes de conexión de red. Se recomienda omitir los dispositivos de inspección o proxy para solicitudes de red de Office 365 directas.
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) es un script de PowerShell que lee los puntos de conexión de red más recientes desde el servicio web URL y la dirección IP de Office 365, y crea un archivo PAC de ejemplo. Puede modificar el script para que se integre con la administración de archivos PAC existente.
+
+> [!NOTE]
+> Para obtener más información sobre las consideraciones de seguridad y rendimiento de la conectividad directa con puntos de conexión de Office 365, consulte [principios de conectividad de red de Office 365](microsoft-365-network-connectivity-principles.md).
 
 ![Conectarse a Office 365 a través de firewalls y servidores proxy.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 

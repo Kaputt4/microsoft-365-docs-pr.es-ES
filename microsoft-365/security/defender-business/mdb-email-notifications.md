@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 7dc6c65221211367e080fac46506f209d17f88ff
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174494"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587454"
 ---
 # <a name="set-up-email-notifications"></a>Configuración de notificaciones por correo electrónico
 
@@ -68,7 +68,10 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
    - Si tiene reglas creadas, seleccione una regla para editarla. También puede eliminar una regla. 
 
-## <a name="next-steps"></a>Siguientes pasos
+> [!IMPORTANT]
+> Al configurar notificaciones por correo electrónico en Defender para empresas, debe asignar las reglas de notificación a usuarios específicos. Defender for Business no usa [el control de acceso basado en rol, como hace Defender para punto de conexión](../defender-endpoint/rbac.md). Además, las notificaciones por correo electrónico no se pueden aplicar a grupos de dispositivos en Defender para empresas. 
+
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 

@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633269"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469159"
 ---
-# <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
+# <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Crear buzones de sala y equipamiento de Microsoft 365
 
 Si tiene una sala de conferencias, un coche de la empresa o equipamiento que todos necesitan usar, entonces necesita encontrar una manera de hacer que todos los usuarios puedan reservar esos recursos. La mejor manera de hacerlo es crear un buzón de correo de equipamiento o de sala en Microsoft 365 para cada recurso. Puede crear uno para la sala de conferencias de la primera planta, el equipamiento multimedia o un camión de mudanza.
   
