@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 218ffa6ba9b2e7a4eb5fcd2f042b77b207ab8594
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468050"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535368"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -40,7 +40,8 @@ Por otro lado, si tu entorno incluye planes para la administración conjunta, in
 Vea este vídeo para obtener información general del proceso.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
+
 
 ## <a name="why-manage-endpoints"></a>¿Por qué administrar puntos de conexión?
 
@@ -74,7 +75,7 @@ En esta ilustración:
 
 ## <a name="coordinating-endpoint-management-with-zero-trust-identity-and-device-access-policies"></a>Coordinación de la administración de puntos de conexión con directivas de acceso de dispositivos e identidad de Cero confianza
 
-Esta guía está en estrecha coordinación con las [**directivas de acceso de dispositivos e identidad de Confianza cero**](../security/office-365-security/microsoft-365-policies-configurations.md) recomendadas. Trabajará con el equipo de identidad para llevar a cabo la protección que configura con Intune en directivas de acceso condicional en Azure AD.
+Esta guía está en estrecha coordinación con las [**directivas de acceso de dispositivos e identidad de Confianza cero**](../security/office-365-security/microsoft-365-policies-configurations.md) recomendadas. Trabajarás con tu equipo de identidad para llevar a cabo la protección que configuras con Intune en directivas de acceso condicional en Azure AD.
 
 Esta es una ilustración del conjunto de directivas recomendado con llamadas a los pasos para el trabajo que realizará en Intune/MEM y las directivas de acceso condicional relacionadas que ayudarás a coordinar en Azure AD.
 
@@ -82,8 +83,8 @@ Esta es una ilustración del conjunto de directivas recomendado con llamadas a l
 
 En esta ilustración:
 
-- En el paso 1, [**Implementar directivas de protección de aplicaciones de nivel 2**](manage-devices-with-intune-app-protection.md), se configura el nivel recomendado de protección de datos con directivas de APP. A continuación, trabaja con el equipo de identidad para configurar la regla de acceso condicional relacionada para requerir el uso de esta protección.
-- En los pasos 2, 3 y 4, inscribe los dispositivos en la administración con Intune, define directivas de cumplimiento de dispositivos y, después, coordina con el equipo de identidades para configurar la regla de acceso condicional relacionada para permitir solo el acceso a los dispositivos compatibles.
+- En el paso 1, [**Implementar directivas de protección de aplicaciones de nivel 2**](manage-devices-with-intune-app-protection.md), se configura el nivel recomendado de protección de datos con directivas de APP. A continuación, trabajas con el equipo de identidad para configurar la regla de acceso condicional relacionada para requerir el uso de esta protección.
+- En los pasos 2, 3 y 4, inscribes los dispositivos en la administración con Intune, defines directivas de cumplimiento de dispositivos y, después, coordinas con el equipo de identidades para configurar la regla de acceso condicional relacionada para permitir solo el acceso a los dispositivos compatibles.
 
 <!---
 ## Managing change with users
@@ -91,7 +92,7 @@ En esta ilustración:
 
 ## <a name="enrolling-devices-vs-onboarding-devices"></a>Inscripción de dispositivos frente a dispositivos de incorporación
 
-Si sigue esta guía, inscribirá dispositivos en la administración mediante Intune e incorporará dispositivos para las siguientes funcionalidades de Microsoft 365:
+Si sigues esta guía, inscribirás dispositivos en la administración mediante Intune e incorporarás dispositivos para las siguientes funcionalidades de Microsoft 365:
 
 - Microsoft Defender para punto de conexión
 - Microsoft Purview (para la prevención de pérdida de datos em punto de conexión (DLP)) 
@@ -117,14 +118,6 @@ Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace 
 |Otros métodos     |   Otros métodos de inscripción dependen de la plataforma del dispositivo y de si es BYOD o administrado por la organización.      | Otros métodos para la incorporación de dispositivos incluyen, en el orden recomendado:<br><li>Configuration Manager<li>Otra herramienta de administración de dispositivos móviles (si el dispositivo está administrado por uno)<li>Script local<li>Paquete de configuración de VDI para incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente<li>Directiva de grupo|
 | | |     |
 
-Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace referencia a la capacidad de un dispositivo de compartir información con la funcionalidad de un servicio específico. En la tabla siguiente se resumen las diferencias entre la inscripción de dispositivos en la administración y la incorporación de dispositivos para la funcionalidad de un servicio específico.
-
-|&nbsp;|Inscribir|Incorporación|
-|---|---|---|
-|Descripción|La inscripción se aplica a la administración de dispositivos. Los dispositivos se inscriben para su administración con Intune o el Administrador de configuración.|La incorporación configura un dispositivo para que funcione con un conjunto específico de funcionalidades en Microsoft 365. Actualmente, la incorporación se aplica a Microsoft Defender para las capacidades de cumplimiento de Microsoft y Punto de conexión. <br/><br/> En dispositivos Windows, la incorporación implica alternar una configuración en Windows Defender que permite a Defender conectarse al servicio en línea y aceptar las directivas que se aplican al dispositivo.|
-|Ámbito|Estas herramientas de administración de dispositivos administran todo el dispositivo, incluida la configuración del dispositivo para cumplir objetivos específicos, como la seguridad.|La incorporación solo afecta a las funcionalidades que se aplican.|
-|Método recomendado|Unirse a Azure Active Directory inscribe automáticamente los dispositivos en Intune.|Intune es el método preferido para incorporar dispositivos a Windows Defender para punto de conexión y, en consecuencia, las funcionalidades de Microsoft Purview. <br/><br/> Tenga en cuenta que los dispositivos que están incorporados a las capacidades de cumplimiento de Microsoft Purview mediante otros métodos no se inscriben automáticamente en Defender para punto de conexión.|
-|Otros métodos|Otros métodos de inscripción dependen de la plataforma del dispositivo y de si es BYOD o administrado por la organización.|Otros métodos para la incorporación de dispositivos incluyen, en el orden recomendado: <ul><li>Configuration Manager</li><li>Otra herramienta de administración de dispositivos móviles (si el dispositivo está administrado por uno)</li><li>Script local</li><li>Paquete de configuración de VDI para incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente</li><li>Directiva de grupo</li></ul>|
 
 ## <a name="learning-for-administrators"></a>Aprendizaje para administradores
 
