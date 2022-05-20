@@ -22,25 +22,25 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 10/28/2021
-ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/18/2022
+ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326305"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587432"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en regla.
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si es usted cliente en alguno de esos países o regiones, podrá seguir pagando la suscripción con una cuenta bancaria que esté en regla. No obstante, no podrá agregar nuevas suscripciones a la cuenta bancaria.
 
 Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 
 **¿Solo quiere saber dónde enviar el pago de la factura?** Si paga la factura mediante cheque o transferencia electrónica de fondos (EFT), vea [¿Dónde envío mi cheque o pago por EFT?](#where-do-i-send-my-check-or-eft-payment)
 
 > [!TIP]
-> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación laboral hasta el uso cotidiano.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
