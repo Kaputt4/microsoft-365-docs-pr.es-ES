@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: a836865906de594436b27c44ebf65ba3ed99c96e
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188246"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65601681"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -30,26 +30,29 @@ Cuando un dispositivo se incorpora a Microsoft Defender para punto de conexión:
 
 Cuando un dispositivo unido a un dominio crea una confianza con Azure Active Directory, este escenario se conoce como escenario híbrido *Azure Active Directory unión*. Security Management for Microsoft Defender para punto de conexión admite completamente este escenario con los siguientes requisitos:
 
-- Azure Active Directory Conectar (AAD Conectar) debe sincronizarse con el inquilino que se usa desde Microsoft Defender para punto de conexión
-- La unión Azure Active Directory híbrida debe configurarse en el entorno (ya sea mediante federación o AAD Conectar Sincronización)
+- Azure Active Directory Conectar (Conectar de AAD) debe sincronizarse con el inquilino que se usa desde Microsoft Defender para punto de conexión
+- La unión Azure Active Directory híbrida debe configurarse en el entorno (ya sea mediante federación o AAD Conectar Sync)
 - AAD Conectar Sync debe incluir los objetos de dispositivo en el *ámbito* para la sincronización con Azure Active Directory (cuando sea necesario para la unión)
-- AAD Conectar reglas de sincronización deben modificarse para Server 2012 R2 (cuando se necesita compatibilidad con Server 2012 R2)
+- Las reglas de Conectar de AAD para la sincronización deben modificarse para Server 2012 R2 (cuando se necesita compatibilidad con Server 2012 R2)
 - Todos los dispositivos deben registrarse en el Azure Active Directory del inquilino que hospeda Microsoft Defender para punto de conexión. No se admiten escenarios entre inquilinos. 
 
 ### <a name="connectivity-requirements"></a>Requisitos de conectividad
 
 Los dispositivos deben tener acceso a los siguientes puntos de conexión:
 
-- `enterpriseregistration.windows.net`- Para Azure AD registro.
-- `login.microsoftonline.com`- Para Azure AD registro.
+- `enterpriseregistration.windows.net` : para el registro de Azure AD.
+- `login.microsoftonline.com` : para el registro de Azure AD.
 - `*.dm.microsoft.com` - El uso de un carácter comodín admite los puntos de conexión de servicio en la nube que se usan para la inscripción, la protección y los informes, y que pueden cambiar a medida que el servicio se escala.
+
+> [!Note]
+> Si los usuarios de la organización inspeccionan capa de sockets seguros (SSL), los puntos de conexión deben excluirse de la inspección.
 
 ### <a name="supported-platforms"></a>Plataformas compatibles
 
 Las directivas para la administración de seguridad de Microsoft Defender para punto de conexión son compatibles con las siguientes plataformas de dispositivos:
 
-- Windows 10 Pro/Enterprise (con [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
-- Windows 11 Pro/Enterprise
+- Windows 10 Professional/Enterprise (con [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+- Windows 11 Professional/Enterprise
 - Windows Server 2012 R2 con [Microsoft Defender para dispositivos Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 con [Microsoft Defender para dispositivos Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 (con [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
@@ -90,19 +93,22 @@ Microsoft Endpoint Manager incluye varios métodos y tipos de directiva para adm
 
 Cuando la protección de dispositivos necesita ampliarse más allá de la administración de Defender para punto de conexión, consulte [Información general sobre protección](/mem/intune/protect/device-protect) de dispositivos para obtener información sobre las funcionalidades adicionales proporcionadas por Microsoft Endpoint Manager para ayudar a proteger los dispositivos, como *el cumplimiento de* dispositivos, *las aplicaciones administradas*, *las directivas de protección* de aplicaciones y la integración con asociados de cumplimiento de terceros y *de defensa contra amenazas móviles*.
 
-La tabla siguiente puede ayudarle a comprender qué directivas que pueden configurar la configuración de MDE son compatibles con los dispositivos administrados por los distintos escenarios. Al implementar una directiva compatible con la configuración de seguridad de *MDE* y *Microsoft Endpoint Manager*, los dispositivos que solo ejecutan MDE y los dispositivos administrados por Intune o Configuration Manager pueden procesar una única instancia de esa directiva.
+La tabla siguiente puede ayudarle a comprender qué directivas que pueden configurar la configuración de MDE son compatibles con los dispositivos administrados por los distintos escenarios. Al implementar una directiva compatible con la configuración de seguridad de *MDE* y *Microsoft Endpoint Manager*, los dispositivos que solo ejecutan Microsoft Defender para punto de conexión y los dispositivos administrados por Intune o Configuration Manager.
 
-| Microsoft Endpoint Manager  | Carga de trabajo | Configuración de seguridad de MDE  |  Microsoft Endpoint Manager |
+| Microsoft Endpoint Manager  | Carga de trabajo |Policy| Configuración de seguridad de MDE  |  Microsoft Endpoint Manager |
 |----------------|----------------|-------------------|------------|
-| Seguridad de punto de conexión    | Antivirus                   | ![Compatible](../media/green-check.png)  | ![Compatible](../media/green-check.png)  |
-|                      | Cifrado de disco   |           | ![Compatible](../media/green-check.png)  |
-|                      | Firewall (perfil y reglas)                | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
-|                      | Detección y respuesta de puntos de conexión        | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
-|                      | Reducción de la superficie expuesta a ataques    |           | ![Compatible](../media/green-check.png)  |
-|                      | Protección de cuentas       |       | ![Compatible](../media/green-check.png)  |
-|                      | Cumplimiento de dispositivos     |   | ![Compatible](../media/green-check.png)  |
-|                      | Acceso condicional    |   | ![Compatible](../media/green-check.png)  |
-|                      | Líneas base de seguridad      |   | ![Compatible](../media/green-check.png)  |
+| Seguridad de punto de conexión    | Antivirus   |     Antivirus           | ![Compatible](../media/green-check.png)  | ![Compatible](../media/green-check.png)  |
+|                      | Antivirus   |   Exclusiones de antivirus   | ![Compatible](../media/green-check.png)  | ![Compatible](../media/green-check.png)  |
+|                      | Antivirus   | Experiencia de Seguridad de Windows |                        | ![Compatible](../media/green-check.png)  |
+|                      | Cifrado de disco   |     Todo |      | ![Compatible](../media/green-check.png)  |
+|                      | Firewall   | Firewall              | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
+|                      | Firewall | Reglas de firewall                | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
+|                      | Detección y respuesta de puntos de conexión   | Detección y respuesta de puntos de conexión | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
+|                      | Reducción de la superficie expuesta a ataques    |   Todo |          | ![Compatible](../media/green-check.png)  |
+|                      | Protección de cuentas       |    Todo |     | ![Compatible](../media/green-check.png)  |
+|                      | Cumplimiento de dispositivos     |   Todo |  | ![Compatible](../media/green-check.png)  |
+|                      | Acceso condicional    |   Todo |  | ![Compatible](../media/green-check.png)  |
+|                      | Líneas base de seguridad      |  Todo |   | ![Compatible](../media/green-check.png)  |
 
 **Las directivas de seguridad de puntos de conexión** son grupos discretos de configuraciones diseñadas para su uso por los administradores de seguridad que se centran en la protección de dispositivos de su organización.
 
@@ -120,24 +126,28 @@ Para admitir Microsoft Defender para punto de conexión administración de la co
 1. Inicie sesión en [Microsoft 365 Defender portal](https://security.microsoft.com/) y vaya a **Configuración** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope y habilite las plataformas para la administración de la configuración de seguridad:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Habilite la administración de la configuración de Microsoft Defender para punto de conexión en la consola de Defender.":::
+    
+1. Configure el modo piloto y Configuration Manager las opciones de autoridad para satisfacer las necesidades de su organización:
 
-    >[!NOTE]
-    >Para controlar pormenorizadamente el ámbito de los puntos de conexión administrados mediante la administración de la configuración de MDE, considere la posibilidad de usar **el modo piloto**.
+   :::image type="content" source="../media/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure el modo piloto para la administración de la configuración del punto de conexión en el portal de Microsoft 365 Defender.":::
+   
+  > [!TIP]
+  > Use el modo piloto y las etiquetas de dispositivo adecuadas para probar y validar el lanzamiento en un pequeño número de dispositivos. Sin usar el modo piloto, cualquier dispositivo que entre en el ámbito configurado se inscribirá automáticamente.
 
-2. Asegúrese de que los usuarios pertinentes tengan permisos para administrar la configuración de seguridad del punto de conexión en Microsoft Endpoint Manager o conceda esos permisos mediante la configuración de un rol en el portal de Defender. Vaya a **Configuración** >  **RolesAgregar** >  elemento:
+1. Asegúrese de que los usuarios pertinentes tengan permisos para administrar la configuración de seguridad del punto de conexión en Microsoft Endpoint Manager o conceda esos permisos mediante la configuración de un rol en el portal de Defender. Vaya a **Configuración** >  **RolesAgregar** >  elemento:
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Cree un nuevo rol en el portal de Defender.":::
 
    > [!TIP]
    > Puede modificar los roles existentes y agregar los permisos necesarios en lugar de crear roles adicionales en Microsoft Defender para punto de conexión
 
-3. Al configurar el rol, agregue usuarios y asegúrese de seleccionar **Administrar la configuración de seguridad del punto de conexión en Microsoft Endpoint Manager**:
+1. Al configurar el rol, agregue usuarios y asegúrese de seleccionar **Administrar la configuración de seguridad del punto de conexión en Microsoft Endpoint Manager**:
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceda a los usuarios permisos para administrar la configuración.":::
 
-4. Inicie sesión en el [Centro de administración del Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-5. Seleccione **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** y establezca **Permitir Microsoft Defender para punto de conexión para aplicar configuraciones de seguridad de punto de conexión (versión preliminar)** en **Activado**.
+1. Seleccione **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** y establezca **Permitir Microsoft Defender para punto de conexión para aplicar configuraciones de seguridad de punto de conexión (versión preliminar)** en **Activado**.
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Habilite la administración de la configuración de Microsoft Defender para punto de conexión en el centro de administración de Microsoft Endpoint Manager.":::
 
@@ -153,7 +163,9 @@ Microsoft Defender para punto de conexión admite varias opciones para incorpora
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Coexistencia con Microsoft Endpoint Configuration Manager
-En algunos entornos, es posible que desee usar administración de seguridad para Microsoft Defender junto con Configuration Manager. Esto es posible deshabilitando la **configuración de Administración de seguridad mediante Configuration Manager** alternar en la **página Configuración** (Configuración > Puntos de conexión > Configuration Management > Ámbito de cumplimiento):
+En algunos entornos, es posible que desee usar la administración de seguridad para Microsoft Defender para punto de conexión con [Configuration Manager asociación de inquilinos](/mem/configmgr/tenant-attach/endpoint-security-get-started). Si usa ambos, tendrá que controlar la directiva a través de un único canal, ya que el uso de más de un canal crea la oportunidad de conflictos y resultados no deseados.
+
+Para admitir esto, configure los *valores de Administración de seguridad mediante Configuration Manager* cambie a *Desactivado*.  Inicie sesión en el [portal de Microsoft 365 Defender](https://security.microsoft.com/) y vaya a **Configuración** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope:
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Administrar la configuración de seguridad mediante Configuration Manager configuración.":::
 
@@ -194,7 +206,7 @@ Después de crear uno o varios grupos de Azure AD que contienen dispositivos adm
 >
 > Microsoft Endpoint Manager admite la implementación de varias instancias de cada tipo de directiva de seguridad de punto de conexión en el mismo dispositivo, con cada instancia de directiva recibida por el dispositivo por separado. Por lo tanto, un dispositivo podría recibir configuraciones independientes para la misma configuración de directivas diferentes, lo que da lugar a un conflicto. Algunas opciones de configuración (como Exclusiones antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [Centro de administración del Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad del punto de conexión** y, a continuación, seleccione el tipo de directiva que desea configurar, antivirus o firewall y, a continuación, seleccione **Crear directiva**.
 
@@ -210,7 +222,7 @@ Después de crear uno o varios grupos de Azure AD que contienen dispositivos adm
 
    - En Directiva de reglas de firewall, seleccione:
      - Plataforma: **Windows 10, Windows 11 y Windows Server (versión preliminar)**
-     - Perfil: **Reglas de firewall de Microsoft Defender (versión preliminar)**
+     - Perfil: **reglas de Firewall de Microsoft Defender (versión preliminar)**
 
    - En Endpoint Detection and Response policy (Directiva de detección y respuesta de puntos de conexión), seleccione:
      - Plataforma: **Windows 10, Windows 11 y Windows Server (versión preliminar)**
@@ -229,7 +241,7 @@ Después de crear uno o varios grupos de Azure AD que contienen dispositivos adm
 
    Cuando haya finalizado la configuración, seleccione **Siguiente**.
 
-7. En la página **Asignaciones**, seleccione los grupos de Azure AD que recibirán este perfil. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
+7. En la página **Asignaciones** , seleccione los grupos de Azure AD que recibirán este perfil. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
 
    Seleccione **Siguiente** para continuar.
 

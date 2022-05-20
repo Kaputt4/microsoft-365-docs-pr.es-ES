@@ -3,7 +3,7 @@ title: Otros puntos de conexión adicionales no incluidos en el servicio web de 
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: el nuevo servicio web de punto de conexión no incluye algunos puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: 01fbd54ed5addb8552c59e2be8de76961e613968
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587356"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599175"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Otros puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -54,7 +54,7 @@ Además de DNS, estas instancias son opcionales para la mayoría de los clientes
 |3|**Azure AD Conectar (opción w/SSO)** <p> WinRM & PowerShell remoto|Entorno de STS de cliente (servidor AD FS y Proxy AD FS) \| Puertos TCP 80 y 443|Tráfico de servidor entrante|
 |4 |**STS** , como los servidores proxy de AD FS (solo para clientes federados)|STS de cliente (como proxy de AD FS) \| Puertos TCP 443 o TCP 49443 con TLS de cliente|Tráfico de servidor entrante|
 |5 |**[Mensajería unificada de Exchange Online/Integración de SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|Bidireccional entre el controlador de borde de sesión local y \*.um.outlook.com|Tráfico de solo servidor saliente|
-|6 |**Migración de buzones de correo**<p>Cuando se inicia la migración de buzones de correo desde el entorno local [Exchange híbrido](/exchange/exchange-deployment-assistant) a Office 365, Office 365 se conectará al servidor publicado de servicios web de Exchange (EWS)/Servicios de replicación de buzones (MRS). Si necesita las direcciones IP NAT que usan los servidores Exchange Online para restringir las conexiones entrantes desde intervalos IP de origen específicos, se muestran en [Office 365 URL & intervalos IP](urls-and-ip-address-ranges.md) en el área de servicio "Exchange Online". <p> Debe tener cuidado para asegurarse de que el acceso a los puntos de conexión de EWS publicados, como OWA, no se ve afectado al garantizar que el proxy MRS se resuelve en un FQDN independiente y una dirección IP pública antes de restringir las conexiones TCP 443 de intervalos IP de origen específicos.|Proxy EWS o MRS local de cliente <br> Puerto TCP 443|Tráfico de servidor entrante|
+|6 |**Migración de buzones de correo**<p>Cuando se inicia la migración de buzones de correo desde el entorno local [Exchange híbrido](/exchange/exchange-deployment-assistant) a Office 365, Office 365 se conectará al servidor publicado de servicios web de Exchange (EWS)/Servicios de replicación de buzones (MRS). Si necesita permitir conexiones entrantes solo desde intervalos IP de origen específicos, cree una regla de permiso para las direcciones IP enumeradas en la tabla **Exchange Online** de [Office 365 URL & intervalos IP](urls-and-ip-address-ranges.md). <p> Para asegurarse de que la conectividad con los puntos de conexión de EWS publicados (como OWA) no está bloqueada, asegúrese de que el proxy MRS se resuelve en un FQDN independiente y una dirección IP pública antes de restringir las conexiones.|Proxy EWS o MRS local de cliente <br> Puerto TCP 443|Tráfico de servidor entrante|
 |7 |**[Exchange funciones de](/exchange/exchange-deployment-assistant) coexistencia híbrida**, como el uso compartido de disponibilidad.|Servidor de Exchange local de cliente|Tráfico de servidor entrante|
 |8 |**[Exchange](/exchange/exchange-deployment-assistant) autenticación de proxy híbrido**|STS local de cliente|Tráfico de servidor entrante|
 |9 |Se usa para configurar [Exchange híbrido](/exchange/exchange-deployment-assistant) mediante el **[Asistente para configuración híbrida de Exchange](/exchange/hybrid-configuration-wizard)** <p> Nota: Estos puntos de conexión solo son necesarios para configurar la implementación híbrida de Exchange|domains.live.com en los puertos TCP 80 y 443, solo son necesarios para el Asistente de configuración híbrida de Exchange 2010 SP3 <p> Direcciones IP de DoD y GCC High: 40.118.209.192/32; 168.62.190.41/32 <p> & GCC comercial mundial: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|Tráfico de solo servidor saliente|

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285552"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599329"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -53,7 +53,7 @@ En la tabla siguiente se describen los permisos de directiva de cuarentena indiv
 En la tabla siguiente se describen las directivas de cuarentena predeterminadas, sus grupos de permisos asociados y si las notificaciones de cuarentena están habilitadas:
 
 |Directiva de cuarentena predeterminada|Grupo de permisos usado|¿Las notificaciones de cuarentena están habilitadas?|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|Sin acceso|No|
 |DefaultFullAccessPolicy|Acceso completo|No|
 |NotificationEnabledPolicy<sup>\*</sup>|Acceso completo|Sí|
@@ -105,7 +105,7 @@ Para las nuevas organizaciones o organizaciones anteriores que nunca tenían hab
        - **Permitir que los destinatarios soliciten que un mensaje se libere de la cuarentena**
      - **Seleccione acciones adicionales que los destinatarios pueden realizar en los mensajes en cuarentena**: seleccione algunos, todos o ninguno de los valores siguientes:
        - **Eliminar**
-       - **Versión preliminar**
+       - **Vista previa**
        - **Bloquear remitente**
 
    Estos permisos y su efecto en los mensajes en cuarentena y en las notificaciones de cuarentena se describen en la sección [Detalles del permiso](#quarantine-policy-permission-details) de directiva de cuarentena más adelante en este artículo.
@@ -151,9 +151,9 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
 |PermissionToBlockSender|16|00010000|
 |PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
-|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
+|PermissionToRelease<sup>\*\*\*</sup>|4 |00000100|
 |PermissionToPreview|2|00000010|
-|PermissionToDelete|1|00000001|
+|PermissionToDelete|1 |00000001|
 
 <sup>\*</sup> El valor 0 no oculta el botón **Ver encabezado del mensaje** en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -168,11 +168,11 @@ Para los permisos de acceso limitado, los valores necesarios son:
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
-|PermissionToBlockSender|1|
-|PermissionToRequestRelease|1|
+|PermissionToBlockSender|1 |
+|PermissionToRequestRelease|1 |
 |PermissionToRelease|0|
-|PermissionToPreview|1|
-|PermissionToDelete|1|
+|PermissionToPreview|1 |
+|PermissionToDelete|1 |
 |Valor binario|00011011|
 |Valor decimal que se va a usar|27|
 

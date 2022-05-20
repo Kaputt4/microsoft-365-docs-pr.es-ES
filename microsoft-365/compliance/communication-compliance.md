@@ -1,6 +1,6 @@
 ---
 title: Obtener más información sobre el cumplimiento de las comunicaciones
-description: Más información sobre el cumplimiento de comunicaciones en Microsoft Purview
+description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, cumplimiento, cumplimiento de comunicaciones
 f1.keywords:
 - NOCSH
@@ -21,21 +21,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd7ab3040b261fb7c664d92b73a069cc8ba6e3b5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997326"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599219"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
 > [!TIP]
-> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Use la prueba de soluciones de Purview de 90 días para explorar cómo las sólidas funcionalidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Microsoft 365 E3 y Office 365 E3 los clientes pueden empezar ahora en el centro de pruebas del [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [quién puede registrarse y los términos de prueba](compliance-easy-trials.md).
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Communication Compliance es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o comunicaciones de terceros de su organización y realizar las acciones adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
+Cumplimiento de comunicaciones de Microsoft Purview es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o comunicaciones de terceros de su organización y realizar las acciones adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
 
 Las directivas de Cumplimiento de comunicaciones en Microsoft 365 le ayudan a superar muchos desafíos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre los que se incluyen:
 
@@ -44,6 +44,8 @@ Las directivas de Cumplimiento de comunicaciones en Microsoft 365 le ayudan a su
 - Cumplimiento normativo y el riesgo de las multas
 
 Además, puede haber una separación de tareas entre los administradores de TI y el equipo de administración de cumplimiento. El cumplimiento de comunicaciones admite la separación entre la configuración de las directivas y la investigación y revisión de los mensajes. Por ejemplo, el grupo de TI de su organización puede ser responsable de configurar permisos, grupos y directivas del rol de cumplimiento de comunicaciones, y los investigadores y revisores pueden ser responsables de las acciones de evaluación, revisión y mitigación de mensajes.
+
+Para obtener más información y una visión general del proceso de planeamiento para abordar las actividades de cumplimiento y riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Para ver las presentaciones más recientes de Ignite para el cumplimiento de la comunicación, consulte los siguientes vídeos:
 
@@ -117,7 +119,7 @@ Los nuevos paneles interactivos de alertas, coincidencias de directivas, accione
 
 - **Alertas inteligentes proactivas**: Las alertas para las coincidencias de directivas que requieren atención inmediata incluyen nuevos paneles para los elementos pendientes clasificados por gravedad y nuevas notificaciones automáticas por correo electrónico enviadas a los revisores designados.
 - **Paneles interactivos**: los nuevos paneles muestran las coincidencias de las directivas, las acciones pendientes y resueltas, y las tendencias por usuarios y directivas.
-- **Compatibilidad con la auditoría**: un registro completo de las actividades de directiva y revisión se exporta fácilmente desde el portal de cumplimiento de Microsoft Purview para ayudar a admitir las solicitudes de revisión de auditoría.
+- **Compatibilidad con la auditoría**: un registro completo de las actividades de directiva y revisión se exporta fácilmente desde el portal de cumplimiento Microsoft Purview para ayudar a admitir las solicitudes de revisión de auditoría.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integración con servicios Microsoft 365
 
@@ -139,14 +141,14 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 
 ![Flujo de trabajo de cumplimiento de comunicaciones.](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>Configurar
+### <a name="configure"></a>Configuración
 
 En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y configurará las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de directiva son una excelente manera no solo de configurar rápidamente una nueva directiva de cumplimiento, sino también de modificar y actualizar directivas rápidamente a medida que cambian los requisitos. Por ejemplo, es posible que desee probar rápidamente una directiva de contenido inadecuado en las comunicaciones de un grupo pequeño de usuarios antes de configurar una directiva para todos los usuarios de su organización.
 
 >[!IMPORTANT]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Para habilitar los permisos para las características de cumplimiento de comunicaciones, consulte [Hacer que el cumplimiento de la comunicación esté disponible en su organización](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
-Puede elegir entre las siguientes plantillas de directiva en el portal de cumplimiento de Microsoft Purview:
+Puede elegir entre las siguientes plantillas de directiva del portal de cumplimiento de Microsoft Purview:
 
 - **Supervisión de texto inadecuado**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente texto en mensajes que puedan considerarse inadecuados, abusivos o ofensivos.
 - **Supervisión de imágenes inapropiadas**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente el contenido que contiene imágenes para adultos y desiguales que pueden considerarse inapropiadas en su organización.
@@ -161,7 +163,7 @@ Puede elegir entre las siguientes plantillas de directiva en el portal de cumpli
 
 ### <a name="investigate"></a>Investigación
 
-En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el portal de cumplimiento de Microsoft Purview:
+En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el portal de cumplimiento Microsoft Purview:
 
 - **Alertas**: cuando un mensaje coincide con una directiva, se genera una alerta automáticamente. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y si se asigna un caso de exhibición de documentos electrónicos (Premium) y su estado. Las alertas se muestran según la gravedad y aparecen en la página principal de cumplimiento de comunicaciones y en la página **Alertas**.
 - **Administración de problemas**: para cada alerta, puede tomar medidas de investigación para ayudar a corregir el problema detectado en el mensaje.
@@ -179,7 +181,7 @@ El siguiente paso es corregir los problemas de cumplimiento de comunicaciones qu
 - **Escalar a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para poder resolver el incidente. Puede escalar fácilmente los problemas relativos a mensajes a los revisores de otras áreas de su organización como parte del proceso de resolución.
 - **Marcar como mal clasificado**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente se pasarán al proceso de revisión. Puede marcar estos tipos de alertas como clasificados incorrectamente, enviar comentarios a Microsoft sobre la clasificación incorrecta para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
 - **Retirar mensaje in Teams (vista previa)**: es posible que los mensajes inadecuados se quiten de mostrarse en canales de Microsoft Teams o mensajes de chat personales y grupales. Los mensajes inadecuados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
-- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de las comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle con la resolución de riesgos de un extremo a otro. Escalar un caso para su investigación le permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre eDiscovery (Premium) de Microsoft Purview](overview-ediscovery-20.md).
+- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El Cumplimiento de comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Escalar un caso para investigación le permite transferir datos y administrar el caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), vea [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorear
 

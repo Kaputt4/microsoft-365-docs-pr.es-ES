@@ -19,18 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bda0874ef829495b162beae09fde1c4efcb03c85
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971569"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599555"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Antes de empezar a trabajar con [el cumplimiento de la comunicación](communication-compliance.md) en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de la tecnología de la información y el cumplimiento. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones funcionen sin problemas y se alineen con los procedimientos recomendados para la solución.
+
+Para obtener más información y una visión general del proceso de planeamiento para abordar las actividades de cumplimiento y riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 > [!IMPORTANT]
 > El cumplimiento de comunicaciones está disponible actualmente en los inquilinos hospedados en regiones geográficas y países compatibles con las dependencias del servicio de Azure. Para comprobar que el cumplimiento de comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencias de Azure por país o región](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -39,7 +41,7 @@ Antes de empezar a trabajar con [el cumplimiento de la comunicación](communicat
 
 Para las organizaciones que usan directivas de supervisión en Office 365, debe planear inmediatamente la transición a las directivas de cumplimiento de comunicaciones en Microsoft Purview y debe comprender estos puntos importantes:
 
-- La solución de supervisión de Office 365 se ha reemplazado por completo por la solución de cumplimiento de comunicaciones de Microsoft Purview. Se recomienda crear nuevas directivas en cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección.
+- La solución de supervisión de Office 365 se ha reemplazado por completo por la solución de cumplimiento de comunicaciones en Microsoft Purview. Se recomienda crear nuevas directivas en cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección.
 - Los mensajes guardados en supervisión en Office 365 coincidencias de directivas no se pueden mover ni compartir en el cumplimiento de la comunicación.
 - En el caso de las organizaciones con ambas soluciones que se usan en paralelo durante el proceso de transición, las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre soluciones durante un período de transición.
 
@@ -60,29 +62,29 @@ Identifique las partes interesadas adecuadas de su organización para colaborar 
 
 ### <a name="permissions"></a>Permisos
 
-Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos de forma periódica en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
+Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos con una cadencia regular en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
 
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de comunicaciones** esté disponible como una opción de menú en el portal de cumplimiento de Microsoft Purview y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de la comunicación** esté disponible como una opción de menú en portal de cumplimiento Microsoft Purview y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
 
 - Azure Active Directory rol [*de administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - rol [*de administrador de cumplimiento de*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- Grupo de roles [*de administración de organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
-- Grupo de roles [*de administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
+- portal de cumplimiento Microsoft Purview grupo [*de roles De administración de la organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- portal de cumplimiento Microsoft Purview grupo de roles [*administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - *Grupo de roles de cumplimiento de comunicaciones*
-- *Grupo de roles de administrador de cumplimiento de comunicaciones*
+- *Grupo de roles de Admin cumplimiento de comunicaciones*
 
-Los miembros de los siguientes roles tienen los mismos permisos de solución incluidos en el grupo de roles *Administrador de cumplimiento de comunicaciones* :
+Los miembros de los roles siguientes tienen los mismos permisos de solución incluidos en el grupo de roles *De cumplimiento de comunicaciones Admin*:
 
 - *administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory
-- Portal de cumplimiento de Microsoft Purview *Administración de la organización*
-- *Administrador de cumplimiento del portal de cumplimiento de* Microsoft Purview
+- administración de la *organización* portal de cumplimiento Microsoft Purview
+- *Administrador de cumplimiento de* portal de cumplimiento Microsoft Purview
 
 > [!IMPORTANT]
-> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles De cumplimiento de *comunicaciones* o *Administrador de cumplimiento de comunicaciones* (según la opción que elija) para que la configuración de cumplimiento de comunicaciones no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles *Cumplimiento de comunicaciones* o *Cumplimiento de comunicaciones Admin* (según la opción que elija) para que la configuración de cumplimiento de comunicaciones no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
 En función de cómo quiera administrar las directivas y alertas de cumplimiento de comunicaciones, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de cumplimiento de comunicaciones. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O bien, puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *cumplimiento de comunicaciones* . Use un único grupo de roles o varios grupos de roles para adaptarse mejor a los requisitos de administración de cumplimiento.
 

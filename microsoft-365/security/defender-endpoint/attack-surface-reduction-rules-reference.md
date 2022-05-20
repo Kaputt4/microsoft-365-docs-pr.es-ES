@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363068"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599577"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -332,6 +332,9 @@ Dependencias: MDAV, Protección en la nube
 Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
 
 La ofuscación de scripts es una técnica común que usan los autores de malware y las aplicaciones legítimas para ocultar la propiedad intelectual o reducir los tiempos de carga de scripts. Los autores de malware también usan la ofuscación para dificultar la lectura de código malintencionado, lo que impide un examen minucioso por parte de los humanos y el software de seguridad.
+
+> [!IMPORTANT]
+> Debido al alto número de falsos positivos, esta regla no detecta actualmente scripts de PowerShell; se trata de una solución temporal. La regla se actualizará y comenzará a volver a detectar scripts de PowerShell pronto.
 
 Intune nombre:`Obfuscated js/vbs/ps/macro code`
 
