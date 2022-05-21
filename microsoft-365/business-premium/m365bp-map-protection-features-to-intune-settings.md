@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/21/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320317"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622435"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 
@@ -101,7 +101,7 @@ Para buscar la configuración de Intune, inicie sesión con sus credenciales de 
   
 |**Configuración de la directiva de dispositivo de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
-|Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  |Permitir la supervisión en tiempo real = Activado  <br/> Permitir la protección de la nube = Activado  <br/> Solicitar a los usuarios el envío de ejemplos = Enviar ejemplos seguros automáticamente (envío automático de DCP predeterminada)  |
+|Ayudar a proteger los equipos frente a virus y otras amenazas mediante Antivirus de Microsoft Defender  |Permitir la supervisión en tiempo real = Activado  <br/> Permitir la protección de la nube = Activado  <br/> Solicitar a los usuarios el envío de ejemplos = Enviar ejemplos seguros automáticamente (envío automático de DCP predeterminada)  |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  |**SmartScreen** en **Configuración del Explorador de Edge** se establece en **Requerir**.  |
 |Desactivar la pantalla del dispositivo cuando haya estado inactivo durante (minutos)  |Número máximo de minutos de inactividad hasta que se bloquea la pantalla (minutos)  |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  |Directiva URI personalizada  |

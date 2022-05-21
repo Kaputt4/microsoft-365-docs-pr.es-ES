@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtenga información sobre cómo configurar las opciones de la directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: e912ab639e5457d3c89155da4d3621399502267f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a88aad90d9ca55c5a5abeb17345179c2defdbd4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319912"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621345"
 ---
 # <a name="secure-windows-devices"></a>Proteger dispositivos Windows
 
@@ -45,7 +45,7 @@ De forma predeterminada, todas las opciones de configuración están **activadas
 
 |Configuración  <br/> |Descripción  <br/> |
 |:-----|:-----|
-|Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
+|Ayudar a proteger los equipos frente a virus y otras amenazas mediante Antivirus de Microsoft Defender  <br/> |Es necesario que el antivirus Microsoft Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso de robo o pérdida de un equipo. Para más información, vea [Preguntas más frecuentes sobre BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |

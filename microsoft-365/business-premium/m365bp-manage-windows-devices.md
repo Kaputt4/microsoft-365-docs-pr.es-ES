@@ -26,18 +26,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a habilitar Microsoft 365 para proteger dispositivos locales unidos a Active Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319099"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622746"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitación de dispositivos Windows 10 unidos a un dominio para que los administre Microsoft 365 Empresa Premium
+# <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Administrar dispositivos Windows con Microsoft 365 Empresa Premium
 
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local.
+Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local.
 
-Para configurar esta protección, puede implementar **Dispositivos unidos a Azure AD híbrido**. Estos dispositivos se unen tanto al Active Directory local como a Azure Active Directory.
+Para configurarlo, implemente **Dispositivos unidos a Azure AD híbrido**. Estos dispositivos se unen tanto al Active Directory local como a Azure Active Directory.
 
 > [!NOTE]
 > Microsoft Defender para Empresas se implementará para los clientes de Microsoft 365 Empresa Premium a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
@@ -55,6 +55,27 @@ En este vídeo se describen los pasos para configurar esto para el escenario má
 - Asegúrese de que todos los usuarios del dominio que sincronice tengan licencias para Microsoft 365 Empresa Premium.
 
 Consulte [Sincronizar usuarios del dominio con Microsoft 365](../admin/setup/manage-domain-users.md) para ver los pasos.
+
+## <a name="device-actions"></a>Acciones de dispositivo
+  
+![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+
+Los dispositivos y sus acciones asociadas pueden tener los siguientes estados:
+  
+|**Estado**|**Descripción**|
+|:-----|:-----|
+|Administrado por Intune  |Administrado por Microsoft 365 Empresa Premium.  |
+|Pendiente de retirada  |Microsoft 365 Empresa Premium se está preparando para quitar los datos de la empresa del dispositivo.  |
+|Retirada en curso  |Microsoft 365 Empresa Premium está quitando los datos de la empresa del dispositivo.  |
+|Error de retirada  | No se pudo completar la acción para quitar los datos de la compañía.  |
+|Retirada cancelada  |Se ha cancelado la acción de retirar.  |
+|Borrado pendiente  |Esperando a que se inicie el restablecimiento de fábrica.  |
+|Borrado en curso  |Se emitió el restablecimiento de fábrica.  |
+|No se pudo completar el borrado  |No se ha podido realizar el restablecimiento de fábrica.  |
+|Borrado cancelado  |Se ha cancelado el borrado de fábrica.  |
+|Incorrecto  |Hay una acción pendiente (o en curso), pero el dispositivo no se ha comprobado en más de 30 días.  |
+|Pendiente de eliminación  |La acción de eliminación está pendiente.  |
+|Detectado  |Microsoft 365 Empresa Premium ha detectado el dispositivo.  |
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Compruebe la entidad de MDM en Intune
 

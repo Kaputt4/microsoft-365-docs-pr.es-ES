@@ -1,5 +1,5 @@
 ---
-title: Un sitio de comunicaciones de SharePoint
+title: Crear un sitio de comunicaciones de SharePoint en Teams para Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre por qué y cómo crear un sitio de comunicaciones de SharePoint para su campaña o negocio con Microsoft 365, y proteja al equipo de ciberataques y ataques de malware y otras amenazas debido a un uso compartido incorrecto de archivos.
-ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Obtenga información sobre por qué y cómo crear un sitio de comunicaciones de SharePoint para su campaña o negocio con Microsoft 365 Empresa Premium, y proteja al equipo de ciberataques y ataques de malware y otras amenazas debido a un uso compartido incorrecto de archivos.
+ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319536"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623425"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>Un sitio de comunicación en SharePoint Online
+# <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 
 Una excelente manera de comunicar prioridades, compartir documentos de estrategia y resaltar los próximos eventos es usar un sitio de comunicaciones en SharePoint y de eso trata esta misión. Los sitios de comunicaciones sirven para compartir cosas de forma general en toda la empresa o campaña &mdash; es el sitio de estrategia interna y el espacio táctico. 
 
