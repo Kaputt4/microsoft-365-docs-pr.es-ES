@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: 28f39b8aaf715c9f95f89fe30ae0cfc077327eda
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f616ed65879427c377333981841006b2b50b3515
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469522"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621274"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -32,7 +32,7 @@ ms.locfileid: "65469522"
   
 El Reglamento general de protección de datos (RGPD) es una normativa de la Unión Europea (UE) que regula la forma en que una organización debe administrar los datos personales. Si su empresa vende, proporciona servicios o emplea a ciudadanos de la Unión Europea, entonces el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
 
-Como administrador de una pequeña empresas, probablemente se pregunte "¿cómo puedo empezar"? Esto puede ser especialmente cierto si su empresa no controla los datos personales como una actividad empresarial básica o si el RGPD es totalmente nuevo para usted.
+Como administrador de una pequeña empresa, probablemente se pregunte "¿cómo puedo empezar?" Esto puede ser especialmente cierto si su empresa no controla los datos personales como una actividad empresarial básica o si el RGPD es totalmente nuevo para usted.
 
 Puede empezar revisando este artículo, que tiene como objetivo ayudarle a comprender qué es el RGPD, por qué surgió y cómo Microsoft 365 para empresas puede ayudar a su organización a cumplir con el RGPD.
 
@@ -73,7 +73,7 @@ El RGPD establece los derechos de los interesados, lo que significa que, con res
     
 - **Solicitar que se eliminen los datos:** Este derecho, también conocido como "derecho al borrado", permite que un usuario solicite que cualquiera de los datos personales que ha recopilado una empresa se elimine en todos los sistemas que los usan o los comparten. 
     
-- **Solicitar procesamiento restringido:** una persona puede pedirle que suprima o restringa sus datos. Pero solo se puede aplicar en algunas circunstancias. 
+- **Solicitar procesamiento restringido:** una persona puede pedirle que suprima o restringa sus datos. Sin embargo, solo se puede aplicar en algunas circunstancias. 
     
 - **Tener portabilidad de datos:** un individuo puede solicitar que sus datos se transfieran a otra empresa. 
     
@@ -94,13 +94,14 @@ Una buena manera para que una pequeña empresa empiece con el RGPD es asegurarse
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Paso 1: conocer los datos personales que recopila y usa en su empresa y los motivos por los que los necesita
 
-Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa dentro de su empresa y definir por qué son necesarios. Nos referimos tanto a los datos de sus empleados como a los de sus clientes.
+Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa en la empresa y definir porqué son necesarios. Nos referimos tanto a los datos de los empleados como a los de los clientes.
 
 Por ejemplo, es posible que necesite los datos personales de su empleado en función del contrato laboral y por motivos legales (por ejemplo, declarar impuestos al Servicio de Impuestos Internos).
 
 Como otro ejemplo, puede administrar listas de clientes individuales para enviarles avisos sobre ofertas especiales, si han dado su consentimiento a esto.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
+
 [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) puede ayudarle a descubrir, clasificar y proteger información confidencial en su empresa. Puede usar clasificadores capacitados para ayudarle a identificar y etiquetar los tipos de documento que contienen datos personales. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Paso 2: Informar a sus clientes, empleados y otras personas cuando necesite recopilar sus datos personales
@@ -233,7 +234,7 @@ Microsoft 365 para empresas puede ayudarle con el proceso de RGPD de las siguien
   
 - **Descubrir:** Un paso importante para el cumplimiento de RGPD es saber qué datos tiene. 
     
-- **Administrar:** controlar el acceso a los datos y administrar su uso es una parte integral del RGPD. Microsoft 365 para empresas protege los datos profesionales en función de las directivas que quiera aplicar en los dispositivos. La administración de dispositivos es esencial en una era en la que los empleados trabajan de forma remota. Microsoft 365 para empresas incluye características de administración de dispositivos que se asegura de que los datos están protegidos en todos los dispositivos. Por ejemplo, puede especificar que todos los dispositivos con Windows 10 de su empresa estén protegidos a través de Windows Defender. 
+- **Administrar:** controlar el acceso a los datos y administrar su uso es una parte integral del RGPD. Microsoft 365 para empresas protege los datos profesionales en función de las directivas que quiera aplicar en los dispositivos. La administración de dispositivos es esencial en una era en la que los empleados trabajan de forma remota. Microsoft 365 para empresas incluye características de administración de dispositivos que garantizan que los datos están protegidos en todos los dispositivos. Por ejemplo, puede especificar que todos los dispositivos con Windows 10 de su empresa estén protegidos a través de Windows Defender. 
     
 - **Protección:** Microsoft 365 para empresas está diseñado para la seguridad. La administración de dispositivos y los controles de protección de datos funcionan en la red de su empresa, incluidos los dispositivos remotos, para ayudar a proteger los datos. Microsoft 365 para empresas ofrece controles como la configuración de privacidad en las aplicaciones de Office y el cifrado de documentos. Con Microsoft 365 para empresas, puede realizar la supervisión de cumplimiento DE RGPD para asegurarse de que tiene el nivel adecuado de conjunto de protección. 
     
