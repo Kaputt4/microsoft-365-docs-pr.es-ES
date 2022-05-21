@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 24a95c8ed6d7d1cdd15b15b53434414e44b7881f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 6bf97490d60740b47420d352f7fb537e675678ae
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417938"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621129"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -52,6 +52,9 @@ La protección de red amplía la protección de la [protección web](web-protect
 
 > [!NOTE]
 > El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
+
+Vea este vídeo para obtener información sobre cómo la protección de red ayuda a reducir la superficie expuesta a ataques de los dispositivos frente a estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## <a name="requirements-for-network-protection"></a>Requisitos para la protección de red
 
@@ -148,7 +151,7 @@ Un usuario visita un sitio web:
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Protección de red: detección y corrección de C2
 
-En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada que es controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos; como mantener activos o datos completos de una organización para el rescate.
+En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos; como mantener activos o datos completos de una organización para el rescate.
 
 La compatibilidad con comandos y control (C2) es una parte clave de esta evolución de ransomware y es lo que permite que estos ataques se adapten al entorno al que se dirigen. Romper el vínculo a la infraestructura de comandos y control significa detener la progresión de un ataque a su siguiente fase.
 

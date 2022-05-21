@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.'
-ms.openlocfilehash: 58c4225d9d381dabedfa86d81ced7f5922932058
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100333"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622828"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
   
 Algunos hardware de red pueden tener limitaciones en el número de sesiones simultáneas que se admiten. Para las organizaciones que tienen más de 2000 usuarios, se recomienda supervisar sus dispositivos de red para asegurarse de que son capaces de controlar el tráfico adicional Office 365 servicio. El software de supervisión simple del Protocolo de administración de redes (SNMP) puede ayudarle a hacerlo.
 
@@ -68,7 +68,7 @@ Proporcionamos una solución NLB basada en software integrada en Windows Server.
 
 Para obtener más información sobre cómo configurar firewalls y servidores proxy para conectarse a Office 365, consulte [Administración de puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Evaluación de Office 365 conectividad de red](assessing-network-connectivity.md) y [preguntas más frecuentes sobre puntos de conexión de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para obtener más información sobre los dispositivos y la selección de circuitos.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guías de configuración para servicios de Office 365](setup-guides-for-microsoft-365.md)
 

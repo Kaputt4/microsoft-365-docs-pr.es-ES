@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Aprenda a configurar y utilizar un conector dataparser del Jabber de Cisco 17a-4 para importar y archivar datos del Cisco Jabber en Microsoft 365.
-ms.openlocfilehash: 3e7bcd9a85293d1516da8070fa39e2545d4fbc22
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 3cc3fc0642b40bfd16f7e8b42fa3d68a98e7bca9
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319968"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622168"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Configuración de un conector para archivar datos de Cisco Jabber
 
@@ -35,7 +35,7 @@ La siguiente información general explica el proceso de uso de un conector de da
 
 1. Su organización trabaja con 17a-4 para configurar y configurar el DataParser del Jabber de Cisco.
 
-2. De forma regular, los elementos del Cisco Jabber son recopilados por el DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
+2. Regularmente, los elementos del Cisco Jabber son recopilados por el DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
 3. El conector DataParser del Jabber de Cisco que usted crea en el portal de cumplimiento Microsoft Purview conecta con DataParser y transfiere los mensajes a una ubicación segura Azure Storage en la nube de Microsoft.
 
@@ -45,7 +45,7 @@ La siguiente información general explica el proceso de uso de un conector de da
 
 - Cree una cuenta de DataParser para los conectores de Microsoft. Para ello, póngase en contacto con [17a-4 LLC](https://www.17a-4.com/contact/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- El usuario que crea el conector dataparser del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- El usuario que crea el conector DataParser del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de Admin del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol Admin conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Este conector de datos 17a-4 está disponible en entornos de GCC en la nube Microsoft 365 us Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 

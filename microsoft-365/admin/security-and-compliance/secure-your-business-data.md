@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Proteja el correo electrónico y los datos empresariales de ciberamenazas, incluidos ransomware, suplantación de identidad (phishing) y datos adjuntos malintencionados.
-ms.openlocfilehash: 18de5e6f0d859095f38972b0fae66c1312bf4099
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093675"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622807"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Procedimientos recomendados para proteger Microsoft 365 para empresas
 
@@ -52,9 +52,9 @@ Todos los planes de Microsoft 365 ofrecen protección y seguridad de línea base
 
 Para obtener información sobre una de las características del plan de servicio, haga clic en el encabezado de la tabla siguiente. 
 
-|Task|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
+|Tarea|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
 |---|---|---|
-[Protección contra contraseñas perdidas o robadas](#set-up-multifactor-authentication) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protección contra contraseñas perdidas o robadas](#set-up-multi-factor-authentication) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Proporcionar formación a los usuarios](#train-your-users) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Uso de cuentas de administrador dedicadas](#use-dedicated-admin-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Protección contra malware](#protect-against-malware) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protección para correo electrónico) | ![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(mayor protección para el correo electrónico y los dispositivos) |
@@ -72,7 +72,7 @@ Es importante que antes de empezar, compruebe la [puntuación de seguridad de Mi
 
 ![Captura de pantalla de Puntuación de seguridad de Microsoft.](../../media/secure-score.png)
 
-## <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
+## <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
 
 Proteja contra contraseñas perdidas o robadas mediante la autenticación multifactor (MFA). Cuando se configura la autenticación multifactor, se requiere que los usuarios usen un código en su teléfono para iniciar sesión en Microsoft 365. Este paso adicional puede impedir que los hackers se haga cargo si conocen su contraseña. 
 
@@ -145,7 +145,7 @@ Puede aumentar la protección contra malware bloqueando los datos adjuntos con l
 2. En la página **Antimalware** , haga doble clic en **Predeterminado**. Aparece un control flotante.
 3. Seleccione **Editar configuración de protección** en la parte inferior del control flotante.
 4. En la página siguiente, en **Configuración de protección**, active la casilla situada junto a **Habilitar el filtro de datos adjuntos comunes**. Los tipos de archivo bloqueados se enumeran directamente debajo de esta opción. Para agregar o eliminar tipos de archivo, seleccione **Personalizar tipos de archivo** al final de la lista.
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 Para obtener más información, vea [Protección antimalware en EOP](../../security/office-365-security/anti-malware-protection.md).
 
@@ -161,7 +161,7 @@ Si su organización usa Microsoft 365 Empresa Premium, obtendrá protección adi
 
 Estas funcionalidades se incluyen en Microsoft Defender para Empresas, una oferta que comenzará a implementarse en Microsoft 365 Empresa Premium clientes a partir del 1 de marzo de 2022.
 
-[Más información sobre Microsoft Defender para Empresas](../../security/defender-business/mdb-overview.md).
+[Más información acerca de Microsoft Defender para empresas](../../security/defender-business/mdb-overview.md).
 
 ## <a name="protect-against-ransomware"></a>Protección contra ransomware
 
@@ -189,9 +189,9 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de entrenamie
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiarlas.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
-| Setting | Advertir a los usuarios antes de abrir archivos adjuntos de Office | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Configuración | Advertir a los usuarios antes de abrir archivos adjuntos de Office | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla contra ransomware: advertir a los usuarios  <br/> |Regla contra ransomware: tipos de archivo de bloque  <br/> |
 |Aplique esta regla si es . . .  <br/> |Cualquier archivo adjunto . . . la extensión de archivo coincide con . . .  <br/> |Cualquier archivo adjunto . . . la extensión de archivo coincide con . . .  <br/> |
@@ -234,7 +234,7 @@ Si el destinatario tiene Outlook 2013 o Outlook 2016 y una cuenta de correo elec
 Si el destinatario usa otro cliente de correo electrónico o cuenta de correo electrónico, como Gmail o Yahoo, verá un vínculo que le permite iniciar sesión para leer el mensaje de correo electrónico o solicitar un código de acceso único para ver el mensaje en un explorador web. Si los usuarios no reciben el correo electrónico, deben comprobar su carpeta correo no deseado o correo no deseado.
 
 > [!TIP]
-> Para obtener más información, consulte [Envío, visualización y respuesta a mensajes cifrados en Outlook para PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
+> Para obtener más información, consulte [Enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## <a name="protect-the-organization"></a>Protección de la organización
 
@@ -343,7 +343,7 @@ Con Microsoft 365 Empresa Premium se obtienen características de seguridad mejo
 
 Para obtener más información, consulte los siguientes recursos:
 
-- [Información general sobre Microsoft Defender para empresas](../../security/defender-business/mdb-overview.md)
+- [Introducción a Microsoft Defender para Empresas](../../security/defender-business/mdb-overview.md)
 
 - [Configuración y configuración de Microsoft Defender para Empresas](../../security/defender-business/mdb-setup-configuration.md)
 

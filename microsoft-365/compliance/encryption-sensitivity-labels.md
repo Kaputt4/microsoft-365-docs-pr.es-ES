@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469456"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599241"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -69,14 +69,14 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 
 - Configurar Exchange para Azure Information Protection
     
-    Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para cifrar los mensajes de correo. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
+    Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para cifrar los mensajes de correo. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
     
-    Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
+    Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar DLP de Exchange Online para la protección de administración de derechos. 
     
-    Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
+    Para asegurarse de que Exchange puede admitir estos escenarios adicionales:
     
     - Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](/azure/information-protection/deploy-rms-connector). 
+    - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](/azure/information-protection/deploy-rms-connector).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
@@ -156,13 +156,22 @@ Elegir si asignar permisos ahora o permitir a los usuarios asignar permisos:
 
 Use las siguientes opciones para controlar quién puede tener acceso al correo electrónico o a los documentos a los que se aplica esta etiqueta. Puede:
 
-- **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. (Tenga en cuenta que algunos clientes de correo electrónico pueden no aplicar la expiración y mostrar correos electrónicos una vez pasada dicha fecha, debido a otros mecanismos de almacenamiento en caché).
+- **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. Algunos clientes de correo electrónico pueden no aplicar la expiración y mostrar correos electrónicos una vez pasada dicha fecha, debido a otros mecanismos de almacenamiento en caché.
 
-- **Permitir el acceso sin conexión** nunca, siempre o durante un número concreto de días después de aplicar la etiqueta. Si restringe el acceso sin conexión a nunca o a un número de días, cuando se alcance el umbral, los usuarios deberán volver a autenticarse y se registrará el acceso. Para obtener más información, vea la siguiente sección sobre la licencia de uso de administración de derechos.
+- **Permitir el acceso sin conexión** nunca, siempre o durante una cantidad específica de días después de aplicar la etiqueta. Use esta opción para equilibrar los requisitos de seguridad que tiene con la capacidad de que los usuarios abran contenido cifrado cuando no tengan conexión a Internet. Si restringe el acceso sin conexión a nunca o a un número de días, cuando se alcance ese umbral, se debe volver a autenticar a los usuarios y se registrará su acceso. Para obtener más información sobre cómo funciona este proceso, consulte la siguiente sección sobre la [licencia de uso de Rights Management](#rights-management-use-license-for-offline-access).
 
 Configuración de control de acceso para contenido cifrado:
 
 ![Configuración de permisos definidos por el administrador.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+
+Recomendaciones para la configuración de expiración y acceso sin conexión:
+
+|Configuración|Valor recomendado|
+|-------|----------------|-------------------|
+|**El acceso del usuario al contenido expira**|**Nunca** a menos que el contenido tenga un requisito específico de tiempo limitado.|
+|**Permitir acceso sin conexión**|Depende de la confidencialidad del contenido:<br /><br />- **Solo durante un número de días** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Entre los ejemplos, se incluyen contratos, informes de seguridad, resúmenes de previsión y datos de cuentas de ventas.<br /><br />- **Nunca** para datos empresariales muy confidenciales que podrían causar daños a la empresa si se compartiesen con personas no autorizadas. Esta recomendación brinda prioridad a la seguridad frente a la flexibilidad y garantiza que, si quita el acceso de uno o varios usuarios al documento, no podrán abrirlo. Algunos ejemplos son la información de empleados y clientes, las contraseñas, el código fuente y los informes financieros anunciados de manera previa. <br /><br />- **Siempre** para contenido menos confidencial en el que no importa si los usuarios pueden seguir abriendo el contenido cifrado durante un máximo de 30 días (o el período de validez de licencia de uso configurado para el inquilino) después de quitar su acceso y haber abierto previamente el contenido cifrado.|
+
+Solo las etiquetas configuradas para asignar permisos ahora admiten valores diferentes para el acceso sin conexión. Las etiquetas que permiten a los usuarios asignar los permisos usan el período de validez de la licencia de uso de Rights Management del inquilino. Por ejemplo, las etiquetas configuradas para No reenviar, Solo cifrar y las que solicitan a los usuarios que especifiquen sus propios permisos. El valor predeterminado de esta configuración es 30 días.
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
 
@@ -171,7 +180,7 @@ Configuración de control de acceso para contenido cifrado:
 
 Cuando un usuario abre un documento o correo electrónico que está protegido mediante cifrado del servicio de Azure Rights Management, se concede una licencia de uso de Azure Rights Management para el usuario. Esta licencia de uso es un certificado que contiene los derechos de uso del usuario para el documento o correo electrónico, y la clave de cifrado que se usó para cifrar el contenido. La licencia de uso también contiene una fecha de vencimiento (si se ha configurado) y el tiempo durante el que la licencia de uso es válida.
 
-Si no se ha establecido ninguna fecha de expiración, el período predeterminado de validez de licencia de uso para un espacio empresarial es 30 días. Durante la duración de la licencia de uso, el usuario no se vuelve a autenticar o autorizar para ver el contenido. Este proceso permite que el usuario pueda abrir el documento o correo electrónico protegido sin conexión a Internet. Cuando la validez de la licencia de uso expire, la próxima vez que el usuario acceda a un documento o correo electrónico protegido, el usuario debe ser autorizado y autenticarse de nuevo.
+Si no se ha establecido ninguna fecha de expiración, el período predeterminado de validez de licencia de uso para un espacio empresarial es 30 días. Durante la duración de la licencia de uso, el usuario no se vuelve a autenticar o autorizar para ver el contenido. Este proceso permite que el usuario pueda abrir el documento o correo electrónico protegido sin conexión a Internet. Cuando la validez de la licencia de uso expire, la próxima vez que el usuario acceda a un documento o correo electrónico protegido, el usuario debe ser autorizado y autenticarse de nuevo.
 
 Además de volver a hacer la autenticación, se vuelven a evaluar la pertenencia a grupos de usuario y la directiva. Esto significa que los usuarios podrían experimentar resultados diferentes de acceso para el mismo documento o correo electrónico si hay cambios en la configuración del cifrado o en la pertenencia a grupos con respecto al último momento en que se accedió al contenido.
 
@@ -197,7 +206,7 @@ Al asignar permisos, puede elegir:
 
 - Cualquier usuario autenticado. Asegúrese de comprender las [limitaciones y requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
 
-- Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
+- Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](/azure/active-directory/users-groups-roles/groups-create-rule). No puede usar un [grupo de distribución dinámico de Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD. Tampoco puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
     
     Aunque puede especificar grupos que incluyan contactos de correo como método conveniente para conceder acceso a varias personas fuera de la organización, actualmente hay un problema conocido con esta configuración. Para más información, consulte [Contactos de correo en grupos que tienen acceso intermitente a contenido cifrado](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
@@ -257,7 +266,7 @@ Para obtener más información, vea [Emisor de administración de derechos y pro
 > [!NOTE]
 > Esta característica solo es compatible actualmente con el cliente de etiquetado unificado de Azure Information Protection.
 
-Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta. Una vez configurada y guardada, no podrás editar la etiqueta.
+Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta. Una vez configurada y guardada, no podrá editar la etiqueta.
 
 Para obtener más información, ver los requisitos previos y las instrucciones de configuración, consulte el [Cifrado de doble clave (DKE)](double-key-encryption.md).
 
@@ -303,7 +312,7 @@ En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que le per
 
 Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, el destinatario obtiene automáticamente derechos de uso restringido:
 
-- **Do Not Forward**: los destinatarios no pueden reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, las opciones de menú Guardar como e Imprimir no están disponibles y no puede agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
+- **No reenviar**: los destinatarios no podrán reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
     
     Para obtener más información sobre cómo funciona esta opción, consulte [Opción No reenviar para correos electrónicos](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
@@ -315,7 +324,7 @@ Los documentos de Office sin cifrar asociados al correo electrónico heredan aut
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Permisos de Word, PowerPoint y Excel
 
-En Word, PowerPoint y Excel, cuando un usuario aplica una etiqueta de confidencialidad que le permite asignar permisos a un documento, se le pedirá que especifique la elección de usuarios y permisos cuando se aplique el cifrado.
+En Word, PowerPoint y Excel, cuando un usuario aplica una etiqueta de confidencialidad que le permite asignar permisos a un documento, se le pide al usuario que especifique su elección de usuarios y permisos para el cifrado.
 
 Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protection, a menos que la [co-autoría esté habilitada](sensitivity-labels-coauthoring.md), los usuarios pueden:
 
@@ -325,7 +334,7 @@ Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protecti
 
 ![Opciones de protección para el usuario con permisos personalizados.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-Para el etiquetado integrado y para el cliente de etiquetado unificado de Azure Information Protection cuando la [co-autoría está habilitada](sensitivity-labels-coauthoring.md), los usuarios ven el mismo cuadro de diálogo que si seleccionan lo siguiente:
+Para el etiquetado integrado y para el cliente de etiquetado unificado de Azure Information Protection cuando la [coautoría está habilitada](sensitivity-labels-coauthoring.md), los usuarios ven el mismo cuadro de diálogo que verían si seleccionaran lo siguiente:
 
 - Windows: pestaña **Archivo** > **Información** > **Proteger documento** > **Restringir accesso** > **Accesso restringido**
 
@@ -358,7 +367,7 @@ Los usuarios escriben la dirección de correo electrónico de Gmail en el cuadro
 
 Esta etiqueta es adecuada para compartir documentos muy confidenciales como solo lectura, y los documentos siempre requieren una conexión a Internet para verlos.
 
-Esta etiqueta no es adecuada para correos electrónicos.
+Esta etiqueta no es adecuada para los correos electrónicos.
 
 1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** seleccione **Asignar permisos ahora**.
 
@@ -402,7 +411,7 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 Esta configuración tiene la ventaja de no tener que especificar usuarios, grupos o dominios para cifrar un correo electrónico o un documento. El contenido seguirá estando cifrado y aún podrá especificar derechos de uso, una fecha de expiración y acceso sin conexión.
 
-Use esta configuración solo cuando no necesite restringir quién puede abrir el documento protegido o el correo electrónico. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
+Use esta configuración solo cuando no necesite restringir quién puede abrir el documento o correo electrónico protegido. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** asegúrese de que la opción **Asignar permisos ahora** está seleccionada.
 

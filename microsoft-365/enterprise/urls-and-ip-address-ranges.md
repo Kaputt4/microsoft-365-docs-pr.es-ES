@@ -3,7 +3,7 @@ title: Intervalos de direcciones IP y URL de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguientes puntos de conexión deben resultar accesibles para los clientes que usan planes de Office 365, incluida la nube de la comunidad de administración pública (GCC).'
 hideEdit: true
-ms.openlocfilehash: 80e4c14652303d1f04e697f73153b0f013b987cd
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 70f43a78ef0a3cb58c0ac9dc98cd7e03a56fcdff
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217340"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622072"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 
@@ -42,23 +42,27 @@ Office 365 requiere conectividad a Internet. Los siguientes puntos de conexión 
 |**Última actualización:** 28/04/2022 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).|**Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy|
 |
 
-Comience por [Administrar los puntos de conexión de Office 365](managing-office-365-endpoints.md) si desea entender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de los puntos de conexión se actualizan al principio de cada mes, según sea necesario, con las nuevas direcciones IP y URL publicadas 30 días antes de su activación. Esto permite que los clientes que todavía no hayan automatizado las actualizaciones completen el proceso antes de que se requiera una nueva conectividad. También podrían actualizarse los puntos de conexión durante el mes, si fuera necesario, para gestionar la canalización del soporte técnico, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que aparecen en la página siguiente se generan desde los servicios web basados en REST. Si usa un dispositivo de red o un script para obtener acceso a estos datos, vaya directamente al [Servicio web](microsoft-365-ip-web-service.md).
+Comience por [Administrar los puntos de conexión de Office 365](managing-office-365-endpoints.md) si desea entender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de los puntos de conexión se actualizan según sea necesario al principio de cada mes, con nuevas direcciones IP y direcciones URL publicadas 30 días antes de estar activos. Esta cadencia permite a los clientes que aún no tienen actualizaciones automatizadas completar sus procesos antes de que se requiera una nueva conectividad. Los puntos de conexión también se pueden actualizar durante el mes, si es necesario, para abordar las escalaciones de soporte técnico, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en la página siguiente se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para acceder a estos datos, debe ir directamente al [servicio web](microsoft-365-ip-web-service.md).
 
 Los datos de puntos de conexión siguientes enumeran los requisitos de conectividad desde el equipo de un usuario a Office 365. Para obtener detalles sobre las direcciones IP usadas para las conexiones de red de Microsoft a una red de cliente, a veces denominadas conexiones de red híbridas o entrantes, consulte [Puntos de conexión adicionales](additional-office365-ip-addresses-and-urls.md) para obtener más información.
 
-Los puntos de conexión se agrupan en cuatro áreas de servicio que representan las tres cargas de trabajo principales y un conjunto de recursos comunes. Los grupos pueden usarse para asociar flujos de tráfico con una aplicación determinada, pero dado que las características suelen consumir puntos de conexión en varias cargas de trabajo, estos grupos no se pueden usar eficazmente para restringir el acceso.
+Los puntos de conexión se agrupan en cuatro áreas de servicio que representan las tres cargas de trabajo principales y un conjunto de recursos comunes. Los grupos pueden usarse para asociar flujos de tráfico con una aplicación determinada, pero dado que las características suelen consumir puntos de conexión en varias cargas de trabajo, estos grupos no se pueden usar para restringir el acceso de manera eficaz.
 
 Estas son columnas de datos que se muestran:
 
 - **ID**: el número de identificación de la fila, también conocido como un conjunto de puntos de conexión. Este identificador es el mismo que devuelve el servicio web para el conjunto de puntos de conexión.
 
-- **Categoría**: muestra si el conjunto de puntos de conexión se clasifica como "Optimizar", "Permitir" o "Predeterminado". Puede leer sobre estas categorías y encontrar indicaciones para su administración en [Las nuevas categorías de punto de conexión de Office 365](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). Esta columna también muestra los conjuntos de puntos de conexión que deben tener conectividad de red. Para los conjuntos de puntos de conexión que no necesitan conectividad de red, le proporcionamos notas en este campo para indicar qué funcionalidad faltaría si se bloqueara el conjunto de puntos de conexión. Si va a excluir un área de servicio completa, los conjuntos de puntos de conexión enumerados como necesarios no necesitan conectividad.
+- **Categoría**: muestra si el conjunto de puntos de conexión se clasifica como **Optimizar**, **Permitir** o **Predeterminado**. Esta columna también muestra los conjuntos de puntos de conexión que deben tener conectividad de red. Para los conjuntos de puntos de conexión que no necesitan conectividad de red, le proporcionamos notas en este campo para indicar qué funcionalidad faltaría si se bloqueara el conjunto de puntos de conexión. Si va a excluir un área de servicio completa, los conjuntos de puntos de conexión enumerados como necesarios no necesitan conectividad.
 
-- **EMERGENCIA**: aparece como **Sí** si el conjunto de puntos de conexión se admite en Azure ExpressRoute con prefijos de ruta de Office 365. La comunidad de BGP que incluye los prefijos de ruta que aparecen se alinea con el área de servicio que se muestra. Si EMERGENCIA aparece como **No**, esto significa que ExpressRoute no es compatible con este conjunto de puntos de conexión. Sin embargo, no se debe dar por hecho que no se anuncia ninguna ruta para un conjunto de puntos de conexión cuando EMERGENCIA se establezca como **No**.
+   Puede leer sobre estas categorías e instrucciones para su administración en [Nuevas categorías de puntos de conexión de Office 365](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
 
-- **Direcciones**: enumera los FQDN o nombres de dominio con caracteres comodín y los intervalos de direcciones IP para el conjunto de puntos de conexión. Tenga en cuenta que un intervalo de direcciones IP está en formato CIDR y puede incluir varias direcciones IP individuales en la red especificada.
+- **ER**: esto es **Sí** si el conjunto de puntos de conexión se admite en Azure ExpressRoute con prefijos de ruta de Office 365. La comunidad BGP que incluye los prefijos de ruta mostrados se alinea con el área de servicio indicada. Cuando ER es **No**, esto significa que ExpressRoute no se admite para este conjunto de puntos de conexión.
 
-- **Puertos**: muestra los puertos TCP o UDP que se combinan con las direcciones para formar el punto de conexión de la red. Es posible que observe repeticiones de intervalos de direcciones IP cuando se enumeran diferentes puertos.
+   Algunas rutas se pueden anunciar en más de una comunidad BGP, lo que permite que los puntos de conexión dentro de un intervalo IP determinado atraviesen el circuito de ER; sin embargo, aún no se admiten. En todos los casos, se debe respetar el valor de la columna ER de un conjunto de puntos de conexión determinado. Para obtener más información sobre las comunidades BGP, consulte [Usar comunidades BGP en ExpressRoute para escenarios de Office 365](bgp-communities-in-expressroute.md#key-planning-considerations-to-using-bgp-communities).
+
+- **Direcciones**: muestra los FQDN o nombres de dominio con caracteres comodín y los intervalos de direcciones IP para el conjunto de puntos de conexión. Tenga en cuenta que un intervalo de direcciones IP está en formato CIDR y puede incluir varias direcciones IP individuales en la red especificada.
+
+- **Puertos**: muestra los puertos TCP o UDP que se combinan con las direcciones IP enumeradas para formar el punto de conexión de la red. Es posible que observe repeticiones de intervalos de direcciones IP cuando se enumeran diferentes puertos.
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 

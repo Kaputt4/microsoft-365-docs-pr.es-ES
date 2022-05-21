@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos de Caja fuerte en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte Vínculos y vea los gráficos de los mensajes de vínculos de Caja fuerte.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535116"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623468"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>vínculos de Caja fuerte en Microsoft Defender para Office 365
 
@@ -62,6 +62,9 @@ La protección de vínculos seguros está disponible en las siguientes ubicacion
 - **Microsoft Teams**: la protección de vínculos seguros para vínculos en conversaciones de Teams, chats de grupo o desde canales también se controla mediante directivas de vínculos seguros.
 
   Para obtener más información sobre la protección de vínculos de Caja fuerte en Teams, consulte la sección [configuración de vínculos de Caja fuerte para Microsoft Teams](#safe-links-settings-for-microsoft-teams) más adelante en este artículo.
+
+  > [!NOTE]
+  > Actualmente, la protección de vínculos de Caja fuerte para Microsoft Teams no está disponible en Microsoft 365 GCC DoD high o Microsoft 365.
 
 - **Aplicaciones de Office 365**: la protección de vínculos seguros para aplicaciones de Office 365 está disponible en aplicaciones de escritorio, móviles y web compatibles. La protección de vínculos de Caja fuerte se **configura** para las aplicaciones de Office 365 en la configuración global que están **fuera** de las directivas de vínculos de Caja fuerte. Para obtener instrucciones, consulte [Configuración global de los valores de vínculos de Caja fuerte en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
 
@@ -163,6 +166,8 @@ Puede habilitar o deshabilitar la protección de vínculos seguros para Microsof
 
 > [!NOTE]
 > Al activar o desactivar Caja fuerte protección de vínculos para Teams, el cambio puede tardar hasta 24 horas en surtir efecto.
+>
+> Actualmente, la protección de vínculos de Caja fuerte para Microsoft Teams no está disponible en Microsoft 365 GCC DoD high o Microsoft 365.
 
 La siguiente configuración de Caja fuerte Las directivas de vínculos que se aplican a los vínculos de mensajes de correo electrónico también se aplican a los vínculos de Teams:
 

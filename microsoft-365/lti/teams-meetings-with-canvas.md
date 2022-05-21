@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integración de reuniones Microsoft Teams con Canvas
-ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599621"
+ms.locfileid: "65621468"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Uso de reuniones Microsoft Teams con Canvas
 
@@ -95,6 +95,6 @@ Como Admin canvas, deberá agregar la aplicación LTI de reuniones de Microsoft 
 
 ## <a name="enable-for-canvas-courses"></a>Habilitar para cursos de Canvas
 
-Para usar el LTI dentro de un curso, un instructor del curso de Canvas debe habilitar la sincronización de integraciones. Cada curso debe ser habilitado por un instructor para que se cree un Teams correspondiente; no hay ningún mecanismo global para Teams creación. Esto está diseñado por precaución para evitar que se creen Teams no deseados.
+Para usar el LTI dentro de un curso, un instructor del curso de Canvas debe habilitar la sincronización de integraciones. Cada curso debe estar habilitado por un instructor para que se cree un Teams correspondiente; no hay ningún mecanismo global para Teams creación. Esto está diseñado por precaución para evitar que se creen Teams no deseados.
 
 Consulte a los instructores la [documentación del educador](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) para habilitar el LTI para cada curso y finalizar la configuración de integración.

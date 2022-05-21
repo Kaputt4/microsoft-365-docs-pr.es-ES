@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y la configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847110"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623017"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -103,10 +103,10 @@ La creación de una directiva personalizada de vínculos de Caja fuerte en el po
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **Usuarios y dominios** que aparece, identifique los destinatarios internos a los que se aplica la directiva (condiciones de destinatario):
-   - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+   - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
    - **Grupos**:
-     - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-     - El Grupos de Microsoft 365 especificado.
+     - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+     - Los Grupos de Microsoft 365 especificados.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
@@ -125,6 +125,10 @@ La creación de una directiva personalizada de vínculos de Caja fuerte en el po
        - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
      - **Aplicar Caja fuerte Vínculos a mensajes de correo electrónico enviados dentro de la organización**: seleccione esta opción para aplicar la directiva de vínculos de Caja fuerte a los mensajes entre remitentes internos y destinatarios internos.
    - **Seleccione la acción para direcciones URL desconocidas o potencialmente malintencionadas dentro de Microsoft Teams**: seleccione **Activado** para habilitar la protección de vínculos de Caja fuerte para los vínculos de Teams. Tenga en cuenta que esta configuración puede tardar hasta 24 horas en surtir efecto.
+
+     > [!NOTE]
+     > Actualmente, la protección de vínculos de Caja fuerte para Microsoft Teams no está disponible en Microsoft 365 GCC DoD high o Microsoft 365.
+
    - **Realizar un seguimiento de los clics del usuario**: deje esta opción seleccionada para habilitar que el usuario de seguimiento haga clic en las direcciones URL de los mensajes de correo electrónico.
    - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta opción para impedir que los usuarios haga clic en la dirección URL original en [las páginas de advertencia](safe-links.md#warning-pages-from-safe-links).
    - **No vuelva a escribir las siguientes direcciones URL**: permite acceder a las direcciones URL especificadas que, de lo contrario, Caja fuerte Links bloquearían.

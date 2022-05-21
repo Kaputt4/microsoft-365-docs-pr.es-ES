@@ -22,20 +22,22 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: cab4332324ec8d83b201823c98b952995e12962d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760501"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623226"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
-Puede usar una directiva de prevención de pérdida de datos (DLP) para identificar, supervisar y proteger información confidencial en Office 365. Quiere que las personas de su organización que trabajan con esta información confidencial sigan siendo compatibles con las directivas DLP, pero no quiere impedirles innecesariamente que realicen su trabajo. Aquí es donde pueden ayudarle las notificaciones de correo electrónico y las sugerencias de directivas.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Puede usar una directiva de prevención de pérdida de datos (DLP) de Microsoft Purview para identificar, supervisar y proteger la información confidencial en Office 365. Quiere que las personas de su organización que trabajan con esta información confidencial sigan siendo compatibles con las directivas DLP, pero no quiere impedirles innecesariamente que realicen su trabajo. Aquí es donde pueden ayudarle las notificaciones de correo electrónico y las sugerencias de directivas.
 
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-En el Centro de cumplimiento, al crear una directiva DLP, puede configurar las notificaciones de usuario para:
+Al crear una directiva DLP, puede configurar las notificaciones de usuario para:
 
 - Envíe una notificación por correo electrónico a las personas que elija que describan el problema.
 
@@ -53,13 +55,13 @@ Al crear una directiva DLP, puede habilitar **las notificaciones de usuario**. C
 
 1. Vaya a [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
-2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el Centro de cumplimiento de seguridad &amp; .
+2. Inicie sesión con su cuenta profesional o educativa.
 
-3. En el Centro \> de cumplimiento de seguridad&amp;, a la izquierda, navegación \> **Directiva de** \> prevención \> de **pérdida de datos** **+ Crear una directiva**.
+3. En el portal de cumplimiento Microsoft Purview \> navegación \> izquierdo **Directiva de** \> **prevención** \> de pérdida de datos **+ Crear una directiva**.
 
     ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
-4. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **a continuación**.
+4. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que desea proteger \> **a continuación**.
 
     Para empezar con una plantilla vacía, elija **Directiva** **personalizada personalizada** \> \> **Siguiente**.
 
@@ -135,7 +137,7 @@ Para cada regla de una directiva DLP, puede configurar sugerencias de directiva 
 
 - Permitir que la persona invalide la directiva DLP. Opcionalmente, puede:
 
-  - Requerir que la persona escriba una justificación del negocio para invalidar la directiva. Esta información se registra y puede verla en los informes DLP de la sección **Informes** del Centro de cumplimiento de seguridad &amp; .
+  - Requerir que la persona escriba una justificación del negocio para invalidar la directiva. Esta información se registra y puede verla en los informes DLP de la sección **Informes** del portal.
 
   - Permitir que la persona informe de un falso positivo e invalide la directiva DLP. Esta información también se registra en los informes, de modo que puede usar falsos positivos para ajustar las reglas.
 
@@ -229,7 +231,7 @@ Si las sugerencias de directiva están configuradas para permitir la invalidaci�
 
 ![Cuadro de diálogo sugerencia de directiva donde puede invalidar la sugerencia de directiva.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Tenga en cuenta que, al agregar información confidencial a un correo electrónico, puede haber latencia entre el momento en que se agrega la información confidencial y el momento en que aparece la sugerencia de directiva. Cuando los correos electrónicos se cifran con Office cifrado de mensajes (OME) y la directiva usada para detectarlos usa las sugerencias de la directiva de condición de cifrado de detección no aparecerá.
+Tenga en cuenta que, al agregar información confidencial a un correo electrónico, puede haber latencia entre el momento en que se agrega la información confidencial y el momento en que aparece la sugerencia de directiva. Cuando los correos electrónicos se cifran con Cifrado de mensajes de Microsoft Purview y la directiva usada para detectarlos usa la sugerencia de directiva de condición de cifrado de detección no aparecerá.
 
 ### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 y versiones posteriores admite la presentación de sugerencias de directiva para algunas condiciones
 
@@ -240,13 +242,13 @@ Actualmente, Outlook 2013 y versiones posteriores solo admite la presentación d
 
 Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero todavía no se admite mostrar sugerencias de directiva a los usuarios. Además, Outlook no admite la presentación de sugerencias de directiva para una directiva DLP que se aplica a un grupo de distribución dinámico.
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directiva en el centro de administración de Exchange frente al Centro de cumplimiento de seguridad &amp;
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Sugerencias de directiva en el centro de administración de Exchange frente al portal de cumplimiento de Microsoft Purview
 
-Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o con directivas DLP creadas en el Centro de cumplimiento de seguridad&amp;, pero no con ambas. Esto se debe a que estas directivas se almacenan en ubicaciones diferentes, pero las sugerencias de directiva solo pueden extraerse de una sola ubicación.
+Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o con directivas DLP creadas en el portal de cumplimiento, pero no con ambas. Esto se debe a que estas directivas se almacenan en ubicaciones diferentes, pero las sugerencias de directiva solo pueden extraerse de una sola ubicación.
 
-Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; Centro de cumplimiento de seguridad no aparecerán en Outlook en la Web y Outlook 2013 y versiones posteriores hasta que desactive las sugerencias en el centro de administración de Exchange. Esto garantiza que las reglas de flujo de correo Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que decida cambiar al Centro de cumplimiento de seguridad&amp;.
+Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directivas que configure en el portal de cumplimiento no aparecerán en Outlook en la Web y Outlook 2013 y versiones posteriores hasta que desactive las sugerencias en el centro de administración de Exchange. Esto garantiza que las reglas de flujo de correo Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al portal de cumplimiento.
 
-Tenga en cuenta que, aunque las sugerencias de directiva solo se pueden dibujar desde una sola ubicación, siempre se envían notificaciones por correo electrónico, incluso si usa directivas DLP en el Centro de cumplimiento de seguridad &amp; y en el centro de administración de Exchange.
+Tenga en cuenta que, aunque las sugerencias de directivas solo se pueden dibujar desde una sola ubicación, siempre se envían notificaciones por correo electrónico, incluso si usa directivas DLP en el portal de cumplimiento y en el centro de administración de Exchange.
 
 ### <a name="default-text-for-policy-tips-in-email"></a>Texto predeterminado para sugerencias de directiva en el correo electrónico
 

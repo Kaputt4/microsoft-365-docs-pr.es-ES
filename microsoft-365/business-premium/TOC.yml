@@ -78,11 +78,11 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protección de dispositivos Windows
           items:
-            - name: Configuración de protección para dispositivos con Windows 10
+            - name: Configuración de protección para dispositivos Windows
               href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Proteger dispositivos Windows
               href: m365bp-secure-windows-devices.md
-            - name: Administración de dispositivos Windows
+            - name: Administrar dispositivos Windows
               href: m365bp-manage-windows-devices.md
             - name: Preparar la implementación del cliente Office
               href: m365bp-prepare-for-office-client-deployment.md
@@ -107,9 +107,9 @@
     - name: Quitar usuarios
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Quitar datos de dispositivos
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: Restablecer dispositivos a la configuración de fábrica
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: Referencia
   items:
     - name: Glosario de términos
@@ -128,13 +128,13 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Configuración de protección de aplicaciones para Android y iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Asignar características de protección a la configuración de InTune
+    - name: Asignar funciones de protección a la configuración de Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Configuración del Administrador de cumplimiento
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender para Empresas
       href: ../security/defender-business/index.yml
-    - name: "Microsoft\_Defender para Office\_365"
+    - name: Microsoft Defender para Office 365
       href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md

@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de la empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Siga estas instrucciones para crear su página Acerca de nosotros con el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
+ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469611"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622518"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Escriba la información empresarial en Microsoft Bookings
 
@@ -54,7 +54,7 @@ En la página Información empresarial, en Horas laborables, use las listas desp
 
 De forma predeterminada, el horario comercial de la aplicación Bookings se establece en 8 a.m. a las 5 p.m., de lunes a viernes. Los tiempos se proporcionan en incrementos de 15 minutos. La aplicación Bookings usa el reloj de 12 horas.
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 ### <a name="how-to-set-hours-for-a-split-shift"></a>Cómo establecer horas para un turno dividido
 

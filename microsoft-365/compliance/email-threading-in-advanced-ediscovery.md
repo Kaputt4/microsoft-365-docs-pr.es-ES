@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Al realizar un análisis de eDiscovery (Premium), el subproceso de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e35ffa901bb1b90b0ac5d572b6a7ee05cce31d89
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6aa8bfdccf2f7430da1aa00ed444a9c218525ee8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086817"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622134"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>Subprocesos de correo electrónico en eDiscovery (Premium)
 
@@ -31,7 +31,7 @@ Considere la posibilidad de una conversación de correo electrónico que ha esta
 
 ## <a name="what-does-email-threading-do"></a>¿Qué hace el subproceso de correo electrónico?
 
-El subproceso de correo electrónico analiza cada subproceso de correo electrónico y lo deconstruye en mensajes individuales. Cada subproceso de correo electrónico es una cadena de mensajes individuales. Microsoft Purview eDiscovery (Premium) analiza todos los messaes de correo electrónico del conjunto de revisión para determinar si un mensaje de correo electrónico tiene contenido único o si la cadena (mensajes primarios) está totalmente contenida en el mensaje final en el subproceso de correo electrónico. Los mensajes de correo electrónico se dividen en cuatro valores inclusivos:
+El subproceso de correo electrónico analiza cada subproceso de correo electrónico y lo deconstruye en mensajes individuales. Cada subproceso de correo electrónico es una cadena de mensajes individuales. Microsoft Purview eDiscovery (Premium) analiza todos los mensajes de correo electrónico del conjunto de revisión para determinar si un mensaje de correo electrónico tiene contenido único o si la cadena (mensajes primarios) está totalmente contenida en el mensaje final en el subproceso de correo electrónico. Los mensajes de correo electrónico se dividen en cuatro valores inclusivos:
 
 - **Inclusivo**: un correo electrónico *inclusivo* es el mensaje de correo electrónico final en un subproceso de correo electrónico y contiene todo el contenido anterior de ese subproceso de correo electrónico.
 

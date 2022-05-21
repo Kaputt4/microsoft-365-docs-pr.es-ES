@@ -22,16 +22,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso con privilegios al inquilino de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095606"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622571"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Paso 2. Protección de las cuentas con privilegios de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Las infracciones de seguridad de un inquilino de Microsoft 365, incluida la recopilación de información y los ataques de suplantación de identidad (phishing), normalmente se realizan poniendo en peligro las credenciales de una cuenta Microsoft 365 con privilegios. La seguridad en la nube es una asociación entre usted y Microsoft:
   
@@ -62,7 +62,7 @@ Puede proteger aún más las cuentas con privilegios con Azure AD Privileged Ide
  
 ## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. Configuración de la autenticación multifactor para las cuentas con privilegios de Microsoft 365 dedicadas
 
-La autenticación multifactor (MFA) requiere información adicional más allá del nombre y la contraseña de la cuenta. Microsoft 365 admite estos métodos de verificación adicionales:
+La autenticación multifactor (MFA) requiere información adicional más allá del nombre y la contraseña de la cuenta. Microsoft 365 admite estos métodos de comprobación adicionales:
   
 - La aplicación de Microsoft Authenticator
 - Una llamada de teléfono
@@ -78,7 +78,7 @@ La autenticación multifactor (MFA) requiere información adicional más allá d
 
 Si es una pequeña empresa que usa cuentas de usuario almacenadas solo en la nube (el modelo de identidad solo en la nube), [configure MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) para configurar MFA mediante una llamada telefónica o un código de verificación de mensajes de texto enviado a un teléfono inteligente para cada cuenta con privilegios dedicada.
     
-Si es una organización más grande que usa un modelo de identidad híbrida Microsoft 365, tiene más opciones de comprobación. Si ya dispone de la infraestructura de seguridad para un método de autenticación secundario más seguro, [configure MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) y configure cada cuenta con privilegios dedicados para el método de verificación adecuado.
+Si es una organización más grande que usa un modelo de identidad híbrida Microsoft 365, tiene más opciones de verificación. Si ya dispone de la infraestructura de seguridad para un método de autenticación secundario más seguro, [configure MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) y configure cada cuenta con privilegios dedicados para el método de verificación adecuado.
   
 Si la infraestructura de seguridad para el método de verificación más seguro deseado no está en vigor y funciona para Microsoft 365 MFA, se recomienda encarecidamente configurar cuentas con privilegios dedicados con MFA mediante la aplicación Microsoft Authenticator, una llamada telefónica o un código de verificación de mensajes de texto enviados a un teléfono inteligente para las cuentas con privilegios como medida de seguridad provisional. No deje las cuentas con privilegios dedicados sin la protección adicional proporcionada por MFA.
   
@@ -107,7 +107,7 @@ Para desarrollar un plan completo a fin de proteger el acceso con privilegios fr
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-En lugar de tener a las cuentas con privilegios asignadas permanentemente un rol de administrador, puede usar Azure AD PIM para habilitar la asignación just-in-time a petición del rol de administrador cuando sea necesario.
+En lugar de tener a las cuentas con privilegios asignadas permanentemente un rol de administrador, puede usar PIM de Azure AD para habilitar la asignación just-in-time a petición del rol de administrador cuando sea necesario.
   
 Las cuentas de administrador pasan de ser administradores permanentes a administradores aptos. El rol de administrador permanece inactivo hasta que lo necesite. A continuación, complete un proceso de activación para agregar el rol de administrador a la cuenta con privilegios durante un período de tiempo predeterminado. Cuando expire el tiempo, PIM quita el rol de administrador de la cuenta con privilegios.
   
@@ -117,7 +117,7 @@ PIM está disponible con Azure Active Directory Premium P2, que se incluye con M
   
 Para más información, vea:
 
-- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Privileged Identity Management de Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Proteger el acceso con privilegios para implementaciones híbridas y en la nube en Azure AD](/azure/active-directory/roles/security-planning)
   
 
@@ -125,7 +125,7 @@ Para más información, vea:
 
 La administración de acceso con privilegios se habilita configurando las directivas que especifiquen el acceso puntual para las actividades basadas en tareas en el espacio empresarial. Puede ayudar a proteger la organización contra infracciones que puedan usar las cuentas existentes de administrador con privilegios con acceso permanente a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración de acceso con privilegios que requiera una autorización explícita para acceder y modificar la configuración del buzón de correo del espacio empresarial.
 
-En este paso, habilitará la administración de acceso con privilegios en el espacio empresarial y configurará las directivas de acceso con privilegios que proporcionen seguridad adicional para el acceso basado en tareas a los datos y las opciones de configuración de la organización. Para empezar con el acceso con privilegios en la organización, debe seguir estos tres pasos básicos:
+En este paso, habilitará la administración de acceso con privilegios en el inquilino y configurará directivas de acceso con privilegios que proporcionan seguridad adicional para el acceso basado en tareas a los datos y la configuración de la organización. Hay tres pasos básicos para empezar a usar el acceso con privilegios en su organización:
 
 - Crear un grupo de aprobadores
 - Habilitar el acceso con privilegios
@@ -139,7 +139,7 @@ Para obtener más información, consulte [Administración de acceso con privileg
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Software de administración de eventos e información de seguridad (SIEM) para el registro de Microsoft 365
 
-El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de alertas de seguridad y eventos creados por aplicaciones y hardware de red. Para permitir que el servidor SIEM incluya Microsoft 365 alertas de seguridad y eventos en sus funciones de análisis e informes, integre Azure AD en el SEIM. Consulte [Introducción a Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de alertas de seguridad y eventos creados por aplicaciones y hardware de red. Para permitir que el servidor SIEM incluya Microsoft 365 alertas y eventos de seguridad en sus funciones de análisis e informes, integre Azure AD en el SEIM. Consulte [Introducción a Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Paso siguiente
 

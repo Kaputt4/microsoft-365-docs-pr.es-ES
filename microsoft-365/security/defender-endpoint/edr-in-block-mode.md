@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 5a9441a41db2dfbe53bfb280152c038e9dbc383e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c8b3016517393b473bcae664a6044098e04ebf6d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789852"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623597"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -35,7 +35,7 @@ ms.locfileid: "64789852"
 **Plataformas**
 - Windows
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>¿Qué es EDR en modo de bloque?
 
@@ -56,6 +56,9 @@ EDR en modo de bloque se integra con [& administración de vulnerabilidades de a
 
 > [!TIP]
 > Para obtener la mejor protección, asegúrese de **[implementar Microsoft Defender para punto de conexión líneas base](configure-machines-security-baseline.md)**.
+
+Vea este vídeo para obtener información sobre por qué y cómo activar detección y respuesta de puntos de conexión (EDR) en modo de bloque, habilitar el bloqueo de comportamiento y la contención en cada fase, desde la vulneración previa hasta la posterior a la vulneración. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
 
 ## <a name="what-happens-when-something-is-detected"></a>¿Qué ocurre cuando se detecta algo?
 
@@ -108,7 +111,7 @@ En la tabla siguiente se enumeran los requisitos de EDR en modo de bloque:
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales, y de que [las exclusiones están configuradas](configure-exclusions-microsoft-defender-antivirus.md). EDR en modo de bloque respeta las exclusiones definidas para Antivirus de Microsoft Defender, pero no [los indicadores definidos](manage-indicators.md) para Microsoft Defender para punto de conexión.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>¿Puedo especificar exclusiones para EDR en modo de bloque?
 
@@ -183,7 +186,7 @@ Con la [nueva solución de cliente unificada](configure-server-endpoints.md#new-
 
 Si decide deshabilitar EDR en modo de bloque, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Blog de tech Community: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 

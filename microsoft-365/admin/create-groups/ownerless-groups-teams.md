@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo invitar automáticamente a los miembros para que se conviertan en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: 06b5b4ea125ef19e7197d4703f2a055331ab54ef
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5bd41e3312cd696d9e0a2d7e4159e152d9c9d979
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435688"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620982"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos Microsoft 365 sin propietario
 
 Un equipo de Microsoft Teams o un grupo de Microsoft 365 puede quedar sin propietario si la cuenta de un propietario se elimina o deshabilita en Microsoft 365. Los grupos y equipos requieren que un propietario agregue o quite miembros y cambie la configuración del grupo.
 
-Puede crear una directiva que pregunte automáticamente a los miembros más activos o a un grupo o equipo sin propietario si aceptan la propiedad. Cuando un miembro acepta la invitación para convertirse en propietario, la acción se registra en el registro de auditoría del portal de cumplimiento. Nunca se invita a los huéspedes a ser propietarios.
+Un Administrador global puede crear una directiva que pregunte automáticamente a los miembros más activos de un grupo o equipo sin propietario si aceptarán la propiedad. Cuando un miembro acepta la invitación para convertirse en propietario, la acción se registra en el registro de auditoría del portal de cumplimiento. Nunca se invita a los huéspedes a ser propietarios.
 
 Al crear la directiva, puede especificar:
 - Si desea limitar quién puede ser invitado a ser propietario especificando un grupo de seguridad

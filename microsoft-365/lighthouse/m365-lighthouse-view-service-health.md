@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver el estado del servicio de inquilino.
-ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver el estado del servicio de inquilino.
+ms.openlocfilehash: 3db5085ac4226b3f2800cd46f3542dcb79b311d2
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187830"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621006"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Visualización del estado del servicio de inquilino en Microsoft 365 Lighthouse
 
@@ -31,7 +31,7 @@ Si no puede iniciar sesión en Lighthouse, puede usar la [página Microsoft 365 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para ver el estado del servicio, necesitará un rol de Azure AD en el inquilino del asociado con el siguiente conjunto de propiedades: **microsoft.office365.serviceHealth/allEntities/allTasks**. Para obtener una lista de Azure AD roles, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+Para ver el estado del servicio, necesitará un rol de Azure AD en el inquilino del asociado con el siguiente conjunto de propiedades: **microsoft.office365.serviceHealth/allEntities/allTasks**. Para obtener una lista de roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="view-service-health-status-for-all-tenants"></a>Visualización del estado de mantenimiento del servicio para todos los inquilinos
 

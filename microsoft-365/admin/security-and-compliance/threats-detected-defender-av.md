@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo Antivirus de Microsoft Defender protege los dispositivos Windows frente a amenazas de software, como virus, malware y spyware.
-ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 796edb343745e19267f901b736ca19217b0e4f01
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466314"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620908"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Introducción a la protección contra amenazas por Antivirus de Microsoft Defender
 
@@ -73,7 +73,7 @@ Cuando Antivirus de Microsoft Defender detecta amenazas, sucede lo siguiente:
 
 En la mayoría de los casos, los usuarios no necesitan realizar ninguna acción adicional. En cuanto se detecta un archivo o programa malintencionado en un dispositivo, Antivirus de Microsoft Defender lo bloquea e impide que se ejecute. Además, las amenazas recién detectadas se agregan al motor antivirus y antimalware para que otros dispositivos y usuarios también estén protegidos.  
 
-Si hay una acción que un usuario necesita realizar, como aprobar la eliminación de un archivo malintencionado, lo verá en la notificación que recibe. Para obtener más información sobre las acciones que Antivirus de Microsoft Defender realiza en nombre de un usuario o las acciones que los usuarios pueden necesitar realizar, consulte [Historial de protección](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Para obtener información sobre cómo administrar las detecciones de amenazas como profesional o administrador de TI, consulte [Revisión de amenazas detectadas y toma medidas](review-threats-take-action.md).
+Si hay una acción que un usuario necesita realizar, como aprobar la eliminación de un archivo malintencionado, lo verá en la notificación que recibe. Para obtener más información sobre las acciones que Antivirus de Microsoft Defender realiza en nombre de un usuario o las acciones que los usuarios pueden necesitar realizar, consulte [Historial de protección](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Para obtener información sobre cómo administrar las detecciones de amenazas como profesional o administrador de TI, consulte [Revisión de amenazas detectadas y toma medidas](../../business-premium/m365bp-review-threats-take-action.md).
 
 Para obtener más información sobre las diferentes amenazas, visite el <a href="https://www.microsoft.com/wdsi/threats" target="_blank">sitio Inteligencia de seguridad de Microsoft Amenazas</a>, donde puede realizar las siguientes acciones: 
 

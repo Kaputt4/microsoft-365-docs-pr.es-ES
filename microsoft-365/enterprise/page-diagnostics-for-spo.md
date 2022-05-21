@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de páginas para SharePoint para analizar SharePoint portal moderno en línea y páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: b39b547754acc6f12c750192af2986e9b4e54150
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4d2c0f6d298578290d9f7daf850c4744e2f8dff
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095672"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621831"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Uso de la herramienta Diagnóstico de página para SharePoint
 
@@ -90,10 +90,10 @@ Seleccione **Iniciar** para empezar a recopilar datos para su análisis.
     > [!div class="mx-imgBorder"]
     > ![Detalles de diagnóstico de página.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** es un elemento importante al trabajar con Soporte técnico de Microsoft, ya que les permite recopilar datos de diagnóstico adicionales para la página específica.
+   - **CorrelationID** es un elemento importante al trabajar con Soporte técnico de Microsoft, ya que les permite recopilar más datos de diagnóstico para la página específica.
    - **SPRequestDuration** es el tiempo necesario para que SharePoint procese la página. La navegación estructural, imágenes grandes, muchas llamadas API podrían contribuir a duraciones más largas.
    - **SPIISLatency** es el tiempo en milisegundos necesario para que SharePoint Online empiece a cargar la página. Este valor no incluye el tiempo necesario para que la aplicación web responda.
-   - **El tiempo de carga** de página es el tiempo total registrado por la página desde el momento de la solicitud hasta el momento en que se recibió y representó la respuesta en el explorador. Este valor se ve afectado por diversos factores, como la latencia de red, el rendimiento del equipo y el tiempo que tarda el explorador en cargar la página.
+   - **El tiempo de carga** de página es el tiempo total registrado por la página desde el momento de la solicitud hasta el momento en que se recibió y representó la respuesta en el explorador. Este valor se ve afectado por varios factores, como la latencia de red, el rendimiento del equipo y el tiempo que tarda el explorador en cargar la página.
    - La **dirección URL de página** (localizador uniforme de recursos) es la dirección web de la página actual.
 
 1. La pestaña [**Pruebas de diagnóstico**](#how-to-use-the-diagnostic-tests-tab) muestra los resultados del análisis en tres categorías; **No se requiere ninguna acción**, **se requieren oportunidades de mejora** y **atención**. Cada resultado de la prueba se representa mediante un elemento de una de estas categorías, como se describe en la tabla siguiente:
@@ -113,9 +113,9 @@ Seleccione **Iniciar** para empezar a recopilar datos para su análisis.
 
 Al analizar una SharePoint página del portal moderno o una página de sitio de publicación clásica con la herramienta Diagnósticos de página para SharePoint, los resultados se analizan mediante reglas predefinidas que comparan los resultados con los valores de línea base y se muestran en la pestaña **Pruebas de diagnóstico**. Las reglas de determinadas pruebas pueden usar valores de línea base diferentes para los sitios de publicación clásicos y del portal moderno en función del rendimiento específico.  las características difieren entre los dos.
 
-Los resultados de las pruebas que aparecen en las categorías **Oportunidades de mejora** o **Atención requerida** indican áreas que se deben revisar con respecto a las prácticas recomendadas y se pueden seleccionar para mostrar información adicional sobre el resultado. Los detalles de cada elemento incluyen un vínculo _Más información_ que le llevará directamente a las instrucciones adecuadas relacionadas con la prueba. Los resultados de la prueba que aparecen en la categoría **Sin acción necesaria** indican el cumplimiento de la regla pertinente y no muestran detalles adicionales cuando se seleccionan.
+Los resultados de las pruebas que aparecen en las categorías **Oportunidades de mejora** o **Atención requerida** indican áreas que se deben revisar con respecto a las prácticas recomendadas y se pueden seleccionar para mostrar información adicional sobre el resultado. Los detalles de cada elemento incluyen un vínculo _Más información_ , que le llevará directamente a las instrucciones adecuadas relacionadas con la prueba. Los resultados de la prueba que aparecen en la categoría **Sin acción necesaria** indican el cumplimiento con la regla pertinente y no muestran detalles adicionales cuando se seleccionan.
 
-La información de la pestaña Pruebas de diagnóstico no le indicará cómo diseñar páginas, sino que resaltará los factores que pueden afectar al rendimiento de la página. Algunas personalizaciones y funcionalidades de página tienen un impacto inevitable en el rendimiento de la página y se deben revisar para detectar posibles correcciones u omisiones de la página si su impacto es sustancial.
+La información de la pestaña Pruebas de diagnóstico no le indicará cómo diseñar páginas, pero resaltará los factores que pueden afectar al rendimiento de las páginas. Algunas personalizaciones y funcionalidades de página tienen un impacto inevitable en el rendimiento de la página y se deben revisar para detectar posibles correcciones u omisiones de la página si su impacto es sustancial.
 
 Los resultados rojos o amarillos también pueden indicar elementos web que actualizan los datos con demasiada frecuencia. Por ejemplo, las noticias corporativas no se actualizan cada segundo, pero los elementos web personalizados a menudo se crean para capturar las últimas noticias cada segundo en lugar de implementar elementos de almacenamiento en caché que podrían mejorar la experiencia general del usuario. Tenga en cuenta al incluir elementos web en una página que a menudo hay formas sencillas de reducir su impacto en el rendimiento mediante la evaluación del valor de cada parámetro disponible para asegurarse de que se establece correctamente para su propósito previsto.
 
@@ -146,7 +146,7 @@ La pestaña **Seguimiento de red** proporciona información detallada sobre las 
    > [!div class="mx-imgBorder"]
    > ![Habilite la exportación a HAR.](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
-Debe habilitarse antes de hacer clic en Inicio, lo que habilitará el modo de depuración en el explorador. Generará un archivo de archivo HTTP (HAR) al que se puede acceder a través de la pestaña "Seguimiento de red". Haga clic en "Exportar a HAR" y descargará el archivo en el equipo y, a continuación, puede compartirlo en consecuencia. El archivo se puede abrir en una variedad de herramientas de depuración, como F12 Developer Tools y Fiddler.
+Debe habilitarse antes de hacer clic en Inicio, lo que habilitará el modo de depuración en el explorador. Generará un archivo de archivo HTTP (HAR) al que se puede acceder a través de la pestaña "Seguimiento de red". Haga clic en "Exportar a HAR" y descargará el archivo en el equipo y, a continuación, puede compartirlo en consecuencia. El archivo se puede abrir en varias herramientas de depuración, como F12 Developer Tools y Fiddler.
 
 > [!div class="mx-imgBorder"]
 > ![Seguimiento de red.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)

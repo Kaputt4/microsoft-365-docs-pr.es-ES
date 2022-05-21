@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 73107fd82a77be730d894b057d1b9b1795fb242b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243060"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621077"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -73,7 +73,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
    ![Nueva aplicación](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. En la página Registrar una aplicación, en Tipos de cuenta admitidos, seleccione Cuentas en cualquier directorio organizativo (Cualquier directorio Azure AD - Multiinquilino). A continuación, en URI de redirección (opcional), seleccione Web y escriba <https://office.com>. Por último, seleccione Registrar.
+5. En la página Registrar una aplicación, en Tipos de cuenta admitidos, seleccione Cuentas en cualquier directorio organizativo (Cualquier directorio de Azure AD: multiinquilino). A continuación, en URI de redirección (opcional), seleccione Web y escriba <https://office.com>. Por último, seleccione Registrar.
 
    ![Registro de aplicaciones](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -147,13 +147,10 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -378,7 +375,7 @@ El envío por lotes de migración también se admite desde el nuevo <a href="htt
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo local, tanto en el origen como en el destino, se actualizan con el nuevo targetAddress. En los ejemplos, se **contoso.onmicrosoft.com** el targetDeliveryDomain usado en el movimiento. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Es necesario actualizar RemoteMailboxes en el entorno local de origen después del traslado?**
 
@@ -540,7 +537,7 @@ La migración entre inquilinos solo migra los datos del buzón de correo y nada 
 
 **¿Puedo tener las mismas etiquetas en el inquilino de destino que tenía en el inquilino de origen, ya sea como el único conjunto de etiquetas o un conjunto adicional de etiquetas para los usuarios migrados en función de la alineación entre las organizaciones.**
 
-Puesto que las migraciones entre inquilinos no exportan etiquetas y no hay ninguna manera de compartir etiquetas entre inquilinos, solo se puede lograr mediante la recreación de las etiquetas en el inquilino de destino.
+Dado que las migraciones entre inquilinos no exportan etiquetas y no hay ninguna manera de compartir etiquetas entre inquilinos, solo se puede lograr mediante la recreación de las etiquetas en el inquilino de destino.
 
 **¿Admite el traslado de Grupos de Microsoft 365?**
 
@@ -558,7 +555,7 @@ No, después de una migración de buzón entre inquilinos, eDiscovery en el buz�
 
 - **Problema: Cloud MailUsers with non-owned smtp proxyAddress block MRS mueve el fondo.** Al crear objetos MailUser del inquilino de destino, debe asegurarse de que todas las direcciones proxy SMTP pertenecen a la organización del inquilino de destino. Si existe una dirección proxy SMTP en el usuario de correo de destino que no pertenece al inquilino local, se impide la conversión de MailUser a Mailbox. Esto se debe a nuestra garantía de que los objetos de buzón solo pueden enviar correo desde dominios para los que el inquilino es autoritativo (dominios reclamados por el inquilino):
 
-  - Cuando se sincronizan usuarios del entorno local mediante Azure AD Conectar, se aprovisionan objetos MailUser locales con ExternalEmailAddress que apuntan al inquilino de origen donde existe el buzón (LaraN@contoso.onmicrosoft.com) y se marca PrimarySMTPAddress como un dominio que reside en el inquilino de destino (Lara.Newton@northwind.com). Estos valores se sincronizan con el inquilino y un usuario de correo adecuado está aprovisionado y listo para la migración. Aquí se muestra un objeto de ejemplo.
+  - Al sincronizar usuarios del entorno local mediante azure AD Conectar, se aprovisionan objetos MailUser locales con ExternalEmailAddress que apuntan al inquilino de origen donde existe el buzón (LaraN@contoso.onmicrosoft.com) y se marca PrimarySMTPAddress como un dominio que reside en el inquilino de destino (Lara.Newton@northwind.com). Estos valores se sincronizan con el inquilino y un usuario de correo adecuado está aprovisionado y listo para la migración. Aquí se muestra un objeto de ejemplo.
 
     ```powershell
     Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -575,7 +572,7 @@ No, después de una migración de buzón entre inquilinos, eDiscovery en el buz�
 
   Los objetos MailUser son punteros a buzones no locales. En el caso de las migraciones de buzones entre inquilinos, usamos objetos MailUser para representar el buzón de origen (desde la perspectiva de la organización de destino) o el buzón de destino (desde la perspectiva de la organización de origen). MailUsers tendrá una externalEmailAddress (targetAddress) que apunta a la dirección smtp del buzón real (ProxyTest@fabrikam.onmicrosoft.com) y la dirección primarySMTP que representa la dirección SMTP mostrada del usuario del buzón en el directorio. Algunas organizaciones optan por mostrar la dirección SMTP principal como una dirección SMTP externa, no como una dirección propiedad o comprobada por el inquilino local (como fabrikam.com en lugar de como contoso.com).  Sin embargo, una vez que se aplica un objeto de plan de servicio Exchange a MailUser mediante operaciones de licencia, la dirección SMTP principal se modifica para mostrarse como un dominio comprobado por la organización local (contoso.com). Hay dos posibles razones:
 
-  - Cuando se aplica un plan de servicio de Exchange a un objeto MailUser, el proceso de Azure AD comienza a aplicar la depuración de proxy para asegurarse de que la organización local no puede enviar correo, suplantación de identidad o correo desde otro inquilino. Cualquier dirección SMTP de un objeto de destinatario con estos planes de servicio se quitará si la organización local no comprueba la dirección. Como sucede en el ejemplo, el inquilino contoso.onmicrosoft.com NO comprueba el dominio de Fabikam.com, por lo que la limpieza quita ese dominio fabrikam.com. Si desea conservar estos dominios externos en MailUser, ya sea antes de la migración o después de la migración, debe modificar los procesos de migración para quitar licencias una vez completado el movimiento o antes del traslado para asegurarse de que los usuarios tienen aplicada la personalización de marca externa esperada. Tendrá que asegurarse de que el objeto de buzón de correo tiene una licencia adecuada para no afectar al servicio de correo.
+  - Cuando se aplica un plan de servicio de Exchange a mailuser, el proceso de Azure AD comienza a aplicar la depuración de proxy para asegurarse de que la organización local no puede enviar correo, suplantación o correo desde otro inquilino. Cualquier dirección SMTP de un objeto de destinatario con estos planes de servicio se quitará si la organización local no comprueba la dirección. Como sucede en el ejemplo, el inquilino contoso.onmicrosoft.com NO comprueba el dominio de Fabikam.com, por lo que la limpieza quita ese dominio fabrikam.com. Si desea conservar estos dominios externos en MailUser, ya sea antes de la migración o después de la migración, debe modificar los procesos de migración para quitar licencias una vez completado el movimiento o antes del traslado para asegurarse de que los usuarios tienen aplicada la personalización de marca externa esperada. Tendrá que asegurarse de que el objeto de buzón de correo tiene una licencia adecuada para no afectar al servicio de correo.
   - Aquí se muestra un script de ejemplo para quitar los planes de servicio de un objeto MailUser en el inquilino de contoso.onmicrosoft.com.
 
     ```powershell

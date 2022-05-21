@@ -25,16 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger los equipos Windows 10 después de configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 4800a5906fcb10f7debb5b627ffe81a1dd910d49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095254"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622920"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
-Este artículo se aplica a Microsoft 365 Empresa Premium.
+Este artículo aplica a Microsoft 365 Empresa Premium.
 
 Después de [configurar](business-set-up.md) Microsoft 365 Empresa Premium, es el momento de proteger los equipos Windows 10 de su organización contra robos y amenazas malintencionadas como virus y malware.
 
@@ -70,4 +70,4 @@ Después de configurar la protección de dispositivos en Microsoft 365 Business,
 
 5. Elija **Aplicar configuración**.
 
-    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar directivas diferentes para distintos grupos de seguridad, consulte [Establecer la configuración de protección de dispositivos para equipos Windows 10](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar directivas diferentes para distintos grupos de seguridad, consulte [Establecer la configuración de protección de dispositivos para equipos Windows 10](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).

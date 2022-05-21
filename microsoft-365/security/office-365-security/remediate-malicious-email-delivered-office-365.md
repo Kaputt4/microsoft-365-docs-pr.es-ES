@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Corrección de amenazas
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714859"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621901"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -55,7 +55,7 @@ Una vez seleccionados los correos electrónicos a través del Explorador, puede 
 
 - Aprobación directa: cuando el personal de seguridad que tiene permisos adecuados selecciona acciones como *mover a la bandeja de entrada*, *mover a elementos* *eliminados*, *eliminar temporalmente* o *eliminar de forma rígida* y se siguen los pasos siguientes en la corrección, el proceso de corrección comienza a ejecutar la acción seleccionada.
 > [!NOTE]
->A medida que se inicia la corrección, genera una alerta y una investigación en paralelo. La alerta aparece en la cola de alertas con el nombre "Acción administrativa enviada por un administrador", lo que sugiere que el personal de seguridad tomó la acción de corregir una entidad. Presenta detalles como el nombre de la persona que realizó la acción, el vínculo de apoyo a la investigación, la hora, etc. Funciona muy bien saber cada vez que se realiza una acción dura como la corrección en las entidades. Todas estas acciones se pueden realizar en la pestaña **Centro**  ->  de acciones **&** **envíosHistory** \> (versión preliminar pública).
+> A medida que se inicia la corrección, genera una alerta y una investigación en paralelo. La alerta aparece en la cola de alertas con el nombre "Acción administrativa enviada por un administrador", lo que sugiere que el personal de seguridad tomó la acción de corregir una entidad. Presenta detalles como el nombre de la persona que realizó la acción, el vínculo de apoyo a la investigación, la hora, etc. Funciona muy bien saber cada vez que se realiza una acción dura como la corrección en las entidades. Todas estas acciones se pueden realizar en la pestaña Centro de acciones **&** **EnvíosHistory** \>  ->  (versión preliminar pública).
 
 - Aprobación en dos pasos: los administradores que no tienen los permisos adecuados o que necesitan esperar para ejecutar la acción pueden realizar una acción de "agregar a la corrección". En este caso, los correos electrónicos de destino se agregan a un contenedor de corrección. La aprobación es necesaria antes de que se ejecute la corrección.
 
@@ -95,7 +95,7 @@ Abra cualquier elemento de corrección para ver los detalles sobre él, incluido
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No accionable**: los correos electrónicos de las siguientes ubicaciones no se pueden actuar ni mover en acciones de corrección:
-    - Quarantine
+    - Cuarentena
     - Carpeta eliminada de forma rígida
     - Local/externo
     - Error o se ha eliminado

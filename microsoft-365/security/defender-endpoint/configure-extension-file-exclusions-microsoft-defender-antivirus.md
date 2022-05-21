@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419910"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623002"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -38,7 +38,7 @@ Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican a 
 - [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> las exclusiones de Antivirus de Microsoft Defender no se aplican a otras funcionalidades de Microsoft Defender para punto de conexión, como [detección y respuesta de puntos de conexión ( EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [reglas de reducción de superficie expuesta a ataques (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) y [acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders). Los archivos que se excluyen mediante los métodos descritos en este artículo pueden desencadenar EDR alertas y otras detecciones.
+> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para punto de conexión, como [las reglas de reducción de superficie expuesta a ataques (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) y [el acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders). Los archivos que se excluyen mediante los métodos descritos en este artículo pueden desencadenar EDR alertas y otras detecciones.
 > Para excluir archivos de forma general, agréguelos a los [indicadores personalizados](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender para punto de conexión.
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -104,7 +104,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En directiva de grupo **Editor de administración**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
+2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol para **Windows componentes** \> **Antivirus de Windows Defender** \> **exclusiones**.
 
@@ -293,7 +293,7 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los mét
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
-- [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)
+- [Aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
 > Los cambios en la lista de exclusión realizados con directiva de grupo **se mostrarán** en las listas de la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
@@ -379,7 +379,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarlo con el nombre de archivo o en la carpeta que intenta excluir.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

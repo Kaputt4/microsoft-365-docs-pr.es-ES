@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Este artículo puede ayudarle a solucionar Office 365 problemas de rendimiento e incluso corregir algunos de los problemas más comunes.
-ms.openlocfilehash: 7380d6beb89cdd128ccf86f47e1e3c236aabda77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bb6033461d7b902ce0fad6e2c3b7b3e8f593951c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100575"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623044"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "65100575"
 
 En realidad, este artículo es un plan de acción de ejemplo que puede usar para capturar datos valiosos sobre el problema de rendimiento a medida que sucede. En este artículo también se incluyen algunos de los principales problemas.
 
-Si no está familiarizado con el rendimiento de la red y quiere realizar un plan a largo plazo para supervisar el rendimiento entre las máquinas cliente y Office 365, eche un vistazo a [Office 365 optimización y solución de problemas de rendimiento: administración e Pro de TI](performance-tuning-using-baselines-and-history.md).
+Si no está familiarizado con el rendimiento de la red y quiere realizar un plan a largo plazo para supervisar el rendimiento entre las máquinas cliente y Office 365, eche un vistazo a [Office 365 optimización del rendimiento y solución de problemas: Admin y Pro de TI](performance-tuning-using-baselines-and-history.md).
 
 ## <a name="sample-performance-troubleshooting-action-plan"></a>Ejemplo de plan de acción de solución de problemas de rendimiento
 
@@ -43,7 +43,7 @@ Este plan de acción contiene dos partes; una fase de preparación y una fase de
 
 ### <a name="prepare-the-client-computer"></a>Preparación del equipo cliente
 
-- Busque un equipo cliente que pueda reproducir el problema de rendimiento. Este equipo se usará durante el curso de la solución de problemas.
+- Busque un equipo cliente que pueda reproducir el problema de rendimiento. Este equipo se usará durante la solución de problemas.
 - Anote los pasos que hacen que se produzca el problema de rendimiento para que esté listo cuando llegue el momento de realizar la prueba.
 - Instale herramientas para recopilar y grabar información:
   - Instale [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865) (o use una herramienta de seguimiento de red equivalente).
@@ -73,7 +73,7 @@ Si no está familiarizado con la ejecución de las herramientas mencionadas en e
 
 ### <a name="flush-the-dns-cache-first"></a>Vaciar primero la caché DNS
 
-¿Por qué? Al vaciar la memoria caché de DNS, va a iniciar las pruebas con una pizarra limpia. Al borrar la memoria caché, va a restablecer el contenido de la resolución DNS a las entradas más actualizadas. Recuerde que un vaciado no quita las entradas del archivo HOSTs. Si usa las entradas de archivo HOST extensamente, debe copiar esas entradas en un archivo de otro directorio y, a continuación, vaciar el archivo HOST.
+¿Por qué? Al vaciar la memoria caché dns, va a iniciar las pruebas con una pizarra limpia. Al borrar la memoria caché, va a restablecer el contenido de la resolución DNS a las entradas más actualizadas. Recuerde que un vaciado no quita las entradas de archivo HOST. Si usa las entradas de archivo HOST extensamente, debe copiar esas entradas en un archivo de otro directorio y, a continuación, vaciar el archivo HOST.
 
 #### <a name="flush-your-dns-resolver-cache"></a>Vaciar la memoria caché del solucionador dns
 
@@ -133,7 +133,7 @@ Esta captura de pantalla es de la versión Professional de HTTPWatch. Puede abri
 
 ## <a name="problem-steps-recorder"></a>Grabadora de pasos del problema
 
-La grabadora de pasos, o PSR.exe, le permite registrar problemas a medida que se producen. Es una herramienta muy útil y muy sencilla de ejecutar.
+La grabadora de pasos, o PSR.exe, permite registrar problemas a medida que se producen. Es una herramienta muy útil y fácil de ejecutar.
 
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Ejecutar la grabadora de pasos de problemas (PSR.exe) para grabar el trabajo
 
@@ -155,23 +155,23 @@ No es posible enseñar todo sobre la solución de problemas de red y rendimiento
 
 Si quiere adquirir aptitudes que leen seguimientos de red para los sitios de Office 365, no hay mejor profesor que crear seguimientos de cargas de página con regularidad y obtener experiencia al leerlos. Por ejemplo, cuando tenga una oportunidad, cargue un servicio Office 365 y haga un seguimiento del proceso. Filtre el seguimiento del tráfico DNS o busque en FrameData el nombre del servicio que ha explorado. Examine el seguimiento para obtener una idea de los pasos que se producen cuando se carga el servicio. Esto le ayudará a obtener información sobre el aspecto que debería tener la carga de página normal y, en el caso de la solución de problemas, especialmente en relación con el rendimiento, comparar los seguimientos buenos con los incorrectos puede enseñar mucho.
 
-Netmon usa Microsoft Intellisense en el campo Mostrar filtro. IntelliSense, o finalización de código inteligente, es ese truco en el que escribe un punto y todas las opciones disponibles se muestran en un cuadro de selección desplegable. Si, por ejemplo, le preocupa el escalado de ventanas TCP, puede encontrar el camino a un filtro (como  `.protocol.tcp.window < 100`) por este medio.
+Netmon usa Microsoft Intellisense en el campo Mostrar filtro. IntelliSense, o finalización de código inteligente, es ese truco en el que escribe un punto y todas las opciones disponibles se muestran en un cuadro de selección desplegable. Por ejemplo, le preocupa el escalado de ventanas TCP; puede encontrar el camino a un filtro (por  `.protocol.tcp.window < 100`ejemplo, ) por este medio.
 
 ![Captura de pantalla de Netmon que muestra que el campo Filtro de visualización usa IntelliSense.](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
 
-Los seguimientos de Netmon pueden tener mucho tráfico en ellos. Si no tiene experiencia al leerlas, es probable que se sienta abrumado al abrir el seguimiento la primera vez. Lo primero que hay que hacer es separar la señal del ruido de fondo en el seguimiento. Ha probado con Office 365 y ese es el tráfico que desea ver. Si está acostumbrado a navegar por seguimientos, es posible que no necesite esta lista.
+Los seguimientos de Netmon pueden tener mucho tráfico en ellos. Si no tiene experiencia al leerlas, es probable que se sienta abrumado al abrir el seguimiento la primera vez. Lo primero que hay que hacer es separar la señal del ruido de fondo en el seguimiento. Ha probado con Office 365 y ese es el tráfico que desea ver. Si está acostumbrado a navegar por los seguimientos, es posible que no necesite esta lista.
 
 El tráfico entre el cliente y Office 365 viaja a través de TLS, lo que significa que el cuerpo del tráfico se cifrará y no se podrá leer en un seguimiento genérico de Netmon. El análisis de rendimiento no necesita conocer los detalles de la información del paquete. Sin embargo, está muy interesado en los encabezados de paquete y la información que contienen.
 
 ### <a name="tips-to-get-a-good-trace"></a>Sugerencias para obtener un buen seguimiento
 
-- Conozca el valor de la dirección IPv4 o IPv6 del equipo cliente. Para obtener esto desde el símbolo del sistema, escriba **IPConfig** y presione ENTRAR. Conocer esta dirección le permitirá saber de un vistazo si el tráfico en el seguimiento implica directamente el equipo cliente. Si hay un proxy conocido, pingle y obtenga también su dirección IP.
+- Conozca el valor de la dirección IPv4 o IPv6 del equipo cliente. Para obtener esto desde el símbolo del sistema, escriba **IPConfig** y presione ENTRAR. Conocer esta dirección le permitirá saber de un vistazo si el tráfico en el seguimiento implica directamente el equipo cliente. Si hay un proxy conocido, haga ping y obtenga también su dirección IP.
 
 - Vacíe la caché del solucionador DNS y, si es posible, cierre todos los exploradores excepto el en el que ejecuta las pruebas. Si no puede hacerlo, por ejemplo, si la compatibilidad usa alguna herramienta basada en explorador para ver el escritorio del equipo cliente, prepárese para filtrar el seguimiento.
 
 - En un seguimiento ocupado, busque el servicio de Office 365 que está usando. Si nunca ha visto o rara vez el tráfico, este es un paso útil para separar el problema de rendimiento de otro ruido de red. Hay varias maneras de hacerlo. Directamente antes de la prueba, puede usar _ping_ o _PsPing_ en la dirección URL del servicio específico (`ping outlook.office365.com` o `psping -4 microsoft-my.sharepoint.com:443`, por ejemplo). También puede encontrar fácilmente ese ping o PsPing en un seguimiento de Netmon (por su nombre de proceso). Eso te dará un lugar para empezar a buscar.
 
-Si solo usa el seguimiento de Netmon en el momento del problema, también está bien. Para orientarse, use un filtro como `ContainsBin(FrameData, ASCII, "office")` o `ContainsBin(FrameData, ASCII, "outlook")`. Puede registrar el número de fotograma desde el archivo de seguimiento. También puede desplazarse por el panel _Resumen de fotogramas_ hasta la derecha y buscar la columna Id. de conversación. Hay un número indicado allí para el identificador de esta conversación específica que también puede registrar y examinar de forma aislada más adelante. No olvide quitar este filtro antes de aplicar cualquier otro filtrado.
+Si solo usa el seguimiento de Netmon en el momento del problema, también está bien. Para orientarse, use un filtro como `ContainsBin(FrameData, ASCII, "office")` o `ContainsBin(FrameData, ASCII, "outlook")`. Puede registrar el número de fotograma desde el archivo de seguimiento. También puede desplazarse por el panel _Resumen de fotogramas_ hasta la derecha y buscar la columna Id. de conversación. Hay un número indicado allí para el identificador de esta conversación específica que también puede grabar y examinar de forma aislada más adelante. No olvide quitar este filtro antes de aplicar cualquier otro filtrado.
 
 > [!TIP]
 > Netmon tiene una gran cantidad de filtros integrados útiles. Pruebe el botón **Cargar filtro** en la parte superior del panel _Mostrar_ filtro.
@@ -184,19 +184,19 @@ Familiarícese con el tráfico y aprenda a localizar la información que necesit
 
 Tomando Office 365 Outlook Online como ejemplo, el tráfico comienza algo parecido a esto:
 
-- Consulta estándar dns y respuesta DNS para outlook.office365.com con identificadores de consulta coincidentes. Es importante tener en cuenta el desplazamiento de tiempo de este turno, así como dónde en el mundo el DNS global Office 365 envía la solicitud de resolución de nombres. Idealmente, lo más localmente posible, en lugar de a medio camino en todo el mundo.
+- Consulta estándar dns y respuesta DNS para outlook.office365.com con identificadores de consulta coincidentes. Es importante tener en cuenta el desplazamiento de tiempo de este turno y dónde en el mundo el DNS global Office 365 envía la solicitud de resolución de nombres. Idealmente, lo más localmente posible, en lugar de a medio camino en todo el mundo.
 
 - Una solicitud HTTP GET cuyo informe de estado se movió permanentemente (301)
 
 - Tráfico de RWS, incluidas las solicitudes de Conectar RWS y las respuestas Conectar. (Se trata de Winsock remoto que realiza una conexión para usted).
 
-- Una conversación TCP SYN y TCP SYN/ACK. Una gran parte de la configuración de esta conversación afecta al rendimiento.
+- Una conversación TCP SYN y TCP SYN/ACK. Muchas configuraciones de esta conversación afectan al rendimiento.
 
-- A continuación, una serie de tráfico TLS:TLS que es donde tienen lugar las conversaciones del protocolo de enlace TLS y del certificado TLS. (Recuerde que los datos se cifran a través de SSL/TLS).
+- A continuación, se muestra una serie de tráfico TLS:TLS, que es donde tienen lugar las conversaciones de protocolo de enlace TLS y certificado TLS. (Recuerde que los datos se cifran a través de SSL/TLS).
 
-Todas las partes del tráfico son importantes y están conectadas, pero pequeñas partes del seguimiento contienen información especialmente importante en términos de solución de problemas de rendimiento, por lo que nos centraremos en esas áreas. Además, dado que hemos hecho suficientes Office 365 solución de problemas de rendimiento en Microsoft para compilar una lista de los diez primeros problemas comunes, nos centraremos en esos problemas y en cómo usar las herramientas que tenemos para rootearlos a continuación.
+Todas las partes del tráfico son importantes y están conectadas, pero pequeñas partes del seguimiento contienen información importante en términos de solución de problemas de rendimiento, por lo que nos centraremos en esas áreas. Además, dado que hemos hecho suficientes Office 365 solución de problemas de rendimiento en Microsoft para compilar una lista de los diez primeros problemas comunes, nos centraremos en esos problemas y en cómo usar las herramientas que tenemos para rootearlos a continuación.
 
-Si no los ha instalado todos listos, la matriz siguiente usa varias herramientas. Siempre que sea posible. Se proporcionan vínculos a los puntos de instalación. La lista incluye herramientas comunes de seguimiento de red como [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) y [Wireshark](https://www.wireshark.org/), pero usa cualquier herramienta de seguimiento con la que te sientas cómodo y en la que estés acostumbrado a filtrar el tráfico de red. Cuando realice pruebas, recuerde lo siguiente:
+Si aún no los ha instalado, la matriz siguiente usa varias herramientas siempre que sea posible. Se proporcionan vínculos a los puntos de instalación. La lista incluye herramientas comunes de seguimiento de red como [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) y [Wireshark](https://www.wireshark.org/), pero usa cualquier herramienta de seguimiento con la que te sientas cómodo y en la que estés acostumbrado a filtrar el tráfico de red. Cuando realice pruebas, recuerde lo siguiente:
 
 - *Cierre los exploradores y pruebe con un solo explorador en ejecución*  : esto reducirá el tráfico general que capture. Hace que se realice un seguimiento menos ocupado.
 - *Vaciar la caché del solucionador DNS en el equipo cliente*  : esto le proporcionará una pizarra limpia cuando empiece a tomar la captura para obtener un seguimiento más limpio.
@@ -230,7 +230,7 @@ Para ver el valor de escalado de Windows que usa la conexión de red, expanda pr
 
 Históricamente, la mayoría de las redes perimetrales están configuradas para conexiones transitorias, lo que significa que las conexiones inactivas suelen terminarse. Los servidores proxy y los firewalls pueden finalizar las sesiones TCP inactivas en más de 100 a 300 segundos. Esto es problemático para Outlook Online porque crea y usa conexiones a largo plazo, independientemente de si están inactivas o no.
 
-Cuando las conexiones finalizan mediante dispositivos de proxy o firewall, el cliente no se informa y un intento de usar Outlook En línea significará que un equipo cliente intentará, repetidamente, revivir la conexión antes de hacer una nueva. Es posible que vea bloqueos en el producto, mensajes o un rendimiento lento en la carga de página.
+Cuando las conexiones finalizan mediante dispositivos de proxy o firewall, el cliente no está informado y un intento de usar Outlook Online significará que un equipo cliente intentará, repetidamente, revivir la conexión antes de hacer una nueva. Es posible que vea bloqueos en el producto, mensajes o un rendimiento lento en la carga de página.
 
 #### <a name="tools"></a>Herramientas
 
@@ -265,7 +265,7 @@ Hay calculadoras de ancho de banda para Office 365 disponibles en esta página [
 
 #### <a name="what-to-look-for"></a>Qué buscar
 
-Para realizar un seguimiento de la latencia en un seguimiento, se beneficiará de haber registrado la dirección IP del equipo cliente y la dirección IP del servidor DNS en Office 365. Esto se hace con el fin de facilitar el filtrado de seguimiento. Si se conecta a través de un proxy, necesitará la dirección IP del equipo cliente, la dirección IP de proxy/salida y la dirección IP Office 365 DNS, para facilitar el trabajo.
+Para realizar un seguimiento de la latencia en un seguimiento, se beneficiará de haber registrado la dirección IP del equipo cliente y la dirección IP del servidor DNS en Office 365. Esto es para facilitar el filtrado de seguimiento. Si se conecta a través de un proxy, necesitará la dirección IP del equipo cliente, la dirección IP de proxy/salida y la dirección IP Office 365 DNS, para facilitar el trabajo.
 
 Una solicitud de ping enviada a outlook.office365.com le indicará el nombre del centro de datos que recibe la solicitud, incluso si  *es posible que*  ping no pueda conectarse para enviar los paquetes ICMP consecutivos de marca comercial. Si usa PsPing (una herramienta gratuita para descargar) y especifica el puerto (443) y quizás para usar IPv4 (-4), obtendrá un tiempo medio de ida y vuelta para los paquetes enviados. Esto funcionará para otras direcciones URL de los servicios de Office 365, como `psping -4 yourSite.sharepoint.com:443`. De hecho, puede especificar una serie de pings para obtener un ejemplo más grande para el promedio, probar algo parecido `psping -4 -n 20 yourSite-my.sharepoint.com:443`a .
 

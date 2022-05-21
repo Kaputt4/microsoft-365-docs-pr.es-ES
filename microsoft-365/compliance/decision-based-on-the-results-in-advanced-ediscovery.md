@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Obtenga información sobre cómo la pestaña Decidir en eDiscovery (Premium) proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de archivos de casos.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12f1dde5631283a4d0e02666ecab7267ee892225
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090991"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621802"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decisiones basadas en resultados de relevancia en eDiscovery (Premium)
 
@@ -46,7 +46,7 @@ Esta pestaña incluye los siguientes componentes:
 
   - **Recuperación**: porcentaje de archivos relevantes en el conjunto de revisión.
 
-  - **Siguiente pertinente**: costo para revisar e identificar otro archivo pertinente que no está actualmente en el conjunto de revisión.
+  - **Siguiente relevante**: costo para revisar e identificar otro archivo relevante que no está actualmente en el conjunto de revisión.
 
   - **Costo total**: costo por revisar este porcentaje de los archivos de caso. El administrador de casos puede establecer la configuración del parámetro de costo.
 

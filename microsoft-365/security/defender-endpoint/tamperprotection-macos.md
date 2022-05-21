@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e99ed2f93156cb92f031528e71d51cebafc3088f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a75c56dd2844c563b1ee29ccb32acc263ffd3aed
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417017"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623583"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de macOS configuración de seguridad con protección contra alteraciones
 
@@ -29,7 +29,7 @@ ms.locfileid: "65417017"
 **Se aplica a:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
 La protección contra alteraciones en macOS ayuda a evitar que los usuarios no autorizados realicen cambios no deseados en la configuración de seguridad. La protección contra alteraciones ayuda a evitar la eliminación no autorizada de Microsoft Defender para punto de conexión en macOS. Esta funcionalidad también ayuda a que los archivos de seguridad, los procesos y los valores de configuración importantes no se manipulen.
 
@@ -340,7 +340,7 @@ Agregue la siguiente configuración en el perfil de Intune:
 Si al ejecutar el comando `mdatp health` se informa de que la protección contra alteraciones está deshabilitada, incluso si la ha habilitado y ha transcurrido más de una hora desde la incorporación, puede comprobar si tiene la configuración correcta mediante la ejecución del siguiente comando:
 
 ```console
-$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoftmdatpmicrosoft_defender_core.log \| tail -n 1
+$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 
 \[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block"
 ```

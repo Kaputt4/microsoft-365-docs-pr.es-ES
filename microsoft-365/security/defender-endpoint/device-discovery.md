@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418256"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623230"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -48,9 +48,8 @@ Los dispositivos desconocidos y no administrados presentan riesgos significativo
 - Incorporación de puntos de conexión no administrados al servicio, lo que aumenta la visibilidad de seguridad sobre ellos.
 - Reduzca la superficie expuesta a ataques mediante la identificación y evaluación de vulnerabilidades y la detección de brechas de configuración.
 
-Vea este vídeo para obtener información general rápida sobre cómo detección de dispositivos:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+Vea este vídeo para obtener información general rápida sobre cómo evaluar e incorporar dispositivos no administrados que Microsoft Defender para punto de conexión detectados.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 Junto con esta funcionalidad, hay disponible una recomendación de seguridad para incorporar dispositivos a Microsoft Defender para punto de conexión como parte de la experiencia de Administración de amenazas y vulnerabilidades existente.
 
@@ -115,13 +114,13 @@ Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabi
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Uso de la búsqueda avanzada en dispositivos detectados
 
-Puede usar consultas de búsqueda avanzadas para obtener visibilidad en los dispositivos detectados. Busque detalles sobre los dispositivos detectados en la tabla DeviceInfo o información relacionada con la red sobre esos dispositivos en la tabla DeviceNetworkInfo.
+Puede usar consultas de búsqueda avanzadas para obtener visibilidad en los dispositivos detectados. Busque detalles sobre los dispositivos detectados en la tabla DeviceInfo, o información relacionada con la red sobre esos dispositivos, en la tabla DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Página Búsqueda avanzada en la que se pueden usar consultas" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### <a name="query-discovered-devices-details"></a>Consulta de los detalles de los dispositivos detectados
 
-Ejecute esta consulta, en la tabla DeviceInfo, para devolver todos los dispositivos detectados junto con la mayoría de los detalles de cada dispositivo:
+Ejecute esta consulta en la tabla DeviceInfo para devolver todos los dispositivos detectados junto con los detalles más actualizados de cada dispositivo:
 
 ```query
 DeviceInfo
@@ -161,7 +160,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas más frecuentes sobre la detección de dispositivos](device-discovery-faq.md)

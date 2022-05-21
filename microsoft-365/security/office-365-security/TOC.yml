@@ -364,9 +364,9 @@
           items:
             - name: Cuarentena
               href: quarantine-email-messages.md
-            - name: Administrar mensajes en cuarentena y archivos como administrador
+            - name: Cuarentena del administrador
               href: manage-quarantined-messages-and-files.md
-            - name: Buscar y liberar mensajes en cuarentena como usuario
+            - name: Cuarentena de usuario final
               href: find-and-release-quarantined-messages-as-a-user.md
             - name: Directivas de cuarentena
               href: quarantine-policies.md

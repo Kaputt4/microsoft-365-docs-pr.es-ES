@@ -30,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta de administrador de Microsoft 365 para restablecer las contraseñas de los usuarios cuando tenga una suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: 0ce656355b83077809c7082a1bf0d34e8a5439cd
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436270"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620964"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Restablecimiento de contraseñas en Microsoft 365 para empresas
 
@@ -45,11 +45,11 @@ En este artículo se explica cómo restablecer las contraseñas para usted y par
 > También puede configurar el autoservicio de restablecimiento de contraseña para los usuarios para que puedan restablecer sus propias contraseñas. Para más información, consulte [Permitir que los usuarios restablezcan sus propias contraseñas](let-users-reset-passwords.md).
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](Información general del Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [Información general en el Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
@@ -59,7 +59,7 @@ Vea un breve vídeo sobre el restablecimiento de contraseñas de usuario.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-1. Cuando un usuario solicita una nueva contraseña, recibirá una solicitud de restablecimiento de contraseña en el correo electrónico. Para restablecer la contraseña, abra el iniciador de aplicaciones y seleccione **Administrador**.
+1. Cuando un usuario solicita una nueva contraseña, recibirá una solicitud de restablecimiento de contraseña en el correo electrónico. Para restablecer la contraseña, abra el iniciador de aplicaciones y seleccione **Admin**.
 1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos**</a> y, a continuación, seleccione el icono de clave junto al usuario que solicitó el restablecimiento.
 1. Seleccione **Generar contraseña automáticamente** para que se cree automáticamente una contraseña aleatoria.
 1. Seleccione **Restablecer**.
