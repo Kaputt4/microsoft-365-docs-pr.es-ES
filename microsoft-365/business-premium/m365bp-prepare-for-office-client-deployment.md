@@ -1,5 +1,5 @@
 ---
-title: Prepararse para una implementación del cliente de Office mediante Microsoft 365 Empresa Premium
+title: Prepararse para una implementación del cliente de Office con Microsoft 365 Empresa Premium
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: Obtenga información sobre cómo instalar automáticamente las aplicaciones Office de 32 bits en equipos Windows 10 y mantenerlas actualizadas.
-ms.openlocfilehash: b4df5152e5adfbd2391fd51c184bd4547be12011
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Obtenga información sobre cómo instalar, de manera automática, las aplicaciones de Office de 32 bits en equipos Windows y mantenerlas actualizadas en Microsoft 365 Empresa Premium.
+ms.openlocfilehash: d4e9c16dea6697a428c5f7e51b7c8c1f819c75e4
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317881"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622049"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Prepararse para instalar automáticamente las aplicaciones de Office en los equipos cliente
 
-Use Microsoft 365 Empresa Premium para instalar automáticamente las aplicaciones de Office de 32 bits en equipos Windows 10 y mantenerlas actualizadas.
+Use Microsoft 365 Empresa Premium para instalar, de manera automática, las aplicaciones de Office de 32 bits en equipos Windows y mantenerlas actualizadas.
   
 La instalación automática funciona mejor si el equipo: 
 
-- está en Windows 10 Business.
+- está en Windows para empresas.
   
 - no tiene aplicaciones de escritorio de Office existentes (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access y OneDrive) O tiene instalada una versión existente de Office de Hacer clic y ejecutar.
 
-Para determinar si tiene la versión de Hacer clic y ejecutar de Office, en cualquier aplicación de Office, vaya a **Archivo** \> **Cuenta** (**Cuenta** de Office en Outlook). Si ve las **actualizaciones de Office** como se muestran en la siguiente ilustración, la instalación se ha efectuado mediante Hacer clic y ejecutar. 
+Para determinar si tiene la versión de Hacer clic y ejecutar de Office, en cualquier aplicación de Office, vaya a **Archivo** \> **Cuenta** (**Cuenta** de Office en Outlook). Si ve las **actualizaciones de Office** como se muestran en la siguiente ilustración, la instalación se ha efectuado mediante Hacer clic y ejecutar.
   
 ![Screenshot of Office updates in Office app Account.](./../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
@@ -48,7 +48,7 @@ Para determinar si tiene la versión de Hacer clic y ejecutar de Office, en cual
   
 Funciona con:
   
-- Un usuario que tenga una licencia de usuario de Windows 10 Business, una licencia activa de Microsoft 365 para empresas, Windows 10 Creators Update y se haya unido a Azure Active Directory.
+- Un usuario que tiene una licencia de usuario de Windows Empresa, una licencia de Microsoft 365 para empresas activa, Windows 10 Creators Update, y que esté unido a Azure Active Directory.
 
 No funciona con: 
 

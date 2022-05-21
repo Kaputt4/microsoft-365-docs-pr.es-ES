@@ -17,16 +17,16 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416318"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626973"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -49,11 +49,10 @@ La protección contra alteraciones está disponible para los dispositivos que ej
 - Windows Server 2019
 - Windows Server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-
 
 ## <a name="overview"></a>Información general
 
@@ -62,12 +61,12 @@ Durante algunos tipos de ciberataques, los actores malintencionados intentan des
 - Deshabilitación de la protección contra virus y amenazas
 - Deshabilitación de la protección en tiempo real
 - Desactivar la supervisión del comportamiento
-- Deshabilitación de antivirus (como IOfficeAntivirus (IOAV))
+- Deshabilitación de la protección antivirus, como IOfficeAntivirus (IOAV)
 - Deshabilitación de la protección entregada en la nube
 - Eliminación de actualizaciones de inteligencia de seguridad
 - Deshabilitación de acciones automáticas en amenazas detectadas
 
-### <a name="how-it-works"></a>Funcionamiento
+### <a name="how-it-works"></a>Cómo funciona
 
 La protección contra alteraciones básicamente bloquea Antivirus de Microsoft Defender a sus valores seguros y predeterminados e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos como:
 
@@ -124,7 +123,7 @@ La protección contra alteraciones se puede activar o desactivar para el inquili
   - Windows Server 2019
   - Windows Server, versión 1803 o posterior
   - Windows Server 2016
-  - Windows Server 2012 R2
+  - Windows Server 2012 R2
 
 Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information).
 
@@ -236,19 +235,15 @@ Los intentos de manipulación suelen indicar ciberataques más grandes. Los acto
 
 Cuando se detecta un intento de manipulación, se genera una alerta en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="images/tamperattemptalert.png" alt-text="El portal de Microsoft 365 Defender" lightbox="images/tamperattemptalert.png":::
-
 Con [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) y funcionalidades [avanzadas de búsqueda](advanced-hunting-overview.md) en Microsoft Defender para punto de conexión, el equipo de operaciones de seguridad puede investigar y abordar estos intentos.
 
 ## <a name="review-your-security-recommendations"></a>Revisión de las recomendaciones de seguridad
 
 La protección contra alteraciones se integra con las funcionalidades [de administración de vulnerabilidades &](next-gen-threat-and-vuln-mgt.md) amenazas. [Las recomendaciones de seguridad](tvm-security-recommendation.md) incluyen asegurarse de que la protección contra alteraciones está activada. Por ejemplo, puede buscar en *la manipulación*. En los resultados, puede seleccionar **Activar protección contra alteraciones** para obtener más información y activarla.
 
-:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Activación de la protección contra alteraciones en el portal de Centro de seguridad de Microsoft Defender" lightbox="images/tamperprotectsecurityrecos.png":::
-
 Para más información sobre Threat & Vulnerability Management, consulte [Información del panel: Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
@@ -278,13 +273,15 @@ Si es una organización que usa [Microsoft Defender para punto de conexión](/mi
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>¿Cómo afecta la configuración de la protección contra alteraciones en Intune cómo administro Antivirus de Microsoft Defender con directiva de grupo?
 
-La directiva de grupo no se aplica a la protección contra alteraciones. Los cambios realizados en Antivirus de Microsoft Defender configuración se omiten cuando la protección contra alteraciones está activada.
+Si actualmente usa Intune para configurar y administrar la protección contra alteraciones, debe seguir usando Intune. 
+
+La directiva de grupo no se aplica a la protección contra alteraciones. Los cambios realizados en Antivirus de Microsoft Defender configuración mediante directiva de grupo se omiten cuando se activa la protección contra alteraciones o cuando se configura la protección contra alteraciones con Intune.
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Si usamos Microsoft Intune para configurar la protección contra alteraciones, ¿se aplica solo a toda la organización?
 
 Tiene flexibilidad para configurar la protección contra alteraciones con Intune. Puede dirigirse a toda la organización o seleccionar dispositivos y grupos de usuarios específicos.
 
-### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>¿Puedo configurar La protección contra alteraciones con Microsoft Endpoint Configuration Manager?
+### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>¿Puedo configurar la protección contra alteraciones con Microsoft Endpoint Configuration Manager?
 
 Si usa la asociación de inquilinos, puede usar Microsoft Endpoint Configuration Manager. Vea los siguientes recursos:
 
@@ -294,10 +291,6 @@ Si usa la asociación de inquilinos, puede usar Microsoft Endpoint Configuration
 ### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>Tengo la inscripción Windows E3. ¿Puedo usar la configuración de la protección contra alteraciones en Intune?
 
 Actualmente, la configuración de la protección contra alteraciones en Intune solo está disponible para los clientes que tienen [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint).
-
-### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>¿Qué ocurre si intento cambiar la configuración de Microsoft Defender para punto de conexión en Intune, Microsoft Endpoint Configuration Manager e instrumentación de administración de Windows cuando la protección contra alteraciones está habilitada en un dispositivo?
-
-No podrá cambiar las características protegidas por la protección contra alteraciones; estas solicitudes de cambio se omiten.
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Soy un cliente empresarial. ¿Pueden los administradores locales cambiar la protección contra alteraciones en sus dispositivos?
 
@@ -318,7 +311,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 [Ver información sobre los intentos de manipulación](#view-information-about-tampering-attempts).
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -333,4 +326,4 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 - [Obtener información general de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint)
 - [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
 - [Habilitación del modo de solución de problemas](enable-troubleshooting-mode.md)
-- [Escenarios de modo de solución de problemas](troubleshooting-mode-scenarios.md)
+- [Escenarios del modo de resolución de problemas](troubleshooting-mode-scenarios.md)

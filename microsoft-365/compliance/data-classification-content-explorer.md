@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761381"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623308"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
-El explorador de contenido de la clasificación de datos le permite ver de forma nativa los elementos que se resumiendo en la página información general.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-![captura de pantalla contraída del explorador de contenido.](../media/data-classification-content-explorer-1.png)
+El explorador de contenido le permite ver de forma nativa los elementos que se han resumido en la página de información general.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -51,7 +51,7 @@ Para obtener acceso a la pestaña del explorador de contenido, una cuenta debe t
 > La pertenencia a estos grupos de roles no le permite ver la lista de elementos en el explorador de contenido o ver el contenido de los elementos en el explorador de contenido.
 
 > [!IMPORTANT]
-> Solo los administradores globales pueden administrar o asignar permisos a otros usuarios en el Centro de cumplimiento. Para más información, vea [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> Solo los administradores globales pueden administrar o asignar permisos a otros usuarios en el portal de cumplimiento. Para obtener más información vea [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 > 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>Permisos necesarios para acceder a elementos en el explorador de contenido
 
@@ -60,7 +60,7 @@ El acceso al explorador de contenidos está altamente restringido porque permite
 > [!IMPORTANT]
 > Estos permisos reemplazan los permisos que se asignan a los elementos de forma local, lo que permite ver el contenido. 
 
-Hay dos roles que conceden acceso al explorador de contenido y se conceden mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centro de cumplimiento de Microsoft 365</a>:
+Existen dos roles que conceden acceso al explorador de contenido y se conceden mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portal de cumplimiento de Microsoft Purview</a>:
 
 - **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha preasignado a este grupo de roles.
 
@@ -76,14 +76,14 @@ Un administrador global puede asignar el visor de listas del explorador de conte
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -107,18 +107,18 @@ Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePo
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
-Una [etiqueta de retención](retention.md) le permite definir durante cuánto tiempo se conserva un elemento con una etiqueta y los pasos que se deben seguir antes de eliminarlo. Se puede aplicar manualmente o automáticamente mediante directivas. Puede ayudar a su organización a mantener el cumplimiento normativo y los requerimientos legales.
+Una [etiqueta de retención](retention.md) le permite definir durante cuánto tiempo se conserva un elemento con una etiqueta y los pasos que se deben seguir antes de eliminarlo. Se puede aplicar manualmente o de manera automática mediante directivas. Puede ayudar a su organización a mantener el cumplimiento normativo y los requerimientos legales.
 
 ### <a name="how-to-use-content-explorer"></a>Cómo usar el explorador de contenido
 
-1. Abra **Centro de cumplimiento de Microsoft 365**  > **de la clasificación de datos** > **El explorador de contenido**.
+1. Abra **Portal de cumplimiento de Microsoft Purview**  > **Clasificación de datos** > **Explorador de contenido**.
 2. Si sabe el nombre de la etiqueta o el tipo de información confidencial, puede escribirlo en el cuadro de filtro.
 3. De forma alternativa, puede buscar el elemento expandiendo el tipo de etiqueta y seleccionando la etiqueta de la lista.
 4. Seleccione una ubicación en **todas las ubicaciones** y profundice en la estructura de carpetas hasta el elemento.
 5. Haga doble clic para abrir el elemento de forma nativa en el explorador de contenido.
 
 ### <a name="export"></a>Exportar
-El control de **Exportación** creará un archivo .csv que contiene una lista de lo que se muestra en el panel **Todas las ubicaciones**.
+El control **export** creará un archivo .csv que contiene una lista del área de foco del panel.
 
 ![control de exportación de clasificación de datos.](../media/data_classification_export_control.png)
 
@@ -126,9 +126,9 @@ El control de **Exportación** creará un archivo .csv que contiene una lista de
 > [!NOTE]
 > Los recuentos pueden tardar hasta *siete días* en actualizarse en el explorador de contenido.
 
-### <a name="search"></a>Búsqueda
+### <a name="filter"></a>Filtro
 
-Cuando profundiza en una ubicación, como una carpeta de Exchange o Teams, o un sitio de SharePoint o de OneDrive, aparece la herramienta de **búsqueda**.
+Al explorar en profundidad una ubicación, como una carpeta de Exchange o Teams, o un sitio de SharePoint o OneDrive, aparece la herramienta **Filtro**.
 
 ![herramienta de búsqueda del explorador de contenido.](../media/data_classification_search_tool.png)
 
@@ -154,4 +154,4 @@ Puede buscar en:
 - [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
-- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)

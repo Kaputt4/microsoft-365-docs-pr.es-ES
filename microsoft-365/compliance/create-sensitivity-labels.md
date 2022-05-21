@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302362"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622378"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -43,9 +43,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Crear y configurar etiquetas de confidencialidad
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información**
-    
-    Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de información** > **Etiquetas**
 
 2. En la página **Etiquetas**, seleccione **+ Crear una etiqueta** para iniciar la configuración de la nueva etiqueta de confidencialidad: 
     
@@ -128,11 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publicar etiquetas de sensibilidad mediante la creación de una directiva de etiqueta
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información**
-    
-    Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información** > **Directivas de etiquetas**
 
-2. Seleccione la pestaña **Directivas de etiqueta** y, después, **Publicar etiquetas** para iniciar la configuración de **Creación de directivas**:
+2. En la página **Directivas de etiquetas**, seleccione **Publicar etiqueta** para iniciar la configuración **Crear directiva**:
     
     ![Publique etiquetas.](../media/publish-sensitivity-labels-full.png)
     
@@ -205,7 +201,7 @@ En comparación, al eliminar una etiqueta:
 
 - En el caso de los documentos almacenados en SharePoint o OneDrive y que hayas [habilitado las etiquetas de confidencialidad para los archivos de Office](sensitivity-labels-sharepoint-onedrive-files.md): Cuando abra el documento en Office para la web, no verá la etiqueta aplicada en la aplicación, y el nombre de la etiqueta ya no se mostrará en la columna **Confidencialidad** en SharePoint. Si la etiqueta eliminada aplicó el cifrado y los servicios pueden procesar el contenido cifrado, se quita el cifrado. Las acciones de salida de estos servicios dan como resultado el mismo resultado. Por ejemplo, descargar, copiar en, mover a y abrir con una aplicación móvil o de escritorio de Office. Aunque la información de la etiqueta permanece en los metadatos del archivo, las aplicaciones ya no pueden asignar el identificador de etiqueta a un nombre para mostrar, por lo que los usuarios asumirán que un archivo no está etiquetado.
 
-- Para los documentos almacenados fuera de SharePoint y OneDrive o que no hayan habilitado las etiquetas de sensibilidad para los archivos de Office, y para los correos electrónicos: al abrir el contenido, la información de la etiqueta en los metadatos permanece, pero sin la asignación del ID de la etiqueta al nombre, los usuarios no ven el nombre de la etiqueta aplicada que se muestra (por ejemplo, en la barra de estado de las aplicaciones de escritorio). Si la etiqueta eliminada aplicó el cifrado, este permanece y los usuarios siguen viendo el nombre y la descripción de la plantilla de protección ahora archivada.
+- Para los documentos almacenados fuera de SharePoint y OneDrive o para los que no haya habilitado las etiquetas de confidencialidad para los archivos de Office, y para los correos electrónicos: al abrir el contenido, la información de la etiqueta en los metadatos permanece, pero, sin el identificador de etiqueta para asignar nombres, los usuarios no ven el nombre de etiqueta aplicado que se muestra (por ejemplo, en la barra de estado de las aplicaciones de escritorio). Si la etiqueta eliminada ha aplicado el cifrado, este permanece y los usuarios siguen viendo el nombre y la descripción de la plantilla de protección ahora archivada.
 
 - Para los contenedores, como los sitios en SharePoint y Teams, la etiqueta se elimina y cualquier ajuste que se haya configurado con esa etiqueta ya no se aplica. Esta acción suele tardar entre 48 y 72 horas en los sitios de SharePoint y puede ser más rápida para Teams y Grupos de Microsoft 365.
 

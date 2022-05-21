@@ -1,5 +1,5 @@
 ---
-title: Restablecer dispositivos Windows 10 a la configuración de fábrica
+title: Restablecer dispositivos Windows a la configuración de fábrica
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,15 +24,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Obtenga información sobre cómo usar Microsoft 365 para empresas para restablecer de fábrica dispositivos Windows 10 que administre y revertirlos a su configuración original.
-ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Obtenga información sobre cómo usar Microsoft 365 Empresa Premium para hacer un restablecimiento de fábrica de los dispositivos Windows que administra, y revertirlos a su configuración original de compra.
+ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320261"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623551"
 ---
-# <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
+# <a name="reset-windows-devices-to-factory-settings"></a>Restablecer la configuración de fábrica de los dispositivos Windows
 
 Este artículo aplica a Microsoft 365 Empresa Premium.
 

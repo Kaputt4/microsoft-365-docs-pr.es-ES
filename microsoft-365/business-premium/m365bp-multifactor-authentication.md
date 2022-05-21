@@ -1,5 +1,5 @@
 ---
-title: Configurar la autenticación multifactorial para Microsoft 365 Empresa Premium
+title: Configurar la autenticación multifactor para Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,28 +23,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Configurar la autenticación multifactor para dispositivos móviles.
-ms.openlocfilehash: 63f5538882496ed67dacdb3428a6dd02696d21e7
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Configure la autenticación multifactor para teléfonos en Microsoft Empresa Premium. Aumente la seguridad mediante las características de MFA de Microsoft Empresa Premium para su teléfono.
+ms.openlocfilehash: d92a1a651790626c8d8a8b70f334f907bcde7cdc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320282"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622642"
 ---
-# <a name="set-up-multifactor-authentication-with-your-mobile-device"></a>Configurar la autenticación multifactor con el dispositivo móvil
+# <a name="set-up-mfa"></a>Configurar MFA
 
-La autenticación multifactor (MFA) proporciona más seguridad porque, en lugar de usar solo una contraseña o un código a través de texto, se usa una aplicación independiente en el teléfono para verificar el acceso. Esto hace que sea difícil piratear la cuenta. Cuando se requiere MFA, los miembros de la organización pueden usar la aplicación Microsoft Authenticator para iniciar sesión de forma segura en sus dispositivos. <br/><br/>
+La autenticación multifactor (MFA) proporciona seguridad incrementada porque, en lugar de usar solo una contraseña o un código a través de texto, se usa una aplicación independiente en el teléfono para verificar el acceso. Esto hace que sea difícil piratear la cuenta. Cuando se requiere MFA, los miembros de la organización pueden usar la aplicación Microsoft Authenticator para iniciar sesión de forma segura en sus dispositivos. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Más información en [Configurar la autenticación multifactor en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Obtenga más información en [Configurar la autenticación multifactor en Microsoft 365 Empresa Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Usar la aplicación Outlook en sus dispositivos
 
-Después de que un administrador haya requerido a los usuarios de primera línea que usen MFA, la aplicación autenticadora actúa como segunda forma de autenticación. Le recomendamos que instale y use la aplicación de Outlook para acceder a su correo electrónico de Microsoft 365. Consulte [Configurar dispositivos móviles](../admin/setup/set-up-mobile-devices.md) para obtener información sobre cómo instalar aplicaciones de Office, incluida Outlook, en un teléfono.
+Después de que un administrador haya requerido a los usuarios de primera línea que usen MFA, la aplicación autenticadora actúa como segunda forma de autenticación. Le recomendamos que instale y use la aplicación de Outlook para acceder a su correo electrónico de Microsoft 365.
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
 Siga las instrucciones para [Instalar aplicaciones de Office](m365bp-install-office-apps.md).
-
- 

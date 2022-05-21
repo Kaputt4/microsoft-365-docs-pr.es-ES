@@ -1,5 +1,5 @@
 ---
-title: Compartir archivos y vídeos
+title: Compartir archivos y vídeos en Microsoft Teams o SharePoint
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint.
-ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint. Microsoft 365 Empresa Premium incluye Teams, que es una excelente manera de compartir archivos y vídeos de forma segura.
+ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095130"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622354"
 ---
-# <a name="share-files-and-videos"></a>Compartir archivos y vídeos
+# <a name="share-files-and-videos-in-a-safe-environment"></a>Compartir archivos y vídeos en un entorno seguro
 
-Otra cosa a la que hay que prestar atención es garantizar que todos los miembros de la organización controlan quién puede ver y editar archivos, y que se almacenan en una ubicación segura con los permisos adecuados aplicados. Los usuarios pueden usar Microsoft Teams para almacenar archivos y, a continuación, compartir los archivos dentro o fuera de la empresa, clínica o campaña mediante Microsoft Teams o enviando vínculos de SharePoint. El envío de un vínculo en lugar de datos adjuntos de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin permiso.
+Otra cosa a la que hay que prestar atención es garantizar que todos los miembros de la organización controlan quién puede ver y editar archivos, y que se almacenan en una ubicación segura con los permisos adecuados aplicados. Los usuarios de Microsoft 365 Empresa Premium pueden usar Microsoft Teams para almacenar archivos y, a continuación, compartir los archivos dentro o fuera de la empresa, práctica o campaña. También puede enviar un vínculo de SharePoint. El envío de un vínculo en lugar de datos adjuntos de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin permiso.
 
 ![Diagrama de una ventana de Microsoft Teams, que muestra la pestaña Archivos y Obtener vínculo en el menú.](../media/m365-democracy-teams-sharefiles.png)
 

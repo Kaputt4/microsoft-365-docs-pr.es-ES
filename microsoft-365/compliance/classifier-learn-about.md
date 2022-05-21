@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759885"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65625807"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Clasificar y etiquetar el contenido para que pueda protegerse y controlarse correctamente es el punto de partida para la materia de protección de la información. Microsoft 365 tiene tres maneras de clasificar el contenido.
 
@@ -43,7 +45,7 @@ Esta categoría de mecanismos de clasificación incluye la búsqueda de contenid
 - Reconocimiento de un elemento porque es una variación en una plantilla [(impresión con el dedo del documento).](document-fingerprinting.md)
 - Uso de la presencia de cadenas [exactas que coinciden con los datos exactos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en [Información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md) y [aplicación automática de directivas para etiquetas de retención](apply-retention-labels-automatically.md).
+Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en [Información sobre Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md) y [aplicar automáticamente directivas para etiquetas de retención](apply-retention-labels-automatically.md).
 
 ## <a name="classifiers"></a>Clasificadores
 
@@ -72,29 +74,51 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; c
 Microsoft 365 incluye varios clasificadores previamente entrenados:
 
 > [!CAUTION]
-> Estamos desaprobando el clasificador **de lenguaje ofensivo** entrenado previamente porque ha estado produciendo un gran número de falsos positivos. No lo use y, si lo usa actualmente, debe quitar los procesos empresariales de él. En su lugar, se recomienda usar los clasificadores previamente entrenados **threat**, **profanity** y **harassment** .
+> Estamos desaprobando el clasificador preentrenado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si lo usa actualmente, debe quitar los procesos empresariales de él. En su lugar, se recomienda usar los clasificadores previamente entrenados **threat**, **profanity** y **harassment** .
+
+- **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **Reanuda**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante.
-- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 lenguajes de programación de equipos más usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
+
+- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
+
+- **Quejas del cliente**: el clasificador de quejas de clientes detecta los comentarios y las quejas realizadas sobre los productos o servicios de su organización. Este clasificador puede ayudarle a cumplir los requisitos normativos sobre la detección y evaluación de las quejas, como los requisitos de consumer Financial Protection Bureau y Food and Drug Administration. Detecta contenido en .msg y .eml son solo cumplimiento de comunicaciones, .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg.
+
+- **Discriminación**: detecta un lenguaje discriminatorio explícito y es sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades.
+
+- **Finanzas**: detecta contenido en las categorías de finanzas corporativas, contabilidad, economía, banca e inversión. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **Acoso**: Detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con la conducta ofensiva dirigida a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
+
+- **Atención sanitaria**: detecta contenido en aspectos de administración médica y sanitaria, como servicios médicos, diagnósticos, tratamientos, reclamaciones, etc. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **RR. HH**.: detecta contenido en categorías relacionadas con recursos humanos de contratación, entrevista, contratación, formación, evaluación, advertencia y terminación. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **IP**: detecta contenido en categorías relacionadas con la propiedad intelectual, como secretos comerciales e información confidencial similar. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **TI**: detecta contenido en las categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **Asuntos jurídicos**: detecta contenido en categorías relacionadas con asuntos legales, como litigios, procesos legales, obligación legal, terminología legal, ley y legislación. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+
+- **Adquisición**: detecta contenido en categorías de licitación, cita, compra y pago por suministro de bienes y servicios. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **Blasfemia**: detecta una categoría específica de elementos de texto en lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas.
+
+- **Reanuda**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante.
+
+- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
 > [!NOTE]
 > El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
-- **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Discriminación**: detecta un lenguaje discriminatorio explícito y es sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades.
-- **Finanzas**: detecta contenido en las categorías de finanzas corporativas, contabilidad, economía, banca e inversión. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **Acoso**: Detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con la conducta ofensiva dirigida a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
-- **Atención sanitaria**: detecta contenido en aspectos de administración médica y sanitaria, como servicios médicos, diagnósticos, tratamientos, reclamaciones, etc. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **RR. HH**.: detecta contenido en categorías relacionadas con recursos humanos de contratación, entrevista, contratación, formación, evaluación, advertencia y terminación. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **IP**: detecta contenido en categorías relacionadas con la propiedad intelectual, como secretos comerciales e información confidencial similar. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **TI**: detecta contenido en las categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **Asuntos jurídicos**: detecta contenido en categorías relacionadas con asuntos legales, como litigios, procesos legales, obligación legal, terminología legal, ley y legislación. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Adquisición**: detecta contenido en categorías de licitación, cita, compra y pago por suministro de bienes y servicios. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
+
+- **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad.
 - **Blasfemia**: detecta una categoría específica de elementos de texto en lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 - **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
 - **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 
-Aparecen en la vista de clasificadores **Centro de cumplimiento de Microsoft 365** >  **Data** **classificationTrainable** >  con el estado de `Ready to use`.
+Aparecen en la vista de clasificadores **portal de cumplimiento Microsoft Purview** >  **Data** **classificationTrainable** >  con el estado de `Ready to use`.
 
 ![clasificadores-clasificadores previamente entrenados.](../media/classifiers-ready-to-use-classifiers.png)
 

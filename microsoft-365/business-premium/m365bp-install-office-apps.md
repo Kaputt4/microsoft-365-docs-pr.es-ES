@@ -1,5 +1,5 @@
 ---
-title: Instalar aplicaciones de Office en todos los dispositivos
+title: Instalar aplicaciones de Office en todos los dispositivos de Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Cómo instalar Office en todos los dispositivos.
-ms.openlocfilehash: 81b9152b52a4ffa7b38f744f680e11a091a345e0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cómo instalar Office en todos los dispositivos de Microsoft 365 Empresa Premium.
+ms.openlocfilehash: b05e0330d4119f8c03379a56f541e7a9ca0f8415
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101843"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623574"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Instalar aplicaciones de Office en todos los dispositivos
 
-De acuerdo, ha configurado Microsoft 365 y ahora puede requerir que los usuarios instalen aplicaciones individuales de Office en sus dispositivos Mac, PC o móviles. Esto es algo que los usuarios deben hacer para formar parte de la primera línea y ayudar a proteger la organización frente a ataques.
+De acuerdo, ha configurado Microsoft 365 Empresa Premium y ahora puede requerir que los usuarios instalen aplicaciones individuales de Office en sus dispositivos Mac, PC o móviles. Esto es algo que los usuarios deben hacer para formar parte de la primera línea y ayudar a proteger la organización frente a ataques.
   
 ## <a name="watch-install-office-apps"></a>Instalar aplicaciones de Office
 
@@ -50,7 +50,7 @@ Pídales que realicen lo siguiente:
 5. Obtenga la aplicación de Windows y, a continuación, seleccione  **Ejecutar**. Teams le mostrará un mensaje al terminar la instalación.
 
 
-## <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Business
+## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Empresa Premium
 
 Siga las instrucciones en las pestañas para instalar Office en un iPhone o un teléfono Android. Después de seguir estos pasos, sus archivos de trabajo creados en aplicaciones de Office estarán protegidos por Microsoft 365 Business.
 

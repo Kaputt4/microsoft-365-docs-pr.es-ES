@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415978"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623201"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Ver y editar directivas de protección de dispositivos
 
@@ -40,7 +40,7 @@ Microsoft 365 Empresa Premium incluye dos tipos principales de directivas para 
 
 - Las **directivas de firewall**, que determinan qué tipo tráfico de red puede fluir hacia y desde los dispositivos de la organización
 
-Estas directivas forman parte de Microsoft Defender para Empresas, que se incluye en la suscripción de Microsoft 365 Empresa Premium. Se proporciona información para trabajar con directivas en el Centro de seguridad de Microsoft Defender, así como para trabajar con directivas en el Centro de administración y en Intune.
+Estas directivas forman parte de Microsoft Defender para Empresas, que se incluye en la suscripción de Microsoft 365 Empresa Premium. Se proporciona información para trabajar con directivas en el Centro de seguridad de Microsoft Defender, así como para trabajar con directivas en el Centro de administración y en Intune.
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Trabajar con las directivas del dispositivo en el Centro de seguridad de Microsoft Defender
 
@@ -159,7 +159,7 @@ Para ver y administrar directivas:
 
 ## <a name="working-with-device-policies-in-intune"></a>Trabajar con las directivas del dispositivo en Intune
 
-Use la siguiente información para crear y administrar las directivas del dispositivo en Intune a través de la seguridad de los puntos de conexión en el Centro de administración de Microsoft Endpoint Manager.
+Use la siguiente información para crear y administrar las directivas del dispositivo en Intune a través de la seguridad de los puntos de conexión en el Centro de administración de Microsoft Endpoint Manager.
 
 ### <a name="create-duplicate-and-edit-policies"></a>Crear, duplicar y editar directivas
 
@@ -235,7 +235,7 @@ Independientemente del método de la directiva, la administración de la misma c
 
 ## <a name="see-also"></a>Vea también
 
-[Administración de seguridad de puntos de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security)
+[Administración de seguridad de puntos de conexión en Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
 [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
 
