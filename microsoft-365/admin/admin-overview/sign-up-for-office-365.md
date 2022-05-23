@@ -1,5 +1,5 @@
 ---
-title: 'Cómo registrarse: Ayuda del administrador'
+title: 'Cómo registrarse: Ayuda de Administración'
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -29,20 +29,20 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber sobre las versiones más recientes de los programas de Office antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 015f99a2f0b6f9fcd17592e399bccf044313f993
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436127"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636226"
 ---
-# <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda del administrador
+# <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda de Administración
 
 Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las versiones más recientes de Word, Excel, PowerPoint y otros programas de Office.
 
 ::: moniker range="o365-21vianet"
 
-Si está en China, Office 365 operado por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no gestiona el servicio. 21Vianet gestiona, ofrece y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Al otorgar licencias a las tecnologías de Microsoft, 21Vianet opera centros de datos locales de Microsoft para proporcionarle la capacidad de usar servicios Microsoft mientras mantiene sus datos en China. 21Vianet también proporciona servicios de suscripción y facturación, así como soporte técnico.
+Si está en China, Office 365 operado por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no ofrece con el propio servicio. 21Vianet gestiona, ofrece y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Al otorgar licencias a las tecnologías de Microsoft, 21Vianet opera centros de datos locales de Microsoft para proporcionarle la capacidad de usar servicios Microsoft mientras mantiene sus datos en China. 21Vianet también proporciona servicios de suscripción y facturación, así como soporte técnico.
   
 > [!NOTE]
 > Estos servicios están sujetos a las leyes chinas.
@@ -88,7 +88,7 @@ No es necesario cancelar la evaluación. Si no compra la suscripción de prueba,
 
 - **La dirección e información de contacto para su suscripción:**
 
-  - **País** en el que se usarán los servicios. **No podrá** cambiar el país más adelante, incluso durante el proceso de registro; tendrá que reiniciar el asistente para registrarse.
+  - **País** en el que se usarán los servicios. **No** podrá cambiar el país más adelante, ni siquiera durante el proceso de registro; tendrá que reiniciar el asistente de registro.
 
   - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
 

@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio.
-ms.openlocfilehash: 818d0d84e78907047df41e30f0ded62fc16c6ce4
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023775"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637789"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicio en Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 Al definir las ofertas de servicio en Microsoft Bookings, establece un nombre de servicio, una descripción, una ubicación (elija si desea reunirse en persona o tener una reunión en línea), la duración, los avisos predeterminados para los clientes y el personal, las notas internas sobre el servicio y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio. A continuación, cuando los clientes llegan a su sitio web empresarial para reservar una cita, pueden ver exactamente qué tipos de citas están disponibles, elegir la persona a la que quieren proporcionar el servicio y cuánto costará su servicio.
 
@@ -51,7 +48,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
        > Teams reuniones se pueden unir a través de la aplicación móvil Teams, la aplicación de escritorio Teams, en un explorador web o mediante el acceso telefónico local. Se recomienda encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino, para obtener la mejor experiencia en la reserva de citas virtuales.
 
    - Deshabilitado:
-     - Las citas no contendrán una opción de reunión y no se mostrarán todos los campos relacionados con la reunión que aparecen cuando **se habilita Agregar reunión en línea** .
+     - Citas no contendrá una opción de reunión y no se mostrarán todos los campos relacionados con la reunión que aparecen cuando se habilita **Agregar reunión en línea**.
 
    **Duración**: es el tiempo durante el que se reservarán todas las reuniones. La hora se bloquea a partir de la hora de inicio, que se selecciona durante la reserva. La hora de la cita completa se bloqueará en los calendarios del personal.
 
@@ -105,13 +102,13 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings.":::
 
-9. **Habilitación de notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
+9. **Habilitación de notificaciones de mensajes de texto para el cliente** Si se selecciona, SMS mensajes se envían al cliente, pero solo si optan por participar.
 
    - Apartado de participación en la reserva manual y Self-Service Página:
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Cuadro de participación en Bookings.":::
 
-   - Las notificaciones de mensajes de texto tendrán un aspecto similar al siguiente (tenga en cuenta que las notificaciones POR SMS solo están disponibles actualmente en Norteamérica):
+   - Las notificaciones de mensajes de texto tendrán un aspecto similar al siguiente (tenga en cuenta que las notificaciones de SMS solo están disponibles actualmente en Norteamérica):
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings.":::
 

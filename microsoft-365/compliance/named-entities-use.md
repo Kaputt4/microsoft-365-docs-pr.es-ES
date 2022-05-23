@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001002"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637194"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos
 
@@ -49,6 +49,7 @@ Puede usar SIT de entidad con nombre y directivas mejoradas para detectar y prot
 - Mensajes de canales y chats de Teams
 - Dispositivos (Windows 10 y 11 dispositivos de punto de conexión)
 - Buzones de Exchange
+- Microsoft Defender for Cloud Apps
 
 Los SIT de entidad con nombre y las directivas mejoradas no se admiten para:
 
@@ -75,15 +76,15 @@ Para crear o editar una directiva DLP, use los procedimientos de [Creación, pru
 |---------|---------|
 |Office sugerencia de directiva de clientes Win32    |No se admite  |
 |Office sugerencia de directiva de clientes WAC    |Compatible         |
-|Sugerencia de directiva de OWA     |No se admite         |
-|sugerencia de directiva de Outlook     |No se admite |
+|Sugerencia de directiva de OWA     |No admitido         |
+|sugerencia de directiva de Outlook     |No admitido |
 |Puntos de conexión (Windows 10 y 11 dispositivos)     |Compatible  |
 |reglas de transporte de Exchange     |Compatible |
 |OneDrive para la Empresa datos en reposo     |Compatible         |
 |SharePoint datos en reposo en línea     |Compatible         |
 |Teams datos en reposo     |Compatible         |
 |Datos en reposo de mensajes de correo electrónico     |Compatible con inquilinos con el plan de servicio de privacidad         |
-<!--|Microsoft Defender for Cloud Apps     |compatible         |-->
+|Microsoft Defender for Cloud Apps     |Compatible         |
 
 ### <a name="autolabeling"></a>Etiquetado automático
 
@@ -97,7 +98,7 @@ Para crear o editar una directiva DLP, use los procedimientos de [Creación, pru
 |transporte Exchange     |Compatible |
 |OneDrive para la Empresa datos en reposo     |Compatible |
 |SharePoint datos en reposo en línea|Compatible|
-|Analizador de Azure Information Protection (AIP)|no compatible|
+|Analizador de Azure Information Protection (AIP)|No se admite|
 
 ## <a name="known-issues"></a>Problemas conocidos
 

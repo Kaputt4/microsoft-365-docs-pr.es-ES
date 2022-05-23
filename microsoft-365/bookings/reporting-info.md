@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Obtenga información sobre cómo puede ver una vista de 4 meses de la actividad de Bookings
-ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: c39515852d0a45adfb3faeb5efaf510ee2c27236
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023731"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637216"
 ---
 # <a name="reporting-info-for-bookings"></a>Información de informes para Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 Ahora puede ver una vista de cuatro meses del calendario de Bookings en un archivo TSV. El archivo TSV le mostrará cuatro meses de datos, pero puede seleccionar períodos de cuatro meses diferentes a lo largo de un año.
 
@@ -61,6 +58,7 @@ El informe mejorado contiene ahora los campos siguientes.
 - **Moneda**   Tipo de moneda establecido para una empresa.
 - **Asistentes de Cc**   Destinatarios que recibirán las notificaciones por correo electrónico de una reserva. Esto se puede especificar desde la aplicación Teams al crear una reserva.
 - **Recuento de asistentes inscritos**   Cuántos clientes han reservado un servicio de reserva de grupos.
-- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir notificaciones relacionadas con texto SMS.
+- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir SMS notificaciones relacionadas con texto.
 - **Campos personalizados**   Todas las preguntas y respuestas relacionadas con una única reserva se combinan en este campo.
 - **Id. de reserva**   Esto resulta útil para identificar las mismas reservas de un servicio de grupo.
+- **Seguimiento de datos**   Realice un seguimiento de las métricas de los identificadores de campaña que usa en las campañas de marketing.

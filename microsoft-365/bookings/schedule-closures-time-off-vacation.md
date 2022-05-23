@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Programe cierres de oficinas y permisos de empleados en el calendario de Bookings para que los empleados queden marcados como no disponibles para reservas durante horas especificadas.
-ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468402"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637459"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Programar Bookings cierres de negocios, tiempo libre y tiempo de vacaciones
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 En ocasiones, querrás cerrar tu negocio para eventos de vacaciones o de equipo, o tus empleados necesitarán tiempo libre cuando estén enfermos, de vacaciones o no estén disponibles por otros motivos. Puede programar el tiempo de espera del calendario de Microsoft Bookings y el empleado no estará disponible para las reservas durante el tiempo especificado. Una vez que la empresa vuelva a abrirse o los empleados vuelvan al trabajo, todos aparecerán en la página de reserva según sus horarios laborales establecidos.
 
@@ -45,7 +42,7 @@ Programe cierres empresariales o cierres de empleados.
 
 1. Seleccione todos los miembros del personal.
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 Cuando un cliente intenta programar el servicio un día en que la oficina está cerrada, verá un mensaje en la página de reserva.
 

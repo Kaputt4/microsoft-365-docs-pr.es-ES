@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso de actividad de SharePoint para obtener información sobre SharePoint interacciones de archivos de usuario con licencia, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52aaaf3d9eef59c582977ee7b7c04ded44233c59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467238"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636512"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>informes de Microsoft 365 en el centro de administración: actividad de SharePoint
 
@@ -33,7 +33,7 @@ Como administrador de Microsoft 365, el panel Informes muestra la información g
   
 Por ejemplo, podrá comprender la actividad de cada usuario con licencia para usar SharePoint consultando su interacción con los archivos. También le ayuda a entender el nivel de colaboración actual consultando el número de archivos compartidos.
   
-## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>¿Cómo puedo obtener acceso al informe de actividad de SharePoint?
+## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>Cómo obtener el informe de actividad de SharePoint?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
 2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta SharePoint.
@@ -44,7 +44,7 @@ Puede ver las actividades en el informe de SharePoint eligiendo la pestaña **Ac
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![SharePoint informe de actividad: elija columnas.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para filtrar y ordenar, deberá exportar los datos. 
 
 El informe **de actividad de SharePoint** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   

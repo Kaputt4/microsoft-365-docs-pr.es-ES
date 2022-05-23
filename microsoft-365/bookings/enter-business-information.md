@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros con el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622518"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637767"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Escriba la información empresarial en Microsoft Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 En Microsoft Bookings, la página Información empresarial de la aplicación web contiene todos los detalles que normalmente encontraría en la página "Acerca de nosotros" de una empresa. Estos detalles incluyen un nombre, dirección, número de teléfono, dirección URL del sitio web, dirección URL de la directiva de privacidad, logotipo y horario comercial pertinentes.
 

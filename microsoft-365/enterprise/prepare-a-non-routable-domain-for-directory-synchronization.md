@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a las cuentas de usuario locales antes de sincronizarlas con el inquilino de Microsoft 365.
-ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9d720b42b345e85031a4fa34b9c1353f868765f1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096378"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637899"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 
@@ -37,9 +37,9 @@ Si actualmente usa un dominio ".local" para las cuentas de usuario en AD DS, se 
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>¿Qué ocurre si solo tengo un dominio local ".local"?
 
-Use Azure AD Conectar para sincronizar AD DS con el inquilino Azure AD del inquilino de Microsoft 365. Para obtener más información, consulte [Integración de las identidades locales con Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+Use azure AD Conectar para sincronizar AD DS con el inquilino de Azure AD del inquilino de Microsoft 365. Para obtener más información, consulte [Integración de las identidades locales con Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan en el entorno local. Sin embargo, Azure AD Conectar solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que el dominio también se comprueba mediante Azure AD porque Microsoft 365 identidades se administran mediante Azure AD. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si su AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tiene para el inquilino de Microsoft 365. Para solucionar este problema, puede cambiar el dominio principal de AD DS local o agregar uno o varios sufijos UPN.
+Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan en el entorno local. Sin embargo, Azure AD Conectar solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque Azure AD administra Microsoft 365 identidades. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si su AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tiene para el inquilino de Microsoft 365. Para solucionar este problema, puede cambiar el dominio principal de AD DS local o agregar uno o varios sufijos UPN.
   
 ### <a name="change-your-primary-domain"></a>Cambio del dominio principal
 
@@ -51,7 +51,7 @@ Puede resolver el problema ".local" registrando nuevos sufijos o sufijos UPN en 
   
 Después de actualizar los UPN para usar el dominio comprobado, está listo para sincronizar su AD DS local con Microsoft 365.
   
-#### <a name="step-1-add-the-new-upn-suffix"></a>Paso 1: Agregar el nuevo sufijo UPN**
+#### <a name="step-1-add-the-new-upn-suffix"></a>Paso 1: Agregar el nuevo sufijo UPN
   
 1. En el controlador de dominio de AD DS, en el Administrador del servidor elija **Herramientas** \> **dominios y confianzas de Active Directory**.
     

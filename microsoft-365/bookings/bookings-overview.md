@@ -9,19 +9,16 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Información general de la aplicación de Microsoft Bookings, que incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario del personal y dar a los clientes flexibilidad para reservar citas.
-ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 02ae9cc4e9b101025a424acaff3a82de7afeef59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822680"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637613"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
-
-Microsoft Bookings hace que programar y administrar citas sea fácil. Bookings incluye un calendario de reservas basado en la web y se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar una hora que funcione mejor para ellos. Las notificaciones de texto por correo electrónico y SMS reducen el número de avisos y mejoran la satisfacción del cliente. Su organización ahorra tiempo con una reducción en las tareas de programación repetitivas. Con flexibilidad integrada y capacidad de personalización, Bookings se puede diseñar para adaptarse a la situación y las necesidades de muchas partes diferentes de una organización.
+Microsoft Bookings hace que programar y administrar citas sea fácil. Bookings incluye un calendario de reservas basado en la web y se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar una hora que funcione mejor para ellos. Las notificaciones de correo electrónico y SMS texto reducen la no-muestra y mejoran la satisfacción del cliente. Su organización ahorra tiempo con una reducción en las tareas de programación repetitivas. Con flexibilidad integrada y capacidad de personalización, Bookings se puede diseñar para adaptarse a la situación y las necesidades de muchas partes diferentes de una organización.
 
 > [!NOTE]
 > El calendario de Bookings es un buzón de Exchange Online.

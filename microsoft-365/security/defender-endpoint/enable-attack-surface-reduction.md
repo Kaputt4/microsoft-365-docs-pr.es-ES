@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 03cdc163c1f560462fa12f18d4e6101665d766de
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788158"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637921"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -38,11 +38,11 @@ ms.locfileid: "64788158"
 - Windows
 
 > [!TIP]
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Las reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md) (reglas ASR) ayudan a evitar acciones que el malware suele abusar para poner en peligro dispositivos y redes.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Características de reducción de superficie expuesta a ataques en versiones Windows
 
@@ -71,9 +71,6 @@ Cada regla de ASR contiene una de cuatro configuraciones:
 - **Auditoría**: evalúe cómo afectaría la regla ASR a su organización si está habilitada.
 - **Advertir**: Habilite la regla ASR, pero permita que el usuario final omita el bloque.
 
-> [!IMPORTANT]
-> Actualmente, el modo de advertencia no se admite para tres reglas ASR al configurar reglas de ASR en Microsoft Endpoint Manager (MEM). Para obtener más información, consulte [Casos en los que no se admite el modo de advertencia](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
-
 Se recomienda usar reglas de ASR con una licencia Windows E5 (o SKU de licencia similar) para aprovechar las funcionalidades avanzadas de supervisión e informes disponibles en [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md) (Defender para punto de conexión). Sin embargo, si tiene otra licencia, como Windows Professional o Windows E3 que no incluyen funcionalidades avanzadas de supervisión e informes, puede desarrollar sus propias herramientas de supervisión e informes además de los eventos que se generan en cada punto de conexión cuando se desencadenan reglas de ASR (por ejemplo, reenvío de eventos).
 
 > [!TIP]
@@ -82,7 +79,7 @@ Se recomienda usar reglas de ASR con una licencia Windows E5 (o SKU de licencia 
 Puede habilitar las reglas de reducción de superficie expuesta a ataques mediante cualquiera de estos métodos:
 
 - [Microsoft Intune](#intune)
-- [Administración de dispositivos móvil (MDM)](#mdm)
+- [Administración de dispositivos móviles (MDM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Directiva de grupo](#group-policy)
 - [PowerShell](#powershell)
@@ -201,7 +198,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuración del URI de OMA en el portal del centro de administración de Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. Seleccione **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realice una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, seleccione **Siguiente**.
    - O bien, seleccione **Siguiente.**
@@ -271,9 +268,9 @@ Ejemplo:
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. En Microsoft Endpoint Configuration Manager, vaya a **Activos y cumplimiento** \> **Endpoint Protection** \> **Windows Defender Protección contra vulnerabilidades de seguridad**.
+1. En Microsoft Endpoint Configuration Manager, vaya a **Activos y cumplimiento** \> **Endpoint Protection** \> **Protección contra vulnerabilidades de seguridad de Windows Defender**.
 
-2. Seleccione **Inicio** \> **Crear directiva de Protección contra vulnerabilidades de seguridad**.
+2. Seleccione **Inicio** \> **Crear directiva de protección contra vulnerabilidades**.
 
 3. Escriba un nombre y una descripción, seleccione **Reducción de superficie expuesta a ataques** y seleccione **Siguiente**.
 

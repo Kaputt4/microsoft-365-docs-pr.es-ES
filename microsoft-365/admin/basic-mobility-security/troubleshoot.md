@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Pruebe estos pasos para realizar un seguimiento de los problemas básicos de movilidad y seguridad.
-ms.openlocfilehash: c8c4fe674ff3a803659223a004e304a5779a83d7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 1b1b7d67eb07c67c320554c1d64701983da30e15
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780745"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636072"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Solución de problemas de movilidad y seguridad básicas
 
@@ -35,9 +35,9 @@ Para empezar, compruebe lo siguiente:
 
 - Cambie a una red WIFI o de telefonía móvil diferente en el dispositivo.
 
-- Para dispositivos Android o iOS, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo. 
+- Para Android o iOS dispositivos, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo. 
 
-## <a name="ios-phone-or-tablet"></a>Teléfono o tableta iOS
+## <a name="ios-phone-or-tablet"></a>iOS teléfono o tableta
 
 - Asegúrese de que ha configurado un certificado APNs. Para obtener más información, consulte [Creación de un certificado de APNs para dispositivos iOS](create-an-apns-certificate-for-ios-devices.md).
 
@@ -63,9 +63,9 @@ Para empezar, compruebe lo siguiente:
     
 - A menos que tenga Azure Active Directory Premium, asegúrese de que el usuario elija **Inscribirse en Administración de dispositivos solo en** lugar de elegir **Conectar**.
 
-## <a name="android-phone-or-tablet"></a>Teléfono o tableta Android
+## <a name="android-phone-or-tablet"></a>Android teléfono o tableta
 
-- Asegúrese de que el dispositivo ejecuta Android.
+- Asegúrese de que el dispositivo se está ejecutando Android.
 
 - Asegúrese de que Chrome está actualizado y está establecido como el explorador predeterminado.
 

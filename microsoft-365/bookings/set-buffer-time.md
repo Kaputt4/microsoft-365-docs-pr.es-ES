@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Establezca el tiempo de búfer antes o después de una cita en Microsoft Bookings para permitir tiempo para limpiar o restablecer el equipo.
-ms.openlocfilehash: 0a27cc287ed7999f1ba1cc1b017c2f54e126c0b9
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022391"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637591"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Establecer el tiempo de búfer en Microsoft Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 Algunas de las citas pueden requerir tiempo antes o después de reunirse con el cliente para configurar, limpiar o restablecer la habitación y el equipo. O bien, si está en camino entre las citas del cliente, es posible que necesite tiempo para asegurarse de que usted y su equipo puedan viajar entre citas sin hacer que el cliente espere.
 

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Después de guardar y acceder a todos los datos de usuario de un empleado anterior, puede eliminar la cuenta del empleado anterior en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436281"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636182"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado
 
@@ -43,7 +43,7 @@ Después de haber guardado y accedido a todos los datos de usuario del antiguo e
 2. Seleccione el nombre del empleado que desea eliminar.
 3. En el nombre del usuario, seleccione **Eliminar usuario**. Elija las opciones que desee para este usuario y, a continuación, seleccione **Eliminar usuario**. Si ya ha dado a otro usuario acceso al correo electrónico de este usuario y OneDrive, no tiene que volver a hacerlo aquí.
 
-Al eliminar un usuario, la cuenta se vuelve inactiva durante aproximadamente 30 días. Tiene tiempo hasta ese momento para restaurar la cuenta antes de que se elimine de forma permanente.
+Al eliminar un usuario, la cuenta se vuelve inactiva durante aproximadamente 30 días. Hasta entonces, tiene que restaurar la cuenta antes de que se elimine permanentemente.
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>Inspección: Eliminación de la cuenta de usuario de un antiguo empleado
 
@@ -70,8 +70,8 @@ Aquí tiene información sobre cómo quitar a un empleado del correo electrónic
 |Qué puede hacer|Cómo debe hacerlo|
 |:-----|:-----|
 |Cerrar una sesión (de Outlook en la Web, Outlook, Exchange Active Sync, etc.) y forzar el inicio de una sesión nueva|Restablecer la contraseña|
-|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)|Deshabilite la cuenta. Por ejemplo, (en el centro de administración de Exchange o mediante PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Cerrar la sesión de un protocolo en particular (como ActiveSync)|Deshabilite el protocolo. Por ejemplo, (en el centro de administración de Exchange o mediante PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)|Deshabilite la cuenta. Por ejemplo, en el centro de administración de Exchange o mediante PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Cerrar la sesión de un protocolo en particular (como ActiveSync)|Deshabilite el protocolo. Por ejemplo, en el centro de administración de Exchange o mediante PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 Las operaciones anteriores se pueden realizar en tres lugares:

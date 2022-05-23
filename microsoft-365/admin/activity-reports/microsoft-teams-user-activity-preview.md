@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad del usuario Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 691c6999e97350184fbe72e28f2b380dcf7b41d9
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: adf9952f27c5605c54f6fa31710b44519cf8684c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467556"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636556"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -42,7 +42,7 @@ Puede ver la actividad del usuario en el informe de Teams eligiendo la pestaña 
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams informe de actividad del usuario: elija columnas.](../../media/user-activity-columns.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para **el tiempo de audio**, **el tiempo de vídeo** y el **tiempo de uso compartido de pantalla** sigue el formato de duración ISO8601.
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para filtrar y ordenar, deberá exportar los datos. El formato exportado para **el tiempo de audio**, **el tiempo de vídeo** y el **tiempo de uso compartido de pantalla** sigue el formato de duración ISO8601.
 
 Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 

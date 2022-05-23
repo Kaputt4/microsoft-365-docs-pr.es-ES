@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Cambie la configuración de idioma y zona horaria en Microsoft Bookings. Si las reservas se crean en un momento incorrecto, es posible que Bookings se establezca para la zona horaria incorrecta.
-ms.openlocfilehash: 342b83bf03daa237883a3f8e947306908fbae17d
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 13ff4f81bae50e390f8f7475147e335bf010683f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022479"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637569"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Establecer zonas horarias y de idioma en Microsoft Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 Si usa Microsoft Bookings y las reservas se crean en el momento incorrecto, es posible que sea necesario cambiar la configuración de la zona horaria. Del mismo modo, si algunas reservas están en el idioma incorrecto, es posible que deba cambiar la configuración del idioma.
 

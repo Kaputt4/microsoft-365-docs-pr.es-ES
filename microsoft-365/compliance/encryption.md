@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido se cifra en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 5f866931eba3078074b47c9cc8c5ed310489b9bb
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5b7b0f9fecbcbb6150eb56e19757c954aeb3e812
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319273"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637481"
 ---
 # <a name="encryption"></a>Cifrado
 
@@ -57,7 +57,7 @@ Con Office 365, varias capas y tipos de cifrado funcionan juntos para proteger l
 |:-----|:-----|:-----|
 |Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, Office documentos guardados en un equipo, tableta o teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de datos de Microsoft. BitLocker también se puede usar en máquinas cliente, como Windows equipos y tabletas.  <br/> Administrador de claves distribuidas (DKM) en centros de datos de Microsoft  <br/> Clave de cliente para Microsoft 365  <br/> |[Centro de TI de Windows: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: Cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Cifrado de servicio con clave de cliente](customer-key-overview.md) <br/> |
 |Archivos en tránsito entre usuarios. Estos archivos pueden incluir Office documentos o SharePoint elementos de lista compartidos entre los usuarios.  <br/> |TLS para archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype Empresarial online: seguridad y archivado](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|Correo electrónico en tránsito entre destinatarios. Este correo electrónico incluye el correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Microsoft Purview con Azure Rights Management, S/MIME y TLS para correo electrónico en tránsito  <br/> |[Cifrado de essage](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|Correo electrónico en tránsito entre destinatarios. Este correo electrónico incluye el correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Microsoft Purview con Azure Rights Management, S/MIME y TLS para correo electrónico en tránsito  <br/> |[Cifrado de mensajes](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |Chats, mensajes y archivos en tránsito entre destinatarios mediante Microsoft Teams. <br/> |Teams usa TLS y MTLS para cifrar mensajes instantáneos. El tráfico multimedia se cifra mediante RTP seguro (SRTP). Teams usa algoritmos compatibles con FIPS (Estándar federal de procesamiento de información) para los intercambios de claves de cifrado. <br/> |[Cifrado para Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>¿Qué ocurre si necesito más control sobre el cifrado para cumplir los requisitos de seguridad y cumplimiento?

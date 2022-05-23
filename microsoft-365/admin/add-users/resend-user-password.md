@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 'Vuelva a enviar el correo electrónico de notificación a un nuevo usuario en Microsoft 365 restableciendo la contraseña del usuario si no recibe el correo electrónico original con su nueva contraseña. '
-ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436303"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636160"
 ---
-# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario Microsoft 365: Ayuda del administrador
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario de Microsoft 365: ayuda Administración
 
 En este artículo se explica cómo volver a enviar el correo electrónico de notificación a un nuevo usuario en Office 365. Esto puede ocurrir cuando se crea un nuevo usuario y no recibe un correo electrónico con su nueva contraseña. Para ello, restablezca la contraseña del usuario.
 
@@ -45,7 +45,7 @@ Debe ser [administrador global o administrador de contraseñas](about-admin-role
 
 3. Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
 
-4. Escriba una dirección de correo electrónico a la que el usuario pueda acceder para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.
+4. Escriba una dirección de correo electrónico a la que el usuario pueda acceder, para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de actividad de grupos de Yammer para obtener más información sobre el número de grupos de Yammer que se crean y usan en su organización y su actividad.
-ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 810899c47fed09325341c0b78dd5958dc63a5713
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467150"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636204"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>informes de Microsoft 365 en el centro de administración: informe de actividad de grupos de Yammer
 
@@ -42,7 +42,7 @@ Para ver las actividades de grupos en el informe de Yammer, elija la pestaña **
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer informe de actividad de grupos: elija columnas.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para filtrar y ordenar, deberá exportar los datos. 
 
 Puede visualizar el informe **Actividad de grupos de Yammer** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
@@ -53,7 +53,7 @@ Puede visualizar el informe **Actividad de grupos de Yammer** para ver las tende
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
 |Deleted  <br/> |Número de grupos de Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
-|Conectado a Office 365  <br/> |Indica si el grupo de Yammer también es un grupo de Microsoft 365. <br/> |
+|Conectado a Office 365  <br/> |Indica si el grupo de Yammer también es un grupo Microsoft 365. <br/> |
 |Fecha de la última actividad (UTC)  <br/> | La última fecha en que el grupo leyó, publicó o gustó un mensaje.  <br/> |
 |Members  <br/> | Número de miembros del grupo.  <br/> |
 |Publicado  <br/> |Número de mensajes publicados en el grupo de Yammer durante el período de informes. <br/>|

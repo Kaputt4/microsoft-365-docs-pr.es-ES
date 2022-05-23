@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Establezca el horario laboral y la disponibilidad de empleados en Microsoft Bookings.
-ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023335"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637260"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Horario laboral de empleados en Microsoft Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 Establecer el horario laboral de los empleados garantiza que su disponibilidad se muestre con precisión cuando los clientes intenten reservarlas. De forma predeterminada, las horas de trabajo de cada uno de los empleados coinciden con las horas de trabajo que ha establecido en la aplicación Microsoft Bookings. Consulte la sección "Establecer el horario laboral" de [Introducción a la información empresarial](enter-business-information.md).
 

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre la nueva característica de asignación.
 ms.date: 05/12/2022
-ms.openlocfilehash: c251d653aa95fa489a2482ae0c9ef80c9851fc4b
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403324"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636094"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos de asignación
 
@@ -54,4 +54,4 @@ Debe ser un administrador global o de licencias para empezar a usar una asignaci
 
 ## <a name="getting-started"></a>Introducción
 
-La característica de asignación está disponible en una versión preliminar privada solo para un pequeño número de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+La característica de asignación está disponible en una versión preliminar privada solo para algunos clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

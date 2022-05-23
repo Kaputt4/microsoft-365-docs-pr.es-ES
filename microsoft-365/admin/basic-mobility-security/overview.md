@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administre y proteja los dispositivos móviles conectados a su organización Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435709"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636138"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Introducción a la movilidad y la seguridad básicas para Microsoft 365
 
-Puede administrar y proteger dispositivos móviles cuando estén conectados a su organización Microsoft 365 mediante Basic Mobility and Security. Los dispositivos móviles, como los smartphones y las tabletas, que se usan para tener acceso a elementos de trabajo como el correo electrónico, el calendario, los contactos y los documentos, desempeñan un papel muy importante a la hora de garantizar que los empleados puedan realizar su trabajo en cualquier momento y en cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar Basic Mobility and Security para establecer directivas de seguridad de dispositivos y reglas de acceso, y para borrar los dispositivos móviles si se pierden o se roban.
+Puede administrar y proteger dispositivos móviles cuando estén conectados a su organización Microsoft 365 mediante Basic Mobility and Security. Los dispositivos móviles como teléfonos inteligentes y tabletas que se usan para acceder al correo electrónico del trabajo, el calendario, los contactos y los documentos desempeñan un papel importante en asegurarse de que los empleados realizan su trabajo en cualquier momento, desde cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar Basic Mobility and Security para establecer directivas de seguridad de dispositivos y reglas de acceso, y para borrar los dispositivos móviles si se pierden o se roban.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuración básica de movilidad y seguridad.":::
 

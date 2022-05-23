@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a la característica Bookings en Microsoft 365.
-ms.openlocfilehash: 22e42322cc46b8b2591c9058c2595896adc09f9b
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 4100e5b74561f49868271a2be15521d73c75f92c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022545"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637723"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Obtener acceso a Microsoft Bookings
-
-> [!NOTE]
-> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
 En este tema se describe cómo obtener acceso a Bookings por primera vez. También le indica cómo activar o desactivar Bookings en su organización. También se explica cómo puede asignar licencias a los usuarios para que puedan acceder y usar Bookings.
 
