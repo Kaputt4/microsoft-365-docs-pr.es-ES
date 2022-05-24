@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Obtenga más información sobre los roles de administrador, como el rol de administrador de servicios, que se asignan a funciones empresariales específicas y conceden permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467128"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636248"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Acerca de los roles de administrador en el Centro de administración de Microsoft 365
 
@@ -98,11 +98,11 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 
-Si está trabajando con un partner de Microsoft, puede asignarle roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios de su empresa, o bien de la suya propia. Es posible que usted quiera que lo hagan si, por ejemplo, son ellos quienes configuran y administran su organización en línea por usted.
+Si está trabajando con un asociado de Microsoft, puede asignarles roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios en sus propias empresas o bien en la suya. Es posible que quiera que lo hagan, por ejemplo, si están configurando y administrando su organización en línea por usted.
   
 Un partner puede asignar estos roles: 
   
-- **Agente de administración** Tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
+- **Agente de administración** Privilegios equivalentes a un administrador global, excepto para administrar la autenticación multifactor mediante el Centro de partners.
 
 - **Agente del departamento de soporte técnico** Tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 

@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: El Centro de administración de Microsoft 365 permite administrar algunos roles de Microsoft Intune, que se asignan a funciones empresariales y conceden permisos para realizar tareas específicas.
-ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 61c73ea49b132dee12839112bdc08624a750989f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436765"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636270"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Roles de administrador de Intune en el Centro de administración de Microsoft 365
 
@@ -47,11 +47,11 @@ En el Centro de administración de Microsoft 365, puede ir a **Roles** y selecci
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 
-Si está trabajando con un Microsoft partner, puede asignarles roles de administrador. A su vez, pueden asignar a los usuarios de su empresa (o de la suya propia) roles de administrador. Es posible que quiera que lo hagan, por ejemplo, si están configurando y administrando su organización en línea por usted.
+Si está trabajando con un asociado de Microsoft, puede asignarles roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios en sus propias empresas o bien en la suya. Es posible que quiera que lo hagan, por ejemplo, si están configurando y administrando su organización en línea por usted.
   
 Un partner puede asignar estos roles: 
   
-- Administración completa, que tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
+- Administración completa, que tiene privilegios equivalentes a un administrador global, excepto para administrar la autenticación multifactor a través del Centro de partners.
 
 - Administración limitada, que tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 
