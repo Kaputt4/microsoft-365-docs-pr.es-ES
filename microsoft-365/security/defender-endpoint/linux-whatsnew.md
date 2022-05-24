@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 385b139390192d172b3bbbcbefd5efc2b793d4ab
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c58c447a4aed08af48576b461a638c1cd43aca83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173503"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649251"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 
@@ -28,6 +28,15 @@ ms.locfileid: "65173503"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016880-30122042168800"></a>101.68.80 (30.122042.16880.0)
+
+- Se ha agregado compatibilidad con la versión `2.6.32-754.47.1.el6.x86_64` del kernel cuando se ejecuta en RHEL 6.
+- En RHEL 6, el producto ahora se puede instalar en dispositivos que ejecutan Unbreakable Enterprise Kernel (UEK)
+- Se ha corregido un problema por el que el nombre del proceso a veces se mostraba incorrectamente como `unknown` cuando se ejecutaba `mdatp diagnostic real-time-protection-statistics`
+- Se ha corregido un error por el que el producto a veces detectaba archivos incorrectamente dentro de la carpeta de cuarentena.
+- Se ha corregido un problema por el que la `mdatp` herramienta de línea de comandos no funcionaba cuando `/opt` se montaba como un vínculo temporal.
+- Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1016577-30122032165770"></a>101.65.77 (30.122032.16577.0)
 

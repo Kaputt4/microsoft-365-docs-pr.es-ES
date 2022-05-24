@@ -20,14 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974331"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649447"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -172,7 +174,7 @@ Actualmente, exponemos la ubicación de entrega en la cuadrícula de correo elec
 
 ### <a name="additional-actions"></a>Acciones adicionales
 
-Se aplicaron *acciones adicionales* después de la entrega del correo electrónico. Pueden incluir *ZAP*, *corrección manual* (acción realizada por un administrador, como la eliminación temporal), *entrega dinámica* y *reprocesamiento* (para un correo electrónico que se detectó de forma retroactiva como correcto).
+Se aplicaron *acciones adicionales* después de la entrega del correo electrónico. Pueden incluir *ZAP*, *corrección manual* (acción realizada por un Administración como la eliminación temporal), *entrega dinámica* y *reprocesamiento* (para un correo electrónico que se detectó de forma retroactiva como correcto).
 
 > [!NOTE]
 > Como parte de los cambios pendientes, el valor "Quitado por ZAP" que aparece actualmente en el filtro Acción de entrega desaparece. Tendrá una manera de buscar todo el correo electrónico con el intento ZAP a través de **acciones adicionales**.
@@ -289,8 +291,8 @@ Podrá ver el GUID y el nombre de las reglas de transporte que se aplicaron al m
 >
 > - Solo EXO: prevención de pérdida de datos: todos
 > - Solo EXO: O365SupportViewConfig: todos
-> - Microsoft Azure Active Directory o EXO: administrador de seguridad: todos
-> - AAD o EXO: Lector de seguridad: todos
+> - Microsoft Azure Active Directory o EXO: Administración de seguridad: todos
+> - AAD o EXO: lector de seguridad: todos
 > - Solo EXO: reglas de transporte: todas
 > - Solo EXO: configuración de View-Only: todos
 >

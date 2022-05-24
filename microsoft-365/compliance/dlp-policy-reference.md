@@ -19,16 +19,18 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714007"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648616"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
-Las directivas de prevención de pérdida de datos (DLP) tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP) tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 
 ## <a name="policy-templates"></a>Plantillas de directiva 
 
@@ -108,8 +110,8 @@ Una directiva DLP puede buscar y proteger elementos que contienen información c
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |datos en reposo </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
 |Microsoft Defender for Cloud Apps   | instancia de aplicación en la nube       |datos en reposo         | - [Uso de directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Dispositivos  |usuario o grupo         |datos en reposo </br>  datos en uso </br>  datos en movimiento         |- [Más información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Comenzar con prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configuración del proxy de dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repositorios locales (recursos compartidos de archivos y SharePoint)    |Repositorio         | datos en reposo         | - [Más información sobre el analizador local de prevención de pérdida de datos de Microsoft 365](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Comenzar con el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Dispositivos  |usuario o grupo         |datos en reposo </br>  datos en uso </br>  datos en movimiento         |- [Más información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md) </br>- [Comenzar con prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md) </br>- [Configuración del proxy de dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repositorios locales (recursos compartidos de archivos y SharePoint)    |Repositorio         | datos en reposo         | - [Más información sobre el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md) </br> - [Comenzar con el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| Espacios | datos en uso | No|
 
 Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
@@ -431,7 +433,7 @@ Con la opción **Actividades de archivo para todas las aplicaciones** , seleccio
 
 - **Copiar en el portapapeles**
 - **Copia en una unidad extraíble USB** 
-- **Copiar en un recurso compartido de red**
+- **Copia en un recurso compartido de red**
 - **Print**
 - **Copiar o mover mediante una aplicación de Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
@@ -483,7 +485,7 @@ Si selecciona dos o más ubicaciones no Exchange a las que se va a aplicar la di
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
-AND
+Y
 
 - todas las acciones para ubicaciones que no son Exchange 
 
@@ -539,7 +541,7 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 
 Puede habilitar o deshabilitar las notificaciones de usuario para varias aplicaciones de Microsoft; consulte [Referencia de sugerencias de directivas de prevención de pérdida de datos](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference).
 
-- Puede habilitar o deshabilitar **notificar a los usuarios en Office 365 servicio** con una sugerencia de directiva.
+- Puede habilitar o deshabilitar las notificaciones con una sugerencia de directiva.
     - notificaciones por correo electrónico al usuario que envió, compartió o modificó por última vez el contenido O
     - notificar a personas específicas
 
@@ -646,7 +648,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Cuando una regla coincide, puede enviar un informe de incidentes a su responsable de cumplimento normativo (o a la persona que elija) con los detalles del evento. El informe incluye información sobre el elemento coincidente, el contenido real que coincidió con la regla y el nombre de la persona que modificó por última vez el contenido. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
 
-DLP alimenta la información de incidentes a otros servicios de protección de la información de Microsoft 365, como [La administración de riesgos internos en Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Para obtener información sobre incidentes en la administración de riesgos internos, debe establecer el nivel de gravedad **informes de incidentes** en **Alto**.
+DLP alimenta la información de incidentes a otros servicios de protección de la información Microsoft Purview, como la [administración de riesgos internos](insider-risk-management.md). Para obtener información sobre incidentes en la administración de riesgos internos, debe establecer el nivel de gravedad **informes de incidentes** en **Alto**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -660,7 +662,7 @@ DLP examina el correo electrónico de forma diferente a SharePoint elementos en 
 
 Si tiene varias reglas en una directiva, puede usar las **opciones Adicionales** para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

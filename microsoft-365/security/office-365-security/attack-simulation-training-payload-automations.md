@@ -1,5 +1,5 @@
 ---
-title: Automatización de carga útil para el aprendizaje de simulación de ataques
+title: Automatizaciones de carga útil para el entrenamiento de simulación de ataques
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,58 +10,60 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Los administradores pueden aprender a usar las automatizacións de carga (recolección de carga) para recopilar e iniciar simulaciones automatizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
+description: Los administradores pueden aprender a usar automatizaciones de carga útil (recopilación de carga) para recopilar e iniciar simulaciones automatizadas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5b008dc25ee3b705f212b1fac1bf3779f1de8bda
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468443"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647521"
 ---
-# <a name="payload-automations-for-attack-simulation-training"></a>Automatización de carga útil para el aprendizaje de simulación de ataques
+# <a name="payload-automations-for-attack-simulation-training"></a>Automatizaciones de carga útil para el entrenamiento de simulación de ataques
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En el aprendizaje de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para el Plan 2 de Office 365, las automatizacións de carga (también conocidas como recolección de _carga útil)_ recopilan información de mensajes de suplantación de identidad reales notificados por usuarios de su organización. Aunque el número de estos mensajes es probablemente bajo en la organización, puede especificar las condiciones que debe buscar en los ataques de suplantación de identidad (por ejemplo, destinatarios, técnica de ingeniería social, información del remitente, etc.). A continuación, el entrenamiento de simulación de ataque imitará los mensajes y cargas que se usan en el ataque para iniciar automáticamente simulaciones inofensivas para usuarios dirigidos.
+En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las automatizaciones de carga útil (también conocidas como _recopilación de carga_) recopilan información de los mensajes de suplantación de identidad reales que los usuarios de su organización notificaron. Aunque es probable que el número de estos mensajes sea bajo en su organización, puede especificar las condiciones que se deben buscar en los ataques de suplantación de identidad (por ejemplo, destinatarios, técnica de ingeniería social, información del remitente, etc.). A continuación, el entrenamiento de simulación de ataque imitará los mensajes y las cargas que se usan en el ataque para iniciar automáticamente simulaciones inofensivas a los usuarios de destino.
 
 Para crear una automatización de carga, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Correo electrónico &** \>  \> la pestaña Aprendizaje de simulación de **ataques de ataques.**
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a la pestaña Automatizaciones de carga de entrenamiento de **simulación** \> de **ataques** por **correo electrónico & colaboración**\>.
 
-   Para ir directamente a la **pestaña Automatización de carga** , use <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
+   Para ir directamente a la pestaña **Automatizaciones de carga** , use <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
 
-2. En la **pestaña Automatización de carga** , seleccione ![Crear icono de automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
+2. En la pestaña **Automatizaciones de carga** , seleccione ![el icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación en la pestaña Automatización de carga en aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender carga" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación de la pestaña Automatizaciones de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
-3. Se abrirá el Asistente para creación. El resto de este artículo describe las páginas y la configuración que contienen.
+3. Se abre el asistente para la creación. En el resto de este artículo se describen las páginas y la configuración que contienen.
 
 > [!NOTE]
-> En cualquier momento durante el asistente para la creación, puede  hacer clic en Guardar y cerrar para guardar el progreso y continuar configurando la automatización de carga más adelante. Puede elegir dónde lo dejó seleccionando la automatización de carga en la pestaña Automatización de  carga y, a continuación, haciendo clic en ![Editar icono de automatización.](../../media/m365-cc-sc-edit-icon.png) **Editar automatización**.
+> En cualquier momento durante el asistente para la creación, puede hacer clic en **Guardar y cerrar** para guardar el progreso y seguir configurando la automatización de la carga más adelante. Puede seleccionar dónde lo dejó seleccionando la automatización de carga en la pestaña **Automatizaciones** de carga y, a continuación, haga clic en ![el icono Editar automatización.](../../media/m365-cc-sc-edit-icon.png) **Edite la automatización**.
 
-## <a name="automation-name"></a>Nombre de automatización
+## <a name="automation-name"></a>Nombre de automation
 
-En la **página Nombre de** automatización, configure las siguientes opciones:
+En la página **Nombre de Automation**, configure los siguientes valores:
 
 - **Nombre**: escriba un nombre descriptivo único para la automatización de carga.
-- **Descripción**: escriba una descripción detallada opcional para la automatización de carga.
+- **Descripción**: escriba una descripción detallada opcional para la automatización de la carga.
 
 Cuando termine, haga clic en **Siguiente**.
 
 ## <a name="run-conditions"></a>Condiciones de ejecución
 
-En la **página Condiciones de** ejecución, seleccione las condiciones del ataque de suplantación de identidad real que determina cuándo se ejecutará la automatización.
+En la página **Condiciones de ejecución** , seleccione las condiciones del ataque de suplantación de identidad real que determina cuándo se ejecutará la automatización.
 
 Puede usar cada condición solo una vez. Varias condiciones usan lógica AND (\<Condition1\> y \<Condition2\>).
 
-![Agregar icono de condición.](../../media/m365-cc-sc-create-icon.png) **Agregar condición**.
+![Icono Agregar condición.](../../media/m365-cc-sc-create-icon.png) **Agregar condición**.
 
-- **No. de usuarios destinados a la campaña**: Configure las siguientes opciones:
-  - **Igual a**, **Menor que**, **Mayor que**, **Menor o igual** que, o **Mayor o igual que**.
-  - **Escriba valor**: el número de usuarios a los que se ha dirigido la campaña de suplantación de identidad.
-- **Campañas con una técnica de phishing específica**: seleccione uno de los valores disponibles:
-  - **Recolección de credenciales**
+- **No. de los usuarios destinados a la campaña**: Configure los siguientes valores:
+  - **Igual que**, **Menor que**, **Mayor que**, **Menor o igual que**, o **Mayor o igual que**.
+  - **Valor de entrada**: el número de usuarios a los que se ha dirigido la campaña de suplantación de identidad (phishing).
+- **Campañas con una técnica de phish específica**: seleccione uno de los valores disponibles:
+  - **Cosecha de credenciales**
   - **Datos adjuntos de malware**
   - **Vínculo en datos adjuntos**
   - **Vínculo a malware**
@@ -75,9 +77,9 @@ Para quitar una condición después de agregarla, haga clic en ![Icono Quitar.](
 
 Cuando termine, haga clic en **Siguiente**.
 
-## <a name="review-automation"></a>Revisar la automatización
+## <a name="review-automation"></a>Revisión de la automatización
 
-En la **página Revisar automatización** , puede revisar los detalles de la automatización de carga.
+En la página **Revisar automatización** , puede revisar los detalles de la automatización de la carga.
 
 Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Volver atrás** o seleccionar la página específica del asistente.
 

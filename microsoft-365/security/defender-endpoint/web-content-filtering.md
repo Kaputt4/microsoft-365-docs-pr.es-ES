@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535456"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648577"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -56,7 +54,7 @@ Antes de probar esta característica, asegúrese de cumplir los requisitos descr
 
 | Requisito | Descripción |
 |:---|:---|
-| Suscripción  | La suscripción debe incluir una de las siguientes opciones:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Seguridad de Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender para punto de conexión Plan 1 o Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) |
+| Suscripción  | La suscripción debe incluir una de las siguientes opciones:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Seguridad de Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender para punto de conexión Plan 1 o Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Acceso al portal | Debe tener acceso al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. |
 | Sistema operativo | Los dispositivos de la organización deben ejecutar uno de los siguientes sistemas operativos con las [últimas actualizaciones de antivirus o antimalware](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>- Windows 10 actualización de aniversario (versión 1607) o posterior |
 | Protección relacionada | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) y [la protección de red](network-protection.md) deben estar habilitadas en los dispositivos de la organización. |
@@ -177,7 +175,7 @@ Para agregar una nueva directiva, siga estos pasos:
 4. Especifique el ámbito de la directiva. Seleccione los grupos de dispositivos para especificar dónde aplicar la directiva. Solo se impedirá que los dispositivos de los grupos de dispositivos seleccionados accedan a sitios web de las categorías seleccionadas.
 
    > [!IMPORTANT]
-   > Si usa Defender para empresas, la directiva de filtrado de contenido web se aplica a todos los usuarios de forma predeterminada. No se aplica el ámbito.
+   > Si usa Microsoft 365 Empresa Premium o Defender para empresas, la directiva de filtrado de contenido web se aplica a todos los usuarios de forma predeterminada. No se aplica el ámbito.
 
 5. Revise el resumen y guarde la directiva. La actualización de la directiva puede tardar hasta 2 horas en aplicarse a los dispositivos seleccionados.
 
@@ -188,7 +186,7 @@ Para agregar una nueva directiva, siga estos pasos:
 
 ## <a name="end-user-experience"></a>Experiencia del usuario final
 
-La experiencia de bloqueo para exploradores compatibles con terceros la proporciona Network Protection, que proporciona un mensaje de nivel de sistema que notifica al usuario una conexión bloqueada. Para obtener una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
+La experiencia de bloqueo para exploradores compatibles con terceros se proporciona mediante la protección de red, que proporciona un mensaje de nivel de sistema que notifica al usuario una conexión bloqueada. Para obtener una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>Permitir sitios web específicos
 
@@ -204,7 +202,7 @@ Para definir un indicador personalizado, siga estos pasos:
 
 ### <a name="dispute-categories"></a>Categorías de disputas
 
-Si encuentra un dominio que se ha clasificado incorrectamente, puede disputar la categoría directamente desde el portal.
+Si encuentra un dominio que se ha clasificado incorrectamente, puede disputar la categoría directamente desde el portal de Microsoft 365 Defender.
 
 Para disputar la categoría de un dominio, vaya a **Informes** \> Dominios de **detalles** \> de filtrado de contenido **web de protección** \> web **.** En la pestaña dominios de los informes de filtrado de contenido web, verá los puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
 
@@ -252,11 +250,13 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 Solo se admite Microsoft Edge si la configuración del sistema operativo del dispositivo es Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protección de red solo se admite en el modo inspeccionar en dispositivos de servidor, que es responsable de proteger el tráfico entre exploradores de terceros compatibles.
 
-Solo se admiten Microsoft Edge y Protección de red no se admite en Windows 10 hosts de sesión múltiple de Azure Virtual Desktop.
+Solo se admiten Microsoft Edge y no se admite la protección de red en Windows 10 hosts de sesión múltiple de Azure Virtual Desktop.
 
-Protección de red no admite actualmente la inspección SSL, lo que podría dar lugar a que algunos sitios estén permitidos por el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya producido el protocolo de enlace TLS y a la imposibilidad de analizar determinadas redirecciones.  Esto incluye redireccionamientos desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloque personalizado para la página de inicio de sesión para asegurarse de que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto podría bloquear su acceso a otros servicios asociados con el mismo sitio web. 
+La protección de red no admite actualmente la inspección SSL, lo que podría dar lugar a que algunos sitios se permitan mediante el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya producido el protocolo de enlace TLS y a la imposibilidad de analizar determinadas redirecciones.  Esto incluye redireccionamientos desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloque personalizado para la página de inicio de sesión para asegurarse de que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto podría bloquear su acceso a otros servicios asociados con el mismo sitio web. 
 
-## <a name="see-also"></a>Consulte también
+Si usa Microsoft 365 Empresa Premium o Microsoft Defender para Empresas, puede definir una directiva de filtrado de contenido web para su entorno. Esa directiva se aplicará a todos los usuarios de forma predeterminada.
+
+## <a name="see-also"></a>Recursos adicionales
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

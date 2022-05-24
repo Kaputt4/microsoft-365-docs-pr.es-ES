@@ -17,14 +17,20 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599329"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648247"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a:**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Las directivas de cuarentena (anteriormente _conocidas como etiquetas de cuarentena_) en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer en los mensajes en cuarentena en función de por qué se puso en cuarentena el mensaje.
 

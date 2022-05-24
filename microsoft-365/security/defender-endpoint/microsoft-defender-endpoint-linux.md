@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705107"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648335"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -37,11 +37,11 @@ ms.locfileid: "64705107"
 En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft Defender para punto de conexión en Linux.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para punto de conexión en Linux genere problemas de rendimiento y efectos secundarios impredecibles. Si la protección de puntos de conexión que no son de Microsoft es un requisito absoluto en su entorno, puede aprovechar con seguridad la funcionalidad EDR de Defender para punto de conexión en Linux después de configurar la funcionalidad antivirus para que se ejecute en [modo pasivo](linux-preferences.md#enforcement-level-for-antivirus-engine).
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para punto de conexión en Linux genere problemas de rendimiento y efectos secundarios impredecibles. Si la protección de puntos de conexión que no son de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de defender para punto de conexión en Linux EDR después de configurar la funcionalidad antivirus para que se ejecute en [modo pasivo](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Instalación de Microsoft Defender para punto de conexión en Linux
 
-Microsoft Defender para punto de conexión para Linux incluye funcionalidades de detección y respuesta de puntos de conexión y antimalware (EDR). 
+Microsoft Defender para punto de conexión para Linux incluye funcionalidades antimalware y detección y respuesta de puntos de conexión (EDR). 
 
 
 ### <a name="prerequisites"></a>Requisitos previos
@@ -100,7 +100,7 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
     > Las distribuciones y versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
 
 - Lista de versiones de kernel admitidas
-  - Versión mínima del kernel 3.10.0-327 (para todas las distribuciones de Linux admitidas mencionadas anteriormente excepto Red Hat Enterprise Linux 6 y CentOS 6)
+  - Versión mínima del kernel 3.10.0-327 (para todas las distribuciones de Linux admitidas mencionadas anteriormente, excepto Red Hat Enterprise Linux 6 y CentOS 6)
   - La `fanotify` opción kernel debe estar habilitada
   - Red Hat Enterprise Linux 6 y CentOS 6:
     - Para la versión 6.7: 2.6.32-573.*
@@ -132,11 +132,12 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
+       - 2.6.32-754.47.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
  > [!NOTE]
- > Una vez publicada una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo a soporte técnico. Las versiones anteriores a las que aparecen en esta sección se proporcionan solo para soporte técnico de actualización.
+ > Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a las que aparecen en esta sección se proporcionan solo para soporte técnico de actualización.
 
 
   > [!CAUTION]
@@ -181,7 +182,7 @@ Después de habilitar el servicio, es posible que tenga que configurar la red o 
 
 ### <a name="configuring-exclusions"></a>Configuración de exclusiones
 
-Al agregar exclusiones al Antivirus de Microsoft Defender, debe tener en cuenta los errores comunes de [exclusión del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+Al agregar exclusiones a Antivirus de Microsoft Defender, debe tener en cuenta [los errores comunes de exclusión por Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>Conexiones de red
 
@@ -223,7 +224,7 @@ Las instrucciones para configurar el producto en entornos empresariales están d
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Las aplicaciones comunes que se Microsoft Defender para punto de conexión pueden afectar
 
-Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para punto de conexión. Estas incluyen aplicaciones para escenarios de desarrollador como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta [los errores comunes de exclusión del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) . Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre exclusiones de antivirus de aplicaciones de terceros.
+Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para punto de conexión. Estas incluyen aplicaciones para escenarios de desarrollador como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta [los errores comunes de exclusión para Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus). Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre exclusiones de antivirus de aplicaciones de terceros.
 
 ## <a name="resources"></a>Recursos
 

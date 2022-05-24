@@ -17,14 +17,20 @@ ms.custom: ''
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 para identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286414"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647477"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a:**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Las etiquetas de usuario son identificadores de grupos específicos de usuarios en [Microsoft Defender para Office 365](defender-for-office-365.md). Hay dos tipos de etiquetas de usuario:
 
@@ -47,7 +53,7 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Informe de remitentes y destinatarios principales](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulación de ataque](attack-simulation-training.md#target-users)
 - [Vistas de campañas](campaigns.md)
-- [Envíos de administradores y usuarios](admin-submission.md)
+- [Administración y envíos de usuarios](admin-submission.md)
 - [Cuarentena](quarantine.md)
 - En el caso de las cuentas de prioridad, puede usar el [informe Problemas de correo electrónico para cuentas de prioridad](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) en el Centro de administración de Exchange (EAC).
 
@@ -61,7 +67,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 - Debe tener permisos asignados en el portal de Microsoft 365 Defender para poder realizar los procedimientos de este artículo:
   - Para crear, modificar y eliminar etiquetas de usuario personalizadas, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
-  - Para agregar y quitar miembros de la etiqueta de sistema Cuenta de prioridad, debe ser miembro de los grupos de roles **Administrador de seguridad** y **administrador Exchange**.
+  - Para agregar y quitar miembros de la etiqueta de sistema Cuenta de prioridad, debe ser miembro del administrador de **seguridad** y **Exchange Administración** grupos de roles.
   - Para agregar y quitar miembros de etiquetas de usuario personalizadas existentes, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las etiquetas de usuario, debe ser miembro de los grupos de roles **Lector global**, **Operador de seguridad** o **Lector de seguridad** .
 

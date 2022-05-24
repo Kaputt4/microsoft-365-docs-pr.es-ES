@@ -19,16 +19,14 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13b8aa5699c3d4031a364ceaf62b70e6b7236fda
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6c5b765b4eb4cbf49d31ee5ddb06fb0afe69c667
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649273"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Existen muchas herramientas que pueden usarse para supervisar el uso y transporte de datos personales. En este tema se describen tres herramientas que funcionan bien.
 

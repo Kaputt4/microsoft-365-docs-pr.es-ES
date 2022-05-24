@@ -17,16 +17,14 @@ ms.collection:
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80eff003ec75eba68d1b194fe83d216fa2d013c0
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974199"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648687"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para clientes que no envían correo a Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 El abuso de correo electrónico, correo electrónico no deseado y correos electrónicos fraudulentos (phishing) siguen sobrecargando todo el ecosistema de correo electrónico. Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha varias directivas y tecnologías para ayudar a proteger a nuestros usuarios. Sin embargo, Microsoft entiende que el correo electrónico legítimo no debería verse afectado negativamente. Por lo tanto, hemos establecido un conjunto de servicios para ayudar a los remitentes a mejorar su capacidad de entregar correo electrónico a Microsoft 365 usuarios mediante la administración proactiva de su reputación de envío.
 

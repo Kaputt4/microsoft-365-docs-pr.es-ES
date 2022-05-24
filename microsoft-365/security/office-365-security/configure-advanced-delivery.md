@@ -17,14 +17,16 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ca3b62bba9a22d8c7c9f3f37dc191d1f458b523
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647807"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,7 +45,7 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 - [Las alertas predeterminadas del sistema](/microsoft-365/compliance/alert-policies#default-alert-policies) no se desencadenan para estos escenarios.
 - [AIR y los clústeres de Defender para Office 365](office-365-air.md) omiten estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
-  - [Los envíos de administradores](admin-submission.md) generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administradores mostrará estos mensajes como una amenaza simulada.
+  - [Administración envíos](admin-submission.md) genera una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administradores mostrará estos mensajes como una amenaza simulada.
   - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad mediante el mensaje de informe [o los complementos de suplantación de identidad](enable-the-report-message-add-in.md) de informe, el sistema no generará una alerta, una investigación o un incidente. Los vínculos o archivos no se detonarán, pero el mensaje también se mostrará en la pestaña **Mensajes notificados** por el usuario de la página **Envíos** .
   - [Caja fuerte Vínculos en Defender para Office 365](safe-links.md) no bloquea ni detona las direcciones URL específicamente identificadas en estos mensajes al hacer clic. Las direcciones URL siguen encapsuladas, pero no se bloquean.
   - [Caja fuerte Datos adjuntos en Defender para Office 365](safe-attachments.md) no detona los datos adjuntos en estos mensajes.
@@ -52,13 +54,13 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 
 <sup>\*\*</sup> Puede omitir ZAP para malware mediante la creación de una directiva antimalware para el buzón de SecOps donde zap para malware está desactivado. Para obtener instrucciones, consulte [Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md).
 
-Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Las experiencias de administración mostrarán estos mensajes como debido a una invalidación del sistema de **simulación de suplantación de identidad (phishing)** o a una invalidación del sistema de **buzones de SecOps** . Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
+Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Administración experiencias mostrarán estos mensajes como debido a una invalidación del sistema de **simulación de suplantación de identidad (phishing)** o a una invalidación del sistema de **buzones de SecOps**. Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
 
-- [Explorador de amenazas/Detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md): el administrador puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad** o **Buzón de SecOps**.
-- La [página Entidad de correo electrónico del Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md): el administrador puede ver un mensaje permitido por la directiva de la organización mediante el **buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones** .
-- El [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report): el administrador puede filtrar por **ver los datos por invalidación del sistema** en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad (phishing). Para ver los mensajes permitidos por la invalidación del buzón de SecOps, puede seleccionar **desglose del gráfico por ubicación de entrega** en el menú desplegable **desglose del gráfico por motivo** .
+- [Explorador de amenazas/Detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad** o **Buzón de SecOps**.
+- La [página Entidad de correo electrónico del Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md): Administración puede ver un mensaje permitido por la directiva de la organización mediante **el buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones**.
+- El [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report): Administración puede filtrar por **ver los datos por invalidación del sistema** en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad (phishing). Para ver los mensajes permitidos por la invalidación del buzón de SecOps, puede seleccionar **desglose del gráfico por ubicación de entrega** en el menú desplegable **desglose del gráfico por motivo** .
 - [Búsqueda avanzada en Microsoft Defender para punto de conexión](../defender-endpoint/advanced-hunting-overview.md): la simulación de suplantación de identidad y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents.
-- [Vistas de campaña](campaigns.md): el administrador puede filtrar el **origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad (Phishing)** o **Buzón de SecOps**.
+- [Vistas de campaña](campaigns.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad (Phishing)** o **Buzón de SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -110,7 +112,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buz
      > [!NOTE]
      > Use el dominio de la `5321.MailFrom` dirección (también conocida como dirección **MAIL FROM** , remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje **o** un dominio de Correo identificado con DomainKeys (DKIM) según lo especificado por el proveedor de simulación de suplantación de identidad (phishing). 
 
-   - **Enviar IP**: expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, escribiendo un valor y, a continuación, presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores válidos son:
+   - **Enviar IP**: expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, escribiendo un valor y, a continuación, presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
      - Ip única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP CIDR: por ejemplo, 192.168.0.1/25.

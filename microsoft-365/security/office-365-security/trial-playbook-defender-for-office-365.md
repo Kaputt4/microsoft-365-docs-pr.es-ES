@@ -15,14 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
-ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130700"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648357"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a:**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Bienvenido a la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365. Este cuaderno de estrategias te ayudará a sacarle el máximo partido a tu prueba gratuita de 90 días al enseñarte cómo proteger tu organización con Defender para Office 365. Con las recomendaciones de Microsoft, aprenderás cómo Defender para Office 365 puede ayudarte a definir las directivas de protección, analizar las amenazas de tu organización y responder a los ataques.
 

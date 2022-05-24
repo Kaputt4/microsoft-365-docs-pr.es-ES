@@ -19,16 +19,14 @@ ms.custom:
 description: En este artículo se explican los cambios que se están implementando en las características de protección de Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbfc21b879745567c9273c79356ff60e498d95ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130832"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647829"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Características de protección de Azure Information Protection implementación en inquilinos existentes
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)

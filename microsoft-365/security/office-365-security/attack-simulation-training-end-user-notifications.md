@@ -12,14 +12,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 0693b7f55472c5093df763af5a1a226c0c3aa052
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101741"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649064"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a**
+- [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
 En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las notificaciones del usuario final son mensajes de correo electrónico que se envían a los usuarios Hay dos tipos básicos de notificaciones:
 

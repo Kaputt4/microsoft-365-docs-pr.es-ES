@@ -19,16 +19,14 @@ ms.custom:
 description: Obtenga información como remitente invitado, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. Aprenda también a notificar el correo electrónico no deseado & intentos de suplantación de identidad (phishing) como invitado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6d0f594da174236ce03ab0fd9b2af045f57f9f0
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 94bd79493a56bd288d21be255915b046b2bb0178
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535910"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649195"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envío de correo a Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Estos artículos ayudan a los remitentes externos a mejorar su reputación y a aumentar su capacidad de entregar correo electrónico a los usuarios en Microsoft 365. También proporcionan información sobre cómo puede notificar los intentos de correo electrónico no deseado y de suplantación de identidad incluso si no es un usuario Microsoft 365 usted mismo.
 

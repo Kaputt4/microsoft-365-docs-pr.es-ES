@@ -18,14 +18,20 @@ ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557e1288e4f2b39938b4da381664b58ed4c7e6c7
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217319"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647265"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a:**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 En este artículo se proporciona información general sobre los requisitos y las tareas para el funcionamiento correcto de Microsoft Defender para Office 365 en su organización. Estas tareas ayudan a garantizar que el centro de operaciones de seguridad (SOC) proporciona un enfoque confiable y de alta calidad para proteger, detectar y responder a amenazas de seguridad relacionadas con el correo electrónico y la colaboración.
 
@@ -181,7 +187,7 @@ Los permisos para administrar Defender para Office 365 en el portal de Microsoft
 
 Los siguientes permisos (roles y grupos de roles) están disponibles en Defender para Office 365 y se pueden usar para conceder acceso a los miembros del equipo de seguridad:
 
-- **Azure AD roles**: roles centralizados que asignan permisos para _todos los_ servicios de Microsoft 365, incluidos los Defender para Office 365. Puede ver los roles de Azure AD y los usuarios asignados en el portal de Microsoft 365 Defender, pero no puede administrarlos directamente allí. En su lugar, administra Azure AD roles y miembros en <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Los roles más frecuentes que usan los equipos de seguridad son:
+- **Roles de Azure AD**: roles centralizados que asignan permisos para _todos los_ servicios de Microsoft 365, incluidos los Defender para Office 365. Puede ver los roles de Azure AD y los usuarios asignados en el portal de Microsoft 365 Defender, pero no puede administrarlos directamente allí. En su lugar, administrará roles y miembros de Azure AD en <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Los roles más frecuentes que usan los equipos de seguridad son:
   - **Administrador de seguridad**
   - **Operador de seguridad**
   - **Lector de seguridad**
@@ -250,7 +256,7 @@ Las organizaciones tienen varias opciones para configurar envíos de usuarios. E
 
 Cada vez que un usuario notifica un mensaje como phishing, Defender para Office 365 genera una alerta y la alerta desencadenará un cuaderno de estrategias de AIR. La lógica de incidentes correlacionará esta información con otras alertas y eventos siempre que sea posible. Esta consolidación de la información ayuda a los equipos de seguridad a evaluar, investigar y responder al correo electrónico notificado por el usuario.
 
-Los envíos de usuarios y los envíos de administradores se controlan mediante la canalización de envío de Microsoft, que sigue un proceso estrechamente integrado. Este proceso incluye:
+Los envíos de usuarios y los envíos de administradores se controlan mediante la canalización de envío de Microsoft, que sigue un proceso estrechamente integrado. Por lo general, este proceso incluye:
 
 - Reducción de ruido.
 - Evaluación de prioridades automatizada.
@@ -260,14 +266,14 @@ Para obtener más información, consulte [Generación de informes de un correo e
 
 Los miembros del equipo de seguridad pueden realizar envíos desde varias ubicaciones en el portal de Microsoft 365 Defender en <https://security.microsoft.com>:
 
-- [Envío de administrador](admin-submission.md): use el portal Envíos para enviar sospechas de correo no deseado, suplantación de identidad (phishing), direcciones URL y archivos a Microsoft.
+- [Administración envío](admin-submission.md): use el portal Envíos para enviar sospechas de correo no deseado, suplantación de identidad (phishing), direcciones URL y archivos a Microsoft.
 - Directamente desde el Explorador de amenazas mediante una de las siguientes acciones de mensaje:
   - Informe limpio
   - Informar de suplantación de identidad
   - Informar de malware
   - Notificar correo no deseado
 
-  Puede seleccionar hasta 10 mensajes para realizar un envío masivo. Los envíos de administradores creados de esta manera también se pueden ver en el portal de envío.
+  Puede seleccionar hasta 10 mensajes para realizar un envío masivo. Administración envíos creados de esta manera también visibles en el portal envío.
 
 Para la mitigación a corto plazo de falsos negativos, los equipos de seguridad pueden administrar directamente [entradas de bloque](manage-tenant-blocks.md) para archivos, direcciones URL y remitentes en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
 

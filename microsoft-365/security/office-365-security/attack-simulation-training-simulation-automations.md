@@ -12,14 +12,16 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: c5023c29c0526b7eba2329e8206479b9d322d42e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b80d73f6efe398465eecea9967c4bd8d929a51a2
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092721"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649417"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatizaciones de simulación para el entrenamiento de simulación de ataques
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
@@ -42,7 +44,7 @@ Para crear una automatización de simulación, siga estos pasos:
 
 ## <a name="name-and-describe-the-simulation-automation"></a>Asigne un nombre y describa la automatización de la simulación.
 
-En la página **Nombre de Automation** , configure los siguientes valores:
+En la página **Nombre de Automation**, configure los siguientes valores:
 
 - **Nombre**: escriba un nombre descriptivo único para la simulación.
 - **Descripción**: escriba una descripción detallada opcional para la simulación.
@@ -103,7 +105,7 @@ Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
 - **Filtrar por tema**: Los valores disponibles son: **Activación de la cuenta**, **Verificación de cuenta**, **Facturación**, **Limpiar correo**, **Documento recibido**, **Gastos**, **Fax**, **Informe financiero**, **Mensajes entrantes**, **Factura**, **Elementos recibidos**, **Alerta de inicio de sesión**, **Correo recibido**, **Contraseña**, **Pago**, **Nómina**, **Oferta personalizada**, **Cuarentena**, **Trabajo remoto**, **Mensaje de revisión**, **Actualización de seguridad**, **Servicio suspendido**, **Firma necesaria**, **Actualizar almacenamiento del buzón Comprobar buzón**, **Correo de voz** y **Otros**.
 
-- **Filtrar por marca**: los valores disponibles son: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** y **otros**.
+- **Filtrar por marca**: Los valores disponibles son: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** y **otros**.
 
 - **Filtrar por sector**: Los valores disponibles son: **Banca**, **Servicios empresariales**, **Servicios de consumo**, **Educación**, **Energía**, **Construcción**, **Consultoría**, **Servicios financieros**, **Gobierno**, **Hostelería**, **Seguros**, **Legal**, **Servicios de mensajería**, **TI**, **Salud**, **Fabricación**, **Minorista**, **Telecomunicaciones**, **Bienes Raíces**, y **otros**.
 

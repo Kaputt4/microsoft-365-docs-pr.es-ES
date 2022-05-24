@@ -18,14 +18,20 @@ ms.custom: ''
 description: El personal de SecOps puede aprender a usar la cola incidentes de Microsoft 365 Defender para administrar incidentes en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05525ac8ac10f8702db4e25d4163fed03b899bc9
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416993"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649374"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Administrar incidentes y alertas desde Microsoft Defender para Office 365 en Microsoft 365 Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Se aplica a:**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Un [incidente](/microsoft-365/security/defender/incidents-overview) en Microsoft 365 Defender es una colección de alertas correlacionadas y datos asociados que definen la historia completa de un ataque. Defender para Office 365 [alertas](/microsoft-365/compliance/alert-policies#default-alert-policies), [investigación y respuesta automatizadas (AIR)](office-365-air.md#the-overall-flow-of-air) y el resultado de las investigaciones se integran y correlacionan de forma nativa en la página **Incidentes** de Microsoft 365 Defender en <https://security.microsoft.com/incidents-queue>. Nos referiremos a esta página como la _cola incidentes_.
 

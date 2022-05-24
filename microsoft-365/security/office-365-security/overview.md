@@ -16,14 +16,16 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP hasta Defender para Office 365 Planes 1 y 2, configuraciones de seguridad Estándar vs. Estricta, y mucho más. Comprenda qué tiene y cómo proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 62a8d298c9b3e47acb9ba9af5782624646487677
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835917"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647785"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Información general de seguridad de Microsoft Defender para Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

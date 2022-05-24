@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: 'El Centro de administración de Microsoft 365: obtenga información sobre las características que se agregaron este mes.'
-ms.openlocfilehash: 42c2d1dcf6b778504f1d4786c6fbcc2ce38f9724
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4c730a72252d24145d7555f2684244a2a6531dd2
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099579"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649173"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -45,11 +45,39 @@ Y si desea saber las novedades de otros servicios en la nube de Microsoft:
 - [Novedades de Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [Novedades del centro de administración de Exchange](/Exchange/whats-new)
 - [Novedades de Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [Novedades del portal de cumplimiento de Microsoft Purview](/Office365/SecurityCompliance/whats-new)
+- [Novedades de la portal de cumplimiento Microsoft Purview](/Office365/SecurityCompliance/whats-new)
 - [Novedades de Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Novedades del centro de administración de SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Actualizaciones de Office](/OfficeUpdates/)
 - [Comprobación del estado de la versión de Windows](/windows/deployment/update/check-release-health)
+
+## <a name="may-2022"></a>Mayo de 2022
+
+<!-- ### Role based access controls (RBAC)
+
+There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+
+There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
+
+For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+**Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
+
+**Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+
+**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+
+**Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+
+**Attribute Definition Reader**   Reads the definition of custom security attributes. -->
+
+### <a name="quick-assist"></a>Asistencia rápida
+
+Hemos movido Asistencia rápida a la Tienda Windows para mejorar el rendimiento y la seguridad de la aplicación. La aplicación Windows Asistencia rápida le permite a usted y a los usuarios finales recibir o proporcionar asistencia de PC a través de una conexión remota.
+
+Con la nueva aplicación Asistencia rápida Store, debería ver una mejora significativa en los tiempos de generación del código de acceso y una reducción de los errores de aplicación.
+
+Para obtener más información, vea [Solucionar problemas de PC a través de una conexión remota](https://support.microsoft.com/windows/solve-pc-problems-over-a-remote-connection-b077e31a-16f4-2529-1a47-21f6a9040bf3) e [Instalar Asistencia rápida](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca)
 
 ## <a name="april-2022"></a>Abril de 2022
 
@@ -153,7 +181,7 @@ Obtenga más información en [comentarios e información de NPS del producto de 
 
 ### <a name="microsoft-365-admin-center-video-training"></a>Centro de administración de Microsoft 365 entrenamiento en vídeo
 
-Hemos actualizado nuestro Centro de administración de Microsoft 365 entrenamiento en vídeo. Vaya a la página [Biblioteca de vídeos de aprendizaje del administrador](admin-video-library.yml) para obtener información sobre cómo configurar y administrar Microsoft 365 para su empresa.
+Hemos actualizado nuestro Centro de administración de Microsoft 365 entrenamiento en vídeo. Vaya a la página [Administración biblioteca de vídeos de entrenamiento](admin-video-library.yml) para obtener información sobre cómo configurar y administrar Microsoft 365 para su empresa.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Captura de pantalla: Mostrar la biblioteca de entrenamiento de vídeo del centro de administración":::
 
@@ -194,62 +222,3 @@ Hemos agregado un par de nuevas categorías a la funcionalidad de búsqueda.
 - Ahora puede encontrar experiencias de configuración simplificadas a través de búsqueda global. Esto puede ayudarle a usted y a su equipo a empezar a usar rápidamente nuevas características. Por ejemplo, busque **establecer la contraseña para que nunca expire**.
 
 Para obtener más información sobre la búsqueda en el centro de administración, consulte [Buscar en el Centro de administración de Microsoft 365](manage/search-in-the-mac.md).
-
-## <a name="may-2021"></a>Mayo de 2021
-
-### <a name="admin-mobile-app"></a>Aplicación móvil de administración
-
-### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Realizar un seguimiento de las actualizaciones de vales de soporte técnico mediante la aplicación móvil Admin
-
-Para todas las solicitudes de servicio creadas en el inquilino, ahora puede realizar un seguimiento del estado del vale, ver los detalles del vale y proporcionar o solicitar información adicional agregando notas & datos adjuntos.
-
-:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Captura de pantalla: Seguimiento de las actualizaciones de vales de soporte técnico":::
-
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Manténgase al tanto de todas las actualizaciones principales de la aplicación y su suscripción de Microsoft 365
-
-- Manténgase al tanto de todas las actualizaciones principales de la suscripción Microsoft 365 a través de notificaciones push del Centro de mensajes (ahora habilitadas de forma predeterminada).
-
-- Realice un seguimiento de las características más recientes disponibles en la aplicación mediante la sección **Novedades** . Vaya a **Configuración** > **¿Qué hay de nuevo?**
-
-:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Captura de pantalla: Seguimiento de las principales actualizaciones y características":::
-
-## <a name="april-2021"></a>Abril de 2021
-
-### <a name="admin-mobile-app"></a>Aplicación móvil de administración
-
-### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>Administración de licencias y facturas desde la aplicación móvil admin
-
-- Ahora puede ver todas las licencias disponibles y asignadas para las suscripciones. También puede asignar o anular la asignación de licencias a los usuarios y agregar o quitar licencias.
-- Ahora puede ver facturas detalladas en la aplicación.
-- Estas actualizaciones están disponibles en dispositivos [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) e [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) .
-
-:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Captura de pantalla: Página de asignación de licencias de la aplicación móvil de administración":::
-:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Captura de pantalla: Pantalla de aplicación móvil de administración con usuarios y sus licencias":::
-:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Captura de pantalla: Página de resumen de factura de la aplicación móvil de administración":::
-
-### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>Se ha actualizado la fuente del Centro de mensajes en la aplicación móvil Admin
-
-- Ahora tiene una experiencia de lectura más flexible de la fuente del Centro de mensajes. Ahora tiene la capacidad de filtrar los mensajes en función del servicio o las etiquetas y marcar los mensajes como favoritos. También se han agregado acciones masivas para marcar mensajes como leídos, no leídos o archivados.
-- Estas actualizaciones están disponibles en dispositivos [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) e [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) .
-
-:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Captura de pantalla: Página de fuente del Centro de mensajes de la aplicación móvil de administración":::
-
-## <a name="ignite-2021-march"></a>Ignite 2021 (marzo)
-
-Bienvenido a Microsoft Ignite. Esperamos que haya podido asistir a algunas de nuestras sesiones: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Estas son algunas de las cosas de las que hablamos en Ignite.
-> [!NOTE]
-> No todas las características estarán disponibles para todos de inmediato. Si no ve las nuevas características, [únase a Versión dirigida](manage/release-options-in-office-365.md).
-
-### <a name="message-center"></a>Centro de mensajes
-
-Hemos renovado el Centro de mensajes para ayudarle a detectar los mensajes pertinentes y hemos agregado una experiencia de lectura más flexible. Hemos agregado una nueva columna **Servicio** para ayudarle a examinar a qué servicio se aplica un mensaje y filtrar los mensajes por servicio y otros metadatos. Puede marcar como favorito un mensaje para marcarlo como seguimiento, elegir qué columnas aparecen en la lista de mensajes y navegar entre los mensajes con los botones Atrás y Siguiente. También hemos mejorado el proceso para que sea más fácil enviar comentarios sobre las publicaciones del Centro de mensajes.
-
-:::image type="content" source="../media/message-center.png" alt-text="Captura de pantalla: Página principal del Centro de mensajes que muestra la bandeja de entrada y los mensajes":::
-
-Para obtener más información sobre las nuevas características, consulte [Centro de](manage/message-center.md) mensajes.
-
-### <a name="whats-new-features"></a>Novedades
-
-Hemos realizado mejoras en la visualización de las características "Novedades" de los usuarios en las aplicaciones de Office. Ahora puede ver el contenido enriquecido en el panel Novedades que los usuarios pueden ver. También puede obtener más información sobre la característica antes de decidir que los usuarios conozcan la característica. Para obtener más información, consulta [Administrar qué características Office aparecen en Novedades](manage/show-hide-new-features.md).
-
-:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Captura de pantalla: Office página novedades de las aplicaciones que muestran mejoras en Power BI":::
