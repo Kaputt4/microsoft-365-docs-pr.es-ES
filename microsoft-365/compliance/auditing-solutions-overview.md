@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444253"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649395"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
 
@@ -100,14 +100,14 @@ En las secciones siguientes se identifican los requisitos de licencia para Audit
 
 ### <a name="audit-standard"></a>Auditoría (estándar)
 
-- Suscripción a Microsoft Purview Empresa Básico
-- Suscripción a Aplicaciones de Microsoft Purview para negocios
-- Suscripción a Microsoft Purview Enterprise E3
-- Microsoft Purview Empresa Premium
-- Suscripción a Microsoft Purview Educación A3
-- Suscripción a Microsoft Purview Administración Pública G3
-- Suscripción a Microsoft Purview Administración Pública G1
-- Suscripción a Microsoft Purview Frontline F1 o F3, o al complemento F5 Security
+- Suscripción a Microsoft Empresa Básico
+- Suscripción a Aplicaciones de Microsoft 365 para negocios
+- Suscripción a Microsoft 365 Enterprise E3
+- Microsoft 365 Empresa Premium
+- Suscripción a Microsoft 365 Educación A3
+- Suscripción a Microsoft 365 Administración Pública G3
+- Suscripción a Microsoft 365 Administración Pública G1
+- Suscripción a Microsoft 365 Frontline F1 o F3, o al complemento F5 Security
 - Suscripción a Office 365 Enterprise E3
 - Suscripción a Office 365 Enterprise E1
 - Suscripción a Office 365 Educación A1
