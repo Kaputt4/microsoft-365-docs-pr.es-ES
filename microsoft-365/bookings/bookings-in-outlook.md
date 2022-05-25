@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Use Bookings en Outlook para permitir que otros usuarios programe reuniones con usted en Outlook.
-ms.openlocfilehash: 65e3e751e883ed498cdf5b4ccae2b1f2e587f756
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b77b9b0450f77014e304c232aa46f3427dcbbe22
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469216"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670145"
 ---
 # <a name="bookings-in-outlook"></a>Bookings en Outlook
 
@@ -128,7 +128,7 @@ Use los comandos **Get-CASMailbox** y **Set-CASMailbox** para comprobar el estad
 2. Compruebe el **valor de EwsApplicationAccessPolicy** de la persona ejecutando el siguiente comando:
 
    ```PowerShell
-   Get-CASMailbox -Identity adam@contoso.com| Format-List EwsApplicationAccessPolicy,Ews*List
+   Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
    ```
 
     **A**. Si el valor de **EwsApplicationAccessPolicy** es **EnforceAllowList**, solo las aplicaciones especificadas en EwsAllowList pueden acceder a EWS y REST.
@@ -150,7 +150,7 @@ Use los comandos **Get-CASMailbox** y **Set-CASMailbox** para comprobar el estad
     - Para desactivar Bookings en Outlook para este usuario, agregue **MicrosoftOWSPersonalBookings** a **EnforceBlockList** mediante la ejecución del siguiente comando:
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - Para activar Bookings en Outlook para este usuario, quite **MicrosoftOWSPersonalBookings**, si está presente en EnforceBlockList mediante la ejecución del siguiente comando:
@@ -164,5 +164,5 @@ Use los comandos **Get-CASMailbox** y **Set-CASMailbox** para comprobar el estad
     - Para desactivar Bookings en Outlook para este usuario, establezca la directiva **EnforceBlockList** y agregue **MicrosoftOWSPersonalBookings** a EWSBlockList mediante la ejecución del siguiente comando:
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```

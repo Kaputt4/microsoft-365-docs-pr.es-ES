@@ -1,7 +1,7 @@
 ---
-title: API de máquina fuera de la máquina
-description: Obtén información sobre cómo usar una API para salir de un dispositivo de Microsoft Defender para endpoint.
-keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
+title: API de máquina fuera del panel
+description: Obtenga información sobre cómo usar una API para desconectar un dispositivo de Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, recopilar paquete de investigación
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345636"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669768"
 ---
-# <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
+# <a name="offboard-machine-api"></a>API de máquina fuera del panel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "62345636"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,24 +39,24 @@ ms.locfileid: "62345636"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Dispositivo offboard de Defender para endpoint.
+Dispositivo fuera del panel de Defender para punto de conexión.
 
 ## <a name="limitations"></a>Limitaciones
 
-- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Esta API se admite en Windows 11, Windows 10, versión 1703 y versiones posteriores, o Windows Server 2019 y versiones posteriores.
+> Esta API se admite en Windows 11, Windows 10, versión 1703 y posteriores, o Windows Server 2019 y versiones posteriores.
 >
 > Esta API no se admite en dispositivos MacOS o Linux.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de Defender para API de punto de conexión](apis-intro.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
 Aplicación|Machine.Offboard|'Offboard machine'
 Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
@@ -64,8 +64,8 @@ Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario necesita el rol ad "Administrador global"
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta [Crear y administrar grupos de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario necesita el rol de AD "Administración global"
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -73,26 +73,26 @@ Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
-El identificador del equipo se puede encontrar en la dirección URL al seleccionar el dispositivo. Por lo general, es un número alfanumérico de 40 dígitos que se puede encontrar en la dirección URL.
+El identificador de equipo se puede encontrar en la dirección URL al seleccionar el dispositivo. Por lo general, es un número alfanumérico de 40 dígitos que se puede encontrar en la dirección URL.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
 ---|---|---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
 Parámetro|Tipo|Descripción
 ---|---|---
-Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
+Comentario|Cadena|Comentario que se va a asociar a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 200: código de respuesta creado y [Acción de máquina](machineaction.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 

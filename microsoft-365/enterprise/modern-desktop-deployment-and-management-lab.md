@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463173"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669219"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
@@ -97,9 +97,15 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 - BitLocker
 - Antivirus de Microsoft Defender
 - Windows Hello para empresas
+- Credential Guard de Windows Defender       
+- Protección de aplicaciones de Microsoft Defender     
+- Protección contra vulnerabilidades de seguridad de Windows Defender             
+- Control de aplicaciones de Windows Defender   
+- Microsoft Defender para punto de conexión 
+
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El laboratorio de Windows 10 expira el 11 de agosto de 2022. El laboratorio de Windows 11 expira el 7 de agosto de 2022. Las nuevas versiones se publicarán antes de la expiración.
+> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El software de evaluación de estos laboratorios expira entre 90 y 120 días después de la activación. Las nuevas versiones de los laboratorios se publicarán en agosto de 2022. 
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

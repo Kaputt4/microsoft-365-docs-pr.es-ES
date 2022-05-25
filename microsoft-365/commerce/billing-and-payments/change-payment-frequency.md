@@ -19,23 +19,23 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Obtenga información sobre cómo cambiar la frecuencia con la que se factura su suscripción empresarial.
-ms.date: 04/02/2021
-ms.openlocfilehash: dcb3d20d12dec8451481626538f759aef627a221
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenga información sobre cómo cambiar la frecuencia con la que se le factura por su suscripción empresarial.
+ms.date: 05/24/2022
+ms.openlocfilehash: 366d35b81d5c7ea84d5f9cd471ea4f6b7feac984
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321157"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669241"
 ---
 # <a name="change-your-billing-frequency"></a>Cambiar la frecuencia de facturación
 
-Al comprar una suscripción, elige la facturación mensual o anual. Para cambiar la frecuencia con la que se le factura una suscripción, siga estos pasos.
+Al comprar una suscripción, selecciona una frecuencia de facturación. Para cambiar la frecuencia con la que se le factura una suscripción, siga estos pasos.
 
-1. En el Centro de administración, vaya a la página **Facturación**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus</a> productos.
+1. En el centro de administración, vaya a la página **Facturación**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> .
 2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
-3. En la página detalles de la suscripción, en la **sección Configuración de suscripción y pago** , seleccione **Editar frecuencia de facturación**.
-4. En el **panel Editar frecuencia de** facturación, elija la opción para la frecuencia con la que desea facturarse y, a continuación, **seleccione Cambiar**.
+3. En la página de detalles de la suscripción, en la sección **Configuración de suscripción y pago** , seleccione **Editar frecuencia de facturación**.
+4. En el panel **Editar frecuencia de facturación** , elija la opción para la frecuencia con la que desea que se le facture y, a continuación, seleccione **Cambiar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 

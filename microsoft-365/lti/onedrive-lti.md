@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva aplicación de interoperabilidad de herramientas de Microsoft OneDrive Learning para Canvas.
-ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285574"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663412"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integración de Microsoft OneDrive LTI con Canvas
 
@@ -44,7 +44,7 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 > La persona que realiza esta integración debe ser administrador de Canvas y administrador del inquilino de Microsoft 365.
 
 1. Inicie sesión en el <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portal de registro de LTI de Microsoft OneDrive</a>
-2. Seleccione el botón **Consentimiento del administrador** y acepte los permisos.
+2. Seleccione el botón **Administración Consentimiento** y acepte los permisos.
 
    > [!CAUTION]
    > Si no se realiza este paso, el siguiente paso le proporcionará un error y no podrá realizar este paso durante una hora una vez que haya recibido el error.
@@ -71,17 +71,21 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
     >
     > Para obtener más información sobre cómo los educadores pueden modificar sus vínculos de navegación del curso, consulte [Cómo administrar vínculos de navegación del curso?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Guarde la clave y estará disponible en Canvas en estado **Desactivado** . Active **la clave y** copie la clave especificada en la columna **Detalles** que se usará en el paso siguiente.
+7. A continuación, expanda la lista desplegable **Configuración adicional** y establezca el **nivel de privacidad** en **Público**. 
+  
+   Establecer el **nivel de privacidad** en **Público** permite que los nombres de los miembros del curso aparezcan en otros miembros para la colaboración.
+
+8. Guarde la clave y estará disponible en Canvas en estado **Desactivado** . Active **la clave y** copie la clave especificada en la columna **Detalles** que se usará en el paso siguiente.
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Página Lienzo con la clave establecida en un estado desactivado. Tendrá que estar activada y la clave deberá copiarse de la columna de detalles de esta página.":::
 
-8. Vuelva al portal de registro de Microsoft OneDrive LTI y pegue la clave en el campo **Id. de cliente de Canvas**. Seleccione **Siguiente** cuando esté listo.
+9. Vuelva al portal de registro de Microsoft OneDrive LTI y pegue la clave en el campo **Id. de cliente de Canvas**. Seleccione **Siguiente** cuando esté listo.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="La página de registro del inquilino de LTI, que muestra el texto JSON y el cuadro de texto en el que se debe copiar la clave.":::
 
-9. Revise y guarde los cambios. Se mostrará un mensaje al registrarse correctamente.
+10. Revise y guarde los cambios. Se mostrará un mensaje al registrarse correctamente.
 
-10. Los detalles del registro también se pueden revisar seleccionando el botón **Ver inquilinos LTI** en la página principal.
+11. Los detalles del registro también se pueden revisar seleccionando el botón **Ver inquilinos LTI** en la página principal.
 
 Las versiones futuras pueden requerir consentimiento adicional del administrador. En esos casos, solo tendrá que repetir los pasos 1 y 2.
 

@@ -21,21 +21,21 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: En este artículo, aprenderá a comprobar el estado de la sincronización de directorios en Office 365.
-ms.openlocfilehash: 8f21985f8db3539e8dd1a839cc6cb499a425feeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 28376a63ab035490bdfeafb294eed9d993db54d9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095562"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669658"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Visualización del estado de sincronización de directorios en Microsoft 365
 
-Si ha integrado Active Directory local Domain Services (AD DS) con Azure Active Directory (Azure AD) mediante la sincronización del entorno local con Microsoft 365, también puede comprobar el estado de la sincronización.
+Si ha integrado la Active Directory local Domain Services (AD DS) con Azure Active Directory (Azure AD) mediante la sincronización del entorno local con Microsoft 365, también puede comprobar el estado de la sincronización.
   
 ## <a name="view-directory-synchronization-status"></a>Ver el estado de sincronización de directorios
 
 - Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **Estado de DirSync** en la página principal.
-- Como alternativa, puede ir a **Usuarios** \> **usuarios activos** y, en la página **Usuarios activos** , elija **Más** \> **sincronización de directorios**. En el panel **Sincronización de directorios** , elija **Ir a administración de DirSync**.
+- Como alternativa, puede ir a **Usuarios** \> **usuarios activos** y, en la página **Usuarios activos**, seleccione la **sincronización de Elipse** \> Directory. En el panel **Sincronización de directorios** , elija **Ir a administración de DirSync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Información en la página Administrar sincronización de directorios
 

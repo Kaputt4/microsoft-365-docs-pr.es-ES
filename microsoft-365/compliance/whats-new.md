@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 20a8a96146b7f65ef3f8ccec4f099b91d74822a0
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363156"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670110"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Novedades de Microsoft Purview
 
@@ -139,7 +139,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 | Privileged Access Management en Microsoft 365 | Privileged Access Management de Microsoft Purview | Privileged Access Management ayuda a proteger su organización frente a infracciones y ayuda a cumplir los procedimientos recomendados de cumplimiento limitando el acceso permanente a datos confidenciales o el acceso a la configuración crítica. Para más información, consulte [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | Conectores de datos de Microsoft | conectores de datos de Microsoft Purview | Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, datos de terceros de plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, en buzones de su organización Microsoft 365. Para más información, consulte [Microsoft Purview conectores de datos](compliance-extensibility.md). |
 | eDiscovery avanzado de Microsoft 365 <br><br> eDiscovery principal de Microsoft 365 | Exhibición de documentos electrónicos de Microsoft Purview (premium) <br><br> Exhibición de documentos electrónicos de Microsoft Purview (estándar) | La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Para obtener más información, consulte [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) y [Microsoft Purview eDiscovery (Estándar).](get-started-core-ediscovery.md) |
-| Centro de cumplimiento de Microsoft 365 | Portal de cumplimiento de Microsoft Purview. | Portal de administración para acceder a soluciones y catálogo de soluciones dentro del conjunto de Cumplimiento de Microsoft 365 E5. Para obtener más información, consulte [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md). |
+| Centro de cumplimiento de Microsoft 365 | Portal de cumplimiento de Microsoft Purview. | Administración portal para acceder a soluciones y catálogo de soluciones dentro del conjunto de Cumplimiento de Microsoft 365 E5. Para obtener más información, consulte [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="march-2022"></a>Marzo de 2022
 
@@ -151,7 +151,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 - [Trabajando con acciones de mejora](compliance-manager-improvement-actions.md), [Comenzar con el Administrador de cumplimiento](compliance-manager-setup.md): se ha agregado información sobre más acciones de mejora que se pueden supervisar y probar automáticamente ("evaluación de cumplimiento continuo"). Esto incluye nuevas capacidades para mejorar el estado de las pruebas de una acción a la de otra acción.
 
-### <a name="data-classification"></a>Clasificación de datos
+### <a name="data-classification"></a>Clasificación de los datos
 
 - [Introducción con el Explorador de contenido](data-classification-content-explorer.md): Teams instrucciones agregadas, sección de licencias que apunta a descripciones del servicio.
 
@@ -168,15 +168,15 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 - [Configuración de las opciones de prevención de pérdida de datos del punto de conexión](dlp-configure-endpoint-settings.md) : novedades de la versión preliminar pública de grupos de aplicaciones restringidos.
 - Referencia de directiva [de prevención de pérdida de datos](dlp-policy-reference.md): se ha actualizado para la versión preliminar pública de los grupos de aplicaciones restringidos.
 - [Comenzar con prevención de pérdida de datos para Power BI](dlp-powerbi-get-started.md): nuevo para la versión preliminar pública.
+- 
+### <a name="information-protection"></a>Protección de la información
 
+- [Compatibilidad con notas de la versión del juego de caracteres de doble byte](mip-dbcs-relnotes.md): se han agregado instrucciones para macOS.
+- 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 - [Comenzar con la administración de riesgos internos](insider-risk-management-configure.md): se han agregado nuevas tareas para la guía acciones recomendadas.
 - [Comenzar con la configuración de administración de riesgos internos](insider-risk-management-settings.md): nuevas actualizaciones para las características de notificaciones y alertas por correo electrónico, nuevas actualizaciones para las notificaciones de análisis.
-
-### <a name="microsoft-information-protection"></a>Microsoft Information Protection
-
-- [Compatibilidad con notas de la versión del juego de caracteres de doble byte](mip-dbcs-relnotes.md): se han agregado instrucciones para macOS.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 

@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535434"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663478"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -105,7 +105,7 @@ Para crear un DEP que se usará con un buzón de correo, siga estos pasos:
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, consulte [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, consulte [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy).
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Asignación de un DEP a un buzón
 

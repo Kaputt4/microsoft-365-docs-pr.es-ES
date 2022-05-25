@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a Microsoft Bookings en Microsoft 365.
-ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ecd0e970d1e672a7c40bb1876f84d4e55a7dbff0
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637304"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663544"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activa o desactiva Microsoft Bookings
 
@@ -87,7 +87,7 @@ Puede deshabilitar Bookings para usuarios individuales.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Permitir que solo los usuarios seleccionados creen calendarios Bookings
 
-Mediante el uso de restricciones de directiva, puede restringir que los usuarios con licencia puedan crear calendarios Bookings. Primero debe habilitar Bookings para toda la organización. Todos los usuarios de su organización tendrán licencias de Bookings, pero solo los incluidos en la directiva pueden crear calendarios Bookings y tener control total sobre quién puede acceder a los calendarios que crean.
+Mediante el uso de restricciones de directiva, puede restringir que los usuarios con licencia puedan crear calendarios Bookings. Todos los usuarios de su organización tendrán licencias de Bookings, pero solo los incluidos en la directiva pueden crear calendarios Bookings y tener control total sobre quién puede acceder a los calendarios que crean.
 
 Los usuarios que se incluyen en esta directiva pueden crear nuevos calendarios de Bookings y se pueden agregar como personal en cualquier capacidad (incluido el rol de administrador) a los calendarios Bookings existentes. Los usuarios que no están incluidos en esta directiva no podrán crear nuevos calendarios Bookings y recibirán un mensaje de error si intentan hacerlo.
 

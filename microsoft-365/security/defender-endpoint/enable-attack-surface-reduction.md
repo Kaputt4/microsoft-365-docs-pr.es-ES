@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637921"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669812"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -48,13 +48,15 @@ Características de reducción de superficie expuesta a ataques en versiones Win
 
 Puede establecer reglas de reducción de superficie expuesta a ataques para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
 
+- [Windows 11 Pro](/windows/whats-new/windows-11-overview)
+- [Windows 11 Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
 - Windows 10 Pro, [versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, [versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows Server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 
 Para usar todo el conjunto de características de las reglas de reducción de superficie expuesta a ataques, necesita:
 
@@ -107,8 +109,8 @@ Las reglas de ASR admiten variables de entorno y caracteres comodín. Para obten
 2. Las reglas de reducción de superficie expuesta a ataques para dispositivos administrados por MEM ahora admiten el comportamiento de la fusión de la configuración de diferentes directivas, con el fin de crear un superconjunto de directivas para cada dispositivo. Solo se combinan las opciones de configuración que no están en conflicto, mientras que las que están en conflicto no se agregan al superconjunto de reglas. Anteriormente, si dos directivas incluían conflictos para una sola configuración, ambas directivas se marcaban como en conflicto y no se implementaría ninguna configuración de ninguno de los perfiles. El comportamiento de combinación de reglas de reducción de superficie expuesta a ataques es el siguiente:
    - Las reglas de reducción de superficie expuesta a ataques de los perfiles siguientes se evalúan para cada dispositivo al que se aplican las reglas:
      - La directiva de configuración de dispositivos > > perfil de Endpoint Protection > **Protección contra vulnerabilidades de seguridad de Microsoft Defender** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
-     - Directiva de **reducción** >  de superficie expuesta a ataques > seguridad de puntos de [conexiónLas reglas de reducción de superficie expuesta a ataques](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - Líneas base de seguridad de punto de conexión > seguridad > **base de referencia** >  [de ATP de Microsoft DefenderLas reglas de reducción de superficie de ataque](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
+     - Directiva de reducción de superficie expuesta a ataques > seguridad del punto de conexión Reglas de **reducción** >  de [superficie expuesta a ataques](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - Líneas base de seguridad > seguridad de puntos de conexión >[reglas de reducción de superficie expuesta a ataques](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  de ATP de Microsoft Defender.
    - Configuración que no tienen conflictos se agregan a un superconjunto de directivas para el dispositivo.
    - Cuando dos o más directivas tienen una configuración en conflicto, la configuración en conflicto no se agrega a la directiva combinada, mientras que la configuración que no entra en conflicto se agrega a la directiva de superconjunto que se aplica a un dispositivo.
    - Solo se retienen las configuraciones de configuración en conflicto.
@@ -198,7 +200,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuración del URI de OMA en el portal del centro de administración de Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. Haga clic en **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Seleccione **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, seleccione **Siguiente**.
    - O bien, seleccione **Siguiente.**

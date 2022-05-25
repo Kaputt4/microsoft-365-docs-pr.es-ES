@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648335"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669328"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -229,3 +229,9 @@ Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experi
 ## <a name="resources"></a>Recursos
 
 - Para obtener más información sobre el registro, la desinstalación u otros temas, consulte [Recursos](linux-resources.md).
+  
+## <a name="related-articles"></a>Artículos relacionados
+  
+-  [Proteja los puntos de conexión con la solución de EDR integrada de Defender for Cloud: Microsoft Defender para punto de conexión](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Conectar las máquinas que no son de Azure a Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+

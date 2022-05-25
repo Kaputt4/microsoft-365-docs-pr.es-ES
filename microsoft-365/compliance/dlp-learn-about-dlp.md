@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo proteger su información confidencial mediante las directivas y herramientas de prevención de pérdida de datos de Microsoft Purview y realice un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Obtenga información sobre cómo proteger la información confidencial mediante Microsoft Purview directivas y herramientas de prevención de pérdida de datos y realice un recorrido por el ciclo de vida de DLP.
+ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231799"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669702"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -40,7 +40,7 @@ DLP detecta elementos confidenciales mediante el análisis de contenido profundo
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP forma parte de la oferta de Microsoft Purview más grande
 
-DLP es solo una de las herramientas de Microsoft Purview que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las demás herramientas del conjunto de herramientas de Microsoft Purview, cómo se interrelacionan y funcionan mejor juntos.  Consulte Herramientas de [Microsoft Purview](protect-information.md) para obtener más información sobre el proceso de protección de la información.
+DLP es solo una de las herramientas de Microsoft Purview que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las demás herramientas del conjunto de herramientas de Microsoft Purview, cómo se interrelacionan y funcionan mejor juntos.  Consulte[, Microsoft Purview herramientas](protect-information.md) para obtener más información sobre el proceso de protección de la información.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Acciones de protección de las directivas DLP
 
@@ -71,7 +71,7 @@ La supervisión y protección dlp son nativas de las aplicaciones que los usuari
 
 **Planeamiento de tecnología para DLP**
 
-Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en Microsoft 365 servicios, Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y versiones posteriores), recursos compartidos de archivos locales y SharePoint locales. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
+Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en Microsoft 365 servicios, Windows 10, Windows 11 y dispositivos de macOS (Catalina 10.15 y versiones posteriores), recursos compartidos de archivos locales y SharePoint locales. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
 
 **Planeamiento de procesos empresariales para DLP**
 
@@ -122,6 +122,9 @@ Mientras esté en modo de prueba, supervise los resultados de la directiva y afi
 - agregar nuevas aplicaciones restringidas
 - agregar nuevos sitios restringidos
 
+> [!NOTE]
+> _Detener el procesamiento de más reglas_ no funciona en modo de prueba, incluso cuando está activado.
+
 #### <a name="enable-the-control-and-tune-your-policies"></a>Habilitación del control y ajuste de las directivas
 
 Una vez que la directiva cumpla todos los objetivos, actíela. Siga supervisando los resultados de la aplicación de directiva y ajuste según sea necesario. 
@@ -160,7 +163,7 @@ ubicación | incluir/excluir por|
 
 - SharePoint/Exchange/OneDrive: bloquear el acceso al contenido de las personas que están fuera de su organización. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico indicándole que está realizando una acción prohibida por la directiva DLP.
 - Teams chat y canal: impedir que se comparta información confidencial en el chat o canal
-- Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores): Auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
+- Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores): Auditar o restringir la copia de un elemento confidencial a un dispositivo USB extraíble
 - Office Aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento de riesgo y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mover el archivo desde donde se almacena a una carpeta de cuarentena
 
@@ -183,7 +186,7 @@ Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza
 
 ## <a name="viewing-policy-application-results"></a>Visualización de los resultados de la aplicación de directiva
 
-DLP informa a Microsoft Purview de una gran cantidad de información sobre la supervisión, las coincidencias de directivas y las acciones, y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría del portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) , se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
+DLP informa de una gran cantidad de información en Microsoft Purview de la supervisión, las coincidencias y acciones de directivas y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría de portal de cumplimiento Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
 
 ### <a name="dlp-alerts-dashboard"></a>Panel de alertas DLP
 
@@ -213,7 +216,7 @@ La pestaña Explorador de actividad de la página DLP tiene el filtro *De activi
 
 Para obtener más información, consulte [Comenzar con el explorador de actividad](data-classification-activity-explorer.md).
 
-Para obtener más información sobre DLP de Microsoft Purview, consulte:
+Para más información sobre Microsoft Purview DLP, consulte:
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)](dlp-teams-default-policy.md)
@@ -221,7 +224,7 @@ Para obtener más información sobre DLP de Microsoft Purview, consulte:
 - [Obtenga información sobre el Centro de cumplimiento de Microsoft](dlp-chrome-learn-about.md)
 - [Obtenga información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
 
-Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las regulaciones de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las regulaciones de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft Purview](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licencias y suscripciones
 

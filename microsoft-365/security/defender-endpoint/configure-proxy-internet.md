@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823408"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669680"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -33,7 +33,7 @@ ms.locfileid: "64823408"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 El sensor de Defender para punto de conexión requiere que Microsoft Windows HTTP (WinHTTP) informe de los datos del sensor y se comunique con el servicio Defender para punto de conexión. El sensor incrustado de Defender para punto de conexión se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa Los servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube de Defender para punto de conexión.
 
@@ -152,7 +152,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -160,7 +160,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 Para restablecer el servidor proxy winhttp, escriba el siguiente comando y presione **Entrar**:
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -249,13 +249,13 @@ Compruebe que la configuración del proxy se ha completado correctamente. A cont
 
 4. Escriba el siguiente comando y presione **Entrar**:
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     Reemplace *HardDrivePath* por la ruta de acceso donde se descargó la herramienta MDEClientAnalyzer. Por ejemplo:
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 

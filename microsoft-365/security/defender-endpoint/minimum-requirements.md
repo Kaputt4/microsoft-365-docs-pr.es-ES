@@ -1,6 +1,6 @@
 ---
-title: Requisitos mínimos para Microsoft Defender para endpoint
-description: Comprender los requisitos y requisitos de licencias para la incorporación de dispositivos al servicio
+title: Requisitos mínimos para Microsoft Defender para punto de conexión
+description: Descripción de los requisitos y requisitos de licencia para la incorporación de dispositivos al servicio
 keywords: requisitos mínimos, licencias, tabla de comparación
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467365"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670166"
 ---
-# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
+# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,25 +33,25 @@ ms.locfileid: "64467365"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-Existen algunos requisitos mínimos para incorporar dispositivos al servicio. Obtenga información sobre los requisitos de licencias, hardware y software y otras opciones de configuración para incorporar dispositivos al servicio.
+Hay algunos requisitos mínimos para incorporar dispositivos al servicio. Obtenga información sobre las licencias, los requisitos de hardware y software y otras opciones de configuración para incorporar dispositivos al servicio.
 
 > [!TIP]
 >
-> - En este artículo se describen los requisitos mínimos para Microsoft Defender para el Plan de extremo 2. Si está buscando información acerca del Plan 1 de Defender para Endpoint, consulte [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
-> - Obtenga información sobre las mejoras más recientes en Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - En este artículo se describen los requisitos mínimos para Microsoft Defender para punto de conexión plan 2. Si busca información sobre El plan 1 de Defender para punto de conexión, consulte [Requisitos de Defender para el plan de punto de conexión 1](mde-p1-setup-configuration.md#review-the-requirements).
+> - Obtenga información sobre las mejoras más recientes en Defender para punto de conexión: [Defender para punto de conexión tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Defender para punto de conexión demostró las funcionalidades de óptica y detección líderes del sector en la evaluación reciente de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
-Para obtener información sobre los requisitos de licencias para Microsoft Defender para endpoint, consulte [Información de licencias de Microsoft Defender para endpoints](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión información de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 
-Para obtener información detallada sobre las licencias, consulta el sitio [términos](https://www.microsoft.com/licensing/terms/) del producto y trabaja con el equipo de tu cuenta para obtener más información sobre los términos y condiciones.
+Para obtener información detallada sobre las licencias, consulte el [sitio términos del producto](https://www.microsoft.com/licensing/terms/) y trabaje con el equipo de su cuenta para obtener más información sobre los términos y condiciones.
 
-Para obtener más información sobre la matriz de características de Windows ediciones, vea [Comparar Windows ediciones](https://www.microsoft.com/windowsforbusiness/compare).
+Para obtener más información sobre la matriz de características de Windows ediciones, consulte [Comparación de ediciones de Windows](https://www.microsoft.com/windowsforbusiness/compare).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 
-El acceso a Defender for Endpoint se realiza a través de un explorador, que admite los siguientes exploradores:
+El acceso a Defender para punto de conexión se realiza a través de un explorador, lo que admite los siguientes exploradores:
 
 - Microsoft Edge
 - Google Chrome
@@ -63,9 +63,9 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 
 ### <a name="supported-windows-versions"></a>Versiones de Windows comptibles
 
-- Windows 7 SP1 Enterprise ([requiere ESU para ser compatible](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
-- Windows 7 SP1 Pro ([requiere ESU para ser compatible](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
-- Windows 8,1 Enterprise
+- Windows 7 Enterprise SP1 ([requiere ESU para soporte técnico](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
+- Windows 7 Pro SP1 ([requiere ESU para la compatibilidad](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
+- Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
@@ -76,43 +76,44 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 10 Enterprise loT
 
     >[!NOTE]
-    >Aunque Windows 10 IoT Enterprise es un sistema operativo compatible en Microsoft Defender para endpoints y permite a los OEM/OEM distribuirlo como parte de su producto o solución, los clientes deben seguir las instrucciones del OEM/ODM sobre el software instalado basado en host y la compatibilidad.
+    >Aunque Windows 10 IoT Enterprise es un sistema operativo compatible en Microsoft Defender para punto de conexión y permite que los OEM/ODM lo distribuyan como parte de su producto o solución, los clientes deben seguir las instrucciones del OEM/ODM sobre el software instalado basado en host y la compatibilidad.
 
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- Windows servidor
-  - Windows Server 2008 R2 SP1 ([requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))
+- servidor de Windows
+  - Windows Server 2008 R2 SP1 ([requiere ESU para soporte técnico](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, versión 1803 o posterior
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
+- Windows 365
 
 Los dispositivos de la red deben ejecutar una de estas ediciones.
 
-Los requisitos de hardware de Defender para Endpoint en dispositivos son los mismos para las ediciones admitidas.
+Los requisitos de hardware de Defender para punto de conexión en dispositivos son los mismos para las ediciones admitidas.
 
-> Cores: 2 minimum, 4 preferred Memory: 1 GB minimum, 4 preferred
+> Núcleos: 2 memorias mínimas y 4 preferidas: 1 GB como mínimo, 4 preferidas
 
-Para obtener más información sobre las versiones compatibles Windows 10, vea (/windows/release-health/release-information).
+Para obtener más información sobre las versiones admitidas de Windows 10, vea (/windows/release-health/release-information).
 
 > [!NOTE]
-> Las máquinas que ejecutan versiones móviles Windows (como Windows CE y Windows 10 Mobile) no son compatibles.
+> No se admiten máquinas que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile).
 >
-> Las máquinas virtuales que Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
+> Las máquinas virtuales que ejecutan Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
 >
 > Para entornos virtuales, se recomienda usar Windows 10 Enterprise LTSC 2019 o posterior.
 
-Cuando los componentes estén actualizados en sistemas operativos de Microsoft Windows, el soporte técnico de Microsoft Defender para endpoints seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulta [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o capacidades se proporcionan solo en sistemas operativos que aún no han llegado al final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección se seguirán proporcionando al menos hasta que:
+Cuando los componentes estén actualizados en los sistemas operativos de Microsoft Windows, Microsoft Defender para punto de conexión soporte técnico seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulte [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o funcionalidades solo se proporcionan en sistemas operativos que aún no han alcanzado el final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección seguirán proporcionándose hasta al menos:
 
-- La [fecha de finalización de la compatibilidad](/lifecycle/products/) (para sistemas operativos que no tienen un programa de actualizaciones de seguridad extendidas (ESU).
-- Fecha [de finalización de ESU](/lifecycle/faq/extended-security-updates) (para sistemas operativos que tienen un programa ESU).
+- Fecha [de finalización del soporte](/lifecycle/products/) técnico (para sistemas operativos que no tienen un programa de actualizaciones de seguridad extendidas (ESU).
+- Fecha [de finalización de la ESU](/lifecycle/faq/extended-security-updates) (para sistemas operativos que tienen un programa ESU).
 
 
 
-### <a name="other-supported-operating-systems"></a>Otros sistemas operativos compatibles
+### <a name="other-supported-operating-systems"></a>Otros sistemas operativos admitidos
 
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
@@ -120,56 +121,56 @@ Cuando los componentes estén actualizados en sistemas operativos de Microsoft W
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> Tendrás que confirmar que las distribuciones de Linux y las versiones de Android, iOS y macOS son compatibles con Defender for Endpoint para que la integración funcione.
+> Deberá confirmar que las distribuciones y versiones de Linux de Android, iOS y macOS son compatibles con Defender para punto de conexión para que la integración funcione.
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Requisitos de configuración y almacenamiento de datos y red
 
-Al ejecutar el asistente de incorporación por primera vez, debe elegir dónde se almacena la información relacionada con El punto de conexión de Microsoft Defender: en la Unión Europea, el Reino Unido o el centro de datos de Estados Unidos.
+Al ejecutar el asistente de incorporación por primera vez, debe elegir dónde se almacena la información relacionada con Microsoft Defender para punto de conexión: en la Unión Europea, el Reino Unido o el centro de datos de Estados Unidos.
 
 > [!NOTE]
 >
-> - No puede cambiar la ubicación de almacenamiento de datos después de la configuración por primera vez.
-> - Revisa [Microsoft Defender para el almacenamiento y](data-storage-privacy.md) privacidad de datos de punto de conexión para obtener más información sobre dónde y cómo almacena Microsoft los datos.
+> - No se puede cambiar la ubicación de almacenamiento de datos después de la configuración por primera vez.
+> - Revise la [Microsoft Defender para punto de conexión el almacenamiento de datos y la privacidad](data-storage-privacy.md) para obtener más información sobre dónde y cómo Microsoft almacena los datos.
 
 ### <a name="diagnostic-data-settings"></a>Configuración de datos de diagnóstico
 
 > [!NOTE]
-> Microsoft Defender para endpoint no requiere ningún nivel de diagnóstico específico mientras esté habilitado.
+> Microsoft Defender para punto de conexión no requiere ningún nivel de diagnóstico específico siempre que esté habilitado.
 
 Asegúrese de que el servicio de datos de diagnóstico está habilitado en todos los dispositivos de la organización.
-De forma predeterminada, este servicio está habilitado. Es una buena práctica comprobar para asegurarse de que los datos del sensor se obtienen de ellos.
+De forma predeterminada, este servicio está habilitado. Es recomendable comprobar para asegurarse de que obtendrá datos del sensor de ellos.
 
-#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Use la línea de comandos para comprobar el tipo Windows inicio del servicio de datos de diagnóstico
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Use la línea de comandos para comprobar el tipo de inicio del servicio de datos de diagnóstico Windows
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-2. Escriba el siguiente comando y presione **ENTRAR**:
+2. Escriba el siguiente comando y presione **Entrar**:
 
    ```console
    sc qc diagtrack
    ```
 
-   Si el servicio está habilitado, el resultado debería ser parecido a la siguiente captura de pantalla:
+   Si el servicio está habilitado, el resultado debe tener un aspecto similar al de la captura de pantalla siguiente:
 
    :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Resultado del comando de consulta sc para diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
-Deberá establecer el servicio para que se inicie automáticamente si el **START_TYPE no está** establecido en **AUTO_START**.
+Tendrá que establecer que el servicio se inicie automáticamente si el **START_TYPE** no está establecido en **AUTO_START**.
 
-#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Use la línea de comandos para establecer el Windows de datos de diagnóstico para que se inicie automáticamente
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Use la línea de comandos para establecer que el servicio de datos de diagnóstico de Windows se inicie automáticamente.
 
-1. Abra un símbolo del sistema con privilegios elevados en el extremo:
+1. Abra un símbolo del sistema con privilegios elevados en el punto de conexión:
     1. Vaya a **Inicio** y escriba **cmd**.
     2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-2. Escriba el siguiente comando y presione **ENTRAR**:
+2. Escriba el siguiente comando y presione **Entrar**:
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3. Se muestra un mensaje de éxito. Para comprobar el cambio, escriba el siguiente comando y presione **ENTRAR**:
+3. Se muestra un mensaje correcto. Para comprobar el cambio, escriba el siguiente comando y presione **Entrar**:
 
     ```console
     sc qc diagtrack
@@ -177,36 +178,36 @@ Deberá establecer el servicio para que se inicie automáticamente si el **START
 
 #### <a name="internet-connectivity"></a>Conectividad a Internet
 
-La conectividad a Internet en dispositivos es necesaria directamente o a través del proxy.
+La conectividad a Internet en los dispositivos es necesaria directamente o a través de proxy.
 
-El sensor Defender for Endpoint puede usar un ancho de banda promedio diario de 5 MB para comunicarse con el servicio en la nube de Defender for Endpoint e informar de los datos cibernéticos. Las actividades únicas, como las cargas de archivos y la colección de paquetes de investigación, no se incluyen en este ancho de banda promedio diario.
+El sensor de Defender para punto de conexión puede usar un ancho de banda medio diario de 5 MB para comunicarse con el servicio en la nube de Defender para punto de conexión e informar de los datos cibernéticos. Las actividades puntuales, como las cargas de archivos y la recopilación de paquetes de investigación, no se incluyen en este ancho de banda medio diario.
 
-Para obtener más información sobre las opciones de configuración de proxy adicionales, consulta [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](configure-proxy-internet.md).
+Para obtener más información sobre las opciones de configuración de proxy adicionales, consulte [Configuración del proxy de dispositivo y las opciones de conectividad a Internet](configure-proxy-internet.md).
 
 Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10 y Windows 11.
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus de Microsoft Defender de configuración
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus de Microsoft Defender requisito de configuración
 
-El agente de Defender for Endpoint depende de la capacidad de Antivirus de Microsoft Defender para examinar archivos y proporcionar información sobre ellos.
+El agente de Defender para punto de conexión depende de la capacidad de Antivirus de Microsoft Defender para examinar archivos y proporcionar información sobre ellos.
 
-Configurar las actualizaciones de inteligencia de seguridad en los dispositivos defender para puntos de conexión Antivirus de Microsoft Defender es el antimalware activo o no. Para obtener más información, vea [Manage Antivirus de Microsoft Defender updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configure las actualizaciones de inteligencia de seguridad en los dispositivos de Defender para punto de conexión independientemente de si Antivirus de Microsoft Defender es el antimalware activo o no. Para obtener más información, consulte [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-Cuando Antivirus de Microsoft Defender no es el antimalware activo de la organización y usa el servicio Defender for Endpoint, Antivirus de Microsoft Defender pasa al modo pasivo.
+Cuando Antivirus de Microsoft Defender no es el antimalware activo de su organización y usa el servicio Defender para punto de conexión, Antivirus de Microsoft Defender pasa al modo pasivo.
 
-Si su organización ha desactivado Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos que se incorpore deben excluirse de esta directiva de grupo.
+Si su organización ha desactivado Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos incorporados deben excluirse de esta directiva de grupo.
 
-Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad.](microsoft-defender-antivirus-compatibility.md)
+Si va a incorporar servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender deberá configurarse para pasar al modo pasivo o desinstalarse. La configuración depende de la versión del servidor. Para obtener más información, consulte [compatibilidad Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> La directiva de grupo normal no se aplica a la Protección contra alteraciones y los cambios en la configuración Antivirus de Microsoft Defender se omitirán cuando esté la protección contra alteraciones.
+> La directiva de grupo normal no se aplica a Tamper Protection y los cambios en la configuración de Antivirus de Microsoft Defender se omitirán cuando la protección contra alteraciones esté activada.
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus de Microsoft Defender controlador antimalware de inicio anticipado (ELAM) está habilitado
 
-Si está ejecutando Antivirus de Microsoft Defender como el producto antimalware principal en sus dispositivos, el agente defender para endpoint se incorporará correctamente.
+Si ejecuta Antivirus de Microsoft Defender como producto antimalware principal en los dispositivos, el agente de Defender para punto de conexión se incorporará correctamente.
 
-Si está ejecutando un cliente antimalware de terceros y usa soluciones de administración de dispositivos móviles o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM está habilitado Antivirus de Microsoft Defender. Para obtener más información, vea [Ensure that Antivirus de Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si ejecuta un cliente antimalware de terceros y usa soluciones de Mobile Administración de dispositivos o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de Antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que la directiva no deshabilita Antivirus de Microsoft Defender](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Configurar Microsoft Defender para la implementación de puntos de conexión](production-deployment.md)
+- [Configuración de Microsoft Defender para punto de conexión implementación](production-deployment.md)
 - [Incorporar dispositivos](onboard-configure.md)

@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
-ms.date: 03/17/2021
-ms.openlocfilehash: 45f9e9d9a174094badaae8087803fbdb3eec3f3b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.date: 05/24/2022
+ms.openlocfilehash: 0c1dd2048cbe38ecca162f361f3f0bdbc6c3861f
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731403"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670066"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
@@ -76,7 +76,8 @@ Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el <a 
 - Lector &mdash; **de cuentas de facturación** Puede ver cuentas.
 
 > [!Note]
-> Los roles de cuenta de facturación solo se aplican a las cuentas de facturación y no se aplican a otros escenarios de Centro de administración de Microsoft 365.
+> - Los roles de cuenta de facturación solo se aplican a las cuentas de facturación y no se aplican a otros escenarios de Centro de administración de Microsoft 365.
+> - Para las cuentas de facturación creadas dentro de Microsoft 365 registro, a los nuevos administradores globales, de facturación y de lector global se les conceden automáticamente distintos niveles de acceso. Puede administrar este acceso desde la página **Cuentas de facturación**  >  quitando explícitamente esos usuarios de la sección de asignación de roles en la parte inferior de la página.
 
 ## <a name="related-content"></a>Contenido relacionado
 
