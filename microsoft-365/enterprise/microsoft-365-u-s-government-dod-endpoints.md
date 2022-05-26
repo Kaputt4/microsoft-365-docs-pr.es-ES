@@ -3,7 +3,7 @@ title: Office 365 puntos de conexión del DOD del Gobierno de EE. UU.
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 05/04/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes solo deben ser accesibles para los clientes que usan Office 365 planes doD del Gobierno de EE. UU.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f380ab128861b9846a15be675745da0b6c1eb51e
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 9f245db1d2fe8531facd5f2f1f8fcca032e404ff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217506"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678950"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 puntos de conexión del DoD del Gobierno de EE. UU.
 
@@ -42,7 +42,7 @@ Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes 
 
 |Notas|Descargar|
 |---|---|
-|**Última actualización:** 28/04/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Descargar:** la lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**Última actualización:** 04/05/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Descargar:** la lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
 Comience por [Administración de puntos de conexión de Office 365](managing-office-365-endpoints.md) conocer nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de los puntos de conexión se actualizan según sea necesario al principio de cada mes con las nuevas direcciones IP y direcciones URL publicadas 30 días antes de su actividad. Esto permite a los clientes que aún no tienen actualizaciones automatizadas completar sus procesos antes de que se requiera una nueva conectividad. Los datos de punto de conexión también pueden actualizarse durante el mes si es necesario para administrar las solicitudes de soporte técnico, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en la página siguiente se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para acceder a estos datos, debe ir directamente al [servicio web](microsoft-365-ip-web-service.md) .
@@ -57,7 +57,7 @@ Estas son columnas de datos que se muestran:
 
 - **Categoría**: muestra si el conjunto de puntos de conexión se clasifica como "Optimizar", "Permitir" o "Predeterminado". Puede leer sobre estas categorías e instrucciones para administrarlas en [https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md). En esta columna también se enumeran los conjuntos de puntos de conexión necesarios para tener conectividad de red. En el caso de los conjuntos de puntos de conexión que no son necesarios para tener conectividad de red, se proporcionan notas en este campo para indicar qué funcionalidad faltaría si el conjunto de puntos de conexión está bloqueado. Si excluye un área de servicio completa, los conjuntos de puntos de conexión enumerados como necesarios no requieren conectividad.
 
-- **ER**: esto es **Sí** si el conjunto de puntos de conexión se admite a través de Azure ExpressRoute con prefijos de ruta Office 365. La comunidad BGP que incluye los prefijos de ruta que se muestran se alinea con el área de servicio enumerada. Cuando ER es **No**, esto significa que ExpressRoute no se admite para este conjunto de puntos de conexión. Sin embargo, no se debe suponer que no se anuncia ninguna ruta para un conjunto de puntos de conexión donde ER es **No**. Si tiene previsto usar Azure AD Conectar, lea la [sección consideraciones especiales](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) para asegurarse de que tiene la configuración de Azure AD Conectar adecuada.
+- **ER**: esto es **Sí** si el conjunto de puntos de conexión se admite a través de Azure ExpressRoute con prefijos de ruta Office 365. La comunidad BGP que incluye los prefijos de ruta que se muestran se alinea con el área de servicio enumerada. Cuando ER es **No**, esto significa que ExpressRoute no se admite para este conjunto de puntos de conexión. Sin embargo, no se debe suponer que no se anuncia ninguna ruta para un conjunto de puntos de conexión donde ER es **No**. Si tiene previsto usar Azure AD Conectar, lea la [sección consideraciones especiales](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) para asegurarse de que tiene la configuración de azure AD Conectar adecuada.
 
 - **Direcciones**: enumera los FQDN o nombres de dominio con caracteres comodín y los intervalos de direcciones IP para el conjunto de puntos de conexión. Tenga en cuenta que un intervalo de direcciones IP está en formato CIDR y puede incluir varias direcciones IP individuales en la red especificada.
 

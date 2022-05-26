@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649064"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678842"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 
@@ -31,9 +31,9 @@ En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft De
 - **Notificaciones de simulación**: estos mensajes se envían cuando los usuarios están inscritos en entrenamientos y como recordatorios de los entrenamientos necesarios.
 - **Notificaciones de refuerzo positivas**: estos mensajes se envían cuando los usuarios notifican un mensaje de suplantación de identidad simulado.
 
-Para ver la notificación de usuario final disponible, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>y, a continuación, vaya a **Correo electrónico &** pestaña **Notificaciones de usuario final** de entrenamiento \> de **simulación de ataques** de colaboración\>. Para ir directamente a la pestaña **Notificaciones del usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>.
+Para ver la notificación de usuario final disponible, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>y, a continuación, vaya a **Correo electrónico &** pestaña \> **Biblioteca de contenido de** **simulación** \> de colaboración \> y seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-La pestaña **Notificaciones de usuario final** tiene dos pestañas:
+**Las notificaciones de usuario final** tienen dos pestañas:
 
 - **Notificaciones globales**: contiene las notificaciones integradas y no modificables.
 - **Notificaciones de inquilino:** contiene las notificaciones personalizadas que ha creado.

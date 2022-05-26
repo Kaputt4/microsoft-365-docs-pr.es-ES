@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535490"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679622"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -42,12 +42,12 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
 2. En la pantalla del extractor de **Nueva entidad**, escriba el nombre de su extractor en el campo **Nombre del nuevo extractor**. Por ejemplo, llámelo **Fecha de inicio del servicio** si desea extraer la fecha de inicio del servicio de cada documento de renovación de contrato. También puede optar por reutilizar una columna creada previamente (por ejemplo, una columna de metadatos administrados).
 
-    De forma predeterminada, el tipo de columna es **Una sola línea de texto**. Si desea cambiar el tipo de columna, seleccione **Configuración** >  **avanzadaTipo de columna** y, a continuación, seleccione el tipo que desea usar.
+    De forma predeterminada, el tipo de columna es **Una sola línea de texto**. Si desea cambiar el tipo de columna, seleccione **Configuración** >  avanzada **Tipo de columna** y, a continuación, seleccione el tipo que desea usar.
 
     ![Captura de pantalla de la parte Configuración avanzada del panel Extractor de nueva entidad que muestra la opción Tipo de columna.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > Para los extractores con el tipo **de columna Línea única de texto**, el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca.
+    > Para los extractores con el tipo **de columna Línea única de texto**, el límite máximo de caracteres es 255. Los caracteres que seleccione que superen el límite se truncan. Para seleccionar más de 255 caracteres, elija el tipo **de columna Varias líneas de texto** al crear el extractor.
 
 3. Cuando haya terminado, seleccione **Crear**.
 
@@ -176,7 +176,7 @@ Si tiene entidades duplicadas y desea extraer solo un valor o un determinado nú
 
 6. Si desea eliminar una regla de refinamiento en un extractor, seleccione el extractor del que desea quitar la regla, seleccione **Refinar información extraída** y, a continuación, seleccione **Eliminar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un clasificador](create-a-classifier.md)
 

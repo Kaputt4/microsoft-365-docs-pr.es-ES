@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823198"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692769"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -53,11 +53,11 @@ Las condiciones siguientes se relacionan con todas las consultas.
 6. Un `429` código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
 
 > [!NOTE]
-> Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de inquilino. Estas cuotas son el mínimo.
+> Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son de todo el inquilino. Estas cuotas son el mínimo.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los permisos siguientes para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte [Acceso a las API de Microsoft 365 Defender Protection](api-access.md).
+Se requiere uno de los permisos siguientes para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte [Acceso a las API de protección de Microsoft 365 Defender](api-access.md).
 
 Tipo de permiso | Permiso | Nombre para mostrar del permiso
 -|-|-
@@ -89,7 +89,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros sig
 
 Parámetro | Tipo | Descripción
 -|-|-
-Query | Texto | Consulta que se va a ejecutar. **Nota: obligatorio**
+Consulta | Texto | Consulta que se va a ejecutar. **(obligatorio)**
 
 ## <a name="response"></a>Respuesta
 
@@ -105,7 +105,7 @@ El objeto de respuesta contiene tres propiedades de nivel superior:
 
 En el ejemplo siguiente, un usuario envía la consulta siguiente y recibe un objeto de respuesta de API que contiene `Stats`, `Schema`y `Results`.
 
-### <a name="query"></a>Query
+### <a name="query"></a>Consulta
 
 ```json
 {

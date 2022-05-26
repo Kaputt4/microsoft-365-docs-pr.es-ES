@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db45e53534b323e32b77197ed568324c5d692615
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 07ebfc55df3a03d3447e12f540b7c200de16ae51
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535469"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679019"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión
 
@@ -30,7 +30,7 @@ ms.locfileid: "65535469"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
+> [!NOTE]
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
@@ -70,8 +70,6 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 - Puede tardar hasta 15 minutos desde el momento en que se envía el comando de Microsoft 365 Defender a cuando se activa en el dispositivo.
 
 - La notificación se enviará al usuario final cuando comience el modo de solución de problemas y cuando finalice el modo de solución de problemas. También se enviará una advertencia notificando que finalizará pronto.
-
-- Mientras el modo de solución de problemas está activo, detección y respuesta de puntos de conexión (EDR) no bloqueará ningún archivo, carpetas o procesos que Antivirus de Microsoft Defender haya excluido de los exámenes.
 
 - El principio y el final del modo de solución de problemas se identificarán en la **escala de tiempo del** dispositivo en la página del dispositivo.
 

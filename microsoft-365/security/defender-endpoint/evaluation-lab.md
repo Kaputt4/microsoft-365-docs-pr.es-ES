@@ -1,7 +1,7 @@
 ---
-title: Laboratorio de evaluación de Microsoft Defender para puntos de conexión
-description: Obtenga información sobre las capacidades de Microsoft Defender para puntos de conexión, ejecute simulaciones de ataques y vea cómo evita, detecta y corrige las amenazas.
-keywords: evaluar Microsoft Defender para endpoint, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
+title: laboratorio de evaluación de Microsoft Defender para punto de conexión
+description: Obtenga información sobre las funcionalidades de Microsoft Defender para punto de conexión, ejecute simulaciones de ataque y vea cómo impide, detecta y corrige las amenazas.
+keywords: evaluate Microsoft Defender para punto de conexión, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472889"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679448"
 ---
-# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
+# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratorio de evaluación de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,85 +33,85 @@ ms.locfileid: "64472889"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-La realización de una evaluación completa de productos de seguridad puede ser un proceso complejo que requiere una configuración de dispositivos y entornos engorrosos antes de poder realizar una simulación de ataque de un extremo a otro. Agregar a la complejidad es el desafío de realizar un seguimiento de dónde se reflejan las actividades de simulación, las alertas y los resultados durante la evaluación.
+La realización de una evaluación completa de productos de seguridad puede ser un proceso complejo que requiere una configuración de entorno y dispositivo complicada antes de que se pueda realizar realmente una simulación de ataque de un extremo a otro. Agregar a la complejidad es el desafío del seguimiento en el que las actividades de simulación, las alertas y los resultados se reflejan durante la evaluación.
 
-El laboratorio de evaluación de Microsoft Defender para endpoints está diseñado para eliminar las complejidades de la configuración de dispositivos y entornos para que puedas centrarte en evaluar las capacidades de la plataforma, ejecutar simulaciones y ver las características de prevención, detección y corrección en acción.
+El laboratorio de evaluación de Microsoft Defender para punto de conexión está diseñado para eliminar las complejidades de la configuración de dispositivos y entornos para que pueda centrarse en evaluar las funcionalidades de la plataforma, ejecutar simulaciones y ver las características de prevención, detección y corrección en acción.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUM]
 
-Con la experiencia de configuración simplificada, puede centrarse en ejecutar sus propios escenarios de prueba y las simulaciones pre-realizadas para ver el rendimiento de Defender for Endpoint.
+Con la experiencia de configuración simplificada, puede centrarse en la ejecución de sus propios escenarios de prueba y en las simulaciones creadas previamente para ver cómo funciona Defender para punto de conexión.
 
-Tendrás acceso completo a las potentes capacidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que te permite probar la pila de protección completa que ofrece Defender for Endpoint.
+Tendrá acceso completo a las eficaces funcionalidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que le permite probar la pila de protección completa que Ofrece Defender para punto de conexión.
 
-Puede agregar dispositivos Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu) que vienen preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office 2019 Standard.
+Puede agregar dispositivos Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu) preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office estándar de 2019.
 
-También puedes instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las capacidades de Defender for Endpoint sin tener que salir del portal.
+También puede instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las funcionalidades de Defender para punto de conexión sin tener que salir del portal.
 
-Instale el simulador preferido, ejecute escenarios en el laboratorio de evaluación y vea al instante el rendimiento de la plataforma, todo disponible cómodamente sin costo adicional para usted. También tendrás acceso conveniente a una amplia variedad de simulaciones a las que puedes acceder y ejecutar desde el catálogo de simulaciones.
+Instale su simulador preferido, ejecute escenarios en el laboratorio de evaluación y vea al instante cómo funciona la plataforma, todo ello convenientemente disponible sin costo adicional para usted. También tendrá acceso cómodo a una amplia matriz de simulaciones a las que puede acceder y ejecutar desde el catálogo de simulaciones.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Tendrás que cumplir los requisitos de [licencia o tener](minimum-requirements.md#licensing-requirements) acceso de prueba a Microsoft Defender para endpoint para acceder al laboratorio de evaluación.
+Deberá cumplir los [requisitos de licencia](minimum-requirements.md#licensing-requirements) o tener acceso de prueba a Microsoft Defender para punto de conexión para acceder al laboratorio de evaluación.
 
-Debe tener permisos **administrar la configuración de** seguridad para:
+Debe tener permisos **de administración de la configuración de seguridad** para:
 
-- Crear el laboratorio
-- Crear dispositivos
+- Creación del laboratorio
+- Creación de dispositivos
 - Restablecer contraseña
-- Crear simulaciones
+- Creación de simulaciones
 
-Si habilitó el control de acceso basado en roles (RBAC) y creó al menos un grupo de máquinas, los usuarios deben tener acceso a Todos los grupos de máquinas.
+Si ha habilitado el control de acceso basado en rol (RBAC) y ha creado al menos un grupo de máquinas, los usuarios deben tener acceso a Todos los grupos de máquinas.
 
-Para obtener más información, vea [Create and manage roles](user-roles.md).
+Para obtener más información, consulte [Creación y administración de roles](user-roles.md).
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
-## <a name="get-started-with-the-lab"></a>Introducción al laboratorio
+## <a name="get-started-with-the-lab"></a>Comenzar con el laboratorio
 
 Puede acceder al laboratorio desde el menú. En el menú de navegación, seleccione **Evaluación y tutoriales > laboratorio de evaluación**.
 
 > [!NOTE]
 >
-> - Según el tipo de estructura del entorno que selecciones, los dispositivos estarán disponibles para el número especificado de horas desde el día de la activación.
-> - Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba. Cuando hayas usado los dispositivos aprovisionados y los hayas eliminado, puedes solicitar más dispositivos.
+> - Dependiendo del tipo de estructura de entorno que seleccione, los dispositivos estarán disponibles para el número especificado de horas desde el día de activación.
+> - Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba. Cuando haya usado los dispositivos aprovisionados y los haya eliminado, puede solicitar más dispositivos.
 > - Puede solicitar recursos de laboratorio una vez al mes.
 
-¿Ya tienes un laboratorio? Asegúrate de habilitar los nuevos simuladores de amenazas y de tener dispositivos activos.
+¿Ya tienes un laboratorio? Asegúrese de habilitar los nuevos simuladores de amenazas y de tener dispositivos activos.
 
-## <a name="setup-the-evaluation-lab"></a>Configurar el laboratorio de evaluación
+## <a name="setup-the-evaluation-lab"></a>Configuración del laboratorio de evaluación
 
-1. En el panel de navegación, seleccione **Evaluación & tutoriales** \> **Laboratorio de evaluación** y, a continuación, seleccione **Laboratorio de instalación**.
+1. En el panel de navegación, seleccione **Evaluación & tutoriales** \> **Laboratorio de evaluación** y, a continuación, seleccione **Laboratorio de configuración**.
 
    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Página de bienvenida del laboratorio de evaluación" lightbox="../../media/evaluationtutormenu.png":::
 
-2. Según tus necesidades de evaluación, puedes elegir configurar un entorno con menos dispositivos durante un período más largo o más dispositivos durante un período más corto. Seleccione la configuración de laboratorio preferida y, a continuación, **seleccione Siguiente**.
+2. En función de las necesidades de evaluación, puede optar por configurar un entorno con menos dispositivos durante un período más largo o más dispositivos durante un período más corto. Seleccione la configuración de laboratorio que prefiera y, a continuación, seleccione **Siguiente**.
 
     :::image type="content" source="images/lab-creation-page.png" alt-text="Opciones de configuración de laboratorio" lightbox="images/lab-creation-page.png":::
 
-3. (Opcional) Puede elegir instalar simuladores de amenazas en el laboratorio.
+3. (Opcional) Puede optar por instalar simuladores de amenazas en el laboratorio.
 
-    :::image type="content" source="images/install-agent.png" alt-text="Página del agente de simuladores de instalación" lightbox="images/install-agent.png":::
+    :::image type="content" source="images/install-agent.png" alt-text="Página del agente de instalación de simuladores" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
-   > Primero deberá aceptar y dar su consentimiento a los términos y las instrucciones de uso compartido de información.
+   > Primero deberá aceptar y dar su consentimiento a los términos y las declaraciones de uso compartido de información.
 
-4. Selecciona el agente de simulación de amenazas que quieras usar y escribe los detalles. También puedes elegir instalar simuladores de amenazas más adelante. Si elige instalar agentes de simulación de amenazas durante la configuración del laboratorio, podrá disfrutar de la ventaja de que se instalen cómodamente en los dispositivos que agregue.
+4. Seleccione el agente de simulación de amenazas que desea usar y escriba los detalles. También puede optar por instalar simuladores de amenazas más adelante. Si decide instalar agentes de simulación de amenazas durante la configuración del laboratorio, disfrutará de la ventaja de que se instalen convenientemente en los dispositivos que agregue.
 
-   :::image type="content" source="images/lab-setup-summary.png" alt-text="La página de resumen" lightbox="images/lab-setup-summary.png":::
+   :::image type="content" source="images/lab-setup-summary.png" alt-text="Página de resumen" lightbox="images/lab-setup-summary.png":::
 
-5. Revise el resumen y seleccione **Laboratorio de instalación**.
+5. Revise el resumen y seleccione **Laboratorio de configuración**.
 
-Una vez completado el proceso de configuración del laboratorio, puede agregar dispositivos y ejecutar simulaciones.
+Una vez completado el proceso de instalación del laboratorio, puede agregar dispositivos y ejecutar simulaciones.
 
 ## <a name="add-devices"></a>Agregar dispositivos
 
-Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
+Al agregar un dispositivo a su entorno, Defender para punto de conexión configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
 
-El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals.
+El dispositivo se configurará con la versión más actualizada del sistema operativo y Office estándar de 2019, así como con otras aplicaciones como Java, Python y SysIntenals.
 
-Si optó por agregar un simulador de amenazas durante la configuración del laboratorio, todos los dispositivos tendrán instalado el agente del simulador de amenazas en los dispositivos que agregue.
+Si decide agregar un simulador de amenazas durante la configuración del laboratorio, todos los dispositivos tendrán instalado el agente del simulador de amenazas en los dispositivos que agregue.
 
-El dispositivo se incorporará automáticamente al espacio empresarial con los componentes de seguridad Windows recomendados activados y en modo auditoría, sin ningún esfuerzo de su parte.
+El dispositivo se incorporará automáticamente al inquilino con los componentes de seguridad de Windows recomendados activados y en modo de auditoría, sin ningún esfuerzo por su parte.
 
 Los siguientes componentes de seguridad están preconfigurados en los dispositivos de prueba:
 
@@ -125,110 +125,132 @@ Los siguientes componentes de seguridad están preconfigurados en los dispositiv
 - [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus de Microsoft Defender estará en (no en modo auditoría). Si Antivirus de Microsoft Defender te impide ejecutar la simulación, puedes desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Antivirus de Microsoft Defender estará activado (no en modo de auditoría). Si Antivirus de Microsoft Defender impide ejecutar la simulación, puede desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configurar la protección always-on](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-La configuración de investigación automatizada dependerá de la configuración del espacio empresarial. Se configurará para que sea semiautoautorista de forma predeterminada. Para obtener más información, vea [Overview of Automated investigations](automated-investigations.md).
+La configuración de investigación automatizada dependerá de la configuración del inquilino. Se configurará para que esté semiauto automatizado de forma predeterminada. Para obtener más información, consulte [Introducción a las investigaciones automatizadas](automated-investigations.md).
 
 > [!NOTE]
-> La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
+> La conexión a los dispositivos de prueba se realiza mediante RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
-1. En el panel, selecciona **Agregar dispositivo**.
+1. En el panel, seleccione **Agregar dispositivo**.
 
-2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
+2. Elija el tipo de dispositivo que se va a agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
 
    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Configuración del laboratorio con opciones de dispositivo" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
-   > Si algo sale mal con el proceso de creación del dispositivo, se te notificará y tendrás que enviar una nueva solicitud. Si se produce un error en la creación del dispositivo, no se contará con la cuota total permitida.
+   > Si algo va mal con el proceso de creación de dispositivos, se le notificará y tendrá que enviar una nueva solicitud. Si se produce un error en la creación del dispositivo, no se contará con la cuota total permitida.
 
-3. Se muestran los detalles de conexión. Selecciona **Copiar** para guardar la contraseña del dispositivo.
+3. Se muestran los detalles de conexión. Seleccione **Copiar** para guardar la contraseña del dispositivo.
 
    > [!NOTE]
    > La contraseña solo se muestra una vez. Asegúrese de guardarlo para su uso posterior.
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="El dispositivo agregado con detalles de conexión" lightbox="../../media/add-machine-eval-lab-new.png":::
 
-4. Se inicia la configuración del dispositivo. Esto puede tardar aproximadamente 30 minutos.
+4. Comienza la configuración del dispositivo. Esto puede tardar aproximadamente 30 minutos.
 
-5. Consulta el estado de los dispositivos de prueba, los niveles de riesgo y exposición y el estado de las instalaciones de simulador seleccionando la **pestaña Dispositivos** .
+5. Para ver el estado de los dispositivos de prueba, los niveles de riesgo y exposición, y el estado de las instalaciones del simulador, seleccione la pestaña **Dispositivos** .
 
-   :::image type="content" source="images/machines-tab.png" alt-text="Ficha Dispositivos" lightbox="images/machines-tab.png":::
+   :::image type="content" source="images/machines-tab.png" alt-text="Pestaña Dispositivos" lightbox="images/machines-tab.png":::
     
 
    > [!TIP]
-   > En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
+   > En la columna **Estado del simulador** , puede mantener el puntero sobre el icono de información para conocer el estado de instalación de un agente.
+
+
+## <a name="add-a-domain-controller-preview"></a>Agregar un controlador de dominio (versión preliminar)
+
+> [!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+Agregue un controlador de dominio para ejecutar escenarios complejos, como movimiento lateral y ataques de varias fases en varios dispositivos.
+
+
+>[!NOTE]
+>La compatibilidad con dominios solo está disponible en el portal de Microsoft 365 Defender (security.microsoft.com).
+
+1. En el panel, seleccione **Agregar dispositivo**.
+
+2. Seleccione **Windows Server 2019** y, a continuación, seleccione **Establecer como controlador de dominio**. 
+
+3. Cuando se haya aprovisionado el controlador de dominio, podrá crear dispositivos unidos a un dominio haciendo clic en **Agregar dispositivo**. A continuación, seleccione Windows 10/Windows 11 y seleccione **Unirse al dominio**. 
+
+>[!NOTE]
+>Solo se puede vivir un controlador de dominio a la vez. El dispositivo de controlador de dominio permanecerá en directo siempre y cuando haya un dispositivo en directo conectado a él.
+
 
 
 ## <a name="request-for-more-devices"></a>Solicitud de más dispositivos
 
-Cuando se usan y eliminan todos los dispositivos existentes, puedes solicitar más dispositivos. Puede solicitar recursos de laboratorio una vez al mes.
+Cuando se usan y eliminan todos los dispositivos existentes, puede solicitar más dispositivos. Puede solicitar recursos de laboratorio una vez al mes.
 
 1. En el panel del laboratorio de evaluación, seleccione **Solicitar más dispositivos**.
 
-   :::image type="content" source="images/request-more-devices.png" alt-text="La opción solicitar más dispositivos" lightbox="images/request-more-devices.png":::
+   :::image type="content" source="images/request-more-devices.png" alt-text="Opción de solicitud para más dispositivos" lightbox="images/request-more-devices.png":::
 
 2. Elija la configuración.
 3. Envíe la solicitud.
 
-Cuando la solicitud se envía correctamente, verá un banner de confirmación verde y la fecha del último envío.
+Cuando la solicitud se envíe correctamente, verá un banner de confirmación verde y la fecha del último envío.
 
-Puede encontrar el estado de la solicitud en la pestaña **Acciones** del usuario, que se aprobará en cuestión de horas.
+Puede encontrar el estado de la solicitud en la pestaña **Acciones del usuario** , que se aprobará en cuestión de horas.
 
-Cuando se aprueben, los dispositivos solicitados se agregarán a la configuración del laboratorio y podrás crear más dispositivos.
+Cuando se aprueben, los dispositivos solicitados se agregarán a la configuración del laboratorio y podrá crear más dispositivos.
 
 > [!TIP]
-> Para obtener más información sobre su laboratorio, no olvide echar un vistazo a nuestra biblioteca de simulaciones.
+> Para sacar más partido del laboratorio, no olvide consultar nuestra biblioteca de simulaciones.
 
-## <a name="simulate-attack-scenarios"></a>Simular escenarios de ataque
+## <a name="simulate-attack-scenarios"></a>Simulación de escenarios de ataque
 
-Usa los dispositivos de prueba para ejecutar tus propias simulaciones de ataque conectándose a ellos.
+Use los dispositivos de prueba para ejecutar sus propias simulaciones de ataque conectándose a ellos.
 
-Puedes simular escenarios de ataque con:
+Puede simular escenarios de ataque mediante:
 
-- [Escenarios de ataque "Do It Yourself"](https://security.microsoft.com/tutorials/all)
+- Los [escenarios de ataque "Do It Yourself"](https://security.microsoft.com/tutorials/all)
 - Simuladores de amenazas
 
-También puede usar búsqueda avanzada [para consultar](advanced-hunting-overview.md) datos y [análisis de](threat-analytics.md) amenazas para ver informes sobre amenazas emergentes.
+También puede usar [la búsqueda avanzada](advanced-hunting-overview.md) para consultar datos y [análisis de amenazas](threat-analytics.md) para ver informes sobre amenazas emergentes.
 
-### <a name="do-it-yourself-attack-scenarios"></a>Escenarios de ataque do-it-yourself
+### <a name="do-it-yourself-attack-scenarios"></a>Escenarios de ataque por sí mismo
 
-Si está buscando una simulación pre-realizada, puede usar nuestros [escenarios de ataque "Do It Yourself"](https://security.microsoft.com/tutorials/all). Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
+Si está buscando una simulación pre-hecha, puede usar nuestros escenarios de [ataque "Do It Yourself"](https://security.microsoft.com/tutorials/all). Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las funcionalidades de Defender para punto de conexión y le guiarán por la experiencia de investigación.
 
 > [!NOTE]
-> La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
+> La conexión a los dispositivos de prueba se realiza mediante RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
-1. Conectar a tu dispositivo y ejecuta una simulación de ataque seleccionando **Conectar**.
+1. Conectar al dispositivo y ejecute una simulación de ataque seleccionando **Conectar**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="El Conectar para los dispositivos de prueba" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="images/test-machine-table.png" alt-text="Botón Conectar para los dispositivos de prueba" lightbox="images/test-machine-table.png":::
 
 
-   :::image type="content" source="images/remote-connection.png" alt-text="Pantalla de conexión de escritorio remoto" lightbox="images/remote-connection.png":::
+   :::image type="content" source="images/remote-connection.png" alt-text="Pantalla de conexión a Escritorio remoto" lightbox="images/remote-connection.png":::
 
     Para **dispositivos Linux**: deberá usar un cliente SSH local y el comando proporcionado. 
 
 
     > [!NOTE]
-    > Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú:
+    > Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer contraseña** en el menú:
     >
     > :::image type="content" source="images/reset-password-test-machine.png" alt-text="La opción Restablecer contraseña" lightbox="images/reset-password-test-machine.png":::
     >
-    > El dispositivo cambiará su estado a "Ejecutar el restablecimiento de contraseña" y, a continuación, se te presentará la nueva contraseña en unos minutos.
+    > El dispositivo cambiará su estado a "Ejecución del restablecimiento de contraseña" y, a continuación, se le presentará la nueva contraseña en unos minutos.
 
-3. Escribe la contraseña que se ha mostrado durante el paso de creación del dispositivo.
+3. Escriba la contraseña que se mostró durante el paso de creación del dispositivo.
 
-   :::image type="content" source="images/enter-password.png" alt-text="La pantalla en la que se escriben las credenciales" lightbox="images/enter-password.png":::
+   :::image type="content" source="images/enter-password.png" alt-text="Pantalla en la que se escriben las credenciales" lightbox="images/enter-password.png":::
 
-4. Ejecuta simulaciones de ataques do-it-yourself en el dispositivo.
+4. Ejecute simulaciones de ataque do-it-yourself en el dispositivo.
 
 ### <a name="threat-simulator-scenarios"></a>Escenarios del simulador de amenazas
 
-Si optó por instalar cualquiera de los simuladores de amenazas compatibles durante la configuración del laboratorio, puede ejecutar las simulaciones integradas en los dispositivos de laboratorio de evaluación.
+Si decide instalar cualquiera de los simuladores de amenazas admitidos durante la configuración del laboratorio, puede ejecutar las simulaciones integradas en los dispositivos de laboratorio de evaluación.
 
-Ejecutar simulaciones de amenazas con plataformas de terceros es una buena manera de evaluar las capacidades de Punto de conexión de Microsoft Defender en los límites de un entorno de laboratorio.
+La ejecución de simulaciones de amenazas mediante plataformas de terceros es una buena manera de evaluar las capacidades Microsoft Defender para punto de conexión dentro de los límites de un entorno de laboratorio.
 
 > [!NOTE]
 >
-> Antes de poder ejecutar simulaciones, asegúrese de que se cumplen los siguientes requisitos:
+> Para poder ejecutar simulaciones, asegúrese de que se cumplen los siguientes requisitos:
 >
 > - Los dispositivos deben agregarse al laboratorio de evaluación
 > - Los simuladores de amenazas deben instalarse en el laboratorio de evaluación
@@ -239,41 +261,41 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 
    :::image type="content" source="images/select-simulator.png" alt-text="Selección del simulador de amenazas" lightbox="images/select-simulator.png":::
 
-3. Elija una simulación o busque en la galería de simulación para examinar las simulaciones disponibles.
+3. Elija una simulación o examine la galería de simulaciones para examinar las simulaciones disponibles.
 
-    Puede acceder a la galería de simulación desde:
-    - El panel de evaluación principal en el icono **de información general de Simulaciones** o
-    - Al navegar desde el panel de navegación Evaluación **y tutoriales De simulación** \> **& tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
+    Puede llegar a la galería de simulación desde:
+    - El panel de evaluación principal del icono **información general sobre simulaciones** o
+    - Si navega desde el panel de navegación **Evaluación y tutoriales** \> **Simulación & tutoriales**, seleccione **Catálogo de simulaciones**.
 
-4. Selecciona los dispositivos en los que quieres ejecutar la simulación.
+4. Seleccione los dispositivos en los que desea ejecutar la simulación.
 
 5. Seleccione **Crear simulación**.
 
-6. Para ver el progreso de una simulación, seleccione la **pestaña Simulaciones** . Vea el estado de simulación, las alertas activas y otros detalles.
+6. Para ver el progreso de una simulación, seleccione la pestaña **Simulaciones** . Vea el estado de la simulación, las alertas activas y otros detalles.
 
    :::image type="content" source="images/simulations-tab.png" alt-text="Pestaña Simulaciones" lightbox="images/simulations-tab.png":::
 
-Después de ejecutar las simulaciones, te animamos a recorrer la barra de progreso del laboratorio y explorar **Microsoft Defender for Endpoint desencadenando una investigación y corrección automatizadas**. Consulte las pruebas recopiladas y analizadas por la característica.
+Después de ejecutar las simulaciones, le recomendamos que recorra la barra de progreso del laboratorio y explore **Microsoft Defender para punto de conexión desencadenó una investigación y corrección automatizadas**. Consulte las pruebas recopiladas y analizadas por la característica.
 
-Busca pruebas de ataque mediante la búsqueda avanzada mediante el lenguaje de consulta enriquecido y telemetría sin procesar y echa un vistazo a algunas amenazas de todo el mundo documentadas en análisis de amenazas.
+Busque pruebas de ataque mediante la búsqueda avanzada mediante el lenguaje de consulta enriquecido y la telemetría sin procesar y consulte algunas amenazas de todo el mundo documentadas en Análisis de amenazas.
 
 ## <a name="simulation-gallery"></a>Galería de simulación
 
-Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma desde el portal.
+Microsoft Defender para punto de conexión se ha asociado con varias plataformas de simulación de amenazas para proporcionarle acceso cómodo para probar las funcionalidades de la plataforma desde el portal.
 
-Para ver todas las simulaciones disponibles, vaya al catálogo  **Simulaciones y tutoriales** \> Simulaciones **desde el**  menú.
+Para ver todas las simulaciones disponibles, vaya al catálogo  **Simulaciones y tutoriales** \> **Simulaciones**  en el menú.
 
 Se muestra una lista de agentes de simulación de amenazas de terceros compatibles y se proporcionan tipos específicos de simulaciones junto con descripciones detalladas en el catálogo.
 
-Puede ejecutar cómodamente cualquier simulación disponible directamente desde el catálogo.
+Puede ejecutar convenientemente cualquier simulación disponible directamente desde el catálogo.
 
 :::image type="content" source="images/simulations-catalog.png" alt-text="Catálogo de simulaciones" lightbox="images/simulations-catalog.png":::
 
-Cada simulación incluye una descripción detallada del escenario de ataque y referencias como las técnicas de ataque MITRE usadas y las consultas avanzadas de búsqueda de ejemplo que se ejecutan.
+Cada simulación incluye una descripción detallada del escenario de ataque y referencias como las técnicas de ataque de MITRE usadas y las consultas de búsqueda avanzada de ejemplo que se ejecutan.
 
 **Ejemplos:**
 
-:::image type="content" source="images/simulation-details-aiq.png" alt-text="Ejemplo del panel de detalles de descripción de la simulación para métodos de persistencia" lightbox="images/simulation-details-aiq.png":::
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="Ejemplo del panel de detalles de la descripción de la simulación para los métodos de persistencia" lightbox="images/simulation-details-aiq.png":::
 
 :::image type="content" source="images/simulation-details-sb.png" alt-text="Detalles de la descripción de la simulación para APT29" lightbox="images/simulation-details-sb.png":::
 
@@ -283,19 +305,19 @@ Los informes de laboratorio resumen los resultados de las simulaciones realizada
 
 :::image type="content" source="images/eval-report.png" alt-text="Informe de evaluación" lightbox="images/eval-report.png":::
 
-De un vistazo, podrás ver rápidamente:
+De un vistazo, podrá ver rápidamente lo siguiente:
 
 - Incidentes que se desencadenaron
 - Alertas generadas
-- Evaluaciones en el nivel de exposición
+- Evaluaciones sobre el nivel de exposición
 - Categorías de amenazas observadas
 - Fuentes de detección
 - Investigaciones automatizadas
 
 ## <a name="provide-feedback"></a>Enviar comentarios
 
-Sus comentarios nos ayudan a mejorar la protección del entorno frente a ataques avanzados. Comparta la experiencia y las impresiones de las capacidades del producto y los resultados de evaluación.
+Sus comentarios nos ayudan a mejorar la protección de su entorno frente a ataques avanzados. Comparta su experiencia e impresiones de las funcionalidades del producto y los resultados de evaluación.
 
-Háganos saber lo que piensa, seleccionando **Proporcionar comentarios**.
+Háganos saber lo que piensa; para ello, seleccione **Proporcionar comentarios**.
 
-:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="La página de comentarios" lightbox="images/send-us-feedback-eval-lab.png":::
+:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="Página de comentarios" lightbox="images/send-us-feedback-eval-lab.png":::

@@ -96,6 +96,8 @@
       href: m365bp-security-incident-management.md
     - name: Revisión de las recomendaciones de seguridad
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Revisión de las amenazas detectadas en los dispositivos
+      href: m365bp-review-threats-take-action.md
     - name: Revisión de las acciones de corrección en dispositivos
       href: m365bp-review-remediation-actions-devices.md
     - name: Responder a una cuenta de correo electrónico en peligro

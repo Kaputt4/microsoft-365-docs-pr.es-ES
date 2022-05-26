@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Proteja el correo electrónico y los datos empresariales de ciberamenazas, incluidos ransomware, suplantación de identidad (phishing) y datos adjuntos malintencionados.
-ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637679"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679656"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Procedimientos recomendados para proteger Microsoft 365 para empresas
 
@@ -352,5 +352,5 @@ Para obtener más información, consulte los siguientes recursos:
 ## <a name="related-content"></a>Contenido relacionado
 
 [Autenticación multifactor para Microsoft 365](multi-factor-authentication-microsoft-365.md) (artículo)\
-[Administración y supervisión de cuentas de prioridad](../setup/priority-accounts.md) (artículo)\
+[Administración y supervisión de cuentas de prioridad](/microsoft-365/security/office-365-security/configure-review-priority-account) (artículo)\
 [Microsoft 365 informes en el centro de administración](../activity-reports/activity-reports.md) (vídeo)

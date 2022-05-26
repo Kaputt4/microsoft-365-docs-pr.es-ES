@@ -24,13 +24,13 @@ ms.custom:
 - admindeeplinkSPO
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en la suscripción de Microsoft 365. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint.
-ms.date: 04/02/2021
-ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.date: 05/24/2022
+ms.openlocfilehash: a4a86966ccee1632f60b687696b9062ca3446778
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737472"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678885"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Agregar más SharePoint almacenamiento a la suscripción
 
@@ -53,8 +53,6 @@ Debe ser un administrador global o SharePoint para realizar las tareas de este a
 
 2. En la esquina superior derecha de la página, puede ver la cantidad de almacenamiento empleado en todos los sitios, así como el almacenamiento total de su suscripción. Si su organización ha configurado Multi-Geo en Office 365, la barra también muestra la cantidad de almacenamiento que se usa en todas las ubicaciones geográficas.
 
-   ![Storage barra en la página Sitios activos.](/sharepoint/sharepointonline/media/active-sites-storage-bar)
-
    > [!NOTE]
    > El almacenamiento usado no incluye cambios realizados en las últimas 24-48 horas.
 
@@ -72,7 +70,7 @@ Si aún no ha comprado almacenamiento adicional para su suscripción, puede hace
 4. Si es necesario, elija la suscripción base y escriba el número de gigabytes de almacenamiento que desea agregar.
 5. Seleccione **Desteger ahora**.
 6. En la página **¿Cómo se ve esto?** , compruebe el número de gigabytes de almacenamiento que seleccionó, revise la información de precios y, a continuación, seleccione **Siguiente**.
-7. En la página **Completar pedido** , compruebe el total. Si necesita realizar cambios, seleccione **Editar pedido**. Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione Place order Go to Admin Home ( **Realizar pedido** \> **Ir a la página principal del administrador**).
+7. En la página **Completar pedido** , compruebe el total. Si necesita realizar cambios, seleccione **Editar pedido**. Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione **Realizar pedido** \> **Ir a Administración Inicio**.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Aumentar o disminuir el almacenamiento adicional
 
@@ -92,7 +90,7 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 - Office 365 Enterprise E1
 - Office 365 Enterprise E2
 - Office 365 Enterprise E3
-- Office 365 Enterprise E4
+<!-- Office 365 Enterprise E4 -->
 - Office 365 Enterprise E5
 - Office 365 A3 (profesores)
 - Office 365 A5 (profesores)
@@ -112,4 +110,4 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administrar límites de almacenamiento de sitio](/sharepoint/manage-site-collection-storage-limits) (artículo)\
+[Administración de límites de almacenamiento de sitio](/sharepoint/manage-site-collection-storage-limits) (artículo)

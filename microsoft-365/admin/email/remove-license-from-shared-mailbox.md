@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Quite una licencia de un buzón compartido para asignarla a otro usuario o devolverla para que no la pague. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5248c7fdb807a91ab2a9a7dfd44bdb375eb7d0f0
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091927"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678928"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -41,7 +41,6 @@ Los buzones compartidos normalmente no requieren una licencia. Siga estas instru
 > - El buzón compartido tiene más de 50 GB de almacenamiento en uso.
 > - El buzón compartido usa el archivado local.
 > - El buzón compartido se coloca en suspensión por juicio.
-> - El buzón compartido tiene asignada una licencia de Microsoft 365 Defender.
 > 
 > Para obtener instrucciones paso a paso sobre cómo asignar licencias, consulte Asignación de [licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users). 
 

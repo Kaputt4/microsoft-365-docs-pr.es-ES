@@ -1,5 +1,5 @@
 ---
-title: Lista de plantillas del Administrador de cumplimiento de Microsoft Purview
+title: Microsoft Purview lista de plantillas del Administrador de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: El Administrador de cumplimiento de Microsoft Purview proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Microsoft Purview Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
+ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971503"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692791"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -35,7 +35,7 @@ ms.locfileid: "64971503"
 
 ## <a name="overview"></a>Información general
 
-[El Administrador de cumplimiento de Microsoft Purview](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
+[Microsoft Purview Compliance Manager](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
 Las plantillas se agregan al Administrador de cumplimiento a medida que se promulgan nuevas leyes y regulaciones. El Administrador de cumplimiento también actualiza sus plantillas cuando cambian las leyes o regulaciones subyacentes. Obtenga más información sobre cómo [revisar y aceptar actualizaciones](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -376,7 +376,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - EudraLex - Las normas que rigen los medicamentos en la Unión Europea  
 - Agencia europea de seguridad de la información y redes (ENISA): marco de control de la información de informática en la nube  
 - Finlandia - Ley de protección de datos  
-- Criterios finés para la evaluación de la seguridad de la información de Cloud Services
+- Criterios finlandeses para la evaluación de la seguridad de la información de Cloud Services
 - Francia- La Ley de protección de datos  
 - Ley de Protección de datos personales de Georgia  
 - Alemania: texto anotado de los requisitos mínimos para la administración de riesgos  
@@ -397,6 +397,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Reglamento de protección de datos de Nigeria  
 - Omán- Ley de transacciones electrónicas  
 - Directiva de seguridad en la nube de Qatar
+- Qatar National Information Assurance (NIA)
 - Rumania - Ley de protección de datos 190/2018  
 - Rusia - Ley Federal 149-FZ sobre información, tecnología de la información y seguridad de la información
 - [Ley Federal de la Federación de Rusia con respecto a los datos personales](/compliance/regulatory/offering-russia-data-localization)  
@@ -407,11 +408,12 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Ley eslovaca de protección de datos personales  
 - España- Marco de seguridad nacional  
 - Suiza - Ley Federal de Protección de Datos (FADP)  
-- Turquía - KVKK Protección de datos personales 6698  
+- Turquía - KVKK Protección de datos personales 6698
 - Emiratos Árabes Árabes: Decreto Federal ley para combatir los delitos cibernéticos  
 - Emiratos Árabes: Ley Federal relativa a las transacciones electrónicas y el comercio
 - EAU - Ley Federal nº 2 de 2019 sobre el uso de las tecnologías de la información y la comunicación (TIC) en los campos de la salud  
-- EAU: estándares de garantía de la información de NESA  
+- EAU: estándares de garantía de la información de NESA
+- Ley de privacidad de datos de Emiratos Árabes Árabes
 - EAU Regulatory Policy TRA : Internet de las cosas  
 - Decreto Federal de Los Emiratos Árabes Unidos que regula el sector de las telecomunicaciones  
 - Uganda: Ley de protección de datos y privacidad  

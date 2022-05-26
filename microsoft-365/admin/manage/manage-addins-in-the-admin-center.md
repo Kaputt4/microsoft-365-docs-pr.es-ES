@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos en usuarios y grupos de la organización.
-ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 96bbdf5d4d9e4f1697fa0b85f902d8d758d356fa
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435443"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678972"
 ---
 # <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Administración de complementos en el Centro de administración de Microsoft 365
 
 Office Complementos le ayudan a personalizar los documentos y a simplificar la forma en que accede a la información en la web. Consulte [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
-Después de que un administrador implemente complementos para los usuarios de una organización, el administrador puede desactivar o activar los complementos, editar, eliminar y administrar el acceso a los complementos.
+Después de que un administrador global o de Exchange implemente complementos para los usuarios de una organización, puede desactivar o activar los complementos, editar, eliminar y administrar el acceso a los complementos.
 
 Para obtener más información sobre cómo instalar complementos desde el centro de administración, consulte [Implementación de complementos en el centro de administración](./manage-deployment-of-add-ins.md).
   
@@ -44,7 +44,7 @@ Un complemento puede estar en estado **Activado** o **Desactivado** .
   
 | Estado | Cómo se produce el estado | Impacto |
 |:-----|:-----|:-----|
-|**Activo**  <br/> |El administrador cargó el complemento y lo asignó a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
+|**Activo**  <br/> |Administración cargó el complemento y lo asignó a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
 |**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si se cambia el estado del complemento a "activado", los usuarios y grupos tendrán acceso de nuevo.  <br/> |
 |**Eliminado**  <br/> |El administrador ha eliminado el complemento.  <br/> |Los usuarios y grupos asignados al complemento ya no tienen acceso al mismo.  <br/> |
    
@@ -146,7 +146,7 @@ Si el complemento implementado no admite comandos de complemento o si desea ver 
     
 3. Haga doble clic en el complemento que implementó anteriormente (en este ejemplo, **Citas**).
 
-    ![Pestaña Administrado por el administrador de la página complementos de Office.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Administración pestaña Administrado de la página complementos de Office.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>En Outlook
 

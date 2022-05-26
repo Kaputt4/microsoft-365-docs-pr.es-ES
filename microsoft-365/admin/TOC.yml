@@ -355,7 +355,7 @@
         - name: Requisitos previos para la protección de datos
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Amenazas detectadas por Antivirus de Microsoft Defender
-          href: security-and-compliance/threats-detected-defender-av.md
+          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Configurar las características de cumplimiento
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Puntuación de seguridad

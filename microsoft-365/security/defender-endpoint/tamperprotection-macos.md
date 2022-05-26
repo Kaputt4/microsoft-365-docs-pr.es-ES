@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a75c56dd2844c563b1ee29ccb32acc263ffd3aed
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 6d90fc636b4ca2c99313b40da61e94fe359c42ab
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623583"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679007"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de macOS configuración de seguridad con protección contra alteraciones
 
@@ -146,7 +146,7 @@ Agregue la siguiente configuración en el perfil de Intune:
 > Para Intune configuración, puede crear un nuevo archivo de configuración de perfil para agregar la configuración de protección contra alteraciones, o bien puede agregar estos parámetros al existente.
 
 ```xml
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>

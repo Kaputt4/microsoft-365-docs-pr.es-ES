@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: b80d73f6efe398465eecea9967c4bd8d929a51a2
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649417"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678863"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatizaciones de simulación para el entrenamiento de simulación de ataques
 
@@ -29,11 +29,11 @@ Para obtener información de introducción sobre el entrenamiento de simulación
 
 Para crear una automatización de simulación, siga estos pasos:
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a la pestaña **Email & collaboration** **Attack simulation training** **Simulation automations (Automatizaciones de simulación de simulación** de entrenamiento \> de simulación de colaboración\>).
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Correo electrónico & pestaña** Automatizaciones de **simulación de simulación de ataque** \> de colaboración \> **Automatizaciones** \> de **simulación**.
 
-   Para ir directamente a la pestaña **Automatizaciones de simulación** , use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   Para ir directamente a la pestaña **Automatizaciones** , use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. En la pestaña **Automatizaciones de simulación** , seleccione ![El icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
+2. En **Automatizaciones de simulación**, seleccione ![El icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación de la pestaña Automatizaciones de simulación del entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
@@ -339,7 +339,7 @@ En esta página se muestran las siguientes notificaciones y sus idiomas configur
 - **Notificación de asignación de entrenamiento predeterminada de Microsoft**
 - Cualquier notificación de asignación de entrenamiento personalizada que haya creado anteriormente.
 
-  Estas notificaciones también están disponibles en la pestaña **Notificaciones de usuario final** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. La **notificación de asignación de entrenamiento predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales**. Las notificaciones de asignación de entrenamiento personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
+  Estas notificaciones también están disponibles en **Notificaciones de usuario final** en la pestaña **Biblioteca de contenido de simulación** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notificación de asignación de entrenamiento predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales**. Las notificaciones de asignación de entrenamiento personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
 
 Puede seleccionar una notificación de asignación de entrenamiento existente o crear una nueva notificación para usar:
 
@@ -374,7 +374,7 @@ La página **Notificación de recordatorio de entrenamiento** solo está disponi
   - **Notificación de recordatorio de entrenamiento predeterminada de Microsoft**
   - Cualquier notificación de recordatorio de entrenamiento personalizada que haya creado anteriormente.
 
-    Estas notificaciones también están disponibles en la pestaña **Notificaciones de usuario final** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. La **notificación de recordatorio de entrenamiento predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales**. Las notificaciones de recordatorio de entrenamiento personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
+    Estas notificaciones también están disponibles en **Notificaciones de usuario final** en la pestaña **Biblioteca de contenido de simulación** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notificación de recordatorio de entrenamiento predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales**. Las notificaciones de recordatorio de entrenamiento personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
 
   Puede seleccionar una notificación de recordatorio de entrenamiento existente o crear una nueva notificación para usar:
 
@@ -411,7 +411,7 @@ La página **Notificación de refuerzo positivo** solo está disponible si selec
   - **Notificación de refuerzo positivo predeterminada de Microsoft**
   - Cualquier notificación de refuerzo positivo personalizada que haya creado anteriormente.
 
-    Estas notificaciones también están disponibles en la pestaña **Notificaciones de usuario final** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **La notificación de refuerzo positivo predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales** . Las notificaciones de refuerzo positivo personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
+    Estas notificaciones también están disponibles en **Notificaciones de usuario final** en la pestaña **Biblioteca de contenido de simulación** en Entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **La notificación de refuerzo positivo predeterminada de Microsoft** está disponible en la pestaña **Notificaciones globales** . Las notificaciones de refuerzo positivo personalizadas están disponibles en la pestaña **Notificaciones de inquilino.** Para obtener más información, consulte [Notificaciones de usuario final para el entrenamiento de simulación de ataques](attack-simulation-training-end-user-notifications.md).
 
   Puede seleccionar una notificación de refuerzo positivo existente o crear una nueva notificación para usar:
 

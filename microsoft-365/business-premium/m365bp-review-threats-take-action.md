@@ -1,8 +1,8 @@
 ---
-title: Revisar las amenazas detectadas y actuar al respecto
+title: Revisar las amenazas detectadas en los dispositivos y tomar medidas
 f1.keywords: NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,13 +14,13 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Obtenga información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en los dispositivos Windows 10.
-ms.openlocfilehash: ebd3f099c02483427ec95959a3466348ebf1d28f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Obtenga información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en los dispositivos Windows.
+ms.openlocfilehash: 59b28ff1fe381b0d379e559427a806723dd26aac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623893"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679263"
 ---
 # <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Revisar las amenazas detectadas por Antivirus de Microsoft Defender y tomar medidas
 
@@ -52,7 +52,7 @@ El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 Emp
 
 1. Vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión.
 
-2. En la página de navegación, seleccione **DispositivosDispositivos** >  activos. Verá una lista de dispositivos activos y detalles, como el estado de protección, el estado de protección antivirus (AV) y el número de amenazas activas detectadas.
+2. En la página de navegación, seleccione **Dispositivos** > **dispositivos activos**. Verá una lista de dispositivos activos y detalles, como el estado de protección, el estado de protección antivirus (AV) y el número de amenazas activas detectadas.
 
 3. Seleccione un dispositivo para ver más detalles sobre ese dispositivo y las acciones disponibles. Se abre un control flotante con recomendaciones y acciones disponibles, como **Actualizar directiva**, **Actualizar antivirus**, **Ejecutar examen rápido**, **Ejecutar examen completo**, etc.
 

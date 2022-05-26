@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 19841140d928cb96dcc734e2ce5806e15295fc88
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302077"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679635"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Buscar y purgar mensajes de chat en Teams (versión preliminar)
 
@@ -34,7 +34,7 @@ Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
-- Para crear un caso de eDiscovery (Premium) y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles administrador de **eDiscovery** en el portal de cumplimiento de Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Para crear un caso de eDiscovery (Premium) y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles **administrador de eDiscovery** en el portal de cumplimiento Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 - La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Teams Conectar Chat (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Dado que la capacidad de buscar y quitar mensajes de chat está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes de chat se quiten rápidamente.
 
@@ -46,7 +46,7 @@ Este es el proceso para buscar y purgar Teams mensajes de chat:
 
 ## <a name="step-1-create-a-case-in-ediscovery-premium"></a>Paso 1: Crear un caso en eDiscovery (Premium)
 
-El primer paso es crear un caso en eDiscovery (Premium) para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md). 
+El primer paso es crear un caso en eDiscovery (Premium) para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md).
 
 ## <a name="step-2-create-a-draft-collection"></a>Paso 2: Crear una colección de borradores
 
@@ -90,7 +90,7 @@ Para poder purgar los mensajes de chat de un buzón, debe quitar cualquier direc
 
 Use la lista de buzones que contienen los mensajes de chat que desea eliminar y determine si hay una directiva de retención o suspensión asignada a esos buzones y, a continuación, quite la directiva de retención o suspensión. Asegúrese de identificar la directiva de retención o retención que quite para poder reasignar a los buzones en el paso 7.
 
-Para obtener instrucciones sobre cómo identificar y quitar las directivas de retención y retención, vea "Paso 3: Quitar todas las retenciones del buzón" en [Eliminar elementos en la carpeta Elementos recuperables de buzones basados en la nube en suspensión](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox). 
+Para obtener instrucciones sobre cómo identificar y quitar las directivas de retención y retención, consulte "Paso 3: Quitar todas las retenciones del buzón" en [Eliminar elementos en la carpeta Elementos recuperables de buzones basados en la nube en suspensión](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox).
 
 ## <a name="step-5-purge-chat-messages-from-teams"></a>Paso 5: Purgar mensajes de chat de Teams
 
@@ -112,7 +112,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 ### <a name="get-the-case-id"></a>Obtener el identificador del caso
 
-1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el portal de cumplimiento de Microsoft Purview.
+1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el portal de cumplimiento Microsoft Purview.
 
 2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de eDiscovery (Premium). Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
 
@@ -127,7 +127,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 4. Copie el identificador correspondiente (o cópielo y péguelo en un archivo de texto). Usará este identificador en la siguiente tarea para obtener el identificador de la colección.
 
 > [!TIP]
-> En lugar de usar el procedimiento anterior para obtener el identificador de caso, puede abrir el caso en el portal de cumplimiento de Microsoft Purview y copiar el identificador de caso de la dirección URL.
+> En lugar de usar el procedimiento anterior para obtener el identificador de caso, puede abrir el caso en el portal de cumplimiento Microsoft Purview y copiar el identificador de caso de la dirección URL.
 
 ### <a name="get-the-collection-id"></a>Obtención del identificador de la colección
 

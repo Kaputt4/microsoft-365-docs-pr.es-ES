@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes, como vulnerabilidades de seguridad o vínculos malintencionados, interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 17743c3aecc50724309ab17c9bcaf2ab10d8ab9b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973253"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678994"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -48,10 +48,14 @@ Para obtener más información sobre Office canales de actualización, consulte 
 
 ### <a name="licensing-requirements"></a>Requisitos de licencias
 
-* Microsoft 365 E5 o Seguridad de Microsoft 365 E5
+* Seguridad de Microsoft 365 E5
+* Microsoft 365 A5 para profesores
+* Microsoft 365 A5 para estudiantes
 
 > [!NOTE]
 > Aplicaciones Microsoft 365 para empresas con activación de equipos compartidos o licencias basadas en dispositivos no tienen acceso a Application Guard para Office.
+>
+> Caja fuerte los planes de licencias de documentos permiten el acceso a Application Guard para Office. Para obtener más información, vea [Caja fuerte Documentos en Microsoft 365 E5/A5](/microsoft-365/security/office-365-security/safe-docs).
 
 ## <a name="deploy-application-guard-for-office"></a>Implementación de Application Guard para Office
 
@@ -69,7 +73,7 @@ Para obtener más información sobre Office canales de actualización, consulte 
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. Busque **Protección de aplicaciones de Microsoft Defender en modo administrado**, una directiva de grupo en **Configuración\\ del equipoPlantillas administrativas\\ Windows Componentes\\ Protección de aplicaciones de Microsoft Defender**. Para activar esta directiva, establezca el valor en Opciones como **2** o **3** y, a continuación, seleccione **Aceptar** o **Aplicar**.
+3. Busque **Protección de aplicaciones de Microsoft Defender en modo administrado**, una directiva de grupo en **Plantillas\\ administrativas de configuración\\del equipo Windows Componentes\\ Protección de aplicaciones de Microsoft Defender**. Para activar esta directiva, establezca el valor en Opciones como **2** o **3** y, a continuación, seleccione **Aceptar** o **Aplicar**.
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="Opción para activar el grupo de disponibilidad en modo administrado" lightbox="../../media/ag04-deploy.png":::
 
@@ -237,7 +241,7 @@ Cuando se cumpla esta heurística, Office creará previamente un contenedor de A
 
 * Al seleccionar vínculos web (`http` o `https`) no se abre el explorador.
 * La configuración predeterminada para la directiva de protección de copiar y pegar es habilitar el acceso del Portapapeles solo al texto.
-* La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no compatibles que no son de confianza y que están cifrados o que tienen establecido Information Rights Management (IRM). Esto incluye archivos cifrados mediante etiquetas de confidencialidad de Microsoft Purview Information Protection.
+* La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no compatibles que no son de confianza y que están cifrados o que tienen información Rights Management (IRM) establecida. Esto incluye archivos cifrados mediante etiquetas de confidencialidad de Microsoft Purview Information Protection.
 * Los archivos CSV y HTML no se admiten en este momento.
 * Protección de aplicaciones para Office actualmente no funciona con volúmenes comprimidos NTFS. Si ve un error "ERROR_VIRTUAL_DISK_LIMITATION", intente descomprimir el volumen.
 * Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se den cuenta de este error. Obtenga más información sobre el problema en [Recepción de un mensaje de error al intentar abrir Protección de aplicaciones de Windows Defender o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

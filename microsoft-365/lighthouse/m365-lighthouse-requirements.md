@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga una lista de los requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: ca5a736c6b14b77f433b07480eba718b4f0e55c2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174026"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692724"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -32,10 +32,10 @@ Los CSP deben inscribirse en el programa Proveedor de soluciones en la nube (CSP
 Además, cada inquilino del cliente MSP debe calificar para Lighthouse cumpliendo los siguientes requisitos:
 
 - Debe tener el acceso delegado configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
-- Debe tener al menos una licencia de Microsoft 365 Empresa Premium, Microsoft 365 E3, Windows 365 Business o Microsoft Defender para Empresas
+- Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas Licencia
 - No debe tener más de 1000 usuarios con licencia
 
-*Se requieren privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administración delegados granulares (GDAP) con los clientes para habilitar el acceso delegado más seguro. Aunque DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos están en vigor. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
+*Se requiere privilegios de Administración delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de Administración delegados granulares (GDAP) con los clientes para habilitar un acceso delegado más seguro. Aunque DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos están en vigor. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>Requisitos para habilitar la administración de dispositivos
 
@@ -46,7 +46,7 @@ Para ver los dispositivos de inquilino del cliente en las páginas de administra
 
 ## <a name="requirements-for-enabling-user-management"></a>Requisitos para habilitar la administración de usuarios
 
-Para que los datos de los clientes se muestren en los informes de las páginas de administración de usuarios, incluidos los usuarios de riesgo, la autenticación multifactor y el restablecimiento de contraseña, los inquilinos del cliente deben tener licencias para Azure Active Directory Premium P1 o posterior. Azure AD Premium P1 incluye Microsoft 365 Empresa Premium y Microsoft 365 E3.
+Para que los datos de los clientes se muestren en los informes de las páginas de administración de usuarios, incluidos los usuarios de riesgo, la autenticación multifactor y el restablecimiento de contraseña, los inquilinos del cliente deben tener licencias para Azure Active Directory Premium P1 o posterior. Azure AD Premium P1 incluye Microsoft 365 Empresa Premium y Microsoft 365 E3. Azure AD Premium P2 se incluye con Microsoft 365 E5.
 
 ## <a name="requirements-for-enabling-threat-management"></a>Requisitos para habilitar la administración de amenazas
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669328"
+ms.locfileid: "65679250"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -83,9 +83,9 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
 
 - Distribuciones de servidores Linux compatibles y versiones x64 (AMD64/EM64T) y x86_64:
 
-  - Red Hat Enterprise Linux 6.7 o superior
-  - Red Hat Enterprise Linux 7.2 o superior
-  - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 6.7 o posterior (versión preliminar)
+  - Red Hat Enterprise Linux 7.2 o superior 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 o superior 
   - CentOS 7.2 o superior
   - Ubuntu 16.04 LTS o posterior LTS
@@ -98,6 +98,9 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
 
     > [!NOTE]
     > Las distribuciones y versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
+
+
+
 
 - Lista de versiones de kernel admitidas
   - Versión mínima del kernel 3.10.0-327 (para todas las distribuciones de Linux admitidas mencionadas anteriormente, excepto Red Hat Enterprise Linux 6 y CentOS 6)
