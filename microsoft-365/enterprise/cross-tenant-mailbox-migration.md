@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 3832cd64ce66e667cced13c41bc34c28d575b373
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b2d66fce2b1eeffa4500c01a07f271b5b1a96ab7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637525"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754784"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -122,7 +122,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 22. Puede volver a la ventana del portal y seleccionar Actualizar para confirmar su aceptación.
 
-23. Formule la dirección URL que se va a enviar a su asociado de confianza (administrador de inquilinos de origen) para que también pueda aceptar la aplicación para habilitar la migración de buzones. Este es un ejemplo de la dirección URL para proporcionarles que necesitará el identificador de aplicación de la aplicación que creó:
+23. Formule la dirección URL que se va a enviar a su asociado de confianza (administrador de inquilinos de origen) para que también pueda aceptar la aplicación para habilitar la migración de buzones. Este es un ejemplo de la dirección URL para proporcionarles el identificador de aplicación de la aplicación que ha creado:
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -238,12 +238,12 @@ Asegúrese de que los siguientes objetos y atributos se establecen en la organiz
 
    - Target MailUser debe tener estos atributos desde el buzón de origen o asignados con el nuevo objeto User:
       - ExchangeGUID (flujo directo de origen a destino): el GUID del buzón debe coincidir. El proceso de movimiento no continuará si esto no está presente en el objeto de destino.
-      - ArchiveGUID (flujo directo de origen a destino): el GUID de archivo debe coincidir. El proceso de movimiento no continuará si no está presente en el objeto de destino. (Esto solo es necesario si el buzón de origen está habilitado para el archivo).
+      - ArchiveGUID (flujo directo de origen a destino): el GUID de archivo debe coincidir. El proceso de movimiento no continuará si esto no está presente en el objeto de destino. (Esto solo es necesario si el buzón de origen está habilitado para el archivo).
       - LegacyExchangeDN (flujo como proxyAddress, "x500:\<LegacyExchangeDN>"): LegacyExchangeDN debe estar presente en mailUser de destino como x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no continuarán si no están presentes en el objeto de destino.
       - UserPrincipalName: UPN se alineará con la nueva identidad del usuario o la empresa de destino (por ejemplo, user@northwindtraders.onmicrosoft.com).
       - SMTPAddress principal: la dirección SMTP principal se alineará con la nueva empresa del usuario (por ejemplo, user@northwind.com).
       - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que tiene o también está asignando PrimarySMTPAddress o que este valor establecerá PrimarySMTPAddress, lo que provocará errores de movimiento.
-      - No se pueden agregar direcciones proxy smtp heredadas desde el buzón de origen a MailUser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios solo están asociados a un inquilino de Azure AD o Exchange Online.
+      - No puede agregar direcciones de proxy smtp heredadas desde el buzón de origen a MailUser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios solo están asociados a un inquilino de Azure AD o Exchange Online.
 
      Ejemplo **de objeto** MailUser de destino:
 
@@ -375,7 +375,7 @@ El envío por lotes de migración también se admite desde el nuevo <a href="htt
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo local, tanto en el origen como en el destino, se actualizan con el nuevo targetAddress. En los ejemplos, se **contoso.onmicrosoft.com** el targetDeliveryDomain usado en el movimiento. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el entorno local de origen después del traslado?**
 

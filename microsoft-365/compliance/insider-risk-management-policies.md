@@ -1,6 +1,6 @@
 ---
 title: Directivas de administración de riesgos internos
-description: Más información sobre las directivas de administración de riesgos internos en Microsoft Purview
+description: Obtenga información sobre las directivas de administración de riesgos internos en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8277c962b149cb105dd8e08e983594610618bdd4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 262909af80ce79036ad889521ac160c851b9fd06
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217428"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759839"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -60,7 +60,7 @@ Cuando los usuarios abandonan su organización, existen indicadores de riesgo es
 
 ### <a name="general-data-leaks"></a>Filtraciones de datos generales
 
-La protección de los datos y la prevención de las filtraciones es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por los usuarios, los dispositivos y los servicios. Los usuarios tienen la posibilidad de crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de las filtraciones de datos sea cada vez más compleja y difícil. Las filtraciones de datos pueden incluir la divulgación accidental de información fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de prevención de pérdida de datos (DLP) de Microsoft Purview asignada, eventos desencadenantes integrados o personalizables, esta plantilla comienza a puntuar las detecciones en tiempo real de descargas de datos sospechosas SharePoint en línea, el uso compartido de archivos y carpetas, la impresión de archivos y la copia de datos en servicios de almacenamiento y mensajería en la nube personales.
+La protección de los datos y la prevención de las filtraciones es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por los usuarios, los dispositivos y los servicios. Los usuarios tienen la posibilidad de crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de las filtraciones de datos sea cada vez más compleja y difícil. Las filtraciones de datos pueden incluir la divulgación accidental de información fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de Prevención de pérdida de datos de Microsoft Purview asignada (DLP), eventos desencadenantes integrados o personalizables, esta plantilla comienza a puntuar las detecciones en tiempo real de las descargas de datos sospechosas SharePoint Online, el uso compartido de archivos y carpetas, la impresión de archivos y la copia de datos en servicios de almacenamiento y mensajería en la nube personales.
 
 Al usar una plantilla de *Filtración de datos*, puede asignar una directiva DLP para activar indicadores en la directiva de riesgo interno para alertas de alta gravedad en su organización. Cada vez que una regla de directiva DLP genera una alerta de alta gravedad que se agrega al registro de auditoría de Office 365, las directivas de riesgo interno creadas con esta plantilla examinan automáticamente la alerta de DLP de alta gravedad. Si la alerta contiene un usuario dentro del ámbito definido en la directiva de riesgo interno, la alerta es procesada por la directiva de riesgo interno como una nueva alerta y se le asigna una gravedad de riesgo interno y una puntuación de riesgo. También puede optar por asignar indicadores seleccionados como eventos desencadenantes de una directiva. Esta flexibilidad y personalización ayuda a limitar la directiva solo a las actividades cubiertas por los indicadores. Esta directiva le permite evaluar esta alerta en contexto con otras actividades incluidas en el caso.
 
@@ -142,11 +142,11 @@ La siguiente tabla enumera los eventos desencadenantes y los requisitos previos 
 | **Filtraciones de datos generales** | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | Directiva DLP configurada para *alertas de gravedad alta* <br><br> O <br><br> Indicadores desencadenadores personalizados |
 | **Filtraciones de datos por parte de usuarios prioritarios** | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | Directiva DLP configurada para *alertas de gravedad alta* <br><br> O <br><br> Indicadores desencadenadores personalizados <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
 | **Filtraciones de datos por parte de usuarios inconformes** | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad |
-| **Infracciones generales de la directiva de seguridad** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
+| **Infracciones generales de la directiva de seguridad** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> integración Microsoft Defender para punto de conexión con portal de cumplimiento Microsoft Purview configurados |
 | **Uso indebido de los datos generales de los pacientes** | Evasión de la defensa de los controles de seguridad de los sistemas EMR <br><br> Indicadores de coincidencia de direcciones de usuario y paciente de sistemas de RR. HH. | Indicadores de acceso sanitario seleccionados en la configuración de riesgo interno o de directiva <br><br> Microsoft 365 conector de RR. HH. configurado para la coincidencia de direcciones <br><br> Conector de Microsoft Healthcare o Epic configurado |
-| **Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización** | Indicadores de la fecha de renuncia o finalización del contrato desde el conector de recursos humanos o la eliminación de la cuenta de Azure Active Directory | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
-| **Infracciones de la directiva de seguridad por parte de los usuarios prioritarios** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
-| **Infracciones de la directiva de seguridad por parte de un usuario inconforme** | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
+| **Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización** | Indicadores de la fecha de renuncia o finalización del contrato desde el conector de recursos humanos o la eliminación de la cuenta de Azure Active Directory | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> integración Microsoft Defender para punto de conexión con portal de cumplimiento Microsoft Purview configurados |
+| **Infracciones de la directiva de seguridad por parte de los usuarios prioritarios** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> integración Microsoft Defender para punto de conexión con portal de cumplimiento Microsoft Purview configurados <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
+| **Infracciones de la directiva de seguridad por parte de un usuario inconforme** | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> integración Microsoft Defender para punto de conexión con portal de cumplimiento Microsoft Purview configurados |
 
 ## <a name="prioritize-content-in-policies"></a>Priorizar los contenidos en las directivas
 
@@ -161,7 +161,7 @@ Cuando se crea una directiva de administración de riesgos internos en el asiste
 - **Etiquetas de confidencialidad**: a cualquier actividad asociada a un contenido que tenga aplicadas [etiquetas de confidencialidad](sensitivity-labels.md) específicas se le asigna una puntuación de riesgo más alta.
 - **Extensiones de archivo**: cualquier actividad asociada al contenido que tenga extensiones de archivo específicas. Los usuarios que configuran una directiva de robo/pérdida de datos que selecciona **Extensiones de archivo para priorizar** en el asistente para directivas pueden definir hasta 50 extensiones de archivo para priorizar en la directiva. Las extensiones especificadas pueden incluir o omitir un "." como primer carácter de la extensión con prioridad.
 
-## <a name="sequence-detection-preview"></a>Detección de secuencias (versión preliminar)
+## <a name="sequence-detection"></a>Detección de secuencias
 
 Las actividades de riesgo pueden no producirse como eventos aislados. Estos riesgos suelen formar parte de una secuencia más amplia de eventos. Una secuencia es un grupo de dos o más actividades del usuario realizadas una tras otra que podrían sugerir un riesgo elevado. La identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo global. Cuando la detección de secuencias está activada para las directivas de robo o filtración de datos, los conocimientos de las actividades de información de secuencias se muestran en la pestaña **Actividad del usuario** dentro de un caso de administración de riesgos internos. Las siguientes plantillas de directivas admiten la detección de secuencias:
 
@@ -188,7 +188,7 @@ Para obtener más información sobre la administración de la detección de secu
 
 Los indicadores de riesgo interno ayudan a identificar niveles inusuales de actividades de riesgo cuando se evalúan diariamente para los usuarios que están dentro del ámbito de búsqueda de las directivas de riesgo interno. La detección acumulativa de filtraciones usa modelos de aprendizaje automático para ayudarle a identificar cuándo las actividades de filtración que realiza un usuario durante un tiempo determinado superan la cantidad normal realizada por los usuarios de su organización durante los últimos 30 días en varios tipos de actividad de filtración. Por ejemplo, si un usuario compartiese más archivos que la mayoría de los usuarios durante el mes pasado, esta actividad se detectaría y clasificaría como una actividad de filtración acumulativa.
 
-Los analistas e investigadores de administración de riesgos internos pueden utilizar los conocimientos de detección de filtración acumulada para ayudar a identificar las actividades de filtración que no suelen generar alertas, pero que están por encima de lo que es típico para su organización. Algunos ejemplos pueden ser que los usuarios que abandonan la organización filtren lentamente los datos durante varios días, o que los usuarios compartan repetidamente los datos a través de múltiples canales más de lo habitual para el uso compartido de datos de su organización.  Las puntuaciones de riesgo más altas se asignan a actividades de filtración acumulativas para sitios SharePoint, tipos de información confidencial y contenido con [etiquetas de confidencialidad configuradas](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) como contenido de prioridad en una directiva o para la actividad que implica etiquetas configuradas como de alta prioridad en Microsoft Purview Information Protection.
+Los analistas e investigadores de administración de riesgos internos pueden utilizar los conocimientos de detección de filtración acumulada para ayudar a identificar las actividades de filtración que no suelen generar alertas, pero que están por encima de lo que es típico para su organización. Algunos ejemplos pueden ser que los usuarios que abandonan la organización filtren lentamente los datos durante varios días, o que los usuarios compartan repetidamente los datos a través de múltiples canales más de lo habitual para el uso compartido de datos de su organización.  Las puntuaciones de riesgo más altas se asignan a actividades de filtración acumulativas para sitios SharePoint, tipos de información confidencial y contenido con [etiquetas de confidencialidad configuradas](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) como contenido prioritario en una directiva o para la actividad que implica etiquetas configuradas como de alta prioridad en Microsoft Purview Information Protection.
 
 La detección de filtración acumulada está activada de forma predeterminada cuando se utilizan las siguientes plantillas de directivas:
 
@@ -271,11 +271,11 @@ Use la siguiente tabla para determinar el número máximo de usuarios dentro del
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
-Para crear una nueva directiva de administración de riesgos internos, usará el asistente para directivas en la solución **de administración de riesgos insider** en el portal de cumplimiento de Microsoft Purview.
+Para crear una nueva directiva de administración de riesgos internos, usará el asistente para directivas en la solución **de administración de riesgos Insider** en el portal de cumplimiento Microsoft Purview.
 
 Siga los siguientes pasos para crear una nueva directiva:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
@@ -319,7 +319,7 @@ Siga los siguientes pasos para crear una nueva directiva:
 16. Seleccione **Siguiente** para continuar.
 17. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad.
 18. Seleccione **Siguiente** para continuar.
-19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Configuración de** >  riesgos **internosIndicators**. Seleccione los indicadores que desea aplicar a la directiva.
+19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Indicadores** de **configuración de** >  riesgo interno. Seleccione los indicadores que desea aplicar a la directiva.
 
     > [!IMPORTANT]
     > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
@@ -334,11 +334,11 @@ Siga los siguientes pasos para crear una nueva directiva:
 
 ## <a name="update-a-policy"></a>Actualizar una directiva
 
-Para actualizar una directiva de administración de riesgos internos existente, usará el Asistente para directivas en la solución **de administración de riesgos insider** en el portal de cumplimiento de Microsoft Purview.
+Para actualizar una directiva de administración de riesgos internos existente, usará el asistente para directivas en la solución **de administración de riesgos Insider** en el portal de cumplimiento Microsoft Purview.
 
 Siga los siguientes pasos para administrar una directiva existente:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva que desea administrar.
 3. En la página de detalles de la directiva, seleccione **Editar directiva**
 4. En el Asistente para directivas, no puede editar lo siguiente:
@@ -377,7 +377,7 @@ Siga los siguientes pasos para administrar una directiva existente:
 16. Seleccione **Siguiente** para continuar.
 17. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad.
 18. Seleccione **Siguiente** para continuar.
-19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Configuración de** >  riesgos **internosIndicators**. Seleccione los indicadores que desea aplicar a la directiva.
+19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Indicadores** de **configuración de** >  riesgo interno. Seleccione los indicadores que desea aplicar a la directiva.
 
     > [!IMPORTANT]
     > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
@@ -396,7 +396,7 @@ Es posible que tenga que crear una nueva directiva que sea similar a una directi
 
 Siga los siguientes pasos para copiar una directiva existente:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva que desea copiar.
 3. En la página de detalles de la directiva, seleccione Copiar.
 4. En el asistente de directivas, asigne un nombre a la nueva directiva y actualice la configuración de la misma según sea necesario.
@@ -416,7 +416,7 @@ Algunos escenarios en los que puede querer empezar inmediatamente a puntuar las 
 
 Para iniciar manualmente la actividad de puntuación de los usuarios en una o más directivas de administración de riesgos internos, siga los siguientes pasos:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva o directivas a las que desea agregar usuarios.
 3. Seleccione **Iniciar la actividad de puntuación para los usuarios**.
 4. En el campo **Razón del panel** y luego en el panel **Agregar usuarios a múltiples directivas**, agregue una razón para agregar los usuarios.
@@ -443,7 +443,7 @@ Para dejar de puntuar a los usuarios en una directiva, vea el artículo [Usuario
 
 Para eliminar una directiva de administración de riesgos internos existente, siga estos pasos:
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva que desea eliminar.
 3. Seleccione **Eliminar** la barra de herramientas del panel.
 4. En el cuadro de dialogo **Eliminar**, seleccione **Sí** para eliminar la directiva o **Cancelar** para cerrarlo.

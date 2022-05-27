@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar más información sobre el rendimiento de los modelos de procesamiento de formularios y comprensión de documentos.
-ms.openlocfilehash: e9586bbbd8510611747b81424f1fbe494f212cc5
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 830a56ab4dd0145f1385d628405ee4287de19595
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916191"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754762"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analice cómo se usan los modelos en Microsoft SharePoint Syntex
 
@@ -39,12 +39,12 @@ Su centro de contenido de SharePoint Syntex proporciona el análisis de uso de m
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Resumen de datos de uso del modelo en el centro de contenido predeterminado
 
-En SharePoint Syntex, el centro de contenido predeterminado se crea durante la configuración. También se pueden crear centros de contenido adicionales según sea necesario. Por ejemplo, los departamentos podrían crear sus propios centros de contenido para elaborar y administrar sus modelos. 
+En SharePoint Syntex, el centro de contenido predeterminado se crea durante la configuración. También se pueden crear más centros de contenido según sea necesario. Por ejemplo, los departamentos podrían crear sus propios centros de contenido para elaborar y administrar sus modelos. 
 
-En lo que respecta a los análisis de uso del modelo, tenga en cuenta que:
+Con respecto al análisis de uso del modelo, tenga en cuenta lo siguiente:
 
-- El centro de contenido predeterminado mostrará análisis de uso del modelo de todos los centros de contenido y los modelos de su organización, incluidos los creados en centros de contenido adicionales. Esto proporciona a los administradores de contenido y a otras partes interesadas un portal centralizado para administrar y supervisar los centros de contenido y los modelos en toda la empresa.  
-- En otros centros de contenido solo se mostrarán análisis de uso del modelo de los modelos que se hayan creado en ellos. Esto proporciona a los administradores de contenido conclusiones sobre datos de uso únicamente de los modelos que les interesen.
+- El centro de contenido predeterminado mostrará el análisis de uso de modelos para todos los centros de contenido y modelos de su organización, incluidos los creados en otros centros de contenido. Esto proporciona a los administradores de contenido y a otras partes interesadas un portal centralizado para administrar y supervisar los centros de contenido y los modelos en toda la empresa.  
+- En otros centros de contenido solo se mostrarán análisis de uso del modelo de los modelos que se hayan creado en ellos. Esto proporciona a los administradores de contenido información sobre los datos de uso solo para los modelos que les preocupan.
 
 
 ## <a name="classification-by-model"></a>Clasificación por modelo
@@ -77,7 +77,7 @@ Cada modelo de la lista de uso del modelo mostrará los datos de uso:
 
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

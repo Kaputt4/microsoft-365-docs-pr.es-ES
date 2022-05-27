@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 6daffa44356136615dc002b01bd7da5c575fe1fd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dfb4841ac80b1018ec1839a6fa36ec36c4ba298b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329145"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753978"
 ---
 # <a name="term-store-reports"></a>Informes del almacén de términos
 

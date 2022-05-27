@@ -28,16 +28,16 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos de Caja fuerte en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte Vínculos y vea los gráficos de los mensajes de vínculos de Caja fuerte.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623468"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739901"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>vínculos de Caja fuerte en Microsoft Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -47,6 +47,9 @@ ms.locfileid: "65623468"
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si usa Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal y busca información sobre Safelinks en Outlook, consulte [Seguridad avanzada de Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Caja fuerte Vínculos es una característica de [Defender para Office 365](defender-for-office-365.md) que proporciona examen de direcciones URL y reescritura de mensajes de correo electrónico entrantes en el flujo de correo, y la comprobación del tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. Caja fuerte análisis de vínculos se produce además del [antispam](anti-spam-protection.md) y [antimalware](anti-malware-protection.md) normales en los mensajes de correo electrónico entrantes en Exchange Online Protection (EOP). El examen de vínculos seguros puede ayudar a proteger a su organización de vínculos malintencionados que se usan en la suplantación de identidad (phishing) y otros ataques.
+
+Vea este breve vídeo sobre cómo protegerse frente a vínculos malintencionados con vínculos Caja fuerte en Microsoft Defender para Office 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 

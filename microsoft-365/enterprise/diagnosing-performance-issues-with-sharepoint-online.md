@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio de SharePoint Online mediante las herramientas para desarrolladores de Internet Explorer.
-ms.openlocfilehash: 274c819df7ffcb7cc18191bdd1c7fa0d4fa40290
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 041619991fdbdcb3e953fe2a06fd63dff0e9201f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096532"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753812"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
@@ -65,7 +65,7 @@ Para abrir las herramientas de desarrollo, presione **F12** y, a continuación, 
   
 ![Captura de pantalla del icono wifi de las herramientas de desarrollo de F12.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
-En la pestaña **Red** , presione el botón de reproducción verde para cargar una página. La herramienta devuelve todos los archivos que solicita el explorador para obtener la página que solicitó. En la siguiente captura de pantalla se muestra una de estas listas.
+En la pestaña **Red** , presione el botón de reproducción verde para cargar una página. La herramienta devuelve todos los archivos que solicita el explorador para obtener la página que solicitó. En la captura de pantalla siguiente se muestra una de estas listas.
   
 ![Captura de pantalla de la lista de archivos que se devuelve con una solicitud de página.](../media/247a9422-76da-4b0c-bed3-ce77b05e4560.png)
   
@@ -83,7 +83,7 @@ La mejor manera de determinar los puntos débiles de rendimiento del sitio es co
 ## <a name="viewing-sharepoint-response-header-information"></a>Visualización de SharePoint información del encabezado de respuesta
 <a name="F12ToolInfo"> </a>
 
-En SharePoint Online, puede acceder a la información que se devuelve al explorador en el encabezado de respuesta de cada archivo. El valor más útil para diagnosticar problemas de rendimiento es **SPRequestDuration**, que muestra la cantidad de tiempo que la solicitud tardó en procesarse en el servidor. Esto puede ayudar a determinar si la solicitud es muy pesada y consume muchos recursos. Esta es la mejor información que tiene sobre cuánto trabajo está realizando el servidor para atender la página.
+En SharePoint Online, puede acceder a la información que se devuelve al explorador en el encabezado de respuesta de cada archivo. El valor más útil para diagnosticar problemas de rendimiento es **SPRequestDuration**, que muestra la cantidad de tiempo que la solicitud tardó en procesarse en el servidor. Esto puede ayudar a determinar si la solicitud es pesada y consume muchos recursos. Esta es la mejor información que tiene sobre cuánto trabajo está realizando el servidor para atender la página.
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Para ver SharePoint información del encabezado de respuesta
   
@@ -104,6 +104,6 @@ En SharePoint Online, puede acceder a la información que se devuelve al explora
 
 En el artículo [Opciones de navegación de SharePoint Online](navigation-options-for-sharepoint-online.md) se muestra un ejemplo de uso del valor SPRequestDuration para determinar que la complicada navegación estructural estaba provocando que la página tardara mucho tiempo en procesarse en el servidor. Al tomar un valor para un sitio de línea base (sin personalización), es posible determinar si un archivo determinado tarda mucho tiempo en cargarse. El ejemplo usado en [opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md) es el archivo .aspx principal. Ese archivo contiene la mayor parte del código de ASP.NET que se ejecuta para la carga de página. En función de la plantilla de sitio que use, podría ser start.aspx, home.aspx, default.aspx u otro nombre si personaliza la página principal. Si este número es considerablemente mayor que el sitio de línea base, es una buena indicación de que hay algo complejo en la página que está causando problemas de rendimiento.
   
-Una vez que haya identificado que un problema específico de su sitio, la manera recomendada de averiguar lo que provoca un rendimiento deficiente es eliminar todas las causas posibles, como las personalizaciones de página, y luego agregarlas de nuevo al sitio una por una. Una vez que haya quitado suficientes personalizaciones que la página tenga un buen rendimiento, puede agregar personalizaciones específicas una por una.
+Una vez que haya identificado que un problema específico del sitio, la manera recomendada de averiguar lo que provoca un rendimiento deficiente es eliminar todas las causas posibles, como las personalizaciones de página, y luego agregarlas de nuevo al sitio una por una. Una vez que haya quitado suficientes personalizaciones que la página tenga un buen rendimiento, puede agregar personalizaciones específicas una por una.
   
-Por ejemplo, si tiene una navegación muy compleja, intente cambiar la navegación para no mostrar subsitios y compruebe las herramientas para desarrolladores para ver si esto hace una diferencia. O bien, si tiene una gran cantidad de roll-ups de contenido, intente quitarlos de la página y ver si esto mejora las cosas. Si elimina todas las causas posibles y las agrega de nuevo de uno en uno, puede identificar fácilmente qué características son el mayor problema y, a continuación, trabajar hacia una solución.
+Por ejemplo, si tiene una navegación compleja, intente cambiar la navegación para no mostrar subsitios y compruebe las herramientas para desarrolladores para ver si esto hace una diferencia. O bien, si tiene una gran cantidad de roll-ups de contenido, intente quitarlos de la página y ver si esto mejora las cosas. Si elimina todas las causas posibles y las agrega de nuevo de uno en uno, puede identificar fácilmente qué características son el mayor problema y, a continuación, trabajar hacia una solución.

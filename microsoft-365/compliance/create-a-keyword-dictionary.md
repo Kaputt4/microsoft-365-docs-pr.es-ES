@@ -19,16 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758605"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753680"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
-La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger los elementos confidenciales. Para identificar elementos confidenciales, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y a una escala mucho mayor, lo que admite hasta 1 MB de términos (después de la compresión) en el diccionario en cualquier idioma. El límite del espacio empresarial también es de 1 MB después de la compresión. 1 MB de límite después de la compresión significa que todos los diccionarios combinados en un espacio empresarial pueden tener casi 1 millón de caracteres.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La prevención de pérdida de datos (DLP) de Microsoft Purview puede identificar, supervisar y proteger los elementos confidenciales. Para identificar elementos confidenciales, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y a una escala mucho mayor, lo que admite hasta 1 MB de términos (después de la compresión) en el diccionario en cualquier idioma. El límite del espacio empresarial también es de 1 MB después de la compresión. 1 MB de límite después de la compresión significa que todos los diccionarios combinados en un espacio empresarial pueden tener casi 1 millón de caracteres.
 
 ## <a name="keyword-dictionary-limits"></a>Límites del diccionario de palabras clave
 
@@ -74,7 +76,7 @@ Remove-Item $rawFile
 
 Las palabras clave del diccionario pueden provenir de varios orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt) importado en el servicio o del cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
 
-1. Use el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o conéctese al **PowerShell del Centro de seguridad &amp; cumplimiento**.
+1. Use el *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> o conéctese al **PowerShell del portal de cumplimiento de Microsoft Purview**.
 
 2. **Definir o cargar las palabras clave delde origen previsto**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de dónde procedan las palabras clave. Una vez cargados, se codifican y convierten en una matriz de bytes antes de importarlos.
 
@@ -84,7 +86,7 @@ Las palabras clave del diccionario pueden provenir de varios orígenes, normalme
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
+1. Conéctese al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a>.
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 68e69f198dfd79c1da210cd8d87144471d83abb7
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285976"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754364"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -80,10 +80,10 @@ Si se agrega un usuario a un chat, se ingiere una copia de todos los mensajes co
 
 Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta del buzón en la que se almacenan estos mensajes de Teams. El trabajo de temporizador tarda entre 1 y 7 días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, otra carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente. 
 
-Los mensajes permanecen en la carpeta SubstrateHolds durante al menos 1 día y, luego, si son elegibles para su eliminación, el trabajo del temporizador los elimina permanentemente la próxima vez que se ejecuta.
+Los mensajes permanecen en la carpeta SubstrateHolds durante al menos 1 día y, luego, si son elegibles para su eliminación, el trabajo del temporizador los elimina, de forma permanente, la próxima vez que se ejecuta.
 
 > [!IMPORTANT]
-> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) y dado que los mensajes de chat y del canal de Teams se almacenan en buzones de Exchange Online, la eliminación permanente de la carpeta SubstrateHolds siempre se suspenderá si el buzón se ve afectado por otra directiva de retención (incluidas las directivas aplicadas a la ubicación Exchange), suspensión, suspensión por retraso o si se aplica una retención de eDiscovery al buzón por motivos legales o de investigación.
+> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) y dado que los mensajes de chat y del canal de Teams se almacenan en buzones de Exchange Online, la eliminación permanente de la carpeta SubstrateHolds siempre se suspenderá si el buzón se ve afectado por otra directiva de retención para la misma ubicación, suspensión por litigio, suspensión por retraso o si se aplica una retención de eDiscovery al buzón por motivos legales o de investigación.
 >
 > Aunque el buzón se incluya en una retención aplicable, los mensajes de chat y del canal de Teams que se hayan eliminado ya no estarán visibles en la aplicación de Teams, pero seguirán detectables con eDiscovery.
 
@@ -97,7 +97,7 @@ Para las dos rutas en el diagrama:
 
 1. **Si un usuario edita o elimina un mensaje de chat o canal** durante el período de retención, el mensaje original se copia (si se edita) o se mueve (si se elimina) a la carpeta SubstrateHolds. El mensaje se almacena allí durante al menos 1 día. Cuando expira el período de retención, el mensaje se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
 
-2. **Si no se elimina un mensaje del chat o de los canales**, o, en el caso de los mensajes actuales, después de editarlo, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención caduca. Esta acción suele tardar entre 1 y 7 días a partir de la fecha de vencimiento. Cuando el mensaje está en la carpeta SubstrateHolds, se almacena allí durante al menos 1 día y, a continuación, el mensaje se elimina de forma permanente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). 
+2. **Si no se elimina un mensaje del chat o de los canales**, o, en el caso de los mensajes actuales, después de editarlo, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención caduca. Esta acción suele tardar entre 1 y 7 días a partir de la fecha de vencimiento. Cuando el mensaje está en la carpeta SubstrateHolds, se almacena allí durante al menos 1 día y, a continuación, el mensaje se elimina de forma permanente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). 
 
 > [!NOTE]
 > Los mensajes almacenados en los buzones de correo, incluidas las carpetas ocultas, se pueden buscar mediante herramientas de eDiscovery. Hasta que los mensajes se eliminen permanentemente de la carpeta SubstrateHolds, las herramientas de eDiscovery pueden buscarlos.
@@ -202,7 +202,7 @@ Cuando se incluyen usuarios externos en una reunión que su organización organi
 
 - Si un usuario externo se une mediante una cuenta de invitado en su espacio empresarial, los mensajes de la reunión se almacenan tanto en el buzón de correo de los usuarios como en un buzón de correo de instantáneas que se concede a la cuenta de invitado. Sin embargo, las directivas de retención no se admiten para los buzones de correo de sombras paralelas, aunque se puedan notificar como incluidas en una directiva de retención para toda la ubicación (a veces conocida como "directiva de toda la organización").
 
-- Si un usuario externo se une usando una cuenta de otra organización de Microsoft 365, sus políticas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro inquilino. Sin embargo, para la misma reunión, sus políticas de retención pueden eliminar mensajes para sus usuarios.
+- Si un usuario externo se une mediante el uso de una cuenta de otra organización de Microsoft 365, sus directivas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro arrendatario. Sin embargo, para la misma reunión, sus directivas de retención pueden eliminar los mensajes de sus usuarios.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 

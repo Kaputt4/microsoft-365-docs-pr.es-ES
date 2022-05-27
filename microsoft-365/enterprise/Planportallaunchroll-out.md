@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede planear el inicio del portal en SharePoint Online y qué pasos debe seguir para un inicio correcto.
-ms.openlocfilehash: 088416537317a6728e1c5533767badf309de7634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f04738900a25a2e74e24d6bf0f05b5bd6c7865f4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097478"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753934"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeamiento del plan de lanzamiento del portal en SharePoint Online
 
 Un portal es un sitio SharePoint en la intranet con muchos visores de sitios que consumen contenido en el sitio. Las organizaciones grandes podrían tener varios portales. Por ejemplo, un portal de empresa y un portal de RR. HH. Por lo general, los portales tienen relativamente pocas personas que aportan y crean el sitio y su contenido. La mayoría de los visitantes del portal únicamente leen y usan el contenido.
 
-En este artículo se describe cómo planear la implementación y el plan de implementación para SharePoint Online. También proporciona enfoques a seguir, ya que las pruebas de carga tradicionales no están permitidas en SharePoint Online. SharePoint Online es un servicio en la nube y Microsoft administra las funcionalidades de carga, el estado y el equilibrio general de carga en el servicio.
+En este artículo se describe cómo planear la implementación y el plan de implementación para SharePoint Online. También proporciona enfoques a seguir, ya que las pruebas de carga tradicionales no se permiten en SharePoint Online. SharePoint Online es un servicio en la nube y Microsoft administra las funcionalidades de carga, el estado y el equilibrio general de carga en el servicio.
 
 Para ayudar a crear un portal correcto, siga los principios básicos, las prácticas y las recomendaciones que se detallan en [Creación, inicio y mantenimiento de un portal correcto](/sharepoint/portal-health).
 

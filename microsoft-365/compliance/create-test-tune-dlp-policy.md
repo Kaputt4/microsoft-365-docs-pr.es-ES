@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según sus necesidades organizativas.
-ms.openlocfilehash: 5508ce96e1309122e9c4c5139941eb41f6906e82
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637745"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754000"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -42,9 +42,9 @@ DLP examina los mensajes de correo electrónico y los archivos para obtener info
 
 Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso para dar acceso a los responsables de cumplimiento y a otras personas. Siga estos pasos:
   
-1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
+1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
     
-2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
+2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview. 
 
 3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento dlp**.
     
@@ -94,7 +94,7 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 Cuando los riesgos de pérdida de datos no son completamente obvios, es difícil averiguar dónde debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas DLP se pueden ejecutar en "modo de prueba", lo que le permite medir su eficacia y precisión antes de activarlas.
 
-Las directivas DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través de la portal de cumplimiento Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En el portal de cumplimiento Microsoft Purview, encontrará las **directivas DLP en Data loss preventionPolicy** > . Elija **Crear una directiva** para iniciar.
+Las directivas DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través de la portal de cumplimiento Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En la portal de cumplimiento Microsoft Purview, encontrará las **directivas DLP en Directiva de prevención** >  de pérdida de datos. Elija **Crear una directiva** para iniciar.
 
 Microsoft 365 proporciona una serie de [plantillas de directiva DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Digamos que eres un negocio australiano. Puede filtrar las plantillas en Australia y elegir Financiero, Médico y Salud y Privacidad.
 

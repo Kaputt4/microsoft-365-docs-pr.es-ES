@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678863"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739679"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatizaciones de simulación para el entrenamiento de simulación de ataques
 
@@ -31,7 +31,7 @@ Para crear una automatización de simulación, siga estos pasos:
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Correo electrónico & pestaña** Automatizaciones de **simulación de simulación de ataque** \> de colaboración \> **Automatizaciones** \> de **simulación**.
 
-   Para ir directamente a la pestaña **Automatizaciones** , use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de simulación**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. En **Automatizaciones de simulación**, seleccione ![El icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
@@ -311,7 +311,7 @@ En la página **Seleccionar notificación de usuario final** , seleccione una de
       - **Entrega después de que finalice la campaña**
       - **Entrega durante la campaña**
     - **Acciones**: si hace clic en el ![icono Ver.](../../media/m365-cc-sc-view-icon.png) **Icono de vista** , aparece la página **Revisar notificación** con la siguiente información:
-      - **Pestaña Vista previa** : vea el mensaje de notificación.
+      - **Pestaña Vista previa** : vea el mensaje de notificación como lo verán los usuarios.
         - Para ver el mensaje en diferentes idiomas, use el cuadro **Seleccionar idioma** .
         - Use el cuadro **Seleccionar carga útil para obtener una vista previa** para seleccionar el mensaje de notificación para las simulaciones que contienen varias cargas.
       - **Pestaña Detalles** : vea los detalles sobre la notificación:

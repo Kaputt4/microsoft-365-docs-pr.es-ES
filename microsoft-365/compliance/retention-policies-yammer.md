@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286480"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754320"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -47,7 +47,7 @@ Tanto los mensajes de usuario como los mensajes de la comunidad de Yammer se pue
 
 Los mensajes de usuario incluyen todos los nombres de las personas del chat y los mensajes de la comunidad incluyen el nombre de la comunidad y el título del mensaje (si se ha proporcionado).
 
-No se conservan las reacciones de los demás en forma de emoticonos cuando se usan directivas de retención para Yammer.
+No se conservan las reacciones de los demás usuarios en forma de emoticonos cuando se usan directivas de retención para Yammer.
 
 Los archivos que use con Yammer no se incluyen en las directivas de retención de Yammer. Estos elementos tienen sus propias directivas de retención.
 
@@ -69,7 +69,7 @@ Si bien los mensajes de Yammer se almacenan en Exchange, estos mensajes de Yamme
 Una vez que se configura una directiva de retención para los mensajes de Yammer, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta en la que se almacenan estos mensajes de Yammer. El trabajo de temporizador tarda hasta siete días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, una carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente.
 
 > [!IMPORTANT]
-> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) y dado que los mensajes de Yammer se almacenan en buzones de Exchange Online, la eliminación permanente de la carpeta SubstrateHolds siempre se suspenderá si el buzón se ve afectado por otra directiva de retención (incluidas las directivas aplicadas a la ubicación Exchange), suspensión legal, suspensión por retraso o si se aplica una retención de eDiscovery al buzón por motivos legales o de investigación.
+> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) y dado que los mensajes de Yammer se almacenan en buzones de Exchange Online, la eliminación permanente de la carpeta SubstrateHolds siempre se suspenderá si el buzón se ve afectado por otra directiva de retención para la misma ubicación, suspensión por litigio, suspensión por retraso o si se aplica una retención de eDiscovery al buzón por motivos legales o de investigación.
 >
 > Aunque el buzón se incluye en una retención aplicable, los mensajes de Yammer que se hayan eliminado ya no estarán visibles en Yammer, pero seguirán detectables con eDiscovery.
 

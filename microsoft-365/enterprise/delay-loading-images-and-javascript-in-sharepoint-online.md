@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Obtenga información sobre cómo reducir el tiempo de carga de SharePoint páginas en línea mediante JavaScript para retrasar la carga de imágenes y JavaScript no esencial.
-ms.openlocfilehash: af75b3ede1136894bea0a7f4c00cc9498d194fe3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101301"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754740"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Retrasar la carga de imágenes y JavaScript en SharePoint Online
 
 En este artículo se describe cómo puede reducir el tiempo de carga de SharePoint páginas en línea mediante JavaScript para retrasar la carga de imágenes y también esperar a cargar JavaScript no esencial hasta que se cargue la página.
   
-Las imágenes pueden afectar negativamente a las velocidades de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan previamente imágenes al cargar una página HTML. Esto puede hacer que la página sea innecesariamente lenta para cargarse si las imágenes no están visibles en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir primero la carga de las imágenes. Además, la carga de JavaScript no esencial también puede ralentizar los tiempos de descarga en las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
+Las imágenes pueden afectar negativamente a las velocidades de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan previamente imágenes al cargar una página HTML. Esto puede hacer que la página sea innecesariamente lenta para cargarse si las imágenes no son visibles en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir primero la carga de las imágenes. Además, la carga de JavaScript no esencial también puede ralentizar los tiempos de descarga en las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejora de los tiempos de carga de páginas retrasando la carga de imágenes en SharePoint páginas en línea mediante JavaScript
 
@@ -115,13 +115,13 @@ En la captura de pantalla siguiente se muestra el resto de las imágenes que se 
   
 ![Captura de pantalla que muestra varias imágenes cargadas en la página.](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz para aumentar el rendimiento; sin embargo, si la técnica se aplica en un sitio web público, los motores de búsqueda no pueden rastrear las imágenes de la misma manera que rastrearían una imagen con formato regular. Esto puede afectar a las clasificaciones en los motores de búsqueda porque los metadatos de la propia imagen no están realmente allí hasta que se carga la página. Los rastreadores del motor de búsqueda solo leen el CÓDIGO HTML y, por lo tanto, no verán las imágenes como contenido en la página. Las imágenes son uno de los factores que se usan para clasificar las páginas en los resultados de búsqueda. Una manera de solucionar esto es usar texto introductorio para las imágenes.
+Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz para aumentar el rendimiento; sin embargo, si la técnica se aplica en un sitio web público, los motores de búsqueda no pueden rastrear las imágenes de la misma manera que rastrearían una imagen con formato regular. Esto puede afectar a las clasificaciones en los motores de búsqueda porque los metadatos de la propia imagen no están realmente ahí hasta que se carga la página. Los rastreadores del motor de búsqueda solo leen el HTML y, por lo tanto, no verán las imágenes como contenido en la página. Las imágenes son uno de los factores que se usan para clasificar las páginas en los resultados de búsqueda. Una manera de solucionar esto es usar texto introductorio para las imágenes.
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub ejemplo de código: Inserción de JavaScript para mejorar el rendimiento
 
 No se pierda el artículo y el ejemplo de código sobre [la inyección de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) proporcionados en GitHub.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Exploradores admitidos en Office 2013 y Aplicaciones Microsoft 365 para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

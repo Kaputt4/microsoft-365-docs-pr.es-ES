@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944445"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739425"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -67,7 +67,7 @@ Puede filtrar las alertas según estos criterios:
 
 Tendrá que tener cualquiera de los siguientes roles para acceder a Microsoft Defender para Office 365 alertas:
 
-- Para Azure Active Directory (Azure AD) roles globales:
+- Para los roles globales de Azure Active Directory (Azure AD):
 
    - Administrador global
 
@@ -112,7 +112,7 @@ Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defe
 
 | Origen de alerta | Carácter antepuesto |
 | :---|:--- |
-| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -206,15 +206,14 @@ Para crear la automatización, necesitará un token de API para poder conectar P
 
 ### <a name="create-an-automated-flow"></a>Creación de un flujo automatizado
 
-Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
+Vea este breve vídeo para obtener información sobre cómo funciona la automatización de forma eficaz para crear un flujo de trabajo fluido y cómo conectar Power Automate a Defender for Cloud Apps. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
-En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
-
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

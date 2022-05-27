@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679250"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754110"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -79,14 +79,21 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
 > [!NOTE]
 > No se admite la instalación de Microsoft Defender para punto de conexión en ninguna otra ubicación que no sea la ruta de instalación predeterminada. 
 
+> [!NOTE]
+> Microsoft Defender para punto de conexión en Linux crea un usuario "mdatp" con UID y GID aleatorios. Si desea controlar el UID y el GID, cree un usuario "mdatp" antes de la instalación mediante la opción de shell "/usr/sbin/nologin".
+> Por ejemplo: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
+
 ### <a name="system-requirements"></a>Requisitos del sistema
+
+> [!NOTE]
+> La compatibilidad con Red Hat Enterprise Linux y CentOS 6.7+ a 6.10+ está en versión preliminar.
 
 - Distribuciones de servidores Linux compatibles y versiones x64 (AMD64/EM64T) y x86_64:
 
   - Red Hat Enterprise Linux 6.7 o posterior (versión preliminar)
-  - Red Hat Enterprise Linux 7.2 o superior 
-  - Red Hat Enterprise Linux 8.x 
-  - CentOS 6.7 o superior 
+  - Red Hat Enterprise Linux 7.2 o superior
+  - Red Hat Enterprise Linux 8.x
+  - CentOS 6.7 o superior (versión preliminar)
   - CentOS 7.2 o superior
   - Ubuntu 16.04 LTS o posterior LTS
   - Debian 9 o superior
@@ -103,13 +110,16 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
 
 
 - Lista de versiones de kernel admitidas
-  - Versión mínima del kernel 3.10.0-327 (para todas las distribuciones de Linux admitidas mencionadas anteriormente, excepto Red Hat Enterprise Linux 6 y CentOS 6)
+  > [!NOTE]
+  > Microsoft Defender para punto de conexión en RHEL/CentOS- 6.7 a 6.10 es una solución basada en kernel. Debe comprobar que el kernel es compatible antes de actualizar a la versión más reciente del kernel. Consulte la lista siguiente para obtener la lista de kernels admitidos.
+  > Microsoft Defender para punto de conexión implementación para todas las demás distribuciones y versiones admitidas es independiente de la versión del kernel. Con un requisito mínimo para que la versión del kernel esté en o por encima de 3.10.0-327.
+
   - La `fanotify` opción kernel debe estar habilitada
   - Red Hat Enterprise Linux 6 y CentOS 6:
     - Para la versión 6.7: 2.6.32-573.*
     - Para la versión 6.8: 2.6.32-642.*
     - Para 6.9: 2.6.32-696.* (excepto 2.6.32-696.el6.x86_64)
-    - Para la versión 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.43.1:
+    - Para la versión 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.47.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64

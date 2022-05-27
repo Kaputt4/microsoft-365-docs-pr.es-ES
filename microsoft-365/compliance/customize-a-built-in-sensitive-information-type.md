@@ -18,16 +18,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f0ebc1bb4b13f9e31ca1a8a1967fce007105cfe6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271747"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753900"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
-Al buscar información confidencial en el contenido, es necesario describir esa información en lo que se denomina una *regla*. La Prevención de pérdida de datos (DLP) incluye reglas para los tipos de información confidencial más comunes que se pueden usar inmediatamente. Para usar estas reglas, tendrá que incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización; para hacerlo, puede crear un tipo de información confidencial personalizado. En este tema, se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una mayor variedad de posible información de tarjetas de crédito.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Cuando busca información confidencial en el contenido, es necesario describir esa información en lo que se denomina una *regla*. Prevención de pérdida de datos (DLP) de Microsoft Purview incluye reglas para los tipos más comunes de información confidencial que se pueden usar inmediatamente. Para usar estas reglas, deberá incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización y, para hacerlo, puede crear un tipo personalizado de información confidencial. En este tema se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una amplia variedad de posible información de tarjeta de crédito.
 
 Puede usar este ejemplo y aplicarlo en otros tipos de información confidencial integrados. Para obtener una lista de los tipos de información confidencial predeterminados y las definiciones XML, vea [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md).
 
@@ -157,7 +159,7 @@ Ahora tiene algo parecido al siguiente XML. Como los paquetes de reglas y las re
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Quitar el requisito de evidencias corroborativas de un tipo de información confidencial
 
-Ahora que tiene un tipo de información confidencial que puede cargar en el Centro de seguridad y cumplimiento, el paso siguiente es hacer que la regla sea más específica. Modifique la regla para que solo busque un número de 16 dígitos que pase la suma de comprobación, pero que no necesite evidencias (corroborativas) adicionales, como palabras clave. Para hacerlo, tiene que quitar la parte del código XML que busca la evidencia corroborativa. La evidencia corroborativa es muy útil para reducir falsos positivos. En este caso, normalmente hay determinadas palabras clave o una fecha de expiración cerca del número de tarjeta de crédito. Si quita esa evidencia, también tendrá que ajustar la confianza de que encontró un número de tarjeta de crédito; para ello, reduzca el `confidenceLevel`, que es 85 en el ejemplo.
+Ahora que tiene un nuevo tipo de información confidencial que puede cargar en el portal de cumplimiento de Microsoft Purview, el siguiente paso es hacer que la regla sea más específica. Modifique la regla para que solo busque un número de 16 dígitos que pasa la suma de comprobación pero no requiere evidencia corroborativa adicional (como las palabras clave). Para ello, tiene que quitar la parte del código XML que busca la evidencia corroborativa. La evidencia corroborativa es muy útil para reducir los falsos positivos. En este caso, suelen haber determinadas palabras clave o una fecha de expiración cerca del número de la tarjeta de crédito. Si quita esa evidencia, debe ajustar también la seguridad que tiene de haber encontrado un número de tarjeta de crédito. Para ello, reduzca `confidenceLevel`, que es 85 en el ejemplo.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"

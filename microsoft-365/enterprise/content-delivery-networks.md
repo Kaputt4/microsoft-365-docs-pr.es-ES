@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa las redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: b2809a524088b3cb53e415d3d83d1f8a02b27dc1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2ed395ba400e09b87777c381e140a38e32d9210
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092743"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754806"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Las redes CDN ayudan a mantener Office 365 rápido y confiable para los usuarios finales. Los servicios en la nube como Office 365 usan redes CDN para almacenar en caché los recursos estáticos más cerca de los exploradores que les solicitan que acelere las descargas y reduzca la latencia percibida del usuario final. La información de este tema le ayudará a obtener información sobre las redes de entrega de contenido (CDN) y cómo las usan Office 365.
+Las redes CDN ayudan a mantener Office 365 rápido y confiable para los usuarios finales. Los servicios en la nube como Office 365 usan redes CDN para almacenar en caché los recursos estáticos más cerca de los exploradores que les solicitan que acelere las descargas y reduzca la latencia percibida del usuario final. La información de este tema le ayudará a obtener información sobre las redes de entrega de contenido (CDN) y cómo las usa Office 365.
 
 ## <a name="what-exactly-is-a-cdn"></a>¿Qué es exactamente un CDN?
 
@@ -113,7 +113,7 @@ Independientemente de qué CDN configure para el inquilino de Office 365, el pro
 
     b. Si los datos ya están almacenados en caché en un origen _privado_, el servicio de CDN comprueba los permisos de la cuenta de usuario de Office 365 en el origen. Si tiene permisos, SharePoint Online genera dinámicamente una dirección URL personalizada compuesta por la ruta de acceso al recurso en el CDN y dos tokens de acceso, y devuelve la dirección URL personalizada al cliente. A continuación, el cliente descarga los datos directamente desde la ubicación de CDN más cercana al cliente mediante la dirección URL personalizada.
 
-3. Si los datos no se almacenan en caché en el CDN, el nodo CDN solicita los datos de Office 365 y, a continuación, almacena en caché los datos durante un período de tiempo después de que el cliente descargue los datos.
+3. Si los datos no se almacenan en caché en el CDN, el nodo CDN solicita los datos de Office 365 y, a continuación, almacena en caché los datos durante un tiempo después de que el cliente descargue los datos.
 
 El CDN determina el centro de datos más cercano al explorador del usuario y, mediante el redireccionamiento, descarga los datos solicitados desde allí. CDN redirección es rápida y puede ahorrar a los usuarios mucho tiempo de descarga.
 
@@ -137,7 +137,7 @@ Las redes CDN en uso por Office 365 siempre están sujetas a cambios y, en mucho
 
 Hay muchos factores implicados en la medición de diferencias específicas en el rendimiento entre los datos descargados directamente de Office 365 y los datos descargados de un CDN específico, como la ubicación relativa al inquilino y al punto de conexión de CDN más cercano, el número de recursos de una página que atiende el CDN y los cambios transitorios en la latencia de red y el ancho de banda. Sin embargo, una prueba A/B simple puede ayudar a mostrar la diferencia en el tiempo de descarga de un archivo específico.
 
-En las capturas de pantalla siguientes se muestra la diferencia en la velocidad de descarga entre la ubicación del archivo nativo en Office 365 y el mismo archivo hospedado en el [Content Delivery Network de Microsoft Ajax](/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la pestaña **Red** de las herramientas para desarrolladores de Internet Explorer 11. En estas capturas de pantalla se muestra la latencia en la popular biblioteca jQuery. Para abrir esta pantalla, en Internet Explorer, presione **F12** y seleccione la pestaña **Red** que se simboliza con un icono de Wi-Fi.
+En las capturas de pantalla siguientes se muestra la diferencia en la velocidad de descarga entre la ubicación del archivo nativo en Office 365 y el mismo archivo hospedado en el [Content Delivery Network de Microsoft Ajax](/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la pestaña **Red** de las herramientas para desarrolladores de Internet Explorer 11. En estas capturas de pantalla se muestra la latencia en la popular biblioteca jQuery. Para abrir esta pantalla, en Internet Explorer, presione **F12** y seleccione la pestaña **Red** , que se simboliza con un icono de Wi-Fi.
   
 ![Captura de pantalla de la red F12.](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -151,7 +151,7 @@ En la segunda captura de pantalla se muestra el mismo archivo entregado por el C
 
 ## <a name="is-my-data-safe"></a>¿Mis datos están seguros?
 
-Nos preocupamos mucho por proteger los datos que ejecutan su empresa. Los datos almacenados en el Office 365 CDN se cifran tanto en tránsito como en reposo, y el acceso a los datos de la Office 365 SharePoint CDN se protege mediante Office 365 permisos de usuario y autorización de token. Las solicitudes de datos del Office 365 SharePoint CDN se deben hacer referencia (redirigir) desde el inquilino de Office 365 o no se generará un token de autorización.
+Nos preocupamos mucho por proteger los datos que ejecutan su empresa. Los datos almacenados en el Office 365 CDN se cifran tanto en tránsito como en reposo, y el acceso a los datos de la Office 365 SharePoint CDN se protege mediante Office 365 permisos de usuario y autorización de token. Las solicitudes de datos de la Office 365 SharePoint CDN se deben hacer referencia (redirigir) desde el inquilino de Office 365 o no se generará un token de autorización.
 
 Para asegurarse de que los datos permanecen seguros, se recomienda que nunca almacene contenido de usuario u otros datos confidenciales en una CDN pública. Dado que el acceso a los datos de un CDN público es anónimo, las redes CDN públicas solo deben usarse para hospedar contenido genérico, como archivos de script web, iconos, imágenes y otros recursos no confidenciales.
 
@@ -166,7 +166,7 @@ Para obtener información detallada sobre la privacidad y la protección de dato
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>¿Cómo puedo proteger mi red con todos estos servicios de terceros?
 
-El aprovechamiento de un amplio conjunto de servicios de asociados permite Office 365 escalar y cumplir los requisitos de disponibilidad, así como mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros Office 365 aprovecha incluyen listas de revocación de certificados, como crl.microsoft.com o sa.symcb.com, y cdN, como r3.res.outlook.com. Cada FQDN CDN generado por Office 365 es un FQDN personalizado para Office 365. Si se le envía a un FQDN a petición de Office 365 puede estar seguro de que el proveedor de CDN controla el FQDN y el contenido subyacente en esa ubicación.
+El uso de un amplio conjunto de servicios de asociados permite Office 365 escalar y cumplir los requisitos de disponibilidad y mejorar la experiencia del usuario al usar Office 365. Los servicios de terceros Office 365 aprovecha incluyen listas de revocación de certificados, como crl.microsoft.com o sa.symcb.com, y cdN, como r3.res.outlook.com. Cada FQDN CDN generado por Office 365 es un FQDN personalizado para Office 365. Si se le envía a un FQDN a petición de Office 365, puede estar seguro de que el proveedor de CDN controla el FQDN y el contenido subyacente en esa ubicación.
   
 Para los clientes que quieran separar las solicitudes destinadas a un centro de datos de Microsoft o Office 365 de las solicitudes destinadas a un tercero, hemos escrito instrucciones sobre [la administración de puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 
@@ -178,13 +178,13 @@ También puede usar el [servicio web de direcciones IP y direcciones IP de Offic
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>¿Puedo usar mi propio CDN y almacenar en caché contenido en mi red local?
 
-Estamos buscando continuamente nuevas formas de satisfacer las necesidades de nuestros clientes y estamos explorando actualmente el uso de soluciones de proxy de almacenamiento en caché y otras soluciones de CDN locales.
+Estamos buscando continuamente nuevas formas de satisfacer las necesidades de nuestros clientes y actualmente estamos explorando el uso de soluciones de proxy de almacenamiento en caché y otras soluciones de CDN locales.
 
 Aunque no forma parte de la Office 365 CDN, también puede usar el **Azure CDN** para hospedar elementos web personalizados, bibliotecas y otros recursos de recursos, lo que le permite aplicar claves de acceso al almacenamiento de CDN y ejercer un mayor control sobre la configuración de CDN. El uso de la Azure CDN no es gratuito y requiere una suscripción de Azure. Para obtener más información sobre cómo configurar una instancia de Azure CDN, consulte [Inicio rápido: Integración de una cuenta de almacenamiento de Azure con Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Estoy usando Azure ExpressRoute para Office 365, ¿eso cambia las cosas?
 
-[Azure ExpressRoute para Office 365](azure-expressroute.md) proporciona una conexión dedicada a Office 365 infraestructura que se separa de la red pública de Internet. Esto significa que los clientes seguirán teniendo que conectarse a través de conexiones que no son de ExpressRoute para conectarse a redes CDN y a otra infraestructura de Microsoft que no se incluya explícitamente en la lista de servicios admitidos por ExpressRoute. Para obtener más información sobre cómo enrutar el tráfico específico, como las solicitudes destinadas a las redes CDN, consulte [Office 365 administración del tráfico de red](routing-with-expressroute.md).
+[Azure ExpressRoute para Office 365](azure-expressroute.md) proporciona una conexión dedicada a Office 365 infraestructura que se separa de la red pública de Internet. Esto significa que los clientes seguirán teniendo que conectarse a través de conexiones que no son de ExpressRoute para conectarse a redes CDN y a otra infraestructura de Microsoft que no se incluya explícitamente en la lista de servicios admitidos por ExpressRoute. Para obtener más información sobre cómo enrutar el tráfico específico, como las solicitudes destinadas a redes CDN, consulte [Office 365 administración del tráfico de red](routing-with-expressroute.md).
 
 ## <a name="can-i-use-cdns-with-sharepoint-server-on-premises"></a>¿Puedo usar redes CDN con SharePoint Server local?
 

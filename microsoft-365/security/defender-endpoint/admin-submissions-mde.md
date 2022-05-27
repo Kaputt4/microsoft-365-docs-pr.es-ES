@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: ee7f5e5b4744d9299d122b4ba6b0dffe6734eca7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79a3ecc07c8b987b2f77455323bc656ca9d2ad4f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414831"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754697"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envío de archivos en Microsoft Defender para punto de conexión
 
@@ -48,7 +48,7 @@ En Microsoft Defender para punto de conexión, los administradores pueden usar l
 
 - Para enviar archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
 
-  - **Administración de la organización** o **administrador de seguridad** en el [portal de Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Administración de la organización**, **administrador de seguridad** o **lector de seguridad** en el [portal de Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - Para obtener más información sobre cómo puede enviar datos adjuntos de correo no deseado, phish, direcciones URL y correo electrónico a Microsoft, consulte [Informe de mensajes y archivos a Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 

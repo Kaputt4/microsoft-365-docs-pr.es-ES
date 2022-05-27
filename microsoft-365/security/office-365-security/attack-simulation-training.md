@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679470"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739657"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -319,7 +319,7 @@ En la página **Seleccionar notificación de usuario final** , seleccione una de
       - **Entrega después de que finalice la campaña**
       - **Entrega durante la campaña**
     - **Acciones**: si hace clic en el ![icono Ver.](../../media/m365-cc-sc-view-icon.png) **Icono de vista** , aparece la página **Revisar notificación** con la siguiente información:
-      - **Pestaña Vista previa** : vea el mensaje de notificación.
+      - **Pestaña Vista previa** : vea el mensaje de notificación como lo verán los usuarios.
         - Para ver el mensaje en diferentes idiomas, use el cuadro **Seleccionar idioma** .
         - Use el cuadro **Seleccionar carga útil para obtener una vista previa** para seleccionar el mensaje de notificación para las simulaciones que contienen varias cargas.
       - **Pestaña Detalles** : vea los detalles sobre la notificación:

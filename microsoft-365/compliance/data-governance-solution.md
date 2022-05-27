@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones prescriptivas para implementar Microsoft Purview para su organización con el fin de controlar los datos según los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 0a16bf231111019381ad76670446dba246cf2d4f
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 5a7ef3f26ed21cc8ad97aeea3ed97cb1938cd837
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294827"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754255"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Implementación de una solución de gobierno de datos con Microsoft Purview
 
@@ -54,7 +54,7 @@ Use la **Administración del ciclo de vida de los datos de Microsoft Purview** 
 
 |Paso|Descripción|Más información|
 |:---|:----------|:---------------|
-|1| Comprenda cómo funcionan la retención y la eliminación de los servicios de Microsoft 365. <br /><br /> Después de comprender cómo puede usar las directivas de retención y las etiquetas de retención, identifique las cargas de trabajo que necesitan una directiva de retención y si necesita crear etiquetas de retención para las excepciones. | [Información sobre las directivas de retención y las etiquetas de retención](retention.md)|
+|1 | Comprenda cómo funcionan la retención y la eliminación de los servicios de Microsoft 365. <br /><br /> Después de comprender cómo puede usar las directivas de retención y las etiquetas de retención, identifique las cargas de trabajo que necesitan una directiva de retención y si necesita crear etiquetas de retención para las excepciones. | [Información sobre las directivas de retención y las etiquetas de retención](retention.md)|
 |2| Cree directivas de retención y, si es necesario, etiquetas de retención para las excepciones. <br /><br /> Las directivas de retención más usadas son para Exchange, SharePoint, Teams, Grupos de Microsoft 365 y Yammer. Puede configurar las excepciones para documentos y correos electrónicos. | [Crear directivas de retención](create-retention-policies.md) <p> [Crear y aplicar etiquetas de retención para las excepciones](create-retention-labels-information-governance.md)|
 |3| Administre buzones de correo. <br /><br /> Habilite los buzones para archivar y expandir automáticamente el archivado, tenga en cuenta si necesita personalizar cuándo se mueven los correos electrónicos al buzón de archivo y deje los buzones inactivos cuando los usuarios abandonan la organización.| [Habilitar buzones de archivo](enable-archive-mailboxes.md) <p> [Habilitar el archivado de ampliación automática](enable-autoexpanding-archiving.md) <p> [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)|
 |4| Importe archivos PST a buzones en línea.  <br /><br /> Si tiene archivos PST que contienen los datos que desea controlar, puede importarlos mediante la carga en red o el envío de unidades.| [Usar la carga en la red para importar los archivos PST de su organización](use-network-upload-to-import-pst-files.md) <p> [Usar el envío de unidades para importar los archivos PST de su organización](use-drive-shipping-to-import-pst-files-to-office-365.md)|
@@ -69,7 +69,7 @@ Use la **Administración de registros de Microsoft Purview** para administrar l
 
 |Paso|Descripción|Más información|
 |:---|:----------|:---------------|
-|1| Comprenda la solución de administración de registros. <br /><br /> Use etiquetas de retención con opciones de configuración más flexibles y, cuando sea necesario, declare los elementos como registros. | [Más información sobre la administración de registros](records-management.md)|
+|1 | Comprenda la solución de administración de registros. <br /><br /> Use etiquetas de retención con opciones de configuración más flexibles y, cuando sea necesario, declare los elementos como registros. | [Más información sobre la administración de registros](records-management.md)|
 |2| Use el plan de archivos para administrar las programaciones de retención. <br /><br /> El plan de archivos le permite crear etiquetas de retención de forma interactiva o importarlas en masa, y exportarlas para su análisis. Las etiquetas que se crean con el plan de archivos admiten información administrativa adicional para ayudarle a identificar y realizar un seguimiento de los requisitos normativos o empresariales. | [Usar el plan de archivos para crear y administrar etiquetas de retención](file-plan-manager.md)|
 |3| Aplique las etiquetas de retención. <br /><br /> Las etiquetas de retención se pueden publicar y aplicar de forma manual o automática en aplicaciones, o bien aplicarse automáticamente en función de información confidencial, palabras clave o propiedades que se pueden buscar, clasificadores capacitados o datos adjuntos en la nube. |[Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md) <p> [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)|
 |4| Administre la eliminación permanente de datos. <br /><br /> Conocida como eliminación de datos, puede requerir una revisión manual del contenido antes de que se elimine permanentemente y proporcionar una prueba de eliminación para los registros. |[Administrar la eliminación de contenido](disposition.md)|
@@ -83,8 +83,8 @@ Para obtener más información sobre las funcionalidades de esta solución, cons
 
 Módulos de aprendizaje para consultores y administradores:
 
-- [Introducción a la protección de la información y al gobierno de Microsoft 365](/learn/modules/m365-compliance-information-governance)
-- [Información de gobierno en Microsoft 365](/learn/modules/m365-compliance-information-govern-information/)
-- [Administrar registros en Microsoft 365](/learn/modules/m365-compliance-information-manage-records/)
+- [Introducción a la protección de la información y la administración del ciclo de vida de los datos en Microsoft Purview](/learn/modules/m365-compliance-information-governance)
+- [Administrar el ciclo de vida de los datos en Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
+- [Administrar registros en Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
 
 Para obtener documentación que admita a los usuarios cuando se implementan estas soluciones, consulte las secciones de documentación del usuario final para la [administración del ciclo de vida de los datos](get-started-with-information-governance.md#end-user-documentation) y la [administración de registros](get-started-with-records-management.md#end-user-documentation).

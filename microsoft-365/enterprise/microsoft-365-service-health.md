@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Estado de mantenimiento del servicio de Microsoft 365
-ms.openlocfilehash: 0b3ede9b35dbf4e0356be8d1479e75561f66fdb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f7c7d0d14cdecbfb122d03fdcb4c93fcddbced2
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100399"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753372"
 ---
 # <a name="microsoft-365-network-health-status"></a>Estado de mantenimiento de la red de Microsoft 365
 

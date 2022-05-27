@@ -1,7 +1,7 @@
 ---
-title: Transmitir Microsoft 365 Defender eventos a Azure Event Hub
-description: Obtén información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a tu Centro de eventos.
-keywords: Exportación de datos sin procesar, API de streaming, API, Centro de eventos de Azure, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
+title: Transmitir eventos de Microsoft 365 Defender a Azure Event Hubs
+description: Obtenga información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a Event Hubs.
+keywords: exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, almacenamiento de Azure, cuenta de almacenamiento, búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,46 +17,40 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 064ce5f796d59994b9d7ec4c3403711b1d683e56
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 9cae28cc69d67bb18058e2c81cd8235ffce79997
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500483"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754408"
 ---
-# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada al centro de eventos de Azure
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="prerequisites"></a>Requisitos previos
 
-1. Cree un [centro de eventos](/azure/event-hubs/) en el espacio empresarial.
+Antes de configurar Microsoft 365 Defender para transmitir datos a Event Hubs, asegúrese de que se cumplen los siguientes requisitos previos:
 
-2. Inicie sesión en el inquilino [de Azure](https://ms.portal.azure.com/), vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Ideas**.
+1. Crear una instancia de Event Hubs (para obtener información, consulte [Configuración de Event Hubs](configure-event-hub.md#set-up-event-hubs)).
 
-3. Cree un espacio de nombres de centro de eventos, vaya a Centro de eventos **> Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la infletación automática adecuada para la carga esperada. Para obtener más información, consulte [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
+2. Creación de un espacio de nombres de Event Hubs (para obtener información, consulte [Configuración del espacio de nombres de Event Hubs](configure-event-hub.md#set-up-event-hubs-namespace)).
 
-### <a name="add-contributor-permissions"></a>Agregar permisos de colaborador
+3. Agregue permisos a la entidad que tiene los privilegios de un **colaborador** para que esta entidad pueda exportar datos a Event Hubs. Para obtener más información sobre cómo agregar permisos, vea [Agregar permisos](configure-event-hub.md#add-permissions).
 
-Una vez creado el espacio de nombres de Event Hub, tendrá que:
+> [!NOTE]
+> La API de streaming se puede integrar a través de Event Hubs o Azure Storage Account.
 
-1. Defina el usuario que va a iniciar sesión en Microsoft 365 Defender como colaborador.
+## <a name="enable-raw-data-streaming"></a>Habilitación del streaming de datos sin procesar
 
-2. Si se está conectando a una aplicación, agregue la entidad de seguridad del servicio de registro de aplicaciones como Lector, receptor de datos del centro de eventos de Azure (esto también se puede hacer en el nivel de grupo de recursos o suscripción).
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> como ***Administrador global** _ o _*_Administrador de seguridad_**.
 
-    Vaya al **espacio de nombres Event hubs > Control de acceso (IAM) > Agregar** y comprobar en **Asignaciones de roles**.
-
-## <a name="enable-raw-data-streaming"></a>Habilitar la transmisión de datos sin procesar
-
-1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal</a> como un ***Administrador global** _ o _*_Administrador de seguridad_**.
-
-2. Vaya a la página [Configuración de la API de streaming](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
+2. Vaya a la [página Configuración de Streaming API](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
 3. Haga clic en **Agregar**.
 
@@ -64,15 +58,15 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 5. Elija **Reenviar eventos a Azure Event Hub**.
 
-6. Puede seleccionar si desea exportar los datos del evento a un único centro de eventos o exportar cada tabla de eventos a un centro de eventos diferente en el espacio de nombres del Centro de eventos.
+6. Puede seleccionar si desea exportar los datos de eventos a un único centro de eventos o exportar cada tabla de eventos a un centro de eventos diferente en el espacio de nombres de Event Hubs.
 
-7. Para exportar los datos del evento a un único centro de eventos, escriba el nombre del centro de **eventos y el** identificador **de recurso del centro de eventos**.
+7. Para exportar los datos de eventos a un único centro de eventos, escriba el **nombre del centro de eventos** y el **identificador de recurso del centro de eventos**.
 
-   Para obtener el identificador **de** recurso del Centro de eventos, vaya a la página de espacio de nombres del Centro de eventos de Azure en la pestaña [AzureProperties](https://ms.portal.azure.com/) >  > copiar el texto en **Id. de recurso**:
+   Para obtener el **identificador de recurso de Event Hub**, vaya a la página del espacio de nombres Azure Event Hubs de la pestaña **Propiedades** de [Azure](https://ms.portal.azure.com/) >  > copie el texto en **Id. de recurso**:
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Un identificador de recurso del centro de eventos" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. Vaya a la API Microsoft 365 Defender eventos admitidos en [la API de streaming](supported-event-types.md) de eventos para revisar el estado de compatibilidad de los tipos de eventos en la API Microsoft 365 streaming.
+8. Vaya a [los tipos de eventos Microsoft 365 Defender admitidos en la API de streaming](supported-event-types.md) de eventos para revisar el estado de soporte técnico de los tipos de eventos en Microsoft 365 Streaming API.
 
 9. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
@@ -92,21 +86,21 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 }
 ```
 
-- Cada mensaje del Centro de eventos de Azure Event Hub contiene una lista de registros.
+- Cada mensaje de Event Hubs de Azure Event Hubs contiene una lista de registros.
 
-- Cada registro contiene el nombre del evento, la hora en que Microsoft 365 Defender recibió el evento, el espacio empresarial al que pertenece (solo recibirá eventos de su inquilino) y el evento en formato JSON en una propiedad denominada "**propiedades**".
+- Cada registro contiene el nombre del evento, la hora Microsoft 365 Defender recibió el evento, el inquilino al que pertenece (solo obtendrá eventos del inquilino) y el evento en formato JSON en una propiedad denominada "**properties**".
 
-- Para obtener más información sobre el esquema de Microsoft 365 Defender eventos, vea [Advanced Hunting overview](advanced-hunting-overview.md).
+- Para obtener más información sobre el esquema de eventos de Microsoft 365 Defender, vea [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md).
 
-- En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna.
+- En búsqueda avanzada, la tabla **DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna.
 
 ## <a name="data-types-mapping"></a>Asignación de tipos de datos
 
-Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
+Para obtener los tipos de datos de las propiedades de evento, siga estos pasos:
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> y vaya a [la página Búsqueda avanzada](https://security.microsoft.com/hunting-package).
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> y vaya a la [página Búsqueda avanzada](https://security.microsoft.com/hunting-package).
 
-2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
+2. Ejecute la consulta siguiente para obtener la asignación de tipos de datos para cada evento:
 
    ```kusto
    {EventType}
@@ -114,15 +108,15 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
    | project ColumnName, ColumnType
    ```
 
-- Este es un ejemplo para el evento Device Info:
+- Este es un ejemplo del evento Device Info:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Una consulta de ejemplo para la información del dispositivo" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Consulta de ejemplo para la información del dispositivo" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
-- [Microsoft 365 Defender API de streaming](streaming-api.md)
-- [Tipos Microsoft 365 Defender eventos admitidos en la API de streaming de eventos](supported-event-types.md)
-- [Transmitir Microsoft 365 Defender eventos a su cuenta de Azure Storage](streaming-api-storage.md)
-- [Documentación de Azure Event Hub](/azure/event-hubs/)
-- [Solucionar problemas de conectividad: Azure Event Hub](/azure/event-hubs/troubleshooting-guide)
+- [Introducción a la búsqueda avanzada](advanced-hunting-overview.md)
+- [API de streaming de Microsoft 365 Defender](streaming-api.md)
+- [Tipos de eventos de Microsoft 365 Defender admitidos en la API de streaming de eventos](supported-event-types.md)
+- [Transmitir eventos Microsoft 365 Defender a la cuenta de Azure Storage](streaming-api-storage.md)
+- [documentación de Azure Event Hubs](/azure/event-hubs/)
+- [Solución de problemas de conectividad: Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)

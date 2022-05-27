@@ -18,19 +18,21 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si van hacia arriba o hacia abajo con el tiempo.
-ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Use los informes DLP de Office 365 para ver el número de coincidencias de directiva DLP, invalidaciones o falsos positivos y ver si están a la alza o a la baja con el tiempo.
+ms.openlocfilehash: 01064662e0af82ec98837c8518172bcfeffbaa96
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423628"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753548"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
-Después de crear las directivas de prevención de pérdida de datos (DLP), querrá comprobar que funcionan según lo previsto y le ayudarán a cumplir las normas. Con los informes DLP en el Centro de &amp; cumplimiento de seguridad, puede ver rápidamente:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Después de crear las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview, querrá comprobar que funcionan según lo previsto y ayudarle a mantener la conformidad. Con los informes DLP en el portal de cumplimiento Microsoft Purview, puede ver rápidamente:
   
-- **Coincidencias de directiva DLP** Este informe muestra el recuento de coincidencias de directivas DLP con el tiempo. Puede filtrar el informe por fecha, ubicación, directiva o acción. Puede usar este informe para: 
+- **Coincidencias de directiva DLP** En este informe se muestra el recuento de coincidencias de directivas DLP con el tiempo. Puede filtrar el informe por fecha, ubicación, directiva o acción. Puede usar este informe para: 
     
   - Ajuste o perfeccione sus directivas DLP a medida que las ejecuta en modo de prueba. La regla específica que coincide con el contenido.
     
@@ -46,11 +48,11 @@ Después de crear las directivas de prevención de pérdida de datos (DLP), quer
     
   - Vea una lista de los tipos principales de información confidencial de su organización.
     
-- **Incidentes dlp** Este informe también muestra coincidencias de directiva con el tiempo, como el informe de coincidencias de directiva. Sin embargo, el informe de coincidencias de directiva muestra coincidencias en un nivel de regla; por ejemplo, si un correo electrónico coincide con tres reglas diferentes, el informe de coincidencias de directiva muestra tres elementos de línea diferentes. En cambio, el informe de incidentes muestra coincidencias en un nivel de elemento; por ejemplo, si un correo electrónico coincide con tres reglas diferentes, el informe de incidentes muestra un único elemento de línea para ese fragmento de contenido. 
+- **Incidentes dlp** Este informe también muestra las coincidencias de directivas con el tiempo, como el informe de coincidencias de directivas. Sin embargo, el informe de coincidencias de directivas muestra coincidencias en un nivel de regla; por ejemplo, si un correo electrónico coincidía con tres reglas diferentes, la directiva coincide con el informe que muestra tres elementos de línea diferentes. Por el contrario, el informe de incidentes muestra coincidencias en un nivel de elemento; por ejemplo, si un correo electrónico coincidía con tres reglas diferentes, el informe de incidentes muestra un único elemento de línea para ese fragmento de contenido. 
     
-  Dado que los recuentos de informes se agregan de forma diferente, el informe de coincidencias de directivas es mejor para identificar coincidencias con reglas específicas y ajustar directivas DLP. El informe de incidentes es mejor para identificar partes específicas del contenido que sean problemáticas para las directivas DLP.
+  Dado que los recuentos de informes se agregan de forma diferente, el informe de coincidencias de directivas es mejor para identificar coincidencias con reglas específicas y ajustar las directivas DLP. El informe de incidentes es mejor para identificar partes específicas del contenido que sean problemáticas para las directivas DLP.
     
-- **Falsos positivos e invalidaciones de DLP** Si la directiva DLP permite a los usuarios invalidarla o notificar un falso positivo, este informe muestra un recuento de dichas instancias con el tiempo. Puede filtrar el informe por fecha, ubicación o directiva. Puede usar este informe para: 
+- **Falsos positivos e invalidaciones de DLP** Si la directiva DLP permite a los usuarios invalidarla o notificar un falso positivo, este informe muestra un recuento de dichas instancias a lo largo del tiempo. Puede filtrar el informe por fecha, ubicación o directiva. Puede usar este informe para: 
     
   - Ajuste o perfeccione sus directivas DLP al ver qué directivas incurren en un gran número de falsos positivos.
     
@@ -60,41 +62,41 @@ Después de crear las directivas de prevención de pérdida de datos (DLP), quer
     
 Todos los informes de DLP pueden mostrar los datos del período de tiempo de cuatro meses más reciente. Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
   
-Puede encontrar estos informes en el Panel de informes del &amp; Centro de seguridad y \>  \> **cumplimiento.**
+Puede encontrar estos informes en el **panel** de **informes** \> de portal de cumplimiento Microsoft Purview\>.
   
-![Informe de coincidencias de directivas DLP.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![La directiva DLP coincide con el informe.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Ver la justificación enviada por un usuario para una invalidación
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Visualización de la justificación enviada por un usuario para una invalidación
 
 Si la directiva DLP permite a los usuarios invalidarla, puede usar el informe de falsos positivos e invalidaciones para ver el texto enviado por los usuarios en la sugerencia de directiva.
   
-![Campo De justificación en los detalles del informe dlp falso positivo e invalidación.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Campo Justificación en detalles del informe de invalidación y falsos positivos dlp.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>Tomar medidas sobre información y recomendaciones
+## <a name="take-action-on-insights-and-recommendations"></a>Tomar medidas sobre conclusiones y recomendaciones
 
-Los informes pueden mostrar información y recomendaciones en las que puede hacer clic en el icono rojo de advertencia para ver detalles sobre posibles problemas y realizar posibles acciones correctivas.
+Los informes pueden mostrar conclusiones y recomendaciones en las que puede hacer clic en el icono de advertencia rojo para ver detalles sobre posibles problemas y tomar posibles medidas correctivas.
   
-![Haga clic en un icono de información para ver los detalles y las acciones que debe realizar.](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Hacer clic en un icono de información para ver los detalles y las acciones que se van a realizar.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Permisos para informes DLP
 
-Para ver los informes DLP en el Centro de seguridad & cumplimiento, debe tener asignado lo siguiente:
+Para ver los informes DLP en el Centro de cumplimiento de seguridad &, debe tener asignado lo siguiente:
 
-- **Rol lector de** seguridad en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el centro Exchange administración.
+- **Rol lector de seguridad** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el centro de administración de Exchange.
 
-- **Rol Administración de cumplimiento DLP de solo** vista en el Centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de la organización, Administrador de seguridad y Lector de seguridad en el Centro de seguridad & cumplimiento.
+- **Ver solo el rol de administración de cumplimiento DLP** en el Centro de cumplimiento de seguridad &. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de la organización, Administrador de seguridad y Lector de seguridad en el Centro de cumplimiento de seguridad &.
 
-- **Función Destinatarios de solo vista** en el centro Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y administración de View-Only en el centro de administración de Exchange cumplimiento.
+- **Rol Destinatarios de solo visualización** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y View-Only Administración de la organización en el centro de administración de Exchange.
 
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Buscar los cmdlets de los informes DLP
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Búsqueda de los cmdlets para los informes DLP
 
-Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
+Para usar la mayoría de los cmdlets para el portal de cumplimiento Microsoft Purview, debe:
   
-1. [Conectar a la seguridad &amp; Centro de cumplimiento con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
+1. [Conectar a la portal de cumplimiento Microsoft Purview mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
     
-2. Use cualquiera de estos [ &amp; cmdlets del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell)
+2. Uso de cualquiera de estos [cmdlets del Centro de cumplimiento de seguridad &amp;](/powershell/exchange/exchange-online-powershell)
     
-Sin embargo, los informes de DLP necesitan extraer datos de todo Office 365, incluido Exchange Online. Por este motivo, los cmdlets de los informes DLP están disponibles en Exchange Online Powershell, no en &amp; Powershell del Centro de seguridad y cumplimiento. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
+Sin embargo, los informes de DLP necesitan extraer datos de todo Office 365, incluido Exchange Online. Por este motivo, los cmdlets de los informes DLP están disponibles en Exchange Online PowerShell, no en portal de cumplimiento Microsoft Purview PowerShell. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
 1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell)
     

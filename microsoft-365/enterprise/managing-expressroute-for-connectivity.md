@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Obtenga información sobre cómo administrar ExpressRoute para Office 365, incluidas las áreas comunes para configurar, como el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: a601c047a7b8e19f02a728d00708689c795d5a64
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098326"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753878"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -39,7 +39,7 @@ Microsoft recomienda que los clientes acepten todas las rutas BGP tal y como se 
   
 Si necesita una validación adicional de la propiedad de la ruta en el emparejamiento público de ExpressRoute, puede comprobar las rutas anunciadas en la lista de todos los prefijos IP IPv4 e IPv6 que representan [los intervalos ip públicos de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Estos intervalos cubren todo el espacio de direcciones de Microsoft y cambian con poca frecuencia, lo que proporciona un conjunto confiable de intervalos con los que filtrar que también proporciona protección adicional a los clientes que están preocupados por la pérdida de rutas que no son propiedad de Microsoft en su entorno. En caso de que se produzca un cambio, se realizará el 1 de mes y el número de versión de la sección **de detalles** de la página cambiará cada vez que se actualice el archivo.
   
-Hay varias razones para evitar el uso de las [direcciones URL de Office 365 y los intervalos de direcciones IP](./urls-and-ip-address-ranges.md) para generar listas de filtros de prefijos. Incluido lo siguiente:
+Hay muchas razones para evitar el uso de las [direcciones URL de Office 365 y los intervalos de direcciones IP](./urls-and-ip-address-ranges.md) para generar listas de filtros de prefijos. Incluido lo siguiente:
   
 - Los prefijos IP de Office 365 experimentan muchos cambios con frecuencia.
 
@@ -59,7 +59,7 @@ Independientemente de cómo administre los anuncios de ruta BGP procedentes de M
   
 ### <a name="security"></a>Seguridad
 
-Microsoft recomienda mantener sus propios controles perimetrales de red y seguridad para las conexiones que van hacia y desde ExpressRoute público y el emparejamiento de Microsoft, lo que incluye conexiones hacia y desde Office 365 servicios. Los controles de seguridad deben estar implementados para las solicitudes de red que viajan salientes desde la red a la red de Microsoft, así como para la entrada desde la red de Microsoft a la red.
+Microsoft recomienda mantener sus propios controles perimetrales de red y seguridad para las conexiones que van hacia y desde ExpressRoute público y el emparejamiento de Microsoft, lo que incluye conexiones hacia y desde Office 365 servicios. Los controles de seguridad deben estar implementados para las solicitudes de red que viajen salientes desde la red a la red de Microsoft y entrantes desde la red de Microsoft a la red.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>Salida del cliente a Microsoft
   
@@ -86,7 +86,7 @@ Hay varios escenarios opcionales que requieren que Microsoft inicie conexiones a
 
 - Envíe correo desde un inquilino de Exchange Online a un host local.
 
-- SharePoint envío de correo en línea desde SharePoint Online a un host local.
+- SharePoint correo en línea enviado desde SharePoint Online a un host local.
 
 - [SharePoint búsqueda híbrida federada](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 

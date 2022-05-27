@@ -25,17 +25,19 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 55e8e5bd16b850ecce84cc87d43e7269746a7999
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903533"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754828"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
-> Este es el tema de referencia ya no es el recurso principal para Microsoft 365 de prevención de pérdida de datos (DLP). El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se trasladarán a artículos nuevos y actualizados. Para obtener más información acerca de DLP, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
+> Este tema de referencia ya no es el recurso principal para la información de Prevención de pérdida de datos de Microsoft Purview (DLP). El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se moverán a artículos nuevos y actualizados. Para obtener más información sobre DLP, consulte [Más información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -44,7 +46,7 @@ ms.locfileid: "62903533"
 
 
 
-<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Microsoft Purview compliance portal, you can identify, monitor, and automatically protect sensitive information across Office 365.
 
 With a DLP policy, you can:
 
@@ -69,11 +71,11 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->
-## <a name="create-and-manage-dlp-policies"></a>Crear y administrar directivas DLP
+## <a name="create-and-manage-dlp-policies"></a>Creación y administración de directivas DLP
 
-Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de cumplimiento de Microsoft 365.
+Las directivas DLP se crean y administran en la página de prevención de pérdida de datos de la portal de cumplimiento Microsoft Purview.
 
-![Página de prevención de pérdida de datos en el Office 365 de cumplimiento &amp; de seguridad.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Página prevención de pérdida de datos en el portal de cumplimiento Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -327,7 +329,7 @@ Las instrucciones para usar el recuento de instancias para ajustar las reglas so
 
 Normalmente, se usan acciones menos restrictivas, como el envío de notificaciones de usuario, en una regla con un recuento de instancias inferior (por ejemplo, 1-9). Y se usan acciones más restrictivas, como restringir el acceso al contenido sin permitir invalidaciones de usuario, en una regla con un recuento de instancias superior (por ejemplo, de 10 a cualquiera).
 
-![La instancia cuenta en el editor de reglas.](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![Recuentos de instancias en el editor de reglas.](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
 
 ### <a name="match-accuracy"></a>Precisión de coincidencia
 
@@ -359,7 +361,7 @@ Es importante comprender que, cuando se identifica en el contenido un tipo espec
 
 Por lo tanto, si quiere crear dos reglas que se excluyan mutuamente para tarjetas de crédito, una para la precisión de coincidencia del 65 % y otra para la precisión de coincidencia del 85 %, los intervalos de la precisión de coincidencia tendrían el siguiente aspecto. La primera regla selecciona solo coincidencias del patrón del 65 %. La segunda regla selecciona coincidencias con **al menos una** coincidencia del 85 % y **puede tener** otras coincidencias con un nivel menor de confianza.
 
-![Dos reglas con intervalos diferentes para la precisión de coincidencias.](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Dos reglas con intervalos diferentes para la precisión de coincidencia.](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
 
 Por estas razones, las instrucciones para crear reglas con diferentes precisiones de coincidencia son:
 
@@ -388,7 +390,7 @@ Al usar una [etiqueta de retención](retention.md#retention-labels) que haya cre
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de confidencialidad como condición en una directiva DLP
 
-[Obtenga más información](./dlp-sensitivity-label-as-condition.md) sobre cómo usar la etiqueta de confidencialidad como condición en las directivas DLP.
+[Obtenga más información](./dlp-sensitivity-label-as-condition.md) sobre el uso de la etiqueta de confidencialidad como condición en las directivas DLP.
 
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo esta característica se relaciona con otras características
 
@@ -398,13 +400,13 @@ Varias características pueden aplicarse al contenido que incluye información c
 
 - Una directiva DLP puede aplicar acciones de **protección** en este contenido. Y antes de aplicar estas acciones, una directiva DLP puede requerir que se cumplan otras condiciones además del contenido que contiene una etiqueta.
 
-![Diagrama de características que se pueden aplicar a información confidencial.](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![Diagrama de características que se pueden aplicar a la información confidencial.](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
 
 Tenga en cuenta que una directiva DLP tiene una capacidad de detección más profunda que una directiva de retención o etiqueta aplicada a la información confidencial. Una directiva DLP puede aplicar acciones de protección al contenido que incluye información confidencial y si se elimina la información confidencial del contenido, esas acciones de protección se desharán la próxima vez que se examine el contenido. Sin embargo, si una directiva de retención o etiqueta se aplica al contenido que incluye información confidencial, esta será una acción única que no se puede deshacer, incluso aunque se quite de la información confidencial.
 
 Al usar una etiqueta como una condición en una directiva DLP, puede aplicar acciones de retención y protección en el contenido con esa etiqueta. Puede considerar el contenido que incluya una etiqueta exactamente igual al que incluye información confidencial: una etiqueta y un tipo de información confidencial son propiedades que se usan para clasificar contenido, por lo que se pueden aplicar acciones a ese contenido.
 
-![Diagrama de directiva DLP con etiqueta como condición.](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagrama de la directiva DLP con la etiqueta como condición.](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
 
 ## <a name="simple-settings-vs-advanced-settings"></a>Configuraciones simples y configuraciones avanzadas
 
@@ -422,7 +424,7 @@ De lejos, el escenario DLP más común es crear una directiva para ayudar a prot
 
 Para facilitar el cumplimiento de este objetivo, cuando cree una directiva DLP, puede elegir **usar la configuración simple**. Esta configuración proporciona todo lo que necesita para implementar la directiva DLP más común, sin tener que utilizar el editor de reglas.
 
-![Opciones dlp para opciones sencillas y avanzadas.](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![Opciones dlp para una configuración sencilla y avanzada.](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
 
 ### <a name="advanced-settings"></a>Configuración avanzada
 
@@ -440,7 +442,7 @@ El primer paso para crear una directiva DLP consiste en elegir la información q
 
 Una plantilla de directiva DLP preconfigurada le ayuda a detectar tipos concretos de información confidencial, como datos HIPAA, datos PCI-DSS, datos de la ley Gramm-Leach-Bliley o incluso información de identificación personal (P.I.) específica de una ubicación. Para facilitar la búsqueda y la protección de tipos comunes de información confidencial, las plantillas de directiva que se incluyen en Microsoft 365 ya contienen los tipos más comunes de información confidencial necesarios para comenzar.
 
-![Lista de plantillas para directivas de prevención de pérdida de datos con foco en la plantilla para la Ley Patriota de Estados Unidos.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Lista de plantillas para directivas de prevención de pérdida de datos centradas en la plantilla para la Ley Patriota de Ee. UU.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
 Su organización también puede tener requisitos específicos propios, en cuyo caso puede crear una directiva DLP desde cero eligiendo la opción **Directiva personalizada**. Una directiva personalizada está vacía y no contiene reglas predefinidas.
 
@@ -491,7 +493,7 @@ DLP detecta información confidencial mediante un análisis profundo del conteni
 
 ### <a name="policies-are-synced"></a>Las directivas se sincronizan
 
-Después de crear una directiva DLP en el Centro de seguridad y cumplimiento, esta se almacena en un almacén central de directivas y después se sincroniza con los distintos orígenes de contenido, entre ellos:
+Después de crear una directiva DLP en el portal de cumplimiento Microsoft Purview, se almacena en un almacén de directivas central y, a continuación, se sincroniza con los distintos orígenes de contenido, incluidos:
 
 - Exchange Online y de ahí a Outlook en la web y Outlook.
 
@@ -510,7 +512,8 @@ Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza
 
 En los sitios de SharePoint Online y OneDrive para la Empresa, los documentos cambian todo el tiempo: se crean, se modifican y se comparten continuamente. Esto significa que los documentos pueden entrar en conflicto o pasar a ser conformes con una directiva DLP en cualquier momento. Por ejemplo, una persona puede cargar un documento que no contenga información confidencial a su sitio de grupo, pero más adelante, puede editar el mismo documento y agregar información confidencial.
 
-Por este motivo, las directivas DLP buscan frecuentemente y en segundo plano coincidencias de directivas en los documentos. Puede considerarlo como una evaluación asincrónica de directiva.<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
+Por este motivo, las directivas DLP buscan frecuentemente y en segundo plano coincidencias de directivas en los documentos. Puede considerarlo como una evaluación asincrónica de directiva.
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
 
 #### <a name="how-it-works"></a>Cómo funciona
 
@@ -523,13 +526,13 @@ A medida que los usuarios agregan o cambian documentos en sus sitios, el motor d
 DLP evalúa el contenido que se puede indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, consulte [Extensiones de nombre de archivo y tipos de archivo analizados predeterminados en SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Para evitar que los documentos se compartan antes de que las directivas DLP tuvieran la oportunidad de analizarlos, el uso compartido de nuevos archivos en SharePoint puede bloquearse hasta que su contenido se haya indizado. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](/sharepoint/sensitive-by-default).
+> Para evitar que los documentos se compartan antes de que las directivas DLP tuvieran la oportunidad de analizarlos, el uso compartido de nuevos archivos en SharePoint se puede bloquear hasta que se indexe su contenido. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](/sharepoint/sensitive-by-default).
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Evaluación de la directiva en Exchange Online, Outlook y Outlook en la Web
 
-Cuando se crea una directiva DLP que incluye Exchange Online como ubicación, la directiva se sincroniza desde el Centro de seguridad y cumplimiento de Office 365 con Exchange Online y, después, desde Exchange Online con Outlook en la Web y Outlook.
+Al crear una directiva DLP que incluye Exchange Online como ubicación, la directiva se sincroniza del portal de cumplimiento Microsoft Purview a Exchange Online y, a continuación, de Exchange Online a Outlook en la Web  y Outlook.
 
-Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y después de enviar un mensaje, se evalúa con las directivas DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas DLP creadas en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
+Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y después de enviar un mensaje, se evalúa con directivas DLP como parte normal del flujo de correo, junto con Exchange reglas de flujo de correo (también conocidas como reglas de transporte) y directivas DLP creadas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Evaluación de la directiva en los programas de escritorio de Office
 
@@ -541,15 +544,15 @@ La evaluación de directivas DLP en Office está diseñada para no afectar al re
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Evaluación de directivas en Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Cuando crea una directiva DLP que incluye Microsoft Teams como ubicación, la directiva se sincroniza desde el Centro de seguridad y cumplimiento de Office 365 con las cuentas de usuario y mensajes de chat y de canales de Microsoft Teams. En función de cómo estén configuradas las directivas DLP, cuando un usuario intenta compartir información confidencial en un mensaje de chat o canal de Microsoft Teams, el mensaje se puede bloquear o revocar. Y los documentos que contienen información confidencial y que se comparten con invitados (usuarios externos) no se abrirán para estos usuarios. Para obtener más información, vea [Prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
+Al crear una directiva DLP que incluye Microsoft Teams como ubicación, la directiva se sincroniza desde el portal de cumplimiento Microsoft Purview a las cuentas de usuario y Microsoft Teams canales y mensajes de chat. En función de cómo estén configuradas las directivas DLP, cuando un usuario intenta compartir información confidencial en un mensaje de chat o canal de Microsoft Teams, el mensaje se puede bloquear o revocar. Y los documentos que contienen información confidencial y que se comparten con invitados (usuarios externos) no se abrirán para estos usuarios. Para obtener más información, vea [Prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>Permisos
 
-De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos en el Centro de cumplimiento &amp; de seguridad. De forma predeterminada, &amp; el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otras personas acceso al Centro de cumplimiento de seguridad, sin darles todos los permisos de un administrador de inquilinos. Para ello, le recomendamos que:
+De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos para el portal de cumplimiento Microsoft Purview. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y podrá conceder a los responsables de cumplimiento y a otras personas acceso a la portal de cumplimiento Microsoft Purview, sin darles todos los permisos de administrador de inquilinos. Para ello, le recomendamos que:
 
-1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
+1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
 
-2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento.
+2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview.
 
 3. Durante la creación del grupo de roles, utilice la sección **Elegir roles** para añadir el rol siguiente al grupo de roles: **Administración de cumplimiento DLP**.
 
@@ -563,13 +566,13 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 ## <a name="find-the-dlp-cmdlets"></a>Encontrar los cmdlets DLP
 
-Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
+Para usar la mayoría de los cmdlets para el portal de cumplimiento Microsoft Purview, debe:
 
-1. [Conectarse al &amp;Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
+1. [Conectar a la Office 365 portal de cumplimiento Microsoft Purview mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell).
 
 2. Usar cualquiera de estos [cmdlets policy-and-compliance-dlp](/powershell/module/exchange/export-dlppolicycollection)
 
-Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes de DLP están disponibles en el PowerShell de Exchange Online. no en el PowerShell del Centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
+Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, ***los cmdlets de los informes DLP están disponibles en Exchange Online PowerShell, no en portal de cumplimiento Microsoft Purview PowerShell***. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
 
 1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
 

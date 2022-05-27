@@ -22,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
-ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.date: 05/26/2022
+ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587432"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753856"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -46,6 +46,16 @@ Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancar
 
 - Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - El método de pago que elija durante la finalización de la compra es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nuevas normativas del Banco de Reserva de India
+
+A partir del 1 de octubre de 2021, los pagos automáticos en India podrían bloquear algunas transacciones de tarjetas de crédito, especialmente las transacciones que superan los 5000 INR. Debido a este reglamento, es posible que tenga que realizar pagos manualmente en el Centro de administración de Microsoft 365. Estas regulaciones no afectarán al importe total que se le cobrará por el uso.
+
+[Obtenga más información sobre el reglamento del Banco de Reserva de India para los pagos periódicos](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+El 1 de julio de 2022, Microsoft y otros comerciantes en línea ya no almacenarán la información de la tarjeta de crédito. Para cumplir con este reglamento, Microsoft quitará todos los detalles almacenados de tarjetas del Centro de administración de Microsoft 365. Para evitar la interrupción del servicio, debe agregar un método de pago y realizar un pago único para todas las suscripciones y perfiles de facturación.
+
+[Obtenga información sobre el reglamento del Banco de Reserva de India para el almacenamiento de tarjetas](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito/débito o cuenta bancaria
 

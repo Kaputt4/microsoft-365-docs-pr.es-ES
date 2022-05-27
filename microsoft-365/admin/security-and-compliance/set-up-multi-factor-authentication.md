@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637348"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739923"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurar la autenticación multifactor para Microsoft 365
 
@@ -122,6 +122,8 @@ Para la mayoría de las suscripciones, la autenticación moderna se activa autom
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[configurar la autenticación multifactor](set-up-multi-factor-authentication.md) (vídeo)
+[configurar la autenticación multifactor](set-up-multi-factor-authentication.md) (vídeo)\
 
-[Activar la autenticación multifactor para el teléfono](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+[Activar la autenticación multifactor para su teléfono (artículo)](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+
+[Valores predeterminados de seguridad y autenticación multifactor](/microsoft-365/business-premium/m365bp-conditional-access) (artículo)

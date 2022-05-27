@@ -16,13 +16,13 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: En este artículo, obtendrá los recursos que le ayudarán a migrar los datos de la organización a Microsoft 365.
-ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: En este artículo, encontrará los recursos que le ayudarán a migrar los datos de la organización a Microsoft 365.
+ms.openlocfilehash: 97846f3a35fdc415b172cbc5670739ca10204b70
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096422"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753438"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migración de los datos de la organización a Microsoft 365 Enterprise
 
@@ -30,10 +30,10 @@ ms.locfileid: "65096422"
 
 Nuestras [instrucciones básicas de configuración](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) le ayudan a conseguir que todos los usuarios usen sus servicios y aplicaciones de Microsoft 365 en el menor tiempo posible. Esto omite los escenarios híbridos y los métodos más avanzados para migrar a Microsoft 365. 
   
-Si desea ayuda para configurar Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) es la manera más fácil de implementar Microsoft 365, también puede iniciar sesión y usar las [guías de configuración para los servicios de Microsoft 365](setup-guides-for-microsoft-365.md).
+Si desea ayuda para obtener Microsoft 365 configuración, [FastTrack](https://fasttrack.microsoft.com/office) es la manera más fácil de implementar Microsoft 365, también puede iniciar sesión y usar las [guías de instalación para Microsoft 365 servicios](setup-guides-for-microsoft-365.md).
 
 ## <a name="migrate-email-to-microsoft-365"></a>Migración de correo electrónico a Microsoft 365
-- Migrar con Exchange híbrido con el [Asistente de implementación de Exchange](https://technet.microsoft.com/exdeploy2013). (Administrador)
+- Migre con Exchange Híbrido mediante [el Asistente para la implementación de Exchange](https://technet.microsoft.com/exdeploy2013). (Administrador)
 - Obtenga más información sobre las [distintas formas de migrar el correo electrónico a Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Buscar formas alternativas para que las [personas de su organización puedan migrar su propio correo electrónico, sus contactos y calendarios](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 

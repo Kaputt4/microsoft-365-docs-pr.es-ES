@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: En este artículo, obtendrá información sobre cómo crear directivas DLP mediante una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759111"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754684"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
-La manera más fácil y común de empezar a trabajar con directivas DLP es usar una de las plantillas incluidas en el Centro de cumplimiento de Microsoft 365. Puede usar una de estas plantillas tal como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de su organización.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La manera más sencilla y común de empezar a trabajar con directivas DLP es usar una de las plantillas incluidas en el portal de cumplimiento Microsoft Purview. Puede usar una de estas plantillas tal como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de su organización.
 
 Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de normativas y directivas empresariales. Ver; [Plantillas de directiva](dlp-policy-reference.md#policy-templates) para una lista completa. 
 
@@ -41,9 +43,9 @@ También puede elegir la plantilla Personalizada, que no tiene reglas predetermi
 
 Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso para dar acceso a los responsables de cumplimiento y a otras personas. Siga estos pasos:
   
-1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
+1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
     
-2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
+2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview. 
 
 3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento dlp**.
     
@@ -51,7 +53,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
 
 Use el rol **View-Only DLP Compliance Management** para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
 
-Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener más información vea [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP que no aplique directivas.
 
@@ -59,14 +61,14 @@ Estos permisos son necesarios para crear y aplicar una directiva DLP que no apli
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -76,9 +78,9 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Creación de la directiva DLP a partir de una plantilla
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a>.
 
-2. En el Centro \> de cumplimiento, a la  izquierda, navegación \> **Soluciones Directivas** \> de prevención \> \> de **pérdida de datos** **+ Crear directiva**.
+2. En el portal de cumplimiento Microsoft Purview \> navegación \> izquierdo **Soluciones Directivas** \> de prevención  \> \> de **pérdida de datos** **+ Crear directiva**.
 
     ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -96,7 +98,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 
 6. Elija \> **Siguiente**.
  
-1. Realice una de las siguientes acciones:
+1. Realiza una de las siguientes acciones:
 
    - Elija **Todas las ubicaciones de Office 365** \> **Siguiente**.
    - Elija **Permitirme elegir ubicaciones** \> específicas **Siguiente**. En este ejemplo, elija esta opción.
@@ -205,7 +207,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

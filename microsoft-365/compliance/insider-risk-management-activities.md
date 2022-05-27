@@ -1,7 +1,7 @@
 ---
 title: Investigación de actividades de administración de riesgos internos
-description: Obtenga información sobre cómo investigar las actividades de administración de riesgos internos en Microsoft 365
-keywords: Microsoft 365, riesgo interno, administración de riesgos, cumplimiento
+description: Obtenga información sobre cómo investigar las actividades de administración de riesgos internos en Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b53b67433bea08e20b082f555c26d41edce55daa
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783345"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759876"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La investigación de actividades de usuario de riesgo es un primer paso importante para minimizar los riesgos internos para su organización. Estos riesgos pueden ser actividades que generan alertas a partir de directivas de administración de riesgos internos o riesgos de actividades detectadas por directivas, pero que no crean inmediatamente una alerta de administración de riesgos internos para los usuarios. Puede investigar estos tipos de actividades mediante los informes de **actividad de usuario (versión preliminar)** o con el **panel Alerta**.
 
@@ -105,7 +107,7 @@ Puede ayudar a ahorrar tiempo de evaluación para que los analistas e investigad
 
 Para descartar una alerta de riesgo interno, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
 2. En el **panel Alertas**, seleccione la alerta (o alertas) con el estado *Necesita revisión* que desea descartar.
 3. En la barra de comandos Alertas, seleccione **Descartar alertas**.
 4. En el panel **Descartar detalles de alertas** , puede revisar los detalles de usuario y directiva asociados a las alertas seleccionadas.
@@ -115,7 +117,7 @@ Para descartar una alerta de riesgo interno, siga estos pasos:
 
 Para evaluar una alerta de riesgo interno, complete los pasos siguientes:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
 2. En el **panel Alertas**, seleccione la alerta que desea evaluar.
 3. En la página **Detalles de la alerta** , puede revisar la información sobre la alerta. Puede confirmar la alerta y crear un caso nuevo, confirmar la alerta y agregarla a un caso existente, o descartar la alerta. Esta página también incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, que se muestran como Alto, Medio o Bajo. El nivel de gravedad puede aumentar o disminuir con el tiempo si no se evalúa la alerta.
 
@@ -162,13 +164,13 @@ El gráfico **de actividad De usuario** es una de las herramientas más eficaces
 2. **Actividad y detalles de alertas de riesgo**: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico Actividad del usuario. Las burbujas se crean para diferentes categorías de riesgo y. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Los detalles incluyen:
     - **Fecha** de la actividad de riesgo.
     - Categoría de **actividad de riesgo**. Por ejemplo, *los correos electrónicos con datos adjuntos enviados fuera de la organización* o *archivos descargados de SharePoint Online*.
-    - **Puntuación de riesgo** para la alerta. Esta puntuación es la puntuación numérica del nivel de gravedad del riesgo de la alerta.
+    - **Nivel de riesgo** de la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad del riesgo de alerta.
     - Número de eventos asociada a la alerta. También están disponibles vínculos a cada archivo o correo electrónico asociado a la actividad de riesgo.
 3. **Filtros y ordenación (versión preliminar):**
     - **Categoría de riesgo**: Filtre las actividades por las siguientes categorías de riesgo: *actividades con puntuaciones de riesgo > 15 (a menos que en una secuencia)* y *actividades de secuencia*.
     - **Tipo de actividad**: Filtre las actividades por los siguientes tipos: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Ofusscation* y *Security*.
     - **Ordenar por**: enumere las actividades de escala de tiempo por *Fecha o* *Puntuación de riesgo*.
-4. **Secuencia de riesgo (versión preliminar):** el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Esta visión de las actividades puede ayudar a los investigadores literalmente a "conectar los puntos" para las actividades de riesgo que podrían haberse visto como eventos aislados o puntuales. Seleccione cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
+4. **Secuencia de riesgo**: el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Esta visión de las actividades puede ayudar a los investigadores literalmente a "conectar los puntos" para las actividades de riesgo que podrían haberse visto como eventos aislados o puntuales. Seleccione cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
 
     - **Nombre** de la secuencia.
     - **Intervalo de fechas** o **fechas** de la secuencia.
@@ -207,7 +209,7 @@ Use los filtros Ámbito de actividad y Información de riesgo para mostrar y ord
 
 Para usar el **Explorador de actividad**, complete los pasos siguientes:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
 2. En el **panel Alertas**, seleccione la alerta que desea evaluar.
 3. En el **panel Detalles de alertas**, seleccione **Abrir vista expandida**.
 4. En la página de la alerta seleccionada, seleccione la pestaña **Explorador de actividad** .
@@ -225,9 +227,9 @@ Al seleccionar los eventos de una actividad de la escala de tiempo de actividad,
 
 A medida que se revisa y se evalúa la alerta, puede crear un nuevo caso para investigar aún más la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Alertas**.
 2. En el **panel Alertas**, seleccione la alerta para la que desea confirmar y cree un nuevo caso.
-3. En el **panel Detalles de alertas**, seleccione **AccionesConfirm** >  **alertas & crear caso**.
+3. En el **panel Detalles de alertas**, seleccione **Acciones** > **Confirmar alertas & crear caso**.
 4. En el cuadro de diálogo **Confirmar alerta y crear caso de riesgo interno** , escriba un nombre para el caso, seleccione los usuarios que desea agregar como colaboradores y agregue comentarios según corresponda. Los comentarios se agregan automáticamente al caso como nota de caso.
 5. Seleccione **Crear caso** para crear un nuevo caso o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un caso.
 
@@ -239,7 +241,7 @@ A medida que la administración de riesgos internos alerta de la antigüedad, su
 
 Para ayudar a minimizar el número de elementos anteriores que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos internos, casos e informes de actividad de usuario:
 
-|Item|Retención/límite|
+|Elemento|Retención/límite|
 |---|---|
 |Alertas con estado de revisión de necesidades|120 días desde la creación de alertas y, a continuación, se elimina automáticamente|
 |Casos activos (y artefactos asociados)|Retención indefinida, nunca expirar|
@@ -274,4 +276,4 @@ Los usuarios modernos del área de trabajo suelen tener una amplia variedad de r
 
 - **Céntrese primero en los esfuerzos de analistas e investigadores en las alertas de mayor riesgo**. En función de las directivas, es posible que esté capturando actividades y generando alertas con distintos grados de impacto potencial en los esfuerzos de mitigación de riesgos. [Filtre las alertas](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por gravedad y dé prioridad a las *alertas de gravedad alta* .
 - **Asigne usuarios como analistas e investigadores**. Tener al usuario adecuado asignado a los roles adecuados es una parte importante del proceso de revisión de alertas de riesgo internos. Asegúrese de que ha asignado los usuarios adecuados a los grupos de roles *Insider Risk Management Analysts* y *Insider Risk Management Investigators* .  
-- **Use características de riesgo internos automatizadas para ayudar a descubrir las actividades de mayor riesgo**. La [detección de secuencias de](insider-risk-management-policies.md#sequence-detection-preview) administración de riesgos internos y las características [de detección de filtración acumulativa](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a detectar rápidamente riesgos más difíciles de encontrar en su organización. Considere la posibilidad de ajustar [los refuerzos de la puntuación de riesgo](insider-risk-management-settings.md#indicators), [las exclusiones de tipo de archivo](insider-risk-management-settings.md#file-type-exclusions), [los dominios](insider-risk-management-settings.md#domains) y la [configuración mínima del umbral de indicador](insider-risk-management-settings.md#indicator-level-settings-preview) para las directivas.
+- **Use características de riesgo internos automatizadas para ayudar a descubrir las actividades de mayor riesgo**. La [detección de secuencias de](insider-risk-management-policies.md#sequence-detection) administración de riesgos internos y las características [de detección de filtración acumulativa](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a detectar rápidamente riesgos más difíciles de encontrar en su organización. Considere la posibilidad de ajustar [los refuerzos de la puntuación de riesgo](insider-risk-management-settings.md#indicators), [las exclusiones de tipo de archivo](insider-risk-management-settings.md#file-type-exclusions), [los dominios](insider-risk-management-settings.md#domains) y la [configuración mínima del umbral de indicador](insider-risk-management-settings.md#indicator-level-settings-preview) para las directivas.

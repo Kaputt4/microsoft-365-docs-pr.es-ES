@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 5e14fe4edc559b927a8b1d703d7706bbe97b5949
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678842"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739858"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 
@@ -31,7 +31,7 @@ En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft De
 - **Notificaciones de simulación**: estos mensajes se envían cuando los usuarios están inscritos en entrenamientos y como recordatorios de los entrenamientos necesarios.
 - **Notificaciones de refuerzo positivas**: estos mensajes se envían cuando los usuarios notifican un mensaje de suplantación de identidad simulado.
 
-Para ver la notificación de usuario final disponible, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>y, a continuación, vaya a **Correo electrónico &** pestaña \> **Biblioteca de contenido de** **simulación** \> de colaboración \> y seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Para ver las notificaciones de usuario final disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de colaboración \> por **correo electrónico &** y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Las notificaciones de usuario final** tienen dos pestañas:
 
@@ -61,7 +61,7 @@ Para quitar una o varias columnas que se muestran, haga clic en ![el icono Perso
 
 Al seleccionar una notificación de la lista, aparece un control flotante de detalles con la siguiente información:
 
-- **Pestaña Vista previa** : vea el mensaje de notificación. Para ver el mensaje en diferentes idiomas, use el cuadro **Seleccionar idioma** .
+- **Pestaña Vista previa** : vea el mensaje de notificación como lo verán los usuarios. Para ver el mensaje en diferentes idiomas, use el cuadro **Seleccionar idioma** .
 - **Pestaña Detalles** : vea los detalles sobre la notificación:
   - **Descripción de la notificación**
   - **Origen**: para las notificaciones integradas, el valor es **Global**. Para las notificaciones personalizadas, el valor es **Inquilino**.
@@ -118,7 +118,7 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
    - **Categoría**
    - **Acciones**: están disponibles los iconos siguientes:
      - ![Icono de edición.](../../media/m365-cc-sc-edit-icon.png) **Editar**
-     - ![Icono de vista.](../../media/m365-cc-sc-view-icon.png) **View**
+     - ![Icono de vista.](../../media/m365-cc-sc-view-icon.png) **Ver**
      - ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**: si solo hay una versión de idioma de la notificación, no se puede eliminar.
 
    Para agregar una versión de la notificación en otro idioma, haga clic en ![Agregar icono](../../media/m365-cc-sc-create-icon.png) de traducción. En el control flotante **Agregar traducción** que aparece, la misma configuración está disponible que en el control flotante **Agregar contenido en idioma predeterminado** que se describió anteriormente. La única diferencia es que puede seleccionar **Marcar esto como idioma predeterminado** en traducciones adicionales.

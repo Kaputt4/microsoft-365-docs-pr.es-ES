@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a usar automatizaciones de carga útil (recopilación de carga) para recopilar e iniciar simulaciones automatizadas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 862547884f9a7697382affda734af0f323c86c4a
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679382"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739569"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatizaciones de carga útil para el entrenamiento de simulación de ataques
 
@@ -31,7 +31,7 @@ Para crear una automatización de carga, siga estos pasos:
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Correo electrónico & la** pestaña **Automatizaciones de entrenamiento** \> de simulación de ataque de colaboración \> **Automatizaciones** \> de **carga**.
 
-   Para ir directamente a la pestaña **Automatizaciones** , use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de carga**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. En **Automatizaciones de carga**, seleccione ![el icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 

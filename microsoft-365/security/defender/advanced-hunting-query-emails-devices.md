@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 099ba7abe53be6269c1d01c0d39d9e5cfbe3557d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731700"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739957"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades
 
@@ -82,7 +82,10 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
+Vea este [breve vídeo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) para obtener información sobre cómo puede usar Lenguaje de consulta Kusto para combinar tablas.  
+
 ### <a name="get-device-information"></a>Obtener información del dispositivo
+
 El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona una amplia información del dispositivo en varias tablas. Por ejemplo, la [tabla DeviceInfo](advanced-hunting-deviceinfo-table.md) proporciona información completa del dispositivo basada en los datos de eventos agregados periódicamente. Esta consulta usa la `DeviceInfo` tabla para comprobar si un usuario potencialmente en peligro (`<account-name>`) ha iniciado sesión en algún dispositivo y, a continuación, enumera las alertas que se han desencadenado en esos dispositivos.
 
 >[!Tip]
@@ -188,6 +191,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Escenarios de búsqueda
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Enumerar las actividades de inicio de sesión de los usuarios que recibieron correos electrónicos que no se han zapped correctamente
+
 [La purga automática de cero horas (ZAP)](../office-365-security/zero-hour-auto-purge.md) aborda los correos electrónicos malintencionados después de recibirlos. Si se produce un error en ZAP, el código malintencionado podría ejecutarse en el dispositivo y dejar las cuentas en peligro. Esta consulta comprueba la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que zap no ha abordado correctamente.
 
 ```kusto
@@ -205,6 +209,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Obtención de intentos de inicio de sesión por cuentas de dominio destinadas al robo de credenciales
+
 Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla. A continuación, combina o une la `AlertEvidence` tabla, que analiza solo los nombres de las cuentas de destino y los filtros de las cuentas unidas a un dominio. Por último, comprueba la `IdentityLogonEvents` tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas al dominio.
 
 ```kusto
@@ -225,6 +230,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.
+
 Suponiendo que conoce una dirección de correo electrónico que envía archivos malintencionados (`MaliciousSender@example.com`), puede ejecutar esta consulta para determinar si existen archivos de este remitente en los dispositivos. Puede usar esta consulta, por ejemplo, para identificar los dispositivos afectados por una campaña de distribución de malware.
 
 ```kusto
@@ -241,6 +247,7 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Revisar los intentos de inicio de sesión después de recibir mensajes de correo electrónico malintencionados.
+
 Esta consulta busca los 10 últimos inicios de sesión realizados por destinatarios de correo electrónico en un plazo de 30 minutos después de haber recibido mensajes de correo electrónico conocidos por parte del remitente malintencionado  Puede utilizar esta consulta para comprobar si las cuentas de los destinatarios del correo electrónico se han visto comprometidas.
 
 ```kusto
@@ -261,6 +268,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado 
+
 Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales. Si conoce los correos electrónicos procedentes de un remitente malintencionado conocido (`MaliciousSender@example.com`), puede usar esta consulta para enumerar y revisar las actividades de PowerShell que se produjeron en un plazo de 30 minutos después de recibir un correo electrónico del remitente.  
 
 ```kusto
@@ -283,6 +291,7 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)

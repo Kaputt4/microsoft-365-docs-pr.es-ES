@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: c454a21b6ad696b84e3b04e20b42fd1d1a0a8b19
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368339"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739547"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "65368339"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
 
@@ -110,7 +110,7 @@ Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilit
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
-## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender incluye:
+## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender
 
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> combina protección, detección, investigación y respuesta a amenazas de *correo electrónico*, *colaboración*, *identidad*, *dispositivo* y *aplicación*, en un lugar central.
 
@@ -128,6 +128,9 @@ Si necesita información sobre lo que ha cambiado desde el Centro de cumplimient
 
 > [!NOTE]
 > El portal de Microsoft 365 Defender usa y aplica el acceso basado en roles existente y moverá cada modelo de seguridad al portal unificado. Cada carga de trabajo convergente tiene su propio acceso basado en roles. Los roles que ya están en los productos se convergerán automáticamente en el portal de Microsoft 365 Defender. Sin embargo, Microsoft Defender for Cloud Apps seguirá administrando sus propios roles y permisos.
+
+Vea este breve vídeo para obtener información sobre el nuevo portal unificado en Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ### <a name="what-to-expect"></a>Qué esperar
 
@@ -296,7 +299,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285366"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754044"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -98,7 +98,7 @@ Los ejemplos siguientes refieren a ámbitos estáticos y proporcionan algunas so
 
 Ejemplo de Exchange:
 
-- **Requisito**: en una organización con más de 40.000 buzones de usuario, la mayoría de los usuarios deben tener su correo electrónico retenido durante 7 años, pero un subconjunto de usuarios identificados (425) debe tener su correo electrónico retenido solo durante 5 años.
+- **Requisito**: en una organización con más de 40 000 buzones de usuario, la mayoría de los usuarios debe conservar su correo electrónico durante siete años, pero un subconjunto de usuarios identificados (425) debe conservar su correo electrónico solo durante 5 años.
 
 - **Solución**: cree una directiva de retención para el correo electrónico de Exchange con un período de retención de 7 años y excluya el subconjunto de usuarios. Luego, cree una segunda directiva de retención para el correo electrónico de Exchange con un período de retención de 5 años e incluya el subconjunto de usuarios.
 
@@ -108,7 +108,7 @@ Ejemplo de Exchange:
 
 Ejemplo de SharePoint:
 
-- **Requisito**: una organización tiene varios miles de sitios de SharePoint, pero solo 2000 sitios requieren un período de retención de 10 años y 8000 requieren un período de retención de 4 años.
+- **Requisito**: una organización tiene varios miles de sitios de SharePoint, pero solo 2000 sitios requieren un período de retención de 10 años, y 8000 requieren un período de retención de 4 años.
 
 - **Solución**: cree 20 directivas de retención para SharePoint con un período de retención de 10 años que incluya 100 sitios específicos y cree 80 directivas de retención para SharePoint con un período de retención de 4 años que incluya 100 sitios específicos.
 

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Proteja el correo electrónico y los datos empresariales de ciberamenazas, incluidos ransomware, suplantación de identidad (phishing) y datos adjuntos malintencionados.
-ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679656"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739513"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Procedimientos recomendados para proteger Microsoft 365 para empresas
 
@@ -145,7 +145,7 @@ Puede aumentar la protección contra malware bloqueando los datos adjuntos con l
 2. En la página **Antimalware** , haga doble clic en **Predeterminado**. Aparece un control flotante.
 3. Seleccione **Editar configuración de protección** en la parte inferior del control flotante.
 4. En la página siguiente, en **Configuración de protección**, active la casilla situada junto a **Habilitar el filtro de datos adjuntos comunes**. Los tipos de archivo bloqueados se enumeran directamente debajo de esta opción. Para agregar o eliminar tipos de archivo, seleccione **Personalizar tipos de archivo** al final de la lista.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Para obtener más información, vea [Protección antimalware en EOP](../../security/office-365-security/anti-malware-protection.md).
 
@@ -189,7 +189,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de entrenamie
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiarlas.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 | Configuración | Advertir a los usuarios antes de abrir archivos adjuntos de Office | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
@@ -352,5 +352,7 @@ Para obtener más información, consulte los siguientes recursos:
 ## <a name="related-content"></a>Contenido relacionado
 
 [Autenticación multifactor para Microsoft 365](multi-factor-authentication-microsoft-365.md) (artículo)\
-[Administración y supervisión de cuentas de prioridad](/microsoft-365/security/office-365-security/configure-review-priority-account) (artículo)\
-[Microsoft 365 informes en el centro de administración](../activity-reports/activity-reports.md) (vídeo)
+[Administración y supervisión de cuentas de prioridad](../setup/priority-accounts.md) (artículo)\
+[Microsoft 365 informes en el centro de administración](../activity-reports/activity-reports.md) (vídeo)\
+[Microsoft 365 Empresa Premium : ciberseguridad para pequeñas empresas](/microsoft-365/business-premium/) (artículo)\
+

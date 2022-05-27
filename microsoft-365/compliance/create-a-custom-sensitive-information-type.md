@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos de información confidencial personalizados en el Centro de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff6a66b092d433fcfde7723f252fea679c2a3050
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759841"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753526"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Creación de tipos de información confidencial personalizados en el Centro de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si los tipos de información confidencial predefinidos no satisfacen sus necesidades, puede crear sus propios tipos de información confidencial personalizados. Al hacerlo, puede copiar uno de los tipos predefinidos y modificarlo o definirlo completamente usted mismo.
 
@@ -45,10 +47,9 @@ Hay dos formas de crear un tipo de información confidencial:
   - [Funciones de tipo de información confidencial](sit-functions.md)
   - [Niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- Debe contar con los permisos de administrador global o de administrador de cumplimiento para crear, probar e implementar un tipo de información confidencial personalizada por medio de la interfaz de usuario. Vea [Acerca de las funciones de administración](/office365/admin/add-users/about-admin-roles)en Office 365.
+- La organización debe tener una suscripción, como Office 365 Enterprise, que incluya Prevención de pérdida de datos de Microsoft Purview (DLP). [Ver Política de Mensajería y Servicio de ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc) 
 
-
-- Su organización debe tener una suscripción, como Office 365 Enterprise, que incluye la prevención de pérdida de datos (DLP). [Ver Política de Mensajería y Servicio de ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)
+- La organización debe tener una suscripción, como Office 365 Enterprise, que incluya la prevención de pérdida de datos (DLP). [Ver Política de Mensajería y Servicio de ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)
 
 > [!IMPORTANT]
 > El soporte técnico y el servicio al cliente de Microsoft no puede ayudar a crear clasificaciones personalizadas o patrones de expresiones regulares. Los ingenieros de soporte técnico pueden ofrecer soporte limitado para la característica como, por ejemplo, proporcionar patrones de expresiones regulares de ejemplo para propósitos de prueba o ayudar con la solución de problemas de un patrón de expresión regular existente que no se activa de la forma esperada. Pero no pueden garantizar que el desarrollo personalizado que coincida con el contenido cumplirá sus requisitos u obligaciones.
@@ -105,7 +106,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 
-- [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Creación de un tipo de información confidencial personalizada en Microsoft Purview PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
@@ -171,7 +172,7 @@ El límite de recuento de instancias de SIT se aplica cuando se usan SIT en esta
 
 - Directivas DLP
 - Protección de la información
-- Gobernanza de la información
+- Administración del ciclo de vida de los datos
 - Cumplimiento de la comunicación
 - Records Management
 - Microsoft Defender for Cloud Apps

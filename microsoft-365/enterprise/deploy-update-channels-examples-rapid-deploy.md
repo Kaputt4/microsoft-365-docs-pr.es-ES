@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización que implementa la versión más reciente usa canales para las aplicaciones de Windows 10 y Microsoft 365.
-ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092147"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754718"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Ejemplo de una amplia implementación para las versiones más recientes
 
@@ -65,7 +65,7 @@ Para más información sobre los métodos de implementación y estrategias de Wi
 
 | Etapa | Canal | Grupo de implementación |
 |:-------|:-------|:-----|
-| Prueba piloto |  **Lanzamiento de la versión preliminar del canal de vista previa**  <ul><li>Propósito: implementación de las actualizaciones de características para el personal de TI y de las primeras aplicaciones en la validación de los dispositivos y configuraciones (idiomas, aplicaciones de terceros). </li><li> Estado: totalmente compatibles y admitidas para clientes comerciales, y no cuenta con contratos de soporte técnico. </li></ul> | **Win10ReleasePreviewChannel** (nombre de ejemplo) <br><br> Los miembros son grupos que contienen: <ul><li> Entusiastas de Windows en distintos departamentos y ubicaciones </li><li> Personal con configuraciones que necesitan validación </li><li> Administradores de TI y personal de implementación de TI </li><li> Administradores de cambios </li><li> Personal de aprendizaje interno </li></ul> |
+| Prueba piloto |  **Lanzamiento de la versión preliminar del canal de vista previa**  <ul><li>Propósito: implementación de las actualizaciones de características para el personal de TI y de las primeras aplicaciones en la validación de los dispositivos y configuraciones (idiomas, aplicaciones de terceros). </li><li> Estado: totalmente compatible y compatible con los clientes comerciales y no cuenta con los contratos de soporte técnico. </li></ul> | **Win10ReleasePreviewChannel** (nombre de ejemplo) <br><br> Los miembros son grupos que contienen: <ul><li> Entusiastas de Windows en distintos departamentos y ubicaciones </li><li> Personal con configuraciones que necesitan validación </li><li> Administradores de TI y personal de implementación de TI </li><li> Administradores de cambios </li><li> Personal de aprendizaje interno </li></ul> |
 | Producción |  **Canal semianual**  <ul><li>Propósito: ampliar implementación de las actualizaciones de características más recientes al resto de la organización. </li><li> Estado: totalmente compatible y admitido. </li></ul> | **Win10SemiAnnualChannel** (nombre de ejemplo) <br><br> Los miembros son todos los usuarios que no están en el grupo Win10ReleasePreviewChannel. |
 ||||
 
@@ -89,7 +89,7 @@ Para más información sobre las estrategias y los métodos de implementación d
 
 | Etapa | Canal | Grupo de implementación |
 |:-------|:-------|:-----|
-| Prueba piloto |  **Canal actual (vista previa)** <ul><li> Propósito: {dar a un grupo de usuarios representativos las nuevas características de Aplicaciones de Microsoft 365} la implementación de las actualizaciones de características tan pronto como se prueben con los usuarios del canal actual (vista previa) y estén preparados para la producción. </li><li> Estado: totalmente compatible y admitido.</li><li> Con qué frecuencia: Actualizaciones de 2 a 3 veces al mes. </li></ul> | **AppsCurrentChannelPreview** (nombre de ejemplo) <br><br> Los miembros son grupos que contienen: <ul><li> Entusiastas de las aplicaciones de Office en distintos departamentos y ubicaciones </li><li> Personal con configuraciones que necesitan validación </li><li> Administradores de TI y personal de implementación de TI </li><li> Administradores de cambios </li><li> Personal de aprendizaje interno </li></ul>|
+| Prueba piloto |  **Canal actual (vista previa)** <ul><li> Propósito: {proporcione a un grupo de usuarios representativos un vistazo a las nuevas características de Aplicaciones Microsoft 365} Implementación de actualizaciones de características tan pronto como se prueben con los usuarios del canal actual (versión preliminar) y estén listos para producción. </li><li> Estado: totalmente compatible y admitido.</li><li> Con qué frecuencia: Actualizaciones de 2 a 3 veces al mes. </li></ul> | **AppsCurrentChannelPreview** (nombre de ejemplo) <br><br> Los miembros son grupos que contienen: <ul><li> Entusiastas de las aplicaciones de Office en distintos departamentos y ubicaciones </li><li> Personal con configuraciones que necesitan validación </li><li> Administradores de TI y personal de implementación de TI </li><li> Administradores de cambios </li><li> Personal de aprendizaje interno </li></ul>|
 | Producción | **Canal actual** <ul><li> Propósito: ampliar implementación de las actualizaciones de características más recientes al resto de la organización. </li><li> Estado: totalmente compatible y admitido. </li></ul> |  **AppsCurrentChannel** (nombre de ejemplo) <br><br> Los miembros son todos los usuarios que no están en el grupo AppsCurrentChannelPreview. |
 |||
 

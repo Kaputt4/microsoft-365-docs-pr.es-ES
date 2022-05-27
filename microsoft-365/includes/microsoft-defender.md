@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender instrucciones importantes
-description: Una nota sobre instrucciones Microsoft 365 Defender importante.
+title: Microsoft 365 Defender guía importante
+description: Una nota sobre instrucciones importantes Microsoft 365 Defender.
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp

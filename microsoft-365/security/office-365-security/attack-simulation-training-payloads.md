@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a crear cargas personalizadas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8ee202f66d2e9f4fdbf3eba1a1548abd1c3b5524
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679338"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739845"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Creación de cargas personalizadas para el entrenamiento de simulación de ataques en Defender para Office 365
 
@@ -30,7 +30,7 @@ En El entrenamiento de simulación de ataques, una _carga útil_ es el mensaje d
 
 En este artículo se describe cómo crear sus propias cargas en el entrenamiento de simulación de ataques. Puede crear cargas personalizadas en las siguientes ubicaciones:
 
-- **Cargas:** en el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & pestaña** Biblioteca de contenido \> **de** **simulación de entrenamiento** \> de **simulación de simulación** de colaboración\>. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+- **Cargas:** en el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & pestaña** Biblioteca de contenido \> **de** **simulación de entrenamiento** \> de **simulación de simulación** de colaboración\>. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Cargas útiles**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - Durante la creación de la simulación: puede crear cargas personalizadas en la página **Seleccionar una carga (** la tercera página) del Asistente para la creación de simulación. Para obtener más información, vea [Simular un ataque de suplantación de identidad (phishing) en Defender para Office 365](attack-simulation-training.md).
 
 Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Comenzar uso del entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).

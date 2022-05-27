@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217406"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65740023"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -33,6 +33,7 @@ ms.locfileid: "65217406"
 
 
 **Se aplica a:**
+
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
@@ -71,6 +72,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Ejecución de esta consulta en la búsqueda avanzada](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Describir la consulta y especificar las tablas que se van a buscar
+
 Se ha agregado un breve comentario al principio de la consulta para describir para qué sirve. Este comentario es útil si luego decide guardar la consulta y compartirla con otras personas de su organización. 
 
 ```kusto
@@ -82,7 +84,9 @@ La propia consulta normalmente comenzará con un nombre de tabla seguido de vari
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### <a name="set-the-time-range"></a>Establecer el intervalo de tiempo
+
 El primer elemento canalado es un filtro de tiempo con el ámbito de los siete días anteriores. Limitar el intervalo de tiempo ayuda a garantizar que las consultas funcionan bien, devuelven resultados administrables y no agotan el tiempo de espera.
 
 ```kusto
@@ -90,6 +94,7 @@ El primer elemento canalado es un filtro de tiempo con el ámbito de los siete d
 ```
 
 ### <a name="check-specific-processes"></a>Comprobación de procesos específicos
+
 El intervalo de tiempo va seguido inmediatamente de una búsqueda de nombres de archivo de proceso que representan la aplicación de PowerShell.
 
 ```kusto
@@ -98,6 +103,7 @@ El intervalo de tiempo va seguido inmediatamente de una búsqueda de nombres de 
 ```
 
 ### <a name="search-for-specific-command-strings"></a>Buscar cadenas de comandos específicas
+
 Después, la consulta busca cadenas en las líneas de comandos que se usan normalmente para descargar archivos mediante PowerShell.
 
 ```kusto
@@ -113,6 +119,7 @@ Después, la consulta busca cadenas en las líneas de comandos que se usan norma
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalización de las columnas de resultado y la longitud 
+
 Ahora que la consulta identifica claramente los datos que desea localizar, puede definir cómo se ven los resultados. `project` devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados tengan un formato correcto y sean razonablemente grandes y fáciles de procesar.
 
 ```kusto
@@ -125,6 +132,8 @@ Seleccione **Ejecutar consulta** para ver los resultados.
 
 >[!TIP]
 >Puede ver los resultados de la consulta como gráficos y ajustar rápidamente los filtros. Para obtener instrucciones, [lea sobre cómo trabajar con los resultados de la consulta](advanced-hunting-query-results.md).
+
+Vea este [breve vídeo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) para obtener información sobre cómo puede usar Lenguaje de consulta Kusto para combinar tablas.
 
 ## <a name="learn-common-query-operators"></a>Obtenga información sobre los operadores de consulta comunes
 
@@ -160,12 +169,14 @@ La búsqueda avanzada admite Kusto tipos de datos, incluidos los siguientes tipo
 Para más información sobre estos tipos de datos, [consulte Kusto tipos de datos escalares](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
+
 Aprovéchese de las funciones siguientes para escribir consultas más rápido:
 - **Autouggest**: a medida que escribe consultas, la búsqueda avanzada proporciona sugerencias de IntelliSense. 
 - **Árbol de** esquema: se proporciona una representación de esquema que incluye la lista de tablas y sus columnas junto al área de trabajo. Para obtener más información, mueva el puntero sobre un elemento. Haga doble clic en un elemento para insertarlo en el editor de consultas.
 - **[Referencia de esquema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: referencia en el portal con descripciones de tabla y columna, así como tipos de eventos admitidos (`ActionType` valores) y consultas de ejemplo
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Trabajar con varias consultas en el editor
+
 Puede usar el editor de consultas para experimentar con varias consultas. Para usar varias consultas:
 
 - Separe cada consulta con una línea vacía.
@@ -201,6 +212,7 @@ Para más información sobre el lenguaje de consulta Kusto y los operadores comp
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para punto de conexión. [Active Microsoft 365 Defender](m365d-enable.md) para buscar amenazas mediante más orígenes de datos. Para mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para punto de conexión a Microsoft 365 Defender, siga los pasos descritos en [Migración de consultas de búsqueda avanzadas desde Microsoft Defender para punto de conexión](advanced-hunting-migrate-from-mde.md) .
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
