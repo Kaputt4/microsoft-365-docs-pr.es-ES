@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438013"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772691"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -389,6 +389,7 @@ Las siguientes aplicaciones y servicios actualmente no son compatibles con las e
   - Yammer
   - Project
   - Power BI
+  - Portal Mis aplicaciones
 
 ## <a name="classic-azure-ad-group-classification"></a>Clasificación de grupos de Azure AD clásica
 
