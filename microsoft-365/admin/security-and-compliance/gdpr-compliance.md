@@ -30,7 +30,7 @@ ms.locfileid: "65621274"
 
  *Uso de Microsoft 365 para empresas para ayudarle a mitigar y administrar el cumplimiento del RGPD* 
   
-El Reglamento general de protección de datos (RGPD) es una normativa de la Unión Europea (UE) que regula la forma en que una organización debe administrar los datos personales. Si su empresa vende, proporciona servicios o emplea a ciudadanos de la Unión Europea, entonces el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
+El Reglamento general de protección de datos (RGPD) es una normativa de la Unión Europea (UE) que regula la forma en que una organización debe administrar los datos personales. Si su empresa vende, presta servicios o emplea a ciudadanos de la Unión Europea, el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) se aplica a esta. 
 
 Como administrador de una pequeña empresa, probablemente se pregunte "¿cómo puedo empezar?" Esto puede ser especialmente cierto si su empresa no controla los datos personales como una actividad empresarial básica o si el RGPD es totalmente nuevo para usted.
 
@@ -84,7 +84,7 @@ El RGPD establece los derechos de los interesados, lo que significa que, con res
 
 ## <a name="steps-to-prepare-for-gdpr"></a>Pasos para prepararse para el RGPD
 
-En esta sección se describen los pasos que una pequeña empresa puede seguir para prepararse para el RGPD. Gran parte de la información de estos pasos se proporcionó a través de [Siete pasos para que las empresas se preparen para el Reglamento general de protección de datos](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), una publicación ofrecida a través de la Oficina de publicaciones de la Unión Europea.
+En esta sección se describen los pasos que una pequeña empresa puede seguir para prepararse para el RGPD. Gran parte de la información de estos pasos se ha proporcionado a través de [Siete pasos para que las empresas se preparen para el Reglamento general de protección de datos](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), una publicación ofrecida a través de la Oficina de publicaciones de la Unión Europea.
 
 Una buena manera para que una pequeña empresa empiece con el RGPD es asegurarse de aplicar los siguientes principios clave al recopilar datos personales:
 

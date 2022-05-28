@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear, registrarse y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: ccbf1208d5c655171825b5a96f3a78b25ea3bbf2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 5081c3877e005d1e014ad7520beeffd657a31f67
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754452"
+ms.locfileid: "65759810"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecución de una prueba de Microsoft SharePoint Syntex
 
@@ -88,7 +88,7 @@ Una vez activada la prueba, puede crear modelos y procesar archivos. Consulte [l
 
 ## <a name="during-a-trial"></a>Durante una prueba
 
-Los períodos de prueba son limitados, por lo que es mejor centrarse inicialmente en si SharePoint Syntex modelos pueden clasificar documentos y extraer metadatos para los casos de uso definidos. Una vez finalizado el período de prueba, puede evaluar cómo se pueden aprovechar los metadatos.
+Los períodos de prueba son limitados, por lo que es mejor centrarse inicialmente en si SharePoint Syntex modelos pueden clasificar documentos y extraer metadatos para los casos de uso definidos. Una vez finalizado el período de prueba, puede evaluar cómo se pueden usar los metadatos.
 
 ## <a name="after-a-trial"></a>Después de una prueba
 
@@ -110,6 +110,8 @@ Si no compra licencias después de la prueba:
 - Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
 - Los modelos de procesamiento de formularios se almacenarán en la instancia de Dataverse (anteriormente denominada Common Data Service (CDS)) del entorno predeterminado de Power Platform. Se pueden usar con futuras licencias para SharePoint Syntex o con funcionalidades de AI Builder en Power Platform.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Comenzar impulsar la adopción de SharePoint Syntex](adoption-getstarted.md)
+
+[Escenarios y casos de uso de SharePoint Syntex](adoption-scenarios.md) 

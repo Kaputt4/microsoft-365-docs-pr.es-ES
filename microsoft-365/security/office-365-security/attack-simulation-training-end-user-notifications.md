@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 5e14fe4edc559b927a8b1d703d7706bbe97b5949
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 35d3943580c232a80c400b2fe4dd07dfa88123a2
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739858"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759789"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 
@@ -26,10 +26,12 @@ ms.locfileid: "65739858"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las notificaciones del usuario final son mensajes de correo electrónico que se envían a los usuarios Hay dos tipos básicos de notificaciones:
+En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2, las notificaciones del usuario final son mensajes de correo electrónico que se envían a los usuarios como resultado de [simulaciones](attack-simulation-training.md) o [automatizaciones de simulaciones](attack-simulation-training-simulation-automations.md). Están disponibles los siguientes tipos de notificaciones de usuario final:
 
-- **Notificaciones de simulación**: estos mensajes se envían cuando los usuarios están inscritos en entrenamientos y como recordatorios de los entrenamientos necesarios.
-- **Notificaciones de refuerzo positivas**: estos mensajes se envían cuando los usuarios notifican un mensaje de suplantación de identidad simulado.
+- **Notificación de refuerzo positivo**: se envía cuando los usuarios informan de un mensaje de suplantación de identidad simulado.
+- **Notificación de simulación**: se envía cuando los usuarios se incluyen en una automatización de simulación o simulación, pero no se selecciona ningún entrenamiento.
+- **Notificación de asignación de entrenamiento**: se envía cuando a los usuarios se les asignan los entrenamientos necesarios como resultado de una simulación o automatizaciones de simulación.
+- **Notificación de recordatorio de entrenamiento**: se envía como recordatorio para los entrenamientos necesarios.
 
 Para ver las notificaciones de usuario final disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de colaboración \> por **correo electrónico &** y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -42,10 +44,10 @@ Se muestra la siguiente información para cada notificación:
 
 - **Notificaciones**: nombre de la notificación.
 - **Idioma**: si la notificación contiene varias traducciones, los dos primeros idiomas se muestran directamente. Para ver los idiomas restantes, mantenga el puntero sobre el icono numérico (por ejemplo, **+10**).
-- **Tipo**: el valor es **Notificación de simulación** o **Notificación de refuerzo positivo**.
+- **Tipo**: el valor es **Notificación de refuerzo positivo**, **Notificación de simulación**, **Notificación de asignación de entrenamiento** o **Notificación de recordatorio de entrenamiento**.
 - **Origen**: para las notificaciones integradas, el valor es **Global**. Para las notificaciones personalizadas, el valor es **Inquilino**.
-- **Estado**
-- **Simulaciones vinculadas**
+- **Estado**: el valor es **Listo** o **Borrador**. En la pestaña **Notificaciones globales** , el valor siempre está **listo**.
+- **Simulaciones vinculadas**: el número total de [simulaciones](attack-simulation-training.md) o [automatizaciones de simulación](attack-simulation-training-simulation-automations.md) que usan la notificación.
 - **Creado por**: para las notificaciones integradas, el valor es **Microsoft**. En el caso de las notificaciones personalizadas, el valor es el UPN del usuario que creó la notificación.
 - **Tiempo de creación**
 - **Modificado por**
@@ -118,7 +120,7 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
    - **Categoría**
    - **Acciones**: están disponibles los iconos siguientes:
      - ![Icono de edición.](../../media/m365-cc-sc-edit-icon.png) **Editar**
-     - ![Icono de vista.](../../media/m365-cc-sc-view-icon.png) **Ver**
+     - ![Icono de vista.](../../media/m365-cc-sc-view-icon.png) **View**
      - ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**: si solo hay una versión de idioma de la notificación, no se puede eliminar.
 
    Para agregar una versión de la notificación en otro idioma, haga clic en ![Agregar icono](../../media/m365-cc-sc-create-icon.png) de traducción. En el control flotante **Agregar traducción** que aparece, la misma configuración está disponible que en el control flotante **Agregar contenido en idioma predeterminado** que se describió anteriormente. La única diferencia es que puede seleccionar **Marcar esto como idioma predeterminado** en traducciones adicionales.
@@ -139,17 +141,44 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
 
    Cuando haya terminado, haga clic en **Listo**.
 
-De nuevo en la pestaña **Notificaciones de inquilino** , la notificación que ha creado ahora es una lista.
+De nuevo en la pestaña **Notificaciones de inquilino en** **Notificaciones de usuario final**, la notificación que ha creado ahora es una lista.
 
-Al seleccionar una notificación, están disponibles las siguientes opciones adicionales:
+## <a name="modify-end-user-notifications"></a>Modificación de las notificaciones del usuario final
 
-Vuelve a la página **Notificación de refuerzo positivo** , donde la notificación que acaba de crear aparece en la lista **Seleccionar una notificación de refuerzo positiva** .
+No se pueden modificar las notificaciones integradas en la pestaña **Notificaciones globales**. Solo puede modificar las notificaciones personalizadas en la pestaña **Notificaciones de inquilino.**
 
-- Para modificar la notificación o agregar traducciones adicionales, seleccione la notificación y haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edite la notificación** para iniciar el Asistente para notificaciones como se describió anteriormente (con la mayoría de los valores ya rellenados). Si la notificación ya tiene traducciones para los 12 idiomas admitidos, no puede agregar más traducciones.
+Para modificar una notificación personalizada existente en la pestaña **Notificaciones de inquilino** , realice uno de los pasos siguientes:
 
-- Para crear una copia de una notificación, selecciónela y, a continuación, haga clic en ![Cree un icono de copia.](../../media/m365-cc-sc-copy-icon.png).
+- Seleccione la notificación de la lista haciendo clic en la casilla. Haga clic en el ![icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Icono de edición** que aparece.
+- Haga clic **en ⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione ![Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
+- Seleccione la notificación de la lista haciendo clic en cualquier lugar de la fila excepto en la casilla. En el control flotante de detalles que se abre, haga clic en **Editar notificación**.
 
-- Para eliminar una notificación, selecciónela y, a continuación, haga clic en ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png).
+El Asistente para notificaciones del usuario final se abre con la configuración y los valores de la página de notificación seleccionada. Los pasos son los mismos que se describen en la sección [Crear notificaciones de usuario final](#create-end-user-notifications) .
+
+## <a name="copy-end-user-notifications"></a>Copia de notificaciones de usuario final
+
+Para copiar una notificación existente en las pestañas **Notificaciones de inquilino** o **Notificaciones globales** , realice uno de los pasos siguientes:
+
+- Seleccione la notificación de la lista haciendo clic en la casilla y, a continuación, haga clic en el ![icono Crear una copia.](../../media/m365-cc-sc-edit-icon.png) **Cree un icono de copia** que aparezca.
+- Haga clic en **⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione ![Crear un icono de copia.](../../media/m365-cc-sc-edit-icon.png) **Cree una copia**.
+
+Al copiar una notificación personalizada en la pestaña **Notificaciones de inquilino** , hay disponible una copia de la notificación denominada "\<OriginalName\> - Copiar" en la lista.
+
+Al copiar una notificación integrada en la pestaña **Notificaciones globales** , aparece un cuadro de diálogo **Crear copia** . El cuadro de diálogo confirma que se ha creado una copia de la notificación y está disponible en la pestaña **Notificaciones de inquilino** . Si hace clic en **Ir a la notificación de inquilino** , se le dirigirá a la pestaña **Notificaciones de inquilino** , donde la notificación integrada copiada se denomina "\<OriginalName\> - Copiar" está disponible en la lista. Si hace clic en **Permanecer aquí** en el cuadro de diálogo, volverá a la pestaña **Notificaciones globales** .
+
+Una vez creada la copia, puede modificarla como [se describió anteriormente](#modify-end-user-notifications).
+
+> [!NOTE]
+> El control **Usar desde predeterminado** en el control flotante **Agregar contenido en idioma predeterminado** en el asistente para notificaciones le permite copiar el contenido de una notificación integrada.
+
+## <a name="remove-notifications"></a>Eliminación de notificaciones
+
+No se pueden quitar las notificaciones integradas de la pestaña **Notificaciones globales**. Solo puede quitar notificaciones personalizadas en la pestaña **Notificaciones de inquilino.**
+
+Para quitar una notificación personalizada existente de la pestaña **Notificaciones de inquilino** , realice uno de los pasos siguientes:
+
+- Seleccione la notificación de la lista haciendo clic en la casilla y, a continuación, haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Icono de eliminación** que aparece.
+- Haga clic en **⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 ## <a name="related-links"></a>Vínculos relacionados
 
