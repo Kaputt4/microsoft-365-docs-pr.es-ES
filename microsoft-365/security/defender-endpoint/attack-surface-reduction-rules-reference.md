@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599577"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772520"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -56,9 +56,9 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 >
 > A menos que se indique lo contrario, la compilación mínima Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima Windows&nbsp; Server es la versión 1809 o posterior.
 >
-> Las reglas de reducción de superficie expuesta a ataques en Windows&nbsp; Server2012R2&nbsp;&nbsp; y Windows&nbsp; Server2016&nbsp; están disponibles para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y versión preliminar de 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Las reglas de reducción de superficie expuesta a ataques en Windows&nbsp; Server&nbsp;2012&nbsp;R2 y Windows&nbsp; Server&nbsp;2016 están disponibles para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y versión preliminar de 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nombre de regla| &nbsp;Windows 11 <br>y<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>y<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| Nombre de regla| &nbsp;Windows 11 <br>y<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>y<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal semianual) o posterior | v | v |
 | [Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v <br> versión 1809 o posterior <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
@@ -79,7 +79,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 
 (<a id="fn1">1</a>) Hace referencia a la solución unificada moderna para Windows Server 2012 y 2016. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) Para Windows&nbsp; Server 2016 y Windows&nbsp; Server 2012R2&nbsp;, la versión mínima necesaria de Microsoft Endpoint Configuration Manager es la versión 2111.
+(<a id="fn1">2</a>) Para Windows&nbsp; Server 2016 y Windows&nbsp; Server 2012&nbsp;R2, la versión mínima necesaria de Microsoft Endpoint Configuration Manager es la versión 2111.
 
 (<a id="fn1">3</a>) La versión y el número de compilación solo se aplican a Windows&nbsp; 10.
 
@@ -131,16 +131,16 @@ Para las reglas con el "estado de regla" especificado:
 |[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | v |
 |[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) |   | v <br> Requiere un dispositivo en el nivel de bloque de nube alta | v <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Impedir que los archivos ejecutables se ejecuten a menos que cumplan un criterio de prevalencia, edad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | v |
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) |  Bloque de auditoría&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Bloquear | v <br> Requiere un dispositivo en el nivel de bloque de nube alta  | v <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Impedir que las aplicaciones Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) |   | N | v |
 |[Impedir que las aplicaciones Office inserten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
 |[Impedir que Office aplicación de comunicación cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
-|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) |  Bloque de auditoría&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
-|[Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
+|[Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Bloque de auditoría&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) |   | N | v |
-|[Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
+|[Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Bloque de auditoría&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
   
 ## <a name="asr-rules-and-guids-matrix"></a>Matriz de reglas y GUID de ASR
 
@@ -330,6 +330,9 @@ Dependencias: MDAV, Protección en la nube
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquear la ejecución de scripts potencialmente ofuscados
 
 Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
+  
+> [!IMPORTANT]
+> Los scripts de PowerShell se han excluido temporalmente de la regla "Bloquear la ejecución de scripts potencialmente ofuscados" debido a los problemas de FP a gran escala que se han enfrentado en el pasado.
 
 La ofuscación de scripts es una técnica común que usan los autores de malware y las aplicaciones legítimas para ocultar la propiedad intelectual o reducir los tiempos de carga de scripts. Los autores de malware también usan la ofuscación para dificultar la lectura de código malintencionado, lo que impide un examen minucioso por parte de los humanos y el software de seguridad.
 

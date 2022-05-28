@@ -37,16 +37,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La compatibilidad con SharePoint Server 2007 finalizó en octubre de 2017. En este artículo, obtenga información sobre las opciones de actualización, migración y soporte técnico.
-ms.openlocfilehash: 260949f73fbb4530436484e70ca39d4e2f99bbcf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f98e3652e2836a0c4193efbe33147fd09ced01e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098238"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771961"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de SharePoint Server 2007
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 El **10 de octubre de 2017**, Microsoft Office SharePoint Server 2007 llegó al final del soporte técnico. Si no ha migrado de SharePoint Server 2007 a Microsoft 365 o a una versión más reciente de SharePoint Server local, ahora es el momento de empezar a planear. En este artículo se proporcionan recursos que le ayudarán a migrar datos a SharePoint Online o a actualizar el SharePoint Server local.
   
@@ -119,7 +119,7 @@ No se puede migrar directamente de SharePoint 2007 a SharePoint Online. El trasl
 |**Profesional en línea**|**Con en línea**|
 |:-----|:-----|
 |Microsoft proporciona hardware SPO y toda la administración de hardware.  <br/> |Las características disponibles pueden diferir entre SharePoint Server local y SPO.  <br/> |
-|Es el administrador de Sharepoint o el administrador global de la suscripción y puede asignar administradores a sitios de SPO.  <br/> |Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen o no se incluyen necesariamente en el rol de administrador de SharePoint en Microsoft 365.  <br/> |
+|Es el administrador SharePoint o administrador global de la suscripción y puede asignar administradores a sitios de SPO.  <br/> |Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen o no se incluyen necesariamente en el rol de administrador de SharePoint en Microsoft 365.  <br/> |
 |Microsoft aplica revisiones, correcciones y actualizaciones al hardware y software subyacentes. <br/> |Dado que no hay acceso al sistema de archivos subyacente en el servicio, la personalización es limitada.  <br/> |
 |Microsoft publica [contratos de nivel de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) servicio y se mueve rápidamente para resolver incidentes de nivel de servicio. <br/> |El servicio automatiza la copia de seguridad y restauración y otras opciones de recuperación en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan. <br/> |
 |Microsoft realiza pruebas de seguridad y optimización del rendimiento del servidor de forma continuada en el servicio. <br/> |El servicio instala los cambios en la interfaz de usuario y otras características de SharePoint y es posible que tenga que activarse o desactivarse. <br/> |

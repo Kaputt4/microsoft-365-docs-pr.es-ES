@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438466"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772388"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -50,7 +50,7 @@ Consulte la sección [Más información](#more-information) para ver una descrip
 
 Como se indicó anteriormente, se podría colocar una directiva de retención, suspensión In-Place o litigio en un buzón inactivo. El primer paso es identificar las retenciones de un buzón inactivo.
   
-[Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y, a continuación, ejecute el siguiente comando para mostrar la información de retención de todos los buzones inactivos de la organización.
+[Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)y, a continuación, ejecute el siguiente comando para mostrar la información de retención de todos los buzones inactivos de la organización.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -94,7 +94,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>Quitar un buzón inactivo de una directiva de retención
 
-El procedimiento para quitar un buzón inactivo de una directiva de retención de Microsoft 365 depende de si la directiva de retención asignada al buzón inactivo es explícita o de toda la organización. en el tipo de directiva de retención asignada al buzón inactivo.
+El procedimiento para quitar un buzón inactivo de una directiva de retención de Microsoft 365 depende de si la directiva de retención asignada al buzón inactivo es explícita o de toda la organización:
 
 - Directivas de retención de toda la organización asignadas a todos los buzones de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización.
 

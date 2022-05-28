@@ -20,16 +20,16 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la información de inteligencia sobre suplantación de identidad en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144737"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772114"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Información de inteligencia sobre suplantación de identidad en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -115,6 +115,7 @@ En la página **Información de inteligencia de** suplantación que aparece desp
 - **Infraestructura de envío**: también conocida como _infraestructura_. La infraestructura de envío será uno de los siguientes valores:
   - Dominio encontrado en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen.
   - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\>/24 (por ejemplo, 192.168.100.100/24).
+  - Un dominio DKIM comprobado.
 - **Recuento** de mensajes: el número de mensajes de la combinación del dominio suplantado _y_ la infraestructura de envío a la organización en los últimos 7 días.
 - **Última vez que se ha visto**: la última fecha en que se recibió un mensaje de la infraestructura de envío que contiene el dominio suplantado.
 - **Tipo de suplantación**: uno de los siguientes valores:
@@ -147,7 +148,7 @@ Al seleccionar una entrada de la lista, aparece un control flotante de detalles 
 
 ### <a name="about-allowed-spoofed-senders"></a>Acerca de los remitentes suplantados permitidos
 
-Un remitente suplantado permitido en la información de inteligencia de suplantación o un remitente falsificado bloqueado que ha cambiado manualmente a **Permitir la suplantación** solo permite mensajes de la combinación del dominio suplantado *y* la infraestructura de envío. No permite el correo electrónico del dominio suplantado de ningún origen ni permite el correo electrónico de la infraestructura de envío para ningún dominio.
+Un remitente suplantado permitido en la información de inteligencia de suplantación o un remitente falsificado bloqueado que ha cambiado manualmente a **Permitir la suplantación** solo permite mensajes de la combinación del dominio suplantado _y_ la infraestructura de envío. No permite el correo electrónico del dominio suplantado de ningún origen ni permite el correo electrónico de la infraestructura de envío para ningún dominio.
 
 Por ejemplo, el siguiente remitente suplantado puede suplantar:
 

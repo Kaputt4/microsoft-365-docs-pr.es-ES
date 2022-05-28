@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649361"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772005"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administración de remitentes suplantados mediante la directiva de inteligencia de suplantación de identidad y la información de inteligencia de suplantación de identidad en EOP
 
@@ -47,7 +47,7 @@ ms.locfileid: "65649361"
 >
 > La experiencia anterior de administración de remitentes suplantados mediante los cmdlets **Get-PhishFilterPolicy** y **Set-PhishFilterPolicy** está en desuso, pero todavía se presenta en este artículo para mayor integridad hasta que los cmdlets se quitan en todas partes.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -98,7 +98,7 @@ Para configurar remitentes permitidos y bloqueados en inteligencia de suplantaci
    ```
 
 2. Edite el archivo CSV para agregar o modificar los valores siguientes:
-   - **Remitente** (dominio en el registro PTR del servidor de origen o dirección IP/24)
+   - **Remitente** (dominio en el registro PTR del servidor de origen, dirección IP/24 o dominio DKIM comprobado)
    - **SpoofedUser**: uno de los valores siguientes:
      - Dirección de correo electrónico del usuario interno.
      - Dominio de correo electrónico del usuario externo.

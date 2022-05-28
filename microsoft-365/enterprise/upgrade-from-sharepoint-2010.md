@@ -20,16 +20,16 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be25dd1260c378146d292e6487329065a3020ac8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077390"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772760"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft SharePoint 2010 y SharePoint Server 2010 finalizarán el soporte técnico el **13 de abril de 2021**. En este artículo se proporcionan recursos que le ayudarán a migrar los datos existentes de SharePoint Server 2010 a SharePoint Online en Microsoft 365 o a actualizar el entorno local SharePoint Server 2010.
 
@@ -112,7 +112,7 @@ Si actualiza a SharePoint Server 2013 o SharePoint Server 2016 y decide colocar 
 |SharePoint ventaja en línea|SharePoint desventaja en línea|
 |---|---|
 |Microsoft proporciona hardware SPO y toda la administración de hardware.|Las características disponibles pueden diferir entre SharePoint Server local y SPO.|
-|Es el administrador de Sharepoint o el administrador global de la suscripción y puede asignar administradores a sitios de SPO.|Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen (o no son necesarias) en el rol de administrador de SharePoint en Microsoft 365. Sin embargo, SharePoint Administración, Administración de colecciones de sitios y Propiedad del sitio son locales para su organización.|
+|Es el administrador SharePoint o administrador global de la suscripción y puede asignar administradores a sitios de SPO.|Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen (o no son necesarias) en el rol de administrador de SharePoint en Microsoft 365. Sin embargo, SharePoint Administración, Administración de colecciones de sitios y Propiedad del sitio son locales para su organización.|
 |Microsoft aplica revisiones, correcciones y actualizaciones al hardware y software subyacentes, incluidos SQL servidores en los que se ejecuta SharePoint Online.|Dado que no hay acceso al sistema de archivos subyacente en el servicio, la personalización es limitada.|
 |Microsoft publica [contratos de nivel de servicio](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) y se mueve rápidamente para resolver incidentes de nivel de servicio.|El servicio automatiza la copia de seguridad y restauración y otras opciones de recuperación en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan.|
 |Microsoft realiza continuamente pruebas de seguridad y optimización del rendimiento del servidor en el servicio.|El servicio instala los cambios en la interfaz de usuario y otras características de SharePoint y es posible que tenga que activarse o desactivarse.|

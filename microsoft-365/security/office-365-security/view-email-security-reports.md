@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 614cdd62e5884eff0f91b1c0d1f9946a1c8ce891
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621677"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772312"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -392,7 +392,7 @@ En la página **Detecciones de suplantación de identidad** , el ![icono Crear p
 
 ## <a name="submissions-report"></a>Informe de envíos
 
-El informe **Envíos** muestra información sobre los elementos que los administradores han notificado a Microsoft para su análisis. Para obtener más información, consulte [Uso de Admin Envío para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
+El informe **Envíos** muestra información sobre los elementos que los administradores han notificado a Microsoft para su análisis. Para obtener más información, consulte [Uso de Administración Envío para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
 
 Para ver el informe en el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** \> **por correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. En la página **Informes de colaboración & correo electrónico** , busque **Envíos** y haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport>. Para ir a [los envíos de administrador en el portal de Microsoft 365 Defender](admin-submission.md), haga clic en **Ir a envíos**. Los administradores podrán ver el informe durante los últimos 30 días.
 
@@ -619,7 +619,7 @@ En la vista **Ver datos por correo electrónico \> Malware** y **Desglose del gr
 - Reputación <sup>\*</sup>**de detonación de** archivos: toda la reputación de archivos malintencionados generada por Defender para Office 365 detonaciones.
 - **Reputación de los archivos**
 - **Motor antimalware**<sup>\*</sup>: detección de motores antimalware.
-- **Bloque de tipo de archivo de directiva antimalware**: son mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
+- **Bloque de tipo de archivo de directiva antimalware**: los mensajes de correo electrónico se filtran automáticamente debido al tipo de archivo identificado en el mensaje (filtrado de datos adjuntos comunes).
 - **Reputación malintencionada de direcciones URL**<sup>\*</sup>
 - **Detonación de direcciones URL**<sup>\*</sup>
 - **Reputación de detonación de direcciones URL**<sup>\*</sup>
@@ -660,7 +660,7 @@ Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
 Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
 
-En la página **Estado de la protección deThreat** , el ![icono Crear programación.](../../media/m365-cc-sc-create-icon.png) **[Crear programación](#schedule-report)**, ![icono solicitar informe.](../../media/m365-cc-sc-download-icon.png) **[Informe de solicitud](#request-report)** e ![icono exportar.](../../media/m365-cc-sc-download-icon.png) Los botones **[de exportación](#export-report)** están disponibles.
+En la página **Estado de protección contra amenazas** , el ![icono Crear programación.](../../media/m365-cc-sc-create-icon.png) **[Crear programación](#schedule-report)**, ![icono solicitar informe.](../../media/m365-cc-sc-download-icon.png) **[Informe de solicitud](#request-report)** e ![icono exportar.](../../media/m365-cc-sc-download-icon.png) Los botones **[de exportación](#export-report)** están disponibles.
 
 ### <a name="chart-breakdown-by-policy-type"></a>Desglose del gráfico por tipo de directiva
 

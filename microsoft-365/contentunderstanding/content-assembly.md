@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 83ef526504073ae739a82c599663a3d284aaf51c
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836333"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772498"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
@@ -33,7 +33,7 @@ Con el ensamblado de contenido, puede usar un documento existente para crear una
 
 Siga estos pasos para crear una plantilla moderna.
 
-1. En una biblioteca de documentos de SharePoint, seleccione **NuevoCrear** >  **plantilla moderna**.
+1. En una biblioteca de documentos SharePoint, seleccione **Nueva** > **plantilla moderna.**
 
    ![Captura de pantalla de la biblioteca de documentos con la opción Crear plantilla moderna resaltada.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -132,15 +132,15 @@ En el panel **Todos los marcadores de posición** :
 
 Puede crear tantos marcadores de posición como considere necesarios. Cuando haya terminado, puede elegir guardar la plantilla como borrador o publicarla.
 
-   - **Guardar borrador** : guarda la plantilla como borrador y puede acceder a ella más adelante. Para ver, editar o publicar borradores guardados en la sección **Plantillas modernas**, seleccione el **menú NuevoEditar**  >  nuevo en la biblioteca de documentos.
+   - **Guardar borrador** : guarda la plantilla como borrador y puede acceder a ella más adelante. Para ver, editar o publicar borradores guardados en la sección **Plantillas modernas** , seleccione **el menú Nueva** > **edición nuevo** de la biblioteca de documentos.
  
-   - **Publicar** : publica la plantilla que usarán otros usuarios de la organización para crear documentos. Para ver, editar o anular la publicación de plantillas *publicadas* en la sección **Plantillas modernas**, seleccione **el** **menú NuevoEditar** >  nuevo en la biblioteca de documentos. 
+   - **Publicar** : publica la plantilla que usarán otros usuarios de la organización para crear documentos. Puede ver, editar o anular la publicación de plantillas *publicadas* en la sección **Plantillas modernas** seleccionando **nuevo** > **editar nuevo menú** de la biblioteca de documentos. 
 
 ## <a name="edit-a-modern-template"></a>Edición de una plantilla moderna
 
 Si necesita editar una plantilla existente o eliminar o anular la publicación de una plantilla, siga estos pasos.
 
-1. En una biblioteca de documentos de SharePoint, seleccione **el** **menú NuevoEditar** >  nuevo.
+1. En una biblioteca de documentos SharePoint, seleccione **nuevo** > **editar nuevo menú**.
 
    ![Captura de pantalla de la biblioteca de documentos con la opción de menú Editar nuevo resaltada.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -162,7 +162,7 @@ Si necesita editar una plantilla existente o eliminar o anular la publicación d
 
 Puede usar una plantilla moderna *publicada* para crear rápidamente documentos similares sin tener que empezar desde cero. Para crear un documento mediante una plantilla publicada, siga estos pasos:
 
-1. En una biblioteca de documentos de SharePoint, seleccione **Nuevo** y, a continuación, seleccione la plantilla moderna que desea usar.
+1. En una biblioteca de documentos SharePoint, seleccione **Nuevo** y, a continuación, seleccione la plantilla moderna que desea usar.
 
    ![Captura de pantalla de la biblioteca de documentos que muestra las opciones de plantilla modernas en el menú Nuevo.](../media/content-understanding/content-assembly-create-document-1.png)
 
