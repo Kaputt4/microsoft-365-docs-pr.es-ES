@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint. Microsoft 365 Empresa Premium incluye Teams, que es una excelente manera de compartir archivos y vídeos de forma segura.
-ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 354722f92b34081c318c818d94e9ca5c95074aa7
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622354"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772366"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Compartir archivos y vídeos en un entorno seguro
 
