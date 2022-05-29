@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d4bb28255a809737b44324fdcccfc456c6a73dfb
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302130"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772656"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -445,9 +445,9 @@ Con esta configuración concatenada, los usuarios podrán eliminar el elemento d
 
 Al crear una etiqueta de retención, existen dos rutas de configuración para volver a etiquetar al final del período de retención:
 
-- Si necesita conservar inicialmente el contenido con la etiqueta principal (lo más habitual): en la página **Definir configuración de etiqueta**, seleccione **Conservar elementos indefinidamente o durante un período específico** y especifique el período de retención. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Cambiar la etiqueta** > **Elegir una etiqueta**.
+- Si necesita conservar inicialmente el contenido con la etiqueta principal (lo más habitual): en la página **Definir configuración de etiqueta**, seleccione **Conservar elementos indefinidamente o durante un período específico** y especifique el período de retención. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Cambiar la etiqueta** > **Elija una etiqueta de reemplazo**.
 
-- Si no necesita conservar inicialmente el contenido con la etiqueta principal: en la página **Definir configuración de etiqueta**, seleccione **Aplicar acciones después de un período específico**, especifique el período de retención y, a continuación, seleccione **Cambiar la etiqueta** > **Elegir una etiqueta**.
+- Si no necesita conservar inicialmente el contenido con la etiqueta principal: en la página **Definir configuración de etiqueta**, seleccione **Aplicar acciones después de un período específico**, especifique el período de retención y, a continuación, seleccione **Cambiar la etiqueta** > **Elegir una etiqueta de reemplazo**.
 
 En ambos casos, la etiqueta de reemplazo ya debe haberse creado, pero no es necesario incluirla en una directiva de etiqueta existente.
 

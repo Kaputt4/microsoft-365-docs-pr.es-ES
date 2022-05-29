@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para empezar a controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prescriptivas para empezar.
-ms.openlocfilehash: 0d9545a04b94b75ee1b9429d7db75b39e90b06ef
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286854"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772738"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Introducción a la administración del ciclo de vida de los datos
 
@@ -95,7 +95,7 @@ Si tiene un escenario que requiere la administración de datos de elementos indi
 
 Consulte la sección siguiente para obtener información sobre la documentación del usuario final para admitir la retención de Microsoft 365.
 
-Las funcionalidades de gestión del ciclo de vida de los datos que admiten la administración de buzones (archivado, buzones inactivos e importación) normalmente no requieren documentación del usuario final.
+Las capacidades de administración del ciclo de vida de los datos para buzones inactivos y la importación de archivos PST no requieren documentación del usuario final, ya que son solo operaciones de administración. Para ayudar a los usuarios a comprender e interactuar con sus buzones de archivo en Outlook después de habilitar esta funcionalidad, vea [Administrar el almacenamiento de correo electrónico con buzones de archivo en línea](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>Documentación del usuario final para la retención y eliminación
 
