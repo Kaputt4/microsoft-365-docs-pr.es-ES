@@ -19,16 +19,16 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973385"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772782"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -166,7 +166,11 @@ Una vez que haya empezado con una directiva de reserva SPF de `?all`, puede desc
 
 También puede usar las [conclusiones de la inteligencia contra la suplantación de identidad](learn-about-spoof-intelligence.md) y la [Lista de permitidos/bloqueados del espacio empresarial](tenant-allow-block-list.md) para permitir a los remitentes transmitir mensajes no autenticados a su organización.
 
-En el caso de los dominios externos, el usuario falso es el dominio de la dirección De, mientras que la infraestructura de envío es la dirección IP de origen (dividida en /24 rangos CIDR) o el dominio de la organización del registro de DNS (PTR) invertido.
+En el caso de los dominios externos, el usuario suplantado es el dominio de la dirección de, mientras que la infraestructura de envío es uno de los siguientes valores:
+
+- La dirección IP de origen (dividida en /24 intervalos CIDR)
+- Dominio organizativo del registro DNS inverso (PTR).
+- Un dominio DKIM comprobado.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creación de una entrada de permiso para el par de remitente y destinatario
 

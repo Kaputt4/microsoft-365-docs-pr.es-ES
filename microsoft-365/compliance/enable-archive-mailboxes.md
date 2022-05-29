@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo habilitar o deshabilitar buzones de archivo para que sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647245"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772432"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Habilitación de buzones de archivo en el portal de cumplimiento de Microsoft Purview
 
@@ -124,6 +124,10 @@ Se abre una página de control flotante en el Centro de administración de Micro
 
 > [!NOTE]
 > Debe ser un administrador global de Microsoft 365 para usar la comprobación de diagnóstico del buzón de archivo. Además, esta característica no está disponible en las nubes de Microsoft 365 Government, Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
+
+## <a name="instructions-for-end-users"></a>Instrucciones para usuarios finales
+
+Explicar a los usuarios cómo funciona su buzón de archivo y cómo pueden interactuar con él en Outlook en Windows, macOS y la Web. La documentación más eficaz se personalizará para su organización. Pero para obtener instrucciones básicas, consulte [Administrar el almacenamiento de correo electrónico con buzones de archivo en línea](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
