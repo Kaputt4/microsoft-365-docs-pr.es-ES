@@ -332,6 +332,12 @@
           items:
             - name: Información general
               href: defenderexpertsforhuntingprev.md
+        - name: Cuaderno de estrategias de ransomware
+          items:
+            - name: Detección de ataques de ransomware operados por personas con Microsoft 365 Defender
+              href: playbook-detecting-ransomware-m365-defender.md
+            - name: Respuesta a ataques de ransomware
+              href: playbook-responding-ransomware-m365-defender.md
     - name: Guía de operaciones de seguridad
       items:
         - name: Información general
