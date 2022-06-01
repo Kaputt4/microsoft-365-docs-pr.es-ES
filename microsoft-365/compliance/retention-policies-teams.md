@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: f289b8da5a4b21214887fd6429e977e434a9cd0b
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754364"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811030"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -71,7 +71,7 @@ Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferenc
 
 Teams usa un servicio de chat con tecnología de Azure como almacenamiento principal para todos los mensajes (chats y mensajes de canal). Si necesita eliminar mensajes de Teams por motivos de cumplimiento, las políticas de retención de Teams pueden eliminar mensajes después de un período específico, según el momento en que se crearon. Luego, los mensajes se eliminan permanentemente de los buzones de correo de Exchange donde se almacenaron para las operaciones de cumplimiento y del almacenamiento principal que usa el servicio de chat subyacente con tecnología de Azure. Para más información sobre la arquitectura subyacente, consulte[Seguridad y cumplimiento en Microsoft Teams](/MicrosoftTeams/security-compliance-overview) y, específicamente, la sección [Arquitectura de protección de la información](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los buzones de correo, debe configurar una directiva de retención para los **mensajes de canal de Teams** y las ubicaciones de los **chats de Teams**. Los mensajes de canal y los chats de Teams no se incluyen en las políticas de retención configuradas para buzones de correo de usuarios o grupos de Exchange. De forma similar, las directivas de retención para Teams no afectan a otros buzones almacenados de elementos de correo electrónico.
+Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los buzones de correo, debe configurar una directiva de retención para los **mensajes de canal de Teams** y las ubicaciones de los **chats de Teams**. Los mensajes de canal y los chats de Teams no se incluyen en las políticas de retención configuradas para buzones de correo de usuarios o grupos de Exchange. De forma similar, las directivas de retención para Teams no afectan a otros elementos almacenados en los buzones de correo electrónico.
 
 Si se agrega un usuario a un chat, se ingiere una copia de todos los mensajes compartidos con ellos en su buzón. La fecha de creación de esos mensajes no cambia para el nuevo usuario y sigue siendo la misma para todos los usuarios.
 
@@ -206,7 +206,7 @@ Cuando se incluyen usuarios externos en una reunión que su organización organi
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
-Si un usuario que tiene un buzón de correo en Exchange Online deja la organización y su cuenta de Microsoft 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un usuario que tiene un buzón de correo en Exchange Online deja la organización y su cuenta de Microsoft 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Más información sobre buzones inactivos](inactive-mailboxes-in-office-365.md). 
 
 Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) para SharePoint y OneDrive.
 
