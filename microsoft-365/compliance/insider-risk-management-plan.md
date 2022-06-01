@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ad69d525ac8cf105761286c59e8bce54d446ae8f
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599599"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810930"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -33,6 +33,8 @@ Vea el vídeo siguiente para obtener información sobre cómo el flujo de trabaj
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sobre cómo funcionan conjuntamente la administración de riesgos internos y el cumplimiento de comunicaciones para ayudar a minimizar los riesgos de datos de los usuarios de su organización.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Trabajar con las partes interesadas de la organización
 
@@ -57,7 +59,7 @@ En función de cómo desee administrar las directivas y alertas de administraci�
 
 Al trabajar con la administración de riesgos internos, elegirá entre estas opciones de grupo de roles y las acciones de solución:
 
-|**Acciones**|**Administración de riesgos internos**|**Administración de riesgos internos Admin**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|
+|**Actions**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Configuración de directivas y opciones | Sí | Sí | No | No | No |
 | Información de análisis de acceso | Sí | Sí | Sí | No | No |
@@ -68,9 +70,9 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 | Ver & exportar registros de auditoría | Sí | No | No | No | Sí |
 
 >[!IMPORTANT]
->Asegúrese de que siempre tiene al menos un usuario en *insider Risk Management* o *Insider Risk Management Admin* grupos de roles (según la opción que elija) para que la configuración de administración de riesgos internos no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+>Asegúrese de que siempre tiene al menos un usuario en *insider Risk Management* o *Insider Risk Management Administración* grupos de roles (según la opción que elija) para que la configuración de administración de riesgos internos no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
-Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles de administración de riesgos internos y tener los mismos permisos de solución incluidos en el grupo de roles *de insider Risk Management Admin*:
+Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles de administración de riesgos internos y tener los mismos permisos de solución incluidos en el grupo de roles *insider Risk Management Administración*:
 
 - *administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory

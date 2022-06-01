@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599219"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810952"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
@@ -57,6 +57,8 @@ Para ver las presentaciones más recientes de Ignite para el cumplimiento de la 
 Para obtener información general rápida sobre el cumplimiento de las comunicaciones, consulte el vídeo [Detectar acoso en el área de trabajo y responder con cumplimiento de comunicaciones](https://youtu.be/z33ji7a7Zho) en el [canal Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 Consulte cómo [TD Securities usa el cumplimiento de las comunicaciones](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) para abordar sus obligaciones normativas y satisfacer sus necesidades de seguridad y estabilidad.
+
+Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sobre cómo funcionan conjuntamente la administración de riesgos internos y el cumplimiento de comunicaciones para ayudar a minimizar los riesgos de datos de los usuarios de su organización.
 
 Para mantenerse al día con las últimas actualizaciones de cumplimiento de comunicaciones, seleccione **Novedades** del [cumplimiento de comunicaciones](https://compliance.microsoft.com/) de su organización.
 
@@ -181,7 +183,7 @@ El siguiente paso es corregir los problemas de cumplimiento de comunicaciones qu
 - **Escalar a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para poder resolver el incidente. Puede escalar fácilmente los problemas relativos a mensajes a los revisores de otras áreas de su organización como parte del proceso de resolución.
 - **Marcar como mal clasificado**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente se pasarán al proceso de revisión. Puede marcar estos tipos de alertas como clasificados incorrectamente, enviar comentarios a Microsoft sobre la clasificación incorrecta para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
 - **Retirar mensaje in Teams (vista previa)**: es posible que los mensajes inadecuados se quiten de mostrarse en canales de Microsoft Teams o mensajes de chat personales y grupales. Los mensajes inadecuados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
-- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El Cumplimiento de comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Escalar un caso para investigación le permite transferir datos y administrar el caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), vea [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El Cumplimiento de comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorear
 

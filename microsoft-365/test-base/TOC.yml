@@ -4,7 +4,7 @@
   items:
     - name: ¿Qué es la base de pruebas?
       href: overview.md
-- name: Tutoriales rápidos
+- name: Guías de inicio rápido
   items:
     - name: Crear cuenta base de pruebas
       href: createAccount.md
@@ -12,7 +12,7 @@
       items:
         - name: Información general
           href: testoverview.md
-        - name: Prueba de los archivos binarios en la base de prueba
+        - name: Creación y prueba de archivos binarios en la base de pruebas
           href: testapplication.md
         - name: Prueba de la aplicación de Intune en Test Base
           href: testintuneapplication.md

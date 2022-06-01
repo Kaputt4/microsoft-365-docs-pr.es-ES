@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599263"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810624"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -43,6 +43,8 @@ Vea los vídeos siguientes para obtener información sobre cómo la administraci
 
 **Flujo de trabajo de administración de riesgos internos**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sobre cómo funcionan conjuntamente la administración de riesgos internos y el cumplimiento de comunicaciones para ayudar a minimizar los riesgos de datos de los usuarios de su organización.
 
 > [!IMPORTANT]
 > La administración de riesgos internos está disponible actualmente en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias del servicio de Azure. Para comprobar que la administración de riesgos internos es compatible con su organización, consulte [Disponibilidad de dependencias de Azure por país o región](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -147,7 +149,7 @@ Una vez investigados los casos, los revisores pueden actuar rápidamente para re
 
 En las situaciones más graves, es posible que tenga que compartir la información del caso de administración de riesgos internos con otros revisores o servicios de su organización. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la resolución de riesgos de un extremo a otro.
 
-- **eDiscovery (Premium):** escalar un caso para su investigación le permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), vea [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+- **eDiscovery (Premium):** escalar un caso para su investigación permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 - **Integración de las API de administración de Office 365 (versión preliminar):** la administración de riesgos internos admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma que mejor se adapte a los procesos de riesgo de su organización le proporciona más flexibilidad para actuar sobre las actividades de riesgo. Para más información sobre la exportación de información de alertas con las API de administración de Office 365, consulte [Exportación de alertas](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]

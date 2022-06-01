@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre la diferencia entre la colaboración de invitados y los canales compartidos en Teams y cómo elegir cuál usar.
-ms.openlocfilehash: 09948b49d0c4f3e21d03c1e3994e4dd2d609ed13
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3a6bc5c7f0b07208e3543bfab9d1d5f0d51fc225
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465787"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811009"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planear la colaboración externa con conversaciones de canal, colaboración de archivos y aplicaciones compartidas
 
@@ -130,7 +130,7 @@ Los administradores pueden aplicar una [directiva de retención](/microsoft-365/
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-[Las etiquetas de confidencialidad](/microsoft-365/compliance/sensitivity-labels) disponibles en la organización host son las únicas etiquetas que se pueden aplicar a los documentos de un sitio de canal compartido. Los participantes externos no pueden abrir un archivo cifrado mediante una etiqueta de confidencialidad. No se usa el etiquetado automático.
+[Las etiquetas de confidencialidad](/microsoft-365/compliance/sensitivity-labels) disponibles en la organización host son las únicas etiquetas que se pueden aplicar a los documentos de un sitio de canal compartido. Los participantes externos no pueden abrir un archivo cifrado mediante una etiqueta de confidencialidad a menos que se concedan permisos. No se usa el etiquetado automático.
 
 Los canales compartidos y sus sitios de SharePoint asociados heredan la etiqueta del equipo primario.
 

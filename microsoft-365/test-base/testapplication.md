@@ -1,6 +1,6 @@
 ---
-title: Prueba de los archivos binarios en la base de prueba
-description: Cómo probar los archivos binarios en la base de pruebas
+title: Creación y prueba de archivos binarios en la base de pruebas
+description: Creación y prueba de archivos binarios en Test Base
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,32 +14,32 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 8474631edfe580dfc269b2d02c1a113351c6ba6d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995303"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811093"
 ---
-# <a name="test-your-binary-files-on-test-base"></a>Prueba de los archivos binarios en la base de prueba
+# <a name="creating-and-testing-binary-files-on-test-base"></a>Creación y prueba de archivos binarios en la base de pruebas
 
-> [!NOTE]
-> Esta guía le guiará para crear un nuevo paquete base de prueba desde cero. Si ya tiene un paquete de Test Base (.zip) en la mano, puede cambiar para usar nuestra experiencia de carga heredada [Upload el paquete base de prueba (Zip).](uploadApplication.md)
+En esta sección se proporcionan todos los pasos necesarios para crear un nuevo paquete que contenga archivos binarios para cargar y probar en Test Base. Si ya tiene un archivo .zip precompilado, puede ver [Carga del paquete Zip precompilado](uploadApplication.md) para cargar el archivo.
 
-## <a name="prerequisites"></a>Requisitos previos
-
-Una cuenta base de prueba. Si no tiene una, [cree una cuenta base de prueba](createAccount.md).
+> [!IMPORTANT]
+> Si no tiene una cuenta base de **prueba** , deberá crear una antes de continuar, como se describe en [Creación de una cuenta base de prueba](createAccount.md).
 
 ## <a name="create-a-new-package"></a>Creación de un nuevo paquete
 
-En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba en la que desea cargar el paquete. En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **paquete**. A continuación, haga clic en la primera tarjeta **"Crear nuevo paquete"** para compilar el paquete en 5 pasos.
+En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de **prueba** para la que va a crear y cargar el paquete y realice los pasos siguientes. 
+
+En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **paquete**. A continuación, haga clic en la primera tarjeta **"Crear nuevo paquete en línea"** para compilar el paquete en línea dentro de los 5 pasos!
 
 > [!div class="mx-imgBorder"]
 > ![Asistente para crear un nuevo paquete](Media/testapplication01.png)
 
 ### <a name="step-1-define-content"></a>Paso 1. Definir contenido
 
-1. En la sección **Origen del** paquete, elija el origen del paquete. Si tiene una aplicación Intunewin, seleccione Intunewin, para otros, por ejemplo, exe o msi, seleccione Archivos binarios.
+1. En la sección **Origen del paquete** , seleccione Archivos binarios (por ejemplo: .exe, .msi) en Tipo de origen del paquete.
 
    > [!div class="mx-imgBorder"]
    > ![Elección del origen del paquete](Media/testapplication02.png)
@@ -57,7 +57,7 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
    > [!div class="mx-imgBorder"]
    > ![Escriba información básica.](Media/testapplication04.png)
 
-4. Una vez rellenada toda la información necesaria, puede pasar al paso 2 haciendo clic en el botón Siguiente situado en la parte inferior.
+4. Una vez especificada toda la información solicitada, puede pasar a la siguiente fase haciendo clic en el botón **Siguiente: Prueba de configuración** .
 
    > [!div class="mx-imgBorder"]
    > ![Paso siguiente](Media/testapplication05.png)
@@ -67,6 +67,9 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
 1. Seleccione el **tipo de prueba**. Se admiten dos tipos de prueba:
    - Una **prueba lista para usar (OOB)** realiza una instalación, inicio, cierre y desinstalación del paquete. Después de la instalación, la rutina de inicio y cierre se repite 30 veces antes de que se ejecute una sola desinstalación. La prueba de OOB proporciona telemetría estandarizada en el paquete para compararla entre Windows compilaciones.
    - Una **prueba funcional** ejecutaría los scripts de prueba cargados en el paquete. Los scripts se ejecutan en la secuencia especificada y un error en un script determinado impedirá la ejecución de scripts posteriores.
+
+   > [!NOTE]
+   > Ahora, la prueba lista para usar es opcional.
 
    > [!div class="mx-imgBorder"]
    > ![La prueba lista para usar es opcional](Media/testapplication07.png)
@@ -81,6 +84,9 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
 1. En la pestaña Editar paquete, puede
    - Compruebe la carpeta del paquete y la estructura de archivos en **la versión preliminar del paquete**.
    - Edite los scripts en línea con el **editor de código de PowerShell**.
+
+   > [!NOTE]
+   > Se han generado algunos scripts de ejemplo para la referencia. Debe revisar cuidadosamente cada script y reemplazar el comando y el nombre del proceso por el suyo propio. 
 
    > [!div class="mx-imgBorder"]
    > ![editar scripts en línea](Media/testapplication09.png)
@@ -97,12 +103,15 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
    - Si la **prueba lista** para usar está seleccionada en el paso 2, puede ver la carpeta **outofbox** en la carpeta scripts. También tiene la opción de agregar la etiqueta **"Reiniciar después de la instalación"** para el script de instalación.
 
    > [!div class="mx-imgBorder"]
-   > ![Recursos en la carpeta de bandeja de salida](Media/testapplication11.png)
+   > ![Script de referencia](Media/testapplication11.png)
 
    > [!NOTE]
-   > Las etiquetas de script Install, Launch y Close son obligatorias para el tipo de prueba de OOB.
+   > Las etiquetas de script Install, Launch y Close son obligatorias para el tipo de prueba de OOB. La reasignación de etiquetas garantiza que se usará la ruta de acceso de script correcta cuando se inicien las pruebas.
 
-   - Si la **prueba funcional** está seleccionada en el paso 2, puede ver la carpeta **funcional** en la carpeta scripts. Se pueden agregar scripts de prueba funcionales adicionales mediante el botón **"Agregar a la lista de pruebas funcionales"** . Necesita un script mínimo de (1) y puede agregar hasta ocho (8) scripts de prueba funcionales.
+   > [!div class="mx-imgBorder"]
+   > ![Editar solicitud de paquete](Media/testapplication11-2.png)
+
+   - Si la **prueba funcional** está seleccionada en el paso 2, puede ver la carpeta **funcional** en la carpeta scripts. Se pueden agregar scripts de prueba más funcionales mediante el botón **"Agregar a la lista de pruebas funcionales"** . Necesita un script mínimo de (1) y puede agregar hasta ocho (8) scripts de prueba funcionales.
 
    > [!div class="mx-imgBorder"]
    > ![Agregar a la lista de pruebas funcionales](Media/testapplication12.png)
@@ -110,8 +119,8 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
    > [!NOTE]
    > Al menos 1 etiqueta de script funcional es obligatoria para el tipo de prueba funcional.
 
-   Al hacer clic en la **lista "Agregar a la prueba funcional"**, aparecerá el panel de acciones, puede hacer lo siguiente:
-   - Reordene las rutas de acceso del script arrastrando con los botones de puntos suspensivos izquierdos. Los scripts funcionales se ejecutan en la secuencia en la que se enumeran. Un error en un script determinado impide que se ejecuten scripts posteriores.
+   Para agregar más scripts funcionales, puede hacer clic en la **lista "Agregar a la prueba funcional"**. A continuación, aparecerá el panel de acciones, puede hacer lo siguiente:
+   - Reordene las rutas de acceso del script arrastrando con los botones de puntos suspensivos izquierdos. Los scripts funcionales se ejecutan en la secuencia en la que aparecen. Un error en un script determinado impide que se ejecuten scripts posteriores.
    - Establezca "Reiniciar después de la ejecución" para varios scripts.
    - Aplique la actualización antes en una ruta de acceso de script específica. Esto es para los usuarios que desean realizar pruebas funcionales para indicar cuándo se debe aplicar la revisión de Windows Update en la secuencia de ejecución de sus scripts de prueba funcionales.
 
@@ -124,7 +133,7 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
 
 1. En la pestaña Matriz de pruebas, seleccione el **tipo de actualización del sistema operativo**. Se admiten dos tipos de actualización del sistema operativo.
    - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de Windows actualizaciones de seguridad mensuales de versión preliminar.
-   - Las **actualizaciones de características** permiten probar el paquete con Windows compilaciones de actualizaciones de características bianuales anteriores a la versión del programa Windows Insider.
+   - Las **actualizaciones de características** permiten probar el paquete con Windows compilaciones de actualizaciones de características bianuales anteriores a la versión desde el Windows Insider Program.
 
 2. Seleccione las versiones del sistema operativo para las pruebas de actualización de seguridad.
 
@@ -135,7 +144,7 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
 
 3. Seleccione las opciones de Pruebas de actualización de características.
    - Si se selecciona **Actualizaciones de características** en tipo de actualización del sistema operativo, debe finalizar las siguientes opciones.
-   - En **Canal insider**, seleccione el Windows Canal de programa Insider como la compilación en la que se deben probar los paquetes. Actualmente usamos compilaciones piloto en el **canal beta de Insider**.
+   - En **Canal insider**, seleccione el canal de Windows Insider Program como la compilación en la que se deben probar los paquetes. Actualmente usamos compilaciones piloto en el **canal beta de Insider**.
    - En **Línea base del sistema operativo para Insight**, seleccione la versión Windows del sistema operativo que se usará como línea base al comparar los resultados de las pruebas.
 
    > [!div class="mx-imgBorder"]
@@ -145,7 +154,7 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
 
 ### <a name="step-5-review--publish"></a>Paso 5. Revisar y publicar
 
-1. Puede revisar toda la información del paquete de borrador y puede volver a los pasos iniciales para realizar cambios si es necesario.
+1. Revise toda la información para ver si el paquete es correcto y preciso. Para realizar correcciones, puede volver a los pasos iniciales en los que especificó la configuración según sea necesario.
 
    > [!div class="mx-imgBorder"]
    > ![Revisión del paquete](Media/testapplication15.png)
@@ -155,7 +164,10 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
    > [!div class="mx-imgBorder"]
    > ![Notificación](Media/testapplication16.png)
 
-3. Una vez que se asegure de que toda la información es correcta, puede continuar con la carga del paquete en Test Base haciendo clic en el botón **"Publicar"** . Aparecerá una notificación cuando el paquete se haya publicado correctamente.
+3. Cuando haya terminado de finalizar la configuración de datos de entrada, haga clic en **Publicar** para cargar el paquete en Test Base.  La notificación siguiente se muestra cuando el paquete se publica correctamente y ha entrado en el proceso de verificación.  
+
+   > [!NOTE]
+   > El paquete debe comprobarse antes de que se acepte para futuras pruebas. La comprobación puede tardar hasta 24 horas, ya que incluye la ejecución del paquete en un entorno de prueba real. 
 
    > [!div class="mx-imgBorder"]
    > ![Mensajes de publicación de paquetes](Media/testapplication17.png)
@@ -165,28 +177,16 @@ En el [Azure Portal](https://portal.azure.com/), vaya a la cuenta base de prueba
    > [!div class="mx-imgBorder"]
    > ![Administración de paquetes](Media/testapplication18.png)
 
-### <a name="continue-package-creation"></a>Continuar con la creación de paquetes
+   > [!NOTE]
+   > Cuando se complete el proceso de verificación, el estado de verificación cambiará a Aceptado. En este momento, no se requieren más acciones. El paquete se adquirirá automáticamente para su ejecución cada vez que los sistemas operativos configurados tengan nuevas actualizaciones disponibles. Si se produce un error en el proceso de verificación, el paquete no está listo para las pruebas. Compruebe los registros y evalúe si se han producido errores. También es posible que tenga que comprobar los valores de configuración del paquete para detectar posibles problemas.
 
-En la página **Nuevo paquete** , puede ver una lista de todos los paquetes de borrador guardados anteriormente. Puede continuar la edición directamente en el paso que detuvo la última vez haciendo clic en el icono "editar".
+### <a name="resume-creation-of-a-saved-draft-package"></a>Reanudación de la creación de un paquete de borrador guardado
+
+Si tiene algún paquete de borrador anterior, puede ver la lista de los paquetes de borrador guardados en la página **Nuevo paquete** . Al hacer clic en el icono de lápiz **"Editar"** , puede reanudar la edición del paquete seleccionado desde donde lo dejó, como se describe en la columna **Estado** .
+
+> [!div class="mx-imgBorder"]
+> ![Nueva página de paquete](Media/testapplication19.png)
 
 > [!NOTE]
-> El panel solo muestra el paquete de trabajo en curso. Para el paquete publicado, puede comprobar la página Administrar paquete.
+> El panel solo muestra los paquetes de borrador guardados. Para ver los paquetes publicados, deberá ir a la página Administrar paquetes.
 
-> [!div class="mx-imgBorder"]
-> ![Página Administrar paquetes](Media/testapplication19.png)
-
-### <a name="zip-upload-legacy-upload-experience"></a>Zip Upload (experiencia de carga heredada)
-
-Si ya tiene un archivo Zip, puede volver a la experiencia de carga de paquetes heredada (carga zip). Obtenga más información sobre la carga zip [Upload el paquete | Microsoft Docs](uploadApplication.md).
-
-> [!div class="mx-imgBorder"]
-> ![paquete Upload](Media/testapplication01.png)
-
-> [!div class="mx-imgBorder"]
-> ![Experiencia de carga heredada](Media/testapplication21.png)
-
-### <a name="intunewin-upload-flow"></a>Intunewin Upload Flow
-
-Como parte de la hoja de ruta comercial, Test Base comenzó a admitir el formato intunewin para profesionales de TI que administran aplicaciones para sus aplicaciones dentro de Intune como el formato de paquete de incorporación estándar. El flujo de carga de intunewin proporciona la experiencia para que los profesionales de TI reutilicen sus paquetes de formato intunewin, que contienen las aplicaciones que implementaron en sus dispositivos finales a través de MEM/Intune para incorporar sus aplicaciones y probar configuraciones rápidamente en Test Base.
-
-[Pruebe la aplicación de Intune en Test Base.](testintuneapplication.md)
