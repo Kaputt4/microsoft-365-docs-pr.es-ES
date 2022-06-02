@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: ''
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en eDiscovery (Premium) para buscar y recopilar contenido relativo a su caso o investigación.
-ms.openlocfilehash: ab2cb4baa1e8d60816fbf7c053d49b5a718746d5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7b5c09cd0b8a9f0a2ea0fe75e3ebf82e27223b14
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091057"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839391"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>Más información sobre las colecciones en eDiscovery (Premium)
 
@@ -31,13 +31,13 @@ Cuando las organizaciones se enfrentan a la recopilación de las comunicaciones 
 
 El flujo de trabajo de colección plantea importantes desafíos técnicos en torno a la extracción de contenido de orígenes y ubicaciones nativos. También es un punto crítico en la evaluación y la estrategia para escenarios comunes de litigios o investigaciones. A medida que las organizaciones comienzan a evaluar una investigación, las primeras preguntas que se hacen son¿quién participó? Después de identificar quién participó, estos custodios se pueden poner rápidamente en espera para conservar el contenido pertinente. La siguiente pregunta es qué ha tenido lugar? Para responder a esta segunda pregunta fundamental de cualquier investigación, los administradores deben recurrir a los datos. Para evaluar rápidamente el contenido más relevante para la pregunta de lo que ocurrió, los administradores comienzan a refinar el objetivo de la pregunta para asegurarse de que los resultados de la colección sean completos sin ser demasiado amplios.
 
-Las colecciones de eDiscovery (Premium) ayudan a los administradores de exhibición de documentos electrónicos a limitar rápidamente la búsqueda de contenido entre correo electrónico, documentos y otro contenido en Microsoft 365. Las colecciones proporcionan a los administradores una estimación del contenido que puede ser relevante para el caso. Esto permite a los administradores tomar decisiones rápidas e informadas sobre el tamaño y el ámbito del contenido pertinente para un caso. Los administradores de eDiscovery pueden crear una colección para buscar orígenes de datos custodiales (como buzones de correo y sitios de SharePoint) y mediante criterios de búsqueda específicos (como palabras clave e intervalos de fechas) para definir rápidamente el ámbito de su colección.
+Las colecciones de eDiscovery (Premium) ayudan a los administradores de exhibición de documentos electrónicos a limitar rápidamente la búsqueda de contenido entre correo electrónico, documentos, reacciones Teams y otro contenido en Microsoft 365. Las colecciones proporcionan a los administradores una estimación del contenido que puede ser relevante para el caso. Esto permite a los administradores tomar decisiones rápidas e informadas sobre el tamaño y el ámbito del contenido pertinente para un caso. Los administradores de eDiscovery pueden crear una colección para buscar orígenes de datos custodiales (como buzones de correo y sitios de SharePoint) y mediante criterios de búsqueda específicos (como palabras clave e intervalos de fechas) para definir rápidamente el ámbito de su colección.
 
 Una vez definida la colección, los administradores de eDiscovery pueden guardar la colección como borrador y obtener estimaciones, incluidas las estimaciones para el volumen de datos, las ubicaciones de contenido que contienen resultados y el número de aciertos para la condición de consulta de búsqueda. Estas conclusiones pueden ayudar a informar si la colección se debe revisar para restringir o expandir el ámbito de la colección antes de pasar a las fases de revisión y análisis en el flujo de trabajo de eDiscovery.
 
 Cuando el administrador está satisfecho con el ámbito de la colección y la cantidad estimada de contenido que es probable que responda, el administrador puede agregar o *confirmar* el contenido en un conjunto de revisión. Al confirmar una colección en un conjunto de revisión, ese administrador también tiene las opciones para incluir conversaciones de chat, datos adjuntos en la nube y versiones de documentos. El contenido de la colección también pasa por otro nivel de procesamiento durante la ingesta en el conjunto de revisión. y la colección se actualizará con el resumen final de la colección. Después de agregar contenido al conjunto de revisión, los administradores de eDiscovery pueden seguir consultando, agrupando y refinando el contenido en para ayudar con la minimización y revisión. Además, la colección se actualiza con información y estadísticas sobre el contenido confirmado en el conjunto de revisión. Esto proporciona una referencia histórica sobre el contenido de la colección.
 
-Con el lanzamiento de colecciones en un eDiscovery (Premium), se ha cambiado el nombre de la pestaña **Búsquedas** a **Colecciones** en un caso de exhibición de documentos electrónicos (Premium) en el portal de cumplimiento de Microsoft Purview. Los pasos para definir el ámbito y el tamaño de la colección siguen el mismo proceso que la búsqueda para definir ubicaciones y condiciones. Guardar como borrador y obtener estimaciones de vista previa permite la validación rápida del ámbito de destino de las colecciones antes de confirmar una búsqueda completa y una recopilación en el conjunto de revisión. Esto permite una mejor administración de trabajos y iteraciones dirigidas para empezar a minimizar el contenido durante el proceso de búsqueda y recopilación.
+Con el lanzamiento de colecciones en un eDiscovery (Premium), se ha cambiado el nombre de la pestaña **Búsquedas** a **Colecciones** en un caso de exhibición de documentos electrónicos (Premium) en el portal de cumplimiento Microsoft Purview. Los pasos para definir el ámbito y el tamaño de la colección siguen el mismo proceso que la búsqueda para definir ubicaciones y condiciones. Guardar como borrador y obtener estimaciones de vista previa permite la validación rápida del ámbito de destino de las colecciones antes de confirmar una búsqueda completa y una recopilación en el conjunto de revisión. Esto permite una mejor administración de trabajos y iteraciones dirigidas para empezar a minimizar el contenido durante el proceso de búsqueda y recopilación.
 
 ## <a name="collections-workflow"></a>Flujo de trabajo de colecciones
 

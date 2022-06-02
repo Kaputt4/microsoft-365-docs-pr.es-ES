@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
-ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 754be254c4301fae9fdfff5edee3593e1333eb6c
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414874"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839702"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams
 
@@ -27,11 +27,13 @@ ms.locfileid: "65414874"
 
 En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar Microsoft Purview eDiscovery (Premium) para conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
 
-Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante eDiscovery (Premium):
+Hay seis categorías de contenido de Teams que puede recopilar y procesar mediante eDiscovery (Premium):
 
 - **Teams chats 1:1**. Mensajes de chat, publicaciones y datos adjuntos compartidos en una conversación Teams entre dos personas.  Teams chats 1:1 también se denominan *conversaciones*.
 
 - **Teams chats de grupo**. Mensajes de chat, publicaciones y datos adjuntos compartidos en una conversación Teams entre tres o más personas. También se denomina chats *1:N* o *conversaciones grupales*.
+
+- **Teams reacciones**. Reacciones aplicadas a mensajes de chat, publicaciones y datos adjuntos en una conversación Teams.
 
 - **canales de Teams**. Mensajes de chat, publicaciones, respuestas y datos adjuntos compartidos en un canal de Teams estándar.
 
@@ -47,6 +49,7 @@ Un requisito previo para administrar Teams contenido en eDiscovery (Premium) es 
 |---|---|---|
 |chats de Teams 1:1|Los mensajes de los chats 1:1 se almacenan en el buzón Exchange Online de todos los participantes del chat.|Los archivos compartidos en un chat 1:1 se almacenan en la cuenta OneDrive para la Empresa de la persona que ha compartido el archivo.|
 |Teams chats de grupo|Los mensajes de los chats de grupo se almacenan en el buzón Exchange Online de todos los participantes del chat.|Los archivos compartidos en los chats de grupo se almacenan en la cuenta OneDrive para la Empresa de la persona que ha compartido el archivo.|
+|reacciones Teams|Los mensajes de los chats de grupo se almacenan en el buzón Exchange Online de todos los participantes del chat.|Los archivos compartidos en los chats de grupo se almacenan en la cuenta OneDrive para la Empresa de la persona que ha compartido el archivo.|
 |Canales de Teams|Todos los mensajes y publicaciones del canal se almacenan en el buzón de Exchange Online asociado al equipo.|Los archivos compartidos en un canal se almacenan en el sitio de SharePoint Online asociado al equipo.|
 |Canales privados|Los mensajes enviados en un canal privado se almacenan en los buzones de Exchange Online de todos los miembros del canal privado.|Los archivos compartidos en un canal privado se almacenan en un sitio de SharePoint Online dedicado asociado al canal privado.|
 |Canales compartidos|Los mensajes enviados en un canal compartido se almacenan en un buzón del sistema asociado al canal compartido. <sup>1</sup>|Los archivos compartidos en un canal compartido se almacenan en un sitio dedicado SharePoint Online asociado al canal compartido.|
@@ -88,7 +91,7 @@ Para agregar custodios a un caso y conservar orígenes de datos de custodia:
 
 1. Vaya al caso de eDiscovery (Premium) que creó en la sección anterior y, a continuación, haga clic en **Orígenes de datos**.
 
-2. En la página **Orígenes de datos**, haga clic en **Agregar origen de** >  **datosAgregar nuevos custodios**.
+2. En la página **Orígenes de datos**, haga clic en **Agregar origen de** >  datos **Agregar nuevos custodios**.
 
 3. En el Asistente para **nuevo custodio** , agregue uno o varios usuarios como custodios al caso escribiendo la primera parte del nombre o alias del usuario. Después de encontrar la persona correcta, seleccione su nombre para agregarlo a la lista.  
 
@@ -137,7 +140,7 @@ Para crear una colección de contenido Teams:
 
 1. Vaya al caso de eDiscovery (Premium) al que agregó los custodios en la sección anterior y, a continuación, haga clic en **Colecciones**.
 
-2. En la página **Colecciones**, seleccione **Nueva** **colecciónStandard** > .
+2. En la página **Colecciones** , seleccione **Nueva colección** > **Estándar**.
 
 3. Escriba un nombre (obligatorio) y una descripción (opcional) para la colección.
 

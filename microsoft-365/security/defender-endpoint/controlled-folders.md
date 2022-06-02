@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 84304d120f5822d91adc99c86e2c22c0cfb6790c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789940"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840395"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789940"
 - Windows
 
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>¿Qué es el acceso controlado a carpetas?
 
@@ -71,12 +71,14 @@ Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-eve
 Puede usar el [modo de auditoría](audit-windows-defender.md) para evaluar cómo afectaría el acceso controlado a la carpeta a su organización si estuviera habilitado. También puede visitar el sitio web de Windows Defender Test ground en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
 
 > [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 El acceso controlado a carpetas se admite en las siguientes versiones de Windows:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) y posteriores
 - Windows 11
+- Windows 2012 R2
+- Windows 2016
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 35d3943580c232a80c400b2fe4dd07dfa88123a2
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759789"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839272"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 
@@ -79,9 +79,14 @@ En el control flotante de detalles de la pestaña **Solo notificaciones de inqui
 
 ## <a name="create-end-user-notifications"></a>Creación de notificaciones de usuario final
 
-En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono Crear nuevo.](../../media/m365-cc-sc-create-icon.png) **Cree nuevo** para iniciar el asistente para notificaciones de usuario final.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de **correo electrónico & colaboración** \> y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-1. En la página **Definir detalles** **, configure los siguientes valores:
+2. En la pestaña **Notificaciones de inquilino** , haga clic en ![el icono Crear nuevo.](../../media/m365-cc-sc-create-icon.png) **Cree un nuevo** para iniciar el Asistente para notificaciones de usuario final.
+
+   > [!NOTE]
+   > En cualquier momento durante el asistente para la creación, puede hacer clic en **Guardar y cerrar** para guardar el progreso y continuar configurando la notificación más adelante. Para seleccionar dónde lo dejó, seleccione la notificación en la pestaña Notificaciones de **inquilino en** **Notificaciones de usuario final** y, a continuación, haga clic en ![el icono Editar automatización.](../../media/m365-cc-sc-edit-icon.png) **Edite la automatización**. La notificación parcialmente completada tendrá el valor **Estado** **Borrador**.
+
+3. En la página **Definir detalles** **, configure los siguientes valores:
    - **Seleccionar tipo de notificación**: seleccione uno de los valores siguientes:
      - **Notificación de refuerzo positivo**
      - **Notificación de simulación**
@@ -92,7 +97,7 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
 
    Cuando termine, haga clic en **Siguiente**.
 
-2. En la página **Definir contenido** , la única configuración que está disponible es el botón **Agregar contenido en lenguaje empresarial** . Al hacer clic en él, aparece un control flotante **Agregar contenido en idioma predeterminado** que contiene la siguiente configuración:
+4. En la página **Definir contenido** , la única configuración que está disponible es el botón **Agregar contenido en lenguaje empresarial** . Al hacer clic en él, aparece un control flotante **Agregar contenido en idioma predeterminado** que contiene la siguiente configuración:
    - **Desde el nombre para mostrar**
    - **Desde la dirección de correo electrónico**
    - **Seleccione el idioma del correo electrónico**: seleccione un idioma de la lista.
@@ -116,10 +121,10 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
    Vuelve a la página **Definir contenido** , donde la notificación que acaba de crear se resume con la siguiente información:
 
    - **Language**
-   - **Asunto**
+   - **Subject**
    - **Categoría**
    - **Acciones**: están disponibles los iconos siguientes:
-     - ![Icono de edición.](../../media/m365-cc-sc-edit-icon.png) **Editar**
+     - ![Icono de edición.](../../media/m365-cc-sc-edit-icon.png) **Edit**
      - ![Icono de vista.](../../media/m365-cc-sc-view-icon.png) **View**
      - ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**: si solo hay una versión de idioma de la notificación, no se puede eliminar.
 
@@ -131,7 +136,7 @@ En la pestaña **Notificaciones de inquilino** , puede hacer clic en ![el icono 
 
    Cuando haya terminado, haga clic en **Siguiente.**
 
-3. En la página **Revisar notificación** , puede revisar los detalles de la notificación.
+5. En la página **Revisar notificación** , puede revisar los detalles de la notificación.
 
    Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Volver atrás** o seleccionar la página específica del asistente.
 
@@ -153,7 +158,7 @@ Para modificar una notificación personalizada existente en la pestaña **Notifi
 - Haga clic **en ⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione ![Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
 - Seleccione la notificación de la lista haciendo clic en cualquier lugar de la fila excepto en la casilla. En el control flotante de detalles que se abre, haga clic en **Editar notificación**.
 
-El Asistente para notificaciones del usuario final se abre con la configuración y los valores de la página de notificación seleccionada. Los pasos son los mismos que se describen en la sección [Crear notificaciones de usuario final](#create-end-user-notifications) .
+El asistente para notificaciones del usuario final se abre con la configuración y los valores de la notificación seleccionada. Los pasos son los mismos que se describen en la sección [Crear notificaciones de usuario final](#create-end-user-notifications) .
 
 ## <a name="copy-end-user-notifications"></a>Copia de notificaciones de usuario final
 

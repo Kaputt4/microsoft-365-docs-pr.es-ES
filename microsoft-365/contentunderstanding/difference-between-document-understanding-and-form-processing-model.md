@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947833"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839883"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y procesamiento de formularios 
 
@@ -34,7 +34,7 @@ Hay dos tipos de modelo personalizados que puede usar:
 Aunque los dos modelos se usan generalmente para el mismo propósito, las siguientes diferencias clave afectan a su uso.
 
 > [!NOTE]
-> Consulte la guía [Adopción de SharePoint Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión mediante documentos.
+> Consulte el [Comenzar impulsar la adopción de SharePoint Syntex](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión de documentos.
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado, no estructurado y semiestructurado
 
@@ -68,26 +68,26 @@ Puede aplicar modelos de comprensión mediante documentos a las bibliotecas de d
 
 Actualmente los modelos de procesamiento de formularios sólo se pueden aplicar a la biblioteca de documentos de SharePoint desde la que los creó. Esto permite a los usuarios con licencia y acceso al sitio crear un modelo de procesamiento de formularios. Tenga en cuenta que un administrador necesita habilitar el procesamiento de formularios en una biblioteca de documentos de SharePoint para que esté disponible para los usuarios con licencia.
 
-## <a name="comparison-of-forms-processing-and-document-understanding"></a>Comparación del procesamiento de formularios y la comprensión mediante documentos
+## <a name="comparison-of-form-processing-and-document-understanding"></a>Comparación del procesamiento de formularios y la comprensión de documentos
 
-Use la siguiente tabla para comprender cuándo se usa el procesamiento de formularios y cuándo, la comprensión mediante documentos.
+Use la tabla siguiente para comprender cuándo usar el procesamiento de formularios y cuándo usar la comprensión de documentos.
 
 | Característica | Procesamiento de formularios | Comprensión mediante documentos |
 | ------- | ------- | ------- |
-| Tipo de modelo: cuándo usar cada uno | Se usa para formatos de archivo semiestructurados, como PDF con contenido de formularios como facturas u pedidos de compra en los que el diseño y el formato son parecidos.  | Se usa para formatos de archivo semiestructurados, como documentos de Office en los que hay diferencias en el diseño pero de los que se extrae igualmente información parecida. |
+| Tipo de modelo: cuándo usar cada uno | Formatos de archivo estructurados y semiestructurados, por ejemplo, archivos PDF para el contenido de formularios, como facturas o pedidos de compra, donde el diseño y el formato son similares.  | Formatos de archivo no estructurados o semiestructurados, por ejemplo, Office documentos en los que hay diferencias en el diseño, pero aún así se extrae información similar. |
 | Creación de modelos | Modelo creado en generador de IA con un acceso directo desde la biblioteca de documentos de SharePoint.| Modelo creado en SharePoint en un sitio nuevo, el centro de contenido. |
 | Tipo de clasificación| El clasificador configurable se usa para proporcionar sugerencias a los sistemas sobre los datos que se extraen.| Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para asignar la ubicación de documentos en los que se extraen datos.|
 | Ubicaciones | Capacitado para una única biblioteca de documentos.| Se puede aplicar a múltiples bibliotecas.|
-| Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Los archivos de Office están truncados a 64 k caracteres. Los archivos escaneados por OCR están limitados a 20 páginas.|
+| Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Office archivos se truncan con 64 000 caracteres. Los archivos escaneados por OCR están limitados a 20 páginas.|
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
 | Integración de características de cumplimiento con Microsoft Purview Information Protection | Establezca etiquetas de retención publicadas.<br>Se acerca el establecimiento de etiquetas de confidencialidad. | Establezca etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
-| Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| N/D |
+| Gastos transaccionales | Usar créditos de AI Builder.<br>Se incluyen 3,5 000 créditos por cada licencia de SharePoint Syntex al mes.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| No aplicable |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
-| Idiomas admitidos| Compatibilidad con idiomas para más [de 73 idiomas](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
+| Idiomas admitidos| Compatibilidad con idiomas para más de [73 idiomas](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Aprendizaje: mejorar el rendimiento empresarial con AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 

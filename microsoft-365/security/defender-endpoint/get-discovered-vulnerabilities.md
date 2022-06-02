@@ -1,7 +1,7 @@
 ---
 title: Obtener las vulnerabilidades detectadas
 description: Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de dispositivo determinado.
-keywords: apis, api de gráficos, api admitidas, obtener, lista, archivo, información, vulnerabilidades detectadas, api de & administración de vulnerabilidades amenazas, API de Microsoft Defender para Endpoint tvm
+keywords: apis, graph api, api admitidas, get, list, file, information, discovered vulnerabilities, threat & administración de vulnerabilidades api, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,19 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 282c9b33efbb261e4d8cb0180cda0f3bc7e03584
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301899"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840483"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtener las vulnerabilidades detectadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,16 +42,16 @@ ms.locfileid: "61301899"
 Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de dispositivo determinado.
 
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 50 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 50 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación |Vulnerability.Read.All | 'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Vulnerability.Read | 'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
+Aplicación |Vulnerability.Read.All | "Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa) | Vulnerability.Read | "Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -69,7 +71,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Aceptar con la información de vulnerabilidad detectada en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con la información de vulnerabilidad detectada en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -110,5 +112,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Consulte también
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilidades de la organización](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Administración de vulnerabilidades & amenazas basada en riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilidades en la organización](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

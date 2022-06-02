@@ -1,5 +1,5 @@
 ---
-title: Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
+title: Microsoft Purview directivas de alertas y alertas del Administrador de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,15 +17,15 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo crear alertas para actividades en el Administrador de cumplimiento de Microsoft Purview que pueden afectar a la puntuación de cumplimiento.
-ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Obtenga información sobre cómo crear alertas para las actividades de Microsoft Purview Administrador de cumplimiento que pueden afectar a la puntuación de cumplimiento.
+ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231745"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839457"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview directivas de alertas y alertas del Administrador de cumplimiento
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -67,19 +67,19 @@ Para empezar a trabajar con alertas, consulte [Visualización y administración 
 
 En la tabla siguiente se describe qué usuarios pueden crear y editar alertas y directivas de alertas en función de su tipo de rol. Además de tener un rol de Administrador de cumplimiento, los usuarios también necesitan un rol de Azure AD como se indica a continuación:
 
-- El rol **Lector de seguridad** en Azure AD para ver alertas y directivas de alertas
-- El rol **administrador de seguridad** en Azure AD para crear o actualizar directivas de alerta
+- Para ver alertas y directivas de alertas: el rol **Lector de seguridad** en Azure AD
+- Para crear o actualizar directivas de alertas: el **administrador de cumplimiento**, el **administrador de datos de cumplimiento**, el **administrador de seguridad** o el rol **de operador de seguridad** en Azure AD
  
-Obtenga más información sobre [los roles de Azure en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
+Obtenga más información sobre [los roles de Azure en la portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
 | Función | Puede crear y editar directivas | Puede editar alertas | 
 | :------------- | :-------------: | :------------: |
 | **Administración del administrador de cumplimiento**| Sí  | Sí | 
 | **Evaluador del Administrador de cumplimiento**| Sí | Sí | 
-| **Contribución del administrador de cumplimiento**| Sí | Sí | 
-| **Administrador global**| Sí | Sí  | 
+| **Colaborador del Administrador de cumplimiento**| Sí | Sí | 
 | **Lector del Administrador de cumplimiento**| No | No | 
+| **Administrador global**| Sí | Sí | 
 
 Obtenga información sobre cómo [establecer permisos de usuario y asignar roles para el Administrador de cumplimiento](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -105,7 +105,7 @@ Esta es la configuración de la directiva predeterminada:
 
 - El nivel de gravedad de estas alertas es **medio**.
 
-- El administrador global de su organización es el destinatario predeterminado de las notificaciones de alerta.
+- El Administración global de su organización es el destinatario predeterminado de las notificaciones de alerta.
 
 - Puede agregar más destinatarios de alertas siguiendo estos pasos:
     - En la página **Directivas de alerta** , busque la **directiva de alertas predeterminada del Administrador de cumplimiento**.

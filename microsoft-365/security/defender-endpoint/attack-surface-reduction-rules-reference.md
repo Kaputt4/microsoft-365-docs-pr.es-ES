@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772520"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838877"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -48,7 +48,7 @@ En este artículo se proporciona información sobre las reglas de reducción de 
   - Descripciones de reglas
   - Nombres de reglas del sistema de administración de configuración
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 En la tabla siguiente se enumeran los sistemas operativos admitidos para las reglas que se publican actualmente para la disponibilidad general. Las reglas se enumeran en orden alfabético en esta tabla.
 
@@ -199,7 +199,7 @@ La regla **Bloquear abuso de controladores firmados vulnerables explotados** no 
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Intune Nombre: `Block abuse of exploited vulnerable signed drivers` (aún no disponible)
+nombre de Intune:`Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager nombre: todavía no disponible
   

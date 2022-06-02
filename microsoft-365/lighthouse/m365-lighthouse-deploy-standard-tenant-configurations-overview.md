@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre el uso de líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7cdae46105ad225a284bf0ffa8860ad36ffb8691
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647697"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839851"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Información general sobre el uso de líneas base de Microsoft 365 Lighthouse para implementar configuraciones de inquilino estándar 
 
@@ -31,7 +31,7 @@ Puede ver la línea base predeterminada y sus pasos de implementación desde Lig
 
 ## <a name="lighthouse-baseline"></a>Línea base de Lighthouse
 
-Las configuraciones de línea base de Lighthouse están diseñadas para asegurarse de que todos los inquilinos administrados son seguros y compatibles. Seleccione **Líneas base** en el panel de navegación izquierdo para ver la línea base predeterminada que se aplica a todos los inquilinos.  Para ver los pasos de implementación incluidos en la línea base predeterminada, seleccione **Ver línea base** para abrir la página de línea base predeterminada. Seleccione cualquiera de los pasos de implementación para ver los detalles de la implementación y el impacto del usuario.
+Las configuraciones de línea base de Lighthouse están diseñadas para asegurarse de que todos los inquilinos administrados son seguros y compatibles. Seleccione **Líneas base** en el panel de navegación izquierdo para ver la línea base predeterminada que se aplica a todos los inquilinos.  Para ver los pasos de implementación incluidos en la línea base predeterminada, seleccione **Ver línea base** para abrir la página **Línea base predeterminada** . Seleccione cualquiera de los pasos de implementación para ver los detalles de la implementación y el impacto del usuario.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Captura de pantalla de la página Línea base predeterminada.":::
 
@@ -43,7 +43,7 @@ Las configuraciones de línea base de Lighthouse están diseñadas para asegurar
 | Requerir MFA para los usuarios finales | Directiva de acceso condicional que requiere autenticación multifactor para todos los usuarios.  Es necesario para todas las aplicaciones en la nube. Para obtener más información sobre esta línea base, vea [Acceso condicional: Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
 | Bloquear la autenticación heredada | Una directiva de acceso condicional para bloquear la autenticación de cliente heredada. Para obtener más información sobre esta línea base, consulte [Bloquear la autenticación heredada en Azure AD con acceso condicional](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Configuración de la inscripción de dispositivos | Inscripción de dispositivos para permitir que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager. Para ello, configure la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. Para obtener más información sobre esta línea base, consulte Configuración de la [inscripción para dispositivos Windows](/mem/intune/enrollment/windows-enroll). |
-| Configuración Exchange Online Protection y Microsoft Defender para Office 365 | Directiva para aplicar directivas recomendadas contra correo no deseado, antimalware, anti phishing, vínculos seguros y directivas de datos adjuntos seguros a los inquilinos Exchange Online buzones. |
+| Configurar Exchange Online Protection y Microsoft Defender para Office 365 | Directiva para aplicar directivas recomendadas contra correo no deseado, antimalware, anti phishing, vínculos seguros y directivas de datos adjuntos seguros a los inquilinos Exchange Online buzones. |
 | Configuración de Antivirus de Microsoft Defender para Windows 10 y versiones posteriores | Perfil de configuración de dispositivo para dispositivos Windows con valores de Antivirus de Microsoft Defender preconfigurados. Para obtener más información sobre esta línea base, vea [Configurar Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure).|
 | Configuración de Firewall de Microsoft Defender para Windows 10 y versiones posteriores | Una directiva de firewall para ayudar a proteger los dispositivos mediante la prevención del tráfico de red no deseado y no autorizado. Para obtener más información sobre esta línea base, consulte [Procedimientos recomendados para configurar Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configuración de una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores | Una directiva de dispositivo Windows con la configuración preconfigurada para cumplir los requisitos básicos de cumplimiento. Para obtener más información sobre esta línea base, consulte [Acceso condicional: Requerir dispositivo unido a Azure AD híbrido o compatible](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |

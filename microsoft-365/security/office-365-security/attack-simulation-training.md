@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739657"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839763"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -123,7 +123,7 @@ Si selecciona una carga de la lista, los detalles sobre la carga se muestran en 
 
 Si selecciona una carga de la lista haciendo clic en el nombre, un ![icono Enviar una carga útil de prueba.](../../media/m365-cc-sc-create-icon.png) **El botón Enviar una prueba** aparece en la página principal, donde puede enviar una copia del correo electrónico de carga a usted mismo (el usuario que ha iniciado sesión actualmente) para su inspección.
 
-Para crear su propia carga, haga clic en ![el icono Crear una carga.](../../media/m365-cc-sc-create-icon.png) **Cree una carga**. Para obtener más información, consulte [Creación de cargas personalizadas para el entrenamiento de simulación de ataques](attack-simulation-training-payloads.md).
+Para crear su propia carga, haga clic en ![el icono Crear una carga.](../../media/m365-cc-sc-create-icon.png) **Cree una carga**. Para obtener más información, consulte [Creación de cargas personalizadas para el entrenamiento de simulación de ataques](attack-simulation-training-payloads.md#create-payloads).
 
 Cuando termine, haga clic en **Siguiente**.
 

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender cómo el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender afecta a los usuarios y puede obtener información sobre los resultados de simulación y entrenamiento.
 ms.technology: mdo
-ms.openlocfilehash: 72ed46d1676f4abd97ecd4fccfe4ef20d971f0b3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: fb08de05e0a1f31187fc4dd045d0f1ce45db2aea
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649461"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839376"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Ideas e informes para el entrenamiento de simulación de ataques en Defender para Office 365
 
@@ -226,7 +226,7 @@ Si mantiene el puntero sobre un punto de datos del gráfico, se muestran los val
 
 En la tabla de detalles debajo del gráfico se muestra la siguiente información:
 
-- **User**
+- **Usuario**
 - **Recuento de repeticiones**
 - **Tipos de simulación**
 - **Simulaciones**
@@ -306,4 +306,4 @@ En la sección **Acciones recomendadas** de la página de detalles de la simulac
 
 [Creación de una simulación de ataque de suplantación de identidad (phishing)](attack-simulation-training.md)
 
-[crear una carga útil para entrenar a los usuarios](attack-simulation-training-payloads.md)
+[crear una carga útil para entrenar a los usuarios](attack-simulation-training-payloads.md#create-payloads)

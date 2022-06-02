@@ -19,16 +19,16 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418070"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839807"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -195,11 +195,11 @@ Después de seleccionar un mensaje en cuarentena de la lista, las siguientes acc
 
   - No se puede liberar un mensaje al mismo destinatario más de una vez.
   - Solo los destinatarios que no hayan recibido el mensaje aparecerán en la lista de destinatarios potenciales.
-  - Solo los miembros del grupo de **roles Administradores de seguridad** pueden ver y usar **las opciones Enviar el mensaje a Microsoft para mejorar la detección (falso positivo)** y **Permitir mensajes como este** . 
+  - Solo los miembros del grupo de **roles Administradores de seguridad** pueden ver y usar **las opciones Enviar el mensaje a Microsoft para mejorar la detección (falso positivo)** y **Permitir mensajes como este** .
 
 - ![Icono Compartir correo electrónico.](../../media/m365-cc-sc-share-email-icon.png) **Compartir correo electrónico**: en el control flotante que aparece, agregue uno o varios destinatarios para recibir una copia del mensaje. Cuando haya terminado, haga clic en **Compartir**.
 
-Las siguientes acciones están disponibles después de hacer clic en el ![icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png)**Más acciones**:
+Las siguientes acciones están disponibles después de hacer clic en ![el icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones**:
 
 - ![Icono Ver encabezados de mensaje.](../../media/m365-cc-sc-view-message-headers-icon.png) icono Ver encabezados del mensaje **Ver encabezados del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Aparece el control flotante **Encabezado de mensaje** con los vínculos siguientes:
   - **Copiar el encabezado de mensaje**: Haga clic en este vínculo para copiar el encabezado de mensaje (todos los campos de encabezado) en el portapapeles.

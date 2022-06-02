@@ -1,7 +1,7 @@
 ---
 title: Obtener software instalado
 description: Recupera una colección de software instalado relacionado con un identificador de dispositivo determinado.
-keywords: apis, api de gráficos, api admitidas, obtener, lista, archivo, información, inventario de software, software instalado por dispositivo, api de & administración de vulnerabilidades amenazas, API de Tvm de Microsoft Defender para Endpoint
+keywords: api, graph api, api admitidas, get, list, file, information, software inventory, installed software per device, threat & administración de vulnerabilidades api, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a853a346b26d66708f81a1b8479cb7066c29745a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 97aa4a668306c4790dcd42c046ba4bf3a04bcf51
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282855"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840417"
 ---
 # <a name="get-installed-software"></a>Obtener software instalado
 
@@ -28,6 +28,7 @@ ms.locfileid: "61282855"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -42,12 +43,12 @@ Recupera una colección de software instalado relacionado con un identificador d
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación |Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Aplicación |Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -67,7 +68,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con la información de software instalada en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con la información de software instalada en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -103,5 +104,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Consulte también
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Administración de vulnerabilidades & amenazas basada en riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventario de software de vulnerabilidad & amenazas](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

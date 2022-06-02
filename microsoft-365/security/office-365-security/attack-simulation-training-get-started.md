@@ -20,16 +20,16 @@ ms.custom:
 description: Los administradores pueden aprender a usar el entrenamiento de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79c8db9a088484a56e559ab4c3e33d68ebf33380
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415626"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840153"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Comenzar usar el entrenamiento de simulación de ataque en Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
@@ -121,7 +121,7 @@ Para obtener instrucciones paso a paso sobre cómo crear y enviar una nueva simu
 
 ### <a name="create-a-payload"></a>Creación de una carga
 
-Para obtener instrucciones paso a paso sobre cómo crear una carga útil para su uso dentro de una simulación, consulte [Creación de una carga personalizada para el entrenamiento de simulación de ataques](attack-simulation-training-payloads.md).
+Para obtener instrucciones paso a paso sobre cómo crear una carga útil para su uso dentro de una simulación, consulte [Creación de una carga personalizada para el entrenamiento de simulación de ataques](attack-simulation-training-payloads.md#create-payloads).
 
 ### <a name="gaining-insights"></a>Obtención de información
 

@@ -18,16 +18,16 @@ ms.custom: ''
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f09054a4ee57ce7105a7b2daffc65be5b91dc8f6
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144803"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839676"
 ---
 # <a name="user-reported-message-settings"></a>Configuración de mensajes notificados por el usuario
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +40,7 @@ En Microsoft 365 organizaciones con buzones de Exchange Online, puede especifica
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
 - [Herramientas de informes de terceros](#third-party-reporting-tools)
 
-La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador](admin-submission.md). Esta configuración se conocía anteriormente como directiva de envíos de usuarios.
+La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [Administración envío](admin-submission.md). Esta configuración se conocía anteriormente como directiva de envíos de usuarios.
 
   > [!NOTE]
   > Si los informes se han [deshabilitado en Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de los mensajes notificados por el usuario aquí invalidará esa configuración y permitirá a los usuarios informar de los mensajes en Outlook en la Web de nuevo.
@@ -49,17 +49,15 @@ La entrega de mensajes notificados por el usuario a un buzón personalizado en l
 
 Use los artículos siguientes para configurar los requisitos previos necesarios para que los mensajes notificados por el usuario vayan al buzón personalizado:
 
-- Omita el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de intercambio para establecer el nivel de confianza de correo no deseado. Consulte [Uso del EAC para crear una regla de flujo de correo que establezca la SCL de un mensaje](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) para establecer la SCL en **Omitir el filtrado de correo no deseado**.
+- [Identificar el buzón personalizado como buzón de SecOps en la directiva de entrega avanzada](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Cree una directiva antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) que incluya el buzón personalizado donde la purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
-
-- [Cree una directiva contra correo no deseado](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) que incluya el buzón personalizado donde zap para correo no deseado y ZAP para phishing están desactivados (no está seleccionada la sección \>**Purga automática** de **cero horas habilitada (ZAP).**
+- [Cree una directiva antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) para el buzón personalizado donde la purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
 
 Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los usuarios que informan de los mensajes:
 
-- [Cree una directiva de vínculos de Caja fuerte](set-up-safe-links-policies.md) que incluya el buzón personalizado en el que está desactivado el examen de vínculos de Caja fuerte (**seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en** la sección \> **De mensajes desactivada**).
+- [Cree una directiva de vínculos de Caja fuerte](set-up-safe-links-policies.md) para el buzón personalizado en el que esté desactivado el examen de vínculos de Caja fuerte (**seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en** la sección \> **De mensajes Desactivada**).
 
-- [Cree una directiva de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md) que incluya el buzón personalizado donde está desactivado el examen de datos adjuntos Caja fuerte (Caja fuerte sección \>**Respuesta de malware desconocida de datos adjuntos** **desactivada**).
+- [Cree una directiva de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md) para el buzón personalizado en el que el examen de datos adjuntos de Caja fuerte esté desactivado (Caja fuerte sección \>**Respuesta de malware desconocida de datos adjuntos** **desactivada**).
 
 Después de comprobar que el buzón cumple todos los requisitos previos aplicables, puede usar los procedimientos de este artículo para configurar el buzón de correo de envíos de usuario.
 
