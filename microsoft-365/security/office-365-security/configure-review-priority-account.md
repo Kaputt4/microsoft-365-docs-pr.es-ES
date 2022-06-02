@@ -17,16 +17,16 @@ ms.custom: ''
 description: Obtenga información sobre cómo identificar personas críticas en una organización y agregar la etiqueta de cuenta de prioridad para proporcionarles protección adicional.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc37f1efa5eb633bc3b1b711302f9393d655a339
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891846"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842346"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -52,7 +52,7 @@ La protección de la cuenta de prioridad está activada de forma predeterminada 
 
 ### <a name="enable-the-priority-account-tag"></a>Habilitación de la etiqueta de cuenta de prioridad
 
-Microsoft Defender para Office 365 admite cuentas de prioridad como etiquetas que se pueden usar como filtros en alertas, informes e investigaciones.
+Microsoft Defender para Office 365 admite cuentas de prioridad como etiquetas que se pueden usar como filtros en alertas, informes, incidentes, etc.
 
 Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](user-tags.md).
 
@@ -60,9 +60,17 @@ Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defe
 
 Los efectos de la protección de la cuenta de prioridad son visibles en las siguientes características:
 
-- Informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
-- [Explorador de amenazas](threat-explorer.md)
-- Página de [la entidad Correo electrónico](mdo-email-entity-page.md)
+- [Alertas](alerts.md)
+- [Directivas de alertas personalizadas](../../compliance/alert-policies.md#viewing-alerts)
+- [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
+- [Informe de usuario en peligro](view-email-security-reports.md#compromised-users-report)
+- [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
+- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
+- [Informe de remitentes y destinatarios principales](view-email-security-reports.md#top-senders-and-recipients-report)
+- [Simulación de ataque](attack-simulation-training.md#target-users)
+- [Vistas de campañas](campaigns.md)
+- [Administración y envíos de usuarios](admin-submission.md)
+- [Cuarentena](quarantine.md)
 
 ### <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 

@@ -1,5 +1,5 @@
 ---
-title: Acerca del rol de administrador de Exchange Online
+title: Acerca del rol de administrador de Exchange
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,21 +21,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange Online administradores administran el correo electrónico y los buzones de correo de la organización y, por ejemplo, recuperan los elementos eliminados en el buzón de un usuario.
-ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Exchange administradores administran el correo electrónico y los buzones de correo de la organización y, por ejemplo, recuperan los elementos eliminados en el buzón de un usuario.
+ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467106"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842265"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
+# <a name="about-the-exchange-administrator-role"></a>Acerca del rol de administrador de Exchange
 
-Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de correo de su organización desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Para ello, debe asignarlos al rol de administrador de Exchange.
+Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de correo de su organización desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Para ello, asígnelos al rol de administrador de Exchange.
   
- **Sugerencia**: Cuando asigne a alguien al rol de administrador de Exchange, asígnele también el rol de administrador de servicio. De esta forma, podrá ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y notificaciones de cambio y lanzamiento.
+> [!TIP]
+> Al asignar a alguien al rol de administrador de Exchange, se recomienda asignarlo al rol Administrador de soporte técnico de servicio. De esta forma, podrá ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y notificaciones de cambio y lanzamiento.
 
-Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se asignan al rol de administrador Exchange:
+Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se les asigna el rol de administrador de Exchange:
   
 - [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

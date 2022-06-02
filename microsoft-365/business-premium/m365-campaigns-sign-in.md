@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Iniciar sesión en Microsoft 365. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c0decc886b30ba63d67e7927c0655e1980a47a57
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099859"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839588"
 ---
 # <a name="sign-in-to-microsoft-365-business-premium"></a>Iniciar sesión en Microsoft 365 Empresa Premium
 
@@ -40,7 +40,7 @@ Si se registró en Microsoft 365 para campañas (o Microsoft 365 Empresa Premium
 
 2. En un explorador web, vaya al Centro de administración de Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. Actualizar su nombre de usuario y contraseña Seleccione **Iniciar sesión**.
+3. Escriba su nombre de usuario y contraseña y, a continuación, seleccione **Iniciar sesión**.
 
 4. En la parte superior derecha de la página, busque el control **Vista preliminar activada**. Selecciona **Vista preliminar activada** para que puedas usar todos los controles descritos en [Incremente su protección para la campaña](m365-campaigns-security-overview.md).
 
@@ -48,7 +48,7 @@ Si se registró en Microsoft 365 para campañas (o Microsoft 365 Empresa Premium
 
 Los usuarios que se han agregado a su suscripción de Microsoft 365 para Campañas (o Microsoft 365 Empresa Premium) pueden iniciar sesión siguiendo estos pasos:
 
-1. Vaya a <a href="https://office.com" target="_blank">https://Office.com</a>.
+1. Vaya a <a href="https://office.com" target="_blank">https://office.com</a>.
 
 2. Inicie sesión con el nombre de usuario y la contraseña de la cuenta. Los usuarios tendrán esta información en el correo electrónico que deberían haber recibido cuando se agregaron como usuarios. Si no encuentra el correo electrónico, vea [He compartido una invitación por correo electrónico, pero el usuario no ha recibido el correo electrónico](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 

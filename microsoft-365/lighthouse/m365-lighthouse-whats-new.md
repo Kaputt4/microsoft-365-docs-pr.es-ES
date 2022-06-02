@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 917c9bcf3629385d1440acc5205507b378da274b
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840518"
+ms.locfileid: "65842278"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ Para más información, consulte [Introducción a los permisos en Microsoft 365 
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Business acciones de integración y administración
 
-En función de los comentarios de los usuarios, hemos integrado la edición Windows 365 Business en Microsoft 365 Lighthouse. Esto le ayudará a administrar y supervisar todos los equipos en la nube de sus clientes desde un solo lugar. 
+En función de los comentarios de los usuarios, hemos integrado Windows 365 Business en Microsoft 365 Lighthouse. Esto le ayudará a administrar y supervisar todos los equipos en la nube de sus clientes desde una sola ubicación. 
 
 Además de la integración con Windows 365 Business pc en la nube en Microsoft 365 Lighthouse, ahora puede realizar las siguientes acciones de administración:
 
@@ -65,13 +65,13 @@ Para más información sobre las nuevas características, consulte [Información
 
 ### <a name="microsoft-365-lighthouse-partner-amendment"></a>Microsoft 365 Lighthouse enmienda de asociados
 
-Ahora que Microsoft 365 Lighthouse está en disponibilidad general, necesitamos que nuestros asociados actuales firmen una modificación actualizada Microsoft 365 Lighthouse partner. Se pedirá a todos los asociados Microsoft 365 Lighthouse que se suscribieron durante el período de versión preliminar que completen este nuevo contrato en las próximas semanas. La finalización requerirá derechos de administrador global en el inquilino del asociado y debe completarse en un plazo de 90 días para seguir accediendo al portal de Microsoft 365 Lighthouse.
+Ahora que Microsoft 365 Lighthouse está en disponibilidad general, necesitamos que nuestros asociados actuales firmen una modificación actualizada Microsoft 365 Lighthouse partner. A todos los Microsoft 365 Lighthouse asociados que se registraron durante el período de versión preliminar se les pedirá que completen este nuevo contrato en las próximas semanas. La finalización requerirá derechos de administrador global en el inquilino del asociado y debe completarse en un plazo de 90 días para seguir accediendo al portal de Microsoft 365 Lighthouse.
 
 ## <a name="february-2022"></a>Febrero de 2022
 
 ### <a name="granular-delegated-access-permissions-gdap-roles"></a>Roles de permisos de acceso delegado pormenorizados (GDAP)
 
-Microsoft 365 Lighthouse ahora incluye la funcionalidad para que los CSP usen roles de permisos de acceso delegado pormenorizados (GDAP). Con la actualización más reciente, los MSP pueden aprovechar los roles de GDAP para sus técnicos que habilitan el principio de acceso con privilegios mínimos en Microsoft 365 Lighthouse. Esta funcionalidad reduce los riesgos inherentes a los amplios permisos del rol Permisos de acceso delegado (DAP) del agente de Administración habilitando controles pormenorizados sobre los datos y la configuración de los clientes con los que cada técnico podrá trabajar.
+Microsoft 365 Lighthouse ahora incluye la funcionalidad para que los CSP usen roles de privilegios de Administración delegados granulares (GDAP). Con la actualización más reciente, los MSP pueden aprovechar los roles de GDAP para sus técnicos que habilitan el principio de acceso con privilegios mínimos en Microsoft 365 Lighthouse. Esta funcionalidad reduce los riesgos inherentes a los amplios permisos del rol Permisos de acceso delegado (DAP) del agente de Administración habilitando controles pormenorizados sobre los datos y la configuración de los clientes con los que cada técnico podrá trabajar.
 
 Para más información sobre GDAP en Microsoft 365 Lighthouse, consulte [Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
@@ -83,11 +83,11 @@ Como parte del paso de línea base de cumplimiento de dispositivos, hemos agrega
 
 Microsoft 365 Lighthouse ahora puede probar las configuraciones de inquilino para los pasos de implementación con directivas de acceso condicional.  
 
-Esta nueva funcionalidad funciona detectando las directivas existentes dentro de los inquilinos que administra y comparándolas con el plan de implementación. Microsoft 365 Lighthouse, a continuación, proporciona designaciones de estado para los pasos de implementación y los procesos de paso de implementación para ayudarle a comprender qué procesos de implementación ya se han completado, cuáles deben abordarse y dónde la configuración prescrita por el plan de implementación es igual, falta o entra en conflicto con la configuración incluida en las directivas existentes. Conocer esta información hace que la identificación, priorización y resolución de conflictos de directivas sea más rápida, fácil y eficaz.
+Esta nueva funcionalidad detecta las directivas existentes dentro de los inquilinos del cliente que administra y las compara con el plan de implementación. Microsoft 365 Lighthouse, a continuación, proporciona designaciones de estado para los pasos de implementación y los procesos de paso de implementación para ayudarle a comprender qué procesos de implementación ya se han completado, cuáles deben abordarse y dónde la configuración prescrita por el plan de implementación es igual, falta o entra en conflicto con la configuración incluida en las directivas existentes. Conocer esta información hace que la identificación, priorización y resolución de conflictos de directivas sea más rápida, fácil y eficaz.
 
 ### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Paso de implementación para configurar Firewall de Microsoft Defender
 
-Microsoft 365 Lighthouse ha agregado el paso Configurar Firewall de Microsoft Defender implementación a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de su inquilino mediante la configuración predeterminada del firewall para dispositivos Windows 10 (y versiones posteriores). Firewall de Microsoft Defender bloquea el tráfico de red no autorizado que entra o sale de los dispositivos del inquilino y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de Firewall de Microsoft Defender.
+Microsoft 365 Lighthouse ha agregado el paso Configurar Firewall de Microsoft Defender implementación a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de inquilino del cliente a través de la configuración de firewall predeterminada para dispositivos Windows 10 (y versiones posteriores). Firewall de Microsoft Defender bloquea el tráfico de red no autorizado que fluye dentro o fuera de los dispositivos de inquilino del cliente y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de Firewall de Microsoft Defender.
 
 Firewall de Microsoft Defender está activado de forma predeterminada en Windows 10 (y versiones posteriores). Si el inquilino del cliente no tiene esto configurado, siga estos pasos:
 
@@ -102,19 +102,19 @@ Estamos haciendo posible administrar más clientes en Microsoft 365 Lighthouse m
 
 Para obtener más información, vea [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-### <a name="support-for-advisor-customers"></a>Soporte técnico para clientes Asesor
+### <a name="support-for-advisor-customers"></a>Soporte técnico para clientes de Advisor
 
-Hemos cambiado los requisitos de incorporación para permitir que los inquilinos de clientes existentes con relaciones de Asesor se incorporen a Microsoft 365 Lighthouse. Los clientes con contratos de revendedor y asesor ahora pueden estar en Microsoft 365 Lighthouse si cumplen los requisitos de permisos de acceso delegado, tienen las licencias necesarias y no superan el número máximo de usuarios.
+Hemos cambiado los requisitos de incorporación para permitir que los inquilinos de clientes existentes con relaciones de advisor se incorporen a Microsoft 365 Lighthouse. Los clientes con contratos de revendedor y asesor ahora pueden estar en Microsoft 365 Lighthouse si cumplen los requisitos de permisos de acceso delegado, tienen las licencias necesarias y no superan el número máximo de usuarios.
 
 Para obtener más información, vea [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ## <a name="january-2022"></a>Enero de 2022
 
-### <a name="capability-to-review-audit-logs-in-microsoft-365-lighthouse"></a>Funcionalidad para revisar los registros de auditoría en Microsoft 365 Lighthouse
+### <a name="capability-to-view-audit-logs-in-microsoft-365-lighthouse"></a>Funcionalidad para ver los registros de auditoría en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse ahora incluye la capacidad de examinar los registros de auditoría. Puede revisar las acciones anteriores para encontrar configuraciones incorrectas y acciones de riesgo para la corrección, el proceso de soporte técnico y la investigación de seguridad, entrenar a los empleados y cumplir los requisitos de cumplimiento y auditoría. Con la actualización más reciente, puede hacer lo siguiente:
+Microsoft 365 Lighthouse ahora incluye la capacidad de ver los registros de auditoría. Puede revisar las acciones anteriores para encontrar configuraciones incorrectas y acciones de riesgo para la corrección, el proceso de soporte técnico y la investigación de seguridad, entrenar a los empleados y cumplir los requisitos de cumplimiento y auditoría. Con la actualización más reciente, puede hacer lo siguiente:
 
-- Vea los registros de auditoría para ver todas las acciones realizadas dentro de Microsoft 365 Lighthouse incluido lo que cambió en qué inquilinos de clientes, cuándo y por quién.
+- Vea los registros de auditoría para ver todas las acciones realizadas dentro de Microsoft 365 Lighthouse, incluido lo que cambió en qué inquilino del cliente, cuándo se cambió y quién lo cambió.
 - Busque y filtre los registros de auditoría para encontrar información específica.
 - Exporte los registros para que pueda analizarlos y conservarlos.
  
@@ -124,7 +124,7 @@ En el panel de navegación izquierdo de Microsoft 365 Lighthouse, seleccione **R
 
 ### <a name="microsoft-365-services-usage-data"></a>datos de uso de servicios de Microsoft 365
 
-Ahora puede ver los datos de uso de los servicios de Microsoft 365 desde Microsoft 365 Lighthouse. Comprender cómo los clientes usan sus servicios de Microsoft 365 es fundamental para ayudarles a sacar el máximo partido a sus inversiones en TI. En lugar de usar varios recursos para ver información en los distintos servicios de productividad, seguridad y cumplimiento de los clientes, Microsoft 365 Lighthouse los agrega en una vista sencilla y eficaz.  
+Ahora puede ver los datos de uso de los servicios de Microsoft 365 desde dentro de Microsoft 365 Lighthouse. Comprender cómo los clientes usan sus servicios de Microsoft 365 es fundamental para ayudarles a sacar el máximo partido a sus inversiones en TI. En lugar de usar varios recursos para ver información en los distintos servicios de productividad, seguridad y cumplimiento de los clientes, Microsoft 365 Lighthouse los agrega en una vista sencilla y eficaz.  
 
 Esta información puede ayudar a informar a los clientes y ofrecer más valor a los clientes, ya que le permite ayudarles a comprender qué servicios usan activamente sus usuarios y dónde pueden haber oportunidades para mejorar su seguridad o productividad. 
 
@@ -154,13 +154,13 @@ Ahora puede ver y comprender fácilmente los motivos del riesgo de un usuario de
 
 ### <a name="capability-to-provide-feedback-on-microsoft-365-lighthouse"></a>Funcionalidad para proporcionar comentarios sobre Microsoft 365 Lighthouse
 
-Sus comentarios son importantes y son importantes para nosotros, por lo que hemos agregado una nueva funcionalidad de comentarios que en ocasiones (no más de una vez al mes) le pedirá que proporcione comentarios. También puede proporcionar comentarios en cualquier momento seleccionando el icono Comentarios en la esquina superior derecha de Microsoft 365 Lighthouse.
+Sus comentarios son importantes y son importantes para nosotros, por lo que hemos agregado una nueva funcionalidad de comentarios que en ocasiones (no más de una vez al mes) le pedirá que proporcione comentarios. También puede proporcionar comentarios en cualquier momento seleccionando el icono de comentarios en la esquina superior derecha de Microsoft 365 Lighthouse.
 
 ## <a name="september-2021"></a>Septiembre de 2021
 
 ### <a name="tenant-filter-changes"></a>Cambios en el filtro de inquilinos
 
-Hemos realizado algunos cambios en la experiencia de filtrado de inquilinos para ayudarle a ver y administrar rápidamente inquilinos y etiquetas desde cualquier página dentro de Microsoft 365 Lighthouse. Seleccione el filtro Inquilinos en la parte superior de cualquier página y, a continuación, examine o escriba el nombre de inquilino o etiqueta por el que desea filtrar.
+Hemos realizado algunos cambios en la experiencia de filtrado de inquilinos para ayudarle a ver y administrar rápidamente inquilinos y etiquetas desde cualquier página dentro de Microsoft 365 Lighthouse. Seleccione el filtro **Inquilinos** en la parte superior de cualquier página y, a continuación, examine o escriba el nombre de inquilino o etiqueta por el que desea filtrar.
 
 ## <a name="august-2021"></a>Agosto de 2021
 
@@ -194,7 +194,7 @@ Ahora puede crear y aplicar etiquetas personalizadas a los inquilinos del client
 
 ### <a name="baselines-to-standardize-your-customer-tenant-deployments"></a>Líneas base para estandarizar las implementaciones de inquilinos del cliente
 
-Con la nueva característica de líneas base, ahora puede implementar configuraciones estándar relacionadas con la protección de los usuarios, dispositivos y datos del inquilino del cliente. La línea base predeterminada contiene actualmente los siguientes pasos de implementación (con más información próximamente): 
+Con la nueva característica de líneas base, ahora puede implementar configuraciones estándar para ayudar a proteger a los usuarios, dispositivos y datos en los inquilinos del cliente. La línea base predeterminada contiene actualmente los siguientes pasos de implementación (con más información próximamente): 
 
 - Requerir MFA para administradores 
 - Requerir MFA para los usuarios 
