@@ -561,7 +561,7 @@
               href: view-the-dlp-reports.md
             - name: Crear una consulta para buscar datos confidenciales almacenados en los sitios
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange
+            - name: Cómo funciona DLP entre el portal de cumplimiento Microsoft Purview y el Centro de administración de Exchange
               href: how-dlp-works-between-admin-centers.md
             - name: Configurar y ver alertas para las directivas DLP (versión preliminar)
               href: dlp-configure-view-alerts-policies.md

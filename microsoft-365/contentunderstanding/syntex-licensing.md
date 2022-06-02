@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 497952498e3ead2166f7cda11f050d929e6b6b9c
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054925"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839338"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 
-Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario de Syntex debe tener una licencia. Si cancela su suscripción de SharePoint Syntex en una fecha futura (o la versión de prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o de procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
+Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario de SharePoint Syntex debe tener una licencia. Si cancela su suscripción de SharePoint Syntex en una fecha futura (o la versión de prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o de procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
  
 > [!NOTE] 
 > SharePoint Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
@@ -39,12 +39,12 @@ Las siguientes tareas requieren una [licencia de SharePoint Syntex](https://www.
 
 A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos.
  
-## <a name="cost-of-running-models"></a>El coste de la ejecución de modelos
+## <a name="cost-of-training-and-running-models"></a>Costo de entrenamiento y ejecución de modelos
  
-El coste de ejecutar modelos de comprensión mediante documentos se incluye en el coste de una licencia de SharePoint Syntex. Sin embargo, los modelos de procesamiento de formularios usan las capacidades de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
- 
-Si tiene 300 o más licencias de SharePoint Syntex en su organización, se le asignará un millón de créditos del Generador de IA. La capacidad se renueva cada mes si mantiene el mínimo de 300 licencias (los créditos no usados en un mes no se traspasan al siguiente). Si tiene menos de 300 licencias, debe comprar créditos de AI Builder para poder utilizar el procesamiento de formularios.
- 
+El costo de entrenar y ejecutar modelos de comprensión de documentos se incluye en el costo de una licencia de SharePoint Syntex. Sin embargo, los modelos de procesamiento de formularios usan las capacidades de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
+
+Para cada licencia de SharePoint Syntex, se le asignan 3 500 créditos del Generador de IA por licencia, por mes agrupados en el nivel de inquilino, con una asignación máxima de 1 millón de créditos al mes. Esta asignación se renueva cada mes para cada licencia activa de SharePoint Syntex. (Los créditos no usados no se acumulan de mes a mes). 
+
 Puede estimar la capacidad del Generador de IA que lo hace adecuado para usted con la calculadora del [Generador de IA](https://powerapps.microsoft.com/ai-builder-calculator).
 
 Si planea utilizar un entorno de Power Platform personalizado, debe [asignar créditos a ese entorno](/power-platform/admin/capacity-add-on).
