@@ -1,5 +1,5 @@
 ---
-title: Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión
+title: Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 description: Use el Microsoft Defender para punto de conexión modo de solución de problemas para solucionar diversos problemas antivirus.
 keywords: antivirus, solución de problemas, modo de solución de problemas, protección contra alteraciones, compatibilidad
 search.product: eADQiWindows 10XVcnh
@@ -17,22 +17,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b62ed508640fcf9523c768d2af8e038e4d269e85
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874117"
 ---
-# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión
+# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
+> [!IMPORTANT]
+> Algunas informaciones se refieren a productos publicados previamente que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
 
@@ -46,7 +48,7 @@ Si desea instalar una aplicación pero recibe un mensaje de error que indica que
 
 3. Iniciar monitor de procesos (ProcMon). Consulte los pasos descritos en [Solución de problemas de rendimiento relacionados con la protección en tiempo real](troubleshoot-performance-issues.md).  
 
-4. Vaya a **Windows** **securityThreat** >  & virus **protectionManage** >  **settingsTamper** >  **protectionOff** > .  
+4. Vaya a **Windows seguridad** > **Protección contra amenazas & virus** > **Administrar configuración** > **Protección contra alteraciones** > **desactivada**.  
 
 5. Inicie un símbolo del sistema de PowerShell con privilegios elevados y desactive RTP. 
 
@@ -59,7 +61,7 @@ Si desea instalar una aplicación pero recibe un mensaje de error que indica que
 
 A veces, durante un examen programado, MsMpEng.exe puede consumir una CPU elevada.
 
-1. Vaya a **la pestaña Administrador** >  de **tareasDetails** para confirmar que MsMpEng.exe es el motivo del uso elevado de la CPU. Compruebe también si hay un examen programado en curso.
+1. Vaya a la pestaña **Detalles** **del Administrador** >  de tareas para confirmar que MsMpEng.exe es el motivo del uso elevado de cpu. Compruebe también si hay un examen programado en curso.
 
 2. Ejecute ProcMon durante el pico de CPU durante unos 5 minutos y, a continuación, revise el registro de ProcMon para obtener pistas. 
 

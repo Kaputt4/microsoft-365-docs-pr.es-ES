@@ -1,5 +1,5 @@
 ---
-title: Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión
+title: Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 description: Active el modo de solución de problemas de Microsoft Defender para punto de conexión para solucionar varios problemas antivirus.
 keywords: antivirus, solución de problemas, modo de solución de problemas, protección contra alteraciones, compatibilidad
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07ebfc55df3a03d3447e12f540b7c200de16ae51
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 624dbfe677240dd3c16e4d0f59204971f29504b0
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872642"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-> [!NOTE]
-> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+>¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+> [!IMPORTANT]
+> Algunas informaciones se refieren a productos publicados previamente que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
 
@@ -82,7 +85,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 - Dispositivo que ejecuta Windows 10 (versión 19044.1618 o posterior), Windows 11, Windows Server 2019 o Windows Server 2022.
 
-  Semestre/Redstone|Versión del sistema operativo|Versión
+  Semestre/Redstone|Versión del sistema operativo|Liberar
   :---|:---|:---
   21H2/SV1|>=22000.593|[KB5011563: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)

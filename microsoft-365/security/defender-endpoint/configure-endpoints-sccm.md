@@ -1,7 +1,7 @@
 ---
-title: Incorporación Windows dispositivos con Configuration Manager
-description: Use Configuration Manager para implementar el paquete de configuración en dispositivos de modo que se incorpore al servicio Defender for Endpoint.
-keywords: incorporar dispositivos con sccm, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
+title: Incorporación de dispositivos Windows mediante Configuration Manager
+description: Use Configuration Manager para implementar el paquete de configuración en dispositivos de modo que se incorporen al servicio Defender para punto de conexión.
+keywords: incorporación de dispositivos mediante sccm, administración de dispositivos, configuración de dispositivos Microsoft Defender para punto de conexión
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: d60d01bd2a77d992110f85967196390f3dceae3d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873718"
 ---
-# <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación Windows dispositivos con Configuration Manager
+# <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación de dispositivos Windows mediante Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,41 +35,41 @@ ms.locfileid: "64471921"
 - Microsoft Endpoint Configuration Manager rama actual
 - Administrador de configuración de System Center 2012 R2
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 
-Puede usar Configuration Manager para incorporar puntos de conexión al servicio de Microsoft Defender para endpoints. 
+Puede usar Configuration Manager para incorporar puntos de conexión al servicio Microsoft Defender para punto de conexión. 
 
-Hay varias opciones que puede usar para incorporar dispositivos con Configuration Manager:
-- [Incorporar dispositivos con System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+Hay varias opciones que puede usar para incorporar dispositivos mediante Configuration Manager:
+- [Incorporación de dispositivos mediante System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [Asociación de inquilinos](/mem/configmgr/tenant-attach/)
 
 
 
-For Windows Server 2012 R2 and Windows Server 2016: after completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
+Para Windows Server 2012 R2 y Windows Server 2016: después de completar los pasos de incorporación, deberá [configurar y actualizar System Center Endpoint Protection clientes](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) ). Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
+> Defender para punto de conexión no admite la incorporación durante la fase [de experiencia rápida (OOBE).](/windows-hardware/test/assessments/out-of-box-experience) Asegúrese de que los usuarios completan OOBE después de ejecutar Windows instalación o actualización.
 >
-> Ten en cuenta que es posible crear una regla de detección en una aplicación de Configuration Manager para comprobar continuamente si se ha incorporado un dispositivo. Una aplicación es un tipo diferente de objeto que un paquete y un programa.
-> Si un dispositivo aún no está incorporado (debido a la finalización de OOBE pendiente o a cualquier otro motivo), Configuration Manager volverá a intentar incorporar el dispositivo hasta que la regla detecte el cambio de estado.
+> Tenga en cuenta que es posible crear una regla de detección en una aplicación Configuration Manager para comprobar continuamente si se ha incorporado un dispositivo. Una aplicación es un tipo de objeto diferente que un paquete y un programa.
+> Si un dispositivo aún no está incorporado (debido a la finalización de OOBE pendiente o por cualquier otro motivo), Configuration Manager volverá a intentar incorporarlo hasta que la regla detecte el cambio de estado.
 >
-> Este comportamiento se puede lograr mediante la creación de una comprobación de regla de detección si el valor del Registro "OnboardingState" (de tipo REG_DWORD) = 1.
+> Este comportamiento se puede realizar mediante la creación de una regla de detección que compruebe si el valor del Registro "OnboardingState" (de tipo REG_DWORD) = 1.
 > Este valor del Registro se encuentra en "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-Para obtener más información, vea [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+Para obtener más información, vea [Configurar métodos de detección en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
 ### <a name="configure-sample-collection-settings"></a>Configuración de la colección de ejemplo
 
-Para cada dispositivo, puedes establecer un valor de configuración para especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender para enviar un archivo para un análisis profundo.
+Para cada dispositivo, puede establecer un valor de configuración para indicar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender para enviar un archivo para un análisis profundo.
 
 > [!NOTE]
-> Estas opciones de configuración normalmente se realizan a través de Configuration Manager.
+> Normalmente, estas opciones de configuración se realizan a través de Configuration Manager.
 
-Puedes establecer una regla de cumplimiento para el elemento de configuración en Configuration Manager para cambiar la configuración de recurso compartido de ejemplo en un dispositivo.
+Puede establecer una regla de cumplimiento para el elemento de configuración en Configuration Manager para cambiar la configuración del recurso compartido de ejemplo en un dispositivo.
 
-Esta regla debe ser un elemento de *configuración* de regla de cumplimiento corrector que establece el valor de una clave del Registro en dispositivos dirigidos para asegurarse de que son quejas.
+Esta regla debe *ser un elemento* de configuración de regla de cumplimiento que establezca el valor de una clave del Registro en los dispositivos de destino para asegurarse de que son quejas.
 
-La configuración se establece mediante la siguiente entrada de clave del Registro:
+La configuración se establece a través de la siguiente entrada de clave del Registro:
 
 ```text
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
@@ -77,26 +77,26 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Donde Tipo de clave es un D-WORD. Los posibles valores son:
+Donde Tipo de clave es D-WORD. Los posibles valores son:
 
-- 0: No permite el uso compartido de muestras desde este dispositivo
-- 1: Permite compartir todos los tipos de archivo desde este dispositivo
+- 0: No permite el uso compartido de ejemplos desde este dispositivo
+- 1: Permite el uso compartido de todos los tipos de archivo de este dispositivo
 
 El valor predeterminado en caso de que la clave del Registro no exista es 1.
 
-Para obtener más información sobre System Center Configuration Manager cumplimiento normativo, vea Introducción a la configuración de [cumplimiento en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Para obtener más información sobre el cumplimiento de System Center Configuration Manager, consulte [Introducción a la configuración de cumplimiento en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas
 
-Después de incorporar dispositivos al servicio, es importante aprovechar las capacidades de protección contra amenazas incluidas al habilitarlos con las siguientes opciones de configuración recomendadas.
+Después de incorporar dispositivos al servicio, es importante aprovechar las funcionalidades de protección contra amenazas incluidas al habilitarlos con las siguientes opciones de configuración recomendadas.
 
-### <a name="device-collection-configuration"></a>Configuración de la colección de dispositivos
+### <a name="device-collection-configuration"></a>Configuración de recopilación de dispositivos
 
-Si usa Endpoint Configuration Manager, versión 2002 o posterior, puede ampliar la implementación para incluir servidores o clientes de nivel inferior.
+Si usa endpoint Configuration Manager, versión 2002 o posterior, puede optar por ampliar la implementación para incluir servidores o clientes de nivel inferior.
 
 ### <a name="next-generation-protection-configuration"></a>Configuración de protección de próxima generación
 
-Se recomiendan las siguientes opciones de configuración:
+Se recomiendan los siguientes valores de configuración:
 
 #### <a name="scan"></a>Examinar
 
@@ -104,91 +104,91 @@ Se recomiendan las siguientes opciones de configuración:
 
 #### <a name="real-time-protection"></a>Protección en tiempo real
 
-- Habilitar supervisión de comportamiento: Sí
+- Habilitación de la supervisión del comportamiento: sí
 - Habilitar la protección contra aplicaciones potencialmente no deseadas en la descarga y antes de la instalación: Sí
 
 #### <a name="cloud-protection-service"></a>Servicio de protección en la nube
 
-- Tipo de pertenencia al Servicio de protección en la nube: pertenencia avanzada
+- Tipo de pertenencia de Cloud Protection Service: pertenencia avanzada
 
 #### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
 Configure todas las reglas disponibles en Auditar.
 
 > [!NOTE]
-> El bloqueo de estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguros para activarse y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
+> Bloquear estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguras de activar y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
 
 #### <a name="network-protection"></a>Protección de red
 
-Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegúrese de que ha instalado la actualización de la plataforma antimalware, que se puede obtener desde la [página de soporte técnico](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegúrese de que ha instalado la actualización de la plataforma antimalware, que se puede obtener de la [página de soporte técnico](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
 #### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-Habilite la característica en modo auditoría durante al menos 30 días. Después de este período, revise las detecciones y cree una lista de aplicaciones que puedan escribir en directorios protegidos.
+Habilite la característica en modo de auditoría durante al menos 30 días. Después de este período, revise las detecciones y cree una lista de aplicaciones que pueden escribir en directorios protegidos.
 
-Para obtener más información, vea [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
+Para obtener más información, consulte [Evaluación del acceso controlado a carpetas](evaluate-controlled-folder-access.md).
 
-## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecución de una prueba de detección para comprobar la incorporación
 
-Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md).
+Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).
 
-## <a name="offboard-devices-using-configuration-manager"></a>Dispositivos offboard con Configuration Manager
+## <a name="offboard-devices-using-configuration-manager"></a>Dispositivos fuera de la placa con Configuration Manager
 
-Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
+Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
 > [!NOTE]
-> Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
+> Las directivas de incorporación y retirada no deben implementarse en el mismo dispositivo al mismo tiempo; de lo contrario, esto provocará colisiones imprevisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Dispositivos offboard con Microsoft Endpoint Manager rama actual
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Dispositivos fuera del panel con Microsoft Endpoint Manager rama actual
 
-Si usa una Microsoft Endpoint Manager actual, vea [Crear un archivo de configuración de offboarding](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+Si usa Microsoft Endpoint Manager rama actual, consulte [Creación de un archivo de configuración de offboarding](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center Configuration Manager de 2012 R2
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center 2012 R2 Configuration Manager
 
-1. Obtener el paquete de offboarding desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
-    1. En el panel de navegación, seleccione **Configuración** \> Desaborde de administración de **dispositivos** \> **de puntos de** \>**conexión**.  
+1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+    1. En el panel de navegación, seleccione **Configuración** \> **Endpoints** \> **Device management** \>**Offboarding (Offboarding administración de dispositivos**).  
     1. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    1. En el **campo Método de** implementación, seleccione **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    1. Seleccione **Descargar paquete** y guarde el .zip archivo.
+    1. En el campo **Método de implementación**, seleccione **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    1. Seleccione **Descargar paquete** y guarde el archivo .zip.
 
-2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que puedan acceder los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)).
+3. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas de System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)).
 
    Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
 > [!IMPORTANT]
-> Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
+> La retirada hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que haya tenido, se conservarán durante un máximo de 6 meses.
 
-## <a name="monitor-device-configuration"></a>Supervisar la configuración del dispositivo
+## <a name="monitor-device-configuration"></a>Supervisión de la configuración del dispositivo
 
-Si usa la rama Microsoft Endpoint Manager, use el panel integrado de Defender para endpoint en la consola de Configuration Manager. Para obtener más información, vea [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+Si usa Microsoft Endpoint Manager rama actual, use el panel integrado de Defender para punto de conexión en la consola de Configuration Manager. Para obtener más información, consulte [Defender para punto de conexión: supervisión](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si usa System Center Configuration Manager de 2012 R2, la supervisión consta de dos partes:
+Si usa System Center 2012 R2 Configuration Manager, la supervisión consta de dos partes:
 
-1. Confirmar que el paquete de configuración se ha implementado correctamente y se está ejecutando (o se ha ejecutado correctamente) en los dispositivos de la red.
+1. Confirmación de que el paquete de configuración se ha implementado correctamente y se está ejecutando (o se ha ejecutado correctamente) en los dispositivos de la red.
 
-2. Comprobar que los dispositivos son compatibles con el servicio Defender for Endpoint (esto garantiza que el dispositivo pueda completar el proceso de incorporación y pueda seguir informando de los datos al servicio).
+2. Comprobar que los dispositivos son compatibles con el servicio Defender para punto de conexión (esto garantiza que el dispositivo puede completar el proceso de incorporación y puede seguir notificando datos al servicio).
 
-### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>Confirmar que el paquete de configuración se ha implementado correctamente
+### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>Confirmación de que el paquete de configuración se ha implementado correctamente
 
-1. En la consola de Configuration Manager, haga clic **en Supervisión** en la parte inferior del panel de navegación.
+1. En la consola de Configuration Manager, haga clic en **Supervisión** en la parte inferior del panel de navegación.
 
-2. Seleccione **Información** general y **, a continuación, Implementaciones**.
+2. Seleccione **Información general** y, a continuación, **Implementaciones**.
 
 3. Seleccione en la implementación con el nombre del paquete.
 
-4. Revise los indicadores de estado en **Estadísticas de finalización** y **Estado del contenido**.
+4. Revise los indicadores de estado en **Estadísticas de finalización** y **Estado de contenido**.
 
-    Si hay **implementaciones** con errores (dispositivos con **estado Error**, **Requisitos no** cumplidos o Error), es posible que deba solucionar los problemas de los dispositivos. Para obtener más información, vea [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
+    Si hay implementaciones **con errores** (dispositivos con errores, **requisitos no cumplidos** o **estados con errores**), es posible que tenga que solucionar los problemas de los dispositivos. Para obtener más información, consulte [Solución de problemas de incorporación de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md).
 
-    :::image type="content" source="images/sccm-deployment.png" alt-text="Configuration Manager que muestra una implementación correcta sin errores" lightbox="images/sccm-deployment.png":::
+    :::image type="content" source="images/sccm-deployment.png" alt-text="El Configuration Manager que muestra una implementación correcta sin errores" lightbox="images/sccm-deployment.png":::
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Comprobar que los dispositivos son compatibles con el servicio de Microsoft Defender para endpoints
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Compruebe que los dispositivos son compatibles con el servicio Microsoft Defender para punto de conexión
 
 Puede establecer una regla de cumplimiento para el elemento de configuración en System Center Configuration Manager de 2012 R2 para supervisar la implementación.
 
-Esta regla debe ser un elemento *de configuración de* regla de cumplimiento no correctivo que supervisa el valor de una clave del Registro en dispositivos de destino.
+Esta regla debe ser un elemento de configuración de regla de cumplimiento no *correctivo* que supervise el valor de una clave del Registro en los dispositivos de destino.
 
 Supervise la siguiente entrada de clave del Registro:
 
@@ -198,12 +198,12 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Para obtener más información, vea [Introducción a la configuración de cumplimiento en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Para obtener más información, consulte [Introducción a la configuración de cumplimiento en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-- [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
-- [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)
+- [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md)
+- [Solución de problemas de incorporación de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

@@ -17,16 +17,15 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873366"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -49,7 +48,7 @@ La protección contra alteraciones está disponible para los dispositivos que ej
 - Windows Server 2019
 - Windows Server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
@@ -123,7 +122,7 @@ La protección contra alteraciones se puede activar o desactivar para el inquili
   - Windows Server 2019
   - Windows Server, versión 1803 o posterior
   - Windows Server 2016
-  - Windows Server 2012 R2
+  - Windows Server 2012 R2
 
 Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information).
 
@@ -154,7 +153,7 @@ Si su organización usa Microsoft Endpoint Manager (MEM), puede activar (o desac
 - Los dispositivos deben [incorporarse a Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/onboarding).
 - Debe tener asignados [los permisos](/microsoft-365/security/defender-endpoint/assign-portal-access) adecuados, como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 - Su organización usa [Microsoft Endpoint Manager para administrar dispositivos](/mem/endpoint-manager-getting-started). (se requieren licencias de Microsoft Endpoint Manager (MEM); MEM se incluye en Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Empresa Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5 , y las licencias educativas correspondientes).
-- Los dispositivos Windows deben ejecutar Windows 11 o Windows 10 [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior. (Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information)).
+- Los dispositivos Windows deben ejecutar Windows 11 o Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior. (Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information)).
 - Debe usar Windows seguridad con [inteligencia de seguridad](https://www.microsoft.com/wdsi/definitions) actualizada a la versión 1.287.60.0 (o posterior).
 - Los dispositivos deben usar la versión 4.18.1906.3 (o posterior) de la plataforma antimalware y la versión `1.1.15500.X` del motor antimalware (o posterior). ([Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)).
 
@@ -200,8 +199,7 @@ Vea los siguientes recursos:
 
 > [!NOTE]
 > La protección contra alteraciones bloquea los intentos de modificar Antivirus de Microsoft Defender configuración a través del Registro.
->
-> Para ayudar a garantizar que la protección contra alteraciones no interfiera con los productos de seguridad que no son de Microsoft ni con scripts de instalación empresarial que modifican esta configuración, vaya a **Seguridad de Windows** y actualice **Security Intelligence** a la versión 1.287.60.0 o posterior. (Consulte [Actualizaciones de inteligencia de seguridad](https://www.microsoft.com/wdsi/definitions)). Una vez realizada esta actualización, la protección contra alteraciones continúa protegiendo la configuración del Registro y los registros intentan modificarlas sin devolver errores.
+> Para ayudar a garantizar que la protección contra alteraciones no interfiera con los productos de seguridad que no son de Microsoft ni con scripts de instalación empresarial que modifican esta configuración, vaya a **Seguridad de Windows** y actualice **Security Intelligence** a la versión 1.287.60.0 o posterior. (Consulte [Actualizaciones de inteligencia de seguridad](https://www.microsoft.com/wdsi/definitions)). Después de realizar esta actualización, la protección contra alteraciones continúa protegiendo la configuración del Registro y los registros intentan modificarlas sin devolver errores.
 
 Si es usuario principal o no está sujeto a la configuración administrada por un equipo de seguridad, puede usar la aplicación Seguridad de Windows para administrar la protección contra alteraciones. Debe tener los permisos de administrador adecuados en el dispositivo para cambiar la configuración de seguridad, como la protección contra alteraciones.
 
@@ -243,13 +241,13 @@ La protección contra alteraciones se integra con las funcionalidades [de admini
 
 Para más información sobre Threat & Vulnerability Management, consulte [Información del panel: Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
 - Windows 11
 - Sesión múltiple de Windows 11 Enterprise
-- Windows 10 sistema operativo [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior junto con [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint).
+- Windows 10 sistema operativo [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior junto con [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint).
 - Sesión múltiple de Windows 10 Enterprise
   
 Si usa Configuration Manager, versión 2006, con asociación de inquilinos, la protección contra alteraciones se puede ampliar a Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022. Consulte [Asociación de inquilinos: Creación e implementación de la directiva antivirus de seguridad de puntos de conexión desde el Centro de administración (versión preliminar).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)

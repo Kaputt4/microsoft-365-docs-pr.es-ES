@@ -10,17 +10,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872322"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -36,7 +35,7 @@ Además de las configuraciones de hardware o locales estándar, también puede u
 
 Para obtener más información sobre Escritorio remoto de Microsoft Services y compatibilidad con VDI, consulte [documentación de Azure Virtual Desktop](/azure/virtual-desktop).
 
-Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoint Protection en Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
+Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoint Protection en Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
@@ -268,14 +267,14 @@ Las exclusiones se pueden agregar, quitar o personalizar para satisfacer sus nec
 Para obtener más información, vea [Configurar exclusiones de Antivirus de Microsoft Defender en Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

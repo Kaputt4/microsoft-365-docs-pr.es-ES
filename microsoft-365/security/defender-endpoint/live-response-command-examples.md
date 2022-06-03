@@ -1,6 +1,6 @@
 ---
 title: Ejemplos de comandos de respuesta en vivo
-description: Aprenda a ejecutar comandos de respuesta en directo básicos o avanzados para Microsoft Defender para Endpoint y vea ejemplos sobre cómo se usan.
+description: Aprenda a ejecutar comandos de respuesta en directo básicos o avanzados para Microsoft Defender para punto de conexión y vea ejemplos sobre cómo se usan.
 keywords: ejemplo, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312674"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872395"
 ---
 # <a name="live-response-command-examples"></a>Ejemplos de comandos de respuesta en vivo
 
@@ -30,11 +30,11 @@ ms.locfileid: "63312674"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Obtenga información sobre los comandos comunes usados en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.
+Obtenga información sobre los comandos comunes que se usan en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.
 
-Según el rol que tenga, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md).
+En función del rol que tenga, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
 
 ## `analyze`
 
@@ -110,14 +110,14 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> Los siguientes tipos de *archivo no se* pueden descargar con este comando desde Live Response:
+> Los siguientes tipos de archivo *no se pueden* descargar mediante este comando desde Live Response:
 >
-> - [Archivos de punto de repetición](/windows/desktop/fileio/reparse-points/)
-> - [Archivos dispersos](/windows/desktop/fileio/sparse-files/)
+> - [Archivos de punto de reanálisis](/windows-hardware/drivers/ifs/reparse-points)
+> - [Archivos dispersos](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Archivos vacíos
 > - Archivos virtuales o archivos que no están totalmente presentes localmente
 >
-> PowerShell *admite* estos tipos [de archivo](/powershell/scripting/overview).
+> PowerShell *admite estos* tipos de [](/powershell/scripting/overview)archivo.
 >
 > Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.
 
@@ -221,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> Para los comandos de larga ejecución, como "**run**" o "**getfile**", es posible que desee usar el símbolo "**&**" al final del comando para realizar esa acción en segundo plano.
-> Esto te permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termines con el comando básico "**fg**["](live-response.md#basic-commands).
+> Para comandos de larga duración, como "**run**" o "**getfile**", es posible que desee usar el símbolo "**&**" al final del comando para realizar esa acción en segundo plano.
+> Esto le permitirá continuar investigando la máquina y volver al comando en segundo plano cuando termine de usar el [comando básico](live-response.md#basic-commands) "**fg**".
 
 ## `scheduledtask`
 

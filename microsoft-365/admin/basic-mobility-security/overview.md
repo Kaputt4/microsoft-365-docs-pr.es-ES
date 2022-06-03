@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administre y proteja los dispositivos móviles conectados a su organización Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863214"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Introducción a la movilidad y la seguridad básicas para Microsoft 365
 
@@ -50,7 +50,7 @@ Este es un resumen de los pasos:
 
 **Paso 3:** Cree directivas de dispositivo y aplíquelas a grupos de usuarios. Al hacerlo, los usuarios reciben un mensaje de inscripción en su dispositivo y, cuando han completado la inscripción, sus dispositivos están restringidos por las directivas que ha configurado para ellos. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la directiva de seguridad y movilidad.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Configuración básica de la directiva de seguridad y movilidad.":::
 
 ## <a name="device-management-tasks"></a>Tareas de administración de dispositivos
 

@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873256"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -109,6 +109,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 3. Expanda el árbol para **Windows componentes** \> **Antivirus de Windows Defender** \> **exclusiones**.
 
 4. Abra la opción **Exclusiones de ruta de acceso** para su edición y agregue las exclusiones.
+
     1. Establezca la opción **en Habilitado**.
     2. En la sección **Opciones** , seleccione **Mostrar**.
     3. Especifique cada carpeta en su propia línea en la columna **Nombre de valor** .
@@ -118,6 +119,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 5. Elija **Aceptar**.
 
 6. Abra la opción **Exclusiones de extensión** para editar y agregue las exclusiones.
+
     1. Establezca la opción **en Habilitado**.
     2. En la sección **Opciones** , seleccione **Mostrar**.
     3. Escriba cada extensión de archivo en su propia línea en la columna **Nombre de valor** .
@@ -192,7 +194,6 @@ Puede usar el asterisco `*`, el signo de interrogación `?`o las variables de en
 
 > [!IMPORTANT]
 > Existen limitaciones clave y escenarios de uso para estos caracteres comodín:
->
 > - El uso de variables de entorno se limita a las variables de máquina y las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM.
 > - Solo puede usar un máximo de seis caracteres comodín por entrada.
 > - No se puede usar un carácter comodín en lugar de una letra de unidad.
@@ -200,8 +201,6 @@ Puede usar el asterisco `*`, el signo de interrogación `?`o las variables de en
 > - Actualmente, Microsoft Endpoint Configuration Manager no admite caracteres comodín (como `*` o `?`).
     
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
-
-<br/><br/>
 
 |Carácter comodín|Ejemplos|
 |---|---|
@@ -211,9 +210,7 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 > [!IMPORTANT]
 > Si combina un argumento de exclusión de archivos con un argumento de exclusión de carpeta, las reglas se detendrán en la coincidencia del argumento de archivo en la carpeta coincidente y no buscarán coincidencias de archivos en ninguna subcarpeta.
->
 > Por ejemplo, puede excluir todos los archivos que comienzan por "date" en las carpetas `c:\data\final\marked` y `c:\data\review\marked` mediante el argumento `c:\data\*\marked\date*`rule .
->
 > Sin embargo, este argumento no coincidirá con ningún archivo de subcarpetas en `c:\data\final\marked` o `c:\data\review\marked`.
 
 <a id="review"></a>
@@ -289,7 +286,7 @@ En la tabla siguiente se enumeran y describen las variables de entorno de la cue
 
 Puede recuperar los elementos de la lista de exclusión mediante uno de los métodos siguientes:
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -297,7 +294,6 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los mét
 
 > [!IMPORTANT]
 > Los cambios en la lista de exclusión realizados con directiva de grupo **se mostrarán** en las listas de la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
->
 > Los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de directiva de grupo.
 
 Si usa PowerShell, puede recuperar la lista de dos maneras:

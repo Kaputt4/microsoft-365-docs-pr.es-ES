@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configure Basic Mobility and Security para proteger y administrar los dispositivos móviles de los usuarios mediante acciones como limpiar un dispositivo de forma remota.
-ms.openlocfilehash: b26906c0f374f5dc103fe26e4619663195da6ebd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863186"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 
@@ -52,17 +52,15 @@ Si no tiene un dominio personalizado asociado a Microsoft 365 o si no está admi
 
 ¿Necesita ayuda para configurar los registros? Busque el registrador de dominio y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en [Agregar registros DNS para conectar el dominio](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use esas instrucciones para crear registros CNAME descritos en [Simplificación de la inscripción de Windows sin Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Después de agregar los dos registros CNAME, vuelva al Centro de cumplimiento de Seguridad & y vaya a **Prevención** >  de pérdida de **datosConfiguración de dispositivos** para completar el paso siguiente.
+Después de agregar los dos registros CNAME, vuelva al Centro de cumplimiento de seguridad & y vaya a **Administración** de dispositivos de **prevención** >  de pérdida de datos para completar el paso siguiente.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Paso 2: (Obligatorio) Configurar un certificado de APNs para dispositivos iOS
 
-Para administrar dispositivos iOS como iPad y iPhone, debe crear un certificado de APNs.
+Para administrar dispositivos iOS como iPad y iPhone, debe crear un certificado APNs.
 
 1. Inicie sesión en Microsoft 365 con su cuenta de administrador global.
 
-2. En el explorador, escriba: [https://protection.office.com](https://protection.office.com/).
-
-3. Seleccione **Prevención de pérdida de** >  **datosAdministración de dispositivos** y elija **Certificado de APNs para dispositivos iOS**.
+2. Vaya al [Centro de administración de Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices) y elija **el certificado APNs para iOS**.
 
 4. En la página Configuración certificado de notificación push de Apple, elija **Siguiente**.
 
@@ -95,7 +93,7 @@ MFA ayuda a proteger el inicio de sesión en Microsoft 365 para la inscripción 
 
 Para obtener información sobre cómo activar MFA en el portal de Azure AD, consulte [Configuración de la autenticación multifactor](../security-and-compliance/set-up-multi-factor-authentication.md).
 
-Después de configurar MFA, vuelva al Centro de cumplimiento de seguridad & y vaya a Prevención  >  de pérdida de **datosConfiguración** >  de **dispositivosDispositivos** **Directivas** de dispositivo para completar el paso siguiente.
+Después de configurar MFA, vuelva al Centro de cumplimiento de seguridad & y vaya a Data **loss prevention****Device management Device policies**(Directivas de **dispositivos** de administración  >  de dispositivos de prevención  >  de pérdida de datos) para completar el paso siguiente.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Paso 4: (Recomendado) Administrar directivas de seguridad de dispositivos
 
@@ -107,7 +105,7 @@ El siguiente paso es crear e implementar directivas de seguridad de dispositivos
 
 3. Vaya a **Directivas de dispositivo**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la directiva de seguridad y movilidad.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Configuración básica de la directiva de seguridad y movilidad.":::
 
 4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en [Creación de directivas de seguridad de dispositivos en Movilidad y seguridad básicas](create-device-security-policies.md).
 

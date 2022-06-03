@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 369c6a198035418a5c16e2a72d84c8dcfc88be2f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873014"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de Microsoft Defender para punto de conexión en Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "64666446"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 En este documento se proporcionan instrucciones sobre cómo restringir los problemas de rendimiento relacionados con Defender para punto de conexión en Linux mediante las herramientas de diagnóstico disponibles para poder comprender y mitigar la escasez de recursos existente y los procesos que hacen que el sistema se encuentre en tales situaciones. Los problemas de rendimiento se deben principalmente a cuellos de botella en uno o varios subsistemas de hardware, en función del perfil de uso de recursos en el sistema. A veces, las aplicaciones son sensibles a los recursos de E/S de disco y pueden necesitar más capacidad de CPU, y a veces algunas configuraciones no son sostenibles y pueden desencadenar demasiados procesos nuevos y abrir demasiados descriptores de archivo.
 
@@ -190,7 +190,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
    ![Imagen del ejemplo de línea de comandos.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - El analizador requiere "lxml" para generar la salida del resultado. Si no está instalado, el analizador intentará capturarlo del repositorio oficial para los paquetes de Python siguientes: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - El analizador requiere "lxml" para generar la salida del resultado. Si no está instalado, el analizador intentará capturarlo del repositorio oficial para los paquetes de Python siguientes: <https://pypi.org/search/?q=lxml>
 > 
 > - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
 >
@@ -243,9 +243,9 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
   Descripción: archivo XML adicional que usa el analizador al compilar el informe HTML.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Descripción: detalles sobre el servicio auditado y los componentes relacionados para el sistema operativo [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  Descripción: detalles sobre el servicio auditado y los componentes relacionados para el sistema operativo [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
 
 - perf_benchmark.tar.gz
 

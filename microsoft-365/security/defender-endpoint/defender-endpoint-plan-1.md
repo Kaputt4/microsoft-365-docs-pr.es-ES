@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872728"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
@@ -58,7 +57,7 @@ El plan 1 de Defender para punto de conexión incluye las siguientes funcionalid
 - **[Acciones de respuesta manuales](#manual-response-actions)**, como enviar un archivo a cuarentena, que el equipo de seguridad puede tomar en dispositivos o archivos cuando se detectan amenazas.
 - **[Funcionalidades de reducción de la superficie expuesta a ataques](#attack-surface-reduction)** que protegen los dispositivos, evitan ataques de día cero y ofrecen un control pormenorizado sobre el acceso y los comportamientos de los puntos de conexión.
 - **[Configuración y administración centralizadas](#centralized-management)** con el portal de Microsoft 365 Defender e integración con Microsoft Endpoint Manager
-- **[Protección para una variedad de plataformas](#cross-platform-support)**, como dispositivos Windows, macOS, iOS y Android
+- **[Protección para una variedad de plataformas, incluidos](#cross-platform-support)** dispositivos Windows, macOS, iOS y Android
 
 En las secciones siguientes se proporcionan más detalles sobre estas funcionalidades. 
 
@@ -72,14 +71,14 @@ La protección de última generación incluye protección antivirus y antimalwar
 
 Para más información, consulte [Introducción a la protección de próxima generación](next-generation-protection.md).
 
-## <a name="manual-response-actions"></a>Acciones de respuesta manual
+## <a name="manual-response-actions"></a>Acciones de contestación manual
 
 Las acciones de respuesta manual son acciones que el equipo de seguridad puede realizar cuando se detectan amenazas en puntos de conexión o en archivos. Defender para punto de conexión incluye ciertas [acciones de respuesta manual que se pueden realizar en un dispositivo](respond-machine-alerts.md) que se detecta como potencialmente comprometido o que tiene contenido sospechoso. También puede ejecutar [acciones de respuesta en los archivos](respond-file-alerts.md) que se detectan como amenazas. En la tabla siguiente se resumen las acciones de respuesta manual que están disponibles en El plan 1 de Defender para punto de conexión. <br/><br/>
 
 | Archivo o dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, esas amenazas a menudo se abordan durante un examen antivirus. |
-| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de la organización mientras conserva la conectividad con Defender para punto de conexión. Esta acción le permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Dispositivo | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, esas amenazas a menudo se abordan durante un examen antivirus. |
+| Dispositivo | Aislar el dispositivo | Desconecta un dispositivo de la red de la organización mientras conserva la conectividad con Defender para punto de conexión. Esta acción le permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Detiene la ejecución de procesos y pone en cuarentena los archivos asociados. |
 | Archivo | Adición de un indicador para bloquear o permitir un archivo | Los indicadores de bloque impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en los dispositivos. <p>Permitir indicadores impide que los archivos se bloqueen o corrijan. |
 
@@ -149,7 +148,7 @@ Con la protección del firewall de red, puede establecer reglas que determinen q
 - Protección de datos confidenciales y propiedad intelectual
 - Ampliación de la inversión en seguridad
 
-Para más información, consulte [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Para obtener más información, consulte [Firewall de Windows Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Control de la aplicación
 
@@ -163,13 +162,13 @@ El plan 1 de Defender para punto de conexión incluye el portal de Microsoft 365
 
 Para obtener más información, consulte [Microsoft 365 Defender introducción al portal](portal-overview.md).
 
-### <a name="role-based-access-control"></a>Control de acceso basado en funciones
+### <a name="role-based-access-control"></a>Control de acceso basado en roles
 
 Mediante el control de acceso basado en rol (RBAC), el administrador de seguridad puede crear roles y grupos para conceder el acceso adecuado al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Con RBAC, tiene un control específico sobre quién puede acceder a la Defender for Cloud y qué pueden ver y hacer. 
 
 Para más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>Generación de informes
 
 El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) proporciona fácil acceso a la información sobre las amenazas y acciones detectadas para abordar esas amenazas. 
 
@@ -186,14 +185,17 @@ Con las API de Defender para punto de conexión, puede automatizar los flujos de
 
 Para más información, consulte [Api de Defender para punto de conexión](management-apis.md). 
 
-## <a name="cross-platform-support"></a>Compatibilidad multiplataforma
+## <a name="cross-platform-support"></a>Compatibilidad multiplataforma.
 
 La mayoría de las organizaciones usan varios dispositivos y sistemas operativos. Actualmente, El plan 1 de Defender para punto de conexión admite los siguientes sistemas operativos:
 
 - Windows 7 (ESU requerida)
 - Windows 8.1
 - Windows 10, versión 1709 o posterior
-- macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave)
+- Windows 10 Enterprise
+- Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise loT
+- macOS (se admiten las tres versiones más recientes)
 - iOS
 - Sistema operativo Android
 

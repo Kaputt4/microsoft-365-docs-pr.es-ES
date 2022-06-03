@@ -16,16 +16,16 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1dffb7fd6b13fc1999e51666717dc464e694d0c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 64b5576015f279efec4c469e18a0ace652b90918
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873410"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -138,7 +138,7 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
 
 ## <a name="add-spoofed-sender-allow-entries-using-powershell"></a>Adición de entradas permitidas del remitente suplantado mediante PowerShell
 
-Para agregar entradas de remitente suplantadas en la lista de permitidos o bloqueados de inquilinos en [Exchange Online PowerShell](/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+Para agregar entradas de remitente suplantadas en la lista de permitidos o bloqueados de inquilinos en [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>

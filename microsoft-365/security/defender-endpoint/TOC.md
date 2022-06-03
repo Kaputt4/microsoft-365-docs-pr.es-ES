@@ -709,4 +709,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender para Empresas](../defender-business/index.yml)
+## [Administración de vulnerabilidades de Defender](../defender-vulnerability-management/index.yml) 
 

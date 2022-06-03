@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874182"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -33,7 +33,7 @@ ms.locfileid: "65368185"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 El **inventario de** dispositivos muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.
 
@@ -70,7 +70,7 @@ Durante el proceso de incorporación de Microsoft Defender para punto de conexi�
 
 ## <a name="navigate-to-the-device-inventory-page"></a>Vaya a la página Inventario de dispositivos
 
-Para acceder a la página de inventario de dispositivos, seleccione **Inventario** de dispositivos en el menú de navegación **Puntos de conexión** del [portal de Microsoft 365 Defender](/defender/microsoft-365-security-center-mde).
+Para acceder a la página de inventario de dispositivos, seleccione **Inventario** de dispositivos en el menú de navegación **Puntos de conexión** del [portal de Microsoft 365 Defender](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## <a name="device-inventory-overview"></a>Información general del inventario de dispositivos
 

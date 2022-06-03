@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: Simule un ataque de suplantación de identidad con formación de simulación de ataques
               href: attack-simulation-training.md
-            - name: Crear una carga personalizada para el aprendizaje la simulación de ataques
+            - name: Cargas para el entrenamiento de simulación de ataques
               href: attack-simulation-training-payloads.md
             - name: Automatizaciones de la simulación en el aprendizaje de simulación de ataques
               href: attack-simulation-training-simulation-automations.md

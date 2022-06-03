@@ -20,16 +20,16 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bc3e53283f59d7a750e05d56718d389f48e6a9d9
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682403"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840024"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -142,7 +142,7 @@ Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje par
 
 Cuando selecciona un mensaje en cuarentena de la lista, la siguiente información está disponible en el control flotante de detalles que aparece.
 
-![Control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-user-message-details.png)
+:::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="Control flotante de detalles de un mensaje en cuarentena." lightbox="../../media/quarantine-user-message-details.png":::
 
 Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los detalles de mensaje siguientes en el panel flotante **Detalles**:
 
@@ -161,7 +161,7 @@ Para actuar sobre el mensaje, consulte la siguiente sección.
 > [!NOTE]
 > Para permanecer en el control flotante de detalles, pero cambiar el mensaje en cuarentena que está visualizando, use las flechas arriba y abajo en la parte superior del control flotante.
 >
-> ![Las flechas arriba y abajo del control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="Las flechas arriba y abajo del control flotante de detalles de un mensaje en cuarentena." lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>Llevar a cabo una acción en un correo electrónico en cuarentena
 
@@ -170,7 +170,7 @@ Para actuar sobre el mensaje, consulte la siguiente sección.
 
 Después de seleccionar un mensaje en cuarentena de la lista, las siguientes acciones están disponibles en el control flotante de detalles:
 
-![Acciones disponibles en el control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-user-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="Acciones disponibles en el control flotante de detalles de un mensaje en cuarentena." lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
 - ![Icono de liberar correo electrónico](../../media/m365-cc-sc-check-mark-icon.png) **Liberar correo electrónico**<sup>\*</sup>: Entrega el mensaje a su Bandeja de entrada.
 
@@ -197,7 +197,8 @@ Si no libera o elimina el mensaje, se eliminará cuando expire el período de re
 > [!NOTE]
 > En un dispositivo móvil, el texto de descripción no está disponible en los iconos de acción.
 >
-> ![Detalles de un mensaje en cuarentena con las acciones disponibles resaltadas](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="Los detalles de un mensaje en cuarentena con las acciones disponibles resaltadas" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
+
 >
 > Los iconos en orden y sus correspondientes descripciones se resumen en la siguiente tabla:
 >
@@ -213,7 +214,7 @@ Si no libera o elimina el mensaje, se eliminará cuando expire el período de re
 
 Cuando se seleccionan varios mensajes en cuarentena en la lista (hasta 100) haciendo clic en el área en blanco situada a la izquierda de la primera columna, aparece la lista desplegable **Acciones masivas** en la que se pueden realizar las siguientes acciones:
 
-![Lista desplegable de acciones masivas para mensajes en cuarentena.](../../media/quarantine-user-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="Lista desplegable de acciones masivas para mensajes en cuarentena." lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
-- ![Icono de liberar correo electrónico](../../media/m365-cc-sc-check-mark-icon.png) **Liberar correo mensajes**: Entrega el mensaje a su Bandeja de entrada.
+- ![icono Liberar mensajes.](../../media/m365-cc-sc-check-mark-icon.png) **Liberar mensajes**: entrega los mensajes a la Bandeja de entrada.
 - ![Icono Quitar de cuarentena](../../media/m365-cc-sc-delete-icon.png)**Eliminar mensajes**: Después de hacer clic en **Sí** en la advertencia que aparece, los mensajes se elimina inmediatamente de la cuarentena sin enviarse a los destinatarios originales.

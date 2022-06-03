@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: b01a9315e143a3fb49cedef84e1f7b9e505441d5
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873344"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -68,7 +68,7 @@ Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizacione
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Recurso compartido de archivos de red](#unc-share)
-- [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>de Microsoft [[2](#fn1)]<sup></sup>
+- [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) <sup>de Microsoft [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Intune servidor de actualización de definiciones internas: si usa SCCM/SUP para obtener actualizaciones de definiciones para Antivirus de Microsoft Defender y necesita acceder a Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración conjunta y descargar la carga de trabajo de Endpoint Protection a Intune. En la directiva antimalware configurada en Intune hay una opción para "servidor de actualización de definiciones internas" que se puede configurar para usar WSUS local como origen de actualización. Esto le ayuda a controlar qué actualizaciones del servidor wu oficial están aprobadas para la empresa, y también ayuda a proxy y a guardar el tráfico de red a la red oficial Windows UPdates.
 
@@ -83,12 +83,10 @@ Las actualizaciones de inteligencia de seguridad también se entregan varias vec
 
 > [!IMPORTANT]
 > Si ha establecido las actualizaciones de [la página de inteligencia de](https://www.microsoft.com/security/portal/definitions/adl.aspx) seguridad de Microsoft como origen de reserva después de Windows Server Update Service o Microsoft Update, las actualizaciones solo se descargan de las actualizaciones de inteligencia de seguridad y de la plataforma cuando la actualización actual se considera obsoleta. (De forma predeterminada, se trata de siete días consecutivos de no poder aplicar actualizaciones desde Windows Server Update Service o servicios de Microsoft Update).
-> Sin embargo, puede [establecer el número de días antes de que la protección se notifique como obsoleta](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
+> Sin embargo, puede [establecer el número de días antes de que la protección se notifique como obsoleta](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus).<p>
 > A partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad y las actualizaciones de la plataforma estarán firmadas exclusivamente por SHA-2. Los dispositivos deben actualizarse para admitir SHA-2 con el fin de obtener las últimas actualizaciones de inteligencia de seguridad y actualizaciones de la plataforma. Para obtener más información, consulte [2019 SHA-2 Code Signing Support requirement for Windows and WSUS (Requisito de compatibilidad con la firma de código SHA-2 de 2019 para Windows y WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)).
 
 Cada origen tiene escenarios típicos que dependen de cómo se configura la red, además de la frecuencia con la que publican actualizaciones, como se describe en la tabla siguiente:
-
-<br/><br/>
 
 |Ubicación|Ejemplo ficticio|
 |---|---|
@@ -287,14 +285,14 @@ Configure un recurso compartido de archivos de red (unidad UNC/asignada) para de
     > No agregue la carpeta x64 (o x86) en la ruta de acceso. El proceso de mpcmdrun.exe lo agrega automáticamente.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

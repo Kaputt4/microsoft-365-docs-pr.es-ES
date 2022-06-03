@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0cd1e0aa999200814639f24401bf019774ca1d43
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872970"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -34,10 +34,10 @@ ms.locfileid: "64825220"
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
-- Windows 8,1 Enterprise
+- Windows 8.1 Enterprise
 - Windows Server 2008 R2 SP1
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona funcionalidades avanzadas de detección e investigación de ataques en las versiones de Windows compatibles.
 
@@ -49,7 +49,7 @@ Para incorporar puntos de conexión de cliente de nivel inferior Windows a Defen
 Para Windows Server 2008 R2 SP1, tiene la opción de [incorporar a través de Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender for Cloud](/azure/security-center/security-center-services).
+> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un punto de conexión de Defender para punto de conexión recién incorporado](run-detection-test.md).
@@ -132,7 +132,7 @@ Una vez completado, debería ver los servidores de Windows incorporados en el po
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Incorporación de servidores Windows a través de Microsoft Defender for Cloud
 
-1. En el panel de navegación Microsoft 365 Defender, seleccione **Configuración** >  **Dispositivo** **managementOnboarding** > .
+1. En el panel de navegación Microsoft 365 Defender, seleccione **Configuración** >  **Inscripción de administración** > **de dispositivos**.
 
 2. Seleccione **Windows Server 2008 R2 SP1** como sistema operativo.
 
@@ -200,7 +200,7 @@ Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo
     Descarga de actualizaciones para Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [Para Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [Para Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
     
     >[!NOTE]
     > En este artículo se supone que usa servidores basados en x64 (agente MMA .exe versión compatible con x64 New SHA-2).

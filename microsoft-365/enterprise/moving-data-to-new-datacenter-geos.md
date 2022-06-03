@@ -1,9 +1,9 @@
 ---
 title: Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos
-ms.author: andyber
-author: andybergen
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 11/16/2021
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,19 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 geos del centro de datos y cómo usar la opción de residencia de datos para solicitar el traslado de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be42954aaa0de3f1c5af851915070e7f27c4e850
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873586"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos
 
-Seguimos abriendo nuevas zonas geográficas del centro de datos para los servicios de Microsoft 365. Estas nuevas zonas geográficas del centro de datos agregan recursos de capacidad y proceso para dar soporte a nuestro crecimiento continuo de la demanda y el uso de los clientes. Además, las nuevas zonas geográficas del centro de datos ofrecen residencia de datos en la ubicación geográfica para los datos principales de los clientes. 
+Seguimos abriendo nuevas zonas geográficas del centro de datos para los servicios de Microsoft 365. Estas nuevas zonas geográficas del centro de datos agregan recursos de capacidad y proceso para dar soporte a nuestro crecimiento continuo de la demanda y el uso de los clientes. Además, las nuevas zonas geográficas del centro de datos ofrecen residencia de datos en la ubicación geográfica para los datos principales de los clientes.
 
-Los datos principales del cliente son un término que hace referencia a un subconjunto de datos de clientes, incluidos: 
+Los datos principales del cliente son un término que hace referencia a un subconjunto de datos de clientes, incluidos:
+
 - Exchange Online contenido del buzón (cuerpo del correo electrónico, entradas de calendario y contenido de datos adjuntos de correo electrónico)
 - SharePoint contenido del sitio en línea y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la Empresa
@@ -53,25 +54,25 @@ Los clientes existentes que tienen sus datos principales de cliente almacenados 
 
 A partir del 1 de octubre de 2020, los clientes con una suscripción Office 365 Educación incluida en el inquilino no son aptos para la migración.
 
-Hay disponible una lista completa de todas las zonas geográficas del centro de datos, los centros de datos y la ubicación de los datos del cliente en reposo como parte de los [mapas interactivos del centro de datos](https://office.com/datamaps). 
+Hay disponible una lista completa de todas las zonas geográficas del centro de datos, los centros de datos y la ubicación de los datos del cliente en reposo como parte de los [mapas interactivos del centro de datos](https://office.com/datamaps).
   
 ## <a name="data-residency-option"></a>Opción de residencia de datos
 
 Proporcionamos una opción de residencia de datos para los clientes elegibles Microsoft 365 que están cubiertos por las zonas geográficas del centro de datos enumeradas en la tabla anterior. Con esta opción, los clientes aptos con requisitos de residencia de datos pueden solicitar la migración de los datos principales del cliente de su organización en reposo a su nueva ubicación geográfica del centro de datos.  Microsoft ofrecerá una fecha límite confirmada a todos los clientes aptos que soliciten la migración durante la ventana de inscripción.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más detalles sobre la ventana de inscripción abierta para la ubicación geográfica del centro de datos y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar en completarse hasta 24 meses tras el final del período de solicitud.
 
 No presentamos funcionalidades, características ni certificaciones de cumplimiento únicos con la nueva ubicación geográfica del centro de datos.
-    
-La complejidad, precisión y escala a la que necesitamos realizar movimientos de datos dentro de un entorno automatizado y operado globalmente nos impide compartir cuando se espera que se complete un movimiento de datos para su inquilino o cualquier otro inquilino único. Los clientes recibirán una confirmación en el Centro de mensajes por servicio participante cuando se haya completado el traslado de datos. 
-    
-Los movimientos de datos son una operación de servicio back-end con un impacto mínimo para los usuarios finales. Las características que pueden verse afectadas aparecen en la página [Durante y después del movimiento de datos](during-and-after-your-data-move.md) . Nos adherimos al [Contrato de nivel de servicio (SLA) de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) para la disponibilidad, por lo que no hay nada que los clientes necesiten preparar o supervisar durante el traslado. La notificación de cualquier mantenimiento del servicio se realiza si es necesario. 
+
+La complejidad, precisión y escala a la que necesitamos realizar movimientos de datos dentro de un entorno automatizado y operado globalmente nos impide compartir cuando se espera que se complete un movimiento de datos para su inquilino o cualquier otro inquilino único. Los clientes recibirán una confirmación en el Centro de mensajes por servicio participante cuando se haya completado el traslado de datos.
+
+Los movimientos de datos son una operación de servicio back-end con un impacto mínimo para los usuarios finales. Las características que pueden verse afectadas aparecen en la página [Durante y después del movimiento de datos](during-and-after-your-data-move.md) . Nos adherimos al [Contrato de nivel de servicio (SLA) de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) para la disponibilidad, por lo que no hay nada que los clientes necesiten preparar o supervisar durante el traslado. La notificación de cualquier mantenimiento del servicio se realiza si es necesario.
 
 Los movimientos de datos a la nueva ubicación geográfica del centro de datos se completan sin ningún costo adicional para el cliente.
-    
-## <a name="related-topics"></a>Temas relacionados 
- 
+
+## <a name="related-topics"></a>Temas relacionados
+
 [Cómo solicitar el movimiento de datos](request-your-data-move.md)
-    
-[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.yml)
+
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
   
 [Nuevas zonas geográficas del centro de datos para Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

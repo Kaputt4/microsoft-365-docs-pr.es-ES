@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320505"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873796"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión
 
@@ -50,7 +50,7 @@ Para registrar correctamente los dispositivos en Azure Active Directory, deberá
 
 - Los equipos pueden autenticarse con el controlador de dominio
 - Los equipos tienen acceso a los siguientes recursos de Microsoft desde la red de su organización:
-  - https://enterpriseregistration.windows.net
+  - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
 - Azure AD Connect está configurado para sincronizar los objetos de equipo. De forma predeterminada, las unidades organizativas del equipo se encuentran en el ámbito de sincronización de Azure AD Connect. Si los objetos de equipo pertenecen a unidades organizativas (OU) específicas, configure las unidades organizativas para que se sincronicen en Azure AD Conectar. Para más información sobre cómo sincronizar objetos de equipo mediante azure AD Conectar, consulte [Filtrado basado en unidades organizativas](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
@@ -121,7 +121,7 @@ En la tabla siguiente se enumeran los errores y las instrucciones sobre lo que s
 |Código de error|Estado de inscripción|Acciones de administrador|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|Error general|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad. Esto podría deberse a que el dispositivo no cumple [los requisitos previos para Microsoft Defender para punto de conexión canal de administración](security-config-management.md). La ejecución del [Analizador de cliente](https://aka.ms/BetaMDEAnalyzer) en el dispositivo puede ayudar a identificar la causa principal del problema. Si esto no ayuda, póngase en contacto con el soporte técnico.|
-| `8`, `44` | problema de configuración de Microsoft Endpoint Manager | El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, Microsoft Endpoint Manager no se ha configurado a través del Centro de administración para permitir Microsoft Defender para punto de conexión configuración de seguridad. Asegúrese de que el [inquilino de Microsoft Endpoint Manager está configurado y que la característica está activada](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+| `8`, `44` | problema de configuración de Microsoft Endpoint Manager | El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, Microsoft Endpoint Manager no se ha configurado a través del Centro de Administración para permitir la configuración de seguridad de Microsoft Defender para punto de conexión. Asegúrese de que el [inquilino de Microsoft Endpoint Manager está configurado y que la característica está activada](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|Problema de conectividad|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad que podría deberse a un problema de conectividad. Compruebe que los [puntos de conexión de Azure Active Directory y Microsoft Endpoint Manager](security-config-management.md#connectivity-requirements) están abiertos en el firewall.|
 |`10`,`42`|Error general de unión híbrida|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad y el sistema operativo no pudo realizar la unión híbrida. Use [Solución de problemas de dispositivos híbridos unidos a Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) para solucionar errores de unión híbrida de nivel de sistema operativo.|
 |`15`|Error de coincidencia del inquilino|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad porque el identificador de inquilino de Microsoft Defender para punto de conexión no coincide con el identificador de inquilino de Azure Active Directory. Asegúrese de que el identificador de inquilino de Azure Active Directory del inquilino de Defender para punto de conexión coincide con el identificador de inquilino en la entrada SCP del dominio. Para obtener más información, [solucione los problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión](troubleshoot-security-config-mgt.md).|

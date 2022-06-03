@@ -21,12 +21,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para las cuentas de prioridad en sus organizaciones Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648643"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873388"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
 
@@ -44,7 +44,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 
 :::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="Resumen de las recomendaciones de seguridad en el formulario de icono" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
-|Tarea|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
+|Task|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
 |[Aumento de la seguridad de inicio de sesión para las cuentas de prioridad](#increase-sign-in-security-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Uso de directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -53,7 +53,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 |[Entrenar a los usuarios](#train-users)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> Para obtener información sobre cómo proteger _cuentas con privilegios_ (cuentas de administrador), consulte [este tema](/azure/architecture/framework/security/critical-impact-accounts).
+> Para obtener información sobre cómo proteger _cuentas con privilegios_ (cuentas de administrador), consulte [este tema](/security/compass/critical-impact-accounts).
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumento de la seguridad de inicio de sesión para las cuentas de prioridad
 
@@ -124,6 +124,6 @@ Además, Microsoft recomienda que los usuarios realicen las acciones descritas e
 - Protección de dispositivos
 - Habilitación de características de seguridad en equipos Windows y Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Anuncio de la protección de cuenta prioritaria en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

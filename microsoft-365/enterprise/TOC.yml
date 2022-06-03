@@ -154,12 +154,10 @@
             - name: Supervisión de Exchange Online
               href: microsoft-365-exchange-monitoring.md
               items:
-                - name: Alertas de servicio para el uso de buzones
+                - name: Avisos de servicio para el uso de buzones
                   href: microsoft-365-mailbox-utilization-service-alerts.md
-                - name: Alertas de servicio para retrasos de origen MRS
+                - name: Avisos de servicio para retrasos de origen MRS
                   href: microsoft-365-mrs-source-delays-service-alerts.md
-                - name: Alertas de servicio para los mensajes en cola para los destinatarios externos
-                  href: microsoft-365-external-recipient-service-alerts.md
             - name: Supervisión de aplicaciones de Microsoft 365
               href: microsoft-365-apps-monitoring.md
             - name: Supervisión de Microsoft 365 Teams
@@ -232,7 +230,7 @@
         - name: Durante y después del movimiento de datos
           href: during-and-after-your-data-move.md
         - name: Preguntas más frecuentes sobre el movimiento de datos
-          href: data-move-faq.yml
+          href: data-move-faq.md
         - name: Dónde se almacenan los datos del cliente
           href: o365-data-locations.md
         - name: Ubicaciones de datos de la Unión Europea
@@ -245,7 +243,7 @@
       href: deploy-identity-solution-identity-model.md
     - name: Paso 2. Proteger las cuentas con privilegios
       href: protect-your-global-administrator-accounts.md
-    - name: Paso 3. Proteger las cuentas de usuario
+    - name: Paso 3. Proteger sus cuentas de usuario
       href: microsoft-365-secure-sign-in.md
     - name: Paso 4. Implementar su modelo de identidad
       items:

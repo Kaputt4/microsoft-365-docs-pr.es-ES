@@ -10,18 +10,17 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c36902d6c636c726a42292d7a6e4f0cdec60edb7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872256"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
 
@@ -39,16 +38,16 @@ Con Antivirus de Microsoft Defender, tiene varias opciones para revisar el estad
 
 Si tiene un servidor de administración de eventos e información de seguridad (SIEM) de terceros, también puede consumir [Windows Defender eventos de cliente](/windows/win32/events/windows-events).
 
-Windows eventos constan de varios orígenes de eventos de seguridad, incluidos los eventos del Administrador de cuentas de seguridad (SAM) ([mejorados para Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), consulte también el tema [Auditoría de seguridad](/windows/device-security/auditing/security-auditing-overview)) y [eventos de Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
+Windows eventos constan de varios orígenes de eventos de seguridad, incluidos los eventos del Administrador de cuentas de seguridad (SAM) ([mejorados para Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), consulte también el tema [Auditoría de seguridad](/windows/security/threat-protection/auditing/security-auditing-overview)) y [eventos de Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
 
 Estos eventos se pueden agregar centralmente mediante el [recopilador de eventos de Windows](/windows/win32/wec/windows-event-collector). A menudo, los servidores SIEM tienen conectores para eventos de Windows, lo que le permite correlacionar todos los eventos de seguridad en el servidor SIEM.
 
-También puede [supervisar eventos de malware mediante la solución de evaluación de malware en Log Analytics](/azure/log-analytics/log-analytics-malware).
+También puede [supervisar eventos de malware mediante la solución de evaluación de malware en Log Analytics](/security/benchmark/azure/security-control-logging-monitoring).
 
 Para supervisar o determinar el estado con PowerShell, WMI o Microsoft Azure, consulte la [tabla (Implementación, administración y opciones de informes).](deploy-manage-report-microsoft-defender-antivirus.md#ref2)
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

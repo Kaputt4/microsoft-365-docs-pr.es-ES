@@ -1,7 +1,7 @@
 ---
 title: Ejecutar el Analizador de clientes en macOS o Linux
-description: Obtenga información sobre cómo ejecutar el Analizador de cliente de Microsoft Defender para endpoint en macOS o Linux
-keywords: analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer, macos, linux, mdeanalyzer
+description: Obtenga información sobre cómo ejecutar el analizador de cliente de Microsoft Defender para punto de conexión en macOS o Linux
+keywords: analizador de cliente, solución de problemas de sensor, analizador, mdeanalyzer, macos, linux, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d56cbb48697c4804aa493d945ff81c52e12f86c5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9e3b52f5e16a2294cc504791928f10a96e5e54c7
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872772"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -29,12 +29,12 @@ ms.locfileid: "64470095"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## <a name="running-the-analyzer-through-gui-scenario"></a>Ejecución del analizador a través del escenario gui
+## <a name="running-the-analyzer-through-gui-scenario"></a>Ejecución del analizador a través del escenario de GUI
 
-1. Descargue la [herramienta analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
+1. Descargue la herramienta [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "A9BF065DE3F2608A309BC4F529548BB9931F107BF2F01DC42A789C5527C1308".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "A9BF065DE3F2608A309BC4F52955548BB9931F107BF2F01DC42A789C5527C1308".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -43,7 +43,7 @@ ms.locfileid: "64470095"
    `./mde_support_tool.sh -d`
 
    > [!NOTE]
-   > En Linux, si el script no tiene permisos para ejecutarse, deberá ejecutar primero:
+   > En Linux, si el script no tiene permisos para ejecutarse, primero tendrá que ejecutar:
    >
    > `chmod a+x mde_support_tool.sh`
 
@@ -59,18 +59,18 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
 4. `chmod +x mde_support_tool.sh`
 
-3. Ejecutar como uso no raíz para instalar pip y lxml necesarios qué componentes: `./mde_support_tool.sh`
+3. Ejecute como uso no raíz para instalar los componentes pip y lxml necesarios: `./mde_support_tool.sh`
 
 4. Para recopilar el paquete de diagnóstico real y generar el archivo de archivo de resultados, vuelva a ejecutarse como raíz: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> - Para Linux, el analizador requiere 'lxml' para producir el resultado. Si no está instalado, el analizador intentará capturarlo desde el repositorio oficial para los paquetes python siguientes: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - Para Linux, el analizador requiere "lxml" para generar la salida del resultado. Si no está instalado, el analizador intentará capturarlo del repositorio oficial para los paquetes de Python siguientes: <https://pypi.org/search/?q=lxml>
 > 
-> - Además, la herramienta requiere actualmente la instalación de Python versión 3 o posterior.
+> - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
 >
-> - Si se ejecuta en una máquina que no puede usar Python 3 o capturar el componente lxml, puede descargar una versión basada en binarios del analizador que no tenga ninguno de los requisitos: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+> - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binarios del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary)
 >
-> - Si el dispositivo está detrás de un proxy, simplemente puedes pasar el servidor proxy como una variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - Si el dispositivo está detrás de un proxy, simplemente puede pasar el servidor proxy como variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Ejemplo:
 
@@ -81,39 +81,39 @@ Ayuda de sintaxis adicional:
 **-h** \# Ayuda<br>
 \# Mostrar mensaje de ayuda
 
-**rendimiento** \# Rendimiento<br>
-\# Recopila un seguimiento extensivo para analizar un problema de rendimiento que se puede reproducir a petición. Se `--length=<seconds>` usa para especificar la duración del punto de referencia.
+**Rendimiento** \# Rendimiento<br>
+\# Recopila un seguimiento exhaustivo para analizar un problema de rendimiento que se puede reproducir a petición. Usar `--length=<seconds>` para especificar la duración de la prueba comparativa.
 
 **-o** \# Salida<br>
-\# Especificar la ruta de destino del archivo de resultados
+\# Especificar la ruta de acceso de destino para el archivo de resultados
 
 **-nz** \# No-Zip<br>
-\# Si se establece, se creará un directorio en lugar de un archivo de archivo resultante
+\# Si se establece, se creará un directorio en lugar de un archivo de archivo resultante.
 
-**-f** \# Forzar<br>
-\# Sobrescribir si el resultado ya existe en la ruta de destino
+**-f** \# Fuerza<br>
+\# Sobrescribir si la salida ya existe en la ruta de acceso de destino
 
 ## <a name="result-package-contents-on-macos-and-linux"></a>Contenido del paquete de resultados en macOS y Linux
 
 - report.html
 
-  Descripción: el archivo de salida HTML principal que contendrá los resultados y las instrucciones que puede producir el script del analizador en la máquina.
+  Descripción: el archivo de salida HTML principal que contendrá los resultados y las instrucciones que puede generar el script del analizador que se ejecuta en la máquina.
 
 - mde_diagnostic.zip
 
-  Descripción: el mismo resultado de diagnóstico que se genera al ejecutar *la creación de diagnóstico de mdatp* en [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Descripción: la misma salida de diagnóstico que se genera al ejecutar *mdatp diagnostic create* en cualquiera [de los macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  o
+  o bien
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
 - mde.xml
 
-  Descripción: salida XML que se genera mientras se ejecuta y se usa para crear el archivo de informe html.
+  Descripción: salida XML que se genera durante la ejecución y se usa para compilar el archivo de informe html.
 
 - Processes_information.txt
 
-  Descripción: contiene los detalles de los procesos relacionados con Microsoft Defender para endpoint en ejecución en el sistema.
+  Descripción: contiene los detalles de la ejecución Microsoft Defender para punto de conexión procesos relacionados en el sistema.
 
 - Log.txt
 
@@ -121,16 +121,16 @@ Ayuda de sintaxis adicional:
 
 - Health.txt
 
-  Descripción: el mismo resultado de mantenimiento básico que se muestra al ejecutar el comando de mantenimiento *mdatp* .
+  Descripción: la misma salida de estado básico que se muestra al ejecutar *el comando de mantenimiento mdatp* .
 
 - Events.xml
 
-  Descripción: archivo XML adicional usado por el analizador al compilar el informe HTML.
+  Descripción: archivo XML adicional que usa el analizador al compilar el informe HTML.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Descripción: detalles sobre el servicio auditado y los componentes relacionados para el sistema operativo [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  Descripción: detalles sobre el servicio auditado y los componentes relacionados para el sistema operativo [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
 
 - perf_benchmark.tar.gz
 
-  Descripción: los informes de prueba de rendimiento. Esto solo se verá si usa el parámetro de rendimiento.
+  Descripción: los informes de pruebas de rendimiento. Solo verá esto si usa el parámetro de rendimiento.
