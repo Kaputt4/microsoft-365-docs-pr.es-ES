@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Inicie sesión en Microsoft 365 y configure Basic Mobility and Security para usar la administración integrada de dispositivos móviles para proteger y administrar los dispositivos móviles de los usuarios.
-ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b84c97302743177f0a69978ebf358c0fbd1045a8
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863574"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administración de dispositivos inscritos en Mobile Administración de dispositivos en Microsoft 365
 
@@ -36,13 +36,9 @@ Después de configurarlo, los usuarios de la organización deben inscribir sus d
 
 Para acceder al panel de administración de dispositivos, siga estos pasos:
 
-1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Inicie sesión en el Centro de administración de Microsoft 365 y vaya a la [página Mobile Administración de dispositivos (Mobile Administración de dispositivos).](https://portal.office.com/adminportal/home?#/MifoDevices)
 
-2. Escriba Mobile Administración de dispositivos en el campo de búsqueda y seleccione **Mobile Administración de dispositivos** en la lista de resultados.
-
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción de administración de dispositivos móviles.":::
-
-3. Seleccione **Vamos a empezar**.
+1. Seleccione **Vamos a empezar**.
 
 ## <a name="manage-mobile-devices"></a>Administrar dispositivos móviles
 
@@ -52,9 +48,9 @@ Después de configurar Basic Mobility and Security, estas son algunas maneras de
 |---|---|
 |Eliminar los datos de un dispositivo|En el panel Administración de dispositivos, seleccione *nombre del dispositivo* y, a continuación, **Borrado completo** para eliminar toda la información o **Borrado selectivo** para eliminar solo la información de la organización en el dispositivo. Para obtener más información, consulta [Borrar un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).|
 |Bloquear el acceso de dispositivos no compatibles al correo electrónico de Exchange con Exchange ActiveSync|En el panel Administración de dispositivos, seleccione **Bloquear**.|
-|Configuración de directivas de dispositivo, como los requisitos de contraseña y la configuración de seguridad|En el panel Administración de dispositivos, seleccione Directivas  > **de seguridad de** **dispositivosAgregar +**. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md).|
+|Configuración de directivas de dispositivo, como los requisitos de contraseña y la configuración de seguridad|En el panel Administración de dispositivos, seleccione Directivas  > **de seguridad de** dispositivos **Agregar +**. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md).|
 |Ver la lista de dispositivos bloqueados|En el panel Administración de dispositivos, en **Seleccionar una vista**, seleccione **Bloqueado**.|
-|Desbloquear un dispositivo no compatible o no admitido para un usuario o grupo de usuarios|Elija una de las siguientes opciones para desbloquear dispositivos:<br/>- Quite el usuario o los usuarios del grupo de seguridad al que se ha aplicado la directiva. Vaya a grupos de Centro de administración de Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**y, a**</a> continuación, seleccione nombre del grupo. Seleccione **Editar miembros y administradores**.<br/>- Quite el grupo de seguridad del que son miembros los usuarios de la directiva de dispositivo. Vaya a Security & Compliance Center > **Security policies** >  (Directivas de **seguridad)Dispositivos de seguridad**. Seleccione el nombre de la directiva de dispositivo y, a continuación, seleccione **EditarImplementación** > .<br/>- Desbloquee todos los dispositivos no conformes para una directiva de dispositivo. Vaya a Security & Compliance Center > **Security policies** >  (Directivas de **seguridad)Dispositivos de seguridad**. Seleccione el nombre de la directiva de dispositivo y, a continuación, seleccione **EditarRequisitos** >  de acceso. Seleccione **Permitir infracción de acceso e informe**.<br/>- Para desbloquear un dispositivo no compatible o no compatible para un usuario o un grupo de usuarios, vaya al Centro de cumplimiento de Seguridad & > **Directivas** >  de **seguridadAdministración** >  de **dispositivosAdministración de la configuración de acceso** a dispositivos. Agregue un grupo de seguridad con los miembros que desea excluir para que no se bloquee el acceso a Microsoft 365. Para obtener más información, consulte [Creación, edición o eliminación de un grupo de seguridad en el Centro de administración de Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
+|Desbloquear un dispositivo no compatible o no admitido para un usuario o grupo de usuarios|Elija una de las siguientes opciones para desbloquear dispositivos:<br/>- Quite el usuario o los usuarios del grupo de seguridad al que se ha aplicado la directiva. Vaya a grupos de Centro de administración de Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**y, a**</a> continuación, seleccione nombre del grupo. Seleccione **Editar miembros y administradores**.<br/>- Quite el grupo de seguridad del que son miembros los usuarios de la directiva de dispositivo. Vaya a Security & Compliance Center > **Security policies** > **Device security policies (Directivas de seguridad del dispositivo**). Seleccione el nombre de la directiva de dispositivo y, a continuación, seleccione **Editar** > **implementación**.<br/>- Desbloquee todos los dispositivos no conformes para una directiva de dispositivo. Vaya a Security & Compliance Center > **Security policies** > **Device security policies (Directivas de seguridad del dispositivo**). Seleccione el nombre de la directiva de dispositivo y, a continuación, seleccione **Editar** > **requisitos de acceso**. Seleccione **Permitir infracción de acceso e informe**.<br/>- Para desbloquear un dispositivo no compatible o no compatible para un usuario o un grupo de usuarios, vaya al Centro de cumplimiento de Seguridad & > **Directivas** >  de seguridad **Administración de** >  dispositivos **Administrar la configuración de acceso** a dispositivos. Agregue un grupo de seguridad con los miembros que desea excluir para que no se bloquee el acceso a Microsoft 365. Para obtener más información, consulte [Creación, edición o eliminación de un grupo de seguridad en el Centro de administración de Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
 |Eliminación de usuarios para que sus dispositivos ya no estén administrados por Basic Mobility and Security|Para quitar el usuario, edite el grupo de seguridad que tiene directivas de administración de dispositivos para Basic Mobility and Security. Para obtener más información, consulte [Creación, edición o eliminación de un grupo de seguridad en el Centro de administración de Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).<br/>Para quitar la movilidad y la seguridad básicas de todos los usuarios de Microsoft 365, consulte [Desactivar la movilidad y la seguridad básicas](turn-off.md).|
 
 Live (v14)

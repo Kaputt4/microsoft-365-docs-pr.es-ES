@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 13387890ca1096115c5c933627ae674aaad15581
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669548"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863638"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -53,7 +53,7 @@ Al crear una directiva DLP, puede configurar las notificaciones de usuario para:
 
 Al crear una directiva DLP, puede habilitar **las notificaciones de usuario**. Cuando se habilitan las notificaciones de usuario, Microsoft 365 envía notificaciones por correo electrónico y sugerencias de directivas. Puede personalizar a quién se envían los correos electrónicos de notificación, el texto del correo electrónico y el texto de la sugerencia de directiva.
 
-1. Vaya a [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. Vaya al [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/permissions).
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -243,7 +243,10 @@ Actualmente, Outlook 2013 y versiones posteriores solo admite la presentación d
 - El contenido contiene
 - El contenido se comparte
 
-Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero todavía no se admite mostrar sugerencias de directiva a los usuarios. Además, Outlook no admite la presentación de sugerencias de directiva para una directiva DLP que se aplica a un grupo de distribución dinámico.
+Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero todavía no se admite mostrar sugerencias de directiva a los usuarios. 
+
+> [!NOTE]
+> Outlook no admite la presentación de sugerencias de directiva para una directiva DLP que se aplica a un grupo de distribución dinámico o a grupos de seguridad no habilitados para correo electrónico. 
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Sugerencias de directiva en el centro de administración de Exchange frente al portal de cumplimiento de Microsoft Purview
 

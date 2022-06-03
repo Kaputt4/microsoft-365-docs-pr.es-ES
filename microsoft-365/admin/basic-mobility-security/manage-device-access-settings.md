@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: En el caso de los dispositivos que no se pueden administrar con Basic Mobility and Security, debe bloquear Exchange ActiveSync acceso de la aplicación a Microsoft 365 correo electrónico.
-ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01b89bc50fb348072873d68f52b75d721830aeb5
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863136"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administración de la configuración de acceso a dispositivos en Basic Mobility and Security
 
@@ -40,9 +40,9 @@ Siga estos pasos:
 
 3. Vaya a **Prevención de pérdida de datos Directivas** \> **de** **dispositivos de administración** \> de dispositivos y seleccione **Administrar la configuración de acceso a dispositivos de toda la organización**.
 
-4. Seleccione **Bloquear**. 
+4. Seleccione **Acceso**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="La casilla De movilidad básica y seguridad bloquea el acceso.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="La casilla De movilidad básica y seguridad bloquea el acceso.":::
 
 5. Seleccione **Guardar**.
 

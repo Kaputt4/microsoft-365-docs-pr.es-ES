@@ -4,7 +4,7 @@
   items:
     - name: ¿Qué es la base de pruebas?
       href: overview.md
-- name: Guías de inicio rápido
+- name: Tutoriales rápidos
   items:
     - name: Crear cuenta base de pruebas
       href: createAccount.md
@@ -20,6 +20,8 @@
           href: uploadApplication.md
     - name: Compilar un paquete
       href: buildpackage.md
+    - name: Clonación de un paquete existente
+      href: clonepackage.md
     - name: Guía del paquete
       href: contentguideline.md
     - name: Reglas de aplicación o prueba

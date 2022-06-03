@@ -16,11 +16,11 @@ metadata:
   description: Encuentre respuestas a las preguntas más frecuentes sobre cómo mover datos principales a una nueva Office 365 ubicación geográfica del centro de datos.
   ms.custom: seo-marvel-mar2020
   ms.openlocfilehash: 8e6b8299bdd6d66ea6f64d2e980cb156a35213f8
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65101323"
+  ms.lasthandoff: 06/03/2022
+  ms.locfileid: "65875820"
 title: Preguntas más frecuentes sobre el movimiento de datos
 summary: Estas son respuestas a preguntas generales sobre cómo mover los datos principales de los clientes en reposo a una nueva ubicación geográfica del centro de datos.
 sections:
@@ -54,7 +54,7 @@ sections:
   - question: >
       ¿En qué momento se completa la migración para que los datos principales del cliente de mi inquilino se almacenen en reposo en mi nueva ubicación geográfica?
     answer: >
-      Debido a las dependencias compartidas entre Exchange Online y SharePoint Online/OneDrive para la Empresa, ninguna migración no se puede considerar completada hasta que se migran ambos servicios. Exchange Online y SharePoint Online/OneDrive para la Empresa suelen migrar en momentos independientes e independientes entre sí. Los administradores de inquilinos del cliente reciben confirmación en el Centro de mensajes cuando se completa cada migración del servicio y pueden ver la tarjeta de ubicación de datos en el Centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de reposo de cada servicio.
+      Debido a las dependencias compartidas entre Exchange Online y SharePoint Online/OneDrive para la Empresa, ninguna migración no se puede considerar completada hasta que se migran ambos servicios. Exchange Online y SharePoint Online/OneDrive para la Empresa suelen migrar en momentos independientes e independientes entre sí. Los administradores de inquilinos del cliente reciben confirmación en el Centro de mensajes cuando se completa cada migración del servicio y pueden ver la tarjeta de ubicación de datos en el Centro de Administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de reposo de cada servicio.
   - question: >
       ¿Cómo se asegura de que los datos de mis clientes estén seguros durante el traslado y de que no experimentaré tiempo de inactividad?
     answer: >
@@ -69,7 +69,7 @@ sections:
   - question: >
       ¿Dónde se encuentran los datos principales del cliente?
     answer: >
-      Los administradores de inquilinos del cliente pueden ver la tarjeta de ubicación de datos en el Centro de administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de reposo de cada servicio, específicamente para su inquilino. También publicamos la ubicación de las zonas geográficas del centro de datos, los centros de datos y la ubicación de Office 365 datos de clientes en los [mapas de centros de datos interactivos de Microsoft 365](https://office.com/datamaps) como referencia para los datos de clientes principales predeterminados actuales en ubicaciones de reposo para nuevos inquilinos. Puede comprobar la ubicación de los datos del cliente en reposo a través de la sección Ubicación de datos del perfil de la organización en el Centro de administración de Microsoft 365.
+      Los administradores de inquilinos del cliente pueden ver la tarjeta de ubicación de datos en el Centro de Administración en cualquier momento para confirmar los datos principales del cliente en la ubicación de reposo de cada servicio, específicamente para su inquilino. También publicamos la ubicación de las zonas geográficas del centro de datos, los centros de datos y la ubicación de Office 365 datos de clientes en los [mapas de centros de datos interactivos de Microsoft 365](https://office.com/datamaps) como referencia para los datos de clientes principales predeterminados actuales en ubicaciones de reposo para nuevos inquilinos. Puede comprobar la ubicación de los datos del cliente en reposo a través de la sección Ubicación de datos del perfil de la organización en el Centro de administración de Microsoft 365.
   - question: >
       ¿Cuándo podré solicitar un traslado?
     answer: >
@@ -150,5 +150,5 @@ sections:
   - question: >
       Tengo carpetas públicas implementadas en mi inquilino. ¿Cuál será el impacto en el acceso a carpetas públicas durante o después del traslado?
     answer: >
-      No hay ningún impacto en el acceso de los usuarios finales a carpetas públicas durante o después del traslado de carpetas públicas. Sin embargo, es posible que las carpetas públicas no estén disponibles para la administración en la herramienta Exchange Centro de administración hasta que todos los buzones de carpetas públicas se muevan en la misma región. Consulte [este artículo](https://aka.ms/pfxrf) para obtener más detalles.
+      No hay ningún impacto en el acceso de los usuarios finales a carpetas públicas durante o después del traslado de carpetas públicas. Sin embargo, es posible que las carpetas públicas no estén disponibles para la administración en la herramienta centro de Exchange Administración hasta que todos los buzones de carpetas públicas se muevan en la misma región. Consulte [este artículo](https://aka.ms/pfxrf) para obtener más detalles.
 additionalContent: "\n## <a name=\"related-topics\"></a>Temas relacionados\n  [Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos](moving-data-to-new-datacenter-geos.md)\n\n  [Cómo solicitar el movimiento de datos](request-your-data-move.md)\n\n  [Microsoft 365 multigeográfica](https://aka.ms/multi-geo)\n\n  [Microsoft 365 mapa interactivo del centro de datos](https://office.com/datamaps)\n\n  [Compatibilidad con Microsoft 365](../admin/get-help-support.md)\n\n  [Nuevas zonas geográficas del centro de datos para Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Servicios de Azure por región](https://azure.microsoft.com/regions/)"

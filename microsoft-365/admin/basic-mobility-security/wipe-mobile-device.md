@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Use la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863062"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrado de un dispositivo móvil en Basic Mobility and Security
 
@@ -46,25 +46,21 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 ## <a name="wipe-a-mobile-device"></a>Borrar un dispositivo móvil
 
-1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Inicie sesión en el Centro de administración de Microsoft 365 y vaya a la [página Mobile Administración de dispositivos (Mobile Administración de dispositivos).](https://portal.office.com/adminportal/home?#/MifoDevices)
 
-2. Escriba Mobile Administración de dispositivos en el campo de búsqueda y seleccione **Mobile Administración de dispositivos** en la lista de resultados.
+1. Seleccione **Administrar dispositivos**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción básica de administración de dispositivos móviles Mobility and Secruity.":::
+1. Seleccione el dispositivo que desea quitar.
 
-3. Seleccione **Administrar dispositivos**.
+1. Haga clic en **Administrar**.
 
-4. Seleccione el dispositivo que desea quitar.
-
-5. Seleccione **Administrar**.
-
-6. Seleccione el tipo de eliminación remota que desea realizar.
+1. Seleccione el tipo de eliminación remota que desea realizar.
 
     - Para realizar un borrado completo y restaurar el dispositivo a su configuración de fábrica, seleccione **Restablecimiento de fábrica**.
     - Para realizar un borrado selectivo y eliminar solo Microsoft 365 información de la organización, seleccione **Quitar datos de la empresa**.
     - Para quitar el dispositivo de la organización, seleccione **Quitar dispositivo**.
 
-7. Seleccione **Sí** para confirmar.
+1. Seleccione **Sí** para confirmar.
 
 ## <a name="how-do-i-know-it-worked"></a>Cómo sabes que funcionó?
 
@@ -89,4 +85,4 @@ El borrado se envía inmediatamente al dispositivo móvil y el dispositivo se ma
 |Los perfiles de correo electrónico creados por Basic Mobility and Security se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
 
 > [!NOTE]
-> Portal de empresa aplicación está disponible en el App Store para iOS y Play Store para dispositivos Android.
+> Portal de empresa aplicación está disponible en el App Store para iOS y el Play Store para dispositivos Android.
