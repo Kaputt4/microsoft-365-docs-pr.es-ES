@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863616"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
@@ -166,7 +166,7 @@ En la imagen siguiente se muestran algunas de las directivas predeterminadas que
 
 ### <a name="view-your-alert-policies"></a>Visualización de las directivas de alerta
 
-1. Vaya al Centro de cumplimiento de Microsoft 365 en [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.
+1. Vaya al portal de cumplimiento de Microsoft Purview en [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.
 
 2. En el panel de navegación, elija **Directivas** y, a continuación, elija **Directivas de alerta**.
 
@@ -179,12 +179,12 @@ En la imagen siguiente se muestran algunas de las directivas predeterminadas que
 
 ### <a name="how-to-view-alerts"></a>Cómo ver alertas
 
-En función de la alerta específica, puede ver las alertas en el portal de Microsoft 365 Defender o en el Centro de cumplimiento de Microsoft 365.
+En función de la alerta específica, puede ver las alertas en el portal de Microsoft 365 Defender o en el portal de cumplimiento Microsoft Purview.
 
 | Tipo de la alerta.  | Qué hacer  |
 |---------|---------|
 | Alerta de seguridad, como cuando un usuario hace clic en un vínculo malintencionado, se notifica un correo electrónico como malware o phish, o se detecta que un dispositivo contiene malware.     | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y, en **Correo electrónico & colaboración**, seleccione **Directivas & reglas** > **Directiva de alertas**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies>. |
-| Alerta de cumplimiento, como cuando un usuario comparte información delicada o confidencial (alerta de prevención de pérdida de datos) o hay un volumen inusual de uso compartido de archivos externos (alerta de gobernanza de la información)    | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y, a continuación, seleccione **Directivas** > **Alerta** > **Directivas de alerta**.  |
+| Alerta de cumplimiento, como cuando un usuario comparte información delicada o confidencial (alerta de prevención de pérdida de datos) o hay un volumen inusual de uso compartido de archivos externos (alerta de gobernanza de la información)    | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> y, a continuación, seleccione **Directivas** > **Alerta** > **Directivas de alerta**.  |
 
 Para obtener más información, vea [Ver alertas](../compliance/alert-policies.md#view-alerts).
 

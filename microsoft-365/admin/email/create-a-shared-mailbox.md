@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864570"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -92,6 +92,9 @@ Puede usar los siguientes permisos con un buzón compartido:
 - **Enviar como**: el permiso Enviar como permite al usuario suplantar el buzón compartido al enviar correo. Por ejemplo, si Katerina inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, parecerá que el departamento de marketing envió el correo electrónico.
 
 - **Enviar en nombre de**: el permiso Enviar en nombre de permite a los usuarios enviar correo electrónico en nombre del buzón compartido. Por ejemplo, si Juan inicia sesión en el buzón compartido de la recepción del edificio n.º 32 y envía un correo electrónico, el remitente será "Juan en nombre de la recepción del edificio n.º 32". No puede usar el CEF para conceder permisos Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
+
+> [!NOTE]
+> Los permisos **Enviar como** y **Enviar en nombre de** no funcionan en el cliente de escritorio de Outlook con el parámetro *HiddenFromAddressListsEnabled* en el buzón establecido en **True**, ya que requieren que el buzón esté visible en Outlook a través de la lista global de direcciones.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usar el EAC para editar la delegación de buzones compartidos
 
