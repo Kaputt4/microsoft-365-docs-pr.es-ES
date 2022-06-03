@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
-ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
+ms.openlocfilehash: 44b177d0215acaa2e637aacda22db3eb16ee7168
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65249639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864526"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -35,7 +35,7 @@ ms.locfileid: "65249639"
 > [!IMPORTANT]
 > No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *administrador de cumplimiento de comunicaciones* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global en el portal de cumplimiento de Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *de cumplimiento de comunicaciones Administración* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global de la portal de cumplimiento Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -53,7 +53,7 @@ Las comunicaciones se examinan cada 24 horas a partir del momento en que se crea
 
 ## <a name="pause-a-policy-preview"></a>Pausar una directiva (versión preliminar)
 
-Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. Pausar una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, pausar una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. Pausar una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *Administrador de cumplimiento de comunicaciones* .
+Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. Pausar una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, pausar una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. Pausar una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *Cumplimiento de la comunicación Administración*.
 
 Para pausar una directiva, vaya a la página **Directiva** , seleccione una directiva y, a continuación, seleccione **Pausar directiva** en la barra de herramientas de acciones. En el panel **Pausar directiva** , confirme que desea pausar la directiva; para ello, seleccione **Pausar**. En algunos casos, una directiva puede tardar hasta 24 horas en pausa. Una vez que la directiva está en pausa, no se crean alertas de mensajes que coincidan con la directiva. Sin embargo, los mensajes asociados a las alertas que se crearon antes de pausar la directiva siguen estando disponibles para su investigación, revisión y corrección.
 
@@ -76,12 +76,12 @@ En el caso de las organizaciones con directivas de cumplimiento de comunicacione
 - **Detectar y revisar mensajes inadecuados para diferentes grupos de usuarios**: es posible que algunas organizaciones prefieran crear varias directivas con la misma configuración, pero que incluyan diferentes usuarios dentro del ámbito y revisores diferentes para cada directiva.
 - **Directivas similares con pequeños cambios**: en el caso de las directivas con configuraciones o condiciones complejas, puede ahorrar tiempo crear una nueva directiva a partir de una directiva similar.
 
-Para copiar una directiva, los usuarios deben ser miembros de los grupos de roles *De cumplimiento de comunicaciones* o *Administrador de cumplimiento de comunicaciones* . Después de crear una nueva directiva a partir de una directiva existente, puede tardar hasta 24 horas en ver los mensajes que coinciden con la nueva configuración de directiva.
+Para copiar una directiva, los usuarios deben ser miembros de los grupos de roles *Cumplimiento de comunicaciones* o *Cumplimiento de comunicaciones Administración*. Después de crear una nueva directiva a partir de una directiva existente, puede tardar hasta 24 horas en ver los mensajes que coinciden con la nueva configuración de directiva.
 
 Para copiar una directiva y crear una nueva, siga estos pasos:
 
 1. Seleccione la directiva que desea copiar.
-2. Seleccione **el botón Copiar** barra de comandos de directiva en la barra de comandos o seleccione **Copiar directiva** en el menú de acciones de la directiva.
+2. Seleccione **el botón Copiar** barra de comandos de la directiva en la barra de comandos o seleccione **Copiar directiva** en el menú de acciones de la directiva.
 3. En el panel **Copiar directiva** , puede aceptar el nombre predeterminado de la directiva en el campo **Nombre de** directiva o cambiar el nombre de la directiva. El nombre de la directiva de la nueva directiva no puede ser el mismo que una directiva activa o desactivada existente. Complete el campo **Descripción** según sea necesario.
 4. Si no necesita más personalización de la directiva, seleccione **Copiar directiva** para completar el proceso. Si necesita actualizar la configuración de la nueva directiva, seleccione **Personalizar directiva**. Esto inicia el Asistente para directivas para ayudarle a actualizar y personalizar la nueva directiva.
 
@@ -102,24 +102,24 @@ Durante el proceso de revisión, los revisores de cumplimiento de comunicaciones
 
 ![Directiva de mensajes notificados por el usuario de cumplimiento de comunicaciones.](../media/communication-compliance-user-reported-messages-policy.png)
 
-Los mensajes notificados por el usuario de Teams chats son los únicos mensajes procesados por la directiva de mensajes notificados por el usuario y solo se pueden modificar los revisores asignados para la directiva. Todas las demás propiedades de directiva no son editables. Cuando se crea la directiva, los revisores iniciales asignados a la directiva son todos miembros del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellenan con al menos un usuario) o todos los miembros del grupo de roles *Administrador global* de la organización. El creador de directivas es un usuario seleccionado aleatoriamente del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellena con al menos un usuario) o un usuario seleccionado aleatoriamente del grupo de roles *Administrador global* de la organización.  
+Los mensajes notificados por el usuario de Teams chats son los únicos mensajes procesados por la directiva de mensajes notificados por el usuario y solo se pueden modificar los revisores asignados para la directiva. Todas las demás propiedades de directiva no son editables. Cuando se crea la directiva, los revisores iniciales asignados a la directiva son todos miembros del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellenan con al menos un usuario) o todos los miembros del grupo de roles *Global Administración* de la organización. El creador de directivas es un usuario seleccionado aleatoriamente del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellena con al menos un usuario) o un usuario seleccionado aleatoriamente del grupo de roles *Global Administración* de la organización.  
 
 Los administradores deben asignar inmediatamente revisores personalizados a esta directiva según corresponda para su organización. Esto puede incluir revisores como el oficial de cumplimiento, el responsable de riesgos o los miembros del departamento de recursos humanos. Para personalizar los revisores de los mensajes de chat enviados como mensajes notificados por el usuario, complete los pasos siguientes:
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
+1. Inicie sesión en [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
 2. En el portal de cumplimiento, vaya a **Cumplimiento de comunicaciones**.
 3. En la pestaña **Directiva** , seleccione la directiva *Mensajes notificados* por el usuario y seleccione **Editar**.
 4. En el panel **Supervisión de mensajes notificados por el usuario** , asigne revisores para la directiva. Los revisores deben tener buzones hospedados en Exchange Online. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 5. Seleccione **Guardar**.
 
-La opción *Notificar un problema* está habilitada de forma predeterminada y se puede controlar mediante Teams directivas de mensajería en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal). Los usuarios de su organización obtendrán automáticamente la directiva global, a menos que cree y asigne una directiva personalizada. Edite la configuración de la directiva global o cree y asigne una o varias directivas personalizadas para activar o desactivar la opción *Notificar una preocupación* . Para más información, consulte [Administración de directivas de mensajería en Teams](/microsoftteams/messaging-policies-in-teams).  
+La opción *Notificar un problema* está habilitada de forma predeterminada y se puede controlar mediante Teams directivas de mensajería en el [Centro de Teams Administración](/microsoftteams/manage-teams-in-modern-portal). Los usuarios de su organización obtendrán automáticamente la directiva global, a menos que cree y asigne una directiva personalizada. Edite la configuración de la directiva global o cree y asigne una o varias directivas personalizadas para activar o desactivar la opción *Notificar una preocupación* . Para más información, consulte [Administración de directivas de mensajería en Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->Si usa PowerShell para activar o desactivar la opción **Informes de usuario final** en Teams Centro de administración, debe usar [Microsoft Teams módulo cmdlets versión 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) o posterior.
+>Si usa PowerShell para activar o desactivar la opción **Informes de usuario final** en el Centro de Teams Administración, debe usar [Microsoft Teams módulo cmdlets versión 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) o posterior.
 
 ## <a name="storage-limit-notification-preview"></a>Storage notificación de límite (versión preliminar)
 
-Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios asignados a los grupos de roles *De* cumplimiento de *comunicaciones o Administrador de cumplimiento de comunicaciones* . Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
+Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios asignados a los grupos de roles *De cumplimiento de comunicaciones* o *cumplimiento de comunicaciones Administración*. Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
 
 >[!IMPORTANT]
 >Si se desactiva una directiva debido a que se alcanzan los límites de almacenamiento y mensajes, asegúrese de evaluar cómo administrar la directiva desactivada. Si elimina la directiva, todos los mensajes, los datos adjuntos asociados y las alertas de mensajes se eliminarán permanentemente. Si necesita mantener estos elementos para su uso futuro, no elimine la directiva desactivada.
@@ -146,7 +146,7 @@ De forma predeterminada, se muestra la condición **Direction is (Dirección)** 
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Tiene la opción de incluir tipos de información confidencial como parte de la directiva de cumplimiento de comunicaciones. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte y mucho más. Como parte de [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md), la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar el contenido que puede ser confidencial. Los tipos de información confidencial predeterminados son:
+Tiene la opción de incluir tipos de información confidencial como parte de la directiva de cumplimiento de comunicaciones. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte y mucho más. Como parte de [Learn about Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md), la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar el contenido que puede ser confidencial. Los tipos de información confidencial predeterminados son:
 
 - Financiera
 - Medicina y salud
@@ -164,7 +164,7 @@ Configure diccionarios de palabras clave personalizadas (o léxicos) para propor
 
 ### <a name="classifiers"></a>Clasificadores
 
-Los clasificadores integrados y globales examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para detectar diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y de palabras clave para identificar lenguaje en los mensajes que es probable que infrinja las directivas contra el acoso. Los clasificadores integrados admiten actualmente la identificación de palabras clave del mensaje en varios idiomas:
+[Los clasificadores integrados y globales](/microsoft-365/compliance/classifier-learn-about) examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para detectar diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y de palabras clave para identificar lenguaje en los mensajes que es probable que infrinja las directivas contra el acoso. Los clasificadores integrados admiten actualmente la identificación de palabras clave del mensaje en varios idiomas:
 
 - Árabe
 - Chino (simplificado)
@@ -182,11 +182,12 @@ Los clasificadores integrados y globales examinan los mensajes enviados o recibi
 Los clasificadores globales y entrenables integrados de cumplimiento de comunicaciones examinan las comunicaciones en busca de términos, imágenes y opiniones para los siguientes tipos de lenguaje y contenido:
 
 - **Imágenes para adultos**: busca imágenes que sean sexualmente explícitas en la naturaleza.
+- **Quejas de clientes**: examina los comentarios y las quejas realizadas sobre los productos o servicios de su organización.
 - **Discriminación**: busca un lenguaje discriminatorio explícito y es particularmente sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades.
 - **Imágenes de Gory**: busca imágenes que represente la violencia y el gore.
+- **Acoso**: busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
 - **Blasfemia**: busca expresiones soeces que avergüencen a la mayoría de las personas.
 - **Imágenes de Racy**: busca imágenes que son sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
-- **Acoso dirigido**: busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
 - **Amenaza**: busca amenazas para cometer violencia o daños físicos a una persona o propiedad.
 
 Los clasificadores de imágenes *Adult*, *Racy* y *Gory* examinan los archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores que 50x50 píxeles y mayores que 50 kilobytes (KB) para que la imagen pueda calificar para la evaluación. La identificación de imágenes se admite para Exchange Online mensajes de correo electrónico y canales de Microsoft Teams y chats.
@@ -195,8 +196,6 @@ Los clasificadores integrados y globales que se pueden entrenar no proporcionan 
 
 > [!NOTE]
 > Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en los mensajes más cortos que contienen contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para la supervisión de directivas de cumplimiento de comunicaciones para este tipo de contenido.
-
-Para obtener información sobre los clasificadores entrenables, consulte [Introducción a los clasificadores entrenables](classifier-get-started-with.md).
 
 ### <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
@@ -279,15 +278,15 @@ En el caso de las directivas de cumplimiento de comunicaciones, los siguientes v
 > [!NOTE]
 > La configuración del desencadenador de umbral de directiva de alerta para las actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de comunicaciones.
 
-Puede cambiar la configuración predeterminada de los desencadenadores en el número de actividades, el período de las actividades y los usuarios específicos de las directivas de alerta en la página **Directivas de alerta** del portal de cumplimiento de Microsoft Purview.
+Puede cambiar la configuración predeterminada de los desencadenadores en el número de actividades, el período de las actividades y para usuarios específicos de las directivas de alertas en la página **Directivas de alerta** del portal de cumplimiento Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Cambio del nivel de gravedad de una directiva de alerta
 
 Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para una directiva de cumplimiento de comunicaciones específica, siga estos pasos:
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
+1. Inicie sesión en [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
 
-2. En el portal de cumplimiento de Microsoft Purview, vaya a **Directivas**.
+2. En el portal de cumplimiento Microsoft Purview, vaya a **Directivas**.
 
 3. Seleccione **Office 365 alerta** en la página **Directivas** para abrir la página **Directivas de alertas**.
 

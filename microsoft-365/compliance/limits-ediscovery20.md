@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indexación y los límites de búsqueda en vigor para la solución eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 0c288b1d30fa668446421db547e2595f3385cbb7
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 3b52b36ebdaca429b37cf5784281d22d4dd4be74
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864483"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Límites en eDiscovery (Premium)
 
@@ -33,17 +33,17 @@ En este artículo se describen los límites de la solución de Microsoft Purview
 
 En la tabla siguiente se enumeran los límites de los casos y los conjuntos de revisión en eDiscovery (Premium).
 
-|Descripción del límite|Límite|
-|---|---|
-|Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).|Hasta 40 millones (nuevo formato de caso)|
-|Tamaño total de archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.|Hasta 1 TB (nuevo formato de caso)|
-|Cantidad total de datos cargados en todos los conjuntos de revisión de la organización al día.<br/>|2 TB|
-|Número máximo de conjuntos de carga por caso.|200|
-|Número máximo de conjuntos de revisión por caso.|20|
-|Número máximo de grupos de etiquetas por caso.|1,000|
-|Número máximo de etiquetas únicas por caso.|1000<sup>1</sup>|
-|Número máximo de trabajos simultáneos en su organización para agregar contenido a un conjunto de revisión. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|10<sup>2</sup>|
-|Número máximo de trabajos simultáneos para agregar contenido a un conjunto de revisión por usuario. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|3 |
+|Descripción del límite|Límite de mayúsculas y minúsculas clásicas|Nuevo límite de casos|
+|---|---|---|
+|Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).|3 millones|40 millones|
+|Tamaño total de archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.|300 GB|1 TB|
+|Cantidad total de datos cargados en todos los conjuntos de revisión de la organización al día.<br/>|2 TB|2 TB|
+|Número máximo de conjuntos de carga por caso.|200|200|
+|Número máximo de conjuntos de revisión por caso.|20|20|
+|Número máximo de grupos de etiquetas por caso.|1,000|1,000|
+|Número máximo de etiquetas únicas por caso.|1000<sup>1</sup>|1000<sup>1</sup>|
+|Número máximo de trabajos simultáneos en su organización para agregar contenido a un conjunto de revisión. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|10<sup>2</sup>|10<sup>2</sup>|
+|Número máximo de trabajos simultáneos para agregar contenido a un conjunto de revisión por usuario. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|3 |3 |
 
 ## <a name="hold-limits"></a>Límites de retención
 

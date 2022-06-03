@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: f99e9e66f1dae9459f28ba59ca9f197d78ab8bad
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65625807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864548"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -73,9 +73,6 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; c
 
 Microsoft 365 incluye varios clasificadores previamente entrenados:
 
-> [!CAUTION]
-> Estamos desaprobando el clasificador preentrenado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si lo usa actualmente, debe quitar los procesos empresariales de él. En su lugar, se recomienda usar los clasificadores previamente entrenados **threat**, **profanity** y **harassment** .
-
 - **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **Reanuda**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante.
@@ -108,8 +105,8 @@ Microsoft 365 incluye varios clasificadores previamente entrenados:
 
 - **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
-> [!NOTE]
-> El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
+    > [!NOTE]
+    > El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
 - **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
 
@@ -118,7 +115,7 @@ Microsoft 365 incluye varios clasificadores previamente entrenados:
 - **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
 - **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 
-Aparecen en la vista de clasificadores **portal de cumplimiento Microsoft Purview** >  **Data** **classificationTrainable** >  con el estado de `Ready to use`.
+Aparecen en la vista **clasificadores trainable** de **clasificación** >  **de portal de cumplimiento Microsoft Purview** >  Data con el estado de `Ready to use`.
 
 ![clasificadores-clasificadores previamente entrenados.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -127,11 +124,15 @@ Aparecen en la vista de clasificadores **portal de cumplimiento Microsoft Purvie
 
 Los clasificadores previamente entrenados pueden examinar el contenido en estos idiomas:
 
+- Árabe
 - Chino (simplificado)
+- Chino (tradicional)
+- Neerlandés
 - Inglés
 - Francés
 - Alemán
 - Italiano
+- Coreano
 - Japonés
 - Portugués
 - Español
@@ -166,7 +167,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores entrenables per
 
 ![flujo de trabajo de reentrenamiento del clasificador.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

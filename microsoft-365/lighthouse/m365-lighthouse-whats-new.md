@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864440"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -30,16 +30,6 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
-
-## <a name="may-2022"></a>Mayo de 2022
-
-### <a name="redesigned-left-navigation-pane"></a>Panel de navegación izquierdo rediseñado
-
-Hemos dado el panel de navegación izquierdo en Microsoft 365 Lighthouse un nuevo aspecto. Observará un diseño más elegante, con nodos de nivel superior como inquilinos, usuarios y dispositivos que se expanden para mostrar subnodos relacionados, como usuarios de riesgo, cumplimiento de dispositivos y administración de amenazas. Este modelo de navegación se alinea con el modelo usado por otros centros de administración de Microsoft 365.
-
-### <a name="enriched-user-details-pane"></a>Panel de detalles del usuario enriquecido
-
-Hemos rediseñado el panel de detalles del usuario para incluir más información del usuario y más acciones que puede realizar para administrar mejor a los usuarios. Ahora tiene el mismo aspecto que el panel de detalles del usuario en el Centro de administración de Microsoft 365. Para acceder al panel de detalles del usuario en Microsoft 365 Lighthouse, seleccione **Usuarios** en el panel de navegación izquierdo y, a continuación, seleccione **Buscar usuarios** o **Usuarios de riesgo**. Seleccione cualquier usuario para abrir el panel de detalles.
 
 ## <a name="april-2022"></a>Abril de 2022
 
