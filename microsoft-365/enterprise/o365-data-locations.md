@@ -1,8 +1,9 @@
 ---
 title: Ubicaciones de datos de Microsoft 365
-ms.author: deanw
-author: dmwmsft
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,20 +18,20 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 19741da49baf6890fbc0a7570190df1676990e9e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874081"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
 En las tablas siguientes, se muestra dónde se almacenan los datos en reposo de los clientes de los servicios de Microsoft 365 en todas las ubicaciones de nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
 
-Si su empresa se encuentra en la Unión Europea, consulte [Ubicaciones de datos para la Unión Europea](EU-data-storage-locations.md) para más información. 
+Si su empresa se encuentra en la Unión Europea, consulte [Ubicaciones de datos para la Unión Europea](EU-data-storage-locations.md) para más información.
 
-Los clientes deben ver la información específica de ubicación de datos del usuario en el Centro de administración de Microsoft 365 en **Configuración** > **Configuración de la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Perfil de la organización** pestaña</a> > **Ubicación de datos**. Si [ha solicitado moverse a una nueva geoárea](request-your-data-move.md), la información de la ubicación de datos del Centro de administración de Microsoft 365 puede mostrar únicamente la nueva geoárea aunque algunos datos puedan almacenarse temporalmente en su geoárea anterior durante la transición. 
+Los clientes deben ver la información específica de ubicación de datos del usuario en el Centro de administración de Microsoft 365 en **Configuración** > **Configuración de la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Perfil de la organización** pestaña</a> > **Ubicación de datos**. Si [ha solicitado moverse a una nueva geoárea](request-your-data-move.md), la información de la ubicación de datos del Centro de administración de Microsoft 365 puede mostrar únicamente la nueva geoárea aunque algunos datos puedan almacenarse temporalmente en su geoárea anterior durante la transición.
 
 Los nuevos espacios empresariales de Microsoft 365 se asocian, de forma predeterminada, en función de la geoárea de la transacción asociada a la primera suscripción de ese espacio empresarial.
 
@@ -38,89 +39,121 @@ Obtenga información sobre los compromisos contractuales para la ubicación de a
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de Europa o Norteamérica y guardar Datos de los clientes en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de la Unión Europea y guardar Datos de los clientes en reposo en cualquier parte de la Unión Europea.
-
-
-
+Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 Educación, independientemente de la sección "Ubicación de datos del cliente en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos del cliente a cualquier parte de Europa o Norteamérica y guardar Datos del cliente en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 Educación, independientemente de la sección "Ubicación de datos del cliente en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos del cliente a cualquier parte de la Unión Europea y guardar Datos del cliente en reposo en cualquier parte de la Unión Europea.
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="how-does-microsoft-define-data"></a>¿Cómo define Microsoft los datos?
+<details><summary>Haga clic para expandir</summary>
 
 Revise las [definiciones de los distintos tipos de datos](https://go.microsoft.com/fwlink/p/?linkid=864390) en el centro de confianza de Microsoft. En los [Términos de privacidad y seguridad](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft asume compromisos contractuales en relación con sus datos o los del cliente. Nos referimos a los datos principales de los clientes, como los datos de los clientes que se comprometen a ser almacenados en reposo sólo dentro de su región de acuerdo con los [Términos de privacidad y seguridad](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
+</details>
+
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>¿Dónde están las direcciones exactas de los centros de datos?
+
+<details><summary>Haga clic para expandir</summary>
 
 Microsoft no revela las direcciones exactas de los centros de datos. Establecimos esta directiva para proteger nuestros centros de datos.  Sin embargo, enumeramos las ubicaciones de las ciudades. Consulte [Ubicaciones de los centros de datos](o365-data-locations.md#data-center-locations) para obtener más información.
 
+</details>
+
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>¿Afecta la ubicación de los datos de los clientes a la experiencia de los usuarios finales?
+<details><summary>Haga clic para expandir</summary>
 
 El rendimiento de Microsoft 365 no solo es proporcional a la distancia de un usuario a las ubicaciones de los centros de datos. Las inversiones continuas de Microsoft en su red en la nube global, infraestructura de su nube global, y la arquitectura de los servicios de Microsoft 365 proporcionan a los usuarios una experiencia consistente y única, donde sea que estén almacenados los datos en reposo de los clientes. Si los usuarios están experimentando problemas de rendimiento, debe analizarlos en profundidad. Microsoft ha publicado instrucciones dirigidas hacia los clientes de Microsoft 365 para planear y optimizar el rendimiento de los usuarios finales en el [sitio web de soporte técnico de Office](./network-planning-and-performance.md).
 
+</details>
+
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>¿Cómo me ayuda Microsoft a cumplir los reglamentos nacionales, regionales y específicos del sector?
+<details><summary>Haga clic para expandir</summary>
 
 Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos de personas, Microsoft 365 le ofrece el conjunto más completo de ofertas de cumplimiento que cualquier proveedor de productividad global en la nube. Revise [nuestras ofertas de cumplimiento](/compliance/regulatory/offering-home) y más detalles en la sección [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro de confianza de Microsoft. Asimismo, algunos planes de Microsoft 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar sus datos, cumplir los requisitos legales y regulatorios, y supervisar las acciones realizadas en sus datos.
 
+</details>
+
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>¿Quién puede obtener acceso a los datos y en función de qué reglas?
+<details><summary>Haga clic para expandir</summary>
 
  Microsoft implementa medidas fuertes para ayudar a proteger los datos de los clientes frente a un acceso inadecuado o el uso por parte de personas no autorizadas. Esto incluye la restricción del acceso del personal de Microsoft y de los subcontratistas, y la definición cuidadosa de los requisitos para responder a las solicitudes de administración pública para datos de clientes. Sin embargo, puede obtener acceso a sus propios datos de cliente en cualquier momento y por cualquier motivo. Puede obtener más información en el [centro de confianza de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
+</details>
+
 ### <a name="does-microsoft-access-your-data"></a>¿Microsoft accede a sus datos?
+<details><summary>Haga clic para expandir</summary>
 
 Microsoft automatiza la mayoría de las operaciones de Microsoft 365 y, a la par, limita de forma intencionada su propio acceso a los datos de los clientes. Esto nos ayuda a administrar Microsoft 365 a gran escala y a abordar los riesgos de las amenazas internas a los datos de los clientes. De manera predeterminada, los ingenieros de Microsoft no cuentan con privilegios administrativos permanentes ni acceso permanente a los datos de los clientes en Microsoft 365. Un ingeniero de Microsoft puede tener un acceso limitado y registrado a los datos de los clientes durante un período de tiempo limitado, pero solo cuando sea necesario para las operaciones de servicio normal y solo cuando lo apruebe un miembro de la administración ejecutiva de Microsoft (y, en el caso de los clientes que tengan una licencia para la característica de Caja de seguridad del cliente, el cliente).
 
+</details>
+
 ### <a name="how-does-microsoft-secure-your-data"></a>¿Cómo protege Microsoft los datos?
+<details><summary>Haga clic para expandir</summary>
 
 Microsoft tiene directivas, controles y sistemas sólidos integrados en Microsoft 365 para ayudarle a proteger su información. Para obtener más información, consulte la [sección Seguridad de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) en el centro de confianza de Microsoft.
 
+</details>
+
 ### <a name="does-microsoft-365-encrypt-your-data"></a>¿Microsoft 365 cifra los datos?
+<details><summary>Haga clic para expandir</summary>
 
 Microsoft 365 usa tecnologías del lado del servidor que cifran los datos en reposo y en tránsito de los clientes. En el caso de los datos en reposo de los clientes, Microsoft 365 usa el cifrado de disco y el cifrado por archivo. En el caso de los datos en tránsito de los clientes, Microsoft 365 usa varias tecnologías de cifrado para las comunicaciones entre centros de datos, y entre clientes y servidores, como la Seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Microsoft 365 también incluye características de cifrado administradas por el cliente.
 
+</details>
+
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>¿Dónde puedo encontrar información de residencia de datos para Microsoft Azure?
+<details><summary>Haga clic para expandir</summary>
 
 Consulte la página [productos disponibles por región](https://go.microsoft.com/fwlink/p/?linkid=2093451) para buscar información sobre la residencia de datos de Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>¿Qué son las Capacidades multigeográficas en Microsoft 365?
+</details>
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) ofrece a los clientes la capacidad para asignar los datos en reposo principales del cliente dentro de las ubicaciones disponibles en la nube de Microsoft 365.   
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>¿Qué son las Capacidades multigeográficas en Microsoft 365?
+<details><summary>Haga clic para expandir</summary>
+
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) ofrece a los clientes la capacidad para asignar los datos en reposo principales del cliente dentro de las ubicaciones disponibles en la nube de Microsoft 365.
+
+</details>  
 
 ### <a name="what-services-support-multi-geo"></a>¿Qué servicios son compatibles con Multi-Geo?
+<details><summary>Haga clic para expandir</summary>
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive para la Empresa, SharePoint Online y Teams.
 
+</details>
+
 ### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>¿Por qué veo que mis solicitudes de servicio de Microsoft 365 para mis datos en reposo se conectan a servidores de países fuera de mi región?
+<details><summary>Haga clic para expandir</summary>
 
 En ocasiones, los servidores de una región diferente a la ubicación donde se almacenan los datos en reposo pueden controlar una solicitud de cliente. Esto puede ocurrir cuando las decisiones de enrutamiento de red eligen un servidor diferente para el procesamiento de solicitudes, pero en estos casos los datos no se mueven a una nueva ubicación en reposo.
 
+</details>
+
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>¿Cuáles son las excepciones para las ubicaciones de datos de Intune?
+<details><summary>Haga clic para expandir</summary>
 
 Microsoft no almacenará los datos del cliente de Intune en reposo fuera de la zona geográfica indicada. Excepto si:
 
 - Es necesario que Microsoft proporcione asistencia al cliente, solucione problemas del servicio o cumpla los requisitos legales.
 - El cliente configura una cuenta para permitir dicho almacenamiento de datos de clientes, incluido el uso de los siguientes:
-
   - Características diseñadas para funcionar de forma global, como Content Delivery Network (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones periféricas en todo el mundo.
-
   - Azure Active Directory (Azure AD), que puede almacenar datos de directorios a nivel mundial. Esto no aplica a las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en los Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o en Estados Unidos).
-   
   - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
 
-En cualquier caso, Microsoft no controla ni limita la ubicación desde la cual los clientes o usuarios finales pueden tener acceso a los datos del cliente. Del mismo modo, cuando los datos de clientes de otros servicios se integren posteriormente en Intune, los datos de cliente de origen seguirán almacenados según los compromisos geográficos del otro servicio (si los hubiera); solo la copia de los datos de cliente integrada en Intune se almacenará en la configuración geográfica de Intune indicada.  
+En cualquier caso, Microsoft no controla ni limita la geoárea desde la cual los clientes o usuarios finales pueden tener acceso a los datos de los clientes. Del mismo modo, cuando los datos del cliente de otros servicios se integren posteriormente en Intune, los datos del cliente de origen seguirán almacenados según los compromisos geográficos del otro servicio (si los hubiera); solo la copia de los datos del cliente integrada en Intune se almacenará en la configuración geográfica de Intune indicada.
+
+</details>
 
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>¿Cuáles son las consideraciones para las ubicaciones de datos de Microsoft Viva?
+<details><summary>Haga clic para expandir</summary>
 
 - Viva Connections
-
-  - Los datos del panel, los recursos y la aplicación de escritorio se almacenan en SharePoint Online. 
-  
-  - La fuente incluye contenido de SharePoint Online (noticias), Stream (almacenado en reposo en SharePoint Online) y Yammer (almacenado en reposo en Yammer).  
-  
+  - Los datos del panel, los recursos y la aplicación de escritorio se almacenan en SharePoint Online.
+  - La fuente incluye contenido de SharePoint Online (noticias), Stream (almacenado en reposo en SharePoint Online) y Yammer (almacenado en reposo en Yammer).
 - Ideas Viva
-
   - La residencia de datos de la aplicación personal se basa en la ubicación del buzón del usuario.
-  
   - La región de datos de administrador/líder y avanzado está determinada por la región principal del inquilino, no de usuarios individuales.
+
+</details>
 
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 
@@ -128,7 +161,7 @@ En la tabla siguiente se define la ubicación de los datos para varios servicios
 
 ### <a name="data-center-geographies"></a>Ubicaciones geográficas de los centros de datos
 
-Las siguientes ubicaciones geográficas globales pueden almacenar datos en reposo. Las ubicaciones en las que se almacenan los datos de los clientes pueden cambiar. 
+Las siguientes ubicaciones geográficas globales pueden almacenar datos en reposo. Las ubicaciones en las que se almacenan los datos de los clientes pueden cambiar.
 
 | Ubicaciones geográficas globales | Ubicaciones en las que se almacenan los datos de los clientes |
 | --- | --- |
@@ -720,7 +753,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="belarus"></a>Belarús
 <details><summary>Haga clic para expandir</summary><p>
@@ -1590,7 +1622,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
-
 ## <a name="congo-brazzaville"></a>Congo (Brazzaville)
 <details><summary>Haga clic para expandir</summary><p>
 
@@ -1619,7 +1650,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
-
 ## <a name="congo-kinshasa"></a>Congo (Kinshasa)
 <details><summary>Haga clic para expandir</summary><p>
 
@@ -1647,7 +1677,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="cook-islands"></a>Islas Cook
 <details><summary>Haga clic para expandir</summary><p>
@@ -2601,7 +2630,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
-
 ## <a name="greenland"></a>Groenlandia
 <details><summary>Haga clic para expandir</summary><p>
 
@@ -3077,7 +3105,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="india"></a>India
 <details><summary>Haga clic para expandir</summary><p>
@@ -3667,7 +3694,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
-
 ## <a name="lesotho"></a>Lesoto
 <details><summary>Haga clic para expandir</summary><p>
 
@@ -3695,7 +3721,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="liberia"></a>Liberia
 <details><summary>Haga clic para expandir</summary><p>
@@ -3752,7 +3777,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Haga clic para expandir</summary><p>
@@ -4454,7 +4478,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
-
 ## <a name="nepal"></a>Nepal
 <details><summary>Haga clic para expandir</summary><p>
 
@@ -4482,7 +4505,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="netherlands"></a>Países Bajos
 <details><summary>Haga clic para expandir</summary><p>
@@ -4539,7 +4561,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="new-caledonia"></a>Nueva Caledonia
 <details><summary>Haga clic para expandir</summary><p>
@@ -5273,7 +5294,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 ## <a name="russian-federation"></a>Federación Rusa
 <details><summary>Haga clic para expandir</summary><p>
 
-
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
@@ -5302,7 +5322,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 ## <a name="rwanda"></a>Ruanda
 <details><summary>Haga clic para expandir</summary><p>
 
-
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
@@ -5330,7 +5349,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 ## <a name="saint-helena"></a>Santa Elena
 <details><summary>Haga clic para expandir</summary><p>
-
 
 | Servicio | Ubicación |
 | --- | --- |
@@ -5891,7 +5909,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 ## <a name="somalia"></a>Somalia
 <details><summary>Haga clic para expandir</summary><p>
-
 
 | Servicio | Ubicación |
 | --- | --- |
@@ -6868,7 +6885,6 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
-
 
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Haga clic para expandir</summary><p>
