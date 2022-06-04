@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 8ceaea2b888c144fb5c6bc34d9d7788ab595b56b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864592"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
 
@@ -101,6 +101,7 @@ En las secciones siguientes se identifican los requisitos de licencia para Audit
 ### <a name="audit-standard"></a>Auditoría (estándar)
 
 - Suscripción a Microsoft Empresa Básico
+- Suscripción a Microsoft Business Standard
 - Suscripción a Aplicaciones de Microsoft 365 para negocios
 - Suscripción a Microsoft 365 Enterprise E3
 - Microsoft 365 Empresa Premium

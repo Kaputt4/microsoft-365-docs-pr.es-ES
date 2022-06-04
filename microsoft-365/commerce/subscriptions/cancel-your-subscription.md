@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
-ms.date: 04/29/2022
-ms.openlocfilehash: 4f01946c00a7497f23d086422ffa90718df78a9f
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.date: 06/02/2022
+ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145198"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873674"
 ---
 # <a name="cancel-your-business-subscription"></a>Cancelar la suscripción empresarial
 
@@ -56,6 +56,9 @@ Solo puede cancelar y recibir un crédito o reembolso prorrateado si lo cancela 
 Si necesita cancelar en un plazo de siete días después del inicio o la renovación de la suscripción, vaya a [Pasos para cancelar la suscripción](#steps-to-cancel-your-subscription), más adelante en este artículo.
 
 Si han transcurrido más de siete días, [desactive la facturación periódica](renew-your-subscription.md). Esto impide que la suscripción se renueve al final de su período.  Mantiene el acceso a sus productos y servicios durante el resto de la suscripción. Si tiene una suscripción anual y está pagando mensualmente, se le cobrará cada mes por el resto del período de suscripción.
+
+> [!NOTE]
+> Cancele la evaluación gratuita en cualquier momento para evitar futuros cargos. Después de la evaluación gratuita de 1 mes, se le cobrará la cuota de suscripción aplicable.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si no tiene un perfil de facturación
 
