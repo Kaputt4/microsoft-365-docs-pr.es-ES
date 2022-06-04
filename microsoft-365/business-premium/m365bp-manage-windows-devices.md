@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a habilitar Microsoft 365 para proteger dispositivos locales unidos a Active Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622746"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893126"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Administrar dispositivos Windows con Microsoft 365 Empresa Premium
 
@@ -90,7 +90,7 @@ Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoi
 
 2. En el **centro de administración de Azure Active Directory**, vaya a **Azure Active Directory**, elija **Dispositivos** y, después, **Configuración del dispositivo**.
 
-3. Compruebe que **Los usuarios pueden unir dispositivos a Azure AD** está habilitado 
+3. Compruebe que esté habilitado **Los usuarios pueden unir dispositivos a Azure AD** 
 
     1. Para habilitar todos los usuarios, establézcalo en **Todos**.
 
@@ -144,7 +144,7 @@ El primer comando establecerá una conexión con la nube de Microsoft y, cuando 
 
 2. Seleccione la directiva creada en el paso anterior y haga clic en **Aceptar**.
 
-## <a name="get-the-latest-administrative-templates"></a>Obtener la versión de Plantillas administrativas más reciente
+## <a name="get-the-latest-administrative-templates"></a>Obtener las plantillas administrativas más recientes
 
 Si no ve la directiva **Habilitar la inscripción automática de MDM con las credenciales de Azure AD predeterminadas**, puede deberse a que no tiene ADMX instalado para Windows 10, versión 1803 o posterior. Para corregir el problema, siga estos pasos (nota: la versión más reciente de MDM.admx es compatible con versiones anteriores):
 
@@ -178,6 +178,6 @@ En este momento, debería poder ver disponible la directiva **Habilitar la inscr
 
 - [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
 
-## <a name="next-objective"></a>Siguiente objetivo:
+## <a name="next-objective"></a>Siguiente objetivo
 
 [Prepararse para la implementación del cliente Office](m365bp-prepare-for-office-client-deployment.md)

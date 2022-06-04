@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personalice la página de inicio de sesión con un aviso de privacidad y consentimiento para Microsoft 365.
-ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fb56a6de2b916f9b9699e0963f9f1cd1bd8bba16
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097896"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893293"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 
@@ -50,6 +50,6 @@ Para obtener ejemplos de avisos de privacidad y consentimiento, consulte el Apé
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-1. [Utilizar el proceso guiado para la configuración básica](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+1. [Utilizar el proceso guiado para la configuración básica](m365bp-setup.md).
 
 2. [Configurar las funcionalidades de seguridad](m365bp-security-overview.md).

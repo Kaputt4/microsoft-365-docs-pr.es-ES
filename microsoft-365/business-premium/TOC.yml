@@ -2,8 +2,10 @@
   items:
     - name: Información general
       href: index.md
-    - name: Cómo Microsoft 365 ayuda a su negocio
+    - name: Cómo Microsoft 365 ayuda a su empresa
       href: m365bp-secure-users.md
+    - name: Cuaderno de estrategias de prueba de Microsoft 365 Business Premium
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
     - name: Obtenga Microsoft 365 para Campañas
@@ -16,14 +18,8 @@
           href: m365bp-setup-overview.md
         - name: Configuración de Microsoft 365 Empresa Premium
           href: m365bp-setup.md
-        - name: Configurar Microsoft 365 for Campaigns
-          items:
-            - name: Registrarse
-              href: m365-campaigns-sign-up.md
-            - name: Iniciar sesión
-              href: m365-campaigns-sign-in.md
-            - name: Personalizar la página de inicio de sesión
-              href: m365-customize-sign-in.md
+        - name: Configuración de Microsoft 365 Empresa para campañas
+          href: m365-campaigns-setup.md
     - name: Aumentar la seguridad y protección
       items:
         - name: Información general
@@ -42,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: Configurar la autenticación multifactor
           href: m365bp-multifactor-authentication.md
-        - name: Instalación de aplicaciones Office en dispositivos
+        - name: Instalación de aplicaciones de Office en dispositivos
           href: m365bp-install-office-apps.md
         - name: Protección de dispositivos no administrados
           href: m365bp-protect-pcs-macs.md
@@ -51,7 +47,7 @@
         - name: Información general
           href: m365bp-protect-email-overview.md
         - name: Protección contra suplantación de identidad (phishing) y otros ataques
-          href: avoid-phishing-and-attacks.md
+          href: m365bp-avoid-phishing-and-attacks.md
         - name: Enviar correo electrónico cifrado
           href: send-encrypted-email.md
     - name: Colaborar y compartir de forma segura
@@ -78,14 +74,16 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protección de dispositivos Windows
           items:
-            - name: Configuración de protección para dispositivos Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Proteger dispositivos Windows
               href: m365bp-secure-windows-devices.md
             - name: Administrar dispositivos Windows
               href: m365bp-manage-windows-devices.md
             - name: Preparar la implementación del cliente Office
               href: m365bp-prepare-for-office-client-deployment.md
+            - name: Creación de la configuración de protección de aplicaciones para dispositivos Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Validación de la configuración de la aplicación en dispositivos Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
         - name: Revista y edita las directivas de dispositivo
           href: m365bp-view-edit-create-mdb-policies.md
         - name: Administrar grupos de dispositivos
@@ -118,7 +116,7 @@
       href: m365bp-glossary.md
     - name: Preguntas más frecuentes de Microsoft 365 Empresa Premium
       href: microsoft-365-business-faqs.yml
-    - name: Microsoft 365 contenido de administrador
+    - name: Contenido de administrador de Microsoft 365
       href: /microsoft-365/admin/
     - name: Configuración de AutoPilot
       items:
@@ -130,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Configuración de protección de aplicaciones para Android y iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Validación de la configuración de la aplicación en Android e iOS
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: Asignar funciones de protección a la configuración de Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Configuración del Administrador de cumplimiento

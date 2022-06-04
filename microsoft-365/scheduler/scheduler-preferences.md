@@ -1,5 +1,5 @@
 ---
-title: Ajustar las preferencias de programación para Scheduler para Microsoft 365 Información general
+title: Ajustar las preferencias de programación para Scheduler for Microsoft 365 Overview
 ms.author: shivb
 author: shivbijlani
 manager: charlle
@@ -7,57 +7,38 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo ajustar las preferencias de programación de Scheduler para Microsoft 365.
-ms.openlocfilehash: 4c6bf31472f9237f82905ce36f7db534a99896b0
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+description: Obtenga información sobre cómo ajustar las preferencias de programación para Scheduler para Microsoft 365.
+ms.openlocfilehash: 34594db45883a7f746b9905661b1dedc8e5e4f6a
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670393"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893437"
 ---
-<a name="scheduling-preferences"></a>Preferencias de programación
-======================
+# <a name="scheduling-preferences-used-by-scheduler"></a>Preferencias de programación usadas por Scheduler
 
-Scheduler tiene en cuenta varias preferencias Outlook para programar una reunión para un organizador. Los cambios en la configuración de sus preferencias a través de Outlook clientes se reflejarán automáticamente en la forma en que Scheduler controla las solicitudes posteriores enviadas a Cortana. Por ejemplo, si un organizador cambia su preferencia de zona horaria en la página Configuración de Outlook Web, todas las solicitudes posteriores del organizador tendrán como valor predeterminado el nuevo valor de zona horaria.
+Scheduler usa varias preferencias de Outlook para programar una reunión para un organizador. Cualquier cambio en la configuración de preferencias en los clientes de Outlook afectará a cómo scheduler controla las solicitudes enviadas a Cortana. Por ejemplo, si un organizador cambia la preferencia de zona horaria en la página de configuración de Outlook Web, todas las solicitudes del organizador que siguen tendrán como valor predeterminado la nueva zona horaria.
 
-<a name="supported-settings"></a>Configuración compatibles
-------------------
+## <a name="supported-settings"></a>Configuración admitida
 
-<a name="time-zone"></a>Zona horaria
----------
+- **Zona horaria**. Zona horaria Usuarios del programador para determinar una hora adecuada para las reuniones. Consulte [Agregar, quitar o cambiar zonas horarias](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) para obtener información.
 
-Zona horaria que se usa al determinar una hora adecuada para programar reuniones. Consulte [la documentación sobre agregar, quitar o cambiar zonas horarias](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) .
+- **Horas de trabajo y días**. Para la mayoría de los tipos de reunión, Scheduler selecciona una hora según las preferencias de la semana de trabajo y las horas de reunión del organizador. Vea [Cambiar las horas y días laborales en Outlook](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) para obtener información.
 
-<a name="work-hours-and-days"></a>Horas y días laborables
--------------------
+- **Reuniones en línea**. Puede activar una opción calendario para que todas las reuniones que programe desde Outlook y Scheduler se celebren en línea con los detalles de la conferencia. Scheduler admite actualmente Teams y Skype como proveedores de reuniones. Consulte [Realización de todas las reuniones de Teams](https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f#bkmk_makeallteamsmtngs) para obtener información.
 
-Para la mayoría de los tipos de reunión, Scheduler programará una hora según las preferencias de la semana laboral y el horario de reunión del organizador. Consulte [Cambiar las horas de trabajo y los días en Outlook](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) documentación.
+- **Duración predeterminada de la reunión**. Si el organizador no especifica la duración de la reunión deseada en la solicitud, Scheduler usará la duración de la reunión preferida para la solicitud. Esta configuración solo está disponible en el cliente de Windows Outlook.
 
-<a name="online-meetings"></a>Conferencias en línea
----------------
+   1. Seleccione **Opciones** **de archivo** >  para ver el cuadro de diálogo Opciones de Outlook.
 
-Puede activar una opción Calendario para que todas las reuniones que programe desde Outlook y Scheduler se celebren en línea con los detalles de la conferencia. Scheduler admite actualmente Teams y Skype como proveedores de reuniones. Consulte [La documentación sobre la realización de todas las reuniones Teams reuniones](https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f#bkmk_makeallteamsmtngs).
+   2. Seleccione **Calendario** en la lista de la izquierda del cuadro de diálogo.
 
-<a name="default-meeting-duration"></a>Duración predeterminada de la reunión
-------------------------
+   3. En Configuración de opciones de calendario a la derecha del cuadro de diálogo, seleccione **Duración predeterminada para nuevas citas y reuniones**.
 
-Si el organizador no especifica la duración de la reunión deseada en la solicitud, Scheduler usará la duración de la reunión preferida para la solicitud. Esta configuración solo está disponible en el cliente Windows Outlook.
+      :::image type="content" source="../media/OutlookOptions.png" alt-text="Cuadro de diálogo Opciones de calendario de Outlook en Windows, donde puede configurar el tiempo de trabajo, la duración predeterminada de la reunión y seleccionar acortar las reuniones para que scheduler las use.":::
 
-1. Haga clic en **Opciones** **de archivo.** >  
+- **Evite las reuniones back-to-back**. Una configuración de Outlook puede iniciar reuniones tarde o finalizar las reuniones antes de tiempo para evitar las reuniones back-to-back. Además, Scheduler puede acortar la duración de la reunión según la preferencia que establezca. Consulte [Cambio de la longitud predeterminada de la reunión](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) para obtener información.
 
-2. Seleccione **Calendario** en el **panel de navegación**.
-
-3. La configuración de duración predeterminada se encuentra en **Opciones** **de calendario**.
-
-![Calendario de Outlook cuadro de diálogo de opciones en Windows. Configure el tiempo de trabajo, la duración predeterminada y acorte las opciones de reuniones para que Scheduler las use como valores predeterminados.](../media/OutlookOptions.png)
-
-<a name="avoid-back-to-back-meetings"></a>Evitar reuniones back-to-back
----------------------------
-
-Outlook ahora tiene una configuración que inicia automáticamente las reuniones tarde o finaliza las reuniones antes de tiempo para evitar las reuniones inversas. Si se establece, Scheduler también acortará la duración de la reunión según la configuración de preferencia. Consulte [Cambio de la longitud predeterminada de la reunión](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) en Outlook documentación.
-
-##<a name="additional-note"></a>Nota adicional
-
-- Si usa el cliente de Windows, debe establecer la siguiente opción para asegurarse de que las preferencias se sincronizan entre Scheduler y otros clientes Outlook:
-
-![Calendario de Outlook cuadro de diálogo de opciones en Windows. Active esta opción para habilitar "Almacenar mi configuración de Outlook en la nube".](../media/OutlookOptions2.png)
+> [!NOTE]
+> Si usa el cliente de Windows, debe seleccionar **Almacenar la configuración de Outlook en la nube** para sincronizar sus preferencias entre Scheduler y otros clientes de Outlook.
+> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Cuadro de diálogo Opciones de calendario de Outlook en Windows. Seleccione Almacenar la configuración de Outlook en la nube para sincronizar las preferencias de programación entre clientes.":::

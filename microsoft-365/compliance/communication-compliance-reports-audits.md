@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7e26451e2cf4786f73b16f74bedd46ca764f6ed
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173749"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893402"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
 
@@ -65,7 +65,7 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
     - Notificación del usuario
     - Caso creado
 
-- **Elemento y acciones por ubicación**: revise y exporte los elementos coincidentes y las acciones de corrección por Microsoft 365 ubicación. Incluye información sobre cómo se asocian las plataformas de carga de trabajo a:
+- **Elemento y acciones por ubicación**: revise y exporte los elementos coincidentes y las acciones de corrección por ubicación de Microsoft 365. Incluye información sobre cómo se asocian las plataformas de carga de trabajo a:
 
     - Elementos coincidentes
     - Elementos escalados
@@ -91,10 +91,10 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
 
 - **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el archivo .csv. Algunos ejemplos son:
 
-    - **Correo electrónico**: tipos de información confidencial detectados en Exchange mensajes de correo electrónico.
-    - **Teams**: tipos de información confidencial detectados en canales de Microsoft Teams y mensajes de chat.
-    - **Skype Empresarial**: tipos de información confidencial detectados en Skype para las comunicaciones empresariales.
-    - **Yammer**: tipos de información confidencial detectados en Yammer bandejas de entrada, publicaciones, chats y respuestas.
+    - **Correo electrónico**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
+    - **Teams**: tipos de información confidencial detectados en los canales y mensajes de chat de Microsoft Teams.
+    - **Skype Empresarial**: tipos de información confidencial detectados en las comunicaciones de Skype Empresarial.
+    - **Yammer**: tipos de información confidencial detectados en bandejas de entrada, publicaciones, chats y respuestas de Yammer.
     - **Orígenes de terceros**: se han detectado tipos de información confidencial para las actividades asociadas a conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial de la columna Origen de terceros.
     - **Otro**: tipos de información confidencial que se usan para el procesamiento interno del sistema. La selección o anulación de la selección de este origen para el informe no afectará a ningún valor.
 
@@ -152,7 +152,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 |:-----|:-----|
 | **CreationDate** | Fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operaciones** | Las operaciones de actualización realizadas en la directiva. |
+| **Operations** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y separan mediante delimitadores de comas. |
 
 Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *Administrador global* o *Administrador de cumplimiento de comunicaciones* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
@@ -161,7 +161,7 @@ Para ver las actividades de revisión de cumplimiento de comunicaciones de una d
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operaciones** | Las operaciones de revisión realizadas en la directiva. |
+| **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y separan mediante delimitadores de comas. |
 
 También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Para más información sobre las directivas de retención de registros de auditoría, consulte [Administración de directivas de retención de registros de auditoría](audit-log-retention-policies.md).
@@ -188,7 +188,7 @@ Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan e
 
 Para comprobar el tamaño de un buzón de supervisión de una directiva, siga estos pasos:
 
-1. Use el cmdlet [Conectar-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) en el módulo Exchange Online PowerShell V2 para conectarse a Exchange Online PowerShell mediante la autenticación moderna.
+1. Use el cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) en el módulo Exchange Online PowerShell V2 para conectarse a Exchange Online PowerShell mediante la autenticación moderna.
 2. Ejecute el siguiente comando en PowerShell:
 
     ```PowerShell
