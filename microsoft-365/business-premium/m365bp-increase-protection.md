@@ -25,25 +25,25 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863616"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893193"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
 En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Empresa Premium. Es fundamental proteger su negocio contra phishing, malware y otras amenazas. Este objetivo incluye información sobre:
 
-- [Directivas de seguridad preestablecidas](#review-and-apply-preset-security-policies) que pueden ahorrar mucho tiempo en la instalación y la configuración
+- [Directivas de seguridad preestablecidas](#review-and-apply-preset-security-policies) que pueden ahorrar mucho tiempo en la instalación y configuración.
 - [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales
-- [Cómo ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y de OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan. 
+- Cómo [ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Revisión y aplicación de directivas de seguridad preestablecidas
 
-La suscripción incluye [directivas de seguridad preestablecidas](../security/office-365-security/preset-security-policies.md) que usan la configuración recomendada para la protección contra correo no deseado, antimalware y contra phishing. De forma predeterminada, la protección integrada está habilitada; sin embargo, considere la posibilidad de aplicar protección estándar o estricta para aumentar la seguridad. 
+La suscripción incluye [directivas de seguridad preestablecidas](../security/office-365-security/preset-security-policies.md) que usan la configuración recomendada para la protección contra correo no deseado, antimalware y contra phishing. De forma predeterminada, la protección integrada está habilitada; sin embargo, considere la posibilidad de aplicar protección estándar o estricta para aumentar la seguridad.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Captura de pantalla de las directivas de seguridad preestablecidas.":::
 
@@ -214,4 +214,4 @@ Si los usuarios pueden compartir sus calendarios, consulte [estas instrucciones]
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Bien, ahora vamos a iniciar la misión para [**configurar dispositivos BYOD**](m365bp-devices-overview.md).
+Ahora vamos a [**configurar esos dispositivos BYOD no administrados**](m365bp-devices-overview.md).
