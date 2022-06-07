@@ -1,7 +1,7 @@
 ---
 title: Información sobre el archivado de expansión automática
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,16 +10,23 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - Strat_O365_IP
-  - M365-security-compliance
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: 'Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.'
+description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.
+ms.openlocfilehash: fc3e40e72ad287e7d7e696557422420cccbd4ee1
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922447"
 ---
-
 # <a name="learn-about-auto-expanding-archiving"></a>Información sobre el archivado de expansión automática
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento de buzones de correo adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzó la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ya no es así.
 
@@ -40,10 +47,9 @@ Esta es una introducción rápida del proceso.
 
 1. El archivado está habilitado para un buzón de usuario o un buzón compartido. Se crea un buzón de archivo con 100 GB de espacio de almacenamiento y la cuota de advertencia para el buzón de archivo se establece en 90 GB.
 
-2. Un administrador habilita el archivado de expansión automática para el buzón. Cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Microsoft 365 agrega espacio de almacenamiento al archivo hasta que alcanza un tamaño máximo de 1,5 TB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
-
-   > [!NOTE]
-   > Si un buzón se coloca en espera o se asigna a una directiva de retención, la cuota de almacenamiento para el buzón de archivo se aumenta a 110 GB cuando se habilita el archivado de expansión automática. Del mismo modo, la cuota de advertencia de archivo se aumenta a 100 GB.
+2. Un administrador habilita el archivado de expansión automática para el buzón. Si el buzón tiene aplicada una directiva de retención o suspensión, la cuota de almacenamiento para el buzón de archivo se aumenta a 110 GB y la cuota de advertencia de archivo aumenta a 100 GB.
+    
+    Después, cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza su cuota de almacenamiento, el buzón de archivo se convierte en un archivo de expansión automática. Se agrega espacio de almacenamiento adicional hasta que alcanza un tamaño máximo de 1,5 TB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
 
 3. Microsoft 365 agrega automáticamente más espacio de almacenamiento cuando sea necesario.
 
@@ -105,7 +111,7 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
 
 - **Exhibición de documentos electrónicos:** Cuando se usa una herramienta de exhibición de documentos electrónicos, como la búsqueda de contenido o la exhibición de documentos electrónicos In-Place, también se buscan las áreas de almacenamiento adicionales de un archivo expandido automáticamente.
 
-- **Retención:** Al poner un buzón en espera mediante herramientas como Suspensión por litigio en Exchange Online o las directivas de retención y retención de casos de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo expandido automáticamente también se pone en espera.
+- **Retención:** Al poner un buzón en espera mediante herramientas como suspensión por litigio en Exchange Online o suspensiones de casos de exhibición de documentos electrónicos y directivas de retención en el portal de cumplimiento de Microsoft Purview, el contenido ubicado en un archivo expandido automáticamente también se coloca en suspensión.
 
 - **Administración de registros de mensajería (MRM):** Si usa directivas de eliminación de MRM en Exchange Online para eliminar permanentemente los elementos de buzón expirados, también se eliminarán los elementos expirados ubicados en el archivo expandido automáticamente.
 
