@@ -348,10 +348,6 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Amenazas detectadas por Antivirus de Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
-        - name: Configurar las características de cumplimiento
-          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
-        - name: Puntuación de seguridad
-          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: Una guía para cumplimiento normativo RGPD
           href: security-and-compliance/gdpr-compliance.md
     - name: Administra los dispositivos y datos de las aplicaciones

@@ -1,15 +1,15 @@
 ---
-title: Expertos en amenazas de Microsoft en Microsoft 365 Defender introducción
+title: Información general sobre los expertos en amenazas de Microsoft 365 Defender
 ms.reviewer: ''
-description: Expertos en amenazas de Microsoft proporciona una capa adicional de experiencia para Microsoft 365 Defender.
-keywords: servicio de búsqueda de amenazas administradas, búsqueda de amenazas administradas, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft
+description: Microsoft Threat Experts proporciona una capa adicional de experiencia a Microsoft 365 Defender.
+keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
+ms.author: dolmont
 author: martyav
 ms.localizationpriority: medium
 manager: dansimp
@@ -18,14 +18,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ebe155d825f9096ded4b1e1f18955b5b24350175
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d256aea992eda2426ab719bf3ee67c2fa0d3c9ea
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682292"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922403"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Expertos en amenazas de Microsoft en Microsoft 365 introducción
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Introducción a los expertos en amenazas de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,65 +36,70 @@ ms.locfileid: "63682292"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Expertos en amenazas de Microsoft: las notificaciones de ataque dirigidos son un servicio de búsqueda de amenazas administrado. Una vez que apliques y te acepten, recibirás notificaciones de ataques dirigidos de expertos en amenazas de Microsoft, para que no te pierdas las amenazas críticas a tu entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización.
-Expertos en amenazas de Microsoft: Expertos a petición le permite obtener consejos de expertos sobre las amenazas que enfrenta su organización. Puede buscar ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como servicio de suscripción.
+Expertos en amenazas de Microsoft: las notificaciones de ataque dirigidas son un servicio de búsqueda de amenazas administrado. Una vez que se aplique y se acepte, recibirá notificaciones de ataque dirigidas de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización.
+Expertos en amenazas de Microsoft: expertos a petición le permiten obtener consejos expertos sobre las amenazas a las que se enfrenta su organización. Puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como servicio de suscripción.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Aplicar para Expertos en amenazas de Microsoft: notificaciones de ataques dirigidos
+## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Solicitud para expertos en amenazas de Microsoft: notificaciones de ataque dirigidas
 
 > [!IMPORTANT]
-> Antes de aplicar, asegúrate de analizar los requisitos de elegibilidad para Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas con el proveedor de servicios técnicos de Microsoft y el equipo de cuenta.
+> Antes de aplicar, asegúrese de analizar los requisitos de idoneidad de Microsoft Threat Experts – Targeted Attack Notifications (Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas) con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas.
 
-Si ya tienes Microsoft Defender para endpoint y Microsoft 365 Defender, puedes solicitar Expertos en amenazas de Microsoft: Notificaciones de ataques dirigidos a través de su portal Microsoft 365 Defender web. Ve a **Configuración > Endpoints > General > Advanced features > Expertos en amenazas de Microsoft– Targeted Attack Notifications** y selecciona **Aplicar**. Consulte [Configure Expertos en amenazas de Microsoft capabilities para](./configure-microsoft-threat-experts.md) obtener una descripción completa.
+Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender, puede solicitar expertos en amenazas de Microsoft: notificaciones de ataque dirigidas a través de su portal de Microsoft 365 Defender. Vaya a **Configuración > puntos de conexión > Características generales > avanzadas > Microsoft Threat Experts – Targeted Attack Notifications (Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas)** y seleccione **Aplicar**. Consulte [Configuración de funcionalidades de expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md) para obtener una descripción completa.
 
-![Captura de pantalla de la página de aplicación MTE.](../../media/mte/mte-collaboratewithmte.png)
+:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="La opción Características avanzadas en el panel de navegación izquierdo de la página Puntos de conexión del portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-Una vez que la aplicación esté aprobada, empezarás a recibir notificaciones de ataques dirigidos siempre que los expertos en amenazas detecten una amenaza para el entorno.
+Una vez aprobada la aplicación, comenzará a recibir notificaciones de ataque dirigidas cada vez que los expertos en amenazas detecten una amenaza para su entorno.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a Expertos en amenazas de Microsoft: expertos a petición
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a expertos en amenazas de Microsoft: expertos a petición
 
-Póngase en contacto con su representante de Microsoft para suscribirse a Expertos a petición.  Consulte [Configure Expertos en amenazas de Microsoft capabilities para](./configure-microsoft-threat-experts.md) obtener información completa.
+Póngase en contacto con su representante de Microsoft para suscribirse a Expertos a petición.  Consulte [Configuración de funcionalidades de expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md) para obtener más información.
 
-## <a name="receive-targeted-attack-notification"></a>Recibir notificación de ataque dirigido
+## <a name="receive-targeted-attack-notification"></a>Recepción de una notificación de ataque dirigida
 
-La Expertos en amenazas de Microsoft de notificación de ataques dirigidos proporciona una búsqueda proactiva de las amenazas más importantes para la red. Nuestros expertos en amenazas buscan intrusiones adversarias humanas, ataques con teclado y ataques avanzados, como el ciberespionaje. Estas notificaciones se mostrarán como una nueva alerta. El servicio de búsqueda administrada incluye:
+La funcionalidad Microsoft Threat Experts – Targeted Attack Notification proporciona búsqueda proactiva de las amenazas más importantes para la red. Nuestros expertos en amenazas buscan intrusiones de adversarios humanos, ataques de teclado práctico y ataques avanzados, como ciberespionaje. Estas notificaciones se mostrarán como una nueva alerta. El servicio de búsqueda administrada incluye:
 
-- Supervisión y análisis de amenazas, reducción del tiempo de espera y el riesgo para su empresa
-- Inteligencia artificial entrenada por el cazador para descubrir y apuntar tanto a ataques conocidos como a amenazas emergentes
+- Supervisión y análisis de amenazas, lo que reduce el tiempo de permanencia y el riesgo para su empresa
+- Inteligencia artificial entrenada por cazadores para detectar y atacar tanto ataques conocidos como amenazas emergentes
 - Identificación de los riesgos más pertinentes, lo que ayuda a los SOC a maximizar su eficacia
-- Ayuda a seleccionar los compromisos y proporcionar todo el contexto que se pueda entregar rápidamente para habilitar una respuesta rápida de SOC.
+- Ayudar a determinar el ámbito de los compromisos y proporcionar tanto contexto como se pueda entregar rápidamente para habilitar una respuesta rápida de SOC.
 
-## <a name="collaborate-with-experts-on-demand"></a>Colaborar con expertos a petición
+## <a name="collaborate-with-experts-on-demand"></a>Colaboración con expertos a petición
 
-También puede ponerse en contacto con expertos en amenazas de Microsoft directamente dentro del portal de seguridad de Microsoft 365, para obtener una respuesta rápida y precisa a las amenazas.  Los expertos pueden proporcionar información para comprender mejor las complejas amenazas que puede enfrentar su organización.  Consulte a un experto para:
+También puede ponerse en contacto con expertos en amenazas de Microsoft directamente en el portal de seguridad de Microsoft 365 para obtener una respuesta rápida y precisa a las amenazas.  Los expertos pueden proporcionar información para comprender mejor las complejas amenazas a las que puede enfrentarse su organización.  Consulte a un experto para:
 
-- Recopilar información adicional sobre alertas e incidentes, incluidas las causas raíz y el ámbito
-- Obtener claridad en dispositivos, alertas o incidentes sospechosos y obtener los pasos siguientes si se enfrenta a un atacante avanzado
-- Determinar riesgos y protecciones disponibles relacionadas con actores de amenazas, campañas o técnicas emergentes de atacantes
+- Recopilación de información adicional sobre alertas e incidentes, incluidas las causas principales y el ámbito
+- Obtenga claridad sobre los dispositivos sospechosos, las alertas o los incidentes y obtenga los pasos siguientes si se enfrenta a un atacante avanzado.
+- Determinación de riesgos y protecciones disponibles relacionadas con actores de amenazas, campañas o técnicas de atacantes emergentes
 
-La opción consultar **a un experto en amenazas** está disponible en varios lugares del portal:
+La opción **para consultar a un experto en amenazas** está disponible en varios lugares del portal:
 
-- <i>**Menú acciones de página de dispositivo**</i><BR>
-![Captura de pantalla de la opción de menú MTE-EOD en el menú de acción Página del dispositivo.](../../media/mte/device-actions-mte-highlighted.png)
+- <i>**Menú acciones de página del dispositivo**</i><BR>
 
-- <i>**Menú desplegable de página de inventario de dispositivos**</i><BR>
-![Captura de pantalla de la opción de menú MTE-EOD en la página de inventario de dispositivos.](../../media/mte/device-inventory-mte-highlighted.png)
+:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="La opción de menú MTE-EOD del menú acción de página Dispositivo del portal de Microsoft 365 Defender" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
 
-- <i>**Menú desplegable de página de alertas**</i><BR>
-![Captura de pantalla de la opción de menú MTE-EOD en la página de alerta.](../../media/mte/alerts-actions-mte-highlighted.png)
+- <i>**Menú flotante de la página de inventario de dispositivos**</i><BR>
+
+:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Inventario de dispositivos del portal de Microsoft 365 Defender" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
+
+- <i>**Menú flotante de la página Alertas**</i><BR>
+
+:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Alertas del portal de Microsoft 365 Defender" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
 
 - <i>**Menú acciones de la página Incidentes**</i><BR>
-![Captura de pantalla de la opción de menú MTE-EOD en la página incidentes.](../../media/mte/incidents-action-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Incidentes del portal de Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
 - <i>**Página de inventario de incidentes**</i><BR>
-![Captura de pantalla de la opción de menú MTE-EOD en la página de inventario de incidentes.](../../media/mte/incidents-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="La opción de menú MTE-EOD en la página de inventario de incidentes del portal de Microsoft 365 Defender" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
-> Si tienes asignada la suscripción de soporte técnico premier Office 365 tu licencia de Microsoft Defender, puedes realizar un seguimiento del estado de los casos de Expertos a petición a través de Microsoft Services Hub.
+> Si tiene una suscripción de soporte técnico Premier asignada a su licencia de Microsoft Defender para Office 365, puede realizar un seguimiento del estado de los casos de Expertos a petición a través del Centro de servicios de Microsoft.
 
 Vea este vídeo para obtener una introducción rápida al Centro de servicios de Microsoft.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Configurar Expertos en amenazas de Microsoft funcionalidades](./configure-microsoft-threat-experts.md)
+- [Configuración de las funcionalidades de Expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md)

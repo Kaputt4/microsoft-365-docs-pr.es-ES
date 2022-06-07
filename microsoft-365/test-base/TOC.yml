@@ -7,7 +7,7 @@
 - name: Tutoriales rápidos
   items:
     - name: Crear cuenta base de pruebas
-      href: createAccount.md
+      href: createaccount.md
     - name: Probar la aplicación en Test Base
       items:
         - name: Información general
@@ -16,14 +16,16 @@
           href: testapplication.md
         - name: Prueba de la aplicación de Intune en Test Base
           href: testintuneapplication.md
-        - name: Upload el paquete base de prueba (Zip)
-          href: uploadApplication.md
+        - name: Carga de un paquete zip precompilado
+          href: uploadapplication.md
     - name: Compilar un paquete
       href: buildpackage.md
-    - name: Clonación de un paquete existente
+    - name: Clonar un paquete existente
       href: clonepackage.md
     - name: Guía del paquete
       href: contentguideline.md
+    - name: Descripción del costo de uso
+      href: usagecost.md
     - name: Reglas de aplicación o prueba
       href: rules.md
 - name: Guías de procedimientos

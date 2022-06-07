@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio a Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321717"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922939"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -149,7 +149,7 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 ### <a name="add-an-onmicrosoftcom-domain"></a>Agregar un dominio de onmicrosoft.com
 
-Cada organización de Microsoft 365 puede tener hasta tres dominios onmicrosoft.com.
+Cada organización de Microsoft 365 puede tener hasta cinco dominios onmicrosoft.com.
 
 > [!NOTE]
 > Debe ser administrador global o administrador de nombres de dominio para agregar un dominio.
@@ -159,11 +159,29 @@ Cada organización de Microsoft 365 puede tener hasta tres dominios onmicrosoft.
 
 Para agregar un dominio onmicrosoft.com:
 
-1. Vaya al Centro de administración de Microsoft, **Configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a>.
+1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, a continuación **, dominios.**
+2. Seleccione el onmicrosoft.com dominio predeterminado.
 
-2. En la pestaña **Información general**, seleccione **Agregar dominio onmicrosoft.com**.
+    ![Página Dominios.](../../media/onmicrosoft-domains.png)
+  
+3. En la página de propiedades del dominio, en la sección **Acerca de este dominio** , seleccione **Agregar dominio de Microsoft**.
 
-Puede establecer cualquier dominio que posea como dominio predeterminado.
+    ![Acerca de esta página de dominios.](../../media/add-onmicrosoft-domain-link.png)
+
+4. En la página **Agregar dominio de Onmicrosoft** , en el cuadro **Nombre de dominio** , escriba el nombre del nuevo dominio onmicrosoft.com. 
+
+    ![Captura de pantalla de la página Agregar dominio de Onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
+
+    > [!NOTE]
+    > Asegúrese de comprobar la ortografía y la precisión del nombre de dominio especificado. Está limitado a cinco dominios onmicrosoft.com y actualmente no se pueden eliminar una vez creados.     
+
+5. Seleccione **Agregar dominio**. Cuando se agregue correctamente, verá un mensaje que indica esto. 
+    
+    ![Captura de pantalla del dominio agregado correctamente.](../../media/domain-added.png)
+
+Puede establecer cualquier dominio que posea como dominio predeterminado. 
+
+Para obtener más información sobre cómo agregar un dominio onmicrosoft.com, consulte [Agregar o reemplazar el dominio de onmicrosoft.com](add-or-replace-your-onmicrosoftcom-domain.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

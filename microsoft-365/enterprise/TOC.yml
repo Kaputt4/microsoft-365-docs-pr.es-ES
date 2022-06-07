@@ -230,7 +230,7 @@
         - name: Durante y después del movimiento de datos
           href: during-and-after-your-data-move.md
         - name: Preguntas más frecuentes sobre el movimiento de datos
-          href: data-move-faq.yml
+          href: data-move-faq.md
         - name: Dónde se almacenan los datos del cliente
           href: o365-data-locations.md
         - name: Ubicaciones de datos de la Unión Europea
@@ -627,7 +627,6 @@
 - name: Arquitectura y soluciones de Microsoft 365
   href: ../solutions/index.yml
 - name: Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: Responsabilidades de EBCM de clientes y de asociados en la nube
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
