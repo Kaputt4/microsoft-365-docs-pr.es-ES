@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo ajustar las preferencias de programación para Scheduler para Microsoft 365.
-ms.openlocfilehash: 34594db45883a7f746b9905661b1dedc8e5e4f6a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: e6b6f4426b173bced90fcc8f2a705bc3e48cd09e
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893437"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923389"
 ---
 # <a name="scheduling-preferences-used-by-scheduler"></a>Preferencias de programación usadas por Scheduler
 
@@ -21,7 +21,7 @@ Scheduler usa varias preferencias de Outlook para programar una reunión para un
 
 ## <a name="supported-settings"></a>Configuración admitida
 
-- **Zona horaria**. Zona horaria Usuarios del programador para determinar una hora adecuada para las reuniones. Consulte [Agregar, quitar o cambiar zonas horarias](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) para obtener información.
+- **Zona horaria**. El programador de zona horaria usa para determinar una hora adecuada para las reuniones. Consulte [Agregar, quitar o cambiar zonas horarias](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) para obtener información.
 
 - **Horas de trabajo y días**. Para la mayoría de los tipos de reunión, Scheduler selecciona una hora según las preferencias de la semana de trabajo y las horas de reunión del organizador. Vea [Cambiar las horas y días laborales en Outlook](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) para obtener información.
 

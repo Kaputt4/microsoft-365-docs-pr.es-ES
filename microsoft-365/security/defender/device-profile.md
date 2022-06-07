@@ -1,11 +1,11 @@
 ---
-title: Perfil de dispositivo en Microsoft 365 de seguridad
-description: Ver los niveles de riesgo y exposición de un dispositivo de la organización. Analiza las amenazas pasadas y actuales y protege el dispositivo con las actualizaciones más recientes.
-keywords: 'seguridad, malware, Microsoft 365, M365, Microsoft 365 Defender, centro de seguridad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para la identidad, página del dispositivo, perfil de dispositivo, página de máquina, perfil de máquina'
+title: Perfil de dispositivo en el portal de seguridad de Microsoft 365
+description: Vea los niveles de riesgo y exposición de un dispositivo de su organización. Analice las amenazas pasadas y presentes y proteja el dispositivo con las actualizaciones más recientes.
+keywords: seguridad, malware, Microsoft 365, M365, Microsoft 365 Defender, centro de seguridad, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, página de dispositivo, perfil de dispositivo, página de equipo, perfil de máquina
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: v-maave
+ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
@@ -13,169 +13,174 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
+ms.openlocfilehash: 962ec0c5ed6b7d6934678678be9a57ebcbaabc55
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923442"
 ---
-
-# <a name="device-profile-page"></a>Página de perfil de dispositivo
+# <a name="device-profile-page"></a>Página perfil de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-El Microsoft 365 de seguridad le proporciona páginas de perfil de dispositivo para que pueda evaluar rápidamente el estado y el estado de los dispositivos de la red.
+El portal de seguridad de Microsoft 365 proporciona páginas de perfil de dispositivo para que pueda evaluar rápidamente el estado y el estado de los dispositivos de la red.
 
 > [!IMPORTANT]
-> La página de perfil de dispositivo puede parecer ligeramente diferente, en función de si el dispositivo está inscrito en Microsoft Defender para Endpoint, Microsoft Defender para Identity o en ambos.
+> La página de perfil de dispositivo puede parecer ligeramente diferente, en función de si el dispositivo está inscrito en Microsoft Defender para punto de conexión, Microsoft Defender for Identity o ambos.
 
-Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también puedes usar la página de perfil de dispositivo para realizar algunas tareas de seguridad comunes.
+Si el dispositivo está inscrito en Microsoft Defender para punto de conexión, también puede usar la página de perfil de dispositivo para realizar algunas tareas de seguridad comunes.
 
-## <a name="navigating-the-device-profile-page"></a>Navegar por la página de perfil de dispositivo
+## <a name="navigating-the-device-profile-page"></a>Navegación por la página del perfil del dispositivo
 
-La página de perfil se divide en varias secciones generales.
+La página de perfil se divide en varias secciones amplias.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="La página Perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="Página Perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
 
-En la barra lateral (1) se enumeran los detalles básicos sobre el dispositivo.
+La barra lateral (1) muestra detalles básicos sobre el dispositivo.
 
-El área de contenido principal (2) contiene pestañas que puedes alternar para ver diferentes tipos de información sobre el dispositivo.
+El área de contenido principal (2) contiene pestañas que puede alternar para ver diferentes tipos de información sobre el dispositivo.
 
-Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también verás una lista de acciones de respuesta (3). Las acciones de respuesta permiten realizar tareas comunes relacionadas con la seguridad.
+Si el dispositivo está inscrito en Microsoft Defender para punto de conexión, también verá una lista de acciones de respuesta (3). Las acciones de respuesta permiten realizar tareas comunes relacionadas con la seguridad.
 
 ## <a name="sidebar"></a>Barra lateral
 
-Junto al área de contenido principal de la página de perfil de dispositivo se encuentra la barra lateral.
+Junto al área de contenido principal de la página de perfil del dispositivo se encuentra la barra lateral.
 
-:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="La pestaña Barra lateral para el perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
+:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="Pestaña Barra lateral del perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
 
-En la barra lateral se muestra el nombre completo y el nivel de exposición del dispositivo. También proporciona información básica importante en subsecciones pequeñas que se pueden alternar abiertas o cerradas, como:
+La barra lateral muestra el nombre completo del dispositivo y el nivel de exposición. También proporciona información básica importante en subsecciones pequeñas que se pueden alternar abiertas o cerradas, como:
 
-* **Etiquetas** : cualquier Microsoft Defender para endpoint, Microsoft Defender para Identity o etiquetas personalizadas asociadas con el dispositivo. Las etiquetas de Microsoft Defender para Identity no son editables.
-* **Información de seguridad** : abre incidentes y alertas activas. Los dispositivos inscritos en Microsoft Defender para Endpoint también mostrarán el nivel de exposición y el nivel de riesgo.
+* **Etiquetas** : cualquier microsoft defender para punto de conexión, Microsoft Defender for Identity o etiquetas personalizadas asociadas al dispositivo. Las etiquetas de Microsoft Defender for Identity no son editables.
+* **Información de seguridad** : abra incidentes y alertas activas. Los dispositivos inscritos en Microsoft Defender para punto de conexión también mostrarán el nivel de exposición y el nivel de riesgo.
 
 > [!TIP]
-> El nivel de exposición se refiere a cuánto cumple el dispositivo con las recomendaciones de seguridad, mientras que el nivel de riesgo se calcula en función de una serie de factores, incluidos los tipos y la gravedad de las alertas activas.
+> El nivel de exposición está relacionado con cuánto el dispositivo cumple con las recomendaciones de seguridad, mientras que el nivel de riesgo se calcula en función de una serie de factores, incluidos los tipos y la gravedad de las alertas activas.
 
-* **Detalles del dispositivo** : dominio, sistema operativo, marca de tiempo para cuando se vio por primera vez el dispositivo, direcciones IP, recursos. Los dispositivos inscritos en Microsoft Defender para endpoint también muestran el estado de mantenimiento. Los dispositivos inscritos en Microsoft Defender para Identity mostrarán el nombre SAM y una marca de tiempo para cuando se creó el dispositivo por primera vez.
-* **Actividad de red** : marcas de tiempo por primera vez y por última vez que se vio el dispositivo en la red.
-* **Datos de directorio** (*solo para dispositivos inscritos en Microsoft Defender para identidad*): marcas [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) , [SPN y](/windows/win32/ad/service-principal-names) pertenencias a grupos.
+* **Detalles del dispositivo** : dominio, sistema operativo, marca de tiempo para la primera vez que se vio el dispositivo, direcciones IP, recursos. Los dispositivos inscritos en Microsoft Defender para punto de conexión también muestran el estado de mantenimiento. Los dispositivos inscritos en Microsoft Defender for Identity mostrarán el nombre SAM y una marca de tiempo para la primera vez que se creó el dispositivo.
+* **Actividad de red** : marcas de tiempo por primera vez y la última vez que se vio el dispositivo en la red.
+* **Datos de directorio** (*solo para dispositivos inscritos en Microsoft Defender for Identity*): marcas [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) , [SPN y pertenencias](/windows/win32/ad/service-principal-names) a grupos.
 
 ## <a name="response-actions"></a>Acciones de respuesta
 
-Las acciones de respuesta ofrecen una forma rápida de defenderse y analizar las amenazas.
+Las acciones de respuesta ofrecen una manera rápida de defenderse y analizar las amenazas.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="La barra de acciones para el perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="Barra de acciones para el perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
-> * [Las acciones de](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) respuesta solo están disponibles si el dispositivo está inscrito en Microsoft Defender para endpoint.
-> * Los dispositivos inscritos en Microsoft Defender para Endpoint pueden mostrar diferentes números de acciones de respuesta, según el sistema operativo y el número de versión del dispositivo.
+> * [Las acciones de respuesta](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) solo están disponibles si el dispositivo está inscrito en Microsoft Defender para punto de conexión.
+> * Los dispositivos inscritos en Microsoft Defender para punto de conexión pueden mostrar diferentes números de acciones de respuesta, en función del sistema operativo y el número de versión del dispositivo.
 
-Las acciones disponibles en la página de perfil de dispositivo incluyen:
+Entre las acciones disponibles en la página del perfil del dispositivo se incluyen:
 
-* **Administrar etiquetas** : actualiza las etiquetas personalizadas que has aplicado a este dispositivo.
-* **Aislar dispositivo** : aísla el dispositivo de la red de su organización mientras lo mantiene conectado a Microsoft Defender para Endpoint. Puedes elegir permitir que Outlook, Teams y Skype Empresarial se ejecuten mientras el dispositivo está aislado, con fines de comunicación.
-* **Centro de acciones** : ver el estado de las acciones enviadas. Solo está disponible si ya se ha seleccionado otra acción.
-* **Restringir la ejecución de** aplicaciones: impide que se ejecuten aplicaciones que no están firmadas por Microsoft.
-* **Ejecutar examen antivirus**: actualiza Antivirus de Windows Defender definiciones e inmediatamente ejecuta un examen antivirus. Elija entre Examen rápido o Examen completo.
-* **Recopilar paquete de investigación** : recopila información sobre el dispositivo. Cuando se complete la investigación, puede descargarla.
-* **Iniciar sesión de respuesta en directo** : carga un shell remoto en el dispositivo para investigaciones [de seguridad en profundidad](/microsoft-365/security/defender-endpoint/live-response).
-* **Iniciar una investigación automatizada** : investiga [y corrige automáticamente las amenazas](../office-365-security/office-365-air.md). Aunque puede activar manualmente las investigaciones automatizadas para que se ejecuten desde esta [página,](../../compliance/alert-policies.md#default-alert-policies) determinadas directivas de alerta desencadenan investigaciones automáticas por sí solas.
+* **Administrar etiquetas** : actualiza las etiquetas personalizadas que ha aplicado a este dispositivo.
+* **Aislar el dispositivo** : aísla el dispositivo de la red de la organización mientras lo mantiene conectado a Microsoft Defender para punto de conexión. Puede optar por permitir que Outlook, Teams y Skype Empresarial se ejecuten mientras el dispositivo está aislado, con fines de comunicación.
+* **Centro de acciones** : vea el estado de las acciones enviadas. Solo está disponible si ya se ha seleccionado otra acción.
+* **Restringir la ejecución** de aplicaciones: impide que se ejecuten las aplicaciones que no están firmadas por Microsoft.
+* **Ejecutar examen antivirus** : actualiza las definiciones del Antivirus de Windows Defender y ejecuta inmediatamente un examen antivirus. Elija entre Examen rápido o Examen completo.
+* **Recopilar paquete de investigación** : recopila información sobre el dispositivo. Una vez completada la investigación, puede descargarla.
+* **Iniciar sesión de respuesta** activa: carga un shell remoto en el dispositivo para [realizar investigaciones de seguridad detalladas](/microsoft-365/security/defender-endpoint/live-response).
+* **Iniciar una investigación automatizada** : [investiga y corrige automáticamente las amenazas](../office-365-security/office-365-air.md). Aunque puede desencadenar manualmente investigaciones automatizadas para que se ejecuten desde esta página, [ciertas directivas de alerta](../../compliance/alert-policies.md#default-alert-policies) desencadenan investigaciones automáticas por sí solas.
 * **Centro de acciones** : muestra información sobre las acciones de respuesta que se están ejecutando actualmente.
 
 ## <a name="tabs-section"></a>Sección Tabulaciones
 
-Las pestañas de perfil de dispositivo te permiten alternar entre una introducción a los detalles de seguridad sobre el dispositivo y tablas que contienen una lista de alertas.
+Las pestañas de perfil de dispositivo le permiten alternar a través de una introducción a los detalles de seguridad sobre el dispositivo y las tablas que contienen una lista de alertas.
 
-Los dispositivos inscritos en Microsoft Defender para endpoint también mostrarán pestañas que incluyen una escala de tiempo, una lista de recomendaciones de seguridad, un inventario de software, una lista de vulnerabilidades detectadas y KBs ausentes (actualizaciones de seguridad).
+Los dispositivos inscritos en Microsoft Defender para punto de conexión también mostrarán pestañas que incluyen una escala de tiempo, una lista de recomendaciones de seguridad, un inventario de software, una lista de vulnerabilidades detectadas y los KB que faltan (actualizaciones de seguridad).
 
-### <a name="overview-tab"></a>Ficha Información general
+### <a name="overview-tab"></a>Pestaña Información general
 
 La pestaña predeterminada es **Información general**. Proporciona un vistazo rápido al hecho de seguridad más importante sobre el dispositivo.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="La pestaña Información general del perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="Pestaña Información general del perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
 
-Aquí puedes ver rápidamente las alertas activas del dispositivo y los usuarios que han iniciado sesión actualmente.
+Aquí puede ver rápidamente las alertas activas del dispositivo y cualquier usuario que haya iniciado sesión actualmente.
 
-Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también verás el nivel de riesgo del dispositivo y los datos disponibles en las evaluaciones de seguridad. Las evaluaciones de seguridad describen el nivel de exposición del dispositivo, proporcionan recomendaciones de seguridad y enumeran el software afectado y las vulnerabilidades detectadas.
+Si el dispositivo está inscrito en Microsoft Defender para punto de conexión, también verá el nivel de riesgo del dispositivo y los datos disponibles en las evaluaciones de seguridad. Las evaluaciones de seguridad describen el nivel de exposición del dispositivo, proporcionan recomendaciones de seguridad y enumeran el software afectado y las vulnerabilidades detectadas.
 
 ### <a name="alerts-tab"></a>Ficha Alertas
 
-La **pestaña** Alertas contiene una lista de alertas que se han elevado en el dispositivo, tanto de Microsoft Defender para Identity como de Microsoft Defender para endpoint.
+La pestaña **Alertas** contiene una lista de alertas que se han generado en el dispositivo, tanto de Microsoft Defender for Identity como de Microsoft Defender para punto de conexión.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="La pestaña Alertas para el perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="Pestaña Alertas del perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
-Puede personalizar el número de elementos que se muestran, así como las columnas que se muestran para cada elemento. El comportamiento predeterminado es enumerar treinta elementos por página.
+Puede personalizar el número de elementos mostrados, así como las columnas que se muestran para cada elemento. El comportamiento predeterminado es enumerar treinta elementos por página.
 
-Las columnas de esta pestaña incluyen información sobre la gravedad de la amenaza que desencadenó la alerta, así como el estado, el estado de investigación y a quién se asignó la alerta.
+Las columnas de esta pestaña incluyen información sobre la gravedad de la amenaza que desencadenó la alerta, así como el estado, el estado de investigación y a quién se ha asignado la alerta.
 
-La *columna entidades afectadas* hace referencia al dispositivo (entidad) cuyo perfil está viendo actualmente, además de cualquier otro dispositivo de la red que se vea afectado.
+La columna *de entidades afectadas* hace referencia al dispositivo (entidad) cuyo perfil está viendo actualmente, además de cualquier otro dispositivo de la red que se vea afectado.
 
-Si selecciona un elemento de esta lista, se abrirá un menú desplegable que contiene aún más información sobre la alerta seleccionada.
+Al seleccionar un elemento de esta lista, se abrirá un control flotante que contiene aún más información sobre la alerta seleccionada.
 
 Esta lista se puede filtrar por gravedad, estado o a quién se ha asignado la alerta.
 
 ### <a name="timeline-tab"></a>Pestaña Escala de tiempo
 
-La **pestaña Escala** de tiempo incluye un gráfico cronológico interactivo de todos los eventos que se han producido en el dispositivo. Al mover el área resaltada del gráfico a la izquierda o a la derecha, puede ver eventos durante diferentes períodos de tiempo. También puede elegir un intervalo personalizado de fechas en el menú desplegable entre el gráfico interactivo y la lista de eventos.
+La pestaña **Escala de tiempo** incluye un gráfico interactivo y cronológico de todos los eventos generados en el dispositivo. Al mover el área resaltada del gráfico a la izquierda o a la derecha, puede ver eventos durante diferentes períodos de tiempo. También puede elegir un intervalo personalizado de fechas en el menú desplegable entre el gráfico interactivo y la lista de eventos.
 
 Debajo del gráfico hay una lista de eventos para el intervalo de fechas seleccionado.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="La pestaña Escala de tiempo del perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="Pestaña Escala de tiempo del perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
 
-El número de elementos que se muestran y las columnas de la lista se pueden personalizar. Las columnas predeterminadas muestran la hora del evento, el usuario activo, el tipo de acción, las entidades (procesos) y la información adicional sobre el evento.
+El número de elementos mostrados y las columnas de la lista se pueden personalizar. Las columnas predeterminadas enumeran la hora del evento, el usuario activo, el tipo de acción, las entidades (procesos) y la información adicional sobre el evento.
 
-Al seleccionar un elemento de esta lista, se abrirá un control desplegable que muestra un gráfico de entidades de evento, que muestra los procesos primarios y secundarios implicados en el evento.
+Al seleccionar un elemento de esta lista, se abrirá un control flotante que muestra un gráfico De entidades de eventos, que muestra los procesos primarios y secundarios implicados en el evento.
 
-La lista se puede filtrar por el tipo específico de evento; por ejemplo, eventos del Registro o Eventos de pantalla inteligente.
+La lista se puede filtrar por el tipo específico de evento; por ejemplo, eventos del Registro o eventos de pantalla inteligente.
 
-La lista también se puede exportar a un archivo CSV, para su descarga. Aunque el archivo no está limitado por el número de eventos, el intervalo de tiempo máximo que puede elegir exportar es de siete días.
+La lista también se puede exportar a un archivo CSV para su descarga. Aunque el archivo no está limitado por el número de eventos, el intervalo de tiempo máximo que puede elegir exportar es de siete días.
 
 ### <a name="security-recommendations-tab"></a>Pestaña Recomendaciones de seguridad
 
-En **la pestaña Recomendaciones de** seguridad se enumeran las acciones que puedes realizar para proteger el dispositivo. Si selecciona un elemento en esta lista, se abrirá un menú desplegable donde podrá obtener instrucciones sobre cómo aplicar la recomendación.
+En la pestaña **Recomendaciones de seguridad** se enumeran las acciones que puede realizar para proteger el dispositivo. Al seleccionar un elemento de esta lista, se abrirá un control flotante en el que puede obtener instrucciones sobre cómo aplicar la recomendación.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="La pestaña Recomendaciones de seguridad para el perfil de dispositivo en el portal de Microsoft 365 Defender seguridad" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="Pestaña Recomendaciones de seguridad para el perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
 
-Al igual que con las pestañas anteriores, se puede personalizar el número de elementos que se muestran por página, así como las columnas visibles.
+Al igual que con las pestañas anteriores, se puede personalizar el número de elementos mostrados por página, así como las columnas visibles.
 
-La vista predeterminada incluye columnas que detallan las debilidades de seguridad abordadas, la amenaza asociada, el componente relacionado o el software afectado por la amenaza, y mucho más. Los elementos se pueden filtrar por el estado de la recomendación.
+La vista predeterminada incluye columnas que detallan los puntos débiles de seguridad abordados, la amenaza asociada, el componente o el software relacionados afectados por la amenaza, etc. Los elementos se pueden filtrar por el estado de la recomendación.
 
 ### <a name="software-inventory"></a>Inventario de software
 
-La **pestaña Inventario de** software muestra el software instalado en el dispositivo.
+La pestaña **Inventario de** software muestra el software instalado en el dispositivo.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="La pestaña Inventario de software para el perfil de dispositivo en el portal de Microsoft 365 Defender cliente" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="Pestaña Inventario de software para el perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
 
-La vista predeterminada muestra el proveedor de software, el número de versión instalada, el número de debilidades de software conocidas, las perspectivas de amenazas, el código del producto y las etiquetas. El número de elementos que se muestran y las columnas que se muestran se pueden personalizar.
+La vista predeterminada muestra el proveedor de software, el número de versión instalado, el número de puntos débiles de software conocidos, la información sobre amenazas, el código de producto y las etiquetas. El número de elementos mostrados y las columnas que se muestran se pueden personalizar.
 
-Al seleccionar un elemento de esta lista, se abre un desplegable que contiene más detalles sobre el software seleccionado, así como la ruta de acceso y la marca de tiempo de la última vez que se encontró el software.
+Al seleccionar un elemento de esta lista, se abre un control flotante que contiene más detalles sobre el software seleccionado, así como la ruta de acceso y la marca de tiempo de la última vez que se encontró el software.
 
 Esta lista se puede filtrar por código de producto.
 
 ### <a name="discovered-vulnerabilities-tab"></a>Pestaña Vulnerabilidades detectadas
 
-En **la pestaña Vulnerabilidades detectadas** se enumeran las vulnerabilidades y vulnerabilidades comunes (CVEs) que pueden afectar al dispositivo.
+En la pestaña **Vulnerabilidades detectadas se** enumeran las vulnerabilidades comunes y vulnerabilidades de seguridad (CVE) que pueden afectar al dispositivo.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="La pestaña Vulnerabilidades detectadas para el perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="La pestaña Vulnerabilidades detectadas del perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
 
-La vista predeterminada enumera la gravedad de CVE, la puntuación de vulnerabilidad común (CVS), el software relacionado con CVE, cuando se publicó la CVE, cuando se actualizó por última vez la CVE y las amenazas asociadas con la CVE.
+La vista predeterminada enumera la gravedad del CVE, la puntuación de vulnerabilidad común (CVS), el software relacionado con el CVE, cuando se publicó el CVE, la última vez que se actualizó el CVE y las amenazas asociadas al CVE.
 
-Al igual que con las pestañas anteriores, se puede personalizar el número de elementos mostrados y las columnas visibles.
+Al igual que con las pestañas anteriores, se puede personalizar el número de elementos que se muestran y las columnas visibles.
 
-Si selecciona un elemento de esta lista, se abrirá un desplegable que describe la CVE.
+Al seleccionar un elemento de esta lista, se abrirá un control flotante que describe el CVE.
 
-### <a name="missing-kbs"></a>Faltan KBs
+### <a name="missing-kbs"></a>KB que faltan
 
-En **la pestaña KBs que** faltan se enumeran las actualizaciones de Microsoft que aún no se han aplicado al dispositivo. Los "KBs" en cuestión son [artículos de Knowledge Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) que describen estas actualizaciones; por ejemplo, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+En la pestaña **Missing KBs (Faltan KBs** ) se enumeran las actualizaciones de Microsoft que aún no se han aplicado al dispositivo. Los "KB" en cuestión son [artículos de Knowledge Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) que describen estas actualizaciones; por ejemplo, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="La pestaña KBs que falta para el perfil de dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="Pestaña KB que falta para el perfil de dispositivo en el portal de Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
-La vista predeterminada enumera el boletín que contiene las actualizaciones, la versión del sistema operativo, los productos afectados, las CVE dirigidas, el número KB y las etiquetas.
+En la vista predeterminada se muestra el boletín que contiene las actualizaciones, la versión del sistema operativo, los productos afectados, los CVE direccionados, el número de KB y las etiquetas.
 
-El número de elementos que se muestran por página y las columnas que se muestran se pueden personalizar.
+Se puede personalizar el número de elementos mostrados por página y las columnas que se muestran.
 
-Al seleccionar un elemento, se abrirá un desplegable que vincula a la actualización.
+Al seleccionar un elemento, se abrirá un control flotante que vincula a la actualización.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Microsoft 365 Defender información general](microsoft-365-defender.md)
+* [Introducción a Microsoft 365 Defender](microsoft-365-defender.md)
 * [Activar Microsoft 365 Defender](m365d-enable.md)
-* [Investigar entidades en dispositivos con respuesta en directo](../defender-endpoint/live-response.md)
+* [Investigación de entidades en dispositivos mediante respuesta en directo](../defender-endpoint/live-response.md)
 * [Investigación y respuesta automatizadas (AIR) en Office 365](../office-365-security/office-365-air.md)

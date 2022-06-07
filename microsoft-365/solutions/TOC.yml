@@ -111,7 +111,7 @@
           href: ransomware-protection-microsoft-365.md
         - name: Paso 1. Configurar las líneas base de seguridad
           href: ransomware-protection-microsoft-365-security-baselines.md
-        - name: Paso 2. Implementación de la detección y respuesta de ataques
+        - name: Paso 2. Implementar la detección y respuesta ante ataques
           href: ransomware-protection-microsoft-365-attack-detection-response.md
         - name: Paso 3. Proteger identidades
           href: ransomware-protection-microsoft-365-identities.md
@@ -314,12 +314,8 @@
           href: ../compliance/ediscovery.md
         - name: Exhibición de documentos electrónicos de Microsoft Purview (Premium)
           href: ../compliance/overview-ediscovery-20.md
-        - name: Planes de acción de cumplimiento de normativas
+        - name: Preguntas más frecuentes y planes de acción de cumplimiento normativo
           items:
-            - name: 'ISO: plan de acción recomendado'
-              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 'NIST: plan de acción recomendado'
-              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'CCPA: preguntas frecuentes'
               href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'RGPD: plan de acción recomendado'

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 1f5b512c18c1ca6014881f93714320a6887bd9df
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535368"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923376"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -110,7 +110,7 @@ En la ilustración:
 Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace referencia a la capacidad de un dispositivo de compartir información con un servicio específico. En la tabla siguiente se resumen las diferencias entre la inscripción de dispositivos en la administración y la incorporación de dispositivos para un servicio específico.
 
 
-|         |Inscribir     |Incorporación  |
+| &nbsp; |Inscribir     |Incorporación  |
 |---------|---------|---------|
 |Descripción     |  La inscripción se aplica a la administración de dispositivos. Los dispositivos se inscriben para su administración con Intune o el Administrador de configuración.        | La incorporación configura un dispositivo para que funcione con un conjunto específico de funcionalidades en Microsoft 365. Actualmente, la incorporación se aplica a Microsoft Defender para las capacidades de cumplimiento de Microsoft y Punto de conexión. <br><br>En dispositivos Windows, la incorporación implica alternar una configuración en Windows Defender que permite a Defender conectarse al servicio en línea y aceptar las directivas que se aplican al dispositivo.        |
 |Ámbito     | Estas herramientas de administración de dispositivos administran todo el dispositivo, incluida la configuración del dispositivo para cumplir objetivos específicos, como la seguridad.        |La incorporación solo afecta a los servicios que se aplican.     |

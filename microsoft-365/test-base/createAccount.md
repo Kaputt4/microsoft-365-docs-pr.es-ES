@@ -1,9 +1,9 @@
 ---
-title: Crear una nueva cuenta base de prueba
+title: Creación de una cuenta base de prueba
 description: Detalles sobre cómo crear una nueva cuenta en Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,36 +14,36 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ba2625f94411dbb00a7e56cde991957242fc2486
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 2ead5a65fa21bcfbe52bc9426c3adcf3eb00fd0d
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345980"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923599"
 ---
-# <a name="step-1-create-a-test-base-account"></a>Paso 1: Crear una cuenta base de prueba
+# <a name="step-1-create-a-test-base-account"></a>Paso 1: Creación de una cuenta base de prueba
 
-Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://azure.microsoft.com/free/) de empezar.
+Si no tiene una suscripción de Azure, cree una [cuenta gratuita](https://azure.microsoft.com/free/) antes de empezar.
 
-## <a name="enter-details-for-test-base-account"></a>Especificar detalles para la cuenta base de prueba
+## <a name="enter-details-for-test-base-account"></a>Escriba los detalles de la cuenta base de prueba.
  
 1. Busque **"Base de prueba"** en Azure Portal.
 
-![Crear una imagen de búsqueda de cuenta base de prueba.](Media/CreateTestAccount1.png)
+![Cree una imagen de búsqueda de cuenta base de prueba.](Media/CreateTestAccount1.png)
 
-2. Haga **clic en "Crear"** para crear una cuenta base de prueba.
+2. Haga clic en **"Crear"** para crear una cuenta base de prueba.
 
-![Al hacer clic en agregar para crear la cuenta.](Media/CreateTestAccount2.png)
+![Haga clic en Agregar para crear la cuenta.](Media/CreateTestAccount2.png)
 
-3.  Lea la casilla ```Terms of Use``` de verificación para confirmar su satisfacción con ```Terms of Use```el archivo .
+3.  Lea la ```Terms of Use``` casilla y, a continuación, seleccione la casilla para confirmar su satisfacción con .```Terms of Use```
 
 ![Revise los términos de uso.](Media/CreateTestAccount3.png)
 
-4.  Rellene la información correcta en los siguientes requisitos: 
+4.  Rellene la información correcta con los siguientes requisitos: 
     -   Suscripción: Grupo de recursos
-    -   Detalles de la instancia: Nombre.
+    -   Detalles de la instancia: nombre.
 
-**Actualmente, Test Base solo admite el nivel de precios estándar.**
+**Actualmente, Test Base solo admite el plan de tarifa estándar.**
 
 ![Seleccione suscripción, grupo de recursos y escriba los detalles.](Media/CreateTestAccount4.png)
 
@@ -51,9 +51,9 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Avance al siguiente artículo para empezar con step 2: **Learn how upload your package.**
+Vaya al siguiente artículo para empezar a trabajar con El paso 2: **Obtenga información sobre cómo cargar el paquete.**
 > [!div class="nextstepaction"]
-> [Paso siguiente](uploadApplication.md)
+> [Paso siguiente](uploadapplication.md)
 
 <!---
 Add button for next page

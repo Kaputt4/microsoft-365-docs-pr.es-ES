@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 3a2d678f8e653d65007369c2db5ddd8c72a71c66
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810624"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923289"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -29,7 +29,7 @@ ms.locfileid: "65810624"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización. Las directivas de riesgo internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción en casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden realizar rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
+Microsoft Purview Insider Risk Management es una solución de cumplimiento que ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización. Las directivas de riesgo internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción en casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden realizar rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
 
 Para obtener más información y una introducción al proceso de planeación para abordar las actividades de riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -77,13 +77,13 @@ Los análisis de riesgos internos le permiten realizar una evaluación de los po
 
 Para más información sobre el análisis de riesgos internos, consulte [Configuración de administración de riesgos internos: Análisis](insider-risk-management-settings.md#analytics).
 
-## <a name="get-started-with-recommended-actions-preview"></a>Comenzar con acciones recomendadas (versión preliminar)
+## <a name="get-started-with-recommended-actions-preview"></a>Introducción a las acciones recomendadas (versión preliminar)
 
 Tanto si va a configurar la administración de riesgos internos por primera vez como si está empezando a crear nuevas directivas, la nueva experiencia [de acciones recomendadas](insider-risk-management-configure.md#recommended-actions-preview) puede ayudarle a sacar el máximo partido a las funcionalidades de administración de riesgos internos. Entre las acciones recomendadas se incluyen la configuración de permisos, la elección de indicadores de directiva, la creación de una directiva, etc.
 
 ## <a name="workflow"></a>Flujo de trabajo
 
-El flujo de trabajo de administración de riesgos internos le ayuda a identificar, investigar y tomar medidas para abordar los riesgos internos en su organización. Con plantillas de directivas centradas, señalización de actividad completa en el servicio Microsoft 365 y herramientas de administración de alertas y casos, puede usar información útil para identificar y actuar rápidamente sobre comportamientos de riesgo.
+El flujo de trabajo de administración de riesgos internos le ayuda a identificar, investigar y tomar medidas para abordar los riesgos internos en su organización. Con plantillas de directivas centradas, señalización de actividad completa en el servicio Microsoft 365 y herramientas de administración de alertas y casos, puede usar información procesable para identificar y actuar rápidamente sobre comportamientos de riesgo.
 
 La identificación y resolución de actividades de riesgo internas y problemas de cumplimiento con la administración de riesgos internos usa el flujo de trabajo siguiente:
 
@@ -143,14 +143,14 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo [registro de auditoría (versión preliminar)](insider-risk-management-audit-log.md) le permite mantenerse informado de las acciones que se realizaron en las características de administración de riesgos internos. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos internos.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez investigados los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente las condiciones de la directiva, se puede enviar al usuario un aviso sencillo desde las plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios simples o pueden dirigir al usuario a un entrenamiento de actualización o una guía para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 
-En las situaciones más graves, es posible que tenga que compartir la información del caso de administración de riesgos internos con otros revisores o servicios de su organización. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la resolución de riesgos de un extremo a otro.
+En situaciones más graves, es posible que tenga que compartir la información del caso de administración de riesgos internos con otros revisores o servicios de su organización. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la resolución de riesgos de un extremo a otro.
 
-- **eDiscovery (Premium):** escalar un caso para su investigación permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
-- **Integración de las API de administración de Office 365 (versión preliminar):** la administración de riesgos internos admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma que mejor se adapte a los procesos de riesgo de su organización le proporciona más flexibilidad para actuar sobre las actividades de riesgo. Para más información sobre la exportación de información de alertas con las API de administración de Office 365, consulte [Exportación de alertas](insider-risk-management-settings.md#export-alerts).
+- **eDiscovery (Premium):** escalar un caso para su investigación le permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium [), consulte Información general sobre eDiscovery (Premium) de Microsoft Purview](overview-ediscovery-20.md).
+- **Integración de las API de administración de Office 365 (versión preliminar):** la administración de riesgos internos admite la exportación de información de alertas a los servicios de administración de eventos e información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma que mejor se adapte a los procesos de riesgo de su organización le proporciona más flexibilidad para actuar sobre las actividades de riesgo. Para más información sobre la exportación de información de alertas con las API de administración de Office 365, consulte [Exportación de alertas](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
 > Gracias por sus comentarios y soporte técnico durante la versión preliminar del conector de ServiceNow. Hemos decidido finalizar la versión preliminar del conector de ServiceNow y dejar de admitir la administración de riesgos internos el 30 de noviembre de 2020. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes la integración de ServiceNow en la administración de riesgos internos.
@@ -161,7 +161,7 @@ La administración de riesgos internos puede ayudarle a detectar, investigar y t
 
 ### <a name="data-theft-by-departing-users"></a>Robo de datos por parte de los usuarios que abandonan la organización
 
-Cuando los usuarios abandonan una organización, ya sea voluntariamente o como resultado de la terminación, a menudo hay preocupaciones legítimas de que la empresa, el cliente y los datos de usuario están en riesgo. Los usuarios pueden suponer inocentemente que los datos del proyecto no son propiedad de la empresa, o pueden verse tentados a tomar datos de la empresa para obtener ganancias personales e infringir la política de la empresa y los estándares legales. Las directivas de administración de riesgos internos que usan la plantilla de directiva [Robo de datos al salir de los usuarios](insider-risk-management-policies.md#policy-templates) detectan automáticamente actividades asociadas normalmente con este tipo de robo. Con esta directiva, recibirá automáticamente alertas de actividades sospechosas asociadas con el robo de datos por parte de los usuarios que abandonan el servicio para que pueda realizar las acciones de investigación adecuadas. Para esta plantilla de directiva, es necesario configurar un [conector de RR. HH](import-hr-data.md). de Microsoft 365 para su organización.
+Cuando los usuarios abandonan una organización, ya sea voluntariamente o como resultado de la terminación, a menudo hay preocupaciones legítimas de que la empresa, el cliente y los datos de usuario están en riesgo. Los usuarios pueden suponer inocentemente que los datos del proyecto no son propiedad de la empresa, o pueden verse tentados a tomar datos de la empresa para obtener ganancias personales e infringir la política de la empresa y los estándares legales. Las directivas de administración de riesgos internos que usan la plantilla de directiva [Robo de datos al salir de los usuarios](insider-risk-management-policies.md#policy-templates) detectan automáticamente actividades asociadas normalmente con este tipo de robo. Con esta directiva, recibirá automáticamente alertas de actividades sospechosas asociadas con el robo de datos por parte de los usuarios que abandonan el servicio para que pueda realizar las acciones de investigación adecuadas. La configuración de un [conector de RR. HH. de Microsoft 365](import-hr-data.md) para su organización es necesaria para esta plantilla de directiva.
 
 ### <a name="intentional-or-unintentional-leak-of-sensitive-or-confidential-information"></a>Fuga intencionada o involuntaria de información confidencial o confidencial
 
@@ -189,13 +189,13 @@ Los usuarios de su organización pueden tener distintos niveles de riesgo en fun
 
 ## <a name="healthcare-preview"></a>Healthcare (versión preliminar)
 
-En el caso de las organizaciones de la industria sanitaria, estudios recientes han encontrado una tasa muy alta de infracciones de datos relacionadas con los usuarios internos. La detección del uso indebido de los datos de los pacientes y la información de los registros de salud es un componente fundamental para proteger la privacidad de los pacientes y cumplir con la normativa de cumplimiento, como la Ley de Portabilidad y Responsabilidad del Seguro De Salud (HIPAA) y la Ley de Tecnología de información sanitaria para la salud económica y clínica (HITECH). El uso indebido de los datos de los pacientes puede ir desde el acceso a registros de pacientes con privilegios hasta el acceso a registros de pacientes de familiares o vecinos con intenciones malintencionadas. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. Microsoft 365 y un conector de datos específico para la salud para empezar a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse dentro de los sistemas de registro de salud electrónico (EHR):
+En el caso de las organizaciones de la industria sanitaria, estudios recientes han encontrado una tasa muy alta de infracciones de datos relacionadas con los usuarios internos. La detección del uso indebido de los datos de los pacientes y la información de los registros de salud es un componente fundamental para proteger la privacidad de los pacientes y cumplir con la normativa de cumplimiento, como la Ley de Portabilidad y Responsabilidad del Seguro De Salud (HIPAA) y la Ley de Tecnología de información sanitaria para la salud económica y clínica (HITECH). El uso indebido de los datos de los pacientes puede ir desde el acceso a registros de pacientes con privilegios hasta el acceso a registros de pacientes de familiares o vecinos con intenciones malintencionadas. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y un conector de datos específico para la salud para empezar a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse en los sistemas de registro de salud electrónico (EHR):
 
 - [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
 
-Los eventos de estrés de empleo pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios realicen acciones que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. Microsoft 365 y comienza a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés en el empleo:
+Los eventos de estrés de empleo pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y comienzan a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés en el empleo:
 
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -203,5 +203,5 @@ Los eventos de estrés de empleo pueden afectar al comportamiento del usuario de
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 - Consulte [Planeamiento de la administración de riesgos](insider-risk-management-plan.md) internos para obtener información sobre cómo prepararse para habilitar directivas de administración de riesgos internos en su organización.
-- Consulte [Comenzar con la configuración de administración de riesgos](insider-risk-management-settings.md) internos para configurar la configuración global de las directivas de riesgo internos.
-- Consulte [Comenzar con la administración de riesgos](insider-risk-management-configure.md) internos para configurar los requisitos previos, crear directivas y empezar a recibir alertas.
+- Consulte [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md) internos para configurar la configuración global de las directivas de riesgo internos.
+- Consulte [Introducción a la administración de riesgos](insider-risk-management-configure.md) internos para configurar requisitos previos, crear directivas y empezar a recibir alertas.
