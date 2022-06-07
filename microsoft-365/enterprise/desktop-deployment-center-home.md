@@ -15,7 +15,7 @@ ms.custom: it-pro
 description: Cómo acceder a los recursos equivalentes al Centro de implementación de escritorio en desuso.
 ms.openlocfilehash: e6ba3f86d4c1e02b29206d57ccab220f74ab7e3e
 ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65095342"
