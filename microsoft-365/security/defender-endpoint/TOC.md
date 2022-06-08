@@ -406,6 +406,7 @@
 ###### [Ejecutar examen antivirus](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restringir ejecución de aplicación](respond-machine-alerts.md#restrict-app-execution)
 ###### [Aislar dispositivos de la red](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Contener dispositivos de la red](respond-machine-alerts.md#contain-devices-from-the-network)
 ###### [Consultar a un experto en amenazas](respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Comprobar los detalles de actividad en el Centro de actividades](respond-machine-alerts.md#check-activity-details-in-action-center)
 
