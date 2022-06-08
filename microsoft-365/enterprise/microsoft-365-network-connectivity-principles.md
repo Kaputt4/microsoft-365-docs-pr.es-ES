@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082061eeeb3443068eaa13cb0b91f8e93adefb21
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078787"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940962"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -189,7 +189,7 @@ En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Op
   - Asegúrese de que las direcciones IP que devuelve la resolución de nombres DNS coincidan con la ruta de salida de enrutamiento para estos puntos de conexión.
   - Dé prioridad a estos puntos de conexión para la integración SD-WAN para el enrutamiento de latencia directa y mínima al punto más cercano de emparejamiento de Internet de la Red Global de Microsoft.
 
-- Los puntos de conexión **Predeterminados** representan los servicios de Office 365 y las dependencias que no necesitan optimización, y las redes de clientes los pueden tratar como tráfico normal vinculado a Internet. Es posible que algunos puntos de conexión de esta categoría no estén alojados en centros de datos de Microsoft. Algunos ejemplos son  *https://odc.officeapps.live.com*  y  *https://appexsin.stb.s-msn.com*.
+- Los puntos de conexión **Predeterminados** representan los servicios de Office 365 y las dependencias que no necesitan optimización, y las redes de clientes los pueden tratar como tráfico normal vinculado a Internet. Es posible que algunos puntos de conexión de esta categoría no estén alojados en centros de datos de Microsoft. Algunos ejemplos son  *https://odc.officeapps.live.com*  y  *`https://appexsin.stb.s-msn.com`*.
 
 Para más información sobre las técnicas de optimización de red de Office 365, consulte el artículo [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md).
   

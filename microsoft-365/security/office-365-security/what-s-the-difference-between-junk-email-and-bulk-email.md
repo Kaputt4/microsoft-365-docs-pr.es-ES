@@ -1,5 +1,5 @@
 ---
-title: ¿Cuál&apos; es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo?
+title: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender sobre las diferencias entre correo no deseado (correo no deseado) y correo electrónico masivo (correo gris) en Exchange Online Protection (EOP).
+description: Los administradores pueden obtener información sobre las diferencias entre el correo no deseado (correo no deseado) y el correo electrónico masivo (correo gris) en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: dd876b522a0d565b84e8bb9043e277cd3bc34495
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647851"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940456"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo en EOP?
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647851"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, los clientes a veces preguntan: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los clientes a veces preguntan: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
 
 - **El correo no deseado** es correo no deseado, que son mensajes no solicitados y universalmente no deseados (cuando se identifican correctamente). De forma predeterminada, el EOP rechaza el correo no deseado en función de la reputación del servidor de correo electrónico de origen. Si un mensaje pasa la inspección de ip de origen, se envía al filtrado de correo no deseado. Si el mensaje se clasifica como correo no deseado mediante el filtrado de correo no deseado, el mensaje se entrega (de forma predeterminada) a los destinatarios previstos y se mueve a su carpeta Correo no deseado.
 

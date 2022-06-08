@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 54db8d8c72266e1fc7a9fa6c3fe4829c62ba4357
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: f5a6ec9cd0d221cd025f4bce71008b9d01749590
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285508"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940434"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -302,7 +302,7 @@ Es posible que tenga que usar esta opción si tiene que capturar y conservar tod
 
 Los datos adjuntos en la nube, a veces también conocidos como datos adjuntos modernos, son un mecanismo de uso compartido que usa vínculos incrustados a archivos almacenados en la nube. Admiten el almacenamiento centralizado para contenido compartido con ventajas colaborativas, como el control de versiones. Los datos adjuntos en la nube no son copias adjuntas de un archivo o un vínculo de texto de dirección URL a un archivo. Es posible que le resulte útil consultar las listas de comprobación visuales de los datos adjuntos en la nube admitidos en [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) y [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-Al elegir la opción de aplicar una etiqueta de retención a los datos adjuntos de la nube, para fines de cumplimiento, se crea una copia de ese archivo en el momento de compartir. A continuación, la etiqueta de retención seleccionada se aplica a la copia que se puede identificar mediante eDiscovery. Los usuarios no conocen la copia almacenada en la biblioteca de conservación de documentos. La etiqueta de retención no se aplica al mensaje en sí ni al archivo original.
+Al elegir la opción de aplicar una etiqueta de retención a los datos adjuntos de la nube, para fines de cumplimiento, se crea una copia de ese archivo en el momento de compartir. A continuación, la etiqueta de retención seleccionada se aplica a la copia que se puede [identificar mediante eDiscovery](advanced-ediscovery-cloud-attachments.md). Los usuarios no conocen la copia almacenada en la biblioteca de conservación de documentos. La etiqueta de retención no se aplica al mensaje en sí ni al archivo original.
 
 Si el archivo se modifica y se comparte de nuevo, se guarda una nueva copia del archivo como una nueva versión en la biblioteca de conservación de documentos. Para obtener más información, incluido el motivo por el que debe usar la configuración de etiqueta **Cuándo se etiquetaron los elementos**, consulte [Cómo funciona la retención con archivos adjuntos en la nube](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -332,7 +332,7 @@ Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos
 - Los siguientes elementos no se admiten como datos adjuntos en la nube que se pueden conservar:
     - Sitios, páginas, listas, formularios, carpetas, conjuntos de documentos y páginas de OneNote de SharePoint.
     - Archivos compartidos por usuarios que no tienen acceso a esos archivos.
-    - Archivos que se eliminan antes de que se envíen los datos adjuntos en la nube. Esto puede ocurrir si un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero que el archivo sigue estando disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
+    - Archivos que se eliminan o mueven antes de que se envíe el archivo adjunto en la nube. Por ejemplo, un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero si el archivo sigue disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
     - Archivos compartidos por invitados o usuarios externos a la organización.
     - Archivos en borradores de mensajes de correo electrónico y mensajes que no se envían.
     - Archivos vacíos.

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La hoja de ruta para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: 85695c38f724f215192d7659963c35f25b006dc5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5eed55d45e4b34962b08d236f8659cfd2cf209c1
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092059"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940412"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Plan de desarrollo de inquilinos para Microsoft 365
 
@@ -31,7 +31,7 @@ Para preparar el inquilino para usuarios, grupos, licencias y aplicaciones en la
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurar el espacio empresarial de Microsoft 365.
 
-Después de asegurarse de que las redes están optimizadas para el acceso a Microsoft 365 tanto para trabajadores locales como remotos, las siguientes tareas grandes planean y, a continuación, configuran el inquilino de Microsoft 365 para nombres de dominio DNS, servicios comunes y para esa infraestructura de identidad que admite el inicio de sesión seguro de usuario.
+Después de asegurarse de que las redes están optimizadas para el acceso a Microsoft 365 tanto para trabajadores locales como remotos, las siguientes grandes tareas planean y, a continuación, configuran el inquilino de Microsoft 365 para nombres de dominio DNS, servicios comunes y para esa infraestructura de identidad que admite el inicio de sesión de usuario seguro.
 
 ### <a name="plan"></a>Plan
 
@@ -42,25 +42,25 @@ Para planear la implementación del inquilino:
 - [Descripción de las formas en que un inquilino de Microsoft 365 se integra con los servicios de Azure AD](integrated-apps-and-azure-ads.md)
 - [Planeamiento de la compatibilidad con aplicaciones cliente](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinación de cómo usar la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
-- [Planeamiento de las actualizaciones de Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
-- [Descripción del aislamiento de inquilinos](/compliance/assurance/microsoft-365-isolation-controls)
+- [Planear actualizaciones de Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
+- [Descripción del aislamiento de inquilinos](/microsoft-365-isolation-in-microsoft-365?view=o365-worldwide&preserve-view=true)
 
 ### <a name="deploy"></a>Implementar
 
 Para implementar el inquilino: 
 
 - Agregue los [dominios DNS](../admin/setup/add-domain.md) para su organización.
-- Use las [guías de configuración de la Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
+- Use las [guías de configuración en el Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
 - Compile la [infraestructura de identidad](deploy-identity-solution-overview.md).
 
 ### <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
 
-Microsoft continúa abriendo nuevas ubicaciones geográficas del centro de datos para Microsoft 365 servicios. Estas nuevas zonas geográficas del centro de datos agregan recursos de capacidad y proceso para admitir la demanda y el crecimiento del uso de los clientes. Además, las nuevas zonas geográficas del centro de datos ofrecen residencia de datos en la ubicación geográfica para los datos principales de los clientes.
+Microsoft continúa abriendo nuevas ubicaciones geográficas del centro de datos para los servicios de Microsoft 365. Estas nuevas zonas geográficas del centro de datos agregan recursos de capacidad y proceso para admitir la demanda y el crecimiento del uso de los clientes. Además, las nuevas zonas geográficas del centro de datos ofrecen residencia de datos en la ubicación geográfica para los datos principales de los clientes.
 
-Para obtener más información, consulte [Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos](moving-data-to-new-datacenter-geos.md).
+Para obtener más información, consulte [Traslado de datos principales a nuevas geoáreas del centro de datos de Microsoft 365](moving-data-to-new-datacenter-geos.md).
 
 
-## <a name="deploy-microsoft-365-multi-geo"></a>Implementación Microsoft 365 multigeográfica
+## <a name="deploy-microsoft-365-multi-geo"></a>Implementación multigeográfica de Microsoft 365
 
 Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Microsoft 365 a varias regiones geográficas y países dentro de su espacio empresarial existente.
 
@@ -70,7 +70,7 @@ Para más información, vea [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md
 
 Aunque tener un único inquilino para la oganización es ideal, puede ser una de las muchas organizaciones que tienen varios inquilinos. Las razones pueden incluir fusiones y adquisiciones, desea aislamiento administrativo o una TI descentralizada.
 
-Si tiene varios inquilinos Microsoft 365, consulte estos artículos para obtener más información sobre:
+Si tiene varios inquilinos de Microsoft 365, consulte estos artículos para obtener más información sobre:
 
 - [Colaboración entre inquilinos](microsoft-365-inter-tenant-collaboration.md)
 - [Migración de buzones de inquilinos cruzados](cross-tenant-mailbox-migration.md)

@@ -17,46 +17,46 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal.
-ms.openlocfilehash: 74de87a41f0b8b29dd901e757e410ff57f8f1d39
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824144"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941072"
 ---
-# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal mediante el programador de inicio de SharePoint Portal.
+# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal de SharePoint
 
-Un portal es un sitio de comunicación SharePoint en la intranet que tiene un tráfico elevado, un sitio que tiene entre 10 000 y más de 100 000 espectadores durante varias semanas. Use el programador de inicio del portal para iniciar el portal con el fin de garantizar que los usuarios tengan una experiencia de visualización fluida al acceder a la nueva SharePoint portal.
+Un portal es un sitio de comunicación de SharePoint en la intranet que tiene un tráfico elevado: un sitio que tiene entre 10 000 y más de 100 000 espectadores durante varias semanas. Use el programador de inicio del portal para iniciar el portal con el fin de garantizar que los usuarios tengan una experiencia de visualización fluida al acceder al nuevo portal de SharePoint.
 <br>
 <br>
 El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases mediante el procesamiento por lotes de visores en oleadas y la administración de las redirecciones de direcciones URL para el nuevo portal. Durante el inicio de cada oleada, puede recopilar comentarios del usuario, supervisar el rendimiento del portal y pausar el inicio para resolver problemas antes de continuar con la siguiente oleada. Obtenga más información sobre cómo [planear el inicio de un portal en SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
 **Hay dos tipos de redireccionamientos:**
 
-- **Bidireccional**: inicie un nuevo portal de SharePoint moderno para reemplazar un portal SharePoint clásico o moderno existente
-- **Redirigir a una página temporal**: inicie un nuevo portal de SharePoint moderno sin ningún portal de SharePoint existente.
+- **Bidireccional**: inicie un nuevo portal de SharePoint moderno para reemplazar un portal moderno o clásico de SharePoint existente
+- **Redirigir a una página temporal**: iniciar un nuevo portal de SharePoint moderno sin ningún portal de SharePoint existente
 
 Los permisos de sitio deben configurarse independientemente de las oleadas como parte del inicio. Por ejemplo, si va a publicar un portal para toda la organización, puede establecer permisos en "Todos excepto los usuarios externos" y, a continuación, separar los usuarios en oleadas mediante grupos de seguridad. Agregar un grupo de seguridad a una oleada no proporciona a ese grupo de seguridad acceso al sitio.
 
 > [!NOTE]
 >
-> - Esta característica será accesible desde el panel **de Configuración** de la página principal de SharePoint sitios de comunicación.
-> - Esta característica solo se puede usar en sitios de comunicación SharePoint modernos mediante páginas de sitio, ya que son el tipo predeterminado y recomendado que se usará para los portales.
+> - Esta característica será accesible desde el panel **Configuración** de la página principal de los sitios de comunicación de SharePoint.
+> - Esta característica solo se puede usar en sitios de comunicación modernos de SharePoint mediante páginas de sitio, ya que son el tipo predeterminado y recomendado que se usará para los portales.
 > - Debe tener permisos de propietario del sitio para que el sitio personalice y programe el inicio de un portal.
 > - Los lanzamientos deben programarse con al menos siete días de antelación y cada ola puede durar de uno a siete días.
 > - El número de ondas necesarias se determina automáticamente por el número esperado de usuarios.
-> - Antes de programar el inicio de un portal, se debe ejecutar la [herramienta Diagnóstico de página para SharePoint](https://aka.ms/perftool) para comprobar que la página principal del sitio está en buen estado.
+> - Antes de programar un inicio del portal, se debe ejecutar la [herramienta Diagnóstico de página para SharePoint](https://aka.ms/perftool) para comprobar que la página principal del sitio está en buen estado.
 > - Al final del inicio, todos los usuarios con permisos para el sitio podrán acceder al nuevo sitio.
-> - Si su organización usa [Conexiones Viva](/SharePoint/viva-connections), es posible que los usuarios vean el icono de su organización en la barra de aplicaciones de Microsoft Teams, pero cuando se selecciona el icono, los usuarios no podrán acceder al portal hasta que se haya iniciado la ola.
-> - Esta característica no está disponible para Office 365 Alemania, Office 365 operados por 21Vianet (China) o Microsoft 365 planes del Gobierno de EE. UU.
+> - Si su organización usa [Conexiones Viva](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), es posible que los usuarios vean el icono de su organización en la barra de aplicaciones de Microsoft Teams, pero cuando se selecciona el icono, los usuarios no podrán acceder al portal hasta que se haya iniciado la ola.
+> - Esta característica no está disponible para los planes de Office 365 Alemania, Office 365 operados por 21Vianet (China) o Microsoft 365 US Government.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprenda las diferencias entre las opciones del programador de inicio del portal:
 
 Anteriormente, los inicios del portal solo se podían programar a través de SharePoint PowerShell. Ahora, tiene dos opciones para ayudarle a programar y administrar el inicio del portal. Obtenga información sobre las diferencias clave entre ambas herramientas:
 
-**SharePoint versión de PowerShell:**
+**Versión de PowerShell de SharePoint:**
 
-- Se requieren credenciales de administrador para usar [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
+- Se requieren credenciales de administrador para usar [PowerShell de SharePoint](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
 - Requisito mínimo de una ola
 - Programar el inicio en función de la zona horaria de hora universal coordinada (UTC)
 
@@ -66,7 +66,7 @@ Anteriormente, los inicios del portal solo se podían programar a través de Sha
 - Requisito mínimo de dos oleadas
 - Programe el inicio en función de la zona horaria local del portal, como se indica en la configuración regional.
 
-## <a name="get-started-using-the-portal-launch-scheduler"></a>Comenzar mediante el programador de inicio del portal
+## <a name="get-started-using-the-portal-launch-scheduler"></a>Introducción al programador de inicio del portal
 
 1. Antes de usar la herramienta del programador de inicio del portal, [agregue todos los usuarios que necesitarán acceso a este sitio a](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) través de **permisos de sitio** como propietario del sitio, miembro del sitio o visitante.
 
@@ -76,16 +76,16 @@ Anteriormente, los inicios del portal solo se podían programar a través de Sha
 
    ![Imagen del símbolo del sistema para usar el programador de inicio del portal al volver a publicar la página principal.](../media/portal-launch-republish-2.png)
 
-   **Opción 2**: En cualquier momento, puede ir a la página principal del sitio de comunicación de SharePoint, seleccionar **Configuración** y, a continuación, programar el **inicio del sitio** para programar el inicio del portal.
+   **Opción 2**: En cualquier momento, puede navegar a la página principal del sitio de comunicación de SharePoint, seleccionar **Configuración** y luego **Programar inicio del sitio** para programar el inicio del portal.
 
    ![Imagen del panel Configuración con Programar un inicio de sitio resaltado.](../media/portal-launch-settings-2.png)
 
-3. A continuación, confirme la puntuación de mantenimiento del portal y realice mejoras en el portal si es necesario mediante la herramienta Diagnóstico de página [para SharePoint](https://aka.ms/perftool) hasta que el portal reciba una puntuación **Correcto**. Después, seleccione **Siguiente**.
+3. A continuación, confirme la puntuación de estado del portal y realice mejoras en el portal si es necesario mediante la herramienta [Diagnóstico de página para SharePoint](https://aka.ms/perftool) hasta que el portal reciba una puntuación **Correcto** . Después, seleccione **Siguiente**.
 
    ![Imagen de la herramienta del programador de inicio del portal.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
-   > El nombre y la descripción del sitio no se pueden editar desde el programador de inicio del portal y, en su lugar, se pueden cambiar seleccionando **Configuración** y, a continuación, **información del sitio** en la página principal.
+   > El nombre y la descripción del sitio no se pueden editar desde el programador de inicio del portal y, en su lugar, se pueden cambiar seleccionando **Configuración** y, a continuación, **Información del sitio** en la página principal.
 
 4. Seleccione el **número de usuarios esperados** en la lista desplegable. Esta ilustración representa el número de usuarios que probablemente necesitarán acceso al sitio. El programador de inicio del portal determinará automáticamente el número ideal de ondas en función de los usuarios esperados como este:
 
@@ -101,16 +101,16 @@ Anteriormente, los inicios del portal solo se podían programar a través de Sha
    > [!NOTE]
    > Cuando se usa la opción bidireccional, la persona que programa el inicio también debe tener permisos de propietario del sitio para el otro portal de SharePoint.
 
-   **Opción 2: Enviar usuarios a una página temporal generada automáticamente (redireccionamiento temporal de páginas):** se debe usar el redireccionamiento de página temporal cuando no exista ningún portal de SharePoint existente. Los usuarios se dirigen a un nuevo portal de SharePoint moderno y, si un usuario está en una ola que no se ha iniciado, se les redirigirá a una página temporal.
+   **Opción 2: Enviar usuarios a una página temporal generada automáticamente (redireccionamiento temporal de páginas):** se debe usar el redireccionamiento temporal de páginas cuando no exista ningún portal de SharePoint existente. Los usuarios se dirigen a un nuevo portal de SharePoint moderno y, si un usuario está en una ola que no se ha iniciado, se les redirigirá a una página temporal.
 
    **Opción 3: Enviar usuarios a una página externa** : proporcione una dirección URL externa a una experiencia de página de aterrizaje temporal hasta que se inicie la oleada del usuario.
 
-6. Divida a su audiencia en olas. Agregue hasta 20 grupos de seguridad por oleada. Los detalles de onda se pueden editar hasta el lanzamiento de cada oleada. Cada onda puede durar al menos un día (24 horas) y como máximo siete días. Esto permite SharePoint y su entorno técnico una oportunidad para aclimatar y escalar al gran volumen de usuarios del sitio. Al programar un inicio a través de la interfaz de usuario, la zona horaria se basa en la configuración regional del sitio.
+6. Divida a su audiencia en olas. Agregue hasta 20 grupos de seguridad por oleada. Los detalles de onda se pueden editar hasta el lanzamiento de cada oleada. Cada onda puede durar al menos un día (24 horas) y como máximo siete días. Esto permite a SharePoint y su entorno técnico una oportunidad para aclimatar y escalar al gran volumen de usuarios del sitio. Al programar un inicio a través de la interfaz de usuario, la zona horaria se basa en la configuración regional del sitio.
 
    > [!NOTE]
    >
    > - El programador de inicio del portal tendrá automáticamente un valor predeterminado de 2 oleadas como mínimo. Sin embargo, la versión de PowerShell de esta herramienta permitirá 1 oleada.
-   > - Microsoft 365 grupos no son compatibles con esta versión del programador de inicio del portal.
+   > - Esta versión del programador de inicio del portal no admite grupos de Microsoft 365.
 
 7. Determine quién necesita ver el sitio de inmediato y escriba su información en el campo **Usuarios exentos de ondas** . Estos usuarios se excluyen de las ondas y no se redirigirán antes, durante o después del inicio.
 
@@ -134,11 +134,11 @@ Si tiene previsto iniciar un portal con más de 100 000 usuarios, envíe una sol
 
 1. Como administrador, haga clic en el vínculo siguiente, que rellenará una consulta de ayuda en el centro de administración.
 
-[Iniciar SharePoint Portal con 100 000 usuarios](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
+[Inicio del portal de SharePoint con 100 000 usuarios](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
 2. En la parte inferior del panel, seleccione **Póngase en contacto con el soporte técnico**, y a continuación, seleccione **Nueva solicitud de servicio**.
 
-3. En **Descripción**, escriba "Iniciar SharePoint Portal con 100 000 usuarios".
+3. En **Descripción**, escriba "Iniciar El portal de SharePoint con 100 000 usuarios".
 
 4. Rellene el resto de la información y seleccione la **opción de contacto**.
 
@@ -168,13 +168,13 @@ Los inicios programados mediante la herramienta del programador de inicio del po
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Uso del programador de inicio del Portal de PowerShell
 
-La herramienta del programador de inicio de SharePoint Portal solo estaba disponible originalmente a través [de SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) y seguirá siendo compatible con PowerShell para los clientes que prefieran este método. Las mismas notas al principio de este artículo se aplican a ambas versiones del programador de inicio del portal.
+La herramienta del programador de inicio del Portal de SharePoint solo estaba disponible originalmente a través de [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) y seguirá siendo compatible con PowerShell para los clientes que prefieran este método. Las mismas notas al principio de este artículo se aplican a ambas versiones del programador de inicio del portal.
 
 > [!NOTE]
-> Necesita permisos de administrador para usar SharePoint PowerShell.
+> Necesita permisos de administrador para usar PowerShell de SharePoint.
 > Aparecerán los detalles de inicio del portal para los inicios creados en PowerShell y se pueden administrar en la nueva herramienta del programador de inicio del portal en SharePoint.
 
-### <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configuración de la aplicación y conexión a SharePoint Online
+### <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configuración de aplicaciones y conexión a SharePoint Online
 
 1. [Descargue el Shell de administración de SharePoint Online más reciente](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
@@ -204,11 +204,11 @@ El número de ondas necesarias depende del tamaño de lanzamiento esperado.
 
 #### <a name="steps-for-bidirectional-redirection"></a>Pasos para el redireccionamiento bidireccional
 
-La redirección bidireccional implica el inicio de un nuevo portal moderno de SharePoint En línea para reemplazar un portal existente SharePoint clásico o moderno. Los usuarios en oleadas activas se redirigirán al nuevo sitio independientemente de si navegan al sitio antiguo o al nuevo. Los usuarios de una ola no iniciada que intenten acceder al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie su ola.
+La redirección bidireccional implica el inicio de un nuevo portal moderno de SharePoint Online para reemplazar un portal moderno o clásico de SharePoint existente. Los usuarios en oleadas activas se redirigirán al nuevo sitio independientemente de si navegan al sitio antiguo o al nuevo. Los usuarios de una ola no iniciada que intenten acceder al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie su ola.
 
 Solo se admite el redireccionamiento entre la página principal predeterminada del sitio anterior y la página principal predeterminada del nuevo sitio. Si tiene administradores o propietarios que necesitan acceso a los sitios antiguos y nuevos sin ser redirigidos, asegúrese de que aparecen con el `WaveOverrideUsers` parámetro .
 
-Para migrar usuarios de un sitio SharePoint existente a un nuevo sitio de SharePoint de forma preconfigurada:
+Para migrar usuarios de un sitio de SharePoint existente a un nuevo sitio de SharePoint de forma preconfigurada:
 
 1. Ejecute el siguiente comando para designar las oleadas de inicio del portal.
 

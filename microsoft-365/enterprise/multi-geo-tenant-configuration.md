@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 2bd0db24b364c642255ef2e902abad0495d24337
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 2a82872e7c917421c0eb418cf0582eb33d2a53c9
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568886"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941204"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -40,7 +40,7 @@ Debe añadir una ubicación satélite para cada ubicación geográfica donde qui
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Captura de pantalla de la página de ubicaciones geográficas en SharePoint centro de administración.](../media/sharepoint-multi-geo-admin-center.png)
+![Captura de pantalla de la página de ubicaciones geográficas en el Centro de administración de SharePoint.](../media/sharepoint-multi-geo-admin-center.png)
 
 Para agregar una ubicación de satélite
 
@@ -81,7 +81,7 @@ Siga el proceso en [Sincronización de Azure Active Directory Connect: Configura
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 
 > [!IMPORTANT]
-> Para los nuevos usuarios sin OneDrive aprovisionado, licencia la cuenta y espera al menos 48 horas después de que la PDL de un usuario se sincronice con Azure AD para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive para la Empresa. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
+> En el caso de los nuevos usuarios sin OneDrive aprovisionado, licencia la cuenta y espere al menos 48 horas después de que la PDL de un usuario se sincronice con Azure AD para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive para la Empresa. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Establecimiento de la ubicación de datos preferida de usuarios solo de nube
 
@@ -89,9 +89,9 @@ Si los usuarios de la compañía no se sincronizan con Azure AD en un sistema de
 
 Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Active Directory para Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Si ya tiene instalado este módulo, asegúrese de actualizarlo a la versión más reciente.
 
-1. [Conéctese e inicie sesión](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con las credenciales de administrador global para su espacio empresarial.
+1. [Conéctese e inicie sesión](/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell&preserve-view=true) con las credenciales de administrador global para su espacio empresarial.
 
-2. Use el cmdlet [Set-MsolUser](/powershell/msonline/v1/set-msoluser) para establecer la ubicación de datos preferida de cada uno de los usuarios. Por ejemplo:
+2. Use el cmdlet [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) para establecer la ubicación de datos preferida de cada uno de los usuarios. Por ejemplo:
 
    ```powershell
    Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
@@ -108,14 +108,14 @@ Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Act
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 
 > [!IMPORTANT]
-> Para usuarios nuevos sin OneDrive aprovisionado, licencia la cuenta y espera al menos 48 horas después de que se establezca la PDL de un usuario para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
+> Para los nuevos usuarios sin OneDrive aprovisionado, licencia la cuenta y espere al menos 48 horas después de que se establezca la PDL de un usuario para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Aprovisionamiento de OneDrive y efecto de la PDL
 
-Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover la configuración de un usuario OneDrive, [consulte OneDrive para la Empresa Geo Move](move-onedrive-between-geo-locations.md).
+Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover OneDrive de un usuario, consulte [Movimiento geográfico de OneDrive para la Empresa](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de base de datos de buzones. Para obtener más información, vea [Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
+> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multigeográfico](./administering-exchange-online-multi-geo.md).
 
 Si el usuario no tiene un sitio de OneDrive en el espacio empresarial, se le aprovisionará OneDrive de acuerdo con el valor de PDL, suponiendo que la PDL del usuario coincida con una de las ubicaciones satélite de la empresa.
 
@@ -142,15 +142,15 @@ A continuación se muestran algunos casos de uso básicos que tal vez quiera inc
 
 Seleccione OneDrive desde el iniciador de aplicaciones de Microsoft 365 y confirme que le dirige automáticamente a la ubicación geográfica apropiada del usuario, en función de la PDL del usuario. OneDrive para la Empresa debería ahora comenzar el aprovisionamiento en esa ubicación. Una vez aprovisionado, pruebe a cargar y descargar algunos documentos.
 
-**OneDrive móvil**:
+**Aplicación móvil de OneDrive**:
 
-Inicie sesión en la aplicación móvil de OneDrive con sus credenciales de cuenta de evaluación. Confirme que puede ver sus archivos de OneDrive para la Empresa y puede interactuar con ellos desde su dispositivo móvil.
+Inicie sesión en la aplicación móvil de OneDrive con las credenciales de la cuenta de prueba. Confirme que puede ver sus archivos de OneDrive para la Empresa y puede interactuar con ellos desde su dispositivo móvil.
 
-**Sincronización de OneDrive cliente**:
+**Cliente de sincronización de OneDrive**:
 
 Confirme que el cliente de sincronización de OneDrive detecta automáticamente la ubicación geográfica de OneDrive para la Empresa al iniciar sesión. Si quiere descargar el cliente de sincronización, puede hacer clic en **Sincronización** en la biblioteca de OneDrive.
 
-**Office aplicaciones:**
+**Aplicaciones de Office**:
 
 Para confirmar que tiene acceso a OneDrive para la Empresa, inicie sesión desde una aplicación de Office como Word. Abra la aplicación de Office y seleccione "OneDrive – \<TenantName\>". Office detectará la ubicación de OneDrive y mostrará los archivos que se pueden abrir.
 

@@ -1,5 +1,5 @@
 ---
-title: Implementación de túnel dividido de VPN para Microsoft 365
+title: Implementación de la tunelización dividida de VPN para Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,30 +16,30 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Cómo implementar el túnel dividido de VPN para Microsoft 365
-ms.openlocfilehash: ee8c0929682370d581c9d1b5c738d682d3f91a01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Implementación de la tunelización dividida de VPN para Microsoft 365
+ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320443"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941094"
 ---
-# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Implementación de túnel dividido de VPN para Microsoft 365
+# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Implementación de la tunelización dividida de VPN para Microsoft 365
 
 >[!NOTE]
->Este artículo forma parte de un conjunto de artículos que abordan la optimización Microsoft 365 usuarios remotos.
+>Este artículo forma parte de un conjunto de artículos que abordan la optimización de Microsoft 365 para usuarios remotos.
 
->- Para obtener información general sobre cómo usar el túnel dividido de VPN para optimizar la conectividad Microsoft 365 usuarios remotos, vea [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- Para obtener una lista detallada de escenarios de túnel dividido de VPN, consulte [Escenarios de túnel dividido de VPN comunes para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- Para obtener instrucciones sobre cómo proteger el Teams de medios en entornos de túnel dividido de VPN, consulte [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
->- Para obtener información sobre cómo configurar stream y eventos en directo en entornos VPN, consulte [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
->- Para obtener información sobre cómo optimizar Microsoft 365 el rendimiento de los inquilinos en todo el mundo para los usuarios de China, [vea optimización Microsoft 365 rendimiento para los usuarios de China](microsoft-365-networking-china.md).
+>- Para obtener información general sobre el uso de la tunelización dividida de VPN para optimizar la conectividad de Microsoft 365 para usuarios remotos, consulte [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Para obtener una lista detallada de escenarios de tunelización dividida de VPN, consulte [Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Para obtener instrucciones sobre cómo proteger el tráfico multimedia de Teams en entornos de tunelización dividida de VPN, consulte [Protección del tráfico multimedia de Teams para la tunelización dividida de VPN](microsoft-365-vpn-securing-teams.md).
+>- Para obtener información sobre cómo configurar stream y eventos en directo en entornos VPN, consulte [Consideraciones especiales para stream y eventos en directo en entornos VPN](microsoft-365-vpn-stream-and-live-events.md).
+>- Para obtener información sobre cómo optimizar el rendimiento de los inquilinos de Microsoft 365 en todo el mundo para los usuarios de China, consulte [Optimización del rendimiento de Microsoft 365 para los usuarios de China](microsoft-365-networking-china.md).
 
-La estrategia recomendada por Microsoft para optimizar la conectividad de los trabajadores remotos se centra en mitigar rápidamente los problemas y proporcionar un alto rendimiento con unos sencillos pasos. Estos pasos ajustan el enfoque de VPN heredado para algunos puntos de conexión definidos que omiten los servidores VPN con cuello de botella. Se puede aplicar un modelo de seguridad equivalente o incluso superior en diferentes capas para que no sea necesario proteger todo el tráfico de salida de la red corporativa. En la mayoría de los casos, esto se puede lograr eficazmente en cuestión de horas y, a continuación, es escalable a otras cargas de trabajo según la demanda de requisitos y el tiempo lo permita.
+La estrategia recomendada de Microsoft para optimizar la conectividad del trabajo remoto se centra en mitigar rápidamente los problemas y proporcionar un alto rendimiento con unos sencillos pasos. Estos pasos ajustan el enfoque de VPN heredado para algunos puntos de conexión definidos que omiten los servidores VPN con cuello de botella. Se puede aplicar un modelo de seguridad equivalente o incluso superior en diferentes capas para que no sea necesario proteger todo el tráfico de salida de la red corporativa. En la mayoría de los casos, esto se puede lograr de forma eficaz en cuestión de horas y, a continuación, se puede escalar a otras cargas de trabajo a medida que lo permite la demanda y el tiempo de los requisitos.
 
 ## <a name="implement-vpn-split-tunneling"></a>Implementación de túnel dividido de VPN
 
-En este artículo, encontrará los _sencillos_ pasos necesarios para migrar la arquitectura de cliente VPN de un túnel forzado de _VPN_ a un túnel forzado de VPN con algunas excepciones de confianza, modelo de túnel dividido [de VPN #2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) en escenarios de túnel dividido de [VPN comunes para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+En este artículo, encontrará los sencillos pasos necesarios para migrar la arquitectura de cliente VPN de un _túnel forzado de VPN_ a un _túnel forzado de VPN con algunas excepciones de confianza_, [modelo de túnel dividido de VPN n.º 2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) en [escenarios de tunelización dividida de VPN común para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 
 En el siguiente diagrama se muestra cómo funciona la solución recomendada de túnel dividido de VPN:
 
@@ -47,7 +47,7 @@ En el siguiente diagrama se muestra cómo funciona la solución recomendada de t
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificar los puntos de conexión que se deben optimizar
 
-En el [Microsoft 365](urls-and-ip-address-ranges.md) de direcciones IP y direcciones IP, Microsoft identifica claramente los puntos de conexión clave que necesita para optimizarlos y los clasifica como **Optimizar**. Actualmente, solo hay cuatro direcciones URL y 20 subredes IP que deben optimizarse. Este pequeño grupo de puntos de conexión representa entre el 70 % y el 80 % del volumen de tráfico al servicio de Microsoft 365, incluidos los puntos de conexión confidenciales de latencia, como los de Teams multimedia. Básicamente, este es el tráfico que debemos tener especial cuidado y es también el tráfico que pondrá una presión increíble en las rutas de red tradicionales y la infraestructura VPN.
+En el artículo [Direcciones URL y intervalos de direcciones IP de Microsoft 365](urls-and-ip-address-ranges.md) , Microsoft identifica claramente los puntos de conexión clave que necesita para optimizarlos y los clasifica como **Optimizar**. Actualmente solo hay cuatro direcciones URL y 20 subredes IP que deben optimizarse. Este pequeño grupo de puntos de conexión representa entre el 70 % y el 80 % del volumen de tráfico al servicio Microsoft 365, incluidos los puntos de conexión confidenciales de latencia, como los de los medios de Teams. Básicamente este es el tráfico que necesitamos tener especial cuidado y es también el tráfico que pondrá una presión increíble sobre las rutas de acceso de red tradicionales y la infraestructura VPN.
 
 Las direcciones URL de esta categoría tienen las siguientes características:
 
@@ -56,9 +56,9 @@ Las direcciones URL de esta categoría tienen las siguientes características:
 - Tienen una baja tasa de cambio y un número esperado reducido (actualmente, 20 subredes IP)
 - Tienen ancho de banda o son sensibles a la latencia
 - Se les puede proporcionar elementos de seguridad necesarios directamente en el servicio en lugar de en línea en la red
-- Cuenta con alrededor del 70-80 % del volumen de tráfico al servicio Microsoft 365 cliente
+- Tenga en cuenta entre el 70 y el 80 % del volumen de tráfico al servicio Microsoft 365.
 
-Para obtener más información sobre Microsoft 365 y cómo se clasifican y administran, consulte [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md).
+Para obtener más información sobre los puntos de conexión de Microsoft 365 y cómo se clasifican y administran, consulte [Administración de puntos de conexión de Microsoft 365](managing-office-365-endpoints.md).
 
 #### <a name="optimize-urls"></a>Optimización de direcciones URL
 
@@ -70,13 +70,13 @@ Las direcciones URL que se deben optimizar actualmente se muestran en la siguien
 | <https://outlook.office.com> | TCP 443 | Esta dirección URL se usa para que Outlook Online Web Access se conecte al servidor de Exchange Online y es sensible a la latencia de red. La conectividad es especialmente importante para la carga y descarga de archivos grandes con SharePoint Online. |
 | \<tenant\>https://.sharepoint.com | TCP 443 | Esta es la dirección URL principal de SharePoint Online y tiene un uso de ancho de banda alto. |
 | \<tenant\>https://-my.sharepoint.com | TCP 443 | Esta es la dirección URL principal de OneDrive para la Empresa y tiene un gran uso de ancho de banda y posiblemente un alto número de conexiones de la Herramienta de sincronización de OneDrive para la Empresa. |
-| Direcciones IP del contenido multimedia de Teams (sin URL) | UDP 3478, 3479, 3480 y 3481 | Asignación de detección de retransmisión y tráfico en tiempo real. Estos son los puntos de conexión usados para Skype Empresarial y Microsoft Teams tráfico multimedia (llamadas, reuniones, etc.). La mayoría de los puntos de conexión se proporcionan cuando el cliente de Microsoft Teams establece una llamada (que se incluye en las direcciones IP mostradas para el servicio). El uso del protocolo UDP es necesario para obtener la calidad multimedia ideal.   |
+| Direcciones IP del contenido multimedia de Teams (sin URL) | UDP 3478, 3479, 3480 y 3481 | Asignación de detección de retransmisión y tráfico en tiempo real. Estos son los puntos de conexión que se usan para el tráfico multimedia de Skype Empresarial y Microsoft Teams (llamadas, reuniones, etc.). La mayoría de los puntos de conexión se proporcionan cuando el cliente de Microsoft Teams establece una llamada (que se incluye en las direcciones IP mostradas para el servicio). El uso del protocolo UDP es necesario para obtener la calidad multimedia ideal.   |
 
-En los ejemplos anteriores, **el espacio** empresarial debe reemplazarse por su Microsoft 365 de inquilino. Por ejemplo, **contoso.onmicrosoft.com** usaría _contoso.sharepoint.com_ y _contoso-my.sharepoint.com_.
+En los ejemplos anteriores, el **inquilino** debe reemplazarse por el nombre del inquilino de Microsoft 365. Por ejemplo, **contoso.onmicrosoft.com** usaría _contoso.sharepoint.com_ y _contoso-my.sharepoint.com_.
 
 #### <a name="optimize-ip-address-ranges"></a>Optimización de intervalos de direcciones IP
 
-En el momento de escribir los intervalos de direcciones IP a los que corresponden estos puntos de conexión son los siguientes. Se recomienda encarecidamente que use un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) como este ejemplo, el servicio web [DE IP y URL de Microsoft 365](microsoft-365-ip-web-service.md) o la página [URL/IP](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración y poner una directiva en su lugar para hacerlo con regularidad.
+En el momento de escribir los intervalos de direcciones IP a los que corresponden estos puntos de conexión son los siguientes. Se recomienda **encarecidamente** usar un [script como este](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) ejemplo, el [servicio web ip y dirección URL de Microsoft 365](microsoft-365-ip-web-service.md) o la [página URL/IP](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración y establecer una directiva para hacerlo con regularidad.
 
 ```markdown
 104.146.128.0/17
@@ -120,9 +120,9 @@ En el script anterior, _$intIndex_ es el índice de la interfaz conectada a Inte
 
 Una vez que haya agregado las rutas, puede confirmar que la tabla de rutas es la correcta, para ello, ejecute **route print** en un símbolo del sistema o PowerShell. El resultado debe contener las rutas que agregó y mostrar el índice de la interfaz (_22_ en este ejemplo) y la puerta de enlace para dicha interfaz (_192.168.1.1_ en este ejemplo):
 
-![Enruta la salida de impresión.](../media/vpn-split-tunneling/vpn-route-print.png)
+![Salida de impresión de ruta.](../media/vpn-split-tunneling/vpn-route-print.png)
 
-Para agregar rutas para  todos los intervalos de direcciones IP actuales en la categoría Optimizar, puede usar la siguiente variación de script para consultar el servicio [web DE IP y DIRECCIÓN URL de Microsoft 365](microsoft-365-ip-web-service.md) para el conjunto actual de subredes IP de Optimizar y agregarlas a la tabla de rutas.
+Para agregar rutas para _todos los_ intervalos de direcciones IP actuales en la categoría Optimizar, puede usar la siguiente variación de script para consultar la [dirección IP y el servicio web url de Microsoft 365](microsoft-365-ip-web-service.md) para el conjunto actual de subredes DE IP de Optimización y agregarlas a la tabla de rutas.
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>Ejemplo: agregar subredes IP de la categoría Optimizar a la tabla de rutas
 
@@ -156,37 +156,37 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la categoría **Optimizar** se enrute de esta forma. Esto permite que el tráfico use recursos locales de Microsoft, como puertas frontales de servicio de Microsoft 365, como la puerta principal de [Azure](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) que ofrecen servicios Microsoft 365 y puntos de conexión de conectividad lo más cerca posibles de los usuarios. Esto nos permite ofrecer niveles de alto rendimiento a los usuarios en cualquier lugar del mundo y aprovecha al máximo la red [global de clase mundial de Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/), que probablemente se encuentra a unos milisegundos de la salida directa de los usuarios.
+El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la categoría **Optimizar** se enrute de esta forma. Esto permite que el tráfico use recursos locales de Microsoft, como puertas frontales de servicio de Microsoft 365 [, como Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) , que ofrecen servicios de Microsoft 365 y puntos de conexión de conectividad lo más cerca posible de los usuarios. Esto nos permite ofrecer altos niveles de rendimiento a los usuarios dondequiera que estén en el mundo y aprovecha al máximo la [red global de clase mundial de Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/), que es probable que en unos milisegundos de la salida directa de los usuarios.
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>Guías paso a paso para plataformas VPN comunes
 
-En esta sección se proporcionan vínculos a guías detalladas para implementar túneles divididos Microsoft 365 tráfico de los asociados más comunes en este espacio. Se agregarán guías adicionales a medida que estén disponibles.
+En esta sección se proporcionan vínculos a guías detalladas para implementar la tunelización dividida para el tráfico de Microsoft 365 desde los asociados más comunes de este espacio. Se agregarán guías adicionales a medida que estén disponibles.
 
-- **Windows 10 vpn**: [optimizar el tráfico Microsoft 365 para los trabajadores remotos con el cliente VPN Windows 10 cliente VPN nativo](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cliente VPN de Windows 10**: [optimización del tráfico de Microsoft 365 para trabajadores remotos con el cliente VPN nativo de Windows 10](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Optimize Anyconnect Split Tunnel for Office 365 (Optimización del túnel dividido de AnyConnect para Office 365)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**: [optimizar el tráfico Microsoft 365 mediante vpn split Tunnel excluir la ruta de acceso](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Redes BIG-IP APM**: optimizar el tráfico Microsoft 365 acceso remoto a través de [VPN al usar BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix Gateway**: [optimización del túnel dividido de VPN de Citrix Gateway para Office365](https://docs.citrix.com/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure**: [Vpn Tunneling: Cómo configurar la tunelización dividida para excluir Microsoft 365 aplicaciones](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **VPN de punto de** comprobación: [cómo configurar la configuración de Tunnel para Microsoft 365 y otras aplicaciones SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Palo Alto GlobalProtect**: [optimización del tráfico de Microsoft 365 a través de la ruta de acceso de exclusión de túnel dividido de VPN](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**: [Optimización del tráfico de Microsoft 365 en acceso remoto a través de VPN cuando se usa BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix Gateway**: [optimización del túnel dividido de VPN de Citrix Gateway para Office365](https://docs.citrix.com/en-us/citrix-gateway/current-release/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**: [Vpn Tunneling: Cómo configurar la tunelización dividida para excluir aplicaciones de Microsoft 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **VPN de Check Point**: [Configuración de Túnel dividido para Microsoft 365 y otras aplicaciones SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Escenarios comunes de túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Proteger el tráfico Teams multimedia para el túnel dividido de VPN](microsoft-365-vpn-securing-teams.md)
+[Protección del tráfico multimedia Teams para la tunelización dividida VPN](microsoft-365-vpn-securing-teams.md)
 
 [Consideraciones especiales para stream y eventos en directo en entornos VPN](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 optimización del rendimiento para usuarios de China](microsoft-365-networking-china.md)
+[Optimización del rendimiento de Microsoft 365 para usuarios de China](microsoft-365-networking-china.md)
 
 [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
 [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 de red y rendimiento](network-planning-and-performance.md)
+[Optimización de rendimiento y red de Microsoft 365](network-planning-and-performance.md)
 
 [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto específicos (blog del Equipo de Seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 

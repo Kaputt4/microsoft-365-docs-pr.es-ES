@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
-ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466292"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930292"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -77,7 +77,7 @@ Configurar la auditoría (Premium) para los usuarios: para comprobar que la apli
 > [!TIP]
 > Procedimiento recomendado de prueba: crear en los primeros 30 días
 
-Las directivas de retención de registros de auditoría forman parte de las nuevas funcionalidades de auditoría (Premium) en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
+Las directivas de retención de registros de auditoría forman parte de las nuevas funcionalidades de auditoría (Premium) de Microsoft Purview. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
 
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Crear una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
@@ -262,7 +262,7 @@ Para acceder a eDiscovery (Premium) o ser agregado como miembro de un caso de eD
 > [!TIP]
 > Procedimiento recomendado de prueba: crear en los primeros 30 días
 
-Más organizaciones usan la solución eDiscovery (Premium) en Microsoft 365 para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
+Más organizaciones usan la solución eDiscovery (Premium) en Microsoft Purview para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
 
 1. Administrar eDiscovery (Premium): [aprender a configurar eDiscovery (Premium), administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery (Premium) y analizar los resultados de búsqueda de eDiscovery (Premium)](/learn/modules/manage-advanced-ediscovery).
 1. [Crear un caso de eDiscovery con el nuevo formato de caso de eDiscovery avanzado](advanced-ediscovery-new-case-format.md)
