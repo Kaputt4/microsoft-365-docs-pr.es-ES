@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a los permisos de exhibición de documentos electrónicos realizan tareas de búsqueda de contenido, exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento Microsoft Purview.
+description: Obtenga información sobre los eventos que se registran cuando los usuarios asignados a los permisos de exhibición de documentos electrónicos realizan tareas de búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium) en el portal de cumplimiento de Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317524"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015504"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Actividades relacionadas con la búsqueda de contenido y eDiscovery (para Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium)) que se realizan en portal de cumplimiento Microsoft Purview  o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o administradores de eDiscovery (o los permisos de exhibición de documentos electrónicos asignados por el usuario) realizan las siguientes tareas de búsqueda de contenido y exhibición de contenido (estándar) en el portal de cumplimiento:
+Las actividades relacionadas con la búsqueda de contenido y eDiscovery (para microsoft Purview eDiscovery (estándar) y microsoft Purview eDiscovery (Premium)) que se realizan en el portal de cumplimiento de Microsoft Purview o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o administradores de eDiscovery (o los permisos de exhibición de documentos electrónicos asignados por el usuario) realizan las siguientes tareas de búsqueda de contenido y exhibición de contenido (estándar) en el portal de cumplimiento:
   
 - Creación y administración de casos de eDiscovery (estándar) y eDiscovery (Premium)
 
@@ -153,7 +153,7 @@ En la tabla siguiente se describen las actividades de eDiscovery (Premium) regis
 
 ## <a name="ediscovery-cmdlet-activities"></a>Actividades de cmdlet de eDiscovery
 
-En la tabla siguiente se enumeran los registros de auditoría de cmdlets que se registran cuando un administrador o usuario realiza una actividad relacionada con eDiscovery mediante el centro de cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell del Centro de seguridad & cumplimiento. La información detallada del registro de auditoría es diferente para las actividades de cmdlet enumeradas en esta tabla y las actividades de exhibición de documentos electrónicos descritas en la sección anterior.
+En la tabla siguiente se enumeran los registros de registro de auditoría de cmdlets que se registran cuando un administrador o usuario realiza una actividad relacionada con eDiscovery mediante el centro de cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell de cumplimiento de seguridad &. La información detallada del registro de auditoría es diferente para las actividades de cmdlet enumeradas en esta tabla y las actividades de exhibición de documentos electrónicos descritas en la sección anterior.
   
 Como se indicó anteriormente, las actividades de cmdlet de eDiscovery pueden tardar hasta 24 horas en aparecer en los resultados de la búsqueda del registro de auditoría.
   

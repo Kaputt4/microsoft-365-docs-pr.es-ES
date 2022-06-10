@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Usuarios.
-ms.openlocfilehash: c4ae82485c2f9b57b1e47fe61624e0ccac34d067
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: d817ab74d6dd24e644561684073189e68cf7e072
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022501"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007292"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Información general de la página Usuarios de Microsoft 365 Lighthouse 
 

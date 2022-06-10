@@ -1,5 +1,5 @@
 ---
-title: Asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview
+title: Asignación de permisos de eDiscovery en el portal de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,22 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento Microsoft Purview.
+description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento de Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419448"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013384"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Asignación de permisos de eDiscovery en el portal de cumplimiento
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del portal de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
+Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento de Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del portal de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
 
 > [!TIP]
 > Puede ver sus propios permisos en la página de información general de eDiscovery (Premium) en el portal de cumplimiento. Debe tener al menos un rol asignado para que se muestren los permisos.
@@ -59,7 +59,7 @@ El grupo de roles principal relacionado con eDiscovery en el portal de cumplimie
 
 - Debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol Administración de roles para asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento.
 
-- Puede usar el cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) en PowerShell del Centro de seguridad & cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles administrador de eDiscovery. Sin embargo, no puede agregar un grupo de seguridad habilitado para correo al subgrupo administradores de exhibición de documentos electrónicos. Para obtener más información, consulte [Más información](#more-information).
+- Puede usar el cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) en Security & Compliance PowerShell para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles administrador de eDiscovery. Sin embargo, no puede agregar un grupo de seguridad habilitado para correo al subgrupo administradores de exhibición de documentos electrónicos. Para obtener más información, consulte [Más información](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>Asignar permisos de eDiscovery
 
@@ -67,9 +67,11 @@ El grupo de roles principal relacionado con eDiscovery en el portal de cumplimie
   
 2. En el panel izquierdo, seleccione **Permisos**.
 
-3. En la página **Permisos & roles** , en **el Centro de cumplimiento**, haga clic en **Roles**.
+3. En la página **Permisos & roles** , en **Soluciones de Microsoft Purview**, haga clic en **Roles**.
 
-4. En la página **Roles del Centro de cumplimiento** , seleccione **Administrador de exhibición de documentos electrónicos**.
+   Para ir directamente a esta página, use <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. En la página **Grupos de roles para soluciones de Microsoft Purview** , seleccione **Administrador de exhibición de documentos electrónicos**.
   
 5. En la página de control flotante **del Administrador de exhibición de** documentos electrónicos, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que quiera asignar.
   
@@ -86,19 +88,18 @@ En la página **Permisos** del portal de cumplimiento, también puede asignar a 
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con eDiscovery en el portal de cumplimiento e indican los grupos de roles integrados a los que se asigna cada rol de forma predeterminada.
   
-| Función | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
+| Rol | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
-|Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Búsqueda de cumplimiento <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
-|Custodio <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
-|Versión preliminar <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Revisar <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> |
-|Descifrado de RMS <br/>  ||![Marca de verificación](../media/checkmark.png) <br/> |||
-|Buscar y purgar <br/> | <br/> | <br/> |![Marca de verificación](../media/checkmark.png)<br/> | <br/> |
-||||||
+|Administración de casos|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
+|Comunicación||![Marca de verificación.](../media/checkmark.png)|||
+|Búsqueda de cumplimiento|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
+|Custodio||![Marca de verificación.](../media/checkmark.png)|||
+|Export||![Marca de verificación.](../media/checkmark.png)|||
+|Hold|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
+|Preview||![Marca de verificación.](../media/checkmark.png)|||
+|Revisar||![Marca de verificación.](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|
+|Descifrado de RMS||![Marca de verificación](../media/checkmark.png)|||
+|Buscar y purgar|||![Marca de verificación](../media/checkmark.png)||
   
 En las secciones siguientes se describen cada uno de los roles de RBAC relacionados con eDiscovery enumerados en la tabla anterior.
 
@@ -138,7 +139,7 @@ Para obtener más información, vea [Trabajar con custodios en eDiscovery (Premi
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para su análisis en eDiscovery (Premium).
 
-Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde portal de cumplimiento Microsoft Purview](export-search-results.md).
+Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde el portal de cumplimiento de Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Hold
 
@@ -150,7 +151,7 @@ Para obtener más información sobre las retenciones, consulte:
 
 - [Crear una suspensión en eDiscovery (Premium)](add-custodians-to-case.md)
 
-### <a name="preview"></a>Versión preliminar
+### <a name="preview"></a>Preview
 
 Este rol permite a los usuarios ver una lista de elementos devueltos desde una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 
@@ -198,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Dado que un administrador de eDiscovery puede ver y acceder a todos los casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium), puede auditar y supervisar todos los casos y las búsquedas de cumplimiento asociadas. Esto puede ayudar a evitar cualquier uso indebido de búsquedas de cumplimiento o casos de exhibición de documentos electrónicos. Y dado que los administradores de eDiscovery pueden acceder a información potencialmente confidencial en los resultados de una búsqueda de cumplimiento, debe limitar el número de personas que son administradores de eDiscovery.
 
-- **¿Puedo agregar un grupo como miembro del grupo de roles del Administrador de exhibición de documentos electrónicos?** Como se explicó anteriormente, puede agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de exhibición de documentos electrónicos en el grupo de roles del Administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-RoleGroupMember** en PowerShell del Centro de cumplimiento de seguridad &. Por ejemplo, puede ejecutar el siguiente comando para agregar un grupo de seguridad habilitado para correo al grupo de roles del Administrador de exhibición de documentos electrónicos. 
+- **¿Puedo agregar un grupo como miembro del grupo de roles del Administrador de exhibición de documentos electrónicos?** Como se explicó anteriormente, puede agregar un grupo de seguridad habilitado para correo como miembro del subgrupo Administradores de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-RoleGroupMember** en PowerShell de cumplimiento de & seguridad. Por ejemplo, puede ejecutar el siguiente comando para agregar un grupo de seguridad habilitado para correo al grupo de roles del Administrador de exhibición de documentos electrónicos. 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -206,6 +207,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     no se admiten Exchange grupos de distribución ni Grupos de Microsoft 365. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell mediante la ejecución de `New-DistributionGroup -Type Security`. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles administradores de exhibición de documentos electrónicos.
 
-    Además, como se indicó anteriormente, no puede convertir un grupo de seguridad habilitado para correo en un administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell del Centro de seguridad & cumplimiento. Solo puede agregar usuarios individuales como administradores de eDiscovery.
+    Además, como se indicó anteriormente, no puede convertir un grupo de seguridad habilitado para correo en un administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell de cumplimiento de & seguridad. Solo puede agregar usuarios individuales como administradores de eDiscovery.
 
     Tampoco puede agregar un grupo de seguridad habilitado para correo como miembro de un caso.

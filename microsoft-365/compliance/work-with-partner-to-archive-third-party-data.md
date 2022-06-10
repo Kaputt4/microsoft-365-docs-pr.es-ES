@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: f0de03fb68b78779b6d1ed057a8b462c5c2a901b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 02c0d8a61668a0d3dd3e663c1cb4915be15d9a08
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097566"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015526"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -161,7 +161,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 - Bloomberg Mail
 
-- Cuadro
+- Box
 
 - CipherCloud para Salesforce Chatter
 
@@ -403,7 +403,6 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 - YouTube
 
-
 ### <a name="verba"></a>Verba
 
 [Verba](https://www.verba.com) admite los siguientes orígenes de datos de terceros:
@@ -476,7 +475,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 Estos son los pasos para crear y configurar un buzón de datos de terceros para importar datos a Microsoft 365. Como se explicó anteriormente, los elementos se importan a este buzón si el conector del asociado no puede asignar el identificador de usuario del elemento a una cuenta de usuario.
 
- **Complete estas tareas en el Centro de administración de Microsoft 365**
+### <a name="complete-these-tasks-in-the-microsoft-365-admin-center"></a>Complete estas tareas en el Centro de administración de Microsoft 365
 
 1. Cree una cuenta de usuario y asígnele una licencia Exchange Online plan 2; consulte [Agregar usuarios a Microsoft 365](../admin/add-users/add-users.md). Se requiere una licencia del plan 2 para colocar el buzón en suspensión por juicio o habilitar un buzón de archivo que tenga una cuota de almacenamiento de hasta 1,5 TB.
 
@@ -485,9 +484,9 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
     > [!TIP]
     > Escriba las credenciales para esta cuenta de usuario. Necesitará proporcionárselas a su socio, tal como se describe en el paso 4.
 
- **Complete estas tareas en el centro de administración de Exchange**
+### <a name="complete-these-tasks-in-the-exchange-admin-center"></a>Complete estas tareas en el centro de administración de Exchange
 
-1. Oculte el buzón de datos de terceros de la libreta de direcciones y otras listas de direcciones de su organización; consulte [Administración de buzones de usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Como alternativa, puede ejecutar el siguiente comando de PowerShell:
+1. Oculte el buzón de datos de terceros de la libreta de direcciones y otras listas de direcciones de su organización; consulte [Administración de buzones de usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Como alternativa, puede ejecutar el siguiente [comando de PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell):
 
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
@@ -509,7 +508,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Paso 3: Configurar los buzones de usuario para los datos de terceros
 
-El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o mediante los cmdlets de Windows PowerShell correspondientes.
+El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o mediante los cmdlets correspondientes.
 
 1. Habilite el buzón de archivo para cada usuario; consulte [Habilitación de buzones de archivo](enable-archive-mailboxes.md) y [Habilitación del archivado de expansión automática](enable-autoexpanding-archiving.md).
 
@@ -562,17 +561,17 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
 
 ## <a name="more-information"></a>Más información
 
-- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector de asociado importa el elemento mediante un esquema requerido por la API de Microsoft 365. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si falta una propiedad obligatoria en un elemento, no se importará a Microsoft 365. El proceso de importación devuelve un mensaje de error que explica por qué no se importó un elemento y qué propiedad falta.<br/><br/>
+- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector de asociado importa el elemento mediante un esquema requerido por la API de Microsoft 365. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si falta una propiedad obligatoria en un elemento, no se importará a Microsoft 365. El proceso de importación devuelve un mensaje de error que explica por qué no se importó un elemento y qué propiedad falta.
 
-    |**Propiedad del mensaje**|**¿Es obligatoria?**|**Descripción**|**Valor de ejemplo**|
-    |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de asociado intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**TO** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |
-    |**ASUNTO** <br/> |No  <br/> |El asunto del elemento de origen.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**FECHA** <br/> |Sí  <br/> |Fecha en que se creó o se publicó originalmente el elemento en el origen de datos del cliente. Por ejemplo, esa fecha en la que se tuiteó un mensaje de Twitter.  <br/> | `01 NOV 2015` <br/> |
-    |**CUERPO** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector del asociado intenta mantener la fidelidad completa del origen de contenido lo más posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector del asociado y de la funcionalidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**ARCHIVO ADJUNTO** <br/> |No  <br/> |Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **BODY** . Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector del asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar por  `IPM.NOTE`. Este formato es similar al de la clase de  `IPM.NOTE.X` mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+  |Propiedad del mensaje|¿Es obligatoria?|Descripción|Valor de ejemplo|
+  |---|---|---|---|
+  |**FROM**|Sí|El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de asociado intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**TO**|Sí|El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.|`bob@contoso.com`|
+  |**ASUNTO**|No|El asunto del elemento de origen.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
+  |**FECHA**|Sí|Fecha en que se creó o se publicó originalmente el elemento en el origen de datos del cliente. Por ejemplo, esa fecha en la que se tuiteó un mensaje de Twitter.|`01 NOV 2015`|
+  |**CUERPO**|No|El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector del asociado intenta mantener la fidelidad completa del origen de contenido lo más posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector del asociado y de la funcionalidad de la plataforma de origen.|`Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015`|
+  |**ARCHIVO ADJUNTO**|No|Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **BODY** . Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.|`image.gif`|
+  |**MESSAGECLASS**|Sí|Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector del asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar por  `IPM.NOTE`. Este formato es similar al de la clase de  `IPM.NOTE.X` mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.|`IPM.NOTE.Twitter.Tweet`|
 
 - Cuando los elementos se importan correctamente a buzones de Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado  `x-IngestionCorrelationID`, se puede usar para la solución de problemas posteriores por parte de los asociados para realizar un seguimiento completo de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 

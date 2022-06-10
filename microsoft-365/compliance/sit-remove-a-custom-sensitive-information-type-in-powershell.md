@@ -1,5 +1,5 @@
 ---
-title: Quitar un tipo de información confidencial personalizada con PowerShell
+title: Eliminación de un tipo de información confidencial personalizada mediante PowerShell
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,26 +14,28 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo quitar un tipo de información confidencial personalizada con PowerShell
-ms.openlocfilehash: 852f9987b072f05dcf4f322f600bed23bcce7ef2
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Obtenga información sobre cómo quitar un tipo de información confidencial personalizado mediante PowerShell
+ms.openlocfilehash: e935c9340c353561e71e25fdadfec5509da041e5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900975"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014748"
 ---
-# <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Quitar un tipo de información confidencial personalizada con PowerShell
+# <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Eliminación de un tipo de información confidencial personalizada mediante PowerShell
 
-En PowerShell del Centro de cumplimiento, hay dos métodos para quitar los tipos personalizados de información confidencial:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- **Quitar tipos de información confidencial** personalizados individuales: use el método documentado en [Modificar un tipo de información confidencial personalizado con PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). Exporte el paquete de reglas personalizado que contiene el tipo de información confidencial personalizada, quite el tipo de información confidencial del archivo XML e importe el archivo XML actualizado de nuevo al paquete de reglas personalizado existente.
+En Security & Compliance PowerShell, hay dos métodos para quitar tipos de información confidencial personalizados:
+
+- **Quitar tipos de información confidencial personalizados individuales**: use el método documentado en [Modificar un tipo de información confidencial personalizada mediante PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). Exporte el paquete de reglas personalizado que contiene el tipo de información confidencial personalizada, quite el tipo de información confidencial del archivo XML e importe de nuevo el archivo XML actualizado en el paquete de reglas personalizado existente.
 
 - **Quitar un paquete de reglas personalizado y todos los tipos de información confidencial que contiene**: este método se documenta en esta sección.
 
 > [!NOTE]
 > Antes de quitar un tipo personalizado de información confidencial, asegúrese de que ninguna de las directivas DLP o reglas de flujo del correo de Exchange (también conocidas como reglas de transporte) hagan referencia al tipo de información confidencial.
 
-1. [Conectar con el Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/exchange-online-powershell)
+1. [PowerShell de cumplimiento de & de seguridad](/powershell/exchange/exchange-online-powershell)
 
 2. Para quitar un paquete de reglas personalizado, use el cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage):
 
@@ -75,7 +77,7 @@ En PowerShell del Centro de cumplimiento, hay dos métodos para quitar los tipos
 
 ## <a name="more-information"></a>Más información
 
-- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 

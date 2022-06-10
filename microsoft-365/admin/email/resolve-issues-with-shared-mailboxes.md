@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que se produzcan errores al configurar buzones compartidos. Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
-ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437115"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008587"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
@@ -38,9 +38,9 @@ Si ve mensajes de error al crear o usar un buzón compartido, pruebe estas posib
 
 Si ve el mensaje de error, **las direcciones proxy o LegacyExchangeDN de "\<name>" ya usan la dirección de proxy "smtp:<nombre\> de buzón compartido". Elija otra dirección de proxy**, lo que significa que está intentando asignar al buzón compartido un nombre que ya esté en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Hay dos formas de hacerlo:
 
-  - Use Windows PowerShell. Consulte esta entrada de blog para obtener instrucciones: [Creación de buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
-    
-  - Asigne al segundo buzón compartido un nombre diferente del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que quiera que sea.
+- Use Exchange Online PowerShell. Consulte esta entrada de blog para obtener instrucciones: [Creación de buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+
+- Asigne al segundo buzón compartido un nombre diferente del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que quiera que sea.
 
 ## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Error al no tener permisos de envío al usar un buzón compartido
 

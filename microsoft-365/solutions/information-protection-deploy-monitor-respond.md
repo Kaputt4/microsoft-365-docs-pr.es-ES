@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes de interesados para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953335"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013274"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisión y respuesta a incidentes de privacidad de datos en su organización
 
@@ -61,7 +61,7 @@ Para ayudarle a empezar a trabajar con un esquema de supervisión y respuesta en
 - ¿Qué tipo de técnicas diarias de supervisión, investigación e informes están disponibles para los diferentes tipos de datos y orígenes?
 - Qué mecanismos serán necesarios para controlar las solicitudes del interesado (DSR) y las acciones correctivas, como anonimización, censura y eliminación.
 
-## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Directivas de auditoría y alertas en el Centro de seguridad y cumplimiento
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Directivas de auditoría y alertas en el portal de cumplimiento de Microsoft Purview
 
 Consulte estos artículos para configurar directivas de auditoría, auditoría avanzada y alertas:
 
@@ -76,7 +76,7 @@ Consulte [Solicitudes de interesados para el RGPD y CCPA](/compliance/regulatory
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Administración de usuarios eliminados en Microsoft Stream
 
-Por Microsoft Stream, cuando se elimina un usuario de Azure Active Directory (Azure AD), si su nombre estaba asociado a un vídeo de Stream publicado antes de ese momento, su dirección de correo electrónico permanece asociada al vídeo. Consulte [Administración de usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlos.
+Por Microsoft Stream, cuando un usuario se elimina de Azure Active Directory (Azure AD), si su nombre estaba asociado a un vídeo de Stream publicado antes de ese momento, su dirección de correo electrónico permanece asociada al vídeo. Consulte [Administración de usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlos.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Administración de riesgos internos como herramienta de investigación
 

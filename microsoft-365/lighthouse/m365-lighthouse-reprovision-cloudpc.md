@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo volver a aprovisionar un PC en la nube Windows 365 en Microsoft 365 Lighthouse.
-ms.openlocfilehash: c3ff7dac53798f26da212ac4790ba0cb1412c307
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535889"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017531"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Reprovisione un PC en la nube Windows 365 en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse admite el reaprovisionamiento de equipos en la nube que tienen una directiva de aprovisionamiento. Es posible que tenga que volver a aprovisionar un dispositivo para un nuevo usuario o si el dispositivo no funciona correctamente. Cuando se desencadena un reaprovisionamiento, el PC en la nube se elimina y se vuelve a crear como uno nuevo. Se eliminarán todos los datos de usuario, aplicaciones, personalizaciones y similares.
+Microsoft 365 Lighthouse admite el reaprovisionamiento de equipos en la nube que tienen una directiva de aprovisionamiento. Es posible que tenga que volver a aprovisionar un dispositivo para un nuevo usuario o si el dispositivo no funciona correctamente. Cuando se desencadena un reaprovisionamiento, el equipo en la nube se elimina y se vuelve a crear como un nuevo equipo en la nube. Se eliminan todos los datos de usuario, las aplicaciones y las personalizaciones.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -46,7 +47,7 @@ Debe ser administrador de PC en la nube en el inquilino del asociado.
 6. En el cuadro de diálogo de confirmación, seleccione **Reprovisionar**.
 
 > [!NOTE]
-> El usuario actual del equipo en la nube se iniciará sesión inmediatamente y se quitarán todos los datos de usuario.
+> El usuario actual del equipo en la nube se ha iniciado sesión inmediatamente y se quitan todos los datos de usuario.
 
 ## <a name="check-the-device-action-status"></a>Comprobación del estado de la acción del dispositivo
 

@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663478"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015756"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -30,8 +30,8 @@ Después de configurar la clave de cliente, deberá crear y asignar una o varias
 Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar la clave de cliente. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Para crear un DEP de varias cargas de trabajo, siga estos pasos:
-  
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Para crear un DEP, use el cmdlet New-M365DataAtRestEncryptionPolicy.
 
@@ -73,15 +73,15 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## <a name="create-a-dep-for-use-with-exchange-online-mailboxes"></a>Creación de un DEP para su uso con buzones de Exchange Online
 
-Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Para completar estos pasos, conéctese de forma remota a Exchange Online con Windows PowerShell.
+Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Completará estos pasos en Exchange Online PowerShell.
 
 Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigne un DEP a un buzón de Microsoft 365. Microsoft 365 usará las claves identificadas en la directiva para cifrar el buzón. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
 
 Para crear un DEP que se usará con un buzón de correo, siga estos pasos:
-  
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o de administrador Exchange Online en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o de administrador Exchange Online en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Para crear un DEP, escriba el siguiente comando para usar el cmdlet New-DataEncryptionPolicy.
 
@@ -100,7 +100,7 @@ Para crear un DEP que se usará con un buzón de correo, siga estos pasos:
    - *KeyVaultURI2* es el URI de la segunda clave de la directiva. Por ejemplo, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separe los dos URI por una coma y un espacio.
 
    Ejemplo:
-  
+
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
@@ -110,7 +110,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 ### <a name="assign-a-dep-to-a-mailbox"></a>Asignación de un DEP a un buzón
 
 Asigne el DEP a un buzón mediante el cmdlet Set-Mailbox. Una vez que asigne la directiva, Microsoft 365 puede cifrar el buzón con la clave identificada en el DEP.
-  
+
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
@@ -128,16 +128,16 @@ Donde *MailUserIdParameter* especifica un usuario de correo (también conocido c
 ## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Creación de un DEP para su uso con archivos SharePoint Online, OneDrive para la Empresa y Teams
 
 Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
-  
-Para configurar la clave de cliente para SharePoint archivos en línea, OneDrive para la Empresa y Teams, complete estos pasos mediante la conexión remota a SharePoint Online con Windows PowerShell.
-  
+
+Para configurar la clave de cliente para SharePoint archivos en línea, OneDrive para la Empresa y Teams, complete estos pasos en SharePoint PowerShell en línea.
+
 Un DEP se asocia a un conjunto de claves almacenadas en Azure Key Vault. Se aplica un DEP a todos los datos de una ubicación geográfica, también denominada geoárea. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geo con la capacidad de usar claves diferentes por geo. Si no usa multigeográfica, puede crear un DEP en su organización para usarlo con archivos de SharePoint Online, OneDrive para la Empresa y Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos de esa ubicación geográfica. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
-  
+
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
-  
-Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante Windows PowerShell.
-  
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conectar para SharePoint PowerShell en línea](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
+
+Para crear un DEP, debe usar SharePoint PowerShell en línea.
+
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [conéctese a SharePoint PowerShell en línea](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
 2. En el shell de administración de Microsoft Office SharePoint Online, ejecute el cmdlet Register-SPODataEncryptionPolicy de la siguiente manera:
 
@@ -146,7 +146,7 @@ Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante 
    ```
 
    Ejemplo:
-  
+
    ```powershell
    Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a'
    ```
@@ -186,7 +186,7 @@ Para asignar un DEP a un buzón antes de migrarlo a Office 365, ejecute el cmdle
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Determinación del DEP asignado a un buzón
 
 Para determinar el DEP asignado a un buzón de correo, use el cmdlet Get-MailboxStatistics. El cmdlet devuelve un identificador único (GUID).
-  
+
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    ```powershell
@@ -194,9 +194,9 @@ Para determinar el DEP asignado a un buzón de correo, use el cmdlet Get-Mailbox
    ```
 
    Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón y DataEncryptionPolicyID devuelve el GUID del DEP. Para obtener más información sobre el cmdlet Get-MailboxStatistics, consulte [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics).
-  
+
 2. Ejecute el cmdlet Get-DataEncryptionPolicy para averiguar el nombre descriptivo del DEP al que está asignado el buzón.
-  
+
    ```powershell
    Get-DataEncryptionPolicy <GUID>
    ```
@@ -210,9 +210,9 @@ Tanto si ha inscrito una clave de cliente, ha asignado un nuevo DEP como si ha m
 ### <a name="verify-encryption-completes-for-exchange-online-mailboxes"></a>Comprobación de que el cifrado se completa para los buzones de Exchange Online
 
 El cifrado de un buzón de correo puede tardar algún tiempo. Para el cifrado por primera vez, el buzón también debe moverse completamente de una base de datos a otra para que el servicio pueda cifrar el buzón.
-  
+
 Use el cmdlet Get-MailboxStatistics para determinar si se cifra un buzón de correo.
-  
+
 ```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
@@ -230,7 +230,7 @@ Compruebe el estado del cifrado mediante la ejecución del cmdlet Get-SPODataEnc
 ```
 
 La salida de este cmdlet incluye:
-  
+
 - URI de la clave principal.
 
 - Uri de la clave secundaria.
@@ -251,40 +251,40 @@ La salida de este cmdlet incluye:
 
 Para obtener detalles sobre todos los DEP que ha creado para usarlos con varias cargas de trabajo, complete estos pasos:
 
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    - Para devolver la lista de todos los DEP de varias cargas de trabajo de la organización, ejecute este comando.
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy
+     Get-M365DataAtRestEncryptionPolicy
      ```
 
    - Para devolver detalles sobre un DEP específico, ejecute este comando. En este ejemplo se devuelve información detallada del DEP denominado "Contoso_Global".
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
+     Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
      ```
 
 ## <a name="get-multi-workload-dep-assignment-information"></a>Obtención de información de asignación de DEP de varias cargas de trabajo
 
-Para averiguar qué DEP está asignado actualmente al inquilino, siga estos pasos. 
+Para averiguar qué DEP está asignado actualmente al inquilino, siga estos pasos.
 
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Escriba este comando.
 
    ```powershell
-      Get-M365DataAtRestEncryptionPolicyAssignment
+   Get-M365DataAtRestEncryptionPolicyAssignment
    ```
 
 ## <a name="disable-a-multi-workload-dep"></a>Deshabilitación de un DEP de varias cargas de trabajo
 
 Antes de deshabilitar un DEP de varias cargas de trabajo, quite la asignación del DEP de las cargas de trabajo del inquilino. Para deshabilitar un DEP usado con varias cargas de trabajo, complete estos pasos:
 
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Ejecute el cmdlet Set-M365DataAtRestEncryptionPolicy.
-  
+
    ```powershell
    Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Enabled $false
    ```
@@ -300,19 +300,19 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 ## <a name="restore-azure-key-vault-keys"></a>Restauración de claves de Azure Key Vault
 
 Antes de realizar una restauración, use las funcionalidades de recuperación proporcionadas por la eliminación temporal. Todas las claves que se usan con clave de cliente son necesarias para tener habilitada la eliminación temporal. La eliminación temporal actúa como una papelera de reciclaje y permite la recuperación durante un máximo de 90 días sin necesidad de restaurar. La restauración solo debe ser necesaria en circunstancias extremas o inusuales, por ejemplo, si se pierde la clave o el almacén de claves. Si debe restaurar una clave para usarla con la clave de cliente, en Azure PowerShell, ejecute el cmdlet Restore-AzureKeyVaultKey como se indica a continuación:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
 Por ejemplo:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
 Si el almacén de claves ya contiene una clave con el mismo nombre, se produce un error en la operación de restauración. Restore-AzKeyVaultKey restaura todas las versiones de clave y todos los metadatos de la clave, incluido el nombre de la clave.
-  
+
 ## <a name="manage-key-vault-permissions"></a>Administración de permisos del almacén de claves
 
 Hay varios cmdlets disponibles que permiten ver y, si es necesario, quitar permisos del almacén de claves. Es posible que tenga que quitar permisos, por ejemplo, cuando un empleado deja el equipo. Para cada una de estas tareas, usará Azure PowerShell. Para obtener información sobre Azure PowerShell, consulte [Información general de Azure PowerShell](/powershell/azure/).
@@ -330,7 +330,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
 Para quitar los permisos de un administrador, ejecute el cmdlet Remove-AzKeyVaultAccessPolicy:
-  
+
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
@@ -348,7 +348,7 @@ Si necesita volver a las claves administradas por Microsoft, puede hacerlo. Al d
 > [!IMPORTANT]
 > La eliminación no es lo mismo que una purga de datos. Una purga de datos elimina permanentemente los datos de la organización de Microsoft 365, pero la eliminación no lo hace. No se puede realizar una purga de datos para una directiva de varias cargas de trabajo.
 
-Si decide no usar la clave de cliente para asignar dep de cargas de trabajo múltiples, tendrá que ponerse en contacto con el soporte técnico de Microsoft con una solicitud para "offboard" desde la clave de cliente. Pida al equipo de soporte técnico que abra una solicitud de servicio en el equipo de clave de cliente de Microsoft Purview. Póngase en contacto con m365-ck@service.microsoft.com si tiene alguna pregunta.
+Si decide no usar la clave de cliente para asignar dep de cargas de trabajo múltiples, tendrá que ponerse en contacto con el soporte técnico de Microsoft con una solicitud para "offboard" desde la clave de cliente. Pida al equipo de soporte técnico que abra una solicitud de servicio contra el equipo de clave de cliente de Microsoft Purview. Póngase en contacto con m365-ck@service.microsoft.com si tiene alguna pregunta.
 
 Si ya no desea cifrar buzones individuales mediante DEP de nivel de buzón, puede anular la asignación de desasignaciones de nivel de buzón de correo de todos los buzones de correo.
 
@@ -359,13 +359,13 @@ Para anular la asignación de los DEP de buzón de correo, use el cmdlet de Powe
 2. Ejecute el cmdlet Set-Mailbox.
 
    ```powershell
-   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $null
    ```
 
 Al ejecutar este cmdlet, se anula la asignación del DEP asignado actualmente y se vuelve a cifrar el buzón mediante el DEP asociado a las claves administradas por Microsoft predeterminadas. No se puede anular la asignación del DEP usado por las claves administradas por Microsoft. Si no desea usar claves administradas por Microsoft, puede asignar otro DEP de clave de cliente al buzón.
 
 > [!IMPORTANT]
-> No se admite la reversión de la clave de cliente a las claves administradas por Microsoft para SharePoint archivos en línea, OneDrive para la Empresa y Teams. 
+> No se admite la reversión de la clave de cliente a las claves administradas por Microsoft para SharePoint archivos en línea, OneDrive para la Empresa y Teams.
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocar las claves e iniciar el proceso de ruta de acceso de purga de datos
 
@@ -412,7 +412,7 @@ Para iniciar la ruta de acceso de purga de datos, complete estos pasos:
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Revocar las claves de cliente y la clave de disponibilidad para SharePoint archivos en línea, OneDrive para la Empresa y Teams
 
-No se admite la purga de SharePoint, OneDrive para el trabajo o la escuela, y los ARCHIVOS DEP de Teams no se admiten en clave de cliente. Estos DEP de varias cargas de trabajo se usan para cifrar datos en varias cargas de trabajo en todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo se hicieran inaccesibles. Si decide salir de Microsoft 365 servicios por completo, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Vea cómo [eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
+No se admite la purga de SharePoint, OneDrive para el trabajo o la escuela, y los ARCHIVOS DEP de Teams no se admiten en clave de cliente. Estos DEP de varias cargas de trabajo se usan para cifrar datos en varias cargas de trabajo en todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo se hicieran inaccesibles. Si decide salir de Microsoft 365 servicios por completo, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Vea cómo [eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

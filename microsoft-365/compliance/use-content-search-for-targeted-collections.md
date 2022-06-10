@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094932"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015548"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Uso de la búsqueda de contenido para colecciones de destino
 
@@ -41,12 +41,12 @@ La herramienta de búsqueda de contenido del portal de cumplimiento de Microsoft
 
 - También tiene que tener asignado el rol Destinatarios de correo en la organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información sobre cómo asignar permisos en Exchange Online, vea [Administrar miembros del grupo de roles](/exchange/manage-role-group-members-exchange-2013-help). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
-- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es un Microsoft 365 o una organización Microsoft 365 GCC. Si es una organización Office 365 Alemania, una organización Microsoft 365 GCC High o una organización Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, tiene que editar la línea `Connect-ExchangeOnline` y usar el parámetro *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a PowerShell security & Compliance Center. Para obtener más información, consulte los ejemplos de [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) y [Conectar a PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es un Microsoft 365 o una organización Microsoft 365 GCC. Si es una organización Office 365 Alemania, una organización Microsoft 365 GCC High o una organización Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, tiene que editar la línea `Connect-ExchangeOnline` y usar el parámetro *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a PowerShell de cumplimiento de seguridad &. Para obtener más información, consulte los ejemplos de [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) y [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- Cada vez que se ejecuta el script, se crea una nueva sesión remota de PowerShell. Esto significa que puede usar todas las sesiones remotas de PowerShell disponibles. Para evitar que esto suceda, ejecute el siguiente comando para desconectar las sesiones de PowerShell remotas activas.
+- Cada vez que se ejecuta el script, se crea una nueva sesión remota de PowerShell. Esto significa que puede usar todas las sesiones remotas de PowerShell disponibles. Para evitar que esto suceda, ejecute los siguientes comandos para desconectar las sesiones de PowerShell remotas activas.
 
   ```powershell
-  Get-PSSession | Remove-PSSession
+  Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
     Para obtener más información, vea [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -67,7 +67,7 @@ El script que ejecute en este primer paso devolverá una lista de carpetas de bu
 
   - **OneDrive para la Empresa**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **Credenciales de usuario**: el script usará sus credenciales para conectarse a Exchange Online PowerShell o PowerShell del Centro de cumplimiento de seguridad & mediante la autenticación moderna. Como se explicó anteriormente, debe tener asignados los permisos adecuados para ejecutar correctamente este script.
+- **Credenciales de usuario**: el script usará sus credenciales para conectarse a Exchange Online PowerShell o PowerShell de cumplimiento de seguridad & mediante la autenticación moderna. Como se explicó anteriormente, debe tener asignados los permisos adecuados para ejecutar correctamente este script.
 
 Para mostrar una lista de carpetas de buzón o nombres de vínculo de documento de sitio (ruta de acceso):
 
@@ -132,7 +132,7 @@ Para mostrar una lista de carpetas de buzón o nombres de vínculo de documento 
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Connect to Security & Compliance Center PowerShell
+      # Connect to Security & Compliance PowerShell
       if (!$SccSession)
       {
           Import-Module ExchangeOnlineManagement
@@ -222,7 +222,7 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con la cuenta y las credenciales que usó para ejecutar el script en el paso 1.
 
-2. En el panel izquierdo del centro de cumplimiento, haga clic en **Mostrar todo** >  **Búsqueda de contenido** y, a continuación, haga clic en **Nueva búsqueda**.
+2. En el panel izquierdo del centro de cumplimiento, haga clic en **Mostrar toda** >  la **búsqueda de contenido** y, a continuación, haga clic en **Nueva búsqueda**.
 
 3. En el cuadro **Palabras clave** , pegue el `folderid:<folderid>` valor o  `documentlink:<path>/*` devuelto por el script en el paso 1.
 

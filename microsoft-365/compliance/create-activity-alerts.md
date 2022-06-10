@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Agregue y administre alertas de actividad en el portal de cumplimiento de Microsoft Purview para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas.
-ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097016"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018105"
 ---
 # <a name="create-activity-alerts"></a>Creación de alertas de actividad
 
@@ -128,7 +128,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |Elimina de forma permanente (purga) un mensaje de correo electrónico de su buzón.  |Mensajes purgados del buzón  | Actividades de buzón de Exchange  |
     |Envía un mensaje de correo electrónico desde un buzón compartido.  |Mensaje enviado mediante los permisos de Enviar como  <br/> And  <br/> Mensaje enviado mediante los permisos en nombre de  | Actividades de buzón de Exchange  |
 
-- También puede usar los cmdlets **New-ActivityAlert** y **Set-ActivityAlert** en PowerShell security & Compliance Center para crear y editar alertas de actividad. Tenga en cuenta lo siguiente si usa estos cmdlets para crear o editar alertas de actividad:
+- También puede usar los cmdlets **New-ActivityAlert** y **Set-ActivityAlert** de Security & Compliance de PowerShell para crear y editar alertas de actividad. Tenga en cuenta lo siguiente si usa estos cmdlets para crear o editar alertas de actividad:
 
   - Si usa un cmdlet para agregar una actividad a la alerta que no aparece en la lista desplegable **Actividades** , se muestra un mensaje en la página de propiedades de la alerta que indica: "Esta alerta tiene operaciones personalizadas que no se muestran en el selector".
 

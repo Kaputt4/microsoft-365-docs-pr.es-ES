@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga una lista de los requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4dae28206ba06b8e942290da29ba6a86b49ca7fd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692724"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017567"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -35,14 +36,14 @@ Además, cada inquilino del cliente MSP debe calificar para Lighthouse cumpliend
 - Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas Licencia
 - No debe tener más de 1000 usuarios con licencia
 
-*Se requiere privilegios de Administración delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de Administración delegados granulares (GDAP) con los clientes para habilitar un acceso delegado más seguro. Aunque DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos están en vigor. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
+Se requiere privilegios de administrador delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>Requisitos para habilitar la administración de dispositivos
 
 Para ver los dispositivos de inquilino del cliente en las páginas de administración de dispositivos, un MSP debe:
 
 - Inscriba todos los dispositivos de cliente en Microsoft Endpoint Manager (MEM). Para obtener más información, consulte [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/).
-- Asigne directivas de cumplimiento a todos los dispositivos de cliente. Para obtener más información, consulte [Creación de una directiva de cumplimiento en Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+- Asigne directivas de cumplimiento a todos los dispositivos de cliente. Para obtener más información, vea [Crear una directiva de cumplimiento en Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="requirements-for-enabling-user-management"></a>Requisitos para habilitar la administración de usuarios
 

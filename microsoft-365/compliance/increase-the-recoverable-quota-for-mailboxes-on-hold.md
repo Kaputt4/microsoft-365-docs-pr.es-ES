@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta Elementos recuperables de un buzón en Microsoft 365.
-ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100817"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015024"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -64,7 +64,7 @@ En el resto de este tema se describen los procedimientos paso a paso para crear 
 
 El primer paso consiste en crear una etiqueta de retención personalizada (denominada etiqueta de directiva de retención o RPT) para la carpeta Elementos recuperables. Como se ha explicado anteriormente, esta RPT mueve elementos de la carpeta Elementos recuperables del buzón de correo principal del usuario a la carpeta Elementos recuperables del buzón de archivo del usuario. Tiene que usar PowerShell para crear una RPT para la carpeta Elementos recuperables. No puede usar el Centro de administración de Exchange (EAC).
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el comando siguiente para crear una RPT para la carpeta Elementos recuperables: 
 
@@ -137,7 +137,7 @@ El último paso consiste en aplicar la nueva directiva de retención que ha crea
 
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>Usar el EAC para aplicar la nueva directiva de retención
 
-1. Vaya a **DestinatariosMailboxes** > .
+1. Vaya a **Buzones de** **destinatarios** > .
 
 2. En la vista de lista, seleccione el buzón al que desea aplicar la directiva de retención y, a continuación, haga clic en **el icono Editar edición**![.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
@@ -147,7 +147,7 @@ El último paso consiste en aplicar la nueva directiva de retención que ha crea
 
 También puede usar el EAC para aplicar la directiva de retención a varios buzones.
 
-1. Vaya a **DestinatariosMailboxes** > .
+1. Vaya a **Buzones de** **destinatarios** > .
 
 2. En la vista de lista, use las teclas Mayús o Ctrl para seleccionar varios buzones.
 

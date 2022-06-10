@@ -15,38 +15,40 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903866"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014528"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
-En este artículo se muestra cómo crear un archivo de paquete *de reglas* XML que defina tipos de [información confidencial personalizados](sensitive-information-type-entity-definitions.md). En este artículo se describe un tipo de información confidencial personalizada que identifica un identificador de empleado. Puede usar el XML de ejemplo de este artículo como punto de partida para su propio archivo XML.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Para obtener más información acerca de los tipos de información confidencial, vea [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+En este artículo se muestra cómo crear un archivo de *paquete de reglas* XML que define [tipos de información confidencial](sensitive-information-type-entity-definitions.md) personalizados. En este artículo se describe un tipo de información confidencial personalizado que identifica un identificador de empleado. Puede usar el XML de ejemplo de este artículo como punto de partida para su propio archivo XML.
 
-Después de crear un archivo XML bien formado, puede cargarlo en Microsoft 365 con PowerShell. A continuación, está listo para usar el tipo de información confidencial personalizado en las directivas. Puede probar su eficacia en la detección de la información confidencial según lo previsto.
+Para obtener más información sobre los tipos de información confidencial, consulte [Información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md).
+
+Después de crear un archivo XML bien formado, puede cargarlo en Microsoft 365 mediante PowerShell. A continuación, está listo para usar el tipo de información confidencial personalizada en las directivas. Puede probar su eficacia en la detección de la información confidencial según lo previsto.
 
 > [!NOTE]
-> Si no necesita el control preciso que proporciona PowerShell, puede crear tipos de información confidencial personalizados en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md).
+> Si no necesita el control específico que proporciona PowerShell, puede crear tipos de información confidencial personalizados en el portal de cumplimiento de Microsoft Purview. Para obtener más información, consulte [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Declinación de responsabilidades importante
 
-El soporte técnico de Microsoft no puede ayudarle a crear definiciones de coincidencia de contenido.
+Soporte técnico de Microsoft no puede ayudarle a crear definiciones de coincidencia de contenido.
 
-Para el desarrollo, las pruebas y la depuración personalizados de coincidencia de contenido, deberá usar sus propios recursos de TI internos o usar servicios de consultoría, como Microsoft Consulting Services (MCS). Los ingenieros de soporte técnico de Microsoft pueden proporcionar compatibilidad limitada con esta característica, pero no pueden garantizar que las sugerencias personalizadas de coincidencia de contenido satisfagan completamente sus necesidades.
+Para el desarrollo, las pruebas y la depuración personalizados de coincidencia de contenido, deberá usar sus propios recursos de TI internos o usar servicios de consultoría, como Microsoft Consulting Services (MCS). Soporte técnico de Microsoft ingenieros pueden proporcionar compatibilidad limitada con esta característica, pero no pueden garantizar que las sugerencias personalizadas de coincidencia de contenido satisfagan por completo sus necesidades.
 
-MCS puede proporcionar expresiones regulares con fines de prueba. También pueden proporcionar asistencia para solucionar problemas de un patrón RegEx existente que no funciona como se esperaba con un solo ejemplo de contenido específico.
+MCS puede proporcionar expresiones regulares con fines de prueba. También pueden proporcionar ayuda para solucionar problemas de un patrón RegEx existente que no funciona según lo esperado con un solo ejemplo de contenido específico.
 
-Vea [Posibles problemas de validación que debe tener en cuenta](#potential-validation-issues-to-be-aware-of) en este artículo.
+Consulte [Posibles problemas de validación que debe tener en cuenta](#potential-validation-issues-to-be-aware-of) en este artículo.
 
 Para obtener más información sobre el motor Boost.RegEx (anteriormente conocido como RegEx++) que se usa para el procesamiento de texto, vea [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
 > [!NOTE]
-> Si usa un carácter de yerba (&) como parte de una palabra clave en el tipo de información confidencial personalizada, debe agregar un término adicional con espacios alrededor del carácter. Por ejemplo, no _use_ `L&P``L & P` .
+> Si usa un carácter de y comercial (&) como parte de una palabra clave en el tipo de información confidencial personalizada, debe agregar un término adicional con espacios alrededor del carácter. Por ejemplo, use `L & P` _no_ `L&P`.
 
 ## <a name="sample-xml-of-a-rule-package"></a>XML de ejemplo de un paquete de reglas
 
@@ -133,40 +135,40 @@ Este es el XML de ejemplo del paquete de reglas que crearemos en este artículo.
 </RulePackage>
 ```
 
-## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>¿Cuáles son sus requisitos clave? [Elementos Rule, Entity y Pattern]
+## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>¿Cuáles son sus requisitos clave? [Elementos Rule, Entity, Pattern]
 
-Es importante que comprenda la estructura básica del esquema XML para una regla. Su comprensión de la estructura ayudará al tipo de información confidencial personalizada a identificar el contenido correcto.
+Es importante que comprenda la estructura básica del esquema XML para una regla. Su comprensión de la estructura ayudará a su tipo de información confidencial personalizada a identificar el contenido correcto.
 
-Una regla define una o más entidades (también conocidas como tipos de información confidencial). Cada entidad define uno o varios patrones. Un patrón es lo que busca una directiva cuando evalúa contenido (por ejemplo, correo electrónico y documentos).
+Una regla define una o varias entidades (también conocidas como tipos de información confidencial). Cada entidad define uno o varios patrones. Un patrón es lo que busca una directiva cuando evalúa el contenido (por ejemplo, el correo electrónico y los documentos).
 
-En el marcado XML, "reglas" significan los patrones que definen el tipo de información confidencial. No asocie las referencias a reglas de este artículo con "condiciones" o "acciones" comunes en otras características de Microsoft.
+En el marcado XML, "reglas" significan los patrones que definen el tipo de información confidencial. No asocie referencias a reglas de este artículo con "condiciones" o "acciones" comunes en otras características de Microsoft.
 
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Escenario más sencillo: entidad con un patrón
 
-Este es un escenario sencillo: desea que la directiva identifique el contenido que contiene los id. de empleado de nueve dígitos que se usan en su organización. Un patrón hace referencia a la expresión regular de la regla que identifica números de nueve dígitos. Cualquier contenido que contenga un número de nueve dígitos satisface el patrón.
+Este es un escenario sencillo: quiere que la directiva identifique el contenido que contiene identificadores de empleado de nueve dígitos que se usan en su organización. Un patrón hace referencia a la expresión regular de la regla que identifica números de nueve dígitos. Cualquier contenido que contenga un número de nueve dígitos satisface el patrón.
 
 ![Diagrama de entidad con un patrón.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
 
-Sin embargo, este patrón puede identificar **cualquier** número de nueve dígitos, incluidos números más largos u otros tipos de números de nueve dígitos que no sean id. de empleado. Este tipo de coincidencia no deseada se conoce como *falso positivo*.
+Sin embargo, este patrón podría identificar **cualquier** número de nueve dígitos, incluidos números más largos u otros tipos de números de nueve dígitos que no sean identificadores de empleado. Este tipo de coincidencia no deseada se conoce como *falso positivo*.
 
 ### <a name="more-common-scenario-entity-with-multiple-patterns"></a>Escenario más común: entidad con varios patrones
 
-Debido a la posibilidad de falsos positivos, normalmente se usa más de un patrón para definir una entidad. Varios patrones proporcionan pruebas de soporte para la entidad de destino. Por ejemplo, otras palabras clave, fechas u otro texto pueden ayudar a identificar la entidad original (por ejemplo, el número de empleado de nueve dígitos).
+Debido a la posibilidad de falsos positivos, normalmente se usa más de un patrón para definir una entidad. Varios patrones proporcionan pruebas auxiliares para la entidad de destino. Por ejemplo, palabras clave, fechas u otro texto adicionales pueden ayudar a identificar la entidad original (por ejemplo, el número de empleado de nueve dígitos).
 
-Por ejemplo, para aumentar la probabilidad de identificar contenido que contiene un identificador de empleado, puede definir otros patrones para buscar:
+Por ejemplo, para aumentar la probabilidad de identificar el contenido que contiene un identificador de empleado, puede definir otros patrones para buscar:
 
 - Patrón que identifica una fecha de contratación.
-- Patrón que identifica una fecha de contratación y la palabra clave "id. de empleado".
+- Patrón que identifica una fecha de contratación y la palabra clave "employee ID".
 
 ![Diagrama de entidad con varios patrones.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
 
-Hay puntos importantes que debe tener en cuenta para varias coincidencias de patrón:
+Hay puntos importantes que se deben tener en cuenta para varias coincidencias de patrones:
 
 - Los patrones que requieren más pruebas tienen un nivel de confianza mayor. En función del nivel de confianza, puede realizar las siguientes acciones:
-  - Usa acciones más restrictivas (como bloquear contenido) con coincidencias de mayor confianza.
-  - Usa acciones menos restrictivas (como enviar notificaciones) con coincidencias de menor confianza.
+  - Use acciones más restrictivas (como el contenido en bloque) con coincidencias de mayor confianza.
+  - Use acciones menos restrictivas (como enviar notificaciones) con coincidencias de menor confianza.
 
-- Los elementos de soporte `IdMatch` y `Match` hacen referencia a RegExes y palabras clave que en realidad son elementos secundarios `Rule` del elemento, no el `Pattern`. A estos elementos de soporte se hace referencia mediante `Pattern`, pero se incluyen en el `Rule`archivo . Este comportamiento significa que varias entidades y patrones pueden hacer referencia a una definición única de un elemento de soporte, como una expresión regular o una lista de palabras clave.
+- `IdMatch` Los elementos auxiliares y `Match` hacen referencia a RegExes y palabras clave que en realidad son elementos secundarios del `Rule` elemento, no a `Pattern`. A estos elementos auxiliares se les hace referencia mediante , `Pattern`pero se incluyen en `Rule`. Este comportamiento significa que varias entidades y patrones pueden hacer referencia a una única definición de un elemento auxiliar, como una expresión regular o una lista de palabras clave.
 
 ## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>¿Qué entidad necesita identificar? [Elemento Entity, atributo ID]
 
@@ -174,66 +176,66 @@ Una entidad es un tipo de información confidencial (como un número de tarjeta 
 
 ### <a name="name-the-entity-and-generate-its-guid"></a>Asignar un nombre a la entidad y generar su GUID
 
-1. En el editor XML que prefiera, agregue los elementos `Rules` y `Entity` .
-2. Agregue un comentario que contenga el nombre de la entidad personalizada, como Id. de empleado. Más adelante, agregará el nombre de la entidad a la sección cadenas localizadas y ese nombre aparecerá en el Centro de administración al crear una directiva.
+1. En el editor XML que prefiera, agregue los `Rules` elementos y `Entity` .
+2. Agregue un comentario que contenga el nombre de la entidad personalizada, como Id. de empleado. Más adelante, agregará el nombre de la entidad a la sección de cadenas localizadas y ese nombre aparecerá en el Centro de administración al crear una directiva.
 3. Genere un GUID único para la entidad. Por ejemplo, en Windows PowerShell, puede ejecutar el comando `[guid]::NewGuid()`. Más adelante, también agregará el GUID a la sección de cadenas localizadas de la entidad.
 
 ![Marcado XML que muestra elementos Rules y Entity.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
 
-## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>¿Qué patrón quiere hacer coincidir? [Elemento Pattern, elemento IdMatch, elemento Regex]
+## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>¿Qué patrón desea que coincida? [Elemento Pattern, elemento IdMatch, elemento Regex]
 
-El patrón contiene la lista de lo que busca el tipo de información confidencial. El patrón puede incluir RegExes, palabras clave y funciones integradas. Las funciones hacen tareas como ejecutar RegExes para buscar fechas o direcciones. Los tipos de información confidencial pueden tener varios patrones con confianzas únicas.
+El patrón contiene la lista de lo que busca el tipo de información confidencial. El patrón puede incluir RegExes, palabras clave y funciones integradas. Las funciones realizan tareas como ejecutar RegExes para buscar fechas o direcciones. Los tipos de información confidencial pueden tener varios patrones con confianzas únicas.
 
-En el diagrama siguiente, todos los patrones hacen referencia a la misma expresión regular. Este RegEx busca un número de nueve dígitos rodeado `(\d{9})` de espacios en blanco `(\s) ... (\s)`. El elemento hace referencia a `IdMatch` esta expresión regular y es el requisito común para todos los patrones que buscan la entidad Id. de empleado. `IdMatch` es el identificador que el patrón intenta hacer coincidir. Un `Pattern` elemento debe tener exactamente un `IdMatch` elemento.
+En el diagrama siguiente, todos los patrones hacen referencia a la misma expresión regular. Este RegEx busca un número `(\d{9})` de nueve dígitos rodeado de espacio `(\s) ... (\s)`en blanco . El elemento hace referencia a `IdMatch` esta expresión regular y es el requisito común para todos los patrones que buscan la entidad Employee ID. `IdMatch` es el identificador que el patrón va a intentar hacer coincidir. Un `Pattern` elemento debe tener exactamente un `IdMatch` elemento.
 
 ![Marcado XML que muestra varios elementos Pattern que hacen referencia a un único elemento Regex.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
 
-Una coincidencia de patrón satisfecho devuelve un nivel de recuento y confianza, que puede usar en las condiciones de la directiva. Al agregar una condición para detectar un tipo de información confidencial a una directiva, puede editar el recuento y el nivel de confianza como se muestra en el diagrama siguiente. El nivel de confianza (también denominado precisión de coincidencia) se explica más adelante en este artículo.
+Una coincidencia de patrón satisfecho devuelve un nivel de recuento y confianza, que puede usar en las condiciones de la directiva. Al agregar una condición para detectar un tipo de información confidencial a una directiva, puede editar el nivel de recuento y confianza como se muestra en el diagrama siguiente. El nivel de confianza (también denominado precisión de coincidencia) se explica más adelante en este artículo.
 
-![Opciones de recuento de instancias y precisión de coincidencia.](../media/sit-confidence-level.png)
+![Opciones de precisión de coincidencia y recuento de instancias.](../media/sit-confidence-level.png)
 
-Las expresiones regulares son eficaces, por lo que hay problemas que debe conocer. Por ejemplo, un RegEx que identifica demasiado contenido puede afectar al rendimiento. Para obtener más información acerca de estos problemas, vea la sección [Posibles problemas de](#potential-validation-issues-to-be-aware-of) validación que debe tener en cuenta más adelante en este artículo.
+Las expresiones regulares son eficaces, por lo que hay problemas que debe conocer. Por ejemplo, un RegEx que identifica demasiado contenido puede afectar al rendimiento. Para obtener más información sobre estos problemas, consulte la sección [Posibles problemas de validación que se deben tener en cuenta](#potential-validation-issues-to-be-aware-of) más adelante en este artículo.
 
-## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>¿Quiere exigir más pruebas? [Elemento Match, atributo minCount]
+## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>¿Desea requerir pruebas adicionales? [Elemento Match, atributo minCount]
 
-Además de `IdMatch`, un patrón puede usar el `Match` elemento para requerir pruebas de soporte adicionales, como una palabra clave, RegEx, fecha o dirección.
+Además de `IdMatch`, un patrón puede usar el `Match` elemento para requerir pruebas auxiliares adicionales, como una palabra clave, RegEx, fecha o dirección.
 
-A `Pattern` puede incluir varios `Match` elementos:
+Puede `Pattern` incluir varios `Match` elementos:
 
-- Directamente en el `Pattern` elemento.
-- Combinado mediante el uso del `Any` elemento.
+- Directamente en el `Pattern` elemento .
+- Combinado mediante el uso del `Any` elemento .
 
 `Match` los elementos están unidos por un operador AND implícito. En otras palabras, todos los `Match` elementos deben cumplirse para que el patrón coincida.
 
-Puede usar el elemento para `Any` introducir operadores AND u OR. El `Any` elemento se describe más adelante en este artículo.
+Puede usar el `Any` elemento para introducir operadores AND o OR. El `Any` elemento se describe más adelante en este artículo.
 
-Puede usar el atributo opcional `minCount` para especificar cuántas instancias de una coincidencia deben encontrarse para cada `Match` elemento. Por ejemplo, puede especificar que un patrón solo se cumple cuando se encuentran al menos dos palabras clave de una lista de palabras clave.
+Puede usar el atributo opcional `minCount` para especificar cuántas instancias de una coincidencia deben encontrarse para cada `Match` elemento. Por ejemplo, puede especificar que se cumpla un patrón solo cuando se encuentren al menos dos palabras clave de una lista de palabras clave.
 
 ![Marcado XML que muestra el elemento Match con el atributo minOccurs.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
 
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Palabras clave [elementos Keyword, Group y Term, atributos matchStyle y caseSensitive]
 
-Como se describió anteriormente, la identificación de información confidencial a menudo requiere palabras clave adicionales como evidencia corroborativa. Por ejemplo, además de coincidir con un número de nueve dígitos, puede buscar palabras como "tarjeta", "distintivo" o "ID" mediante el elemento Keyword. El `Keyword` elemento tiene un `ID` atributo al que pueden hacer referencia varios `Match` elementos en varios patrones o entidades.
+Como se describió anteriormente, la identificación de información confidencial a menudo requiere palabras clave adicionales como evidencia corroborativa. Por ejemplo, además de coincidir con un número de nueve dígitos, puede buscar palabras como "card", "badge" o "ID" mediante el elemento Keyword. El `Keyword` elemento tiene un `ID` atributo al que pueden hacer referencia varios `Match` elementos en varios patrones o entidades.
 
-Las palabras clave se incluyen como una lista de `Term` elementos de un `Group` elemento. El `Group` elemento tiene un atributo `matchStyle` con dos valores posibles:
+Las palabras clave se incluyen como una lista de elementos de `Term` un `Group` elemento. El `Group` elemento tiene un `matchStyle` atributo con dos valores posibles:
 
-- **matchStyle="word"**: una coincidencia de palabras identifica palabras enteras rodeadas de espacios en blanco u otros delimitadores. Siempre debes usar word **a menos** que necesites coincidir partes de palabras o palabras en idiomas asiáticos.
+- **matchStyle="word"**: una coincidencia de palabras identifica palabras enteras rodeadas de espacios en blanco u otros delimitadores. Siempre debe usar **palabras** a menos que necesite hacer coincidir partes de palabras o palabras en idiomas asiáticos.
 
-- **matchStyle="string"**: una coincidencia de cadena identifica las cadenas sin importar por qué están rodeadas. Por ejemplo, "ID" coincidirá con "bid" e "idea". Se `string` usa solo cuando necesites coincidir con palabras asiáticas o si tu palabra clave puede incluirse en otras cadenas.
+- **matchStyle="string"**: una coincidencia de cadena identifica las cadenas independientemente de lo que estén rodeadas. Por ejemplo, "ID" coincidirá con "bid" e "idea". Use `string` solo cuando necesite buscar coincidencias con palabras asiáticas o si la palabra clave podría incluirse en otras cadenas.
 
-Por último, puede usar el `caseSensitive` atributo `Term` del elemento para especificar que el contenido debe coincidir exactamente con la palabra clave, incluidas las letras minúsculas y mayúsculas.
+Por último, puede usar el `caseSensitive` atributo del `Term` elemento para especificar que el contenido debe coincidir exactamente con la palabra clave, incluidas las letras minúsculas y mayúsculas.
 
 ![Marcado XML que muestra elementos Match que hacen referencia a palabras clave.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
 
 ### <a name="regular-expressions-regex-element"></a>Expresiones regulares [elemento Regex]
 
-En este ejemplo, la entidad employee `ID` `IdMatch` ya usa el elemento para hacer referencia a una expresión regular del patrón: un número de nueve dígitos rodeado de espacios en blanco. Además, un patrón puede usar un elemento para hacer referencia a `Match` `Regex` un elemento adicional para identificar pruebas corroborativas, como un número de cinco o nueve dígitos en el formato de un código postal de Estados Unidos.
+En este ejemplo, la entidad employee `ID` ya usa el `IdMatch` elemento para hacer referencia a una expresión regular para el patrón: un número de nueve dígitos rodeado de espacios en blanco. Además, un patrón puede usar un `Match` elemento para hacer referencia a un elemento adicional `Regex` para identificar pruebas corroborativas, como un número de cinco o nueve dígitos en el formato de un código postal de EE. UU.
 
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Patrones adicionales, como fechas o direcciones [funciones integradas]
 
-Los tipos de información confidencial también pueden usar funciones integradas para identificar evidencias corroborantes. Por ejemplo, una fecha de EE.UU., una fecha de la UE, una fecha de expiración o una dirección estadounidense. Microsoft 365 no admite la carga de sus propias funciones personalizadas. Pero, al crear un tipo de información confidencial personalizada, la entidad puede hacer referencia a funciones integradas.
+Los tipos de información confidencial también pueden usar funciones integradas para identificar pruebas corroborantes. Por ejemplo, una fecha de EE. UU., una fecha de la UE, una fecha de expiración o una dirección de EE. UU. Microsoft 365 no admite la carga de sus propias funciones personalizadas. Sin embargo, al crear un tipo de información confidencial personalizado, la entidad puede hacer referencia a funciones integradas.
 
-Por ejemplo, un distintivo de id. de empleado tiene una fecha de contratación, `Func_us_date` por lo que esta entidad personalizada puede usar la función integrada para identificar una fecha en el formato que se usa habitualmente en Estados Unidos.
+Por ejemplo, un distintivo de identificador de empleado tiene una fecha de contratación, por lo que esta entidad personalizada puede usar la función integrada `Func_us_date` para identificar una fecha en el formato que se usa normalmente en EE. UU.
 
 Para obtener más información, vea [Funciones de tipo de información confidencial](sit-functions.md).
 
@@ -243,13 +245,13 @@ Para obtener más información, vea [Funciones de tipo de información confidenc
 
 En un `Pattern` elemento, todos los `IdMatch` elementos y `Match` están unidos por un operador AND implícito. En otras palabras, todas las coincidencias deben cumplirse antes de que se pueda cumplir el patrón.
 
-Puede crear una lógica de coincidencia más flexible mediante el uso del `Any` elemento para agrupar `Match` elementos. Por ejemplo, puede usar el elemento para `Any` que coincida con todos, ninguno o un subconjunto exacto de sus elementos secundarios `Match` .
+Puede crear una lógica de coincidencia más flexible mediante el `Any` elemento para agrupar `Match` elementos. Por ejemplo, puede usar el `Any` elemento para que coincida con todos, ninguno o un subconjunto exacto de sus elementos secundarios `Match` .
 
-El `Any` elemento tiene atributos opcionales `minMatches` `maxMatches` y que puede usar para definir `Match` cuántos de los elementos secundarios deben cumplirse antes de que coincida el patrón. Estos atributos definen el *número de* `Match` elementos, no el número de instancias de evidencia encontradas para las coincidencias. Para definir un número mínimo de instancias para una coincidencia específica, como dos palabras clave de una lista, use `minCount` el atributo para un `Match` elemento (vea más arriba).
+El `Any` elemento tiene atributos opcionales `minMatches` y `maxMatches` que puede usar para definir cuántos de los elementos secundarios `Match` deben cumplirse antes de que se coincida con el patrón. Estos atributos definen el *número* de `Match` elementos, no el número de instancias de evidencia encontradas para las coincidencias. Para definir un número mínimo de instancias para una coincidencia específica, como dos palabras clave de una lista, use el `minCount` atributo para un `Match` elemento (consulte más arriba).
 
 ### <a name="match-at-least-one-child-match-element"></a>Coincidir como mínimo con un elemento Match secundario
 
-Para requerir solo un número mínimo de `Match` elementos, puede usar el `minMatches` atributo. En efecto, estos `Match` elementos están unidos por un operador OR implícito. Este `Any` elemento se cumple si se encuentra una fecha con formato estadounidense o una palabra clave de cualquiera de las listas.
+Para requerir solo un número mínimo de `Match` elementos, puede usar el `minMatches` atributo . En efecto, estos `Match` elementos están unidos por un operador OR implícito. Este `Any` elemento se satisface si se encuentra una fecha con formato EE. UU. o una palabra clave de cualquiera de las listas.
 
 ```xml
 <Any minMatches="1" >
@@ -261,7 +263,7 @@ Para requerir solo un número mínimo de `Match` elementos, puede usar el `minMa
 
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Coincidir un subconjunto exacto de elementos Match secundarios
 
-Para requerir un número exacto de `Match` elementos, establezca `minMatches` y `maxMatches` en el mismo valor. Este `Any` elemento solo se cumple si se encuentra exactamente una fecha o palabra clave. Si hay más coincidencias, el patrón no coincide.
+Para requerir un número exacto de `Match` elementos, establezca `minMatches` y `maxMatches` en el mismo valor. Este `Any` elemento solo se satisface si se encuentra exactamente una fecha o palabra clave. Si hay más coincidencias, el patrón no coincide.
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -305,13 +307,13 @@ El tipo de información confidencial busca un patrón que represente un id. de e
 
 Por cada patrón en la entidad, el valor del atributo patternsProximity define la distancia (en caracteres Unicode) desde la ubicación de IdMatch para el resto de las coincidencias especificadas para ese patrón. La ventana de proximidad se ancla mediante la ubicación IdMatch, con la ventana extendiéndose hacia la izquierda y la derecha de la ubicación IdMatch.
 
-![Diagrama de ventana de proximidad.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagrama de la ventana de proximidad.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
 
 En el ejemplo siguiente, se muestra cómo la ventana de proximidad afecta a la coincidencia de patrones donde el elemento IdMatch de la entidad personalizada "Id. de empleado" exige como mínimo una coincidencia corroboradora de una palabra clave o fecha. Solo ID1 coincide porque, en el caso de ID2 e ID3, en la ventana de proximidad no se encuentra ninguna prueba corroboradora, o bien se encuentra una parcial.
 
 ![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Tenga en cuenta que para el correo electrónico, el cuerpo del mensaje y cada dato adjunto se tratan como elementos independientes. Esto significa que la ventana de proximidad no se extiende más allá del final de cada uno de estos elementos. Para cada elemento (datos adjuntos o cuerpo), las pruebas idMatch y corroborativas deben residir en ese elemento.
+Tenga en cuenta que, para el correo electrónico, el cuerpo del mensaje y cada dato adjunto se tratan como elementos independientes. Esto significa que la ventana de proximidad no se extiende más allá del final de cada uno de estos elementos. Para cada elemento (datos adjuntos o cuerpo), tanto el idMatch como la evidencia corroborativa deben residir en ese elemento.
 
 ## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>¿Cuáles son los niveles de confianza adecuados para diferentes patrones? [Atributo confidenceLevel, atributo recommendedConfidence]
 
@@ -323,9 +325,9 @@ El elemento Pattern tiene un atributo confidenceLevel obligatorio. Piense en el 
 
 Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entity tiene un atributo recommendedConfidence. El atributo de confianza recomendada puede considerarse como el nivel de confianza predeterminado de la regla. Cuando se crea una regla en una directiva, si no se especifica el uso de un nivel de confianza para la regla, buscará coincidencias en función del nivel de confianza recomendado para la entidad. Tenga en cuenta que el atributo recommendedConfidence es obligatorio para cada identificador de entidad en el paquete de reglas, si no está, no podrá guardar directivas que usen el tipo de Información confidencial.
 
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>¿Quiere admitir otros idiomas en la interfaz de usuario del Centro de cumplimiento? [Elemento LocalizedStrings]
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>¿Quiere admitir otros idiomas en la interfaz de usuario del Centro de seguridad y cumplimiento? [Elemento LocalizedStrings]
 
-Si el equipo de cumplimiento usa el Centro de cumplimiento de Microsoft 365 para crear directivas en diferentes configuraciones regionales y en diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizada. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma compatible, verá el nombre localizado en la interfaz de usuario.
+Si el equipo de cumplimiento usa el portal de cumplimiento de Microsoft Purview para crear directivas en diferentes configuraciones regionales y en diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizada. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma compatible, verá el nombre localizado en la interfaz de usuario.
 
 ![Recuento de instancias y configuración de precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -370,7 +372,7 @@ Una vez completado, el elemento RulePack será parecido a este.
 
 ## <a name="validators"></a>Validadores
 
-Microsoft 365 expone procesadores de funciones para los SIT usados habitualmente como validadores. Esta es una lista de ellos.
+Microsoft 365 expone procesadores de funciones para SIT de uso común como validadores. Esta es una lista de ellos.
 
 ### <a name="list-of-currently-available-validators"></a>Lista de validadores disponibles actualmente
 
@@ -398,9 +400,9 @@ Microsoft 365 expone procesadores de funciones para los SIT usados habitualmente
 - `Func_japanese_my_number_personal`
 - `Func_japanese_my_number_corporate`
 
-Esto le permite definir sus propios RegEx y validarlos. Para usar validadores, define tu propio RegEx y usa la `Validator` propiedad para agregar el procesador de funciones que prefieras. Una vez definido, puede usar este RegEx en un SIT.
+Esto le ofrece la capacidad de definir sus propios RegEx y validarlos. Para usar validadores, defina su propio RegEx y use la `Validator` propiedad para agregar el procesador de funciones de su elección. Una vez definido, puede usar este RegEx en una SIT.
 
-En el ejemplo siguiente, se define una expresión regular : Regex_credit_card_AdditionalDelimiters para tarjeta de crédito, que luego se valida mediante la función de suma de comprobación para tarjeta de crédito mediante Func_credit_card como validador.
+En el ejemplo siguiente, se define una expresión regular - Regex_credit_card_AdditionalDelimiters para la tarjeta de crédito, que luego se valida mediante la función de suma de comprobación de la tarjeta de crédito mediante Func_credit_card como validador.
 
 ```xml
 <Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
@@ -441,7 +443,7 @@ En este ejemplo, se define un validador de suma de comprobación para el identif
 
 ### <a name="date-validator"></a>Validador de fecha
 
-En este ejemplo, se define un validador de fecha para una parte regEx de la que es date.
+En este ejemplo, se define un validador de fecha para una parte RegEx de la que es date.
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
@@ -450,7 +452,7 @@ En este ejemplo, se define un validador de fecha para una parte regEx de la que 
 
 ## <a name="changes-for-exchange-online"></a>Cambios para Exchange Online
 
-Antes se podía usar PowerShell de Exchange Online para importar tipos de información confidencial personalizados para DLP. Ahora los tipos de información confidencial personalizados se pueden usar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración</a> de Exchange y en el Centro de cumplimiento. Como parte de esta mejora, necesita usar PowerShell del Centro de cumplimiento para importar los tipos de información confidencial personalizados (ya no se pueden importar desde Exchange PowerShell). Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora, pero los cambios realizados en los tipos de información confidencial personalizados en el Centro de cumplimiento pueden tardar hasta una hora en mostrarse en el Centro de administración de Exchange.
+Antes se podía usar PowerShell de Exchange Online para importar tipos de información confidencial personalizados para DLP. Ahora los tipos de información confidencial personalizados se pueden usar tanto en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> como en el Centro de cumplimiento. Como parte de esta mejora, debe usar Security & Compliance PowerShell para importar los tipos de información confidencial personalizados; ya no puede importarlos desde Exchange Online PowerShell. Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora, pero los cambios realizados en los tipos de información confidencial personalizados en el Centro de cumplimiento pueden tardar hasta una hora en mostrarse en el Centro de administración de Exchange.
 
 Tenga en cuenta que, en el Centro de seguridad y cumplimiento, se usa el cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** para cargar un paquete de reglas (anteriormente, en el Centro de administración de Exchange, se usaba el cmdlet ClassificationRuleCollection). (Antes, en el Centro de administración de Exchange, usó el cmdlet **ClassificationRuleCollection**).
 
@@ -460,7 +462,7 @@ Para cargar un paquete de reglas, siga este procedimiento:
 
 1. Guárdelo como un archivo .xml con codificación Unicode.
 
-2. [Conectar con el Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/exchange-online-powershell)
+2. [Conectarse a Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 3. Utilice la sintaxis siguiente:
 
@@ -505,47 +507,47 @@ Para cargar un paquete de reglas, siga este procedimiento:
 
 Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML y comprueba si hay patrones incorrectos conocidos y problemas de rendimiento obvios. Estos son algunos de los problemas conocidos (la validación comprueba las expresiones regulares):
 
-- Las aserciones de lookbehind en la expresión regular deben ser de longitud fija solamente. Las aserciones de longitud variable producirán errores.
+- Las aserciones de apariencia en la expresión regular solo deben tener una longitud fija. Las aserciones de longitud variable producirán errores.
 
-  Por ejemplo, no `"(?<=^|\s|_)"` pasará la validación. El primer patrón (`^`) es de longitud cero, mientras que los dos siguientes patrones (`\s` y `_`) tienen una longitud de uno. Una forma alternativa de escribir esta expresión regular es `"(?:^|(?<=\s|_))"`.
+  Por ejemplo, `"(?<=^|\s|_)"` no pasará la validación. El primer patrón (`^`) es de longitud cero, mientras que los dos patrones siguientes (`\s` y `_`) tienen una longitud de uno. Una manera alternativa de escribir esta expresión regular es `"(?:^|(?<=\s|_))"`.
 
-- No se puede comenzar ni terminar con el alternador `|`, que coincide con todo porque se considera una coincidencia vacía.
+- No se puede comenzar o terminar con alternador `|`, que coincide con todo porque se considera una coincidencia vacía.
 
   Por ejemplo, `|a` o `b|` no pasará la validación.
 
-- No se puede comenzar ni terminar con un `.{0,m}` patrón, que no tiene ningún propósito funcional y solo afecta al rendimiento.
+- No se puede comenzar o terminar con un `.{0,m}` patrón, que no tiene ningún propósito funcional y solo afecta al rendimiento.
 
   Por ejemplo, `.{0,50}ASDF` o `ASDF.{0,50}` no pasará la validación.
 
-- No se puede `.{0,m}` tener o `.{1,m}` en grupos, y no puede tener `.\*` o `.+` en grupos.
+- No se puede tener `.{0,m}` o `.{1,m}` en grupos y no se puede tener `.\*` o `.+` en grupos.
 
-  Por ejemplo, no `(.{0,50000})` pasará la validación.
+  Por ejemplo, `(.{0,50000})` no pasará la validación.
 
 - No se puede tener ningún carácter con `{0,m}` o `{1,m}` repetidores en grupos.
 
-  Por ejemplo, no `(a\*)` pasará la validación.
+  Por ejemplo, `(a\*)` no pasará la validación.
 
-- No se puede comenzar ni terminar con `.{1,m}`; en su lugar, usar `.`.
+- No se puede comenzar o terminar con `.{1,m}`; en su lugar, use `.`.
 
-  Por ejemplo, no `.{1,m}asdf` pasará la validación. En su lugar, use `.asdf`.
+  Por ejemplo, `.{1,m}asdf` no pasará la validación. En su lugar, use `.asdf`.
 
-- No se puede tener un repetidor sin enlazar (por ejemplo, `*` o `+`) en un grupo.
+- No se puede tener un repetidor sin enlazar (como `*` o `+`) en un grupo.
 
-  Por ejemplo, `(xx)\*` y no `(xx)+` pasará la validación.
+  Por ejemplo, `(xx)\*` y `(xx)+` no pasará la validación.
 
 - Las contraseñas pueden tener 50 caracteres de longitud como máximo.  Si tiene una palabra clave dentro de un grupo que supere esto, una solución sugerida es crear el grupo de términos como un [diccionario de palabras clave](./create-a-keyword-dictionary.md) y hacer referencia al GUID del diccionario de palabras clave en la estructura XML como parte de la entidad para Match o idMatch en el archivo.
 
 - Cada tipo de información confidencial personalizado puede tener un máximo de 2048 palabras clave total.
 
-- El tamaño máximo de diccionarios de palabras clave en un único inquilino es de 480 KB comprimidos para cumplir con los límites del esquema de AD. Haga referencia al mismo diccionario tantas veces como sea necesario al crear tipos de información confidencial personalizados. Comience con la creación de listas de palabras clave personalizadas en el tipo de información confidencial y use diccionarios de palabras clave si tiene más de 2048 palabras clave en una lista de palabras clave o una palabra clave tiene más de 50 caracteres de longitud.
+- El tamaño máximo de los diccionarios de palabras clave en un solo inquilino es de 480 KB comprimidos para cumplir con los límites del esquema de AD. Haga referencia al mismo diccionario tantas veces como sea necesario al crear tipos de información confidencial personalizados. Comience con la creación de listas de palabras clave personalizadas en el tipo de información confidencial y use diccionarios de palabras clave si tiene más de 2048 palabras clave en una lista de palabras clave o una palabra clave tiene más de 50 caracteres de longitud.
 
 - En un espacio empresarial se permite un máximo de 50 tipos de información confidencial basada en diccionario de palabras clave.
 
 - Asegúrese de que cada elemento de entidad contiene un atributo recommendedConfidence.
 
-- Al usar el cmdlet de PowerShell, hay un tamaño máximo devuelto de los datos deserializados de aproximadamente 1 megabyte.   Esto afectará al tamaño del archivo XML del paquete de reglas. Mantenga el archivo cargado limitado a un máximo de 770 megabytes como límite sugerido para obtener resultados coherentes sin errores al procesarlo.
+- Cuando se usa el cmdlet de PowerShell, hay un tamaño máximo devuelto de los datos deserializados de aproximadamente 1 megabyte.   Esto afectará al tamaño del archivo XML del paquete de reglas. Mantenga el archivo cargado limitado a un máximo de 770 megabytes como límite sugerido para obtener resultados coherentes sin errores al procesarlo.
 
-- La estructura XML no requiere caracteres de formato, como espacios, pestañas o entradas de retorno de carro o de conexión de línea.  Anote esto al optimizar espacio en las cargas. Las herramientas como el código del elemento visual de Microsoft ofrecen características de línea de combinación para compactar el archivo XML.
+- La estructura XML no requiere caracteres de formato como espacios, tabulaciones o entradas de retorno de carro o avance de línea.  Anote esto al optimizar espacio en las cargas. Las herramientas como el código del elemento visual de Microsoft ofrecen características de línea de combinación para compactar el archivo XML.
 
 Si un tipo personalizado de información confidencial contiene un problema que puede afectar al rendimiento, no se cargará y es posible que se muestre uno de estos mensajes de error:
 
@@ -559,7 +561,7 @@ Si un tipo personalizado de información confidencial contiene un problema que p
 
 Microsoft 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en el contenido del sitio. El contenido en los sitios de OneDrive para la Empresa y SharePoint Online se vuelve a rastrear automáticamente cada vez que se actualiza. Pero, para identificar el nuevo tipo de información confidencial personalizado en todo el contenido existente, es necesario volver a rastrear ese contenido.
 
-En Microsoft 365, no se puede solicitar manualmente una nueva reclamación de toda una organización, pero puede solicitar manualmente un recrawl para una colección de sitios, una lista o una biblioteca. Para obtener más información, [vea Solicitar manualmente el rastreo y la reindexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
+En Microsoft 365, no se puede solicitar manualmente una recrawl de toda una organización, pero puede solicitar manualmente una recrawl para una colección de sitios, una lista o una biblioteca. Para obtener más información, vea [Solicitud manual de rastreo y reindexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>Referencia: Definición de esquema XML de paquete de reglas
 
@@ -910,6 +912,6 @@ Puede copiar este marcado, guardarlo como un archivo XSD y usarlo para validar e
 
 ## <a name="more-information"></a>Más información
 
-- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Funciones de tipo de información confidencial](sit-functions.md)

@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Busque Microsoft 365 referencias de cmdlet de PowerShell para Azure AD, Exchange Online, SharePoint Online, Skype Empresarial Online y Security & Compliance.
-ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 97372031f928e7862145945c72e522510f7cd30e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101389"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015448"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 En este artículo se proporcionan referencias de cmdlet para los distintos servicios de Microsoft 365 e instrucciones de conexión para cada servicio de Microsoft 365 compatible con PowerShell.
 
@@ -61,11 +61,11 @@ Para obtener Skype Empresarial temas de referencia de cmdlets en línea, consult
 
 Para obtener instrucciones de conexión para Skype Empresarial PowerShell en línea, consulte [Administración de Skype Empresarial en línea con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del Centro de cumplimiento de seguridad &
+## <a name="security--compliance-powershell-cmdlets"></a>Cmdlets de PowerShell de cumplimiento de & seguridad
 
 Las referencias de cmdlet de Security & Compliance Center se encuentran en la sección Referencia de la [documentación de PowerShell de cumplimiento de seguridad &](/powershell/exchange/scc-powershell).
 
-Para obtener instrucciones de conexión para PowerShell del Centro de cumplimiento de & de seguridad, consulte [Conectar a PowerShell del Centro de cumplimiento de & de seguridad](/powershell/exchange/connect-to-scc-powershell).
+Para obtener instrucciones de conexión para PowerShell de cumplimiento de seguridad &, consulte [Conectar a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>Consulte también
 

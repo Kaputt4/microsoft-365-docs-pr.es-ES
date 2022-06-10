@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para las características búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 030e4dd16e2b24504632947a336b244a945813ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f20c33781b8dd9f92091e1b0c459137a4edd33ed
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091729"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014880"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites de búsqueda de eDiscovery
 
@@ -45,7 +45,7 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda|Sin límite <sup>1</sup>|
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo en la organización.|30|
 |Número máximo de búsquedas de toda la organización que se pueden ejecutar al mismo tiempo.|3|
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se alcance cuando el usuario intenta iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \|Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.|10|
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se alcance cuando el usuario intenta iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \|Start-ComplianceSearch** en PowerShell de seguridad & cumplimiento.|10 |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.|100|
 |El número máximo de elementos que se encuentran en todos los buzones de usuario que posiblemente se pueden mostrar en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.|1000 <sup>2</sup>|
 |El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, como máximo, solo los 1000 buzones principales con la mayoría de los resultados de búsqueda estarán disponibles para la versión preliminar.|1,000|
@@ -99,7 +99,7 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 |---|---|
 |Cantidad máxima de datos exportables de una sola búsqueda  <p> **Nota:** Si los resultados de la búsqueda superan los 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.|2 TB|
 |Máximo que una organización puede exportar en un solo día <p> **Nota:** Este límite se restablece diariamente a las 12:00 UTC|2 TB|
-|Número máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo dentro de la organización <p> **Nota:** La ejecución de una exportación **de solo informe** cuenta con respecto al total de exportaciones simultáneas de su organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si está exportando un informe o resultados de búsqueda, no se puede realizar ninguna otra exportación hasta que se haya completado.|10|
+|Número máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo dentro de la organización <p> **Nota:** La ejecución de una exportación **de solo informe** cuenta con respecto al total de exportaciones simultáneas de su organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si está exportando un informe o resultados de búsqueda, no se puede realizar ninguna otra exportación hasta que se haya completado.|10 |
 |Exportaciones máximas que un solo usuario puede ejecutar en cualquier momento|3|
 |Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar mediante la herramienta de exportación de eDiscovery|100,000|
 |Tamaño máximo del archivo PST que se puede exportar <p> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son mayores que 10 GB, los resultados de la búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se derramará en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el Registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un solo buzón sea superior a 10 GB. Si decide exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda sean mayores que 10 GB, los elementos todavía se organizan en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha de envío.|10 GB|

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
-ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9c3b17c632c2316f3c36a4f79362895d790b1c7b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176096"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010220"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -46,7 +46,7 @@ Use PowerShell para activar o desactivar la Bandeja de entrada Prioritarios para
   
 En el siguiente ejemplo de PowerShell se **desactiva** la Bandeja de entrada Prioritarios de la organización. Sin embargo, no se bloquea la disponibilidad de la característica para los usuarios. Si quieren, pueden volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes.  
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Debe tener permisos asignados para poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" de [Permisos de directivas de mensajería y conformidad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
@@ -92,7 +92,7 @@ Cuando un usuario decide empezar a usar la Bandeja de entrada Prioritarios, Otro
 
 En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Runtimes en la organización Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si lo desea, todavía puede volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Debe tener permisos asignados antes de poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" del tema Permisos de directivas de mensajería y conformidad.
 
@@ -135,7 +135,7 @@ En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Run
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usar PowerShell para crear reglas de transporte que dirijan los mensajes de correo electrónico hacia la vista Prioritarios de todos los usuarios
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Debe tener permisos asignados para poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" de [Permisos de directivas de mensajería y conformidad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 

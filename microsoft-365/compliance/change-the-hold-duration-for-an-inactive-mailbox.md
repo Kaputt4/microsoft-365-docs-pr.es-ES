@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Después de que un buzón de Office 365 esté inactivo, cambie la duración de la retención o Office 365 directiva de retención asignada al buzón inactivo.
-ms.openlocfilehash: d959195731ee0bf4de9b533f85fa2e2356259c12
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: f9db81631c563bb985d087b4dfd12ae784c825ff
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911376"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015844"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un [buzón inactivo](inactive-mailboxes-in-office-365.md) es el estado del buzón que se usa para conservar el correo electrónico de un empleado anterior después de abandonar la organización. Un buzón de correo pasa a estar inactivo cuando se le aplica una suspensión aplicable antes de que se elimine el Microsoft 365 objeto de usuario.  Los siguientes tipos de retenciones iniciarán la creación de un buzón inactivo tras la eliminación de la cuenta de usuario:
 
@@ -61,13 +63,13 @@ A medida que evolucionan las regulaciones y las directivas, puede haber algunas 
 
 ## <a name="connect-to-powershell"></a>Conectar a PowerShell
 
-Como hemos mencionado antes, muchos tipos diferentes de retenciones pueden desencadenar la creación de un buzón inactivo.  Por este motivo, para cambiar la duración de retención aplicada al buzón inactivo, primero debe identificar qué tipo de retenciones le afectan.  Para ello, debe usar Exchange Online PowerShell para identificar los tipos de retenciones y, si el buzón inactivo se ve afectado por Microsoft 365 directivas o etiquetas de retención, también debe usar PowerShell del Centro de seguridad y cumplimiento para identificar las directivas específicas.
+Como hemos mencionado antes, muchos tipos diferentes de retenciones pueden desencadenar la creación de un buzón inactivo.  Por este motivo, para cambiar la duración de retención aplicada al buzón inactivo, primero debe identificar qué tipo de retenciones le afectan.  Para ello, debe usar Exchange Online PowerShell para identificar los tipos de retenciones y, si el buzón inactivo se ve afectado por Microsoft 365 directivas o etiquetas de retención, también debe usar PowerShell de cumplimiento de seguridad & para identificar las directivas específicas.
 
-- Para conectarse a Exchange Online PowerShell o PowerShell security & Compliance Center, consulte uno de los temas siguientes:
+- Para conectarse a Exchange Online PowerShell o PowerShell de cumplimiento de seguridad &, consulte uno de los temas siguientes:
 
   - [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+  - [Conectarse a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Paso 1: identificar las retenciones en un buzón inactivo
 
@@ -181,10 +183,10 @@ En la tabla siguiente se identifican los seis tipos de suspensión diferentes qu
 |**Buzón inactivo**|**Tipo de suspensión**|**Cómo identificar la suspensión en el buzón inactivo**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |Retención por litigio  <br/> | La  `LitigationHoldEnabled`  propiedad se establece en  `True` que indica que el buzón está en suspensión por juicio. <br/><br/> Además, se establece `365.00:00:00` en `LitigationHoldDuration` que indica que los elementos del buzón de correo ya no estarán sujetos a la suspensión por juicio 365 días después de su fecha de creación (enviada/recibida).  <br/><br/> `LitigationHoldDate` indica la fecha en que se ha habilitado LitigationHold e `LitigationHoldOwner` identifica a la persona que inició la suspensión del litigio. <br/> |
-|Carol Olson  <br/> |Microsoft 365 directiva de retención del Centro de cumplimiento de Microsoft 365 que se aplica a buzones específicos  <br/> |La `InPlaceHolds` propiedad contiene el GUID de la directiva de retención de Microsoft 365 que se aplica al buzón inactivo. Puede indicar que se trata de una directiva de retención que se aplica a buzones específicos porque el GUID comienza con el `mbx` prefijo y termina en o `:2` `:3`. <br/><br/> Para obtener más información, vea [Descripción del formato del valor de InPlaceHolds para las directivas de retención](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
+|Carol Olson  <br/> |Microsoft 365 directiva de retención desde el portal de cumplimiento de Microsoft Purview que se aplica a buzones específicos  <br/> |La `InPlaceHolds` propiedad contiene el GUID de la directiva de retención de Microsoft 365 que se aplica al buzón inactivo. Puede indicar que se trata de una directiva de retención que se aplica a buzones específicos porque el GUID comienza con el `mbx` prefijo y termina en o `:2` `:3`. <br/><br/> Para obtener más información, vea [Descripción del formato del valor de InPlaceHolds para las directivas de retención](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
 |Megan Bowen <br/> | Microsoft 365 etiqueta de retención con una acción de retención o retención y eliminación se aplica al menos a un elemento del buzón  <br/> |La `ComplianceTagHoldApplied` propiedad `True` indica que un elemento se ha etiquetado con una etiqueta de retención o retención y eliminación.  <br/><br/> Además, la `InPlaceHolds` propiedad contiene el GUID de la directiva de etiqueta de retención de Microsoft 365 que se aplica al buzón inactivo.  <br/><br/> Para obtener más información, consulte [Identificación de buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item). <br/>  |
-|Mario Necaise  <br/> |Directiva de retención de Microsoft 365 para toda la organización de la Centro de cumplimiento de Microsoft 365  <br/> |La  `InPlaceHolds`  propiedad está vacía, `LitigationHoldEnabled` es `False` y `ComplianceTagHoldApplied` es `False`. Esto indica que una o varias ubicaciones completas (Exchange) Microsoft 365 directivas de retención aplicadas a la organización que hereda el buzón inactivo. <br/><br/> Para obtener más información, vea [Cómo confirmar que se aplica una directiva de retención de toda la organización a un buzón de correo](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox). <br/> |
-|Abraham McMahon  <br/> |Suspensión de casos de eDiscovery en el Centro de cumplimiento de Microsoft 365  <br/> |La  `InPlaceHolds`  propiedad contiene el GUID de la retención de mayúsculas y minúsculas de eDiscovery que se coloca en el buzón inactivo. Puede indicar que se trata de una suspensión de mayúsculas y minúsculas de eDiscovery porque el GUID comienza con el  `UniH` prefijo .  <br/><br/> Para obtener más información, vea [las retenciones de eDiscovery](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
+|Mario Necaise  <br/> |Directiva de retención de Microsoft 365 para toda la organización desde el portal de cumplimiento de Microsoft Purview <br/> |La  `InPlaceHolds`  propiedad está vacía, `LitigationHoldEnabled` es `False` y `ComplianceTagHoldApplied` es `False`. Esto indica que una o varias ubicaciones completas (Exchange) Microsoft 365 directivas de retención aplicadas a la organización que hereda el buzón inactivo. <br/><br/> Para obtener más información, vea [Cómo confirmar que se aplica una directiva de retención de toda la organización a un buzón de correo](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox). <br/> |
+|Abraham McMahon  <br/> |Suspensión de casos de eDiscovery en el portal de cumplimiento de Microsoft Purview  <br/> |La  `InPlaceHolds`  propiedad contiene el GUID de la retención de mayúsculas y minúsculas de eDiscovery que se coloca en el buzón inactivo. Puede indicar que se trata de una suspensión de mayúsculas y minúsculas de eDiscovery porque el GUID comienza con el  `UniH` prefijo .  <br/><br/> Para obtener más información, vea [las retenciones de eDiscovery](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
 |Pilar Pinilla  <br/> |Retención en contexto  <br/> |La  `InPlaceHolds`  propiedad contiene el GUID del In-Place Hold que se coloca en el buzón inactivo. Puede indicar que se trata de una suspensión de In-Place porque el GUID no comienza con un prefijo.  <br/><br/> **NOTA**: A partir del 1 de octubre de 2020, la duración de retención de las retenciones en contexto ya no se puede cambiar. Solo puede quitar una suspensión de In-Place que dará lugar a la eliminación del buzón inactivo. <br/><br/> Para obtener más información, vea [Retirada de herramientas de exhibición de documentos electrónicos heredadas](legacy-ediscovery-retirement.md). <br/> |
 
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Paso 2: cambiar la duración de retención para un buzón inactivo
@@ -203,7 +205,7 @@ Tras identificar el tipo de retención que está colocada en el buzón inactivo 
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>Cambiar la duración de una directiva de retención de Microsoft 365
 
-Para modificar la duración de retención de una directiva de retención de Microsoft 365, primero debe identificar la directiva que afecta al buzón inactivo mediante la ejecución `Get-RetentionCompliancePolicy` con el GUID asociado de la `InPlaceHolds` propiedad en el buzón en PowerShell del Centro de seguridad y cumplimiento.
+Para modificar la duración de retención de una directiva de retención de Microsoft 365, primero debe identificar la directiva que afecta al buzón inactivo mediante la ejecución `Get-RetentionCompliancePolicy` con el GUID asociado de la `InPlaceHolds` propiedad del buzón en PowerShell de cumplimiento de seguridad &.
 
 Asegúrese de quitar el prefijo y el sufijo del GUID al ejecutar este comando.  Por ejemplo, con la información de ejemplo anterior, tomaría el `InPlaceHolds` valor de `mbxcdbbb86ce60342489bff371876e7f224:3` y, a continuación, quitaría `mbx` y `:3` daría como resultado un GUID de directiva de `cdbbb86ce60342489bff371876e7f224`.  En este ejemplo, le gustaría ejecutar:
 
@@ -211,16 +213,16 @@ Asegúrese de quitar el prefijo y el sufijo del GUID al ejecutar este comando.  
 Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
 ```
 
-Una vez que sepa el nombre de la directiva, simplemente puede modificar la directiva de retención en el Centro de cumplimiento de Microsoft 365.  Tenga en cuenta que las directivas de retención se aplican normalmente a más de una ubicación, por lo que la modificación de la directiva afectará a todas las ubicaciones aplicadas, tanto inactivas como activas, que también pueden incluir ubicaciones distintas de Exchange.  Para obtener más información, consulte [Creación y configuración de directivas de retención](create-retention-policies.md).  
+Una vez que conozca el nombre de la directiva, simplemente puede modificar la directiva de retención en el portal de cumplimiento de Microsoft Purview.  Tenga en cuenta que las directivas de retención se aplican normalmente a más de una ubicación, por lo que la modificación de la directiva afectará a todas las ubicaciones aplicadas, tanto inactivas como activas, que también pueden incluir ubicaciones distintas de Exchange.  Para obtener más información, consulte [Creación y configuración de directivas de retención](create-retention-policies.md).  
 
 > [!IMPORTANT]
 > Las directivas de retención con [el bloqueo de conservación](retention-preservation-lock.md) habilitado pueden ampliar el período de retención, pero no reducirse ni quitarse.
 
-Si la intención es modificar el período de retención solo para buzones inactivos, o solo buzones inactivos específicos, puede considerar la posibilidad de implementar [ámbitos de directiva adaptable](retention.md#adaptive-or-static-policy-scopes-for-retention), que se pueden usar para dirigirse individualmente a buzones específicos (o tipos de buzones de correo, como buzones inactivos) mediante Azure AD y Exchange atributos y propiedades.
+Si la intención es modificar el período de retención solo para buzones inactivos o solo buzones inactivos específicos, puede considerar la posibilidad de implementar [ámbitos de directiva adaptable](retention.md#adaptive-or-static-policy-scopes-for-retention), que se pueden usar para dirigirse individualmente a buzones específicos (o tipos de buzones, como buzones inactivos) mediante Azure AD y Exchange atributos y propiedades.
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>Cambiar la duración de una etiqueta de retención de Microsoft 365
 
-Al igual que con las directivas de retención, al modificar la duración de retención de una etiqueta de retención de Microsoft 365, primero debe identificar la directiva que publica la etiqueta que afecta al contenido del buzón inactivo mediante la ejecución `Get-RetentionCompliancePolicy` con el GUID asociado desde la `InPlaceHolds` propiedad en el buzón en PowerShell del Centro de seguridad y cumplimiento.
+Al igual que con las directivas de retención, al modificar la duración de retención de una etiqueta de retención de Microsoft 365, primero debe identificar la directiva que publica la etiqueta que afecta al contenido del buzón inactivo mediante la ejecución `Get-RetentionCompliancePolicy` con el GUID asociado desde la `InPlaceHolds` propiedad en el buzón de Seguridad & Cumplimiento de PowerShell.
 
 Asegúrese de quitar el prefijo y el sufijo del GUID al ejecutar este comando.  Por ejemplo, con la información de ejemplo anterior, tomaría el `InPlaceHolds` valor de `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` y, a continuación, quitaría `mbx` y `:1` daría como resultado un GUID de directiva de `6fe063689d404a5bb9940eed0f0bf5d2`.  En este ejemplo, le gustaría ejecutar:
 

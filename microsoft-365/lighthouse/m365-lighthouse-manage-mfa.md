@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la autenticación multifactor.
-ms.openlocfilehash: 53f1b0fa9a477ae74b48c96f76f9b2523fe45c10
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023203"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017728"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Administración de la autenticación multifactor en Microsoft 365 Lighthouse
 
@@ -69,7 +70,7 @@ Si desea usar una cuenta de correo electrónico diferente, puede exportar la lis
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Una vez habilitada LA MFA, puede habilitar el autoservicio de restablecimiento de contraseña de Azure Active Directory (Azure AD). Esta característica ofrece a los usuarios la posibilidad de cambiar o restablecer su contraseña sin la participación del administrador o del departamento de soporte técnico. Para obtener más información, vea [Administrar el autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
+Una vez habilitada MFA, puede habilitar el autoservicio de restablecimiento de contraseña de Azure Active Directory (Azure AD). Esta característica ofrece a los usuarios la posibilidad de cambiar o restablecer su contraseña sin la participación del administrador o del departamento de soporte técnico. Para obtener más información, vea [Administrar el autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

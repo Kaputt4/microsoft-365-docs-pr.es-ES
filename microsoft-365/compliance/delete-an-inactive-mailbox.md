@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772388"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017950"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -38,7 +38,7 @@ Consulte la sección [Más información](#more-information) para ver una descrip
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Antes de eliminar un buzón inactivo
 
-- Debe usar Exchange Online PowerShell para quitar las retenciones de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento Microsoft Purview para estos procedimientos. Para obtener instrucciones paso a paso para usar Exchange Online PowerShell, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Debe usar Exchange Online PowerShell para quitar las retenciones de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento de Microsoft Purview para estos procedimientos. Para obtener instrucciones paso a paso para usar Exchange Online PowerShell, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Puede copiar el contenido de un buzón inactivo a otro buzón antes de quitar la retención y eliminar un buzón inactivo. Para obtener más información, consulte [Restauración de un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
 
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Quitar un buzón inactivo de una directiva de retención de ubicación específica
 
-Use [PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell) para quitar un buzón inactivo de una directiva de retención explícita:
+Use [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) para quitar un buzón inactivo de una directiva de retención explícita:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

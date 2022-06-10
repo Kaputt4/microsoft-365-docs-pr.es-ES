@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar el autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 4d618eb80dfd4a37ad5548de997b3d551bcbbf85
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022369"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017684"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Administración del autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse permite a los asociados administrar el autoservicio de restablecimiento de contraseña (SSPR) Azure Active Directory (Azure AD). SSPR ofrece a los usuarios la posibilidad de cambiar o restablecer su contraseña sin la participación del administrador o del departamento de soporte técnico. Si la cuenta de un usuario está bloqueada o olvida su contraseña, puede seguir las indicaciones para desbloquearse y volver a trabajar. Esta capacidad reduce las llamadas del departamento de soporte técnico y la pérdida de productividad cuando un usuario no puede iniciar sesión en su dispositivo o una aplicación.
+Microsoft 365 Lighthouse permite a los asociados administrar el autoservicio de restablecimiento de contraseña (SSPR) de Azure Active Directory (Azure AD). SSPR ofrece a los usuarios la posibilidad de cambiar o restablecer su contraseña sin la participación del administrador o del departamento de soporte técnico. Si la cuenta de un usuario está bloqueada o olvida su contraseña, puede seguir las indicaciones para desbloquearse y volver a trabajar. Esta capacidad reduce las llamadas del departamento de soporte técnico y la pérdida de productividad cuando un usuario no puede iniciar sesión en su dispositivo o una aplicación.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

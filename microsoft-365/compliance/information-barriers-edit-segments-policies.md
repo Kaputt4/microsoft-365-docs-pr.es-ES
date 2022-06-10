@@ -13,12 +13,12 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: a4962ba35ef2a66067acdf2676dbe34e63de99c5
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396238"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014193"
 ---
 # <a name="manage-information-barriers-policies"></a>Administración de directivas de barreras de información
 
@@ -28,7 +28,7 @@ Después de [definir directivas de barreras de información (IB](information-bar
 
 ## <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
-|**Action**|**Descripción**|
+|**Acción**|**Descripción**|
 |:---------|:--------------|
 | [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos en Azure Active Directory que se pueden usar para definir segmentos. <br> Edite los atributos de la cuenta de usuario cuando los usuarios no estén incluidos en los segmentos en los que deben estar, para cambiar en qué segmentos están los usuarios o para definir segmentos con atributos diferentes. |
 | [Editar un segmento](#edit-a-segment) | Edite segmentos cuando desee cambiar la forma en que se define un segmento. <br> Por ejemplo, es posible que haya definido originalmente segmentos mediante *Department* y ahora quiera usar otro atributo, como *MemberOf*. |
@@ -42,7 +42,7 @@ Después de [definir directivas de barreras de información (IB](information-bar
 | [Solución de problemas de barreras de información](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Consulte este artículo cuando tenga problemas inesperados con las barreras de información. |
 
 >[!IMPORTANT]
->Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como una de las siguientes:<br>- administrador global de Microsoft 365 Enterprise<br>- Administrador global<br>- Administrador de cumplimiento<br>- Ib Compliance Management (¡este es un nuevo rol!)<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, consulte [Requisitos previos (para directivas de barreras de información).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Asegúrese de [conectarse a PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
+>Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como una de las siguientes:<br>- administrador global de Microsoft 365 Enterprise<br>- Administrador global<br>- Administrador de cumplimiento<br>- Ib Compliance Management (¡este es un nuevo rol!)<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, consulte [Requisitos previos (para directivas de barreras de información).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Asegúrese de [conectarse a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>Editar atributos de cuenta de usuario
 

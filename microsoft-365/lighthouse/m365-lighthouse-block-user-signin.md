@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a bloquear una cuenta de usuario si cree que está en peligro para que los usuarios no puedan iniciar sesión.
-ms.openlocfilehash: e301221e05bfb6423d16049c368fe949c6c6adb0
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 210e854c438a252e160a3a3e966a34e079f3e952
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023599"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012260"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Bloquear el inicio de sesión de usuario Microsoft 365 Lighthouse
 

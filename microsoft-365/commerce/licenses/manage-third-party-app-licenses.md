@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar licencias para aplicaciones de proveedores de software independientes (ISV) en el Centro de administración de Microsoft 365.
-ms.date: 06/15/2021
-ms.openlocfilehash: b652b8394b4958788ba49844708a3f80477e2489
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 06/08/2022
+ms.openlocfilehash: 0e83335c7130e3ae42c648ee680cf8137a7b1244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715415"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011746"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Administración de licencias de aplicaciones de ISV en el Centro de administración de Microsoft 365
 
@@ -37,7 +37,7 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>Asignación de licencias de aplicaciones de ISV a usuarios o grupos
 
-1. En el Centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
+1. En el Centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> de **facturación** > .
 2. Seleccione la aplicación para la que desea asignar licencias.
 3. En la página de detalles de la licencia, seleccione **Asignar licencias**.
 4. En el panel **Asignar licencias** , empiece a escribir el nombre de un usuario o grupo y, a continuación, selecciónelo de los resultados para agregarlo a la lista.
@@ -45,20 +45,22 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 
 ## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>Anulación de la asignación de licencias de aplicaciones de ISV de usuarios o grupos
 
-1. En el centro de administración, página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
+1. En el centro de administración, página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias de</a> **facturación** > .
 2. Seleccione la aplicación para la que desea anular la asignación de licencias.
 3. En la página de detalles de la licencia, seleccione los usuarios y grupos de los que quitar licencias y, a continuación, seleccione Anular la asignación de licencias.
 4. En el cuadro de diálogo, confirme que desea quitar las licencias y, a continuación, seleccione Quitar asignación.
 
 ## <a name="add-or-remove-isv-app-licenses-for-your-account"></a>Adición o eliminación de licencias de aplicación de ISV para su cuenta
 
-El proveedor de la aplicación administra las licencias de aplicaciones ISV. Póngase en contacto con el proveedor para agregar o quitar licencias para su cuenta.
+Si compró la aplicación a través de Microsoft en https://appsource.microsoft.com, puede [agregar o quitar licencias](buy-licenses.md) en el Centro de administración de Microsoft 365.
 
-## <a name="next-steps"></a>Pasos siguientes
+Si compró una aplicación ISV a través de un proveedor de aplicaciones, póngase en contacto con el proveedor para agregar o quitar licencias de su cuenta.
+
+## <a name="next-steps"></a>Siguientes pasos
 
 En función de la aplicación ISV que haya comprado, el siguiente paso podría ser instalar la aplicación en el entorno de la organización. La instalación de la aplicación hace que esté disponible para los usuarios. Siga estos pasos para instalar una aplicación ISV en el entorno.
 
-1. En el centro de administración, página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > .
+1. En el centro de administración, página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias de</a> **facturación** > .
 2. Seleccione la aplicación que desea instalar en su cuenta.
 3. En la página de detalles de la licencia, seleccione **Instalar este producto**. Se le redirigirá a un sitio de plataforma diferente donde instalará la aplicación en su entorno.
 

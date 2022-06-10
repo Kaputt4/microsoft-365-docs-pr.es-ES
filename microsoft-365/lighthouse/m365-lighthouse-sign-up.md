@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172189"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007138"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrese para obtener Microsoft 365 Lighthouse
 
@@ -30,7 +31,7 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Microsoft 365 Lighthouse solo se implementa en el inquilino&mdash; del asociado, no en los inquilinos del cliente, pero asegúrese de que usted y los inquilinos del cliente cumplen los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse se implementa en el inquilino del asociado solo&mdash;no en los inquilinos del cliente, sino que se asegura de que usted y los inquilinos del cliente cumplen los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
 
 - Debe ser administrador global en el inquilino de asociado en el que está iniciando sesión.
 
@@ -38,7 +39,7 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
 
 1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión con sus credenciales de inquilino de asociado. 
 
-1. Vaya a **BillingPurchase** >  **ServicesOther** >  Services.
+1. Vaya a **Servicios** >  de **compra de facturación** > **Otros servicios**.
 
     Si Microsoft 365 Lighthouse no está en la lista de servicios, seleccione **Ver todos los demás productos de servicios**.
 
