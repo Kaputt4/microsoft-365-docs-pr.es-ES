@@ -396,6 +396,8 @@
           href: quarantine-faq.yml
     - name: Guías paso a paso
       items:
+        - name: Guías paso a paso de Microsoft Defender para Office 365 y cómo usarlas
+          href: step-by-step-guides/step-by-step-guide-overview.md
         - name: "(Falsos negativos) Cómo controlar los correos electrónicos malintencionados que se entregan a los destinatarios mediante Microsoft\_Defender para Office\_365"
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: "(Falsos positivos) Cómo controlar los correos electrónicos legítimos que se bloquean para que no se entreguen con Microsoft\_Defender para Office\_365"

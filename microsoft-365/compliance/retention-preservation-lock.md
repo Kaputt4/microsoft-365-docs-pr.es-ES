@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922227"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016292"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
@@ -58,7 +58,7 @@ Si necesita usar el Bloqueo de conservación, debe usar PowerShell. Los administ
 
 Todas las directivas de retención con cualquier configuración admiten el Bloqueo de conservación. Para aplicar el Bloqueo de conservación en una directiva de etiqueta de retención, solo debe contener etiquetas que marquen elementos como registros normativos.
 
-1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Busque el nombre de la directiva que desea bloquear ejecutando [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Por ejemplo:
     
