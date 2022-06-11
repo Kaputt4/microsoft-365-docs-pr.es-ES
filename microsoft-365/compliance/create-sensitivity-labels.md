@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622378"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017040"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -86,9 +86,9 @@ Hasta que publique las etiquetas, no estarán disponibles para seleccionarlas en
 > [!IMPORTANT]
 > En esta pestaña de **Etiquetas**, no seleccione la pestaña **Publicar etiquetas** (o el botón **Publicar etiqueta** cuando edite una etiqueta), salvo que necesite crear una nueva directiva de etiqueta. Solo necesitará usar varias directivas de etiquetas si los usuarios necesitan etiquetas o configuraciones de directiva diferentes. Intente tener el menor número posible de directivas de etiquetas: no es raro tener solo una directiva de etiquetas para la organización.
 
-### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Configuración adicional de etiquetas con PowerShell del Centro de seguridad y cumplimiento
+### <a name="additional-label-settings-with-security--compliance-powershell"></a>Configuración adicional de etiquetas con PowerShell de Seguridad y cumplimiento
 
-La configuración adicional de las etiquetas está disponible con el cmdlet de [ Set-Label ](/powershell/module/exchange/set-label) desde [ PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/scc-powershell).
+Hay opciones de configuración de etiquetas adicionales disponibles con el cmdlet [Set-Label](/powershell/module/exchange/set-label) del [PowerShell de Seguridad y cumplimiento](/powershell/exchange/scc-powershell).
 
 Por ejemplo:
 
@@ -104,7 +104,7 @@ Como resultado de esta configuración, los usuarios que tienen aplicaciones de O
 
 Para los idiomas que necesita respaldar, utilice los [ identificadores de idioma ](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) de Office (también conocidos como etiquetas de idioma) y especifique su propia traducción para el nombre de la etiqueta y la información sobre herramientas.
 
-Antes de ejecutar los comandos de PowerShell, primero debe [conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+Antes de ejecutar los comandos de PowerShell, primero debe [conectarse al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
@@ -162,9 +162,9 @@ Para editar una directiva de etiquetas existente, selecciónela y, a continuaci�
 
 Este botón inicia la configuración para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice la configuración todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
 
-### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
+### <a name="additional-label-policy-settings-with-security--compliance-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell de Seguridad y cumplimiento
 
-La configuración adicional de las directivas de etiquetas está disponible con el cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) desde [Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell).
+La configuración adicional de las directivas de etiquetas está disponible con el cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) desde [Seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell).
 
 El cliente de etiquetado unificado de Azure Information Protection admite muchos [valores de configuración avanzada](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluyen la migración desde otras soluciones de etiquetado y mensajes emergentes en Outlook para advertir, justificar o bloquear el envío de correos electrónicos. Para obtener la lista completa, consulte [Configuración avanzada disponible para las directivas de etiquetas](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) de la guía de administrador de este cliente.
 
@@ -176,7 +176,7 @@ Sin embargo, hay algunos escenarios en los que las etiquetas y los cambios de di
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Usar PowerShell para etiquetas de confidencialidad y sus directivas
 
-Ahora, puede usar el [Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell) para crear y configurar todas las opciones de configuración que vea en el centro de administración de etiquetas. Esto significa que, además de usar PowerShell para las opciones de configuración que no están disponibles en los centros de administración de etiquetas, ahora puede crear una secuencia de comandos completa para crear y mantener las etiquetas de sensibilidad y las directivas de etiquetas de confidencialidad. 
+Ahora, puede usar [Seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell) para crear y configurar todas las opciones de configuración que vea en el centro de administración de etiquetas. Esto significa que, además de usar PowerShell para las opciones de configuración que no están disponibles en los centros de administración de etiquetas, ahora puede crear una secuencia de comandos completa para crear y mantener las etiquetas de sensibilidad y las directivas de etiquetas de confidencialidad. 
 
 Consulte la siguiente documentación para ver los parámetros y valores compatibles:
 
