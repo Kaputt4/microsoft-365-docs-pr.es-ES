@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
-ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: b43c29ee706fb6d4864227fbfbfe95ad5bbe0495
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930292"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012910"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -82,7 +82,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Crear una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
 1. [Administrar directivas de retención de registros de auditoría en el portal de cumplimiento de Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
-1. Creación y administración de directivas de retención de registros de auditoría en PowerShell: también puede usar el Centro de seguridad y cumplimiento de PowerShell para [crear y administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). Uno de los motivos para usar PowerShell es crear una directiva para un tipo de registro o actividad que no esté disponible en la interfaz de usuario.
+1. Crear y administrar directivas de retención de registros de auditoría en PowerShell. También es posible usar Security & Compliance de PowerShell para [crear y administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). Uno de los motivos para usar PowerShell es crear una directiva para un tipo de registro o actividad que no esté disponible en la interfaz de usuario.
 
 ## <a name="communication-compliance"></a>Cumplimiento de la comunicación
 
@@ -264,7 +264,7 @@ Para acceder a eDiscovery (Premium) o ser agregado como miembro de un caso de eD
 
 Más organizaciones usan la solución eDiscovery (Premium) en Microsoft Purview para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
 
-1. Administrar eDiscovery (Premium): [aprender a configurar eDiscovery (Premium), administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery (Premium) y analizar los resultados de búsqueda de eDiscovery (Premium)](/learn/modules/manage-advanced-ediscovery).
+1. Administrar eDiscovery (Premium): [aprenda a configurar eDiscovery (Premium), administrar casos, administrar un flujo de trabajo en eDiscovery (Premium) y analizar los resultados de búsqueda de eDiscovery (Premium](/learn/modules/manage-advanced-ediscovery)).
 1. [Crear un caso de eDiscovery con el nuevo formato de caso de eDiscovery avanzado](advanced-ediscovery-new-case-format.md)
 1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando el caso o la investigación hayan terminado, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
 
