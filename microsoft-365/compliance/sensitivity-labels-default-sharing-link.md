@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive.
-ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286898"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012326"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive
 
@@ -58,14 +58,14 @@ Para aplicar el tipo de vínculo de uso compartido predeterminado para los sitio
 
 Para aplicar el tipo de vínculo de uso compartido predeterminado para documentos de SharePoint y OneDrive, las etiquetas de confidencialidad deben estar habilitadas para estos servicios. Si esta funcionalidad aún no está habilitada en el espacio empresarial, vea [Cómo habilitar etiquetas de confidencialidad para SharePoint y OneDrive (participar)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-En una sesión de PowerShell, debe [conectarse al Centro de seguridad y cumplimiento de Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) para configurar las opciones del tipo de vínculo de uso compartido predeterminado.
+En una sesión de PowerShell, debe [conectarse a la seguridad y cumplimiento de Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) para configurar las opciones del tipo de vínculo de uso compartido predeterminado.
 
 > [!NOTE]
 > Aunque no es necesario, es más fácil [crear y configurar etiquetas de confidencialidad en el Portal de cumplimiento de Microsoft Purview](create-sensitivity-labels.md) y luego modificar las etiquetas con las opciones que configuran el tipo de vínculo de uso compartido predeterminado.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>Cómo configurar las opciones para el tipo de vínculo de uso compartido predeterminado
 
-Las opciones de configuración del tipo de vínculo de uso compartido predeterminado usan el parámetro de PowerShell *AdvancedSettings* con los cmdlets [Set-Label](/powershell/module/exchange/set-label) y [New-Label](/powershell/module/exchange/new-labelpolicy) del [Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/scc-powershell):
+Las opciones de configuración del tipo de vínculo de uso compartido predeterminado usan el parámetro de PowerShell *AdvancedSettings* con los cmdlets [Set-Label](/powershell/module/exchange/set-label) y [New-Label](/powershell/module/exchange/new-labelpolicy) de la [seguridad y cumplimiento PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: los valores disponibles son:
     - **SpecificPeople**: Establece el vínculo para compartir predeterminado para este sitio en el vínculo de “Usuarios específicos”

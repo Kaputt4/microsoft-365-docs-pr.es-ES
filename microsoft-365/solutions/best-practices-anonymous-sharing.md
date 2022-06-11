@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128596"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017994"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -87,7 +87,8 @@ Cuando *Cualquiera* está habilitado para su organización, el vínculo de uso c
 
 Para mitigar este riesgo, puede cambiar la configuración de vínculo predeterminado a un vínculo que solo funcione para las personas de su organización. Los usuarios que quieran compartir con otros usuarios no autenticados tendrían que seleccionar esa opción específicamente.
 
-Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para la organización
+Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para la organización:
+
 1. Abra el Centro de administración de SharePoint y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 1. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
 
@@ -95,7 +96,7 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 
 1. Seleccione **Guardar**.
 
-Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para un sitio web concreto
+Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para un sitio web concreto:
 
 1. Abra el Centro de administración de SharePoint, expanda **Sitios** y, a continuación, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
 1. Seleccione el sitio que desea cambiar y, a continuación, seleccione **Uso compartido**.
@@ -109,7 +110,8 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 
 Puede usar la [prevención de pérdida de datos (DLP) de Microsoft Purview](../compliance/dlp-learn-about-dlp.md) para evitar el uso compartido no autenticado de contenido confidencial. La prevención de pérdida de datos puede actuar basándose en la etiqueta de confidencialidad, en la etiqueta de retención o en la información confidencial del archivo en sí.
 
-Crear una regla DLP
+Crear una regla DLP:
+
 1. En el centro de administración de Microsoft Purview, vaya a la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
 2. Haga clic en **Crear directiva**.
 3. Elija **Personalizado** y haga clic en **Siguiente**.
@@ -133,18 +135,11 @@ Crear una regla DLP
 
 ## <a name="protect-against-malicious-files"></a>Protéjase contra archivos maliciosos
 
-Cuando permite que los usuarios anónimos carguen archivos, aumenta el riesgo de que alguien cargue un archivo malintencionado. En Microsoft 365, puede usar la característica *Datos adjuntos seguros* en Microsoft Defender para Office 365, para analizar automáticamente los archivos cargados y los archivos en cuarentena que se encuentren como no seguros.
+Cuando permite que los usuarios anónimos carguen archivos, aumenta el riesgo de que alguien cargue un archivo malintencionado. En organizaciones con licencias de Microsoft Defender para Office 365 Plan 1 o Plan 2 (por ejemplo, en Microsoft 365 E5 o como complemento), puede usar la característica *Datos adjuntos seguros* para detonar los archivos cargados en un entorno virtual de espacio aislado y poner en cuarentena los archivos que se consideran no seguros.
 
-Para activar los datos adjuntos seguros
-1. Abra la página [Datos adjuntos seguros ATP](https://protection.office.com/safeattachmentv2) en el Centro de seguridad y cumplimiento.
-2. Haga clic en **Configuración global**.
-3. Habilite ATP para SharePoint, OneDrive y Microsoft Teams.
+Para obtener instrucciones, consulte [Activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
-   ![Captura de pantalla de la opción datos adjuntos seguros en el Centro de seguridad y cumplimiento.](../media/safe-attachments-setting.png)
-
-4. De manera opcional, habilite también Documentos seguros y, a continuación, haga clic en **Guardar**
-
-Consulte [ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) y [Activar ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) para obtener más información.
+Si tiene licencias de Microsoft 365 A5 o E5 Security, también puede activar (y usar) la característica *Documentos seguros*. Para obtener más información, consulte [Documentos seguros en Microsoft 365 A5 o E5 Security](../security/office-365-security/safe-docs.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>Agregar información de copyright a los archivos
 
