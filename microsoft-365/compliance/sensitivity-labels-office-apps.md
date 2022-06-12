@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463217"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014198"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -77,6 +77,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Canal actual: 2107+ <br /><br> Canal mensual para empresas: 2107+ <br /><br> Canal semestral para empresas: 2202+ |  16.51+ | Versión preliminar: 2.58+ cuando usted [acepta](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Versión preliminar: 16.0.14931+ cuando usted [acepta](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Compatibilidad con PDF](#pdf-support)| Versión preliminar: implementando en [Canal Beta](https://office.com/insider) |  En revisión | En revisión | En revisión | En revisión |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funciones de la etiqueta de confidencialidad en Outlook
@@ -102,6 +103,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
+|[Compatibilidad con PDF](#pdf-support) | En revisión|  En revisión | En revisión | En revisión | En revisión |
 |
 
 **Notas al pie:**
@@ -370,6 +372,8 @@ Información adicional para el etiquetado incorporado:
 
 - Cuando el etiquetado obligatorio está en vigor, los usuarios no pueden eliminar las etiquetas de confidencialidad de los documentos, pero pueden cambiar una etiqueta existente.
 
+- Cuando el etiquetado obligatorio está en vigor, la opción Imprimir en PDF no estará disponible cuando un documento esté etiquetado o cifrado. Para más información, consulte la sección [Compatibilidad con PDF](#pdf-support) de esta página.
+
 Para obtener orientación sobre cuándo utilizar esta configuración, consulte la información sobre la [configuración de directivas](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
@@ -399,6 +403,38 @@ Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: s
 > Si ha configurado las opciones avanzadas de PowerShell **OutlookDefaultLabel** y **DisableMandatoryInOutlook** con los cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) o [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy):
 > 
 > Los valores elegidos para esta configuración de PowerShell se reflejan en la configuración de directivas de etiquetas en el portal de cumplimiento de Microsoft Purview y funcionan automáticamente para las aplicaciones de Outlook que admiten esta configuración. El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de etiquetado unificado de Azure Information Protection.
+
+## <a name="pdf-support"></a>Compatibilidad con PDF
+
+Para el etiquetado integrado, use las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para identificar las versiones mínimas admitidas. El cliente de etiquetado unificado de Azure Information Protection no admite PDF en aplicaciones de Office.
+
+Word, Excel y PowerPoint admiten los métodos siguientes para convertir un documento de Office en un documento PDF:
+
+- Archivo > Guardar como > PDF 
+- Archivo > Exportar > PDF
+- Compartir > Enviar una copia > PDF
+
+Cuando se crea el PDF, hereda la etiqueta con cualquier marca de contenido y cifrado. Los archivos PDF cifrados se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+
+
+Escenarios de PDF no admitidos:
+
+- Imprimir en PDF
+    
+    Si los usuarios seleccionan esta opción, se les advierte de que el documento perderá la protección de la etiqueta y el cifrado (si se aplica), y deben confirmar para continuar. Si la directiva de etiqueta de confidencialidad requiere justificación para quitar una etiqueta o reducir su clasificación, verá este mensaje.
+    
+    Dado que esta opción quita la etiqueta de confidencialidad, esta opción no estará disponible para los usuarios si usa el etiquetado obligatorio. Esta configuración hace referencia a la configuración de directiva de etiqueta de confidencialidad que requiere que los usuarios apliquen una etiqueta a sus correos electrónicos y documentos.
+
+- Formato y cifrado PDF/A
+    
+     Este formato PDF diseñado para el archivado a largo plazo no se admite cuando la etiqueta aplica cifrado y evitará que los usuarios conviertan documentos de Office en PDF.
+    
+- Protección con contraseña y cifrado
+    
+    La opción **Archivo** > **Información** > **Proteger documento** > **Cifrar con contraseña** no se admite cuando la etiqueta del documento aplica cifrado. En este escenario, la opción Cifrar con contraseña deja de estar disponible para los usuarios.
+
+Para más información sobre esta funcionalidad, vea el anuncio [Aplicar etiquetas de confidencialidad a archivos PDF creados con aplicaciones de Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
+
 
 ## <a name="auditing-labeling-activities"></a>Actividades de etiquetado de auditoría
 
