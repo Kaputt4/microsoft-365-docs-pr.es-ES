@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear notificaciones para actividades de coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 163c1386bed2e1f100a42ab8b22b6404fe6bb145
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 75a0e3c50d9dc540bf76187e6aedcbd5642d250b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760281"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009396"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Crear notificaciones para actividades de coincidencia exacta de datos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando se [crean tipos de información confidencial personalizados con coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), hay una serie de actividades que se crean en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). Puede utilizar el cmdlet de PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) para crear notificaciones que le permitan saber cuándo se producen estas actividades:
 
@@ -58,7 +60,7 @@ Para obtener más información sobre las licencias de DLP, consulte la [Guía de
 
 ## <a name="configure-notifications-for-edm-activities"></a>Configurar notificaciones para actividades de EDM
 
-1. Conectarse al [Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Conéctese al [PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Ejecute el cmdlet `New-ProtectionAlert` con la actividad para la que desea crear la notificación.  Por ejemplo, si desea recibir una notificación cuando se produzca la acción **UploadDataCompleted**, ejecute:
 

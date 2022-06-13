@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d00ba4a93c6ead4ecde75ac5415ccac08812feb3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753680"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013340"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -34,7 +34,7 @@ La prevención de pérdida de datos (DLP) de Microsoft Purview puede identificar
 
 ## <a name="keyword-dictionary-limits"></a>Límites del diccionario de palabras clave
 
-Existe un límite de 50 tipos de información confidencial basados en el diccionario de palabras clave que se pueden crear por espacio empresarial. Para descubrir cuántos diccionarios de palabras clave tiene en su espacio empresarial, conéctese mediante los procedimientos de [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell) para conectarse a su espacio empresarial y ejecutar este script de PowerShell.
+Existe un límite de 50 tipos de información confidencial basados en el diccionario de palabras clave que se pueden crear por espacio empresarial. Para descubrir cuántos diccionarios de palabras clave tiene en su espacio empresarial, conéctese mediante los procedimientos de [Conectarse al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell) para conectarse a su espacio empresarial y ejecutar este script de PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -112,7 +112,7 @@ Siga estos pasos para crear e importar palabras clave para un diccionario person
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Crear un diccionario de palabras clave desde un archivo con PowerShell
 
-Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar palabras clave de un archivo o una lista exportada de otro origen. En este caso, creará un diccionario de palabras clave que contenga una lista de lenguaje inadecuado para supervisarlo en el correo electrónico externo. Primero, necesita [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar palabras clave de un archivo o una lista exportada de otro origen. En este caso, creará un diccionario de palabras clave que contenga una lista de lenguaje inadecuado para supervisarlo en el correo electrónico externo. Primero debe [conectarse al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 1. Copie las palabras clave en un archivo de texto y asegúrese de que cada palabra clave se encuentre en una línea separada.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: f5a6ec9cd0d221cd025f4bce71008b9d01749590
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940434"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012888"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -264,11 +264,11 @@ Para identificar archivos en los correos electrónicos de SharePoint o OneDrive 
 InformationProtectionLabelId:<GUID>
 ```
 
-Para buscar el GUID, use el cmdlet [Get-Label](/powershell/module/exchange/get-label) de [PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/scc-powershell):
+Para buscar el GUID, use el cmdlet [Get-Label](/powershell/module/exchange/get-label) de [PowerShell de Seguridad y cumplimiento](/powershell/exchange/scc-powershell):
 
-````powershell
+```powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
+```
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
@@ -345,7 +345,7 @@ Al aplicar automáticamente etiquetas de retención basadas en información conf
 
 Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el portal del Centro de cumplimiento de Microsoft Purview. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
 
-1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Ejecute el siguiente comando:
     
