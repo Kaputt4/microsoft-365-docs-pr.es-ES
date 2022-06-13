@@ -21,16 +21,16 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para los mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393488"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043485"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Uso de notificaciones de cuarentena para liberar e informar de mensajes en cuarentena
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,9 @@ En el caso de los buzones compartidos, las notificaciones de cuarentena solo se 
 > [!NOTE]
 > De forma predeterminada, los mensajes que se ponen en cuarentena como suplantación de identidad de alta confianza, malware, por reglas de flujo de correo (también conocidas como reglas de transporte) o Caja fuerte directivas de datos adjuntos en Defender para Office 365 solo están disponibles para los administradores (de forma predeterminada, se usa la directiva de cuarentena AdminOnlyAccessPolicy). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 >
-> Actualmente, las notificaciones de cuarentena no se admiten para grupos.
+> Las notificaciones de cuarentena de los mensajes enviados a grupos de distribución o grupos de seguridad habilitados para correo se envían a todos los miembros del grupo.
+>
+> Las notificaciones de cuarentena de los mensajes enviados a Grupos de Microsoft 365 se envían a todos los miembros del grupo solo si la opción **Enviar copias de conversaciones y eventos de grupo a miembros del grupo** está activada.
 
 Cuando recibe una notificación de cuarentena, la siguiente información siempre está disponible para cada mensaje en cuarentena:
 

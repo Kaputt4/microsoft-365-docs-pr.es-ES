@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administre y proteja los dispositivos móviles conectados a su organización Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863214"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042240"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Introducción a la movilidad y la seguridad básicas para Microsoft 365
 
@@ -34,7 +34,7 @@ Puede administrar y proteger dispositivos móviles cuando estén conectados a su
 
 ## <a name="what-types-of-devices-can-you-manage"></a>¿Qué tipos de dispositivos se pueden administrar?
 
-Puede usar Basic Mobility and Security para administrar muchos tipos de dispositivos móviles, como Windows Phone, Android, iPhone y iPad. Para administrar los dispositivos móviles que usan los usuarios de la organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe inscribirse en Basic Mobility and Security.
+Puede usar Basic Mobility and Security para administrar muchos tipos de dispositivos móviles, como Android, iPhone y iPad. Para administrar los dispositivos móviles que usan los usuarios de la organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe inscribirse en Basic Mobility and Security.
 
 Para ver qué admite Basic Mobility and Security para cada tipo de dispositivo, consulte [Funcionalidades de movilidad y seguridad básicas](capabilities.md).
 
@@ -46,7 +46,7 @@ Este es un resumen de los pasos:
 
 **Paso 1:** Active Basic Mobility and Security siguiendo los pasos descritos en [Configuración de Basic Mobility and Security](set-up.md).
 
-**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, crear un certificado APNs para administrar dispositivos iOS y agregar un registro del sistema de nombres de dominio (DNS) para que el dominio admita Windows teléfonos.
+**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, crear un certificado APNs para administrar dispositivos iOS y agregar un registro del sistema de nombres de dominio (DNS) para el dominio.
 
 **Paso 3:** Cree directivas de dispositivo y aplíquelas a grupos de usuarios. Al hacerlo, los usuarios reciben un mensaje de inscripción en su dispositivo y, cuando han completado la inscripción, sus dispositivos están restringidos por las directivas que ha configurado para ellos. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md). 
 

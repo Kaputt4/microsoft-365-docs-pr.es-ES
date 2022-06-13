@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta Elementos recuperables de un buzón en Microsoft 365.
-ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d426afffb1002e1187adafc794d5340d730cc7e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015024"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044146"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-La directiva de retención de Exchange predeterminada, denominada *Directiva de MRM predeterminada*, que se aplica automáticamente a los nuevos buzones de Exchange Online contiene una etiqueta de retención denominada Elementos recuperables que 14 días se mueven al archivo. Esta etiqueta de retención mueve los elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables del buzón de archivo del usuario después de que expire el período de retención de 14 días para un elemento. Para que esto suceda, el buzón de archivo del usuario debe estar habilitado. Si el buzón de archivo no está habilitado, no se realiza ninguna acción, lo que significa que los elementos de la carpeta Elementos recuperables de un buzón en espera no se mueven al buzón de archivo después de que expire el período de retención de 14 días. Dado que no se elimina nada de un buzón en espera, es posible que se supere la cuota de almacenamiento de la carpeta Elementos recuperables, especialmente si el buzón de archivo del usuario no está habilitado.
+La directiva de retención de Exchange predeterminada, denominada *Directiva de MRM predeterminada*, que se aplica automáticamente a los nuevos buzones de Exchange Online contiene una etiqueta de retención denominada Elementos recuperables que 14 días se mueven al archivo. Esta etiqueta de retención mueve los elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables del buzón de archivo del usuario después de que expire el período de retención de 14 días para un elemento. Los correos electrónicos de la carpeta Eliminaciones se conservarán en función **del parámetro RetainDeletedItemsFor** y se moverán a otras carpetas en elementos eliminados recuperables y, a continuación, al buzón de archivo. Para que esto suceda, el buzón de archivo del usuario debe estar habilitado. Si el buzón de archivo no está habilitado, no se realiza ninguna acción, lo que significa que los elementos de la carpeta Elementos recuperables de un buzón en espera no se mueven al buzón de archivo después de que expire el período de retención de 14 días. Dado que no se elimina nada de un buzón en espera, es posible que se supere la cuota de almacenamiento de la carpeta Elementos recuperables, especialmente si el buzón de archivo del usuario no está habilitado.
 
 Para ayudar a reducir la posibilidad de superar este límite, la cuota de almacenamiento de la carpeta Elementos recuperables se aumenta automáticamente de 30 GB a 100 GB cuando se coloca una retención en un buzón de Exchange Online. Si el buzón de archivo está habilitado, la cuota de almacenamiento de la carpeta Elementos recuperables del buzón de archivo también se incrementa de 30 GB a 100 GB. Si la característica de archivado de expansión automática en Exchange Online está habilitada, la cuota de almacenamiento total para el buzón de archivo del usuario, incluida la carpeta Elementos recuperables, es de 1,5 TB.
 

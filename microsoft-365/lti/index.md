@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: Obtenga información sobre las aplicaciones de Microsoft Learning Tools Interoperability (LTI) y cómo ayudarán a los formadores al integrar aplicaciones de Microsoft en su sistema de administración de Learning (LMS).
-ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414774"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044299"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integración de productos de Microsoft con el sistema de administración de Learning (LMS)
 
@@ -81,6 +81,7 @@ Para ver los pasos de configuración, consulte:
 
 - [Microsoft Teams reuniones con Canvas](teams-meetings-with-canvas.md).
 - [Microsoft Teams reuniones con Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams reuniones con Open LMS](open-lms-teams-classes-and-meetings.md).
 
 ### <a name="teams-classes-lti"></a>Teams clases LTI
 
@@ -88,6 +89,7 @@ La aplicación LTI de clases de Microsoft Teams ayuda a los educadores y alumnos
 
 Para ver los pasos de configuración, consulte:
 
-- [Teams clases LTI con Canvas](teams-classes-with-canvas.md).
-- [Teams clases LTI con Blackboard](teams-classes-with-blackboard.md).
-- [Teams Clases LTI con Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams clases LTI con Canvas](teams-classes-with-canvas.md).
+- [Microsoft Teams clases LTI con Blackboard](teams-classes-with-blackboard.md).
+- [Microsoft Teams Clases LTI con Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams clases LTI con Open LMS](open-lms-teams-classes-and-meetings.md).

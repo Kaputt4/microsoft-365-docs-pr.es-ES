@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772099"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043739"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -74,16 +74,13 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
-  - **Remitentes, direcciones URL y archivos**:
     - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
       - **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
       - **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
     - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
       - **Grupo de roles lector global**
       - **Grupo de roles lector de seguridad**
-  - **Suplantación de identidad**: una de las siguientes combinaciones:
-    - **Administración de organizaciones**
-    - **Administrador de seguridad** <u>y</u> **Configuración de solo vista** o **Administración de la organización de solo vista**.
+      - **Grupo de roles de configuración de solo vista* .
 
   Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -155,20 +152,20 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
    Haga clic en **Filtrar** para filtrar los resultados. Los valores que están disponibles en el control flotante **Filtro** que aparece dependen de la pestaña seleccionada:
 
    - **Remitentes**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
    - **Spoofing**
-     - **Action**
+     - **Acción**
      - **Tipo de suplantación de identidad**
    - **Url**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
    - **Files**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Actualizado por última vez**
      - **Quitar activado**
@@ -468,7 +465,6 @@ Un par de dominios para un remitente suplantado en la lista de permitidos o bloq
 - **Infraestructura de envío**: este valor indica el origen de los mensajes del usuario suplantado. Los valores válidos son:
   - Dominio que se encuentra en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen (por ejemplo, fabrikam.com).
   - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\>/24 (por ejemplo, 192.168.100.100/24).
-  - Un dominio DKIM comprobado.
 
 Estos son algunos ejemplos de pares de dominio válidos para identificar remitentes suplantados:
 

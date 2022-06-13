@@ -20,16 +20,16 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo mover usuarios entre suscripciones.
 ms.date: 05/12/2022
-ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403302"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044331"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
-Si tiene más de una suscripción, tenga usuarios con una licencia para una suscripción, pero quiere moverlos a otra, puede reemplazar su licencia existente por otra diferente.
+Si tiene más de un producto, tiene usuarios con una licencia para un producto, pero quiere moverlos a otro producto, puede reemplazar su licencia existente por otra diferente.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -49,7 +49,7 @@ Debe ser administrador global, de licencia o de usuario para asignar licencias. 
 
 ::: moniker-end
 
-2. Seleccione los círculos junto a los nombres de los usuarios para los que desea reemplazar las licencias existentes.
+2. Active las casillas situadas junto a los nombres de los usuarios para los que desea reemplazar las licencias existentes.
 
 3. En la parte superior, seleccione **Administrar licencias de producto**.
 
@@ -57,7 +57,7 @@ Debe ser administrador global, de licencia o de usuario para asignar licencias. 
 
 5. En la parte inferior, seleccione **Guardar cambios** \> **Cerrar**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a [reasignar las licencias sin usar a otros usuarios](../../managed-desktop/get-started/assign-licenses.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 

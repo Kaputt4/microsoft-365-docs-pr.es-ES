@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731381"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044418"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -58,14 +58,14 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `IsLocalAdmin` | `boolean` | Indicador booleano de si el usuario es un administrador local en el equipo |
 | `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en la misma máquina solo entre reinicios |
 | `RemoteDeviceName` | `string` | Nombre de la máquina que realizó una operación remota en la máquina afectada. Dependiendo del evento que se notifica, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio. |
-| `RemoteIP` | `string` | Dirección IP a la que se ha conectado |
+| `RemoteIP` | `string` | Dirección IP del dispositivo desde el que se realizó el intento de inicio de sesión |
 | `RemoteIPType` | `string` | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
 | `RemotePort` | `int` | Puerto TCP en el dispositivo remoto al que se estaba conectando |
 | `InitiatingProcessAccountDomain` | `string` | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | `string` | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | `string` | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| ` InitiatingProcessAccountObjectId` | `string` | Azure AD identificador de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| ` InitiatingProcessAccountObjectId` | `string` | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a procesos basados en ciertas características, como si se iniciaran desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
 | `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessSHA1` | `string` | SHA-1 del proceso (archivo de imagen) que inició el evento |

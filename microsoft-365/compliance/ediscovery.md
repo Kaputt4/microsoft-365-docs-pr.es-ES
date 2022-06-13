@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, SharePoint y sitios de OneDrive para la Empresa, Grupos de Microsoft 365, Microsoft Teams y Skype Empresarial conversaciones. eDiscovery (estándar) y eDiscovery (Premium) proporcionan muchas características adicionales para ayudarle a administrar las investigaciones.
-ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9262f2773d17f19bd5adaea3eed9e747e343e625
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095870"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043401"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 
@@ -145,6 +145,8 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 
 ### <a name="ediscovery-standard"></a>eDiscovery (Estándar)
 
+- Exchange plan en línea 2
+- Plan 2 de Sharepoint Online
 - Microsoft 365 E3 suscripción
 - Microsoft 365 G3 suscripción
 - Microsoft 365 Empresa Premium suscripción

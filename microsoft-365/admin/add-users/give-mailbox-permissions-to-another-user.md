@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario de Microsoft 365 el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436721"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042382"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Conceder permisos de buzón a otro usuario de Microsoft 365: Ayuda para administradores
 
@@ -167,6 +167,8 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 ::: moniker-end
 
+> [!NOTE]
+> Los permisos **Enviar como** y **Enviar en nombre de** no funcionan en el cliente de escritorio de Outlook con el parámetro *HiddenFromAddressListsEnabled* en el buzón establecido en **True**, ya que requieren que el buzón esté visible en Outlook a través de la lista global de direcciones.
 
 ## <a name="related-content"></a>Contenido relacionado
   

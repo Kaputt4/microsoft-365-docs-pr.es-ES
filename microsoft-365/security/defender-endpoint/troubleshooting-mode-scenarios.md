@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 1c5a3a9a085f889383f570f0d9fc8dc256e29d4f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874117"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043087"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -36,13 +36,13 @@ ms.locfileid: "65874117"
 > [!IMPORTANT]
 > Algunas informaciones se refieren a productos publicados previamente que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
+Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características de Antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
 
 ## <a name="scenario-1-unable-to-install-application"></a>Escenario 1: No se puede instalar la aplicación
 
 Si desea instalar una aplicación pero recibe un mensaje de error que indica que Antivirus de Microsoft Defender y la protección contra alteraciones está activada, siga los pasos que se indican a continuación para solucionar el problema.
 
-1. Solicite al administrador de SOC que active el modo de solución de problemas. Recibirá una notificación Seguridad de Windows una vez que se inicie el modo de solución de problemas.  
+1. Solicite al administrador de seguridad que active el modo de solución de problemas. Recibirá una notificación Seguridad de Windows una vez que se inicie el modo de solución de problemas.  
 
 2. Conectar al dispositivo (por ejemplo, mediante Terminal Services) con permisos de administrador local.  
 
@@ -52,8 +52,9 @@ Si desea instalar una aplicación pero recibe un mensaje de error que indica que
 
 5. Inicie un símbolo del sistema de PowerShell con privilegios elevados y desactive RTP. 
 
-    - Ejecute `get-mppreference` para comprobar el estado de RTP.
-    - Ejecute `set–mppreference` para desactivar la ejecución rtpa. 
+    - Ejecute `Get-MpComputerStatus` para comprobar el estado RealTimeProtection.
+    - Ejecute `Set-mppreference -DisableRealtimeMonitoring $true` para desactivar RTP.
+    - Vuelva a ejecutar `Get-MpComputerStatus` para comprobar el estado RealTimeProtection.
 
 6. Intente instalar la aplicación.
 
@@ -71,11 +72,11 @@ A veces, durante un examen programado, MsMpEng.exe puede consumir una CPU elevad
 
 5. Agregue exclusiones de proceso, archivo, carpeta o extensión en función de los resultados de ProcMon mediante uno de los siguientes comandos (la ruta de acceso, la extensión y las exclusiones de procesos que se mencionan a continuación son solo ejemplos): 
 
-    - Set-mppreference -ExclusionPath (por ejemplo, C:\DB\DataFiles) 
+    - `Set-mppreference -ExclusionPath` (por ejemplo, C:\DB\DataFiles) 
     
-    - Set-mppreference –ExclusionExtension (por ejemplo, .dbx) 
+    - `Set-mppreference –ExclusionExtension` (por ejemplo, .dbx) 
     
-    - Set-mppreference –ExclusionProcess (por ejemplo, C:\DB\Bin\Convertdb.exe) 
+    - `Set-mppreference –ExclusionProcess` (por ejemplo, C:\DB\Bin\Convertdb.exe) 
 
 6. Después de agregar la exclusión, compruebe si se ha quitado el uso de CPU. 
 
@@ -85,7 +86,7 @@ Para obtener más información sobre Set-MpPreference preferencias de configurac
 
 Cuando se activa Antivirus de Microsoft Defender protección en tiempo real, la aplicación tarda mucho tiempo en realizar tareas básicas. Para desactivar la protección en tiempo real y solucionar el problema, siga estos pasos. 
 
-1. Solicite al administrador de SOC que active el modo de solución de problemas en el dispositivo. 
+1. Solicite al administrador de seguridad que active el modo de solución de problemas en el dispositivo. 
 
 2. Para deshabilitar RTP para este escenario, primero desactive la protección contra alteraciones. Para obtener más información, consulte [Protección de la configuración de seguridad con protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
@@ -93,7 +94,7 @@ Cuando se activa Antivirus de Microsoft Defender protección en tiempo real, la 
 
 4. Inicie un símbolo del sistema de PowerShell con privilegios elevados. 
 
-    - Set-mppreference -DisableRealtimeMonitoring $true 
+    - `Set-mppreference -DisableRealtimeMonitoring $true` 
 
 5. Después de deshabilitar RTP, compruebe si la aplicación es lenta. 
 
@@ -105,7 +106,7 @@ La reducción de superficie expuesta a ataques (ASR) no permite que Microsoft Of
 
 2. Inicie un símbolo del sistema de PowerShell con privilegios elevados. 
 
-    - Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Deshabilitado 
+    - `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
 
 3. Después de deshabilitar la regla de ASR, confirme que el complemento de Microsoft Office ahora funciona.
 
@@ -119,7 +120,7 @@ Network Protection bloquea el dominio de Microsoft, lo que impide que los usuari
 
 2. Inicie un símbolo del sistema de PowerShell con privilegios elevados. 
 
-    - Set-MpPreference -EnableNetworkProtection Deshabilitado 
+    - `Set-MpPreference -EnableNetworkProtection Disabled` 
 
 3. Después de deshabilitar Protección de red, compruebe si el dominio ahora está permitido. 
 

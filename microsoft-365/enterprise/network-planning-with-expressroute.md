@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: En este artículo, obtendrá información sobre Azure ExpressRoute para Office 365 y cómo usarlo para el planeamiento de red.
-ms.openlocfilehash: a284472ad84139a5e76eeab38121d62cf3757829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095650"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042922"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Plan de red con ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 ExpressRoute para Office 365 proporciona conectividad de nivel 3 entre la red y los centros de datos de Microsoft. Los circuitos usan anuncios de ruta del Protocolo de puerta de enlace de borde (BGP) de los servidores front-end de Office 365. Desde la perspectiva de los dispositivos locales, cuando necesitan seleccionar la ruta de acceso TCP/IP correcta para Office 365, Azure ExpressRoute se ve como una alternativa a Internet.
   
@@ -46,7 +46,7 @@ En la tabla siguiente se resaltan algunas diferencias entre las conexiones de In
 |Conexión directa con un perfil de red predecible.  <br/> |No  <br/> |Sí  <br/> |
 |Conectividad IPv6.  <br/> |Sí  <br/> |Sí  <br/> |
 
-Expanda los títulos siguientes para obtener más instrucciones de planeamiento de red. También hemos grabado una serie de 10 partes de [Azure ExpressRoute para Office 365 Training](https://channel9.msdn.com/series/aer) que profundiza más.
+Expanda los títulos siguientes para obtener más instrucciones de planeamiento de red.
 
 ## <a name="existing-azure-expressroute-customers"></a>Clientes de Azure ExpressRoute existentes
 
@@ -62,7 +62,7 @@ En esta tabla se describen los dos tipos de relaciones de emparejamiento que pue
 |:-----|:-----|:-----|
 |**Servicios** <br/> |IaaS: Azure Virtual Machines  <br/> |PaaS: servicios públicos de Azure  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
 |Iniciación de la conexión**** <br/> |Cliente a Microsoft  <br/> Microsoft al cliente  <br/> |Cliente a Microsoft  <br/> Microsoft al cliente  <br/> |
-|**Compatibilidad con QoS** <br/> |Sin QoS  <br/> |<sup>QoS1</sup> <br/> |
+|**Compatibilidad con QoS** <br/> |Sin QoS  <br/> |QoS<sup>1</sup> <br/> |
 
 <sup>1 </sup> QoS solo admite Skype Empresarial en este momento.
   
@@ -104,15 +104,15 @@ Al considerar la ubicación de la topología de las opciones de perímetro de re
 
 - Se recomienda a los clientes diseñar su topología de seguridad o perímetro para su uso con ExpressRoute para Office 365 de acuerdo con los procedimientos recomendados para la redundancia, la alta disponibilidad y la recuperación ante desastres.
 
-Este es un ejemplo de Woodgrove Bank que compara las distintas opciones de conectividad de Azure ExpressRoute con los modelos de seguridad perimetral descritos anteriormente.
+Este es un ejemplo de Contoso que compara las distintas opciones de conectividad de Azure ExpressRoute con los modelos de seguridad perimetral descritos anteriormente.
   
 ### <a name="example-1-securing-azure-expressroute"></a>Ejemplo 1: Protección de Azure ExpressRoute
   
-Woodgrove Bank está considerando la posibilidad de implementar Azure ExpressRoute y, después de planear la arquitectura óptima para el [enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md) y después de usar las instrucciones anteriores para comprender los requisitos de ancho de banda, están determinando el mejor método para proteger su perímetro.
+Contoso está pensando en implementar Azure ExpressRoute y después de planear la arquitectura óptima para el [enrutamiento con ExpressRoute para Office 365](routing-with-expressroute.md) y después de usar las instrucciones anteriores para comprender los requisitos de ancho de banda, están determinando el mejor método para proteger su perímetro.
   
-Para Woodgrove, una organización multinacional con ubicaciones en varios continentes, la seguridad debe abarcar todos los perímetros. La opción de conectividad óptima para Woodgrove es una conexión de varios puntos con varias ubicaciones de emparejamiento de todo el mundo para atender las necesidades de sus empleados en cada continente. Cada continente incluye circuitos Azure ExpressRoute redundantes dentro del continente y la seguridad debe abarcar todos ellos.
+Para Contoso, una organización multinacional con ubicaciones en varios continentes, la seguridad debe abarcar todos los perímetros. La opción de conectividad óptima para Contoso es una conexión de varios puntos con varias ubicaciones de emparejamiento de todo el mundo para atender las necesidades de sus empleados en cada continente. Cada continente incluye circuitos Azure ExpressRoute redundantes dentro del continente y la seguridad debe abarcar todos ellos.
   
-La infraestructura existente de Woodgrove es confiable y puede controlar el trabajo adicional, como resultado, Woodgrove Bank puede usar la infraestructura para su seguridad perimetral de Azure ExpressRoute e Internet. Si este no fuera el caso, Woodgrove podría optar por comprar más equipos para complementar su equipo existente o para manejar un tipo diferente de conexión.
+La infraestructura existente de Contoso es confiable y puede controlar el trabajo adicional, como resultado, Contoso puede usar la infraestructura para su seguridad perimetral de Azure ExpressRoute e Internet. Si este no fuera el caso, Contoso podría optar por comprar más equipos para complementar su equipo existente o para controlar un tipo diferente de conexión.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Alta disponibilidad y conmutación por error con Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -158,13 +158,13 @@ No se recomienda usar un único circuito ExpressRoute con Internet como copia de
   
 ### <a name="example-2-failover-and-high-availability"></a>Ejemplo 2: Conmutación por error y alta disponibilidad
   
-El diseño multi geográfico de Woodgrove Bank se ha sometido a una revisión del enrutamiento, el ancho de banda, la seguridad y ahora debe pasar por una revisión de alta disponibilidad. Woodgrove piensa que la alta disponibilidad abarca tres categorías; resistencia, confiabilidad y redundancia.
+El diseño multi geográfico de Contoso se ha sometido a una revisión del enrutamiento, el ancho de banda, la seguridad y ahora debe pasar por una revisión de alta disponibilidad. Contoso piensa que la alta disponibilidad abarca tres categorías; resistencia, confiabilidad y redundancia.
   
-La resistencia permite a Woodgrove recuperarse rápidamente de los errores. La confiabilidad permite a Woodgrove ofrecer un resultado coherente dentro del sistema. La redundancia permite que Woodgrove se mueva entre una o varias instancias reflejadas de la infraestructura.
+La resistencia permite a Contoso recuperarse rápidamente de los errores. La confiabilidad permite a Contoso ofrecer un resultado coherente dentro del sistema. La redundancia permite a Contoso moverse entre una o varias instancias reflejadas de la infraestructura.
   
-Dentro de cada configuración perimetral, Woodgrove tiene firewalls, servidores proxy e IDS redundantes. Por Norteamérica, Woodgrove tiene una configuración perimetral en su centro de datos de Dallas y otra configuración perimetral en su centro de datos de Virginia. El equipo redundante de cada ubicación ofrece resistencia a esa ubicación.
+Dentro de cada configuración perimetral, Contoso tiene firewalls, servidores proxy e IDS redundantes. Por Norteamérica, Contoso tiene una configuración perimetral en su centro de datos de Dallas y otra configuración perimetral en su centro de datos de Virginia. El equipo redundante de cada ubicación ofrece resistencia a esa ubicación.
   
-La configuración de red en Woodgrove Bank se basa en algunos principios clave:
+La configuración de red en Contoso se basa en algunos principios clave:
   
 - Dentro de cada región geográfica, hay varios circuitos ExpressRoute de Azure.
 
@@ -172,15 +172,15 @@ La configuración de red en Woodgrove Bank se basa en algunos principios clave:
 
 - El enrutamiento prefiere claramente una u otra ruta de acceso en función de la disponibilidad, la ubicación, etc.
 
-- La conmutación por error entre circuitos ExpressRoute de Azure se produce automáticamente sin necesidad de una configuración o acción adicional requerida por Woodgrove.
+- La conmutación por error entre circuitos ExpressRoute de Azure se produce automáticamente sin necesidad de una configuración o acción adicional por parte de Contoso.
 
-- La conmutación por error entre circuitos de Internet se produce automáticamente sin necesidad de una configuración o acción adicional por parte de Woodgrove.
+- La conmutación por error entre circuitos de Internet se produce automáticamente sin necesidad de una configuración o acción adicional por parte de Contoso.
 
-En esta configuración, con redundancia a nivel físico y virtual, Woodgrove Bank es capaz de ofrecer resistencia local, resistencia regional y resistencia global de forma confiable. Woodgrove eligió esta configuración después de evaluar un único circuito ExpressRoute de Azure por región, así como la posibilidad de conmutar por error a Internet.
+En esta configuración, con redundancia en el nivel físico y virtual, Contoso es capaz de ofrecer resistencia local, resistencia regional y resistencia global de forma confiable. Contoso eligió esta configuración después de evaluar un único circuito ExpressRoute de Azure por región, así como la posibilidad de conmutar por error a Internet.
   
-Si Woodgrove no pudiera tener varios circuitos ExpressRoute de Azure por región, el enrutamiento del tráfico originado en Norteamérica al circuito ExpressRoute de Azure en Asia Pacífico agregaría un nivel inaceptable de latencia y la configuración del reenviador DNS necesaria agrega complejidad.
+Si Contoso no pudiera tener varios circuitos ExpressRoute de Azure por región, el enrutamiento del tráfico originado en Norteamérica al circuito ExpressRoute de Azure en Asia Pacífico agregaría un nivel inaceptable de latencia y la configuración del reenviador DNS necesaria agrega complejidad.
   
-No se recomienda usar Internet como configuración de copia de seguridad. Esto rompe el principio de confiabilidad de Woodgrove, lo que da lugar a una experiencia incoherente mediante la conexión. Además, se requeriría una configuración manual para conmutar por error teniendo en cuenta los anuncios BGP que se han configurado, la configuración nat, la configuración de DNS y la configuración del proxy. Esta complejidad de conmutación por error agregada aumenta el tiempo de recuperación y reduce su capacidad para diagnosticar y solucionar los pasos implicados.
+No se recomienda usar Internet como configuración de copia de seguridad. Esto interrumpe el principio de confiabilidad de Contoso, lo que da lugar a una experiencia incoherente mediante la conexión. Además, se requeriría una configuración manual para conmutar por error teniendo en cuenta los anuncios BGP que se han configurado, la configuración nat, la configuración de DNS y la configuración del proxy. Esta complejidad de conmutación por error agregada aumenta el tiempo de recuperación y reduce su capacidad para diagnosticar y solucionar los pasos implicados.
   
 ¿Sigue teniendo preguntas sobre cómo planear e implementar la administración de tráfico o Azure ExpressRoute? Lea el resto de nuestra [guía de rendimiento y red](./network-planning-and-performance.md) o las [preguntas más frecuentes sobre Azure ExpressRoute](/azure/expressroute/expressroute-faqs).
   

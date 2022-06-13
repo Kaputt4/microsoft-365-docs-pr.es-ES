@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente.
-ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 93cf56ba30f333697ccb1ef6f4064918e73d4fcf
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363178"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042448"
 ---
 # <a name="set-up-customer-key"></a>Configuración de la clave de cliente
 
@@ -25,7 +25,7 @@ ms.locfileid: "65363178"
 
 Con La clave de cliente, puede controlar las claves de cifrado de su organización y, a continuación, configurar Microsoft 365 para usarlas para cifrar los datos en reposo en los centros de datos de Microsoft. En otras palabras, La clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves.
 
-Configure Azure para poder usar la clave de cliente. En este artículo se describen los pasos que debe seguir para crear y configurar los recursos de Azure necesarios y, a continuación, se proporcionan los pasos para configurar la clave de cliente. Después de configurar Azure, se determina qué directiva y, por lo tanto, qué claves se van a asignar para cifrar los datos en varias cargas de trabajo Microsoft 365 de la organización. Para obtener más información sobre la clave de cliente o para obtener información general, consulte [Cifrado de servicio con Microsoft Purview clave de cliente](customer-key-overview.md).
+Configure Azure para poder usar la clave de cliente. En este artículo se describen los pasos que debe seguir para crear y configurar los recursos de Azure necesarios y, a continuación, se proporcionan los pasos para configurar la clave de cliente. Después de configurar Azure, se determina qué directiva y, por lo tanto, qué claves se van a asignar para cifrar los datos en varias cargas de trabajo Microsoft 365 de la organización. Para obtener más información sobre la clave de cliente o para obtener información general, consulte [Cifrado de servicio con clave de cliente de Microsoft Purview](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Se recomienda encarecidamente seguir los procedimientos recomendados de este artículo. Se denominan **TIP** e **IMPORTANTE**. Clave de cliente proporciona control sobre las claves de cifrado raíz cuyo ámbito puede ser tan grande como toda la organización. Esto significa que los errores cometidos con estas claves pueden tener un gran impacto y pueden dar lugar a interrupciones del servicio o pérdida irrevocable de los datos.
@@ -107,7 +107,7 @@ Para enviar una oferta para activar la clave de cliente, complete estos pasos:
 
 2. Una vez que haya iniciado sesión, seleccione el dominio adecuado.
 
-3. Para el dominio seleccionado, elija **Solicitar servicios** en la barra de navegación superior y revise la lista de ofertas disponibles.
+3. En el dominio seleccionado, elija **Implementar** en la barra de navegación superior y revise la lista de ofertas disponibles.
 
 4. Elija la tarjeta de información de la oferta que se aplica a usted:
 
@@ -356,7 +356,7 @@ En Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que haya completado los pasos de este artículo, estará listo para crear y asignar DEP. Para obtener instrucciones, consulte [Administrar clave de cliente](customer-key-manage.md).
 

@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones de asociados de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal aplicaciones integradas de la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094668"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043174"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 por parte de los asociados en el portal de aplicaciones integradas
 
@@ -60,7 +60,7 @@ Puede administrar las pruebas y la implementación de Aplicaciones Microsoft 365
 
 Puede encontrar, probar e implementar completamente las aplicaciones publicadas que aún no aparecen en la lista de la página Aplicaciones integradas. Al comprar y conceder licencias a las aplicaciones desde el Centro de administración, puede agregar aplicaciones de microsoft y de asociados de Microsoft a la lista desde una sola ubicación.
 
-1. En el centro de administración, en el panel de navegación izquierdo, elija **Configuración** y, a continuación, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Aplicaciones integradas**</a>.
+1. En el centro de administración, en el panel de navegación izquierdo, elija **Configuración** y, a continuación, elija <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**Aplicaciones integradas**</a>.
 
 2. Seleccione **Obtener aplicaciones** para obtener una vista de las aplicaciones.
 
@@ -86,8 +86,8 @@ Puede encontrar, probar e implementar completamente las aplicaciones publicadas 
 No podrá implementar una sola aplicación de tienda ni Aplicaciones Microsoft 365 por asociado desde el portal aplicaciones integradas para los siguientes escenarios.
 
 - El mismo complemento está vinculado a más de una oferta de SaaS.
-- La oferta de SaaS está vinculada a complementos, pero no se integra con Microsoft Graph y no se proporciona ningún identificador de aplicación AAD.
-- La oferta de SaaS está vinculada a complementos, pero AAD identificador de aplicación proporcionado para la integración de Microsoft Graph se comparte entre varias ofertas de SaaS.
+- La oferta de SaaS está vinculada a complementos, pero no se integra con Microsoft Graph y no se proporciona ningún identificador de aplicación de AAD.
+- La oferta de SaaS está vinculada a complementos, pero el identificador de aplicación de AAD proporcionado para la integración de Microsoft Graph se comparte entre varias ofertas de SaaS.
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload aplicaciones de línea de negocio personalizadas para pruebas e implementación completa
 
@@ -130,7 +130,7 @@ La implementación no admite lo siguiente:
 - Complementos que tengan como objetivo Word, Excel o PowerPoint en Office 2013 
 - Un servicio de directorio local 
 - Implementación de complementos en un buzón local de Exchange 
-- Implementación de complementos de modelo de objetos de componente (COM) o Visual Studio Tools para Office (VSTO). 
+- Implementación de complementos de modelo de objetos componentes (COM) o Visual Studio Tools para Office (VSTO). 
 - Implementaciones de Microsoft 365 que no incluyen Exchange Online como Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para Enterprise.  
 
 ### <a name="office-requirements"></a>Requisitos de Office 

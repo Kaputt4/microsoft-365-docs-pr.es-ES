@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810974"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014286"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
@@ -107,7 +107,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
     > [!NOTE]
     > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que observe que los eventos de auditoría del buzón de algunos usuarios no se encuentran en búsquedas de registro de auditoría en el centro de cumplimiento o a través de la API de Actividad de administración de Office 365. Para más información, consulte [Más información sobre el registro de auditoría del buzón](enable-mailbox-auditing.md#more-information).
 
-- Si desea desactivar la búsqueda en el registro de auditoría de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización de Exchange Online:
+- Si desea desactivar la búsqueda de registros de auditoría de su organización, puede ejecutar el siguiente comando en el PowerShell de Exchange Online:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -574,7 +574,7 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
-|Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde un equipo que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario está bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.<br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
+|Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde un equipo que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario está bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.<br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
 |Archivos descargados al equipo|FileSyncDownloadedFull|El usuario descarga un archivo en su equipo desde una biblioteca de documentos de SharePoint o OneDrive para la Empresa con la aplicación de Sincronización de OneDrive (OneDrive.exe).|
 |Cambios de archivos descargados al equipo|FileSyncDownloadedPartial|Este evento ha quedado en desuso junto con la antigua aplicación de Sincronización de OneDrive para la Empresa (Groove.exe).|
 |Archivos cargados a la biblioteca de documentos|FileSyncUploadedFull|El usuario carga un nuevo archivo o cambios en un archivo en la biblioteca de documentos de SharePoint o OneDrive para la Empresa con la aplicación de Sincronización de OneDrive (OneDrive.exe).|
@@ -645,7 +645,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 
 La siguiente tabla enumera las actividades que pueden registrarse mediante el registro de auditoría del buzón de correo. Las actividades de buzón realizadas por el propietario del buzón, usuario delegado o administrador se registran automáticamente en el registro de auditoría durante un máximo de 90 días. Es posible para un administrador desactivar el registro de auditoría de buzón para todos los usuarios de su organización. En este caso, no se registra ninguna acción de cualquier usuario en el buzón. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
 
- También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog)en el PowerShell de Exchange en línea.
+ También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog)en el [PowerShell de Exchange en línea](/powershell/exchange/connect-to-exchange-online-powershell).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|

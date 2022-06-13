@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilite el uso compartido de calendarios en el Centro de administración de Microsoft 365 para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: 9179e79e27320df2b943a9342ee0c2a91c866448
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b3ca1d4f2a6ef24a6958b4fe805ccf617c0984e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468566"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043152"
 ---
 # <a name="share-microsoft-365-calendars-with-external-users"></a>Compartir calendarios de Microsoft 365 con usuarios externos
 
@@ -41,7 +41,7 @@ Puede habilitar el uso compartido de calendarios para todos los usuarios de la o
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Habilitación del uso compartido de calendarios mediante el Centro de administración de Microsoft 365
 
-1. En el centro de administración, vaya a **Configuración** \> **Configuración** de la organización y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Calendario**.
+1. Inicie sesión como **administrador global** en el centro de administración, vaya a **Configuración** \> **configuración de la organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Calendario**.
   
 3. En la página **Calendario**, elija si desea permitir que los usuarios compartan sus calendarios con personas ajenas a la organización que tengan Microsoft 365 o Exchange. Elija si desea permitir que los usuarios anónimos (usuarios sin credenciales) accedan a los calendarios a través de una invitación por correo electrónico.
 
@@ -57,7 +57,25 @@ Actualmente no se admite la sincronización instantánea para compartir fuera de
 
 ## <a name="invite-people-to-access-calendars"></a>Invitar a personas a acceder a los calendarios
 
-Una vez habilitado el uso compartido, los propietarios del calendario pueden ampliar las invitaciones a usuarios específicos. Para obtener instrucciones, consulte [Uso compartido del calendario en Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+Una vez habilitado el uso compartido, los propietarios del calendario pueden ampliar las invitaciones a usuarios específicos.
+
+1. Abra [Outlook en la Web](https://outlook.office365.com).
+
+2. En la parte superior de la página, seleccione el iniciador de aplicaciones y seleccione **Calendario**. De forma predeterminada, el calendario principal se denomina "Calendario". Si ha creado otros calendarios, puede seleccionar uno de ellos para compartirlo en su lugar. No se pueden compartir calendarios propiedad de otras personas.
+
+3. Escriba el nombre o la dirección de correo electrónico de la persona con la que desea compartir el calendario en el cuadro **Enviar una invitación para compartir en el correo electrónico** .
+
+4. Elija la cantidad de información que desea que vea esta persona:
+
+     - **Puede ver cuando estoy ocupado** permite que la persona vea cuando está ocupado, pero no incluye detalles como la ubicación del evento.
+
+     - **Puede ver los títulos y las ubicaciones** que permite a la persona ver cuándo está ocupado, así como el título y la ubicación de los eventos.
+
+     - **Puede ver todos los detalles** para que la persona vea todos los detalles de los eventos.
+
+     - **Puede editar** para que la persona vea todos los detalles de los eventos y edite el calendario (solo disponible cuando se comparte con personas de su organización).
+
+5. Seleccione **Compartir**. 
 
 ## <a name="related-content"></a>Contenido relacionado
 

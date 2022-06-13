@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
-ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097126"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018127"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -200,7 +200,7 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
 
 - En algunas ocasiones, un usuario puede tener un buzón activo y uno inactivo con la misma dirección SMTP. En ese caso, solo se buscarán los buzones específicos que seleccione como ubicaciones en una búsqueda de contenido. Es decir, si agrega el buzón de un usuario a una búsqueda, no dé por sentado que se buscará tanto en el buzón activo como el inactivo. Solo se buscará en el buzón que agregue explícitamente a la búsqueda.
 
-- Puede usar Security & PowerShell del centro de cumplimiento para crear una búsqueda de contenido para buscar en un buzón inactivo. Para ello, tiene que agregar previamente un punto (. Dirección de correo electrónico del propietario del buzón de correo. Por ejemplo, el comando siguiente crea una búsqueda de contenido que busca en un buzón inactivo con la dirección de correo electrónico pavelb@contoso.onmicrosoft.com:
+- Puede usar Security & Compliance PowerShell para crear una búsqueda de contenido para buscar en un buzón inactivo. Para ello, tiene que agregar previamente un punto (. Dirección de correo electrónico del propietario del buzón de correo. Por ejemplo, el comando siguiente crea una búsqueda de contenido que busca en un buzón inactivo con la dirección de correo electrónico pavelb@contoso.onmicrosoft.com:
 
    ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true

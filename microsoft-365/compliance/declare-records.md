@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286064"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016820"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -43,7 +43,7 @@ Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas 
 
 De forma predeterminada, la opción de etiqueta de retención para marcar contenido como un registro normativo no se muestra en el asistente de etiquetas de retención. Para mostrar esta opción, primero tiene que ejecutar un comando de PowerShell:
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365.](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Ejecute el siguiente cmdlet:
 

@@ -17,16 +17,16 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144847"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043771"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -50,7 +50,7 @@ Si es un usuario individual, puede habilitar ambos complementos por sí mismo.
 
 Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de informe y el complemento De suplantación de identidad de informe para su organización. Ambos complementos ya están disponibles a través de [la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Tanto el complemento mensaje de informe como el complemento de suplantación de identidad de informe funcionan con la mayoría de las suscripciones Microsoft 365 y los siguientes productos:
   - Outlook en la Web
@@ -59,7 +59,7 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
   - Outlook incluye con aplicaciones de Microsoft 365 para Enterprise
   - Outlook aplicación para iOS y Android
 
-- Ambos complementos no están disponibles para buzones compartidos.
+- Ambos complementos no están disponibles para buzones compartidos, de grupo o delegados (los complementos se atenuarán).
 
 - Ambos complementos no están disponibles para los buzones de correo de Exchange locales.
 

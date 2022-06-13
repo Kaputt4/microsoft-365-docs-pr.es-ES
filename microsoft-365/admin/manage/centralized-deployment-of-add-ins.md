@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093776"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043316"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -39,7 +39,7 @@ Implementación centralizada proporciona las siguientes ventajas:
 - Cuando se inicia la aplicación de Office pertinente, el complemento se descarga automáticamente. Si el complemento admite comandos de complemento, el complemento aparece automáticamente en la cinta de opciones dentro de la aplicación Office.
 - Los complementos ya no aparecen para los usuarios si el administrador desactiva o elimina el complemento, o si el usuario se quita de Azure Active Directory o de un grupo al que está asignado el complemento.
 
-La implementación centralizada admite tres plataformas de escritorio Windows, Mac y aplicaciones de Office en línea. La implementación centralizada también admite iOS y Android (solo complementos móviles Outlook).
+La implementación centralizada admite tres plataformas de escritorio Windows, Mac y aplicaciones de Office en línea. La implementación centralizada también admite iOS y Android (solo complementos móviles de Outlook).
 
 Un complemento puede tardar hasta 24 horas en aparecer para el cliente para todos los usuarios.
 
@@ -55,7 +55,7 @@ La implementación centralizada no es compatible con lo siguiente:
 - Implementación de complementos en un buzón local de Exchange
 - Implementación de complemento a SharePoint
 - aplicaciones de Teams
-- Implementación de complementos de modelo de objetos de componente (COM) o Visual Studio Tools para Office (VSTO).
+- Implementación de complementos de modelo de objetos componentes (COM) o Visual Studio Tools para Office (VSTO).
 - Implementaciones de Microsoft 365 que no incluyen Exchange Online como SKU: Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para Enterprise.
 
 ### <a name="office-requirements"></a>Requisitos de Office
@@ -124,6 +124,8 @@ Cuando la herramienta completa el proceso, genera un archivo de salida en format
 - Office activado: si Office está activado
 - Buzón compatible: si están en un buzón habilitado para OAuth
 
+Si los informes de Microsoft 365 muestran nombres de usuario anónimos en lugar de nombres de usuario reales, corrija este problema cambiando la configuración de informes en Centro de administración de Microsoft 365. Para ver los pasos detallados, consulte [Microsoft 365 informes muestran nombres de usuario anónimos en lugar de nombres de usuario reales](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
+
 > [!NOTE]
 > No se admite la autenticación multifactor cuando se usa el módulo de PowerShell de implementación central. El módulo solo funciona con la autenticación básica.
 
@@ -158,7 +160,7 @@ Si usted o los usuarios encuentran problemas para cargar el complemento mientras
 
 |Plataforma|Información de depuración|
 |---|---|
-|Office|Registros Charles/Fiddler <br/> Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id)) <br/> CorrelationID. Vea el origen de una de las páginas de office, busque el valor de Identificador de correlación y envíelo para admitirlo:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|Oficina|Registros Charles/Fiddler <br/> Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id)) <br/> CorrelationID. Vea el origen de una de las páginas de office, busque el valor de Identificador de correlación y envíelo para admitirlo:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
 |Clientes enriquecidos (Windows y Mac)|Registros Charles/Fiddler <br/> Números de compilación de la aplicación cliente (preferiblemente como captura de pantalla de **archivo o cuenta**)|
 
 ## <a name="related-content"></a>Contenido relacionado

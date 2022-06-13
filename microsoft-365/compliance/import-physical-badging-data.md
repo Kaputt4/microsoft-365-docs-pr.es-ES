@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos del sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077972"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044024"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
 
@@ -55,11 +55,11 @@ La configuración de un conector de badging físico consta de las siguientes tar
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción para la carga json que contiene datos físicos incorrectos. Durante la creación de esta aplicación Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción para la carga json que contiene datos físicos incorrectos. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD identificador de aplicación (también denominado *id. de aplicación* o *id. de cliente*)
+- Identificador de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente*)
 
-- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
+- Secreto de aplicación de Azure AD (también denominado *secreto de cliente*)
 
 - Id. de inquilino (también denominado *id. de directorio*)
 
@@ -77,7 +77,7 @@ El archivo JSON debe cumplir la definición de esquema requerida por el conector
 |AssetId|Identificador de referencia del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|Marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|Cadena|
+|AccessStatus|Valor de `Success` o `Failed`|String|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema necesario:
@@ -199,9 +199,9 @@ Después de ejecutar el script, el archivo JSON que contiene los datos físicos 
 
    |Parámetro|Descripción|
    |---|---|
-   |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el tenantId de su organización en la hoja **Información general** del centro de administración de Azure AD. Esto se usa para identificar su organización.|
-   |appId|Este es el identificador de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta acceder a la organización Microsoft 365.|
-   |appSecret|Este es el secreto de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
+   |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el tenantId de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
+   |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización Microsoft 365.|
+   |appSecret|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
    |jobId|Este es el id. de trabajo del conector de badging físico que creó en el paso 3. Esto se usa para asociar los datos físicos incorrectos que se insertan en la nube de Microsoft con el conector de badging físico.|
    |JsonFilePath|Esta es la ruta de acceso del archivo en el equipo local (la que se usa para ejecutar el script) del archivo JSON que creó en el paso 2. Este archivo debe seguir el esquema de ejemplo descrito en el paso 3.|
    |||
@@ -233,7 +233,7 @@ Después de crear el conector de badging físico e insertar los datos físicos i
 
    ![El archivo de registro del conector de badging físico muestra el número de objetos del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   El campo **RecordsSaved** indica el número de objetos en el archivo JSON que se cargó. Por ejemplo, si el archivo JSON contiene cuatro objetos, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todos los objetos del archivo JSON.
+   El campo **RecordsSaved** indica el número de registros en el archivo JSON que se cargaron. Por ejemplo, si el archivo JSON contiene cuatro registros, el valor de los campos **RecordsSaved** es 4 si el script cargó correctamente todos los registros en el archivo JSON. El campo **RecordsSkipped** indica el número de registros en el archivo JSON que se omitieron. Antes de cargar registros en el archivo JSON, se validarán los identificadores de correo electrónico de los registros. Se omitirá cualquier registro con un identificador de correo electrónico no válido y se mostrará el identificador de correo electrónico correspondiente en el campo **EmailIdsNotSaved**.
 
 Si no ha ejecutado el script en el paso 4, se muestra un vínculo para descargar el script en **Última importación**. Puede descargar el script y, a continuación, seguir los pasos del paso 4 para ejecutarlo.
 

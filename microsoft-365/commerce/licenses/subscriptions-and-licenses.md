@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependerán de la Microsoft 365 producto que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 05/12/2022
-ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403236"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043423"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias en Microsoft 365 para empresas
 
-Al comprar una suscripción a Microsoft 365 para empresas, se registra para obtener un conjunto de aplicaciones y servicios que paga mensualmente o anualmente. Las aplicaciones y servicios que reciba como parte de su suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que viene con cada producto en la [página Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+Al comprar una suscripción a Microsoft 365 para empresas, se registra para obtener un conjunto de aplicaciones y servicios que paga mensualmente o anualmente. Las aplicaciones y servicios que reciba como parte de su suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que viene con cada producto en la [página Microsoft 365 para pequeñas y medianas empresas](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Después de comprar una suscripción, crea cuentas para los usuarios de su organización y, a continuación, asigna una licencia a cada persona. A medida que cambian las necesidades de la organización, puede comprar más licencias para dar cabida a nuevas personas o reasignar licencias a otros usuarios cuando alguien deje la organización.
 
@@ -55,10 +55,10 @@ Si su suscripción incluye cualquiera de los siguientes productos, cada persona 
 En la tabla siguiente, se muestra una lista con lo que sucede automáticamente al asignar una licencia a un usuario:
   
 |Si la suscripción tiene este servicio|Esto sucede automáticamente|
-|:-----|:-----|
-|Exchange Online|Se crea un buzón para el usuario. <br/> Para obtener información sobre el Acuerdo de Nivel de Servicio para que esta tarea se complete, consulte ["Configuración..." mensajes en el Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|---|---|
+|Exchange Online|Se crea un buzón para el usuario. <br/> Para obtener información sobre el Acuerdo de Nivel de Servicio para que esta tarea se complete, consulte ["Configuración..." mensajes en el Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.|
-|Skype Empresarial Online|La persona tiene acceso a las características asociadas a la licencia.|
+|Microsoft Teams|La persona tiene acceso a las características asociadas a la licencia.|
 |Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para negocios|La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
@@ -74,7 +74,7 @@ No es necesario asignar licencias a buzones de recursos, buzones de sala y buzon
 Los distintos tipos de administradores pueden trabajar con las licencias de diferentes maneras, dependiendo de sus roles. Consulte la tabla siguiente para ver un resumen de las opciones más habituales. Para obtener una lista completa de los roles y los privilegios del administrador, vea [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   
 |Rol de administrador|Asignación de una licencia|Anulación de la asignación de una licencia|Comprar más licencias|Eliminar una cuenta|
-|:-----|:-----|:-----|:-----|:-----|
+|---|:---:|:---:|:---:|:---:|
 |Administrador de facturación|No|No|Sí|No|
 |Administrador global|Sí|Sí|Sí|Sí|
 |Administrador de licencias|Sí|Sí|No|No|

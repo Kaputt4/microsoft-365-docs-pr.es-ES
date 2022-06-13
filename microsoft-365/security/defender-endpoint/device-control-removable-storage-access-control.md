@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/06/2022
-ms.openlocfilehash: 335dd72bcbdee469f1e0b1c396c934c94d0339fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013868"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043641"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión control de dispositivo Storage Access Control extraíble
 
@@ -149,116 +149,144 @@ Antes de empezar a usar la Storage Access Control extraíble, debe confirmar la 
 Para la implementación de directivas en Intune, la cuenta debe tener permisos para crear, editar, actualizar o eliminar perfiles de configuración de dispositivo. Puede crear roles personalizados o usar cualquiera de los roles integrados con estos permisos.
 
 - Rol de administrador de perfiles y directivas
-
 - Rol personalizado con los permisos Crear/Editar/Actualizar/Leer/Eliminar/Ver informes activados para los perfiles de configuración de dispositivos
-
 - Administrador global
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Implementación de Storage Access Control extraíbles mediante Intune OMA-URI
 
 Vaya a Microsoft Endpoint Manager centro de administración ()><https://endpoint.microsoft.com/>**Dispositivos > Crear perfil > Plataforma: Windows 10 y versiones posteriores, Tipo de perfil: Plantillas > Personalizado**
 
-1. Habilitar o deshabilitar Storage Access Control extraíbles (RSAC):<br> Puede habilitar Storage Access Control extraíbles de la siguiente manera: 
-    - En **Configuración personalizada >**, haga clic en **Agregar**.
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **Habilitar RSAC** 
+1. Habilitar o deshabilitar Storage Access Control extraíbles (RSAC):
 
-        - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+   Puede habilitar Storage Access Control extraíbles de la siguiente manera:
 
-        - **Tipo de datos** como **entero**
-       
-        - **Valor** como **1**
-        
-           `Disable: 0` `Enable: 1`
+   - En **Configuración personalizada >**, haga clic en **Agregar**.
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **Habilitar RSAC**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+     - **Tipo de datos** como **entero**
+     - **Valor** como **1**
 
-        - Haga clic en **Guardar**.
-    
-    :::image type="content" source="images/enable-rsac.png" alt-text="Captura de pantalla de la habilitación de la directiva de Storage Access Control extraíble" lightbox="images/enable-rsac.png":::
-      
-2. Establecer aplicación predeterminada:<br> 
-    Puede establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva. <br> 
-    Por ejemplo, tiene la directiva Denegar o Permitir para RemovableMediaDevices, pero no tiene ninguna directiva para CdRomDevices o WpdDevices. Establezca Denegación predeterminada a través de esta directiva y, a continuación, se bloqueará el acceso de lectura, escritura y ejecución a CdRomDevices o WpdDevices. 
+       `Disable: 0`
+       `Enable: 1`
 
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **denegación predeterminada**
-        - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - Haga clic en **Guardar**.
 
-        - **Tipo de datos** como **entero**
-        
-        - **Valor** como **1** o **2**
-        
-          `DefaultEnforcementAllow = 1`
-          `DefaultEnforcementDeny = 2`
-        - Haga clic en **Guardar**.
-    
-    :::image type="content" source="images/default-deny.png" alt-text="Captura de pantalla de la configuración de La aplicación predeterminada como Denegar" lightbox="images/default-deny.png":::    
+   :::image type="content" source="images/enable-rsac.png" alt-text="Captura de pantalla de la habilitación de la directiva de Storage Access Control extraíble" lightbox="images/enable-rsac.png":::
 
-3. Auditar denegación predeterminada:<br> Puede crear una directiva de auditoría para denegar predeterminada de la siguiente manera:
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **denegación predeterminada de auditoría**
-        - **OMA-URI** como     
-          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
-         :::image type="content" source="images/audit-default-deny-1.png" alt-text="Captura de pantalla de la creación de la directiva de denegación predeterminada de auditoría" lightbox="images/audit-default-deny-1.png":::
-        - **Tipo de datos** como **cadena (archivo XML)**
-        - **XML personalizado** como archivo **de Deny.xmlpredeterminado de auditoría** . <br>
-            Ruta de acceso del archivo XML: [mdatp-devicecontrol/Audit Default Deny.xml en main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
-            <br>Use los siguientes datos XML para crear la directiva de auditoría para la denegación predeterminada:
+2. Establecer aplicación predeterminada:
 
-            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Captura de pantalla del archivo xml de denegación predeterminado de auditoría":::
-        
-   
-4. ReadOnly - Group: puede crear un grupo de almacenamiento extraíble con acceso ReadOnly de la siguiente manera:
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **cualquier grupo de Storage extraíble**
-        - **OMA-URI** como   
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
-        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Captura de pantalla de la creación de un grupo de Storage extraíble" lightbox="images/any-removable-storage-group.png":::
-        - **Tipo de datos** como **cadena (archivo XML)**
-        - **XML personalizado** como **cualquier archivo de Storage extraíble y CD-DVD y WPD Group.xml** <br>
-            Ruta de acceso del archivo XML: [mdatp-devicecontrol/Any Removable Storage and CD-DVD and WPD Group.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)<br>
-            Use los siguientes datos XML para crear "Cualquier Storage extraíble y CD-DVD y grupo WPD" con acceso ReadOnly:
-       
-           :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Captura de pantalla del archivo xml de grupo de solo lectura":::
-      
-    
-5. ReadOnly : directiva: puede crear una directiva ReadOnly y aplicarla al grupo de almacenamiento extraíble ReadOnly para permitir la actividad de lectura de la siguiente manera:
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **Permitir actividad de lectura**
-        - **OMA-URI** como   `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-          :::image type="content" source="images/allow-read-activity.png" alt-text="captura de pantalla de la directiva Permitir actividad de lectura" lightbox= "images/allow-read-activity.png":::
-        - **Tipo de datos** como **cadena (archivo XML)**
-        - **XML personalizado** como **permitir Read.xml**  archivo <br>
-            Ruta de acceso del archivo XML: [mdatp-devicecontrol/Allow Read.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)<br>
-            Use los siguientes datos XML para crear la directiva ReadOnly y aplicarlos al grupo de almacenamiento extraíble ReadOnly: :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Captura de pantalla del archivo xml de directiva de solo lectura":::
-     
+   Puede establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva.
+
+   Por ejemplo, tiene la directiva Denegar o Permitir para RemovableMediaDevices, pero no tiene ninguna directiva para CdRomDevices o WpdDevices. Establezca Denegación predeterminada a través de esta directiva y, a continuación, se bloqueará el acceso de lectura, escritura y ejecución a CdRomDevices o WpdDevices.
+
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **denegación predeterminada**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - **Tipo de datos** como **entero**
+     - **Valor** como **1** o **2**
+
+       `DefaultEnforcementAllow = 1`
+       `DefaultEnforcementDeny = 2`
+
+     - Haga clic en **Guardar**.
+
+   :::image type="content" source="images/default-deny.png" alt-text="Captura de pantalla de la configuración de La aplicación predeterminada como Denegar" lightbox="images/default-deny.png":::
+
+3. Auditar denegación predeterminada:
+
+   Puede crear una directiva de auditoría para denegar predeterminada de la siguiente manera:
+
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **denegación predeterminada de auditoría**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Captura de pantalla de la creación de la directiva de denegación predeterminada de auditoría" lightbox="images/audit-default-deny-1.png":::
+
+     - **Tipo de datos** como **cadena (archivo XML)**
+     - **XML personalizado** como archivo **de Deny.xmlpredeterminado de auditoría** .
+
+       Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
+
+       Use los siguientes datos XML para crear la directiva de auditoría para la denegación predeterminada:
+
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Captura de pantalla del archivo xml de denegación predeterminado de auditoría":::
+
+4. ReadOnly : grupo:
+
+   Puede crear un grupo de almacenamiento extraíble con acceso ReadOnly de la siguiente manera:
+
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **cualquier grupo de Storage extraíble**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Captura de pantalla de la creación de un grupo de Storage extraíble" lightbox="images/any-removable-storage-group.png":::
+
+     - **Tipo de datos** como **cadena (archivo XML)**
+       - **XML personalizado** como **cualquier archivo de Storage extraíble y CD-DVD y WPD Group.xml**
+
+         Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+
+         Use los siguientes datos XML para crear "Cualquier Storage extraíble y CD-DVD y grupo WPD" con acceso ReadOnly:
+
+         :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Captura de pantalla del archivo xml de grupo de solo lectura":::
+
+5. ReadOnly: directiva:
+
+   Puede crear una directiva ReadOnly y aplicarla al grupo de almacenamiento extraíble ReadOnly para permitir la actividad de lectura como se indica a continuación:
+
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **Permitir actividad de lectura**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+
+       :::image type="content" source="images/allow-read-activity.png" alt-text="Captura de pantalla de la directiva Permitir actividad de lectura" lightbox= "images/allow-read-activity.png":::
+
+     - **Tipo de datos** como **cadena (archivo XML)**
+     - **XML personalizado** como **permitir Read.xml**  archivo
+
+       Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+
+       Use los siguientes datos XML para crear la directiva ReadOnly y aplicarlos al grupo de almacenamiento extraíble ReadOnly:
+
+       :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Captura de pantalla del archivo xml de directiva de solo lectura":::
+
 6. Crear grupo para medios permitidos: puede crear un grupo de medios permitido como se indica a continuación:
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **grupo de USB aprobados**
-        - **OMA-URI** como     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
-    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Captura de pantalla de la creación de un grupo de USB aprobados" lightbox="images/create-group-allowed-medias.png"::: 
-        - **Tipo de datos** como **cadena (archivo XML)** 
-        - **XML personalizado** como **usb aprobado Group.xml**  archivo <br>
-            Ruta de acceso del archivo XML: [mdatp-devicecontrol/Approved USBs Group.xml en main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)<br>
-            Use los siguientes datos XML para crear un grupo de medios permitido: :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Captura de pantalla de la creación de un grupo para el archivo xml de medios permitidos":::
-      
-   
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **grupo de USB aprobados**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+
+       :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Captura de pantalla de la creación de un grupo de USB aprobados" lightbox="images/create-group-allowed-medias.png":::
+
+     - **Tipo de datos** como **cadena (archivo XML)**
+     - **XML personalizado** como **usb aprobado Group.xml** archivo
+
+       Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
+
+       Use los siguientes datos XML para crear un grupo de medios permitido:
+
+       :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Captura de pantalla de la creación de un grupo para el archivo xml de medias permitido":::
+
 7. Crear directiva para permitir el grupo USB aprobado: puede crear una directiva para permitir el grupo USB aprobado de la siguiente manera:
-    - En el panel **Agregar fila** , escriba:
-        - **Nombre** como **Permitir acceso e Información de archivo de auditoría**
-        - **OMA-URI** como     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
-    :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Captura de pantalla de Permitir acceso y auditar la información del archivo" lightbox= "images/allow-access-audit-file-information-1.png":::
-        - **Tipo de datos** como **cadena (archivo XML)** 
-        - **XML personalizado** como **Permitir acceso completo y auditar file.xml**  archivo <br>
-            Ruta de acceso del archivo XML: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
-            Use los siguientes datos XML para crear una directiva que permita el grupo USB aprobado: :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Captura de pantalla de la creación de la directiva para permitir el archivo XML de grupo USB aprobado":::
-      
-           ¿Qué significa "47" en la directiva? <br> 
-           Es 9 + 2 + 36 = 47: <br>
-           Acceso de lectura: 1+8 = 9 <br>
-           Acceso de escritura: nivel de disco 2 <br>
-           Ejecutar: 4 + 32 = 36
+   - En el panel **Agregar fila** , escriba:
+     - **Nombre** como **Permitir acceso e Información de archivo de auditoría**
+     - **OMA-URI** como `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+
+       :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Captura de pantalla de Permitir acceso y auditar la información del archivo" lightbox= "images/allow-access-audit-file-information-1.png":::
+
+     - **Tipo de datos** como **cadena (archivo XML)**
+     - **XML personalizado** como **Permitir acceso completo y auditar file.xml**  archivo
+
+       Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml>
+
+       Use los siguientes datos XML para crear una directiva que permita el grupo USB aprobado:
+
+       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Captura de pantalla de la creación de una directiva para permitir el archivo XML de grupo USB aprobado":::
+
+       ¿Qué significa "47" en la directiva? Es 9 + 2 + 36 = 47:
+
+       - Acceso de lectura: 1 + 8 = 9.
+       - Acceso de escritura: nivel de disco 2.
+       - Ejecutar: 4 + 32 = 36.
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Implementación y administración de directivas mediante Intune interfaz de usuario
 
@@ -274,68 +302,102 @@ Antes de empezar a usar la Storage Access Control extraíble, debe confirmar la 
 
 ### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Implementación de Storage Access Control extraíbles mediante directiva de grupo
 
-1. Habilitar o deshabilitar Storage Access Control extraíbles: <br> Puede habilitar la Storage Access Control extraíble (RSAC) como se indica a continuación:<br> 
-    - Vaya a **Configuración del equipo > Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Características > control de dispositivo**
-    - En la ventana **Control de dispositivos** , seleccione **Habilitado**.
-      
-    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Captura de pantalla de habilitación de RSAC mediante directiva de grupo " lightbox="images/enable-rsac-gp.png":::
-      
-2. Establecer aplicación predeterminada: <br> 
-    Puede establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva como se indica a continuación: 
-    - Vaya a **Configuración del equipo > Plantillas administrativas > Windows componentes > Antivirus de Microsoft Defender > Características > Control de dispositivos > Seleccionar aplicación predeterminada del control de dispositivos**
+1. Habilitar o deshabilitar Storage Access Control extraíbles:
 
-    - En la ventana **Seleccionar aplicación predeterminada del control de dispositivos** , seleccione **Denegar predeterminado**:
-    
-     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Captura de pantalla de la configuración de Aplicación predeterminada = Denegar mediante directiva de grupo" lightbox="images/set-default-enforcement-deny-gp.png":::    
+   Puede habilitar la Storage Access Control extraíble (RSAC) como se indica a continuación:
 
-3. Auditar denegación predeterminada: <br> Use los siguientes datos XML para crear la directiva de auditoría para la denegación predeterminada:
-    
-    :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Captura de pantalla de los datos xml de denegación predeterminados de auditoría":::
-      
-  
-4. ReadOnly : grupo: <br>
+   - Vaya a **Configuración del equipo > Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Características > control de dispositivo**
+   - En la ventana **Control de dispositivos** , seleccione **Habilitado**.
+
+   :::image type="content" source="images/enable-rsac-gp.png" alt-text="Captura de pantalla de habilitación de RSAC mediante directiva de grupo " lightbox="images/enable-rsac-gp.png":::
+
+2. Establecer aplicación predeterminada:
+
+   Puede establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva como se indica a continuación:
+
+   - Vaya a **Configuración del equipo > Plantillas administrativas > Windows componentes > Antivirus de Microsoft Defender > Características > Control de dispositivos > Seleccionar aplicación predeterminada del control de dispositivos**
+
+   - En la ventana **Seleccionar aplicación predeterminada del control de dispositivos** , seleccione **Denegar predeterminado**:
+
+   :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Captura de pantalla de la configuración de Aplicación predeterminada = Denegar mediante directiva de grupo" lightbox="images/set-default-enforcement-deny-gp.png":::
+
+3. Auditar denegación predeterminada:
+
+   Use los siguientes datos XML para crear la directiva de auditoría para la denegación predeterminada:
+
+   :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Captura de pantalla de los datos xml de denegación predeterminados de auditoría":::
+
+4. ReadOnly : grupo:
+
    Use los siguientes datos XML para crear un grupo de almacenamiento extraíble con acceso ReadOnly:
- 
+
    :::image type="content" source="images/read-only-group-gp.png" alt-text="Captura de pantalla de datos xml de grupo de almacenamiento extraíble de solo lectura":::
-      
-    
-5. ReadOnly: directiva: <br> Use los siguientes datos XML para crear la directiva ReadOnly y aplicarlos al grupo de almacenamiento extraíble ReadOnly para permitir la actividad de lectura:
-  
+
+5. ReadOnly: directiva:
+
+   Use los siguientes datos XML para crear la directiva ReadOnly y aplicarlos al grupo de almacenamiento extraíble ReadOnly para permitir la actividad de lectura:
+
     :::image type="content" source="images/read-only-policy-gp.png" alt-text="Captura de pantalla de datos xml de directiva de solo lectura" lightbox="images/read-only-policy-gp.png":::
-        
-   
-6. Crear grupo para medios permitidos: <br> Use los siguientes datos XML para crear un grupo de medios permitidos de almacenamiento extraíble:
-    
+
+6. Crear grupo para medios permitidos:
+
+   Use los siguientes datos XML para crear un grupo de medios permitidos de almacenamiento extraíble:
+
    :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Captura de pantalla de los datos xml para crear un grupo para los medios permitidos" lightbox="images/create-group-allowed-medias-gp.png":::
-      
-    
-7. Cree una directiva para permitir el grupo USB aprobado: <br> Use los siguientes datos XML para crear una directiva que permita el grupo USB aprobado:
-    
-    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Captura de pantalla de los datos XML para crear la directiva para permitir que el grupo USB aprobado use directiva de grupo" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
-      
-   ¿Qué significa "47" en la directiva? <br> Es 9 + 2 + 36 = 47: <br>
-   Acceso de lectura: 1+8 = 9 <br>
-   Acceso de escritura: nivel de disco 2 <br>
-   Ejecutar: 4 + 32 = 36
 
-8. Combine grupos en un archivo XML: <br> Puede combinar grupos de directivas de control de dispositivos en un archivo XML como se indica a continuación:<br> 
-    - Vaya a **Configuración del equipo > Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Control de dispositivos > Definir grupos**
-     de directivas :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="de control de dispositivos Captura de pantalla de Definir grupos de directivas de control de dispositivos" lightbox="images/define-device-control-policy-grps-gp.png":::
-    - En la ventana **Definir grupos de directivas de control de dispositivos** , escriba la ruta de acceso del archivo que contiene los datos de los grupos XML. <br>
-    Ruta de acceso del archivo XML: [mdatp-devicecontrol/Demo_Groups.xml en main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)<br>
-    A continuación se muestra el esquema xml de los grupos de directivas de control de dispositivos: :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Captura de pantalla de la combinación de grupos en un archivo XML":::
+7. Cree una directiva para permitir el grupo USB aprobado:
 
-9. Combine directivas en un archivo XML: <br> Puede combinar reglas de directiva de control de dispositivos en un archivo XML como se indica a continuación:<br> 
-    - Vaya a **Configuración del equipo > Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Control de dispositivos > Definir reglas**
-     de directiva de control :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="de dispositivos Captura de pantalla de definir reglas de directiva de control de dispositivos" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
-    - En la ventana **Definir reglas de directiva de control de dispositivos** , seleccione **Habilitado** y escriba la ruta de acceso del archivo que contiene los datos de reglas XML. <br>
-    Ruta de acceso del archivo XML: [mdatp-devicecontrol/Demo_Policies.xml en main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml)<br>
-    A continuación se muestra el esquema xml de reglas de directiva de control de dispositivos: :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="Captura de pantalla de combinar directivas en un archivo XML":::
+   Use los siguientes datos XML para crear una directiva que permita el grupo USB aprobado:
 
-10. Establezca la ubicación de una copia del archivo (evidencia): <br>Si desea tener una copia del archivo (evidencia) cuando se produce el acceso de escritura, tiene que establecer la ubicación donde el sistema puede guardar la copia.<br>
+   :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Captura de pantalla de los datos XML para crear la directiva para permitir que el grupo USB aprobado use directiva de grupo" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
+
+   ¿Qué significa "47" en la directiva? Es 9 + 2 + 36 = 47:
+
+   - Acceso de lectura: 1+8 = 9.
+   - Acceso de escritura: nivel de disco 2.
+   - Ejecutar: 4 + 32 = 36.
+
+8. Combine grupos en un archivo XML:
+
+   Puede combinar grupos de directivas de control de dispositivos en un archivo XML como se indica a continuación:
+
+   - Vaya a **Plantillas** \> administrativas **de configuración** \> del equipo **Windows componentes** \> **Antivirus de Microsoft Defender** \> **Control** \> de **dispositivos Definir grupos de directivas de control de dispositivos**.
+
+    :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Captura de pantalla de Definir grupos de directivas de control de dispositivos" lightbox="images/define-device-control-policy-grps-gp.png":::
+
+   - En la ventana **Definir grupos de directivas de control de dispositivos** , escriba la ruta de acceso del archivo que contiene los datos de los grupos XML.
+
+     Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
+
+     A continuación se muestra el esquema xml de los grupos de directivas de control de dispositivos:
+
+     :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Captura de pantalla de la combinación de grupos en un archivo XML":::
+
+9. Combine directivas en un archivo XML:
+
+   Puede combinar reglas de directiva de control de dispositivos en un archivo XML como se indica a continuación:
+
+   - Vaya a **Configuración del equipo > Plantillas administrativas > Windows componentes > Antivirus de Microsoft Defender > Control de dispositivos > Definir reglas de directiva de control de dispositivos**
+
+     :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Captura de pantalla de la definición de reglas de directiva de control de dispositivos" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
+
+   - En la ventana **Definir reglas de directiva de control de dispositivos** , seleccione **Habilitado** y escriba la ruta de acceso del archivo que contiene los datos de reglas XML.
+
+     Ruta de acceso del archivo XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml>
+
+     A continuación se muestra el esquema xml de reglas de directiva de control de dispositivos:
+
+    :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="Captura de pantalla de la combinación de directivas en un archivo XML":::
+
+10. Establezca la ubicación de una copia del archivo (evidencia):
+
+    Si desea tener una copia del archivo (evidencia) cuando se produce el acceso de escritura, tiene que establecer la ubicación donde el sistema puede guardar la copia.
+
     - Vaya a **Configuración del equipo > Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Control de dispositivos > Definir ubicación remota de datos de prueba de Control de dispositivos**.
-    - En la ventana **Definir ubicación remota de datos de evidencia de Control** de dispositivos, seleccione **Habilitado** y escriba la ruta de acceso de la carpeta del recurso compartido local o de red. <br>
-    :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Captura de pantalla de Definir ubicación remota de datos de evidencia de Control de dispositivos" lightbox="images/evidence-data-remote-location-gp.png":::
+
+    - En la ventana **Definir ubicación remota de datos de evidencia de Control** de dispositivos, seleccione **Habilitado** y escriba la ruta de acceso de la carpeta del recurso compartido local o de red.
+
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Captura de pantalla de Definir ubicación remota de datos de evidencia de Control de dispositivos" lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos de Storage Access Control extraíbles de Control de dispositivos en Microsoft Defender para punto de conexión
 
@@ -365,27 +427,27 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage 
+//information of file written to removable storage
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend Policy = tostring(parsed.Policy)
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaInstanceId = tostring(parsed.InstanceId)
 | extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend MediaProductId = tostring(parsed.ProductId)
+| extend MediaVendorId = tostring(parsed.VendorId)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
 | extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation)
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>¿Cómo generar GUID para el id. de grupo/PolicyRule Id/Entry Id?
 
@@ -395,9 +457,9 @@ Puede generar GUID a través de código abierto en línea o mediante PowerShell:
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>¿Cuáles son las limitaciones de directivas y medios de almacenamiento extraíbles?
 
-Ya sea desde el centro de administración de Microsoft Endpoint Manager (Intune) o a través de Microsoft Graph API, la llamada back-end se realiza a través de OMA-URI (GET para leer o PATCH para actualizar) y, por lo tanto, la limitación es la misma que cualquier perfil de configuración personalizada de OMA-URI en Microsoft, que es oficialmente de 350 000 caracteres para archivos XML. 
-    
-Por ejemplo, si necesita dos bloques de entradas por SID de usuario para "Permitir"/"Auditar permitidos" usuarios específicos y dos bloques de entradas al final para "Denegar", podrá administrar 2.276 usuarios. 
+Ya sea desde el centro de administración de Microsoft Endpoint Manager (Intune) o a través de Microsoft Graph API, la llamada back-end se realiza a través de OMA-URI (GET para leer o PATCH para actualizar) y, por lo tanto, la limitación es la misma que cualquier perfil de configuración personalizada de OMA-URI en Microsoft, que es oficialmente de 350 000 caracteres para archivos XML.
+
+Por ejemplo, si necesita dos bloques de entradas por SID de usuario para "Permitir"/"Auditar permitidos" usuarios específicos y dos bloques de entradas al final para "Denegar", podrá administrar 2.276 usuarios.
 
 ### <a name="why-does-the-policy-not-work"></a>¿Por qué la directiva no funciona?
 

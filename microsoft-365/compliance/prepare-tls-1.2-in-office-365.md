@@ -13,14 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760435"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044233"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Preparación para TLS 1.2 en Office 365 y Office 365 GCC
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>Resumen
 
@@ -30,7 +32,7 @@ La [implementación de TLS 1.0 de Microsoft](https://support.microsoft.com/help/
 
 Para obtener información acerca de cómo eliminar las dependencias de TLS 1.0 y 1.1, consulte el siguiente documento técnico: [Resolución del problema con TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 
-Después de actualizar a TLS 1.2, asegúrese de que Azure Front Door admite los conjuntos de cifrado que usa. Microsoft 365 y Azure Front Door tienen ligeras diferencias en la compatibilidad con conjuntos de cifrado. Para obtener más información, consulte [¿Cuáles son los conjuntos de cifrado actuales admitidos por Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
+Después de actualizar a TLS 1.2, asegúrese de que Azure Front Door admite los conjuntos de cifrado que usa. Microsoft 365 y Azure Front Door tienen ligeras diferencias en la compatibilidad con conjuntos de cifrado. Para obtener más información, consulte [¿Cuáles son los conjuntos de cifrado actuales admitidos por Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## <a name="more-information"></a>Más información
 

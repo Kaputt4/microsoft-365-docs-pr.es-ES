@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf11e60f3fce46926d297c97a44c7d494942d556
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271890"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014792"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
-La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir el uso de variantes de una cadena exacta, puede usar la *coincidencia configurable* para indicar a Microsoft 365 que omita mayúsculas y minúsculas y otros delimitadores.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir el uso de variantes de una cadena exacta, puede usar la *coincidencia configurable* para indicar a Microsoft Purview que omita mayúsculas y minúsculas y otros delimitadores.
 
 > [!IMPORTANT]
 > Use este procedimiento para modificar un esquema EDM y un archivo de datos existentes.
@@ -105,7 +107,7 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
     - \"
     - \,
 
-6. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
     > [!NOTE]
     > Si su organización ha configurado [Clave de cliente para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia exacta de datos usará automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
@@ -138,6 +140,6 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
 - [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Tipos de información confidencial personalizados](./sensitive-information-type-learn-about.md)
-- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

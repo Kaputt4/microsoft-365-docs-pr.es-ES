@@ -16,16 +16,16 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915981"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044392"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -85,18 +85,25 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
   > Las directivas de correo no deseado saliente no forman parte de las directivas de seguridad preestablecidas. La directiva de correo no deseado saliente predeterminada protege automáticamente a los miembros de las directivas de seguridad preestablecidas. O bien, puede crear directivas de correo no deseado de salida personalizadas para personalizar la protección de los miembros de las directivas de seguridad preestablecidas. Para obtener más información, consulte [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md).
 
 - **directivas de Microsoft Defender para Office 365**: esto incluye organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
-  - Las directivas contra suplantación de identidad en Microsoft Defender para Office 365 **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**, que incluyen:
+  - Las directivas contra suplantación de identidad en Defender para Office 365 **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**, que incluyen:
     - La misma [configuración de suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) que está disponible en las directivas de protección contra suplantación de identidad (EOP).
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Umbrales avanzados de phishing](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Caja fuerte Vincula directivas](set-up-safe-links-policies.md) denominadas **Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
   - [Caja fuerte directivas de datos adjuntos](set-up-safe-attachments-policies.md) **denominadas Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
 
-Puede aplicar protecciones EOP a usuarios diferentes de las protecciones de Microsoft Defender para Office 365.
+Puede aplicar protecciones EOP a usuarios diferentes de las protecciones de Defender para Office 365, o bien puede aplicar EOP y Defender para Office 365 a los mismos destinatarios.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Configuración de directivas en directivas de seguridad preestablecidas
 
 No se puede modificar la configuración de directiva en los perfiles de protección. Los valores de configuración de directiva de protección **estándar**, **estricta** y integrada se describen **en** [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
+
+> [!NOTE]
+> En Defender para Office 365 protecciones, debe identificar los remitentes para la [protección de suplantación de usuario](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) y los dominios internos o externos para la [protección de suplantación de dominio](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+>
+> Todos los dominios que posee ([dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) reciben automáticamente protección de suplantación de dominio en directivas de seguridad preestablecidas.
+>
+> Todos los destinatarios reciben automáticamente protección de suplantación de [la inteligencia del buzón de correo](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en las directivas de seguridad preestablecidas.
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Orden de precedencia de las directivas de seguridad preestablecidas y otras directivas
 
@@ -125,9 +132,9 @@ Por ejemplo, si existe una configuración de seguridad en **Protección estánda
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector global** .
 
-  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos _y_ permisos necesarios para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos _y_ permisos necesarios para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Use el portal de Microsoft 365 Defender para asignar directivas de seguridad preestablecidas estándar y estricta a los usuarios
 
@@ -135,26 +142,75 @@ Por ejemplo, si existe una configuración de seguridad en **Protección estánda
 
 2. En la página **Directivas de seguridad preestablecidas** , haga clic en **Administrar** en las secciones **Protección estándar** o **Protección estricta** .
 
-3. El asistente **Aplicar protección estándar** o **Aplicar protección estricta** se inicia en un control flotante. En la página **Protecciones EOP se aplican a** , identifique los destinatarios internos a los que se aplican [las protecciones EOP](#policies-in-preset-security-policies) (condiciones de destinatario):
-   - **Usuarios**
-   - **Grupos**
-   - **Dominios**
+3. El asistente **Aplicar protección estándar** o **Aplicar protección estricta** se inicia en un control flotante.
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   En la página **Aplicar Exchange Online Protection**, identifique los destinatarios internos a los que se aplican [las protecciones EOP](#policies-in-preset-security-policies) (condiciones de destinatario):
+   - **Todos los destinatarios**
+   - **Destinatarios específicos**:
+     - **Usuarios**
+     - **Grupos**
+     - **Dominios**
 
-   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+     Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+     Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+
+   - **Ninguna**
+
+   - **Excluir estos destinatarios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
 
    Cuando termine, haga clic en **Siguiente**.
 
-4. En Microsoft Defender para Office 365 organizaciones, se le llevará a la página **de Defender para Office 365 protecciones** para identificar los destinatarios internos a los que se aplican las [protecciones de Microsoft Defender para Office 365](#policies-in-preset-security-policies). a (condiciones de destinatario).
+   > [!NOTE]
+   > En las organizaciones sin Defender para Office 365, hacer clic en **Siguiente** le lleva a la página **Revisar**. Los pasos o páginas restantes antes de la página **Revisar** solo están disponibles en organizaciones con Defender para Office 365.
+
+4. En la página **Aplicar protección Defender para Office 365**, identifique los destinatarios internos a los que se aplican [las protecciones de Defender para Office 365](#policies-in-preset-security-policies) (condiciones de destinatario).
 
    La configuración y el comportamiento son exactamente iguales **que las protecciones de EOP que se aplican a** la página del paso anterior.
 
+   También puede seleccionar **Destinatarios seleccionados previamente** para usar los mismos destinatarios que seleccionó para la protección de EOP en la página anterior.
+
    Cuando termine, haga clic en **Siguiente**.
 
-5. En la página **Revisar y confirmar los cambios** , compruebe las selecciones y haga clic en **Confirmar**.
+5. En la página **Protección contra suplantación** , haga clic en **Siguiente**.
+
+6. En la página **Agregar direcciones de correo electrónico para marcar cuando los atacantes suplantan, agregue remitentes** internos y externos protegidos por la [protección de suplantación de usuario](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Todos los destinatarios reciben automáticamente protección de suplantación de [la inteligencia del buzón de correo](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en las directivas de seguridad preestablecidas.
+
+   Cada entrada consta de un nombre para mostrar y una dirección de correo electrónico. Escriba cada valor en los cuadros y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
+
+   Puede especificar un máximo de 350 usuarios y no puede especificar el mismo usuario en la configuración de protección de suplantación de usuario en varias directivas.
+
+   Para quitar una entrada existente de la lista, haga clic en ![Quitar al usuario del icono de protección contra suplantación.](../../media/m365-cc-sc-remove.png).
+
+   Cuando termine, haga clic en **Siguiente**.
+
+7. En la página **Agregar dominios para marcar cuando los atacantes suplantan** , agregue dominios internos y externos protegidos por la [protección de suplantación de dominio](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Todos los dominios que posee ([dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) reciben automáticamente protección de suplantación de dominio en directivas de seguridad preestablecidas.
+
+   Todos los remitentes de los dominios especificados están protegidos por la protección de suplantación de dominio.
+
+   Escriba el dominio en el cuadro y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
+
+   Para quitar una entrada existente de la lista, seleccione la entrada y, a continuación, haga clic en ![Quitar dominio del icono de protección contra suplantación.](../../media/m365-cc-sc-remove.png).
+
+   El número máximo de dominios que puede especificar para la protección de suplantación de dominio en todas las directivas contra suplantación de identidad es 50.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+8. En la página **Add trusted email addresses and domains to not flag as impersonation (Agregar dominios y direcciones de correo electrónico de confianza para no marcar como suplantación** ), escriba las direcciones de correo electrónico del remitente y los dominios que desea excluir de la protección de suplantación. Los mensajes de estos remitentes nunca se marcarán como un ataque de suplantación, pero los remitentes siguen estando sujetos a examen por otros filtros en EOP y Defender para Office 365.
+
+   Escriba la dirección de correo electrónico o el dominio en el cuadro y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
+
+   Para quitar una entrada existente de la lista, seleccione la entrada y, a continuación, haga clic en ![Quitar excepciones al icono de protección de suplantación.](../../media/m365-cc-sc-remove.png).
+
+   Cuando termine, haga clic en **Siguiente**.
+
+9. En la página **Revisar y confirmar esta directiva** , compruebe las selecciones y haga clic en **Confirmar**.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies"></a>Use el portal de Microsoft 365 Defender para modificar las asignaciones de directivas de seguridad preestablecidas estándar y estricta.
 
@@ -177,7 +233,7 @@ Por lo tanto, normalmente no se recomiendan excepciones a la directiva de seguri
    - **Grupos**
    - **Dominios**
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar exclusiones del icono de protección integrada.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
 

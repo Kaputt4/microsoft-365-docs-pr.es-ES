@@ -1,5 +1,5 @@
 ---
-title: Actualizar a un plan de negocio diferente
+title: Actualización a un plan de negocio diferente
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -19,120 +19,120 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: La forma más sencilla de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, la pestaña Actualizar no siempre es compatible.
+description: La manera más fácil de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, no siempre se admite la pestaña Actualizar.
 ms.date: 04/21/2021
-ms.openlocfilehash: 17e1a35d096762e1645fd4e7143935578cfc1a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329269"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042404"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
-Cuando cambie su empresa o necesite más características, puede actualizar los planes. La forma más sencilla de hacerlo es usar la **pestaña Actualizar** en el Centro de administración. Sin embargo, el uso **de la pestaña** Actualizar no se admite en todas las situaciones. En algunos casos, es posible que pueda cambiar los planes manualmente.
+Cuando su empresa cambia o necesita más características, puede actualizar los planes. La manera más fácil de hacerlo es usar la pestaña **Actualizar** en el Centro de administración. Sin embargo, el uso de la pestaña **Actualizar** no se admite en todas las situaciones. En algunos casos, es posible que pueda cambiar los planes manualmente.
 
 ## <a name="use-the-upgrade-tab"></a>Usar la pestaña Actualizar
 
-Cuando usa la **pestaña Actualizar** , se le dirige a través del proceso de compra de un nuevo plan. Todos los usuarios tienen asignadas automáticamente licencias en el nuevo plan y el plan anterior se cancela automáticamente.
+Cuando se usa la pestaña **Actualizar** , se le guía por el proceso de compra de un nuevo plan. A todos los usuarios se les asignan automáticamente licencias en el nuevo plan y su plan anterior se cancela automáticamente.
 
-1. En el Centro de administración, vaya a la **página Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus</a> productos.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> .
 2. Seleccione la suscripción que desea actualizar.
-3. En la página de detalles de la suscripción, seleccione **Actualizar**.
-4. Busque el plan al que desea actualizar y, a continuación, seleccione el **botón** Actualizar.
-5. Escribe el número de licencias que necesitas, elige si quieres pagar cada mes o durante todo el año y, a continuación, **selecciona Ir a la desprotección**.
+3. En la página de detalles de la suscripción, en **Detalles y actualizaciones del producto**, seleccione **Ver actualizaciones recomendadas para su organización**.
+4. Busque el plan al que desea actualizar y, a continuación, seleccione el botón **Actualizar** .
+5. Escriba el número de licencias que necesita, elija si desea pagar cada mes o por todo el año y, a continuación, seleccione **Ir a la compra**.
     > [!NOTE]
-    > Asegúrese de comprar suficientes licencias para cubrir todos los usuarios.
-6. En la página siguiente, compruebe la dirección **Vendida** a, la información **facturada** y **Los elementos en este orden**. Puede cambiar el método de pago predeterminado en este paso. Si necesita realizar cambios, seleccione **Cambiar** junto a la sección correspondiente.
+    > Asegúrese de comprar suficientes licencias para cubrir a todos los usuarios.
+6. En la página siguiente, compruebe la dirección **Vendido a** , la información **Facturada** a y **Elementos en este orden**. Puede cambiar el método de pago predeterminado en este paso. Si necesita realizar cambios, seleccione **Cambiar** junto a la sección aplicable.
 7. Cuando haya terminado, seleccione **Realizar pedido**.
 
-Al finalizar la desprotección, es posible que tarde unos minutos en finalizar la actualización. Podrá empezar a usar inmediatamente la nueva suscripción. Seleccione **Comprobar el estado de la** actualización para comprobar el progreso de la actualización. Se le notificará cuando se complete la actualización. La notificación se muestra en la **página Sus productos** , junto a la nueva suscripción.
+Cuando finalice la compra, puede tardar unos minutos en finalizar la actualización. Podrá empezar a usar inmediatamente la nueva suscripción. Seleccione **Comprobar estado de actualización** para comprobar el progreso de la actualización. Recibirá una notificación cuando se complete la actualización. La notificación se muestra en la página **Sus productos** , junto a la nueva suscripción.
 
 ## <a name="the-upgrade-tab-is-empty"></a>La pestaña Actualizar está vacía
 
-Si la **pestaña** Actualización está vacía, verá una explicación de por qué no puede actualizar en este momento. Puede intentar cambiar [los planes manualmente](change-plans-manually.md). Para obtener más información, vea [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
+Si la pestaña **Actualizar** está vacía, verá una explicación de por qué no se puede actualizar en este momento. Puede intentar [cambiar los planes manualmente](change-plans-manually.md). Para obtener más información, consulte [¿Por qué no puedo actualizar los planes?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>No veo el plan que quiero
 
-Al usar la **pestaña Actualizar** , los planes a los que puede actualizar se muestran en función de los servicios del plan actual. Solo puede usar la pestaña **Actualizar** para pasar a un plan que tenga los mismos servicios relacionados con datos o a una versión superior. Esto garantiza que los usuarios no pierdan datos relacionados con esos servicios durante el cambio.
+Al usar la pestaña **Actualizar** , los planes a los que puede actualizar se muestran en función de los servicios del plan actual. Solo puede usar la pestaña **Actualizar** para pasar a un plan que tenga los mismos servicios relacionados con los datos o a una versión superior. Esto garantiza que los usuarios no pierdan datos relacionados con esos servicios durante el cambio.
 
-Si desea pasar a un plan con menos servicios, puede cambiar los [planes manualmente](change-plans-manually.md) o llamar al soporte [técnico](../../admin/get-help-support.md) para obtener ayuda.
+Si desea pasar a un plan con menos servicios, puede [cambiar los planes manualmente](change-plans-manually.md) o [llamar al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
-## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Solo quiero actualizar algunos de mis usuarios. ¿Cómo puedo hacerlo?
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Solo quiero actualizar algunos de mis usuarios. Cómo hacer eso?
 
-Si solo quieres actualizar algunos usuarios a un plan diferente, pero necesitas comprar primero la nueva suscripción, consulta [Cambiar planes manualmente](change-plans-manually.md). Si ya tienes la suscripción a la que quieres actualizar usuarios, consulta [Mover usuarios a una suscripción diferente](move-users-different-subscription.md).
+Si solo desea actualizar algunos usuarios a otro plan, pero primero necesita comprar la nueva suscripción, consulte [Cambiar planes manualmente](change-plans-manually.md). Si ya tiene la suscripción a la que desea actualizar los usuarios, consulte [Traslado de usuarios a otra suscripción](move-users-different-subscription.md).
 
 ## <a name="why-some-changes-take-longer"></a>Por qué algunos cambios tardan más tiempo
 
-**Número de usuarios asignados:** Si tiene un gran número de usuarios asignados, llevará más tiempo realizar la actualización para moverlos al nuevo plan.
+**Número de usuarios asignados:** Si tiene un gran número de usuarios asignados, la actualización tardará más tiempo en moverlos al nuevo plan.
 
-**Comprobaciones de crédito al cambiar los planes:** Si paga por factura o alcanza un determinado nivel de costo, es posible que se requiera una comprobación de crédito. Una comprobación de crédito puede tardar hasta dos días laborables en completarse. Los usuarios tendrán acceso completo a su plan actual hasta que los mueva al nuevo. Recibirá una notificación si se requiere una comprobación de crédito.
+**Comprobaciones de crédito al cambiar de plan:** Si paga por factura o alcanza un determinado nivel de costo, es posible que se requiera una comprobación de crédito. Una comprobación de crédito puede tardar hasta dos días laborables en completarse. Los usuarios tendrán acceso completo a su plan actual hasta que los muevas al nuevo. Recibirá una notificación si se requiere una comprobación de crédito.
 
-## <a name="why-cant-i-upgrade-plans"></a>¿Por qué no puedo actualizar planes?
+## <a name="why-cant-i-upgrade-plans"></a>¿Por qué no puedo actualizar los planes?
 
-Si no ve ningún plan en la pestaña Actualizar,  significa que el plan no se puede actualizar automáticamente. En algunos casos, es posible que pueda resolver el problema para que pueda ver los planes disponibles para la actualización o, en su lugar, pueda actualizar o cambiar los planes manualmente.
+Si no ve ningún plan en la pestaña **Actualizar** , significa que el plan no se puede actualizar automáticamente. En algunos casos, es posible que pueda resolver el problema para que pueda ver los planes disponibles para la actualización, o puede actualizar o cambiar los planes manualmente, en su lugar.
 
-### <a name="why-are-there-no-plans-listed-to-upgrade"></a>¿Por qué no hay planes enumerados para actualizar?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>¿Por qué no aparece ningún plan para actualizar?
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Ahora no puede actualizar suscripciones porque tiene más usuarios que licencias
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Ahora no puede actualizar las suscripciones porque tiene más usuarios que licencias
 
-Para actualizar los planes automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../commerce/licenses/buy-licenses.md). Una vez resueltos los conflictos de licencias, debería ver los planes enumerados en la **pestaña** Actualizar. Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md) o llamar [al soporte técnico](../../admin/get-help-support.md).
+Para actualizar los planes automáticamente, a todos los usuarios se les deben asignar licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../commerce/licenses/buy-licenses.md). Después de resolver los conflictos de licencia, debería ver los planes que aparecen en la pestaña **Actualizar** . Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md) o [llamar al soporte técnico](../../admin/get-help-support.md).
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>No puede actualizar las suscripciones en este momento porque esta suscripción no está totalmente configurada o el servicio no está disponible.
 
-Por ejemplo, si uno de los servicios tiene un incidente, no podrá actualizar hasta que todos los servicios estén en buen estado. Para ver si hay problemas de estado de servicio o de aprovisionamiento, en el Centro de administración, vaya a la página **Estado** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">del servicio de</a> mantenimiento.
+Por ejemplo, si uno de los servicios tiene un incidente, no podrá actualizar hasta que todos los servicios estén en buen estado. Para ver si hay problemas de aprovisionamiento o mantenimiento del servicio, en el centro de administración, vaya a la página **Mantenimiento** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado del servicio</a>.
 
-Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si aún tiene un problema, llame [al soporte técnico](../../admin/get-help-support.md).
+Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, [llame al soporte técnico](../../admin/get-help-support.md).
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>No puede actualizar los planes porque otro plan está en proceso de actualización o está pendiente de una comprobación de crédito
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>No puede actualizar los planes porque otro plan está en proceso de actualización o está pendiente de una comprobación de crédito.
 
-Espere hasta que se haya completado la comprobación de crédito antes de actualizar los planes. Las comprobaciones de crédito pueden tardar hasta dos días laborables.
+Espere hasta que se complete la comprobación de crédito antes de actualizar los planes. Las comprobaciones de crédito pueden tardar hasta dos días laborables.
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Actualmente, esta suscripción no es apta para la actualización
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Actualmente, esta suscripción no es apta para actualizar
 
-Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar [al soporte técnico](../../admin/get-help-support.md).
+Puede [cambiar los planes manualmente](change-plans-manually.md) o [llamar al soporte técnico](../../admin/get-help-support.md).
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Veo un mensaje diferente de lo que se muestra aquí
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Veo un mensaje diferente al que aparece aquí
 
-Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar [al soporte técnico](../../admin/get-help-support.md).
+Puede [cambiar los planes manualmente](change-plans-manually.md) o [llamar al soporte técnico](../../admin/get-help-support.md).
 
-### <a name="additional-reasons-you-cant-upgrade"></a>Motivos adicionales por los que no puede actualizar
+### <a name="additional-reasons-you-cant-upgrade"></a>Motivos adicionales por los que no se puede actualizar
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Tiene dos o más planes para el mismo producto
 
-Solo puede usar la pestaña **Actualizar** si todos los usuarios se suscriben al mismo plan. Por ejemplo, si tiene dos Microsoft 365 Empresa Estándar, no podrá actualizar automáticamente uno de ellos a otro plan.
+Solo puede usar la pestaña **Actualizar** si todos los usuarios se suscriben al mismo plan. Por ejemplo, si tiene dos planes de Microsoft 365 Empresa Estándar, no podrá actualizar automáticamente uno de ellos a otro plan.
 
 #### <a name="you-have-a-prepaid-plan"></a>Tiene un plan de prepago.
 
-Si has pagado la suscripción por adelantado, es posible que puedas cambiar [los planes manualmente](change-plans-manually.md). Sin embargo, no recibirás un crédito por el tiempo sin usar restante en la suscripción actual si actualizas los planes antes de que expire el plan actual.
+Si ha pagado por su suscripción por adelantado, es posible que pueda [cambiar los planes manualmente](change-plans-manually.md). Sin embargo, no recibirá un crédito por el tiempo que queda sin usar en la suscripción actual si actualiza los planes antes de que expire el plan actual.
 
-También puede llamar [al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
+También puede [llamar al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>Tiene un plan para la administración pública o para una institución sin ánimo de lucro
 
-Si tiene un plan gubernamental o sin ánimo de lucro, puede cambiar los [planes manualmente](change-plans-manually.md) o llamar [al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
+Si tiene un plan gubernamental o sin fines de lucro, puede [cambiar los planes manualmente](change-plans-manually.md) o [llamar al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
-#### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>La suscripción desde la que desea actualizar tiene un problema temporal
+#### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>La suscripción desde la que desea actualizar tiene un problema temporal.
 
-Es posible que no vea ningún plan en la **pestaña** Actualizar porque el servicio está en proceso de actualizar un gran volumen de planes. Inténtelo de nuevo aproximadamente una hora después de su primer intento.
+Es posible que no vea ningún plan en la pestaña **Actualizar** porque el servicio está en proceso de actualizar un gran volumen de planes. Inténtelo de nuevo aproximadamente una hora después de su primer intento.
 
-#### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>El plan al que desea actualizar no es una opción compatible
+#### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>El plan al que desea actualizar no es una opción compatible.
 
-Al actualizar los planes, los planes que están disponibles para actualizar a se muestran en función de los servicios del plan actual. Solo puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange Online o SharePoint Online, o a una versión superior de ellos. Esto garantiza que los usuarios no\' pierdan datos relacionados con esos servicios durante la actualización.
+Al actualizar los planes, los planes a los que puede actualizar se muestran en función de los servicios del plan actual. Solo puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange Online o SharePoint Online, o a una versión superior de ellos. Esto garantiza que los usuarios no\'pierdan datos relacionados con esos servicios durante la actualización.
 
-Si tu plan no es apto para actualizar los planes automáticamente, es posible que puedas cambiar los [planes manualmente en su](change-plans-manually.md) lugar. También puede llamar [al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
+Si el plan no es apto para actualizar los planes automáticamente, es posible que pueda [cambiar los planes manualmente](change-plans-manually.md) en su lugar. También puede [llamar al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 #### <a name="your-subscription-has-an-add-on"></a>La suscripción tiene un complemento
 
-Si tienes un complemento con la suscripción, es posible que puedas cambiar [los planes manualmente](change-plans-manually.md).
+Si tiene un complemento con su suscripción, es posible que pueda [cambiar los planes manualmente](change-plans-manually.md).
 
-#### <a name="your-subscription-has-an-unpaid-balance"></a>Su suscripción tiene un saldo impagado
+#### <a name="your-subscription-has-an-unpaid-balance"></a>La suscripción tiene un saldo no pagado
 
-Para resolver esto, busque la suscripción en la <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">página Sus productos</a> y seleccione el vínculo **Pagar ahora** en la **sección Facturación** . Después de realizar el pago, vuelve a comprobar la **pestaña** Actualizar.
+Para resolver esto, busque la suscripción en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a> y seleccione el vínculo **Pagar ahora** en la sección **Facturación** . Una vez realizado el pago, vuelva a comprobar la pestaña **Actualizar** .
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>¿Qué hace la actualización de un plan a mi servicio y facturación?
 
-Al actualizar los planes automáticamente mediante el botón Cambiar **planes** (o la pestaña Actualizar  del nuevo centro de administración), los servicios y la facturación se ven afectados.
+Al actualizar los planes automáticamente mediante el botón **Cambiar planes** (o la pestaña **Actualizar** en el nuevo centro de administración), los servicios y la facturación se ven afectados.
 
 ### <a name="access-to-services"></a>Acceso a servicios
 
@@ -144,25 +144,25 @@ Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirá
 
 Los usuarios de la suscripción antigua se transferirán automáticamente a la nueva suscripción.
 
-Si la suscripción antigua incluye varios servicios y ha cambiado a qué servicios están asignados los usuarios, es posible que desee tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios más adelante. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio de SharePoint Online a 50 de ellos, este cambio no se conservaría después de actualizar los planes.
+Si la suscripción anterior incluye varios servicios y ha cambiado a cuál de estos servicios están asignados los usuarios, es posible que quiera tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio SharePoint Online de 50 de ellos, este cambio no se conservaría después de actualizar los planes.
 
-Si tiene más de una suscripción antes de actualizar los planes y tiene usuarios asignados licencias a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
-Todos los datos de usuario se conservarán durante la actualización, incluidos los buzones de Exchange y los documentos, listas y otra información de SharePoint Online.
+Si tiene más de una suscripción antes de actualizar los planes y tiene a los usuarios licencias asignadas a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
+Todos los datos de usuario se conservarán durante la actualización, incluidos Exchange buzones y SharePoint documentos en línea, listas y otra información.
   
 ### <a name="billing"></a>Facturación
 
-El día que se complete la actualización del plan, se desactivará la facturación de la suscripción antigua y se activa la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirás una nueva factura que incluye el crédito de la suscripción antigua en un plazo de 30 días a partir de la actualización a la nueva suscripción.
+El día que se complete la actualización del plan, se desactivará la facturación de la suscripción anterior y se activará la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirá una nueva factura que incluye el crédito de la suscripción anterior en un plazo de 30 días a partir de la actualización a la nueva suscripción.
   
 > [!NOTE]
 > El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción.
   
-**¿Actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se te notificará antes de la desprotección y puedes esperar para actualizar hasta más cerca de la fecha de expiración de la suscripción de prepago.
+**¿Actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de realizar la compra y puede esperar a actualizar hasta que esté más cerca de la fecha de expiración de la suscripción de prepago.
 
-## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar planes
+## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar los planes
 
-[Llama al soporte técnico de Microsoft](../../admin/get-help-support.md).
+[Llame al soporte técnico de Microsoft](../../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Cambiar planes manualmente](change-plans-manually.md) (artículo)\
-[Copia de seguridad de datos antes de cambiar los planes de Microsoft 365 para](back-up-data-before-switching-plans.md) empresas (artículo)
+[Cambiar los planes manualmente](change-plans-manually.md) (artículo)\
+[Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de negocio](back-up-data-before-switching-plans.md) (artículo)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Introducción a la conectividad de red en el Centro de Administración de Microsoft 365
-ms.openlocfilehash: 4d23990253b96e57df04411a2207d089c90711ca
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621828"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043867"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro de Administración de Microsoft 365
 
@@ -34,8 +34,8 @@ El Centro de Administración de Microsoft 365 ahora incluye métricas de conecti
 > [!div class="mx-imgBorder"]
 > ![Página Rendimiento de red.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->La conectividad de red en el Centro de Admin admite inquilinos en WW Commercial y Alemania, pero no GCC Moderate, GCC High, DoD o China.
+> [!NOTE]
+> La conectividad de red en el Centro de administración admite inquilinos en WW Commercial y Alemania, pero no GCC Moderada, GCC Alta, DoD o China.
 
 Cuando navegue por primera vez a la página de rendimiento de red, tendrá que configurar las ubicaciones para ver el mapa del rendimiento de la red global, una evaluación de red con ámbito para todo el inquilino, porcentaje de los usuarios que trabajan de forma remota e in situ y una lista de problemas actuales para tomar medidas o investigar más. En el panel de información general, puede explorar en profundidad para ver las métricas y problemas de rendimiento de red específicos por ubicación. Para obtener más información, consulte [Introducción al rendimiento de red en el Centro de Administración de Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -51,7 +51,7 @@ Para esta opción, debe tener al menos dos equipos que se ejecuten en cada ubica
 
 Windows servicio de ubicación debe dar su consentimiento en las máquinas. Para probar esto, ejecute la aplicación **de Mapas** y localícese. Se puede habilitar en una sola máquina con **Configuración | Privacidad | Ubicación** en la que se debe habilitar la opción _Permitir que las aplicaciones accedan a su ubicación_. Windows el consentimiento de Location Services se puede implementar en equipos con MDM o directiva de grupo con la configuración _LetAppsAccessLocation_.
 
-No es necesario agregar ubicaciones en el Centro de Admin con este método, ya que se identifican automáticamente en la resolución de la ciudad. No se mostrarán varias ubicaciones de oficina dentro de la misma ciudad al usar Windows Location Services. La información de ubicación se redondea a los 300 metros más cercanos por 300 metros para que no se acceda a información de ubicación más precisa.
+No es necesario agregar ubicaciones en el Centro de administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No se mostrarán varias ubicaciones de oficina dentro de la misma ciudad al usar Windows Location Services. La información de ubicación se redondea a los 300 metros más cercanos por 300 metros para que no se acceda a información de ubicación más precisa.
 
 Las máquinas deben tener redes Wi-Fi en lugar de un cable Ethernet. Las máquinas con un cable Ethernet no tienen información de ubicación precisa.
 
@@ -73,7 +73,7 @@ Todas las medidas de prueba de las máquinas cliente incluyen la información de
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Recopilación manual de informes de prueba con la herramienta de prueba de conectividad de red Microsoft 365
 
-Para esta opción, debe identificar a una persona en cada ubicación. Pídales que busquen [Microsoft 365 prueba de conectividad de red](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, deben hacer clic en **Ejecutar prueba**. Durante la prueba, hay una versión EXE de prueba de conectividad descargada. Deben abrirlo y ejecutarlo. Una vez completadas las pruebas, el resultado de la prueba se carga en el Centro de Admin.
+Para esta opción, debe identificar a una persona en cada ubicación. Pídales que busquen [Microsoft 365 prueba de conectividad de red](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, deben hacer clic en **Ejecutar prueba**. Durante la prueba, hay una versión EXE de prueba de conectividad descargada. Deben abrirlo y ejecutarlo. Una vez completadas las pruebas, el resultado de la prueba se carga en el Centro de administración.
 
 Los informes de prueba se vinculan a una ubicación si se agregaron con información de subred LAN; de lo contrario, solo se muestran en la ubicación de la ciudad.
 
@@ -202,14 +202,46 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    > [!div class="mx-imgBorder"]
    > ![Mensaje listo para importación CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="cqd-tsv-import-for-lan-subnet-office-locations"></a>Importación de TSV de CQD para ubicaciones de oficina de subred LAN
+
+Si ha cargado datos de compilación en el panel de calidad de llamadas, puede agregar esas ubicaciones aquí para empezar a evaluar su conectividad de red. Esto no afectará a las ubicaciones existentes.
+
+[Vaya a Upload de datos de inquilino](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) en El panel de calidad de llamadas. Si ha cargado los datos de compilación, verá una opción para descargarlos en un archivo .tsv. Descargue el archivo .tsv del panel de calidad de llamadas y cárguelo en el control flotante CQD siguiendo los pasos siguientes. Si desea crear el archivo .tsv manualmente, alinee el esquema con el de Upload archivo de datos de compilación o pruebe en su lugar la importación csv para ubicaciones de oficina de subred LAN.
+
+1. En la ventana principal Conectividad a Microsoft 365, haga clic en la pestaña **Ubicaciones**.
+
+2. Haga clic en el botón **Administrar varias ubicaciones** justo encima de la lista de ubicaciones.
+
+   > [!div class="mx-imgBorder"]
+   > ![Menú Administrar varias ubicaciones.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Haga clic en **agregar ubicaciones desde el panel de calidad de** llamadas, aparecerá el control flotante **Agregar ubicaciones desde el panel de calidad de llamadas** .
+
+   > [!div class="mx-imgBorder"]
+   > ![Agregue ubicaciones desde el control flotante Panel de calidad de llamadas.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Haga clic en el botón **Examinar** situado junto al campo **Seleccionar un archivo .tsv para cargar** y seleccione el archivo TSV guardado. Asegúrese de que el valor del archivo está separado por tabulaciones.
+
+5. El archivo se validará y analizará automáticamente en la lista de ubicaciones de office. Si hay errores de validación, el control flotante **No se pudo cargar el archivo** aparece para enumerar los errores.
+
+   > [!div class="mx-imgBorder"]
+   > ![No se pudo cargar el control flotante de archivos.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. Si no hay errores en el archivo, verá el mensaje: _El archivo test.tsv está cargado y listo. Seleccione Importar para cargar la información._
+
+   > [!div class="mx-imgBorder"]
+   > ![Seleccione un archivo .tsc que se va a cargar.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Haga clic **en Upload** botón situado en la parte inferior del panel para cargar las ubicaciones de la oficina.
+
+## <a name="faq"></a>preguntas más frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio Microsoft 365?
 
 La puerta principal del servicio Microsoft 365 es un punto de entrada en la red global de Microsoft donde Office clientes y servicios finalizan su conexión de red. Para una conexión de red óptima a Microsoft 365, se recomienda que la conexión de red finalice en la puerta principal Microsoft 365 más cercana.
 
->[!NOTE]
->Microsoft 365 servicio front door no tiene ninguna relación directa con el producto Azure Front Door Service disponible en Azure Marketplace.
+> [!NOTE]
+> Microsoft 365 servicio front door no tiene ninguna relación directa con el producto Azure Front Door Service disponible en Azure Marketplace.
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Cuál es una puerta de servicio Microsoft 365 óptima?
 
