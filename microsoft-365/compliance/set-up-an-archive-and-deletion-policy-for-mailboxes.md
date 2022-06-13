@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Cómo crear una directiva personalizada de archivado y eliminación de la administración de registros de mensajería (MRM) para mover automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 892f10b7cb57fcc85a7eb364d35730adb2d9c99d
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 9ea642dc9d6aa4e66938703b45a8af0bab53476f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393510"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013010"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personalización de una directiva de archivo y eliminación para buzones de correo de la organización
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview los administradores pueden crear una directiva de archivado y eliminación que mueve automáticamente los elementos al [buzón de archivo](archive-mailboxes.md) de un usuario y elimina automáticamente los elementos del buzón.
+Los administradores de Microsoft Purview pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al [buzón de archivo](archive-mailboxes.md) de un usuario y elimine automáticamente los elementos del buzón.
 
 Para ello, cree una directiva de retención de administración de registros de mensajería (MRM) que luego asigne a los buzones. Esta directiva mueve los elementos al buzón de archivo de un usuario después de un período de tiempo especificado y también elimina los elementos del buzón después de alcanzar un límite de edad determinado.
 
@@ -68,7 +68,7 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
 
 El primer paso es asegurarse de que cada usuario de la organización tiene un buzón de archivo. El buzón de archivo de un usuario debe estar habilitado para que una etiqueta de retención con una acción de retención "Mover a archivo" pueda mover el elemento después de que expire la antigüedad de retención.
 
-Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en el portal de cumplimiento Microsoft Purview](enable-archive-mailboxes.md).
+Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en el portal de cumplimiento de Microsoft Purview](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Puede habilitar los buzones de archivo en cualquier momento durante este proceso, siempre y cuando estén habilitados en algún momento antes de completar el proceso. Si un buzón de archivo no está habilitado, no se realiza ninguna acción en los elementos que tengan asignada una directiva de archivo o eliminación.
@@ -87,7 +87,7 @@ Para crear nuevas etiquetas de retención, usará el <a href="https://go.microso
   
 1. Vaya a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e inicie sesión con sus credenciales.
   
-2. En el EAC, vaya a **Administración de** >  **cumplimientoEtiquetas de cumplimiento**
+2. En el EAC, vaya a **Etiquetas** de **retención de administración de cumplimiento** > 
 
     Se muestra una lista de las etiquetas de retención de su organización.
 
@@ -95,7 +95,7 @@ Para crear nuevas etiquetas de retención, usará el <a href="https://go.microso
   
 En primer lugar, creará una etiqueta de directiva predeterminada de archivo (DPT) personalizada que moverá los elementos al buzón de archivo después de 3 años.
   
-1. En la página **Etiquetas de retención**, seleccione **Nueva etiquetaNuevo**![ icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
+1. En la página **Etiquetas de retención**, seleccione Nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Nueva **etiqueta**![y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
 
 2. En la página **Nueva etiqueta aplicada automáticamente a todo el buzón (valor predeterminado),** complete los campos siguientes: 
 
@@ -117,7 +117,7 @@ En primer lugar, creará una etiqueta de directiva predeterminada de archivo (DP
   
 A continuación, creará otro DPT personalizado, pero este será una directiva de eliminación que elimina de forma permanente los elementos después de 7 años.
   
-1. En la página **Etiquetas de retención**, seleccione **Nueva etiquetaNuevo**![ icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
+1. En la página **Etiquetas de retención**, seleccione Nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Nueva **etiqueta**![y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
 
 2. En la página **Nueva etiqueta aplicada automáticamente a todo el buzón (valor predeterminado),** complete los campos siguientes: 
 
@@ -163,7 +163,7 @@ La última etiqueta de retención que se va a crear es una etiqueta de directiva
 
 Después de crear las etiquetas de retención personalizadas, el siguiente paso es crear una nueva directiva de retención y agregar las etiquetas de retención. Agregará las tres etiquetas de retención personalizadas que creó en el paso 2 y las etiquetas integradas que se mencionaron en la primera sección. En el paso 4, asignará esta nueva directiva de retención a los buzones de usuario.
   
-1. En el EAC, vaya a **Administración de cumplimientoDirectivas** >  **de cumplimiento**.
+1. En el EAC, vaya a **Directivas de retención de administración de cumplimiento** > .
 
 2. En la página **Directivas de retención**, seleccione **Nuevo** ![nuevo icono.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)
 
@@ -192,7 +192,7 @@ Después de crear las etiquetas de retención personalizadas, el siguiente paso 
 
 Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada una directiva de retención denominada Directiva de MRM predeterminada. En este paso, reemplazará esta directiva de retención asignando la nueva directiva de retención que creó en el paso 3 a los buzones de usuario de su organización. El reemplazo es necesario porque un buzón solo puede tener asignada una directiva de retención de MRM a la vez. En este paso se supone que asignará la nueva directiva a todos los buzones de correo de la organización.
   
-1. En el EAC, vaya a **RecipientsMailboxes** > .
+1. En el EAC, vaya a **Buzones de** **destinatarios** > .
 
     Se muestra una lista de todos los buzones de correo de usuario de la organización.
 
@@ -288,6 +288,6 @@ Para ello, use Exchange Online PowerShell para actualizar el plan de buzón pred
     |No eliminar nunca  <br/> |Esta etiqueta impide que una directiva de retención elimine los elementos.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
     |Mover al archivo después de 1 años en forma personal  <br/> |Mueve los elementos al buzón de archivo después de 1 año.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
 
-    > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la Web (anteriormente conocida como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: [Recuperar elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y [Cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
+    > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la Web (anteriormente conocida como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Exchange Online PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: [Recuperar elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y [Cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
 - El uso de la etiqueta de retención **Mover a archivo de elementos recuperables durante 14 días** ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario se coloca en espera, lo que significa que nada se elimina permanentemente del buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables del buzón principal. Para obtener más información sobre esto y cómo evitarlo, consulte [Aumento de la cuota de elementos recuperables para buzones en espera](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

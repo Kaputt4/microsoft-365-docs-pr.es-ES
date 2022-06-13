@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284960"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016468"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -214,7 +214,7 @@ Cuando se crea y envía una directiva de retención, ésta puede tardar hasta si
 
 En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del portal del centro de cumplimiento de Microsoft Purview. En el panel flotante, si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy)o el [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
-1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Ejecute uno de los siguientes comandos:
     

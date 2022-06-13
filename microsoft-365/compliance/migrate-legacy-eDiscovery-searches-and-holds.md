@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092385"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010096"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento
 
@@ -35,31 +35,32 @@ Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
+- Debe instalar el módulo Exchange Online V2. Para obtener instrucciones, consulte [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
 - Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>.
 
 - En este artículo se proporcionan instrucciones sobre cómo crear una suspensión de eDiscovery. La directiva de retención se aplicará a los buzones a través de un proceso asincrónico. Al crear una suspensión de eDiscovery, debe crear un CaseHoldPolicy y un CaseHoldRule; de lo contrario, no se creará la suspensión y las ubicaciones de contenido no se colocarán en suspensión.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Paso 1: Conectar para Exchange Online PowerShell y PowerShell del Centro de cumplimiento de seguridad &
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Paso 1: Conectar para Exchange Online PowerShell y PowerShell de cumplimiento de seguridad &
 
-El primer paso consiste en conectarse a Exchange Online PowerShell y PowerShell security & Compliance Center. Puede copiar el siguiente script, pegarlo en una ventana de PowerShell y, a continuación, ejecutarlo. Se le pedirán las credenciales de la organización a la que desea conectarse. 
+El primer paso es conectarse a Exchange Online PowerShell y PowerShell de cumplimiento de seguridad & en la misma ventana de PowerShell. Puede copiar los siguientes comandos, pegarlos en una ventana de PowerShell y, a continuación, ejecutarlos. Se le pedirán las credenciales.
 
 ```powershell
-$UserCredential = Get-Credential
-$sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $sccSession -DisableNameChecking
-$exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $exoSession -AllowClobber -DisableNameChecking
+Connect-IPPSSession
+Connect-ExchangeOnline -UseRPSSession
 ```
 
-Debe ejecutar los comandos en los pasos siguientes de esta sesión de PowerShell.
+Para obtener instrucciones detalladas, consulte [Conectar a PowerShell de cumplimiento de & seguridad](/powershell/exchange/connect-to-scc-powershell) y [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Paso 2: Obtener una lista de In-Place búsquedas de exhibición de documentos electrónicos mediante Get-MailboxSearch
 
-Después de autenticarse, puede obtener una lista de In-Place búsquedas de eDiscovery mediante la ejecución del cmdlet **Get-MailboxSearch** . Copie y pegue el siguiente comando en PowerShell y, a continuación, ejecútelo. Se mostrará una lista de búsquedas con sus nombres y el estado de las retenciones de In-Place.
+Después de conectarse, puede obtener una lista de In-Place búsquedas de eDiscovery mediante la ejecución del cmdlet **Get-MailboxSearch** . Copie y pegue el siguiente comando en la ventana de PowerShell y ejecútelo.
 
 ```powershell
 Get-MailboxSearch
 ```
+
+Se mostrará una lista de búsquedas con sus nombres y el estado de las retenciones de In-Place.
 
 La salida del cmdlet será similar a la siguiente:
 
@@ -74,7 +75,7 @@ $search = Get-MailboxSearch -Identity "Search 1"
 ```
 
 ```powershell
-$search | FL
+$search | Format-List
 ```
 
 La salida de estos dos comandos será similar a la siguiente:
@@ -82,7 +83,7 @@ La salida de estos dos comandos será similar a la siguiente:
 ![Ejemplo de salida de PowerShell desde el uso de Get-MailboxSearch para una búsqueda individual.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La duración de la In-Place Hold en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico de los escenarios de eDiscovery y de investigación legal. Si la duración de la retención tiene un valor diferente al indefinido, es probable que el motivo se deba a que la suspensión se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de eDiscovery en PowerShell del Centro de cumplimiento de seguridad & para escenarios de retención, se recomienda usar [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) y [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) para conservar el contenido. El resultado del uso de estos cmdlets será similar al uso de **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido después de que expire el período de retención. Además, el uso de los cmdlets de retención no requiere que asocie las retenciones con un caso de exhibición de documentos electrónicos.
+> La duración de la In-Place Hold en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico de los escenarios de eDiscovery y de investigación legal. Si la duración de la retención tiene un valor diferente al indefinido, es probable que el motivo se deba a que la suspensión se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de eDiscovery en PowerShell de cumplimiento de seguridad & para escenarios de retención, se recomienda usar [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) y [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) para conservar el contenido. El resultado del uso de estos cmdlets será similar al uso de **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido después de que expire el período de retención. Además, el uso de los cmdlets de retención no requiere que asocie las retenciones con un caso de exhibición de documentos electrónicos.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Paso 4: Crear un caso en el portal de cumplimiento de Microsoft Purview
 
@@ -91,6 +92,7 @@ Para crear una suspensión de eDiscovery, debe crear un caso de exhibición de d
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+
 ![Ejemplo de ejecución del comando New-ComplianceCase.](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Paso 5: Crear la suspensión de eDiscovery
@@ -152,7 +154,7 @@ Si migra una búsqueda In-Place eDiscovery pero no la asocia a un caso de exhibi
 ## <a name="more-information"></a>Más información
 
 - Para obtener más información sobre In-Place & de exhibición de documentos electrónicos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>, vea:
-  
+
   - [Exhibición de documentos electrónicos en contexto](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [Conservación local y retención por juicio](/exchange/security-and-compliance/in-place-and-litigation-holds)
@@ -160,15 +162,15 @@ Si migra una búsqueda In-Place eDiscovery pero no la asocia a un caso de exhibi
 - Para obtener más información sobre los cmdlets de PowerShell usados en el artículo, consulte:
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-  
+
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-  
+
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-  
+
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)

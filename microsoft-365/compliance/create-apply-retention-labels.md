@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285530"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007336"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
@@ -94,7 +94,7 @@ Si publica etiquetas de retención en Exchange, las etiquetas de retención pued
 
 Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiquetas seleccionándola en la página **Directivas de etiquetas** en el portal del Centro de cumplimiento de Microsoft Purview. Si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) o [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
-1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Ejecute uno de los siguientes comandos:
     

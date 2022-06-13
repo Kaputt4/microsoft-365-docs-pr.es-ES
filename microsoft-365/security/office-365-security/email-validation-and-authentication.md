@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772782"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008875"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -170,7 +170,6 @@ En el caso de los dominios externos, el usuario suplantado es el dominio de la d
 
 - La dirección IP de origen (dividida en /24 intervalos CIDR)
 - Dominio organizativo del registro DNS inverso (PTR).
-- Un dominio DKIM comprobado.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creación de una entrada de permiso para el par de remitente y destinatario
 

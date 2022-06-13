@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 4d287d342371a8182a4c9de5742d2d45ca01a1c6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712729"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012481"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -45,12 +45,11 @@ Las configuraciones que se explican en este artículo concuerdan con las recomen
 
 Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea[ Ilustraciones de la nube de Microsoft para arquitectos empresariales](./cloud-architecture-models.md)
 
-
 ## <a name="three-tiers-at-a-glance"></a>Tres niveles de un vistazo
 
 En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas configuraciones como punto de partida y ajuste las configuraciones para satisfacer las necesidades de la organización. Es posible que no necesite todos los niveles.
 
-|-|Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
+|&nbsp;|Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
 |:-----|:-----|:-----|:-----|:-----|
 |Equipo privado o público|Público|Private|Private|Private|
 |¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
@@ -142,4 +141,4 @@ Comience por [configurar el nivel de línea base de protección](configure-teams
 
 [Seguridad y cumplimiento en Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Directivas de alerta en el Centro de seguridad y cumplimiento](../compliance/alert-policies.md)
+[Directivas de alerta](../compliance/alert-policies.md)

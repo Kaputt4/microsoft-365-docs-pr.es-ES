@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como la creación de búsquedas y la ejecución de informes mediante PowerShell del Centro de cumplimiento de seguridad &.
+description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como la creación de búsquedas y la ejecución de informes mediante PowerShell de cumplimiento de seguridad &.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef806b9be55b8c39ad26f477d35eb076b22c16b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099287"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018083"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
- La creación rápida y la generación de informes de búsquedas de detección suele ser un paso importante en eDiscovery e investigaciones cuando se intenta obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle a hacerlo, PowerShell security & Compliance Center ofrece un conjunto de cmdlets para automatizar tareas de búsqueda de contenido que consumen mucho tiempo. Estos scripts proporcionan una manera rápida y sencilla de crear una serie de búsquedas y, a continuación, ejecutar informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de búsquedas con el fin de comparar los resultados que genera cada uno. Estos scripts pueden ayudarle a identificar y eliminar los datos de forma rápida y eficaz.
+ La creación rápida y la generación de informes de búsquedas de detección suele ser un paso importante en eDiscovery e investigaciones cuando se intenta obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle a hacerlo, Security & Compliance PowerShell ofrece un conjunto de cmdlets para automatizar tareas de búsqueda de contenido que consumen mucho tiempo. Estos scripts proporcionan una manera rápida y sencilla de crear una serie de búsquedas y, a continuación, ejecutar informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de búsquedas con el fin de comparar los resultados que genera cada uno. Estos scripts pueden ayudarle a identificar y eliminar los datos de forma rápida y eficaz.
 
 ## <a name="before-you-create-a-content-search"></a>Antes de crear una búsqueda de contenido
 
@@ -77,9 +77,9 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
 
 3. Guarde el archivo Excel como un archivo CSV en una carpeta del equipo local. El script que cree en el paso 3 usará la información de este archivo CSV para crear las búsquedas.
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Paso 2: Conectarse al PowerShell del Centro de seguridad y cumplimiento
+## <a name="step-2-connect-to-security--compliance-powershell"></a>Paso 2: Conectar a PowerShell de cumplimiento de & seguridad
 
-El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimiento de su organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+El siguiente paso es conectarse a PowerShell de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, consulte [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Paso 3: Ejecutar el script para crear e iniciar las búsquedas
 
