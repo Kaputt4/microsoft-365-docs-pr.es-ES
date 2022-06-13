@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669812"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012392"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -42,7 +42,7 @@ ms.locfileid: "65669812"
 
 [Las reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md) (reglas ASR) ayudan a evitar acciones que el malware suele abusar para poner en peligro dispositivos y redes.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Características de reducción de superficie expuesta a ataques en versiones Windows
 
@@ -142,7 +142,7 @@ Los procedimientos siguientes para habilitar las reglas de ASR incluyen instrucc
 
 4. Seleccione **Aceptar** en los tres paneles de configuración. A continuación, seleccione **Crear** si va a crear un nuevo archivo de Endpoint Protection o **Guardar** si está editando uno existente.
 
-#### <a name="endpoint-security-policy"></a>Directiva de seguridad de punto de conexión**
+#### <a name="endpoint-security-policy"></a>Directiva de seguridad de puntos de conexión
 
 1. Seleccione **Reducción de la superficie expuesta a ataques** de seguridad \> de **punto de conexión**. Elija una regla ASR existente o cree una nueva. Para crear uno nuevo, seleccione **Crear directiva** y escriba información para este perfil. En **Tipo de perfil**, seleccione **Reglas de reducción de superficie expuesta a ataques**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación, seleccione **Configuración**.
 
@@ -200,7 +200,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuración del URI de OMA en el portal del centro de administración de Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. Seleccione **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, seleccione **Siguiente**.
    - O bien, seleccione **Siguiente.**

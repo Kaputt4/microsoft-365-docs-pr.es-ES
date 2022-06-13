@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Use la herramienta eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para encontrar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092257"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009439"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Búsqueda de contenido mediante la herramienta de búsqueda de contenido
 
@@ -70,7 +70,7 @@ La búsqueda de contenido es fácil de usar, pero también es una herramienta ef
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>Uso de scripts para escenarios avanzados
 
-A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos en PowerShell de Security & Compliance Center. Para facilitar esto, hemos creado una serie de scripts de PowerShell de Security & Compliance Center para ayudarle a completar tareas complejas relacionadas con la búsqueda de contenido.
+A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos en PowerShell de cumplimiento de seguridad &. Para facilitar esto, hemos creado una serie de scripts de PowerShell de cumplimiento de seguridad & para ayudarle a completar tareas complejas relacionadas con la búsqueda de contenido.
 
 - [Busque carpetas de buzón de correo y de sitio específicas](use-content-search-for-targeted-collections.md) (denominadas recopilación  *de destino* ) cuando esté seguro de que los elementos que responden a un caso se encuentran en esa carpeta.
 

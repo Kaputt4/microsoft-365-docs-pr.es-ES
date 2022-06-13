@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar líneas base Microsoft 365 Lighthouse.
-ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131138"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012602"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementación de líneas base de Microsoft 365 Lighthouse
 
@@ -61,7 +62,7 @@ Asegúrese de que usted y los inquilinos de sus clientes cumplen los requisitos 
     | SKU necesaria   | SKU necesarias para completar el paso de implementación.                                      |
     | Impacto en el usuario    | Impacto de la implementación del paso en los usuarios del inquilino.                             |
     | Para los usuarios | Vínculos a recursos que los usuarios del inquilino pueden resultar útiles.                             |
-    | Pasos siguientes     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
+    | Siguientes pasos     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
 
     Los pasos de implementación incluyen uno o varios procesos que deben completarse. La página Paso de implementación incluye una tabla que enumera cada proceso incluido en el paso de implementación y proporciona la siguiente información:
 
@@ -147,7 +148,7 @@ La implementación del paso de implementación en instancias en las que hay valo
 
 Se proporcionan configuraciones adicionales para su reconocimiento, pero no es necesario que tome medidas.
 
-Para obtener más información sobre la administración de conflictos de directivas, consulte [Azure AD documentación de acceso condicional](/azure/active-directory/conditional-access/).
+Para obtener más información sobre la administración de conflictos de directivas, consulte la [documentación de acceso condicional de Azure AD](/azure/active-directory/conditional-access/).
 
 ## <a name="update-deployment-step-status"></a>Actualización del estado del paso de implementación
 
@@ -164,7 +165,7 @@ Para obtener más información sobre la administración de conflictos de directi
     | Estado de la acción                        | Descripción      |
     |---------------------------------------|----------------------------------------|
     | Para solucionarlo                        | Estado predeterminado de todos los pasos de implementación que NO incluyen varios procesos de paso de implementación.      |
-    | Planeado                           | El paso de implementación se ha planeado, pero aún no se ha completado.                                      |
+    | Planificado                           | El paso de implementación se ha planeado, pero aún no se ha completado.                                      |
     | Riesgo aceptado                     | El usuario ha aceptado el riesgo que, de lo contrario, se habría evitado aplicando el paso de implementación. |
     | Riesgo resuelto a través de terceros | El riesgo se ha resuelto mediante la implementación de una aplicación o software de terceros.             |
     | Resuelto a través de medios alternativos  | El riesgo se ha resuelto a través de medios alternativos, como la implementación de una herramienta interna.    |

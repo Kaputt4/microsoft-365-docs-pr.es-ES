@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,23 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga más información sobre los requisitos de permisos de Lighthouse.
-ms.openlocfilehash: e03ae77f6997d3d34f926285cf7aab5cdd682c9c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 0ccc47fd151fa681b0231b2f776de3d2c46c5784
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188315"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012989"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Introducción a los permisos en Microsoft 365 Lighthouse
 
-El acceso delegado a los inquilinos del cliente es necesario para que los proveedores de servicios administrados (CSP) usen Microsoft 365 Lighthouse. Los privilegios de administrador delegado pormenorizado (GDAP) proporcionan a los MSP un alto nivel de control y flexibilidad al proporcionar acceso al cliente a través de [roles integrados Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)). La asignación de los roles con privilegios mínimos por tarea mediante GDAP a los técnicos de MSP reduce el riesgo de seguridad tanto para los MSP como para los clientes. Para obtener más información sobre los roles con privilegios mínimos por tarea, vea [Roles con privilegios mínimos: roles del Centro](/partner-center/gdap-least-privileged-roles-by-task) de partners y [roles con privilegios mínimos por tarea en Azure Active Directory](/azure/active-directory/roles/delegate-by-task). Para obtener más información sobre cómo configurar una relación GDAP con un inquilino de cliente, consulte [Obtención de permisos de administrador pormenorizados para administrar el servicio de un cliente: Centro de partners.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
+El acceso delegado a los inquilinos del cliente es necesario para que los proveedores de servicios administrados (CSP) usen Microsoft 365 Lighthouse. Los privilegios de administrador delegado pormenorizado (GDAP) proporcionan a los MSP un alto nivel de control y flexibilidad al proporcionar acceso al cliente a través de [roles integrados de Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)). La asignación de los roles con privilegios mínimos por tarea mediante GDAP a los técnicos de MSP reduce el riesgo de seguridad tanto para los MSP como para los clientes. Para obtener más información sobre los roles con privilegios mínimos por tarea, vea [Roles con privilegios mínimos: roles del Centro](/partner-center/gdap-least-privileged-roles-by-task) de partners y [roles con privilegios mínimos por tarea en Azure Active Directory](/azure/active-directory/roles/delegate-by-task). Para obtener más información sobre cómo configurar una relación GDAP con un inquilino de cliente, consulte [Obtención de permisos de administrador pormenorizados para administrar el servicio de un cliente: Centro de partners.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
 
-Se recomienda asignar roles a grupos de técnicos de MSP en función de las tareas que cada grupo debe realizar en nombre del cliente. Por ejemplo, es posible que los técnicos de Service Desk solo necesiten leer los datos del inquilino del cliente o restablecer las contraseñas de usuario. Por el contrario, es posible que los ingenieros de escalación deba realizar más acciones correctivas para actualizar la configuración de seguridad del inquilino del cliente. Se recomienda asignar el rol menos permisivo necesario para completar una tarea para que los datos de clientes y asociados se mantengan seguros. Se recomienda usar Privileged Identity Management (PIM) para habilitar el acceso con ámbito de tiempo al rol de administrador global, si es necesario. Dar acceso global a demasiados usuarios supone un riesgo de seguridad y se recomienda limitarlo tanto como sea posible. Para obtener más información sobre cómo habilitar PIM, consulte [Configuración Azure AD PIM.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
+Se recomienda asignar roles a grupos de técnicos de MSP en función de las tareas que cada grupo debe realizar en nombre del cliente. Por ejemplo, es posible que los técnicos de Service Desk solo necesiten leer los datos del inquilino del cliente o restablecer las contraseñas de usuario. Por el contrario, es posible que los ingenieros de escalación deba realizar más acciones correctivas para actualizar la configuración de seguridad del inquilino del cliente. Se recomienda asignar el rol menos permisivo necesario para completar una tarea para que los datos de clientes y asociados se mantengan seguros. Se recomienda usar Privileged Identity Management (PIM) para habilitar el acceso con ámbito de tiempo al rol de administrador global, si es necesario. Dar acceso global a demasiados usuarios supone un riesgo de seguridad y se recomienda limitarlo tanto como sea posible. Para obtener más información sobre cómo habilitar PIM, consulte [Configuración de PIM de Azure AD.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
 
 En las tablas de la sección siguiente se describen los roles de GDAP que conceden permiso para leer los datos de los clientes y realizar acciones en los inquilinos del cliente en Lighthouse. Consulte [Permisos en el inquilino del asociado](#permissions-in-the-partner-tenant) en este artículo para ver los roles adicionales necesarios para administrar entidades de Lighthouse (por ejemplo, etiquetas y solicitudes de servicio de Lighthouse).
-
-> [!NOTE]
->GDAP se encuentra actualmente en [versión preliminar técnica](/partner-center/announcements/2022-february#6) (versión preliminar pública) para permitir a los asociados asignar permisos granulares antes de que GDAP esté disponible con carácter general. Compruebe [Problemas conocidos](m365-lighthouse-known-issues.md) si tiene problemas para acceder a una acción o realizarla en Lighthouse.
 
 ## <a name="example-msp-service-tiers-recommended-gdap-roles-and-permissions"></a>Niveles de servicio MSP de ejemplo, roles de GDAP recomendados y permisos
 
@@ -80,8 +78,8 @@ Para determinadas acciones de Lighthouse, se requieren asignaciones de roles en 
 | Roles de inquilino de asociados | Permisos |
 |--|--|
 | Administrador global del inquilino del asociado | <ul><li>Regístrese en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Acepte las modificaciones del contrato de asociado durante la experiencia de primera ejecución.</li><li>Active e inactiva un inquilino.</li><li>Crear, actualizar y eliminar etiquetas.</li><li>Asigne y quite etiquetas de un inquilino de cliente.</li><li>Revisión de los registros de auditoría</li></ul> |
-| Miembro de inquilino asociado con al menos un rol de Azure AD asignado con el siguiente conjunto de propiedades:<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Para obtener una lista completa de Azure AD roles, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference)). | Cree solicitudes de servicio de Lighthouse. |
-| Miembro del inquilino asociado que cumple *los dos* requisitos siguientes: <ul><li>Tiene al menos un rol de Azure AD asignado con el siguiente conjunto de propiedades:<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Para obtener una lista completa de Azure AD roles, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference)).</li><li>Tiene al menos un rol delegado de DAP asignado (agente de administración o agente del departamento de soporte técnico)</li></ul> | Ver la información de estado del servicio. |
+| Miembro de inquilino asociado con al menos un rol de Azure AD asignado con el siguiente conjunto de propiedades:<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Para obtener una lista completa de los roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)). | Cree solicitudes de servicio de Lighthouse. |
+| Miembro del inquilino asociado que cumple *los dos* requisitos siguientes: <ul><li>Tiene al menos un rol de Azure AD asignado con la siguiente propiedad establecida:<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Para obtener una lista completa de los roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)).</li><li>Tiene al menos un rol delegado de DAP asignado (agente de administración o agente del departamento de soporte técnico)</li></ul> | Ver la información de estado del servicio. |
 
 ## <a name="related-content"></a>Contenido relacionado
 

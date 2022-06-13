@@ -20,24 +20,26 @@ description: Obtenga información sobre cómo crear una directiva de tipo de inf
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 908ec1cf55d8bee06ce9b3b6ccc8eb699d2ba291
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759421"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012304"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Creación de una directiva de tipo de información confidencial para su organización mediante el cifrado de mensajes
 
-Puede usar Exchange reglas de flujo de correo o prevención de pérdida de datos (DLP) para crear una directiva de tipo de información confidencial con Office 365 cifrado de mensajes. Para crear una regla de flujo de correo Exchange, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> o PowerShell.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Puede usar Exchange reglas de flujo de correo o la prevención de pérdida de datos (DLP) de Microsoft Purview para crear una directiva de tipo de información confidencial con Office 365 cifrado de mensajes. Para crear una regla de flujo de correo Exchange, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> o PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Para crear la directiva mediante reglas de flujo de correo en el EAC
 
-Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y vaya a **Flujo de** >  **correoRules**. En la página Reglas, cree una regla que se aplique Office 365 cifrado de mensajes. Puede crear una regla basada en condiciones como la presencia de ciertas palabras clave o tipos de información confidencial en el mensaje o los datos adjuntos.
+Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y vaya a **Reglas** de **flujo** >  de correo. En la página Reglas, cree una regla que se aplique Office 365 cifrado de mensajes. Puede crear una regla basada en condiciones como la presencia de ciertas palabras clave o tipos de información confidencial en el mensaje o los datos adjuntos.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Para crear la directiva mediante reglas de flujo de correo en PowerShell
 
-Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la directiva.
+Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización y conéctese a Exchange Online PowerShell. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la directiva.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Regla de flujo de correo de ejemplo creada con PowerShell
 
@@ -66,8 +68,8 @@ Una vez que Microsoft cifra un mensaje, los destinatarios tienen acceso sin rest
 
 Es posible que quiera actualizar cualquier documentación de usuario final y materiales de aprendizaje aplicables para preparar a los usuarios de su organización para este cambio. Comparta estos recursos Office 365 cifrado de mensajes con los usuarios según corresponda:
 
-- [Envío, visualización y respuesta a mensajes cifrados en Outlook para PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Vídeo de Microsoft 365 Essentials: cifrado de mensajes Office](https://youtu.be/CQR0cG_iEUc)
+- [Envío, visualización y respuesta a mensajes cifrados en Outlook para PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [vídeo de Microsoft 365 Essentials: cifrado de mensajes](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Visualización de estos cambios en el registro de auditoría
 
@@ -79,4 +81,4 @@ Microsoft 365 audita esta actividad y la pone a disposición de los administrado
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Para deshabilitar o personalizar la directiva de tipos de información confidencial
 
-Una vez que haya creado la regla de flujo de correo Exchange, puede [deshabilitar o editar la regla](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) si va a **Flujo** >  de **correoRules** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y deshabilita la regla "*Cifrar los correos electrónicos confidenciales salientes (regla predefinida)*".
+Una vez que haya creado el Exchange regla de flujo de correo, puede [deshabilitar o editar la regla](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) si va a **Reglas** de **flujo** >  de correo en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y deshabilita la regla "*Cifrar los correos electrónicos confidenciales salientes (regla predefinida)*".

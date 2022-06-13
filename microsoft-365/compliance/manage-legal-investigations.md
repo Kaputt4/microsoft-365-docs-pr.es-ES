@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Use casos de eDiscovery en el portal de cumplimiento de Microsoft Purview para administrar la investigación legal de su organización.
-ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077887"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010074"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
@@ -46,7 +46,7 @@ Los casos de eDiscovery permiten controlar quién puede crear, acceder y adminis
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>Uso de scripts para escenarios avanzados
 
-Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido, también hemos creado algunos scripts de PowerShell del Centro de cumplimiento de seguridad & para ayudarle a administrar casos de eDiscovery.
+Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido, también hemos creado algunos scripts de PowerShell de cumplimiento de seguridad & para ayudarle a administrar casos de eDiscovery.
   
 - [Cree un informe de suspensión de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos en su organización.
 

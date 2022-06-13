@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo contiene información para usar elementos emergentes lean para mejorar el rendimiento de descarga de mensajes en Outlook en la Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40494b43438a491fc200fd19e3015eed58b17493
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9636fd3beafd169358c4b50cafdc4ac0f9494994
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096290"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012690"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Uso de elementos emergentes lean para reducir la memoria usada al leer mensajes de correo
 
@@ -39,7 +39,7 @@ Estas características seguirán funcionando en la ventana principal, pero no es
   
 ## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>Para configurar elementos emergentes lean para todos los usuarios de la organización de Office 365
   
-1. [Conectar para Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Ejecute el cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) con el parámetro LeanPopoutEnabled como se indica a continuación:
 

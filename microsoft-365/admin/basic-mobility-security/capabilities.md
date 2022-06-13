@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security le ayuda a proteger y administrar dispositivos móviles con directivas que controlan el acceso a la organización Microsoft 365 correo electrónico y documentos.
-ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55c2a197959e55e2a74f8691b7181f8ee91b0ea9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435863"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010176"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
 Basic Mobility and Security puede ayudarle a proteger y administrar dispositivos móviles como iPhone, iPads, Android y teléfonos Windows usados por los usuarios con licencia Microsoft 365 de su organización. Puede crear directivas de administración de dispositivos móviles con una configuración que pueda ayudar a controlar el acceso al correo electrónico Microsoft 365 de la organización y a los documentos para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 Siga la guía de sistemas operativos Microsoft Intune para los sistemas operativos mínimos admitidos para dispositivos por Basic Mobility and Security. Para obtener más información, consulte [Intune sistemas operativos compatibles](/mem/intune/fundamentals/supported-devices-browsers).
 
@@ -110,7 +110,7 @@ En las secciones siguientes se muestra la configuración de directiva que puede 
 
 |Nombre de la configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Requerir cifrado de datos en <sup>dispositivos1</sup>|No|Sí|Sí|
+|Requerir cifrado de datos en dispositivos<sup>1</sup>|No|Sí|Sí|
 
 <sup>1</sup> Con Samsung Knox, también puede requerir cifrado en tarjetas de almacenamiento.
 
@@ -163,7 +163,7 @@ La siguiente opción puede impedir que los usuarios accedan a su correo electró
 
 ## <a name="additional-settings"></a>Otras configuraciones
 
-Puede establecer la siguiente configuración de directiva adicional mediante cmdlets de PowerShell de Security & Compliance Center. Para obtener más información, consulte [PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/scc-powershell).
+Puede establecer la siguiente configuración de directiva adicional mediante cmdlets de PowerShell de cumplimiento de seguridad &. Para obtener más información, consulte [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 |Nombre de valor de configuración|iOS|Android|
 |---|---|---|
@@ -230,7 +230,7 @@ Puede establecer esta configuración de directiva adicional mediante cmdlets de 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Borrar de forma remota un dispositivo móvil
 
-Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 mediante la eliminación de **portal de cumplimiento Microsoft Purview** >  **Data la prevención** >  de **pérdidasDispositivos**. Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
+Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 realizando un borrado del portal  >  de **cumplimiento de Microsoft Purview** Administración de dispositivos de **prevención** >  de pérdida de datos **.** Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
 
 Para obtener más información, consulte [Borrado de un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
 

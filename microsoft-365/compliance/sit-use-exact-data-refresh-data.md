@@ -1,5 +1,5 @@
 ---
-title: Actualizar el archivo de tabla de origen de información que no distingue coincidencias exactas de datos
+title: Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760853"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008853"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrá que volver a establecer y cargar la tabla de origen de información confidencial.
 
@@ -39,15 +41,15 @@ Puede actualizar la base de datos de información confidencial hasta 5 veces en 
 
    |Método|Qué hacer|
    |---|---|
-   |Windows PowerShell|Consulte la documentación [TareasProgramadas](/powershell/module/scheduledtasks/) y [script de PowerShell de ejemplo](#example-powershell-script-for-task-scheduler) de este artículo|
+   |PowerShell|Consulte la documentación [TareasProgramadas](/powershell/module/scheduledtasks/) y [script de PowerShell de ejemplo](#example-powershell-script-for-task-scheduler) de este artículo|
    |API del Programador de tareas|Consulte la documentación del [Programador de tareas](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |Interfaz de usuario de Windows|En Windows, haga clic en **Inicio** y escriba Programador de tareas. A continuación, en la lista de resultados, haga clic en **Programador de tareas** y **Ejecutar como administrador**.|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>Script de PowerShell de ejemplo para el Programador de tareas 
+## <a name="example-powershell-script-for-task-scheduler"></a>Script de PowerShell de ejemplo para el Programador de tareas
 
 Esta sección incluye un script de PowerShell de ejemplo que puede usar para programar las tareas de creación de hash para los datos y cargar los datos con hash:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Programación de hash y carga en un paso combinado
+### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Programación de hash y carga en un paso combinado
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +84,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Programación de hash y carga como pasos independientes
+### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Programación de hash y carga como pasos independientes
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

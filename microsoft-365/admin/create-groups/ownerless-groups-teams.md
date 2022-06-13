@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo invitar automáticamente a los miembros para que se conviertan en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: 5bd41e3312cd696d9e0a2d7e4159e152d9c9d979
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65620982"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008644"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos Microsoft 365 sin propietario
 
-Un equipo de Microsoft Teams o un grupo de Microsoft 365 puede quedar sin propietario si la cuenta de un propietario se elimina o deshabilita en Microsoft 365. Los grupos y equipos requieren que un propietario agregue o quite miembros y cambie la configuración del grupo.
+Un equipo de Microsoft Teams o un grupo de Microsoft 365 y sus servicios relacionados pueden quedar sin propietario si la cuenta de un propietario se elimina o deshabilita en Microsoft 365. Los grupos y equipos requieren que un propietario agregue o quite miembros y cambie la configuración del grupo.
 
 Un Administrador global puede crear una directiva que pregunte automáticamente a los miembros más activos de un grupo o equipo sin propietario si aceptarán la propiedad. Cuando un miembro acepta la invitación para convertirse en propietario, la acción se registra en el registro de auditoría del portal de cumplimiento. Nunca se invita a los huéspedes a ser propietarios.
 
@@ -65,4 +65,8 @@ Para establecer una directiva de grupo o equipo sin propietario
 
 1. En la página *Revisar y finalizar* , confirme la configuración, haga clic en **Finalizar** y, a continuación, seleccione **Listo**.
 
-Las notificaciones se envían semanalmente a partir de las 24 horas posteriores a la creación de la directiva.
+Las notificaciones se envían semanalmente a partir de las 24 horas posteriores a la creación de la directiva. Los destinatarios no pueden reenviar las notificaciones a otros usuarios. Las notificaciones y respuestas se realizan un seguimiento en el registro de auditoría.
+
+Hasta dos miembros del grupo por grupo pueden aceptar la invitación para convertirse en propietario. Si ningún miembro del grupo acepta, un administrador tendrá que [asignar un propietario de grupo](/admin/create-groups/add-or-remove-members-from-groups).
+
+

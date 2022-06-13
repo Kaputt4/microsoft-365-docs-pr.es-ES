@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery y In-Place Hold (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en el primer semestre de 2020. El cmdlet Search-Mailbox y microsoft Purview eDiscovery (Premium) v1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094490"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012296"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -32,7 +32,7 @@ A lo largo de los años, Microsoft ha proporcionado herramientas de exhibición 
 
 Como resultado de esta nueva y mejorada funcionalidad de exhibición de documentos electrónicos en el portal de cumplimiento, retiramos las siguientes características y funcionalidades relacionadas con eDiscovery relacionadas con la búsqueda de contenido de correo electrónico en Exchange Online y Microsoft 365:
 
-- [Exhibición de documentos electrónicos](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) local y [retenciones locales](/exchange/security-and-compliance/create-or-remove-in-place-holds) en el centro de administración de Exchange.
+- [eDiscovery local](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) y [las retenciones locales](/exchange/security-and-compliance/create-or-remove-in-place-holds) en el centro de administración de Exchange.
 
 - Los cmdlets de PowerShell Exchange Online que admiten In-Place eDiscovery y In-Place Holds (estos cmdlets se identifican colectivamente como cmdlets **-MailboxSearch*). Esto incluye los siguientes cmdlets:
 
@@ -173,7 +173,7 @@ Es posible migrar In-Place búsquedas y retenciones de eDiscovery desde el EAC m
 
 Según el aviso original anunciado el 1 de julio de 2017 en el Centro de administración de Exchange, se están retirando la funcionalidad In-Place eDiscovery & Hold y los cmdlets **-MailboxSearch correspondientes\***. Estos cmdlets proporcionan a los usuarios la capacidad de buscar, mantener y exportar contenido de buzón de correo para solicitudes legales, reglamentarias y públicas.
 
-Dado que estas funcionalidades ahora están disponibles en el [<span class="underline">portal de cumplimiento</span>](./microsoft-365-compliance-center.md) y Office 365 Security & Compliance Center PowerShell con rendimiento y escalabilidad mejorados, debe usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule) y [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
+Dado que estas funcionalidades ahora están disponibles en el [<span class="underline">portal de cumplimiento</span>](./microsoft-365-compliance-center.md) y Office 365 PowerShell de cumplimiento de seguridad & con rendimiento y escalabilidad mejorados, debe usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule) y [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -254,7 +254,7 @@ Sí, aunque se elimina la capacidad de crear y modificar búsquedas, seguirá si
 
 ## <a name="search-mailbox-cmdlet"></a>cmdlet Search-Mailbox
 
-El cmdlet **Search-Mailbox** de Exchange Online PowerShell se está retirando como se anunció originalmente en una advertencia en la salida del cmdlet a partir de 2018. El cmdlet **Search-Mailbox** se usó originalmente para buscar en el buzón de un usuario y purgar contenido malintencionado. Se recomienda empezar a usar los cmdlets **New-ComplianceSearch** y **New-ComplianceSearchAction** en powerShell Office 365 Security & Compliance Center para buscar y purgar contenido. Para una experiencia de seguridad integrada, las [<span class="underline">características de seguridad Microsoft 365</span>](../security/index.yml) proporcionan una sólida protección contra amenazas para el correo electrónico y muchos otros servicios Microsoft.
+El cmdlet **Search-Mailbox** de Exchange Online PowerShell se está retirando como se anunció originalmente en una advertencia en la salida del cmdlet a partir de 2018. El cmdlet **Search-Mailbox** se usó originalmente para buscar en el buzón de un usuario y purgar contenido malintencionado. Se recomienda empezar a usar los cmdlets **New-ComplianceSearch** y **New-ComplianceSearchAction** en Office 365 Security & Compliance PowerShell para buscar y purgar contenido. Para una experiencia de seguridad integrada, las [<span class="underline">características de seguridad Microsoft 365</span>](../security/index.yml) proporcionan una sólida protección contra amenazas para el correo electrónico y muchos otros servicios Microsoft.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -348,7 +348,7 @@ eDiscovery (Premium) v1.0, que es la versión de eDiscovery (Premium) disponible
 
 Para determinar si su organización usa eDiscovery (Premium) v1.0:
 
-1. Vaya al portal de cumplimiento, seleccione **eDiscoveryCore** >  y abra un caso de exhibición de documentos electrónicos (estándar).<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+1. Vaya al portal de cumplimiento, seleccione **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a> y abra un caso de exhibición de documentos electrónicos (estándar).
 
 1. Si ve el botón **Cambiar a eDiscovery (Premium),** al hacer clic en él se le llevará a la versión 1.0 de eDiscovery (Premium), que se está retirando. La capacidad de crear y administrar casos en eDiscovery (Estándar) no se verá afectada. Solo se está retirando la capacidad de agregar y analizar datos de casos en eDiscovery (Premium) v1.0 (haciendo clic en **Cambiar a eDiscovery (Premium)**).
 
@@ -356,7 +356,7 @@ La nueva solución eDiscovery (Premium) en Microsoft 365 (también conocida como
 
 Para acceder a eDiscovery (Premium) v2.0:
 
-Vaya al portal de cumplimiento, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> >  y abra un caso de exhibición de documentos electrónicos (estándar).
+Vaya al portal de cumplimiento, seleccione **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a> y abra un caso de exhibición de documentos electrónicos (estándar).
 
 En este momento, se recomienda empezar a realizar la transición del flujo de trabajo de exhibición de documentos electrónicos a la nueva funcionalidad de exhibición de documentos electrónicos (Premium). Si es necesario, puede archivar los casos de eDiscovery (Premium) 1.0 exportando el contenido y almacenándolo sin conexión. Aunque todavía podrá acceder a eDiscovery (Premium) v1.0 en los casos existentes hasta el 31 de diciembre de 2020, Soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de octubre de 2020. Consulte la siguiente escala de tiempo para obtener más detalles.
 

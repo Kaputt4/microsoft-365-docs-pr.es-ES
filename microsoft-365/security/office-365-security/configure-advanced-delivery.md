@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647807"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011594"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -45,7 +45,7 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 - [Las alertas predeterminadas del sistema](/microsoft-365/compliance/alert-policies#default-alert-policies) no se desencadenan para estos escenarios.
 - [AIR y los clústeres de Defender para Office 365](office-365-air.md) omiten estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
-  - [Administración envíos](admin-submission.md) genera una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administradores mostrará estos mensajes como una amenaza simulada.
+  - [Los envíos de administradores](admin-submission.md) generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administradores mostrará estos mensajes como una amenaza simulada.
   - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad mediante el mensaje de informe [o los complementos de suplantación de identidad](enable-the-report-message-add-in.md) de informe, el sistema no generará una alerta, una investigación o un incidente. Los vínculos o archivos no se detonarán, pero el mensaje también se mostrará en la pestaña **Mensajes notificados** por el usuario de la página **Envíos** .
   - [Caja fuerte Vínculos en Defender para Office 365](safe-links.md) no bloquea ni detona las direcciones URL específicamente identificadas en estos mensajes al hacer clic. Las direcciones URL siguen encapsuladas, pero no se bloquean.
   - [Caja fuerte Datos adjuntos en Defender para Office 365](safe-attachments.md) no detona los datos adjuntos en estos mensajes.
@@ -54,19 +54,19 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 
 <sup>\*\*</sup> Puede omitir ZAP para malware mediante la creación de una directiva antimalware para el buzón de SecOps donde zap para malware está desactivado. Para obtener instrucciones, consulte [Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md).
 
-Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Administración experiencias mostrarán estos mensajes como debido a una invalidación del sistema de **simulación de suplantación de identidad (phishing)** o a una invalidación del sistema de **buzones de SecOps**. Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
+Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Las experiencias de administración mostrarán estos mensajes como debido a una invalidación del sistema de **simulación de suplantación de identidad (phishing)** o a una invalidación del sistema de **buzones de SecOps** . Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
 
-- [Explorador de amenazas/Detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad** o **Buzón de SecOps**.
-- La [página Entidad de correo electrónico del Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md): Administración puede ver un mensaje permitido por la directiva de la organización mediante **el buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones**.
-- El [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report): Administración puede filtrar por **ver los datos por invalidación del sistema** en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad (phishing). Para ver los mensajes permitidos por la invalidación del buzón de SecOps, puede seleccionar **desglose del gráfico por ubicación de entrega** en el menú desplegable **desglose del gráfico por motivo** .
+- [Explorador de amenazas/Detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md): el administrador puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad** o **Buzón de SecOps**.
+- La [página Entidad de correo electrónico del Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md): el administrador puede ver un mensaje permitido por la directiva de la organización mediante el **buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones** .
+- El [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report): el administrador puede filtrar por **ver los datos por invalidación del sistema** en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad (phishing). Para ver los mensajes permitidos por la invalidación del buzón de SecOps, puede seleccionar **desglose del gráfico por ubicación de entrega** en el menú desplegable **desglose del gráfico por motivo** .
 - [Búsqueda avanzada en Microsoft Defender para punto de conexión](../defender-endpoint/advanced-hunting-overview.md): la simulación de suplantación de identidad y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents.
-- [Vistas de campaña](campaigns.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad (Phishing)** o **Buzón de SecOps**.
+- [Vistas de campaña](campaigns.md): el administrador puede filtrar el **origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad (Phishing)** o **Buzón de SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Entrega avanzada** , abra <https://security.microsoft.com/advanceddelivery>.
 
-- Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+- Para conectarse a Security & Compliance PowerShell, consulte [Conectar a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - Debe tener asignados permisos para poder realizar los procedimientos de este artículo:
   - Para crear, modificar o quitar la configuración configurada en la directiva de entrega avanzada, debe ser miembro del grupo de roles **Administrador de seguridad** en el **portal de Microsoft 365 Defender** y miembro del grupo de roles Administración de la **organización** en **Exchange Online**.
@@ -75,7 +75,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
   Para obtener más información, vea [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md) y [Permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Uso del portal de Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
@@ -146,9 +146,9 @@ Además de los dos escenarios con los que la directiva de entrega avanzada puede
 
 - **Falsos positivos en revisión**: es posible que quiera permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos de administradores](admin-submission.md) informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, **_se recomienda encarecidamente_** que estas asignaciones sean temporales.
 
-## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell del Centro de cumplimiento de & seguridad para buzones de SecOps en la directiva de entrega avanzada
+## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell de cumplimiento de & seguridad para buzones de SecOps en la directiva de entrega avanzada
 
-En PowerShell de Security & Compliance Center, los elementos básicos de los buzones de SecOps de la directiva de entrega avanzada son:
+En Security & Compliance PowerShell, los elementos básicos de los buzones de SecOps en la directiva de entrega avanzada son:
 
 - **Directiva de invalidación de SecOps**: controlada por los **\*cmdlets -SecOpsOverridePolicy** .
 - **Regla de invalidación de SecOps**: controlada por los **\*cmdlets -SecOpsOverrideRule** .
@@ -279,9 +279,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, consulte [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell del Centro de cumplimiento de seguridad & para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell de cumplimiento de & seguridad para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-En PowerShell del Centro de cumplimiento de seguridad &, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
+En Security & Compliance PowerShell, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
 
 - **Directiva de invalidación de simulación de suplantación de identidad**: controlada por los **\*cmdlets -PhishSimOverridePolicy** .
 - **Regla de invalidación de simulación de suplantación de identidad**: controlada por los **\*cmdlets -PhishSimOverrideRule** .
