@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo recopilar información de diagnóstico de eDiscovery para un caso de Soporte técnico de Microsoft.
-ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095892"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014440"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Recopilar información de diagnóstico de eDiscovery
 
@@ -35,9 +35,9 @@ En ocasiones, los ingenieros de Soporte técnico de Microsoft requieren informac
 
 ## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>Recopilación de información de diagnóstico para eDiscovery (estándar)
 
-La recopilación de información de diagnóstico para eDiscovery (Estándar) se basa en cmdlets, por lo que tendrá que usar PowerShell del Centro de cumplimiento de seguridad &. En los siguientes ejemplos de PowerShell se ejecutarán cmdlets y, a continuación, se guardará la salida en un archivo de texto especificado. En la mayoría de los casos de soporte técnico, solo debe ejecutar uno de estos comandos.
+La recopilación de información de diagnóstico para eDiscovery (Estándar) se basa en cmdlets, por lo que tendrá que usar PowerShell de cumplimiento de seguridad &. En los siguientes ejemplos de PowerShell se ejecutarán cmdlets y, a continuación, se guardará la salida en un archivo de texto especificado. En la mayoría de los casos de soporte técnico, solo debe ejecutar uno de estos comandos.
 
-Para ejecutar los siguientes cmdlets, [conéctese a PowerShell</span> security & Compliance Center](/powershell/exchange/connect-to-scc-powershell). Una vez conectado, ejecute uno o varios de los siguientes comandos y asegúrese de reemplazar los marcadores de posición por los nombres de objeto reales.
+Para ejecutar los siguientes cmdlets, [conéctese a PowerShell</span> de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell). Una vez conectado, ejecute uno o varios de los siguientes comandos y asegúrese de reemplazar los marcadores de posición por los nombres de objeto reales.
 
 Después de revisar el archivo de texto generado y redactar información confidencial, envíela al ingeniero de Soporte técnico de Microsoft que trabaja en su caso.
 
@@ -80,13 +80,13 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 La **pestaña Configuración** en un caso de exhibición de documentos electrónicos (Premium) permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que pueda pegarla en un archivo de texto y enviarla a Soporte técnico de Microsoft.
 
-1. Vaya al portal de cumplimiento y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> > .
+1. Vaya al portal de cumplimiento y seleccione **eDiscovery Advanced (EDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced).**</a>
 
 2. Seleccione un caso y, a continuación, haga clic en la pestaña **Configuración**.
 
 3. En **Información del caso**, haga clic en **Seleccionar**.
 
-4. En la página de control flotante, haga clic en **ActionsCopy support information (Información de soporte técnico** de **ActionsCopy** > ) para copiar la información en el Portapapeles.
+4. En la página de control flotante, haga clic en **Acciones** > **Copiar información de soporte** técnico para copiar la información en el Portapapeles.
 
 5. Abra un archivo de texto (en Bloc de notas) y pegue la información en el archivo de texto.
 

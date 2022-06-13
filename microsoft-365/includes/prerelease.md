@@ -1,6 +1,6 @@
 ---
-title: Declinación de responsabilidades previas a la versión de Microsoft Defender para puntos de conexión
-description: Declinación de responsabilidades para la versión anterior a la versión de Microsoft Defender para endpoint.
+title: Microsoft Defender para punto de conexión aviso previo a la publicación
+description: Declinación de responsabilidades para la versión preliminar de Microsoft Defender para punto de conexión.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp

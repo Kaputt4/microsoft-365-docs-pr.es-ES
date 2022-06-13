@@ -14,20 +14,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE) para proteger las comunicaciones por correo electrónico entre los servidores de correo.
-ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131028"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015778"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Funcionamiento de la autenticación basada en DNS SMTP de entidades con nombre (DANE)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-El protocolo SMTP es el protocolo principal que se usa para transferir mensajes entre servidores de correo y, de forma predeterminada, no es seguro. El protocolo seguridad de la capa de transporte (TLS) se introdujo hace años para admitir la transmisión cifrada de mensajes a través de SMTP. Se usa normalmente de forma oportunista en lugar de como requisito, dejando mucho tráfico de correo electrónico en texto no cifrado, vulnerable a la interceptación por parte de actores nefastos. Además, SMTP determina las direcciones IP de los servidores de destino a través de la infraestructura dns pública, que es susceptible a ataques de suplantación de identidad y ataques de tipo "Man in the Middle" (MITM). Esto ha llevado a crear muchos estándares nuevos para aumentar la seguridad para enviar y recibir correo electrónico, uno de ellos es la autenticación basada en DNS de entidades con nombre (DANE).
-  
-DANE para SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) usa la presencia de un registro de autenticación de seguridad de la capa de transporte (TLSA) en el conjunto de registros DNS de un dominio para indicar un dominio y sus servidores de correo admiten DANE. Si no hay ningún registro TLSA presente, la resolución DNS para el flujo de correo funcionará como de costumbre sin que se intente realizar ninguna comprobación DANE. El registro TLSA indica de forma segura la compatibilidad con TLS y publica la directiva DANE para el dominio. Por lo tanto, el envío de servidores de correo puede autenticar correctamente servidores de correo receptor legítimos mediante SMTP DANE. Esto hace que sea resistente a los ataques de degradación y MITM. DANE tiene dependencias directas en DNSSEC, que funciona firmando digitalmente registros para búsquedas DNS mediante criptografía de clave pública. Las comprobaciones de DNSSEC se producen en los solucionadores DNS recursivos, los servidores DNS que realizan consultas DNS para los clientes. DNSSEC garantiza que los registros DNS no se manipulen y sean auténticos.  
+El protocolo SMTP es el protocolo principal que se usa para transferir mensajes entre servidores de correo y, de forma predeterminada, no es seguro. El protocolo seguridad de la capa de transporte (TLS) se introdujo hace años para admitir la transmisión cifrada de mensajes a través de SMTP. Se usa normalmente de forma oportunista en lugar de como requisito, dejando mucho tráfico de correo electrónico en texto no cifrado, vulnerable a la interceptación por parte de actores nefastos. Además, SMTP determina las direcciones IP de los servidores de destino a través de la infraestructura dns pública, que es susceptible a ataques de suplantación de identidad y ataques de tipo "Man in the Middle" (MITM). Esto ha llevado a crear muchos estándares nuevos para aumentar la seguridad para enviar y recibir correo electrónico, uno de ellos es la autenticación basada en DNS de entidades con nombre (DANE). 
 
 DANE para SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) usa la presencia de un registro de autenticación de seguridad de la capa de transporte (TLSA) en el conjunto de registros DNS de un dominio para indicar un dominio y sus servidores de correo admiten DANE. Si no hay ningún registro TLSA presente, la resolución DNS para el flujo de correo funcionará como de costumbre sin que se intente realizar ninguna comprobación DANE. El registro TLSA indica de forma segura la compatibilidad con TLS y publica la directiva DANE para el dominio. Por lo tanto, el envío de servidores de correo puede autenticar correctamente servidores de correo receptor legítimos mediante SMTP DANE. Esto hace que sea resistente a los ataques de degradación y MITM. DANE tiene dependencias directas en DNSSEC, que funciona firmando digitalmente registros para búsquedas DNS mediante criptografía de clave pública. Las comprobaciones de DNSSEC se producen en los solucionadores DNS recursivos, los servidores DNS que realizan consultas DNS para los clientes. DNSSEC garantiza que los registros DNS no se manipulen y sean auténticos.
 
@@ -51,8 +49,8 @@ Hay cuatro campos configurables únicos para el tipo de registro TLSA:
 
 |Valor|Acrónimo|Descripción|
 |---|---|---|
-|01<sup></sup>|PKIX-TA|El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.|
-|11<sup></sup>|PKIX-EE|El certificado comprobado es el servidor de destino; Las comprobaciones de DNSSEC deben comprobar su autenticidad.|
+|0<sup>1</sup>|PKIX-TA|El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.|
+|1<sup>1</sup>|PKIX-EE|El certificado comprobado es el servidor de destino; Las comprobaciones de DNSSEC deben comprobar su autenticidad.|
 |2|DANE-TA|Use la clave privada del servidor del árbol X.509 que debe validar un delimitador de confianza en la cadena de confianza. El registro TLSA especifica el delimitador de confianza que se usará para validar los certificados TLS para el dominio.|
 |3|DANE-EE|Solo coincide con el certificado del servidor de destino.|
 

@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Inquilinos.
-ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128382"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016529"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Información general de la página Inquilinos de Microsoft 365 Lighthouse
 

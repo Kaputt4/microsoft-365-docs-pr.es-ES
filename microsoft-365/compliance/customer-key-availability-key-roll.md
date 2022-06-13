@@ -12,14 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo revertir las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente. Los servicios incluyen archivos Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams.
-ms.openlocfilehash: 81d82f49c056f5a6ec9b8731b549aee68d5d658b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761359"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017342"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rotar o alternar una Clave de cliente o una clave de disponibilidad
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > Implemente solo una clave de cifrado que use con clave de cliente cuando los requisitos de seguridad o cumplimiento determinen que debe revertir la clave. Además, no elimine las claves que estén o estén asociadas a directivas. Al deshacer las claves, habrá contenido cifrado con las claves anteriores. Por ejemplo, aunque los buzones activos se volverán a cifrar con frecuencia, los buzones inactivos, desconectados y deshabilitados todavía se pueden cifrar con las claves anteriores. SharePoint Online realiza una copia de seguridad del contenido con fines de restauración y recuperación, por lo que es posible que todavía haya contenido archivado mediante claves anteriores.
@@ -53,7 +55,7 @@ Al implementar cualquiera de las claves de Azure Key Vault asociadas a un DEP us
 
 Para indicar a Customer Key que use la nueva clave para cifrar varias cargas de trabajo, complete estos pasos:
 
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global o administrador de cumplimiento en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Ejecute el cmdlet Set-M365DataAtRestEncryptionPolicy.
   
@@ -103,10 +105,10 @@ SharePoint Online solo le permite lanzar una tecla a la vez. Si desea revertir a
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Cifrado de servicio con clave de cliente para Office 365](customer-key-overview.md)
+- [Cifrado de servicio con clave de cliente](customer-key-overview.md)
 
-- [Configurar clave de cliente de Office 365](customer-key-set-up.md)
+- [Configuración de la clave de cliente](customer-key-set-up.md)
 
-- [Administrar Clave de cliente de Office 365](customer-key-manage.md)
+- [Administrar clave de cliente](customer-key-manage.md)
 
 - [Más información sobre la clave de disponibilidad](customer-key-availability-key-understand.md)

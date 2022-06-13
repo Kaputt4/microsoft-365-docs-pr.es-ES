@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9eb4e69aa833e8a355115115e1c965e57d65716c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435289"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017172"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 
@@ -50,7 +50,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
-1. En el portal de cumplimiento Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datosExact datos que coinciden con los** >  **esquemas DEEDM**.
+1. En el portal de cumplimiento de Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Datos exactos que coinciden con los** > **esquemas EDM**.
 
 2. Elija **Crear esquema EDM** para abrir el flotante de configuración del asistente de esquemas.
 
@@ -80,7 +80,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
 
 Si creó el esquema EDM en el Asistente para esquemas EDM, debe exportar el archivo de esquema EDM en formato XML. Lo necesitará en hash [y cargará la tabla de origen de información confidencial para obtener datos exactos que coincidan con la fase de tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Para exportar el archivo de esquema EDM, use esta sintaxis:
 
@@ -175,7 +175,7 @@ El indicador `ignoredDelimiters` no es compatible con:
 
    Una vez que haya creado el archivo de esquema EDM en formato XML, tendrá que cargarlo en el servicio en la nube.
 
-2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+2. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 3. Para cargar el esquema de base de datos, ejecute el siguiente comando:
 

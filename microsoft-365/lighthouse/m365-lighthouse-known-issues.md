@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022787"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016732"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -73,10 +74,7 @@ En este artículo se enumeran los problemas conocidos de Microsoft 365 Lighthous
 
 ## <a name="granular-delegated-admin-privileges-gdap"></a>Privilegios de administrador delegados granulares (GDAP)
 
-> [!NOTE]
-> GDAP se encuentra actualmente en [versión preliminar técnica](/partner-center/announcements/2022-february#6) (versión preliminar pública) para permitir a los asociados asignar permisos granulares antes de que GDAP esté disponible con carácter general.
-
-Actualmente, DAP es necesario para incorporar clientes a Lighthouse. También se recomienda establecer GDAP con los clientes para habilitar un acceso delegado más seguro. Aunque DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos están en vigor. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.<br><br>
+Se requiere privilegios de administrador delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.<br><br>
 
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |

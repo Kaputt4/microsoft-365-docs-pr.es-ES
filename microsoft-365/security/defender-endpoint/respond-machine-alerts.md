@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f290af2808db1aa56f39593ec4f9fac68c0f76d8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438825"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014616"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión, planes 1 y 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender para Empresas](/microsoft-365/security/defender-business/mdb-overview)
+
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 Responda rápidamente a los ataques detectados mediante el aislamiento de dispositivos o la recopilación de un paquete de investigación. Después de realizar acciones en los dispositivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 
@@ -40,6 +43,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 - Ejecutar examen de antivirus
 - Restringir ejecución de aplicación
 - Aislar el dispositivo
+- Contener dispositivo
 - Consultar a un experto en amenazas
 - Centro de actividades
 
@@ -89,8 +93,7 @@ Para obtener más información sobre la respuesta en vivo, consulte [Investigaci
 Como parte del proceso de investigación o respuesta, puede recopilar un paquete de investigación de un dispositivo. Al recopilar el paquete de investigación, puede identificar el estado actual del dispositivo y comprender aún más las herramientas y técnicas usadas por el atacante.
 
 > [!IMPORTANT]
->
->Estas acciones no se admiten actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
+> Estas acciones no se admiten actualmente para dispositivos que ejecutan macOS o Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
 
 Para descargar el paquete (archivo Zip) e investigar los eventos que se produjeron en un dispositivo
 
@@ -153,8 +156,8 @@ El Centro de acciones mostrará la información de examen y la escala de tiempo 
 
 Además de contener un ataque mediante la detención de procesos malintencionados, también puede bloquear un dispositivo e impedir que se ejecuten intentos posteriores de programas potencialmente malintencionados.
 
->[!IMPORTANT]
-> - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, Windows 11 y Windows Server 2016. 
+> [!IMPORTANT]
+> - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, Windows 11 y Windows Server 2019 o posterior. 
 > - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender Control de aplicaciones. Para obtener más información, vea [Formatos de directivas de integridad de código y firma](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -173,17 +176,17 @@ Cuando una aplicación está restringida, se muestra la siguiente notificación 
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="Mensaje de restricción de la aplicación" lightbox="images/atp-app-restriction.png":::
 
->[!NOTE]
->La notificación no está disponible en Windows Server 2016 y Windows Server 2012 R2.
+> [!NOTE]
+> La notificación no está disponible en Windows Server 2016 y Windows Server 2012 R2.
 
 ## <a name="isolate-devices-from-the-network"></a>Aislar dispositivos de la red
 
 En función de la gravedad del ataque y de la confidencialidad del dispositivo, es posible que desee aislar el dispositivo de la red. Esta acción puede ayudar a evitar que el atacante controle el dispositivo en peligro y realice otras actividades, como la filtración de datos y el movimiento lateral.
 
 > [!IMPORTANT]
-> - Actualmente no se admite el aislamiento de dispositivos de la red para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
-> - El aislamiento completo está disponible para dispositivos en Windows 10, versión 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
-> - El aislamiento selectivo está disponible para los dispositivos en Windows 10, versión 1709 o posterior y Windows 11.
+> - Actualmente no se admite el aislamiento de dispositivos de la red para dispositivos que ejecutan macOS o Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
+> - El aislamiento completo está disponible para los dispositivos que ejecutan Windows 11, Windows 10, versión 1703 o posterior, Windows Server 2022, Windows Server 2019 y Windows Server 2016.
+> - El aislamiento selectivo está disponible para los dispositivos que ejecutan Windows 10, versión 1709 o posterior y Windows 11.
 > - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivo desconecta el dispositivo en peligro de la red mientras conserva la conectividad con el servicio Defender para punto de conexión, que sigue supervisando el dispositivo.
@@ -206,6 +209,49 @@ Cuando se aísla un dispositivo, se muestra la siguiente notificación para info
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="Un mensaje sin conexión de red" lightbox="images/atp-notification-isolate.png":::
 
+## <a name="contain-devices-from-the-network"></a>Contener dispositivos de la red
+
+Cuando haya identificado un dispositivo no administrado que está en peligro o potencialmente en peligro, es posible que desee contener ese dispositivo de la red. Cuando contenga un dispositivo, cualquier Microsoft Defender para punto de conexión dispositivo incorporado bloqueará la comunicación entrante y saliente con ese dispositivo. Esta acción puede ayudar a evitar que los dispositivos vecinos se pongan en peligro mientras el analista de operaciones de seguridad localiza, identifica y corrige la amenaza en el dispositivo en peligro.
+
+> [!NOTE]
+> El bloqueo de la comunicación entrante y saliente con un dispositivo "contenido" es compatible con dispositivos incorporados Microsoft Defender para punto de conexión Windows 10 y Windows Server 2019+.
+
+### <a name="how-to-contain-a-device"></a>Cómo contener un dispositivo
+
+1. Vaya a la página **Inventario de** dispositivos y seleccione el dispositivo que va a contener.
+
+2. Seleccione **Contener dispositivo** en el menú acciones del control flotante del dispositivo.
+
+:::image type="content" alt-text="Captura de pantalla del mensaje emergente de contenido del dispositivo." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
+3. En el elemento emergente Contener dispositivo, escriba un comentario y seleccione **Confirmar**.
+
+:::image type="content" alt-text="Captura de pantalla del elemento de menú Contener dispositivo." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+### <a name="contain-a-device-from-the-device-page"></a>Contener un dispositivo de la página del dispositivo
+
+Un dispositivo también se puede incluir en la página del dispositivo seleccionando **Contener dispositivo** en la barra de acciones:
+
+:::image type="content" alt-text="Captura de pantalla del elemento de menú Contener dispositivo en la página del dispositivo." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+> Los detalles sobre un dispositivo recién contenido pueden tardar hasta 5 minutos en llegar a Microsoft Defender para punto de conexión dispositivos incorporados.
+
+> [!IMPORTANT]
+> - Si un dispositivo contenido cambia su dirección IP, todos los Microsoft Defender para punto de conexión dispositivos incorporados lo reconocerán y comenzarán a bloquear las comunicaciones con la nueva dirección IP. La dirección IP original ya no se bloqueará (puede tardar hasta 5 minutos en ver estos cambios).  
+> - En los casos en los que otro dispositivo de la red usa la dirección IP del dispositivo contenido, habrá una advertencia mientras contiene el dispositivo, con un vínculo a la búsqueda avanzada (con una consulta rellenada previamente). Esto proporcionará visibilidad a los demás dispositivos que usan la misma dirección IP para ayudarle a tomar una decisión consciente si desea continuar con la contención del dispositivo.
+> - En los casos en los que el dispositivo contenido sea un dispositivo de red, aparecerá una advertencia con un mensaje que indica que esto puede provocar problemas de conectividad de red (por ejemplo, que contiene un enrutador que actúa como puerta de enlace predeterminada). En este momento, podrá elegir si desea contener el dispositivo o no.
+
+Después de contener un dispositivo, si el comportamiento no es el esperado, compruebe que el servicio Motor de filtrado base (BFE) está habilitado en los dispositivos incorporados de Defender para punto de conexión.
+
+### <a name="stop-containing-a-device"></a>Dejar de contener un dispositivo
+
+Podrá dejar de contener un dispositivo en cualquier momento.
+
+1. Seleccione el dispositivo en inventario **de** dispositivos o abra la página del dispositivo.
+
+2. Seleccione **Liberar desde la contención** en el menú de acción. Esta acción restaurará la conexión de este dispositivo a la red.
+
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
 Puede consultar a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente comprometido o ya comprometido. Expertos en amenazas de Microsoft se pueden contratar directamente desde el Microsoft 365 Defender para obtener una respuesta oportuna y precisa. Los expertos proporcionan información no solo sobre un dispositivo potencialmente comprometido, sino también para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibe, o si necesita más información sobre las alertas o un contexto de inteligencia sobre amenazas que ve en el panel del portal.
@@ -226,7 +272,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, la fec
 :::image type="content" source="images/action-center-details.png" alt-text="Centro de acciones con información" lightbox="images/action-center-details.png":::
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manual en Microsoft Defender para punto de conexión Plan 1](defender-endpoint-plan-1.md#manual-response-actions)

@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2d003ce76db677b22b3873f6f19df05b34f06b96
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838877"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016204"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft 365 Defender para el plan de punto de conexión 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus de Microsoft Defender
@@ -42,17 +42,15 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 - [Versiones admitidas del sistema operativo](#supported-operating-systems)
 - [Sistemas de administración de configuración admitidos](#supported-configuration-management-systems)
 - [Detalles de alerta y notificación por regla](#per-rule-alert-and-notification-details)
-- [Matriz de reglas y GUID de ASR](#asr-rules-and-guids-matrix)
+- [Regla ASR a matriz GUID](#asr-rule-to-guid-matrix)
 - [Modos de regla de ASR](#asr-rule-modes)
 - [Descripciones por regla](#per-rule-descriptions)
-  - Descripciones de reglas
-  - Nombres de reglas del sistema de administración de configuración
 
 ## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 En la tabla siguiente se enumeran los sistemas operativos admitidos para las reglas que se publican actualmente para la disponibilidad general. Las reglas se enumeran en orden alfabético en esta tabla.
 
-> [!Note]
+> [!NOTE]
 >
 > A menos que se indique lo contrario, la compilación mínima Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima Windows&nbsp; Server es la versión 1809 o posterior.
 >
@@ -60,7 +58,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 
 | Nombre de regla| &nbsp;Windows 11 <br>y<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>y<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal semianual) o posterior | v | v |
+| [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal de Enterprise semianual) o posterior | v | v |
 | [Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v <br> versión 1809 o posterior <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Impedir que todas las aplicaciones Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v | v | v |
 | [Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> versión 1803 o posterior <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
@@ -119,7 +117,7 @@ Las notificaciones del sistema se generan para todas las reglas en modo de bloqu
 
 Para las reglas con el "estado de regla" especificado:
 
-- Las reglas de ASR con \<ASR Rule, Rule State\> combinaciones se usan para exponer alertas (notificaciones del sistema) en Microsoft Defender para punto de conexión solo para dispositivos en el nivel de bloque de alta nube. Los dispositivos que no están en el nivel de bloque de nube alta no generarán alertas para ninguna <combinación de reglas de ASR, estado de regla>
+- Las reglas de ASR con \<ASR Rule, Rule State\> combinaciones se usan para exponer alertas (notificaciones del sistema) en Microsoft Defender para punto de conexión solo para dispositivos en el nivel de bloque de alta nube. Los dispositivos que no estén en el nivel de bloque de nube alta no generarán alertas para ninguna <combinación de reglas de ASR, estado de regla>
 - EDR alertas se generan para las reglas de ASR en los estados especificados, pero solo para dispositivos en el nivel de bloque de nube alta.
 
 | Nombre de regla: | Estado de regla: | ¿Genera alertas en EDR? <br> (Sí&nbsp;\|&nbsp;No) | ¿Genera notificaciones del sistema? <br> (Sí&nbsp;\|&nbsp;No) |
@@ -142,7 +140,7 @@ Para las reglas con el "estado de regla" especificado:
 |[Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) |   | N | v |
 |[Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Bloque de auditoría&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
   
-## <a name="asr-rules-and-guids-matrix"></a>Matriz de reglas y GUID de ASR
+## <a name="asr-rule-to-guid-matrix"></a>Regla ASR a matriz GUID
 
 | Nombre de la regla | GUID de regla |
 |:-----|:-----|
@@ -165,16 +163,16 @@ Para las reglas con el "estado de regla" especificado:
 
 ## <a name="asr-rule-modes"></a>Modos de regla de ASR
 
-- **Sin configurar** o **Deshabilitar**: este es el estado en el que la regla asr no se ha habilitado o se ha deshabilitado. Código para este estado = 0.
-- **Bloquear**: este es el estado en el que está habilitada la regla ASR. El código de este estado es 1.
-- **Auditoría**: este es el estado en el que se evalúa la regla ASR por su comportamiento impactivo hacia la organización o el entorno en el que se implementa. El código de este estado es 2.
-- **Advertir** Este es el estado en el que está habilitada la regla ASR y presenta una notificación al usuario final, pero permite al usuario final omitir el bloque. El código de este estado es 6.
+- **Sin configurar** o **Deshabilitar**: el estado en el que la regla ASR no se ha habilitado o se ha deshabilitado. Código para este estado = 0.
+- **Bloquear**: el estado en el que está habilitada la regla ASR. El código de este estado es 1.
+- **Auditoría**: el estado en el que se evalúa la regla ASR para el efecto que tendría en la organización o entorno si está habilitada (se establece para bloquear o advertir). El código de este estado es 2.
+- **Advertir** Estado en el que está habilitada la regla ASR y presenta una notificación al usuario final, pero permite al usuario final omitir el bloque. El código de este estado es 6.
 
 _El modo de advertencia_ es un tipo de modo de bloque que alerta a los usuarios sobre acciones potencialmente de riesgo. Los usuarios pueden optar por omitir el mensaje de advertencia de bloque y permitir la acción subyacente. Los usuarios pueden seleccionar **Aceptar** para aplicar el bloque o seleccionar la opción de omisión ( **Desbloquear** ) a través de la notificación del sistema emergente del usuario final que se genera en el momento del bloqueo. Una vez desbloqueada la advertencia, la operación se permite hasta la próxima vez que se produce el mensaje de advertencia, momento en el que el usuario final tendrá que volver a ejecutar la acción.
 
-Si se hace clic en el botón Permitir, el bloque se suprimirá durante 24 horas. Después de 24 horas, el usuario final tendrá que volver a permitir el bloque. El modo de advertencia para las reglas ASR solo se admite para dispositivos RS5+ (1809+). Si la omisión se asigna a reglas ASR en dispositivos con versiones anteriores, la regla estará en modo bloqueado.
+Cuando se hace clic en el botón Permitir, el bloque se suprimirá durante 24 horas. Después de 24 horas, el usuario final tendrá que volver a permitir el bloque. El modo de advertencia para las reglas ASR solo se admite para dispositivos RS5+ (1809+). Si la omisión se asigna a reglas ASR en dispositivos con versiones anteriores, la regla estará en modo bloqueado.
 
-También puede establecer una regla en modo de advertencia a través de PowerShell simplemente especificando el AttackSurfaceReductionRules_Actions como "Advertir". Por ejemplo:
+También puede establecer una regla en modo de advertencia a través de PowerShell especificando el AttackSurfaceReductionRules_Actions como "Advertir". Por ejemplo:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -186,7 +184,7 @@ También puede establecer una regla en modo de advertencia a través de PowerShe
 
 Esta regla impide que una aplicación escriba un controlador firmado vulnerable en el disco. Las aplicaciones \- locales _que tienen privilegios suficientes_ para obtener acceso al kernel pueden aprovechar los controladores firmados vulnerables \- que están en estado salvaje y vulnerables. Los controladores firmados vulnerables permiten a los atacantes deshabilitar o eludir las soluciones de seguridad, lo que finalmente conduce a un riesgo para el sistema.
 
-La regla **Bloquear abuso de controladores firmados vulnerables explotados** no impide que se cargue un controlador que ya existe en el sistema.
+La regla **Bloquear abuso de controladores firmados vulnerables vulnerables** no impide que se cargue un controlador que ya existe en el sistema.
 
 > [!NOTE]
 >
@@ -217,7 +215,7 @@ Dependencies: none provided by engineering
 
 Esta regla evita ataques al impedir que Adobe Reader cree procesos.
 
-A través de ingeniería social o vulnerabilidades de seguridad, el malware puede descargar e iniciar cargas útiles, y salir de Adobe Reader. Al impedir que Adobe Reader genere procesos secundarios, no se puede propagar el malware que intenta usarlo como vector.
+El malware puede descargar e iniciar cargas útiles y salir de Adobe Reader a través de ingeniería social o vulnerabilidades de seguridad. Al impedir que Adobe Reader genere procesos secundarios, no se puede propagar el malware que intenta usar Adobe Reader como vector de ataque.
 
 Intune nombre:`Process creation from Adobe Reader (beta)`
 
@@ -255,7 +253,7 @@ Dependencias: MDAV
 
 Esta regla ayuda a evitar el robo de credenciales mediante el bloqueo del servicio de subsistema de autoridad de seguridad local (LSASS).
 
-LSASS autentica a los usuarios que inician sesión en un equipo Windows. Credential Guard de Microsoft Defender en Windows normalmente impide los intentos de extraer credenciales de LSASS. Sin embargo, algunas organizaciones no pueden habilitar Credential Guard en todos sus equipos debido a problemas de compatibilidad con controladores de tarjeta inteligente personalizados u otros programas que se cargan en la autoridad de seguridad local (LSA). En estos casos, los atacantes pueden usar herramientas de piratería como Mimikatz para extraer contraseñas de texto no cifrado y hashES NTLM de LSASS.
+LSASS autentica a los usuarios que inician sesión en un equipo Windows. Credential Guard de Microsoft Defender en Windows normalmente impide los intentos de extraer credenciales de LSASS. Algunas organizaciones no pueden habilitar Credential Guard en todos sus equipos debido a problemas de compatibilidad con controladores de tarjeta inteligente personalizados u otros programas que se cargan en la autoridad de seguridad local (LSA). En estos casos, los atacantes pueden usar herramientas como Mimikatz para extraer contraseñas de texto no cifrado y hashES NTLM de LSASS.
 
 > [!NOTE]
 > En algunas aplicaciones, el código enumera todos los procesos en ejecución e intenta abrirlos con permisos exhaustivos. Esta regla deniega la acción de apertura del proceso de la aplicación y registra los detalles en el registro de eventos de seguridad. Esta regla puede generar mucho ruido. Si tiene una aplicación que simplemente enumera LSASS, pero no tiene ningún impacto real en la funcionalidad, no es necesario agregarla a la lista de exclusión. Por sí sola, esta entrada del registro de eventos no indica necesariamente una amenaza malintencionada.
@@ -334,7 +332,7 @@ Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
 > [!IMPORTANT]
 > Los scripts de PowerShell se han excluido temporalmente de la regla "Bloquear la ejecución de scripts potencialmente ofuscados" debido a los problemas de FP a gran escala que se han enfrentado en el pasado.
 
-La ofuscación de scripts es una técnica común que usan los autores de malware y las aplicaciones legítimas para ocultar la propiedad intelectual o reducir los tiempos de carga de scripts. Los autores de malware también usan la ofuscación para dificultar la lectura de código malintencionado, lo que impide un examen minucioso por parte de los humanos y el software de seguridad.
+La ofuscación de scripts es una técnica común que usan los autores de malware y las aplicaciones legítimas para ocultar la propiedad intelectual o reducir los tiempos de carga de scripts. Los autores de malware también usan ofuscación para dificultar la lectura de código malintencionado, lo que dificulta el examen de cerca por parte de los humanos y el software de seguridad.
 
 > [!IMPORTANT]
 > Debido al alto número de falsos positivos, esta regla no detecta actualmente scripts de PowerShell; se trata de una solución temporal. La regla se actualizará y comenzará a volver a detectar scripts de PowerShell pronto.
@@ -459,7 +457,7 @@ Dependencias: MDAV, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI
 
-Esta regla impide que se ejecuten los procesos creados a través de [PsExec](/sysinternals/downloads/psexec) y [WMI](/windows/win32/wmisdk/about-wmi) . PsExec y WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
+Esta regla impide que se ejecuten los procesos creados a través de [PsExec](/sysinternals/downloads/psexec) y [WMI](/windows/win32/wmisdk/about-wmi) . PsExec y WMI pueden ejecutar código de forma remota. Existe el riesgo de que el malware abuse de la funcionalidad de PsExec y WMI con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
 > Use esta regla solo si va a administrar los dispositivos con [Intune](/intune) u otra solución MDM. Esta regla no es compatible con la administración a través [de Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente Configuration Manager usa para funcionar correctamente.
@@ -480,6 +478,9 @@ Dependencias: MDAV
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB
 
 Con esta regla, los administradores pueden evitar que los archivos ejecutables no firmados o que no son de confianza se ejecuten desde unidades extraíbles USB, incluidas las tarjetas SD. Los tipos de archivo bloqueados incluyen archivos ejecutables (como .exe, .dll o .scr)
+
+> [!IMPORTANT]
+> Esta regla bloqueará los archivos copiados desde el USB a la unidad de disco si y cuándo se van a ejecutar en la unidad de disco.
 
 Intune nombre:`Untrusted and unsigned processes that run from USB`
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945481"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015222"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -33,7 +33,7 @@ En este artículo se describe cómo implementar las directivas de acceso a dispo
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus necesidades: **punto de partida**, **empresa** y **seguridad especializada**. Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
 
-Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones de Outlook móviles también están diseñadas con funcionalidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, consulte [preguntas más frecuentes sobre Outlook para iOS y Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones de Outlook móviles también están diseñadas con funcionalidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, consulte [Outlook para iOS y Android P+F](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
 ## <a name="update-common-policies-to-include-email"></a>Actualización de directivas comunes para incluir correo electrónico
 
@@ -72,7 +72,7 @@ Puede restringir la capacidad de los usuarios para descargar datos adjuntos de O
 
 Estos son los pasos:
 
-1. [Conectar a una sesión de PowerShell remota de Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. Si aún no tiene una directiva de buzón de OWA, cree una con el cmdlet [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) .
 3. Si desea permitir la visualización de datos adjuntos pero sin descarga, use este comando:
 
@@ -94,7 +94,7 @@ Estos son los pasos:
 
    \> **Controles de acceso** **Sesión**: seleccione **Usar restricciones aplicadas por la aplicación**
 
-## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android usen Outlook
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android deben usar Outlook
 
 Para asegurarse de que los usuarios de dispositivos iOS y Android solo puedan acceder a contenido profesional o educativo mediante Outlook para iOS y Android, necesita una directiva de acceso condicional destinada a esos usuarios potenciales.
 

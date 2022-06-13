@@ -20,16 +20,16 @@ description: Los usuarios deben tener asignados permisos en Microsoft 365 Securi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130766"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018016"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +40,7 @@ A los usuarios se les deben asignar permisos en el Centro de cumplimiento de seg
 
 Para obtener más información sobre los distintos permisos que puede conceder a los usuarios en el Centro de cumplimiento de seguridad &, consulte [Permisos en el Centro de cumplimiento de seguridad &](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Debe ser administrador global o miembro del grupo de roles OrganizationManagement en el Centro de cumplimiento de seguridad & para completar los pasos descritos en este artículo.
 
@@ -56,15 +56,15 @@ Para obtener más información sobre los distintos permisos que puede conceder a
 
 2. En la lista de grupos de roles, elija el grupo de roles y, a continuación, haga clic en **el icono Editar** ![edición.](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. En la página de propiedades del grupo de roles, en **Miembros**, haga clic en **AgregarAgregar**![ icono.](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
+3. En la página de propiedades del grupo de roles, en **Miembros**, haga clic en **Agregar**![icono.](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
 
 4. Cuando haya seleccionado todos los usuarios que desea agregar al grupo de roles, haga clic en **agregar\>** y, a continuación, **en Aceptar**.
 
 5. Cuando haya terminado, haga clic en **Guardar**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Uso de PowerShell de Security & Compliance Center para proporcionar a otro usuario acceso al Centro de cumplimiento de seguridad &
+## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Uso de Security & Compliance PowerShell para proporcionar a otro usuario acceso al Centro de cumplimiento de seguridad &
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Utilice la siguiente sintaxis:
 
@@ -88,7 +88,7 @@ Para comprobar que ha concedido correctamente acceso al Centro de cumplimiento d
 
 - En el Centro de cumplimiento de seguridad &, vaya a **Permisos** y seleccione el grupo de roles. En el control flotante de detalles que se abre, compruebe los miembros del grupo de roles.
 
-- En PowerShell de Security & Compliance Center, reemplace por \<RoleGroupName\> el nombre del grupo de roles y ejecute el siguiente comando:
+- En PowerShell de cumplimiento de seguridad &, reemplace por \<RoleGroupName\> el nombre del grupo de roles y ejecute el siguiente comando:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

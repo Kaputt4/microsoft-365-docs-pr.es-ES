@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según sus necesidades organizativas.
-ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754000"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016974"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Prevención de pérdida de datos de Microsoft Purview (DLP) ayuda a evitar el uso compartido accidental o accidental de información confidencial.
+La prevención de pérdida de datos (DLP) de Microsoft Purview le ayuda a evitar el uso compartido accidental o accidental de información confidencial.
 
 DLP examina los mensajes de correo electrónico y los archivos para obtener información confidencial, como un número de tarjeta de crédito. Con DLP puede detectar información confidencial y realizar acciones como las siguientes:
 
@@ -44,7 +44,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
   
 1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
     
-2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview. 
+2. Cree un grupo de roles en la página **Permisos** del portal de cumplimiento de Microsoft Purview. 
 
 3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento dlp**.
     
@@ -94,7 +94,7 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 Cuando los riesgos de pérdida de datos no son completamente obvios, es difícil averiguar dónde debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas DLP se pueden ejecutar en "modo de prueba", lo que le permite medir su eficacia y precisión antes de activarlas.
 
-Las directivas DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través de la portal de cumplimiento Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En la portal de cumplimiento Microsoft Purview, encontrará las **directivas DLP en Directiva de prevención** >  de pérdida de datos. Elija **Crear una directiva** para iniciar.
+Las directivas DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través del portal de cumplimiento de Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En el portal de cumplimiento de Microsoft Purview, encontrará las directivas DLP en **Directiva de prevención** >  de pérdida de datos. Elija **Crear una directiva** para iniciar.
 
 Microsoft 365 proporciona una serie de [plantillas de directiva DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Digamos que eres un negocio australiano. Puede filtrar las plantillas en Australia y elegir Financiero, Médico y Salud y Privacidad.
 
@@ -235,7 +235,7 @@ Cuando esté satisfecho de que la directiva DLP detecte de forma precisa y efica
 
 ![Opción para activar la directiva.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando a ver cuándo surtirá efecto la directiva, [Conectar a PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell) y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver DistributionStatus.
+Si está esperando a ver cuándo surtirá efecto la directiva, [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell) y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

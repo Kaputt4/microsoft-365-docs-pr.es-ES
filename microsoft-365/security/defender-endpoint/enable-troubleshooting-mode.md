@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 624dbfe677240dd3c16e4d0f59204971f29504b0
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 25f464719bb8877155fa4fd7e591b0ad266c3305
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872642"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015339"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -85,7 +85,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 - Dispositivo que ejecuta Windows 10 (versión 19044.1618 o posterior), Windows 11, Windows Server 2019 o Windows Server 2022.
 
-  Semestre/Redstone|Versión del sistema operativo|Liberar
+  Semestre/Redstone|Versión del sistema operativo|Release
   :---|:---|:---
   21H2/SV1|>=22000.593|[KB5011563: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)
@@ -138,7 +138,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(3h)
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
@@ -149,7 +149,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | sort by count_
 ```
@@ -162,7 +162,7 @@ ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```

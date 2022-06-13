@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648616"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015800"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP) tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
+Las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 
 ## <a name="policy-templates"></a>Plantillas de directiva 
 
@@ -66,7 +66,7 @@ actualizado: 23/06/2021
 |Medicina y salud| Ley de información sobre salud (HIA) de Canadá |- [Número de pasaporte de Canadá](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Número de seguro social de Canadá](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Número del servicio de mantenimiento de Canadá](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Número de identificación de salud personal de Canadá](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Medicina y salud| Ley de Información de Salud Personal (PHIA) de Canadá Manitoba|- [Número de seguro social de Canadá](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Número del servicio de mantenimiento de Canadá](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Número de identificación de salud personal de Canadá](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Medicina y salud| Ley de Salud Personal del Canadá (PHIPA) Ontario |- [Número de pasaporte de Canadá](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Número de seguro social de Canadá](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Número del servicio de mantenimiento de Canadá](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Número de identificación de salud personal de Canadá](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Medicina y salud| Ley de acceso a informes médicos del Reino Unidos|- [Número del servicio nacional de salud del Reino Unido](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
+|Medicina y salud| ESPAÑA. Ley de acceso a informes médicos|- [Número del servicio nacional de salud del Reino Unido](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |Medicina y salud| Ley de seguro de salud (HIPAA) mejorada de EE. UU.|</br> - [Clasificación internacional de enfermedades (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Clasificación internacional de enfermedades (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) </br> - [Todos los nombres completos](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Todos los términos y condiciones médicos](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Direcciones físicas de EE. UU.](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
 |Medicina y salud| Ley de seguros de salud (HIPAA) de los EE. UU.| - [Clasificación internacional de enfermedades (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Clasificación internacional de enfermedades (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
 |Privacidad| Ley de privacidad de Australia mejorada|- [Número de licencia de conducir de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Número de pasaporte de Australia](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> - [Todos los nombres completos](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Todos los términos y condiciones médicos](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Direcciones físicas de Australia](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
@@ -87,10 +87,10 @@ actualizado: 23/06/2021
 |Privacidad| Protección de la información personal mejorada en Japón|- [Número de seguro social de Japón (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japón Mi número - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Número de pasaporte de Japón](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [Número de licencia de conducir de Japón](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [Todos los nombres completos](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Direcciones físicas de Japón](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
 |Privacidad| Protección de información personal de Japón|- [Número de registro de residente de Japón](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [Número de seguro social de Japón (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
 |Privacidad| Datos de identificación personal (PII) de Arabia Saudita|- [Id. nacional de Arabia Saudita](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
-|Privacidad| Ley de protección de datos del Reino Unido|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número de pasaporte de EE. UU./Reino Unido](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
-|Privacidad| Normas de comunicaciones electrónicas y privacidad del Reino Unido|- [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
-|Privacidad| Información de identificación personal (PII) del Reino Unido|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número de pasaporte de EE. UU./Reino Unido](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
-|Privacidad| Código de prácticas en línea de información personal (PIOCP) del Reino Unido|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número del servicio nacional de salud del Reino Unido](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Privacidad| ESPAÑA. Ley de protección de datos|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número de pasaporte de EE. UU./Reino Unido](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Privacidad| ESPAÑA. Reglamento de privacidad y comunicaciones electrónicas|- [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Privacidad| ESPAÑA. Datos de información de identificación personal (PII)|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número de pasaporte de EE. UU./Reino Unido](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
+|Privacidad| ESPAÑA. Código de práctica en línea de información personal (PIOCP)|- [Número de seguro nacional del Reino Unido (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Número del servicio nacional de salud del Reino Unido](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
 |Privacidad| Ley Patriota de EE. UU. mejorada|- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Número de cuenta bancaria de EE. UU.](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Número de seguro social (SSN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Todos los nombres completos](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Direcciones físicas de EE. UU.](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
 |Privacidad| Ley Patriota de los EE.UU.|- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Número de cuenta bancaria de EE. UU.](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Número de seguro social (SSN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |Privacidad| Datos de información de identificación personal (PII) de EE. UU. mejorados|- [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Número de seguro social (SSN) de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Número de pasaporte de EE. UU./Reino Unido](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [Todos los nombres completos](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Direcciones físicas de EE. UU.](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
@@ -525,8 +525,9 @@ Por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la Em
 
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> Los correos electrónicos de notificación se envían desprotegidos.
+> [!IMPORTANT]
+> - Los correos electrónicos de notificación se envían desprotegidos.
+> - Las notificaciones por correo electrónico solo se admiten para los servicios de Microsoft 365.
 
 También puede proporcionar a los usuarios la opción de [invalidar la directiva](#user-overrides), de modo que no se bloqueen si tienen una necesidad empresarial válida o si la directiva detecta un falso positivo.
 
@@ -648,7 +649,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Cuando una regla coincide, puede enviar un informe de incidentes a su responsable de cumplimento normativo (o a la persona que elija) con los detalles del evento. El informe incluye información sobre el elemento coincidente, el contenido real que coincidió con la regla y el nombre de la persona que modificó por última vez el contenido. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
 
-DLP alimenta la información de incidentes a otros servicios de protección de la información Microsoft Purview, como la [administración de riesgos internos](insider-risk-management.md). Para obtener información sobre incidentes en la administración de riesgos internos, debe establecer el nivel de gravedad **informes de incidentes** en **Alto**.
+DLP proporciona información sobre incidentes a otros servicios de protección de la información de Microsoft Purview, como [la administración de riesgos internos](insider-risk-management.md). Para obtener información sobre incidentes en la administración de riesgos internos, debe establecer el nivel de gravedad **informes de incidentes** en **Alto**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -662,7 +663,7 @@ DLP examina el correo electrónico de forma diferente a SharePoint elementos en 
 
 Si tiene varias reglas en una directiva, puede usar las **opciones Adicionales** para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

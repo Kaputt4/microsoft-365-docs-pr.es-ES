@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8cfaaec45ceefff89b17b561a5e80bebbdade6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098810"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018061"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configuración del filtrado de permisos para eDiscovery
 
@@ -59,7 +59,7 @@ Los cuatro cmdlets siguientes de Security & Compliance PowerShell permiten confi
 
 - Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles Administración de la organización en el portal de cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- Tiene que conectarse a PowerShell del Centro de cumplimiento de Exchange Online y Security & para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets requieren acceso a las propiedades del buzón, por lo que tiene que conectarse a Exchange Online PowerShell. Vea los pasos en la sección siguiente.
+- Tiene que conectarse a PowerShell de cumplimiento de Exchange Online y seguridad & para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets requieren acceso a las propiedades del buzón, por lo que tiene que conectarse a Exchange Online PowerShell. Vea los pasos en la sección siguiente.
 
 - Consulte la sección [More information](#more-information) para obtener información adicional acerca de los filtros de permisos de búsqueda.
 
@@ -69,7 +69,7 @@ Los cuatro cmdlets siguientes de Security & Compliance PowerShell permiten confi
 
 - No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Sin embargo, una consulta de búsqueda puede tener un máximo de 100 condiciones. En este caso, una condición se define como algo que está conectado a la consulta por un operador booleano (como **AND**, **OR** y **NEAR**). El límite para el número de condiciones incluye la propia consulta de búsqueda y todos los filtros de permisos de búsqueda que se aplican al usuario que ejecuta la búsqueda. Por lo tanto, cuantos más filtros de permisos de búsqueda tenga (especialmente si estos filtros se aplican al mismo usuario o grupo de usuarios), mejor será la posibilidad de superar el número máximo de condiciones para una búsqueda. Para evitar que su organización alcance el límite de condiciones, mantenga el número de filtros de permisos de búsqueda en su organización a la menor cantidad posible para satisfacer sus requisitos empresariales. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Conectar a Exchange Online y Security & Compliance Center PowerShell en una sola sesión
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Conectar a Exchange Online y Security & Compliance de PowerShell en una sola sesión
 
 Para poder ejecutar correctamente el script en esta sección, debe descargar e instalar el módulo Exchange Online PowerShell V2. Para obtener información, consulte [Acerca del módulo Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -89,13 +89,13 @@ Para poder ejecutar correctamente el script en esta sección, debe descargar e i
     .\ConnectEXO-SCC.ps1
     ```
 
-¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets de Exchange Online y Security & Compliance PowerShell se importan a la sesión de Windows PowerShell local. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida consiste en ejecutar cmdlets de PowerShell Exchange Online y Security & Compliance Center. Por ejemplo, puede ejecutar **y Get-Mailbox** y **Get-ComplianceSearch**.
+¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, están disponibles los cmdlets de Exchange Online PowerShell y PowerShell de seguridad & cumplimiento. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida consiste en ejecutar Exchange Online cmdlets de PowerShell y Seguridad & Cumplimiento de PowerShell. Por ejemplo, puede ejecutar **y Get-Mailbox** y **Get-ComplianceSearch**.
 
 Para solucionar problemas de errores de conexión de PowerShell, consulte:
 
 - [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Conectarse a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
@@ -111,7 +111,7 @@ En las secciones siguientes se describen los parámetros de este cmdlet. Todos l
 
 El parámetro  _FilterName_ especifica el nombre del filtro de permisos. Este nombre sirve para identificar un filtro al utilizar los cmdlets **Get ComplianceSecurityFilter**, **Set-ComplianceSecurityFilter** y **Remove-ComplianceSecurityFilter**.
 
-### <a name="filters"></a>*Filtros*
+### <a name="filters"></a>*Filters*
 
 El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:  
 
@@ -122,7 +122,7 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
   |Nombre de propiedad  |Ejemplo  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
-  |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
+  |Empresa  |`"Mailbox_Company -eq 'Contoso'"`        |
   |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
   |Departamento |`"Mailbox_Department -eq 'Finance'"`        |
   |||
@@ -282,7 +282,7 @@ El parámetro  _Users_ especifica los usuarios que obtienen este filtro aplicado
 
 También puede usar el parámetro  _Users_ para especificar un grupo de roles del portal de cumplimiento. Así, podrá crear un grupo de roles personalizado y, a continuación, asignar a ese grupo de roles un filtro de permisos de búsqueda. Por ejemplo, supongamos que tiene un grupo de roles personalizado para los administradores de exhibición de documentos electrónicos de la sede en los Estados Unidos de una compañía multinacional. Puede usar el parámetro  _Users_ para especificar este grupo de roles (mediante la propiedad Name del grupo de roles) y, a continuación, usar el parámetro  _Filter_ para permitir que solo se busquen buzones en LOS EE. UU. Con este parámetro no es posible especificar grupos de distribución.
 
-### <a name="filters"></a>*Filtros*
+### <a name="filters"></a>*Filters*
 
 El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:
 

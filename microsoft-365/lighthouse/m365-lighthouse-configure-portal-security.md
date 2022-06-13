@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5033787f314036f345a00b7f9632851317ed05f0
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188688"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013582"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configuración de la seguridad del portal de Microsoft 365 Lighthouse
 
-Proteger el acceso a los datos del cliente cuando un proveedor de servicios administrados (MSP) tiene permisos de acceso delegados a sus inquilinos es una prioridad de ciberseguridad. Microsoft 365 Lighthouse incluye funcionalidades necesarias y opcionales para ayudarle a configurar la seguridad del portal de Lighthouse. Debe configurar roles específicos con la autenticación multifactor (MFA) habilitada para poder acceder a Lighthouse. Opcionalmente, puede configurar Azure AD Privileged Identity Management (PIM) y acceso condicional.
+Proteger el acceso a los datos del cliente cuando un proveedor de servicios administrados (MSP) tiene permisos de acceso delegados a sus inquilinos es una prioridad de ciberseguridad. Microsoft 365 Lighthouse incluye funcionalidades necesarias y opcionales para ayudarle a configurar la seguridad del portal de Lighthouse. Debe configurar roles específicos con la autenticación multifactor (MFA) habilitada para poder acceder a Lighthouse. Opcionalmente, puede configurar Azure AD Privileged Identity Management (PIM) y el acceso condicional.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>Configuración de la autenticación multifactor (MFA)
 
@@ -45,26 +46,26 @@ Los técnicos de MSP también pueden acceder a Lighthouse mediante roles de agen
 
 Para las acciones relacionadas con inquilinos que no son del cliente en Lighthouse (por ejemplo, incorporación, desactivación o reactivación del cliente, administración de etiquetas, revisión de registros), los técnicos de MSP deben tener un rol asignado en el inquilino del asociado. Consulte [Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) para obtener más información sobre los roles de inquilino de asociados.
 
-## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configuración de Azure AD Privileged Identity Management (PIM)
+## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configuración de azure AD Privileged Identity Management (PIM)
 
 Los CSP pueden minimizar el número de personas que tienen acceso a roles con privilegios elevados para proteger la información o los recursos mediante PIM. PIM reduce la posibilidad de que una persona malintencionada obtenga acceso a recursos o usuarios autorizados que afecten involuntariamente a un recurso confidencial. Los CSP también pueden conceder a los usuarios roles de privilegios elevados Just-In-Time para acceder a los recursos, realizar cambios amplios y supervisar lo que hacen los usuarios designados con su acceso con privilegios.
 
 > [!NOTE]
-> El uso de Azure AD PIM requiere una licencia de Azure AD Premium P2 en el inquilino del asociado.
+> El uso de PIM de Azure AD requiere una licencia de Azure AD Premium P2 en el inquilino del asociado.
 
 Los pasos siguientes elevan a los usuarios de inquilinos asociados a roles de privilegios más altos con ámbito de tiempo mediante PIM:
 
 1. Cree un grupo asignable a roles como se describe en el artículo [Creación de un grupo para asignar roles en Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 
-2. Vaya a [Azure AD : todos los grupos](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) y agregue el nuevo grupo como miembro de un grupo de seguridad para roles con privilegios elevados (por ejemplo, grupo de seguridad de agentes de administración para DAP o un grupo de seguridad correspondiente similar para roles GDAP).
+2. Vaya a [Azure AD: todos los grupos](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) y agregue el nuevo grupo como miembro de un grupo de seguridad para roles con privilegios elevados (por ejemplo, grupo de seguridad de agentes de administración para DAP o un grupo de seguridad similarmente respectivo para roles GDAP).
 
 3. Configure el acceso con privilegios al nuevo grupo como se describe en el artículo [Asignación de propietarios y miembros aptos para grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-assign-member-owner).
 
 Para más información sobre PIM, consulte [¿Qué es Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Configuración del acceso condicional Azure AD basado en riesgos
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Configuración del acceso condicional de Azure AD basado en riesgos
 
-Los CSP pueden usar el acceso condicional basado en riesgos para asegurarse de que sus miembros del personal demuestren su identidad mediante MFA y cambiando su contraseña cuando se detecte como un usuario de riesgo (con credenciales filtradas o por Azure AD inteligencia sobre amenazas). Los usuarios también deben iniciar sesión desde una ubicación conocida o desde un dispositivo registrado cuando se detecta como un inicio de sesión de riesgo. Otros comportamientos de riesgo incluyen el inicio de sesión desde una dirección IP malintencionada o anónima o desde una ubicación de viaje atípica o imposible, el uso de un token anómalo, el uso de una contraseña de difusión de contraseñas o la exhibición de otro comportamiento de inicio de sesión inusual. En función del nivel de riesgo de un usuario, los CSP también pueden optar por bloquear el acceso al iniciar sesión. Para obtener más información sobre los riesgos, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Los MSP pueden usar el acceso condicional basado en riesgos para asegurarse de que sus miembros del personal demuestren su identidad mediante MFA y cambiando su contraseña cuando se detecte como un usuario de riesgo (con credenciales filtradas o por inteligencia sobre amenazas de Azure AD). Los usuarios también deben iniciar sesión desde una ubicación conocida o desde un dispositivo registrado cuando se detecta como un inicio de sesión de riesgo. Otros comportamientos de riesgo incluyen el inicio de sesión desde una dirección IP malintencionada o anónima o desde una ubicación de viaje atípica o imposible, el uso de un token anómalo, el uso de una contraseña de difusión de contraseñas o la exhibición de otro comportamiento de inicio de sesión inusual. En función del nivel de riesgo de un usuario, los CSP también pueden optar por bloquear el acceso al iniciar sesión. Para obtener más información sobre los riesgos, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 > [!NOTE]
 > El acceso condicional requiere una licencia de Azure AD Premium P2 en el inquilino del asociado. Para configurar el acceso condicional, consulte [Configuración de Azure Active Directory acceso condicional](/appcenter/general/configuring-aad-conditional-access).

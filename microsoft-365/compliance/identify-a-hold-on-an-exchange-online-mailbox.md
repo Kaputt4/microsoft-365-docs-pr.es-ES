@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón de Exchange Online en Microsoft 365.
-ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f38376fe3d7517b877239a9bb6add5fbf9952d59
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097764"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017906"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -62,7 +62,7 @@ Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obt
 
 - **Get-OrganizationConfig:** Use este cmdlet para obtener los GUID de las directivas de retención de toda la organización.
 
-Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -130,9 +130,9 @@ Después de obtener el GUID de una suspensión que se aplica a un buzón de corr
 
 ### <a name="ediscovery-holds"></a>Suspensiones de eDiscovery
 
-Ejecute los siguientes comandos en PowerShell del Centro de cumplimiento de seguridad & para identificar una suspensión de exhibición de documentos electrónicos que se aplica al buzón de correo. Use el GUID (sin incluir el prefijo UniH) para la suspensión de eDiscovery que identificó en el paso 1. 
+Ejecute los siguientes comandos en PowerShell de cumplimiento de seguridad & para identificar una suspensión de eDiscovery que se aplica al buzón. Use el GUID (sin incluir el prefijo UniH) para la suspensión de eDiscovery que identificó en el paso 1. 
 
-Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+Para conectarse a Security & Compliance PowerShell, consulte [Conectar a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 El primer comando crea una variable que contiene información sobre la suspensión. Esta variable se usa en los otros comandos. El segundo comando muestra el nombre del caso de exhibición de documentos electrónicos al que está asociada la suspensión. El tercer comando muestra el nombre de la suspensión y una lista de los buzones a los que se aplica la suspensión.
 
@@ -163,7 +163,7 @@ Si el GUID de la In-Place Hold comienza con el `cld` prefijo, asegúrese de incl
 
 ### <a name="microsoft-365-retention-policies"></a>directivas de retención de Microsoft 365
 
-[Conectar a PowerShell del Centro](/powershell/exchange/connect-to-scc-powershell) de cumplimiento de security & y ejecute el siguiente comando para identificar la directiva de retención de Microsoft 365 (ubicación específica o de toda la organización) que se aplica al buzón de correo. Use el GUID (sin incluir el prefijo mbx, skp o grp o el sufijo de acción) que identificó en el paso 1.
+[Conectar a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) y ejecute el siguiente comando para identificar la directiva de retención de Microsoft 365 (ubicación específica o de toda la organización) que se aplica al buzón de correo. Use el GUID (sin incluir el prefijo mbx, skp o grp o el sufijo de acción) que identificó en el paso 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -292,7 +292,7 @@ Cuando una directiva de retención ya no se aplique a un buzón de correo, coloc
 
 Después de identificar las retenciones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la suspensión, quitar temporal o permanentemente la suspensión o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información sobre cómo realizar tareas relacionadas con las retenciones, consulte uno de los temas siguientes:
 
-- Ejecute el comando [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) en [PowerShell del Centro de seguridad & cumplimiento](/powershell/exchange/connect-to-scc-powershell) para excluir un buzón de una directiva de retención de Microsoft 365 de toda la organización. Este comando solo se puede usar para directivas de retención donde el valor de la propiedad *ExchangeLocation* es igual a `All`.
+- Ejecute el comando [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) en [PowerShell security & compliance](/powershell/exchange/connect-to-scc-powershell) para excluir un buzón de una directiva de retención de Microsoft 365 de toda la organización. Este comando solo se puede usar para directivas de retención donde el valor de la propiedad *ExchangeLocation* es igual a `All`.
 
 - [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
 

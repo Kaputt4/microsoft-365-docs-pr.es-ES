@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la información de inteligencia sobre suplantación de identidad en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772114"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016062"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Información de inteligencia sobre suplantación de identidad en EOP
 
@@ -115,7 +115,6 @@ En la página **Información de inteligencia de** suplantación que aparece desp
 - **Infraestructura de envío**: también conocida como _infraestructura_. La infraestructura de envío será uno de los siguientes valores:
   - Dominio encontrado en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen.
   - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\>/24 (por ejemplo, 192.168.100.100/24).
-  - Un dominio DKIM comprobado.
 - **Recuento** de mensajes: el número de mensajes de la combinación del dominio suplantado _y_ la infraestructura de envío a la organización en los últimos 7 días.
 - **Última vez que se ha visto**: la última fecha en que se recibió un mensaje de la infraestructura de envío que contiene el dominio suplantado.
 - **Tipo de suplantación**: uno de los siguientes valores:
@@ -131,7 +130,7 @@ Para filtrar los resultados, tiene las siguientes opciones:
 
 - Haga clic en el botón **Filtrar** . En el control flotante **Filtro** que aparece, puede filtrar los resultados por:
   - **Tipo de suplantación de identidad**
-  - **Action**
+  - **Acción**
 - Use el cuadro **Buscar** para escribir una lista separada por comas de valores de dominio suplantados o enviar valores de infraestructura para filtrar los resultados.
 
 ### <a name="view-details-about-spoofed-messages"></a>Ver detalles sobre mensajes suplantados

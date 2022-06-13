@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435267"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017194"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 
@@ -60,7 +60,7 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
-1. En el portal de cumplimiento Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datosExactar coincidencias de datos**.
+1. En el portal de cumplimiento de Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Coincidencias exactas de datos**.
 
 2. Elija **Tipos de información confidencial EDM** y **Crear Tipo de información confidencial EDM** para abrir el asistente de configuración de tipos de información confidencial.
 
@@ -89,7 +89,7 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>Editar o eliminar el patrón de tipo de información confidencial
 
-1. Abra **centro** >  de cumplimiento **Clasificación de** >  **datosExact coincidencias de datos**.
+1. Abra **Clasificación de** datos del Centro  >  de **cumplimiento** > **Coincidencias exactas de datos**.
 
 2. Elija **tipos de información confidencial de EDM**.
 
@@ -138,7 +138,7 @@ En algunos casos, es posible que tenga que identificar determinados números de 
 
 ## <a name="create-a-rule-package-manually"></a>Creación manual de un paquete de reglas
 
-Este procedimiento muestra cómo crear un archivo en formato XML denominado paquete de reglas (con codificación Unicode) y, a continuación, cargarlo en Microsoft Purview mediante cmdlets de PowerShell del Centro de cumplimiento.
+Este procedimiento muestra cómo crear un archivo en formato XML denominado paquete de reglas (con codificación Unicode) y, a continuación, cargarlo en Microsoft Purview mediante cmdlets de PowerShell de cumplimiento de seguridad &.
 
 > [!NOTE]
 > Si el SIT al que se asigna puede detectar pruebas corroborativas de varias palabras, los elementos secundarios que defina en un paquete de reglas creado manualmente se pueden asignar a SIT. Por ejemplo, el nombre `John Smith` no coincidiría como elemento secundario porque se compararía `John` y `Smith` se encontraría en el contenido por separado con el término `John Smith` cargado en uno de los campos, si ese campo de evidencia corroborativa no se asignara a una SIT que pueda detectar ese patrón.

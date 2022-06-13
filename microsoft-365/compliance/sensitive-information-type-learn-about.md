@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial, como el seguro social, la tarjeta de crédito o los números de cuenta bancaria para identificar elementos confidenciales.
-ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971359"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014242"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -171,7 +171,7 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 
 - **Usar EDM** : puede configurar tipos de información confidencial personalizados mediante la clasificación basada en coincidencia exacta de datos (EDM). Este método le permite crear un tipo de información confidencial dinámico con una base de datos segura que puede actualizar periódicamente. Consulte [Información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **Usar PowerShell** : puede configurar tipos de información confidencial personalizados mediante PowerShell. Aunque este método es más complejo que utilizar la interfaz de usuario, tendrá más opciones de configuración. Vea [Crear un tipo de información confidencial en el centro de cumplimiento y seguridad PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Usar PowerShell** : puede configurar tipos de información confidencial personalizados mediante PowerShell. Aunque este método es más complejo que utilizar la interfaz de usuario, tendrá más opciones de configuración. Consulte [Creación de un tipo de información confidencial personalizada en PowerShell de cumplimiento de seguridad &](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > Los niveles de confianza mejorados están disponibles para su uso inmediato en los servicios de prevención de pérdida de datos de Microsoft Purview, protección de la información, cumplimiento de comunicaciones, administración del ciclo de vida de datos y administración de registros.

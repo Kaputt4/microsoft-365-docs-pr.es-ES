@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias del inquilino. Busque una guía para configurar un servicio o una aplicación que necesite ejecutar.
-ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 451f92aade8a6e7910630629b805065e6910b9de
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535932"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017128"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -51,7 +51,7 @@ Las guías de instalación son accesibles desde la página [Guía de instalació
 
 ## <a name="guides-for-initial-setup"></a>Guías para la configuración inicial
 
-### <a name="prepare-your-environment"></a>Prepare el entorno
+### <a name="prepare-your-environment"></a>Preparar el entorno
 
 La guía [Preparar el entorno](https://aka.ms/prepareyourenvironment) le ayuda a preparar el entorno de su organización para los servicios de Microsoft 365 y Office 365. Sea cual sea el objetivo, hay tareas que deberá completar para garantizar una implementación correcta. Para evitar errores al preparar el entorno, se proporcionan instrucciones paso a paso para conectar el dominio, agregar usuarios, asignar licencias, configurar el correo electrónico con Exchange Online e instalar o implementar aplicaciones Office.
 
@@ -162,7 +162,7 @@ La [guía de configuración de Microsoft Defender para punto de conexión](https
 
 Microsoft Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube para la protección contra el correo no deseado y el malware, con características para proteger su organización frente a infracciones de directivas de mensajería.
 
-Use la [guía de configuración de Exchange Online Protection](https://aka.ms/EOPguidance) para configurar EOP; para ello, seleccione cuál de los tres escenarios de implementación son buzones&mdash; locales, buzones híbridos (combinación de buzones locales y en la nube) o todos los buzones&mdash; en la nube que se ajusten a su organización. La guía proporciona información y recursos para configurar y revisar las licencias del usuario, asignar permisos en el Centro de administración de Microsoft 365 y configurar las directivas de antimalware y correo no deseado de la organización en el Centro de cumplimiento de seguridad &.
+Use la [guía de configuración de Exchange Online Protection](https://aka.ms/EOPguidance) para configurar EOP seleccionando cuáles de los tres escenarios de implementación son buzones&mdash;locales, buzones híbridos (combinación de locales y en la nube) o todos los buzones&mdash;de correo en la nube que se adapten a su organización. La guía proporciona información y recursos para configurar y revisar las licencias del usuario, asignar permisos en el Centro de administración de Microsoft 365 y configurar las directivas de antimalware y correo no deseado de la organización en el Centro de cumplimiento de seguridad &.
 
 ### <a name="microsoft-defender-for-office-365-setup-guide"></a>Guía de configuración de Microsoft Defender para Office 365
 
@@ -181,13 +181,13 @@ Las soluciones de esta guía le ayudarán a obtener visibilidad sobre las activi
 * Con la solución de cumplimiento de comunicaciones, puede identificar y actuar sobre los riesgos de comunicación de elementos como la violencia en el lugar de trabajo, el comercio interno, el acoso, el código de conducta y las infracciones de cumplimiento normativo.
 * La solución de administración de riesgos internos le ayuda a identificar, investigar y tomar medidas sobre los riesgos de robo de propiedad intelectual, fugas de datos confidenciales, infracciones de seguridad, derrames de datos e infracciones de confidencialidad.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>guía de configuración de Microsoft Purview Information Protection
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Guía de configuración de Microsoft Purview Information Protection
 
 Obtenga información general sobre las funcionalidades que puede aplicar a su estrategia de protección de la información para que pueda estar seguro de que la información confidencial está protegida. Aplique un planteamiento de ciclo de vida de cuatro fases con el que detectar, clasificar, proteger y supervisar la información confidencial. La [guía de configuración de Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) proporciona instrucciones para completar cada una de estas fases.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>guía de configuración de Administración del ciclo de vida de Microsoft Purview
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guía de configuración de Administración del ciclo de vida de datos de Microsoft Purview
 
-La [guía de configuración de Administración del ciclo de vida de Microsoft Purview](https://aka.ms/migsetupguide) le proporciona la información que necesitará para configurar y administrar la estrategia de gobernanza de su organización, para asegurarse de que los datos se clasifican y administran según las directrices específicas del ciclo de vida que establezca. Con esta guía, aprenderá a crear, aplicar automáticamente o publicar etiquetas de retención, directivas de etiquetas de retención y directivas de retención que se aplican al contenido y a los registros de cumplimiento de su organización. También obtendrá información sobre cómo importar archivos CSV con un plan de archivos para escenarios masivos o para aplicarlos manualmente a documentos individuales.
+La [guía de configuración de Administración del ciclo](https://aka.ms/migsetupguide) de vida de datos de Microsoft Purview proporciona la información que necesitará para configurar y administrar la estrategia de gobernanza de su organización, para asegurarse de que los datos se clasifican y administran según las directrices específicas del ciclo de vida que establezca. Con esta guía, aprenderá a crear, aplicar automáticamente o publicar etiquetas de retención, directivas de etiquetas de retención y directivas de retención que se aplican al contenido y a los registros de cumplimiento de su organización. También obtendrá información sobre cómo importar archivos CSV con un plan de archivos para escenarios masivos o para aplicarlos manualmente a documentos individuales.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>guía de configuración de Microsoft Defender for Cloud Apps
 
@@ -250,3 +250,7 @@ Para las organizaciones que usan Configuration Manager, puede usar la [Aplicacio
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager guía de configuración de administración conjunta
 
 Use la [guía de configuración de administración conjunta de Intune Configuration Manager](https://aka.ms/comanagementsetup) para configurar dispositivos cliente Configuration Manager existentes y nuevos dispositivos basados en Internet que su organización quiere administrar conjuntamente con Microsoft Intune y Configuration Manager. La administración conjunta le permite administrar Windows 10 dispositivos y agrega nuevas funcionalidades a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
+
+#### <a name="school-data-sync-rollover-setup-guide"></a>School Data Sync guía de configuración de sustitución
+
+La [guía de configuración de sustitución de SDS](https://aka.ms/sdsrolloversetupguide) proporciona los pasos para ayudar a su organización a sincronizar los datos de información de los alumnos con Azure Active Directory y Office 365. Esta guía simplifica el proceso de administración del ciclo de vida mediante la creación de grupos de Office 365 para Exchange Online y SharePoint Online, equipos de clase para Microsoft Teams y OneNote, así como Intune  for Education, y la integración de la lista y el inicio de sesión único para aplicaciones de terceros. Realizará el cierre de fin de año, la limpieza y el archivo de inquilinos, la preparación del nuevo año escolar y el lanzamiento del nuevo año escolar. A continuación, puede crear nuevos perfiles mediante el método de implementación de sincronización que se adapte a su organización.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre las directivas de expiración de grupos de Microsoft 365.
-ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 05d66c4c05289cefeea9478256a016def6561a52
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535810"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014572"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 directiva de expiración de grupo
 
@@ -58,7 +58,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la directiva de expiración
 
-Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarlo, vaya a **Azure Active Directory** >  **GroupsExpiration** > . Aquí puede establecer la duración predeterminada del grupo y especificar con qué antelación quiere que las notificaciones de expiración primera y segunda vayan al propietario del grupo.
+Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarlo, vaya a **Azure Active Directory** >  **Grupos** > **expiración**. Aquí puede establecer la duración predeterminada del grupo y especificar con qué antelación quiere que las notificaciones de expiración primera y segunda vayan al propietario del grupo.
 
 La duración del grupo se especifica en días y se puede establecer en 180, 365 o en un valor personalizado que especifique. El valor personalizado debe ser de al menos 30 días.
 
@@ -70,7 +70,7 @@ Puede establecer la directiva para todos los grupos, solo los grupos seleccionad
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Cómo funciona la expiración con la directiva de retención
 
-Si ha configurado una directiva de retención para grupos en el centro de seguridad y cumplimiento, la directiva de expiración funcionará sin problemas con la directiva de retención. Cuando un grupo expire, las conversaciones y los archivos del buzón del grupo en el sitio de grupo se conservarán en el contenedor de retención durante el número específico de días definido en la directiva de retención. Sin embargo, los usuarios no verán el grupo ni su contenido después de que expire.
+Si ha configurado una directiva de retención para grupos en el portal de cumplimiento de Microsoft Purview, la directiva de expiración funciona perfectamente con la directiva de retención. Cuando un grupo expire, las conversaciones y los archivos del buzón del grupo en el sitio de grupo se conservarán en el contenedor de retención durante el número específico de días definido en la directiva de retención. Sin embargo, los usuarios no verán el grupo ni su contenido después de que expire.
 
 ## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Cómo y cuándo el propietario de un grupo puede saber si sus grupos van a expirar
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419602"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013362"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -150,7 +150,7 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 El comando anterior recopila una grabación de rendimiento y la guarda en la ruta de acceso especificada: **.\Defender-scans.etl**.
 
-##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Ejemplo 2: Recopilación de una grabación de rendimiento para la sesión remota de PowerShell
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Ejemplo 2: Recopilación de una grabación de rendimiento para una sesión remota de PowerShell
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 El comando anterior recopila una grabación de rendimiento en Server02 (según lo especificado por el argumento $s del parámetro Session) y lo guarda en la ruta de acceso especificada: **C:\LocalPathOnServer02\trace.etl** en Server02.
 
 ##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>Ejemplo 3: Recopilación de una grabación de rendimiento en modo no interactivo
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 El comando anterior recopila una grabación de rendimiento durante los segundos especificados por el parámetro -Seconds. Esto se recomienda para los usuarios que realizan colecciones por lotes que no requieren ninguna interacción o solicitud.
 
 #### <a name="parameters-new-mpperformancerecording"></a>Parámetros: New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-seconds"></a>-Seconds
+
 Especifica la duración de la grabación de rendimiento en segundos. Esto se recomienda para los usuarios que realizan colecciones por lotes que no requieren ninguna interacción o solicitud.
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### <a name="example-5-using--raw-parameter"></a>Ejemplo 5: Uso del parámetro -Raw
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 El uso de -Raw en el comando anterior especifica que la salida debe ser legible y fácilmente convertible a formatos de serialización como JSON.
 
 #### <a name="parameters-get-mpperformancereport"></a>Parámetros: Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### <a name="-raw"></a>-Raw
 
-Especifica que la salida de la grabación de rendimiento debe ser legible y fácilmente convertible a formatos de serialización como JSON (por ejemplo, mediante el comando Convertir a JSON). Esto se recomienda para los usuarios interesados en el procesamiento por lotes con otros sistemas de procesamiento de datos. 
+Especifica que la salida de la grabación de rendimiento debe ser legible y fácilmente convertible a formatos de serialización como JSON (por ejemplo, mediante el comando Convertir a JSON). Esto se recomienda para los usuarios interesados en el procesamiento por lotes con otros sistemas de procesamiento de datos.
 
 ```yaml
 Type: <SwitchParameter>
@@ -537,4 +543,4 @@ Si busca información relacionada con antivirus para otras plataformas, consulte
 - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-- [Configuración de Defender para punto de conexión en Android característicasConfiguración](android-configure.md)-  [de Microsoft Defender para punto de conexión en características de iOS](ios-configure-features.md)
+- [Configuración de Defender para punto de conexión en Android características](android-configure.md)- [Configurar Microsoft Defender para punto de conexión en características de iOS](ios-configure-features.md)

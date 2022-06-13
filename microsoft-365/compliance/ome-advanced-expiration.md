@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Use Cifrado avanzado de mensajes de Microsoft Purview para ampliar la seguridad del correo electrónico estableciendo una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188402"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015570"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado mediante cifrado de mensajes avanzado de Microsoft Purview
 
@@ -32,7 +32,7 @@ El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 36
 
 Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Microsoft Purview, puede comprarlo con el complemento de SKU de Cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el Cumplimiento avanzado de Office 365 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
-Puede usar la expiración de mensajes en los correos electrónicos que los usuarios envían a destinatarios externos que usan el Portal de OME para acceder a correos electrónicos cifrados. Obliga a los destinatarios a usar el portal de OME para ver y responder a los correos electrónicos cifrados enviados por su organización mediante una plantilla de marca personalizada que especifica una fecha de expiración en Windows PowerShell.
+Puede usar la expiración de mensajes en los correos electrónicos que los usuarios envían a destinatarios externos que usan el Portal de OME para acceder a correos electrónicos cifrados. Obliga a los destinatarios a usar el portal de OME para ver y responder a los correos electrónicos cifrados enviados por su organización mediante una plantilla de marca personalizada que especifica una fecha de expiración en PowerShell.
 
 Como administrador global Office 365, al aplicar la marca de la empresa para personalizar el aspecto de los mensajes de correo electrónico de la organización, también puede especificar una expiración para estos mensajes de correo electrónico. Con el cifrado avanzado de mensajes de Microsoft Purview, puede crear varias plantillas para correos electrónicos cifrados que se originan en su organización. Con una plantilla, puede controlar cuánto tiempo los destinatarios tienen acceso al correo enviado por los usuarios.
 
