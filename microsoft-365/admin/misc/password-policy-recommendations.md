@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 006e537c2e2d77a19b27f1c2d537269d69d07c1e
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469016"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043218"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recomendaciones de directiva de contraseñas para contraseñas de Microsoft 365
 
@@ -61,7 +61,7 @@ Los procedimientos recomendados para las contraseñas se dividen en algunas ampl
 
 El principal objetivo de un sistema de contraseña más seguro es la diversidad de las contraseñas. Desea que la Directiva de contraseñas contenga una gran cantidad de contraseñas distintas y difíciles de adivinar. Estas son algunas recomendaciones para mantener su organización lo más segura posible.
   
-- Mantener un requisito de longitud mínima de 8 caracteres
+- Mantener el requisito de longitud mínima de 14 caracteres
 
 - No solicite requisitos de composición de caracteres. Por ejemplo, \*&amp;(^%$
 

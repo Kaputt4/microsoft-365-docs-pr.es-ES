@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el portal de cumplimiento de Microsoft Purview para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094910"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017250"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -50,7 +50,7 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
   > [!NOTE]
   > El rol **Administración de la organización** existe en Exchange Online y en el portal de cumplimiento. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
 
-- Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 1](#step-1-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
+- Debe usar Seguridad y cumplimiento de PowerShell para eliminar mensajes. Consulte [Paso 1: Conectar a Seguridad y cumplimiento de PowerShell](#step-1-connect-to-security--compliance-powershell) para obtener instrucciones sobre cómo conectarse.
 
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
 
@@ -60,9 +60,9 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 - Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery (Premium) no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones se almacenan en una ubicación de almacenamiento de Azure y no en el servicio activo. Esto significa que no se devolverán por la búsqueda de contenido que creó en el paso 1. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery (Premium) que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Paso 1: Conectarse al PowerShell del Centro de seguridad y cumplimiento
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Paso 1: Conectarse a Seguridad y cumplimiento de PowerShell
 
-El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimiento de la organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+El siguiente paso es conectarse al Seguridad y cumplimiento de PowerShell de la organización. Para obtener instrucciones paso a paso, vea [Conectarse Seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Paso 2: Crear una búsqueda de contenido para encontrar el mensaje que se desea eliminar
 
@@ -121,7 +121,7 @@ Después de crear y restringir una búsqueda de contenido a fin de obtener el me
 > [!NOTE]
 > Como se ha indicado anteriormente, los elementos de Microsoft Teams devueltos por la búsqueda de contenido no se eliminan cuando se ejecuta el comando **New-ComplianceSearchAction -Purge** .
 
-Para ejecutar los siguientes comandos para eliminar mensajes, asegúrese de que está [conectado al Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Para ejecutar los siguientes comandos para eliminar mensajes, asegúrese de que está [conectado a Seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="soft-delete-messages"></a>Eliminar mensajes temporalmente
 

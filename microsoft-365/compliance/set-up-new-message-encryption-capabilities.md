@@ -1,11 +1,11 @@
 ---
-title: Configurar las nuevas capacidades de cifrado de mensajes
+title: Configurar el cifrado de mensajes de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 4/16/2022
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,38 +16,40 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
+description: Obtenga información sobre el cifrado de mensajes de Microsoft Purview que permite la comunicación de correo electrónico protegida con personas dentro y fuera de su organización.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 48a5ca3bad7c0fb0d7120cb4e35bc5f24902a46e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422992"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043348"
 ---
-# <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
+# <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 
-Las nuevas funcionalidades de cifrado de mensajes de Office 365 (OME) permiten que las organizaciones compartan mensajes de correo electrónico protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con quienes no son clientes, usando Outlook.com, Gmail y otros servicios de correo electrónico.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Siga los pasos que se indican a continuación para asegurarse de que las nuevas funcionalidades de OME estén disponibles en su organización.
+El cifrado de mensajes de Microsoft Purview permite a las organizaciones compartir correos electrónicos protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con terceros mediante Outlook.com, Gmail y otros servicios de correo electrónico.
+
+Siga los pasos que se indican a continuación para asegurarse de que el cifrado de mensajes de Microsoft Purview está disponible en su organización.
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Verificar que Azure Rights Management está habilitada
 
-Las nuevas funcionalidades de OME aprovechan las características de protección de [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), la tecnología usada por [Azure Information Protection](/azure/information-protection/what-is-azure-rms) para proteger los correos electrónicos y los documentos mediante controles de acceso y encriptación.
+Cifrado de mensajes de Microsoft Purview aprovecha las características de protección de [Azure Rights Management Services (Azure RMS),](/azure/information-protection/what-is-information-protection)la tecnología que usa [Azure Information Protection](/azure/information-protection/what-is-azure-rms) para proteger correos electrónicos y documentos mediante controles de cifrado y acceso.
 
-El único requisito previo para usar las nuevas funcionalidades de OME es que la funcionalidad [Azure Rights Management](/azure/information-protection/what-is-azure-rms) debe estar activada en el espacio empresarial de su organización. Si lo está, Microsoft 365 activa automáticamente las nuevas funcionalidades de OME y no es necesario realizar ninguna acción.
+El único requisito previo para usar el cifrado de mensajes de Microsoft Purview es que [Azure Rights Management](/azure/information-protection/what-is-azure-rms) debe activarse en el inquilino de su organización. Si es así, Microsoft 365 activa automáticamente el cifrado de mensajes y no es necesario hacer nada.
 
 Azure RMS también se activa automáticamente para la mayoría de los planes aptos, por lo que probablemente tampoco tenga que hacer nada al respecto. Consulte [activación de Azure Rights Management](/azure/information-protection/activate-service) para obtener más información.
 
 > [!IMPORTANT]
-> Si usa Active Directory Rights Management servicio (AD RMS) con Exchange Online, debe [migrar a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) antes de poder usar las nuevas funcionalidades de OME. OME no es compatible con AD RMS.
+> Si usa el servicio Active Directory Rights Management (AD RMS) con Exchange Online, debe [migrar a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) antes de poder usar el cifrado de mensajes. El cifrado de mensajes de Microsoft Purview no es compatible con AD RMS.
 
-Para obtener más información, vea:
+Para más información, vea:
 
-- [¿Qué suscripciones necesito para usar las nuevas funcionalidades de OME?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
+- [Preguntas más frecuentes sobre el cifrado de mensajes](ome-faq.yml) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
 - [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) para obtener información sobre cómo comprar una suscripción apta.
 
 ### <a name="manually-activating-azure-rights-management"></a>Activar Azure Rights Management manualmente
@@ -61,17 +63,17 @@ Si deshabilitó Azure RMS, o si no se activó automáticamente por algún motivo
 
 Este paso es opcional. Permitir que Microsoft administre la clave raíz de Azure Information Protection es la configuración predeterminada y el procedimiento recomendado para la mayoría de organizaciones. Si este es el caso, no es necesario que realice ninguna acción.
 
-Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requerir la creación y administración de su propia clave raíz (también conocido como Bring your own key (BYOK)). Si este es el caso, le recomendamos que complete los pasos requeridos antes de configurar las nuevas funcionalidades de OME. Vea [Planificar e implementar la clave de espacio empresarial de Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key) para obtener más información.
+Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requerir la creación y administración de su propia clave raíz (también conocido como Bring your own key (BYOK)). Si este es el caso, se recomienda completar los pasos necesarios antes de configurar el cifrado de mensajes de Microsoft Purview. Vea [Planificar e implementar la clave de espacio empresarial de Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key) para obtener más información.
 
-## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Comprobar la nueva configuración de OME en PowerShell de Exchange Online
+## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>Comprobar la configuración del cifrado de mensajes de Microsoft Purview en Exchange Online PowerShell
 
-Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
+Puede comprobar que el inquilino de Microsoft 365 está configurado correctamente para usar el cifrado de mensajes de Microsoft Purview en [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 1. [Conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 
-     Debería ver un valor $True para el parámetro AzureRMSLicensingEnabled, el cuál indica que OME está configurado en su espacio empresarial. Si no lo está, utilice set-IRMConfiguration para establecer el valor de AzureRMSLicensingEnabled en $True para habilitar OME.
+     Debería ver un valor de $True para el parámetro AzureRMSLicensingEnabled, que indica que el cifrado de mensajes de Microsoft Purview está configurado en su inquilino. Si no es así, use Set-IRMConfiguration para establecer el valor de AzureRMSLicensingEnabled en $True para habilitar el cifrado de mensajes de Microsoft Purview.
 
 3. Ejecute el cmdlet test-IRMConfiguration usando la siguiente sintaxis:
 
@@ -107,24 +109,32 @@ Puede comprobar que su espacio empresarial de Microsoft 365 está configurado co
 
    - Los nombres de las plantillas predeterminadas pueden diferir de los que se muestran arriba. Vea [Configurar y administrar plantillas para Azure Information Protection](/azure/information-protection/configure-policy-templates) para obtener más información.
 
-4. Ejecute el cmdlet Remove-PSSession para desconectarse del servicio Rights Management.
+4. Si se produce un error en la prueba con un mensaje de error **Error al adquirir las plantillas de RMS**, ejecute los siguientes comandos y ejecute el cmdlet Test-IRMConfiguration para comprobar que funciona.
+
+   ```powershell
+   $RMSConfig = Get-AadrmConfiguration
+   $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
+   Set-IRMConfiguration -LicensingLocation $LicenseUri
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
+5. Ejecute el cmdlet Remove-PSSession para desconectarse del servicio Rights Management.
 
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Pasos siguientes: defina reglas de flujo de correo para usar las nuevas funcionalidades de OME
+## <a name="next-steps-define-mail-flow-rules-to-use-microsoft-purview-message-encryption"></a>Pasos siguientes: definir reglas de flujo de correo para usar el cifrado de mensajes de Microsoft Purview
 
-Si existen reglas de flujo de correo configuradas previamente para cifrar el correo electrónico de su organización, debe actualizar las reglas existentes para usar las nuevas funcionalidades de OME. Para nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
+Si hay reglas de flujo de correo configuradas previamente para cifrar el correo electrónico en su organización, debe actualizar las reglas existentes para usar el cifrado de mensajes de Microsoft Purview. Para las nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
 
 > [!IMPORTANT]
-> Si no actualiza las reglas de flujo de correo existentes, los usuarios seguirán recibiendo correo cifrado con el formato de archivo adjunto HTML anterior, en lugar de la nueva experiencia de OME de conexión directa.
+> Si no actualiza las reglas de flujo de correo existentes, los usuarios seguirán recibiendo correo cifrado con el formato de archivo adjunto HTML anterior, en lugar de la nueva experiencia sin fisuras.
 
 Las reglas de flujo de correo determinan bajo qué condiciones se deben cifrar los mensajes de correo electrónico, así como las condiciones para quitar ese cifrado. Al establecer una acción para una regla, todos los mensajes que coinciden con las condiciones de la regla se cifran al enviarse.
 
-Para conocer los pasos para crear reglas de flujo de correo para OME, vea [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Para conocer los pasos para crear el cifrado de mensajes de reglas de flujo de correo, consulte [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-Para actualizar las reglas existentes para poder usar las nuevas funcionalidades de OME:
+Para actualizar las reglas existentes para usar el cifrado de mensajes de Microsoft Purview:
 
 1. En el Centro de administración de Microsoft 365, vaya a **Centros de administración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 2. En el centro de administración de Exchange, vaya a **Flujo de correo > Reglas**.
