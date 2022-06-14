@@ -170,8 +170,6 @@
               href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: Flujo de correo en EOP
           href: mail-flow-in-eop.md
-        - name: Directivas de envíos de usuario
-          href: user-submission.md
         - name: Agregar la compatibilidad para el correo electrónico entrante anónimo a través de IPv6
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Instalar Protección de aplicaciones para Office
@@ -328,6 +326,8 @@
               href: enable-the-report-message-add-in.md
             - name: Informar de falsos positivos y falsos negativos en Outlook
               href: report-false-positives-and-false-negatives.md
+            - name: Configuración del mensaje notificado por el usuario
+              href: user-submission.md
             - name: Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: Enviar malware y no malware a Microsoft
