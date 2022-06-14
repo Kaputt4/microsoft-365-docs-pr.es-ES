@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: f0ebc1bb4b13f9e31ca1a8a1967fce007105cfe6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753900"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016424"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
@@ -35,7 +35,7 @@ Puede usar este ejemplo y aplicarlo en otros tipos de información confidencial 
 
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportar el archivo XML de las reglas actuales
 
-Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cumplimiento mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell).
+Para exportar el XML, debe [conectarse a Seguridad y cumplimiento PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 1. En el símbolo del sistema de PowerShell, escriba lo siguiente para mostrar en pantalla las reglas de la organización. Si no creó sus propias reglas, solo verá las reglas integradas y predeterminadas con la etiqueta “Paquete de reglas de Microsoft”.
 
@@ -43,7 +43,7 @@ Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cump
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. Guarde las reglas de la organización en una variable, escribiendo lo siguiente. Almacenar algo en una variable hace que el contenido sea fácilmente disponible más tarde en un formato que funciona para comandos remotos de PowerShell.
+2. Almacene las reglas de su organización en una variable escribiendo lo siguiente. Almacenar algo en una variable hace que esté disponible fácilmente más adelante en un formato que funcione para los comandos de PowerShell.
 
    ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -86,7 +86,7 @@ Ahora que ha encontrado la definición de la regla de Número de tarjeta de cré
 
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modificar el código XML y crear un tipo de información confidencial
 
-En primer lugar, necesita crear un tipo de información confidencial, ya que las reglas predeterminadas no se pueden modificar directamente. Puede realizar una amplia variedad de acciones con los tipos de información confidencial personalizados, tal y como se describe en [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento](create-a-custom-sensitive-information-type-in-scc-powershell.md). En este ejemplo, realizaremos pasos sencillos: solo se eliminarán las evidencias corroborativas y se agregarán palabras clave a la regla “Número de tarjeta de crédito”.
+En primer lugar, deberá crear un nuevo tipo de información confidencial porque las reglas predeterminadas no se pueden modificar directamente. Puede hacer una amplia variedad de cosas con tipos de información confidencial personalizados, que se describen en [Creación de un tipo de información confidencial personalizada en Seguridad y cumplimiento de PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). En este ejemplo, lo haremos sencillo y solo se eliminarán las evidencias confirmativas y se agregarán palabras clave a la regla Número de tarjeta de crédito.
 
 Todas las definiciones de regla XML se basan en la siguiente plantilla general. Tiene que copiar y pegar el XML de definición de Número de tarjeta de crédito en la plantilla, modificar algunos valores (tenga en cuenta los marcadores de posición ". . ." en el siguiente ejemplo) y, después, cargar el XML modificado como una nueva regla que se pueda usar en directivas.
 
@@ -203,7 +203,7 @@ Para cargar la regla, siga el procedimiento siguiente.
 
 1. Guárdela como un archivo .xml con codificación Unicode. Es importante porque la regla no funcionará si se guarda con una codificación diferente.
 
-2. [Conectarse al Centro de seguridad y cumplimiento con PowerShell remoto.](/powershell/exchange/connect-to-scc-powershell)
+2. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 3. En el símbolo del sistema de PowerShell, escriba lo siguiente.
 
