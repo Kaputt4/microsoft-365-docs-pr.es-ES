@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 9130558bb7ae1af86981e1c052a17565f6d943af
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c9ba0a72b9bd02097817bcea04bf25200fca657
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014264"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078391"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Habilite el etiquetado integrado para [los archivos de Office admitidos](sensitivity-labels-office-apps.md#office-file-types-supported) en SharePoint y OneDrive para que los usuarios puedan aplicar [las etiquetas de confidencialidad](sensitivity-labels.md) en Office para la Web. Cuando esta característica está habilitada, los usuarios verán el botón **Confidencialidad** en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
-La habilitación de esta característica también da como resultado SharePoint y OneDrive poder procesar el contenido de Office archivos cifrados mediante una etiqueta de confidencialidad. La etiqueta se puede aplicar en Office para la Web o en Office aplicaciones de escritorio y cargarse o guardarse en SharePoint y OneDrive. Hasta que no habilite esta característica, estos servicios no podrán procesar archivos cifrados, lo que significa que la coautoría, eDiscovery, la prevención de pérdida de datos de Microsoft Purview, la búsqueda y otras características de colaboración no funcionarán para estos archivos.
+La habilitación de esta característica también da como resultado SharePoint y OneDrive poder procesar el contenido de Office archivos cifrados mediante una etiqueta de confidencialidad. La etiqueta se puede aplicar en Office para la Web o en Office aplicaciones de escritorio y cargarse o guardarse en SharePoint y OneDrive. Hasta que no habilite esta característica, estos servicios no podrán procesar archivos cifrados, lo que significa que la coautoría, eDiscovery, Microsoft Purview prevención de pérdida de datos, búsqueda y otras características de colaboración no funcionarán para estos archivos.
 
 Después de habilitar las etiquetas de confidencialidad para los archivos Office en SharePoint y OneDrive, para los archivos nuevos y modificados que tienen una etiqueta de confidencialidad que aplica el cifrado con una clave basada en la nube (y no usa [el cifrado de clave doble](double-key-encryption.md):
 
@@ -81,7 +81,7 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación Sincronización d
 
 - SharePoint y OneDrive no aplican automáticamente etiquetas de confidencialidad a los archivos existentes que ya ha cifrado mediante etiquetas de Azure Information Protection. En su lugar, para que las características funcionen después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, complete estas tareas:
 
-    1. Asegúrese de que ha [migrado las etiquetas de Azure Information Protection a etiquetas](/azure/information-protection/configure-policy-migrate-labels) de confidencialidad y [las ha publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) desde el portal de cumplimiento de Microsoft Purview.
+    1. Asegúrese de que ha [migrado las etiquetas de Azure Information Protection a etiquetas](/azure/information-protection/configure-policy-migrate-labels) de confidencialidad y [las ha publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) desde el portal de cumplimiento Microsoft Purview.
     2. Descargue los archivos etiquetados y cárguelos en su ubicación original en SharePoint o OneDrive.
 
 - SharePoint y OneDrive no pueden procesar archivos cifrados cuando la etiqueta que aplicó el cifrado tiene cualquiera de las [siguientes configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -108,7 +108,7 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación Sincronización d
 - De forma predeterminada, Office aplicaciones de escritorio y aplicaciones móviles no admiten la coautoría de archivos etiquetados con cifrado. Estas aplicaciones continúan abriendo archivos etiquetados y cifrados en modo de edición exclusivo.
 
     > [!NOTE]
-    > Ahora se admite la coautoría para Windows y macOS. Para obtener más información, consulte [Habilitación de la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md).
+    > La coautoría ahora se admite para Windows y macOS, y en versión preliminar para iOS y Android. Para obtener más información, consulte [Habilitación de la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md).
 
 - Si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios, es posible que los usuarios no puedan guardar los cambios que realicen en el archivo en su carpeta de sincronización de OneDrive. Este escenario se aplica a los archivos etiquetados con cifrado y también cuando el cambio de etiqueta es de una etiqueta que no aplicó el cifrado a una etiqueta que aplica el cifrado. Los usuarios ven un [círculo rojo con un error de icono de cruz blanca](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3) y se les pide que guarden los cambios nuevos como una copia independiente. En su lugar, pueden cerrar y volver a abrir el archivo o usar Office para la Web.
 
@@ -125,13 +125,13 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación Sincronización d
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>Habilitación de etiquetas de confidencialidad para SharePoint y OneDrive (participación)
 
-Puede habilitar las nuevas funcionalidades mediante el portal de cumplimiento de Microsoft Purview o mediante PowerShell. Al igual que con todos los cambios de configuración de nivel de inquilino para SharePoint y OneDrive, el cambio tarda unos 15 minutos en surtir efecto.
+Puede habilitar las nuevas funcionalidades mediante el portal de cumplimiento Microsoft Purview o mediante PowerShell. Al igual que con todos los cambios de configuración de nivel de inquilino para SharePoint y OneDrive, el cambio tarda unos 15 minutos en surtir efecto.
 
-### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Uso del portal de cumplimiento de Microsoft Purview para habilitar la compatibilidad con etiquetas de confidencialidad
+### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Uso de la portal de cumplimiento Microsoft Purview para habilitar la compatibilidad con etiquetas de confidencialidad
 
 Esta opción es la manera más fácil de habilitar etiquetas de confidencialidad para SharePoint y OneDrive, pero debe iniciar sesión como administrador global para el inquilino.
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) como administrador global y vaya a **Etiquetas** de protección  >  de **la información** de **soluciones** > .
+1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/) como administrador global y vaya a **Etiquetas** de protección  >  de **la información** de **soluciones** > 
 
 2. Si ve un mensaje para activar la capacidad de procesar contenido en Office archivos en línea, seleccione **Activar ahora**:
 
@@ -144,7 +144,7 @@ Esta opción es la manera más fácil de habilitar etiquetas de confidencialidad
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Uso de PowerShell para habilitar la compatibilidad con etiquetas de confidencialidad
 
-Como alternativa al uso del portal de cumplimiento de Microsoft Purview, puede habilitar la compatibilidad con etiquetas de confidencialidad mediante el cmdlet [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) de SharePoint PowerShell en línea.
+Como alternativa al uso de la portal de cumplimiento Microsoft Purview, puede habilitar la compatibilidad con etiquetas de confidencialidad mediante el cmdlet [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) de SharePoint PowerShell en línea.
 
 Si tiene Microsoft 365 multigeográfica, debe usar PowerShell para habilitar esta compatibilidad con todas las ubicaciones geográficas.
 
@@ -272,7 +272,7 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 multigeográfica, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de habilitar las etiquetas de confidencialidad para Office archivos en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para más información, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 

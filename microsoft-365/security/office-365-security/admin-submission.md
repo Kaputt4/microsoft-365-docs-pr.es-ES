@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057677"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078971"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
@@ -60,7 +60,7 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
 - Los administradores pueden enviar mensajes con una antigüedad de 30 días si siguen estando disponibles en el buzón y no purgados por el usuario u otro administrador.
 
-- Los envíos de administradores se limitan a las siguientes tarifas:
+- Administración envíos están limitados a las siguientes tarifas:
   - Número máximo de envíos en un período de 15 minutos: 150 envíos
   - Los mismos envíos en un período de 24 horas: 3 envíos
   - Los mismos envíos en un período de 15 minutos: 1 envío
@@ -149,13 +149,13 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 > [!NOTE]
 > Si el filtrado de malware ha reemplazado los datos adjuntos del mensaje por el archivo de Text.txt de alerta de malware, debe enviar el mensaje original de la cuarentena que contiene los datos adjuntos originales. Para obtener más información sobre la cuarentena y cómo liberar mensajes con falsos positivos de malware, consulte [Administración de mensajes y archivos en cuarentena como administrador](manage-quarantined-messages-and-files.md).
 
-## <a name="view-admin-submissions-to-microsoft"></a>Visualización de envíos de administradores a Microsoft
+## <a name="view-email-admin-submissions-to-microsoft"></a>Visualización de envíos de administradores de correo electrónico a Microsoft
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos**, **DIRECCIÓN URL** o **Datos adjuntos de correo electrónico** está seleccionada.
+2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos** está seleccionada.
 
-   - Para ordenar las entradas, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
+   - Para ordenar las entradas, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas** para seleccionar las columnas que necesita. Todas las columnas se pueden seleccionar y mostrar en la cuadrícula de envío. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
      - **Nombre del envío**<sup>\*</sup>
      - **Remitente**<sup>\*</sup>
      - **Destinatario**
@@ -201,7 +201,6 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
    - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
      - **Ninguna**
-     - **Tipo**
      - **Motivo**
      - **Estado**
      - **Resultado**
@@ -209,7 +208,105 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
    - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el archivo .csv.
 
-### <a name="admin-submission-result-details"></a>Detalles del resultado del envío del administrador
+## <a name="view-email-attachment-admin-submissions-to-microsoft"></a>Visualización de envíos de administrador de datos adjuntos de correo electrónico a Microsoft
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , compruebe que la pestaña **Datos adjuntos de correo electrónico** está seleccionada.
+
+   - Para ordenar las entradas, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas** para seleccionar las columnas que necesita. Todas las columnas se pueden seleccionar y mostrar en la cuadrícula de envío. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
+     - **Nombre de datos adjuntos**<sup>\*</sup>
+     - **Fecha de envío**<sup>\*</sup>
+     - **Motivo para enviar**<sup>\*</sup>
+     - **Estado**<sup>\*</sup>
+     - **Resultado**<sup>\*</sup>
+     - **Veredicto de filtro**
+     - **Motivo de entrega/bloqueo**
+     - **Id. de envío**
+     - **ID. de objeto**
+     - **Acción de directiva**
+     - **Enviado por**
+     - **Etiquetas**<sup>\*</sup>
+     - **Permitir**
+
+     Cuando haya terminado, haga clic en **Aplicar**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+
+   - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
+     - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
+     - **Id**. de envío: un valor GUID que se asigna a cada envío.
+     - **Nombres de archivos adjuntos**
+     - **Enviado por**
+     - **Motivo para enviar**
+     - **Estado**
+     - **Tags**
+
+     Cuando haya terminado, haga clic en **Aplicar**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+
+   - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
+     - **Ninguna**
+     - **Motivo**
+     - **Estado**
+     - **Resultado**
+     - **Tags**
+
+   - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el archivo .csv.
+
+## <a name="view-urls-admin-submissions-to-microsoft"></a>Visualización de envíos de administradores de direcciones URL a Microsoft
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , compruebe que la pestaña **Direcciones URL** está seleccionada.
+
+   - Para ordenar las entradas, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas** para seleccionar las columnas que necesita. Todas las columnas se pueden seleccionar y mostrar en la cuadrícula de envío. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
+     - **URL**<sup>\*</sup>
+     - **Fecha de envío**<sup>\*</sup>
+     - **Motivo para enviar**<sup>\*</sup>
+     - **Estado**<sup>\*</sup>
+     - **Resultado**<sup>\*</sup>
+     - **Veredicto de filtro**
+     - **Motivo de entrega/bloqueo**
+     - **Id. de envío**
+     - **ID. de objeto**
+     - **Acción de directiva**
+     - **Enviado por**
+     - **Etiquetas**<sup>\*</sup>
+     - **Permitir**
+
+     Cuando haya terminado, haga clic en **Aplicar**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/url-admin-submission-customize-columns.png":::
+
+   - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
+     - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
+     - **Id**. de envío: un valor GUID que se asigna a cada envío.
+     - **URL**
+     - **Enviado por**
+     - **Motivo para enviar**
+     - **Estado**
+     - **Tags**
+
+     Cuando haya terminado, haga clic en **Aplicar**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/url-admin-submission-filters.png":::
+
+   - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
+     - **Ninguna**
+     - **Motivo**
+     - **Estado**
+     - **Resultado**
+     - **Tags**
+
+   - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el archivo .csv.
+
+### <a name="admin-submission-result-details"></a>Administración detalles del resultado del envío
 
 Los mensajes enviados en los envíos de administración se revisan y los resultados se muestran en el control flotante de detalles de envíos:
 

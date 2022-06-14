@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 54f2605e815c98242a66b4d2be844ee59a2699e8
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023379"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078840"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -53,8 +53,8 @@ DLP en punto de conexión permite auditar y administrar los siguientes tipos de 
 |imprimir un documento    |Detecta cuando un usuario intenta imprimir un elemento protegido en una impresora local o de red.|compatible|compatible|auditable y restringible         |
 |copiar a una sesión remota|Detecta cuando un usuario intenta copiar un elemento a una sesión de escritorio remoto |compatible|no compatible|  auditable y restringible|
 |copiar en un dispositivo Bluetooth|Detecta cuando un usuario intenta copiar un elemento en una aplicación Bluetooth no permitida (según se define en la lista de aplicaciones de Bluetooth no permitidas en la configuración del punto de conexión DLP).|compatible|no compatible| auditable y restringible|
-|crear un elemento|Detecta cuándo un usuario crea un elemento|compatible | |auditable|
-|cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento|compatible | |auditable|
+|crear un elemento|Detecta cuándo un usuario crea un elemento|compatible |compatible |auditable|
+|cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento|compatible |compatible |auditable|
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Procedimiento recomendado para directivas DLP de punto de conexión
 

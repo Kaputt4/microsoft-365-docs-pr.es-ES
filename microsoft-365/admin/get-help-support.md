@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465896"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011790"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 
@@ -59,8 +59,12 @@ Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a enco
 
 ## <a name="phone-support"></a>Soporte por teléfono
 
-Se proporciona soporte de facturación en inglés de 9:00 a 17:00 (9:00 a 18:00 en Australia), de lunes a viernes.\
-Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.\
+Use el menú desplegable de abajo para buscar el número de su país o región.
+
+[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+El soporte técnico de facturación y las horas (y los idiomas) de soporte técnico aparecen en la página de cada país seleccionada en la lista desplegable.
+
 Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
 > [!NOTE]
@@ -73,10 +77,6 @@ Administradores, tengan los datos de su cuenta preparados cuando llamen.
 - **En Canadá, llame al 1 800 865 9408.**
 
 - **En el Reino Unido, llame al 0800 032 6417.**
-
-Si no encuentra su número de teléfono de soporte en la lista anterior, use el siguiente menú desplegable para elegir su país o región.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
 ## <a name="small-business-support-with-business-assist"></a>Soporte técnico para pequeñas empresas con Business Assist
 
@@ -134,7 +134,7 @@ El soporte técnico para las suscripciones de Office 365 operado por 21Vianet of
 | Nivel de gravedad | Operaciones y descripción de soporte | Ejemplos |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Gravedad A (crítica) | No se puede obtener acceso a uno o varios servicios o éstos no se pueden utilizar. Los plazos de producción, operaciones o desarrollo se ven afectados gravemente o se producirá un grave impacto en la producción o rentabilidad. Se ven afectados varios usuarios o servicios. | <ul><li>Problemas generalizados al enviar o recibir correo.</li><li>El sitio de SharePoint no funciona.</li><li>Ninguno de los usuarios puede enviar mensajes instantáneos, programar reuniones de Skype Empresarial o participar en ellas, o realizar llamadas de Skype Empresarial.</li></ul> |
-| Gravedad B (alta) | El servicio se puede utilizar pero de forma limitada. La situación tiene un impacto moderado en el negocio y se puede tratar durante el horario comercial. Un solo usuario, cliente o servicio se ve afectado parcialmente. | <ul><li>El botón Enviar es confuso en Outlook.</li><li>La configuración es imposible desde EAC (Centro de administración de Exchange) pero posible en Windows PowerShell.</li></ul> |
+| Gravedad B (alta) | El servicio se puede utilizar pero de forma limitada. La situación tiene un impacto moderado en el negocio y se puede tratar durante el horario comercial. Un solo usuario, cliente o servicio se ve afectado parcialmente. | <ul><li>El botón Enviar es confuso en Outlook.</li><li>La configuración es imposible desde el EAC (Centro de administración de Exchange), pero es posible en Exchange Online PowerShell.</li></ul> |
 | Gravedad C (no crítica) | La situación genera un mínimo impacto en el negocio. El problema es importante pero no genera un impacto significativo en la productividad o el servicio actual para el cliente. Un solo usuario sufre una interrupción parcial, pero existe una solución alternativa aceptable. | <ul><li>Cómo establecer una contraseña de usuario que nunca caduca.</li> <li>El usuario no puede eliminar la información de contacto en Exchange Online.</li></ul> |
 
 ## <a name="technical-support-initial-response-times"></a>Tiempos de respuesta inicial del soporte técnico

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: e52be352076808bf7b5287fb5b8f568754240c88
-ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+ms.openlocfilehash: 955e94aad0c7c4c20a020a76ebf4b4ffc1871d9a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65889333"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078818"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -45,19 +45,19 @@ Esta categoría de mecanismos de clasificación incluye la búsqueda de contenid
 - Reconocimiento de un elemento porque es una variación en una plantilla [(impresión con el dedo del documento).](document-fingerprinting.md)
 - Uso de la presencia de cadenas [exactas que coinciden con los datos exactos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-A continuación, las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) and auto-apply polices for retention labels (Información sobre la prevención de pérdida de datos de Microsoft Purview y [la aplicación automática de directivas para etiquetas de retención](apply-retention-labels-automatically.md)).
+Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en [Información sobre Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md) y [aplicar automáticamente directivas para etiquetas de retención](apply-retention-labels-automatically.md).
 
 ## <a name="classifiers"></a>Clasificadores
 
 Este método de clasificación es adecuado para el contenido que no se identifica fácilmente mediante los métodos manuales o automatizados de coincidencia de patrones. Este método de clasificación consiste más en usar un clasificador para identificar un elemento en función de cuál sea el elemento, no de los elementos que están en el elemento (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido examinando cientos de ejemplos del contenido que le interesa clasificar.
 
 > [!NOTE]
-> En versión preliminar: puede ver los clasificadores que se pueden entrenar en el explorador de contenido expandiendo **Clasificadores entrenables** en el panel de filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de etiquetar.
-> Si no desea usar esta característica, debe presentar una solicitud con soporte técnico de Microsoft para deshabilitar la clasificación inmediata. Esto deshabilitará el examen del contenido confidencial y etiquetado antes de crear directivas de etiquetado.
+> En versión preliminar: puede ver los clasificadores que se pueden entrenar en el explorador de contenido expandiendo **Clasificadores entrenables** en el panel de filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de ningún etiquetado.
+> Si no desea usar esta característica, debe presentar una solicitud con Soporte técnico de Microsoft para deshabilitar la clasificación inmediata. Esto deshabilitará el examen del contenido confidencial y etiquetado antes de crear directivas de etiquetado.
 
 ### <a name="where-you-can-use-classifiers"></a>Donde puede usar clasificadores
 
-Los clasificadores están disponibles para usarse como condición para el [etiquetado automático de Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md). 
+Los clasificadores están disponibles para su uso como condición para [Office etiquetado automático con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md). 
 
 Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; consulte [Aplicación automática de una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
@@ -73,7 +73,7 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; c
 
 Microsoft 365 incluye varios clasificadores previamente entrenados:
 
-- **Adulto, Racy y Gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con los mensajes de correo electrónico de Exchange Online y los canales y chats de Microsoft Teams. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
+- **Adulto, Racy y Gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
 
 - **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
@@ -117,14 +117,14 @@ Microsoft 365 incluye varios clasificadores previamente entrenados:
 - **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
 - **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 
-Aparecen en la vista **Clasificación** >  de datos **clasificadores entrenables** del portal  >  de **cumplimiento de Microsoft Purview** con el estado de `Ready to use`.
+Aparecen en la vista **clasificadores trainable** de **clasificación** >  **de portal de cumplimiento Microsoft Purview** >  Data con el estado de `Ready to use`.
 
 ![clasificadores-clasificadores previamente entrenados.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Tenga en cuenta que los clasificadores integrados y globales que se pueden entrenar no proporcionan una lista exhaustiva o completa de términos o idioma en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a detectar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de su organización de detectar o abordar el uso de dicho lenguaje. Su organización, no Microsoft ni sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente entrenado, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con el asesor legal antes de la implementación y el uso.
 
-Los clasificadores previamente entrenados pueden examinar el contenido en estos idiomas:
+Nuestros clasificadores de amenazas, blasfemias, acoso y discriminación pueden examinar el contenido en estos idiomas:
 
 - Árabe
 - Chino (simplificado)
@@ -138,6 +138,8 @@ Los clasificadores previamente entrenados pueden examinar el contenido en estos 
 - Japonés
 - Portugués
 - Español
+
+Todos los demás son inglés sólo en este momento.
 
 ### <a name="custom-classifiers"></a>Clasificadores personalizados
 
@@ -169,11 +171,11 @@ Puede ayudar a mejorar la precisión de todos los clasificadores entrenables per
 
 ![flujo de trabajo de reentrenamiento del clasificador.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Impresión con dedo del documento](document-fingerprinting.md)
-- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

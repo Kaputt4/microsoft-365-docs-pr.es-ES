@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 2d003ce76db677b22b3873f6f19df05b34f06b96
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 44f2697f5d56e05a7edfb624d09fd8117034fc8f
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016204"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078369"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -203,9 +203,10 @@ Configuration Manager nombre: todavía no disponible
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-<!-- Hide this intro with no subsequent list items
-Advanced hunting action type:
--->
+Tipo de acción de búsqueda avanzada:
+
+- AsrVulnerableSignedDriverAudited
+- AsrVulnerableSignedDriverBlocked
 
 <!-- 
 Dependencies: none provided by engineering

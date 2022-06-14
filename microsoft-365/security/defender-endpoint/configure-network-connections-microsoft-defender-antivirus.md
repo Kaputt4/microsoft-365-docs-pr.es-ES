@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418640"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078796"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -90,7 +90,7 @@ Para obtener más información, vea [Administrar Antivirus de Microsoft Defender
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Intento de descargar un archivo de malware falso de Microsoft
 
-Puede descargar un archivo de ejemplo que Antivirus de Microsoft Defender detectará y bloqueará si está conectado correctamente a la nube. Visite [https://aka.ms/ioavtest](https://aka.ms/ioavtest) para descargar el archivo.
+Puede descargar un archivo de ejemplo que Antivirus de Microsoft Defender detectará y bloqueará si está conectado correctamente a la nube. Visite [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) para descargar el archivo.
 
 > [!NOTE]
 > El archivo descargado no es exactamente malware. Es un archivo falso diseñado para probar si está conectado correctamente a la nube.
@@ -119,7 +119,7 @@ Se produce un mensaje similar si usa Internet Explorer:
    El registro de eventos Windows también mostrará [Windows Defender identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
-    > Si busca información relacionada con antivirus para otras plataformas, consulte:
+    > Si busca información relacionada con el antivirus para otras plataformas, consulte:
     > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
     > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
     > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

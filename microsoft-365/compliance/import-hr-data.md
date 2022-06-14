@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización para Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 4da4546ef42854c8265254b2c9e1a51b528a8d7d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cfde990b002d05962b3b7489f1adc9f5122af7c5
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092809"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078576"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos de recursos humanos (RR. HH.) relacionados con eventos como la renuncia de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la [solución de administración de riesgos internos](insider-risk-management.md) puede usar los datos de RR. HH. para generar indicadores de riesgo que pueden ayudarle a identificar posibles actividades malintencionadas o robos de datos por parte de los usuarios de su organización.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar datos de recursos humanos (RR. HH.) relacionados con eventos como la renuncia de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la [solución de administración de riesgos internos](insider-risk-management.md) puede usar los datos de RR. HH. para generar indicadores de riesgo que pueden ayudarle a identificar posibles actividades malintencionadas o robos de datos por parte de los usuarios de su organización.
 
 La configuración de un conector para datos de RR. HH. que las directivas de administración de riesgos internos pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de RR. HH., crear una aplicación en Azure Active Directory que se usa para la autenticación, crear un conector de datos de RR. HH. en el portal de cumplimiento y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de RR. HH. en archivos CSV en la nube de Microsoft para que estén disponibles.  a la solución de administración de riesgos internos.
 
@@ -39,11 +39,11 @@ La configuración de un conector para datos de RR. HH. que las directivas de adm
 
 - Determine cómo recuperar o exportar los datos del sistema de RR. HH. de su organización (y de forma periódica) y agréguelos a los archivos CSV que cree en el paso 1. El script que ejecute en el paso 4 cargará los datos de RR. HH. en los archivos CSV en la nube de Microsoft.
 
-- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - El script de ejemplo que ejecute en el paso 4 cargará los datos de RR. HH. en la nube de Microsoft para que puedan usarlos la solución de administración de riesgos internos. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
-- Este conector está disponible en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP. Para obtener instrucciones paso a paso para configurar un conector de RR. HH. en un entorno de GCC, consulte [Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU](import-hr-data-US-government.md).
+- Este conector está disponible en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP. Para obtener instrucciones paso a paso para configurar un conector de RR. HH. en un entorno de GCC, consulte [Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU](import-hr-data-US-government.md).
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Paso 1: Preparar un archivo CSV con los datos de RR. HH.
 
@@ -169,7 +169,7 @@ En la tabla siguiente se describe cada columna del archivo CSV para los datos de
 ### <a name="csv-file-for-employee-profile-data-preview"></a>Archivo CSV para datos de perfil de empleado (versión preliminar)
 
 > [!NOTE]
-> La capacidad de crear un conector de RR. HH. para datos de perfil de empleado está en versión preliminar pública. Para crear un conector de RR. HH. que admita datos de perfil de empleado, vaya a la página **Conectores de datos** del portal de cumplimiento, seleccione la pestaña **Conectores** y, a continuación, haga clic en **Agregar un conectorHR** >  **(versión preliminar).** Siga los pasos para crear un conector en [Paso 3: Crear el conector de RR. HH](#step-3-create-the-hr-connector).
+> La capacidad de crear un conector de RR. HH. para datos de perfil de empleado está en versión preliminar pública. Para crear un conector de RR. HH. que admita datos de perfil de empleado, vaya a la página **Conectores de datos** en el portal de cumplimiento, seleccione la pestaña **Conectores** y, a continuación, haga clic en **Agregar una****RR. HH. de** conector  >  (versión preliminar). Siga los pasos para crear un conector en [Paso 3: Crear el conector de RR. HH](#step-3-create-the-hr-connector).
 
 Este es un ejemplo de un archivo CSV para los datos de los datos de perfil de empleado.
 
@@ -219,11 +219,11 @@ Estos son los requisitos para configurar un archivo CSV con varios tipos de dato
 
 - Tiene que agregar las columnas necesarias (y opcionales si las usa) para cada tipo de datos y el nombre de columna correspondiente en la fila de encabezado. Si un tipo de datos no se corresponde con una columna, puede dejar el valor en blanco.
 
-- Para usar un archivo CSV con varios tipos de datos de RR. HH., el conector de RR. HH. debe saber qué filas del archivo CSV contienen qué tipo de datos de RR. HH. Para ello, agregue una columna **HRScenario** adicional al archivo CSV. Los valores de esta columna identifican el tipo de datos de RR. HH. en cada fila. Por ejemplo, los valores correspondientes a los cuatro escenarios de RR. HH. podrían ser Renuncia, Cambio de nivel de trabajo, \`Revisión\` del rendimiento, \`Plan\` de mejora del rendimiento y \`Perfil\` de empleado.\`\`\`\`
+- Para usar un archivo CSV con varios tipos de datos de RR. HH., el conector de RR. HH. debe saber qué filas del archivo CSV contienen qué tipo de datos de RR. HH. Para ello, agregue una columna **HRScenario** adicional al archivo CSV. Los valores de esta columna identifican el tipo de datos de RR. HH. en cada fila. Por ejemplo, los valores correspondientes a los escenarios de RR. HH. podrían ser Renuncia, Cambio de nivel de trabajo, \`Revisión\` del rendimiento, \`Plan\` de mejora del rendimiento y \`Perfil\` de empleado.\`\`\`\`
 
 - Si tiene varios archivos CSV que contienen una columna HRScenario**, asegúrese de que cada archivo usa el mismo nombre de columna y los mismos valores que identifican los escenarios de RR. HH. específicos.
 
-En el ejemplo siguiente se muestra un archivo CSV que contiene la columna **HRScenario** . Los valores de la columna HRScenario identifican el tipo de datos de la fila correspondiente.
+En el ejemplo siguiente se muestra un archivo CSV que contiene la columna **HRScenario** . Los valores de la columna HRScenario identifican el tipo de datos de la fila correspondiente. En el ejemplo siguiente se tratan cuatro escenarios \`de RR. HH., renuncia\`, \`cambio\` de nivel de trabajo, \`revisión\` del rendimiento y \`plan\` de mejora del rendimiento.
 
 ```text
 HRScenario,EmailAddress,ResignationDate,LastWorkingDate,EffectiveDate,Remarks,Rating,OldLevel,NewLevel
@@ -246,11 +246,11 @@ En función de los sistemas de RR. HH. de la organización y de cómo exportará
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Paso 2: Crear una aplicación en Azure Active Directory
 
-El siguiente paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RR. HH. que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RR. HH. cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de RR. HH. en la nube de Microsoft. Durante la creación de esta aplicación Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en los pasos 3 y 4.
+El siguiente paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RR. HH. que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RR. HH. cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de RR. HH. en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en los pasos 3 y 4.
 
-- Azure AD identificador de aplicación (también denominado *id. de aplicación* o *id. de cliente*)
+- Identificador de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente*)
 
-- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
+- Secreto de aplicación de Azure AD (también denominado *secreto de cliente*)
 
 - Id. de inquilino (también denominado *id. de directorio*)
 
@@ -282,7 +282,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic en **Upload archivo de ejemplo** para cargar el archivo CSV que preparó en el paso 1. Esta opción le permite seleccionar rápidamente los nombres de columna del archivo CSV en una lista desplegable para asignarlos a los tipos de datos para los escenarios de RR. HH. que seleccionó anteriormente.
 
-   OR
+   O
 
    - **Proporcione manualmente los detalles de la asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas del archivo CSV para asignarlas a los tipos de datos para los escenarios de RR. HH. que seleccionó anteriormente.
 
@@ -340,9 +340,9 @@ El último paso para configurar un conector de RR. HH. es ejecutar un script de 
 
    | Parámetro | Descripción |
    |:-----|:-----|:-----|
-   |`tenantId`|Este es el identificador de la organización Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del centro de administración de Azure AD. Esto se usa para identificar su organización.|
-   |`appId` |Este es el identificador de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 2. Esto lo usa Azure AD para la autenticación cuando el script intenta acceder a la organización Microsoft 365. | 
-   |`appSecret`|Este es el secreto de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 2. Esto también se usa para la autenticación.|
+   |`tenantId`|Este es el identificador de la organización Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
+   |`appId` |Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización Microsoft 365. | 
+   |`appSecret`|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. Esto también se usa para la autenticación.|
    |`jobId`|Este es el identificador de trabajo del conector de RR. HH. que creó en el paso 3. Esto se usa para asociar los datos de RR. HH. que se cargan en la nube de Microsoft con el conector de RR. HH.|
    |`filePath`|Esta es la ruta de acceso del archivo (almacenado en el mismo sistema que el script) que creó en el paso 1. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||
