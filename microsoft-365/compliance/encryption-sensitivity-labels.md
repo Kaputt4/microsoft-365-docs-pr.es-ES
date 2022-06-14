@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599241"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014330"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -446,11 +446,13 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 - Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
 
 - Para que varios usuarios editen un archivo cifrado al mismo tiempo, todos deben usar Office en la Web o se debe haber [habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y todos los usuarios deben tener [aplicaciones de Office compatibles con esta característica](sensitivity-labels-coauthoring.md#prerequisites). Si este no es el caso y el archivo ya está abierto:
-
+    
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
   - En Office para la Web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. A continuación, pueden seleccionar **Abrir en Vista de lectura**.
 
-- La funcionalidad [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) en las aplicaciones de Office para iOS y Android está deshabilitada para los archivos cifrados. Esta funcionalidad también está deshabilitada para los archivos cifrados en Windows y Mac si no ha [habilitado la autoría conjunta para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md). Los usuarios verán un mensaje en el que se indica que el archivo tiene permisos restringidos que deben quitarse para que se pueda activar el autoguardado.
+- La funcionalidad [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) en las aplicaciones de Office está deshabilitada para los archivos cifrados si no ha [habilitado la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md). Los usuarios verán un mensaje en el que se indica que el archivo tiene permisos restringidos que deben quitarse para que se pueda activar el autoguardado.
+
+- Office para Windows admite etiquetas que aplican cifrado cuando los usuarios no están conectados a Internet. No obstante, para las demás plataformas (macOS, iOS, Android), los usuarios deben estar en línea para aplicar estas etiquetas en las aplicaciones de Office. El cliente de etiquetado unificado Azure Information Protection también debe estar en línea para aplicar estas etiquetas en Explorador de archivos y PowerShell. No es necesario que los usuarios estén en línea para abrir contenido cifrado. Para obtener más información sobre el acceso sin conexión, consulte la sección [Licencia de uso de Rights Management para el acceso sin conexión ](#rights-management-use-license-for-offline-access).
 
 - Los archivos cifrados pueden tardar más en abrirse en las aplicaciones de Office (Windows, Mac, Android y iOS).
 
