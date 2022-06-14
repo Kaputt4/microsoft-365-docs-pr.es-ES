@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057613"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060946"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -73,14 +73,16 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
-    - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
-      - **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
-      - **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
-    - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
-      - **Grupo de roles lector global**
-      - **Grupo de roles lector de seguridad**
-      - **Grupo de roles de configuración de solo vista** .
+- Debe tener permisos asignados en **Exchange Online** antes de poder realizar los procedimientos de este artículo:
+  - Para agregar y quitar entradas de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Administración de la organización** (el rol **administrador de seguridad** ).
+    - **Administrador de seguridad** (el rol **Administrador de seguridad** ).
+    - **Operador de seguridad** (el rol **Administrador de listas de permitidos de inquilinos** ).
+
+  - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Grupo de roles lector global** .
+    - **Grupo de roles lector de seguridad** .
+    - **Grupo de roles de configuración de solo vista** .
 
   Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -119,7 +121,7 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
      - **Quitar activado**
      - **Notas**
    - **Spoofing**
-     - **Usuario suplantado**
+     - **Usuario con identidad suplantada**
      - **Infraestructura de envío**
      - **Tipo de suplantación:** el valor **Interno** o **Externo**.
      - **Acción**: el valor **Bloquear** o **Permitir**.
@@ -482,7 +484,6 @@ Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 - **Infraestructura**: tms.mx.com
 
 Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden suplantarse. No se permiten otros remitentes que intenten suplantar gmail.com. Los mensajes de remitentes de otros dominios que se originan en tms.mx.com se comprueban mediante inteligencia suplantada.
-
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Qué esperar después de agregar una entrada de permitir o bloquear
 
