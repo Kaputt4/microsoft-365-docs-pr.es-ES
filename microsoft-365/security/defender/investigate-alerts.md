@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739425"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057723"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -209,12 +209,13 @@ Para crear la automatización, necesitará un token de API para poder conectar P
 Vea este breve vídeo para obtener información sobre cómo funciona la automatización de forma eficaz para crear un flujo de trabajo fluido y cómo conectar Power Automate a Defender for Cloud Apps. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)
+- [Investigación de incidentes de pérdida de datos](investigate-dlp.md)

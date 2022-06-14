@@ -17,16 +17,16 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417960"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057677"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -167,7 +167,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
      - **Motivo de entrega/bloqueo**
      - **Id. de envío**
      - **Id. de mensaje de red o id. de objeto**
-     - **Dirección**
+     - **Direction**
      - **IP del remitente**
      - **Nivel de cumplimiento masivo (BCL)**
      - **Destino**
@@ -180,7 +180,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
      - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
@@ -197,7 +197,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/email-admin-submission-filters.png":::
 
    - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
      - **Ninguna**
@@ -287,7 +287,7 @@ Si ha implementado el [complemento Mensaje](enable-the-report-message-add-in.md)
 
 Una vez que un usuario envía un correo electrónico sospechoso al buzón personalizado, el usuario y el administrador no tienen la opción de deshacer el envío. Si el usuario desea recuperar el correo electrónico, estará disponible para su recuperación en las carpetas Elementos eliminados o Correo electrónico no deseado.
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Conversión de mensajes notificados por el usuario desde el buzón personalizado en un envío de administrador
+### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir mensajes notificados por el usuario del buzón personalizado en un envío de administrador
 
 Si ha configurado el buzón personalizado para interceptar los mensajes notificados por el usuario sin enviar los mensajes a Microsoft, puede encontrar y enviar mensajes específicos a Microsoft para su análisis.
 

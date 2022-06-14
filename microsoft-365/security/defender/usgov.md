@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender para clientes del Gobierno de ESTADOS UNIDOS
-description: Obtenga información sobre las Microsoft 365 Defender y las capacidades disponibles para los clientes del Gobierno de Estados Unidos
+title: Microsoft 365 Defender para clientes del Gobierno de los EE.UU.
+description: Obtenga información sobre los Microsoft 365 Defender para las funcionalidades y los requisitos de los clientes del Gobierno de EE. UU. disponibles
 keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,28 +16,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3e8f6e523a5483de99beb0af7d01ab96951b7a3e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 53fc78159580a27a8af04009f4e5ecd5b18bc4e8
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375339"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057591"
 ---
-# <a name="microsoft-365-defender-for-us-government-customers"></a>Microsoft 365 Defender para clientes del Gobierno de ESTADOS UNIDOS
+# <a name="microsoft-365-defender-for-us-government-customers"></a>Microsoft 365 Defender para clientes del Gobierno de los EE.UU.
 
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender para clientes del gobierno de Estados Unidos, integrados en el entorno de Azure US Government, usa las mismas tecnologías subyacentes que Microsoft 365 Defender en Azure Commercial.
+Microsoft 365 Defender para los clientes del Gobierno de EE. UU., integrado en el entorno de Azure US Government, usa las mismas tecnologías subyacentes que Microsoft 365 Defender en Azure Commercial.
 
-Esta oferta está disponible para clientes GCC, GCC High y DoD y se basa en la misma prevención, detección, investigación y corrección que la versión comercial. Sin embargo, hay algunas diferencias en la disponibilidad de capacidades para esta oferta.
+Esta oferta está disponible para los clientes de GCC, GCC High y DoD y se basa en la misma prevención, detección, investigación y corrección que la versión comercial. Sin embargo, hay algunas diferencias en la disponibilidad de las funcionalidades de esta oferta.
 
 > [!NOTE]
-> Si es un cliente de GCC que usa Defender para aplicaciones en la nube, Defender para endpoint o Defender for Identity en Commercial, debe realizar la transición de esos servicios a sus versiones de GCC para que sean aptos para Microsoft 365 Defender GCC.
+> Si es un cliente GCC que usa aplicaciones de Defender for Cloud, Defender para punto de conexión o Defender for Identity en comercial, debe realizar la transición de esos servicios a sus versiones de GCC para que sean aptos para Microsoft 365 Defender GCC.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Microsoft 365 Defender para los clientes del Gobierno de Estados Unidos requiere una de las siguientes ofertas de licencias por volumen de Microsoft:
+Microsoft 365 Defender para los clientes del Gobierno de EE. UU. requiere una de las siguientes ofertas de licencias por volumen de Microsoft:
 
 ### <a name="desktop-licensing"></a>Licencias de escritorio
 
@@ -48,14 +48,14 @@ Microsoft 365 Defender para los clientes del Gobierno de Estados Unidos requiere
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 para GCC High|Microsoft 365 G5 para DOD|
-|Microsoft 365 G5 Security GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
+|Microsoft 365 GCC de seguridad G5|seguridad de Microsoft 365 G5 para GCC alta|seguridad de Microsoft 365 G5 para DOD|
 |Enterprise Mobility + Security G5 GCC|Enterprise Mobility + Security E5 para GCC High|Enterprise Mobility + Security E5 para DOD|
-|Office 365 G5 GCC|Office 365 E5 para GCC High|Office 365 E5 para DOD|
-|Microsoft Defender para aplicaciones en la nube GCC|Microsoft Defender para aplicaciones en la nube para GCC high|Microsoft Defender para aplicaciones en la nube para DOD|
-|Microsoft Defender para endpoint: GCC|Microsoft Defender para endpoint for GCC High|Microsoft Defender para endpoint para DOD|
-|Microsoft Defender para la identidad: GCC|Microsoft Defender para identity for GCC High|Microsoft Defender para identidad para DOD|
-|Microsoft Defender para Office 365 (Plan 2) GCC|Microsoft Defender para Office 365 (Plan 2) para GCC High|Microsoft Defender para Office 365 (Plan 2) para DOD|
-|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
+|Office 365 GCC G5|Office 365 E5 para GCC High|Office 365 E5 para DOD|
+|Microsoft Defender for Cloud Apps GCC|Microsoft Defender for Cloud Apps para GCC High|Microsoft Defender for Cloud Apps para DOD|
+|Microsoft Defender para punto de conexión: GCC|Microsoft Defender para punto de conexión para GCC High|Microsoft Defender para punto de conexión para DOD|
+|Microsoft Defender for Identity: GCC|Microsoft Defender for Identity para GCC High|Microsoft Defender for Identity para DOD|
+|Microsoft Defender para Office 365 (plan 2) GCC|Microsoft Defender para Office 365 (Plan 2) para GCC High|Microsoft Defender para Office 365 (Plan 2) para DOD|
+|Windows 10 Enterprise GCC E5|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
 |
 
 ### <a name="server-licensing"></a>Licencias de servidor
@@ -66,13 +66,13 @@ Microsoft 365 Defender para los clientes del Gobierno de Estados Unidos requiere
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft Defender para endpoint server GCC|Microsoft Defender para Endpoint Server para GCC High|Microsoft Defender para Endpoint Server para DOD|
-|Microsoft Defender para servidores|Microsoft Defender para servidores- Gobierno|Microsoft Defender para servidores- Gobierno|
+|Microsoft Defender para punto de conexión Server GCC|Microsoft Defender para punto de conexión Server para GCC High|Microsoft Defender para punto de conexión Server for DOD|
+|Microsoft Defender para servidores|Microsoft Defender para servidores: Administración pública|Microsoft Defender para servidores: Administración pública|
 |
 
 ## <a name="portal-urls"></a>Direcciones URL del portal
 
-A continuación se de Microsoft 365 Defender direcciones URL del portal para clientes del Gobierno de ESTADOS UNIDOS:
+A continuación se muestran las direcciones URL del portal de Microsoft 365 Defender para los clientes del gobierno de EE. UU.:
 
 <br />
 
@@ -85,27 +85,27 @@ A continuación se de Microsoft 365 Defender direcciones URL del portal para cli
 |DoD|Implementando|
 |
 > [!NOTE]
-> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, use para obtener acceso a los datos comerciales de https://transition.security.microsoft.com Microsoft Defender para endpoint.
+> Si es un cliente GCC y está en proceso de pasar de Microsoft Defender para punto de conexión comercial a GCC, use https://transition.security.microsoft.com para acceder a sus datos comerciales Microsoft Defender para punto de conexión.
 
 ## <a name="api"></a>API
 
-En lugar de los URI públicos enumerados en nuestra [documentación de la API,](api-overview.md)deberá usar los siguientes URI:
+En lugar de los URI públicos que aparecen en la documentación de la [API](api-overview.md), deberá usar los siguientes URI:
 
 <br />
 
 ****
 
-|Tipo de extremo|GCC|GCC High & DoD|
+|Tipo de punto de conexión|GCC|GCC DoD & alto|
 |---|---|---|
 |Inicio de sesión|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
-|Microsoft 365 Defender API|`https://api-gcc.security.microsoft.us`|`https://api-gov.security.microsoft.us`|
+|API de Microsoft 365 Defender|`https://api-gcc.security.microsoft.us`|`https://api-gov.security.microsoft.us`|
 |
 
 ## <a name="feature-parity-with-commercial"></a>Paridad de características con comercial
 
-Microsoft 365 Defender para los clientes del Gobierno de Estados Unidos no tiene una paridad completa con la oferta comercial. Aunque nuestro objetivo es ofrecer todas las funciones y características comerciales a nuestros clientes del Gobierno de Estados Unidos, aún no hay algunas funcionalidades disponibles que queremos destacar.
+Microsoft 365 Defender para clientes del Gobierno de EE. UU. no tiene una paridad completa con la oferta comercial. Aunque nuestro objetivo es ofrecer todas las características y funcionalidades comerciales a nuestros clientes del Gobierno de EE. UU., todavía no hay algunas funcionalidades disponibles que queremos resaltar.
 
-Estas son las diferencias conocidas:
+Estas son las brechas conocidas:
 
 <br />
 
@@ -113,12 +113,15 @@ Estas son las diferencias conocidas:
 
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Integraciones: Microsoft Sentinel (incidentes & datos sin procesar)|![Sí](../defender-endpoint/images/svg/check-yes.svg)|![Sí](../defender-endpoint/images/svg/check-yes.svg) En versión preliminar privada|![Sí](../defender-endpoint/images/svg/check-yes.svg) En versión preliminar privada|
+|Integraciones: Microsoft Sentinel (incidentes & datos sin procesar)|![Sí](../defender-endpoint/images/svg/check-yes.svg) En versión preliminar pública|![Sí](../defender-endpoint/images/svg/check-yes.svg) En versión preliminar pública|![Sí](../defender-endpoint/images/svg/check-yes.svg) En versión preliminar pública|
 |Expertos en amenazas de Microsoft|![No](../defender-endpoint/images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](../defender-endpoint/images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](../defender-endpoint/images/svg/check-no.svg) En el trabajo pendiente de ingeniería|
+
+Para obtener una lista detallada de las tablas de Event Streaming API, consulte [Microsoft 365 Defender tipos de eventos de streaming admitidos en Event Streaming API](supported-event-types.md).
 
 ## <a name="more-details"></a>Más detalles
 
-Para obtener más información, vea las cargas de trabajo individuales de las páginas de Us Gov:
-- [Microsoft Defender para aplicaciones en la nube](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
-- [Microsoft Defender para identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description).
-- [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/gov).
+Para obtener más información, consulte las páginas de us gov de cargas de trabajo individuales:
+
+- [Microsoft Defender for Cloud Apps](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
+- [Microsoft Defender for Identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description).
+- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/gov).

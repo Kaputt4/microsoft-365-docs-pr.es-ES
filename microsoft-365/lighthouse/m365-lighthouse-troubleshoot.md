@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: 6508e3aca49bb2047d2f04a60c469d7b0888f765
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a93e6816effdc68253c4ec465fa79213258d7581
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011912"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057837"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Solución de problemas y mensajes de error en Microsoft 365 Lighthouse
 
@@ -56,7 +56,7 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 
 - Debe tener el acceso delegado configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
 - Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas Licencia
-- No debe tener más de 1000 usuarios con licencia 
+- No debe tener más de 2500 usuarios con licencia 
 
 **Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
 
@@ -67,7 +67,7 @@ Se requiere privilegios de administrador delegados granulares (GDAP) más una re
 | Inactivo | El inquilino se quitó a petición del MSP y ya no se administra en Lighthouse. | Debe reactivar el inquilino. En la página **Inquilinos** , seleccione los tres puntos (más acciones) junto al inquilino que desea reactivar y, a continuación, seleccione **Activar inquilino**. Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. |
 | Inelegible: DAP o GDAP no está configurado | No tiene dap o GDAP y privilegios de administrador de revendedor indirecto configurados con el inquilino, lo que lighthouse requiere. | Configure dap o GDAP y privilegios de administrador de revendedor indirecto en el Centro de partners de Microsoft. |
 | No válido: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia de Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5 o Microsoft Defender para Empresas. | Asegúrese de que el inquilino tiene al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas licencia asignada. |
-| No válido: se superó el recuento de usuarios | El inquilino tiene más de 1000 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 1000 usuarios con licencia. |
+| No válido: se superó el recuento de usuarios | El inquilino tiene más de 2500 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 2500 usuarios con licencia. |
 | No válido: error de comprobación geográfica | Usted y su cliente no residen en la misma región geográfica, lo que Lighthouse requiere. | Compruebe que el cliente reside en su región geográfica. Si no es así, no puede administrar el inquilino en Lighthouse. |
 | En proceso | Lighthouse descubrió el inquilino, pero todavía está en proceso de incorporación. | Espere 48 horas a Lighthouse para completar la incorporación del inquilino. |
 

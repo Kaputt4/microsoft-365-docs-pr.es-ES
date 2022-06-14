@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043739"
+ms.locfileid: "66057613"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -80,7 +80,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
     - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
       - **Grupo de roles lector global**
       - **Grupo de roles lector de seguridad**
-      - **Grupo de roles de configuración de solo vista* .
+      - **Grupo de roles de configuración de solo vista** .
 
   Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
