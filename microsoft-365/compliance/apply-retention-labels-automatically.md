@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012888"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089868"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -326,6 +326,8 @@ Tendrá que crear directivas de retención independientes si desea conservar o e
 Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos adjuntos en la nube:
 
 - Solo los datos adjuntos de nube recién compartidos se etiquetarán automáticamente para la retención.
+
+- Cuando se agrega un usuario a una conversación de Teams y se le da acceso al historial completo de la conversación, ese historial puede incluir datos adjuntos en la nube. Si se compartieron en un plazo de 48 horas después de que el usuario se agregara a la conversación, las copias actuales de los datos adjuntos en la nube se etiquetan automáticamente para la retención. Los datos adjuntos en la nube compartidos antes de este período de tiempo no se admiten para los usuarios recién agregados.
 
 - No se admiten los datos adjuntos en la nube compartidos fuera de Teams y Outlook.
 
