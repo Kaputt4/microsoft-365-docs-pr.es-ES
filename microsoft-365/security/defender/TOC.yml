@@ -14,6 +14,8 @@
               href: microsoft-365-security-center-mde.md
             - name: Defender para Office 365 en Microsoft 365 Defender
               href: microsoft-365-security-center-mdo.md
+            - name: Defender para aplicaciones en la nube en Microsoft 365 Defender
+              href: microsoft-365-security-center-defender-cloud-apps.md
             - name: Redirigiendo Defender para punto de conexión a Microsoft 365 Defender
               href: microsoft-365-security-mde-redirection.md
             - name: Redirigir Defender for Identity a Microsoft 365 Defender
@@ -166,6 +168,8 @@
               items:
                 - name: Incidentes
                   href: investigate-incidents.md
+                - name: Incidentes de pérdida de datos
+                  href: investigate-dlp.md
                 - name: Alertas
                   href: investigate-alerts.md
                 - name: Cuadernos de estrategias de calificación de alertas

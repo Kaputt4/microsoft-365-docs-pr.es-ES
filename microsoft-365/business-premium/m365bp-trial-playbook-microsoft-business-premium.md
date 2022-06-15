@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: ba9d7764734ccf47d412b6f95864da737d09251d
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 740d0b394148a84434c13fd4a3fcd38e8c617c03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893520"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089781"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
@@ -27,7 +27,7 @@ Le damos la bienvenida al cuaderno de estrategias de prueba de Microsoft Empresa
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configuración de la prueba de Microsoft 365 Empresa Premium
 
-Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurarlo todo. 
+Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurarlo todo.
 
 > [!Tip]
 > Si los vínculos del cuaderno de estrategias le alejan de esta ubicación, simplemente vuelva a este cuaderno de estrategias para continuar.
@@ -64,13 +64,13 @@ Al comprar la prueba de Microsoft 365 Empresa Premium, tiene la opción de usar
 
 ## <a name="onboard-and-protect-devices"></a>Incorporación y protección de dispositivos
 
-1. Visite el portal de Defender en security.microsoft.com.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. Ejecute el [asistente para la instalación](../security/defender-business/mdb-use-wizard.md).
 
-3. Ahora, [incorpore dispositivos](../security/defender-business/mdb-onboard-devices.md).
+3. [Incorporar dispositivos](../security/defender-business/mdb-onboard-devices.md).
 
-4. A continuación, [revise las directivas de seguridad](../security/defender-business/mdb-configure-security-settings.md).
+4. [Revisar las directivas de seguridad](../security/defender-business/mdb-configure-security-settings.md).
 
 ## <a name="use-office-apps-on-devices"></a>Usar aplicaciones de Office en dispositivos
 

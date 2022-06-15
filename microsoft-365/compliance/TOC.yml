@@ -1,6 +1,8 @@
-- name: Cumplimiento de Microsoft Purview
+- name: Soluciones de cumplimiento y riesgo de Microsoft Purview
   href: index.yml
-- name: Novedades de Microsoft Purview
+- name: Obtener información sobre soluciones de riesgo y cumplimiento
+  href: purview-compliance.md
+- name: Novedades de las soluciones de riesgo y cumplimiento
   href: whats-new.md
 - name: Pruebas de cumplimiento
   items:
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: Búsquedas en el registro de auditoría
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Nueva búsqueda de Auditoría
+          href: audit-new-search.md
         - name: 'Exportar, configurar y ver registros de registro de auditoría'
           href: export-view-audit-log-records.md
         - name: Usar un script de PowerShell para buscar en el registro de auditoría

@@ -1,7 +1,7 @@
 ---
 title: Encabezados de mensajes de correo no deseado
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,20 +9,25 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: high
 search.appverid:
-  - MET150
+- MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 description: Los administradores pueden obtener información sobre los campos de encabezado que se agregan a los mensajes mediante Exchange Online Protection (EOP). Estos campos de encabezado proporcionan información sobre el mensaje y cómo se procesó.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 2d9c98446b7963581654c5920c30202f547ce271
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089031"
 ---
-
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -67,7 +72,7 @@ Los campos y valores individuales se describen en la siguiente tabla.
 |`LANG`|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |`PTR:[ReverseDNS]`|El registro PTR (también conocido como la búsqueda inversa de DNS) de la dirección IP de la fuente.|
 |`SCL`|Nivel de confianza de correo electrónico no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado. Para obtener más información, consulte [Nivel de confianza del correo no deseado (SCL)](spam-confidence-levels.md).|
-|`SFTY`|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <ul><li>9.19: Suplantación de dominio. El dominio remitente está intentando [suplantar un dominio protegido](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). La sugerencia de seguridad para la suplantación del dominio se agrega al mensaje (si está habilitada).</li><li>9.20: Suplantación de usuario. El usuario remitente está intentando suplantar a otro usuario de la organización del destinatario, o bien a un [usuario protegido que se especificó en una directiva contra la suplantación de identidad](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en Microsoft Defender para Office 365. La sugerencia de seguridad para la suplantación del usuario se agrega al mensaje (si está habilitada).</li></ul>|
+|`SFTY`|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <ul><li>9.19: Suplantación de dominio. El dominio remitente está intentando [suplantar un dominio protegido](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). La sugerencia de seguridad para la suplantación del dominio se agrega al mensaje (si está habilitada).</li><li>9.20: Suplantación de usuario. El usuario remitente está intentando suplantar a otro usuario de la organización del destinatario, o bien a un [usuario protegido que se especificó en una directiva contra la suplantación de identidad](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en Microsoft Defender para Office 365. La sugerencia de seguridad para la suplantación del usuario se agrega al mensaje (si está habilitada).</li><li>9.25: Sugerencia de seguridad ante un primer contacto. Este valor _podría_ indicar que se trata de un mensaje sospechoso o de suplantación de identidad (phishing). Para obtener más información, consulte [Sugerencia de seguridad ante un primer contacto](set-up-anti-phishing-policies.md#first-contact-safety-tip).</li></ul>|
 |`SFV:BLK`|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de la lista de remitentes bloqueados de un usuario. <p> Para más información sobre cómo los administradores pueden administrar la lista de Remitentes bloqueados de un usuario, consulte [Configurar las opciones de correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|El filtrado de correo no deseado marcó el mensaje como deseado y se envió a los destinatarios correspondientes.|
 |`SFV:SFE`|Se omitió el filtrado y el mensaje se permitió porque se envió desde una dirección de la lista de remitentes seguros de un usuario. <p> Para más información sobre cómo los administradores pueden administrar la lista de Remitentes seguros de un usuario, consulte [Configurar las opciones de correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|
