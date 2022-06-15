@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 91bd33e3f8e178136267b95c2e9133b5923ff703
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8248a9947f30edfa1db9dc002db6e8dd58ca9078
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325437"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102490"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Información de facturación de Microsoft 365 para empresas en México
 

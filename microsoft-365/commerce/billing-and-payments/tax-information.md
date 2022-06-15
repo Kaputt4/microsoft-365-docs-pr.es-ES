@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: Descubra la cantidad de impuestos que se le cobrarán por la Microsoft 365 para la suscripción empresarial en diferentes regiones.
 ms.date: 03/17/2021
-ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731237"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101639"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -108,7 +108,7 @@ Al comprar Microsoft 365 servicios en la región de EMEA, esta compra podría es
 
 - Si se encuentra en Liechtenstein, Rusia, Serbia, Sudáfrica o Suiza, se aplica el IVA, ya sea que proporcione su id. de IVA o no.
 
-- Para los clientes de la UE, antes de poder validar su id. de IVA, debe estar disponible para su verificación en el Sistema de información de IVA Exchange (VIES). Si no se puede verificar el identificador de IVA, póngase en contacto con la autoridad fiscal local.
+- Para los clientes de la UE, antes de poder validar su id. de IVA, debe estar disponible para su verificación en el sistema de intercambio de información de IVA (VIES). Si no se puede verificar el identificador de IVA, póngase en contacto con la autoridad fiscal local.
 
 Puede calificar para la clasificación sin IVA si:
   
@@ -142,7 +142,7 @@ Si su facturación la realiza Microsoft Corporation ([consulte su factura](view-
 2. En la pestaña **Productos**, seleccione la suscripción que quiera actualizar.
 3. En la página de detalles de la suscripción, en la sección **Dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
 4. En el panel **Editar dirección de uso del servicio** , en el cuadro **Número de IVA** , escriba el identificador de IVA, incluido el prefijo y sin espacios.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 

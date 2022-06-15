@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: La manera más fácil de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, no siempre se admite la pestaña Actualizar.
 ms.date: 04/21/2021
-ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042404"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102270"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
@@ -147,7 +147,7 @@ Los usuarios de la suscripción antigua se transferirán automáticamente a la n
 Si la suscripción anterior incluye varios servicios y ha cambiado a cuál de estos servicios están asignados los usuarios, es posible que quiera tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio SharePoint Online de 50 de ellos, este cambio no se conservaría después de actualizar los planes.
 
 Si tiene más de una suscripción antes de actualizar los planes y tiene a los usuarios licencias asignadas a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
-Todos los datos de usuario se conservarán durante la actualización, incluidos Exchange buzones y SharePoint documentos en línea, listas y otra información.
+Todos los datos de usuario se conservarán durante la actualización, incluidos los buzones de Exchange y SharePoint documentos, listas y otra información en línea.
   
 ### <a name="billing"></a>Facturación
 

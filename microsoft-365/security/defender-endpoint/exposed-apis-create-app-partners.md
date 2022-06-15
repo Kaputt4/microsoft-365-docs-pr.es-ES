@@ -1,7 +1,7 @@
 ---
-title: Creación de una aplicación para acceder a Microsoft Defender para punto de conexión sin un usuario
+title: Acceso de asociados a través de api de Microsoft Defender para punto de conexión
 ms.reviewer: ''
-description: Obtenga información sobre cómo diseñar una aplicación web para obtener acceso mediante programación a Microsoft Defender para punto de conexión sin un usuario.
+description: Obtenga información sobre cómo diseñar una aplicación web para obtener acceso mediante programación a Microsoft Defender para punto de conexión en nombre de los usuarios.
 keywords: api, graph api, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268886"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101852"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Acceso de asociados a través de api de Microsoft Defender para punto de conexión
 
@@ -44,16 +44,16 @@ ms.locfileid: "65268886"
 
 En esta página se describe cómo crear una aplicación de Azure Active Directory (Azure AD) para obtener acceso mediante programación a Microsoft Defender para punto de conexión en nombre de los clientes.
 
-Microsoft Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudarán a automatizar los flujos de trabajo e innovar en función de Microsoft Defender para punto de conexión funcionalidades. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Código de autorización de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudarán a automatizar los flujos de trabajo e innovar en función de Microsoft Defender para punto de conexión funcionalidades. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá realizar los pasos siguientes para usar las API:
 
-- Cree una aplicación **de Azure AD multiinquilino**.
+- Cree una aplicación de Azure AD **multiinquilino** .
 - Obtenga autorización (consentimiento) por parte del administrador del cliente para que la aplicación acceda a los recursos de Defender para punto de conexión que necesita.
 - Obtenga un token de acceso mediante esta aplicación.
 - Use el token para acceder a Microsoft Defender para punto de conexión API.
 
-Los pasos siguientes le guiarán para crear una aplicación Azure AD, obtener un token de acceso para Microsoft Defender para punto de conexión y validar el token.
+Los pasos siguientes le guiarán para crear una aplicación de Azure AD, obtener un token de acceso para Microsoft Defender para punto de conexión y validar el token.
 
 ## <a name="create-the-multi-tenant-app"></a>Creación de la aplicación multiinquilino
 
@@ -71,7 +71,7 @@ Los pasos siguientes le guiarán para crear una aplicación Azure AD, obtener un
 
    - URI de redirección: tipo: Web, URI: https://portal.azure.com
 
-     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="Página de registro de la aplicación de asociado Microsoft Azure" lightbox="images/atp-api-new-app-partner.png":::
+     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="Página de registro de aplicaciones asociadas de Microsoft Azure" lightbox="images/atp-api-new-app-partner.png":::
 
 4. Permita que la aplicación acceda a Microsoft Defender para punto de conexión y asígnela con el conjunto mínimo de permisos necesarios para completar la integración.
 
@@ -140,7 +140,7 @@ En el ejemplo siguiente usaremos el permiso **"Leer todas las alertas"** :
 
 **Nota:** Para obtener el token de acceso en nombre del cliente, use el identificador de inquilino del cliente en las siguientes adquisiciones de tokens.
 
-Para obtener más información sobre AAD token, consulte [AAD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Para obtener más información sobre el token de AAD, consulte [el tutorial de AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="using-powershell"></a>Con PowerShell
 
@@ -168,33 +168,35 @@ return $token
 
 ### <a name="using-c"></a>Uso de C #
 
-> El código siguiente se ha probado con Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> El código siguiente se ha probado con Nuget Microsoft.Identity.Client.
 
 > [!IMPORTANT]
-> El paquete [de NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de Autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
+> El paquete NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020. Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
 
 - Creación de una nueva aplicación de consola
-- Instalar NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- Instalación de NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/)
 - Agregue lo siguiente mediante
 
     ```console
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 - Copie o pegue el código siguiente en la aplicación (no olvide actualizar las tres variables: `tenantId`, `appId`y `appSecret`)
 
-    ```console
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="using-python"></a>Uso de Python
@@ -204,7 +206,7 @@ Consulte [Obtención de un token mediante Python.](run-advanced-query-sample-pyt
 ### <a name="using-curl"></a>Uso de Curl
 
 > [!NOTE]
-> El procedimiento siguiente supuesto Curl para Windows ya está instalado en el equipo
+> El procedimiento siguiente supone que Curl para Windows ya está instalado en el equipo.
 
 - Abrir una ventana de comandos
 - Establecimiento de CLIENT_ID en el identificador de aplicación de Azure

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción de Microsoft 365 para empresas.
 ms.date: 10/21/2020
-ms.openlocfilehash: 2f877438571c261217305651121d33b3f14697b4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 32f4fcc5c6febece9f9680120a41a4a49674f816
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715151"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102446"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto comprada en Microsoft Open.
 
@@ -35,7 +35,7 @@ Si compró Microsoft 365 para empresas de un Programa de [licencias abiertas de 
   
  **¿Necesita algo más?**
 
- **Para obtener ayuda con Microsoft 365 Home o Personal**, consulte Uso de [claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+ **Para obtener ayuda con Microsoft 365 Home o Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
  **Para obtener ayuda con Microsoft 365 Empresa Estándar compradas en una tienda minorista**, consulte [Introducción a la clave de producto comprada en una tienda minorista](enter-your-product-key.md).
   

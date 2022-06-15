@@ -3,7 +3,7 @@ title: Entender su factura o recibo
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 ms.date: 05/04/2021
-ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315811"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101786"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
@@ -140,7 +140,7 @@ Las instrucciones de pago dependen del método de pago y se muestran en la parte
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>¿Por qué no veo el anticipo de Azure como método de pago?
 
-El prepago de Azure solo está disponible como método de pago para productos y servicios de Azure elegibles
+El prepago de Azure solo está disponible como método de pago para productos y servicios válidos de Azure.
 
 ## <a name="need-help-contact-support"></a>¿Necesita ayuda? Ponerse en contacto con soporte técnico
 
@@ -151,6 +151,6 @@ Si tiene preguntas o necesita ayuda con su factura en el Centro de administraci�
 ## <a name="related-content"></a>Contenido relacionado
 
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
-[Seguimiento del saldo de crédito de Azure del contrato de cliente de Microsoft](/azure/billing/billing-mca-check-azure-credits-balance) (artículo)\
-[Revisar la factura del contrato de cliente de Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (artículo)\
-[Introducción a la cuenta de facturación del Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview) (artículo)
+[Seguimiento Contrato de cliente de Microsoft saldo de crédito de Azure](/azure/billing/billing-mca-check-azure-credits-balance) (artículo)\
+[Revise la factura de Contrato de cliente de Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (artículo)\
+[Comenzar con su cuenta de facturación de Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview) (artículo)

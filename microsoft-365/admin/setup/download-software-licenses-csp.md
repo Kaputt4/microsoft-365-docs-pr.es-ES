@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 58b35335e1d00207be664700694edfb46cc8fdec
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468906"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101896"
 ---
 # <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Descargue las claves de licencia de productos y software perpetuos en Microsoft 365
 
@@ -34,7 +34,7 @@ En este artículo se explica cómo descargar claves de licencia de software y pr
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser administrador global para realizar los pasos de este artículo. Para más información, consulte[Sobre los roles de administrador](../add-users/about-admin-roles.md).
+Debe ser administrador global para realizar los pasos de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Descarga de claves de licencia de software y productos
 
