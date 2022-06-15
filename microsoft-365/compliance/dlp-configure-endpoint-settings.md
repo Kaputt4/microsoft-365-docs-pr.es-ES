@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952828"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078774"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -139,7 +139,7 @@ Cuando se selecciona **Acceso por aplicaciones restringidas** en una directiva y
 > [!IMPORTANT]
 > La acción (`audit`, `block with override`o `block`) definida para las aplicaciones que están en la lista de aplicaciones restringidas solo se aplica cuando un usuario intenta ***acceder*** a un elemento protegido. 
 
-#### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)
+#### <a name="file-activities-for-apps-in-restricted-app-groups"></a>Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos
 
 Los grupos de aplicaciones restringidos son colecciones de aplicaciones que crea en la configuración de DLP y luego agrega a una regla de una directiva. Al agregar un grupo de aplicaciones restringido a una directiva, puede realizar las acciones definidas en esta tabla.
 
@@ -154,11 +154,11 @@ Los grupos de aplicaciones restringidos son colecciones de aplicaciones que crea
 
 #### <a name="how-dlp-applies-restrictions-to-activities"></a>Cómo aplica DLP restricciones a las actividades
 
-Las interacciones entre **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)**, **Actividades de archivo para todas las aplicaciones** y la lista **Actividades de aplicaciones restringidas** se limitan a la misma regla.
+Las interacciones entre **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos**, **Actividades de archivo para todas las aplicaciones** y la lista **Actividades de aplicaciones restringidas** se limitan a la misma regla.
 
 ##### <a name="restricted-app-groups-overrides"></a>Invalidaciones de grupos de aplicaciones restringidos
 
-Las configuraciones definidas en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)** invalidan las configuraciones de la lista **Actividades de aplicaciones restringidas** y las **Actividades de archivo para todas las aplicaciones** en la misma regla.
+Las configuraciones definidas en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos** invalidan las configuraciones de la lista **Actividades de aplicaciones restringidas** y de **Actividades de archivo para todas las aplicaciones** en la misma regla.
 
 ##### <a name="restricted-app-activities-and-file-activities-for-all-apps"></a>Actividades de aplicación restringidas y actividades de archivo para todas las aplicaciones
 
@@ -185,7 +185,7 @@ El usuario A abre un archivo DLP protegido mediante el bloc de notas. DLP permit
    
 ##### <a name="file-activities-for-all-apps-only"></a>Actividades de archivo solo para todas las aplicaciones
 
-Si una aplicación no está en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)** o no está en la lista **Actividades de aplicaciones restringidas** o bien está en la lista **Actividades de aplicaciones restringidas** con una acción de `Audit only` o "Bloquear con invalidación", las restricciones definidas en **Actividades de archivo para todas las aplicaciones** se aplican en la misma regla.  
+Si una aplicación no está en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos** o no está en la lista **Actividades de aplicaciones restringidas** o bien está en la lista **Actividades de aplicaciones restringidas** con una acción de `Audit only` o "Bloquear con invalidación", las restricciones definidas en **Actividades de archivo para todas las aplicaciones** se aplican en la misma regla.  
 
 #### <a name="macos-devices"></a>dispositivos macOS
 
