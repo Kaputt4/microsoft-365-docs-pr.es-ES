@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078971"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089119"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
@@ -180,7 +180,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Opción Personalizar columna para envíos de administrador de correo electrónico." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
      - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
@@ -197,7 +197,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opciones de filtro para envíos de administradores de correo electrónico." lightbox="../../media/email-admin-submission-filters.png":::
 
    - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
      - **Ninguna**
@@ -231,8 +231,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Personalice las opciones de columna para envíos de administrador de datos adjuntos de correo electrónico.":::
 
    - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
      - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
@@ -245,8 +244,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Opciones de filtro para envíos de administrador de datos adjuntos de correo electrónico.":::
 
    - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
      - **Ninguna**
@@ -280,8 +278,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opciones de la nueva columna Personalizar para envíos de administradores" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Personalice las opciones de columna para envíos de administradores de direcciones URL.":::
 
    - Para filtrar las entradas, haga clic en **Filtrar**. Los filtros disponibles son:
      - **Fecha de envío**: **fecha de inicio** y **fecha de finalización**.
@@ -294,8 +291,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opciones de nuevo filtro para envíos de administradores" lightbox="../../media/url-admin-submission-filters.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opciones de filtro para envíos de administradores de direcciones URL.":::
 
    - Para agrupar las entradas, haga clic en **Agrupar** y seleccione uno de los siguientes valores en la lista desplegable:
      - **Ninguna**

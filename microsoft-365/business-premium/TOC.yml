@@ -2,9 +2,9 @@
   items:
     - name: Información general
       href: index.md
-    - name: Cómo Microsoft 365 ayuda a su empresa
+    - name: Cómo Microsoft 365 ayuda a su negocio
       href: m365bp-secure-users.md
-    - name: Cuaderno de estrategias de prueba de Microsoft 365 Business Premium
+    - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
@@ -38,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: Configurar la autenticación multifactor
           href: m365bp-multifactor-authentication.md
-        - name: Instalación de aplicaciones de Office en dispositivos
+        - name: Instalación de aplicaciones Office en dispositivos
           href: m365bp-install-office-apps.md
         - name: Protección de dispositivos no administrados
           href: m365bp-protect-pcs-macs.md
@@ -106,6 +106,8 @@
       href: m365bp-maintain-environment.md
     - name: Quitar usuarios
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Agregar usuarios
+      href: m365bp-add-users.md
     - name: Quitar datos de dispositivos
       href: m365bp-remove-company-data.md
     - name: Restablecer dispositivos a la configuración de fábrica
@@ -116,7 +118,7 @@
       href: m365bp-glossary.md
     - name: Preguntas más frecuentes de Microsoft 365 Empresa Premium
       href: microsoft-365-business-faqs.yml
-    - name: Contenido de administrador de Microsoft 365
+    - name: Microsoft 365 contenido de administrador
       href: /microsoft-365/admin/
     - name: Configuración de AutoPilot
       items:
@@ -128,7 +130,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Configuración de protección de aplicaciones para Android y iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Validación de la configuración de la aplicación en Android e iOS
+    - name: Validar la configuración de la aplicación en Android y iOS
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Asignar funciones de protección a la configuración de Intune
       href: m365bp-map-protection-features-to-intune-settings.md

@@ -17,21 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 034c37e0b87ab77c2e4119ab87563da06925501a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172786"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089009"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Uso del asistente para la instalación en Microsoft Defender para Empresas
 
 Microsoft Defender para Empresas se diseñó para ahorrar tiempo y esfuerzo a las pequeñas y medianas empresas. Por ejemplo, puede realizar la configuración y la configuración iniciales con un asistente para la instalación. El asistente para la configuración le guía a través de la concesión de acceso al equipo de seguridad, la configuración de notificaciones por correo electrónico para el equipo de seguridad y la incorporación de los dispositivos de Windows de su empresa.
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 > [!TIP]
 > El uso del asistente para la instalación es opcional. Puede optar por trabajar manualmente en el proceso de configuración y configuración. Para más información, vea:
@@ -42,7 +38,7 @@ Microsoft Defender para Empresas se diseñó para ahorrar tiempo y esfuerzo a la
 
 El asistente para la instalación está diseñado para ejecutarse la primera vez que alguien de la empresa inicia sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-Si su empresa ha estado usando Microsoft 365 Empresa Premium, el Asistente para la configuración de Defender para empresas se ejecutará la primera vez que alguien vaya al **inventario** **de endpointsDevice** > . 
+Si su empresa ha estado usando Microsoft 365 Empresa Premium, el Asistente para la configuración de Defender para empresas se ejecutará la primera vez que alguien vaya al **inventario de** **dispositivos de puntos de conexión** > . 
 
 La pantalla de inicio del asistente para la instalación es similar a la siguiente imagen:
 
@@ -59,7 +55,7 @@ El asistente para la instalación está diseñado para ayudarle a configurar Def
 
    En Defender para empresas, a los miembros del equipo de seguridad se les puede asignar uno de los tres roles siguientes:<br/>
    
-   - **Administrador global**: un administrador global puede ver y editar toda la configuración en el inquilino de Microsoft 365. El administrador global realiza la configuración y configuración iniciales de la suscripción de Microsoft 365 de la empresa. 
+   - **Administración global**: un administrador global puede ver y editar toda la configuración en el inquilino de Microsoft 365. El administrador global realiza la configuración y configuración iniciales de la suscripción de Microsoft 365 de la empresa. 
    - **Administrador de** seguridad: un administrador de seguridad puede ver y editar la configuración de seguridad y tomar medidas cuando se detectan amenazas.
    - **Lector de** seguridad: un lector de seguridad puede ver información en los informes, pero no puede cambiar ninguna configuración de seguridad. 
 
@@ -104,7 +100,7 @@ Consulte [Configuración y configuración de Microsoft Defender para Empresas](m
 
 4. **[Administre las directivas de seguridad](mdb-configure-security-settings.md)**, que incluyen protección de última generación, protección contra firewalls y filtrado de contenido web.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Incorporación de más dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md)
 - [Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para Empresas](mdb-configure-security-settings.md)

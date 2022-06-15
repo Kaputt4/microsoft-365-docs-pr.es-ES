@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172220"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090440"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Grupos de dispositivos en Microsoft Defender para Empresas
 
@@ -34,10 +34,6 @@ En Microsoft Defender para Empresas, las directivas se aplican a los dispositivo
 - [Visualización de un grupo de dispositivos existente](#view-an-existing-device-group)
 - [Qué hace la opción Agregar todos los dispositivos](#what-does-the-add-all-devices-option-do)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="what-is-a-device-group"></a>¿Qué es un grupo de dispositivos?
 
@@ -110,7 +106,7 @@ Al crear o editar una directiva, es posible que vea la opción **Agregar todos l
 
 Si selecciona esta opción, todos los dispositivos inscritos en Microsoft Intune recibirán la directiva que está creando o editando de forma predeterminada. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Elija una o varias de las siguientes tareas:
 

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174503"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090396"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para Empresas
 
@@ -34,16 +34,12 @@ Para más información sobre las directivas y la configuración del firewall, co
 - [Edición de una regla personalizada para una directiva de firewall](#edit-a-custom-rule-for-a-firewall-policy)
 - [Eliminación de una regla personalizada](#delete-a-custom-rule)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Creación de una regla personalizada para una directiva de firewall
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Vaya a **Puntos de** **conexiónConfiguración** >  del dispositivo y revise la lista de directivas.
+2. Vaya a **Configuración del dispositivo** **de puntos** >  de conexión y revise la lista de directivas.
 
 3. En la sección **Firewall** , seleccione una directiva existente o agregue una nueva.
 
@@ -66,7 +62,7 @@ Para más información sobre las directivas y la configuración del firewall, co
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Vaya a **Puntos de** **conexiónConfiguración** >  del dispositivo y revise la lista de directivas.
+2. Vaya a **Configuración del dispositivo** **de puntos** >  de conexión y revise la lista de directivas.
 
 3. En la sección **Firewall** , seleccione una directiva existente o agregue una nueva.
 
@@ -91,7 +87,7 @@ Para más información sobre las directivas y la configuración del firewall, co
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Vaya a **Puntos de** **conexiónConfiguración** >  del dispositivo y revise la lista de directivas.
+2. Vaya a **Configuración del dispositivo** **de puntos** >  de conexión y revise la lista de directivas.
 
 3. En la sección **Firewall** , seleccione una directiva existente o agregue una nueva.
 
@@ -101,7 +97,7 @@ Para más información sobre las directivas y la configuración del firewall, co
 
 6. En la pantalla de confirmación, elija **Eliminar**. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
 - [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)

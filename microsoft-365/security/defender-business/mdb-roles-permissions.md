@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172641"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089470"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignación de roles y permisos en Microsoft Defender para Empresas
 
@@ -32,10 +32,6 @@ Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Mic
 2. [Vea o edite las asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
 3. [Continúe con los pasos siguientes](#next-steps).
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="roles-in-defender-for-business"></a>Roles en Defender para empresas
 
@@ -63,7 +59,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
    > [!IMPORTANT]
    > Microsoft recomienda conceder a las personas acceso solo a lo que necesitan para realizar sus tareas. A este concepto se le llama *privilegio mínimo* para los permisos. Para obtener más información, consulte [Procedimientos recomendados para el acceso con privilegios mínimos para las aplicaciones](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. En el panel lateral, seleccione el vínculo **Administrar miembros en Azure AD**. Esta acción le lleva a Azure Active Directory (Azure AD) donde puede ver y administrar las asignaciones de roles.
+4. En el panel lateral, seleccione el vínculo **Administrar miembros en Azure AD** . Esta acción le lleva a Azure Active Directory (Azure AD) donde puede ver y administrar las asignaciones de roles.
 
 5. Seleccione un usuario para abrir su perfil y, a continuación, elija **Roles asignados**.
 
@@ -74,7 +70,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
 
 Si aún no ha agregado usuarios a su suscripción, consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 

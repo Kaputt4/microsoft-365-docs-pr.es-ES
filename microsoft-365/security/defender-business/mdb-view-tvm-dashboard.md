@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 8301119b0169e0ee2ac56cc7a85b3037ccb75907
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393096"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090572"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Use el panel de administración de vulnerabilidades de Threat & en Microsoft Defender para Empresas
 
@@ -37,10 +37,6 @@ Microsoft Defender para Empresas incluye un panel de administración de vulnerab
 
 [Más información sobre Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Obtenga ayuda o póngase en contacto con el soporte técnico si tiene algún problema con Defender para empresas.
-ms.openlocfilehash: 37e41f8e5d5f6421739fb98a38d99bb6aa0597c6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4f2a45514ba701eac27af32b2585c9a765dcc1f2
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173143"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090327"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Obtener ayuda y soporte técnico para Microsoft Defender para Empresas
 
@@ -30,10 +30,6 @@ Si necesita ayuda con Microsoft Defender para Empresas, seleccione el icono ayud
 
 Si no ve la respuesta a su pregunta, puede abrir una incidencia de soporte técnico. Consulte [Obtención de soporte técnico](../../admin/get-help-support.md)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="see-also"></a>Consulte también
 

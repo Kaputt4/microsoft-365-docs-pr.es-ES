@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 58b2756bead1df85e12e3276d0da475d6882b589
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621308"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088987"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
 Con Microsoft Defender para Empresas, tiene varias opciones entre las que elegir para incorporar los dispositivos de su empresa. Este artículo le guiará por las opciones e incluye información general sobre cómo funciona la incorporación.
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="what-to-do"></a>Qué hacer
 
@@ -142,7 +138,7 @@ Una vez ejecutado el comando, la ventana del símbolo del sistema se cerrará au
 
 Para ver la lista de dispositivos que se incorporan a Defender for Business, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos [(Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)
@@ -180,7 +176,7 @@ Al ejecutar el script local en un dispositivo macOS, crea una confianza con Azur
 
 8. Seleccione **Continuar**, acepte los términos de licencia y escriba la contraseña cuando se le solicite.
 
-9. Se le pedirá que permita instalar un controlador de Microsoft (ya sea "Extensión del sistema bloqueada" o "La instalación está en espera" o ambas. Se debe permitir que se instale el controlador. Para permitir la instalación, seleccione **Abrir preferencias de seguridad** o **Abrir preferencias** >  del **sistemaSeguridad & privacidad** y, a continuación, seleccione **Permitir**.
+9. Se le pedirá que permita instalar un controlador de Microsoft (ya sea "Extensión del sistema bloqueada" o "La instalación está en espera" o ambas. Se debe permitir que se instale el controlador. Para permitir la instalación, seleccione **Abrir preferencias de seguridad** o **Abrir preferencias** >  del sistema **Seguridad & privacidad** y, a continuación, seleccione **Permitir**.
 
 10. Use el siguiente comando de Python en Bash para ejecutar el paquete de incorporación: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
@@ -219,7 +215,7 @@ Si su empresa prefiere que las personas inscriban sus propios dispositivos en In
 
 1. Para confirmar que el dispositivo está asociado a su empresa, use el siguiente comando de Python en Bash: `mdatp health --field org_id`.
 
-2. Si usa macOS 10.15 (Catalina) o posterior, conceda a Defender for Business el consentimiento para proteger el dispositivo. Vaya a **Preferencias** >  del **sistemaSeguridad &** **PrivacidadPrivacidadAcceso** >  >  al **disco**. Seleccione el icono de bloqueo para realizar cambios (en la parte inferior del cuadro de diálogo) y, a continuación, seleccione **Microsoft Defender para Empresas** (o **Defender para punto de conexión**, si es lo que ve).
+2. Si usa macOS 10.15 (Catalina) o posterior, conceda a Defender for Business el consentimiento para proteger el dispositivo. Vaya a **Preferencias** >  del sistema **Seguridad &** > **Privacidad Acceso** > **total al disco**. Seleccione el icono de bloqueo para realizar cambios (en la parte inferior del cuadro de diálogo) y, a continuación, seleccione **Microsoft Defender para Empresas** (o **Defender para punto de conexión**, si es lo que ve).
 
 3. Para comprobar que el dispositivo está incorporado, use el siguiente comando en Bash: `mdatp health --field real_time_protection_enabled`
 
@@ -229,7 +225,7 @@ Si su empresa prefiere que las personas inscriban sus propios dispositivos en In
 
 Para ver la lista de dispositivos que se incorporan a Defender for Business, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos ([Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)
@@ -248,7 +244,7 @@ Consulte los siguientes recursos para obtener ayuda para inscribir estos disposi
 
 Después de inscribir un dispositivo en Intune, puede agregarlo a un grupo de dispositivos. [Obtenga más información sobre los grupos de dispositivos en Microsoft Defender para Empresas](mdb-create-edit-device-groups.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos ([Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)

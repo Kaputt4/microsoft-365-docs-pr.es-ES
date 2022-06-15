@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 245063299df0df25f8a4c14ed9a3ee26b880ea15
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663434"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089890"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
 Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, incluidos varios planes diferentes para pequeñas y medianas empresas. Por ejemplo, [Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md) incluye funcionalidades de administración de dispositivos y seguridad, junto con características de productividad, como Office aplicaciones. Este artículo está diseñado para ayudar a aclarar qué características de seguridad, como la protección de dispositivos, se incluyen en Microsoft 365 Empresa Premium, Microsoft Defender para Empresas y Microsoft Defender para punto de conexión.
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 **Use este artículo para**:
 
@@ -49,7 +45,7 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 |Característica o funcionalidad|[Microsoft Defender para Empresas](mdb-overview.md)<br/>(independiente)|[Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md)<br/>(incluye Defender para empresas)|
 |---|---|---|
 |Protección por correo electrónico|Sí <br/>- [Examen por correo electrónico con Antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Sí <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Examen por correo electrónico con Antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Protección contra antispam|Sí <br/>- Para dispositivos|Sí <br/>- Para dispositivos<br/>: para Microsoft 365 contenido de correo electrónico, como mensajes y datos adjuntos|
+|Protección contra correo no deseado|Sí <br/>- Para dispositivos|Sí <br/>- Para dispositivos<br/>: para Microsoft 365 contenido de correo electrónico, como mensajes y datos adjuntos|
 |Protección antimalware|Sí<br/>- Para dispositivos|Sí <br/>- Para dispositivos<br/>: para Microsoft 365 contenido de correo electrónico, como mensajes y datos adjuntos|
 |[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protección antivirus y antimalware)|Sí<br/>- Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores|Sí <br/>- Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores<br/>- Directivas de protección de última generación para dispositivos incorporados|
 |[Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Reglas de ASR en Windows 10 o versiones posteriores y protección del firewall)|Sí|Sí|
@@ -97,7 +93,7 @@ Defender for Business ofrece funcionalidades de nivel empresarial de Defender pa
 
 (<a id="fn7">7</a>) La capacidad de ver incidentes entre inquilinos mediante Defender para punto de conexión es nueva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

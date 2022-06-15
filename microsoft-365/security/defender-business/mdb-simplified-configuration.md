@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0662ab458a3163e998de7b054926ceff31559a9e
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: f6cb1ff397233a60b0ad02a08486333790d079cc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174419"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089448"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Proceso de configuración simplificado en Microsoft Defender para Empresas
 
@@ -38,10 +38,6 @@ Cuando se trata de incorporar dispositivos y configurar opciones de seguridad pa
 2. [Más información sobre el proceso de configuración simplificado en Defender para empresas](#why-we-recommend-using-the-simplified-configuration-process)
 3. [Continúe con los pasos siguientes.](#next-steps)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="review-your-setup-and-configuration-options"></a>Revise las opciones de configuración y configuración
 
@@ -64,7 +60,7 @@ En la tabla siguiente se describe cada experiencia:
 - Puede mantener la configuración predeterminada tal y como están o realizar cambios para satisfacer sus necesidades empresariales. 
 - Puede agregar directivas nuevas y personalizadas para satisfacer sus necesidades empresariales.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración y configuración de Microsoft Defender para Empresas](mdb-setup-configuration.md)
 - [Comenzar mediante Microsoft Defender para Empresas](mdb-get-started.md)

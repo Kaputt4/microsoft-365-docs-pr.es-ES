@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 85845ec12b8ad43abe965e277f8ea3f6c67e1d7d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174187"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090374"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Ver o editar directivas en Microsoft Defender para Empresas
 
@@ -34,10 +34,6 @@ En Microsoft Defender para Empresas, la configuración de seguridad se configura
 - [Editar una directiva existente](#edit-an-existing-policy)
 - [Crear una nueva directiva](#create-a-new-policy)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="default-policies-in-defender-for-business"></a>Directivas predeterminadas en Defender para empresas
 
@@ -49,9 +45,9 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
 ## <a name="view-your-existing-policies"></a>Ver las directivas existentes
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
 
-2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (por ejemplo, **cliente de Windows**) y por tipo de directiva (por ejemplo, **protección de última generación** y **Firewall**). 
+2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**). 
 
 3. Seleccione una pestaña del sistema operativo (por ejemplo, **clientes de Windows**) y, a continuación, revise la lista de directivas en las categorías **Protección de última generación** y **Firewall**. 
 
@@ -59,9 +55,9 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
 ## <a name="edit-an-existing-policy"></a>Editar una directiva existente
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
 
-2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (por ejemplo, **cliente de Windows**) y por tipo de directiva (por ejemplo, **protección de última generación** y **Firewall**). 
+2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**). 
 
 3. Seleccione una pestaña del sistema operativo (por ejemplo, **clientes de Windows**) y, a continuación, revise la lista de directivas en las categorías **Protección de última generación** y **Firewall**. 
 
@@ -92,9 +88,9 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
 
-2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (por ejemplo, **cliente de Windows**) y por tipo de directiva (por ejemplo, **protección de última generación** y **Firewall**). 
+2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**). 
 
 3. Seleccione una pestaña del sistema operativo (por ejemplo, **clientes de Windows**) y, a continuación, revise la lista de directivas de **Protección de última generación**. 
 
@@ -102,7 +98,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
 5. En la pestaña **Información general**, siga estos pasos:
 
-   1. Especifique un nombre y una descripción. Esta información le ayudará a usted y a su equipo a identificar la directiva más adelante.
+   1. Especifique un nombre y una descripción. Esta información le ayudará a usted y a los miembros de su equipo a identificarla más adelante.
    2. Revise el orden de la directiva y edítelo si fuera necesario. (Para obtener más información, consulte [Orden de directiva](mdb-policy-order.md)).
    3. Elija **Siguiente**. 
 
@@ -123,7 +119,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Elija una o varias de las siguientes tareas:
 

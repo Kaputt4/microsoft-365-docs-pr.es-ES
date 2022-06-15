@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: c7b01355b782a3b08b76f95b31db5b0a9f5e1188
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469181"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090328"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para Empresas
 
@@ -53,10 +53,6 @@ Use este artículo como guía para administrar las directivas de seguridad y la 
 6. [Vea otras opciones de configuración en el portal de Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [Continúe con los pasos siguientes](#next-steps).
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="choose-where-to-manage-security-policies-and-devices"></a>Elección de dónde administrar directivas y dispositivos de seguridad
 
@@ -125,7 +121,7 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 Además de las directivas de filtrado de contenido web, firewall y protección de última generación, Defender for Business incluye características de seguridad avanzadas. Estas características se preconfigura mediante la configuración recomendada; sin embargo, puede revisarlos y, si es necesario, editar la configuración para satisfacer sus necesidades empresariales.
 
-Para acceder a la configuración de las características avanzadas, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** >  EndpointsGeneralAdvanced >  **features(Características** **avanzadas** > ).
+Para acceder a la configuración de las características avanzadas, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** >  Características **avanzadas** **generales** >  **deEndpoints** > .
 
 En la tabla siguiente se describe la configuración de las características avanzadas:
 
@@ -162,7 +158,7 @@ En la tabla siguiente se describe la configuración que se va a ver (y, si es ne
 | **Security Center** | **Zona horaria** | Seleccione la zona horaria que se usará para las fechas y horas que se muestran en incidentes, amenazas detectadas e investigación automatizada & corrección. Puede usar UTC o la zona horaria local (*recomendado*).  |
 | **Microsoft 365 Defender** | **Account** | Vea los detalles, como dónde se almacenan los datos, el identificador de inquilino y el identificador de la organización (organización). |
 | **Microsoft 365 Defender**  | **Versión preliminar de las características**  | Active las características en versión preliminar para probar las próximas características y nuevas funcionalidades. Puede estar entre las primeras en obtener una vista previa de las nuevas características y proporcionar comentarios. |
-| **Puntos de conexión**  | **Notificaciones por correo electrónico** | Configure o edite las reglas de notificación por correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación por correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
+| **Puntos de conexión**  | **Notificaciones de correo electrónico** | Configure o edite las reglas de notificación por correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación por correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
 | **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporación de dispositivos a Defender for Business mediante un script descargable. Para más información, consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).   |  
 | **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender for Business. Al desconectar un dispositivo, ya no envía datos a Defender for Business, pero se conservan los datos recibidos antes de la retirada. Para obtener más información, consulte [Offboarding a device (Offboarding a device](mdb-offboard-devices.md)).  |
 

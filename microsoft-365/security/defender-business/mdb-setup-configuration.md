@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5dd056640101d3feb97d9f502e4dcc8661454115
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: f7a66096b685e2ab1d1bb79ec0247fd2f4ffd67d
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173237"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089492"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configuración y configuración de Microsoft Defender para Empresas
 
@@ -33,10 +33,6 @@ Microsoft Defender para Empresas proporciona una experiencia de configuración y
 > - [Configuración de directivas y opciones de seguridad](mdb-configure-security-settings.md)
 > - [Visite el panel de administración de vulnerabilidades](mdb-view-tvm-dashboard.md)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="the-setup-and-configuration-process"></a>Proceso de instalación y configuración
 
@@ -49,9 +45,9 @@ En el diagrama siguiente se muestra el proceso de configuración y configuració
 | 1 | [Revisar los requisitos](mdb-requirements.md) | Revise los requisitos, incluidos los sistemas operativos compatibles, para Microsoft Defender para Empresas. Consulte [requisitos de Microsoft Defender para Empresas](mdb-requirements.md). |
 | 2 | [Asignación de roles y permisos](mdb-roles-permissions.md)     | Los usuarios del equipo de seguridad necesitan permisos para realizar tareas, como revisar las amenazas detectadas & acciones de corrección, ver & directivas de edición, incorporar dispositivos y usar informes. Puede conceder estos permisos a través de determinados roles. Consulte [Asignación de roles y permisos](mdb-roles-permissions.md).        |
 | 3 | [Configuración de notificaciones por correo electrónico](mdb-email-notifications.md) | Puede especificar quién debe recibir notificaciones por correo electrónico cuando se desencadenen alertas o se detecten nuevas vulnerabilidades. Consulte [Configuración de notificaciones por correo electrónico](mdb-email-notifications.md).| 
-| 4 | [Incorporar dispositivos](mdb-onboard-devices.md)     | Microsoft Defender para Empresas está configurado para que pueda elegir entre varias opciones para incorporar los dispositivos de su empresa. Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).         |
-| 5 | [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md) | Puede elegir entre varias opciones para configurar las directivas y las opciones de seguridad, incluido un proceso de configuración simplificado en Defender para empresas o mediante el centro de administración de Microsoft Endpoint Manager. Consulte [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md). |
+| 4  | [Incorporar dispositivos](mdb-onboard-devices.md)     | Microsoft Defender para Empresas está configurado para que pueda elegir entre varias opciones para incorporar los dispositivos de su empresa. Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).         |
+| 5  | [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md) | Puede elegir entre varias opciones para configurar las directivas y las opciones de seguridad, incluido un proceso de configuración simplificado en Defender para empresas o mediante el centro de administración de Microsoft Endpoint Manager. Consulte [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md). |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con [el paso 1: Revisar los requisitos de Microsoft Defender para Empresas](mdb-requirements.md).

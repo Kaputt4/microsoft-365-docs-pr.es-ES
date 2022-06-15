@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 7e4f22634756b931a6136f57b1938d12d36bc988
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 923f4a2d8e36f304fac5a48089adff78be1a0b1c
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172809"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090418"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Visitar el portal de Microsoft 365 Defender
 
@@ -30,16 +30,12 @@ El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://se
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Portal de Microsoft 365 Defender":::
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="the-navigation-bar"></a>Barra de navegación
 
 Use la barra de navegación del lado izquierdo de la pantalla para acceder a los incidentes, ver informes y administrar las directivas de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:---|:---|
 | **Inicio** | Le lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y los dispositivos de su empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, consulte [Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para más información sobre los incidentes, consulte [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md).|
@@ -58,7 +54,7 @@ Use la barra de navegación del lado izquierdo de la pantalla para acceder a los
 | **Configuración** | Permite editar la configuración del portal de Microsoft 365 Defender y Microsoft Defender para Empresas. Por ejemplo, puede incorporar (o offboard) y los dispositivos de su empresa (también conocidos como puntos de conexión). También puede definir reglas, como las reglas de supresión de alertas, y configurar indicadores para bloquear o permitir determinados archivos o procesos.  |
 | **Más recursos** | Vaya a otros portales, como Azure Active Directory. Tenga en cuenta que el portal de Microsoft 365 Defender debe satisfacer sus necesidades sin necesidad de navegar a otros portales. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Uso del asistente para la instalación en Microsoft Defender para Empresas](mdb-use-wizard.md)
 - [Consulte el proceso de configuración y configuración.](mdb-setup-configuration.md)

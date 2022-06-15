@@ -15,21 +15,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 68695ee348b11fcc10f3a82d2cba2d2c168af666
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e491e6d093396e54983e96eb1ca96c5e713565ba
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174385"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089184"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Tutoriales y simulaciones en Microsoft Defender para Empresas
 
 Si acaba de terminar de configurar Microsoft Defender para Empresas, es posible que se pregunte dónde empezar a aprender sobre cómo funciona Defender para empresas. En este artículo se describen algunos escenarios que probar y varios tutoriales y simulaciones que están disponibles para Defender para empresas. Estos recursos están diseñados para ayudarle a ver cómo Defender for Business puede funcionar para su empresa.
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="try-these-scenarios"></a>Pruebe estos escenarios
 
@@ -37,7 +33,7 @@ En la tabla siguiente se resumen varios escenarios para probar con Defender para
 
 | Escenario  | Descripción  |
 |---------|---------|
-| Incorporar dispositivos con un script local     | En Defender para empresas, puede incorporar dispositivos Windows y macOS mediante un script que descargue y ejecute en cada dispositivo. El script crea una confianza con Azure Active Directory (Azure AD) (si esa confianza aún no existe), inscribe el dispositivo con Microsoft Intune (si tiene Intune) e incorpora el dispositivo a Defender for Business. Para más información, consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).         |
+| Incorporar dispositivos con un script local     | En Defender para empresas, puede incorporar Windows y macOS dispositivos mediante un script que descargue y ejecute en cada dispositivo. El script crea una confianza con Azure Active Directory (Azure AD) (si esa confianza aún no existe), inscribe el dispositivo con Microsoft Intune (si tiene Intune) e incorpora el dispositivo a Defender for Business. Para más información, consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).         |
 | Incorporación de dispositivos mediante el centro de administración de Microsoft Endpoint Manager     | Si ya usaba Intune antes de obtener Defender for Business, puede seguir usando Endpoint Manager centro de administración para incorporar dispositivos. Pruebe a incorporar los dispositivos Windows, macOS, iOS y Android con Microsoft Intune. Para más información, consulte [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edición de directivas de seguridad     | Si va a administrar las directivas de seguridad en Defender para empresas, use la página **Configuración del dispositivo** para ver y, si es necesario, editar las directivas. Defender for Business incluye directivas predeterminadas que usan la configuración recomendada para proteger los dispositivos de su empresa en cuanto se incorporan. Puede mantener las directivas predeterminadas, editarlas y definir las suyas propias para satisfacer sus necesidades empresariales. Para obtener más información, consulte [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).        |
 | Ejecución de un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas. Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo pueden funcionar las características de protección contra amenazas de Defender for Business para su empresa. También puede usar un ataque simulado como ejercicio de entrenamiento para el equipo. Para probar uno o varios de los tutoriales, consulte [Tutoriales recomendados para Microsoft Defender para Empresas](#recommended-tutorials-for-defender-for-business).         |
@@ -71,7 +67,7 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
    - **Tutorial de respuesta dinámica**
    - **Administración de vulnerabilidades de & amenazas (escenarios principales)**
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administración de dispositivos en Microsoft Defender para Empresas](mdb-manage-devices.md)
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)

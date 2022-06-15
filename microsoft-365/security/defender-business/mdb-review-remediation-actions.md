@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5c73b840b127770c4581dda4d03b3c95066df515
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174367"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089536"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisión de las acciones de corrección en el Centro de acciones
 
@@ -34,10 +34,6 @@ A medida que se detectan amenazas, entran en juego las acciones de corrección. 
 - [Uso del Centro de acción](#how-to-use-the-action-center)
 - [Acciones de corrección](#remediation-actions)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="how-to-use-the-action-center"></a>Uso del Centro de acción
 
@@ -61,7 +57,7 @@ En la tabla siguiente se enumeran las acciones de corrección que están disponi
 | [Acciones de contestación manual](../defender-endpoint/respond-machine-alerts.md)   | - Ejecutar examen de antivirus <br/>- Aislar el dispositivo <br/>- Detener y poner en cuarentena <br/>- Agregar un indicador para bloquear o permitir un archivo       |
 | [Respuesta inmediata](../defender-endpoint/live-response.md)   | - Recopilación de datos forenses <br/>- Análisis de un archivo <br/>- Ejecutar un script <br/>- Envío de una entidad sospechosa a Microsoft para su análisis <br/>- Corrección de un archivo <br/>- Buscar amenazas de forma proactiva         |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
 - [Administración de dispositivos en Microsoft Defender para Empresas](mdb-manage-devices.md)

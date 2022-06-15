@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173096"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090022"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Administración de dispositivos en Microsoft Defender para Empresas
 
@@ -32,10 +32,6 @@ En Microsoft Defender para Empresas, puede administrar los dispositivos de la si
 - [Incorporación de un dispositivo a Defender for Business](#onboard-a-device)  
 - [Desconectar un dispositivo de Defender para empresas](#offboard-a-device)
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
@@ -69,7 +65,7 @@ Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](
 
 Consulte [Offboarding a device (Offboarding a device](mdb-offboard-devices.md)).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
 - [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663500"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090550"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -32,10 +32,6 @@ Si aún no tiene Microsoft Defender para Empresas, puede elegir entre varias opc
 
 Si se ha registrado para obtener una evaluación, después de recibir el correo electrónico de aceptación, puede [activar la prueba y asignar licencias de usuario](#how-to-activate-your-trial) y, a continuación, continuar con [los pasos siguientes](#next-steps).
 
->
-> **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
->
 
 ## <a name="try-or-buy-microsoft-defender-for-business"></a>Pruebe o compre Microsoft Defender para Empresas
 
@@ -100,7 +96,7 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 > Si tiene Microsoft 365 Empresa Premium, también tiene Microsoft Intune. Puede usar el centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) para administrar dispositivos y configurar las opciones de seguridad. Para obtener más información sobre Intune, consulte [Microsoft Intune es un proveedor de MDM y MAM para los dispositivos](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).

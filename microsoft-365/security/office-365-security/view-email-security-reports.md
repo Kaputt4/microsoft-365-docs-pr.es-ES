@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 5501477e14bd5053f6adbe597642470854616a5e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078994"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089978"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ En la tabla siguiente se describen los informes Exchange Online Protection (EOP)
 
 |Cmdlets y informes en desuso|Nuevos informes y cmdlets|Identificador del Centro de mensajes|Fecha|
 |---|---|:---:|:---:|
-|**Seguimiento de URL** <br/><br/> Get-URLTrace|[Informe de protección de direcciones URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Junio de 2021|
+|**Seguimiento de URL** <br/><br/> Get-URLTrace|[Informe de protección de URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Junio de 2021|
 |**Informe de correo electrónico enviado y recibido** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Informe de estado de protección contra amenazas](#threat-protection-status-report) <br> [Informe de estado de flujo de correo](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Junio de 2021|
 |**Informe de reenvío** <br/><br/> sin cmdlets|[Informe de mensajes reenviados automáticamente en el EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> sin cmdlets|MC250533|Junio de 2021|
 |**informe de tipos de archivo de datos adjuntos de Caja fuerte** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Informe de estado de protección contra amenazas: Visualización de datos por malware por correo electrónico \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Junio de 2021|
@@ -127,7 +127,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Subject**
+- **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -158,7 +158,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Asunto**
+- **Subject**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -424,7 +424,7 @@ Para filtrar el gráfico y la tabla de detalles, haga clic en **Filtrar** y sele
   - **Pendiente**
   - **Completed**
 
-La tabla de detalles debajo del gráfico muestra la misma información y tiene las mismas opciones **De grupo** o **Personalizar columnas** que en la pestaña **Enviado para análisis** en **Envíos** de **correo electrónico & colaboración**\>. Para obtener más información, consulte [Ver envíos de administradores a Microsoft](admin-submission.md#view-urls-admin-submissions-to-microsoft).
+La tabla de detalles debajo del gráfico muestra la misma información y tiene las mismas opciones **De grupo** o **Personalizar columnas** que en la pestaña **Enviado para análisis** en **Envíos** de **correo electrónico & colaboración**\>. Para obtener más información, consulte [Ver envíos de administradores de correo electrónico a Microsoft](admin-submission.md#view-email-admin-submissions-to-microsoft).
 
 En la página **Envíos** , el botón **[Exportar](#export-report)** está disponible.
 
@@ -517,7 +517,7 @@ En la vista **Ver datos por correo electrónico \> y** **Desglose del gráfico p
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
@@ -624,7 +624,7 @@ En la vista **Ver datos por correo electrónico \> Malware** y **Desglose del gr
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
@@ -957,7 +957,7 @@ En la página **Principales remitentes y destinatarios** , el ![icono Exportar.]
 
 :::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="Vista Mostrar datos para remitentes de correo superior en el informe Remitentes y destinatarios principales" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
-## <a name="url-protection-report"></a>Informe de protección de direcciones URL
+## <a name="url-protection-report"></a>Informe de protección de URL
 
 El **informe de protección de direcciones URL** solo está disponible en Microsoft Defender para Office 365. Para obtener más información, vea [Informe de protección de direcciones URL](view-reports-for-mdo.md#url-protection-report).
 
