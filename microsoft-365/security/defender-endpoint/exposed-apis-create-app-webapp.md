@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5bce1fc2e9aa149da2bb3ddc28e56fc826ad1768
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268887"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102622"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Creación de una aplicación para acceder a Microsoft Defender para punto de conexión sin un usuario
 
@@ -44,14 +44,14 @@ ms.locfileid: "65268887"
 
 En esta página se describe cómo crear una aplicación para obtener acceso mediante programación a Defender for Endpoint sin un usuario. Si necesita acceso mediante programación a Defender para punto de conexión en nombre de un usuario, consulte [Obtención de acceso con el contexto de usuario](exposed-apis-create-app-nativeapp.md). Si no está seguro de qué acceso necesita, consulte [Comenzar](apis-intro.md).
 
-Microsoft Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las funcionalidades de Defender para punto de conexión. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Código de autorización de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las funcionalidades de Defender para punto de conexión. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá realizar los pasos siguientes para usar las API:
 - Cree una aplicación de Azure Active Directory (Azure AD).
 - Obtenga un token de acceso mediante esta aplicación.
 - Use el token para acceder a Defender for Endpoint API.
 
-En este artículo se explica cómo crear una aplicación Azure AD, obtener un token de acceso para Microsoft Defender para punto de conexión y validar el token.
+En este artículo se explica cómo crear una aplicación de Azure AD, obtener un token de acceso para Microsoft Defender para punto de conexión y validar el token.
 
 ## <a name="create-an-app"></a>Crear una aplicación
 
@@ -121,7 +121,7 @@ En este artículo se explica cómo crear una aplicación Azure AD, obtener un to
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre los tokens de Azure AD, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para más información sobre los tokens de Azure AD, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="use-powershell"></a>Usar PowerShell
 
@@ -148,17 +148,17 @@ $token
 
 ### <a name="use-c"></a>Use C#:
 
-El código siguiente se ha probado con NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+El código siguiente se ha probado con NuGet Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
-> El paquete [de NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de Autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
+> El paquete NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
 
 1. Cree una nueva aplicación de consola.
-1. Instale NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Instale NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Agregue lo siguiente:
 
     ```csharp
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copie y pegue el código siguiente en la aplicación (no olvide actualizar las tres variables: ```tenantId, appId, appSecret```):
@@ -167,18 +167,17 @@ El código siguiente se ha probado con NuGet Microsoft.IdentityModel.Clients.Act
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
-    console.write(token)
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
-
-
 ### <a name="use-python"></a>Uso de Python
 
 Consulte [Obtención de token mediante Python](run-advanced-query-sample-python.md#get-token).
