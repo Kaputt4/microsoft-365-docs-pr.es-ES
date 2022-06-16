@@ -14,16 +14,16 @@ search.appverid: MET150
 description: Corrección de amenazas
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621901"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115551"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -36,6 +36,8 @@ La corrección significa tomar una acción prescrita contra una amenaza. El sist
 ## <a name="what-you-need-to-know-before-you-begin"></a>Lo que necesita saber antes de empezar
 
 Los administradores pueden realizar las acciones necesarias en los correos electrónicos, pero para obtener esas acciones aprobadas, deben tener asignado el rol *Buscar y purgar* en el **correo electrónico &** permisos de colaboración en el portal de Microsoft 365 Defender. Sin el rol *Buscar y purgar agregado* a uno de los grupos de roles, no podrán ejecutar la acción.
+
+Dado que las acciones de correo electrónico crean investigaciones automatizadas en el back-end, debe habilitar *La investigación automatizada*. Vaya a **Configuración** \> **Características avanzadas de puntos** \> de conexión y active **Investigación automatizada**.
 
 ## <a name="manual-and-automated-remediation"></a>Corrección manual y automatizada
 
@@ -55,7 +57,7 @@ Una vez seleccionados los correos electrónicos a través del Explorador, puede 
 
 - Aprobación directa: cuando el personal de seguridad que tiene permisos adecuados selecciona acciones como *mover a la bandeja de entrada*, *mover a elementos* *eliminados*, *eliminar temporalmente* o *eliminar de forma rígida* y se siguen los pasos siguientes en la corrección, el proceso de corrección comienza a ejecutar la acción seleccionada.
 > [!NOTE]
-> A medida que se inicia la corrección, genera una alerta y una investigación en paralelo. La alerta aparece en la cola de alertas con el nombre "Acción administrativa enviada por un administrador", lo que sugiere que el personal de seguridad tomó la acción de corregir una entidad. Presenta detalles como el nombre de la persona que realizó la acción, el vínculo de apoyo a la investigación, la hora, etc. Funciona muy bien saber cada vez que se realiza una acción dura como la corrección en las entidades. Todas estas acciones se pueden realizar en la pestaña Centro de acciones **&** **EnvíosHistory** \>  ->  (versión preliminar pública).
+> A medida que se inicia la corrección, genera una alerta y una investigación en paralelo. La alerta aparece en la cola de alertas con el nombre "Acción administrativa enviada por un administrador", lo que sugiere que el personal de seguridad tomó la acción de corregir una entidad. Presenta detalles como el nombre de la persona que realizó la acción, el vínculo de apoyo a la investigación, la hora, etc. Funciona muy bien saber cada vez que se realiza una acción dura como la corrección en las entidades. Todas estas acciones se pueden realizar en la **pestaña Historial** del **centro**  ->  de acciones **acciones & envíos** \> (versión preliminar pública).
 
 - Aprobación en dos pasos: los administradores que no tienen los permisos adecuados o que necesitan esperar para ejecutar la acción pueden realizar una acción de "agregar a la corrección". En este caso, los correos electrónicos de destino se agregan a un contenedor de corrección. La aprobación es necesaria antes de que se ejecute la corrección.
 
@@ -64,9 +66,9 @@ Las alertas o los equipos de operaciones de seguridad del Explorador desencadena
 > [!div class="mx-imgBorder"]
 > [![Correo con malware en la página "Zapped" que muestra el tiempo de ejecución de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Todas las correcciones (aprobaciones directas ) creadas en el Explorador, la búsqueda avanzada o la investigación automatizada se muestran en el Centro de acciones. Acceda a ellos a través del panel de navegación izquierdo en Acciones & **Centro**  ->  de **acciones EnvíosLa** \>**pestaña Historia**.
+Todas las correcciones (aprobaciones directas ) creadas en el Explorador, la búsqueda avanzada o la investigación automatizada se muestran en el Centro de acciones. Acceda a ellos a través del panel de navegación izquierdo en la **pestaña** Historial del **Centro**  ->  de acciones **acciones & envíos**\>.
 
-Todas las correcciones (aprobaciones directas) que se crearon en el Explorador o la búsqueda avanzada o a través de la investigación automatizada se muestran en el Centro de acciones. Acceda a ellos a través del panel de navegación izquierdo en Acciones & **Centro**  ->  de **acciones EnvíosLa** \>**pestaña Historia**. 
+Todas las correcciones (aprobaciones directas) que se crearon en el Explorador o la búsqueda avanzada o a través de la investigación automatizada se muestran en el Centro de acciones. Acceda a ellos a través del panel de navegación izquierdo en la **pestaña** Historial del **Centro**  ->  de acciones **acciones & envíos**\>. 
 
 Acciones manuales pendientes de aprobación mediante el proceso de aprobación en dos pasos (1. agregar a la corrección por un miembro del equipo de operaciones de seguridad, 2. revisados y aprobados por otro miembro del equipo de operaciones de seguridad) solo son visibles en el centro de acción de **revisión** \> del centro de acciones de Defender para Office 365 **heredado y no** en incidentes e investigaciones ni en el Centro de acción unificada.
 

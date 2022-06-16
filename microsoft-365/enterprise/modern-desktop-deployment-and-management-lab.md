@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 63ec41e1865647caac60aa6fe91f69ed6c878e74
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669219"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115925"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
@@ -31,8 +31,8 @@ Hay dos versiones del laboratorio disponibles para descarga gratuita:
 
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
-|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
+|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_guides.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
@@ -40,7 +40,7 @@ El laboratorio proporciona un entorno de laboratorio virtual aprovisionado autom
 
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
-|Windows 10 Enterprise, versión 21H1|Windows 11 Enterprise|
+|Windows 10 Enterprise, versión 21H2|Windows 11 Enterprise|
 |Microsoft Endpoint Configuration Manager, versión 2203|Microsoft Endpoint Configuration Manager, versión 2203|
 |Windows Assessment and Deployment Kit para Windows 10|Kit de evaluación e implementación de Windows para Windows 11|
 |Windows Server 2019|Windows Server 2022|
@@ -105,7 +105,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El software de evaluación de estos laboratorios expira entre 90 y 120 días después de la activación. Las nuevas versiones de los laboratorios se publicarán en agosto de 2022. 
+> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. Los clientes virtuales expiran 90 días después de la activación del laboratorio. Los servidores virtuales expiran el 11 de septiembre de 2022. Las nuevas versiones de los laboratorios se publicarán antes de la expiración. 
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648247"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115683"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -155,11 +155,11 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
 |PermissionToDownload<sup>\*\*</sup>|64|01000000|
 |PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
-|PermissionToBlockSender|16|00010000|
+|PermissionToBlockSender|16 |00010000|
 |PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
 |PermissionToRelease<sup>\*\*\*</sup>|4 |00000100|
 |PermissionToPreview|2|00000010|
-|PermissionToDelete|1 |00000001|
+|PermissionToDelete|1|00000001|
 
 <sup>\*</sup> El valor 0 no oculta el botón **Ver encabezado del mensaje** en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -174,11 +174,11 @@ Para los permisos de acceso limitado, los valores necesarios son:
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
-|PermissionToBlockSender|1 |
-|PermissionToRequestRelease|1 |
+|PermissionToBlockSender|1|
+|PermissionToRequestRelease|1|
 |PermissionToRelease|0|
-|PermissionToPreview|1 |
-|PermissionToDelete|1 |
+|PermissionToPreview|1|
+|PermissionToDelete|1|
 |Valor binario|00011011|
 |Valor decimal que se va a usar|27|
 
@@ -299,7 +299,7 @@ La inteligencia sobre suplantación de identidad está disponible en EOP y Defen
 4. En la página **Configuración de protección** , compruebe que la configuración siguiente está activada y configurada según sea necesario:
    - **Usuarios habilitados para proteger**: especifique los usuarios.
    - **Dominios habilitados para proteger**: seleccione **Incluir dominios que poseo** o **Incluir dominios personalizados** y especifique los dominios.
-   - **Habilitación de la inteligencia de buzones**
+   - **Habilitar la inteligencia de buzones**
    - **Habilitación de la inteligencia para la protección contra suplantación**
    - **Habilitación de la inteligencia de suplantación de identidad**
 
@@ -503,7 +503,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="Una declinación de responsabilidades personalizada en la parte inferior de una notificación de cuarentena." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
-     - Identificador de idioma de los valores **Nombre para mostrar** y **Declinación de responsabilidades** . Las notificaciones de cuarentena ya están localizadas en función de la configuración de idioma del destinatario. Los valores **Nombre para mostrar** y **Declinación de responsabilidades** se usan en las notificaciones de cuarentena que se aplican al idioma del destinatario.
+     - Identificador de idioma para los valores **Nombre para mostrar** y **Declinación de responsabilidades** . Las notificaciones de cuarentena ya están localizadas en función de la configuración de idioma del destinatario. Los valores **Nombre para mostrar** y **Declinación de responsabilidades** se usan en las notificaciones de cuarentena que se aplican al idioma del destinatario.
 
        Seleccione el idioma en el cuadro **Elegir idioma** _antes de_ escribir valores en los cuadros **Nombre para mostrar** y **Declinación de responsabilidades** . Al cambiar el valor en el cuadro **Elegir idioma** , se vacían los valores de los cuadros **Nombre para mostrar** y **Declinación de responsabilidades** .
 
@@ -681,10 +681,13 @@ Si la directiva de cuarentena asigna los permisos **de acceso completo** (todos 
 
 - **Notificaciones de cuarentena**: están disponibles los siguientes botones:
   - **Bloquear remitente**
-  - **Versión**
+  - **Release**
   - **Revisar**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Los botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso completo" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> Como se explicó anteriormente, las notificaciones de cuarentena se deshabilitan en la directiva de cuarentena predeterminada denominada DefaultFullAccessPolicy, aunque esa directiva de cuarentena tenga asignado el grupo de permisos **de acceso completo** . Las notificaciones de cuarentena solo están disponibles en las directivas de cuarentena personalizadas que cree o en la directiva de acceso de cuarentena predeterminada denominada NotificationEnabledPolicy ([si esa directiva está disponible en su organización](#full-access-permissions-and-quarantine-notifications)).
 
 ### <a name="individual-permissions"></a>Permisos individuales
 

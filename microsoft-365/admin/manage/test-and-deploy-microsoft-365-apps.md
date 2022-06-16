@@ -14,16 +14,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones de asociados de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal aplicaciones integradas de la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043174"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115507"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 por parte de los asociados en el portal de aplicaciones integradas
 
-El Centro de administración de Microsoft 365 ofrece la flexibilidad de implementar aplicaciones de una sola tienda, una línea de negocio personalizada de aplicaciones y Microsoft 365 aplicaciones asociadas desde una sola ubicación. Se puede acceder a la ubicación en la configuración del Centro de administración de Microsoft, en Aplicaciones integradas. La capacidad de encontrar, probar e implementar completamente aplicaciones compradas y con licencia por parte de los asociados de Microsoft desde el portal de aplicaciones integradas proporciona la comodidad y las ventajas que su organización requiere para mantener actualizados los servicios empresariales periódicamente y ejecutarse de forma eficaz.
+El Centro de administración de Microsoft 365 ofrece la flexibilidad de implementar aplicaciones de una sola tienda, una línea de negocio personalizada de aplicaciones y Microsoft 365 aplicaciones asociadas desde una sola ubicación. Se puede acceder a la ubicación en la configuración del Centro de microsoft Administración, en Aplicaciones integradas. La capacidad de encontrar, probar e implementar completamente aplicaciones compradas y con licencia por parte de los asociados de Microsoft desde el portal de aplicaciones integradas proporciona la comodidad y las ventajas que su organización requiere para mantener actualizados los servicios empresariales periódicamente y ejecutarse de forma eficaz.
 
 Para obtener información adicional sobre la compra y la concesión de licencias Microsoft 365 aplicaciones de asociados de su organización, consulte [Administración e implementación de Aplicaciones Microsoft 365 desde el Centro de administración de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
@@ -242,14 +242,14 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
 - **Office complemento de la Tienda**: cuando un administrador seleccionó un complemento de la Tienda Office, si un complemento se actualiza en la Tienda Office, la próxima vez que se inicien las aplicaciones de Office pertinentes, se actualizará el complemento. La aplicación web puede cambiar en cualquier momento. 
 
 > [!NOTE]
-> Para Word, Excel y PowerPoint usar un [catálogo de aplicaciones de SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos en los usuarios de un entorno local sin conexión a Microsoft 365 ni compatibilidad con SharePoint complementos necesarios. Para Outlook use Exchange panel de control para implementar en un entorno local sin conexión a Microsoft 365.  
+> Para Word, Excel y PowerPoint usar un catálogo de aplicaciones [de SharePoint](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) para implementar complementos en usuarios de un entorno local sin conexión a Microsoft 365 ni compatibilidad con SharePoint complementos necesarios. Para Outlook use Exchange panel de control para implementar en un entorno local sin conexión a Microsoft 365.  
 
 ## <a name="add-in-states"></a>Estados del complemento
 Un complemento puede estar en estado **Activado** o **Desactivado** . 
 
 | Estado | Cómo se produce el estado | Impacto |
 |:-----|:-----|:-----|
-|**Activo**  <br/> |El administrador cargó el complemento y lo asignó a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
+|**Activo**  <br/> |Administración cargó el complemento y lo asignó a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
 |**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si se cambia el estado del complemento a "activado", los usuarios y grupos tendrán acceso de nuevo.  <br/> |
 |**Eliminado**  <br/> |El administrador ha eliminado el complemento.  <br/> |Los usuarios y grupos asignados al complemento ya no tienen acceso al mismo.  <br/> |
  
@@ -284,12 +284,12 @@ También puede eliminar un complemento que se implementó.
 
 ## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Escenarios en los que Exchange administrador no puede implementar un complemento 
 
-Hay dos casos en los que un administrador de Exchange no podrá implementar un complemento:
+Hay dos casos en los que un Exchange Administración no podrá implementar un complemento:
 - Si un complemento necesita permiso para MS Graph API y necesita el consentimiento de un administrador global.
 - Si un complemento está vinculado a dos o más complementos y aplicaciones web, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para acceder a las aplicaciones integradas?
 

@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 31008df3e43c99f3a97dad3dce037b96e3b0c4b5
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66091470"
+ms.locfileid: "66116292"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -33,7 +33,7 @@ Cuando un dispositivo unido a un dominio crea una confianza con Azure Active Dir
 - Azure Active Directory Conectar (Conectar de AAD) debe sincronizarse con el inquilino que se usa desde Microsoft Defender para punto de conexión
 - La unión Azure Active Directory híbrida debe configurarse en el entorno (ya sea mediante federación o AAD Conectar Sync)
 - AAD Conectar Sync debe incluir los objetos de dispositivo en el *ámbito* para la sincronización con Azure Active Directory (cuando sea necesario para la unión)
-- Las reglas de Conectar de AAD para la sincronización deben modificarse para Server 2012 R2 (cuando se necesita compatibilidad con Server 2012 R2)
+- Las reglas de Conectar de AAD para la sincronización [deben modificarse para Server 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect) (cuando se necesita compatibilidad con Server 2012 R2)
 - Todos los dispositivos deben registrarse en el Azure Active Directory del inquilino que hospeda Microsoft Defender para punto de conexión. No se admiten escenarios entre inquilinos. 
 
 ### <a name="connectivity-requirements"></a>Requisitos de conectividad

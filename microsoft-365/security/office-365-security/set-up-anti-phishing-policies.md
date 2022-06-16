@@ -17,16 +17,16 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438891"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115903"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -86,6 +86,15 @@ La siguiente configuración de directiva está disponible en las directivas cont
 
   > [!NOTE]
   > Se requiere al menos una selección en la configuración **usuarios, grupos y dominios** en las directivas de anti-phishing personalizadas para identificar los destinatarios del mensaje a **los** <u>que se aplica la directiva</u>. Las directivas contra suplantación de identidad en Defender para Office 365 también tienen [una configuración de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en la que puede especificar direcciones de correo electrónico de remitente individuales o dominios de remitente <u>que recibirán protección de suplantación</u>, como se describe más adelante en este artículo.
+  >
+  > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+  >
+  > - El destinatario es: romain@contoso.com
+  > - El destinatario es miembro de: Ejecutivos
+  >
+  > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+  >
+  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
 
 ## <a name="spoof-settings"></a>Configuración de suplantación de identidad
 

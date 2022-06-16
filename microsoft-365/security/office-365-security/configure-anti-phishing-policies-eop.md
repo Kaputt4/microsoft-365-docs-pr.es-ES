@@ -16,16 +16,16 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de Exchange Online.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438913"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115705"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -112,6 +112,16 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+
+   > [!IMPORTANT]
+   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   >
+   > - El destinatario es: romain@contoso.com
+   > - El destinatario es miembro de: Ejecutivos
+   >
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   >
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
 
    Cuando termine, haga clic en **Siguiente**.
 

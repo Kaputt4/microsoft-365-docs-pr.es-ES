@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089119"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116059"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
@@ -394,3 +394,7 @@ En la pestaña **Mensajes notificados** por el usuario, seleccione un mensaje en
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Las nuevas opciones del botón Acción" lightbox="../../media/admin-submission-main-action-button.png":::
+
+Si el mensaje se notifica a Microsoft, el valor **convertida en envío de administrador** pasa de **no** a **sí**. Para acceder directamente al envío del administrador, haga clic en **Ver el envío del administrador convertido** desde el menú de desbordamiento dentro del control flotante de envío del mensaje notificado por el usuario correspondiente.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Opción para ver un envío de administrador creado a partir de un mensaje notificado por el usuario.":::

@@ -18,16 +18,16 @@ description: Obtenga información sobre cómo definir directivas de datos adjunt
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 811730ce12af80b2ac8df7db068b63b96b856bbd
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 46b69c1bea0f967fe22c031397a8887f3399c99b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847100"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115573"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas de datos adjuntos de Caja fuerte en Microsoft Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -94,10 +94,10 @@ Al crear una directiva de datos adjuntos de Caja fuerte personalizada en el port
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **Usuarios y dominios** que aparece, identifique los destinatarios internos a los que se aplica la directiva (condiciones de destinatario):
-   - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+   - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
    - **Grupos**:
-     - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-     - El Grupos de Microsoft 365 especificado.
+     - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+     - Los Grupos de Microsoft 365 especificados.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
@@ -106,7 +106,17 @@ Al crear una directiva de datos adjuntos de Caja fuerte personalizada en el port
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones a los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+
+   > [!IMPORTANT]
+   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   >
+   > - El destinatario es: romain@contoso.com
+   > - El destinatario es miembro de: Ejecutivos
+   >
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   >
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
 
    Cuando termine, haga clic en **Siguiente**.
 

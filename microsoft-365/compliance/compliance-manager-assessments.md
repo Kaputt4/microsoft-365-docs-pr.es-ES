@@ -1,5 +1,5 @@
 ---
-title: Compilación y administración de evaluaciones en el Administrador de cumplimiento de Microsoft Purview
+title: Compilación y administración de evaluaciones en Microsoft Purview Administrador de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cree evaluaciones en el Administrador de cumplimiento de Microsoft Purview para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Cree evaluaciones en Microsoft Purview Administrador de cumplimiento para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
+ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972571"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115749"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Compilación y administración de evaluaciones en el Administrador de cumplimiento
 
@@ -79,11 +79,11 @@ Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden cre
 
 ## <a name="understand-templates-before-creating-assessments"></a>Descripción de las plantillas antes de crear evaluaciones
 
-Las plantillas de evaluación contienen los controles y las recomendaciones de acción para las evaluaciones, basadas en certificaciones para diferentes normas y normas de privacidad. Las plantillas disponibles de su organización pueden incluir una o varias plantillas que se incluyeron como parte del contrato de licencia, junto con las plantillas premium adicionales que haya comprado.
+Las plantillas de evaluación contienen los controles y las recomendaciones de acción para las evaluaciones, basadas en certificaciones para diferentes normas y normas de privacidad. La organización comienza con al menos una y, posiblemente, más plantillas **incluidas** disponibles para su uso, en función del contrato de licencia. Su organización también puede comprar plantillas **premium** adicionales.
 
-Cada plantilla, ya sea incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 (u otros productos de Microsoft según esté disponible) y una versión universal que se puede adaptar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
+Cada plantilla existe en dos versiones: una para su uso con Microsoft 365 (u otros productos de Microsoft según esté disponible) y una versión universal que se puede adaptar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
 
-Para más información sobre las plantillas, consulte [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+Obtenga más detalles sobre las plantillas en [Más información sobre las plantillas de evaluación en el Administrador de cumplimiento](compliance-manager-templates.md).
 
 ## <a name="create-assessments"></a>Creación de evaluaciones
 

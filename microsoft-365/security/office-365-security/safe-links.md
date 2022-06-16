@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos de Caja fuerte en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte Vínculos y vea los gráficos de los mensajes de vínculos de Caja fuerte.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b1e013c77005c30872fc5355ae0b0e3f7cae67ca
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739901"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115815"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>vínculos de Caja fuerte en Microsoft Defender para Office 365
 
@@ -100,46 +100,56 @@ En la tabla siguiente se describen escenarios de vínculos de Caja fuerte en org
 
 ## <a name="safe-links-settings-for-email-messages"></a>Caja fuerte Configuración de vínculos para mensajes de correo electrónico
 
-Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL examinadas se vuelven a escribir con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com`. Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
+Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL examinadas se reescriben con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com`. Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
 
-Después de Caja fuerte Links reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ a (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir. Sin embargo, en el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que ese destinatario también esté protegido por Caja fuerte Vínculos o que la dirección URL ya se haya reescrito en una comunicación anterior. Siempre que Caja fuerte Vínculos esté habilitado, las direcciones URL se seguirán analizando antes de la entrega, independientemente de si se han reescrito o no. Las direcciones URL no coronadas también se comprobarán mediante una llamada API del lado cliente a Caja fuerte Vínculos en el momento de hacer clic en Outlook para desktop versión 16.0.12513 o posterior.
+Luego de que Vínculos seguros reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir. Sin embargo, en el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que ese destinatario también esté protegido por Caja fuerte Vínculos o que la dirección URL ya se haya reescrito en una comunicación anterior. Mientras que Vínculos seguros esté habilitado, las direcciones URL se seguirán analizando antes de la entrega, independientemente de que hayan sido reescritas o no. Las direcciones URL no coronadas también se comprobarán mediante una llamada API del lado cliente a Caja fuerte Vínculos en el momento de hacer clic en Outlook para desktop versión 16.0.12513 o posterior.
 
 La configuración de las directivas de vínculos de Caja fuerte que se aplican a los mensajes de correo electrónico se describe en la lista siguiente:
 
 - **Activado: Caja fuerte Vínculos comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: habilita o deshabilita el examen de vínculos Caja fuerte en los mensajes de correo electrónico. El valor recomendado está seleccionado (activado) y da como resultado las siguientes acciones:
-  - el examen de vínculos de Caja fuerte está habilitado en Outlook (C2R) en Windows.
+  - El análisis de Vínculos seguros está habilitado en Outlook (C2R) en Windows.
   - Las direcciones URL se vuelven a escribir y los usuarios se enrutan a través de Caja fuerte Protección de vínculos al hacer clic en direcciones URL en los mensajes.
   - Cuando se hace clic en ellas, las direcciones URL se comprueban en una lista de direcciones URL malintencionadas conocidas y en la [lista "Bloquear las siguientes direcciones URL"](#block-the-following-urls-list-for-safe-links).
   - Las direcciones URL que no tienen una reputación válida se detonan de forma asincrónica en segundo plano.
 
-  La siguiente configuración solo está disponible si el examen de vínculos de Caja fuerte está activado en los mensajes de correo electrónico:
+  La siguiente configuración solo está disponible si el análisis de Vínculos seguros está activado en los mensajes de correo electrónico:
 
   - **Aplicar Caja fuerte Vínculos a los mensajes de correo electrónico enviados dentro de la organización**: habilita o deshabilita el examen de vínculos de Caja fuerte en los mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma organización Exchange Online. El valor recomendado está seleccionado (activado).
 
   - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: habilita el examen en tiempo real de vínculos, incluidos los vínculos en mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está seleccionado (activado).
 
-  - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**:
+  - **Esperar a que se complete el examen de direcciones URL antes de entregar el mensaje**:
     - Seleccionado (activado): los mensajes que contienen direcciones URL se mantienen hasta que finaliza el examen. Los mensajes se entregan solo después de confirmar que las direcciones URL son seguras. Este es el valor recomendado.
     - No seleccionado (desactivado): si el examen de direcciones URL no se puede completar, entregue el mensaje de todos modos.
 
-  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está habilitada, no se produce ningún ajuste de direcciones URL. Caja fuerte Vínculos se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL Outlook clientes que lo admiten. El valor de recomendación está deshabilitado.
+  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está habilitada, no se produce ningún ajuste de direcciones URL. Caja fuerte Vínculos se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL Outlook clientes que lo admiten. El valor recomendado está deshabilitado.
 
-- **Realizar un seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de datos de clic de vínculos Caja fuerte para las direcciones URL en las que se ha hecho clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración seleccionada (realizar un seguimiento de los clics del usuario).
+- **Realizar un seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de datos de clic de vínculos Caja fuerte para las direcciones URL en las que se ha hecho clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración seleccionada (seguimiento de los clics del usuario).
 
   Actualmente no se admite el seguimiento de clics en direcciones URL para vínculos en mensajes de correo electrónico enviados entre remitentes internos y destinatarios internos.
 
-- **Permitir que los usuarios haga clic en la dirección URL original**: permite o impide que los usuarios haga clic en la [página de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor de recomendación está deshabilitado.
+- **Permitir que los usuarios haga clic en la dirección URL original**: permite o impide que los usuarios haga clic en la [página de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado está deshabilitado.
 
-- **Mostrar la personalización de marca de la organización en las páginas de notificación y advertencia**: esta opción muestra la personalización de marca de la organización en las páginas de advertencia. La personalización de marca ayuda a los usuarios a identificar advertencias legítimas, ya que los atacantes suelen usar las páginas de advertencia predeterminadas de Microsoft. Para obtener más información sobre la personalización de marca personalizada, consulte [Personalización del tema de Microsoft 365 para su organización](../../admin/setup/customize-your-organization-theme.md).
+- **Mostrar la personalización de marca de la organización en las páginas de notificación y advertencia**: esta opción muestra la personalización de marca de la organización en las páginas de advertencia. La marca ayuda a los usuarios a identificar advertencias legítimas, ya que los atacantes suelen usar las páginas de advertencia predeterminadas de Microsoft. Para obtener más información sobre la personalización de la marca, consulte [Personalizar el tema de Microsoft 365 para la organización](../../admin/setup/customize-your-organization-theme.md).
 
-  Para obtener más información sobre los valores recomendados para la configuración de directivas estándar y estricta para las directivas de vínculos de Caja fuerte, consulte [configuración de directivas de vínculos de Caja fuerte](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+  Para obtener más información sobre los valores recomendados para la configuración de directivas Estándar y Estricta para las directivas de vínculos seguros, consulte [Configuración de directivas de Vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Filtros de destinatario**: debe especificar las condiciones y excepciones del destinatario que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
   - **El destinatario es**
   - **El dominio de destinatario es**
   - **El destinatario es un miembro de**
 
-  Solo puede usar una condición o una excepción una vez, pero la condición o la excepción pueden contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
+  Solo puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+  >
+  > - El destinatario es: romain@contoso.com
+  > - El destinatario es miembro de: Ejecutivos
+  >
+  > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+  >
+  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
 
 - **Prioridad**: si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 

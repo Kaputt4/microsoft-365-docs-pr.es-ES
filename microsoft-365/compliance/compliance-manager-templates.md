@@ -1,5 +1,5 @@
 ---
-title: Trabajar con plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview
+title: Más información sobre las plantillas de evaluación en Microsoft Purview Administrador de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comprenda cómo usar y administrar plantillas para compilar evaluaciones en Microsoft Purview Compliance Manager. Cree y modifique plantillas mediante un archivo Excel con formato.
-ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en Microsoft Purview Administrador de cumplimiento. Cree y modifique plantillas mediante un archivo Excel con formato.
+ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972791"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116013"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Más información sobre las plantillas de evaluación en el Administrador de cumplimiento
 
@@ -36,13 +36,16 @@ ms.locfileid: "64972791"
 
 ## <a name="templates-overview"></a>Introducción a las plantillas
 
-Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro completo conjunto de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
+Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro completo conjunto de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Nos referimos a las plantillas con el mismo nombre que su certificación o regulación subyacente, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019.
 
 ## <a name="template-versions-microsoft-and-universal"></a>Versiones de plantilla: Microsoft y universal
 
-Nos referimos a las plantillas con el mismo nombre que su certificación o regulación subyacente, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019.
+El administrador de cumplimiento se puede usar para evaluar diferentes tipos de productos. Todas las plantillas, excepto la plantilla predeterminada de [base de referencia de Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment) , se incluyen en dos versiones:
 
-El administrador de cumplimiento se puede usar para evaluar diferentes tipos de productos. Todas las plantillas aparte de la línea base vienen en al menos una versión que se aplica a un producto predefinido, como Microsoft 365, y una versión universal que se puede adaptar para adaptarse a otros productos. Las evaluaciones de plantillas universales son más generalizadas, pero ofrecen una mayor versatilidad, ya que pueden ayudarle a realizar un seguimiento del cumplimiento de su organización fácilmente en varios productos.
+1. Versión que se aplica a un producto predefinido, como Microsoft 365 y
+2. Una versión universal que se puede adaptar para adaptarse a otros productos.
+
+Las evaluaciones de plantillas universales son más generalizadas, pero ofrecen una mayor versatilidad, ya que pueden ayudarle a realizar un seguimiento del cumplimiento de su organización fácilmente en varios productos.
 
 Tenga en cuenta que los clientes Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD) no pueden usar plantillas universales actualmente.
 

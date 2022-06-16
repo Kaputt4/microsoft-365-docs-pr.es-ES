@@ -3,11 +3,12 @@ title: Conectividad de red en el Centro de Administración de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Introducción a la conectividad de red en el Centro de Administración de Microsoft 365
-ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 5c360820c39be6ec1c42ecdfa0a045a51716e408
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043867"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115663"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro de Administración de Microsoft 365
 
@@ -35,7 +36,7 @@ El Centro de Administración de Microsoft 365 ahora incluye métricas de conecti
 > ![Página Rendimiento de red.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> La conectividad de red en el Centro de administración admite inquilinos en WW Commercial y Alemania, pero no GCC Moderada, GCC Alta, DoD o China.
+> La conectividad de red en el Centro de Administración admite inquilinos en WW Commercial y Alemania, pero no GCC Moderate, GCC High, DoD o China.
 
 Cuando navegue por primera vez a la página de rendimiento de red, tendrá que configurar las ubicaciones para ver el mapa del rendimiento de la red global, una evaluación de red con ámbito para todo el inquilino, porcentaje de los usuarios que trabajan de forma remota e in situ y una lista de problemas actuales para tomar medidas o investigar más. En el panel de información general, puede explorar en profundidad para ver las métricas y problemas de rendimiento de red específicos por ubicación. Para obtener más información, consulte [Introducción al rendimiento de red en el Centro de Administración de Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -47,19 +48,22 @@ Para empezar, active la opción de participación de ubicación para recopilar a
 
 ### <a name="1-enable-windows-location-services"></a>1. Habilitar los servicios de ubicación de Windows
 
-Para esta opción, debe tener al menos dos equipos que se ejecuten en cada ubicación de la oficina que admitan los requisitos previos. OneDrive para Windows versión debe estar actualizado e instalado en cada equipo. Para obtener más información sobre las versiones de OneDrive, consulte las [notas de la versión de OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Las medidas de red están previstas para agregarse pronto a otras aplicaciones cliente de Office 365.
+Para esta opción, debe tener al menos dos equipos que se ejecuten en cada ubicación de la oficina que admitan los requisitos previos. OneDrive para Windows versión debe estar actualizado e instalado en cada equipo. Las pruebas de red solo se ejecutan una vez al día de forma aleatoria. Las medidas de red están previstas para agregarse pronto a otras aplicaciones cliente de Office 365.
 
 Windows servicio de ubicación debe dar su consentimiento en las máquinas. Para probar esto, ejecute la aplicación **de Mapas** y localícese. Se puede habilitar en una sola máquina con **Configuración | Privacidad | Ubicación** en la que se debe habilitar la opción _Permitir que las aplicaciones accedan a su ubicación_. Windows el consentimiento de Location Services se puede implementar en equipos con MDM o directiva de grupo con la configuración _LetAppsAccessLocation_.
 
-No es necesario agregar ubicaciones en el Centro de administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No se mostrarán varias ubicaciones de oficina dentro de la misma ciudad al usar Windows Location Services. La información de ubicación se redondea a los 300 metros más cercanos por 300 metros para que no se acceda a información de ubicación más precisa.
+No es necesario agregar ubicaciones en el Centro de Administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No se mostrarán varias ubicaciones de oficina dentro de la misma ciudad al usar Windows Location Services. La información de ubicación se redondea a los 300 metros más cercanos por 300 metros para que no se acceda a información de ubicación más precisa. El uso de Windows Location Services para las medidas de red está desactivado de forma predeterminada para los clientes. Debe habilitarlo en el control flotante Conectividad de red Configuración ubicación.
+
+   > [!div class="mx-imgBorder"]
+   > ![Habilitar ubicación](../media/m365-mac-perf/m365-mac-perf-location-enable.png)
 
 Las máquinas deben tener redes Wi-Fi en lugar de un cable Ethernet. Las máquinas con un cable Ethernet no tienen información de ubicación precisa.
 
-Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 horas después de que se cumplan estos requisitos previos.
+Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 horas después de que se cumplan estos requisitos previos. Office ubicaciones detectadas de Windows Location Services se agregan por ciudad y se conservan en la vista durante 90 días después de que ya no se reciban muestras. Si decide cambiar a las ubicaciones de oficina agregadas por el administrador con la información de subred de LAN, puede deshabilitar Windows Location Services y ocultar todas las ubicaciones detectadas. Se quitarán después del período de 90 días.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Agregar ubicaciones y proporcionar información de subred LAN
 
-Para esta opción, no se requiere Windows Location Services ni Wi-Fi. La OneDrive para Windows versión debe estar actualizada e instalada en al menos un equipo en la ubicación.
+Para esta opción, no se requiere Windows Location Services ni Wi-Fi. La OneDrive para Windows versión debe estar actualizada e instalada en al menos un equipo en la ubicación y debe conocer la información de subred de LAN para cada una de las oficinas. Esta opción permite varias ubicaciones de oficina por ciudad y puede asignar un nombre a las ubicaciones de la oficina. También puede cargarlos desde otros orígenes.
 
 Asegúrese de agregar también ubicaciones en la **página de ubicaciones** o importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred de la LAN de office. En el cuadro de diálogo para agregar o editar una ubicación, puede especificar un número de subredes LAN y una serie de subredes IP de salida públicas. Las subredes LAN son necesarias y una de ellas debe coincidir con el atributo de subred LAN en una evaluación de red recibida para que aparezcan los resultados. No se admiten super nets, por lo que la subred LAN debe coincidir exactamente.
 
@@ -73,9 +77,9 @@ Todas las medidas de prueba de las máquinas cliente incluyen la información de
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Recopilación manual de informes de prueba con la herramienta de prueba de conectividad de red Microsoft 365
 
-Para esta opción, debe identificar a una persona en cada ubicación. Pídales que busquen [Microsoft 365 prueba de conectividad de red](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, deben hacer clic en **Ejecutar prueba**. Durante la prueba, hay una versión EXE de prueba de conectividad descargada. Deben abrirlo y ejecutarlo. Una vez completadas las pruebas, el resultado de la prueba se carga en el Centro de administración.
+Para esta opción, debe identificar a una persona en cada ubicación. Pídales que busquen [Microsoft 365 prueba de conectividad de red](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, deben hacer clic en **Ejecutar prueba**. Durante la prueba, hay una versión EXE de prueba de conectividad descargada. Deben abrirlo y ejecutarlo. Una vez completadas las pruebas, el resultado de la prueba se carga en el Centro de Administración.
 
-Los informes de prueba se vinculan a una ubicación si se agregaron con información de subred LAN; de lo contrario, solo se muestran en la ubicación de la ciudad.
+Los informes de prueba se vinculan a una ubicación si se agregaron con información de subred LAN; de lo contrario, solo se muestran en la ubicación de ciudad detectada.
 
 Los ejemplos de medida y las ubicaciones de oficina deben empezar a aparecer entre 2 y 3 minutos después de que se complete un informe de prueba. Para obtener más información, consulte [Microsoft 365 prueba de conectividad de red](office-365-network-mac-perf-onboarding-tool.md).
 
@@ -234,7 +238,7 @@ Si ha cargado datos de compilación en el panel de calidad de llamadas, puede ag
 
 7. Haga clic **en Upload** botón situado en la parte inferior del panel para cargar las ubicaciones de la oficina.
 
-## <a name="faq"></a>preguntas más frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio Microsoft 365?
 

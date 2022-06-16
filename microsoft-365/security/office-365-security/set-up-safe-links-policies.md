@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y la configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 5e66b1b079f67d6454754d056ca9fedf5fefb74f
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772454"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115793"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -51,16 +51,16 @@ También puede usar los procedimientos de este artículo para crear directivas d
 
 Puede configurar directivas de vínculos seguros contra correo no deseado en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online, pero con suscripciones a completos de Microsoft Defender for Office 365).
 
-Los elementos básicos de una directiva de vínculos de Caja fuerte son:
+Los elementos básicos de una directiva de Vínculos seguros son:
 
 - **La directiva de vínculos seguros**: active Caja fuerte Protección de vínculos, active el examen de direcciones URL en tiempo real, especifique si debe esperar a que se complete el examen en tiempo real antes de entregar el mensaje, active el examen de mensajes internos, especifique si se debe realizar un seguimiento de los clics del usuario en las direcciones URL y si se permite a los usuarios hacer clic en la dirección URL original.
 - **Regla de vínculos seguros**: especifica la prioridad y los filtros de destinatario (a quién se aplica la directiva).
 
 La diferencia entre estos dos elementos no es obvia al administrar directivas de vínculos de Caja fuerte en el portal de Microsoft 365 Defender:
 
-- Al crear una directiva de vínculos de Caja fuerte, realmente está creando una regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo que usa el mismo nombre para ambos.
-- Al modificar una directiva de vínculos de Caja fuerte, la configuración relacionada con el nombre, la prioridad, habilitado o deshabilitado y los filtros de destinatarios modifican la regla de vínculos seguros. Todas las demás configuraciones modifican la directiva de vínculos seguros asociados.
-- Al quitar una directiva de vínculos de Caja fuerte, se quitan la regla de vínculos seguros y la directiva de vínculos seguros asociada.
+- Cuando crea una directiva de Vínculos seguros, en realidad, está creando una regla de Vínculos seguros y, al mismo tiempo, la directiva de Vínculos seguros asociada a esta, con el mismo nombre para ambas.
+- Al modificar una directiva de Vínculos Seguros, las opciones de configuración relacionadas con el nombre, la prioridad, la activación o desactivación y los filtros de destinatarios modifican la regla de filtro de Vínculos seguros. Todas las demás opciones modifican la directiva de Vínculos Seguros asociada.
+- Al quitar una directiva de Vínculos seguros, se quitan la regla de Vínculos seguros y la directiva de Vínculos seguros asociada.
 
 En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, consulte la sección [Uso de PowerShell Exchange Online o EOP independiente para configurar directivas de vínculos de Caja fuerte](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) más adelante en este artículo.
 
@@ -78,7 +78,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   > [!NOTE]
   >
-  > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características en Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características en Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   . - El grupo **de roles View-Only Organization Management** de [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para ver nuestra configuración recomendada para las directivas de vínculos de Caja fuerte, consulte [configuración de directivas de vínculos de Caja fuerte](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -95,7 +95,7 @@ La creación de una directiva personalizada de vínculos de Caja fuerte en el po
 
 2. En la página **Vínculos Caja fuerte**, haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
-3. Se abre el Asistente para **directivas de vínculos Caja fuerte** nuevos. En la página **Nombre de la directiva** , configure los siguientes valores:
+3. Se abre el Asistente para **Nueva directiva de Vínculos seguros**. En la página **Nombre de la directiva** , configure los siguientes valores:
 
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
    - **Descripción**: escriba una descripción opcional para la directiva.
@@ -116,6 +116,16 @@ La creación de una directiva personalizada de vínculos de Caja fuerte en el po
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+
+   > [!IMPORTANT]
+   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   >
+   > - El destinatario es: romain@contoso.com
+   > - El destinatario es miembro de: Ejecutivos
+   >
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   >
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -196,7 +206,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 De nuevo en la página principal de la directiva, el valor **Estado** de la directiva estará **Activado** o **Desactivado**.
 
-### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas de vínculos de Caja fuerte
+### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas de vínculos seguros
 
 De forma predeterminada, a los vínculos de Caja fuerte se les asigna una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen una prioridad menor que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
@@ -232,24 +242,24 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 Como se describió anteriormente, una directiva de vínculos de Caja fuerte consta de una directiva de vínculos seguros y una regla de vínculos seguros.
 
-En PowerShell, la diferencia entre las directivas de vínculos seguros y las reglas de vínculos seguros es evidente. Las directivas de vínculos seguros se administran mediante los **\*cmdlets -SafeLinksPolicy** y se administran las reglas de vínculos seguros mediante los **\*cmdlets -SafeLinksRule** .
+En PowerShell, la diferencia entre las directivas de vínculos seguros y las reglas de vínculos seguros es evidente. Las directivas de vínculos seguros se administran mediante los cmdlets **\*-SafeLinksPolicy**, y puede administrar reglas de vínculos seguros mediante los cmdlets **\*-SafeLinksRule**.
 
 - En PowerShell, primero se crea la directiva de vínculos seguros y, a continuación, se crea la regla de vínculos seguros que identifica la directiva a la que se aplica la regla.
-- En PowerShell, se modifica la configuración de la directiva de vínculos seguros y la regla de vínculos seguros por separado.
-- Al quitar una directiva de vínculos seguros de PowerShell, la regla de vínculos seguros correspondiente no se quita automáticamente y viceversa.
+- En PowerShell, puede modificar la configuración de la directiva de vínculos seguros y la regla de vínculos seguros por separado.
+- Cuando se quita una directiva de vínculos seguros de PowerShell, la regla de vínculos seguros correspondiente no se quita automáticamente y viceversa.
 
 ### <a name="use-powershell-to-create-safe-links-policies"></a>Uso de PowerShell para crear directivas de vínculos Caja fuerte
 
-La creación de una directiva de vínculos de Caja fuerte en PowerShell es un proceso de dos pasos:
+La creación de una directiva de vínculos seguros en PowerShell es un proceso de dos pasos:
 
 1. Cree la directiva de vínculos seguros.
 2. Cree la regla de vínculos seguros que especifique la directiva de vínculos seguros a la que se aplica la regla.
 
 > [!NOTE]
 >
-> - Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros no asociados existente. Una regla de vínculos seguros no se puede asociar a más de una directiva de vínculos seguros.
+> - Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros existente sin asociar. Una regla de vínculos seguros no se puede asociar a más de una directiva de vínculos seguros.
 >
-> - Puede configurar las siguientes opciones en nuevas directivas de vínculos seguros en PowerShell que no estén disponibles en el portal de Microsoft 365 Defender hasta que haya creado la directiva:
+> - Puede configurar las siguientes opciones en las nuevas directivas de vínculos seguros de PowerShell que no estén disponibles en el portal de Microsoft 365 Defender hasta después de crear la directiva:
 >   - Cree la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-SafeLinksRule** ).
 >   - Establezca la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_) en el cmdlet **New-SafeLinksRule** .
 >
@@ -271,11 +281,11 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 En este ejemplo se crea una directiva de vínculos seguros denominada Contoso All con los valores siguientes:
 
-- Active el examen y la reescritura de direcciones URL en los mensajes de correo electrónico.
+- Active el examen y reescritura de direcciones URL en los mensajes de correo electrónico.
 - Active el examen de direcciones URL en Teams.
 - Active el examen en tiempo real de las direcciones URL en las que se ha hecho clic, incluidos los vínculos en los que se ha hecho clic que apuntan a los archivos.
-- Espere a que se complete el examen de direcciones URL antes de entregar el mensaje.
-- Active el examen y la reescritura de direcciones URL para los mensajes internos.
+- Espere a que el análisis de URL se complete antes de entregar el mensaje.
+- Active el examen y reescritura de direcciones URL para los mensajes internos.
 - Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos de Caja fuerte (no se usa el parámetro _TrackUserClicks_ y el valor predeterminado es $true).
 - No permita que los usuarios hagan clic en la dirección URL original.
 

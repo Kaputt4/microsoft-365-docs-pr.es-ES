@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: 955e94aad0c7c4c20a020a76ebf4b4ffc1871d9a
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078818"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115859"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -57,7 +57,7 @@ Este método de clasificación es adecuado para el contenido que no se identific
 
 ### <a name="where-you-can-use-classifiers"></a>Donde puede usar clasificadores
 
-Los clasificadores están disponibles para su uso como condición para [Office etiquetado automático con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md). 
+Los clasificadores están disponibles para su uso como condición para [Office etiquetado automático con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md).
 
 Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; consulte [Aplicación automática de una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
@@ -73,15 +73,11 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; c
 
 Microsoft 365 incluye varios clasificadores previamente entrenados:
 
-- **Adulto, Racy y Gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
+- **Adulto, racy y gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
 
 - **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
-- **Reanuda**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante.
-
-- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
-
-- **Quejas del cliente**: el clasificador de quejas de clientes detecta los comentarios y las quejas realizadas sobre los productos o servicios de su organización. Este clasificador puede ayudarle a cumplir los requisitos normativos sobre la detección y evaluación de las quejas, como los requisitos de consumer Financial Protection Bureau y Food and Drug Administration. En cumplimiento de comunicaciones, detecta contenido en archivos .msg y .eml. En el resto de servicios de Microsoft Purview Information Protection, detecta contenido en archivos .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg.
+- **Quejas de clientes**: el clasificador de quejas de clientes detecta comentarios y quejas realizadas sobre los productos o servicios de su organización. Este clasificador puede ayudarle a cumplir los requisitos normativos sobre la detección y evaluación de las quejas, como los requisitos de consumer Financial Protection Bureau y Food and Drug Administration. En cumplimiento de comunicaciones, detecta contenido en archivos .msg y .eml. En el resto de servicios de Microsoft Purview Information Protection, detecta contenido en archivos .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg.
 
 - **Discriminación**: detecta un lenguaje discriminatorio explícito y es sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades.
 
@@ -97,27 +93,26 @@ Microsoft 365 incluye varios clasificadores previamente entrenados:
 
 - **TI**: detecta contenido en las categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 
-- **Asuntos jurídicos**: detecta contenido en categorías relacionadas con asuntos legales, como litigios, procesos legales, obligación legal, terminología legal, ley y legislación. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Asuntos jurídicos**: detecta contenido en categorías relacionadas con asuntos jurídicos, como litigios, procesos legales, obligación legal, terminología legal, ley y legislación. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **Adquisición**: detecta contenido en categorías de licitación, cita, compra y pago por suministro de bienes y servicios. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 
-- **Blasfemia**: detecta una categoría específica de elementos de texto en lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas.
+- **Blasfemia**: detecta una categoría específica de elementos de texto en lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 
-- **Reanuda**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante.
+- **Reanudar**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante
 
-- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
+- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en lenguajes de programación de equipos en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
 
-    > [!NOTE]
-    > El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
+  > [!NOTE]
+  > El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
 - **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
 
 - **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad.
-- **Blasfemia**: detecta una categoría específica de elementos de texto en lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
-- **Impuestos**: detecta el contenido de la relación fiscal, como planificación fiscal, formularios fiscales, presentación de impuestos, regulaciones fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, Archivos .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
+
 - **Amenaza**: detecta una categoría específica de elementos de texto en lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad. Detecta contenido en archivos .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
 
-Aparecen en la vista **clasificadores trainable** de **clasificación** >  **de portal de cumplimiento Microsoft Purview** >  Data con el estado de `Ready to use`.
+Estos clasificadores aparecen en la **vista Clasificadores entrenables de** **clasificación** \> de datos portal de cumplimiento Microsoft Purview  \> con el estado de .`Ready to use`
 
 ![clasificadores-clasificadores previamente entrenados.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -145,7 +140,7 @@ Todos los demás son inglés sólo en este momento.
 
 Cuando los clasificadores previamente entrenados no satisfacen sus necesidades, puede crear y entrenar sus propios clasificadores. Hay más trabajo relacionado con la creación de los suyos propios, pero se adaptarán mucho mejor a las necesidades de las organizaciones.
 
-Para empezar a crear un clasificador personalizado que se puede entrenar, alimente ejemplos que definitivamente están en la categoría. Una vez que procesa esos ejemplos, se prueba proporcionándole una combinación de ejemplos coincidentes y no coincidentes. A continuación, el clasificador realiza predicciones sobre si un elemento determinado pertenece a la categoría que está compilando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, los verdaderos negativos, los falsos positivos y los falsos negativos para ayudar a aumentar la precisión de sus predicciones. 
+Para empezar a crear un clasificador personalizado que se puede entrenar, alimente ejemplos que definitivamente están en la categoría. Una vez que procesa esos ejemplos, se prueba proporcionándole una combinación de ejemplos coincidentes y no coincidentes. A continuación, el clasificador realiza predicciones sobre si un elemento determinado pertenece a la categoría que está compilando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, los verdaderos negativos, los falsos positivos y los falsos negativos para ayudar a aumentar la precisión de sus predicciones.
 
 Al publicar el clasificador, ordena los elementos de ubicaciones como SharePoint Online, Exchange y OneDrive, y clasifica el contenido. Después de publicar el clasificador, puede seguir entrenándolo mediante un proceso de comentarios similar al proceso de entrenamiento inicial.
 
