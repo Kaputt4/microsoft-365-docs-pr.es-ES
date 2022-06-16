@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014286"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078510"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
@@ -68,6 +68,7 @@ ms.locfileid: "66014286"
 | Inteligencia sobre amenazas|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
 
 Para más información sobre las operaciones auditadas en cada uno de los servicios enumerados en la tabla anterior, vea la sección [Actividades auditadas](#audited-activities) de este artículo.
 
@@ -408,7 +409,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades del portal de mensajes cifrados](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [Actividades de SystemSync] (#actividades-systemsync)
     :::column-end:::
     :::column:::
         
@@ -447,7 +448,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Todas las versiones menores del archivo recicladas|FileVersionsAllMinorsRecycled|El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Todas las versiones del archivo recicladas|FileVersionsAllRecycled|El usuario elimina todas las versiones del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Versión del archivo reciclada|FileVersionRecycled|El usuario elimina una versión del historial de versiones de un archivo. La versión eliminada se mueve a la Papelera de reciclaje del sitio.|
-|Archivo al que se le ha cambiado el nombre|FileRenamed|El usuario cambia el nombre de un documento en un sitio.|
+|Archivo al que se le ha cambiado el nombre|FileRenamed|El usuario cambia el nombre de un documento.|
 |Archivo restaurado|FileRestored|El usuario restaura un documento de la papelera de reciclaje de un sitio. |
 |Archivo cargado|FileUploaded|El usuario carga un documento a una carpeta de un sitio. |
 |Página visualizada|PageViewed|El usuario visualiza una página en un sitio. No incluye el uso de un explorador web para ver los archivos ubicados en una biblioteca de documentos. Una vez que un usuario visualiza una página, el evento PageViewed no se vuelve a registrar para el mismo usuario durante los próximos cinco minutos.|
@@ -1105,6 +1106,18 @@ Cada entrada de auditoría para un mensaje rastreado contendrá los siguientes c
 - OperationStatus : indica si la operación señalada tuvo éxito o fracasó.
 - AttachmentName: nombre del archivo adjunto.
 - OperationProperties: una lista de propiedades opcionales, por ejemplo el número de códigos de acceso OTP enviados, o el asunto del correo electrónico.
+
+### <a name="systemsync-activities"></a>Actividades de SystemSync
+
+En la tabla siguiente se enumeran las actividades de SystemSync que se registran en el registro de auditoría de Microsoft 365.
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Uso compartido de datos creado|DataShareCreated|Cuando el usuario crea la exportación de datos.|
+|Uso compartido de datos eliminado|DataShareDeleted|Cuando el usuario elimina la exportación de datos.|
+|Generar una copia de Lake Data|GenerateCopyOfLakeData|Cuando se genera la copia de Lake Data.|
+|Descargar copia de Lake Data|DownloadCopyOfLakeData|Cuando se descarga la copia de Lake Data.|
+
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

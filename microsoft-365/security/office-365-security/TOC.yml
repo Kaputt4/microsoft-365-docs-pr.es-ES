@@ -404,6 +404,8 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Cómo configurar directivas y permisos de cuarentena
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: Manténgase informado de los próximos cambios en Microsoft Defender para Office 365 mediante el centro de mensajes
+          href: step-by-step-guides/stay-informed-with-message-center.md
         - name: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
         - name: 'Cómo priorizar, administrar, investigar y actuar ante incidentes en Microsoft 365 Defender'

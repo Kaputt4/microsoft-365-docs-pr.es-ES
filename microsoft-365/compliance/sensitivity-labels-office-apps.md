@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014198"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078423"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -414,8 +414,9 @@ Word, Excel y PowerPoint admiten los métodos siguientes para convertir un docum
 - Archivo > Exportar > PDF
 - Compartir > Enviar una copia > PDF
 
-Cuando se crea el PDF, hereda la etiqueta con cualquier marca de contenido y cifrado. Los archivos PDF cifrados se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Esta acción se registra con el evento de auditoría del **Archivo cuyo nombre se ha cambiado** desde el grupo de auditoría [Actividades de archivos y páginas](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities). En los resultados de la búsqueda de auditoría en el portal de cumplimiento, verá que los detalles de este evento de auditoría muestran **SensitivityLabeledFileRenamed** para el campo **Actividad**.
 
+Cuando se crea el PDF, hereda la etiqueta con cualquier marca de contenido y cifrado. Los archivos PDF cifrados se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 Escenarios de PDF no admitidos:
 
