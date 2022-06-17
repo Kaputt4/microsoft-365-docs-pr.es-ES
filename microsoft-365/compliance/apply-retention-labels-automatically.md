@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a349ce1678c6cc28a82aa6c97c31358a57970f35
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089868"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115617"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -34,15 +34,13 @@ ms.locfileid: "66089868"
 > Este escenario no se admite para [registros normativos](records-management.md#records) o etiquetas predeterminadas para una estructura de organización, como un conjunto de documentos o una biblioteca en SharePoint, o una carpeta en Exchange. Estos escenarios requieren una [directiva de etiqueta de retención publicada](create-apply-retention-labels.md).
 
 Una de las características más útiles de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente a contenido que coincida con las condiciones especificadas. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de retención. Microsoft 365 lo hace automáticamente.
-  
+
 Las etiquetas de retención auto aplicadas son poderosas porque:
-  
+
 - No es necesario formar a los usuarios para que conozcan todas las clasificaciones.
-    
 - No es necesario depender de los usuarios para clasificar todo el contenido correctamente.
-    
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
-    
+
 Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores entrenables](classifier-get-started-with.md). Ahora en versión preliminar, también puede aplicar automáticamente una etiqueta de retención a los datos adjuntos en la nube que se almacenan en SharePoint o OneDrive.
 
 > [!TIP]
@@ -55,7 +53,7 @@ Los procesos para aplicar automáticamente una etiqueta de retención se basan e
 Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 > [!NOTE]
-> Las directivas automáticas emplean etiquetado del lado del servicio con condiciones para aplicar etiquetas de retención a los elementos automáticamente. También puede aplicar automáticamente una etiqueta de retención con una directiva de etiqueta al hacer lo siguiente: 
+> Las directivas automáticas emplean etiquetado del lado del servicio con condiciones para aplicar etiquetas de retención a los elementos automáticamente. También puede aplicar automáticamente una etiqueta de retención con una directiva de etiqueta al hacer lo siguiente:
 >
 > - Puede aplicar fácilmente una etiqueta de retención a un modelo de comprensión mediante documentos en SharePoint Syntex.
 > - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook
@@ -76,13 +74,13 @@ Antes de crear la directiva de etiqueta de retención, decida si será **adaptab
 Cuando se crea una directiva de aplicación automática, se selecciona una etiqueta de retención para aplicarla automáticamente a contenido, en función de las condiciones especificadas.
 
 1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), navegue a una de las siguientes ubicaciones:
-    
+
     - Si utiliza la administración de registros:
-        - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Aplicar automáticamente una etiqueta**
-    
+        - **Soluciones** \> pestaña **Administración de registros** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
+
     - Si utiliza la solución de administración del ciclo de vida de los datos:
-        - **Soluciones** > **Administración del ciclo de vida de los datos** > **Directivas de etiquetas** pestaña > **Aplicar una etiqueta automáticamente**
-    
+        - **Soluciones** \> pestaña **Administración del ciclo de vida de los datos** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
+
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**.
 
 2. Escriba un nombre y una descripción para esta directiva de etiquetado automático y, a continuación, seleccione **Siguiente**.
@@ -92,11 +90,11 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 4. En la página **Elegir el tipo de directiva de retención que desea crear**, seleccione **Adaptable** o **Estática**, en función de lo que haya elegido en las instrucciones de [Antes de empezar](#before-you-begin). Si aún no ha creado ámbitos adaptables, podrá seleccionar **Adaptable**, pero no habrá ámbitos adaptables que seleccionar, por lo tanto no podrá finalizar el asistente con esta opción.
 
 5. Según el ámbito seleccionado:
-    
-    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
-    
+
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**.
+
     - Si ha elegido **Estático**: en la página **Elegir ubicaciones**, active o desactive cualquiera de las ubicaciones. Para cada ubicación, puede dejar de forma predeterminada [aplicar la directiva a toda la ubicación](retention-settings.md#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
-    
+
     Para obtener información sobre las opciones de ubicación, vea [Ubicaciones](retention-settings.md#locations).
 
 6. Siga las indicaciones del asistente para seleccionar una etiqueta de retención y, a continuación, revise y envíe las opciones de configuración.
@@ -146,7 +144,7 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 
 > [!IMPORTANT]
 > En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, se incluyen automáticamente todos los buzones, incluidos los buzones de Microsoft 365 grupos.
-> 
+>
 > Aunque los buzones de grupo normalmente se incluirían seleccionando la ubicación **Grupos de Microsoft 365**, para esta configuración de directiva específica, la ubicación de grupos solo incluye sitios de SharePoint conectados a un grupo de Microsoft 365.
 
 Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos de Microsoft Purview (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
@@ -156,7 +154,7 @@ Al crear directivas de etiquetas de retención de aplicación automática para i
 Para obtener más información sobre los tipos de información de confidencialidad, consulte [Obtener información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actualmente, los [tipos de información confidencial basados en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) y la [creación de huella digital de documento](document-fingerprinting.md) no están admitidos en este escenario.
 
 Después de seleccionar una plantilla de política, puede añadir o eliminar cualquier tipo de información sensible, y puede cambiar el nivel de confianza y el recuento de instancias. En la captura de pantalla del ejemplo anterior, estas opciones se han cambiado para que se aplique automáticamente una etiqueta de retención sólo cuando:
-  
+
 - El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o [nivel de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels)) de al menos **Confianza media** para dos de los tipos de información confidencial y **Confianza alta** para uno. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere que se encuentren más evidencias (como palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos evidencia. Cuanto menor sea el nivel de confianza, más fácil será que el contenido coincida con la condición, pero con el potencial de que se produzcan más falsos positivos.
 
 - El contenido tiene entre 1 y 9 instancias de cualquiera de estos tres tipos de información confidencial. El valor predeterminado para **a** es **Cualquiera**.
@@ -170,7 +168,7 @@ Que debe tener en cuenta al usar tipos de información confidencial para aplicar
 
 - Si usa tipos personalizados de información confidencial, estos no pueden etiquetar automáticamente los elementos existentes en SharePoint y OneDrive.
 
-- En el caso de los correos electrónicos, no puede seleccionar destinatarios específicos para incluirlos o excluirlos; solo se admite la configuración **Todos los destinatarios** y, solo para esta configuración, incluye buzones de grupos de Microsoft 365. 
+- En el caso de los correos electrónicos, no puede seleccionar destinatarios específicos para incluirlos o excluirlos; solo se admite la configuración **Todos los destinatarios** y, solo para esta configuración, incluye buzones de grupos de Microsoft 365.
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
@@ -192,12 +190,13 @@ Aspectos que debe tener en cuenta al usar palabras clave o propiedades utilizabl
 
 - Para buscar valores que contengan espacios o caracteres especiales, use comillas dobles (`" "`) en la frase. Por ejemplo, `subject:"Financial Statements"`.
 
-- Use la propiedad *DocumentLink* en lugar de *Path* para hacer coincidir un elemento basándose en su URL. 
+- Use la propiedad *DocumentLink* en lugar de *Path* para hacer coincidir un elemento basándose en su URL.
 
 - No se admiten las búsquedas con caracteres comodín de sufijo (como `*cat`) o las búsquedas con caracteres comodín de subcadena (como `*cat*`). Sin embargo, se admiten las búsquedas comodín de prefijo (como `cat*`).
 
 - Tenga en cuenta que los elementos parcialmente indexados pueden causar que no se etiqueten los elementos que espera, o que se etiqueten elementos que esperaba excluir de la etiquetación cuando use el operador NOT. Para obtener más información, consulte [Elementos parcialmente indexados en la Búsqueda de contenido](partially-indexed-items-in-content-search.md).
 
+- Se recomienda no utilizar espacios entre palabras en los valores de RefinableStrings en los documentos. RefinableString no es una propiedad word-break.
 
 Consultas de ejemplos:
 
@@ -213,35 +212,35 @@ Ejemplos más complejos:
 
 La siguiente consulta para SharePoint identifica documentos de Word u hojas de cálculo de Excel cuando contienen las palabras clave **contraseña**, **contraseñas** o **clave**:
 
-```
+```KQL
 (password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
 ```
 
 La siguiente consulta para Exchange identifica cualquier documento de Word o PDF que contenga la palabra **nda** o la frase **acuerdo de no divulgación** cuando estos documentos se adjuntan a un correo electrónico:
 
-```
+```KQL
 (nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
-La siguiente consulta para SharePoint identifica documentos que contienen un número de tarjeta de crédito: 
+La siguiente consulta para SharePoint identifica documentos que contienen un número de tarjeta de crédito:
 
-```
+```KQL
 sensitivetype:"credit card number"
 ```
 
 La siguiente consulta contiene algunas de las palabras clave típicas para identificar documentos o correos electrónicos que incluyan contenido legal válido:
 
-```
+```KQL
 ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ```
 
-La siguiente consulta contiene palabras clave típicas para identificar documentos o correos electrónicos para recursos humanos: 
+La siguiente consulta contiene palabras clave típicas para identificar documentos o correos electrónicos para recursos humanos:
 
-```
+```KQL
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-Tenga en cuenta que este último ejemplo usa el procedimiento recomendado para incluir siempre operadores entre palabras clave. Usar un espacio entre palabras clave (o dos expresiones propiedad:valor) es igual que usar AND. Al ir agregando los operadores, resulta más fácil ver que esta consulta de ejemplo identifica solo contenido que incluya todas las palabras clave, y no contenido con solo alguna de ellas. Si su intención es identificar el contenido que incluya alguna de las palabras clave, especifique OR en lugar de AND. Como se muestra en este ejemplo, al especificar siempre los operadores, es más fácil interpretarlos correctamente. 
+Tenga en cuenta que este último ejemplo utiliza la mejor práctica de incluir siempre operadores entre las palabras clave. Usar un espacio entre palabras clave (o dos expresiones propiedad:valor) es igual que usar AND. Al ir agregando los operadores, resulta más fácil ver que esta consulta de ejemplo identifica solo contenido que incluya todas las palabras clave, y no contenido con solo alguna de ellas. Si su intención es identificar el contenido que incluya alguna de las palabras clave, especifique OR en lugar de AND. Como se muestra en este ejemplo, al especificar siempre los operadores, es más fácil interpretarlos correctamente.
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Grabaciones de reuniones de Microsoft Teams
 
@@ -250,7 +249,7 @@ Tenga en cuenta que este último ejemplo usa el procedimiento recomendado para i
 
 Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave**:
 
-```
+```KQL
 ProgID:Media AND ProgID:Meeting
 ```
 
@@ -260,7 +259,7 @@ La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive. P
 
 Para identificar archivos en los correos electrónicos de SharePoint o OneDrive y Exchange que tienen aplicada una [etiqueta de confidencialidad](sensitivity-labels.md), especifique lo siguiente para el **Editor de consultas de palabras clave**:
 
-```
+```KQL
 InformationProtectionLabelId:<GUID>
 ```
 
@@ -310,11 +309,11 @@ Los datos adjuntos en la nube admitidos para esta opción son archivos como docu
 
 Aunque no es necesario para esta opción, se recomienda asegurarse de que el control de versiones está habilitado para los sitios de SharePoint y las cuentas de OneDrive para que la versión compartida se pueda capturar con precisión. Si el control de versiones no está habilitado, se conservará la última versión disponible. No se admiten los documentos en borrador o que nunca se han publicado.
 
-Al seleccionar una etiqueta que se usará para aplicar automáticamente etiquetas de retención para datos adjuntos en la nube, asegúrese de que la configuración de retención de etiquetas **Iniciar el período de retención en función de** es **Cuando se etiquetaron los elementos**. 
+Al seleccionar una etiqueta que se usará para aplicar automáticamente etiquetas de retención para datos adjuntos en la nube, asegúrese de que la configuración de retención de etiquetas **Iniciar el período de retención en función de** es **Cuando se etiquetaron los elementos**.
 
 Al configurar las ubicaciones para esta opción, puede seleccionar:
 
-- **SharePoint** para archivos compartidos almacenados en sitios de comunicación de SharePoint, sitios de grupo que no están conectados por grupos de Microsoft 365 y sitios clásicos. 
+- **SharePoint** para archivos compartidos almacenados en sitios de comunicación de SharePoint, sitios de grupo que no están conectados por grupos de Microsoft 365 y sitios clásicos.
 - **Grupos de Microsoft 365** para los archivos compartidos que se almacenan en sitios de grupo conectados por grupos de Microsoft 365.
 - **Cuentas de OneDrive** para los archivos compartidos almacenados en OneDrive de los usuarios.
 
@@ -332,17 +331,17 @@ Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos
 - No se admiten los datos adjuntos en la nube compartidos fuera de Teams y Outlook.
 
 - Los siguientes elementos no se admiten como datos adjuntos en la nube que se pueden conservar:
-    - Sitios, páginas, listas, formularios, carpetas, conjuntos de documentos y páginas de OneNote de SharePoint.
-    - Archivos compartidos por usuarios que no tienen acceso a esos archivos.
-    - Archivos que se eliminan o mueven antes de que se envíe el archivo adjunto en la nube. Por ejemplo, un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero si el archivo sigue disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
-    - Archivos compartidos por invitados o usuarios externos a la organización.
-    - Archivos en borradores de mensajes de correo electrónico y mensajes que no se envían.
-    - Archivos vacíos.
+  - Sitios, páginas, listas, formularios, carpetas, conjuntos de documentos y páginas de OneNote de SharePoint.
+  - Archivos compartidos por usuarios que no tienen acceso a esos archivos.
+  - Archivos que se eliminan o mueven antes de que se envíe el archivo adjunto en la nube. Por ejemplo, un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero si el archivo sigue disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
+  - Archivos compartidos por invitados o usuarios externos a la organización.
+  - Archivos en borradores de mensajes de correo electrónico y mensajes que no se envían.
+  - Archivos vacíos.
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Tiempo que tardan las etiquetas de retención en aplicarse
 
 Al aplicar automáticamente etiquetas de retención basadas en información confidencial, palabras clave o propiedades que permiten búsquedas, o clasificadores entrenables, las etiquetas de retención pueden tardar hasta siete días en aplicarse:
-  
+
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática.](../media/retention-labels-autoapply-timings.png)
 
 Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el portal del Centro de cumplimiento de Microsoft Purview. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
@@ -350,7 +349,7 @@ Si las etiquetas que esperaba no aparecen después de siete días, compruebe el 
 1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Ejecute el siguiente comando:
-    
+
     ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
     ```
@@ -362,6 +361,7 @@ En el caso de las directivas de etiquetas de retención de aplicación automáti
 En el caso de las directivas de etiquetas de retención de aplicación automática configuradas para datos adjuntos en la nube: dado que esta directiva se aplica a los archivos recién compartidos en lugar de a los archivos existentes, un cambio en la configuración de la etiqueta y directiva seleccionadas se aplicará automáticamente solo al contenido recién compartido.
 
 Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
+
 - Los nombres de las etiquetas de retención y sus directivas, el tipo de ámbito (adaptable o estático) y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en cuándo se etiquetaron los elementos.
 - La opción de marcar los elementos como un registro.
 
