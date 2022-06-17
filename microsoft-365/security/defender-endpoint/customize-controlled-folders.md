@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217384"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139349"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -33,14 +33,14 @@ ms.locfileid: "65217384"
 - Windows
 
 > [!TIP]
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 El acceso controlado a carpetas le ayuda a proteger datos valiosos de aplicaciones y amenazas malintencionadas, como ransomware. El acceso controlado a carpetas se admite en Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11 clientes. En este artículo se describe cómo personalizar las funcionalidades de acceso controlado a carpetas e se incluyen las secciones siguientes:
 
 - [Protección de carpetas adicionales](#protect-additional-folders)
 - [Agregar aplicaciones a las que se debe permitir el acceso a carpetas protegidas](#allow-specific-apps-to-make-changes-to-controlled-folders)
 - [Permitir que los archivos ejecutables firmados accedan a carpetas protegidas](#allow-signed-executable-files-to-access-protected-folders)
-- [Personalización de la notificación](#customize-the-notification)
+- [Personalizar la notificación](#customize-the-notification)
 
 > [!IMPORTANT]
 > El acceso controlado a carpetas supervisa las aplicaciones en busca de actividades que se detectan como malintencionadas. A veces, las aplicaciones legítimas no pueden realizar cambios en los archivos. Si el acceso controlado a carpetas afecta a la productividad de la organización, podría considerar la posibilidad de ejecutar esta característica en [modo de auditoría](audit-windows-defender.md) para evaluar completamente el impacto.
@@ -169,12 +169,12 @@ Microsoft Defender para punto de conexión indicadores de certificado y archivo 
 > [!Note]
 > Esto no se aplica a los motores de scripting, incluido PowerShell.
 
-## <a name="customize-the-notification"></a>Personalización de la notificación
+## <a name="customize-the-notification"></a>Personalizar la notificación
 
 Para obtener más información sobre cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o un archivo, consulte [Configurar notificaciones de alerta en Microsoft Defender para punto de conexión](configure-email-notifications.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)
-- [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
+- [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)

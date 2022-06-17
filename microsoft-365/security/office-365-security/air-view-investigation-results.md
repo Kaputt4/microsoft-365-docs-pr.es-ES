@@ -19,12 +19,12 @@ description: Durante y después de una investigación automatizada en Microsoft 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b99573f73d5b53b6ea0e8d0cd1e44b539fa47db9
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649085"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139703"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -47,12 +47,12 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |**Iniciando**|La investigación se ha desencadenado y está a la espera de empezar a ejecutarse.|
 |**En funcionamiento**|El proceso de investigación se ha iniciado y está en curso. Este estado también se produce cuando se aprueban [las acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) .|
 |**No se encontraron amenazas**|La investigación ha finalizado y no se ha identificado ninguna amenaza (cuenta de usuario, mensaje de correo electrónico, dirección URL o archivo). <p> **SUGERENCIA**: Si sospecha que se ha perdido algo (por ejemplo, un falso negativo), puede tomar medidas mediante [el Explorador de amenazas](threat-explorer.md).|
-|**Amenazas encontradas**|La investigación automatizada encontró problemas, pero no hay ninguna acción de corrección específica para resolver esos problemas. <p> El estado **Amenazas encontradas** puede producirse cuando se ha identificado algún tipo de actividad de usuario, pero no hay ninguna acción de limpieza disponible. Entre los ejemplos se incluye cualquiera de las siguientes actividades de usuario: <ul><li>Un evento [de prevención de pérdida de datos](../../compliance/dlp-learn-about-dlp.md)</li><li>Anomalía de envío de correo electrónico</li><li>Malware enviado</li><li>Phish enviado</li></ul> <p> La investigación no encontró direcciones URL malintencionadas, archivos o mensajes de correo electrónico que corregir y ninguna actividad de buzón que corregir, como desactivar las reglas de reenvío o la delegación. <p> **SUGERENCIA**: Si sospecha que se ha perdido algo (por ejemplo, un falso negativo), puede investigar y tomar medidas mediante [el Explorador de amenazas](threat-explorer.md).|
+|**Parcialmente investigado**|La investigación automatizada encontró problemas, pero no hay ninguna acción de corrección específica para resolver esos problemas. <p> El estado **Parcialmente investigado** puede producirse cuando se ha identificado algún tipo de actividad de usuario, pero no hay ninguna acción de limpieza disponible. Entre los ejemplos se incluye cualquiera de las siguientes actividades de usuario: <ul><li>Un evento [de prevención de pérdida de datos](../../compliance/dlp-learn-about-dlp.md)</li><li>Anomalía de envío de correo electrónico</li><li>Malware enviado</li><li>Phish enviado</li></ul> <p> **Nota**: Este estado **parcialmente investigado** solía etiquetarse como **Amenazas encontradas**. <p> La investigación no encontró direcciones URL malintencionadas, archivos o mensajes de correo electrónico que corregir y ninguna actividad de buzón que corregir, como desactivar las reglas de reenvío o la delegación. <p> **SUGERENCIA**: Si sospecha que se ha perdido algo (por ejemplo, un falso negativo), puede investigar y tomar medidas mediante [el Explorador de amenazas](threat-explorer.md).|
 |**Terminado por el sistema**|La investigación se detuvo. Una investigación puede detenerse por varias razones: <ul><li>Las acciones pendientes de la investigación han expirado. Tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana</li><li>Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación de ejecutar todos los analizadores, por lo que la investigación se detiene.</li></ul> <p> **SUGERENCIA**: Si una investigación se detiene antes de realizar acciones, intente usar [el Explorador de amenazas](threat-explorer.md) para buscar y abordar amenazas.|
 |**Acción pendiente**|La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo de riesgo, y una acción para corregir que la amenaza está [en espera de aprobación](air-review-approve-pending-completed-actions.md). <p> El estado **Acción pendiente** se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecuta una investigación. Vea los detalles de la investigación para ver si otros elementos siguen pendientes de finalización.|
 |**Corregido**|La investigación finalizó y se aprobaron todas las acciones de corrección (se anotó como totalmente corregido). <p> **NOTA**: Las acciones de corrección aprobadas pueden tener errores que impidan que se realicen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Ver los detalles de la investigación.|
 |**Parcialmente corregido**|La investigación produjo acciones de corrección y algunas se aprobaron y completaron. Otras acciones siguen [pendientes](air-review-approve-pending-completed-actions.md).|
-|**Failed**|Al menos un analizador de investigación se encontró con un problema en el que no pudo completarse correctamente. <p> **NOTA** Si se produce un error en una investigación después de aprobar las acciones de corrección, es posible que las acciones de corrección se hayan realizado correctamente. Vea los detalles de la investigación.|
+|**Failed**|Al menos un analizador de investigación se encontró con un problema en el que no se pudo completar correctamente. <p> **NOTA** Si se produce un error en una investigación después de aprobar las acciones de corrección, es posible que las acciones de corrección se hayan realizado correctamente. Vea los detalles de la investigación.|
 |**En cola por limitación**|Una investigación se mantiene en una cola. Cuando se completen otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio.  <p> **SUGERENCIA**: Las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) las acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminado por limitación**|Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <p> **SUGERENCIA**: Puede [iniciar una investigación desde el Explorador de amenazas](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 
@@ -91,10 +91,10 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 - Las anomalías de volumen representan una amenaza potencial y, en consecuencia, podrían ser menos graves en comparación con las amenazas de malware o phish que se identifican mediante motores antivirus, detonación o reputación malintencionada.
 
-- No es necesario aprobar todas las acciones. Si no está de acuerdo con la acción recomendada o su organización no elige determinados tipos de acciones, puede optar por **rechazar** las acciones o simplemente ignorarlas y no realizar ninguna acción.
+- No es necesario aprobar todas las acciones. Si no está de acuerdo con la acción recomendada o su organización no elige determinados tipos de acciones, puede elegir **Rechazar** las acciones o simplemente ignorarlas y no realizar ninguna acción.
 
 - Aprobar o rechazar todas las acciones permite que la investigación se cierre por completo (el estado se corrige), mientras que dejar algunas acciones incompletas da como resultado que el estado de la investigación cambie a un estado parcialmente corregido.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisión y aprobación de acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

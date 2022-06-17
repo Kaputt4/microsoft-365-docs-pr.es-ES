@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
 description: Referencia de formato SKOS para la taxonomía de SharePoint
-ms.openlocfilehash: 95183b64d76a70f69d08cd5a3c9dcf76f4e83bce
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c9dbaae4242155522eec2fff0f7fd4d721e697cc
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747661"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139681"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Referencia de formato SKOS para la taxonomía de SharePoint
 
@@ -128,7 +128,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:inTermSet**
 
-Use esto para asignar un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) a un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) solo puede existir en un único [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint requiere esta propiedad a la hora de [definir un término](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term).
+Use esto para asignar un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) a un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) solo puede existir en un único [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint requiere esta propiedad a la hora de [definir un término](#sharepoint-taxonomy-vocabulary).
 
 ## <a name="required-labels"></a>Etiquetas necesarias
 

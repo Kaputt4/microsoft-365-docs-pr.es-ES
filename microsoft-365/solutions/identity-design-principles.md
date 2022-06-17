@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: 71b4fc8a671f4b30d70a4c3ec026c39b24c1a9a4
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060969"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139527"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>A la identidad y más allá: punto de vista de un arquitecto
 
@@ -194,7 +194,7 @@ A [multigeográfica](../enterprise/microsoft-365-multi-geo.md) o no a multigeogr
 - No proporciona ventajas de rendimiento. Podría empeorar el rendimiento si el [diseño de red](https://aka.ms/office365networking) no es correcto. Consigue que los dispositivos se "cierren" a la red de Microsoft, no necesariamente a los datos.
 - No es una solución para el [cumplimiento del RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-overview). EL RGPD no se centra en la soberanía de los datos ni en las ubicaciones de almacenamiento. Hay otros marcos de cumplimiento para eso.
 - No resuelve las barreras de delegación de administración (vea a continuación) ni [de información](../compliance/information-barriers.md).
-- No es lo mismo que multiinquilino y requiere flujos de trabajo de [aprovisionamiento de usuarios](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) adicionales.
+- No es lo mismo que multiinquilino y requiere flujos de trabajo de [aprovisionamiento de usuarios](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) adicionales.
 - No [mueve el inquilino](../enterprise/moving-data-to-new-datacenter-geos.md) (azure AD) a otra geografía.
 
 ## <a name="delegation-of-administration"></a>Delegación de administración
@@ -227,7 +227,7 @@ En ocasiones, los escenarios llaman a agregar un usuario externo a un rol (consu
 
 ### <a name="microsoft-365-defender-and-microsoft-365-purview-compliance-portals"></a>portales de cumplimiento de Microsoft 365 Defender y Microsoft 365 Purview
 
-**Los roles de colaboración & correo electrónico** en el [portal de Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) y *Grupos de *_roles para soluciones de Microsoft Purview_* en el [portal de cumplimiento de Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) son una colección de "grupos de roles", que son independientes y distintos de los roles de Azure AD. Esto puede resultar confuso porque algunos de estos grupos de roles tienen el mismo nombre que los roles de Azure AD (por ejemplo, Lector de seguridad), pero pueden tener una pertenencia diferente. Prefiero el uso de roles de Azure AD. Cada grupo de roles consta de uno o varios "roles" (vea lo que quiero decir sobre la reutilización de la misma palabra) y tiene miembros de Azure AD, que son objetos habilitados para correo electrónico. Además, puede crear un grupo de roles con el mismo nombre que un rol, que puede contener o no ese rol (evite esta confusión).
+**Los roles de colaboración de & correo electrónico** en el [portal de Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) y *Grupos de roles *_para soluciones de Microsoft Purview_* en el [portal de cumplimiento de Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) son una colección de "grupos de roles", que son independientes y distintos de los roles de Azure AD. Esto puede resultar confuso porque algunos de estos grupos de roles tienen el mismo nombre que los roles de Azure AD (por ejemplo, Lector de seguridad), pero pueden tener una pertenencia diferente. Prefiero el uso de roles de Azure AD. Cada grupo de roles consta de uno o varios "roles" (vea lo que quiero decir sobre la reutilización de la misma palabra) y tiene miembros de Azure AD, que son objetos habilitados para correo electrónico. Además, puede crear un grupo de roles con el mismo nombre que un rol, que puede contener o no ese rol (evite esta confusión).
 
 En un sentido, estos permisos son una evolución del modelo de grupos de roles Exchange. Sin embargo, Exchange Online tiene su propia interfaz [de administración de grupos de roles](/exchange/permissions-exo). Algunos grupos de roles de Exchange Online se bloquean y administran desde Azure AD o desde los portales de cumplimiento de Microsoft 365 Defender y Microsoft 365 Purview, pero otros pueden tener los mismos nombres o similares y se administran en Exchange Online (lo que agrega confusión). Le recomiendo que evite usar la interfaz de usuario Exchange Online a menos que necesite ámbitos para la administración de Exchange.
 
