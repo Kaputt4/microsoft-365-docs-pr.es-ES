@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20372843af62c28f4aae05c40d714bdfcdca203b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115991"
+ms.locfileid: "66128731"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -117,11 +117,11 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
    > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
-   > - El beneficiario es miembro de: Ejecutivos
+   > - El destinatario es miembro de: Ejecutivos
    >
    > La directiva se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, ésta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -177,6 +177,8 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
      >
      > <sup>3</sup> Un valor de **Seleccione política** en blanco significa que se usa la política de cuarentena predeterminada para ese veredicto en particular. Cuando más adelante usted edite la política contra correo no deseado o vea la configuración, se muestra el nombre predeterminado de la política sobre cuarentena. Para obtener más información acerca de las políticas de cuarentena predeterminadas que se usan para los veredictos de filtro de correo no deseado, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     >
+     > Los usuarios no pueden liberar sus propios mensajes que se han puesto en cuarentena como suplantación de identidad de alta confianza. En el mejor de los casos, los administradores pueden configurar la directiva de cuarentena para que los usuarios puedan solicitar la liberación de sus mensajes de suplantación de identidad de alta confianza en cuarentena.
 
    - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará y no se podrá recuperar. Los valores válidos están comprendidos entre 1 y 30 días.
 

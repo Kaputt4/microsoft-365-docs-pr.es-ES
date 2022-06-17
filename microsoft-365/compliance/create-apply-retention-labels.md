@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007336"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128929"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
@@ -64,9 +64,9 @@ Antes de crear la directiva de etiqueta de retención, decida si será **adaptab
         - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Etiquetas publicadas**
     
     - Si utiliza la administración del ciclo de vida de los datos:
-        - **Soluciones** > **Administración del ciclo de vida de los datos** > **Directivas de etiquetas** pestaña > **Publicar etiquetas**
+        - **Soluciones** > **Administración del ciclo de vida de los datos** > **Directivas de etiquetas** > **Publicar etiquetas**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
 
 2. Siga las indicaciones para crear la directiva de etiqueta de retención. Tenga cuidado con el nombre que elija para la directiva, ya que no se puede cambiar después de guardar la directiva.
 

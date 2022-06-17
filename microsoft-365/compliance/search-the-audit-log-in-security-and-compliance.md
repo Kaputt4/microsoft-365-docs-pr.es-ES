@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 76cee49b8f37f946f9aa8e67bf40e8642f242fac
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078510"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128831"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
@@ -63,6 +63,7 @@ ms.locfileid: "66078510"
 | Directivas y etiquetas de retención|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | Tipos de información confidencial|DlpSensitiveInformationType|
 | Etiquetas de confidencialidad|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| Portal de mensajes cifrados|OMEPortal|
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Inteligencia sobre amenazas|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
@@ -409,7 +410,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades del portal de mensajes cifrados](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        [Actividades de SystemSync] (#actividades-systemsync)
+        [Actividades de SystemSync](#systemsync-activities)
     :::column-end:::
     :::column:::
         

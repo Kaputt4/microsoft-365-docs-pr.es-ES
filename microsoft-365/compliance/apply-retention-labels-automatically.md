@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: a349ce1678c6cc28a82aa6c97c31358a57970f35
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 87328b69f2649a1e6a6c6755892e17e7c04aac53
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115617"
+ms.locfileid: "66128841"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -76,10 +76,10 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), navegue a una de las siguientes ubicaciones:
 
     - Si utiliza la administración de registros:
-        - **Soluciones** \> pestaña **Administración de registros** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
+        - **Soluciones** \> **Administración de registros** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
 
-    - Si utiliza la solución de administración del ciclo de vida de los datos:
-        - **Soluciones** \> pestaña **Administración del ciclo de vida de los datos** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
+    - Si utiliza la administración del ciclo de vida de los datos:
+        - **Soluciones** \> **Administración del ciclo de vida de los datos** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
 
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**.
 
@@ -240,7 +240,7 @@ La siguiente consulta contiene palabras clave típicas para identificar document
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-Tenga en cuenta que este último ejemplo utiliza la mejor práctica de incluir siempre operadores entre las palabras clave. Usar un espacio entre palabras clave (o dos expresiones propiedad:valor) es igual que usar AND. Al ir agregando los operadores, resulta más fácil ver que esta consulta de ejemplo identifica solo contenido que incluya todas las palabras clave, y no contenido con solo alguna de ellas. Si su intención es identificar el contenido que incluya alguna de las palabras clave, especifique OR en lugar de AND. Como se muestra en este ejemplo, al especificar siempre los operadores, es más fácil interpretarlos correctamente.
+Tenga en cuenta que este último ejemplo utiliza el procedimiento recomendado de incluir siempre operadores entre las palabras clave. Usar un espacio entre palabras clave (o dos expresiones propiedad:valor) es igual que usar AND. Al ir agregando los operadores, resulta más fácil ver que esta consulta de ejemplo identifica solo contenido que incluya todas las palabras clave, y no contenido con solo alguna de ellas. Si su intención es identificar el contenido que incluya alguna de las palabras clave, especifique OR en lugar de AND. Como se muestra en este ejemplo, al especificar siempre los operadores, es más fácil interpretarlos correctamente.
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Grabaciones de reuniones de Microsoft Teams
 
