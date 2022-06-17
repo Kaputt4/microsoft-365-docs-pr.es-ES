@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en el Centro de administración de Microsoft 365 para administrar tareas comunes o la vista del panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436149"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129039"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -171,7 +171,7 @@ Para obtener más información, consulte [Probar o comprar una suscripción de M
 
 Nos encanta conocer su opinión. Informar de errores y compartir comentarios nos ayuda a mejorar la Centro de administración de Microsoft 365. Para enviar comentarios, seleccione el botón **Comentarios** en la parte inferior de la página y use el formulario para enviarnos sus ideas. Active la casilla y confirme su dirección de correo electrónico si desea que alguien del equipo de Centro de administración de Microsoft 365 realice un seguimiento de sus comentarios. No podemos comprometernos a realizar un seguimiento de todos los comentarios, pero vamos a intentarlo.
 
-También puede enviar comentarios desde fuera del centro de administración en nuestro foro de UserVoice. Puede usar esta página para realizar sugerencias de características en las que puedan votar otros usuarios del foro: [foro de UserVoice para el nuevo centro de administración](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>¿Qué ocurre con los tipos específicos de roles de TI y otras áreas de trabajo como Seguridad, Administración de dispositivos o Exchange?
 

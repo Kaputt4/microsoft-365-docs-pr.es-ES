@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015046"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129061"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de los datos e identificar elementos confidenciales con Microsoft 365
 
@@ -192,11 +192,11 @@ Este paso implica la identificación de determinados tipos de información confi
 
 Buscar contenido en el entorno que contiene personal puede ser una tarea formidable, que anteriormente implicaba una combinación de búsqueda de cumplimiento, exhibición de documentos electrónicos, exhibición de documentos electrónicos (Premium), DLP y auditoría.
 
-Con la nueva solución **de clasificación de datos** en el portal de cumplimiento de Microsoft Purview, esto se ha vuelto mucho más fácil con la funcionalidad [Explorador de contenido](../compliance/data-classification-content-explorer.md) , que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con los datos personales.
+Con la nueva solución **de clasificación de datos** en el portal de cumplimiento Microsoft Purview, esto se ha vuelto mucho más fácil con la funcionalidad [Explorador de contenido](../compliance/data-classification-content-explorer.md), que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con los datos personales.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-El portal de cumplimiento de Microsoft Purview viene cargado previamente con más de 100 tipos de información confidencial, la mayoría relacionados con la identificación y localización de datos personales. Estos tipos de información confidencial integrados pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte, etc., en función de los patrones definidos por una expresión regular (regex) o una función. Para obtener más información, consulte [Qué buscan los tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md).
+El portal de cumplimiento Microsoft Purview viene precargado con más de 100 tipos de información confidencial, la mayoría relacionados con la identificación y localización de datos personales. Estos tipos de información confidencial integrados pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte, etc., en función de los patrones definidos por una expresión regular (regex) o una función. Para obtener más información, consulte [Qué buscan los tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md).
 
 Si necesita identificar y proteger un tipo de elementos confidenciales específico de la organización o regional, como un formato personalizado para identificadores de empleado u otra información personal que aún no esté cubierta por un tipo de información confidencial integrado, puede crear un tipo de información confidencial personalizado con estos métodos:
 
@@ -210,13 +210,13 @@ Consulte estos artículos para obtener más información:
 
 - [Personalizar un tipo de información confidencial integrado](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [Obtener más información acerca de los tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md)
-- [Creación de un tipo de información confidencial personalizada en el portal de cumplimiento de Microsoft 365 Purview](../compliance/create-a-custom-sensitive-information-type.md)
-- [Creación de un tipo de información confidencial personalizada en PowerShell de cumplimiento de & seguridad](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](../compliance/create-a-custom-sensitive-information-type.md)
+- [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el Centro de administración de Microsoft Purview. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
+Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el centro de administración de Microsoft Purview. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
 
 La nueva herramienta Explorador de contenido permite identificar rápidamente las ubicaciones de los elementos confidenciales de su entorno, ya sea mediante tipos de información confidencial integrados o personalizados. Esto puede implicar el establecimiento de un proceso y la responsabilidad asignada de investigar periódicamente la presencia y ubicación de elementos confidenciales.
 

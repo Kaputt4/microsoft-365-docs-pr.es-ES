@@ -11,12 +11,12 @@ metadata:
   ms.author: efrene
   ms.date: 05/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: b8044c7275d4dcae36c1559e4ed802e270679b9c
-  ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+  ms.openlocfilehash: 7b7759dd6bfeb0e8fe3dde74a6706b60e2fecb29
+  ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/04/2022
-  ms.locfileid: "65892758"
+  ms.lasthandoff: 06/16/2022
+  ms.locfileid: "66129105"
 landingContent:
 - title: Introducción
   linkLists:
@@ -119,17 +119,17 @@ landingContent:
   - linkListType: video
     links:
     - text: Proteger dispositivos con Windows 10 Pro
-      url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
+      url: /microsoft-365/business-premium/m365bp-secure-windows-devices
     - text: Proteger aplicaciones de Office en iOS
-      url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
+      url: /microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios?view=o365-worldwide
 - title: Seguridad y cumplimiento
   linkLists:
   - linkListType: video
     links:
     - text: Información general sobre la seguridad en Microsoft 365 Empresa Premium
       url: security-and-compliance/secure-your-business-data.md
-    - text: (¡NUEVO!) Microsoft Defender para empresas
-      url: /microsoft-365/security/defender-business/index.yml
+    - text: (¡NUEVO!) Microsoft Defender para Empresas
+      url: /microsoft-365/security/defender-business/mdb-overview?view=o365-worldwide
     - text: Proteger las cuentas de los empleados con autenticación multifactor
       url: security-and-compliance/set-up-multi-factor-authentication.md
     - text: Activar la detección de malware
@@ -143,9 +143,9 @@ landingContent:
     - text: Administrar vínculos seguros
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
     - text: Prevenir la pérdida de datos
-      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+      url: /microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide
     - text: Cree etiquetas de confidencialidad
-      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance
 - title: Soporte técnico
   linkLists:
   - linkListType: video
@@ -158,13 +158,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Configuración de la migración de Microsoft 365 para Google Workspace
+    - text: Configuración de Microsoft 365 para la migración de Google Workspace
       url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
     - text: Agregue su dominio de Google Workspace a Microsoft 365
       url: moveto-microsoft-365/add-google-domain.md
     - text: Migración del calendario y el correo electrónico empresarial desde Google Workspace
       url: moveto-microsoft-365/migrate-email.md
-    - text: Conexión del dominio a Microsoft 365 para empresas
+    - text: Conectar el dominio a Microsoft 365 para empresas
       url: moveto-microsoft-365/connect-domain-tom365.md
-    - text: Migración de archivos de Google a Microsoft 365 para empresas con El Administrador de migración
+    - text: Migración de archivos de Google a Microsoft 365 para empresas con Migration Manager
       url: moveto-microsoft-365/migrate-files-migration-manager.md

@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872322"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129127"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -31,13 +31,10 @@ ms.locfileid: "65872322"
 **Plataformas**
 - Windows
 
-Además de las configuraciones de hardware o locales estándar, también puede usar Antivirus de Microsoft Defender en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI) no persistente.
+Además de las configuraciones de hardware o locales estándar, puede usar Antivirus de Microsoft Defender en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI) no persistente. Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
-Para obtener más información sobre Escritorio remoto de Microsoft Services y compatibilidad con VDI, consulte [documentación de Azure Virtual Desktop](/azure/virtual-desktop).
-
-Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoint Protection en Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
-Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
+> [!NOTE]
+> El sitio de demostración de Defender para punto de conexión en `demo.wd.microsoft.com` está en desuso y se quitará en el futuro.
 
 En esta guía se describe cómo configurar las máquinas virtuales para una protección y un rendimiento óptimos, incluido cómo:
 
@@ -51,12 +48,12 @@ En esta guía se describe cómo configurar las máquinas virtuales para una prot
 
 También puede descargar las notas del [producto Antivirus de Microsoft Defender en Infraestructura de escritorio virtual](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), que examina la nueva característica de actualización de inteligencia de seguridad compartida, junto con las pruebas de rendimiento y las instrucciones sobre cómo puede probar el rendimiento del antivirus en su propia VDI.
 
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
+Para obtener más información sobre Escritorio remoto de Microsoft Services y compatibilidad con VDI, consulte [documentación de Azure Virtual Desktop](/azure/virtual-desktop).
+
+Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoint Protection en Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutarse Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.
->
 > Hay mejoras de rendimiento y características en la forma en que El antivirus de Microsoft Defender funciona en máquinas virtuales en Windows 10 Versión preliminar de Insider, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; Si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configuración de un recurso compartido de archivos VDI dedicado
@@ -114,9 +111,8 @@ Se recomienda comenzar con una vez al día, pero debe experimentar con aumentar 
 Normalmente, los paquetes de inteligencia de seguridad se publican una vez cada tres o cuatro horas. No se recomienda establecer una frecuencia inferior a cuatro horas porque aumentará la sobrecarga de red en la máquina de administración sin ninguna ventaja.
 
 También puede configurar el único servidor o equipo para capturar las actualizaciones en nombre de las máquinas virtuales a intervalos y colocarlas en el recurso compartido de archivos para su consumo.
-Esto es posible cuando los dispositivos tienen los permisos de recurso compartido y NTFS para el acceso de lectura al recurso compartido para que puedan tomar las actualizaciones.
+Esto es posible cuando los dispositivos tienen los permisos de recurso compartido y NTFS para el acceso de lectura al recurso compartido para que puedan tomar las actualizaciones. Para hacerlo:
 
-Para hacerlo:
  1. Cree un recurso compartido de archivos SMB/CIFS. 
  
  2. Use el ejemplo siguiente para crear un recurso compartido de archivos con los siguientes permisos de recurso compartido.
@@ -134,7 +130,7 @@ Para hacerlo:
 
     En este ejemplo, el recurso compartido de archivos es:
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Establecer una tarea programada para ejecutar el script de PowerShell
 
@@ -208,7 +204,6 @@ La supresión de notificaciones impide que las notificaciones Antivirus de Micro
 
 > [!TIP]
 > Para abrir el Centro de acciones en Windows 10 o Windows 11, realice uno de los pasos siguientes:
->
 > - En el extremo derecho de la barra de tareas, seleccione el icono del Centro de acciones.
 > - Presione el botón de tecla del logotipo de Windows + A.
 > - En un dispositivo con pantalla táctil, desliza el dedo desde el borde derecho de la pantalla.
@@ -231,6 +226,18 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 5. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
 Esta directiva impide que un examen se ejecute inmediatamente después de una actualización.
+
+## <a name="disable-the-scanonlyifidle-option"></a>Deshabilitar la `ScanOnlyIfIdle` opción
+
+Use el siguiente cmdlet para detener un examen rápido o programado cada vez que el dispositivo esté inactivo si está en modo pasivo.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+También puede deshabilitar la `ScanOnlyIfIdle` opción en Antivirus de Microsoft Defender mediante la configuración a través de la directiva de grupo local o de dominio. Esto evita la contención significativa de LA CPU en entornos de alta densidad.
+
+Para obtener más información, vea [Iniciar el examen programado solo cuando el equipo está encendido, pero no en uso](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examen de máquinas virtuales sin conexión
 
@@ -274,7 +281,7 @@ Para obtener más información, vea [Configurar exclusiones de Antivirus de Micr
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

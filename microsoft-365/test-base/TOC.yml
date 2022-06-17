@@ -6,7 +6,7 @@
       href: overview.md
 - name: Tutoriales rápidos
   items:
-    - name: Crear cuenta base de pruebas
+    - name: Creación de una cuenta base de prueba
       href: createaccount.md
     - name: Probar la aplicación en Test Base
       items:
@@ -24,7 +24,7 @@
       href: clonepackage.md
     - name: Guía del paquete
       href: contentguideline.md
-    - name: Descripción del costo de uso
+    - name: Comprender el costo de uso
       href: usagecost.md
     - name: Reglas de aplicación o prueba
       href: rules.md
@@ -40,6 +40,8 @@
       href: memory.md
     - name: Análisis de regresión de CPU
       href: cpu.md
+    - name: Solicitud para cambiar el nivel de acceso
+      href: accesslevel.md
     - name: SDK & API
       href: sdkapi.md
 - name: Referencia

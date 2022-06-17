@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integración de reuniones Microsoft Teams con Canvas
-ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 59b4ee7a31d1c88f0417d2a9d3e0af1335155076
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621468"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129171"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Uso de reuniones Microsoft Teams con Canvas
 
@@ -31,15 +31,16 @@ Microsoft Teams reuniones es una aplicación de interoperabilidad de herramienta
 >
 > - El inquilino debe tener una licencia de Microsoft Education.
 > - Solo se puede usar un único inquilino de Microsoft para asignar usuarios entre Canvas y Microsoft.
-> - Tendrá que desactivar School Data Sync (SDS) antes de usar la clase Teams LTI para evitar la duplicación de grupos.
+> - Si tiene previsto usar la característica de sincronización de Microsoft Teams de Canvas simultáneamente con la School Data Sync de Microsoft (SDS), no incluya los datos de la lista de clases y clases en la sincronización de SDS. Puede seguir usando SDS para sincronizar todos los demás datos, incluidos usuarios, organizaciones, contactos primarios y datos demográficos.
+> - Puede usar Teams Meetings LTI sin habilitar **La sincronización del curso**. Sin embargo, no podrá usar la opción **Agregar clase completa**. Puede escribir o copiar y pegar las direcciones de correo electrónico de los asistentes, o agregar canales de equipos existentes a las reuniones.
 
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Admin
+## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administración
 
 Antes de administrar la integración de Microsoft Teams en Instructure Canvas, es importante que la aplicación de Azure **Microsoft-Teams-Sync-for-Canvas** de Canvas sea aprobada por el administrador de Microsoft Office 365 de la institución en el inquilino de Microsoft Azure antes de completar la configuración del administrador de Canvas.
 
 1. Inicie sesión en Canvas.
 
-2. Seleccione el vínculo **Admin** en la navegación global y, a continuación, seleccione su cuenta.
+2. Seleccione el vínculo **Administración** en la navegación global y, a continuación, seleccione su cuenta.
 
 3. En la navegación del administrador, seleccione el vínculo **Configuración** y, a continuación, la pestaña **Integraciones**.
 
@@ -52,7 +53,7 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
 5. Seleccione **Actualizar Configuración** una vez que haya terminado.
 
-6. Para aprobar el acceso a la aplicación de Azure **Microsoft-Teams-Sync-for-Canvas de** Canvas, seleccione el vínculo **Conceder acceso al inquilino**. Se le redirigirá al punto de conexión de consentimiento de Microsoft Identity Platform Admin.
+6. Para aprobar el acceso a la aplicación de Azure **Microsoft-Teams-Sync-for-Canvas de** Canvas, seleccione el vínculo **Conceder acceso al inquilino**. Se le redirigirá al punto de conexión de consentimiento de Microsoft Identity Platform Administración.
 
    ![Permisos.](media/permissions.png)
 
@@ -65,15 +66,15 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
    ![teams-sync.](media/teams-sync.png)
 
-## <a name="canvas-admin"></a>Admin de lienzo
+## <a name="canvas-admin"></a>Administración de lienzo
 
 Configure la integración Microsoft Teams LTI 1.3.
 
-Como Admin canvas, deberá agregar la aplicación LTI de reuniones de Microsoft Teams dentro de su entorno. Anote el identificador de cliente LTI de la aplicación.
+Como Administración canvas, deberá agregar la aplicación LTI de reuniones de Microsoft Teams dentro de su entorno. Anote el identificador de cliente LTI de la aplicación.
 
- - reuniones de Microsoft Teams: 170000000000703
+- reuniones de Microsoft Teams: 170000000000703
 
-1. Acceso **a la configuración de** >  Admin **Apps**.
+1. Acceso **a la configuración de** >  Administración **Aplicaciones**.
 
 2. Seleccione **+ Aplicación** para agregar las aplicaciones de LTI Teams.
 

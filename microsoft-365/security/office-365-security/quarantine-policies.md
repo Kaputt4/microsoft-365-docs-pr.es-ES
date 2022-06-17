@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115683"
+ms.locfileid: "66128863"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -212,6 +212,9 @@ Las directivas de cuarentena predeterminadas, los grupos de permisos preestablec
 > Si está satisfecho con los permisos predeterminados del usuario final y las notificaciones de cuarentena proporcionadas (o no proporcionadas) por las directivas de cuarentena predeterminadas, no es necesario hacer nada. Si desea agregar o quitar funcionalidades de usuario final (los botones disponibles) para los mensajes en cuarentena del usuario, o habilitar las notificaciones de cuarentena y agregar o quitar las mismas funcionalidades en las notificaciones de cuarentena, puede asignar una directiva de cuarentena diferente a la acción de cuarentena.
 
 ## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Asignación de directivas de cuarentena en directivas admitidas en el portal de Microsoft 365 Defender
+
+> [!NOTE]
+> Los usuarios no pueden liberar sus propios mensajes que se pusieron en cuarentena como malware (directivas antimalware) o phishing de alta confianza (directivas contra correo no deseado), independientemente de cómo se configure la directiva de cuarentena. En el mejor de los casos, los administradores pueden configurar la directiva de cuarentena para que los usuarios puedan solicitar la liberación de su malware en cuarentena o mensajes de suplantación de identidad de alta confianza.
 
 ### <a name="anti-spam-policies"></a>Directivas contra correo electrónico no deseado
 
