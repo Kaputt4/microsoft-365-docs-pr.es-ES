@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Obtenga información sobre cómo usar PowerShell para mover el contenido de un sistema de correo electrónico de origen a la vez realizando una migración total a Microsoft 365.
-ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008405"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151214"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración total a Microsoft 365
 
@@ -177,13 +177,13 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 Los sistemas de correo electrónico utilizan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración de correo electrónico a Microsoft 365 está completa, es el momento de apuntar el registro MX a Microsoft 365. Esto ayuda a asegurarse de que el correo electrónico se entrega a los buzones de Microsoft 365. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo.
 
-Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea hacerse una idea de las orientaciones generales, también ofrecemos las [instrucciones generales de registro MX](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
+Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea hacerse una idea de las orientaciones generales, también ofrecemos las [instrucciones generales de registro MX](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online).
 
 Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: [Paso 6: Eliminar el lote de migración total](#step-6-delete-the-cutover-migration-batch).
 
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Paso 6: Eliminar el lote de migración total
 
-Después de cambiar el registro MX y comprobar que todo el correo electrónico se enruta a Microsoft 365 buzones, notifique a los usuarios que su correo se va a Microsoft 365. Después, puede eliminar el lote de migración total. Compruebe lo siguiente antes de eliminar el lote de migración.
+Después de cambiar el registro MX y comprobar que todo el correo electrónico se enruta a Microsoft 365 buzones, notifique a los usuarios que su correo va a Microsoft 365. Después, puede eliminar el lote de migración total. Compruebe lo siguiente antes de eliminar el lote de migración.
 
 - Todos los usuarios usan buzones de Microsoft 365. Una vez eliminado el lote, el correo enviado a los buzones del Exchange Server local no se copia en los buzones de Microsoft 365 correspondientes.
 
