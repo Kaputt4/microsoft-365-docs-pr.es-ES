@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007248"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151170"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -113,6 +113,7 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 |[Actividad punto a punto de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí|
 |[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|N/D|N/D|
 |[Actividad de Viva Insights](viva-insights-activity.md)|Sí|Sí|N/D|N/D|N/D|
+|[Actividad del proyecto](project-activity.md)|Sí|Sí|N/D|N/D|N/D|
 
 N/D<sup>1</sup>: El informe está previsto que se publique en el futuro. El <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Plan de desarrollo de Microsoft 365</a> se actualizará antes del lanzamiento.
 N/D<sup>2</sup>: El servicio no está disponible en el entorno, por lo que no tiene previsto publicar el informe.

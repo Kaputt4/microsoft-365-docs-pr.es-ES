@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
+ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016732"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160828"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -66,15 +66,15 @@ En este artículo se enumeran los problemas conocidos de Microsoft 365 Lighthous
 | **Las acciones desactivar y reactivar no aparecen en los registros de auditoría** | Las siguientes actividades no se notifican actualmente en la página Registros de auditoría de Lighthouse: <ul><li>Nombre: offboardTenant \| Action: Inactivar un cliente</li> <li>Nombre: resetTenantOnboardingStatus \| Action: Cliente reactivo</li></ul> | No hay ninguna solución alternativa, pero estamos trabajando en una corrección. Estas actividades aparecerán en los registros de auditoría una vez que se implemente la corrección en el servicio. |
 | **El filtro no muestra a todos los usuarios** | Cuando los técnicos de MSP intentan filtrar mediante **Iniciado por**, la lista de todos los nombres principales de usuario (UPN) (correspondientes a los identificadores de correo electrónico de los técnicos que iniciaron acciones que generan registros de auditoría) no se muestra completamente en el filtro.<br><br>Tenga en cuenta que los propios registros de auditoría se mostrarán por completo; solo se ve afectada la capacidad de filtrarlos mediante **Iniciado por** . | No hay ninguna solución alternativa, pero estamos trabajando en una corrección. El filtro revertirá a su comportamiento esperado (que muestra la lista completa de UPN por los que filtrar) una vez que la corrección se implemente en el servicio. |
 
-## <a name="delegated-admin-privileges-dap"></a>Privilegios de administrador delegado (DAP)
+## <a name="delegated-admin-privileges-dap"></a>Privilegios de Administración delegados (DAP)
 
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |
-| **Retraso de permisos al cambiar los roles de DAP** | Si se agrega o quita un técnico de MSP del grupo Agente de administración o Agente del departamento de soporte técnico, puede haber un retraso en la reflexión de los permisos adecuados en Lighthouse. | El problema se resolverá en 30 minutos. No se requieren pasos adicionales. |
+| **Retraso de permisos al cambiar los roles de DAP** | Si se agrega o quita un técnico de MSP del grupo agente de Administración o agente del departamento de soporte técnico, puede haber un retraso en la reflexión de los permisos adecuados en Lighthouse. | El problema se resolverá en 30 minutos. No se requieren pasos adicionales. |
 
-## <a name="granular-delegated-admin-privileges-gdap"></a>Privilegios de administrador delegados granulares (GDAP)
+## <a name="granular-delegated-admin-privileges-gdap"></a>Privilegios de Administración delegados granulares (GDAP)
 
-Se requiere privilegios de administrador delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.<br><br>
+Se requiere privilegios de Administración delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios delegados de Administración (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) actualmente no pueden incorporarse a Lighthouse, pero podrán incorporarse en una versión futura.<br><br>
 
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |
