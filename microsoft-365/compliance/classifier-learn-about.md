@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115859"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159584"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -53,7 +53,7 @@ Este método de clasificación es adecuado para el contenido que no se identific
 
 > [!NOTE]
 > En versión preliminar: puede ver los clasificadores que se pueden entrenar en el explorador de contenido expandiendo **Clasificadores entrenables** en el panel de filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de ningún etiquetado.
-> Si no desea usar esta característica, debe presentar una solicitud con Soporte técnico de Microsoft para deshabilitar la clasificación inmediata. Esto deshabilitará el examen del contenido confidencial y etiquetado antes de crear directivas de etiquetado.
+> Si no desea usar esta característica, debe presentar una solicitud con Soporte técnico de Microsoft. Esto deshabilitará la presentación de los datos confidenciales que no se usan en ninguna directiva de etiquetado en el Explorador de contenido. También puede deshabilitar el examen de los datos. Si el examen está desactivado, el etiquetado de confidencialidad y las directivas DLP con esos clasificadores no funcionarán.
 
 ### <a name="where-you-can-use-classifiers"></a>Donde puede usar clasificadores
 
@@ -166,7 +166,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores entrenables per
 
 ![flujo de trabajo de reentrenamiento del clasificador.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

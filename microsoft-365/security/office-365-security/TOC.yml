@@ -223,13 +223,13 @@
         - name: Lista de bloqueados y permitidos del espacio empresarial
           items:
             - name: Administrar la lista de bloqueados y permitidos del espacio empresarial
-              href: tenant-allow-block-list.md
-            - name: Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
-              href: manage-tenant-blocks.md
-            - name: Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
-              href: manage-tenant-allows.md
-            - name: Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
-              href: modify-remove-entries-tenant-allow-block.md
+              href: manage-tenant-allow-block-list.md
+            - name: Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
+              href: allow-block-email-spoof.md
+            - name: Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
+              href: allow-block-urls.md
+            - name: Permitir o bloquear archivos mediante la lista de bloqueados y permitidos del espacio empresarial
+              href: allow-block-files.md
         - name: Crear listas de remitentes bloqueados
           href: Create-block-sender-lists-in-office-365.md
         - name: Crear listas de remitentes seguros

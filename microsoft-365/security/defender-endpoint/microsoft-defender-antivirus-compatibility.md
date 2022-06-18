@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 82ed2110987bcb5fc1238a31a45c264c64392ba3
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872432"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159410"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 
@@ -103,11 +103,90 @@ En la tabla siguiente se resume el estado de Antivirus de Microsoft Defender en 
 
 (<a id="fn2">2</a>) En Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 o Windows Server 2012 R2, Antivirus de Microsoft Defender no entra en modo pasivo automáticamente al instalar un producto antivirus que no es de Microsoft. En esos casos, establezca Antivirus de Microsoft Defender en modo pasivo para evitar problemas causados por la instalación de varios productos antivirus en un servidor. Puede establecer Antivirus de Microsoft Defender en modo pasivo mediante PowerShell, directiva de grupo o una clave del Registro. 
 
+**Método de clave del Registro**
+
   Puede establecer Antivirus de Microsoft Defender en modo pasivo estableciendo la siguiente clave del Registro:
 - Camino: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Nombre: `ForceDefenderPassiveMode`
 - Tipo: `REG_DWORD`
 - Valor: `1`
+
+**Gpo (método)**
+
+- Abra directiva de grupo Editor de administración >**Plantillas** >  administrativas de **configuración** >  del equipo **Windows Componentes** >  **Antivirus de Microsoft Defender**.
+- Seleccione **Desactivar Antivirus de Microsoft Defender**.
+- Establezca el GPO **en Habilitado**.
+
+Puede ver el estado de protección en PowerShell con el comando "Get-MpComputerStatus" y la clave "AMRunningMode".
+
+## SYNTAX
+
+```
+PS C:\Users\tommaso> Get-MpComputerStatus
+
+
+AMEngineVersion                  : 0.0.0.0
+AMProductVersion                 : 4.18.2205.4
+AMRunningMode                    : Not running
+AMServiceEnabled                 : False
+AMServiceVersion                 : 0.0.0.0
+AntispywareEnabled               : False
+AntispywareSignatureAge          : 4294967295
+AntispywareSignatureLastUpdated  :
+AntispywareSignatureVersion      : 0.0.0.0
+AntivirusEnabled                 : False
+AntivirusSignatureAge            : 4294967295
+AntivirusSignatureLastUpdated    :
+AntivirusSignatureVersion        : 0.0.0.0
+BehaviorMonitorEnabled           : False
+ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
+ComputerState                    : 0
+DefenderSignaturesOutOfDate      : False
+DeviceControlDefaultEnforcement  : N/A
+DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
+DeviceControlState               : N/A
+FullScanAge                      : 4294967295
+FullScanEndTime                  :
+FullScanOverdue                  : False
+FullScanRequired                 : False
+FullScanSignatureVersion         :
+FullScanStartTime                :
+IoavProtectionEnabled            : False
+IsTamperProtected                : False
+IsVirtualMachine                 : True
+LastFullScanSource               : 0
+LastQuickScanSource              : 0
+NISEnabled                       : False
+NISEngineVersion                 : 0.0.0.0
+NISSignatureAge                  : 4294967295
+NISSignatureLastUpdated          :
+NISSignatureVersion              : 0.0.0.0
+OnAccessProtectionEnabled        : False
+ProductStatus                    : 1
+QuickScanAge                     : 4294967295
+QuickScanEndTime                 :
+QuickScanOverdue                 : False
+QuickScanSignatureVersion        :
+QuickScanStartTime               :
+RealTimeProtectionEnabled        : False
+RealTimeScanDirection            : 0
+RebootRequired                   : False
+TamperProtectionSource           : Signatures
+TDTMode                          : N/A
+TDTStatus                        : N/A
+TDTTelemetry                     : N/A
+TroubleShootingDailyMaxQuota     :
+TroubleShootingDailyQuotaLeft    :
+TroubleShootingEndTime           :
+TroubleShootingExpirationLeft    :
+TroubleShootingMode              :
+TroubleShootingModeSource        :
+TroubleShootingQuotaResetTime    :
+TroubleShootingStartTime         :
+PSComputerName                   :
+```
+
+En el ejemplo siguiente, el estado de Defender es **No en ejecución**.
 
  > [!NOTE]
  > Para que el modo pasivo funcione en puntos de conexión que ejecutan Windows Server 2016 y Windows Server 2012 R2, esos puntos de conexión deben incorporarse con la solución moderna y unificada que se describe en [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
@@ -199,8 +278,8 @@ En la tabla de esta sección se describen varios estados que puede ver con Antiv
  |  Estado  |  Qué ocurre  | 
  |:---|:---| 
  |  Modo activo  |  En el modo activo, Antivirus de Microsoft Defender se usa como aplicación antivirus en el equipo. Configuración que se configuran mediante Configuration Manager, directiva de grupo, Microsoft Intune u otros productos de administración se aplicarán. Los archivos se examinan, se corrigen las amenazas y se notifica información de detección en la herramienta de configuración (como Configuration Manager o la aplicación de Antivirus de Microsoft Defender en el propio punto de conexión).  | 
- |  Modo pasivo <br/><br/> o bien <br/><br/> modo de bloque de EDR |  En el modo pasivo, Antivirus de Microsoft Defender no se usa como aplicación antivirus y las amenazas *no* se corrigen mediante Antivirus de Microsoft Defender. <br/><br/>Sin embargo, las amenazas se pueden corregir mediante la [detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md) cuando se ejecutan en EDR modo de bloque. <br/><br/> Los archivos se examinan por EDR y se proporcionan informes para las detecciones de amenazas que se comparten con el servicio Defender para punto de conexión. Es posible que vea alertas que muestran Antivirus de Microsoft Defender como origen, incluso cuando Antivirus de Microsoft Defender está en modo pasivo. <br/><br/> Cuando Antivirus de Microsoft Defender está en modo pasivo, todavía puede [administrar las actualizaciones de Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md); sin embargo, no se puede mover Antivirus de Microsoft Defender  en modo activo si los dispositivos tienen un producto antivirus que no es de Microsoft que proporciona protección en tiempo real contra malware. <br/><br/> Para una eficacia óptima de detección y defensa por capas de seguridad, asegúrese de obtener las actualizaciones antivirus y antimalware, incluso si Antivirus de Microsoft Defender se ejecuta en modo pasivo. Consulte [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> Tenga en cuenta que el modo pasivo solo se admite en Windows Server 2012 R2 & 2016 cuando la máquina se incorpora mediante la [solución moderna y unificada](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
- |  Deshabilitado <br/><br/> o bien <br/><br/> Desinstalado  |  Cuando se deshabilita o desinstala, Antivirus de Microsoft Defender no se usa como aplicación antivirus. Los archivos no se examinan y las amenazas no se corrigen. <br/><br/> No se recomienda deshabilitar o desinstalar Antivirus de Microsoft Defender en general; si es posible, mantenga Antivirus de Microsoft Defender en modo pasivo si usa una solución antimalware o antivirus que no sea de Microsoft. <br/><br/> En los casos en los que Antivirus de Microsoft Defender se deshabilita automáticamente, se puede volver a habilitar automáticamente si el producto antivirus o antimalware que no es de Microsoft expira o deja de proporcionar protección en tiempo real contra virus, malware u otras amenazas. La habilitación automática de Antivirus de Microsoft Defender ayuda a garantizar que se mantenga la protección antivirus en los puntos de conexión. <br/><br/> También puede usar el [examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md), que funciona con el motor de Antivirus de Microsoft Defender para comprobar periódicamente si usa una aplicación antivirus que no es de Microsoft.  | 
+ |  Modo pasivo <br/><br/> o <br/><br/> modo de bloque de EDR |  En el modo pasivo, Antivirus de Microsoft Defender no se usa como aplicación antivirus y las amenazas *no* se corrigen mediante Antivirus de Microsoft Defender. <br/><br/>Sin embargo, las amenazas se pueden corregir mediante la [detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md) cuando se ejecutan en EDR modo de bloque. <br/><br/> Los archivos se examinan por EDR y se proporcionan informes para las detecciones de amenazas que se comparten con el servicio Defender para punto de conexión. Es posible que vea alertas que muestran Antivirus de Microsoft Defender como origen, incluso cuando Antivirus de Microsoft Defender está en modo pasivo. <br/><br/> Cuando Antivirus de Microsoft Defender está en modo pasivo, todavía puede [administrar las actualizaciones de Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md); sin embargo, no se puede mover Antivirus de Microsoft Defender  en modo activo si los dispositivos tienen un producto antivirus que no es de Microsoft que proporciona protección en tiempo real contra malware. <br/><br/> Para una eficacia óptima de detección y defensa por capas de seguridad, asegúrese de obtener las actualizaciones antivirus y antimalware, incluso si Antivirus de Microsoft Defender se ejecuta en modo pasivo. Consulte [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> Tenga en cuenta que el modo pasivo solo se admite en Windows Server 2012 R2 & 2016 cuando la máquina se incorpora mediante la [solución moderna y unificada](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
+ |  Deshabilitada <br/><br/> o <br/><br/> Desinstalado  |  Cuando se deshabilita o desinstala, Antivirus de Microsoft Defender no se usa como aplicación antivirus. Los archivos no se examinan y las amenazas no se corrigen. <br/><br/> No se recomienda deshabilitar o desinstalar Antivirus de Microsoft Defender en general; si es posible, mantenga Antivirus de Microsoft Defender en modo pasivo si usa una solución antimalware o antivirus que no sea de Microsoft. <br/><br/> En los casos en los que Antivirus de Microsoft Defender se deshabilita automáticamente, se puede volver a habilitar automáticamente si el producto antivirus o antimalware que no es de Microsoft expira o deja de proporcionar protección en tiempo real contra virus, malware u otras amenazas. La habilitación automática de Antivirus de Microsoft Defender ayuda a garantizar que se mantenga la protección antivirus en los puntos de conexión. <br/><br/> También puede usar el [examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md), que funciona con el motor de Antivirus de Microsoft Defender para comprobar periódicamente si usa una aplicación antivirus que no es de Microsoft.  | 
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

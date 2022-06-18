@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en el Centro de administración de Microsoft 365 para administrar tareas comunes o la vista del panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129039"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159562"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -108,11 +108,7 @@ Si no tiene idea de con quién ponerse en contacto en su trabajo o centro educat
 
 ## <a name="admin-center-features-and-settings"></a>Características y configuración del centro de administración
 
-A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](Información general sobre el Centro de administración de Microsoft 365](admin-center-overview.md).
-
-<br>
-
-****
+A continuación se indican las características y la configuración que encontrará en el panel de navegación izquierdo del centro de administración. Conoce más sobre tareas administrativas en la [ayuda para el administrador](/microsoft-365/admin/).
 
 |Menú|Para qué sirve|
 |-----|-----|

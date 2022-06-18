@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb56ab7feb864a51c51b6f240e8376f989491857
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622704"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159454"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -46,6 +46,7 @@ Vea este vídeo para obtener información sobre cómo Expertos en amenazas de Mi
 
 > [!NOTE]
 > Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar al servicio de búsqueda de amenazas administrado.
+> Los expertos en amenazas no están disponibles actualmente en la Microsoft 365 para las nubes del Gobierno de EE. UU.
 
 Si es un cliente Microsoft Defender para punto de conexión, debe solicitar **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas de su entorno para que pueda responder a ellas rápidamente.
 

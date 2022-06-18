@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
-description: Obtenga información sobre los requisitos y las funcionalidades disponibles de los clientes de Microsoft Defender para punto de conexión para el gobierno de EE. UU.
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
+description: Obtenga información sobre los Microsoft Defender para punto de conexión para los requisitos y funcionalidades de los clientes del Gobierno de EE. UU. disponibles
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender para punto de conexión, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84b91b56a8f34f0fa726684dab513d9356904ff4
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 41a7cb8841d9cf36844d5302d3b4d6a16dda4870
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922961"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159388"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -34,11 +34,11 @@ Microsoft Defender para punto de conexión para clientes del Gobierno de EE. UU.
 Esta oferta está disponible para los clientes de GCC, GCC High y DoD y se basa en la misma prevención, detección, investigación y corrección que la versión comercial. Sin embargo, hay algunas diferencias en la disponibilidad de las funcionalidades de esta oferta.
 
 > [!NOTE]
-> Si es un cliente de GCC que usa Defender para punto de conexión en comercial, consulte las páginas de documentación pública.
+> Si es un cliente GCC que usa Defender para punto de conexión en Comercial, consulte las páginas de documentación pública.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Los clientes de Microsoft Defender para punto de conexión para el gobierno de EE. UU. requieren una de las siguientes ofertas de licencias por volumen de Microsoft:
+Microsoft Defender para punto de conexión para los clientes del Gobierno de EE. UU. requiere una de las siguientes ofertas de licencias por volumen de Microsoft:
 
 ### <a name="desktop-licensing"></a>Licencias de escritorio
 
@@ -49,9 +49,9 @@ Los clientes de Microsoft Defender para punto de conexión para el gobierno de E
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 para GCC High|Microsoft 365 G5 para DOD|
-|GCC de seguridad de Microsoft 365 G5|Seguridad de Microsoft 365 G5 para GCC High|Seguridad de Microsoft 365 G5 para DOD|
+|Microsoft 365 GCC de seguridad G5|seguridad de Microsoft 365 G5 para GCC alta|seguridad de Microsoft 365 G5 para DOD|
 |Microsoft Defender para punto de conexión: GCC|Microsoft Defender para punto de conexión para GCC High|Microsoft Defender para punto de conexión para DOD|
-|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
+|Windows 10 Enterprise GCC E5|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
 |
 
 ### <a name="server-licensing"></a>Licencias de servidor
@@ -62,13 +62,13 @@ Los clientes de Microsoft Defender para punto de conexión para el gobierno de E
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|GCC de Microsoft Defender para punto de conexión|Microsoft Defender para Endpoint Server para GCC High|Microsoft Defender para Endpoint Server para DOD|
+|Microsoft Defender para punto de conexión Server GCC|Microsoft Defender para punto de conexión Server para GCC High|Microsoft Defender para punto de conexión Server for DOD|
 |Microsoft Defender para servidores|Microsoft Defender para servidores: Administración pública|Microsoft Defender para servidores: Administración pública|
 |
 
 ## <a name="portal-urls"></a>Direcciones URL del portal
 
-A continuación se muestran las direcciones URL del portal de Microsoft Defender para punto de conexión para clientes del Gobierno de EE. UU.:
+A continuación se muestran las direcciones URL del portal de Microsoft Defender para punto de conexión para los clientes del gobierno de EE. UU.:
 
 <br />
 
@@ -81,7 +81,7 @@ A continuación se muestran las direcciones URL del portal de Microsoft Defender
 |DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
-> Si es un cliente de GCC y está en proceso de pasar de comercial de Microsoft Defender para punto de conexión a GCC, use https://transition.security.microsoft.com para acceder a los datos comerciales de Microsoft Defender para punto de conexión.
+> Si es un cliente GCC y está en proceso de pasar de Microsoft Defender para punto de conexión comercial a GCC, use https://transition.security.microsoft.com para acceder a sus datos comerciales Microsoft Defender para punto de conexión.
 
 ## <a name="endpoint-versions"></a>Versiones del punto de conexión
 
@@ -96,7 +96,7 @@ Se admiten las siguientes versiones del sistema operativo:
 Versión del sistema operativo|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows 11|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 21H1 y versiones posteriores|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 21H1 y posteriores|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -127,7 +127,7 @@ iOS|![Sí.](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <
 >
 > <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si previamente ha incorporado los servidores mediante MMA, siga las instrucciones que se proporcionan en [Migración del servidor](server-migration.md) para migrar a la nueva solución.
 >
-> <sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) : establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
+> <sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation): establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
@@ -154,8 +154,8 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|Lista de direcciones URL de Microsoft Defender para punto de conexión para clientes comerciales| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista de direcciones URL de Microsoft Defender para punto de conexión para Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes de Gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Microsoft Defender para punto de conexión lista de direcciones URL para clientes comerciales| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender para punto de conexión lista de direcciones URL de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes de Gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Para obtener más información, consulte [Configuración del proxy de dispositivo y la conectividad a Internet](configure-proxy-internet.md).
 
@@ -172,7 +172,7 @@ En lugar de los URI públicos que aparecen en la documentación de la [API](apis
 
 ****
 
-|Tipo de punto de conexión|GCC|GCC High & DoD|
+|Tipo de punto de conexión|GCC|GCC DoD & alto|
 |---|---|---|
 |Inicio de sesión|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |API de Defender para punto de conexión|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
@@ -195,13 +195,13 @@ Estas son las brechas conocidas:
 |Detección de redes|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Informes: Control de dispositivos, Estado del dispositivo, Firewall|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Puntuación de seguridad de Microsoft|![Sí](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) No compatible|![No](images/svg/check-no.svg) No compatible|  
-
+|Puntuación de seguridad de Microsoft|![Sí](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) No compatible|![No](images/svg/check-no.svg) No se admite|  
+|Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 > [!NOTE]
-> <sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para los clientes de GCC, hay algunas recomendaciones de seguridad que no están disponibles.
+> <sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para GCC clientes, hay algunas recomendaciones de seguridad que no están disponibles.
 
 
-Estas son las características y las brechas conocidas para [Mobile Threat Defense (Microsoft Defender para punto de conexión en Android & iOS):](mtd.md)
+Estas son las características y brechas conocidas de [Mobile Threat Defense (Microsoft Defender para punto de conexión en Android & iOS):](mtd.md)
 
 <br />
 
