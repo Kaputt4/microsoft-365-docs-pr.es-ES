@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 740d0b394148a84434c13fd4a3fcd38e8c617c03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 364e2ab3e858bb7c2e06701cc9f3fb8374862003
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089781"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139459"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
-Le damos la bienvenida al cuaderno de estrategias de prueba de Microsoft Empresa Premium. Este cuaderno de estrategias le ayudará a sacar el máximo partido a la prueba gratuita de 30 días enseñándole cómo Microsoft 365 Empresa Premium aumenta la productividad y ayuda a proteger a la organización con Defender para Empresas. Con las recomendaciones de Microsoft, obtendrá información sobre cómo Defender puede ayudarle a definir directivas de protección, analizar amenazas para la organización y responder a ciberataques.
+Le damos la bienvenida al cuaderno de estrategias de prueba de Microsoft Empresa Premium. Este cuaderno de estrategias le ayudará a sacar el máximo partido a la prueba gratuita de 30 días brindándole la experiencia acerca de cómo Microsoft 365 Empresa Premium aumenta la productividad y ayuda a proteger a la organización con funcionalidades de seguridad avanzadas. Con las recomendaciones de Microsoft, obtenga información sobre cómo configurar las características de protección contra amenazas, analizar las amenazas detectadas y responder a los ciberataques.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configuración de la prueba de Microsoft 365 Empresa Premium
 
@@ -36,29 +36,29 @@ En primer lugar, [configure la prueba](../business-premium/m365bp-setup.md).
 
 Después de iniciar la prueba y completar el proceso de configuración, los cambios pueden tardar hasta dos horas en surtir efecto.
 
-Hemos configurado automáticamente las [Directivas de seguridad preestablecidas](/security/office-365-security/preset-security-policies.md) en tu entorno. Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
+Microsoft 365 Empresa Premium incluye [directivas de seguridad preestablecidas](/security/office-365-security/preset-security-policies.md) que puede usar en su entorno. Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
 
-- Vínculos seguros, datos adjuntos seguros y directivas contra la suplantación de identidad que engloban a todo el espacio empresarial o al subconjunto de usuarios que hayas elegido durante el proceso de configuración de prueba.
+- [Vínculos seguros](../security/office-365-security/safe-links.md), [datos adjuntos seguros](../security/office-365-security/safe-attachments.md) y [directivas contra la suplantación de identidad](../security/office-365-security/anti-phishing-protection.md) que engloban todo el espacio empresarial o el subconjunto de usuarios que haya elegido durante el proceso de configuración de prueba. (La suscripción de prueba es para un máximo de 25 usuarios).
 
-- Protección para todas las características de Microsoft 365 Empresa Premium, como SharePoint, OneDrive, aplicaciones de Office y Microsoft Teams.
+- Protección para aplicaciones de productividad, como [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [aplicaciones de Office](/deployoffice/about-microsoft-365-apps)y [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Agregar un dominio
 
-Al comprar la prueba de Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o comprar uno durante el registro.
+Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o comprar uno durante el proceso de registro.
 
 > [!Note]
 > Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a Agregar usuarios y asignar licencias. Vaya al centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. En el menú del centro de administración, elija **Configuración** para iniciar el asistente.
 
-2. Seleccione **Configurar el correo electrónico con un dominio personalizado** y, a continuación, **use un dominio que ya sea suyo**, como contoso.com.
+2. Seleccione **Configurar el correo electrónico con un dominio personalizado** y, a continuación, **use un dominio que ya sea suyo**, como `contoso.com`.
 
 3. Siga el resto de los pasos del asistente para completar el proceso.
 
    > [!Important]
-   > Si compró un dominio durante el registro, no verá el paso Agregar un dominio aquí. Vaya a Agregar usuarios en su lugar.
+   > Si ha comprado un dominio durante el registro, no verá el paso **Agregar un dominio** aquí. Vaya a **Agregar usuarios** en su lugar.
 
-4. Siga los pasos del asistente para Crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365 a fin de verificar que es el propietario del dominio. Si conoce el host de dominio, consulte Agregar un dominio a Microsoft 365.
+4. Siga los pasos del asistente para [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) a fin de verificar que es el propietario del dominio. Si conoce el host de dominio, consulte [Agregar un dominio a Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 5. Si su proveedor de hospedaje es GoDaddy u otro host habilitado con conexión de dominio, el proceso es sencillo y se le pedirá automáticamente que inicie sesión y que permita que Microsoft autentique en su nombre.
 
