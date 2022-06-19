@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7b8ca4e909893ec417d3466f825c2c0a1c5c736a
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016468"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151192"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -162,15 +162,11 @@ Para obtener más información sobre cómo funcionan las directivas de retenció
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
 
-Yammer ofrece elementos que van más allá de los mensajes de comunidad y los mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365**. 
+Yammer ofrece elementos que van más allá de los mensajes de comunidad y los mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365**.
 
-Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **grupos de Microsoft 365** o de las **cuentas de OneDrive**:
+Esta ubicación también incluirá archivos que se cargan en comunidades de Yammer. Estos archivos se almacenan en el sitio de SharePoint conectado a grupos para la comunidad de Yammer.
 
-- Los archivos compartidos en los mensajes privados se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. 
-
-- Los archivos que se cargan en las comunidades se almacenan en el sitio de SharePoint conectado a grupos de la comunidad de Yammer.
-
-Es posible que una directiva de retención que se aplique a los sitios de SharePoint o a las cuentas de OneDrive pueda eliminar un archivo al que se haga referencia en un mensaje de Yammer antes de que dicho mensaje sean eliminado. En este caso, el archivo seguirá mostrándose en el mensaje de Yammer, pero cuando los usuarios lo seleccionen, obtendrán el error "Archivo no encontrado". Este comportamiento no es específico para las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint o OneDrive.
+Es posible que una directiva de retención que se aplique a los sitios de SharePoint pueda eliminar un archivo al que se haga referencia en un mensaje de Yammer antes de que dicho mensaje sean eliminado. En este caso, el archivo seguirá mostrándose en el mensaje de Yammer, pero cuando los usuarios lo seleccionen, obtendrán el error "Archivo no encontrado". Este comportamiento no es específico para las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint.
 
 ### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Directivas de retención para otras ubicaciones fuera de Teams y Yammer
 
