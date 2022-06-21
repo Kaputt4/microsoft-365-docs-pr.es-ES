@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188842"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185135"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
 
@@ -109,7 +109,7 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
    Cuando finalice la prueba:
 
   - Las directivas existentes permanecerán activadas a menos que las desactive.
-  - Si edita directivas DLP que incluyen las ubicaciones de Teams o Dispositivos después de que finalice la prueba, dichas ubicaciones se quitarán de la directiva.
+  - Ya no podrá editar ni agregar ubicaciones de Teams o Dispositivos en directivas nuevas o existentes.
 
 - **eDiscovery**
 
