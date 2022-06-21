@@ -1,5 +1,5 @@
 ---
-title: Permitir o bloquear direcciones URL mediante la lista de permitidos o bloqueados de inquilinos
+title: Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear direcciones URL en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72183614b8d74dad5e173b5db51ab35e4d2e6a49
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 69d9b4725e0a2c57dac8bb711655b9e0ff02e3e5
+ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159979"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185817"
 ---
-# <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de permitidos o bloqueados de inquilinos
+# <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -320,7 +320,9 @@ Permitir direcciones URL en la página **Envíos** de Microsoft 365 Defender.
 
 6. En la lista desplegable **Quitar después**, especifique cuánto tiempo desea que funcione la opción Permitir.
 
-7. Cuando haya terminado, haga clic en el botón **Enviar** .
+7. Agregue por qué va a agregar allow mediante la **nota opcional**. 
+
+8. Cuando haya terminado, haga clic en el botón **Enviar** .
 
     :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Enviar dirección URL para el análisis" lightbox="../../media/submit-url-for-analysis.png":::
 
