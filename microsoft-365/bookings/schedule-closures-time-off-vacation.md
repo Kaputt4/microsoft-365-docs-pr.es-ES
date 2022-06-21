@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Programe cierres de oficinas y permisos de empleados en el calendario de Bookings para que los empleados queden marcados como no disponibles para reservas durante horas especificadas.
-ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: bc119e3d45c625ec89cc4edccbeea34508b6b012
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637459"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185201"
 ---
-# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Programar Bookings cierres de negocios, tiempo libre y tiempo de vacaciones
+# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Programar cierres empresariales de Bookings, tiempo libre y tiempo de vacaciones
 
 En ocasiones, querrás cerrar tu negocio para eventos de vacaciones o de equipo, o tus empleados necesitarán tiempo libre cuando estén enfermos, de vacaciones o no estén disponibles por otros motivos. Puede programar el tiempo de espera del calendario de Microsoft Bookings y el empleado no estará disponible para las reservas durante el tiempo especificado. Una vez que la empresa vuelva a abrirse o los empleados vuelvan al trabajo, todos aparecerán en la página de reserva según sus horarios laborales establecidos.
 
@@ -28,13 +28,13 @@ Programe cierres empresariales o cierres de empleados.
 
 ## <a name="schedule-ad-hoc-business-closures"></a>Programar cierres empresariales ad hoc
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Reservas**.
 
-1. Elija el calendario. 
+1. Elija el calendario.
 
 1. En el panel de navegación superior, seleccione **Agregar tiempo de expiración**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings botón de vista de calendario y tiempo de expiración.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Vista del calendario de reservas y botón de tiempo de expiración.":::
 
 1. Rellene los detalles, incluidos los títulos, la fecha y hora de inicio y finalización, la ubicación y las notas adicionales.
 
@@ -42,7 +42,7 @@ Programe cierres empresariales o cierres de empleados.
 
 1. Seleccione todos los miembros del personal.
 
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 Cuando un cliente intenta programar el servicio un día en que la oficina está cerrada, verá un mensaje en la página de reserva.
 
@@ -50,7 +50,7 @@ Cuando un cliente intenta programar el servicio un día en que la oficina está 
 
 ## <a name="schedule-employee-time-off"></a>Programar el tiempo de descanso de los empleados
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Reservas**.
 
    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Iniciador de aplicaciones.":::
 
@@ -58,7 +58,7 @@ Cuando un cliente intenta programar el servicio un día en que la oficina está 
 
 1. En el panel de navegación superior, seleccione **Agregar tiempo de expiración**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings botón de vista de calendario y tiempo de expiración.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Vista del calendario de reservas y botón de tiempo de expiración.":::
 
 1. Rellene los detalles, incluidos un título, una fecha y hora de inicio y finalización, una ubicación y más notas. Si el empleado se va a ir durante un día completo o durante varios días, seleccione **Evento de todo el día**.
 

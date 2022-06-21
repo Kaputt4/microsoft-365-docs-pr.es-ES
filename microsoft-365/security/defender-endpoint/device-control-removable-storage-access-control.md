@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/06/2022
-ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/20/2022
+ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043641"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185467"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión control de dispositivo Storage Access Control extraíble
 
@@ -95,7 +95,7 @@ Puede usar las siguientes propiedades para crear la directiva de control de acce
 | **Tipo** | Define la acción para los grupos de almacenamiento extraíbles en IncludedIDList. <p>Cumplimiento: Permitir o denegar <p>Auditoría: AuditAllowed o AuditDenied<p> | Permitir<p>Denegar <p>AuditAllowed: define la notificación y el evento cuando se permite el acceso. <p>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Deny** .<p> Cuando haya tipos de conflicto para los mismos medios, el sistema aplicará el primero de la directiva. Un ejemplo de un tipo de conflicto es **Allow** y **Deny**. |
 | **Sid** | Sid de usuario local, grupo de sid de usuario o sid del objeto de AD, define si se debe aplicar esta directiva sobre un usuario o grupo de usuarios específico; una entrada puede tener un máximo de un Sid y una entrada sin ningún Sid significa aplicar la directiva sobre la máquina. |  |
 | **ComputerSid** | Sid de equipo local, grupo de sid de equipo o sid del objeto de AD, define si se debe aplicar esta directiva en un equipo o grupo de máquinas específico; una entrada puede tener un máximo de un ComputerSid y una entrada sin ningún ComputerSid significa aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a una máquina específica, agregue Sid y ComputerSid a la misma entrada. |  |
-| **Options** | Define si se va a mostrar la notificación o no |**Cuando se selecciona Permitir tipo**: <p>0: nada<p>4: deshabilite **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce Allow** y la opción AuditAllowed está configurada, el sistema no enviará el evento. <p>8: capturar información del archivo y tener una copia del archivo como evidencia para el acceso de escritura. <p>16: capturar información de archivo para el acceso de escritura. <p>**Cuando se selecciona Tipo denegado**: <p>0: nada<p>4: deshabilite **AuditDenied** para esta entrada. Incluso si **se produce Block** y la opción AuditDenied está configurada, el sistema no mostrará la notificación. <p>**Cuando se selecciona **Type AuditAllowed (AuditAllowed** de tipo):** <p>0: nada <p>1: nada <p>2: enviar evento<p> **Cuando se selecciona **Auditoría de tipos denegada****: <p>0: nada <p>1: mostrar notificación <p>2: enviar evento<p>3: mostrar notificación y enviar evento |
+| **Opciones** | Define si se va a mostrar la notificación o no |**Cuando se selecciona Permitir tipo**: <p>0: nada<p>4: deshabilite **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce Allow** y la opción AuditAllowed está configurada, el sistema no enviará el evento. <p>8: capturar información del archivo y tener una copia del archivo como evidencia para el acceso de escritura. <p>16: capturar información de archivo para el acceso de escritura. <p>**Cuando se selecciona Tipo denegado**: <p>0: nada<p>4: deshabilite **AuditDenied** para esta entrada. Incluso si **se produce Block** y la opción AuditDenied está configurada, el sistema no mostrará la notificación. <p>**Cuando se selecciona **Type AuditAllowed (AuditAllowed** de tipo):** <p>0: nada <p>1: nada <p>2: enviar evento<p> **Cuando se selecciona **Auditoría de tipos denegada****: <p>0: nada <p>1: mostrar notificación <p>2: enviar evento<p>3: mostrar notificación y enviar evento |
 |AccessMask|Define el acceso. | **Acceso a nivel de disco**: <p>1: Lectura <p>2: Escritura <p>4: Ejecutar <p>**Acceso a nivel del sistema de archivos**: <p>8: Lectura del sistema de archivos <p>16: Escritura del sistema de archivos <p>32: Ejecución del sistema de archivos <p><p>Puede tener varios accesos realizando una operación O binaria; por ejemplo, AccessMask para lectura y escritura y Ejecución será 7; AccessMask for Read and Write será 3.|
 
 ## <a name="device-control-removable-storage-access-control-scenarios"></a>Escenarios de Storage Access Control extraíbles de Control de dispositivos
@@ -290,7 +290,7 @@ Vaya a Microsoft Endpoint Manager centro de administración ()><https://endpoint
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Implementación y administración de directivas mediante Intune interfaz de usuario
 
-(*Próximamente!*) Esta funcionalidad estará disponible en el centro de administración de Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Vaya a Directiva de **creación de reducción de superficie expuesta a ataques** >  **de seguridad** > **de punto de** conexión. Elija **Plataforma: Windows 10 y versiones posteriores** con **Perfil: Control de dispositivo**.
+Esta funcionalidad está disponible en el centro de administración de Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Vaya a Directiva de **creación de reducción de superficie expuesta a ataques** >  **de seguridad** > **de punto de** conexión. Elija **Plataforma: Windows 10 y versiones posteriores** con **Perfil: Control de dispositivo**.
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Implementación y administración de Storage Access Control extraíbles mediante directiva de grupo
 
@@ -447,7 +447,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>¿Cómo generar GUID para el id. de grupo/PolicyRule Id/Entry Id?
 

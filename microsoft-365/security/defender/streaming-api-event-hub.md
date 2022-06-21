@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9cae28cc69d67bb18058e2c81cd8235ffce79997
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754408"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185377"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada al centro de eventos de Azure
 
@@ -111,6 +111,23 @@ Para obtener los tipos de datos de las propiedades de evento, siga estos pasos:
 - Este es un ejemplo del evento Device Info:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Consulta de ejemplo para la información del dispositivo" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## <a name="estimating-initial-event-hub-capacity"></a>Estimación de la capacidad inicial del centro de eventos
+La siguiente consulta de búsqueda avanzada puede ayudar a proporcionar una estimación aproximada del rendimiento del volumen de datos y la capacidad inicial del centro de eventos en función de los eventos por segundo y los MB/s estimados. Se recomienda ejecutar la consulta durante el horario comercial normal para capturar el rendimiento "real".
+ 
+```kusto 
+let bytes_ = 500;
+union withsource=MDTables*
+| where Timestamp > startofday(ago(6h))
+| summarize count() by bin(Timestamp, 1m), MDTables
+| extend EPS = count_ /60
+| summarize avg(EPS), estimatedMBPerSec = (avg(EPS) * bytes_ ) / (1024*1024) by MDTables
+| sort by toint(estimatedMBPerSec) desc
+```
+
+## <a name="monitoring-created-resources"></a>Supervisión de los recursos creados
+
+Puede supervisar los recursos creados por la API de streaming mediante **Azure Monitor**. Para más información, consulte [Exportación de datos del área de trabajo de Log Analytics en Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
 
 ## <a name="related-topics"></a>Temas relacionados
 
