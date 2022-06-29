@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 04/28/2022
-ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144869"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485987"
 ---
-# <a name="understand-the-proposal-workflow"></a>Descripción del flujo de trabajo de la propuesta
+# <a name="understand-the-microsoft-proposal-workflow"></a>Descripción del flujo de trabajo de propuestas de Microsoft
 
 Una propuesta es una oferta formal de Microsoft para que su organización compre productos y servicios de Microsoft. Trabaja directamente con un representante de Microsoft para determinar los productos, servicios y términos específicos de su propuesta.
 
@@ -59,7 +59,7 @@ El propietario de la cuenta de facturación y los roles de colaborador de la cue
 
 ### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Asignación de roles en el Centro de administración de Microsoft 365
 
-1. En el Centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">FacturaciónCuentas de facturación</a> > .
+1. En el Centro de administración de Microsoft 365, vaya a la página Cuentas de **facturación** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank"></a>
 2. En la página **Cuentas de facturación** , en la sección **Roles de cuenta de facturación** , seleccione **Asignar roles**.
 3. En el panel **Asignar roles** , busque el nombre de la persona a la que desea asignar un rol.
 4. Seleccione el cuadro del nombre de rol que desea que tenga la persona y, a continuación, seleccione **Asignar**.
@@ -76,7 +76,7 @@ Para obtener más información sobre los roles de cuenta de facturación, consul
 Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato, se convierte automáticamente en el propietario de la cuenta de facturación, siempre que:
 
 - ¿Es la persona nombrada en la propuesta **o**
-- Ya es un [administrador global Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) para su organización
+- Ya es [un administrador global de Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) para su organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
 
@@ -135,7 +135,7 @@ La propuesta contiene la siguiente información:
 |---|---|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | Fecha en la que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para informarle de que todavía le interesa la propuesta. |
-| Moneda | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
+| Divisa | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
 | Preparado para | El nombre de la cuenta de facturación, la dirección, la dirección de correo electrónico de contacto y el número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | Dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |

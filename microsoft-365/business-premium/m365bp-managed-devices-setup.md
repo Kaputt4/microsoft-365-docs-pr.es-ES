@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/18/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo configurar dispositivos administrados
-ms.openlocfilehash: 91d5a8cacb967499b20e069f5005f133c1736625
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 990b6a042e57a7964918e7e339bdfc3987c3c477
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101801"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490265"
 ---
 # <a name="set-up-managed-devices"></a>Configurar dispositivos administrados
 
@@ -52,21 +51,28 @@ Siga las instrucciones de inscripción de dispositivos específicas que se indic
 ### <a name="for-windows-enrollment"></a>Inscripción de Windows:
 
 1. Seleccione **Windows** > **Inscripción de Windows**. 
-1. En los métodos de inscripción enumerados, seleccione **Inscripción automática**.
+
+2. En los métodos de inscripción enumerados, seleccione **Inscripción automática**.
 
 ### <a name="for-ios-enrollment"></a>Para la inscripción de iOS:
 
 1. Seleccione **iOS** > **Inscripción iOS**.
-1. En la lista de directivas, seleccione una directiva para ver sus detalles.
-1. Seleccione **Propiedades** para administrar la directiva.
-1. Seleccione **Configuración** > **System Security** y configure los detalles de seguridad en Intune.
-1. Examine los perfiles de configuración. 
-1. Cree un perfil e insértela en los dispositivos de su organización, según sea necesario.
+
+2. En la lista de directivas, seleccione una directiva para ver sus detalles.
+
+3. Seleccione **Propiedades** para administrar la directiva.
+
+4. Seleccione **Configuración** > **System Security** y configure los detalles de seguridad en Intune.
+
+5. Examine los perfiles de configuración. 
+
+6. Cree un perfil e insértela en los dispositivos de su organización, según sea necesario.
 
 ### <a name="for-android-enrollment"></a>Inscripción de Android:
 
 1. Seleccione **Android** > **Inscripción de Android**.
-1. Elija **Managed Google Play** y conceda permiso a Microsoft para enviar información a Google.
+
+2. Elija **Managed Google Play** y conceda permiso a Microsoft para enviar información a Google.
 
 ## <a name="next-objective"></a>Siguiente objetivo
 

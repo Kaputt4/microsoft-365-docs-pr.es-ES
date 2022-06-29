@@ -1,7 +1,7 @@
 ---
-title: Explorador de API en Microsoft Defender para endpoint
+title: Explorador de API en Microsoft Defender para punto de conexión
 ms.reviewer: ''
-description: Usar el Explorador de API para crear y realizar consultas api, probar y enviar solicitudes para cualquier API disponible
+description: Use el Explorador de API para construir y realizar consultas de API, probar y enviar solicitudes para cualquier API disponible.
 keywords: api, explorer, send, request, get, post,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,57 +16,56 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e7d0e5927a85f2f3952221c294fe2387c268546
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5d3d81f878e201cd00e7286bd045caa5fb3e1625
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486803"
 ---
 # <a name="api-explorer"></a>Explorador de API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-El Explorador de API de Microsoft Defender para Endpoint es una herramienta que le ayuda a explorar varias API de Defender for Endpoint de forma interactiva.
+El explorador de API de Microsoft Defender para punto de conexión es una herramienta que le ayuda a explorar varias API de Defender para punto de conexión de forma interactiva.
 
-El Explorador de API facilita la construcción y la realización de consultas api, pruebas y envío de solicitudes para cualquier punto de conexión disponible de Defender para endpoint API. Use el Explorador de API para realizar acciones o buscar datos que aún no estén disponibles a través de la interfaz de usuario.
+El Explorador de API facilita la construcción y realización de consultas de API, pruebas y envío de solicitudes para cualquier punto de conexión de API de Defender para punto de conexión disponible. Use el Explorador de API para realizar acciones o buscar datos que aún no estén disponibles a través de la interfaz de usuario.
 
-La herramienta es útil durante el desarrollo de aplicaciones. Le permite realizar consultas api que respetan la configuración de acceso de usuario, lo que reduce la necesidad de generar tokens de acceso.
+La herramienta es útil durante el desarrollo de aplicaciones. Permite realizar consultas de API que respetan la configuración de acceso del usuario, lo que reduce la necesidad de generar tokens de acceso.
 
-También puede usar la herramienta para explorar la galería de consultas de ejemplo, copiar ejemplos de código de resultado y generar información de depuración.
+También puede usar la herramienta para explorar la galería de consultas de ejemplo, copiar ejemplos de código de resultados y generar información de depuración.
 
-Con el Explorador de API, puede:
+Con el Explorador de API, puede hacer lo siguiente:
 
-- Ejecutar solicitudes para cualquier método y ver respuestas en tiempo real
-- Examinar rápidamente los ejemplos de API y obtener información sobre los parámetros que admiten
-- Realizar llamadas API con facilidad; no es necesario autenticar más allá del inicio de sesión del portal de administración
+- Ejecute solicitudes para cualquier método y vea las respuestas en tiempo real.
+- Examine rápidamente los ejemplos de API y obtenga información sobre los parámetros que admiten.
+- Realice llamadas API con facilidad; no es necesario autenticarse más allá del inicio de sesión del portal de administración.
 
 ## <a name="access-api-explorer"></a>Explorador de API de Access
 
-En el menú de navegación izquierdo, seleccione **Partners & API** \> **Explorer**.
+En el menú de navegación izquierdo, seleccione **Partners &** **[API API Explorer (Explorador de API](https://security.microsoft.com/interoperability/api-explorer)**\> de API).
 
-## <a name="supported-apis"></a>API compatibles
+## <a name="supported-apis"></a>API admitidas
 
-El Explorador de API admite todas las API que ofrece Defender para Endpoint.
+El Explorador de API admite todas las API que ofrece Defender para punto de conexión.
 
-La lista de API admitidas está disponible en la [documentación de las API.](apis-intro.md)
+La lista de API admitidas está disponible en la [documentación de las API](apis-intro.md).
 
 ## <a name="get-started-with-the-api-explorer"></a>Introducción al Explorador de API
 
 1. En el panel izquierdo, hay una lista de solicitudes de ejemplo que puede usar.
-2. Siga los vínculos y haga clic **en Ejecutar consulta**.
+2. Siga los vínculos y haga clic en **Ejecutar consulta**.
 
 Algunos de los ejemplos pueden requerir la especificación de un parámetro en la dirección URL, por ejemplo, {machine- ID}.
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-**¿Necesito tener un token de API para usar el Explorador de API?** <br>
-Las credenciales para obtener acceso a una API no son necesarias. El Explorador de API usa el token del portal de administración de Defender para puntos de conexión siempre que realiza una solicitud.
+**¿Es necesario tener un token de API para usar el Explorador de API?** <br>
+No se necesitan credenciales para acceder a una API. El Explorador de API usa el token del portal de administración de Defender para punto de conexión cada vez que realiza una solicitud.
 
-La credencial de autenticación de usuario iniciada se usa para comprobar que el Explorador de API está autorizado para tener acceso a los datos en su nombre.
+La credencial de autenticación de usuario que ha iniciado sesión se usa para comprobar que el Explorador de API está autorizado para acceder a los datos en su nombre.
 
-Las solicitudes de API específicas son limitadas en función de los privilegios rbac. Por ejemplo, una solicitud a "Enviar indicador" está limitada al rol de administrador de seguridad.
+Las solicitudes de API específicas están limitadas en función de los privilegios de RBAC. Por ejemplo, una solicitud a "Indicador de envío" se limita al rol de administrador de seguridad.

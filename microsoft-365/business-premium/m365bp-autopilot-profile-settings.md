@@ -1,8 +1,8 @@
 ---
-title: Información sobre la configuración de los perfiles de AutoPilot
-ms.author: efrene
-author: efrene
-manager: scotv
+title: Información sobre la configuración de los perfiles de Autopilot
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1.keywords:
@@ -28,24 +28,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Los perfiles de AutoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones predeterminadas y opcionales, como omitir la instalación de Cortana.
-ms.openlocfilehash: b4528e52c555f17c19f6548cbd9d7cabf4d9cbf5
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Los perfiles de Autopilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones predeterminadas y opcionales, como omitir la instalación de Cortana.
+ms.openlocfilehash: 387346c68ad9ff85c3f97e4d8ca8b0ccdb28dcbd
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320329"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490253"
 ---
-# <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
+# <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de Autopilot
 
 ## <a name="autopilot-profile-settings"></a>Configuración de perfiles de Autopilot
 
-> [!NOTE]
-> Microsoft Defender para empresas se está implementando para los clientes de Microsoft 365 Empresa Premium a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
-
-Puede usar perfiles de AutoPilot para controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen la siguiente configuración.
+Puede usar los perfiles de Autopilot para controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen la siguiente configuración.
   
-## <a name="autopilot-default-features-required-that-are-set-automatically"></a>Características predeterminadas de AutoPilot (necesarias) que se establecen automáticamente
+## <a name="autopilot-default-features-required-that-are-set-automatically"></a>Características predeterminadas de Autopilot (necesarias) que se establecen automáticamente
   
 | Configuración | Descripción |
 |:-----|:-----|

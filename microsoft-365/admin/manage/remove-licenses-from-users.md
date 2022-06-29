@@ -22,15 +22,15 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: El método que use para anular la asignación de licencias de productos depende de si anula la asignación de licencias de usuarios específicos o de un producto específico.
-ms.date: 04/22/2022
-ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/23/2022
+ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043250"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486184"
 ---
-# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulación de la asignación de licencias de Microsoft 365 de usuarios
+# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulación de la asignación de licencias de Microsoft 365 de los usuarios
 
 Puede anular la asignación de licencias de los usuarios en la página **Usuarios activos** o en la página **Licencias** . El método que use dependerá de si desea anular la asignación de licencias de productos de usuarios específicos o de anular la asignación de licencias de usuarios de un producto específico.
 
@@ -48,7 +48,9 @@ Puede anular la asignación de licencias de los usuarios en la página **Usuario
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Uso de la página Licencias para anular la asignación de licencias
 
-Al usar la página **Licencias** para anular la asignación de licencias, anula la asignación de licencias para un producto específico para un máximo de 20 usuarios.
+La página **Licencias** le permite asignar o anular la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos que posee, el número de licencias disponibles para cada producto y el número de licencias asignadas de las licencias totales disponibles. El número de licencias es un total agregado de licencias para todas las suscripciones con el mismo nombre de producto.
+
+Por ejemplo, es posible que tenga una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra que tenga 8 licencias para el mismo producto. La página **Licencias** muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas las suscripciones. Esto es diferente de lo que ve en la página **Sus productos** , que muestra una fila para cada suscripción que posee, incluso si son para el mismo producto.
 
 ::: moniker range="o365-worldwide"
 
@@ -62,13 +64,13 @@ Al usar la página **Licencias** para anular la asignación de licencias, anula 
 
 ::: moniker-end
 
-2. Seleccione el producto para el que desea anular la asignación de licencias.
+1. Seleccione un producto.
 
-3. Seleccione los usuarios para los que desea anular la asignación de licencias.
+2. Active las casillas de los usuarios para los que desea anular la asignación de licencias.
 
-4. Seleccione **Anular la asignación de licencias**.
+3. Seleccione **Anular la asignación de licencias**.
 
-5. En el cuadro **Unassign licenses (Anular la asignación de licencias** ), seleccione **Unassign (Quitar la asignación**).
+4. En el cuadro **Unassign licenses (Anular la asignación de licencias** ), seleccione **Unassign (Quitar la asignación**).
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Uso de la página Usuarios activos para anular la asignación de licencias
 
@@ -119,11 +121,11 @@ Cuando se usa la página **Usuarios activos** para anular la asignación de lice
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué ocurre con los datos de un usuario al quitar su licencia?
 
 - Cuando se quita una licencia de un usuario, Exchange Online datos asociados a esa cuenta se conservan durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar. Sin embargo, está vinculado a la directiva de retención y el contenido que coincide con las etiquetas de retención se conserva para la detección.
-- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine de la Centro de administración de Microsoft 365 o se quite mediante la sincronización de Active Directory. Para obtener más información, consulte [OneDrive retención y eliminación](/onedrive/retention-and-deletion).
-- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos como Búsqueda de contenido o eDiscovery (Premium). Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en [Búsqueda de contenido en Microsoft 365](../../compliance/content-search.md).
-- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante [buzones inactivos](../../compliance/inactive-mailboxes-in-office-365.md). Para obtener más información, consulte [Creación y administración de buzones inactivos en Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Para obtener información sobre cómo bloquear el acceso de un usuario a Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
-- Si quita la licencia de un usuario y sigue teniendo instaladas Office aplicaciones, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones Office.
+- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine de la Centro de administración de Microsoft 365 o se quite mediante la sincronización de Active Directory. Para obtener más información, vea [Retención y eliminación de OneDrive](/onedrive/retention-and-deletion).
+- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos, como Búsqueda de contenido o eDiscovery (Premium). Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en [Búsqueda de contenido en Microsoft 365](../../compliance/content-search.md).
+- Si tiene una suscripción enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante [buzones inactivos](../../compliance/inactive-mailboxes-in-office-365.md). Para obtener más información, consulte [Creación y administración de buzones inactivos en Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
+- Si quita la licencia de un usuario y sigue teniendo instaladas aplicaciones de Office, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones de Office.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

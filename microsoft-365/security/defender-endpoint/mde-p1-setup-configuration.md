@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/14/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -16,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 774139aa6ccbf0562d5f6a9bf14eb89550e865a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e94a0ee04d45e92d5891c73ba3a70ac2f05cd482
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665962"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485965"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configuración y configuración de Microsoft Defender para punto de conexión Plan 1
 
@@ -40,11 +39,11 @@ El proceso de configuración y configuración general de Defender para el plan 1
 | Número  | Paso  | Descripción  |
 |:---------:|:---------|:---------|
 | 1 | [Revisar los requisitos](#review-the-requirements)  | Enumera los requisitos de licencias, explorador, sistema operativo y centro de datos   |
-| 2 | [Planear la implementación](#plan-your-deployment) | Enumera varios métodos de implementación que se deben tener en cuenta e incluye vínculos a más recursos para ayudarle a decidir qué método usar.  |
-| 3 | [Configuración del entorno de inquilino](#set-up-your-tenant-environment) | Enumera las tareas para configurar el entorno de inquilino |
-| 4 | [Asignación de roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad. <br/><br/>**SUGERENCIA**: En cuanto se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal de Microsoft 365 Defender. Para más información, consulte [Introducción](mde-plan1-getting-started.md). |
-| 5 | [Incorporación a Defender para punto de conexión](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporarse al plan 1 de Defender para punto de conexión e incluye vínculos a información más detallada para cada método.  |
-| 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar los valores de protección de próxima generación en Microsoft Endpoint Manager  |
+| 2  | [Planear la implementación](#plan-your-deployment) | Enumera varios métodos de implementación que se deben tener en cuenta e incluye vínculos a más recursos para ayudarle a decidir qué método usar.  |
+| 3  | [Configuración del entorno de inquilino](#set-up-your-tenant-environment) | Enumera las tareas para configurar el entorno de inquilino |
+| 4  | [Asignación de roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad. <br/><br/>**SUGERENCIA**: En cuanto se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal de Microsoft 365 Defender. Para más información, consulte [Introducción](mde-plan1-getting-started.md). |
+| 5  | [Incorporación a Defender para punto de conexión](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporarse al plan 1 de Defender para punto de conexión e incluye vínculos a información más detallada para cada método.  |
+| 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar las opciones de protección de última generación en Microsoft Endpoint Manager  |
 | 7  | [Configuración de las funcionalidades de reducción de la superficie expuesta a ataques](#configure-your-attack-surface-reduction-capabilities)        | Enumera los tipos de capacidades de reducción de superficie expuesta a ataques que puede configurar e incluye procedimientos con vínculos a más recursos.  |
  
 ## <a name="review-the-requirements"></a>Revisar los requisitos
@@ -53,9 +52,9 @@ En la tabla siguiente se enumeran los requisitos básicos del plan 1 de Defender
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Plan 1 de Defender para punto de conexión |
+| Requisitos de licencias | Plan 1 de Defender para punto de conexión (independiente o como parte de Microsoft 365 E3 o A3) |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
-| Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
+| Sistemas operativos | Windows 11, o Windows 10, versión 1709 o posterior <br/>macOS (se admiten las tres versiones más recientes) <br/>iOS <br/>Sistema operativo Android <br/><br/>Tenga en cuenta que la versión independiente del plan 1 de Defender para punto de conexión no incluye licencias de servidor. Para incorporar servidores, necesitará El plan 1 o el plan 2 de Defender para servidores como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction). |
 | Datacenter | Una de las siguientes ubicaciones del centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
 
 
@@ -92,7 +91,7 @@ Estas tareas se incluyen en la fase de configuración de Defender para punto de 
 
 ## <a name="assign-roles-and-permissions"></a>Asignación de roles y permisos
 
-Para acceder al portal de Microsoft 365 Defender, configure la configuración de Defender para punto de conexión o realice tareas, como realizar acciones de respuesta en las amenazas detectadas, se deben asignar los permisos adecuados. Defender para punto de conexión usa [roles integrados dentro de Azure Active Directory](/azure/active-directory/roles/permissions-reference). 
+Para acceder al portal de Microsoft 365 Defender, configure la configuración de Defender para punto de conexión o realice tareas, como realizar acciones de respuesta en las amenazas detectadas, se deben asignar los permisos adecuados. Defender para punto de conexión usa [roles integrados en Azure Active Directory](/azure/active-directory/roles/permissions-reference). 
 
 Microsoft recomienda asignar a los usuarios solo el nivel de permiso que necesitan para realizar sus tareas. Puede asignar permisos mediante la administración básica de permisos o mediante el [control de acceso basado en rol](rbac.md) (RBAC). 
 
@@ -102,16 +101,16 @@ Microsoft recomienda asignar a los usuarios solo el nivel de permiso que necesit
 
 En la tabla siguiente se describen los roles clave que se deben tener en cuenta para Defender para punto de conexión en su organización: <br/><br/>
 
-| Función | Descripción |
+| Role | Descripción |
 |:---|:---|
-| Administradores globales (también conocidos como administradores globales) <br/><br/> *Como procedimiento recomendado, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que registró su empresa para Microsoft 365 o para Microsoft Defender para punto de conexión Plan 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos los portales de Microsoft 365, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager centro de administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Administradores globales (también conocidos como administradores globales) <br/><br/> *Como procedimiento recomendado, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que registró su empresa para Microsoft 365 o para Microsoft Defender para punto de conexión Plan 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos los portales de Microsoft 365, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Administradores de seguridad (también conocidos como administradores de seguridad) | Los administradores de seguridad pueden realizar tareas de operador de seguridad, además de las siguientes tareas: <br/>- Supervisión de directivas relacionadas con la seguridad <br/>- Administración de amenazas y alertas de seguridad <br/>- Visualización de informes |
 | Operador de seguridad | Los operadores de seguridad pueden realizar tareas de lector de seguridad, además de las siguientes tareas: <br/>- Visualización de información sobre amenazas detectadas <br/>- Investigar y responder a las amenazas detectadas  |
 | Lector de seguridad | Los lectores de seguridad pueden realizar las siguientes tareas: <br/>- Visualización de directivas relacionadas con la seguridad en los servicios de Microsoft 365 <br/>- Visualización de amenazas y alertas de seguridad <br/>- Visualización de informes  |
 
 
 > [!TIP]
-> Para obtener más información sobre los roles de Azure Active Directory, consulte [Asignación de roles de administrador y no administrador a usuarios con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Y, más información sobre los roles de Defender para punto de conexión, consulte [Control de acceso basado en](prepare-deployment.md#role-based-access-control) rol.
+> Para más información sobre los roles en Azure Active Directory, consulte [Asignación de roles de administrador y no administrador a usuarios con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Y, más información sobre los roles de Defender para punto de conexión, consulte [Control de acceso basado en](prepare-deployment.md#role-based-access-control) rol.
 
 ## <a name="onboard-to-defender-for-endpoint"></a>Incorporación a Defender para punto de conexión
 
@@ -120,7 +119,7 @@ Cuando esté listo para incorporar los puntos de conexión de su organización, 
 |Sistema operativo de punto de conexión | Métodos de incorporación|
 |---|---|
 | Windows 10 | [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md)  |
-| macOS | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móvil](mac-install-with-other-mdm.md) |
+| macOS | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | iOS |[Basado en aplicaciones](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
 
@@ -128,19 +127,19 @@ A continuación, continúe con la configuración de la protección de última ge
 
 ## <a name="configure-next-generation-protection"></a>Configurar protección de última generación
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar los dispositivos y la configuración de seguridad de la organización, como se muestra en la siguiente imagen:
+Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar los dispositivos y la configuración de seguridad de su organización, como se muestra en la siguiente imagen:
  
 :::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Directivas de seguridad de puntos de conexión en el portal de Micorosft Endpoint Manager" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
-Para configurar la protección de próxima generación en Microsoft Endpoint Manager, siga estos pasos:
+Para configurar la protección de última generación en Microsoft Endpoint Manager, siga estos pasos:
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Seleccione **Seguridad** >  del **punto de conexiónAntivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente, cree una nueva).
+2. Seleccione **Antivirus de seguridad** >  de puntos de conexión y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente, cree una nueva).
 
 3. Establezca o cambie la configuración del antivirus. ¿Necesita ayuda? Consulte los siguientes recursos: <br/>
 
-   - [Configuración para la directiva de Windows 10 Antivirus de Microsoft Defender en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - [Configuración de Windows 10 directiva del Antivirus de Microsoft Defender en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configuración de Defender para punto de conexión en características de iOS](ios-configure-features.md)
 
 4. Cuando haya terminado de especificar la configuración, elija **Revisar y guardar**.
@@ -165,9 +164,9 @@ Las reglas de reducción de superficie expuesta a ataques están disponibles en 
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Reglas de reducción de superficie expuesta a ataques en el portal de Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Elija **Seguridad de** >  los puntos de **conexiónRed de superficie de** >  ataque **+ Crear directiva**.
+2. Elija **Seguridad de punto de conexión** > **Reducción de la superficie expuesta a ataques** > **+ Crear directiva**.
 
 3. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
 
@@ -201,7 +200,7 @@ Se recomienda usar Microsoft Endpoint Manager para configurar el acceso controla
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Directivas de ASR en el portal de Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
 2. Seleccione **Seguridad del punto de conexión** y, a continuación, seleccione **Reducción de superficie expuesta a ataques**.
 
@@ -231,9 +230,9 @@ Se recomienda usar Microsoft Endpoint Manager para configurar el acceso controla
 
 Puede configurar Defender para punto de conexión para bloquear o permitir dispositivos y archivos extraíbles en dispositivos extraíbles. Se recomienda usar Microsoft Endpoint Manager para configurar los valores de control del dispositivo.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="plantillas administrativas de Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-admintemplates.png":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Plantillas administrativas de Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
@@ -243,9 +242,9 @@ Puede configurar Defender para punto de conexión para bloquear o permitir dispo
 
 4. En la pestaña **Aspectos básicos** , asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
-5. En la pestaña **Configuración**, seleccione **Todos los Configuración**. A continuación, en el cuadro de búsqueda, escriba `Removable` para ver todas las configuraciones que pertenecen a los dispositivos extraíbles.
+5. En la pestaña **Configuración** , seleccione **Todas las configuraciones**. A continuación, en el cuadro de búsqueda, escriba `Removable` para ver todas las configuraciones que pertenecen a los dispositivos extraíbles.
 
-6. Seleccione un elemento de la lista, como **Todas las clases de Storage extraíbles: Denegar todo el acceso**, para abrir su panel flotante. El control flotante de cada configuración explica lo que ocurre cuando está habilitado, deshabilitado o no configurado. Seleccione una configuración y, a continuación, elija **Aceptar**. 
+6. Seleccione un elemento de la lista, como **Todas las clases de almacenamiento extraíble: Denegar todo el acceso**, para abrir su panel flotante. El control flotante de cada configuración explica lo que ocurre cuando está habilitado, deshabilitado o no configurado. Seleccione una configuración y, a continuación, elija **Aceptar**. 
 
 7. Repita el paso 6 para cada configuración que quiera configurar. A continuación, elija **Siguiente**.
 
@@ -266,7 +265,7 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 :::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Perfil de Endpoint Protection en el portal de Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
@@ -276,7 +275,7 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 4. En la pestaña **Aspectos básicos** , asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
-5. En la pestaña **Configuración**, expanda **Protección contra vulnerabilidades de seguridad de Microsoft Defender** y, a continuación, expanda **Filtrado de red**.
+5. En la pestaña **Configuración** , expanda **Protección contra vulnerabilidades de seguridad de Microsoft Defender** y, a continuación, expanda **Filtrado de red**.
 
    Establezca **Protección de red** en **Habilitar**. (También puede elegir **Auditar** para ver cómo funcionará la protección de red en el entorno al principio).
 
@@ -301,9 +300,9 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 #### <a name="configure-web-threat-protection"></a>Configuración de la protección contra amenazas web
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
  
-2. Elija Seguridad  > **de los puntos de conexiónRed** de **superficie** y, a continuación, elija **+ Crear directiva**.
+2. Elija **Endpoint security** > **Attack surface reduction (Reducción de la superficie expuesta a ataques**) y, a continuación, elija **+ Crear directiva**.
 
 3. Seleccione una plataforma, como **Windows 10 y versiones posteriores**, seleccione el perfil **de protección web** y, a continuación, elija **Crear**. 
 
@@ -311,7 +310,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la pestaña **Configuración** , expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, elija **Siguiente**. <br/><br/>
 
-   | Valor | Recomendación |
+   | Setting | Recomendación |
    |:---|:---|
    | **Habilitación de la protección de red** | Establézcalo **en Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Establézcalo en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |
@@ -333,7 +332,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) e inicie sesión.
 
-2. Elija **Configuración** >  **Endpoints**.
+2. Elija Puntos **de conexión de** **configuración** > .
 
 3. En **Reglas**, elija **Filtrado de contenido web** y, a continuación, elija **+ Agregar directiva**.
 
@@ -356,11 +355,11 @@ El firewall de red ayuda a reducir el riesgo de amenazas de seguridad de red. El
 
 Para configurar los valores básicos del firewall, siga estos pasos:
 
-1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Elija Seguridad  > **del punto de** **conexiónFirewall** y, a continuación, elija **+ Crear directiva**.
+2. Elija **Firewall** de **seguridad** >  de punto de conexión y, a continuación, **elija + Crear directiva**.
 
-3. Seleccione una plataforma, como **Windows 10 y versiones posteriores**, seleccione el perfil **firewall de Microsoft Defender** y, a continuación, elija **Crear**. 
+3. Seleccione una plataforma, como **Windows 10 y versiones posteriores**, seleccione el perfil **de Firewall de Microsoft Defender** y, a continuación, elija **Crear**. 
 
 4. En la pestaña **Aspectos básicos** , especifique un nombre y una descripción y, a continuación, elija **Siguiente**.
 
@@ -368,9 +367,9 @@ Para configurar los valores básicos del firewall, siga estos pasos:
 
 6. Establezca cada una de las opciones siguientes en **Sí**:
 
-   - **Activar firewall de Microsoft Defender para redes de dominio** 
-   - **Activar firewall de Microsoft Defender para redes privadas**
-   - **Activar firewall de Microsoft Defender para redes públicas**
+   - **Activar Firewall de Microsoft Defender para redes de dominio** 
+   - **Activar Firewall de Microsoft Defender para redes privadas**
+   - **Activar Firewall de Microsoft Defender para redes públicas**
    
    Revise la lista de configuraciones en cada una de las redes de dominio, redes privadas y redes públicas. Puede dejarlos establecidos en **No configurados** o cambiarlos para que se adapten a las necesidades de su organización.
 
@@ -385,11 +384,11 @@ Para configurar los valores básicos del firewall, siga estos pasos:
 9. En la pestaña **Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**.
 
 > [!TIP]
-> La configuración del firewall se detalla y puede parecer compleja. Consulte [Procedimientos recomendados para configurar Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+> La configuración del firewall se detalla y puede parecer compleja. Consulte [Procedimientos recomendados para configurar Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ### <a name="application-control"></a>Control de la aplicación
 
-Windows Defender Control de aplicaciones (WDAC) ayuda a proteger los puntos de conexión de Windows al permitir que solo se ejecuten aplicaciones y procesos de confianza. La mayoría de las organizaciones usaban una implementación por fases de WDAC. Es decir, la mayoría de las organizaciones no implementa WDAC en todos los puntos de conexión de Windows al principio. De hecho, dependiendo de si los puntos de conexión de Windows de su organización están totalmente administrados, administrados ligeramente o "Traiga su propio dispositivo", puede implementar WDAC en todos o algunos puntos de conexión.
+Windows Defender Control de aplicaciones (WDAC) ayuda a proteger los puntos de conexión de Windows al permitir que solo se ejecuten aplicaciones y procesos de confianza. La mayoría de las organizaciones usaban una implementación por fases de WDAC. Es decir, la mayoría de las organizaciones no implementa WDAC en todos los puntos de conexión de Windows al principio. De hecho, dependiendo de si los puntos de conexión de Windows de su organización están totalmente administrados, ligeramente administrados o "Traiga su propio dispositivo", es posible que implemente WDAC en todos o algunos puntos de conexión.
 
 Para ayudar a planear la implementación de WDAC, consulte los siguientes recursos:
 
@@ -403,4 +402,4 @@ Para ayudar a planear la implementación de WDAC, consulte los siguientes recurs
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para punto de conexión. 
 
-- [Comenzar con el plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)
+- [Introducción al plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)

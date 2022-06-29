@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99c688587e7e09e2726457256f14403e2db73d1e
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772084"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486937"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -134,7 +134,7 @@ Como práctica recomendada, asegúrese de que el registro TXT de SPF tenga en cu
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Paso 3: Configurar DKIM para el dominio personalizado
 
-Cuando haya configurado SPF, deberá configurar DKIM. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Si no configura DKIM pero permite a Microsoft 365 usar la configuración predeterminada de DKIM en el dominio, DMARC puede dar errores. Este error puede producirse porque la configuración predeterminada de DKIM usa el dominio de *onmicrosoft.com* original como la *dirección 5322.From*, no el dominio *personalizado*. Esto provoca una discrepancia entre las direcciones *5321.MailFrom* y *5322.From* en todos los correos electrónicos enviados desde su dominio.
+Cuando haya configurado SPF, deberá configurar DKIM. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Si no configura DKIM pero permite a Microsoft 365 usar la configuración predeterminada de DKIM en el dominio, DMARC puede dar errores. Este error puede producirse porque la configuración predeterminada de DKIM usa el dominio de *onmicrosoft.com* original como la dirección *5321.MailFrom*, no el dominio *personalizado*. Esto provoca una discrepancia entre las direcciones *5321.MailFrom* y *5322.From* en todos los correos electrónicos enviados desde su dominio.
 
 Si hay remitentes externos que envían correo en su nombre y el correo que envían tiene direcciones 5321.MailFrom y 5322.From que no coinciden, se producirá un error de DMARC para ese correo electrónico. Para evitar esto, tendrá que configurar DKIM para el dominio específicamente con ese remitente externo. Esto permite a Microsoft 365 autenticar el correo electrónico desde el servicio externo. Sin embargo, también permite a otros usuarios, por ejemplo, Yahoo, Gmail y Comcast, comprobar la validez del correo electrónico enviado por terceros como si lo hubiera enviado usted. Esto es beneficioso porque permite a los clientes generar relaciones de confianza con el dominio independientemente del sitio donde se encuentre su buzón y, al mismo tiempo, Microsoft 365 no marcará un mensaje como correo no deseado por suplantación de identidad, ya que pasa las comprobaciones de autenticación para el dominio.
 

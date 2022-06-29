@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Descubra la cantidad de impuestos que se le cobrarán por la Microsoft 365 para la suscripción empresarial en diferentes regiones.
+description: Descubra cuánto impuestos se le cobrarán por su suscripción de Microsoft 365 para empresas en diferentes regiones.
 ms.date: 03/17/2021
-ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1c676167f68c37b51c2ccdfc8ac08561e52cbea9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101639"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486545"
 ---
-# <a name="tax-information"></a>Información de impuestos
+# <a name="microsoft-365-tax-information"></a>Información de impuestos de Microsoft 365
 
-Al comprar Microsoft 365 productos y servicios, los impuestos que paga se determinan por una de las dos cosas: su dirección de negocio o su dirección de envío, si es diferente. Si su organización está en el Estados Unidos, debe proporcionar un número de identificación federal de empleador (FEIN).
+Al comprar productos y servicios de Microsoft 365, los impuestos que paga se determinan por una de las dos cosas: su dirección de negocio o su dirección de envío, si es diferente. Si su organización está en el Estados Unidos, debe proporcionar un número de identificación federal de empleador (FEIN).
 
 Las empresas de los siguientes países pueden proporcionar su número de IVA o su equivalente local:
 
@@ -102,7 +102,7 @@ Las empresas de los siguientes países pueden proporcionar su número de IVA o s
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
 
-Al comprar Microsoft 365 servicios en la región de EMEA, esta compra podría estar sujeta a Value-Added Impuesto (IVA).
+Al comprar servicios de Microsoft 365 en la región EMEA, esta compra podría estar sujeta a Value-Added Impuestos (IVA).
   
 - Si se encuentra en un Estado miembro de la Unión Europea, Armenia, Bielorrusia, Noruega, Turquía o Emiratos Árabes Unidos, y no proporciona su identificador de IVA local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual, en función del país de facturación en el que esté establecida su cuenta.
 
@@ -134,7 +134,7 @@ Si se le factura desde una de las siguientes ubicaciones, se aplica el impuesto 
 
 En el Estados Unidos, Canadá, México, Chile y Colombia, se aplican diversas tasas fiscales en función de la naturaleza del producto y su ubicación.
   
-Si su facturación la realiza Microsoft Corporation ([consulte su factura](view-your-bill-or-invoice.md) y se registró para Microsoft 365 fuera de la Estados Unidos, Canadá, Puerto Rico, Chile y Colombia, por lo general no se cobrarán impuestos.
+Si su facturación la realiza Microsoft Corporation ([consulte su factura](view-your-bill-or-invoice.md) y se registró en Microsoft 365 fuera de la Estados Unidos, Canadá, Puerto Rico, Chile y Colombia, por lo general no se cobra el impuesto.
 
 ## <a name="add-your-vat-id"></a>Agregar el identificador de IVA
 

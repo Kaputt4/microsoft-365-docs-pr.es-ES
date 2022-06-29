@@ -1,9 +1,9 @@
 ---
 title: Amenazas detectadas por Antivirus de Microsoft Defender
 f1.keywords: CSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo Antivirus de Microsoft Defender protege los dispositivos Windows frente a amenazas de software, como virus, malware y spyware.
-ms.openlocfilehash: fdaab824ecd64742bb8b912dfde35fa15387cd0a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 4f8c023bee4605e5ed0da9268688c25b551174dd
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893506"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486850"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Introducción a la protección contra amenazas por el Antivirus de Microsoft Defender
 
@@ -40,7 +40,7 @@ Para más información sobre el malware y el Antivirus de Microsoft Defender, co
 
 - [Descripción del malware & otras amenazas](/windows/security/threat-protection/intelligence/understanding-malware)
 - [Cómo Microsoft identifica el malware y las aplicaciones potencialmente no deseadas](/windows/security/threat-protection/intelligence/criteria)
-- [Protección de última generación en Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Protección de próxima generación en Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
 ## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>¿Qué ocurre cuando se usa una solución antivirus que no es de Microsoft? 
 
@@ -63,10 +63,10 @@ Si desinstala la solución antivirus que no es de Microsoft, Antivirus de Micros
 Cuando antivirus de Microsoft Defender detecta amenazas, sucede lo siguiente:
 
 - Los usuarios reciben [notificaciones en Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
-- Las detecciones se muestran en la [aplicación Seguridad de Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) en la página **Historial de protección** .  
-- Si ha protegido los [dispositivos Windows 10](../admin/setup/secure-win-10-pcs.md) y [los ha inscrito en Intune](/mem/intune/enrollment/windows-enrollment-methods) y su organización tiene 800 o menos dispositivos inscritos, verá detecciones de amenazas e información en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> en la página **Amenazas y antivirus** , a la que puede acceder desde la tarjeta **Antivirus de Microsoft Defender** en la página **Inicio** (o desde el panel de navegación seleccionando Amenazas de **estado** > **& antivirus**).
+- Las detecciones se muestran en la [aplicación Seguridad de Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) de la página **Historial de protección**.  
+- Si ha protegido los [dispositivos Windows 10](../admin/setup/secure-win-10-pcs.md) y [los ha inscrito en Intune](/mem/intune/enrollment/windows-enrollment-methods) y su organización tiene 800 o menos dispositivos inscritos, verá detecciones e información sobre amenazas en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> de la página **Amenazas y antivirus**, a la que puede acceder desde el **Tarjeta Antivirus de Microsoft Defender** en la página **Inicio** (o en el panel de navegación **seleccionando** Amenazas de  >  mantenimiento **& antivirus**).
 
-    Si su organización tiene más de 800 dispositivos inscritos en Intune, se le pedirá que vea las detecciones de amenazas y la información de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) en lugar de desde la página **Amenazas y antivirus** .
+    Si su organización tiene más de 800 dispositivos inscritos en Intune, se le pedirá que vea las detecciones de amenazas y la información de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) en lugar de desde la página **Amenazas y antivirus**.
  
     > [!NOTE]
     > La tarjeta **Antivirus de Microsoft Defender** y **la página Amenazas y antivirus** se están implementando por fases, por lo que es posible que no tenga acceso inmediato a ellas.
@@ -75,7 +75,7 @@ En la mayoría de los casos, los usuarios no necesitan realizar ninguna acción 
 
 Si hay una acción que un usuario necesita realizar, como aprobar la eliminación de un archivo malintencionado, lo verá en la notificación que recibe. Para obtener más información sobre las acciones que el Antivirus de Microsoft Defender realiza en nombre de un usuario o las acciones que los usuarios pueden necesitar realizar, consulte [Historial de protección](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Para obtener información sobre cómo administrar las detecciones de amenazas como profesional o administrador de TI, consulte [Revisión de amenazas detectadas y toma medidas](m365bp-review-threats-take-action.md).
 
-Para obtener más información sobre las diferentes amenazas, visite el <a href="https://www.microsoft.com/wdsi/threats" target="_blank">sitio amenazas de Inteligencia de seguridad de Microsoft</a>, donde puede realizar las siguientes acciones: 
+Para obtener más información sobre las diferentes amenazas, visite el <a href="https://www.microsoft.com/wdsi/threats" target="_blank">sitio Inteligencia de seguridad de Microsoft Amenazas</a>, donde puede realizar las siguientes acciones: 
 
 - Vea la información actual sobre las principales amenazas.
 - Vea las amenazas más recientes para una región específica.
@@ -86,7 +86,7 @@ Para obtener más información sobre las diferentes amenazas, visite el <a href=
 [Protección de dispositivos Windows](/misc/m365bp-secure-windows-devices) (artículo)\
 [Evaluar antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (artículo)\
 [Cómo activar la protección antivirus en tiempo real y entregada en la nube](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (artículo)\
-[Cómo activar y usar el Antivirus de Microsoft Defender desde la aplicación seguridad de Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artículo)\
-[Cómo activar el Antivirus de Microsoft Defender mediante la directiva de grupo](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artículo)\
+[Cómo activar y usar el Antivirus de Microsoft Defender desde la aplicación Seguridad de Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artículo)\
+[Cómo activar el Antivirus de Microsoft Defender mediante directiva de grupo](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artículo)\
 [Actualización de las definiciones de antivirus](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artículo)\
 [Cómo enviar malware y no malware a Microsoft para su análisis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artículo)

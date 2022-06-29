@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 364e2ab3e858bb7c2e06701cc9f3fb8374862003
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139459"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486500"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
@@ -46,7 +46,7 @@ Microsoft 365 Empresa Premium incluye [directivas de seguridad preestablecidas]
 
 Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o comprar uno durante el proceso de registro.
 
-> [!Note]
+> [!NOTE]
 > Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a Agregar usuarios y asignar licencias. Vaya al centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. En el menú del centro de administración, elija **Configuración** para iniciar el asistente.

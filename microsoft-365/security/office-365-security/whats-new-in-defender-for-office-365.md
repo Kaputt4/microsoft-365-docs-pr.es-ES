@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2613825e0925e1899268b4682f66b7facc9600d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015013"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486915"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -49,7 +49,19 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ## <a name="june-2022"></a>Junio de 2022
 
-- [Simplificación de la experiencia de cuarentena, parte dos, en Microsoft 365 Defender para office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): simplificación de la experiencia de cuarentena, parte dos, con Microsoft Defender para Office 365.
+- [La suplantación permite usar el envío de administrador](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): cree entradas de remitente suplantadas permitidas mediante la lista de permitidos o bloqueados de inquilinos.
+
+- [La suplantación permite usar el envío de administrador](allow-block-email-spoof.md#create-impersonated-sender-entries): Agregar permite remitentes suplantados mediante la página Envíos de Microsoft 365 Defender.
+
+- [Ver el envío de administrador convertido desde el envío del usuario](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): configure el buzón personalizado para interceptar los mensajes notificados por el usuario sin enviar los mensajes a Microsoft para su análisis.
+
+- [Ver alerta asociada para envíos de usuarios y administradores](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): vea la alerta correspondiente para cada mensaje de phish notificado por el usuario y el envío de correo electrónico de administrador. 
+
+- [Protección de suplantación configurable para usuarios y dominios personalizados y un mayor ámbito dentro de directivas predefinidas](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
+  - (Elija) Aplique directivas estrictas o estándar preestablecidas a toda la organización y evite la molestia de seleccionar usuarios, grupos o dominios de destinatarios específicos, lo que protege a todos los usuarios destinatarios de su organización. 
+  - Configure las opciones de protección de suplantación para usuarios personalizados y dominios personalizados dentro de directivas estrictas y estándar preestablecidas y proteja automáticamente a los usuarios de destino y al dominio de destino frente a ataques de suplantación.
+
+- [Simplificación de la experiencia de cuarentena (parte dos) en Microsoft 365 Defender para office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): resalta características adicionales para que la experiencia de cuarentena sea aún más fácil de usar.
 
 ## <a name="april-2022"></a>Abril de 2022
 
@@ -67,7 +79,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 ## <a name="october-2021"></a>Octubre de 2021
 
 - [Mejora dkim de entrega avanzada](configure-advanced-delivery.md): se ha agregado compatibilidad con la entrada de dominio DKIM como parte de la configuración de simulación de suplantación de identidad de terceros.
-- [Seguro de forma predeterminada](secure-by-default.md): extendido seguro de forma predeterminada para Exchange reglas de flujo de correo (también conocidas como reglas de transporte).
+- [Seguro de forma predeterminada](secure-by-default.md): extendido seguro de forma predeterminada para las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte).
 
 ## <a name="september-2021"></a>Septiembre de 2021
 
@@ -80,14 +92,14 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ## <a name="august-2021"></a>Agosto de 2021
 
-- [Revisión del administrador de los mensajes notificados](admin-review-reported-message.md): los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Las plantillas se pueden personalizar para su organización y también en función del veredicto del administrador.
+- [Administración revisión de los mensajes notificados](admin-review-reported-message.md): los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Las plantillas se pueden personalizar para su organización y también en función del veredicto del administrador.
 - [Agregar permite en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allows.md): ahora puede agregar entradas permitidas a la lista de permitidos o bloqueados de inquilinos si el mensaje bloqueado se envió como parte del proceso de envío del administrador. En función de la naturaleza del bloque, la dirección URL, el archivo o el remitente enviados se agregarán a la lista de permitidos o bloqueados de inquilinos. En la mayoría de los casos, los permite se agregan para dar al sistema algún tiempo y permitirlo naturalmente si se garantiza. En algunos casos, Microsoft administra el permiso para usted.
 
 ## <a name="july-2021"></a>Julio de 2021
 
 - [Mejoras en el análisis de correo electrónico en investigaciones automatizadas](email-analysis-investigations.md)
 - [Entrega avanzada](configure-advanced-delivery.md): introducción a una nueva funcionalidad para configurar la entrega de simulaciones de suplantación de identidad (phishing) de terceros a los usuarios y mensajes sin filtrar a buzones de operaciones de seguridad.
-- [Vínculos de Caja fuerte para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Vínculos seguros para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nuevas directivas de alerta para los siguientes escenarios: buzones en peligro, suplantación de identidad de formularios, correos malintencionados entregados debido a invalidaciones y redondeo de ZAP
   - Actividad de reenvío de correo electrónico sospechoso
   - El usuario no puede compartir formularios ni recopilar respuestas
@@ -100,15 +112,15 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ## <a name="june-2021"></a>Junio de 2021
 
-- Nuevo primer contacto consejo de seguridad configuración dentro de las directivas anti-phishing. Esta consejo de seguridad se muestra cuando los destinatarios reciben por primera vez un correo electrónico de un remitente o no suelen recibir correo electrónico de un remitente. Para obtener más información sobre esta configuración y cómo configurarla, consulte los artículos siguientes:
-  - [Primer contacto consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- Nueva configuración de la sugerencia de seguridad de primer contacto dentro de las directivas contra suplantación de identidad (phishing). Esta sugerencia de seguridad se muestra cuando los destinatarios reciben por primera vez un correo electrónico de un remitente o no suelen recibir correo electrónico de un remitente. Para obtener más información sobre esta configuración y cómo configurarla, consulte los artículos siguientes:
+  - [Primer consejo de seguridad de contacto](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
   - [Configuración de directivas contra phishing en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Abril/mayo de 2021
 
 - [Página de entidad de correo electrónico](mdo-email-entity-page.md): una vista unificada en 360 grados de un correo electrónico con información enriquecida sobre amenazas, autenticación y detecciones, detalles de detonación y una experiencia de vista previa de correo electrónico completamente nueva.
-- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): actualizaciones de EmailEvents (RecordType 28) para agregar acción de entrega, ubicaciones de entrega originales y más recientes, y detalles de detección actualizados.
+- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Novedades a EmailEvents (RecordType 28) para agregar la acción de entrega, las ubicaciones de entrega originales y más recientes y los detalles de detección actualizados.
 - [Análisis de amenazas para Defender para Office 365](/microsoft-365/security/defender/threat-analytics): vea actores de amenazas activos, técnicas populares y superficies de ataque, junto con amplios informes de investigadores de Microsoft sobre campañas en curso.
 
 ## <a name="februarymarch-2021"></a>Febrero/marzo de 2021
@@ -124,5 +136,5 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ## <a name="see-also"></a>Vea también
 
-- [Microsoft 365 hoja de ruta](https://www.microsoft.com/microsoft-365/roadmap)
+- [Hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 - [Descripción del servicio Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

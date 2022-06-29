@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,19 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Obtenga información sobre cómo usar Microsoft 365 Empresa Premium para hacer un restablecimiento de fábrica de los dispositivos Windows que administra, y revertirlos a su configuración original de compra.
-ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 9c0430c1d9fdee37f6105fc5c3a537c46cefb3be
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623551"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486512"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Restablecer la configuración de fábrica de los dispositivos Windows
-
-Este artículo aplica a Microsoft 365 Empresa Premium.
-
-> [!NOTE]
-> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información acerca de Microsoft Defender para empresas](../security/defender-business/mdb-overview.md).
 
 El restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se hayan instalado después de la compra. Puede usar Microsoft 365 para empresas para realizar un restablecimiento de fábrica en los dispositivos Windows 10 que administre.
   

@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
+- adminvideo
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,17 +27,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Bloquee el acceso a Microsoft 365 para que un empleado anterior no pueda iniciar sesión, proteger los datos de la organización y permitir que otros empleados accedan a su correo electrónico y OneDrive datos.
-ms.openlocfilehash: 3bff5812d1efd6b38f05303de7ec2c078b31cf01
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Bloquee el acceso a Microsoft 365 para que un antiguo empleado no pueda iniciar sesión, proteger los datos de la organización y permitir que otros empleados accedan a su correo electrónico y a los datos de OneDrive.
+ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436325"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486228"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Eliminación de un empleado anterior y protección de datos
 
-Una pregunta que a menudo obtenemos es: "¿Qué debo hacer para proteger los datos y proteger el acceso cuando un empleado deja mi organización?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y OneDrive datos.
+Una pregunta que a menudo obtenemos es: "¿Qué debo hacer para proteger los datos y proteger el acceso cuando un empleado deja mi organización?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y a los datos de OneDrive.
 
 > [!TIP]
 > Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
@@ -45,7 +46,7 @@ Una pregunta que a menudo obtenemos es: "¿Qué debo hacer para proteger los dat
 
 Debe ser administrador global para completar los pasos de esta solución.
 
-Para completar los pasos de esta serie, use estas funcionalidades y características Microsoft 365.
+Para completar los pasos de esta serie, use estas funcionalidades y características de Microsoft 365.
 
 |Producto o componente|Funcionalidad o característica|
 |---|---|
@@ -69,11 +70,11 @@ Para completar los pasos de esta serie, use estas funcionalidades y característ
 
 |Paso|Por qué se debe realizar este procedimiento|
 |---|---|
-|[Paso 1: Impedir que un antiguo empleado inicie sesión y bloquee el acceso a Microsoft 365 servicios](remove-former-employee-step-1.md)|Esto impide que el antiguo empleado inicie sesión en Microsoft 365 e impide que la persona acceda a Microsoft 365 servicios.|
+|[Paso 1: Impedir que un antiguo empleado inicie sesión y bloquee el acceso a los servicios de Microsoft 365](remove-former-employee-step-1.md)|Esto impide que el antiguo empleado inicie sesión en Microsoft 365 e impide que la persona acceda a los servicios de Microsoft 365.|
 |[Paso 2: Guardar el contenido del buzón de un empleado anterior](remove-former-employee-step-2.md)|Esto es útil para la persona que va a asumir el trabajo del empleado, o si hay litigios.|
 |[Paso 3: Borrar y bloquear el dispositivo móvil de un antiguo empleado](remove-former-employee-step-3.md)|Quita los datos profesionales del teléfono o de la tableta.|
 |[Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido](remove-former-employee-step-4.md)|Esta opción permite mantener activa la dirección de correo electrónico de su antiguo empleado. Si tiene clientes o socios que siguen enviando correos electrónicos a la dirección del antiguo empleado, con esta opción el correo llegará a la persona que ahora se encarga del trabajo.|
-|[Paso 5: Dar a otro empleado acceso a datos de OneDrive y Outlook](remove-former-employee-step-5.md)|Si solo quita la licencia de un usuario, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después. <p> Antes de eliminar la cuenta, debe conceder acceso a sus OneDrive y Outlook a otro usuario. Después de eliminar la cuenta de un empleado, el contenido de su OneDrive y Outlook se conserva durante **30** días. Sin embargo, durante esos 30 días, puede restaurar la cuenta del usuario y obtener acceso a su contenido. Si restaura la cuenta del usuario, el contenido OneDrive y Outlook seguirá siendo accesible incluso después de 30 días.| 
+|[Paso 5: Dar a otro empleado acceso a los datos de OneDrive y Outlook](remove-former-employee-step-5.md)|Si solo quita la licencia de un usuario, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después. <p> Antes de eliminar la cuenta, debe conceder acceso de OneDrive y Outlook a otro usuario. Después de eliminar la cuenta de un empleado, el contenido de Su OneDrive y Outlook se conserva durante **30** días. Sin embargo, durante esos 30 días, puede restaurar la cuenta del usuario y obtener acceso a su contenido. Si restaura la cuenta del usuario, el contenido de OneDrive y Outlook seguirá siendo accesible incluso después de 30 días.| 
 |[Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior](remove-former-employee-step-6.md)|Cuando quita una licencia, puede asignarla a otra persona. O bien, puede eliminar la licencia para no pagar por ella hasta que contrate a otra persona.  <p> Al quitar o eliminar una licencia, el correo electrónico, los contactos y el calendario antiguos del usuario se conservan durante **30 días** y, después, se eliminan permanentemente. Si quita o elimina una licencia, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  |
 |[Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado](remove-former-employee-step-7.md)|Esto quita la cuenta del centro de administración. Mantiene todo organizado.|
 
@@ -81,7 +82,7 @@ Para completar los pasos de esta serie, use estas funcionalidades y característ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-Cuando un empleado deja la empresa, tendrá que quitarlo de Microsoft 365 para empresas. Antes de hacerlo, debe impedir que accedan a los archivos de la empresa, conservar los documentos que crearon y realizar otras tareas de administración asociadas a la eliminación de un usuario.
+Cuando un empleado deja la empresa, tendrá que quitarlos de Microsoft 365 para empresas. Antes de hacerlo, debe impedir que accedan a los archivos de la empresa, conservar los documentos que crearon y realizar otras tareas de administración asociadas a la eliminación de un usuario.
 
 1. En el centro de administración, seleccione **Usuarios** y elija **Usuarios activos**.
 1. Seleccione el usuario que desea quitar y, a continuación, seleccione **Eliminar usuario**.
