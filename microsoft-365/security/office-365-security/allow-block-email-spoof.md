@@ -1,5 +1,5 @@
 ---
-title: Permitir o bloquear correos electrónicos mediante la lista de permitidos o bloqueados de inquilinos
+title: Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efdd34af13cef4aa4b92b40ad57984469a879010
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159995"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493229"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de permitidos o bloqueados de inquilinos
+# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -79,10 +79,11 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 
 Permitir remitentes (o dominios) en la página **Envíos** de Microsoft 365 Defender.
 
-Tenga en cuenta que los administradores no pueden agregar permisos directamente a la lista de permitidos o bloqueados de inquilinos. En su lugar, usa el proceso de envío del administrador para enviar el mensaje que se bloqueó, de modo que la dirección URL, el archivo o los remitentes correspondientes se agregarán a la lista de permitidos o bloqueados de inquilinos. Si no se ha producido un bloque del archivo, la dirección URL o el remitente, no se creará la opción allow. En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, los permisos se mantienen durante el tiempo necesario para dar al sistema tiempo para permitirlos de forma natural.
+No puede modificar directamente la lista de permitidos o bloqueados de inquilinos para agregar entradas de permitido. En su lugar, use [envíos de administrador](admin-submission.md) para enviar el mensaje bloqueado. Esta acción agregará la dirección URL, el archivo, el par de dominio del remitente suplantado, el dominio suplantado (o el usuario) o el remitente correspondiente a la lista de permitidos o bloqueados de inquilinos. Si el elemento no se ha bloqueado, no se creará el permiso. En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, la entrada permitida se quitará en la fecha de expiración especificada.
 
 > [!IMPORTANT]
-> Dado que Microsoft administra el objeto permite que usted, el remitente, la dirección URL o el archivo permita que no sean necesarios o que se consideren incorrectos, se quitarán. Esto es para proteger el entorno y evitar una configuración incorrecta de allows. En los casos en los que no esté de acuerdo, es posible que se necesiten casos de soporte técnico para ayudar a determinar por qué un mensaje todavía se considera incorrecto.
+> - Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas de permitir de archivo, dirección URL o remitente innecesarios que no sean necesarias. Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué un mensaje todavía se considera incorrecto.
+
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Acciones & envíos envíos**\>. O bien, para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
@@ -96,7 +97,9 @@ Tenga en cuenta que los administradores no pueden agregar permisos directamente 
 
 6. En la lista desplegable **Quitar después** , especifique cuánto tiempo desea que funcione la opción permitir.
 
-7. Cuando haya terminado, haga clic en el botón **Enviar** .
+7. Agregue por qué va a agregar la opción allow mediante el cuadro **Nota opcional** . 
+
+8. Cuando haya terminado, seleccione **Enviar**.
 
   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envíe malware a Microsoft para el ejemplo de análisis." lightbox="../../media/admin-submission-allow-messages.png":::
 
@@ -164,18 +167,20 @@ Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 - **Dominio**: gmail.com
 - **Infraestructura**: tms.mx.com
 
-Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden suplantarse. No se permiten otros remitentes que intenten suplantar gmail.com. Los mensajes de remitentes de otros dominios que se originan en tms.mx.com se comprueban mediante inteligencia suplantada.
+Solo los mensajes de ese dominio _y_ el par de infraestructura de envío pueden suplantarse. No se permiten otros remitentes que intenten suplantar gmail.com. Los mensajes de remitentes de otros dominios que se originan en tms.mx.com se comprueban mediante inteligencia suplantada.
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>Creación de entradas de remitente suplantadas bloqueadas
 
 ### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
 
-**Notas**:
-
-- Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
-- Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
-- Las entradas para remitentes suplantados nunca expiran.
-- La suplantación de identidad admite permitir y bloquear.
+> [!NOTE]
+> El correo electrónico de estos remitentes se bloqueará como _phish_.
+>
+> Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
+>
+> Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
+>
+> Las entradas para remitentes suplantados nunca expiran.
 
 1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
@@ -205,14 +210,13 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 
 ## <a name="create-allowed-spoofed-sender-entries"></a>Creación de entradas de remitente suplantadas permitidas 
 
-### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
+### <a name="use-the-tenant-allowblock-list-in-microsoft-365-defender"></a>Use la lista de permitidos o bloqueados de inquilinos en Microsoft 365 Defender
 
 > [!NOTE]
 >
 > - Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
 > - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
 > - Las entradas para remitentes suplantados nunca expiran.
-> - La suplantación de identidad admite permitir y bloquear. La dirección URL solo admite bloques.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** directivas de colaboración \> **& reglas Directivas** \> de **amenazas** \> Listas de **inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -226,6 +230,38 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
    - **Acción**: seleccione **Permitir**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Usar Administración envío en Microsoft 365 Defender
+
+También puede permitir remitentes suplantados mediante la página **Envíos** de Microsoft 365 Defender.
+
+Use [envíos de administrador](admin-submission.md) para enviar el mensaje bloqueado. Esta acción agregará la dirección URL, el archivo, el par de dominio del remitente suplantado, el dominio suplantado (o el usuario) o el remitente correspondiente a la lista de permitidos o bloqueados de inquilinos. Si el elemento no se ha bloqueado, no se creará el permiso. 
+
+> [!IMPORTANT]
+>
+> - La suplantación de identidad permite encargarse de la suplantación de identidad entre organizaciones, organizaciones cruzadas y DMARC.
+> - La nota opcional del envío del administrador no se aplica a la suplantación de identidad.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Acciones & envíos envíos**\>. O bien, para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos** está seleccionada y, a continuación, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+3. Use el control flotante **Enviar a Microsoft para revisar** para enviar un mensaje agregando el identificador de mensaje de red o cargando el archivo de correo electrónico.
+
+4. En la sección **Seleccionar un motivo para enviar a Microsoft**, seleccione **No debería haberse bloqueado (falso positivo).**
+
+5. Active **Permitir mensajes como esta** opción.
+
+6. En la lista desplegable **Quitar después** de , especifique cuánto tiempo quiere que funcione la opción allow, aunque no se aplica a la suplantación de identidad, ya que nunca expiran.
+
+7. Cuando haya terminado, seleccione **Enviar**.
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envíe malware a Microsoft para el ejemplo de análisis." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+>
+> - El par de dominio del remitente suplantado se creará y estará visible en la pestaña **Suplantado** en la página Lista de **permitidos o bloqueados de inquilinos** .
+
 
 ### <a name="use-powershell"></a>Usar PowerShell
 
@@ -290,6 +326,38 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 ```
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, vea Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
+
+## <a name="create-impersonated-sender-entries"></a>Creación de entradas de remitente suplantadas
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Usar Administración envío en Microsoft 365 Defender
+
+También puede permitir remitentes suplantados mediante la página **Envíos** de Microsoft 365 Defender.
+
+Use [envíos de administrador](admin-submission.md) para enviar el mensaje bloqueado. Esta acción agregará la dirección URL, el archivo, el par de dominio del remitente suplantado, el dominio suplantado (o el usuario) o el remitente correspondiente a la lista de permitidos o bloqueados de inquilinos. Si el elemento no se ha bloqueado, no se creará el permiso. 
+
+> [!IMPORTANT]
+>
+> - La suplantación permite hacerse cargo de la suplantación de dominio y de usuario.
+> - La suplantación de grafos no se tiene cuidado desde aquí por ahora.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Acciones & envíos envíos**\>. O bien, para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos** está seleccionada y, a continuación, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+3. Use el control flotante **Enviar a Microsoft para revisar** para enviar un mensaje agregando el identificador de mensaje de red o cargando el archivo de correo electrónico.
+
+4. En la sección **Seleccionar un motivo para enviar a Microsoft**, seleccione **No debería haberse bloqueado (falso positivo).**
+
+5. Active **Permitir mensajes como esta** opción.
+
+6. En la lista desplegable **Quitar después** de , especifique cuánto tiempo quiere que funcione la opción allow, aunque no se aplica a los permitidos suplantados, ya que nunca expiran.
+
+7. Cuando haya terminado, seleccione **Enviar**.
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envíe malware a Microsoft para el ejemplo de análisis." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+> El dominio suplantado (o usuario) se creará y será visible en la sección **Remitentes y dominios de confianza** de la directiva contra suplantación de identidad en <https://security.microsoft.com/antiphishing>.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128863"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490108"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -53,8 +53,10 @@ En la tabla siguiente se describen los permisos de directiva de cuarentena indiv
 |**Remitente de bloques** (_PermissionToBlockSender_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |**Eliminar** (_PermissionToDelete_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |**Versión preliminar** (_PermissionToPreview_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
-|**Permitir a los destinatarios liberar un mensaje de la cuarentena** (_PermissionToRelease_)|||![Marca de verificación.](../../media/checkmark.png)|
+|**Permitir a los destinatarios liberar un mensaje de la cuarentena** (_PermissionToRelease_)<sup>\*</sup>|||![Marca de verificación.](../../media/checkmark.png)|
 |**Permitir que los destinatarios soliciten que se libere un mensaje de la cuarentena** (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
+
+<sup>\*</sup>El permiso **Permitir a los destinatarios liberar un mensaje de la cuarentena** no se respeta en las directivas antimalware ni en el veredicto de suplantación de identidad de alta confianza en las directivas contra correo no deseado. Los usuarios no pueden liberar su propio malware o mensajes de suplantación de identidad de alta confianza de la cuarentena. En el mejor de los casos, puede usar **el permiso Permitir a los destinatarios solicitar que se libere un mensaje del permiso de cuarentena** .
 
 En la tabla siguiente se describen las directivas de cuarentena predeterminadas, sus grupos de permisos asociados y si las notificaciones de cuarentena están habilitadas:
 
@@ -66,7 +68,7 @@ En la tabla siguiente se describen las directivas de cuarentena predeterminadas,
 
 Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos o si desea habilitar las notificaciones de cuarentena, cree y use directivas de cuarentena personalizadas. Para obtener más información sobre lo que hace cada permiso, consulte la sección [Detalles del permiso de directiva de cuarentena](#quarantine-policy-permission-details) más adelante en este artículo.
 
-Las directivas de cuarentena se crean y asignan en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones de Exchange Online; PowerShell EOP independiente en organizaciones de EOP sin Exchange Online buzones).
+Las directivas de cuarentena se crean y asignan en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de Exchange Online; PowerShell EOP independiente en organizaciones EOP sin buzones de Exchange Online).
 
 > [!NOTE]
 > El tiempo que los mensajes en cuarentena se mantienen en cuarentena antes de que expiren se controla mediante la **opción Conservar correo no deseado en cuarentena durante estos muchos días** (_QuarantineRetentionPeriod_) en las directivas contra correo no deseado. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
@@ -158,8 +160,8 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToBlockSender|16 |00010000|
 |PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
 |PermissionToRelease<sup>\*\*\*</sup>|4 |00000100|
-|PermissionToPreview|2|00000010|
-|PermissionToDelete|1|00000001|
+|PermissionToPreview|2 |00000010|
+|PermissionToDelete|1 |00000001|
 
 <sup>\*</sup> El valor 0 no oculta el botón **Ver encabezado del mensaje** en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -174,11 +176,11 @@ Para los permisos de acceso limitado, los valores necesarios son:
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
-|PermissionToBlockSender|1|
-|PermissionToRequestRelease|1|
+|PermissionToBlockSender|1 |
+|PermissionToRequestRelease|1 |
 |PermissionToRelease|0|
-|PermissionToPreview|1|
-|PermissionToDelete|1|
+|PermissionToPreview|1 |
+|PermissionToDelete|1 |
 |Valor binario|00011011|
 |Valor decimal que se va a usar|27|
 
@@ -201,7 +203,7 @@ En las características _de protección admitidas_ que ponen en cuarentena los m
 |[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam de alta confianza** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de alta confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul>|
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección contra suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si el mensaje se detecta como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia del buzón detecta y suplanta a un usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>Protección contra suplantación:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Caja fuerte protección de datos adjuntos](safe-attachments.md): <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos de Caja fuerte (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Protección de datos adjuntos seguros](safe-attachments.md): <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos seguros (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
 |[Reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) con la acción: **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|No|No aplicable|
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo](#full-access-permissions-and-quarantine-notifications), su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena están activadas en NotificationEnabledPolicy y desactivadas en DefaultFullAccessPolicy.
@@ -424,31 +426,31 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 Para obtener información detallada sobre la sintaxis y los parámetros, consulte [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>directivas de datos adjuntos de Caja fuerte en Defender para Office 365
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Directivas de datos adjuntos seguros en Defender para Office 365
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas** \> de amenazas **Caja fuerte Datos adjuntos** en la sección **Directivas**.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
 
-   O bien, para ir directamente a la página **datos adjuntos de Caja fuerte**, use <https://security.microsoft.com/safeattachmentv2>.
+   O bien, para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
-2. En la página **datos adjuntos de Caja fuerte**, realice uno de los pasos siguientes:
-   - Busque y seleccione una directiva de datos adjuntos de Caja fuerte existente.
-   - Cree una nueva directiva de datos adjuntos de Caja fuerte.
+2. En la página **Datos adjuntos seguros** , realice uno de los pasos siguientes:
+   - Busque y seleccione una directiva de datos adjuntos seguros existente.
+   - Cree una nueva directiva de datos adjuntos seguros.
 
 3. Realice uno de los pasos siguientes:
    - **Editar existente**: seleccione la directiva haciendo clic en el nombre de la directiva. En el control flotante de detalles de la directiva, vaya a la sección **Configuración** y, a continuación, haga clic en **Editar configuración**.
-   - **Crear nuevo**: en el asistente para nueva directiva, acceda a la página **Configuración**.
+   - **Crear nuevo**: en el asistente para nueva directiva, llegue a la página **Configuración** .
 
-4. En la página **Configuración**, siga estos pasos:
-   1. **Caja fuerte Respuesta de malware desconocida de datos adjuntos**: seleccione **Bloquear**, **Reemplazar** o **Entrega dinámica**.
+4. En la página **Configuración** , siga estos pasos:
+   1. **Respuesta de malware desconocida de datos adjuntos seguros**: seleccione **Bloquear**, **Reemplazar** o **Entrega dinámica**.
    2. Seleccione una directiva de cuarentena en el cuadro **Directiva de cuarentena** .
 
    **Nota**: Al crear una nueva directiva, un valor de **directiva de cuarentena** en blanco indica que se usa la directiva de cuarentena predeterminada. Cuando edita posteriormente la directiva, el valor en blanco se reemplaza por el nombre predeterminado real de la directiva de cuarentena, como se describe en la tabla anterior.
 
-Las instrucciones completas para crear y modificar directivas de datos adjuntos de Caja fuerte se describen en [Configuración de directivas de datos adjuntos de Caja fuerte en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
+Las instrucciones completas para crear y modificar directivas de datos adjuntos seguros se describen en [Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
-#### <a name="safe-attachments-policies-in-powershell"></a>directivas de datos adjuntos de Caja fuerte en PowerShell
+#### <a name="safe-attachments-policies-in-powershell"></a>Directivas de datos adjuntos seguros en PowerShell
 
-Si prefiere usar PowerShell para asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use la sintaxis siguiente:
+Si prefiere usar PowerShell para asignar directivas de cuarentena en directivas de datos adjuntos seguros, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use la sintaxis siguiente:
 
 ```powershell
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
@@ -458,9 +460,9 @@ Si prefiere usar PowerShell para asignar directivas de cuarentena en Caja fuerte
 
 - Los valores de parámetro _Action_ Block, Replace o DynamicDelivery pueden dar lugar a mensajes en cuarentena (el valor Permitir no pone en cuarentena los mensajes). Valor del parámetro _Action_ en significativo solo cuando el valor del parámetro _Enable_ es `$true`.
 
-- Al crear nuevas directivas de datos adjuntos de Caja fuerte sin usar el parámetro QuarantineTag, se usa la directiva de cuarentena predeterminada para las detecciones de datos adjuntos de Caja fuerte en el correo electrónico (AdminOnlyAccessPolicy).
+- Al crear nuevas directivas de datos adjuntos seguros sin usar el parámetro QuarantineTag, se usa la directiva de cuarentena predeterminada para las detecciones de datos adjuntos seguros en el correo electrónico (AdminOnlyAccessPolicy).
 
-  Debe reemplazar la directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las funcionalidades predeterminadas del usuario final en los mensajes de correo electrónico que están en cuarentena por Caja fuerte directivas de datos adjuntos.
+  Debe reemplazar la directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las funcionalidades predeterminadas del usuario final en los mensajes de correo electrónico que están en cuarentena mediante directivas de datos adjuntos seguros.
 
   Para ver los valores de parámetro importantes, ejecute el siguiente comando:
 
@@ -468,7 +470,7 @@ Si prefiere usar PowerShell para asignar directivas de cuarentena en Caja fuerte
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- Una nueva directiva de datos adjuntos de Caja fuerte en PowerShell requiere una directiva de datos adjuntos seguros (configuración) mediante el cmdlet **New-SafeAttachmentPolicy** y una regla de datos adjuntos seguros exclusivos (filtros de destinatarios) mediante el cmdlet **New-SafeAttachmentRule**. Para obtener instrucciones, consulte [Uso Exchange Online PowerShell o PowerShell EOP independiente para configurar directivas de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- Una nueva directiva de datos adjuntos seguros en PowerShell requiere una directiva de datos adjuntos seguros (configuración) mediante el cmdlet **New-SafeAttachmentPolicy** y una regla de datos adjuntos seguros exclusivos (filtros de destinatarios) mediante el cmdlet **New-SafeAttachmentRule** . Para obtener instrucciones, consulte [Uso Exchange Online PowerShell o PowerShell EOP independiente para configurar directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
 
 En este ejemplo se crea una directiva de datos adjuntos segura denominada Departamento de investigación que bloquea los mensajes detectados y usa la directiva de cuarentena personalizada denominada NoAccess que asigna permisos **Sin acceso** a los mensajes en cuarentena.
 
@@ -519,7 +521,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Los idiomas seleccionados en la configuración de notificación de cuarentena global de las directivas de cuarentena." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Usar el logotipo de mi empresa**: seleccione esta opción para reemplazar el logotipo de Microsoft predeterminado que se usa en la parte superior de las notificaciones de cuarentena. Antes de realizar este paso, debe seguir las instrucciones de [Personalización del tema Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado.
+   - **Usar el logotipo de mi empresa**: seleccione esta opción para reemplazar el logotipo de Microsoft predeterminado que se usa en la parte superior de las notificaciones de cuarentena. Antes de realizar este paso, debe seguir las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado.
 
      En la captura de pantalla siguiente se muestra un logotipo personalizado en una notificación de cuarentena:
 
@@ -729,6 +731,9 @@ El permiso **De vista previa** (_PermissionToPreview_) controla la capacidad de 
 - **Notificaciones de cuarentena**: sin efecto.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>Permitir que los destinatarios liberen un mensaje del permiso de cuarentena
+
+> [!NOTE]
+> Este permiso no se respeta en las directivas antimalware ni en el veredicto de suplantación de identidad de alta confianza en las directivas contra correo no deseado. Los usuarios no pueden liberar su propio malware o mensajes de suplantación de identidad de alta confianza de la cuarentena. En el mejor de los casos, puede usar [permitir que los destinatarios soliciten que se libere un mensaje del permiso de cuarentena](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) .
 
 **El permiso Permitir a los destinatarios liberar un mensaje del** permiso de cuarentena (_PermissionToRelease_) controla la capacidad de los usuarios de liberar sus mensajes en cuarentena directamente y sin la aprobación de un administrador.
 

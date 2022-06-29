@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Al cerrar la cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102468"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491767"
 ---
-# <a name="close-your-account"></a>Cerrar la cuenta
+# <a name="close-your-microsoft-account"></a>Cierre de la cuenta de Microsoft
 
 Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada con su cuenta. Esta información incluye suscripciones, licencias, métodos de pago, usuarios y datos de usuario.
 
@@ -42,7 +42,7 @@ Para poder realizar las tareas de este artículo, debe ser un administrador glob
 
 Elimine todos los usuarios excepto un administrador global. El administrador global completa los pasos para cerrar la cuenta. Para poder eliminar el directorio al final de este proceso, debe eliminar todos los demás usuarios.
 
-Si los usuarios se sincronizan desde el entorno local, desactive primero la sincronización y, a continuación, elimine los usuarios en el directorio en la nube mediante los cmdlets de Azure Portal o Azure PowerShell.
+Si los usuarios se sincronizan desde el entorno local, desactive primero la sincronización y, a continuación, elimine los usuarios del directorio en la nube mediante los cmdlets Azure Portal o Azure PowerShell.
 
 Para eliminar usuarios, consulte [Administración de usuarios: Eliminar uno o varios usuarios](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 

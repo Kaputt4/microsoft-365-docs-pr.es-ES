@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116059"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487705"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
@@ -32,7 +32,7 @@ ms.locfileid: "66116059"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En Microsoft 365 organizaciones con buzones de Exchange Online, los administradores pueden usar el portal Envíos del portal de Microsoft 365 Defender para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para su examen.
+En las organizaciones de Microsoft 365 con buzones de Exchange Online, los administradores pueden usar el portal envíos del portal de Microsoft 365 Defender para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para su examen.
 
 Cuando envíe un mensaje de correo electrónico para su análisis, obtendrá lo siguiente:
 
@@ -46,7 +46,7 @@ Cuando envíe un mensaje de correo electrónico para su análisis, obtendrá lo 
 
 Para obtener otras maneras de enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft Defender para Office 365 para enviar mensajes a Microsoft para su evaluación. 
+Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft Defender para Office 365 para enviar mensajes a Microsoft para su evaluación.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
@@ -96,7 +96,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo. Una noti
 
 2. En la sección **Agregar el identificador de mensaje de red o cargar el archivo de correo electrónico** , use una de las siguientes opciones:
    - **Agregar el identificador de mensaje de red de correo electrónico**: se trata de un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el mensaje o en el encabezado **X-MS-Office365-Filtering-Correlation-Id** en los mensajes en cuarentena.
-   - **Upload el archivo de correo electrónico (.msg o .eml):** haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic en **Abrir**.
+   - **Cargar el archivo de correo electrónico (.msg o .eml):** haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic en **Abrir**.
 
 3. En el cuadro **Choose a recipient who had an issue (Elegir un destinatario que tenía un problema** ), especifique el destinatario en el que desea ejecutar una comprobación de directiva. La comprobación de directiva determinará si el correo electrónico omitió el examen debido a directivas de usuario u organización.
 
@@ -376,11 +376,11 @@ Si ha implementado el [complemento Mensaje](enable-the-report-message-add-in.md)
 > [!NOTE]
 > Si las organizaciones están configuradas para enviar mensajes notificados por el usuario solo al buzón personalizado, los mensajes notificados aparecerán en **Mensajes notificados** por el usuario, pero sus resultados siempre estarán vacíos (ya que no se habrían vuelto a examinar).
 
-### <a name="undo-user-submissions"></a>Deshacer envíos de usuarios
+## <a name="undo-user-submissions"></a>Deshacer envíos de usuarios
 
 Una vez que un usuario envía un correo electrónico sospechoso al buzón personalizado, el usuario y el administrador no tienen la opción de deshacer el envío. Si el usuario desea recuperar el correo electrónico, estará disponible para su recuperación en las carpetas Elementos eliminados o Correo electrónico no deseado.
 
-### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir mensajes notificados por el usuario del buzón personalizado en un envío de administrador
+## <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir mensajes notificados por el usuario del buzón personalizado en un envío de administrador
 
 Si ha configurado el buzón personalizado para interceptar los mensajes notificados por el usuario sin enviar los mensajes a Microsoft, puede encontrar y enviar mensajes específicos a Microsoft para su análisis.
 
@@ -398,3 +398,20 @@ En la pestaña **Mensajes notificados** por el usuario, seleccione un mensaje en
 Si el mensaje se notifica a Microsoft, el valor **convertida en envío de administrador** pasa de **no** a **sí**. Para acceder directamente al envío del administrador, haga clic en **Ver el envío del administrador convertido** desde el menú de desbordamiento dentro del control flotante de envío del mensaje notificado por el usuario correspondiente.
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Opción para ver un envío de administrador creado a partir de un mensaje notificado por el usuario.":::
+
+## <a name="view-associated-alert-for-user-and-admin-email-submissions"></a>Visualización de alertas asociadas para envíos de correo electrónico de usuario y administrador
+
+> [!IMPORTANT]
+> La información de esta sección solo se aplica a Defender para Office 365 Plan 2 o superior.
+>
+> Actualmente, los envíos de usuarios generan alertas solo para los mensajes que se notifican como phishing.
+
+Para cada mensaje de suplantación de identidad notificado por el usuario y el envío de correo electrónico del administrador, se genera una alerta correspondiente.
+
+Para ver la alerta correspondiente de un mensaje de suplantación de identidad notificado por el usuario, seleccione la pestaña **Mensajes notificados** por el usuario y, a continuación, haga doble clic en el mensaje para abrir el control flotante de envío. Haga clic en el ![icono Más opciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más opciones** y, a continuación, seleccione  **Ver alerta**.
+
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Opción para ver la alerta relacionada de un mensaje de suplantación de identidad notificado por el usuario.":::
+
+Para ver la alerta correspondiente para envíos de correo electrónico de administrador, seleccione la pestaña **Correos electrónicos** y, a continuación, haga doble clic en el mensaje para abrir el control flotante de envío. Seleccione **Ver alerta** en la opción **Abrir entidad de correo electrónico** .
+
+:::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Opción para ver la alerta relacionada desde un envío de administrador.":::

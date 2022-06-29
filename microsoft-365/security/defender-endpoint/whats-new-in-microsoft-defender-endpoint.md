@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679284"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492433"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,6 +60,9 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
 - [Novedades de Defender para punto de conexión en Linux](linux-whatsnew.md)
 
+## <a name="june-2022"></a>Junio de 2022
+- [El plan 2 de Defender para servidores ahora se integra con la solución unificada MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>Ahora puede empezar a implementar la solución moderna y unificada para Windows Server 2012 R2 y 2016 en los servidores cubiertos por el plan 2 de Defender para servidores con un solo botón.
+
 ## <a name="may-2022"></a>Mayo de 2022
 - [Protección contra alteraciones para macOS (versión preliminar)](tamperprotection-macos.md)<br>La protección contra alteraciones ayuda a evitar la eliminación no autorizada de Microsoft Defender para punto de conexión en macOS.
 
@@ -73,11 +76,11 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - Mejoras del laboratorio de evaluación: ahora puede agregar dispositivos Windows 11 y Linux al laboratorio. 
 
-- Amenazas y administración de vulnerabilidades para Android y iOS ahora está disponible con carácter general. [Más información](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- La administración de amenazas y vulnerabilidades para Android e iOS ya está disponible con carácter general. [Más información](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
-- Amenazas y administración de vulnerabilidades pueden ayudar a identificar vulnerabilidades de Log4j en aplicaciones y componentes. [Más información](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
+- La administración de amenazas y vulnerabilidades puede ayudar a identificar vulnerabilidades de Log4j en aplicaciones y componentes. [Más información](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - Detección de dispositivos IoT (versión preliminar): la [detección](device-discovery.md) de dispositivos ahora tiene la capacidad de ayudarle a encontrar dispositivos IoT no administrados conectados a la red corporativa. Esto le proporciona una única vista unificada del inventario de IoT junto con el resto de los dispositivos de TI (estaciones de trabajo, servidores y dispositivos móviles).
 
@@ -85,7 +88,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
-- [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para que los dispositivos que no están administrados por un Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+- [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para que los dispositivos que no están administrados por un Endpoint Manager de Microsoft, ya sea Microsoft Intune o microsoft endpoint Configuration Manager, reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
 
 - Mejoras en la compatibilidad multiplataforma.
 
@@ -128,12 +131,12 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - [Compatibilidad con la administración de aplicaciones móviles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Esta mejora permite Microsoft Defender para punto de conexión proteger los datos de una organización dentro de una aplicación administrada cuando se usa Intune para administrar aplicaciones móviles. Para obtener más información sobre la administración de aplicaciones móviles, consulte [esta documentación](/mem/intune/apps/mam-faq).
 
-- [Microsoft Tunnel integración de VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel funcionalidades de VPN ahora se integra con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, lo que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
+- [Integración de VPN de Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Las funcionalidades de VPN de Microsoft Tunnel ahora se integran con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, lo que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
 
-- [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ahora está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ya está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 - [Administración de la protección contra alteraciones mediante el portal de Microsoft 365 Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *asociación de inquilinos*.
 
 

@@ -1,5 +1,5 @@
 ---
-title: Cambio manual de Microsoft 365 para planes de negocio
+title: Cambiar microsoft 365 para planes empresariales manualmente
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas están enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101606"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493561"
 ---
-# <a name="change-plans-manually"></a>Cambiar los planes manualmente
+# <a name="manually-change-microsoft-plans"></a>Cambiar manualmente los planes de Microsoft
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Paso 1: Decidir cómo cambiar los planes
 

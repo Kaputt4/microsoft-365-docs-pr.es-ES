@@ -1,5 +1,5 @@
 ---
-title: Administrar relaciones de partners
+title: Administración de relaciones de asociados
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,85 +18,85 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
-description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
+description: Aprenda a trabajar con proveedores de soluciones certificados por Microsoft (asociados) para comprar y administrar productos y servicios para su organización o escuela.
 ms.date: 02/04/2022
-ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 313cea4bef92da66bb5c95f3cf9ccd0f9a1d6f32
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328979"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490727"
 ---
-# <a name="manage-partner-relationships"></a>Administrar relaciones de partners
+# <a name="manage-microsoft-certified-solution-provider-partner-relationships"></a>Administración de relaciones de asociados del proveedor de soluciones certificados por Microsoft
 
-Puede trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela. Hay algunos pasos necesarios para configurar las cosas.
+Puede trabajar con proveedores de soluciones certificados por Microsoft (asociados) para comprar y administrar productos y servicios para su organización o escuela. Hay algunos pasos implicados en la configuración de las cosas.
 
-1. Los administradores encuentran y se contacta con un partner mediante el formulario en <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
-2. Los partners envían una solicitud de correo electrónico a los clientes para establecer una relación de socio.
-3. Los clientes aceptan la invitación en Centro de administración de Microsoft 365 y comienzan a trabajar con el partner.
+1. Los administradores buscan y se comunican con un asociado mediante el formulario en <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
+2. Los partners envían una solicitud de correo electrónico a los clientes para establecer una relación de asociado.
+3. Los clientes aceptan la invitación en Centro de administración de Microsoft 365 y comienzan a trabajar con el asociado.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
-## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
+## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un asociado para mi organización o escuela?
 
-Hay varias formas de que un partner pueda trabajar con usted. En función de las necesidades empresariales indicadas, eligen uno de estos tipos cuando envían su solicitud para trabajar con usted.
+Hay varias maneras en que un asociado puede trabajar con usted. En función de las necesidades empresariales indicadas, eligen uno de estos tipos cuando envían su solicitud para trabajar con usted.
 
 | Tipo de socio | Descripción |
 | ------ | ------------------- |
-| Administrador delegado granular | Partners que administran productos y servicios para su organización o escuela, pero que tienen acceso limitado a lo que pueden hacer en el Centro de administración de Microsoft 365. Los privilegios de administrador delegados pormenorizados (GDAP) permiten a los partners completar tareas en el centro de administración sin tener permiso de administrador global. Al dar GDAP a los partners, se asegura de que tengan los roles menos permisivos y limite el riesgo para su organización. |
+| Administrador delegado pormenorizada | Partners que administran productos y servicios para su organización o escuela, pero que tienen acceso limitado a lo que pueden hacer en la Centro de administración de Microsoft 365. Los privilegios de administrador delegados pormenorizadas (GDAP) permiten a los asociados completar tareas en el centro de administración sin tener permiso de administrador global. Al proporcionar GDAP a los asociados, se asegura de que tienen los roles menos permisivos y limitan el riesgo para su organización. |
 | Revendedor | Partners que venden productos de Microsoft a su organización o escuela. |
-| Administrador delegado | Partners que administran productos y servicios para su organización o escuela. En Azure Active Directory (AD), el partner es un administrador global para el inquilino. Este rol les permite administrar servicios como la creación de cuentas de usuario, la asignación y administración de licencias y el restablecimiento de contraseñas. |
+| Administrador delegado | Partners que administran productos y servicios para su organización o escuela. En Azure Active Directory (AD), el asociado es un administrador global para el inquilino. Este rol les permite administrar servicios como la creación de cuentas de usuario, la asignación y administración de licencias y el restablecimiento de contraseña. |
 | Revendedor & administrador delegado | Partners que venden y administran productos y servicios de Microsoft a su organización o escuela. |
-| Partner | Le das a tu partner una cuenta de usuario en el espacio empresarial y funcionan con otras servicios Microsoft en tu nombre. |
-| Tutor | Los partners pueden restablecer las contraseñas y controlar los incidentes de soporte técnico. |
-| Partner del & de servicios de Microsoft Products (MPSA) | Si ha trabajado con varios partners a través del programa MPSA, puede permitirles ver las compras realizadas entre sí. |
-| Socio de línea de negocio (LOB) | Los partners pueden desarrollar, enviar y administrar aplicaciones de LOB específicas para su organización o escuela. |
+| Partner | Proporcione a su asociado una cuenta de usuario en el inquilino y trabaje con otros servicios de Microsoft en su nombre. |
+| Tutor | Los asociados pueden restablecer contraseñas y controlar los incidentes de soporte técnico. |
+| Asociado del Contrato de servicios de & de productos de Microsoft (MPSA) | Si ha trabajado con varios asociados a través del programa MPSA, puede permitirles ver las compras realizadas entre sí. |
+| Asociado de línea de negocio (LOB) | Los asociados pueden desarrollar, enviar y administrar aplicaciones lob específicas para su organización o escuela. |
 
-## <a name="find-a-partner"></a>Buscar un partner
+## <a name="find-a-partner"></a>Búsqueda de un asociado
 
 1. Vaya a <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
-2. Escribe tu ubicación, elige el tamaño de la organización, agrega palabras clave para el tipo de servicios que necesitas y, a continuación, **selecciona Ir**.
-3. Elija uno o más partners y, a continuación, **seleccione Póngase en contacto con los proveedores seleccionados**.
-4. Complete el formulario para describir sus necesidades empresariales y, a continuación, **seleccione Enviar**.
+2. Escriba su ubicación, elija el tamaño de la organización, agregue palabras clave para el tipo de servicios que necesita y, a continuación, seleccione **Ir**.
+3. Elija uno o varios asociados y, a continuación, seleccione **Ponerse en contacto con los proveedores seleccionados**.
+4. Complete el formulario para describir sus necesidades empresariales y, a continuación, seleccione **Enviar**.
 
-El partner se pone en contacto con usted y le ofrece la oportunidad de obtener más información sobre ellos. Si decide trabajar con ellos, le enviarán una invitación por correo electrónico para establecer una relación de socio.
+El asociado se pone en contacto con usted y le da la oportunidad de obtener más información sobre ellos. Si decide trabajar con ellos, le enviarán una invitación por correo electrónico para establecer una relación de asociado.
 
-## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Revisar y aceptar una relación de partner y el Contrato de cliente de Microsoft
+## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Revisar y aceptar una relación de asociado y Contrato de cliente de Microsoft
 
-Después de encontrar un socio y decidir trabajar con ellos, te envían una invitación por correo electrónico.
+Después de encontrar un partner y decidir trabajar con ellos, le enviarán una invitación por correo electrónico.
 
 1. En el correo electrónico, seleccione el vínculo para ir al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
-2. En la **página Aceptar contrato & autorizar al partner** , seleccione el vínculo para el Contrato de cliente de **Microsoft** y lea el documento.
+2. En la página **Accept agreement & authorize partner (Aceptar contrato & autorizar asociado**), seleccione el vínculo del **Contrato de cliente de Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
 4. Seleccione **Aceptar & Autorizar**.
-5. Se muestra la lista de partners con los que está trabajando. Seleccione cualquier partner para ver detalles.
+5. Se muestra la lista de asociados con los que está trabajando. Seleccione cualquier asociado para ver los detalles.
 
-## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Revisar y aceptar un contrato de cliente de Microsoft
+## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Revisar y aceptar un Contrato de cliente de Microsoft
 
-Si ya tienes un partner pero aún no has firmado un Contrato de cliente de Microsoft, debes aceptar el contrato antes de que puedan realizar compras o administrar tus suscripciones en tu nombre.
+Si ya tiene un asociado pero aún no ha firmado un Contrato de cliente de Microsoft, debe aceptar el contrato antes de que puedan realizar compras o administrar sus suscripciones en su nombre.
 
-1. Si recibe un correo electrónico de su partner, seleccione el vínculo para ir al Centro de administración de Microsoft 365 o vaya a la <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">página Aceptar</a> acuerdo.
-2. Seleccione el vínculo para el **Contrato de cliente de Microsoft** y lea el documento.
+1. Si recibe un correo electrónico de su asociado, seleccione el vínculo para ir al Centro de administración de Microsoft 365 o vaya a la página <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Aceptar contrato</a>.
+2. Seleccione el vínculo de la **Contrato de cliente de Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
 4. Seleccione **Aceptar**.
-5. Se muestra la lista de partners con los que está trabajando. Seleccione cualquier partner para ver detalles.
+5. Se muestra la lista de asociados con los que está trabajando. Seleccione cualquier asociado para ver los detalles.
 
-## <a name="remove-partner-admin-roles"></a>Quitar roles de administrador de partners
+## <a name="remove-partner-admin-roles"></a>Eliminación de roles de administrador de asociados
 
-Según la solicitud realizada por el partner, al aceptar la invitación, acepta darles roles de administrador global y de soporte técnico. Al conceder estos roles de administrador a un partner, se les conceden automáticamente privilegios de administrador delegados en Azure AD. Para obtener más información, consulte [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+En función de la solicitud realizada por el asociado, cuando acepte la invitación, acepta asignarles roles de administrador global y de soporte técnico. Al asignar estos roles de administrador a un asociado, se le conceden automáticamente privilegios de administrador delegado en Azure AD. Para más información, consulte [Privilegios de administrador delegado en Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-La nueva característica de privilegios administrativos delegados pormenorizados (GDAP) proporciona a los partners un acceso más detallado y con límite de tiempo a las cargas de trabajo de sus clientes. Esto significa que los partners pueden resolver mejor los problemas de seguridad de sus clientes. Los partners también pueden proporcionar más servicios a clientes que no se sientan cómodos con los niveles actuales de acceso de partners y que tienen requisitos normativos para proporcionar solo acceso con privilegios mínimos a los partners. Con GDAP, acepta dar a los partners roles especificados en su solicitud. Estos roles son personalizables, por lo que puede hablar con su partner si determinados permisos no son aprobados por usted.
+La nueva característica de privilegios administrativos delegados granulares (GDAP) proporciona a los asociados acceso más granular y con límite de tiempo a las cargas de trabajo de sus clientes. Esto significa que los asociados pueden abordar mejor los problemas de seguridad de sus clientes. Los partners también pueden proporcionar más servicios a los clientes que están incómodos con los niveles actuales de acceso de asociados y que tienen requisitos normativos para proporcionar solo acceso con privilegios mínimos a los asociados. Con GDAP, acepta asignar roles de asociado especificados en su solicitud. Estos roles son personalizables, por lo que puede hablar con su asociado si no ha aprobado determinados permisos.
 
-Si no quieres dar roles de administrador al partner, cancela la invitación en lugar de aceptarla.
+Si no desea asignar roles de administrador al asociado, cancele la invitación en lugar de aceptarla.
 
-Puede quitar roles de administrador de un partner en cualquier momento. La eliminación de los roles de administrador no quita la relación de partner. Todavía pueden trabajar con usted en una capacidad diferente, como un revendedor. Si decides que ya no quieres trabajar con un partner, ponte en contacto con tu partner para finalizar la relación.
+Puede quitar roles de administrador de un asociado en cualquier momento. Quitar los roles de administrador no quita la relación de asociado. Todavía pueden trabajar con usted en una capacidad diferente, como un revendedor. Si decide que ya no quiere trabajar con un asociado, póngase en contacto con él para finalizar la relación.
 
-1. En el Centro de administración, vaya a la **página Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relaciones departner</a>.
-2. En la **página Relaciones de partner** , seleccione la fila que contiene el nombre del partner que desea quitar.
-3. Seleccione la fila que contiene el nombre del partner.
+1. En el centro de administración, vaya a la página **Configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relaciones de asociados</a> .
+2. En la página **Relaciones de asociado,** seleccione la fila que contiene el nombre del asociado que desea quitar.
+3. Seleccione la fila que contiene el nombre del asociado.
 4. En la página del asociado, seleccione **Quitar roles**.
-5. En el **cuadro de diálogo Quitar roles** , seleccione **Sí**.
+5. En el cuadro de diálogo **¿Quitar roles?** , seleccione **Sí**.
 
 Si no ve la opción **Quitar roles** , póngase en contacto con el [Centro de partners](https://partner.microsoft.com/support).

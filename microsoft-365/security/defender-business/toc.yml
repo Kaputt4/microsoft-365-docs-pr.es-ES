@@ -13,6 +13,8 @@
           href: compare-mdb-m365-plans.md
         - name: Integración con Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
+        - name: Recursos para asociados
+          href: mdb-partners.md
     - name: Introducción
       items:
         - name: Obtener Defender para Empresas

@@ -1,5 +1,5 @@
 ---
-title: Cargas útiles para el entrenamiento de simulación de ataques
+title: Cargas en el entrenamiento de simulación de ataques
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a crear y administrar cargas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a21e3e72e435e9aaa53fb5fab825be6c490017fe
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840241"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487232"
 ---
-# <a name="payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Cargas para el entrenamiento de simulación de ataques en Defender para Office 365
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Cargas en el entrenamiento de simulación de ataques en Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -42,7 +42,7 @@ Se muestra la siguiente información para cada carga:
 - **Idioma**: si la carga contiene varias traducciones, los dos primeros idiomas se muestran directamente. Para ver los idiomas restantes, mantenga el puntero sobre el icono numérico (por ejemplo, **+10**).
 - **Origen**: en el caso de las cargas integradas, el valor es **Global**. En el caso de las cargas personalizadas, el valor es **Tenant**.
 - **Simulaciones iniciadas**: el número de simulaciones iniciadas que usan la carga útil.
-- **Tasa de riesgo (%)**: en el caso de las cargas integradas, este valor es la tasa de compromiso media prevista para las simulaciones de entrenamiento de simulación de ataques que usan el mismo tipo de carga en todas las demás organizaciones Microsoft 365.
+- **Tasa de riesgo (%)**: en el caso de las cargas integradas, este valor es la tasa de riesgo promedio prevista para las simulaciones de entrenamiento de simulación de ataques que usan el mismo tipo de carga en todas las demás organizaciones de Microsoft 365.
 - **Creado por**: para cargas integradas, el valor es **Microsoft**. En el caso de las cargas personalizadas, el valor es el UPN del usuario que creó la carga.
 - **Última modificación**
 - **Técnica**: Una de las [técnicas de ingeniería social](attack-simulation-training.md#select-a-social-engineering-technique) disponibles:
@@ -178,7 +178,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
      - <https://www.windocyte.com>
 
      > [!NOTE]
-     > Un servicio de reputación de direcciones URL podría identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores web admitidos antes de usar la dirección URL en una simulación. Para obtener más información, consulte [Direcciones URL de simulación de suplantación de identidad bloqueadas por Google Caja fuerte Exploración](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
+     > Un servicio de reputación de direcciones URL podría identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores web admitidos antes de usar la dirección URL en una simulación. Para obtener más información, consulte [Direcciones URL de simulación de suplantación de identidad bloqueadas por Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
    - **Sección Contenido de datos adjuntos** : esta sección solo está disponible si seleccionó **Vincular en datos adjuntos** en la página **Seleccionar técnica** .
 
@@ -190,7 +190,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
      - **Agregar etiquetas**
   
-     - **Tema**: Los valores disponibles son: **Activación de la cuenta**, **Verificación de cuenta**, **Facturación**, **Limpiar correo**, **Documento recibido**, **Gastos**, **Fax**, **Informe financiero**, **Mensajes entrantes**, **Factura**, **Elemento recibido**, **Alerta de inicio de sesión**, **Correo recibido**, **Otro**, **Contraseña**, **Pago**, **Nómina**, **Oferta personalizada**, **Cuarentena** , **Trabajo remoto**, **Revisar mensaje**, **Actualización de seguridad**, **Servicio suspendido**, **Firma requerida**, **Actualizar buzón Storage**, **Comprobar buzón** o **Correo de voz**.
+     - **Tema**: Los valores disponibles son: **Activación de la cuenta**, **Verificación de cuenta**, **Facturación**, **Limpiar correo**, **Documento recibido**, **Gastos**, **Fax**, **Informe financiero**, **Mensajes entrantes**, **Factura**, **Elemento recibido**, **Alerta de inicio de sesión**, **Correo recibido**, **Otro**, **Contraseña**, **Pago**, **Nómina**, **Oferta personalizada**, **Cuarentena** , **Trabajo remoto**, **Mensaje de revisión**, **Actualización de seguridad**, **Servicio suspendido**, **Firma requerida**, **Actualizar almacenamiento del buzón**, **Comprobar buzón** o **Correo de voz**.
   
      - **Marca**: Los valores disponibles son: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** u **otros**.
   

@@ -22,14 +22,14 @@ ms.custom:
 search.appverid: MET150
 description: Los administradores pueden reactivar una suscripción cuando expire, esté deshabilitada o cancelada, o si se canceló en medio de un período de suscripción.
 ms.date: 04/07/2021
-ms.openlocfilehash: 7cb93854f4da8e3568eef058009652cdb6b32b96
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1f0d38a3b0b09a581d4ed31a6d9abb9d8f8ea467
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101490"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489456"
 ---
-# <a name="reactivate-your-subscription"></a>Reactivar la suscripción
+# <a name="reactivate-your-microsoft-subscription"></a>Reactivación de la suscripción de Microsoft
 
 Puede reactivar la suscripción en el Centro de administración si: la suscripción expiró, microsoft la deshabilitó o si la canceló en medio de un período de suscripción.
   

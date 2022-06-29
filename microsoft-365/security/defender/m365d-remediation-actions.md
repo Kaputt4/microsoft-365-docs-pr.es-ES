@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5605678a1fcc30719d7f838a16452ba527c554b7
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847057"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492378"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ En la tabla siguiente se resumen las acciones de corrección que se admiten actu
 
 |Acciones de corrección del dispositivo (punto de conexión)  |Acciones de corrección de correo electrónico  |Usuarios (cuentas)  |
 |:---------|:---------|----------|
-|- Recopilación del paquete de investigación <br/>- Aislar el dispositivo (esta acción se puede deshacer)<br/>- Offboard machine <br/>- Ejecución de código de versión <br/>- Liberación de la cuarentena <br/>- Ejemplo de solicitud <br/>- Restringir la ejecución de código (esta acción se puede deshacer) <br/>- Ejecución del examen antivirus <br/>- Detener y poner en cuarentena      |- Dirección URL de bloqueo (tiempo de clic)<br/>- Eliminación temporal de mensajes de correo electrónico o clústeres<br/>- Poner en cuarentena el correo electrónico<br/>- Poner en cuarentena los datos adjuntos de un correo electrónico<br/>- Desactivar el reenvío de correo externo          |- Deshabilitar usuario<br />- Restablecer contraseña de usuario<br />- Confirmación del usuario como en peligro          |
+|- Recopilación del paquete de investigación <br/>- Aislar el dispositivo (esta acción se puede deshacer)<br/>- Offboard machine <br/>- Ejecución de código de versión <br/>- Liberación de la cuarentena <br/>- Ejemplo de solicitud <br/>- Restringir la ejecución de código (esta acción se puede deshacer) <br/>- Ejecutar examen de antivirus <br/>- Detener y poner en cuarentena <br/>- Contener dispositivos de la red     |- Dirección URL de bloqueo (tiempo de clic)<br/>- Eliminación temporal de mensajes de correo electrónico o clústeres<br/>- Poner en cuarentena el correo electrónico<br/>- Poner en cuarentena los datos adjuntos de un correo electrónico<br/>- Desactivar el reenvío de correo externo          |- Deshabilitar usuario<br />- Restablecer contraseña de usuario<br />- Confirmación del usuario como en peligro          |
 
 Las acciones de corrección, ya sean pendientes de aprobación o ya completadas, se pueden ver en el [Centro de acciones](m365d-action-center.md).
 
@@ -80,8 +80,9 @@ Además de las acciones de corrección que siguen las investigaciones automatiza
 - Acción de [respuesta dinámica](/windows/security/threat-protection/microsoft-defender-atp/live-response) manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
 - Acción de respuesta en vivo con [Microsoft Defender para punto de conexión API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de actividades](m365d-action-center.md)
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)
+- [Contener dispositivos de la red](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)

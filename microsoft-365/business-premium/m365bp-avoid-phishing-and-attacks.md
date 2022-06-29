@@ -2,8 +2,8 @@
 title: Protección contra suplantación de identidad (phishing) y otros ataques
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protección contra la suplantación de identidad (phishing) y otros ataques con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 1b5f276bc8b2f8ffff205679c50e32cbe559d6cb
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: eee5872e3fc9856cd6bc9d58f4fbdf91899f7c00
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893541"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489201"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protección contra suplantación de identidad (phishing) y otros ataques
 
@@ -44,7 +44,7 @@ Además de la protección frente a ataques que ofrece Microsoft 365 Empresa Pre
 - El **malware** es software malintencionado que se puede instalar en el equipo, y que normalmente se instala después de hacer clic en un vínculo o de abrir un documento desde un correo electrónico. Existen varios tipos de software malintencionado (por ejemplo, ransomware, cuando toman el control del equipo), y ninguno es beneficioso. 
 
 > [!TIP]
-> Para obtener más información sobre los conceptos de seguridad, consulte nuestro [Glosario de términos](m365bp-glossary.md).
+> Para obtener más información sobre los conceptos de seguridad, consulte nuestro [Glosario de términos](m365bp-glossary.yml).
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 

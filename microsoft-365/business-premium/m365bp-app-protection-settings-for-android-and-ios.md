@@ -2,11 +2,11 @@
 title: Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -26,19 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 263c85ed8b3ac236e4fdefa333fecccdc328a0b7
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 218646af1ea881d381d5bceca4b8c0138918ee20
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622183"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489213"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
 Este artículo aplica a Microsoft 365 Empresa Premium.
-
-> [!NOTE]
-> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Ver: Proteger las aplicaciones de Office en iOS
 
@@ -48,63 +45,63 @@ Puede configurar una directiva de acceso de usuario que requiera que los usuario
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
-1. En **Directivas**, elija **Agregar directiva**.
+2. En **Directivas**, elija **Agregar directiva**.
 
-1. En el panel **Agregar directiva**, escriba un nombre en **Nombre de directiva** y elija el tipo de directiva que desee en **Tipo de directiva**.
+3. En el panel **Agregar directiva**, escriba un nombre en **Nombre de directiva** y elija el tipo de directiva que desee en **Tipo de directiva**.
 
-1. Active **Proteger los archivos de trabajo cuando se produzca extravío o robo de los dispositivos** y, a continuación, asegúrese de que estén activadas las tres opciones siguientes:
+4. Active **Proteger los archivos de trabajo cuando se produzca extravío o robo de los dispositivos** y, a continuación, asegúrese de que estén activadas las tres opciones siguientes:
  
     - **Obligar a los usuarios a guardar todos los archivos de trabajo en OneDrive para la Empresa**
   
     - **Cifrar archivos de trabajo**
 
-1. Active **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles** y asegúrese de que la configuración está activada o establecida para cada elemento.
+5. Active **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles** y asegúrese de que la configuración está activada o establecida para cada elemento.
 
-1. En **Los archivos de estas aplicaciones deben estar protegidos**, seleccione las aplicaciones de Office que quiere proteger en dispositivos móviles.
+6. En **Los archivos de estas aplicaciones deben estar protegidos**, seleccione las aplicaciones de Office que quiere proteger en dispositivos móviles.
 
-1. En **¿Quién recibirá esta configuración?**, la opción predeterminada es todos los usuarios, pero puede modificarlo en **Cambiar** para seleccionar los grupos de seguridad que ha creado.
+7. En **¿Quién recibirá esta configuración?**, la opción predeterminada es todos los usuarios, pero puede modificarlo en **Cambiar** para seleccionar los grupos de seguridad que ha creado.
 
-1. Para terminar de crear la directiva, haga clic en **Agregar**.
+8. Para terminar de crear la directiva, haga clic en **Agregar**.
 
-1. En la página **Agregar directiva**, seleccione **Cerrar**.
+9. En la página **Agregar directiva**, seleccione **Cerrar**.
 
-1. En la página principal del centro de administración, confirme que se haya agregado la nueva directiva. Para ello, elija **Directivas** y revise la directiva en la página **Directivas**.
+10. En la página principal del centro de administración, confirme que se haya agregado la nueva directiva. Para ello, elija **Directivas** y revise la directiva en la página **Directivas**.
 
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-1. En el panel de navegación izquierdo, elija **Dispositivos** \> **Directivas** \> **Agregar**.
+2. En el panel de navegación izquierdo, elija **Dispositivos** \> **Directivas** \> **Agregar**.
   
-1. En el panel **Agregar directiva**, escriba un nombre único para esta directiva.
+3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva.
 
-1. En **Tipo de directiva**, elija **Administración de aplicaciones para Android** o **Administración de aplicaciones para iOS**, según el conjunto de directivas que quiera crear.
+4. En **Tipo de directiva**, elija **Administración de aplicaciones para Android** o **Administración de aplicaciones para iOS**, según el conjunto de directivas que quiera crear.
 
-1. Expanda **Proteger los archivos de trabajo cuando se produzca extravío o robo de los dispositivos** y **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles**. Configure las opciones como lo desee. **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles** está **desactivado** de forma predeterminada, pero se recomienda **activarlo** y aceptar los valores predeterminados. Para obtener más información, vea [Configuración disponible](#available-settings).
+5. Expanda **Proteger los archivos de trabajo cuando se produzca extravío o robo de los dispositivos** y **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles**. Configure las opciones como lo desee. **Administrar cómo acceden los usuarios a los archivos de Office en dispositivos móviles** está **desactivado** de forma predeterminada, pero se recomienda **activarlo** y aceptar los valores predeterminados. Para obtener más información, vea [Configuración disponible](#available-settings).
 
     Siempre puede usar el vínculo **Restaurar configuración predeterminada** para volver a la configuración predeterminada.
 
 :::image type="content" source="Media/m365bp-add-policy.png" alt-text="Crear una directiva con administración de aplicaciones.":::
   
-1. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, elija los grupos de seguridad que recibirán esta configuración \> y **Seleccionar**.
+6. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, elija los grupos de seguridad que recibirán esta configuración \> y **Seleccionar**.
 
-1. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos.
+7. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos.
 
 ## <a name="edit-an-app-management-policy"></a>Editar una directiva de administración de aplicaciones
 
 1. En la tarjeta **Directivas**, elija **Editar directiva**.
 
-1. En el panel **Editar directiva**, seleccione la directiva que quiere cambiar.
+2. En el panel **Editar directiva**, seleccione la directiva que quiere cambiar.
 
-1. Elija **Editar** junto a cada configuración para cambiar los valores de la directiva. Cuando se cambia un valor, se guarda automáticamente en la directiva.
+3. Elija **Editar** junto a cada configuración para cambiar los valores de la directiva. Cuando se cambia un valor, se guarda automáticamente en la directiva.
 
-1. Al acabar, cierre el panel **Editar directiva**.
+4. Al acabar, cierre el panel **Editar directiva**.
 
 ## <a name="delete-an-app-management-policy"></a>Eliminar una directiva de administración de aplicaciones
 
 1. En la página **Directivas**, elija una directiva y, luego, **Eliminar**.
 
-1. En el panel **Eliminar directiva**, elija **Confirmar** para eliminar la directiva o directivas que haya elegido. 
+2. En el panel **Eliminar directiva**, elija **Confirmar** para eliminar la directiva o directivas que haya elegido. 
 
 ## <a name="available-settings"></a>Configuración disponible
 

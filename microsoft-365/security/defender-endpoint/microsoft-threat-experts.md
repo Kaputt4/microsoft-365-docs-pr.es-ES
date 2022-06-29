@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 38e0145d1df971d651aab0be02c08e46ea70fe70
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159454"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490330"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -46,11 +46,11 @@ Vea este vídeo para obtener información sobre cómo Expertos en amenazas de Mi
 
 > [!NOTE]
 > Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar al servicio de búsqueda de amenazas administrado.
-> Los expertos en amenazas no están disponibles actualmente en la Microsoft 365 para las nubes del Gobierno de EE. UU.
+> Expertos en amenazas no está disponible actualmente en las nubes de Microsoft 365 para gobiernos de Ee. UU.
 
 Si es un cliente Microsoft Defender para punto de conexión, debe solicitar **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas de su entorno para que pueda responder a ellas rápidamente.
 
-Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya a **Configuración** \> **Características** \> **avanzadas** \> **generales** \> de puntos de conexión **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para aplicarlas. Una vez aceptado, obtendrá las ventajas de Las notificaciones de ataque dirigidas.
+Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya a **Configuración** \> **Puntos de conexión** **Características** \> **avanzadas** \> generales \> **Expertos en amenazas de Microsoft - Notificaciones de ataque dirigidas** para aplicarlas. Una vez aceptado, obtendrá las ventajas de Las notificaciones de ataque dirigidas.
 
 Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft- Experts on Demand** para consultar a nuestros expertos en amenazas sobre las detecciones y adversarios pertinentes a los que se enfrenta su organización.
 
@@ -67,7 +67,7 @@ Expertos en amenazas de Microsoft: la notificación de ataque dirigido proporcio
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Expertos en amenazas de Microsoft: expertos a petición
 
-Los clientes pueden interactuar con nuestros expertos en seguridad directamente desde dentro de Microsoft 365 Defender para obtener una respuesta oportuna y precisa. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde consultas de alertas, dispositivos potencialmente comprometidos, causa principal de una conexión de red sospechosa, hasta inteligencia adicional sobre amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
+Los clientes pueden interactuar con nuestros expertos en seguridad directamente desde Microsoft 365 Defender portal para obtener su respuesta. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde consultas de alertas, dispositivos potencialmente comprometidos, causa principal de una conexión de red sospechosa, hasta inteligencia adicional sobre amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
 
 - Obtenga aclaraciones adicionales sobre las alertas, incluida la causa principal o el ámbito del incidente.
 - Obtenga claridad sobre el comportamiento sospechoso del dispositivo y los pasos siguientes si se enfrenta a un atacante avanzado.

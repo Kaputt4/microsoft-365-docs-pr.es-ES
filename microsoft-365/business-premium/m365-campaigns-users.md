@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo estas recomendaciones de seguridad para Microsoft 365 Empresa Premium afectan a los usuarios y protegen los datos.
-ms.openlocfilehash: 30e609a6dc74ef8a0303c93f65eb44a4003d3a99
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 49d5a4cea525f8245599ded625af6d7a5b355eae
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893147"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491103"
 ---
 # <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios de Microsoft 365
 
@@ -73,7 +73,7 @@ También es importante que los usuarios mantengan actualizado su dispositivo de 
 
 Para [dispositivos Mac y Windows 10 no administrados](m365bp-protect-pcs-macs.md), los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
 
-**Habilitar funcionalidades de seguridad básicas en dispositivos Windows 10 BYOD y Mac**
+### <a name="enable-basic-security-capabilities-on-byod-windows-10-and-mac-devices"></a>Habilitar funcionalidades de seguridad básicas en dispositivos Windows 10 BYOD y Mac
 
 |**Windows 10**|**Mac**|
 |:-----|:------|

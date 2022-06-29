@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo identificar personas críticas en una organización y agregar la etiqueta de cuenta de prioridad para proporcionarles protección adicional.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 466061562ba0ccc1a33a9fe6ca58073196f4f7e0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842346"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492186"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365
 
@@ -40,9 +40,9 @@ Las cuentas de prioridad son objetivo de los atacantes con más frecuencia y, po
 
 La protección de la cuenta de prioridad está activada de forma predeterminada para los usuarios críticos identificados previamente. Sin embargo, el administrador de seguridad de su organización también puede activar la protección de la cuenta de prioridad siguiendo estos pasos:
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Configuración** \> **Correo electrónico & protección** de **la cuenta de prioridad** de colaboración\>. Para ir directamente a la página **Priority account protection (Protección de cuenta prioritaria** ), use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Configuración Correo** \> **electrónico & protección** de **la cuenta de prioridad** de colaboración\>. Para ir directamente a la página **Priority account protection (Protección de cuenta prioritaria** ), use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
-2. En la página **Protección de la cuenta de prioridad** , active **Protección de la cuenta de prioridad**.
+2. En la página **Protección de la cuenta de prioridad** , active **Protección de la cuenta de prioridad** (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
     > [!div class="mx-imgBorder"]
     > ![Active La protección de la cuenta de prioridad.](../../media/mdo-priority-account-protection.png)
@@ -50,7 +50,23 @@ La protección de la cuenta de prioridad está activada de forma predeterminada 
 > [!NOTE]
 > No se recomienda deshabilitar ni desactivar la protección de la cuenta de prioridad.
 
-### <a name="enable-the-priority-account-tag"></a>Habilitación de la etiqueta de cuenta de prioridad
+Si desea usar Exchange Online PowerShell para activar la protección de la cuenta de prioridad, siga estos pasos:
+
+1. [Conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y ejecute el siguiente comando:
+
+   ```powershell
+   Set-EmailTenantSettings -EnablePriorityAccountProtection $true
+   ```
+
+2. Para comprobar que la protección de la cuenta de prioridad está activada, ejecute el siguiente comando para comprobar el valor de la propiedad EnablePriorityAccountProtection:
+
+   ```powershell
+   Get-EmailTenantSettings | Format-List Identity,EnablePriorityAccountProtection
+   ```
+
+   El valor True significa que la protección de la cuenta de prioridad está activada. El valor False significa que la protección de la cuenta de prioridad está desactivada.
+
+### <a name="assign-the-priority-account-tag-to-users"></a>Asignación de la etiqueta de cuenta de prioridad a los usuarios
 
 Microsoft Defender para Office 365 admite cuentas de prioridad como etiquetas que se pueden usar como filtros en alertas, informes, incidentes, etc.
 

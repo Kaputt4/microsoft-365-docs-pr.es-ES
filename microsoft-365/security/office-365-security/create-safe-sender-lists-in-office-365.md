@@ -18,23 +18,23 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974221"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493095"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creación de listas de remitentes seguros en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si es un cliente Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin Exchange Online buzones, EOP ofrece varias formas de garantizar que los usuarios reciban correo electrónico de remitentes de confianza. Estas opciones incluyen Exchange reglas de flujo de correo (también conocidas como reglas de transporte), Outlook Caja fuerte remitentes, la lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidas o listas de dominios permitidas en directivas contra correo no deseado. Colectivamente, puede considerar estas opciones como _listas de remitentes seguros_.
+Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin Exchange Online buzones, EOP ofrece varias formas de garantizar que los usuarios recibirán correo electrónico de remitentes de confianza. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidas o listas de dominios permitidas en directivas contra correo no deseado. Colectivamente, puede considerar estas opciones como _listas de remitentes seguros_.
 
 Las listas de remitentes seguros disponibles se describen en la lista siguiente en orden de la más recomendada a la menos recomendada:
 
@@ -55,7 +55,7 @@ Las reglas de flujo de correo permiten la máxima flexibilidad para garantizar q
 >
 > - Para permitir que un dominio envíe correo electrónico no autenticado (omitir la protección contra la suplantación de identidad) pero no omitir el correo no deseado y otras protecciones, puede usar la [información de inteligencia de](learn-about-spoof-intelligence.md) suplantación y la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
 >
-> - EOP y Outlook inspeccionar diferentes propiedades de mensaje para determinar el remitente del mensaje. Para obtener más información, consulte la sección [Consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este artículo.
+> - EOP y Outlook inspeccionan diferentes propiedades de mensaje para determinar el remitente del mensaje. Para obtener más información, consulte la sección [Consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este artículo.
 >
 
 Por el contrario, también tiene varias opciones para bloquear el correo electrónico de orígenes específicos mediante _listas de remitentes bloqueados_. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
@@ -103,14 +103,16 @@ En el ejemplo siguiente se supone que necesita correo electrónico de contoso.co
 
       :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="La configuración de la regla de flujo de correo en el EAC para omitir el filtrado de correo no deseado" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
-## <a name="use-outlook-safe-senders"></a>Uso de remitentes de Outlook Caja fuerte
+## <a name="use-outlook-safe-senders"></a>Uso de remitentes seguros de Outlook
 
 > [!CAUTION]
-> Este método crea un alto riesgo de que los atacantes entreguen correctamente el correo electrónico a la Bandeja de entrada que, de lo contrario, se filtraría; sin embargo, las listas de remitentes Caja fuerte o dominios de Caja fuerte del usuario no impiden que se filtren mensajes de phishing de malware o de alta confianza.
+> Este método crea un alto riesgo de que los atacantes entreguen correctamente el correo electrónico a la Bandeja de entrada que, de lo contrario, se filtraría; sin embargo, las listas de remitentes seguros o dominios seguros del usuario no impiden el filtrado de malware o mensajes de suplantación de identidad de alta confianza.
 
-En lugar de una configuración organizativa, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista remitentes de Caja fuerte en el buzón. Para obtener instrucciones, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Esto no es deseable en la mayoría de las situaciones, ya que los remitentes omitirán partes de la pila de filtrado. Aunque confía en el remitente, el remitente puede seguir en peligro y enviar contenido malintencionado. Es mejor que deje que nuestros filtros hagan lo necesario para comprobar cada mensaje y, a continuación, [informe de los falsos positivos o negativos a Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros se equivocaron. La omisión de la pila de filtrado también interfiere con [ZAP](zero-hour-auto-purge.md).
+En lugar de una configuración organizativa, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista Remitentes seguros del buzón. Para obtener instrucciones, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Este método no es deseable en la mayoría de las situaciones, ya que los remitentes omitirán partes de la pila de filtrado. Aunque confía en el remitente, el remitente puede seguir en peligro y enviar contenido malintencionado. Es mejor cuando deje que nuestros filtros comprueben todos los mensajes y [luego notifiquen el falso positivo o negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nos equivocamos. La omisión de la pila de filtrado también interfiere con la [purga automática de cero horas (ZAP).](zero-hour-auto-purge.md)
 
-Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes Caja fuerte de un usuario, el campo encabezado **X-Forefront-Antispam-Report** contendrá el valor `SFV:SFE`, que indica que se omitió el filtrado de correo no deseado, suplantación de identidad y suplantación de identidad (phishing).
+Por diseño y por mayor seguridad de Exchange Online buzones, solo se reconoce la configuración de correo no deseado para remitentes seguros, remitentes bloqueados y dominios bloqueados. Se omite la configuración de dominios seguros.
+
+Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-Antispam-Report** contendrá el valor `SFV:SFE`, que indica que se omitió el filtrado de correo no deseado, suplantación de identidad y suplantación de identidad (phishing).
 
 ## <a name="use-the-ip-allow-list"></a>Uso de la lista de direcciones IP permitidas
 
@@ -151,9 +153,9 @@ Por ejemplo, supongamos que Blue Yonder Airlines ha contratado a Margie's Travel
 - La `5321.MailFrom` dirección es blueyonder.airlines@margiestravel.com.
 - La `5322.From` dirección es blueyonder@news.blueyonderairlines.com, que es lo que verá en Outlook.
 
-Caja fuerte listas de remitentes y listas de dominios seguros en las directivas contra correo no deseado en EOP inspeccionan solo las `5322.From` direcciones, esto es similar a Outlook Caja fuerte remitentes que usan la `5322.From` dirección.
+Las listas de remitentes seguros y las listas de dominios seguros en las directivas contra correo no deseado en EOP inspeccionan solo las `5322.From` direcciones, lo que es similar a los remitentes seguros de Outlook que usan la `5322.From` dirección.
 
 Para evitar que se filtre este mensaje, puede realizar los pasos siguientes:
 
-- Agregue blueyonder@news.blueyonderairlines.com (la `5322.From` dirección) como remitente de Outlook Caja fuerte.
+- Agregue blueyonder@news.blueyonderairlines.com (la `5322.From` dirección) como remitente seguro de Outlook.
 - [Use una regla de flujo de correo](#recommended-use-mail-flow-rules) con una condición que busque mensajes de blueyonder@news.blueyonderairlines.com (la `5322.From` dirección, blueyonder.airlines@margiestravel.com (el `5321.MailFrom`) o ambos.

@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/02/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general sobre cómo configurar todos los BYOD (bring your own devices) con protección contra ciberataques y otras amenazas maliciosas y vulnerabilidades.
-ms.openlocfilehash: 5485df4f468d724dee5ecb2fcc80b89523eb9c63
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1ecf39d7d08cd76e0279b0de8869ed14550e020f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101930"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491050"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configuración de dispositivos (BYOD) no administrados 
 
-Cada dispositivo es una posible vía de ataque en la red y debe supervisarse y administrarse correctamente, incluso los dispositivos que son de propiedad personal pero que se usan para el trabajo. En esta misión crítica, se configura la protección para todos los Bring Your Own Devices (BYOD), que son los de mayor riesgo para la organización debido a que no se administran. Es importante proteger estos dispositivos lo antes posible. 
+Cada dispositivo es una posible vía de ataque en la red y debe supervisarse y administrarse correctamente, incluso los dispositivos que son de propiedad personal pero que se usan para el trabajo. En esta misión crítica, se configura la protección para todos los Bring Your Own Devices (BYOD), que son los de mayor riesgo para la organización debido a que no se administran. Es importante proteger estos dispositivos lo antes posible.
 
 Sus objetivos son los siguientes:
 

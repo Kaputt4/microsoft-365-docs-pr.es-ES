@@ -20,14 +20,14 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo revisar y aprobar o denegar solicitudes de licencia de los usuarios para su suscripción de Microsoft 365 para empresas.
 ms.date: 04/22/2022
-ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b4259c4c04284e47193d827a6a10214669a5c991
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044255"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491015"
 ---
-# <a name="manage-license-requests"></a>Administración de solicitudes de licencia
+# <a name="manage-self-service-license-requests"></a>Administración de solicitudes de licencia de autoservicio
 
 > [!NOTE]
 > La información de este artículo solo se aplica a los productos comprados de autoservicio. Para obtener más información, consulte [Preguntas más frecuentes sobre compras de autoservicio](../subscriptions/self-service-purchase-faq.yml).
@@ -35,7 +35,7 @@ ms.locfileid: "66044255"
 Si deshabilita las compras de autoservicio en su organización, puede usar solicitudes de licencias para administrar el proceso de solicitud de licencia para los usuarios. Cuando un usuario intenta realizar una compra de autoservicio para un producto que ha bloqueado, puede enviarle una solicitud de licencia, el administrador. Cuando realizan una solicitud, pueden agregar los nombres de otros usuarios que también necesitan licencias para el producto.
 
 > [!NOTE]
-> Si impide que los usuarios realicen compras de autoservicio, Microsoft no les envía correos electrónicos de marketing. Además, si usan una versión de prueba de un producto, no ven mensajes para comprarlo. Para obtener más información, consulte [Administración de compras de autoservicio (administrador).](../subscriptions/manage-self-service-purchases-admins.md)
+> Si impide que los usuarios realicen compras de autoservicio, Microsoft no les envía correos electrónicos de marketing. Además, si usan una versión de prueba de un producto, no ven mensajes para comprarlo. Para más información, consulte [Administración de compras de autoservicio (Administración).](../subscriptions/manage-self-service-purchases-admins.md)
 
 Para ver y administrar las solicitudes de licencia, el administrador usa la pestaña **Solicitudes** de la página **Licencias** . En la lista se muestra el nombre del producto solicitado, el nombre de la persona que solicita una licencia, la fecha solicitada y el estado de la solicitud. Los administradores pueden filtrar la lista para mostrar las solicitudes pendientes o completadas. Las solicitudes se mantienen durante 30 días.
 
@@ -53,7 +53,7 @@ Si su organización tiene su propio proceso de solicitud, puede usarlo en su lug
 1. En el Centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> de **facturación** >  y seleccione la pestaña **Solicitudes**.
 2. Seleccione **Usar el proceso de solicitud existente en su lugar**.
 3. En el panel derecho, en el cuadro **Mensaje** , escriba el mensaje que quiere que vean los usuarios cuando soliciten una licencia. Si también desea incluir un vínculo a la directiva de su organización u otra documentación, escriba la dirección URL en el cuadro de texto **Vínculo a la documentación (opcional** ).
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 Cuando vuelva a la lista **de solicitudes** , verá el mensaje **You're using your own license request process (Está usando su propio proceso de solicitud de licencia**). Para realizar cambios en el mensaje que se envía a los usuarios, seleccione **Usar el proceso de solicitud existente en su lugar**.
 
@@ -62,7 +62,7 @@ Cuando vuelva a la lista **de solicitudes** , verá el mensaje **You're using yo
 1. En el Centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> de **facturación** >  y seleccione la pestaña **Solicitudes**.
 2. Seleccione **Usar el proceso de solicitud existente en su lugar**.
 3. En el panel derecho, desactive la casilla **Usar el proceso de solicitud de mi organización** .
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ## <a name="approve-or-deny-a-license-request"></a>Aprobación o denegación de una solicitud de licencia
 

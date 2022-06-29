@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc32e6827e9751dc72d28b8eff79d1966f43f646
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c1790b908389839b1fd35525d5f8e33b58192d67
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159963"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492169"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 
@@ -33,7 +33,7 @@ ms.locfileid: "66159963"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje podría marcarse como incorrecto (un falso positivo) o un mensaje incorrecto podría permitirse a través de (un falso negativo).
+En las organizaciones de Microsoft 365 con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje podría marcarse como incorrecto (un falso positivo) o un mensaje incorrecto podría permitirse a través de (un falso negativo).
 
 La lista de permitidos o bloqueados de inquilinos del portal de Microsoft 365 Defender proporciona una manera de invalidar manualmente los veredictos de filtrado de Microsoft 365. La lista de permitidos o bloqueados de inquilinos se usa durante el flujo de correo para los mensajes entrantes (no se aplica a los mensajes dentro de la organización) y en el momento en que el usuario hace clic. Puede especificar los siguientes tipos de invalidaciones:
 
@@ -45,11 +45,11 @@ La lista de permitidos o bloqueados de inquilinos del portal de Microsoft 365 De
 - Archivos que se van a permitir.
 - Dominios o correos electrónicos del remitente que se van a permitir.
 
-En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones).
+En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online  buzones).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+- En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. Para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
 
@@ -89,17 +89,13 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Configuración de la lista de permitidos o bloqueados de inquilinos
 
-### <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
-
-En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. Para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
-
-### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Uso Exchange Online PowerShell o PowerShell de EOP independiente
-
 Para permitir o bloquear correos electrónicos, consulte [Permitir o bloquear correos electrónicos mediante la Lista de permitidos o bloqueados de inquilinos](allow-block-email-spoof.md).
 
 Para permitir o bloquear archivos, consulte [Permitir o bloquear archivos mediante la Lista de inquilinos permitidos o bloqueados](allow-block-files.md).
 
 Para permitir o bloquear direcciones URL, consulte [Permitir o bloquear direcciones URL mediante la Lista de permitidos o bloqueados de inquilinos](allow-block-urls.md).
+
+Estos artículos contienen las instrucciones para agregar o quitar o modificar entradas en Lista de permitidos o bloqueados de inquilinos mediante Microsoft 365 Defender Portal y Exchange Online PowerShell o PowerShell EOP independiente.
 
 ### <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Qué esperar después de agregar una entrada de permitir o bloquear
 

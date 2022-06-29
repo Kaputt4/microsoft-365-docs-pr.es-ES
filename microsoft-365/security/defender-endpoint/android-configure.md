@@ -1,7 +1,7 @@
 ---
 title: Configurar Microsoft Defender para punto de conexión en funciones de Android
 description: Describe cómo configurar Microsoft Defender para punto de conexión en Android
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mde, android, configuración
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mde, android, configuration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f4ebaadd22a14eb2a9b24194c43fb35a5382adf
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 1ffaaf3984afdb6e5d87210fc23e7463d41b7ee4
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923247"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493261"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para punto de conexión en características de Android
 
@@ -35,7 +35,7 @@ ms.locfileid: "65923247"
 
 Microsoft Defender para punto de conexión en Android, junto con Microsoft Intune y Azure Active Directory, permite aplicar las directivas de cumplimiento de dispositivos y acceso condicional en función de los niveles de riesgo del dispositivo. Defender para punto de conexión es una solución de Mobile Threat Defense (MTD) que puede implementar para aprovechar esta funcionalidad a través de Intune.
 
-Para obtener más información sobre cómo configurar Defender para punto de conexión en Android y acceso condicional, consulte [Defender para punto de conexión e Intune](/mem/intune/protect/advanced-threat-protection).
+Para obtener más información sobre cómo configurar Defender para punto de conexión en Android y acceso condicional, consulte [Defender para punto de conexión y Intune](/mem/intune/protect/advanced-threat-protection).
 
 ## <a name="configure-custom-indicators"></a>Configuración de indicadores personalizados
 
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo configurar Defender para punto de con
 Defender para punto de conexión en Android permite a los administradores configurar indicadores personalizados para admitir también dispositivos Android. Para obtener más información sobre cómo configurar indicadores personalizados, consulte [Administración de indicadores](manage-indicators.md).
 
 ## <a name="configure-web-protection"></a>Configuración de la protección web
-Defender para punto de conexión en Android permite a los administradores de TI configurar la característica de protección web. Esta funcionalidad está disponible en el Centro de administración de Microsoft Endpoint Manager.
+Defender para punto de conexión en Android permite a los administradores de TI configurar la característica de protección web. Esta funcionalidad está disponible en el Centro de Endpoint Manager Administración de Microsoft.
 
 > [!NOTE]
 > Defender para punto de conexión en Android usaría una VPN para proporcionar la característica de protección web. No es una VPN normal y es una VPN local o de bucle automático que no toma tráfico fuera del dispositivo.
@@ -55,25 +55,25 @@ Defender para punto de conexión en Android permite a los administradores de TI 
 >[!NOTE]
 >La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Esta característica proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados que son el vector de ataque principal para las redes Wi-Fi. Los administradores pueden enumerar los certificados de entidad de certificación (CA) raíz y entidad de certificación raíz privada en el Centro de administración de Microsoft Endpoint Manager y establecer la confianza con los puntos de conexión. Proporciona al usuario una experiencia guiada para conectarse a redes seguras y también le notifica si se detecta una amenaza relacionada. 
+Esta característica proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados que son el vector de ataque principal para las redes Wi-Fi. Los administradores pueden enumerar los certificados de entidad de certificación (CA) raíz y entidad de certificación raíz privada en el Centro de microsoft Endpoint Manager Administración y establecer la confianza con los puntos de conexión. Proporciona al usuario una experiencia guiada para conectarse a redes seguras y también le notifica si se detecta una amenaza relacionada. 
 
-Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el Centro de administración de Microsoft Endpoint Manager, así como agregar certificados de confianza. Los administradores también pueden habilitar [los controles de privacidad](android-configure.md) para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android.
+Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de microsoft Endpoint Manager Administración, así como agregar certificados de confianza. Los administradores también pueden habilitar [los controles de privacidad](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android.
 
 La protección de red en Microsoft Defender para punto de conexión está habilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para **configurar la protección de red en dispositivos Android.**
 
-1. En Administrador de Microsoft Endpoint Manager, vaya a Aplicaciones > Directivas de configuración de aplicaciones. Cree una nueva directiva de configuración de aplicaciones.
+1. En Microsoft Endpoint Manager Administración, vaya a Aplicaciones > Directivas de configuración de aplicaciones. Cree una nueva directiva de configuración de aplicaciones.
     > [!div class="mx-imgBorder"]
-    > ![Imagen de cómo crear una directiva.](images/create-policy.png)
+    > ![Imagen de cómo crear una directiva.](images/android-mem.png)
 1. Proporcione un nombre y una descripción para identificar de forma única la directiva. Seleccione **"Android Enterprise"** como plataforma y **"Solo perfil de trabajo de propiedad personal"** como tipo de perfil y **"Microsoft Defender"** como aplicación de destino.
     > [!div class="mx-imgBorder"]
     > ![Imagen de los detalles de la directiva.](images/appconfigdetails.png)
-1. En la página Configuración, seleccione **"Usar diseñador de configuración"** y agregue **"Habilitar protección de red en Microsoft Defender"** como clave y valor como **"0"** a protección de red diable. (La protección de red está habilitada de forma predeterminada)
+1. En la página Configuración, seleccione **"Usar diseñador de configuración"** y agregue **"Habilitar protección de red en Microsoft Defender"** como clave y valor como **"0"** para deshabilitar la protección de red. (La protección de red está habilitada de forma predeterminada)
     > [!div class="mx-imgBorder"]
     > ![Imagen de cómo seleccionar habilitar la directiva de protección de red](images/selectnp.png)
     
     > [!div class="mx-imgBorder"]
     > ![Imagen de agregar directiva de configuración.](images/npvalue.png)
-1. Si su organización usa entidades de certificación raíz que podrían ser privadas por naturaleza, es necesario establecer una confianza explícita entre Intune (solución MDM) y los dispositivos del usuario para que defender no los detecte como certificados no autorizados.  
+1. Si su organización usa entidades de certificación raíz que podrían ser privadas por naturaleza, es preciso establecer una confianza explícita entre Intune (solución MDM) y los dispositivos del usuario para que defender no los detecte como certificados no autorizados.  
 
     Para establecer la confianza para las ENTIDADes de certificación raíz, use **"Lista de certificados de entidad de certificación de confianza para protección de red (versión preliminar)"** como clave y, en valor, agregue la **"lista separada por comas de huellas digitales de certificado"**.
     > [!div class="mx-imgBorder"]
@@ -92,7 +92,7 @@ La protección de red en Microsoft Defender para punto de conexión está habili
 ## <a name="privacy-controls"></a>Controles de privacidad
 
 > [!IMPORTANT]
-> Los controles de privacidad de Microsoft Defender para punto de conexión en Android están en versión preliminar. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+> Los controles de privacidad para Microsoft Defender para punto de conexión en Android están en versión preliminar. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 Los siguientes controles de privacidad están disponibles para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android:
 
@@ -101,13 +101,14 @@ Los siguientes controles de privacidad están disponibles para configurar los da
 |Informe de malware |Los administradores pueden configurar el control de privacidad para el informe de malware: si la privacidad está habilitada, Defender para punto de conexión no enviará el nombre de la aplicación de malware ni otros detalles de la aplicación como parte del informe de alertas de malware. |
 |Informe de phish |Los administradores pueden configurar el control de privacidad para el informe de phish: si la privacidad está habilitada, Defender para punto de conexión no enviará el nombre de dominio ni los detalles del sitio web no seguro como parte del informe de alertas de phish. |
 |Evaluación de vulnerabilidades de aplicaciones (solo Android) |De forma predeterminada, solo se envía información sobre las aplicaciones instaladas en el perfil de trabajo para la evaluación de vulnerabilidades. Los administradores pueden deshabilitar la privacidad para incluir aplicaciones personales|
+|Protección de red (versión preliminar)| Los administradores pueden habilitar o deshabilitar la privacidad en la protección de red: si están habilitados, Defender no enviará detalles de red.|
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configuración de la evaluación de vulnerabilidades de aplicaciones para dispositivos BYOD
 
-Desde la versión 1.0.3425.0303 de Microsoft Defender para punto de conexión en Android, podrá ejecutar evaluaciones de vulnerabilidades del sistema operativo y las aplicaciones instaladas en los dispositivos móviles incorporados.
+A partir de la versión 1.0.3425.0303 de Microsoft Defender para punto de conexión en Android, podrá ejecutar evaluaciones de vulnerabilidades del sistema operativo y las aplicaciones instaladas en los dispositivos móviles incorporados.
 
 > [!NOTE]
-> La evaluación de vulnerabilidades forma parte de [La administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md) en Microsoft Defender para punto de conexión. 
+> La evaluación de vulnerabilidades forma parte de [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md) en Microsoft Defender para punto de conexión. 
 
 **Notas sobre la privacidad relacionada con las aplicaciones de dispositivos personales (BYOD):**
 
@@ -121,7 +122,7 @@ Siga estos pasos para **habilitar la evaluación de vulnerabilidades de las apli
 > [!NOTE]
 > De forma predeterminada, esta opción está desactivada para los dispositivos inscritos con el modo de administración de dispositivos.
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android
    - **Perfil**: seleccione "Personalizado" y haga clic en Crear.
@@ -141,7 +142,7 @@ Siga estos pasos para **habilitar la evaluación de vulnerabilidades de las apli
 
 Defender for Endpoint admite la evaluación de vulnerabilidades de las aplicaciones en el perfil de trabajo. Sin embargo, en caso de que quiera desactivar esta característica para los usuarios de destino, puede usar los pasos siguientes:
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise**; seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderTVMPrivacyMode** como tipo de clave y valor como **Entero**.
@@ -159,7 +160,7 @@ El control de privacidad del informe phish se puede usar para deshabilitar la re
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android.
    - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
@@ -181,7 +182,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios de destino en el perfil de trabajo:
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderExcludeURLInReport** como tipo de clave y valor como **Integer**.
@@ -198,7 +199,7 @@ El control de privacidad para el informe de amenazas de malware se puede usar pa
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android.
    - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
@@ -220,7 +221,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios de destino en el perfil de trabajo:
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderExcludeAppInReport** como tipo de clave y valor como **Entero**.

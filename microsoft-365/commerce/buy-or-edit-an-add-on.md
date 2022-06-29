@@ -21,16 +21,16 @@ ms.custom:
 - AdminTemplateSet
 description: Obtenga información sobre cómo comprar y administrar complementos para su suscripción de Microsoft 365 para empresas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101654"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492090"
 ---
-# <a name="buy-or-manage-add-ons"></a>Comprar o administrar complementos
+# <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Compra o administración de complementos para planes empresariales de Microsoft 365
 
-Muchos Microsoft 365 para planes de negocio tienen complementos que puede comprar para sus suscripciones. Los complementos proporcionan más características para mejorar la experiencia de suscripción.
+Muchos planes de Microsoft 365 para empresas tienen complementos que puede comprar para sus suscripciones. Los complementos proporcionan más características para mejorar la experiencia de suscripción.
 
 Hay dos tipos de complementos:
 
@@ -52,7 +52,7 @@ Para obtener información sobre los complementos de Skype Empresarial, vea [Lice
 3. En la página de detalles del producto, seleccione **Siguiente**.
 4. Si es necesario, complete cualquier otra información de pedido. Esta información puede incluir la selección de la suscripción para la que se encuentra el complemento. Cuando haya terminado, seleccione **Desteger ahora**.
 5. Si es necesario, revise la información de pedidos y precios y, a continuación, seleccione **Siguiente**.
-6. Elija un método de pago o agregue uno nuevo y, a continuación, seleccione **Realizar pedido** > **Ir a inicio del administrador**.
+6. Elija un método de pago o agregue uno nuevo y, a continuación, seleccione **Realizar pedido** > **Ir a Administración Inicio**.
 
 ## <a name="manage-an-add-on"></a>Administración de un complemento
 

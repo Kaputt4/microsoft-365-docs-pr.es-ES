@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 49e3e2a0d63303b1c5cbdbfd941ba8aaa40594a7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839883"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491711"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y procesamiento de formularios 
 
-La comprensión del contenido en Microsoft SharePoint Syntex permite identificar y clasificar documentos que se cargan en SharePoint bibliotecas de documentos y, a continuación, extraer información relevante de cada archivo. Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
+La comprensión del contenido en Microsoft SharePoint Syntex permite identificar y clasificar documentos que se cargan en bibliotecas de documentos de SharePoint y, a continuación, extraer información pertinente de cada archivo. Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
 
 La comprensión de contenidos le permite crear *modelos* para identificar y extraer la información que necesita. Los modelos ayudan a solucionar problemas de búsqueda, procesos empresariales, cumplimiento normativo y muchas otras cosas.
 
@@ -34,11 +34,11 @@ Hay dos tipos de modelo personalizados que puede usar:
 Aunque los dos modelos se usan generalmente para el mismo propósito, las siguientes diferencias clave afectan a su uso.
 
 > [!NOTE]
-> Consulte el [Comenzar impulsar la adopción de SharePoint Syntex](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión de documentos.
+> Consulte [introducción a la adopción de SharePoint Syntex](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión de documentos.
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado, no estructurado y semiestructurado
 
-Use modelos de comprensión mediante documentos para identificar y extraer los datos de documentos no estructurados, como cartas o contratos, donde las entidades de texto que quiere extraer se encuentran en frases o regiones específicas del documento. Por ejemplo, un documento no estructurado podría ser una carta de renovación de contrato que pueda escribirse de varias maneras. Sin embargo, en el cuerpo de cada documento se encuentra habitualmente información de renovación de contrato, como la cadena de texto *Fecha de inicio de un servicio* seguida de una fecha.
+Use modelos de comprensión mediante documentos para identificar y extraer los datos de documentos no estructurados, como cartas o contratos, donde las entidades de texto que quiere extraer se encuentran en frases o regiones específicas del documento. Por ejemplo, un documento no estructurado podría ser una carta de renovación de contrato que pueda escribirse de varias maneras. Sin embargo, la información existe de forma coherente en el cuerpo de cada documento de renovación del contrato, como la cadena `Service start date of` de texto seguida de una fecha real.
 
 Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Los modelos de procesamiento de formularios están capacitados para comprender el diseño de su formulario a partir de documentos de ejemplo y aprenden a buscar los datos que necesita extraer de ubicaciones similares. Los formularios tienen habitualmente un diseño más estructurado en el que las entidades están en la misma ubicación (por ejemplo, un número de la seguridad social en un formulario tributario).
 
@@ -58,7 +58,7 @@ Cuando se crea modelo de comprensión mediante documentos, se crea un nuevo [tip
 
 Una vez que se crea un tipo de contenido y se asocia a un modelo, también puede hacer referencia a ese modelo desde el panel de propiedades **Tipo de contenido del sitio**.
 
-![Captura de pantalla del panel Tipo de contenido del sitio que muestra el modelo de comprensión de documentos resaltado.](../media/content-understanding/site-content-type-panel.png)
+:::image type="content" source="../media/content-understanding/site-content-type-panel.png" alt-text="Captura de pantalla del panel Tipo de contenido del sitio que muestra el modelo de comprensión de documentos resaltado." lightbox="../media/content-understanding/site-content-type-panel.png":::
 
 Los modelos de procesamiento de formularios también crean nuevos [Tipos de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) y se almacenan en la galería de Tipos de contenido de SharePoint.
 
@@ -74,11 +74,11 @@ Use la tabla siguiente para comprender cuándo usar el procesamiento de formular
 
 | Característica | Procesamiento de formularios | Comprensión mediante documentos |
 | ------- | ------- | ------- |
-| Tipo de modelo: cuándo usar cada uno | Formatos de archivo estructurados y semiestructurados, por ejemplo, archivos PDF para el contenido de formularios, como facturas o pedidos de compra, donde el diseño y el formato son similares.  | Formatos de archivo no estructurados o semiestructurados, por ejemplo, Office documentos en los que hay diferencias en el diseño, pero aún así se extrae información similar. |
+| Tipo de modelo: cuándo usar cada uno | Formatos de archivo estructurados y semiestructurados, por ejemplo, archivos PDF para el contenido de formularios, como facturas o pedidos de compra, donde el diseño y el formato son similares.  | Formatos de archivo no estructurados o semiestructurados, por ejemplo, documentos de Office en los que hay diferencias en el diseño, pero sigue siendo información similar que se va a extraer. |
 | Creación de modelos | Modelo creado en generador de IA con un acceso directo desde la biblioteca de documentos de SharePoint.| Modelo creado en SharePoint en un sitio nuevo, el centro de contenido. |
 | Tipo de clasificación| El clasificador configurable se usa para proporcionar sugerencias a los sistemas sobre los datos que se extraen.| Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para asignar la ubicación de documentos en los que se extraen datos.|
 | Ubicaciones | Capacitado para una única biblioteca de documentos.| Se puede aplicar a múltiples bibliotecas.|
-| Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Office archivos se truncan con 64 000 caracteres. Los archivos escaneados por OCR están limitados a 20 páginas.|
+| Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Los archivos de Office se truncan con 64 000 caracteres. Los archivos escaneados por OCR están limitados a 20 páginas. Los modelos de comprensión de documentos admiten los siguientes tipos de archivo doc, docx, eml, heic, heif, htm, html, jpeg, jpg, markdown, md, msg, pdf, png, ppt, pptx, rtf, tif, tiff, txt, xls y xlsx.|
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
 | Integración de características de cumplimiento con Microsoft Purview Information Protection | Establezca etiquetas de retención publicadas.<br>Se acerca el establecimiento de etiquetas de confidencialidad. | Establezca etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|

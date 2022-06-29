@@ -1,5 +1,5 @@
 ---
-title: Elija el dominio que se va a usar al crear grupos de Microsoft 365
+title: Elegir el dominio que se va a usar al crear grupos de Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Aprenda a elegir el dominio que se va a usar al crear grupos de Microsoft 365 mediante la configuración de directivas de direcciones de correo electrónico mediante PowerShell.
-ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012546"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490905"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elija el dominio que se va a usar al crear grupos de Microsoft 365
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elegir el dominio que se va a usar al crear grupos de Microsoft 365
 
 Algunas organizaciones utilizan dominios de correo electrónico diferentes para segmentar diferentes partes de la empresa. Puede especificar qué dominio debe usarse cuando los usuarios creen grupos de Microsoft 365.
   
 Si su organización necesita que los usuarios creen sus grupos en dominios distintos del dominio aceptado predeterminado de su empresa, puede permitirlo configurando directivas de direcciones de correo electrónico (EAP) mediante PowerShell.
 
-Para poder ejecutar los cmdlets de PowerShell, descargue e instale un módulo que le permita comunicarse con su organización. Consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Para poder ejecutar los cmdlets de PowerShell, descargue e instale un módulo que le permita comunicarse con su organización. Consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="example-scenarios"></a>Escenarios de ejemplo
 
@@ -50,7 +50,7 @@ En los dos escenarios siguientes se explica cómo lograría esto.
   
 ### <a name="scenario-1"></a>Escenario 1
 
-En el ejemplo siguiente se muestra cómo aprovisionar todos los grupos de Microsoft 365 de la organización en el dominio groups.contoso.com.
+En el ejemplo siguiente se muestra cómo aprovisionar todos los grupos de Microsoft 365 de su organización en el dominio groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -58,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Escenario 2
 
-Supongamos que desea controlar en qué subdominios se crean Microsoft 365 grupos. Quieres:
+Supongamos que desea controlar en qué subdominios se crean los grupos de Microsoft 365. Quieres:
   
 - Grupos creados por alumnos (usuarios que tienen **department** establecido en **Students**) en el dominio students.groups.contoso.com. Use este comando:
     
@@ -77,7 +77,9 @@ Supongamos que desea controlar en qué subdominios se crean Microsoft 365 grupos
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> Este escenario no funciona cuando el registro MX apunta al filtrado de correo no deseado de terceros.
+ 
 ## <a name="change-email-address-policies"></a>Cambio de directivas de direcciones de correo electrónico
 
 Para cambiar la prioridad o las plantillas de dirección de correo electrónico para un EAP existente, use el cmdlet Set-EmailAddressPolicy.
@@ -101,7 +103,7 @@ Cambiar un EAP no tiene ningún impacto en los grupos que ya se han aprovisionad
   
 ## <a name="hybrid-requirements"></a>Requisitos híbridos
 
-Si su organización está configurada en un escenario híbrido, consulte [Configuración de grupos de Microsoft 365 con Exchange híbrido local](/exchange/hybrid-deployment/set-up-microsoft-365-groups) para asegurarse de que su organización cumple los requisitos para crear grupos de Microsoft 365. 
+Si su organización está configurada en un escenario híbrido, consulte [Configuración de grupos de Microsoft 365 con exchange híbrido local](/exchange/hybrid-deployment/set-up-microsoft-365-groups) para asegurarse de que su organización cumple los requisitos para crear grupos de Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Información adicional sobre el uso de grupos de directivas de direcciones de correo electrónico:
 
@@ -125,4 +127,4 @@ Hay algunas cosas más que saber:
 
 [Creación del plan de gobernanza de colaboración](collaboration-governance-first.md) (artículo)
 
-[Creación de un grupo de Microsoft 365 en el centro de administración](../admin/create-groups/create-groups.md) (artículo)
+[Creación de un grupo de Microsoft 365 en el Centro de administración](../admin/create-groups/create-groups.md) (artículo)

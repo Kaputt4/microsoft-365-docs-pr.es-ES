@@ -1,6 +1,6 @@
 ---
-title: Transmisión de eventos de Microsoft Defender para punto de conexión a la cuenta de Storage
-description: Obtenga información sobre cómo configurar Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a su cuenta de Storage.
+title: Transmitir eventos de Microsoft Defender para punto de conexión a la cuenta de almacenamiento
+description: Obtenga información sobre cómo configurar Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la cuenta de Almacenamiento.
 keywords: exportación de datos sin procesar, API de streaming, API, Event Hubs, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5d4917e2464964da819af0a06f0b8e4883dfea9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783895"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493451"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la cuenta de Storage
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,11 +30,11 @@ ms.locfileid: "64783895"
 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-1. Cree una [cuenta de Storage](/azure/storage/common/storage-account-overview) en el inquilino.
+1. Cree una [cuenta de almacenamiento](/azure/storage/common/storage-account-overview) en el inquilino.
 
 2. Inicie sesión en el [inquilino de Azure](https://ms.portal.azure.com/) y vaya a **Suscripciones > Su suscripción > Proveedores de recursos > Registrarse en Microsoft.insights**.
 
@@ -42,21 +42,21 @@ ms.locfileid: "64783895"
 
 1. Inicie sesión en [Microsoft 365 Defender](https://security.microsoft.com) como ***Administrador global** _ o _*_Administrador de seguridad_**.
 
-2. Vaya a la [página Configuración de exportación de datos](https://security.microsoft.com/interoperability/dataexport) en Microsoft 365 Defender.
+2. Vaya a la [página Configuración de exportación de datos](https://security.microsoft.com/settings/mtp_settings/raw_data_export) en Microsoft 365 Defender.
 
 3. Haga clic en **Agregar configuración de exportación de datos**.
 
 4. Elija un nombre para la nueva configuración.
 
-5. Elija **Reenviar eventos para Azure Storage**.
+5. Elija **Reenviar eventos a Azure Storage**.
 
-6. Escriba el **identificador de recurso de la cuenta de Storage**. Para obtener el identificador de recurso de la **cuenta de Storage**, vaya a la página de Storage cuenta en [Azure Portal](https://ms.portal.azure.com/) \> pestaña \> propiedades copie el texto en **Storage id. de recurso de cuenta**:
+6. Escriba **el identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, vaya a la página Cuenta de almacenamiento en [Azure Portal](https://ms.portal.azure.com/) \> pestaña \> propiedades copie el texto en Id. de **recurso de la cuenta de almacenamiento**:
 
    :::image type="content" source="images/storage-account-resource-id.png" alt-text="Event Hubs con id. de recurso1" lightbox="images/storage-account-resource-id.png":::
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Esquema de los eventos de la cuenta de Storage
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>Esquema de los eventos de la cuenta de almacenamiento
 
 - Se creará un contenedor de blobs para cada tipo de evento:
 

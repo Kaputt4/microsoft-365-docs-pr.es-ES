@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: La manera más fácil de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, no siempre se admite la pestaña Actualizar.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102270"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489154"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
+# <a name="upgrade-to-a-different-microsoft-plan"></a>Actualización a otro plan de Microsoft
 
 Cuando su empresa cambia o necesita más características, puede actualizar los planes. La manera más fácil de hacerlo es usar la pestaña **Actualizar** en el Centro de administración. Sin embargo, el uso de la pestaña **Actualizar** no se admite en todas las situaciones. En algunos casos, es posible que pueda cambiar los planes manualmente.
 
@@ -36,7 +36,7 @@ Cuando su empresa cambia o necesita más características, puede actualizar los 
 
 Cuando se usa la pestaña **Actualizar** , se le guía por el proceso de compra de un nuevo plan. A todos los usuarios se les asignan automáticamente licencias en el nuevo plan y su plan anterior se cancela automáticamente.
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Seleccione la suscripción que desea actualizar.
 3. En la página de detalles de la suscripción, en **Detalles y actualizaciones del producto**, seleccione **Ver actualizaciones recomendadas para su organización**.
 4. Busque el plan al que desea actualizar y, a continuación, seleccione el botón **Actualizar** .
@@ -144,10 +144,10 @@ Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirá
 
 Los usuarios de la suscripción antigua se transferirán automáticamente a la nueva suscripción.
 
-Si la suscripción anterior incluye varios servicios y ha cambiado a cuál de estos servicios están asignados los usuarios, es posible que quiera tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio SharePoint Online de 50 de ellos, este cambio no se conservaría después de actualizar los planes.
+Si la suscripción anterior incluye varios servicios y ha cambiado a cuál de estos servicios están asignados los usuarios, es posible que quiera tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero desasignó el servicio SharePoint Online de 50 de ellos, este cambio no se conservaría después de actualizar los planes.
 
 Si tiene más de una suscripción antes de actualizar los planes y tiene a los usuarios licencias asignadas a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
-Todos los datos de usuario se conservarán durante la actualización, incluidos los buzones de Exchange y SharePoint documentos, listas y otra información en línea.
+Todos los datos de usuario se conservarán durante la actualización, incluidos los buzones de Exchange y documentos de SharePoint Online, listas y otra información.
   
 ### <a name="billing"></a>Facturación
 
@@ -165,4 +165,4 @@ El día que se complete la actualización del plan, se desactivará la facturaci
 ## <a name="related-content"></a>Contenido relacionado
 
 [Cambiar los planes manualmente](change-plans-manually.md) (artículo)\
-[Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de negocio](back-up-data-before-switching-plans.md) (artículo)
+[Copia de seguridad de datos antes de cambiar Microsoft 365 para planes empresariales](back-up-data-before-switching-plans.md) (artículo)

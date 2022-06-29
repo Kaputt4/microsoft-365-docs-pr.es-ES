@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Obtenga información sobre los distintos estados del dispositivo en la lista Acciones de dispositivo en la página principal de administración de Microsoft 365 para empresas.
-ms.openlocfilehash: 00a2b86265c342d131c703b207682e2eeff26b79
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 07024ea6f4e37e32716c8af3e56f4481104ed975
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320805"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489713"
 ---
-# <a name="device-states"></a>Estados de dispositivo
+# <a name="device-states-in-microsoft-365-for-business"></a>Estados de dispositivos en Microsoft 365 para empresas
 
 Este artículo aplica a Microsoft 365 Empresa Premium.
 

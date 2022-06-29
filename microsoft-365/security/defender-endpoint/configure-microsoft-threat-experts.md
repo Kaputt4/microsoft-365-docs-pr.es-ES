@@ -1,8 +1,8 @@
 ---
 title: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 ms.reviewer: ''
-description: Regístrate en Microsoft Threats Experts para configurarlo, administrarlo y usarlo en el trabajo diario de administración de seguridad y operaciones de seguridad.
-keywords: Expertos en amenazas de Microsoft, servicio de búsqueda de amenazas administradas, MTE, servicio de búsqueda administrada de Microsoft
+description: Regístrese en Expertos en amenazas de Microsoft para configurarlo, administrarlo y usarlo en las operaciones de seguridad diarias y en el trabajo de administración de seguridad.
+keywords: Expertos en amenazas de Microsoft, servicio de búsqueda de amenazas administrada, MTE, servicio de búsqueda administrado por Microsoft
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7661619ccb60bb55020a8e241c341b11fe45abd1
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471833"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487353"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -33,56 +33,56 @@ ms.locfileid: "64471833"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 > [!NOTE]
-> Analice los requisitos de elegibilidad con su proveedor de servicios técnicos de Microsoft y su equipo de cuenta antes de aplicar a Expertos en amenazas de Microsoft: servicio de búsqueda de amenazas administradas por notificación de ataque dirigida.
+> Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar a Expertos en amenazas de Microsoft: servicio de búsqueda de amenazas administrada de notificación de ataque dirigida.
 
-Asegúrese de que Defender for Endpoint está implementado en su entorno con dispositivos inscritos y no solo en una configuración de laboratorio.
+Asegúrese de que defender para punto de conexión implementado en su entorno con dispositivos inscritos y no solo en una configuración de laboratorio.
 
-Si eres cliente de Defender for Endpoint, debes solicitar **Expertos en amenazas de Microsoft- Notificaciones de ataques dirigidos** para obtener información y análisis especiales para ayudar a identificar las amenazas más críticas, de modo que puedas responderlas rápidamente. Póngase en contacto con su equipo de cuenta o representante de Microsoft para **suscribirse a Expertos en amenazas de Microsoft:** expertos a petición para consultar con nuestros expertos en amenazas sobre detecciones y adversarias relevantes.
+Si es cliente de Defender para punto de conexión, debe solicitar **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas, de modo que pueda responder a ellas rápidamente. Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft- Experts on Demand** para consultar a nuestros expertos en amenazas sobre las detecciones y adversarios pertinentes.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Aplicar para Expertos en amenazas de Microsoft: servicio de notificaciones de ataques dirigidos
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Solicitud para Expertos en amenazas de Microsoft: servicio de notificaciones de ataque dirigidas
 
-Si ya eres cliente de Defender for Endpoint, puedes aplicar a través del portal Microsoft 365 Defender endpoint.
+Si ya es cliente de Defender para punto de conexión, puede aplicar a través del portal de Microsoft 365 Defender.
 
-1. En el panel de navegación, ve **a Configuración > General > Características avanzadas > Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas**.
+1. En el panel de navegación, vaya a **Configuración > General > Características avanzadas > Expertos en amenazas de Microsoft - Notificaciones de ataque dirigidas**.
 
 2. Haga clic en **Aplicar**.
 
-   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="La Expertos en amenazas de Microsoft configuración" lightbox="images/mte-collaboratewithmte.png":::
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="Configuración de Expertos en amenazas de Microsoft" lightbox="images/mte-collaboratewithmte.png":::
 
 3. Escriba su nombre y dirección de correo electrónico para que Microsoft pueda volver a usted en la aplicación.
 
-   :::image type="content" source="images/mte-apply.png" alt-text="El campo Nombre de la página Expertos en amenazas de Microsoft aplicación" lightbox="images/mte-apply.png":::
+   :::image type="content" source="images/mte-apply.png" alt-text="Campo Nombre en la página de la aplicación Expertos en amenazas de Microsoft" lightbox="images/mte-apply.png":::
 
-4. Lea la [declaración de privacidad](https://privacy.microsoft.com/privacystatement) y, a continuación, haga clic en **Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez que se apruebe la aplicación.
+4. Lea la [declaración de privacidad](https://privacy.microsoft.com/privacystatement) y haga clic en **Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez aprobada la aplicación.
 
-   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Mensaje Expertos en amenazas de Microsoft confirmación de la aplicación" lightbox="images/mte-applicationconfirmation.png":::
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Mensaje de confirmación de la aplicación Expertos en amenazas de Microsoft" lightbox="images/mte-applicationconfirmation.png":::
 
-Cuando se acepte, recibirá un correo electrónico de bienvenida y verá el cambio  del botón Aplicar a una alternancia que está "activa". En caso de que quieras salir del servicio de notificaciones de ataques dirigidos, desliza el botón de alternancia "desactivado" y haz clic en Guardar preferencias en la parte inferior de la página.
+Cuando se acepte, recibirá un correo electrónico de bienvenida y verá que el botón **Aplicar** cambia a un botón de alternancia que está "activado". En caso de que quiera salir del servicio de notificaciones de ataque dirigidas, deslice el botón de alternancia "desactivar" y haga clic en **Guardar preferencias** en la parte inferior de la página.
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Donde verás las notificaciones de ataques dirigidos desde Expertos en amenazas de Microsoft
+## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Donde verá las notificaciones de ataque dirigidas desde Expertos en amenazas de Microsoft
 
-Puedes recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft a través del siguiente medio:
+Puede recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft a través del siguiente medio:
 
-- Página Incidentes del portal defender para el punto de **conexión**
-- Panel de alertas del portal defender para el punto **de** conexión
-- API de [alerta de](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) OData y [API de REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- Página **Incidentes** del portal de Defender para punto de conexión
+- Panel **de alertas** del portal de Defender para punto de conexión
+- [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) de alertas de OData y [API REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [Tabla DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) en búsqueda avanzada
 - Su correo electrónico, si decide configurarlo
 
-Para recibir notificaciones de ataque dirigidas por correo electrónico, crea una regla de notificación de correo electrónico.
+Para recibir notificaciones de ataque dirigidas por correo electrónico, cree una regla de notificación por correo electrónico.
 
-### <a name="create-an-email-notification-rule"></a>Crear una regla de notificación de correo electrónico
+### <a name="create-an-email-notification-rule"></a>Creación de una regla de notificación por correo electrónico
 
-Puede crear reglas para enviar notificaciones por correo electrónico para los destinatarios de notificaciones. Consulte  [Configurar notificaciones de alerta para](configure-email-notifications.md) crear, editar, eliminar o solucionar problemas de notificación de correo electrónico, para obtener más información.
+Puede crear reglas para enviar notificaciones por correo electrónico para los destinatarios de notificaciones. Consulte  [Configuración de notificaciones de alerta](configure-email-notifications.md) para crear, editar, eliminar o solucionar problemas de notificaciones por correo electrónico para obtener más información.
 
-## <a name="view-the-targeted-attack-notification"></a>Ver la notificación de ataque dirigido
+## <a name="view-the-targeted-attack-notification"></a>Visualización de la notificación de ataque de destino
 
-Empezarás a recibir una notificación de ataque dirigida Expertos en amenazas de Microsoft en tu correo electrónico después de configurar el sistema para recibir una notificación por correo electrónico.
+Empezará a recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft en el correo electrónico después de haber configurado el sistema para recibir una notificación por correo electrónico.
 
 1. Haga clic en el vínculo del correo electrónico para ir al contexto de alerta correspondiente en el panel etiquetado con **expertos en amenazas**.
 
@@ -90,39 +90,39 @@ Empezarás a recibir una notificación de ataque dirigida Expertos en amenazas d
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a Expertos en amenazas de Microsoft: expertos a petición
 
-Está disponible como servicio de suscripción. Si ya eres cliente de Defender for Endpoint, puedes ponerse en contacto con tu representante de Microsoft para suscribirte a Expertos en amenazas de Microsoft - Expertos a petición.
+Está disponible como servicio de suscripción. Si ya es cliente de Defender para punto de conexión, puede ponerse en contacto con su representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft - Experts on Demand.
 
-## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades de ciberseguridad sospechosas en su organización
+## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades sospechosas de ciberseguridad en su organización.
 
-Puede asociarse con Expertos en amenazas de Microsoft que pueden participar directamente desde el portal de Microsoft 365 Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas, un dispositivo potencialmente comprometido o un contexto de inteligencia de amenazas que ves en el panel del portal.
+Puede asociarse con Expertos en amenazas de Microsoft que pueden participar directamente desde el portal de Microsoft 365 Defender para su respuesta. Los expertos proporcionan información para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibe o si necesita más información sobre las alertas, un dispositivo potencialmente en peligro o un contexto de inteligencia sobre amenazas que vea en el panel del portal.
 
 > [!NOTE]
 >
-> - Actualmente, no se admiten las consultas de alerta relacionadas con los datos de inteligencia de amenazas personalizados de la organización. Consulte a su equipo de operaciones de seguridad o respuesta a incidentes para obtener más información.
-> - Debe tener el permiso Administrar  la configuración de seguridad en el portal de Microsoft 365 Defender para poder enviar una consulta "Consultar a un experto en amenazas".
+> - Actualmente no se admiten las consultas de alerta relacionadas con los datos personalizados de inteligencia sobre amenazas de la organización. Consulte a su equipo de operaciones de seguridad o respuesta a incidentes para obtener más información.
+> - Debe tener el permiso **Administrar la configuración de seguridad** en el portal de Microsoft 365 Defender para poder enviar una consulta de "Consulte a un experto en amenazas".
 
-1. Vaya a la página del portal con la información relevante que le gustaría investigar, por ejemplo, la página **Incidentes** . Asegúrate de que la página de la alerta o dispositivo relevante esté en vista antes de enviar una solicitud de investigación.
+1. Vaya a la página del portal con la información pertinente que le gustaría investigar, por ejemplo, la página **Incidente** . Asegúrese de que la página de la alerta o dispositivo pertinente esté en vista antes de enviar una solicitud de investigación.
 
-2. En el menú superior derecho, haga clic en **?** . A continuación, **seleccione Consultar a un experto en amenazas**.
+2. En el menú superior derecho, haga clic en **?** . A continuación, seleccione **Consultar a un experto en amenazas**.
 
-    :::image type="content" source="images/mte-eod-menu.png" alt-text="El Expertos en amenazas de Microsoft menú Expertos a petición" lightbox="images/mte-eod-menu.png":::
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="Elemento de menú Expertos a petición de Expertos en amenazas de Microsoft" lightbox="images/mte-eod-menu.png":::
 
-    Se abre una pantalla desplegable. En la siguiente pantalla se muestra cuándo está en una suscripción de prueba.
+    Se abre una pantalla flotante. En la pantalla siguiente se muestra cuándo está en una suscripción de prueba.
 
-    :::image type="content" source="images/mte-eod.png" alt-text="Página Expertos en amenazas de Microsoft expertos a petición" lightbox="images/mte-eod.png":::
+    :::image type="content" source="images/mte-eod.png" alt-text="Página Expertos a petición de Expertos en amenazas de Microsoft" lightbox="images/mte-eod.png":::
 
-    En la siguiente pantalla se muestra cuándo está en una suscripción Expertos en amenazas de Microsoft- Expertos a petición.
+    En la siguiente pantalla se muestra cuándo está en una suscripción completa Expertos en amenazas de Microsoft - Experts on-Demand.
 
-    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="La Expertos en amenazas de Microsoft de suscripción completa de expertos a petición" lightbox="images/mte-eod-fullsubscription.png":::
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="Página de suscripción completa de expertos a petición de Expertos en amenazas de Microsoft" lightbox="images/mte-eod-fullsubscription.png":::
 
-    El **campo Tema de** consulta se rellena previamente con el vínculo a la página correspondiente para la solicitud de investigación. Por ejemplo, un vínculo a la página de detalles del incidente, alerta o dispositivo en la que estaba cuando realizó la solicitud.
+    El campo **Tema de consulta** se rellena previamente con el vínculo a la página correspondiente para la solicitud de investigación. Por ejemplo, un vínculo a la página de detalles del dispositivo, alerta o incidente en la que se encontraba cuando realizó la solicitud.
 
-3. En el siguiente campo, proporcione información suficiente para proporcionar al Expertos en amenazas de Microsoft suficiente contexto para iniciar la investigación.
+3. En el campo siguiente, proporcione suficiente información para proporcionar al Expertos en amenazas de Microsoft contexto suficiente para iniciar la investigación.
 
 4. Escriba la dirección de correo electrónico que desea usar para que se corresponda con Expertos en amenazas de Microsoft.
 
 > [!NOTE]
-> Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través del Centro de servicios de Microsoft, llegue a su Administrador de cuentas de éxito del cliente.
+> Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través de Microsoft Services Hub, póngase en contacto con el Administrador de cuentas de éxito del cliente.
 
 Vea este vídeo para obtener una introducción rápida al Centro de servicios de Microsoft.
 
@@ -132,44 +132,44 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 
 ### <a name="alert-information"></a>Información de alerta
 
-- Vemos un nuevo tipo de alerta para un binario vivo fuera de la tierra: [AlertID]. ¿Puede decirnos algo más sobre esta alerta y cómo podemos investigar más?
-- Hemos observado dos ataques similares, que intentan ejecutar scripts de PowerShell malintencionados pero generan alertas diferentes. Una es "Línea de comandos sospechosa de PowerShell" y la otra es "Se detectó un archivo malintencionado en función de la indicación proporcionada por O365". ¿Cuál es la diferencia?
-- Recibo una alerta impar hoy por el número anormal de inicios de sesión con errores desde el dispositivo de un usuario de perfil alto. No puedo encontrar más evidencias en torno a estos intentos de inicio de sesión. ¿Cómo puede Defender for Endpoint ver estos intentos? ¿Qué tipo de inicios de sesión se están supervisando?
-- Puede proporcionar más contexto o información sobre esta alerta: "Se observó un comportamiento sospechoso por parte de una utilidad del sistema".
+- Vemos un nuevo tipo de alerta para un binario que se encuentra fuera de la tierra: [AlertID]. ¿Puede decirnos algo más sobre esta alerta y cómo podemos investigar más?
+- Hemos observado dos ataques similares, que intentan ejecutar scripts malintencionados de PowerShell pero generan alertas diferentes. Una es "Línea de comandos de PowerShell sospechosa" y la otra es "Se detectó un archivo malintencionado en función de la indicación proporcionada por O365". ¿Cuál es la diferencia?
+- Recibo una alerta impar hoy por el número anómalo de inicios de sesión erróneos desde el dispositivo de un usuario de alto perfil. No puedo encontrar más pruebas en torno a estos intentos de inicio de sesión. ¿Cómo puede Defender para punto de conexión ver estos intentos? ¿Qué tipo de inicios de sesión se están supervisando?
+- Puede proporcionar más contexto o conclusiones sobre esta alerta: "Se observó un comportamiento sospechoso por parte de una utilidad del sistema".
 
 ### <a name="possible-machine-compromise"></a>Posible peligro de máquina
 
-- ¿Puede ayudar a responder por qué vemos "Proceso desconocido observado?" Este mensaje o alerta se ve con frecuencia en muchos dispositivos. Agradecemos cualquier entrada para aclarar si este mensaje o alerta está relacionado con actividad malintencionada.
-- ¿Puede ayudar a validar un posible compromiso en el siguiente sistema en [fecha] con comportamientos similares a la detección de malware anterior [nombre de malware] en el mismo sistema en [mes]?
+- ¿Puede ayudar a responder por qué vemos "Proceso desconocido observado?" Este mensaje o alerta se ve con frecuencia en muchos dispositivos. Agradecemos cualquier entrada para aclarar si este mensaje o alerta está relacionado con la actividad malintencionada.
+- ¿Puede ayudar a validar un posible riesgo en el siguiente sistema en [fecha] con comportamientos similares a los de la detección de malware anterior [nombre de malware] en el mismo sistema en [mes]?
 
-### <a name="threat-intelligence-details"></a>Detalles de inteligencia de amenazas
+### <a name="threat-intelligence-details"></a>Detalles de inteligencia sobre amenazas
 
-- Se detectó un correo electrónico de suplantación de identidad (phishing) que entregaba un documento malintencionado de Word a un usuario. El documento malintencionado de Word provocó una serie de eventos sospechosos, que desencadenaron varias alertas de Defender for Endpoint para malware [nombre de malware]. ¿Tiene información sobre este malware? Si es así, ¿puede enviarme un vínculo?
-- Recientemente vi una publicación [referencia a redes sociales, por ejemplo, Twitter o blog] sobre una amenaza dirigida a mi sector. ¿Me puede ayudar a comprender qué protección proporciona Defender for Endpoint contra este actor de amenazas?
+- Hemos detectado un correo electrónico de suplantación de identidad (phishing) que ha entregado un documento de Word malintencionado a un usuario. El documento malintencionado de Word produjo una serie de eventos sospechosos, que desencadenaron varias alertas de Defender para punto de conexión para malware [nombre de malware]. ¿Tiene alguna información sobre este malware? Si es así, ¿puedes enviarme un enlace?
+- Recientemente vi una entrada [referencia de redes sociales, por ejemplo, Twitter o blog] sobre una amenaza que está dirigida a mi sector. ¿Puede ayudarme a comprender qué protección proporciona Defender para punto de conexión frente a este actor de amenazas?
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Expertos en amenazas de Microsoft de alertas
+### <a name="microsoft-threat-experts-alert-communications"></a>Comunicaciones de alerta de Expertos en amenazas de Microsoft
 
-- ¿Puede su equipo de respuesta a incidentes ayudarnos a solucionar la notificación de ataque dirigida que tenemos?
-- Recibí esta notificación de ataque dirigido de Expertos en amenazas de Microsoft. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
-- Recibí una notificación de ataque dirigida desde Expertos en amenazas de Microsoft. ¿Qué datos nos puede proporcionar que podamos transmitir a nuestro equipo de respuesta a incidentes?
+- ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de ataque dirigida que tenemos?
+- Recibí esta notificación de ataque dirigida de Expertos en amenazas de Microsoft. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
+- Recibí una notificación de ataque dirigida de Expertos en amenazas de Microsoft. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
 
   > [!NOTE]
-  > Expertos en amenazas de Microsoft es un servicio de búsqueda de ciberseguridad administrado y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para solucionar problemas que requieren una respuesta a incidentes. Si no tienes tu propio equipo de respuesta a incidentes y quieres la ayuda de Microsoft, puedes interactuar con el Equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir un vale para ayudar a resolver su consulta.
+  > Expertos en amenazas de Microsoft es un servicio administrado de búsqueda de ciberseguridad y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para abordar los problemas que requieren una respuesta a incidentes. Si no tiene su propio equipo de respuesta a incidentes y desea la ayuda de Microsoft, puede interactuar con el equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir una incidencia para ayudar a abordar su consulta.
 
 ## <a name="scenario"></a>Escenario
 
-### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recibir un informe de progreso sobre la consulta de búsqueda administrada
+### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recepción de un informe de progreso sobre la consulta de búsqueda administrada
 
-La respuesta Expertos en amenazas de Microsoft varía según la consulta. En un plazo de dos días, le enviarán  un informe de progreso sobre la consulta de un experto en amenazas para comunicar el estado de la investigación de las siguientes categorías:
+La respuesta de Expertos en amenazas de Microsoft varía según su consulta. Le enviarán por correo electrónico un informe de progreso sobre la consulta de **un experto en amenazas** en un plazo de dos días, para comunicar el estado de la investigación de las siguientes categorías:
 
 - Se necesita más información para continuar con la investigación
-- Se necesita un archivo o varios ejemplos de archivos para determinar el contexto técnico
+- Se necesita un archivo o varios ejemplos de archivo para determinar el contexto técnico
 - La investigación requiere más tiempo
-- La información inicial era suficiente para concluir la investigación
+- La información inicial fue suficiente para concluir la investigación
 
-Es fundamental responder rápidamente para que la investigación siga avanzando.
+Es fundamental responder rápidamente para mantener la investigación en movimiento.
 
 ## <a name="related-topic"></a>Tema relacionado
 
 - [Información general sobre Expertos en amenazas de Microsoft](microsoft-threat-experts.md)
-- [Expertos en amenazas de Microsoft en Microsoft 365 introducción](/microsoft-365/security/mtp/microsoft-threat-experts)
+- [Expertos en amenazas de Microsoft en Información general de Microsoft 365](/microsoft-365/security/mtp/microsoft-threat-experts)

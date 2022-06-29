@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647291"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490240"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -41,8 +41,9 @@ Si es administrador global o de seguridad, ahora puede hospedar informes de fire
   - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Habilite estos eventos mediante directiva de grupo Editor de objetos, Directiva de seguridad local o los comandos de auditpol.exe. Para obtener más información, consulte [aquí](/windows/win32/fwp/auditing-and-logging).
   - Los dos comandos de PowerShell son:
-    - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
-    - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+    - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
+    - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
+
 ```powershell
 param (
     [switch]$remediate
@@ -81,23 +82,32 @@ catch {
 > [!NOTE]
 > Asegúrese de seguir las instrucciones de la sección anterior y de configurar correctamente los dispositivos para la participación en la versión preliminar temprana.
 
-- Después de habilitar los eventos, Microsoft 365 Defender comenzará a supervisar los datos.
-  - Ip remota, puerto remoto, puerto local, dirección IP local, nombre del equipo, proceso entre conexiones entrantes y salientes.
-- Los administradores ahora pueden ver Windows actividad del firewall de host [aquí](https://security.microsoft.com/firewall).
-  - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.
-  - Los datos pueden tardar hasta 12 horas en reflejarse.
+- Después de habilitar los eventos, Microsoft 365 Defender comenzará a supervisar los datos, lo que incluye: 
+   - IP remota
+   - Puerto remoto
+   - Puerto local
+   - Local IP
+   - Nombre del equipo
+   - Proceso entre conexiones entrantes y salientes
+- Los administradores ahora pueden ver la actividad del firewall del host [de Windows aquí](https://security.microsoft.com/firewall).
+   - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.
+   - Los datos pueden tardar hasta 12 horas en reflejarse.
 
 ## <a name="supported-scenarios"></a>Escenarios admitidos
 
-Los siguientes escenarios se admiten durante la versión preliminar de Ring0.
+Los siguientes escenarios se admiten durante la versión preliminar de Ring0:
+
+- [Informes de firewall](#firewall-reporting)
+- [Desde "Equipos con una conexión bloqueada" al dispositivo](#from-computers-with-a-blocked-connection-to-device)
+- [Obtención de detalles de la búsqueda avanzada (actualización en versión preliminar)](#drill-into-advanced-hunting-preview-refresh)
 
 ### <a name="firewall-reporting"></a>Informes de firewall
 
-Este es un par de ejemplos de las páginas de informe de firewall. Aquí encontrará un resumen de la actividad entrante, saliente y de aplicación. Para acceder directamente a esta página, vaya a <https://security.microsoft.com/firewall>.
+Estos son algunos ejemplos de las páginas del informe de firewall. Aquí encontrará un resumen de la actividad entrante, saliente y de aplicación. Para acceder directamente a esta página, vaya a <https://security.microsoft.com/firewall>.
 
 :::image type="content" source="images/host-firewall-reporting-page.png" alt-text="Página Informes de firewall de host" lightbox="\images\host-firewall-reporting-page.png":::
 
-También se puede acceder a estos informes si va a **InformesSeguridad** >  **ReportDevices** >  (sección) que se encuentra en la parte inferior de la tarjeta **Firewall Blocked Inbound Connections (Conexiones entrantes bloqueadas del firewall**).
+También se puede acceder a estos informes si va a **Los dispositivos** >  de **informes** >  de seguridad (sección) situados en la parte inferior de la tarjeta **Conexiones entrantes bloqueadas del firewall**.
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>Desde "Equipos con una conexión bloqueada" al dispositivo
 
@@ -119,4 +129,4 @@ Los informes de firewall admiten la exploración desde la tarjeta directamente e
 
 Ahora se puede ejecutar la consulta y se pueden explorar todos los eventos de firewall relacionados de los últimos 30 días.
 
-Para informes adicionales o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar descargando el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.
+Para obtener más informes o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar descargando el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.

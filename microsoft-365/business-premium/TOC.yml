@@ -2,7 +2,7 @@
   items:
     - name: Información general
       href: index.md
-    - name: Cómo Microsoft 365 ayuda a su negocio
+    - name: Cómo Microsoft 365 ayuda a su empresa
       href: m365bp-secure-users.md
     - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -38,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: Configurar la autenticación multifactor
           href: m365bp-multifactor-authentication.md
-        - name: Instalación de aplicaciones Office en dispositivos
+        - name: Instalación de aplicaciones de Office en dispositivos
           href: m365bp-install-office-apps.md
         - name: Protección de dispositivos no administrados
           href: m365bp-protect-pcs-macs.md
@@ -64,30 +64,28 @@
           href: create-communications-site.md
 - name: Protección de dispositivos administrados
   items:
-    - name: Configuración y protección de dispositivos administrados
+    - name: Información general
+      href: m365bp-protect-devices.md
+    - name: Configurar dispositivos administrados
+      href: m365bp-managed-devices-setup.md
+    - name: Abordar dispositivos inscritos y aplicar directivas
+      href: m365bp-onboard-devices-mdb.md
+    - name: Protección de dispositivos Windows
       items:
-        - name: Información general
-          href: m365bp-protect-devices.md
-        - name: Configurar dispositivos administrados
-          href: m365bp-managed-devices-setup.md
-        - name: Abordar dispositivos inscritos y aplicar directivas
-          href: m365bp-onboard-devices-mdb.md
-        - name: Protección de dispositivos Windows
-          items:
-            - name: Proteger dispositivos Windows
-              href: m365bp-secure-windows-devices.md
-            - name: Administrar dispositivos Windows
-              href: m365bp-manage-windows-devices.md
-            - name: Preparar la implementación del cliente Office
-              href: m365bp-prepare-for-office-client-deployment.md
-            - name: Creación de la configuración de protección de aplicaciones para dispositivos Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
-            - name: Validación de la configuración de la aplicación en dispositivos Windows
-              href: m365bp-validate-settings-on-windows-10-pcs.md
-        - name: Revista y edita las directivas de dispositivo
-          href: m365bp-view-edit-create-mdb-policies.md
-        - name: Administrar grupos de dispositivos
-          href: m365bp-device-groups-mdb.md
+        - name: Proteger dispositivos Windows
+          href: m365bp-secure-windows-devices.md
+        - name: Administrar dispositivos Windows
+          href: m365bp-manage-windows-devices.md
+        - name: Preparar la implementación del cliente Office
+          href: m365bp-prepare-for-office-client-deployment.md
+        - name: Creación de la configuración de protección de aplicaciones para dispositivos Windows
+          href: m365bp-protection-settings-for-windows-10-devices.md
+        - name: Validación de la configuración de la aplicación en dispositivos Windows
+          href: m365bp-validate-settings-on-windows-10-pcs.md
+    - name: Revista y edita las directivas de dispositivo
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: Administrar grupos de dispositivos
+      href: m365bp-device-groups-mdb.md
 - name: Administración de incidentes de seguridad
   items:
     - name: Información general
@@ -108,6 +106,8 @@
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Agregar usuarios
       href: m365bp-add-users.md
+    - name: Restablecer contraseñas
+      href: m365bp-reset-passwords.md
     - name: Quitar datos de dispositivos
       href: m365bp-remove-company-data.md
     - name: Restablecer dispositivos a la configuración de fábrica
@@ -115,22 +115,22 @@
 - name: Referencia
   items:
     - name: Glosario de términos
-      href: m365bp-glossary.md
+      href: m365bp-glossary.yml
     - name: Preguntas más frecuentes de Microsoft 365 Empresa Premium
       href: microsoft-365-business-faqs.yml
-    - name: Microsoft 365 contenido de administrador
+    - name: Contenido de administrador de Microsoft 365
       href: /microsoft-365/admin/
-    - name: Configuración de AutoPilot
+    - name: Configuración de Autopilot
       items:
-        - name: Incorporación de dispositivos y perfiles de AutoPilot
-          href: m365bp-add-autopilot-devices-and-profile.md
+        - name: Agregar dispositivos y perfil de Autopilot
+          href: m365bp-add-Autopilot-devices-and-profile.md
         - name: Configuración de perfiles de Autopilot
-          href: m365bp-autopilot-profile-settings.md
-        - name: Crear y editar perfiles de AutoPilot
-          href: m365bp-create-and-edit-autopilot-devices.md
+          href: m365bp-Autopilot-profile-settings.md
+        - name: Creación y edición de perfiles de Autopilot
+          href: m365bp-create-and-edit-Autopilot-devices.md
     - name: Configuración de protección de aplicaciones para Android y iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Validar la configuración de la aplicación en Android y iOS
+    - name: Validación de la configuración de la aplicación en Android e iOS
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Asignar funciones de protección a la configuración de Intune
       href: m365bp-map-protection-features-to-intune-settings.md
@@ -138,7 +138,7 @@
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender para Empresas
       href: ../security/defender-business/index.yml
-    - name: Microsoft Defender para Office 365
+    - name: "Microsoft\_Defender para Office\_365"
       href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md

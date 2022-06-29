@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac43b62c16cd3e1394cec7a1a75e69bf613757ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934343"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493117"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configuración de características avanzadas en Defender para punto de conexión
 
@@ -30,13 +30,13 @@ ms.locfileid: "64934343"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 En función de los productos de seguridad de Microsoft que use, es posible que haya algunas características avanzadas disponibles para integrar Defender para punto de conexión con .
 
 ## <a name="enable-advanced-features"></a>Habilitación de características avanzadas
 
-1. En el panel de navegación, seleccione **Configuración** \> **Características avanzadas de puntos** \> de conexión.
+1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** **Características avanzadas**\>.
 2. Seleccione la característica avanzada que desea configurar y cambie la configuración entre **Activado** y **Desactivado**.
 3. Haga clic en **Guardar preferencias**.
 
@@ -46,7 +46,7 @@ Use las siguientes características avanzadas para protegerse mejor frente a arc
 
 Active esta característica para aprovechar las características automatizadas de investigación y corrección del servicio. Para obtener más información, consulte [Investigación automatizada](automated-investigations.md).
 
-## <a name="live-response"></a>Respuesta en directo
+## <a name="live-response"></a>Respuesta inmediata
 
 > [!NOTE]
 > La respuesta dinámica requiere que la **investigación automatizada** esté activada para poder habilitarla en la sección configuración avanzada del portal de Microsoft Defender para punto de conexión.
@@ -78,9 +78,9 @@ Esta configuración se puede usar para escenarios en los que las operaciones soc
 > [!NOTE]
 > Cambiar esta configuración afecta solo a las correlaciones de alertas futuras.
 
-## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloque
+## <a name="enable-edr-in-block-mode"></a>Habilitación de EDR en modo de bloque
 
-La detección y respuesta de puntos de conexión (EDR) en modo de bloque proporciona protección contra artefactos malintencionados, incluso cuando Antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloque bloquea los artefactos malintencionados o los comportamientos que se detectan en un dispositivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados que se detectan después de la infracción.
+La detección y respuesta de puntos de conexión (EDR) en modo de bloque proporciona protección contra artefactos malintencionados, incluso cuando el Antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloque bloquea los artefactos malintencionados o los comportamientos detectados en un dispositivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados que se detectan después de la infracción.
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas corregidas de Autoresolve
 
@@ -98,14 +98,14 @@ En el caso de los inquilinos creados en o después de Windows 10, versión 1809,
 
 El bloqueo solo está disponible si su organización cumple estos requisitos:
 
-- Usa Antivirus de Microsoft Defender como solución antimalware activa y,
+- Usa antivirus de Microsoft Defender como solución antimalware activa y,
 - La característica de protección basada en la nube está habilitada
 
 Esta característica le permite bloquear archivos potencialmente malintencionados en la red. El bloqueo de un archivo impedirá que se lea, escriba o ejecute en dispositivos de la organización.
 
 Para activar **Permitir o bloquear** archivos:
 
-1. En el panel de navegación, seleccione **Configuración** \> **Características** \> avanzadas **generales** \> de **puntos** \> de conexión **Permitir o bloquear el archivo**.
+1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** **Características** \> avanzadas \> **generales** \> **Permitir o bloquear el archivo**.
 
 1. Cambie la configuración entre **Activado** y **Desactivado**.
  
@@ -129,9 +129,9 @@ Para obtener más información, vea [Administrar indicadores](manage-indicators.
 ## <a name="tamper-protection"></a>Protección contra alteraciones
 Durante algunos tipos de ciberataques, los actores malintencionados intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores incorrectos les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar los datos, la identidad y los dispositivos.
 
-La protección contra alteraciones básicamente bloquea Antivirus de Microsoft Defender e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos.
+La protección contra alteraciones básicamente bloquea el Antivirus de Microsoft Defender e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos.
 
-Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, consulte [Uso de tecnologías de última generación en Antivirus de Microsoft Defender a través de la protección proporcionada en la nube](cloud-protection-microsoft-defender-antivirus.md).
+Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, consulte [Uso de tecnologías de última generación en antivirus de Microsoft Defender mediante la protección proporcionada en la nube](cloud-protection-microsoft-defender-antivirus.md).
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 
@@ -150,7 +150,7 @@ Para obtener más información, vea [Investigar una cuenta de usuario](investiga
 La habilitación de la integración Skype Empresarial le permite comunicarse con los usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esta activación puede ser útil cuando necesite comunicarse con el usuario y mitigar los riesgos.
 
 > [!NOTE]
-> Cuando se aísla un dispositivo de la red, hay un elemento emergente en el que puede optar por habilitar Outlook y Skype comunicaciones que permiten las comunicaciones con el usuario mientras están desconectados de la red. Esta configuración se aplica a Skype y Outlook comunicación cuando los dispositivos están en modo de aislamiento.
+> Cuando un dispositivo se aísla de la red, hay un elemento emergente en el que puede optar por habilitar las comunicaciones de Outlook y Skype que permiten las comunicaciones con el usuario mientras están desconectados de la red. Esta configuración se aplica a la comunicación de Skype y Outlook cuando los dispositivos están en modo de aislamiento.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>integración Microsoft Defender for Identity
 
@@ -163,7 +163,7 @@ La integración con Microsoft Defender for Identity permite dinamizar directamen
 
 Esta característica solo está disponible si tiene un Office 365 E5 activo o el complemento Threat Intelligence. Para obtener más información, consulte la página del producto Office 365 Enterprise E5.
 
-Al activar esta característica, podrá incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en Office 365 buzones y dispositivos Windows.
+Al activar esta característica, podrá incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en los buzones de Office 365 y dispositivos Windows.
 
 > [!NOTE]
 > Tendrá que tener la licencia adecuada para habilitar esta característica.
@@ -200,11 +200,15 @@ Después de completar los pasos de integración en ambos portales, podrá ver la
 
 Bloquear el acceso a sitios web que contienen contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloque al implementar la [línea base de seguridad Microsoft Defender para punto de conexión](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
-## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Compartir alertas de punto de conexión con el portal de cumplimiento de Microsoft Purview
+## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Compartir alertas de punto de conexión con portal de cumplimiento Microsoft Purview
 
-Reenvía alertas de seguridad de punto de conexión y su estado de evaluación de prioridades al portal de cumplimiento de Microsoft Purview, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los datos de Office 365.
+Reenvía las alertas de seguridad del punto de conexión y su estado de evaluación de prioridades a portal de cumplimiento Microsoft Purview, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los datos de Office 365.
 
 Después de configurar los [indicadores de infracción de directivas de seguridad](/microsoft-365/compliance/insider-risk-management-settings#indicators) en la configuración de administración de riesgos internos, las alertas de Defender para punto de conexión se compartirán con la administración de riesgos internos para los usuarios aplicables.
+
+## <a name="authenticated-telemetry"></a>Telemetría autenticada
+
+Puede **activar la** telemetría autenticada para evitar la suplantación de telemetría en el panel.
 
 ## <a name="microsoft-intune-connection"></a>conexión Microsoft Intune
 
@@ -216,7 +220,7 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-i
 Esta característica solo está disponible si tiene los siguientes requisitos previos:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
-- Un entorno de Microsoft Intune activo, con dispositivos Windows administrados por Intune [Azure AD unidos](/azure/active-directory/devices/concept-azure-ad-join/).
+- Un entorno de Microsoft Intune activo, con dispositivos Windows administrados por Intune [unidos a Azure AD](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 51eaa6ddcaf50a48ccbd8ffc000a79049c1d9842
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783037"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489478"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
@@ -55,7 +55,7 @@ Además de lo anterior, también hay una opción para [recopilar los registros d
 > [!NOTE]
 > En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la [solución unificada moderna](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) instalada, el script del analizador de cliente llama a un archivo ejecutable llamado `MDEClientAnalyzer.exe` para ejecutar las pruebas de conectividad a las direcciones URL del servicio en la nube.
 >
-> En Windows 8.1, Windows Server 2016 o cualquier edición del sistema operativo anterior en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script del analizador de cliente llama a un archivo ejecutable llamado `MDEClientAnalyzerPreviousVersion.exe` para ejecutar pruebas de conectividad para direcciones URL de comandos y control (CnC) al mismo tiempo que llama a en Microsoft Monitoring Agent herramienta de `TestCloudConnection.exe` conectividad para direcciones URL de canal de cyberdatos.
+> En Windows 8.1, Windows Server 2016 o cualquier edición del sistema operativo anterior en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script del analizador de cliente llama a un archivo ejecutable llamado `MDEClientAnalyzerPreviousVersion.exe` para ejecutar pruebas de conectividad para direcciones URL de comandos y control (CnC) al mismo tiempo que llama a la herramienta `TestCloudConnection.exe` de conectividad del Agente de supervisión de Microsoft para direcciones URL de canal de datos cibernéticos.
 
 
 Todos los scripts y módulos de PowerShell incluidos con el analizador están firmados por Microsoft.
@@ -82,7 +82,7 @@ Contenido de ejemplo después de modificar MDEClientAnalyzer.ps1:
 >
 > - Versión de las ventanas en las que se ejecuta el analizador.
 > - Disponibilidad del canal del registro de eventos en la máquina.
-> - El estado de inicio del sensor de EDR (Sense se detiene si la máquina aún no está incorporada).
+> - El estado de inicio del sensor EDR (Sense se detiene si la máquina aún no está incorporada).
 > - Si se usó un parámetro de solución de problemas avanzado con el comando analyzer.
 
 De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado contendrá los siguientes elementos.
@@ -94,11 +94,11 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado c
 - Carpeta SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
-    Descripción: Lista de software instalado x86 en el software del sistema operativo x64 recopilado del registro.
+    Descripción: lista de software x64 instalado en el sistema operativo x64 recopilado del registro.
 
   - AddRemoveProgramsWOW64.csv
 
-    Descripción: Lista de software instalado x86 en el software del sistema operativo x64 recopilado del registro.
+    Descripción: lista de software x86 instalado en el sistema operativo x64 recopilado del registro.
 
     - CertValidate.log
 
@@ -106,7 +106,7 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado c
 
     - dsregcmd.txt
 
-      Descripción: salida de la ejecución de [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el estado Azure AD de la máquina.
+      Descripción: salida de la ejecución de [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el estado de Azure AD de la máquina.
 
     - IFEO.txt
 
@@ -156,7 +156,7 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado c
 
   - OperationsManager.evtx
 
-    Descripción: exportación del registro de eventos de Microsoft Monitoring Agent
+    Descripción: Exportación del registro de eventos de Microsoft Monitoring Agent
 
 
 

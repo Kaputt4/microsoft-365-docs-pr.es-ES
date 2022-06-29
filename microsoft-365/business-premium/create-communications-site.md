@@ -2,11 +2,11 @@
 title: Crear un sitio de comunicaciones de SharePoint en Teams para Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un sitio de comunicaciones de SharePoint para su campaña o negocio con Microsoft 365 Empresa Premium, y proteja al equipo de ciberataques y ataques de malware y otras amenazas debido a un uso compartido incorrecto de archivos.
-ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 48eaa0afabb83b66b797fc0bc47234888fc5e176
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623425"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489258"
 ---
 # <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 

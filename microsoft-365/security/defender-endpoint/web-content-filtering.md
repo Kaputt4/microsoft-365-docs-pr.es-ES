@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648577"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489384"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -63,11 +63,22 @@ Antes de probar esta característica, asegúrese de cumplir los requisitos descr
 
 Los datos se almacenan en la región seleccionada como parte de la [configuración de control de datos de Microsoft Defender para punto de conexión](data-storage-privacy.md). Los datos no abandonarán el centro de datos de esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
+## <a name="precedence-for-multiple-active-policies"></a>Precedencia de varias directivas activas
+
+La aplicación de varias directivas de filtrado de contenido web diferentes al mismo dispositivo dará lugar a la aplicación de directivas más restrictivas para cada categoría. Imagine la siguiente situación:
+
+- **Directiva 1**: bloquea las categorías 1 y 2 y audita el resto
+- **Directiva 2**: bloquea las categorías 3 y 4 y audita el resto
+
+El resultado es que las categorías 1 a 4 están bloqueadas.  Esto se muestra en la siguiente imagen.
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Muestra la precedencia del modo de bloque de directivas de filtrado de contenido web sobre el modo de auditoría":::
+
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> e inicie sesión.
 
-2. En el panel de navegación, seleccione **Configuración** \> **Características avanzadas** **generales** \> **de puntos** \> de conexión. 
+2. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** **Características avanzadas**\> **generales**\>. 
 
 3. Desplácese hacia abajo hasta que vea **el filtrado de contenido web**. 
 
@@ -75,7 +86,7 @@ Los datos se almacenan en la región seleccionada como parte de la [configuraci�
 
 ### <a name="configure-web-content-filtering-policies"></a>Configuración de directivas de filtrado de contenido web
 
-Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** \> **Filtrado de contenido web** de **puntos** \> de conexión (en **Reglas**).
+Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las **directivas**, vaya a **Configuración** \> Filtrado de **contenido web** de puntos \> de conexión (en **Reglas**).
 
 Las directivas se pueden implementar para bloquear cualquiera de las siguientes categorías primarias o secundarias:
 
@@ -143,7 +154,7 @@ Las directivas se pueden implementar para bloquear cualquiera de las siguientes 
 
 **Mensajería instantánea**: sitios que se pueden usar para descargar software de mensajería instantánea o mensajería instantánea basada en cliente.
 
-**Professional red**: sitios que proporcionan servicios de red profesionales.
+**Red profesional**: sitios que proporcionan servicios de red profesionales.
 
 **Redes sociales**: sitios que proporcionan servicios de redes sociales.
 
@@ -166,7 +177,7 @@ Las directivas se pueden implementar para bloquear cualquiera de las siguientes 
 
 Para agregar una nueva directiva, siga estos pasos:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Configuración** >  **Filtro de** >  contenido web **+ Agregar directiva**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Configuración Filtrado** >  de  > **contenido web****+ Agregar directiva**.
 
 2. Especifique un nombre.
 
@@ -186,7 +197,7 @@ Para agregar una nueva directiva, siga estos pasos:
 
 ## <a name="end-user-experience"></a>Experiencia del usuario final
 
-La experiencia de bloqueo para exploradores compatibles con terceros se proporciona mediante la protección de red, que proporciona un mensaje de nivel de sistema que notifica al usuario una conexión bloqueada. Para obtener una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
+La experiencia de bloqueo para exploradores compatibles con terceros se proporciona mediante la protección de red, que proporciona un mensaje de nivel de sistema que notifica al usuario una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>Permitir sitios web específicos
 
@@ -194,7 +205,7 @@ Es posible invalidar la categoría bloqueada en el filtrado de contenido web par
 
 Para definir un indicador personalizado, siga estos pasos:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Configuración** \> **dirección URL** **de indicadores** \> \> de **puntos de conexión** o **Agregar elemento de** dominio\>.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Configuración** \> **Puntos de conexión Indicadores** \>  \> **URL/Agregar elemento de dominio**\>.
 
 2. Escriba el dominio del sitio.
 
@@ -250,13 +261,13 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 Solo se admite Microsoft Edge si la configuración del sistema operativo del dispositivo es Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protección de red solo se admite en el modo inspeccionar en dispositivos de servidor, que es responsable de proteger el tráfico entre exploradores de terceros compatibles.
 
-Solo se admiten Microsoft Edge y no se admite la protección de red en Windows 10 hosts de sesión múltiple de Azure Virtual Desktop.
+Solo se admite Microsoft Edge y no se admite la protección de red en Windows 10 hosts de varias sesiones de Azure Virtual Desktop.
 
 La protección de red no admite actualmente la inspección SSL, lo que podría dar lugar a que algunos sitios se permitan mediante el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya producido el protocolo de enlace TLS y a la imposibilidad de analizar determinadas redirecciones.  Esto incluye redireccionamientos desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloque personalizado para la página de inicio de sesión para asegurarse de que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto podría bloquear su acceso a otros servicios asociados con el mismo sitio web. 
 
 Si usa Microsoft 365 Empresa Premium o Microsoft Defender para Empresas, puede definir una directiva de filtrado de contenido web para su entorno. Esa directiva se aplicará a todos los usuarios de forma predeterminada.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

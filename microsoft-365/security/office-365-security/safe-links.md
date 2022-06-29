@@ -1,5 +1,5 @@
 ---
-title: Introducción a los vínculos Caja fuerte completos para Microsoft Defender para Office 365
+title: Introducción a los vínculos seguros completos para Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -25,17 +25,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Obtenga información sobre la protección de vínculos de Caja fuerte en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte Vínculos y vea los gráficos de los mensajes de vínculos de Caja fuerte.
+description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1e013c77005c30872fc5355ae0b0e3f7cae67ca
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: b3eb2ee76beb106d26d5b7b65d13c7aa0a0d5c1e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115815"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487057"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>vínculos de Caja fuerte en Microsoft Defender para Office 365
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -44,77 +44,77 @@ ms.locfileid: "66115815"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si usa Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal y busca información sobre Safelinks en Outlook, consulte [Seguridad avanzada de Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si usa Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal y busca información sobre Safelinks en Outlook, vea [Seguridad avanzada de Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Caja fuerte Vínculos es una característica de [Defender para Office 365](defender-for-office-365.md) que proporciona examen de direcciones URL y reescritura de mensajes de correo electrónico entrantes en el flujo de correo, y la comprobación del tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. Caja fuerte análisis de vínculos se produce además del [antispam](anti-spam-protection.md) y [antimalware](anti-malware-protection.md) normales en los mensajes de correo electrónico entrantes en Exchange Online Protection (EOP). El examen de vínculos seguros puede ayudar a proteger a su organización de vínculos malintencionados que se usan en la suplantación de identidad (phishing) y otros ataques.
+Vínculos seguros es una característica de [Defender para Office 365](defender-for-office-365.md) que proporciona examen de direcciones URL y reescritura de mensajes de correo electrónico entrantes en el flujo de correo, así como la comprobación del tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. El análisis de vínculos seguros se produce además del [antispam](anti-spam-protection.md) y [el antimalware](anti-malware-protection.md) normales en los mensajes de correo electrónico entrantes en Exchange Online Protection (EOP). El examen de vínculos seguros puede ayudar a proteger a su organización de vínculos malintencionados que se usan en la suplantación de identidad (phishing) y otros ataques.
 
-Vea este breve vídeo sobre cómo protegerse frente a vínculos malintencionados con vínculos Caja fuerte en Microsoft Defender para Office 365.  
+Vea este breve vídeo sobre cómo protegerse frente a vínculos malintencionados con vínculos seguros en Microsoft Defender para Office 365.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
-- **Mensajes de correo electrónico**: aunque no hay ninguna directiva de vínculos de Caja fuerte predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona Caja fuerte Protección de vínculos a todos los destinatarios (usuarios que no están definidos en directivas personalizadas de vínculos de Caja fuerte). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos Caja fuerte que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configurar directivas de vínculos de Caja fuerte en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+- **Mensajes de correo electrónico**: aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
-  Para obtener más información sobre Caja fuerte Protección de vínculos para mensajes de correo electrónico, consulte la sección [configuración de vínculos de Caja fuerte para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.
+  Para obtener más información sobre la protección de vínculos seguros para mensajes de correo electrónico, consulte la sección [Vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.
   
   > [!NOTE]
-  > Caja fuerte Vínculos no funciona en carpetas públicas habilitadas para correo.
+  > Vínculos seguros no funciona en carpetas públicas habilitadas para correo.
   >
-  > Caja fuerte Links solo admite formatos HTTP(S) y FTP.
+  > Vínculos seguros solo admite formatos HTTP(S) y FTP.
 
 - **Microsoft Teams**: la protección de vínculos seguros para vínculos en conversaciones de Teams, chats de grupo o desde canales también se controla mediante directivas de vínculos seguros.
 
-  Para obtener más información sobre la protección de vínculos de Caja fuerte en Teams, consulte la sección [configuración de vínculos de Caja fuerte para Microsoft Teams](#safe-links-settings-for-microsoft-teams) más adelante en este artículo.
+  Para obtener más información sobre la protección de vínculos seguros en Teams, consulte la sección [Vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams) más adelante en este artículo.
 
   > [!NOTE]
-  > Actualmente, la protección de vínculos de Caja fuerte para Microsoft Teams no está disponible en Microsoft 365 GCC DoD high o Microsoft 365.
+  > Actualmente, la protección de vínculos seguros para Microsoft Teams no está disponible en Microsoft 365 GCC High o Microsoft 365 DoD.
 
-- **Aplicaciones de Office 365**: la protección de vínculos seguros para aplicaciones de Office 365 está disponible en aplicaciones de escritorio, móviles y web compatibles. La protección de vínculos de Caja fuerte se **configura** para las aplicaciones de Office 365 en la configuración global que están **fuera** de las directivas de vínculos de Caja fuerte. Para obtener instrucciones, consulte [Configuración global de los valores de vínculos de Caja fuerte en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
+- **Aplicaciones de Office 365**: la protección de vínculos seguros para aplicaciones de Office 365 está disponible en aplicaciones de escritorio, móviles y web compatibles. La protección de vínculos seguros se **configura** para Office 365 aplicaciones en la configuración global que están **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [Configuración global de los valores de Vínculos seguros en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
 
   Protección de vínculos seguros para las aplicaciones de Office 365 se aplica a todos los usuarios de la organización con licencia de Defender para Office 365, independientemente de si los usuarios están incluidos en las directivas activas de vínculos seguros o no.
 
-  Para obtener más información sobre la protección de vínculos de Caja fuerte en aplicaciones Office 365, consulte la sección [Configuración de vínculos de Caja fuerte para aplicaciones Office 365](#safe-links-settings-for-office-365-apps) más adelante en este artículo.
+  Para obtener más información sobre la protección de vínculos seguros en aplicaciones Office 365, consulte la sección [Configuración de vínculos seguros para aplicaciones Office 365](#safe-links-settings-for-office-365-apps) más adelante en este artículo.
 
-En este artículo se incluyen descripciones detalladas de los siguientes tipos de configuración de vínculos de Caja fuerte:
+En este artículo se incluyen descripciones detalladas de los siguientes tipos de configuración de vínculos seguros:
 
-- **Configuración en las directivas de vínculos de Caja fuerte**: esta configuración solo se aplica a los usuarios que se incluyen en las directivas específicas, y la configuración puede ser diferente entre las directivas. Entre estas opciones se incluyen:
+- **Configuración en directivas de vínculos seguros**: esta configuración solo se aplica a los usuarios que se incluyen en las directivas específicas, y la configuración puede ser diferente entre las directivas. Entre estas opciones se incluyen:
 
-  - [Caja fuerte Configuración de vínculos para mensajes de correo electrónico](#safe-links-settings-for-email-messages)
+  - [Configuración de vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages)
   - [Configuración de vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams)
-  - [Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos de Caja fuerte](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+  - [Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos seguros](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Configuración global de vínculos de Caja fuerte**: esta configuración se configura globalmente, no en las directivas de vínculos de Caja fuerte. Entre estas opciones se incluyen:
+- **Configuración de vínculos seguros globales**: esta configuración se configura globalmente, no en las directivas de vínculos seguros. Entre estas opciones se incluyen:
 
-  - [configuración de vínculos de Caja fuerte para aplicaciones de Office 365](#safe-links-settings-for-office-365-apps)
-  - [Lista "Bloquear las siguientes direcciones URL" para vínculos de Caja fuerte](#block-the-following-urls-list-for-safe-links)
+  - [Configuración de vínculos seguros para aplicaciones Office 365](#safe-links-settings-for-office-365-apps)
+  - [Lista "Bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links)
 
-En la tabla siguiente se describen escenarios de vínculos de Caja fuerte en organizaciones Microsoft 365 y Office 365 que incluyen Defender para Office 365 (tenga en cuenta que la falta de licencias nunca es un problema en los ejemplos).
+En la tabla siguiente se describen los escenarios de vínculos seguros en Microsoft 365 y Office 365 organizaciones que incluyen Defender para Office 365 (tenga en cuenta que la falta de licencias nunca es un problema en los ejemplos).
 
 |Escenario|Resultado|
 |---|---|
-|Jean es miembro del departamento de marketing. Caja fuerte La protección de vínculos para aplicaciones Office 365 está activada en la configuración global de Caja fuerte Links y existe una directiva de vínculos de Caja fuerte que se aplica a los miembros del departamento de marketing. Jean abre una presentación PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL en la presentación.|Jean está protegido por Caja fuerte Links. <p> Jean está incluido en una directiva de vínculos de Caja fuerte y Caja fuerte la protección de vínculos para aplicaciones Office 365 está activada. <p> Para obtener más información sobre los requisitos para la protección de vínculos de Caja fuerte en aplicaciones Office 365, consulte la sección [Configuración de vínculos de Caja fuerte para aplicaciones Office 365](#safe-links-settings-for-office-365-apps) más adelante en este artículo.|
-|La organización Microsoft 365 E5 de Chris no tiene configuradas directivas de vínculos de Caja fuerte. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio web malintencionado en el que, en última instancia, hace clic.|Chris no está protegido por Caja fuerte Links. <p> Un administrador debe crear al menos una directiva de vínculos de Caja fuerte para que cualquier usuario obtenga Caja fuerte protección de vínculos en los mensajes de correo electrónico entrantes. Chris debe incluirse en las condiciones de la directiva para obtener Caja fuerte protección de vínculos.|
-|En la organización de Pat, ningún administrador ha creado ninguna directiva de vínculos de Caja fuerte, pero Caja fuerte la protección de vínculos para aplicaciones Office 365 está activada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por Caja fuerte Vínculos. <p> Aunque la protección de vínculos de Caja fuerte para aplicaciones Office 365 está activada globalmente, Pat no se incluye en ninguna directiva activa de vínculos Caja fuerte, por lo que no se puede aplicar la protección.|
-|En la organización de Lee, `https://tailspintoys.com` se configura en la lista **Bloquear las siguientes direcciones URL** en la configuración global de Caja fuerte Vínculos. Ya existe una directiva de vínculos de Caja fuerte que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lee; depende de la entrada de dirección URL de la lista y del cliente de correo electrónico que usó Lee. Para obtener más información, consulte la [lista "Bloquear las siguientes direcciones URL" para Caja fuerte sección Vínculos](#block-the-following-urls-list-for-safe-links) más adelante en este artículo.|
-|Jamie y Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron Caja fuerte directivas de vínculos que se aplican tanto a Jamie como a Julia. Jamie envía un correo electrónico a Julia, sin saber que el correo electrónico contiene una dirección URL malintencionada.|Julia está protegida por Caja fuerte Links **si** la directiva de vínculos de Caja fuerte que se aplica a ella está configurada para aplicarse a los mensajes entre destinatarios internos. Para obtener más información, consulte la sección [configuración de vínculos de Caja fuerte para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.|
+|Jean es miembro del departamento de marketing. La protección de vínculos seguros para Office 365 aplicaciones está activada en la configuración global de Vínculos seguros y existe una directiva de vínculos seguros que se aplica a los miembros del departamento de marketing. Jean abre una presentación de PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL en la presentación.|Jean está protegido por vínculos seguros. <p> Jean se incluye en una directiva de vínculos seguros y la protección de vínculos seguros para aplicaciones Office 365 está activada. <p> Para obtener más información sobre los requisitos de protección de vínculos seguros en Office 365 aplicaciones, consulte la sección [Configuración de vínculos seguros para aplicaciones Office 365](#safe-links-settings-for-office-365-apps) más adelante en este artículo.|
+|La organización Microsoft 365 E5 de Chris no tiene configuradas directivas de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio web malintencionado en el que, en última instancia, hace clic.|Chris no está protegido por vínculos seguros. <p> Un administrador debe crear al menos una directiva de vínculos seguros para que cualquier usuario obtenga protección de vínculos seguros en los mensajes de correo electrónico entrantes. Chris debe incluirse en las condiciones de la directiva para obtener la protección de vínculos seguros.|
+|En la organización de Pat, ningún administrador ha creado ninguna directiva de vínculos seguros, pero la protección de vínculos seguros para Office 365 aplicaciones está activada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por vínculos seguros. <p> Aunque la protección de vínculos seguros para Office 365 aplicaciones está activada globalmente, Pat no se incluye en ninguna directiva de vínculos seguros activa, por lo que no se puede aplicar la protección.|
+|En la organización de Lee, `https://tailspintoys.com` se configura en la lista **Bloquear las siguientes direcciones URL** en la configuración global de Vínculos seguros. Ya existe una directiva de vínculos seguros que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lee; depende de la entrada de dirección URL de la lista y del cliente de correo electrónico que usó Lee. Para obtener más información, consulte la [sección "Bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links) más adelante en este artículo.|
+|Jamie y Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron directivas de vínculos seguros que se aplican tanto a Jamie como a Julia. Jamie envía un correo electrónico a Julia, sin saber que el correo electrónico contiene una dirección URL malintencionada.|Julia está protegida por vínculos seguros **si** la directiva vínculos seguros que se aplica a ella está configurada para aplicarse a los mensajes entre destinatarios internos. Para obtener más información, consulte la sección [Configuración de vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.|
 
-## <a name="safe-links-settings-for-email-messages"></a>Caja fuerte Configuración de vínculos para mensajes de correo electrónico
+## <a name="safe-links-settings-for-email-messages"></a>Configuración de vínculos seguros para mensajes de correo electrónico
 
 Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL examinadas se reescriben con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com`. Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
 
-Luego de que Vínculos seguros reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir. Sin embargo, en el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que ese destinatario también esté protegido por Caja fuerte Vínculos o que la dirección URL ya se haya reescrito en una comunicación anterior. Mientras que Vínculos seguros esté habilitado, las direcciones URL se seguirán analizando antes de la entrega, independientemente de que hayan sido reescritas o no. Las direcciones URL no coronadas también se comprobarán mediante una llamada API del lado cliente a Caja fuerte Vínculos en el momento de hacer clic en Outlook para desktop versión 16.0.12513 o posterior.
+Luego de que Vínculos seguros reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir. Sin embargo, en el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que ese destinatario también esté protegido por vínculos seguros o que la dirección URL ya se haya reescrito en una comunicación anterior. Mientras que Vínculos seguros esté habilitado, las direcciones URL se seguirán analizando antes de la entrega, independientemente de que hayan sido reescritas o no. Las direcciones URL no activadas también se comprobarán mediante una llamada API del lado cliente a Vínculos seguros en el momento de hacer clic en Outlook for Desktop versión 16.0.12513 o posterior.
 
-La configuración de las directivas de vínculos de Caja fuerte que se aplican a los mensajes de correo electrónico se describe en la lista siguiente:
+La configuración de las directivas de vínculos seguros que se aplican a los mensajes de correo electrónico se describe en la lista siguiente:
 
-- **Activado: Caja fuerte Vínculos comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: habilita o deshabilita el examen de vínculos Caja fuerte en los mensajes de correo electrónico. El valor recomendado está seleccionado (activado) y da como resultado las siguientes acciones:
+- **Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: habilita o deshabilita el examen de vínculos seguros en los mensajes de correo electrónico. El valor recomendado está seleccionado (activado) y da como resultado las siguientes acciones:
   - El análisis de Vínculos seguros está habilitado en Outlook (C2R) en Windows.
-  - Las direcciones URL se vuelven a escribir y los usuarios se enrutan a través de Caja fuerte Protección de vínculos al hacer clic en direcciones URL en los mensajes.
+  - Las direcciones URL se vuelven a escribir y los usuarios se enrutan a través de la protección de vínculos seguros al hacer clic en direcciones URL en los mensajes.
   - Cuando se hace clic en ellas, las direcciones URL se comprueban en una lista de direcciones URL malintencionadas conocidas y en la [lista "Bloquear las siguientes direcciones URL"](#block-the-following-urls-list-for-safe-links).
   - Las direcciones URL que no tienen una reputación válida se detonan de forma asincrónica en segundo plano.
 
   La siguiente configuración solo está disponible si el análisis de Vínculos seguros está activado en los mensajes de correo electrónico:
 
-  - **Aplicar Caja fuerte Vínculos a los mensajes de correo electrónico enviados dentro de la organización**: habilita o deshabilita el examen de vínculos de Caja fuerte en los mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma organización Exchange Online. El valor recomendado está seleccionado (activado).
+  - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: habilita o deshabilita el examen de vínculos seguros en los mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma organización Exchange Online. El valor recomendado está seleccionado (activado).
 
   - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: habilita el examen en tiempo real de vínculos, incluidos los vínculos en mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está seleccionado (activado).
 
@@ -122,9 +122,9 @@ La configuración de las directivas de vínculos de Caja fuerte que se aplican a
     - Seleccionado (activado): los mensajes que contienen direcciones URL se mantienen hasta que finaliza el examen. Los mensajes se entregan solo después de confirmar que las direcciones URL son seguras. Este es el valor recomendado.
     - No seleccionado (desactivado): si el examen de direcciones URL no se puede completar, entregue el mensaje de todos modos.
 
-  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está habilitada, no se produce ningún ajuste de direcciones URL. Caja fuerte Vínculos se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL Outlook clientes que lo admiten. El valor recomendado está deshabilitado.
+  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está habilitada, no se produce ningún ajuste de direcciones URL. Vínculos seguros se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL por parte de los clientes de Outlook que lo admiten. El valor recomendado está deshabilitado.
 
-- **Realizar un seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de datos de clic de vínculos Caja fuerte para las direcciones URL en las que se ha hecho clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración seleccionada (seguimiento de los clics del usuario).
+- **Seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de datos de clic de vínculos seguros para las direcciones URL en las que se ha hecho clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración seleccionada (seguimiento de los clics del usuario).
 
   Actualmente no se admite el seguimiento de clics en direcciones URL para vínculos en mensajes de correo electrónico enviados entre remitentes internos y destinatarios internos.
 
@@ -142,28 +142,28 @@ La configuración de las directivas de vínculos de Caja fuerte que se aplican a
   Solo puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+  > La directiva se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+  > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 - **Prioridad**: si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
   Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
   
-### <a name="how-safe-links-works-in-email-messages"></a>Funcionamiento de los vínculos Caja fuerte en los mensajes de correo electrónico
+### <a name="how-safe-links-works-in-email-messages"></a>Funcionamiento de vínculos seguros en los mensajes de correo electrónico
 
-En un nivel alto, aquí se muestra cómo funciona la protección de vínculos de Caja fuerte en las direcciones URL de los mensajes de correo electrónico:
+En un nivel alto, aquí se muestra cómo funciona la protección de vínculos seguros en las direcciones URL de los mensajes de correo electrónico:
 
 1. Todo el correo electrónico pasa por EOP, donde el protocolo de Internet (IP) y los filtros de sobre, protección contra malware basada en firmas, filtros contra correo no deseado y antimalware antes de que el mensaje se entregue al buzón del destinatario.
 
 2. El usuario abre el mensaje en su buzón y hace clic en una dirección URL del mensaje.
 
-3. Caja fuerte Vínculos comprueba inmediatamente la dirección URL antes de abrir el sitio web:
+3. Vínculos seguros comprueba inmediatamente la dirección URL antes de abrir el sitio web:
 
    - Si la dirección URL se incluye en la lista **Bloquear las siguientes direcciones URL** , se abre una [advertencia de dirección URL bloqueada](#blocked-url-warning) .
 
@@ -175,24 +175,24 @@ En un nivel alto, aquí se muestra cómo funciona la protección de vínculos de
 
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Configuración de vínculos seguros para Microsoft Teams
 
-Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en las directivas de vínculos seguros. En concreto, se usa **la opción Seleccionar la acción para direcciones URL desconocidas o potencialmente malintencionadas dentro de Microsoft Teams** configuración. El valor recomendado es **On**.
+Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en las directivas de vínculos seguros. En concreto, se usa **la opción Seleccionar la acción para direcciones URL desconocidas o potencialmente malintencionadas en Microsoft Teams** . El valor recomendado es **On**.
 
 > [!NOTE]
-> Al activar o desactivar Caja fuerte protección de vínculos para Teams, el cambio puede tardar hasta 24 horas en surtir efecto.
+> Al activar o desactivar la protección de vínculos seguros para Teams, el cambio puede tardar hasta 24 horas en surtir efecto.
 >
-> Actualmente, la protección de vínculos de Caja fuerte para Microsoft Teams no está disponible en Microsoft 365 GCC DoD high o Microsoft 365.
+> Actualmente, la protección de vínculos seguros para Microsoft Teams no está disponible en Microsoft 365 GCC High o Microsoft 365 DoD.
 
-La siguiente configuración de Caja fuerte Las directivas de vínculos que se aplican a los vínculos de mensajes de correo electrónico también se aplican a los vínculos de Teams:
+La siguiente configuración de las directivas de vínculos seguros que se aplican a los vínculos de mensajes de correo electrónico también se aplica a los vínculos de Teams:
 
 - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos**
 - **No hacer seguimiento de los clics de los usuarios**
 - **No permitir que los usuarios hagan clic en la dirección URL original**
 
-Esta configuración se explica anteriormente en [Caja fuerte Configuración de vínculos para mensajes de correo electrónico](#safe-links-settings-for-email-messages).
+Esta configuración se explicó anteriormente en [Configuración de vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages).
 
 Después de activar la protección de vínculos seguros para Microsoft Teams, las direcciones URL de Teams se comprueban en una lista de vínculos malintencionados conocidos cuando el usuario protegido hace clic en el vínculo (protección al hacer clic). Las direcciones URL no se reescriben. Si se detecta que un vínculo es malintencionado, los usuarios tendrán las siguientes experiencias:
 
-- Si se hizo clic en el vínculo en una conversación de Teams, chat en grupo o desde canales, la página de advertencia como se muestra en la captura de pantalla siguiente aparecerá en el explorador web predeterminado.
+- Si se hizo clic en el vínculo en una conversación de Teams, chat en grupo o desde canales, la página de advertencia, como se muestra en la captura de pantalla siguiente, aparecerá en el explorador web predeterminado.
 - Si se hizo clic en el vínculo desde una pestaña anclada, la página de advertencia aparecerá en la interfaz de Teams de la pestaña. La opción para abrir el vínculo en un explorador web está deshabilitada por motivos de seguridad.
 - Dependiendo de cómo se establezca la configuración **No permitir que los usuarios hagan clic en la dirección URL original** de la directiva, el usuario podrá o no podrá hacer clic en la dirección URL original (**Continuar de todos modos (no recomendado)** en la captura de pantalla). Se recomienda habilitar la opción **No permitir que los usuarios hagan clic en la dirección URL original para** que los usuarios no puedan hacer clic en la dirección URL original.
 
@@ -212,71 +212,74 @@ En un nivel alto, aquí se muestra cómo funciona la protección de vínculos se
 
 3. Las direcciones URL se validan al hacer clic para el usuario en chats, chats de grupo, canales y pestañas.
 
-## <a name="safe-links-settings-for-office-365-apps"></a>configuración de vínculos de Caja fuerte para aplicaciones de Office 365
+## <a name="safe-links-settings-for-office-365-apps"></a>Configuración de vínculos seguros para aplicaciones Office 365
 
-Caja fuerte Protección de vínculos para aplicaciones de Office 365 comprueba los vínculos de Office documentos, no los vínculos en los mensajes de correo electrónico (pero puede comprobar los vínculos en los documentos adjuntos Office en los mensajes de correo electrónico después de abrir el documento).
+Protección de vínculos seguros para aplicaciones Office 365 comprueba vínculos en documentos de Office, no vínculos en mensajes de correo electrónico (pero puede comprobar vínculos en documentos adjuntos de Office en mensajes de correo electrónico después de abrir el documento).
 
-Caja fuerte La protección de vínculos para aplicaciones de Office 365 tiene los siguientes requisitos de cliente:
+La protección de vínculos seguros para aplicaciones Office 365 tiene los siguientes requisitos de cliente:
 
 - Aplicaciones Microsoft 365 o Microsoft 365 Empresa Premium.
   - Versiones actuales de Word, Excel y PowerPoint en Windows, Mac o en un explorador web.
-  - Office aplicaciones en dispositivos iOS o Android.
+  - Aplicaciones de Office en dispositivos iOS o Android.
   - Visio en Windows.
   - OneNote en un explorador web.
   - Outlook para Windows al abrir archivos EML o MSG guardados.
 
-- Office 365 aplicaciones están configuradas para usar la autenticación moderna. Para obtener más información, consulte Funcionamiento de la [autenticación moderna para las aplicaciones cliente de Office 2013, Office 2016 y Office 2019](../../enterprise/modern-auth-for-office-2013-and-2016.md).
+- Office 365 aplicaciones están configuradas para usar la autenticación moderna. Para obtener más información, vea [Cómo funciona la autenticación moderna para aplicaciones cliente de Office 2013, Office 2016 y Office 2019](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
 - Los usuarios han iniciado sesión con sus cuentas profesionales o educativas. Para obtener más información, consulte [Inicio de sesión en Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
-La protección de vínculos de Caja fuerte se configura para las aplicaciones de Office 365 en la configuración global de vínculos de Caja fuerte, no en las directivas de vínculos de Caja fuerte. La protección se aplica a todos los usuarios de la organización que tienen licencia para Defender para Office 365, independientemente de si los usuarios están incluidos en las directivas activas de vínculos de Caja fuerte o no.
+La protección de vínculos seguros se configura para Office 365 aplicaciones en la configuración global de Vínculos seguros, no en Directivas de vínculos seguros. La protección se aplica a todos los usuarios de la organización que tienen licencia para Defender para Office 365, independientemente de si los usuarios están incluidos en las directivas de vínculos seguros activas o no.
 
-La siguiente configuración de vínculos de Caja fuerte está disponible para las aplicaciones de Office 365:
+La siguiente configuración de vínculos seguros está disponible para Office 365 aplicaciones:
 
-- **Office 365 aplicaciones**: habilita o deshabilita el examen de vínculos de Caja fuerte en aplicaciones Office 365 compatibles. El valor predeterminado y recomendado es **Activado**.
+- **Office 365 aplicaciones**: habilita o deshabilita el examen de vínculos seguros en aplicaciones Office 365 compatibles. El valor predeterminado y recomendado es **Activado**.
 
-- **No realizar un seguimiento cuando los usuarios hacen clic en vínculos de Caja fuerte**: habilita o deshabilita el almacenamiento de Caja fuerte los datos de clic de vínculos para las direcciones URL en las que se ha hecho clic en las versiones de escritorio de Word, Excel, PowerPoint y Visio. El valor recomendado es **Desactivado**, lo que significa que se realiza un seguimiento de los clics del usuario.
+- **No realizar un seguimiento cuando los usuarios hacen clic en Vínculos seguros**: habilita o deshabilita el almacenamiento de datos de clic de vínculos seguros para las direcciones URL en las que se ha hecho clic en las versiones de escritorio de Word, Excel, PowerPoint y Visio. El valor recomendado es **Desactivado**, lo que significa que se realiza un seguimiento de los clics del usuario.
 
-- **No permitir que los usuarios hagan clic a través de vínculos seguros a la dirección URL original**: permite o impide que los usuarios hagan clic en la [página de advertencia](#warning-pages-from-safe-links) a la dirección URL original en las versiones de escritorio de Word, Excel, PowerPoint y Visio. El valor predeterminado y recomendado es **Activado**.
+- **No permita que los usuarios hagan clic a través de vínculos seguros a la dirección URL original**: permite o impide que los usuarios hagan clic en la [página de advertencia](#warning-pages-from-safe-links) a la dirección URL original en las versiones de escritorio de Word, Excel, PowerPoint y Visio. El valor predeterminado y recomendado es **Activado**.
 
-Para configurar los valores de vínculos de Caja fuerte para aplicaciones de Office 365, consulte [Configuración de la protección de vínculos de Caja fuerte para aplicaciones de Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+Para configurar los valores de Vínculos seguros para aplicaciones Office 365, consulte Configuración de la [protección de vínculos seguros para aplicaciones de Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
-Para obtener más información sobre los valores recomendados para la configuración de directiva estándar y estricta, consulte [Configuración global para vínculos de Caja fuerte](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
+Para obtener más información sobre los valores recomendados para la configuración de directiva estándar y estricta, consulte [Configuración global para vínculos seguros](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>Funcionamiento de Caja fuerte Links en aplicaciones de Office 365
+### <a name="how-safe-links-works-in-office-365-apps"></a>Funcionamiento de vínculos seguros en aplicaciones Office 365
 
-En un nivel alto, aquí se muestra cómo funciona la protección de vínculos de Caja fuerte para las direcciones URL de Office 365 aplicaciones. Las aplicaciones de Office 365 admitidas se describen en la sección anterior.
+En un nivel alto, aquí se muestra cómo funciona la protección de vínculos seguros para las direcciones URL de Office 365 aplicaciones. Las aplicaciones de Office 365 admitidas se describen en la sección anterior.
 
 1. Un usuario inicia sesión con su cuenta profesional o educativa en una organización que incluye Aplicaciones Microsoft 365 o Microsoft 365 Empresa Premium.
 
-2. El usuario abre y hace clic en un vínculo a un documento de Office en un Aplicación de Office compatible.
+2. El usuario abre y hace clic en un vínculo a un documento de Office en una aplicación de Office compatible.
 
-3. Caja fuerte Vínculos comprueba inmediatamente la dirección URL antes de abrir el sitio web de destino:
+3. Vínculos seguros comprueba inmediatamente la dirección URL antes de abrir el sitio web de destino:
 
-   - Si la dirección URL se incluye en la lista que omite Caja fuerte examen de vínculos (la lista **Bloquear las siguientes direcciones URL**), se abre una página de [advertencia de dirección URL bloqueada](#blocked-url-warning).
+   - Si la dirección URL se incluye en la lista que omite el examen de vínculos seguros (la lista **Bloquear las siguientes direcciones URL** ), se abre una página de [advertencia de dirección URL bloqueada](#blocked-url-warning) .
 
    - Si la dirección URL apunta a un sitio web que se ha determinado que es malintencionado, se abre una página de [advertencia de sitio web malintencionado](#malicious-website-warning) (o una página de advertencia diferente).
 
-   - Si la dirección URL apunta a un archivo descargable y la directiva de vínculos de Caja fuerte que se aplica al usuario está configurada para examinar vínculos al contenido descargable (**Aplicar examen de direcciones URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos**), se comprueba el archivo descargable.
+   - Si la dirección URL apunta a un archivo descargable y la directiva vínculos seguros que se aplica al usuario está configurada para examinar los vínculos al contenido descargable (**aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**), se comprueba el archivo descargable.
 
    - Si la dirección URL se considera segura, el usuario se lleva al sitio web.
 
-   - Si Caja fuerte no se puede completar el examen de vínculos, no se desencadena la protección de vínculos de Caja fuerte. En Office clientes de escritorio, se advertirá al usuario antes de continuar con el sitio web de destino.
+   - Si el análisis de vínculos seguros no se puede completar, la protección de vínculos seguros no se desencadena. En los clientes de escritorio de Office, se advertirá al usuario antes de continuar con el sitio web de destino.
 
 > [!NOTE]
-> Al principio de cada sesión, el usuario puede tardar varios segundos en comprobar que el usuario tiene habilitados Caja fuerte Vínculos para Office.
+> Al principio de cada sesión puede tardar varios segundos en comprobar que el usuario tiene vínculos seguros para Office habilitados.
 
-## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Bloquear las siguientes direcciones URL" para vínculos de Caja fuerte
+## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Bloquear las siguientes direcciones URL" para vínculos seguros
 
-La lista **Bloquear las siguientes direcciones URL** define los vínculos que siempre están bloqueados por Caja fuerte Análisis de vínculos en las siguientes ubicaciones:
+> [!NOTE]
+> Ahora puede administrar las entradas de dirección URL de bloque en la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). La lista "Bloquear las siguientes direcciones URL" está en desuso. Intentaremos migrar las entradas existentes de la lista "Bloquear las siguientes direcciones URL" para bloquear las entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos. Los mensajes que contienen la dirección URL bloqueada se pondrán en cuarentena.
+
+La lista **Bloquear las siguientes direcciones URL** define los vínculos que siempre están bloqueados por el examen de vínculos seguros en las siguientes ubicaciones:
 
 - Mensajes de correo electrónico
-- Documentos en aplicaciones de Office 365 en Windows y Mac.
+- Documentos en aplicaciones Office 365 en Windows y Mac.
 - Documentos en Office para iOS y Android.
 
-Cuando un usuario de una directiva activa de vínculos de Caja fuerte hace clic en un vínculo bloqueado en una aplicación compatible, se le lleva a la página [de advertencia url bloqueada](#blocked-url-warning).
+Cuando un usuario de una directiva de vínculos seguros activa hace clic en un vínculo bloqueado en una aplicación compatible, se le lleva a la página [de advertencia url bloqueada](#blocked-url-warning) .
 
-La lista de direcciones URL se configura en la configuración global de vínculos Caja fuerte. Para obtener instrucciones, consulte [Configurar la lista "Bloquear las siguientes direcciones URL"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
+La lista de direcciones URL se configura en la configuración global de Vínculos seguros. Para obtener instrucciones, consulte [Configurar la lista "Bloquear las siguientes direcciones URL"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
 
 **Notas**:
 
@@ -301,25 +304,25 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y rutas secundarias adicionales como `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloquea un subdominio (`toys` en este ejemplo), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com`).|
 
-## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos de Caja fuerte
+## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos seguros
 
 > [!NOTE]
-> Si su organización usa directivas de vínculos de Caja fuerte, las listas **No volver a escribir las siguientes direcciones URL** son el único método admitido para las pruebas de suplantación de identidad de terceros.
+> El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste vínculos seguros de las direcciones URL especificadas. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.
 
-Cada directiva de vínculos de Caja fuerte contiene una lista **No volver a escribir las siguientes direcciones URL** que puede usar para especificar direcciones URL que no se reescriban mediante el examen de vínculos de Caja fuerte. En otras palabras, la lista permite a los usuarios incluidos en la directiva acceder a las direcciones URL especificadas que, de lo contrario, Caja fuerte Links bloquearían. Puede configurar diferentes listas en diferentes directivas de vínculos de Caja fuerte. El procesamiento de directivas se detiene después de que se aplique al usuario la primera directiva (probablemente, la prioridad más alta). Por lo tanto, solo se aplica una opción **No volver a escribir la siguiente lista de direcciones URL** a un usuario que se incluye en varias directivas activas de vínculos de Caja fuerte.
+Cada directiva de vínculos seguros contiene una lista **No volver a escribir las siguientes direcciones URL** que puede usar para especificar direcciones URL que no se reescriban mediante el examen de vínculos seguros. En otras palabras, la lista permite a los usuarios incluidos en la directiva acceder a las direcciones URL especificadas que, de lo contrario, estarían bloqueadas por vínculos seguros. Puede configurar diferentes listas en diferentes directivas de vínculos seguros. El procesamiento de directivas se detiene después de que se aplique al usuario la primera directiva (probablemente, la prioridad más alta). Por lo tanto, solo se aplica una opción **No volver a escribir la lista de direcciones URL siguientes** a un usuario que se incluye en varias directivas de vínculos seguros activas.
 
-Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nuevas o existentes, consulte [Crear directivas de vínculos Caja fuerte](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) o [Modificar directivas de vínculos Caja fuerte](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
+Para agregar entradas a la lista en directivas de vínculos seguros nuevas o existentes, consulte [Crear directivas de vínculos seguros](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) o [Modificar directivas de vínculos seguros](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
 
 **Notas**:
 
-- Los clientes siguientes no reconocen las listas **No volver a escribir las siguientes direcciones URL** en las directivas de vínculos de Caja fuerte. Se puede impedir que los usuarios incluidos en las directivas accedan a las direcciones URL en función de los resultados del examen de vínculos de Caja fuerte en estos clientes:
+- Los clientes siguientes no reconocen las listas **No volver a escribir las siguientes direcciones URL** en las directivas de vínculos seguros. Se puede impedir que los usuarios incluidos en las directivas accedan a las direcciones URL en función de los resultados del examen de vínculos seguros en estos clientes:
   - Microsoft Teams
-  - aplicaciones web de Office
+  - Aplicaciones web de Office
 
-  Para obtener una lista verdaderamente universal de direcciones URL que se permiten en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). Sin embargo, tenga en cuenta que las direcciones URL agregadas no se excluirán de la reescritura de vínculos de Caja fuerte, como debe hacerse en una directiva de vínculos de Caja fuerte.
+  Para obtener una lista verdaderamente universal de direcciones URL que se permiten en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). Sin embargo, tenga en cuenta que las direcciones URL agregadas no se excluirán de la reescritura de vínculos seguros, como debe hacerse en una directiva de vínculos seguros.
 
 - Considere la posibilidad de agregar direcciones URL internas de uso frecuente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
-- Si ya tiene **no volver a escribir las siguientes entradas de direcciones URL** en las directivas de vínculos de Caja fuerte, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como `https://contoso.com/a` y, más adelante, decide incluir subpaths como `https://contoso.com/a/b`. En lugar de agregar una nueva entrada, agregue un carácter comodín a la entrada existente para que se convierta en `https://contoso.com/a/*`.
+- Si ya tiene **no volver a escribir las siguientes entradas de direcciones URL** en las directivas de vínculos seguros, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como `https://contoso.com/a` y, más adelante, decide incluir subpaths como `https://contoso.com/a/b`. En lugar de agregar una nueva entrada, agregue un carácter comodín a la entrada existente para que se convierta en `https://contoso.com/a/*`.
 - Puede incluir hasta tres caracteres comodín (`*`) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada `contoso.com` no es la misma `*.contoso.com/*`que , porque `*.contoso.com/*` permite a los usuarios visitar subdominios y rutas de acceso en el dominio especificado.
 - Si una dirección URL usa el redireccionamiento automático para HTTP a HTTPS (por ejemplo, redirección 302 para `http://www.contoso.com` `https://www.contoso.com`) e intenta escribir entradas HTTP y HTTPS para la misma dirección URL en la lista, es posible que observe que la segunda entrada url reemplaza a la primera entrada de dirección URL. Este comportamiento no se produce si las versiones HTTP y HTTPS de la dirección URL son completamente independientes.
 - No especifique http:// ni https:// (es decir, contoso.com) para excluir las versiones HTTP y HTTPS.
@@ -338,15 +341,15 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 |`https://contoso.com/a`|Permite el acceso a `https://contoso.com/a`, pero no a rutas secundarias como `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Permite el acceso a `https://contoso.com/a` rutas secundarias y como `https://contoso.com/a/b`|
 
-## <a name="warning-pages-from-safe-links"></a>Páginas de advertencia de vínculos de Caja fuerte
+## <a name="warning-pages-from-safe-links"></a>Páginas de advertencia de vínculos seguros
 
-Esta sección contiene ejemplos de las distintas páginas de advertencia desencadenadas por Caja fuerte Protección de vínculos al hacer clic en una dirección URL.
+Esta sección contiene ejemplos de las distintas páginas de advertencia desencadenadas por la protección de vínculos seguros al hacer clic en una dirección URL.
 
 Tenga en cuenta que se han actualizado varias páginas de advertencia. Si aún no ve las páginas actualizadas, pronto lo hará. Las páginas actualizadas incluyen una nueva combinación de colores, más detalles y la capacidad de continuar con un sitio a pesar de las advertencias y recomendaciones dadas.
 
 ### <a name="scan-in-progress-notification"></a>Notificación de examen en curso
 
-Los vínculos Caja fuerte examinan la dirección URL en la que se ha hecho clic. Es posible que tenga que esperar unos instantes antes de volver a intentar el vínculo.
+Vínculos seguros examinan la dirección URL en la que se ha hecho clic. Es posible que tenga que esperar unos instantes antes de volver a intentar el vínculo.
 
 :::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="La notificación de que el vínculo se está analizando" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
@@ -378,7 +381,7 @@ La página de advertencia original tenía este aspecto:
 
 ### <a name="blocked-url-warning"></a>Advertencia de dirección URL bloqueada
 
-Un administrador de la organización ha bloqueado manualmente la dirección URL en la que se ha hecho clic (la lista **Bloquear las siguientes direcciones URL** en la configuración global de Caja fuerte Vínculos). Los vínculos de Caja fuerte no examinaron el vínculo porque se bloqueó manualmente.
+Un administrador de la organización ha bloqueado manualmente la dirección URL en la que se ha hecho clic (la lista **Bloquear las siguientes direcciones URL** en la configuración global de Vínculos seguros). Los vínculos seguros no examinaron el vínculo porque se bloqueó manualmente.
 
 Hay varias razones por las que un administrador bloquearía manualmente direcciones URL específicas. Si cree que el sitio no debe bloquearse, póngase en contacto con el administrador.
 

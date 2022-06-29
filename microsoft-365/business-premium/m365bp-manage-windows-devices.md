@@ -2,11 +2,11 @@
 title: Permitir que los dispositivos Windows 10 unidos a un dominio se administren mediante Microsoft 365 para empresas
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a habilitar Microsoft 365 para proteger dispositivos locales unidos a Active Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 3d3c4cbe30481a2c74783f943ac0cedbe4004dc5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489225"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Administrar dispositivos Windows con Microsoft 365 Empresa Premium
 
@@ -56,7 +56,7 @@ En este vídeo se describen los pasos para configurar esto para el escenario má
 
 Consulte [Sincronizar usuarios del dominio con Microsoft 365](../admin/setup/manage-domain-users.md) para ver los pasos.
 
-## <a name="device-actions"></a>Acciones de dispositivo
+## <a name="possible-device-actions-and-statuses"></a>Posibles acciones y estados del dispositivo
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 

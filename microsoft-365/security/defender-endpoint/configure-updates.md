@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8a6022161b3c5c52fafd6cc17e5bdea50abc9b7e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 491d51b30b45fb99cba9924f947c9566305c2fbc
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419250"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490971"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Creación de un proceso de implementación gradual personalizado para las actualizaciones de Microsoft Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "65419250"
 - Windows
 
 > [!NOTE]
-> Esta funcionalidad requiere Antivirus de Microsoft Defender versión 4.18.2106.X o posterior.
+> Esta funcionalidad requiere la versión 4.18.2106.X o posterior del Antivirus de Microsoft Defender.
 
 Para crear su propio proceso de implementación gradual personalizado para las actualizaciones de Defender, puede usar directiva de grupo, Microsoft Endpoint Manager y PowerShell.
 
@@ -62,9 +62,9 @@ En la tabla siguiente se enumeran las opciones de directiva de grupo disponibles
 > [!NOTE]
 > Se publicará una plantilla ADMX de Defender actualizada junto con la versión 21H2 de Windows 10. Hay disponible una versión no localizada para su descarga en https://github.com/microsoft/defender-updatecontrols.
 
-Puede usar [directiva de grupo](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión.
+Puede usar [directiva de grupo](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) para configurar y administrar antivirus de Microsoft Defender en los puntos de conexión.
 
-En general, puede usar el procedimiento siguiente para configurar o cambiar Antivirus de Microsoft Defender configuración de directiva de grupo:
+En general, puede usar el procedimiento siguiente para configurar o cambiar la configuración de directiva de grupo del Antivirus de Microsoft Defender:
 
 1. En la máquina de administración de directiva de grupo, abra la **consola de administración de directiva de grupo**, haga clic con el botón derecho en el **objeto de directiva de grupo** (GPO) que desea configurar y haga clic en **Editar**.
 
@@ -72,7 +72,7 @@ En general, puede usar el procedimiento siguiente para configurar o cambiar Anti
 
 3. Haga clic en **Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes > Antivirus de Microsoft Defender**.
+4. Expanda el árbol a **componentes de Windows > Antivirus de Microsoft Defender**.
 
 5. Expanda la sección (denominada **Ubicación** en la tabla de este tema) que contiene la configuración que desea configurar, haga doble clic en la configuración para abrirla y realice cambios en la configuración.
 
@@ -96,7 +96,7 @@ Usa los siguientes parámetros:
 Set-MpPreference
 -PlatformUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -EngineUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
--DisableGradualRelease True|False
+-DisableGradualRelease 1|0
 -SignaturesUpdatesChannel Staged|Broad|NotConfigured
 ```
 
@@ -107,7 +107,7 @@ Use `Set-MpPreference -PlatformUpdatesChannel Beta` para configurar las actualiz
 Para obtener más información sobre los parámetros y cómo configurarlos, consulte [Set-MpPreference (Antivirus de Microsoft Defender)|Microsoft Docs](/powershell/module/defender/set-mppreference).
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

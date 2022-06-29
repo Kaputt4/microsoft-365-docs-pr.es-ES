@@ -21,14 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
 ms.date: 06/02/2022
-ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490373"
 ---
-# <a name="cancel-your-business-subscription"></a>Cancelar la suscripción empresarial
+# <a name="cancel-your-microsoft-subscription"></a>Cancelar la suscripción a Microsoft
+
+Si quiere cancelar la suscripción, la manera más fácil de hacerlo es [desactivar la facturación periódica](renew-your-subscription.md). Al desactivar la facturación periódica, puede seguir usando la suscripción hasta que expire al final del período de suscripción. Si desea cancelar inmediatamente, use la información y los pasos de este artículo para hacerlo.
 
 > [!IMPORTANT]
 > - Este artículo solo se aplica a las suscripciones de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).

@@ -23,25 +23,25 @@ ms.custom:
 search.appverid: MET150
 description: Siga estos pasos para comprar más licencias o reducir el número de licencias para su suscripción de Microsoft 365 para empresas.
 ms.date: 06/06/2022
-ms.openlocfilehash: bbeff9310a652a768c92ba3640e84607b8628619
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925096"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489678"
 ---
-# <a name="buy-or-remove-licenses"></a>Agregar o quitar licencias
+# <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Compra o eliminación de licencias de Microsoft 365 para una suscripción
 
 Puede comprar más licencias o reducir el número de licencias para sus suscripciones mediante los pasos siguientes.
 
 > [!NOTE]
-> Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
+> Para algunas suscripciones, solo podrá cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser administrador global o de facturación para realizar las tareas descritas en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede [agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md).
-- Si compró su plan de Microsoft 365 para empresas u Office 365 Enterprise a través de un asociado de terceros, debe comprar licencias adicionales a través de ese asociado.
+- Si compró su plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un asociado de terceros, debe comprar licencias adicionales a través de ese asociado.
 
 ## <a name="watch-buy-new-licenses"></a>Ver: Comprar nuevas licencias
 
@@ -100,7 +100,7 @@ Si ha pagado por adelantado su suscripción con una clave de producto, puede agr
 - Las licencias agregadas en el medio del período de facturación aparecen en la siguiente factura. Si paga anualmente, se le factura dentro de un mes por estos cambios.
 - En el siguiente extracto de facturación, se deduce el cargo anterior por el número original de licencias. Agregamos un cargo prorrateado para el período de tiempo con el número original de licencias y agregamos un cargo por el nuevo recuento de licencias. También hay un cargo por el recuento de licencias actual durante el resto del período de facturación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si compró más licencias para su suscripción, lo siguiente que debe hacer es [asignar esas licencias a los usuarios de su organización](../../admin/manage/assign-licenses-to-users.md).
 

@@ -19,14 +19,14 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre la nueva característica de asignación.
 ms.date: 05/12/2022
-ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2ab253bd122fb4f8ec83c38cb623217ec6ae3815
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636094"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489121"
 ---
-# <a name="allotment-basics"></a>Conceptos básicos de asignación
+# <a name="microsoft-365-license-allotment-basics"></a>Conceptos básicos de asignación de licencias de Microsoft 365
 
 Las asignaciones de licencias le permiten establecer límites de licencia y delegar la administración de la asignación de licencias solo a los productos y los límites de licencia que seleccione.
 
@@ -40,13 +40,13 @@ Debe cumplir los requisitos de licencia para [las licencias basadas en grupos](/
 
 Puede usar las ofertas con cualquier producto disponible para los usuarios:
 
-- Office suites y productos independientes
-- productos Enterprise y Mobility
+- Conjuntos de aplicaciones de Office y productos independientes
+- Productos enterprise y mobility
 - Productos de Dynamics 365
 
 Los siguientes productos no se pueden usar con las asignación:
 
-- aplicaciones Microsoft Store
+- Aplicaciones de Microsoft Store
 - Software perpetuo o software que se asigna directamente a un usuario si no hay ninguna licencia implicada.
 - Recursos de Azure
 

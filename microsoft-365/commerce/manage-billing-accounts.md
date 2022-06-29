@@ -21,20 +21,20 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c1dd2048cbe38ecca162f361f3f0bdbc6c3861f
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 4630ee028a298d3c901a0e66cde41df58bebece2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670066"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493627"
 ---
-# <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
+# <a name="understand-your-microsoft-billing-accounts"></a>Descripción de las cuentas de facturación de Microsoft
 
-Cuando se registra para probar o comprar productos de Microsoft, se crea una cuenta de facturación. Usa su cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puede tener acceso a varias cuentas de facturación. Por ejemplo, se ha registrado para Microsoft 365 directamente o tiene acceso a la Enterprise Agreement de su organización, al Contrato de servicios de & de productos de Microsoft o a Contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendría una cuenta de facturación independiente.
+Cuando se registra para probar o comprar productos de Microsoft, se crea una cuenta de facturación. Usa su cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puede tener acceso a varias cuentas de facturación. Por ejemplo, se registró en Microsoft 365 directamente, o bien tiene acceso a la Enterprise Agreement de su organización, al Contrato de servicios de & de productos de Microsoft o a Contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendría una cuenta de facturación independiente.
 
 Actualmente<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">, el Centro de administración de Microsoft 365</a> admite el siguiente tipo de cuentas de facturación:
 
-- Programa de Servicios en línea de Microsoft: esta cuenta de facturación se crea al registrarse para obtener una suscripción Microsoft 365 directamente.
+- Programa de servicios en línea de Microsoft: esta cuenta de facturación se crea al registrarse para obtener una suscripción a Microsoft 365 directamente.
 - Programa de contrato de servicios de & de productos de Microsoft (MPSA): esta cuenta de facturación se crea cuando su organización firma un contrato de licencias por volumen de MPSA para comprar software y servicios en línea.
 - Contrato de cliente de Microsoft: esta cuenta de facturación se crea cuando su organización trabaja con un representante de Microsoft, un asociado autorizado o realiza compras de forma independiente.
 
@@ -77,7 +77,7 @@ Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el <a 
 
 > [!Note]
 > - Los roles de cuenta de facturación solo se aplican a las cuentas de facturación y no se aplican a otros escenarios de Centro de administración de Microsoft 365.
-> - Para las cuentas de facturación creadas dentro de Microsoft 365 registro, a los nuevos administradores globales, de facturación y de lector global se les conceden automáticamente distintos niveles de acceso. Puede administrar este acceso desde la página **Cuentas de facturación**  >  quitando explícitamente esos usuarios de la sección de asignación de roles en la parte inferior de la página.
+> - Para las cuentas de facturación creadas dentro del registro de Microsoft 365, a los nuevos administradores globales, de facturación y de lector global se les conceden automáticamente distintos niveles de acceso. Puede administrar este acceso desde la página **Cuentas de facturación**  >  quitando explícitamente esos usuarios de la sección de asignación de roles en la parte inferior de la página.
 
 ## <a name="related-content"></a>Contenido relacionado
 

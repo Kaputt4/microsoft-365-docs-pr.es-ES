@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: ebfcfe21070656d71c50429cd4653d0e14f7724d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669768"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493239"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera del panel
 
@@ -48,7 +48,7 @@ Dispositivo fuera del panel de Defender para punto de conexión.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Esta API se admite en Windows 11, Windows 10, versión 1703 y posteriores, o Windows Server 2019 y versiones posteriores.
+> Esta API se admite en Windows 11, Windows 10, versión 1703 y posteriores o Windows Server 2019 y versiones posteriores.
 >
 > Esta API no se admite en dispositivos MacOS o Linux.
 
@@ -80,7 +80,7 @@ El identificador de equipo se puede encontrar en la dirección URL al selecciona
 Nombre|Tipo|Descripción
 ---|---|---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -98,7 +98,7 @@ Si se ejecuta correctamente, este método devuelve 200: código de respuesta cre
 
 ### <a name="request"></a>Solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud. Si no se agrega ningún comentario JSON, se producirá un error con el código **400**.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

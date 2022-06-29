@@ -1,5 +1,5 @@
 ---
-title: Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión
+title: Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión
 description: Active el modo de solución de problemas de Microsoft Defender para punto de conexión para solucionar varios problemas antivirus.
 keywords: antivirus, solución de problemas, modo de solución de problemas, protección contra alteraciones, compatibilidad
 search.product: eADQiWindows 10XVcnh
@@ -17,48 +17,44 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4525ab2e979a16381ba75d2bdb229fb73d394156
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: eee3e07825b2775b4eff1b5fb45a6e1f86fc3a1b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139394"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490596"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Comenzar con el modo de solución de problemas en Microsoft Defender para punto de conexión 
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
->¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo Enterprise y requiere acceso Microsoft 365 Defender.
+Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Use el modo de solución de problemas para deshabilitar o cambiar la configuración de protección contra alteraciones para realizar lo siguiente:
 
-  - Antivirus de Microsoft Defender solución de problemas funcional /compatibilidad de aplicaciones (bloques de aplicación falsos positivos).
-
-  - Antivirus de Microsoft Defender solución de problemas de rendimiento mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
+  - Solución de problemas funcional de Antivirus de Microsoft Defender /compatibilidad con aplicaciones (bloques de aplicaciones falsos positivos).
+  - Solución de problemas de rendimiento del Antivirus de Microsoft Defender mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
 
 - Si se produce un evento de manipulación (por ejemplo, la `MpPreference` instantánea se modifica o elimina), el modo de solución de problemas finalizará y se habilitará la protección contra alteraciones en el dispositivo.
 
-- Los administradores locales, con los permisos adecuados, pueden cambiar las configuraciones en puntos de conexión individuales que normalmente están bloqueados por la directiva. Tener un dispositivo en modo de solución de problemas puede ser útil al diagnosticar Antivirus de Microsoft Defender escenarios de rendimiento y compatibilidad.
+- Los administradores locales, con los permisos adecuados, pueden cambiar las configuraciones en puntos de conexión individuales que normalmente están bloqueados por la directiva. Tener un dispositivo en modo de solución de problemas puede ser útil al diagnosticar escenarios de rendimiento y compatibilidad del Antivirus de Microsoft Defender.
 
-  - Los administradores locales no podrán desactivar Antivirus de Microsoft Defender ni desinstalarla.
-
-  - Los administradores locales podrán configurar todas las demás opciones de seguridad del conjunto de Antivirus de Microsoft Defender (por ejemplo, protección en la nube, protección contra alteraciones).
+  - Los administradores locales no podrán desactivar el Antivirus de Microsoft Defender ni desinstalarlo.
+  - Los administradores locales podrán configurar todas las demás opciones de seguridad en el conjunto de aplicaciones antivirus de Microsoft Defender (por ejemplo, protección en la nube, protección contra alteraciones).
 
 - Los administradores con permisos de "Administrar configuración de seguridad" tendrán acceso para activar el modo de solución de problemas.
 
 - Microsoft Defender para punto de conexión recopila registros y datos de investigación a lo largo del proceso de solución de problemas.
 
   - La instantánea de se tomará antes de `MpPreference` que comience el modo de solución de problemas.
-
   - La segunda instantánea se tomará justo antes de que expire el modo de solución de problemas.
-
   - También se recopilarán los registros operativos de durante el modo de solución de problemas.
 
   - Todos los registros e instantáneas anteriores se recopilarán y estarán disponibles para que un administrador lo recopile mediante la característica [Recopilar paquete de investigación](respond-machine-alerts.md#collect-investigation-package-from-devices) en la página del dispositivo. Tenga en cuenta que Microsoft no quitará estos datos del dispositivo hasta que un administrador los recopile.
@@ -76,7 +72,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 - Puede consultar todos los eventos de modo de solución de problemas en la búsqueda avanzada.
 
 > [!NOTE]
-> Los cambios de administración de directivas se aplicarán a la máquina cuando esté activo en el modo de solución de problemas. Sin embargo, los cambios no surtirán efecto hasta que expire el modo de solución de problemas. Además, las actualizaciones de Antivirus de Microsoft Defender Plataforma no se aplicarán durante el modo de solución de problemas. Las actualizaciones de la plataforma se aplicarán una vez que el modo de solución de problemas finalice con una actualización Windows.
+> Los cambios de administración de directivas se aplicarán a la máquina cuando esté activo en el modo de solución de problemas. Sin embargo, los cambios no surtirán efecto hasta que expire el modo de solución de problemas. Además, las actualizaciones de la Plataforma antivirus de Microsoft Defender no se aplicarán durante el modo de solución de problemas. Las actualizaciones de la plataforma se aplicarán una vez que el modo de solución de problemas finalice con una actualización de Windows.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -91,7 +87,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 - Para aplicar el modo de solución de problemas, Microsoft Defender para punto de conexión deben estar inscritos en el inquilino y estar activos en el dispositivo.
 
-- El dispositivo debe ejecutarse activamente Antivirus de Microsoft Defender, versión 4.18.2203 o posterior.
+- El dispositivo debe ejecutar activamente antivirus de Microsoft Defender, versión 4.18.2203 o posterior.
 
 ## <a name="enable-the-troubleshooting-mode"></a>Habilitación del modo de solución de problemas
 
@@ -114,36 +110,37 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 Estas son algunas consultas de búsqueda avanzadas pregeneradas para proporcionarle visibilidad sobre los eventos de solución de problemas que se producen en su entorno. También puede usar estas consultas para [crear reglas de detección](/defender/custom-detection-rules.md#create-a-custom-detection-rule) que le avisan cuando los dispositivos están en modo de solución de problemas.
 
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>Obtención de eventos de solución de problemas para un dispositivo determinado
-
+Busque por deviceId o deviceName comentando las líneas correspondientes.  
 ```kusto
-let deviceName = "<device name>";   // update with device name
-let deviceId = "<device id>";   // update with device id
-search in (DeviceEvents)
-(DeviceName == deviceName
-) and ActionType == "AntivirusTroubleshootModeEvent"
+//let deviceName = "<deviceName>";   // update with device name
+let deviceId = "<deviceID>";   // update with device id
+DeviceEvents
+| where DeviceId == deviceId
+//| where DeviceName  == deviceName
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+| project Timestamp,DeviceId, DeviceName, _tsmodeproperties,
  _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
  _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
  _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### <a name="devices-currently-in-troubleshooting-mode"></a>Dispositivos actualmente en modo de solución de problemas
+### <a name="devices-currently-in-troubleshooting-mode"></a>Dispositivos actualmente en modo de solución de problemas  
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| where Timestamp > ago(3h)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| order by Timestamp desc
 ```
 
 ### <a name="count-of-troubleshooting-mode-instances-by-device"></a>Recuento de instancias de modo de solución de problemas por dispositivo
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
@@ -154,8 +151,8 @@ ActionType == "AntivirusTroubleshootModeEvent"
 ### <a name="total-count"></a>Recuento total
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range

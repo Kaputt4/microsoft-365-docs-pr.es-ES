@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
-ms.date: 05/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -27,17 +26,14 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: cdfd607745326d1d5a95a9e61b3134fb939bcacb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622435"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489579"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
-
-> [!NOTE]
-> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
 
 ## <a name="android-and-ios-application-protection-settings"></a>Configuración de protección de aplicación Android o iOS
 
@@ -79,8 +75,7 @@ La siguiente tabla detalla cómo se asigna a la configuración de Intune la conf
 Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), selecciome **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune App Protection** \> **Directiva de la aplicación**.
   
  > [!IMPORTANT]
- >
- >La suscripción de Microsoft 365 Empresa Premium le proporciona una licencia para modificar solo la configuración de Intune que se asigna a la configuración disponible en Microsoft 365 Empresa Premium. 
+ > La suscripción de Microsoft 365 Empresa Premium le proporciona una licencia para modificar solo la configuración de Intune que se asigna a la configuración disponible en Microsoft 365 Empresa Premium. 
   
 Haga clic en el nombre de la directiva que desea seleccionar y, a continuación, elija **General, asignaciones**, **Aplicaciones permitidas**, **Aplicaciones excluidas**, **Configuración necesaria** o **Configuración avanzada** en la barra de navegación izquierda. 
   
