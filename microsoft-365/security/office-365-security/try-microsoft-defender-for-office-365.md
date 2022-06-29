@@ -19,24 +19,24 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 17c7dd9a7b92f4a540f16cd5768067dd52991f22
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415539"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530619"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
 
-El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporciona un único punto de entrada para las experiencias de evaluación y evaluación anteriormente independientes para Microsoft Defender para Office 365. La intención es permitirle probar las características de Defender para Office 365 Plan 2 durante 90 días antes de confirmarlo por completo. Sin embargo, hay diferencias en las experiencias de evaluación basadas en la naturaleza de la organización Microsoft 365:
+El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporciona un único punto de entrada para las experiencias de evaluación y evaluación anteriormente independientes para Microsoft Defender para Office 365. La intención es permitirle probar las características de Defender para Office 365 Plan 2 durante 90 días antes de confirmarlo por completo. Pero hay diferencias en las experiencias de evaluación basadas en la naturaleza de la organización de Microsoft 365:
 
-- Ya tiene Microsoft 365 buzones, pero actualmente usa un servicio o dispositivo de terceros para la protección de correo electrónico. El correo de Internet fluye a través del servicio de protección antes de la entrega a la organización de Microsoft 365. Microsoft 365 protección es lo más baja posible (nunca está completamente desactivada; por ejemplo, la protección contra malware siempre se aplica).
+- Ya tiene buzones de Microsoft 365, pero actualmente usa un servicio o dispositivo de terceros para la protección de correo electrónico. El correo de Internet fluye a través del servicio de protección antes de su entrega a la organización de Microsoft 365. La protección de Microsoft 365 es lo más baja posible (nunca está completamente desactivada; por ejemplo, siempre se aplica la protección contra malware).
 
-  ![El correo fluye desde Internet a través del servicio o dispositivo de protección de terceros antes de la entrega en Microsoft 365.](../../media/mdo-migration-before.png)
+  ![El correo fluye desde Internet a través del dispositivo o servicio de protección de terceros antes de su entrega a Microsoft 365.](../../media/mdo-migration-before.png)
 
   En estos entornos, solo puede probar Defender para Office 365 en modo *de auditoría*. No es necesario cambiar el flujo de correo (registros MX) para intentar Defender para Office 365.
 
-- Ya tiene una organización Microsoft 365. El correo de Internet fluye directamente Microsoft 365, pero la suscripción actual solo tiene [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) o [Defender para Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+- Ya tiene una organización de Microsoft 365. El correo de Internet fluye directamente en Microsoft 365, pero la suscripción actual solo tiene [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) o [Defender para Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
   ![El correo fluye desde Internet a Microsoft 365, con protección contra EOP o Defender para Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
 
@@ -74,8 +74,8 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 - **Defender para Office 365**: Se crean directivas exclusivas de Defender para Office 365 para la evaluación de Defender para Office 365:
 
   - [Protección contra suplantación en directivas antiphishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [datos adjuntos de Caja fuerte para mensajes de correo electrónico](safe-attachments.md)
-  - [vínculos de Caja fuerte para mensajes de correo electrónico y Microsoft Teams](safe-links.md)
+  - [Datos adjuntos seguros para mensajes de correo electrónico](safe-attachments.md)
+  - [Vínculos seguros para mensajes de correo electrónico y Microsoft Teams](safe-links.md)
 
   Sin embargo, la naturaleza de estas directivas es diferente en modo de bloqueo y modo de auditoría:
 
@@ -87,8 +87,8 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
 **Notas**:
 
-- Caja fuerte Vínculos detonará las direcciones URL en el flujo de correo. Para evitar que se detonen direcciones URL específicas, use la lista de permitidos o bloqueados de inquilinos. Para obtener más información, vea [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
-- Caja fuerte Vínculos no encapsula los vínculos URL en los cuerpos de mensajes de correo electrónico.
+- Vínculos seguros detonarán las direcciones URL en el flujo de correo. Para evitar que se detonen direcciones URL específicas, use la lista de permitidos o bloqueados de inquilinos. Para obtener más información, vea [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+- Vínculos seguros no encapsula los vínculos URL en los cuerpos de mensajes de correo electrónico.
 - La configuración de la directiva de evaluación se describe en la sección [Configuración de directivas de evaluación](#evaluation-policy-settings) más adelante en este artículo.
 
 ## <a name="set-up-an-evaluation-in-audit-mode"></a>Configuración de una evaluación en modo de auditoría
@@ -122,7 +122,7 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
    - Una de las siguientes opciones se selecciona automáticamente en función de la detección del registro MX para su dominio:
 
-     - **Estoy usando un proveedor de servicios local o de terceros**: el registro MX de los puntos de dominio en otro lugar que no sea Microsoft 365. Esta selección requiere la siguiente configuración adicional después de hacer clic en **Siguiente**:
+     - **Estoy usando un proveedor de servicios local o de terceros**: el registro MX de los puntos de dominio en otro lugar distinto de Microsoft 365. Esta selección requiere la siguiente configuración adicional después de hacer clic en **Siguiente**:
 
        1. En el cuadro de diálogo **Configuración de terceros o local** , configure las siguientes opciones:
 
@@ -140,21 +140,21 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
             [El filtrado mejorado para conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (también conocido como *lista de omisión*) se configura automáticamente en el conector que especifique.
 
-            Cuando un servicio o dispositivo de terceros se encuentra en de Microsoft 365, el filtrado mejorado para conectores identifica correctamente el origen de los mensajes de Internet y mejora en gran medida la precisión de la pila de filtrado de Microsoft (especialmente la [inteligencia de suplantación de identidad](anti-spoofing-protection.md), así como las funcionalidades posteriores a la vulneración en [el Explorador de amenazas](threat-explorer.md) y la [investigación automatizada & Respuesta (AIR)](automated-investigation-response-office.md)).
+            Cuando un servicio o dispositivo de terceros se encuentra delante de Microsoft 365, el filtrado mejorado para conectores identifica correctamente el origen de los mensajes de Internet y mejora en gran medida la precisión de la pila de filtrado de Microsoft (especialmente la [inteligencia de suplantación de identidad](anti-spoofing-protection.md), así como las funcionalidades posteriores a la vulneración en [el Explorador de amenazas](threat-explorer.md) y la [investigación automatizada & Respuesta (AIR)](automated-investigation-response-office.md)).
 
           - **Enumerar cada dirección IP de puerta de enlace a través de la que pasan los mensajes**: esta configuración solo está disponible si seleccionó **Otro** para **Seleccionar un proveedor de servicios de terceros**. Escriba una lista separada por comas de las direcciones IP que usa el servicio o dispositivo de protección de terceros para enviar correo a Microsoft 365.
 
           Cuando termine, haga clic en **Siguiente**.
 
-       2. En el cuadro de diálogo **Exchange reglas de flujo de correo**, decida si necesita una regla de flujo de correo Exchange Online (también conocida como regla de transporte) que omita el filtrado de correo no deseado para los mensajes entrantes desde el servicio o dispositivo de protección de terceros.
+       2. En el cuadro de diálogo **Reglas de flujo de correo de Exchange**, decida si necesita una regla de flujo de correo Exchange Online (también conocida como regla de transporte) que omita el filtrado de correo no deseado para los mensajes entrantes desde el dispositivo o servicio de protección de terceros.
 
-          Es probable que ya tenga una regla de flujo de correo SCL=-1 en Exchange Online que permita que todo el correo entrante del servicio de protección omita (la mayoría) Microsoft 365 filtrado. Muchos servicios de protección fomentan este método de regla de flujo de correo de nivel de confianza de correo no deseado (SCL) para Microsoft 365 clientes que usan sus servicios.
+          Es probable que ya tenga una regla de flujo de correo SCL=-1 en Exchange Online que permita que todo el correo entrante del servicio de protección omita (la mayoría) el filtrado de Microsoft 365. Muchos servicios de protección fomentan este método de regla de flujo de correo de nivel de confianza de correo no deseado (SCL) para los clientes de Microsoft 365 que usan sus servicios.
 
           Como se explicó en el paso anterior, el filtrado mejorado para conectores se configura automáticamente en el conector que especifique como origen de correo del servicio de protección.
 
           Activar el filtrado mejorado para conectores sin una regla SCL=-1 para el correo entrante desde el servicio de protección mejorará enormemente las capacidades de detección de las características de protección de EOP, como la [inteligencia de suplantación](anti-spoofing-protection.md) de identidad, y podría afectar a la entrega de esos mensajes recién detectados (por ejemplo, pasar a la carpeta Correo no deseado o poner en cuarentena). Este impacto se limita a las directivas de EOP; como se explicó anteriormente, las directivas de Defender para Office 365 se crean en modo de auditoría.
 
-          Para crear una regla de flujo de correo SCL=-1 o para revisar las reglas existentes, haga clic en el botón **Ir a Exchange centro de administración** de la página. Para obtener más información, consulte [Uso de reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes de Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+          Para crear una regla de flujo de correo SCL=-1 o para revisar las reglas existentes, haga clic en el botón **Ir al Centro de administración de Exchange** de la página. Para obtener más información, consulte [Uso de reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes de Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
           Cuando haya terminado, haga clic en **Finalizar**.
 
@@ -245,7 +245,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |EnableSpoofIntelligence|Verdadero|
 |EnableSuspiciousSafetyTip|Falso|
 |EnableTargetedDomainsProtection|Falso|
-|EnableTargetedUserProtection|False|
+|EnableTargetedUserProtection|Falso|
 |EnableUnauthenticatedSender|Verdadero|
 |EnableUnusualCharactersSafetyTips|Falso|
 |EnableViaTag|Verdadero|
@@ -270,8 +270,8 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |AntiSpoofEnforcementType|Alto|
 |AuthenticationSafetyTipText|Blanco|
 |AuthenticationSoftPassSafetyTipText|Blanco|
-|EnableAuthenticationSafetyTip|False|
-|EnableAuthenticationSoftPassSafetyTip|False|
+|EnableAuthenticationSafetyTip|Falso|
+|EnableAuthenticationSoftPassSafetyTip|Falso|
 |PolicyTag|Blanco|
 |SimilarUsersSafetyTipsCustomText|Blanco|
 |TreatSoftPassAsAuthenticated|Verdadero|
@@ -282,7 +282,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |TargetedDomainsToProtect|{}|
 |TargetedUsersToProtect|{}|
 
-**Caja fuerte configuración de la directiva de evaluación de datos adjuntos**:
+**Configuración de directivas de evaluación de datos adjuntos seguros**:
 
 |Configuración|Valor|
 |---|---|
@@ -291,19 +291,19 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |AdminDisplayName|Directiva de evaluación|
 |ConfidenceLevelThreshold|80|
 |Habilitación|Verdadero|
-|EnableOrganizationBranding|False|
+|EnableOrganizationBranding|Falso|
 |Guid|Valor DE GUID|
-|IsBuiltInProtection|False|
+|IsBuiltInProtection|Falso|
 |IsDefault|Falso|
 |Nombre|Directiva de evaluación|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|Evaluation|
-|Redirigir|False|
+|Redirect|Falso|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
-**Caja fuerte Configuración de directivas de evaluación de vínculos**:
+**Configuración de directivas de evaluación de vínculos seguros**:
 
 |Configuración|Valor|
 |---|---|
@@ -314,10 +314,10 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |DisableUrlRewrite|Verdadero|
 |DoNotRewriteUrls|{}|
 |EnableForInternalSenders|Falso|
-|EnableOrganizationBranding|False|
+|EnableOrganizationBranding|Falso|
 |EnableSafeLinksForTeams|Verdadero|
 |Guid|Valor DE GUID|
-|IsBuiltInProtection|False|
+|IsBuiltInProtection|Falso|
 |IsDefault|Falso|
 |IsEnabled|Verdadero|
 |LocalizedNotificationTextList|{}|
@@ -327,7 +327,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |TrackClicks|Verdadero|
 |||
 |DoNotAllowClickThrough|Blanco|
-|DoNotTrackUserClicks|False|
+|DoNotTrackUserClicks|Falso|
 |EnableSafeLinksForEmail|Verdadero|
 |EnableSafeLinksForOffice|Verdadero|
 |ExcludedUrls|{}|

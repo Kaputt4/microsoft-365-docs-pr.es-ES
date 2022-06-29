@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la prevención de pérdida de datos de punto de conexión para supervisar las actividades de archivo e implementar acciones de protección para esos archivos en los puntos de conexión.
-ms.openlocfilehash: 097ad2ab08d31482413285d3b3d82e6b43255281
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952762"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531032"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -66,7 +66,7 @@ Tema | Descripción
 :---|:---
 [Incorporación de dispositivos Windows 10 o 11 con directiva de grupo](device-onboarding-gp.md) | Utilice Directiva de grupo para implementar el paquete de configuración en los dispositivos.
 [Incorpore dispositivos Windows 10 o 11 con Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Puede usar Microsoft Endpoint Configuration Manager (rama actual) versión 1606 o Microsoft Endpoint Configuration Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
-[Incorpore los dispositivos Windows 10 o 11 con herramientas de administración de dispositivos móviles](device-onboarding-mdm.md) | Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
+[Incorporar dispositivos Windows 10 u 11 con Microsoft Intune](device-onboarding-mdm.md) | Use Microsoft Intune para implementar el paquete de configuración en el dispositivo.
 [Incorpore los dispositivos Windows 10 o 11 con un script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](device-onboarding-vdi.md) | Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
@@ -85,7 +85,7 @@ Tema | Descripción
 |[Incorporar y retirar dispositivos macOS en soluciones de Microsoft Purview con JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
 |[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con JAMF Pro para clientes de Microsoft Defender para punto de conexión)](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
-Una vez incorporado el dispositivo, debería aparecer en la lista de dispositivos y empezar a informar de la actividad de auditoría al Explorador de actividades.
+Una vez incorporado el dispositivo, debería aparecer en la lista de dispositivos y empezar a crear informes de la actividad de auditoría al Explorador de actividades.
 
 <!--### Permissions
 

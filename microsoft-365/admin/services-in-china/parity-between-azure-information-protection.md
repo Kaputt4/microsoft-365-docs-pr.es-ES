@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection (AIP) para Office 365 operados por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935223"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530176"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Soporte técnico de Azure Information Protection para Office 365 operados por 21Vianet
 
-En este artículo se tratan las diferencias entre la compatibilidad de Azure Information Protection (AIP) con Office 365 operadas por 21Vianet y ofertas comerciales, así como instrucciones específicas para configurar AIP para clientes en Chinaincluyendo&mdash; cómo instalar el analizador local de AIP y administrar trabajos de examen de contenido.
+En este artículo se tratan las diferencias entre la compatibilidad de Azure Information Protection (AIP) con Office 365 operadas por 21Vianet y ofertas comerciales, así como instrucciones específicas para configurar AIP para clientes en China&mdash;, incluido cómo instalar el escáner local de AIP y administrar trabajos de examen de contenido.
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Diferencias entre AIP para Office 365 operadas por 21Vianet y ofertas comerciales
 
@@ -37,7 +37,7 @@ Aunque nuestro objetivo es ofrecer todas las características y funcionalidades 
 
 En la lista siguiente se incluyen las brechas existentes entre AIP para Office 365 operadas por 21Vianet y nuestras ofertas comerciales a partir de enero de 2021:
 
-- el cifrado de Active Directory Rights Management Services (AD RMS) solo se admite en Aplicaciones Microsoft 365 para empresas (compilación 11731.10000 o posterior). Office Profesional Plus no admite AD RMS.
+- El cifrado de Active Directory Rights Management Services (AD RMS) solo se admite en Aplicaciones Microsoft 365 para empresas (compilación 11731.10000 o posterior). Office Profesional Plus no admite AD RMS.
 
 - La migración de AD RMS a AIP no está disponible actualmente.
   
@@ -45,7 +45,7 @@ En la lista siguiente se incluyen las brechas existentes entre AIP para Office 3
   
 - El uso compartido de documentos y datos adjuntos de correo electrónico con los usuarios en la nube comercial no está disponible actualmente. Esto incluye Office 365 operados por 21 usuarios deVianet en la nube comercial, no Office 365 operados por 21 usuarios deVianet en la nube comercial y usuarios con una licencia RMS for Individuals.
   
-- IRM con SharePoint (bibliotecas y sitios protegidos por IRM) no está disponible actualmente.
+- IRM con SharePoint (sitios y bibliotecas protegidos por IRM) no está disponible actualmente.
   
 - La extensión de dispositivo móvil para AD RMS no está disponible actualmente.
 
@@ -62,13 +62,13 @@ En la lista siguiente se incluyen las brechas existentes entre AIP para Office 3
 Para configurar AIP para clientes en China:
 1. [Habilite Rights Management para el inquilino](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Agregue la entidad de servicio del servicio De sincronización de Microsoft Purview Information Protection](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [Agregue la entidad de servicio Microsoft Information Protection Sync Service](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
 
 1. [Configure el cifrado DNS](#step-3-configure-dns-encryption).
 
 1. [Instale y configure el cliente de etiquetado unificado de AIP](#step-4-install-and-configure-the-aip-unified-labeling-client).
 
-1. [Configure las aplicaciones de AIP en Windows](#step-5-configure-aip-apps-on-windows).
+1. [Configurar aplicaciones de AIP en Windows](#step-5-configure-aip-apps-on-windows).
 
 1. [Instale el analizador local de AIP y administre los trabajos de examen de contenido](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs). 
 
@@ -81,24 +81,24 @@ Para que el cifrado funcione correctamente, RMS debe estar habilitado para el in
     1. Inicie PowerShell como administrador.
     2. Si el módulo AIPService no está instalado, ejecute `Install-Module AipService`.
     3. Importe el módulo mediante `Import-Module AipService`.
-    4. Conectar al servicio mediante `Connect-AipService -environmentname azurechinacloud`.
+    4. Conéctese al servicio mediante `Connect-AipService -environmentname azurechinacloud`.
     5. Ejecute `(Get-AipServiceConfiguration).FunctionalState` y compruebe si el estado es `Enabled`.
 
 2. Si el estado funcional es `Disabled`, ejecute `Enable-AipService`.
 
-### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>Paso 2: Agregar la entidad de servicio de Microsoft Purview Information Protection Sync Service
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Paso 2: Agregar la entidad de servicio de sincronización de Microsoft Information Protection
 
-La entidad de servicio **de Microsoft Purview Information Protection Sync Service** no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection. Cree esta entidad de servicio manualmente mediante el módulo Azure Az PowerShell.
+La entidad de servicio **Microsoft Information Protection Sync Service** no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection. Cree esta entidad de servicio manualmente mediante el módulo Azure Az PowerShell.
 
 1. Si no tiene instalado el módulo Azure Az, instálelo o use un recurso donde el módulo Azure Az esté preinstalado, como [Azure Cloud Shell](/azure/cloud-shell/overview). Para obtener más información, consulte [Instalación del módulo Azure Az PowerShell](/powershell/azure/install-az-ps).
 
-1. Conectar al servicio mediante el cmdlet [Conectar-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) y el nombre del `azurechinacloud` entorno:
+1. Conéctese al servicio mediante el cmdlet [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) y el nombre del `azurechinacloud` entorno:
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. Cree manualmente la entidad de servicio del **servicio De sincronización de Microsoft Purview Information Protection** mediante el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el `870c4f2e-85b6-4d43-bdda-6ed9a579b725` identificador de aplicación del servicio de sincronización de Microsoft Purview Information Protection:
+1. Cree manualmente la entidad de servicio **Microsoft Information Protection Sync Service** mediante el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el `870c4f2e-85b6-4d43-bdda-6ed9a579b725` identificador de aplicación del servicio de sincronización de Microsoft Purview Information Protection:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -108,7 +108,7 @@ La entidad de servicio **de Microsoft Purview Information Protection Sync Servic
 
 ### <a name="step-3-configure-dns-encryption"></a>Paso 3: Configuración del cifrado DNS
 
-Para que el cifrado funcione correctamente, Office aplicaciones cliente deben conectarse a la instancia de China del servicio y arrancar desde allí. Para redirigir las aplicaciones cliente a la instancia de servicio correcta, el administrador de inquilinos debe configurar un registro SRV de DNS con información sobre la dirección URL de Azure RMS. Sin el registro SRV de DNS, la aplicación cliente intentará conectarse a la instancia de nube pública de forma predeterminada y producirá un error.
+Para que el cifrado funcione correctamente, las aplicaciones cliente de Office deben conectarse a la instancia de China del servicio y arrancar desde allí. Para redirigir las aplicaciones cliente a la instancia de servicio correcta, el administrador de inquilinos debe configurar un registro SRV de DNS con información sobre la dirección URL de Azure RMS. Sin el registro SRV de DNS, la aplicación cliente intentará conectarse a la instancia de nube pública de forma predeterminada y producirá un error.
 
 Además, se supone que los usuarios iniciarán sesión con un nombre de usuario basado en el dominio propiedad del inquilino (por ejemplo, `joe@contoso.cn`), y no el `onmschina` nombre de usuario (por ejemplo, `joe@contoso.onmschina.cn`). El nombre de dominio del nombre de usuario se usa para el redireccionamiento DNS a la instancia de servicio correcta.
 
@@ -118,7 +118,7 @@ Además, se supone que los usuarios iniciarán sesión con un nombre de usuario 
 
     1. Inicie PowerShell como administrador.
     2. Si el módulo AIPService no está instalado, ejecute `Install-Module AipService`.
-    3. Conectar al servicio mediante `Connect-AipService -environmentname azurechinacloud`.
+    3. Conéctese al servicio mediante `Connect-AipService -environmentname azurechinacloud`.
     4. Ejecute `(Get-AipServiceConfiguration).RightsManagementServiceId` para obtener el identificador de RMS.
 
 2. Inicie sesión en el proveedor de DNS, vaya a la configuración dns del dominio y agregue un nuevo registro SRV.
@@ -159,7 +159,7 @@ Para más información, vea:
 - [Guía del usuario de AIP](/azure/information-protection/rms-client/clientv2-user-guide)
 - [Más información sobre las etiquetas de confidencialidad de Microsoft 365](../../compliance/sensitivity-labels.md)
 
-### <a name="step-5-configure-aip-apps-on-windows"></a>Paso 5: Configuración de aplicaciones de AIP en Windows
+### <a name="step-5-configure-aip-apps-on-windows"></a>Paso 5: Configuración de aplicaciones AIP en Windows
 
 Las aplicaciones de AIP en Windows necesitan la siguiente clave del Registro para apuntarlas a la nube soberana correcta para Azure China:
 
@@ -181,7 +181,7 @@ Para obtener más información, consulte [¿Qué es el analizador de etiquetado 
 
 **Para instalar y configurar el escáner**:
 
-1. Inicie sesión en el equipo Windows Server que ejecutará el analizador. Use una cuenta que tenga derechos de administrador local y que tenga permisos para escribir en la base de datos maestra de SQL Server.
+1. Inicie sesión en el equipo con Windows Server que ejecutará el analizador. Use una cuenta que tenga derechos de administrador local y que tenga permisos para escribir en la base de datos maestra de SQL Server.
 
 1. Comience con PowerShell cerrado. Si ha instalado previamente el cliente y el escáner de AIP, asegúrese de que el servicio **AIPScanner** está detenido.
 
@@ -197,23 +197,23 @@ Para obtener más información, consulte [¿Qué es el analizador de etiquetado 
     > Puede usar el mismo nombre de clúster en el comando [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) para asociar varios nodos del analizador al mismo clúster. El uso del mismo clúster para varios nodos de escáner permite que varios escáneres funcionen juntos para realizar los exámenes.
     > 
 
-1. Compruebe que el servicio ya está instalado mediante **Herramientas** >  **administrativasServicios**.
+1. Compruebe que el servicio ya está instalado mediante **servicios de herramientas** >  administrativas.
 
     El servicio instalado se denomina **Azure Information Protection Scanner** y está configurado para ejecutarse mediante la cuenta de servicio del analizador que creó.
 
 1. Obtenga un token de Azure para usarlo con el analizador. Un token de Azure AD permite que el analizador se autentique en el servicio azure Information Protection, lo que permite que el analizador se ejecute de forma no interactiva. 
 
-    1. Abra el Azure Portal y cree una aplicación Azure AD para especificar un token de acceso para la autenticación. Para obtener más información, consulte [Cómo etiquetar archivos de forma no interactiva para Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
+    1. Abra el Azure Portal y cree una aplicación de Azure AD para especificar un token de acceso para la autenticación. Para obtener más información, consulte [Cómo etiquetar archivos de forma no interactiva para Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
-        > Al crear y configurar aplicaciones Azure AD para el comando [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), el panel **Solicitar permisos de API** muestra la pestaña **API que usa mi organización** en lugar de la pestaña **API de Microsoft**. Seleccione las API que **usa mi organización** para seleccionar **Azure Rights Management Services**. 
+        > Al crear y configurar aplicaciones de Azure AD para el comando [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), el panel **Solicitar permisos de API** muestra las **API que usa mi organización** en lugar de la pestaña **API de Microsoft**. Seleccione las **API que usa mi organización** para seleccionar **Azure Rights Management Services**. 
         >
 
-    1. Desde el equipo Windows Server, si se le ha concedido a la cuenta de servicio del analizador el derecho **Iniciar sesión localmente** para la instalación, inicie sesión con esta cuenta e inicie una sesión de PowerShell. 
+    1. Desde el equipo con Windows Server, si a la cuenta de servicio del analizador se le ha concedido el derecho **Iniciar sesión localmente** para la instalación, inicie sesión con esta cuenta e inicie una sesión de PowerShell. 
     
         Si no se puede conceder a la cuenta de servicio del analizador el derecho **Iniciar sesión localmente** para la instalación, use el parámetro *OnBehalfOf* con [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), tal como se describe en [Cómo etiquetar archivos de forma no interactiva para Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
-    1. Ejecute [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) y especifique los valores copiados de la aplicación Azure AD:
+    1. Ejecute [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) y especifique los valores copiados de la aplicación de Azure AD:
 
       ```PowerShell
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
@@ -229,7 +229,7 @@ Para obtener más información, consulte [¿Qué es el analizador de etiquetado 
 
     El analizador ahora tiene un token para autenticarse en Azure AD. Este token es válido durante un año, dos años o nunca, según la configuración del secreto de cliente de la **aplicación web /API** en Azure AD. Cuando expire el token, debe repetir este procedimiento.
 
-1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer que el analizador funcione en modo sin conexión. Ejecute: 
+1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer que el analizador funcione en modo sin conexión. Ejecutar:
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off

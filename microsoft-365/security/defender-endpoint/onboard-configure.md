@@ -1,6 +1,6 @@
 ---
 title: Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
-description: Incorpore dispositivos Windows 10, servidores, dispositivos que no sean Windows y aprenda a ejecutar una prueba de detección.
+description: Incorpore Windows 10 dispositivos, servidores, dispositivos que no sean de Windows y aprenda a ejecutar una prueba de detección.
 keywords: onboarding, Microsoft Defender para punto de conexión onboarding, sccm, group policy, mdm, local script, detection test
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47e39beb1d433e15132a8ecbba64eab84660a4de
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: d218e09c8cc300552bcc9f230c1d375d33a5feb6
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530562"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 
@@ -33,7 +33,7 @@ ms.locfileid: "64782679"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 La implementación de Microsoft Defender para punto de conexión es un proceso de dos pasos.
 
@@ -45,31 +45,35 @@ La implementación de Microsoft Defender para punto de conexión es un proceso d
 ## <a name="onboard-devices-to-the-service"></a>Dispositivos incorporados al servicio
 Tendrá que ir a la sección de incorporación del portal de Defender para punto de conexión para incorporar cualquiera de los dispositivos admitidos. En función del dispositivo, se le guiará con los pasos adecuados y se le proporcionarán opciones de herramientas de administración e implementación adecuadas para el dispositivo. 
 
-En general, para incorporar dispositivos al servicio:
+Para incorporar dispositivos al servicio:
 
 - Comprobar que el dispositivo cumple los [requisitos mínimos](minimum-requirements.md)
 - En función del dispositivo, siga los pasos de configuración que se proporcionan en la sección de incorporación del portal de Defender para punto de conexión.
 - Uso de la herramienta de administración y el método de implementación adecuados para los dispositivos
 - Ejecutar una prueba de detección para comprobar que los dispositivos están incorporados correctamente e informar al servicio
 
-
+En este artículo se proporciona información sobre los métodos de incorporación aplicables a las versiones de cliente y servidor de Windows.
 
 ## <a name="onboarding-and-configuration-tool-options"></a>Opciones de la herramienta de incorporación y configuración
 En la tabla siguiente se enumeran las herramientas disponibles en función del punto de conexión que necesita incorporar.
 
 | Punto de conexión     | Opciones de herramientas                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móvil](mac-install-with-other-mdm.md) |
+| **Cliente Windows**  |     [Mobile Administración de dispositivos/Microsoft Intune](configure-endpoints-mdm.md) <br> [Directiva de grupo](configure-endpoints-gp.md) <br> [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>[Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Marioneta](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
 
+> [!NOTE]
+> Para los dispositivos que no están administrados por una Endpoint Manager de Microsoft (ya sea Microsoft Intune o microsoft endpoint Configuration Manager), puede usar la administración de seguridad para Microsoft Defender para punto de conexión  para recibir configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+
 En la tabla siguiente se enumeran las herramientas disponibles en función del punto de conexión que necesita incorporar.
 
 ## <a name="configure-capabilities-of-the-service"></a>Configuración de las funcionalidades del servicio
-La incorporación de dispositivos permite de forma eficaz la funcionalidad de detección y respuesta de puntos de conexión de Microsoft Defender para punto de conexión.
+La incorporación de dispositivos permite de forma eficaz la capacidad de detección y respuesta de puntos de conexión de Microsoft Defender para punto de conexión.
 
 Después de incorporar los dispositivos, tendrá que configurar las otras funcionalidades del servicio. En la tabla siguiente se enumeran las funcionalidades que puede configurar para obtener la mejor protección para su entorno.
 
@@ -99,7 +103,7 @@ Después de incorporar los dispositivos, tendrá que configurar las otras funcio
 |Búsqueda avanzada     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de archivos personalizados     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de red personalizados     |      v   |    v     |     v    |    v    |    v   |
-|EDR modo pasivo & bloquear     |      v   |    v     |     v    |    v    |    v   |
+|Bloquear EDR & modo pasivo     |      v   |    v     |     v    |    v    |    v   |
 |Sensor de detección de sentidos     |      v   |    v     |     v    |    v    |    v   |
 |Detección de dispositivos de red & punto de conexión     |      v   |    N     |     N    |    N    |    N   |
 |||||||
@@ -109,7 +113,7 @@ Después de incorporar los dispositivos, tendrá que configurar las otras funcio
 |Capacidades de respuesta de archivos: recopilar archivos, análisis profundos, bloquear archivos, detener y poner en cuarentena procesos     |      v   |    v     |     v    |    v    |    v   |
 |Respuesta dinámica    |      v   |    v     |     v    |    v    |    v   |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, vea [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
 
 >[!NOTE]
->Windows 7, 8.1, Windows Server 2008 R2 incluyen compatibilidad con el sensor de EDR y AV con System Center Endpoint Protection (SCEP).
+>Windows 7, 8.1, Windows Server 2008 R2 incluyen compatibilidad con el sensor EDR y AV mediante System Center Endpoint Protection (SCEP).

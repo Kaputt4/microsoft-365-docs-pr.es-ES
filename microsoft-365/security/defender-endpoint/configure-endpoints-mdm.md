@@ -1,6 +1,6 @@
 ---
-title: Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles
-description: Use las herramientas de Mobile Administración de dispositivos para implementar el paquete de configuración en los dispositivos de modo que se incorporen al servicio Defender para punto de conexión.
+title: Incorporación de dispositivos Windows a Defender para punto de conexión mediante Intune
+description: Use Microsoft Intune para implementar el paquete de configuración en los dispositivos de modo que se incorporen al servicio Defender para punto de conexión.
 keywords: incorporación de dispositivos mediante mdm, administración de dispositivos, incorporación de dispositivos Microsoft Defender para punto de conexión, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e81470cb02742eb94e62118f77f1ae0e8c62f90
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599689"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531064"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles
+# <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Incorporación de dispositivos Windows a Defender para punto de conexión mediante Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,12 +35,11 @@ ms.locfileid: "65599689"
 
 Puede usar soluciones de administración de dispositivos móviles (MDM) para configurar dispositivos Windows 10. Defender para punto de conexión admite MDM proporcionando OMA-URIs para crear directivas para administrar dispositivos.
 
-
 Para obtener más información sobre el uso de CSP de Defender para punto de conexión, vea [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) y [el archivo DDF WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Si usa Microsoft Intune, debe tener el dispositivo MDM inscrito. De lo contrario, la configuración no se aplicará correctamente.
+Los dispositivos deben inscribirse con Intune como solución mobile Administración de dispositivos (MDM).
 
 Para obtener más información sobre cómo habilitar MDM con Microsoft Intune, consulte [Inscripción de dispositivos (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -57,15 +56,14 @@ Para obtener más información sobre el uso de CSP de Defender para punto de con
 >
 > - La directiva **Estado de mantenimiento para dispositivos incorporados** usa propiedades de solo lectura y no se puede corregir.
 > - La configuración de la frecuencia de informes de datos de diagnóstico solo está disponible para los dispositivos en Windows 10, versión 1703.
+> - La incorporación a Defender para punto de conexión incorporará el dispositivo a [la prevención de pérdida de datos (DLP),](../../compliance/endpoint-dlp-learn-about.md) que también forma parte del cumplimiento de Microsoft 365.
 
-
-Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) o [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Microsoft Defender para punto de conexión.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecución de una prueba de detección para comprobar la incorporación
 Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).
 
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Offboard and monitor devices using Mobile Administración de dispositivos tools
+## <a name="offboard-devices-using-mobile-device-management-tools"></a>Dispositivos fuera del panel con herramientas de mobile Administración de dispositivos
 
 Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
@@ -74,7 +72,7 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 
 1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
-   1. En el panel de navegación, seleccione **Configuración** \> Administración **de** \> **dispositivos de puntos de conexión** \> **Offboarding**.
+   1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** \> Administración **de** \> **dispositivos Offboarding**.
 
    1. Seleccione Windows 10 o Windows 11 como sistema operativo.
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2aee32adca1799fca84932991dc128a6a3f64ca7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492455"
+ms.locfileid: "66530339"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -38,6 +38,8 @@ ms.locfileid: "66492455"
 
 **Plataformas**
 - Windows
+- macOS
+- Linux
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,7 +54,7 @@ Vea este vídeo para obtener información sobre cómo la protección de red ayud
 
 ## <a name="requirements-for-network-protection"></a>Requisitos para la protección de red
 
-La protección de red requiere Windows 10 o 11 (Pro o Enterprise), o Windows Server versión 1803 o posterior, y protección en tiempo real del Antivirus de Microsoft Defender.
+La protección de red requiere Windows 10 o 11 (Pro o Enterprise), Windows Server versión 1803 o posterior, macOS versión 11 o posterior, o versiones de Linux compatibles con Defender y protección en tiempo real del Antivirus de Microsoft Defender.
 
 | Versión de Windows | Antivirus de Microsoft Defender |
 |:---|:---|
@@ -343,7 +345,7 @@ La protección de red ahora tiene una optimización del rendimiento que permite 
 
 `Set-MpPreference -AllowSwitchToAsyncInspection $false`
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Evaluación de la protección de red](evaluate-network-protection.md) | Realice un escenario rápido que muestre cómo funciona la característica y qué eventos se crearían normalmente.
 - [Habilitar la protección de red](enable-network-protection.md) | Use los CSP de directiva de grupo, PowerShell o MDM para habilitar y administrar la protección de red en la red.

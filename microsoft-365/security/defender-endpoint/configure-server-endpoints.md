@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490683"
+ms.locfileid: "66531108"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -146,6 +146,16 @@ Solución:
 3. Importe el certificado al almacén "Entidades de certificación intermedias" de confianza del equipo local.
 Puede usar el comando de PowerShell: Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
+
+Microsoft Defender para punto de conexión se integra perfectamente con Microsoft Defender for Cloud. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Microsoft Defender for Cloud aparezcan en Defender para punto de conexión y realizar investigaciones detalladas como cliente de Microsoft Defender for Cloud. 
+
+Para obtener más información, consulte [Integración con Microsoft Defender for Cloud](azure-server-integration.md). Los servidores incorporados a través de Microsoft Defender for Cloud tendrán su configuración inicial establecida para ejecutar Antivirus de Defender en [modo pasivo](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+
+> [!NOTE]
+> - La integración entre Microsoft Defender para servidores y Microsoft Defender para punto de conexión se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - La supervisión de puntos de conexión de servidor que usan esta integración se ha deshabilitado para Office 365 clientes de GCC.
+
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 y Windows Server 2016
 
 ### <a name="prerequisites"></a>Requisitos previos
@@ -166,7 +176,7 @@ El paquete del instalador comprobará si los siguientes componentes ya se han in
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Requisitos previos para la ejecución con soluciones de seguridad de terceros
 
-Si tiene previsto usar una solución antimalware de terceros, tendrá que ejecutar antivirus de Microsoft Defender en modo pasivo. Debe recordar establecer en modo pasivo durante el proceso de instalación e incorporación.
+Si tiene previsto usar una solución antimalware de terceros, tendrá que ejecutar el Antivirus de Microsoft Defender en modo pasivo. Debe recordar establecer en modo pasivo durante el proceso de instalación e incorporación.
 
 > [!NOTE]
 > Si va a instalar Microsoft Defender para punto de conexión en servidores con McAfee Endpoint Security (ENS) o VirusScan Enterprise (VSE), es posible que sea necesario actualizar la versión de la plataforma de McAfee para asegurarse de que el Antivirus de Microsoft Defender no se quita ni deshabilita. Para obtener más información, incluidos los números de versión específicos necesarios, consulte el [artículo de McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
@@ -364,7 +374,7 @@ Después de incorporar el dispositivo, puede optar por ejecutar una prueba de de
 
 Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo recién incorporado](run-detection-test.md) para comprobar que el servidor informa a Defender para el servicio de punto de conexión.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de incorporar correctamente los dispositivos al servicio, deberá configurar los componentes individuales de Microsoft Defender para punto de conexión. Siga el [orden de adopción](prepare-deployment.md#adoption-order) que se va a guiar para habilitar los distintos componentes.
 
@@ -374,7 +384,7 @@ Puede desconectar Windows Server 2012 R2, Windows Server 2016, Windows Server (S
 
 - [Dispositivos fuera del panel que usan directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Dispositivos fuera de la placa con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Offboard and monitor devices using Mobile Administración de dispositivos tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Dispositivos fuera del panel con herramientas de mobile Administración de dispositivos](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [Dispositivos fuera del panel con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 Después del offboarding, puede continuar con la desinstalación del paquete de solución unificado en Windows Server 2012 R2 y Windows Server 2016.

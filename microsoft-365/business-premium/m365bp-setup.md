@@ -1,13 +1,12 @@
 ---
 title: Configuración de Microsoft 365 Empresa Premium
-description: Vea cómo configurar Microsoft 365 Empresa Premium
+description: Cómo configurar Microsoft 365 Empresa Premium o trabajar con un proveedor de soluciones para hacerlo.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,21 +14,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: ad188065f7f007029fccb94d8a5466ba9ec00f3e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317992"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486871"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
 Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurar todo. Tiene varias opciones disponibles. Puede:
 
-- [Comience con la experiencia de configuración guiada](#use-the-guided-process-for-basic-setup) para la configuración y la configuración básicas; o
-- [Trabaje con un asociado, como un Proveedor de soluciones en la nube de Microsoft (CSP).](#work-with-a-microsoft-partner)
-
-Use este artículo como guía.
+- Comience con la [experiencia de configuración guiada](m365bp-setup.md#guided-setup-process) para los ajustes y la configuración básicos; o
+- [Trabaje con un asociado](m365bp-setup.md#work-with-a-microsoft-partner), como un Proveedor de soluciones en la nube de Microsoft (CSP).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -45,15 +42,9 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 > [!TIP]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## <a name="use-the-guided-process-for-basic-setup"></a>Vea el proceso guiado para la configuración básica
+## <a name="guided-setup-process"></a>Proceso de configuración guiado
 
-Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración básica. El proceso guiado incluye estas tareas:
-
-- [Agregar el dominio ya existente para personalizar el inicio de sesión](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
-- [Agregar usuarios y asignar licencias](../admin/add-users/add-users.md)
-- [Actualizar los registros DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
-
-En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Estándar, que funciona de la misma manera en Microsoft 365 Empresa Premium.<br/><br/>
+Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración básica. En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Estándar, que también funciona para Microsoft 365 Empresa Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -66,7 +57,7 @@ Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microso
 
 1. Ve a la página de **Microsoft Solution Providers**. ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers))
 
-2. En el cuadro de búsqueda, rellene la ubicación y el tamaño de la empresa. 
+2. En el cuadro de búsqueda, rellene la ubicación y el tamaño de la empresa.
 
 3. En el cuadro de **Búsqueda de productos, servicios, aptitudes, sectores**, coloque `Microsoft 365` y, a continuación, seleccione **Go**.
 
@@ -79,17 +70,7 @@ Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microso
 - [Configurar las contraseñas de autoservicio](../admin/add-users/let-users-reset-passwords.md)
 
 - [Configurar la administración de grupos de autoservicio](/azure/active-directory/enterprise-users/groups-self-service-management)
-## <a name="next-objectives"></a>Siguientes objetivos
 
-Una vez finalizado el proceso de configuración inicial, los siguientes objetivos son configurar las funcionalidades de seguridad y el cumplimiento:
+### <a name="next-objective"></a>Siguiente objetivo
 
-1. [Configuración de las directivas de seguridad](m365bp-security-overview.md).
-
-2. Entrenar el equipo:
-
-   - [Configuración de dispositivos personales usados para acceder a datos empresariales](m365bp-devices-overview.md)
-   - [Uso del correo electrónico de forma más segura](m365bp-protect-email-overview.md)
-   - [Colaborar y compartir de forma segura](m365bp-collaborate-share-securely.md)
-
-3. [Proteger el correo electrónico en dispositivos administrados](m365bp-protect-devices.md).
-
+Una vez que haya logrado estos objetivos, vaya a [aumentar las protecciones de seguridad](m365bp-security-overview.md).

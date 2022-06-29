@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet AllowSelfServicePurchase de PowerShell para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: e4423892f2dc045a9729e68519c85d471838d5ac
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042196"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530846"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Uso de AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
@@ -45,7 +45,7 @@ Para usar el módulo de PowerShell **MSCommerce** , necesita:
 - Un dispositivo Windows 10
 - PowerShell 5 o posterior. Actualmente, PowerShell 6.x/7.x no es compatible con este módulo.
 - Permiso de administrador para el dispositivo
-- Rol administrador global o de facturación para el inquilino
+- Rol de Administración global o de facturación para el inquilino
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalación del módulo de PowerShell MSCommerce
 
@@ -65,7 +65,7 @@ Después de instalar el módulo en el dispositivo Windows 10, lo importa en cada
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Conectar a MSCommerce con sus credenciales
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Conexión a MSCommerce con sus credenciales
 
 Para conectarse al módulo de PowerShell con sus credenciales, ejecute el siguiente comando.
 
@@ -95,7 +95,7 @@ En la tabla siguiente se enumeran los productos disponibles y su **ProductId**.
 
 | Producto | Productid |
 |-----------------------------|--------------|
-| Power Apps por usuario | CFQ7TTC0LH2H |
+| Power Apps por usuario* | CFQ7TTC0LH2H |
 | Power Automate por usuario | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (independiente) | CFQ7TTC0KXG7  |
@@ -107,6 +107,7 @@ En la tabla siguiente se enumeran los productos disponibles y su **ProductId**.
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business con Ventaja híbrida de Windows | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
 
 *Estos identificadores han cambiado. Si anteriormente bloqueó productos con los identificadores antiguos, se bloquearán automáticamente mediante los nuevos identificadores. No se requiere ningún trabajo adicional.
 
@@ -134,7 +135,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Script de ejemplo para deshabilitar AllowSelfServicePurchase
 
-En el ejemplo siguiente se explica cómo importar el módulo **MSCommerce**, iniciar sesión con su cuenta, obtener el **ProductId** para Power Automate por usuario y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
+En el ejemplo siguiente se explica cómo importar el módulo **MSCommerce** , iniciar sesión con su cuenta, obtener **productid** para Power Automate por usuario y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -184,6 +185,6 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administración de compras de autoservicio (administrador)](manage-self-service-purchases-admins.md) (artículo)
+[Administración de compras de autoservicio (Administración)](manage-self-service-purchases-admins.md) (artículo)
 
 [Preguntas más frecuentes sobre compras de autoservicio](self-service-purchase-faq.yml) (artículo)

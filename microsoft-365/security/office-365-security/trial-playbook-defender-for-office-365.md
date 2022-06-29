@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
-ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.custom: trial-playbook
+ms.openlocfilehash: 6f4bd69e1797398dbe7e091a61fcc7a25d474121
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648357"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531130"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 

@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285026"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530524"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->Las siguientes características están en versión preliminar o están disponibles con carácter general en la versión más reciente de Microsoft 365 Defender.
+Enumera las nuevas características y funciones de Microsoft 365 Defender. 
 
 Fuente RSS: para recibir notificaciones cuando esta página se actualice, copie y pegue la dirección URL siguiente en el lector de fuentes: 
 
@@ -45,12 +45,15 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 También puede obtener actualizaciones de productos y notificaciones importantes a través del [centro de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="june-2022"></a>Junio de 2022
+- (versión preliminar) Las tablas [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) y [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) ya están disponibles en el esquema de búsqueda avanzada. Use estas tablas para buscar eventos de evaluación en Defender Vulnerability Management, incluido el estado de varias configuraciones y los estados de área expuesta a ataques de los dispositivos.
+
 ## <a name="may-2022"></a>Mayo de 2022
 - (versión preliminar) En línea con la expansión anunciada recientemente en una nueva categoría de servicio denominada [Expertos en seguridad de Microsoft](https://aka.ms/MicrosoftSecurityExperts), presentamos la disponibilidad de [expertos de Microsoft Defender para la búsqueda](defenderexpertsforhuntingprev.md) (expertos de Defender para la búsqueda) para la versión preliminar pública. Expertos de Defender para la búsqueda es para clientes que tienen un sólido centro de operaciones de seguridad, pero quieren que Microsoft les ayude a buscar amenazas de forma proactiva en los datos de Microsoft Defender, incluidos puntos de conexión, Office 365, aplicaciones en la nube e identidad. 
 
 ## <a name="april-2022"></a>Abril de 2022
 - (versión preliminar) [Ahora](advanced-hunting-take-action.md) se pueden realizar acciones en los mensajes de correo electrónico directamente desde los resultados de la consulta de búsqueda. Los correos electrónicos se pueden mover a otras carpetas o eliminarse de forma permanente. 
-- (versión preliminar) La nueva [`UrlClickEvents` tabla](advanced-hunting-urlclickevents-table.md) de búsqueda avanzada se puede usar para buscar amenazas, como campañas de suplantación de identidad (phishing) y vínculos sospechosos basados en información procedente de Caja fuerte clics de vínculos en mensajes de correo electrónico, Microsoft Teams y aplicaciones Office 365.
+- (versión preliminar) La nueva [`UrlClickEvents` tabla](advanced-hunting-urlclickevents-table.md) de búsqueda avanzada se puede usar para buscar amenazas, como campañas de suplantación de identidad (phishing) y vínculos sospechosos basados en información procedente de clics de vínculos seguros en mensajes de correo electrónico, Microsoft Teams y aplicaciones Office 365.
 
 ## <a name="march-2022"></a>Marzo de 2022
 
@@ -63,7 +66,7 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
-- (versión preliminar) La característica de complemento de gobernanza de aplicaciones para Defender for Cloud Apps ya está disponible en Microsoft 365 Defender. La gobernanza de aplicaciones proporciona una funcionalidad de administración de directivas y seguridad diseñada para aplicaciones habilitadas para OAuth que acceden a datos Microsoft 365 a través de las API de Microsoft Graph. La gobernanza de aplicaciones ofrece visibilidad, corrección y gobernanza completas sobre cómo estas aplicaciones y sus usuarios acceden, usan y comparten sus datos confidenciales almacenados en Microsoft 365 a través de información útil, y alertas y acciones de directivas automatizadas. [Más información sobre la gobernanza de aplicaciones](/cloud-app-security/app-governance-manage-app-governance).
+- (versión preliminar) La característica de complemento de gobernanza de aplicaciones para Defender for Cloud Apps ya está disponible en Microsoft 365 Defender. La gobernanza de aplicaciones proporciona una funcionalidad de administración de directivas y seguridad diseñada para aplicaciones habilitadas para OAuth que acceden a datos de Microsoft 365 a través de las API de Microsoft Graph. La gobernanza de aplicaciones ofrece visibilidad, corrección y gobernanza completas sobre cómo estas aplicaciones y sus usuarios acceden, usan y comparten sus datos confidenciales almacenados en Microsoft 365 a través de información útil, y alertas y acciones de directivas automatizadas. [Más información sobre la gobernanza de aplicaciones](/cloud-app-security/app-governance-manage-app-governance).
 - (versión preliminar) La página [de búsqueda avanzada](advanced-hunting-overview.md) ahora tiene compatibilidad con multitab, desplazamiento inteligente, pestañas de esquema simplificadas, opciones de edición rápida para consultas, un indicador de uso de recursos de consulta y otras mejoras para que las consultas sean más fluidas y fáciles de ajustar.
 - (versión preliminar) Ahora puede usar el [vínculo a la característica de incidente](advanced-hunting-link-to-incident.md) para incluir eventos o registros de los resultados de la consulta de búsqueda avanzada directamente en un incidente nuevo o existente que está investigando.
 
@@ -87,11 +90,11 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 - (versión preliminar) Gráfico de incidentes
 
-  Una nueva **pestaña Graph** en la pestaña **Resumen** de un incidente muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red a lo largo del tiempo, dónde se inició y hasta dónde llegó el atacante.
+  Una nueva pestaña **de Graph** en la pestaña **Resumen** de un incidente muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red a lo largo del tiempo, dónde se inició y hasta dónde llegó el atacante.
 
 ## <a name="july-2021"></a>Julio de 2021
 
-- [catálogo de servicios de Professional](https://sip.security.microsoft.com/interoperability/professional_services)
+- [Catálogo de servicios profesionales](https://sip.security.microsoft.com/interoperability/professional_services)
 
   Mejore las funcionalidades de detección, investigación e inteligencia sobre amenazas de la plataforma con conexiones de asociado compatibles.
 
@@ -135,9 +138,9 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 - [Microsoft 365 Defender informe de análisis de amenazas](threat-analytics.md)
 
-  El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para punto de conexión y Microsoft Defender para los titulares de licencias de Office E5.
+  El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para punto de conexión y Microsoft Defender para Office E5.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 
