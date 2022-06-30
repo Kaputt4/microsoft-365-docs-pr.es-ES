@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872970"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554431"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -39,17 +39,17 @@ ms.locfileid: "65872970"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
-Defender for Endpoint amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona funcionalidades avanzadas de detección e investigación de ataques en las versiones de Windows compatibles.
+Defender para punto de conexión amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona funcionalidades avanzadas de detección e investigación de ataques en las versiones compatibles de Windows.
 
-Para incorporar puntos de conexión de cliente de nivel inferior Windows a Defender para punto de conexión, deberá:
+Para incorporar puntos de conexión de cliente de Windows de nivel inferior a Defender para punto de conexión, deberá hacer lo siguiente:
 
 - [Configuración y actualización de clientes System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients)
 - [Instalación y configuración de Microsoft Monitoring Agent (MMA) para informar de los datos del sensor](#install-and-configure-microsoft-monitoring-agent-mma)
 
-Para Windows Server 2008 R2 SP1, tiene la opción de [incorporar a través de Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
+Para Windows Server 2008 R2 SP1, tiene la opción de [incorporarse a través de Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
+> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor de Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un punto de conexión de Defender para punto de conexión recién incorporado](run-detection-test.md).
@@ -63,9 +63,9 @@ Defender para punto de conexión se integra con System Center Endpoint Protectio
 
 Los pasos siguientes son necesarios para habilitar esta integración:
 
-- Instalación de la [actualización de la plataforma antimalware de enero de 2017 para clientes Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
+- Instalación de la actualización de la [plataforma antimalware de enero de 2017 para clientes de Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configuración de la pertenencia del servicio de protección en la nube del cliente SCEP a la configuración **avanzada**
-- Configure la red para permitir conexiones a la nube de Antivirus de Microsoft Defender. Para obtener más información, consulte [Configuración y validación de conexiones de red Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- Configure la red para permitir conexiones a la nube del Antivirus de Microsoft Defender. Para obtener más información, consulte [Configuración y validación de conexiones de red del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus).
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Instalación y configuración de Microsoft Monitoring Agent (MMA)
 
@@ -93,7 +93,7 @@ Revise los detalles siguientes para comprobar los requisitos mínimos del sistem
 
 ### <a name="installation-steps"></a>Pasos de la instalación
 
-1. Descargue el archivo de instalación del agente: [Windows agente de 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) o [Windows agente de 32 bits](https://go.microsoft.com/fwlink/?LinkId=828604).
+1. Descargue el archivo de instalación del agente: [agente de Windows de 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) o [agente de Windows de 32 bits](https://go.microsoft.com/fwlink/?LinkId=828604).
 
     >[!NOTE]
     >Debido al [desuso de la compatibilidad con SHA-1 por parte del agente mma](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement), el agente de MMA debe ser la versión 10.20.18029 o posterior.
@@ -107,7 +107,7 @@ Revise los detalles siguientes para comprobar los requisitos mínimos del sistem
 3. Con el identificador del área de trabajo y la clave del área de trabajo, elija cualquiera de los métodos de instalación siguientes para instalar el agente:
     - [Instale manualmente el agente mediante el programa de instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
 
-      En la página **Opciones de configuración del agente**, seleccione **Conectar el agente a Azure Log Analytics (OMS)**
+      En la página **Opciones de configuración del agente** , seleccione **Conectar el agente a Azure Log Analytics (OMS)**
 
     - [Instale el agente mediante la línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure el agente mediante un script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
@@ -132,19 +132,19 @@ Una vez completado, debería ver los servidores de Windows incorporados en el po
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Incorporación de servidores Windows a través de Microsoft Defender for Cloud
 
-1. En el panel de navegación Microsoft 365 Defender, seleccione **Configuración** >  **Inscripción de administración** > **de dispositivos**.
+1. En el panel de navegación Microsoft 365 Defender, seleccione **Configuración Administración** > **de** > **dispositivos Incorporación**.
 
 2. Seleccione **Windows Server 2008 R2 SP1** como sistema operativo.
 
 3. Haga clic **en Incorporar servidores en Microsoft Defender for Cloud**.
 
-4. Siga las instrucciones de incorporación de [Microsoft Defender para punto de conexión con Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en [Habilitación de Microsoft Defender para punto de conexión integración](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Siga las instrucciones de incorporación de [Microsoft Defender para punto de conexión con Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en [Habilitación de la integración de Microsoft Defender para punto de conexión](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Después de completar los pasos de incorporación, deberá [configurar y actualizar System Center Endpoint Protection clientes](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 >
-> - Para que la incorporación a través de Microsoft Defender para que los servidores funcionen según lo previsto, el servidor debe tener un área de trabajo y una clave adecuadas configuradas dentro de la configuración de Microsoft Monitoring Agent (MMA).
+> - Para que la incorporación a través de Microsoft Defender para que los servidores funcionen según lo esperado, el servidor debe tener un área de trabajo y una clave adecuadas configuradas dentro de la configuración del Agente de supervisión de Microsoft (MMA).
 > - Una vez configurado, el módulo de administración en la nube adecuado se implementa en la máquina y el proceso del sensor (MsSenseS.exe) se implementará e iniciará.
 > - Esto también es necesario si el servidor está configurado para usar un servidor de puerta de enlace de OMS como proxy.
 
@@ -163,7 +163,7 @@ Compruebe que el Antivirus de Microsoft Defender y Microsoft Defender para punto
 
     Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar El antivirus de Microsoft Defender. Para obtener más información, consulte [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-windows.md).
 
-    Para obtener información sobre cómo usar directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los servidores de Windows, consulte [Uso de directiva de grupo configuración para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Para obtener información sobre cómo usar directiva de grupo para configurar y administrar el Antivirus de Microsoft Defender en los servidores de Windows, consulte [Uso de directiva de grupo configuración para configurar y administrar el Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
 
 2. Ejecute el siguiente comando para comprobar que Microsoft Defender para punto de conexión se está ejecutando:
@@ -183,7 +183,7 @@ Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo
 
 ### <a name="using-group-policy"></a>Uso de directiva de grupo
 
-**Paso 1: Descargue el udpate correspondiente para el punto de conexión.**
+**Paso 1: Descargue la actualización correspondiente para el punto de conexión.**
 
 1. Vaya a c:\windows\sysvol\domain\scripts (podría ser necesario cambiar el control en uno de los controladores de dominio).
 1. Cree una carpeta denominada MMA.
@@ -214,22 +214,20 @@ El siguiente comando es un ejemplo. Reemplace los valores siguientes:
 
 
 ```dos
-@echo off 
-cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
-exit
-) ELSE (
+@echo off  
+cd "C:" 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (  
+exit 
+) ELSE ( 
+ 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart 
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t:"C:\Windows\MMA"
+c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="<your workspace ID>" OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"c:\windows\MMA\ setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1
-OPINSIGHTS_WORKSPACE_ID="<your workspace ID>"
-OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
-)
-
-)
+) 
 ```
 
 
@@ -295,17 +293,17 @@ Compruebe que los KB están presentes antes de incorporar Windows Server 2008 R2
 
 ## <a name="offboard-endpoints"></a>Puntos de conexión fuera del panel
 
-Tiene dos opciones para desconectar Windows puntos de conexión desde el servicio:
+Tiene dos opciones para extraer puntos de conexión de Windows desde el servicio:
 
 - Desinstalación del agente mma
 - Quitar la configuración del área de trabajo de Defender para punto de conexión
 
 > [!NOTE]
-> La retirada hace que el punto de conexión de Windows deje de enviar datos del sensor al portal, pero los datos del punto de conexión, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
+> La retirada hace que el punto de conexión de Windows deje de enviar datos del sensor al portal, pero los datos del punto de conexión, incluida la referencia a las alertas que haya tenido, se conservarán durante un máximo de 6 meses.
 
 ### <a name="uninstall-the-mma-agent"></a>Desinstalación del agente mma
 
-Para desconectar el punto de conexión Windows, puede desinstalar el agente de MMA o desasociarlo de los informes al área de trabajo de Defender para punto de conexión. Después de quitar el agente, el punto de conexión ya no enviará datos del sensor a Defender para punto de conexión.
+Para desconectar el punto de conexión de Windows, puede desinstalar el agente MMA o desasociarlo de los informes al área de trabajo de Defender para punto de conexión. Después de quitar el agente, el punto de conexión ya no enviará datos del sensor a Defender para punto de conexión.
 Para obtener más información, consulte [Para deshabilitar un agente](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
 ### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>Quitar la configuración del área de trabajo de Defender para punto de conexión
@@ -317,7 +315,7 @@ Puede usar cualquiera de los métodos siguientes:
 
 #### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Quitar la configuración del área de trabajo de Defender para punto de conexión del agente de MMA
 
-1. En propiedades **de Microsoft Monitoring Agent**, seleccione la pestaña **Azure Log Analytics (OMS).**
+1. En **Propiedades del Agente de supervisión de Microsoft**, seleccione la pestaña **Azure Log Analytics (OMS).**
 
 2. Seleccione el área de trabajo Defender para punto de conexión y haga clic en **Quitar**.
 
@@ -327,7 +325,7 @@ Puede usar cualquiera de los métodos siguientes:
 
 1. Obtenga el identificador del área de trabajo:
 
-   1. En el panel de navegación, seleccione **Configuración** >  **Onboarding**.
+   1. En el panel de navegación, seleccione **Configuración** > **Incorporación**.
 
    1. Seleccione el sistema operativo correspondiente y obtenga el identificador del área de trabajo.
 

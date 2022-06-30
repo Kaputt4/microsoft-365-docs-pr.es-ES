@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874182"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554475"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -64,7 +64,7 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 
 Durante el proceso de incorporación de Microsoft Defender para punto de conexión, los dispositivos incorporados a MDE se rellenan gradualmente en el inventario de dispositivos a medida que comienzan a notificar los datos del sensor. A continuación, los dispositivos que se detectan en la red a través del proceso de detección de dispositivos rellenan el inventario de dispositivos. El inventario de dispositivos tiene tres pestañas que enumeran los dispositivos por:
 
-- **Equipos y dispositivos móviles**: puntos de conexión de Enterprise (estaciones de trabajo, servidores y dispositivos móviles)
+- **Equipos y dispositivos móviles**: puntos de conexión empresariales (estaciones de trabajo, servidores y dispositivos móviles)
 - **Dispositivos de red**: dispositivos como enrutadores y conmutadores
 - **Dispositivos IoT**: dispositivos como impresoras y cámaras
 
@@ -124,7 +124,7 @@ Filtro | Descripción
 **Estado de incorporación** </br> | El estado de incorporación indica si el dispositivo está incorporado actualmente a Microsoft Defender para punto de conexión o no. Puede filtrar por los siguientes estados: </br> - **Incorporado**: el punto de conexión se incorpora a Microsoft Defender para punto de conexión.  </br> - **Se puede incorporar**: el punto de conexión se detectó en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos. </br> - **No compatible**: el punto de conexión se detectó en la red, pero no es compatible con Microsoft Defender para punto de conexión. </br> - **Información insuficiente**: el sistema no pudo determinar la compatibilidad del dispositivo.</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado del antivirus** </br> | Filtre la vista en función de si el estado del antivirus está deshabilitado, no actualizado o desconocido.</br></br> (_Solo equipos y dispositivos móviles_)
 **Grupo** </br> | Filtre la lista según el grupo que le interesa investigar. </br></br> (_Solo equipos y dispositivos móviles_)
-**Administrado por** </br> | Administrado por indica cómo se administra el dispositivo. Se puede filtrar por:</br>- Microsoft Defender para punto de conexión </br> - Administración de dispositivos móviles (MDM) </br>- Desconocido: esto podría deberse a la ejecución de una versión Windows obsoleta, a que SCCM esté en su lugar o a otra MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_)
+**Administrado por** </br> | Administrado por indica cómo se administra el dispositivo. Se puede filtrar por:</br> - Microsoft Defender para punto de conexión</br> - Microsoft Endpoint Manager (MEM), incluida la administración conjunta con Microsoft Configuration Manager a través de la asociación de inquilinos</br>- Microsoft Configuration Manager (ConfigMgr)</br> - Desconocido: esto podría deberse a la ejecución de una versión de Windows obsoleta, administración de GPO u otro MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_) 
 **Tipo de dispositivo** </br> | Filtre por el tipo de dispositivo que le interesa investigar.</br></br> (_solo dispositivos IoT_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Uso de columnas para personalizar las vistas de inventario de dispositivos

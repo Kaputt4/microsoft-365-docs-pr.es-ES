@@ -1,6 +1,6 @@
 ---
-title: Protección de macOS configuración de seguridad con protección contra alteraciones
-description: Use la protección contra alteraciones para evitar que las aplicaciones malintencionadas cambien la configuración de seguridad macOS importante.
+title: Protección de la configuración de seguridad de macOS con protección contra alteraciones
+description: Use la protección contra alteraciones para evitar que las aplicaciones malintencionadas cambien la configuración de seguridad importante de macOS.
 keywords: macos, protección contra alteraciones, configuración de seguridad, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1a057f7b8342c7df0db63fd89604d518c1ef3a08
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 594cc36f7e58588b49a1491ce88dcacca2ca5ab4
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810681"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554145"
 ---
-# <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de macOS configuración de seguridad con protección contra alteraciones
+# <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de la configuración de seguridad de macOS con protección contra alteraciones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Puede establecer la protección contra alteraciones en los modos siguientes:
 
 |Tema|Descripción|
 |---|---|
-|Deshabilitada|La protección contra alteraciones está completamente desactivada (este es el modo predeterminado después de la instalación)|
+|Deshabilitado|La protección contra alteraciones está completamente desactivada (este es el modo predeterminado después de la instalación)|
 |Auditoría|Las operaciones de manipulación se registran, pero no se bloquean|
 |Bloquear|La protección contra alteraciones está activada, las operaciones de manipulación están bloqueadas|
 
@@ -50,7 +50,6 @@ Cuando la protección contra alteraciones se establece en modo de auditoría o b
 - Se registra la creación de nuevos archivos en la ubicación de Defender para punto de conexión (auditada)
 - La eliminación de archivos de Defender para punto de conexión se registra (auditada)
 - Se registra el cambio de nombre de los archivos de Defender para punto de conexión (auditado)
-- Error en los comandos para detener el agente
 
 **Modo de bloque**:
 
@@ -69,7 +68,7 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 > [!NOTE]
 >
-> - El cambio de modo se aplicará inmediatamente. No es necesario cambiar la marca de características ni reiniciar Microsoft Defender para punto de conexión.
+> - El cambio de modo se aplicará inmediatamente.
 > - Si usó JAMF durante la configuración inicial, también tendrá que actualizar la configuración mediante JAMF.
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -79,8 +78,8 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 **Configuración muy recomendada:**
 
-1. Protección de integridad del sistema (SIP) habilitada. Para obtener más información, consulte [Deshabilitación y habilitación de la protección de integridad del sistema](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
-1. Use una herramienta de administración de dispositivos móviles (MDM) para configurar Microsoft Defender para punto de conexión.
+- Protección de integridad del sistema (SIP) habilitada. Para obtener más información, consulte [Deshabilitación y habilitación de la protección de integridad del sistema](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+- Use una herramienta de administración de dispositivos móviles (MDM) para configurar Microsoft Defender para punto de conexión.
 
 ## <a name="configure-tamper-protection-on-macos-devices"></a>Configuración de la protección contra alteraciones en dispositivos macOS
 
@@ -92,7 +91,7 @@ Hay varias maneras de configurar la protección contra alteraciones:
 
 ### <a name="before-you-begin"></a>Antes de empezar
 
-Compruebe que "tamper_protection" está establecido en "deshabilitado".
+Compruebe que "tamper_protection" está establecido en "disabled" para observar el cambio de estado.
 
 ![Imagen de la línea de comandos con protección contra alteraciones en modo de deshabilitación](images/verify-tp.png)
 
@@ -225,7 +224,7 @@ La alerta de alteración se genera en el portal de Microsoft 365 Defender
 ### <a name="verify-block-mode-and-audit-modes"></a>Comprobación del modo de bloque y los modos de auditoría
 
 - Con la búsqueda avanzada, verá que aparecen alertas de manipulación
-- Los eventos de alteración se pueden encontrar en los registros de dispositivos locales: `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- Los eventos de alteración se pueden encontrar en los registros de dispositivos locales: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Imagen del registro de protección contra alteraciones](images/tamper-protection-log.png)
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78f05c9e366d2f8b4d5b4d7697961f0d702581f8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 757064e8867cda8676fd0cf20a662ff04d130e9c
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438536"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554519"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Introducción a la EDR
 
@@ -33,6 +33,9 @@ ms.locfileid: "65438536"
 Las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión proporcionan detecciones avanzadas de ataques casi en tiempo real y accionables. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
 
 Cuando se detecta una amenaza, se crean alertas en el sistema para que un analista la investigue. Las alertas con las mismas técnicas de ataque o atribuidas al mismo atacante se agregan a una entidad denominada _incidente_. Agregar alertas de esta manera permite a los analistas investigar y responder de forma colectiva a las amenazas con facilidad.
+
+> [!NOTE]
+> La detección de Defender para punto de conexión no está pensada para ser una solución de auditoría o registro que registre todas las operaciones o actividades que se producen en un punto de conexión determinado. Nuestro sensor tiene un mecanismo de limitación interna, por lo que la alta tasa de repetición de eventos idénticos no inundará los registros.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
 

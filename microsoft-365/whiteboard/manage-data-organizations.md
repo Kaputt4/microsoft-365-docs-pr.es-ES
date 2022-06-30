@@ -1,5 +1,5 @@
 ---
-title: Administración de datos para Microsoft Whiteboard
+title: Administración de datos para La pizarra de Microsoft
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -13,16 +13,16 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre la retención de datos para Microsoft Whiteboard en Azure y OneDrive para la Empresa.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 59fc0260b26292391dc6168cb2fda78df5f8b8c7
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 2537750a43b10617251ee1da670f6ebd78e5ce82
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159960"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553866"
 ---
-# <a name="manage-data-for-microsoft-whiteboard"></a>Administración de datos para Microsoft Whiteboard
+# <a name="manage-data-for-microsoft-whiteboard"></a>Administración de datos para La pizarra de Microsoft
 
-El contenido de pizarra se almacena en Azure y OneDrive para la Empresa. Las nuevas pizarras se almacenarán en OneDrive para la Empresa; la única excepción son las pizarras iniciadas desde una Surface Hub se almacenarán en Azure (que se moverán a OneDrive para la Empresa en el futuro). Para obtener más información, vea [Administrar el uso compartido en la pizarra](manage-sharing-organizations.md).
+El contenido de pizarra se almacena en Azure y OneDrive para la Empresa. Las nuevas pizarras se almacenarán en OneDrive para la Empresa; la única excepción son las pizarras iniciadas desde un Surface Hub se almacenarán en Azure (que se moverán a OneDrive para la Empresa en el futuro). Para obtener más información, vea [Administrar el uso compartido en la pizarra](manage-sharing-organizations.md).
 
 ## <a name="azure-storage-overview"></a>Introducción a Azure Storage
 
@@ -35,7 +35,7 @@ El contenido de Azure no admite la prevención de pérdida de datos (DLP), la ex
 Estamos cambiando la forma en que se almacenan las pizarras cuando se elimina la cuenta de un usuario en Azure. Antes del cambio, cuando se eliminó la cuenta de un usuario, también se eliminaron las pizarras que era propiedad del usuario, pero las pizarras que se compartieron con otros usuarios no se eliminaron.
 
 >[!NOTE]
-> Las pizarras almacenadas en OneDrive para la Empresa se controlarán como cualquier otro contenido de OneDrive para la Empresa. Para obtener más información, vea [Establecer la retención de OneDrive para los usuarios eliminados](/onedrive/set-retention).
+> Las pizarras almacenadas en OneDrive para la Empresa se controlarán como cualquier otro contenido de OneDrive para la Empresa. Para obtener más información, vea [Establecer la retención de OneDrive para usuarios eliminados](/onedrive/set-retention).
 
 A partir del **1 de junio de 2022**, el comportamiento de las pizarras en Azure ha cambiado. Se eliminarán las pizarras compartidas con otros usuarios.
 
@@ -49,15 +49,15 @@ Asegúrese de que cualquier proceso de eliminación o script controla este cambi
 
 ## <a name="onedrive-for-business-storage-overview"></a>introducción al almacenamiento de OneDrive para la Empresa
 
-Las pizarras se crearán en la carpeta OneDrive para la Empresa de la persona que inicia la pizarra (SharePoint aún no se admite). Este proceso se aplica a todas las pizarras creadas en las aplicaciones independientes de Whiteboard y en Microsoft Teams reuniones, chats y canales. La única excepción son las pizarras iniciadas desde un Surface Hub se almacenarán en Azure (que se moverán a OneDrive para la Empresa en el futuro).
+Las pizarras se crearán en la carpeta OneDrive para la Empresa de la persona que inicia la pizarra (SharePoint aún no se admite). Este proceso se aplica a todas las pizarras creadas en las aplicaciones de pizarra independientes y en reuniones, chats y canales de Microsoft Teams. La única excepción son las pizarras iniciadas desde un Surface Hub que se almacenarán en Azure (que se moverán a OneDrive para la Empresa en el futuro).
 
 Los usuarios que no tengan OneDrive para la Empresa aprovisionados ya no podrán crear nuevas pizarras cuando se implemente este cambio. Sin embargo, todavía pueden editar sus paneles creados anteriormente. También pueden colaborar en cualquier pizarra compartida con ellas por otros usuarios que hayan OneDrive para la Empresa.
 
-Una pizarra promedio podría tener un tamaño de entre 50 KB y 1 MB y estar ubicada donde resida el contenido OneDrive para la Empresa. Para comprobar dónde se almacenan los datos del inquilino, consulte [Dónde se almacenan los datos del cliente Microsoft 365](/microsoft-365/enterprise/o365-data-locations). A continuación, examine la ubicación de OneDrive para la Empresa.
+Una pizarra promedio podría tener un tamaño de entre 50 KB y 1 MB y estar ubicada donde resida el contenido OneDrive para la Empresa. Para comprobar dónde se almacenan los datos del inquilino, consulte [Dónde se almacenan los datos del cliente de Microsoft 365](/microsoft-365/enterprise/o365-data-locations). A continuación, examine la ubicación de OneDrive para la Empresa.
 
 ### <a name="controls-for-onedrive-for-business-storage"></a>Controles para el almacenamiento de OneDrive para la Empresa 
 
-Puede administrar datos de Pizarra mediante controles de OneDrive para la Empresa existentes. Para obtener más información, consulte [OneDrive guía para empresas](/onedrive/plan-onedrive-enterprise).
+Puede administrar datos de Pizarra mediante controles de OneDrive para la Empresa existentes. Para obtener más información, vea [Guía de OneDrive para empresas](/onedrive/plan-onedrive-enterprise).
 
 Puede usar las herramientas de OneDrive para la Empresa existentes para satisfacer las solicitudes del interesado (DSR) para el Reglamento general de protección de datos (RGPD). Si desea asegurarse de que todos los cambios anteriores se quitan del archivo, debe eliminar todo el archivo.
 
@@ -77,12 +77,12 @@ Controles de datos planeados para futuras versiones:
 - Análisis
 - Compatibilidad adicional con eDiscovery
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Habilitación y administración del acceso a Whiteboard](enable-whiteboard-access-organizations.md)
+[Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Administración del uso compartido para Whiteboard](manage-sharing-organizations.md)
 
-[Implementación de Whiteboard en Windows](deploy-on-windows-organizations.md)
+[Implementación de pizarra en Windows](deploy-on-windows-organizations.md)
 
 

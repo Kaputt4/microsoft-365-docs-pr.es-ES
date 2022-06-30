@@ -1,6 +1,6 @@
 ---
 title: Ejecutar el Analizador de clientes en macOS o Linux
-description: Obtenga información sobre cómo ejecutar el analizador de cliente de Microsoft Defender para punto de conexión en macOS o Linux
+description: Aprenda a ejecutar Microsoft Defender para punto de conexión Client Analyzer en macOS o Linux.
 keywords: analizador de cliente, solución de problemas de sensor, analizador, mdeanalyzer, macos, linux, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: fc5944be9fd209898b53203533f568ae7ccec70e
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090462"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554541"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "66090462"
 1. Descargue la herramienta [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -101,7 +101,7 @@ Ayuda de sintaxis adicional:
 
 - mde_diagnostic.zip
 
-  Descripción: la misma salida de diagnóstico que se genera al ejecutar *mdatp diagnostic create* en cualquiera [de los macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Descripción: la misma salida de diagnóstico que se genera al ejecutar *mdatp diagnostic create* en [cualquiera de los macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information).
 
   o
 

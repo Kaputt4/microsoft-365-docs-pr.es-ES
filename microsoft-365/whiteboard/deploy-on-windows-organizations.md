@@ -1,5 +1,5 @@
 ---
-title: Implementación de Microsoft Whiteboard en dispositivos Windows 10
+title: Implementación de La pizarra de Microsoft en dispositivos Windows 10
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -13,16 +13,16 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo implementar Microsoft Whiteboard en dispositivos que ejecutan Windows 10 o versiones posteriores.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07c55ecb881c3c7c8f6803845d8619c368c65270
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 2ce1ff5b07774d07b3b67404e0b04d42b44759ba
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159956"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553842"
 ---
-# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Implementación de Microsoft Whiteboard en dispositivos Windows 10
+# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Implementación de La pizarra de Microsoft en dispositivos Windows 10
 
-La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versiones posteriores mediante Microsoft Intune o Microsoft Configuration Manager (anteriormente System Center Configuration Manager). Whiteboard no se admite en Windows Server.
+La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versiones posteriores mediante Microsoft Intune o Microsoft Configuration Manager (anteriormente System Center Configuration Manager). La pizarra no se admite en Windows Server.
 
 - **Microsoft Intune mediante un modo de licencia en línea**: este proceso le permite especificar grupos de usuarios que recibirán acceso a la aplicación Whiteboard.
 
@@ -33,7 +33,7 @@ La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versio
 
 ## <a name="install-whiteboard-using-microsoft-intune"></a>Instalación de Whiteboard con Microsoft Intune
 
-1. Agregue Whiteboard como una aplicación disponible siguiendo los pasos de este artículo: [Agregar aplicaciones Microsoft Store a Microsoft Intune](/mem/intune/apps/store-apps-windows).
+1. Agregue Whiteboard como una aplicación disponible mediante los pasos de este artículo: [Agregar aplicaciones de Microsoft Store a Microsoft Intune](/mem/intune/apps/store-apps-windows).
 
 2. Asigne la aplicación a un grupo siguiendo los pasos de este artículo: [Asignar aplicaciones a grupos con Microsoft Intune](/mem/intune/apps/apps-deploy).
 
@@ -65,9 +65,9 @@ La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versio
 
 13. Para obtener más información, consulte [Instalación de aplicaciones para un dispositivo](/mem/configmgr/apps/deploy-use/install-app-for-device).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Habilitación y administración del acceso a Whiteboard](enable-whiteboard-access-organizations.md)
+[Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Administración de datos para Whiteboard](manage-data-organizations.md)
 
