@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151170"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486327"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -151,6 +152,16 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
 2. Seleccione **Informes**.
 
 3. Desactive la instrucción **Mostrar nombres ocultos de usuarios, grupos y sitios en todos los informes** y, a continuación, guarde los cambios.
+
+A partir del 23 de junio de 2022, una API estará disponible gradualmente para todos los entornos para que los administradores globales cambien esta configuración sin necesidad de visitar el Centro de administración de Microsoft 365. A continuación se muestran los detalles de la API:  
+
+La dirección URL es https://graph.microsoft.com/beta/admin/reportSettings 
+
+Se han aprobado dos métodos para esta API:
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="Métodos de la API.":::
+
+El informe solo contendrá una propiedad de configuración de privacidad. Para obtener más información sobre Graph API, consulte [Uso de la API de Microsoft Graph](/graph/use-the-api). Los administradores globales pueden usar el Kit de desarrollo de software (SDK) o llamar directamente a la API mediante cualquier lenguaje de programa con capacidad de red. Se recomienda usar [el Explorador de Graph](/graph/graph-explorer/graph-explorer-overview).
 
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el registro de auditoría del portal de cumplimiento de Microsoft Purview.
 

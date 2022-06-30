@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en Cloudflare para Microsoft 365
+title: Conexión de los registros DNS en Cloudflare a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en Cloudflare para Microsoft.
-ms.openlocfilehash: 164a681cccac3385d2ca963ac58706c8e743bc1e
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 50dbee0ab2ca587ee628a40fdc9c032ec9c8820d
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780377"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563327"
 ---
-# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conectar los registros DNS en Cloudflare para Microsoft 365
+# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conexión de los registros DNS en Cloudflare a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
@@ -39,17 +38,17 @@ Si Cloudflare es el proveedor de hospedaje DNS, siga los pasos de este artículo
 
 Tiene dos opciones para configurar registros DNS para el dominio:
 
-- [**Use Dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Conectar dominio para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
+- [**Uso de Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Domain Connect para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
-    OR
+    O
 
 - [**Siga los pasos manuales.**](#create-dns-records-with-manual-setup) Compruebe el dominio siguiendo los pasos manuales que se indican a continuación y elija cuándo y qué registros se van a agregar al registrador de dominios. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Conectar de dominio para comprobar y configurar el dominio
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Domain Connect para comprobar y configurar el dominio
 
 Siga estos pasos para comprobar y configurar automáticamente el dominio de Cloudflare con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a> y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, seleccione **Dominios de configuración** \> y seleccione el dominio que desea configurar.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Seleccione los tres puntos (más acciones) \> y elija **Iniciar configuración**.
 
@@ -65,7 +64,7 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de Clou
 
 ## <a name="create-dns-records-with-manual-setup"></a>Creación de registros DNS con configuración manual
 
-Después de agregar estos registros en Cloudflare, el dominio se configurará para trabajar con Microsoft 365 servicios.
+Después de agregar estos registros en Cloudflare, el dominio se configurará para trabajar con servicios de Microsoft 365.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -77,7 +76,7 @@ Después de agregar estos registros en Cloudflare, el dominio se configurará pa
 
 Cuando se registró en Cloudflare, agregó un dominio mediante el proceso de instalación de Cloudflare.
 
-El dominio que agregó se compró en Cloudflare o en un registrador de dominios independiente. Para comprobar y crear registros DNS para el dominio en Microsoft 365, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de Cloudflare.
+El dominio que agregó se compró en Cloudflare o en un registrador de dominios independiente. Para comprobar y crear registros DNS para su dominio en Microsoft 365, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de Cloudflare.
 
 Para cambiar los servidores DNS del dominio en el sitio web del registrador de dominios usted mismo, haga lo siguiente:
 
@@ -123,7 +122,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
     |Tipo|Nombre|TTL|Contenido|
     |---|---|---|:----|
-    |TXT|@|30 minutos|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
+    |TXT|@|30 minutos|MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
 
 1. Seleccione **Guardar**.
 
@@ -135,7 +134,7 @@ Ahora que ha agregado el registro en el sitio del registrador de dominios, volve
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -168,7 +167,7 @@ Para comprobar el registro en Microsoft 365:
 
    |Tipo|Nombre|Servidor de correo|TTL|Prioridad|
    |---|---|---|---|---|
-   |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|30 minutos|1 <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
+   |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|30 minutos|1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
 
 1. Seleccione **Guardar**.
 
@@ -242,7 +241,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
 > [!IMPORTANT]
-> Tenga en cuenta que Cloudflare es responsable de que esta funcionalidad esté disponible. En caso de que vea discrepancias entre los pasos siguientes y la GUI de Cloudflare actual (interfaz gráfica de usuario), aproveche el [Community de Cloudflare](https://community.cloudflare.com/).
+> Tenga en cuenta que Cloudflare es responsable de que esta funcionalidad esté disponible. En caso de que vea discrepancias entre los pasos siguientes y la guia de Cloudflare actual (interfaz gráfica de usuario), aproveche la [comunidad de Cloudflare](https://community.cloudflare.com/).
 
 1. Para empezar, vaya a la página de dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
@@ -262,8 +261,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Nombre|Servicio|Protocolo|TTL|Prioridad|Peso|Puerto|Target|
     |---|---|---|---|---|---|---|---|---|
-    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1|5061|sipfed.online.lync.com|
+    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1 |443|sipfed.online.lync.com|
+    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1 |5061|sipfed.online.lync.com|
 
 1. Seleccione **Guardar**.
 

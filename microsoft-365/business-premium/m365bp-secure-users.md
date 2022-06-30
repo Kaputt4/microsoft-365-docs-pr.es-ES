@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Más información sobre Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad
-ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098128"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489889"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Cómo Microsoft 365 Empresa Premium ayuda a su negocio
+# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Cómo las recomendaciones de seguridad de Microsoft 365 afectan a sus usuarios
 
 Microsoft 365 Empresa Premium es una solución rentable que permite a las pequeñas y medianas empresas trabajar de forma más eficiente y segura que antes. En este artículo se describe cómo Microsoft 365 Empresa Premium puede ayudar a su empresa e incluye estas secciones:
 
@@ -43,7 +43,7 @@ Microsoft 365 Empresa Premium es una solución rentable que permite a las peque�
 
 ## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>Vídeo: Cinco principales ventajas de Microsoft 365 Empresa Premium
 
-Vea el siguiente vídeo para obtener información sobre cómo Microsoft 365 Empresa Premium ayuda a su negocio a ser más productivo y seguro: <p>
+Vea el siguiente vídeo para ver cómo Microsoft 365 Empresa Premium ayuda a su empresa a ser más productiva y segura: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 

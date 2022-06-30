@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
-ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,13 +22,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Información general sobre el mantenimiento del entorno de su organización
-ms.openlocfilehash: e0cb4affeab63500f1cc38afb635f80f8ffcdf38
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Información general sobre el mantenimiento del entorno de seguridad de la red y los sistemas de la organización y la defensa contra ciberataques.
+ms.openlocfilehash: 5eb393eafc13df5ceb60abbc9fbbb699ffaccc87
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101738"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489591"
 ---
 # <a name="maintain-your-environment"></a>Mantenimiento del entorno
 

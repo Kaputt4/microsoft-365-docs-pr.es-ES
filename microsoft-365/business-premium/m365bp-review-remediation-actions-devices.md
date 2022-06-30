@@ -1,15 +1,13 @@
 ---
 title: Revisar las acciones de corrección en Microsoft 365 Empresa Premium
-description: Vea cómo ver las correcciones que se realizaron automáticamente o que están en espera de aprobación en el Centro de acción
+description: Consulte cómo ver las correcciones que se realizaron automáticamente o que están a la espera de aprobación en el Centro de actividades.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
@@ -17,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893237"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490407"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Revisar las acciones de corrección en Microsoft 365 Empresa Premium
 
@@ -47,7 +45,7 @@ Entre los ejemplos de acciones de corrección se incluyen el envío de un archiv
 
 3. Seleccione la pestaña **Pendiente** para ver y aprobar (o rechazar) las acciones pendientes. Estas acciones pueden surgir de la protección antivirus/antimalware, las investigaciones automatizadas, las actividades de contestación manual o las sesiones de respuesta inmediata.
 
-4. Seleccione la pestaña **Historial** para ver una lista de las acciones completadas. 
+4. Seleccione la pestaña **Historial** para ver una lista de las acciones completadas.
 
 ## <a name="types-of-remediation-actions"></a>Tipos de acciones de corrección
 

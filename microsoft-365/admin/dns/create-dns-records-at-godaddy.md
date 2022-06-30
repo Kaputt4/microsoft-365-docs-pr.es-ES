@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en GoDaddy para Microsoft 365
+title: Conexión de los registros DNS en GoDaddy a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en GoDaddy para Microsoft.
-ms.openlocfilehash: 6cf110b55c76ce6c857f13dcd5b0075b309b654f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 150c97d8764247757e233934c5b2d8a3ea9f5b6c
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780355"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563217"
 ---
-# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Conectar los registros DNS en GoDaddy para Microsoft 365
+# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Conexión de los registros DNS en GoDaddy a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
@@ -40,17 +39,17 @@ Si GoDaddy es su proveedor de hosting DNS, siga los pasos de este artículo para
 
 Tiene dos opciones para configurar registros DNS para el dominio:
 
-- [**Use Dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Conectar dominio para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
+- [**Uso de Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Domain Connect para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
-   OR
+   O
 
 - [**Siga los pasos manuales.**](#create-dns-records-with-manual-setup) Compruebe el dominio siguiendo los pasos manuales que se indican a continuación y elija cuándo y qué registros se van a agregar al registrador de dominios. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Conectar de dominio para comprobar y configurar el dominio
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Domain Connect para comprobar y configurar el dominio
 
 Siga estos pasos para comprobar y configurar automáticamente el dominio de GoDaddy con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a> y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, seleccione **Dominios de configuración** >  y seleccione el dominio que desea configurar.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Seleccione los tres puntos (más acciones) > elija **Iniciar configuración**.
 
@@ -66,7 +65,7 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de GoDa
 
 ## <a name="create-dns-records-with-manual-setup"></a>Creación de registros DNS con configuración manual
 
-Después de agregar estos registros en GoDaddy, el dominio se configurará para trabajar con servicios Microsoft.
+Después de agregar estos registros en GoDaddy, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -112,7 +111,7 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
   
 Para comprobar el registro en Microsoft 365:
   
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -149,7 +148,7 @@ Para comprobar el registro en Microsoft 365:
 
    |Tipo|Host|Points to |Prioridad|TTL|
    |---|---|---|---|---|
-   |MX|@| *\<domain-key\>*.mail.protection.outlook.com  <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
+   |MX|@| *\<domain-key\>*.mail.protection.outlook.com  <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Rellene los valores de la tabla para el registro MX.":::
 
@@ -250,8 +249,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    |Tipo|Servicio|Protocolo|Nombre|Target|Prioridad|Peso|Puerto|TTL|
    |---|---|---|---|---|---|---|---|---|
-   |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1|443|1 hora|
-   |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1|5061|1 hora|
+   |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1 |443|1 hora|
+   |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1 |5061|1 hora|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-values.png" alt-text="Rellene los valores de la tabla para el registro SRV.":::
 

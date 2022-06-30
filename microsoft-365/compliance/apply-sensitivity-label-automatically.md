@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 3124427ff556cd08a56ee83cf8f83bc4dbf8eb72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2726a55b05ff27caee3c9739ad9d8604ce1a29d6
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017972"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556930"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -72,8 +72,8 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Específico para el etiquetado automático para Exchange:
     
     - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
-        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes](ome.md) cuando el espacio empresarial está [habilitado para datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes](ome.md).
+        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos, si no están cifrados, ahora se cifran mediante el [Cifrado de mensajes](ome.md) cuando el inquilino está [habilitado para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-). La configuración de cifrado aplicada se hereda del correo electrónico.
+        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado y estos archivos no están cifrados, ahora se cifran mediante [Mensaje de cifrado](ome.md). La configuración de cifrado se hereda del correo electrónico.
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) de Microsoft Purview que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico que tiene cifrado IRM sin etiqueta se reemplazará por una etiqueta con cualquier configuración de cifrado cuando haya una coincidencia mediante el etiquetado automático.
     - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Si esta etiqueta está configurada para [cifrado](encryption-sensitivity-labels.md), ese cifrado siempre se aplica cuando el remitente es de su organización. De forma predeterminada, ese cifrado no se aplica cuando el remitente está fuera de la organización, pero se puede aplicar configurando **opciones adicionales para el** de correo electrónico y especificando un propietario de Rights Management.
@@ -269,7 +269,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
   - Si las etiquetas que quiere usar para el etiquetado automático están configuradas para usar marcas visuales (encabezados, pies de página, marcas de agua), tenga en cuenta que no se aplican a los documentos.
   - Si las etiquetas aplican [cifrado](encryption-sensitivity-labels.md):
     - Cuando la directiva de etiquetado automático incluye ubicaciones para SharePoint o OneDrive, la etiqueta debe configurarse para la configuración **Asignar permisos ahora** y **El acceso del usuario al contenido expira** debe establecerse en **Nunca**.
-    - Cuando la directiva de etiquetado automático solo es para Exchange, la etiqueta se puede configurar para **Asignar permisos ahora** o **Permitir a los usuarios asignar permisos** (para las opciones No reenviar o Solo cifrar).
+    - Cuando la directiva de etiquetado automático solo es para Exchange, la etiqueta se puede configurar para **Asignar permisos ahora** o **Permitir a los usuarios asignar permisos** (para las opciones No reenviar o Solo cifrar). No se puede aplicar automáticamente una etiqueta [configurada para aplicar la protección S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 ### <a name="learn-about-simulation-mode"></a>Más información sobre el modo de simulación
 
@@ -371,9 +371,11 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
         
         Para **Asignar un propietario de Rights Management**, especifique un único usuario mediante una dirección de correo electrónico que sea propiedad de su organización. No especifique un contacto de correo, un buzón compartido ni ningún tipo de grupo, ya que no se admiten para este rol.
 
-10. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático en el modo de simulación. De lo contrario, seleccione **Dejar directiva desactivada**. A continuación, seleccione **Siguiente**:
-
+10. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. A continuación, decida si quiere activar automáticamente la directiva si no se edita durante 7 días:
+    
     ![Pruebe la directiva de etiquetado automático configurada.](../media/simulation-mode-auto-labeling-wizard.png)
+    
+    Si no está listo para ejecutar la simulación, seleccione **Dejar la directiva desactivada**. 
 
 11. En la página **Resumen**: Revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice la configuración.
 

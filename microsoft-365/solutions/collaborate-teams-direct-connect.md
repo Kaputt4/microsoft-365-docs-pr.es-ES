@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
-ms.openlocfilehash: bbc7735e0c0267db5e69279d7ed81db8c0119e37
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863445"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530497"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
@@ -72,6 +72,9 @@ Como parte de esta configuración, habilitamos la aplicación **Office 365**, qu
 
 > [!NOTE]
 > Los cambios en la configuración de acceso entre inquilinos pueden tardar hasta tres horas y quince minutos en surtir efecto.
+
+> [!NOTE]
+> No se admiten canales compartidos entre nubes comerciales y de GCC.
 
 ### <a name="add-an-organization"></a>Agregar una organización
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en Wix para Microsoft 365
+title: Conexión de los registros DNS en Wix a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en Wix para Microsoft.
-ms.openlocfilehash: 58d7819e006183a35272811ed791d3236f9fc742
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9ae245481173b99a9cb1221ed0650dc0b91feecd
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780332"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563195"
 ---
-# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Conectar los registros DNS en Wix para Microsoft 365
+# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Conexión de los registros DNS en Wix a Microsoft 365
 
 **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
 Si Wix es el proveedor de hospedaje dns, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial en línea, etc.
 
-Después de agregar estos registros en Wix, el dominio se configurará para trabajar con servicios Microsoft.
+Después de agregar estos registros en Wix, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -64,9 +63,9 @@ Antes de usar su dominio con Microsoft, debemos asegurarnos de que lo posee. La 
 
    |Nombre de host|TXT Value|TTL|
    |---|---|---|
-   |Rellenado automáticamente (deje en blanco)|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora|
+   |Rellenado automáticamente (deje en blanco)|MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora|
 
-5. **SeleccioneGuardar**.
+5. Seleccione **Guardar**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Seleccione Guardar.":::
 
@@ -77,7 +76,7 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -191,8 +190,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    |Servicio|Protocolo|Nombre de host|Peso|Puerto|Target|Prioridad|TTL|
    |---|---|---|---|---|---|---|---|
-   |sip|tls|Rellenado automáticamente|1|443|sipdir.online.lync.com|100|1 Hour|
-   |sipfed|tcp|Rellenado automáticamente|1|5061|sipfed.online.lync.com|100|1 Hour|
+   |sip|tls|Rellenado automáticamente|1 |443|sipdir.online.lync.com|100|1 Hour|
+   |sipfed|tcp|Rellenado automáticamente|1 |5061|sipfed.online.lync.com|100|1 Hour|
 
 1. Seleccione **Guardar**.
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en web.com a Microsoft 365
+title: Conexión de los registros DNS en web.com a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en web.com para Microsoft.
-ms.openlocfilehash: 621364bdc0b2e9a2868084f0cb0b8eb8ef61c5b0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: d247ee24c107318289dfbca0ee741d5a04725d25
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780321"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563239"
 ---
-# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Conectar los registros DNS en web.com a Microsoft 365
+# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Conexión de los registros DNS en web.com a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
 Si web.com es el proveedor de hospedaje dns, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial En línea, etc.
 
-Después de agregar estos registros en web.com, el dominio se configurará para trabajar con servicios Microsoft.
+Después de agregar estos registros en web.com, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -101,7 +100,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
     |Se nombra|Valor TXT|TTL|
     |---|---|:----|
-    |@|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora|
+    |@|MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora|
 
 1. Seleccione **AGREGAR**.
 
@@ -111,7 +110,7 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -150,7 +149,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Hace referencia a|Servidor de correo|Prioridad|TTL|
     |---|---|---|---|
-    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga el del *\<domain-key\>* Centro de administración de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> 1|1 Hour|
+    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga el del *\<domain-key\>* Centro de administración de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> 1 |1 Hour|
 
 1. Seleccione **AGREGAR**.
 
@@ -261,8 +260,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Servicio|Protocolo|Peso|Puerto|Target|Prioridad|TTL|
     |---|---|---|---|---|---|---|---|
-    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 hora|
-    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 Hour|
+    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 |1 hora|
+    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 |1 Hour|
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="Escriba o copie y pegue los valores de la tabla en la ventana de registro SRV.":::
 

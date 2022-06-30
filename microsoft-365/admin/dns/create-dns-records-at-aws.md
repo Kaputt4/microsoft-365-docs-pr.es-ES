@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en Amazon Web Services (AWS) para Microsoft 365
+title: Conexión de los registros DNS en Amazon Web Services (AWS) a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Aprenda a comprobar su dominio y a configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Amazon Web Services (AWS) para Microsoft.
-ms.openlocfilehash: d194e425485a45d2c3dc949fc85e74bc957932fb
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780663"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563261"
 ---
-# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Conectar los registros DNS en Amazon Web Services (AWS) para Microsoft 365
+# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Conexión de los registros DNS en Amazon Web Services (AWS) a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
-Si AWS es su proveedor de hospedaje de DNS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para el correo electrónico, Skype Online for Business, etc.
+Si AWS es su proveedor de hospedaje dns, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Online para empresas, etc.
 
-Después de agregar estos registros en AWS, el dominio se configurará para trabajar con servicios Microsoft.
+Después de agregar estos registros a AWS, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -78,7 +77,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
     |Nombre del registro|Tipo de registro|Valor|TTL (Seconds)|Directiva de enrutamiento|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)|TXT: se usa para comprobar los remitentes de correo electrónico|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|300|Simple|
+    |(Leave this field empty.)|TXT: se usa para comprobar los remitentes de correo electrónico|MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|300|Simple|
 
 1. Seleccione **Crear registros**.
 
@@ -90,7 +89,7 @@ Ahora que ha agregado el registro en el sitio del registrador de dominios, volve
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -103,7 +102,7 @@ Para comprobar el registro en Microsoft 365:
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>Agregue un registro MX para que el correo electrónico del dominio llegue a Microsoft 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>Agregue un registro MX para que el correo electrónico de su dominio llegue a Microsoft 365.
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
 
@@ -144,7 +143,7 @@ Para comprobar el registro en Microsoft 365:
 
 1. Si hay otros registros MX, quítelos seleccionando el registro y, a continuación, seleccionando **Eliminar**.
 
-## <a name="add-the-cname-record-required-for-microsoft-365"></a>Agregue el registro CNAME necesario para Microsoft 365
+## <a name="add-the-cname-record-required-for-microsoft-365"></a>Agregar el registro CNAME necesario para Microsoft 365
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
 
@@ -183,7 +182,7 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un *único* registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas [herramientas de validación de SPF](../setup/domains-faq.yml).
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un *único* registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.yml).
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
 

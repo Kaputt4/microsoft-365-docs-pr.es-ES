@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: f46b142755b02b069a17b189b465779654f67412
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078423"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556798"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -64,6 +64,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |Funcionalidad |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Compatibilidad con varios idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | En revisión |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a nuevos documentos                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a documentos existentes | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider) | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Requerir una justificación para cambiar una etiqueta.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+  <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -90,6 +91,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |Funcionalidad |Outlook para Windows |Outlook para Mac |Outlook en iOS |Outlook en Android |Outlook en la Web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
+|[Compatibilidad con varios idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Sí |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Requerir una justificación para cambiar una etiqueta.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Proporcionar un vínculo de ayuda a una página de ayuda personalizada.](sensitivity-labels.md#what-label-policies-can-do)                       | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
@@ -104,7 +106,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
 |[Compatibilidad con PDF](#pdf-support) | En revisión|  En revisión | En revisión | En revisión | En revisión |
-|
+|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En revisión | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2208+ | Implementación: 4.2203+ | En revisión |
 
 **Notas al pie:**
 
@@ -404,6 +406,34 @@ Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: s
 > 
 > Los valores elegidos para esta configuración de PowerShell se reflejan en la configuración de directivas de etiquetas en el portal de cumplimiento de Microsoft Purview y funcionan automáticamente para las aplicaciones de Outlook que admiten esta configuración. El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de etiquetado unificado de Azure Information Protection.
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Configurar una etiqueta para aplicar la protección S/MIME en Outlook
+
+> [!NOTE]
+> Esta funcionalidad se está implementando actualmente para el etiquetado integrado. Identifique las versiones mínimas de Outlook que admiten esta característica mediante la [tabla de capacidades de Outlook](#sensitivity-label-capabilities-in-outlook) en esta página y la fila **Aplicar protección S/MIME**.
+> 
+> Si configura una etiqueta para aplicar la protección S/MIME, pero la aplicación de Outlook aún no la admite, la etiqueta se sigue mostrando en Outlook y se puede aplicar, pero se omite la configuración de S/MIME. No podrá seleccionar esta etiqueta para las directivas de etiquetado automático de Exchange.
+
+Esta configuración no está disponible en el Centro de cumplimiento de Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el cmd [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a Office 365 Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+Use esta configuración solo cuando tenga una [implementación S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) en funcionamiento y quiera que una etiqueta aplique automáticamente este método de protección para los correos electrónicos en lugar de la [protección predeterminada que usa el cifrado de la administración de derechos de Azure Information Protection](encryption-sensitivity-labels.md). La protección resultante será la misma que cuando un usuario selecciona manualmente las opciones S/MIME de Outlook.
+
+|Configuración  |Clave o valor de configuración avanzada |
+|---------|---------|
+|**Firma digital S/MIME** | SMimeSign="True" |
+|**Cifrado S/MIME** | SMimeEncrypt="True"|
+
+La etiqueta que configure para estas opciones no tiene que configurarse para el cifrado en el portal de cumplimiento. Pero si es así, la protección S/MIME reemplaza el cifrado de Rights Management solo en Outlook. Para otras aplicaciones, la etiqueta aplica la configuración de cifrado especificada en el portal de cumplimiento de Microsoft Purview.
+
+Comandos de PowerShell de ejemplo, donde el GUID de la etiqueta de confidencialidad es **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeSign="True"}
+
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeEncrypt="True"}
+```
+
+Para obtener más ayuda sobre cómo especificar la configuración avanzada de PowerShell, consulte [Sugerencias de PowerShell para especificar la configuración avanzada](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## <a name="pdf-support"></a>Compatibilidad con PDF
 
 Para el etiquetado integrado, use las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para identificar las versiones mínimas admitidas. El cliente de etiquetado unificado de Azure Information Protection no admite PDF en aplicaciones de Office.
@@ -428,14 +458,13 @@ Escenarios de PDF no admitidos:
 
 - Formato y cifrado PDF/A
     
-     Este formato PDF diseñado para el archivado a largo plazo no se admite cuando la etiqueta aplica cifrado y evitará que los usuarios conviertan documentos de Office en PDF.
+     Este formato PDF diseñado para el archivado a largo plazo no se admite cuando la etiqueta aplica cifrado y evitará que los usuarios conviertan documentos de Office en PDF. Para obtener información de configuración, consulte la documentación de directiva de grupo para [exigir el cumplimiento de PDF con ISO 19005-1 (PDF/A).](https://admx.help/?Category=Office2016&Policy=office16.Office.Microsoft.Policies.Windows::L_EnforcePDFcompliancewithISO190051PDFA)
     
 - Protección con contraseña y cifrado
     
     La opción **Archivo** > **Información** > **Proteger documento** > **Cifrar con contraseña** no se admite cuando la etiqueta del documento aplica cifrado. En este escenario, la opción Cifrar con contraseña deja de estar disponible para los usuarios.
 
 Para más información sobre esta funcionalidad, vea el anuncio [Aplicar etiquetas de confidencialidad a archivos PDF creados con aplicaciones de Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
-
 
 ## <a name="auditing-labeling-activities"></a>Actividades de etiquetado de auditoría
 

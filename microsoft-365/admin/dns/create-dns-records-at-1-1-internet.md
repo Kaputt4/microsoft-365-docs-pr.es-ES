@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en IONOS de 1&1 a Microsoft 365
+title: Conexión de los registros DNS en IONOS por 1&1 a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en 1&1 IONOS para Microsoft.
-ms.openlocfilehash: 8afdfed0998a262b1df4c95a63e9086e4f71e5b6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780685"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563437"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Conectar los registros DNS en IONOS de 1&1 a Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Conexión de los registros DNS en IONOS por 1&1 a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
@@ -39,17 +38,17 @@ Si IONOS de 1&1 es el proveedor de hospedaje dns, siga los pasos de este artícu
 
 Tiene dos opciones para configurar registros DNS para el dominio:
 
-- [**Use Dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Conectar dominio para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
+- [**Uso de Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, use los pasos de Domain Connect para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
-    OR
+    O
 
 - [**Siga los pasos manuales.**](#create-dns-records-with-manual-setup) Compruebe el dominio siguiendo los pasos manuales que se indican a continuación y elija cuándo y qué registros se van a agregar al registrador de dominios. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Conectar de dominio para comprobar y configurar el dominio
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Uso de Domain Connect para comprobar y configurar el dominio
 
 Siga estos pasos para comprobar y configurar automáticamente el dominio IONOS by 1&1 con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a> y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, seleccione **Dominios de configuración** >  y seleccione el dominio que desea configurar.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Seleccione el dominio en Microsoft 365.":::
 
@@ -69,7 +68,7 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio IONOS b
 
 ## <a name="create-dns-records-with-manual-setup"></a>Creación de registros DNS con configuración manual
 
-Después de agregar estos registros a IONOS por 1&1, el dominio se configurará para trabajar con servicios Microsoft.
+Después de agregar estos registros a IONOS por 1&1, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!CAUTION]
 > Tenga en cuenta que IONOS de 1&1 no permite que un dominio tenga un registro MX y un registro CNAME de detección automática de nivel superior. Esto limita las formas en que puede configurar Exchange Online para Microsoft. Hay una solución alternativa, pero se recomienda emplearla **solo** si ya tiene experiencia con la creación de subdominios en IONOS por 1&1.
@@ -119,7 +118,7 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, vol
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
@@ -159,7 +158,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Nombre de host|Points to |Prioridad|TTL|
     |---|---|---|---|
-    |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  NOTA: Obtenga su \<domain-key\> de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
+    |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  NOTA: Obtenga su \<domain-key\> de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
 
 1. Seleccione **Guardar**.
 
@@ -219,7 +218,7 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un  *único*  registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas [herramientas de validación de SPF](../setup/domains-faq.yml).
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un  *único*  registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.yml).
 
 > [!NOTE]
 > Si se ha registrado con 1und1.de, [inicie sesión aquí](https://go.microsoft.com/fwlink/?linkid=859152).
@@ -349,8 +348,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Servicio|Protocolo|Nombre de host|Points to |Prioridad|Peso|Puerto|TTL|
     |---|---|---|---|---|---|---|---|---|
-    |SRV|_sip|_tls|(Deje este campo en blanco).|sipdir.online.lync.com|100|1|443|1 hora|
-    |SRV|_sipfederationtls|tcp|(Deje este campo en blanco).|sipfed.online.lync.com|100|1|5061|1 hora|
+    |SRV|_sip|_tls|(Deje este campo en blanco).|sipdir.online.lync.com|100|1 |443|1 hora|
+    |SRV|_sipfederationtls|tcp|(Deje este campo en blanco).|sipfed.online.lync.com|100|1 |5061|1 hora|
 
 1. Seleccione **Guardar**.
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar los registros DNS en 123-reg.co.uk a Microsoft 365
+title: Conexión de los registros DNS en 123-reg.co.uk a Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en 123-reg.co.uk microsoft.
-ms.openlocfilehash: 262aa3757e6dde90d328f596f43b20952d3080b0
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en 123-reg.co.uk para Microsoft.
+ms.openlocfilehash: 97a00c046f467dd4ced4c63a4cbfc8114d06d2dd
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568146"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563415"
 ---
-# <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Conectar los registros DNS en 123-reg.co.uk a Microsoft 365
+# <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Conexión de los registros DNS en 123-reg.co.uk a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
 Si 123-reg.co.uk es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
 
-Después de agregar estos registros en 123-reg.co.uk, el dominio se configurará para que funcione con servicios Microsoft.
+Después de agregar estos registros en 123-reg.co.uk, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -49,7 +48,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
-2. Seleccione **Dominios** y, en la página Introducción al nombre de dominio, seleccione el nombre del dominio que desea comprobar o vaya al Panel de control.
+2. Seleccione **Dominios** y, en la página Información general del nombre de dominio, seleccione el nombre del dominio que desea comprobar o vaya al panel de control.
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el dominio que desea comprobar.":::
 
@@ -57,17 +56,17 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+4. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
-5. En el **cuadro** Tipo del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+5. En el cuadro **Tipo** del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|Destination TXT/SPF|
     |---|---|---|
-    |@|TXT/SPF|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
+    |@|TXT/SPF|MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF en la lista desplegable y rellene los valores.":::
 
 6. Seleccione **Agregar**.
 
@@ -75,15 +74,15 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
    Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
 
-Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará una búsqueda para el registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
+Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará una búsqueda del registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
+1. En el centro de administración, vaya a **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar configuración.":::
 
 1. Seleccione **Continuar**.
 
@@ -104,17 +103,17 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+4. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
-5. En el **cuadro** Tipo del nuevo registro, elija **MX** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+5. En el cuadro **Tipo** del nuevo registro, elija **MX** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|Prioridad|MX de destino|
     |---|---|---|---|
-    |@|MX|1 <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|*\<domain-key\>*.mail.protection.outlook.com. <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga la \<domain-key\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
+    |@|MX|1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|*\<domain-key\>*.mail.protection.outlook.com. <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga la \<domain-key\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="Seleccione el tipo MX de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="Seleccione el tipo MX en la lista desplegable y rellene los valores.":::
 
 6. Seleccione **Agregar**.
 
@@ -136,19 +135,19 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+4. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
 5. Agregue el registro CNAME.
 
-    En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+    En el cuadro **Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|CNAME de destino|
     |---|---|---|
     |autodiscover|CNAME|autodiscover.outlook.com. <br/> **Este valor DEBE terminar en punto (.)**|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME en la lista desplegable y rellene los valores.":::
 
 6. Seleccione **Agregar**.
 
@@ -157,7 +156,7 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro SPF para su dominio, no cree uno nuevo para Microsfot. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml).
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro SPF para su dominio, no cree uno nuevo para Microsfot. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un *único* registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml).
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
@@ -169,23 +168,23 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+4. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
-5. En el **cuadro** Tipo del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+5. En el cuadro **Tipo** del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|Destination TXT/SPF|
     |---|---|---|
     |@|TXT/SPF|v=spf1 include:spf.protection.outlook.com -all <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF en la lista desplegable y rellene los valores.":::
 
 6. Seleccione **Agregar**.
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea, como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
@@ -199,20 +198,20 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+4. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
 5. Agregue el primero de los dos registros SRV:
 
-   En el **cuadro** Tipo del nuevo registro, elija **SRV** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+   En el cuadro **Tipo** del nuevo registro, elija **SRV** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|Prioridad|TTL|SRV de destino|
     |---|---|---|---|---|
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Este valor DEBE terminar en punto (.)** <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Este valor DEBE terminar en punto (.)** <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF en la lista desplegable y rellene los valores.":::
 
 6. Seleccione **Agregar**.
 
@@ -235,20 +234,20 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-1. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+1. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
 1. Agregue el primer registro CNAME.
 
-    En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+    En el cuadro **Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
     |Nombre de host|Tipo|CNAME de destino|
     |---|---|---|
     |sip|CNAME|sipdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|
     |lyncdiscover|CNAME|webdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME en la lista desplegable y rellene los valores.":::
 
 1. Seleccione **Agregar**.
 
@@ -259,11 +258,11 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Mobile Administración de dispositivos para Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
-Este servicio le ayuda a proteger y administrar de forma remota dispositivos móviles que se conectan a su dominio. La Administración de dispositivos móvil necesita dos registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
+Este servicio le ayuda a proteger y administrar de forma remota los dispositivos móviles que se conectan a su dominio. Mobile Administración de dispositivos necesita dos registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
 
-### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para mobile Administración de dispositivos
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para Mobile Administración de dispositivos
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
@@ -275,20 +274,20 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-1. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado.
+1. En la página Administrar el DNS, seleccione la pestaña **DNS avanzado** .
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
 
 1. Agregue el primer registro CNAME.
 
-    En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+    En el cuadro **Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
 
    |Nombre de host|Tipo|CNAME de destino|
    |---|---|---|
    |enterpriseregistration|CNAME|enterpriseregistration.windows.net. <br/> **Este valor DEBE terminar en punto (.)**|
    |enterpriseenrollment|CNAME|enterpriseenrollment.manage.microsoft.com. <br/> **Este valor DEBE terminar en punto (.).**|
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME en la lista desplegable y rellene los valores.":::
 
 1. Seleccione **Agregar**.
 
