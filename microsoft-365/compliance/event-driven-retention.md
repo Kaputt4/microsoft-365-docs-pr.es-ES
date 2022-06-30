@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 380a95a6b4d6fa6585d0912b675d65032cd8258b
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285114"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530868"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
@@ -202,9 +202,16 @@ Puede usar un script de PowerShell para automatizar la retención basada en even
 - [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
+para ayudar a identificar otros cmdlets para crear etiquetas de retención y sus directivas, consulte [ Cmdlets de PowerShell para las directivas de retención y las etiquetas de retención](retention-cmdlets.md).
+
 ## <a name="automate-events-by-using-a-rest-api"></a>Automatizar eventos mediante una API de REST
 
 Puede usar una API de REST para crear automáticamente eventos que desencadenen el inicio del tiempo de retención.
+
+> [!NOTE]
+> Ahora que se está implementando en versión preliminar, también puede usar la [API de Microsoft Graph para la administración de registros](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) para crear el evento y también crear tipos de eventos y etiquetas de retención.
+> 
+> Le recomendamos que pruebe estas API de Graph, ya que las API de REST de esta sección pronto quedarán en desuso y dejarán de funcionar.
 
 Una API REST es un punto de conexión de servicio que admite conjuntos de operaciones HTTP (métodos), que proporcionan acceso de creación, recuperación, actualización o eliminación a los recursos del servicio. Para obtener más información, consulte [Componentes de una solicitud o respuesta de API de REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Mediante el uso de la API de REST de Microsoft 365, los eventos se pueden crear y recuperar mediante los métodos POST y GET.
 

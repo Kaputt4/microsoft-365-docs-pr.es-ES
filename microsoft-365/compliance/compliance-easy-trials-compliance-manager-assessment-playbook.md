@@ -1,5 +1,5 @@
 ---
-title: Cuaderno de estrategias de evaluaciones premium del Administrador de cumplimiento de Microsoft
+title: Cuaderno de estrategias de prueba de evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Cuaderno de estrategias de evaluaciones premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Cuaderno de estrategias de prueba de evaluaciones premium del Administrador de cumplimiento de Microsoft Purview.
+ms.custom: trial-playbook
+ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759863"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531020"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft
+# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
 
-Le damos la bienvenida al cuaderno de estrategias de la evaluación premium del Administrador de cumplimiento de Microsoft.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Le damos la bienvenida al cuaderno de estrategias de prueba de la evaluación premium del Administrador de cumplimiento de Microsoft.
 
 Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días enseñándole a usar el conjunto completo de plantillas de evaluación premium (complemento).
 
@@ -61,7 +64,7 @@ El Administrador de cumplimiento también ofrece más de 300 plantillas normativ
 
 Las licencias de prueba le permiten usar 25 plantillas premium durante 90 días. Podrá elegir entre una lista de más de 300 plantillas premium. No es necesario seleccionar las 25 plantillas a la vez. Una vez seleccionadas, las plantillas con licencia están disponibles para su uso en un plazo de 4 horas posteriores a la obtención de la licencia de prueba.
 
-Hay dos maneras de habilitar la prueba del complemento de evaluación premium: a través del panel del Administrador de cumplimiento o a través de la prueba de cumplimiento de Microsoft 365.
+Hay dos maneras de habilitar la prueba del complemento de evaluación premium: a través del panel del Administrador de cumplimiento o a través de la prueba de Microsoft Purview.
 
 ### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>Habilitar la prueba a través del panel del Administrador de cumplimiento
 

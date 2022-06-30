@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 764d1c84212e240332449a1a107042a83be01b32
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 912254e5827815f796560bc6979856f4545b0ae9
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554365"
+ms.locfileid: "66556820"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -119,7 +119,7 @@ Para copiar una directiva y crear una nueva, siga estos pasos:
 
 ## <a name="policy-activity-detection"></a>Detección de actividad de directiva
 
-Las comunicaciones se examinan cada hora a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de contenido inadecuado a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada hora a partir de cuando se creó la directiva. La edición de una directiva no cambia esta vez. Para ver la fecha y hora del último examen de una directiva, vaya a la columna Último examen de directiva de la página Directiva. Después de crear una nueva directiva, puede tardar hasta una hora en ver la primera fecha y hora de examen de directivas. La fecha y hora del último examen se convierten en la zona horaria del sistema local.
+Las comunicaciones se examinan cada hora a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de contenido inadecuado a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada hora a partir de cuando se creó la directiva. La edición de una directiva no cambia esta vez. Para ver la fecha y hora del último examen de una directiva, vaya a la columna *Último examen de directiva* de la página **Directiva** . Después de crear una nueva directiva, puede tardar hasta una hora en ver la primera fecha y hora de examen de directivas. La fecha y hora del último examen se convierten en la zona horaria del sistema local.
 
 En la tabla siguiente se describe el tiempo de detección de los tipos de contenido admitidos:
 
@@ -138,7 +138,7 @@ En la tabla siguiente se describe el tiempo de detección de los tipos de conten
 
 En el caso de las directivas existentes creadas antes del 31 de julio de 2022, puede tardar hasta 24 horas en detectar mensajes y revisar alertas que coincidan con estas directivas. Para reducir la latencia de estas directivas, [copie la directiva existente](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) y cree una nueva a partir de la copia. Si no necesita conservar ningún dato de la directiva anterior, se puede pausar o eliminar.
 
-Para identificar una directiva anterior, revise la columna Último examen de directiva en la página Directiva. Las directivas anteriores mostrarán una fecha completa para el examen, mientras que las directivas creadas después del 31 de julio de 2022 se mostrarán hace una hora para el examen. Otra opción para reducir la latencia es esperar hasta el 31 de diciembre de 2022 para que las directivas existentes se migren automáticamente a los nuevos criterios de detección.
+Para identificar una directiva anterior, revise *la columna Último examen de directiva* en la página **Directiva** . Las directivas anteriores mostrarán una fecha completa para el examen, mientras que las directivas creadas después del 31 de julio de 2022 se mostrarán *hace una hora* para el examen. Otra opción para reducir la latencia es esperar hasta el 31 de diciembre de 2022 para que las directivas existentes se migren automáticamente a los nuevos criterios de detección.
 
 ## <a name="storage-limit-notification-preview"></a>Notificación de límite de almacenamiento (versión preliminar)
 

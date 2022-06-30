@@ -44,32 +44,31 @@
 #### [Usar PowerShell, WMI o MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Escenarios de migración de Server](server-migration.md)
 
-## [Configurar e incorporar dispositivos]()
+## [Incorporar y configurar dispositivos]()
 ### [Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión](onboard-configure.md)
-
-
-### [Microsoft Defender para punto de conexión en Windows Server]()
-#### [Herramientas y métodos de incorporación para puntos de conexión de Windows](configure-endpoints.md)
-#### [Incorporar dispositivos Windows y servidores de Windows]()
-
-##### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
-
-##### [Incorporar dispositivos Windows y servidores de Windows]()
-###### [Incorporar Windows Server 2012 R2, 2016, Canal semestral, 2019 y 2022](configure-server-endpoints.md)
-###### [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
-###### [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
-###### [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
-###### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-###### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-
-#### [Integración con Microsoft Defender for Cloud](azure-server-integration.md)
-
+### [Incorporación del cliente Windows](onboard-windows-client.md)
+#### [Incorporar al cliente Windows mediante Intune](configure-endpoints-mdm.md)
+#### [Incorporar dispositivos del cliente Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [Incorporar al cliente Windows mediante directiva de grupo](configure-endpoints-gp.md)
+#### [Incorporar al cliente Windows mediante un script local](configure-endpoints-script.md)
+#### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
+#### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
-#### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
-#### [Ejecutar ataques simulados en dispositivos](attack-simulations.md)
-#### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
-#### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
+#### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
+
+
+
+### [Incorporar Windows Server](onboard-windows-server.md)
+#### [Incorporar Windows Server 2012 R2, 2016, Canal semestral, 2019 y 2022](configure-server-endpoints.md)
+#### [Incorporar Windows Server con Configuration Manager](configure-endpoints-sccm.md)
+#### [Incorporación de dispositivos Windows Server con directiva de grupo](configure-endpoints-gp.md)
+#### [Incorporar Windows Server mediante un script local](configure-endpoints-script.md)
+#### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [Microsoft Defender para punto de conexión en otros sistemas operativos]()
 #### [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [Preguntas más frecuentes y solución de problemas](ios-troubleshoot.md)
 
 ###### [Privacidad](ios-privacy.md)
+
+
+
+### [Integración con Microsoft Defender for Cloud](azure-server-integration.md)
+### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
+### [Ejecutar ataques simulados en dispositivos](attack-simulations.md)
+### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
+### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
 
 ### [Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](security-config-management.md)
 
