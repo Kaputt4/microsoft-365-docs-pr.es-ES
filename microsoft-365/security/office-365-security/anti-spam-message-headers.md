@@ -18,12 +18,12 @@ description: Los administradores pueden obtener información sobre los campos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d9c98446b7963581654c5920c30202f547ce271
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 592a583b572c134dd4ecd33dd18f392f6e9b36ce
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089031"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493073"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
@@ -63,7 +63,7 @@ Los campos y valores individuales se describen en la siguiente tabla.
 |Campo|Description|
 |---|---|
 |`ARC`|El protocolo `ARC` tiene los campos siguientes: <ul><li>`AAR`: registra el contenido del encabezado **Authentication-results** de DMARC.</li><li>`AMS`: incluye las firmas criptográficas del mensaje.</li><li>`AS`: incluye las firmas criptográficas de los encabezados del mensaje. Este campo contiene una etiqueta de una validación de cadena denominada `"cv="`, que incluye el resultado de la validación de la cadena como **none**, **pass**, o **fail**.</li></ul>|
-|`CAT:`|La categoría de la directiva de protección que se aplica al mensaje: <ul><li>`BULK`: Masivo</li><li>`DIMP`: Suplantación de dominio</li><li>`GIMP`: [Suplantación basada en la inteligencia de buzones](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` o `HPHISH`: Phishing de alta confianza</li><li>`HSPM`: Correo no deseado de alta confianza</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Suplantación electrónica</li><li>`UIMP`: Suplantación de usuario</li><li>`AMP`: Antimalware</li><li>`SAP`: Datos adjuntos seguros</li><li>`OSPM`: Correo no deseado saliente</li></ul> <p> Un mensaje entrante puede aparecer marcado por múltiples formas de protección y múltiples análisis de detección. Las directivas tienen diferentes prioridades y se aplica primero la que tenga la prioridad más alta. Para obtener más información, consulte [Qué directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico](how-policies-and-protections-are-combined.md).|
+|`CAT:`|La categoría de la directiva de protección que se aplica al mensaje: <ul><li>`BULK`: Masivo</li><li>`DIMP`: Suplantación de dominio</li><li>`GIMP`: [Suplantación basada en la inteligencia de buzones](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` o `HPHISH`: suplantación de identidad de alta confianza</li><li>`HSPM`: Correo no deseado de alta confianza</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Suplantación electrónica</li><li>`UIMP`: Suplantación de usuario</li><li>`AMP`: Antimalware</li><li>`SAP`: Datos adjuntos seguros</li><li>`OSPM`: Correo no deseado saliente</li></ul> <p> Un mensaje entrante puede aparecer marcado por múltiples formas de protección y múltiples análisis de detección. Las directivas tienen diferentes prioridades y se aplica primero la que tenga la prioridad más alta. Para obtener más información, consulte [Qué directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|La dirección IP de conexión. Puede usar esta dirección IP en la Lista de direcciones IP permitidas o en la Lista de direcciones IP bloqueadas. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).|
 |`CTRY`|El país o región de origen están determinados por la dirección IP de conexión, que puede no ser la misma que la dirección IP de envío original.|
 |`H:[helostring]`|Cadenas HELO o EHLO del servidor de correo de conexión.|

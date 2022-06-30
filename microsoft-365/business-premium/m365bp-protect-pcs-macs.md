@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o sus propios dispositivos (BYOD) frente a ciberataques con Microsoft 365 Empresa Premium. Cómo configurar la ciberseguridad para equipos Windows y Mac.
-ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 32f491e1a124bacf50f0efa553f6b141c08409b9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393250"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489132"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows no administrados en Microsoft 365 para la Empresa Premium
 
-Este objetivo se centra en la creación de protección para los equipos Mac y Windows 10 no administrados que no estén inscritos en Microsoft Intune. Es muy probable que su pequeña empresa o campaña tenga personal que lleve sus propios dispositivos (BYOD) y estos dispositivos no estén administrados. Los BYOD incluyen teléfonos, tabletas y PC de propiedad personal. 
+Este objetivo se centra en la creación de protección para los equipos Mac y Windows 10 no administrados que no estén inscritos en Microsoft Intune. Es muy probable que su pequeña empresa o campaña tenga personal que lleve sus propios dispositivos (BYOD) y estos dispositivos no estén administrados. Los BYOD incluyen teléfonos, tabletas y PC de propiedad personal.
 
 >[!NOTE]
 >Cada usuario BYOD debe instalar y ejecutar la aplicación Portal de empresa de Intune para inscribir estos dispositivos y recibir acceso a los recursos de la empresa.
@@ -57,6 +57,8 @@ Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, e
 **Activar el Firewall de Windows**<p>
 Siempre debería ejecutar el Firewall de Windows aunque tenga otro firewall activado. Desactivar el Firewall de Windows puede hacer que su dispositivo (y la red, si tiene una) sea más vulnerable al acceso no autorizado. Consulte [Activar o desactivar Firewall de Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones.
 
+## <a name="next-mission"></a>Próxima misión
+
 ¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
@@ -75,4 +77,3 @@ Use la configuración de firewall para impedir contactos no deseados con su Mac 
 ## <a name="next-mission"></a>Próxima misión
 
 ¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
-

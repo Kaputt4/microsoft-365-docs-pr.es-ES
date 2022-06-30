@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948361"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490927"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -153,7 +153,7 @@ Es importante tener en cuenta que, para las ubicaciones de SharePoint y OneDrive
 
 ## <a name="set-up-web-only-access-for-guests"></a>Establezca que los invitados solo puedan acceder a través de la web
 
-Puede limitar sus zonas vulnerables a un ataque y facilitar las tareas de administración si obliga a los invitados a acceder a sus equipos, sitios y archivos a través de un navegador web exclusivamente.
+Puede requerir que los invitados accedan a sus equipos, sitios y archivos solo mediante un explorador web. Esto reduce la posibilidad de que descarguen archivos confidenciales y los dejen en un dispositivo no administrado. Esto también es útil cuando se comparte con entornos que usan dispositivos compartidos.
 
 Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de acceso condicional de Azure AD. En el caso de SharePoint, se configura en el Centro de administración de SharePoint. (También puede [usar etiquetas de confidencialidad para restringir el acceso de invitados a solo web](../compliance/sensitivity-labels-teams-groups-sites.md))
 
