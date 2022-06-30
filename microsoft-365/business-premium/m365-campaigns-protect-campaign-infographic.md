@@ -2,8 +2,8 @@
 title: 'Infografía: ayudar a proteger la campaña'
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Qué puede hacer para ayudar a proteger la campaña frente a ataques digitales.
-ms.openlocfilehash: 508387313ebe0cb7255073f73d7b646f2fa12a2f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Lo que puede hacer para ayudar a proteger su campaña frente a ciberataques digitales y otras amenazas de seguridad.
+ms.openlocfilehash: a280642f4d52b7dc4080aaca5680efe610b1c090
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099991"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491368"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografía: ayuda para protegerse a sí mismo y a la campaña frente a amenazas digitales
 

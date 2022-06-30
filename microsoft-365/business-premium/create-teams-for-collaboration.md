@@ -2,11 +2,11 @@
 title: Uso de Microsoft Teams para la colaboración
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,34 +23,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un equipo en Microsoft Teams para que colabore en su pequeña empresa o campaña.
-ms.openlocfilehash: ef9c435cbaa7a862164c39244bdb2a865845fa58
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100167"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489656"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>Uso de Microsoft Teams para la colaboración
 
-Microsoft Teams es una aplicación de colaboración que ayuda a su personal a organizarse y mantener conversaciones desde cualquier dispositivo. Puede usar Microsoft Teams para mantener conversaciones instantáneas con miembros de su personal o invitados externos a su organización. También puede realizar llamadas telefónicas, organizar reuniones y compartir archivos.
+Microsoft Teams es una aplicación de colaboración que ayuda a los miembros de la organización a usar cualquier dispositivo para mantenerse organizados y conversar. Puede usar Microsoft Teams para mantener conversaciones inmediatas con miembros de su personal o invitados externos a su organización. También puede realizar llamadas telefónicas, organizar reuniones y compartir archivos.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 1. Crear equipos privados para compartir información confidencial.
 
-2. Cree un equipo de toda la organización para la comunicación con todos los usuarios de la organización.
+1. Cree un equipo de toda la organización para la comunicación con todos los usuarios de la organización.
 
-3. Cree equipos para proyectos específicos y aplique la cantidad adecuada de protección en función de quién deberá incluirse.
+1. Cree equipos para proyectos específicos y aplique la cantidad adecuada de protección en función de quién deberá incluirse.
 
-4. Cree equipos específicos para la comunicación con asociados externos con el fin de mantenerlos separados de cualquier elemento confidencial para su empresa.
+1. Cree equipos específicos para la comunicación con asociados externos con el fin de mantenerlos separados de cualquier elemento confidencial para su empresa.
 
 Por ejemplo, una empresa, un bufete de abogados o una clínica médica podrían crear los siguientes equipos:
 
-1. **Un equipo de la empresa, del bufete o de la clínica:** esto para que todo el mundo lo utilice para las comunicaciones y el trabajo diario en toda la empresa. Puede usar este equipo para publicar anuncios o compartir información de interés para toda su bufete o clínica.
+1. **Un equipo de la empresa, del bufete o de la clínica:** para que todos lo usen para las comunicaciones y el trabajo diario en toda la empresa. Puede usar este equipo para publicar anuncios o compartir información de interés para toda su bufete o clínica.
 
-2. **Equipos individuales:** configurar equipos de grupos más pequeños para colaborar en su trabajo diario.
+1. **Equipos individuales:** configurar equipos de grupos más pequeños para colaborar en su trabajo diario.
 
-3. **Un equipo o equipos de comunicación externa:** coordine con sus proveedores, socios o clientes sin permitirles tener acceso a cualquier cosa confidencial. Configure diferentes canales para grupos específicos.
+1. **Un equipo o equipos de comunicación externa:** coordine con sus proveedores, socios o clientes sin permitirles tener acceso a cualquier cosa confidencial. Configure diferentes canales para grupos específicos.
 
 ![Diagrama de una ventana de Microsoft Teams con tres equipos independientes para permitir una comunicación y colaboración seguras dentro de una empresa.](../media/m365-democracy-teams-business-collab.png)
 
@@ -106,7 +106,7 @@ Obtenga más información sobre Microsoft Teams en [Documentación técnica de M
 
 ## <a name="admin-settings"></a>Configuración de administrador
 
-> [!Note]
+> [!NOTE]
 > Debe ser administrador para crear un equipo de toda la organización. Para obtener más información, consulte [¿Qué es un administrador en Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="next-objective"></a>Siguiente objetivo

@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 5f5f4ae07c65912f336cc9038c5c958018a52e02
-  ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+  ms.openlocfilehash: d853086e40898c3f74e653793295e921c062659e
+  ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/04/2022
-  ms.locfileid: "65889287"
+  ms.lasthandoff: 06/29/2022
+  ms.locfileid: "66491621"
 highlightedContent:
   items:
   - title: Configure su infraestructura para el trabajo híbrido
@@ -260,8 +260,8 @@ additionalContent:
   - title: Instrucciones y recursos relacionados
     items:
     - title: Desarrolladores
-      summary: Encuentre tutoriales, referencias y otros recursos para desarrolladores en el Centro para desarrolladores de Microsoft 365.
-      url: https://developer.microsoft.com/microsoft-365
+      summary: Encuentre documentación y recursos que le ayuden a crear o ampliar aplicaciones colaborativas para Microsoft 365 y Teams.
+      url: /microsoft-365/developer/?view=o365-worldwide
     - title: Usuarios finales
       summary: Encuentre formación, procedimientos y contenido de ayuda para los usuarios de Microsoft 365 en support.microsoft.com.
       url: https://support.microsoft.com/microsoft-365
