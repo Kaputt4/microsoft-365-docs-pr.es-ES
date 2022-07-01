@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 23d59cada628b37942d7c97f8fb517eaf6f1e66a
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014330"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556886"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -48,6 +48,9 @@ Por último, como administrador, al configurar una etiqueta de confidencialidad 
 - **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo.
 
 La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Portal de cumplimiento de Microsoft Purview.
+
+> [!NOTE]
+> Ahora que se está implementando en versión preliminar, una etiqueta de confidencialidad en Outlook puede aplicar la protección S/MIME en lugar del cifrado y los permisos de Microsoft Azure AD Rights Management. Para obtener más información, vea [Configurar una etiqueta para aplicar la protección S/MIME en Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 ## <a name="understand-how-the-encryption-works"></a>Entender cómo funciona el cifrado
 
