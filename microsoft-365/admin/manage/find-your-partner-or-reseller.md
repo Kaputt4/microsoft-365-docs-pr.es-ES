@@ -23,23 +23,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: Obtenga información sobre cómo encontrar un nuevo partner Microsoft 365 o obtener información de contacto de un partner con el que ha trabajado en el pasado.
-ms.openlocfilehash: 338ea8e9c1f0fd75143ec97ca7ea06b7ee15a1c5
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Obtenga información sobre cómo encontrar un nuevo asociado de Microsoft 365 u obtener información de contacto de un partner con el que ha trabajado en el pasado.
+ms.openlocfilehash: af865ee194cb9efb5c2891e6c73d860604c57bec
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468490"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573766"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Buscar el partner o revendedor de suscripciones de Microsoft 365
 
-Como administrador, puede trabajar con un asociado para comprar, activar y renovar suscripciones Microsoft 365 a través de un programa de licencias por volumen de Microsoft Open. 
+Como administrador, puede trabajar con un asociado para comprar, activar y renovar suscripciones de Microsoft 365 a través de un programa de licencias por volumen de Microsoft Open. 
   
  **¿No está seguro de que las Licencias por volumen abiertas le interesen?** Eche un vistazo a la [introducción de los Programas abiertos de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Buscar un partner o un distribuidor
 
-Si está listo para comprar o renovar Microsoft 365 a través de Open Volume Licensing, o simplemente quiere obtener más información sobre cómo trabajar con un asociado, elija una opción a continuación. 
+Si está listo para comprar o renovar Microsoft 365 a través de licencias por volumen abiertas, o simplemente quiere obtener más información sobre cómo trabajar con un asociado, elija una opción a continuación. 
   
 - [Búsqueda de un asociado de servicio certificado por Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -52,7 +52,7 @@ Si está listo para comprar o renovar Microsoft 365 a través de Open Volume Lic
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtener información de asociado en el centro de administración
 
-1. En el centro de administración, vaya a la página **relaciones Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner</a>.
+1. En el centro de administración, vaya a la página **Configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relaciones de asociados</a> .
   
 2. Si tiene un asociado, el nombre y la relación del asociado con su organización se mostrarán aquí. Para ver la información de contacto del asociado (número de teléfono y dirección de correo electrónico), seleccione el nombre del asociado.
     
@@ -63,5 +63,3 @@ Si está listo para comprar o renovar Microsoft 365 a través de Open Volume Lic
  **Para partners de Microsoft**
   
 [Ayuda para socios](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
-  
-

@@ -70,6 +70,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: Información general de la página Seguridad del dispositivo
       href: m365-lighthouse-device-security-overview.md
+    - name: Introducción a los mensajes en cuarentena
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Obtener ayuda y soporte técnico
   items:
     - name: Obtener ayuda y soporte técnico

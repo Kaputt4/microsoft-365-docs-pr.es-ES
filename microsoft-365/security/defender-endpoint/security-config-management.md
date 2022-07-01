@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622618"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573929"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager
 
@@ -38,7 +38,7 @@ ms.locfileid: "65622618"
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Administración de seguridad para Microsoft Defender para punto de conexión es una funcionalidad para dispositivos que no están administrados por un Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, para recibir configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+Administración de seguridad para Microsoft Defender para punto de conexión es una funcionalidad para que los dispositivos que no están administrados por un Endpoint Manager de Microsoft reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
 
 
 Para obtener más información sobre la administración de configuración de seguridad, incluidos los requisitos previos, las plataformas admitidas, etc., consulte [Administración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
@@ -66,7 +66,7 @@ Siga estos pasos para validar que los puntos de conexión han completado correct
 
 2.  En el [portal de Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/), compruebe que el dispositivo se ha inscrito correctamente.
 
-3.  En el [Centro de Microsoft Endpoint Manager Admin](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), compruebe que el dispositivo se ha inscrito correctamente buscándolo en la sección **Dispositivos > Todos los dispositivos**.
+3.  En el [Centro de microsoft Endpoint Manager Administración](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), compruebe que el dispositivo se ha inscrito correctamente buscándolo en la sección **Dispositivos > Todos los dispositivos**.
 
 
 ## <a name="offboard-devices"></a>Dispositivos fuera del panel

@@ -64,24 +64,26 @@
           href: create-communications-site.md
 - name: Protección de dispositivos administrados
   items:
-    - name: Información general
-      href: m365bp-protect-devices.md
-    - name: Configurar dispositivos administrados
-      href: m365bp-managed-devices-setup.md
-    - name: Abordar dispositivos inscritos y aplicar directivas
-      href: m365bp-onboard-devices-mdb.md
-    - name: Protección de dispositivos Windows
+    - name: Configuración y protección de dispositivos administrados
       items:
-        - name: Proteger dispositivos Windows
-          href: m365bp-secure-windows-devices.md
-        - name: Administrar dispositivos Windows
-          href: m365bp-manage-windows-devices.md
-        - name: Preparar la implementación del cliente Office
-          href: m365bp-prepare-for-office-client-deployment.md
-        - name: Creación de la configuración de protección de aplicaciones para dispositivos Windows
-          href: m365bp-protection-settings-for-windows-10-devices.md
-        - name: Validación de la configuración de la aplicación en dispositivos Windows
-          href: m365bp-validate-settings-on-windows-10-pcs.md
+        - name: Información general
+          href: m365bp-protect-devices.md
+        - name: Configurar dispositivos administrados
+          href: m365bp-managed-devices-setup.md
+        - name: Abordar dispositivos inscritos y aplicar directivas
+          href: m365bp-onboard-devices-mdb.md
+        - name: Protección de dispositivos Windows
+          items:
+            - name: Proteger dispositivos Windows
+              href: m365bp-secure-windows-devices.md
+            - name: Administrar dispositivos Windows
+              href: m365bp-manage-windows-devices.md
+            - name: Preparar la implementación del cliente Office
+              href: m365bp-prepare-for-office-client-deployment.md
+            - name: Creación de la configuración de protección de aplicaciones para dispositivos Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Validación de la configuración de la aplicación en dispositivos Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
     - name: Revista y edita las directivas de dispositivo
       href: m365bp-view-edit-create-mdb-policies.md
     - name: Administrar grupos de dispositivos
@@ -126,7 +128,7 @@
           href: m365bp-add-Autopilot-devices-and-profile.md
         - name: Configuración de perfiles de Autopilot
           href: m365bp-Autopilot-profile-settings.md
-        - name: Creación y edición de perfiles de Autopilot
+        - name: Crear y editar perfiles de AutoPilot
           href: m365bp-create-and-edit-Autopilot-devices.md
     - name: Configuración de protección de aplicaciones para Android y iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
@@ -134,6 +136,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Asignar funciones de protección a la configuración de Intune
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Intune roles de administrador
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Configuración del Administrador de cumplimiento
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender para Empresas
