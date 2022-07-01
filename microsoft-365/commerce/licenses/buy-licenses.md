@@ -23,19 +23,21 @@ ms.custom:
 search.appverid: MET150
 description: Siga estos pasos para comprar más licencias o reducir el número de licencias para su suscripción de Microsoft 365 para empresas.
 ms.date: 06/06/2022
-ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489678"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602378"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Compra o eliminación de licencias de Microsoft 365 para una suscripción
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Puede comprar más licencias o reducir el número de licencias para sus suscripciones mediante los pasos siguientes.
 
 > [!NOTE]
-> Para algunas suscripciones, solo podrá cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
+> Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,6 +46,8 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 - Si compró su plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un asociado de terceros, debe comprar licencias adicionales a través de ese asociado.
 
 ## <a name="watch-buy-new-licenses"></a>Ver: Comprar nuevas licencias
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -73,7 +77,7 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es [eli
 
 4. Para comprar o quitar licencias, en **Nueva cantidad** en el cuadro **Total de licencias** , escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y quiere agregar cinco más, escriba 105. Si desea quitar cinco de ellos, escriba 95.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 > [!NOTE]
 > No puede reducir el número de licencias de su suscripción si todas las licencias están asignadas actualmente a los usuarios. Para reducir el número de licencias, quite primero [una o varias licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md) y, a continuación, quite las licencias de la suscripción.

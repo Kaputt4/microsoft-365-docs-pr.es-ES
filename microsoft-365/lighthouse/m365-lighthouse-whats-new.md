@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864440"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602921"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -30,6 +30,40 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
+
+## <a name="june-2022"></a>Junio de 2022
+
+### <a name="support-for-microsoft-365-e5-customers"></a>Soporte técnico para clientes Microsoft 365 E5
+
+Hemos cambiado nuestros requisitos de incorporación para permitirle incorporar Microsoft 365 E5 clientes a Microsoft 365 Lighthouse. La lista ampliada de licencias que Microsoft 365 Lighthouse admite para la incorporación incluye Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender para Empresas y Windows 365 para empresas. Los clientes que tengan al menos una de estas licencias, cumplan los requisitos de permisos de acceso delegado y no superen el número máximo de usuarios con licencia se pueden administrar en Microsoft 365 Lighthouse.  
+
+Para obtener una lista completa de los requisitos, consulte [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+### <a name="microsoft-defender-for-business-integration"></a>integración Microsoft Defender para Empresas
+
+Microsoft 365 Lighthouse ahora se integra con Microsoft Defender para Empresas para proporcionarle información relacionada y funcionalidades de administración para todos los inquilinos de clientes que tienen Microsoft Defender para Empresas. Para ver la lista de dispositivos de cliente que se han incorporado a Microsoft Defender para Empresas, seleccione **Dispositivos** en el panel de navegación izquierdo de Microsoft 365 Lighthouse. Para ver la lista de incidentes y alertas marcados en los inquilinos de los clientes, vaya a **Seguridad de** **dispositivos** >  y, a continuación, seleccione la pestaña **Incidentes y alertas**.  
+
+También hemos agregado un paso a la línea base predeterminada para ayudarle a configurar Microsoft Defender para Empresas para los inquilinos del cliente. Para ver este paso, seleccione **Líneas base** en el panel de navegación izquierdo de Microsoft 365 Lighthouse o vea el plan de implementación para cualquiera de los inquilinos del cliente.
+
+### <a name="status-of-quarantined-email-messages"></a>Estado de los mensajes de correo electrónico en cuarentena
+
+Hemos agregado una nueva funcionalidad en torno a los datos de cuarentena de correo electrónico para los inquilinos administrados. Accesible mediante la selección de **Protección de datos** en el panel de navegación izquierdo de Microsoft 365 Lighthouse, esta característica proporciona visibilidad sobre el estado de los mensajes de correo electrónico en cuarentena en los inquilinos del cliente. Puede ver información consolidada de los volúmenes de cuarentena totales e información detallada de cada inquilino administrado para ayudarle a priorizar los inquilinos que puedan requerir acción.
+
+### <a name="increase-in-maximum-license-limit"></a>Aumento del límite máximo de licencias
+
+Estamos haciendo posible administrar más clientes en Microsoft 365 Lighthouse al aumentar de nuevo el límite máximo de licencias para la incorporación de clientes. Los clientes con hasta 2500 licencias de usuario ahora se pueden incorporar a Microsoft 365 Lighthouse. Seguiremos evaluando este requisito en futuras versiones de Microsoft 365 Lighthouse. 
+
+Para obtener más información, vea [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+## <a name="may-2022"></a>Mayo de 2022
+
+### <a name="redesigned-left-navigation-pane"></a>Panel de navegación izquierdo rediseñado
+
+Hemos dado el panel de navegación izquierdo en Microsoft 365 Lighthouse un nuevo aspecto. Observará un diseño más elegante, con nodos de nivel superior como inquilinos, usuarios y dispositivos que se expanden para mostrar subnodos relacionados, como usuarios de riesgo, cumplimiento de dispositivos y administración de amenazas. Este modelo de navegación se alinea con el modelo usado por otros centros de administración de Microsoft 365.
+
+### <a name="enriched-user-details-pane"></a>Panel de detalles del usuario enriquecido
+
+Hemos rediseñado el panel de detalles del usuario para incluir más información del usuario y más acciones que puede realizar para administrar mejor a los usuarios. Ahora tiene el mismo aspecto que el panel de detalles del usuario en el Centro de administración de Microsoft 365. Para acceder al panel de detalles del usuario en Microsoft 365 Lighthouse, seleccione **Usuarios** en el panel de navegación izquierdo y, a continuación, seleccione **Buscar usuarios** o **Usuarios de riesgo**. Seleccione cualquier usuario para abrir el panel de detalles.
 
 ## <a name="april-2022"></a>Abril de 2022
 
@@ -43,7 +77,7 @@ Para más información, consulte [Introducción a los permisos en Microsoft 365 
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Business acciones de integración y administración
 
-En función de los comentarios de los usuarios, hemos integrado Windows 365 Business en Microsoft 365 Lighthouse. Esto le ayudará a administrar y supervisar todos los equipos en la nube de sus clientes desde una sola ubicación. 
+En función de los comentarios de los usuarios, hemos integrado Windows 365 Business en Microsoft 365 Lighthouse. Esta integración le ayudará a administrar y supervisar todos los equipos en la nube de sus clientes desde una sola ubicación. 
 
 Además de la integración con Windows 365 Business pc en la nube en Microsoft 365 Lighthouse, ahora puede realizar las siguientes acciones de administración:
 
@@ -65,9 +99,9 @@ Microsoft 365 Lighthouse ahora incluye la funcionalidad para que los CSP usen ro
 
 Para más información sobre GDAP en Microsoft 365 Lighthouse, consulte [Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
-### <a name="capability-to-notify-users-to-act-on-non-compliant-devices"></a>Funcionalidad para notificar a los usuarios que actúen en dispositivos no compatibles
+### <a name="capability-to-notify-users-to-act-on-noncompliant-devices"></a>Funcionalidad para notificar a los usuarios que actúen en dispositivos no compatibles
 
-Como parte del paso de línea base de cumplimiento de dispositivos, hemos agregado la capacidad de notificar a los usuarios de un inquilino de cliente que actúen en dispositivos no compatibles. Con este cambio, una vez que aplique el paso de implementación de cumplimiento de dispositivos para cualquier inquilino de cliente, la directiva de cumplimiento de dispositivos creada en ese inquilino enviará automáticamente una notificación a los usuarios cuando su dispositivo no sea compatible recordándoles que realicen las acciones adecuadas para que el dispositivo vuelva a cumplirse.
+Como parte del paso de línea base de cumplimiento de dispositivos, hemos agregado la capacidad de notificar a los usuarios de un inquilino de cliente que actúen en dispositivos no conformes. Con este cambio, una vez que aplique el paso de implementación de cumplimiento de dispositivos para cualquier inquilino de cliente, la directiva de cumplimiento de dispositivos creada en ese inquilino enviará automáticamente una notificación a los usuarios cuando su dispositivo no sea conforme recordándoles que realicen las acciones adecuadas para que el dispositivo vuelva a cumplirse.
 
 ### <a name="deployment-validation-and-reporting"></a>Validación de la implementación e informes
 
@@ -112,13 +146,13 @@ En el panel de navegación izquierdo de Microsoft 365 Lighthouse, seleccione **R
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
-### <a name="microsoft-365-services-usage-data"></a>datos de uso de servicios de Microsoft 365
+### <a name="microsoft-365-services-usage-data"></a>Datos de uso de servicios de Microsoft 365
 
 Ahora puede ver los datos de uso de los servicios de Microsoft 365 desde dentro de Microsoft 365 Lighthouse. Comprender cómo los clientes usan sus servicios de Microsoft 365 es fundamental para ayudarles a sacar el máximo partido a sus inversiones en TI. En lugar de usar varios recursos para ver información en los distintos servicios de productividad, seguridad y cumplimiento de los clientes, Microsoft 365 Lighthouse los agrega en una vista sencilla y eficaz.  
 
 Esta información puede ayudar a informar a los clientes y ofrecer más valor a los clientes, ya que le permite ayudarles a comprender qué servicios usan activamente sus usuarios y dónde pueden haber oportunidades para mejorar su seguridad o productividad. 
 
-Para obtener más información, vea [Información general de la página Inquilinos de Microsoft 365 Lighthouse: Microsoft 365 tarjeta de uso](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+Para obtener más información, vea [Información general de la página Inquilinos en Microsoft 365 Lighthouse: Tarjeta de uso de Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>Exchange Online Protection y Microsoft 365 Defender para Office 365 paso de línea base predeterminado
 
@@ -134,9 +168,9 @@ Ahora puede designar determinadas etiquetas de inquilino de *forma predeterminad
 
 Ahora es posible filtrar los datos por varias etiquetas de inquilino al mismo tiempo. Esta funcionalidad puede ayudarle a filtrar más fácilmente las vistas e información existentes que están disponibles en Microsoft 365 Lighthouse para mostrar los inquilinos de clientes pertinentes.
 
-### <a name="capability-to-assign-baseline-configurations-to-specific-azure-active-directory-groups"></a>Funcionalidad para asignar configuraciones de línea base a grupos de Azure Active Directory específicos
+### <a name="capability-to-assign-baseline-configurations-to-specific-azure-active-directory-groups"></a>Funcionalidad para asignar configuraciones de línea base a grupos específicos de Azure Active Directory
 
-Hemos agregado la capacidad de asignar configuraciones de línea base a grupos de Azure Active Directory específicos (Azure AD) de los inquilinos de los clientes desde dentro de Microsoft 365 Lighthouse. En cualquier página de paso de implementación, examine y seleccione los grupos de Azure AD específicos que desea incluir o excluir y, a continuación, implemente las configuraciones en el inquilino del cliente.
+Hemos agregado la capacidad de asignar configuraciones de línea base a grupos específicos de Azure Active Directory (Azure AD) de los inquilinos del cliente desde dentro de Microsoft 365 Lighthouse. En cualquier página de paso de implementación, examine y seleccione los grupos de Azure AD específicos que desea incluir o excluir y, a continuación, implemente las configuraciones en el inquilino del cliente.
 
 ### <a name="improvements-to-risky-users-page"></a>Página Mejoras en usuarios de riesgo
 
@@ -189,11 +223,11 @@ Con la nueva característica de líneas base, ahora puede implementar configurac
 - Requerir MFA para administradores 
 - Requerir MFA para los usuarios 
 - Bloquear autenticación heredada 
-- Inscripción de dispositivos Windows en Microsoft Endpoint Manager: unión a Azure AD 
+- Inscribir dispositivos Windows en Microsoft Endpoint Manager: unión a Azure AD 
 - Configuración de la directiva de Antivirus de Defender para dispositivos Windows 
 - Configuración de la directiva de cumplimiento para dispositivos Windows 
 
-Para actuar sobre estos pasos de implementación, seleccione **Inquilinos** en el panel de navegación izquierdo de Microsoft 365 faro, seleccione un inquilino en la lista de inquilinos y, a continuación, seleccione la pestaña **Plan de implementación**. 
+Para actuar sobre estos pasos de implementación, seleccione **Inquilinos** en el panel de navegación izquierdo del faro de Microsoft 365, seleccione un inquilino en la lista de inquilinos y, a continuación, seleccione la pestaña **Plan de implementación** . 
 
 ## <a name="may-2021"></a>Mayo de 2021
 

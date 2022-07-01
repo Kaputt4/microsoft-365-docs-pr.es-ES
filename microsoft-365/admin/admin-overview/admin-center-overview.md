@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en el Centro de administración de Microsoft 365 para administrar tareas comunes o la vista del panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159562"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601660"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 - [el Centro de administración en vista simplificada](#watch-the-admin-center-in-simplified-view)
 - [el Centro de administración en la vista del panel](#watch-the-admin-center-in-dashboard-view)
@@ -38,6 +40,8 @@ ms.locfileid: "66159562"
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> tiene dos vistas: la vista simplificada ayuda a las organizaciones más pequeñas a administrar sus tareas más comunes. La vista panel incluye tareas y configuraciones más complejas. Puede cambiar entre ellos desde un botón en la parte superior del centro de administración.
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>Vea: el Centro de administración en vista simplificada
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 

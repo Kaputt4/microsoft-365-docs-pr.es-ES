@@ -20,32 +20,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo mover los archivos a OneDrive.
-ms.openlocfilehash: 04f8dabcba720e904d9dad7ff0e4c07403265909
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 589bfc5649cfea9090d8933b31b73184439d8f6a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469368"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603844"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+
 ## <a name="watch-move-your-files-to-onedrive-for-business"></a>Inspección: Mover los archivos a OneDrive para la Empresa
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198202).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
 Después de registrarse para Microsoft 365 Empresa Premium,&#39;querrá copiar los archivos de trabajo existentes en OneDrive para la Empresa. OneDrive es un buen lugar para almacenar archivos de trabajo personales o archivos empresariales confidenciales a los que desea controlar el acceso.
 
-## <a name="try-it"></a>¿Se atreve?
-
-1. En Windows, seleccione el botón **Iniciar**.
+1. En Windows, seleccione el botón  **Inicio** .
 2. Busque OneDrive y selecciónelo.
 3. Escriba la dirección de correo electrónico del trabajo.
 4. Seleccione  **Iniciar sesión** y, a continuación, seleccione  **Siguiente**.
-5. Consulte el breve tutorial y, a continuación, seleccione **Abrir mi carpeta OneDrive**. Si también usa la versión personal de OneDrive,&#39;la verá aquí.
+5. Consulte el breve tutorial y, a continuación, seleccione  **Abrir la carpeta de OneDrive**. Si también usa la versión personal de OneDrive,&#39;la verá aquí.
 6. En Explorador de archivos, vaya a los archivos que desea copiar.
-7. Seleccione los archivos y arrástrelos y colóquelos en la carpeta OneDrive. Las flechas circulares azules junto a los archivos significan que&#39;volver a sincronizar con la nube. Cuando&#39;se vuelve a realizar la sincronización, se muestran las marcas de verificación verdes.
+7. Seleccione los archivos y arrástrelos y colóquelos en la carpeta de OneDrive. Las flechas circulares azules junto a los archivos significan que&#39;volver a sincronizar con la nube. Cuando&#39;se vuelve a realizar la sincronización, se muestran las marcas de verificación verdes.
 
-Además de trabajar en los archivos OneDrive localmente, puede acceder a ellos desde el explorador web:
+Además de trabajar en los archivos de OneDrive localmente, puede acceder a ellos desde el explorador web:
 
 1. En el explorador web, inicie sesión para office.com con el correo electrónico del trabajo.
-2. Elija **OneDrive**. Todos los archivos se muestran y puede trabajar en ellos en el explorador desde cualquier equipo.
+2. Elija  **OneDrive**. Todos los archivos se muestran y puede trabajar en ellos en el explorador desde cualquier equipo.

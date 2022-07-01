@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739491"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603481"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -44,6 +44,8 @@ Después de ejecutar la consulta, puede ver el tiempo de ejecución y su uso de 
 
 Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar las instrucciones de optimización de este artículo para minimizar la interrupción resultante de superar las cuotas o los parámetros de uso.
 
+Vea [Optimización de consultas KQL](https://www.youtube.com/watch?v=ceYvRuPp5D8) para ver algunas de las formas más comunes de mejorar las consultas.  
+
 ## <a name="general-optimization-tips"></a>Sugerencias generales de optimización
 
 - **Ajustar el tamaño de las nuevas consultas**: si sospecha que una consulta devolverá un conjunto de resultados grande, evaluela primero con el [operador count](/azure/data-explorer/kusto/query/countoperator). Use [limit](/azure/data-explorer/kusto/query/limitoperator) o su sinónimo `take` para evitar conjuntos de resultados grandes.
@@ -63,7 +65,9 @@ Los clientes que ejecutan varias consultas con regularidad deben realizar un seg
 - **Analizar, no extraer**: siempre que sea posible, use el [operador de análisis](/azure/data-explorer/kusto/query/parseoperator) o una función de análisis como [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Evite el `matches regex` operador de cadena o la [función extract(),](/azure/data-explorer/kusto/query/extractfunction) que usan la expresión regular. Reserve el uso de la expresión regular para escenarios más complejos. [Obtenga más información sobre el análisis de funciones](#parse-strings)
 - **Filtrar tablas no expresiones**: no filtre por una columna calculada si puede filtrar por una columna de tabla.
 - **Sin términos de tres caracteres**: evite comparar o filtrar mediante términos con tres caracteres o menos. Estos términos no se indexan y la coincidencia con ellos requerirá más recursos.
-- **Project de forma selectiva**: haga que los resultados sean más fáciles de entender proyectando solo las columnas que necesita. La proyección de columnas específicas antes de ejecutar operaciones de [combinación](/azure/data-explorer/kusto/query/joinoperator) o similares también ayuda a mejorar el rendimiento.
+- **Proyecto de forma selectiva**: haga que los resultados sean más fáciles de entender proyectando solo las columnas que necesita. La proyección de columnas específicas antes de ejecutar operaciones de [combinación](/azure/data-explorer/kusto/query/joinoperator) o similares también ayuda a mejorar el rendimiento.
+
+
 
 ## <a name="optimize-the-join-operator"></a>Optimización del `join` operador
 El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas de dos tablas mediante la coincidencia de valores en columnas especificadas. Aplique estas sugerencias para optimizar las consultas que usan este operador.
@@ -186,7 +190,7 @@ El [operador summarize](/azure/data-explorer/kusto/query/summarizeoperator) agre
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-Vea este [breve vídeo](https://www.youtube.com/watch?v=ceYvRuPp5D8) para obtener información sobre cómo puede optimizar el Lenguaje de consulta Kusto.  
+
 
 ## <a name="query-scenarios"></a>Escenarios de consulta
 
@@ -267,13 +271,13 @@ Hay varias funciones que puede usar para controlar de forma eficaz las cadenas q
 | Direcciones IPv4 | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convierta una dirección IPv4 en un entero largo. Para comparar direcciones IPv4 sin convertirlos, use [ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Direcciones IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convierta una dirección IPv4 o IPv6 en la notación IPv6 canónica. Para comparar direcciones IPv6, use [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Para obtener información sobre todas las funciones de análisis admitidas, [lea Kusto funciones de cadena](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
+Para obtener información sobre todas las funciones de análisis admitidas, [lea acerca de las funciones de cadena de Kusto](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
 
 >[!NOTE]
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para punto de conexión. [Active Microsoft 365 Defender](m365d-enable.md) para buscar amenazas mediante más orígenes de datos. Para mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para punto de conexión a Microsoft 365 Defender, siga los pasos descritos en [Migración de consultas de búsqueda avanzadas desde Microsoft Defender para punto de conexión](advanced-hunting-migrate-from-mde.md) .
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Kusto documentación del lenguaje de consulta](/azure/data-explorer/kusto/query/)
+- [Documentación del lenguaje de consulta de Kusto](/azure/data-explorer/kusto/query/)
 - [Parámetros de uso y cuotas](advanced-hunting-limits.md)
 - [Controlar errores de búsqueda avanzados](advanced-hunting-errors.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

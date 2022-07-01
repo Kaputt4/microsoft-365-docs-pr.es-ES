@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
-ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo obtener un informe de uso del explorador microsoft mediante el panel Informes de Microsoft 365 en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 67abf461102fe56f8515db0b0a73a8c852a2224e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078309"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601551"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 informes en el Centro de administración: uso del explorador microsoft
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del explorador microsoft
 
-El panel informes de Microsoft 365 muestra información general sobre la actividad en los productos de la organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso de Microsoft Edge. Los informes de uso se basan en Microsoft 365 servicios en línea a los que se accede mediante un explorador Microsoft en cualquier dispositivo que use una cuenta de Microsoft 365.
+El panel Informes de Microsoft 365 muestra información general sobre la actividad en los productos de su organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador microsoft, puede obtener información sobre el nuevo uso de Microsoft Edge. Los informes de uso se basan en un recuento agregado de usuarios de su organización que inician sesión en su cuenta de Microsoft 365 y usan el explorador Microsoft Edge para acceder a los servicios de Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Cómo acceder al informe de uso del explorador Microsoft
 
@@ -35,26 +35,24 @@ El panel informes de Microsoft 365 muestra información general sobre la activid
 
 2. En la página principal del panel, haga clic en el botón **Ver más** de la tarjeta de uso del explorador Microsoft.
 
-## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Cómo notificar a los usuarios que actualicen su explorador
-
-:::image type="content" alt-text="Flujo de acción del informe de uso del explorador Microsoft." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
-
-Los administradores globales pueden participar en el envío de mensajes a los usuarios que acceden a Microsoft 365 servicios desde Internet Explorer (como recordatorio, la aplicación de escritorio de Internet Explorer se retirará el 15 de junio de 2022). Este mensaje de destino notifica a los usuarios que la compatibilidad con estos exploradores finalizará pronto y vínculos a un artículo de soporte técnico con información sobre Microsoft Edge y pasos sencillos que se deben seguir para cambiar de explorador. 
-
-Puede encontrar esta característica en la página del informe de uso del explorador Microsoft si su organización tiene el uso de Internet Explorer que se muestra en el informe (se necesitan permisos de administrador global). Una vez creado el mensaje, los usuarios recibirán una notificación con la frecuencia especificada hasta el 15 de junio de 2022. Puede activar o desactivar esta característica en cualquier momento.
-
-Se trata de una característica de tiempo limitado que actualmente solo está disponible para administradores globales en EE. UU. y permite las notificaciones de usuario en Excel en línea.
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretación del informe de uso del explorador Microsoft
 
 :::image type="content" alt-text="Informe de uso del explorador Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-|Elemento|Descripción|
+El informe **de uso del explorador Microsoft** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. 
+
+El gráfico **Usuarios activos diarios** muestra el recuento diario de usuarios de Microsoft Edge cuando se usa para acceder a los servicios de Microsoft 365.
+
+El gráfico **Usuarios activos** muestra el número total de usuarios que usan Microsoft Edge cuando se usan para acceder a los servicios de Microsoft 365 durante el período de tiempo seleccionado.
+
+En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.
+
+|Item|Descripción|
 |:-----|:-----|
-|1. |El informe **de uso del explorador Microsoft** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. |
-|2. |Los datos de cada informe suelen cubrir hasta los últimos siete días. |
-|3. |El gráfico **Usuarios activos diarios** muestra el recuento diario de usuarios de Microsoft Edge, Microsoft Edge (versión anterior) e Internet Explorer cuando se usa para acceder a Microsoft 365 servicios. |
-|4. |El gráfico **Usuarios activos** muestra el número total de usuarios que usan Microsoft Edge, Microsoft Edge (versión anterior) e Internet Explorer cuando se usan para acceder a Microsoft 365 servicios durante el período de tiempo seleccionado. |
-|5. |En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.  <br/><br/>**Nombre de usuario** es la dirección de correo electrónico del usuario que se conectó a Microsoft 365 servicios mediante exploradores de Microsoft.<br><br/>**El Microsoft Edge usado** muestra una marca de graduación si el usuario usó Microsoft Edge para conectarse a Microsoft 365 servicios.<br/><br/>**Se usa Microsoft Edge (versión anterior)** muestra una marca de graduación si el usuario usó Microsoft Edge (versión anterior) para conectarse a Microsoft 365 servicios.<br/><br/>**Internet Explorer usado** muestra una marca de graduación si el usuario usó Internet Explorer para conectarse a Microsoft 365 servicios. |
-|6. |Seleccione el icono **Elegir columnas** para agregar o quitar columnas del informe.|
-|7. |También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Esto exporta datos para todos los usuarios y le permite realizar agregaciones, ordenaciones y filtrados sencillos para un análisis posterior. Si tiene menos de 100 usuarios, puede ordenar y filtrar dentro de la tabla en el propio informe. Si tiene más de 100 usuarios, para filtrar y ordenar, deberá exportar los datos.|
+|**Username** | Dirección de correo electrónico del usuario que se conectó a los servicios de Microsoft 365 mediante Microsoft Edge.|
+| **Microsoft Edge usado**| Muestra la marca de graduación si el usuario usó Microsoft Edge para conectarse a los servicios de Microsoft 365.|
+
+Seleccione el icono **Elegir columnas** para agregar o quitar columnas del informe.
+
+También puede exportar los datos del informe a un archivo de excel .csv seleccionando el vínculo **Exportar** . Esto exporta datos para todos los usuarios y le permite realizar agregaciones, ordenaciones y filtrados sencillos para un análisis posterior. 

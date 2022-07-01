@@ -13,16 +13,16 @@ ms.collection:
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook mediante la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416980"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602146"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -30,17 +30,17 @@ ms.locfileid: "65416980"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización Microsoft 365 con buzones de Exchange Online, se recomienda usar la página **Envíos** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft](admin-submission.md).
+> Si es administrador de una organización de Microsoft 365 con buzones de Exchange Online, se recomienda usar la página **Envíos** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft](admin-submission.md).
 
-En Microsoft 365 organizaciones con buzones de correo en buzones de Exchange Online o locales mediante la autenticación moderna híbrida, puede enviar falsos positivos (buen correo electrónico que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phish que se entregó a la bandeja de entrada) para Exchange Online Protection (EOP).
+En las organizaciones de Microsoft 365 con buzones de correo en buzones de Exchange Online o locales mediante la autenticación moderna híbrida, puede enviar falsos positivos (buen correo electrónico que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phish que se entregó a la bandeja de entrada) para Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para obtener la mejor experiencia de envío de usuario, use el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
 
-- El complemento Mensaje de informe y el complemento De suplantación de identidad de informe funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y escritorio).
+- El complemento Mensaje de informe y el complemento De suplantación de identidad de informe funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y Escritorio).
 
-- Si es administrador de una organización con buzones de Exchange Online, use el portal Envíos en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del envío de administrador para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
+- Si es administrador de una organización con buzones de Exchange Online, use el portal Envíos en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso de Administración Envío para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
 
 - Puede configurar para enviar mensajes directamente a Microsoft, un buzón que especifique o ambos. Para obtener más información, consulte [Directivas de envío de usuarios](user-submission.md).
 
@@ -50,18 +50,6 @@ En Microsoft 365 organizaciones con buzones de correo en buzones de Exchange Onl
 
 Vea este breve vídeo para obtener información sobre cómo puede usar Microsoft Defender para Office 365 para investigar fácilmente los envíos de los usuarios para determinar el contenido de un mensaje y responder al envío aplicando la acción de corrección adecuada. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
-
-### <a name="turn-off-the-built-in-reporting-experience"></a>Desactivar la experiencia de generación de informes integrada
-
-No se recomienda la experiencia de informes integrada en Outlook porque no puede usar la [directiva de envío de usuarios](./user-submission.md). En su lugar, se recomienda usar el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
-
-Deberá tener asignados permisos antes de poder ejecutar este cmdlet. Para obtener los permisos necesarios para ejecutar cualquier cmdlet o parámetro en su organización, consulte [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-Ejecute el siguiente comando de PowerShell para deshabilitar la experiencia de informes integrada en Outlook en la Web:
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
 
 ## <a name="use-the-report-message-feature"></a>Uso de la característica Mensaje de informe
 

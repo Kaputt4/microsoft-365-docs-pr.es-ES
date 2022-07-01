@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva en el Centro de administración de Microsoft 365 para permitir que los usuarios restablezcan sus propias contraseñas mediante la herramienta de autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 2ade056638db03a0a38b7fe2bdacfe3d6d2e4530
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 44cbcc5404727e22c62fc6345e03682ff0961543
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436699"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601958"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Como administrador de Microsoft 365, puede permitir que los usuarios usen la [herramienta de autoservicio de restablecimiento de contraseña](https://go.microsoft.com/fwlink/p/?LinkId=522677) para que no tenga que restablecer las contraseñas para ellas. Así no tendrá tanto trabajo.
 
@@ -44,9 +46,11 @@ Como administrador de Microsoft 365, puede permitir que los usuarios usen la [he
  
 ## <a name="watch-let-users-reset-their-own-passwords"></a>Ver: Permitir que los usuarios restablezcan sus propias contraseñas
 
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198214).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Configuración** >  **Configuración deOrg** y, a continuación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad & privacidad**</a>.
+1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Configuración Configuración** > **Configuración de la organización** y, a continuación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad & privacidad**</a>.
 1. En **Permitir que los usuarios restablezcan sus propias contraseñas**, seleccione **Centro de administración de Azure AD**.
 1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la página **Usuarios: todos los usuarios** , seleccione **Restablecimiento de contraseña**.
 1. Seleccione **Todo** para habilitar el autoservicio de restablecimiento de contraseña y, a continuación, seleccione **Guardar**.
@@ -55,11 +59,11 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
  
 ## <a name="before-you-begin"></a>Antes de empezar
   
-- Obtiene el autoservicio de restablecimiento de contraseña para los usuarios en la nube **de forma gratuita** con cualquier Microsoft 365 plan de pago empresarial, educativo o sin ánimo de lucro. No funciona con Microsoft 365 prueba.
+- Obtiene el autoservicio de restablecimiento de contraseña para los usuarios en la nube **gratis** con cualquier plan de pago para empresas, educación o organizaciones sin ánimo de lucro de Microsoft 365. No funciona con la versión de prueba de Microsoft 365.
 
 - Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure.
 
-- **Si usa un Active Directory local**, no se aplican los dos puntos anteriores. En su lugar, puede **configurarlo, pero requiere una suscripción de pago para Azure AD Premium**.
+- **Si usa un Active Directory local**, no se aplican los dos puntos anteriores. En su lugar, puede **configurarlo, pero requiere una suscripción de pago a Azure AD Premium**.
 
 Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Información general de la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md)
 
@@ -69,7 +73,7 @@ Debe ser [administrador global o administrador de contraseñas](about-admin-role
 
 Siga estos pasos para activar el restablecimiento de contraseña de autoservicio para todos los usuarios de su empresa.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>, vaya a la página configuración **de Configuración** >  **Org**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>, vaya a la página **Configuración** > **de la organización** .
 
 2. En la parte superior de la página Configuración de la **organización** , seleccione la pestaña **Seguridad & privacidad** .
   
@@ -85,4 +89,4 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 [Establecer la directiva de expiración de contraseñas para su organización](../manage/set-password-expiration-policy.md) (artículo)\
 [Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
-[vídeos de formación de Microsoft 365 Empresa](../../business-video/index.yml) (página de vínculo)
+[Vídeos de formación empresarial de Microsoft 365](../../business-video/index.yml) (página de vínculos)

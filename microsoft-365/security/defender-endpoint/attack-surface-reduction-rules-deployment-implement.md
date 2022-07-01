@@ -1,5 +1,5 @@
 ---
-title: Habilitar reglas de reducción de superficie expuesta a ataques (ASR)
+title: Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para implementar la implementación de reglas de reducción de superficie expuesta a ataques.
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: c3c693a46c3c22749a4e8ff2d572cef56bc06d9b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705524"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603756"
 ---
-# <a name="enable-attack-surface-reduction-asr-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques (ASR)
+# <a name="enable-attack-surface-reduction-asr-rules"></a>Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)
 
 La implementación de reglas de reducción de superficie expuesta a ataques (ASR) mueve el primer anillo de prueba a un estado funcional habilitado.
 
@@ -125,18 +124,18 @@ Consulte el tema [de referencia de las reglas de reducción de superficie expues
 
 Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) para agregar exclusiones.
 
-##### <a name="customize-the-notification"></a>Personalización de la notificación
+##### <a name="customize-the-notification"></a>Personalizar la notificación
 
 Puede personalizar la notificación para cuando se desencadene una regla y bloquee una aplicación o un archivo. Consulte el artículo [Seguridad de Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+[Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)

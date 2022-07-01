@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8c650e639d1a4629ed25bcc3a7f3a8c28df4b8e8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65740023"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603492"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -37,9 +37,9 @@ ms.locfileid: "65740023"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/query/). Puede usar Kusto operadores e instrucciones para construir consultas que busquen información en un [esquema](advanced-hunting-schema-tables.md) especializado. 
+La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/query/). Puede usar instrucciones y operadores de Kusto para construir consultas que busquen información en un [esquema](advanced-hunting-schema-tables.md) especializado. 
 
-Vea este breve vídeo para obtener información útil Kusto conceptos básicos del lenguaje de consulta.
+Vea este breve vídeo para aprender algunos conceptos básicos del lenguaje de consulta Kusto.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
  
@@ -133,7 +133,7 @@ Seleccione **Ejecutar consulta** para ver los resultados.
 >[!TIP]
 >Puede ver los resultados de la consulta como gráficos y ajustar rápidamente los filtros. Para obtener instrucciones, [lea sobre cómo trabajar con los resultados de la consulta](advanced-hunting-query-results.md).
 
-Vea este [breve vídeo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) para obtener información sobre cómo puede usar Lenguaje de consulta Kusto para combinar tablas.
+
 
 ## <a name="learn-common-query-operators"></a>Obtenga información sobre los operadores de consulta comunes
 
@@ -143,7 +143,7 @@ Acaba de ejecutar la primera consulta y tiene una idea general de sus componente
 |--|--|
 | `where` | Filtra una tabla hasta llegar al subconjunto de filas que satisfacen un predicado. |
 | `summarize` | Crea una tabla que agrega el contenido de la tabla de entrada. |
-| `join` | Combina las filas de dos tablas para formar una nueva tabla mediante la coincidencia de los valores de la columna o columnas especificadas de cada tabla. |
+| `join` | Combina las filas de dos tablas para formar una nueva tabla mediante la coincidencia de los valores de la columna o columnas especificadas de cada tabla. Vea [Combinación de tablas en KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) para obtener información sobre cómo hacerlo.|
 | `count` | Devuelve el número de registros en el conjunto de registros de entrada. |
 | `top` | Devuelve los primeros N registros ordenados según las columnas especificadas. |
 | `limit` | Devuelve hasta el número de filas especificado. |
@@ -156,7 +156,7 @@ Para ver un ejemplo dinámico de estos operadores, ejecútelos desde la sección
 
 ## <a name="understand-data-types"></a>Comprender los tipos de datos
 
-La búsqueda avanzada admite Kusto tipos de datos, incluidos los siguientes tipos comunes:
+La búsqueda avanzada admite tipos de datos kusto, incluidos los siguientes tipos comunes:
 
 | Tipo de datos | Descripción e implicaciones de la consulta |
 |--|--|
@@ -166,7 +166,7 @@ La búsqueda avanzada admite Kusto tipos de datos, incluidos los siguientes tipo
 | `int` | Entero de 32 bits  |
 | `long` | Entero de 64 bits |
 
-Para más información sobre estos tipos de datos, [consulte Kusto tipos de datos escalares](/azure/data-explorer/kusto/query/scalar-data-types/).
+Para obtener más información sobre estos tipos de datos, [lea sobre los tipos de datos escalares de Kusto](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
 

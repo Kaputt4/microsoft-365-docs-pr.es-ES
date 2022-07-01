@@ -1,5 +1,5 @@
 ---
-title: Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)
+title: Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR).
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 07388ab8f1aac89991423c07fb442017aafb73e6
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 4e538a4e986ad0636c380ec2ba167249221ac3ec
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705305"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602500"
 ---
-# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)
+# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 
 Al probar las reglas de reducción de la superficie expuesta a ataques (ASR), es importante empezar con la unidad de negocio adecuada. Querrá empezar con un pequeño grupo de personas en una unidad de negocio específica. Puede identificar a algunos campeones de ASR dentro de una unidad de negocio determinada que pueden proporcionar un impacto real sobre las reglas de ASR y ayudarle a ajustar la implementación.
 
@@ -82,12 +81,12 @@ Consulte: [Creación de un plan de implementación para Windows](/windows/deploy
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+[Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)

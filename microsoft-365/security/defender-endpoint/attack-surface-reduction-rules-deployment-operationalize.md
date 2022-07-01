@@ -1,5 +1,5 @@
 ---
-title: Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)
+title: Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para operacionalizar la implementación de reglas de reducción de superficie expuesta a ataques.
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2c666a8b31308fb3cfb18a9a35211e49d886eab0
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 708d929376c029ba5ce448c93fd6c455a78ebec8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705393"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602886"
 ---
-# <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)
+# <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)
 
 Una vez que haya implementado completamente las reglas de reducción de la superficie expuesta a ataques (ASR), es fundamental que tenga procesos en su lugar para supervisar y responder a las actividades relacionadas con ASR.
 
@@ -46,7 +45,7 @@ Una de las características más eficaces de [Microsoft 365 Defender](https://se
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Página Búsqueda avanzada en el portal de Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (lenguaje de consulta Kusto) que le permite explorar hasta 30 días de los datos capturados (sin procesar) que la detección y respuesta de puntos de conexión de ATP de Microsoft Defender (EDR) recopila de todas las máquinas. Mediante la búsqueda avanzada, puede inspeccionar eventos de forma proactiva con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Lenguaje de consulta Kusto) que le permite explorar hasta 30 días de los datos capturados (sin procesar) que la detección y respuesta de puntos de conexión de ATP de Microsoft Defender (EDR) recopila de todas las máquinas. Mediante la búsqueda avanzada, puede inspeccionar eventos de forma proactiva con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
 
 Mediante la búsqueda avanzada, es posible extraer información de reglas de ASR, crear informes y obtener información detallada sobre el contexto de un evento de bloque o auditoría de reglas de ASR determinado.
 
@@ -81,12 +80,12 @@ Para obtener más información sobre las opciones de búsqueda, vea: [Desmitific
 
 ## <a name="topics-in-this-deployment-collection"></a>Temas de esta colección de implementación
 
-[Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+[Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)

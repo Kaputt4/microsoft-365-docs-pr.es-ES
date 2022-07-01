@@ -29,36 +29,41 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber sobre las versiones más recientes de los programas de Office antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636226"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601188"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda de Administración
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las versiones más recientes de Word, Excel, PowerPoint y otros programas de Office.
 
 ::: moniker range="o365-21vianet"
 
-Si está en China, Office 365 operado por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no ofrece con el propio servicio. 21Vianet gestiona, ofrece y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Al otorgar licencias a las tecnologías de Microsoft, 21Vianet opera centros de datos locales de Microsoft para proporcionarle la capacidad de usar servicios Microsoft mientras mantiene sus datos en China. 21Vianet también proporciona servicios de suscripción y facturación, así como soporte técnico.
+Si está en China, Office 365 operado por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no ofrece con el propio servicio. 21Vianet gestiona, ofrece y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Al otorgar licencias a las tecnologías de Microsoft, 21Vianet opera centros de datos locales de Microsoft para proporcionarle la capacidad de usar los servicios de Microsoft mientras mantiene sus datos en China. 21Vianet también proporciona servicios de suscripción y facturación, así como soporte técnico.
   
 > [!NOTE]
 > Estos servicios están sujetos a las leyes chinas.
   
-Regístrese en Office 365 operados por 21Vianet para que su equipo pueda empezar a usar las versiones más recientes de Word, Excel, PowerPoint y otros programas de Office.
+Regístrese para obtener Office 365 operados por 21Vianet para que su equipo pueda empezar a usar las versiones más recientes de Word, Excel, PowerPoint y otros programas de Office.
   
 ¿Listo para registrarse? [Seleccione un plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="choose-a-plan"></a>Elija un plan
 
 Antes de comprar, piensa un poco en el plan para el que te suscribes. Esto le ayudará a evitar problemas más adelante.
 
-## <a name="watch-choose-a-microsoft-365-subscription"></a>Ver: Elegir una suscripción Microsoft 365
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Inspección: Elegir una suscripción de Microsoft 365
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -93,9 +98,9 @@ No es necesario cancelar la evaluación. Si no compra la suscripción de prueba,
   - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
 
     > [!NOTE]
-    > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.
+    > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico de Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.
   
-- **Un nombre de inicio de sesión (id. de usuario):** Este identificador de usuario se convierte en su dirección de correo electrónico Microsoft 365 inicial, solo para empezar a trabajar rápidamente.
+- **Un nombre de inicio de sesión (id. de usuario):** Este identificador de usuario se convierte en su dirección de correo electrónico inicial de Microsoft 365, solo para empezar a trabajar rápidamente.
 
     Este identificador de usuario es la dirección de correo electrónico que se usa para iniciar sesión. Por ejemplo, si su nombre comercial es Fourth Coffee, es posible que elija rob@fourthcoffee.onmicrosoft.com como su ID de usuario.
 

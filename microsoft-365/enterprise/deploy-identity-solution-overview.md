@@ -14,17 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
-- m365solution-scenario
 - m365solution-overview
 ms.custom:
 - intro-overview
 description: Implemente la infraestructura de identidad para Microsoft 365.
-ms.openlocfilehash: 6128daa59bfece9403953e041f258d87ef6a7413
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9f0956b0c131fb4cf90ce462fcfca0b9e124578e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092963"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603690"
 ---
 # <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>Implementación de la infraestructura de identidad para Microsoft 365
 
@@ -46,15 +45,15 @@ Para obtener más información, consulte el [plan de implementación de Microsof
 
 ## <a name="whats-in-this-solution"></a>Acerca de esta solución
 
-Esta solución le guiará a través de la implementación de una infraestructura de identidad para el inquilino de Microsoft 365 para proporcionar acceso a los empleados y protección contra ataques basados en identidades.
+Esta solución le guiará a través de la implementación de una infraestructura de identidad para el inquilino de Microsoft 365 con el fin de proporcionar acceso a los empleados y protección contra ataques basados en identidades.
 
 ![Implementación de la infraestructura de identidad para Microsoft 365](../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
 
 Los pasos de esta solución son:
 
 1. [Determine el modelo de identidad.](deploy-identity-solution-identity-model.md)
-2. [Proteja las cuentas con privilegios de Microsoft 365.](protect-your-global-administrator-accounts.md)
-3. [Proteja las cuentas de usuario Microsoft 365.](microsoft-365-secure-sign-in.md)
+2. [Proteja sus cuentas con privilegios de Microsoft 365.](protect-your-global-administrator-accounts.md)
+3. [Proteja sus cuentas de usuario de Microsoft 365.](microsoft-365-secure-sign-in.md)
 4. [Implemente el modelo de identidad.](cloud-only-identities.md)
 
 Esta solución admite los principios clave de [Confianza cero](https://www.microsoft.com/security/business/zero-trust/):
@@ -71,12 +70,12 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|[Autenticación multifactor (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requiere que los usuarios proporcionen dos formas de verificación, como una contraseña de usuario y una notificación de la aplicación Microsoft Authenticator o una llamada telefónica. MFA reduce en gran medida el riesgo de que se puedan usar credenciales robadas para acceder a su entorno. Microsoft 365 usa el servicio Azure AD Multi-Factor Authentication para los inicios de sesión basados en MFA.|Microsoft 365 E3 o E5|
+|[Autenticación multifactor (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requiere que los usuarios proporcionen dos formas de verificación, como una contraseña de usuario y una notificación de la aplicación Microsoft Authenticator o una llamada telefónica. MFA reduce en gran medida el riesgo de que se puedan usar credenciales robadas para acceder a su entorno. Microsoft 365 usa el servicio Multi-Factor Authentication de Azure AD para inicios de sesión basados en MFA.|Microsoft 365 E3 o E5|
 |[Acceso condicional](/azure/active-directory/conditional-access/overview)|Azure AD evalúa las condiciones del inicio de sesión del usuario y usa directivas de acceso condicional para determinar el acceso permitido. Por ejemplo, en esta guía se muestra cómo crear una directiva de acceso condicional para requerir el cumplimiento de dispositivos para el acceso a datos confidenciales. Esto reduce en gran medida el riesgo de que un hacker con su propio dispositivo y credenciales robadas pueda acceder a sus datos confidenciales. También protege la información confidencial en los dispositivos, ya que los dispositivos deben cumplir requisitos específicos para el estado y la seguridad.|Microsoft 365 E3 o E5|
-|[grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Las directivas de acceso condicional, la administración de dispositivos con Intune e incluso los permisos para archivos y sitios de su organización dependen de la asignación a cuentas de usuario o grupos de Azure AD. Se recomienda crear Azure AD grupos que se correspondan con los niveles de protección que está implementando. Por ejemplo, es probable que el personal ejecutivo tenga objetivos de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a directivas de acceso condicional y otras directivas que exijan un mayor nivel de protección para el acceso.|Microsoft 365 E3 o E5|
+|[Grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Las directivas de acceso condicional, la administración de dispositivos con Intune e incluso los permisos para archivos y sitios de su organización dependen de la asignación a cuentas de usuario o grupos de Azure AD. Se recomienda crear grupos de Azure AD que se correspondan con los niveles de protección que está implementando. Por ejemplo, es probable que el personal ejecutivo tenga objetivos de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a directivas de acceso condicional y otras directivas que exijan un mayor nivel de protección para el acceso.|Microsoft 365 E3 o E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o licencias de Azure AD Premium P2|
 |[Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permitir que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del departamento de soporte técnico, proporcionando la comprobación de varios métodos de autenticación que el administrador puede controlar.|Microsoft 365 E3 o E5|
-|[Azure AD protección con contraseña](/azure/active-directory/authentication/concept-password-ban-bad)|Detecte y bloquee contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.|Microsoft 365 E3 o E5|
+|[Protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Detecte y bloquee contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.|Microsoft 365 E3 o E5|
 |
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -84,8 +83,8 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 Siga estos pasos para implementar un modelo de identidad y una infraestructura de autenticación para el inquilino de Microsoft 365:
 
 1. [Determine el modelo de identidad en la nube.](deploy-identity-solution-identity-model.md)
-2. [Proteja las cuentas con privilegios de Microsoft 365.](protect-your-global-administrator-accounts.md)
-3. [Proteja las cuentas de usuario Microsoft 365.](microsoft-365-secure-sign-in.md)
+2. [Proteja sus cuentas con privilegios de Microsoft 365.](protect-your-global-administrator-accounts.md)
+3. [Proteja sus cuentas de usuario de Microsoft 365.](microsoft-365-secure-sign-in.md)
 4. Implemente el modelo de identidad [en la nube: solo en la nube](cloud-only-identities.md) o [híbrido](prepare-for-directory-synchronization.md).
 
 [![Determinación del modelo de identidad que se va a usar para el inquilino de Microsoft 365](../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
@@ -103,7 +102,7 @@ Para administrar la implementación de identidades en la nube de Microsoft, cons
 - [Gobierno](manage-microsoft-365-identity-governance.md)
 - [Sincronización de directorios](view-directory-synchronization-status.md)
 
-### <a name="how-microsoft-does-identity-for-microsoft-365"></a>¿Cómo hace Microsoft la identidad para Microsoft 365
+### <a name="how-microsoft-does-identity-for-microsoft-365"></a>Cómo hace Microsoft la identidad para Microsoft 365
 
 Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
 
@@ -111,9 +110,9 @@ Aprenda como los expertos de IT en Microsoft[administran identidades y acceso se
 >Este recurso de TI Showcase solo está disponible en inglés.
 >
 
-### <a name="how-contoso-did-identity-for-microsoft-365"></a>¿Cómo hizo Contoso la identidad para Microsoft 365
+### <a name="how-contoso-did-identity-for-microsoft-365"></a>Cómo contoso hizo la identidad de Microsoft 365
 
-Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa ha implementado una infraestructura de identidad híbrida para Microsoft 365 servicios en la nube, consulte [Identidad para Contoso Corporation](contoso-identity.md).
+Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa ha implementado una infraestructura de identidad híbrida para los servicios en la nube de Microsoft 365, consulte [Identidad para Contoso Corporation](contoso-identity.md).
 
 <!--
 

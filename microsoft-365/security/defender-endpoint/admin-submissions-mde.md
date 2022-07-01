@@ -19,15 +19,13 @@ ms.topic: how-to
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: 79a3ecc07c8b987b2f77455323bc656ca9d2ad4f
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 0d445050ea667d54b8a73eb2f040c8114e1dfcfb
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754697"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601508"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envío de archivos en Microsoft Defender para punto de conexión
 

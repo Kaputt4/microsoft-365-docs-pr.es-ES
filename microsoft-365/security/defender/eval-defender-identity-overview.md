@@ -1,6 +1,6 @@
 ---
-title: Paso 2. Información general sobre Microsoft 365 Defender evaluación de identidades
-description: Use Microsoft 365 Defender para Identity en la solución Microsoft 365 Defender XDR. Pasos para la evaluación de Microsoft 365 Defender identidad, incluidos los requisitos, habilitar o activar la eval y configurar el piloto o la prueba.
+title: Paso 2. Información general de Microsoft 365 Defender para la evaluación de identidades
+description: Use Microsoft 365 Defender for Identity en la solución XDR de Microsoft 365 Defender. Pasos para la evaluación de Microsoft 365 Defender para identidad, incluidos los requisitos, habilitación o activación del eval y configuración del piloto o prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,29 +19,28 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
-- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: d5588a71995a36981662f7560c1d022fd55858a9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755422"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602522"
 ---
-# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Paso 2. Evaluación de Información general sobre identidades de Microsoft Defender
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Paso 2. Información general sobre la evaluación de Microsoft Defender for Identity
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!NOTE]
-> Este artículo también forma parte de la Microsoft 365 Defender XDR de la que hablamos en esta [introducción](eval-overview.md).
+> Este artículo también forma parte de la Microsoft 365 Defender solución XDR de la que hablamos en esta [introducción](eval-overview.md).
 
- Antes de iniciar el proceso que habilita y pilota Microsoft Defender for Identity, si tiene la intención de evaluar Microsoft 365 Defender como una solución de detección y respuesta *(XDR) eXtended*, asegúrese de haber revisado el proceso desde el principio: evaluar [Microsoft 365 Defender](eval-overview.md), incluida la creación de la [ Microsoft 365 Defender de evaluación](eval-create-eval-environment.md).
+ Antes de iniciar el proceso que habilita y realiza pruebas piloto Microsoft Defender for Identity, si tiene previsto evaluar *Microsoft 365 Defender como una solución de detección y respuesta (XDR) eXtended*, asegúrese de que ha revisado el proceso desde el principio: [evaluar Microsoft 365 Defender](eval-overview.md) incluido [el entorno de evaluación de Microsoft 365 Defender](eval-create-eval-environment.md).
 <br>
 
-Siga los pasos siguientes para habilitar y pilotar Microsoft Defender para Identity.
+Siga estos pasos para habilitar y Microsoft Defender for Identity piloto.
 
 :::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Los pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
@@ -49,6 +48,6 @@ En esta tabla se describen los pasos de la ilustración.
 
 | Número de serie|Paso  |Descripción  |
 |---------|---------|---------|
-|1|[Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-identity-architecture.md)    | Comprenda la arquitectura de Defender for Identity y asegúrese de que su entorno cumple los requisitos previos de la arquitectura.       |
-|2|[Habilitar el entorno de evaluación](eval-defender-identity-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
-|3|[Configurar el piloto](eval-defender-identity-pilot.md)     |   Obtenga información sobre la configuración comparativa de su entorno de identidad y pruebe los tutoriales de Defender for Identity.     |
+|1|[Revisión de los requisitos de arquitectura y los conceptos clave](eval-defender-identity-architecture.md)    | Comprenda la arquitectura de Defender for Identity y asegúrese de que el entorno cumple los requisitos previos de la arquitectura.       |
+|2 |[Habilitación del entorno de evaluación](eval-defender-identity-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
+|3 |[Configuración del piloto](eval-defender-identity-pilot.md)     |   Obtenga información sobre la configuración de pruebas comparativas para su entorno de identidad y pruebe los tutoriales de Defender for Identity.     |

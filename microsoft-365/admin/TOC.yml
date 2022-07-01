@@ -4,7 +4,7 @@
     - name: 20 artículos principales de ayuda para administradores
       href: top-m365-admin-articles.yml
     - name: Biblioteca de vídeos de aprendizaje de administración
-      href: admin-video-library.yml
+      href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Introducción
       items:
         - name: Registrarse
@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Crear registros DNS en cualquier host DNS
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: Conectar sus registros DNS en IONOS por 1&1
+              href: dns/create-dns-records-at-1-1-internet.md
+            - name: Conectar sus registros DNS en 123-reg.co.uk
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: Conectar sus registros DNS en Amazon Web Services (AWS)
+              href: dns/create-dns-records-at-aws.md
+            - name: Conectar sus registros DNS en Cloudflare
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: Conectar sus registros DNS en GoDaddy
+              href: dns/create-dns-records-at-godaddy.md
+            - name: Conectar sus registros DNS en Namecheap
+              href: dns/create-dns-records-at-namecheap.md
+            - name: Conectar sus registros DNS en Network Solutions
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: Conectar sus registros DNS en OVH
+              href: dns/create-dns-records-at-ovh.md
+            - name: Conectar sus registros DNS en web.com
+              href: dns/create-dns-records-at-web-com.md
+            - name: Conectar sus registros DNS en Wix
+              href: dns/create-dns-records-at-wix.md
+            - name: Crear registros DNS para Microsoft con DNS basado en Windows
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: Solución de problemas de dominios
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Administrar los datos y servicios

@@ -27,14 +27,16 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Cambie su dirección de correo electrónico a una dirección de correo electrónico descriptivo como tom@fourthcoffee.com comprando un nombre de dominio y añadiéndolo a Microsoft 365.
-ms.openlocfilehash: a71e92b48e7091ae243b62ec594cd2be5ce52406
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c6085ee9c951b9afb3d44460bfd613b63375986
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437291"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602434"
 ---
-# <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>Cambiar la dirección de correo electrónico Microsoft 365 para usar el dominio personalizado
+# <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>Cambiar la dirección de correo electrónico de Microsoft 365 para usar el dominio personalizado
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
@@ -50,9 +52,11 @@ Su dirección de correo electrónico inicial en Office 365 operada por 21Vianet 
 
 ::: moniker-end
 
-Cuando cambie el correo electrónico del dominio para que llegue a Microsoft 365, actualizando el registro MX del dominio durante la instalación, todo el correo electrónico enviado a ese dominio comenzará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y ha creado buzones en Microsoft 365 para todos los usuarios que tengan correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quieres mover el correo electrónico de todos los usuarios de tu dominio a Microsoft 365? En su lugar, puede realizar pasos para [Microsoft 365 piloto con solo algunas direcciones de correo electrónico](../misc/pilot-microsoft-365-from-my-custom-domain.md).
+Al cambiar el correo electrónico del dominio para que llegue a Microsoft 365, actualizando el registro MX del dominio durante la instalación, todo el correo electrónico enviado a ese dominio comenzará a llegar a Microsoft 365. Asegúrese de haber agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tengan correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quieres mover el correo electrónico de todos los usuarios de tu dominio a Microsoft 365? En su lugar, puede realizar pasos para [probar Microsoft 365 con solo algunas direcciones de correo electrónico](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>Configuración del correo electrónico empresarial con un nuevo dominio
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 
@@ -88,13 +92,13 @@ Para poder realizar estos pasos, debe ser Administrador global.
 
 ::: moniker-end
 
-2. Vaya a la página **SetupDomains** > .
+2. Vaya a la página **Dominios** **de instalación** > .
 
 3. En la página **Dominios**, seleccione **Agregar dominio**.
 
 4. Siga los pasos para confirmar que es propietario de su dominio. Se le guiará para que todo esté configurado correctamente con su dominio en Microsoft 365.
 
-5. Vaya a **UsuariosUsuarios** >  **activos**.
+5. Vaya a **Usuarios** > **usuarios activos**.
 
 6. Seleccione un usuario para editar su nombre de usuario y cambiarlo al dominio que acaba de agregar.
 
@@ -103,6 +107,6 @@ Para poder realizar estos pasos, debe ser Administrador global.
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Comprar un dominio personalizado mediante Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
+[Comprar un dominio personalizado con Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
 [Administrar dominios](/admin) (página de vínculo)\
 [Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)

@@ -18,19 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 - m365solution-incidentresponse
-- m365solution-scenario
 - m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a4edb82291ff01a4876ad93d688dbbbf19416c05
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: a919e8893fff0486d7a9a3eb89be1822a73ce437
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435377"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603558"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Investigar y responder con Microsoft 365 Defender
 
@@ -91,4 +90,4 @@ Para obtener más información, consulte [Análisis de amenazas en Microsoft 365
 
 Expertos en amenazas de Microsoft: Las notificaciones de ataque dirigidas son un servicio de búsqueda de amenazas administrado. Una vez que se aplique y se acepte, recibirá notificaciones de ataque dirigidas de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Expertos en amenazas de Microsoft: Expertos a petición le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización y puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como un servicio de suscripción adicional.
 
-Para obtener más información, consulte [Expertos en amenazas de Microsoft en Microsoft 365 información general](/microsoft-365/security/defender/microsoft-threat-experts).
+Para obtener más información, consulte [Expertos en amenazas de Microsoft en Información general de Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).

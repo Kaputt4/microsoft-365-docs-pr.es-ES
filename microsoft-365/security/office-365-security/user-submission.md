@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2881076679f64633afc1ddcac6a9de7df64acb
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530606"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602456"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -48,16 +48,16 @@ La entrega de mensajes notificados por el usuario a un buzón personalizado en l
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos del buzón personalizado
 
 Use los artículos siguientes para configurar los requisitos previos necesarios para que los mensajes notificados por el usuario vayan al buzón personalizado:
- 
-- [Identificar el buzón personalizado como buzón de SecOps en la directiva de entrega avanzada](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+
+- [Identificación del buzón personalizado como buzón de SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
 - [Crear una directiva antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) para el buzón personalizado donde
-    - La purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada). 
-    - la opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes**). 
+  - La purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
+  - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes**).
 
 Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los usuarios que informan de los mensajes:
 
-- [Asegúrese de que el buzón personalizado no forma parte de ninguna directiva de seguridad preestablecida.](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
+- Asegúrese de que el buzón personalizado no forma parte de ninguna directiva de [seguridad preestablecida](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies).
 
 - [Cree una directiva de vínculos seguros](set-up-safe-links-policies.md) para el buzón personalizado donde está desactivado el examen de vínculos seguros (**seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en** la sección \> **De mensajes Desactivada**).
 
@@ -134,7 +134,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. Para ello, establezca el **botón Mensaje de informe de Microsoft Outlook** en **Desactivado** y establezca el **buzón de Mi organización** en un buzón Office 365 de su elección.
 
-El único requisito es que el mensaje original se incluya como . EML o . Datos adjuntos MSG (no comprimidos) en el mensaje que se envía al buzón personalizado (no reenvíe el mensaje original al buzón personalizado). 
+El único requisito es que el mensaje original se incluya como . EML o . Datos adjuntos MSG (no comprimidos) en el mensaje que se envía al buzón personalizado (no reenvíe el mensaje original al buzón personalizado).
 
  > [!NOTE]
  > Si hay varios datos adjuntos de correo electrónico presentes en el correo electrónico, se descartará el envío. Solo se admiten correos electrónicos con datos adjuntos de un correo electrónico.

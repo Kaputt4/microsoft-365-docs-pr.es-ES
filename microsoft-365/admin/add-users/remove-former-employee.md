@@ -28,14 +28,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquee el acceso a Microsoft 365 para que un antiguo empleado no pueda iniciar sesión, proteger los datos de la organización y permitir que otros empleados accedan a su correo electrónico y a los datos de OneDrive.
-ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486228"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601726"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Eliminación de un empleado anterior y protección de datos
+
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Una pregunta que a menudo obtenemos es: "¿Qué debo hacer para proteger los datos y proteger el acceso cuando un empleado deja mi organización?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y a los datos de OneDrive.
 
@@ -78,7 +80,9 @@ Para completar los pasos de esta serie, use estas funcionalidades y característ
 |[Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior](remove-former-employee-step-6.md)|Cuando quita una licencia, puede asignarla a otra persona. O bien, puede eliminar la licencia para no pagar por ella hasta que contrate a otra persona.  <p> Al quitar o eliminar una licencia, el correo electrónico, los contactos y el calendario antiguos del usuario se conservan durante **30 días** y, después, se eliminan permanentemente. Si quita o elimina una licencia, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  |
 |[Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado](remove-former-employee-step-7.md)|Esto quita la cuenta del centro de administración. Mantiene todo organizado.|
 
- ## <a name="watch-delete-a-user"></a>Inspección: Eliminación de un usuario
+## <a name="watch-delete-a-user"></a>Inspección: Eliminación de un usuario
+
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 

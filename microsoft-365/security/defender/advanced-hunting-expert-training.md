@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2036f0b1e749250d42066fc5ea742c550a2f756e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664114"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603327"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtención de formación de expertos sobre la búsqueda avanzada
 
@@ -40,7 +40,7 @@ Aumente su conocimiento de la caza avanzada rápidamente con _Tracking the adver
 
 | Título | Descripción | Reloj | Consultas |
 |---|---|---|---|
-| Episodio 1: KQL aspectos básicos | Este episodio trata los conceptos básicos de la caza avanzada en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzada disponibles y los operadores y sintaxis de KQL básicos. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| Episodio 1: Aspectos básicos de KQL | Este episodio trata los conceptos básicos de la caza avanzada en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzados disponibles y los operadores y sintaxis básicos de KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | Episodio 2: Combinaciones | Siga aprendiendo sobre los datos de búsqueda avanzada y cómo combinar tablas. Obtenga información sobre `inner`las combinaciones , `outer`, `unique`y `semi` y comprenda los matices de la combinación de Kusto `innerunique` predeterminada. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | Episodio 3: Resumen, dinamización y visualización de datos | Ahora que ha aprendido a filtrar, manipular y combinar datos, es el momento de resumir, cuantificar, dinamizar y visualizar. En este episodio se describe el `summarize` operador y varios cálculos, al tiempo que se presentan tablas adicionales en el esquema. También aprenderá a convertir conjuntos de datos en gráficos que pueden ayudarle a extraer información. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
 | Episodio 4: ¡Vamos a cazar! Aplicación de KQL al seguimiento de incidentes | En este episodio, aprenderás a realizar un seguimiento de alguna actividad del atacante. Usamos nuestra comprensión mejorada de Kusto y la búsqueda avanzada para realizar un seguimiento de un ataque. Obtenga información sobre los trucos reales que se usan en el campo, incluidos los ABC de ciberseguridad y cómo aplicarlos a la respuesta a incidentes. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
@@ -89,6 +89,14 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
+
+
+## <a name="other-resources"></a>Otros recursos
+
+| Título | Descripción | Reloj |
+|---|---|---|
+|Combinación de tablas en KQL | Obtenga información sobre la eficacia de combinar tablas para crear resultados significativos. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| Optimización de tablas en KQL | Obtenga información sobre cómo evitar tiempos de espera al ejecutar consultas complejas mediante la optimización de las consultas. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
 ## <a name="related-topics"></a>Temas relacionados
 

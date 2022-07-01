@@ -1,5 +1,5 @@
 ---
-title: Reglas de reducción de superficie expuesta a ataques de prueba (ASR)
+title: Probar las reglas de reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para probar la implementación de reglas de reducción de superficie expuesta a ataques (ASR).
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: facce2b736cb23cc41625b4b7d5c3f8b0ca5cfae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 8bfe3e0d36a02831b5673b92217152ce87804d0a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705283"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601298"
 ---
-# <a name="test-attack-surface-reduction-asr-rules"></a>Reglas de reducción de superficie expuesta a ataques de prueba (ASR)
+# <a name="test-attack-surface-reduction-asr-rules"></a>Probar las reglas de reducción de la superficie expuesta a ataques (ASR)
 
 Probar las reglas de reducción de superficie expuesta a ataques (ASR) le ayuda a determinar si las reglas impedirán las operaciones de línea de negocio antes de habilitar cualquier regla. Al empezar con un grupo pequeño y controlado, puede limitar las posibles interrupciones del trabajo a medida que expande la implementación en toda la organización.
 
@@ -44,8 +43,8 @@ Para comenzar la fase de prueba, active las reglas de ASR con las reglas estable
 
 Puede usar Microsoft Endpoint Manager (MEM) Endpoint Security para configurar reglas ASR personalizadas.
 
-1. Abra [Microsoft Endpoint Manager centro de administración](https://endpoint.microsoft.com/#home).
-2. Vaya a **Seguridad de** >  punto de conexión **Reducción de superficie de ataque**.
+1. Abra [el Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home).
+2. Vaya a **Reducción de la superficie expuesta a ataques** de seguridad  >  de **punto de conexión**.
 3. Seleccione **Crear directiva**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores** y, en **Perfil**, seleccione **Reglas de reducción de superficie expuesta a ataques**.
   
@@ -76,7 +75,7 @@ La nueva directiva de reducción de la superficie expuesta a ataques para las re
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Paso 2: Descripción de la página de informes de reglas de reducción de superficie expuesta a ataques en el portal de Microsoft 365 Defender
 
-La página de informes de reglas de ASR se encuentra en **Microsoft 365 Defender** **portalReportsLas** >  **reglas de reducción de superficie** de  >  Ataque. Esta página tiene tres pestañas:
+La página de informes de reglas de ASR se encuentra en **Microsoft 365 Defender portal** > **informa de** > **las reglas de reducción de la superficie expuesta a ataques**. Esta página tiene tres pestañas:
 
 - Detections
 - Configuración
@@ -138,7 +137,7 @@ En la pestaña Configuraciones, puede comprobar, por dispositivo, qué reglas de
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="Las reglas de reducción de superficie expuesta a ataques habilitadas y el modo" lightbox="images/asr-defender365-configurations.settings.png":::
 
-El vínculo **Comenzar** abre el centro de administración de Microsoft Endpoint Manager, donde puede crear o modificar una directiva de endpoint protection para ASR:
+El vínculo **Introducción** abre el Centro de administración de Microsoft Endpoint Manager, donde puede crear o modificar una directiva de endpoint protection para ASR:
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="Elemento de menú *Seguridad de punto de conexión en la página Información general" lightbox="images/asr-defender365-05b-mem1.png":::
@@ -204,12 +203,12 @@ Id. de evento | Descripción
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+[Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)

@@ -27,14 +27,14 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Obtenga más información sobre los dominios (dominio de onmicrosoft y dominio de transferencia) mediante la búsqueda de respuestas a sus preguntas en preguntas más frecuentes.
-  ms.openlocfilehash: 1aad7ddab71528cd153a30e7c7e3d1c1073b700b
-  ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+  ms.openlocfilehash: e9cf6952abacfe73fcd171a15ee7edf1f19823f6
+  ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/29/2022
-  ms.locfileid: "66492543"
+  ms.lasthandoff: 07/01/2022
+  ms.locfileid: "66603448"
 title: Preguntas más frecuentes de dominios
-summary: "\n\nEste artículo contiene respuestas a las preguntas más frecuentes sobre los dominios de Microsoft 365.\n\nSi no encuentra una respuesta a su pregunta, infórmenos de ello dejando un comentario y lo agregaremos a la lista.\n"
+summary: "\n\nEste artículo contiene respuestas a las preguntas más frecuentes sobre los dominios de Microsoft 365.\n\nConsulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.\n\nSi no encuentra una respuesta a su pregunta, infórmenos de ello dejando un comentario y lo agregaremos a la lista.\n"
 sections:
 - name: Ignorado
   questions:

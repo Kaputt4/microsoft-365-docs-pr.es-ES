@@ -30,34 +30,38 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: Aprenda a importar contactos, calendarios y correos electrónicos de Gmail u otro proveedor de correo electrónico y migrarlos a Microsoft 365.
-ms.openlocfilehash: 7905dd767b29b50466729510ac0e4cff70eb242e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Aprenda a importar contactos, calendarios y correos electrónicos de Gmail u otro proveedor de correo electrónico y a migrarlos a Microsoft 365.
+ms.openlocfilehash: 14f4e1d630c19038f3bf9204d52f62b2f2f18d5d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767525"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602986"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar correo y contactos a Microsoft 365
 
+Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+
 Importe o migre el correo electrónico de Gmail u otro proveedor de correo electrónico a Microsoft 365.
   
- **¿Quiere ayuda con esto?**  [Póngase en contacto Microsoft 365 soporte técnico para empresas](../../business-video/get-help-support.md). 
+ **¿Quieres ayuda con esto?**  [Póngase en contacto con Microsoft 365 para obtener soporte técnico empresarial](../../business-video/get-help-support.md). 
 
 > [!TIP]
-> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
   
-Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de Microsoft 365 [planes](https://go.microsoft.com/fwlink/p/?LinkId=723731).
+Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de [los planes](https://go.microsoft.com/fwlink/p/?LinkId=723731) de Microsoft 365.
   
 ## <a name="watch-import-and-redirect-email"></a>Ver: Importar y redirigir correo electrónico
 
+Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-Después de registrarse Microsoft 365, es posible que aún tenga correo electrónico yendo a una cuenta antigua; por ejemplo, si usó una cuenta de Gmail o Outlook para el trabajo. Puede seguir usando las cuentas nuevas y antiguas, o bien puede importar los datos de la cuenta antigua a la nueva.
+Después de registrarse en Microsoft 365, es posible que todavía tenga un correo electrónico que vaya a una cuenta antigua; por ejemplo, si usó una cuenta de Gmail o Outlook para trabajar. Puede seguir usando las cuentas nuevas y antiguas, o bien puede importar los datos de la cuenta anterior a la nueva.
 
-## <a name="migrate-gmail-to-microsoft-365"></a>Migrar Gmail a Microsoft 365
+## <a name="migrate-gmail-to-microsoft-365"></a>Migración de Gmail a Microsoft 365
 
-Siga estos pasos para importar o migrar el correo electrónico, los contactos y el calendario de Gmail a Outlook con Microsoft 365:
+Siga estos pasos para importar o migrar correo electrónico, contactos y calendario de Gmail a Outlook con Microsoft 365:
   
 - [Importar Gmail a Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
@@ -65,11 +69,11 @@ Siga estos pasos para importar o migrar el correo electrónico, los contactos y 
     
 - [Importar un calendario de Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
 
-## <a name="watch-import-calendars"></a>Watch: Import calendars
+## <a name="watch-import-calendars"></a>Inspección: Importación de calendarios
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-## <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Importar Outlook pst a Microsoft 365 (escritorio)
+## <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Importar archivos pst de Outlook a Microsoft 365 (escritorio)
 
 Siga estos pasos para exportar correo electrónico, contactos y calendarios de Outlook a un archivo .pst y, a continuación, importe ese archivo a Outlook con Microsoft 365:
   
@@ -85,11 +89,11 @@ Si solo quiere hacer esto con sus contactos, siga estos pasos:
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Menú Archivo en Outlook 2016.](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Abra &amp; el comando Exportar en Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Import/Export botón de Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Menú Archivo en Outlook 2016.](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Abra &amp; el comando Exportar en Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Botón Importar o exportar en Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Ver otras cuentas de correo electrónico en Outlook
 
-¿Solo quiere ver el correo electrónico de otro proveedor (como Gmail, Yahoo o Live.com) en Outlook? No tiene por qué realizar ninguna importación ni migración. Puede configurar Outlook o Outlook Web App para que pueda acceder a sus otras cuentas desde el mismo lugar que su buzón de Microsoft 365 y enviar, recibir y leer correo electrónico enviado a esas cuentas.
+¿Solo quiere ver el correo electrónico de otro proveedor (como Gmail, Yahoo o Live.com) en Outlook? No tiene por qué realizar ninguna importación ni migración. Puede configurar Outlook o Outlook Web App para que pueda acceder a sus otras cuentas desde el mismo lugar que el buzón de Microsoft 365 y enviar, recibir y leer el correo electrónico enviado a esas cuentas.
   
 ### <a name="outlook-desktop"></a>Outlook (escritorio)
 
@@ -101,12 +105,12 @@ Agregue una cuenta, como su cuenta privada de Gmail, a Outlook.
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
-## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar masivamente correo electrónico, contactos y calendarios a Microsoft 365
+## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar correo electrónico, contactos y calendarios de forma masiva a Microsoft 365
 
-Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Lea [Formas de migrar varias cuentas de correo electrónico Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) para decidir qué método funciona por usted.
+Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Lea [Formas de migrar varias cuentas de correo electrónico a Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) para decidir qué método funciona para usted.
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Planear la configuración de Microsoft 365 para empresas](plan-your-setup.md) (artículo)\
-[Instalar Office aplicaciones](install-applications.md) (página de vínculos)\
+[Instalación de aplicaciones de Office](install-applications.md) (página de vínculos)\
 [Información general del Centro de administración de Microsoft 365] (Información general del Centro de administración de Microsoft 365] (../admin-overview/admin-center-overview.md) (vídeo)
