@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para ayudar a abordar los riesgos.
-ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dc08d38da7c02ef0c02401244934b7d2338ab5f7
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078234"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574115"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Administrador de cumplimiento de Microsoft Purview
 
@@ -36,7 +36,7 @@ ms.locfileid: "65078234"
 
 ## <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> que le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> que le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
 
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:
 <br>
@@ -53,15 +53,15 @@ El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir e
 
 - Una puntuación de cumplimiento basada en riesgos que le ayudará a comprender su posición de cumplimiento mediante la medición del progreso en la realización de acciones de mejora.
 
-El panel del Administrador de cumplimiento muestra la puntuación de cumplimiento actual, le ayuda a ver lo que necesita atención y le guía a las acciones clave de mejora. A continuación se muestra un ejemplo del aspecto que tendrá el panel de Compliance Manager:
+La página de información general del Administrador de cumplimiento muestra la puntuación de cumplimiento actual, le ayuda a ver lo que necesita atención y le guía a las acciones de mejora clave. A continuación se muestra un ejemplo de la página de información general:
 
-![Panel del Administrador de cumplimiento.](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
+![Panel del Administrador de cumplimiento.](../media/compliance-manager-overview.png "Página de información general del Administrador de cumplimiento")
 
 ## <a name="understanding-your-compliance-score"></a>Descripción de la puntuación de cumplimiento
 
 El Administrador de cumplimiento le concede puntos por completar las acciones de mejora realizadas para cumplir con una normativa, estándar o directiva, y combina esos puntos en una puntuación de cumplimiento general. Cada acción tiene un impacto diferente en la puntuación en función de los posibles riesgos implicados. La puntuación de cumplimiento puede ayudar a priorizar en qué acción centrarse para mejorar la posición general de cumplimiento.
 
-El Administrador de cumplimiento proporciona una puntuación inicial basada en la base de referencia de protección de datos Microsoft 365. Esta línea base es un conjunto de controles que incluye normas clave y estándares para la protección de datos y la gobernanza general de datos.
+El Administrador de cumplimiento proporciona una puntuación inicial basada en la línea base de protección de datos de Microsoft 365. Esta línea base es un conjunto de controles que incluye normas clave y estándares para la protección de datos y la gobernanza general de datos.
 
 ##### <a name="learn-more"></a>Más información
 
@@ -158,7 +158,7 @@ El Administrador de cumplimiento está disponible en los siguientes idiomas:
 
 ## <a name="next-steps-set-up-and-customize"></a>Pasos siguientes: configuración y personalización
 
-Obtenga información sobre cómo iniciar sesión, asignar permisos y roles, configurar la configuración y personalizar la vista del panel en [Comenzar con el Administrador de cumplimiento](compliance-manager-setup.md).
+Obtenga información sobre cómo iniciar sesión, asignar permisos y roles, configurar opciones y personalizar la vista del panel en [Introducción al Administrador de cumplimiento](compliance-manager-setup.md).
 
 A continuación, empiece a personalizar el Administrador de cumplimiento para ayudarle a cumplir con los estándares del sector que más le importan a su organización mediante [la configuración de evaluaciones](compliance-manager-assessments.md).
 

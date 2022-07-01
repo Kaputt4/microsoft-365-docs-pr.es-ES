@@ -1,5 +1,5 @@
 ---
-title: Trabajar con acciones de mejora en Microsoft Purview Administrador de cumplimiento
+title: Trabajar con acciones de mejora en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo implementar y probar controles trabajando con acciones de mejora en Microsoft Purview Administrador de cumplimiento. Asigne trabajo, almacene documentación y exporte informes.
-ms.openlocfilehash: 9dca4f3a742b82a2cf119ceb40b04241d1b5177f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Obtenga información sobre cómo implementar y probar controles trabajando con acciones de mejora en el Administrador de cumplimiento de Microsoft Purview. Asigne trabajo, almacene documentación y exporte informes.
+ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621765"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574286"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Trabajar con acciones de mejora en el Administrador de cumplimiento
 
@@ -67,7 +67,7 @@ Una vez que identifique al asignador adecuado, asegúrese de que tienen un [rol 
 3. Seleccione **Asignar**. El usuario asignado recibirá un correo electrónico en el que se explica que se le ha asignado la acción de mejora, con un vínculo directo a la acción de mejora.
 
 > [!NOTE]
-> Los clientes de Community (GCC) alto y departamento de defensa (DoD) del Gobierno de EE. UU. no recibirán un correo electrónico cuando se les asignen acciones de mejora.
+> Los clientes del Departamento de Defensa (DD) y alto de la Comunidad gubernamental de EE. UU. (GCC) no recibirán un correo electrónico cuando se les asignen acciones de mejora.
 
 A continuación, el usuario asignado puede realizar las acciones recomendadas.
 
@@ -146,7 +146,7 @@ El historial de pruebas proporciona un informe descargado de todos los cambios d
 #### <a name="exporting-testing-history"></a>Exportación del historial de pruebas
 Puede exportar un informe que le mostrará un historial de todos los cambios en el estado de prueba para una acción de mejora. Estos informes son especialmente útiles para supervisar el progreso de [las acciones que se prueban automáticamente](#automatic-testing-source), ya que estas acciones se actualizan con regularidad o con frecuencia en función de los datos del inquilino.
 
-En la página de detalles de una acción de mejora, seleccione la pestaña **Pruebas** . En **Historial de pruebas**, seleccione el botón **Exportar historial de pruebas** . El informe se descargará como un archivo Excel.
+En la página de detalles de una acción de mejora, seleccione la pestaña **Pruebas** . En **Historial de pruebas**, seleccione el botón **Exportar historial de pruebas** . El informe se descargará como un archivo de Excel.
 
 ## <a name="update-testing-source"></a>Actualización del origen de las pruebas
 
@@ -156,7 +156,9 @@ El Administrador de cumplimiento proporciona opciones para probar las acciones d
 Las acciones de mejora establecidas para las pruebas manuales son acciones que se prueban e implementan manualmente. Establezca los estados de implementación y estado de prueba necesarios, y cargue los archivos de evidencia en la pestaña **Documentos** . Para algunas acciones, este es el único método disponible para probar las acciones de mejora.
 
 #### <a name="automatic-testing-source"></a>Origen de pruebas automáticas
-Si una acción de implementación es apta para que la pruebe automáticamente el Administrador de cumplimiento, verá la opción **Automático** para probar el origen. El Administrador de cumplimiento detectará señales de otras soluciones de cumplimiento que haya configurado en el entorno de Microsoft 365, así como las acciones complementarias que Microsoft Secure Score también supervisa. El campo **Lógica de prueba** de la pestaña **Pruebas** mostrará qué tipo de directiva o configuración es necesaria en otra solución para que la acción pase y obtenga puntos para la puntuación de cumplimiento.
+El Administrador de cumplimiento puede probar automáticamente determinadas acciones de mejora. [Obtenga detalles](compliance-manager-improvement-actions.md#update-testing-source) sobre qué acciones de mejora se pueden probar automáticamente y qué no.
+
+Para las acciones de mejora que se pueden probar automáticamente, verá la opción **Automático** para probar el origen. El Administrador de cumplimiento detectará señales de otras soluciones de cumplimiento que haya configurado en el entorno de Microsoft 365, así como las acciones complementarias que microsoft Secure Score también supervisa. El campo **Lógica de prueba** de la pestaña **Pruebas** mostrará qué tipo de directiva o configuración es necesaria en otra solución para que la acción pase y obtenga puntos para la puntuación de cumplimiento.
 
 Cuando las señales indican que una acción de mejora se ha implementado correctamente, recibirá automáticamente los puntos aptos para esa acción, que tendrán en cuenta las puntuaciones de los controles y evaluaciones relacionados. Obtenga más información sobre cómo [afecta la evaluación continua a la puntuación de cumplimiento](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
@@ -226,7 +228,7 @@ Después de seleccionar **Revisar actualización** en la página de detalles de 
 Seleccione **Aceptar actualización** para aceptar todos los cambios en la acción de mejora. **Los cambios aceptados son permanentes**.
 
 > [!NOTE]
-> Al aceptar una actualización de una acción, también acepta actualizaciones de cualquier otra versión o instancia de esta acción. Las actualizaciones propagarán todo el inquilino para acciones técnicas y propagarán todo el grupo para acciones no técnicas.
+> Al aceptar una actualización de una acción, también acepta actualizaciones de cualquier otra versión o instancia de esta acción. Novedades propagará todo el inquilino para acciones técnicas y propagará todo el grupo para acciones no técnicas.
 
 Si selecciona **Cancelar**, la actualización no se aplicará a la acción de mejora. Sin embargo, seguirá viendo la notificación **De actualización pendiente** hasta que acepte la actualización.
 

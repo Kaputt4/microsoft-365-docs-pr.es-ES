@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre la administración de incidentes de seguridad
-ms.openlocfilehash: c51282e5ba72d7519e3761bdfdb5c53753d8dad2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b13798d34b0bf353158520e6f9c7cdb20aa77453
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491960"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574177"
 ---
 # <a name="security-incident-management"></a>Administración de incidentes de seguridad
 
@@ -41,5 +41,7 @@ Vea un breve vídeo sobre cómo se responde habitualmente a un incidente.
 Para obtener más información sobre las respuestas a incidentes, siga estos pasos:
 
 1. [Revise las recomendaciones de seguridad](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+
 1. [Revisar las acciones de corrección](m365bp-review-remediation-actions-devices.md).
+
 1. [Responder a una cuenta de correo electrónico en peligro](../security/office-365-security/responding-to-a-compromised-email-account.md).

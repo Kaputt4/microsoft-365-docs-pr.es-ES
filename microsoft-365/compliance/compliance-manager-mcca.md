@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar Configuration Analyzer para Microsoft Purview para ponerse en marcha rápidamente con Microsoft Purview Compliance Manager.
-ms.openlocfilehash: 5d9d786ba88792ac827252ea7ff257d1f80fa70b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554497"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573955"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Analizador de configuración para Microsoft Purview (CAMP)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**En este artículo:** Obtenga información sobre cómo instalar y ejecutar la herramienta Configuration Analyzer for Microsoft Purview (CAMP) para empezar a trabajar rápidamente con Microsoft Compliance Manager.
+**En este artículo:** Obtenga información sobre cómo instalar y ejecutar la herramienta Configuration Analyzer for Microsoft Purview (CAMP) para empezar a trabajar rápidamente con Microsoft Purview Compliance Manager.
 
 ## <a name="compliance-configuration-analyzer-camp-overview"></a>Introducción al Analizador de configuración de cumplimiento (CAMP)
 
@@ -115,7 +115,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 2  | Australia |
   | 3  | Canadá |
   | 4  | Europa (excepto Francia) / Oriente Medio / África |
-  | 5  | Francia |
+  | 5 | Francia |
   | 6  | India |
   | 7  | Japón |
   | 8  | Corea |

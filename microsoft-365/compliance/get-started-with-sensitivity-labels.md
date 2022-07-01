@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: f27f1a475f5880058db40894015dabdec9038be1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2998c993cd605f0371e728bba1cdea555b5e51e0
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286042"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574220"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -46,7 +46,7 @@ Cuando esté listo para empezar a proteger los datos de la organización mediant
 
 3. **Publique las etiquetas.** Una vez configuradas las etiquetas de sensibilidad, publíquelas mediante una directiva de etiqueta. Decida qué usuarios y grupos deben tener las etiquetas y qué configuración de directiva usar. Una sola etiqueta es reutilizable: se define una vez y, después, se puede incluir en varias directivas de etiquetas asignadas a diferentes usuarios. Por ejemplo, puede crear una prueba de las etiquetas de confidencialidad asignando una directiva de etiqueta a solo algunos usuarios. Cuando esté listo para implementar las etiquetas en la organización, puede crear una nueva directiva para sus etiquetas y, esta vez, especificar todos los usuarios.
 
-
+> [!TIP]
 > Es posible que sea apto para la creación automática de etiquetas predeterminadas y una directiva de etiquetas predeterminada que se encarga de los pasos 1 a 3. Para obtener más información, consulte [Etiquetas y directivas predeterminadas para Microsoft Purview Information Protection](mip-easy-trials.md).
 
 Flujo básico para la implementación y aplicación de etiquetas de confidencialidad:

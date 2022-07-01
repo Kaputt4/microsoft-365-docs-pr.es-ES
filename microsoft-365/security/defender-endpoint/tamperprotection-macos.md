@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 594cc36f7e58588b49a1491ce88dcacca2ca5ab4
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: a89d90f462528631d97c4f2e81c24f6ffbcd4189
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554145"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573934"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de la configuración de seguridad de macOS con protección contra alteraciones
 
@@ -31,13 +31,16 @@ ms.locfileid: "66554145"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+
 La protección contra alteraciones en macOS ayuda a evitar que los usuarios no autorizados realicen cambios no deseados en la configuración de seguridad. La protección contra alteraciones ayuda a evitar la eliminación no autorizada de Microsoft Defender para punto de conexión en macOS. Esta funcionalidad también ayuda a que los archivos de seguridad, los procesos y los valores de configuración importantes no se manipulen.
 
 Puede establecer la protección contra alteraciones en los modos siguientes:
 
 |Tema|Descripción|
 |---|---|
-|Deshabilitado|La protección contra alteraciones está completamente desactivada (este es el modo predeterminado después de la instalación)|
+|Deshabilitada|La protección contra alteraciones está completamente desactivada (este es el modo predeterminado después de la instalación)|
 |Auditoría|Las operaciones de manipulación se registran, pero no se bloquean|
 |Bloquear|La protección contra alteraciones está activada, las operaciones de manipulación están bloqueadas|
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363273"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574011"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -36,7 +36,7 @@ ms.locfileid: "65363273"
 - Windows
 
 > [!TIP]
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [La protección de red](network-protection.md) ayuda a evitar que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. Puede [auditar la protección de red](evaluate-network-protection.md) en un entorno de prueba para ver qué aplicaciones se bloquearían antes de habilitar la protección de red.
 
@@ -67,7 +67,7 @@ Si falta la clave, vaya a **SOFTWARE** \> **Microsoft** \> **Windows Defender** 
 Habilite la protección de red mediante cualquiera de estos métodos:
 
 - [PowerShell](#powershell)
-- [Administración de dispositivos móvil (MDM)](#mobile-device-management-mdm)
+- [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Directiva de grupo](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -99,7 +99,29 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Def
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-1. Inicie sesión en el centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>Microsoft Defender para punto de conexión método baseline
+
+1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Vaya a Líneas **base** >  de **seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión línea base**.
+3. Seleccione **Crear un perfil**, proporcione un nombre para el perfil y, a continuación, seleccione **Siguiente**.
+4. En la sección **Configuración** , vaya a **Reglas de reducción de superficie expuesta a ataques** > establezca **Bloquear**, **Habilitar** o **Auditar** para **habilitar la protección de red**. Seleccione **Siguiente**.
+5. Seleccione las **etiquetas y asignaciones** de **ámbito** adecuadas según sea necesario para su organización.
+7. Revise toda la información y, a continuación, seleccione **Crear**.
+
+#### <a name="antivirus-policy-method"></a>Método de directiva antivirus
+1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Vaya a **Antivirus** de seguridad  > **de puntos de conexión**.
+3. Seleccione **Crear una directiva.**
+4. En el control flotante **Crear una directiva**, elija **Windows 10, Windows 11 y Windows Server** en la lista **Plataforma**.
+5. Elija **Antivirus de Microsoft Defender** en la lista **Perfil** y, a continuación, elija **Crear.**
+6. Proporcione un nombre para el perfil y, a continuación, seleccione **Siguiente**.
+7. En la sección **Configuración** , seleccione **Deshabilitado**, **Habilitado (modo de bloque)** o **Habilitado (modo de auditoría)** para **Habilitar protección de red** y, a continuación, seleccione **Siguiente**.
+8. Seleccione las **etiquetas Asignaciones** y **Ámbito** adecuadas según sea necesario para su organización.
+9. Revise toda la información y, a continuación, seleccione **Crear**.
+
+#### <a name="configuration-profile-method"></a>Método de perfil de configuración
+
+1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
 
 2. Vaya a **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
@@ -107,9 +129,9 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Def
 
 4. En El **nombre de la plantilla**, elija **Endpoint Protection** en la lista de plantillas y, a continuación, seleccione **Crear**.
 
-4. Vaya a **Endpoint** **protectionBasics** > , proporcione un nombre para el perfil y, a continuación, seleccione **Siguiente**.
+4. Vaya a **Aspectos básicos** **de Endpoint protection** > , proporcione un nombre para el perfil y, a continuación, seleccione **Siguiente**.
 
-5. En la sección **Configuración**, vaya a **Protección contra vulnerabilidades de seguridad de Microsoft Defender** >  **Filtro de** >  red **Protección de** >  **redEnable** o **Auditoría**. Seleccione **Siguiente**.
+5. En la sección **Configuración**, vaya a **Protección contra vulnerabilidades** >  de seguridad de Microsoft Defender **Network filtrando** > **Protección** >  de red **Habilitar** o **Auditar**. Seleccione **Siguiente**.
 
 6. Seleccione las **etiquetas de ámbito**, **las asignaciones** y **las reglas de aplicabilidad** adecuadas según sea necesario para su organización. Los administradores pueden establecer más requisitos.
 
@@ -127,15 +149,15 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> Windows Defender **protección de red** **de Exploit Guard**\>.
+3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender **Windows Defender Protección de red de Protección contra vulnerabilidades** \> de **seguridad**.
 
    > [!NOTE]
-   > En las versiones anteriores de Windows, la ruta de acceso de la directiva de grupo puede decir "Antivirus de Windows Defender" en lugar de "Antivirus de Microsoft Defender".
+   > En versiones anteriores de Windows, la ruta de acceso de la directiva de grupo puede decir "Antivirus de Windows Defender" en lugar de "Antivirus de Microsoft Defender".
 
 4. Haga doble clic en la configuración **Impedir que usuarios y aplicaciones accedan a sitios web peligrosos** y establezca la opción **en Habilitado**. En la sección de opciones, debe especificar una de las siguientes opciones:
     - **Bloquear** : los usuarios no pueden acceder a direcciones IP y dominios malintencionados.
     - **Deshabilitar (valor predeterminado):** la característica Protección de red no funcionará. No se bloqueará el acceso a dominios malintencionados a los usuarios.
-    - **Modo de auditoría**: si un usuario visita una dirección IP o dominio malintencionados, se registrará un evento en el registro de eventos Windows. Sin embargo, no se impedirá que el usuario visite la dirección.
+    - **Modo de auditoría** : si un usuario visita una dirección IP o dominio malintencionados, se registrará un evento en el registro de eventos de Windows. Sin embargo, no se impedirá que el usuario visite la dirección.
 
    > [!IMPORTANT]
    > Para habilitar completamente la protección de red, debe establecer la opción directiva de grupo **en Habilitado** y también seleccionar **Bloquear** en el menú desplegable de opciones.
@@ -147,7 +169,7 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 
 1. Abre la consola de Configuration Manager.
 
-2. Vaya a **Activos y cumplimiento** >  **Endpoint Protection** >  **Windows Defender Protección contra vulnerabilidades de seguridad**.
+2. Vaya a **Assets and Compliance** > **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. Seleccione **Crear directiva de Protección contra vulnerabilidades** en la cinta de opciones para crear una nueva directiva.
    - Para editar una directiva existente, seleccione la directiva y, a continuación, seleccione **Propiedades** en la cinta de opciones o en el menú contextual. Edite la opción **Configurar protección de red** en la pestaña **Protección de red** .  
@@ -183,7 +205,7 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 > $exploitGuardObject.Put()
 >```  
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
 
