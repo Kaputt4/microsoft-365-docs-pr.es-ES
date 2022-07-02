@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general sobre cómo configurar todos los BYOD (bring your own devices) con protección contra ciberataques y otras amenazas maliciosas y vulnerabilidades.
-ms.openlocfilehash: 1ecf39d7d08cd76e0279b0de8869ed14550e020f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 666a0b9af03f5b70ff474e310270eab324cb76ba
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491050"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574265"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configuración de dispositivos (BYOD) no administrados 
 

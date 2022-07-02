@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general de seguridad para Microsoft 365 Empresa Premium, que proporciona herramientas de ciberseguridad, como es la autenticación multifactor, que puede usar para prevenir ciberataques.
-ms.openlocfilehash: c6941de1c52eaeaf87f45d5269770fe1fd2585a8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 52dfacaf5d418ef32da0b450a7f93caffa597218
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493673"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574304"
 ---
 # <a name="bump-up-security"></a>Aumentar la seguridad
 
-En esta misión, usted amplías tus defensas de seguridad. Como ya debe saber, el acceso a la cuenta de administrador es un objetivo de gran valor para hackers malintencionados, y proteger esas cuentas es fundamental porque el acceso y el control que proporcionan pueden afectar a todo el sistema. 
+En esta misión, usted ampliará sus defensas de seguridad. Como ya debe saber, el acceso a la cuenta de administrador es un objetivo de gran valor para hackers malintencionados, y proteger esas cuentas es fundamental porque el acceso y el control que proporcionan pueden afectar a todo el sistema. 
 
 Para tener éxito en esta misión, usted va a configurar los distintos roles de administrador y niveles específicos de seguridad para ellos. También aplicará los requisitos de MFA y configurará los valores predeterminados de seguridad. Manténgase en alerta: la seguridad y confiabilidad del sistema depende de usted.
 

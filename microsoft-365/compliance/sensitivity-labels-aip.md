@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: b924c9763d29e76f711a8e414c0a2086e09a81d8
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: aca0c6522b52d4915802b9d6baefffa5151ccbda
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556864"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574198"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -166,7 +166,7 @@ Las siguientes configuraciones del complemento AIP aún no son compatibles con e
 
 - [Herencia de etiquetas de archivos adjuntos a mensajes de correo electrónico](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [S/MIME para Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
-    - Esta configuración está empezando a [implementarse en versión preliminar para el etiquetado integrado](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
+    - Esta configuración está empezando a [implementarse en versión preliminar para el etiquetado integrado en todas las plataformas](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
 - [Compartir en exceso los mensajes emergentes para Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Subetiqueta predeterminada para una etiqueta principal](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [Quitar marcas de contenido externo](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )

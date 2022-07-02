@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general sobre cómo formar a su equipo para enseñarles a proteger el correo electrónico contra malware, suplantación de identidad (phishing) y otros ciberataques malintencionados mediante las herramientas de ciberseguridad incluidas con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 7ffefa26e53dcde0f34451db3dfdccd014b9b555
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f22b8c71f88edbbf587ccf7fd7f25f52c7c275bf
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493668"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573834"
 ---
 # <a name="protect-all-email"></a>Proteger todo el correo electrónico
 
-Como ya sabe, los mensajes de correo electrónico están llenos de ataques malintencionados que a simple vista parecen comunicaciones inofensivas. Además, los sistemas de correo electrónico son especialmente vulnerables porque el correo electrónico lo controlan todos los usuarios de la organización y depende de que las personas tomen decisiones siempre seguras con esas comunicaciones. Para este cometido, asegúrese de que los sistemas de correo electrónico están a salvo de los atacantes. 
+Como ya sabe, los mensajes de correo electrónico están llenos de ataques malintencionados que a simple vista parecen comunicaciones inofensivas. Además, los sistemas de correo electrónico son especialmente vulnerables porque el correo electrónico es gestionado por todos los usuarios de la organización y se basa en que las personas toman decisiones seguras de forma coherente con esas comunicaciones. En esta misión, aprenderá cómo los miembros de las organizaciones pueden ayudar a mantener el sistema a salvo de posibles atacantes.
 
 Los objetivos de este cometido son:
 

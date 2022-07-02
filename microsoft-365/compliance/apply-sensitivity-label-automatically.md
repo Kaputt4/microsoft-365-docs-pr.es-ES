@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 2726a55b05ff27caee3c9739ad9d8604ce1a29d6
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 79c0ac8873ba23604f394340bb030c1412a6212a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556930"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574252"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -30,7 +30,7 @@ ms.locfileid: "66556930"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!TIP]
+> [!NOTE]
 > Para obtener información sobre cómo aplicar automáticamente una etiqueta de confidencialidad en el mapa de datos, consulte [Etiquetado en el mapa de datos de Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dicha etiqueta a archivos o correos electrónicos cuando se cumplan las condiciones especificadas.
@@ -79,6 +79,12 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Si esta etiqueta está configurada para [cifrado](encryption-sensitivity-labels.md), ese cifrado siempre se aplica cuando el remitente es de su organización. De forma predeterminada, ese cifrado no se aplica cuando el remitente está fuera de la organización, pero se puede aplicar configurando **opciones adicionales para el** de correo electrónico y especificando un propietario de Rights Management.
     - Cuando la etiqueta aplica el cifrado, el emisor de [propietario de Rights Management y Rights Management ](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico cuando el remitente es de su propia organización. Cuando el remitente está fuera de la organización, puede especificar un propietario de Rights Management para el correo electrónico entrante etiquetado y cifrado por la directiva.
     - Si la etiqueta está configurada para aplicar [marcas dinámicas](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenga en cuenta que, para el correo electrónico entrante, esta configuración puede dar lugar a que se muestren los nombres de personas ajenas a la organización.
+
+> [!TIP]
+> Para algunos clientes nuevos ofrecemos la configuración automática de ajustes de etiquetado automático predeterminados para el etiquetado del lado cliente y el etiquetado del lado servicio. Incluso si no es elegible para esta configuración automática, es posible que le resulte útil hacer referencia a su configuración. Por ejemplo, puede configurar manualmente las etiquetas ya existentes y crear sus propias directivas de etiquetado automático con la misma configuración para ayudar a acelerar la implementación del etiquetado.
+> 
+> Para obtener más información, consulte [Etiquetas y directivas predeterminadas para Microsoft Purview Information Protection](mip-easy-trials.md).
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparar el etiquetado automático de las aplicaciones de Office con las directivas de etiquetado automático
 

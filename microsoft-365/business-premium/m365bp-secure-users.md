@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Más información sobre Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad
-ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489889"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574164"
 ---
 # <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Cómo las recomendaciones de seguridad de Microsoft 365 afectan a sus usuarios
 
@@ -67,7 +67,7 @@ Microsoft 365 Empresa Premium incluye sus aplicaciones de productividad de Offic
 
 ## <a name="resources-to-train-your-users"></a>Recursos para entrenar a los usuarios
 
-Las recomendaciones de seguridad proporcionadas en esta biblioteca dificultan mucho más el acceso de los atacantes cibernéticos a su entorno. Sin embargo, una parte importante de la estrategia de seguridad incluye entrenar a sus usuarios&mdash; de su empresa que usan su sistema con regularidad. Los usuarios pueden ayudar para ser su primera línea de defensa. Todo el mundo debe saber cómo trabajar de forma productiva mientras se mantiene un entorno más seguro. 
+Las recomendaciones de seguridad proporcionadas en estas misiones hacen que sea mucho más difícil para los ciberatacantes obtener acceso a su entorno. Sin embargo, una parte importante de la estrategia de seguridad incluye formación para los miembros de la organización&mdash;las personas de su empresa que usan los sistemas con regularidad. Los usuarios pueden ser la primera línea de defensa. Todo el mundo debe saber cómo trabajar de forma productiva mientras se mantiene un entorno más seguro.
 
 Los recursos están disponibles para ayudar a todos los usuarios de su organización a:
 
