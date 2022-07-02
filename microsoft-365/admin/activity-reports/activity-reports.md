@@ -23,20 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486327"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601616"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
-Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes.
+Consulte la [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
+Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
+  
 Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
 
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Mirar: Actuar sobre un informe de uso de Office 365
+  
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 

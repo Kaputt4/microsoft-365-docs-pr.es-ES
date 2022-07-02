@@ -2,12 +2,12 @@
   href: index.md
 - name: Modelos personalizados
   items:
+    - name: Diferencias entre modelos personalizados
+      href: difference-between-document-understanding-and-form-processing-model.md
     - name: Comprensión mediante documentos
       items:
         - name: Información general
           href: document-understanding-overview.md
-        - name: Diferencias entre los modelos
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: Importar un modelo de ejemplo
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Crear un centro de contenido
@@ -46,8 +46,6 @@
       items:
         - name: Información general
           href: form-processing-overview.md
-        - name: Diferencias entre los modelos
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: Crear un modelo de procesamiento de formularios
           href: create-a-form-processing-model.md
         - name: Aplicar una etiqueta de retención

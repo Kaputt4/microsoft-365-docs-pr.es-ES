@@ -23,16 +23,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayudar a proteger la información confidencial de sus clientes.
-ms.openlocfilehash: ad95e4dc99a9957812ee09ace69d66b169ef7879
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: db1993a99292f9b90a3b567007b96742b0f359b2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491902"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602413"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
+
+Consulte la [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+
 La suscripción Microsoft 365 Empresa Premium incluye características de cumplimiento y privacidad. Estas funcionalidades ayudan a proteger los datos de su empresa y a mantener segura su información confidencial y la de sus clientes. Este artículo está diseñado para ayudarle a comenzar con las características de cumplimiento.
+
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -72,6 +76,8 @@ A continuación se muestra cómo empezar:
 Para obtener más información sobre las características de cumplimiento en Microsoft 365 para empresas, consulte la [documentación de Microsoft Purview](../compliance/index.yml).
 
 ## <a name="use-sensitivity-labels"></a>Usar etiquetas de confidencialidad
+
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198022).
 
 Las etiquetas de confidencialidad están disponibles en aplicaciones Office (como Outlook, Word, Excel y PowerPoint). Algunos ejemplos de etiquetas son:
 

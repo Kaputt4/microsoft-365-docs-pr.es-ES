@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo configurar dispositivos administrados
-ms.openlocfilehash: 990b6a042e57a7964918e7e339bdfc3987c3c477
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: cd65c70f9ed9c2ec43196d792c81fa3e82f4e05d
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490265"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573990"
 ---
 # <a name="set-up-managed-devices"></a>Configurar dispositivos administrados
 
 Un dispositivo "administrado" es uno que está bajo control y supervisado por la organización y, por lo tanto, se actualiza periódicamente y es seguro. Tener dispositivos bajo control administrado es un objetivo crítico. Para controlar estos dispositivos, se inscriben en un administrador de dispositivos con Intune y Azure Active Directory Premium, que se incluyen con Microsoft Business Premium. 
 
-Un equipo Windows 10 se considera administrado después de que los usuarios hayan completado los dos pasos siguientes:
+Un equipo Windows 10 u 11 se considera administrado después de que los usuarios hayan completado los dos pasos siguientes:
 
 1. Configure directivas de protección de datos y dispositivos en el [wizardsetup](../business/set-up.md).
 
@@ -42,7 +42,7 @@ Un equipo Windows 10 se considera administrado después de que los usuarios haya
 
 ## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Inscribir dispositivos en Microsoft Endpoint Manager
 
-Ahora puede inscribir dispositivos en Endpoint Manager, vaya a https://endpoint.microsoft.com y seleccione **Dispositivos** > **Inscribir dispositivos**. 
+Ahora puede inscribir dispositivos en Endpoint Manager. Vaya a https://endpoint.microsoft.com y seleccione **Dispositivos** > **Inscribir dispositivos**. 
 
 :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Usar Microsoft Endpoint Manager para inscribir los dispositivos."::: 
 
