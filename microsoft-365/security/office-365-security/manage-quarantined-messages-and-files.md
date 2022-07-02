@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839807"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607309"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -41,9 +41,9 @@ Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes e
 
 De forma predeterminada, solo los administradores pueden administrar mensajes que se pusieron en cuarentena como malware, suplantación de identidad de alta confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Sin embargo, los administradores pueden usar _directivas de cuarentena_ para definir qué pueden hacer los usuarios en los mensajes en cuarentena en función de por qué se puso en cuarentena el mensaje (para las características admitidas). Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
-Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos que [Caja fuerte Datos adjuntos pusieron en cuarentena para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena [por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones).
+Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online).
 
 Vea este breve vídeo para aprender a administrar los mensajes en cuarentena como administrador. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
@@ -113,7 +113,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
      - **Regla de transporte** (regla de flujo de correo)
      - **Masivo**
      - **Correo no deseado**
-     - **Malware**: directivas antimalware en EOP o directivas de datos adjuntos de Caja fuerte en Defender para Office 365. El valor **tipo de directiva** indica qué característica se usó.
+     - **Malware**: directivas antimalware en EOP o directivas de datos adjuntos seguros en Defender para Office 365. El valor **tipo de directiva** indica qué característica se usó.
      - **Phishing**: el veredicto de filtro de correo no deseado era **suplantación de identidad (phishing** ) o protección contra suplantación de identidad puso en cuarentena el mensaje ([configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) o [protección contra suplantación] (set-up-anti-phishing-policies).
      - **Suplantación de identidad de alta confianza**
    - **Destinatario**: **todos los usuarios** o **Solo yo**. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
@@ -137,6 +137,9 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
    - Asunto. Use el asunto completo del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    Cuando haya introducido los criterios de búsqueda, pulse Entrar para filtrar los resultados.
+
+   > [!NOTE]
+   > El cuadro **Buscar** de la página **cuarentena** principal buscará solo los elementos en cuarentena en la vista actual, no en toda la cuarentena. Para buscar en todos los elementos en cuarentena, use **El filtro** y el control flotante **Filtros** resultante. 
 
 Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje para ver los detalles del mismo y para realizar una acción (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
 
@@ -219,7 +222,7 @@ Las siguientes acciones están disponibles después de hacer clic en ![el icono 
   - **Seleccione el tipo de envío**: **Correo electrónico** (valor predeterminado), **DIRECCIÓN URL** o **Archivo**.
   - **Agregue el identificador de mensaje de red o cargue el archivo de correo electrónico**: seleccione una de las siguientes opciones:
     - **Agregue el identificador de mensaje de red de correo electrónico** (valor predeterminado, con el valor correspondiente en el cuadro)
-    - **Upload el archivo de correo electrónico (.msg o eml):** haga clic en **Examinar archivos** para buscar y seleccione el archivo de mensajes .msg o .eml que se va a enviar.
+    - **Cargar el archivo de correo electrónico (.msg o eml):** haga clic en **Examinar archivos** para buscar y seleccione el archivo de mensajes .msg o .eml que se va a enviar.
   - **Elija un destinatario que tenga un problema**: seleccione uno (preferido) o más destinatarios originales del mensaje para analizar las directivas que se le aplicaron.
   - **Seleccione un motivo para enviar a Microsoft**: elija una de las siguientes opciones:
     - **No se debería haber bloqueado (falso positivo)** (valor predeterminado): están disponibles las siguientes opciones:
@@ -280,7 +283,7 @@ Cuando se seleccionan varios mensajes en cuarentena en la lista (hasta 100) haci
 > [!NOTE]
 > Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para los suscriptores de Microsoft Defender para Office 365 Plan 1 o Plan 2.
 
-En las organizaciones con Defender para Office 365, los administradores pueden administrar los archivos que Caja fuerte Datos adjuntos pusieron en cuarentena para SharePoint, OneDrive y Microsoft Teams. Para habilitar la protección de estos archivos, consulte [Activar datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+En las organizaciones con Defender para Office 365, los administradores pueden administrar archivos que se pusieron en cuarentena mediante datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams. Para habilitar la protección de estos archivos, consulte [Activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Visualización de archivos en cuarentena
 
@@ -371,7 +374,7 @@ Los cmdlets que se usan para ver y administrar mensajes y archivos en cuarentena
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): tenga en cuenta que este cmdlet solo es para mensajes, no archivos en cuarentena de Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): tenga en cuenta que este cmdlet solo es para mensajes, no archivos en cuarentena de datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
 ## <a name="for-more-information"></a>Más información

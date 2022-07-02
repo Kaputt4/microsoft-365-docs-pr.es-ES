@@ -74,6 +74,8 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protección de dispositivos Windows
           items:
+            - name: Actualizar a Windows 10 Pro (si es necesario)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Proteger dispositivos Windows
               href: m365bp-secure-windows-devices.md
             - name: Administrar dispositivos Windows

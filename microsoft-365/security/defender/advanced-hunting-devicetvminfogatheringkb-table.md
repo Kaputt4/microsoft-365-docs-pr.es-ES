@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 056f208f1f7739276319bfaad36225718543b718
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: c654ca395762426072bf8e5e20fd3f62e78a480c
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532742"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607113"
 ---
 # <a name="devicetvminfogatheringkb"></a>DeviceTvmInfoGatheringKB
 
@@ -34,7 +34,7 @@ ms.locfileid: "66532742"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 La `DeviceTvmInfoGatheringKB` tabla del esquema de búsqueda avanzada contiene metadatos para [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) datos de eventos de evaluación recopilados en la `DeviceTvmInfoGathering` tabla. La `DeviceTvmInfoGatheringKB` tabla contiene la lista de diversas evaluaciones de la configuración y superficie expuesta a ataques usadas por la recopilación de información de Administración de vulnerabilidades de Defender para evaluar los dispositivos. Use esta referencia para crear consultas que devuelvan información de la tabla.
@@ -80,12 +80,11 @@ Con los campos resultantes, puede usar la `DeviceTvmInfoGathering` tabla para ob
 ```kusto
 // Return all devices on which the TLS version 1.0 is enabled 
 DeviceTvmInfoGathering 
-| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
+| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
 ```
 
-
-
 ## <a name="related-topics"></a>Temas relacionados
+
 - [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

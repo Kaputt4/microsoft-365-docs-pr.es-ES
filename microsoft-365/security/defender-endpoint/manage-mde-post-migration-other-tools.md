@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 51ead270b8e8223b2fd67cfd5fb1cf4e9f8a05d4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603305"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607375"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administración de Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe
 
@@ -35,7 +35,6 @@ ms.locfileid: "66603305"
 
 > [!NOTE]
 > Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar las características de protección contra amenazas de su organización para dispositivos (también conocidos como puntos de conexión). Endpoint Manager incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager de punto de conexión de Microsoft](/mem/configmgr/core/understand/introduction).
->
 > - [Más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Administración conjunta de Microsoft Defender para punto de conexión en dispositivos Windows 10 y Windows 11 con Configuration Manager y Intune](manage-mde-post-migration-intune.md)
 > - [Administración de Microsoft Defender para punto de conexión con Intune](manage-mde-post-migration-intune.md)

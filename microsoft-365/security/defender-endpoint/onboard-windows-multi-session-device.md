@@ -1,6 +1,6 @@
 ---
-title: Incorporación de Windows dispositivos de varias sesiones en Azure Virtual Desktop
-description: Obtenga más información en este artículo sobre la incorporación de Windows dispositivos de varias sesiones en Azure Virtual Desktop.
+title: Incorporación de dispositivos Windows en Azure Virtual Desktop
+description: Información sobre la incorporación de dispositivos Windows a Defender para punto de conexión en Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, Microsoft Defender, punto de conexión, incorporación
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,26 +15,27 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7a093a3b50d7153c71eecb9707ff8ab0dbef0d20
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013296"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607441"
 ---
-# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación de Windows dispositivos de varias sesiones en Azure Virtual Desktop
+# <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Incorporación de dispositivos Windows en Azure Virtual Desktop
 
 6 minutos para leer
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Windows sesión múltiple que se ejecuta en Azure Virtual Desktop (AVD)
+- Sesión múltiple de Windows que se ejecuta en Azure Virtual Desktop (AVD)
+- [Windows 10 Enterprise multisesión](/microsoft-365/security/defender-endpoint/azure-server-integration)
 
 Microsoft Defender para punto de conexión admite la supervisión de sesiones de VDI y Azure Virtual Desktop. En función de las necesidades de su organización, es posible que tenga que implementar sesiones de VDI o Azure Virtual Desktop para ayudar a los empleados a acceder a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para punto de conexión, puede supervisar estas máquinas virtuales para detectar actividad anómala.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Familiarícese con las [consideraciones de VDI no persistente](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Aunque [Azure Virtual Desktop](/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, proporciona formas de usar una imagen de Windows dorada que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la volatilidad en el entorno y, por tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para punto de conexión, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
+Familiarícese con las [consideraciones de VDI no persistente](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Aunque [Azure Virtual Desktop](/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, proporciona formas de usar una imagen dorada de Windows que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la volatilidad en el entorno y, por tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para punto de conexión, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
 
 > [!NOTE]
 > En función del método de incorporación que elija, los dispositivos pueden aparecer en Microsoft Defender para punto de conexión portal como:
@@ -73,7 +74,7 @@ En este escenario se usa un script de ubicación central y se ejecuta mediante u
 
 1. Abra el archivo de .zip del paquete de configuración de VDI (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. En el panel de navegación del portal de Microsoft 365 Defender, seleccione **Configuración** \> **Incorporación** de **puntos** \> de conexión (en **Administración de dispositivos**).
+    1. En el panel de navegación del portal de Microsoft 365 Defender, seleccione **Configuración** \> **Puntos de conexión** \> **Incorporación** (en **Administración de dispositivos**).
     1. Seleccione Windows 10 o Windows 11 como sistema operativo.
     1. En el campo **Método de implementación** , seleccione Scripts de incorporación de VDI para puntos de conexión no persistentes.
     1. Haga clic en **Descargar paquete** y guarde el archivo .zip.
@@ -154,12 +155,12 @@ Además, si usa perfiles de usuario de FSlogix, se recomienda excluir los siguie
 
 #### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Nota sobre las licencias: Al usar Windows Enterprise sesiones múltiples, en función de sus requisitos, puede optar por tener a todos los usuarios con licencia a través de Microsoft Defender para punto de conexión (por usuario), Windows Enterprise E5, Microsoft 365 Security, o Microsoft 365 E5, o tener la máquina virtual con licencia a través de Microsoft Defender for Cloud.
+Nota sobre las licencias: Al usar windows Enterprise multisesión, en función de sus requisitos, puede optar por tener a todos los usuarios con licencia a través de Microsoft Defender para punto de conexión (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o bien tener la máquina virtual con licencia a través de Microsoft Defender for Cloud.
 Los requisitos de licencia para Microsoft Defender para punto de conexión se pueden encontrar en: [Requisitos de licencia](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 
-Solo se admiten Microsoft Edge para el filtrado web en Windows 10 sesión múltiple.
+Solo Se admite Microsoft Edge para el filtrado web en Windows 10 sesión múltiple.
 
 #### <a name="related-links"></a>Vínculos relacionados
 

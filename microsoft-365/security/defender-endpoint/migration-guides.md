@@ -1,6 +1,6 @@
 ---
-title: Guías de migración para cambiar a Microsoft Defender para endpoint
-description: Obtenga información sobre cómo cambiar de una solución que no Microsoft 365 Defender a Microsoft Defender para endpoint
+title: Guías de migración y configuración para pasar a Microsoft Defender para punto de conexión
+description: Obtenga información sobre cómo hacer que el cambio de una solución que no sea Microsoft 365 Defender a Microsoft Defender para punto de conexión
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
@@ -10,20 +10,19 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-- m365solution-scenario
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.technology: mde
-ms.openlocfilehash: 31e9a4497ec4d31ab5623b543d4865b627832f1c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d13d5bf8f33d022824e24e8b1fc879f0826d82da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321512"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607639"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Cambiar a Microsoft Defender para endpoint
+# <a name="move-to-microsoft-defender-for-endpoint"></a>Mover a Microsoft Defender para punto de conexión
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,26 +31,26 @@ ms.locfileid: "62321512"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="migration-guides"></a>Guías de migración
+## <a name="migration-and-setup-guides"></a>Guías de migración y configuración
 
-Si estás pensando en moverte a Defender para Endpoint, tenemos instrucciones para ayudarte. En la tabla siguiente, revise los escenarios. Seleccione el escenario que mejor representa su situación y vea las instrucciones recomendadas.
-
-<br/><br/>
+Si está pensando en pasar a Defender para punto de conexión, tenemos instrucciones para ayudarle. En la tabla siguiente, revise los escenarios. Seleccione el escenario que mejor represente su situación y consulte las instrucciones recomendadas.
 
 |Escenario|Instrucciones|
 |---|---|
-|Todavía no tiene una solución de protección de puntos de conexión en su lugar y desea obtener más información sobre Defender for Endpoint. Quieres ver cómo funciona Defender for Endpoint antes de implementarlo en el entorno.|[Laboratorio de evaluación de Microsoft Defender para puntos de conexión](evaluation-lab.md)|
-|Ya tienes Defender for Endpoint y quieres ayuda para configurar y configurar todo.|[Guía de implementación de Microsoft Defender para puntos de conexión](deployment-phases.md)|
-|Está planeando cambiar de una solución de protección de puntos de conexión que no sea de Microsoft a Defender para endpoint, que incluye Antivirus de Microsoft Defender. Desea obtener información general sobre el proceso de migración y cómo realizar el cambio.|[Cambiar a Microsoft Defender para endpoint](switch-to-mde-overview.md)|
-|Ya has migrado o incorporado a Defender para endpoint. Desea obtener ayuda con los pasos siguientes, como administrar la configuración de seguridad, configurar más características o ajustar las directivas de seguridad.|[Administrar Microsoft Defender para endpoint, posterior a la migración](manage-mde-post-migration.md)|
+|Aún no tiene una solución de endpoint protection en su lugar y quiere obtener más información sobre Defender para punto de conexión. Quiere ver cómo funciona Defender para punto de conexión antes de implementarlo en su entorno.|[laboratorio de evaluación de Microsoft Defender para punto de conexión](evaluation-lab.md)|
+|Ya tiene Defender para punto de conexión y quiere ayuda para configurar y configurar todo.|[Guía de implementación de Microsoft Defender para puntos de conexión](deployment-phases.md)|
+|Tiene previsto cambiar de una solución de protección de puntos de conexión que no es de Microsoft a Defender para punto de conexión, que incluye Antivirus de Microsoft Defender. Quiere obtener información general sobre el proceso de migración y cómo realizar el cambio.|[Realice el cambio a Microsoft Defender para punto de conexión](switch-to-mde-overview.md)|
+|Ya ha migrado o incorporado a Defender para punto de conexión. Quiere ayuda con los pasos siguientes, como administrar la configuración de seguridad, configurar más características o ajustar las directivas de seguridad.|[Administrar Microsoft Defender para punto de conexión, después de la migración](manage-mde-post-migration.md)|
 
 
 ## <a name="do-you-have-feedback-for-us"></a>¿Tiene comentarios para nosotros?
 
-Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
+¡Háganos saber lo que piensa! Envíe sus comentarios en la parte inferior de la página. Tomaremos sus comentarios en cuenta a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft 365 Empresa Premium](../../business-premium/index.md)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)

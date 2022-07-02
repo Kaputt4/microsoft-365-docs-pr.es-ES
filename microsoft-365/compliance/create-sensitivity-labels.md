@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0f920c91e1e844a4feaab7f9d1d58e88da6791ca
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017040"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573877"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -36,6 +36,11 @@ Todas las soluciones de Microsoft Purview Information Protection se implementan 
 En primer lugar, cree y configure las etiquetas de confidencialidad que quiera que estén disponibles para las aplicaciones y otros servicios. Por ejemplo, las etiquetas que quiere que vean los usuarios para que se apliquen desde las aplicaciones de Office.
 
 A continuación, cree una o varias directivas de etiqueta que contengan las etiquetas y las configuraciones de directiva que configure. La directiva de etiquetas se encarga de publicar las etiquetas y la configuración de los usuarios y las ubicaciones que elija.
+
+> [!TIP]
+> Si aún no dispone de ninguna etiqueta de confidencialidad, podría ser apto para la creación automática de etiquetas predeterminadas y una directiva de etiquetas predeterminada. Aunque ya tenga algunas etiquetas, es posible que le resulte útil ver la configuración de estas etiquetas predeterminadas que estamos creando para clientes nuevos. Por ejemplo, podría realizar las mismas configuraciones manuales para ayudar a acelerar su propia implementación de etiquetas.
+> 
+> Para obtener más información, consulte [Etiquetas y directivas predeterminadas para Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -94,7 +99,7 @@ Por ejemplo:
 
 - Use el parámetro *LocaleSettings* para las implementaciones multinacionales para que los usuarios vean el nombre de la etiqueta y la información sobre herramientas en su idioma local. En la [siguiente sección](#example-configuration-to-configure-a-sensitivity-label-for-different-languages), se muestra una configuración de ejemplo que especifica el nombre de la etiqueta y el texto de información sobre herramientas para francés, italiano y alemán.
 
-- El cliente de etiquetado unificado de Azure Information Protection admite una amplia lista de [configuraciones avanzadas](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluyen la configuración de un color de etiqueta y la aplicación de una propiedad personalizada cuando se aplica una etiqueta. Para obtener la lista completa, consulte [Configuración avanzada disponible para las etiquetas ](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) de la guía de administrador de este cliente.
+- La configuración avanzada compatible con el etiquetado integrado se incluye en la documentación de PowerShell. Para obtener más ayuda sobre cómo especificar esta configuración avanzada de PowerShell, consulte la sección de [sugerencias de PowerShell para especificar la configuración avanzada](#powershell-tips-for-specifying-the-advanced-settings). Para obtener más opciones avanzadas compatibles con el etiquetado de clientes unificado de Azure Information Protection, consulte la [documentación de la guía de administración de este cliente](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels).
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Ejemplo de configuración para configurar una etiqueta de confidencialidad para diferentes idiomas
 
@@ -122,6 +127,26 @@ Settings=@(
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
 Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
+
+Aunque puede especificar una etiqueta de confidencialidad por su nombre, se recomienda usar el GUID de etiqueta para evitar posibles confusiones sobre la especificación del nombre de la etiqueta o el nombre para mostrar. El nombre de la etiqueta es único en el inquilino, por lo que puede estar seguro de que va a configurar la etiqueta correcta. El nombre para mostrar no es único y podría dar lugar a una configuración incorrecta de la etiqueta. Para buscar el GUID y confirmar el ámbito de la etiqueta:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
+````
+
+Para quitar una configuración avanzada de una etiqueta de confidencialidad, use la misma sintaxis de parámetros AdvancedSettings, pero especifique un valor de cadena nulo. Por ejemplo:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
+````
+
+Para comprobar la configuración de la etiqueta, incluyendo la configuración avanzada, use la siguiente sintaxis con su propio GUID de etiqueta:
+
+```powershell
+(Get-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e).settings
 ```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publicar etiquetas de sensibilidad mediante la creación de una directiva de etiqueta
@@ -166,7 +191,7 @@ Este botón inicia la configuración para **Crear directivas**, que le permite e
 
 La configuración adicional de las directivas de etiquetas está disponible con el cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) desde [Seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell).
 
-El cliente de etiquetado unificado de Azure Information Protection admite muchos [valores de configuración avanzada](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluyen la migración desde otras soluciones de etiquetado y mensajes emergentes en Outlook para advertir, justificar o bloquear el envío de correos electrónicos. Para obtener la lista completa, consulte [Configuración avanzada disponible para las directivas de etiquetas](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) de la guía de administrador de este cliente.
+Esta documentación incluye la configuración avanzada compatible con el etiquetado integrado. Para obtener más opciones avanzadas compatibles con el etiquetado de clientes unificado de Azure Information Protection, consulte la [documentación de la guía de administración de este cliente](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies).
 
 ## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Cuándo esperar que las nuevas etiquetas y cambios entren en vigor
 
@@ -185,7 +210,10 @@ Consulte la siguiente documentación para ver los parámetros y valores compatib
 - [Set-Label](/powershell/module/exchange/set-label)
 - [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
 
-Asimismo, puede usar [Remove-Label](/powershell/module/exchange/remove-label) y [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) si necesita crear una secuencia de comandos de eliminación de etiquetas de confidencialidad o directivas de etiquetas de confidencialidad. Sin embargo, antes de eliminar las etiquetas de sensibilidad, asegúrese de leer la sección siguiente.
+> [!TIP]
+> Al establecer la configuración avanzada de una etiqueta de confidencialidad, es posible que le resulte útil hacer referencia a la sección de [sugerencias de PowerShell para especificar la configuración avanzada](#powershell-tips-for-specifying-the-advanced-settings) en esta página.
+
+Asimismo, puede usar [Remove-Label](/powershell/module/exchange/remove-label) y [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) si necesita crear una secuencia de comandos de eliminación de etiquetas de confidencialidad o directivas de etiquetas de confidencialidad. Sin embargo, antes de eliminar las etiquetas de confidencialidad, asegúrese de haber leído la próxima sección.
 
 ## <a name="removing-and-deleting-labels"></a>Quitar y eliminar etiquetas
 

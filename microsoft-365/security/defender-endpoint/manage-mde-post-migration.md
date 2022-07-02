@@ -1,5 +1,5 @@
 ---
-title: Administrar Microsoft Defender para punto de conexión posterior a la migración
+title: Administración de Microsoft Defender para punto de conexión después de la instalación o migración iniciales
 description: Ahora que ha realizado el cambio a Microsoft Defender para punto de conexión, el siguiente paso es administrar las características de protección contra amenazas.
 keywords: posterior a la migración, administración, operaciones, mantenimiento, uso, Microsoft Defender para punto de conexión, edr
 ms.prod: m365-security
@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 0103fea7a569b7462e455541e574fee58c719d24
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601100"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607573"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Administrar Microsoft Defender para punto de conexión, después de la migración
+# <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>Administración de Microsoft Defender para punto de conexión después de la instalación o migración iniciales
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -33,11 +33,9 @@ ms.locfileid: "66601100"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Después de pasar de la solución antivirus y de endpoint protection anterior a Microsoft Defender para punto de conexión, el siguiente paso es administrar las características y funcionalidades. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y Configuration Manager de punto de conexión de [Microsoft](/mem/configmgr/core/understand/introduction), para administrar los dispositivos y la configuración de seguridad de la organización. Sin embargo, puede usar otras herramientas o métodos, como [directiva de grupo Objects en Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/manage-group-policy).
+Después de configurar y configurar Microsoft Defender para punto de conexión, el siguiente paso es administrar las características y funcionalidades. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y Configuration Manager de punto de conexión de [Microsoft](/mem/configmgr/core/understand/introduction), para administrar los dispositivos y la configuración de seguridad de la organización. Sin embargo, puede usar otras herramientas o métodos, como [directiva de grupo Objects en Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/manage-group-policy).
 
 En la tabla siguiente se enumeran varias herramientas o métodos que puede usar, con vínculos para obtener más información.
-
-<br/><br/>
 
 |Herramienta o método|Descripción|
 |---|---|

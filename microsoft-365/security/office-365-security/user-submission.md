@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602456"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607595"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -49,19 +49,19 @@ La entrega de mensajes notificados por el usuario a un buzón personalizado en l
 
 Use los artículos siguientes para configurar los requisitos previos necesarios para que los mensajes notificados por el usuario vayan al buzón personalizado:
 
-- [Identificación del buzón personalizado como buzón de SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+- [Identifique el buzón personalizado como un buzón de SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 - [Crear una directiva antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) para el buzón personalizado donde
-  - La purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
-  - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes**).
+  - La purga automática de cero horas (ZAP) para malware está desactivada (no está seleccionada la sección **Configuración de protección** > **Habilitar purga automática de cero horas para malware** ).
+  - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección **Configuración de protección** > **Habilitar el filtro de datos adjuntos comunes** ).
 
-Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los usuarios que informan de los mensajes:
+Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los mensajes notificados:
 
 - Asegúrese de que el buzón personalizado no forma parte de ninguna directiva de [seguridad preestablecida](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies).
 
-- [Cree una directiva de vínculos seguros](set-up-safe-links-policies.md) para el buzón personalizado donde está desactivado el examen de vínculos seguros (**seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en** la sección \> **De mensajes Desactivada**).
+- [Cree una directiva de vínculos seguros](set-up-safe-links-policies.md) para el buzón personalizado donde está desactivado el examen de vínculos seguros (**seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en la sección de mensajes** > **Desactivado**).
 
-- [Cree una directiva de datos adjuntos seguros](set-up-safe-attachments-policies.md) para el buzón personalizado donde está desactivado el examen de datos adjuntos seguros (sección \>**Respuesta de malware desconocida de datos adjuntos seguros** **desactivada**).
+- [Cree una directiva de datos adjuntos seguros](set-up-safe-attachments-policies.md) para el buzón personalizado en el que el examen de datos adjuntos seguros, incluida la entrega dinámica, esté desactivado (sección **De respuesta de malware desconocido de Datos adjuntos seguros** > **Desactivado**).
 
 Después de comprobar que el buzón cumple todos los requisitos previos aplicables, puede usar los procedimientos de este artículo para configurar el buzón de correo de envíos de usuario.
 
@@ -84,11 +84,11 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Uso del portal de Microsoft 365 Defender para configurar el buzón de correo de envíos de usuario
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas **Configuración de mensajes notificados por el usuario** en la sección **Otros**. Para ir directamente a la página **Envíos de usuarios** , use <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** > **Directivas** >  de amenazas **Configuración de mensajes notificadas por el usuario** en la sección **Otros**. Para ir directamente a la página **Envíos de usuarios** , use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. En la página **Envíos** de usuarios, lo que ve viene determinado por si la configuración del **botón Mensaje de informe de Microsoft Outlook** está **Desactivada** o **Activada**:
 
-   - Botón \> **Mensaje de informe de Microsoft Outlook** **En** ![ Alternar.](../../media/scc-toggle-on.png): seleccione esta opción si usa el complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook en la Web y, a continuación, configure los siguientes valores:
+   - Botón  >  **Mensaje de informe de Microsoft Outlook** **En** ![ Alternar.](../../media/scc-toggle-on.png): seleccione esta opción si usa el complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook en la Web y, a continuación, configure los siguientes valores:
      - **Enviar los mensajes notificados a**: Seleccione una de las siguientes opciones:
        - **Microsoft**: No se usa el buzón de correo de envíos de usuario (todos los mensajes notificados van a Microsoft).
        - **Buzón de Microsoft y mi organización**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online existente. No se permiten grupos de distribución. Los envíos de usuarios se dirigirán a Microsoft para su análisis y al buzón personalizado para que el equipo de operaciones de administración o seguridad lo analice.
@@ -123,7 +123,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
           > Su correo electrónico se enviará tal y como está a Microsoft para su análisis. Algunos correos electrónicos pueden contener información personal o confidencial.
 
-   - Botón \> **Mensaje de informe de Microsoft Outlook** **Desactivado** ![ Alternar desactivado:](../../media/scc-toggle-off.png) seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes opciones:
+   - Botón  >  **Mensaje de informe de Microsoft Outlook** **Desactivado** ![ Alternar desactivado:](../../media/scc-toggle-off.png) seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes opciones:
      - Seleccione **Usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online existente que puede recibir correo electrónico.
 
    - **Botón De mensaje de informe de cuarentena**: habilite esta característica si desea permitir que los usuarios finales informen de los mensajes de la cuarentena.
@@ -155,8 +155,5 @@ Por ejemplo:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- Ambos mensajes se notifican como No basura en función del asunto.
-- El resto se omite.
 
 Los mensajes que no siguen este formato no se mostrarán correctamente en el portal Envíos.

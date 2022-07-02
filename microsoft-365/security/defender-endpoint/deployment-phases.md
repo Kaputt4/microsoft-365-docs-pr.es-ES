@@ -1,6 +1,6 @@
 ---
-title: Fases de implementación
-description: Obtenga información sobre cómo implementar Microsoft Defender para endpoint mediante la preparación, configuración e incorporación de puntos de conexión a ese servicio
+title: introducción a la implementación de Microsoft Defender para punto de conexión
+description: Aprenda a implementar Microsoft Defender para punto de conexión mediante la preparación, configuración e incorporación de puntos de conexión a ese servicio.
 keywords: implementar, preparar, configurar, incorporar, fase, implementación, implementación, adopción, configuración
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467717"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607617"
 ---
-# <a name="deployment-phases"></a>Fases de implementación
+# <a name="microsoft-defender-for-endpoint-deployment-overview"></a>introducción a la implementación de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,18 +32,18 @@ ms.locfileid: "64467717"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Obtenga información sobre cómo implementar Microsoft Defender para endpoint para que su empresa pueda aprovechar la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta.
+Obtenga información sobre cómo implementar Microsoft Defender para punto de conexión para que su empresa pueda aprovechar la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta.
 
-Esta guía le ayuda a trabajar entre partes interesadas para preparar su entorno y, a continuación, incorporar dispositivos de forma metórica, pasando de la evaluación a un piloto significativo, a una implementación completa.
+Esta guía le ayuda a trabajar entre las partes interesadas para preparar el entorno y, a continuación, incorporar dispositivos de forma metódica, pasando de la evaluación, a un piloto significativo, a una implementación completa.
 
 Cada sección corresponde a un artículo independiente de esta solución.
 
 :::image type="content" source="images/deployment-guide-phases.png" alt-text="Fases de implementación con detalles de la tabla" lightbox="images/deployment-guide-phases.png":::
 
 
-:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Resumen de las fases de implementación: preparar, configurar, incorporar" lightbox="images/phase-diagrams/deployment-phases.png":::
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Resumen de las fases de implementación: preparación, configuración, incorporación" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
@@ -51,18 +51,18 @@ Cada sección corresponde a un artículo independiente de esta solución.
 
 |Fase|Descripción|
 |---|---|
-|[Fase 1: Preparación](prepare-deployment.md)|Obtenga información sobre lo que debe tener en cuenta al implementar Defender for Endpoint, como aprobaciones de partes interesadas, consideraciones del entorno, permisos de acceso y orden de adopción de capacidades.|
-|[Fase 2: Configuración](production-deployment.md)|Obtenga instrucciones sobre los pasos iniciales que debe seguir para tener acceso al portal, como validar licencias, completar el asistente de configuración y configuración de red.|
-|[Fase 3: Incorporación](onboarding.md)|Obtenga información sobre cómo usar anillos de implementación, herramientas de incorporación compatibles basadas en el tipo de extremo y cómo configurar las capacidades disponibles.|
+|[Fase 1: Preparación](prepare-deployment.md)|Obtenga información sobre lo que debe tener en cuenta al implementar Defender para punto de conexión, como las aprobaciones de las partes interesadas, las consideraciones del entorno, los permisos de acceso y el orden de adopción de las funcionalidades.|
+|[Fase 2: Configuración](production-deployment.md)|Obtenga instrucciones sobre los pasos iniciales que debe seguir para poder acceder al portal, como la validación de licencias, la finalización del asistente de configuración y la configuración de red.|
+|[Fase 3: Incorporación](onboarding.md)|Obtenga información sobre cómo usar los anillos de implementación, las herramientas de incorporación admitidas en función del tipo de punto de conexión y la configuración de las funcionalidades disponibles.|
 |
 
-Una vez completada esta guía, se configurará con los permisos de acceso adecuados, se incorporarán los puntos de conexión y se notificarán los datos del sensor al servicio, y se establecerán funciones como la protección de última generación y la reducción de superficie de ataque.
+Una vez completada esta guía, se configurará con los permisos de acceso adecuados, se incorporarán los puntos de conexión y se notificarán los datos del sensor al servicio, y se aplicarán funcionalidades como la protección de próxima generación y la reducción de la superficie expuesta a ataques.
 
-Independientemente de la arquitectura del entorno y el método de implementación que elija en la [guía de](deployment-strategy.md) planeación de implementación, esta guía le admitirá en los puntos de conexión de incorporación.
+Independientemente de la arquitectura del entorno y el método de implementación que elija descritos en la guía [Planeamiento de la implementación](deployment-strategy.md) , esta guía le admitirá en la incorporación de puntos de conexión.
 
 ## <a name="key-capabilities"></a>Principales funcionalidades
 
-Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el objetivo principal de esta guía de implementación es empezar por la incorporación de dispositivos. Además de la incorporación, esta guía le permite empezar con las siguientes funcionalidades.
+Aunque Microsoft Defender para punto de conexión proporciona muchas funcionalidades, el propósito principal de esta guía de implementación es empezar a incorporar dispositivos. Además de la incorporación, esta guía le permite empezar con las siguientes funcionalidades.
 
 <br>
 
@@ -70,29 +70,29 @@ Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el o
 
 |Funcionalidad|Descripción|
 |---|---|
-|EDR|Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.|
+|Detección y respuesta de puntos de conexión|Las funcionalidades de detección y respuesta de puntos de conexión se implementan para detectar, investigar y responder a intentos de intrusiones y infracciones activas.|
 |Protección de última generación|Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.|
-|Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades, estas capacidades resisten los ataques y la explotación.|
+|Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que los valores de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades de seguridad, estas funcionalidades resisten los ataques y la explotación.|
 |
 
-Todas estas funcionalidades están disponibles para microsoft defender para los titulares de licencias de extremo. Para obtener más información, vea [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
+Todas estas funcionalidades están disponibles para Microsoft Defender para punto de conexión titulares de licencias. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
 ## <a name="scope"></a>Ámbito
 
 ### <a name="in-scope"></a>En el ámbito
 
-- Uso de Microsoft Endpoint Manager y Microsoft Endpoint Configuration Manager para incorporar puntos de conexión en el servicio y configurar funcionalidades
-- Habilitar las capacidades de Defender para detección y respuesta de puntos de conexión extremo (EDR)
-- Habilitar las capacidades de defender para la plataforma de protección de puntos de conexión (EPP)
+- Uso de microsoft Endpoint Manager y punto de conexión de Microsoft Configuration Manager para incorporar puntos de conexión al servicio y configurar funcionalidades
+- Habilitación de las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión (EDR)
+- Habilitación de las funcionalidades de la plataforma de protección de puntos de conexión (EPP) de Defender para punto de conexión
   - Protección de última generación
   - Reducción de la superficie expuesta a ataques
 
 ### <a name="out-of-scope"></a>Fuera de ámbito
 
-Los siguientes están fuera del ámbito de esta guía de implementación:
+Las siguientes opciones están fuera del ámbito de esta guía de implementación:
 
-- Configuración de soluciones de terceros que podrían integrarse con Defender for Endpoint
-- Pruebas de penetración en entornos de producción
+- Configuración de soluciones de terceros que podrían integrarse con Defender para punto de conexión
+- Pruebas de penetración en el entorno de producción
 
 ## <a name="see-also"></a>Vea también
 

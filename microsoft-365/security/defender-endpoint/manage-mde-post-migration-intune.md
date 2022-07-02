@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 05fb01b411b1b32eeac763f3c364b29e29f5d8f5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603712"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607463"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administración de Microsoft Defender para punto de conexión con Intune
 
@@ -57,8 +57,6 @@ En este artículo se describe cómo buscar la configuración de Microsoft Defend
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>Configuración de Microsoft Defender para punto de conexión con Intune
 
 En la tabla siguiente se enumeran varias tareas que puede realizar para configurar Microsoft Defender para punto de conexión con Intune. No es necesario configurar todo a la vez; elija una tarea, lea los recursos correspondientes y, a continuación, continúe.
-
-<br/><br/>
 
 |Tarea|Recursos para obtener más información|
 |---|---|

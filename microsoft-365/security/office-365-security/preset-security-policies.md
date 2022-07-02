@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115529"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607661"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -66,16 +66,16 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+  > La directiva se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+  > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
-- **Protección integrada** (solo Defender para Office 365): perfil que habilita solo Caja fuerte vínculos y Caja fuerte protección de datos adjuntos. Este perfil proporciona de forma eficaz directivas predeterminadas para Caja fuerte Vínculos y datos adjuntos de Caja fuerte, que nunca tenían directivas predeterminadas.
+- **Protección integrada** (solo Defender para Office 365): perfil que habilita solo la protección de vínculos seguros y datos adjuntos seguros. Este perfil proporciona de forma eficaz directivas predeterminadas para vínculos seguros y datos adjuntos seguros, que nunca tenían directivas predeterminadas.
 
   Para **la protección integrada**, la directiva de seguridad preestablecida está activada de forma predeterminada para todos los clientes Defender para Office 365. Aunque no se recomienda, también puede configurar excepciones basadas en **usuarios**, **grupos** y **dominios** para que la protección no se aplique a usuarios específicos.
 
@@ -85,22 +85,22 @@ Hasta que asigne las directivas a los usuarios, las directivas de seguridad pree
 
 Las directivas de seguridad preestablecidas usan las directivas correspondientes de las distintas características de protección de EOP y Microsoft Defender para Office 365. Estas directivas se crean _después de_ asignar las directivas de seguridad preestablecidas **Protección estándar** o **Protección estricta** a los usuarios. No puede modificar la configuración de estas directivas.
 
-- **directivas de Exchange Online Protection (EOP**): esto incluye Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones EOP independientes sin Exchange Online buzones:
+- **directivas de Exchange Online Protection (EOP):** estas directivas se encuentran en todas las organizaciones de Microsoft 365 con buzones de Exchange Online y organizaciones EOP independientes sin buzones de correo Exchange Online:
 
   - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**.
   - [Directivas antimalware](configure-anti-malware-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**.
-  - [Directivas de protección contra suplantación de identidad (EOP)](set-up-anti-phishing-policies.md#spoof-settings) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta** (configuración de suplantación de identidad).
+  - [Directivas contra suplantación de identidad (protección contra suplantación de identidad)](set-up-anti-phishing-policies.md#spoof-settings) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta** (configuración de suplantación de identidad).
 
   > [!NOTE]
   > Las directivas de correo no deseado saliente no forman parte de las directivas de seguridad preestablecidas. La directiva de correo no deseado saliente predeterminada protege automáticamente a los miembros de las directivas de seguridad preestablecidas. O bien, puede crear directivas de correo no deseado de salida personalizadas para personalizar la protección de los miembros de las directivas de seguridad preestablecidas. Para obtener más información, consulte [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md).
 
-- **directivas de Microsoft Defender para Office 365**: esto incluye organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
+- **directivas de Microsoft Defender para Office 365**: estas directivas se encuentran en organizaciones con suscripciones de complementos de Microsoft 365 E5 o Defender para Office 365:
   - Las directivas contra suplantación de identidad en Defender para Office 365 **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**, que incluyen:
     - La misma [configuración de suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) que está disponible en las directivas de protección contra suplantación de identidad (EOP).
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Umbrales avanzados de phishing](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Caja fuerte Vincula directivas](set-up-safe-links-policies.md) denominadas **Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
-  - [Caja fuerte directivas de datos adjuntos](set-up-safe-attachments-policies.md) **denominadas Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
+  - [Directivas de vínculos seguros](set-up-safe-links-policies.md) **denominadas Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
+  - [Directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md) **denominadas Directiva de seguridad preestablecida estándar**, **Directiva de seguridad preestablecida estricta** y Directiva **de protección integrada**.
 
 Puede aplicar protecciones EOP a usuarios diferentes de las protecciones de Defender para Office 365, o bien puede aplicar EOP y Defender para Office 365 a los mismos destinatarios.
 
@@ -122,13 +122,13 @@ Cuando se aplican varias directivas a un usuario, el orden siguiente se aplica d
 1. Directiva de seguridad preestablecida **de protección estricta**
 2. Directiva de seguridad preestablecida **de protección estándar**
 3. Directivas de seguridad personalizadas
-4. Directiva de seguridad preestablecida **de protección integrada** y directivas de seguridad predeterminadas
+4. Directiva de seguridad preestablecida **de protección integrada** para vínculos seguros y datos adjuntos seguros, y las directivas predeterminadas para el antimalware, el correo no deseado y la suplantación de identidad (phishing).
 
-En otras palabras, la configuración de la directiva de **protección estricta** invalida la configuración de la directiva de **protección estándar**, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva de seguridad preestablecida **de protección integrada** (Caja fuerte Vínculos y datos adjuntos Caja fuerte) y la directiva predeterminada (antispam, antimalware y anti phishing).
+En otras palabras, la configuración de la directiva de **protección estricta** invalida la configuración de la directiva de **protección estándar** , que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva de seguridad preestablecida **de protección integrada** (vínculos seguros y datos adjuntos seguros) y la directiva predeterminada (antispam, antimalware y anti phishing).
 
 Por ejemplo, si existe una configuración de seguridad en **Protección estándar** y un administrador ha habilitado la **protección estándar** para un usuario, se aplicará la configuración **Protección estándar** en lugar de lo que está configurado para esa configuración en una directiva personalizada o en la directiva predeterminada (para el mismo usuario). Tenga en cuenta que es posible que tenga alguna parte de la organización a la que quiera aplicar solo la directiva **de protección estándar** o **estricta** mientras aplica una directiva personalizada a otros usuarios de la organización para satisfacer necesidades específicas.
 
-**La protección integrada** no afecta a los destinatarios de las directivas de vínculos de Caja fuerte o datos adjuntos de Caja fuerte existentes. Si ya ha configurado la **protección estándar**, **la protección estricta** o las directivas de vínculos de Caja fuerte personalizados o de datos adjuntos de Caja fuerte, esas directivas _siempre_ se aplican _antes_ de la **protección integrada**, por lo que no hay ningún impacto en los destinatarios que ya están definidos en esas directivas preestablecidas o personalizadas existentes.
+**La protección integrada** no afecta a los destinatarios de las directivas de vínculos seguros o datos adjuntos seguros existentes. Si ya ha configurado la **protección estándar**, protección **estricta** o vínculos seguros personalizados o directivas de datos adjuntos seguros, esas directivas _siempre_ se aplican _antes_ de la **protección integrada**, por lo que no hay ningún impacto en los destinatarios que ya están definidos en esas directivas preestablecidas o personalizadas existentes.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Asignación de directivas de seguridad preestablecidas a los usuarios
 
@@ -142,9 +142,9 @@ Por ejemplo, si existe una configuración de seguridad en **Protección estánda
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector global** .
 
-  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos _y_ permisos necesarios para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos _y_ permisos necesarios para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Use el portal de Microsoft 365 Defender para asignar directivas de seguridad preestablecidas estándar y estricta a los usuarios
 
@@ -230,7 +230,7 @@ Para deshabilitar las directivas de seguridad preestablecidas **Protección est�
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-the-built-in-protection-preset-security-policy"></a>Use el portal de Microsoft 365 Defender para modificar las asignaciones de la directiva de seguridad preestablecida de protección integrada.
 
-Recuerde que la directiva de seguridad preestablecida **de protección integrada** se asigna a todos los destinatarios y no afecta a los destinatarios definidos en las directivas de seguridad preestablecidas **Protección estándar** o **Protección estricta**, ni a las directivas personalizadas de vínculos Caja fuerte o Caja fuerte datos adjuntos.
+Recuerde que la directiva de seguridad preestablecida **de protección integrada** se asigna a todos los destinatarios y no afecta a los destinatarios definidos en las directivas de seguridad preestablecidas **Protección estándar** o **Protección estricta** , ni a las directivas personalizadas de vínculos seguros o datos adjuntos seguros.
 
 Por lo tanto, normalmente no se recomiendan excepciones a la directiva de seguridad preestablecida **de protección integrada** .
 
@@ -238,7 +238,7 @@ Por lo tanto, normalmente no se recomiendan excepciones a la directiva de seguri
 
 2. En la página **Directivas de seguridad preestablecidas** , seleccione **Agregar exclusiones (no recomendadas)** en la sección **Protección integrada** .
 
-3. En el control flotante **Excluir de la protección integrada** que aparece, identifique los destinatarios internos que se excluyen de la protección integrada Caja fuerte Links y Caja fuerte Attachments:
+3. En el control flotante **Excluir de la protección integrada** que aparece, identifique los destinatarios internos que se excluyen de la protección integrada de vínculos seguros y datos adjuntos seguros:
    - **Usuarios**
    - **Grupos**
    - **Dominios**
