@@ -11,24 +11,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
+description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el entrenamiento de simulación de ataques en Pertahanan Microsoft untuk Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: c1489c2653adbfa05958ca61240a97d837a9dc93
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839763"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609399"
 ---
-# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con entrenamiento de simulación de ataque en Defender para Office 365
+# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con entrenamiento de simulación de ataque en Defender pre Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
+**Se aplica a** [Pertahanan Microsoft untuk Office 365 plan 2](defender-for-office-365.md)
 
-El entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2 o Microsoft 365 E5 le permite ejecutar simulaciones de ciberataques benignas en su organización. Estas simulaciones prueban las directivas y prácticas de seguridad, así como entrenan a los empleados para aumentar su reconocimiento y reducir su susceptibilidad a los ataques. Este artículo le guiará a través de la creación de un ataque simulado de suplantación de identidad mediante el entrenamiento de simulación de ataque.
+El entrenamiento de simulación de ataques en Pertahanan Microsoft untuk Office 365 Plan 2 o Microsoft 365 E5 le permite ejecutar simulaciones de ciberataques benignas en su organización. Estas simulaciones prueban las directivas y prácticas de seguridad, así como entrenan a los empleados para aumentar su reconocimiento y reducir su susceptibilidad a los ataques. Este artículo le guiará a través de la creación de un ataque simulado de suplantación de identidad mediante el entrenamiento de simulación de ataque.
 
-Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Comenzar uso del entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
+Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
 
 Para iniciar un ataque de suplantación de identidad simulado, siga estos pasos:
 
@@ -70,33 +70,32 @@ En la página **Simulación de nombres** , configure los siguientes valores:
 
 Cuando termine, haga clic en **Siguiente**.
 
-## <a name="select-a-payload"></a>Selección de una carga
+## <a name="select-a-payload-and-login-page"></a>Seleccionar una página de carga e inicio de sesión
 
-En la página **Seleccionar carga,** debe seleccionar una carga existente en la lista o crear una nueva carga.
+En la página **Seleccionar carga e inicio de sesión** , debe seleccionar una carga existente en la lista o crear una nueva carga.
 
-Los detalles siguientes se muestran en la lista de cargas útiles para ayudarle a elegir:
+También puede ver la página de inicio de sesión que se usa en la carga útil, seleccionar una página de inicio de sesión diferente para usar o crear una nueva página de inicio de sesión para usarla.
+
+### <a name="payload"></a>Carga útil
+
+Se muestran los detalles siguientes para cada carga:
 
 - **Nombre de carga**
 - **Idioma**: idioma del contenido de la carga. El catálogo de cargas de Microsoft (global) proporciona cargas en más de 10 idiomas que también se pueden filtrar.
 - **Tasa de clics**: cuántas personas han hecho clic en esta carga.
-- **Tasa de compromiso prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
+- **Tasa de riesgo prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
 - **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
 
 En el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** , puede escribir parte del nombre de carga útil y presionar Entrar para filtrar los resultados.
 
 Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
-- **Origen**: indica si la carga se creó en su organización o forma parte del catálogo de carga preexistente de Microsoft. Los valores admitidos son:
-  - **Global** (integrado)
-  - **Inquilino** (personalizado)
-  - **Todo**
-
 - **Complejidad**: se calcula en función del número de indicadores de la carga útil que indican un posible ataque (errores ortográficos, urgencia, etc.). Más indicadores son más fáciles de identificar como un ataque e indican una menor complejidad. Los valores disponibles son los siguientes:
+  - **Alto**
+  - **Medio**
   - **Baja**
-  - **Media**
-  - **Alta**
 
-- **Idioma**: Los valores disponibles son: **chino (simplificado)**, **chino (tradicional)**, **inglés**, **francés**, **alemán**, **italiano**, **japonés**, **coreano**, **portugués**, **ruso**, **español** y **holandés**.
+- **Idioma**: Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** u **otro**.
 
 - **Agregar etiquetas**
 
@@ -112,20 +111,55 @@ Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
 Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="La página Seleccionar carga útil del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
-
-Si selecciona una carga de la lista, los detalles sobre la carga se muestran en un control flotante:
-
-- La pestaña **Información general** contiene un ejemplo y otros detalles sobre la carga.
-- La pestaña **Simulaciones iniciadas** contiene el **nombre de la simulación**, **la tasa de clics**, **la velocidad comprometida** y **la acción**.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="El control flotante Detalles de carga del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
-
-Si selecciona una carga de la lista haciendo clic en el nombre, un ![icono Enviar una carga útil de prueba.](../../media/m365-cc-sc-create-icon.png) **El botón Enviar una prueba** aparece en la página principal, donde puede enviar una copia del correo electrónico de carga a usted mismo (el usuario que ha iniciado sesión actualmente) para su inspección.
+Si selecciona una carga de la lista seleccionando la casilla , un ![icono Enviar una carga útil de prueba.](../../media/m365-cc-sc-create-icon.png) **El botón Enviar una prueba** aparece en la página principal, donde puede enviar una copia del correo electrónico de carga a usted mismo (el usuario que ha iniciado sesión actualmente) para su inspección.
 
 Para crear su propia carga, haga clic en ![el icono Crear una carga.](../../media/m365-cc-sc-create-icon.png) **Cree una carga**. Para obtener más información, consulte [Creación de cargas personalizadas para el entrenamiento de simulación de ataques](attack-simulation-training-payloads.md#create-payloads).
 
-Cuando termine, haga clic en **Siguiente**.
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="La página Seleccionar carga útil del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+Si selecciona una carga de la lista haciendo clic en cualquier lugar de la fila que no sea la casilla, los detalles sobre la carga se muestran en un control flotante:
+
+- La pestaña **Carga contiene** un ejemplo y otros detalles sobre la carga.
+- La pestaña **Página de inicio de sesión** se describe en la sección siguiente.
+- La pestaña **Simulaciones iniciadas** contiene el **nombre de la simulación**, **la tasa de clics**, **la velocidad comprometida** y **la acción**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="La pestaña Carga del control flotante detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+
+### <a name="login-page"></a>Página de inicio de sesión
+
+Seleccione la carga de la lista haciendo clic en cualquier lugar de la fila que no sea la casilla para abrir el control flotante de detalles.
+
+La pestaña **Página de inicio de sesión** del control flotante detalles de carga muestra la página de inicio de sesión seleccionada actualmente para la carga.
+
+Para ver la página de inicio de sesión completa, use los vínculos **Página 1** y **Página 2** en la parte inferior de la página para las páginas de inicio de sesión de dos páginas.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Pestaña de página de inicio de sesión en el control flotante de detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Para cambiar la página de inicio de sesión que se usa en la carga, haga clic en ![el icono Cambiar página de inicio de sesión.](../../media/m365-cc-sc-edit-icon.png) **Cambiar página de inicio de sesión**.
+
+En el control flotante **Seleccionar página de inicio de sesión** que aparece, se muestra la siguiente información para cada página de inicio de sesión:
+
+- **Nombre**
+- **Language**
+- **Origen**: para las páginas de inicio de sesión integradas, el valor es **Global**. Para las páginas de inicio de sesión personalizadas, el valor es **Inquilino**.
+- **Estado**: **Listo** o **Borrador**.
+- **Creado por**: para las páginas de inicio de sesión integradas, el valor es **Microsoft**. Para las páginas de inicio de sesión personalizadas, el valor es el UPN del usuario que creó la página de inicio de sesión.
+- **Última modificación**
+- **Acciones**: haga clic en el ![icono Vista previa.](../../media/m365-cc-sc-eye-icon.png) **Vista previa** para obtener una vista previa de la página de inicio de sesión.
+
+Para buscar una página de inicio de sesión en la lista, use el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** para buscar el nombre de la página de inicio de sesión.
+
+Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtre** para filtrar las páginas de inicio de sesión por **origen** o **idioma**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="La página Seleccionar inicio de sesión de la pestaña Página de inicio de sesión del control flotante detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Para crear una nueva página de inicio de sesión, haga clic en [el icono Crear nuevo.](../../media/m365-cc-sc-create-icon.png) **Cree una nueva** para iniciar el asistente para crear la página de inicio de sesión del usuario final. Los pasos son los mismos que en **páginas de inicio de sesión** en la pestaña Biblioteca de **contenido simulado** de entrenamiento \> de **simulación de ataque**. Para obtener instrucciones, consulte [Creación de páginas de inicio de sesión](attack-simulation-training-login-pages.md#create-login-pages).
+
+De nuevo en la **página Seleccionar inicio de sesión**, compruebe que está seleccionada la nueva página de inicio de sesión que creó y, a continuación, haga clic en **Guardar**.
+
+De nuevo en el control flotante detalles de carga, haga clic en [el icono Cerrar.](../../media/m365-cc-sc-close-icon.png) **Cerrar**.
+
+Cuando haya terminado en la **página Seleccionar una carga e inicio de sesión**, haga clic en **Siguiente**.
 
 ## <a name="target-users"></a>Usuarios de destino
 
@@ -148,7 +182,7 @@ En la página **Usuarios de destino** , seleccione quién recibirá la simulaci�
         - **Usuarios no dirigidos por una simulación en los últimos tres meses**
         - **Reincidentes**
 
-      - **Etiquetas de usuario**: las etiquetas de usuario son identificadores para grupos específicos de usuarios (por ejemplo, cuentas de prioridad). Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](user-tags.md).
+      - **Etiquetas de usuario**: las etiquetas de usuario son identificadores para grupos específicos de usuarios (por ejemplo, cuentas de prioridad). Para obtener más información, consulte [Etiquetas de usuario en Pertahanan Microsoft untuk Office 365](user-tags.md).
 
           Use las siguientes opciones:
 
@@ -300,7 +334,7 @@ En la página **Seleccionar notificación de usuario final** , seleccione una de
 
 - **Notificación predeterminada de Microsoft (recomendado):** la siguiente configuración adicional está disponible en la página:
 
-  - **Seleccionar idioma predeterminado**: los valores disponibles son **: chino (simplificado)**, **chino (tradicional)**, **inglés**, **francés**, **alemán**, **italiano**, **japonés**, **coreano**, **portugués**, **ruso**, **español** y **holandés**.
+  - **Seleccionar idioma predeterminado**: Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** u **otro**.
 
   - De forma predeterminada, se incluyen las siguientes notificaciones:
     - **Notificación de refuerzo positivo de Microsoft**

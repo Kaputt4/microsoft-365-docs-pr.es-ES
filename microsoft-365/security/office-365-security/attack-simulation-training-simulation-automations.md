@@ -10,22 +10,22 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 plan 2.
+description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Pertahanan Microsoft untuk Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 1efc6faaae0040e37aafac4faa0a10228d76e766
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739679"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609422"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatizaciones de simulación para el entrenamiento de simulación de ataques
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
+**Se aplica a** [Pertahanan Microsoft untuk Office 365 plan 2](defender-for-office-365.md)
 
-Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Comenzar uso del entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
+Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
 
 Para crear una automatización de simulación, siga estos pasos:
 
@@ -44,7 +44,7 @@ Para crear una automatización de simulación, siga estos pasos:
 
 ## <a name="name-and-describe-the-simulation-automation"></a>Asigne un nombre y describa la automatización de la simulación.
 
-En la página **Nombre de Automation**, configure los siguientes valores:
+En la página **Nombre de Automation** , configure los siguientes valores:
 
 - **Nombre**: escriba un nombre descriptivo único para la simulación.
 - **Descripción**: escriba una descripción detallada opcional para la simulación.
@@ -67,7 +67,13 @@ Si hace clic en el vínculo **Ver detalles** de la descripción, se abre un cont
 
 Cuando termine, haga clic en **Siguiente**.
 
-## <a name="select-payloads"></a>Selección de cargas
+## <a name="select-a-payload-and-login-page"></a>Seleccionar una página de carga e inicio de sesión
+
+En la página **Seleccionar carga e inicio de sesión** , debe seleccionar una carga existente en la lista o crear una nueva carga.
+
+También puede ver la página de inicio de sesión que se usa en la carga útil, seleccionar una página de inicio de sesión diferente para usar o crear una nueva página de inicio de sesión para usarla.
+
+### <a name="payload"></a>Carga útil
 
 En la página **Seleccionar cargas,** seleccione una de las siguientes opciones:
 
@@ -76,30 +82,26 @@ En la página **Seleccionar cargas,** seleccione una de las siguientes opciones:
 
 Si selecciona **Aleatorio**, no hay nada que configurar en esta página, por lo que haga clic en **Siguiente** para continuar.
 
-Si selecciona **Seleccionar manualmente**, debe seleccionar una o varias cargas de la lista. Se muestran los detalles siguientes para ayudarle a elegir:
+Si selecciona **Seleccionar manualmente**, debe seleccionar una o varias cargas de la lista. Se muestran los detalles siguientes para cada carga:
 
 - **Nombre de carga**
 - **Técnica**: debe seleccionar al menos una carga por técnica que seleccionó en la página anterior.
-- **Idioma**: idioma del contenido de la carga. El catálogo de cargas de Microsoft (global) proporciona cargas en más de 10 idiomas que también se pueden filtrar.
+- **Idioma**: Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** u **otro**.
 - **Tasa de clics**: cuántas personas han hecho clic en esta carga.
-- **Tasa de compromiso prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
+- **Tasa de riesgo prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
 - **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
 
 En el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** , puede escribir parte del nombre de carga útil y presionar Entrar para filtrar los resultados.
 
 Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
-- **Origen**: indica si la carga se creó en su organización o forma parte del catálogo de carga preexistente de Microsoft. Los valores admitidos son:
-  - **Global** (integrado)
-  - **Inquilino** (personalizado)
-  - **Todo**
-
 - **Complejidad**: se calcula en función del número de indicadores de la carga útil que indican un posible ataque (errores ortográficos, urgencia, etc.). Más indicadores son más fáciles de identificar como un ataque e indican una menor complejidad. Los valores disponibles son los siguientes:
-  - **Baja**
-  - **Media**
-  - **Alta**
 
-- **Idioma**: Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** y **otros**.
+  - **Alto**
+  - **Medio**
+  - **Baja**
+
+- **Language**
 
 - **Agregar etiquetas**
 
@@ -115,14 +117,49 @@ Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
 
 Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
 
-Si selecciona una carga de la lista haciendo clic en el nombre, los detalles sobre la carga se muestran en un control flotante:
+Si selecciona una carga de la lista haciendo clic en cualquier lugar de la fila que no sea la casilla, los detalles sobre la carga se muestran en un control flotante:
 
-- La pestaña **Información general** contiene un ejemplo y otros detalles sobre la carga.
+- La pestaña **Carga contiene** un ejemplo y otros detalles sobre la carga.
+- La pestaña **Página de inicio de sesión** se describe en la sección siguiente.
 - La pestaña **Simulaciones iniciadas** contiene el **nombre de la simulación**, **la tasa de clics**, **la velocidad comprometida** y **la acción**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="El control flotante Detalles de carga del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="La pestaña Carga del control flotante detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-Cuando termine, haga clic en **Siguiente**.
+### <a name="login-page"></a>Página de inicio de sesión
+
+Seleccione la carga de la lista haciendo clic en cualquier lugar de la fila que no sea la casilla para abrir el control flotante de detalles.
+
+La pestaña **Página de inicio de sesión** del control flotante detalles de carga muestra la página de inicio de sesión seleccionada actualmente para la carga.
+
+Para ver la página de inicio de sesión completa, use los vínculos **Página 1** y **Página 2** en la parte inferior de la página para las páginas de inicio de sesión de dos páginas.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Pestaña de página de inicio de sesión en el control flotante de detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Para cambiar la página de inicio de sesión que se usa en la carga, haga clic en ![el icono Cambiar página de inicio de sesión.](../../media/m365-cc-sc-edit-icon.png) **Cambiar página de inicio de sesión**.
+
+En el control flotante **Seleccionar página de inicio de sesión** que aparece, se muestra la siguiente información para cada página de inicio de sesión:
+
+- **Nombre**
+- **Language**
+- **Origen**: para las páginas de inicio de sesión integradas, el valor es **Global**. Para las páginas de inicio de sesión personalizadas, el valor es **Inquilino**.
+- **Estado**: **Listo** o **Borrador**.
+- **Creado por**: para las páginas de inicio de sesión integradas, el valor es **Microsoft**. Para las páginas de inicio de sesión personalizadas, el valor es el UPN del usuario que creó la página de inicio de sesión.
+- **Última modificación**
+- **Acciones**: haga clic en el ![icono Vista previa.](../../media/m365-cc-sc-eye-icon.png) **Vista previa** para obtener una vista previa de la página de inicio de sesión.
+
+Para buscar una página de inicio de sesión en la lista, use el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** para buscar el nombre de la página de inicio de sesión.
+
+Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtre** para filtrar las páginas de inicio de sesión por **origen** o **idioma**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="La página Seleccionar inicio de sesión de la pestaña Página de inicio de sesión del control flotante detalles de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Para crear una nueva página de inicio de sesión, haga clic en [el icono Crear nuevo.](../../media/m365-cc-sc-create-icon.png) **Cree una nueva** para iniciar el asistente para crear la página de inicio de sesión del usuario final. Los pasos son los mismos que en **páginas de inicio de sesión** en la pestaña Biblioteca de **contenido simulado** de entrenamiento \> de **simulación de ataque**. Para obtener instrucciones, consulte [Creación de páginas de inicio de sesión](attack-simulation-training-login-pages.md#create-login-pages).
+
+De nuevo en la **página Seleccionar inicio de sesión**, compruebe que está seleccionada la nueva página de inicio de sesión que creó y, a continuación, haga clic en **Guardar**.
+
+De nuevo en el control flotante detalles de carga, haga clic en [el icono Cerrar.](../../media/m365-cc-sc-close-icon.png) **Cerrar**.
+
+Cuando haya terminado en la **página Seleccionar una carga e inicio de sesión**, haga clic en **Siguiente**.
 
 ## <a name="target-users"></a>Usuarios de destino
 
@@ -235,11 +272,11 @@ Cuando termine, haga clic en **Siguiente**.
 
 En la **página De aterrizaje** , configurará la página web a la que se llevará el usuario si abre la carga en la simulación.
 
-- **Seleccionar preferencia de página de aterrizaje**: los valores disponibles dependen de las selecciones anteriores en la página [Seleccionar cargas,](#select-payloads) como se describe en la tabla siguiente:
+- **Seleccionar preferencia de página de aterrizaje**: los valores disponibles dependen de las selecciones de carga anteriores en la página [Seleccionar una carga e inicio de sesión](#select-a-payload-and-login-page) , tal como se describe en la tabla siguiente:
 
-  |Selección en la página Seleccionar cargas|Valores disponibles para Seleccionar preferencia de página de aterrizaje|
+  |Selección de carga|Valores disponibles para Seleccionar preferencia de página de aterrizaje|
   |---|---|
-  |Selección manual|Uso de la página de aterrizaje predeterminada de Microsoft <p> Crear su propia página de aterrizaje <p> Uso de una dirección URL personalizada <p> **Nota**: El valor **Usar una dirección URL personalizada** no está disponible si seleccionó anteriormente **Datos adjuntos de malware** o **Vínculo a malware** en la página [Seleccionar técnicas de ingeniería social](#select-one-or-more-social-engineering-techniques) .|
+  |Selección manual|Uso de la página de aterrizaje predeterminada de Microsoft <br><br> Crear su propia página de aterrizaje <p> Uso de una dirección URL personalizada <p> **Nota**: El valor **Usar una dirección URL personalizada** no está disponible si seleccionó anteriormente **Datos adjuntos de malware** o **Vínculo a malware** en la página [Seleccionar técnicas de ingeniería social](#select-one-or-more-social-engineering-techniques) .|
   |Randomize|Uso de la página de aterrizaje predeterminada de Microsoft|
 
   En la lista siguiente se describen los valores de **preferencia Seleccionar página de aterrizaje** disponibles y su configuración asociada:
@@ -480,7 +517,7 @@ En la página **Detalles del inicio** , configure los siguientes valores adicion
 - **Usar cargas únicas en simulaciones dentro de una automatización**: de forma predeterminada, esta configuración no está seleccionada.
 - **Delincuentes repetidos de destino**: de forma predeterminada, esta configuración no está seleccionada. Si lo selecciona, configure el siguiente valor que aparece:
   - **Escriba el número máximo de veces que un usuario puede tener como destino esta automatización**: escriba un valor de 1 a 10.
-- **Enviar correo electrónico de simulación en función de la configuración de zona horaria actual del usuario desde Outlook aplicación web**: de forma predeterminada, esta configuración no está seleccionada.
+- **Enviar correo electrónico de simulación en función de la configuración de zona horaria actual del usuario desde la aplicación web de Outlook**: de forma predeterminada, esta configuración no está seleccionada.
 - **Mostrar la página recopilada de datos intersticiales de la técnica drive-by**: esta configuración solo está disponible si seleccionó **Dirección URL de drive-by** en la página **[Seleccionar técnicas de ingeniería social](#select-one-or-more-social-engineering-techniques)** . De forma predeterminada, la configuración está activada (![alternar en el icono).](../../media/scc-toggle-on.png)
 
 ## <a name="review-simulation-automation"></a>Revisión de la automatización de simulación
