@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtenga información sobre cómo configurar las opciones de la directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: 5ac09788d609752d12a6ae6efadfa8739c5a4f9a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: a9fd78ef37aed3663572b7049ae150e85916e41b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893091"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607419"
 ---
 # <a name="secure-windows-devices"></a>Proteger dispositivos Windows
 
@@ -41,25 +41,18 @@ El objetivo aquí es configurar las opciones que forman parte de la directiva de
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para poder configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium, asegúrese de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update) o Windows 11 Pro.
+Para poder configurar dispositivos Windows para los usuarios Premium de Microsoft 365 Business, asegúrese de que todos los dispositivos Windows estén ejecutando Windows 10 Pro.
 
-Windows 10 Pro (o Windows 11 Pro) es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funcionalidades de administración de dispositivos que complementan Windows 10 Pro y Windows 11 Pro, y permiten la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium.
+Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funcionalidades de administración de dispositivos que complementan Windows 10 Pro y Windows 11 Pro, y permiten la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium.
 
 [Obtenga más información sobre los requisitos de Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
 
-## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Pro y Windows 11 Pro
+## <a name="windows-10-pro"></a>Windows 10 Pro
 
 Si hay dispositivos Windows que ejecuten versiones anteriores de Windows, como Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción a Microsoft 365 Empresa Premium da derecho a actualizar esos dispositivos a Windows 10 Pro o Windows 11 Pro.
   
-Para obtener más información sobre cómo actualizar dispositivos Windows, consulte los siguientes artículos:
+Para obtener más información sobre cómo actualizar dispositivos Windows, vea [actualizar dispositivos Windows a Windows 10 Pro](m365bp-upgrade-windows-10-pro.md).
 
-- [Actualizar Windows Home a Windows 10 o Windows 11 Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
-- [Actualizar a Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
-
-<!---
-Could not find the Win11 equivalent upgrade link.
----> 
-  
 ## <a name="secure-your-windows-10-and-11-devices"></a>Proteger los dispositivos Windows 10 y 11
 
 De forma predeterminada, todas las opciones de configuración están **activadas**. Estas son las opciones de configuración disponibles:<br/><br/>

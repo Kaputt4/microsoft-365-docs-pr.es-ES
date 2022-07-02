@@ -21,12 +21,12 @@ description: Los usuarios pueden obtener información sobre cómo ver y administ
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941006"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607683"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -137,7 +137,11 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
 
    Cuando haya introducido los criterios de búsqueda, pulse Entrar para filtrar los resultados.
 
+   > [!NOTE]
+   > El cuadro **Buscar** de la página **Cuarentena** principal buscará solo los elementos en cuarentena en la vista actual, no en toda la cuarentena. Para buscar en todos los elementos en cuarentena, use **Filtrar** y el control flotante **Filtros** resultante.
+
 Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje para ver los detalles del mismo y para realizar una acción (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
+
 
 ### <a name="view-quarantined-message-details"></a>Ver detalles de mensajes en cuarentena
 
