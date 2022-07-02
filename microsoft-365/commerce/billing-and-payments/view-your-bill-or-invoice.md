@@ -25,14 +25,16 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: b82b3c6472abad250c65900208fbdc5e2603e2f6
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 72bbf1b8c845fb462b761e44f94d0f99bcea2aba
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491745"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602842"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Ver la factura o la suscripción a Microsoft 365 para empresas
+
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Este artículo está dirigido a las personas que tienen una suscripción a Microsoft 365 para empresas.
   
@@ -45,6 +47,8 @@ Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [E
 Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo.
   
 ## <a name="watch-view-download-or-print-your-bill"></a>Ver: Ver, descargar o imprimir su factura
+
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197915).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

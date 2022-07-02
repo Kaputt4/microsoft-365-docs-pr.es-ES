@@ -21,16 +21,20 @@ search.appverid:
 description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f127ac87d4f3886a623f1c81ef2cec6f53677434
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435819"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601594"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
+Consulte [Microsoft 365 ayuda de pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: ¿Qué es Microsoft 365 Empresa Premium?
+
+Vea este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198029).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

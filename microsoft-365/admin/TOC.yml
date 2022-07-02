@@ -4,7 +4,7 @@
     - name: 20 artículos principales de ayuda para administradores
       href: top-m365-admin-articles.yml
     - name: Biblioteca de vídeos de aprendizaje de administración
-      href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
+      href: admin-video-library.yml
     - name: Introducción
       items:
         - name: Registrarse

@@ -26,18 +26,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 218646af1ea881d381d5bceca4b8c0138918ee20
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 60bc5b3b69eacf9573dd806734cb47355266d3a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489213"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602059"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
+
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Este artículo aplica a Microsoft 365 Empresa Premium.
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Ver: Proteger las aplicaciones de Office en iOS
+
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 

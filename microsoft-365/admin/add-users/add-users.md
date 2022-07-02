@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre cómo proporcionar a cada miembro del equipo una cuenta de usuario para que pueda tener licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466820"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602002"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
+
+Consulte [Microsoft 365 ayuda de pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Todos los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar sesión y acceder a [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business). La forma más sencilla de agregar cuentas de usuario es hacerlo de una en una en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Después de realizar este paso, los usuarios tendrán licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
 
@@ -42,6 +44,8 @@ Todos los usuarios de su equipo necesitan una cuenta de usuario para poder inici
 Debe ser un administrador global, de licencia o de usuario para agregar usuarios y asignar licencias. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>Ver: Agregar usuarios en la vista del panel
+
+Vea este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198205).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

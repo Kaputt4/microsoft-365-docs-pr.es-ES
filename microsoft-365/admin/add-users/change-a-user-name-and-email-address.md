@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre.
-ms.openlocfilehash: f48cbf3428988ce50b9f8913dd4f6c4e47858b2d
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466732"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601122"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
+
+Consulte [Microsoft 365 ayuda de pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Es posible que deba cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario si, por ejemplo, este decide cambiarse los apellidos.
 
@@ -41,6 +43,8 @@ Es posible que deba cambiar la dirección de correo electrónico y el nombre par
 > Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="watch-change-a-users-name-or-email-address"></a>Ver: Cambiar el nombre o la dirección de correo electrónico de un usuario
+
+Vea este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198016).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
