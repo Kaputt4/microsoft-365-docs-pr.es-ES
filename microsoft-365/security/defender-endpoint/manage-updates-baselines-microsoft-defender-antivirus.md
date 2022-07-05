@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c1354d69ea1b645ee419ce7635c49e65a0557f26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1b8cb5b55cc0605df0040bcc6b3a75498ef1ea4a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487871"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612181"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
 > [!IMPORTANT]
-> Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar los equipos después de aplicar la actualización. Consulte [las versiones mensuales de la plataforma y del motor](#monthly-platform-and-engine-versions) (en este artículo)
+> Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar al menos a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar las máquinas después de aplicar la actualización. Consulte [Versiones mensuales de la plataforma y del motor](#monthly-platform-and-engine-versions) (en este artículo).
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión, planes 1 y 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -119,7 +119,7 @@ No hay problemas conocidos
 </details><details>
 <summary>Marzo 2022 *ACTUALIZACIÓN* (plataforma: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
 
-*Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar los equipos después de aplicar la actualización.*
+*Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar al menos a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar los equipos después de aplicar la actualización.*
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.363.817.0**<br/>
 &ensp;Publicación:**22 de abril de 2022**<br/>
@@ -748,6 +748,21 @@ Se recomienda actualizar las imágenes de instalación del sistema operativo Win
 Para obtener más información, vea [las imágenes de instalación de Microsoft Defender para el sistema operativo Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220629.5</summary>
+
+&ensp;Versión del paquete: **20220629.5**<br/>
+&ensp;Versión de la plataforma: **4.18.2205.7**<br/>
+&ensp;Versión del motor: **1.1.19300.2**<br/>
+&ensp;Versión de firma: **1.369.220.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+
+<br/>
+</details><details>
 <summary>20220603.3</summary>
 
 &ensp;Versión del paquete: **20220603.3**<br/>
