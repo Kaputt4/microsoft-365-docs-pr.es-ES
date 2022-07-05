@@ -20,18 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623230"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617312"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +40,7 @@ La protección del entorno requiere realizar un inventario de los dispositivos q
 
 Microsoft Defender para punto de conexión proporciona una funcionalidad de detección de dispositivos que le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales ni cambios en los procesos engorrosos. La detección de dispositivos usa puntos de conexión incorporados en la red para recopilar, sondear o examinar la red para detectar dispositivos no administrados. La funcionalidad de detección de dispositivos le permite detectar:
 
-- Enterprise puntos de conexión (estaciones de trabajo, servidores y dispositivos móviles) que aún no están incorporados a Microsoft Defender para punto de conexión
+- Puntos de conexión empresariales (estaciones de trabajo, servidores y dispositivos móviles) que aún no están incorporados a Microsoft Defender para punto de conexión
 - Dispositivos de red como enrutadores y conmutadores
 - Dispositivos IoT como impresoras y cámaras
 
@@ -107,7 +108,7 @@ Para abordar el desafío de obtener suficiente visibilidad para localizar, ident
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Evaluación de vulnerabilidades en dispositivos detectados
 
-Las vulnerabilidades y riesgos en los dispositivos, así como en otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Seguridad Recomendaciones" y se representan en las páginas de entidad en el portal.
+Las vulnerabilidades y riesgos en los dispositivos, así como en otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Recomendaciones de seguridad" y se representan en páginas de entidad en el portal.
 Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabilidades ssh relacionadas con dispositivos no administrados y administrados.
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Panel de recomendaciones de seguridad" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
@@ -160,7 +161,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas más frecuentes sobre la detección de dispositivos](device-discovery-faq.md)

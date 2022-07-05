@@ -19,12 +19,12 @@ description: Obtenga información sobre los informes inteligentes y la informaci
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54965f7d439f753a1d12f91b584718a52620b51a
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647411"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617094"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
@@ -57,6 +57,6 @@ En la tabla siguiente se enumeran los informes que están disponibles en el **pa
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Portal de Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Portal de Microsoft 365 Defender](../defender/microsoft-365-defender-portal.md)
 
 [Protección contra amenazas en Office 365](protect-against-threats.md)

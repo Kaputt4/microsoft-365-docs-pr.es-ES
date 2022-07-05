@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554475"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617334"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -84,6 +84,11 @@ En las pestañas **Dispositivos de red** y **Dispositivos ioT** , también verá
 
 ![Imagen de la lista de dispositivos de red.](images/device-inventory-networkdevices.png)
 
+> [!NOTE]
+> Las integraciones de detección de dispositivos con [Microsoft Defender para IoT](/azure/defender-for-iot/organizations/) y [Corelight](https://corelight.com/integrations/iot-security) están disponibles para ayudar a localizar, identificar y proteger el inventario completo de recursos OT/IOT. Los dispositivos detectados con estas integraciones aparecerán en la pestaña **Dispositivos IoT** . Para obtener más información, consulte [Integraciones de detección de dispositivos](device-discovery.md#device-discovery-integrations).
+>
+> Cuando se configura Defender para IoT, también puede ver los dispositivos allí. Consulte [Administración de dispositivos IoT con el inventario de dispositivos para organizaciones](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
+
 En la parte superior de cada pestaña de inventario de dispositivos, puede ver el número total de dispositivos, el número de dispositivos que aún no están incorporados y el número de dispositivos que se han identificado como un mayor riesgo para su organización. Puede usar esta información para ayudarle a priorizar los dispositivos para mejorar la posición de seguridad.
 
 El recuento **de dispositivos recién detectados** para los dispositivos de red y las pestañas de dispositivos IoT muestra el número de nuevos dispositivos detectados, en los últimos 7 días, enumerados en la vista actual.
@@ -123,7 +128,7 @@ Filtro | Descripción
 **Estado del sensor** </br> | Filtre por los siguientes estados de mantenimiento del sensor para los dispositivos incorporados a Microsoft Defender para punto de conexión:</br> - **Activo**: dispositivos que informan activamente de los datos del sensor al servicio.</br> - **Inactivo**: dispositivos que han dejado de enviar señales durante más de 7 días. </br> - **Mal configurado**: los dispositivos que han deteriorado las comunicaciones con el servicio o no pueden enviar datos del sensor. </br> Los dispositivos mal configurados se pueden clasificar aún más en: </br>  - Sin datos del sensor </br>  - Comunicaciones afectadas </br>  Para obtener más información sobre cómo solucionar problemas en dispositivos mal configurados, consulte [Corrección de sensores incorrectos](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado de incorporación** </br> | El estado de incorporación indica si el dispositivo está incorporado actualmente a Microsoft Defender para punto de conexión o no. Puede filtrar por los siguientes estados: </br> - **Incorporado**: el punto de conexión se incorpora a Microsoft Defender para punto de conexión.  </br> - **Se puede incorporar**: el punto de conexión se detectó en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos. </br> - **No compatible**: el punto de conexión se detectó en la red, pero no es compatible con Microsoft Defender para punto de conexión. </br> - **Información insuficiente**: el sistema no pudo determinar la compatibilidad del dispositivo.</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado del antivirus** </br> | Filtre la vista en función de si el estado del antivirus está deshabilitado, no actualizado o desconocido.</br></br> (_Solo equipos y dispositivos móviles_)
-**Grupo** </br> | Filtre la lista según el grupo que le interesa investigar. </br></br> (_Solo equipos y dispositivos móviles_)
+**Group** </br> | Filtre la lista según el grupo que le interesa investigar. </br></br> (_Solo equipos y dispositivos móviles_)
 **Administrado por** </br> | Administrado por indica cómo se administra el dispositivo. Se puede filtrar por:</br> - Microsoft Defender para punto de conexión</br> - Microsoft Endpoint Manager (MEM), incluida la administración conjunta con Microsoft Configuration Manager a través de la asociación de inquilinos</br>- Microsoft Configuration Manager (ConfigMgr)</br> - Desconocido: esto podría deberse a la ejecución de una versión de Windows obsoleta, administración de GPO u otro MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_) 
 **Tipo de dispositivo** </br> | Filtre por el tipo de dispositivo que le interesa investigar.</br></br> (_solo dispositivos IoT_)
 

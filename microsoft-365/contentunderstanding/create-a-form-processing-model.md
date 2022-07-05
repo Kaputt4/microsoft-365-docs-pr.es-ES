@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
-ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: b44dc34b2b57c75f5fefea074cd74fa0b686bcaa
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349811"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617224"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -75,7 +75,7 @@ El primer paso para crear un modelo de procesamiento de formularios es asignar u
 
         - Si selecciona **Una lista existente**, en el cuadro **Lista seleccionada**, elija la lista que quiere usar.
 
-4. Al crear un modelo de procesamiento de formularios, también crea un nuevo tipo de contenido de SharePoint. Un tipo de contenido de SharePoint representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. SharePoint tipos de contenido se administran a través del <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centro de administración de SharePoint</a>.
+4. Al crear un modelo de procesamiento de formularios, también crea un nuevo tipo de contenido de SharePoint. Un tipo de contenido de SharePoint representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. Los tipos de contenido de SharePoint se administran a través del <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>.
 
    Para asignar este modelo a un tipo de contenido existente en la galería de tipos de contenido de SharePoint, seleccione **Configuración avanzada**.
 
@@ -141,11 +141,11 @@ Debe etiquetar los documentos para enseñar al modelo a comprender los campos y 
 
 Hay dos flujos disponibles para procesar un archivo o lote de archivos seleccionados en una biblioteca donde se ha aplicado un modelo de procesamiento de formularios.
 
-- **Extraer información de una imagen o un archivo PDF con un modelo de procesamiento de formularios** : se usa para extraer texto de una imagen o archivo PDF seleccionado mediante la ejecución de un modelo de procesamiento de formularios. Admite un único archivo seleccionado a la vez y solo admite archivos PDF y archivos de imagen (PNG, JPG y JPEG). Para ejecutar el flujo, seleccione un archivo y, a continuación, seleccione **AutomateExtract info** (**Automatizar** >  Información de extracción).
+- **Extraer información de una imagen o un archivo PDF con un modelo de procesamiento de formularios** : se usa para extraer texto de una imagen o archivo PDF seleccionado mediante la ejecución de un modelo de procesamiento de formularios. Admite un único archivo seleccionado a la vez y solo admite archivos PDF y archivos de imagen (PNG, JPG y JPEG). Para ejecutar el flujo, seleccione un archivo y, a continuación, seleccione **Automatizar** > **extracción de información**.
 
     ![Captura de pantalla que muestra el menú Automatizar con La información de extracción resaltada.](../media/content-understanding/automate-extract-info.png)  
 
-- **Extraer información de archivos con un modelo de procesamiento de formularios** : use con modelos de procesamiento de formularios para leer y extraer información de un lote de archivos. Procesa hasta 5000 archivos SharePoint a la vez. Al ejecutar este flujo, se pueden establecer determinados parámetros. Puede:
+- **Extraer información de archivos con un modelo de procesamiento de formularios** : use con modelos de procesamiento de formularios para leer y extraer información de un lote de archivos. Procesa hasta 5000 archivos de SharePoint a la vez. Al ejecutar este flujo, se pueden establecer determinados parámetros. Puede:
 
     - Elija si desea incluir archivos procesados previamente (el valor predeterminado es no incluir los archivos procesados previamente).
     - Seleccione el número de archivos que se van a procesar (el valor predeterminado es 100 archivos).
@@ -153,16 +153,19 @@ Hay dos flujos disponibles para procesar un archivo o lote de archivos seleccion
     - Especifique cómo desea ordenar el orden (orden ascendente o descendente).
 
     ![Captura de pantalla que muestra el panel Ejecutar flujo con las opciones de parámetro resaltadas.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> La **opción Extraer información de una imagen o archivo PDF con un flujo de modelo de procesamiento de formularios** está disponible automáticamente para una biblioteca con un modelo de procesamiento de formularios asociado. **Extract info from files with a form processing model flow (Extraer información de archivos con un flujo de modelo de procesamiento de formularios**) es una plantilla que se debe agregar a la biblioteca si es necesario.
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
 Cuando se aplica un modelo de procesamiento de formularios de SharePoint Syntex (o un modelo de comprensión de documentos) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
-Cuando un modelo se marca con la **fecha de clasificación**, puede usar **enviar un correo electrónico después de SharePoint Syntex procesa un** flujo de archivo para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
+Cuando un modelo se marca con la **fecha de clasificación**, puede usar enviar **un correo electrónico después de SharePoint Syntex procesa un** flujo de archivo para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
 
 Para ejecutar el flujo:
 
-1. Seleccione un archivo y, a continuación, seleccione **Integrar** >  **Power Automate** >  **Crear un flujo**.
+1. Seleccione un archivo y, a continuación, seleccione **Integrar** > **Power Automate** > **Crear un flujo**.
 
 2. En el panel **Crear un flujo**, seleccione **Enviar un correo electrónico después de SharePoint Syntex procese un archivo**.
 

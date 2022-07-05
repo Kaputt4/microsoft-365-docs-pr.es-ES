@@ -1,6 +1,6 @@
 ---
-title: Comenzar con Microsoft Defender para punto de conexión Plan 1
-description: Comenzar usar El plan 1 de Defender para punto de conexión. Obtenga información sobre cómo usar el Defender for Cloud, administrar alertas y dispositivos, y ver informes.
+title: Introducción al plan 1 de Microsoft Defender para punto de conexión
+description: Introducción al uso del plan 1 de Defender para punto de conexión. Obtenga información sobre cómo usar Defender for Cloud, administrar alertas y dispositivos y ver informes.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3926282bce47af2abee905f5c95844a8a78c6d33
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939353"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617116"
 ---
-# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Comenzar con Microsoft Defender para punto de conexión Plan 1
+# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, realizar las acciones necesarias en las amenazas detectadas y administrar los dispositivos. El portal de Microsoft 365 Defender es donde puede empezar a interactuar con las funcionalidades de protección contra amenazas que obtiene con el plan 1 de Defender para punto de conexión. En las secciones siguientes se describe cómo empezar a trabajar:
 
-- [El portal de Microsoft 365 Defender](#the-microsoft-365-defender-portal)
+- [El portal de Microsoft 365 Defender incluye:](#the-microsoft-365-defender-portal)
 - [Visualización y administración de incidentes & alertas](#view-and-manage-incidents--alerts)
 - [Administración de dispositivos](#manage-devices)
 - [Visualización de informes](#view-reports)
@@ -42,7 +42,7 @@ El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://se
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="El portal de Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-La página Inicio proporciona al equipo de seguridad una vista agregada de instantáneas de alertas, estado del dispositivo y amenazas detectadas. El Defender for Cloud está configurado para que el equipo de operaciones de seguridad pueda encontrar la información que buscan de forma rápida y sencilla.
+La página Inicio proporciona al equipo de seguridad una vista agregada de instantáneas de alertas, estado del dispositivo y amenazas detectadas. Defender for Cloud está configurado para que el equipo de operaciones de seguridad pueda encontrar la información que busca de forma rápida y sencilla.
 
 > [!NOTE]
 > Nuestros ejemplos que se muestran en este artículo pueden diferir de lo que se ve en el portal de Microsoft 365 Defender. Lo que vea en el portal depende de sus licencias y permisos. Además, el equipo de seguridad puede personalizar el portal de la organización agregando, quitando y reorganizando tarjetas.
@@ -67,9 +67,9 @@ La barra de navegación del lado izquierdo de la pantalla le permite moverse fá
 | **Alertas de & incidentes** | Se expande para mostrar incidentes y **alertas**. |
 | **Alertas de &** >  incidentes **Incidentes** | Navega a la lista **Incidentes** . Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente en primer lugar. <br/><br/> Para más información, consulte [Incidentes](view-incidents-queue.md). |
 | **Alertas de &** >  incidentes **Alertas** | Navega a la lista **Alertas** (también denominada **cola de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la lista **Alertas** muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, consulte [Alertas](alerts-queue.md). |
-| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como las siguientes: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender para punto de conexión detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, consulte [Centro de acciones](auto-investigation-action-center.md). |
+| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como las siguientes: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender para punto de conexión detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, consulte [Centro de acciones](auto-investigation-action-center.md). |
 | **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones y métricas de mejora. <br/><br/> Para obtener más información, consulte [Puntuación de seguridad de Microsoft](../defender/microsoft-secure-score.md). |
-| **centro de Learning** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre Microsoft 365 funcionalidades de seguridad.  |
+| **Centro de aprendizaje** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre las funcionalidades de seguridad de Microsoft 365.  |
 | **Extremos** >  **Búsqueda** | Navega a una página donde puede buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |
 |  **Extremos** >  **Inventario de dispositivos** | Navega a la lista de dispositivos que se incorporan a Defender para punto de conexión. Proporciona información sobre los dispositivos, como sus niveles de exposición y riesgo. <br/><br/> Para más información, consulte [Inventario de dispositivos](machines-view-overview.md). |
 |  **Extremos** >  **Líneas base de & de configuración** | Se expande para mostrar **las líneas base de seguridad** y **la administración de configuración**. |
@@ -80,8 +80,8 @@ La barra de navegación del lado izquierdo de la pantalla le permite moverse fá
 | **Salud** >  **Estado del servicio** | Navega a la página Estado del servicio del Centro de administración de Microsoft 365. Esta página le permite ver el estado de mantenimiento en todos los servicios disponibles con las suscripciones de su organización.   |
 | **Salud** >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
 | **Permisos & roles** | Permite conceder permisos para usar el portal de Microsoft 365 Defender. Los permisos se conceden a través de roles en Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel flotante. El control flotante contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).  |
-| **Configuración** | Navega a la configuración general del portal de Microsoft 365 Defender (que aparece como Centro de **seguridad**) y Defender para punto de conexión (que aparece como **puntos de conexión**). <br/><br/> Para obtener más información, consulte [Configuración](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el portal de cumplimiento de Microsoft Purview. <br/><br/> Para más información, consulte [Portales de seguridad y centros de administración de Microsoft](../defender/portals.md). |
+| **Configuración** | Navega a la configuración general del portal de Microsoft 365 Defender (que aparece como Centro de **seguridad**) y Defender para punto de conexión (que aparece como **puntos de conexión**). <br/><br/> Para más información, consulte [Configuración](../defender/microsoft-365-defender-portal.md). |
+| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el portal de cumplimiento Microsoft Purview. <br/><br/> Para más información, consulte [Portales de seguridad y centros de administración de Microsoft](../defender/portals.md). |
 
 > [!TIP]
 > Para más información, consulte la [introducción al portal de Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -171,7 +171,7 @@ Desplácese hacia abajo para ver todas las vistas en el informe de protección w
 > [!TIP]
 > Para más información, consulte [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar Microsoft Defender para punto de conexión plan 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

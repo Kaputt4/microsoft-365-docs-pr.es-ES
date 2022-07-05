@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Comenzar usar funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365.
+description: Empiece a usar funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca64509321ff43bbe8b7baf7ec7dfa270d9afdc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941531"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617160"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -81,31 +81,31 @@ Las funcionalidades de AIR se incluyen en [Microsoft Defender para Office 365](d
 - [Protección contra malware](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Protección contra phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Protección contra correo no deseado](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [vínculos Caja fuerte y datos adjuntos de Caja fuerte](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Habilitar vínculos seguros y datos adjuntos seguros](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 Además, asegúrese de [revisar las directivas de alerta de su organización](../../compliance/alert-policies.md), especialmente las [directivas predeterminadas de la categoría Administración de amenazas](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>¿Qué directivas de alerta desencadenan investigaciones automatizadas?
 
-Microsoft 365 proporciona muchas directivas de alertas integradas que ayudan a identificar Exchange abuso de permisos de administrador, actividad de malware, posibles amenazas externas e internas y riesgos de gobernanza de la información. Varias de las [directivas de alerta predeterminadas](../../compliance/alert-policies.md#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el portal de Microsoft 365 Defender y cómo se generan:
+Microsoft 365 proporciona muchas directivas de alertas integradas que ayudan a identificar el abuso de permisos de administrador de Exchange, la actividad de malware, las posibles amenazas externas e internas y los riesgos de gobernanza de la información. Varias de las [directivas de alerta predeterminadas](../../compliance/alert-policies.md#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el portal de Microsoft 365 Defender y cómo se generan:
 
 |Alerta|Severity|Cómo se genera la alerta|
 |---|---|---|
-|Se detectó un clic de dirección URL potencialmente malintencionado|**Alto**|Esta alerta se genera cuando se produce cualquiera de las siguientes acciones: <ul><li>Un usuario protegido por [Caja fuerte Vínculos](safe-links.md) de la organización hace clic en un vínculo malintencionado</li><li>Los cambios de veredicto de las direcciones URL se identifican mediante Microsoft Defender para Office 365</li><li>Los usuarios invalidan las páginas de advertencia de vínculos de Caja fuerte (en función de la [directiva de vínculos de Caja fuerte de](set-up-safe-links-policies.md) la organización.</li></ul> <p> Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [Configuración de directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md).|
+|Se detectó un clic de dirección URL potencialmente malintencionado|**Alto**|Esta alerta se genera cuando se produce cualquiera de las siguientes acciones: <ul><li>Un usuario protegido por [vínculos seguros](safe-links.md) de su organización hace clic en un vínculo malintencionado</li><li>Los cambios de veredicto de las direcciones URL se identifican mediante Microsoft Defender para Office 365</li><li>Los usuarios invalidan las páginas de advertencia de Vínculos seguros (en función de la [directiva de vínculos seguros](set-up-safe-links-policies.md) de su organización.</li></ul> <p> Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [Configuración de directivas de vínculos seguros](set-up-safe-links-policies.md).|
 |Un usuario notifica un mensaje de correo electrónico como malware o phish|**Informativo**|Esta alerta se genera cuando los usuarios de su organización notifican mensajes como correo electrónico de suplantación de identidad mediante el [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe.|
 |Los mensajes de correo electrónico que contienen malware se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [la purga automática de cero horas (ZAP).](zero-hour-auto-purge.md)|
 |Los mensajes de correo electrónico que contienen direcciones URL de phish se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes que contienen phish se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [ZAP](zero-hour-auto-purge.md).|
 |Se detectan patrones de envío de correo electrónico sospechosos|**Medio**|Esta alerta se genera cuando alguien de su organización ha enviado un correo electrónico sospechoso y corre el riesgo de que se le restrinja el envío de correo electrónico. La alerta es una advertencia temprana para el comportamiento que podría indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. <p> Aunque es poco frecuente, una alerta generada por esta directiva puede ser una anomalía. Sin embargo, es una buena idea [comprobar si la cuenta de usuario está en peligro](responding-to-a-compromised-email-account.md).|
-|Un usuario tiene restringido el envío de correo electrónico.|**Alto**|Esta alerta se genera cuando a alguien de su organización se le restringe el envío de correo saliente. Esta alerta suele producirse cuando una [cuenta de correo electrónico está en peligro](responding-to-a-compromised-email-account.md). <p> Para obtener más información sobre los usuarios restringidos, vea [Quitar usuarios bloqueados del portal Usuarios restringidos en Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
+|Un usuario tiene restringido el envío de correo electrónico.|**Alto**|Esta alerta se genera cuando a alguien de su organización se le restringe el envío de correo saliente. Esta alerta suele producirse cuando una [cuenta de correo electrónico está en peligro](responding-to-a-compromised-email-account.md). <p> Para obtener más información sobre los usuarios restringidos, consulte [Eliminación de usuarios bloqueados del portal Usuarios restringidos de Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
 > [!TIP]
-> Para obtener más información sobre las directivas de alerta o editar la configuración predeterminada, consulte [Directivas de alerta en el portal de cumplimiento de Microsoft Purview](../../compliance/alert-policies.md).
+> Para obtener más información sobre las directivas de alerta o editar la configuración predeterminada, consulte [Directivas de alerta en el portal de cumplimiento Microsoft Purview](../../compliance/alert-policies.md).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Permisos necesarios para usar las funcionalidades de AIR
 
 Los permisos se conceden a través de determinados roles, como los que se describen en la tabla siguiente:
 
-|Task|Rol(s) requerido(s)|
+|Tarea|Rol(s) requerido(s)|
 |---|---|
 |Configuración de las características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar las acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Es posible que tenga que crear un nuevo grupo de roles de **colaboración & correo electrónico** y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
@@ -120,7 +120,7 @@ Microsoft Defender para Office 365 licencias [del plan 2](defender-for-office-36
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Los cambios llegarán próximamente en el portal de Microsoft 365 Defender
 
-Si ya usa funcionalidades de AIR en Microsoft Defender para Office 365, va a ver algunos cambios en el [portal de Microsoft 365 Defender mejorado](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
+Si ya usa funcionalidades de AIR en Microsoft Defender para Office 365, va a ver algunos cambios en el [portal de Microsoft 365 Defender mejorado](../defender/microsoft-365-defender-portal.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas" lightbox="../../media/m3d-action-center-unified.png":::
 
@@ -146,10 +146,10 @@ En la tabla siguiente se enumeran los cambios y mejoras que llegan a AIR en Micr
 |**Pestaña Entidades**|La pestaña **Entidades** tiene un estilo de tabulación que incluye una vista de resumen completo y la capacidad de filtrar por tipo de entidad. La pestaña **Entidades** ahora incluye una opción **de búsqueda Go** además de la opción **Abrir en el Explorador** . Ahora puede usar [el Explorador](threat-explorer.md) o [la búsqueda avanzada](../defender-endpoint/advanced-hunting-overview.md) para buscar entidades y amenazas, y filtrar los resultados.|
 |**Pestaña Acciones**|La pestaña **Acciones** actualizada ahora incluye una pestaña **Acciones pendientes** y una pestaña **Historial de acciones** . Las acciones se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Pestaña Evidencia**|Una nueva pestaña **Evidencia** muestra los resultados clave de la entidad relacionados con las acciones. Las acciones relacionadas con cada elemento de evidencia se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
-|**Centro de actividades**|El **Centro de acciones** actualizado (<https://security.microsoft.com/action-center>) reúne las acciones pendientes y completadas en el correo electrónico, los dispositivos y las identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, consulte [El Centro de acciones](../defender/m365d-action-center.md)).|
+|**Centro de acciones**|El **Centro de acciones** actualizado (<https://security.microsoft.com/action-center>) reúne las acciones pendientes y completadas en el correo electrónico, los dispositivos y las identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, consulte [El Centro de acciones](../defender/m365d-action-center.md)).|
 |**Página Incidentes**|La página **Incidentes** ahora correlaciona varias investigaciones para proporcionar una vista mejor consolidada de las investigaciones. ([Obtenga más información sobre los incidentes](../defender/incidents-overview.md)).|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver detalles y resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Revisión y aprobación de acciones pendientes](air-remediation-actions.md)

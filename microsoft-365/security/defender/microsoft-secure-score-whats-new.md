@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9087b2c04f8bc88e23f5b901d29d1067bdd9877e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825132"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617050"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "64825132"
 
 Para que La puntuación segura de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿Qué viene en Puntuación de seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
 
-La Puntuación de seguridad de Microsoft se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+La Puntuación de seguridad de Microsoft se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
 ## <a name="april-2022"></a>Abril de 2022
 
@@ -42,14 +42,14 @@ La Puntuación de seguridad de Microsoft se puede encontrar en https://security.
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
-- Activar Caja fuerte datos adjuntos en modo de bloque
+- Activar datos adjuntos seguros en modo de bloque
 - Impedir el uso compartido Exchange Online detalles del calendario con usuarios externos
-- Activar Caja fuerte Documentos para clientes de Office
+- Activar documentos seguros para clientes de Office
 - Activar la configuración de filtro de datos adjuntos comunes para directivas antimalware
 - Asegúrese de que no se permiten dominios de remitente para las directivas contra correo no deseado.
-- Creación de directivas de vínculos de Caja fuerte para mensajes de correo electrónico
+- Creación de directivas de vínculos seguros para mensajes de correo electrónico
 - Creación de directivas de purga automática de cero horas para malware
-- Active Microsoft Defender para Office 365 en SharePoint, OneDrive y Microsoft Teams
+- Activar Microsoft Defender para Office 365 en SharePoint, OneDrive y Microsoft Teams
 - Creación de directivas de purga automática de cero horas para mensajes de phishing
 - Creación de directivas de purga automática de cero horas para mensajes de correo no deseado
 - Bloquear el abuso de controladores firmados vulnerables explotados
