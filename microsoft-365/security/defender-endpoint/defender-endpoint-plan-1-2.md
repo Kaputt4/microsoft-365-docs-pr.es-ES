@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f55cfa3a9c32c6392f1c7d263f8e866ff4084e1e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e1cf2647ac8308d30b82e69cbb288fde330fdc5a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490021"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612203"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Comparar planes de Microsoft Defender para punto de conexión
 
@@ -65,10 +65,11 @@ Sin embargo, **puede ponerse en contacto con el soporte técnico y solicitar una
 
 ## <a name="start-a-trial"></a>Inicio de una prueba
 
-- Para probar el plan 1 de Defender para punto de conexión, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial).
-- Para probar el plan 2 de Defender para punto de conexión, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial).
-- Para probar el complemento Administración de vulnerabilidades de Microsoft Defender, visite [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
+- Para probar el plan de Defender para punto de conexión, vaya a la [página de registro de prueba de Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
+- Para probar el complemento de Administración de vulnerabilidades de Microsoft Defender para Defender para punto de conexión 2, visite [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
 ## <a name="see-also"></a>Vea también
+
+- [Introducción a Microsoft Security (ofertas de prueba)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 
 - [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) (endpoint protection para pequeñas y medianas empresas)
