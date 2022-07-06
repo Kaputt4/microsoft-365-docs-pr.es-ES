@@ -11,18 +11,16 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Obtenga información sobre las etiquetas y directivas predeterminadas para que Microsoft Purview Information Protection clasifique y proteja el contenido confidencial.
-ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 46718c5f3ecb79cf112012064d0fbf688e21f6d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444188"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629429"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Etiquetas y directivas predeterminadas para proteger los datos
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas para Microsoft Purview Information Protection: 
 
@@ -131,18 +129,39 @@ Si quiere editar la configuración de etiquetado automático del lado cliente, c
 
 ## <a name="service-side-auto-labeling"></a>Etiquetado automático del lado servicio 
 
-El etiquetado automático del lado servicio ayuda a etiquetar documentos confidenciales en reposo y correos electrónicos en tránsito. La directiva de etiquetado automático predeterminada del lado servicio crea una directiva en modo de simulación para los documentos almacenados en todos los sitios de SharePoint o OneDrive y en todos los correos electrónicos que se envían a través de Exchange Online. En el modo de simulación, los elementos no se etiquetan realmente hasta que se activa la directiva. El modo de simulación le permite obtener una vista previa de los elementos que se etiquetarían si la directiva estuviera activada, por lo que usted adquiere confianza en la característica de etiquetado antes de que implemente la directiva en el espacio empresarial para el etiquetado real. 
+El etiquetado automático del lado servicio ayuda a etiquetar documentos confidenciales en reposo y correos electrónicos en tránsito. La directiva de etiquetado automático del lado del servicio predeterminada crea directivas que se ejecutan en modo de simulación para los documentos almacenados en todos los sitios de SharePoint o OneDrive, y todos los correos electrónicos que se envían a través de Exchange Online. 
 
-El etiquetado automático predeterminado del lado servicio tiene la siguiente configuración: 
+En el modo de simulación, los elementos no se etiquetan realmente hasta que se activa la directiva. Puede activar manualmente la directiva o, a menos que cambie la configuración predeterminada, la directiva se activará automáticamente si no hay ningún cambio en la directiva en un número establecido de días a partir de la finalización de la simulación.
+
+> [!NOTE]
+> La activación automática de directivas de etiquetado automático es nueva y se implementa gradualmente para las nuevas directivas de etiquetado automático. Es posible que no vea esta configuración inmediatamente o para todas las directivas.
+
+En la mayoría de los casos, el número de días antes de que una directiva no editada se active automáticamente es 7. Sin embargo, específico para los nuevos clientes del 23 de junio de 2022, el número inicial de días es 25 y, a continuación, 7 después de editar la directiva.
+
+El modo de simulación le permite obtener una vista previa de los elementos que se etiquetarían si la directiva estuviera activada, por lo que usted adquiere confianza en la característica de etiquetado antes de que implemente la directiva en el espacio empresarial para el etiquetado real. 
+
+Las directivas de etiquetado automático predeterminadas del lado del servicio tienen la siguiente configuración: 
+
+Para todos los clientes:
 
 - Si hay entre 1 y 9 instancias de números de tarjeta de crédito que se encuentran en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Cualquier usuario (sin restricciones)**
-
+    
 - Si hay 10 o más instancias de números de tarjeta de crédito que se encuentren en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Todos los empleados** 
 
 > [!NOTE]
 > Si detectamos que tiene sus propias etiquetas de confidencialidad publicadas, le pediremos que seleccione una de sus propias etiquetas para su directiva de etiquetado automático.
 
-Una vez completada la simulación, revise los resultados y, si está contento con ellos, active la directiva.
+Para los nuevos clientes del 23 de junio de 2022 y el inquilino de Microsoft 365 se encuentra en la región de EE. UU.:
+
+- Si hay entre 1 y 9 instancias de datos personales de EE. UU. y nombres completos en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Cualquiera (sin restricciones)**
+
+- Si hay 10 o más instancias de datos personales de EE. UU. y nombres completos en un documento o correo electrónico, aplique la etiqueta de confidencialidad **Confidencial** \ **Todos los empleados** 
+
+Los nuevos clientes del 23 de junio de 2022 tienen dos directivas de etiquetado automático para cada configuración. Una directiva es para la ubicación de Exchange y la otra para las ubicaciones de SharePoint y OneDrive. Aunque las directivas se crean al mismo tiempo, la simulación no se activa inmediatamente para SharePoint y OneDrive:
+- Ubicación de Exchange: se crea la directiva de etiquetado automático e inicia inmediatamente la simulación.
+- Ubicaciones de SharePoint y OneDrive: se crea la directiva de etiquetado automático, pero espera 25 días antes de que se inicie automáticamente la simulación. Este retraso le da tiempo para que los archivos se creen y guarden en estas ubicaciones. 
+
+Una vez completada la simulación, revise los resultados y, si está satisfecho con ellos, active las directivas. La implementación lenta a partir del 23 de junio de 2022, de forma predeterminada, las directivas se activarán automáticamente si no se editan dentro del período de tiempo establecido (25 días inicialmente para los nuevos clientes; de lo contrario, 7 días).
 
 Para obtener más información sobre el modo de simulación, consulte [Más información sobre el modo de simulación](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 

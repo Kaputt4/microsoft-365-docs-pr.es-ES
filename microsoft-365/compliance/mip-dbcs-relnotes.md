@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión sobre la compatibilidad de Microsoft 365 con el conjunto de caracteres de doble byte
+title: Notas de la versión sobre la compatibilidad de Microsoft Purview con el conjunto de caracteres de doble byte
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para la compatibilidad con juegos de caracteres de doble byte.
-ms.openlocfilehash: 2de0e67c78ac558f4bdc2648790e49fad86e3178
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595067"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622433"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Notas de la versión para la compatibilidad con juegos de caracteres de doble byte
 
@@ -30,7 +30,7 @@ ms.locfileid: "64595067"
 - Coreano
 - Japonés
 
-Esta compatibilidad está disponible para tipos de información confidencial y diccionarios de palabras clave, y se reflejará en la prevención de pérdida de datos (para Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams), cumplimiento de comunicaciones, etiquetado automático en aplicaciones de Office y Microsoft Defender for Cloud Apps.
+Esta compatibilidad está disponible para tipos de información confidencial y diccionarios de palabras clave y se reflejará en la prevención de pérdida de datos de Microsoft Purview (para Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams), cumplimiento de comunicaciones, etiquetado automático en aplicaciones de Office y Microsoft Defender for Cloud Apps.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

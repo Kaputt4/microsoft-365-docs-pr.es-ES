@@ -1,5 +1,5 @@
 ---
-title: Introducción a la extensión de cumplimiento de Microsoft
+title: Introducción a la extensión de Microsoft Purview
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,24 +19,24 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Prepárese para implementar la extensión de Microsoft Purview.
+ms.openlocfilehash: 9593b75ea9bb858e9cd770ec4f40f4e6d7667a2e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681818"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622951"
 ---
-# <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
+# <a name="get-started-with-microsoft-purview-extension"></a>Introducción a la extensión de Microsoft Purview
 
-Use estos procedimientos para implementar la extensión de cumplimiento de Microsoft.
+Use estos procedimientos para implementar la extensión de Microsoft Purview.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para usar la extensión de cumplimiento de Microsoft, el dispositivo debe haber sido incorporado a la DLP del punto de conexión Consulte estos artículos si la DLP o la DLP del punto de conexión son algo nuevo para usted.
+Para usar la extensión de Microsoft Purview, el dispositivo debe haber sido incorporado a la DLP del punto de conexión Consulte estos artículos si la DLP o la DLP del punto de conexión son algo nuevo para usted.
 
-- [Información sobre la extensión de cumplimiento de Microsoft](dlp-chrome-learn-about.md)
-- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+- [Más información sobre la extensión de Microsoft Purview](dlp-chrome-learn-about.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
@@ -60,7 +60,7 @@ Para una guía detallada sobre las licencias, vea: [Guía de licencias de Micros
 
 - Su organización debe tener la licencia de DLP para punto de conexión
 - Sus dispositivos deben ejecutar Windows 10 x64 compilación 1809 o posterior.
-- El dispositivo debe tener la versión del cliente antimalware 4.18.2101.9 o posterior. Para comprobar la versión actual, abra la aplicación de **Seguridad de Windows**, seleccione el icono **Configuración** y, a continuación, **Acerca de**.
+- El dispositivo debe tener la versión de cliente antimalware 4.18.2202.x o posterior. Para comprobar la versión actual, abra la aplicación de **Seguridad de Windows**, seleccione el icono **Configuración** y, a continuación, **Acerca de**.
 
 
 ### <a name="permissions"></a>Permisos
@@ -79,14 +79,14 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -96,7 +96,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 
 ### <a name="overall-installation-workflow"></a>Flujo general de trabajo de la instalación
 
-La implementación de la extensión de cumplimiento de Microsoft es un proceso de varias fases. Puede elegir entre instalar en las máquinas de una en una o usar Microsoft Endpoint Manager o la directiva de grupo para la implementación a nivel de la organización.
+La implementación de la extensión es un proceso de varias fases. Puede elegir entre instalar en las máquinas de una en una o usar Microsoft Endpoint Manager o la directiva de grupo para la implementación a nivel de la organización.
 
 1. [Preparar sus dispositivos](#prepare-your-devices).
 2. [Autohospedaje de máquina única de instalación básica](#basic-setup-single-machine-selfhost)
@@ -108,7 +108,7 @@ La implementación de la extensión de cumplimiento de Microsoft es un proceso d
 
 ### <a name="prepare-infrastructure"></a>Preparar la infraestructura
 
-Si va a implementar la extensión de cumplimiento de Microsoft en todos sus dispositivos Windows 10 supervisados, debería quitar Google Chrome de las listas de aplicaciones y de exploradores no permitidos. Para más información, consulte [Exploradores no permitidos](dlp-configure-endpoint-settings.md#unallowed-browsers). Si solo va a realizar la implementación en unos pocos dispositivos, puede dejar Chrome en las listas de aplicaciones o exploradores no permitidos. La extensión de cumplimiento de Microsoft ignorará las restricciones de ambas listas para aquellos equipos en los que se haya instalado.
+Si va a implementar la extensión en todos sus dispositivos Windows 10 supervisados, debería quitar Google Chrome de las listas de aplicaciones y de exploradores no permitidos. Para más información, consulte [Exploradores no permitidos](dlp-configure-endpoint-settings.md#unallowed-browsers). Si solo va a realizar la implementación en unos pocos dispositivos, puede dejar Chrome en las listas de aplicaciones o exploradores no permitidos. La extensión ignorará las restricciones de ambas listas para aquellos equipos en los que se haya instalado.
 
 ### <a name="prepare-your-devices"></a>Preparar sus dispositivos
 
@@ -121,44 +121,17 @@ Si va a implementar la extensión de cumplimiento de Microsoft en todos sus disp
 
 Esta método es el recomendado.
 
-1. Inicie sesión en el equipo de Windows 10 en el que quiera instalar la extensión de cumplimiento de Microsoft y ejecute este script de PowerShell como administrador.
+1. Vaya a [Extensión de Microsoft Purview: Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. Vaya a [Extensión de cumplimiento de Microsoft - Almacén web de Chrome (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
-
-3. Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
+2. Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Implementación con Microsoft Endpoint Manager
 
 Use este método de configuración para implementaciones a nivel de la organización.
 
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Habilitar el valor necesario del Registro a través de Microsoft Endpoint Manager
-
-1. Cree un script de PowerShell con el contenido siguiente:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
-
-3. Vaya a **Dispositivos** > **Scripts** y seleccione **Agregar**.
-
-4. Cuando se le solicite, vaya a la ubicación del script creado.
-
-5. Seleccione la siguiente configuración:
-    1. Ejecutar este script con las credenciales de inicio de sesión: NO
-    1. Aplicar comprobación de firma de script: NO
-    1. Ejecutar script en host de PowerShell de 64 bits: SÍ
-
-6. Seleccione los grupos adecuados de dispositivos y aplique la directiva.
-
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Pasos para la instalación forzada de Microsoft Endpoint Manager
 
-Antes de agregar la extensión de cumplimiento de Microsoft a la lista de extensiones instaladas de manera forzosa, es importante incorporar ADMX de Chrome. Los pasos de este proceso en Microsoft Endpoint Manager son documentados por Google: [Administrar el explorador Chrome con Microsoft Intune - Ayuda de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Antes de agregar la extensión a la lista de extensiones instaladas de manera forzosa, es importante incorporar ADMX de Chrome. Los pasos de este proceso en Microsoft Endpoint Manager son documentados por Google: [Administrar el explorador Chrome con Microsoft Intune - Ayuda de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  Tras incorporar ADMX, se pueden dar los siguientes pasos para crear un perfil de configuración para esta extensión.
 
@@ -186,39 +159,7 @@ Antes de agregar la extensión de cumplimiento de Microsoft a la lista de extens
 
 ### <a name="deploy-using-group-policy"></a>Implementar mediante la directiva de grupo
 
-Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo para implementar la extensión de cumplimiento de Microsoft en toda la organización
-
-1. Sus dispositivos deben poder ser administrados mediante la directiva de grupo, y debe importar todos los ADMX de Chrome en el almacén central de la directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-
-2. Crear un script de PowerShell mediante este comando de PowerShell:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. Abra la **Consola de administración de la directiva de grupo** y vaya a la unidad organizativa (OU).
-
-4. Haga clic y seleccione **Crear un GPO en este dominio y vincularlo aquí**. Cuando se solicite, asigne un nombre descriptivo a este objeto de directiva de grupo (GPO) y finalice la creación.
-
-5. Haga clic en el GPO y seleccione **Editar**.
-
-6. Vaya a **Configuración del equipo** > **Preferencias** > **Configuración del panel de control** > **Tareas programadas**.
-
-7. Cree una nueva tarea inmediata. Para ello, haga clic y seleccione **Nuevo** > **Tarea inmediata (al menos Windows 7)**.
-
-8. Asigne un nombre y una descripción a la tarea.
-
-9. Elija la cuenta correspondiente para ejecutar la tarea inmediata, por ejemplo NT Authority.
-
-10. Seleccione **Ejecutar con los privilegios más altos**.
-
-11. Configure la directiva para Windows 10.
-
-12. En la pestaña **Acciones**, seleccione la acción **Iniciar un programa**.
-
-13. Escriba la ruta de acceso al Programa/Script creado en el paso 1.
-
-14. Seleccione **Aplicar**.
+Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo para implementar la extensión en toda la organización.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Agregar la extensión de Chrome a la lista ForceInstall
 
@@ -263,13 +204,13 @@ Ahora que ha quitado Chrome de la lista de aplicaciones/exploradores no permitid
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Usar el panel de administración de alertas para ver las alertas de DLP de Chrome
 
-1. Abra la página sobre la **prevención de pérdida de datos** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y seleccione **Alertas**.
+1. Abra la página de **prevención de pérdida de datos** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> y seleccione **Alertas**.
 
 2. Vea los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
 
-1. Abra la [página Clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y elija **Explorador de actividad**.
+1. Abra la [página Clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> y elija **Explorador de actividad**.
 
 2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
 

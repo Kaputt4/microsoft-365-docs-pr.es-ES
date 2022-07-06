@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: El portal Microsoft 365 Defender y el Centro de cumplimiento de Microsoft 365 proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda. En este tema se enumeran las recomendaciones de gobierno de datos que es posible que vea y se describe el contenido que se detecte para desencadenar cada uno.
-ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: El portal Microsoft 365 Defender y el portal de cumplimiento Microsoft Purview proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda. En este tema se enumeran las recomendaciones de gobierno de datos que es posible que vea y se describe el contenido que se detecte para desencadenar cada uno.
+ms.openlocfilehash: 27fcc5dd07695be355fc15ba2145ffa5540673ca
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110972"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637315"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Cómo se identifica el contenido para las recomendaciones de gobierno de datos
 
-El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender y</a> el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda.
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda.
 
 En este tema se enumeran las recomendaciones de gobierno de datos que es posible que vea y se describe el contenido que se detecte para desencadenar cada uno.
 

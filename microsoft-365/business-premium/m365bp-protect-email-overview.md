@@ -2,8 +2,8 @@
 title: Información general sobre la protección del correo electrónico
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -24,21 +24,21 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general sobre cómo formar a su equipo para enseñarles a proteger el correo electrónico contra malware, suplantación de identidad (phishing) y otros ciberataques malintencionados mediante las herramientas de ciberseguridad incluidas con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: f22b8c71f88edbbf587ccf7fd7f25f52c7c275bf
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 91e79290c3b930bf91da5108be0f29d94204300f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573834"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631737"
 ---
 # <a name="protect-all-email"></a>Proteger todo el correo electrónico
 
-Como ya sabe, los mensajes de correo electrónico están llenos de ataques malintencionados que a simple vista parecen comunicaciones inofensivas. Además, los sistemas de correo electrónico son especialmente vulnerables porque el correo electrónico es gestionado por todos los usuarios de la organización y se basa en que las personas toman decisiones seguras de forma coherente con esas comunicaciones. En esta misión, aprenderá cómo los miembros de las organizaciones pueden ayudar a mantener el sistema a salvo de posibles atacantes.
+Como probablemente ya sabe, el correo electrónico puede contener ataques malintencionados que se consideran comunicaciones inofensivas. Además, los sistemas de correo electrónico son especialmente vulnerables, ya que el correo electrónico lo administran todos los usuarios de la organización y la seguridad depende de que los seres humanos toman decisiones coherentemente buenas con esas comunicaciones. En esta misión, aprenderá cómo los miembros de las organizaciones pueden ayudar a mantener el sistema a salvo de posibles atacantes.
 
 Los objetivos de este cometido son:
 
-- [Protección contra suplantación de identidad (phishing) y otros ataques](m365bp-avoid-phishing-and-attacks.md)
-- [Configuración del correo electrónico encriptado](send-encrypted-email.md)
+- [Proteger contra suplantación de identidad (phishing) y otros ataques](m365bp-avoid-phishing-and-attacks.md).
+- [Configurar el correo electrónico encriptado](send-encrypted-email.md)
 
 Cumpla estos objetivos antes de pasar al [siguiente cometido](m365bp-collaborate-share-securely.md).
 

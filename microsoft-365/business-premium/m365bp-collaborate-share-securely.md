@@ -2,8 +2,8 @@
 title: Colaborar y compartir de forma segura en Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo colaborar y compartir archivos y comunicarse de forma segura con Teams en Microsoft 365 Empresa Premium. En el entorno cerrado proporcionado por Teams, los archivos y las comunicaciones están libres de ciberamenazas y ciberataques.
-ms.openlocfilehash: 093507502e6bcf6b9a6cdfcf1ce8264f47b6e94c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5fbc31f41d74b8b267a15356d5648266070b6fa1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489189"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621588"
 ---
 # <a name="collaborate-and-share-securely"></a>Colaborar y compartir de forma segura
 
@@ -36,11 +36,11 @@ Ahora que está protegido por las aplicaciones de Microsoft 365 Business Premium
 
 Sus objetivos son los siguientes:
 
-- [Crear Equipos para colaboración](create-teams-for-collaboration.md)
-- [Configurar reuniones](set-up-meetings.md)
-- [Compartir archivos y vídeos](share-files-and-videos.md)
-- [Crear un sitio de comunicación](create-communications-site.md)
+- [Crear Equipos para colaboración](create-teams-for-collaboration.md).
+- [Configurar reuniones](set-up-meetings.md).
+- [Compartir archivos y vídeos](share-files-and-videos.md).
+- [Crear un sitio de comunicación](create-communications-site.md).
 
-Después de completar estos objetivos, inicie su [misión final](m365bp-protect-devices.md).
+Después de completar estos objetivos, inicie la misión final: [Seguridad de dispositivos administrados](m365bp-protect-devices.md).
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Colaborar y compartir de forma segura.":::

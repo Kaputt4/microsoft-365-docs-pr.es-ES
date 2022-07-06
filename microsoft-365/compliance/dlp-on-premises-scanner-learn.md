@@ -1,5 +1,5 @@
 ---
-title: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365
+title: Más información sobre el escáner local de prevención de pérdida de datos
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: El explorador local de prevención de pérdida de datos de Microsoft 365 amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
-ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: El escáner local de prevención de pérdida de datos amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
+ms.openlocfilehash: 8edf472fe65380b708a833864ccceedadb240191
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207348"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629825"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365
+# <a name="learn-about-the-data-loss-prevention-on-premises-scanner"></a>Más información sobre el escáner local de prevención de pérdida de datos
 
-La prevención de pérdida de datos del examinador local es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
+La prevención de pérdida de datos del escáner local es parte de la serie de características de Prevención de pérdida de datos (DLP) de Microsoft Purview que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
 
 El **examinador de DLP local** rastrea datos en reposo a nivel local en recursos compartidos de archivos y en bibliotecas y carpetas de documentos de SharePoint para elementos confidenciales que, de filtrarse, constituirían un riesgo para su organización o podrían infringir la directiva de cumplimiento. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que los elementos confidenciales se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos. El examinador DLP local detecta información confidencial con tipos [integrados](sensitive-information-type-entity-definitions.md) o de [información confidencial personalizada](create-a-custom-sensitive-information-type.md), [etiquetas de confidencialidad](sensitivity-labels.md) o propiedades de archivo. La información sobre qué hacen los usuarios con elementos confidenciales se hace visible en el [explorador de actividades](data-classification-activity-explorer.md). Usted puede aplicar acciones de protección a estos elementos con [directivas DLP](create-test-tune-dlp-policy.md).
 
@@ -87,8 +87,8 @@ Ahora que se ha informado sobre el examinador local de DLP, estos los siguientes
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción al examinador de prevención de pérdida de datos locales de Microsoft](dlp-on-premises-scanner-get-started.md)
-- [Usar el examinador de prevención de pérdida de datos locales de Microsoft](dlp-on-premises-scanner-use.md)
+- [Introducción al escáner de prevención de pérdida de datos en el entorno local](dlp-on-premises-scanner-get-started.md)
+- [Uso del escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-use.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

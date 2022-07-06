@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: e84205a0357e87f28a77f5186265cf421add1483
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241568"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640772"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -44,7 +44,7 @@ También puede administrar estas características en la página de clasificació
 - [explorador de contenido](data-classification-content-explorer.md)
 - [explorador de actividad](data-classification-activity-explorer.md)
 
-Puede encontrar la clasificación de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> > **Clasificación** > **Clasificación de datos**.
+Puede encontrar la clasificación de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> > **Clasificación** > **Clasificación de datos**.
 
 Participe en un recorrido en vídeo de nuestras características de clasificación de datos.
 
@@ -72,14 +72,14 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -134,7 +134,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se detectó ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no se han aplicado etiquetas de retención a ningún contenido. Para empezar a usar las etiquetas de retención, vea:
->- [Introducción al gobierno de la información](get-started-with-information-governance.md)
+>- [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: 2deeac236ff9bac0459e160c9400c134b622cca5
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9a265ee291bce197fd59f6a27a2ad5c85392945
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491216"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642643"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 
@@ -63,7 +63,7 @@ Aquí le mostramos cómo iniciar sesión:
 
 4. En la parte superior derecha de la página, busque el control **Vista preliminar activada**. Selecciona **Vista preliminar activada** para que puedas usar todos los controles descritos en [Incremente su protección para la campaña](m365bp-security-overview.md).
 
-### <a name="staff-sign-in"></a>Inicio de sesión del personal
+## <a name="how-your-staff-will-sign-in"></a>Cómo iniciará sesión su personal
 
 Los usuarios que se han agregado a su suscripción de Microsoft 365 para campañas (o Microsoft 365 Empresa Premium) pueden iniciar sesión siguiendo estos pasos:
 
@@ -74,13 +74,13 @@ Los usuarios que se han agregado a su suscripción de Microsoft 365 para campañ
 > [!TIP]
 > Proporcione a su personal un vínculo a la [Guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md) para obtener ayuda para iniciar sesión, obtener aplicaciones de Office y guardar, copiar y compartir archivos.
 
-### <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
+## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 
 Su empresa o campaña puede facilitar a los organismos de cumplimiento de la ley la presentación de cargos legales contra delincuentes que operan por internet mediante la adición de un aviso de privacidad y consentimiento a la página de inicio de sesión.
 
 Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para indicar requisitos legales o restricciones para obtener acceso a recursos de Microsoft 365.
 
-### <a name="customize-the-text-on-your-sign-in-page"></a>Personalizar el texto de la página de inicio de sesión
+## <a name="customize-the-text-on-your-sign-in-page"></a>Personalizar el texto de la página de inicio de sesión
 
 Para actualizar los elementos personalizables en la página de inicio de sesión, debe ser administrador global. Para obtener instrucciones específicas, consulte el artículo [agregar personalización de marca de empresa](/azure/active-directory/fundamentals/customize-branding).
 
@@ -92,6 +92,14 @@ Los elementos que puede actualizar son:
 - Sugerencia de nombre de usuario
 
 Para obtener ejemplos de avisos de privacidad y consentimiento, consulte el Apéndice A [Buscar y tomar el control equipos y obtener evidencias electrónicas en investigaciones penales](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## <a name="visual-guide-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Guía visual: ayude a protegerse a si mismo y a su campaña de amenazas digitales
+
+Para ayudar a su personal a conocer los pasos necesarios para proteger su campaña frente a amenazas digitales, use esta guía descargable:
+
+[![Imagen de gráfico de ayudar a proteger la campaña.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
