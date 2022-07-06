@@ -1,5 +1,5 @@
 ---
-title: Modificación de plantillas de evaluación en El Administrador de cumplimiento de Microsoft
+title: Modificación de plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,25 +17,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo modificar las plantillas de evaluación en Microsoft Compliance Manager.
-ms.openlocfilehash: 589e13e766e35d38eed985a0e7bb9e21544c370d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Obtenga información sobre cómo modificar las plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview.
+ms.openlocfilehash: f21ff61f6bb06f00d1db8381e3760e7c4b5343aa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758539"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630419"
 ---
-# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modificación de plantillas de evaluación en El Administrador de cumplimiento de Microsoft
+# <a name="modify-assessment-templates-in-microsoft-purview-compliance-manager"></a>Modificación de plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview
 
 Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que desee modificar una plantilla de evaluación que ha creado. El proceso es similar al proceso de [creación de plantillas](compliance-manager-templates-create.md) en el que cargará un archivo de Excel con formato con los datos de la plantilla.
 
 Sin embargo, hay detalles que debe tener en cuenta al dar formato al archivo con cambios en los datos de plantilla existentes. **Se recomienda revisar detenidamente estas instrucciones para asegurarse de que no sobrescribe los datos existentes que desea conservar.**
 
-Para obtener más información sobre el formato de esta hoja de cálculo, consulte [Formatear los datos de plantilla con Excel](compliance-manager-templates-format-excel.md).
+Para obtener más información sobre el formato de esta hoja de cálculo, consulte [Formatear los datos de la plantilla con Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="format-your-excel-file-to-modify-an-existing-template"></a>Dar formato al archivo de Excel para modificar una plantilla existente
 
-En la página **de plantillas de evaluación** , seleccione la plantilla que desea modificar, que mostrará su página de detalles. A continuación, seleccione **Exportar a Excel**. Se descargará un archivo Excel con todos los datos de plantilla. Guarde el archivo en el equipo local.
+En la página **de plantillas de evaluación** , seleccione la plantilla que desea modificar, que mostrará su página de detalles. A continuación, seleccione **Exportar a Excel**. Se descargará un archivo de Excel con todos los datos de plantilla. Guarde el archivo en el equipo local.
 
 Para trabajar con este archivo, vaya a una sección a continuación para encontrar rápidamente las instrucciones que necesita:
 
@@ -100,11 +100,11 @@ Al volver a importar la hoja de cálculo en la plantilla, el control se quitará
 
 ## <a name="modify-template-info-in-compliance-manager"></a>Modificación de la información de plantilla en el Administrador de cumplimiento
 
-Una vez completado y guardado el archivo Excel, siga estos pasos.
+Una vez completado y guardado el archivo de Excel, siga estos pasos.
 
 1. Vuelva a abrir la página de la plantilla de evaluación y seleccione la plantilla. En la página de detalles de la plantilla, seleccione **Modificar plantilla** para iniciar el asistente de modificación.
-2. En la pantalla **Upload archivo**, seleccione **Examinar** para buscar y cargar el archivo Excel.
-3. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, seleccione **Upload otro archivo**).
+2. En la pantalla **Cargar archivo** , seleccione **Examinar** para buscar y cargar el archivo de Excel.
+3. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, seleccione **Cargar otro archivo**).
     - Si hay un problema con el archivo, un mensaje de error en la parte superior explica qué ocurre. Tendrá que corregir el archivo y cargarlo de nuevo. Los errores se producirán si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
 
 4. La pantalla **Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**.

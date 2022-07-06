@@ -16,22 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el panel de Microsoft Purview eDiscovery (Premium) para los conjuntos de revisión para analizar rápidamente el corpus con el fin de identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
-ms.openlocfilehash: 00d4c6648d74fdf459965ed410dd43c73e698c23
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 225cc0d732023322b87e0e04c2cca1455fb0ff87
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097874"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629065"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Panel de eDiscovery (Premium) para conjuntos de revisión
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En algunos casos en microsoft Purview eDiscovery (Premium), es posible que tenga un gran volumen de documentos y mensajes de correo electrónico que deben revisarse. Antes de iniciar el proceso de revisión, es posible que desee analizar rápidamente el corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión. Para ello, puede usar el panel eDiscovery (Premium) para revisar los conjuntos con el fin de analizar rápidamente el corpus.
+En algunos casos en Microsoft Purview eDiscovery (Premium), es posible que tenga un gran volumen de documentos y mensajes de correo electrónico que deben revisarse. Antes de iniciar el proceso de revisión, es posible que desee analizar rápidamente el corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión. Para ello, puede usar el panel de eDiscovery (Premium) para que los conjuntos de revisión analicen rápidamente el corpus.
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Paso 1: Crear un widget en el panel del conjunto de revisión
 
-1. En el portal de cumplimiento de Microsoft Purview, vaya a **eDiscovery > eDiscovery (Premium)** para mostrar la lista de casos de su organización.
+1. En el portal de cumplimiento Microsoft Purview, vaya a **eDiscovery > eDiscovery (Premium)** para mostrar la lista de casos de su organización.
   
 2. Seleccione un caso existente.
   
@@ -39,7 +37,7 @@ En algunos casos en microsoft Purview eDiscovery (Premium), es posible que tenga
   
 4. En la lista desplegable de **Resultados individuales**, haga clic en **Vista de perfil de búsqueda**. 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![PanelPivot.](../media/dashboardpivot.png)
 
    Se muestra la página **Buscar vista de perfil** ; la primera vez que se muestra esta página, se muestran tres widgets predeterminados.
 
@@ -59,7 +57,7 @@ En algunos casos en microsoft Purview eDiscovery (Premium), es posible que tenga
 
     a. Escriba un nombre para el widget, que se muestra en la barra de título del widget. Se requiere asignar un nombre a un widget, pero resulta útil identificar los datos del widget.
 
-    b. Seleccione una propiedad en la lista desplegable **Elegir dinámica** que se usará para los datos del widget. Los elementos de esta lista son las propiedades que se pueden buscar para los elementos del conjunto de revisión. Para obtener una descripción de estas propiedades, vea [Campos de metadatos del documento en eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md). Las opciones dinámicas del widget se enumeran en la columna **Nombre de campo que se puede buscar** en este tema.
+    b. Seleccione una propiedad en la lista desplegable **Elegir dinámica** que se usará para los datos del widget. Los elementos de esta lista son las propiedades que se pueden buscar para los elementos del conjunto de revisión. Para obtener una descripción de estas propiedades, vea [Campos de metadatos del documento en eDiscovery (Premium).](document-metadata-fields-in-Advanced-eDiscovery.md) Las opciones dinámicas del widget se enumeran en la columna **Nombre de campo que se puede buscar** en este tema.
 
     c. Seleccione un tipo de gráfico para mostrar los datos de la propiedad dinámica seleccionada.
 
@@ -69,7 +67,7 @@ En algunos casos en microsoft Purview eDiscovery (Premium), es posible que tenga
 
 1. Haga clic en **...** en la barra de título del widget y, a continuación, haga clic en **Aplicar condición**.
 
-   ![Tablero.](../media/searchprofilehome.png)
+   ![Inicio del panel.](../media/searchprofilehome.png)
 
 2. En la página de control flotante, haga clic en un elemento en la clave del widget o en el gráfico del widget para crear un filtro.
 

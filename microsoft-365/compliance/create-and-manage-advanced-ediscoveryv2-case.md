@@ -1,5 +1,5 @@
 ---
-title: Crear y administrar casos de eDiscovery (Premium) en Microsoft 365
+title: Creación y administración de casos de eDiscovery (Premium) en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -19,29 +19,27 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: En este artículo se describe cómo crear y administrar casos de exhibición de documentos electrónicos (Premium) de Microsoft Purview. El primer paso consiste en crear un caso y empezar a usar características y funcionalidad de eDiscovery (Premium).
-ms.openlocfilehash: e5773f54d0ce6efbfc5aae22eb616f96c3777eda
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: En este artículo se describe cómo crear y administrar casos de Microsoft Purview eDiscovery (Premium). El primer paso es crear un caso y empezar a usar características y funcionalidad de eDiscovery (Premium).
+ms.openlocfilehash: b8577a8d44cb6860cd595d3f2f13c731c290ba12
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096994"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630375"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>Creación y administración de un caso de eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Después de configurar microsoft Purview eDiscovery (Premium) y [asignar permisos a los administradores de eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de su organización que administrarán casos, el siguiente paso es crear y administrar un caso.
+Después de configurar Microsoft Purview eDiscovery (Premium) y [asignar permisos a los administradores de exhibición de documentos electrónicos](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de la organización que administrarán los casos, el siguiente paso es crear y administrar un caso.
 
 En este artículo también se proporciona información general de alto nivel sobre el uso de casos para administrar el flujo de trabajo de eDiscovery (Premium) para un caso legal u otros tipos de investigaciones.
 
 ## <a name="create-a-case"></a>Crear un caso
 
-Complete los pasos siguientes para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro. Los miembros del caso pueden acceder al caso en el portal de cumplimiento de Microsoft Purview y realizar tareas de exhibición de documentos electrónicos (Premium).
+Complete los pasos siguientes para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro. Los miembros del caso pueden acceder al caso en el portal de cumplimiento Microsoft Purview y realizar tareas de exhibición de documentos electrónicos (Premium).
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado permisos de exhibición de documentos electrónicos. Los miembros del grupo de roles Administración de la organización también pueden crear casos de exhibición de documentos electrónicos (Premium).
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Mostrar todo** y, a continuación, seleccione **eDiscoveryAdvanced** >  y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">pestaña **Casos**</a>.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Mostrar todo** y, a continuación, seleccione **eDiscovery** > **Advanced** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">pestaña **Casos**</a>.
 
 3. Seleccione **Crear un caso**.
 
@@ -49,9 +47,9 @@ Complete los pasos siguientes para crear un caso y agregar miembros. El usuario 
 
 5. Haga clic en **Guardar** para crear el caso.
 
-   Se crea el nuevo caso y se muestra la pestaña **Configuración** en el nuevo caso.
+   Se crea el nuevo caso y se muestra la pestaña **Configuración** del nuevo caso.
 
-6. En el icono **Permisos de access &** de la pestaña **Configuración**, haga clic en **Seleccionar**.
+6. En el icono **Permisos de acceso &** de la pestaña **Configuración** , haga clic en **Seleccionar**.
 
 7. En la página desplegable **Administrar este caso** , en **Administrar miembros**, haga clic en **Agregar** para agregar miembros al caso.
 
@@ -65,7 +63,7 @@ Complete los pasos siguientes para crear un caso y agregar miembros. El usuario 
 
 ## <a name="manage-the-workflow"></a>Administrar el flujo de trabajo
 
-Para empezar a usar eDiscovery (Premium), este es un flujo de trabajo básico que se alinea con [las prácticas comunes de eDiscovery](advanced-ediscovery-edrm.md). En cada uno de estos pasos, también resaltaremos algunas funciones extendidas de exhibición de documentos electrónicos (Premium) que puede explorar.
+Para empezar a usar eDiscovery (Premium), este es un flujo de trabajo básico que se alinea con [las prácticas comunes de eDiscovery](advanced-ediscovery-edrm.md). En cada uno de estos pasos, también resaltaremos algunas funciones extendidas de eDiscovery (Premium) que puede explorar.
 
 ![Flujo de trabajo de eDiscovery (Premium).](../media/AeDWorkflow.png)
 
@@ -73,13 +71,13 @@ Para empezar a usar eDiscovery (Premium), este es un flujo de trabajo básico qu
 
    Estas son algunas cosas que suceden (o que puede hacer) al agregar custodios a un caso:
 
-   - Los datos del buzón de Exchange del custodio, OneDrive cuenta y cualquier Microsoft Teams o grupo de Yammer del que sea miembro el custodio se pueden "marcar" como datos de custodia en el caso.
+   - Los datos del buzón de Exchange del custodio, la cuenta de OneDrive y cualquier grupo de Microsoft Teams o Yammer del que sea miembro el custodio se pueden "marcar" como datos de custodia en el caso.
   
    - Los datos del custodio se vuelven a indexar (mediante un proceso denominado *Indexación avanzada*). Esto ayuda a optimizar la búsqueda en el paso siguiente.
   
    - Puede retener los datos del custodio. Esto conserva los datos que pueden ser relevantes para el caso durante la investigación.
   
-   - Puede asociar otros orígenes de datos a un custodio (por ejemplo, puede asociar un sitio de SharePoint o un grupo de Microsoft 365 a un custodio) para que estos datos se puedan volver a indexar, colocar en espera y buscar, al igual que los datos del buzón del custodio o OneDrive cuenta.
+   - Puede asociar otros orígenes de datos a un custodio (por ejemplo, puede asociar un sitio de SharePoint o un grupo de Microsoft 365 a un custodio) para que estos datos se puedan volver a indexar, colocar en espera y buscar, al igual que los datos del buzón del custodio o la cuenta de OneDrive.
 
    - Puede usar el [flujo de trabajo de comunicaciones](managing-custodian-communications.md) en eDiscovery (Premium) para enviar una notificación de suspensión legal a los custodios.
 
@@ -91,9 +89,9 @@ Para empezar a usar eDiscovery (Premium), este es un flujo de trabajo básico qu
 
    - Revise una consulta y vuelva a ejecutar la colección.
 
-3. **[Confirme la colección en un conjunto de revisión](commit-draft-collection.md)**. Una vez que haya configurado y comprobado que una búsqueda devuelve los datos deseados, el siguiente paso es agregar los resultados de la búsqueda a un conjunto de revisión. Al agregar datos a un conjunto de revisión, los elementos se copian de su ubicación original en una ubicación Azure Storage segura. Los datos se vuelven a indexar para optimizarlos para realizar búsquedas exhaustivas y rápidas al revisar y analizar elementos del conjunto de revisión. Además, también puede [agregar datos que no sean Office 365 a un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).
+3. **[Confirme la colección en un conjunto de revisión](commit-draft-collection.md)**. Una vez que haya configurado y comprobado que una búsqueda devuelve los datos deseados, el siguiente paso es agregar los resultados de la búsqueda a un conjunto de revisión. Al agregar datos a un conjunto de revisión, los elementos se copian de su ubicación original en una ubicación segura de Azure Storage. Los datos se vuelven a indexar para optimizarlos para realizar búsquedas exhaustivas y rápidas al revisar y analizar elementos del conjunto de revisión. Además, también puede [agregar datos que no sean Office 365 a un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).
 
-   También hay un tipo especial de conjunto de revisión al que puede agregar datos, denominado *conjunto de revisión de conversaciones*. Estos tipos de conjuntos de revisiones proporcionan funcionalidades de reconstrucción de conversaciones para reconstruir, revisar y exportar conversaciones en subprocesos como las de Microsoft Teams. Para obtener más información, vea [Revisar conversaciones en eDiscovery (Premium)](conversation-review-sets.md).
+   También hay un tipo especial de conjunto de revisión al que puede agregar datos, denominado *conjunto de revisión de conversaciones*. Estos tipos de conjuntos de revisiones proporcionan funcionalidades de reconstrucción de conversaciones para reconstruir, revisar y exportar conversaciones en subprocesos como las de Microsoft Teams. Para obtener más información, vea [Revisar conversaciones en eDiscovery (Premium).](conversation-review-sets.md)
 
 4. **Revise y analice los datos de un conjunto de revisión**. Ahora que los datos están en un conjunto de revisión, puede usar una amplia variedad de herramientas y funcionalidades para ver y analizar los datos del caso con el objetivo de reducir el conjunto de datos a lo más relevante para el caso que está investigando. Esta es una lista de algunas herramientas y funcionalidades que puede usar durante este proceso.
 
@@ -107,16 +105,16 @@ Para empezar a usar eDiscovery (Premium), este es un flujo de trabajo básico qu
 
    - [Analizar datos de casos](analyzing-data-in-review-set.md). La funcionalidad de análisis de eDiscovery (Premium) es eficaz. Después de ejecutar análisis en los datos del conjunto de revisión, se realizan análisis como la detección casi duplicada, el subproceso de correo electrónico y los temas que pueden ayudar a reducir el volumen de documentos que tiene que revisar. También generamos informes de Analytics que resumen el resultado de la ejecución de análisis. Como se explicó anteriormente, la ejecución de análisis también ejecuta [el modelo de detección de privilegios abogado-cliente](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
-5. **Exportación y descarga de datos de casos**. Un último paso después de recopilar, revisar y analizar datos de casos es exportarlos fuera de eDiscovery (Premium) para revisión externa o para revisión por personas ajenas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso consiste en [exportar](export-documents-from-review-set.md) los datos del conjunto de revisión y copiarlos en otra ubicación Azure Storage (una proporcionada por Microsoft o otra administrada por su organización). A continuación, use Explorador de Azure Storage para [descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, el contenido del paquete de exportación también contiene un informe de exportación, un informe de resumen y un informe de errores.
+5. **Exportación y descarga de datos de casos**. Un último paso después de recopilar, revisar y analizar datos de casos es exportarlos fuera de eDiscovery (Premium) para su revisión externa o para su revisión por personas ajenas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso consiste en [exportar](export-documents-from-review-set.md) los datos del conjunto de revisión y copiarlos en otra ubicación de Azure Storage (una proporcionada por Microsoft o otra administrada por su organización). A continuación, use Explorador de Azure Storage para [descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, el contenido del paquete de exportación también contiene un informe de exportación, un informe de resumen y un informe de errores.
 
 ## <a name="ediscovery-premium-architecture"></a>Arquitectura de eDiscovery (Premium)
 
-Este es un diagrama de arquitectura que muestra el flujo de trabajo de un extremo a otro de eDiscovery (Premium) en un entorno de una sola ubicación geográfica y en un entorno multigeográfico, y el flujo de datos de un extremo a otro que se alinea con el [modelo de referencia de detección electrónica](overview-ediscovery-20.md#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).
+Este es un diagrama de arquitectura que muestra el flujo de trabajo de un extremo a otro de eDiscovery (Premium) en un entorno geográfico único y en un entorno multigeográfico, y el flujo de datos de un extremo a otro que está alineado con el [modelo de referencia de detección electrónica](overview-ediscovery-20.md#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).
 
-[![Póster del modelo: arquitectura de eDiscovery (Premium) en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Póster del modelo: Arquitectura de eDiscovery (Premium) en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Visualización como imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Descargar como un archivo PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Descargar como un archivo Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[Descarga como archivo de Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

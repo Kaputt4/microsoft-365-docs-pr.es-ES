@@ -23,16 +23,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Cómo crear una directiva personalizada de archivado y eliminación de la administración de registros de mensajería (MRM) para mover automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 9ea642dc9d6aa4e66938703b45a8af0bab53476f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7002f28d5926ac02cf01e7ab26b02cddfbd58404
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013010"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626059"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personalización de una directiva de archivo y eliminación para buzones de correo de la organización
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los administradores de Microsoft Purview pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al [buzón de archivo](archive-mailboxes.md) de un usuario y elimine automáticamente los elementos del buzón.
 
@@ -68,7 +66,7 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
 
 El primer paso es asegurarse de que cada usuario de la organización tiene un buzón de archivo. El buzón de archivo de un usuario debe estar habilitado para que una etiqueta de retención con una acción de retención "Mover a archivo" pueda mover el elemento después de que expire la antigüedad de retención.
 
-Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en el portal de cumplimiento de Microsoft Purview](enable-archive-mailboxes.md).
+Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en el portal de cumplimiento Microsoft Purview](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Puede habilitar los buzones de archivo en cualquier momento durante este proceso, siempre y cuando estén habilitados en algún momento antes de completar el proceso. Si un buzón de archivo no está habilitado, no se realiza ninguna acción en los elementos que tengan asignada una directiva de archivo o eliminación.
@@ -99,7 +97,7 @@ En primer lugar, creará una etiqueta de directiva predeterminada de archivo (DP
 
 2. En la página **Nueva etiqueta aplicada automáticamente a todo el buzón (valor predeterminado),** complete los campos siguientes: 
 
-    ![Configuración crear una nueva etiqueta de directiva predeterminada de archivo.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Configuración para crear una nueva etiqueta de directiva predeterminada de archivo.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
 
@@ -143,7 +141,7 @@ La última etiqueta de retención que se va a crear es una etiqueta de directiva
 
 2. En la página **Nueva etiqueta aplicada automáticamente a una carpeta predeterminada** , complete los campos siguientes:
 
-    ![Configuración crear una nueva etiqueta de directiva de retención para la carpeta Elementos eliminados.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Configuración para crear una nueva etiqueta de directiva de retención para la carpeta Elementos eliminados.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
 

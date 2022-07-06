@@ -13,16 +13,15 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX
 description: Los usuarios pueden aprender a ver y actuar en los mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613d3b8be200db3a9107355a27b0dd79ce537d3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a37ed03535bd3f3b48aca81c7bf7adeb3c660b46
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647346"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629021"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualización y liberación de mensajes en cuarentena desde buzones compartidos
 
@@ -50,7 +49,9 @@ Ahora, la asignación automática ya no es necesaria para que los usuarios admin
 
 - Actualmente, el botón **Bloquear remitente** no está disponible en el control flotante **Detalles** para los mensajes en cuarentena que se enviaron al buzón compartido.
 
-- Con respecto a las operaciones de cuarentena para buzones compartidos, si usa grupos de seguridad anidados para conceder acceso a un buzón compartido, se recomienda no más de dos niveles de grupos anidados. Por ejemplo, el grupo A es miembro del grupo B, que es miembro del grupo C. Para asignar permisos a un buzón compartido, no agregue el usuario al grupo A y, a continuación, asigne el grupo C al buzón compartido.  
+- Con respecto a las operaciones de cuarentena para buzones compartidos, si usa grupos de seguridad anidados para conceder acceso a un buzón compartido, se recomienda no más de dos niveles de grupos anidados. Por ejemplo, el grupo A es miembro del grupo B, que es miembro del grupo C. Para asignar permisos a un buzón compartido, no agregue el usuario al grupo A y, a continuación, asigne el grupo C al buzón compartido.
+
+- A partir de julio de 2022, los usuarios con direcciones SMTP principales distintas de sus nombres principales de usuario (UPN) deben poder acceder a los mensajes en cuarentena del buzón compartido.
 
 - Para administrar los mensajes en cuarentena para el buzón compartido en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), el usuario final deberá usar el cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) con la dirección de correo electrónico del buzón compartido para el valor del parámetro _RecipientAddress_ para identificar los mensajes. Por ejemplo:
 

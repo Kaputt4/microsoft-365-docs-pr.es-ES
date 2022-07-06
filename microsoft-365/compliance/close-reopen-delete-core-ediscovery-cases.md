@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos de exhibición de documentos electrónicos (estándar). Esto incluye el cierre de un caso, la reapertura de un caso cerrado y la eliminación de un caso.
-ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5c2efd96f563eb2947b17e1cc857613d27981dac
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318324"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628867"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos (estándar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En este artículo se describe cómo cerrar, volver a abrir y eliminar Microsoft Purview casos de exhibición de documentos electrónicos (estándar) en Microsoft 365.
+En este artículo se describe cómo cerrar, volver a abrir y eliminar casos de Microsoft Purview eDiscovery (estándar) en Microsoft 365.
 
 ## <a name="close-a-case"></a>Cerrar un caso
 
@@ -38,13 +36,13 @@ Cuando se complete el caso legal o la investigación compatible con un caso de e
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una suspensión por juicio, una directiva de retención o una suspensión de un caso de exhibición de documentos electrónicos (estándar) diferente), esas retenciones se mantendrán.
 
-- El caso sigue aparecen en la página eDiscovery (Estándar) de la portal de cumplimiento Microsoft Purview. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue aparecen en la página eDiscovery (Estándar) de la portal de cumplimiento Microsoft Purview. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas y exportar resultados de búsqueda. La principal diferencia entre los casos activos y cerrados es que las retenciones de eDiscovery se desactivan cuando se cierra un caso.
 
 Para cerrar un caso:
   
-1. En el portal de cumplimiento, haga clic en **eDiscoveryeDiscovery** >  **(Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
+1. En el portal de cumplimiento, haga clic en **eDiscovery** > **eDiscovery (Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
 
 2. Haga clic en el nombre del caso que desea cerrar.
 
@@ -66,7 +64,7 @@ Para cerrar un caso:
 
 Al volver a abrir un caso, las retenciones de eDiscovery que estuvieran en su lugar cuando se cerró el caso no se restablecerán automáticamente. Una vez que se vuelva a abrir el caso, tendrá que ir a la página **Detenciones** y activar las retenciones anteriores. Para activar una retención, selecciónela para mostrar la página flotante y luego configure el interruptor de **Estado** en **Activado**.
   
-1. En el portal de cumplimiento, haga clic en **eDiscoveryCore** >  para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de la organización.
+1. En el portal de cumplimiento, haga clic en **eDiscovery** > **Core** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
 
 2. Haga clic en el nombre del caso que desea volver a abrir.
 
@@ -104,7 +102,7 @@ Para eliminar una suspensión de eDiscovery:
 
 Para eliminar un caso:
 
-1. En el portal de cumplimiento, haga clic en **eDiscoveryeDiscovery** >  **(Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
+1. En el portal de cumplimiento, haga clic en **eDiscovery** > **eDiscovery (Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
 
 2. Haga clic en el nombre del caso que desea eliminar.
 

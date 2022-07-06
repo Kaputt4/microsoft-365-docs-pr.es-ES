@@ -15,25 +15,25 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Use Configuration Manager para implementar el paquete de configuración en los dispositivos de modo que se incorporen al servicio.
-ms.openlocfilehash: 2cca9cc073ca08c7fabb19511a4253e4a682057a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 3bfeadd0008b548b8193333b3509e82831b162c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760721"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630023"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-configuration-manager"></a>Incorporación de dispositivos Windows 10 y Windows 11 mediante Configuration Manager
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
-- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporación de dispositivos mediante System Center Configuration Manager
 
-1. Obtenga el archivo de .zip del paquete de configuración (*DeviceComplianceOnboardingPackage.zip*) del [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/).
+1. Obtenga el archivo de .zip del paquete de configuración (*DeviceComplianceOnboardingPackage.zip*) de [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/).
 
-2. En el panel de navegación, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> >  **Dispositivo** **OnboardingOnboarding** > .
+2. En el panel de navegación, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> > **Incorporación de** >  dispositivos **.**
 
 3. En el campo **Método de implementación**, seleccione **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
@@ -41,12 +41,12 @@ ms.locfileid: "64760721"
 
 5. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que puedan acceder los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceComplianceOnboardingScript.cmd*.
 
-6. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas de System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10)).
+6. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10)).
 
 7. Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
 > [!NOTE]
-> Microsoft 365 protección de la información no admite la incorporación durante la fase [de experiencia rápida (OOBE).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completan OOBE después de ejecutar Windows instalación o actualización.
+> La protección de la información de Microsoft 365 no admite la incorporación durante la fase [de experiencia rápida (OOBE).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar la instalación o actualización de Windows.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
@@ -138,15 +138,15 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y retirada no deben implementarse en el mismo dispositivo al mismo tiempo; de lo contrario, esto provocará colisiones imprevisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Dispositivos fuera del panel con Microsoft Endpoint Configuration Manager rama actual
+### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Dispositivos fuera del panel mediante el punto de conexión de Microsoft Configuration Manager rama actual
 
 Si usa Microsoft Endpoint Configuration Manager rama actual, consulte [Creación de un archivo de configuración de offboarding](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos fuera del panel con System Center 2012 R2 Configuration Manager
 
-1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>:
+1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a>:
 
-2. En el panel de navegación, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> >   **Dispositivo** **onboardingOffboarding**> .
+2. En el panel de navegación, seleccione Configuración Device onboarding Offboarding (<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración:**</a> >  **incorporación de**>  dispositivos **fuera del panel de navegación**).
 
 3. Seleccione Windows 10 como sistema operativo.
 
@@ -156,7 +156,7 @@ Si usa Microsoft Endpoint Configuration Manager rama actual, consulte [Creación
 
 6. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que puedan acceder los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-7. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas de System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10)).
+7. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10)).
 
 8. Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
@@ -171,7 +171,7 @@ Si usa System Center 2012 R2 Configuration Manager, la supervisión consta de do
 
 1. Confirmación de que el paquete de configuración se ha implementado correctamente y se está ejecutando (o se ha ejecutado correctamente) en los dispositivos de la red.
 
-2. Comprobar que los dispositivos son compatibles con el servicio de incorporación de dispositivos Microsoft 365 (esto garantiza que el dispositivo puede completar el proceso de incorporación y puede seguir notificando datos al servicio).
+2. Comprobar que los dispositivos son compatibles con el servicio de incorporación de dispositivos de Microsoft 365 (esto garantiza que el dispositivo puede completar el proceso de incorporación y puede seguir notificando datos al servicio).
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>Confirmación de que el paquete de configuración se ha implementado correctamente
 
@@ -187,9 +187,9 @@ Si usa System Center 2012 R2 Configuration Manager, la supervisión consta de do
 
     ![Configuration Manager mostrar una implementación correcta sin errores.](../media/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>Compruebe que los dispositivos son compatibles con el servicio de prevención de pérdida de datos del punto de conexión de Microsoft 365
+### <a name="check-that-the-devices-are-compliant-with-the-endpoint-data-loss-prevention-service"></a>Compruebe que los dispositivos son compatibles con el servicio de prevención de pérdida de datos del punto de conexión.
 
-Puede establecer una regla de cumplimiento para el elemento de configuración en System Center Configuration Manager de 2012 R2 para supervisar la implementación.
+Puede establecer una regla de cumplimiento para el elemento de configuración en System Center 2012 R2 Configuration Manager para supervisar la implementación.
 
 > [!NOTE]
 > Este procedimiento y entrada del Registro se aplican a DLP de punto de conexión, así como a Defender para punto de conexión.

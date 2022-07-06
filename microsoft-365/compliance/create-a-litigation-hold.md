@@ -17,16 +17,14 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 00c7e809fd878b677947dc1db2a55c612ef04997
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097060"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631081"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede colocar un buzón en suspensión por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. Al colocar un buzón de usuario en suspensión por juicio, también se conserva el contenido del buzón de archivo del usuario (si está habilitado). Al crear una suspensión, puede especificar una duración de suspensión (también denominada *suspensión basada en tiempo*) para que los elementos eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O bien, puede conservar el contenido indefinidamente (denominada *suspensión infinita*) o hasta que se quite la suspensión por litigio. Si especifica un período de duración de retención, se calcula a partir de la fecha en que se recibe un mensaje o se crea un elemento de buzón. 
   
@@ -51,7 +49,7 @@ Para colocar un buzón de Exchange Online en suspensión por litigio, se le debe
 
 Estos son los pasos para colocar un buzón en suspensión por juicio mediante el Centro de administración de Microsoft 365.
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centro de administración de Microsoft 365</a> y, a continuación, haga clic en **UsuariosUsuarios** >  **activos**.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centro de administración de Microsoft 365</a> y, a continuación, haga clic en **Usuarios** > **usuarios activos**.
 
 2. Seleccione el usuario que desea colocar en suspensión por juicio.
 
@@ -63,9 +61,9 @@ Estos son los pasos para colocar un buzón en suspensión por juicio mediante el
 
     1. **Duración de suspensión (días):** use este cuadro para crear una suspensión basada en el tiempo y especificar cuánto tiempo se mantienen los elementos de buzón cuando el buzón se coloca en suspensión por juicio. La duración se calcula desde la fecha en que un elemento de buzón se recibe o se crea. Cuando expire la duración de retención de un elemento específico, ese elemento ya no se conservará. Si deja este cuadro en blanco, los elementos se conservan indefinidamente o hasta que se quita la suspensión. Use días para especificar la duración.
 
-    2. **Nota visible para el usuario**: use este cuadro para informar al usuario de que su buzón está en suspensión por juicio. La nota aparecerá en la página Información de la cuenta del buzón del usuario si usa Outlook 2010 o posterior. Para acceder a esta página, los usuarios pueden hacer clic en **Archivo** en Outlook.
+    2. **Nota visible para el usuario**: use este cuadro para informar al usuario de que su buzón está en suspensión por juicio. La nota aparecerá en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para acceder a esta página, los usuarios pueden hacer clic en **Archivo** en Outlook.
 
-    3. **Página web con más información para el usuario**: use este cuadro para dirigir al usuario a un sitio web para obtener más información sobre la suspensión por juicio. Esta dirección URL aparece en la página Información de la cuenta del buzón del usuario si usa Outlook 2010 o posterior. Para acceder a esta página, los usuarios pueden hacer clic en **Archivo** en Outlook.
+    3. **Página web con más información para el usuario**: use este cuadro para dirigir al usuario a un sitio web para obtener más información sobre la suspensión por juicio. Esta dirección URL aparece en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para acceder a esta página, los usuarios pueden hacer clic en **Archivo** en Outlook.
 
 . Haga clic en **Guardar cambios** en la página flotante **Detención por juicio** para crear la suspensión.
 

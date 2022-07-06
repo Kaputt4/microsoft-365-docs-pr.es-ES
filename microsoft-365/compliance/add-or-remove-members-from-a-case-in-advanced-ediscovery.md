@@ -17,20 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden acceder a un caso al administrar un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091883"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627721"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Sin embargo, antes de que un miembro pueda acceder a un caso de exhibición de documentos electrónicos (Premium) (y realizar tareas en el caso), debe agregar el usuario al grupo de roles del Administrador de exhibición de documentos electrónicos en la página **Permisos** de la portal de cumplimiento Microsoft Purview. Para más información, consulte [Asignar permisos de eDiscovery](./assign-ediscovery-permissions.md).
 
-Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Sin embargo, antes de que un miembro pueda acceder a un caso de exhibición de documentos electrónicos (Premium) (y realizar tareas en el caso), debe agregar el usuario al grupo de roles del Administrador de exhibición de documentos electrónicos en la página **Permisos** del portal de cumplimiento de Microsoft Purview. Para más información, consulte [Asignar permisos de eDiscovery](./assign-ediscovery-permissions.md).
-
-1. En la página **eDiscovery (Premium),** vaya al caso al que desea agregar un miembro.
+1. En la página de **eDiscovery (Premium)**, vaya al caso al que desea agregar un miembro.
 
 2. Haga clic en la pestaña **Configuración** y luego haga clic en **Seleccionar** en el mosaico **Acceso y permisos**.
 

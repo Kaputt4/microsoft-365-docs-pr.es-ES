@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabajar con un ejemplo de entrenamiento de 40 archivos durante la fase de entrenamiento de relevancia de eDiscovery (Premium).
-ms.openlocfilehash: 3e2deb66658aacc8fdd50f2dea5ba082afb8a5e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090393"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627269"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Etiquetado y formación de relevancia en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 En este artículo se describe el procedimiento para trabajar con el módulo de entrenamiento Relevancia en Microsoft Purview eDiscovery (Premium).
   
@@ -46,7 +44,7 @@ Una vez completada la evaluación en eDiscovery (Premium) y entra en la fase de 
 
 2. Determine la relevancia del archivo para el problema del caso y etiquete el archivo mediante los botones de icono de opción Etiquetado o los métodos abreviados de teclado, como se muestra en la tabla siguiente:
 
-   |**Opción de etiquetado**|**Descripción**|**Método abreviado de teclado**|**Método abreviado de teclado de etiquetado masivo (para varios problemas)**|
+   |**Opción de etiquetado**|**Description**|**Método abreviado de teclado**|**Método abreviado de teclado de etiquetado masivo (para varios problemas)**|
    |-----|-----|-----|-----|
    |R  <br/> |Relevante  <br/> |Z  <br/> |`Shift + Z`  <br/> |
    |NR  <br/> |No es relevante  <br/> |X  <br/> |`Shift + X`  <br/> |

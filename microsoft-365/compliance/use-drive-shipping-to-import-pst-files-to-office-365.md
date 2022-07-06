@@ -18,23 +18,21 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
-description: El administrador puede aprender a importar archivos PST de forma masiva a Microsoft 365 buzones copiando archivos PST en un disco duro y luego enviándolo a Microsoft.
-ms.openlocfilehash: 4f3c38c203b98fd4448657edfac6ee9b72a515be
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Administración puede aprender a importar archivos PST de forma masiva a buzones de Microsoft 365 copiando archivos PST en un disco duro y enviándolo a Microsoft.
+ms.openlocfilehash: ac8b24c04823bf3635b7762d160cee71a356ebfd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095452"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626081"
 ---
-# <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Uso del envío de unidades para importar archivos PST de la organización
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el envío de unidades para importar los archivos PST de su organización
 
 **Este artículo está destinado a administradores. ¿Está intentando importar archivos PST a su propio buzón de correo? Consulte [Importación de correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Use el servicio de importación de Office 365 y el envío de unidades para importar archivos PST de forma masiva a buzones de usuario. «Envío de unidades» significa que los archivos PST se copian en una unidad de disco duro y se envía la unidad a Microsoft de forma física. Cuando Microsoft recibe el disco duro, el personal del centro de datos copia los datos del disco duro en un área de almacenamiento en la nube de Microsoft. A continuación, tiene la oportunidad de recortar los datos PST que se importan a los buzones de destino estableciendo filtros que controlan qué datos se importan. Después de iniciar el trabajo de importación, el servicio Import importa los datos PST del área de almacenamiento a los buzones de usuario. El uso del envío de unidades para importar archivos PST a buzones de usuario es una manera de migrar el correo electrónico de la organización a Office 365.
   
-Estos son los pasos necesarios para usar el envío de unidades para importar archivos PST a Microsoft 365 buzones:
+Estos son los pasos necesarios para usar el envío de unidades para importar archivos PST a buzones de Microsoft 365:
   
 [Paso 1: Descargar la herramienta de importación de PST](#step-1-download-the-pst-import-tool)
 
@@ -111,7 +109,7 @@ Para ver las preguntas más frecuentes sobre el uso del envío de unidades para 
 El primer paso es descargar la herramienta y que se usa en el paso 2 para copiar archivos PST en el disco duro.
   
 > [!IMPORTANT]
-> Tiene que usar la versión 1 de la herramienta azure Import/Export (WAimportExportV1) para importar correctamente archivos PST mediante el método de envío de unidad. No se admite la versión 2 de la herramienta azure Import/Export y su uso provocará que el disco duro se prepare incorrectamente para el trabajo de importación. Asegúrese de descargar la herramienta azure Import/Export desde el portal de cumplimiento de Microsoft Purview siguiendo los procedimientos descritos en este paso. 
+> Tiene que usar la herramienta Azure Import/Export versión 1 (WAimportExportV1) para importar correctamente archivos PST mediante el método de envío de unidad. No se admite la versión 2 de la herramienta Azure Import/Export y su uso provocará que el disco duro se prepare incorrectamente para el trabajo de importación. Asegúrese de descargar la herramienta Azure Import/Export desde el portal de cumplimiento Microsoft Purview siguiendo los procedimientos descritos en este paso. 
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
@@ -120,7 +118,7 @@ El primer paso es descargar la herramienta y que se usa en el paso 2 para copiar
     > [!NOTE]
     > Como se indicó anteriormente, debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento.
   
-3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
+3. En la pestaña **Importar** , haga clic en ![Agregar icono.](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
 4. En el Asistente para importar trabajos, escriba un nombre para el trabajo de importación PST y, a continuación, haga clic en **Siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
     
@@ -166,12 +164,12 @@ El siguiente paso es usar la herramienta WAImportExport.exe para copiar archivos
     |**Parámetro**|**Descripción**|**Ejemplo**|
     |:-----|:-----|:-----|
     | `/j:` <br/> |Especifica el nombre del archivo de diario. Este archivo se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe. Todas las unidades de disco duro que envíe a Microsoft deben tener un archivo de diario. Cada vez que ejecute la herramienta WAImportTool.exe para copiar archivos PST en una unidad de disco duro, la información se anexará al archivo de diario de esa unidad. 
-  <br/> El personal del centro de datos de Microsoft usa la información del archivo de diario para asociar el disco duro con el trabajo de importación que cree en el paso 4 y para cargar los archivos PST en el área de Azure Storage en la nube de Microsoft.  <br/> | `/j:PSTHDD1.jrn` <br/> |
+  <br/> El personal del centro de datos de Microsoft usa la información del archivo de diario para asociar la unidad de disco duro con el trabajo de importación que cree en el paso 4 y para cargar los archivos PST en el área Azure Storage en la nube de Microsoft.  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |Especifica la letra de la unidad de disco duro cuando se conecta a su equipo local.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Especifica el nombre de la sesión de copia. Cada vez que ejecuta la herramienta WAImportExport.exe para copiar los archivos en la unidad de disco duro, se define una sesión. Los archivos PST se copian en una carpeta cuyo nombre es el nombre de la sesión especificado por este parámetro.   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se copiarán durante la sesión. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/`. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en el disco duro (convertido a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro . Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs`. En este caso, todavía debe incluir  `ingestiondata` en la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> Si incluye el nombre de ruta de acceso opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo, `FILESERVER01/PSTs/annb.pst`. Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst`, .           | `/dstdir:"ingestiondata/"` <br/> O bien:  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
-    | `/blobtype:` <br/> |Especifica el tipo de blobs en el área de Azure Storage a la que se van a importar los archivos PST. Para importar archivos PST, use el valor **BlockBlob**. Este parámetro es obligatorio.   <br/> | `/blobtype:BlockBlob` <br/> |
+    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/`. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en el disco duro (convertido a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro . Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs`. En este caso, todavía debe incluir  `ingestiondata` en la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> Si incluye el nombre de ruta de acceso opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo,  `FILESERVER01/PSTs/annb.pst`. Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst`, .           | `/dstdir:"ingestiondata/"` <br/> O bien  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/blobtype:` <br/> |Especifica el tipo de blobs en el área de Azure Storage en la que se van a importar los archivos PST. Para importar archivos PST, use el valor **BlockBlob**. Este parámetro es obligatorio.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Este modificador activa BitLocker en la unidad de disco duro. Este parámetro es necesario la primera vez que ejecuta la herramienta WAImportExport.exe.  <br/> La clave de cifrado de BitLocker se copia en el archivo de diario y en el archivo de registro que se crea si usa el  `/logfile:` parámetro . Como se ha explicado anteriormente, el archivo de diario se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe.  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |Este parámetro opcional especifica una carpeta en la que se guardan los archivos de registro. Si no se especifica, los archivos de registro se guardan en la misma carpeta donde se encuentra la herramienta WAImportExport.exe. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
    
@@ -197,7 +195,7 @@ El siguiente paso es usar la herramienta WAImportExport.exe para copiar archivos
 
 ## <a name="step-3-create-the-pst-import-mapping-file"></a>Paso 3: Crear el archivo de asignación de importación de PST
 
-Después de que el personal del centro de datos de Microsoft cargue los archivos PST desde el disco duro en el área de Azure Storage, el servicio de importación usará la información del archivo de asignación de importación PST, que es un archivo de valores separados por comas (CSV), que especifica a qué buzones de usuario se importan los archivos PST. Este archivo CSV se enviará en el paso siguiente, cuando cree un trabajo de importación de archivos PST.
+Después de que el personal del centro de datos de Microsoft cargue los archivos PST desde la unidad de disco duro en el área de Azure Storage, el servicio de importación usará la información del archivo de asignación de importación DE PST, que es un archivo de valores separados por comas (CSV), que especifica a qué buzones de usuario se importan los archivos PST. Este archivo CSV se enviará en el paso siguiente, cuando cree un trabajo de importación de archivos PST.
   
 1. [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
     
@@ -239,13 +237,13 @@ Después de que el personal del centro de datos de Microsoft cargue los archivos
 
 ## <a name="step-4-create-a-pst-import-job-in-office-365"></a>Paso 4: crear un trabajo de importación de PST en Office 365
 
-El siguiente paso consiste en crear el trabajo de importación de PST en el servicio de importación de Office 365. Como se explicó anteriormente, envía el archivo de asignación de importación pst que creó en el paso 3. Después de crear el trabajo, el servicio import usará la información del archivo de asignación para importar los archivos PST al buzón de usuario especificado después de que los archivos PST se copien del disco duro en el área de Azure Storage y cree e inicie el trabajo de importación.
+El siguiente paso consiste en crear el trabajo de importación de PST en el servicio de importación de Office 365. Como se explicó anteriormente, envía el archivo de asignación de importación pst que creó en el paso 3. Después de crear el trabajo, el servicio de importación usará la información del archivo de asignación para importar los archivos PST al buzón de usuario especificado después de que los archivos PST se copien del disco duro en el área de Azure Storage y cree e inicie el trabajo de importación.
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
 2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** \> datos.
 
-3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
+3. En la pestaña **Importar** , haga clic en ![Agregar icono.](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
 
     > [!NOTE]
     > Como se indicó anteriormente, debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento.
@@ -302,7 +300,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
 
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Paso 5: enviar la unidad de disco duro a Microsoft
 
-El siguiente paso consiste en enviar el disco duro a Microsoft y, a continuación, proporcionar el número de seguimiento del envío y devolver la información de envío para el trabajo de envío de unidad. Después de que Microsoft reciba la unidad, el personal del centro de datos tardará entre 7 y 10 días laborables en cargar los archivos PST en el área de Azure Storage de su organización.
+El siguiente paso consiste en enviar el disco duro a Microsoft y, a continuación, proporcionar el número de seguimiento del envío y devolver la información de envío para el trabajo de envío de unidad. Una vez que Microsoft recibe la unidad, el personal del centro de datos tardará entre 7 y 10 días laborables en cargar los archivos PST en el área de Azure Storage de su organización.
   
 > [!NOTE]
 > Si no proporciona el número de seguimiento y devuelve la información de envío en un plazo de 14 días a partir de la creación del trabajo de importación, el trabajo de importación expirará. Si esto sucede, tendrá que crear un nuevo trabajo de importación de trasvase de unidades (consulte [Paso 4: Crear un trabajo de importación PST en Office 365](#step-4-create-a-pst-import-job-in-office-365)) y volver a enviar el archivo de unidad y el archivo de asignación de importación PST.
@@ -327,7 +325,7 @@ Cuando haya enviado la unidad de disco duro a Microsoft, lleve a cabo el procedi
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** >  **datosImportar**.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** >  datos.
 
 3. En la pestaña **Importar** , haga clic en el trabajo del envío de unidad para el que desea especificar el número de seguimiento.
 
@@ -381,24 +379,24 @@ Una vez cargados los archivos PST en Azure, el estado cambia a **Análisis en cu
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>Ver una lista de los archivos PST cargados en Microsoft 365
 
-Puede instalar y usar la Explorador de Microsoft Azure Storage (que es una herramienta gratuita de código abierto) para ver la lista de archivos PST que se cargan (por parte del personal del centro de datos de Microsoft) en el área de Azure Storage de su organización. Puede hacer esto para comprobar que los archivos PST de las unidades de disco duro que envió a Microsoft se cargaron correctamente en el área de Azure Storage.
+Puede instalar y usar la Explorador de Microsoft Azure Storage (que es una herramienta gratuita de código abierto) para ver la lista de archivos PST que se cargan (por parte del personal del centro de datos de Microsoft) en el área de Azure Storage de su organización. Puede hacerlo para comprobar que los archivos PST de las unidades de disco duro que envió a Microsoft se cargaron correctamente en el área de Azure Storage.
   
 > [!IMPORTANT]
 > No puede usar el Explorador de Microsoft Azure Storage para cargar o modificar archivos PST. El único método admitido para importar archivos PST a Microsoft 365 es usar AzCopy. Además, no puede eliminar archivos PST que haya cargado al blob de Azure. Si intenta eliminar un archivo PST, recibirá un error al no tener los permisos necesarios. Todos los archivos PST se eliminan automáticamente del área de Azure Storage. Si no hay trabajos de importación en curso, todos los archivos PST del contenedor ** ingestiondata ** se eliminan 30 días después de crear el trabajo de importación más reciente.
   
-Realice los pasos siguientes para obtener la dirección URL de firma de acceso compartido (SAS) de su organización. Esta dirección URL es una combinación de la dirección URL de red de la ubicación de Azure Storage en la nube de Microsoft para su organización y una clave SAS. Esta clave proporciona los permisos necesarios para acceder a la ubicación de Azure Storage de la organización.
+Realice los pasos siguientes para obtener la dirección URL de firma de acceso compartido (SAS) de su organización. Esta dirección URL es una combinación de la dirección URL de red de la ubicación de Azure Storage en la nube de Microsoft para su organización y una clave SAS. Esta clave proporciona los permisos necesarios para acceder a la ubicación de Azure Storage de su organización.
 
 Para instalar el Explorador de Azure Storage y conectarse al área de Azure Storage, haga lo siguiente:
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** >  **datosImportar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Importación** **de administración del ciclo de vida de** >  datos.
 
-3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
+3. En la pestaña **Importar** , haga clic en ![Agregar icono.](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
 
 4. En el Asistente para importar trabajos, escriba un nombre para el trabajo de importación PST y, a continuación, haga clic en **Siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
 
-5. En la página **Elegir tipo de trabajo de importación**, haga clic en **Upload los datos** y, a continuación, haga clic en **Siguiente**.
+5. En la página **Elegir tipo de trabajo de importación** , haga clic en **Cargar los datos** y, a continuación, haga clic en **Siguiente**.
 
 6. En el paso 2, haga clic en **Mostrar dirección URL de carga en la red de SAS**.
 
@@ -413,7 +411,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
 10. Inicie el Explorador de Microsoft Azure Storage, haga clic derecho en **Cuentas de almacenamiento** en el panel izquierdo y, después, haga clic en **Conectar con Azure Storage**.
 
-    ![Haga clic con el botón derecho en Cuentas de Storage y, a continuación, haga clic en Conectar para Azure Storage.](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Haga clic con el botón derecho en Cuentas de almacenamiento y, a continuación, haga clic en Conectarse a Azure Storage.](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 11. Haga clic en **Usar un URI de Firma de acceso compartido (SAS) o cadena de conexión** y, luego, en **Siguiente**.
 
@@ -438,7 +436,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
   
 ## <a name="more-information"></a>Más información
 
-- El envío de unidades es una manera eficaz de importar grandes cantidades de datos de mensajería de archivo para Microsoft 365 para aprovechar las características de cumplimiento que están disponibles para su organización. Después de importar los datos de archivo a los buzones de usuario, puede hacer lo siguiente:
+- El envío de unidades es una manera eficaz de importar grandes cantidades de datos de mensajería de archivo a Microsoft 365 para aprovechar las características de cumplimiento que están disponibles para su organización. Después de importar los datos de archivo a los buzones de usuario, puede hacer lo siguiente:
 
   - Habilite [los buzones de archivo](enable-archive-mailboxes.md) y el [archivado de expansión automática](enable-autoexpanding-archiving.md) para proporcionar a los usuarios más espacio de almacenamiento de buzones de correo para los datos. 
 
@@ -446,7 +444,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
   - Use [las herramientas de Microsoft eDiscovery](search-for-content.md) para buscar los datos. 
 
-  - Aplique [Microsoft 365 directivas de retención](retention.md) para controlar cuánto tiempo se conservan los datos y qué acción realizar después de que expire el período de retención. 
+  - Aplique [directivas de retención de Microsoft 365](retention.md) para controlar cuánto tiempo se conservan los datos y qué acción realizar después de que expire el período de retención. 
 
   - Busque en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) eventos relacionados con estos datos. 
 

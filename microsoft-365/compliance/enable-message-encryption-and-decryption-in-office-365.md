@@ -1,5 +1,5 @@
 ---
-title: Habilitar el cifrado y descifrado de mensajes
+title: Habilitación del cifrado y descifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,20 +13,20 @@ ms.localizationpriority: medium
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
-description: Cifrado de mensajes de Office 365 permite a los usuarios de correo electrónico enviar mensajes cifrados a personas dentro de nuestra organización externa. Como administrador, puede habilitar Cifrado de mensajes de Office 365 mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establecen las condiciones para el cifrado.
-ms.openlocfilehash: 086ddd06d90990da7b9260fcdac10acb7b22de3e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Cifrado de mensajes de Microsoft Purview permite a los usuarios de correo electrónico enviar mensajes cifrados a personas dentro de nuestra organización. Como administrador, puede habilitar Cifrado de mensajes de Microsoft Purview mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establezcan las condiciones para el cifrado.
+ms.openlocfilehash: 1440d2c1bcc60b68b3aae02cdba5ca7dec8737db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177536"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627313"
 ---
-# <a name="enable-message-encryption-and-decryption"></a>Habilitar el cifrado y descifrado de mensajes
+# <a name="enable-message-encryption-and-decryption"></a>Habilitación del cifrado y descifrado de mensajes
 
-Cifrado de mensajes de Office 365 permite a los usuarios de correo electrónico enviar mensajes cifrados a personas dentro de nuestra organización externa. Como administrador, puede habilitar Cifrado de mensajes de Office 365 mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establecen las condiciones para el cifrado. Cuando uno de los usuarios envía un mensaje que coincide con las condiciones de la regla, el mensaje se cifra.
+Cifrado de mensajes de Microsoft Purview permite a los usuarios de correo electrónico enviar mensajes cifrados a personas dentro de nuestra organización. Como administrador, puede habilitar Cifrado de mensajes de Microsoft Purview mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establezcan las condiciones para el cifrado. Cuando uno de los usuarios envía un mensaje que coincide con las condiciones de la regla, el mensaje se cifra.
   
-Para obtener información sobre cómo crear reglas de flujo de correo para el cifrado, vea [Definir reglas para cifrar o descifrar mensajes de correo electrónico.](./define-mail-flow-rules-to-encrypt-email.md)
+Para obtener información sobre cómo crear reglas de flujo de correo para el cifrado, consulte [Definición de reglas para cifrar o descifrar mensajes de correo electrónico](./define-mail-flow-rules-to-encrypt-email.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Cifrado en Office 365](./encryption.md)

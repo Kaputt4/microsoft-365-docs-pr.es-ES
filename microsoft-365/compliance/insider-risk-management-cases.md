@@ -1,6 +1,6 @@
 ---
 title: Casos de administración de riesgos internos
-description: Obtenga información sobre los casos de administración de riesgos internos en Microsoft Purview
+description: Más información sobre los casos de administración de riesgos internos en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469390"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628713"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos internos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los casos son el núcleo de la gestión de riesgos internos y le permiten investigar y actuar en profundidad sobre los problemas generados por los indicadores de riesgo definidos en sus políticas. Los casos se crean manualmente a partir de alertas en situaciones en las que se necesita más acción para solucionar un problema relacionado con el cumplimiento para un usuario. Cada caso se limita a un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un caso nuevo.
 
@@ -137,7 +135,7 @@ El Explorador de contenido es una herramienta eficaz con características básic
 
 ![Explorador de contenido de casos de administración de riesgos internos.](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>Notas de casos
+### <a name="case-notes"></a>Notas del caso
 
 La pestaña **Notas** del caso en el caso es donde analistas e investigadores de riesgo comparten comentarios, comentarios e información sobre su trabajo para el caso. Las notas son adiciones permanentes a un caso y no se pueden editar ni eliminar después de guardar la nota. Cuando se crea un caso a partir de una alerta, los comentarios escritos en el cuadro de diálogo **Confirmar alerta y crear casos de riesgo internas** se agregan automáticamente como nota de caso.
 
@@ -165,12 +163,12 @@ Para agregar un colaborador a un caso:
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Casos**.
 2. Seleccione un caso y, a continuación, seleccione la pestaña **Colaboradores** .
 3. Seleccione **Agregar colaborador**.
-4. En el cuadro de diálogo **Agregar colaborador** , empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario en la lista de usuarios sugeridos. Esta lista se genera a partir del Azure Active Directory de la suscripción de inquilino.
+4. En el cuadro de diálogo **Agregar colaborador** , empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario en la lista de usuarios sugeridos. Esta lista se genera a partir de Azure Active Directory de la suscripción de inquilino.
 5. Seleccione **Agregar** para agregar el usuario como colaborador o seleccione **Cancelar** cierre el cuadro de diálogo sin agregar el usuario como colaborador.
 
 ## <a name="case-actions"></a>Acciones de casos
 
-Los investigadores de riesgo pueden tomar medidas sobre un caso en uno de varios métodos, en función de la gravedad del caso, el historial de riesgo del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que tenga que escalar un caso a un usuario o a una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la administración de la resolución de un extremo a otro.
+Los investigadores de riesgo pueden tomar medidas sobre un caso en uno de varios métodos, en función de la gravedad del caso, el historial de riesgo del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que tenga que escalar un caso a un usuario o a una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la administración de soluciones de un extremo a otro.
 
 ### <a name="send-email-notice"></a>Enviar notificación por correo electrónico
 
@@ -188,7 +186,7 @@ Para enviar un aviso al usuario asignado a un caso:
 
 ### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Escale el caso para la investigación del usuario en situaciones en las que se necesite una revisión legal adicional para la actividad de riesgo del usuario. Esta escalación abre un nuevo caso Microsoft Purview eDiscovery (Premium) en la organización de Microsoft 365. eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones legales internas y externas de la organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Escalar a un caso de exhibición de documentos electrónicos (Premium) de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la conservación del contenido. Para obtener más información sobre los casos de eDiscovery (Premium), vea [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+Escale el caso para la investigación del usuario en situaciones en las que se necesite una revisión legal adicional para la actividad de riesgo del usuario. Esta escalación abre un nuevo caso de Microsoft Purview eDiscovery (Premium) en la organización de Microsoft 365. eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones legales internas y externas de la organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Escalar a un caso de eDiscovery (Premium) desde un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la conservación del contenido. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 Para escalar un caso a una investigación de usuario:
 
@@ -198,11 +196,11 @@ Para escalar un caso a una investigación de usuario:
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Confirmar** para crear el caso de investigación del usuario o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un nuevo caso de investigación de usuario.
 
-Una vez que el caso de administración de riesgos internos se ha escalado a un nuevo caso de investigación de usuarios, puede revisar el nuevo caso en el área **eDiscoveryAdvanced**  >  de la portal de cumplimiento Microsoft Purview.
+Una vez que el caso de administración de riesgos internos se ha escalado a un nuevo caso de investigación de usuarios, puede revisar el nuevo caso en el área **eDiscovery** > **Advanced** del portal de cumplimiento Microsoft Purview.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ejecución de tareas automatizadas con flujos de Power Automate para el caso
 
-Con los flujos de Power Automate recomendados, los investigadores y analistas de riesgo pueden tomar medidas rápidamente para:
+Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgo pueden tomar medidas rápidamente para:
 
 - Solicitar información de RR. HH. o empresa sobre un usuario en un caso de riesgo interno
 - Notificar al administrador cuando un usuario tiene una alerta de riesgo interno
@@ -215,17 +213,17 @@ Para ejecutar, administrar o crear flujos de Power Automate para un caso de admi
 2. Elija el flujo de Power Automate que se va a ejecutar y, a continuación, seleccione **Ejecutar flujo**. 
 3. Una vez completado el flujo, seleccione **Listo**.
 
-Para obtener más información sobre los flujos de Power Automate para la administración de riesgos internos, consulte [Introducción a la configuración de administración de riesgos internos](insider-risk-management-settings.md#power-automate-flows-preview).
+Para más información sobre los flujos de Power Automate para la administración de riesgos internos, consulte [Introducción a la configuración de administración de riesgos internos](insider-risk-management-settings.md#power-automate-flows-preview).
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
 
-Cuando Microsoft Teams integración para la administración de riesgos internos está habilitada en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgo pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo para ver un caso seleccionando **Ver Microsoft Teams equipo** en la barra de herramientas de acción del caso.
+Cuando la integración de Microsoft Teams para la administración de riesgos internos está habilitada en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgo pueden abrir Rápidamente Microsoft Teams y navegar directamente al equipo para ver un caso seleccionando **Ver equipo de Microsoft Teams** en la barra de herramientas de acción del caso.
 
-Para los casos abiertos antes de habilitar la integración con Microsoft Team, los investigadores y analistas de riesgo pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando **Crear Microsoft Teams equipo** en la barra de herramientas de acción de casos.
+Para los casos abiertos antes de habilitar la integración del equipo de Microsoft, los investigadores y analistas de riesgo pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando **Crear equipo de Microsoft Teams** en la barra de herramientas de acciones del caso.
 
 Cuando se resuelve un caso, el equipo de Microsoft asociado se archivará automáticamente (oculto y se convertirá en de solo lectura).
 
-Para más información sobre Microsoft Teams para la administración de riesgos internos, consulte [Introducción a la configuración de administración de riesgos internos](insider-risk-management-settings.md#microsoft-teams-preview).
+Para más información sobre Microsoft Teams para la administración de riesgos internos, consulte [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#microsoft-teams-preview) internos.
 
 ### <a name="resolve-the-case"></a>Resolver el caso
 

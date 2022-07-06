@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893402"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630505"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="reports"></a>Informes
 
@@ -89,16 +87,15 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
     - Notificación del usuario
     - Caso creado
 
-- **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el archivo .csv. Algunos ejemplos son:
+- **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el archivo .csv. Los ejemplos son:
 
     - **Correo electrónico**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
     - **Teams**: tipos de información confidencial detectados en los canales y mensajes de chat de Microsoft Teams.
-    - **Skype Empresarial**: tipos de información confidencial detectados en las comunicaciones de Skype Empresarial.
     - **Yammer**: tipos de información confidencial detectados en bandejas de entrada, publicaciones, chats y respuestas de Yammer.
     - **Orígenes de terceros**: se han detectado tipos de información confidencial para las actividades asociadas a conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial de la columna Origen de terceros.
     - **Otro**: tipos de información confidencial que se usan para el procesamiento interno del sistema. La selección o anulación de la selección de este origen para el informe no afectará a ningún valor.
 
-### <a name="message-details-report-preview"></a>Informe de detalles del mensaje (versión preliminar)
+### <a name="message-details-report"></a>Informe de detalles del mensaje
 
 Cree informes personalizados y revise los detalles de los mensajes contenidos en directivas específicas en la pestaña **Directivas** . Estos informes se pueden usar para revisiones de todos los mensajes y para crear una instantánea de informe para el estado de los mensajes durante un período de tiempo personalizable. Después de crear un informe, puede ver y descargar el informe de detalles como un archivo .csv en la pestaña **Informes de detalles del mensaje** .
 
@@ -106,7 +103,7 @@ Cree informes personalizados y revise los detalles de los mensajes contenidos en
 
 Para crear un nuevo informe de detalles del mensaje, complete los pasos siguientes:
 
-1. Inicie sesión en el portal de cumplimiento de Microsoft Purview con una cuenta que sea miembro del grupo de roles *Investigadores de cumplimiento de comunicaciones* .
+1. Inicie sesión en el portal de cumplimiento Microsoft Purview con una cuenta que sea miembro del grupo de roles *Investigadores de cumplimiento de comunicaciones*.
 2. Vaya a la pestaña **Directivas** , seleccione una directiva y, a continuación, seleccione **Crear informe de detalles del mensaje**.
 3. En el panel **Crear informe de detalles del mensaje** , escriba un nombre para el informe en el campo **Nombre del** informe.
 4. En **Elegir un intervalo de fechas**, seleccione una *fecha de inicio* y *una fecha de finalización* para el informe.
@@ -146,7 +143,7 @@ En algunos casos, debe proporcionar información a los auditores normativos o de
 > [!IMPORTANT]
 > La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de la comunicación. Para habilitar la auditoría, consulte [Habilitación del registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, estos eventos pueden tardar hasta 48 horas en verse en las directivas de cumplimiento de comunicaciones.
 
-Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administrador global* o *Administrador de cumplimiento de comunicaciones* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
+Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
 |**Field**|**Detalles**|
 |:-----|:-----|
@@ -155,7 +152,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 | **Operations** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y separan mediante delimitadores de comas. |
 
-Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *Administrador global* o *Administrador de cumplimiento de comunicaciones* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
+Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
 |**Field**|**Detalles**|
 |:-----|:-----|

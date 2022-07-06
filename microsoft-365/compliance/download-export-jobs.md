@@ -16,26 +16,24 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos de un conjunto de revisión a una cuenta de Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
-ms.openlocfilehash: e0dfe3eb37ea440c93dc7753c7c4206d8d33c1f3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 87e7f04f2e21becb5320c3bca999d7e0ff4900b2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098634"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626499"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportación de documentos en un conjunto de revisión a una cuenta de Azure Storage
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Al exportar documentos desde un conjunto de revisión en un caso de exhibición de documentos electrónicos (Premium), tiene la opción de exportarlos a una cuenta de Azure Storage administrada por su organización. Si usa esta opción, los documentos se cargan en la ubicación de Azure Storage. Después de exportarlos, puede acceder a los documentos (y descargarlos en un equipo local u otra ubicación) mediante el Explorador de Azure Storage. En este artículo se proporcionan instrucciones sobre cómo exportar documentos a la cuenta de Azure Storage y cómo usar el Explorador de Azure Storage para conectarse a una ubicación Azure Storage para descargar los documentos exportados. Para obtener más información sobre Explorador de Azure Storage, consulte [Uso de Explorador de Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Al exportar documentos desde un conjunto de revisión en un caso de exhibición de documentos electrónicos (Premium), tiene la opción de exportarlos a una cuenta de Azure Storage administrada por su organización. Si usa esta opción, los documentos se cargan en la ubicación de Azure Storage. Después de exportarlos, puede acceder a los documentos (y descargarlos en un equipo local u otra ubicación) mediante el Explorador de Azure Storage. En este artículo se proporcionan instrucciones sobre cómo exportar documentos a la cuenta de Azure Storage y cómo usar el Explorador de Azure Storage para conectarse a una ubicación de Azure Storage para descargar los documentos exportados. Para obtener más información sobre Explorador de Azure Storage, consulte [Uso de Explorador de Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Antes de exportar documentos desde un conjunto de revisión
 
 - Debe proporcionar un token de firma de acceso compartido (SAS) para la cuenta de Azure Storage y la dirección URL de un contenedor específico de la cuenta de almacenamiento para exportar documentos desde un conjunto de revisión. Asegúrese de tenerlos a mano (por ejemplo, copiados en un archivo de texto) al realizar el paso 2.
 
-  - **Token de SAS**: asegúrese de que el token de SAS es para la cuenta de Azure Storage (y no para el contenedor). Puede generar un token de SAS para su cuenta en Azure Storage. Para ello, vaya a la cuenta de Azure Storage y seleccione **Compartir firma de acceso** en la configuración **de Configuración** de la hoja cuenta de almacenamiento. Use la configuración predeterminada y permita todos los tipos de recursos al generar el token de SAS.
+  - **Token de SAS**: asegúrese de que el token de SAS es para la cuenta de Azure Storage (y no para el contenedor). Puede generar un token de SAS para su cuenta en Azure Storage. Para ello, vaya a la cuenta de Azure Storage y seleccione **Compartir firma de acceso** en la hoja **Configuración** de la cuenta de almacenamiento. Use la configuración predeterminada y permita todos los tipos de recursos al generar el token de SAS.
 
-  - **Dirección URL** del contenedor: debe crear un contenedor en el que cargar los documentos del conjunto de revisión y, a continuación, obtener una copia de la dirección URL del contenedor; por ejemplo, `https://ediscoverydata.blob.core.windows.net/exportdata`. Para obtener la dirección URL, vaya al contenedor en Azure Storage y seleccione **Propiedades** en la sección **Configuración** de la hoja contenedora.
+  - **Dirección URL** del contenedor: debe crear un contenedor en el que cargar los documentos del conjunto de revisión y, a continuación, obtener una copia de la dirección URL del contenedor; por ejemplo, `https://ediscoverydata.blob.core.windows.net/exportdata`. Para obtener la dirección URL, vaya al contenedor de Azure Storage y seleccione **Propiedades** en la sección **Configuración** de la hoja contenedora.
 
 - Descargue e instale el Explorador de Azure Storage. Para obtener instrucciones, consulte [Explorador de Azure Storage herramienta](https://go.microsoft.com/fwlink/p/?LinkId=544842). Use esta herramienta para conectarse al contenedor de la cuenta de Azure Storage y descargar los documentos que exportó en el paso 1.
 
@@ -43,15 +41,15 @@ Al exportar documentos desde un conjunto de revisión en un caso de exhibición 
 
 El primer paso consiste en crear un trabajo de exportación para exportar documentos de un conjunto de revisión. Para obtener instrucciones más detalladas sobre todas las opciones de exportación, consulte [Exportación de documentos desde un conjunto de revisión](export-documents-from-review-set.md). En el procedimiento siguiente se resalta la configuración para exportar documentos a la cuenta de Azure Storage de la organización.
 
-1. En el portal de cumplimiento de Microsoft Purview, abra el caso de exhibición de documentos electrónicos (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, seleccione el conjunto de revisión que desea exportar.
+1. En el portal de cumplimiento Microsoft Purview, abra el caso de exhibición de documentos electrónicos (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, seleccione el conjunto de revisión que desea exportar.
 
-2. En el conjunto de revisión, haga clic en **AcciónExportar** > .
+2. En el conjunto de revisión, haga clic en **Exportar acción** > .
 
 3. En la página desplegable **Opciones de exportación** , escriba un nombre (obligatorio) y una descripción (opcional) para la exportación.
 
 4. Configure los valores en las secciones documentos, metadatos, contenido y opciones. Para obtener más información sobre esta configuración, consulte [Exportación de documentos desde un conjunto de revisión](export-documents-from-review-set.md).
 
-5. En la sección **Opciones de salida**, seleccione la **opción Estructura de directorios condensada exportada a la cuenta de Azure Storage**.
+5. En la sección **Opciones de salida** , seleccione la opción **Estructura de directorios condensada exportada a la cuenta de Azure Storage** .
 
 6. Pegue la dirección URL del contenedor y el token de SAS de la cuenta de almacenamiento en los campos correspondientes.
 
@@ -63,7 +61,7 @@ El primer paso consiste en crear un trabajo de exportación para exportar docume
 
 El siguiente paso es obtener la dirección URL de SAS que se genera después de crear el trabajo de exportación en el paso 1. Use la dirección URL de SAS para conectarse al contenedor de la cuenta de Azure Storage a la que exportó los documentos del conjunto de revisión.
 
-1. En la página **eDiscovery (Premium),** vaya al caso y haga clic en la pestaña **Exportaciones**.
+1. En la página **eDiscovery (Premium),** vaya al caso y haga clic en la pestaña **Exportaciones** .
 
 2. En la pestaña **Exportar**, haga clic en el trabajo de exportación que desea descargar. Este es el trabajo de exportación que creó en el paso 1.
 
@@ -74,17 +72,17 @@ El siguiente paso es obtener la dirección URL de SAS que se genera después de 
    > [!TIP]
    > La dirección URL de SAS que se muestra en el trabajo de exportación es una concatenación de la dirección URL del contenedor y el token de SAS de la cuenta de Azure Storage. Puede copiarlo desde el trabajo de exportación o crearlo usted mismo combinando la dirección URL y el token de SAS.
 
-## <a name="step-3-connect-to-the-azure-storage-container"></a>Paso 3: Conectar al contenedor de Azure Storage
+## <a name="step-3-connect-to-the-azure-storage-container"></a>Paso 3: Conexión al contenedor de Azure Storage
 
 El último paso consiste en usar la Explorador de Azure Storage y la dirección URL de SAS para conectarse al contenedor de la cuenta de Azure Storage y descargar los documentos exportados en un equipo local.
 
 1. Inicie el Explorador de Azure Storage que descargó e instaló.
 
-2. Haga clic en el icono **Abrir Conectar cuadro de diálogo**.
+2. Haga clic en el icono **Abrir cuadro de diálogo Conectar** .
 
    ![Haga clic en el icono Agregar cuenta.](../media/AzureStorageConnect.png)
 
-3. En la página **Conectar para Azure Storage**, haga clic en **Contenedor de blobs**.
+3. En la página **Conectarse a Azure Storage** , haga clic en **Contenedor de blobs**.
 
 4. En la página **Seleccionar método de autenticación** , seleccione la opción **Firma de acceso compartido (SAS)** y haga clic en **Siguiente**.
 
@@ -96,7 +94,7 @@ El último paso consiste en usar la Explorador de Azure Storage y la dirección 
 
 6. Haga clic en **Siguiente** para mostrar la página **de resumen** y, a continuación, haga clic en **Conectar**.
 
-    Se abre el nodo **Contenedores de blobs** (en **Storage Accounts** > **(Attached Containers).** \>
+    Se abre el nodo **Contenedores de blobs** (en **Cuentas** >  de almacenamiento **(contenedores adjuntos).** \>
 
     ![Exporte trabajos en el nodo Contenedores de blobs.](../media/AzureStorageConnect5.png)
 

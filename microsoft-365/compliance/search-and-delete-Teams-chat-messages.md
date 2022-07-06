@@ -1,5 +1,5 @@
 ---
-title: Busque y elimine mensajes de chat en Teams
+title: Búsqueda y eliminación de mensajes de chat en Teams
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,43 +16,41 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: 19841140d928cb96dcc734e2ce5806e15295fc88
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 372293e11ee16498746da69c824a91abd108f2cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679635"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629210"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Buscar y purgar mensajes de chat en Teams (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat.
+Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de mensajes de chat de Teams.
 
 > [!NOTE]
-> Este artículo se aplica a las organizaciones Microsoft 365 Enterprise. El soporte técnico para la nube del Gobierno de EE. UU. (incluidos GCC, GCC High y DoD) estará disponible próximamente.
+> Este artículo se aplica a las organizaciones Microsoft 365 Enterprise. El soporte técnico para la nube del Gobierno de EE. UU. (incluido GCC, GCC High y DoD) estará disponible próximamente.
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
 - Para crear un caso de eDiscovery (Premium) y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles **administrador de eDiscovery** en el portal de cumplimiento Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
-- La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Teams Conectar Chat (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
+- La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Chat de Teams Connect (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Dado que la capacidad de buscar y quitar mensajes de chat está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes de chat se quiten rápidamente.
 
 ## <a name="search-and-purge-workflow"></a>Flujo de trabajo de búsqueda y purga
 
-Este es el proceso para buscar y purgar Teams mensajes de chat:
+Este es el proceso para buscar y purgar mensajes de chat de Teams:
 
-![Flujo de trabajo para buscar y purgar Teams mensajes de chat.](../media/TeamsSearchAndPurgeWorkflow.png)
+![Flujo de trabajo para buscar y purgar mensajes de chat de Teams.](../media/TeamsSearchAndPurgeWorkflow.png)
 
 ## <a name="step-1-create-a-case-in-ediscovery-premium"></a>Paso 1: Crear un caso en eDiscovery (Premium)
 
-El primer paso es crear un caso en eDiscovery (Premium) para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md).
+El primer paso consiste en crear un caso en eDiscovery (Premium) para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md).
 
 ## <a name="step-2-create-a-draft-collection"></a>Paso 2: Crear una colección de borradores
 
-Después de crear un caso, el siguiente paso es crear una colección de borradores para buscar los mensajes de chat Teams que desea purgar. El proceso de purga que realice es que el paso 5 purgará todos los elementos que se encuentran en la colección de borradores.
+Después de crear un caso, el siguiente paso es crear una colección de borradores para buscar los mensajes de chat de Teams que desea purgar. El proceso de purga que realice es que el paso 5 purgará todos los elementos que se encuentran en la colección de borradores.
 
-En eDiscovery (Premium), una *colección* es una búsqueda de exhibición de documentos electrónicos de las ubicaciones de contenido Teams que contienen los mensajes de chat que desea purgar. Cree la colección de borradores en el caso que creó en el paso anterior. Para obtener más información, consulte [Creación de una colección de borradores](create-draft-collection.md).
+En eDiscovery (Premium), una *colección* es una búsqueda de exhibición de documentos electrónicos de las ubicaciones de contenido de Teams que contienen los mensajes de chat que desea purgar. Cree la colección de borradores en el caso que creó en el paso anterior. Para obtener más información, consulte [Creación de una colección de borradores](create-draft-collection.md).
 
 ### <a name="data-sources-for-chat-messages"></a>Orígenes de datos para mensajes de chat
 
@@ -60,21 +58,21 @@ Use la tabla siguiente para determinar qué orígenes de datos buscar en funció
 
 | Para este tipo de chat...|Buscar en este origen de datos...|
 |:---------|:---------|
-|chats de Teams 1:1     |Buzón de correo de los participantes del chat.|
-|Teams chats de grupo     |Buzones de los participantes del chat.|
-|canales Teams (estándar y compartido) |Buzón asociado al equipo primario.|
-|Teams canales privados |Buzón de correo de los miembros del canal privado.|
+|Chats de Teams 1:1     |Buzón de correo de los participantes del chat.|
+|Chats de grupo de Teams     |Buzones de los participantes del chat.|
+|Canales de Teams (estándar y compartidos) |Buzón asociado al equipo primario.|
+|Canales privados de Teams |Buzón de correo de los miembros del canal privado.|
 
 > [!NOTE]
 > En el paso 4, también tiene que identificar y quitar las directivas de retención y retención asignadas al buzón de correo que contenga el tipo de mensajes de chat que desea eliminar.
 
 ### <a name="tips-for-searching-for-chat-messages"></a>Sugerencias para buscar mensajes de chat
 
-Para garantizar la recopilación más completa de Teams conversaciones de chat (incluidos chats 1:1 y grupales y chats de chats estándar, compartidos y privados) use la condición **Tipo** y seleccione la opción **Mensajes instantáneos** al crear la consulta de búsqueda para la colección de borradores. También se recomienda incluir un intervalo de fechas o varias palabras clave para restringir el ámbito de la colección a elementos relevantes para la búsqueda de una investigación de purga.
+Para garantizar la recopilación más completa de conversaciones de chat de Teams (incluidos chats de grupo y 1:1, y chats de chats estándar, compartidos y privados), use la condición **Tipo** y seleccione la opción **Mensajes instantáneos** al compilar la consulta de búsqueda para la colección de borradores. También se recomienda incluir un intervalo de fechas o varias palabras clave para restringir el ámbito de la colección a elementos relevantes para la búsqueda de una investigación de purga.
 
 Esta es una captura de pantalla de una consulta de ejemplo con las opciones **Tipo** y **Fecha** :
 
-   ![Consulta para recopilar Teams contenido.](..\media\TeamsConditionsQueryType.png)
+   ![Consulta para recopilar contenido de Teams.](..\media\TeamsConditionsQueryType.png)
 
 Para obtener más información, consulte [Compilación de consultas de búsqueda para colecciones](building-search-queries.md).
 
@@ -96,19 +94,19 @@ Para obtener instrucciones sobre cómo identificar y quitar las directivas de re
 
 Ahora ya está listo para purgar realmente los mensajes de chat de Teams. Usará el Explorador de Microsoft Graph para realizar las tres tareas siguientes:
 
-1. Obtenga el identificador del caso de eDiscovery (Premium) que creó en el paso 1. Este es el caso que contiene la colección creada en el paso 2.
+1. Obtenga el identificador del caso de exhibición de documentos electrónicos (Premium) que creó en el paso 1. Este es el caso que contiene la colección creada en el paso 2.
 
 2. Obtenga el identificador de la colección que creó en el paso 2 y comprobó los resultados de la búsqueda en el paso 3. La consulta de búsqueda de esta colección devuelve los mensajes de chat que se purgarán.
 
 3. Purgar los mensajes de chat devueltos por la colección.
 
-Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Explorador de Graph para probar las API de Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
+Para obtener información sobre el uso del Explorador de Graph, consulte [Uso del Explorador de Graph para probar las API de Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
 
 > [!IMPORTANT]
 > Las API de la versión /beta de Microsoft Graph están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción. Para determinar si una API está disponible en la versión 1.0, use el selector de versiones.
 
 > [!IMPORTANT]
-> Para realizar estas tres tareas en Graph Explorador, es posible que tenga que dar su consentimiento a los permisos eDiscovery.Read.All y eDiscovery.ReadWrite.All. Para obtener más información, consulte la sección "Consentimiento para permisos" en [Trabajar con Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
+> Para realizar estas tres tareas en el Explorador de Graph, es posible que tenga que dar su consentimiento a los permisos eDiscovery.Read.All y eDiscovery.ReadWrite.All. Para obtener más información, consulte la sección "Consentimiento para permisos" en [Trabajar con el Explorador de Graph](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
 
 ### <a name="get-the-case-id"></a>Obtener el identificador del caso
 
@@ -131,7 +129,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 ### <a name="get-the-collection-id"></a>Obtención del identificador de la colección
 
-1. En Graph Explorador, ejecute la siguiente solicitud GET para recuperar el identificador de la colección que creó en el paso 2 y contiene los elementos que desea purgar. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` de la barra de direcciones de la consulta de solicitud, donde CaseId es el identificador que obtuvo en el procedimiento anterior. Asegúrese de rodear el identificador de caso con paréntesis y comillas simples.
+1. En el Explorador de Graph, ejecute la siguiente solicitud GET para recuperar el identificador de la colección que creó en el paso 2 y contiene los elementos que desea purgar. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` de la barra de direcciones de la consulta de solicitud, donde CaseId es el identificador que obtuvo en el procedimiento anterior. Asegúrese de rodear el identificador de caso con paréntesis y comillas simples.
 
    ![Solicitud GET para el identificador de colección.](..\media\GraphGetRequestForCollectionId.png)
 
@@ -147,7 +145,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 ### <a name="purge-the-chat-messages"></a>Purgar los mensajes de chat
 
-1. En Graph Explorador, ejecute la siguiente solicitud POST para purgar los elementos devueltos por la colección que creó en el paso 2. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` de la barra de direcciones de la consulta de solicitud, donde caseId y collectionId son los identificadores que obtuvo en los procedimientos anteriores. Asegúrese de rodear los valores id con paréntesis y comillas simples.
+1. En el Explorador de Graph, ejecute la siguiente solicitud POST para purgar los elementos devueltos por la colección que creó en el paso 2. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` de la barra de direcciones de la consulta de solicitud, donde caseId y collectionId son los identificadores que obtuvo en los procedimientos anteriores. Asegúrese de rodear los valores id con paréntesis y comillas simples.
 
       ![Solicitud POST para eliminar elementos devueltos por la colección.](..\media\GraphPOSTRequestToPurgeItems.png)
 
@@ -159,13 +157,13 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 ## <a name="step-6-verify-chat-messages-are-purged"></a>Paso 6: Comprobar que los mensajes de chat se purgan
 
-Después de ejecutar la solicitud POST para purgar mensajes de chat, estos mensajes se quitan del cliente Teams y se reemplazan por un generado automáticamente que indica que un administrador ha quitado el mensaje. Para ver un ejemplo de este mensaje, consulte la sección [Experiencia del usuario final](#end-user-experience) de este artículo.
+Después de ejecutar la solicitud POST para purgar mensajes de chat, estos mensajes se quitan del cliente de Teams y se reemplazan por un generado automáticamente que indica que un administrador ha quitado el mensaje. Para ver un ejemplo de este mensaje, consulte la sección [Experiencia del usuario final](#end-user-experience) de este artículo.
 
-Los mensajes de chat purgados se mueven a la carpeta SubstrateHolds, que es una carpeta de buzón oculta. Los mensajes de chat purgados se almacenan allí durante al menos 1 día y, a continuación, se eliminan permanentemente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). Para obtener más información, consulte [Información sobre la retención de Microsoft Teams](retention-policies-teams.md).
+Los mensajes de chat purgados se mueven a la carpeta SubstrateHolds, que es una carpeta de buzón oculta. Los mensajes de chat purgados se almacenan allí durante al menos 1 día y, a continuación, se eliminan permanentemente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). Para obtener más información, consulte [Información sobre la retención para Microsoft Teams](retention-policies-teams.md).
 
 ## <a name="step-7-reapply-holds-and-retention-policies-to-data-sources"></a>Paso 7: Volver a aplicar las directivas de retención y retención a orígenes de datos
 
-Después de comprobar que los mensajes de chat se purgan y quitan del cliente Teams, puede volver a aplicar las directivas de retención y retención que quitó en el paso 4.
+Después de comprobar que los mensajes de chat se purgan y quitan del cliente de Teams, puede volver a aplicar las directivas de retención y retención que quitó en el paso 4.
 
 <!--
 ## Deleting chat messages in federated environments
@@ -183,7 +181,7 @@ Admins can use the procedures in this article to search and delete Teams chat me
 
 En el caso de los mensajes de chat eliminados, los usuarios verán un mensaje generado automáticamente que indica "Este mensaje fue eliminado por un administrador".
 
-![Vista del mensaje de chat purgado en Teams cliente.](..\media\TeamsPurgeTombstone.png)
+![Vista del mensaje de chat purgado en el cliente de Teams.](..\media\TeamsPurgeTombstone.png)
 
 El mensaje de la captura de pantalla anterior reemplaza al mensaje de chat que se eliminó.
 

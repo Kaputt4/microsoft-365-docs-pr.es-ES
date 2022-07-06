@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use eDiscovery y herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 9be20d6c8eab99206a5510be6f21d3ca24114e0e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b65d6057921d310c3e22e5494218271c7693c162
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086961"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630199"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de eDiscovery: escenario de desbordamiento de datos: búsqueda y purga
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **¿Qué es el derrame de datos y por qué debe preocuparse?** El derrame de datos se produce cuando un documento confidencial se libera en un entorno que no es de confianza. Cuando se detecta un incidente de derrame de datos, es importante evaluar rápidamente el tamaño y las ubicaciones del derrame, examinar las actividades del usuario a su alrededor y, a continuación, purgar permanentemente los datos derramados del sistema.
   
@@ -52,13 +50,13 @@ Este es un procedimiento para administrar un incidente de derrame de datos:
 
 ## <a name="things-to-know-before-you-start"></a>Cosas que debe saber antes de empezar
 
-- El flujo de trabajo de desbordamiento de datos descrito en este artículo no elimina mensajes de chat en Microsoft Teams. Para buscar y eliminar Teams mensajes de chat, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
+- El flujo de trabajo de desbordamiento de datos descrito en este artículo no elimina mensajes de chat en Microsoft Teams. Para buscar y eliminar mensajes de chat de Teams, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
 
 - Cuando un buzón está en espera, un mensaje eliminado permanece en la carpeta Elementos recuperables hasta que expire el período de retención o se libere la suspensión. [En el paso 6 se](#step-6-prepare-the-mailboxes) describe cómo quitar la retención de los buzones. Consulte con los departamentos legales o de administración de registros antes de quitar la suspensión. Su organización puede tener una directiva que defina si un buzón en espera o un incidente de derrame de datos tiene prioridad. 
 
 - Para controlar qué buzones de usuario puede buscar y administrar un investigador de derrame de datos que pueda acceder al caso, puede configurar los límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el [paso 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o un administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
 
-- Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol Administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 [que le agregue al grupo de roles del administrador de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol Administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 [que le agregue al grupo de roles administrador de eDiscovery](assign-ediscovery-permissions.md).
 
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](./assign-ediscovery-permissions.md).
 
@@ -66,7 +64,7 @@ Este es un procedimiento para administrar un incidente de derrame de datos:
 
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Opcional) Paso 1: Administrar quién puede acceder al caso y establecer límites de cumplimiento
 
-En función de la práctica de la organización, debe controlar quién puede acceder al caso de exhibición de documentos electrónicos que se usa para investigar un incidente de derrame de datos y configurar los límites de cumplimiento. La manera más fácil de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el portal de cumplimiento de Microsoft Purview y, a continuación, agregar el grupo de roles como miembro del caso de eDiscovery. Para obtener información sobre los grupos de roles de eDiscovery integrados y cómo agregar miembros a un caso de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+En función de la práctica de la organización, debe controlar quién puede acceder al caso de exhibición de documentos electrónicos que se usa para investigar un incidente de derrame de datos y configurar los límites de cumplimiento. La manera más fácil de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el portal de cumplimiento Microsoft Purview y, a continuación, agregar el grupo de roles como miembro del caso de eDiscovery. Para obtener información sobre los grupos de roles de eDiscovery integrados y cómo agregar miembros a un caso de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
   
 También puede crear un nuevo grupo de roles que se adapte a las necesidades de la organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrame de datos de la organización accedan a todos los casos de derrame de datos y colaboren en ellos. Para ello, cree un grupo de roles "Investigador de derrame de datos", asigne los roles adecuados (Export, RMS Decrypt, Review, Preview, Compliance Search y Case Management), agregue los investigadores de derrame de datos al grupo de roles y, a continuación, agregue el grupo de roles como miembro del caso de eDiscovery de derrame de datos. Consulte [Set up compliance boundaries for eDiscovery investigations in Office 365 (Configurar límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md)) para obtener instrucciones detalladas sobre cómo hacerlo. 
   
@@ -74,7 +72,7 @@ También puede crear un nuevo grupo de roles que se adapte a las necesidades de 
 
 Un caso de exhibición de documentos electrónicos proporciona una manera eficaz de administrar la investigación de derrame de datos. Puede agregar miembros al grupo de roles que creó en el paso 1, agregar el grupo de roles como miembro de un nuevo caso de exhibición de documentos electrónicos, realizar búsquedas iterativas para buscar los datos derramados, exportar un informe para compartir, realizar un seguimiento del estado del caso y, a continuación, volver a consultar los detalles del caso si es necesario. Considere la posibilidad de establecer una convención de nomenclatura para los casos de exhibición de documentos electrónicos usados para incidentes de desbordamiento de datos y proporcionar toda la información posible en el nombre y la descripción del caso para que pueda localizar y hacer referencia en el futuro si es necesario.
   
-Para crear un nuevo caso, puede usar eDiscovery en el centro de seguridad y cumplimiento. Vea "Crear un caso nuevo" en [Comenzar con eDiscovery (Estándar).](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case)
+Para crear un nuevo caso, puede usar eDiscovery en el centro de seguridad y cumplimiento. Consulte "Crear un caso nuevo" en [Introducción a eDiscovery (Estándar).](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case)
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Paso 3: Búsqueda de los datos derramados
 
@@ -93,7 +91,7 @@ Si tiene más de 1000 buzones o más de 100 mensajes de correo electrónico por 
 
 Cuando encuentre un mensaje de correo electrónico que contenga datos derramados, compruebe los destinatarios del mensaje para determinar si se ha compartido externamente. Para realizar un seguimiento adicional de un mensaje, puede recopilar información del remitente y intervalos de fechas para poder usar los registros de seguimiento de mensajes. Este proceso se describe en [el paso 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Después de comprobar los resultados de la búsqueda, es posible que desee compartir sus conclusiones con otros usuarios para una revisión secundaria. Las personas que ha asignado al caso en el paso 1 pueden revisar el contenido del caso tanto en eDiscovery como en eDiscovery de Microsoft Purview (Premium) y aprobar los resultados del caso. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Después de comprobar los resultados de la búsqueda, es posible que desee compartir sus conclusiones con otros usuarios para una revisión secundaria. Las personas que ha asignado al caso en el paso 1 pueden revisar el contenido del caso tanto en eDiscovery como en Microsoft Purview eDiscovery (Premium) y aprobar los resultados del caso. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Para generar un informe estadístico:**
   
@@ -185,7 +183,7 @@ Tenga en cuenta los siguientes límites al eliminar los datos derramados:
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
 
 > [!IMPORTANT]
-> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery (Premium) no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una ubicación Azure Storage. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery (Premium) que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).
+> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery (Premium) no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una ubicación de Azure Storage. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery (Premium) que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: Comprobar, proporcionar una prueba de eliminación y auditoría
 
@@ -207,7 +205,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, consulte lo siguiente:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Campos de metadatos de documentos en eDiscovery (Premium)
+title: Campos de metadatos de documento en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso en Microsoft Purview eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: d0e188d227e3000ba6811204c74cf746b00bc0e2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso de Microsoft Purview eDiscovery (Premium) en Microsoft 365.
+ms.openlocfilehash: a6fc8479d3ecd2b89c0331220fb7f88f46bda1e4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097786"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629759"
 ---
-# <a name="document-metadata-fields-in-ediscovery-premium"></a>Campos de metadatos de documentos en eDiscovery (Premium)
+# <a name="document-metadata-fields-in-ediscovery-premium"></a>Campos de metadatos de documento en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En la tabla siguiente se enumeran los campos de metadatos de los documentos de un conjunto de revisión en un caso en Microsoft Purview eDiscovery (Premium). La tabla proporciona la siguiente información:
+En la tabla siguiente se enumeran los campos de metadatos de los documentos de un conjunto de revisión en un caso de Microsoft Purview eDiscovery (Premium). La tabla proporciona la siguiente información:
 
 - **Nombre** del **campo y Nombre del campo para mostrar:** el nombre del campo de metadatos y el nombre del campo que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisión. Algunos campos de metadatos no se incluyen al ver los metadatos de archivo de un documento. Estos campos se resaltan con un asterisco (*).
 
@@ -38,13 +36,13 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 - **Descripción:** Descripción del campo de metadatos.
 
 > [!NOTE]
-> El campo **Palabras clave** de [la búsqueda de conjuntos de revisión](./review-set-search.md) usa el lenguaje de consulta de palabras clave (KQL). Los campos enumerados en la columna **Nombre de campo** que se pueden buscar se pueden usar en el campo **Palabras clave** de una búsqueda de conjunto de revisión para formar consultas complejas sin tener que usar el generador de consultas. Para obtener más información sobre KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+> El campo **Palabras clave** de [la búsqueda de conjuntos de revisión](./review-set-search.md) usa lenguaje de consulta de palabras clave (KQL). Los campos enumerados en la columna **Nombre de campo** que se pueden buscar se pueden usar en el campo **Palabras clave** de una búsqueda de conjunto de revisión para formar consultas complejas sin tener que usar el generador de consultas. Para obtener más información sobre KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 <br>
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo en el que se puede buscar|Nombre del campo exportado|Descripción|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo en el que se puede buscar|Nombre del campo exportado|Description|
 |---|---|---|---|
 |Identificador de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|
@@ -55,20 +53,20 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Ruta de acceso compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
 |Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|ConversationBody||Cuerpo de la conversación del elemento.|
-|Identificador de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats en grupo, todos los archivos de transcripción y sus elementos familiares dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea flujo de [trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Identificador de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y los chats de grupo, todos los archivos de transcripción y sus elementos familiares dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea [Flujo de trabajo de eDiscovery (Premium) para contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Id. de familia de conversación|ConversationFamilyID|ConversationFamilyID|Identificador que identifica elementos individuales de una conversación, así como los elementos relacionados de la conversación.|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
-|Nombre de la conversación||ConversationName|Este campo depende del tipo de contenido.<br>**Teams chat 1:1:** primeros 40 caracteres del primer mensaje.<br>**Teams chat de 1:N:** nombre del chat de grupo; si no está disponible, los primeros 40 caracteres del primer mensaje.<br>**Teams Channel Post:** post title or announcement subhead; if not available, the first 40 characters of the first message.|
+|Nombre de la conversación||ConversationName|Este campo depende del tipo de contenido.<br>**Chat de Teams 1:1:** primeros 40 caracteres del primer mensaje.<br>**Chat de Teams 1:N:** Nombre del chat de grupo; si no está disponible, los primeros 40 caracteres del primer mensaje.<br>**Publicación del canal de Teams:** Título de publicación o subpartida de anuncio; si no está disponible, los primeros 40 caracteres del primer mensaje.|
 |Tiempo de conversación en pdf|ConversationPdfTime||Fecha en la que se creó la versión en PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión en PDF de la conversación para Chat.|
 |Tema de conversación|ConversationTopic||Tema de conversación del elemento.|
-|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats grupales y todas las conversaciones Yammer:** Agrupar<br>**Teams canales y canales privados:** Channel|
+|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats grupales y todas las conversaciones de Yammer:** Grupo<br>**Canales de Teams y canales privados:** Canal|
 |Contiene el mensaje eliminado|ContainsDeletedMessage|ContainsDeletedMessage|Indica si la transcripción del chat incluye un mensaje eliminado|
 |Contiene el mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción del chat incluye un mensaje editado|
-|Teams título del anuncio|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de equipos](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
+|Título del anuncio de Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de equipos](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
 |Custodio|Custodio|Custodio|Nombre del custodio al que estaba asociado el elemento.|
-|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>**Correo electrónico**: fecha de envío<br>**Datos adjuntos de correo electrónico**: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>**Documentos incrustados**: fecha de última modificación del documento; si no está disponible, la fecha de última modificación del elemento primario<br>**Documentos SPO (incluye datos adjuntos modernos):** fecha de última modificación del documento; si no está disponible, SharePoint fecha de última modificación<br>**Documentos no Office 365**: fecha de última modificación<br>**Reuniones**: fecha de inicio de la reunión<br>**VoiceMail**: fecha de envío<br>**MI**: fecha de envío<br>**Teams**: Fecha de envío|
+|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>**Correo electrónico**: fecha de envío<br>**Datos adjuntos de correo electrónico**: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>**Documentos incrustados**: fecha de última modificación del documento; si no está disponible, la fecha de última modificación del elemento primario<br>**Documentos SPO (incluye datos adjuntos modernos):** fecha de última modificación del documento; si no está disponible, fecha de última modificación de SharePoint<br>**Documentos no Office 365**: fecha de última modificación<br>**Reuniones**: fecha de inicio de la reunión<br>**VoiceMail**: fecha de envío<br>**MI**: fecha de envío<br>**Teams**: fecha de envío|
 |Comentarios del documento|DocComments|Doc_comments|Comentarios de los metadatos del documento.|
 |Empresa de documentos||Doc_company|Empresa de los metadatos del documento.|
 |Fecha de creación del documento|CreatedTime|Doc_date_created|Cree la fecha a partir de los metadatos del documento.|
@@ -100,7 +98,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |FamilyDuplicateSet*||Family_duplicate_set|Identificador numérico de las familias que son duplicados exactos entre sí (el mismo contenido y todos los mismos datos adjuntos).|
 |Id. de familia|FamilyId|Family_ID|Agrupa los datos adjuntos y los elementos extraídos del correo electrónico y chats con su elemento primario. Esto incluye el chat o el correo electrónico y todos los datos adjuntos y los elementos extraídos.|
 |Tamaño de familia||Family_size|Número de documentos de la familia.|
-|Clase de archivo|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Documento**. <br>Para el contenido de Exchange: **correo electrónico** o **datos adjuntos**. <br>Para el contenido de Teams o Yammer: **Conversaciones**.|
+|Clase de archivo|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Documento**. <br>Para el contenido de Exchange: **correo electrónico** o **datos adjuntos**. <br>Para el contenido de Teams o Yammer: **conversaciones**.|
 |Id. de archivo|FileId|File_ID|Identificador de documento único dentro del caso.|
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación a partir del sistema de archivos (solo se aplica a datos que no son de Office 365).|
 |Fecha de modificación del sistema de archivos||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a datos que no son Office 365).|
@@ -122,7 +120,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Clase Item|ItemClass|Item_class|Clase de elemento proporcionada por exchange server; por ejemplo, **IPM. Nota**|
 |Última modificación|LastModifiedDate|Doc_date_modified|Fecha de última modificación de los metadatos del documento.|
 |Id. de carga|LoadId|Load_ID|Identificador del conjunto de carga en el que se agregó el elemento a un conjunto de revisión.|
-|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación desde la que se originaron los documentos.<p>**Datos importados**: datos no Office 365<br>**Teams**: Microsoft Teams<br>**Exchange**: buzones de Exchange<br>**SharePoint**: sitios de SharePoint<br>**OneDrive**: cuentas de OneDrive|
+|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación desde la que se originaron los documentos.<p>**Datos importados**: datos no Office 365<br>**Teams** : Microsoft Teams<br>**Exchange** : buzones de Exchange<br>**SharePoint** : sitios de SharePoint<br>**OneDrive** : cuentas de OneDrive|
 |Nombre de ubicación|LocationName|Location_name|Cadena que identifica el origen del elemento. Para el intercambio, esta será la dirección SMTP del buzón; para SharePoint y OneDrive, la dirección URL de la colección de sitios.|
 |||Marked_as_pivot|Este archivo es la dinámica de un conjunto casi duplicado.|
 |Marcado como representativo|MarkAsRepresentative||Un documento de cada conjunto de duplicados exactos se marca como representantes.|
@@ -137,10 +135,10 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Ordenación de ND/ET: exclusión de datos adjuntos|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenación del conjunto de subprocesos de correo electrónico (ET) y conjunto casi duplicado (ND). Este campo se usa para una ordenación eficaz en tiempo de revisión. Una **D** tiene el prefijo de conjuntos de ND y una **E** se anteponga a los conjuntos ET.|
 |Ordenación de ND/ET: incluir datos adjuntos|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenación de un conjunto de subprocesos de correo electrónico (ET) y un conjunto casi duplicado (ND). Este campo se usa para una ordenación eficaz en tiempo de revisión. Una **D** tiene el prefijo de conjuntos de ND y una **E** se anteponga a los conjuntos ET. Cada elemento de correo electrónico de un conjunto et va seguido de sus datos adjuntos adecuados.|
 |Conjunto casi duplicado||ND_set|Los elementos que son similares al documento dinámico comparten el mismo ND_set.|
-|Autores de O365||O365_authors|Autor de SharePoint.|
-|O365 creado por||O365_created_by|Creado por a partir de SharePoint.|
-|Fecha de creación de O365||O365_date_created|Fecha de creación a partir de SharePoint.|
-|O365ModifiedDate||O365_date_modified|La fecha en que se modificó un documento (o versión del documento) recopilado de SharePoint o OneDrive para la Empresa. Esta es la misma fecha de modificación que la que se muestra en el historial de versiones del SharePoint y OneDrive experiencia del usuario.|
+|Autores de O365||O365_authors|Crear desde SharePoint.|
+|O365 creado por||O365_created_by|Creado por desde SharePoint.|
+|Fecha de creación de O365||O365_date_created|Fecha de creación desde SharePoint.|
+|O365ModifiedDate||O365_date_modified|La fecha en que se modificó un documento (o versión del documento) recopilado de SharePoint o OneDrive para la Empresa. Esta es la misma fecha de modificación que la que se muestra en el historial de versiones de la experiencia de usuario de SharePoint y OneDrive.|
 |O365 modificado por||O365_modified_by|Modificado por desde SharePoint o OneDrive.|
 |Otros custodios|DedupedCustodians|Deduped_custodians|Lista de custodios de documentos que son duplicados exactos (por correo electrónico, en función del contenido; para documentos, basados en hash).|
 |Otros identificadores de archivo|DedupedFileIds|Deduped_file_IDs|Lista de identificadores de archivo de documentos que son duplicados exactos (para correo electrónico, en función del contenido; para documentos, basados en hash).|
@@ -175,17 +173,17 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Subject|Subject|Email_subject|Asunto del mensaje.|
 |Asunto o título|SubjectTitle||Campo calculado compuesto por el asunto o el título del elemento.|
 |Etiquetas|Etiquetas|Etiquetas|Etiquetas aplicadas en un conjunto de revisión.|
-|Nombre del canal|Canal|ChannelName|Este es el nombre del canal Teams. Solo se aplica a Microsoft Teams contenido.|
-|Nombre del equipo|TeamName|TeamName|**Teams:** Nombre del equipo<br>**Yammer:** nombre Community|
+|Nombre del canal|Canal|ChannelName|Este es el nombre del canal de Teams. Solo se aplica al contenido de Microsoft Teams.|
+|Nombre del equipo|TeamName|TeamName|**Equipos:** Nombre del equipo<br>**Yammer:** Nombre de la comunidad|
 |Lista de temas|ThemesList|Themes_list|Lista de temas calculada para el análisis.|
-|Título|Título|Doc_title|Título de los metadatos del documento. Título de los metadatos del documento. Para Teams y Yammer contenido, este es el valor de la propiedad ConversationName.|
+|Título|Título|Doc_title|Título de los metadatos del documento. Título de los metadatos del documento. Para el contenido de Teams y Yammer, este es el valor de la propiedad ConversationName.|
 |To|To|Email_to|Campo para los tipos de mensaje. El formato es **DisplayName\<SmtpAddress>**|
 |Único en el conjunto de correo electrónico|UniqueInEmailSet||**False** si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico.|
 |Id. de grupo de versiones||Version_Group_Id|Agrupa las distintas versiones del mismo documento.|
-|VersionNumber||Version_Number|Número de versión de un documento recopilado de SharePoint o OneDrive para la Empresa. Este es el mismo número de versión que el que se muestra en el historial de versiones del SharePoint y OneDrive experiencia del usuario.|
+|VersionNumber||Version_Number|Número de versión de un documento recopilado de SharePoint o OneDrive para la Empresa. Este es el mismo número de versión que el que se muestra en el historial de versiones de la experiencia de usuario de SharePoint y OneDrive.|
 |Se corrigió|WasRemediated|Was_Remediated|**True** si el elemento se corrigió; de lo contrario, **False**.|
 |Word count|WordCount|Word_count|Número de palabras en el elemento.|
 |||||
 
 > [!NOTE]
-> Para obtener más información sobre las propiedades que se pueden buscar al buscar Office 365 ubicaciones de contenido al recopilar datos para un caso de eDiscovery (Premium), vea [Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
+> Para obtener más información sobre las propiedades que se pueden buscar al buscar Office 365 ubicaciones de contenido al recopilar datos para un caso de eDiscovery (Premium), vea Consultas de [palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).

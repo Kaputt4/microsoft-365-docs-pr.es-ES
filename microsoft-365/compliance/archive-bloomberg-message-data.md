@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de datos para importar y archivar datos desde la herramienta de correo electrónico bloomberg message en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: f13fcad1586776711cfc726ab633c411f2eaa383
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores pueden configurar un conector de datos para importar y archivar datos desde la herramienta de correo electrónico bloomberg message en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como suspensión legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 43dd41c8a0d1aa438ed978e86fc0a45da01d7835
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078362"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630805"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configuración de un conector para archivar los datos del mensaje de Bloomberg
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector de datos en el portal de cumplimiento Microsoft Purview para importar y archivar datos de correo electrónico de servicios financieros desde la herramienta [de colaboración de mensajes de Bloomberg](https://www.bloomberg.com/professional/product/collaboration/). Después de configurar y configurar un conector, se conecta al sitio ftp seguro (SFTP) de Bloomberg de su organización una vez al día e importa elementos de correo electrónico a buzones de Correo de Microsoft 365.
 
-Use un conector de datos en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de correo electrónico de servicios financieros desde la herramienta [de colaboración de mensajes de Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Después de configurar y configurar un conector, se conecta al sitio ftp seguro (SFTP) de Bloomberg de su organización una vez al día e importa elementos de correo electrónico a buzones de correo en Microsoft 365.
-
-Una vez que los datos del mensaje de Bloomberg se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado local, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Bloomberg Message. Por ejemplo, puede buscar mensajes de correo electrónico de Bloomberg Message mediante la herramienta de búsqueda de contenido o asociar el buzón que contiene los datos del mensaje de Bloomberg con un custodio en un caso de eDiscovery (Premium). El uso de un conector de mensajes de Bloomberg para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez almacenados los datos del mensaje de Bloomberg en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado local, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Bloomberg Message. Por ejemplo, puede buscar mensajes de correo electrónico de Bloomberg Message mediante la herramienta de búsqueda de contenido o asociar el buzón que contiene los datos del mensaje de Bloomberg con un custodio en un caso de eDiscovery (Premium). El uso de un conector de mensajes de Bloomberg para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-bloomberg-message-data"></a>Información general sobre el archivado de datos de mensajes de Bloomberg
 
-En la información general siguiente se explica el proceso de uso de un conector para archivar los datos de Bloomberg Message en Microsoft 365.
+En la información general siguiente se explica el proceso de uso de un conector para archivar los datos del mensaje de Bloomberg en Microsoft 365.
 
 ![Proceso de importación y archivo de mensajes de Bloomberg.](../media/BloombergMessageArchiving.png)
 
@@ -37,11 +35,11 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 2. Una vez cada 24 horas, los mensajes de correo electrónico de Bloomberg Message se copian en el sitio de Bloomberg SFTP.
 
-3. El conector de mensajes de Bloomberg que se crea en el portal de cumplimiento se conecta al sitio de Bloomberg SFTP todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área de Azure Storage segura en la nube de Microsoft.
+3. El conector de mensajes de Bloomberg que se crea en el portal de cumplimiento se conecta al sitio DE SFTP de Bloomberg todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa los elementos de mensaje de correo electrónico al buzón de un usuario específico. Se crea una nueva carpeta denominada BloombergMessage en el buzón de correo del usuario específico y los elementos se importarán a ella.
 
-   Para ello, el conector usa el valor de la propiedad CorporateEmailAddress. Cada mensaje de correo electrónico contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de correo electrónico. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene un UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario de la organización. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de correo electrónico, el conector examinará primero el archivo de asignación personalizada. Si no encuentra un usuario Microsoft 365 válido que se corresponda con el UUID de Bloomberg de un usuario, el conector usa la propiedad *CorporateEmailAddress* del elemento de correo electrónico. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizada o en la propiedad *CorporateEmailAddress* del elemento de correo electrónico, el elemento no se importará.
+   Para ello, el conector usa el valor de la propiedad CorporateEmailAddress. Cada mensaje de correo electrónico contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de correo electrónico. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene un UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario de la organización. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de correo electrónico, el conector examinará primero el archivo de asignación personalizada. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID de Bloomberg de un usuario, el conector usa la propiedad *CorporateEmailAddress* del elemento de correo electrónico. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizada o en la propiedad *CorporateEmailAddress* del elemento de correo electrónico, el elemento no se importará.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
@@ -53,7 +51,7 @@ Algunos de los pasos de implementación necesarios para archivar los datos del m
 
 - Suscríbase a [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Esto es necesario para que pueda iniciar sesión en Bloomberg Anywhere para acceder al sitio de Bloomberg SFTP que tiene que configurar.
 
-- Configure un sitio de Bloomberg SFTP (protocolo seguro de transferencia de archivos). Después de trabajar con Bloomberg para configurar el sitio SFTP, los datos de Bloomberg Message se cargan en el sitio SFTP todos los días. El conector que cree en el paso 2 se conecta a este sitio SFTP y transfiere los datos de correo electrónico a Microsoft 365 buzones. SFTP también cifra los datos del mensaje de Bloomberg que se envían a los buzones durante el proceso de transferencia.
+- Configure un sitio de Bloomberg SFTP (protocolo seguro de transferencia de archivos). Después de trabajar con Bloomberg para configurar el sitio SFTP, los datos de Bloomberg Message se cargan en el sitio SFTP todos los días. El conector que cree en el paso 2 se conecta a este sitio SFTP y transfiere los datos de correo electrónico a buzones de Microsoft 365. SFTP también cifra los datos del mensaje de Bloomberg que se envían a los buzones durante el proceso de transferencia.
 
   Para obtener información sobre Bloomberg SFTP (también llamado *BB-SFTP*):
 
@@ -73,7 +71,7 @@ Algunos de los pasos de implementación necesarios para archivar los datos del m
 
 - El conector bloomberg message puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos en el sitio SFTP, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al usuario que crea un conector de mensajes de Bloomberg en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea un conector de mensajes de Bloomberg en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) se le debe asignar el rol de Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="set-up-a-connector-using-public-keys"></a>Configuración de un conector mediante claves públicas
 
@@ -81,7 +79,7 @@ Los pasos de esta sección muestran cómo configurar un conector de mensajes de 
 
 ### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Paso 1: Obtener claves públicas PGP y SSH
 
-El primer paso es obtener una copia de las claves públicas PGP y SSH. Estas claves se usan en el paso 2 para configurar el sitio de Bloomberg SFTP para permitir que el conector (que se crea en el paso 3) se conecte al sitio SFTP y transfiera los datos de correo electrónico del mensaje de Bloomberg a Microsoft 365 buzones. También obtendrá una dirección IP en este paso, que usará al configurar el sitio de Bloomberg SFTP.
+El primer paso es obtener una copia de las claves públicas PGP y SSH. Estas claves se usan en el paso 2 para configurar el sitio de Bloomberg SFTP para permitir que el conector (que se crea en el paso 3) se conecte al sitio SFTP y transfiera los datos de correo electrónico del mensaje bloomberg a buzones de Microsoft 365. También obtendrá una dirección IP en este paso, que usará al configurar el sitio de Bloomberg SFTP.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
@@ -114,14 +112,14 @@ El primer paso es obtener una copia de las claves públicas PGP y SSH. Estas cla
 > [!NOTE]
 > Si su organización ha configurado previamente un sitio SFTP de Bloomberg para archivar datos de Instant Bloomberg mediante claves PGP y SSH públicas, no es necesario configurar otro. Puede especificar el mismo sitio SFTP al crear el conector en el paso 3.
 
-El siguiente paso es usar las claves públicas PGP y SSH y la dirección IP que obtuvo en el paso 1 para configurar el cifrado PGP y la autenticación SSH para el sitio SFTP de Bloomberg. Esto permite que el conector de mensajes de Bloomberg que crea en el paso 3 se conecte al sitio DE SFTP de Bloomberg y transfiera los datos de Bloomberg Message a Microsoft 365. Debe trabajar con el servicio de atención al cliente de Bloomberg para configurar su sitio de Bloomberg SFTP. Póngase en contacto con [el servicio de atención al cliente de Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) para obtener ayuda.
+El siguiente paso es usar las claves públicas PGP y SSH y la dirección IP que obtuvo en el paso 1 para configurar el cifrado PGP y la autenticación SSH para el sitio SFTP de Bloomberg. Esto permite que el conector bloomberg message que se crea en el paso 3 se conecte al sitio DE SFTP de Bloomberg y transfiera los datos de Bloomberg Message a Microsoft 365. Debe trabajar con el servicio de atención al cliente de Bloomberg para configurar su sitio de Bloomberg SFTP. Póngase en contacto con [el servicio de atención al cliente de Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) para obtener ayuda.
 
 > [!IMPORTANT]
 > Bloomberg recomienda adjuntar los tres archivos que descargó en el paso 1 a un mensaje de correo electrónico y enviarlo a su equipo de soporte al cliente cuando trabaje con ellos para configurar su sitio de Bloomberg SFTP.
 
 ### <a name="step-3-create-a-bloomberg-message-connector"></a>Paso 3: Crear un conector de mensajes de Bloomberg
 
-El último paso es crear un conector bloomberg message en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de Bloomberg SFTP y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes en Microsoft 365.
+El último paso es crear un conector bloomberg message en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de Bloomberg SFTP y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
@@ -153,10 +151,10 @@ El último paso es crear un conector bloomberg message en el portal de cumplimie
 
      - **Solo usuarios en suspensión por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones están en suspensión por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, consulte [Creación de una suspensión por litigio](create-a-litigation-hold.md).
 
-9. En la página **Map Bloomberg Message users to Microsoft 365 users (Asignar mensajes de Bloomberg para Microsoft 365 usuarios**), habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
+9. En la página **Asignar mensajes de Bloomberg a usuarios de Microsoft 365** , habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
 
    > [!NOTE]
-   > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón de correo del usuario específico y los elementos se importarán a ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir la asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de mensaje, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
+   > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón de correo del usuario específico y los elementos se importarán a ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir la asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de mensaje, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
 
 10. Haga clic en **Siguiente**, revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
@@ -195,7 +193,7 @@ Debe trabajar con el servicio de atención al cliente de Bloomberg para configur
 
 ### <a name="step-2-create-a-bloomberg-message-connector"></a>Paso 2: Crear un conector de mensajes de Bloomberg
 
-Una vez configurado el sitio DE SFTP de Bloomberg, el siguiente paso es crear un conector de mensajes de Bloomberg en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de Bloomberg SFTP y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes en Microsoft 365. Para completar este paso, asegúrese de tener copias de las mismas claves privadas y contraseñas de clave que usó para configurar el sitio de Bloomberg SFTP.
+Una vez configurado el sitio DE SFTP de Bloomberg, el siguiente paso es crear un conector de mensajes de Bloomberg en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de Bloomberg SFTP y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes de Microsoft 365. Para completar este paso, asegúrese de tener copias de las mismas claves privadas y contraseñas de clave que usó para configurar el sitio de Bloomberg SFTP.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
@@ -237,10 +235,10 @@ Una vez configurado el sitio DE SFTP de Bloomberg, el siguiente paso es crear un
 
      - **Solo usuarios en suspensión por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones están en suspensión por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, consulte [Creación de una suspensión por litigio](create-a-litigation-hold.md).
 
-9. En la página **Map Bloomberg Message users to Microsoft 365 users (Asignar mensajes de Bloomberg para Microsoft 365 usuarios**), habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
+9. En la página **Asignar mensajes de Bloomberg a usuarios de Microsoft 365** , habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
 
    > [!NOTE]
-   > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón de correo del usuario específico y los elementos se importarán a ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir la asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de mensaje, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
+   > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón de correo del usuario específico y los elementos se importarán a ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir la asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de mensaje, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
 
 10. Haga clic en **Siguiente**, revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 

@@ -19,18 +19,16 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015800"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626587"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
+las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP) tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 
 ## <a name="policy-templates"></a>Plantillas de directiva 
 
@@ -105,13 +103,13 @@ Una directiva DLP puede buscar y proteger elementos que contienen información c
 
 |Ubicación  |Incluir o excluir ámbito  |Estado de los datos  |Requisitos previos adicionales |
 |---------|---------|---------|---------|
-|Exchange correo electrónico en línea |grupo de distribución | datos en movimiento| No |
-|SharePoint sitios en línea   |sites       | datos en reposo </br> datos en uso | No|
+|Correo electrónico de Exchange en línea |grupo de distribución | datos en movimiento| No |
+|Sitios en línea de SharePoint   |sites       | datos en reposo </br> datos en uso | No|
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |datos en reposo </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
 |Microsoft Defender for Cloud Apps   | instancia de aplicación en la nube       |datos en reposo         | - [Uso de directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Dispositivos  |usuario o grupo         |datos en reposo </br>  datos en uso </br>  datos en movimiento         |- [Más información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md) </br>- [Comenzar con prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md) </br>- [Configuración del proxy de dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repositorios locales (recursos compartidos de archivos y SharePoint)    |Repositorio         | datos en reposo         | - [Más información sobre el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md) </br> - [Comenzar con el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Dispositivos  |usuario o grupo         |datos en reposo </br>  datos en uso </br>  datos en movimiento         |- [Más información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md) </br>- [Configuración del proxy de dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repositorios locales (recursos compartidos de archivos y SharePoint)    |Repositorio         | datos en reposo         | - [Más información sobre el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md) </br> - [Introducción al analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| Espacios | datos en uso | No|
 
 Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
@@ -125,14 +123,14 @@ Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una direc
 Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de información confidencial (SIT), con una etiqueta de confidencialidad o con una etiqueta de retención. Cada ubicación admite diferentes métodos para definir contenido confidencial. Al combinar ubicaciones en una directiva, la forma en que se puede definir el contenido puede cambiar a partir de cómo se puede definir mediante una sola ubicación. 
 
 > [!IMPORTANT]
-> Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, al seleccionar solo SharePoint sitios, la directiva admitirá la detección de elementos confidenciales por uno o varios de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar SharePoint sitios ***y*** Teams ubicaciones de mensajes de chat y canal, la directiva solo admitirá la detección de elementos confidenciales por parte de SIT.
+> Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, al seleccionar solo sitios de SharePoint, la directiva admitirá la detección de elementos confidenciales por uno o varios de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar sitios de SharePoint ***y*** ubicaciones de mensajes de chat y canal de Teams, la directiva solo admitirá la detección de elementos confidenciales por SIT.
 
 |Ubicación| El contenido se puede definir mediante SIT| El contenido se puede definir como etiqueta de confidencialidad| El contenido se puede definir mediante la etiqueta de retención.|
 |---------|---------|---------|---------|
-|Exchange correo electrónico en línea|Sí| Sí| No|
-|SharePoint sitios en línea| Sí| Sí| Sí|
+|Correo electrónico de Exchange en línea|Sí| Sí| No|
+|Sitios en línea de SharePoint| Sí| Sí| Sí|
 |Cuentas de OneDrive para la Empresa| Sí| Sí| Sí|
-|mensajes de chat y canal de Teams | Sí| No| No|
+|Mensajes de chat y canal de Teams | Sí| No| No|
 |Dispositivos |Sí | Sí|  No|
 |Microsoft Defender for Cloud Apps | Sí| Sí| Sí|
 |Repositorios locales| Sí| Sí| No|
@@ -233,7 +231,7 @@ Los SIT tienen un [**nivel de confianza**](https://www.microsoft.com/videoplayer
 
 Las opciones de contexto disponibles cambian en función de la ubicación que elija. Si selecciona varias ubicaciones, solo estarán disponibles las condiciones que las ubicaciones tienen en común.
 
-##### <a name="conditions-exchange-supports"></a>Condiciones Exchange admite
+##### <a name="conditions-exchange-supports"></a>Condiciones que admite Exchange
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -275,7 +273,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 - El tipo de mensaje es
 - La importancia del mensaje es
 
-##### <a name="conditions-sharepoint-supports"></a>Condiciones SharePoint admite
+##### <a name="conditions-sharepoint-supports"></a>Condiciones que admite SharePoint
  
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -287,7 +285,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 - La propiedad del documento es
 - La extensión de archivo es
 
-##### <a name="conditions-onedrive-accounts-supports"></a>Condiciones OneDrive cuentas admite
+##### <a name="conditions-onedrive-accounts-supports"></a>Condiciones que admiten las cuentas de OneDrive
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -299,7 +297,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 - La propiedad del documento es
 - La extensión de archivo es
 
-##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Condiciones Teams chat y mensajes de canal admiten
+##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Condiciones que admite el chat de Teams y los mensajes de canal
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -368,9 +366,9 @@ la excepción sería:
 
 ### <a name="actions"></a>Acciones 
 
-Cualquier elemento que lo realice a través de los filtros de ***condiciones** _ _*_inclusivos y excepciones exclusivas_*_ tendrá las _*_acciones_*_ definidas en la regla que se le aplica. Tendrá que configurar las opciones necesarias para admitir la acción. Por ejemplo, si selecciona Exchange con la acción _ *Restringir acceso o cifrar el contenido en Microsoft 365 ubicaciones**, debe elegir entre estas opciones:
+Cualquier elemento que lo realice a través de los filtros de ***condiciones** _ _*_inclusivos y excepciones exclusivas_*_ tendrá las _*_acciones_*_ definidas en la regla que se le aplica. Tendrá que configurar las opciones necesarias para admitir la acción. Por ejemplo, si selecciona Exchange con la acción _ *Restringir acceso o cifrar el contenido en ubicaciones de Microsoft 365**, debe elegir entre estas opciones:
 
-- Impedir que los usuarios accedan a contenido compartido de SharePoint, OneDrive y Teams
+- Impedir que los usuarios accedan al contenido compartido de SharePoint, OneDrive y Teams
     - Bloquear a todos. Solo el propietario del contenido, el último modificador y el administrador del sitio seguirán teniendo acceso
     - Bloquee solo a personas de fuera de la organización. Los usuarios de la organización seguirán teniendo acceso.
 - Cifrar mensajes de correo electrónico (solo se aplica al contenido de Exchange)
@@ -378,11 +376,11 @@ Cualquier elemento que lo realice a través de los filtros de ***condiciones** _
 Las acciones que están disponibles en una regla dependen de las ubicaciones que se han seleccionado. Si selecciona solo una ubicación a la que se va a aplicar la directiva, las acciones disponibles se enumeran a continuación.
 
 > [!IMPORTANT]
-> Para SharePoint los documentos de ubicaciones en línea y OneDrive para la Empresa se bloquearán proactivamente justo después de la detección de información confidencial, independientemente de si el documento se comparte o no, para todos los usuarios externos, mientras que los usuarios internos seguirán teniendo acceso al documento.
+> Para SharePoint Online y OneDrive para la Empresa los documentos de ubicaciones se bloquearán proactivamente justo después de la detección de información confidencial, independientemente de si el documento se comparte o no, para todos los usuarios externos, mientras que los usuarios internos seguirán teniendo acceso al documento.
 
-#### <a name="exchange-location-actions"></a>Exchange acciones de ubicación
+#### <a name="exchange-location-actions"></a>Acciones de ubicación de Exchange
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 - Establecer encabezados
 - Quitar encabezado
 - Redirigir el mensaje a usuarios específicos
@@ -397,17 +395,17 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 - Modificar asunto de correo electrónico
 - Agregar declinación de responsabilidades html
 
-#### <a name="sharepoint-sites-location-actions"></a>SharePoint acciones de ubicación de sitios
+#### <a name="sharepoint-sites-location-actions"></a>Acciones de ubicación de sitios de SharePoint
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 
-#### <a name="onedrive-account-location-actions"></a>OneDrive acciones de ubicación de la cuenta
+#### <a name="onedrive-account-location-actions"></a>Acciones de ubicación de la cuenta de OneDrive
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 
-#### <a name="teams-chat-and-channel-messages-actions"></a>Teams acciones chat y mensajes de canal
+#### <a name="teams-chat-and-channel-messages-actions"></a>Acciones de chat y mensajes de canal de Teams
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 
 #### <a name="devices-actions"></a>Acciones de dispositivos
 
@@ -417,7 +415,7 @@ Para usar esta configuración, debe configurar opciones en **la configuración d
 
 La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para más información, consulte [Actividades de punto de conexión sobre las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-Al seleccionar **Auditar o restringir actividades en Windows dispositivos**, puede restringir las actividades de usuario por dominio de servicio o explorador y limitar las acciones que dlp realiza:
+Al seleccionar **Auditar o restringir actividades en dispositivos Windows**, puede restringir las actividades de usuario por dominio de servicio o explorador y limitar las acciones que dlp realiza:
 
 - Todas las aplicaciones
 - Mediante una lista de aplicaciones restringidas que defina
@@ -435,7 +433,7 @@ Con la opción **Actividades de archivo para todas las aplicaciones** , seleccio
 - **Copia en una unidad extraíble USB** 
 - **Copia en un recurso compartido de red**
 - **Print**
-- **Copiar o mover mediante una aplicación de Bluetooth no permitida**
+- **Copiar o mover mediante una aplicación Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
 
 
@@ -457,7 +455,7 @@ Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endp
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>acciones de Microsoft Defender for Cloud Apps
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 - Restricción de aplicaciones de terceros
 
 #### <a name="on-premises-repositories-actions"></a>Acciones de repositorios locales
@@ -473,32 +471,32 @@ Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endp
 
 Si selecciona Exchange y cualquier otra ubicación única a la que se va a aplicar la directiva, el
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 
 y
 
-- todas las acciones de la ubicación que no es Exchange
+- todas las acciones para la ubicación que no es de Exchange
 
 las acciones estarán disponibles.
 
-Si selecciona dos o más ubicaciones no Exchange a las que se va a aplicar la directiva, el
+Si selecciona dos o más ubicaciones que no son de Exchange a las que se va a aplicar la directiva, el
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 
 Y
 
-- todas las acciones para ubicaciones que no son Exchange 
+- todas las acciones para ubicaciones que no son de Exchange 
 
 las acciones estarán disponibles.
 
 Por ejemplo, si selecciona Exchange y Dispositivos como ubicaciones, estas acciones estarán disponibles:
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 - Auditoría o restricción de actividades en dispositivos Windows
 
 Si selecciona Dispositivos y Microsoft Defender for Cloud Apps, estas acciones estarán disponibles:
 
-- Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
+- Restricción del acceso o cifrado del contenido en ubicaciones de Microsoft 365
 - Auditoría o restricción de actividades en dispositivos Windows
 - Restricción de aplicaciones de terceros
 
@@ -521,13 +519,31 @@ for where they are used/expected behavior-->
 
 Cuando un usuario intenta realizar una acción en un elemento confidencial en un contexto que cumple las condiciones y excepciones de una regla, puede informarle de ello a través de mensajes de correo electrónico de notificación de usuario y en elementos emergentes de sugerencias de directiva de contexto. Estas notificaciones son útiles porque aumentan el conocimiento y ayudan a educar a las personas sobre las directivas DLP de su organización.
 
-Por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un invitado.
+Por ejemplo, contenido como un libro de Excel en un sitio OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un invitado.
 
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!IMPORTANT]
 > - Los correos electrónicos de notificación se envían desprotegidos.
 > - Las notificaciones por correo electrónico solo se admiten para los servicios de Microsoft 365.
+
+#### <a name="email-notifications-support-by-selected-location"></a>Compatibilidad con notificaciones por correo electrónico por ubicación seleccionada
+
+|Ubicación seleccionada  |Notificaciones por correo electrónico admitidas  |
+|---------|---------|
+|Dispositivos     |- No compatible         |
+|Exchange y dispositivos     |- Compatible con Exchange </br>- No se admite para dispositivos  |
+|Exchange    |- Compatible        |
+|SharePoint + Dispositivos  |- Compatible con SharePoint </br>- No se admite para dispositivos         |
+|SharePoint    |- Compatible |
+|Exchange y SharePoint    |- Compatible con Exchange </br>- Compatible con SharePoint  |
+|Dispositivos + SharePoint + Exchange    |- No se admite para dispositivos </br>- Compatible con SharePoint </br> Compatible con Exchange |
+|Teams    |- No compatible |
+|OneDrive para la Empresa   |- Compatible         |
+|OneDrive para la Empresa y dispositivos     |- Compatible con OneDrive para la Empresa </br>- No se admite para dispositivos         |
+|Power-BI|- No compatible|
+|Microsoft Defender for Cloud Apps|- No compatible|
+|Repositorios locales|- No compatible|
 
 También puede proporcionar a los usuarios la opción de [invalidar la directiva](#user-overrides), de modo que no se bloqueen si tienen una necesidad empresarial válida o si la directiva detecta un falso positivo.
 
@@ -536,8 +552,11 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 - Exchange
 - SharePoint
 - OneDrive
-- chat y canal de Teams
+- Chat y canal de Teams
 - Defender for Cloud Apps
+
+
+
 
 
 Puede habilitar o deshabilitar las notificaciones de usuario para varias aplicaciones de Microsoft; consulte [Referencia de sugerencias de directivas de prevención de pérdida de datos](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference).
@@ -548,9 +567,9 @@ Puede habilitar o deshabilitar las notificaciones de usuario para varias aplicac
 
 y personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
 
-![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para Exchange, SharePoint, OneDrive, Teams chat y canal y aplicaciones Defender for Cloud](../media/dlp-user-notification-non-devices.png)
+![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para Exchange, SharePoint, OneDrive, Chat y canal de Teams y Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Canal y aplicaciones de Defender for Cloud, además de la opción de personalizar el título y el contenido de la notificación que aparece en el dispositivo Windows 10. .
+Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Channel y Defender for Cloud Apps, además de la opción de personalizar el título y el contenido de la notificación que aparece en el dispositivo Windows 10.
 
 ![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
 
@@ -618,9 +637,22 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
+#### <a name="blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business"></a>Bloqueo y notificaciones en SharePoint Online y OneDrive para la Empresa
+
+En esta tabla se muestra el comportamiento de bloqueo y notificación dlp para las directivas que tienen como ámbito SharePoint Online y OneDrive para la Empresa.
+
+|Condiciones  |Configuración de acciones |Configuración de notificación de usuario|Configuración de informes de incidentes |Comportamiento de bloqueo y notificación|
+|---------|---------|---------|---------|---------|
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**     |No se configura ninguna acción         |- **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         |- **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** establecida **en Activado** </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**         |- Las notificaciones solo se enviarán cuando un archivo se comparta con un usuario externo y un usuario externo acceda al archivo.  |
+|- **El contenido se comparte desde Microsoft 365** </br>- **solo con personas dentro de mi organización**        | No se configura ninguna acción         |-  **Notificaciones de usuario establecidas** en **Activado**   </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva**  </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado    |  - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**       |- Las notificaciones se envían cuando se carga un archivo |
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**    | - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Se selecciona Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OndeDrive y Teams** . </br>- **Se selecciona Bloquear solo a personas ajenas a la organización**          |- **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado  |  - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**             | - El acceso a un archivo confidencial se bloquea en cuanto se carga </br>- Notificaciones enviadas cuando el contenido se comparte desde Microsoft 365 con personas ajenas a mi organización         |
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización** |  - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Se selecciona Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OndeDrive y Teams** . </br>- **Bloquear a todos está** seleccionado        | - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         | - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**        |Las notificaciones se envían cuando un archivo se comparte con un usuario externo y un usuario externo accede a ese archivo.         |
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**     |- Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Bloquear solo a las personas a las que se les dio acceso al contenido mediante la opción "Cualquiera con el vínculo"** está seleccionada.         |  - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios de Office 365 servicio con una sugerencia de directiva**.  </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado     |- **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado**   </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**       |Las notificaciones se envían en cuanto se carga un archivo         |
+
+
 ### <a name="user-overrides"></a>Invalidaciones de usuario
 
-La intención de **las invalidaciones de usuario** es proporcionar a los usuarios una manera de omitir, con justificación, las acciones de bloqueo de directiva DLP en elementos confidenciales de Exchange, SharePoint, OneDrive o Teams para que puedan continuar con su trabajo. Las invalidaciones de usuario solo se habilitan cuando **notificar a los usuarios de Office 365 servicios con una sugerencia de directiva** está habilitado, por lo que las invalidaciones de usuario van de la mano con notificaciones y sugerencias de directiva. 
+La intención de **las invalidaciones de usuario** es proporcionar a los usuarios una manera de omitir, con justificación, las acciones de bloqueo de directiva DLP en elementos confidenciales en Exchange, SharePoint, OneDrive o Teams para que puedan continuar con su trabajo. Las invalidaciones de usuario solo se habilitan cuando **notificar a los usuarios de Office 365 servicios con una sugerencia de directiva** está habilitado, por lo que las invalidaciones de usuario van de la mano con notificaciones y sugerencias de directiva. 
 
 ![Opciones de invalidación de usuario para una directiva DLP](../media/dlp-user-overrides.png)
 
@@ -657,7 +689,7 @@ Las alertas se pueden enviar cada vez que una actividad coincide con una regla, 
 
 ![enviar una alerta cada vez que una regla coincida o se agregue con el tiempo en menos informes](../media/dlp-incident-reports-aggregation.png)
 
-DLP examina el correo electrónico de forma diferente a SharePoint elementos en línea o OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP ***no*** analiza ni busca coincidencias en elementos de correo electrónico anteriormente existentes que estén almacenados en un buzón de correo o archivo.
+DLP examina el correo electrónico de forma diferente de lo que hace SharePoint Online o OneDrive para la Empresa elementos. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP ***no*** analiza ni busca coincidencias en elementos de correo electrónico anteriormente existentes que estén almacenados en un buzón de correo o archivo.
 
 ### <a name="additional-options"></a>Opciones adicionales
 

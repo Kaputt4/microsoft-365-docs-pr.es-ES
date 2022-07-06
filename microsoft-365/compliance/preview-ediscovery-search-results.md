@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery (Estándar) en el panel de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099639"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628603"
 ---
 # <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de la búsqueda de eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos de Microsoft Purview (Estándar), puede obtener una vista previa de un ejemplo de los resultados devueltos por la búsqueda. La vista previa de elementos devueltos por la consulta de búsqueda puede ayudarle a determinar si la búsqueda devuelve los resultados que espera o si necesita cambiar la consulta de búsqueda y volver a ejecutar la búsqueda.
 

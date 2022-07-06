@@ -12,22 +12,20 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos subyacentes a la huella digital de documentos y cómo crear uno mediante PowerShell.
-ms.openlocfilehash: 3df4b7cf6f9fa09e81cf326cc58cc8114c025be9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1ad29126783b9d824789b06020b8f925be00ffbb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014484"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627633"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. En el portal de cumplimiento de Microsoft Purview, Document Fingerprinting facilita la protección de esta información mediante la identificación de formularios estándar que se usan en toda la organización. En este tema se describen los conceptos subyacentes a la huella digital de documentos y cómo crear uno mediante PowerShell.
+Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. En la portal de cumplimiento Microsoft Purview, la huella digital de documentos facilita la protección de esta información mediante la identificación de formularios estándar que se usan en toda la organización. En este tema se describen los conceptos subyacentes a la huella digital de documentos y cómo crear uno mediante PowerShell.
 
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Escenario básico para la creación de huella digital de documento
 
-La huella digital de documentos es una característica de prevención de pérdida de datos (DLP) de Microsoft Purview que convierte un formulario estándar en un tipo de información confidencial, que puede usar en las reglas de las directivas DLP. Por ejemplo, puede crear una huella digital de documento con base en una plantilla de patente en blanco y después crear una directiva DLP que detecte y bloquee todas las plantillas de patente salientes que incluyan contenido confidencial. Opcionalmente, puede configurar [sugerencias de directiva](use-notifications-and-policy-tips.md) para notificar a los remitentes que podrían enviar información confidencial y el remitente debe comprobar que los destinatarios están calificados para recibir las patentes. Este proceso funciona con cualquier formulario basado en texto que se use en la organización. Algunos ejemplos adicionales de formularios que puede cargar son:
+La huella digital de documentos es una característica de Prevención de pérdida de datos de Microsoft Purview (DLP) que convierte un formulario estándar en un tipo de información confidencial, que puede usar en las reglas de las directivas DLP. Por ejemplo, puede crear una huella digital de documento con base en una plantilla de patente en blanco y después crear una directiva DLP que detecte y bloquee todas las plantillas de patente salientes que incluyan contenido confidencial. Opcionalmente, puede configurar [sugerencias de directiva](use-notifications-and-policy-tips.md) para notificar a los remitentes que podrían enviar información confidencial y el remitente debe comprobar que los destinatarios están calificados para recibir las patentes. Este proceso funciona con cualquier formulario basado en texto que se use en la organización. Algunos ejemplos adicionales de formularios que puede cargar son:
 
 - Formularios de gobierno
 - Formularios de cumplimiento de Health Insurance Portability and Accountability Act (HIPAA)
@@ -41,7 +39,7 @@ Idealmente, la organización ya tiene una práctica de negocios establecida sobr
 Probablemente ya adivinó que los documentos no tienen huellas digitales reales, pero el nombre ayuda a explicar la característica. Del mismo modo que las huellas digitales de una persona tienen patrones únicos, los documentos tienen patrones de palabras únicos. Al cargar un archivo, DLP identifica el patrón de palabra único en el documento, crea una huella digital del documento basada en ese patrón y usa esa huella digital del documento para detectar documentos salientes que contienen el mismo patrón. Por ello, la carga de un formulario o plantilla crea el tipo más efectivo de huella digital de documento. Todas las personas que rellenan un formulario usan el mismo conjunto de palabras original y después agregan sus propias palabras al documento. Siempre que el documento saliente no esté protegido con contraseña y contenga todo el texto del formulario original, DLP puede determinar si el documento coincide con la huella digital del documento.
 
 > [!IMPORTANT]
-> Por ahora, DLP puede usar la huella digital de documentos como método de detección en Exchange solo en línea.
+> Por ahora, DLP puede usar la huella digital de documentos como método de detección solo en Exchange Online.
 
 El siguiente ejemplo muestra qué sucede si crea una huella digital de documento con base en una plantilla de patente, pero puede usar cualquier formulario como base para crear una huella digital de documento.
 
@@ -87,13 +85,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Ahora puede usar el cmdlet **Get-DlpSensitiveInformationType** para buscar todos los paquetes de reglas de clasificación de datos DLP y, en este ejemplo, "Contoso Customer Confidential" forma parte de la lista de paquetes de reglas de clasificación de datos.
 
-Por último, agregue el paquete de reglas de clasificación de datos "Contoso Customer Confidential" a una directiva DLP en el portal de cumplimiento de Microsoft Purview. En este ejemplo se agrega una regla a una directiva DLP existente denominada "ConfidentialPolicy".
+Por último, agregue el paquete de reglas de clasificación de datos "Contoso Customer Confidential" a una directiva DLP en el portal de cumplimiento Microsoft Purview. En este ejemplo se agrega una regla a una directiva DLP existente denominada "ConfidentialPolicy".
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-También puede usar el paquete de reglas de clasificación de datos en las reglas de flujo de correo en Exchange Online, como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Tenga en cuenta también que el paquete de reglas tarda tiempo en sincronizarse desde el portal de cumplimiento de Microsoft Purview al centro de administración de Exchange.
+También puede usar el paquete de reglas de clasificación de datos en las reglas de flujo de correo en Exchange Online, como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe [conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Tenga en cuenta también que el paquete de reglas tarda tiempo en sincronizarse desde el portal de cumplimiento Microsoft Purview al Centro de administración de Exchange.
 
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

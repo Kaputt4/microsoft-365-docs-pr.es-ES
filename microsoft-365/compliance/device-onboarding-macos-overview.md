@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Más información sobre la incorporación de dispositivos macOS a soluciones de cumplimiento
-ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 59ccb78060c7749f5690015dc4bab948a88e5222
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65014988"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630046"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos macOS a Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los dispositivos MacOS se pueden incorporar a las soluciones de Microsoft Purview mediante Intune o JAMF Pro. Los procedimientos de incorporación varían en función de la solución de administración que use. Si los dispositivos macOS ya se han incorporado a Microsoft Defender para punto de conexión (MDE), hay menos pasos. Consulte [Pasos siguientes](#next-steps) para obtener vínculos a los procedimientos adecuados para usted.
 
@@ -53,7 +51,7 @@ Si no está familiarizado con Insider Risk, debe familiarizarse con estos artíc
 Los dispositivos macOS ya deben administrarse a través de Intune o JAMF Pro.
  
 - Para incorporarse a Intune, consulte [Guía de implementación: Administración de dispositivos macOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) e [Inscripción de su Mac con Portal de empresa de Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Para incorporarse a JAMF Pro consulte la guía de [administradores de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) y la Guía de [instalación y configuración de JAMF Pro para Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/).
+- Para incorporarse a JAMF Pro, consulte la [guía de administradores de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) y la [Guía de instalación y configuración de JAMF Pro para Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/).
 <!--- Install the v95+ Edge browser on your macOS devices--> 
 
 ### <a name="supported-browsers"></a>Exploradores compatibles
@@ -67,7 +65,7 @@ DLP de punto de conexión admite estos exploradores en macOS Catalina 10.15 o po
 
 ## <a name="licensing-guidance"></a>Guía de licencias
 
-Consulte [Microsoft 365 guía de licencias para la protección de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Consulte la [guía de licencias de Microsoft 365 para la protección de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## <a name="activities-that-can-be-restricted-on-macos"></a>Actividades que se pueden restringir en macOS 
 
@@ -81,7 +79,7 @@ Una vez que un dispositivo macOS se incorpora a las soluciones de Microsoft Purv
 
 **Copiar en el Portapapeles** : cuando se aplica, esta acción bloquea, advierte o audita los datos del archivo protegido que se copia en un portapapeles en un dispositivo de punto de conexión. 
 
-**Upload a la nube**: esta acción bloquea, advierte o audita cuando se impide o permite cargar archivos protegidos en servicios en la nube en función de la lista de dominios permitidos o no permitidos en la configuración global. Cuando esta acción se establece para advertir o bloquear, otros exploradores (definidos en la lista de exploradores no permitidos en Configuración global) no pueden acceder al archivo. 
+**Cargar en la nube** : esta acción bloquea, advierte o audita cuando se impide o permite cargar archivos protegidos en los servicios en la nube en función de la lista de dominios permitidos o no permitidos en la configuración global. Cuando esta acción se establece para advertir o bloquear, otros exploradores (definidos en la lista de exploradores no permitidos en Configuración global) no pueden acceder al archivo. 
 
 **Acceso mediante aplicaciones no permitidas** : cuando se aplica, esta acción impide que las aplicaciones que se encuentran en la lista de aplicaciones no permitidas (tal como se define en Configuración global) accedan a archivos protegidos en un dispositivo de punto de conexión. Escenarios de ejemplo 
 
@@ -93,14 +91,14 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. Abra la página **Configuración** [del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) y elija **Habilitar supervisión de dispositivos**.
+1. Abra la página **Configuración** [de portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) y elija **Habilitar supervisión de dispositivos**.
 
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
 2. Abra la página de configuración del Centro de cumplimiento y elija **Activar la supervisión de dispositivos macOS**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 La incorporación de dispositivos a las soluciones de Microsoft Purview es necesaria para recibir telemetría del sensor DLP y aplicar directivas de prevención de pérdida de datos. 
 
@@ -108,8 +106,8 @@ Tema | Descripción
 :---|:---
 |[Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
 |[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
-|[Incorporación y apagado de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
-|[Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Incorporación y eliminación de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
+|[Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
 
 ## <a name="related-topics"></a>Temas relacionados

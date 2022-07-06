@@ -15,21 +15,19 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento, como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar la gobernanza de los datos de Twitter de su organización.
-ms.openlocfilehash: a928e24c73fcbb290bde2caa0f508610fc18728d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar la gobernanza de los datos de Twitter de su organización.
+ms.openlocfilehash: bdc678fe1240b4b82a47d5cd091ee309a8153daa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090969"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627765"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementación de un conector para archivar datos de Twitter
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de su organización a Microsoft 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, consulte [Configuración de un conector para archivar datos de Twitter ](archive-twitter-data-with-sample-connector.md).
 
-Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de la organización a Microsoft 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, consulte [Configuración de un conector para archivar datos de Twitter ](archive-twitter-data-with-sample-connector.md).
-
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
 1. Vaya a <https://portal.azure.com> e inicie sesión con las credenciales de una cuenta de administrador global.
 
@@ -37,7 +35,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 
-   ![Ve a Azure Active Directory.](../media/TCimage02.png)
+   ![Vaya a Azure Active Directory.](../media/TCimage02.png)
 
 3. En el panel de navegación izquierdo, haga clic en **Registros de aplicaciones (versión preliminar)** y, a continuación, haga clic en **Nuevo registro**.
 
@@ -59,18 +57,18 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Escriba el secreto y elija el período de expiración.](../media/TCimage08.png)
 
-8. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de aplicación AAD que se usa en pasos posteriores.
+8. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de aplicación de AAD que se usa en pasos posteriores.
 
    ![Copie y guarde el secreto.](../media/TCimage09.png)
 
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde GitHub en la cuenta de Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde GitHub en su cuenta de Azure
 
-1. Vaya a [este sitio GitHub](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) y haga clic en **Implementar en Azure**.
+1. Vaya a [este sitio de GitHub](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) y haga clic en **Implementar en Azure**.
 
     ![Vaya a la página principal de Azure.](../media/FBCimage11.png)
 
-2. Después de hacer clic en **Implementar en Azure**, se le redirigirá a una Azure Portal con una página de plantilla personalizada. Rellene los **detalles básicos** y **Configuración** y, a continuación, haga clic en **Comprar**.
+2. Después de hacer clic en **Implementar en Azure**, se le redirigirá a una Azure Portal con una página de plantilla personalizada. Rellene los **detalles Básicos** y **Configuración** y, a continuación, haga clic en **Comprar**.
 
    ![Haga clic en Crear un recurso y escriba cuenta de almacenamiento.](../media/FBCimage12.png)
 
@@ -88,7 +86,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 3. Una vez que la implementación se realice correctamente, la página tendrá un aspecto similar al de la captura de pantalla siguiente:
 
-    ![Haga clic en Storage y, a continuación, haga clic en Storage cuenta.](../media/FBCimage13.png)
+    ![Haga clic en Almacenamiento y, a continuación, en Cuenta de almacenamiento.](../media/FBCimage13.png)
 
 ## <a name="step-3-create-the-twitter-app"></a>Paso 3: Crear la aplicación de Twitter
 
@@ -141,7 +139,7 @@ La aplicación para desarrolladores de Twitter ya está lista para usarse.
 
    ![Haga clic en Configurar para mostrar la página de inicio de sesión.](../media/FBCimage42.png)
 
-3. En el cuadro Id. de inquilino, escriba o pegue el identificador de inquilino (que obtuvo en el paso 2). En el cuadro contraseña, escriba o pegue apiSecretKey (que obtuvo en el paso 2) y, a continuación, haga clic en **Establecer configuración Configuración** para mostrar la página de detalles de configuración.
+3. En el cuadro Id. de inquilino, escriba o pegue el identificador de inquilino (que obtuvo en el paso 2). En el cuadro contraseña, escriba o pegue APISecretKey (que obtuvo en el paso 2) y, a continuación, haga clic en **Establecer configuración** para mostrar la página de detalles de configuración.
 
    ![Inicie sesión con el identificador de inquilino y la clave secreta de API.](../media/TCimage35.png)
 
@@ -155,15 +153,15 @@ La aplicación para desarrolladores de Twitter ya está lista para usarse.
 
    - **Secreto de token de acceso de Twitter:** Secreto de token de acceso que creó en el paso 3.
 
-   - **AAD id. de aplicación:** el identificador de aplicación de la aplicación Azure Active Directory que creó en el paso 1
+   - **Id. de aplicación de AAD:** El identificador de aplicación de la aplicación de Azure Active Directory que creó en el paso 1
 
-   - **AAD secreto de aplicación:** valor del secreto APISecretKey que creó en el paso 1.
+   - **Secreto de aplicación de AAD:** Valor del secreto APISecretKey que creó en el paso 1.
 
 5. Haga clic en **Guardar** para guardar la configuración del conector.
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-compliance-portal"></a>Paso 5: Configurar un conector de Twitter en el portal de cumplimiento
 
-1. Vaya al portal de cumplimiento de Microsoft Purview y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**La página Conectores de datos**</a.
+1. Vaya a la portal de cumplimiento Microsoft Purview y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**La página Conectores de datos**</a.
 
 2. En la página **Conectores de datos** en **Twitter**, haga clic en **Ver**.
 
@@ -185,7 +183,7 @@ La aplicación para desarrolladores de Twitter ya está lista para usarse.
 
 6. Una vez validada correctamente la conexión, haga clic en **Siguiente**.
 
-7. En la página **Authorize Microsoft 365 to import data (Autorizar a Microsoft 365 importar datos**), escriba o pegue apiSecretKey de nuevo y, a continuación, haga clic en **Inicio de sesión de la aplicación web**.
+7. En la página **Authorize Microsoft 365 to import data (Autorizar a Microsoft 365 para importar datos** ), escriba o pegue apiSecretKey de nuevo y, a continuación, haga clic en  **Inicio de sesión de la aplicación web**.
 
 8. Haga clic en **Iniciar sesión con Twitter**.
 
@@ -199,7 +197,7 @@ La aplicación para desarrolladores de Twitter ya está lista para usarse.
 
 11. En la página **Establecer filtros** , puede aplicar un filtro para importar inicialmente elementos que tengan una determinada antigüedad. Seleccione una edad y, a continuación, haga clic en **Siguiente**.
 
-12. En la página **Elegir ubicación de almacenamiento**, escriba la dirección de correo electrónico de Microsoft 365 buzón al que se importarán los elementos de Twitter y, a continuación, haga clic en **Siguiente**.
+12. En la página **Elegir ubicación de almacenamiento** , escriba la dirección de correo electrónico del buzón de Microsoft 365 al que se importarán los elementos de Twitter y, a continuación, haga clic en **Siguiente**.
 
 13. Haga clic en **Siguiente** para revisar la configuración del conector y, a continuación, haga clic en **Finalizar** para completar la configuración del conector.
 

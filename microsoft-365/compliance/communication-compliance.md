@@ -1,6 +1,6 @@
 ---
 title: Obtener más información sobre el cumplimiento de las comunicaciones
-description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft Purview
+description: Más información sobre el cumplimiento de comunicaciones en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, cumplimiento, cumplimiento de comunicaciones
 f1.keywords:
 - NOCSH
@@ -21,21 +21,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: ba5778ccf00525d78da05127d41ffd3f52a4bf83
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810952"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626431"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
 > [!TIP]
 > *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cumplimiento de comunicaciones de Microsoft Purview es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o comunicaciones de terceros de su organización y realizar las acciones adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
+Cumplimiento de comunicaciones de Microsoft Purview es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y realizar las acciones adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
 
 Las directivas de Cumplimiento de comunicaciones en Microsoft 365 le ayudan a superar muchos desafíos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre los que se incluyen:
 
@@ -52,7 +50,7 @@ Para ver las presentaciones más recientes de Ignite para el cumplimiento de la 
 - [Fomentar una cultura de seguridad e inclusión con cumplimiento de las comunicaciones](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [Aprenda a reducir los riesgos de comunicación dentro de su organización.](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [Cumplimiento de los requisitos de cumplimiento normativo con cumplimiento de comunicaciones](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Mejor con Microsoft Teams: obtenga más información sobre las características nativas Teams integradas más recientes en cumplimiento de comunicaciones.](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [Mejor con Microsoft Teams: obtenga más información sobre las características integradas nativas más recientes de Teams en cumplimiento de comunicaciones.](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Para obtener información general rápida sobre el cumplimiento de las comunicaciones, consulte el vídeo [Detectar acoso en el área de trabajo y responder con cumplimiento de comunicaciones](https://youtu.be/z33ji7a7Zho) en el [canal Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -107,13 +105,13 @@ Los flujos de trabajo de corrección integrados le permiten identificar y tomar 
 - **Coincidencia de directivas de conversación**: los mensajes de las conversaciones se agrupan por coincidencias de directivas para proporcionarle más visibilidad sobre cómo se relacionan las conversaciones con las directivas de comunicación. Por ejemplo, la coincidencia de directivas de conversación en la vista *Alertas pendientes* mostrará automáticamente todos los mensajes de un canal de Teams que tengan coincidencias con la directiva de contenido inadecuado. No se mostrarán otros mensajes de la conversación que no coincidan con la directiva de contenido inadecuado.
 - **Resaltado de palabras clave**: Los términos que coinciden con las condiciones de la directiva se resaltan en la vista del texto del mensaje para ayudar a los revisores a localizar y corregir rápidamente las alertas de la directiva.
 - **Detección exacta y casi duplicada**: además de examinar los términos exactos que coinciden con las directivas de cumplimiento de comunicaciones, los grupos de detección de duplicados agrupan términos y mensajes textualmente similares para ayudar a acelerar el proceso de revisión.
-- **Reconocimiento óptico de caracteres (OCR) (versión preliminar):** escanee, detecte e investigue texto impreso y manuscrito dentro de imágenes incrustadas o adjuntas al correo electrónico o Microsoft Teams mensajes de chat.
+- **Reconocimiento óptico de caracteres (OCR) (versión preliminar):** escanee, detecte e investigue texto impreso y manuscrito dentro de imágenes incrustadas o adjuntas a mensajes de correo electrónico o de chat de Microsoft Teams.
 - **Nuevos filtros**: investigue y corrija las alertas de directiva más rápido con filtros de mensajes para varios campos, incluidos remitente, destinatario, fecha, dominios y muchos más.
 - **Vistas de mensaje mejoradas**: las acciones de investigación y corrección ahora son más rápidas con las nuevas vistas de texto y origen de mensajes. Los datos adjuntos de mensajes ahora se pueden ver para proporcionar un contexto completo al realizar acciones de corrección.
 - **Historial de usuarios**: vista histórica de todas las actividades de corrección de mensajes de usuario, como notificaciones y escalaciones anteriores para coincidencias de directivas, ahora proporciona a los revisores más contexto durante el proceso de flujo de trabajo de corrección. Las instancias de primera o repetición de coincidencias de directivas para los usuarios ahora se archivan y se pueden ver fácilmente.
 - **Notificación detectada por patrones**: muchas acciones de acoso e intimidación tienen lugar con el tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. El nuevo patrón de notificación detectada que se muestra en los detalles de la alerta ayuda a llamar la atención sobre estas alertas y este tipo de comportamiento.
 - **Traducción**: investigue rápidamente los detalles del mensaje en ocho idiomas mediante la compatibilidad con la traducción en el flujo de trabajo de corrección. Los mensajes de otros idiomas se convierten automáticamente en el idioma para mostrar del revisor.
-- **Detección de datos adjuntos**: examine, detecte e investigue el contenido vinculado (datos adjuntos modernos) de OneDrive y Microsoft Teams que coincidan con los clasificadores de directivas y las condiciones de los mensajes Microsoft Teams. El contenido de los datos adjuntos se extrae automáticamente en un archivo de texto para una revisión y acción detalladas.
+- **Detección de datos adjuntos**: examine, detecte e investigue el contenido vinculado (datos adjuntos modernos) de OneDrive y Microsoft Teams que coincidan con los clasificadores de directivas y las condiciones de los mensajes de Microsoft Teams. El contenido de los datos adjuntos se extrae automáticamente en un archivo de texto para una revisión y acción detalladas.
 
 ### <a name="actionable-insights"></a>Detalles accionables.
 
@@ -123,15 +121,14 @@ Los nuevos paneles interactivos de alertas, coincidencias de directivas, accione
 - **Paneles interactivos**: los nuevos paneles muestran las coincidencias de las directivas, las acciones pendientes y resueltas, y las tendencias por usuarios y directivas.
 - **Compatibilidad con la auditoría**: un registro completo de las actividades de directiva y revisión se exporta fácilmente desde el portal de cumplimiento Microsoft Purview para ayudar a admitir las solicitudes de revisión de auditoría.
 
-## <a name="integration-with-microsoft-365-services"></a>Integración con servicios Microsoft 365
+## <a name="integration-with-microsoft-365-services"></a>Integración con servicios de Microsoft 365
 
 Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en varios canales de comunicación para ayudarle a revisar y corregir rápidamente los problemas de cumplimiento:
 
-- **Microsoft Teams**: las comunicaciones de chat para canales [de Microsoft Teams](/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de comunicaciones como origen de canal independiente o con otros servicios de Microsoft 365. Tendrá que agregar manualmente usuarios individuales, grupos de distribución o canales de Microsoft Teams específicos al seleccionar usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones. Teams usuarios también pueden informar automáticamente de mensajes inadecuados en canales privados y grupales y chats para su revisión y corrección.
-- **Exchange Online**: todos los buzones hospedados en [Exchange Online](/Exchange/exchange-online) de la organización Microsoft 365 son aptos para el examen. Los correos electrónicos y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones están disponibles al instante para la supervisión y los informes de cumplimiento. Exchange Online ahora es un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
+- **Microsoft Teams**: las comunicaciones de chat para canales de [Microsoft Teams](/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de comunicaciones como origen de canal independiente o con otros servicios de Microsoft 365. Tendrá que agregar manualmente usuarios individuales, grupos de distribución o canales específicos de Microsoft Teams al seleccionar usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones. Los usuarios de Teams también pueden informar automáticamente de mensajes inadecuados en canales privados y grupales y chats para su revisión y corrección.
+- **Exchange Online**: todos los buzones hospedados en [Exchange Online](/Exchange/exchange-online) de la organización de Microsoft 365 son aptos para el examen. Los correos electrónicos y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones están disponibles al instante para la supervisión y los informes de cumplimiento. Exchange Online ahora es un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
 - **Yammer**: Los mensajes privados y las conversaciones de la comunidad pública en [Yammer](/yammer/yammer-landing-page) se admiten en las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en [modo nativo](/yammer/configure-your-yammer-network/overview-native-mode) para examinar mensajes y datos adjuntos.
-- **Skype Empresarial Online**: las directivas de cumplimiento de comunicaciones admiten el examen de las comunicaciones de chat y los datos adjuntos asociados en [Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online).
-- **Orígenes de terceros**: puede examinar los mensajes de [orígenes de terceros](archiving-third-party-data.md) en busca de datos importados en buzones de su organización Microsoft 365. El cumplimiento de comunicaciones admite conexiones a varias plataformas populares, como Instant Bloomberg y otras.
+- **Orígenes de terceros**: puede examinar los mensajes de [orígenes de terceros](archiving-third-party-data.md) en busca de datos importados en buzones de su organización de Microsoft 365. El cumplimiento de comunicaciones admite conexiones a varias plataformas populares, como Instant Bloomberg y otras.
 
 Para más información sobre la compatibilidad con canales de mensajería en las directivas de cumplimiento de comunicaciones, consulte [Detección de señales de canal con cumplimiento de comunicaciones](communication-compliance-channels.md).
 
@@ -158,10 +155,10 @@ Puede elegir entre las siguientes plantillas de directiva del portal de cumplimi
 - **Supervisión del cumplimiento normativo financiero**: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados a estándares normativos.
 - **Supervisión de conflictos de interés**: use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios a fin de evitar conflictos de interés.
 - **Directiva personalizada**: use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a supervisar y revisar en la organización.
-- **Directiva de mensajes notificados por el usuario**: esta directiva del sistema admite mensajes notificados por el usuario de mensajes de canal, grupo y chat privado. Habilitado de forma predeterminada en el centro de administración de Teams.
+- **Directiva de mensajes notificados por el usuario**: esta directiva del sistema admite mensajes notificados por el usuario de mensajes de canal, grupo y chat privado. Habilitado de forma predeterminada en el Centro de administración de Teams.
 
 >[!TIP]
->Use [las acciones recomendadas](communication-compliance-configure.md#recommended-actions-preview) para ayudarle a determinar si necesita una directiva de tipo de información confidencial o si necesita actualizar las directivas de contenido inadecuado existentes.
+>Use [las acciones recomendadas](communication-compliance-configure.md#recommended-actions) para ayudarle a determinar si necesita una directiva de tipo de información confidencial o si necesita actualizar las directivas de contenido inadecuado existentes.
 
 ### <a name="investigate"></a>Investigación
 
@@ -183,7 +180,7 @@ El siguiente paso es corregir los problemas de cumplimiento de comunicaciones qu
 - **Escalar a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para poder resolver el incidente. Puede escalar fácilmente los problemas relativos a mensajes a los revisores de otras áreas de su organización como parte del proceso de resolución.
 - **Marcar como mal clasificado**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente se pasarán al proceso de revisión. Puede marcar estos tipos de alertas como clasificados incorrectamente, enviar comentarios a Microsoft sobre la clasificación incorrecta para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
 - **Retirar mensaje in Teams (vista previa)**: es posible que los mensajes inadecuados se quiten de mostrarse en canales de Microsoft Teams o mensajes de chat personales y grupales. Los mensajes inadecuados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
-- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El Cumplimiento de comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general sobre Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El Cumplimiento de comunicaciones está estrechamente integrado con otras características de Microsoft Purview para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Escalar un caso para investigación le permite transferir datos y administrar el caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 ### <a name="monitor"></a>Monitorear
 
@@ -194,5 +191,5 @@ El seguimiento y la administración de los problemas de cumplimiento identificad
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 - Para obtener información de planeación, vea [Planear el cumplimiento de comunicaciones](communication-compliance-plan.md).
-- Consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y vea cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado en Microsoft Teams, Exchange Online y Yammer comunicaciones.
-- Para configurar el cumplimiento de comunicaciones para la organización de Microsoft 365, consulte [Configuración del cumplimiento de comunicaciones](communication-compliance-configure.md).
+- Consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y vea cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado en las comunicaciones de Microsoft Teams, Exchange Online y Yammer.
+- Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, consulte [Configuración del cumplimiento de comunicaciones](communication-compliance-configure.md).

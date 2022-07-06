@@ -14,28 +14,28 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprender la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 9b569bc30a9d7d8485fe0004cf46ba39277c47ae
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 66899a337e9349a78178df67aa83e44b580c7148
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760809"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629387"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
 Además de usar el cifrado de nivel de volumen, Exchange Online, Microsoft Teams, SharePoint Online y OneDrive para la Empresa también usan El cifrado de servicio para cifrar los datos del cliente. Service Encryption permite dos opciones de administración de claves:
 
 ## <a name="microsoft-managed-keys"></a>Claves administradas por Microsoft
-Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado de servicios. Esta opción está habilitada actualmente de forma predeterminada para Exchange Online, SharePoint Online, OneDrive para la Empresa. Las claves administradas por Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarlas mediante la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos permanecen cifrados mediante las claves administradas por Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
+Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado de servicios. Esta opción está habilitada actualmente de forma predeterminada para Exchange Online, SharePoint Online OneDrive para la Empresa. Las claves administradas por Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarlas mediante la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos permanecen cifrados mediante las claves administradas por Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
 
 ## <a name="customer-key"></a>Clave de cliente
-Proporcione las claves raíz que se usan con el cifrado de servicio y administre estas claves mediante Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina Clave de cliente y actualmente está disponible para Exchange Online, SharePoint Online y OneDrive para la Empresa. (Anteriormente denominado Cifrado avanzado con BYOK. Consulte [Mejora de la transparencia y el control de los clientes Office 365](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para ver el anuncio original).
+Proporcione las claves raíz que se usan con el cifrado de servicio y administre estas claves mediante Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina Clave de cliente y está disponible actualmente para Exchange Online, SharePoint Online y OneDrive para la Empresa. (Anteriormente denominado Cifrado avanzado con BYOK. Consulte [Mejora de la transparencia y el control de los clientes Office 365](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para ver el anuncio original).
 
 El cifrado de servicio proporciona varias ventajas:
 
 - Proporciona una capa de protección agregada sobre BitLocker.
 
-- Proporciona la separación de Windows administradores del sistema operativo del acceso a los datos de la aplicación almacenados o procesados por el sistema operativo.
+- Proporciona la separación de los administradores del sistema operativo Windows del acceso a los datos de la aplicación almacenados o procesados por el sistema operativo.
 
 - Incluye una opción clave de cliente que permite que los servicios multiinquilino proporcionen administración de claves por inquilino.
 

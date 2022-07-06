@@ -17,19 +17,17 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el portal de cumplimiento de Microsoft Purview en Microsoft 365.
-ms.openlocfilehash: f5ec0433e445256865033b71082c92889972f827
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en la portal de cumplimiento Microsoft Purview en Microsoft 365.
+ms.openlocfilehash: 806705202865d97136713dba4afb263b605ef0f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017452"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628823"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La creación de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview en Microsoft 365 que busca en muchos buzones o SharePoint y OneDrive para la Empresa sitios puede tardar un tiempo. Especificar los sitios que se van a buscar también puede ser propenso a errores si escribe mal una dirección URL. Para evitar estos problemas, puede usar el script Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecútela.
+La creación de una búsqueda de contenido en el portal de cumplimiento Microsoft Purview en Microsoft 365 que busca en muchos buzones de correo o SharePoint y OneDrive para la Empresa sitios puede tardar un tiempo. Especificar los sitios que se van a buscar también puede ser propenso a errores si escribe mal una dirección URL. Para evitar estos problemas, puede usar el script Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecútela.
 
 ¿Por qué clonar búsquedas de contenido?
 
@@ -43,13 +41,13 @@ La creación de una búsqueda de contenido en el portal de cumplimiento de Micro
 
 - Debe instalar el módulo Exchange Online V2. Para obtener instrucciones, consulte [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento de Microsoft Purview para ejecutar el script descrito en este tema.
+- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento Microsoft Purview para ejecutar el script descrito en este tema.
 
 - El script incluye un control mínimo de errores. El propósito principal del script es clonar rápidamente una búsqueda de contenido.
 
 - El script crea una nueva búsqueda de contenido, pero no la inicia.
 
-- Este script tiene en cuenta si la búsqueda de contenido que está clonando está asociada a un caso de exhibición de documentos electrónicos. Si la búsqueda está asociada a un caso, la nueva búsqueda también se asociará con el mismo caso. Si la búsqueda existente no está asociada a un caso, la nueva búsqueda se mostrará en la página Búsqueda de **contenido** del portal de cumplimiento de Microsoft Purview.
+- Este script tiene en cuenta si la búsqueda de contenido que está clonando está asociada a un caso de exhibición de documentos electrónicos. Si la búsqueda está asociada a un caso, la nueva búsqueda también se asociará con el mismo caso. Si la búsqueda existente no está asociada a un caso, la nueva búsqueda se mostrará en la página Búsqueda de **contenido** del portal de cumplimiento Microsoft Purview.
 
 - El script de ejemplo proporcionado en este tema no se admite en ningún programa o servicio de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
@@ -57,7 +55,7 @@ La creación de una búsqueda de contenido en el portal de cumplimiento de Micro
 
 El script de este paso creará una nueva búsqueda de contenido mediante la clonación de una existente. Al ejecutar este script, se le pedirá la siguiente información:
 
-- **Credenciales de usuario** : el script usará sus credenciales para conectarse a PowerShell de cumplimiento de seguridad &. Como se indicó anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el portal de cumplimiento de Microsoft Purview para ejecutar el script.
+- **Credenciales de usuario** : el script usará sus credenciales para conectarse a PowerShell de cumplimiento de seguridad &. Como se indicó anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview para ejecutar el script.
 
 - **Nombre de la búsqueda existente** : se trata de la búsqueda de contenido que desea clonar.
 
@@ -113,7 +111,7 @@ Para clonar una búsqueda:
    }
    ```
 
-2. [Conectar a PowerShell de cumplimiento de & de seguridad](/powershell/exchange/connect-to-scc-powershell). En la misma ventana de PowerShell, vaya a la carpeta donde guardó el script.
+2. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell) En la misma ventana de PowerShell, vaya a la carpeta donde guardó el script.
 
 3. Ejecute el script; por ejemplo:
 
@@ -126,11 +124,11 @@ Para clonar una búsqueda:
      - Nombre de la búsqueda existente.
      - Nombre de la nueva búsqueda.
 
-     El script crea la nueva búsqueda de contenido, pero no la inicia. Esto le da la oportunidad de editar y ejecutar la búsqueda en el paso siguiente. Para ver las propiedades de la nueva búsqueda, ejecute el cmdlet **Get-ComplianceSearch** o vaya a la página **Búsqueda de contenido** o **exhibición de documentos electrónicos** en el portal de cumplimiento de Microsoft Purview, en función de si la nueva búsqueda está asociada a un caso.
+     El script crea la nueva búsqueda de contenido, pero no la inicia. Esto le da la oportunidad de editar y ejecutar la búsqueda en el paso siguiente. Para ver las propiedades de la nueva búsqueda, ejecute el cmdlet **Get-ComplianceSearch** o vaya a la página **Búsqueda de contenido** o **exhibición de documentos electrónicos** de la portal de cumplimiento Microsoft Purview, en función de si la nueva búsqueda está asociada a un caso.
 
-## <a name="step-2-edit-and-run-the-cloned-search-in-the-microsoft-purview-compliance-portal"></a>Paso 2: Editar y ejecutar la búsqueda clonada en el portal de cumplimiento de Microsoft Purview
+## <a name="step-2-edit-and-run-the-cloned-search-in-the-microsoft-purview-compliance-portal"></a>Paso 2: Editar y ejecutar la búsqueda clonada en el portal de cumplimiento Microsoft Purview
 
-Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al portal de cumplimiento de Microsoft Purview para editar y ejecutar la nueva búsqueda. Como se indicó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para más información, vea:
+Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al portal de cumplimiento Microsoft Purview para editar y ejecutar la nueva búsqueda. Como se indicó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para más información, vea:
 
 - [Búsqueda de contenido de Office 365](content-search.md)
 

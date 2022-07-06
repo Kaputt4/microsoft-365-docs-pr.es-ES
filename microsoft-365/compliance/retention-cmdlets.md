@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: Identifique los cmdlets de PowerShell para la retención que admiten la configuración a escala, la automatización o podría ser necesario para escenarios de configuración avanzada.
-ms.openlocfilehash: 5e31fb7b92dbc1dc83af8f7047041a7d0b4b23b2
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612159"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625993"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use las secciones siguientes para identificar los principales cmdlets de PowerShell que están disponibles para las directivas de retención y las etiquetas de retención que podría necesitar para la configuración a escala, scripts automatizados o escenarios de configuración avanzada. Para obtener la lista completa de cmdlets, consulte la [lista de retención de directivas y cumplimiento](/powershell/module/exchange#policy-and-compliance-retention) de la documentación de PowerShell.
 

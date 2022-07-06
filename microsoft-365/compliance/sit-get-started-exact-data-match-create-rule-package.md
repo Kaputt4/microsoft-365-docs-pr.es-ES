@@ -17,23 +17,21 @@ search.appverid:
 - MET150
 description: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017194"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628515"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede crear un tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) mediante [el esquema EDM y el asistente sit](#use-the-edm-schema-and-sit-wizard) en el Centro de cumplimiento o crear [manualmente](#create-a-rule-package-manually) el archivo XML del paquete de reglas. También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con SITS basado en EDM o su implementación, debe familiarizarse con:
 
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 ## <a name="use-the-edm-schema-and-sit-wizard"></a>Uso del esquema EDM y el Asistente para SIT
@@ -60,7 +58,7 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
-1. En el portal de cumplimiento de Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Coincidencias exactas de datos**.
+1. En el portal de cumplimiento Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Coincidencias exactas de datos**.
 
 2. Elija **Tipos de información confidencial EDM** y **Crear Tipo de información confidencial EDM** para abrir el asistente de configuración de tipos de información confidencial.
 
@@ -107,7 +105,7 @@ Esto coincidiría con cada palabra o número individual en cualquier documento o
 
 **Direcciones de correo electrónico**: las direcciones de correo electrónico pueden ser fáciles de identificar, pero como son tan comunes en el contenido, pueden provocar una carga significativa en el sistema si se usan como campo principal. Úselas solo como evidencia secundaria. Si se deben usar como evidencia principal, intente definir un tipo de información confidencial personalizada que use lógica para excluir su uso como `From` o `To` campos en los correos electrónicos y excluir aquellos con la dirección de correo electrónico de su empresa para reducir el número de cadenas innecesarias que deben coincidir.
 
-**Teléfono números**: Teléfono números pueden aparecer en muchos formatos diferentes, incluidos o excluidos prefijos de país, códigos de área y separadores. Para reducir los falsos negativos mientras se mantiene la carga al mínimo, úselos solo como elementos secundarios, excluya todos los separadores probables, como paréntesis y guiones, y solo incluya en la tabla de datos confidenciales la parte que siempre estará presente en el número de teléfono.
+**Números de teléfono**: los números de teléfono pueden tener muchos formatos diferentes, incluidos o excluidos prefijos de país, códigos de área y separadores. Para reducir los falsos negativos mientras se mantiene la carga al mínimo, úselos solo como elementos secundarios, excluya todos los separadores probables, como paréntesis y guiones, y solo incluya en la tabla de datos confidenciales la parte que siempre estará presente en el número de teléfono.
 
 **Nombres de persona**: no use los nombres de persona como elementos principales si usa un tipo de información confidencial basado en una expresión regular como elemento de clasificación para este tipo EDM, ya que son difíciles de distinguir de palabras comunes.
 
@@ -206,7 +204,7 @@ Este procedimiento muestra cómo crear un archivo en formato XML denominado paqu
       </RulePackage>
       ```
 
-2. Upload el paquete de reglas ejecutando el siguiente comando de PowerShell:
+2. Cargue el paquete de reglas ejecutando el siguiente comando de PowerShell:
 
    ```powershell
    New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('.\\rulepack.xml'))

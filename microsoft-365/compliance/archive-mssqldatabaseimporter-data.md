@@ -12,32 +12,30 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Database. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: f7cf8a049599a3a709b535871b85fc6e73e6b732
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 19730f4c1ae6f6f89917b4b64546757a57f78814
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317126"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626917"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configuración de un conector para archivar datos de MS SQL Database
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos de MS SQL Database a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector MS SQL Database Importer configurado para capturar elementos de una base de datos mediante un archivo de configuración XML e importarlos a Microsoft 365. El conector convierte el contenido de MS SQL Database a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
-Use un conector de Veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos de MS SQL Database a buzones de usuario de la organización de Microsoft 365. Veritas proporciona un conector MS SQL Database Importer configurado para capturar elementos de una base de datos mediante un archivo de configuración XML e importarlos a Microsoft 365. El conector convierte el contenido de MS SQL Database a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
+Después de que el contenido de MS SQL Database almacenado en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de MS SQL Database para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
-Después de que el contenido de MS SQL Database almacenado en buzones de usuario, puede aplicar Microsoft Purview características como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de MS SQL Database para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
-
-## <a name="overview-of-archiving-the-ms-sql-data"></a>Información general sobre el archivado de los datos de SQL de MS
+## <a name="overview-of-archiving-the-ms-sql-data"></a>Información general sobre el archivado de los datos de MS SQL
 
 En la información general siguiente se explica el proceso de uso de un conector para archivar datos de MS SQL en Microsoft 365.
 
-![Flujo de trabajo de archivado de datos de SQL MS.](../media/MSSQLDatabaseConnectorWorkflow.png)
+![Flujo de trabajo de archivado de datos de MS SQL.](../media/MSSQLDatabaseConnectorWorkflow.png)
 
 1. Su organización trabaja con un proveedor de MS SQL Database para configurar y configurar un sitio de MS SQL Database.
 
 2. Una vez cada 24 horas, MS SQL Database elementos se copian en el sitio de Veritas Merge1. El conector también convierte este contenido en un formato de mensaje de correo electrónico.
 
-3. El conector MS SQL Database Importer que se crea en el portal de cumplimiento, se conecta al sitio de Veritas Merge1 todos los días y transfiere los mensajes a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector de MS SQL Database Importer que se crea en el portal de cumplimiento, se conecta al sitio de Veritas Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa los elementos de SQL Database MS convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **MS SQL Database Importer** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento de la SQL Database MS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
@@ -45,15 +43,15 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Cree una cuenta de Veritas Merge1 para los conectores de Microsoft. Para crear una cuenta, póngase en contacto con [el servicio de atención al cliente de Veritas](https://www.veritas.com/content/support/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- Al usuario que crea el conector MS SQL Database Importer en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector MS SQL Database Importer en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de Veritas está en versión preliminar pública en entornos GCC en la nube de Microsoft 365 US Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>Paso 1: Configuración del conector MS SQL Database Importer
 
 El primer paso consiste en acceder a la página **Conectores de datos** del portal de cumplimiento y crear un conector para la SQL Database de MS.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com) continuación, haga clic en **Conectores** >  de **datosMS SQL Database Importer**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com) continuación, haga clic en **Conectores** >  de datos **MS SQL Database Importer**.
 
 2. En la página de descripción **del producto MS SQL Database Importer**, haga clic en **Agregar nuevo conector**.
 
@@ -73,7 +71,7 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 Para asignar usuarios y completar la configuración del conector, siga estos pasos:
 
-1. En la página **Asignar usuarios de MS SQL Database Importer a Microsoft 365 usuarios**, habilite la asignación automática de usuarios. Los elementos de MS SQL Database incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario Microsoft 365, los elementos se importan al buzón de ese usuario.
+1. En la página **Asignar usuarios de MS SQL Database Importer a usuarios de Microsoft 365**, habilite la asignación automática de usuarios. Los elementos de MS SQL Database incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

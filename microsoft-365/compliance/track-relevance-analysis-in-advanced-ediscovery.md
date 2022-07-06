@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver e interpretar el estado de entrenamiento de relevancia y los resultados de los problemas de casos en eDiscovery (Premium).
-ms.openlocfilehash: dd2eecbcd347125b1728851d873068b37f82aced
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dce726553d5664714f9c479113ae00abd91aafff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093995"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627357"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>Seguimiento del análisis de relevancia en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 En Microsoft Purview eDiscovery (Premium), la pestaña Seguimiento de relevancia muestra la validez calculada del entrenamiento de relevancia realizado en la pestaña Etiqueta e indica el siguiente paso que se debe realizar en el proceso de entrenamiento iterativo en Relevancia. 
   
@@ -81,7 +79,7 @@ Si desea importar nuevos archivos después del cálculo de Batch, el administrad
   
 ### <a name="assessing-tagging-consistency"></a>Evaluación de la coherencia del etiquetado
 
-Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. El proceso de coherencia de etiquetado de eDiscovery (Premium) se puede usar cuando los resultados no son óptimos o la coherencia está en duda. Se devuelve una lista de posibles archivos etiquetados incoherentes y se pueden revisar y volver a tomar, según sea necesario.
+Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. El proceso de coherencia del etiquetado de eDiscovery (Premium) se puede usar cuando los resultados no son óptimos o la coherencia está en duda. Se devuelve una lista de posibles archivos etiquetados incoherentes y se pueden revisar y volver a tomar, según sea necesario.
   
 > [!NOTE]
 > Después de siete o más rondas de entrenamiento después de la evaluación, la coherencia del etiquetado se puede ver en Resultados **detallados** \> del problema  de **seguimiento** \> \> de **relevancia** \> **Progreso de entrenamiento**. Esta revisión se realiza para un problema a la vez.
@@ -130,7 +128,7 @@ El panel **Progreso del** entrenamiento incluye un gráfico de progreso de entre
 
 - **Advertencia**: Muchos archivos pueden etiquetarse de forma incoherente. (Se muestra la luz roja)
 
-**Gráfico de progreso del entrenamiento**: muestra el grado de estabilidad del entrenamiento de relevancia después de muchos ciclos de entrenamiento de relevancia en comparación con el valor de la medida F. A medida que nos movemos de izquierda a derecha a través del gráfico, el intervalo de confianza se reduce y se usa, junto con la medida F, por eDiscovery (Premium) Relevancia para determinar la estabilidad cuando se optimizan los resultados del entrenamiento de relevancia.
+**Gráfico de progreso del entrenamiento**: muestra el grado de estabilidad del entrenamiento de relevancia después de muchos ciclos de entrenamiento de relevancia en comparación con el valor de la medida F. A medida que nos movemos de izquierda a derecha a través del gráfico, el intervalo de confianza se reduce y se usa, junto con la medida F, por relevancia de eDiscovery (Premium) para determinar la estabilidad cuando se optimizan los resultados del entrenamiento de relevancia.
   
 > [!NOTE]
 > Relevancia usa F2, una métrica de medida F en la que Recall recibe el doble de peso que Precisión. En los casos con alta riqueza (más del 25%), Relevancia usa F1 (relación 1:1). La relación de medida F se puede configurar en **Configuración de relevancia** \> **Configuración avanzada**.

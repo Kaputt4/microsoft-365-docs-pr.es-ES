@@ -18,16 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 14fb645a4b7f58f609995bc71edae24090c83cc7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016424"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630993"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando busca información confidencial en el contenido, es necesario describir esa información en lo que se denomina una *regla*. Prevención de pérdida de datos (DLP) de Microsoft Purview incluye reglas para los tipos más comunes de información confidencial que se pueden usar inmediatamente. Para usar estas reglas, deberá incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización y, para hacerlo, puede crear un tipo personalizado de información confidencial. En este tema se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una amplia variedad de posible información de tarjeta de crédito.
 

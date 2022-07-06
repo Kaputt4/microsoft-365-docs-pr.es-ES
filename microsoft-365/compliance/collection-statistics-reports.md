@@ -15,17 +15,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo acceder y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en eDiscovery de Microsoft Purview (Premium).
-ms.openlocfilehash: 54d5fde3ee9d75a0ad592a81d04b860267c16eeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo acceder y usar estadísticas e informes para colecciones y colecciones de borradores que se han confirmado en un conjunto de revisión en Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092467"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626851"
 ---
-# <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Estadísticas e informes de recopilación en eDiscovery de Microsoft Purview (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Estadísticas e informes de recopilación en Microsoft Purview eDiscovery (Premium)
 
 Después de crear una colección de borradores, puede ver estadísticas sobre los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coincidieron con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados.
 
@@ -51,7 +49,7 @@ En esta sección se muestra un resumen gráfico de los elementos estimados devue
 
 En esta sección se muestran estadísticas sobre la consulta de búsqueda de recopilación y el número de elementos estimados que coincidieron con diferentes partes de la consulta de búsqueda. Puede usar estas estadísticas para analizar el número de elementos que coinciden con cada componente de la consulta de búsqueda. Esto puede ayudarle a refinar los criterios de búsqueda de la colección y, si es necesario, restringir el ámbito de la colección.
 
-- **Tipo de ubicación**: tipo de ubicación de contenido al que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; un valor de **SharePoint** indica una ubicación del sitio.
+- **Tipo de ubicación**: tipo de ubicación de contenido al que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; Un valor de **SharePoint** indica una ubicación del sitio.
 
 - **Parte**: la parte de la consulta de búsqueda a la que se aplican las estadísticas. **Principal** indica toda la consulta de búsqueda. **La palabra clave** indica que las estadísticas de la fila son para una palabra clave específica. Si usa una lista de palabras clave cuando para la consulta de búsqueda de la colección, las estadísticas de cada componente de la consulta se incluyen en esta tabla.
 
@@ -96,7 +94,7 @@ Esta sección de la pestaña **Resumen** contiene estadísticas y otra informaci
  
    Un elemento primario puede contener varios elementos secundarios. Por ejemplo, un mensaje de correo electrónico es un elemento primario si contiene un archivo adjunto o tiene datos adjuntos en la nube. En este caso, el archivo adjunto o el archivo de destino de los datos adjuntos en la nube se considera un elemento secundario. Al confirmar una colección, los elementos primarios y los elementos secundarios correspondientes (como archivos adjuntos y datos adjuntos en la nube) se agregan al conjunto de revisión como elementos o archivos individuales.
 
-- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Solo los elementos secundarios que son datos adjuntos de archivos y datos adjuntos en la nube se agregan al conjunto de revisión como archivos individuales. Otros tipos de elementos secundarios, como las firmas de correo electrónico y las imágenes, se extraen de un elemento primario y, a continuación, se procesan mediante reconocimiento óptico de caracteres (OCR) para extraer cualquier texto del elemento secundario. A continuación, el texto extraído de estos tipos de elementos secundarios se agrega a su elemento primario para que pueda verlo en el conjunto de revisión. Al no agregar elementos secundarios al conjunto de revisiones como un archivo independiente, eDiscovery (Premium) ayuda a simplificar el proceso de revisión limitando el número de elementos potencialmente inmateriales en el conjunto de revisión.
+- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Solo los elementos secundarios que son datos adjuntos de archivos y datos adjuntos en la nube se agregan al conjunto de revisión como archivos individuales. Otros tipos de elementos secundarios, como las firmas de correo electrónico y las imágenes, se extraen de un elemento primario y, a continuación, se procesan mediante reconocimiento óptico de caracteres (OCR) para extraer cualquier texto del elemento secundario. A continuación, el texto extraído de estos tipos de elementos secundarios se agrega a su elemento primario para que pueda verlo en el conjunto de revisión. Al no agregar elementos secundarios al conjunto de revisión como un archivo independiente, eDiscovery (Premium) ayuda a simplificar el proceso de revisión limitando el número de elementos potencialmente inmateriales en el conjunto de revisión.
 
 - **Elementos únicos**. Número de elementos únicos agregados al conjunto de revisión. Los elementos únicos son únicos para el conjunto de revisión. Todos los elementos son únicos cuando se agrega la primera colección a un nuevo conjunto de revisión porque no había elementos anteriores en el conjunto de revisión.
 
@@ -130,16 +128,16 @@ Al ejecutar una colección de borradores, se muestra una estimación del número
 
 - **Opciones de configuración de recopilación**. Al confirmar una colección de borradores en un conjunto de revisión, tiene que incluir subprocesos de conversación, datos adjuntos en la nube y versiones de documentos. Cualquiera de estos elementos que se agregan al conjunto de revisión no se incluye en las estimaciones de la colección de borradores. Solo se identifican y recopilan cuando se confirma la colección. Seleccionar estas opciones probablemente aumentará el número de elementos agregados al conjunto de revisión. 
 
-    Por ejemplo, no se incluyen varias versiones de SharePoint documentos en la estimación de la colección de borradores. Pero si selecciona la opción para incluir todas las versiones del documento al confirmar una colección de borradores, el número real (y el tamaño total) de los elementos agregados al conjunto de revisión aumentará.
+    Por ejemplo, no se incluyen varias versiones de documentos de SharePoint en la estimación de la colección de borradores. Pero si selecciona la opción para incluir todas las versiones del documento al confirmar una colección de borradores, el número real (y el tamaño total) de los elementos agregados al conjunto de revisión aumentará.
 
     Para obtener más información sobre estas opciones, consulte [Confirmación de una colección de borradores en un conjunto de revisión](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium).
 
 Estas son otras razones por las que los resultados estimados de una colección de borradores pueden ser diferentes de los resultados confirmados reales.
 
-- **La forma en que se calculan los resultados de las colecciones de borradores**. Una estimación de los resultados de búsqueda devueltos por una colección de borradores es simplemente esa, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de colección. Para compilar la estimación de elementos de correo electrónico, se solicita a la base de datos de Exchange una lista de los identificadores de mensaje que cumplen los criterios de búsqueda. Pero al confirmar la colección en un conjunto de revisión, la colección se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos Exchange. Por lo tanto, las diferencias pueden dar lugar a cómo se determina el número estimado de elementos y el número real de elementos.
+- **La forma en que se calculan los resultados de las colecciones de borradores**. Una estimación de los resultados de búsqueda devueltos por una colección de borradores es simplemente esa, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de colección. Para compilar la estimación de los elementos de correo electrónico, se solicita a la base de datos de Exchange una lista de los identificadores de mensaje que cumplen los criterios de búsqueda. Pero al confirmar la colección en un conjunto de revisión, la colección se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos de Exchange. Por lo tanto, las diferencias pueden dar lugar a cómo se determina el número estimado de elementos y el número real de elementos.
 
 - **Cambios que se producen entre el momento en que se estiman y confirman colecciones de borradores**. Al confirmar una colección de borradores en un conjunto de revisión, la búsqueda se vuelve a ejecutar para recopilar los elementos más recientes del índice de búsqueda que cumplen los criterios de búsqueda. Es posible que se hayan creado, enviado o eliminado elementos adicionales que cumplan los criterios de búsqueda en el tiempo comprendido entre la última ejecución de la colección de borradores y la confirmación de la colección de borradores en un conjunto de revisión. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de la colección de borradores ya no estén allí porque se purgaron de un origen de datos antes de confirmar la colección. Una manera de mitigar este problema es especificar un intervalo de fechas para una colección. Otra manera es colocar una suspensión en las ubicaciones de contenido para que los elementos se conserven y no se puedan purgar.
 
-- **Elementos sin indexar**. Si la colección de borradores incluía la búsqueda en todos los buzones de Exchange o en todos los sitios SharePoint, solo se agregarán al conjunto de revisión los elementos sin indexar de las ubicaciones de contenido que contengan elementos que coincidan con los criterios de recopilación. En otras palabras, si no se encuentra ningún resultado en un buzón de correo o sitio, los elementos sin indexar de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indexar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coinciden con la consulta de colección) se incluirán en los resultados de la colección estimados.
+- **Elementos sin indexar**. Si la colección de borradores incluía la búsqueda en todos los buzones de Exchange o en todos los sitios de SharePoint, solo se agregarán al conjunto de revisión los elementos sin indexar de ubicaciones de contenido que contengan elementos que coincidan con los criterios de recopilación. En otras palabras, si no se encuentra ningún resultado en un buzón de correo o sitio, los elementos sin indexar de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indexar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coinciden con la consulta de colección) se incluirán en los resultados de la colección estimados.
 
     Como alternativa, si la colección de borradores incluía ubicaciones de contenido específicas (lo que significa que se exportarán buzones o sitios específicos donde se especifiquen en la página **Ubicaciones adicionales** del Asistente para borradores de recopilación), se exportarán los elementos no indizados (que no se excluyen por los criterios de recopilación) de las ubicaciones de contenido especificadas en la búsqueda. En este caso, el número estimado de elementos sin indexar y el número de elementos no indexados que se agregan al conjunto de revisión deben ser los mismos.

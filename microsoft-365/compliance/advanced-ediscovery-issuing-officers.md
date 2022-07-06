@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede agregar oficiales emisores de toda la organización en eDiscovery (Premium) para que se puedan agregar a cualquier comunicación de custodia en cualquier caso en su organización.
-ms.openlocfilehash: 894da37088599d1c8b0f9d473bf64311a09cc566
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0a3383f9f725a7d5afacd1cab504eefc97b91fd3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093644"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627699"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Administración de agentes emisores en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cuando usted u otros usuarios crean una notificación de suspensión u otro tipo de comunicación que se envía a un usuario que es un custodio en caso de que, en caso, tiene que especificar un oficial emisor. La notificación se envía al custodio en nombre del oficial emisor especificado. Por ejemplo, un asistente legal de su organización podría ser responsable de crear y enviar notificaciones de suspensión a los custodios en un caso. En este escenario, el asistente legal puede especificar un abogado de la organización como oficial emisor. Quién se puede especificar como oficial emisor? Hay dos tipos de usuarios que se pueden seleccionar como emisores para una comunicación de custodio:
+Cuando usted u otros usuarios crean una notificación de suspensión u otro tipo de comunicación que se envía a un usuario que es un custodio en caso de que, en caso, tiene que especificar un oficial emisor. La notificación se envía al custodio en nombre del oficial emisor especificado. Por ejemplo, un asistente legal de su organización podría ser responsable de crear y enviar notificaciones de suspensión a los custodios en un caso. En este escenario, el asistente legal puede especificar un abogado de la organización como oficial emisor. ¿Quién puede especificarse como emisor? Hay dos tipos de usuarios que se pueden seleccionar como emisores para una comunicación de custodio:
 
 - Cualquier miembro del caso específico del que se envía la comunicación en nombre de .
 
@@ -37,9 +35,9 @@ En este artículo se explica cómo agregar y quitar usuarios a la lista de ofici
 
 ## <a name="before-you-add-an-issuing-officer"></a>Antes de agregar un oficial emisor
 
-- Debe ser administrador de eDiscovery en su organización para agregar o quitar agentes emisores. Para obtener más información, consulte [Asignación de permisos de exhibición de documentos electrónicos en el portal de cumplimiento de Microsoft Purview](assign-ediscovery-permissions.md).  
+- Debe ser administrador de eDiscovery en su organización para agregar o quitar agentes emisores. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview](assign-ediscovery-permissions.md)  
 
-- El usuario que se agrega como emisor debe tener un buzón activo en la organización Microsoft 365.
+- El usuario que se agrega como emisor debe tener un buzón activo en la organización de Microsoft 365.
 
 - Su organización puede tener un máximo de 15 oficiales emisores. Los miembros de un caso que se puede especificar como oficial emisor no se cuentan para este límite. Este límite solo se aplica al número de usuarios que se pueden agregar a la página **Agentes emisores** en eDiscovery (Premium).
 
@@ -47,9 +45,9 @@ En este artículo se explica cómo agregar y quitar usuarios a la lista de ofici
 
 1. En el portal de cumplimiento, vaya a [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764) y, a continuación, haga clic en **configuración de eDiscovery (Premium).**
 
-   ![Seleccionar la configuración de eDiscovery (Premium)](..\media\HistoricalVersions1.png)
+   ![Selección de la configuración de eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. En la página **Configuración**, seleccione la pestaña **Oficiales emisores** para mostrar la página **Administrar oficiales emisores**.
+2. En la página **Configuración** , seleccione la pestaña **Oficiales emisores** para mostrar la página **Administrar oficiales emisores** .
 
    ![Página de configuración de los oficiales emisores.](..\media\AeDIssuingOfficers1.png)
 
@@ -61,7 +59,7 @@ Después de agregar usuarios como oficiales emisores, usted u otros usuarios pod
 
 1. En el portal de cumplimiento, vaya a [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764) y, a continuación, haga clic en **configuración de eDiscovery (Premium).**
 
-2. En la página **Configuración**, seleccione la pestaña **Agentes emisores**.
+2. En la página **Configuración** , seleccione la pestaña **Agentes emisores** .
 
 3. Seleccione uno o varios usuarios en la lista de oficiales emisores y, a continuación, haga clic en **Eliminar**.
 

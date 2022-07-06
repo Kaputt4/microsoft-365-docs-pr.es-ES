@@ -1,5 +1,5 @@
 ---
-title: Asignación de permisos de eDiscovery en el portal de cumplimiento de Microsoft Purview
+title: Asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,29 +16,27 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento de Microsoft Purview.
+description: Asigne los permisos necesarios para realizar tareas relacionadas con eDiscovery mediante el portal de cumplimiento Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: f8ba8873523372d599e6a40bccb5a1312b2bfe67
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013384"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628911"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Asignación de permisos de eDiscovery en el portal de cumplimiento
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento de Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del portal de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
+Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del portal de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
 
 > [!TIP]
 > Puede ver sus propios permisos en la página de información general de eDiscovery (Premium) en el portal de cumplimiento. Debe tener al menos un rol asignado para que se muestren los permisos.
 
 El grupo de roles principal relacionado con eDiscovery en el portal de cumplimiento se denomina **Administrador de exhibición de documentos electrónicos**. Hay dos subgrupos dentro de este grupo de roles.
   
-- **Administrador de exhibición de** documentos electrónicos: un Administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como la vista previa y la exportación de resultados de búsqueda. Los miembros también pueden crear y administrar casos en Microsoft Purview eDiscovery (Estándar) y Microsoft Purview eDiscovery (Premium), agregar y quitar miembros a un caso, crear retenciones de mayúsculas y minúsculas, ejecutar búsquedas asociadas a un caso y acceder a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
+- **Administrador de exhibición de** documentos electrónicos: un Administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como la vista previa y la exportación de resultados de búsqueda. Los miembros también pueden crear y administrar casos en Microsoft Purview eDiscovery (Estándar) y Microsoft Purview eDiscovery (Premium), agregar y quitar miembros a un caso, crear retenciones de casos, ejecutar búsquedas asociadas a un caso y acceder a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
   
 - **Administrador de exhibición de** documentos electrónicos: un administrador de exhibición de documentos electrónicos es miembro del grupo de roles administrador de exhibición de documentos electrónicos y puede realizar las mismas tareas relacionadas con la búsqueda de contenido y la administración de casos que un Administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de exhibición de documentos electrónicos puede:
   
@@ -53,7 +51,7 @@ El grupo de roles principal relacionado con eDiscovery en el portal de cumplimie
   Para conocer las razones por las que podría querer administradores de exhibición de documentos electrónicos en su organización, consulte [Más información](#more-information).
 
 > [!NOTE]
-> Para analizar los datos de un usuario mediante eDiscovery (Premium), al usuario (el custodio de los datos) se le debe asignar una licencia de Office 365 E5 o Microsoft 365 E5. Como alternativa, a los usuarios con una licencia de Office 365 E1 o de Office 365 o Microsoft 365 E3 se les puede asignar una licencia de complemento Cumplimiento de Microsoft 365 E5 o Microsoft 365 eDiscovery y Audit. Los administradores, los responsables de cumplimiento o el personal legal que están asignados a casos como miembros y usan eDiscovery (Premium) para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre las licencias de eDiscovery (Premium), vea [Suscripciones y licencias en eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
+> Para analizar los datos de un usuario mediante eDiscovery (Premium), al usuario (el custodio de los datos) se le debe asignar una licencia de Office 365 E5 o Microsoft 365 E5. Como alternativa, a los usuarios con una licencia de Office 365 E1 o de Office 365 o Microsoft 365 E3 se les puede asignar una licencia de complemento de Cumplimiento de Microsoft 365 E5 o microsoft 365 eDiscovery y auditoría. Los administradores, los responsables de cumplimiento o el personal legal que están asignados a casos como miembros y usan eDiscovery (Premium) para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre las licencias de eDiscovery (Premium[), vea Suscripciones y licencias en eDiscovery (Premium).](overview-ediscovery-20.md#subscriptions-and-licensing)
   
 ## <a name="before-you-assign-permissions"></a>Antes de asignar permisos
 
@@ -88,7 +86,7 @@ En la página **Permisos** del portal de cumplimiento, también puede asignar a 
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con eDiscovery en el portal de cumplimiento e indican los grupos de roles integrados a los que se asigna cada rol de forma predeterminada.
   
-| Rol | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
+| Role | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
 |Comunicación||![Marca de verificación.](../media/checkmark.png)|||
@@ -117,29 +115,29 @@ Para más información, vea:
 
 Este rol permite a los usuarios administrar todas las comunicaciones con los custodios identificados en un caso de exhibición de documentos electrónicos (Premium). Esto incluye la creación de notificaciones de suspensión, recordatorios de suspensión y escalaciones a la administración. El usuario también puede realizar un seguimiento de la confirmación del custodio de las notificaciones de suspensión y administrar el acceso al portal de custodios que usa cada custodio para realizar un seguimiento de las comunicaciones de los casos en los que se identificaron como custodios.
 
-Para obtener más información, vea [Trabajar con comunicaciones en eDiscovery (Premium)](managing-custodian-communications.md).
+Para obtener más información, vea [Trabajar con comunicaciones en eDiscovery (Premium).](managing-custodian-communications.md)
 
 ### <a name="compliance-search"></a>Búsqueda de cumplimiento
 
-Este rol permite a los usuarios ejecutar la herramienta Búsqueda de contenido en el portal de cumplimiento para buscar buzones y carpetas públicas, SharePoint sitios en línea, sitios OneDrive para la Empresa, conversaciones Skype Empresarial, grupos Microsoft 365 y Microsoft Teams y grupos de Yammer. Este rol permite a un usuario obtener una estimación de los resultados de búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido, como la vista previa, la exportación o la eliminación de resultados de búsqueda.
+Este rol permite a los usuarios ejecutar la herramienta Búsqueda de contenido en el portal de cumplimiento para buscar buzones y carpetas públicas, sitios de SharePoint Online, sitios OneDrive para la Empresa, conversaciones Skype Empresarial, grupos de Microsoft 365 y grupos de Microsoft Teams y Yammer. Este rol permite a un usuario obtener una estimación de los resultados de búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido, como la vista previa, la exportación o la eliminación de resultados de búsqueda.
 
 En Búsqueda de contenido y exhibición de documentos electrónicos (estándar), los usuarios a los que se les asigna el rol Búsqueda de cumplimiento pero no tienen el rol Vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que un usuario al que se le ha asignado el rol Vista previa ha iniciado la acción de vista previa. El usuario sin el rol Vista previa puede obtener una vista previa de los resultados hasta dos semanas después de crear la acción de vista previa inicial.
 
 De forma similar, los usuarios de búsqueda de contenido y exhibición de documentos electrónicos (estándar) a los que se les asigna el rol Búsqueda de cumplimiento pero no tienen el rol Exportar pueden descargar los resultados de una búsqueda en la que un usuario al que se le ha asignado el rol Exportar inició la acción de exportación. El usuario sin el rol Exportar puede descargar los resultados de una búsqueda hasta dos semanas después de crear la acción de exportación inicial. Después de eso, no pueden descargar los resultados a menos que alguien con el rol Exportar reinicie la exportación.
 
-El período de gracia de dos semanas para obtener una vista previa y exportar los resultados de búsqueda (sin los roles de búsqueda y exportación correspondientes) no se aplica a eDiscovery (Premium). Los usuarios deben tener asignados los roles Vista previa y Exportar para obtener una vista previa y exportar contenido en eDiscovery (Premium).
+El período de gracia de dos semanas para obtener una vista previa y exportar los resultados de búsqueda (sin los roles de búsqueda y exportación correspondientes) no se aplica a eDiscovery (Premium). A los usuarios se les deben asignar los roles Vista previa y Exportar para obtener una vista previa y exportar contenido en eDiscovery (Premium).
 
 ### <a name="custodian"></a>Custodio
 
-Este rol permite a los usuarios identificar y administrar custodios para casos de exhibición de documentos electrónicos (Premium) y usar la información de Azure Active Directory y otros orígenes para buscar orígenes de datos asociados a los custodios. El usuario puede asociar otros orígenes de datos, como buzones de correo, sitios SharePoint y Teams con los custodios en un caso. El usuario también puede colocar una suspensión legal en los orígenes de datos asociados a los custodios para conservar el contenido en el contexto de un caso.
+Este rol permite a los usuarios identificar y administrar custodios para casos de exhibición de documentos electrónicos (Premium) y usar la información de Azure Active Directory y otros orígenes para buscar orígenes de datos asociados a los custodios. El usuario puede asociar otros orígenes de datos, como buzones de correo, sitios de SharePoint y Teams, con custodios en un caso. El usuario también puede colocar una suspensión legal en los orígenes de datos asociados a los custodios para conservar el contenido en el contexto de un caso.
 
-Para obtener más información, vea [Trabajar con custodios en eDiscovery (Premium)](managing-custodians.md).
+Para obtener más información, vea [Trabajar con custodios en eDiscovery (Premium).](managing-custodians.md)
 
 ### <a name="export"></a>Export
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para su análisis en eDiscovery (Premium).
 
-Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde el portal de cumplimiento de Microsoft Purview](export-search-results.md).
+Para obtener más información sobre la exportación de resultados de búsqueda, consulte [Exportación de resultados de búsqueda desde portal de cumplimiento Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Hold
 
@@ -149,7 +147,7 @@ Para obtener más información sobre las retenciones, consulte:
 
 - [Creación de una suspensión en eDiscovery (estándar)](create-ediscovery-holds.md) 
 
-- [Crear una suspensión en eDiscovery (Premium)](add-custodians-to-case.md)
+- [Creación de una suspensión en eDiscovery (Premium)](add-custodians-to-case.md)
 
 ### <a name="preview"></a>Preview
 
@@ -157,11 +155,11 @@ Este rol permite a los usuarios ver una lista de elementos devueltos desde una b
 
 ### <a name="review"></a>Revisar
 
-Este rol permite a los usuarios acceder a conjuntos de revisión en [eDiscovery (Premium)](overview-ediscovery-20.md). Los usuarios a los que se les asigna este rol pueden ver y abrir la lista de casos en la página **eDiscovery > Advanced** del portal de cumplimiento del que son miembros. Una vez que el usuario accede a un caso de eDiscovery (Premium), puede seleccionar **Revisar conjuntos** para acceder a los datos de casos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de recopilación asociada al caso ni realizar otras tareas de búsqueda o administración de casos. Los usuarios con este rol solo pueden acceder a los datos de un conjunto de revisión.
+Este rol permite a los usuarios acceder a conjuntos de revisión en [eDiscovery (Premium).](overview-ediscovery-20.md) Los usuarios a los que se les asigna este rol pueden ver y abrir la lista de casos en la página **eDiscovery > Advanced** del portal de cumplimiento del que son miembros. Una vez que el usuario accede a un caso de exhibición de documentos electrónicos (Premium), puede seleccionar **Revisar conjuntos** para acceder a los datos del caso. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de recopilación asociada al caso ni realizar otras tareas de búsqueda o administración de casos. Los usuarios con este rol solo pueden acceder a los datos de un conjunto de revisión.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 
-Este rol permite a los usuarios ver mensajes de correo electrónico protegidos por derechos al obtener una vista previa de los resultados de búsqueda y exportar mensajes de correo electrónico descifrados protegidos por derechos. Este rol también permite a los usuarios ver (y exportar) un archivo cifrado con una [tecnología de cifrado de Microsoft](encryption.md) cuando el archivo cifrado se adjunta a un mensaje de correo electrónico que se incluye en los resultados de una búsqueda de exhibición de documentos electrónicos. Además, este rol permite a los usuarios revisar y consultar datos adjuntos de correo electrónico cifrados que se agregan a un conjunto de revisión en eDiscovery (Premium). Para obtener más información sobre el descifrado en eDiscovery, vea [Descifrado en Microsoft 365 herramientas de eDiscovery](ediscovery-decryption.md).
+Este rol permite a los usuarios ver mensajes de correo electrónico protegidos por derechos al obtener una vista previa de los resultados de búsqueda y exportar mensajes de correo electrónico descifrados protegidos por derechos. Este rol también permite a los usuarios ver (y exportar) un archivo cifrado con una [tecnología de cifrado de Microsoft](encryption.md) cuando el archivo cifrado se adjunta a un mensaje de correo electrónico que se incluye en los resultados de una búsqueda de exhibición de documentos electrónicos. Además, este rol permite a los usuarios revisar y consultar datos adjuntos de correo electrónico cifrados que se agregan a un conjunto de revisión en eDiscovery (Premium). Para obtener más información sobre el descifrado en eDiscovery, vea [Descifrado en herramientas de eDiscovery de Microsoft 365](ediscovery-decryption.md).
 
 ### <a name="search-and-purge"></a>Buscar y purgar
 
@@ -169,7 +167,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
 
 ## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>Adición de grupos de roles como miembros de casos de eDiscovery
 
-Puede agregar grupos de roles como miembros de casos de eDiscovery (Estándar) y eDiscovery (Premium) para que los miembros de los grupos de roles puedan acceder a los grupos de roles y realizar tareas en los casos asignados. Los roles asignados al grupo de roles definen lo que pueden hacer los miembros del grupo de roles. A continuación, agregar un grupo de roles como miembro del caso permite a los miembros acceder a esas tareas y realizarlas en un caso específico. Para obtener más información sobre cómo agregar grupos de roles como miembros de casos, consulte:
+Puede agregar grupos de roles como miembros de casos de eDiscovery (Estándar) y eDiscovery (Premium) para que los miembros de los grupos de roles puedan acceder a las tareas y realizarlas en los casos asignados. Los roles asignados al grupo de roles definen lo que pueden hacer los miembros del grupo de roles. A continuación, agregar un grupo de roles como miembro del caso permite a los miembros acceder a esas tareas y realizarlas en un caso específico. Para obtener más información sobre cómo agregar grupos de roles como miembros de casos, consulte:
 
 - [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
@@ -185,7 +183,7 @@ Antes de agregar o quitar roles a un grupo de roles que pueda ser miembro de un 
 Get-ComplianceCase -RoleGroup "Name of role group"
 ```
 
-### <a name="get-a-list-of-ediscovery-premium-cases-a-role-group-is-assigned-to"></a>Obtener una lista de casos de eDiscovery (Premium) a los que se asigna un grupo de roles
+### <a name="get-a-list-of-ediscovery-premium-cases-a-role-group-is-assigned-to"></a>Obtener una lista de casos de exhibición de documentos electrónicos (Premium) a los que se asigna un grupo de roles
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
@@ -197,7 +195,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero como un administrador de eDiscovery puede acceder a todos los casos de eDiscovery de la organización, puede ver el caso y agregarse a sí mismo u otro administrador de exhibición de documentos electrónicos como miembro del caso.
 
-  - Dado que un administrador de eDiscovery puede ver y acceder a todos los casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium), puede auditar y supervisar todos los casos y las búsquedas de cumplimiento asociadas. Esto puede ayudar a evitar cualquier uso indebido de búsquedas de cumplimiento o casos de exhibición de documentos electrónicos. Y dado que los administradores de eDiscovery pueden acceder a información potencialmente confidencial en los resultados de una búsqueda de cumplimiento, debe limitar el número de personas que son administradores de eDiscovery.
+  - Dado que un administrador de eDiscovery puede ver y acceder a todos los casos de eDiscovery (Estándar) y eDiscovery (Premium), puede auditar y supervisar todos los casos y las búsquedas de cumplimiento asociadas. Esto puede ayudar a evitar cualquier uso indebido de búsquedas de cumplimiento o casos de exhibición de documentos electrónicos. Y dado que los administradores de eDiscovery pueden acceder a información potencialmente confidencial en los resultados de una búsqueda de cumplimiento, debe limitar el número de personas que son administradores de eDiscovery.
 
 - **¿Puedo agregar un grupo como miembro del grupo de roles del Administrador de exhibición de documentos electrónicos?** Como se explicó anteriormente, puede agregar un grupo de seguridad habilitado para correo como miembro del subgrupo Administradores de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-RoleGroupMember** en PowerShell de cumplimiento de & seguridad. Por ejemplo, puede ejecutar el siguiente comando para agregar un grupo de seguridad habilitado para correo al grupo de roles del Administrador de exhibición de documentos electrónicos. 
 
@@ -205,7 +203,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    no se admiten Exchange grupos de distribución ni Grupos de Microsoft 365. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell mediante la ejecución de `New-DistributionGroup -Type Security`. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles administradores de exhibición de documentos electrónicos.
+    No se admiten los grupos de distribución y Grupos de Microsoft 365 de Exchange. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell mediante la ejecución de `New-DistributionGroup -Type Security`. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles administradores de exhibición de documentos electrónicos.
 
     Además, como se indicó anteriormente, no puede convertir un grupo de seguridad habilitado para correo en un administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell de cumplimiento de & seguridad. Solo puede agregar usuarios individuales como administradores de eDiscovery.
 
