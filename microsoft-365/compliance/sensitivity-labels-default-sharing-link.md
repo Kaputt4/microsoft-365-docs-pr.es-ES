@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive.
-ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012326"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628581"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Como configuración adicional a la que se ve en el Centro de cumplimiento de Microsoft Purview para [etiquetas de confidencialidad](sensitivity-labels.md), puede usar estas etiquetas para configurar las opciones para el tipo de vínculo de uso compartido predeterminado en un sitio de SharePoint o una cuenta de OneDrive y para documentos individuales. Esta configuración se selecciona automáticamente, pero no es muy visible para los usuarios cuando seleccionan el botón **Compartir** en sus aplicaciones de Office. Por ejemplo:
 
@@ -92,6 +90,8 @@ Ejemplos de PowerShell, donde el GUID de la etiqueta de confidencialidad es **8f
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
+Para obtener más ayuda para especificar la configuración avanzada de PowerShell, consulte [sugerencias de PowerShell para especificar la configuración avanzada](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 Para configurar las opciones del tipo de vínculo de uso compartido predeterminado para un sitio, el [ámbito de la etiqueta de confidencialidad](sensitivity-labels.md#label-scopes) debe incluir **grupos y sitios** al crear la etiqueta de confidencialidad en el Portal de cumplimiento de Microsoft Purview. Una vez creado, verá que se muestra como **sitio, UnifiedGroup** en la columna **Ámbito** de la página **Etiquetas** y la configuración *ContentType* de PowerShell también muestra el mismo valor. Para los documentos, el ámbito debe incluir **Archivos y correo electrónico**, que se muestra como **Archivo, Correo electrónico**. Luego:
 
 - Cuando el ámbito incluye **Grupos y sitios**, puede aplicar la etiqueta a un sitio, lo que establece el tipo de vínculo de uso compartido predeterminado para ese sitio. Para obtener información sobre cómo aplicar una etiqueta de confidencialidad a un sitio, consulte [Cómo aplicar etiquetas de confidencialidad a contenedores](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
@@ -100,18 +100,3 @@ Para configurar las opciones del tipo de vínculo de uso compartido predetermina
 
 > [!TIP]
 > También puede especificar que la etiqueta sea la etiqueta de confidencialidad predeterminada que se aplicará a los nuevos sitios o a los nuevos documentos, como una [configuración de directiva de etiqueta](sensitivity-labels.md#what-label-policies-can-do).
-
-### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
-
-Aunque puede especificar la etiqueta de confidencialidad por su nombre, se recomienda usar el GUID de etiqueta para evitar posibles confusiones sobre la especificación del nombre de la etiqueta o del nombre para mostrar. Para buscar el GUID y confirmar el ámbito de la etiqueta:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
-````
-
-Para quitar cualquiera de estas opciones avanzadas de una directiva de etiqueta, use la misma sintaxis de parámetros AdvancedSettings pero especifique un valor de cadena nulo. Por ejemplo:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
-

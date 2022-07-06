@@ -2,8 +2,8 @@
 title: Acerca de los roles de administrador de Intune en el Centro de administración de Microsoft 365
 f1.keywords:
 - CSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: El Centro de administración de Microsoft 365 permite administrar algunos roles de Microsoft Intune, que se asignan a funciones empresariales y conceden permisos para realizar tareas específicas.
-ms.openlocfilehash: 6058e08750bd5f2ee330d97669a7fe48ab591d73
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ad630e7eac800e3c3c931f7ac6244c1e19e117a8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574380"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631815"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Roles de administrador de Intune en el Centro de administración de Microsoft 365
 
@@ -52,14 +52,14 @@ Estos son los roles integrados que puede asignar:
 
 |Rol de administrador     |¿A quién se le debe asignar este rol?  |
 |---------|---------|
-|Administrador de aplicaciones     |   Asigne el rol de administrador de aplicaciones a los usuarios que administran el ciclo de vida de la aplicación para aplicaciones móviles, configuran aplicaciones administradas por directivas y ven la información de dispositivo y los perfiles de configuración.  |
-|Operador de asistencia     |   Asigne el rol del operador de asistencia a los usuarios que asignen aplicaciones y directivas a usuarios y dispositivos. |
-|Administrador de roles de Intune    |   Asigne el rol de administrador de Intune a los usuarios que puedan asignar permisos de Intune a otros administradores y puedan administrar roles de Intune personalizados e integrados.   |
-|Administrador de directivas y perfiles     |   Asigne el rol de administrador de directivas y perfiles para que los usuarios administren directivas de cumplimiento, perfiles de configuración y la inscripción de Apple.   |
-|Operador de solo lectura     |   Asigne el rol de operador de solo lectura a los usuarios que solo puedan ver usuarios, dispositivos, detalles de inscripción y configuraciones.   |
-|Administrador escolar     |   Asigne al rol de administrador escolar a usuarios para que tengan acceso completo a la administración de dispositivos, aplicaciones y configuraciones de Windows 10 e iOS en Intune para la Educación.   |
-|Administrador de equipo en la nube     |   Un administrador de equipos en la nube tiene acceso de lectura y escritura a todas las características de equipos en la nube ubicadas en la hoja de equipos en la nube.   |
-|Lector de equipo en la nube     |   Un lector de equipos en la nube tiene acceso de lectura a todas las características de equipos en la nube ubicadas en la hoja de equipos en la nube.   |
+|**Administrador de aplicaciones**     |   Asigne el rol de administrador de aplicaciones a los usuarios que administran el ciclo de vida de la aplicación para aplicaciones móviles, configuran aplicaciones administradas por directivas y ven la información de dispositivo y los perfiles de configuración.  |
+|**Operador de asistencia**     |   Asigne el rol del operador de asistencia a los usuarios que asignen aplicaciones y directivas a usuarios y dispositivos. |
+|**Administrador de roles de Intune**    |   Asigne el rol de administrador de Intune a los usuarios que puedan asignar permisos de Intune a otros administradores y puedan administrar roles de Intune personalizados e integrados.   |
+|**Administrador de directivas y perfiles**     |   Asigne el rol de administrador de directivas y perfiles para que los usuarios administren directivas de cumplimiento, perfiles de configuración y la inscripción de Apple.   |
+|**Operador de solo lectura**     |   Asigne el rol de operador de solo lectura a los usuarios que solo puedan ver usuarios, dispositivos, detalles de inscripción y configuraciones.   |
+|**Administrador escolar**     |   Asigne el rol de administrador de la escuela a los usuarios para obtener acceso completo para administrar dispositivos, aplicaciones y configuraciones Windows 10-11 e iOS en Intune for Education.   |
+|**Administrador de equipo en la nube**     |   Un administrador de equipos en la nube tiene acceso de lectura y escritura a todas las características de equipos en la nube ubicadas en la hoja de equipos en la nube.   |
+|**Lector de equipo en la nube**     |   Un lector de equipos en la nube tiene acceso de lectura a todas las características de equipos en la nube ubicadas en la hoja de equipos en la nube.   |
 
 ## <a name="microsoft-intune-custom-roles"></a>Roles personalizados de Microsoft Intune
 

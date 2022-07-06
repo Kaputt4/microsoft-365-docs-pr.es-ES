@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configurar SharePoint Syntex
-ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 3511719e4f396141217a2b4711f642c675ac781e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463151"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617246"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -57,13 +57,13 @@ Los usuarios que crean modelos en un [sitio del centro de contenido](/microsoft-
 
 ### <a name="licensing"></a>Licencias
 
-Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario debe tener asignadas las siguientes licencias:
+Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario debe tener una licencia asignada. Las licencias de SharePoint Syntex incluyen las siguientes aplicaciones (todas se deben asignar):
 
 - SharePoint Syntex
 - SharePoint Syntex: tipo SPO
 - Servicio de datos comunes para SharePoint Syntex
 
-Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Si tiene 300 o más usuarios con licencia, se proporciona una asignación de créditos de AI Builder cada mes.
+Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Cada mes se proporciona una asignación de créditos de AI Builder para cada usuario con licencia de SharePoint Syntex.
 
 Para obtener más información sobre las licencias de SharePoint Syntex, vea[ beginning="1" end="2">SharePoint Syntex licensing](syntex-licensing.md)
 

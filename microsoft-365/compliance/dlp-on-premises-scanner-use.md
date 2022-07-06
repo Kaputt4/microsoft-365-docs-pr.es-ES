@@ -1,5 +1,5 @@
 ---
-title: Usar el examinador de prevención de pérdida de datos locales de Microsoft 365
+title: Uso de un escáner local de prevención de pérdida de datos
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar el examinador local de prevención de pérdida de datos de Microsoft 365 para examinar los datos almacenados e implementar las acciones de protección para los recursos compartidos de archivos locales y las carpetas y bibliotecas de documentos de SharePoint local.
-ms.openlocfilehash: d726bfccf7dff2e95e3ccf996544f1db26bf09a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar la prevención de pérdidas de datos en el escáner local para examinar datos en reposo e implementar acciones de protección para recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint locales.
+ms.openlocfilehash: ae5ffce9e664ada6e7476bb02b40f4a5c279d441
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203152"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624187"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Usar el examinador de prevención de pérdida de datos locales de Microsoft 365
+# <a name="use-the-data-loss-prevention-on-premises-scanner"></a>Uso del escáner local de prevención de pérdida de datos
 
-Para ayudarle a familiarizarse con las características de DLP locales y la forma en la que se muestran en las directivas DLP, hemos recopilado algunos escenarios que puede seguir.
+Para ayudarle a familiarizarse con las características locales de prevención de pérdidas de datos de Microsoft Purview y cómo aparecen en las directivas DLP, hemos creado algunos escenarios que puede seguir.
 
 > [!IMPORTANT]
 > Estos escenarios DLP locales no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
@@ -48,7 +48,7 @@ Los datos del examinador de DLP local aparecen en varias áreas
 
 #### <a name="microsoft-365-audit-log"></a>Registro de auditoría de Microsoft 365
 
-Las coincidencias de reglas DLP están disponibles en la interfaz de usuario del registro de auditoría. Vea [Buscar en el registro de auditoría del Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md) o use [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en PowerShell.
+Las coincidencias de reglas DLP están disponibles en la interfaz de usuario del registro de auditoría; consulte [Buscar en el registro de auditoría en el portal de cumplimiento normativo de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md)  o accesible mediante [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### <a name="aip"></a>AIP
 

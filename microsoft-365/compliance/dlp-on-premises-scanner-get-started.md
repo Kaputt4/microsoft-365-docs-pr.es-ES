@@ -1,5 +1,5 @@
 ---
-title: Introducción al examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
+title: Introducción al escáner local de prevención de pérdida de datos
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,17 +19,17 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: Configuración del analizador local de prevención de pérdidas de datos
+ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159494"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625443"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
-Este artículo le guiará por los requisitos previos y la configuración para el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local.
+Este artículo le guiará por los requisitos previos y la configuración del escáner local de prevención de pérdidas de datos de Microsoft Purview.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -60,14 +60,14 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -100,7 +100,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
    > [!IMPORTANT]
    > Recuerde que el escáner ejecuta un escaneo delta del repositorio por defecto y los archivos que ya fueron escaneados en el ciclo de escaneo anterior serán omitidos a menos que el archivo haya sido cambiado o usted haya iniciado un re-escaneo completo. El re-escaneo completo puede ser iniciado usando la opción de **Escanee de nuevo todos los archivos** en la UI o ejecutando **Start-AIPScan-Reset**.
 
-6.  Abra la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el Centro de cumplimiento de Microsoft 365.
+6.  Abra la [página Prevención de pérdidas de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el portal de cumplimiento normativo de Microsoft Purview.
 
 7. Elija **crear una directiva de** y crear una directiva DLP de prueba. Vea [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md) si necesita ayuda para crear una directiva. Asegúrese de ejecutarlo en prueba hasta que se sienta cómodo con esta característica. Use estos parámetros para la directiva:
     1. Especifique el ámbito de la regla del examen de la DLP local para ubicaciones específicas si es necesario. Si especifica el ámbito de **ubicaciones** a **Todo**, todos los archivos examinados por el examinador estarán sujetos a la coincidencia y la aplicación de las reglas de DLP.
@@ -124,7 +124,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 
 ### <a name="viewing-dlp-on-premises-scanner-alerts-in-dlp-alerts-management-dashboard"></a>Ver las alertas del examinador local de DLP en el panel de administración de alertas de DLP
 
-1. Abra la [página sobre la prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el Centro de cumplimiento de Microsoft 365 y seleccione **Alertas**.
+1. Abra la [página Prevención de pérdidas de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el portal de cumplimiento normativo de Microsoft Purview y seleccione **Alertas**.
 
 2. Vea los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 
@@ -133,7 +133,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 > [!NOTE]
 > El examinador local requiere que se habilite la auditoría. En Microsoft 365 la auditoría está habilitada de forma predeterminada.
 
-1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) de su dominio en el Centro de cumplimiento de Microsoft 365 y seleccione Explorador de actividad.
+1. Abra la [página Clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) de su dominio en el portal de cumplimiento normativo de Microsoft Purview y seleccione Explorador de actividades.
 
 2. Vea los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para acceder y filtrar todos los datos de las ubicaciones de los examinadores locales.
 

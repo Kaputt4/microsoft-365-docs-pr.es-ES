@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2c86ff14326315596318e5fce11c7c26c5c22f85
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490407"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630861"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Revisar las acciones de corrección en Microsoft 365 Empresa Premium
 
@@ -32,9 +32,8 @@ Entre los ejemplos de acciones de corrección se incluyen el envío de un archiv
 
 **En este artículo se describe**:
 
-- [Uso del Centro de acción](#how-to-use-your-action-center)
-
-- [Tipos de acciones de corrección](#types-of-remediation-actions)
+- [Cómo utilizar el Centro de actividades](#how-to-use-your-action-center).
+- [ Tipos de acciones correctivas](#types-of-remediation-actions).
 
 
 ## <a name="how-to-use-your-action-center"></a>Cómo usar el Centro de acción

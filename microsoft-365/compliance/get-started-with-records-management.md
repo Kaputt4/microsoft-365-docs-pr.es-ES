@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 86d6f21963b33fde59cb498868b8ecec315e1ad8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286788"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629693"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ¿Está preparado para empezar a administrar el contenido de alto valor de su organización para las obligaciones legales, empresariales o reglamentarias con una solución de administración de registros en Microsoft 365? Use las siguientes instrucciones para emprezar:
 
@@ -85,6 +83,7 @@ Ayúdese de la siguiente tabla para asignar los requisitos empresariales a los e
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
 |Compruebe si el contenido se elimina de forma permanente al final de su período de retención|[Eliminación de registros](disposition.md#disposition-of-records) |
 | Supervise cómo y cuándo se aplican las opciones de conservar y eliminar la configuración de los elementos | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
+| Crear y administrar mediante programación etiquetas de retención, retención basada en eventos y automatizar tareas repetitivas para la administración de registros | [API de Microsoft Graph para la administración de registros (versión preliminar)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

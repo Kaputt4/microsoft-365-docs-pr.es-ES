@@ -2,8 +2,8 @@
 title: Administración de incidentes de seguridad
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre la administración de incidentes de seguridad
-ms.openlocfilehash: b13798d34b0bf353158520e6f9c7cdb20aa77453
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1b21adb5d173dff5bb9cfcda6e71faa9f2ff0bd4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574177"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633222"
 ---
 # <a name="security-incident-management"></a>Administración de incidentes de seguridad
 
@@ -42,6 +42,8 @@ Para obtener más información sobre las respuestas a incidentes, siga estos pas
 
 1. [Revise las recomendaciones de seguridad](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 
-1. [Revisar las acciones de corrección](m365bp-review-remediation-actions-devices.md).
+2. [Revisar las amenazas detectadas y tomar acciones](m365bp-review-threats-take-action.md).
 
-1. [Responder a una cuenta de correo electrónico en peligro](../security/office-365-security/responding-to-a-compromised-email-account.md).
+3. [Revisar las acciones de corrección](m365bp-review-remediation-actions-devices.md).
+
+4. [Responder a una cuenta de correo electrónico en peligro](../security/office-365-security/responding-to-a-compromised-email-account.md).
