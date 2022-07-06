@@ -18,17 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Agregue y administre alertas de actividad en el portal de cumplimiento de Microsoft Purview para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas.
-ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Agregar y administrar alertas de actividad en el portal de cumplimiento Microsoft Purview para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas.
+ms.openlocfilehash: a2f93ed9c0c73dfb6886e0860e63ec38e49294a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018105"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642270"
 ---
 # <a name="create-activity-alerts"></a>Creación de alertas de actividad
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede crear una alerta de actividad que le enviará una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, salvo que se le enviará un mensaje de correo electrónico cuando se produzca un evento para una actividad para la que ha creado una alerta.
 
@@ -39,7 +37,7 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmación de roles y configuración del registro de auditoría
 
-- Debe tener asignado el rol Configuración de la organización en el portal de cumplimiento de Microsoft Purview para administrar las alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento y Administración de la organización. Para obtener más información sobre cómo agregar miembros a grupos de roles, consulte [Proporcionar a los usuarios acceso al portal de cumplimiento de Microsoft Purview](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Debe tener asignado el rol Configuración de la organización en el portal de cumplimiento Microsoft Purview para administrar las alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento y Administración de la organización. Para obtener más información sobre cómo agregar miembros a grupos de roles, vea [Proporcionar a los usuarios acceso a la portal de cumplimiento Microsoft Purview](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 - Usted (u otro administrador) debe activar primero el registro de auditoría de su organización para poder empezar a usar alertas de actividad. Para ello, solo tiene que hacer clic en **Iniciar la grabación de la actividad de usuario y administrador** en la página **Alertas de actividad** . (Si no ve este vínculo, la auditoría ya se ha activado para su organización). También puede activar la auditoría en la página **Búsqueda de registros** de auditoría en el portal de cumplimiento (vaya a **Auditoría**). Solo tiene que hacerlo una vez para su organización.
 

@@ -13,17 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: 1f94f49f93310ea4b40d588c7c43ecce7ec535cc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo realizar la primera ronda de entrenamiento para la codificación predictiva.
+ms.openlocfilehash: 509e47372655691130be9a4621c973b5e6575f80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091465"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642358"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenamiento de un modelo de codificación predictiva (versión preliminar)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium), el siguiente paso consiste en realizar la primera ronda de entrenamiento para entrenar el modelo sobre el contenido relevante y no relevante del conjunto de revisión. Después de completar la primera ronda de entrenamiento, puede realizar rondas de entrenamiento posteriores para mejorar la capacidad del modelo de predecir contenido relevante y no relevante.
 
@@ -31,13 +29,13 @@ Para revisar el flujo de trabajo de codificación predictiva, consulte [Informac
 
 ## <a name="before-you-train-a-model"></a>Antes de entrenar un modelo
 
-- Durante una ronda de entrenamiento, etiquete los elementos como **Pertinentes** o **No pertinentes** en función de la relevancia del contenido del documento. No base su decisión en los valores de los campos de metadatos. Por ejemplo, para los mensajes de correo electrónico o las conversaciones Teams, no base la decisión de etiquetado en los participantes del mensaje.
+- Durante una ronda de entrenamiento, etiquete los elementos como **Pertinentes** o **No pertinentes** en función de la relevancia del contenido del documento. No base su decisión en los valores de los campos de metadatos. Por ejemplo, para mensajes de correo electrónico o conversaciones de Teams, no base la decisión de etiquetado en los participantes del mensaje.
 
 ## <a name="train-a-model-for-the-first-time"></a>Entrenamiento de un modelo por primera vez
 
-1. En el portal de cumplimiento de Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
+1. En el portal de cumplimiento Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
 
-2. Abra un conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
+2. Abra un conjunto de revisión y, a continuación, haga clic en **Análisis** > **Administrar codificación predictiva (versión preliminar).**
 
 3. En la página **Modelos de codificación predictiva (versión preliminar),** seleccione el modelo que desea entrenar.
 
@@ -93,6 +91,6 @@ Después de realizar rondas de entrenamiento posteriores (después de la primera
 
 - El modelo actualizado vuelve a procesar todos los elementos del conjunto de revisión y asigna a cada elemento una puntuación de predicción actualizada.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de realizar la primera ronda de entrenamiento, puede realizar más rondas de entrenamiento o aplicar el filtro de puntuación de predicción del modelo al conjunto de revisión para ver los elementos que el modelo ha predicho como pertinentes o no pertinentes. Para obtener más información, vea [Aplicar un filtro de puntuación de predicción a un conjunto de revisión](predictive-coding-apply-prediction-filter.md).

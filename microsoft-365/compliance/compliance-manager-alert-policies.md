@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview directivas de alertas y alertas del Administrador de cumplimiento
+title: Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,17 +17,15 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo crear alertas para las actividades de Microsoft Purview Administrador de cumplimiento que pueden afectar a la puntuación de cumplimiento.
-ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Obtenga información sobre cómo crear alertas para actividades en el Administrador de cumplimiento de Microsoft Purview que pueden afectar a la puntuación de cumplimiento.
+ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839457"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642248"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview directivas de alertas y alertas del Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
 
 **En este artículo:** Obtenga información sobre cómo **establecer alertas** para determinadas actividades en el Administrador de cumplimiento, cómo administrar alertas y cómo **crear directivas de alertas** para definir condiciones de alerta.
 
@@ -73,7 +71,7 @@ En la tabla siguiente se describe qué usuarios pueden crear y editar alertas y 
 Obtenga más información sobre [los roles de Azure en la portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
-| Función | Puede crear y editar directivas | Puede editar alertas | 
+| Role | Puede crear y editar directivas | Puede editar alertas | 
 | :------------- | :-------------: | :------------: |
 | **Administración del administrador de cumplimiento**| Sí  | Sí | 
 | **Evaluador del Administrador de cumplimiento**| Sí | Sí | 

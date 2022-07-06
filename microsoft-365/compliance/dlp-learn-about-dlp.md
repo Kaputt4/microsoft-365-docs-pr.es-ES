@@ -14,33 +14,31 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo proteger la información confidencial mediante Microsoft Purview directivas y herramientas de prevención de pérdida de datos y realice un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+description: Obtenga información sobre cómo proteger su información confidencial mediante las directivas y herramientas de prevención de pérdida de datos de Microsoft Purview y realice un recorrido por el ciclo de vida de DLP.
+ms.openlocfilehash: 2bcc82f0609f617219d626f8180e7f4c9df51060
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669702"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641918"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las organizaciones tienen información confidencial bajo su control, como datos financieros, datos propietarios, números de tarjetas de crédito, registros de salud o números de seguridad social. Para poder proteger estos datos confidenciales y reducir el riesgo, necesitan una manera de evitar que sus usuarios los compartan inapropiadamente con personas que no deberían tenerlos. Esta práctica se denomina prevención de pérdida de datos.
 
 En Microsoft Purview, se implementa la prevención de pérdida de datos mediante la definición y aplicación de directivas DLP. Con una directiva DLP, puede identificar, supervisar y proteger automáticamente elementos confidenciales en:
 
-- Microsoft 365 servicios como Teams, Exchange, SharePoint y OneDrive
-- Office aplicaciones como Word, Excel y PowerPoint
+- Servicios de Microsoft 365 como Teams, Exchange, SharePoint y OneDrive
+- Aplicaciones de Office como Word, Excel y PowerPoint
 - puntos de conexión Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores)
 - aplicaciones en la nube que no son de Microsoft
-- recursos compartidos de archivos locales y SharePoint locales.
+- recursos compartidos de archivos locales y SharePoint local.
 
 DLP detecta elementos confidenciales mediante el análisis de contenido profundo, no solo mediante un simple examen de texto. El contenido se analiza para buscar coincidencias de datos principales con palabras clave, mediante la evaluación de expresiones regulares, mediante la validación de funciones internas y las coincidencias de datos secundarios que están cerca de la coincidencia de datos principal. Además, DLP también usa algoritmos de aprendizaje automático y otros métodos para detectar contenido que coincida con las directivas DLP.
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP forma parte de la oferta de Microsoft Purview más grande
 
-DLP es solo una de las herramientas de Microsoft Purview que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las demás herramientas del conjunto de herramientas de Microsoft Purview, cómo se interrelacionan y funcionan mejor juntos.  Consulte[, Microsoft Purview herramientas](protect-information.md) para obtener más información sobre el proceso de protección de la información.
+DLP es solo una de las herramientas de Microsoft Purview que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las demás herramientas del conjunto de herramientas de Microsoft Purview, cómo se interrelacionan y funcionan mejor juntos.  Consulte Herramientas de [Microsoft Purview](protect-information.md) para obtener más información sobre el proceso de protección de la información.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Acciones de protección de las directivas DLP
 
@@ -50,9 +48,9 @@ Las directivas DLP son la forma de supervisar las actividades que los usuarios r
 - bloquear el uso compartido y, a través de una sugerencia de directiva, permitir al usuario invalidar el bloque y capturar la justificación de los usuarios
 - bloquear el uso compartido sin la opción de invalidación
 - para los datos en reposo, los elementos confidenciales se pueden bloquear y mover a una ubicación de cuarentena segura
-- para Teams chat, no se mostrará la información confidencial.
+- para el chat de Teams, no se mostrará la información confidencial.
 
-Todas las actividades supervisadas de DLP se registran en el [registro de auditoría de Microsoft 365](search-the-audit-log-in-security-and-compliance.md) de forma predeterminada y se enrutan al [Explorador de actividad](data-classification-activity-explorer.md). Cuando un usuario realiza una acción que cumple los criterios de una directiva DLP y tiene alertas configuradas, DLP proporciona alertas en el [panel de administración de alertas DLP](dlp-configure-view-alerts-policies.md).
+Todas las actividades supervisadas por DLP se registran en el [registro de auditoría de Microsoft 365](search-the-audit-log-in-security-and-compliance.md) de forma predeterminada y se enrutan al [Explorador de actividad](data-classification-activity-explorer.md). Cuando un usuario realiza una acción que cumple los criterios de una directiva DLP y tiene alertas configuradas, DLP proporciona alertas en el [panel de administración de alertas DLP](dlp-configure-view-alerts-policies.md).
 
 ## <a name="dlp-lifecycle"></a>Ciclo de vida de DLP
 
@@ -71,7 +69,7 @@ La supervisión y protección dlp son nativas de las aplicaciones que los usuari
 
 **Planeamiento de tecnología para DLP**
 
-Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en Microsoft 365 servicios, Windows 10, Windows 11 y dispositivos de macOS (Catalina 10.15 y versiones posteriores), recursos compartidos de archivos locales y SharePoint locales. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
+Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en los servicios de Microsoft 365, Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y versiones posteriores), recursos compartidos de archivos locales y SharePoint local. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
 
 **Planeamiento de procesos empresariales para DLP**
 
@@ -91,12 +89,12 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Sitios de SharePoint Online
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores)
 - Repositorios locales
 - Sitios de PowerBI
 
-Cada uno de ellos tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden colocar bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del analizador de Azure Information Protection (AIP). Tendrá que preparar el entorno, codificar las directivas de borrador y probarlas exhaustivamente antes de activar las acciones de bloqueo.
+Cada uno de ellos tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange Online, se pueden colocar bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del analizador de Azure Information Protection (AIP). Tendrá que preparar el entorno, codificar las directivas de borrador y probarlas exhaustivamente antes de activar las acciones de bloqueo.
 
 ### <a name="deploy-your-policies-in-production"></a>Implementación de las directivas en producción
 
@@ -161,10 +159,10 @@ ubicación | incluir/excluir por|
 
 4. **Elija la acción que debe realizarse cuando se cumplan las condiciones de la directiva** : las acciones dependen de la ubicación en la que se produce la actividad.  Por ejemplo:
 
-- SharePoint/Exchange/OneDrive: bloquear el acceso al contenido de las personas que están fuera de su organización. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico indicándole que está realizando una acción prohibida por la directiva DLP.
-- Teams chat y canal: impedir que se comparta información confidencial en el chat o canal
-- Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores): Auditar o restringir la copia de un elemento confidencial a un dispositivo USB extraíble
-- Office Aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento de riesgo y bloquea o bloquea, pero permite la invalidación.
+- SharePoint,Exchange/OneDrive: bloquee el acceso al contenido de las personas que están fuera de su organización. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico indicándole que está realizando una acción prohibida por la directiva DLP.
+- Chat y canal de Teams: impedir que la información confidencial se comparta en el chat o canal
+- Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores): Auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
+- Aplicaciones de Office: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento de riesgo y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mover el archivo desde donde se almacena a una carpeta de cuarentena
 
 > [!NOTE]
@@ -186,7 +184,7 @@ Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza
 
 ## <a name="viewing-policy-application-results"></a>Visualización de los resultados de la aplicación de directiva
 
-DLP informa de una gran cantidad de información en Microsoft Purview de la supervisión, las coincidencias y acciones de directivas y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría de portal de cumplimiento Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
+DLP informa a Microsoft Purview de una gran cantidad de información sobre la supervisión, las coincidencias de directivas y las acciones, y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría de portal de cumplimiento Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
 
 ### <a name="dlp-alerts-dashboard"></a>Panel de alertas DLP
 
@@ -214,9 +212,9 @@ La pestaña Explorador de actividad de la página DLP tiene el filtro *De activi
 
 ![captura de pantalla del explorador de actividad con ámbito DLPRuleMatch.](../media/dlp-activity-explorer.png)
 
-Para obtener más información, consulte [Comenzar con el explorador de actividad](data-classification-activity-explorer.md).
+Para obtener más información, consulte [Introducción al explorador de actividad](data-classification-activity-explorer.md).
 
-Para más información sobre Microsoft Purview DLP, consulte:
+Para obtener más información sobre DLP de Microsoft Purview, consulte:
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)](dlp-teams-default-policy.md)
@@ -224,7 +222,7 @@ Para más información sobre Microsoft Purview DLP, consulte:
 - [Obtenga información sobre el Centro de cumplimiento de Microsoft](dlp-chrome-learn-about.md)
 - [Obtenga información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
 
-Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las regulaciones de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft Purview](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las regulaciones de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licencias y suscripciones
 

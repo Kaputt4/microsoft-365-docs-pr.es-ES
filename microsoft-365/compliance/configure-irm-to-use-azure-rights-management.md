@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Este artículo contiene información sobre las nuevas funcionalidades de Cifrado de mensajes de Office 365 (OME).
-ms.openlocfilehash: ec60ceb2843c03f3d91c95c2c4eca2d56e393a44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Este artículo contiene información sobre Cifrado de mensajes de Microsoft Purview.
+ms.openlocfilehash: 978d6356531da6b29bfe7b557cb419ba2958f040
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153179"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642226"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurar IRM para usar Azure Rights Management
 
-Con el lanzamiento de las nuevas funcionalidades para Cifrado de mensajes de Office 365 (OME), ya no es necesario configurar IRM por separado. Microsoft no recomienda configurar nuevas implementaciones con OME e IRM heredados con Azure Rights Management. Para obtener más información acerca de las nuevas funcionalidades de OME, consulte [el Cifrado de mensajes de Office 365 faq](./ome-faq.yml). Si está listo para empezar a usar las nuevas funcionalidades de OME dentro de su organización, consulte Configurar nuevas funcionalidades de Cifrado de mensajes de Office 365 integradas en [Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
+Con la versión de Cifrado de mensajes de Microsoft Purview, ya no es necesario configurar IRM por separado. Microsoft no recomienda configurar nuevas implementaciones con OME e IRM heredados con Azure Rights Management. Para obtener más información sobre la Cifrado de mensajes de Microsoft Purview, consulte las [preguntas más frecuentes sobre el cifrado de mensajes](./ome-faq.yml). Si está listo para empezar a usar Cifrado de mensajes de Microsoft Purview dentro de su organización, consulte [Configuración de Cifrado de mensajes de Microsoft Purview](./set-up-new-message-encryption-capabilities.md).

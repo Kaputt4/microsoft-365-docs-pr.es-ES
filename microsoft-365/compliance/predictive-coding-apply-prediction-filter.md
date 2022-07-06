@@ -14,18 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predijo como pertinentes o no pertinentes.
-ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7a05b85fa81396da2c9d66eddb68b542b7eb8eba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096620"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642412"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de revisión (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium) y entrenarlo hasta el punto en que sea estable, puede aplicar el filtro de puntuación de predicción para mostrar los elementos de conjunto de revisión que el modelo ha determinado son pertinentes (o no pertinentes). Al crear un modelo, también se crea un filtro de puntuación de predicción correspondiente. Puede usar este filtro para mostrar los elementos asignados a una puntuación de predicción dentro de un intervalo especificado. En general, las puntuaciones de predicción entre **0** y **.5** se asignan a elementos que el modelo ha predicho no son pertinentes. Las puntuaciones de predicción asignadas a elementos entre **.5** y **1.0** son elementos que el modelo ha predicho que son pertinentes.
+Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium) y entrenarlo hasta el punto en que sea estable, puede aplicar el filtro de puntuación de predicción para mostrar los elementos del conjunto de revisión que el modelo ha determinado son pertinentes (o no pertinentes). Al crear un modelo, también se crea un filtro de puntuación de predicción correspondiente. Puede usar este filtro para mostrar los elementos asignados a una puntuación de predicción dentro de un intervalo especificado. En general, las puntuaciones de predicción entre **0** y **.5** se asignan a elementos que el modelo ha predicho no son pertinentes. Las puntuaciones de predicción asignadas a elementos entre **.5** y **1.0** son elementos que el modelo ha predicho que son pertinentes.
 
 Estas son dos maneras de usar el filtro de puntuación de predicción:
 
@@ -41,7 +39,7 @@ Estas son dos maneras de usar el filtro de puntuación de predicción:
 
 ## <a name="apply-a-prediction-score-filter"></a>Aplicación de un filtro de puntuación de predicción
 
-1. En el portal de cumplimiento de Microsoft Purview, abra el caso de eDiscovery (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, abra el conjunto de revisiones.
+1. En el portal de cumplimiento Microsoft Purview, abra el caso eDiscovery (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, abra el conjunto de revisiones.
 
    ![Haga clic en Filtros para mostrar la página desplegable Filtros.](..\media\PredictionScoreFilter0.png)   
 

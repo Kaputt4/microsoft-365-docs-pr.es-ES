@@ -1,5 +1,5 @@
 ---
-title: Decisión basada en los resultados de eDiscovery (Premium)
+title: Decisión basada en los resultados en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,16 +17,14 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Obtenga información sobre cómo la pestaña Decidir en eDiscovery (Premium) proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de archivos de casos.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: abf5ef38f253a99709ad3cb3c02793e36db5e8fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621802"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642050"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decisiones basadas en resultados de relevancia en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 En el módulo Relevancia de eDiscovery (Premium), la pestaña Decidir proporciona información adicional para ver y usar estadísticas de compatibilidad con decisiones para determinar el tamaño del conjunto de revisión de archivos de casos.
   

@@ -1,5 +1,5 @@
 ---
-title: Cómo Exchange Online usa Seguridad de la capa de transporte (TLS) para proteger las conexiones de correo electrónico
+title: Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,27 +17,27 @@ ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Obtenga información sobre cómo Exchange Online y Microsoft 365 usar seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: 7f6d4cb20299e98fc186409977c8ef7b36d329ca
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
+ms.openlocfilehash: 93f71e38e3063aeec0c423dbfea25ac463a3e46f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760831"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641568"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 
-Obtenga información sobre cómo Exchange Online y Microsoft 365 usar seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. También proporciona información sobre el certificado emitido por Microsoft para Exchange Online.
+Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. También proporciona información sobre el certificado emitido por Microsoft para Exchange Online.
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Conceptos básicos de TLS para Microsoft 365 y Exchange Online
 
 TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza a Capa de sockets seguros (SSL) y a menudo se conoce como SSL 3.1. Exchange Online usa TLS para cifrar las conexiones entre los servidores de Exchange y las conexiones entre los servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS, ese mensaje no se cifra necesariamente. TLS no cifra el mensaje, solo la conexión.
   
-Si desea cifrar el mensaje, use una tecnología de cifrado que cifre el contenido del mensaje. Por ejemplo, puede usar Office Cifrado de mensajes o S/MIME. Consulte [Cifrado de correo electrónico en Office 365](email-encryption.md) y cifrado de mensajes [de Office 365 (OME)](ome.md) para obtener información sobre el cifrado de mensajes en Office 365.
+Si desea cifrar el mensaje, use una tecnología de cifrado que cifre el contenido del mensaje. Por ejemplo, puede usar Cifrado de mensajes de Microsoft Purview o S/MIME. Consulte [Cifrado de correo electrónico en Office 365](email-encryption.md) y [Cifrado de](ome.md) mensajes para obtener información sobre el cifrado de mensajes en Office 365.
   
 Use TLS en situaciones en las que quiera configurar un canal seguro de correspondencia entre Microsoft y su organización local u otra organización, como un asociado. Exchange Online siempre intenta usar TLS primero para proteger el correo electrónico, pero no puede hacerlo si la otra parte no ofrece seguridad TLS. Siga leyendo para obtener información sobre cómo proteger todo el correo que va a los servidores locales o a asociados importantes con *conectores*.
 
-Para proporcionar el mejor cifrado de su clase a nuestros clientes, Microsoft ha dejado de usar las versiones 1.0 y 1.1 de Seguridad de la capa de transporte (TLS) en [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) y [Office 365 GCC](tls-1-2-in-office-365-gcc.md). Sin embargo, puede seguir usando una conexión SMTP sin cifrar sin tls. No se recomienda la transmisión de correo electrónico sin cifrado.  
+Para proporcionar el mejor cifrado de su clase a nuestros clientes, Microsoft ha dejado de usar las versiones 1.0 y 1.1 de seguridad de la capa de transporte (TLS) en [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) y [Office 365 GCC](tls-1-2-in-office-365-gcc.md). Sin embargo, puede seguir usando una conexión SMTP sin cifrar sin tls. No se recomienda la transmisión de correo electrónico sin cifrado.  
   
 ## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Empleo de TLS por parte de Exchange Online entre clientes de Exchange Online
 
@@ -51,7 +51,7 @@ Si decide configurar TLS entre su organización y una organización asociada de 
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS e implementaciones híbridas de Exchange Server
 
-Si va a administrar una implementación de Exchange híbrida, el servidor de Exchange local debe autenticarse para Microsoft 365 mediante un certificado de seguridad para enviar correo a los destinatarios cuyos buzones solo están en Office 365. Como resultado, debe administrar sus propios certificados de seguridad para los servidores de Exchange locales. También tiene que almacenar y mantener de forma segura estos certificados de servidor. Para obtener más información sobre cómo administrar certificados en implementaciones híbridas, consulte [Requisitos de certificados para implementaciones híbridas](/exchange/certificate-requirements).
+Si va a administrar una implementación híbrida de Exchange, el servidor exchange local debe autenticarse en Microsoft 365 mediante un certificado de seguridad para enviar correo a los destinatarios cuyos buzones solo están en Office 365. Como resultado, debe administrar sus propios certificados de seguridad para los servidores de Exchange locales. También tiene que almacenar y mantener de forma segura estos certificados de servidor. Para obtener más información sobre cómo administrar certificados en implementaciones híbridas, consulte [Requisitos de certificados para implementaciones híbridas](/exchange/certificate-requirements).
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Configurar TLS forzado para Exchange Online en Office 365
 
@@ -71,11 +71,11 @@ En la tabla siguiente se describe la información del certificado usada por Exch
 |Unidad de organización|www.digicert.com|
 |Nivel de la clave de certificado|2048|
 
-## <a name="get-more-information-about-tls-certificates-and-microsoft-365-and-download-certificates"></a>Obtenga más información sobre TLS, certificados y certificados de Microsoft 365 y descarga.
+## <a name="get-more-information-about-tls-certificates-and-microsoft-365-and-download-certificates"></a>Obtenga más información sobre TLS, certificados y Microsoft 365 y descargue certificados.
 
-[Microsoft 365 cadenas de cifrado y descargas de certificados](encryption-office-365-certificate-chains.md)
+[Cadenas de cifrado y descargas de certificados de Microsoft 365](encryption-office-365-certificate-chains.md)
 
-[Microsoft 365 cadenas de cifrado y descargas de certificados: DOD y GCC High](encryption-office-365-certificate-chains-itar.md)
+[Cadenas de cifrado y descargas de certificados de Microsoft 365: DOD y GCC High](encryption-office-365-certificate-chains-itar.md)
 
 Para obtener una lista de conjuntos de cifrado admitidos, consulte [Detalles de referencia técnica sobre el cifrado](technical-reference-details-about-encryption.md).
   

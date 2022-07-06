@@ -17,18 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo recopilar información de diagnóstico de eDiscovery para un caso de Soporte técnico de Microsoft.
-ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 46c85e822daf82cc88e6bf89ceea97dede3e2276
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014440"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641820"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Recopilar información de diagnóstico de eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En ocasiones, los ingenieros de Soporte técnico de Microsoft requieren información específica sobre el problema al abrir un caso de soporte técnico relacionado con eDiscovery de Microsoft Purview (estándar) o eDiscovery de Microsoft Purview (Premium). En este artículo se proporcionan instrucciones sobre cómo recopilar información de diagnóstico para ayudar a los ingenieros de soporte técnico a investigar y resolver problemas. Normalmente, no es necesario recopilar esta información hasta que un ingeniero de Soporte técnico de Microsoft lo solicite.
+En ocasiones, los ingenieros de Soporte técnico de Microsoft requieren información específica sobre el problema al abrir un caso de soporte técnico relacionado con Microsoft Purview eDiscovery (Estándar) o Microsoft Purview eDiscovery (Premium). En este artículo se proporcionan instrucciones sobre cómo recopilar información de diagnóstico para ayudar a los ingenieros de soporte técnico a investigar y resolver problemas. Normalmente, no es necesario recopilar esta información hasta que un ingeniero de Soporte técnico de Microsoft lo solicite.
 
 > [!IMPORTANT]
 > La salida de los cmdlets y la información de diagnóstico descrita en este artículo puede incluir información confidencial sobre litigios o investigaciones internas en su organización. Antes de enviar la información de diagnóstico sin procesar a Soporte técnico de Microsoft, debe revisar la información y redactar cualquier información confidencial (como nombres u otra información sobre las partes en litigio o investigación) reemplazando por `XXXXXXX`. El uso de este método también indicará al ingeniero de Soporte técnico de Microsoft que se redactó la información.
@@ -42,7 +40,7 @@ Para ejecutar los siguientes cmdlets, [conéctese a PowerShell</span> de cumplim
 Después de revisar el archivo de texto generado y redactar información confidencial, envíela al ingeniero de Soporte técnico de Microsoft que trabaja en su caso.
 
 > [!NOTE]
-> También puede ejecutar los comandos de esta sección para recopilar información de diagnóstico de las búsquedas y exportaciones que aparecen en la página **Búsqueda de contenido** del portal de cumplimiento de Microsoft Purview.
+> También puede ejecutar los comandos de esta sección para recopilar información de diagnóstico de las búsquedas y exportaciones enumeradas en la página **Búsqueda de contenido** de la portal de cumplimiento Microsoft Purview.
 
 ### <a name="collect-information-about-searches"></a>Recopilación de información sobre búsquedas
 
@@ -76,19 +74,19 @@ A veces, no es evidente qué información necesita Soporte técnico de Microsoft
 Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>Recopilar información de diagnóstico para eDiscovery (Premium)
+## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>Recopilación de información de diagnóstico para eDiscovery (Premium)
 
-La **pestaña Configuración** en un caso de exhibición de documentos electrónicos (Premium) permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que pueda pegarla en un archivo de texto y enviarla a Soporte técnico de Microsoft.
+La pestaña **Configuración** de un caso de exhibición de documentos electrónicos (Premium) permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que pueda pegarla en un archivo de texto y enviarla a Soporte técnico de Microsoft.
 
 1. Vaya al portal de cumplimiento y seleccione **eDiscovery Advanced (EDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced).**</a>
 
-2. Seleccione un caso y, a continuación, haga clic en la pestaña **Configuración**.
+2. Seleccione un caso y, a continuación, haga clic en la pestaña **Configuración** .
 
 3. En **Información del caso**, haga clic en **Seleccionar**.
 
 4. En la página de control flotante, haga clic en **Acciones** > **Copiar información de soporte** técnico para copiar la información en el Portapapeles.
 
-5. Abra un archivo de texto (en Bloc de notas) y pegue la información en el archivo de texto.
+5. Abra un archivo de texto (en el Bloc de notas) y pegue la información en el archivo de texto.
 
 6. Guarde el archivo de texto y asígnele un nombre similar `AeD Diagnostic Info YYYY.MM.DD` (por ejemplo, `AeD Diagnostic Info 2020.11.03`).
 

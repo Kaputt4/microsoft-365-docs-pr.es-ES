@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar el informe para refinar la directiva predeterminada de prevención de pérdida de datos (DLP) de su organización.
-ms.openlocfilehash: 893aae6dfbc4e5c9fcf48a8eec53694352ead4f2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d47568f009745edaa8205ce65b4de9b481f58139
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753460"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641502"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Antes de crear la primera directiva de Prevención de pérdida de datos de Microsoft Purview (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a proteger el contenido confidencial, ya que le notifican cuándo se compartieron con alguien ajeno a su organización el correo electrónico o los documentos que contienen un número de tarjeta de crédito. Verá esta recomendación en la página **Inicio** de la portal de cumplimiento Microsoft Purview. 
   
@@ -62,7 +60,7 @@ Para obtener más información sobre los informes de incidentes o la restricció
   
 Si desea cambiar estas opciones más adelante, puede editar la directiva DLP predeterminada en cualquier momento; consulte la sección siguiente.
   
-![Configuración para el widget denominado Protección adicional del contenido compartido.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Configuración del widget denominado Protección adicional del contenido compartido.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Editar la directiva DLP predeterminada
 
@@ -78,7 +76,7 @@ El widget denominado **Proteger más contenido compartido** aparece en la secci�
   
 Este widget solo aparece cuando:
   
-- No hay directivas de prevención de pérdida de datos en el centro de administración de portal de cumplimiento Microsoft Purview o Exchange. Este widget está diseñado para ayudarle a empezar a trabajar con DLP, por lo que no aparece si ya tiene directivas DLP.
+- No hay directivas de prevención de pérdida de datos en el portal de cumplimiento Microsoft Purview o centro de administración de Exchange. Este widget está diseñado para ayudarle a empezar a trabajar con DLP, por lo que no aparece si ya tiene directivas DLP.
     
 - El contenido que contiene al menos una tarjeta de crédito se ha compartido con alguien de fuera de la organización en los últimos 30 días.
     

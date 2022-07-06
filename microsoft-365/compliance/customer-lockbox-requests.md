@@ -18,20 +18,18 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a los datos cuando se produce un problema.
-ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 7094de30722c4419e3c1c33d0c06f2cdb6d37290
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953834"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642182"
 ---
 # <a name="microsoft-purview-customer-lockbox"></a>Caja de seguridad del cliente de Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 En este artículo se proporcionan instrucciones de implementación y configuración para la Caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes de acceso a datos en Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams. Para recomendar soporte técnico para otros servicios, envíe una solicitud en el [Portal de comentarios](https://feedbackportal.microsoft.com).
 
-Para ver las opciones para obtener licencias para que los usuarios se beneficien de las ofertas de Microsoft Purview, consulte la [guía de licencias de Microsoft 365 para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Para ver las opciones para obtener licencias para que los usuarios se beneficien de las ofertas de Microsoft Purview, consulte la [guía de licencias de Microsoft 365 para obtener seguridad & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 La Caja de seguridad del cliente garantiza que Microsoft no puede acceder a su contenido para realizar operaciones de servicio sin su aprobación explícita. La Caja de seguridad del cliente le lleva al proceso de flujo de trabajo de aprobación que Microsoft usa para asegurarse de que solo las solicitudes autorizadas permiten el acceso al contenido. Para más información sobre el proceso de flujo de trabajo de Microsoft, consulte [Administración de acceso con privilegios](privileged-access-management-solution-overview.md).
 
@@ -77,7 +75,7 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 1. Con una cuenta profesional o educativa que tenga asignado el rol de **aprobador de acceso a la caja de seguridad del cliente** o el administrador global, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión.
 
-2. Elija **Configuración** >  **Org Configuración** >  **Seguridad & privacidad**.
+2. Elija **Configuración Configuración** > **de la** >  organización **Seguridad & privacidad**.
 
 3. Seleccione **Seguridad & privacidad** y, a continuación, seleccione **Caja de seguridad del cliente** en la columna de la izquierda. Active la casilla **Requerir aprobación para todas las solicitudes de acceso a datos** y guarde los cambios para activar la característica.
 
@@ -108,11 +106,11 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 ## <a name="auditing-customer-lockbox-requests"></a>Solicitudes de auditoría de caja de seguridad del cliente
 
-Los registros de auditoría correspondientes a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Microsoft 365. Puede acceder a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el portal de cumplimiento de Microsoft Purview. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de seguridad del cliente y las acciones realizadas por ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría correspondientes a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Microsoft 365. Puede acceder a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el portal de cumplimiento Microsoft Purview. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de seguridad del cliente y las acciones realizadas por ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Busque en el registro de auditoría la actividad relacionada con las solicitudes de caja de seguridad del cliente.
 
-Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de la Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Configurar Microsoft Purview Audit (Estándar).](set-up-basic-audit.md) Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registros de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
+Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de la Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Configurar Auditoría de Microsoft Purview (estándar).](set-up-basic-audit.md) Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registros de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
 
 1. Ve a <https://compliance.microsoft.com>.
   
@@ -154,14 +152,14 @@ También puede exportar los resultados de la búsqueda de registros de auditorí
 
 Para exportar registros de auditoría, use los pasos anteriores para buscar en el registro de auditoría. Una vez completada la búsqueda, seleccione **Exportar > Descargar todos los resultados** en la parte superior de la página de resultados de búsqueda. Una vez completado el proceso de exportación, puede descargar el archivo CSV en el equipo local. Para obtener instrucciones más detalladas, consulte [Exportación, configuración y visualización de registros de auditoría](export-view-audit-log-records.md).
 
-Después de descargar el archivo, puede abrirlo en Excel y, a continuación, filtrar por la columna **Operaciones** para mostrar los registros de auditoría de las actividades **Set-AccessToCustomerDataRequest**. También puede filtrar por la columna **UserIds** (con el valor **Operador de Microsoft**) para mostrar los registros de auditoría de las actividades realizadas por ingenieros de Microsoft.
+Después de descargar el archivo, puede abrirlo en Excel y, a continuación, filtrar en la columna **Operaciones** para mostrar los registros de auditoría de las actividades **Set-AccessToCustomerDataRequest** . También puede filtrar por la columna **UserIds** (con el valor **Operador de Microsoft**) para mostrar los registros de auditoría de las actividades realizadas por ingenieros de Microsoft.
 
 > [!NOTE]
-> Al ver los registros de auditoría en el archivo CSV, se incluye información adicional en la columna **AuditData** . La información de esta columna está contenida en un objeto JSON, que contiene varias propiedades que se configuran como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de Power Query de Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto facilita la interpretación de esta información. Para obtener instrucciones detalladas, consulte [Formatear el registro de auditoría exportado mediante el Editor de Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+> Al ver los registros de auditoría en el archivo CSV, se incluye información adicional en la columna **AuditData** . La información de esta columna está contenida en un objeto JSON, que contiene varias propiedades que se configuran como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de Power Query en Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto facilita la interpretación de esta información. Para obtener instrucciones detalladas, consulte [Formatear el registro de auditoría exportado mediante el Editor de Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Uso de PowerShell para buscar y exportar registros de auditoría
 
-Una alternativa al uso de la herramienta de búsqueda de auditoría en el portal de cumplimiento de Microsoft Purview es ejecutar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell. Una ventaja del uso de PowerShell es que puede buscar específicamente actividades **set-accessToCustomerDataRequest** o actividades realizadas por ingenieros de Microsoft relacionadas con una solicitud de caja de seguridad del cliente.
+Una alternativa al uso de la herramienta de búsqueda de auditoría en el portal de cumplimiento Microsoft Purview es ejecutar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell. Una ventaja del uso de PowerShell es que puede buscar específicamente actividades **set-accessToCustomerDataRequest** o actividades realizadas por ingenieros de Microsoft relacionadas con una solicitud de caja de seguridad del cliente.
 
 Después de [conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), ejecute uno de los siguientes comandos. Reemplace los marcadores de posición por un intervalo de fechas específico.
 
@@ -209,19 +207,19 @@ Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una 
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
-### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿A qué servicios Microsoft 365 se aplica La caja de seguridad del cliente?
+### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿A qué servicios de Microsoft 365 se aplica La caja de seguridad del cliente?
 
 La Caja de seguridad del cliente se admite actualmente en Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams.
 
 ### <a name="is-customer-lockbox-available-to-all-customers"></a>¿Está disponible la caja de seguridad del cliente para todos los clientes?
 
-La caja de seguridad del cliente se incluye con las suscripciones de Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una suscripción de Information Protection y cumplimiento o un complemento de cumplimiento avanzado. Consulte [Planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) para obtener más información.
+La caja de seguridad del cliente se incluye con las suscripciones de Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una Information Protection y cumplimiento o una suscripción de complemento de cumplimiento avanzado. Consulte [Planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) para obtener más información.
 
 ### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 
-El contenido del cliente son los datos creados por los usuarios de Microsoft 365 servicios y aplicaciones. Estos son algunos ejemplos de contenido de cliente:
+El contenido del cliente son los datos creados por los usuarios de aplicaciones y servicios de Microsoft 365. Estos son algunos ejemplos de contenido de cliente:
 
 - Cuerpo o datos adjuntos de correo electrónico
 
@@ -233,19 +231,19 @@ El contenido del cliente son los datos creados por los usuarios de Microsoft 365
 
 - Mensajes instantáneos (MI) o conversaciones de voz
 
-- Texto escrito en Teams chats y canales de Teams, por ejemplo, chats 1:1, chats de grupo, canales compartidos, canales privados y chat de reunión
+- Texto escrito en chats de Teams y canales de Teams, por ejemplo, chats 1:1, chats de grupo, canales compartidos, canales privados y chat de reunión
 
-- Otros datos pegados en Teams subprocesos de chat, como fragmentos de código, imágenes, mensajes de audio y vídeo y vínculos
+- Otros datos pegados en subprocesos de chat de Teams, como fragmentos de código, imágenes, mensajes de audio y vídeo y vínculos
 
-- Datos de aplicaciones y bots en chats Teams y canales de Teams
+- Datos de aplicaciones y bots en chats de Teams y canales de Teams
 
-- fuente de actividad de Teams
+- Fuente de actividad de Teams
 
-- Teams grabaciones y transcripciones de reuniones
+- Grabaciones y transcripciones de reuniones de Teams
 
 - Correo de voz
 
-- Archivos publicados en Teams chats y canales de Teams
+- Archivos publicados en chats de Teams y canales de Teams
 
 - Blob generado por el cliente o datos de almacenamiento estructurado (por ejemplo, Contenedores SQL)
 
@@ -255,11 +253,11 @@ El contenido del cliente son los datos creados por los usuarios de Microsoft 365
 
 Para obtener más información sobre el contenido del cliente en Office 365, consulte el [Centro de confianza de Office 365](https://products.office.com/business/office-365-trust-center-privacy/).
 
-### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Quién se notifica cuando hay una solicitud de acceso a mi contenido?
+### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>¿A quién se notifica cuando hay una solicitud de acceso a mi contenido?
 
 Se notifica a los administradores globales y a cualquiera que tenga asignado el rol de administrador de aprobador de acceso de caja de seguridad del cliente. Estos también son los mismos usuarios que pueden aprobar las solicitudes de caja de seguridad del cliente.
 
-### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>Quién puede aprobar o rechazar estas solicitudes en mi organización?
+### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>¿Quién puede aprobar o rechazar estas solicitudes en mi organización?
 
 Los administradores globales y cualquier persona a la que se haya asignado el rol de administrador de aprobador de acceso de caja de seguridad del cliente pueden aprobar las solicitudes de caja de seguridad del cliente. Los clientes controlan estas asignaciones de roles en sus organizaciones.
 
@@ -283,7 +281,7 @@ Solo un administrador global de la organización puede especificar quién puede 
 
 ### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>¿Qué ocurre si necesito más información sobre una solicitud de acceso a contenido para aprobarla?
 
-Cada solicitud de Caja de seguridad del cliente contiene un número de solicitud de servicio Microsoft 365. Puede ponerse en contacto con Soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
+Cada solicitud de Caja de seguridad del cliente contiene un número de solicitud de servicio de Microsoft 365. Puede ponerse en contacto con Soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
 
 ### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Cuando se aprueba una solicitud de Caja de seguridad del cliente, ¿cuánto tiempo son válidos los permisos?
 
