@@ -1,7 +1,7 @@
 ---
-title: Administración de riesgos insider en Microsoft 365
-description: Obtenga información sobre cómo configurar la administración de riesgos de insider en Microsoft 365.
-keywords: Microsoft 365, riesgo interno, cumplimiento
+title: Administración de riesgos internos
+description: Aprenda a configurar la administración de riesgos internos.
+keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,44 +16,44 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: c58a0022ed618cdcbd6c81c9d39d9a387d8f1007
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: efa2872d7dbece729bd45cfc890fead44b8162d3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938822"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621147"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos insider en Microsoft 365
+# <a name="insider-risk-management"></a>Administración de riesgos internos
 
-Cada vez más, los empleados tienen más acceso para crear, administrar y compartir datos en un amplio espectro de plataformas y servicios. En la mayoría de los casos, las organizaciones tienen recursos y herramientas limitados para identificar y mitigar los riesgos de toda la organización, al tiempo que cumplen los requisitos de cumplimiento y los estándares de privacidad de los empleados. Estos riesgos pueden incluir el robo de datos al salir de los empleados y las pérdidas de datos de información fuera de la organización por sobresharing accidental o intenciones malintencionadas.
+Cada vez más, los empleados tienen más acceso para crear, administrar y compartir datos en un amplio espectro de plataformas y servicios. En la mayoría de los casos, las organizaciones tienen recursos y herramientas limitados para identificar y mitigar los riesgos de toda la organización, a la vez que cumplen los requisitos de cumplimiento y los estándares de privacidad de los empleados. Estos riesgos pueden incluir el robo de datos al dejar a los empleados y la pérdida de información fuera de su organización por uso compartido accidental o intenciones malintencionadas.
 
-La administración de riesgos de Insider en Microsoft 365 usa toda la amplitud de los indicadores de servicio y de terceros para ayudarle a identificar, recortar y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos de insider permite definir directivas específicas para identificar indicadores de riesgo. Después de identificar los riesgos, puede tomar medidas para mitigar estos riesgos.
+Administración de riesgos internos de Microsoft Purview usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, evaluar y actuar rápidamente en actividades de usuario de riesgo. Mediante el uso de registros de Microsoft 365 y Microsoft Graph, la administración de riesgos internos le permite definir directivas específicas para identificar indicadores de riesgo. Después de identificar los riesgos, puede tomar medidas para mitigar estos riesgos.
 
-Vea los vídeos siguientes para obtener información sobre cómo la administración de riesgos de insider puede ayudar a su organización a prevenir, detectar y contener riesgos:
+Vea los vídeos siguientes para obtener información sobre cómo la administración de riesgos internos puede ayudar a su organización a prevenir, detectar y contener riesgos:
 <br>
 <br>
 
-**Solución de administración de riesgos insider & desarrollo:**
+**Solución de administración de riesgos internos & desarrollo**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
 <br>
 
-**Flujo de trabajo de administración de riesgos de Insider:**
+**Flujo de trabajo de administración de riesgos internos**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
-## <a name="configure-insider-risk-management-for-microsoft-365"></a>Configurar la administración de riesgos de insider para Microsoft 365
+## <a name="configure-insider-risk-management"></a>Configuración de la administración de riesgos internos
 
-Siga estos pasos para configurar la administración de riesgos de insider para su organización:
+Siga estos pasos para configurar la administración de riesgos internos para su organización:
 
-![Pasos de administración de riesgos de insider risk solution insider.](../media/ir-solution-ir-steps.png)
+![Pasos de administración de riesgos internos de la solución de riesgo interno.](../media/ir-solution-ir-steps.png)
 
-1. Obtenga información [sobre la administración de riesgos de insider](insider-risk-management.md) en Microsoft 365
-2. Planear la administración [de riesgos de insider y comprobar licencias](insider-risk-management-plan.md)
-3. Configurar [la configuración de administración de riesgos de insider](insider-risk-management-settings.md)
-4. Configurar [permisos y requisitos](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) [previos de directivas & conectores](insider-risk-management-configure.md#step-4-recommended-configure-prerequisites-for-policies)
-5. Crear y configurar directivas [de administración de riesgos internas](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy)
+1. Más información sobre la [administración de riesgos internos](insider-risk-management.md)
+2. Planeamiento de [la administración de riesgos internos y comprobación de licencias](insider-risk-management-plan.md)
+3. Configuración de [la administración de riesgos internos](insider-risk-management-settings.md)
+4. Configuración de [permisos](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) y [requisitos previos de directiva & conectores](insider-risk-management-configure.md#step-4-recommended-configure-prerequisites-for-policies)
+5. Creación y configuración de [directivas de administración de riesgos internos](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy)
 
-## <a name="more-information-about-insider-risk-management"></a>Más información sobre la administración de riesgos de insider
+## <a name="more-information-about-insider-risk-management"></a>Más información sobre la administración de riesgos internos
 
-- [Administrar directivas de riesgo de insider](insider-risk-management-policies.md)
+- [Administración de directivas de riesgo internos](insider-risk-management-policies.md)
 - [Investigar alertas de riesgo interno](insider-risk-management-activities.md)
-- [Actuar en casos de riesgo de información interna](insider-risk-management-cases.md)
+- [Actuar sobre casos de riesgo interno](insider-risk-management-cases.md)

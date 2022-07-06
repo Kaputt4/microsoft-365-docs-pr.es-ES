@@ -17,31 +17,31 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo modificar un diccionario de palabras clave en el Centro Microsoft 365 cumplimiento.
-ms.openlocfilehash: acdf8b24aced21ed2f576fd57a3c685ef14debea
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Obtenga información sobre cómo modificar un diccionario de palabras clave en el portal de cumplimiento Microsoft Purview.
+ms.openlocfilehash: 8b2f2256be506f0ba01dc059bf0ac54e84c481c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271819"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621719"
 ---
 # <a name="modify-a-keyword-dictionary"></a>Modificar un diccionario de palabras clave
 
 Es posible que tenga que modificar palabras clave en uno de los diccionarios de palabras clave o modificar uno de los diccionarios integrados. Puede hacerlo a través de PowerShell o a través del Centro de cumplimiento.
 
-## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>Modificar un diccionario de palabras clave en el Centro de cumplimiento
+## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>Modificación de un diccionario de palabras clave en el Centro de cumplimiento
 
 Los diccionarios de palabras clave se pueden usar como `Primary elements` o `Supporting elements` en patrones de tipo de información confidencial (SIT). Puede editar un diccionario de palabras clave al crear un SIT o en un SIT existente. Por ejemplo, para editar un diccionario de palabras clave existente:
 
 1. Abra el patrón que tiene el diccionario de palabras clave que desea actualizar.
-2. Busque el diccionario de palabras clave que desea actualizar y elija editar.
-3. Realice las ediciones con una palabra clave por línea.
+2. Busque el diccionario de palabras clave que desea actualizar y elija Editar.
+3. Realice las modificaciones con una palabra clave por línea.
 
-   ![palabras clave de edición de captura de pantalla.](../media/edit-keyword-dictionary.png)
+   ![captura de pantalla editar palabras clave.](../media/edit-keyword-dictionary.png)
 
 4. Elija `Done`.
 
-## <a name="modify-a-keyword-dictionary-using-powershell"></a>Modificar un diccionario de palabras clave con PowerShell
+## <a name="modify-a-keyword-dictionary-using-powershell"></a>Modificación de un diccionario de palabras clave mediante PowerShell
 
 Por ejemplo, vamos a modificar algunos términos en PowerShell, guardar los términos localmente donde se puedan modificar en un editor y, después, actualizar los términos anteriores.
 
@@ -51,9 +51,9 @@ En primer lugar, recupere el objeto de diccionario:
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-La `$dict` impresión mostrará las distintas propiedades. Las palabras clave en sí se almacenan en un objeto en el back-end, `$dict.KeywordDictionary` pero contiene una representación de cadena de ellas, que usarás para modificar el diccionario.
+La impresión `$dict` mostrará las distintas propiedades. Las propias palabras clave se almacenan en un objeto en el back-end, pero `$dict.KeywordDictionary` contienen una representación de cadena de ellas, que usará para modificar el diccionario.
 
-Antes de modificar el diccionario, debe volver a convertir la cadena de términos en una matriz mediante el método `.split(',')` . A continuación, limpiará los espacios no deseados entre las palabras clave con el `.trim()` método, dejando solo las palabras clave con las que trabajar.
+Antes de modificar el diccionario, debe volver a convertir la cadena de términos en una matriz mediante el `.split(',')` método . A continuación, limpiará los espacios no deseados entre las palabras clave con el `.trim()` método , dejando solo las palabras clave con las que trabajar.
 
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -98,7 +98,7 @@ Ejecute este comando para quitar los términos de la lista:
 $updatedTerms = $terms | Where-Object {$_ -notin $termsToRemove}
 ```
 
-Ejecute el comando `$updatedTerms` para mostrar la lista actualizada de términos. El resultado del comando es similar a este (se han quitado los términos especificados):
+Ejecute el comando `$updatedTerms` para mostrar la lista actualizada de términos. La salida del comando tiene este aspecto (se han quitado los términos especificados):
 
 ```powershell
 aarskog's syndrome
@@ -133,7 +133,7 @@ Ahora, abra el archivo, agregue los otros términos y guárdelo con la codificac
 Set-DlpKeywordDictionary -Identity "Diseases" -FileData ([System.IO.File]::ReadAllBytes('C:myPath\terms.txt'))
 ```
 
-Ahora se ha actualizado el diccionario en contexto. El `Identity` campo toma el nombre del diccionario. Si también quisiera cambiar el `Set-` nombre del diccionario con el cmdlet, `-Name` solo tendría que agregar el parámetro a lo anterior con el nuevo nombre del diccionario.
+Ahora se ha actualizado el diccionario en contexto. El `Identity` campo toma el nombre del diccionario. Si también desea cambiar el nombre del diccionario mediante el `Set-` cmdlet , solo tendrá que agregar el `-Name` parámetro a lo anterior con el nuevo nombre del diccionario.
 
 ## <a name="see-also"></a>Vea también
 

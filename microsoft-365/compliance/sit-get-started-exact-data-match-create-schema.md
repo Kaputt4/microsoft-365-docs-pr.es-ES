@@ -17,23 +17,21 @@ search.appverid:
 - MET150
 description: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017172"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622027"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede crear el esquema y EDM SIT mediante [el Asistente para usar el esquema exacto de coincidencia de datos y el patrón de tipo de información confidencial](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) o [manualmente](#create-exact-data-match-schema-manually-and-upload). También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con SITS basado en EDM o su implementación, debe familiarizarse con:
 
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 Un único esquema EDM se puede usar en varios tipos de información confidencial que usan la misma tabla de datos confidenciales. Puede crear hasta 10 esquemas EDM diferentes en un inquilino de Microsoft 365.
@@ -50,7 +48,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
-1. En el portal de cumplimiento de Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Datos exactos que coinciden con los** > **esquemas EDM**.
+1. En la portal de cumplimiento Microsoft Purview del inquilino, vaya a **Clasificación** >  de **datos Datos exactos que coinciden con los** > **esquemas EDM**.
 
 2. Elija **Crear esquema EDM** para abrir el flotante de configuración del asistente de esquemas.
 
@@ -71,7 +69,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
    > [!IMPORTANT]
    > Al menos uno, pero no más de cinco de los campos de su esquema deben ser designados como de búsqueda.
 
-7. Seleccione **Guardar**. El esquema ahora aparecerá en la lista y estará disponible para su uso.
+7. Elija **Guardar**. El esquema ahora aparecerá en la lista y estará disponible para su uso.
 
    > [!IMPORTANT]
    > Si desea eliminar un esquema, y ya está asociado a un tipo de información sensible EDM, primero debe borrar el tipo de información confidencial EDM, luego puede eliminar el esquema. Al eliminar un esquema que tiene asociado un almacén de datos, también se elimina el almacén de datos en un plazo de 24 horas.

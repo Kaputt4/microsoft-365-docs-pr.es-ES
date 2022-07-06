@@ -20,19 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento Microsoft Purview.
-ms.openlocfilehash: 0f3d7d4b2e2a7d4c3c23d89ad6c2b8ba20fd6afb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que ejecute en el portal de cumplimiento Microsoft Purview.
+ms.openlocfilehash: e4bca9995dd173ef972522f273765db03dff3524
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468840"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622489"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Una búsqueda Microsoft Purview eDiscovery que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos indizados parcialmente en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. En Exchange, un elemento parcialmente indexado normalmente contiene un archivo (de un tipo de archivo que no se puede indexar) que está asociado a un mensaje de correo electrónico. Estas son algunas otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
+Una búsqueda Microsoft Purview eDiscovery que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son elementos y documentos de buzón de Exchange en SharePoint y OneDrive para la Empresa sitios que, por alguna razón, no estaban completamente indexados para la búsqueda. En Exchange, un elemento parcialmente indexado normalmente contiene un archivo (de un tipo de archivo que no se puede indexar) que se adjunta a un mensaje de correo electrónico. Estas son algunas otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
 - El tipo de archivo no se admite o está deshabilitado para la indexación.
 
@@ -55,19 +53,19 @@ En el caso de las investigaciones legales, es posible que su organización tenga
   
 ## <a name="file-types-not-indexed-for-search"></a>Tipos de archivo no indexados para búsquedas
 
-Determinados tipos de archivos, como mapas de bits o MP3, no incluyen contenido que se pueda indexar. Como resultado, los servidores de indexación de búsqueda de Exchange y SharePoint no realizan la indexación de texto completo en estos tipos de archivos. Estos tipos de archivo se consideran como no admitidos. También hay tipos de archivos para los que se ha deshabilitado la indexación de texto completo, ya sea de manera predeterminada o por un administrador. Los tipos de archivo no admitidos y deshabilitados se etiquetan como elementos sin indexar en Búsquedas de contenido. Como se indicó anteriormente, los elementos parcialmente indexados se pueden incluir en el conjunto de resultados de búsqueda al ejecutar una búsqueda, exportar los resultados de búsqueda a un equipo local o preparar los resultados de búsqueda para eDiscovery (Premium).
+Determinados tipos de archivos, como mapas de bits o MP3, no incluyen contenido que se pueda indexar. Como resultado, los servidores de indexación de búsqueda en Exchange y SharePoint no realizan la indexación de texto completo en estos tipos de archivos. Estos tipos de archivo se consideran como no admitidos. También hay tipos de archivos para los que se ha deshabilitado la indexación de texto completo, ya sea de manera predeterminada o por un administrador. Los tipos de archivo no admitidos y deshabilitados se etiquetan como elementos sin indexar en Búsquedas de contenido. Como se indicó anteriormente, los elementos indizados parcialmente se pueden incluir en el conjunto de resultados de búsqueda al ejecutar una búsqueda, exportar los resultados de búsqueda a un equipo local o preparar los resultados de búsqueda para eDiscovery (Premium).
   
 Para obtener una lista de formatos de archivo compatibles y deshabilitados, vea los temas siguientes:
   
--  - **formatos Exchange** [File indexados por Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- **Intercambiar** -  [Formatos de archivo indexados por Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
--  -  Exchange [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
+- **Intercambiar** -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
--  -  SharePoint [Nombre de archivo rastreado predeterminado y tipos de archivo analizados en SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- **Sharepoint** -  [Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizados en SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Los mensajes y documentos con tipos de archivo parcialmente indexados se pueden devolver en los resultados de la búsqueda.
 
-No todos los mensajes de correo electrónico con datos adjuntos de archivo parcialmente indexados o todos los SharePoint documento parcialmente indexados se devuelven automáticamente como un elemento parcialmente indexado. Esto se debe a que otras propiedades de mensaje o documento, como la propiedad **Subject** en los mensajes de correo electrónico y las propiedades **Title** o **Author** de los documentos están indexadas y están disponibles para buscarse. Por ejemplo, una búsqueda de palabras clave para "financial" devolverá elementos con un archivo adjunto parcialmente indexado si esa palabra clave aparece en el asunto de un mensaje de correo electrónico o en el nombre de archivo o el título de un documento. Sin embargo, si la palabra clave aparece solo en el cuerpo del archivo, el mensaje o documento se devolvería como un elemento parcialmente indexado.
+No todos los mensajes de correo electrónico con datos adjuntos de archivos parcialmente indexados o todos los documentos de SharePoint parcialmente indexados se devuelven automáticamente como un elemento parcialmente indexado. Esto se debe a que otras propiedades de mensaje o documento, como la propiedad **Subject** en los mensajes de correo electrónico y las propiedades **Title** o **Author** de los documentos están indexadas y están disponibles para buscarse. Por ejemplo, una búsqueda de palabras clave para "financial" devolverá elementos con un archivo adjunto parcialmente indexado si esa palabra clave aparece en el asunto de un mensaje de correo electrónico o en el nombre de archivo o el título de un documento. Sin embargo, si la palabra clave aparece solo en el cuerpo del archivo, el mensaje o documento se devolvería como un elemento parcialmente indexado.
   
 De forma similar, los mensajes con datos adjuntos de archivos parcialmente indexados y documentos de un tipo de archivo indizado parcialmente se incluyen en los resultados de la búsqueda cuando otras propiedades de mensaje o documento, que se indizan y se pueden buscar, coinciden con los criterios de búsqueda. Las propiedades de los mensajes que se indexan para la búsqueda son las fechas de envío y recepción, el remitente y el destinatario, el nombre de archivo de un adjunto, y el texto del cuerpo del mensaje. Las propiedades de los documentos que se indexan para la búsqueda son las fechas de creación y modificación. Por lo tanto, aunque los datos adjuntos de un mensaje pueden ser un elemento parcialmente indexado, el mensaje se incluirá en los resultados de búsqueda normales si el valor de otras propiedades de mensaje o documento coincide con los criterios de búsqueda.
   
@@ -82,7 +80,7 @@ Es posible que sea necesario que su organización identifique y realice análisi
   
 Tenga en cuenta lo siguiente sobre los elementos indizados parcialmente:
   
-- Al ejecutar una búsqueda de exhibición de documentos electrónicos, el número total y el tamaño de los elementos Exchange parcialmente indexados (devueltos por la consulta de búsqueda) se muestran en las estadísticas de búsqueda de la página de control flotante y se etiquetan como **elementos no indizados**. Las estadísticas sobre los elementos indizados parcialmente que se muestran en la página de control flotante no incluyen elementos indizados parcialmente en SharePoint sitios o cuentas de OneDrive.
+- Al ejecutar una búsqueda de eDiscovery, el número total y el tamaño de los elementos de Exchange parcialmente indexados (devueltos por la consulta de búsqueda) se muestran en las estadísticas de búsqueda de la página de control flotante y se etiquetan como **elementos sin indexar**. Las estadísticas sobre los elementos indizados parcialmente que se muestran en la página flotante no incluyen elementos indizados parcialmente en sitios de SharePoint o cuentas de OneDrive.
 
 - Si la búsqueda desde la que va a exportar los resultados era una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán los elementos no indizados de ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. El motivo es que la exportación de elementos parcialmente indexados desde muchas ubicaciones de la organización podría aumentar la probabilidad de errores de exportación y aumentar el tiempo necesario para exportar y descargar los resultados de la búsqueda.
 
@@ -92,7 +90,7 @@ Tenga en cuenta lo siguiente sobre los elementos indizados parcialmente:
 
 - Los elementos indizados parcialmente no están disponibles para obtener una vista previa. Tiene que exportar los resultados de la búsqueda para ver los elementos parcialmente indexados devueltos por la búsqueda.
 
-   Además, al exportar resultados de búsqueda e incluir elementos parcialmente indizados en la exportación, los elementos indizados parcialmente de SharePoint elementos se exportan a una carpeta denominada **Uncrawlable**. Al exportar elementos Exchange parcialmente indizados, se exportan de forma diferente en función de si los elementos parcialmente indexados coincidían o no con la consulta de búsqueda y la configuración de la configuración de exportación. 
+   Además, al exportar resultados de búsqueda e incluir elementos parcialmente indizados en la exportación, los elementos indizados parcialmente de elementos de SharePoint se exportan a una carpeta denominada **Uncrawlable**. Al exportar elementos de Exchange parcialmente indexados, se exportan de forma diferente en función de si los elementos parcialmente indexados coincidían con la consulta de búsqueda y la configuración de la configuración de exportación. 
 
 - En la tabla siguiente se muestra el comportamiento de exportación de los elementos indexados y parcialmente indexados y si cada uno de ellos se incluye para los distintos valores de configuración de exportación.
 
@@ -105,7 +103,7 @@ Tenga en cuenta lo siguiente sobre los elementos indizados parcialmente:
   
 ## <a name="workaround-for-using-a-date-range-to-exclude-partially-indexed-items"></a>Solución alternativa para usar un intervalo de fechas para excluir elementos parcialmente indizados
 
-En Búsqueda de contenido y Microsoft Purview eDiscovery (Estándar), no se puede usar un intervalo de fechas para excluir que una consulta de búsqueda devuelva elementos parcialmente indizados. Es decir, los elementos indizados parcialmente que se encuentran fuera de un intervalo de fechas se siguen incluyendo como elementos indizados parcialmente en las estadísticas de búsqueda y al exportar elementos parcialmente indizados. En eDiscovery (Premium), puede excluir elementos parcialmente indexados mediante un intervalo de fechas en una consulta de búsqueda.
+En Búsqueda de contenido y Microsoft Purview eDiscovery (Estándar), no puede usar un intervalo de fechas para excluir que una consulta de búsqueda devuelva elementos parcialmente indizados. Es decir, los elementos indizados parcialmente que se encuentran fuera de un intervalo de fechas se siguen incluyendo como elementos indizados parcialmente en las estadísticas de búsqueda y al exportar elementos parcialmente indizados. En eDiscovery (Premium), puede excluir elementos parcialmente indexados mediante un intervalo de fechas en una consulta de búsqueda.
 
 Como solución alternativa a esta limitación, se recomienda el procedimiento siguiente.
 
@@ -136,14 +134,14 @@ Use la segunda búsqueda que creó en el paso 3 y la exportación correspondient
 
 ## <a name="indexing-limits-for-messages"></a>Límites de indexación de mensajes
 
-En la tabla siguiente se describen los límites de indexación que podrían dar lugar a que se devuelva un mensaje de correo electrónico como un elemento parcialmente indexado en una búsqueda de exhibición de documentos electrónicos en Microsoft 365.
+En la tabla siguiente se describen los límites de indexación que podrían dar lugar a que un mensaje de correo electrónico se devuelva como un elemento parcialmente indexado en una búsqueda de exhibición de documentos electrónicos en Microsoft 365.
   
-Para obtener una lista de los límites de indexación de SharePoint documentos, consulte [Límites de búsqueda para SharePoint Online](/sharepoint/search-limits).
+Para obtener una lista de límites de indexación para documentos de SharePoint, vea [Límites de búsqueda para SharePoint Online](/sharepoint/search-limits).
   
-|**Límite de indexación**|**Notas**|**Descripción**|
+|**Límite de indexación**|**Notas**|**Description**|
 |:-----|:-----|:-----|
-|Tamaño máximo de datos adjuntos (excepto Excel archivos)  <br/> |150 MB  <br/> |Tamaño máximo de los datos adjuntos de un correo electrónico que se analizarán para la indexación. Los datos adjuntos que sean mayores que este límite no se analizarán para la indexación y el mensaje con los datos adjuntos se marcará como indizado parcialmente.  <br/><br/> **Nota:** El análisis es el proceso en el que el servicio de indexación extrae texto de los datos adjuntos, quita caracteres innecesarios como signos de puntuación y espacios y, a continuación, divide el texto en palabras (en un proceso denominado tokenización) que, a continuación, se almacenan en el índice.           |
-|Tamaño máximo de Excel archivos  <br/> |4 MB  <br/> |Tamaño máximo de un archivo Excel ubicado en un sitio o adjunto a un mensaje de correo electrónico que se analizará para la indexación. No se analizará ningún archivo Excel que sea mayor que este límite y el archivo o el mensaje de correo electrónico con los datos adjuntos del archivo se marcarán como sin indexar.  <br/> |
+|Tamaño máximo de datos adjuntos (excepto los archivos de Excel)  <br/> |150 MB  <br/> |Tamaño máximo de los datos adjuntos de un correo electrónico que se analizarán para la indexación. Los datos adjuntos que sean mayores que este límite no se analizarán para la indexación y el mensaje con los datos adjuntos se marcará como indizado parcialmente.  <br/><br/> **Nota:** El análisis es el proceso en el que el servicio de indexación extrae texto de los datos adjuntos, quita caracteres innecesarios como signos de puntuación y espacios y, a continuación, divide el texto en palabras (en un proceso denominado tokenización) que, a continuación, se almacenan en el índice.           |
+|Tamaño máximo de los archivos de Excel  <br/> |4 MB  <br/> |Tamaño máximo de un archivo de Excel ubicado en un sitio o adjunto a un mensaje de correo electrónico que se analizará para la indexación. No se analizará ningún archivo de Excel que sea mayor que este límite y el archivo o el mensaje de correo electrónico con los datos adjuntos del archivo se marcarán como sin indexar.  <br/> |
 |Número máximo de datos adjuntos  <br/> |250  <br/> |Número máximo de archivos adjuntos a un mensaje de correo electrónico que se analizarán para la indexación. Si un mensaje tiene más de 250 datos adjuntos, los primeros 250 datos adjuntos se analizan e indexa, y el mensaje se marca como parcialmente indexado porque tenía datos adjuntos adicionales que no se analizaron.  <br/> |
 |Profundidad máxima de datos adjuntos  <br/> |30  <br/> |Número máximo de datos adjuntos anidados que se analizan. Por ejemplo, si un mensaje de correo electrónico tiene otro mensaje adjunto y el mensaje adjunto tiene un documento de Word adjunto, el documento de Word y el mensaje adjunto se indexarán. Este comportamiento continuará hasta 30 datos adjuntos anidados.  <br/> |
 |Número máximo de imágenes adjuntas  <br/> |0  <br/> |El analizador omite una imagen adjunta a un mensaje de correo electrónico y no se indexa.  <br/> |
@@ -160,7 +158,7 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Si se incluye un elemento parcialmente indexado en los resultados de la búsqueda porque coincidió con los criterios de consulta de búsqueda, no se incluirá como un elemento parcialmente indexado en las estadísticas de búsqueda estimadas. Además, no se incluirá con elementos indizados parcialmente al exportar los resultados de la búsqueda.
 
-- Aunque se admite un tipo de archivo para la indexación y se indexa, puede haber errores de indexación o búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo de Excel grande podría ser parcialmente correcto (porque los primeros 4 MB están indizados), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como un elemento parcialmente indexado.
+- Aunque se admite un tipo de archivo para la indexación y se indexa, puede haber errores de indexación o búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo de Excel grande podría ser parcialmente correcta (porque los primeros 4 MB se indexan), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como un elemento parcialmente indexado.
 
 - Los archivos que se cifran con [tecnologías de cifrado de Microsoft](encryption.md) y se adjuntan a un mensaje de correo electrónico que coincide con los criterios de una búsqueda se pueden obtener en versión preliminar y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente. 
 

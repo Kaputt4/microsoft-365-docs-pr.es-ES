@@ -20,22 +20,20 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
-ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017018"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625487"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Uso de un script para crear un informe sobre retenciones en casos de exhibición de documentos electrónicos
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-El script de este artículo permite a los administradores de exhibición de documentos electrónicos y administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento de Microsoft Purview. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en suspensión y si la suspensión está basada en consultas. Si hay casos que no tienen retenciones, el script creará un informe adicional con una lista de casos sin retenciones.
+El script de este artículo permite a los administradores de exhibición de documentos electrónicos y administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento Microsoft Purview. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en suspensión y si la suspensión está basada en consultas. Si hay casos que no tienen retenciones, el script creará un informe adicional con una lista de casos sin retenciones.
 
 Consulte la sección [Más información](#more-information) para obtener una descripción detallada de la información incluida en el informe.
 
-## <a name="admin-requirements-and-script-information"></a>Requisitos de administración e información de script
+## <a name="admin-requirements-and-script-information"></a>requisitos de Administración e información de script
 
 - Para generar un informe sobre todos los casos de exhibición de documentos electrónicos de su organización, debe ser administrador de exhibición de documentos electrónicos en su organización. Si es administrador de eDiscovery, el informe solo incluirá información sobre los casos a los que puede acceder. Para obtener más información sobre los permisos de exhibición de documentos electrónicos, consulte [Asignación de permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
@@ -43,9 +41,9 @@ Consulte la sección [Más información](#more-information) para obtener una des
 
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
-## <a name="step-1-connect-to-security--compliance-powershell"></a>Paso 1: Conectar a PowerShell de cumplimiento de & seguridad
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Paso 1: Conectarse a Seguridad y cumplimiento de PowerShell
 
-El primer paso es conectarse a PowerShell de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, consulte [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
+El siguiente paso es conectarse al Seguridad y cumplimiento de PowerShell de la organización. Para obtener instrucciones paso a paso, vea [Conectarse Seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: Ejecutar el script para informar sobre las retenciones asociadas a casos de eDiscovery
 
@@ -203,7 +201,7 @@ El caso contiene el informe que se crea al ejecutar el script en este artículo 
 
 - El nombre de la suspensión y el nombre del caso de exhibición de documentos electrónicos al que está asociada la suspensión.
 
-- Si la suspensión está asociada a un caso de exhibición de documentos electrónicos (estándar) o eDiscovery (Premium).
+- Si la suspensión está asociada a un caso de exhibición de documentos electrónicos (Estándar) o eDiscovery (Premium).
 
 - Si el caso de eDiscovery está activo o cerrado.
 

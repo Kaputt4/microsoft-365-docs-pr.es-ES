@@ -1,5 +1,5 @@
 ---
-title: Comenzar con casos de exhibición de documentos electrónicos (estándar) en Microsoft Purview
+title: Introducción a los casos de eDiscovery (Estándar) en Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery (Estándar) en Microsoft Purview. Después de asignar permisos de eDiscovery y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 2bbd7c0bdeb1a23274deacb5b70e83ba45aacdc5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115881"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624319"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Comenzar con eDiscovery (Estándar) en Microsoft Purview
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Introducción a eDiscovery (Estándar) en Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview eDiscovery (estándar) en Microsoft Purview proporciona una herramienta básica de exhibición de documentos electrónicos que las organizaciones pueden usar para buscar y exportar contenido en Microsoft 365 y Office 365. También puede usar eDiscovery (Estándar) para colocar una suspensión de eDiscovery en ubicaciones de contenido, como buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y Microsoft Teams. No se necesita nada para implementar eDiscovery (Estándar), pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de eDiscovery deben completar antes de que la organización pueda empezar a usar eDiscovery (Estándar) para buscar, exportar y conservar contenido.
+Microsoft Purview eDiscovery (estándar) en Microsoft Purview proporciona una herramienta básica de exhibición de documentos electrónicos que las organizaciones pueden usar para buscar y exportar contenido en Microsoft 365 y Office 365. También puede usar eDiscovery (Estándar) para colocar una suspensión de exhibición de documentos electrónicos en ubicaciones de contenido, como buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y Microsoft Teams. No se necesita nada para implementar eDiscovery (Estándar), pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de eDiscovery deben completar antes de que la organización pueda empezar a usar eDiscovery (Estándar) para buscar, exportar y conservar contenido.
 
 En este artículo se describen los pasos necesarios para configurar eDiscovery (Estándar). Esto incluye garantizar las licencias adecuadas necesarias para acceder a eDiscovery (Estándar) y colocar una suspensión de eDiscovery en ubicaciones de contenido, así como asignar permisos a su equipo de TI, legal e investigación para que puedan acceder a los casos y administrarlos. En este artículo también se proporciona información general de alto nivel sobre el uso de casos para buscar y exportar contenido.
 
@@ -37,11 +35,11 @@ En este artículo se describen los pasos necesarios para configurar eDiscovery (
 
 Las licencias para eDiscovery (Estándar) requieren la suscripción de la organización adecuada y las licencias por usuario.
 
-- **Suscripción a la organización:** Para acceder a eDiscovery (Estándar) en el portal de cumplimiento Microsoft Purview y usar las características de suspensión y exportación, la organización debe tener una suscripción Exchange plan 2 o Microsoft 365 E3 en línea o Office 365 E3 o superior. Microsoft 365 las organizaciones de primera línea deben tener una suscripción A5.
+- **Suscripción a la organización:** Para acceder a eDiscovery (Estándar) en el portal de cumplimiento Microsoft Purview y usar las características de suspensión y exportación, la organización debe tener una suscripción de Exchange Online Plan 2 o Microsoft 365 E3 o Office 365 E3 o superior. Las organizaciones de primera línea de Microsoft 365 deben tener una suscripción A5.
 
 - **Licencias por usuario:** Para colocar una suspensión de eDiscovery en buzones y sitios, se debe asignar a los usuarios una de las licencias siguientes, en función de la suscripción de la organización:
 
-  -  Exchange licencia del plan 2 en línea
+  -  Licencia del plan 2 de Exchange Online
 
    O
    
@@ -53,17 +51,17 @@ Las licencias para eDiscovery (Estándar) requieren la suscripción de la organi
 
    O
 
-  - Microsoft 365 licencia del complemento de cumplimiento F5 de primera línea o de seguridad de F5 &  
+  - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on license  
 
   Y
 
-  - licencia de Office 365 E1 con una licencia de complemento SharePoint Online Plan 2 o OneDrive para la Empresa Plan 2
+  - licencia de Office 365 E1 con una licencia de complemento de Plan 2 o OneDrive para la Empresa Plan 2 de SharePoint Online
   
   Para obtener información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](../admin/manage/assign-licenses-to-users.md).
 
 Para obtener información e instrucciones sobre seguridad y cumplimiento:
 
-- Descargue y vea la sección eDiscovery and auditing (Exhibición de documentos electrónicos y auditoría) en la [tabla Microsoft 365 Comparison (Comparación de Microsoft 365).](https://aka.ms/M365EnterprisePlans)
+- Descargue y vea la sección eDiscovery and auditing (Exhibición de documentos electrónicos y auditoría) en la [tabla Comparación de Microsoft 365](https://aka.ms/M365EnterprisePlans).
 
 - Consulte las [instrucciones de Microsoft 365 para el cumplimiento de & de seguridad: descripciones de servicio | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -73,7 +71,7 @@ Para acceder a eDiscovery (Estándar) o agregarse como miembro de un caso de exh
 
 Complete los pasos siguientes para agregar usuarios al grupo de roles del Administrador de exhibición de documentos electrónicos:
 
-1. Vaya al portal de cumplimiento e inicie sesión con las credenciales de una cuenta de administrador en la Microsoft 365 o Office 365 organización.
+1. Vaya al portal de cumplimiento e inicie sesión con las credenciales de una cuenta de administrador en su organización de Microsoft 365 o Office 365.
 
 2. En la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a> , seleccione el grupo **de roles administrador de exhibición de documentos electrónicos** .
 

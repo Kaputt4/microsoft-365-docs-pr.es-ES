@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisión para organizar el contenido para una revisión más eficaz en un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
+description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisión para organizar el contenido para una revisión más eficaz en un caso de Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 44f4b9d6aed92a6593f5c6c70322656e4c770c3d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b40ab6818b4063a0b160ab9a41fdded6f7e7d37e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090925"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623769"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Consultar y filtrar el contenido de un conjunto de revisión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En la mayoría de los casos, será útil profundizar en el contenido de un conjunto de revisión y organizarlo para facilitar una revisión más eficaz. El uso de filtros y consultas en un conjunto de revisión le ayuda a centrarse en un subconjunto de documentos que cumplen los criterios de la revisión.
 
@@ -81,7 +79,7 @@ Hay varios tipos de filtros:
 
 - **Opciones de** búsqueda: un filtro de opciones de búsqueda proporciona una lista de valores posibles (cada valor se muestra con una casilla que puede seleccionar) para campos concretos en la revisión. Este filtro se usa para campos, como "Sender", donde hay un número finito de valores posibles en el conjunto de revisión.
 
-- **Palabra clave**: una condición de palabra clave es una instancia específica de la condición freetext que puede usar para buscar términos. También puede usar un lenguaje de consulta similar a KQL en este tipo de filtro. Para obtener más información, consulte las secciones Lenguaje de consulta y Generador de consultas avanzadas de este artículo.
+- **Palabra clave**: una condición de palabra clave es una instancia específica de la condición freetext que puede usar para buscar términos. También puede usar el lenguaje de consulta similar a KQL en este tipo de filtro. Para obtener más información, consulte las secciones Lenguaje de consulta y Generador de consultas avanzadas de este artículo.
 
 ## <a name="include-and-exclude-filter-relationships"></a>Incluir y excluir relaciones de filtro
 
@@ -111,7 +109,7 @@ También puede crear consultas más avanzadas para buscar documentos en un conju
 
 1. Abra el panel de filtros, seleccione **Filtros** y expanda la sección **Buscar** .
 
-  ![Agregue un filtro de KQL.](../media/AddKQLFilter.png)
+  ![Agregue un filtro KQL.](../media/AddKQLFilter.png)
 
 2. Seleccione el filtro **KQL** y haga clic en **Abrir generador de consultas**.
 
@@ -131,7 +129,7 @@ En este momento, no hay una opción de filtro en un conjunto de revisión para m
 
 3. Confirme la nueva colección en el mismo conjunto de revisión. Pero esta vez, agregue los elementos parcialmente indizados de los orígenes de datos adicionales. Dado que los elementos de la colección que creó en el paso 1 ya se han agregado al conjunto de revisión, solo los elementos indizados parcialmente de la segunda colección se agregan al conjunto de revisión.
 
-4. Una vez agregadas ambas colecciones al conjunto de revisión, vaya al conjunto de revisión y seleccione **AdministrarInstalar** >  **conjuntos**.
+4. Después de agregar ambas colecciones al conjunto de revisión, vaya al conjunto de revisiones y seleccione **Administrar** > **conjuntos de carga**.
 
 5. Copie o anote el **identificador de carga** de la segunda colección (el que creó en el paso 2). El nombre de la colección se identifica en la columna **Información de origen** .
 

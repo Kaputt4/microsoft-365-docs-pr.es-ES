@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en eDiscovery (Premium). Este artículo le guiará por el proceso de un extremo a otro de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que es más relevante para la investigación.
-ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddf1762545765424891108f50cceea17999f0920
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100801"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625091"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Inicio rápido: Codificación predictiva en eDiscovery (Premium) (versión preliminar)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se presenta un inicio rápido para usar la codificación predictiva en Microsoft Purview eDiscovery (Premium). El módulo de codificación predictiva usa funcionalidades inteligentes de aprendizaje automático para ayudarle a eliminar grandes volúmenes de contenido de casos que no son relevantes para la investigación. Esto se logra mediante la creación y el entrenamiento de sus propios modelos de codificación predictiva que le ayudan a priorizar los elementos más relevantes para su revisión.
 
@@ -33,15 +31,15 @@ Esta es una introducción rápida al proceso de codificación predictiva:
 
 Para empezar, cree un modelo, etiquete tan solo 50 elementos como pertinentes o no pertinentes. A continuación, el sistema usa este entrenamiento para aplicar puntuaciones de predicción a cada elemento del conjunto de revisión. Esto le permite filtrar los elementos en función de la puntuación de predicción, lo que le permite revisar primero los elementos más relevantes (o no relevantes). Si desea entrenar modelos con mayores precisiónes y tasas de recuperación, puede seguir etiquetando elementos en rondas de entrenamiento posteriores hasta que el modelo se estabilice. Una vez estabilizado el modelo, puede aplicar el filtro de predicción final para priorizar los elementos que se van a revisar.
 
-Para obtener información general detallada sobre la codificación predictiva, consulte [Información sobre la codificación predictiva en eDiscovery (Premium)](predictive-coding-overview.md).
+Para obtener información general detallada sobre la codificación predictiva, consulte [Información sobre la codificación predictiva en eDiscovery (Premium).](predictive-coding-overview.md)
 
 ## <a name="step-1-create-a-new-predictive-coding-model"></a>Paso 1: Crear un nuevo modelo de codificación predictiva
 
 El primer paso consiste en crear un nuevo modelo de codificación predictiva en el conjunto de revisión.
 
-1. En el portal de cumplimiento de Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
+1. En el portal de cumplimiento Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
 
-2. Abra un conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
+2. Abra un conjunto de revisión y, a continuación, haga clic en **Análisis** > **Administrar codificación predictiva (versión preliminar).**
 
    ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
@@ -59,7 +57,7 @@ Para obtener instrucciones más detalladas, consulte [Creación de un modelo de 
 
 Después de crear el modelo, el siguiente paso es completar la primera ronda de entrenamiento etiquetando los elementos como pertinentes o no pertinentes.
 
-1. Abra el conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
+1. Abra el conjunto de revisión y, a continuación, haga clic en **Análisis** > **Administrar codificación predictiva (versión preliminar).**
 
 2. En la página **Modelos de codificación predictiva (versión preliminar),** seleccione el modelo que desea entrenar.
 

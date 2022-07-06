@@ -1,5 +1,5 @@
 ---
-title: Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión
+title: Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,17 +13,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Aprenda a incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro para clientes Microsoft Defender para punto de conexión
-ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro para clientes Microsoft Defender para punto de conexión
+ms.openlocfilehash: 97ab1dbccc28cd1f9d14635c2fa351d0295202c1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953391"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622929"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión
 
 Puede usar JAMF Pro para incorporar dispositivos macOS a soluciones de Microsoft Purview.
 
@@ -39,7 +37,7 @@ Puede usar JAMF Pro para incorporar dispositivos macOS a soluciones de Microsoft
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que [los dispositivos macOS se administran a través de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) y que están asociados a una identidad (UPN Azure AD unida) a través de JAMF Conectar o Intune.
+- Asegúrese de que [los dispositivos macOS se administran a través de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) y están asociados a una identidad (UPN unido a Azure AD) a través de JAMF Connect o Intune.
 - Instalar el explorador v95+ Edge en los dispositivos macOS
 
 ## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Incorporación de dispositivos a soluciones de Microsoft Purview mediante JAMF Pro
@@ -76,25 +74,25 @@ acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Elija los grupos en los que implementar este perfil de configuración.
 
-1. Seleccione **Guardar**. 
+1. Elija **Guardar**. 
 
 ### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Actualización del perfil de configuración para conceder acceso completo al disco
 
 1. Actualice el perfil de acceso al disco completo existente con el archivo **fulldisk.mobileconfig** .
 
-1. Upload el archivo **fulldisk.mobileconfig** a JAMF. Consulte [Implementación de perfiles de configuración personalizados mediante jamf Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Cargue el archivo **fulldisk.mobileconfig** en JAMF. Consulte [Implementación de perfiles de configuración personalizados mediante JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Concesión de acceso de accesibilidad a DLP
 
 1. Use el archivo accessibility.mobileconfig que descargó anteriormente.
 
-1. Upload a JAMF como se describe en [Implementación de perfiles de configuración personalizados mediante Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Cargue en JAMF como se describe en [Implementación de perfiles de configuración personalizados mediante Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>Comprobación del dispositivo macOS 
 
 1. Reinicie el dispositivo macOS.
 
-1. Abra **Preferencias** >  del **sistemaPerfiles**.
+1. Abra **Perfiles de preferencias del** >  sistema.
 
 1. Debería ver lo siguiente:
     - Accesibilidad
@@ -120,4 +118,4 @@ Para desconectar un dispositivo macOS, siga estos pasos.
         - Uso de extensiones del sistema
         - Uso de la prevención de pérdida de datos
 
-1. Seleccione **Guardar**.
+1. Elija **Guardar**.

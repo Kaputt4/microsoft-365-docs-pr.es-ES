@@ -15,22 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use la herramienta eDiscovery de búsqueda de contenido para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
+description: Use la herramienta eDiscovery búsqueda de contenido para buscar elementos importados a buzones de Correo de Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095408"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624849"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Uso de búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede usar la [herramienta eDiscovery de búsqueda de contenido](content-search.md) en el portal de cumplimiento de Microsoft Purview para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos importados de terceros o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una suspensión de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
+Puede usar la [herramienta eDiscovery de búsqueda de contenido](content-search.md) en el portal de cumplimiento Microsoft Purview para buscar elementos importados a buzones de Correo de Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos importados de terceros o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una suspensión de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
   
-Para obtener más información sobre cómo trabajar con un asociado para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, consulte [Trabajo con un asociado para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md).
+Para obtener más información sobre cómo trabajar con un asociado para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, vea [Trabajar con un asociado para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
 > Las instrucciones de este artículo solo se aplican a datos de terceros importados por un conector de asociado personalizado. Este artículo no se aplica a los datos de terceros que se importan mediante los [conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors) en el Centro de cumplimiento de Microsoft.
@@ -86,7 +84,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden b
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Mensaje de Bloomberg  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Mensajería de Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|Cuadro  <br/> | `ipm.externaldata.Box*` <br/> |
+|Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud para Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |

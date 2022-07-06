@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure los valores de Microsoft Purview eDiscovery (Premium) que se aplican a todos los conjuntos de revisión en un caso. Esto incluye la configuración para el análisis y el reconocimiento óptico de caracteres.
-ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097148"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624573"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configuración de búsqueda y análisis en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede configurar las opciones para cada caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview para controlar la siguiente funcionalidad.
+Puede configurar los valores de cada caso de Microsoft Purview eDiscovery (Premium) para controlar la siguiente funcionalidad.
 
 - Casi duplicados y subprocesos de correo electrónico
 
@@ -42,7 +40,7 @@ Puede configurar las opciones para cada caso de exhibición de documentos electr
 
 Para configurar las opciones de búsqueda y análisis de un caso:
 
-1. En la página **eDiscovery (Premium),** seleccione el caso.
+1. En la página de **eDiscovery (Premium)**, seleccione el caso.
 
 2. En la pestaña **Configuración**, en **Búsqueda y análisis**, haga clic en **Seleccionar**.
 
@@ -70,11 +68,11 @@ En esta sección, puede establecer parámetros para los temas. Para obtener más
 
 - **Incluir números en temas:** Cuando está activado, los números (que identifican un tema) se incluyen al generar temas. 
 
-- **Ajuste el número máximo de temas dinámicamente:** En determinadas situaciones, es posible que no haya suficientes documentos en un conjunto de revisión para generar el número deseado de temas. Cuando esta configuración está habilitada, eDiscovery (Premium) ajusta el número máximo de temas dinámicamente en lugar de intentar aplicar el número máximo de temas.
+- **Ajuste el número máximo de temas dinámicamente:** En determinadas situaciones, es posible que no haya suficientes documentos en un conjunto de revisión para generar el número deseado de temas. Cuando esta configuración está activada, eDiscovery (Premium) ajusta el número máximo de temas de forma dinámica en lugar de intentar imponer el número máximo de temas.
 
 ## <a name="review-set-query"></a>Consulta de un conjunto de revisión
 
-Si activa la casilla **Crear automáticamente una búsqueda guardada después del análisis**, eDiscovery (Premium) genera automáticamente una consulta de conjunto de revisión denominada **For Review.** 
+Si activa la casilla **Crear automáticamente una búsqueda guardada después del análisis** , eDiscovery (Premium) genera automáticamente una consulta de conjunto de revisión denominada **Para revisión.** 
 
 ![Consulta generada automáticamente para la revisión.](../media/AeDForReviewQuery.png)
 

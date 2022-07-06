@@ -13,23 +13,21 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de atención sanitaria (EHR) del sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: 55f33358af7b53dc6042fce94b1ddc92e9f130fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) desde el sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
+ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078008"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624055"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar registros de auditoría para la actividad del usuario en el sistema Epic Electronic Healthcare Records (EHR) de su organización. Los registros de auditoría del sistema EPIC EHR incluyen registros de eventos relacionados con el acceso a los registros de salud de un paciente. Los registros de auditoría de EPIC EHR pueden ser utilizados por la [Microsoft 365 solución de administración de riesgos internos](insider-risk-management.md) para ayudar a proteger su organización frente al acceso no autorizado a la información del paciente.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar registros de auditoría para la actividad del usuario en el sistema Epic Electronic Healthcare Records (EHR) de su organización. Los registros de auditoría del sistema EPIC EHR incluyen registros de eventos relacionados con el acceso a los registros de salud de un paciente. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los registros de auditoría de EPIC EHR para ayudar a proteger su organización contra el acceso no autorizado a la información del paciente.
 
 La configuración de un conector epic consta de las siguientes tareas:
 
-- Crear una aplicación en Azure Active Directory (Azure AD) para acceder a un punto de conexión de API que acepta un archivo de texto separado por tabulaciones que contiene registros de auditoría de Epic EHR.
+- Creación de una aplicación en Azure Active Directory (Azure AD) para acceder a un punto de conexión de API que acepta un archivo de texto separado por tabulaciones que contiene registros de auditoría de Epic EHR.
 
 - Crear un archivo de texto con todos los campos necesarios tal como se define en el esquema del conector.
 
@@ -41,19 +39,19 @@ La configuración de un conector epic consta de las siguientes tareas:
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector de Epic en el paso 3 se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Epic en el paso 3 se le debe asignar el rol Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Debe determinar cómo recuperar o exportar los datos del sistema DE EHR epic de su organización (a diario) y crear un archivo de texto que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo de texto en el punto de conexión de API.
 
 - El script de ejemplo que se ejecuta en el paso 4 inserta los registros de auditoría de Epic EHR desde el archivo de texto a la API del conector para que la solución de administración de riesgos internos pueda usarla. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector epic que cree en el paso 3. La creación de esta aplicación permite Azure AD autenticar la solicitud de inserción para el archivo de texto que contiene registros de auditoría de EPIC EHR. Durante la creación de esta aplicación Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector epic que cree en el paso 3. La creación de esta aplicación permite que Azure AD autentique la solicitud de inserción para el archivo de texto que contiene registros de auditoría de Epic EHR. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD identificador de aplicación (también denominado *id. de aplicación* o *id. de cliente*)
+- Identificador de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente*)
 
-- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
+- Secreto de aplicación de Azure AD (también denominado *secreto de cliente*)
 
 - Id. de inquilino (también denominado *id. de directorio*)
 
@@ -68,12 +66,12 @@ El siguiente paso consiste en crear un archivo de texto que contenga informació
 
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos internos. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y no se importarán los datos del archivo.
 
-|Field|Categoría|
+|Campo|Categoría|
 |:----|:----------|
-| ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EPIC EHR.|
+| ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>GROUP.NAME de métricas\_de ZC\_<br/>ZC\_ACCESS\_ACTION.NAME |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EPIC EHR.|
 | PACIENTE. PAT_MRN_ID<br/>PACIENTE. PAT_FIRST_NAME* <br/>PACIENTE. PAT_MIDDLE_NAME <br/>PACIENTE. PAT_LAST_NAME* <br/>PACIENTE. ADD_LINE_1* <br/>PACIENTE. ADD_LINE_2  <br/>PACIENTE. CIUDAD* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Estos campos se usan para identificar la información del perfil del paciente.|
 | ZC_BTG_REASON.NAME*<br/> PAT_BTG_AUDIT. BTG_EXPLANATION | Estos campos se usan para identificar el acceso a registros restringidos.|
-| EMP. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name <sup>1</sup> <br/> employee_first_name <sup>1</sup>                | Estos campos se usan para identificar la información del perfil de empleado para la coincidencia de direcciones y nombres necesaria para determinar el acceso a los registros de familia, vecino o empleado. |
+| EMP. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | Estos campos se usan para identificar la información del perfil de empleado para la coincidencia de direcciones y nombres necesaria para determinar el acceso a los registros de familia, vecino o empleado. |
 |||
 
 > [!NOTE]
@@ -106,7 +104,7 @@ El siguiente paso es crear un conector de Epic en el portal de cumplimiento. Des
 
     2. **Esquema de referencia.** Consulte el esquema para comprender qué campos del sistema Epic son aceptados por el conector. Esto le ayudará a crear un archivo con todos los campos de base de datos de Epic necesarios.
 
-    3. **Vínculo a script de ejemplo.** Haga clic en el vínculo **aquí** para ir al sitio GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante del conector.
+    3. **Vínculo a script de ejemplo.** Haga clic en el vínculo **aquí** para ir al sitio de GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante del conector.
 
 6. Haga clic en **Listo**.
 
@@ -120,12 +118,12 @@ También puede hacer clic en **Editar** para cambiar el identificador de App de 
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-epic-ehr-audit-records"></a>Paso 4: Ejecución del script de ejemplo para cargar los registros de auditoría de Epic EHR
 
-El último paso para configurar un conector de Epic es ejecutar un script de ejemplo que cargará los datos de registros de auditoría de EPIC EHR en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector epic. Después de ejecutar el script, el conector de Epic que creó en el paso 3 importa los datos de registros de auditoría de EPIC EHR a la organización Microsoft 365 a la que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+El último paso para configurar un conector de Epic es ejecutar un script de ejemplo que cargará los datos de registros de auditoría de EPIC EHR en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector epic. Después de ejecutar el script, el conector de Epic que creó en el paso 3 importa los datos de registros de auditoría de Epic EHR a la organización de Microsoft 365, a los que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
 > [!NOTE]
 > Como se indicó anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso tardará entre 30 y 40 minutos en importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de 100 000 filas y, a continuación, importará esos bloques secuencialmente.
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para acceder al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que copió. También puede acceder al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
+1. Vaya a la ventana que dejó abierta desde el paso anterior para acceder al sitio de GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que copió. También puede acceder al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Haga clic en el botón **Sin formato** para mostrar el script en la vista de texto.
 
@@ -145,11 +143,11 @@ El último paso para configurar un conector de Epic es ejecutar un script de eje
 
 En la tabla siguiente se describen los parámetros que se usarán con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-|Parámetro  |Descripción|
+|Parámetro  |Description|
 |:----------|:----------|
-|tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del centro de administración de Azure AD. Esto se usa para identificar su organización.|
-|appId|Este es el identificador de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta acceder a la organización Microsoft 365.|
-|appSecret|Este es el secreto de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
+|tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
+|appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365.|
+|appSecret|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
 |jobId|Este es el identificador de trabajo del conector de Epic que creó en el paso 3. Esto se usa para asociar los registros de auditoría de Epic EHR que se cargan en la nube de Microsoft con el conector de Epic.|
 |Filepath|Esta es la ruta de acceso del archivo de texto (almacenado en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
 |||
@@ -160,7 +158,7 @@ Este es un ejemplo de la sintaxis del script del conector de Epic mediante valor
 .\EpicConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\epic_audit_records.txt'
 ```
 
-Si la carga se realiza correctamente, el script muestra el **mensaje Upload Correcto**.
+Si la carga se realiza correctamente, el script muestra el mensaje **Cargar correctamente** .
 
 > [!NOTE]
 > Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, consulte [Acerca de las directivas de ejecución](/powershell/module/microsoft.powershell.core/about/about_execution_policies) y [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
@@ -187,7 +185,7 @@ Para asegurarse de que los registros de auditoría más recientes del sistema EP
 
 Puede usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
-1. En el equipo local, haga clic en el botón **inicio** Windows y escriba **Programador de tareas**.
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y escriba **Programador de tareas**.
 
 2. Haga clic en la aplicación **Programador de tareas** para abrirla.
 

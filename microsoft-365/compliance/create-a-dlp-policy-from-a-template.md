@@ -20,20 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: En este artículo, obtendrá información sobre cómo crear directivas DLP mediante una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 67d21d3e5a057960a4d3fa92bfaa709345cf38ff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754684"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624595"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 La manera más sencilla y común de empezar a trabajar con directivas DLP es usar una de las plantillas incluidas en el portal de cumplimiento Microsoft Purview. Puede usar una de estas plantillas tal como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de su organización.
 
-Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de normativas y directivas empresariales. Ver; [Plantillas de directiva](dlp-policy-reference.md#policy-templates) para una lista completa. 
+Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de directivas empresariales y normativas. Ver; [Plantillas de directiva](dlp-policy-reference.md#policy-templates) para una lista completa. 
 
 Puede ajustar una plantilla modificando cualquiera de sus reglas existentes o agregando otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil de desencadenar, permitir que los usuarios invaliden las acciones de una regla proporcionando una justificación empresarial o cambiar a quién se envían las notificaciones y los informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
 
@@ -53,7 +51,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
 
 Use el rol **View-Only DLP Compliance Management** para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
 
-Para obtener más información vea [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Para obtener más información vea [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md).
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP que no aplique directivas.
 
@@ -61,14 +59,14 @@ Estos permisos son necesarios para crear y aplicar una directiva DLP que no apli
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Esta es una lista de los roles aplicables. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
+Esta es una lista de los grupos de roles aplicables. Para obtener más información sobre, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -82,8 +80,6 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
 
 2. En el portal de cumplimiento Microsoft Purview \> navegación \> izquierdo **Soluciones Directivas** \> de prevención  \> \> de **pérdida de datos** **+ Crear directiva**.
 
-    ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **a continuación**.
 
 4. Asigne a la directiva \> el nombre **Siguiente**.
@@ -103,13 +99,13 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
    - Elija **Todas las ubicaciones de Office 365** \> **Siguiente**.
    - Elija **Permitirme elegir ubicaciones** \> específicas **Siguiente**. En este ejemplo, elija esta opción.
 
-   Para incluir o excluir una ubicación completa, como todas las Exchange correo electrónico o todas las cuentas de OneDrive, active o desactive el **estado** de esa ubicación.
+   Para incluir o excluir una ubicación completa, como todos los correos electrónicos de Exchange o todas las cuentas de OneDrive, active o desactive el **estado** de esa ubicación.
 
-   Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive para la Empresa, **cambie estado a** activado y, a continuación, haga clic en los vínculos en **Incluir** para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
+   Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive para la Empresa, cambie el **estado** a activado y, a continuación, haga clic en los vínculos de **Incluir** para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
 
    ![Opciones para las ubicaciones en las que se puede aplicar una directiva DLP.](../media/all-locations.png)
 
-   En este ejemplo, para proteger la información confidencial almacenada en todas las cuentas de OneDrive para la Empresa, desactive el **estado** de **Exchange correo electrónico** y **sitios de SharePoint**, y deje el **estado** activado para **las cuentas de OneDrive**.
+   En este ejemplo, para proteger la información confidencial almacenada en todas las cuentas de OneDrive para la Empresa, desactive el **estado** para el **correo electrónico de Exchange** y **los sitios de SharePoint** y deje el **estado** activado para **las cuentas de OneDrive**.
 
 7. Elija **Revisar y personalizar la configuración predeterminada en la plantilla** \> **Siguiente**.
 
@@ -121,7 +117,7 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. mensajes de chat y canales de Teams 
+    1. Mensajes de chat y canal de Teams 
 
 10. Elija **Siguiente**.
 

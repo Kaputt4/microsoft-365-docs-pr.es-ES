@@ -1,5 +1,5 @@
 ---
-title: Administrar tipos de información confidencial personalizados en el Centro de cumplimiento
+title: Administrar tipos personalizados de información confidencial en el Centro de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo modificar y quitar tipos de información confidencial personalizados en el Centro de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0efbb93096fc3c0b61a57319aa2d23a079f684d1
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 5e0b1b91fd19a5e0705ad95affe888a87847caf8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902629"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621979"
 ---
-# <a name="manage-custom-sensitive-information-types-in-the-compliance-center"></a>Administrar tipos de información confidencial personalizados en el Centro de cumplimiento
+# <a name="manage-custom-sensitive-information-types-in-the-compliance-center"></a>Administración de tipos de información confidencial personalizados en el Centro de cumplimiento
 
-En este artículo se le guían los pasos para modificar y quitar un tipo de información confidencial personalizada existente en el Centro de cumplimiento.
+Este artículo le guiará por los pasos para modificar y quitar un tipo de información confidencial personalizada existente en el Centro de cumplimiento.
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modificar tipos personalizados de información confidencial en el Centro de cumplimiento
 

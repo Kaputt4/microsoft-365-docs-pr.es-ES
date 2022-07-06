@@ -17,19 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos no indizados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos sin indexar) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
+ms.openlocfilehash: 1e048cece931ecefe395a5a26bbfb840c8b831f6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078752"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625113"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indexados en eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
+Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son elementos y documentos de buzón de Exchange en SharePoint y OneDrive para la Empresa sitios que, por alguna razón, no estaban completamente indexados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
 - Los mensajes de correo electrónico tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
 
@@ -96,7 +94,7 @@ Las etiquetas de error se componen de dos fragmentos de información: el error y
   
 A continuación se muestra una lista de errores de indexación y una descripción de la posible causa del error.
   
-| Etiqueta de error | Descripción |
+| Etiqueta de error | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El recuperador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |
@@ -109,9 +107,9 @@ A continuación se muestra una lista de errores de indexación y una descripció
 | `parserinputsize` <br/> |Un archivo adjunto era demasiado grande para que el analizador controlara y el análisis de esos datos adjuntos no se produjo o no se completó.  <br/> |
 | `parsermalformed` <br/> |El analizador no pudo controlar los datos adjuntos con un formato incorrecto. Este resultado puede deberse a formatos de archivo antiguos, archivos creados por software incompatible o virus que pretenden ser algo distinto de reclamado.  <br/> |
 | `parseroutputsize` <br/> |La salida del análisis de datos adjuntos era demasiado grande y tenía que truncarse.  <br/> |
-| `parserunknowntype` <br/> |Los datos adjuntos tenían un tipo de archivo que Microsoft 365 no se pudo detectar.  <br/> |
+| `parserunknowntype` <br/> |Los datos adjuntos tenían un tipo de archivo que Microsoft 365 no pudo detectar.  <br/> |
 | `parserunsupportedtype` <br/> |Los datos adjuntos tenían un tipo de archivo que Office 365 podría detectar, pero no se admite el análisis de ese tipo de archivo.  <br/> |
-| `propertytoobig` <br/> |El valor de una propiedad de correo electrónico en Exchange Store era demasiado grande para recuperarse y no se pudo procesar el mensaje. Normalmente, esto solo sucede en la propiedad body de un mensaje de correo electrónico.  <br/> |
+| `propertytoobig` <br/> |El valor de una propiedad de correo electrónico en la Tienda Exchange era demasiado grande para recuperarse y no se pudo procesar el mensaje. Normalmente, esto solo sucede en la propiedad body de un mensaje de correo electrónico.  <br/> |
 | `retrieverrms` <br/> |El recuperador de contenido no pudo descodificar un mensaje protegido con RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Se identificaron demasiadas palabras en el documento durante la indexación. El procesamiento de la propiedad se detuvo al alcanzar el límite y la propiedad se trunca.  <br/> |
 
@@ -187,6 +185,6 @@ Here's an example fo the output returned by the script.
 > - A list error tags and the corresponding file types for which the error occurred.
 -->
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Elementos indizados parcialmente en eDiscovery](partially-indexed-items-in-content-search.md)

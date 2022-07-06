@@ -1,5 +1,5 @@
 ---
-title: Adición de orígenes de datos sin custodia a un caso de eDiscovery (Premium)
+title: Adición de orígenes de datos que no son de custodia a un caso de exhibición de documentos electrónicos (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,38 +14,36 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Puede agregar orígenes de datos sin custodia a un caso de exhibición de documentos electrónicos (Premium) y colocar una suspensión en el origen de datos. Los orígenes de datos sin custodia se vuelven a indexar, por lo que cualquier contenido marcado como parcialmente indexado se vuelve a procesar para que se pueda buscar de forma completa y rápida.
-ms.openlocfilehash: 86011a0f19dcb8f46041f4c0aa7c91d89e4e2198
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Puede agregar orígenes de datos que no sean de custodia a un caso de exhibición de documentos electrónicos (Premium) y colocar una suspensión en el origen de datos. Los orígenes de datos sin custodia se vuelven a indexar, por lo que cualquier contenido marcado como parcialmente indexado se vuelve a procesar para que se pueda buscar de forma completa y rápida.
+ms.openlocfilehash: bb5ff8a4a58e62d3f4bf36f7c7e1e9001d829036
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097984"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625135"
 ---
-# <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Adición de orígenes de datos sin custodia a un caso de eDiscovery (Premium)
+# <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Adición de orígenes de datos que no son de custodia a un caso de exhibición de documentos electrónicos (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En los casos de exhibición de documentos electrónicos de Microsoft Purview (Premium), no siempre satisface sus necesidades para asociar un origen de datos Microsoft 365 a un custodio en el caso. Pero es posible que todavía necesite asociar esos datos a un caso para poder buscarlos, agregarlos a un conjunto de revisión y analizarlos y revisarlos. La característica de eDiscovery (Premium) se denomina *orígenes de datos sin custodia* y permite agregar datos a un caso sin tener que asociarlos a un custodio. También aplica la misma funcionalidad de exhibición de documentos electrónicos (Premium) a los datos que no son de custodia que están disponibles para los datos asociados con el custodio. Dos de las cosas más útiles que puede aplicar a los datos que no son de custodia es colocarlos en espera y procesarlos mediante [la indexación avanzada](indexing-custodian-data.md).
+En los casos de Microsoft Purview eDiscovery (Premium), no siempre satisface sus necesidades para asociar un origen de datos de Microsoft 365 a un custodio en el caso. Pero es posible que todavía necesite asociar esos datos a un caso para poder buscarlos, agregarlos a un conjunto de revisión y analizarlos y revisarlos. La característica de eDiscovery (Premium) se denomina *orígenes de datos sin custodia* y permite agregar datos a un caso sin tener que asociarlos a un custodio. También aplica la misma funcionalidad de exhibición de documentos electrónicos (Premium) a los datos no custodiales que están disponibles para los datos asociados con el custodio. Dos de las cosas más útiles que puede aplicar a los datos que no son de custodia es colocarlos en espera y procesarlos mediante [la indexación avanzada](indexing-custodian-data.md).
 
 ## <a name="add-a-non-custodial-data-source"></a>Adición de un origen de datos que no es de custodia
 
 Siga estos pasos para agregar y administrar orígenes de datos que no son de custodia en un caso de exhibición de documentos electrónicos (Premium).
 
-1. En la página principal de **eDiscovery (Premium),** haga clic en el caso al que desea agregar los datos.
+1. En la página principal **de eDiscovery (Premium),** haga clic en el caso al que desea agregar los datos.
 
-2. Haga clic en la pestaña **Orígenes de** datos y, a continuación, haga clic en **Agregar origen de** >  **datosAgregar ubicaciones de datos**.
+2. Haga clic en la pestaña **Orígenes de** datos y, a continuación, haga clic en **Agregar origen de** > **datos Agregar ubicaciones de datos**.
 
-3. En la página flotante **Nuevas ubicaciones de datos sin custodia** , elija los orígenes de datos que desea agregar al caso. Puede agregar varios buzones y sitios expandiendo las secciones **SharePoint** o **Exchange** y, a continuación, haciendo clic en **Editar**.
+3. En la página flotante **Nuevas ubicaciones de datos sin custodia** , elija los orígenes de datos que desea agregar al caso. Puede agregar varios buzones de correo y sitios expandiendo las secciones **de SharePoint** o **Exchange** y, a continuación, haciendo clic en **Editar**.
 
    ![Agregue sitios de SharePoint y buzones de Exchange como orígenes de datos que no sean de custodia.](../media/NonCustodialDataSources1.png)
 
-   - **SharePoint**: haga clic en **Editar** para agregar sitios. Seleccione un sitio en la lista o puede buscar un sitio escribiendo la dirección URL del sitio en la barra de búsqueda. Seleccione los sitios que desea agregar como orígenes de datos sin custodia y haga clic en **Agregar**.
+   - **SharePoint** : haga clic en **Editar** para agregar sitios. Seleccione un sitio en la lista o puede buscar un sitio escribiendo la dirección URL del sitio en la barra de búsqueda. Seleccione los sitios que desea agregar como orígenes de datos sin custodia y haga clic en **Agregar**.
 
-   - **Exchange**: haga clic en **Editar** para agregar buzones. Escriba un nombre o alias (un mínimo de tres caracteres) en el cuadro de búsqueda de buzones o grupos de distribución. Seleccione los buzones que desea agregar como orígenes de datos que no son de custodia y haga clic en **Agregar**.
+   - **Exchange** : haga clic en **Editar** para agregar buzones. Escriba un nombre o alias (un mínimo de tres caracteres) en el cuadro de búsqueda de buzones o grupos de distribución. Seleccione los buzones que desea agregar como orígenes de datos que no son de custodia y haga clic en **Agregar**.
 
    > [!NOTE]
-   > Puede usar las secciones **SharePoint** y **Exchange** para agregar sitios y buzones asociados a un equipo o grupo de Yammer como orígenes de datos que no son de custodia. Tiene que agregar por separado el buzón de correo y el sitio asociados a un equipo o grupo de Yammer.<br/><br/> Además, no se admite la adición de una dirección URL del sitio raíz (como `https://contoso-my.sharepoint.com/personal/` o `https://contoso-my.sharepoint.com/`) como un origen de datos SharePoint. Tiene que agregar sitios específicos.
+   > Puede usar las secciones **De SharePoint** y **Exchange** para agregar sitios y buzones asociados a un grupo de Team o Yammer como orígenes de datos que no son de custodia. Tiene que agregar por separado el buzón de correo y el sitio asociados a un grupo de Team o Yammer.<br/><br/> Además, no se admite la adición de una dirección URL del sitio raíz (como `https://contoso-my.sharepoint.com/personal/` o  `https://contoso-my.sharepoint.com/`) como origen de datos de SharePoint. Tiene que agregar sitios específicos.
 
 4. Después de agregar orígenes de datos que no son de custodia, tiene la opción de colocar esas ubicaciones en espera o no. Active o anule la selección de la casilla **Detención** situada junto al origen de datos para colocarla en espera.
 
@@ -61,7 +59,7 @@ Después de agregar orígenes de datos que no son de custodia al caso, se crea u
 
 Después de colocar una suspensión en un origen de datos que no es de custodia, se crea automáticamente una directiva de suspensión que contiene los orígenes de datos que no son de custodia para el caso. Cuando coloca otros orígenes de datos que no son de custodia en espera, se agregan a esta directiva de suspensión.
 
-1. Abra el caso de eDiscovery (Premium) y seleccione la pestaña **Suspensión**.
+1. Abra el caso de exhibición de documentos electrónicos (Premium) y seleccione la pestaña **Suspensión** .
 
 2. Haga clic en **NCDSHold-\<GUID\>**, donde el valor GUID es único para el caso.
 

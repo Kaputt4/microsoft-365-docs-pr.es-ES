@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar Configuration Analyzer para Microsoft Purview para ponerse en marcha rápidamente con Microsoft Purview Compliance Manager.
-ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573955"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621169"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Analizador de configuración para Microsoft Purview (CAMP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Obtenga información sobre cómo instalar y ejecutar la herramienta Configuration Analyzer for Microsoft Purview (CAMP) para empezar a trabajar rápidamente con Microsoft Purview Compliance Manager.
 
@@ -112,7 +110,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | Input |  País o región |
   | :------------- | :------------: |
   | 1  | Asia-Pacífico |
-  | 2  | Australia |
+  | 2 | Australia |
   | 3  | Canadá |
   | 4  | Europa (excepto Francia) / Oriente Medio / África |
   | 5 | Francia |

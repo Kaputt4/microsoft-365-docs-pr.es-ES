@@ -17,18 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5db5fbe81913666f052cbd664e8a7f813da6a7c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396209"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621125"
 ---
 # <a name="learn-about-information-barriers"></a>Más información acerca de las barreras de información
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Barreras de información (IB) es una solución de cumplimiento que permite restringir la comunicación bidireccional y la colaboración entre grupos y usuarios en Microsoft Teams, SharePoint Online y OneDrive para la Empresa. A menudo utilizado en sectores altamente regulados, el IB puede ayudar a evitar conflictos de interés y a proteger la información interna entre los usuarios y las áreas organizativas.
+Microsoft Purview Information Barriers (IB) es una solución de cumplimiento que permite restringir la comunicación bidireccional y la colaboración entre grupos y usuarios en Microsoft Teams, SharePoint Online y OneDrive para la Empresa. A menudo utilizado en sectores altamente regulados, el IB puede ayudar a evitar conflictos de interés y a proteger la información interna entre los usuarios y las áreas organizativas.
 
 Cuando se aplican directivas de IB, los usuarios que no deben comunicarse o compartir archivos con otros usuarios específicos no podrán encontrar, seleccionar, chatear o llamar a esos usuarios. Las directivas de IB establecen automáticamente comprobaciones para detectar y evitar la comunicación y colaboración no autorizadas entre grupos y usuarios definidos. Las directivas de IB son independientes de [los límites de cumplimiento](/microsoft-365/compliance/set-up-compliance-boundaries) de las investigaciones de eDiscovery que controlan las ubicaciones de contenido de usuario que los administradores de eDiscovery pueden buscar.
 
@@ -38,14 +36,14 @@ Las directivas de IB pueden permitir o impedir la comunicación y la colaboraci�
 - El personal financiero que trabaja con información confidencial de la empresa no debe comunicarse ni compartir archivos con determinados grupos de su organización.
 - Un equipo interno con material secreto comercial no debe llamar ni chatear en línea con personas de determinados grupos dentro de su organización.
 - Un equipo de investigación solo debe llamar o chatear en línea con un equipo de desarrollo de productos.
-- Un sitio SharePoint para el grupo *Day Trader* no debe ser compartido ni accedido por nadie fuera del grupo *Day Trader*
+- Un sitio de SharePoint para el grupo *Day Trader* no debe compartirse ni tener acceso a él nadie fuera del grupo *Day Trader*
 
 > [!IMPORTANT]
 > Las barreras de información **solo admiten** restricciones bidireccionales de comunicación y colaboración. Por ejemplo, **no se admite** un escenario en el que Marketing pueda comunicarse y colaborar con Day Traders, pero Day Traders no puede comunicarse ni colaborar con Marketing.
 
 ## <a name="information-barriers-and-microsoft-teams"></a>Barreras de información y Microsoft Teams
 
-En Microsoft Teams, las directivas de IB determinan e impiden los siguientes tipos de comunicación y colaboración no autorizadas:
+En Microsoft Teams, las directivas de IB determinan y evitan los siguientes tipos de comunicación y colaboración no autorizadas:
 
 - Buscar un usuario
 - Agregar un miembro a un equipo
@@ -57,28 +55,28 @@ En Microsoft Teams, las directivas de IB determinan e impiden los siguientes tip
 - Uso compartido de un archivo con otro usuario
 - Acceso a un archivo mediante el uso compartido de un vínculo
 
-Si los usuarios que realizan estas actividades en Microsoft Teams se incluyen en una directiva de IB para evitar la actividad, no podrán continuar. Además, se puede impedir que todos los usuarios incluidos en una directiva de IB se comuniquen con otros usuarios en Microsoft Teams. Cuando las personas afectadas por las directivas de IB forman parte del mismo equipo o chat de grupo, es posible que se eliminen de esas sesiones de chat y no se permita una comunicación adicional con el grupo.
+Si los usuarios que realizan estas actividades en Microsoft Teams se incluyen en una directiva de IB para evitar la actividad, no podrán continuar. Además, se puede impedir que todos los usuarios incluidos en una directiva de IB se comuniquen con otros usuarios de Microsoft Teams. Cuando las personas afectadas por las directivas de IB forman parte del mismo equipo o chat de grupo, es posible que se eliminen de esas sesiones de chat y no se permita una comunicación adicional con el grupo.
 
-Para obtener más información, consulte [barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
+Para obtener más información, consulte [Barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>Barreras de información y SharePoint y OneDrive
 
-En SharePoint Online y OneDrive, las directivas de IB detectan e impiden los siguientes tipos de colaboración no autorizada:
+En SharePoint Online y OneDrive, las directivas de IB detectan y evitan los siguientes tipos de colaboración no autorizada:
 
 - Adición de un miembro a un sitio
 - Acceso al sitio o al contenido por parte de un usuario
 - Uso compartido de sitio o contenido con otro usuario
 - Buscar en un sitio
 
-Para obtener más información, consulte [Barreras de información en SharePoint](/sharepoint/information-barriers) y [Barreras de información en OneDrive](/onedrive/information-barriers).
+Para obtener más información, vea [Barreras de información en SharePoint](/sharepoint/information-barriers) y [Barreras de información en OneDrive](/onedrive/information-barriers).
 
 ## <a name="information-barriers-and-exchange-online"></a>Barreras de información y Exchange Online
 
 Las directivas de IB no están disponibles para restringir la comunicación y la colaboración entre grupos y usuarios en los mensajes de correo electrónico. Las directivas de IB se basan en [Exchange Online directivas de libreta de direcciones (AAP).](/exchange/address-books/address-book-policies/address-book-policies) Los ABPs permiten a las organizaciones asignar virtualmente usuarios a grupos específicos con el fin de proporcionar vistas personalizadas de la libreta de direcciones global (GAL) de la organización. Cuando se crean directivas de IB, los ABPs para las directivas se crean automáticamente. A medida que se agregan directivas de IB en su organización, la estructura y el comportamiento de la GAL cambiarán para cumplir con las directivas de IB.
 
-Antes de definir y aplicar directivas de IB, debe quitar todas las directivas de libreta de direcciones Exchange existentes de su organización. Las directivas de IB se basan en directivas de libreta de direcciones y las directivas ABP existentes no son compatibles con los AAP creados por IB. Para quitar las directivas de libreta de direcciones existentes, consulte [Quitar una directiva de libreta de direcciones en Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Una vez habilitadas las directivas de IB y si tiene habilitada la libreta de direcciones jerárquica, todos los usuarios no incluidos en un segmento ib verán la [libreta de direcciones jerárquica](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange en línea.
+Antes de definir y aplicar directivas de IB, debe quitar todas las directivas de libreta de direcciones de Exchange existentes en su organización. Las directivas de IB se basan en directivas de libreta de direcciones y las directivas ABP existentes no son compatibles con los AAP creados por IB. Para quitar las directivas de libreta de direcciones existentes, consulte [Quitar una directiva de libreta de direcciones en Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Una vez habilitadas las directivas de IB y si tiene habilitada la libreta de direcciones jerárquica, todos los usuarios no incluidos en un segmento ib verán la [libreta de direcciones jerárquica](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
-Actualmente, solo se admiten las implementaciones Exchange Online para las directivas de IB. Si su organización necesita definir y controlar las comunicaciones por correo electrónico, considere la posibilidad de usar [Exchange reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Actualmente, solo se admiten las implementaciones Exchange Online para las directivas de IB. Si su organización necesita definir y controlar las comunicaciones por correo electrónico, considere la posibilidad de usar [reglas de flujo de correo de Exchange](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

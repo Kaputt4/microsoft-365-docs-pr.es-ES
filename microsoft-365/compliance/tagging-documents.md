@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: El etiquetado de documentos en un conjunto de revisión ayuda a quitar contenido innecesario e identificar contenido relevante en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 358f62c83cdecd1aee92a2ca56db09b732ea3d9d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2cd1243f520be21cf27c810a5f2dc2e4a033a33f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099617"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623747"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Etiquetar documentos en un conjunto de revisión en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La organización del contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Incluye lo siguiente:
+La organización del contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye lo siguiente:
 
 - Eliminación de contenido innecesario
 
@@ -61,7 +59,7 @@ Puede organizar aún más las etiquetas anidandolas dentro de una sección. Por 
 
 ## <a name="creating-and-applying-tags"></a>Creación y aplicación de etiquetas
 
-El etiquetado de elementos en conjuntos de revisión es un proceso de dos pasos. El primer paso consiste en crear las etiquetas que se aplican a los elementos establecidos de revisión. Después de crear etiquetas, usted y otros revisores pueden aplicarlas a los elementos de un conjunto de revisión. Como se explicó anteriormente, un caso de exhibición de documentos electrónicos (Premium) solo puede tener un conjunto de etiquetas que los revisores pueden usar para etiquetar los elementos del conjunto de revisión.
+El etiquetado de elementos en conjuntos de revisión es un proceso de dos pasos. El primer paso consiste en crear las etiquetas que se aplican a los elementos establecidos de revisión. Después de crear etiquetas, usted y otros revisores pueden aplicarlas a los elementos de un conjunto de revisión. Como se explicó anteriormente, un caso de eDiscovery (Premium) solo puede tener un conjunto de etiquetas que los revisores pueden usar para etiquetar los elementos del conjunto de revisión.
 
 ### <a name="create-tags"></a>Creación de etiquetas
 
@@ -105,7 +103,7 @@ Con la estructura de etiquetas en su lugar, los revisores pueden aplicar etiquet
 
       - **Incluir elementos de familia asociados**: esta opción aplica la misma etiqueta a los elementos de familia asociados de los elementos etiquetados.  *Los elementos de familia* son elementos que comparten el mismo valor de propiedad de metadatos **FamilyId** . Por ejemplo, un documento adjunto a un mensaje de correo electrónico comparte el mismo **FamilyId** que el mensaje de correo electrónico. Por lo tanto, si se selecciona esta opción para este ejemplo, el mensaje de correo electrónico y el documento se etiquetan, aunque el documento no se incluya en la lista de elementos del conjunto de revisión.
 
-      - **Incluir elementos de conversación asociados**: esta opción aplica la misma etiqueta a todos los elementos que están en el mismo Teams o Yammer conversación que los elementos etiquetados. *Los elementos de conversación* son elementos que comparten el mismo valor de propiedad de metadatos **ConversationId** . Todos los mensajes, las publicaciones y el archivo de transcripción correspondiente de una conversación comparten el mismo **ConversationId**. Si se selecciona esta opción, todos los elementos de la misma conversación (y archivo de transcripción) se etiquetan, aunque es posible que algunos de esos elementos de conversación no se incluyan en la lista de elementos del conjunto de revisión. Para obtener más información sobre los elementos de conversación, vea la sección "Agrupación" del [flujo de trabajo de eDiscovery (Premium) para obtener contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Incluir elementos de conversación asociados**: esta opción aplica la misma etiqueta a todos los elementos que están en la misma conversación de Teams o Yammer que los elementos etiquetados. *Los elementos de conversación* son elementos que comparten el mismo valor de propiedad de metadatos **ConversationId** . Todos los mensajes, las publicaciones y el archivo de transcripción correspondiente de una conversación comparten el mismo **ConversationId**. Si se selecciona esta opción, todos los elementos de la misma conversación (y archivo de transcripción) se etiquetan, aunque es posible que algunos de esos elementos de conversación no se incluyan en la lista de elementos del conjunto de revisión. Para obtener más información sobre los elementos de conversación, vea la sección "Agrupación" del [flujo de trabajo de eDiscovery (Premium) para obtener contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
       - **Ninguno**: esta opción no aplica etiquetas a elementos de familia o de conversación. Solo aplica etiquetas a los elementos seleccionados o a todos los elementos de la lista de conjuntos de revisión.
 

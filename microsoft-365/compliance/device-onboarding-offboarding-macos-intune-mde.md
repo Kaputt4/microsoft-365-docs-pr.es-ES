@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante Microsoft Intune para clientes de MDE
-ms.openlocfilehash: c6b374ad3c35ba3441e82412d9897132006d0559
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952850"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623039"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes Microsoft Defender para punto de conexión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión
 
 > [!IMPORTANT]
 > Use este procedimiento ***si ha*** implementado Microsoft Defender para punto de conexión (MDE) en los dispositivos macOS.
@@ -38,7 +36,7 @@ ms.locfileid: "64952850"
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Asegúrese de que [los dispositivos macOS están incorporados a Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) e inscritos en la [aplicación Portal de empresa](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Asegúrese de que tiene acceso al [centro de Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
+- Asegúrese de que tiene acceso al [Centro de Endpoint Manager de Microsoft](https://endpoint.microsoft.com/#home).
 - Esto es compatible con la versión de macOS Catalina 10.15 y versiones posteriores
 - Instalar el explorador v95+ Edge en los dispositivos macOS 
 
@@ -63,7 +61,7 @@ acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="create-system-configuration-profiles"></a>Creación de perfiles de configuración del sistema
 
-1. Abra los perfiles **centerDevicesConfiguration** >  **del centro** >  **de** Microsoft Endpoint Manager.
+1. Abra los **perfiles de configuración** de **dispositivos** >  del **centro** >  de Microsoft Endpoint Manager.
 
 1. Elija: **Crear perfil**. 
 
@@ -84,7 +82,7 @@ acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Revise la configuración y elija **Crear** para implementar la configuración.
 
-1. Abra **DispositivosPerfiles** >  **de configuración**, debería ver los perfiles creados allí.
+1. Abra Los **perfiles de configuración de** **dispositivos** > , debería ver los perfiles creados allí.
 
 1. En la página **Perfiles de configuración** , elija el perfil que acaba de crear, en este ejemplo *AccessibilityformacOS* y elija **Estado del dispositivo** para ver una lista de dispositivos y el estado de implementación del perfil de configuración.
 
@@ -109,7 +107,7 @@ acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microso
 > [!IMPORTANT]
 > La retirada hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que haya tenido, se conservarán durante un máximo de 6 meses.
 
-1. En **Microsoft Endpoint Manager centro**, abra **DispositivosPerfiles** >  de configuración, debería ver allí los perfiles creados.
+1. En **el Centro de Microsoft Endpoint Manager**, abra **Perfiles de configuración** de **dispositivos** > ; debería ver allí los perfiles creados.
 
 2. En la página **Perfiles de configuración** , elija el perfil de preferencias de MDE.
 

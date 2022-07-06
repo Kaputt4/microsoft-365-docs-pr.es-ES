@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda a diseñar una directiva de prevención de pérdida de datos (DLP)
-ms.openlocfilehash: 2d7c370ab34eea2c708769674495a2c51f1a3fcf
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32204659da3adcc2fd868568bf3a7bd909e5f2f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782047"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623017"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Diseño de una directiva de prevención de pérdida de datos
 
@@ -30,9 +30,9 @@ Tomarse el tiempo necesario para diseñar una directiva antes de implementarla l
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Si no está familiarizado con Microsoft 365 DLP, es útil trabajar con estos artículos antes de empezar a diseñar una directiva:
+Si no está familiarizado con DLP de Microsoft Purview, es útil trabajar en estos artículos antes de empezar a diseñar una directiva:
 
-- [Más información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) : en este artículo se presenta la materia de prevención de pérdida de datos y la implementación de DLP por parte de Microsoft.
+- [Más información sobre Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention): en este artículo se presenta la materia de prevención de pérdida de datos y la implementación de DLP por parte de Microsoft.
 - [Planear la prevención de pérdida de datos (DLP):](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) al trabajar en este artículo, podrá:
   - [Identificación de las partes interesadas](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [Describir las categorías de información confidencial que se van a proteger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ Recuerde en [la introducción a la configuración de directivas DLP](dlp-learn-a
 
 Por ejemplo, este es un primer borrador ficticio de una instrucción de intención que proporciona respuestas a las cuatro preguntas:
 
-*"Somos una organización con sede en Ee. UU., y debemos detectar Office documentos que contienen información confidencial de atención médica cubierta por HIPPA que se almacenan en OneDrive/SharePoint y proteger contra esa información que se comparte en Teams mensajes de chat y canal, y impedir que todos los usuarios los compartan con terceros no autorizados".*
+*"Somos una organización basada en Ee. UU., y necesitamos detectar documentos de Office que contengan información confidencial de atención médica cubierta por HIPPA que se almacenan en OneDrive/SharePoint y protejan contra esa información que se comparte en los mensajes de chat y canal de Teams y que impiden que todos los usuarios los compartan con terceros no autorizados".*
 
 A medida que desarrolle un diseño de directiva, es probable que modifique y extienda la instrucción.
 
@@ -66,9 +66,9 @@ Vamos a desglosar la instrucción de borrador de ejemplo y asignarla a puntos de
 
 |Instrucción|Pregunta de configuración respondida y asignación de configuración|
 |---|---|
-|"Somos una organización con sede en Ee. UU., y necesitamos detectar Office documentos que contienen información confidencial de atención médica cubierta por HIPPA...|- **Qué supervisar**: Office documentos, use la plantilla de la Ley de [seguros de salud (HIPAA) de EE. UU.](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Condiciones para una coincidencia**: (preconfigurado pero modificable): el elemento contiene el número de la SSN estadounidense y la Agencia antidrogas (DEA), clasificación internacional de enfermedades (ICD-9-CM), clasificación internacional de enfermedades (ICD-10-CM), el contenido se comparte con personas ajenas a mi organización.  </br> : impulsa las conversaciones para aclarar el umbral desencadenante para la detección, como [los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels), y el [recuento de instancias](dlp-policy-reference.md#content-contains) (denominado tolerancia a fugas).|
-|... que se almacenan en OneDrive/SharePoint y protegen contra esa información que se comparte Teams mensajes de chat y canales...|- **Dónde supervisar**: [ámbito de la ubicación](dlp-policy-reference.md#locations) mediante la inclusión o exclusión de OneDrive y SharePoint sitios y Teams cuentas de chat o canal o grupos de distribución.|
-|... y impedir que todos compartan esos elementos con terceros no autorizados".|- **Acciones que debe realizar**: [agregue](dlp-policy-reference.md#actions) *Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones* </br> : impulsa la conversación sobre las acciones que se deben realizar cuando se desencadena una directiva, incluidas acciones de protección, como restricciones de uso compartido, acciones de reconocimiento como notificaciones y alertas, y acciones de empoderamiento del usuario, como permitir invalidaciones de usuario de una acción de bloqueo.|
+|"Somos una organización con sede en Ee. UU., y necesitamos detectar documentos de Office que contienen información confidencial de atención médica cubierta por HIPPA...|- **Qué supervisar**: documentos de Office, usar la plantilla de la [Ley de seguros de salud (HIPAA) de EE. UU.](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Condiciones para una coincidencia**: (preconfigurado pero modificable): el elemento contiene el número de la SSN estadounidense y la Agencia antidrogas (DEA), clasificación internacional de enfermedades (ICD-9-CM), clasificación internacional de enfermedades (ICD-10-CM), el contenido se comparte con personas ajenas a mi organización.  </br> : impulsa las conversaciones para aclarar el umbral desencadenante para la detección, como [los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels), y el [recuento de instancias](dlp-policy-reference.md#content-contains) (denominado tolerancia a fugas).|
+|... que se almacenan en OneDrive/SharePoint y protegen contra esa información que se comparte mensajes de chat y canal de Teams...|- **Dónde supervisar**:  [ámbito de ubicación](dlp-policy-reference.md#locations) mediante la inclusión o exclusión de sitios de OneDrive y SharePoint y cuentas de chat o canal de Teams o grupos de distribución.|
+|... y impedir que todos compartan esos elementos con terceros no autorizados".|- **Acciones que debe realizar**: [agregue](dlp-policy-reference.md#actions) *Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365* </br> : impulsa la conversación sobre las acciones que se deben realizar cuando se desencadena una directiva, incluidas acciones de protección, como restricciones de uso compartido, acciones de reconocimiento como notificaciones y alertas, y acciones de empoderamiento del usuario, como permitir invalidaciones de usuario de una acción de bloqueo.|
 
 En este ejemplo no se tratan todos los puntos de configuración de una directiva DLP, tendría que expandirse. Pero debería hacer que piense en la dirección correcta a medida que desarrolle sus propias instrucciones de intención de directiva DLP.
 

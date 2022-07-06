@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre los tipos de información confidencial basados en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415934"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622005"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Los tipos de información confidencial](sensitive-information-type-learn-about.md) se usan para ayudar a identificar elementos confidenciales de modo que pueda evitar que se compartan involuntariamente o de forma inapropiada, para ayudar a localizar los datos pertinentes en eDiscovery y para aplicar acciones de gobernanza a determinados tipos de información. Defina un tipo de información confidencial (SIT) personalizado en función de:
 
@@ -46,7 +44,7 @@ ms.locfileid: "65415934"
 
 ![Clasificación basada en EDM.](../media/EDMClassification.png)
 
-La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Además, puede usar la clasificación basada en EDM con [directivas, como Microsoft Purview directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) o [directivas de archivos de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Además, puede usar la clasificación basada en EDM con [directivas, como directivas de prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md) o [directivas de archivos de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft Purview Information Protection admite idiomas de juego de caracteres de doble byte para:
@@ -101,7 +99,6 @@ Proximidad: número de caracteres entre el elemento principal y el elemento auxi
 
 Al crear una SIT de EDM, se define un campo de *elemento principal* en el paquete de reglas. Los campos principales son los elementos para los que se buscará todo el contenido y que deben seguir un patrón definido para poder identificarse. Cuando se encuentra el elemento principal en elementos examinados, EDM buscará los elementos *secundarios* o auxiliares, que no necesitan seguir un patrón y su proximidad al elemento principal. EDM requiere que el elemento principal se pueda detectar primero a través de una SIT existente. Consulte [Definiciones de entidades de tipo información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de los SIT disponibles. Tendrá que encontrar uno de los que detecta la clase que quiere que detecte el SIT de EDM. Por ejemplo, si el esquema sit de EDM tiene el número de seguridad social de EE. UU. como elemento principal, al crear el esquema EDM, lo asociaría con el número de [seguridad social (SSN) SIT de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)
 
-
 ## <a name="how-matching-works"></a>Funcionamiento de la coincidencia
 
 EDM busca coincidencias comparando el contenido que encuentra con una tabla de datos confidenciales que defina. Las pruebas de coincidencia se realizan mediante una combinación de reglas y patrones tradicionales para asegurarse de que los datos coincidentes son una instancia real de los datos que desea buscar y proteger. En esencia, EDM funciona comparando las cadenas de los documentos y los correos electrónicos con los valores de una tabla de datos confidenciales que proporcione para averiguar si los valores del contenido están presentes en la tabla mediante la comparación de hashes criptográficos unidireccionales.
@@ -109,6 +106,19 @@ EDM busca coincidencias comparando el contenido que encuentra con una tabla de d
 > [!TIP]
 > Una práctica común consiste en combinar el uso de tipos de información confidencial de EDM y los tipos de información confidencial normales en los que se basan en reglas DLP, con umbrales diferentes. Por ejemplo, podría usar un tipo de información confidencial de EDM que busque números de seguridad social y otros datos, con requisitos estrictos y tolerancia baja donde una o varias coincidencias provocarán una alerta DLP y usarán el tipo de información confidencial normal, como el número de seguridad social de EE. UU. integrado, para recuentos más altos.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="services-that-edm-supports"></a>Servicios compatibles con EDM
+
+
+|Servicio  |Ubicaciones  |
+|---------|---------|
+| Prevención de pérdida de datos de Microsoft Purview    | - SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Dispositivos       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive para la Empresa        |
+|Etiquetado automático (lado del servicio)     |- SharePoint online </br>- OneDrive para la Empresa </br>- Exchange Online         |
+|Etiquetado automático (lado cliente)     |- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange         |
+|Clave administrada por el cliente     |- SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange </br>- Dispositivos         |
+|eDiscovery     |- SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange  |
+|Administración de riesgos de Insider     |- SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange      |
+
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)

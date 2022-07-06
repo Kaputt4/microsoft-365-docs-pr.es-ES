@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008853"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621675"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrá que volver a establecer y cargar la tabla de origen de información confidencial.
 

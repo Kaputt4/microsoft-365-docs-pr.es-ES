@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 48a5ca3bad7c0fb0d7120cb4e35bc5f24902a46e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043348"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622137"
 ---
 # <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El cifrado de mensajes de Microsoft Purview permite a las organizaciones compartir correos electrónicos protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con terceros mediante Outlook.com, Gmail y otros servicios de correo electrónico.
 

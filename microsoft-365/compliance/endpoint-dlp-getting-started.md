@@ -20,16 +20,14 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la prevención de pérdida de datos de punto de conexión para supervisar las actividades de archivo e implementar acciones de protección para esos archivos en los puntos de conexión.
-ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 7b9999b180262eb35f1b2b36c4059b5b34855e1e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531032"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624165"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La Prevención de pérdida de datos de punto de conexión (DLP de punto de conexión) forma parte del conjunto de características de prevención de pérdida de datos (DLP) de Microsoft Purview que puede usar para detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
 

@@ -18,22 +18,20 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol en la determinación de la riqueza de los problemas durante el entrenamiento de relevancia en Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bfd6087bbcade2c7e4d9afdcda0f47bbea6f53d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 19d518e116fbd86dc0f781443ba16c21890c4346
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096124"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625575"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>Evaluación en el módulo Relevancia en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Microsoft Purview eDiscovery (Premium) permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. eDiscovery (Premium) permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión de documentos.
   
 ## <a name="understanding-assessment"></a>Descripción de la evaluación
 
-En Evaluación, el experto revisa un conjunto aleatorio de al menos 500 archivos, que se usan para determinar la riqueza de los problemas y para generar estadísticas que reflejen los resultados del entrenamiento. La evaluación es correcta cuando se encuentran suficientes archivos pertinentes para alcanzar un nivel estadístico que ayude a eDiscovery (Premium) Relevancia para proporcionar estadísticas precisas y determinar eficazmente el punto de estabilización en el proceso de entrenamiento. 
+En Evaluación, el experto revisa un conjunto aleatorio de al menos 500 archivos, que se usan para determinar la riqueza de los problemas y para generar estadísticas que reflejen los resultados del entrenamiento. La evaluación es correcta cuando se encuentran suficientes archivos pertinentes para alcanzar un nivel estadístico que ayudará a la relevancia de eDiscovery (Premium) para proporcionar estadísticas precisas y determinar eficazmente el punto de estabilización en el proceso de entrenamiento. 
   
 Cuanto mayor sea el número de archivos pertinentes en el conjunto de evaluación, más precisas serán las estadísticas y la eficacia del algoritmo de estabilidad. El número de archivos pertinentes dentro de los archivos de evaluación depende de la riqueza del problema. La riqueza es el porcentaje estimado de archivos pertinentes en el conjunto pertinente para un problema. Los problemas con mayor riqueza alcanzarán un mayor número de archivos pertinentes más rápidamente que los problemas con menor riqueza. Los problemas con una riqueza extremadamente baja (por ejemplo, un 2 % o menos) requerirán un conjunto de evaluación muy grande para alcanzar un número significativo de archivos relevantes.
   

@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014528"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625597"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se muestra cómo crear un archivo de *paquete de reglas* XML que define [tipos de información confidencial](sensitive-information-type-entity-definitions.md) personalizados. En este artículo se describe un tipo de información confidencial personalizado que identifica un identificador de empleado. Puede usar el XML de ejemplo de este artículo como punto de partida para su propio archivo XML.
 
@@ -33,7 +31,7 @@ Para obtener más información sobre los tipos de información confidencial, con
 Después de crear un archivo XML bien formado, puede cargarlo en Microsoft 365 mediante PowerShell. A continuación, está listo para usar el tipo de información confidencial personalizada en las directivas. Puede probar su eficacia en la detección de la información confidencial según lo previsto.
 
 > [!NOTE]
-> Si no necesita el control específico que proporciona PowerShell, puede crear tipos de información confidencial personalizados en el portal de cumplimiento de Microsoft Purview. Para obtener más información, consulte [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md).
+> Si no necesita el control específico que proporciona PowerShell, puede crear tipos de información confidencial personalizados en el portal de cumplimiento Microsoft Purview. Para obtener más información, consulte [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Declinación de responsabilidades importante
 
@@ -327,7 +325,7 @@ Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entit
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>¿Quiere admitir otros idiomas en la interfaz de usuario del Centro de seguridad y cumplimiento? [Elemento LocalizedStrings]
 
-Si el equipo de cumplimiento usa el portal de cumplimiento de Microsoft Purview para crear directivas en diferentes configuraciones regionales y en diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizada. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma compatible, verá el nombre localizado en la interfaz de usuario.
+Si el equipo de cumplimiento usa la portal de cumplimiento Microsoft Purview para crear directivas en diferentes configuraciones regionales y en diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizada. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma compatible, verá el nombre localizado en la interfaz de usuario.
 
 ![Recuento de instancias y configuración de precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -372,7 +370,7 @@ Una vez completado, el elemento RulePack será parecido a este.
 
 ## <a name="validators"></a>Validadores
 
-Microsoft 365 expone procesadores de funciones para SIT de uso común como validadores. Esta es una lista de ellos.
+Microsoft 365 expone procesadores de funciones para SIT de uso frecuente como validadores. Esta es una lista de ellos.
 
 ### <a name="list-of-currently-available-validators"></a>Lista de validadores disponibles actualmente
 
@@ -452,7 +450,7 @@ En este ejemplo, se define un validador de fecha para una parte RegEx de la que 
 
 ## <a name="changes-for-exchange-online"></a>Cambios para Exchange Online
 
-Antes se podía usar PowerShell de Exchange Online para importar tipos de información confidencial personalizados para DLP. Ahora los tipos de información confidencial personalizados se pueden usar tanto en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> como en el Centro de cumplimiento. Como parte de esta mejora, debe usar Security & Compliance PowerShell para importar los tipos de información confidencial personalizados; ya no puede importarlos desde Exchange Online PowerShell. Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora, pero los cambios realizados en los tipos de información confidencial personalizados en el Centro de cumplimiento pueden tardar hasta una hora en mostrarse en el Centro de administración de Exchange.
+Antes se podía usar PowerShell de Exchange Online para importar tipos de información confidencial personalizados para DLP. Ahora los tipos de información confidencial personalizados se pueden usar tanto en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> como en el Centro de cumplimiento. Como parte de esta mejora, debe usar Security & Compliance PowerShell para importar los tipos de información confidencial personalizados; ya no puede importarlos desde Exchange Online PowerShell. Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora, pero los cambios realizados en los tipos de información confidencial personalizados en el Centro de cumplimiento pueden tardar hasta una hora en mostrarse en el Centro de administración de Exchange.
 
 Tenga en cuenta que, en el Centro de seguridad y cumplimiento, se usa el cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** para cargar un paquete de reglas (anteriormente, en el Centro de administración de Exchange, se usaba el cmdlet ClassificationRuleCollection). (Antes, en el Centro de administración de Exchange, usó el cmdlet **ClassificationRuleCollection**).
 
@@ -561,7 +559,7 @@ Si un tipo personalizado de información confidencial contiene un problema que p
 
 Microsoft 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en el contenido del sitio. El contenido en los sitios de OneDrive para la Empresa y SharePoint Online se vuelve a rastrear automáticamente cada vez que se actualiza. Pero, para identificar el nuevo tipo de información confidencial personalizado en todo el contenido existente, es necesario volver a rastrear ese contenido.
 
-En Microsoft 365, no se puede solicitar manualmente una recrawl de toda una organización, pero puede solicitar manualmente una recrawl para una colección de sitios, una lista o una biblioteca. Para obtener más información, vea [Solicitud manual de rastreo y reindexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
+En Microsoft 365, no se puede solicitar manualmente una recolección de toda una organización, pero puede solicitar manualmente una recrawl para una colección de sitios, una lista o una biblioteca. Para obtener más información, vea [Solicitud manual de rastreo y reindexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>Referencia: Definición de esquema XML de paquete de reglas
 

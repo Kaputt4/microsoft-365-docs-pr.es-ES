@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 0cdf544eddf873f3bbf761bd613641433dd2da6b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637194"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623723"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lea [Más información sobre las entidades con nombre](named-entities-learn.md) antes de empezar a usarlas.
 
@@ -74,15 +72,15 @@ Para crear o editar una directiva DLP, use los procedimientos de [Creación, pru
 
 |Carga de trabajo o servicios  |Compatibilidad con entidades con nombre  |
 |---------|---------|
-|Office sugerencia de directiva de clientes Win32    |No se admite  |
-|Office sugerencia de directiva de clientes WAC    |Compatible         |
+|Sugerencia de directiva de clientes Win32 de Office    |No se admite  |
+|Sugerencia de directiva de clientes WAC de Office    |Compatible         |
 |Sugerencia de directiva de OWA     |No admitido         |
-|sugerencia de directiva de Outlook     |No admitido |
+|Sugerencia de directiva de Outlook     |No se admite |
 |Puntos de conexión (Windows 10 y 11 dispositivos)     |Compatible  |
-|reglas de transporte de Exchange     |Compatible |
+|Reglas de transporte de Exchange     |Compatible |
 |OneDrive para la Empresa datos en reposo     |Compatible         |
-|SharePoint datos en reposo en línea     |Compatible         |
-|Teams datos en reposo     |Compatible         |
+|Datos en reposo de SharePoint Online     |Compatible         |
+|Datos en reposo de Teams     |Compatible         |
 |Datos en reposo de mensajes de correo electrónico     |Compatible con inquilinos con el plan de servicio de privacidad         |
 |Microsoft Defender for Cloud Apps     |Compatible         |
 
@@ -90,24 +88,24 @@ Para crear o editar una directiva DLP, use los procedimientos de [Creación, pru
 
 |Carga de trabajo o servicios |Compatibilidad con entidades con nombre  |
 |---------|---------|
-|Office clientes Win32 sin conexión   |Compatible, el usuario debe seleccionar la etiqueta y aplicar manualmente |
-|Clientes de Win32 en línea Office en línea|Compatible con el esquema de confianza antiguo |
-|Outlook en línea   |Compatible con el esquema de confianza antiguo  |
-|Office cliente WAC     |Compatible |
+|Clientes de Office Win32 sin conexión   |Compatible, el usuario debe seleccionar la etiqueta y aplicar manualmente |
+|Clientes win32 de Office en línea|Compatible con el esquema de confianza antiguo |
+|Outlook online   |Compatible con el esquema de confianza antiguo  |
+|Cliente WAC de Office     |Compatible |
 |OWA     |Compatible |
-|transporte Exchange     |Compatible |
+|Transporte de Exchange     |Compatible |
 |OneDrive para la Empresa datos en reposo     |Compatible |
-|SharePoint datos en reposo en línea|Compatible|
-|Analizador de Azure Information Protection (AIP)|No se admite|
+|Datos en reposo de SharePoint Online|Compatible|
+|Analizador de Azure Information Protection (AIP)|No admitido|
 
 ## <a name="known-issues"></a>Problemas conocidos
 
 |Problema  |Impacto  |
 |---------|---------|
-|Sugerencias de directiva DLP (OWA, Outlook, Office clientes Win32)     |   Las sugerencias de directiva con la condición de entidad provocarán que "no coincida"      |
+|Sugerencias de directiva DLP (clientes de OWA, Outlook y Office Win32)     |   Las sugerencias de directiva con la condición de entidad provocarán que "no coincida"      |
 | Compatibilidad con idiomas asiáticos para el nombre de persona (chino, japonés, coreano)    | Entidades con nombre admitidas solo para el conjunto de caracteres basado en latín (es decir, no se admite kanji) para el nombre de persona.        |
 |Repositorios locales    | No se admite como carga de trabajo|
-|Power BI (versión preliminar) | No se admite
+|Power BI (versión preliminar) | No admitido
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
@@ -122,7 +120,7 @@ Estas son algunas prácticas que puede usar al crear o editar una directiva que 
 - Puede usar [simulaciones de etiquetado automático](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) para probar la precisión de los SIT de entidad con nombre. Ejecute una simulación con una entidad con nombre SIT para ver qué elementos coinciden con la directiva. Con esta información, puede ajustar la precisión ajustando los recuentos de instancias y los niveles de confianza en las directivas personalizadas o en las condiciones de plantilla mejoradas. Puede recorrer en iteración las simulaciones hasta que la precisión sea la que desee, antes de implementar una directiva DLP o de etiquetado automático que contenga entidades con nombre en producción. Esta es una introducción al flujo:
 
 1. Identifique el SIT o la combinación de SIT que desea probar en modo de simulación, ya sea personalizado o clonado y editado.
-1. Identifique o cree una etiqueta de confidencialidad que se aplicará cuando la directiva de etiquetado automático encuentre una coincidencia en Exchange, sitios SharePoint o cuentas de OneDrive.
+1. Identifique o cree una etiqueta de confidencialidad que se aplicará cuando la directiva de etiquetado automático encuentre una coincidencia en exchange, sitios de SharePoint o cuentas de OneDrive.
 1. Cree una directiva de etiquetado automático de confidencialidad que use sit del paso 1 y con las mismas condiciones y excepciones que se usarán en la directiva DLP.
 1. Ejecución de la simulación de directiva
 1. Visualización de los resultados

@@ -20,16 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar eDiscovery (Premium) para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la herramienta eDiscovery (Premium) está lista para usarse.
-ms.openlocfilehash: b23203d374b7ecf2f447c2f6b906345537ec6cf4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b96506c9a7b52b6e4aa1e9d14f1e5d2330fee19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092423"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622863"
 ---
-# <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configuración de microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configuración de Microsoft Purview eDiscovery (Premium)
 
 Microsoft Purview eDiscovery (Premium) proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar datos que respondan a las investigaciones internas y externas de su organización. No se necesita nada para implementar eDiscovery (Premium), pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de eDiscovery deben completar antes de que la organización pueda empezar a crear y usar casos de eDiscovery (Premium) para administrar las investigaciones.
 
@@ -37,7 +35,7 @@ En este artículo se describen los pasos siguientes necesarios para configurar e
 
 ![Pasos para configurar eDiscovery (Premium).](../media/set-up-advanced-ediscovery.png)
 
-Esto incluye garantizar las licencias adecuadas necesarias para acceder a eDiscovery (Premium) y agregar custodios a los casos, y asignar permisos al equipo legal y de investigación para que puedan acceder a los casos y administrarlos.
+Esto incluye garantizar las licencias adecuadas necesarias para acceder a eDiscovery (Premium) y agregar custodios a los casos, y asignar permisos a su equipo legal e investigador para que puedan acceder a los casos y administrarlos.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Paso 1: Comprobar y asignar las licencias adecuadas
 
@@ -45,11 +43,11 @@ Las licencias para eDiscovery (Premium) requieren la suscripción de la organiza
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: Asignar permisos de exhibición de documentos electrónicos
 
-Para acceder a eDiscovery (Premium) o agregarse como miembro de un caso de exhibición de documentos electrónicos (Premium), se deben asignar a un usuario los permisos adecuados. En concreto, se debe agregar un usuario como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el portal de cumplimiento de Microsoft Purview. Los miembros de este grupo de roles pueden crear y administrar casos de exhibición de documentos electrónicos (Premium). Pueden agregar y quitar miembros, colocar custodios y ubicaciones de contenido en espera, administrar notificaciones de suspensión legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión y exportar y descargar desde un caso de exhibición de documentos electrónicos (Premium).
+Para acceder a eDiscovery (Premium) o agregarse como miembro de un caso de exhibición de documentos electrónicos (Premium), se deben asignar a un usuario los permisos adecuados. En concreto, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview. Los miembros de este grupo de roles pueden crear y administrar casos de exhibición de documentos electrónicos (Premium). Pueden agregar y quitar miembros, colocar custodios y ubicaciones de contenido en espera, administrar notificaciones de suspensión legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión y exportar y descargar desde un caso de eDiscovery (Premium).
 
 Complete los pasos siguientes para agregar usuarios al grupo de roles del Administrador de exhibición de documentos electrónicos:
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portal de cumplimiento</a> e inicie sesión con las credenciales de una cuenta de administrador en la organización Microsoft 365.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portal de cumplimiento</a>e inicie sesión con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
 
 2. En la página **Permisos** , seleccione el grupo **de roles administrador de exhibición de documentos electrónicos** .
 
@@ -71,7 +69,7 @@ Hay dos subgrupos en el grupo de roles del Administrador de exhibición de docum
 
 - **Administrador de eDiscovery**: puede realizar todas las tareas de administración de casos que un Administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de exhibición de documentos electrónicos puede:
 
-  - Vea todos los casos que aparecen en la página eDiscovery (Premium).
+  - Ver todos los casos que se enumeran en la página eDiscovery (Premium).
   
   - Administre cualquier caso en la organización después de que se agreguen como miembro del caso.
 
@@ -85,11 +83,11 @@ Para obtener más información sobre los permisos de eDiscovery y una descripci�
 
 El último paso que debe completarse antes de que los usuarios de su organización empiecen a crear y usar casos es configurar las opciones globales que se aplican a todos los casos de la organización. En este momento, la única configuración global es *detección de privilegios entre abogado y cliente* (habrá más configuraciones globales disponibles en el futuro). Esta configuración permite que el modelo de privilegios abogado-cliente se ejecute al analizar los datos de un conjunto de revisión. El modelo usa el aprendizaje automático para determinar la probabilidad de que un documento contenga contenido de naturaleza legal. También compara a los participantes de los documentos con una lista de abogados (que usted envía al configurar el modelo) para determinar si un documento tiene al menos un participante que es un abogado.
 
-Para obtener más información sobre cómo configurar y usar el modelo de detección de privilegios abogado-cliente, vea [Configurar la detección de privilegios de abogado-cliente en eDiscovery (Premium)](attorney-privilege-detection.md).
+Para obtener más información sobre cómo configurar y usar el modelo de detección de privilegios abogado-cliente, consulte Configuración de la [detección de privilegios de abogado-cliente en eDiscovery (Premium).](attorney-privilege-detection.md)
 
 > [!NOTE]
 > Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no impide crear y usar casos de exhibición de documentos electrónicos (Premium).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de configurar eDiscovery (Premium), está listo para [crear un caso](create-and-manage-advanced-ediscoveryv2-case.md).

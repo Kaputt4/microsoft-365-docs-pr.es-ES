@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: df1ebeeb7b420be3dbe6ccac6174078008b7f0e8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318080"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623593"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de los resultados de búsqueda de eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada a un caso Microsoft Purview eDiscovery (estándar), puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al resumen de los resultados de búsqueda estimados que se muestran en la página de control flotante de búsqueda), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda y la identidad de las ubicaciones de contenido que tienen los elementos más coincidentes.
+Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de Microsoft Purview eDiscovery (estándar), puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al resumen de los resultados de búsqueda estimados que se muestran en la página de control flotante de búsqueda), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda y la identidad de las ubicaciones de contenido que tienen los elementos más coincidentes.
   
 Además, puede usar la lista de palabras clave para configurar una búsqueda para devolver estadísticas de cada palabra clave en una consulta de búsqueda. Esto le permite comparar el número de resultados devueltos por cada palabra clave en una consulta.
   
@@ -43,7 +41,7 @@ Para mostrar estadísticas de una búsqueda de contenido o una búsqueda asociad
 
      O
 
-   - Haga clic en **eDiscoveryeDiscovery** >  **(Estándar),** seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
+   - Haga clic en **eDiscovery** > **eDiscovery (Estándar),** seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
 
 2. En la página flotante de la búsqueda seleccionada, haga clic en la pestaña **Estadísticas de búsqueda** .
   
@@ -69,7 +67,7 @@ En esta sección se muestran estadísticas sobre la consulta de búsqueda y el n
 
 ![Informe de condición.](../media/SearchContentReportNoKeywordList.png)
 
-- **Tipo de ubicación**: tipo de ubicación de contenido al que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; un valor de **SharePoint** indica una ubicación del sitio.
+- **Tipo de ubicación**: tipo de ubicación de contenido al que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; Un valor de **SharePoint** indica una ubicación del sitio.
 
 - **Parte**: la parte de la consulta de búsqueda a la que se aplican las estadísticas. **Principal** indica toda la consulta de búsqueda. **La palabra clave** indica que las estadísticas de la fila son para una palabra clave específica. Si usa una lista de palabras clave para la consulta de búsqueda, las estadísticas de cada componente de la consulta se incluyen en esta tabla. Para obtener más información, consulte [Obtención de estadísticas de palabras clave para las búsquedas](#get-keyword-statistics-for-searches).
 

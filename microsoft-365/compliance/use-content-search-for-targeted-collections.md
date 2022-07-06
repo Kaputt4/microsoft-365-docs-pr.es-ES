@@ -18,22 +18,20 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Use búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Use búsqueda de contenido en el portal de cumplimiento Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
+ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015548"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623681"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Uso de la búsqueda de contenido para colecciones de destino
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La herramienta de búsqueda de contenido del portal de cumplimiento de Microsoft Purview no proporciona una forma directa en la interfaz de usuario de buscar carpetas específicas en buzones de Exchange o SharePoint y sitios de OneDrive para la Empresa. Sin embargo, es posible buscar carpetas específicas ( *denominadas colección de destino*) especificando la propiedad id. de carpeta para el correo electrónico o la propiedad path (DocumentLink) para los sitios en la sintaxis de consulta de búsqueda real. El uso de búsqueda de contenido para realizar una colección de destino es útil cuando está seguro de que los elementos que responden a un caso o elementos con privilegios se encuentran en un buzón de correo o carpeta de sitio específico. Puede usar el script de este artículo para obtener el identificador de carpeta de las carpetas de buzón o la ruta de acceso (DocumentLink) para las carpetas de un sitio SharePoint y OneDrive para la Empresa. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos ubicados en la carpeta.
+La herramienta de búsqueda de contenido de la portal de cumplimiento Microsoft Purview no proporciona una manera directa en la interfaz de usuario de buscar carpetas específicas en buzones de Exchange o sharepoint y sitios de OneDrive para la Empresa. Sin embargo, es posible buscar carpetas específicas ( *denominadas colección de destino*) especificando la propiedad id. de carpeta para el correo electrónico o la propiedad path (DocumentLink) para los sitios en la sintaxis de consulta de búsqueda real. El uso de búsqueda de contenido para realizar una colección de destino es útil cuando está seguro de que los elementos que responden a un caso o elementos con privilegios se encuentran en un buzón de correo o carpeta de sitio específico. Puede usar el script de este artículo para obtener el identificador de carpeta de las carpetas de buzón o la ruta de acceso (DocumentLink) para las carpetas de un sitio de SharePoint y OneDrive para la Empresa. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos ubicados en la carpeta.
 
 > [!NOTE]
-> Para devolver contenido ubicado en una carpeta de un sitio SharePoint o OneDrive para la Empresa, el script de este tema usa la propiedad administrada DocumentLink en lugar de la propiedad Path. La propiedad DocumentLink es más sólida que la propiedad Path porque devolverá todo el contenido de una carpeta, mientras que la propiedad Path no devolverá algunos archivos multimedia.
+> Para devolver contenido ubicado en una carpeta de un sitio de SharePoint o OneDrive para la Empresa, el script de este tema usa la propiedad administrada DocumentLink en lugar de la propiedad Path. La propiedad DocumentLink es más sólida que la propiedad Path porque devolverá todo el contenido de una carpeta, mientras que la propiedad Path no devolverá algunos archivos multimedia.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Antes de ejecutar una colección de destino
 
@@ -41,7 +39,7 @@ La herramienta de búsqueda de contenido del portal de cumplimiento de Microsoft
 
 - También tiene que tener asignado el rol Destinatarios de correo en la organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información sobre cómo asignar permisos en Exchange Online, vea [Administrar miembros del grupo de roles](/exchange/manage-role-group-members-exchange-2013-help). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
-- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es un Microsoft 365 o una organización Microsoft 365 GCC. Si es una organización Office 365 Alemania, una organización Microsoft 365 GCC High o una organización Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, tiene que editar la línea `Connect-ExchangeOnline` y usar el parámetro *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a PowerShell de cumplimiento de seguridad &. Para obtener más información, consulte los ejemplos de [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) y [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es una organización de Microsoft 365 o de GCC de Microsoft 365. Si es una organización Office 365 Alemania, una organización de Microsoft 365 GCC High o una organización de Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, tiene que editar la línea `Connect-ExchangeOnline` y usar el parámetro *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a PowerShell de cumplimiento de seguridad &. Para obtener más información, consulte los ejemplos de [PowerShell Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance (Conectar con PowerShell Exchange Online PowerShell y Conectarse a La seguridad & Cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)).
 
 - Cada vez que se ejecuta el script, se crea una nueva sesión remota de PowerShell. Esto significa que puede usar todas las sesiones remotas de PowerShell disponibles. Para evitar que esto suceda, ejecute los siguientes comandos para desconectar las sesiones de PowerShell remotas activas.
 
@@ -57,13 +55,13 @@ La herramienta de búsqueda de contenido del portal de cumplimiento de Microsoft
 
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Paso 1: Ejecutar el script para obtener una lista de carpetas para un buzón o sitio
 
-El script que ejecute en este primer paso devolverá una lista de carpetas de buzón de correo o SharePoint y OneDrive para la Empresa carpetas, así como el identificador de carpeta o la ruta de acceso correspondientes para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
+El script que ejecute en este primer paso devolverá una lista de carpetas de buzón o carpetas de SharePoint y OneDrive para la Empresa, así como el identificador de carpeta o la ruta de acceso correspondientes para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL del sitio**: escriba una dirección de correo electrónico del custodio para devolver una lista de carpetas y identificadores de carpeta de Exchange buzón. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
+- **Dirección de correo electrónico o dirección URL del sitio**: escriba una dirección de correo electrónico del custodio para devolver una lista de carpetas y identificadores de carpeta de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
 
-  - **Exchange**:`stacig@contoso.onmicrosoft.com`
+  - **Exchange**: `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
+  - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
 
   - **OneDrive para la Empresa**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
@@ -236,11 +234,11 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
 
 5. Realice una de las siguientes acciones, en función de si está buscando en una carpeta de buzón o en una carpeta de sitio:
 
-    - Junto a **Exchange correo electrónico**, haga clic en **Elegir usuarios, grupos o equipos y agregue** el mismo buzón que especificó al ejecutar el script en el paso 1.
+    - Junto a **Correo electrónico de Exchange**, haga clic en **Elegir usuarios, grupos o equipos y agregue** el mismo buzón que especificó al ejecutar el script en el paso 1.
 
       O bien
 
-    - Junto a **SharePoint sitios**, haga clic en **Elegir sitios** y agregue la misma dirección URL de sitio que especificó al ejecutar el script en el paso 1.
+    - Junto a **sitios de SharePoint**, haga clic en **Elegir sitios** y agregue la misma dirección URL de sitio que especificó al ejecutar el script en el paso 1.
 
 6. Después de guardar la ubicación de contenido para buscar, haga clic en **Guardar & ejecutar**, escriba un nombre para búsqueda de contenido y, a continuación, haga clic en **Guardar** para iniciar la búsqueda de recopilación de destino.
 

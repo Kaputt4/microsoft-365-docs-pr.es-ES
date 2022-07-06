@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo implementar y probar controles trabajando con acciones de mejora en el Administrador de cumplimiento de Microsoft Purview. Asigne trabajo, almacene documentación y exporte informes.
-ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574286"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625509"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Trabajar con acciones de mejora en el Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** En este artículo se explica cómo **administrar el flujo de trabajo de cumplimiento** con acciones de mejora. Obtenga información sobre cómo **asignar acciones de mejora** para la implementación y las pruebas, **administrar actualizaciones** y exportar **informes**.
 

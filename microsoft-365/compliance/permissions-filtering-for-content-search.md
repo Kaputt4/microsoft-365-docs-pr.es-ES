@@ -20,20 +20,18 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 4ebd42882c7b914fe661df589382482d9f0595bc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018061"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625025"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configuración del filtrado de permisos para eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Puede usar el filtrado de permisos de búsqueda para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de su organización. También puede utilizar el filtrado de permisos para permitir que ese mismo administrador de exhibición de documentos electrónicos busque solo contenido de los buzones o los sitios que cumpla unos criterios concretos de búsqueda. Por ejemplo, puede permitir que un administrador de exhibición de documentos electrónicos busque solo en los buzones de usuarios de un departamento o una ubicación en concreto. Para ello, cree un filtro que use un filtro de destinatario compatible para limitar qué buzones puede buscar un usuario o grupo de usuarios específicos. También puede crear un filtro que especifique qué contenido de buzón de correo puede buscar un usuario. Para ello, debe crear un filtro que utilice una propiedad de mensaje que pueda buscarse. De forma similar, puede permitir que un administrador de exhibición de documentos electrónicos busque solo sitios específicos de SharePoint en su organización. Para hacerlo, debe crear un filtro que limite en qué sitio puede buscarse. También puede crear un filtro que especifique qué contenido del sitio puede buscarse. Para ello, debe crear un filtro que utilice una propiedad de sitio que pueda buscarse.
 
-Puede usar el filtrado de permisos de búsqueda para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de su organización. También puede utilizar el filtrado de permisos para permitir que ese mismo administrador de exhibición de documentos electrónicos busque solo contenido de los buzones o los sitios que cumpla unos criterios concretos de búsqueda. Por ejemplo, puede permitir que un administrador de exhibición de documentos electrónicos busque solo en los buzones de usuarios de un departamento o una ubicación en concreto. Para ello, cree un filtro que use un filtro de destinatario compatible para limitar qué buzones puede buscar un usuario o grupo de usuarios específicos. También puede crear un filtro que especifique qué contenido de buzón de correo puede buscar un usuario. Para ello, debe crear un filtro que utilice una propiedad de mensaje que pueda buscarse. De forma similar, puede permitir que un administrador de exhibición de documentos electrónicos busque solo sitios SharePoint específicos de su organización. Para hacerlo, debe crear un filtro que limite en qué sitio puede buscarse. También puede crear un filtro que especifique qué contenido del sitio puede buscarse. Para ello, debe crear un filtro que utilice una propiedad de sitio que pueda buscarse.
-
-Los filtros de permisos de búsqueda se aplican al buscar contenido mediante búsqueda de contenido, exhibición de documentos electrónicos de Microsoft Purview (estándar) y exhibición de documentos electrónicos de Microsoft Purview (Premium) en el portal de cumplimiento de Microsoft Purview. Cuando se aplica un filtro de permisos de búsqueda a un usuario específico, ese usuario puede realizar las siguientes acciones relacionadas con la búsqueda:
+Los filtros de permisos de búsqueda se aplican al buscar contenido mediante búsqueda de contenido, Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium) en el portal de cumplimiento Microsoft Purview. Cuando se aplica un filtro de permisos de búsqueda a un usuario específico, ese usuario puede realizar las siguientes acciones relacionadas con la búsqueda:
 
 - Buscar contenido
 
@@ -43,7 +41,7 @@ Los filtros de permisos de búsqueda se aplican al buscar contenido mediante bú
 
 - Purgar elementos devueltos por una búsqueda
 
-También puede usar el filtrado de permisos de búsqueda para crear límites lógicos (*denominados límites de cumplimiento*) dentro de una organización que controle las ubicaciones de contenido del usuario (como buzones de correo, sitios SharePoint y cuentas de OneDrive) que pueden buscar determinados administradores de eDiscovery. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md).
+También puede usar el filtrado de permisos de búsqueda para crear límites lógicos ( *denominados límites de cumplimiento*) dentro de una organización que controle las ubicaciones de contenido del usuario (como buzones, sitios de SharePoint y cuentas de OneDrive) que pueden buscar determinados administradores de eDiscovery. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md).
   
 Los cuatro cmdlets siguientes de Security & Compliance PowerShell permiten configurar y administrar filtros de permisos de búsqueda:
   
@@ -65,11 +63,11 @@ Los cuatro cmdlets siguientes de Security & Compliance PowerShell permiten confi
 
 - El filtrado de permisos de búsqueda se aplica a los buzones inactivos, lo que significa que puede usar el filtrado de contenido de buzón y buzón para limitar quién puede buscar en un buzón inactivo. Consulte la sección [Más información](#more-information) para obtener información adicional sobre el filtrado de permisos y los buzones inactivos.
 
-- El filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar carpetas públicas en Exchange.
+- El filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en carpetas públicas en Exchange.
 
 - No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Sin embargo, una consulta de búsqueda puede tener un máximo de 100 condiciones. En este caso, una condición se define como algo que está conectado a la consulta por un operador booleano (como **AND**, **OR** y **NEAR**). El límite para el número de condiciones incluye la propia consulta de búsqueda y todos los filtros de permisos de búsqueda que se aplican al usuario que ejecuta la búsqueda. Por lo tanto, cuantos más filtros de permisos de búsqueda tenga (especialmente si estos filtros se aplican al mismo usuario o grupo de usuarios), mejor será la posibilidad de superar el número máximo de condiciones para una búsqueda. Para evitar que su organización alcance el límite de condiciones, mantenga el número de filtros de permisos de búsqueda en su organización a la menor cantidad posible para satisfacer sus requisitos empresariales. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Conectar a Exchange Online y Security & Compliance de PowerShell en una sola sesión
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Conexión a PowerShell de cumplimiento de Exchange Online y seguridad & en una sola sesión
 
 Para poder ejecutar correctamente el script en esta sección, debe descargar e instalar el módulo Exchange Online PowerShell V2. Para obtener información, consulte [Acerca del módulo Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -115,11 +113,11 @@ El parámetro  _FilterName_ especifica el nombre del filtro de permisos. Este no
 
 El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:  
 
-- **Filtrado de buzones o OneDrive:** este tipo de filtro especifica los buzones y las cuentas OneDrive que los usuarios asignados (especificados por el parámetro _Users_) pueden buscar. Este tipo de filtro se denomina filtro de *ubicación de contenido* porque define las ubicaciones de contenido que un usuario puede buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde _MailboxPropertyName_ especifica una propiedad mailbox usada para limitar los buzones y OneDrive cuentas que se pueden buscar. Por ejemplo, el filtro `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` de buzón de correo permitiría al usuario asignado a este filtro buscar solo los buzones y OneDrive cuentas que tienen el valor "OttawaUsers" en la propiedad CustomAttribute10.
+- **Filtrado de buzón de correo o OneDrive:** Este tipo de filtro especifica los buzones y las cuentas de OneDrive que los usuarios asignados (especificados por el parámetro  _Users_ ) pueden buscar. Este tipo de filtro se denomina filtro de *ubicación de contenido* porque define las ubicaciones de contenido que un usuario puede buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad de buzón usada para limitar los buzones y las cuentas de OneDrive que se pueden buscar. Por ejemplo, el filtro  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` de buzón de correo permitiría al usuario asignado a este filtro buscar solo los buzones y las cuentas de OneDrive que tienen el valor "OttawaUsers" en la propiedad CustomAttribute10.
 
-  Cualquier propiedad de destinatario filtrable compatible se puede usar para la propiedad _MailboxPropertyName_ en un buzón o filtro de OneDrive. En la tabla siguiente se enumeran cuatro propiedades de destinatario usadas habitualmente para crear un buzón de correo o OneDrive filtro. La tabla también incluye un ejemplo de uso de la propiedad en un filtro.
+  Cualquier propiedad de destinatario filtrable admitida se puede usar para la propiedad  _MailboxPropertyName_ en un buzón o filtro de OneDrive. En la tabla siguiente se enumeran cuatro propiedades de destinatario usadas habitualmente para crear un buzón de correo o un filtro de OneDrive. La tabla también incluye un ejemplo de uso de la propiedad en un filtro.
 
-  |Nombre de propiedad  |Ejemplo  |
+  |Nombre de la propiedad  |Ejemplo  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
   |Empresa  |`"Mailbox_Company -eq 'Contoso'"`        |
@@ -127,7 +125,7 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
   |Departamento |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **Filtrado de contenido de buzón de correo:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina *filtro de contenido* porque especifica el contenido del buzón o las propiedades de correo electrónico que pueden buscar los usuarios asignados. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName, donde _SearchablePropertyName_ especifica una propiedad Keyword Query Language (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro `"MailboxContent_Recipients  -like 'contoso.com'"` de contenido del buzón de correo permitiría que el usuario asignado a este filtro solo buscara los mensajes enviados a los destinatarios en el dominio contoso.com. Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
+- **Filtrado de contenido de buzón de correo:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina *filtro de contenido* porque especifica el contenido del buzón o las propiedades de correo electrónico que pueden buscar los usuarios asignados. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro `"MailboxContent_Recipients  -like 'contoso.com'"` de contenido del buzón de correo permitiría que el usuario asignado a este filtro solo buscara los mensajes enviados a los destinatarios en el dominio contoso.com. Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > Un único filtro de búsqueda no puede contener un filtro de buzón y un filtro de contenido de buzón. Para combinarlos en un solo filtro, debe usar una lista de [filtros](#using-a-filters-list-to-combine-filter-types).  Pero un filtro puede contener una consulta más compleja del mismo tipo. Por ejemplo: `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -138,16 +136,16 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
   
   - **SiteContent_**_SearchableSiteProperty_
   
-   Estos dos filtros son intercambiables. Por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` y  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` devuelve los mismos resultados. Para obtener una lista de las propiedades de sitio que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties) Para obtener una lista más completa, vea [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Las propiedades marcadas con **sí** en la columna **Consultable** se pueden usar para crear un filtro de contenido de sitio o sitio.  
+   Estos dos filtros son intercambiables. Por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` y  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` devuelve los mismos resultados. Para obtener una lista de propiedades de sitio que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties)  Para obtener una lista más completa, vea [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Las propiedades marcadas con **sí** en la columna **Consultable** se pueden usar para crear un filtro de contenido de sitio o sitio.  
 
   > [!IMPORTANT]
   > La configuración de un filtro de sitio con una de las propiedades admitidas no significa que la propiedad de sitio del filtro se propagará a todos los documentos de ese sitio. Esto significa que el usuario sigue siendo responsable de rellenar los campos de propiedad específicos asociados a los documentos de ese sitio para que el filtro de sitio funcione y capture el contenido correcto. Por ejemplo, si el usuario tiene aplicado un filtro de seguridad "Site_RefineableString00 -eq 'abc'" y, a continuación, el usuario ejecuta una búsqueda mediante la consulta de palabra clave "xyz". El filtro de seguridad se anexa a la consulta y la consulta real que se ejecuta sería "xyz **AND RefineableString0:'abc'**". El usuario debe asegurarse de que los documentos del sitio tengan valores en el campo RefineableString00 como "abc". Si no es así, la consulta de búsqueda no devolverá ningún resultado.
 
 Tenga en cuenta las siguientes consideraciones al configurar el parámetro *Filters* para los filtros de permisos de búsqueda:
 
-- A diferencia de los buzones de correo, no hay un filtro de ubicación de contenido para los sitios aunque el filtro *de sitio* tenga el aspecto de un filtro de ubicación. Todos los filtros para SharePoint y OneDrive son filtros de contenido *(por lo* que Site_ y *SiteContent_* filtros son intercambiables) porque las propiedades relacionadas con el sitio, como *Path*, se marcan directamente en los documentos. ¿Qué significa esto? Es el resultado de la forma en que se diseña SharePoint. En SharePoint, no hay un "objeto de sitio" con propiedades, como sucede con los buzones de Exchange. Por lo tanto, la propiedad *Path* se marca en el documento y contiene la dirección URL del sitio donde se encuentra el documento. Esta es la razón por la que un filtro *de sitio* se considera un filtro de contenido y no un filtro de ubicación de contenido.
+- A diferencia de los buzones de correo, no hay un filtro de ubicación de contenido para los sitios aunque el filtro *de sitio* tenga el aspecto de un filtro de ubicación. Todos los filtros para SharePoint y OneDrive son filtros de contenido *(por lo* que Site_ y *SiteContent_* filtros son intercambiables) porque las propiedades relacionadas con el sitio, como *Path* , se marcan directamente en los documentos. ¿Qué significa esto? Es el resultado de la forma en que sharePoint está diseñado. En SharePoint, no hay un "objeto de sitio" con propiedades, como sucede con los buzones de Exchange. Por lo tanto, la propiedad *Path* se marca en el documento y contiene la dirección URL del sitio donde se encuentra el documento. Esta es la razón por la que un filtro *de sitio* se considera un filtro de contenido y no un filtro de ubicación de contenido.
 
-- Tiene que crear un filtro de permisos de búsqueda para evitar explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que SharePoint administradores solo busquen SharePoint sitios, debe crear un filtro que les impida buscar en buzones. De forma similar, para permitir que Exchange administradores solo busquen buzones de correo, debe crear un filtro que les impida buscar sitios.
+- Tiene que crear un filtro de permisos de búsqueda para evitar explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios de SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que los administradores de SharePoint solo busquen sitios de SharePoint, tiene que crear un filtro que les impida buscar buzones. De forma similar, para permitir que los administradores de Exchange solo busquen buzones, debe crear un filtro que les impida buscar sitios.
 
 ### <a name="users"></a>*Usuarios*
 
@@ -206,9 +204,9 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 ```
 
 > [!NOTE]
-> En el ejemplo anterior, se debe incluir un filtro de contenido de sitio adicional (`SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`) para que los miembros del grupo de roles puedan buscar documentos en OneDrive cuentas. Si no se incluye este filtro, el filtro solo permitiría a los miembros del grupo de roles buscar documentos ubicados en `https://contoso.sharepoint.com/sites/FourthCoffee`.
+> En el ejemplo anterior, se debe incluir un filtro de contenido de sitio adicional (`SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`) para que los miembros del grupo de roles puedan buscar documentos en cuentas de OneDrive. Si no se incluye este filtro, el filtro solo permitiría a los miembros del grupo de roles buscar documentos ubicados en `https://contoso.sharepoint.com/sites/FourthCoffee`.
 
-Este ejemplo permite a los miembros del grupo de roles del Administrador de exhibición de documentos electrónicos buscar solo los buzones de correo y las cuentas de OneDrive de los miembros del grupo de distribución Usuarios de Ottawa. El cmdlet Get-DistributionGroup de Exchange Online PowerShell se usa para buscar los miembros del grupo Usuarios de Ottawa.
+Este ejemplo permite a los miembros del grupo de roles administrador de eDiscovery buscar solo los buzones y las cuentas de OneDrive de los miembros del grupo de distribución Usuarios de Ottawa. El cmdlet Get-DistributionGroup de Exchange Online PowerShell se usa para buscar los miembros del grupo Usuarios de Ottawa.
   
 ```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
@@ -218,7 +216,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"
 ```
 
-En este ejemplo se impide que cualquier usuario realice acciones de búsqueda en los buzones de correo y OneDrive cuentas de los miembros del grupo de distribución del equipo ejecutivo. Esto significa que los usuarios pueden eliminar contenido de estos buzones. El cmdlet Get-DistributionGroup de Exchange Online PowerShell se usa para buscar los miembros del grupo del equipo ejecutivo.
+En este ejemplo se impide que cualquier usuario realice acciones de búsqueda en los buzones de correo y las cuentas de OneDrive de los miembros del grupo de distribución del equipo ejecutivo. Esto significa que los usuarios pueden eliminar contenido de estos buzones. El cmdlet Get-DistributionGroup de Exchange Online PowerShell se usa para buscar los miembros del grupo del equipo ejecutivo.
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"
@@ -228,7 +226,7 @@ $DG = Get-DistributionGroup "Executive Team"
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users All -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" 
 ```
 
-Este ejemplo permite a los miembros del grupo de roles personalizado administradores de exhibición de documentos electrónicos OneDrive solo buscar contenido en OneDrive cuentas de la organización.
+En este ejemplo, los miembros del grupo de roles personalizado administradores de exhibición de documentos electrónicos de OneDrive solo pueden buscar contenido en las cuentas de OneDrive de la organización.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
@@ -246,7 +244,7 @@ De forma similar al ejemplo anterior, este ejemplo restringe al usuario a realiz
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" 
 ```
 
-En este ejemplo se impide que los miembros del grupo de roles "administradores de detección de OneDrive" realicen acciones de búsqueda en cualquier buzón de la organización.
+En este ejemplo se impide que los miembros del grupo de roles "Administradores de detección de OneDrive" realicen acciones de búsqueda en cualquier buzón de la organización.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"
@@ -286,16 +284,16 @@ También puede usar el parámetro  _Users_ para especificar un grupo de roles de
 
 El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:
 
-- **Filtrado de buzones y OneDrive:** este tipo de filtro especifica los buzones y las cuentas de OneDrive que los usuarios asignados (especificados por el parámetro _Users_) pueden buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad mailbox usada para limitar los buzones que se pueden buscar. Por ejemplo, el filtro  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` de buzón de correo permitiría al usuario asignado este filtro buscar solo los buzones que tienen el valor "OttawaUsers" en la propiedad CustomAttribute10.  Cualquier propiedad de destinatario filtrable compatible se puede usar para la propiedad  _MailboxPropertyName_ . Para obtener una lista de las propiedades admitidas, vea [Propiedades filtrables para el parámetro -RecipientFilter](/powershell/exchange/recipientfilter-properties).
+- **Filtrado de Buzón y OneDrive:** Este tipo de filtro especifica los buzones y las cuentas de OneDrive que los usuarios asignados (especificados por el parámetro  _Users_ ) pueden buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad mailbox usada para limitar los buzones que se pueden buscar. Por ejemplo, el filtro  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` de buzón de correo permitiría al usuario asignado este filtro buscar solo los buzones que tienen el valor "OttawaUsers" en la propiedad CustomAttribute10.  Cualquier propiedad de destinatario filtrable compatible se puede usar para la propiedad  _MailboxPropertyName_ . Para obtener una lista de las propiedades admitidas, vea [Propiedades filtrables para el parámetro -RecipientFilter](/powershell/exchange/recipientfilter-properties).
 
-- **Filtrado de contenido de buzón de correo:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_**_SearchablePropertyName_, donde _SearchablePropertyName_ especifica una propiedad Keyword Query Language (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro `"MailboxContent_Recipients  -like 'contoso.com'"` de contenido del buzón de correo permitiría que el usuario asignado a este filtro solo buscara los mensajes enviados a los destinatarios en el dominio contoso.com.  Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
+- **Filtrado de contenido de buzón de correo:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_**_SearchablePropertyName_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro `"MailboxContent_Recipients  -like 'contoso.com'"` de contenido del buzón de correo permitiría que el usuario asignado a este filtro solo buscara los mensajes enviados a los destinatarios en el dominio contoso.com.  Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 
-- **Filtrado de contenido de sitio y sitio:** Hay dos filtros SharePoint y OneDrive para la Empresa relacionados con el sitio que puede usar para especificar qué sitio o contenido de sitio pueden buscar los usuarios asignados:
+- **Filtrado de contenido de sitio y sitio:** Hay dos filtros relacionados con el sitio de SharePoint y OneDrive para la Empresa que puede usar para especificar qué sitio o contenido de sitio pueden buscar los usuarios asignados:
 
   - **Site_** *SearchableSiteProperty* 
   - **SiteContent** _ *SearchableSiteProperty*
   
-  Estos dos filtros son intercambiables. Por ejemplo,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` y  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` devuelve los mismos resultados. Para obtener una lista de las propiedades de sitio que se pueden buscar, consulte [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Las propiedades marcadas con **sí** en la columna **Consultable** se pueden usar para crear un filtro de contenido de sitio o sitio.
+  Estos dos filtros son intercambiables. Por ejemplo,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` y  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` devuelve los mismos resultados. Para obtener una lista de las propiedades de sitio que se pueden buscar, vea [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Las propiedades marcadas con **sí** en la columna **Consultable** se pueden usar para crear un filtro de contenido de sitio o sitio.
 
 ### <a name="examples-of-changing-search-permissions-filters"></a>Ejemplos de cambio de filtros de permisos de búsqueda
 
@@ -355,9 +353,9 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   
 - **¿Funciona el filtrado de permisos de búsqueda para carpetas públicas?** No. Como se explicó anteriormente, el filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en carpetas públicas en Exchange. Por ejemplo, los elementos de las ubicaciones de carpetas públicas no se pueden excluir de los resultados de búsqueda mediante un filtro de permisos.
 
-- **¿Permite que un usuario busque en todas las ubicaciones de contenido de un servicio específico también impedir que busque ubicaciones de contenido en un servicio diferente?** No. Como se explicó anteriormente, tiene que crear un filtro de permisos de búsqueda para impedir explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que SharePoint administradores solo busquen SharePoint sitios, debe crear un filtro que les impida buscar en buzones. De forma similar, para permitir que Exchange administradores solo busquen buzones de correo, debe crear un filtro que les impida buscar sitios.
+- **¿Permite que un usuario busque en todas las ubicaciones de contenido de un servicio específico también impedir que busque ubicaciones de contenido en un servicio diferente?** No. Como se explicó anteriormente, tiene que crear un filtro de permisos de búsqueda para impedir explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios de SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que los administradores de SharePoint solo busquen sitios de SharePoint, tiene que crear un filtro que les impida buscar buzones. De forma similar, para permitir que los administradores de Exchange solo busquen buzones, debe crear un filtro que les impida buscar sitios.
 
-- **¿Cuentan los filtros de permisos de búsqueda con respecto a los límites de caracteres de consulta de búsqueda?** Sí. Los filtros de permisos de búsqueda cuentan con el límite de caracteres para las consultas de búsqueda. Para obtener más información, vea [Límites en eDiscovery (Premium)](limits-ediscovery20.md).
+- **¿Cuentan los filtros de permisos de búsqueda con respecto a los límites de caracteres de consulta de búsqueda?** Sí. Los filtros de permisos de búsqueda cuentan con el límite de caracteres para las consultas de búsqueda. Para obtener más información, vea [Límites en eDiscovery (Premium).](limits-ediscovery20.md)
 
 **¿Cuál es el número máximo de filtros de permisos de búsqueda que se pueden crear en una organización?**
   
@@ -381,6 +379,6 @@ Es posible que la propia consulta de búsqueda conste de varias condiciones cone
 
 Además, el número de filtros de permisos de búsqueda anexados a una consulta depende del usuario que ejecuta la búsqueda. Cuando un usuario específico ejecuta una búsqueda, los filtros de permisos de búsqueda que se aplican al usuario (que se define mediante el parámetro *Users* en el filtro) se anexan a la consulta. Su organización podría tener cientos de filtros de permisos de búsqueda, pero si se aplican más de 100 filtros a los mismos usuarios, es probable que se supere el límite de 100 condiciones cuando esos usuarios ejecuten búsquedas.
 
-Hay una cosa más que debe tener en cuenta sobre el límite de la condición. El número de sitios SharePoint específicos que se incluyen en los filtros de permisos de búsqueda o consulta de búsqueda también cuenta con respecto a este límite. 
+Hay una cosa más que debe tener en cuenta sobre el límite de la condición. El número de sitios de SharePoint específicos que se incluyen en los filtros de permisos de búsqueda o consulta de búsqueda también cuenta con respecto a este límite. 
 
 Para evitar que su organización alcance el límite de condiciones, mantenga el número de filtros de permisos de búsqueda en su organización a la menor cantidad posible para satisfacer sus requisitos empresariales.

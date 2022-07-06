@@ -1,5 +1,5 @@
 ---
-title: Cargas en el entrenamiento de simulación de ataques
+title: Cargas en el aprendizaje de simulación de ataques
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a crear y administrar cargas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487232"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621301"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Cargas en el entrenamiento de simulación de ataques en Defender para Office 365
 
@@ -87,7 +87,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
   - **Nombre de la simulación**
   - **Tasa de clics**
   - **Tasa en peligro**
-  - **Action**
+  - **Acción**
 
 ## <a name="create-payloads"></a>Creación de cargas útiles
 
@@ -101,7 +101,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
    ![Cree una carga en la pestaña Cargas de inquilino en Cargas en el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Cree un icono de carga.](../../media/m365-cc-sc-create-icon.png) **La creación de una carga** también está disponible en la página **Seleccionar carga** del Asistente para la creación de simulación. Para obtener más información, vea [Simular un ataque de suplantación de identidad (phishing) en Defender para Office 365](attack-simulation-training.md).
+   > ![Cree un icono de carga.](../../media/m365-cc-sc-create-icon.png) **La creación de una carga** también está disponible en el paso **Seleccionar carga y página de inicio de sesión** del Asistente para la creación de simulación. Para obtener más información, vea [Crear una simulación: Seleccionar una carga y una página de inicio de sesión](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > En cualquier momento durante el asistente para la creación, puede hacer clic en **Guardar y cerrar** para guardar el progreso y seguir configurando la carga más adelante. Para seleccionar dónde lo dejó, seleccione la notificación en la pestaña **Cargas de inquilino en** **Cargas útiles** y, a continuación, haga clic en ![el icono Editar carga útil.](../../media/m365-cc-sc-edit-icon.png) **Edite la carga útil**. La carga parcialmente completada tendrá el valor **Estado** **Borrador**.
 

@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: La extensión de Microsoft Purview extiende la supervisión y el control de las actividades de archivo y acciones protectoras al explorador Google Chrome
-ms.openlocfilehash: a74cfeb734f41622d491c8aaffe3a5e054479a2a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 08078871765a75577475c93ba35cabda9ee3fd6a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172249"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622907"
 ---
 # <a name="learn-about-the-microsoft-purview-extension"></a>Más información sobre la extensión de Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La [prevención de pérdida de datos en punto de conexión (DLP en punto de conexión)](endpoint-dlp-learn-about.md) amplía la supervisión de la actividad y las capacidades de protección de la [Prevención de pérdida de datos (DLP) de Microsoft Purview](dlp-learn-about-dlp.md) a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft Purview, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el [explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 

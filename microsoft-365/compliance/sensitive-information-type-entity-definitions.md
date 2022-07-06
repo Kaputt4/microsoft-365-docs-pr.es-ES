@@ -19,16 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130810"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622445"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se enumeran todas las definiciones de entidad de tipo de información confidencial. Cada definición muestra lo que busca una directiva DLP para detectar cada tipo. Para más información sobre los tipos de información confidencial, consulte [Tipos de información confidencial](sensitive-information-type-learn-about.md).
 
@@ -118,7 +116,7 @@ Varios.
 
 No.
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 Esta entidad con nombre SIT coincide con los nombres personales que un humano identificaría como un nombre con alta confianza. Por ejemplo, si se encuentra una cadena que consta de un nombre determinado y va seguida de un nombre de familia, se realiza una coincidencia con alta confianza. Usa tres recursos principales:
 
@@ -177,7 +175,7 @@ Dictionary
 
 No
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 Esta entidad con nombre agrupada coincide con texto que menciona las condiciones médicas presentes en diccionarios seleccionados. Hay un diccionario seleccionado por idioma admitido. Los diccionarios proceden de muchos recursos médicos internacionales. Los diccionarios incluyen tantas condiciones médicas como sea posible sin arriesgar un gran número de falsos positivos. Cada entrada contiene los diferentes formularios en los que se escribe normalmente una sola condición para garantizar la cobertura, por ejemplo:
 
@@ -216,7 +214,7 @@ Varios
 
 No
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 La coincidencia de direcciones callejeras está diseñada para que coincida con las cadenas que un humano identificaría como una dirección de calle. Para ello, usa varios recursos principales:
 
@@ -648,12 +646,12 @@ nueve letras y dígitos:
 - dos dígitos
 - cinco dígitos o letras (no distinguen mayúsculas de minúsculas)
 
-OR
+O
 
 - de una a dos letras opcionales (no distingue mayúsculas de minúsculas)
 - de cuatro a nueve dígitos
 
-OR
+O
 
 - nueve dígitos o letras (no distinguen mayúsculas de minúsculas)
 
@@ -1146,7 +1144,7 @@ Una combinación de 24 caracteres de letras, dígitos y caracteres especiales
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+No es aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -1264,7 +1262,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="austria-social-security-number"></a>Número de seguro social de Austria
 
@@ -1599,7 +1597,7 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Red
 
-## <a name="azure-iot-connection-string"></a>Azure IoT cadena de conexión
+## <a name="azure-iot-connection-string"></a>Cadena de conexión de Azure IoT
 
 ### <a name="format"></a>Formato
 
@@ -1930,7 +1928,7 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Red
 
-## <a name="azure-storage-account-key-generic"></a>Azure Storage clave de cuenta (genérica)
+## <a name="azure-storage-account-key-generic"></a>Clave de cuenta de Azure Storage (genérica)
 
 ### <a name="format"></a>Formato
 
@@ -2331,7 +2329,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con direccione
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="belgium-value-added-tax-number"></a>Número de impuestos sobre el valor añadido de Bélgica
 
@@ -2547,7 +2545,7 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - Entidades jurídicas
 - Estado de registro
 - Business
-- Company
+- Empresa
 - CNPJ
 - Cadastro Nacional da Pessoa Jurídica
 - Cadastro Geral de Contribuintes
@@ -2625,7 +2623,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="bulgaria-drivers-license-number"></a>Número de licencia de conducir de Bulgaria
 
@@ -2874,7 +2872,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="bulgaria-uniform-civil-number"></a>Número civil uniforme de Bulgaria
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -3474,7 +3472,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="canada-social-insurance-number"></a>Número de seguro social de Canadá
 
@@ -3797,12 +3795,9 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- 
-cód. segurança
-- cod. seguranca
-
-- cod. segurança
-
+- cód. Segurança
+- Bacalao. Seguranca
+- Bacalao. Segurança
 - cód. Seguranca
 - cód segurança
 - cod seguranca
@@ -3983,8 +3978,7 @@ cód. segurança
 - no do cartão
 - no do cartao
 - No. do cartão
-- no. do cartao
-
+- No. do cartao
 - Rupay
 - pago del sindicato
 - Unionpay
@@ -4404,7 +4398,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="cyprus-drivers-license-number"></a>Número de licencia de conducir de Chipre
 
@@ -4710,7 +4704,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
 
@@ -5149,7 +5143,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="denmark-drivers-license-number"></a>Número de licencia de conducir de Dinamarca
 
@@ -5516,7 +5510,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="diseases"></a>Enfermedades
 
@@ -5924,7 +5918,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
@@ -6095,15 +6089,11 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - no de tarjeta
 - no do cartao
 - no do cartão
-- no. de tarjeta
-
-- no. do cartao
-
-- no. do cartão
-
+- No. de tarjeta
+- No. do cartao
+- No. do cartão
 - nr carta
-- nr. carta
-
+- Nr. carta
 - numeri di scheda
 - numero carta
 - numero de cartao
@@ -6123,7 +6113,6 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - nº do cartao
 - nº do cartão
 - nº. do cartão
-
 - número de cartao
 - número de cartão
 - número de tarjeta
@@ -6175,14 +6164,10 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - cod seguranca
 - cod segurança
 - cod sicurezza
-- cod. seg
-
-- cod. seguranca
-
-- cod. segurança
-
-- cod. sicurezza
-
+- Bacalao. seg
+- Bacalao. Seguranca
+- Bacalao. Segurança
+- Bacalao. Sicurezza
 - codice di sicurezza
 - codice di verifica
 - codigo
@@ -6199,10 +6184,8 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - cvv2
 - cód seguranca
 - cód segurança
-- cód. seguranca
-
-- cód. segurança
-
+- cód. Seguranca
+- cód. Segurança
 - código
 - código de seguranca
 - código de segurança
@@ -6214,10 +6197,8 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 - kreditkartenprufnummer
 - kreditkartenprüfnummer
 - kwestieaantal
-- no. dell'edizione
-
-- no. di sicurezza
-
+- No. dell'edizione
+- No. di sicurezza
 - numero de securite
 - numero de verificacao
 - numero dell'edizione
@@ -6859,7 +6840,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="france-drivers-license-number"></a>Número de licencia de conducir de Francia
 
@@ -7222,7 +7203,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="france-social-security-number-insee"></a>Número de seguridad social de Francia (INSEE)
 
@@ -7286,16 +7267,14 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - national id
 - national identification
 - no d'identité
-- 
-no. d'identité
+- No. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- 
-no. d'identite
+- No. d'identite
 - Ssn
 - Ssn #
 - sécurité sociale
@@ -7823,7 +7802,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
 
@@ -8271,7 +8250,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="greece-social-security-number-amka"></a>Número de seguro social de Grecia (AMKA)
 
@@ -8354,7 +8333,7 @@ Nueve dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+No es aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -8805,7 +8784,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="hungary-social-security-number-taj"></a>Número de seguro social de Hungría (TAJ)
 
@@ -9021,7 +9000,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Discapacidades enumeradas en la evaluación de discapacidad de EE. UU. en el Seguro Social
 
@@ -10171,7 +10150,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
 
@@ -10632,7 +10611,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="italy-value-added-tax-number"></a>Número de impuestos sobre el valor añadido de Italia
 
@@ -11611,7 +11590,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="liechtenstein-physical-addresses"></a>Direcciones físicas de Liechtenstein
 
@@ -11890,7 +11869,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="lithuania-passport-number"></a>Número de pasaporte de Lituania
 
@@ -12396,7 +12375,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="malaysia-identification-card-number"></a>Número de la tarjeta de identificación de Malasia
 
@@ -12657,7 +12636,7 @@ siete dígitos seguidos de una letra:
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+No es aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -12782,7 +12761,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="malta-tax-identification-number"></a>Número de identificación fiscal de Malta
 
@@ -12809,7 +12788,7 @@ Nacionales no malteses y entidades maltesas: nueve dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+No es aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -13318,7 +13297,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="netherlands-tax-identification-number"></a>Número de identificación fiscal de Los Países Bajos
 
@@ -13774,7 +13753,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="new-zealand-social-welfare-number"></a>Número de bienestar social de Nueva Zelanda
 
@@ -13900,7 +13879,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Número de identificación multiuso unificado de Filipinas
 
@@ -14159,8 +14138,7 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- dow. os.
-
+- Dow. os.
 
 ## <a name="poland-national-id-pesel"></a>Id. nacional de Polonia (PESEL)
 
@@ -14315,7 +14293,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="poland-regon-number"></a>Número DE REGON de Polonia
 
@@ -14787,7 +14765,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="portugal-tax-identification-number"></a>Número de identificación fiscal de Portugal
 
@@ -15210,7 +15188,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacional
 
@@ -15788,7 +15766,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="slovenia-drivers-license-number"></a>Número de licencia de conducir de Eslovenia
 
@@ -16045,7 +16023,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="slovenia-tax-identification-number"></a>Número de identificación fiscal de Eslovenia
 
@@ -16245,7 +16223,7 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -16596,7 +16574,7 @@ una combinación de ocho o nueve caracteres de letras y números:
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+No es aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -16676,7 +16654,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="spain-social-security-number-ssn"></a>Número de seguridad social de España (SSN)
 
@@ -17273,7 +17251,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="sweden-tax-identification-number"></a>Número de identificación fiscal de Suecia
 
@@ -17441,7 +17419,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="switzerland-ssn-ahv-number"></a>Número de AHV de SSN de Suiza
 
@@ -17792,7 +17770,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="types-of-medication"></a>Tipos de medicamentos
 
@@ -18098,7 +18076,7 @@ dos patrones posibles:
 - seis dígitos
 - 'A', 'B', 'C' o 'D' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distinguen mayúsculas de minúsculas)
 
-OR
+O
 
 - dos letras
 - un espacio o guion
@@ -18168,7 +18146,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="uk-unique-taxpayer-reference-number"></a>ESPAÑA. Número de referencia de contribuyente único
 
@@ -18352,7 +18330,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - DLS
 - CDL
 - CDL
-- Id.
+- ID
 - Identificadores
 - DL #
 - DLS #
@@ -18537,7 +18515,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="us-social-security-number-ssn"></a>Número de seguro social (SSN) de EE. UU.
 

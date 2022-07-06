@@ -4,7 +4,7 @@
     - name: 20 artículos principales de ayuda para administradores
       href: top-m365-admin-articles.yml
     - name: Biblioteca de vídeos de aprendizaje de administración
-      href: admin-video-library.yml
+      href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Introducción
       items:
         - name: Registrarse
@@ -374,7 +374,6 @@
       items:
         - name: Métodos de protección de datos de dispositivos y aplicaciones
           href: devices/choose-device-security.md
-        - name: Validar la configuración en Android o iOS
         - name: Movilidad y seguridad básicas
           items:
             - name: Información general sobre Movilidad y seguridad básicas

@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según sus necesidades organizativas.
-ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016974"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624739"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La prevención de pérdida de datos (DLP) de Microsoft Purview le ayuda a evitar el uso compartido accidental o accidental de información confidencial.
+Prevención de pérdida de datos de Microsoft Purview (DLP) ayuda a evitar el uso compartido accidental o accidental de información confidencial.
 
 DLP examina los mensajes de correo electrónico y los archivos para obtener información confidencial, como un número de tarjeta de crédito. Con DLP puede detectar información confidencial y realizar acciones como las siguientes:
 
@@ -44,7 +42,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
   
 1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
     
-2. Cree un grupo de roles en la página **Permisos** del portal de cumplimiento de Microsoft Purview. 
+2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview. 
 
 3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento dlp**.
     
@@ -94,9 +92,9 @@ Consulte [Definiciones de entidades de tipo de información confidencial](sensit
 
 Cuando los riesgos de pérdida de datos no son completamente obvios, es difícil averiguar dónde debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas DLP se pueden ejecutar en "modo de prueba", lo que le permite medir su eficacia y precisión antes de activarlas.
 
-Las directivas DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través del portal de cumplimiento de Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En el portal de cumplimiento de Microsoft Purview, encontrará las directivas DLP en **Directiva de prevención** >  de pérdida de datos. Elija **Crear una directiva** para iniciar.
+Las directivas DLP para Exchange Online se pueden administrar a través del Centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través de la portal de cumplimiento Microsoft Purview, por lo que eso es lo que usaré para las demostraciones de este artículo. En la portal de cumplimiento Microsoft Purview, encontrará las **directivas DLP en Directiva de prevención** >  de pérdida de datos. Elija **Crear una directiva** para iniciar.
 
-Microsoft 365 proporciona una serie de [plantillas de directiva DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Digamos que eres un negocio australiano. Puede filtrar las plantillas en Australia y elegir Financiero, Médico y Salud y Privacidad.
+Microsoft 365 proporciona una serie de plantillas de [directiva DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Digamos que eres un negocio australiano. Puede filtrar las plantillas en Australia y elegir Financiero, Médico y Salud y Privacidad.
 
 ![Opción para elegir país o región.](../media/DLP-create-test-tune-choose-country.png)
 
@@ -112,13 +110,13 @@ Elija las ubicaciones a las que se aplicará la directiva. Las directivas DLP se
 
 ![Opción para elegir todas las ubicaciones.](../media/DLP-create-test-tune-choose-locations.png)
 
-En el primer paso **Configuración directiva**, solo tiene que aceptar los valores predeterminados por ahora. Puede personalizar las directivas DLP, pero los valores predeterminados son un buen punto de partida.
+En el primer paso **Configuración de directiva** , solo tiene que aceptar los valores predeterminados por ahora. Puede personalizar las directivas DLP, pero los valores predeterminados son un buen punto de partida.
 
 ![Opciones para personalizar el tipo de contenido que se va a proteger.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Después de hacer clic en Siguiente,** se le mostrará una página más **de Configuración de directivas** con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
+Después de hacer clic en Siguiente,** se le mostrará una página de **configuración de directiva** más con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
 
-- He desactivado las sugerencias de directiva por ahora, lo que es un paso razonable si solo está probando cosas y no quiere mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva DLP. Por ejemplo, un usuario Outlook verá una advertencia de que el archivo que ha adjuntado contiene números de tarjeta de crédito y hará que se rechace su correo electrónico. El objetivo de las sugerencias de directiva es detener el comportamiento no compatible antes de que se produzca.
+- He desactivado las sugerencias de directiva por ahora, lo que es un paso razonable si solo está probando cosas y no quiere mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva DLP. Por ejemplo, un usuario de Outlook verá una advertencia de que el archivo que ha adjuntado contiene números de tarjeta de crédito y hará que se rechace su correo electrónico. El objetivo de las sugerencias de directiva es detener el comportamiento no compatible antes de que se produzca.
 - También he reducido el número de instancias de 10 a 1, de modo que esta directiva detectará cualquier uso compartido de datos de I PII de Australia, no solo el uso compartido masivo de los datos.
 - También he agregado otro destinatario al correo electrónico del informe de incidentes.
 
@@ -194,7 +192,7 @@ Después de guardar esos cambios en la configuración de directiva, también ten
 
 ![Opción para mostrar sugerencias de directiva en modo de prueba.](../media/DLP-create-test-tune-show-policy-tips.png)
 
-En el lado del servidor (o en la nube, si lo prefiere), es posible que el cambio no surta efecto inmediatamente, debido a varios intervalos de procesamiento. Si va a realizar un cambio de directiva DLP que mostrará nuevas sugerencias de directiva a un usuario, es posible que el usuario no vea que los cambios surtan efecto inmediatamente en su cliente de Outlook, que comprueba si hay cambios en la directiva cada 24 horas. Si quiere acelerar las pruebas, puede usar esta corrección del Registro para [borrar la marca de tiempo de la última descarga de la clave PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook descargará la información de directiva más reciente la próxima vez que la reinicie y empiece a redactar un mensaje de correo electrónico.
+En el lado del servidor (o en la nube, si lo prefiere), es posible que el cambio no surta efecto inmediatamente, debido a varios intervalos de procesamiento. Si va a realizar un cambio de directiva DLP que mostrará nuevas sugerencias de directiva a un usuario, es posible que el usuario no vea que los cambios surtan efecto inmediatamente en su cliente de Outlook, que comprueba si hay cambios en la directiva cada 24 horas. Si quiere acelerar las pruebas, puede usar esta corrección del Registro para [borrar la marca de tiempo de la última descarga de la clave PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook descargará la información de directiva más reciente la próxima vez que la reinicie y comience a redactar un mensaje de correo electrónico.
 
 Si tiene habilitadas las sugerencias de directiva, el usuario comenzará a ver las sugerencias en Outlook y podrá notificarle falsos positivos cuando se produzcan.
 
@@ -235,7 +233,7 @@ Cuando esté satisfecho de que la directiva DLP detecte de forma precisa y efica
 
 ![Opción para activar la directiva.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando a ver cuándo surtirá efecto la directiva, [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell) y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver DistributionStatus.
+Si está esperando a ver cuándo surtirá efecto la directiva, [conéctese a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver distributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

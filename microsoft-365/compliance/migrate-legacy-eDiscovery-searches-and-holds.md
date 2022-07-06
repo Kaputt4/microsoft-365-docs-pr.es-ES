@@ -1,5 +1,5 @@
 ---
-title: Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento de Microsoft Purview
+title: Migración de búsquedas y retenciones de eDiscovery heredadas a la portal de cumplimiento Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,20 +15,18 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 607b66d863c0584ce1bb06c069de7870245cb167
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010096"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622599"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+El portal de cumplimiento Microsoft Purview proporciona una experiencia mejorada para el uso de eDiscovery, como: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de eDiscovery, incluidos casos para organizar el contenido por cuestión, conjuntos de revisión para revisar el contenido y análisis para ayudar a eliminar datos para su revisión, como agrupación casi duplicada, subprocesos de correo electrónico, análisis de temas y predictiva  Codificación.
 
-El portal de cumplimiento de Microsoft Purview proporciona una experiencia mejorada para el uso de eDiscovery, lo que incluye: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de eDiscovery, incluidos casos para organizar el contenido por cuestión, conjuntos de revisión para revisar contenido y análisis para ayudar a eliminar datos para su revisión, como agrupación casi duplicada, subprocesos de correo electrónico, análisis de temas y codificación predictiva.
-
-Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y mejorada, en este artículo se proporcionan instrucciones básicas sobre cómo migrar In-Place búsquedas y retenciones de eDiscovery desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> al portal de cumplimiento.
+Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y mejorada, en este artículo se proporcionan instrucciones básicas sobre cómo migrar In-Place búsquedas y retenciones de exhibición de documentos electrónicos desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> al portal de cumplimiento.
 
 > [!NOTE]
 > Dado que hay muchos escenarios diferentes, en este artículo se proporcionan instrucciones generales para realizar búsquedas de transición y mantener un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento. El uso de casos de eDiscovery no siempre es necesario, pero agregan una capa adicional de seguridad, ya que permiten asignar permisos para controlar quién tiene acceso a los casos de eDiscovery en su organización.
@@ -37,11 +35,11 @@ Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y
 
 - Debe instalar el módulo Exchange Online V2. Para obtener instrucciones, consulte [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>.
+- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
 - En este artículo se proporcionan instrucciones sobre cómo crear una suspensión de eDiscovery. La directiva de retención se aplicará a los buzones a través de un proceso asincrónico. Al crear una suspensión de eDiscovery, debe crear un CaseHoldPolicy y un CaseHoldRule; de lo contrario, no se creará la suspensión y las ubicaciones de contenido no se colocarán en suspensión.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Paso 1: Conectar para Exchange Online PowerShell y PowerShell de cumplimiento de seguridad &
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Paso 1: Conexión a Exchange Online PowerShell y PowerShell de cumplimiento de & de seguridad
 
 El primer paso es conectarse a Exchange Online PowerShell y PowerShell de cumplimiento de seguridad & en la misma ventana de PowerShell. Puede copiar los siguientes comandos, pegarlos en una ventana de PowerShell y, a continuación, ejecutarlos. Se le pedirán las credenciales.
 
@@ -50,7 +48,7 @@ Connect-IPPSSession
 Connect-ExchangeOnline -UseRPSSession
 ```
 
-Para obtener instrucciones detalladas, consulte [Conectar a PowerShell de cumplimiento de & seguridad](/powershell/exchange/connect-to-scc-powershell) y [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Para obtener instrucciones detalladas, consulte [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) y [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Paso 2: Obtener una lista de In-Place búsquedas de exhibición de documentos electrónicos mediante Get-MailboxSearch
 
@@ -85,7 +83,7 @@ La salida de estos dos comandos será similar a la siguiente:
 > [!NOTE]
 > La duración de la In-Place Hold en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico de los escenarios de eDiscovery y de investigación legal. Si la duración de la retención tiene un valor diferente al indefinido, es probable que el motivo se deba a que la suspensión se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de eDiscovery en PowerShell de cumplimiento de seguridad & para escenarios de retención, se recomienda usar [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) y [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) para conservar el contenido. El resultado del uso de estos cmdlets será similar al uso de **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido después de que expire el período de retención. Además, el uso de los cmdlets de retención no requiere que asocie las retenciones con un caso de exhibición de documentos electrónicos.
 
-## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Paso 4: Crear un caso en el portal de cumplimiento de Microsoft Purview
+## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Paso 4: Crear un caso en el portal de cumplimiento Microsoft Purview
 
 Para crear una suspensión de eDiscovery, debe crear un caso de exhibición de documentos electrónicos con el que asociar la suspensión. En el ejemplo siguiente se crea un caso de exhibición de documentos electrónicos con el nombre que prefiera. Almacenaremos las propiedades del nuevo caso en una variable para usarlas más adelante. Para ver esas propiedades, ejecute el `$case | FL` comando después de crear el caso.
 
@@ -139,7 +137,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 Para asegurarse de que todo está configurado correctamente, vaya al portal de cumplimiento en [https://compliance.microsoft.com](https://compliance.microsoft.com)y haga clic en **eDiscovery > Core**.
 
-![Exhibición de documentos electrónicos del portal de cumplimiento de Microsoft Purview.](../media/MigrateLegacyeDiscovery7.png)
+![portal de cumplimiento Microsoft Purview eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
 El caso que creó en el paso 3 aparece en la página **eDiscovery (Estándar).** Abra el caso y, a continuación, observe la suspensión que creó en el paso 4 de la lista en la pestaña **Suspensión** . Puede seleccionar la suspensión para ver los detalles de la página de control flotante, incluido el número de buzones a los que se aplica la suspensión y el estado de distribución.
 
@@ -175,4 +173,4 @@ Si migra una búsqueda In-Place eDiscovery pero no la asocia a un caso de exhibi
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Para obtener más información sobre el portal de cumplimiento, consulte [Información general del portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center.md).
+- Para obtener más información sobre el portal de cumplimiento, consulte [Información general de la portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md).

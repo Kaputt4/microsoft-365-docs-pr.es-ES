@@ -15,22 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: ba151d1ffae18a5df033fbb8696fcd3bf759f285
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094556"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625564"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configuración de un conector de Microsoft para archivar datos de Twitter (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de Twitter a Microsoft 365. Después de configurar y configurar el conector, se conecta a la cuenta de Twitter de su organización (de forma programada), convierte el contenido de un elemento en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo de Microsoft 365.
 
-Use un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Twitter a Microsoft 365. Después de configurar y configurar el conector, se conecta a la cuenta de Twitter de su organización (de forma programada), convierte el contenido de un elemento en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
+Una vez importados los datos de Twitter, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, la búsqueda de contenido, el archivado de In-Place, la auditoría y las directivas de retención de Microsoft 365 a los datos de Twitter. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Twitter. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Twitter con un custodio en un caso de Microsoft Purview eDiscovery (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
-Una vez importados los datos de Twitter, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, la búsqueda de contenido, el archivado de In-Place, la auditoría y las directivas de retención de Microsoft 365 a los datos de Twitter. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Twitter. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Twitter con un custodio en un caso de exhibición de documentos electrónicos de Microsoft Purview (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
-
-Una vez importados los datos de Twitter, puede aplicar las características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos almacenados en el buzón. Por ejemplo, puede buscar datos de Twitter mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos con un custodio en un caso de exhibición de documentos electrónicos (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez importados los datos de Twitter, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos almacenados en el buzón. Por ejemplo, puede buscar datos de Twitter mediante búsqueda de contenido o asociar el buzón donde se almacenan los datos con un custodio en un caso de exhibición de documentos electrónicos (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
@@ -45,13 +43,13 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
     - [Registrarse para obtener una suscripción de Azure de pago por uso](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > La [suscripción gratuita Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción de Microsoft 365 no admite los conectores en el portal de cumplimiento.
+    > La [suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción de Microsoft 365 no admite los conectores en el portal de cumplimiento.
 
 - El conector de Twitter puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Twitter en un día, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al usuario que configura el conector de Twitter en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que configura el conector de Twitter en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
 El primer paso es registrar una nueva aplicación en Azure Active Directory (AAD). Esta aplicación corresponde al recurso de aplicación web que implementa en el paso 2 para el conector de Twitter.
 
@@ -59,15 +57,15 @@ Para obtener instrucciones paso a paso, consulte [Creación de una aplicación e
 
 Durante la finalización de este paso (siguiendo las instrucciones paso a paso), guardará la siguiente información en un archivo de texto. Estos valores se usarán en pasos posteriores en el proceso de implementación.
 
-- AAD identificador de aplicación
+- Identificador de aplicación de AAD
 
-- AAD secreto de aplicación
+- Secreto de aplicación de AAD
 
 - Identificador de inquilino
 
-## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde GitHub repositorio en la cuenta de Azure
+## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde el repositorio de GitHub en la cuenta de Azure
 
-El siguiente paso es implementar el código fuente de la aplicación del conector de Twitter que usará la API de Twitter para conectarse a su cuenta de Twitter y extraer datos para que pueda importarlos a Microsoft 365. El conector de Twitter que implemente para su organización cargará los elementos de la cuenta de Twitter de la organización en la ubicación de Azure Storage que se crea en este paso. Después de crear un conector de Twitter en el portal de cumplimiento (en el paso 5), el servicio de importación de Microsoft 365 copiará los datos de Twitter de la ubicación de Azure Storage a un buzón de Microsoft 365. Como se explicó anteriormente en la sección [Antes de configurar un conector](#before-you-set-up-a-connector), debe tener una suscripción de Azure válida para crear una cuenta de Azure Storage.
+El siguiente paso es implementar el código fuente de la aplicación del conector de Twitter que usará la API de Twitter para conectarse a su cuenta de Twitter y extraer datos para que pueda importarlos a Microsoft 365. El conector de Twitter que implemente para su organización cargará los elementos de la cuenta de Twitter de la organización en la ubicación de Azure Storage que se crea en este paso. Después de crear un conector de Twitter en el portal de cumplimiento (en el paso 5), el servicio de importación de Microsoft 365 copiará los datos de Twitter de la ubicación de Azure Storage en un buzón de Microsoft 365. Como se explicó anteriormente en la sección [Antes de configurar un conector](#before-you-set-up-a-connector) , debe tener una suscripción de Azure válida para crear una cuenta de Azure Storage.
 
 Para implementar el código fuente de la aplicación del conector de Twitter:
 
@@ -75,7 +73,7 @@ Para implementar el código fuente de la aplicación del conector de Twitter:
 
 2. Haga clic en **Implementar en Azure**.
 
-Para obtener instrucciones paso a paso, consulte [Implementación del servicio web del conector desde GitHub a su cuenta de Azure](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+Para obtener instrucciones paso a paso, consulte [Implementación del servicio web del conector desde GitHub en su cuenta de Azure](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 Mientras sigue las instrucciones paso a paso para completar este paso, proporciona la siguiente información.
 
@@ -117,15 +115,15 @@ Durante la finalización de este paso (siguiendo las instrucciones paso a paso),
 
 - Secreto de token de acceso de Twitter (obtenido en el paso 3)
 
-- Azure Active Directory identificador de aplicación (el identificador de aplicación AAD obtenido en el paso 1)
+- Identificador de aplicación de Azure Active Directory (el identificador de aplicación de AAD obtenido en el paso 1)
 
-- Azure Active Directory secreto de aplicación (el secreto de aplicación AAD obtenido en el paso 1)
+- Secreto de aplicación de Azure Active Directory (el secreto de aplicación de AAD obtenido en el paso 1)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-compliance-portal"></a>Paso 5: Configurar un conector de Twitter en el portal de cumplimiento
 
-El último paso es configurar el conector de Twitter en el portal de cumplimiento que importará datos de la cuenta de Twitter de su organización a un buzón especificado en Microsoft 365. Después de completar este paso, el servicio de importación de Microsoft 365 comenzará a importar datos de la cuenta de Twitter de la organización a Microsoft 365.
+El último paso es configurar el conector de Twitter en el portal de cumplimiento que importará datos de la cuenta de Twitter de su organización a un buzón especificado en Microsoft 365. Después de completar este paso, el servicio de importación de Microsoft 365 comenzará a importar datos de la cuenta de Twitter de su organización a Microsoft 365.
 
-Para obtener instrucciones paso a paso, consulte [Configuración de un conector de Twitter en el portal de cumplimiento de Microsoft Purview](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
+Para obtener instrucciones paso a paso, consulte [Configuración de un conector de Twitter en el portal de cumplimiento Microsoft Purview](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
 
 Durante la finalización de este paso (siguiendo las instrucciones paso a paso), proporcionará la siguiente información (que ha copiado en un archivo de texto después de completar los pasos).
 

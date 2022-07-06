@@ -1,6 +1,6 @@
 ---
 title: Investigación de actividades de administración de riesgos internos
-description: Obtenga información sobre cómo investigar las actividades de administración de riesgos internos en Microsoft Purview
+description: Más información sobre la investigación de actividades de administración de riesgos internos en Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759876"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622973"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La investigación de actividades de usuario de riesgo es un primer paso importante para minimizar los riesgos internos para su organización. Estos riesgos pueden ser actividades que generan alertas a partir de directivas de administración de riesgos internos o riesgos de actividades detectadas por directivas, pero que no crean inmediatamente una alerta de administración de riesgos internos para los usuarios. Puede investigar estos tipos de actividades mediante los informes de **actividad de usuario (versión preliminar)** o con el **panel Alerta**.
 
@@ -30,7 +28,7 @@ La investigación de actividades de usuario de riesgo es un primer paso importan
 
 Los informes de actividad de usuario permiten examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. En la mayoría de los escenarios de administración de riesgos internos, los usuarios se definen explícitamente en las directivas y pueden tener alertas de directiva (en función de los eventos desencadenantes) y puntuaciones de riesgo asociadas a las actividades. Pero en algunos escenarios, es posible que desee examinar las actividades de los usuarios que no están definidas explícitamente en una directiva. Estas actividades pueden ser para los usuarios a los que ha recibido una sugerencia sobre el usuario y las actividades potencialmente de riesgo, o para los usuarios que normalmente no necesitan asignarse a una directiva de administración de riesgos internos.
 
-Después de configurar indicadores en la página **de Configuración** de administración de riesgos internos, se detecta la actividad del usuario para la actividad de riesgo asociada a los indicadores seleccionados. No es necesario configurar una directiva para que los informes de actividad de usuario detecten y notifiquen actividades de riesgo por parte de los usuarios de la organización. Las actividades incluidas en los informes de actividad de usuario no requieren que se desencadenen eventos para que se muestren las actividades. Esta configuración significa que toda la actividad detectada para el usuario está disponible para su revisión, independientemente de si tiene un evento desencadenante o si crea una alerta. Los informes se crean por usuario y pueden incluir todas las actividades durante un período personalizado de 90 días. No se admiten varios informes para el mismo usuario.
+Después de configurar los indicadores en la página **Configuración** de administración de riesgos internos, se detecta la actividad del usuario para la actividad de riesgo asociada a los indicadores seleccionados. No es necesario configurar una directiva para que los informes de actividad de usuario detecten y notifiquen actividades de riesgo por parte de los usuarios de la organización. Las actividades incluidas en los informes de actividad de usuario no requieren que se desencadenen eventos para que se muestren las actividades. Esta configuración significa que toda la actividad detectada para el usuario está disponible para su revisión, independientemente de si tiene un evento desencadenante o si crea una alerta. Los informes se crean por usuario y pueden incluir todas las actividades durante un período personalizado de 90 días. No se admiten varios informes para el mismo usuario.
 
 Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos. Los usuarios deben estar asignados al grupo de roles *Investigadores de Administración de riesgos* internos para ver la página **Informes de actividad de usuario** .  
 
@@ -241,7 +239,7 @@ A medida que la administración de riesgos internos alerta de la antigüedad, su
 
 Para ayudar a minimizar el número de elementos anteriores que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos internos, casos e informes de actividad de usuario:
 
-|Elemento|Retención/límite|
+|Item|Retención/límite|
 |---|---|
 |Alertas con estado de revisión de necesidades|120 días desde la creación de alertas y, a continuación, se elimina automáticamente|
 |Casos activos (y artefactos asociados)|Retención indefinida, nunca expirar|

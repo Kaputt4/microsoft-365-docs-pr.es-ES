@@ -14,21 +14,19 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento de Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
-ms.openlocfilehash: 2d732352d8b6eebaee304a030736f35bcf32b84c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
+ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099331"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623361"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configuración de un conector para archivar datos de Facebook (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de páginas de Facebook Business a Microsoft 365. Después de configurar y configurar el conector, se conecta a la página Facebook Business (de forma programada), convierte el contenido de los elementos de Facebook en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
 
-Use un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de páginas de Facebook Business para Microsoft 365. Después de configurar y configurar el conector, se conecta a la página Facebook Business (de forma programada), convierte el contenido de los elementos de Facebook en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
-
-Una vez importados los datos de Facebook, puede aplicar las características de Microsoft Purview, como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Facebook. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Facebook con un custodio en un caso de exhibición de documentos electrónicos de Microsoft Purview (Premium). El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez importados los datos de Facebook, puede aplicar las características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Facebook. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Facebook con un custodio en un caso de Microsoft Purview eDiscovery (Premium). El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Requisitos previos para configurar un conector para páginas de Facebook Business
 
@@ -43,13 +41,13 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
     - [Registrarse para obtener una suscripción de Azure de pago por uso](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > La [suscripción gratuita Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción de Microsoft 365 no admite los conectores en el portal de cumplimiento.
+    > La [suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción de Microsoft 365 no admite los conectores en el portal de cumplimiento.
 
 - Las páginas del conector para empresas de Facebook pueden importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Facebook Business en un día, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al usuario que configura el conector personalizado en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que configura el conector personalizado en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
 El primer paso es registrar una nueva aplicación en Azure Active Directory (AAD). Esta aplicación corresponde al recurso de aplicación web que implementa en los pasos 4 y 5 para el conector de Facebook.
 
@@ -57,17 +55,17 @@ Para obtener instrucciones paso a paso, consulte [Creación de una aplicación e
 
 Durante la finalización de este paso (mediante las instrucciones paso a paso anteriores), guardará la siguiente información en un archivo de texto. Estos valores se usan en pasos posteriores en el proceso de implementación.
 
-- AAD identificador de aplicación
+- Identificador de aplicación de AAD
 
-- AAD secreto de aplicación
+- Secreto de aplicación de AAD
 
 - Identificador de inquilino
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde GitHub en la cuenta de Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: Implementación del servicio web del conector desde GitHub en su cuenta de Azure
 
-El siguiente paso es implementar el código fuente de la aplicación conector de páginas de Facebook Business que usará la API de Facebook para conectarse a su cuenta de Facebook y extraer datos para que pueda importarlos a Microsoft 365. El conector de Facebook que implemente para su organización cargará los elementos de las páginas de Facebook Business en la ubicación de Azure Storage que se crea en este paso. Después de crear un conector de páginas empresariales de Facebook en el portal de cumplimiento (en el paso 5), el servicio de importación copiará los datos de las páginas empresariales de Facebook desde la ubicación de Azure Storage a un buzón de correo de la organización Microsoft 365. Como se explicó anteriormente en la sección [Requisitos previos](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages), debe tener una suscripción de Azure válida para crear una cuenta de Azure Storage.
+El siguiente paso consiste en implementar el código fuente de la aplicación conector de páginas empresariales de Facebook que usará la API de Facebook para conectarse a su cuenta de Facebook y extraer datos para que pueda importarlos a Microsoft 365. El conector de Facebook que implemente para su organización cargará los elementos de las páginas de Facebook Business en la ubicación de Azure Storage que se crea en este paso. Después de crear un conector de páginas empresariales de Facebook en el portal de cumplimiento (en el paso 5), el servicio de importación copiará los datos de las páginas empresariales de Facebook desde la ubicación de Azure Storage a un buzón de correo de la organización de Microsoft 365. Como se explicó anteriormente en la sección [Requisitos previos](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) , debe tener una suscripción de Azure válida para crear una cuenta de Azure Storage.
 
-Para obtener instrucciones paso a paso, consulte [Implementación del servicio web del conector desde GitHub a su cuenta de Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+Para obtener instrucciones paso a paso, consulte [Implementación del servicio web del conector desde GitHub en su cuenta de Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 En las instrucciones paso a paso para completar este paso, proporcionará la siguiente información:
 
@@ -105,19 +103,19 @@ Durante la finalización de este paso (siguiendo las instrucciones paso a paso),
 
 - Los webhooks de Facebook comprueban el token (obtenido en el paso 3)
 
-- Azure Active Directory identificador de aplicación (el identificador de aplicación AAD obtenido en el paso 1)
+- Identificador de aplicación de Azure Active Directory (el identificador de aplicación de AAD obtenido en el paso 1)
 
-- Azure Active Directory secreto de aplicación (el secreto de aplicación AAD obtenido en el paso 1)
+- Secreto de aplicación de Azure Active Directory (el secreto de aplicación de AAD obtenido en el paso 1)
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-compliance-portal"></a>Paso 5: Configurar un conector de páginas empresariales de Facebook en el portal de cumplimiento
 
-El último paso es configurar el conector en el portal de cumplimiento que importará datos de las páginas de Facebook Business a un buzón especificado en Microsoft 365. Después de completar este paso, el servicio de importación de Microsoft 365 comenzará a importar datos de las páginas de Facebook Business a Microsoft 365.
+El último paso consiste en configurar el conector en el portal de cumplimiento que importará datos de las páginas de Facebook Business a un buzón especificado en Microsoft 365. Después de completar este paso, el servicio de importación de Microsoft 365 comenzará a importar datos de las páginas de Facebook Business a Microsoft 365.
 
 Para obtener instrucciones paso a paso, consulte [Paso 5: Configurar un conector de Facebook en el portal de cumplimiento](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal).
 
 Durante la finalización de este paso (siguiendo las instrucciones paso a paso), proporciona la siguiente información (que ha copiado en un archivo de texto después de completar los pasos).
 
-- AAD identificador de aplicación (obtenido en el paso 1)
+- Id. de aplicación de AAD (obtenido en el paso 1)
 
 - Dirección URL de Azure App Service (obtenida en el paso 1; por ejemplo, https://fbconnector.azurewebsites.net)
 

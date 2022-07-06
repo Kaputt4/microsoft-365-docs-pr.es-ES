@@ -15,17 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático de contenido con privilegios al revisar el contenido en un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
-ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático de contenido con privilegios al revisar el contenido en un caso de Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 9f81ff216ecf0045aec69191b3a61916b6ea3081
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094039"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624639"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Configuración de la detección de privilegios de abogado-cliente en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un aspecto importante y costoso de la fase de revisión de cualquier proceso de exhibición de documentos electrónicos es revisar los documentos para obtener contenido con privilegios. Microsoft Purview eDiscovery (Premium) proporciona detección basada en aprendizaje automático de contenido con privilegios para que este proceso sea más eficaz. Esta característica se denomina *detección de privilegios de abogado-cliente*.
 
@@ -57,19 +55,19 @@ Para habilitar el modelo de detección de privilegios abogado-cliente, su organi
 
 ### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Paso 1: Activar la detección de privilegios de abogado-cliente
 
-Una persona que sea administrador de eDiscovery en su organización (miembro del subgrupo administrador de eDiscovery en el grupo de roles del Administrador de exhibición de documentos electrónicos) debe hacer que el modelo esté disponible en los casos de eDiscovery (Premium).
+Una persona que sea administrador de eDiscovery en su organización (miembro del subgrupo administrador de exhibición de documentos electrónicos en el grupo de roles del Administrador de exhibición de documentos electrónicos) debe hacer que el modelo esté disponible en los casos de eDiscovery (Premium).
 
-1. En el portal de cumplimiento de Microsoft Purview, vaya a [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764) y, a continuación, haga clic en **configuración de eDiscovery (Premium).**
+1. En el portal de cumplimiento Microsoft Purview, vaya a [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764) y, a continuación, haga clic en **configuración de eDiscovery (Premium).**
 
-   ![Seleccionar la configuración de eDiscovery (Premium)](..\media\HistoricalVersions1.png)
+   ![Selección de la configuración de eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. En la página **Configuración**, seleccione la pestaña **Análisis** y, a continuación, cambie el botón de alternancia **de detección de privilegios abogado-cliente** a activado.
+2. En la página **Configuración** , seleccione la pestaña **Análisis** y, a continuación, cambie el botón de **detección de privilegios abogado-cliente** a activado.
 
    ![Haga clic en alternar para activar la detección de privilegios de abogado-cliente.](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
 3. Haga clic en **Guardar** para guardar el cambio.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Paso 2: Upload una lista de abogados (opcional)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Paso 2: Cargar una lista de abogados (opcional)
 
 Para aprovechar al máximo el modelo de detección de privilegios de abogado-cliente y usar los resultados de la detección **de has attorney** o **potencialmente con privilegios** que se describió anteriormente, le recomendamos que cargue una lista de direcciones de correo electrónico para los abogados y el personal legal que trabajan para su organización.
 
@@ -77,7 +75,7 @@ Para cargar una lista de abogados para que la use el modelo de detección de pri
 
 1. Cree un archivo .csv (sin una fila de encabezado) y agregue la dirección de correo electrónico de cada usuario adecuado en una línea independiente. Guarde este archivo en su equipo local.
 
-2. En **la página Configuración** eDiscovery (Premium), seleccione la pestaña **Análisis**.
+2. En la página **Configuración** de eDiscovery (Premium), seleccione la pestaña **Análisis** .
 
    Se muestra la página **Privilegios de abogado-cliente** y el botón de alternancia **de detección de privilegios Detección de privilegios de abogado-cliente** está activado.
 
@@ -93,7 +91,7 @@ Siga los pasos de esta sección para usar la detección de privilegios de abogad
 
 ### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Paso 1: Crear un grupo de etiquetas inteligentes con el modelo de detección de privilegios abogado-cliente
 
-Una de las formas principales de ver los resultados de la detección de secreto profesional entre abogado y cliente en el proceso de revisión es mediante un grupo de etiquetas inteligentes. Un grupo de etiquetas inteligentes indica los resultados de la detección de secreto profesional entre abogado y cliente y muestra los resultados en línea junto a las etiquetas de un grupo de etiquetas inteligentes. Esto le permite identificar rápidamente documentos potencialmente con privilegios durante la revisión de documentos. Además, también puede usar las etiquetas del grupo de etiquetas inteligentes para etiquetar documentos como secretos o no secretos. Para obtener más información sobre las etiquetas inteligentes, vea [Configurar etiquetas inteligentes en eDiscovery (Premium)](smart-tags.md).
+Una de las formas principales de ver los resultados de la detección de secreto profesional entre abogado y cliente en el proceso de revisión es mediante un grupo de etiquetas inteligentes. Un grupo de etiquetas inteligentes indica los resultados de la detección de secreto profesional entre abogado y cliente y muestra los resultados en línea junto a las etiquetas de un grupo de etiquetas inteligentes. Esto le permite identificar rápidamente documentos potencialmente con privilegios durante la revisión de documentos. Además, también puede usar las etiquetas del grupo de etiquetas inteligentes para etiquetar documentos como secretos o no secretos. Para obtener más información sobre las etiquetas inteligentes, consulte [Configuración de etiquetas inteligentes en eDiscovery (Premium).](smart-tags.md)
 
 1. En el conjunto de revisión que contiene los documentos que analizó en el paso 1, seleccione **Administrar conjunto de revisión** y, a continuación, seleccione **Administrar etiquetas**.
 
@@ -111,7 +109,7 @@ Una de las formas principales de ver los resultados de la detección de secreto 
 
 ### <a name="step-2-analyze-a-review-set"></a>Paso 2: Analizar un conjunto de revisión
 
-Al analizar los documentos de un conjunto de revisión, también se ejecutará el modelo de detección de privilegios abogado-cliente y las propiedades correspondientes (descritas en [¿Cómo funciona?](#how-does-it-work)) se agregarán a cada documento del conjunto de revisión. Para obtener más información sobre el análisis de datos en el conjunto de revisión, vea [Analizar datos en un conjunto de revisión en eDiscovery (Premium)](analyzing-data-in-review-set.md).
+Al analizar los documentos de un conjunto de revisión, también se ejecutará el modelo de detección de privilegios abogado-cliente y las propiedades correspondientes (descritas en [¿Cómo funciona?](#how-does-it-work)) se agregarán a cada documento del conjunto de revisión. Para obtener más información sobre el análisis de datos en el conjunto de revisión, vea [Analizar datos en un conjunto de revisión en eDiscovery (Premium).](analyzing-data-in-review-set.md)
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Paso 3: Uso del grupo de etiquetas inteligentes para revisar el contenido con privilegios
 

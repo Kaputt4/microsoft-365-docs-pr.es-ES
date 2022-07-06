@@ -15,21 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3a2d678f8e653d65007369c2db5ddd8c72a71c66
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923289"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622841"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
 > [!TIP]
 > *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Insider Risk Management es una solución de cumplimiento que ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización. Las directivas de riesgo internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción en casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden realizar rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
+Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización. Las directivas de riesgo internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción en casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden realizar rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
 
 Para obtener más información y una introducción al proceso de planeación para abordar las actividades de riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -143,14 +141,14 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo [registro de auditoría (versión preliminar)](insider-risk-management-audit-log.md) le permite mantenerse informado de las acciones que se realizaron en las características de administración de riesgos internos. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos internos.
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez investigados los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente las condiciones de la directiva, se puede enviar al usuario un aviso sencillo desde las plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios simples o pueden dirigir al usuario a un entrenamiento de actualización o una guía para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 
 En situaciones más graves, es posible que tenga que compartir la información del caso de administración de riesgos internos con otros revisores o servicios de su organización. La administración de riesgos internos está estrechamente integrada con otras soluciones de Microsoft Purview para ayudarle con la resolución de riesgos de un extremo a otro.
 
-- **eDiscovery (Premium):** escalar un caso para su investigación le permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium [), consulte Información general sobre eDiscovery (Premium) de Microsoft Purview](overview-ediscovery-20.md).
-- **Integración de las API de administración de Office 365 (versión preliminar):** la administración de riesgos internos admite la exportación de información de alertas a los servicios de administración de eventos e información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma que mejor se adapte a los procesos de riesgo de su organización le proporciona más flexibilidad para actuar sobre las actividades de riesgo. Para más información sobre la exportación de información de alertas con las API de administración de Office 365, consulte [Exportación de alertas](insider-risk-management-settings.md#export-alerts).
+- **eDiscovery (Premium):** escalar un caso para investigación le permite transferir datos y administración del caso a Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) ofrece un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar el contenido que responde a las investigaciones internas y externas de la organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery (Premium), consulte [Información general de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
+- **Integración de las API de administración de Office 365 (versión preliminar):** la administración de riesgos internos admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma que mejor se adapte a los procesos de riesgo de su organización le proporciona más flexibilidad para actuar sobre las actividades de riesgo. Para más información sobre la exportación de información de alertas con las API de administración de Office 365, consulte [Exportación de alertas](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
 > Gracias por sus comentarios y soporte técnico durante la versión preliminar del conector de ServiceNow. Hemos decidido finalizar la versión preliminar del conector de ServiceNow y dejar de admitir la administración de riesgos internos el 30 de noviembre de 2020. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes la integración de ServiceNow en la administración de riesgos internos.

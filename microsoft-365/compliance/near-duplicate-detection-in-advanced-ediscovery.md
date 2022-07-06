@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Use la detección casi duplicada para agrupar documentos textualmente similares al analizar datos de casos en eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b6ad8a3a3775c8389e943aa249cffd16b6b84d2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 985374558189b2001c6f11e09581f7cb3ed6d11b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096642"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622577"
 ---
 # <a name="near-duplicate-detection-in-ediscovery-premium"></a>Detección de duplicados casi en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Considere la posibilidad de revisar un conjunto de documentos en el que un subconjunto se basa en la misma plantilla y tiene principalmente el mismo lenguaje reutilizable, con algunas diferencias aquí y allí. Si un revisor pudiera identificar este subconjunto, revisar uno de ellos exhaustivamente y revisar las diferencias del resto, no habrían perdido ninguna información única mientras tardaban solo una fracción de tiempo que les habría llevado a leer todos los documentos que cubrir. La detección de casi duplicados agrupa documentos textualmente similares para ayudarlo a que su proceso de revisión sea más eficiente.
 

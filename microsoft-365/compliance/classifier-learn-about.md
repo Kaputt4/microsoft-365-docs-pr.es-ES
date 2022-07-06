@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 0c47d019b3508bdd8d8fba1f1b4303c7f4c9579d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159584"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621213"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Clasificar y etiquetar el contenido para que pueda protegerse y controlarse correctamente es el punto de partida para la materia de protección de la información. Microsoft 365 tiene tres maneras de clasificar el contenido.
 
@@ -52,12 +50,12 @@ Las etiquetas de confidencialidad y retención se pueden aplicar automáticament
 Este método de clasificación es adecuado para el contenido que no se identifica fácilmente mediante los métodos manuales o automatizados de coincidencia de patrones. Este método de clasificación consiste más en usar un clasificador para identificar un elemento en función de cuál sea el elemento, no de los elementos que están en el elemento (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido examinando cientos de ejemplos del contenido que le interesa clasificar.
 
 > [!NOTE]
-> En versión preliminar: puede ver los clasificadores que se pueden entrenar en el explorador de contenido expandiendo **Clasificadores entrenables** en el panel de filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de ningún etiquetado.
+> En versión preliminar: puede ver los clasificadores que se pueden entrenar en el explorador de contenido expandiendo **Clasificadores entrenables** en el panel de filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de etiquetar.
 > Si no desea usar esta característica, debe presentar una solicitud con Soporte técnico de Microsoft. Esto deshabilitará la presentación de los datos confidenciales que no se usan en ninguna directiva de etiquetado en el Explorador de contenido. También puede deshabilitar el examen de los datos. Si el examen está desactivado, el etiquetado de confidencialidad y las directivas DLP con esos clasificadores no funcionarán.
 
 ### <a name="where-you-can-use-classifiers"></a>Donde puede usar clasificadores
 
-Los clasificadores están disponibles para su uso como condición para [Office etiquetado automático con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md).
+Los clasificadores están disponibles para usarse como condición para el [etiquetado automático de Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), aplicar [automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [el cumplimiento de la comunicación](communication-compliance.md).
 
 Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; consulte [Aplicación automática de una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
@@ -73,7 +71,7 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones; c
 
 Microsoft 365 incluye varios clasificadores previamente entrenados:
 
-- **Adulto, racy y gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
+- **Adulto, racy y gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y los canales y chats de Microsoft Teams. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
 
 - **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
@@ -101,7 +99,7 @@ Microsoft 365 incluye varios clasificadores previamente entrenados:
 
 - **Reanudar**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia profesional y otra información de identificación personal de un solicitante
 
-- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en lenguajes de programación de equipos en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
+- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas de lenguajes de programación de equipos en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detecta contenido en .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . Archivos RData, .rds, .rb, .scala, .sc, .sh, .swift.
 
   > [!NOTE]
   > El código fuente se entrena para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.

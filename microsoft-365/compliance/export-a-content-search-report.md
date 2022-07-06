@@ -20,20 +20,18 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: En lugar de exportar los resultados reales de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
+description: En lugar de exportar los resultados reales de una búsqueda de contenido en el portal de cumplimiento Microsoft Purview, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35e0a0b13594a6396ae1f757e3a1fc8a3e952173
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 294ea5ec35e141606c1197613bf5e7dc908a4ac7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093073"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624275"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview (o desde una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview), puede exportar los mismos informes que se generan al exportar los resultados de búsqueda reales.
+En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el portal de cumplimiento Microsoft Purview (o de una búsqueda asociada a un caso de Microsoft Purview eDiscovery (estándar), puede exportar los mismos informes que se generan al exportar los resultados reales de la búsqueda.
   
 Al exportar un informe, los archivos de informe se descargan en una carpeta del equipo local que tiene el mismo nombre que la búsqueda de contenido, pero que se anexa con *_ReportsOnly*. Por ejemplo, si la búsqueda de contenido se denomina  *ContosoCase0815*, el informe se descarga en una carpeta denominada *ContosoCase0815_ReportsOnly*. Para obtener una lista de los documentos que se incluyen en el informe, vea [What's included in the report(Qué se incluye en el informe](#whats-included-in-the-report)).
 
@@ -41,20 +39,20 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
 - Para exportar un informe de búsqueda, debe tener asignado el rol de administración búsqueda de cumplimiento en el portal de cumplimiento. Este rol se asigna de forma predeterminada a los grupos de roles integrados eDiscovery Manager y Organization Management. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
-- Al exportar un informe, los datos se almacenan temporalmente en una ubicación Azure Storage en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión en Azure, que es **\*.blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de resultados de búsqueda se eliminan de la ubicación de Azure Storage dos semanas después de su creación.
+- Al exportar un informe, los datos se almacenan temporalmente en una ubicación de Azure Storage en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión en Azure, que es **\*.blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de resultados de búsqueda se eliminan de la ubicación de Azure Storage dos semanas después de su creación.
 
 - El equipo que use para exportar el informe de búsqueda debe cumplir los siguientes requisitos del sistema:
   
   - Versión más reciente de Windows (32 bits o 64 bits)
   
-  - Microsoft .NET Framework 4.7 o posterior
+  - Microsoft .NET Framework 4.7 o superior
   
-- Tiene que usar Microsoft Edge <sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. Ya no se admite el uso de Internet Explorer 11 para exportar los resultados de <sup>búsqueda2</sup>.
+- Tiene que usar Microsoft Edge<sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. El uso de Internet Explorer 11 para exportar los resultados de búsqueda ya no es compatible con<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Como resultado de los cambios recientes en Microsoft Edge, ClickOnce compatibilidad ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar ClickOnce compatibilidad con Edge, consulte [Uso de la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge](configure-edge-to-export-search-results.md). Además, Microsoft no fabrica extensiones ni complementos de terceros para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.
+  > <sup>1</sup> Como resultado de los cambios recientes en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, vea [Usar la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge](configure-edge-to-export-search-results.md). Además, Microsoft no fabrica extensiones ni complementos de terceros para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.
   > 
-  > <sup>2</sup> A partir de agosto de 2021, Microsoft 365 aplicaciones y servicios ya no admitirán Internet Explorer 11 (IE11) y es posible que los usuarios tengan una experiencia degradada o no puedan conectarse a esas aplicaciones y servicios. Estas aplicaciones y servicios se eliminarán gradualmente en las próximas semanas y meses para garantizar un fin sin problemas del soporte técnico. Cada aplicación y servicio se están eliminando gradualmente según programaciones independientes. Para obtener más información, consulte esta [entrada de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+  > <sup>2</sup> A partir de agosto de 2021, las aplicaciones y servicios de Microsoft 365 ya no admitirán Internet Explorer 11 (IE11) y es posible que los usuarios tengan una experiencia degradada o no puedan conectarse a esas aplicaciones y servicios. Estas aplicaciones y servicios se eliminarán gradualmente en las próximas semanas y meses para garantizar un fin sin problemas del soporte técnico. Cada aplicación y servicio se están eliminando gradualmente según programaciones independientes. Para obtener más información, consulte esta [entrada de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - Si el tamaño total estimado de los resultados devueltos por la búsqueda supera los 2 TB, se produce un error al exportar los informes. Para exportar correctamente los informes, intente restringir el ámbito y volver a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a 2 TB.
 
@@ -84,7 +82,7 @@ El primer paso consiste en preparar el informe para su descarga en el equipo que
   
     - **Solo los elementos que tienen un formato no reconocido, se cifran o no se indexan por otros motivos**. Esta opción solo exporta información sobre elementos no indexados.
 
-4. Configure la opción **Habilitar desduplicación para Exchange contenido**.
+4. Configure la opción **Habilitar desduplicación para contenido de Exchange** .
   
    - Si selecciona esta opción, el recuento de mensajes duplicados (antes de la desduplicación y después de la desduplicación) se incluye en el informe de resumen de exportación. Además, solo se incluirá una copia de un mensaje en el archivo manifest.xml. Pero el informe de resultados de exportación contendrá una fila para cada copia de un mensaje duplicado para que pueda identificar los buzones que contienen una copia del mensaje duplicado. Para obtener más información sobre los informes exportados, vea [What's included in the report(Qué se incluye en el informe](#whats-included-in-the-report)).
 
@@ -94,13 +92,13 @@ El primer paso consiste en preparar el informe para su descarga en el equipo que
 
 5. Haga clic en **Generar informe**.
 
-   Los informes de búsqueda están preparados para su descarga, lo que significa que los documentos del informe se cargan en una ubicación Azure Storage en la nube de Microsoft. Esto podría llevar varios minutos.
+   Los informes de búsqueda están preparados para su descarga, lo que significa que los documentos del informe se cargan en una ubicación de Azure Storage en la nube de Microsoft. Esto podría llevar varios minutos.
 
 Consulte la sección siguiente para obtener instrucciones para descargar los informes de búsqueda exportados.
   
 ## <a name="step-2-download-the-report"></a>Paso 2: Descargar el informe
 
-El siguiente paso es descargar el informe del área de Azure Storage al equipo local.
+El siguiente paso consiste en descargar el informe del área de Azure Storage en el equipo local.
 
 > [!NOTE]
 > El informe de búsqueda exportado se debe descargar en un plazo de 14 días después de generar el informe en el paso 1.
@@ -136,13 +134,13 @@ El siguiente paso es descargar el informe del área de Azure Storage al equipo l
 
 Al generar y exportar un informe sobre los resultados de una búsqueda de contenido, se descargan los siguientes documentos:
   
-- **Resumen de exportación:** Un documento Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se buscaron, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportarían.
+- **Resumen de exportación:** Documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se buscaron, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportarían.
 
    Si incluye elementos no indexados al exportar el informe, el número de elementos no indexados se incluye en el número total de resultados de búsqueda estimados y en el número total de resultados de búsqueda descargados (si desea exportar los resultados de búsqueda) que se enumeran en el informe de resumen de exportación. En otras palabras, el número total de elementos que se descargarían es igual al número total de resultados estimados y al número total de elementos sin indexar.
   
 - **Manifiesto:** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. Si ha habilitado la opción de desduplicación, los mensajes duplicados no se incluyen en el archivo de manifiesto.
 
-- **Resultados:** Un documento Excel que contiene una fila con información sobre cada elemento indizado que se exportaría con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
+- **Resultados:** Documento de Excel que contiene una fila con información sobre cada elemento indexado que se exportaría con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
 
   - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
 
@@ -152,7 +150,7 @@ Al generar y exportar un informe sobre los resultados de una búsqueda de conten
 
   - El remitente y los destinatarios del mensaje.
 
-  Para los documentos de sitios de SharePoint y OneDrive para la Empresa, el registro de resultados contiene información sobre cada documento, incluidos:
+  Para los documentos de SharePoint y OneDrive para la Empresa sitios, el registro de resultados contiene información sobre cada documento, incluidos:
 
   - La dirección URL del documento.
 
@@ -167,4 +165,4 @@ Al generar y exportar un informe sobre los resultados de una búsqueda de conten
   
 - **Trace.log:** Un registro de seguimiento que contiene información de registro detallada sobre el proceso de exportación y puede ayudar a descubrir problemas durante la exportación. Si abre un vale con Soporte técnico de Microsoft sobre un problema relacionado con la exportación de informes de búsqueda, es posible que se le pida que proporcione este registro de seguimiento.
 
-- **Elementos sin indexar:** Un documento Excel que contiene información sobre los elementos no indexados incluidos en los resultados de la búsqueda. Si no incluye elementos sin indexar al generar el informe de resultados de búsqueda, este informe se seguirá descargando, pero estará vacío.
+- **Elementos sin indexar:** Documento de Excel que contiene información sobre los elementos no indexados incluidos en los resultados de la búsqueda. Si no incluye elementos sin indexar al generar el informe de resultados de búsqueda, este informe se seguirá descargando, pero estará vacío.

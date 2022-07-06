@@ -16,17 +16,15 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Use casos de eDiscovery en el portal de cumplimiento de Microsoft Purview para administrar la investigación legal de su organización.
-ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Use casos de eDiscovery en el portal de cumplimiento Microsoft Purview para administrar la investigación legal de su organización.
+ms.openlocfilehash: 9db3a1e9ad831c74c9468121eaa0800875c74e5a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010074"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623813"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las organizaciones tienen muchas razones para responder a un caso legal que involucra a ciertos ejecutivos u otros empleados de su organización. Esto puede implicar encontrar y conservar rápidamente información específica de investigación adicional en correo electrónico, documentos, conversaciones de mensajería instantánea y otras ubicaciones de contenido usadas por personas en sus tareas diarias de trabajo. Puede realizar estas y muchas otras actividades similares mediante las herramientas de casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento.
   
@@ -50,19 +48,19 @@ Al igual que en la sección anterior que enumeraba scripts para escenarios de b�
   
 - [Cree un informe de suspensión de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos en su organización.
 
-- [Agregue buzones de correo y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para una lista de usuarios a una suspensión de eDiscovery.
+- [Agregue buzones y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para una lista de usuarios a una suspensión de eDiscovery.
   
-## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Administrar investigaciones legales con la solución eDiscovery (Premium) en Microsoft 365
+## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Administración de investigaciones legales con la solución eDiscovery (Premium) en Microsoft 365
 
-La solución eDiscovery (Premium) de Microsoft Purview en Microsoft 365 se basa en las funcionalidades de eDiscovery y análisis existentes en Office 365. Esta nueva solución, denominada *eDiscovery (Premium)*, proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
+La solución Microsoft Purview eDiscovery (Premium) de Microsoft 365 se basa en las funcionalidades de eDiscovery y análisis existentes en Office 365. Esta nueva solución, denominada *eDiscovery (Premium),* proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
 
-eDiscovery (Premium) requiere una suscripción A5 para la organización Microsoft 365 o Office 365. Para obtener más información sobre las licencias, vea [Configurar eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+eDiscovery (Premium) requiere una suscripción A5 para su organización de Microsoft 365 o Office 365. Para obtener más información sobre las licencias, vea [Configurar eDiscovery (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
 Esta es una introducción rápida al flujo de trabajo integrado en eDiscovery (Premium). Para obtener más información, vea [Administrar el flujo de trabajo de eDiscovery (Premium).](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
 
 - [Cree un caso](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) para empezar.
 
-- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una suspensión legal del contenido en su buzón de correo, OneDrive cuenta y Microsoft Teams de los que son miembros.
+- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una suspensión legal del contenido en su buzón de correo, cuenta de OneDrive y Microsoft Teams de los que son miembros.
 
 - [Administre las comunicaciones](managing-custodian-communications.md) con los custodios mediante la automatización del proceso de notificación de suspensión legal.
 

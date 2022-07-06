@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene la seguridad de los datos de los clientes y sepa cómo puede cumplir con ISO, HIPAA, FINRA y FedRAMP cuando use Office 365.
-ms.openlocfilehash: 8247eee98d9c039e05aca2b621881f56b59c2ee5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077843"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622401"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use Service Assurance en el Centro de cumplimiento de seguridad & para acceder a documentos que describen una variedad de temas, entre los que se incluyen: 
   
@@ -43,7 +41,7 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
     
 - Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Quién puede acceder a Office 365 Service Assurance, ¿y cómo?
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>¿Quién puede acceder a Office 365 Service assurance y cómo?
 
  **Los nuevos clientes y los clientes que evalúan Microsoft servicios en línea** pueden acceder a Service Assurance, que se incluye con Office 365 Enterprise planes E3 y E5 (suscripciones de prueba y de pago). Si no tiene uno de estos planes y quiere probar Service Assurance, puede [registrarse para obtener una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
@@ -58,7 +56,7 @@ Cuando accede a Service Assurance por primera vez, el primer paso es configurar 
     
     ![Muestra la página Configuración del Centro de protección.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
-2. En la página **Configuración**, seleccione la flecha abajo situada junto a **Región** y compruebe las regiones adecuadas para su organización. 
+2. En la página **Configuración** , seleccione la flecha abajo situada junto a **Región** y compruebe las regiones adecuadas para su organización. 
     
 3. Seleccione la flecha abajo situada junto a **Industria** y compruebe los sectores adecuados para su organización. 
     
@@ -86,7 +84,7 @@ Seleccione el informe que desea descargar y seleccione **Guardar** para descarga
 > [!NOTE]
 > Los informes y documentos de Service Assurance están disponibles para su descarga durante al menos doce meses después de la publicación o hasta que esté disponible una nueva versión del documento. 
   
-|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
+|**Página de garantía del servicio**|**Contenido disponible**|**Description**|
 |:-----|:-----|:-----|
 |Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de Office 365 Operaciones de entrega de servicios.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos confidenciales de Microsoft que estén disponibles en virtud del acuerdo de no divulgación para sus evaluaciones de revisión y riesgo.  <br/> |

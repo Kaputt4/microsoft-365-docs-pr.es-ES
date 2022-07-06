@@ -14,16 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE) para proteger las comunicaciones por correo electrónico entre los servidores de correo.
-ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015778"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625157"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Funcionamiento de la autenticación basada en DNS SMTP de entidades con nombre (DANE)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El protocolo SMTP es el protocolo principal que se usa para transferir mensajes entre servidores de correo y, de forma predeterminada, no es seguro. El protocolo seguridad de la capa de transporte (TLS) se introdujo hace años para admitir la transmisión cifrada de mensajes a través de SMTP. Se usa normalmente de forma oportunista en lugar de como requisito, dejando mucho tráfico de correo electrónico en texto no cifrado, vulnerable a la interceptación por parte de actores nefastos. Además, SMTP determina las direcciones IP de los servidores de destino a través de la infraestructura dns pública, que es susceptible a ataques de suplantación de identidad y ataques de tipo "Man in the Middle" (MITM). Esto ha llevado a crear muchos estándares nuevos para aumentar la seguridad para enviar y recibir correo electrónico, uno de ellos es la autenticación basada en DNS de entidades con nombre (DANE). 
 
@@ -52,7 +50,7 @@ Hay cuatro campos configurables únicos para el tipo de registro TLSA:
 |0<sup>1</sup>|PKIX-TA|El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.|
 |1<sup>1</sup>|PKIX-EE|El certificado comprobado es el servidor de destino; Las comprobaciones de DNSSEC deben comprobar su autenticidad.|
 |2|DANE-TA|Use la clave privada del servidor del árbol X.509 que debe validar un delimitador de confianza en la cadena de confianza. El registro TLSA especifica el delimitador de confianza que se usará para validar los certificados TLS para el dominio.|
-|3|DANE-EE|Solo coincide con el certificado del servidor de destino.|
+|3 |DANE-EE|Solo coincide con el certificado del servidor de destino.|
 
 <sup>1</sup> Exchange Online sigue las instrucciones de implementación de RFC que indican que los valores del campo de uso de certificado de 0 o 1 no deben usarse cuando dane se implementa con SMTP. Cuando se devuelve un registro TLSA que tiene un valor de campo Uso de certificado de 0 o 1 a Exchange Online, Exchange Online lo tratará como no utilizable. Si se encuentran inutilizables todos los registros TLSA, Exchange Online no realizará los pasos de validación de DANE para 0 o 1 al enviar el correo electrónico. En su lugar, debido a la presencia de un registro TLSA, Exchange Online aplicará el uso de TLS para enviar el correo electrónico, enviar el correo electrónico si el servidor de correo electrónico de destino admite TLS o quitar el correo electrónico y generar un NDR si el servidor de correo electrónico de destino no admite TLS.
 
@@ -63,7 +61,7 @@ En el registro TLSA de ejemplo, el campo Uso del certificado se establece en "3"
 |Valor|Acrónimo|Descripción|
 |---|---|---|
 |0|Cert|Use el certificado completo.|
-|1|SPKI (información de clave pública del asunto)|Use la clave pública del certificado y el algoritmo con el que se identifica la clave pública que se va a usar.|
+|1 |SPKI (información de clave pública del asunto)|Use la clave pública del certificado y el algoritmo con el que se identifica la clave pública que se va a usar.|
 
 En el registro TLSA de ejemplo, el campo selector se establece en "1", por lo que los datos de asociación de certificados se coincidirían con la clave pública del certificado de servidor de destino y el algoritmo con el que se identifica la clave pública que se va a usar.
 
@@ -72,7 +70,7 @@ En el registro TLSA de ejemplo, el campo selector se establece en "1", por lo qu
 |Valor|Acrónimo|Descripción|
 |---|---|---|
 |0|Full|Los datos del registro TSLA son el certificado completo o SPKI.|
-|1|SHA-256|Los datos del registro TSLA son un hash SHA-256 del certificado o spki.|
+|1 |SHA-256|Los datos del registro TSLA son un hash SHA-256 del certificado o spki.|
 |2|SHA-512|Los datos del registro TSLA son un hash SHA-512 del certificado o spki.|
 
 En el registro TLSA de ejemplo, el campo De tipo coincidente se establece en "1", por lo que los datos de asociación de certificados son un hash SHA-256 de la información de clave pública del firmante del certificado de servidor de destino.
@@ -93,7 +91,7 @@ Actualmente, smtp dane entrante no se admite para Exchange Online. Se prevé que
 
 Según las instrucciones de implementación de RFC para SMTP DANE, se recomienda un registro TLSA compuesto por el campo Uso de certificado establecido en 3, el campo Selector establecido en 1 y el campo Tipo de coincidencia establecido en 1.
 
-## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online correo Flow con SMTP DANE
+## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online flujo de correo con SMTP DANE
 
 El proceso de flujo de correo para Exchange Online con SMTP DANE, que se muestra en el diagrama de flujo siguiente, valida la seguridad del registro de dominio y recursos a través de DNSSEC, la compatibilidad con TLS en el servidor de correo de destino y que el certificado del servidor de correo de destino coincide con lo que se espera en función de su registro TLSA asociado.
 
@@ -103,7 +101,7 @@ Solo hay dos escenarios en los que un error SMTP DANE hará que el correo electr
 
 - Todos los registros MX del dominio de destino tienen registros TLSA y ninguno de los certificados del servidor de destino coincide con lo esperado según los datos de registro de TSLA, o bien el servidor de destino no admite una conexión TLS.
 
-:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Exchange flujo de correo en línea con SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
+:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Flujo de correo en línea de Exchange con SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
 
 ## <a name="related-technologies"></a>Tecnologías relacionadas
 
@@ -118,11 +116,11 @@ Solo hay dos escenarios en los que un error SMTP DANE hará que el correo electr
 
 Actualmente, hay cuatro códigos de error para DANE al enviar correos electrónicos con Exchange Online. Microsoft está actualizando activamente esta lista de códigos de error. Los errores serán visibles en:
 
-1. El portal Exchange Centro de administración a través de la vista Detalles del seguimiento de mensajes.
+1. El portal del Centro de Administración exchange a través de la vista Detalles del seguimiento de mensajes.
 2. NDR generados cuando no se envía un mensaje debido a un error DANE o DNSSEC.
 3. Herramienta Analizador de conectividad [remota Analizador de conectividad remota de Microsoft](https://testconnectivity.microsoft.com/tests/o365).
 
-|Código NDR|Descripción|
+|Código NDR|Description|
 |---|---|
 |5.7.321|starttls-not-supported: el servidor de correo de destino debe admitir TLS para recibir correo.|
 |5.7.322|certificado expirado: el certificado del servidor de correo de destino ha expirado.|
@@ -142,14 +140,14 @@ Esto suele indicar un problema con el servidor de correo de destino. Después de
 
 1. Compruebe que la dirección de correo electrónico de destino se especificó correctamente.
 2. Alerte al administrador de correo electrónico de destino de que ha recibido este código de error para que pueda determinar si el servidor de destino está configurado correctamente para recibir mensajes mediante TLS.
-3. Vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal de Exchange Centro de administración.
+3. Vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento de mensajes del mensaje en el portal del Centro de Administración Exchange.
 
 ### <a name="troubleshooting-57322-certificate-expired"></a>Solución de problemas de la expiración del certificado 5.7.322
 
 Se debe presentar un certificado X.509 válido que no haya expirado al servidor de correo electrónico de envío. Los certificados X.509 deben renovarse después de su expiración, normalmente anualmente. Después de recibir el mensaje:
 
 1. Alerte al administrador de correo electrónico de destino de que ha recibido este código de error y proporcione la cadena de código de error.
-2. Permita que se renueve el certificado de servidor de destino y que el registro TLSA se actualice para hacer referencia al nuevo certificado. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal de Exchange Admin Center.
+2. Permita que se renueve el certificado de servidor de destino y que el registro TLSA se actualice para hacer referencia al nuevo certificado. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal del Centro de Administración Exchange.
 
 ### <a name="troubleshooting-57323-tlsa-invalid"></a>Solución de problemas 5.7.323 tlsa-invalid
 
@@ -163,7 +161,7 @@ Este código de error está relacionado con una configuración incorrecta del re
 Después de recibir el mensaje:
 
 1. Alerte al administrador de correo electrónico de destino de que ha recibido este código de error y proporcione la cadena de código de error.
-2. Espere tiempo para que el administrador de correo electrónico de destino revise la configuración dane y la validez del certificado de servidor de correo electrónico. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal de Exchange Admin Center.
+2. Espere tiempo para que el administrador de correo electrónico de destino revise la configuración dane y la validez del certificado de servidor de correo electrónico. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal del Centro de Administración Exchange.
 
 ### <a name="troubleshooting-57324-dnssec-invalid"></a>Solución de problemas 5.7.324 dnssec-invalid
 
@@ -172,7 +170,7 @@ Este código de error se genera cuando el dominio de destino indicaba que era DN
 Después de recibir el mensaje:
 
 1. Alerte al administrador de correo electrónico de destino de que ha recibido este código de error y proporcione la cadena de código de error.
-2. Espere tiempo para que el administrador de correo electrónico de destino revise la configuración de DNSSEC de su dominio. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal de Exchange Admin Center.
+2. Espere tiempo para que el administrador de correo electrónico de destino revise la configuración de DNSSEC de su dominio. A continuación, vuelva a intentar enviar el correo electrónico y revise los detalles del seguimiento del mensaje en el portal del Centro de Administración Exchange.
 
 ## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>Solución de problemas de recepción de correos electrónicos con SMTP DANE
 
@@ -191,7 +189,7 @@ El segundo método consiste en usar el [Analizador de conectividad remota Analiz
 
 Al solucionar problemas, se pueden generar los siguientes códigos de error:
 
-|Código NDR|Descripción|
+|Código NDR|Description|
 |---|---|
 |4/5.7.321|starttls-not-supported: el servidor de correo de destino debe admitir TLS para recibir correo.|
 |4/5.7.322|certificado expirado: el certificado del servidor de correo de destino ha expirado.|
