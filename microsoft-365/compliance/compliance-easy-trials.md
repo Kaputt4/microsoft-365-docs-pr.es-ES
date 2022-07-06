@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185135"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640124"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las soluciones de Microsoft Purview ayudan a proteger su organización frente a las amenazas internas producidas por tener permisos inadecuados en archivos y correos electrónicos, y ayudan a su organización a cumplir con los requisitos empresariales internos y normativos.
 
@@ -47,6 +45,7 @@ Los usuarios deben tener uno de los siguientes roles de administrador para regis
 - Administrador de facturación
 - Administrador de cumplimiento
 - Administrador global
+- Administrador de datos de cumplimiento
 
 Obtenga detalles sobre los roles en [Acerca de los roles de administrador](../admin/add-users/about-admin-roles.md).
 

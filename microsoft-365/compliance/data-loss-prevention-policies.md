@@ -25,19 +25,17 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5a52d79a073a9735d5c32ce3a9646ccacf1a0dcb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017294"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636477"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> Este es el tema de referencia que ya no es el recurso principal para la información de prevención de pérdida de datos (DLP) de Microsoft Purview. El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se moverán a artículos nuevos y actualizados. Para obtener más información sobre DLP, consulte [Más información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
+> Este tema de referencia ya no es el recurso principal para la información de Prevención de pérdida de datos de Microsoft Purview (DLP). El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se moverán a artículos nuevos y actualizados. Para obtener más información sobre DLP, consulte [Más información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -73,9 +71,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>Creación y administración de directivas DLP
 
-Las directivas DLP se crean y administran en la página de prevención de pérdida de datos del portal de cumplimiento de Microsoft Purview.
+Las directivas DLP se crean y administran en la página de prevención de pérdida de datos de la portal de cumplimiento Microsoft Purview.
 
-![Página prevención de pérdida de datos en el portal de cumplimiento de Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Página prevención de pérdida de datos en el portal de cumplimiento Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -493,7 +491,7 @@ DLP detecta información confidencial mediante un análisis profundo del conteni
 
 ### <a name="policies-are-synced"></a>Las directivas se sincronizan
 
-Después de crear una directiva DLP en el portal de cumplimiento de Microsoft Purview, se almacena en un almacén de directivas central y, a continuación, se sincroniza con los distintos orígenes de contenido, incluidos:
+Después de crear una directiva DLP en el portal de cumplimiento Microsoft Purview, se almacena en un almacén de directivas central y, a continuación, se sincroniza con los distintos orígenes de contenido, incluidos:
 
 - Exchange Online y de ahí a Outlook en la web y Outlook.
 
@@ -530,9 +528,9 @@ DLP evalúa el contenido que se puede indexar. Para obtener más información so
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Evaluación de la directiva en Exchange Online, Outlook y Outlook en la Web
 
-Al crear una directiva DLP que incluye Exchange Online como ubicación, la directiva se sincroniza desde el portal de cumplimiento de Microsoft Purview a Exchange Online y, a continuación, de Exchange Online a Outlook en la Web y Outlook.
+Al crear una directiva DLP que incluye Exchange Online como ubicación, la directiva se sincroniza del portal de cumplimiento Microsoft Purview a Exchange Online y, a continuación, de Exchange Online a Outlook en la Web  y Outlook.
 
-Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y después de enviar un mensaje, se evalúa con directivas DLP como parte normal del flujo de correo, junto con Exchange reglas de flujo de correo (también conocidas como reglas de transporte) y directivas DLP creadas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
+Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y después de enviar un mensaje, se evalúa con las directivas DLP como parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas DLP creadas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Evaluación de la directiva en los programas de escritorio de Office
 
@@ -544,15 +542,15 @@ La evaluación de directivas DLP en Office está diseñada para no afectar al re
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Evaluación de directivas en Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Al crear una directiva DLP que incluye Microsoft Teams como ubicación, la directiva se sincroniza desde el portal de cumplimiento de Microsoft Purview a cuentas de usuario y Microsoft Teams canales y mensajes de chat. En función de cómo estén configuradas las directivas DLP, cuando un usuario intenta compartir información confidencial en un mensaje de chat o canal de Microsoft Teams, el mensaje se puede bloquear o revocar. Y los documentos que contienen información confidencial y que se comparten con invitados (usuarios externos) no se abrirán para estos usuarios. Para obtener más información, vea [Prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
+Al crear una directiva DLP que incluye Microsoft Teams como ubicación, la directiva se sincroniza desde el portal de cumplimiento Microsoft Purview a las cuentas de usuario, los canales de Microsoft Teams y los mensajes de chat. En función de cómo estén configuradas las directivas DLP, cuando un usuario intenta compartir información confidencial en un mensaje de chat o canal de Microsoft Teams, el mensaje se puede bloquear o revocar. Y los documentos que contienen información confidencial y que se comparten con invitados (usuarios externos) no se abrirán para estos usuarios. Para obtener más información, vea [Prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>Permisos
 
-De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos para el portal de cumplimiento de Microsoft Purview. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otras personas acceso al portal de cumplimiento de Microsoft Purview, sin darles todos los permisos de un administrador de inquilinos. Para ello, le recomendamos que:
+De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos para el portal de cumplimiento Microsoft Purview. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y podrá conceder a los responsables de cumplimiento y a otras personas acceso a la portal de cumplimiento Microsoft Purview, sin darles todos los permisos de administrador de inquilinos. Para ello, le recomendamos que:
 
 1. Crear un grupo en Microsoft 365 y agregarle responsables de cumplimiento.
 
-2. Cree un grupo de roles en la página **Permisos** del portal de cumplimiento de Microsoft Purview.
+2. Cree un grupo de roles en la página **Permisos** de la portal de cumplimiento Microsoft Purview.
 
 3. Durante la creación del grupo de roles, utilice la sección **Elegir roles** para añadir el rol siguiente al grupo de roles: **Administración de cumplimiento DLP**.
 
@@ -566,13 +564,13 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 ## <a name="find-the-dlp-cmdlets"></a>Encontrar los cmdlets DLP
 
-Para usar la mayoría de los cmdlets para el portal de cumplimiento de Microsoft Purview, debe:
+Para usar la mayoría de los cmdlets para el portal de cumplimiento Microsoft Purview, debe:
 
 1. [Conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
 2. Usar cualquiera de estos [cmdlets policy-and-compliance-dlp](/powershell/module/exchange/export-dlppolicycollection)
 
-Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, ***los cmdlets de los informes DLP están disponibles en Exchange Online PowerShell, no en powershell del portal de cumplimiento de Microsoft Purview***. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
+Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, ***los cmdlets de los informes DLP están disponibles en Exchange Online PowerShell, no en portal de cumplimiento Microsoft Purview PowerShell***. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
 
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 

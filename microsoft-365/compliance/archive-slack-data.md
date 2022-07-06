@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar los datos de Slack eDiscovery en Microsoft 365
+title: Configuración de un conector para archivar datos de eDiscovery de Slack en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -12,20 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas Slack eDiscovery en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 83eb87bf4c3380b07e47bf36ccb55668b55c1152
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e48bd25b5f444ce17eba08677f5bd1c1171af1ff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318732"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637757"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configuración de un conector para archivar datos de Slack eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector veritas en la portal de cumplimiento Microsoft Purview para importar y archivar datos de terceros desde redes sociales, mensajería instantánea y plataformas de colaboración de documentos a buzones de correo de su organización de Microsoft 365. Veritas proporciona un conector de [Slack](https://globanet.com/slack/) configurado para capturar elementos del origen de datos de terceros (de forma periódica) y, a continuación, importarlos a Microsoft 365. Slack extrae mensajes y archivos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, importa el elemento a buzones de usuario.
 
-Use un conector de Veritas en la portal de cumplimiento Microsoft Purview para importar y archivar datos de terceros desde redes sociales, mensajería instantánea y plataformas de colaboración de documentos en buzones de su organización de Microsoft 365. Veritas proporciona un conector de [Slack](https://globanet.com/slack/) configurado para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importarlos a Microsoft 365. Slack extrae mensajes y archivos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, importa el elemento a buzones de usuario.
-
-Una vez que los datos de eDiscovery de Slack se almacenan en buzones de usuario, puede aplicar Microsoft Purview características como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Slack para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez que los datos de eDiscovery de Slack se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Slack para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Información general sobre el archivado de datos de eDiscovery de Slack
 
@@ -37,7 +35,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 2. Una vez cada 24 horas, los mensajes de chat de Slack eDiscovery se copian en el sitio de Veritas Merge1. El conector también convierte el contenido de un mensaje de chat en un formato de mensaje de correo electrónico.
 
-3. El conector de eDiscovery de Slack que se crea en el portal de cumplimiento, se conecta al sitio de Veritas Merge1 todos los días y transfiere los mensajes de chat a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector de eDiscovery de Slack que se crea en el portal de cumplimiento, se conecta al sitio de Veritas Merge1 todos los días y transfiere los mensajes de chat a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa los elementos de mensaje de chat convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* y la asignación automática de usuarios, como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada **Slack eDiscovery** en los buzones de usuario y los elementos de mensaje de chat se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada mensaje de chat contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat.
 
@@ -47,15 +45,15 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Obtenga el nombre de usuario y la contraseña de la cuenta empresarial de Slack de su organización. Tendrá que iniciar sesión en esta cuenta en el paso 2 al configurar Slack.
 
-- Al usuario que crea el conector de Slack eDiscovery en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Slack eDiscovery en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de Veritas está en versión preliminar pública en entornos GCC en la nube de Microsoft 365 US Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-slack-ediscovery-connector"></a>Paso 1: Configuración del conector de Slack eDiscovery
 
 El primer paso consiste en acceder a la página **Conectores de datos** en el portal de cumplimiento y crear un conector para los datos de Slack.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** >  de **datosSlack eDiscovery**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Data connectors** Slack eDiscovery (Conectores  > **de datos de Slack eDiscovery**).
 
 2. En la página descripción **del producto slack eDiscovery** , haga clic en **Agregar conector**.
 
@@ -73,9 +71,9 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-1. En la página **Asignar usuarios externos a Microsoft 365 usuarios**, habilite la asignación automática de usuarios.
+1. En la página **Asignar usuarios externos a usuarios de Microsoft 365** , habilite la asignación automática de usuarios.
 
-   Los elementos de eDiscovery de Slack incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario Microsoft 365, los elementos se importan al buzón de ese usuario.
+   Los elementos de eDiscovery de Slack incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

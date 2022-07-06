@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas funcionalidades de Auditoría de Microsoft Purview (Premium). Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf9f06fbce71af479ed089f912d440ba6c840b29
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012436"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639212"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede crear y administrar directivas de retención de registros de auditoría en el portal de cumplimiento de Microsoft Purview. Las directivas de retención de registros de auditoría forman parte de las nuevas funcionalidades de Auditoría de Microsoft Purview (Premium). Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización. Puede conservar los registros de auditoría hasta por 10 años. Puede crear directivas en función de los siguientes criterios:
 

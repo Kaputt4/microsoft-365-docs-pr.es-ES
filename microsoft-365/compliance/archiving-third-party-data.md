@@ -20,19 +20,17 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos para Microsoft 365 buzones.
-ms.openlocfilehash: 75a1136c38c0b893babd1cd349dbe34aa9bbf8cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos en buzones de Microsoft 365.
+ms.openlocfilehash: b27d45577b98c1eef0f3dab11412f048adff6bcd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093578"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637557"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Más información sobre los conectores para datos de terceros
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, datos de terceros de plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, en buzones de su organización Microsoft 365. Una ventaja principal del uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de Microsoft Purview a los datos después de importarlos. Esto le ayuda a asegurarse de que los datos de su organización que no son de Microsoft cumplen con las regulaciones y estándares que afectan a su organización.
+Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, datos de terceros de plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, en buzones de su organización de Microsoft 365. Una ventaja principal del uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de Microsoft Purview a los datos después de importarlos. Esto le ayuda a asegurarse de que los datos de su organización que no son de Microsoft cumplen con las regulaciones y estándares que afectan a su organización.
 
 Vea esta guía interactiva que muestra cómo crear conectores de datos para importar y archivar datos de terceros y ejemplos de aplicación de soluciones de cumplimiento a los datos después de importarlos a Microsoft 365.
 
@@ -40,7 +38,7 @@ Vea esta guía interactiva que muestra cómo crear conectores de datos para impo
 
 ## <a name="third-party-data-connectors"></a>Conectores de datos de terceros
 
-El portal de cumplimiento de Microsoft Purview proporciona conectores de datos nativos de terceros de Microsoft para importar datos de varios orígenes de datos, como LinkedIn, Instant Bloomberg y Twitter, y conectores de datos que admiten la solución de administración de riesgos insider. Además de estos conectores de datos, Microsoft trabaja con los siguientes asociados para proporcionar muchos más conectores de datos de terceros en el portal de cumplimiento. Su organización trabaja con estos asociados para configurar su servicio de archivado antes de crear un conector de datos correspondiente en el portal de cumplimiento.
+El portal de cumplimiento Microsoft Purview proporciona conectores de datos nativos de microsoft de terceros para importar datos de varios orígenes de datos, como LinkedIn, Instant Bloomberg y Twitter, y conectores de datos que admiten la solución de administración de riesgos Insider. Además de estos conectores de datos, Microsoft trabaja con los siguientes asociados para proporcionar muchos más conectores de datos de terceros en el portal de cumplimiento. Su organización trabaja con estos asociados para configurar su servicio de archivado antes de crear un conector de datos correspondiente en el portal de cumplimiento.
 
 - [Veritas](#veritas-data-connectors)
 
@@ -50,7 +48,7 @@ El portal de cumplimiento de Microsoft Purview proporciona conectores de datos n
 
 - [CellTrust](#celltrust-data-connectors)
 
-Los datos de terceros enumerados en las secciones siguientes (excepto los datos de RR. HH. y los datos físicos incorrectos que se usan para la solución de administración de riesgos de Insider Microsoft 365) se importan en buzones de usuario. Las soluciones de Microsoft Purview que admiten datos de terceros se aplican al buzón de usuario donde se almacenan los datos.
+Los datos de terceros enumerados en las secciones siguientes (excepto los datos de RR. HH. y los datos físicos incorrectos que se usan para la solución de administración de riesgos de Microsoft 365 Insider) se importan en buzones de usuario. Las soluciones de Microsoft Purview que admiten datos de terceros se aplican al buzón de usuario donde se almacenan los datos.
 
 ### <a name="microsoft-data-connectors"></a>Conectores de datos de Microsoft
 
@@ -58,7 +56,7 @@ En la tabla siguiente se enumeran los conectores de datos nativos de terceros di
 
 Haga clic en el vínculo de la columna **datos de terceros** para seguir las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-|Datos de terceros  |Suspensión por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Suspensión por litigio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Mensaje de Bloomberg](archive-bloomberg-message-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
 |[Atención sanitaria de EHR épica](import-epic-data.md) ||||||![Marca de verificación](../media/checkmark.png)|
@@ -75,11 +73,11 @@ Haga clic en el vínculo de la columna **datos de terceros** para seguir las ins
 
 ### <a name="veritas-data-connectors"></a>Conectores de datos de Veritas
 
-En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con Veritas. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a los datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
+En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con Veritas. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
 
 Para poder archivar datos de terceros en Microsoft 365, tiene que trabajar con Veritas para configurar su servicio de archivado (denominado *Merge1*) para su organización. Para obtener más información, haga clic en el vínculo de la columna **Datos de terceros** para seguir las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-|Datos de terceros  |Suspensión por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Suspensión por litigio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[CellTrust](archive-celltrust-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Cisco Jabber en MS SQL](archive-ciscojabberonmssql-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
@@ -114,13 +112,13 @@ Para poder archivar datos de terceros en Microsoft 365, tiene que trabajar con V
 
 ### <a name="telemessage-data-connectors"></a>Conectores de datos de telemensaje
 
-En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con TeleMessage. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a los datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
+En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con TeleMessage. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
 
 Para poder archivar datos de terceros en Microsoft 365, tiene que trabajar con TeleMessage para configurar su servicio de archivado para su organización. Para obtener más información, haga clic en el vínculo de la columna **Datos de terceros** para seguir las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-Los conectores de datos de TeleMessage también están disponibles en entornos de GCC en la nube Microsoft 365 us Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
+Los conectores de datos de TeleMessage también están disponibles en entornos GCC en la nube de Microsoft 365 US Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
 
-|Datos de terceros  |Suspensión por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Suspensión por litigio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Android](archive-android-archiver-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[AT&T Network](archive-att-network-archiver-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
@@ -138,13 +136,13 @@ Los conectores de datos de TeleMessage también están disponibles en entornos d
 
 ### <a name="17a-4-data-connectors"></a>17a-4 conectores de datos
 
-En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con 17a-4 LLC. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a los datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
+En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con 17a-4 LLC. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
 
 Para poder archivar datos de terceros en Microsoft 365, tiene que trabajar con 17a-4 LLC para configurar su servicio de archivado (denominado *DataParser*) para su organización. Para obtener más información, haga clic en el vínculo de la columna **Datos de terceros** para seguir las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-Los conectores de datos 17a-4 también están disponibles en entornos de GCC en la nube Microsoft 365 us Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
+Los conectores de datos 17a-4 también están disponibles en entornos GCC en la nube de Microsoft 365 US Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
 
-|Datos de terceros  |Suspensión por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Suspensión por litigio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[BlackBerry](archive-17a-4-blackberry-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Bloomberg](archive-17a-4-bloomberg-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
@@ -168,28 +166,28 @@ Los conectores de datos 17a-4 también están disponibles en entornos de GCC en 
 
 ### <a name="celltrust-data-connectors"></a>Conectores de datos de CellTrust
 
-En la tabla de esta sección se muestra el conector de datos de terceros disponible en asociación con CellTrust. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a los datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
+En la tabla de esta sección se muestra el conector de datos de terceros disponible en asociación con CellTrust. En la tabla también se resumen las soluciones de cumplimiento que puede aplicar a datos de terceros después de importarlos y archivarlos en Microsoft 365. Consulte la sección [Introducción a las soluciones de cumplimiento que admiten datos de terceros](#overview-of-compliance-solutions-that-support-third-party-data) para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
 
 Para poder archivar datos de terceros en Microsoft 365, tiene que trabajar con CellTrust para configurar su servicio de archivado (llamado *CellTrust SL2*) para su organización. Para obtener más información, haga clic en el vínculo de la columna **de datos de terceros** para seguir las instrucciones paso a paso para crear un conector CellTrust SL2.
 
-|Datos de terceros  |Suspensión por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Suspensión por litigio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 ||||||||
 
-El conector de datos CellTrust SL2 también está disponible en entornos de GCC en la nube Microsoft 365 us Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
+El conector de datos CellTrust SL2 también está disponible en entornos GCC en la nube de Microsoft 365 US Government. Para obtener más información, consulte la sección [Conectores de datos en la nube del Gobierno de EE. UU](#data-connectors-in-the-us-government-cloud) . en este artículo.
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Introducción a las soluciones de cumplimiento que admiten datos de terceros
 
 En las secciones siguientes se describen algunas de las cosas que las soluciones de Microsoft Purview pueden ayudarle a administrar los datos de terceros enumerados en la tabla anterior.
 
-### <a name="litigation-hold"></a>Suspensión por juicio
+### <a name="litigation-hold"></a>Suspensión por litigio
 
 Coloca una [suspensión por juicio](create-a-litigation-hold.md) en un buzón de usuario para conservar los datos de terceros. Al crear una suspensión, puede especificar una duración de suspensión (también denominada *suspensión basada en tiempo*) para que los datos de terceros eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O bien, puede conservar el contenido indefinidamente (denominada *suspensión infinita*) o hasta que se quite la suspensión por litigio.
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Las tres herramientas principales de eDiscovery en Microsoft 365 son Búsqueda de contenido, Microsoft Purview eDiscovery (Estándar) y Microsoft Purview eDiscovery (Premium).
+Las tres herramientas de exhibición de documentos electrónicos principales de Microsoft 365 son Búsqueda de contenido, Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium).
 
 - **[Búsqueda de contenido](content-search.md).** Puede usar la herramienta de búsqueda de contenido para buscar en buzones datos de terceros que haya importado. Puede usar consultas y condiciones de búsqueda para restringir los resultados de la búsqueda y exportar los resultados de la búsqueda.
 
@@ -205,7 +203,7 @@ Puede aplicar una [directiva de retención](retention.md) a los buzones de usuar
 
 ### <a name="records-management"></a>Administración de registros
 
-La característica [de administración de registros](records-management.md) de Microsoft 365 permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención mediante la identificación de información confidencial, palabras clave o tipos de contenido en datos de terceros.
+La característica [de administración de registros](records-management.md) de Microsoft 365 le permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención mediante la identificación de información confidencial, palabras clave o tipos de contenido en datos de terceros.
 
 ### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
@@ -217,7 +215,7 @@ La solución de [administración de riesgos Insider](insider-risk-management.md)
 
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>Uso de herramientas de eDiscovery para buscar datos de terceros
 
-Después de usar conectores de datos para importar y archivar datos de terceros en buzones de usuario, puede usar Microsoft 365 herramientas de eDiscovery para buscar datos de terceros. También puede usar herramientas de eDiscovery para crear retenciones basadas en consultas asociadas a casos de eDiscovery (Estándar) y eDiscovery (Premium) para conservar datos de terceros. Para obtener más información sobre las herramientas de eDiscovery, vea [soluciones de eDiscovery en Microsoft 365](ediscovery.md).
+Después de usar conectores de datos para importar y archivar datos de terceros en buzones de usuario, puede usar las herramientas de eDiscovery de Microsoft 365 para buscar datos de terceros. También puede usar herramientas de eDiscovery para crear retenciones basadas en consultas asociadas a casos de eDiscovery (Estándar) y eDiscovery (Premium) para conservar datos de terceros. Para obtener más información sobre las herramientas de eDiscovery, consulte [soluciones de exhibición de documentos electrónicos en Microsoft 365](ediscovery.md).
 
 Para buscar (o mantener) cualquier tipo de datos de terceros que haya importado a buzones de usuario mediante un conector de datos, puede usar la siguiente consulta de búsqueda. Asegúrese de limitar la búsqueda a los buzones de usuario.
 
@@ -267,7 +265,7 @@ Para obtener más información sobre cómo crear consultas de búsqueda de eDisc
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>Conectores de datos en la nube del Gobierno de EE. UU.
 
-Algunos conectores de datos están disponibles en la nube del Gobierno de EE. UU. En las secciones siguientes se indican los entornos gubernamentales específicos que admiten conectores de datos de terceros. Para obtener más información sobre las nubes del Gobierno de EE. UU., consulte [Microsoft 365 administración pública de EE. UU](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
+Algunos conectores de datos están disponibles en la nube del Gobierno de EE. UU. En las secciones siguientes se indican los entornos gubernamentales específicos que admiten conectores de datos de terceros. Para obtener más información sobre las nubes de US Government, consulte [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
 ### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>Conectores de datos de Veritas en la nube del Gobierno de EE. UU. (versión preliminar)
 
@@ -355,6 +353,6 @@ Algunos conectores de datos están disponibles en la nube del Gobierno de EE. UU
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Trabajar con un asociado de Microsoft para archivar datos de terceros
 
-Otra opción para importar y archivar datos de terceros es que su organización trabaje con un asociado de Microsoft. Si los conectores de datos disponibles en el Centro de cumplimiento de Microsoft no admiten un tipo de datos de terceros, puede trabajar con un asociado que pueda proporcionar un conector personalizado que se configurará para extraer elementos del origen de datos de terceros de forma regular y, a continuación, conectarse a la nube de Microsoft mediante una API de terceros e importar esos elementos a Microsoft 365. El conector de asociado también convierte el contenido de un elemento del origen de datos de terceros en un mensaje de correo electrónico y, a continuación, lo importa a un buzón de correo en Microsoft 365.
+Otra opción para importar y archivar datos de terceros es que su organización trabaje con un asociado de Microsoft. Si un tipo de datos de terceros no es compatible con los conectores de datos disponibles en el Centro de cumplimiento de Microsoft, puede trabajar con un asociado que pueda proporcionar un conector personalizado que se configurará para extraer elementos del origen de datos de terceros de forma regular y, a continuación, conectarse a la nube de Microsoft mediante una API de terceros e importar esos elementos a Microsoft 365. El conector de asociado también convierte el contenido de un elemento del origen de datos de terceros en un mensaje de correo electrónico y, a continuación, lo importa a un buzón de correo de Microsoft 365.
 
 Para obtener una lista de asociados con los que puede trabajar y el proceso paso a paso para este método, consulte [Trabajo con un asociado para archivar datos de terceros en Microsoft 365](work-with-partner-to-archive-third-party-data.md).

@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Haga un hash y cargue la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437643"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641304"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se muestra cómo aplicar hash y cargar la tabla de origen de información confidencial.
 
@@ -35,14 +33,14 @@ En este artículo se muestra cómo aplicar hash y cargar la tabla de origen de i
 En esta fase:
 
 1. configurar un grupo de seguridad personalizado y una cuenta de usuario
-2. configuración de la herramienta del agente de Upload de EDM
-3. Use la herramienta EDM Upload Agent para aplicar hash, con un valor de sal, la tabla de origen de información confidencial y cargarla.
+2. configuración de la herramienta del agente de carga de EDM
+3. Use la herramienta Agente de carga de EDM para aplicar un hash, con un valor de sal, la tabla de origen de información confidencial y cargarla.
 
 El algoritmo hash y la carga se pueden realizar con un equipo o puede separar el paso de hash del paso de carga para mayor seguridad.
 
 Si desea aplicar un algoritmo hash y cargar desde un equipo, tendrá que hacerlo desde un equipo que pueda conectarse directamente a su espacio empresarial de Microsoft 365. Esto requiere que el archivo de tabla de origen de información confidencial de texto no cifrado esté en ese equipo para el hash.
 
-Si no desea exponer el archivo de tabla de origen de información confidencial de texto no cifrado en el equipo de acceso directo, puede aplicarle un hash en un equipo que se encuentra en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente al inquilino de Microsoft 365 para su carga. En el escenario de hash y carga separados, necesitará el EDMUploadAgent en ambos equipos.
+Si no desea exponer el archivo de tabla de origen de información confidencial de texto no cifrado en el equipo de acceso directo, puede aplicar un hash en un equipo que se encuentra en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente al inquilino de Microsoft 365 para su carga. En el escenario de hash y carga separados, necesitará el EDMUploadAgent en ambos equipos.
 
 > [!IMPORTANT]
 > Si usó el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial para crear el archivo de esquema, ***debe*** descargar el esquema para este procedimiento si aún no lo ha hecho. Consulte [Exportación del archivo de esquema EDM en formato XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
@@ -78,7 +76,7 @@ Si la herramienta indica una falta de coincidencia en el número de columnas, pu
 - una cuenta profesional o educativa de Microsoft 365 que se agregará al grupo de seguridad de **EDM\_DataUploaders**
 - una máquina Windows 10 o Windows Server 2016 con la versión 4.6.2 de .NET <!--4.7.2 un comment this around 9/29-->para ejecutar EDMUploadAgent
 - un directorio en el equipo de carga para lo siguiente:
-  - [Agente de Upload de EDM](#links-to-edm-upload-agent-by-subscription-type)
+  - [Agente de carga de EDM](#links-to-edm-upload-agent-by-subscription-type)
   - el archivo de elemento confidencial en formato de .csv, .tsv o canalización (|), **PatientRecords.csv** en nuestros ejemplos
   - los archivos hash de salida y salt creados en este procedimiento
   - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
@@ -120,7 +118,7 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
    >
    > Puede cargar datos con EDMUploadAgent en cualquier almacén de datos determinado solo dos veces al día.
 
-3. Autorice el agente de Upload de EDM, abra la ventana del símbolo del sistema como administrador, cambie al directorio **C:\EDM\Data** y ejecute el siguiente comando:
+3. Autorice el agente de carga de EDM, abra la ventana símbolo del sistema como administrador, cambie al directorio **C:\EDM\Data** y, a continuación, ejecute el siguiente comando:
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -195,7 +193,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. Copie estos archivos de forma segura en el equipo que usará para cargar el archivo de tabla de origen de información confidencial (PatientRecords) en el inquilino.
 
-3. Autorice el agente de Upload de EDM, abra la ventana del símbolo del sistema como administrador, cambie al directorio **C:\EDM\Data** y ejecute el siguiente comando:
+3. Autorice el agente de carga de EDM, abra la ventana símbolo del sistema como administrador, cambie al directorio **C:\EDM\Data** y, a continuación, ejecute el siguiente comando:
 
    ```dos
    EdmUploadAgent.exe /Authorize

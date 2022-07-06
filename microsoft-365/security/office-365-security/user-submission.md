@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607595"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636433"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -51,9 +51,9 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
 
 - [Identifique el buzón personalizado como un buzón de SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [Crear una directiva antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) para el buzón personalizado donde
-  - La purga automática de cero horas (ZAP) para malware está desactivada (no está seleccionada la sección **Configuración de protección** > **Habilitar purga automática de cero horas para malware** ).
-  - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección **Configuración de protección** > **Habilitar el filtro de datos adjuntos comunes** ).
+- [Cree una directiva antimalware](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) para el buzón personalizado con la siguiente configuración:
+  - La purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
+  - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes**).
 
 Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los mensajes notificados:
 

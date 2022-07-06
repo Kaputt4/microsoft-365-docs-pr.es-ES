@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directiva DLP, invalidaciones o falsos positivos y ver si están a la alza o a la baja con el tiempo.
-ms.openlocfilehash: b264a0e0b76397be99d7586ac793dac501b6672e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011640"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641106"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Después de crear las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview, querrá comprobar que funcionan según lo previsto y ayudarle a mantener la conformidad. Con los informes DLP en el portal de cumplimiento de Microsoft Purview, puede ver rápidamente:
+Después de crear las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview, querrá comprobar que funcionan según lo previsto y ayudarle a mantener la conformidad. Con los informes DLP en el portal de cumplimiento Microsoft Purview, puede ver rápidamente:
 
 - **Coincidencias de directiva DLP** En este informe se muestra el recuento de coincidencias de directivas DLP con el tiempo. Puede filtrar el informe por fecha, ubicación, directiva o acción. Puede usar este informe para:
 
@@ -62,7 +60,7 @@ Después de crear las directivas de prevención de pérdida de datos (DLP) de Mi
 
 Todos los informes de DLP pueden mostrar los datos del período de tiempo de cuatro meses más reciente. Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
 
-Puede encontrar estos informes en el panel **informes** \> del portal \> de cumplimiento de Microsoft Purview **.**
+Puede encontrar estos informes en el **panel** de **informes** \> de portal de cumplimiento Microsoft Purview\>.
 
 ![La directiva DLP coincide con el informe.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
@@ -82,11 +80,11 @@ Los informes pueden mostrar conclusiones y recomendaciones en las que puede hace
 
 Para ver los informes DLP en el Centro de cumplimiento de seguridad &, debe tener asignado lo siguiente:
 
-- **Rol lector de seguridad** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el centro de administración de Exchange.
+- **Rol Lector de seguridad** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el Centro de administración de Exchange.
 
 - **Ver solo el rol de administración de cumplimiento DLP** en el Centro de cumplimiento de seguridad &. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de la organización, Administrador de seguridad y Lector de seguridad en el Centro de cumplimiento de seguridad &.
 
-- **Rol Destinatarios de solo visualización** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y View-Only Administración de la organización en el centro de administración de Exchange.
+- **Rol Destinatarios de solo visualización** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y View-Only Administración de la organización en el Centro de administración de Exchange.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Búsqueda de los cmdlets para los informes DLP
 

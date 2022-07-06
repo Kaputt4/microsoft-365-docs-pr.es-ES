@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial, como el seguro social, la tarjeta de crédito o los números de cuenta bancaria para identificar elementos confidenciales.
-ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014242"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639388"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La identificación y clasificación de elementos confidenciales que están bajo el control de las organizaciones es el primer paso en la [materia de Information Protection](./information-protection.md).  Microsoft Purview proporciona tres formas de identificar elementos para que se puedan clasificar:
 
@@ -39,7 +37,7 @@ Microsoft proporciona un gran número de SIT preconfigurados o puede crear los s
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
-- [Directivas de prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
+- [directivas de Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
 - [Administración de riesgos internos](insider-risk-management.md)
@@ -206,6 +204,6 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 - [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
 - [Creación de un tipo de información confidencial personalizada en PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-Para obtener información sobre cómo usar tipos de información confidencial para cumplir con las regulaciones de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Para obtener información sobre cómo usar tipos de información confidencial para cumplir con las normativas de privacidad de datos, consulte Implementación de la [protección de la información para las regulaciones de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

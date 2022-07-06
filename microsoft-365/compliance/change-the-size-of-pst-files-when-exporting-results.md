@@ -15,21 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargan en el equipo al exportar los resultados de búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: 135c83f734e0687c8d477ab434d0aa539224f39a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e2387f403854561c9906f252ad39be740c62ae19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100839"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638794"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando se usa la herramienta de exportación de eDiscovery para exportar los resultados de correo electrónico de una búsqueda de exhibición de documentos electrónicos desde las distintas herramientas de Microsoft eDiscovery, el tamaño predeterminado de un archivo PST que se puede exportar es de 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el Registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Una razón para hacerlo es que un archivo PST puede caber en medios extraíbles, como un DVD, un disco compacto o una unidad USB. 
   
 > [!NOTE]
-> La herramienta eDiscovery Export se usa para exportar los resultados de búsqueda cuando se usa la herramienta de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview.
+> La herramienta eDiscovery Export se usa para exportar los resultados de búsqueda cuando se usa la herramienta de búsqueda de contenido en el portal de cumplimiento Microsoft Purview.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Crear una configuración del Registro para cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de exhibición de documentos electrónicos
 
@@ -56,7 +54,7 @@ Realice el procedimiento siguiente en el equipo que usará para exportar los res
    
 3. Cambie el `PstSizeLimitInBytes` valor al tamaño máximo deseado de un archivo PST al exportar los resultados de búsqueda y, a continuación, guarde el archivo. 
     
-4. En Windows Explorador, haga clic o haga doble clic en el archivo .reg que creó en los pasos anteriores.
+4. En el Explorador de Windows, haga clic o haga doble clic en el archivo .reg que creó en los pasos anteriores.
     
 5. En la ventana Usuario Access Control, haga clic en **Sí** para permitir que el Editor del Registro realice el cambio. 
     

@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810930"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637293"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Antes de empezar a trabajar con [la administración de riesgos](insider-risk-management.md) internos en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de cumplimiento y tecnología de la información. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de administración de riesgos internos funcionen sin problemas y se alineen con los procedimientos recomendados para la solución. 
 
@@ -59,7 +57,7 @@ En función de cómo desee administrar las directivas y alertas de administraci�
 
 Al trabajar con la administración de riesgos internos, elegirá entre estas opciones de grupo de roles y las acciones de solución:
 
-|**Actions**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|
+|**Acciones**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Configuración de directivas y opciones | Sí | Sí | No | No | No |
 | Información de análisis de acceso | Sí | Sí | Sí | No | No |
@@ -74,7 +72,7 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 
 Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles de administración de riesgos internos y tener los mismos permisos de solución incluidos en el grupo de roles *insider Risk Management Administración*:
 
-- *administrador global* de Azure Active Directory
+- *Administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory
 - administración de la *organización* portal de cumplimiento Microsoft Purview
 - *Administrador de cumplimiento de* portal de cumplimiento Microsoft Purview
@@ -92,10 +90,10 @@ Si no tiene un plan E5 Microsoft 365 Enterprise existente y quiere probar la adm
 
 **Requisitos de plantilla de directiva:** En función de la plantilla de directiva que elija, hay requisitos que debe comprender y planear antes de configurar la administración de riesgos internos en su organización:
 
-- Al usar la plantilla **Robo de datos por parte de los usuarios**, debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente la información de fecha de renuncia y finalización de los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
+- Al usar la plantilla **Robo de datos por parte de los usuarios** , debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de fecha de renuncia y finalización para los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 - Al usar plantillas de **pérdida de datos**, debe configurar al menos una directiva de Prevención de pérdida de datos de Microsoft Purview (DLP) para definir información confidencial en su organización y recibir alertas de riesgo interno para alertas de directiva DLP de gravedad alta. Vea el artículo [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso para configurar las directivas DLP para su organización.
 - Al usar plantillas de **infracción de directivas de seguridad**, debe habilitar Microsoft Defender para punto de conexión para la integración de administración de riesgos internos en El Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener instrucciones paso a paso para habilitar la integración de Defender para punto de conexión con la administración de riesgos internos, consulte [Configuración de características avanzadas en Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- Al usar plantillas de **usuario descontentas**, debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de rendimiento o de estado de degradación para los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
+- Al usar plantillas de **usuario descontentas** , debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de rendimiento o estado de degradación para los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Prueba con un pequeño grupo de usuarios en un entorno de producción
 
@@ -119,5 +117,5 @@ Comparta la documentación de administración de riesgos internos con las partes
 
 ¿Está listo para configurar la administración de riesgos internos para su organización? Revise los artículos siguientes:
 
-- [Comenzar con la configuración de administración de riesgos](insider-risk-management-settings.md) internos para configurar la directiva global.
-- [Comenzar con la administración de riesgos internos](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.
+- [Empiece a trabajar con la configuración de administración de riesgos](insider-risk-management-settings.md) internos para configurar las opciones de directiva global.
+- [Empiece a trabajar con la administración de riesgos internos](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.

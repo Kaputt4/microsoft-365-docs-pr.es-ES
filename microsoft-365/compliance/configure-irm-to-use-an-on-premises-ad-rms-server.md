@@ -15,22 +15,20 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online para usar un servidor de Active Directory Rights Management Service (AD RMS).
+description: Aprenda a configurar Information Rights Management (IRM) en Exchange Online para usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5bd4a104d4cceedbdb82c1ff2baac0b547b74fbe
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018149"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637513"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange Online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión, dentro y fuera del firewall de la organización.
 
-En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información sobre el uso del cifrado de mensajes de Microsoft Purview con Azure Active Directory y Azure Rights Management, consulte las [preguntas más frecuentes sobre el cifrado de mensajes](./ome-faq.yml).
+En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información sobre el uso de Cifrado de mensajes de Microsoft Purview con Azure Active Directory y Azure Rights Management, consulte preguntas [más frecuentes sobre el cifrado de mensajes](./ome-faq.yml).
 
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
 
@@ -42,9 +40,9 @@ Para obtener más información sobre IRM en Exchange Online, consulte [Informati
 
 - El servidor AD RMS debe estar ejecutando Windows Server 2008 o posterior. Para obtener información detallada sobre cómo implementar AD RMS, vea [Instalación de un clúster de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Para obtener más información sobre cómo instalar y configurar Windows PowerShell y conectarse al servicio, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para obtener más información sobre cómo instalar y configurar Windows PowerShell y conectarse al servicio, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para obtener información sobre los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, vea [Métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información sobre los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, vea [Métodos abreviados de teclado para el Centro de administración de Exchange en Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

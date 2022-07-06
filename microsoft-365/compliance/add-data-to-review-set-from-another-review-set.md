@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo seleccionar documentos de un conjunto de revisión y trabajar con ellos individualmente en otro conjunto en un caso de eDiscovery de Microsoft Purview (Premium).
+description: Obtenga información sobre cómo seleccionar documentos de un conjunto de revisión y trabajar con ellos individualmente en otro conjunto en un caso de Microsoft Purview eDiscovery (Premium).
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 599af9e2060497738076cd702e9e3dd31f5db06d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094149"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640972"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Agregar datos a un conjunto de revisión desde otro conjunto de revisión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En algunos casos, puede ser necesario seleccionar documentos de un conjunto de revisión y trabajar con ellos individualmente en otro conjunto de revisión. Esto es especialmente útil si ha seleccionado contenido en un conjunto de revisión y quiere ejecutar un análisis en el subconjunto de datos.
 

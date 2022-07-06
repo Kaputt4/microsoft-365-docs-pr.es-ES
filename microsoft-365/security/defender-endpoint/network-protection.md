@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530339"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636455"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -144,20 +144,6 @@ Un usuario visita un sitio web:
 En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos; como mantener activos o datos completos de una organización para el rescate.
 
 La compatibilidad con servidores de comandos y control (C2) es una parte clave de esta evolución de ransomware y es lo que permite que estos ataques se adapten al entorno al que se dirigen. La interrupción del vínculo a la infraestructura de comandos y control detiene la progresión de un ataque a su siguiente fase.
-
-#### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>Detección y corrección de CobaltStrike (versión preliminar pública)
-
-Uno de los marcos de post-explotación más comunes utilizados en ataques de ransomware operados por el hombre es CobaltStrike. Los equipos de Inteligencia sobre amenazas de Microsoft realizan un seguimiento de _tácticas, técnicas y procedimientos_ (TTP) en varios grupos de actividad que implementan ransomware para identificar patrones de comportamiento que se pueden usar para defenderse de estrategias específicas y vectores de amenazas utilizados por actores malintencionados. Estos grupos de actividad de ransomware, en algún momento del ciclo de vida del ataque, implican la implementación de una baliza CobaltStrike en el equipo de una víctima para habilitar la actividad práctica del teclado.
-
-CobaltStrike permite personalizar varios aspectos del ataque, desde la capacidad de hospedar varios agentes de escucha que responden a distintos protocolos, hasta cómo el componente principal del lado cliente (Beacon) debe realizar la inserción de código y ejecutar trabajos posteriores a la explotación. Cuando Microsoft Defender detecta CobaltStrike, puede buscar y recopilar de forma inteligente indicadores clave de riesgo (IoC). Una vez capturados, estos indicadores se comparten en toda la pila de productos de Microsoft con fines de detección y protección.
-
-La detección de comandos y controles de Defender para punto de conexión no se limita a CobaltStrike. Defender para punto de conexión puede capturar los ioC clave de varias familias de malware. Los indicadores se comparten en la pila de protección de Microsoft para proteger a los clientes y alertarlos si hay un riesgo.
-
-Bloquear la comunicación de comandos y controles puede impedir gravemente un ataque dirigido, lo que proporciona al equipo de seguridad tiempo para encontrar los vectores de entrada iniciales y cerrarlos antes de otro intento de ataque.
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
 
 ## <a name="smartscreen-unblock"></a>Desbloqueo de SmartScreen
 

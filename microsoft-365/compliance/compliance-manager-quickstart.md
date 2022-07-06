@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: a4699e48c76aa041e0bc8ef3e35308ffb5f0e79c
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 99031b0d93fef74f788f9a42b906dffc58545014
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554189"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638728"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Use esta guía de inicio rápido para ayudarle a lo largo de su recorrido de uso del Administrador de cumplimiento de Microsoft Purview para administrar el cumplimiento de su organización con regulaciones, directivas y estándares.
 

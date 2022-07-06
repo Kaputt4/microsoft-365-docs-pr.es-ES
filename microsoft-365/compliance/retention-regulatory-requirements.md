@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de los registros
-ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286436"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638155"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Requisitos reglamentarios para la administración del ciclo de vida de los datos y de los registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use los recursos de esta página como ayuda para cumplir los requisitos reglamentarios específicos para la administración del ciclo de vida de los datos y de los registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
 

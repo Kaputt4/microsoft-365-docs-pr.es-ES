@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo recuperar el contenido de un buzón inactivo en Office 365 convirtiéndolo en un nuevo buzón que contiene el contenido del buzón inactivo.
-ms.openlocfilehash: 2c679407cb4f7203bb69d88c871bd844694a7c47
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f09104703807532770c7ea5b660e1088589883ec
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101610"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639674"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa para conservar el correo electrónico de un antiguo empleado después de abandonar la organización. Si ese empleado vuelve a su organización o si otro empleado asume las responsabilidades del trabajo del empleado anterior, hay dos maneras de hacer que el contenido del buzón inactivo esté disponible para un usuario:
 
@@ -44,7 +42,7 @@ Consulte la sección [Más información](#more-information) para obtener más de
 
 ## <a name="requirements-to-recover-an-inactive-mailbox"></a>Requisitos para recuperar un buzón inactivo
 
-- Debe usar Exchange Online PowerShell para recuperar un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento de Microsoft Purview para este procedimiento. Para obtener instrucciones paso a paso para usar PowerShell de Exchange Online, consulte [Conexión a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Debe usar Exchange Online PowerShell para recuperar un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC) ni el portal de cumplimiento Microsoft Purview para este procedimiento. Para obtener instrucciones paso a paso para usar Exchange Online PowerShell, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Ejecute el siguiente comando para mostrar información de identidad para los buzones inactivos en la organización.
 
@@ -85,9 +83,9 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
 
   - La suspensión que se aplicó a un buzón inactivo se cambia o se quita en función del tipo de suspensión que se aplicó al buzón inactivo antes de que se recuperara.
     
-    - **Microsoft 365 directiva de retención con bloqueo de conservación.** Si el buzón inactivo se incluyó en una directiva de retención que tiene [bloqueo de conservación](retention-preservation-lock.md), el buzón recuperado se asigna a la misma directiva de retención.
+    - **Directiva de retención de Microsoft 365 con bloqueo de conservación.** Si el buzón inactivo se incluyó en una directiva de retención que tiene [bloqueo de conservación](retention-preservation-lock.md), el buzón recuperado se asigna a la misma directiva de retención.
     
-    - **Microsoft 365 directiva de retención sin bloqueo de conservación.** El buzón inactivo se quita de la directiva de retención de Microsoft 365. Sin embargo, la suspensión por juicio está habilitada en el buzón recuperado para evitar la eliminación del contenido del buzón en función de las directivas de retención de toda la organización que eliminen contenido anterior a una edad específica. Puede mantener la suspensión por juicio o quitarla. Para obtener más información, consulte [Creación de una suspensión por juicio](create-a-litigation-hold.md).
+    - **Directiva de retención de Microsoft 365 sin bloqueo de conservación.** El buzón inactivo se quita de la directiva de retención de Microsoft 365. Sin embargo, la suspensión por juicio está habilitada en el buzón recuperado para evitar la eliminación del contenido del buzón en función de las directivas de retención de toda la organización que eliminen contenido anterior a una edad específica. Puede mantener la suspensión por juicio o quitarla. Para obtener más información, consulte [Creación de una suspensión por juicio](create-a-litigation-hold.md).
 
     - **Suspensión por juicio.** Si se ha habilitado la suspensión por juicio para el buzón inactivo, se quita del buzón recuperado.
 
@@ -95,7 +93,7 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
 
   - El período de recuperación de un solo elemento (definido por la propiedad de buzón **RetainDeletedItemsFor** ) se establece en 30 días. Normalmente, cuando se crea un nuevo buzón en Exchange Online, este período de retención se establece en 14 días. Si establece esto en el valor máximo de 30 días, tendrá más tiempo para recuperar los datos que se han eliminado (o depurado) de forma permanente del buzón inactivo. También puede deshabilitar la recuperación de un solo elemento o volver a establecer el período de recuperación de un solo elemento en el valor predeterminado de 14 días. Para obtener más información, consulte [Enable or disable single item recovery for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 
-  - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la directiva de retención predeterminada de Exchange y las directivas de retención de Microsoft 365 de toda la organización o de Exchange asignadas al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la directiva de retención de Exchange o Microsoft 365 podría eliminar elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que hayan expirado en función de la configuración configurada para las directivas de retención de Exchange o Microsoft 365. Después de 30 días, la retención expira, la propiedad de buzón **RetentionHoldEnabled** se establece en **False** y el Asistente para carpetas administradas comienza a procesar las directivas asignadas al buzón. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
+  - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la directiva de retención predeterminada de Exchange y las directivas de retención de Microsoft 365 para toda la organización o exchange asignadas al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la directiva de retención de Exchange o Microsoft 365 podría eliminar elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que hayan expirado en función de la configuración configurada para las directivas de retención de Exchange o Microsoft 365. Después de 30 días, la retención expira, la propiedad de buzón **RetentionHoldEnabled** se establece en **False** y el Asistente para carpetas administradas comienza a procesar las directivas asignadas al buzón. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
 - **Si necesita conservar el estado original del buzón inactivo, coloque una retención en el buzón recuperado.** Para evitar que el nuevo propietario del buzón o la directiva de retención eliminen permanentemente los mensajes del buzón inactivo recuperado, puede colocar el buzón en suspensión por juicio. Para obtener más información, consulte [Creación de una suspensión por juicio](./create-a-litigation-hold.md).
 
@@ -112,4 +110,4 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
     - Si no hay ningún valor para la propiedad **ExternalDirectoryObjectId** , el período de retención del buzón ha expirado y puede recuperar el buzón inactivo ejecutando el comando **New-Mailbox -InactiveMailbox** .
     - Si hay un valor para la propiedad **ExternalDirectoryObjectId** , el período de retención del buzón eliminado temporalmente no ha expirado y debe recuperar el buzón [restaurando la cuenta de usuario](../admin/add-users/delete-a-user.md).
 
-- **Considere la posibilidad de habilitar el buzón de archivo después de recuperar un buzón inactivo.** Esto permite que el usuario que vuelve o el nuevo empleado muevan mensajes antiguos al buzón de archivo. Y cuando expire la retención, la directiva de archivo que forma parte de la directiva de retención predeterminada de Exchange MRM asignada a los buzones de Exchange Online moverá los elementos que tengan dos años o más al buzón de archivo. Si no habilita el buzón de archivo, los elementos de más de dos años permanecerán en el buzón principal del usuario. Para obtener más información, vea [Habilitar buzones de archivo](enable-archive-mailboxes.md).
+- **Considere la posibilidad de habilitar el buzón de archivo después de recuperar un buzón inactivo.** Esto permite que el usuario que vuelve o el nuevo empleado muevan mensajes antiguos al buzón de archivo. Y cuando expire la retención, la directiva de archivo que forma parte de la directiva de retención predeterminada de Exchange MRM asignada a Exchange Online buzones moverá los elementos que tengan dos años o más al buzón de archivo. Si no habilita el buzón de archivo, los elementos de más de dos años permanecerán en el buzón principal del usuario. Para obtener más información, vea [Habilitar buzones de archivo](enable-archive-mailboxes.md).

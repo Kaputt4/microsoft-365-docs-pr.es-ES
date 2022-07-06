@@ -19,26 +19,24 @@ description: Solución de problemas de errores de Azure AzCopy al cargar datos q
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 85d51e7ecb59f8423f0a509725c6a1c1defd3adf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3a74dd5f2a341e9a99cbfc82cfb12900bae42491
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092335"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641150"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>Solución de problemas de AzCopy en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Al cargar datos o documentos que no son de Microsoft 365 para la corrección de errores en Microsoft Purview eDiscovery (Premium), la interfaz de usuario proporciona un comando de Azure AzCopy que contiene parámetros con la ubicación en la que se almacenan los archivos que desea cargar y la ubicación de almacenamiento de Azure en la que se cargarán los archivos. Para cargar los documentos, copie este comando y ejecútelo en un símbolo del sistema en el equipo local.  En la captura de pantalla siguiente se muestra un ejemplo de un comando azcopy:
 
-Al cargar datos o documentos que no son de Microsoft 365 para la corrección de errores en microsoft Purview eDiscovery (Premium), la interfaz de usuario proporciona un comando de Azure AzCopy que contiene parámetros con la ubicación en la que se almacenan los archivos que desea cargar y la ubicación de almacenamiento de Azure en la que se cargarán los archivos. Para cargar los documentos, copie este comando y ejecútelo en un símbolo del sistema en el equipo local.  En la captura de pantalla siguiente se muestra un ejemplo de un comando azcopy:
-
-![Upload archivos no Microsoft 365.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Cargue archivos que no sean de Microsoft 365.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Normalmente, el comando que se proporciona funciona cuando se ejecuta. Sin embargo, puede haber casos en los que el comando que se muestra no se ejecutará correctamente. Estas son algunas razones posibles.
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>La versión compatible de AzCopy no está instalada en el equipo local.
 
-En este momento, debe usar AzCopy v8.1 para cargar datos no Microsoft 365 en eDiscovery (Premium). El comando AzCopy que se muestra en la página **de archivos Upload** que se muestra en la captura de pantalla anterior devuelve un error si no usa AzCopy v8.1. Para instalar esta versión, consulte [Transferencia de datos con AzCopy v8.1 en Windows](/previous-versions/azure/storage/storage-use-azcopy).
+En este momento, debe usar AzCopy v8.1 para cargar datos que no sean de Microsoft 365 en eDiscovery (Premium). El comando AzCopy que se muestra en la página **Cargar archivos** que se muestra en la captura de pantalla anterior devuelve un error si no usa AzCopy v8.1. Para instalar esta versión, consulte [Transferencia de datos con AzCopy v8.1 en Windows](/previous-versions/azure/storage/storage-use-azcopy).
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy no está instalado en el equipo local o no está instalado en la ubicación predeterminada.
 

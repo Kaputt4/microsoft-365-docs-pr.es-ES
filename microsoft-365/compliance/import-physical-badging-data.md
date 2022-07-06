@@ -14,19 +14,17 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: Los administradores pueden configurar un conector de datos para importar datos del sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
+ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044024"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641436"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos físicos incorrectos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de badging de su organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los datos de falsificación física para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de la organización.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar datos físicos incorrectos, como los eventos de acceso físico sin procesar del empleado o las alarmas de acceso físico generadas por el sistema de badging de su organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los datos de falsificación física para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de la organización.
 
 La configuración de un conector de badging físico consta de las siguientes tareas:
 
@@ -42,20 +40,20 @@ La configuración de un conector de badging físico consta de las siguientes tar
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector de badging físico en el paso 3 se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de badging físico en el paso 3 se le debe asignar el rol de Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Actualmente, el rol administrador del conector de datos no se admite en los entornos de administración GCC Alto y DoD de la Administración pública de EE. UU. Por lo tanto, al usuario que crea el conector de RR. HH. en GCC entornos High y DoD se le debe asignar el rol Exportación de importación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzón y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear grupos de roles](/Exchange/permissions-exo/role-groups#create-role-groups) o [Modificar grupos de roles](/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo "Administrar grupos de roles en Exchange Online".
+   > El rol de Administración del conector de datos no se admite actualmente en los entornos GCC High y DoD del Gobierno de EE. UU. Por lo tanto, al usuario que crea el conector de RR. HH. en entornos de GCC High y DoD se le debe asignar el rol Exportación de importación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzón y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear grupos de roles](/Exchange/permissions-exo/role-groups#create-role-groups) o [Modificar grupos de roles](/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Debe determinar cómo recuperar o exportar los datos del sistema físico de la organización (a diario) y crear un archivo JSON que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo JSON en el punto de conexión de API.
 
 - El script de ejemplo que se ejecuta en el paso 4 inserta los datos físicos incorrectos del archivo JSON en la API del conector para que la solución de administración de riesgos internos pueda usarla. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
-- Este conector está disponible en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector está disponible en entornos GCC en la nube de Microsoft 365 US Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción para la carga json que contiene datos físicos incorrectos. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción para la carga json que contiene datos físicos incorrectos. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
 - Identificador de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente*)
 
@@ -71,13 +69,13 @@ El siguiente paso consiste en crear un archivo JSON que contenga información so
 
 El archivo JSON debe cumplir la definición de esquema requerida por el conector. Estas son descripciones de las propiedades de esquema necesarias para el archivo JSON:
 
-|Propiedad|Descripción|Tipo de datos|
+|Propiedad|Description|Tipo de datos|
 |---|---|---|
 |UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador de Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|Identificador de referencia del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|Marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|String|
+|AccessStatus|Valor de `Success` o `Failed`|Cadena|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema necesario:
@@ -172,7 +170,7 @@ El siguiente paso consiste en crear un conector de badging físico en el portal 
 
 El siguiente paso para configurar un conector físico incorrecto es ejecutar un script que insertará los datos físicos incorrectos en el archivo JSON (que creó en el paso 2) en el punto de conexión de API que creó en el paso 1. Proporcionamos un script de ejemplo para la referencia y puede optar por usarlo o crear su propio script para publicar el archivo JSON en el punto de conexión de API.
 
-Después de ejecutar el script, el archivo JSON que contiene los datos físicos incorrectos se inserta en la organización Microsoft 365 a la que puede acceder la solución de administración de riesgos internos. Se recomienda publicar datos físicos incorrectos diariamente. Para ello, automatice el proceso para generar el archivo JSON todos los días a partir del sistema físico incorrecto y, a continuación, programe el script para insertar los datos.
+Después de ejecutar el script, el archivo JSON que contiene los datos físicos incorrectos se inserta en la organización de Microsoft 365, donde la solución de administración de riesgos internos puede acceder a él. Se recomienda publicar datos físicos incorrectos diariamente. Para ello, automatice el proceso para generar el archivo JSON todos los días a partir del sistema físico incorrecto y, a continuación, programe el script para insertar los datos.
 
 > [!NOTE]
 > El número máximo de registros en el archivo JSON que puede procesar la API es de 50 000 registros.
@@ -197,10 +195,10 @@ Después de ejecutar el script, el archivo JSON que contiene los datos físicos 
 
    En la tabla siguiente se describen los parámetros que se usarán con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   |Parámetro|Descripción|
+   |Parámetro|Description|
    |---|---|
    |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el tenantId de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
-   |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización Microsoft 365.|
+   |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365.|
    |appSecret|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
    |jobId|Este es el id. de trabajo del conector de badging físico que creó en el paso 3. Esto se usa para asociar los datos físicos incorrectos que se insertan en la nube de Microsoft con el conector de badging físico.|
    |JsonFilePath|Esta es la ruta de acceso del archivo en el equipo local (la que se usa para ejecutar el script) del archivo JSON que creó en el paso 2. Este archivo debe seguir el esquema de ejemplo descrito en el paso 3.|
@@ -212,7 +210,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos físicos 
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Si la carga se realiza correctamente, el script muestra el **mensaje Upload Correcto**.
+   Si la carga se realiza correctamente, el script muestra el mensaje **Cargar correctamente** .
 
    Si tiene varios archivos JSON, debe ejecutar el script para cada archivo.
 
@@ -243,7 +241,7 @@ Para asegurarse de que los últimos datos físicos incorrectos de su organizaci�
 
 Puede usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
-1. En el equipo local, haga clic en el botón **inicio** Windows y escriba **Programador de tareas**.
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y escriba **Programador de tareas**.
 
 2. Haga clic en la aplicación **Programador de tareas** para abrirla.
 

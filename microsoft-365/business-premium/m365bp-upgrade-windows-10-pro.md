@@ -15,23 +15,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 56cb32269dac6f78d1c1764d881eefee1ac0ea01
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607704"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641029"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Actualizar dispositivos Windows a Windows 10 Pro
 
-Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 Empresa Premium te da derecho a actualizar esos dispositivos a Windows Pro 10.  
+Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 Empresa Premium te da derecho a actualizar esos dispositivos a Windows 10 o 11 Pro.  
 
 Puede elegir entre varios métodos para actualizar:
 
 - [Usar Windows Update](#use-windows-update) (recomendado para la mayoría de los usuarios)
 - [Actualizar el dispositivo mediante el sitio de descarga de software de Microsoft](#upgrade-your-device-using-the-microsoft-software-download-site)
 - [Creación de medios de instalación desde el sitio de descarga de software de Microsoft](#create-installation-media-from-the-microsoft-software-download-site)
-- [Comprar Windows 10 Pro para actualizar desde Windows 10 Home](#purchase-windows-10-pro-to-upgrade-from-windows-10-home)
+- [Compra Windows 10 o 11 Pro para actualizar desde Windows 10 Home](#purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home)
 
 ## <a name="use-windows-update"></a>Uso de Windows Update
 
@@ -48,7 +48,7 @@ Puede elegir entre varios métodos para actualizar:
 
 ## <a name="upgrade-your-device-using-the-microsoft-software-download-site"></a>Actualizar el dispositivo mediante el sitio de descarga de software de Microsoft
   
-*Seleccione esta opción si el dispositivo que está usando en este momento es el mismo dispositivo que desea actualizar.* 
+*Se prefiere el método Windows Update. Sin embargo, puede seleccionar esta opción si el dispositivo que está usando en este momento es el mismo dispositivo que desea actualizar.* 
 
 1. Vaya al [sitio de descarga de software de Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951).
 
@@ -65,7 +65,7 @@ Puede elegir entre varios métodos para actualizar:
 > [!NOTE]
 > Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, tu suscripción de Microsoft 365 Empresa Premium te da derecho a actualizar esos dispositivos a Windows Pro 10.
 
-## <a name="purchase-windows-10-pro-to-upgrade-from-windows-10-home"></a>Comprar Windows 10 Pro para actualizar desde Windows 10 Home
+## <a name="purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home"></a>Compra Windows 10 o 11 Pro para actualizar desde Windows 10 Home
 
 *Seleccione esta opción para los dispositivos que ejecutan Windows 10 Home.*
 

@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b60337226a12f7395b4a5664b5a11b0d88ed4790
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893380"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638684"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Con las directivas de cumplimiento de comunicaciones, puede elegir examinar los mensajes en una o varias de las siguientes plataformas de comunicación como un grupo o como orígenes independientes. Los mensajes originales capturados en estas plataformas se conservan en la ubicación de la plataforma original de acuerdo con las [directivas de retención y retención](/microsoft-365/compliance/information-governance) de su organización. Las copias de los mensajes utilizados por las directivas de cumplimiento de comunicaciones para el análisis y la investigación se conservan mientras la directiva esté en vigor, incluso si los usuarios abandonan la organización y se eliminan sus buzones. Cuando se elimina una directiva de comunicación, también se eliminan copias de los mensajes asociados a la directiva.
 
@@ -61,25 +59,17 @@ Use las siguientes configuraciones de administración de grupos para supervisar 
 
 - **Para las comunicaciones de chat de Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
 - **Para las comunicaciones del canal de Teams:** Asigne todos los canales de Microsoft Teams o grupo de Microsoft 365 que quiera examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario supervisado dentro de una directiva y la dirección *de entrada* está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directivas (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de contenido inadecuado que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directivas para las conversaciones dentro del canal, aunque no estén supervisadas directamente en la directiva de contenido inadecuado. Las conversaciones de Teams entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de contenido inadecuado que incluye al usuario A. Para excluir a los miembros del canal de la supervisión cuando otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación *entrante* en la directiva de cumplimiento de comunicaciones aplicable.
-- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede supervisar los mensajes de chat de los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede detectar mensajes de chat para los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 ## <a name="exchange-email"></a>Correo electrónico de Exchange
 
-Los buzones hospedados en Exchange Online como parte de su suscripción de Microsoft 365 u Office 365 son aptos para el examen de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar aproximadamente 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los [tipos de archivo admitidos en las inspecciones de contenido de reglas de flujo de correo de Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+Los buzones hospedados en Exchange Online como parte de su suscripción de Microsoft 365 o Office 365 son aptos para el examen de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar aproximadamente 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los [tipos de archivo admitidos en las inspecciones de contenido de reglas de flujo de correo de Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 ## <a name="yammer"></a>Yammer
 
 Los mensajes privados y las conversaciones públicas y los datos adjuntos asociados en las comunidades de Yammer se pueden examinar. Cuando se agrega un usuario a la directiva de cumplimiento de comunicaciones que incluye Yammer como canal definido, las comunicaciones entre todas las comunidades de Yammer de las que el usuario es miembro se incluyen en el proceso de examen. Los chats y los datos adjuntos de Yammer que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. 
 
 Yammer debe estar en [modo nativo](/yammer/configure-your-yammer-network/overview-native-mode) para que las directivas de cumplimiento de comunicaciones supervisen las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
-
-## <a name="skype-for-business-online"></a>Skype Empresarial Online
-
-Las comunicaciones de chat y los datos adjuntos asociados en Skype Empresarial Online se pueden supervisar. Los chats de Skype Empresarial Online que coincidan con las condiciones de directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Las conversaciones de chat supervisadas proceden de [conversaciones anteriores guardadas en Skype Empresarial Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  
-
-Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de usuario en Skype Empresarial Online:
-
-- **Para las comunicaciones de chat de Skype Empresarial Online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
 
 ## <a name="third-party-sources"></a>Orígenes de terceros.
 

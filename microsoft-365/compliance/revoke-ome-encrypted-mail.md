@@ -16,24 +16,22 @@ ms.collection:
 search.appverid:
 - MET150
 description: Como administrador y como remitente de mensajes, puede revocar determinados correos electrónicos cifrados con cifrado avanzado de mensajes de Microsoft Purview.
-ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187951"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639432"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocación del correo electrónico cifrado mediante cifrado avanzado de mensajes
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La revocación de correo electrónico se ofrece como parte del cifrado avanzado de mensajes de Microsoft Purview. El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Para usar las funciones de revocación y expiración de Advanced Message Encryption, habilite la opción **Cifrado de Premium en Office 365** en su licencia E5.
+La revocación de correo electrónico se ofrece como parte del cifrado avanzado de mensajes de Microsoft Purview. El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Para usar las funciones de revocación y expiración de Advanced Message Encryption, habilite la opción **Cifrado Premium en Office 365** en la licencia de E5.
 
 Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Microsoft Purview, puede comprarlo con el complemento de SKU de Cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el Cumplimiento avanzado de Office 365 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
 Este artículo forma parte de una serie más amplia de artículos sobre [Office 365 cifrado de mensajes](ome.md).
 
-Si un mensaje se cifró mediante el cifrado avanzado de mensajes de Microsoft Purview y es un administrador de Microsoft 365 o es el remitente del mensaje, puede revocarlo en determinadas condiciones. Los administradores revocan mensajes mediante PowerShell. Como remitente, revoca un mensaje que envió directamente desde Outlook en la Web. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
+Si un mensaje se cifró mediante cifrado avanzado de mensajes de Microsoft Purview y es administrador de Microsoft 365 o es el remitente del mensaje, puede revocarlo en determinadas condiciones. Los administradores revocan mensajes mediante PowerShell. Como remitente, revoca un mensaje que envió directamente desde Outlook en la Web. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
 
 > [!NOTE]
 > Para garantizar que la capacidad de realizar un seguimiento y revocar mensajes OME está disponible, debe agregar una plantilla de personalización de marca. Consulte [Incorporación de la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md)
@@ -42,7 +40,7 @@ Si un mensaje se cifró mediante el cifrado avanzado de mensajes de Microsoft Pu
 
 Los administradores y los remitentes de mensajes pueden revocar correos electrónicos cifrados si el destinatario recibió un correo electrónico cifrado basado en vínculos y con marca. Si el destinatario recibió una experiencia insertada nativa en un cliente de Outlook compatible, no puede revocar el mensaje.
 
-Si un destinatario recibe una experiencia basada en vínculos o una experiencia insertada depende del tipo de identidad del destinatario: Office 365 y los destinatarios de la cuenta Microsoft (por ejemplo, outlook.com usuarios) obtienen una experiencia insertada en los clientes Outlook admitidos. Todos los demás tipos de destinatarios, como los destinatarios de Gmail y Yahoo, obtienen una experiencia basada en vínculos.
+Si un destinatario recibe una experiencia basada en vínculos o una experiencia insertada depende del tipo de identidad de destinatario: Office 365 y los destinatarios de la cuenta microsoft (por ejemplo, outlook.com usuarios) obtienen una experiencia en línea en los clientes de Outlook compatibles. Todos los demás tipos de destinatarios, como los destinatarios de Gmail y Yahoo, obtienen una experiencia basada en vínculos.
 
 Los administradores y los remitentes de mensajes pueden revocar los mensajes cifrados mediante el cifrado aplicado directamente desde Outlook en la Web. Por ejemplo, los mensajes cifrados con la opción Cifrar solo.
 
@@ -58,7 +56,7 @@ Una vez revocado un correo electrónico, el destinatario recibe un error cuando 
 
 Puede revocar un correo que envió a un único destinatario que usa una cuenta social, como gmail.com o yahoo.com. En otras palabras, puede revocar un correo electrónico enviado a un único destinatario que recibió la experiencia basada en vínculos.
 
-No puede revocar un correo que envió a un destinatario que usa una cuenta profesional o educativa de Office 365 o Microsoft 365 o un usuario que usa una cuenta Microsoft, por ejemplo, una cuenta de outlook.com. 
+No puede revocar un correo que envió a un destinatario que usa una cuenta profesional o educativa de Office 365 o Microsoft 365 o un usuario que usa una cuenta microsoft, por ejemplo, una cuenta de outlook.com. 
 
 Para revocar un mensaje cifrado que envió, complete estos pasos.
 
@@ -76,7 +74,7 @@ Para revocar un mensaje cifrado que envió, complete estos pasos.
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Cómo revocar un mensaje cifrado como administrador
 
-Microsoft 365 administradores siguen estos pasos generales para revocar un correo electrónico cifrado válido:
+Los administradores de Microsoft 365 siguen estos pasos generales para revocar un correo electrónico cifrado válido:
 
 - Obtenga el identificador de mensaje del correo electrónico.
 - Compruebe que puede revocar el mensaje.
@@ -138,7 +136,7 @@ Para revocar el mensaje mediante el Centro de cumplimiento de seguridad &amp;
 
 Para revocar un correo electrónico mediante Windows PowerShell, use el cmdlet Set-OMEMessageRevocation.
 
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation de la siguiente manera:
 

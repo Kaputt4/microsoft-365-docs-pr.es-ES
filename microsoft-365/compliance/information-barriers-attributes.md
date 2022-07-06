@@ -1,6 +1,6 @@
 ---
 title: Atributos de barreras de información
-description: Este artículo es una referencia para los atributos de cuenta de usuario Azure Active Directory que puede usar para definir segmentos de barreras de información.
+description: Este artículo es una referencia para los atributos de cuenta de usuario de Azure Active Directory que puede usar para definir segmentos de barreras de información.
 keywords: Microsoft 365, Microsoft Purview, cumplimiento, barreras de información
 ms.author: robmazz
 author: robmazz
@@ -14,23 +14,21 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e09331fb819d2b00764cd6dacd1687ade8ee116c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: a1549a0cb3bf03056b37a75175c3b24416bec7b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396275"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639784"
 ---
 # <a name="information-barriers-attributes"></a>Atributos de barreras de información
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Algunos atributos de Azure Active Directory se pueden usar para segmentar a los usuarios en barreras de información (IB). Una vez definidos los segmentos, esos segmentos se pueden usar como filtros para las directivas de IB. Por ejemplo, puede usar **Departamento** para definir segmentos de usuarios por departamento dentro de su organización (suponiendo que ningún empleado único trabaje para dos departamentos al mismo tiempo).
+Algunos atributos de Azure Active Directory se pueden usar para segmentar usuarios en barreras de información (IB). Una vez definidos los segmentos, esos segmentos se pueden usar como filtros para las directivas de IB. Por ejemplo, puede usar **Departamento** para definir segmentos de usuarios por departamento dentro de su organización (suponiendo que ningún empleado único trabaje para dos departamentos al mismo tiempo).
 
 En este artículo se describe cómo usar atributos con barreras de información y se proporciona una lista de atributos que se pueden usar. Para obtener más información sobre las barreras de información, consulte los siguientes recursos:
 
 - [Barreras de información](information-barriers.md)
-- [Definir directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
+- [Definición de directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
 - [Editar (o quitar) directivas de IB](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-ib-policies"></a>Uso de atributos en directivas de IB
@@ -60,10 +58,10 @@ Los atributos enumerados en este artículo se pueden usar para definir o editar 
 
 En la tabla siguiente se enumeran los atributos que puede usar con las barreras de información.
 
-|**Azure Active Directory nombre<br/> de propiedad (nombre para mostrar LDAP)**|**Exchange nombre de propiedad**|
+|**Nombre<br/> de propiedad de Azure Active Directory (nombre para mostrar LDAP)**|**Nombre de propiedad de Exchange**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | Company |
+| Empresa | Empresa |
 | Departamento | Departamento |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
@@ -99,6 +97,6 @@ En la tabla siguiente se enumeran los atributos que puede usar con las barreras 
 
 ## <a name="resources"></a>Recursos
 
-- [Definir directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
+- [Definición de directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
 - [Solución de problemas de barreras de información](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [Barreras de información](information-barriers.md)

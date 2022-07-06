@@ -20,16 +20,14 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
-ms.openlocfilehash: 4456ecfb4684562d8ddf7da21c463859f2d9bec2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6a0d4e2b52c6f32b3142414a761a2447805cd58a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091013"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640662"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describe cómo funciona la desduplicación de los resultados de búsqueda de eDiscovery y se explican las limitaciones del algoritmo de desduplicación.
   
@@ -43,7 +41,7 @@ Las herramientas de eDiscovery usan una combinación de las siguientes propiedad
 
 - **ConversationTopic** : esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la propiedad **ConversationTopic** es la cadena que describe el tema general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la propiedad **ConversationTopic** . El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
 
-- **BodyTagInfo**: se trata de una propiedad de almacén de Exchange interna. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes. 
+- **BodyTagInfo** : se trata de una propiedad interna del almacén de Exchange. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes. 
 
 Durante el proceso de exportación de eDiscovery, estas tres propiedades se comparan para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, se determina que esos mensajes son duplicados y el resultado es que solo se exportará una copia del mensaje si se habilita la desduplicación. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes **deResults.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el archivo **Results.csv** , un mensaje duplicado se identifica con un valor en la columna **Duplicar en elemento** . El valor de esta columna coincide con el valor de la columna **Identidad del elemento** del mensaje que se exportó. 
   

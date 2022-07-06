@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos de información confidencial personalizados en el Centro de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753526"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638618"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Creación de tipos de información confidencial personalizados en el Centro de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si los tipos de información confidencial predefinidos no satisfacen sus necesidades, puede crear sus propios tipos de información confidencial personalizados. Al hacerlo, puede copiar uno de los tipos predefinidos y modificarlo o definirlo completamente usted mismo.
 
@@ -106,8 +104,8 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 
-- [Creación de un tipo de información confidencial personalizada en Microsoft Purview PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Creación de un tipo de información confidencial personalizada en PowerShell de Microsoft Purview](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
 

@@ -12,26 +12,24 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo revertir las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente. Los servicios incluyen archivos Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams.
-ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017342"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636499"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rotar o alternar una Clave de cliente o una clave de disponibilidad
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > Implemente solo una clave de cifrado que use con clave de cliente cuando los requisitos de seguridad o cumplimiento determinen que debe revertir la clave. Además, no elimine las claves que estén o estén asociadas a directivas. Al deshacer las claves, habrá contenido cifrado con las claves anteriores. Por ejemplo, aunque los buzones activos se volverán a cifrar con frecuencia, los buzones inactivos, desconectados y deshabilitados todavía se pueden cifrar con las claves anteriores. SharePoint Online realiza una copia de seguridad del contenido con fines de restauración y recuperación, por lo que es posible que todavía haya contenido archivado mediante claves anteriores.
 
 ## <a name="about-rolling-the-availability-key"></a>Acerca de cómo revertir la clave de disponibilidad
 
-Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede revertir (girar) las claves que posee en Azure Key Vault. Microsoft 365 implementa las claves de disponibilidad en una programación definida internamente. No hay ningún acuerdo de nivel de servicio (SLA) orientado al cliente para estos lanzamientos de claves. Microsoft 365 gira la clave de disponibilidad mediante Microsoft 365 código de servicio en un proceso automatizado y no manual. Los administradores de Microsoft pueden iniciar el proceso de lanzamiento. La clave se enrolla mediante mecanismos automatizados sin acceso directo al almacén de claves. El acceso al almacén secreto de clave de disponibilidad no se aprovisiona a los administradores de Microsoft. La rotación de claves de disponibilidad aprovecha el mismo mecanismo usado para generar inicialmente la clave. Para obtener más información sobre la clave de disponibilidad, consulte [Descripción de la clave de disponibilidad](customer-key-availability-key-understand.md).
+Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede revertir (girar) las claves que posee en Azure Key Vault. Microsoft 365 implementa las claves de disponibilidad en una programación definida internamente. No hay ningún acuerdo de nivel de servicio (SLA) orientado al cliente para estos lanzamientos de claves. Microsoft 365 gira la clave de disponibilidad mediante el código de servicio de Microsoft 365 en un proceso automatizado no manual. Los administradores de Microsoft pueden iniciar el proceso de lanzamiento. La clave se enrolla mediante mecanismos automatizados sin acceso directo al almacén de claves. El acceso al almacén secreto de clave de disponibilidad no se aprovisiona a los administradores de Microsoft. La rotación de claves de disponibilidad aprovecha el mismo mecanismo usado para generar inicialmente la clave. Para obtener más información sobre la clave de disponibilidad, consulte [Descripción de la clave de disponibilidad](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
-> Exchange Online y Skype Empresarial claves de disponibilidad pueden ser efectivamente enrolladas por los clientes que crean un nuevo DEP, ya que se genera una clave de disponibilidad única para cada DEP que cree. Las claves de disponibilidad para los archivos de SharePoint Online, OneDrive para la Empresa y Teams existen en el nivel de bosque y se comparten entre dep y clientes, lo que significa que la reversión solo se produce en una programación definida internamente por Microsoft. Para mitigar el riesgo de no revertir la clave de disponibilidad cada vez que se crea un nuevo DEP, SharePoint, OneDrive y Teams revertir la clave intermedia del inquilino (TIK), la clave encapsulada por las claves raíz del cliente y la clave de disponibilidad, cada vez que se crea un nuevo DEP.
+> Exchange Online y Skype Empresarial claves de disponibilidad pueden ser efectivamente enrolladas por los clientes que crean un nuevo DEP, ya que se genera una clave de disponibilidad única para cada DEP que cree. Las claves de disponibilidad para archivos de SharePoint Online, OneDrive para la Empresa y Teams existen en el nivel de bosque y se comparten entre dep y clientes, lo que significa que la reversión solo se produce en una programación definida internamente por Microsoft. Para mitigar el riesgo de no revertir la clave de disponibilidad cada vez que se crea un nuevo DEP, SharePoint, OneDrive y Teams implementan la clave intermedia del inquilino (TIK), la clave encapsulada por las claves raíz del cliente y la clave de disponibilidad, cada vez que se crea un nuevo DEP.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>Solicitar una nueva versión de cada clave raíz existente que quiera revertir
 
@@ -85,9 +83,9 @@ Para indicar a Customer Key que use la nueva clave para cifrar los buzones de co
 
 2. Para comprobar el valor de la propiedad DataEncryptionPolicyID del buzón, siga los pasos descritos en [Determinar el DEP asignado a un buzón](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). El valor de esta propiedad cambia una vez que el servicio aplica la clave actualizada.
   
-## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Actualizar las claves de los archivos de SharePoint Online, OneDrive para la Empresa y Teams
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Actualización de las claves para archivos de SharePoint Online, OneDrive para la Empresa y Teams
 
-SharePoint Online solo le permite lanzar una tecla a la vez. Si desea revertir ambas claves en un almacén de claves, espere a que se complete la primera operación. Microsoft recomienda escalonar las operaciones para evitar este problema. Al implementar cualquiera de las claves de Azure Key Vault asociadas a un DEP usado con SharePoint Online y OneDrive para la Empresa, debe actualizar el DEP para que apunte a la nueva clave. Esto no gira la clave de disponibilidad.
+SharePoint Online solo le permite lanzar una clave a la vez. Si desea revertir ambas claves en un almacén de claves, espere a que se complete la primera operación. Microsoft recomienda escalonar las operaciones para evitar este problema. Al implementar cualquiera de las claves de Azure Key Vault asociadas a un DEP usado con SharePoint Online y OneDrive para la Empresa, debe actualizar el DEP para que apunte a la nueva clave. Esto no gira la clave de disponibilidad.
 
 1. Ejecute el cmdlet Update-SPODataEncryptionPolicy de la siguiente manera:
   

@@ -19,16 +19,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ceaea2b888c144fb5c6bc34d9d7788ab595b56b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: a9b00590c0a1904f0f2a9b786414e9ee303c3572
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864592"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637491"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las soluciones de auditoría de Microsoft Purview proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los registros de auditoría de estos eventos pueden ser objeto de búsqueda por las operaciones de seguridad, los administradores de TI, los equipos de riesgos de Insider, así como por los investigadores del cumplimiento y la legislación legal de la organización. Esta funcionalidad permite ver las actividades que se realizan en toda la organización de Microsoft 365.
 

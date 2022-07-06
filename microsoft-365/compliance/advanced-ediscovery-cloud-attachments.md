@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en Microsoft Purview eDiscovery (Premium) para recopilar datos adjuntos en la nube para su revisión en una investigación o caso.
-ms.openlocfilehash: 4af28744525db52f446bf6d5f1b5de2121111050
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: e59b4720613572763b300517c0b603493ab5a9de
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893215"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636951"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium"></a>Recopilación de datos adjuntos en la nube en Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los datos adjuntos en la nube son vínculos a documentos que normalmente se almacenan en el sitio de SharePoint y OneDrive. Por lo tanto, en lugar de adjuntar una copia real de un documento en un mensaje de correo electrónico o una conversación de chat de Teams, tiene la opción de compartir un vínculo al archivo. Los datos adjuntos en la nube son una manera eficaz de compartir documentos y colaborar con otras personas de la organización. Sin embargo, los datos adjuntos en la nube presentan desafíos durante el flujo de trabajo de eDiscovery porque solo el vínculo de datos adjuntos en la nube y no el contenido real del documento compartido se devuelven en una búsqueda de exhibición de documentos electrónicos. Para abordar este desafío, eDiscovery (Premium) proporciona dos soluciones para recopilar datos adjuntos en la nube:  
 

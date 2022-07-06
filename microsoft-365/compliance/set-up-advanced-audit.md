@@ -1,5 +1,5 @@
 ---
-title: Configurar auditoría (Premium) en Microsoft 365
+title: Configuración de auditoría (Premium) en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,30 +20,28 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría (Premium) para que pueda realizar investigaciones forenses cuando las cuentas de usuario están en peligro o para investigar otros incidentes relacionados con la seguridad.
-ms.openlocfilehash: f1c858964ee3cb5e6cdfcdb7416468318393ebba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: adffd696a3eca2d51fb5325cd79c1ba26e58936c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097962"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639344"
 ---
-# <a name="set-up-microsoft-purview-audit-premium"></a>Configuración de Microsoft Purview Audit (Premium)
+# <a name="set-up-microsoft-purview-audit-premium"></a>Configurar Auditoría de Microsoft Purview (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Si su organización tiene una suscripción y licencias de usuario final que admiten Auditar (Premium), realice los pasos siguientes para configurar y usar las funcionalidades adicionales de Auditoría (Premium).
+Si su organización tiene una suscripción y licencias de usuario final que admiten Audit (Premium), realice los pasos siguientes para configurar y usar las funcionalidades adicionales de Auditoría (Premium).
 
 ![Flujo de trabajo para configurar Auditoría (Premium).](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step-1-set-up-audit-premium-for-users"></a>Paso 1: Configurar la auditoría (Premium) para los usuarios
+## <a name="step-1-set-up-audit-premium-for-users"></a>Paso 1: Configurar auditoría (Premium) para usuarios
 
 Las características de auditoría (Premium) como la capacidad para registrar eventos fundamentales, como MailItemsAccessed y Send, requieren una licencia adecuada de E5 asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios. Para comprobar que la aplicación de Auditoría avanzada está asignada a los usuarios, realice estos pasos para cada usuario:
 
-1. En el Centro de administración de Microsoft 365, vaya a **UsuariosUsuarios** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**activos**</a> y seleccione un usuario.
+1. En el Centro de administración de Microsoft 365, vaya a **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos**</a> y seleccione un usuario.
 
 2. En la página flotante de propiedades de usuario, haga clic en **Licencias y aplicaciones**.
 
-3. En la sección **Licencias** , compruebe que al usuario se le asigna una licencia E5 o que se le asigna una licencia de complemento adecuada. Para obtener una lista de licencias que admiten auditar (Premium), consulte [Requisitos de licencia de auditoría (Premium](auditing-solutions-overview.md#audit-premium-1)).
+3. En la sección **Licencias** , compruebe que al usuario se le asigna una licencia E5 o que se le asigna una licencia de complemento adecuada. Para obtener una lista de licencias compatibles con Audit (Premium), consulte [Requisitos de licencias de auditoría (Premium](auditing-solutions-overview.md#audit-premium-1)).
 
 4. Expanda la sección **Aplicaciones** y compruebe que está seleccionada la casilla de verificación de **Auditoría avanzada de Microsoft 365**.
 
@@ -75,4 +73,4 @@ Además de la directiva predeterminada que conserva los registros de auditoría 
 
 ## <a name="step-4-search-for-audit-premium-events"></a>Paso 4: Buscar eventos de auditoría (Premium)
 
-Ahora que tiene la auditoría (Premium) configurada para su organización, puede buscar eventos de auditoría (Premium) cruciales y otras actividades al realizar investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría (Premium) y otras actividades durante las investigaciones forenses de cuentas en peligro y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información sobre la realización de una investigación forense de cuentas de usuario en peligro mediante el evento MailItemsAccessed Audit (Premium), vea [Usar auditoría (Premium) para investigar cuentas en peligro](mailitemsaccessed-forensics-investigations.md).
+Ahora que tiene la auditoría (Premium) configurada para su organización, puede buscar eventos de auditoría (Premium) cruciales y otras actividades al realizar investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría (Premium) y otras actividades durante las investigaciones forenses de cuentas en peligro y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información sobre cómo realizar una investigación forense de cuentas de usuario en peligro mediante el evento MailItemsAccessed Audit (Premium), vea [Usar auditoría (Premium) para investigar cuentas en peligro](mailitemsaccessed-forensics-investigations.md).

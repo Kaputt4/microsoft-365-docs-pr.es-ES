@@ -16,17 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo de Batch en eDiscovery (Premium) para probar, comparar y validar la calidad general del procesamiento.
-ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo por lotes en eDiscovery (Premium) para probar, comparar y validar la calidad general del procesamiento.
+ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095474"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637051"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>Análisis de relevancia de prueba en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 La pestaña Prueba de Microsoft Purview eDiscovery (Premium) permite probar, comparar y validar la calidad general del procesamiento. Estas pruebas se realizan después del cálculo de Batch. Al etiquetar los archivos de la colección, un experto toma la decisión final sobre si cada archivo etiquetado es relevante para el caso.
   

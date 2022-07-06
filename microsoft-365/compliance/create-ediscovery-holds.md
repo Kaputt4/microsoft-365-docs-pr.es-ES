@@ -17,19 +17,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Puede crear una suspensión asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
-ms.openlocfilehash: ddd1b2e62c2ec63dbd2303cadcef6a1d12f4dfc7
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
+ms.openlocfilehash: c395c1bae2a4640c98133bc3bd89d2762a493661
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130919"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637425"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede usar un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview para crear retenciones para conservar el contenido que podría ser relevante para el caso. Puede colocar una suspensión en los buzones de Exchange y OneDrive para la Empresa cuentas de las personas que está investigando en el caso. También puede colocar una suspensión en los buzones y sitios asociados a Microsoft Teams, grupos de Office 365 y grupos de Yammer. Al colocar ubicaciones de contenido en espera, el contenido se conserva hasta que se quita la ubicación del contenido de la suspensión o hasta que se elimina la suspensión.
+Puede usar un caso de Microsoft Purview eDiscovery (estándar) para crear retenciones para conservar el contenido que podría ser relevante para el caso. Puede colocar una suspensión en los buzones de Exchange y OneDrive para la Empresa cuentas de personas que está investigando en el caso. También puede colocar una suspensión en los buzones y sitios asociados a Microsoft Teams, grupos de Office 365 y grupos de Yammer. Al colocar ubicaciones de contenido en espera, el contenido se conserva hasta que se quita la ubicación del contenido de la suspensión o hasta que se elimina la suspensión.
 
 Después de crear una suspensión de eDiscovery, la suspensión puede tardar hasta 24 horas en surtir efecto.
 
@@ -43,7 +41,7 @@ Al crear una suspensión, tiene las siguientes opciones para limitar el contenid
 
 Para crear una suspensión de eDiscovery asociada a un caso de exhibición de documentos electrónicos (estándar):
   
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de eDiscovery adecuados.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados.
 
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo** y, a continuación, haga clic en **eDiscovery > Core**.
 
@@ -61,12 +59,12 @@ Para crear una suspensión de eDiscovery asociada a un caso de exhibición de do
   
    1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una suspensión en el buzón asociado para un equipo de Microsoft, un grupo de Office 365 y un grupo de Yammer. Para obtener más información sobre los datos de la aplicación que se conservan cuando se coloca un buzón en espera, vea [Contenido almacenado en buzones para eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   2. **Sitios de SharePoint**: establezca el botón de alternancia en **Activado** y haga clic en **Elegir sitios** para especificar los sitios de SharePoint y las cuentas de OneDrive que se deben colocar en suspensión. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Office 365 o un grupo de Yammer.
+   2. **Sitios de SharePoint**: establezca el botón de alternancia en **Activado** y haga clic en **Elegir sitios** para especificar los sitios de SharePoint y las cuentas de OneDrive que se deben colocar en suspensión. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, Office 365 grupo o un grupo de Yammer.
   
    3. **Carpetas públicas de Exchange**: establezca la opción de alternancia en **Activado** para poner todas las carpetas públicas en su organización de Exchange Online en suspensión. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el botón de alternancia desactivado si no quiere establecer una suspensión en las carpetas públicas.
 
    > [!IMPORTANT]
-   > Al agregar Exchange buzones o sitios de SharePoint a una suspensión, debe agregar explícitamente al menos una ubicación de contenido a la suspensión. En otras palabras, si establece el botón de alternancia **en Activado** para buzones o sitios, debe seleccionar buzones o sitios específicos para agregarlos a la suspensión. De lo contrario, se creará la suspensión de eDiscovery, pero no se agregarán buzones ni sitios a la suspensión.
+   > Al agregar buzones de Exchange o sitios de SharePoint a una suspensión, debe agregar explícitamente al menos una ubicación de contenido a la suspensión. En otras palabras, si establece el botón de alternancia **en Activado** para buzones o sitios, debe seleccionar buzones o sitios específicos para agregarlos a la suspensión. De lo contrario, se creará la suspensión de eDiscovery, pero no se agregarán buzones ni sitios a la suspensión.
 
 8. Cuando haya terminado de agregar ubicaciones a la suspensión, haga clic en **Siguiente**.
 
@@ -89,7 +87,7 @@ Para crear una suspensión de eDiscovery asociada a un caso de exhibición de do
 
 ## <a name="query-based-holds-placed-on-sites"></a>Retenciones basadas en consultas colocadas en sitios
 
-Tenga en cuenta lo siguiente al colocar una suspensión de exhibición de documentos electrónicos basada en consultas en los documentos ubicados en SharePoint sitios:
+Tenga en cuenta lo siguiente al colocar una suspensión de exhibición de documentos electrónicos basada en consultas en documentos ubicados en sitios de SharePoint:
 
 - Una retención basada en consultas conserva inicialmente todos los documentos de un sitio durante un breve período de tiempo después de su eliminación. Esto significa que cuando se elimina un documento, se moverá a la biblioteca de suspensión de conservación aunque no coincida con los criterios de la retención basada en consultas. Sin embargo, los documentos eliminados que no coinciden con una retención basada en consultas se quitarán mediante un trabajo de temporizador que procesa la biblioteca de suspensión de conservación. El trabajo del temporizador se ejecuta periódicamente y compara todos los documentos de la biblioteca de suspensión de conservación con las retenciones de exhibición de documentos electrónicos basadas en consultas (y otros tipos de retenciones y directivas de retención). El trabajo del temporizador elimina los documentos que no coinciden con una retención basada en consultas y conserva los documentos que lo hacen.
 
@@ -111,24 +109,24 @@ Estas son algunas otras cosas que debe tener en cuenta al buscar ubicaciones en 
 
 - Si una suspensión de eDiscovery tiene el estado **Activado (Pendiente),** puede buscar en las ubicaciones en espera mientras se activa la suspensión.
 
-## <a name="preserve-content-in-microsoft-teams"></a>Conservar el contenido en Microsoft Teams
+## <a name="preserve-content-in-microsoft-teams"></a>Conservación del contenido en Microsoft Teams
 
-Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo asociado al equipo de Microsoft. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, debe colocar el buzón de correo de Equipo y SharePoint sitio en suspensión de eDiscovery para conservar las conversaciones y los archivos en un canal.
+Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón asociado al equipo de Microsoft. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, debe colocar el buzón de equipo y el sitio de SharePoint en suspensión de eDiscovery para conservar conversaciones y archivos en un canal.
 
-Como alternativa, las conversaciones que forman parte de la lista chat en Teams (*llamadas chats 1:1 o chats* de *grupo 1:N*) se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en las conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, tiene que agregar los buzones de usuario individuales y las cuentas de OneDrive a una suspensión de eDiscovery para conservar las conversaciones y los archivos de la lista de chat. Es una buena idea colocar una suspensión en los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo y el sitio en espera.
+Como alternativa, las conversaciones que forman parte de la lista chat en Teams ( *llamadas chats 1:1 o chats* de *grupo 1:N*) se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, debe agregar los buzones de usuario individuales y las cuentas de OneDrive a una suspensión de eDiscovery para conservar las conversaciones y los archivos de la lista de chat. Es una buena idea colocar una suspensión en los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo y el sitio en espera.
 
 > [!NOTE]
-> Si su organización tiene una implementación híbrida Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en un almacenamiento basado en la nube asociado a un usuario local. Si un usuario local se coloca en una suspensión de eDiscovery, se conservará el contenido de chat Teams en el almacenamiento basado en la nube. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en un almacenamiento basado en la nube asociado a un usuario local. Si un usuario local se coloca en una suspensión de eDiscovery, se conservará el contenido de chat de Teams en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-Para obtener más información sobre cómo conservar Teams contenido, consulte [Colocación de un usuario o equipo de Microsoft Teams en suspensión legal](/MicrosoftTeams/legal-hold).
+Para obtener más información sobre cómo conservar el contenido de Teams, consulte [Colocación de un usuario o equipo de Microsoft Teams en suspensión legal](/MicrosoftTeams/legal-hold).
 
 ### <a name="preserve-card-content"></a>Conservar el contenido de la tarjeta
 
-De forma similar, el contenido de tarjeta generado por las aplicaciones en canales de Teams, chats 1:1 y chats de grupo 1:N se almacena en buzones de correo y se conserva cuando se coloca un buzón en una suspensión de eDiscovery. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener varias propiedades y datos adjuntos, y pueden incluir botones que desencadenan acciones de tarjeta. Para obtener más información, vea [Tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Igual que el resto de contenido de Teams, el lugar donde se almacena el contenido de las tarjetas depende de dónde se haya usado. El contenido de tarjetas usado en un canal de Teams se almacena en el buzón del grupo de Teams. El contenido de tarjetas de los chats 1x1 y 1xN se almacena en los buzones de los participantes de los chats.
+De forma similar, el contenido de tarjeta generado por las aplicaciones en canales de Teams, chats 1:1 y chats de grupo 1:N se almacena en buzones y se conserva cuando se coloca un buzón en una suspensión de eDiscovery. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener varias propiedades y datos adjuntos, y pueden incluir botones que desencadenan acciones de tarjeta. Para obtener más información, vea [Tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Igual que el resto de contenido de Teams, el lugar donde se almacena el contenido de las tarjetas depende de dónde se haya usado. El contenido de tarjetas usado en un canal de Teams se almacena en el buzón del grupo de Teams. El contenido de tarjetas de los chats 1x1 y 1xN se almacena en los buzones de los participantes de los chats.
 
 ### <a name="preserve-meeting-and-call-information"></a>Conservación de la información de reuniones y llamadas
 
-La información de resumen de las reuniones y llamadas en un canal de Teams también se almacena en los buzones de los usuarios que llamaron a la reunión o llamada. Este contenido también se conserva cuando se coloca una suspensión de eDiscovery en los buzones de usuario.
+La información de resumen de reuniones y llamadas en un canal de Teams también se almacena en los buzones de los usuarios que llamaron a la reunión o llamada. Este contenido también se conserva cuando se coloca una suspensión de eDiscovery en los buzones de usuario.
 
 ### <a name="preserve-content-in-private-channels"></a>Conservación del contenido en canales privados
 
@@ -139,15 +137,15 @@ A partir de febrero de 2020, también activamos la capacidad de conservar conten
 Cada canal de equipo o equipo también contiene una wiki para tomar notas y colaborar. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede conservar el contenido de la wiki agregando el sitio de SharePoint del equipo a una suspensión de eDiscovery.
 
 > [!NOTE]
-> El 22 de junio de 2017 se publicó la capacidad de conservar el contenido wiki de un canal de equipo o equipo (cuando coloca el sitio de SharePoint del equipo en espera). Si un sitio de equipo está en espera, el contenido wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de equipo está en espera y el contenido wiki se eliminó antes del 22 de junio de 2017, el contenido wiki no se conservaba.
+> La funcionalidad para conservar el contenido wiki de un canal de equipo o equipo (cuando se coloca el sitio de SharePoint del equipo en espera) se publicó el 22 de junio de 2017. Si un sitio de equipo está en espera, el contenido wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de equipo está en espera y el contenido wiki se eliminó antes del 22 de junio de 2017, el contenido wiki no se conservaba.
 
 ### <a name="office-365-groups"></a>Grupos de Office 365
 
-Teams se basa en grupos de Office 365. Por lo tanto, colocar Office 365 grupos en suspensión de eDiscovery es similar colocar Teams contenido en espera.
+Teams se basa en grupos de Office 365. Por lo tanto, colocar Office 365 grupos en suspensión de eDiscovery es similar colocando contenido de Teams en espera.
 
-Tenga en cuenta lo siguiente al colocar grupos de Teams y Office 365 en una suspensión de eDiscovery:
+Tenga en cuenta lo siguiente al colocar teams y grupos de Office 365 en una suspensión de exhibición de documentos electrónicos:
 
-- Como se explicó anteriormente, para colocar contenido ubicado en Teams y Office 365 Grupos en espera, debe especificar el buzón y SharePoint sitio asociado a un grupo o equipo.
+- Como se explicó anteriormente, para colocar contenido ubicado en Teams y Office 365 Grupos en espera, debe especificar el buzón y el sitio de SharePoint asociados a un grupo o equipo.
 
 - Ejecute el cmdlet **Get-UnifiedGroup** en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ver las propiedades de Teams y grupos de Office 365. Esta es una buena manera de obtener la dirección URL del sitio asociado a un equipo o grupo de Office 365. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
 
@@ -163,7 +161,7 @@ Tenga en cuenta lo siguiente al colocar grupos de Teams y Office 365 en una susp
     > [!NOTE]
     > Para ejecutar el cmdlet **Get-UnifiedGroup** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
   
-- Cuando se busca el buzón de un usuario, no se buscará en ningún equipo o grupo de Office 365 del que sea miembro el usuario. De forma similar, cuando coloca un equipo o un grupo Office 365 en suspensión de exhibición de documentos electrónicos, solo el buzón de grupo y el sitio de grupo se colocan en espera. Los buzones de correo y los sitios de OneDrive para la Empresa de los miembros del grupo no se colocan en espera a menos que los agregue explícitamente a la suspensión de eDiscovery. Por lo tanto, si tiene que poner un equipo o Office 365 grupo en espera por un motivo legal, considere la posibilidad de agregar los buzones y las cuentas de OneDrive de los miembros del equipo o grupo en la misma suspensión.
+- Cuando se busca el buzón de un usuario, no se buscará en ningún equipo o grupo de Office 365 del que sea miembro el usuario. De forma similar, cuando coloca un equipo o un grupo Office 365 en suspensión de exhibición de documentos electrónicos, solo el buzón de grupo y el sitio de grupo se colocan en espera. Los buzones de correo y los sitios de OneDrive para la Empresa de los miembros del grupo no se colocan en espera a menos que los agregue explícitamente a la suspensión de eDiscovery. Por lo tanto, si tiene que poner un equipo o Office 365 grupo en espera por un motivo legal, considere la posibilidad de agregar los buzones de correo y las cuentas de OneDrive de los miembros del equipo o grupo en la misma suspensión.
 
 - Para obtener una lista de los miembros de un equipo o grupo de Office 365, puede ver las propiedades en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a> de la Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
@@ -176,26 +174,26 @@ Tenga en cuenta lo siguiente al colocar grupos de Teams y Office 365 en una susp
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>Conservación del contenido en cuentas de OneDrive
 
-Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de su organización para que pueda agregarlas a una suspensión o búsqueda asociada a un caso de exhibición de documentos electrónicos, consulte [Creación de una lista de todas las ubicaciones OneDrive de su organización](/onedrive/list-onedrive-urls). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios OneDrive de la organización. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de su organización para que pueda agregarlas a una suspensión o búsqueda asociada a un caso de exhibición de documentos electrónicos, consulte [Creación de una lista de todas las ubicaciones de OneDrive en su organización](/onedrive/list-onedrive-urls). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive de la organización. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
 > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). En el caso poco frecuente de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión de eDiscovery, antigua y su UPN cambia, debe actualizar la suspensión y tendrá que actualizar la suspensión y agregar la nueva dirección URL de OneDrive del usuario y quitar la anterior. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Eliminación de ubicaciones de contenido de una suspensión de eDiscovery
 
-Después de quitar un buzón de correo, SharePoint sitio o OneDrive cuenta de una suspensión de eDiscovery, se aplica una *suspensión de retraso*. Esto significa que la eliminación real de la suspensión se retrasa durante 30 días para evitar que los datos se eliminen (purguen) de forma permanente desde una ubicación de contenido. Esto ofrece a los administradores la oportunidad de buscar o recuperar contenido que se purgará después de quitar una suspensión de eDiscovery. Los detalles de cómo funciona la retención de retraso para buzones y sitios son diferentes.
+Después de quitar un buzón, un sitio de SharePoint o una cuenta de OneDrive de una suspensión de eDiscovery, se aplica una *suspensión de retraso* . Esto significa que la eliminación real de la suspensión se retrasa durante 30 días para evitar que los datos se eliminen (purguen) de forma permanente desde una ubicación de contenido. Esto ofrece a los administradores la oportunidad de buscar o recuperar contenido que se purgará después de quitar una suspensión de eDiscovery. Los detalles de cómo funciona la retención de retraso para buzones y sitios son diferentes.
 
 - **Buzones:** Una suspensión de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procesa el buzón y detecta que se quitó una suspensión de eDiscovery. En concreto, se aplica una retención retrasada a un buzón cuando el Asistente para carpetas administradas establece una de las siguientes propiedades de buzón en **True**:
 
    - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la Web) que se almacena en el buzón de un usuario.
 
-   - **DelayReleaseHoldApplied:** Esta propiedad se aplica al contenido basado en la nube (generado por aplicaciones que no son Outlook como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos en la nube generados por una aplicación de Microsoft se almacenan normalmente en una carpeta oculta en el buzón de un usuario.
+   - **DelayReleaseHoldApplied:** Esta propiedad se aplica al contenido basado en la nube (generado por aplicaciones que no son de Outlook, como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos en la nube generados por una aplicación de Microsoft se almacenan normalmente en una carpeta oculta en el buzón de un usuario.
 
    Cuando se coloca una suspensión de retraso en el buzón (cuando cualquiera de las propiedades anteriores se establece en **True**), el buzón sigue considerándose que está en espera durante una duración de suspensión ilimitada, como si el buzón estuviera en suspensión por juicio. Después de 30 días, la suspensión de retraso expira y Microsoft 365 intentará quitar automáticamente la suspensión de retraso (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **False**) para que se quite la suspensión. Después de establecer cualquiera de estas propiedades en **False**, los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procese el buzón.
 
    Para obtener más información, consulte [Gestionar buzón con una retención de retraso](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-- **sitios SharePoint y OneDrive:** cualquier contenido SharePoint o OneDrive que se conserve en la biblioteca de suspensión de conservación no se elimina durante el período de suspensión de retraso de 30 días después de que se quite un sitio de una suspensión de eDiscovery. Esto es similar a lo que ocurre cuando un sitio se libera de una directiva de retención. Además, no puede eliminar manualmente este contenido en la biblioteca de suspensión de conservación durante el período de retención de retraso de 30 días. 
+- **Sitios de SharePoint y OneDrive:** Cualquier contenido de SharePoint o OneDrive que se conserve en la biblioteca de suspensión de conservación no se elimina durante el período de suspensión de retraso de 30 días después de que un sitio se quite de una suspensión de eDiscovery. Esto es similar a lo que ocurre cuando un sitio se libera de una directiva de retención. Además, no puede eliminar manualmente este contenido en la biblioteca de suspensión de conservación durante el período de retención de retraso de 30 días. 
 
    Para obtener más información, consulte [Publicación de una directiva para la retención](retention.md#releasing-a-policy-for-retention).
 
@@ -208,10 +206,10 @@ En la tabla siguiente se enumeran los límites de los casos de eDiscovery y las 
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de directivas de suspensión de eDiscovery para una organización. Este límite incluye el total combinado de directivas de suspensión en casos de eDiscovery (Estándar) y eDiscovery (Premium).  <br/> |10 <sup>0001</sup>  <br/> |
+  |Número máximo de directivas de suspensión de eDiscovery para una organización. Este límite incluye el total combinado de directivas de suspensión en casos de eDiscovery (Estándar) y eDiscovery (Premium).  <br/> |10 000<sup>1</sup>  <br/> |
   |Número máximo de buzones en una única suspensión de eDiscovery. Este límite incluye el total combinado de buzones de usuario y los buzones asociados a Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |1,000  <br/> |
-  |Número máximo de sitios en una única suspensión de eDiscovery. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios SharePoint y los sitios asociados con Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |100  <br/> |
-  |Número máximo de casos que se muestran en la página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas Holds, Searches y Export dentro de un caso.  |10001<sup></sup>|
+  |Número máximo de sitios en una única suspensión de eDiscovery. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios de SharePoint y los sitios asociados a Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |100  <br/> |
+  |Número máximo de casos que se muestran en la página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas Holds, Searches y Export dentro de un caso.  |1000<sup>1</sup>|
 
    > [!NOTE]
    > <sup>1</sup> Para ver una lista de más de 1000 casos, retenciones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell security & compliance correspondiente:

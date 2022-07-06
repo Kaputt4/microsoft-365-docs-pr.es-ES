@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo Office 365 administradores globales pueden aplicar la personalización de marca de su organización a mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf6f3b9de64185778be7eeb4da6cc8e537f0305a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016864"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637029"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Adición de la marca de la organización a los mensajes cifrados de cifrado de mensajes de Microsoft 365 para empresas
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados de Cifrado de mensajes de Microsoft 365 para empresas
 
 Puede aplicar la personalización de marca de la empresa para personalizar el aspecto de los mensajes de correo electrónico de la organización y el portal de cifrado. Tendrá que aplicar permisos de administrador global a su cuenta profesional o educativa antes de empezar. Una vez que tenga estos permisos, use los cmdlets Get-OMEConfiguration y Set-OMEConfiguration en Exchange Online PowerShell para personalizar estas partes de los mensajes de correo electrónico cifrados:
 
@@ -53,7 +51,7 @@ Si quiere más control, use Cifrado avanzado de mensajes de Microsoft Purview pa
 - Si desea permitir que se revoquen los correos electrónicos
 - Si desea que los correos electrónicos enviados a destinatarios externos expiren después de un número especificado de días.
 
-Una vez creadas las plantillas, puede aplicarlas a correos electrónicos cifrados mediante Exchange reglas de flujo de correo. Si tiene Cifrado avanzado de mensajes de Microsoft Purview, puede revocar cualquier correo electrónico que haya marcado mediante estas plantillas.
+Una vez creadas las plantillas, puede aplicarlas a correos electrónicos cifrados mediante reglas de flujo de correo de Exchange. Si tiene Cifrado avanzado de mensajes de Microsoft Purview, puede revocar cualquier correo electrónico que haya marcado mediante estas plantillas.
 
 ## <a name="work-with-ome-branding-templates"></a>Trabajar con plantillas de personalización de marca de OME
 
@@ -146,25 +144,25 @@ Para quitar una plantilla de personalización de marca personalizada:
 
    Para obtener más información, vea [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Cree una regla de flujo de correo Exchange que aplique la personalización de marca a los correos electrónicos cifrados.
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Creación de una regla de flujo de correo de Exchange que aplique la personalización de marca a los correos electrónicos cifrados
 
 > [!IMPORTANT]
 > Las aplicaciones de terceros que examinan y modifican el correo pueden impedir que la personalización de marca de OME se aplique correctamente.
 
-Después de modificar la plantilla predeterminada o de crear nuevas plantillas de personalización de marca, puede crear Exchange reglas de flujo de correo para aplicar la personalización de marca personalizada en función de determinadas condiciones. Lo más importante es que el correo electrónico debe cifrarse. Esta regla aplicará personalización de marca en los siguientes escenarios:
+Después de modificar la plantilla predeterminada o de crear nuevas plantillas de personalización de marca, puede crear reglas de flujo de correo de Exchange para aplicar la personalización de marca personalizada en función de determinadas condiciones. Lo más importante es que el correo electrónico debe cifrarse. Esta regla aplicará personalización de marca en los siguientes escenarios:
 
 - Si el usuario final cifró manualmente el correo electrónico mediante Outlook o Outlook en la Web, anteriormente Outlook Web App
-- Si el correo electrónico se cifró automáticamente mediante una regla de flujo de correo de Exchange o la directiva de prevención de pérdida de datos de Microsoft Purview
+- Si el correo electrónico se cifró automáticamente mediante una regla de flujo de correo de Exchange o una directiva de Prevención de pérdida de datos de Microsoft Purview
 
-Para asegurarse de que El cifrado de mensajes de Microsoft Purview aplica la personalización de marca, configure una regla de flujo de correo para cifrar los mensajes de correo electrónico. La prioridad de la regla de cifrado debe ser mayor que la regla de personalización de marca para que la regla de cifrado se procese primero. De forma predeterminada, si crea la regla de cifrado antes de la regla de personalización de marca, la regla de cifrado tendrá una prioridad mayor. Para obtener información sobre cómo crear una regla de flujo de correo Exchange que aplique el cifrado, consulte [Definición de reglas de flujo de correo para cifrar los mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md). Para obtener información sobre cómo establecer la prioridad de una regla de flujo de correo, consulte [Administrar reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+Para asegurarse de que Cifrado de mensajes de Microsoft Purview aplica la personalización de marca, configure una regla de flujo de correo para cifrar los mensajes de correo electrónico. La prioridad de la regla de cifrado debe ser mayor que la regla de personalización de marca para que la regla de cifrado se procese primero. De forma predeterminada, si crea la regla de cifrado antes de la regla de personalización de marca, la regla de cifrado tendrá una prioridad mayor. Para obtener información sobre cómo crear una regla de flujo de correo de Exchange que aplique el cifrado, vea [Definir reglas de flujo de correo para cifrar los mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md). Para obtener información sobre cómo establecer la prioridad de una regla de flujo de correo, consulte [Administrar reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. En un explorador web, con una cuenta profesional o educativa a la que se hayan concedido permisos de administrador global, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Elija el icono **Administrador** .
+2. Elija el **icono Administración**.
 
-3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros** \> de administración <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Administración centros** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**de Exchange**</a>.
 
-4. En el EAC, vaya a **Reglas** de **flujo** \> de correo y seleccione **Nuevo** ![icono nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Cree una nueva regla**. Para obtener más información sobre el uso del EAC, consulte [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Reglas** de **flujo** \> de correo y seleccione **Nuevo** ![icono nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Cree una nueva regla**. Para obtener más información sobre el uso del EAC, vea [Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center).
 
 5. En **Nombre**, escriba un nombre para la regla, como Personalización de marca para el departamento de ventas.
 
@@ -176,7 +174,7 @@ Para asegurarse de que El cifrado de mensajes de Microsoft Purview aplica la per
 
 7. Si ya ha definido una regla de flujo de correo para aplicar el cifrado, omita este paso. De lo contrario, para configurar la regla de flujo de correo para aplicar el cifrado, en **Haga lo siguiente**, seleccione **Modificar la seguridad del mensaje** y, a continuación, elija **Aplicar Office 365 cifrado de mensajes y protección de derechos**. Seleccione una plantilla rms de la lista y, a continuación, elija **agregar acción**.
 
-   La lista de plantillas incluye las plantillas y opciones predeterminadas y las plantillas personalizadas que cree. Si la lista está vacía, asegúrese de que ha configurado El cifrado de mensajes de Microsoft Purview. Para obtener instrucciones, consulte [Configuración del cifrado de mensajes de Microsoft Purview](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, consulte [Configuración y administración de plantillas para Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción **No reenviar** , vea [No reenviar opción para correos electrónicos](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **cifrar solo** , vea [Opción Cifrar solo para correos electrónicos](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   La lista de plantillas incluye las plantillas y opciones predeterminadas y las plantillas personalizadas que cree. Si la lista está vacía, asegúrese de que ha configurado Cifrado de mensajes de Microsoft Purview. Para obtener instrucciones, consulte [Configuración de Cifrado de mensajes de Microsoft Purview](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, consulte [Configuración y administración de plantillas para Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción **No reenviar** , vea [No reenviar opción para correos electrónicos](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **cifrar solo** , vea [Opción Cifrar solo para correos electrónicos](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. En **Haga lo siguiente**, seleccione **Modificar la seguridad** \> del mensaje **Aplicar personalización de marca a los mensajes de OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca.
 

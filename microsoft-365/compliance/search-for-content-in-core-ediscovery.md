@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1c51475602e3a0807932501325e12d93a89fcba3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318932"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638133"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Después de crear un caso Microsoft Purview eDiscovery (Estándar) y de que las personas de interés en el caso estén en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento Microsoft Purview. Estas búsquedas aparecen en la página **Búsquedas** del caso de exhibición de documentos electrónicos (estándar) al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
+Una vez que se crea un caso de Microsoft Purview eDiscovery (estándar) y las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento Microsoft Purview. Estas búsquedas aparecen en la página **Búsquedas** del caso de exhibición de documentos electrónicos (estándar) al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
 
 Para crear una búsqueda de eDiscovery (estándar):
   
@@ -79,6 +77,6 @@ Una vez finalizada la búsqueda, puede obtener una vista previa de los resultado
 
 - Al hacer clic en **Elegir usuarios, grupos o equipos** para especificar los buzones de correo que se van a buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **Elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de tres caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en **Elegir**.
 
-- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones que se van a buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
+- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones que se van a buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca en el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
 
 - Para agregar sitios a la búsqueda, active el botón de alternancia y, a continuación, haga clic en **Elegir sitios**. Escriba la dirección URL de cada sitio en el que desee buscar. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365.

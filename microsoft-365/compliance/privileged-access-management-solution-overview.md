@@ -1,6 +1,6 @@
 ---
-title: Administración de acceso con privilegios en Microsoft 365
-description: Obtenga información sobre cómo configurar las capacidades de riesgo de insider en Microsoft 365.
+title: Administración del acceso con privilegios
+description: Obtenga información sobre cómo configurar las funcionalidades de riesgo internos en Microsoft Purview.
 keywords: Microsoft 365, riesgo interno, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,29 +16,29 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: fe229318d3eaabfe9a20fb83d9c42d06651a5f85
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 67857a2ad2ac57543ce20dd8eab544cf7dcfef42
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335279"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639872"
 ---
-# <a name="privileged-access-management-in-microsoft-365"></a>Administración de acceso con privilegios en Microsoft 365
+# <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
-Tener acceso permanente por parte de algunos usuarios a información confidencial o opciones de configuración de red críticas en Microsoft Exchange Online es una ruta potencial para cuentas comprometidas o actividades de amenazas internas. La administración de acceso con privilegios ayuda a proteger su organización de infracciones y ayuda a cumplir los procedimientos recomendados de cumplimiento limitando el acceso permanente a datos confidenciales o el acceso a opciones de configuración críticas. En lugar de que los administradores tengan acceso constante, se implementan reglas de acceso just-in-time para tareas que necesitan permisos elevados. Habilitar la administración de acceso con privilegios Exchange Online en Microsoft 365 permite a su organización operar con privilegios de pie cero y proporcionar una capa de defensa contra vulnerabilidades de acceso administrativo permanentes.
+Tener acceso permanente por parte de algunos usuarios a información confidencial o a la configuración de red crítica en Microsoft Exchange Online es una vía potencial para cuentas en peligro o actividades de amenazas internas. Microsoft Purview Privileged Access Management ayuda a proteger su organización frente a infracciones y ayuda a cumplir los procedimientos recomendados de cumplimiento limitando el acceso permanente a datos confidenciales o el acceso a la configuración crítica. En lugar de que los administradores tengan acceso constante, se implementan reglas de acceso Just-In-Time para las tareas que necesitan permisos elevados. La habilitación de la administración de acceso con privilegios para Exchange Online en Microsoft 365 permite que su organización funcione con privilegios permanentes y proporcione una capa de defensa frente a vulnerabilidades de acceso administrativo permanentes.
 
-## <a name="configure-privileged-access-management-for-microsoft-365"></a>Configurar la administración de acceso con privilegios Microsoft 365
+## <a name="configure-privileged-access-management"></a>Configurar la administración del acceso con privilegios
 
 Siga estos pasos para configurar la administración de acceso con privilegios para su organización:
 
-![Pasos de administración de acceso con privilegios de solución de riesgo insider.](../media/ir-solution-pam-steps.png)
+![Pasos de administración de acceso con privilegios de la solución de riesgo interno.](../media/ir-solution-pam-steps.png)
 
-1. Obtenga información [sobre la administración de acceso con](privileged-access-management-overview.md) privilegios en Microsoft 365
-2. Crear un [grupo de aprobadores](privileged-access-management-configuration.md#step-1-create-an-approvers-group)
-3. Habilitar [la administración de acceso con privilegios](privileged-access-management-configuration.md#step-2-enable-privileged-access)
-4. Crear una directiva [de acceso](privileged-access-management-configuration.md#step-3-create-an-access-policy)
-5. Enviar o aprobar [solicitudes de acceso con privilegios](privileged-access-management-configuration.md#step-4-submitapprove-privileged-access-requests)
+1. Más información sobre la [administración de acceso con privilegios](privileged-access-management.md)
+2. Creación [del grupo de aprobadores](privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+3. Habilitación [de la administración de acceso con privilegios](privileged-access-management-configuration.md#step-2-enable-privileged-access)
+4. Creación de una [directiva de acceso](privileged-access-management-configuration.md#step-3-create-an-access-policy)
+5. Envío o aprobación de [solicitudes de acceso con privilegios](privileged-access-management-configuration.md#step-4-submitapprove-privileged-access-requests)
 
 ## <a name="more-information-about-privileged-access-management"></a>Más información sobre la administración de acceso con privilegios
 
-- [Preguntas más frecuentes sobre la administración de acceso con privilegios](privileged-access-management-overview.md#frequently-asked-questions)
+- [Preguntas más frecuentes sobre la administración de acceso con privilegios](privileged-access-management.md#frequently-asked-questions)

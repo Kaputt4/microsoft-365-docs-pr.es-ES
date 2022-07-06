@@ -19,24 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como la creación de búsquedas y la ejecución de informes mediante PowerShell de cumplimiento de seguridad &.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018083"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638596"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  La creación rápida y la generación de informes de búsquedas de detección suele ser un paso importante en eDiscovery e investigaciones cuando se intenta obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle a hacerlo, Security & Compliance PowerShell ofrece un conjunto de cmdlets para automatizar tareas de búsqueda de contenido que consumen mucho tiempo. Estos scripts proporcionan una manera rápida y sencilla de crear una serie de búsquedas y, a continuación, ejecutar informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de búsquedas con el fin de comparar los resultados que genera cada uno. Estos scripts pueden ayudarle a identificar y eliminar los datos de forma rápida y eficaz.
 
 ## <a name="before-you-create-a-content-search"></a>Antes de crear una búsqueda de contenido
 
-- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento de Microsoft Purview para ejecutar los scripts que se describen en este tema.
+- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento Microsoft Purview para ejecutar los scripts que se describen en este tema.
 
-- Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de su organización que puede agregar al archivo CSV en el paso 1, consulte [Creación de una lista de todas las ubicaciones OneDrive de su organización](/onedrive/list-onedrive-urls).
+- Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de su organización que puede agregar al archivo CSV en el paso 1, consulte [Creación de una lista de todas las ubicaciones de OneDrive de su organización](/onedrive/list-onedrive-urls).
 
 - Asegúrese de guardar todos los archivos que cree en este tema en la misma carpeta. Esto facilitará la ejecución de los scripts.
 
@@ -66,7 +64,7 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
 
    ****
 
-   |Parámetro|Descripción|
+   |Parámetro|Description|
    |---|---|
    |`ExchangeLocation`|Dirección SMTP del buzón del usuario.|
    |`SharePointLocation`|La dirección URL del sitio de OneDrive para la Empresa del usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de OneDrive para la Empresa sitios, use este formato: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Por ejemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
@@ -75,11 +73,11 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
    |`EndDate`|En el caso del correo electrónico, la fecha en o antes de que el usuario enviara un mensaje. En el caso de los documentos de SharePoint o OneDrive para la Empresa sitios, la fecha en o antes de la última modificación de un documento.|
    |
 
-3. Guarde el archivo Excel como un archivo CSV en una carpeta del equipo local. El script que cree en el paso 3 usará la información de este archivo CSV para crear las búsquedas.
+3. Guarde el archivo de Excel como un archivo CSV en una carpeta del equipo local. El script que cree en el paso 3 usará la información de este archivo CSV para crear las búsquedas.
 
-## <a name="step-2-connect-to-security--compliance-powershell"></a>Paso 2: Conectar a PowerShell de cumplimiento de & seguridad
+## <a name="step-2-connect-to-security--compliance-powershell"></a>Paso 2: Conexión a PowerShell de cumplimiento de & seguridad
 
-El siguiente paso es conectarse a PowerShell de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, consulte [Conectar a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
+El siguiente paso es conectarse a PowerShell de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, vea [Conectarse Seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Paso 3: Ejecutar el script para crear e iniciar las búsquedas
 

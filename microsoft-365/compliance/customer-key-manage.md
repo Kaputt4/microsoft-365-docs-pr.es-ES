@@ -12,16 +12,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015756"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637337"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de configurar la clave de cliente, deberá crear y asignar una o varias directivas de cifrado de datos (DEP). Una vez que haya asignado los DEP, puede administrar las claves como se describe en este artículo. Obtenga más información sobre la clave de cliente en los temas relacionados.
 
@@ -57,7 +55,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://
 
 ### <a name="assign-multi-workload-policy"></a>Asignación de directivas de varias cargas de trabajo
 
-Asigne el DEP mediante el cmdlet Set-M365DataAtRestEncryptionPolicyAssignment. Una vez que asigne la directiva, Microsoft 365 cifra los datos con la clave identificada en el DEP.
+Asigne el DEP mediante el cmdlet Set-M365DataAtRestEncryptionPolicyAssignment. Una vez que asigna la directiva, Microsoft 365 cifra los datos con la clave identificada en el DEP.
 
 ```powershell
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy <PolicyName or ID>
@@ -75,7 +73,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Completará estos pasos en Exchange Online PowerShell.
 
-Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigne un DEP a un buzón de Microsoft 365. Microsoft 365 usará las claves identificadas en la directiva para cifrar el buzón. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigna un DEP a un buzón de Correo en Microsoft 365. A continuación, Microsoft 365 usará las claves identificadas en la directiva para cifrar el buzón. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
 
@@ -117,7 +115,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Donde *MailboxIdParameter* especifica un buzón de usuario. Para obtener más información sobre el cmdlet Set-Mailbox, consulte [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
-En entornos híbridos, puede asignar un DEP a los datos de buzón de correo local que se sincronizan en el inquilino de Exchange Online. Para asignar un DEP a estos datos de buzón sincronizados, usará el cmdlet Set-MailUser. Para obtener más información sobre los datos de buzón en el entorno híbrido, consulte [Buzones locales que usan Outlook para iOS y Android con autenticación moderna híbrida](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+En entornos híbridos, puede asignar un DEP a los datos de buzón de correo local que se sincronizan en el inquilino de Exchange Online. Para asignar un DEP a estos datos de buzón sincronizados, usará el cmdlet Set-MailUser. Para obtener más información sobre los datos de buzón en el entorno híbrido, vea [Buzones locales con Outlook para iOS y Android con autenticación moderna híbrida](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -125,19 +123,19 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Donde *MailUserIdParameter* especifica un usuario de correo (también conocido como usuario habilitado para correo). Para obtener más información sobre el cmdlet Set-MailUser, consulte [Set-MailUser](/powershell/module/exchange/set-mailuser).
 
-## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Creación de un DEP para su uso con archivos SharePoint Online, OneDrive para la Empresa y Teams
+## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Creación de un DEP para su uso con archivos de SharePoint Online, OneDrive para la Empresa y Teams
 
 Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
 
-Para configurar la clave de cliente para SharePoint archivos en línea, OneDrive para la Empresa y Teams, complete estos pasos en SharePoint PowerShell en línea.
+Para configurar la clave de cliente para archivos de SharePoint Online, OneDrive para la Empresa y Teams, complete estos pasos en PowerShell de SharePoint Online.
 
-Un DEP se asocia a un conjunto de claves almacenadas en Azure Key Vault. Se aplica un DEP a todos los datos de una ubicación geográfica, también denominada geoárea. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geo con la capacidad de usar claves diferentes por geo. Si no usa multigeográfica, puede crear un DEP en su organización para usarlo con archivos de SharePoint Online, OneDrive para la Empresa y Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos de esa ubicación geográfica. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Un DEP se asocia a un conjunto de claves almacenadas en Azure Key Vault. Se aplica un DEP a todos los datos de una ubicación geográfica, también denominada geoárea. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geo con la capacidad de usar claves diferentes por geo. Si no usa multigeográfica, puede crear un DEP en su organización para usarlo con archivos de SharePoint Online, OneDrive para la Empresa y Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos en esa ubicación geográfica. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
 
-Para crear un DEP, debe usar SharePoint PowerShell en línea.
+Para crear un DEP, debe usar PowerShell de SharePoint Online.
 
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [conéctese a SharePoint PowerShell en línea](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [conéctese a PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
 2. En el shell de administración de Microsoft Office SharePoint Online, ejecute el cmdlet Register-SPODataEncryptionPolicy de la siguiente manera:
 
@@ -221,7 +219,7 @@ La propiedad IsEncrypted devuelve un valor de **true** si el buzón está cifrad
 
 El cmdlet New-MoveRequest ya no está disponible para los movimientos de buzón local. Consulte [este anuncio](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) para obtener información adicional.
 
-### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Comprobación de que el cifrado se completa para SharePoint archivos en línea, OneDrive para la Empresa y Teams
+### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Comprobación de que el cifrado se completa para archivos de SharePoint Online, OneDrive para la Empresa y Teams
 
 Compruebe el estado del cifrado mediante la ejecución del cmdlet Get-SPODataEncryptionPolicy como se indica a continuación:
 
@@ -346,9 +344,16 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 Si necesita volver a las claves administradas por Microsoft, puede hacerlo. Al desconectarse, los datos se vuelven a cifrar mediante el cifrado predeterminado compatible con cada carga de trabajo individual. Por ejemplo, Exchange Online admite el cifrado predeterminado mediante claves administradas por Microsoft.
 
 > [!IMPORTANT]
-> La eliminación no es lo mismo que una purga de datos. Una purga de datos elimina permanentemente los datos de la organización de Microsoft 365, pero la eliminación no lo hace. No se puede realizar una purga de datos para una directiva de varias cargas de trabajo.
+> La eliminación no es lo mismo que una purga de datos. Una purga de datos elimina de forma permanente los datos de la organización de Microsoft 365; la eliminación no lo hace. No se puede realizar una purga de datos para una directiva de varias cargas de trabajo.
 
-Si decide no usar la clave de cliente para asignar dep de cargas de trabajo múltiples, tendrá que ponerse en contacto con el soporte técnico de Microsoft con una solicitud para "offboard" desde la clave de cliente. Pida al equipo de soporte técnico que abra una solicitud de servicio contra el equipo de clave de cliente de Microsoft Purview. Póngase en contacto con m365-ck@service.microsoft.com si tiene alguna pregunta.
+**Si decide no usar la clave de cliente para asignar dep de cargas de trabajo múltiples, deberá presentar una incidencia de soporte técnico mediante el portal de administración de Microsoft y proporcionar los siguientes detalles en la solicitud:**
+
+1. FQDN del inquilino
+2. Contacto del inquilino para la solicitud de retirada
+3. Motivo de la retirada
+4. Incluya una nota en el vale de servicio para indicar que la solicitud debe dirigirse al equipo de clave de cliente de M365 e incluir el incidente. #
+
+Debe conservar los AKV de clave de cliente y las claves de cifrado con los permisos adecuados para que los datos se vuelvan a reescriba mediante claves administradas por Microsoft. Si tiene alguna pregunta, póngase en contacto con m365-ck@service.microsoft.com.
 
 Si ya no desea cifrar buzones individuales mediante DEP de nivel de buzón, puede anular la asignación de desasignaciones de nivel de buzón de correo de todos los buzones de correo.
 
@@ -365,7 +370,7 @@ Para anular la asignación de los DEP de buzón de correo, use el cmdlet de Powe
 Al ejecutar este cmdlet, se anula la asignación del DEP asignado actualmente y se vuelve a cifrar el buzón mediante el DEP asociado a las claves administradas por Microsoft predeterminadas. No se puede anular la asignación del DEP usado por las claves administradas por Microsoft. Si no desea usar claves administradas por Microsoft, puede asignar otro DEP de clave de cliente al buzón.
 
 > [!IMPORTANT]
-> No se admite la reversión de la clave de cliente a las claves administradas por Microsoft para SharePoint archivos en línea, OneDrive para la Empresa y Teams.
+> No se admite la reversión de la clave de cliente a las claves administradas por Microsoft para archivos de SharePoint Online, OneDrive para la Empresa y Teams.
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocar las claves e iniciar el proceso de ruta de acceso de purga de datos
 
@@ -377,7 +382,7 @@ Microsoft 365 audita y valida la ruta de acceso de purga de datos. Para obtener 
 
 - [Consideraciones sobre el planeamiento de salida de O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-No se admite la purga de DEP de varias cargas de trabajo para la clave de cliente. El DEP de varias cargas de trabajo se usa para cifrar los datos en varias cargas de trabajo entre todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo fueran inaccesibles. Si decide salir de Microsoft 365 servicios por completo, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Vea [cómo eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+No se admite la purga de DEP de varias cargas de trabajo para la clave de cliente. El DEP de varias cargas de trabajo se usa para cifrar los datos en varias cargas de trabajo entre todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo fueran inaccesibles. Si decide salir por completo de los servicios de Microsoft 365, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Consulte [cómo eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Revoque las claves de cliente y la clave de disponibilidad para Exchange Online y Skype Empresarial
 
@@ -410,9 +415,9 @@ Para iniciar la ruta de acceso de purga de datos, complete estos pasos:
 
     Una vez que Microsoft recibe el documento legal, Microsoft ejecuta cmdlets para desencadenar la purga de datos que primero elimina la directiva, marca los buzones para su eliminación permanente y, a continuación, elimina la clave de disponibilidad. Una vez completado el proceso de purga de datos, los datos se han purgado, no se puede acceder a Exchange Online y no se pueden recuperar.
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Revocar las claves de cliente y la clave de disponibilidad para SharePoint archivos en línea, OneDrive para la Empresa y Teams
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Revocar las claves de cliente y la clave de disponibilidad para archivos de SharePoint Online, OneDrive para la Empresa y Teams
 
-No se admite la purga de SharePoint, OneDrive para el trabajo o la escuela, y los ARCHIVOS DEP de Teams no se admiten en clave de cliente. Estos DEP de varias cargas de trabajo se usan para cifrar datos en varias cargas de trabajo en todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo se hicieran inaccesibles. Si decide salir de Microsoft 365 servicios por completo, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Vea cómo [eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+No se admite la purga de archivos DEP de SharePoint, OneDrive para el trabajo o la escuela, ni archivos de Teams en clave de cliente. Estos DEP de varias cargas de trabajo se usan para cifrar datos en varias cargas de trabajo en todos los usuarios del inquilino. La purga de este tipo de DEP daría lugar a que los datos de varias cargas de trabajo se hicieran inaccesibles. Si decide salir por completo de los servicios de Microsoft 365, podría seguir la ruta de acceso de eliminación de inquilinos según el proceso documentado. Consulte cómo [eliminar un inquilino en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

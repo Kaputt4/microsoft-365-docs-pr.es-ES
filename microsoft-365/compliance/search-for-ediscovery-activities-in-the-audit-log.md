@@ -15,22 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Obtenga información sobre los eventos que se registran cuando los usuarios asignados a los permisos de exhibición de documentos electrónicos realizan tareas de búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium) en el portal de cumplimiento de Microsoft Purview.
+description: Obtenga información sobre los eventos que se registran cuando los usuarios asignados a los permisos de exhibición de documentos electrónicos realizan tareas de búsqueda de contenido, exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 416cc91a0eb1c97f43c5d279cd47b68c115c3b71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015504"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639366"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Las actividades relacionadas con la búsqueda de contenido y eDiscovery (para microsoft Purview eDiscovery (estándar) y microsoft Purview eDiscovery (Premium)) que se realizan en el portal de cumplimiento de Microsoft Purview o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o administradores de eDiscovery (o los permisos de exhibición de documentos electrónicos asignados por el usuario) realizan las siguientes tareas de búsqueda de contenido y exhibición de contenido (estándar) en el portal de cumplimiento:
+Actividades relacionadas con la búsqueda de contenido y eDiscovery (para Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium)) que se realizan en portal de cumplimiento Microsoft Purview  o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o administradores de eDiscovery (o los permisos de exhibición de documentos electrónicos asignados por el usuario) realizan las siguientes tareas de búsqueda de contenido y exhibición de contenido (estándar) en el portal de cumplimiento:
   
-- Creación y administración de casos de eDiscovery (estándar) y eDiscovery (Premium)
+- Creación y administración de casos de eDiscovery (Estándar) y eDiscovery (Premium)
 
 - Creación, inicio y edición de búsquedas de contenido
 
@@ -52,7 +50,7 @@ Actualmente, tiene que hacer algunas cosas específicas para ver las actividades
 
 2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Auditar**.
 
-3. En la lista desplegable **Actividades**, en **actividades de exhibición de documentos electrónicos** o **actividades de exhibición de documentos electrónicos (Premium),** haga clic en una o varias actividades para buscar.
+3. En la lista desplegable **Actividades** , en **actividades de exhibición de documentos electrónicos** o **actividades de exhibición de documentos electrónicos (Premium),** haga clic en una o varias actividades para buscar.
 
     > [!NOTE]
     > La lista desplegable **Actividades** también incluye un grupo de actividades denominadas **actividades de cmdlet de eDiscovery** que devolverán registros del registro de auditoría de cmdlets.
@@ -69,7 +67,7 @@ Actualmente, tiene que hacer algunas cosas específicas para ver las actividades
 
     Se muestra una página desplegable **Detalles** que contiene las propiedades detalladas del registro de eventos. Para mostrar detalles adicionales, haga clic en **Más información**. Para obtener una descripción de estas propiedades, vea la sección [Propiedades detalladas para actividades de exhibición de documentos electrónicos](#detailed-properties-for-ediscovery-activities) .
 
-9. Si lo desea, puede exportar los resultados de la búsqueda de registros de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
+9. Si lo desea, puede exportar los resultados de la búsqueda de registros de auditoría a un archivo CSV y, a continuación, usar la característica de Power Query de Excel para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
@@ -78,7 +76,7 @@ En la tabla siguiente se describen las actividades búsqueda de contenido y exhi
 > [!NOTE]
 > Las actividades de eDiscovery descritas en esta sección proporcionan información similar a las actividades de cmdlet de eDiscovery descritas en la sección siguiente. Se recomienda usar las actividades de exhibición de documentos electrónicos que se describen en esta sección, ya que aparecerán en los resultados de la búsqueda del registro de auditoría en un plazo de 30 minutos. Las actividades de cmdlet de eDiscovery pueden tardar hasta 24 horas en aparecer en los resultados de la búsqueda de registros de auditoría.
   
-|**Nombre descriptivo**|**Operación**|**Cmdlet correspondiente**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Cmdlet correspondiente**|**Description**|
 |:-----|:-----|:-----|:-----|
 |Se ha agregado un miembro al caso de eDiscovery  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Se agregó un usuario como miembro de un caso de exhibición de documentos electrónicos. Como miembro de un caso, un usuario puede realizar varias tareas relacionadas con casos en función de si se le han asignado los permisos necesarios.  <br/> |
 |Búsqueda de contenido modificada  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Se ha cambiado una búsqueda de contenido existente. Los cambios pueden incluir la adición o eliminación de ubicaciones de contenido o la edición de la consulta de búsqueda.  <br/> |
@@ -103,8 +101,8 @@ En la tabla siguiente se describen las actividades búsqueda de contenido y exhi
 |Exportación descargada de la búsqueda de contenido  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un usuario descargó los resultados de una búsqueda de contenido en su equipo local. Se debe iniciar una **exportación iniciada de la actividad de búsqueda de contenido** antes de que se puedan descargar los resultados de la búsqueda.  <br/> |
 |Resultados en vista previa de la búsqueda de contenido  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un usuario ha obtenido una vista previa de los resultados de una búsqueda de contenido.  <br/> |
 |Resultados purgados de la búsqueda de contenido  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un usuario purgue los resultados de una búsqueda de contenido mediante la ejecución del comando **New-ComplianceSearchAction -Purge** .  <br/> |
-|Se ha quitado el análisis de la búsqueda de contenido.  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de preparación de búsqueda de contenido (para preparar los resultados de búsqueda para eDiscovery (Premium)). Si la acción de preparación tenía menos de dos semanas de antigüedad, los resultados de búsqueda que se prepararon para eDiscovery (Premium) se eliminaron del área de almacenamiento de Microsoft Azure. Si la acción de preparación era anterior a 2 semanas, este evento indica que solo se eliminó la acción de preparación correspondiente.  <br/> |
-|Se ha quitado la exportación de la búsqueda de contenido  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de exportación de búsqueda de contenido. Si la acción de exportación tenía menos de dos semanas de antigüedad, se eliminaron los resultados de búsqueda que se cargaron en el área de almacenamiento Microsoft Azure. Si la acción de exportación era anterior a 2 semanas, este evento indica que solo se eliminó la acción de exportación correspondiente.  <br/> |
+|Se ha quitado el análisis de la búsqueda de contenido.  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de preparación de búsqueda de contenido (para preparar los resultados de búsqueda para eDiscovery (Premium)). Si la acción de preparación tenía menos de dos semanas de antigüedad, los resultados de búsqueda preparados para eDiscovery (Premium) se eliminaron del área de almacenamiento de Microsoft Azure. Si la acción de preparación era anterior a 2 semanas, este evento indica que solo se eliminó la acción de preparación correspondiente.  <br/> |
+|Se ha quitado la exportación de la búsqueda de contenido  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de exportación de búsqueda de contenido. Si la acción de exportación tenía menos de dos semanas de antigüedad, se eliminaron los resultados de búsqueda cargados en el área de almacenamiento de Microsoft Azure. Si la acción de exportación era anterior a 2 semanas, este evento indica que solo se eliminó la acción de exportación correspondiente.  <br/> |
 |Se quitó el miembro del caso de eDiscovery  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Un usuario se quitó como miembro de un caso de exhibición de documentos electrónicos.  <br/> |
 |Se han quitado los resultados de la vista previa de la búsqueda de contenido  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de vista previa de búsqueda de contenido.  <br/> |
 |Acción de purga eliminada realizada en la búsqueda de contenido  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de purga de búsqueda de contenido.  <br/> |
@@ -160,7 +158,7 @@ Como se indicó anteriormente, las actividades de cmdlet de eDiscovery pueden ta
 > [!TIP]
 > Los cmdlets de la columna **Operation** de la tabla siguiente están vinculados al tema de ayuda de cmdlet correspondiente en TechNet. Vaya al tema de ayuda del cmdlet para obtener una descripción de los parámetros disponibles para cada cmdlet. El parámetro y el valor del parámetro que se usaron con un cmdlet se incluyen en la entrada de registro de auditoría para cada actividad de cmdlet de eDiscovery que se registra. 
   
-|**Nombre descriptivo**|**Operación (cmdlet)**|**Descripción**|
+|**Nombre descriptivo**|**Operación (cmdlet)**|**Description**|
 |:-----|:-----|:-----|
 |Suspensión creada en el caso de eDiscovery  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |Se creó una suspensión para un caso de exhibición de documentos electrónicos. Se puede crear una suspensión con o sin especificar un origen de contenido. Si se especifican orígenes de contenido, se identificarán en la entrada del registro de auditoría.  <br/> |
 |Suspensión eliminada del caso de eDiscovery  <br/> |[Remove-CaseHoldPolicy](/powershell/module/exchange/remove-caseholdpolicy) <br/> |Se eliminó una suspensión asociada a un caso de exhibición de documentos electrónicos. Al eliminar una suspensión, se liberan todas las ubicaciones de contenido de la suspensión. La eliminación de la suspensión también da como resultado la eliminación de las reglas de suspensión de casos asociadas a la suspensión (vea **Remove-CaseHoldRule** a continuación).  <br/> |
@@ -197,7 +195,7 @@ Como se indicó anteriormente, las actividades de cmdlet de eDiscovery pueden ta
 En la tabla siguiente se describen las propiedades que se incluyen en la página de control flotante de una actividad de exhibición de documentos electrónicos enumerada en los resultados de la búsqueda. Estas propiedades también se incluyen en el archivo CSV al exportar los resultados de la búsqueda de registros de auditoría. Un registro de auditoría para una actividad de exhibición de documentos electrónicos no incluirá todas las propiedades detalladas que se enumeran a continuación.
   
 > [!TIP]
-> Al exportar los resultados de la búsqueda, el archivo CSV contiene una columna denominada **AudtiData**, que contiene las propiedades detalladas descritas en la tabla siguiente en una propiedad de varios valores. Puede usar la característica Power Query en Excel para dividir esta columna en varias columnas de modo que cada propiedad tenga su propia columna. Esto le permitirá ordenar y filtrar una o varias de estas propiedades. Para obtener más información, vea la sección "Exportar los resultados de búsqueda a un archivo" en [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file). 
+> Al exportar los resultados de la búsqueda, el archivo CSV contiene una columna denominada **AudtiData**, que contiene las propiedades detalladas descritas en la tabla siguiente en una propiedad de varios valores. Puede usar la característica Power Query en Excel para dividir esta columna en varias columnas para que cada propiedad tenga su propia columna. Esto le permitirá ordenar y filtrar una o varias de estas propiedades. Para obtener más información, vea la sección "Exportar los resultados de búsqueda a un archivo" en [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file). 
   
 |**Propiedad**|**Descripción**|
 |:-----|:-----|
@@ -216,14 +214,14 @@ En la tabla siguiente se describen las propiedades que se incluyen en la página
 |ObjectId  <br/> |GUID o nombre del objeto (por ejemplo, una búsqueda de contenido o un caso de exhibición de documentos electrónicos (estándar) que la actividad enumerada en la propiedad Operation creó, obtuvo acceso, cambió o eliminó. Este objeto también se identifica en la columna Item de los resultados de búsqueda del registro de auditoría.  <br/> |
 |ObjectType  <br/> |Tipo de objeto eDiscovery que el usuario creó, eliminó o modificó; por ejemplo, una acción de búsqueda de contenido (vista previa, exportación o purga), un caso de exhibición de documentos electrónicos o una búsqueda de contenido.  <br/> |
 |Operación  <br/> |Nombre de la operación que corresponde a la actividad eDiscovery que se realizó.  <br/> |
-|OrganizationId  <br/> |GUID de la organización Microsoft 365.  <br/> |
+|OrganizationId  <br/> |GUID de la organización de Microsoft 365.  <br/> |
 |Parámetros  <br/> |Nombre y valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
 |PublicFolderLocations  <br/> |Las ubicaciones de carpetas públicas de Exchange Online que se incluyen en una búsqueda de contenido o se colocan en espera en un caso de exhibición de documentos electrónicos.  <br/> |
-|Consulta  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consultas.  <br/> |
+|Query  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consultas.  <br/> |
 |RecordType  <br/> |El tipo de operación indicado por el registro. El valor **de 18** indica un evento relacionado con una actividad enumerada en la sección [de actividades de cmdlets de eDiscovery](#ediscovery-cmdlet-activities) . Un valor de **24** indica un evento relacionado con una actividad que se muestra en la sección [Búsqueda y visualización de actividades de eDiscovery](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |
 |ResultStatus  <br/> |Indica si la acción (especificada en la propiedad Operation) se completó correctamente o no.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indica que la actividad era un evento del centro de cumplimiento. Todas las actividades de eDiscovery tendrán un valor de **0** para esta propiedad.  <br/> |
-|SharepointLocations  <br/> |Los SharePoint sitios en línea que se incluyen en una búsqueda de contenido o se colocan en espera en un caso de exhibición de documentos electrónicos.  <br/> |
+|SharepointLocations  <br/> |Los sitios de SharePoint Online que se incluyen en una búsqueda de contenido o se colocan en espera en un caso de exhibición de documentos electrónicos.  <br/> |
 |StartTime  <br/> |Fecha y hora de la hora universal coordinada (UTC) cuando se inició la actividad de exhibición de documentos electrónicos.  <br/> |
 |UserId  <br/> |El usuario que realizó la actividad (especificada en la propiedad Operation) que provocó que se registrara el registro. Los registros de la actividad de exhibición de documentos electrónicos realizadas por cuentas del sistema (como NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría.  <br/> |
 |UserKey  <br/> |Un id. alternativo para el usuario identificado en la propiedad id. de usuario. En el caso de las actividades de eDiscovery, el valor de esta propiedad suele ser el mismo que la propiedad UserId.  <br/> |

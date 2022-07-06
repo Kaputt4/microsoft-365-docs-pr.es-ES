@@ -19,33 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Cómo activar o desactivar la característica de búsqueda de registros de auditoría en el portal de cumplimiento de Microsoft Purview para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cómo activar o desactivar la característica de búsqueda de registros de auditoría en el portal de cumplimiento Microsoft Purview para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
+ms.openlocfilehash: 7a757b07796f2b25fc6269a41d51f27e696e77cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078875"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640278"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+El registro de auditoría se activará de forma predeterminada para Microsoft 365 y Office 365 organizaciones empresariales. Sin embargo, al configurar una nueva organización de Microsoft 365 o Office 365, debe comprobar el estado de auditoría de su organización. Para obtener instrucciones, consulte [la sección Verify the auditing status for your organization (Comprobar el estado de auditoría de su organización](#verify-the-auditing-status-for-your-organization) ) de este artículo. 
 
-El registro de auditoría se activará de forma predeterminada para Microsoft 365 y Office 365 organizaciones empresariales. Sin embargo, al configurar una nueva Microsoft 365 o Office 365 organización, debe comprobar el estado de auditoría de la organización. Para obtener instrucciones, consulte [la sección Verify the auditing status for your organization (Comprobar el estado de auditoría de su organización](#verify-the-auditing-status-for-your-organization) ) de este artículo. 
-
-Cuando se activa la auditoría en el portal de cumplimiento de Microsoft Purview, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se conserva durante 90 días y hasta un año, en función de la licencia asignada a los usuarios. Sin embargo, su organización puede tener motivos para no querer registrar y conservar los datos de registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
+Cuando se activa la auditoría en el portal de cumplimiento Microsoft Purview, la actividad de usuario y administrador de la organización se registra en el registro de auditoría y se conserva durante 90 días y hasta un año, en función de la licencia asignada a los usuarios. Sin embargo, su organización puede tener motivos para no querer registrar y conservar los datos de registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
 
 > [!IMPORTANT]
 > Si desactiva la auditoría en Microsoft 365, no puede usar la API de actividad de administración de Office 365 ni Microsoft Sentinel para acceder a los datos de auditoría de su organización. Desactivar la auditoría siguiendo los pasos descritos en este artículo significa que no se devolverá ningún resultado al buscar en el registro de auditoría mediante el portal de cumplimiento o al ejecutar el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de Office 365 Management Activity API o Microsoft Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Antes de activar o desactivar la auditoría
 
-- Debe tener asignado el rol Registros de auditoría en Exchange Online para activar o desactivar la auditoría en la organización de Microsoft 365. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento y Administración de la organización en la página **Permisos** del centro de administración de Exchange. Los administradores globales de Microsoft 365 son miembros del grupo de roles Administración de la organización en Exchange Online.
+- Debe tener asignado el rol Registros de auditoría en Exchange Online para activar o desactivar la auditoría en su organización de Microsoft 365. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento y Administración de la organización en la página **Permisos** del Centro de administración de Exchange. Los administradores globales de Microsoft 365 son miembros del grupo de roles Administración de la organización en Exchange Online.
 
     > [!NOTE]
     > A los usuarios se les deben asignar permisos en Exchange Online para activar o desactivar la auditoría. Si asigna a los usuarios el rol Registros de auditoría en la página **Permisos** del portal de cumplimiento, no podrán activar ni desactivar la auditoría. Esto se debe a que el cmdlet subyacente es un cmdlet de PowerShell Exchange Online.
 
-- Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, consulte [Búsqueda en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md). Para obtener más información sobre la API de actividad de administración de Microsoft 365, consulte [Comenzar con las API de administración de Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, consulte [Búsqueda en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md). Para obtener más información sobre la API de actividad de administración de Microsoft 365, consulte [Introducción a las API de administración de Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>Comprobación del estado de auditoría de la organización
 
@@ -120,7 +118,7 @@ Tiene que usar Exchange Online PowerShell para desactivar la auditoría.
 
 Los cambios en el estado de auditoría de la organización se auditan por sí mismos. Esto significa que los registros de auditoría se registran cuando la auditoría está activada o desactivada. Puede buscar estos registros de auditoría en el registro de auditoría del administrador de Exchange.
 
-Para buscar en el registro de auditoría de Exchange administrador los registros de auditoría que se generan al activar o desactivar la auditoría, ejecute el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Para buscar en el registro de auditoría del administrador de Exchange los registros de auditoría que se generan al activar o desactivar la auditoría, ejecute el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
@@ -140,4 +138,4 @@ El valor de en `Confirm` la propiedad *CmdletParameters* indica que el registro 
 
 El valor de `Confirm` no se incluye en la propiedad *CmdletParameters* . Esto indica que el registro de auditoría unificado se ha desactivado ejecutando el comando **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** .
 
-Para obtener más información sobre cómo buscar en el registro de auditoría de administración de Exchange, consulte [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
+Para obtener más información sobre cómo buscar en el registro de auditoría del administrador de Exchange, consulte [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

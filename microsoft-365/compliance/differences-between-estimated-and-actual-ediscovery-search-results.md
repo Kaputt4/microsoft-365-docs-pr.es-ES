@@ -19,23 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda estimados y reales pueden variar en las búsquedas que se ejecutan con las herramientas de exhibición de documentos electrónicos en Office 365.
-ms.openlocfilehash: 694d850d568aee4965530317f9bbc9f95727338c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: db7026672af0e3abfcee524757a63c9747ff06e7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092787"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638574"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Este artículo se aplica a las búsquedas que puede ejecutar mediante una de las siguientes herramientas Microsoft 365 eDiscovery: 
+Este artículo se aplica a las búsquedas que puede ejecutar mediante una de las siguientes herramientas de Exhibición de documentos electrónicos de Microsoft 365: 
 
 - Búsqueda de contenido
 - eDiscovery (Estándar)
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que usa devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el portal de cumplimiento de Microsoft Purview, los resultados de búsqueda estimados se muestran en la página de control flotante de la búsqueda seleccionada.
+Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que usa devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el portal de cumplimiento Microsoft Purview, los resultados de búsqueda estimados se muestran en la página de control flotante de la búsqueda seleccionada.
   
 ![Estimación de los resultados mostrados en la página de control flotante de búsqueda.](../media/EstimatedSearchResults1.png)
   
@@ -55,7 +53,7 @@ Sin embargo, como observará en la captura de pantalla anterior del informe Expo
   
 Estas son algunas de las razones de estas diferencias:
   
-- **La forma en que se calculan los resultados**. Una estimación de los resultados de la búsqueda es simplemente eso, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de búsqueda. Para compilar la estimación de Exchange elementos, la herramienta eDiscovery solicita a la base de datos de Exchange una lista de los identificadores de mensaje que cumplen los criterios de búsqueda. Pero al exportar los resultados de la búsqueda, la búsqueda se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos Exchange. Por lo tanto, estas diferencias pueden dar lugar a cómo se determina el número estimado de elementos y el número real de elementos.
+- **La forma en que se calculan los resultados**. Una estimación de los resultados de la búsqueda es simplemente eso, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de búsqueda. Para compilar la estimación de elementos de Exchange, la herramienta eDiscovery que usa solicita a la base de datos de Exchange una lista de los identificadores de mensaje que cumplen los criterios de búsqueda. Pero al exportar los resultados de la búsqueda, la búsqueda se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos de Exchange. Por lo tanto, estas diferencias pueden dar lugar a cómo se determina el número estimado de elementos y el número real de elementos.
 
 - **Cambios que se producen entre el momento en que se estiman y exportan los resultados de la búsqueda**. Al exportar los resultados de búsqueda, la búsqueda se reinicia para recopilar los elementos más recientes del índice de búsqueda que cumplen los criterios de búsqueda. Es posible que haya elementos adicionales creados, enviados o recibidos que cumplan los criterios de búsqueda en el tiempo comprendido entre la recopilación de los resultados de búsqueda estimados y el momento en que se exportaron los resultados de la búsqueda. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de búsqueda ya no estén allí porque se purgaron de la ubicación de contenido antes de exportar los resultados de la búsqueda. Una manera de mitigar este problema es especificar un intervalo de fechas para una búsqueda de exhibición de documentos electrónicos. Otra manera es colocar una suspensión en las ubicaciones de contenido para que los elementos se conserven y no se puedan purgar.
 
@@ -81,23 +79,23 @@ Estas son algunas de las razones de estas diferencias:
 
     La razón para no exportar elementos sin indexar desde todas las ubicaciones de la organización es que podría aumentar la probabilidad de errores de exportación y aumentar el tiempo necesario para exportar y descargar los resultados de la búsqueda.
 
-- **Los elementos sin indexar en SharePoint y OneDrive no se incluyen en las estimaciones de búsqueda**. Los elementos no indexados de SharePoint sitios y cuentas de OneDrive para la Empresa no se incluyen en los resultados de búsqueda estimados. Esto se debe a que el índice de SharePoint no contiene datos para elementos sin indexar. En las estimaciones de búsqueda solo se incluyen elementos no indizados de buzones de correo. Sin embargo, si incluye elementos sin indexar al exportar resultados de búsqueda, se incluyen elementos sin indexar en SharePoint y OneDrive, lo que aumentará el número de elementos que se exportan realmente. Esto dará lugar a diferencias entre los resultados estimados (que no incluyen elementos sin indexar en SharePoint y OneDrive sitios) y los elementos reales que se descargan. La regla sobre la exportación de elementos no indizados solo desde ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda se sigue aplicando en esta situación.
+- **Elementos sin indexar en SharePoint y OneDrive no incluidos en las estimaciones de búsqueda**. Los elementos no indexados de sitios de SharePoint y cuentas de OneDrive para la Empresa no se incluyen en los resultados de búsqueda estimados. Esto se debe a que el índice de SharePoint no contiene datos para elementos sin indexar. En las estimaciones de búsqueda solo se incluyen elementos no indizados de buzones de correo. Sin embargo, si incluye elementos sin indexar al exportar resultados de búsqueda, se incluyen elementos sin indexar en SharePoint y OneDrive, lo que aumentará el número de elementos que se exportan realmente. Esto provocará diferencias entre los resultados estimados (que no incluyen elementos sin indexar en sitios de SharePoint y OneDrive) y los elementos reales que se descargan. La regla sobre la exportación de elementos no indizados solo desde ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda se sigue aplicando en esta situación.
 
-- **Versiones de documentos en SharePoint y OneDrive**. Al buscar SharePoint sitios y cuentas de OneDrive, no se incluyen varias versiones de un documento en el recuento de resultados de búsqueda estimados. Pero tiene la opción de incluir todas las versiones del documento al exportar los resultados de la búsqueda. Si incluye versiones de documento al exportar resultados de búsqueda, se aumentará el número real (y el tamaño total) de los elementos exportados.
+- **Versiones de documentos en SharePoint y OneDrive**. Al buscar sitios de SharePoint y cuentas de OneDrive, varias versiones de un documento no se incluyen en el recuento de resultados de búsqueda estimados. Pero tiene la opción de incluir todas las versiones del documento al exportar los resultados de la búsqueda. Si incluye versiones de documento al exportar resultados de búsqueda, se aumentará el número real (y el tamaño total) de los elementos exportados.
 
-- **SharePoint carpetas**. Si las carpetas de SharePoint coinciden con una consulta de búsqueda, por ejemplo, la búsqueda por fecha, la estimación de búsqueda incluirá un recuento de esas carpetas con el intervalo de fechas de la última modificación (pero no los elementos de esas carpetas). Al exportar los resultados de la búsqueda, los elementos de la carpeta se exportan, pero la carpeta real no se exporta. El resultado es que el número de elementos exportados será mayor que el número de resultados de búsqueda estimados. Si una carpeta está vacía, el número de resultados de búsqueda reales exportados se reducirá en un elemento, ya que la carpeta real no se exporta.
-
-   > [!NOTE]
-   > Al ejecutar una búsqueda basada en consultas, puede excluir SharePoint carpetas agregando la siguiente condición a la consulta: `NOT(ContentType:folder)`.
-
-- **SharePoint listas**. Si el nombre de una lista de SharePoint coincide con una consulta de búsqueda, la estimación de búsqueda incluirá un recuento de todos los elementos de la lista. Al exportar los resultados de la búsqueda, la lista (y los elementos de lista) se exporta como un único archivo CSV. Esto reducirá el número real de elementos realmente exportados. Si la lista contiene datos adjuntos, los datos adjuntos se exportarán como documentos independientes, lo que también aumentará el número de elementos exportados.
+- **Carpetas de SharePoint**. Si las carpetas de SharePoint coinciden con una consulta de búsqueda, por ejemplo, la búsqueda por fecha, la estimación de búsqueda incluirá un recuento de esas carpetas con el intervalo de fechas de la última modificación (pero no los elementos de esas carpetas). Al exportar los resultados de la búsqueda, los elementos de la carpeta se exportan, pero la carpeta real no se exporta. El resultado es que el número de elementos exportados será mayor que el número de resultados de búsqueda estimados. Si una carpeta está vacía, el número de resultados de búsqueda reales exportados se reducirá en un elemento, ya que la carpeta real no se exporta.
 
    > [!NOTE]
-   > Al ejecutar una búsqueda basada en consultas, puede excluir SharePoint listas agregando la siguiente condición a la consulta: `NOT(ContentType:list)`.
+   > Al ejecutar una búsqueda basada en consultas, puede excluir carpetas de SharePoint agregando la siguiente condición a la consulta: `NOT(ContentType:folder)`.
 
-- **Formatos de archivo sin formato frente a formatos de archivo exportados**. Para Exchange elementos, el tamaño estimado de los resultados de la búsqueda se calcula mediante el uso de los tamaños de mensaje Exchange sin procesar. Sin embargo, los mensajes de correo electrónico se exportan en un archivo PST o como mensajes individuales (que tienen el formato de archivos EML). Ambas opciones de exportación usan un formato de archivo diferente al de los mensajes de Exchange sin procesar, lo que hace que el tamaño total del archivo exportado sea diferente del tamaño estimado del archivo.
+- **Listas de SharePoint**. Si el nombre de una lista de SharePoint coincide con una consulta de búsqueda, la estimación de búsqueda incluirá un recuento de todos los elementos de la lista. Al exportar los resultados de la búsqueda, la lista (y los elementos de lista) se exporta como un único archivo CSV. Esto reducirá el número real de elementos realmente exportados. Si la lista contiene datos adjuntos, los datos adjuntos se exportarán como documentos independientes, lo que también aumentará el número de elementos exportados.
 
-- **Desduplicación de Exchange elementos durante la exportación**. Para Exchange elementos, la desduplicación reduce el número de elementos que se exportan. Tiene la opción de desduplicar los resultados de la búsqueda al exportarlos. Para Exchange mensajes, esto significa que solo se exporta una única instancia de un mensaje, aunque ese mensaje se encuentre en varios buzones. Los resultados de búsqueda estimados incluyen todas las instancias de un mensaje. Por lo tanto, si elige la opción de desduplicación al exportar los resultados de búsqueda, el número real de elementos que se exportan podría ser considerablemente menor que el número estimado de elementos.
+   > [!NOTE]
+   > Al ejecutar una búsqueda basada en consultas, puede excluir listas de SharePoint agregando la siguiente condición a la consulta: `NOT(ContentType:list)`.
+
+- **Formatos de archivo sin formato frente a formatos de archivo exportados**. En el caso de los elementos de Exchange, el tamaño estimado de los resultados de búsqueda se calcula mediante los tamaños de mensajes de Exchange sin formato. Sin embargo, los mensajes de correo electrónico se exportan en un archivo PST o como mensajes individuales (que tienen el formato de archivos EML). Ambas opciones de exportación usan un formato de archivo diferente al de los mensajes de Exchange sin procesar, lo que hace que el tamaño total del archivo exportado sea diferente del tamaño estimado del archivo.
+
+- **Desduplicación de elementos de Exchange durante la exportación**. En el caso de los elementos de Exchange, la desduplicación reduce el número de elementos que se exportan. Tiene la opción de desduplicar los resultados de la búsqueda al exportarlos. En el caso de los mensajes de Exchange, esto significa que solo se exporta una única instancia de un mensaje, aunque ese mensaje se encuentre en varios buzones. Los resultados de búsqueda estimados incluyen todas las instancias de un mensaje. Por lo tanto, si elige la opción de desduplicación al exportar los resultados de búsqueda, el número real de elementos que se exportan podría ser considerablemente menor que el número estimado de elementos.
 
 El informe de resultados de búsqueda (archivo Results.csv) contiene una entrada para cada mensaje duplicado e identifica el buzón de origen donde se encuentra un mensaje duplicado. Esto le ayuda a identificar todos los buzones que contienen un mensaje duplicado.
 

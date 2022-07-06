@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: La versión anterior de Office 365 Cifrado de mensajes depende de Microsoft Azure Rights Management (anteriormente conocida como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 66447d601d86f1863cf060a3ad097686bb58be98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: La versión anterior de Office 365 Message Encryption depende de Microsoft Azure Rights Management (anteriormente conocida como Windows Azure Active Directory Rights Management).
+ms.openlocfilehash: 386056c282ea5f4ad996cc7ae7c50926436fe720
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016248"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641370"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configuración de Azure Rights Management para la versión anterior de Cifrado de mensajes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este tema se describen los pasos que debe seguir para activar y configurar Azure Rights Management (RMS), parte de Azure Information Protection, para su uso con la versión anterior de Office 365 Message Encryption (OME).
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Este artículo solo se aplica a la versión anterior de OME
 
-Si aún no ha movido su organización a Cifrado de mensajes de Microsoft Purview, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que realice un plan para pasar al cifrado de mensajes de Microsoft Purview tan pronto como sea razonable para su organización. Para obtener instrucciones, consulte [Configuración del cifrado de mensajes de Microsoft Purview](set-up-new-message-encryption-capabilities.md). Si quiere obtener más información sobre cómo funcionan las nuevas funcionalidades primero, consulte [Cifrado de](ome.md) mensajes. El resto de este artículo hace referencia al comportamiento de OME antes de la versión de Cifrado de mensajes de Microsoft Purview.
+Si aún no ha movido su organización a Cifrado de mensajes de Microsoft Purview, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que realice un plan para pasar a Cifrado de mensajes de Microsoft Purview tan pronto como sea razonable para su organización. Para obtener instrucciones, consulte [Configuración de Cifrado de mensajes de Microsoft Purview](set-up-new-message-encryption-capabilities.md). Si quiere obtener más información sobre cómo funcionan las nuevas funcionalidades primero, consulte [Cifrado de](ome.md) mensajes. El resto de este artículo hace referencia al comportamiento de OME antes de la publicación de Cifrado de mensajes de Microsoft Purview.
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Requisitos previos para usar la versión anterior de Office 365 cifrado de mensajes
 <a name="warmprereqs"> </a>
@@ -52,7 +50,7 @@ Debe activar Azure Rights Management para que los usuarios de su organización p
 Un TPD es un archivo XML que contiene información sobre la configuración de administración de derechos de la organización. Por ejemplo, el TPD contiene información sobre el certificado de licenciante de servidor (SLC) que se usa para firmar y cifrar certificados y licencias, las direcciones URL usadas para licencias y publicación, etc. El TPD se importa en la organización mediante PowerShell.
 
 > [!IMPORTANT]
-> Anteriormente, podía optar por importar TPD desde el servicio de Rights Management de Active Directory (AD RMS) a su organización. Sin embargo, si lo hace, no se recomienda usar el cifrado de mensajes de Microsoft Purview. Si su organización está configurada actualmente de esta manera, Microsoft recomienda crear un plan para migrar desde el Active Directory local RMS a Azure Information Protection basado en la nube. Para obtener más información, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). No podrá usar El cifrado de mensajes de Microsoft Purview hasta que haya completado la migración a Azure Information Protection.
+> Anteriormente, podía optar por importar TPD desde el servicio Active Directory Rights Management (AD RMS) a su organización. Sin embargo, si lo hace, no podrá usar Cifrado de mensajes de Microsoft Purview y no se recomienda. Si su organización está configurada actualmente de esta manera, Microsoft recomienda crear un plan para migrar desde el Active Directory local RMS a Azure Information Protection basado en la nube. Para obtener más información, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). No podrá usar Cifrado de mensajes de Microsoft Purview hasta que haya completado la migración a Azure Information Protection.
 
 **Para importar TPD desde Azure RMS**:
 
@@ -110,17 +108,17 @@ Un TPD es un archivo XML que contiene información sobre la configuración de ad
 
 8. Para comprobar que ha importado correctamente el TPD y ha habilitado Azure Rights Management, use el cmdlet Test-IRMConfiguration para probar Azure Rights Management funcionalidad. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tengo la versión anterior de OME configurada con Active Directory Rights Management no azure Information Protection, ¿qué hago?
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tengo la versión anterior de OME configurada con Active Directory Rights Management no con Azure Information Protection, ¿qué hago?
 <a name="importTPDs"> </a>
 
-Puede seguir usando las reglas de flujo de correo de cifrado de mensajes Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar el cifrado de mensajes de Microsoft Purview. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y lo que esto significa para su organización, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
+Puede seguir usando las reglas de flujo de correo de cifrado de mensajes Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar Cifrado de mensajes de Microsoft Purview. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y lo que esto significa para su organización, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="importTPDs"> </a>
 
-Una vez que haya completado Azure Rights Management configuración, si desea habilitar el cifrado de mensajes de Microsoft Purview, consulte Configuración del [cifrado de mensajes de Microsoft Purview](./set-up-new-message-encryption-capabilities.md).
+Una vez que haya completado Azure Rights Management configuración, si desea habilitar Cifrado de mensajes de Microsoft Purview, consulte [Configuración de Cifrado de mensajes de Microsoft Purview](./set-up-new-message-encryption-capabilities.md).
 
-Después de configurar la organización para usar el cifrado de mensajes de Microsoft Purview, está listo para [definir reglas de flujo de correo](define-mail-flow-rules-to-encrypt-email.md).
+Después de configurar la organización para usar Cifrado de mensajes de Microsoft Purview, está listo para [definir reglas de flujo de correo](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 <a name="importTPDs"> </a>

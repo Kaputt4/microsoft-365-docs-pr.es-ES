@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623308"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637359"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El explorador de contenido le permite ver de forma nativa los elementos que se han resumido en la página de información general.
 
