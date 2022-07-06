@@ -25,20 +25,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573855"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631945"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
-En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Empresa Premium. Es fundamental proteger su negocio contra phishing, malware y otras amenazas. Este objetivo incluye información sobre:
+En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Empresa Premium. Es fundamental proteger su negocio contra phishing, malware y otras amenazas. En este artículo se incluye información sobre:
 
 - [Directivas de seguridad preestablecidas](#review-and-apply-preset-security-policies) que pueden ahorrar mucho tiempo en la instalación y configuración.
-- [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales
-- Cómo [ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales.
+- [Cómo ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Revisión y aplicación de directivas de seguridad preestablecidas

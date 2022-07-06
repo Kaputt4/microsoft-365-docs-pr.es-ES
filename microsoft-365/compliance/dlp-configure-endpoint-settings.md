@@ -18,16 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078774"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629957"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Muchos aspectos del comportamiento de prevención de pérdida de datos (DLP) en el punto de conexión se controlan mediante opciones configuradas de forma centralizada. La configuración se aplica a todas las directivas DLP para dispositivos.
 
@@ -63,7 +61,7 @@ Antes de empezar, debe configurar la configuración de DLP.
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
-El escaneo y la protección de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube de Microsoft Purview, más avanzado, escanee elementos, los clasifique y devuelva los resultados a la máquina local. Esto significa que puede aprovechar técnicas de clasificación como [coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) clasificación, [entidades con nombre](named-entities-learn.md)y [clasificadores capacitados](classifier-learn-about.md) en las directivas DLP.
+El escaneo y la protección de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube de Microsoft Purview, más avanzado, escanee elementos, los clasifique y devuelva los resultados a la máquina local. Esto significa que puede aprovechar las técnicas de clasificación, como la clasificación [de coincidencia de datos exacta](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) y las [entidades con nombre](named-entities-learn.md) en las directivas DLP.
 
 Cuando se activa la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso de ancho de banda supone un problema, puede establecer un límite en lo que concierne a cuánto se puede usar en un período de 24 horas. El límite se define en la configuración de DLP de punto de conexión y se aplica por dispositivo. Si establece un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube. En este momento, la clasificación de datos continúa localmente en el dispositivo, pero la clasificación con coincidencia exacta de datos, entidades con nombre y clasificadores capacitados no está disponible. Cuando el uso del ancho de banda acumulado se encuentre por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
 

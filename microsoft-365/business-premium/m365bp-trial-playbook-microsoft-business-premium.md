@@ -2,8 +2,8 @@
 title: Cuaderno de estrategias de prueba de Microsoft Defender para Empresas Premium
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486500"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624652"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
@@ -29,8 +29,8 @@ Le damos la bienvenida al cuaderno de estrategias de prueba de Microsoft Empresa
 
 Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurarlo todo.
 
-> [!Tip]
-> Si los vínculos del cuaderno de estrategias le alejan de esta ubicación, simplemente vuelva a este cuaderno de estrategias para continuar.
+> [!TIP]
+> Guarde este cuaderno de estrategias en los favoritos del explorador. Si los vínculos del cuaderno de estrategias le alejan de esta ubicación, simplemente vuelva a este cuaderno de estrategias para continuar.
 
 En primer lugar, [configure la prueba](../business-premium/m365bp-setup.md).
 
