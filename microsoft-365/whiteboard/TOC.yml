@@ -1,13 +1,27 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: Administrar el acceso
-  href: manage-whiteboard-access-organizations.md
-- name: Administrar datos
-  href: manage-data-organizations.md
-- name: Administrar el uso compartido
-  href: manage-sharing-organizations.md
-- name: Implementar en dispositivos Windows
-  href: deploy-on-windows-organizations.md
+- name: Configurar Whiteboard
+  items:
+    - name: Configurar y usar
+      href: /surface-hub/whiteboard-collaboration
+    - name: Implementar en dispositivos Windows
+      href: deploy-on-windows-organizations.md
+- name: Administración de Whiteboard
+  items:
+    - name: Administrar el acceso
+      href: manage-whiteboard-access-organizations.md
+    - name: Administrar datos
+      href: manage-data-organizations.md
+    - name: Administrar el uso compartido
+      href: manage-sharing-organizations.md
+    - name: Implementar en dispositivos Windows
+      href: deploy-on-windows-organizations.md
+- name: Privacidad y cumplimiento
+  items:
+    - name: Ajustar la configuración de privacidad
+      href: configure-privacy-settings.md
+    - name: Solicitudes de RGPD
+      href: gdpr-requests.md
 - name: Whiteboard para administración pública
   items:
     - name: 'Administración del acceso: GCC High'
