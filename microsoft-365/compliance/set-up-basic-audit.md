@@ -1,5 +1,5 @@
 ---
-title: Configurar auditoría (estándar) en Microsoft 365
+title: Configuración de auditoría (estándar) en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,18 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría (estándar) para que pueda empezar a buscar actividades de auditoría realizadas por usuarios y administradores de su organización.
-ms.openlocfilehash: d9f685bd0438faa785f070b6b03707cda0184305
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 17f9e24f4c3159186011d3faefbd8796f51cc5ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091707"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632209"
 ---
-# <a name="set-up-microsoft-purview-audit-standard"></a>Configuración de la auditoría de Microsoft Purview (estándar)
+# <a name="set-up-microsoft-purview-audit-standard"></a>Configurar Auditoría de Microsoft Purview (estándar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Audit (Estándar) en Microsoft 365 permite buscar registros de auditoría para las actividades realizadas en los distintos servicios de Microsoft 365 por parte de usuarios y administradores. Dado que Audit (Estándar) está habilitado de forma predeterminada para la mayoría de las organizaciones Microsoft 365 y Office 365, solo hay algunas cosas que debe hacer antes de que usted y otros usuarios de su organización puedan buscar en el registro de auditoría.
+Auditoría de Microsoft Purview (Estándar) en Microsoft 365 permite buscar registros de auditoría para las actividades realizadas en los distintos servicios de Microsoft 365 por parte de usuarios y administradores. Dado que La auditoría (estándar) está habilitada de forma predeterminada para la mayoría de las organizaciones de Microsoft 365 y Office 365, solo hay algunas cosas que debe hacer antes de que usted y otros usuarios de su organización puedan buscar en el registro de auditoría.
 
 En este artículo se describen los pasos siguientes necesarios para configurar auditar (estándar).
 
@@ -39,7 +37,7 @@ En este artículo se describen los pasos siguientes necesarios para configurar a
 
 Estos pasos incluyen garantizar las suscripciones de la organización y las licencias de usuario adecuadas necesarias para generar y conservar registros de auditoría y asignar permisos a los miembros del equipo de operaciones de seguridad, TI, cumplimiento y equipos legales para que puedan buscar en el registro de auditoría.
 
-Para obtener más información, vea [Auditoría (estándar) en Microsoft 365](auditing-solutions-overview.md#audit-standard).
+Para obtener más información, consulte [Auditoría (estándar) en Microsoft 365](auditing-solutions-overview.md#audit-standard).
 
 ## <a name="step-1-verify-organization-subscription-and-user-licensing"></a>Paso 1: Comprobar la suscripción de la organización y las licencias de usuario
 
@@ -47,19 +45,19 @@ Licencias para auditoría (estándar) requiere la suscripción de organización 
 
 Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. En Auditoría (estándar), los registros de auditoría se conservan y se pueden buscar en el registro de auditoría durante 90 días.
 
-Para obtener una lista de los requisitos de suscripción y licencia de Auditoría (estándar), consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements).
+Para obtener una lista de los requisitos de suscripción y licencia para auditoría (estándar), consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements).
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>Paso 2: Asignar permisos para buscar en el registro de auditoría
 
 A los administradores y miembros de los equipos de investigación se les debe asignar el rol View-Only Registros de auditoría o Registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
-En la captura de pantalla siguiente se muestran los dos roles relacionados con la auditoría asignados al grupo de roles Administración de la organización en el centro de administración de Exchange.
+En la captura de pantalla siguiente se muestran los dos roles relacionados con la auditoría asignados al grupo de roles Administración de la organización en el Centro de administración de Exchange.
 
 ![Audite los roles asignados al grupo de roles en Exchange Online.](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>Paso 3: Buscar en el registro de auditoría
 
-Ahora está listo para buscar en el registro de auditoría en el portal de cumplimiento de Microsoft Purview.
+Ahora está listo para buscar en el registro de auditoría en el portal de cumplimiento Microsoft Purview.
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con una cuenta a la que se hayan asignado los permisos de auditoría adecuados.
 

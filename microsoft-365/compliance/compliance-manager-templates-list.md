@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview lista de plantillas del Administrador de cumplimiento
+title: Lista de plantillas del Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+description: El Administrador de cumplimiento de Microsoft Purview proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
+ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692791"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631213"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Vea la lista completa de **plantillas** disponibles para crear evaluaciones en el Administrador de cumplimiento.
 
@@ -35,7 +33,7 @@ ms.locfileid: "65692791"
 
 ## <a name="overview"></a>Información general
 
-[Microsoft Purview Compliance Manager](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
+[El Administrador de cumplimiento de Microsoft Purview](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
 Las plantillas se agregan al Administrador de cumplimiento a medida que se promulgan nuevas leyes y regulaciones. El Administrador de cumplimiento también actualiza sus plantillas cuando cambian las leyes o regulaciones subyacentes. Obtenga más información sobre cómo [revisar y aceptar actualizaciones](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -43,7 +41,7 @@ Las plantillas se agregan al Administrador de cumplimiento a medida que se promu
 
 A continuación se muestra la lista completa de plantillas en el Administrador de cumplimiento. Los nombres de plantilla coinciden con la regulación o certificación asociadas. Cuando esté disponible, los vínculos de los nombres de plantilla siguientes le llevarán a documentación relacionada sobre ese estándar, reglamento o ley.
 
-Cada plantilla (excepto la plantilla predeterminada de línea base de [protección de datos de Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) está disponible en al menos una versión diseñada para su uso con un producto específico, como Microsoft 365, junto con una versión universal que puede usar para evaluar otros productos de su elección. Para más información sobre las opciones de plantilla, consulte [Más información sobre las plantillas de evaluación](compliance-manager-templates.md).
+Cada plantilla (excepto la plantilla predeterminada de línea base de [protección de datos de Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment) ) está disponible en al menos una versión diseñada para su uso con un producto específico, como Microsoft 365, junto con una versión universal que puede usar para evaluar otros productos de su elección. Para más información sobre las opciones de plantilla, consulte [Más información sobre las plantillas de evaluación](compliance-manager-templates.md).
 
 También puede seleccionar plantillas individuales en el Administrador de cumplimiento para ver más información sobre ellas, incluida una descripción de la regulación y las propiedades de la plantilla. Lea la sección **Acerca de** para obtener un resumen.
 
@@ -72,7 +70,7 @@ Una o varias de las plantillas que se enumeran a continuación se incluyen como 
 - NIST 800-53 Revs. 4 y 5
 
 > [!NOTE]
-> Para los clientes de Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD) de EE. UU.: se incluyen los niveles de certificación del modelo de madurez de ciberseguridad (CMMC) de 1 a 5 plantillas, además de las plantillas enumeradas anteriormente.
+> Para los clientes moderados, altos de GCC y del Departamento de Defensa (DoD) de la Comunidad gubernamental de EE. UU. (GCC): se incluyen los niveles de certificación del modelo de madurez de ciberseguridad (CMMC) de 1 a 5 plantillas, además de las plantillas enumeradas anteriormente.
 
 ## <a name="preview-templates"></a>Plantillas de vista previa
 
@@ -89,7 +87,7 @@ Las plantillas que se enumeran a continuación están disponibles actualmente pa
 - ISO 27018:2019 para Azure (versión preliminar)
 - ISO 27018:2019 para Dynamics 365 (versión preliminar)
 
-## <a name="premium-templates"></a>plantillas de Premium
+## <a name="premium-templates"></a>Plantillas Premium
 
 La organización puede comprar las plantillas que se enumeran a continuación.
 
@@ -140,7 +138,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Reglamento de información financiera y de salud del consumidor, NAIC MDL-672, Q2 2017  
 - Revisiones de los principios para la gestión sólida del riesgo operativo (Riesgos operativos de Basilea III)  
 - Cuestionario de recopilación de información estandarizada (SIG)  
-- [Evaluación de seguridad de la información de confianza Exchange](/compliance/regulatory/offering-tisax-germany)
+- [Intercambio de evaluación de seguridad de la información de confianza](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>Gobierno de Estados Unidos
 
@@ -287,7 +285,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Australia - Nivel de madurez 2 de ASD Essential 8
 - Australia - Nivel de madurez 3 de ASD Essential 8
 - Australia - Ley de Archivos Nacionales
-- Australia: registros públicos Office estándares de mantenimiento de registros de Victoria  
+- Australia - Public Records Office Victoria Recordkeeping Standards  
 - Australia - Ley de spam de 2003  
 - Código de privacidad de Australia (informes de crédito)  
 - Ley de privacidad de Australia  
@@ -376,7 +374,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - EudraLex - Las normas que rigen los medicamentos en la Unión Europea  
 - Agencia europea de seguridad de la información y redes (ENISA): marco de control de la información de informática en la nube  
 - Finlandia - Ley de protección de datos  
-- Criterios finlandeses para la evaluación de la seguridad de la información de Cloud Services
+- Criterios finés para la evaluación de la seguridad de la información de Cloud Services
 - Francia- La Ley de protección de datos  
 - Ley de Protección de datos personales de Georgia  
 - Alemania: texto anotado de los requisitos mínimos para la administración de riesgos  
@@ -440,7 +438,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 
 - Canadá: infracción de las normas de seguridad  
 - Canadá - Columbia Británica - Seguridad & de la privacidad de la información - FOIPPA  
-- [Canadá: Office de la Guía de Self-Assessment ciberseguridad del Superintendente de Instituciones Financieras](/compliance/regulatory/offering-osfi-canada)  
+- [Canadá - Guía de Self-Assessment de ciberseguridad de la Oficina del Superintendente de Instituciones Financieras](/compliance/regulatory/offering-osfi-canada)  
 - Canadá - Ley de Information Protection de Salud Personal (PHIPA) 2020  
 - Canadá - Ley de documentos electrónicos y Information Protection personales (PIPEDA)  
 - Canadá: B protegido

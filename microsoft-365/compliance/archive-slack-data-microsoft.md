@@ -1,5 +1,5 @@
 ---
-title: Archivar datos de eDiscovery de Slack para Microsoft 365 mediante un conector de datos proporcionado por Microsoft
+title: Archivar datos de eDiscovery de Slack en Microsoft 365 mediante un conector de datos proporcionado por Microsoft
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -12,18 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos de Slack eDiscovery proporcionado por Microsoft para importar y archivar datos de mensajería instantánea.
-ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320692"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631489"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configuración de un conector para archivar datos de Slack eDiscovery (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-El conector de datos de eDiscovery de Slack proporcionado por Microsoft le ayuda a importar y archivar datos de mensajería instantánea (como mensajes, datos adjuntos, vínculos y revisiones) desde las áreas de trabajo de Slack de su organización para Microsoft 365. El conector de datos extrae datos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365. Una vez importados los datos de Slack, puede aplicar soluciones de cumplimiento, como suspensión por juicio, Microsoft Purview eDiscovery (Premium), cumplimiento de comunicaciones y configuración de retención al contenido de Slack. El uso de un conector de datos de Slack eDiscovery para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+El conector de datos de Slack eDiscovery proporcionado por Microsoft le ayuda a importar y archivar datos de mensajería instantánea (como mensajes, datos adjuntos, vínculos y revisiones) desde las áreas de trabajo de Slack de su organización a Microsoft 365. El conector de datos extrae datos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365. Una vez importados los datos de Slack, puede aplicar soluciones de cumplimiento, como suspensión por juicio, Microsoft Purview eDiscovery (Premium), cumplimiento de comunicaciones y configuración de retención al contenido de Slack. El uso de un conector de datos de Slack eDiscovery para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Información general sobre el archivado de datos de eDiscovery de Slack
 
@@ -45,7 +43,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Obtenga el nombre de usuario y la contraseña de la cuenta empresarial de Slack de su organización. Estas credenciales se usan para iniciar sesión en esta cuenta al crear el conector de datos. También se recomienda que haya configurado el aprovisionamiento de usuarios automatizado en su organización de Slack para usar el inicio de sesión único (SSO). [Roles en el Centro de cumplimiento de & de seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la portal de cumplimiento Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la portal de cumplimiento Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Paso 1: Crear un conector de eDiscovery de Slack
 
@@ -77,7 +75,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 5. Haga clic en **Permitir** para permitir que la aplicación administre su organización.
 
-   Después de hacer clic en **Permitir**, se cierra la página de Slack y se muestra la página **Asignar usuarios de eDiscovery de Slack a Microsoft 365 página de usuarios** en el asistente del conector.
+   Después de hacer clic en **Permitir**, se cierra la página de Slack y se muestra la página **Asignar usuarios de eDiscovery de Slack a usuarios de Microsoft 365** en el asistente del conector.
 
 ## <a name="step-3-specify-the-users-to-import-data-for"></a>Paso 3: Especificar los usuarios para los que se van a importar datos
 
@@ -89,11 +87,11 @@ Seleccione una de las siguientes opciones para especificar qué usuarios cuyos d
 
 ## <a name="step-4-map-users-and-select-data-types-to-import"></a>Paso 4: Asignar usuarios y seleccionar tipos de datos para importar
 
-1. Configure una o ambas opciones para asignar usuarios de Slack a sus buzones de correo Microsoft 365.
+1. Configure una o ambas opciones para asignar usuarios de Slack a sus buzones de Microsoft 365.
 
-   - **Asignación automática de usuarios**. Seleccione esta opción para asignar automáticamente los nombres de usuario de Slack a Microsoft 365 buzones. El conector usa el valor de la propiedad *Email* , que contiene cada mensaje o elemento de Slack. Esta propiedad se rellena con una dirección de correo electrónico de cada participante del mensaje. Si el conector puede asociar las direcciones de correo electrónico a los usuarios de Microsoft 365 correspondientes, el elemento se importa al buzón de Microsoft 365 de esos usuarios. Para usar esta opción, debe tener el inicio de sesión único configurado para su organización de Slack.
+   - **Asignación automática de usuarios**. Seleccione esta opción para asignar automáticamente nombres de usuario de Slack a buzones de Microsoft 365. El conector usa el valor de la propiedad *Email* , que contiene cada mensaje o elemento de Slack. Esta propiedad se rellena con una dirección de correo electrónico de cada participante del mensaje. Si el conector puede asociar las direcciones de correo electrónico a los usuarios de Microsoft 365 correspondientes, el elemento se importa al buzón de Microsoft 365 de esos usuarios. Para usar esta opción, debe tener el inicio de sesión único configurado para su organización de Slack.
 
-   - **Asignación de usuarios personalizada**. También tiene la opción de usar la asignación de usuarios personalizada en lugar de (o además de) la asignación automática de usuarios. Con esta opción, debe crear y cargar un archivo CSV que asigne el identificador de miembro de Slack de los usuarios a su dirección de correo electrónico Microsoft 365. Para ello, haga clic en **Descargar plantilla de asignación CSV**, rellene el archivo CSV con el identificador de miembro de Slack y Microsoft 365 dirección de correo electrónico para todos los usuarios de la organización y, a continuación, seleccione y cargue el archivo CSV en el asistente. Asegúrese de no cambiar los encabezados de columna en el archivo CSV. Este es un ejemplo del archivo de asignación CSV:
+   - **Asignación de usuarios personalizada**. También tiene la opción de usar la asignación de usuarios personalizada en lugar de (o además de) la asignación automática de usuarios. Con esta opción, debe crear y cargar un archivo CSV que asigne el identificador de miembro de Slack de los usuarios a su dirección de correo electrónico de Microsoft 365. Para ello, haga clic en **Descargar plantilla de asignación CSV**, rellene el archivo CSV con el identificador de miembro de Slack y la dirección de correo electrónico de Microsoft 365 para todos los usuarios de su organización y, a continuación, seleccione y cargue el archivo CSV en el asistente. Asegúrese de no cambiar los encabezados de columna en el archivo CSV. Este es un ejemplo del archivo de asignación CSV:
 
      |**ExternalUserId**  | **O365UserMailbox**   |
      |:-------------------|:-----------------------|
@@ -105,7 +103,7 @@ Seleccione una de las siguientes opciones para especificar qué usuarios cuyos d
    > [!TIP]
    > Los identificadores de miembro para los usuarios se pueden obtener haciendo clic en ... Botón Más en el perfil de un usuario y, a continuación, seleccione **Copiar identificador de miembro**. Como alternativa, puede usar el [método de API users.list](https://api.slack.com/methods/users.list) de Slack para obtener los identificadores de todos los miembros de un equipo de Slack.
 
-   Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizado, el conector examinará primero el archivo de asignación personalizado para asignar al usuario de Slack a un buzón de Microsoft 365. Si el conector no encuentra un usuario Microsoft 365 válido que se corresponda con el usuario de Slack, el conector usará la propiedad *Email* del elemento slack. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad *Email* del elemento de mensaje, el elemento no se importará.
+   Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizado, el conector examinará primero el archivo de asignación personalizado para asignar el usuario de Slack a un buzón de Microsoft 365. Si el conector no encuentra un usuario válido de Microsoft 365 que se corresponda con el usuario de Slack, el conector usará la propiedad *Email* del elemento Slack. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *Email* del elemento de mensaje, el elemento no se importará.
 
 2. En la página **Seleccionar tipos de datos para importar** el asistente, seleccione los tipos de datos de Slack que desea importar. Si desea importar mensajes de todos los canales, seleccione todas las opciones. De lo contrario, seleccione solo los tipos de datos que desea importar.
 

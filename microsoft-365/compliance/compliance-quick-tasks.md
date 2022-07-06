@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930227"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632649"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tareas rápidas para empezar a trabajar con el cumplimiento en Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si no está familiarizado con Microsoft Purview y se pregunta por dónde empezar, en este artículo se proporcionan instrucciones sobre los conceptos básicos y se priorizan las tareas de cumplimiento importantes. Este artículo le ayudará a empezar a administrar y supervisar rápidamente los datos, proteger la información y minimizar los riesgos internos.
 
@@ -35,7 +33,7 @@ Una vez completadas estas tareas básicas de cumplimiento, considere la posibili
 
 ## <a name="task-1-configure-compliance-permissions"></a>Tarea 1: Configurar permisos de cumplimiento
 
-Es importante administrar quién de su organización tiene acceso al portal de cumplimiento de Microsoft Purview para ver el contenido y realizar tareas de administración. Microsoft 365 proporciona roles administrativos específicos del cumplimiento y para usar las herramientas incluidas en el portal de cumplimiento de Microsoft Purview.
+Es importante administrar quién de su organización tiene acceso a la portal de cumplimiento Microsoft Purview para ver el contenido y realizar tareas de administración. Microsoft 365 proporciona roles administrativos específicos del cumplimiento y para usar las herramientas incluidas en el portal de cumplimiento Microsoft Purview.
 
 Empiece por asignar permisos de cumplimiento a los usuarios de su organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas fuera de sus responsabilidades. Querrá asegurarse de que ha asignado a las personas adecuadas al **administrador de datos de cumplimiento** y a los roles de administrador de **cumplimiento** antes de empezar a configurar e implementar soluciones de cumplimiento incluidas con Microsoft 365. También tendrá que asignar usuarios al rol de lector global de Azure Active Directory para ver los datos en el Administrador de cumplimiento.
 
@@ -152,7 +150,7 @@ Para obtener instrucciones paso a paso para definir tipos de información confid
 
 ### <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
-[Las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) permiten identificar, supervisar y proteger automáticamente la información confidencial en toda la organización de Microsoft 365. Use directivas DLP para identificar elementos confidenciales en los servicios de Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir las normas sin interrumpir su flujo de trabajo.
+[las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) permiten identificar, supervisar y proteger automáticamente la información confidencial en toda la organización de Microsoft 365. Use directivas DLP para identificar elementos confidenciales en los servicios de Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir las normas sin interrumpir su flujo de trabajo.
 
 Para obtener instrucciones paso a paso para configurar directivas DLP, [cree, pruebe y ajuste una directiva DLP](/microsoft-365/compliance/create-test-tune-dlp-policy). Para obtener información sobre las licencias de administración de pérdida de datos, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

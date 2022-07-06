@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634773"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo **acceder** al Administrador de cumplimiento, **establecer roles y permisos** y configurar **pruebas automáticas de acciones de mejora**. Recorra el **panel del Administrador de cumplimiento** y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
 

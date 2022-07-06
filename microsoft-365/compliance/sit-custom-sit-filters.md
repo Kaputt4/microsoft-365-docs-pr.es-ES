@@ -1,5 +1,5 @@
 ---
-title: Referencia de filtros de tipo de información confidencial personalizada
+title: Personalizar referencia de filtros de tipo de información confidencial
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se presenta una lista de los filtros que se pueden codificar en tipos de información confidencial personalizados.
-ms.openlocfilehash: bcecc13776b20f8b4c61eaf499a99397931fe498
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 79e4a2520ab922248f65adf1b0506219987fe832
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903758"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631967"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>Personalizar referencia de filtros de tipo de información confidencial
 
-En Microsoft puede definir filtros u otras comprobaciones al crear tipos de información confidencial personalizados (SIT).
+En Microsoft, puede definir filtros u otras comprobaciones al crear un tipo de información confidencial (SIT) personalizado.
 
-## <a name="list-of-supported-filters-and-use-cases"></a>Lista de filtros admitidos y casos de uso
+## <a name="list-of-supported-filters-and-use-cases"></a>Lista de filtros y casos de uso admitidos
 
-### <a name="alldigitssame-exclude"></a>AllDigitsSame Exclude
+### <a name="alldigitssame-exclude"></a>Exclusión de AllDigitsSame
 
 Descripción: permite excluir coincidencias que tienen todos los dígitos como dígitos duplicados, como 111111111 o 111-111-111
 
@@ -59,7 +59,7 @@ Usarlo en el paquete de reglas en el nivel de patrón
 
 ### <a name="textmatchfilter-startswith"></a>TextMatchFilter StartsWith 
 
-Descripción: permite definir los caracteres iniciales de la entidad. Tiene dos variantes, incluir y excluir.
+Descripción: permite definir los caracteres iniciales de la entidad. Tiene dos variantes, include y exclude.
 
 Por ejemplo, para excluir los números a partir de 0500, 91, 091, 010 en una lista como esta:
 
@@ -70,7 +70,7 @@ Por ejemplo, para excluir los números a partir de 0500, 91, 091, 010 en una lis
 - 1000-3265-9874
 - 0100-7892-3012
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -96,7 +96,7 @@ Por ejemplo, para incluir los números a partir de 0500, 91, 091, 0100 en una li
 - 1000-3265-9874
 - 0100-7892-3012
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -108,14 +108,14 @@ Puede usar el siguiente xml
 
 Descripción: permite definir los caracteres finales de la entidad. 
 
-Por ejemplo, para excluir los números que terminan con 0500,91.091, 0100 en una lista como esta:
+Por ejemplo, para excluir los números que terminan con 0500 91 091, 0100 en una lista como esta:
 
 - 1234567891
 - 1234-5678-0091
 - 1234.4567.7091
 - 1234-8091-4564
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -139,7 +139,7 @@ Por ejemplo, para incluir los números que terminan con 0500, 91, 091, 0100, en 
 - 1234.4567.7091
 - 1234-8091-4564
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -149,7 +149,7 @@ Puede usar el siguiente xml
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-Descripción: permite prohibir determinadas coincidencias para evitar que activen la regla. Por ejemplo, excluya 4111111111111111 de la lista de coincidencias válidas de tarjetas de crédito.
+Descripción: permite prohibir determinadas coincidencias para evitar que desencadenen la regla. Por ejemplo, excluya 4111111111111111 de la lista de coincidencias de tarjetas de crédito válidas.
 
 Por ejemplo, para excluir números de tarjeta de crédito como 4111111111111111 y 3241891031113111 en una lista como esta:
 
@@ -157,7 +157,7 @@ Por ejemplo, para excluir números de tarjeta de crédito como 4111111111111111 
 - 4111111111111111
 - 3241891031113111
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -178,7 +178,7 @@ Por ejemplo, para incluir números de tarjeta de crédito como 4111111111111111 
 - 4111111111111111
 - 3241891031113111
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -188,15 +188,15 @@ Puede usar el siguiente xml
 
 ### <a name="textmatchfilter-prefix"></a>Prefijo TextMatchFilter
 
-Descripción: permite definir los caracteres anteriores que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito está precedido por "Id. de pedido:", quita la coincidencia de las coincidencias válidas.
+Descripción: permite definir los caracteres anteriores que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito va precedido de "Id. de pedido:", quite la coincidencia de las coincidencias válidas.
 
-Por ejemplo, para excluir las repeticiones de números de teléfono que Teléfono número de teléfono y **llamarme** **en** cadenas antes del número de teléfono, en una lista como esta:
+Por ejemplo, para excluir las repeticiones de números de teléfono que tienen **número** de teléfono y **llamarme en** cadenas antes del número de teléfono, en una lista como esta:
 
-- Teléfono número 091-8974-653278
+- Número de teléfono 091-8974-653278
 - Teléfono 45-124576532-123
 - 45-124576532-123
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -210,12 +210,12 @@ Puede usar el siguiente xml
   </Keyword>
 ```
 
-Por ejemplo, para incluir repeticiones que tienen  cadenas de tarjeta de crédito y **#** tarjeta antes del número de tarjeta de crédito, en una lista como esta:
+Por ejemplo, para incluir repeticiones que tienen cadenas de **tarjeta de crédito** y **#tarjeta** antes del número de tarjeta de crédito, en una lista como esta:
 
 - Tarjeta de crédito 45-124576532-123 
-- 45-124576532-123 (que podría ser número de teléfono)
+- 45-124576532-123 (que podría ser el número de teléfono)
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -232,14 +232,14 @@ Puede usar el siguiente xml
 
 ### <a name="textmatchfilter-suffix"></a>Sufijo TextMatchFilter
 
-Descripción: permite definir los siguientes caracteres que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito va seguido de '/xuid', quite la coincidencia de las coincidencias válidas.
+Descripción: permite definir los siguientes caracteres que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito va seguido de "/xuid", quite la coincidencia de las coincidencias válidas.
 
 Por ejemplo, las repeticiones de exclusión superior si hay cinco instancias más de cuatro dígitos como sufijo en una lista como esta:
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-Puede usar el siguiente xml
+Puede usar el siguiente xml.
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -248,7 +248,7 @@ Puede usar el siguiente xml
 
   <Regexid="Regex_false_positives_suffix">(\d{4}){5,}</Regex>
 ```
-Por ejemplo, para excluir repeticiones si se siguen por **/xuidsuffix**, como una de esta lista:
+Por ejemplo, para excluir las repeticiones si van **seguidas de /xuidsuffix**, como una de esta lista:
 
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
@@ -267,11 +267,11 @@ Puede usar este xml
   </Keyword>
 ```
 
-Por ejemplo, para incluir una repetición solo si va seguida de **cvv** o **expira**, como dos de esta lista:
+Por ejemplo, para incluir una repetición solo si va seguida de **cvv** o **expira**, como dos en esta lista:
 
 - 45-124576532-123 
 - 45-124576532-123 cvv 966
-- 45-124576532-123 expira el 03/23
+- 45-124576532-123 expira 03/23
 
 Puede usar este xml
 
@@ -290,13 +290,13 @@ Puede usar este xml
 
 ## <a name="using-filters-in-rule-packages"></a>Uso de filtros en paquetes de reglas
 
-Los filtros se pueden definir en el SIT completo o en un patrón. Estos son algunos ejemplos de fragmentos de código. 
+Los filtros se pueden definir en todo el SIT o en un patrón. Estos son algunos ejemplos de fragmentos de código. 
 
 ### <a name="at-sensitive-information-type-level"></a>En el nivel de tipo de información confidencial
 
-Filters at Entity: cubrirá todos los patrones secundarios
+Filtros en la entidad: cubrirá todos los patrones secundarios
 
-Los filtros se aplicarán en **todas las** instancias clasificadas por cualquiera de los patrones de esa entidad o tipo confidencial
+Los filtros se aplicarán en **todas las** instancias clasificadas por cualquiera de los patrones de esa entidad o tipo confidencial.
 
 ```xml
 <Entity id="6443b88f-2808-482a-8e1a-3ae5026645e1" patternsProximity="300" recommendedConfidence="85" filters="CompositeFiltersAtEntityLevel">
@@ -310,7 +310,7 @@ Los filtros se aplicarán en **todas las** instancias clasificadas por cualquier
 
 Filtra solo en el nivel de patrón.
 
-El filtro se aplicará en las instancias coincidentes con el patrón.
+El filtro se aplicará en las instancias coincidentes por el patrón.
 
 ```xml
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
@@ -321,11 +321,11 @@ El filtro se aplicará en las instancias coincidentes con el patrón.
 ```
 
 
-### <a name="at-sensitive-information-type-level-and-an-additional-filter-on-some-of-the-patterns-of-that-entity"></a>En el nivel de tipo de información confidencial y un filtro adicional en algunos de los patrones de esa entidad
+### <a name="at-sensitive-information-type-level-and-an-additional-filter-on-some-of-the-patterns-of-that-entity"></a>En el nivel de tipo de información confidencial y un filtro adicional sobre algunos de los patrones de esa entidad
 
-Filtros en entidad + patrón
+Filtros en entity + pattern
 
-Los filtros se aplicarán en **todas las** instancias clasificadas por cualquiera de los patrones de esa entidad o tipo confidencial. El filtro de nivel de patrón filtrará las instancias coincidentes con ese patrón.
+Los filtros se aplicarán en **todas las** instancias clasificadas por cualquiera de los patrones de esa entidad o tipo confidencial. El filtro de nivel de patrón filtrará las instancias coincidentes por ese patrón.
 
 ```xml
 <Entity id="6443b88f-2808-482a-8e1a-3ae5026645e1" patternsProximity="300" recommendedConfidence="85" filters="CompositeFiltersAtEntityLevel">
@@ -339,7 +339,7 @@ Los filtros se aplicarán en **todas las** instancias clasificadas por cualquier
 
 ## <a name="more-information"></a>Más información
 
-- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
+- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 

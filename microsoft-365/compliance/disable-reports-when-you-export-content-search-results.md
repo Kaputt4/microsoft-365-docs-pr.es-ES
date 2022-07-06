@@ -16,19 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Edite el Registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Edite el Registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el portal de cumplimiento Microsoft Purview.
+ms.openlocfilehash: 55a5405d516b0bf3daaca5970a25794b468a5119
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094976"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636191"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cuando se usa la herramienta eDiscovery Export para exportar los resultados de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview, la herramienta crea y exporta automáticamente dos informes que contienen información adicional sobre el contenido exportado. Estos informes son el archivo Results.csv y el archivo Manifest.xml (consulte la sección [Preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Dado que estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco evitando que estos archivos se exporten. Para ello, cambie el Registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del Registro. 
+Cuando se usa la herramienta eDiscovery Export para exportar los resultados de una búsqueda de contenido en el portal de cumplimiento Microsoft Purview, la herramienta crea y exporta automáticamente dos informes que contienen información adicional sobre el contenido exportado. Estos informes son el archivo Results.csv y el archivo Manifest.xml (consulte la sección [Preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Dado que estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco evitando que estos archivos se exporten. Para ello, cambie el Registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del Registro. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Creación de la configuración del Registro para deshabilitar los informes de exportación
 
@@ -40,7 +38,7 @@ Realice el procedimiento siguiente en el equipo que usará para exportar los res
     
     - **Results.csv**
     
-      Guarde el texto siguiente en un archivo del Registro de Windows usando un sufijo de nombre de archivo .reg; por ejemplo, DisableResultsCsv.reg.
+      Guarde el texto siguiente en un archivo del Registro de Windows con un sufijo de nombre de archivo .reg; por ejemplo, DisableResultsCsv.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -49,14 +47,14 @@ Realice el procedimiento siguiente en el equipo que usará para exportar los res
 
     - **Manifest.xml**
     
-      Guarde el texto siguiente en un archivo del Registro de Windows usando un sufijo de nombre de archivo .reg; por ejemplo, DisableManifestXml.reg.
+      Guarde el texto siguiente en un archivo del Registro de Windows con un sufijo de nombre de archivo .reg; por ejemplo, DisableManifestXml.reg.
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. En Windows Explorador, haga clic o haga doble clic en el archivo .reg que creó en los pasos anteriores.
+3. En el Explorador de Windows, haga clic o haga doble clic en el archivo .reg que creó en los pasos anteriores.
     
 4. En la ventana Usuario Access Control, haga clic en **Sí** para permitir que el Editor del Registro realice el cambio. 
     
@@ -74,7 +72,7 @@ Si deshabilitó los informes Results.csv y Manifest.xml mediante la creación de
     
     - **Results.csv**
     
-        Abra el archivo DisableResultsCsv.reg en Bloc de notas, cambie el valor `False` a y, a `True`continuación, guarde el archivo. Por ejemplo, después de editar el archivo, tiene este aspecto:
+        Abra el archivo DisableResultsCsv.reg en el Bloc de notas, cambie el valor  `False` a y, a  `True`continuación, guarde el archivo. Por ejemplo, después de editar el archivo, tiene este aspecto:
     
         ```text
         Windows Registry Editor Version 5.00
@@ -83,14 +81,14 @@ Si deshabilitó los informes Results.csv y Manifest.xml mediante la creación de
 
     - **Manifest.xml**
     
-        Abra el archivo DisableManifestXml.reg en Bloc de notas, cambie el valor `False` a y, a `True`continuación, guarde el archivo. Por ejemplo, después de editar el archivo, tiene este aspecto:
+        Abra el archivo DisableManifestXml.reg en el Bloc de notas, cambie el valor  `False` a y, a  `True`continuación, guarde el archivo. Por ejemplo, después de editar el archivo, tiene este aspecto:
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
 
-3. En Windows Explorador, haga clic o haga doble clic en un archivo .reg que editó en el paso anterior.
+3. En el Explorador de Windows, haga clic o haga doble clic en un archivo .reg que editó en el paso anterior.
     
 4. En la ventana Usuario Access Control, haga clic en **Sí** para permitir que el Editor del Registro realice el cambio. 
     
@@ -104,7 +102,7 @@ Si deshabilitó los informes Results.csv y Manifest.xml mediante la creación de
   
 Los archivos Results.csv y Manifest.xml contienen información adicional sobre el contenido exportado.
   
-- **Results.csv** Un documento Excel que contiene información sobre cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
+- **Results.csv** Documento de Excel que contiene información sobre cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
     
   - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
     
@@ -116,7 +114,7 @@ Los archivos Results.csv y Manifest.xml contienen información adicional sobre e
     
   - Si el mensaje es un mensaje duplicado si ha habilitado la desduplicación al exportar los resultados de la búsqueda. Los mensajes duplicados tendrán un valor en la columna **Parent ItemId** que identifica el mensaje como duplicado. El valor de la columna **Parent ItemId** es el mismo que el valor de la columna **Item DocumentId** del mensaje que se exportó. 
     
-    Para los documentos de sitios de SharePoint y OneDrive para la Empresa, el registro de resultados contiene información sobre cada documento, incluidos:
+    En el caso de los documentos de SharePoint y sitios de OneDrive para la Empresa, el registro de resultados contiene información sobre cada documento, incluidos:
     
   - La dirección URL del documento.
     

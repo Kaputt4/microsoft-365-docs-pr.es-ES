@@ -1,5 +1,5 @@
 ---
-title: Redirección de usuarios desde el Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento de Microsoft Purview
+title: Redirección de usuarios desde el Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,21 +9,19 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Obtenga información sobre el redireccionamiento automático de los usuarios desde los usuarios del Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento de Microsoft Purview.
+description: Obtenga información sobre el redireccionamiento automático de los usuarios de Office 365 Security and Compliance Center a la portal de cumplimiento Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: e1c079eda89033dee05eae9b9059521d625b2f5c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243016"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635795"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Redirección de usuarios desde el Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento de Microsoft Purview
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Redirección de usuarios desde el Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-En este artículo se explica cómo funciona el redireccionamiento automático para los usuarios que acceden a las soluciones de cumplimiento desde el Centro de seguridad y cumplimiento de Office 365 (protection.office.com) al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a>.
+En este artículo se explica cómo funciona el redireccionamiento automático para los usuarios que acceden a las soluciones de cumplimiento desde el Centro de seguridad y cumplimiento de Office 365 (protection.office.com) al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a>.
 
 ## <a name="what-to-expect"></a>Qué esperar
 
@@ -45,4 +43,4 @@ Esta característica y los controles asociados no habilitan el redireccionamient
 
 ## <a name="related-information"></a>Información relacionada
 
-- [Introducción al portal de cumplimiento de Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [introducción a portal de cumplimiento Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)

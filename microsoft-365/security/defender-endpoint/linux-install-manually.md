@@ -16,17 +16,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 2b960141b8f6da710b7ef3cbbf812ac0f00f1ce5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873058"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634079"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementación manual de Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,17 +33,16 @@ ms.locfileid: "65873058"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-
 En este artículo se describe cómo implementar manualmente Microsoft Defender para punto de conexión en Linux. Una implementación correcta requiere la finalización de todas las tareas siguientes:
 
-  - [Requisitos previos y requisitos del sistema](#prerequisites-and-system-requirements)
-  - [Configuración del repositorio de software linux](#configure-the-linux-software-repository)
-    - [RHEL y variantes (CentOS, Fedora, Oracle Linux y Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
-    - [SLES y variantes](#sles-and-variants)
-    - [Sistemas Ubuntu y Debian](#ubuntu-and-debian-systems)
-  - [Instalación de la aplicación](#application-installation)
-  - [Descarga del paquete de incorporación](#download-the-onboarding-package)
-  - [Configuración del cliente](#client-configuration)
+- [Requisitos previos y requisitos del sistema](#prerequisites-and-system-requirements)
+- [Configuración del repositorio de software linux](#configure-the-linux-software-repository)
+  - [RHEL y variantes (CentOS, Fedora, Oracle Linux y Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES y variantes](#sles-and-variants)
+  - [Sistemas Ubuntu y Debian](#ubuntu-and-debian-systems)
+- [Instalación de la aplicación](#application-installation)
+- [Descarga del paquete de incorporación](#download-the-onboarding-package)
+- [Configuración del cliente](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
@@ -77,20 +75,16 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
     Use la tabla siguiente para ayudarle a localizar el paquete:
 
-    <br>
-
-    ****
-
-    |Distro & versión|Package|
+    |Distro & versión|Paquete|
     |---|---|
     |Para RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
-    <!--|Para RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+    |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
     |Para Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Para Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    En los siguientes comandos, reemplace *[version]* y *[channel]* por la información que ha identificado:
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
+    En los siguientes comandos, reemplace *[version]* y *[channel]* por la información que ha identificado:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
@@ -300,7 +294,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 > [!IMPORTANT]
 > Si se pierde este paso, cualquier comando ejecutado mostrará un mensaje de advertencia que indica que el producto no tiene licencia. Además, el `mdatp health` comando devuelve un valor de `false`.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Configuración > Puntos de conexión > Administración de dispositivos > Incorporación**.
+1. En el portal de Microsoft 365 Defender, vaya a **Configuración > puntos de conexión > Administración de dispositivos > Incorporación**.
 2. En el primer menú desplegable, seleccione **Servidor Linux** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar el paquete de incorporación** Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
@@ -341,7 +335,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
     > [!NOTE]
     > Para ejecutar este comando, debe tener `python`  o `python3` instalar en el dispositivo en función de la versión y la disto. Si es necesario, consulte [Instrucciones paso a paso para instalar Python en Linux](https://opensource.com/article/20/4/install-python-linux).
-    
+
     Si ejecuta RHEL 8.x o Ubuntu 20.04 o posterior, deberá usar `python3`.
 
     ```bash
@@ -349,11 +343,11 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
     ```
 
     Para el resto de distribuciones y versiones, deberá usar `python`.
-    
+
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-    
+
 3. Compruebe que el dispositivo ahora está asociado a su organización e informa de un identificador de organización válido:
 
     ```bash
@@ -382,9 +376,9 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
-        
+
       Si no está habilitado, ejecute el siguiente comando:
-      
+
        ```bash
         mdatp config real-time-protection --value enabled
         ```
@@ -413,7 +407,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
 ## <a name="installer-script"></a>Script del instalador
 
-Como alternativa, puede usar un [script de bash del instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro [repositorio de GitHub público](https://github.com/microsoft/mdatp-xplat/).
+Como alternativa, puede usar un [script de bash del instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro [repositorio público de GitHub](https://github.com/microsoft/mdatp-xplat/).
 El script identifica la distribución y la versión, simplifica la selección del repositorio adecuado, configura el dispositivo para extraer el paquete más reciente y combina los pasos de instalación e incorporación del producto.
 
 ```bash

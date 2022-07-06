@@ -16,16 +16,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396253"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632275"
 ---
 # <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describe cómo configurar directivas de barreras de información (IB) en su organización. Hay varios pasos implicados, por lo que asegúrese de revisar todo el proceso antes de empezar a configurar las directivas de IB.
 
@@ -38,7 +36,7 @@ Para obtener más información sobre los escenarios y características de IB, co
 
 ## <a name="required-subscriptions-and-permissions"></a>Suscripciones y permisos necesarios
 
-Antes de empezar a trabajar con IB, debe confirmar la suscripción Microsoft 365 y los complementos. Para acceder y usar IB, su organización debe tener una de las siguientes suscripciones o complementos:
+Antes de empezar a trabajar con IB, debe confirmar su suscripción a Microsoft 365 y cualquier complemento. Para acceder y usar IB, su organización debe tener una de las siguientes suscripciones o complementos:
 
 - suscripción Microsoft 365 E5/A5 (versión de pago o de prueba)
 - suscripción Office 365 E5/A5/A3/A1 (versión de pago o de prueba)
@@ -46,7 +44,7 @@ Antes de empezar a trabajar con IB, debe confirmar la suscripción Microsoft 365
 - suscripción Microsoft 365 E3/A3/A1 + el complemento de cumplimiento de Microsoft 365 E5/A5
 - suscripción Microsoft 365 E3/A3/A1 + el complemento Microsoft 365 E5/A5 Insider Risk Management
 
-Para obtener más información, consulte [Microsoft 365 guía de licencias para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Para obtener más información, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Para [administrar las directivas de IB](information-barriers-policies.md), se le debe asignar uno de los siguientes roles:
 
@@ -79,7 +77,7 @@ Al configurar IB, trabajará con varios objetos y conceptos.
 
 | **Pasos** | **Lo que implica** |
 |:------|:----------------|
-| **Paso 1**: [Asegúrese de que se cumplen los requisitos previos](#step-1-make-sure-prerequisites-are-met) | : compruebe que tiene las suscripciones y permisos necesarios. <br/>- Comprobar que el directorio incluye datos para segmentar usuarios<br/>- Habilitar [la búsqueda por nombre para Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Asegurarse de que el registro de auditoría está activado<br/>- Asegurarse de que no se han aplicado directivas de libreta de direcciones de Exchange <br/>- Proporcionar consentimiento del administrador para Microsoft Teams (se incluyen los pasos) |
+| **Paso 1**: [Asegúrese de que se cumplen los requisitos previos](#step-1-make-sure-prerequisites-are-met) | : compruebe que tiene las suscripciones y permisos necesarios. <br/>- Comprobar que el directorio incluye datos para segmentar usuarios<br/>- Habilitación [de la búsqueda por nombre para Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Asegurarse de que el registro de auditoría está activado<br/>- Asegurarse de que no se han aplicado directivas de libreta de direcciones de Exchange <br/>- Proporcionar consentimiento de administrador para Microsoft Teams (se incluyen los pasos) |
 | **Paso 2**: [Segmentar usuarios de la organización](#step-2-segment-users-in-your-organization) | - Determinar qué directivas se necesitan<br/>- Crear una lista de segmentos que definir<br/>- Identificar qué atributos usar<br/>- Definir segmentos en términos de filtros de directiva |
 | **Paso 3**: [Crear directivas de barreras de información](#step-3-create-ib-policies) | - Crear las directivas (aún no se aplican)<br/>- Elegir entre dos tipos (bloquear o permitir) |
 | **Paso 4**: [Aplicación de directivas de barreras de información](#step-4-apply-ib-policies) | - Establecer directivas en estado activo<br/>- Ejecutar la aplicación de la directiva<br/>- Ver el estado de la directiva |
@@ -92,22 +90,22 @@ Además de las suscripciones y permisos necesarios, asegúrese de que se cumplen
 
 - **Datos del directorio**: asegúrese de que la estructura de su organización se refleja en los datos del directorio. Para realizar esta acción, asegúrese de que los atributos de la cuenta de usuario (como la pertenencia a grupos, el nombre del departamento, etc.) se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
   - [Atributos para directivas de barreras de información](information-barriers-attributes.md)
-  - [Agregar o actualizar la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Adición o actualización de la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- **Búsqueda de directorios con ámbito**: antes de definir la primera directiva de IB de la organización, debe [habilitar la búsqueda de directorios con ámbito en Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios con ámbito antes de configurar o definir directivas de IB.
+- **Búsqueda de directorios con ámbito**: antes de definir la primera directiva de IB de su organización, debe [habilitar la búsqueda de directorios con ámbito en Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios con ámbito antes de configurar o definir directivas de IB.
 
 - **Comprobar que el registro de auditoría está habilitado**: para buscar el estado de una aplicación de directiva de IB, se debe activar el registro de auditoría. La auditoría está habilitada para organizaciones de Microsoft 365 de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para su organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que es correcto volver a activar la auditoría al completar este paso. Para obtener más información, consulte [ Desactivar o activar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 - **Quitar directivas de libreta de direcciones Exchange Online existentes**: antes de definir y aplicar directivas de IB, debe quitar todas las directivas de libreta de direcciones Exchange Online existentes en su organización. Las directivas de IB se basan en directivas de libreta de direcciones y las directivas ABP existentes no son compatibles con los AAP creados por IB. Para quitar las directivas de libreta de direcciones existentes, consulte [Quitar una directiva de libreta de direcciones en Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Para obtener más información sobre las directivas y Exchange Online de IB, consulte [Barreras de información y Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Administrar mediante PowerShell (opcional):** los segmentos y las directivas de IB se pueden definir y administrar en Office 365 Security & Compliance PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá estar familiarizado con los cmdlets y parámetros de PowerShell si decide usar PowerShell para configurar y administrar segmentos y directivas de IB. También necesitará el módulo de PowerShell Azure Active Directory si elige esta opción de configuración.
-  - [PowerShell de cumplimiento de Conectar a seguridad &](/powershell/exchange/connect-to-scc-powershell)
-  - [Instalación de Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2)
+- **Administrar mediante PowerShell (opcional):** los segmentos y las directivas de IB se pueden definir y administrar en Office 365 Security & Compliance PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá estar familiarizado con los cmdlets y parámetros de PowerShell si decide usar PowerShell para configurar y administrar segmentos y directivas de IB. También necesitará el módulo de PowerShell de Azure Active Directory si elige esta opción de configuración.
+  - [Conectarse a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Instalación de PowerShell de Azure Active Directory para Graph](/powershell/azure/active-directory/install-adv2)
 
-- **Consentimiento del administrador para IB en Microsoft Teams**: cuando se aplican las directivas de IB, pueden quitar usuarios de cumplimiento no IB de grupos (por ejemplo, Teams canales, que se basan en grupos). Esta configuración ayuda a garantizar que su organización siga siendo compatible con las directivas y las regulaciones. Use el procedimiento siguiente para permitir que las directivas de IB funcionen según lo previsto en Microsoft Teams.
+- **Administración consentimiento para IB en Microsoft Teams**: cuando se aplican las directivas de IB, pueden quitar usuarios de cumplimiento no IB de grupos (por ejemplo, canales de Teams, que se basan en grupos). Esta configuración ayuda a garantizar que su organización siga siendo compatible con las directivas y las regulaciones. Use el procedimiento siguiente para permitir que las directivas de IB funcionen según lo esperado en Microsoft Teams.
 
-   1. Requisito previo: [instale Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2).
+   1. Requisito previo: [instalación de PowerShell de Azure Active Directory para Graph](/powershell/azure/active-directory/install-adv2).
 
    2. Ejecute los siguientes cmdlets de PowerShell:
 
@@ -154,14 +152,14 @@ Además de la lista inicial de directivas, haga una lista de segmentos para su o
 Determine qué atributos de los datos de directorio de la organización usará para definir segmentos. Puede usar *Department*, *MemberOf* o cualquiera de los atributos de IB admitidos. Asegúrese de que tiene valores en el atributo que seleccione para los usuarios. Para obtener más información, consulte los [atributos admitidos para IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Antes de continuar con la sección siguiente, asegúrese de que los datos de directorio tienen valores para los atributos que puede usar para definir segmentos**. Si los datos de directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esa información antes de continuar con la configuración de IB. Para obtener ayuda con esto, consulte los siguientes recursos:<br/>- [Configuración de las propiedades de la cuenta de usuario con Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Agregar o actualizar la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Antes de continuar con la sección siguiente, asegúrese de que los datos de directorio tienen valores para los atributos que puede usar para definir segmentos**. Si los datos de directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esa información antes de continuar con la configuración de IB. Para obtener ayuda con esto, consulte los siguientes recursos:<br/>- [Configuración de las propiedades de la cuenta de usuario con Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Adición o actualización de la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-the-compliance-portal"></a>Definición de segmentos mediante el portal de cumplimiento
 
 Para definir segmentos en el portal de cumplimiento, siga estos pasos:
 
 1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
-2. En el portal de cumplimiento, seleccione **Barreras** >  de **informaciónSegments**.
+2. En el portal de cumplimiento, seleccione **Segmentos de barreras** >  de información.
 3. En la página **Segmentos** , seleccione **Nuevo segmento** para crear y configurar un nuevo segmento.
 4. En la página **Nombre** , escriba un nombre para el segmento. No se puede cambiar el nombre de un segmento una vez creado.
 5. Seleccione **Siguiente**.
@@ -247,7 +245,7 @@ Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento 
 Para definir directivas en el portal de cumplimiento, siga estos pasos:
 
 1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
-2. En el portal de cumplimiento, seleccione **Barreras** >  **de informaciónDirectivas**.
+2. En el portal de cumplimiento, seleccione **Directivas de barreras** > **de** información.
 3. En la página **Directivas** , seleccione **Crear directiva** para crear y configurar una nueva directiva de IB.
 4. En la página **Nombre** , escriba un nombre para la directiva y, a continuación, seleccione **Siguiente**.
 5. En la página **Segmento asignado** , seleccione **Elegir segmento**. Use el cuadro de búsqueda para buscar un segmento por nombre o desplazarse para seleccionar el segmento de la lista mostrada. Seleccione **Agregar** para agregar el segmento seleccionado a la directiva. Solo puede seleccionar un segmento.
@@ -294,7 +292,7 @@ Si desea permitir que un segmento se comunique solo con otro segmento, defina so
 Para definir directivas en el portal de cumplimiento, siga estos pasos:
 
 1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
-2. En el portal de cumplimiento, seleccione **Barreras** >  **de informaciónDirectivas**.
+2. En el portal de cumplimiento, seleccione **Directivas de barreras** > **de** información.
 3. En la página **Directivas** , seleccione **Crear directiva** para crear y configurar una nueva directiva de IB.
 4. En la página **Nombre** , escriba un nombre para la directiva y, a continuación, seleccione **Siguiente**.
 5. En la página **Segmento asignado** , seleccione **Elegir segmento**. Use el cuadro de búsqueda para buscar un segmento por nombre o desplazarse para seleccionar el segmento de la lista mostrada. Seleccione **Agregar** para agregar el segmento seleccionado a la directiva. Solo puede seleccionar un segmento.
@@ -341,7 +339,7 @@ Las directivas de IB no están en vigor hasta que las establezca en estado activ
 Para aplicar directivas en el portal de cumplimiento, siga estos pasos:
 
 1. Inicie sesión en el [portal de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
-2. En el portal de cumplimiento, seleccione **Barreras** >  de **informaciónDirectiva de la aplicación**.
+2. En el portal de cumplimiento, seleccione **Aplicación de directiva de barreras** > **de** información.
 3. En la página **aplicación Directivas** , seleccione **Aplicar todas las directivas** para aplicar todas las directivas de IB de su organización.
 
     >[!NOTE]
@@ -390,21 +388,21 @@ Los recursos están disponibles para ayudarle a administrar las directivas de IB
 
 ## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Paso 5: Configuración de barreras de información en SharePoint y OneDrive
 
-Si va a configurar IB para SharePoint y OneDrive, deberá habilitar IB en estos servicios. También tendrá que habilitar IB en estos servicios si va a configurar IB para Microsoft Teams. Cuando se crea un equipo en Microsoft Teams equipo, se crea automáticamente un sitio SharePoint y se asocia a Microsoft Teams para la experiencia de archivos. Las directivas de IB no se respetan en este nuevo sitio SharePoint y los archivos de forma predeterminada.
+Si va a configurar IB para SharePoint y OneDrive, deberá habilitar IB en estos servicios. También tendrá que habilitar IB en estos servicios si va a configurar IB para Microsoft Teams. Cuando se crea un equipo en el equipo de Microsoft Teams, se crea automáticamente un sitio de SharePoint y se asocia a Microsoft Teams para la experiencia de archivos. Las directivas de IB no se respetan en este nuevo sitio y archivos de SharePoint de forma predeterminada.
 
-Para habilitar IB en SharePoint y OneDrive, siga las instrucciones y los pasos del artículo [Uso de barreras de información con SharePoint](/sharepoint/information-barriers).
+Para habilitar IB en SharePoint y OneDrive, siga las instrucciones y los pasos del artículo [Uso de barreras de información con SharePoint](/sharepoint/information-barriers) .
 
 ## <a name="step-6-information-barriers-modes"></a>Paso 6: Modos de barreras de información
 
-Los modos pueden ayudar a reforzar el acceso, el uso compartido y la pertenencia a un recurso Microsoft 365 en función del modo IB del recurso. Los modos se admiten en sitios Grupos de Microsoft 365, Microsoft Teams, OneDrive y SharePoint y se habilitan automáticamente en la configuración de IB nueva o existente.
+Los modos pueden ayudar a reforzar el acceso, el uso compartido y la pertenencia a un recurso de Microsoft 365 en función del modo IB del recurso. Los modos se admiten en Grupos de Microsoft 365, Microsoft Teams, OneDrive y sitios de SharePoint y se habilitan automáticamente en la configuración de IB nueva o existente.
 
-Los siguientes modos de IB son compatibles con los recursos de Microsoft 365:
+Los siguientes modos ib son compatibles con los recursos de Microsoft 365:
 
 | **Mode** | **Descripción** | **Ejemplo** |
 |:-----|:------------|:--------|
-| **Abrir** | No hay directivas o segmentos de IB asociados al recurso de Microsoft 365. Se puede invitar a cualquier persona a ser miembro del recurso. | Un sitio de equipo creado para un evento de picnic para su organización. |
-| **Moderado por el propietario (versión preliminar)** | La directiva ib del recurso Microsoft 365 se determina a partir de la directiva ib del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros según su directiva de IB. | El vicepresidente de RR. HH. quiere colaborar con los VPs de Ventas e Investigación. Un nuevo sitio SharePoint que se establece con el modo *IB Propietario moderado* para agregar usuarios de segmento de ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
-| **Implícita** | La directiva de IB o los segmentos del recurso Microsoft 365 se heredan de la directiva ib de los miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este modo es el modo IB predeterminado para Microsoft Teams. | El usuario del segmento Ventas crea un equipo de Microsoft Teams para colaborar con otros segmentos compatibles de la organización. |
+| **Open** | No hay directivas o segmentos de IB asociados al recurso de Microsoft 365. Se puede invitar a cualquier persona a ser miembro del recurso. | Un sitio de equipo creado para un evento de picnic para su organización. |
+| **Moderado por el propietario (versión preliminar)** | La directiva ib del recurso de Microsoft 365 se determina a partir de la directiva ib del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros según su directiva de IB. | El vicepresidente de RR. HH. quiere colaborar con los VPs de Ventas e Investigación. Un nuevo sitio de SharePoint que se establece con el modo IB *Propietario moderado* para agregar usuarios de segmento de ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
+| **Implícita** | La directiva de IB o los segmentos del recurso de Microsoft 365 se heredan de la directiva ib de los miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este modo es el modo IB predeterminado para Microsoft Teams. | El usuario del segmento Ventas crea un equipo de Microsoft Teams para colaborar con otros segmentos compatibles de la organización. |
 | **Explicit** | La directiva ib del recurso de Microsoft 365 se realiza según los segmentos asociados al recurso. El propietario del recurso o el administrador de SharePoint tiene la capacidad de administrar los segmentos del recurso.  | Un sitio creado solo para que los miembros del segmento Ventas colaboren asociando el segmento Ventas con el sitio.   |
 
 Para obtener más información sobre los modos de IB y cómo se configuran entre servicios, consulte los artículos siguientes:

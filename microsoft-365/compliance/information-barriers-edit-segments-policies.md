@@ -13,16 +13,14 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a84b8e712de53b0abae81a05bbe1b2bef3237beb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014193"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635313"
 ---
 # <a name="manage-information-barriers-policies"></a>Administración de directivas de barreras de información
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de [definir directivas de barreras de información (IB](information-barriers-policies.md)), es posible que tenga que realizar cambios en esas directivas o en los segmentos de usuario, como parte de [la solución de problemas](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) o como mantenimiento normal.
 
@@ -30,7 +28,7 @@ Después de [definir directivas de barreras de información (IB](information-bar
 
 |**Acción**|**Descripción**|
 |:---------|:--------------|
-| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos en Azure Active Directory que se pueden usar para definir segmentos. <br> Edite los atributos de la cuenta de usuario cuando los usuarios no estén incluidos en los segmentos en los que deben estar, para cambiar en qué segmentos están los usuarios o para definir segmentos con atributos diferentes. |
+| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos de Azure Active Directory que se pueden usar para definir segmentos. <br> Edite los atributos de la cuenta de usuario cuando los usuarios no estén incluidos en los segmentos en los que deben estar, para cambiar en qué segmentos están los usuarios o para definir segmentos con atributos diferentes. |
 | [Editar un segmento](#edit-a-segment) | Edite segmentos cuando desee cambiar la forma en que se define un segmento. <br> Por ejemplo, es posible que haya definido originalmente segmentos mediante *Department* y ahora quiera usar otro atributo, como *MemberOf*. |
 | [Editar una directiva](#edit-a-policy) | Edite una directiva de barreras de información cuando desee cambiar el funcionamiento de una directiva.<br> Por ejemplo, en lugar de bloquear las comunicaciones entre dos segmentos, puede decidir permitir que las comunicaciones se produzcan solo entre determinados segmentos. |
 | [Establecer una directiva en estado inactivo](#set-a-policy-to-inactive-status) |Establezca una directiva en estado inactivo cuando quiera realizar cambios en una directiva o cuando no desee que una directiva esté en vigor. |

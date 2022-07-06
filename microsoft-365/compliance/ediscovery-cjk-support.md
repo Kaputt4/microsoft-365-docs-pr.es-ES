@@ -16,18 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft Purview eDiscovery (Premium) en Microsoft 365 admite idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095914"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636213"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Compatibilidad del lenguaje CJK con eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview eDiscovery (Premium) admite idiomas de juego de caracteres de doble byte (estos incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como lenguajes *CJK*) para los siguientes escenarios avanzados en un conjunto de revisión:
+Microsoft Purview eDiscovery (Premium) admite idiomas de juego de caracteres de doble byte (estos incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como idiomas *CJK*) para los siguientes escenarios avanzados en un conjunto de revisión:
 
 - Al [consultar los datos de un conjunto de revisión](review-set-search.md).
 
@@ -35,11 +33,11 @@ Microsoft Purview eDiscovery (Premium) admite idiomas de juego de caracteres de 
 
 - Al [analizar los datos de casos en un conjunto de revisión mediante el](analyzing-data-in-review-set.md) análisis de temas, subprocesos de correo electrónico y detección casi duplicados.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **Cómo crear una búsqueda para recopilar elementos que contengan caracteres CJK?**
 
-Puede usar caracteres CJK para [búsquedas de palabras clave](building-search-queries.md#keyword-searches), [consultas de palabras clave y condiciones de búsqueda](keyword-queries-and-search-conditions.md) al buscar contenido en eDiscovery (Premium). La búsqueda de caracteres CJK también se admite al buscar contenido en Microsoft Purview eDiscovery (Estándar) y Búsqueda de contenido.
+Puede usar caracteres CJK para [búsquedas de palabras clave](building-search-queries.md#keyword-searches), [consultas de palabras clave y condiciones de búsqueda](keyword-queries-and-search-conditions.md) al buscar contenido en eDiscovery (Premium). La búsqueda de caracteres CJK también se admite al buscar contenido en Microsoft Purview eDiscovery (estándar) y búsqueda de contenido.
 
 Proporcionamos compatibilidad con CJK para todos los [operadores de búsqueda](keyword-queries-and-search-conditions.md#search-operators) y [las condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions), incluidos los operadores booleanos **AND**, **OR**, **NOT** y **NEAR**.
 

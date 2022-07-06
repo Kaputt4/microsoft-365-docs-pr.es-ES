@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta de comunicaciones en un caso de exhibición de documentos electrónicos (Premium) para enviar, recopilar y realizar un seguimiento de las notificaciones de suspensión legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e97630c75c05412e22afa17daaa1897f8627adf1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094998"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634685"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creación de un aviso de suspensión legal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Mediante las comunicaciones de custodios de eDiscovery (Premium), las organizaciones pueden administrar su flujo de trabajo en torno a la comunicación con los custodios. A través de la herramienta de comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de suspensión legal. El proceso de creación flexible también permite a los equipos personalizar el flujo de trabajo de notificación de suspensión y el contenido de los avisos enviados a los custodios.
 
@@ -40,7 +38,7 @@ El primer paso es especificar los detalles adecuados para los avisos de suspensi
 
 ![Página Comunicación de nombre.](../media/NameCommunication.PNG)
 
-1. En el portal de cumplimiento de Microsoft Purview, vaya a **eDiscovery > Advanced** para mostrar la lista de casos de su organización.
+1. En el portal de cumplimiento Microsoft Purview, vaya a **eDiscovery > Advanced** para mostrar la lista de casos de su organización.
 
 2. Seleccione un caso, haga clic en la pestaña **Comunicaciones** y, a continuación, haga clic en **Nueva comunicación**.
 

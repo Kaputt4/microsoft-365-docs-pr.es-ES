@@ -1,5 +1,5 @@
 ---
-title: Compilación y administración de evaluaciones en Microsoft Purview Administrador de cumplimiento
+title: Compilación y administración de evaluaciones en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cree evaluaciones en Microsoft Purview Administrador de cumplimiento para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
-ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Cree evaluaciones en el Administrador de cumplimiento de Microsoft Purview para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
+ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115749"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633573"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Compilación y administración de evaluaciones en el Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Obtenga información sobre cómo personalizar el Administrador de cumplimiento para su organización mediante la creación y administración de **evaluaciones**. En este artículo se explica cómo crear evaluaciones, cómo organizarlas en **grupos**, trabajar con **controles**, aceptar **actualizaciones** y exportar **informes** de evaluación.
 
@@ -41,7 +39,7 @@ Todas las evaluaciones se muestran en la pestaña evaluaciones del Administrador
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de la línea de base de protección de datos
 
-Para empezar, Microsoft proporciona una evaluación **predeterminada** en el Administrador de cumplimiento para la base de referencia **de protección de datos Microsoft 365**. Esta evaluación de línea base tiene un conjunto de controles para las normativas y estándares clave para la protección de datos y la gobernanza general de datos. Esta línea de base extrae elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y RGPD (Reglamento general de protección de datos de la Unión Europea).
+Para empezar, Microsoft proporciona una evaluación **predeterminada** en el Administrador de cumplimiento para la **línea base de protección de datos de Microsoft 365**. Esta evaluación de línea base tiene un conjunto de controles para las normativas y estándares clave para la protección de datos y la gobernanza general de datos. Esta línea de base extrae elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y RGPD (Reglamento general de protección de datos de la Unión Europea).
 
 Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la primera vez que llega al Administrador de cumplimiento, antes de configurar otras evaluaciones. El Administrador de cumplimiento recopila señales iniciales de las soluciones de Microsoft 365. Verá de un vistazo cómo funciona su organización en relación con los estándares y regulaciones clave de protección de datos, y verá las acciones de mejora sugeridas que debe realizar.
 
@@ -137,7 +135,7 @@ Puede cambiar el nombre de la evaluación después de crearla seleccionando el b
 
 Cada evaluación tiene una página de detalles que proporciona una vista general del progreso al completar la evaluación. En la página se muestra el progreso en la finalización de los controles y el estado de prueba de las acciones de mejora clave dentro de esos controles.
 
-### <a name="overview-tab"></a>Pestaña Información general
+### <a name="overview-tab"></a>‎Pestaña da Información general
 
 La pestaña información general contiene un gráfico que muestra el porcentaje hacia la finalización de la evaluación. Este gráfico contiene un desglose de los puntos de las acciones que posee y los puntos de las acciones propiedad de Microsoft, por lo que puede ver cuántos puntos más necesita para completar la evaluación.
 
@@ -183,7 +181,7 @@ Obtenga más información sobre [cómo se realiza el seguimiento y la puntuació
 
 Cuando una actualización esté disponible para una evaluación, verá una notificación y tendrá la opción de aceptar la actualización o aplazarla más adelante.
 
-Las actualizaciones están disponibles para evaluaciones basadas en plantillas de Microsoft, como las diseñadas para su uso con Microsoft 365. Si su organización usa plantillas universales para evaluar otros productos, es posible que no se admita la herencia. Para obtener más información, consulte [Extensión de plantillas de evaluación](compliance-manager-templates-extend.md).
+Novedades están disponibles para evaluaciones basadas en plantillas de Microsoft, como las diseñadas para su uso con Microsoft 365. Si su organización usa plantillas universales para evaluar otros productos, es posible que no se admita la herencia. Para obtener más información, consulte [Extensión de plantillas de evaluación](compliance-manager-templates-extend.md).
 
 ### <a name="what-causes-an-update"></a>¿Qué provoca una actualización?
 
@@ -194,7 +192,7 @@ Si Microsoft actualiza una plantilla del Administrador de cumplimiento que ha ex
 Las evaluaciones personalizadas que cree no reciben ninguna actualización de plantilla de Microsoft. Las evaluaciones personalizadas pueden recibir actualizaciones de acciones de mejora, pero las actualizaciones de Microsoft para controlar la asignación entre evaluaciones y acciones de mejora no se aplican a las plantillas personalizadas.
 
 > [!NOTE]
-> Las actualizaciones de las evaluaciones solo se aplican en el nivel de grupo. Si tiene dos evaluaciones compiladas a partir de la misma plantilla que existen en dos grupos diferentes, cada evaluación tendrá una notificación de actualización pendiente y tendrá que aceptar la actualización de cada evaluación de su grupo respectivo individualmente.
+> Novedades a las evaluaciones solo se aplican en el nivel de grupo. Si tiene dos evaluaciones compiladas a partir de la misma plantilla que existen en dos grupos diferentes, cada evaluación tendrá una notificación de actualización pendiente y tendrá que aceptar la actualización de cada evaluación de su grupo respectivo individualmente.
 
 #### <a name="where-youll-see-assessment-update-notifications"></a>Donde verá las notificaciones de actualización de evaluación
 
@@ -214,7 +212,7 @@ Después de seleccionar **Revisar actualización** en la página de detalles de 
 - Información general que explica la actualización
 - Detalles específicos sobre los cambios, incluido el impacto en la puntuación de cumplimiento, la cantidad de progreso hacia la finalización de la evaluación y el número específico de cambios en las acciones y controles de mejora.
 
-Al seleccionar el vínculo **Plantilla actualizada**, se descargará un archivo Excel que contiene datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el vínculo **Plantilla actual** se descarga un archivo de la plantilla existente sin los cambios.
+Al seleccionar el vínculo **Plantilla actualizada** , se descargará un archivo de Excel que contiene datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el vínculo **Plantilla actual** se descarga un archivo de la plantilla existente sin los cambios.
 
 Para aceptar la actualización y realizar los cambios en la evaluación, seleccione **Aceptar actualización**. Los cambios aceptados son permanentes.
 
@@ -230,7 +228,7 @@ Si está en medio de completar una evaluación, es posible que desee asegurarse 
 
 ## <a name="export-an-assessment-report"></a>Exportación de un informe de evaluación
 
-Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar informe** situado cerca de la parte superior de la página, que crea un archivo Excel que puede guardar y compartir.
+Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar informe** situado cerca de la parte superior de la página, que crea un archivo de Excel que puede guardar y compartir.
 
 El informe es una instantánea de la evaluación a partir de la fecha y hora de la exportación. Contiene los detalles de los controles administrados por usted y Microsoft, incluidos el estado de implementación, la fecha de prueba y los resultados de las pruebas.
 

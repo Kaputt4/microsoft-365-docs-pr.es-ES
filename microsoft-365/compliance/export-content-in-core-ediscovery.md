@@ -18,24 +18,22 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365.
-ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 144bb7248753894c72accebbf3e87ab2d7d82d2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318666"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634277"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exportar contenido desde un caso de eDiscovery (Estándar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Una vez que una búsqueda asociada a un caso de eDiscovery (estándar) de Microsoft Purview se ejecuta correctamente, puede exportar los resultados de la búsqueda. Al exportar los resultados de búsqueda, los elementos de buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios SharePoint y OneDrive para la Empresa, se exportan copias de documentos nativos Office y otros documentos. También se exporta un archivo Results.csv que contiene información sobre cada elemento exportado y un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de búsqueda.
+Una vez que una búsqueda asociada a un caso de Microsoft Purview eDiscovery (estándar) se ejecuta correctamente, puede exportar los resultados de la búsqueda. Al exportar los resultados de búsqueda, los elementos de buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de SharePoint y OneDrive para la Empresa sitios, se exportan copias de documentos nativos de Office y otros documentos. También se exporta un archivo Results.csv que contiene información sobre cada elemento exportado y un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de búsqueda.
   
 ## <a name="export-search-results"></a>Exportar resultados de búsqueda
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, seleccione **Mostrar todo** y, a continuación, seleccione **eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Estándar).**</a>
+2. En el panel de navegación izquierdo del portal de cumplimiento, seleccione **Mostrar todo** y, a continuación, seleccione **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**eDiscovery (Estándar).**</a>
 
 3. En la página **eDiscovery (Estándar),** haga clic en el nombre del caso en el que desea crear la suspensión.
 
@@ -71,4 +69,4 @@ Una vez que una búsqueda asociada a un caso de eDiscovery (estándar) de Micros
 
 - Si reinicia la exportación, los cambios realizados en las consultas de las búsquedas que componen el trabajo de exportación no afectarán a los resultados de la búsqueda que se recuperan. Al reiniciar una exportación, se volverá a ejecutar el mismo trabajo de consulta de búsqueda combinada que se ejecutó cuando se creó el trabajo de exportación.
 
-- Además, si reinicia una exportación, los resultados de búsqueda que se copian en la ubicación Azure Storage sobrescriben los resultados anteriores. Los resultados anteriores que se copiaron no estarán disponibles para su descarga.
+- Además, si reinicia una exportación, los resultados de búsqueda que se copian en la ubicación de Azure Storage sobrescriben los resultados anteriores. Los resultados anteriores que se copiaron no estarán disponibles para su descarga.

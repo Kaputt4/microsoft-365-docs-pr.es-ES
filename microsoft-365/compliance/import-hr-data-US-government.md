@@ -15,38 +15,36 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: Los administradores de la nube del Gobierno de EE. UU. pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización para Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 4404eb9cd70ed41616fa5ed9b775b55c4c59e192
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores de la nube del Gobierno de EE. UU. pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización a Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
+ms.openlocfilehash: df9932af0588e95ea35fef24c8b9508676433d22
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092401"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634321"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU.
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos de recursos humanos (RR. HH.) a su organización del Gobierno de EE. UU. Los datos relacionados con RR. HH. incluyen la fecha en que un empleado presentó su renuncia y la fecha del último día del empleado. A continuación, las soluciones de protección de la información de Microsoft pueden usar estos datos de RR. HH., como la [solución de administración de riesgos internos](insider-risk-management.md), para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de su organización. La configuración de un conector de RR. HH. consiste en crear una aplicación en Azure Active Directory que se usa para la autenticación mediante el conector, crear un archivo de asignación CSV que contenga los datos de RR. HH., crear un conector de datos en el centro de cumplimiento y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de RR. HH. en el archivo CSV en la nube de Microsoft. A continuación, la herramienta de administración de riesgos internos usa el conector de datos para acceder a los datos de RR. HH. que se importaron a su Microsoft 365 organización gubernamental de EE. UU.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar datos de recursos humanos (RR. HH.) a su organización del Gobierno de EE. UU. Los datos relacionados con RR. HH. incluyen la fecha en que un empleado presentó su renuncia y la fecha del último día del empleado. A continuación, las soluciones de protección de la información de Microsoft pueden usar estos datos de RR. HH., como la [solución de administración de riesgos internos](insider-risk-management.md), para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de su organización. La configuración de un conector de RR. HH. consiste en crear una aplicación en Azure Active Directory que se usa para la autenticación mediante el conector, crear un archivo de asignación CSV que contenga los datos de RR. HH., crear un conector de datos en el centro de cumplimiento y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de RR. HH. en el archivo CSV en la nube de Microsoft. A continuación, la herramienta de administración de riesgos internos usa el conector de datos para acceder a los datos de RR. HH. que se importaron a su organización de Microsoft 365 US Government.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Actualmente, el rol administrador del conector de datos no se admite en los entornos de administración GCC Alto y DoD de la Administración pública de EE. UU. Por lo tanto, al usuario que crea el conector de RR. HH. en GCC entornos High y DoD se le debe asignar el rol Exportación de importación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzón y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear grupos de roles](/Exchange/permissions-exo/role-groups#create-role-groups) o [Modificar grupos de roles](/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo "Administrar grupos de roles en Exchange Online".
+   > El rol de Administración del conector de datos no se admite actualmente en los entornos GCC High y DoD del Gobierno de EE. UU. Por lo tanto, al usuario que crea el conector de RR. HH. en entornos de GCC High y DoD se le debe asignar el rol Exportación de importación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzón y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear grupos de roles](/Exchange/permissions-exo/role-groups#create-role-groups) o [Modificar grupos de roles](/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Tendrá que determinar cómo recuperar o exportar los datos del sistema de RR. HH. de su organización (de forma periódica) y agregarlos al archivo CSV que se describe en el paso 2. El script que ejecute en el paso 4 cargará los datos de RR. HH. en el archivo CSV en la nube de Microsoft.
 
 - El script de ejemplo que ejecute en el paso 4 cargará datos de RR. HH. en la nube de Microsoft para que puedan usarlos otras herramientas de Microsoft, como la solución de administración de riesgos internos. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RR. HH. que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RR. HH. cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de RR. HH. en la nube de Microsoft. Durante la creación de esta aplicación Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RR. HH. que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RR. HH. cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de RR. HH. en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD identificador de aplicación (también denominado *id. de aplicación* o *id. de cliente*)
+- Identificador de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente*)
 
-- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
+- Secreto de aplicación de Azure AD (también denominado *secreto de cliente*)
 
 - Id. de inquilino (también denominado *id. de directorio*)
 
@@ -77,7 +75,7 @@ Después de crear el archivo CSV con los datos de RR. HH. necesarios, almacénel
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: Creación del conector de RR. HH.
 
-El siguiente paso es crear un conector de RR. HH. en el portal de cumplimiento. Después de ejecutar el script en el paso 4, el conector de RR. HH. que cree ingerirá los datos de RR. HH. del archivo CSV en la organización Microsoft 365. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
+El siguiente paso es crear un conector de RR. HH. en el portal de cumplimiento. Después de ejecutar el script en el paso 4, el conector de RR. HH. que cree ingerirá los datos de RR. HH. del archivo CSV en la organización de Microsoft 365. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
 
 1. Vaya al portal de cumplimiento y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**La página Conectores de datos**</a>.
 
@@ -103,7 +101,7 @@ El siguiente paso es crear un conector de RR. HH. en el portal de cumplimiento. 
 
    1. **Id. de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página de control flotante del conector.
    
-   1. **Vínculo a script de ejemplo.** Haga clic en el vínculo **aquí** para ir al sitio GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo en el paso 4. Este vínculo también está disponible en la página de control flotante del conector.
+   1. **Vínculo a script de ejemplo.** Haga clic en el vínculo **aquí** para ir al sitio de GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo en el paso 4. Este vínculo también está disponible en la página de control flotante del conector.
 
 7. Haga clic en **Listo**.
 
@@ -119,9 +117,9 @@ El siguiente paso es crear un conector de RR. HH. en el portal de cumplimiento. 
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Paso 4: Ejecución del script de ejemplo para cargar los datos de RR. HH.
 
-El último paso para configurar un conector de RR. HH. es ejecutar un script de ejemplo que cargará los datos de RR. HH. en el archivo CSV (que creó en el paso 2) en la nube de Microsoft. En concreto, el script carga los datos en el conector de RR. HH. Después de ejecutar el script, el conector de RR. HH. que creó en el paso 3 importa los datos de RR. HH. a la organización Microsoft 365 a la que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [Programación del script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+El último paso para configurar un conector de RR. HH. es ejecutar un script de ejemplo que cargará los datos de RR. HH. en el archivo CSV (que creó en el paso 2) en la nube de Microsoft. En concreto, el script carga los datos en el conector de RR. HH. Después de ejecutar el script, el conector de RR. HH. que creó en el paso 3 importa los datos de RR. HH. a la organización de Microsoft 365, donde se puede acceder a ellos mediante otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [Programación del script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para acceder al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que copió.
+1. Vaya a la ventana que dejó abierta desde el paso anterior para acceder al sitio de GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que copió.
 
 2. Haga clic en el botón **Sin formato** para mostrar el script en la vista de texto.
 
@@ -143,9 +141,9 @@ El último paso para configurar un conector de RR. HH. es ejecutar un script de 
 
    | Parámetro | Descripción |
    |:-----|:-----|:-----|
-   |`tenantId`|Identificador de la organización Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del centro de administración de Azure AD. Esto se usa para identificar su organización.|
-   |`appId` |Identificador de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta acceder a la organización Microsoft 365. |
-   |`appSecret`|El secreto de aplicación Azure AD de la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
+   |`tenantId`|Identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
+   |`appId` |Identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365. |
+   |`appSecret`|Secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
    |`jobId`|Identificador de trabajo para el conector de RR. HH. que creó en el paso 3. Esto se usa para asociar los datos de RR. HH. que se cargan en la nube de Microsoft con el conector de RR. HH.|
    |`csvFilePath`|Ruta de acceso del archivo CSV (almacenada en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||
@@ -156,7 +154,7 @@ El último paso para configurar un conector de RR. HH. es ejecutar un script de 
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si la carga se realiza correctamente, el script muestra el **mensaje Upload Correcto**.
+   Si la carga se realiza correctamente, el script muestra el mensaje **Cargar correctamente** .
 
    > [!NOTE]
    > Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, consulte [Acerca de las directivas de ejecución](/powershell/module/microsoft.powershell.core/about/about_execution_policies) y [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
@@ -185,7 +183,7 @@ Para asegurarse de que los datos de RR. HH. más recientes de su organización e
 
 Puede usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
-1. En el equipo local, haga clic en el botón **inicio** Windows y escriba **Programador de tareas**.
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y escriba **Programador de tareas**.
 
 2. Haga clic en la aplicación **Programador de tareas** para abrirla.
 

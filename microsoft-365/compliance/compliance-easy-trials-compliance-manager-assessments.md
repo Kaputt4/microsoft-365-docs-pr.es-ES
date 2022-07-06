@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de evaluación premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187764"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631279"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Acerca de la evaluación gratuita de las evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El Administrador de cumplimiento le ayuda a administrar los requisitos de cumplimiento de su organización y a evaluar y mejorar la puntuación de cumplimiento. Las evaluaciones que cree se basan en plantillas que se corresponden con normativas gubernamentales y estándares del sector en todo el mundo.  
 

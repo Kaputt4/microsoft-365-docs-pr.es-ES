@@ -15,16 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Introducción al proceso de planeación para la prevención de pérdida de datos
-ms.openlocfilehash: 68e2b3145521433dd8e0f602b8edb571c45ed9df
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: afda017b2cc627876134888a83f70e9464aba2c8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953457"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634453"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planear la prevención de pérdida de datos (DLP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Todas las organizaciones planean e implementan la prevención de pérdida de datos de forma diferente, ya que las necesidades empresariales, los objetivos, los recursos y la situación de cada una son únicos. Sin embargo, hay elementos que son comunes a todas las implementaciones de DLP correctas. En este artículo se presentan los procedimientos recomendados que usan las organizaciones en su planeación DLP.
 
@@ -34,17 +32,17 @@ Muchas organizaciones optan por implementar DLP para cumplir con diversas regula
 
 Las organizaciones pueden iniciar su recorrido DLP:
 
-- desde un enfoque de plataforma, como querer proteger la información en Teams mensajes de chat y canal o en dispositivos Windows 10
+- desde un enfoque de plataforma, como querer proteger la información en mensajes de chat y canales de Teams o en dispositivos Windows 10
 - saber qué información confidencial quieren priorizar la protección, como los registros de atención médica, y ir directamente a definir directivas para protegerla
 - sin saber cuál es su información confidencial, dónde está y quién está haciendo lo que con ella para que comiencen con la detección y categorización y adopten un enfoque más metódico
 - sin saber cuál es su información confidencial, dónde está o quién está haciendo lo que con ella, pero se moverán directamente a la definición de directivas y usarán esos resultados como un lugar de partida y luego refinarán sus directivas desde allí.
-- saber que necesitan implementar la pila de Information Protection de Microsoft Purview completa y, por lo tanto, pretenden adoptar un enfoque metódico a más largo plazo
+- saber que necesitan implementar la pila de Microsoft Purview Information Protection completa y, por lo tanto, pretenden adoptar un enfoque metódico a más largo plazo
 
 Estos son solo algunos ejemplos de cómo los clientes pueden acercarse a DLP y no importa desde dónde empiece, DLP es lo suficientemente flexible como para dar cabida a varios tipos de recorridos de protección de la información desde el principio hasta una estrategia de prevención de pérdida de datos totalmente realizada. 
 
 ## <a name="overview-of-planning-process"></a>Introducción al proceso de planeación
 
-[Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) presenta los tres aspectos diferentes del [proceso de planeación DLP](dlp-learn-about-dlp.md#plan-for-dlp). Veremos más detalles aquí sobre los elementos que son comunes a todos los planes DLP.
+[En Learn about Prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) se presentan los tres aspectos diferentes del [proceso de planeación DLP](dlp-learn-about-dlp.md#plan-for-dlp). Veremos más detalles aquí sobre los elementos que son comunes a todos los planes DLP.
 
 ### <a name="identify-stakeholders"></a>Identificación de las partes interesadas
 
@@ -150,7 +148,7 @@ Los elementos que contienen información confidencial de las organizaciones se u
 - Microsoft Defender for Cloud Apps
 - Repositorios locales
 
-**Ejemplo** Los auditores internos de las organizaciones están realizando un seguimiento de un conjunto de números de tarjeta de crédito. Mantienen una hoja de cálculo de ellos en un sitio de SharePoint seguro. Varios de los empleados realizan copias y las guardan en su sitio de trabajo OneDrive para la Empresa, que se sincroniza con su dispositivo Windows 10. Uno de ellos pega una lista de 14 de ellos en un correo electrónico e intenta enviarlo a los auditores externos para su revisión. Querrá aplicar la directiva al sitio de SharePoint seguro, a todos los auditores internos OneDrive para la Empresa cuentas, a sus dispositivos Windows 10 y a Exchange correo electrónico.
+**Ejemplo** Los auditores internos de las organizaciones están realizando un seguimiento de un conjunto de números de tarjeta de crédito. Mantienen una hoja de cálculo de ellos en un sitio seguro de SharePoint. Varios de los empleados realizan copias y las guardan en su sitio de trabajo OneDrive para la Empresa, que se sincroniza con su dispositivo Windows 10. Uno de ellos pega una lista de 14 de ellos en un correo electrónico e intenta enviarlo a los auditores externos para su revisión. Querrá aplicar la directiva al sitio seguro de SharePoint, a todos los auditores internos OneDrive para la Empresa cuentas, a sus dispositivos Windows 10 y al correo electrónico de Exchange.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>¿Cuál es la tolerancia de las organizaciones a la fuga?
 
@@ -164,7 +162,7 @@ Para poder supervisar algunas ubicaciones DLP, se deben cumplir los requisitos p
 
 - [Introducción al examinador de prevención de pérdida de datos en el entorno local (versión preliminar)](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md#before-you-begin)
-- [Comenzar con la extensión de cumplimiento de Microsoft](dlp-chrome-get-started.md#before-you-begin)
+- [Introducción a la extensión de cumplimiento de Microsoft](dlp-chrome-get-started.md#before-you-begin)
 - [Uso de directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft (versión preliminar)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### <a name="policy-deployment"></a>Implementación de directivas
@@ -175,7 +173,7 @@ Si está creando directivas DLP con un gran impacto potencial, se recomienda seg
   
 1. **Inicie en modo de prueba sin sugerencias de directiva** y, a continuación, use los informes DLP para evaluar el impacto. Los informes DLP le sirven para ver el número, la ubicación, el tipo y la gravedad de las coincidencias de directivas. En función de los resultados, puede ajustar las directivas según sea necesario. En el modo de prueba, las directivas DLP no afectarán a la productividad de las personas que trabajan en su organización. Además, use esta fase para probar el flujo de trabajo para la revisión de eventos DLP y la corrección de problemas.
     
-2. **Vaya al modo de prueba con notificaciones y Sugerencias de** directivas para que pueda empezar a enseñar a los usuarios sobre las directivas de cumplimiento y prepararlas para las directivas que se van a aplicar. Es útil tener un vínculo a una página de directiva de organización que proporcione más detalles sobre la directiva en la sugerencia de directiva. En esta fase, también puede pedir a los usuarios que notifiquen falsos positivos para poder refinar aún más las directivas. Pase a esta fase una vez que tenga la confianza de que los resultados de la aplicación de directiva coinciden con lo que tenían en mente las partes interesadas. 
+2. **Vaya al modo de prueba con notificaciones y sugerencias de directiva** para que pueda empezar a enseñar a los usuarios sobre las directivas de cumplimiento y prepararlas para las directivas que se van a aplicar. Es útil tener un vínculo a una página de directiva de organización que proporcione más detalles sobre la directiva en la sugerencia de directiva. En esta fase, también puede pedir a los usuarios que notifiquen falsos positivos para poder refinar aún más las directivas. Pase a esta fase una vez que tenga la confianza de que los resultados de la aplicación de directiva coinciden con lo que tenían en mente las partes interesadas. 
     
 3. **Comience el cumplimiento completo de las directivas** para que se apliquen las acciones en las reglas y se proteja el contenido. Continúe supervisando los informes DLP y los informes de incidentes o las notificaciones para asegurarse de que los resultados sean los deseados. 
 
@@ -201,9 +199,9 @@ Las regulaciones, las leyes y los estándares del sector a los que está sujeta 
 
 |Descripción de las necesidades empresariales del cliente  | Enfoque  |
 |---------|---------|
-|**Contoso Bank** está en un sector altamente regulado y tiene muchos tipos diferentes de elementos confidenciales en muchas ubicaciones diferentes. </br> : sabe qué tipos de información confidencial son de máxima prioridad. </br> : debe minimizar la interrupción empresarial a medida que se implementan las directivas. </br> : tiene recursos de TI y puede contratar expertos para ayudar a planear, diseñar la implementación </br> : tiene un contrato de soporte técnico premier con Microsoft| - Tómese el tiempo para comprender qué normativas deben cumplir y cómo van a cumplir. </br> -Tómese el tiempo para comprender mejor el valor conjunto de la pila de Information Protection de Microsoft Purview </br> - Desarrollar un esquema de etiquetado de confidencialidad para los elementos prioritarios y aplicar </br> - Implicar a los propietarios de procesos empresariales </br>- Directivas de diseño y código, implementación en modo de prueba, entrenamiento de usuarios </br>- repetir|
-|**TailSpin Toys** no sabe qué tienen o dónde está, y tienen poca o ninguna profundidad de recursos. Usan Teams, OneDrive para la Empresa y Exchange extensamente.     |- Comience con directivas sencillas en las ubicaciones prioritarias. </br>- Supervisión de lo que se identifica </br>- Aplicar etiquetas de confidencialidad en consecuencia </br>- Refinar directivas, entrenar usuarios       |
-|**Fabrikam** es una pequeña startup y quiere proteger su propiedad intelectual, y debe moverse rápidamente. Están dispuestos a dedicar algunos recursos, pero no pueden permitirse contratar expertos externos. </br>- Todos los elementos confidenciales están en Microsoft 365 OneDrive para la Empresa/SharePoint </br>- La adopción de OneDrive para la Empresa y SharePoint es lenta, los empleados/shadow IT usan DropBox y google drive para compartir o almacenar elementos </br>- Los empleados valoran la velocidad del trabajo sobre la materia de protección de datos </br>- El cliente se aplurgó y compró los 18 empleados nuevos dispositivos Windows 10     |- Aprovechar la directiva DLP predeterminada en Teams </br>- Usar la opción restringida de forma predeterminada para SharePoint elementos </br>- Implementación de directivas que impiden el uso compartido externo </br>- Implementación de directivas en ubicaciones con prioridad </br>- Implementar directivas en dispositivos Windows 10 </br>- Bloquear cargas en almacenamiento en la nube que no es OneDrive para la Empresa      |
+|**Contoso Bank** está en un sector altamente regulado y tiene muchos tipos diferentes de elementos confidenciales en muchas ubicaciones diferentes. </br> : sabe qué tipos de información confidencial son de máxima prioridad. </br> : debe minimizar la interrupción empresarial a medida que se implementan las directivas. </br> : tiene recursos de TI y puede contratar expertos para ayudar a planear, diseñar la implementación </br> : tiene un contrato de soporte técnico premier con Microsoft| - Tómese el tiempo para comprender qué normativas deben cumplir y cómo van a cumplir. </br> -Tómese el tiempo necesario para comprender mejor el valor conjunto de la pila de Microsoft Purview Information Protection </br> - Desarrollar un esquema de etiquetado de confidencialidad para los elementos prioritarios y aplicar </br> - Implicar a los propietarios de procesos empresariales </br>- Directivas de diseño y código, implementación en modo de prueba, entrenamiento de usuarios </br>- repetir|
+|**TailSpin Toys** no sabe qué tienen o dónde está, y tienen poca o ninguna profundidad de recursos. Usan Teams, OneDrive para la Empresa y Exchange ampliamente.     |- Comience con directivas sencillas en las ubicaciones prioritarias. </br>- Supervisión de lo que se identifica </br>- Aplicar etiquetas de confidencialidad en consecuencia </br>- Refinar directivas, entrenar usuarios       |
+|**Fabrikam** es una pequeña startup y quiere proteger su propiedad intelectual, y debe moverse rápidamente. Están dispuestos a dedicar algunos recursos, pero no pueden permitirse contratar expertos externos. </br>- Todos los elementos confidenciales están en Microsoft 365 OneDrive para la Empresa/SharePoint </br>- La adopción de OneDrive para la Empresa y SharePoint es lenta, los empleados/shadow IT usan DropBox y google drive para compartir o almacenar elementos </br>- Los empleados valoran la velocidad del trabajo sobre la materia de protección de datos </br>- El cliente se aplurgó y compró los 18 empleados nuevos dispositivos Windows 10     |- Aprovechar la directiva DLP predeterminada en Teams </br>- Usar la opción restringida de forma predeterminada para elementos de SharePoint </br>- Implementación de directivas que impiden el uso compartido externo </br>- Implementación de directivas en ubicaciones con prioridad </br>- Implementar directivas en dispositivos Windows 10 </br>- Bloquear cargas en almacenamiento en la nube que no es OneDrive para la Empresa      |
 
 <!--
 

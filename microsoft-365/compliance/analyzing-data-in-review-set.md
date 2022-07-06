@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
+description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099837"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634839"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Análisis de datos en un conjunto de revisión en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando el número de documentos recopilados es grande, puede ser difícil revisarlos todos. Microsoft Purview eDiscovery (Premium) proporciona una serie de herramientas para analizar los documentos con el fin de reducir el volumen de documentos que se van a revisar sin pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información sobre estas funcionalidades, consulte:
 
@@ -44,7 +42,7 @@ Para analizar los datos de un conjunto de revisión:
 
 2. Abra el conjunto de revisión que desea analizar.
 
-3. Haga clic en **AnálisisEjecutar** >  **documento & análisis de correo electrónico**.
+3. Haga clic en **Análisis** > **Ejecutar documento & análisis de correo electrónico**.
 
    ![Seleccione Ejecutar documento & análisis de correo electrónico en la lista desplegable Análisis](..\media\RunAnalytics1.png)
 
@@ -72,12 +70,12 @@ En la lista siguiente se describe el resultado de la consulta de filtro en térm
 
 - **Documentos y otros**. Filtra los documentos duplicados. Solo se muestran los documentos que son únicos en el conjunto de revisión.
 
-- **Teams conversaciones**. Se muestran todas las conversaciones Teams (y Yammer) del conjunto de revisión.
+- **Conversaciones de Teams**. Se muestran todas las conversaciones de Teams (y Yammer) del conjunto de revisión.
 
-Para obtener más información sobre los tipos inclusivos y la unicidad del documento, vea [Subprocesos de correo electrónico en eDiscovery (Premium)](email-threading-in-advanced-ediscovery.md).
+Para obtener más información sobre los tipos inclusivos y la unicidad del documento, vea [Subprocesos de correo electrónico en eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
 
 > [!NOTE]
-> Durante la versión preliminar pública [del nuevo formato de caso](advanced-ediscovery-new-case-format.md) en eDiscovery (Premium), la consulta de filtro **For Review** no devolvió Teams ni Yammer conversaciones para conjuntos de revisión (en casos que usan el formato de mayúsculas y minúsculas) creada antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si vuelve a aplicar la consulta **For Review** a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, se pueden mostrar más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones Teams o Yammer.
+> Durante la versión preliminar pública [del nuevo formato de caso](advanced-ediscovery-new-case-format.md) en eDiscovery (Premium), la consulta de filtro **For Review** no devolvió las conversaciones de Teams o Yammer para los conjuntos de revisión (en los casos que usan el formato de mayúsculas y minúsculas) creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si vuelve a aplicar la consulta **For Review** a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, es posible que se muestren más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones de Teams o Yammer.
 
 ## <a name="analytics-report"></a>Informe de análisis
 
@@ -85,7 +83,7 @@ Para ver el informe de análisis de un conjunto de revisión:
 
 1. Abra el conjunto de revisión.
 
-2. Haga clic en **AnálisisShow reports** (**Mostrar** >  informes).
+2. Haga clic en **Análisis** > **Mostrar informes**.
 
 El informe **de Análisis** tiene siete componentes del análisis:
 

@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 7d2874260ce7a307aa42c67ba571104ed4c4da87
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 2d9967cc432cb4d75bebbc67b7b9b0a812baa031
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368097"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631989"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Uso de SharePoint Syntex para identificar archivos de contrato y extraer datos
 
@@ -35,7 +35,7 @@ En los modelos de comprensión mediante documentos se usa la tecnología de reco
 
 3. En el modelo, puede [crear un extractor](create-an-extractor.md) para extraer fragmentos de datos específicos de cada contrato. Por ejemplo, para cada contrato, la información que más le preocupa es quién es el cliente, el nombre del contratista y el costo total.
 
-4. Después de crear correctamente el modelo, [aplíquelo a una biblioteca de documentos SharePoint](apply-a-model.md). Al cargar documentos en la biblioteca de documentos, el modelo de comprensión de documentos se ejecutará e identificará y clasificará todos los archivos que coincidan con el tipo de contenido de contratos definido en el modelo. Todos los archivos clasificados como contratos se mostrarán en una vista de biblioteca personalizada. Los archivos también mostrarán los valores de cada contrato definido en el extractor.
+4. Después de crear correctamente el modelo, [aplíquelo a una biblioteca de documentos de SharePoint](apply-a-model.md). Al cargar documentos en la biblioteca de documentos, el modelo de comprensión de documentos se ejecutará e identificará y clasificará todos los archivos que coincidan con el tipo de contenido de contratos definido en el modelo. Todos los archivos clasificados como contratos se mostrarán en una vista de biblioteca personalizada. Los archivos también mostrarán los valores de cada contrato definido en el extractor.
 
    ![Contratos en la biblioteca de documentos.](../media/content-understanding/doc-lib-solution.png)
 
@@ -65,15 +65,15 @@ El primer paso es crear el modelo de contrato.
 
 Debe agregar al menos cinco archivos de ejemplo que son documentos de contrato y un archivo de ejemplo que no sea un documento de contrato (por ejemplo, una instrucción de trabajo). 
 
-1. En la página **Modelos > contrato**, en **Acciones** **claveAgregar** >  archivos de ejemplo, seleccione **Agregar archivos**.
+1. En la página **Modelos > contrato**, en **Acciones** >  clave **Agregar archivos de ejemplo**, seleccione **Agregar archivos**.
 
    ![Captura de pantalla que muestra la página Contratos con la opción Agregar archivos de ejemplo resaltada.](../media/content-understanding/key-actions-add-example-files.png)
 
-2. En la página **Seleccionar archivos de ejemplo para el modelo** , abra la carpeta Contrato, seleccione los archivos que desea usar y, a continuación, seleccione **Agregar**. Si no tiene archivos de ejemplo, seleccione **Upload** para agregarlos.
+2. En la página **Seleccionar archivos de ejemplo para el modelo** , abra la carpeta Contrato, seleccione los archivos que desea usar y, a continuación, seleccione **Agregar**. Si no tiene archivos de ejemplo allí, seleccione **Cargar** para agregarlos.
 
 #### <a name="label-the-files-as-positive-or-negative-examples"></a>Etiquetar los archivos como ejemplos positivos o negativos
 
-1. En la página **Modelos > contrato**, en **Acciones** >  **claveClasificar archivos y ejecutar el entrenamiento**, seleccione **Entrenar clasificador**.
+1. En la página **Modelos > contrato**, en **Acciones** >  clave **Clasificar archivos y ejecutar entrenamiento**, seleccione **Entrenar clasificador**.
 
    ![Captura de pantalla que muestra la página Contratos con la opción Clasificar archivos y ejecutar entrenamiento resaltada.](../media/content-understanding/key-actions-classify-files.png)
 
@@ -117,7 +117,7 @@ Puede probar el modelo de contrato en los archivos de ejemplo que no ha visto an
 
 ### <a name="create-and-train-an-extractor"></a>Creación y entrenamiento de un extractor
 
-1. En la página **Modelos > contrato**, en **Acciones** >  **claveCrear y entrenar extractores**, seleccione **Crear extractor**.
+1. En la página **Modelos > contrato**, en **Acciones** >  clave **Crear y entrenar extractores**, seleccione **Crear extractor**.
 
    ![Captura de pantalla que muestra la página Contratos con la opción Crear y entrenar extractores resaltada.](../media/content-understanding/key-actions-create-extractors.png)
 
@@ -149,7 +149,7 @@ Puede crear una explicación que proporcione una sugerencia sobre el propio form
 - 14 de octubre de 2019
 - Lunes 14 de octubre de 2019
 
-Para ayudar a identificar la *fecha de inicio del contrato*, puede crear una explicación de patrón.
+Para ayudar a identificar la *fecha de inicio del contrato*, puede crear una explicación.
 
 1. En la sección **Explicaciones** , seleccione **Nuevo** y, a continuación, **En blanco**.
 
@@ -157,7 +157,7 @@ Para ayudar a identificar la *fecha de inicio del contrato*, puede crear una exp
 
     a. En el campo **Nombre** , escriba el nombre de la explicación (por ejemplo *, Fecha*).
 
-    b. En el campo **Tipo de explicación** , seleccione **Lista de patrones**.
+    b. En el campo **Tipo de explicación** , seleccione **Lista de frases**.
 
     c. En el campo **Valor** , proporcione la variación de fecha tal como aparecen en los archivos de ejemplo. Por ejemplo, si tiene formatos de fecha que aparecen como 0/00/0000, introduzca cualquier variación que aparezca en sus documentos, como por ejemplo:
 
@@ -180,13 +180,13 @@ Puede probar el modelo de contrato en los archivos de ejemplo que no ha visto an
 
 ### <a name="apply-your-model-to-a-document-library"></a>Aplicación del modelo a una biblioteca de documentos
 
-Para aplicar el modelo a una biblioteca de documentos SharePoint:
+Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la página **Modelos > contrato**, en **Acciones** >  **claveAplicar modelo a bibliotecas**, seleccione **Aplicar modelo**.
+1. En la página **Modelos > contrato**, en **Acciones** >  clave **Aplicar modelo a bibliotecas**, seleccione **Aplicar modelo**.
 
    ![Captura de pantalla que muestra la página Contratos con la opción Aplicar modelo a bibliotecas resaltada.](../media/content-understanding/key-actions-apply-model.png)
 
-2. En el panel **Agregar contrato**, seleccione el sitio SharePoint que contiene la biblioteca de documentos a la que desea aplicar el modelo. Si el sitio no aparece en la lista, use el cuadro de búsqueda para encontrarlo. Seleccione **Agregar**.
+2. En el panel **Agregar contrato** , seleccione el sitio de SharePoint que contiene la biblioteca de documentos a la que desea aplicar el modelo. Si el sitio no aparece en la lista, use el cuadro de búsqueda para encontrarlo. Seleccione **Agregar**.
 
     > [!NOTE]
     > Debe tener permisos de *Administración de lista* o de *Edición* en la biblioteca de documentos a la que va a aplicar el modelo.
@@ -197,11 +197,11 @@ Para aplicar el modelo a una biblioteca de documentos SharePoint:
 
 5. Seleccione **Agregar** para aplicar el modelo a la biblioteca.
 
-6. En la página **Modelos > contrato**, en la sección **Bibliotecas con este modelo**, verá la dirección URL al sitio de SharePoint que aparece.
+6. En la página **Modelos > contrato** , en la sección **Bibliotecas con este modelo** , verá la dirección URL del sitio de SharePoint en la lista.
 
     ![Captura de pantalla de la página principal Contrato que muestra la sección Bibliotecas con este modelo.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-7. En **Configuración** **Configuración de la** >  biblioteca:
+7. En **Configuración de** > **la biblioteca de configuración**:
 
    - Agregue una columna denominada **Status (Estado)** y seleccione **Choice (Elección** ) como tipo de columna.
    - Aplique los valores **En revisión**, **Aprobado** y **Rechazado** .

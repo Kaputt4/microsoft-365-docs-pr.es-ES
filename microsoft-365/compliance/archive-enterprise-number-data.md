@@ -1,5 +1,5 @@
 ---
-title: Configuración de un conector para archivar datos del archivador de números Enterprise TeleMessage
+title: Configuración de un conector para archivar datos del archivador de número de empresa de TeleMessage
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,55 +11,53 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos SMS y MMS desde TeleMessage Enterprise Number Archiver. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: dc9b0220a53332c3493acc4bb3217f4b782442a7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores pueden configurar un conector para importar y archivar datos DE SMS y MMS desde el archivador de números de empresa de TeleMessage. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 8adefbe03a2202dd88b8114dbfbcf033b4bf3844
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095064"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631467"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuración de un conector para archivar Enterprise datos de número
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuración de un conector para archivar datos de número de empresa
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use un conector de TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar mensajes de Servicio de mensajería corta (SMS) y servicio de mensajería multimedia (MMS), mensajes de chat, grabaciones de llamadas de voz y registros de llamadas de voz del Archivador de números de empresa. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa los datos de comunicación móvil de los empleados que usan el archivador de número de empresa de TeleMessage a buzones de Correo de Microsoft 365.
 
-Use un conector de TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar mensajes de Servicio de mensajería breve (SMS) y servicio de mensajería multimedia (MMS), mensajes de chat, grabaciones de llamadas de voz y registros de llamadas de voz del archivador de números de Enterprise. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa los datos de comunicación móvil de los empleados mediante TeleMessage Enterprise Number Archiver a buzones de Microsoft 365.
+Una vez almacenados los datos del conector de TeleMessage Enterprise Number Archiver en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Enterprise Number Archiver. Por ejemplo, puede buscar en TeleMessage Enterprise Number Archiver SMS, MMS y Voice Call mediante Búsqueda de contenido o asociar el buzón que contiene los datos del conector de Enterprise Number Archiver con un custodio en un caso de eDiscovery (Premium). El uso de un conector de archivador de número de empresa para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
-Una vez que los datos del conector de TeleMessage Enterprise Number Archiver se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 para Enterprise datos de Number Archiver. Por ejemplo, puede buscar en TeleMessage Enterprise SMS, MMS y Llamada de voz del archivador de números mediante búsqueda de contenido o asociar el buzón que contiene los datos del conector Enterprise Number Archiver con un custodio en un caso de eDiscovery (Premium). El uso de un conector Enterprise Number Archiver para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+## <a name="overview-of-archiving-enterprise-number-data"></a>Introducción al archivado de datos de número de empresa
 
-## <a name="overview-of-archiving-enterprise-number-data"></a>Información general sobre el archivado de datos de número de Enterprise
+En la información general siguiente se explica el proceso de uso de un conector para archivar los datos de Enterprise Network en Microsoft 365.
 
-En la información general siguiente se explica el proceso de uso de un conector para archivar Enterprise datos de red en Microsoft 365.
+![Flujo de trabajo de archivado de número de empresa.](../media/EnterpriseNumberConnectorWorkflow.png)
 
-![Enterprise flujo de trabajo de archivado de números.](../media/EnterpriseNumberConnectorWorkflow.png)
+1. Su organización funciona con TeleMessage para configurar un conector de archivador de número de empresa. Para obtener más información, consulte [aquí](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 
-1. Su organización funciona con TeleMessage para configurar un conector Enterprise Number Archiver. Para obtener más información, consulte [aquí](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
+2. El conector Enterprise Number Archiver que se crea en el portal de cumplimiento se conecta al sitio TeleMessage todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área de Azure Storage segura en la nube de Microsoft.
 
-2. El conector Enterprise Number Archiver que se crea en el portal de cumplimiento se conecta al sitio TeleMessage todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área de Azure Storage segura en Microsoft Cloud.
-
-3. El conector importa los elementos de comunicación móviles al buzón de un usuario específico. Se crea una nueva carpeta denominada Enterprise Number Archiver en el buzón de correo del usuario específico y los elementos se importan a él. El conector realiza la asignación mediante el valor de la propiedad Dirección *de correo electrónico del usuario* . Cada mensaje de correo electrónico contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de correo electrónico. Además de la asignación automática de usuarios mediante el valor de la propiedad Dirección *de correo electrónico del usuario* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación debe contener el número de móvil del usuario y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de correo electrónico, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que se corresponda con el número de móvil de un usuario, el conector usará la propiedad de dirección de correo electrónico del usuario del elemento de correo electrónico. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad de *dirección de correo electrónico del usuario* del elemento de correo electrónico, el elemento no se importará.
+3. El conector importa los elementos de comunicación móviles al buzón de un usuario específico. Se crea una nueva carpeta denominada Archivador de número de empresa en el buzón de correo del usuario específico y los elementos se importan en él. El conector realiza la asignación mediante el valor de la propiedad Dirección *de correo electrónico del usuario* . Cada mensaje de correo electrónico contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de correo electrónico. Además de la asignación automática de usuarios mediante el valor de la propiedad Dirección *de correo electrónico del usuario* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación debe contener el número de móvil del usuario y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de correo electrónico, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el número de móvil de un usuario, el conector usará la propiedad de dirección de correo electrónico del usuario del elemento de correo electrónico. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *de dirección de correo electrónico del usuario* del elemento de correo electrónico, el elemento no se importará.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
-Algunos de los pasos de implementación necesarios para archivar Enterprise datos de Number Archiver son externos a Microsoft 365 y deben completarse para poder crear el conector en el centro de cumplimiento.
+Algunos de los pasos de implementación necesarios para archivar los datos del archivador de número de empresa son externos a Microsoft 365 y deben completarse para poder crear el conector en el centro de cumplimiento.
 
-- Solicite el [servicio Enterprise Number Archiver de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) y obtenga una cuenta de administración válida para su organización. Tendrá que iniciar sesión en esta cuenta al crear el conector en el centro de cumplimiento.
+- Pida el [servicio de archivador de número de empresa de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) y obtenga una cuenta de administración válida para su organización. Tendrá que iniciar sesión en esta cuenta al crear el conector en el centro de cumplimiento.
 
-- Registre todos los usuarios que requieran Enterprise archivo de red SMS/MMS en la cuenta de TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su cuenta de Microsoft 365.
+- Registre todos los usuarios que requieran el archivado de sms/MMS de número de empresa en la cuenta de TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su cuenta de Microsoft 365.
 
-- Instala y activa la aplicación TeleMessage Enterprise Number Archiver en los teléfonos móviles de tus empleados.
+- Instale y active la aplicación TeleMessage Enterprise Number Archiver en los teléfonos móviles de sus empleados.
 
-- Al usuario que crea un conector Enterprise Number Archiver se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea un conector de archivador de número de empresa se le debe asignar el rol de Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de TeleMessage está disponible en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de TeleMessage está disponible en entornos GCC en la nube de Microsoft 365 US Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
-## <a name="create-an-enterprise-number-archiver-connector"></a>Creación de un conector Enterprise Number Archiver
+## <a name="create-an-enterprise-number-archiver-connector"></a>Creación de un conector de archivador de número de empresa
 
-Después de completar los requisitos previos descritos en la sección anterior, puede crear un conector Enterprise Number Archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS, MMS y mensajes de llamada de voz a los cuadros de buzón de usuario correspondientes en Microsoft 365.
+Después de completar los requisitos previos descritos en la sección anterior, puede crear un conector enterprise number archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS, MMS y mensajes de llamada de voz a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** \> de datos **Enterprise Archivador de números**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** \> de datos **Archivador de número de empresa**.
 
-2. En la página de descripción del producto **Enterprise Number Archiver**, haga clic en **Agregar conector.**
+2. En la página de descripción **del producto Enterprise Number Archiver**, haga clic en **Agregar conector**.
 
 3. En la página **Términos de servicio** , haga clic en **Aceptar**.
 

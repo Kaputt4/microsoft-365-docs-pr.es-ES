@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Una vez que haya terminado de configurar Office 365 Cifrado de mensajes (OME), obtenga información sobre cómo personalizar la implementación de varias maneras.
-ms.openlocfilehash: 2e39f811ec23b2f3b068ef5684fca479850a8744
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b3d7ffe5db987b9fb3bd29682c8e101ffd99946a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014836"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635291"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el Cifrado de mensajes de Office 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Una vez que haya terminado de configurar Office 365 cifrado de mensajes (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de un solo uso, mostrar el botón **Cifrar** en Outlook en la Web y mucho más. Las tareas de este artículo describen cómo.
 
@@ -110,15 +108,15 @@ Como administrador, puede administrar si desea mostrar este botón a los usuario
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
    ```
 
-## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Habilitación del descifrado del lado del servicio de mensajes de correo electrónico para los usuarios de iOS aplicación de correo
+## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Habilitación del descifrado del lado del servicio de mensajes de correo electrónico para los usuarios de la aplicación de correo de iOS
 
-La aplicación de correo iOS no puede descifrar los mensajes protegidos con Office 365 cifrado de mensajes. Como administrador de Microsoft 365, puede aplicar el descifrado del lado del servicio para los mensajes entregados a la aplicación de correo iOS. Cuando decide usar el descifrado del lado del servicio, el servicio envía una copia descifrada del mensaje al dispositivo iOS. El dispositivo cliente almacena una copia descifrada del mensaje. El mensaje también conserva información sobre los derechos de uso aunque la aplicación de correo iOS no aplique derechos de uso del lado cliente al usuario. El usuario puede copiar o imprimir el mensaje incluso si originalmente no tenía los derechos para hacerlo. Sin embargo, si el usuario intenta completar una acción que requiere el Microsoft 365 servidor de correo, como reenviar el mensaje, el servidor no permitirá la acción si el usuario no tenía originalmente el derecho de uso para hacerlo. Sin embargo, los usuarios finales pueden solucionar la restricción de uso "No reenviar" reenviando el mensaje desde una cuenta diferente dentro de la aplicación de correo iOS. Independientemente de si configura el descifrado de correo en el lado del servicio, los datos adjuntos al correo cifrado y protegido por derechos no se pueden ver en la aplicación de correo iOS.
+La aplicación de correo de iOS no puede descifrar los mensajes protegidos con Office 365 cifrado de mensajes. Como administrador de Microsoft 365, puede aplicar el descifrado del lado del servicio para los mensajes entregados a la aplicación de correo de iOS. Cuando decide usar el descifrado del lado del servicio, el servicio envía una copia descifrada del mensaje al dispositivo iOS. El dispositivo cliente almacena una copia descifrada del mensaje. El mensaje también conserva información sobre los derechos de uso aunque la aplicación de correo de iOS no aplique derechos de uso del lado cliente al usuario. El usuario puede copiar o imprimir el mensaje incluso si originalmente no tenía los derechos para hacerlo. Sin embargo, si el usuario intenta completar una acción que requiere el servidor de correo de Microsoft 365, como reenviar el mensaje, el servidor no permitirá la acción si el usuario no tenía originalmente el derecho de uso para hacerlo. Sin embargo, los usuarios finales pueden solucionar la restricción de uso "No reenviar" reenviando el mensaje desde una cuenta diferente dentro de la aplicación de correo de iOS. Independientemente de si configura el descifrado de correo en el lado del servicio, los datos adjuntos al correo cifrado y protegido por derechos no se pueden ver en la aplicación de correo de iOS.
 
-Si decide no permitir que los mensajes descifrados se envíen a iOS usuarios de la aplicación de correo, los usuarios recibirán un mensaje que indica que no tienen derechos para ver el mensaje. De forma predeterminada, el descifrado de mensajes de correo electrónico en el lado del servicio no está habilitado.
+Si decide no permitir que los mensajes descifrados se envíen a los usuarios de la aplicación de correo de iOS, los usuarios recibirán un mensaje que indica que no tienen derechos para ver el mensaje. De forma predeterminada, el descifrado de mensajes de correo electrónico en el lado del servicio no está habilitado.
 
-Para obtener más información y ver la experiencia del cliente, consulte [Visualización de mensajes cifrados en el iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Para obtener más información y ver la experiencia del cliente, consulta [Ver mensajes cifrados en tu iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf).
 
-### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Para administrar si iOS aplicación de correo los usuarios pueden ver mensajes protegidos por Office 365 cifrado de mensajes
+### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Para administrar si los usuarios de la aplicación de correo de iOS pueden ver mensajes protegidos por Office 365 cifrado de mensajes
 
 1. Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización y conéctese a Exchange Online PowerShell. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -128,7 +126,7 @@ Para obtener más información y ver la experiencia del cliente, consulte [Visua
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
    ```
 
-   Por ejemplo, para configurar el servicio para descifrar los mensajes antes de que se envíen a aplicaciones no habilitadas, como la aplicación de correo iOS:
+   Por ejemplo, para configurar el servicio para descifrar los mensajes antes de que se envíen a aplicaciones no habilitadas, como la aplicación de correo de iOS:
 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
@@ -147,13 +145,13 @@ Para obtener más información y ver la experiencia del cliente, consulte [Visua
 
 Normalmente, cuando se usa Office 365 cifrado de mensajes, los datos adjuntos se cifran automáticamente. Como administrador, puede aplicar el descifrado del lado del servicio para los datos adjuntos de correo electrónico que los usuarios descargan desde un explorador web.
 
-Cuando se usa el descifrado del lado del servicio, el servicio envía una copia descifrada del archivo al dispositivo. El mensaje sigue cifrado. Los datos adjuntos de correo electrónico también mantienen información sobre los derechos de uso aunque el explorador no aplique derechos de uso del lado cliente al usuario. El usuario puede copiar o imprimir los datos adjuntos del correo electrónico incluso si originalmente no tenía los derechos para hacerlo. Sin embargo, si el usuario intenta completar una acción que requiere el Microsoft 365 servidor de correo, como reenviar los datos adjuntos, el servidor no permitirá la acción si el usuario no tenía originalmente el derecho de uso para hacerlo.
+Cuando se usa el descifrado del lado del servicio, el servicio envía una copia descifrada del archivo al dispositivo. El mensaje sigue cifrado. Los datos adjuntos de correo electrónico también mantienen información sobre los derechos de uso aunque el explorador no aplique derechos de uso del lado cliente al usuario. El usuario puede copiar o imprimir los datos adjuntos del correo electrónico incluso si originalmente no tenía los derechos para hacerlo. Sin embargo, si el usuario intenta completar una acción que requiere el servidor de correo de Microsoft 365, como reenviar los datos adjuntos, el servidor no permitirá la acción si el usuario no tenía originalmente el derecho de uso para hacerlo.
 
-Independientemente de si configura el descifrado de datos adjuntos en el lado del servicio, los usuarios no pueden ver los datos adjuntos al correo cifrado y protegido por derechos en la aplicación de correo iOS.
+Independientemente de si configura el descifrado de datos adjuntos en el lado del servicio, los usuarios no pueden ver los datos adjuntos al correo cifrado y protegido por derechos en la aplicación de correo de iOS.
 
 Si decide no permitir datos adjuntos de correo electrónico descifrados, que es el valor predeterminado, los usuarios reciben un mensaje que indica que no tienen derechos para ver los datos adjuntos.
 
-Para obtener más información sobre cómo Microsoft 365 implementa el cifrado de los correos electrónicos y los datos adjuntos de correo electrónico con la opción Encrypt-Only, vea [Opción Solo cifrado para correos electrónicos.](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Para obtener más información sobre cómo Microsoft 365 implementa el cifrado de correos electrónicos y datos adjuntos de correo electrónico con la opción Encrypt-Only, vea [Opción solo cifrado para correos electrónicos.](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Para administrar si los datos adjuntos de correo electrónico se descifran al descargarlos desde un explorador web
 
@@ -179,7 +177,7 @@ Para obtener más información sobre cómo Microsoft 365 implementa el cifrado d
 
 ## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Asegúrese de que todos los destinatarios externos usan el portal de OME para leer el correo cifrado.
 
-Puede usar plantillas de personalización de marca personalizadas para forzar a los destinatarios a recibir un correo contenedor que les indique que lean el correo electrónico cifrado en el Portal de OME en lugar de usar Outlook o Outlook en la Web. Es posible que quiera hacerlo si desea tener un mayor control sobre cómo usan los destinatarios el correo que reciben. Por ejemplo, si los destinatarios externos ven el correo electrónico en el portal web, puede establecer una fecha de expiración para el correo electrónico y puede revocar el correo electrónico. Estas características solo se admiten a través del portal de OME. Puede usar la opción Cifrar y la opción No reenviar al crear las reglas de flujo de correo.
+Puede usar plantillas de personalización de marca personalizadas para obligar a los destinatarios a recibir un correo contenedor que les indique que lean el correo electrónico cifrado en el Portal de OME en lugar de usar Outlook o Outlook en la Web. Es posible que quiera hacerlo si desea tener un mayor control sobre cómo usan los destinatarios el correo que reciben. Por ejemplo, si los destinatarios externos ven el correo electrónico en el portal web, puede establecer una fecha de expiración para el correo electrónico y puede revocar el correo electrónico. Estas características solo se admiten a través del portal de OME. Puede usar la opción Cifrar y la opción No reenviar al crear las reglas de flujo de correo.
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Usar una plantilla personalizada para forzar a todos los destinatarios externos a usar el portal de OME y para el correo electrónico cifrado
 
@@ -213,13 +211,13 @@ Puede usar plantillas de personalización de marca personalizadas para forzar a 
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Personalización de la apariencia de los mensajes de correo electrónico y el portal de OME
 
-Para obtener información detallada sobre cómo personalizar el cifrado de mensajes de Microsoft Purview para su organización, consulte [Incorporación de la marca de la organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md). Para habilitar la capacidad de realizar un seguimiento de los mensajes cifrados y revocarlos, debe agregar su personalización de marca al portal de OME.
+Para obtener información detallada sobre cómo puede personalizar Cifrado de mensajes de Microsoft Purview para su organización, consulte [Incorporación de la marca de la organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md). Para habilitar la capacidad de realizar un seguimiento de los mensajes cifrados y revocarlos, debe agregar su personalización de marca al portal de OME.
 
-## <a name="disable-microsoft-purview-message-encryption"></a>Deshabilitación del cifrado de mensajes de Microsoft Purview
+## <a name="disable-microsoft-purview-message-encryption"></a>Deshabilitar Cifrado de mensajes de Microsoft Purview
 
-Esperamos que no llegue a él, pero si es necesario, deshabilitar el cifrado de mensajes de Microsoft Purview es muy sencillo. En primer lugar, deberá quitar las reglas de flujo de correo que haya creado que usen el cifrado de mensajes de Microsoft Purview. Para obtener información sobre cómo quitar reglas de flujo de correo, vea [Administrar reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). A continuación, complete estos pasos en Exchange Online PowerShell.
+Esperamos que no llegue a él, pero si es necesario, deshabilitar Cifrado de mensajes de Microsoft Purview es muy sencillo. En primer lugar, deberá quitar las reglas de flujo de correo que haya creado que usen Cifrado de mensajes de Microsoft Purview. Para obtener información sobre cómo quitar reglas de flujo de correo, vea [Administrar reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). A continuación, complete estos pasos en Exchange Online PowerShell.
 
-### <a name="to-disable-microsoft-purview-message-encryption"></a>Para deshabilitar el cifrado de mensajes de Microsoft Purview
+### <a name="to-disable-microsoft-purview-message-encryption"></a>Para deshabilitar Cifrado de mensajes de Microsoft Purview
 
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, conéctese a Exchange Online PowerShell. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -229,7 +227,7 @@ Esperamos que no llegue a él, pero si es necesario, deshabilitar el cifrado de 
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-3. Deshabilite el cifrado de mensajes de Microsoft Purview ejecutando el cmdlet Set-IRMConfiguration con el parámetro AzureRMSLicensingEnabled establecido en false:
+3. Deshabilite el Cifrado de mensajes de Microsoft Purview ejecutando el cmdlet Set-IRMConfiguration con el parámetro AzureRMSLicensingEnabled establecido en false:
 
    ```powershell
    Set-IRMConfiguration -AzureRMSLicensingEnabled $false

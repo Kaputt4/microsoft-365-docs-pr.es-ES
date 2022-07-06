@@ -1,5 +1,5 @@
 ---
-title: Administrar custodios en un caso de exhibición de documentos electrónicos (Premium)
+title: Administración de custodios en un caso de exhibición de documentos electrónicos (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver los detalles, editar y editar en bloque la lista de custodios en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ea05e2f0b19c23b236f7b64eb3a425fdb29cc39
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: baffcb9d601d95d4be78cf47fcbc3037daff86c8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077947"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634036"
 ---
-# <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Administrar custodios en un caso de exhibición de documentos electrónicos (Premium)
+# <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Administración de custodios en un caso de exhibición de documentos electrónicos (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La página **Custodios** de la pestaña **Orígenes de datos** de un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview contiene una lista de todos los custodios que se han agregado al caso. Después de agregar custodios a un caso, los detalles sobre cada custodio se recopilan automáticamente de Azure Active Directory y se pueden ver en eDiscovery (Premium).
+La página **Custodios** de la pestaña **Orígenes de datos** de un caso de Microsoft Purview eDiscovery (Premium) contiene una lista de todos los custodios que se han agregado al caso. Después de agregar custodios a un caso, los detalles sobre cada custodio se recopilan automáticamente de Azure Active Directory y se pueden ver en eDiscovery (Premium).
 
 ## <a name="view-custodian-details"></a>Ver detalles del custodio
 
@@ -70,7 +68,7 @@ A medida que avanza el caso, es posible que descubra que puede haber orígenes d
 
 Para actualizar los orígenes de datos asociados a un custodio:
 
-1. Vaya a **eDiscovery > eDiscovery (Premium)** y abra el caso.
+1. Vaya a  **eDiscovery > eDiscovery (Premium)** y abra el caso.
   
 2. Haga clic en la pestaña **Orígenes de datos** .
   
@@ -78,26 +76,26 @@ Para actualizar los orígenes de datos asociados a un custodio:
 
     ![Editar orígenes de datos.](../media/EditCustodianDataSource.PNG)
   
-4. Para agregar o quitar el buzón principal y OneDrive cuenta para el custodio:
+4. Para agregar o quitar el buzón principal y la cuenta de OneDrive para el custodio:
 
     - Expanda el custodio para ver las ubicaciones de datos principales que se han asociado anteriormente con el custodio.
 
-    - Haga clic en **Editar** junto a **Buzón** o **OneDrive** para agregar el buzón del custodio o OneDrive ubicación.
+    - Haga clic en **Editar** junto a **Buzón** o **OneDrive** para agregar el buzón del custodio o la ubicación de OneDrive.
 
-    - Seleccione **Borrar** junto a **Buzón de correo** o **OneDrive** para quitar el buzón de correo del custodio o OneDrive cuenta de estar asociado como una ubicación de datos para este custodio.
+    - Seleccione **Borrar** junto a **Buzón** o **OneDrive** para quitar el buzón de correo del custodio o la cuenta de OneDrive de que se asocie como una ubicación de datos para este custodio.
 
-5. Para agregar o quitar otros buzones de correo, sitios, Teams o grupos de Yammer a un custodio específico, haga clic en **Editar** junto al servicio para agregar una ubicación de datos.
+5. Para agregar o quitar otros buzones de correo, sitios, teams o grupos de Yammer a un custodio específico, haga clic en **Editar** junto al servicio para agregar una ubicación de datos.
 
-   - **Exchange**: use para asociar otros buzones al custodio. Escriba en el cuadro de búsqueda el nombre o alias (un mínimo de tres caracteres) de los buzones de usuario o grupos de distribución. Seleccione los buzones que se van a asignar al custodio y, a continuación, haga clic en **Agregar**.
+   - **Exchange**: se usa para asociar otros buzones al custodio. Escriba en el cuadro de búsqueda el nombre o alias (un mínimo de tres caracteres) de los buzones de usuario o grupos de distribución. Seleccione los buzones que se van a asignar al custodio y, a continuación, haga clic en **Agregar**.
 
-   - **SharePoint**: use para asociar SharePoint sitios al custodio. Seleccione un sitio en la lista o busque un sitio escribiendo una dirección URL en el cuadro de búsqueda. Seleccione los sitios que se van a asignar al custodio y, a continuación, haga clic en **Agregar**.
+   - **SharePoint**: se usa para asociar sitios de SharePoint al custodio. Seleccione un sitio en la lista o busque un sitio escribiendo una dirección URL en el cuadro de búsqueda. Seleccione los sitios que se van a asignar al custodio y, a continuación, haga clic en **Agregar**.
 
-   - **Teams**: use para asignar el Microsoft Teams del que el custodio es miembro actualmente. Seleccione los equipos que se van a asignar al custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a ese equipo y los asigna al custodio.
+   - **Teams**: se usa para asignar a Microsoft Teams del que es miembro actualmente el custodio. Seleccione los equipos que se van a asignar al custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a ese equipo y los asigna al custodio.
 
-   - **Yammer**: use para asignar los grupos de Yammer de los que el custodio es miembro actualmente. Seleccione los grupos que se van a asignar al custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el buzón de correo SharePoint sitio y grupo asociado a ese grupo y los asigna al custodio.
+   - **Yammer**: se usa para asignar los grupos de Yammer de los que el custodio es miembro actualmente. Seleccione los grupos que se van a asignar al custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio y el buzón de grupo de SharePoint asociados a ese grupo y los asigna al custodio.
 
    > [!NOTE]
-   > Puede usar los selectores de ubicación **Exchange** y **SharePoint** para asociar a un custodio cualquier buzón o sitio de la organización, incluidos equipos o grupos de Yammer de los que un custodio no sea miembro. Para ello, debe agregar tanto el buzón como el sitio asociados a cada equipo o grupo de Yammer.
+   > Puede usar los selectores de ubicación de **Exchange** y **SharePoint** para asociar cualquier buzón o sitio de su organización, incluidos los equipos o grupos de Yammer de los que un custodio no sea miembro, a un custodio. Para ello, debe agregar tanto el buzón como el sitio asociados a cada equipo o grupo de Yammer.
 
 6. Después de editar las ubicaciones de datos del custodio, haga clic en **Siguiente** para ir a la página **Configuración de suspensión** .  
 
@@ -111,7 +109,7 @@ Cuando se agrega un custodio a un caso, los datos ubicados en los orígenes de d
 
 Para desencadenar el proceso de reindexación para abordar elementos parcialmente indexados:
 
-1. Vaya a **eDiscovery > eDiscovery (Premium)** y abra el caso.
+1. Vaya a  **eDiscovery > eDiscovery (Premium)** y abra el caso.
 
 2. Haga clic en la pestaña **Orígenes** .
 
@@ -123,7 +121,7 @@ Para desencadenar el proceso de reindexación para abordar elementos parcialment
 
 La reindexación de datos de custodios es un proceso de ejecución prolongada; El trabajo correspondiente que se crea se denomina **Volver a indexar datos de custodios**. Puede realizar un seguimiento del progreso en la pestaña **Trabajos** o en la pestaña **Custodios** supervisando el estado en la columna **Estado del trabajo de indexación** .
 
-Para más información, consulte lo siguiente:
+Para más información, vea:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 
@@ -137,7 +135,7 @@ Si libera a un custodio después de publicar un aviso de suspensión, se enviar�
 
 Para liberar un custodio:
 
-1. Vaya a **eDiscovery > eDiscovery (Premium)** y abra el caso.
+1. Vaya a  **eDiscovery > eDiscovery (Premium)** y abra el caso.
 
 2. Haga clic en la pestaña **Orígenes** .
 

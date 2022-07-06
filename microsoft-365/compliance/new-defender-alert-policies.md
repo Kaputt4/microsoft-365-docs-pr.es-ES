@@ -19,16 +19,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: c883a352bad5af918d605bd8fa95112a7df07bd3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f9a8b74febe3ea59d022baceff7c15c3ee2e5d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098006"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634014"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Defender para Office 365 está introduciendo directivas de alerta nuevas y mejoradas relacionadas con las detección posterior a la entrega. Esto incluye mejoras en las guías de Investigación y respuesta automatizadas (AIR) asociados a ellas. Además, estamos modificando la clasificación de gravedad para seis directivas de alerta predeterminadas para alinear mejor las alertas generadas por estas directivas con su impacto en la organización.
 

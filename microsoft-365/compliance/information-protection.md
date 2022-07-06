@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente las funcionalidades de Information Protection de Microsoft Purview para ayudarle a proteger la información confidencial dondequiera que resida o viaje.
-ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 4b221bb0019147d7527ee5b8692af9717204b44f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294655"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636103"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Proteja sus datos confidenciales con Microsoft Purview
 
@@ -31,8 +31,6 @@ ms.locfileid: "65294655"
 
 > [!TIP]
 > *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Implemente funcionalidades de **Microsoft Purview Information Protection** (anteriormente Microsoft Information Protection) para ayudarle a descubrir, clasificar y proteger la información confidencial dondequiera que resida o viaje.
 

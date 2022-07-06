@@ -17,16 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Use Cifrado avanzado de mensajes de Microsoft Purview para ampliar la seguridad del correo electrónico estableciendo una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015570"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635159"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado mediante cifrado de mensajes avanzado de Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Cumplimiento de Microsoft 365 E5 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el complemento de SKU de Cumplimiento avanzado de Office 365 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
@@ -44,7 +42,7 @@ Con el cifrado avanzado de mensajes de Microsoft Purview, cada vez que aplique p
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Creación de una plantilla de personalización de marca personalizada para forzar la expiración del correo mediante PowerShell
 
-1. [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) con una cuenta que tenga permisos de administrador global en su organización.
+1. [Conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) con una cuenta que tenga permisos de administrador global en su organización.
 
 2. Ejecute el cmdlet New-OMEConfiguration.
 

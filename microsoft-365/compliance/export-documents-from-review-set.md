@@ -17,30 +17,28 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de revisiones de eDiscovery (Premium) para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a2cc2b5f528c7573c255e05cea4b512416711462
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 249990915cb012ca71a40ef074d8a1f5044b8d6e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096972"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635357"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Exportación de documentos desde un conjunto de revisión en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga al exportar el documento desde un conjunto de revisión en eDiscovery (Premium).
 
 Para exportar documentos de un conjunto de revisión:
 
-1. En el portal de cumplimiento de Microsoft Purview, abra el caso de exhibición de documentos electrónicos (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, seleccione el conjunto de revisión que desea exportar.
+1. En el portal de cumplimiento Microsoft Purview, abra el caso de exhibición de documentos electrónicos (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, seleccione el conjunto de revisión que desea exportar.
 
-2. En el conjunto de revisión, haga clic en **AcciónExportar** > .
+2. En el conjunto de revisión, haga clic en **Exportar acción** > .
 
    La herramienta Exportar muestra la página de control flotante con los valores para configurar la exportación. Algunas opciones se seleccionan de forma predeterminada, pero puede cambiarlas. Consulte la sección siguiente para obtener descripciones de las opciones de exportación que puede configurar.
 
    ![Opciones de configuración para exportar elementos de un conjunto de revisión.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. Después de configurar la exportación, haga clic en **Exportar** para iniciar el proceso de exportación. En función de la opción seleccionada en la sección **Opciones de salida**, puede acceder a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage de la organización.
+3. Después de configurar la exportación, haga clic en **Exportar** para iniciar el proceso de exportación. En función de la opción que haya seleccionado en la sección **Opciones de salida** , puede acceder a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage de su organización.
 
 > [!NOTE]
 > Los trabajos de exportación se conservan durante la vida útil del caso. Sin embargo, debe descargar el contenido de un trabajo de exportación en un plazo de 30 días después de que se complete el trabajo de exportación.
@@ -69,7 +67,7 @@ Use las siguientes opciones para configurar la exportación. No todas las opcion
   
   - Estructura de directorios condensada: los archivos se exportan e incluyen en la descarga.
   
-  - Estructura de directorios condensada exportada a la cuenta de Azure Storage: los archivos se exportan a la cuenta de Azure Storage de la organización. Para esta opción, debe proporcionar la dirección URL del contenedor en la cuenta de Azure Storage a la que exportar los archivos. También tiene que proporcionar el token de firma de acceso compartido (SAS) para la cuenta de Azure Storage. Para obtener más información, consulte [Exportación de documentos en una revisión establecida en una cuenta de Azure Storage](download-export-jobs.md).
+  - Estructura de directorios condensada exportada a la cuenta de Azure Storage: los archivos se exportan a la cuenta de Azure Storage de la organización. Para esta opción, debe proporcionar la dirección URL del contenedor en la cuenta de Azure Storage a la que exportar los archivos. También tiene que proporcionar el token de firma de acceso compartido (SAS) para la cuenta de Azure Storage. Para obtener más información, consulte [Exportación de documentos en un conjunto de revisión a una cuenta de Azure Storage](download-export-jobs.md).
 
 - **Include**
   
@@ -97,12 +95,12 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
   
   - Exchange: esta carpeta contiene todo el contenido de Exchange almacenado en archivos PST. Los archivos PDF redactados no se pueden incluir con esta opción. Si se selecciona un archivo adjunto en el conjunto de revisión, el mensaje de correo electrónico primario se exportará con los datos adjuntos adjuntos adjuntos.
   
-    La carpeta Exchange también puede contener una subcarpeta denominada mailboxname_loosefiles.zip, que contiene los siguientes elementos:
+    La carpeta de Exchange también puede contener una subcarpeta denominada mailboxname_loosefiles.zip, que contiene los siguientes elementos:
 
     - Mensajes protegidos por Information Rights Management (IRM) que se han descodificado.
     - Mensajes corregidos por errores.
     - Datos adjuntos o vínculos modernos a los que se hace referencia en los mensajes.
-    - Elementos cifrados (que no se incluyen en los archivos PST de la carpeta Exchange).
+    - Elementos cifrados (que no se incluyen en los archivos PST de la carpeta de Exchange).
   
   - SharePoint: esta carpeta contiene todo el contenido nativo de SharePoint en un formato de archivo nativo. Los archivos PDF redactados no se pueden incluir con esta opción.
 
@@ -124,4 +122,4 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Estructura de directorios condensada exportada a la cuenta de Azure Storage
 
-Esta opción usa la misma estructura general que la *estructura de directorios condensada*, pero el contenido no se comprime y los datos se guardan en la cuenta de Azure Storage. Esta opción se usa generalmente cuando se trabaja con un proveedor de exhibición de documentos electrónicos de terceros. Para obtener más información sobre cómo usar esta opción, consulte [Exportación de documentos en una revisión establecida en una cuenta de Azure Storage](download-export-jobs.md).
+Esta opción usa la misma estructura general que la *estructura de directorios condensada*, pero el contenido no se comprime y los datos se guardan en la cuenta de Azure Storage. Esta opción se usa generalmente cuando se trabaja con un proveedor de exhibición de documentos electrónicos de terceros. Para obtener más información sobre cómo usar esta opción, consulte [Exportación de documentos en un conjunto de revisión a una cuenta de Azure Storage](download-export-jobs.md).

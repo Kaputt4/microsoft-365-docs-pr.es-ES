@@ -16,22 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección de borradores, puede confirmarla en un conjunto de revisión. Al confirmar una colección de borradores, los elementos recopilados se agregan a la revisión establecida en el caso. Una vez que los elementos recopilados están en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e635489383026df0d8097a300eb49178dcffb6b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090481"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632715"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Confirmación de una colección de borradores en un conjunto de revisión en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cuando esté satisfecho con los elementos que ha recopilado en una colección de borradores y esté listo para analizarlos, etiquetarlos y revisarlos, puede agregar una colección a un conjunto de revisión en el caso. Al confirmar una colección de borradores en un conjunto de revisión, los elementos recopilados se copian de su ubicación de contenido original en Microsoft 365 a un conjunto de revisión. Un conjunto de revisión es una ubicación Azure Storage segura y proporcionada por Microsoft en la nube de Microsoft.
+Cuando esté satisfecho con los elementos que ha recopilado en una colección de borradores y esté listo para analizarlos, etiquetarlos y revisarlos, puede agregar una colección a un conjunto de revisión en el caso. Al confirmar una colección de borradores en un conjunto de revisión, los elementos recopilados se copian de su ubicación de contenido original en Microsoft 365 en un conjunto de revisión. Un conjunto de revisión es una ubicación de Azure Storage segura y proporcionada por Microsoft en la nube de Microsoft.
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Confirmar una colección de borrador en un conjunto de revisión
 
-1. En el portal de cumplimiento de Microsoft Purview, abra el caso de exhibición de documentos electrónicos de Microsoft Purview (Premium) y, a continuación, seleccione la pestaña **Colecciones** para mostrar una lista de las colecciones en el caso.
+1. En el portal de cumplimiento Microsoft Purview, abra el caso de Microsoft Purview eDiscovery (Premium) y, a continuación, seleccione la pestaña **Colecciones** para mostrar una lista de las colecciones en el caso.
 
    ![Lista de colecciones en un caso.](../media/CommitDraftCollections1.png)
 
@@ -40,7 +38,7 @@ Cuando esté satisfecho con los elementos que ha recopilado en una colección de
 
 2. En la página **Colecciones** , seleccione la colección de borradores que desea confirmar en un conjunto de revisión.
 
-3. En la parte inferior de la página de control flotante, seleccione **ActionsEdit collection (AccionesEditar** >  colección).
+3. En la parte inferior de la página de control flotante, seleccione Actions **Edit collection (Editar colección****).** > 
 
 4. En el Asistente para editar colecciones, haga clic en **Siguiente** hasta que se muestre la página **Guardar borrador o recopilar** .
 
@@ -54,16 +52,16 @@ Cuando esté satisfecho con los elementos que ha recopilado en una colección de
 
       ![Configure opciones de recopilación adicionales.](../media/AeDAdditionalCollectionSettings.png).
 
-       a. **mensajes Teams y Yammer**: seleccione esta opción para agregar subprocesos de conversación a la colección que incluyan los elementos de chat devueltos por la consulta de búsqueda en la colección. Esto significa que se reconstruye la conversación de chat que contiene elementos que coinciden con los criterios de búsqueda. Esto le permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta. Para obtener más información, vea [Subprocesos de conversación en eDiscovery (Premium)](conversation-review-sets.md).
+       a. **Mensajes de Teams y Yammer**: seleccione esta opción para agregar subprocesos de conversación a la colección que incluyan los elementos de chat devueltos por la consulta de búsqueda en la colección. Esto significa que se reconstruye la conversación de chat que contiene elementos que coinciden con los criterios de búsqueda. Esto le permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta. Para obtener más información, vea [Threading conversation in eDiscovery (Premium)](conversation-review-sets.md).
 
        b. **Datos adjuntos en la nube**: seleccione esta opción para incluir datos adjuntos modernos o archivos vinculados cuando los resultados de la colección se agreguen al conjunto de revisión. Esto significa que el archivo de destino de un archivo adjunto o vinculado moderno se agrega al conjunto de revisión.
 
        > [!NOTE]
-       > Las dos opciones para recopilar Teams contextuales y Yammer mensajes y datos adjuntos en la nube se seleccionan de forma predeterminada (y se atenuan) para los casos creados con el nuevo formato de caso. Para obtener más información, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md).
+       > Las dos opciones para recopilar mensajes contextuales de Teams y Yammer y datos adjuntos en la nube se seleccionan de forma predeterminada (y se atenuan) para los casos creados con el nuevo formato de caso. Para obtener más información, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md).
 
        c. **Elementos indizados parcialmente**: seleccione esta opción para agregar elementos parcialmente indizados de orígenes de datos adicionales al conjunto de revisión. Si la colección ha buscado orígenes de datos adicionales (como se especifica en la página **Ubicaciones adicionales** del Asistente para colecciones), es posible que haya elementos indizados parcialmente de estas ubicaciones que quiera agregar al conjunto de revisión. Los orígenes de datos custodios y no custodios normalmente no tienen elementos indizados parcialmente. Esto se debe a que el proceso de indexación avanzada vuelve a indexar elementos cuando se agregan orígenes de datos de custodia y no custodia a un caso. Además, agregar elementos parcialmente indizados aumentará el número de elementos agregados al conjunto de revisión. <p> Después de agregar elementos parcialmente indizados al conjunto de revisión, puede aplicar un filtro para ver específicamente estos elementos. Para obtener más información, vea [Filtrar elementos parcialmente indizados](review-set-search.md#filter-partially-indexed-items).
 
-      d. **SharePoint versiones**: seleccione esta opción para habilitar la colección de todas las versiones de un documento de SharePoint según los límites de versión y los parámetros de búsqueda de la colección. Si selecciona esta opción, aumentará significativamente el tamaño de los elementos que se agregan al conjunto de revisión. Una vez agregadas las versiones del documento al conjunto de revisión, 
+      d. **Versiones de SharePoint**: seleccione esta opción para habilitar la colección de todas las versiones de un documento de SharePoint según los límites de versión y los parámetros de búsqueda de la colección. Si selecciona esta opción, aumentará significativamente el tamaño de los elementos que se agregan al conjunto de revisión. Una vez agregadas las versiones del documento al conjunto de revisión, 
 
    4. Configure los valores para definir la escala de la colección que se va a agregar al conjunto de revisión:
 
@@ -87,9 +85,9 @@ Cuando se confirma una colección de borradores en un conjunto de revisión, suc
 
 - La consulta de búsqueda de recopilación se vuelve a ejecutar. Esto significa que los resultados de búsqueda reales copiados en el conjunto de revisión pueden ser diferentes de los resultados estimados que se devolvieron cuando se ejecutó por última vez la búsqueda de recopilación.
 
-- Todos los elementos de los resultados de la búsqueda se copian del origen de datos original en el servicio en directo y se copian en una ubicación de Azure Storage segura en la nube de Microsoft.
+- Todos los elementos de los resultados de la búsqueda se copian del origen de datos original en el servicio en directo y se copian en una ubicación segura de Azure Storage en la nube de Microsoft.
 
-- Los mensajes de correo electrónico adjuntos cifrados SharePoint y OneDrive y archivos cifrados que se devuelven en los resultados de búsqueda se descifran al confirmar la colección en un conjunto de revisión. Puede revisar y consultar los archivos descifrados en el conjunto de revisión. Para obtener más información, vea [Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos](ediscovery-decryption.md).
+- Los documentos cifrados de SharePoint y OneDrive y los mensajes de correo electrónico adjuntos a archivos cifrados que se devuelven en los resultados de búsqueda se descifran al confirmar la colección en un conjunto de revisión. Puede revisar y consultar los archivos descifrados en el conjunto de revisión. Para obtener más información, vea [Descifrado en herramientas de exhibición de documentos electrónicos de Microsoft 365](ediscovery-decryption.md).
 
 - La funcionalidad de reconocimiento óptico de caracteres (OCR) extrae texto de imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de revisión. Para obtener más información, consulte la sección [Reconocimiento óptico de caracteres](#optical-character-recognition) de este artículo.
 
@@ -97,6 +95,6 @@ Cuando se confirma una colección de borradores en un conjunto de revisión, suc
 
 ## <a name="optical-character-recognition"></a>Reconocimiento óptico de caracteres
 
-Al confirmar una colección en un conjunto de revisión, la funcionalidad de reconocimiento óptico de caracteres (OCR) en eDiscovery (Premium) extrae automáticamente texto de las imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de revisión. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Esto le permite realizar más análisis y revisar el texto de las imágenes. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Para obtener una lista de los formatos de archivo de imagen que se admiten para OCR, vea [Tipos de archivo admitidos en eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
+Al confirmar una colección en un conjunto de revisión, la funcionalidad de reconocimiento óptico de caracteres (OCR) en eDiscovery (Premium) extrae automáticamente texto de las imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de revisión. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Esto le permite realizar más análisis y revisar el texto de las imágenes. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Para ver una lista de los formatos de archivo de imagen compatibles con el OCR, consulte [Tipos de archivo compatibles con eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
-Debe habilitar la funcionalidad OCR para cada caso que cree en eDiscovery (Premium). Para obtener más información, consulte [Configuración de las opciones de búsqueda y análisis](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+Debe activar la funcionalidad OCR para cada caso que cree en eDiscovery (Premium). Para obtener más información, consulte [Configuración de las opciones de búsqueda y análisis](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el flujo de trabajo de comunicaciones en eDiscovery (Premium) para realizar un seguimiento del estado de las notificaciones de suspensión legal y, si es necesario, actualizarlas y reenviarlas.
-ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093973"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632253"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de iniciar el flujo de trabajo de notificación de suspensión legal, puede usar el flujo de trabajo de comunicaciones en Microsoft Purview eDiscovery (Premium) para realizar un seguimiento del estado de las comunicaciones. La pestaña Comunicaciones contiene una lista de todas las notificaciones dentro del caso de eDiscovery (Premium). Puede ver detalles como el número de custodios que se han asignado o que han confirmado el aviso.
 
@@ -33,7 +31,7 @@ Después de iniciar el flujo de trabajo de notificación de suspensión legal, p
 
 Después de seleccionar una comunicación en la pestaña **Comunicaciones** , puede ver una lista de custodios que han confirmado un aviso de suspensión. 
 
-1. En el centro de cumplimiento, vaya a **eDiscovery > eDiscovery (Premium)**.
+1. En el centro de cumplimiento, vaya a **eDiscovery > eDiscovery (Premium).**
 
 2. Seleccione un caso y, a continuación, haga clic en la pestaña **Comunicaciones** .
 
@@ -47,7 +45,7 @@ En ocasiones, los custodios pierden el seguimiento de los mensajes de correo ele
 
 Para volver a enviar un aviso de suspensión a un custodio:
 
-1. En eDiscovery (Premium), seleccione un caso y, a continuación, haga clic en la pestaña **Comunicaciones**.
+1. En eDiscovery (Premium), seleccione un caso y, a continuación, haga clic en la pestaña **Comunicaciones** .
 
 2. Seleccione una comunicación para mostrar la página desplegable **Comunicación del custodio** .
 
@@ -68,7 +66,7 @@ A medida que avanza el caso, es posible que los custodios deban conservar datos 
 
 Para actualizar el contenido del aviso de suspensión inicial:
 
-1. En eDiscovery (Premium), seleccione un caso y, a continuación, haga clic en la pestaña **Comunicaciones**.
+1. En eDiscovery (Premium), seleccione un caso y, a continuación, haga clic en la pestaña **Comunicaciones** .
 
 2. Seleccione el aviso de suspensión que desea actualizar y haga clic en **Editar** en la página desplegable **Comunicación del custodio** .
 

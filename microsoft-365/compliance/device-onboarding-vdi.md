@@ -13,25 +13,25 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorporen al servicio de prevención de pérdida de datos Microsoft 365 punto de conexión.
-ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorporen al servicio de prevención de pérdida de datos del punto de conexión.
+ms.openlocfilehash: 8a54d4ce3cfb4b3ba6571f2aee63cd60c2a6d71f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760633"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636147"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistentes
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
-- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 
 - Dispositivos de infraestructura de escritorio virtual (VDI)
 
 > [!WARNING]
-> Microsoft 365 compatibilidad con la prevención de pérdida de datos de punto de conexión para Windows Virtual Desktop admite escenarios de sesión única. Actualmente no se admiten escenarios de varias sesiones en Windows Virtual Desktop.
+> La compatibilidad con la prevención de pérdida de datos de punto de conexión para Windows Virtual Desktop admite escenarios de sesión única. Actualmente no se admiten escenarios de varias sesiones en Windows Virtual Desktop.
 
 ## <a name="onboard-vdi-devices"></a>Incorporación de dispositivos VDI
 
@@ -42,10 +42,10 @@ Microsoft 365 admite la incorporación de sesión de infraestructura de escritor
 
 Es posible que haya desafíos asociados al incorporar los V VDI. Los siguientes son los desafíos típicos de este escenario:
 
-- Incorporación temprana instantánea de sesiones de corta duración, que se deben incorporar a Microsoft 365 antes del aprovisionamiento real.
+- Incorporación temprana instantánea de sesiones de corta duración, que deben incorporarse a Microsoft 365 antes del aprovisionamiento real.
 - Normalmente, el nombre del dispositivo se reutiliza para las sesiones nuevas.
 
-Los dispositivos VDI pueden aparecer en el Centro de cumplimiento de Microsoft 365 como:
+Los dispositivos VDI pueden aparecer en el portal de cumplimiento Microsoft Purview como:
 
 - Entrada única para cada dispositivo.
 Tenga en cuenta que, en este caso, se debe configurar el *mismo* nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendida.
@@ -56,9 +56,9 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
 > [!WARNING]
 > En entornos en los que hay configuraciones de recursos bajas, el procedimiento de arranque de VDI podría ralentizar el proceso de incorporación de dispositivos.
 
-1. Obtenga el archivo de .zip del paquete de configuración de VDI (*DeviceCompliancePackage.zip*) del [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+1. Obtenga el archivo de .zip del paquete de configuración de VDI (*DeviceCompliancePackage.zip*) de [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com).
 
-2. En el panel de navegación, seleccione **Configuración** >  **Dispositivo** **onboardingOnboarding** > .
+2. En el panel de navegación, seleccione **Configuración Incorporación** > **de** > **dispositivos.**
 
 3. En el campo **Método de implementación** , seleccione **Scripts de incorporación de VDI para puntos de conexión no persistentes**.
 
@@ -73,7 +73,7 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
     > [!NOTE]
     > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, es posible que esté oculta. Tendrá que elegir la opción **Mostrar archivos y carpetas ocultos** de Explorador de archivos.
 
-8. Abra una ventana Editor de directiva de grupo local y vaya a **Configuración** >  del equipo **Windows Configuración** >  **ScriptsIniciar** > .
+8. Abra una ventana Editor de directiva de grupo local y vaya a Configuración  > **del equipo****Scripts** > **de Configuración de** >  Windows **Inicio**.
 
    > [!NOTE]
    > Los directiva de grupo de dominio también se pueden usar para la incorporación de dispositivos VDI no persistentes.
@@ -82,11 +82,11 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
 
    **Para una sola entrada para cada dispositivo**
 
-   Seleccione la pestaña **Scripts de PowerShell** y haga clic en **Agregar** (Windows Explorador se abrirá directamente en la ruta de acceso donde copió el script de incorporación anteriormente). Vaya a incorporación del script `Onboard-NonPersistentMachine.ps1`de PowerShell.
+   Seleccione la pestaña **Scripts de PowerShell** y haga clic en **Agregar** (el Explorador de Windows se abrirá directamente en la ruta de acceso donde copió el script de incorporación anteriormente). Vaya a incorporación del script `Onboard-NonPersistentMachine.ps1`de PowerShell.
 
    **Para varias entradas para cada dispositivo**:
 
-   Seleccione la pestaña **Scripts** y haga clic en **Agregar** (Windows Explorador se abrirá directamente en la ruta de acceso donde copió el script de incorporación anteriormente). Vaya al script `DeviceComplianceOnboardingScript.cmd`de Bash de incorporación.
+   Seleccione la pestaña **Scripts** y haga clic en **Agregar** (el Explorador de Windows se abrirá directamente en la ruta de acceso donde copió el script de incorporación anteriormente). Vaya al script `DeviceComplianceOnboardingScript.cmd`de Bash de incorporación.
 
 10. Pruebe la solución:
     1. Cree un grupo con un dispositivo.
@@ -114,13 +114,13 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 Para obtener más información sobre los comandos DISM y el mantenimiento sin conexión, consulte los artículos siguientes:
 
-- [Modificación de una imagen Windows mediante DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Modificación de una imagen de Windows mediante DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [Opciones de Command-Line DISM Image Management](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reducir el tamaño del almacén de componentes en una imagen de Windows sin conexión](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Si el mantenimiento sin conexión no es una opción viable para el entorno de VDI no persistente, se deben realizar los pasos siguientes para garantizar la coherencia y el estado del sensor:
 
-1. Después de arrancar la imagen dorada para el mantenimiento en línea o la aplicación de revisiones, ejecute un script de offboarding para desactivar el sensor de supervisión de dispositivos Microsoft 365. Para obtener más información, consulte [Dispositivos fuera del panel con un script local](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. Después de arrancar la imagen dorada para el mantenimiento en línea o la aplicación de revisiones, ejecute un script de offboarding para desactivar el sensor de supervisión de dispositivos de Microsoft 365. Para obtener más información, consulte [Dispositivos fuera del panel con un script local](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Asegúrese de que el sensor se detiene ejecutando el siguiente comando en una ventana CMD:
 

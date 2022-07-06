@@ -18,17 +18,15 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Obtenga información sobre cómo usar la herramienta de búsqueda de registros de auditoría de Microsoft 365 para ayudar a solucionar problemas comunes de soporte técnico para las cuentas de correo electrónico.
-ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo usar la herramienta de búsqueda de registros de auditoría de Microsoft 365 para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
+ms.openlocfilehash: d97e8e074c2d0e14bb75fd46a512cacb6827047a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097192"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633859"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Búsqueda en el registro de auditoría para investigar problemas comunes de soporte técnico
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describe cómo usar la herramienta de búsqueda de registros de auditoría para ayudarle a investigar problemas comunes de soporte técnico. Esto incluye el uso del registro de auditoría para:
 
@@ -42,7 +40,7 @@ En este artículo se describe cómo usar la herramienta de búsqueda de registro
 
 ## <a name="using-the-audit-log-search-tool"></a>Uso de la herramienta de búsqueda de registros de auditoría
 
-Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registros de auditoría en el portal de cumplimiento de Microsoft Purview. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para acceder a las búsquedas de registros de auditoría y ejecutarlas. En cada sección de escenario se explica cómo configurar una consulta de búsqueda de registros de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
+Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registros de auditoría en el portal de cumplimiento Microsoft Purview. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para acceder a las búsquedas de registros de auditoría y ejecutarlas. En cada sección de escenario se explica cómo configurar una consulta de búsqueda de registros de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permisos necesarios para usar la herramienta de búsqueda de registros de auditoría
 
@@ -84,10 +82,10 @@ La dirección IP correspondiente a una actividad realizada por cualquier usuario
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registros de auditoría para este escenario:
 
-**Actividades:** Si es relevante para su caso, seleccione una actividad específica para buscar. Para solucionar problemas de cuentas en peligro, considere la posibilidad de seleccionar la actividad **Usuario que inició sesión en el buzón en** **Exchange actividades de buzón**. Esto devuelve registros de auditoría que muestran la dirección IP que se usó al iniciar sesión en el buzón. De lo contrario, deje este campo en blanco para devolver los registros de auditoría de todas las actividades. 
+**Actividades:** Si es relevante para su caso, seleccione una actividad específica para buscar. Para solucionar problemas de cuentas en peligro, considere la posibilidad de seleccionar la actividad **Usuario que inició sesión en el buzón en** **Actividades de buzón de Exchange**. Esto devuelve registros de auditoría que muestran la dirección IP que se usó al iniciar sesión en el buzón. De lo contrario, deje este campo en blanco para devolver los registros de auditoría de todas las actividades. 
 
 > [!TIP]
-> Si deja este campo en blanco, se devolverán las actividades **UserLoggedIn**, que es una actividad Azure Active Directory que indica que alguien ha iniciado sesión en una cuenta de usuario. Use el filtrado en los resultados de la búsqueda para mostrar los registros de auditoría **UserLoggedIn** .
+> Si deja este campo en blanco, se devolverán las actividades **UserLoggedIn** , que es una actividad de Azure Active Directory que indica que alguien ha iniciado sesión en una cuenta de usuario. Use el filtrado en los resultados de la búsqueda para mostrar los registros de auditoría **UserLoggedIn** .
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas aplicable a la investigación.
 
@@ -143,7 +141,7 @@ Las acciones de buzón registradas de forma predeterminada incluyen las acciones
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registros de auditoría para este escenario:
 
-**Actividades:** En **Exchange actividades de buzón de correo**, seleccione una o ambas de las siguientes actividades:
+**Actividades:** En **Actividades de buzón de Exchange**, seleccione una o ambas de las actividades siguientes:
 
 - **Mensajes eliminados de la carpeta Elementos eliminados:** Esta actividad corresponde a la acción de auditoría del buzón **softDelete** . Esta actividad también se registra cuando un usuario elimina permanentemente un elemento seleccionándolo y presionando **Mayús+Eliminar**. Una vez que un elemento se elimina de forma permanente, el usuario puede recuperarlo hasta que expire el período de retención de elementos eliminados.
 
@@ -183,11 +181,11 @@ Cuando los usuarios crean una regla de bandeja de entrada para su buzón de Exch
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registros de auditoría para este escenario:
 
-**Actividades:** En **Exchange actividades de buzón de correo**, seleccione una o ambas de las siguientes actividades:
+**Actividades:** En **Actividades de buzón de Exchange**, seleccione una o ambas de las actividades siguientes:
 
-- **New-InboxRule Cree una nueva regla de bandeja de entrada a partir de Outlook Web App**. Esta actividad devuelve registros de auditoría cuando se crean reglas de bandeja de entrada mediante Outlook aplicación web o Exchange Online PowerShell.
+- **New-InboxRule Cree una nueva regla de bandeja de entrada a partir de Outlook Web App**. Esta actividad devuelve registros de auditoría cuando se crean reglas de bandeja de entrada mediante la aplicación web de Outlook o Exchange Online PowerShell.
 
-- **Se han actualizado las reglas de bandeja de entrada de Outlook cliente**. Esta actividad devuelve registros de auditoría cuando se crean, modifican o quitan reglas de bandeja de entrada mediante el cliente de escritorio de Outlook.
+- **Se han actualizado las reglas de bandeja de entrada del cliente de Outlook**. Esta actividad devuelve registros de auditoría cuando se crean, modifican o quitan reglas de bandeja de entrada mediante el cliente de escritorio de Outlook.
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas aplicable a la investigación.
 
@@ -209,9 +207,9 @@ d. El campo **UserId** indica el usuario que creó la regla de bandeja de entrad
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Investigar por qué un usuario fuera de la organización ha iniciado sesión correctamente
 
-Al revisar los registros de auditoría en el registro de auditoría, es posible que vea registros que indican que Azure Active Directory ha autenticado un usuario externo y que ha iniciado sesión correctamente en su organización. Por ejemplo, un administrador de contoso.onmicrosoft.com puede ver un registro de auditoría que muestra que un usuario de otra organización (por ejemplo, fabrikam.onmicrosoft.com) ha iniciado sesión correctamente en contoso.onmicrosoft.com. Del mismo modo, puede ver registros de auditoría que indican que los usuarios con una cuenta microsoft (MSA), como una Outlook.com o Live.com, han iniciado sesión correctamente en su organización. En estas situaciones, la actividad auditada es **El usuario ha iniciado sesión**. 
+Al revisar los registros de auditoría en el registro de auditoría, es posible que vea registros que indican que Azure Active Directory autenticó un usuario externo e inició sesión correctamente en su organización. Por ejemplo, un administrador de contoso.onmicrosoft.com puede ver un registro de auditoría que muestra que un usuario de otra organización (por ejemplo, fabrikam.onmicrosoft.com) ha iniciado sesión correctamente en contoso.onmicrosoft.com. Del mismo modo, puede ver registros de auditoría que indican que los usuarios con una cuenta microsoft (MSA), como un Outlook.com o Live.com, han iniciado sesión correctamente en su organización. En estas situaciones, la actividad auditada es **El usuario ha iniciado sesión**. 
 
-Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio, permite algo denominado *autenticación de paso a través* cuando un usuario externo intenta acceder a un sitio de SharePoint o a una ubicación de OneDrive de su organización. Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD usa las credenciales para autenticar al usuario, lo que significa que solo Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de Azure AD autenticar al usuario. El inicio de sesión correcto no significa que el usuario haya podido acceder a ningún recurso ni realizar ninguna otra acción en su organización. Solo indica que el usuario se autenticó mediante Azure AD. Para que un usuario de paso a través acceda a SharePoint o OneDrive recursos, un usuario de su organización tendría que compartir explícitamente un recurso con el usuario externo enviándole una invitación para compartir o un vínculo de uso compartido anónimo. 
+Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio, permite algo llamado *autenticación de paso a través* cuando un usuario externo intenta acceder a un sitio de SharePoint o a una ubicación de OneDrive en su organización. Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD usa las credenciales para autenticar al usuario, lo que significa que solo Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de la autenticación del usuario por parte de Azure AD. El inicio de sesión correcto no significa que el usuario haya podido acceder a ningún recurso ni realizar ninguna otra acción en su organización. Solo indica que Azure AD ha autenticado al usuario. Para que un usuario de paso a través acceda a recursos de SharePoint o OneDrive, un usuario de su organización tendría que compartir explícitamente un recurso con el usuario externo enviándole una invitación para compartir o un vínculo de uso compartido anónimo. 
 
 > [!NOTE]
 > Azure AD solo permite la autenticación de paso a través para *aplicaciones propias*, como SharePoint Online y OneDrive para la Empresa. No se permite para otras aplicaciones de terceros.
@@ -220,23 +218,23 @@ Este es un ejemplo y descripciones de las propiedades pertinentes en un registro
 
 ![Ejemplo de registro de auditoría para la autenticación de paso a través correcta.](../media/PassThroughAuth1.png)
 
-   a. Este campo indica que el usuario que intentó acceder a un recurso de su organización no se encontró en la Azure AD de la organización.
+   a. Este campo indica que el usuario que intentó acceder a un recurso de su organización no se encontró en Azure AD de la organización.
 
    b. Este campo muestra el UPN del usuario externo que intentó acceder a un recurso de su organización. Este identificador de usuario también se identifica en las propiedades **User** y **UserId** del registro de auditoría.
 
-   c. La propiedad **ApplicationId** identifica la aplicación que desencadenó la solicitud de inicio de sesión. El valor de 000000003-0000-0ff1-ce00-000000000000 en la propiedad ApplicationId de este registro de auditoría indica SharePoint Online. OneDrive para la Empresa también tiene este mismo ApplicationId.
+   c. La propiedad **ApplicationId** identifica la aplicación que desencadenó la solicitud de inicio de sesión. El valor de 000000003-0000-0ff1-ce00-00000000000 que se muestra en la propiedad ApplicationId de este registro de auditoría indica SharePoint Online. OneDrive para la Empresa también tiene este mismo ApplicationId.
 
    d. Esto indica que la autenticación de paso a través se realizó correctamente. En otras palabras, Azure AD ha autenticado correctamente al usuario. 
 
    e. El valor **RecordType** de **15** indica que la actividad auditada (UserLoggedIn) es un evento de inicio de sesión de Secure Token Service (STS) en Azure AD.
 
-Para obtener más información sobre las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, consulte la información de esquema relacionada con Azure AD en [Office 365 esquema de api de actividad de administración](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
+Para obtener más información sobre las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, consulte la información del esquema relacionado con Azure AD en [Office 365 Esquema de api de actividad de administración](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
 
 Estos son dos ejemplos de escenarios que darían lugar a una actividad de auditoría correcta **iniciada por el usuario** debido a la autenticación de paso a través: 
 
   - Un usuario con una cuenta microsoft (por ejemplo, SaraD@outlook.com) ha intentado acceder a un documento de una cuenta de OneDrive para la Empresa en fourthcoffee.onmicrosoft.com y no hay una cuenta de usuario invitado correspondiente para SaraD@outlook.com en fourthcoffee.onmicrosoft.com.
 
-  - Un usuario con una cuenta profesional o educativa en una organización (por ejemplo, pilarp@fabrikam.onmicrosoft.com) ha intentado acceder a un sitio de SharePoint en contoso.onmicrosoft.com y no hay una cuenta de usuario invitado correspondiente para pilarp@fabrikam.com en contoso.onmicrosoft.com.
+  - Un usuario con una cuenta profesional o educativa en una organización (como pilarp@fabrikam.onmicrosoft.com) ha intentado acceder a un sitio de SharePoint en contoso.onmicrosoft.com y no hay una cuenta de usuario invitado correspondiente para pilarp@fabrikam.com en contoso.onmicrosoft.com.
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Sugerencias para investigar inicios de sesión correctos resultantes de la autenticación de paso a través
 
@@ -246,9 +244,9 @@ Estos son dos ejemplos de escenarios que darían lugar a una actividad de audito
 
     Además de las actividades **del usuario que ha iniciado sesión** , se pueden devolver otros registros de auditoría, como los que indican que un usuario de su organización ha compartido recursos con el usuario externo y si el usuario externo ha accedido, modificado o descargado un documento compartido con él.
 
-- Busque SharePoint actividades de uso compartido que indiquen que se ha compartido un archivo con el usuario externo identificado por un **usuario que ha iniciado sesión en** el registro de auditoría. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
+- Busque actividades de uso compartido de SharePoint que indiquen que un archivo se ha compartido con el usuario externo identificado por un **usuario que ha iniciado sesión en** el registro de auditoría. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
 
-- Exporte los resultados de la búsqueda de registros de auditoría que contienen registros relevantes para la investigación para que pueda usar Excel para buscar otras actividades relacionadas con el usuario externo. Para obtener más información, consulte  [Exportación, configuración y visualización de registros de auditoría](export-view-audit-log-records.md).
+- Exporte los resultados de la búsqueda de registros de auditoría que contienen registros relevantes para la investigación, de modo que pueda usar Excel para buscar otras actividades relacionadas con el usuario externo. Para obtener más información, consulte  [Exportación, configuración y visualización de registros de auditoría](export-view-audit-log-records.md).
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Búsqueda de actividades de buzón realizadas por usuarios con licencias que no son de E5
 

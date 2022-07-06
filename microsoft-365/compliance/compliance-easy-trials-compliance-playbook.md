@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530288"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633793"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le damos la bienvenida al cuaderno de estrategias de la prueba de soluciones de Microsoft Purview. Este cuaderno le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá descubrir funcionalidades sólidas y completas de Microsoft Purview y los productos de seguridad.
 

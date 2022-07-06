@@ -1,5 +1,5 @@
 ---
-title: Más información sobre las plantillas de evaluación en Microsoft Purview Administrador de cumplimiento
+title: Más información sobre las plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,17 +17,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en Microsoft Purview Administrador de cumplimiento. Cree y modifique plantillas mediante un archivo Excel con formato.
-ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Comprenda cómo usar y administrar plantillas para compilar evaluaciones en Microsoft Purview Compliance Manager. Cree y modifique plantillas mediante un archivo de Excel con formato.
+ms.openlocfilehash: ac4d3fb6f7a43aa642b9d8b343a68c9f38f29e25
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116013"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635653"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Más información sobre las plantillas de evaluación en el Administrador de cumplimiento
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Comprenda **cómo funcionan las plantillas** y **cómo administrarlas** desde la página de plantillas de evaluación. Obtenga instrucciones para **crear** nuevas plantillas, **ampliar** y **modificar** plantillas existentes, **dar formato a los datos de plantilla con Excel** y exportar **informes** de plantillas.
 
@@ -42,19 +40,19 @@ Una plantilla es un marco de controles para crear una evaluación en el Administ
 
 El administrador de cumplimiento se puede usar para evaluar diferentes tipos de productos. Todas las plantillas, excepto la plantilla predeterminada de [base de referencia de Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment) , se incluyen en dos versiones:
 
-1. Versión que se aplica a un producto predefinido, como Microsoft 365 y
+1. Una versión que se aplica a un producto predefinido, como Microsoft 365, y
 2. Una versión universal que se puede adaptar para adaptarse a otros productos.
 
 Las evaluaciones de plantillas universales son más generalizadas, pero ofrecen una mayor versatilidad, ya que pueden ayudarle a realizar un seguimiento del cumplimiento de su organización fácilmente en varios productos.
 
-Tenga en cuenta que los clientes Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD) no pueden usar plantillas universales actualmente.
+Tenga en cuenta que los clientes de la comunidad gubernamental de EE. UU. (GCC) moderados, altos de GCC y del Departamento de Defensa (DoD) no pueden usar actualmente plantillas universales.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilidad y licencias de plantillas
 
 Hay dos categorías de plantillas en el Administrador de cumplimiento: incluido y premium.
 
 1. **Las plantillas incluidas** se conceden mediante la licencia del Administrador de cumplimiento y cubren las normativas y requisitos clave. Para obtener más información sobre qué plantillas están disponibles en el contrato de licencia, consulte [detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
-2. **Premium plantillas** para cubrir necesidades y escenarios adicionales se pueden obtener mediante la compra de licencias de plantilla.
+2. **Las plantillas Premium** para cubrir necesidades y escenarios adicionales se pueden obtener mediante la compra de licencias de plantilla.
 
 Cuando empiece a crear evaluaciones, el Administrador de cumplimiento realizará un seguimiento de cuántas plantillas están activas para poder supervisar el uso. Para más información, consulte [Plantillas activas e inactivas](compliance-manager-templates.md#active-and-inactive-templates).
 
@@ -66,18 +64,18 @@ Las licencias de plantilla se pueden obtener mediante uno o varios de estos mét
 
 **Comercial y GCC moderado**
 
-Las cuentas comerciales y GCC moderadas pueden comprar licencias de plantilla en el centro de administración ([obtenga más información sobre suscripciones, licencias y facturación](/microsoft-365/commerce/)). Seleccione la cantidad de licencias que desea comprar y su plan de pago.
+Las cuentas comerciales y de GCC Moderate pueden comprar licencias de plantilla en el centro de administración ([obtenga más información sobre las suscripciones, las licencias y la facturación](/microsoft-365/commerce/)). Seleccione la cantidad de licencias que desea comprar y su plan de pago.
 
 Vínculos de compra:
 
 - [Comercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [GCC moderado](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
 
-También puede adquirir licencias a través de su participación en el [programa de Proveedor de soluciones en la nube](https://partner.microsoft.com/membership/cloud-solution-provider) o [licencias por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+También puede adquirir licencias a través de su participación en el [programa Proveedor de soluciones](https://partner.microsoft.com/membership/cloud-solution-provider) en la nube o [licencias por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
-**GCC cuentas de alta y de dod**
+**Cuentas de GCC High y DOD**
 
-GCC cuentas high y DOD deben comprar licencias de plantilla a través de [licencias por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Las cuentas GCC High y DOD deben comprar licencias de plantilla a través de [licencias por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 ### <a name="try-out-premium-templates"></a>Probar plantillas premium
 
@@ -85,9 +83,9 @@ Para probar las plantillas Premium antes de realizar una compra, también puede 
 
 Si su organización tiene una licencia comercial para el Administrador de cumplimiento, puede aprender a iniciar la evaluación en [Acerca de la evaluación gratuita para las evaluaciones premium de Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-Si su organización tiene una licencia de GCC o DOD, elija el vínculo de prueba adecuado para su organización:
+Si su organización tiene una licencia GCC o DOD, elija el vínculo de prueba adecuado para su organización:
 
-- [GCC moderado](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
@@ -124,7 +122,7 @@ Para crear su propia plantilla para evaluaciones personalizadas en el Administra
 
 ## <a name="modify-an-assessment-template"></a>Modificación de una plantilla de evaluación
 
-Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que desee modificar una plantilla de evaluación que ha creado. El proceso es similar al proceso de creación de plantillas en el que cargará un archivo Excel con formato con los datos de la plantilla. Para obtener más información sobre cómo realizar cambios y cómo conservar los datos que todavía desea mantener, consulte [Modificación de una plantilla de evaluación](compliance-manager-templates-modify.md).
+Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que desee modificar una plantilla de evaluación que ha creado. El proceso es similar al proceso de creación de plantillas en el que cargará un archivo de Excel con formato con los datos de la plantilla. Para obtener más información sobre cómo realizar cambios y cómo conservar los datos que todavía desea mantener, consulte [Modificación de una plantilla de evaluación](compliance-manager-templates-modify.md).
 
 ## <a name="extend-an-assessment-template"></a>Extensión de una plantilla de evaluación
 
@@ -132,12 +130,12 @@ El Administrador de cumplimiento ofrece la opción de agregar sus propios contro
 
 ## <a name="format-assessment-template-data-in-excel"></a>Dar formato a los datos de plantilla de evaluación en Excel
 
-Al crear, modificar o ampliar plantillas de evaluación en el Administrador de cumplimiento, trabajará con Excel hojas de cálculo que usan un formato y un esquema específicos. Estas especificaciones deben seguirse para que los archivos se importen correctamente. Para obtener más información, consulte [Formatear los datos de la plantilla de evaluación en Excel](compliance-manager-templates-format-excel.md).
+Al crear, modificar o ampliar plantillas de evaluación en el Administrador de cumplimiento, trabajará con hojas de cálculo de Excel que usan un formato y un esquema específicos. Estas especificaciones deben seguirse para que los archivos se importen correctamente. Para obtener más información, consulte [Formatear datos de plantilla de evaluación en Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="export-a-template"></a>Exportación de una plantilla
 
-Puede exportar un archivo Excel que contenga todos los datos de una plantilla. Tendrá que exportar una plantilla para modificarla, ya que este será el archivo Excel que edite y cargue en el [proceso de modificación](compliance-manager-templates-modify.md). También puede exportar una plantilla como referencia si desea usar datos de ella al crear una nueva plantilla personalizada.
+Puede exportar un archivo de Excel que contenga todos los datos de una plantilla. Tendrá que exportar una plantilla para modificarla, ya que este será el archivo de Excel que edite y cargue en el [proceso de modificación](compliance-manager-templates-modify.md). También puede exportar una plantilla como referencia si desea usar datos de ella al crear una nueva plantilla personalizada.
 
-Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón **Exportar a Excel**.
+Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón **Exportar a Excel** .
 
 Tenga en cuenta que al exportar una plantilla que extendió desde una plantilla del Administrador de cumplimiento, el archivo exportado solo contendrá los atributos que agregó a la plantilla. El archivo exportado no incluirá los datos de plantilla originales proporcionados por Microsoft. Para obtener dicho informe, consulte las instrucciones para [exportar un informe de evaluación](compliance-manager-assessments.md#export-an-assessment-report).

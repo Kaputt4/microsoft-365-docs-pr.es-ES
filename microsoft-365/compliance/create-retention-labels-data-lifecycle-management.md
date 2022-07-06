@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear etiquetas de retención para excepciones a las directivas de retención para la administración del ciclo de vida de los datos, de modo que pueda conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 082297e7d967493dc2ca4bb73be408b320e1775c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285932"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632583"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Crear etiquetas de retención para excepciones a las directivas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Como parte de la estrategia de gobernanza de datos para conservar lo que necesita y eliminar lo que no, es posible que tenga que crear algunas etiquetas de retención para los elementos que necesitan excepciones a las directivas de retención.
 

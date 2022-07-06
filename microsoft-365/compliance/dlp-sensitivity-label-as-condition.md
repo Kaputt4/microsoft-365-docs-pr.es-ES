@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtener más información sobre los servicios y los tipos de elementos en los que se puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: bf0fcb327b2869e21a54de22822d0d51c72e25b8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438474"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632407"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar [etiquetas de confidencialidad](sensitivity-labels.md) como condiciones en las directivas DLP para estas ubicaciones:
 

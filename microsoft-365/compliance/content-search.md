@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231727"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632627"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar la herramienta de eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365 basados en la nube:
   
@@ -52,7 +50,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 - En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar correos en buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
 
-- En una implementación híbrida de Exchange, puede buscar datos de chat de Teams en buzones locales. Para más información, vea [Datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
+- En una implementación híbrida de Exchange, puede buscar datos de chat de Teams en buzones locales. Para más información, vea [Datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
   

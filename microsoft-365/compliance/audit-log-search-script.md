@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto de registros de auditoría cada vez que se ejecuta. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0c1d8d6ab8f6a2c8a0dc6a1c858a164c2f4ff494
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100861"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632847"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Hoy en día, la seguridad, el cumplimiento y la auditoría son la prioridad número 1 de los administradores de TI. Microsoft 365 cuenta con varias capacidades integradas para ayudar a las organizaciones a administrar la seguridad, el cumplimiento y la auditoría. En particular, un registro unificado de auditoría puede ayudarle a investigar incidentes de seguridad y problemas relacionados con el cumplimiento. Puede recuperar los registros de auditoría mediante los siguientes métodos:
 

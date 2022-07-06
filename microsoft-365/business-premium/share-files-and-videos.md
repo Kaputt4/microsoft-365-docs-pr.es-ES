@@ -10,30 +10,22 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: ''
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint. Microsoft 365 Empresa Premium incluye Teams, que es una excelente manera de compartir archivos y vídeos de forma segura.
-ms.openlocfilehash: 666b9b6bfaeecb39445f1c9b9056ca87d0e9a20c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a09edb2ae1865bbc9e574bc8c28dd6388f442a98
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489544"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634883"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Compartir archivos y vídeos en un entorno seguro
-
 
 Otra cosa a la que hay que prestar atención es garantizar que todos los miembros de la organización controlan quién puede ver y editar archivos, y que se almacenan en una ubicación segura con los permisos adecuados aplicados. Los usuarios de Microsoft 365 Empresa Premium pueden usar Microsoft Teams para almacenar archivos y, a continuación, compartir los archivos dentro o fuera de la empresa, práctica o campaña. También puede enviar un vínculo de SharePoint. El envío de un vínculo en lugar de datos adjuntos de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin permiso.
 

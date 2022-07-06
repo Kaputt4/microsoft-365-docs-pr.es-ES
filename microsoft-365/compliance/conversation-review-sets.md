@@ -17,20 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversaciones en Microsoft Purview eDiscovery (Premium) (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en grupos de Microsoft Teams y Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 075424bc6db144e86406b10ce9a4f4d28c1b937f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b9bccd06ab9ca5ac94f48efa40b1c06707dde5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097082"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634795"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Subprocesos de conversación en eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+La mensajería instantánea es una manera cómoda de formular preguntas, compartir ideas o comunicarse rápidamente entre grandes audiencias. A medida que las plataformas de mensajería instantánea, como Microsoft Teams y los grupos de Yammer, se convierten en el núcleo de la colaboración empresarial, las organizaciones deben evaluar cómo su flujo de trabajo de eDiscovery aborda estas nuevas formas de comunicación y colaboración.
 
-La mensajería instantánea es una manera cómoda de formular preguntas, compartir ideas o comunicarse rápidamente entre grandes audiencias. A medida que las plataformas de mensajería instantánea, como Microsoft Teams y grupos de Yammer, se convierten en el núcleo de la colaboración empresarial, las organizaciones deben evaluar cómo su flujo de trabajo de eDiscovery aborda estas nuevas formas de comunicación y colaboración.
-
-La característica de reconstrucción de conversaciones de Microsoft Purview eDiscovery (Premium) está diseñada para ayudarle a identificar contenido contextual y generar vistas de conversación distintas. Esta funcionalidad le permite revisar de forma eficaz y rápida conversaciones de mensajes instantáneos completas (también *denominadas conversaciones en subprocesos*) que se generan en plataformas como Microsoft Teams.
+La característica de reconstrucción de conversaciones de Microsoft Purview eDiscovery (Premium) está diseñada para ayudarle a identificar contenido contextual y generar vistas de conversación distintas. Esta funcionalidad permite revisar de forma eficaz y rápida las conversaciones de mensajes instantáneos completas (también *denominadas conversaciones en subprocesos*) que se generan en plataformas como Microsoft Teams.
 
 Con la reconstrucción de conversaciones, puede usar funcionalidades integradas para reconstruir, revisar y exportar conversaciones en subprocesos. Use la reconstrucción de conversaciones de eDiscovery (Premium) para:
 
@@ -50,9 +48,9 @@ Estas son algunas definiciones que le ayudarán a empezar a usar la reconstrucci
 
 - **Conversación:** Representa una agrupación de uno o varios mensajes. En distintas aplicaciones, las conversaciones se pueden representar de maneras diferentes. En algunas aplicaciones, hay una acción explícita que resulta de responder a un mensaje existente. Las conversaciones se forman explícitamente como resultado de esta acción del usuario. Por ejemplo, esta es una captura de pantalla de una conversación de canal en Microsoft Teams.
 
-   ![Microsoft Teams conversación de canal.](../media/threadedchat.png)
+   ![Conversación de canal de Microsoft Teams.](../media/threadedchat.png)
 
-   En otras aplicaciones (como los mensajes de chat de grupo en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un único subproceso. En estas aplicaciones de tipos, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación temporal" de mensajes (en lugar de una cadena de respuesta) representa la conversación "de ida y vuelta" sobre un tema específico de interés.
+   En otras aplicaciones (como mensajes de chat de grupo en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un único subproceso. En estas aplicaciones de tipos, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación temporal" de mensajes (en lugar de una cadena de respuesta) representa la conversación "de ida y vuelta" sobre un tema específico de interés.
 
 ## <a name="step-1-create-a-draft-collection"></a>Paso 1: Crear una colección de borradores
 
@@ -60,7 +58,7 @@ Una vez que haya identificado los custodios y las ubicaciones de contenido perti
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Paso 2: Confirmación de una colección de borradores en un conjunto de revisión
 
-Después de revisar y finalizar la consulta de búsqueda en una colección, puede agregar los resultados de la búsqueda a un conjunto de revisión. Al agregar los resultados de búsqueda a un conjunto de revisión, los datos originales se copian en un área Azure Storage para facilitar el proceso de revisión y análisis. Para obtener más información sobre cómo agregar resultados de búsqueda a un conjunto de revisión, consulte [Confirmación de una colección de borradores en un conjunto de revisión](commit-draft-collection.md).
+Después de revisar y finalizar la consulta de búsqueda en una colección, puede agregar los resultados de la búsqueda a un conjunto de revisión. Al agregar los resultados de la búsqueda a un conjunto de revisión, los datos originales se copian en un área de Azure Storage para facilitar el proceso de revisión y análisis. Para obtener más información sobre cómo agregar resultados de búsqueda a un conjunto de revisión, consulte [Confirmación de una colección de borradores en un conjunto de revisión](commit-draft-collection.md).
 
 Al agregar elementos de conversaciones a un conjunto de revisión, puede usar la opción conversaciones en subprocesos para recopilar mensajes contextuales de conversaciones que contienen elementos que coinciden con los criterios de búsqueda de la colección. Después de seleccionar la opción conversaciones de subproceso, pueden ocurrir lo siguiente:
 

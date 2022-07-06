@@ -1,7 +1,7 @@
 ---
 title: Información y configuración de la detección de señales del explorador de administración de riesgos internos
-description: Obtenga información sobre la detección de señales del explorador de administración de riesgos internos en Microsoft 365
-keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
+description: Más información sobre la detección de señales del explorador de administración de riesgos internos en Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e904c4576081cd459ca905a56e3dd6cec5b1af31
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: d70c5a568e1b694229f3c2f1ba11fe9a2be807f6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758737"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634189"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Información y configuración de la detección de señales del explorador de administración de riesgos internos
 
-Los exploradores web a menudo los usan los usuarios para acceder a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos internos permite a su organización detectar y actuar en las señales de filtración de exploradores para todos los archivos no ejecutables vistos en los exploradores [Microsoft Edge](https://www.microsoft.com/edge) y [Google Chrome](https://www.google.com/chrome). Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de directivas de ámbito realizan cualquiera de las siguientes actividades al usar estos exploradores:
+Los exploradores web a menudo los usan los usuarios para acceder a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos internos permite a su organización detectar y actuar sobre señales de filtración de exploradores para todos los archivos no ejecutables vistos en los exploradores [Microsoft Edge](https://www.microsoft.com/edge) y [Google Chrome](https://www.google.com/chrome) . Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de directivas de ámbito realizan cualquiera de las siguientes actividades al usar estos exploradores:
 
 - Archivos copiados en el almacenamiento en la nube personal
 - Archivos impresos en dispositivos locales o de red
 - Archivos transferidos o copiados a un recurso compartido de red
 - Archivos copiados en dispositivos USB
 
-Las señales de estos eventos se detectan en Microsoft Edge mediante funcionalidades integradas del explorador y mediante el complemento *Extensión de cumplimiento de Microsoft*. En Google Chrome, los clientes usan la *extensión de cumplimiento de Microsoft* para la detección de señales.
+Las señales de estos eventos se detectan en Microsoft Edge mediante funcionalidades integradas del explorador y mediante el complemento *Extensión de cumplimiento de Microsoft* . En Google Chrome, los clientes usan la *extensión de cumplimiento de Microsoft* para la detección de señales.
 
 En la tabla siguiente se resumen las actividades detectadas y la compatibilidad con extensiones para cada explorador:
 
@@ -44,20 +44,20 @@ En la tabla siguiente se resumen las actividades detectadas y la compatibilidad 
 
 ## <a name="common-requirements"></a>Requisitos comunes
 
-Antes de instalar el complemento Microsoft Edge o la extensión de Google Chrome, los clientes deben asegurarse de que los dispositivos para los usuarios de directivas dentro del ámbito cumplan los siguientes requisitos:
+Antes de instalar el complemento de Microsoft Edge o la extensión de Google Chrome, los clientes deben asegurarse de que los dispositivos para los usuarios de directivas dentro del ámbito cumplan los siguientes requisitos:
 
-- Se recomienda la compilación más reciente Windows 10 x64, Windows 10 compilación x64 1809 como mínimo para la compatibilidad con la detección de señales. La detección de señales del explorador no se admite actualmente en dispositivos que no son Windows.
-- Suscripción [Microsoft 365](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) actual con soporte técnico para la administración de riesgos internos.
-- Los dispositivos deben [incorporarse](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) al portal de cumplimiento de Microsoft 365.
+- Se recomienda la compilación más reciente Windows 10 x64, Windows 10 compilación x64 1809 como mínimo para la compatibilidad con la detección de señales. La detección de señales del explorador no se admite actualmente en dispositivos que no son de Windows.
+- Suscripción actual de [Microsoft 365](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) con soporte técnico para la administración de riesgos internos.
+- Los dispositivos deben [incorporarse](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) al portal de cumplimiento Microsoft Purview.
 
 Para conocer los requisitos de configuración específicos del explorador, consulte las secciones Microsoft Edge y Google Chrome más adelante en este artículo.
 
 ## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>Configuración de la detección de señales del explorador para Microsoft Edge
 
-### <a name="microsoft-edge-browser-requirements"></a>requisitos del explorador de Microsoft Edge
+### <a name="microsoft-edge-browser-requirements"></a>Requisitos del explorador Microsoft Edge
 
 - Cumplir los requisitos comunes
-- Microsoft Edge versión x64, 91.0.864.41 o posterior
+- Microsoft Edge x64, versión 91.0.864.41 o posterior
 - *Complemento de extensión de cumplimiento de Microsoft* versión 1.0.0.44 o posterior
 - Edge.exe no está configurado como un explorador no permitido
 
@@ -76,7 +76,7 @@ Use esta opción para configurar la extensión y los requisitos de su organizaci
 
 Para la opción de configuración Intune, complete los pasos siguientes:
 
-1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com) mediante permisos de administrador.
+1. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com) con permisos de administrador.
 2. Vaya a **Perfiles de configuración**.
 3. Seleccione **Crear perfil**.
 4. Elija **Windows 10** como plataforma.
@@ -95,16 +95,16 @@ Use esta opción para configurar la extensión y los requisitos de toda la organ
 
 Para la opción de configuración directiva de grupo, complete los pasos siguientes:
 
-**Paso 1: Importe el archivo de plantilla administrativa (.admx) más reciente Microsoft Edge.**
+**Paso 1: Importe el archivo de plantilla administrativa de Microsoft Edge (.admx) más reciente.**
 
-Los dispositivos deben administrarse mediante directivas de grupo y todas [las plantillas administrativas de Microsoft Edge](https://www.microsoft.com/edge/business/download) deben importarse en el almacén central de directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+Los dispositivos deben administrarse mediante directivas de grupo y todas las [plantillas administrativas de Microsoft Edge](https://www.microsoft.com/edge/business/download) deben importarse en el almacén central de directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 **Paso 2: Agregue el complemento *Extensión de cumplimiento de Microsoft* a la lista *Forzar instalación* .**
 
 Complete los pasos siguientes para agregar la extensión:
 
 1. En el **Editor de administración de directiva de grupo**, vaya a la unidad organizativa (OU).
-2. Expanda la siguiente ruta de acceso **Directivas** de configuración \> de **equipo o usuario** **Plantillas** \> \> administrativas \> **clásicas** **Microsoft Edge** \> **extensiones**. Esta ruta de acceso puede variar en función de la configuración de la organización.
+2. Expanda la siguiente ruta de acceso **Directivas** de configuración \> de **equipo o usuario** **Plantillas** \> \> **administrativas** \> **clásicas Extensiones de** **Microsoft Edge**\>. Esta ruta de acceso puede variar en función de la configuración de la organización.
 3. Seleccione **Configurar qué extensiones se instalan de forma silenciosa.**
 4. Haga clic con el botón derecho y seleccione **Editar**.
 5. Active el botón **de radio Habilitado** .
@@ -114,7 +114,7 @@ Complete los pasos siguientes para agregar la extensión:
 
 ## <a name="configure-browser-signal-detection-for-google-chrome"></a>Configuración de la detección de señales del explorador para Google Chrome
 
-La compatibilidad con la detección de señales del explorador de administración de riesgos internos para Google Chrome está habilitada a través de la *extensión de cumplimiento de Microsoft*. Esta extensión también admite DLP de punto de conexión en Chrome. Para obtener más información sobre la compatibilidad con DLP de punto de conexión, consulte [Comenzar con la extensión de cumplimiento de Microsoft (versión preliminar).](/microsoft-365/compliance/dlp-chrome-get-started)
+La compatibilidad con la detección de señales del explorador de administración de riesgos internos para Google Chrome está habilitada a través de la *extensión de cumplimiento de Microsoft*. Esta extensión también admite DLP de punto de conexión en Chrome. Para obtener más información sobre la compatibilidad con DLP de punto de conexión, consulte [Introducción a la extensión de cumplimiento de Microsoft (versión preliminar).](/microsoft-365/compliance/dlp-chrome-get-started)
 
 ### <a name="google-chrome-browser-requirements"></a>Requisitos del explorador Google Chrome
 
@@ -157,7 +157,7 @@ Para la opción de configuración Intune, complete los pasos siguientes:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
-2. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com).
 3. Vaya a **Scripts de dispositivos** \> y seleccione **Agregar.** 
 4. Cuando se le solicite, vaya a la ubicación del script creado.
 5. Seleccione la siguiente configuración:
@@ -172,7 +172,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 
 Antes de agregar la extensión de Chrome DLP de Microsoft a la lista de extensiones instaladas por fuerza, debe instalar el archivo de plantilla administrativa de Chrome (.admx) para la administración de Intune. Para obtener instrucciones paso a paso, consulta [Administrar Chrome Browser con Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). Después de instalar el archivo de plantilla administrativa, complete los pasos siguientes:
 
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+1. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com).
 2. Vaya a **Perfiles de configuración**.
 3. Seleccione **Crear perfil**.
 4. Elija **Windows 10** como *plataforma*.
@@ -232,7 +232,7 @@ Los dispositivos deben poder administrarse mediante directiva de grupo y todas l
 ## <a name="test-and-verify-insider-risk-management-browser-signal-detections"></a>Prueba y comprobación de detecciones de señales del explorador de administración de riesgos internos
 
 1. Cree una directiva de administración de riesgos internos con los indicadores de dispositivo habilitados.
-2. Para probar la detección de señales de los archivos copiados en el almacenamiento en la nube personal, complete los pasos siguientes desde un dispositivo de Windows compatible:
+2. Para probar la detección de señales de los archivos copiados en el almacenamiento en la nube personal, complete los pasos siguientes desde un dispositivo Windows compatible:
 
     - Abra un sitio web de uso compartido de archivos (Microsoft OneDrive, Google Drive, etc.) con el tipo de explorador que ha configurado para la detección de señales.
     - Con el explorador, cargue un archivo no ejecutable en el sitio web.

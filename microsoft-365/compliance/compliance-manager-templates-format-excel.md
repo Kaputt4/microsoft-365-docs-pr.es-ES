@@ -1,5 +1,5 @@
 ---
-title: Dar formato a los datos de plantilla de evaluación Excel para Microsoft Compliance Manager
+title: Dar formato a los datos de la plantilla de evaluación en Excel para el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,88 +17,88 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comprenda cómo trabajar con los Excel para plantillas de evaluación en Microsoft Compliance Manager.
-ms.openlocfilehash: 755716e67589b2f002fcaec7458f502ff945c318
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Comprenda cómo trabajar con datos de Excel para las plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview.
+ms.openlocfilehash: 6c94d79fec8ff59419854c34755a7402f841cfe8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320583"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631235"
 ---
-# <a name="format-assessment-template-data-in-excel-for-microsoft-compliance-manager"></a>Dar formato a los datos de plantilla de evaluación Excel para Microsoft Compliance Manager
+# <a name="format-assessment-template-data-in-excel-for-microsoft-purview-compliance-manager"></a>Dar formato a los datos de la plantilla de evaluación en Excel para el Administrador de cumplimiento de Microsoft Purview
 
-Al [crear](compliance-manager-templates-create.md), [modificar](compliance-manager-templates-modify.md) o ampliar plantillas [](compliance-manager-templates-extend.md) de evaluación en el Administrador de cumplimiento, trabajará con Excel hojas de cálculo que usan un esquema y un formato específicos. Estas especificaciones deben seguirse para que los archivos se importen correctamente.
+Al [crear](compliance-manager-templates-create.md), [modificar](compliance-manager-templates-modify.md) o [ampliar](compliance-manager-templates-extend.md) plantillas de evaluación en el Administrador de cumplimiento, trabajará con hojas de cálculo de Excel que usan un formato y un esquema específicos. Estas especificaciones deben seguirse para que los archivos se importen correctamente.
 
 ## <a name="download-example-spreadsheet"></a>Descargar hoja de cálculo de ejemplo
 
-Para ver una hoja de cálculo de ejemplo, [descargue un archivo de ejemplo](https://go.microsoft.com/fwlink/?linkid=2124865). Puede usar esto como referencia para crear su propio archivo.
+Para ver una hoja de cálculo de ejemplo, [descargue un archivo de ejemplo](https://go.microsoft.com/fwlink/?linkid=2124865). Puede usarlo como referencia para crear su propio archivo.
 
-Si tiene previsto modificar una plantilla existente, empiece viendo los detalles de la plantilla en el Administrador de cumplimiento y descargando su Excel archivo.
+Si tiene previsto modificar una plantilla existente, empiece por ver los detalles de la plantilla en el Administrador de cumplimiento y descargar su archivo de Excel.
 
 ## <a name="spreadsheet-format"></a>Formato de hoja de cálculo
 
-La Excel de cálculo contiene cuatro pestañas, tres de las cuales son necesarias:
+La hoja de cálculo de Excel contiene cuatro pestañas, tres de las cuales son necesarias:
 
 1. [Plantilla](#template-tab) (obligatorio)
 2. [ControlFamily](#controlfamily-tab) (obligatorio)
 3. [Acciones](#actions-tab) (obligatorio)
 4. [Dimensiones](#dimensions-tab) (opcional)
 
-Al rellenar la hoja de cálculo con datos de plantilla, la hoja de cálculo debe incluir las **pestañas** en el orden indicado anteriormente, de lo contrario, los datos no se importarán correctamente a una plantilla.
+Al rellenar la hoja de cálculo con datos de plantilla, la hoja **de cálculo debe incluir las pestañas en el orden indicado anteriormente**; de lo contrario, los datos no se importarán correctamente a una plantilla.
 
-### <a name="template-tab"></a>Ficha Plantilla
+### <a name="template-tab"></a>Pestaña Plantilla
 
-Se **requiere la pestaña** Plantilla. La información de esta pestaña proporciona metadatos sobre la plantilla. Hay cuatro columnas necesarias. Las columnas deben conservar el orden en la Excel como se muestra a continuación. Puede agregar su propia columna después **de** las cuatro columnas para proporcionar sus propias dimensiones. Si lo hace, asegúrese de agregarlos a la **pestaña Dimensiones** .
+Se requiere la pestaña **Plantilla** . La información de esta pestaña proporciona metadatos sobre la plantilla. Hay cuatro columnas necesarias. Las columnas deben conservar el orden en la hoja de Excel como se muestra a continuación. Puede agregar su propia columna **después de** las cuatro columnas para proporcionar sus propias dimensiones. Si lo hace, asegúrese de agregarlos a la pestaña **Dimensiones** .
 
 - **title**: este es el título de la plantilla, que debe ser único. No puede compartir un nombre con otra plantilla que tenga en el Administrador de cumplimiento, incluidas sus propias plantillas o una plantilla de Administrador de cumplimiento.
 
-- **producto**: esta es una dimensión necesaria. Enumerar el producto asociado a la plantilla.
+- **producto**: se trata de una dimensión necesaria. Enumere el producto asociado a la plantilla.
 
-- **certificación**: este es el reglamento que está usando para la plantilla.
+- **certificación**: esta es la regulación que se usa para la plantilla.
 
-- **inScopeServices**: estos son los servicios del producto que aborda esta evaluación (por ejemplo, si enumera Office 365 como el producto, Microsoft Teams podría ser un servicio en el ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
+- **inScopeServices**: estos son los servicios del producto a los que se dirige esta evaluación (por ejemplo, si aparece Office 365 como producto, Microsoft Teams podría ser un servicio dentro del ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
 
 > [!NOTE]
-> Los datos que inserte en las celdas  **de** producto y certificación no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma **combinación de producto y** certificación. Puede tener varias plantillas con la misma combinación de producto y certificación.
+> Los datos que se insertan en las celdas **de producto** y **certificación** no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma combinación **de producto o certificación** . Puede tener varias plantillas con la misma combinación de producto o certificación.
 
-### <a name="controlfamily-tab"></a>Ficha ControlFamily
+### <a name="controlfamily-tab"></a>Pestaña ControlFamily
 
-Se **requiere la pestaña ControlFamily** .  Las columnas necesarias en esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
+Se requiere la pestaña **ControlFamily** .  Las columnas necesarias de esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
 
-- **controlName**: este es el nombre del control de la certificación, estándar o regulación, que suele ser algún tipo de identificador. Los nombres de control deben ser únicos dentro de una plantilla. No puede tener varios controles con el mismo nombre en la hoja de cálculo.
+- **controlName**: este es el nombre de control de la certificación, estándar o regulación, que suele ser algún tipo de identificador. Los nombres de control deben ser únicos dentro de una plantilla. No puede tener varios controles con el mismo nombre en la hoja de cálculo.
 
-- **controlFamily**: proporcione una palabra o frase para controlFamily, que identifica una amplia agrupación de controles. Un controlFamily no tiene que ser único; puede aparecer más de una vez en una hoja de cálculo. El mismo controlFamily también se puede enumerar en varias plantillas, aunque no tienen relación entre sí. Cada controlFamily debe asignarse a al menos un control.
+- **controlFamily**: proporcione una palabra o frase para el controlFamily, que identifica una amplia agrupación de controles. Un controlFamily no tiene que ser único; se puede enumerar más de una vez en una hoja de cálculo. El mismo controlFamily también se puede enumerar en varias plantillas, aunque no tienen ninguna relación entre sí. Cada controlFamily debe asignarse a al menos un control.
 
 - **controlTitle**: proporcione un título para el control. Mientras que controlName es un código de referencia, el título es un formato de texto enriquecido que se suele ver en las regulaciones.
 
 - **controlDescription**: proporcione una descripción del control.
 
-- **controlActionTitle**: este campo relaciona el control con una o más acciones, enumeradas por su actionTitle. Puede agregar varias acciones si las separa con dos puntos y coma sin espacio entre ellos. Cada control que enumera debe incluir al menos una acción existente y la acción puede definirse en la pestaña Acciones  de la misma hoja de cálculo, estar en una plantilla diferente o crearla Microsoft. Diferentes controles pueden hacer referencia a la misma acción.
+- **controlActionTitle**: este campo relaciona el control con una o varias acciones, enumeradas por su actionTitle. Puede agregar varias acciones separándolas con dos puntos y comas sin espacio entre sí. Cada control que enumera debe incluir al menos una acción existente y la acción puede definirse en la pestaña **Acciones** de la misma hoja de cálculo, estar en una plantilla diferente o crearla Microsoft. Los distintos controles pueden hacer referencia a la misma acción.
 
 ### <a name="actions-tab"></a>Pestaña Acciones
 
-Se **requiere la pestaña** Acciones.  Designa acciones de mejora administradas por su organización y no las de Microsoft, que ya existen en el Administrador de cumplimiento. Las columnas necesarias para esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
+Se requiere **la pestaña Acciones** .  Designa las acciones de mejora administradas por su organización y no las de Microsoft, que ya existen en el Administrador de cumplimiento. Las columnas necesarias para esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
 
-- **actionTitle**: este es el título de la acción y es un campo obligatorio. El título que proporciones debe ser único. **Importante**: si hace referencia a una acción de su propiedad que ya existe (como en otra plantilla) y modifica cualquiera de sus elementos en las columnas posteriores, esos cambios se propagarán a la misma acción en otras plantillas.
+- **actionTitle**: este es el título de la acción y es un campo obligatorio. El título que proporcione debe ser único. **Importante**: si hace referencia a una acción de su propiedad que ya existe (por ejemplo, en otra plantilla) y modifica cualquiera de sus elementos en las columnas posteriores, esos cambios se propagarán a la misma acción en otras plantillas.
 
 - **implementationType**: en este campo obligatorio, enumera uno de los tres tipos de implementación siguientes: 
-  1) **Operativo** : acciones implementadas por personas y procesos para proteger la confidencialidad, integridad y disponibilidad de los sistemas, activos, datos y personal de la organización (por ejemplo: sensibilización y formación en materia de seguridad).      
-  2) **Técnicas** : acciones completadas mediante tecnología y mecanismos contenidos en los componentes de hardware, software o firmware del sistema de información para proteger la confidencialidad, integridad y disponibilidad de los sistemas y datos de la organización (por ejemplo: autenticación multifactor).
-  3) **Documentación** : acciones implementadas a través de directivas y procedimientos documentados que establecen y definen los controles necesarios para proteger la confidencialidad, integridad y disponibilidad de los sistemas organizativos, activos, datos y personal (por ejemplo, una directiva de seguridad de la información).
+  1) **Operativo** : acciones implementadas por personas y procesos para proteger la confidencialidad, integridad y disponibilidad de los sistemas, recursos, datos y personal de la organización (por ejemplo, reconocimiento y entrenamiento de seguridad).      
+  2) **Técnica** : acciones completadas mediante el uso de tecnología y mecanismos contenidos en los componentes de hardware, software o firmware del sistema de información para proteger la confidencialidad, integridad y disponibilidad de los sistemas y datos de la organización (por ejemplo, la autenticación multifactor).
+  3) **Documentación** : acciones implementadas a través de directivas y procedimientos documentados que establecen y definen los controles necesarios para proteger la confidencialidad, integridad y disponibilidad de los sistemas, activos, datos y personal de la organización (por ejemplo, una directiva de seguridad de la información).
 
-- **actionScore**: en este campo obligatorio, proporcione un valor de puntuación numérico para la acción. El valor debe ser un número entero que va de 1 a 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor para mejorar la posición de cumplimiento. En la imagen siguiente se muestra cómo puntua el Administrador de cumplimiento los controles:
+- **actionScore**: en este campo obligatorio, proporcione un valor de puntuación numérica para la acción. El valor debe ser un número entero comprendido entre 1 y 99; no puede ser 0, null o en blanco. Cuanto mayor sea el número, mayor será su valor para mejorar la posición de cumplimiento. En la imagen siguiente se muestra cómo el Administrador de cumplimiento puntua los controles:
 
-  ![El Administrador de cumplimiento controla los valores de puntos.](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
+  ![El Administrador de cumplimiento controla los valores de punto.](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de punto")
 
-- **actionDescriptionTitle**: este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar la plantilla a la que hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
+- **actionDescriptionTitle**: este es el título de la descripción y es necesario. Este título de descripción le permite tener la misma acción en varias plantillas y exponer una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar a qué plantilla hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que va a crear en este campo.
 
-- **actionDescription**: proporcione una descripción de la acción. Puede aplicar formato, como texto en negrita e hipervínculos. Este campo es obligatorio.
+- **actionDescription**: proporcione una descripción de la acción. Puede aplicar formato como texto en negrita e hipervínculos. Este campo es obligatorio.
 
-- **dimension-Action Purpose**: este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "dimension-". Las dimensiones que incluyas aquí se usarán como filtros en el Administrador de cumplimiento y aparecerán en la página de detalles de las acciones de mejora en el Administrador de cumplimiento.
+- **dimension-Action Purpose**: se trata de un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "dimension-". Las dimensiones que incluya aquí se usarán como filtros en el Administrador de cumplimiento y aparecerán en la página de detalles de acciones de mejora del Administrador de cumplimiento.
 
-### <a name="dimensions-tab"></a>Ficha Dimensiones
+### <a name="dimensions-tab"></a>Pestaña Dimensiones
 
-La **pestaña Dimensiones** es opcional. Sin embargo, si hace referencia a una dimensión en otro lugar, debe especificarla aquí si no existe en una plantilla que ya haya creado o en una plantilla de Microsoft. Las columnas de esta pestaña se enumeran a continuación:
+La pestaña **Dimensiones** es opcional. Sin embargo, si hace referencia a una dimensión en otro lugar, debe especificarla aquí si no existe en una plantilla que ya haya creado o en una plantilla de Microsoft. Las columnas de esta pestaña se enumeran a continuación:
 
 - **dimensionKey**: list as "product", "certifications", "action purpose"
 - **dimensionValue**: ejemplos: Office 365, HIPPA, Preventative, Detective

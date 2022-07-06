@@ -14,18 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo crear un modelo de codificación predictiva en eDiscovery (Premium). Este es el primer paso para usar las funcionalidades de aprendizaje automático en eDiscovery (Premium) para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
-ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099661"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635751"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Creación de un modelo de codificación predictiva (versión preliminar)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-El primer paso para usar las funcionalidades de aprendizaje automático de la codificación predictiva en eDiscovery (Premium) es crear un modelo de codificación predictiva. Después de crear un modelo, puede entrenarlo para identificar el contenido relevante y no relevante de un conjunto de revisión.
+El primer paso para usar las funcionalidades de aprendizaje automático de codificación predictiva en eDiscovery (Premium) es crear un modelo de codificación predictiva. Después de crear un modelo, puede entrenarlo para identificar el contenido relevante y no relevante de un conjunto de revisión.
 
 Para revisar el flujo de trabajo de codificación predictiva, consulte [Información sobre la codificación predictiva en eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
@@ -39,9 +37,9 @@ Para revisar el flujo de trabajo de codificación predictiva, consulte [Informac
 
 ## <a name="create-a-model"></a>Crear un modelo
 
-1. En el portal de cumplimiento de Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
+1. En el portal de cumplimiento Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
 
-2. Abra un conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
+2. Abra un conjunto de revisión y, a continuación, haga clic en **Análisis** > **Administrar codificación predictiva (versión preliminar).**
 
    ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
@@ -63,6 +61,6 @@ Después de crear un modelo, se producen las siguientes cosas en segundo plano d
 
 - El sistema selecciona aleatoriamente 40 elementos del conjunto de revisión que se incluirán en el conjunto de entrenamiento para la primera ronda de entrenamiento. Por lo tanto, la primera ronda de entrenamiento incluye 50 elementos para el etiquetado: 40 elementos del conjunto de entrenamiento y 10 elementos del conjunto de control.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de crear un modelo para un conjunto de revisión, el siguiente paso es realizar rondas de entrenamiento para "enseñar" el modelo a fin de identificar el contenido que es relevante para la investigación. Para obtener más información, consulte [Entrenamiento de un modelo de codificación predictiva](predictive-coding-train-model.md).

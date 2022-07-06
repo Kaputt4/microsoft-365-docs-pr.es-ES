@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cree y administre buzones inactivos que conserven el contenido de los buzones eliminados en Microsoft 365.
-ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417410"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634629"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los buzones inactivos le permiten conservar el correo electrónico de los antiguos empleados después de abandonar la organización y pueden acceder a ellos personas autorizadas a las que se les hayan concedido [permisos de exhibición](assign-ediscovery-permissions.md) de documentos electrónicos por motivos legales o de cumplimiento. Por ejemplo, los administradores, los responsables de cumplimiento y los administradores de registros que pueden usar búsqueda de contenido para buscar y exportar el contenido de un buzón inactivo. Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de su organización ni en otras listas.
 
@@ -42,7 +40,7 @@ Hacer que un buzón esté inactivo requiere una suspensión en el buzón y, a co
 
 Para que un buzón esté inactivo, se le debe asignar una licencia de Exchange Online Plan 2 (o una licencia de Exchange Online Plan 1 con una licencia de complemento de Archivado de Exchange Online) para que se pueda aplicar una suspensión al buzón antes de que se elimine. Una vez eliminada la cuenta de usuario, cualquier licencia de Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
 
-Se recomienda usar Microsoft 365 retención para aplicar la suspensión en el buzón. Otros métodos se tratan en [Información sobre los buzones inactivos](inactive-mailboxes-in-office-365.md).
+Se recomienda usar la retención de Microsoft 365 para aplicar la suspensión en el buzón. Otros métodos se tratan en [Información sobre los buzones inactivos](inactive-mailboxes-in-office-365.md).
 
 La mejor manera de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Para obtener información sobre cómo eliminar cuentas de usuario, consulte [Eliminación de un usuario de su organización](../admin/add-users/delete-a-user.md). Sin embargo, también puede eliminar el buzón mediante el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [Eliminar o restaurar buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes).
 
@@ -52,12 +50,12 @@ En la tabla siguiente se resume el proceso de creación de un buzón inactivo pa
 
 |Para...|Haga esto...|Resultado|
 |---|---|---|
-|Conservar el contenido del buzón indefinidamente después de que un empleado deje la organización|1. Aplique Microsoft 365 configuración de retención con acciones de retención para el buzón (una directiva de retención) o elementos de correo electrónico específicos (una o varias etiquetas de retención). <br /><br> 2. Espere a que se aplique la configuración de retención. <br /><br> 3. Quite la cuenta de Microsoft 365 del usuario.|Todo el contenido del buzón inactivo que tiene aplicada la configuración de retención, incluidos los elementos de la carpeta Elementos recuperables, se conserva indefinidamente.|
-|Conservar todo el contenido del buzón durante un período específico después de que un empleado deje la organización y, a continuación, eliminar el buzón|1. Aplique una directiva de retención de Microsoft 365 al buzón con la configuración de retención que retenga y elimine los elementos cuando expire el período de retención. <br /><br> 2. Espere a que se aplique la configuración de retención. <br /><br> 3. Quite la cuenta de Microsoft 365 del usuario.|Cuando expira el período de retención de un elemento de buzón de correo, el elemento se mueve a la carpeta Elementos recuperables y, a continuación, se elimina permanentemente (se purga) del buzón inactivo cuando expira el período de retención de elementos eliminados (para Exchange buzones). El período de retención de la directiva de retención de Microsoft 365 siempre se basa en la fecha original en que se recibió o creó un elemento de buzón.|
+|Conservar el contenido del buzón indefinidamente después de que un empleado deje la organización|1. Aplique la configuración de retención de Microsoft 365 con acciones de retención para el buzón (una directiva de retención) o elementos de correo electrónico específicos (una o varias etiquetas de retención). <br /><br> 2. Espere a que se aplique la configuración de retención. <br /><br> 3. Quite la cuenta de Microsoft 365 del usuario.|Todo el contenido del buzón inactivo que tiene aplicada la configuración de retención, incluidos los elementos de la carpeta Elementos recuperables, se conserva indefinidamente.|
+|Conservar todo el contenido del buzón durante un período específico después de que un empleado deje la organización y, a continuación, eliminar el buzón|1. Aplique una directiva de retención de Microsoft 365 al buzón con la configuración de retención que conserve y elimine los elementos cuando expire el período de retención. <br /><br> 2. Espere a que se aplique la configuración de retención. <br /><br> 3. Quite la cuenta de Microsoft 365 del usuario.|Cuando expira el período de retención de un elemento de buzón de correo, el elemento se mueve a la carpeta Elementos recuperables y, a continuación, se elimina permanentemente (se purga) del buzón inactivo cuando expira el período de retención de elementos eliminados (para buzones de Exchange). El período de retención de la directiva de retención de Microsoft 365 siempre se basa en la fecha original en que se recibió o creó un elemento de buzón.|
 
 
 > [!NOTE]
-> Si Microsoft 365 configuración de retención que está configurada para conservar o conservar y eliminar contenido, ya se aplica a los elementos de buzón o buzón, o una retención por juicio ya está colocada en un buzón de correo o, a continuación, todo lo que tiene que hacer para crear un buzón inactivo es eliminar la cuenta de usuario correspondiente.
+> Si la configuración de retención de Microsoft 365 que está configurada para conservar o conservar y eliminar contenido, ya se aplica a los elementos de buzón o buzón, o si ya se ha colocado una suspensión por juicio en un buzón, o bien, todo lo que tiene que hacer para crear un buzón inactivo es eliminar la cuenta de usuario correspondiente.
 
 
 ## <a name="view-a-list-of-inactive-mailboxes"></a>Ver una lista de buzones inactivos
@@ -66,15 +64,15 @@ Para ver una lista de los buzones inactivos de la organización:
 
 1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de una Administrador global o una cuenta de administrador de cumplimiento de su organización.
 
-2. En el panel de navegación izquierdo, seleccione **Mostrar todo** y, a continuación, seleccione Administración  > **del ciclo de vida** de **datosDirectivas de** mantenimiento.
+2. En el panel de navegación izquierdo, seleccione **Mostrar todo** y, a continuación, seleccione **Directivas de retención de administración del ciclo de** >  vida de **datos**.
 
 3. Seleccione la opción **Buzón inactivo** :
 
    ![Opción Buzón inactivo en la página Directivas de retención de la administración del ciclo de vida de datos.](../media/inactive-mailbox-option.png)
 
-4. La página **Buzones inactivos** muestra una lista de buzones inactivos. Seleccione uno para ver detalles sobre ese buzón inactivo. Los detalles incluyen el identificador de Exchange del buzón de correo y si está en [suspensión por juicio](create-a-litigation-hold.md).
+4. La página **Buzones inactivos** muestra una lista de buzones inactivos. Seleccione uno para ver detalles sobre ese buzón inactivo. Los detalles incluyen el identificador de Exchange para el buzón de correo y si está en [suspensión por juicio](create-a-litigation-hold.md).
     
-    No verá otros tipos de retenciones en el panel de detalles, por ejemplo, una directiva de retención de Microsoft 365 o una suspensión de eDiscovery. Para encontrar esta información, consulte [Cómo identificar el tipo de retención colocado en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+    No verá otros tipos de retenciones en el panel de detalles, por ejemplo, una directiva de retención de Microsoft 365 o una suspensión de exhibición de documentos electrónicos. Para encontrar esta información, consulte [Cómo identificar el tipo de retención colocado en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
 Si tiene muchos buzones inactivos, es posible que le resulte más fácil buscar y ordenar un archivo CSV para obtener los detalles que ve en la lista: en la página **Buzones inactivos** , seleccione :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: **Exportar**.
 

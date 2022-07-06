@@ -18,19 +18,17 @@ ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador de Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido mediante la obtención de ejemplos que se van a examinar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: d3a7639ed31dc42688cffbffb151049659a41660
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+description: Un clasificador de Microsoft 365 es una herramienta que puede entrenar para reconocer diversos tipos de contenido al darle ejemplos a los que examinar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
+ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173197"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631389"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Un clasificador Microsoft 365 que se puede entrenar es una herramienta que se puede entrenar para reconocer varios tipos de contenido mediante la obtención de ejemplos que se van a examinar. Una vez entrenado, puede usarlo para identificar el elemento para la aplicación de etiquetas de confidencialidad de Office, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
+Un clasificador que se puede entrenar de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido al darle ejemplos a los que examinar. Una vez entrenado, puede usarlo para identificar el elemento para la aplicación de etiquetas de confidencialidad de Office, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
 
 La creación de un clasificador personalizado que se puede entrenar primero implica darle ejemplos que son seleccionados por el ser humano y que coinciden positivamente con la categoría. A continuación, una vez procesados, se prueba la capacidad de los clasificadores de predecir proporcionándole una combinación de muestras positivas y negativas. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo mejorar el rendimiento de clasificadores entrenables personalizados y clasificadores previamente entrenados a lo largo de su duración mediante el reentrenamiento.
 
@@ -60,7 +58,7 @@ Necesitará cuentas con estos permisos para usar clasificadores en estos escenar
 
 - Escenario de directiva de etiqueta de retención: roles de administración de registros y administración de retención 
 - Escenario de directiva de etiqueta de confidencialidad: Administrador de seguridad, Administrador de cumplimiento, Administrador de datos de cumplimiento
-- Escenario de directiva de cumplimiento de comunicaciones: Administrador de administración de riesgos internos, administrador de revisión de supervisión 
+- Escenario de directiva de cumplimiento de comunicaciones: Insider Risk Management Administración, Supervisor Review Administrator 
 
 > [!IMPORTANT]
 > De forma predeterminada, solo el usuario que crea un clasificador personalizado puede entrenar y revisar las predicciones realizadas por ese clasificador.
@@ -76,7 +74,7 @@ Esta escala de tiempo refleja una implementación de ejemplo de clasificadores e
 ![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> La participación es necesaria la primera vez para los clasificadores que se pueden entrenar. Los Microsoft 365 tardan doce días en completar una evaluación de línea base del contenido de las organizaciones. Póngase en contacto con el administrador global para iniciar el proceso de participación.
+> La participación es necesaria la primera vez para los clasificadores que se pueden entrenar. Microsoft 365 tarda doce días en completar una evaluación de línea base del contenido de las organizaciones. Póngase en contacto con el administrador global para iniciar el proceso de participación.
 
 ### <a name="overall-workflow"></a>Flujo de trabajo general
 
@@ -108,7 +106,7 @@ Una vez que el clasificador entrenable ha procesado suficientes ejemplos positiv
    > [!TIP]
    > Si crea un sitio y una carpeta nuevos para los datos de inicialización, espere al menos una hora para que esa ubicación se indexe antes de crear el clasificador entrenable que usará esos datos de inicialización.
 
-3. Inicie sesión en el portal de cumplimiento de Microsoft Purview con acceso al rol de administrador de cumplimiento o administrador de seguridad y abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> o <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> >  **Clasificación de datos**.
+3. Inicie sesión en portal de cumplimiento Microsoft Purview con el acceso al rol de administrador de seguridad o administrador de cumplimiento y abra <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> o <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Datos clasificación**.
 
 4. Elija la pestaña **Clasificadores entrenables** .
 
@@ -116,7 +114,7 @@ Una vez que el clasificador entrenable ha procesado suficientes ejemplos positiv
 
 6. Rellene los valores adecuados para los `Name` campos y `Description` de la categoría de elementos que desea que identifique este clasificador entrenable.
 
-7. Elija la dirección URL de sitio, biblioteca y carpeta de SharePoint Online para el sitio de contenido de inicialización del paso 2. Elija `Add`.
+7. Elija el sitio, la biblioteca y la dirección URL de carpeta de SharePoint Online para el sitio de contenido de inicialización del paso 2. Elija `Add`.
 
 8. Revise la configuración y elija `Create trainable classifier`.
 
@@ -136,7 +134,7 @@ Una vez que el clasificador entrenable ha procesado suficientes ejemplos positiv
 
 13. Elija `Add items to test`.
 
-14. Elija la dirección URL de sitio, biblioteca y carpeta de SharePoint Online para el sitio de contenido de prueba del paso 12. Elija `Add`.
+14. Elija el sitio, la biblioteca y la dirección URL de carpeta de SharePoint Online para el sitio de contenido de prueba del paso 12. Elija `Add`.
 
 15. Para finalizar el asistente, elija `Done`. El clasificador que se puede entrenar tardará hasta una hora en procesar los archivos de prueba.
 
@@ -159,4 +157,4 @@ Una vez que el clasificador entrenable ha procesado suficientes ejemplos positiv
 
 20. Publique el clasificador.
 
-21. Una vez publicado, el clasificador estará disponible como condición en [Office etiquetado automático con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), [aplique automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [Cumplimiento de la comunicación](communication-compliance.md).
+21. Una vez publicado el clasificador estará disponible como condición en el [etiquetado automático de Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), [aplique automáticamente la directiva de etiquetas de retención en función de una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en [Cumplimiento de comunicaciones](communication-compliance.md).

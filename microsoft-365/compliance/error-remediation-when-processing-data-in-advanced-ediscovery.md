@@ -17,27 +17,25 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos en eDiscovery (Premium) que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e119458281a81ab41f8034ce76e65a5946536204
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2052e60e1c27e2b3e138124e5d268477f6a9cd18
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093117"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634365"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+La corrección de errores permite a los administradores de eDiscovery corregir los problemas de datos que impiden que Microsoft Purview eDiscovery (Premium) procesen correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar, ya que los archivos están bloqueados o cifrados. Mediante la corrección de errores, los administradores de eDiscovery pueden descargar archivos con estos errores, quitar la protección con contraseña y, a continuación, cargar los archivos corregidos.
 
-La corrección de errores permite a los administradores de eDiscovery corregir los problemas de datos que impiden que microsoft Purview eDiscovery (Premium) procese correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar, ya que los archivos están bloqueados o cifrados. Mediante la corrección de errores, los administradores de eDiscovery pueden descargar archivos con estos errores, quitar la protección con contraseña y, a continuación, cargar los archivos corregidos.
-
-Use el siguiente flujo de trabajo para corregir archivos con errores en casos de eDiscovery (Premium).
+Use el siguiente flujo de trabajo para corregir los archivos con errores en casos de eDiscovery (Premium).
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creación de una sesión de corrección de errores para corregir archivos con errores de procesamiento
 
 > [!NOTE]
 > Si el asistente para la corrección de errores se cierra en cualquier momento durante el procedimiento siguiente, puede volver a la sesión de corrección de errores en la pestaña **Procesamiento** seleccionando **Correcciones** en el menú desplegable **Ver** .
 
-1. En la pestaña **Procesamiento** del caso de exhibición de documentos electrónicos (Premium), seleccione **Errores** en el menú desplegable **Ver** y, a continuación, seleccione un conjunto de revisión o todo el caso en el menú desplegable **Ámbito**. Esta sección muestra todos los errores de caso o error de un conjunto de revisión específico.
+1. En la pestaña **Procesamiento** del caso eDiscovery (Premium), seleccione **Errores** en el menú desplegable **Ver** y, a continuación, seleccione un conjunto de revisión o todo el caso en el menú desplegable **Ámbito** . Esta sección muestra todos los errores de caso o error de un conjunto de revisión específico.
 
    ![Corrección de errores.](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
@@ -57,12 +55,12 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en casos de
 
    La ruta de acceso a la carpeta primaria se agrega automáticamente al comando AzCopy (como valor del parámetro **/Dest** ).
 
-6. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un símbolo del sistema Windows, pegue el comando AzCopy y presione **Entrar**.
+6. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un símbolo del sistema de Windows, pegue el comando AzCopy y presione **Entrar**.
 
     ![Prepárese para la corrección de errores.](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Debe usar AzCopy v8.1 para usar correctamente el comando que se proporciona en la página **Descargar archivos** . También debe usar AzCopy v8.1 para cargar los archivos en el paso 10. Para instalar esta versión de AzCopy, consulte [Transferencia de datos con AzCopy v8.1 en Windows](/previous-versions/azure/storage/storage-use-azcopy). Si se produce un error en el comando AzCopy proporcionado, consulte [Solución de problemas de AzCopy en eDiscovery (Premium)](troubleshooting-azcopy.md).
+    > Debe usar AzCopy v8.1 para usar correctamente el comando que se proporciona en la página **Descargar archivos** . También debe usar AzCopy v8.1 para cargar los archivos en el paso 10. Para instalar esta versión de AzCopy, consulte [Transferencia de datos con AzCopy v8.1 en Windows](/previous-versions/azure/storage/storage-use-azcopy). Si se produce un error en el comando AzCopy proporcionado, consulte [Solución de problemas de AzCopy en eDiscovery (Premium).](troubleshooting-azcopy.md)
 
     Los archivos que seleccionó se descargarán en la ubicación que especificó en el paso 5. En la carpeta principal (por ejemplo, **C:\Remediation**), se crea automáticamente la siguiente estructura de subcarpetas:
 
@@ -85,15 +83,15 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en casos de
 
 7. Después de descargar los archivos, puede corregirlos con una herramienta adecuada. En el caso de los archivos protegidos con contraseña, hay varias herramientas de descifrado de contraseñas que puede usar. Si conoce las contraseñas de los archivos, puede abrirlos y quitar la protección con contraseña.
 
-8. Vuelva a eDiscovery (Premium) y al Asistente para la corrección de errores y, a continuación, haga clic en **Siguiente: Upload archivos**.  Esto lo lleva a la página siguiente, donde ahora puede cargar los archivos.
+8. Vuelva a eDiscovery (Premium) y al Asistente para la corrección de errores y, a continuación, haga clic en **Siguiente: Cargar archivos**.  Esto lo lleva a la página siguiente, donde ahora puede cargar los archivos.
 
-    ![archivos Upload.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Cargar archivos.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Especifique la carpeta principal donde se encuentran los archivos corregidos en el cuadro de texto **Ruta de acceso a la ubicación de los archivos** De nuevo, la carpeta primaria debe tener la misma estructura de subcarpetas que se creó al descargar los archivos.
 
     La ruta de acceso a la carpeta primaria se agrega automáticamente al comando AzCopy (como valor del parámetro **/Source** ).
 
-10. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un símbolo del sistema Windows, pegue el comando AzCopy y presione **Entrar**. cargar los archivos.
+10. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un símbolo del sistema de Windows, pegue el comando AzCopy y presione **Entrar**. cargar los archivos.
 
     ![Resultados de la carga correcta de archivos corregidos en Azcopy.](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
@@ -103,11 +101,11 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en casos de
 
 ## <a name="remediating-errors-in-container-files"></a>Corrección de errores en archivos de contenedor
 
-En situaciones en las que eDiscovery (Premium) no puede extraer el contenido de un archivo contenedor (por ejemplo, un archivo .zip), los contenedores se pueden descargar y el contenido se expande a la misma carpeta en la que reside el contenedor original. Los archivos expandidos se atribuirán al contenedor primario como si fueran expandidos originalmente por eDiscovery (Premium). El proceso funciona como se describió anteriormente, excepto para cargar un único archivo como archivo de reemplazo.  Al cargar archivos corregidos, no incluya el archivo de contenedor original.
+En situaciones en las que eDiscovery (Premium) no puede extraer el contenido de un archivo de contenedor (por ejemplo, un archivo de .zip), los contenedores se pueden descargar y expandir el contenido en la misma carpeta en la que reside el contenedor original. Los archivos expandidos se atribuirán al contenedor primario como si fueran expandidos originalmente por eDiscovery (Premium). El proceso funciona como se describió anteriormente, excepto para cargar un único archivo como archivo de reemplazo.  Al cargar archivos corregidos, no incluya el archivo de contenedor original.
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Corrección de errores mediante la carga del texto extraído
 
-A veces no es posible corregir un archivo a formato nativo que eDiscovery (Premium) puede interpretar. Pero puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado *superposición de texto*). Para ello, siga los pasos descritos en este artículo, pero en lugar de corregir el archivo original en el formato nativo, crearía un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargaría el archivo de texto con el nombre de archivo original anexado con un sufijo .txt. Por ejemplo, descargue un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. Abra el archivo en la aplicación nativa, copie el texto y péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Al hacerlo, asegúrese de quitar el archivo original en el formato nativo de la ubicación del archivo corregido en el equipo local antes de cargar el archivo de texto corregido en eDiscovery (Premium).
+A veces no es posible corregir un archivo a un formato nativo que eDiscovery (Premium) puede interpretar. Pero puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado *superposición de texto*). Para ello, siga los pasos descritos en este artículo, pero en lugar de corregir el archivo original en el formato nativo, crearía un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargaría el archivo de texto con el nombre de archivo original anexado con un sufijo .txt. Por ejemplo, descargue un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. Abra el archivo en la aplicación nativa, copie el texto y péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Al hacerlo, asegúrese de quitar el archivo original en el formato nativo de la ubicación del archivo corregido en el equipo local antes de cargar el archivo de texto corregido en eDiscovery (Premium).
 
 ## <a name="what-happens-when-files-are-remediated"></a>¿Qué ocurre cuando se corrigen los archivos?
 
@@ -123,4 +121,4 @@ Cuando se cargan los archivos corregidos, se conservan los metadatos originales,
 - WordCount
 - WorkingsetId
 
-Para obtener una definición de todos los campos de metadatos de eDiscovery (Premium), vea [Campos de metadatos de documento](document-metadata-fields-in-advanced-ediscovery.md).
+Para obtener una definición de todos los campos de metadatos en eDiscovery (Premium), vea [Campos de metadatos del documento](document-metadata-fields-in-advanced-ediscovery.md).
