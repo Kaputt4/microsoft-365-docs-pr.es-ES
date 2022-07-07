@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625399"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663796"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -81,13 +81,13 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
-1. Siga las instrucciones generales para [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y asegurarse de que **Archivos y mensajes de correo electrónico** está seleccionada para el ámbito de la etiqueta: 
+1. Siga las instrucciones generales para [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y asegúrese de que **los elementos** están seleccionados para el ámbito de la etiqueta: 
     
-    ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![Opciones de ámbito de etiqueta de confidencialidad para archivos y correos electrónicos.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico**
+2. A continuación, en la página **Elegir configuración de protección para elementos etiquetados**, asegúrese de seleccionar **Cifrar elementos**
     
-    ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico.](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Opciones de protección de etiquetas de confidencialidad para los elementos." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  En la página **Cifrado**, seleccione una de las siguientes opciones:
     
@@ -97,7 +97,7 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
     
     - **Configurar las opciones de cifrado**: activa el cifrado y hace que la configuración de cifrado sea visible:
         
-        ![Opciones de etiqueta de confidencialidad para el cifrado.](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Opciones de etiqueta de confidencialidad para el cifrado. "lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         Las instrucciones para estas opciones de configuración están en la sección [Establecer la configuración de cifrado](#configure-encryption-settings).
 
@@ -412,7 +412,7 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 Esta configuración tiene la ventaja de no tener que especificar usuarios, grupos o dominios para cifrar un correo electrónico o un documento. El contenido seguirá estando cifrado y aún podrá especificar derechos de uso, una fecha de expiración y acceso sin conexión.
 
-Use esta configuración solo cuando no necesite restringir quién puede abrir el documento o correo electrónico protegido. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
+Use esta configuración solo cuando no necesite restringir quién puede abrir el documento o correo electrónico protegido. Consulte [más información acerca de esta configuración.](#requirements-and-limitations-for-add-any-authenticated-users).
 
 1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** asegúrese de que la opción **Asignar permisos ahora** está seleccionada.
 

@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486937"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663402"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -100,7 +100,7 @@ No hay que hacer nada para configurar DMARC para el correo que se recibe en Micr
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Configurar DMARC para el correo saliente de Microsoft 365
 
-Si usa Microsoft 365 pero no usa un dominio personalizado (usa onmicrosoft.com), no es necesario hacer nada más. SPF ya está configurado y Microsoft 365 genera automáticamente una firma DKIM para el correo saliente. No hay nada más que hacer para configurar DMARC para su organización. Para más información sobre esta firma, consulte [Comportamiento predeterminado para DKIM y Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Si usa Microsoft 365 pero no usa un dominio personalizado (usa onmicrosoft.com), SPF ya está configurado para usted y Microsoft 365 genera automáticamente una firma DKIM para su correo saliente (para obtener más información acerca de esta firma, consulte [ Comportamiento predeterminado para DKIM y Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). Para configurar DMARC para su organización, debe [formar el registro TXT de DMARC](#step-4-form-the-dmarc-txt-record-for-your-domain) para el dominio onmicrosoft.com y publicarlo en DNS a través del Centro de administración de [Office 365](https://admin.microsoft.com) > Configuración > Dominios > haga clic en onmicrosoft.com dominio > Agregar registro.
 
  Si tiene un dominio personalizado o usa servidores de Exchange locales junto con Microsoft 365, debe configurar manualmente DMARC para el correo saliente. La implementación de DMARC para el dominio personalizado incluye estos pasos:
 
@@ -281,4 +281,4 @@ Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso
 
 [**Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado en Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)

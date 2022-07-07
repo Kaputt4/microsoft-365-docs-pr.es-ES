@@ -2,8 +2,8 @@
 title: Introducción a la configuración de dispositivos no administrados
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -24,22 +24,22 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general sobre cómo configurar todos los BYOD (bring your own devices) con protección contra ciberataques y otras amenazas maliciosas y vulnerabilidades.
-ms.openlocfilehash: 666a0b9af03f5b70ff474e310270eab324cb76ba
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ac20d80f97d000414a81e9637a69b2678fa0d3b1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574265"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623396"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configuración de dispositivos (BYOD) no administrados 
 
-Cada dispositivo es una posible vía de ataque en la red y debe supervisarse y administrarse correctamente, incluso los dispositivos que son de propiedad personal pero que se usan para el trabajo. En esta misión crítica, se configura la protección para todos los Bring Your Own Devices (BYOD), que son los de mayor riesgo para la organización debido a que no se administran. Es importante proteger estos dispositivos lo antes posible.
+Cada dispositivo es una posible vía de ataque en la red y debe supervisarse y administrarse correctamente, incluso los dispositivos que son de propiedad personal pero que se usan para el trabajo. En esta misión crítica, se configura la protección para todos los Bring Your Own Devices (BYOD), que son los de mayor riesgo para la organización debido a que no se administran. Es importante ayudar a todos proteger sus dispositivos lo antes posible.
 
 Sus objetivos son los siguientes:
 
-- [Configurar MFA](m365bp-multifactor-authentication.md)
-- [Instalar aplicaciones de Office](m365bp-install-office-apps.md)
-- [Equipos Mac y equipos no administrados protegidos](m365bp-protect-pcs-macs.md)
+- [Hacer que todos configuren MFA](m365bp-multifactor-authentication.md).
+- [Obtener aplicaciones de Office instaladas en dispositivos](m365bp-install-office-apps.md).
+- [Dispositivos Windows y Mac no administrados protegidos](m365bp-protect-pcs-macs.md).
 
 Una vez que haya logrado estos objetivos, continúe con su [próxima misión](m365bp-protect-email-overview.md).
 
