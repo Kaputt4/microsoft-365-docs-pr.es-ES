@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628691"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662544"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -50,7 +50,7 @@ Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la 
 
 Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
-![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word.](../media/sensitivity-label-word.png)
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word". lightbox="../media/sensitivity-label-word.png"
 
 Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
@@ -301,7 +301,7 @@ En el cuadro desplegable se mostrarán los nombres de etiqueta de la selección,
 
 Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y las directivas aplicadas. Por ejemplo, este sitio se ha etiquetado como **confidencial** y la configuración de privacidad se ha establecido en **privada**:
 
-![Un sitio en el que se ha aplicado una etiqueta de confidencialidad.](../media/sensitivity-label-site.png)
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="Un sitio en el que se ha aplicado una etiqueta de confidencialidad." lightbox="../media/sensitivity-label-site.png":::
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
@@ -341,7 +341,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
 
-![La columna Confidencialidad en la página Sitios activos.](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
 
 Para obtener más información sobre la administración de sitios desde la página Sitios activos, incluido cómo agregar una columna, vea [Administrar sitios en el nuevo centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -451,7 +451,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 ## <a name="auditing-sensitivity-label-activities"></a>Auditar actividades de etiqueta de confidencialidad
 
 > [!IMPORTANT]
-> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios** para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento** descrito en esta sección, considere [ordenar las etiquetas](sensitivity-labels.md#label-priority-order-matters) antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
+> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios** para las que protegen los contenedores: debido a la auditoría y el correo electrónico **Desfase detectado de la confidencialidad del documento** descrito en esta sección, considere [ordenar las etiquetas](sensitivity-labels.md#label-priority-order-matters) antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
 
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
