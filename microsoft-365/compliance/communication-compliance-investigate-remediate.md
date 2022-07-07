@@ -20,16 +20,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 39a30b7fcc853ac96d14df4fa04f9e727f98628c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686039"
+ms.locfileid: "66687134"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
-Después de configurar las directivas de cumplimiento de comunicaciones, comenzará a recibir alertas en el portal de cumplimiento Microsoft Purview para los problemas de mensajes que coincidan con las condiciones de la directiva. Siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
+Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
 
 ## <a name="investigate-alerts"></a>Investigar alertas
 
