@@ -13,12 +13,12 @@ ms.collection:
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook mediante la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602146"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685687"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -50,6 +50,9 @@ En las organizaciones de Microsoft 365 con buzones de correo en buzones de Excha
 
 Vea este breve vídeo para obtener información sobre cómo puede usar Microsoft Defender para Office 365 para investigar fácilmente los envíos de los usuarios para determinar el contenido de un mensaje y responder al envío aplicando la acción de corrección adecuada. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
+> [!IMPORTANT]
+> Para ver los mensajes notificados a Microsoft en la pestaña <https://security.microsoft.com/reportsubmission>**Mensajes notificados** por el usuario en , no desactive la experiencia de informes integrada.
 
 ## <a name="use-the-report-message-feature"></a>Uso de la característica Mensaje de informe
 

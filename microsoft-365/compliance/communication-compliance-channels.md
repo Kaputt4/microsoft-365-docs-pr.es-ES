@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638684"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686471"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
@@ -59,7 +59,7 @@ Use las siguientes configuraciones de administración de grupos para supervisar 
 
 - **Para las comunicaciones de chat de Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
 - **Para las comunicaciones del canal de Teams:** Asigne todos los canales de Microsoft Teams o grupo de Microsoft 365 que quiera examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario supervisado dentro de una directiva y la dirección *de entrada* está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directivas (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de contenido inadecuado que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directivas para las conversaciones dentro del canal, aunque no estén supervisadas directamente en la directiva de contenido inadecuado. Las conversaciones de Teams entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de contenido inadecuado que incluye al usuario A. Para excluir a los miembros del canal de la supervisión cuando otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación *entrante* en la directiva de cumplimiento de comunicaciones aplicable.
-- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede detectar mensajes de chat para los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede detectar mensajes de chat para los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="exchange-email"></a>Correo electrónico de Exchange
 
@@ -73,6 +73,6 @@ Yammer debe estar en [modo nativo](/yammer/configure-your-yammer-network/overvie
 
 ## <a name="third-party-sources"></a>Orígenes de terceros.
 
-Puede examinar las comunicaciones en busca de datos importados en buzones de su organización de Microsoft 365 desde orígenes de terceros, como [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS y muchos otros. Para obtener una lista completa de los conectores admitidos en el cumplimiento de comunicaciones, consulte [Archivo de datos de terceros](archiving-third-party-data.md).
+Puede examinar las comunicaciones en busca de datos importados en buzones de su organización de Microsoft 365 desde orígenes de terceros, como [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS y muchos otros. Para obtener una lista completa de los conectores admitidos en el cumplimiento de comunicaciones, consulte [Archivo de datos de terceros](/microsoft-365/compliance/archiving-third-party-data).
 
 Debe configurar un conector de terceros para su organización de Microsoft 365 para poder asignar el conector a una directiva de cumplimiento de comunicaciones. La sección **Orígenes de terceros** del Asistente para directivas de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663116"
+ms.locfileid: "66685929"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium &mdash;, ciberseguridad para pequeñas empresas
 
@@ -51,7 +51,7 @@ En estas primeras misiones, inicia sesión y configura los muros de defensa inic
 
 ## <a name="train-your-team"></a>Entrenamiento de su equipo
 
-Hemos incluido un conjunto de misiones aquí con algunos objetivos que su equipo debe completar. Debe asegurarse de que los dispositivos del equipo están protegidos, así como de que el equipo está entrenado para usar el uso compartido de archivos y correo electrónico de forma segura, y para reconocer y notificar amenazas.
+Hemos incluido un conjunto de misiones aquí con algunos objetivos que su equipo (todos los empleados) deben completar. Debe asegurarse de que los dispositivos del equipo están protegidos y de que el equipo está entrenado para usar el uso compartido de archivos y correo electrónico de forma segura, y poder reconocer y notificar amenazas.
 
 1. [**Configurar dispositivos BYOD**](m365bp-protect-pcs-macs.md). En esta misión, configurará todos los dispositivos no administrados (BYOD) para que formen parte del ecosistema de forma segura.
 
@@ -83,7 +83,7 @@ Haga clic (o pulse) en la infografía para ver una versión más grande, o [desc
 
 Microsoft 365 Empresa Premium es una solución completa de seguridad y colaboración para pequeñas y medianas empresas. [Obtenga más información sobre las ventajas de Microsoft 365 Empresa Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora, vamos a [fortalecer su entorno contra los cyberattackers](m365bp-setup-overview.md)!
 

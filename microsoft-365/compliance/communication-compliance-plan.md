@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1efb3a1f4ea0f699e5dbb92c0ef2f4c6c56f8398
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630573"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686193"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
-Antes de empezar a trabajar con [el cumplimiento de la comunicación](communication-compliance.md) en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de la tecnología de la información y el cumplimiento. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones funcionen sin problemas y se alineen con los procedimientos recomendados para la solución.
+Antes de empezar a trabajar con [el cumplimiento de la comunicación](/microsoft-365/compliance/communication-compliance) en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de la tecnología de la información y el cumplimiento. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones funcionen sin problemas y se alineen con los procedimientos recomendados para la solución.
 
 Para obtener más información y una visión general del proceso de planeamiento para abordar las actividades de cumplimiento y riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -49,7 +49,7 @@ Para obtener información sobre la retirada de la supervisión en Office 365, co
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Trabajar con las partes interesadas de la organización
 
-Identifique las partes interesadas adecuadas de su organización para colaborar para realizar acciones en las alertas de cumplimiento de comunicaciones. Algunas partes interesadas recomendadas para considerar la posibilidad de incluir en el planeamiento inicial y el [flujo de trabajo de cumplimiento de comunicaciones](communication-compliance.md#workflow) de un extremo a otro son personas de las siguientes áreas de la organización:
+Identifique las partes interesadas adecuadas de su organización para colaborar para realizar acciones en las alertas de cumplimiento de comunicaciones. Algunas partes interesadas recomendadas para considerar la posibilidad de incluir en el planeamiento inicial y el [flujo de trabajo de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance#workflow) de un extremo a otro son personas de las siguientes áreas de la organización:
 
 - Tecnología de la información
 - Cumplimiento
@@ -100,7 +100,7 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 
 ### <a name="supervised-users"></a>Usuarios supervisados
 
-Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a quién se debe revisar las comunicaciones. En la directiva, las direcciones de correo electrónico de los usuarios identifican a las personas o grupos de personas que se van a supervisar. Algunos ejemplos de estos grupos son Grupos de Microsoft 365, listas de distribución basadas en Exchange, comunidades de Yammer y canales de Microsoft Teams. Asimismo, puede excluir usuarios o grupos específicos de la revisión con un grupo de exclusión específico o una lista de grupos. Para obtener más información sobre los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, consulte [Introducción al cumplimiento de comunicaciones](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance).
+Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a quién se debe revisar las comunicaciones. En la directiva, las direcciones de correo electrónico de los usuarios identifican a las personas o grupos de personas que se van a supervisar. Algunos ejemplos de estos grupos son Grupos de Microsoft 365, listas de distribución basadas en Exchange, comunidades de Yammer y canales de Microsoft Teams. Asimismo, puede excluir usuarios o grupos específicos de la revisión con un grupo de exclusión específico o una lista de grupos. Para obtener más información sobre los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, consulte [Introducción al cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-configure#step-3-optional-set-up-groups-for-communication-compliance).
 
 > [!IMPORTANT]
 > Los usuarios cubiertos por las directivas de cumplimiento de comunicaciones deben tener una licencia de Cumplimiento de Microsoft 365 E5, una licencia Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción Office 365 Enterprise E5. Si no tiene un plan Enterprise E5 existente y quiere probar el cumplimiento de la comunicación, puede [registrarse para obtener una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -133,15 +133,15 @@ Para los usuarios con una coincidencia de cumplimiento de comunicaciones, puede 
 
 ## <a name="plan-for-policies"></a>Planear directivas
 
-La creación de directivas de cumplimiento de comunicaciones es rápida y sencilla con las [plantillas predefinidas](communication-compliance-policies.md#policy-templates) para contenido inadecuado, información confidencial y cumplimiento normativo. Las directivas de cumplimiento de comunicaciones personalizadas permiten la flexibilidad para detectar e investigar problemas específicos de la organización y los requisitos.
+La creación de directivas de cumplimiento de comunicaciones es rápida y sencilla con las [plantillas predefinidas](/microsoft-365/compliance/communication-compliance-policies#policy-templates) para contenido inadecuado, información confidencial y cumplimiento normativo. Las directivas de cumplimiento de comunicaciones personalizadas permiten la flexibilidad para detectar e investigar problemas específicos de la organización y los requisitos.
 
 Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las siguientes áreas:
 
 - Considere la posibilidad de agregar todos los usuarios de la organización como en el ámbito de las directivas de cumplimiento de comunicaciones. La identificación de usuarios específicos como en el ámbito de las directivas individuales es útil en algunas circunstancias, pero la mayoría de las organizaciones deben incluir a todos los usuarios en las directivas de cumplimiento de comunicaciones optimizadas para la detección de acoso o discriminación.
 - Configure el porcentaje de comunicaciones que se van a revisar al 100 % para asegurarse de que las directivas detectan todos los problemas que preocupan en las comunicaciones de su organización.
-- Puede examinar las comunicaciones de [orígenes de terceros](communication-compliance-channels.md#third-party-sources) en busca de datos importados en buzones de su organización de Microsoft 365. Para incluir la revisión de las comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que los mensajes que cumplan las condiciones de la directiva se supervisen mediante la directiva de comunicación.
-- Las directivas pueden admitir lenguajes de supervisión distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [diccionario de palabras clave personalizadas](communication-compliance-policies.md#custom-keyword-dictionaries) de palabras ofensivas en el idioma que prefiera o cree su propio modelo de aprendizaje automático mediante [clasificadores entrenables](classifier-get-started-with.md) en Microsoft 365.
-- Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Detecte palabras clave específicas mediante [condiciones de directiva](communication-compliance-policies.md#conditional-settings) de cumplimiento de comunicaciones o detecte tipos específicos de información con [tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md).
+- Puede examinar las comunicaciones de [orígenes de terceros](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) en busca de datos importados en buzones de su organización de Microsoft 365. Para incluir la revisión de las comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que los mensajes que cumplan las condiciones de la directiva se supervisen mediante la directiva de comunicación.
+- Las directivas pueden admitir lenguajes de supervisión distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [diccionario de palabras clave personalizadas](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) de palabras ofensivas en el idioma que prefiera o cree su propio modelo de aprendizaje automático mediante [clasificadores entrenables](/microsoft-365/compliance/classifier-get-started-with) en Microsoft 365.
+- Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Detecte palabras clave específicas mediante [condiciones de directiva](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) de cumplimiento de comunicaciones o detecte tipos específicos de información con [tipos de información confidencial personalizados](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>Tutorial sobre la creación de una directiva de cumplimiento de comunicaciones
 
@@ -154,4 +154,4 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, consulte [Configuración del cumplimiento de comunicaciones](communication-compliance-configure.md) o consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para detectar contenido inadecuado en Microsoft Teams, Exchange Online y comunicaciones de Yammer.
+Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, consulte [Configuración del cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-configure) o consulte el [caso práctico de Contoso](/microsoft-365/compliance/communication-compliance-case-study) y cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para detectar contenido inadecuado en Microsoft Teams, Exchange Online y comunicaciones de Yammer.

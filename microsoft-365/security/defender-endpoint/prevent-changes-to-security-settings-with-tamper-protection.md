@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490561"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686149"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -65,6 +65,7 @@ Durante algunos tipos de ciberataques, los actores malintencionados intentan des
 - Eliminación de actualizaciones de inteligencia de seguridad
 - Deshabilitación de acciones automáticas en amenazas detectadas
 - Supresión de notificaciones en la aplicación Seguridad de Windows
+- Deshabilitación del examen de archivos y archivos de red
 
 ### <a name="how-it-works"></a>Cómo funciona
 
@@ -242,7 +243,7 @@ La protección contra alteraciones se integra con las funcionalidades [de admini
 
 Para más información sobre Threat & Vulnerability Management, consulte [Información del panel: Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 

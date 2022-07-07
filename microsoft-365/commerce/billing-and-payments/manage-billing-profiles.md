@@ -20,20 +20,20 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 92c8bd302d65bc9f7c9376ac148fd49a0ac18e04
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102556"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685885"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
-Un perfil de facturación contiene un método de pago, información de facturación y otras configuraciones de factura, como el número de pedido de compra y las preferencias de factura por correo electrónico. Usa un perfil de facturación para pagar los productos que compra a Microsoft. Se crea automáticamente un perfil de facturación cuando un usuario realiza una compra de autoservicio. Cada perfil de facturación se factura por separado.
+Un perfil de facturación contiene un método de pago, información de facturación y otras configuraciones de factura, como el número de pedido de compra y las preferencias de factura por correo electrónico. Usa un perfil de facturación para pagar los productos que compra a Microsoft. Los perfiles de facturación se crean automáticamente y cada uno se factura por separado. 
 
 > [!NOTE]
 >
-> Los perfiles de facturación no están disponibles para los clientes que compran productos y servicios desde Microsoft.com o en la página **Servicios de compra** de la Centro de administración de Microsoft 365.
+> No todas las cuentas tienen un perfil de facturación. Si no está seguro de si tiene uno, puede [ver una lista de los perfiles de facturación] (manage-billing-profiles.md#view-my-billing-profiles).
 
 ## <a name="what-are-billing-profile-roles"></a>¿Qué son los roles de perfil de facturación?
 

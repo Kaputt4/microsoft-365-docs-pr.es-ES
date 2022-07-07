@@ -1,7 +1,7 @@
 ---
-title: Descargar el analizador de cliente de Microsoft Defender para endpoint
-description: Obtenga información sobre cómo descargar microsoft defender para endpoint client analyzer en Windows, macOS o Linux.
-keywords: descargar, analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer
+title: Descarga del analizador de cliente de Microsoft Defender para punto de conexión
+description: Obtenga información sobre cómo descargar Microsoft Defender para punto de conexión Client Analyzer en Windows, macOS o Linux.
+keywords: download, client analyzer, troubleshooting sensor, analyzer, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,27 +16,28 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f209f3b91c0b11c72f12195c2d376116ceedef95
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316021"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686449"
 ---
-# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descargar el analizador de cliente de Microsoft Defender para endpoint
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descarga del analizador de cliente de Microsoft Defender para punto de conexión
 
 **Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Obtenga información sobre cómo descargar el analizador de cliente de Microsoft Defender para endpoint en sistemas operativos compatibles Windows, macOS y Linux.
+Obtenga información sobre cómo descargar el analizador de cliente Microsoft Defender para punto de conexión en sistemas operativos Windows, macOS y Linux compatibles.
 
-## <a name="download-client-analyzer-for-windows-os"></a>Descargar analizador de cliente para Windows sistema operativo
+## <a name="download-client-analyzer-for-windows-os"></a>Descarga del analizador de cliente para el sistema operativo Windows
 
 1. La última edición estable está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/MDEAnalyzer>
-2. La última edición de vista previa está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/BetaMDEAnalyzer>
+2. La última edición en versión preliminar está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/BetaMDEAnalyzer>
 
-## <a name="download-client-analyzer-for-macos-or-linux"></a>Descargar analizador de cliente para macOS o Linux
+## <a name="download-client-analyzer-for-macos-or-linux"></a>Descarga del analizador de cliente para macOS o Linux
 
-1. La última edición estable se integrará en el agente MDE for Endpoint. Asegúrese de que está ejecutando la última edición para [macOS](mac-whatsnew.md) o [Linux](linux-whatsnew.md).
+1. La última edición estable se integrará en el agente de MDE for Endpoint. Asegúrese de que está ejecutando la edición más reciente para [macOS](mac-whatsnew.md) o [Linux](linux-whatsnew.md).
 
-2. La última edición de vista previa está disponible para descarga directa desde la siguiente dirección URL: <https://aka.ms/XMDEClientAnalyzer>
+2. La última edición en versión preliminar está disponible para su descarga directa desde la siguiente dirección URL: <https://aka.ms/XMDEClientAnalyzer>

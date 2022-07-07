@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: e24401762906f66592d12efa42c5305a2c3d6d2e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626455"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686325"
 ---
 # <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
@@ -33,12 +33,12 @@ Siga estos pasos para configurar el cumplimiento de las comunicaciones para su o
 
 ![Pasos de cumplimiento de la comunicación de la solución de riesgo interno.](../media/ir-solution-cc-steps.png)
 
-1. Más información sobre [el cumplimiento de la comunicación](communication-compliance.md)
-2. Planear el [cumplimiento de comunicaciones](communication-compliance-plan.md) y [comprobar las licencias](communication-compliance-configure.md#subscriptions-and-licensing)
-3. Configuración [de requisitos previos](communication-compliance-configure.md#step-2-required-enable-the-audit-log) y [permisos](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-4. Creación y configuración de [directivas de cumplimiento de comunicaciones](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+1. Más información sobre [el cumplimiento de la comunicación](/microsoft-365/compliance/communication-compliance)
+2. Planear el [cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-plan) y [comprobar las licencias](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing)
+3. Configuración [de requisitos previos](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log) y [permisos](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance)
+4. Creación y configuración de [directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-configure#step-5-required-create-a-communication-compliance-policy)
 
 ## <a name="more-information-about-communication-compliance"></a>Más información sobre el cumplimiento de comunicaciones
 
-- [Investigar y corregir alertas](communication-compliance-investigate-remediate.md)
-- [Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para las comunicaciones de Microsoft Teams, Exchange y Yammer](communication-compliance-case-study.md)
+- [Investigar y corregir alertas](/microsoft-365/compliance/communication-compliance-investigate-remediate)
+- [Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para las comunicaciones de Microsoft Teams, Exchange y Yammer](/microsoft-365/compliance/communication-compliance-case-study)

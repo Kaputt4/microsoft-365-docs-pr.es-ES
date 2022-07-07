@@ -24,25 +24,25 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5a26aaa78b1a67acf3dd39ec3fbfa0b3fcb26b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 17b80d00cfb8c5855dda7d21371097dd413fb707
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639013"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685665"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de texto inapropiada para las comunicaciones de Microsoft Teams, Exchange y Yammer
 
-Cumplimiento de comunicaciones de Microsoft Purview ayuda a minimizar los riesgos de comunicación, ya que le ayuda a detectar, capturar y actuar en los mensajes con texto inadecuado en su organización. texto inadecuado puede incluir palabras soeces, amenazas, acoso e imágenes inapropiadas. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
+[Cumplimiento de comunicaciones de Microsoft Purview](/microsoft-365/compliance/communication-compliance) ayuda a minimizar los riesgos de comunicación, ya que le ayuda a detectar, capturar y actuar en los mensajes con texto inadecuado en su organización. texto inadecuado puede incluir palabras soeces, amenazas, acoso e imágenes inapropiadas. Las [directivas](/microsoft-365/compliance/communication-compliance-policies) predefinidas y personalizadas permiten examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden [investigar alertas](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) de correo electrónico, Microsoft Teams, Yammer o comunicaciones de terceros en su organización y tomar [las medidas de corrección](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
 
 Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para detectar texto inadecuado. Han estado usando Microsoft 365 principalmente para correo electrónico, Microsoft Teams y soporte técnico de Yammer para sus usuarios, pero tienen nuevos requisitos para aplicar la directiva de la empresa en torno al acoso en el lugar de trabajo. Los administradores de TI de Contoso y los especialistas en cumplimiento tienen una comprensión básica de los aspectos básicos de trabajar con Microsoft 365 y buscan instrucciones integrales para empezar a trabajar rápidamente con el cumplimiento de las comunicaciones.
 
 En este caso práctico se tratarán los conceptos básicos para configurar rápidamente una directiva de cumplimiento de comunicaciones para detectar texto inadecuado. Esta guía incluye:
 
-- Paso 1: planificación del cumplimiento de comunicaciones
-- Paso 2: Acceso al cumplimiento de la comunicación
-- Paso 3: configuración de los requisitos previos y creación de una directiva de cumplimiento de comunicaciones
-- Paso 4: investigación y corrección de alertas
+- [Paso 1: Planeamiento del cumplimiento de las comunicaciones](#step-1-planning-for-communication-compliance)
+- [Paso 2: Acceso al cumplimiento de la comunicación](#step-2-accessing-communication-compliance)
+- [Paso 3: Configuración de requisitos previos y creación de una directiva de cumplimiento de comunicaciones](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
+- [Paso 4: Investigar y corregir alertas](#step-4-investigate-and-remediate-alerts)
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Paso 1: Planeamiento del cumplimiento de las comunicaciones
 
@@ -71,9 +71,9 @@ A los usuarios incluidos en las directivas de cumplimiento de comunicaciones se 
 
 Los administradores de TI de Contoso realizan los pasos siguientes para comprobar la compatibilidad de licencias con Contoso:
 
-1. Los administradores de TI inician sesión en el Centro de administración de Microsoft 365 <https://admin.microsoft.com> y van a Centro de administración de Microsoft 365 ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**Licencias**</a> **de facturación** > .
+1. Los administradores de TI inician sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) y van a Centro de administración de Microsoft 365 ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**Licencias**</a> **de facturación** > .
 
-2. Aquí confirman que tienen una de las [opciones de licencia](communication-compliance-configure.md#subscriptions-and-licensing) que incluye compatibilidad con el cumplimiento de comunicaciones.
+2. Aquí confirman que tienen una de las [opciones de licencia](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) que incluye compatibilidad con el cumplimiento de comunicaciones.
 
 ![Licencias de cumplimiento de comunicaciones.](../media/communication-compliance-case-licenses.png)
 
@@ -110,7 +110,7 @@ Después de configurar los permisos para el cumplimiento de comunicaciones, los 
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>Empezando directamente desde la solución de cumplimiento de comunicaciones
 
-La forma más rápida de acceder a la solución es iniciar sesión directamente en la solución **de cumplimiento de comunicaciones** (<https://compliance.microsoft.com/supervisoryreview>). Con este vínculo, los administradores de TI de Contoso y los especialistas en cumplimiento se dirigirán a la página principal de cumplimiento de comunicaciones, donde puede revisar rápidamente el estado de las alertas y crear nuevas directivas a partir de las plantillas predefinidas.
+La forma más rápida de acceder a la solución es iniciar sesión directamente en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview). Con este vínculo, los administradores de TI de Contoso y los especialistas en cumplimiento se dirigirán a la página principal de cumplimiento de comunicaciones, donde puede revisar rápidamente el estado de las alertas y crear nuevas directivas a partir de las plantillas predefinidas.
 
 ![Inicio de cumplimiento de comunicaciones.](../media/communication-compliance-home.png)
 
@@ -128,7 +128,7 @@ Los administradores de TI y los especialistas en cumplimiento de Contoso tambié
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>A partir de la Centro de administración de Microsoft 365
 
-Para acceder al cumplimiento de la comunicación al iniciar desde el Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en el Centro de administración de Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com) y van a [ portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com)
+Para acceder al cumplimiento de la comunicación al iniciar desde el Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en la [Centro de administración de Microsoft 365](https://admin.microsoft.com) y van a [ portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com)
 
 ![Vínculo de cumplimiento de comunicaciones.](../media/communication-compliance-case-compliance-link.png)
 
@@ -152,7 +152,7 @@ Para empezar a trabajar con una directiva de cumplimiento de comunicaciones, hay
 
 El Cumplimiento de comunicaciones requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas a una directiva organizativa definida o en cualquier momento en que se produce un cambio en una directiva de cumplimiento de comunicaciones.
 
-Los administradores de TI de Contoso revisan y completan las [instrucciones paso a paso](turn-audit-log-search-on-or-off.md) para activar la auditoría. Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Los administradores de TI de Contoso solo tienen que realizar esta acción una vez.
+Los administradores de TI de Contoso revisan y completan las [instrucciones paso a paso](/microsoft-365/compliance/turn-audit-log-search-on-or-off) para activar la auditoría. Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Los administradores de TI de Contoso solo tienen que realizar esta acción una vez.
 
 ### <a name="configuring-yammer-tenant-for-native-mode"></a>Configuración del inquilino de Yammer para el modo nativo
 
@@ -166,12 +166,12 @@ Los especialistas en cumplimiento de Contoso quieren agregar todos los usuarios 
 
 Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo que realizan los pasos siguientes:
 
-1. Los administradores de TI de Contoso inician sesión en el Centro de administración de Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com) y van a grupos de grupos de <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Centro de administración de Microsoft 365 >.**</a> > 
+1. Los administradores de TI de Contoso inician sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) y van a grupos de <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Centro de administración de Microsoft 365 >.**</a> > 
 2. Seleccionan **Agregar un grupo** y completan el asistente para crear un grupo de *Microsoft 365* o un *grupo de distribución*.
 
     ![Grupos.](../media/communication-compliance-case-all-employees.png)
 
-3. Una vez creado el nuevo grupo, necesitan agregar todos los usuarios de Contoso al nuevo grupo. Abren el **Centro de administración de Exchange** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) y van a <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a> **Grupos de destinatarios** >  **del Centro** >  de administración de Exchange. Los administradores de TI de Contoso seleccionan el área Pertenencia y el nuevo grupo *Todos los empleados* que crearon y seleccionan el control **Editar** para agregar todos los usuarios de Contoso al nuevo grupo en el asistente.
+3. Una vez creado el nuevo grupo, necesitan agregar todos los usuarios de Contoso al nuevo grupo. Abren el [Centro de administración de Exchange](https://outlook.office365.com/ecp) y van a **Grupos de destinatarios** >  **del Centro** >  de administración de Exchange.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a> Los administradores de TI de Contoso seleccionan el área Pertenencia y el nuevo grupo *Todos los empleados* que crearon y seleccionan el control **Editar** para agregar todos los usuarios de Contoso al nuevo grupo en el asistente.
 
     ![Centro de administración de Exchange.](../media/communication-compliance-case-eac.png)
 
@@ -192,4 +192,4 @@ Una vez completados todos los requisitos previos, los administradores de TI y lo
 
 Ahora que se ha configurado la directiva de cumplimiento de comunicaciones para detectar texto inadecuado, el siguiente paso para los especialistas en cumplimiento de Contoso será investigar y corregir las alertas generadas por la directiva. La directiva tardará hasta una hora en procesar completamente las comunicaciones en todos los canales de origen de comunicación y que las alertas aparezcan en el **panel alertas**.
 
-Una vez generadas las alertas, los especialistas en cumplimiento de Contoso seguirán [las instrucciones del flujo de trabajo](communication-compliance-investigate-remediate.md) para investigar y corregir problemas de texto inadecuados.
+Una vez generadas las alertas, los especialistas en cumplimiento de Contoso seguirán [las instrucciones del flujo de trabajo](/microsoft-365/compliance/communication-compliance-investigate-remediate) para investigar y corregir problemas de texto inadecuados.

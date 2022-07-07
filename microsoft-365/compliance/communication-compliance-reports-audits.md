@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630505"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686405"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
 
@@ -141,7 +141,7 @@ Los informes de detalles del mensaje contienen la siguiente información para ca
 En algunos casos, debe proporcionar información a los auditores normativos o de cumplimiento para demostrar la supervisión de las actividades y las comunicaciones del usuario. Esta información puede ser un resumen de todas las actividades asociadas a una directiva de organización definida o en cualquier momento en que cambie una directiva de cumplimiento de comunicaciones. Las directivas de cumplimiento de comunicaciones tienen seguimientos de auditoría integrados para una preparación completa para las auditorías internas o externas. Las directivas de comunicación capturan los historiales de auditoría detallados de cada acción de creación, edición y eliminación para proporcionar una prueba de los procedimientos de supervisión.
 
 > [!IMPORTANT]
-> La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de la comunicación. Para habilitar la auditoría, consulte [Habilitación del registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, estos eventos pueden tardar hasta 48 horas en verse en las directivas de cumplimiento de comunicaciones.
+> La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de la comunicación. Para habilitar la auditoría, consulte [Habilitación del registro de auditoría](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, estos eventos pueden tardar hasta 48 horas en verse en las directivas de cumplimiento de comunicaciones.
 
 Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
@@ -161,7 +161,7 @@ Para ver las actividades de revisión de cumplimiento de comunicaciones de una d
 | **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y separan mediante delimitadores de comas. |
 
-También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Para más información sobre las directivas de retención de registros de auditoría, consulte [Administración de directivas de retención de registros de auditoría](audit-log-retention-policies.md).
+También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Para más información sobre las directivas de retención de registros de auditoría, consulte [Administración de directivas de retención de registros de auditoría](/microsoft-365/compliance/audit-log-retention-policies).
 
 Por ejemplo, en el ejemplo siguiente se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas):
 

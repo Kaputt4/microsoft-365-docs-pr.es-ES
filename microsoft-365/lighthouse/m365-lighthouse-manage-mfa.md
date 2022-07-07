@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la autenticación multifactor.
-ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d7874988f4316015afb58a40651bc6e85cf88f2a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017728"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686215"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Administración de la autenticación multifactor en Microsoft 365 Lighthouse
 
-Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y los usuarios que aún no se han registrado para MFA.
+Multi-Factor Authentication (MFA) de Azure Active Directory (Azure AD) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y los usuarios que aún no se han registrado para MFA.
 
 Para los clientes de pequeñas y medianas empresas (SMB), Microsoft recomienda habilitar [los valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) como mínimo. Para escenarios más complejos, puede usar [el acceso condicional](/azure/active-directory/conditional-access/overview) para configurar directivas específicas.
 
@@ -40,29 +40,32 @@ Se deben cumplir las condiciones siguientes antes de que aparezca un inquilino e
 
 ## <a name="enable-mfa-for-a-tenant"></a>Habilitación de MFA para un inquilino
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Autenticación **multifactor** **de usuarios** > .
 
-2. Seleccione la pestaña **Autenticación multifactor** .
+2. En la pestaña **Autenticación multifactor** , busque un inquilino que no use MFA y, a continuación, seleccione ese inquilino para abrir el panel de detalles del inquilino.
 
-3. En la lista de inquilinos, seleccione un inquilino para abrir el panel de detalles.
+3. En la pestaña **Habilitación de MFA** , en **MFA con valores predeterminados de seguridad**, seleccione **Habilitar valores predeterminados de seguridad**.
 
-4. En la pestaña **Habilitación de MFA** , en **MFA con valores predeterminados de seguridad**, seleccione **Habilitar valores predeterminados de seguridad**.
-
-5. Seleccione **Guardar cambios**.
+4. Seleccione **Guardar cambios**.
 
 Para habilitar MFA a través del acceso condicional, consulte [Tutorial: Protección de eventos de inicio de sesión de usuario con Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>Notificar a los usuarios que no están registrados para MFA
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Autenticación **multifactor** **de usuarios** > .
 
-2. Seleccione la pestaña **Autenticación multifactor** .
+2. En la pestaña **Autenticación multifactor** , busque inquilinos con usuarios no registrados para MFA y, a continuación, seleccione el inquilino para abrir el panel de detalles del inquilino.
 
-3. En la lista de inquilinos, seleccione un inquilino para abrir el panel de detalles.
+3. Seleccione **Usuarios no registrados para la pestaña MFA** .
 
-4. En la pestaña **Usuario no registrado para MFA** , seleccione los usuarios a los que desea notificar.
+4. Seleccione todos los demás usuarios de la lista que necesiten registrarse para MFA y, a continuación, seleccione **Crear correo electrónico**.
 
-5. Seleccione **Crear correo electrónico**.
+> [!TIP]
+> Si alguna de las cuentas de usuario de la lista son cuentas de acceso de emergencia o cuentas de servicio para las que no desea requerir MFA, seleccione esas cuentas de usuario y, a continuación, seleccione **Excluir usuarios**. Las cuentas de usuario excluidas ya no aparecerán en la lista de usuarios no registrados para MFA.
+
+> [!NOTE]
+> Si aparecen cuentas de buzón de correo compartidas o cuentas de usuario inactivas en la lista de usuarios no registrados para MFA, se recomienda bloquear el inicio de sesión de esas cuentas para que ya no aparezcan en esta lista.
+
 
 Lighthouse abre el cliente de correo electrónico predeterminado y rellena previamente el mensaje de correo electrónico con instrucciones para registrarse en MFA. Todos los usuarios seleccionados se incluirán en la línea BCC. Si prefiere enviar un correo electrónico individualmente a los usuarios, puede seleccionar el icono de correo electrónico junto al nombre de usuario.
 
@@ -74,7 +77,7 @@ Una vez habilitada MFA, puede habilitar el autoservicio de restablecimiento de c
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Planear una implementación Azure Active Directory Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (artículo)\
+[Planeamiento de una implementación de Azure Active Directory Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (artículo)\
 [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (artículo)\
 [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) (artículo)\
 [Obtenga información sobre cómo convertir usuarios de MFA por usuario a acceso condicional](/azure/active-directory/authentication/howto-mfa-getstarted#convert-users-from-per-user-mfa-to-conditional-access-based-mfa) (artículo)
