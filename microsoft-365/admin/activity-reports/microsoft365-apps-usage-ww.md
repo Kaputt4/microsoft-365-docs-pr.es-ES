@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso de Aplicaciones Microsoft 365 para ver la actividad del usuario con licencia en todas las aplicaciones y cómo se usan las aplicaciones entre plataformas.
-ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 0a3545c71627c666249b91f2080603ea32ae30f0
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467534"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662732"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>informes de Microsoft 365 en el centro de administración: uso de Aplicaciones Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso Aplicaciones Microsoft 365
 
-En el panel informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
+En el panel Informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
 
 Por ejemplo, puede comprender la actividad de cada usuario con licencia para usar Aplicaciones Microsoft 365 aplicaciones examinando su actividad en todas las aplicaciones y cómo se usan en todas las plataformas.
 
@@ -46,14 +46,30 @@ Puede obtener una vista de la actividad de Aplicaciones Microsoft 365 del usuari
 > [!div class="mx-imgBorder"]
 > ![Aplicaciones Microsoft 365 informe de uso.](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|Elemento|Descripción|
+El informe de **uso de Aplicaciones Microsoft 365** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+
+Los datos de cada informe suelen cubrirse hasta los últimos dos días. Cada seis días, actualizaremos el informe con actualizaciones secundarias para garantizar la calidad de los datos.
+
+La vista **Usuarios** muestra la tendencia en el número de usuarios activos para cada aplicación: Outlook, Word, Excel, PowerPoint, OneNote y Teams. Los "usuarios activos" son los que realizan cualquier acción intencionada dentro de estas aplicaciones.
+
+La vista **Plataformas** muestra la tendencia de los usuarios activos en todas las aplicaciones de cada plataforma: Windows, Mac, Web y Mobile.
+
+En el gráfico Usuarios, el eje Y es el número de usuarios activos únicos para la aplicación correspondiente. En el gráfico Plataformas, el eje Y es el número de usuarios únicos para la plataforma correspondiente. El eje X de ambos gráficos es la fecha en la que se usó una aplicación en una plataforma determinada.
+
+Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Por ejemplo, en el gráfico Usuarios, seleccione Outlook, Word, Excel, PowerPoint, OneDrive o Teams para ver solo la información relacionada con cada uno de ellos. Cambiar esta selección no cambia la información de la tabla de cuadrícula debajo de ella.
+
+En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.
+
+
+|Item|Descripción|
 |---|---|
-|1.|El informe de **uso de Aplicaciones Microsoft 365** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).|
-|2.|Los datos de cada informe suelen cubrirse hasta los últimos dos días. Cada seis días, actualizaremos el informe con actualizaciones secundarias para garantizar la calidad de los datos.|
-|3.|La vista **Usuarios** muestra la tendencia en el número de usuarios activos para cada aplicación: Outlook, Word, Excel, PowerPoint, OneNote y Teams. Los "usuarios activos" son los que realizan cualquier acción intencionada dentro de estas aplicaciones.|
-|4.|La vista **Plataformas** muestra la tendencia de los usuarios activos en todas las aplicaciones de cada plataforma: Windows, Mac, Web y Mobile.|
-|5.|En el gráfico **Usuarios** , el eje Y es el número de usuarios activos únicos para la aplicación correspondiente. En el gráfico **Plataformas** , el eje Y es el número de usuarios únicos para la plataforma correspondiente. El eje X de ambos gráficos es la fecha en la que se usó una aplicación en una plataforma determinada.|
- 6.|Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Por ejemplo, en el gráfico **Usuarios**, seleccione Outlook, Word, Excel, PowerPoint, OneDrive o Teams para ver solo la información relacionada con cada una de ellas. Cambiar esta selección no cambia la información de la tabla de cuadrícula debajo de ella.|
-|7.|En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.  <br/><br/>**Nombre de usuario** es la dirección de correo electrónico del usuario que realizó la actividad en Microsoft Apps.<br><br/>**La última fecha de activación (UTC)** es la fecha más reciente en la que el usuario activó su suscripción Aplicaciones Microsoft 365 en un equipo o inicia sesión en un equipo compartido e inicia la aplicación con su cuenta. <br/><br/>**La fecha de la última actividad (UTC)** es la última fecha en que el usuario realizó una actividad intencionada. Para ver las actividades realizadas en una fecha específica, seleccione la fecha directamente en el gráfico.<br/><br/>Las otras columnas identifican si el usuario estaba activo en esa plataforma para esa aplicación (dentro de Aplicaciones Microsoft 365) en el período seleccionado.|
-|8.|Seleccione el icono **Elegir columnas** para agregar o quitar columnas del informe.|
-|9.|También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Esto exporta datos para todos los usuarios y le permite realizar agregaciones, ordenaciones y filtrados sencillos para un análisis posterior. Si tiene menos de 100 usuarios, puede ordenar y filtrar dentro de la tabla en el propio informe. Si tiene más de 100 usuarios, para filtrar y ordenar, deberá exportar los datos.|
+|Nombre de usuario|Dirección de correo electrónico del usuario que realizó la actividad en Microsoft Apps.|
+|Última fecha de activación (UTC)|La última fecha en la que el usuario activó su suscripción Aplicaciones Microsoft 365 en un equipo o inicia sesión en un equipo compartido e inicia la aplicación con su cuenta.|
+|Fecha de la última actividad (UTC)|La última fecha en que el usuario realizó una actividad intencionada. Para ver las actividades realizadas en una fecha específica, seleccione la fecha directamente en el gráfico.|
+
+
+Las otras columnas identifican si el usuario estaba activo en esa plataforma para esa aplicación (dentro de Aplicaciones Microsoft 365) en el período seleccionado.
+
+Seleccione el icono **Elegir columnas** para agregar o quitar columnas del informe.
+
+También puede exportar los datos del informe a un archivo de excel .csv seleccionando el vínculo **Exportar** . Esto exporta datos para todos los usuarios y le permite realizar agregaciones, ordenaciones y filtrados sencillos para un análisis posterior. 

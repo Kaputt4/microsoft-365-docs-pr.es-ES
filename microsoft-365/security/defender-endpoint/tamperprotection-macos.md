@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a89d90f462528631d97c4f2e81c24f6ffbcd4189
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8294d5e3ba9faf240d438f3e8c1c3df3a66b414
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573934"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662239"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de la configuración de seguridad de macOS con protección contra alteraciones
 
@@ -76,8 +76,9 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Versiones de macOS compatibles: Monterey (12), Big Sur (11), Catalina (10.15+)
-- Versión mínima necesaria para Defender para punto de conexión: 101.49.25
+- Versiones de macOS compatibles: Monterey (12), Big Sur (11), Catalina (10.15+).
+- Versión mínima necesaria para Defender para punto de conexión: 101.70.19.
+- Debe estar en un canal de actualización que no sea de producción ([versión preliminar o beta](/deployoffice/office-insider/deploy/microsoft-autoupdate)), mientras que la característica Protección contra alteraciones está en versión preliminar. Si está en el canal de producción, se omitirá el modo de protección contra alteraciones configurado.
 
 **Configuración muy recomendada:**
 
@@ -94,9 +95,49 @@ Hay varias maneras de configurar la protección contra alteraciones:
 
 ### <a name="before-you-begin"></a>Antes de empezar
 
-Compruebe que "tamper_protection" está establecido en "disabled" para observar el cambio de estado.
+Compruebe que "tamper_protection" está establecido en "disabled" o "audit" para observar el cambio de estado.
+Además, asegúrese de que "release_ring" no notifica "Producción".
 
-![Imagen de la línea de comandos con protección contra alteraciones en modo de deshabilitación](images/verify-tp.png)
+```bash
+mdatp health
+```
+
+```console
+healthy                                     : true
+health_issues                               : []
+licensed                                    : true
+engine_version                              : "1.1.19300.3"
+app_version                                 : "1.0.0"
+org_id                                      : "..."
+log_level                                   : "info"
+machine_guid                                : "..."
+release_ring                                : "InsiderFast"
+product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+cloud_enabled                               : true
+cloud_automatic_sample_submission_consent   : "safe"
+cloud_diagnostic_enabled                    : false
+passive_mode_enabled                        : false
+real_time_protection_enabled                : true
+real_time_protection_available              : true
+real_time_protection_subsystem              : "endpoint_security_extension"
+network_events_subsystem                    : "network_filter_extension"
+device_control_enforcement_level            : "audit"
+tamper_protection                           : "audit"
+automatic_definition_update_enabled         : true
+definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+definitions_updated_minutes_ago             : 5
+definitions_version                         : "1.369.896.0"
+definitions_status                          : "up_to_date"
+edr_early_preview_enabled                   : "disabled"
+edr_device_tags                             : []
+edr_group_ids                               : ""
+edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+conflicting_applications                    : []
+network_protection_status                   : "stopped"
+data_loss_prevention_status                 : "disabled"
+full_disk_access_enabled                    : true
+```
 
 ### <a name="manual-configuration"></a>Configuración manual
 
@@ -113,7 +154,46 @@ Compruebe que "tamper_protection" está establecido en "disabled" para observar 
 
 2. Compruebe el resultado.
 
-    ![Imagen del resultado del comando de configuración manual](images/result-manual-config.png)
+  ```bash
+  mdatp health
+  ```
+
+  ```console
+  healthy                                     : true
+  health_issues                               : []
+  licensed                                    : true
+  engine_version                              : "1.1.19300.3"
+  app_version                                 : "1.0.0"
+  org_id                                      : "..."
+  log_level                                   : "info"
+  machine_guid                                : "..."
+  release_ring                                : "InsiderFast"
+  product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+  cloud_enabled                               : true
+  cloud_automatic_sample_submission_consent   : "safe"
+  cloud_diagnostic_enabled                    : false
+  passive_mode_enabled                        : false
+  real_time_protection_enabled                : true
+  real_time_protection_available              : true
+  real_time_protection_subsystem              : "endpoint_security_extension"
+  network_events_subsystem                    : "network_filter_extension"
+  device_control_enforcement_level            : "audit"
+  tamper_protection                           : "block"
+  automatic_definition_update_enabled         : true
+  definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+  definitions_updated_minutes_ago             : 5
+  definitions_version                         : "1.369.896.0"
+  definitions_status                          : "up_to_date"
+  edr_early_preview_enabled                   : "disabled"
+  edr_device_tags                             : []
+  edr_group_ids                               : ""
+  edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+  edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+  conflicting_applications                    : []
+  network_protection_status                   : "stopped"
+  data_loss_prevention_status                 : "disabled"
+  full_disk_access_enabled                    : true
+  ```
 
 Observe que el "tamper_protection" ahora está establecido en "block".
 
@@ -210,9 +290,7 @@ El resultado mostrará "bloquear" si la protección contra alteraciones está ac
 
 ![Imagen de la protección contra alteraciones en modo de bloque](images/tp-block-mode.png)
 
-También puede ejecutar full `mdatp health` y buscar el "tamper_protection" en la salida:
-
-![Imagen de la protección contra alteraciones cuando está en modo de bloque](images/health-tp-audit.png)
+También puede ejecutar full `mdatp health` y buscar el "tamper_protection" en la salida.
 
 ## <a name="verify-tamper-protection-preventive-capabilities"></a>Comprobación de las funcionalidades preventivas de protección contra alteraciones
 

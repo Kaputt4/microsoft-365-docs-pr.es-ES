@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 8cf11c82abf23d8041a8a7453e3e58082777a040
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: c33c0d9da44aa40c31c7f59de8304cc759fc0be2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089282"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662234"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -31,6 +31,14 @@ ms.locfileid: "66089282"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1017118-20122052171180"></a>101.71.18 (20.122052.17118.0)
+
+- `mdatp connectivity test` se extendió con una dirección URL adicional que el producto requiere para funcionar correctamente. La nueva dirección URL es [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Hasta ahora, el nivel de registro del producto no se conservaba entre los reinicios del producto. A partir de esta versión, hay un nuevo modificador de la herramienta de línea de comandos que conserva el nivel de registro. El nuevo comando es `mdatp log level persist --level <level>`.
+- Se ha corregido un error en el paquete de instalación del producto que, en raras ocasiones, podía provocar una pérdida del estado del producto durante las actualizaciones.
+- Mejoras de rendimiento para operaciones de copia de archivos y aplicaciones macOS integradas
+- Correcciones de errores
 
 ## <a name="1017019-20122051170190"></a>101.70.19 (20.122051.17019.0)
 
@@ -86,7 +94,7 @@ ms.locfileid: "66089282"
   - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` a `/Applications/Microsoft Defender.app`.
   - Dentro de la experiencia del usuario, las apariciones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
 - Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Microsoft Defender para punto de conexión para Mac
-- Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que el paquete de instalación no se podía abrir debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con ciertas características. Aunque parece que este cambio del sistema operativo no está incluido en la versión final de macOS 12.2, es probable que se vuelva a introducir en una versión futura macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para punto de conexión en su consola de administración a esta versión del producto (o a una versión más reciente).
+- Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que no se pudo abrir el paquete de instalación debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con ciertas características. Aunque parece que este cambio del sistema operativo no está incluido en la versión final de macOS 12.2, es probable que se vuelva a introducir en una versión futura de macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para punto de conexión en su consola de administración a esta versión del producto (o a una versión más reciente).
 - Se ha corregido un problema detectado en algunos dispositivos M1 en los que el producto se bloqueaba con definiciones antimalware no válidas y no se podía actualizar correctamente a un conjunto de definiciones de trabajo.
 - `mdatp health`la salida se ha ampliado con un atributo adicional llamado `full_disk_access_enabled` que se puede usar para determinar si se ha concedido el acceso completo al disco a todos los componentes de Microsoft Defender para punto de conexión para Mac.
 - Mejoras de rendimiento & correcciones de errores
@@ -108,7 +116,7 @@ ms.locfileid: "66089282"
 
 ## <a name="1014384-20121082143840"></a>101.43.84 (20.121082.14384.0)
 
-- Compilación de candidatos para macOS 12 (Monterrey)
+- Compilación candidata para macOS 12 (Monterey)
 - Correcciones de errores
 
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
@@ -138,8 +146,8 @@ ms.locfileid: "66089282"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
-- [El control de dispositivo para macOS](mac-device-control-overview.md) ahora está en disponibilidad general
-- Se ha corregido un problema por el que no se podía iniciar un examen rápido desde el menú de estado de macOS 11 (Big Sur)
+- [El control de dispositivo para macOS](mac-device-control-overview.md) está ahora en disponibilidad general
+- Se ha corregido un problema por el que no se podía iniciar un examen rápido desde el menú de estado en macOS 11 (Big Sur)
 - Otras correcciones de errores
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
@@ -190,13 +198,13 @@ ms.locfileid: "66089282"
 
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
-- Se ha mejorado la confiabilidad del agente al ejecutarse en macOS 11 Big Sur
+- Se ha mejorado la confiabilidad del agente cuando se ejecuta en macOS 11 Big Sur
 - Se ha agregado un nuevo modificador de línea de comandos (`--ignore-exclusions`) para omitir las exclusiones de AV durante exámenes personalizados (`mdatp scan custom`)
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
-- Condiciones eliminadas cuando Microsoft Defender para punto de conexión desencadenaba un error de macOS 11 (Big Sur) que se manifiesta en un pánico del kernel
+- Se quitaron las condiciones cuando Microsoft Defender para punto de conexión desencadenaba un error de macOS 11 (Big Sur) que se manifiesta en un pánico del kernel.
 - Se ha corregido una pérdida de memoria en la extensión del sistema endpoint Security al ejecutarse en mac 11 (Big Sur)
 - Correcciones de errores
 
@@ -214,7 +222,7 @@ ms.locfileid: "66089282"
 
 - Esta versión del producto se ha validado en macOS Big Sur 11 beta 9
 
-- La nueva sintaxis de la `mdatp` herramienta de línea de comandos es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, vea [Recursos para Microsoft Defender para punto de conexión en macOS](mac-resources.md#configuring-from-the-command-line)
+- La nueva sintaxis de la `mdatp` herramienta de línea de comandos es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, consulte [Recursos para Microsoft Defender para punto de conexión en macOS](mac-resources.md#configuring-from-the-command-line).
 
   > [!NOTE]
   > La antigua sintaxis de la herramienta de línea de comandos se quitará del producto el **1 de enero de 2021**.
@@ -230,7 +238,7 @@ ms.locfileid: "66089282"
 
 ## <a name="1010723"></a>101.07.23
 
-- Se han agregado nuevos campos a la salida de `mdatp --health` para comprobar el estado del modo pasivo y el identificador de grupo EDR
+- Se han agregado nuevos campos a la salida de `mdatp --health` para comprobar el estado del modo pasivo y el identificador de grupo de EDR.
 
   > [!NOTE]
   > `mdatp --health` se reemplazará por `mdatp health` en una actualización de producto futura.
@@ -273,7 +281,7 @@ ms.locfileid: "66089282"
 
 - Experiencia [mejorada de incorporación de productos para usuarios Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - [Las exclusiones antivirus ahora admiten caracteres comodín](mac-exclusions.md#supported-exclusion-types)
-- Se ha agregado la capacidad de desencadenar exámenes antivirus desde el menú contextual macOS. Ahora puede hacer clic con el botón derecho en un archivo o una carpeta en Finder y seleccionar **Examinar con Microsoft Defender para punto de conexión**
+- Se ha agregado la capacidad de desencadenar exámenes antivirus desde el menú contextual de macOS. Ahora puede hacer clic con el botón derecho en un archivo o una carpeta en Finder y seleccionar **Examinar con Microsoft Defender para punto de conexión**
 - Ahora el instalador no permite explícitamente las degradaciones de productos en contexto. Si necesita cambiar a una versión anterior, desinstale primero la versión existente y vuelva a configurar el dispositivo.
 - Otras mejoras de rendimiento & correcciones de errores
 
@@ -294,9 +302,9 @@ ms.locfileid: "66089282"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Para garantizar la protección más completa para los dispositivos macOS y en consonancia con apple que detiene la entrega de macOS actualizaciones de seguridad nativas en versiones del sistema operativo anteriores a [actual - 2], la implementación y las actualizaciones de MDATP para Mac ya no se admitirán en macOS Sierra [10.12]. Las actualizaciones y mejoras de MDATP para Mac se entregarán a los dispositivos que ejecutan las versiones Catalina [10.15], Mojave [10.14], y High Sierra [10.13].
+> Para garantizar la protección más completa para los dispositivos macOS y en consonancia con apple que detiene la entrega de actualizaciones de seguridad nativas de macOS a versiones del sistema operativo anteriores a [actual - 2], la implementación y las actualizaciones de MDATP para Mac ya no se admitirán en macOS Sierra [10.12]. Las actualizaciones y mejoras de MDATP para Mac se entregarán a los dispositivos que ejecutan las versiones Catalina [10.15], Mojave [10.14], y High Sierra [10.13].
 >
-> Si ya tiene MDATP para Mac implementado en los dispositivos Sierra [10.12], actualice a la versión de macOS más reciente para eliminar los riesgos de pérdida de protección.
+> Si ya tiene MDATP para Mac implementado en los dispositivos Sierra [10.12], actualice a la versión más reciente de macOS para eliminar los riesgos de pérdida de protección.
 
 - Mejoras de rendimiento & correcciones de errores
 

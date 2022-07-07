@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de informar a Microsoft de mensajes correctos y incorrectos, direcciones URL, datos adjuntos de correo electrónico y administradores.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 071e6329e16ecfce0e55649869d93ff31dfc9664
-ms.sourcegitcommit: 4a1efedd15146744511378a44a307d44b16f3fb5
+ms.openlocfilehash: 29fd6b74901c6ad85d1ece759245f1b85e672a23
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66644012"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663424"
 ---
 # <a name="report-items-to-microsoft"></a>Informar de elementos a Microsoft
 
@@ -34,16 +34,19 @@ ms.locfileid: "66644012"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones de correo, los usuarios y administradores tienen varios métodos diferentes para notificar mensajes de correo electrónico, direcciones URL y datos adjuntos de correo electrónico a Microsoft. 
-
+ 
 Además, las organizaciones de Microsoft 365 con administradores de Microsoft Defender para punto de conexión también tienen varios métodos para informar de archivos.
+
+Vea este vídeo que muestra más información sobre la experiencia de envíos unificados.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
 
 |Método|Descripción|
 |---|---|
-|[Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft](admin-submission.md)|Método de informes recomendado para administradores de organizaciones con buzones de Exchange Online (no disponible en EOP independiente).|
+|[Uso del portal envíos para enviar datos adjuntos sospechosos de correo no deseado, correo no deseado, direcciones URL y correo electrónico a Microsoft](admin-submission.md)|Método de informes recomendado para administradores de organizaciones con buzones de Exchange Online (no disponible en EOP independiente).|
 |[Habilitar los complementos Informar de mensajes o Informar de phishing](enable-the-report-message-add-in.md)|Funciona con Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App). <br/><br/> En función de la suscripción, los mensajes que los usuarios notificaron con los complementos están disponibles en [el portal de envíos de Administración](admin-submission.md), [los resultados de investigación y respuesta automatizadas (AIR](air-view-investigation-results.md)), el [informe de mensajes notificados](view-email-security-reports.md#user-reported-messages-report) por el usuario y [el Explorador](threat-explorer-views.md#email--submissions). <br/><br/> Puede configurar los mensajes notificados para copiarlos o redirigirlos a un buzón que especifique. Para obtener más información, consulte [Directivas de envío de usuarios](user-submission.md).
 |[Informar de falsos positivos y falsos negativos en Outlook](report-false-positives-and-false-negatives.md)|Envíe falsos positivos (correo electrónico correcto que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phishing que se entregó en la bandeja de entrada) a Exchange Online Protection (EOP) mediante la característica Notificar mensaje.|
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifique cuando los usuarios informen de mensajes a Microsoft para su análisis.|
-|[Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el sitio de Inteligencia de seguridad de Microsoft para enviar datos adjuntos y otros archivos.|
+|[Envío de archivos sospechosos a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el sitio de Inteligencia de seguridad de Microsoft para enviar datos adjuntos y otros archivos.|
 
 > [!NOTE]
 > Al informar de una entidad de correo electrónico a Microsoft, hacemos una copia de todo lo asociado al correo electrónico para incluirla en nuestras revisiones continuas del algoritmo. Esta copia incluye el contenido del correo electrónico, los encabezados de correo electrónico y los datos relacionados sobre el enrutamiento de correo electrónico. También se incluyen los datos adjuntos del mensaje.

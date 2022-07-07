@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe de Grupos de Microsoft 365 para obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
-ms.openlocfilehash: ec9f544214345de0cacd00580772867bd1e5312d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dce585ddb496be67b1045baa4b7cea0dc3b7fc24
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486283"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662688"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Informes de Microsoft 365 en el Centro de administración: grupos de Microsoft 365
 
@@ -48,7 +48,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
 :::image type="content" alt-text="Office 365 informe de actividad de grupos: elija columnas." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-También puede exportar los datos del informe a un archivo de excel .csv seleccionando el vínculo **Exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para filtrar y ordenar, deberá exportar los datos.
+También puede exportar los datos del informe a un archivo de excel .csv seleccionando el vínculo **Exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. 
 
 El informe de **grupos** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
