@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629957"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686237"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -63,7 +63,7 @@ Antes de empezar, debe configurar la configuración de DLP.
 
 El escaneo y la protección de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube de Microsoft Purview, más avanzado, escanee elementos, los clasifique y devuelva los resultados a la máquina local. Esto significa que puede aprovechar las técnicas de clasificación, como la clasificación [de coincidencia de datos exacta](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) y las [entidades con nombre](named-entities-learn.md) en las directivas DLP.
 
-Cuando se activa la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso de ancho de banda supone un problema, puede establecer un límite en lo que concierne a cuánto se puede usar en un período de 24 horas. El límite se define en la configuración de DLP de punto de conexión y se aplica por dispositivo. Si establece un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube. En este momento, la clasificación de datos continúa localmente en el dispositivo, pero la clasificación con coincidencia exacta de datos, entidades con nombre y clasificadores capacitados no está disponible. Cuando el uso del ancho de banda acumulado se encuentre por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
+Cuando se activa la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso de ancho de banda supone un problema, puede establecer un límite en lo que concierne a cuánto se puede usar en un período de 24 horas. El límite se define en la configuración de DLP de punto de conexión y se aplica por dispositivo. Si establece un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube. En este momento, la clasificación de datos continúa localmente en el dispositivo, pero la clasificación con coincidencia exacta de datos, entidades con nombre y clasificadores capacitados no está disponible. Cuando el uso del ancho de banda acumulado se encuentra por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
 
 Si el uso del ancho de banda no supone un problema, seleccione **Sin límite** para permitir el uso ilimitado del ancho de banda.
 
@@ -251,9 +251,12 @@ Usar el formato FQDN del dominio de servicio sin el final `.`
 
 Por ejemplo:
 
- `www.contoso.com` 
 
-No se admiten los caracteres comodín.
+| Input | Comportamiento de coincidencia de direcciones URL |
+|---|---|
+| **CONTOSO.COM** |**Coincide con el nombre de dominio especificado y cualquier subsitio**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**No coincide con subdominios o dominios no especificados**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**Coincide con el nombre de dominio especificado, cualquier subdominio y cualquier sitio**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc.) <p>**No coincide con dominios no especificados** <p>*://anysubdomain.contoso.com.AU/ |
+| **`www.contoso.com`** |**Coincide con el nombre de dominio especificado**: <p>`www.contoso.com` <p>**No coincide con dominios o subdominios no especificados** <p>*://anysubdomain.contoso.com/, en este caso, tiene que colocar el propio nombre de dominio FQDN `www.contoso.com`|
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
 
