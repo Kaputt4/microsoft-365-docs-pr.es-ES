@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 48affe223db5f2c1a63246b7d4ff473188cabd63
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640928"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662348"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -148,7 +148,7 @@ Para el etiquetado integrado en las aplicaciones de Office, compruebe las[ versi
 
 El cliente de etiquetado unificado de Azure Information Protection solo admite el etiquetado automático para los tipos de información confidencial integrados y personalizados, y no admite clasificadores entrenables ni tipos de información confidencial que usan Coincidencia exacta de datos (EDM) o entidades con nombre.
 
-Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Asegúrese de que **Archivos y mensajes de correo electrónico** está seleccionada para el ámbito de la etiqueta:
+Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Asegúrese de que **Elementos** está seleccionado para el ámbito de la etiqueta:
 
 ![Opciones de ámbito de etiqueta de confidencialidad para archivos y correos electrónicos.](../media/filesandemails-scope-options-sensitivity-label.png)
 

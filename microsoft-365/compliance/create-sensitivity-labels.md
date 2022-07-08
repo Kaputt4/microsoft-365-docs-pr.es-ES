@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: ad7e9c9aeea0a1ef05f79214afd60ac479ba2e66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 486cc10888ebb66a657aa21930fe306073ac1868
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625531"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663534"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -50,7 +50,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 2. En la página **Etiquetas**, seleccione **+ Crear una etiqueta** para iniciar la configuración de la nueva etiqueta de confidencialidad: 
     
-    ![Cree una etiqueta de confidencialidad.](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Cree una etiqueta de confidencialidad." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen etiquetas, por lo que deben crearse. En la imagen de ejemplo se muestran etiquetas predeterminadas que se [migraron de Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
@@ -59,7 +59,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
     ![Ámbitos para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
-    - Si está seleccionada la opción **Archivos y mensajes de correo electrónico**, puede configurar las opciones que correspondan a aplicaciones que admiten etiquetas de confidencialidad, como Office Word y Outlook. Si esta opción no está seleccionada, podrá ver la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estas aplicaciones.
+    - Si **se selecciona Elementos**, puede configurar las opciones que se aplican a las aplicaciones que admiten etiquetas de confidencialidad, como Office Word y Outlook. Si esta opción no está seleccionada, podrá ver la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estas aplicaciones.
 
     - Si está seleccionada la opción **Grupos y sitios**, puede configurar las opciones que se apliquen a los Grupos de Microsoft 365 y a los sitios de Teams y SharePoint. Si esta opción no está seleccionada, verá la primera página de esta configuración, pero no podrá configurarla y las etiquetas no estarán disponibles para que los usuarios las seleccionen para grupos y sitios.
 
@@ -153,7 +153,7 @@ Para comprobar la configuración de la etiqueta, incluyendo la configuración av
 
 2. En la página **Directivas de etiquetas**, seleccione **Publicar etiqueta** para iniciar la configuración **Crear directiva**:
     
-    ![Publique etiquetas.](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="Publique etiquetas." lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen directivas de etiquetas, por lo que deben crearse. 
@@ -167,7 +167,7 @@ Para comprobar la configuración de la etiqueta, incluyendo la configuración av
 
 5. Siga las indicaciones para configurar las configuraciones de la directiva.
 
-    La configuración de directiva que ve coincide con el ámbito de las etiquetas seleccionadas. Por ejemplo, si seleccionó etiquetas que solo contienen el ámbito **Archivos y mensajes de correo electrónico**, no verá las opciones de configuración de directiva **Aplicar esta etiqueta de forma predeterminada a los grupos y sitios** y **Requerir que los usuarios apliquen una etiqueta a sus grupos y sitios**.
+    Las opciones de configuración de directiva que se muestran coinciden con el ámbito de las etiquetas que seleccionó. Por ejemplo, si seleccionó etiquetas que solo tienen el ámbito **Elementos**, no verá las opciones de configuración de directiva **Aplique esta etiqueta de forma predeterminada a los grupos y sitios** y **Requiera que los usuarios apliquen una etiqueta a sus grupos y sitios**.
 
     Para obtener más información acerca de esta configuración, consulte [Qué pueden hacer las directivas de etiqueta](sensitivity-labels.md#what-label-policies-can-do) en la parte de información general. Use la ayuda en la interfaz de usuario para la configuración individual.
 

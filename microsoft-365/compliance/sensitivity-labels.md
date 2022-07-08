@@ -22,12 +22,12 @@ description: Utilice las etiquetas de confidencialidad de Microsoft Purview Info
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: db050d3e26f19901e98052be5051b9eebce21990
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637957"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663490"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -134,13 +134,13 @@ Esta configuración de ámbito le permite tener etiquetas de confidencialidad ú
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
-De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempre están seleccionados. Los demás ámbitos se seleccionan de manera predeterminada cuando se habilitan las características de su espacio empresarial:
+De forma predeterminada, el ámbito **Elementos** siempre está seleccionado. Los demás ámbitos se seleccionan de manera predeterminada cuando se habilitan las características de su espacio empresarial:
 
 - **Grupos y sitios**: [habilitar etiquetas de confidencialidad para contenedores y sincronizarlas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
 - **Recursos de datos esquematizados**: [etiquetar automáticamente su contenido en la asignación de datos de Microsoft Purview](/azure/purview/create-sensitivity-label)
 
-Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
+Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para los elementos no está seleccionado, no puede seleccionar las opciones en la página siguiente:
 
 ![Opciones para etiquetas de confidencialidad no disponibles.](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -148,7 +148,7 @@ En las páginas que no tengan opciones disponibles, seleccione **Siguiente** par
 
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
-Cuando crea sus etiquetas de confidencialidad en su centro de administración, éstas aparecen en una lista en la pestaña **Confidencialidad** de la página **Etiquetas**. En esta lista, el orden de las etiquetas es importante porque refleja su prioridad. Usted quiere que su etiqueta de confidencialidad más restrictiva, como la de "altamente confidencial", aparezca **al final** de la lista, y que su etiqueta de confidencialidad menos restrictiva, como la de "público", aparezca **al principio**.
+Al crear las etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft Purview, aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
 Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un documento, un correo electrónico o un contenedor. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas que comparten la prioridad de su etiqueta primaria.
 

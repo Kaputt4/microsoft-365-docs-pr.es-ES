@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: cc5a72a3e36c36ec752699f488450adee4a037aa
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637847"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687704"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -123,7 +123,9 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación Sincronización d
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>Habilitación de etiquetas de confidencialidad para SharePoint y OneDrive (participación)
 
-Puede habilitar las nuevas funcionalidades mediante el portal de cumplimiento Microsoft Purview o mediante PowerShell. Al igual que con todos los cambios de configuración de nivel de inquilino para SharePoint y OneDrive, el cambio tarda aproximadamente 15 minutos en surtir efecto.
+Puede habilitar las nuevas funcionalidades mediante el portal de cumplimiento Microsoft Purview o mediante PowerShell. Consulte las secciones siguientes para obtener instrucciones.
+
+Al igual que con todos los cambios de configuración de nivel de inquilino para SharePoint y OneDrive, el cambio tarda aproximadamente 15 minutos en surtir efecto.
 
 ### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Uso de la portal de cumplimiento Microsoft Purview para habilitar la compatibilidad con etiquetas de confidencialidad
 
@@ -270,7 +272,7 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 Multi-Geo, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para más información, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 

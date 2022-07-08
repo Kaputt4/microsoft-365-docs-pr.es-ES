@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive.
-ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628581"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663182"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos en SharePoint y OneDrive
 
@@ -92,11 +92,11 @@ Ejemplos de PowerShell, donde el GUID de la etiqueta de confidencialidad es **8f
 
 Para obtener más ayuda para especificar la configuración avanzada de PowerShell, consulte [sugerencias de PowerShell para especificar la configuración avanzada](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-Para configurar las opciones del tipo de vínculo de uso compartido predeterminado para un sitio, el [ámbito de la etiqueta de confidencialidad](sensitivity-labels.md#label-scopes) debe incluir **grupos y sitios** al crear la etiqueta de confidencialidad en el Portal de cumplimiento de Microsoft Purview. Una vez creado, verá que se muestra como **sitio, UnifiedGroup** en la columna **Ámbito** de la página **Etiquetas** y la configuración *ContentType* de PowerShell también muestra el mismo valor. Para los documentos, el ámbito debe incluir **Archivos y correo electrónico**, que se muestra como **Archivo, Correo electrónico**. Luego:
+Para configurar las opciones del tipo de vínculo de uso compartido predeterminado para un sitio, el [ámbito de la etiqueta de confidencialidad](sensitivity-labels.md#label-scopes) debe incluir **grupos y sitios** al crear la etiqueta de confidencialidad en el Portal de cumplimiento de Microsoft Purview. Una vez creado, verá que se muestra como **sitio, UnifiedGroup** en la columna **Ámbito** de la página **Etiquetas** y la configuración *ContentType* de PowerShell también muestra el mismo valor. Para los documentos, el ámbito debe incluir **Elementos**, que se muestra como **Archivo, Correo electrónico**. Luego:
 
 - Cuando el ámbito incluye **Grupos y sitios**, puede aplicar la etiqueta a un sitio, lo que establece el tipo de vínculo de uso compartido predeterminado para ese sitio. Para obtener información sobre cómo aplicar una etiqueta de confidencialidad a un sitio, consulte [Cómo aplicar etiquetas de confidencialidad a contenedores](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- Cuando el ámbito de la etiqueta de confidencialidad incluye **Archivos y correo electrónico**, puede aplicar la etiqueta a los documentos, lo que establece el tipo de vínculo de uso compartido predeterminado para ese documento. La etiqueta se puede aplicar de forma [manual](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) o [automática](apply-sensitivity-label-automatically.md).
+- Cuando el ámbito de la etiqueta de confidencialidad incluye **Elementos**, puede aplicar la etiqueta a los documentos, lo que establece el tipo de vínculo de uso compartido predeterminado para ese documento. La etiqueta se puede aplicar [manualmente](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) o [automáticamente](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > También puede especificar que la etiqueta sea la etiqueta de confidencialidad predeterminada que se aplicará a los nuevos sitios o a los nuevos documentos, como una [configuración de directiva de etiqueta](sensitivity-labels.md#what-label-policies-can-do).
