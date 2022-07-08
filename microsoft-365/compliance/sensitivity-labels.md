@@ -22,12 +22,12 @@ description: Utilice las etiquetas de confidencialidad de Microsoft Purview Info
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663490"
+ms.locfileid: "66685973"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -71,7 +71,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Clasificar contenido sin usar una configuración de protección.** También puede simplemente asignar una etiqueta como resultado de la clasificación del contenido. Esto proporciona a los usuarios una asignación visual de la clasificación de los nombres de etiqueta de la organización y pueden usar las etiquetas para crear informes de uso y ver los datos de la actividad de su contenido confidencial. También puede usar esta información para aplicar la configuración de protección más adelante.
 
-En todos estos casos, las etiquetas de confidencialidad de Microsoft 365 pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos de su organización para administrarlos mejor y aplicar configuraciones de protección basadas en esa clasificación.
+En todos estos casos, las etiquetas de confidencialidad de Microsoft Purview pueden ayudarle a realizar las acciones correctas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos en toda la organización, y aplicar la configuración de protección en función de dicha clasificación. Después, esa protección permanece con el contenido.
 
 Para obtener más información sobre estos y otros escenarios que son compatibles con las etiquetas de confidencialidad, vea [Escenarios comunes para las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Se siguen desarrollando nuevas funciones compatibles con las etiquetas de confidencialidad, por lo que también le puede resultar útil consultar el [Plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap).
 
@@ -83,9 +83,9 @@ Cuando asigna una etiqueta de confidencialidad a un contenido, es como un sello 
 
 - **Texto no cifrado.** Dado que una etiqueta se almacena en texto claro en los metadatos de los archivos y correos electrónicos, las aplicaciones y servicios de terceros pueden leerla y aplicar sus propias acciones de protección, si es necesario.
 
-- **Persistente.** Al estar almacenada en los metadatos de los archivos y mensajes de correo electrónico, la etiqueta se mueve con el contenido, a pesar de dónde se guarda o almacena. La identificación de etiqueta única es la base para aplicar y exigir las directivas que usted configura.
+- **Persistente.** Al estar almacenada en los metadatos de los archivos y mensajes de correo electrónico, la etiqueta permanece con el contenido, independientemente de dónde se guarde o almacene. La identificación de etiqueta única es la base para aplicar y exigir las directivas que usted configura.
 
-Para los usuarios, una etiqueta de confidencialidad se muestra como una etiqueta en las aplicaciones que usan y se pueden integrar fácilmente en sus flujos de trabajo existentes.
+Para los usuarios de su organización, una etiqueta de confidencialidad se muestra como una etiqueta en las aplicaciones que usan y se pueden integrar fácilmente en sus flujos de trabajo existentes.
 
 Cada elemento que admite las etiquetas de confidencialidad puede tener una sola etiqueta aplicada. Los documentos y mensajes de correo electrónico pueden tener aplicadas tanto una etiqueta de confidencialidad como una [etiqueta de retención](retention.md#retention-labels).
 
@@ -247,8 +247,7 @@ Si utiliza el cliente AIP, consulte [Por qué elegir el etiquetado integrado en 
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 
-> [!NOTE]
-> La administración de las etiquetas de Azure Information Protection en el Microsoft Azure Portal quedó obsoleta el **31 de marzo de 2021**. Obtenga más información en el anuncio oficial de la [eliminación de las etiquetas](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+La administración de las etiquetas de Azure Information Protection en el Microsoft Azure Portal quedó obsoleta el **31 de marzo de 2021**. Obtenga más información en el anuncio oficial de la [eliminación de las etiquetas](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
 Si su espacio empresarial aún no está en la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), debe activar el etiquetado unificado antes de poder usar etiquetas de confidencialidad. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 
@@ -262,4 +261,4 @@ También puede conocer las [soluciones de los socios que se integran con Microso
 
 Para planear la implementación y obtener una guía que incluye información sobre licencias, permisos, estrategia de implementación, una lista de escenarios admitidos y la documentación del usuario final, vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
 
-Para obtener información sobre cómo usar las etiquetas de confidencialidad para cumplir con las normativas de privacidad de los datos, vea [Implementar Information Protection para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+Para obtener información sobre cómo usar las etiquetas de confidencialidad para cumplir con las normativas de privacidad de los datos, vea [Implementar Information Protection para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md).

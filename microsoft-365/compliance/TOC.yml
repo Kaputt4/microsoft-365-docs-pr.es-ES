@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: Investigar y corregir las alertas de cumplimiento de las comunicaciones
           href: communication-compliance-investigate-remediate.md
-        - name: Más información sobre los informes de cumplimiento de comunicaciones y auditorías
+        - name: Usar auditorías e informes de cumplimiento de comunicaciones
           href: communication-compliance-reports-audits.md
-        - name: Cumplimiento de comunicaciones con soluciones de SIEM
+        - name: Usar el cumplimiento de comunicaciones con soluciones de SIEM
           href: communication-compliance-siem.md
         - name: 'Caso práctico: Contoso configura rápidamente una directiva de texto inapropiado'
           href: communication-compliance-case-study.md

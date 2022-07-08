@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556776"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686017"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -38,7 +38,7 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 | Suscripción  | Microsoft 365 Empresa Premium o Microsoft 365 para campañas. <br/><br/> Para iniciar una prueba o comprar su suscripción, consulte los artículos siguientes: <br/>- [Obtención de Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenga Microsoft 365 para Campañas](get-microsoft-365-campaigns.md) |
 | Permisos  | Para completar el proceso de configuración inicial, debe ser un administrador global. [Obtenga más información sobre los roles de administrador](../admin/add-users/about-admin-roles.md). |
 | Requisitos de los exploradores | Microsoft Edge, Safari, Chrome o Firefox. [Obtenga más información sobre los requisitos de los exploradores](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 o posterior, o Windows Server 2016<br/><br/>**macOS**: Una de las tres últimas versiones de macOS |
+| Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS**: Una de las tres últimas versiones de macOS <br/>Actualmente, Microsoft 365 Empresa Premium y la versión independiente de Microsoft Defender para Empresas no admiten servidores.  |
 
 > [!TIP]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
