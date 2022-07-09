@@ -20,7 +20,7 @@
   items:
     - name: Ajustar la configuración de privacidad
       href: configure-privacy-settings.md
-    - name: Solicitudes de RGPD
+    - name: Administrar solicitudes de RGPD
       href: gdpr-requests.md
 - name: Whiteboard para administración pública
   items:

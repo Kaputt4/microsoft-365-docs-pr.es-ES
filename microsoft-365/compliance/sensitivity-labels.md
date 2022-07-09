@@ -22,12 +22,12 @@ description: Utilice las etiquetas de confidencialidad de Microsoft Purview Info
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685973"
+ms.locfileid: "66687814"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -134,11 +134,11 @@ Esta configuración de ámbito le permite tener etiquetas de confidencialidad ú
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
-De forma predeterminada, el ámbito **Elementos** siempre está seleccionado. Los demás ámbitos se seleccionan de manera predeterminada cuando se habilitan las características de su espacio empresarial:
+De forma predeterminada, el ámbito **Elementos** (anteriormente denominado **Archivos y correos electrónicos**) siempre está seleccionado. Los demás ámbitos se seleccionan de manera predeterminada cuando se habilitan las características de su espacio empresarial:
 
-- **Grupos y sitios**: [habilitar etiquetas de confidencialidad para contenedores y sincronizarlas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **Grupos y sitios**: consulte [Habilitar etiquetas de confidencialidad para contenedores y sincronizar etiquetas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Recursos de datos esquematizados**: [etiquetar automáticamente su contenido en la asignación de datos de Microsoft Purview](/azure/purview/create-sensitivity-label)
+- **Recursos de datos esquematizados**: [etiquete automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label)
 
 Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para los elementos no está seleccionado, no puede seleccionar las opciones en la página siguiente:
 
