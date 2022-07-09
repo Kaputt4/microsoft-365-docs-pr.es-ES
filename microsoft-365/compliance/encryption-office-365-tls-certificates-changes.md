@@ -9,12 +9,12 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d5390c97c097bdbf52e496336e3a239d975a88aa
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641776"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696236"
 ---
 # <a name="office-tls-certificate-changes"></a>Cambios en el certificado TLS de Office
 
@@ -143,7 +143,8 @@ No se revocarán los certificados raíz, intermedio y hoja actuales. Los nombres
 En circunstancias muy poco frecuentes, los usuarios empresariales pueden ver errores de validación de certificados en los que la entidad de certificación raíz "DigiCert Global Root G2" aparece como revocada. Esto se debe a un error conocido de Windows en las dos condiciones siguientes:
 
 - La entidad de certificación raíz está en el [almacén de certificados CurrentUser\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) y faltan las `NotBeforeFileTime` propiedades y `NotBeforeEKU` .
-- La entidad de certificación raíz también está en el almacén de certificados [LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) , pero tiene las `NotBeforeFileTime` propiedades y `NotBeforeEKU` .
+- La entidad de certificación raíz está en el almacén de certificados [LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine), pero tiene las propiedades y .`NotBeforeFileTime` `NotBeforeEKU`
+- La CA raíz NO está en el [almacén de certificados LocalMachine\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
 
 Todos los certificados hoja emitidos desde esta entidad de certificación raíz después de que `NotBeforeFileTime` aparezcan revocados. 
 
@@ -182,7 +183,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-Un usuario puede resolver el problema mediante la eliminación de la copia de la entidad de certificación raíz en el almacén de `CurrentUser\Root` certificados:
+Un usuario puede resolver el problema mediante la eliminación de la copia de la entidad de certificación raíz en el `CurrentUser\Root` almacén de certificados haciendo lo siguiente:
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+o 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+El primer enfoque crea un cuadro de diálogo de Windows en el que un usuario debe hacer clic, mientras que el segundo no. 

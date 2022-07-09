@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 45ec1e04181de6bb6d3a7c15b9efa219fbe2d43e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622445"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696127"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -116,7 +116,7 @@ Varios.
 
 No.
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 Esta entidad con nombre SIT coincide con los nombres personales que un humano identificaría como un nombre con alta confianza. Por ejemplo, si se encuentra una cadena que consta de un nombre determinado y va seguida de un nombre de familia, se realiza una coincidencia con alta confianza. Usa tres recursos principales:
 
@@ -132,7 +132,6 @@ Además, los patrones que un humano vería como indicativos de nombres también 
 
 - Inglés
 - Búlgaro
-- Chino
 - Croata
 - Checo
 - Danés
@@ -175,7 +174,7 @@ Dictionary
 
 No
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 Esta entidad con nombre agrupada coincide con texto que menciona las condiciones médicas presentes en diccionarios seleccionados. Hay un diccionario seleccionado por idioma admitido. Los diccionarios proceden de muchos recursos médicos internacionales. Los diccionarios incluyen tantas condiciones médicas como sea posible sin arriesgar un gran número de falsos positivos. Cada entrada contiene los diferentes formularios en los que se escribe normalmente una sola condición para garantizar la cobertura, por ejemplo:
 
@@ -214,7 +213,7 @@ Varios
 
 No
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 La coincidencia de direcciones callejeras está diseñada para que coincida con las cadenas que un humano identificaría como una dirección de calle. Para ello, usa varios recursos principales:
 
@@ -1144,7 +1143,7 @@ Una combinación de 24 caracteres de letras, dígitos y caracteres especiales
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No es aplicable
+No aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -8333,7 +8332,7 @@ Nueve dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No es aplicable
+No aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -12636,7 +12635,7 @@ siete dígitos seguidos de una letra:
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No es aplicable
+No aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -12788,7 +12787,7 @@ Nacionales no malteses y entidades maltesas: nueve dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No es aplicable
+No aplicable
 
 ### <a name="definition"></a>Definición
 
@@ -16574,7 +16573,7 @@ una combinación de ocho o nueve caracteres de letras y números:
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No es aplicable
+No aplicable
 
 ### <a name="definition"></a>Definición
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461a3e4ebb97d809bf61c11591f40448ef97f8cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490539"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695974"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidores de la solución de Microsoft Defender para punto de conexión anterior basada en MMA
 
@@ -39,14 +39,13 @@ ms.locfileid: "66490539"
 
 Estas instrucciones se aplican al nuevo paquete de solución e instalador unificado (MSI) de Microsoft Defender para punto de conexión para Windows Server 2012 R2 y Windows Server 2016. Este artículo contiene instrucciones de alto nivel para varios escenarios de migración posibles del anterior a la solución actual. Estos pasos de alto nivel están diseñados como directrices para ajustarse a las herramientas de implementación y configuración disponibles en su entorno. 
 
-**Si usa Microsoft Defender for Cloud para realizar la implementación, puede automatizar la instalación y la actualización. Consulte [El plan 2 de Defender para servidores ahora se integra con la solución unificada MDE] (https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
+**Si usa Microsoft Defender for Cloud para realizar la implementación, puede automatizar la instalación y la actualización. Consulte [El plan 2 de Defender para servidores ahora se integra con la solución unificada MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534).**
 
 > [!NOTE]
 > No se admiten las actualizaciones del sistema operativo con Microsoft Defender para punto de conexión instalados. A continuación, desinstale antes de continuar con una actualización.
 
 > [!NOTE]
 > La automatización y la integración completa del punto de conexión de Microsoft Configuration Manager para realizar una actualización automatizada estarán disponibles en una versión posterior de MECM. Desde la versión 2107 con el paquete acumulativo de revisiones más reciente, puede usar el nodo Endpoint Protection para la configuración, así como directiva de grupo, PowerShell, Microsoft Endpoint Manager asociación de inquilinos o configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manual; métodos para los que se describen a continuación.
-
 
 ## <a name="installer-script"></a>Script del instalador
 
@@ -107,6 +106,7 @@ Para sacar una máquina del modo pasivo, establezca la clave siguiente en 0:
 
 Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD Value: 0
 
+Para obtener más información sobre cómo migrar servidores de MMA a una solución unificada, consulte [Migración de servidores de Microsoft Monitoring Agent a la solución unificada](application-deployment-via-mecm.md).
 
 ## <a name="other-migration-scenarios"></a>Otros escenarios de migración
 

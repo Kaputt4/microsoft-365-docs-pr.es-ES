@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la autenticación multifactor.
-ms.openlocfilehash: d7874988f4316015afb58a40651bc6e85cf88f2a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686215"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695646"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Administración de la autenticación multifactor en Microsoft 365 Lighthouse
 
-Multi-Factor Authentication (MFA) de Azure Active Directory (Azure AD) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y los usuarios que aún no se han registrado para MFA.
+Multi-Factor Authentication (MFA) de Azure Active Directory (Azure AD) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y qué usuarios aún no se han registrado para MFA.
 
 Para los clientes de pequeñas y medianas empresas (SMB), Microsoft recomienda habilitar [los valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) como mínimo. Para escenarios más complejos, puede usar [el acceso condicional](/azure/active-directory/conditional-access/overview) para configurar directivas específicas.
 

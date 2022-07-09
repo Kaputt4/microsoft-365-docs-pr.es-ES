@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531108"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695875"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -53,7 +53,7 @@ Tendrá que completar los pasos generales siguientes para incorporar correctamen
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Ilustración del flujo de incorporación para servidores Windows y dispositivos Windows 10" lightbox="images/server-onboarding-tools-methods.png":::
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
+## <a name="integration-with-microsoft-defender-for-servers"></a>Integración con Microsoft Defender para servidores
 
 Microsoft Defender para punto de conexión se integra perfectamente con Microsoft Defender para servidores. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Microsoft Defender for Cloud aparezcan en Defender para punto de conexión y realizar investigaciones detalladas como cliente de Microsoft Defender for Cloud.
 
@@ -196,6 +196,9 @@ Si usa Windows Server Update Services (WSUS) o Configuration Manager de punto de
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>PASO 1: Descarga de paquetes de instalación e incorporación
 
 Tendrá que descargar los paquetes de **instalación** e **incorporación** desde el portal.
+
+> [!NOTE]
+> El paquete de instalación se actualiza mensualmente. Asegúrese de descargar el paquete más reciente antes del uso.
 
 > [!div class="mx-imgBorder"]
 > ![Imagen del panel de incorporación](images/install-agent-onboard.png)
@@ -374,7 +377,7 @@ Después de incorporar el dispositivo, puede optar por ejecutar una prueba de de
 
 Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo recién incorporado](run-detection-test.md) para comprobar que el servidor informa a Defender para el servicio de punto de conexión.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de incorporar correctamente los dispositivos al servicio, deberá configurar los componentes individuales de Microsoft Defender para punto de conexión. Siga el [orden de adopción](prepare-deployment.md#adoption-order) que se va a guiar para habilitar los distintos componentes.
 

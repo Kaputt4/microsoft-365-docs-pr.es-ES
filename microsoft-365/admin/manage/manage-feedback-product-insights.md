@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Use las puntuaciones de promotores de Net (NPS) de los usuarios finales para ver cómo se sienten sobre los productos y servicios de Microsoft.
-ms.openlocfilehash: ec261553a5713d9e12205cbf4c88611a128bc48b
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c7afd214359922c7946e3cb972ec6aced90857e0
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217362"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696214"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Comentarios e información sobre NPS de productos de Microsoft para su organización
 
-Como administrador de una organización Microsoft 365, puede acceder y obtener información de encuestas de productos NPS enviadas por Microsoft.  
+Como administrador de una organización de Microsoft 365, puede acceder y obtener información de encuestas de productos NPS enviadas por Microsoft.  
 
-Las encuestas de Net Promoter Score (NPS) recopilan comentarios de los usuarios y miden la probabilidad de que los usuarios digan que recomiendan productos y servicios a amigos y compañeros. Estos datos se pueden usar en su organización para determinar las estrategias de adopción e implementación de Microsoft 365 productos y servicios.
+Las encuestas de Net Promoter Score (NPS) recopilan comentarios de los usuarios y miden la probabilidad de que los usuarios digan que recomiendan productos y servicios a amigos y compañeros. Estos datos se pueden usar en su organización para determinar las estrategias de adopción e implementación de productos y servicios de Microsoft 365.
 
 Usamos encuestas y comentarios de NPS de los usuarios finales para proporcionarle información sobre los productos y servicios de Microsoft. Esta información puede ayudarle a averiguar qué productos y servicios usan los usuarios finales de su organización, así como a identificar problemas y resolverlos rápidamente. Con esta información puede:
 
@@ -49,16 +49,16 @@ Debe ser [administrador](../add-users/about-admin-roles.md) para ver y leer info
 
 ## <a name="nps-survey-insights"></a>Conclusiones de encuestas de NPS
 
-1. En el centro de administración, vaya a **HealthProduct feedback** Insights (Información  >  de la encuesta **deNPS** > **).**
+1. En la [Centro de administración de Microsoft 365](https://admin.microsoft.com/), **vaya a Información** de  > **la encuesta npS** **de comentarios** >  del producto de mantenimiento.
 2. En la página **de conclusiones de encuestas de NPS** , vaya a la página para ver información sobre encuestas relacionadas con NPS para su organización.
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Captura de pantalla: Gráfico principal de Puntuación de promotor neto (NPS)":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Captura de pantalla: Gráfico principal de Puntuación de promotor neto (NPS)" lightbox="../../media/product-feedback-main-page.png":::
 
 ### <a name="top-topic-filters"></a>Filtros de temas principales
 
 Hemos identificado los temas comunes de los comentarios de los usuarios. A continuación, usamos modelos de aprendizaje automático que entrenan los conjuntos de datos y organizan automáticamente los comentarios en **temas principales**. A continuación, puede identificar los cinco temas principales con el mayor volumen de comentarios textuales.  
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="Captura de pantalla: Cinco temas principales con los comentarios más textuales":::
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Captura de pantalla: Cinco temas principales con los comentarios más textuales" lightbox="../../media/top-topics-filter.png":::
 
 > [!NOTE]
 > Solo publicamos un tema inteligente después de que cumpla con una barra de calidad mínima establecida en asociación con expertos en la materia. Las métricas de precisión y recuperación se usan para determinar lo mismo.
@@ -84,7 +84,7 @@ Los temas que están disponibles actualmente son los siguientes:
 - Precisión textual- 92%
 - Recuperación textual: 89%
 
-**La Elogio general** hace referencia a los comentarios de los clientes que tienen una opinión positiva y no encajan en otro tema.
+**Elogio general** hace referencia a los comentarios de los clientes que tienen una opinión positiva y no encajan en otro tema.
 
 - Precisión textual- 93%
 - Recuperación textual: 98%
@@ -138,7 +138,7 @@ Los gráficos se filtran por la clasificación NPS de la siguiente manera:
 - Los pasivos son clientes que están satisfechos con el servicio, pero no son suficientes para recomendar su producto o servicio.
 - Promotores: clientes felices que son leales, entusiastas y que probablemente recomiendan su producto o servicio.
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Captura de pantalla: Gráfico que muestra la probabilidad de recomendar una aplicación a un amigo o compañero":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Captura de pantalla: Gráfico que muestra la probabilidad de recomendar una aplicación a un amigo o compañero" lightbox="../../media/how-likely-recommend.png":::
 
 ### <a name="export-to-csv-and-search"></a>Exportación a CSV y búsqueda
 
@@ -155,13 +155,13 @@ Puede filtrar por **canales**, **productos**, **plataformas** y **tipos de comen
 
 **Los canales** son una manera de que las organizaciones seleccionen la frecuencia con la que obtienen actualizaciones de características para Office. Obtenga más información en [Introducción a los canales de actualización para Aplicaciones Microsoft 365](/deployoffice/overview-update-channels). Este filtro le permite filtrar por los comentarios enviados por un usuario en un canal específico.
 
-Los comentarios se pueden enviar en varias **plataformas**, como Android, iOS, Mac y Windows. Este filtro le permite filtrar los comentarios en función de la plataforma en la que se envió.
+Los comentarios se pueden enviar en varias **plataformas** como Android, iOS, Mac y Windows. Este filtro le permite filtrar los comentarios en función de la plataforma en la que se envió.
 
-La mayoría de Microsoft 365 para empresas **Productos** se puede encontrar en este filtro. Use este filtro para seleccionar los productos que han enviado comentarios.
+La mayoría de los **productos** de Microsoft 365 para empresas se puede encontrar en este filtro. Use este filtro para seleccionar los productos que han enviado comentarios.
 
 Use **los tipos de comentarios** (establecidos solo en tipos de comentarios NPS) para filtrar los comentarios que recopilamos.
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="Captura de pantalla: Gráfico que muestra los tipos de comentarios":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Captura de pantalla: Gráfico que muestra los tipos de comentarios" lightbox="../../media/feedback-filters.png":::
 
 ### <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 

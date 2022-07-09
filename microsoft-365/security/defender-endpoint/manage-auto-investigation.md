@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535876"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695624"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar las acciones de corrección después de una investigación automatizada
 
@@ -102,7 +102,7 @@ Si ha determinado que un dispositivo o un archivo no es una amenaza, puede desha
 > - Detener y poner en cuarentena un archivo
 > - Adición de un indicador para bloquear o permitir un archivo
 >
-> Para más información, consulte [Comparación de planes de Microsoft Defender para punto de conexión](defender-endpoint-plan-1-2.md) y [Comparación de características de seguridad en Microsoft 365 planes para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md).
+> Para más información, consulte [Comparación de planes Microsoft Defender para punto de conexión](defender-endpoint-plan-1-2.md) y [Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md).
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Para deshacer varias acciones a la vez
 
@@ -127,7 +127,7 @@ Los niveles de automatización afectan a si ciertas acciones de corrección se r
 |Configuración del grupo de dispositivos|Resultados de la investigación automatizada|Qué hacer|
 |---|---|---|
 |**Completo: corrección automática de amenazas**<br/>(recomendado)|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Revisar las acciones completadas](#review-completed-actions)|
-|**Completo: corrección automática de amenazas**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
+|**Completo: corrección automática de amenazas**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
 |**Semi: requiere aprobación para cualquier corrección.**|Se llega a un veredicto de *malintencionada* o *sospechosa* para una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
 |**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Si el artefacto es un archivo o ejecutable y se encuentra en un directorio del sistema operativo, como la carpeta Windows o la carpeta Archivos de programa, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto *no* está en un directorio del sistema operativo, las acciones de corrección se realizan automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar las acciones completadas](#review-completed-actions)</li></ol>|
 |**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) las acciones pendientes](#review-pending-actions).|
@@ -147,6 +147,6 @@ Se realiza un seguimiento de todos los veredictos en el [Centro de acción](auto
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

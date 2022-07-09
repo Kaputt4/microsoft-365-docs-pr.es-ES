@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc67b2d2a9ad03dc1235eebd577e3525ab07a03
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665940"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695887"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -40,7 +40,7 @@ ms.locfileid: "64665940"
 > [!CAUTION]
 > Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Defender para punto de conexión en iOS provoque problemas de rendimiento y errores imprevisibles del sistema.
 
-## <a name="pre-requisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 **Para los usuarios finales**
 
@@ -52,10 +52,11 @@ ms.locfileid: "64665940"
     
     >[!NOTE]
     >Apple no permite redirigir a los usuarios para que descarguen otras aplicaciones de la tienda de aplicaciones, por lo que el usuario debe realizar este paso antes de incorporarse a Microsoft Defender para punto de conexión aplicación).
-    
-    - Los dispositivos se registran con Azure Active Directory. Esto requiere que el usuario final inicie sesión a través [de Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
-- **Para dispositivos no inscritos**: los dispositivos se registran con Azure Active Directory. Esto requiere que el usuario final inicie sesión a través [de Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+
+    - Los dispositivos están registrados en Azure Active Directory. Esto requiere que el usuario final inicie sesión a través de la [aplicación Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+
+- **Para dispositivos no inscritos**: los dispositivos se registran con Azure Active Directory. Esto requiere que el usuario final inicie sesión a través de la [aplicación Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - Para obtener más información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
@@ -63,7 +64,7 @@ ms.locfileid: "64665940"
 
 - Acceso al portal de Microsoft 365 Defender.
 
-- Acceso a [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para:
+- Acceso al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) para:
    - Implemente la aplicación en grupos de usuarios inscritos en su organización.
    - Configuración de señales de riesgo Microsoft Defender para punto de conexión en la directiva de protección de aplicaciones (MAM)
 
@@ -76,7 +77,10 @@ ms.locfileid: "64665940"
 
 - Dispositivo iOS que ejecuta iOS 12.0 y versiones posteriores. También se admiten iPads. *Tenga en cuenta que a partir del 31 de marzo de 2022, la versión mínima admitida de iOS por Microsoft Defender para punto de conexión será iOS 13.0.*
 
-- El dispositivo está inscrito con la [aplicación Portal de empresa de Intune](https://apps.apple.com/us/app/intune-company-portal/id719171358) o está registrado con Azure Active Directory a través [de Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) con la misma cuenta.
+- El dispositivo está inscrito con la [aplicación Portal de empresa de Intune](https://apps.apple.com/us/app/intune-company-portal/id719171358) o está registrado en Azure Active Directory a través de [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) con la misma cuenta.
+
+ > [!NOTE]
+ > Microsoft Defender para punto de conexión en iOS no se admite actualmente mientras se usa la inscripción de usuarios de iOS.
 
 ## <a name="installation-instructions"></a>Instrucciones de instalación
 
@@ -95,6 +99,6 @@ La implementación de Microsoft Defender para punto de conexión en iOS se puede
 
 - [Implementación de Microsoft Defender para punto de conexión en iOS mediante Intune para dispositivos inscritos](ios-install.md)
 - [Configuración de la directiva de protección de aplicaciones para incluir señales de riesgo de Defender para punto de conexión (MAM)](ios-install-unmanaged.md)
-- [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+- [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 - [Configuración de la directiva de acceso condicional en función de la puntuación de riesgo del dispositivo de Microsoft Defender para punto de conexión](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [Aspectos básicos de la administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
