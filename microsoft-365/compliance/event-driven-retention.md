@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: 953661a63c961273d54fde1041e4d85c5d786c26
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac4e80872cbe377025e213a387c7be7f89a208b7
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622995"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685951"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
@@ -34,22 +34,22 @@ ms.locfileid: "66622995"
 Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido. Por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período. Pero cuando configura [etiquetas de retención](retention.md#retention-labels), también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
   
 Ejemplos de uso de retención basada en eventos:
-  
+
 - **Empleados que abandonen la organización** Imagine que necesita conservar los registros de los empleados durante 10 años desde el momento en que un empleado abandona la organización. Una vez transcurridos los 10 años, tendrán que eliminarse todos los documentos relacionados con la contratación, desempeño y terminación de ese empleado. El evento que desencadena el período de retención de 10 años es cuando el empleado abandona la organización. 
-    
+
 - **Expiración del contrato** Imagine que todos los registros relacionados con los contratos tienen que conservarse durante cinco años desde el momento en que expire el contrato. El evento que desencadena el período de retención de cinco años es la expiración del contrato. 
-    
+
 - **Vida útil del producto** Puede que su organización tenga requisitos de retención relacionados con la última fecha de fabricación de productos para contenido como especificaciones técnicas. En ese caso, la última fecha de fabricación es el evento que desencadena el período de retención. 
-    
-La retención basada en eventos se usa normalmente como parte de un proceso de administración de registros. Esto significa que:
+
+La retención basada en eventos, a veces también denominada "retención controlada por eventos", se usa normalmente con procesos de administración de registros. Esto significa que:
 
 - Las etiquetas de retención basadas en eventos también suelen marcar elementos como un registro, como parte de una solución de administración de registros. Para obtener más información, vea [Información sobre la administración de registros](records-management.md).
 
 - Un documento que se ha declarado como un registro pero cuyo desencadenador de eventos aún no se ha producido se conserva indefinidamente. Hasta que un evento desencadene el período de retención de ese documento, que expira después, los registros no se pueden eliminar de forma permanente.
 
-- Las etiquetas de retención basadas en eventos suelen desencadenar una revisión para eliminación al finalizar el período de retención, por lo que un administrador de registros puede revisar y eliminar el contenido de forma manual. Para más información, vea [Eliminación de contenido](disposition.md).
+- Las etiquetas de retención basadas en eventos a menudo desencadenan una revisión de disposición al finalizar el período de retención para que un administrador de registros pueda revisar de forma manual el contenido y eliminarlo. Para obtener más información, vea [ Eliminación de contenido](disposition.md).
 
-Una etiqueta de retención basada en un evento tiene las mismas capacidades que cualquier etiqueta de retención en Microsoft 365. Para obtener más información, vea [Más información sobre las directivas de retención y las etiquetas de retención](retention.md).
+Una etiqueta de retención basada en un evento tiene las mismas funciones que cualquier etiqueta de retención en Microsoft Purview. Para obtener más información, vea [Información sobre las etiquetas y directivas de retención](retention.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Información sobre la relación entre tipos de evento, etiquetas, eventos e id. de activo
 
@@ -77,14 +77,14 @@ Es importante comprender que, si no especifica palabras clave o un id. de activo
 
 Por último, recuerde que cada etiqueta de retención tiene su propia configuración de retención. En este ejemplo, todas especifican 10 años, pero puede que un evento desencadene etiquetas de retención donde cada etiqueta tenga un período de retención distinto.
   
-## <a name="how-to-set-up-event-driven-retention"></a>Configurar la retención controlada por eventos
+## <a name="how-to-set-up-event-based-retention"></a>Cómo configurar la retención basada en eventos
 
-Flujo de trabajo general para la retención controlada por eventos:
+Flujo de trabajo de alto nivel para la retención basada en eventos:
   
-![Diagrama del flujo de trabajo para configurar la retención controlada por eventos.](../media/event-based-retention-process.png)
+![Diagrama del flujo de trabajo para configurar la retención basada en eventos.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Vea [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para más información sobre cómo usar las propiedades administradas en SharePoint para aplicar automáticamente las etiquetas de retención e implementar la retención basada en eventos.
+> Vea [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener más información sobre cómo usar las propiedades administradas en SharePoint para aplicar automáticamente las etiquetas de retención e implementar la retención basada en eventos.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Paso 1: Crear una etiqueta cuyo período de retención se base en un evento
 
