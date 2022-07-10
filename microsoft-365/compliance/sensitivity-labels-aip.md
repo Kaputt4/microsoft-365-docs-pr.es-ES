@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 0a521dbabd6a9db52dd8405beabab29400d38d82
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628625"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696170"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -109,6 +109,8 @@ Implementar esta configuración mediante la directiva de grupo o mediante el [Se
 Como alternativa, puede deshabilitar o quitar de forma interactiva el complemento de Office **Microsoft Azure Information Protection** de Word, Excel, PowerPoint y Outlook. Este método es adecuado para un solo ordenador y para pruebas ad hoc. Para obtener instrucciones, consulte [Ver, administrar e instalar complementos en los programas de Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 Independientemente del método que elija, los cambios surtirán efecto cuando se reinicien las aplicaciones de Office.
+
+Si, después de realizar estos cambios, el botón **Confidencialidad** no se muestra en la cinta de Office, compruebe si se ha [desactivado](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) el etiquetado de confidencialidad.  Aunque esta no es la configuración predeterminada, es posible que un administrador haya establecido explícitamente esta configuración mediante directiva de grupo o editando directamente el Registro.
 
 > [!NOTE]
 > Las etiquetas integradas requieren una edición de suscripción a las aplicaciones de Office. Si tiene ediciones independientes de Office, a veces denominadas "Office Perpetua", le recomendamos que actualice a Aplicaciones de Microsoft 365 para empresas para beneficiarse de las [capacidades de etiquetado más recientes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).

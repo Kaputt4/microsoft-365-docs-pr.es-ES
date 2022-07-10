@@ -43,6 +43,7 @@
 #### [Usar la directiva de grupo](manage-mde-post-migration-group-policy-objects.md)
 #### [Usar PowerShell, WMI o MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Escenarios de migración de Server](server-migration.md)
+##### [Migrar servidores desde Microsoft Monitoring Agent a la solución unificada](application-deployment-via-mecm.md)
 
 ## [Incorporar y configurar dispositivos]()
 ### [Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión](onboard-configure.md)

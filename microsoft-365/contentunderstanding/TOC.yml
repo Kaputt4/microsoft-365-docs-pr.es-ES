@@ -18,6 +18,8 @@
           href: duplicate-a-model.md
         - name: Cambiar el nombre de un modelo
           href: rename-a-model.md
+        - name: Eliminar un modelo
+          href: delete-a-model.md
         - name: Crear un extractor
           href: create-an-extractor.md
         - name: Cambiar el nombre de un extractor

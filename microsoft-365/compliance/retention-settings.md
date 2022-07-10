@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639652"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695756"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -407,7 +407,7 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Volver a etiquetar al final del período de retención
 
 > [!NOTE]
-> Esta opción se está implementando actualmente en versión preliminar y está sujeta a cambios.
+> Esta opción está en versión preliminar y está sujeta a cambios.
 
 Al configurar una etiqueta de retención para aplicar automáticamente otra etiqueta de retención al final del período de retención, el elemento está sujeto a la configuración de retención de la etiqueta de retención recién seleccionada. Esta opción le permite cambiar automáticamente la configuración de retención del elemento.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ab54e60dbb127ac5f5cdffc835d0d00dc423d38
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633793"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696258"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -184,7 +184,7 @@ Los ámbitos de directiva adaptables permiten dirigir dinámicamente una directi
 
 Las directivas que usan ámbitos de directiva adaptables permanecen actualizadas a medida que la organización cambia con nuevos empleados que se unen o la abandonan. Además, no están sujetas a los límites anteriores de 100/1000 ubicaciones incluidas en una directiva.
 
-- Crear un  Ámbito de directiva adaptable y usarlo con una directiva de retención
+- Crear un [ Ámbito de directiva adaptable](retention.md#adaptive-or-static-policy-scopes-for-retention) y usarlo con una directiva de retención
 
 ### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>Paso 2: Automatizar el etiquetado para aplicar una etiqueta a todos los elementos de forma predeterminada
 
@@ -193,7 +193,7 @@ Las directivas que usan ámbitos de directiva adaptables permanecen actualizadas
 
 Las etiquetas predeterminadas le permiten aplicar automáticamente una etiqueta de retención a todos los elementos de una biblioteca, carpeta o conjunto de documentos especificados en SharePoint.
 
-- Publicar una etiqueta y aplicarla como predeterminada en SharePoint
+- Publicar una etiqueta y aplicarla como predeterminada en [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
@@ -384,7 +384,7 @@ Para habilitar el Análisis de riesgos internos, debe ser miembro o administrado
 
 **Administrar elementos de gran valor para los requisitos de mantenimiento de registros empresariales, legales o reglamentarios**:
 
-Use características de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Aproveche las funcionalidades de automatización, desde la creación hasta la colaboración, para declarar los registros, conservar los contenidos y eliminarlos al final.
+Use características integradas de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Aproveche las funcionalidades de automatización, desde la creación hasta la colaboración, para declarar los registros, conservar los contenidos y eliminarlos al final.
 
 ### <a name="step-1-mark-contents-as-records"></a>Paso 1: Marcar los contenidos como registros  
 
@@ -393,7 +393,7 @@ Use características de administración de registros de Microsoft Purview para a
 
 Cuando el contenido se declara como un registro, se aplican restricciones en el elemento en cuanto a las acciones permitidas o bloqueadas, se registran actividades adicionales sobre los elementos y se obtiene una prueba de disposición si los elementos se eliminan al final de su período de retención.
 
-- Crear una etiqueta de retención que declara el contenido como un registro o un registro normativo
+- Crear una etiqueta de retención que [declara el contenido como un registro o un registro normativo](declare-records.md)
 
 ### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Paso 2: revisar el contenido para aprobarlo antes de que se elimine definitivamente
 
@@ -402,7 +402,7 @@ Cuando el contenido se declara como un registro, se aplican restricciones en el 
 
 Al final del período de retención, los usuarios que usted especifique ("revisores") pueden ser notificados para revisar el contenido y aprobar la acción de eliminación permanente. Esto apoya si una acción diferente a la eliminación es más apropiada, como asignar un período de retención diferente al contenido o suspender la eliminación para una auditoría.
 
-- Crear una etiqueta de retención que use la revisión para eliminación
+- [Crear una etiqueta de retención que use la revisión para eliminación](disposition.md#disposition-reviews)
 
 ### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>Paso 3: Aplicar etiquetas automáticamente al contenido que coincida con condiciones específicas
 
@@ -411,9 +411,9 @@ Al final del período de retención, los usuarios que usted especifique ("reviso
 
 La aplicación automática de etiquetas elimina la necesidad de que los usuarios realicen manualmente las actividades de etiquetado. Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para clasificadores entrenables.
 
-- Aplicar automáticamente etiquetas de retención a contenido con tipos específicos de información confidencial
-- Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
-- Aplicar automáticamente etiquetas de retención con palabras clave o propiedades que se pueden buscar
+- [Aplicar automáticamente etiquetas de retención a contenido con tipos específicos de información confidencial](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Aplicar automáticamente etiquetas de retención con palabras clave o propiedades que se pueden buscar](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 ## <a name="additional-trials-and-add-ons"></a>Pruebas y complementos adicionales
 

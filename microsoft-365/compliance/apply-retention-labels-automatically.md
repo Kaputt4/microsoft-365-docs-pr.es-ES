@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689202"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695996"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -273,9 +273,11 @@ Al elegir la opción de un clasificador que se puede entrenar, puede seleccionar
 
 ![Elegir clasificador que se puede entrenar.](../media/retention-label-classifers.png)
 
-Para aplicar una etiqueta automáticamente usando esta opción, tanto los buzones como los sitios de SharePoint deben tener al menos 10 MB de datos.
+Los clasificadores previamente entrenados disponibles se actualizan a menudo, por lo que puede haber más entradas para seleccionar que las que se muestran en esta captura de pantalla.
 
 Para más información sobre los clasificadores que se pueden entrenar, consulte [Información sobre los clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md).
+
+Para aplicar una etiqueta automáticamente usando esta opción, tanto los buzones como los sitios de SharePoint deben tener al menos 10 MB de datos.
 
 > [!TIP]
 > Si usa clasificadores que se pueden entrenar para Exchange, consulte [Cómo volver a entrenar a un clasificador en el explorador de contenido (versión preliminar)](classifier-how-to-retrain-content-explorer.md).

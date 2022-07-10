@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662348"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696059"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -194,8 +194,7 @@ Cuando seleccione la opción **Clasificadores que se pueden entrenar**, seleccio
 
 ![Opciones para clasificadores capacitados y etiquetas de confidencialidad.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> Estamos desaprobando el clasificador preentrenado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador y, si lo está usando actualmente, le recomendamos que lo abandone para los procesos empresariales y que, en su lugar, use los clasificadores preentrenados de **Acoso dirigido**, **Lenguaje soez** y **Amenazas**.
+Los clasificadores previamente entrenados disponibles se actualizan a menudo, por lo que puede haber más entradas para seleccionar que las que se muestran en esta captura de pantalla.
 
 Para más información sobre estos clasificadores, consulte [Más información sobre clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md).
 

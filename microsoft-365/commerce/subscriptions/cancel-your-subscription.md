@@ -20,24 +20,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
-ms.date: 06/02/2022
-ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/07/2022
+ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490373"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695712"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Cancelar la suscripción a Microsoft
 
 Si quiere cancelar la suscripción, la manera más fácil de hacerlo es [desactivar la facturación periódica](renew-your-subscription.md). Al desactivar la facturación periódica, puede seguir usando la suscripción hasta que expire al final del período de suscripción. Si desea cancelar inmediatamente, use la información y los pasos de este artículo para hacerlo.
 
+Puede cancelar la evaluación gratuita en cualquier momento para evitar futuros cargos. Después de que termine la evaluación gratuita de 1 mes, se le cobrará la cuota de suscripción aplicable.
+
 > [!IMPORTANT]
-> - Este artículo solo se aplica a las suscripciones de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - Este artículo solo se aplica a las suscripciones de Dynamics 365, Intune, Power Platform, Windows 365 y Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 > - Si compró su suscripción a través de un representante de Microsoft o un partner de reventa, tiene siete días para cancelar el reembolso prorrateado. Póngase en contacto con el vendedor o el partner para ayudarle a cancelar la suscripción. [Más información sobre los partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
 > - Si su organización está ubicada en Chile y compró su suscripción a través de un partner en Chile, tiene 10 días para cancelar el reembolso prorrateado.
-
-Si quiere cancelar la suscripción, la manera más fácil de hacerlo es [desactivar la facturación periódica](renew-your-subscription.md). Al desactivar la facturación periódica, puede seguir usando la suscripción hasta que expire al final del período de suscripción. Si desea cancelar inmediatamente, use la información y los pasos de este artículo para hacerlo.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -58,9 +58,6 @@ Solo puede cancelar y recibir un crédito o reembolso prorrateado si lo cancela 
 Si necesita cancelar en un plazo de siete días después del inicio o la renovación de la suscripción, vaya a [Pasos para cancelar la suscripción](#steps-to-cancel-your-subscription), más adelante en este artículo.
 
 Si han transcurrido más de siete días, [desactive la facturación periódica](renew-your-subscription.md). Esto impide que la suscripción se renueve al final de su período.  Mantiene el acceso a sus productos y servicios durante el resto de la suscripción. Si tiene una suscripción anual y está pagando mensualmente, se le cobrará cada mes por el resto del período de suscripción.
-
-> [!NOTE]
-> Cancele la evaluación gratuita en cualquier momento para evitar futuros cargos. Después de la evaluación gratuita de 1 mes, se le cobrará la cuota de suscripción aplicable.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si no tiene un perfil de facturación
 
