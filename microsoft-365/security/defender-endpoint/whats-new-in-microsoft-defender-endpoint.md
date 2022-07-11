@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0949e979bfc2f0e2f784342e2a7c2f326908b49d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492433"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714627"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,13 +60,19 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
 - [Novedades de Defender para punto de conexión en Linux](linux-whatsnew.md)
 
+
+## <a name="july-2022"></a>Julio de 2022
+- - [Adición de dispositivos de controlador de dominio: mejora del laboratorio de evaluación](evaluation-lab.md#add-a-domain-controller)<br>Ahora disponible con carácter general: agregue un controlador de dominio para ejecutar escenarios complejos, como el movimiento lateral y los ataques de varias fases en varios dispositivos.
+
+
+
 ## <a name="june-2022"></a>Junio de 2022
 - [El plan 2 de Defender para servidores ahora se integra con la solución unificada MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>Ahora puede empezar a implementar la solución moderna y unificada para Windows Server 2012 R2 y 2016 en los servidores cubiertos por el plan 2 de Defender para servidores con un solo botón.
 
 ## <a name="may-2022"></a>Mayo de 2022
 - [Protección contra alteraciones para macOS (versión preliminar)](tamperprotection-macos.md)<br>La protección contra alteraciones ayuda a evitar la eliminación no autorizada de Microsoft Defender para punto de conexión en macOS.
 
-- [Agregar dispositivos de controlador de dominio: mejora del laboratorio de evaluación (versión preliminar)](evaluation-lab.md#add-a-domain-controller-preview)<br>Agregue un controlador de dominio para ejecutar escenarios complejos, como movimiento lateral y ataques de varias fases en varios dispositivos.
+- [Agregar dispositivos de controlador de dominio: mejora del laboratorio de evaluación (versión preliminar)](evaluation-lab.md#add-a-domain-controller)<br>Agregue un controlador de dominio para ejecutar escenarios complejos, como movimiento lateral y ataques de varias fases en varios dispositivos.
 
 ## <a name="april-2022"></a>Abril de 2022
 - [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016)](configure-server-endpoints.md)<br/> El nuevo paquete de solución unificada ya está disponible con carácter general y facilita la incorporación de servidores mediante la eliminación de dependencias y los pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.

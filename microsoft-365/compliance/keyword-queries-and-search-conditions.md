@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft 365.
-ms.openlocfilehash: 3ff2143a170531b527850b4805cb9a79f10afb5e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4de131ea9dc8b1f7df486dd5c6ead7eee677869e
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623879"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714561"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para eDiscovery
 
@@ -110,7 +110,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página **Compartido conmigo** del sitio OneDrive para la Empresa del usuario. Estos son documentos que otras personas de la organización han compartido explícitamente con el usuario especificado. Al exportar documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, consulte [Búsqueda de contenido de sitio compartido dentro de su organización](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Garth Fort y que aparecen en la página **Compartido conmigo** de la cuenta OneDrive para la Empresa de Garth Fort.|
 |Site|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la Empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
 |Size|El tamaño de un elemento, en bytes.|`size>=1` <p> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
-|Cargo|El título del documento. La propiedad Title es metadatos que se especifican en documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
+|Título|El título del documento. La propiedad Title es metadatos que se especifican en documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
 
 ## <a name="searchable-contact-properties"></a>Propiedades de contacto que se pueden buscar
 
@@ -138,29 +138,29 @@ En la tabla siguiente se enumeran las propiedades de contacto indexadas y que pu
 |OfficeLocation|Valor de la propiedad de **ubicación** de **Office** u Office.|
 |OtherAddress|Valor de la propiedad **Other** address.|
 |Surname|Nombre de la propiedad **Apellido** .|
-|Cargo|Título de la propiedad **Job title** .|
+|Título|Título de la propiedad **Job title** .|
 
-## <a name="searchable-sensitive-data-types"></a>Tipos de datos confidenciales que se pueden buscar
+<!--## Searchable sensitive data types
 
-Puede usar las herramientas de búsqueda de eDiscovery en el portal de cumplimiento para buscar datos confidenciales, como números de tarjeta de crédito o números de seguridad social, que se almacenan en documentos en SharePoint y OneDrive para la Empresa sitios. Para ello, use la `SensitiveType` propiedad y el nombre (o identificador) de un tipo de información confidencial en una consulta de palabras clave. Por ejemplo, la consulta `SensitiveType:"Credit Card Number"` devuelve documentos que contienen un número de tarjeta de crédito. La consulta  `SensitiveType:"U.S. Social Security Number (SSN)"` devuelve documentos que contienen un número de seguro social estadounidense.
+You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
-Para ver una lista de los tipos de información confidencial que puede buscar, vaya a **Clasificaciones** \> de datos **Tipos de información confidencial** en el portal de cumplimiento. O bien, puede usar el cmdlet **Get-DlpSensitiveInformationType** en PowerShell de cumplimiento de seguridad & para mostrar una lista de tipos de información confidencial.
+To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
 
-Para obtener más información sobre cómo crear consultas mediante la `SensitiveType` propiedad , vea [Formulario de una consulta para buscar datos confidenciales almacenados en sitios](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-### <a name="limitations-for-searching-sensitive-data-types"></a>Limitaciones para buscar tipos de datos confidenciales
+<!--### Limitations for searching sensitive data types
 
-- Para buscar tipos de información confidencial personalizados, debe especificar el identificador del tipo de información confidencial en la `SensitiveType` propiedad . El uso del nombre de un tipo de información confidencial personalizada (como se muestra en el ejemplo para los tipos de información confidencial integrados en la sección anterior) no devolverá ningún resultado. Use la columna **Publicador** en la página **Tipos de información confidencial** del centro de cumplimiento (o la propiedad **Publisher** en PowerShell) para diferenciar entre los tipos de información confidencial integrados y personalizados. Los tipos de datos confidenciales integrados tienen un valor de `Microsoft Corporation` para la propiedad **Publisher** .
+- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
 
-  Para mostrar el nombre y el identificador de los tipos de datos confidenciales personalizados de su organización, ejecute el siguiente comando en PowerShell de seguridad & cumplimiento:
+  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
   ```
 
-  A continuación, puede usar el identificador en la `SensitiveType` propiedad de búsqueda para devolver documentos que contengan el tipo de datos confidenciales personalizado; por ejemplo, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
+  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- No puede usar tipos de información confidencial y la `SensitiveType` propiedad de búsqueda para buscar datos confidenciales en reposo en Exchange Online buzones. Esto incluye mensajes de chat 1:1, mensajes de chat de grupo 1:N y conversaciones de canal de equipo en Microsoft Teams porque todo este contenido se almacena en buzones de correo. Sin embargo, puede usar directivas de prevención de pérdida de datos (DLP) para proteger los datos de correo electrónico confidenciales en tránsito. Para obtener más información, consulte [Información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md) y [Búsqueda y búsqueda de datos personales](/compliance/regulatory/gdpr).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
 
 ## <a name="search-operators"></a>Operadores de búsqueda
 
@@ -220,7 +220,7 @@ Cree una condición mediante propiedades comunes al buscar en buzones y sitios d
 
 Cree una condición mediante propiedades de correo al buscar buzones o carpetas públicas. En la tabla siguiente se enumeran las propiedades de correo electrónico que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades de correo electrónico que se describieron anteriormente. Estas descripciones se repiten para su comodidad.
 
-|Condición|Description|
+|Condición|Descripción|
 |---|---|
 |Tipo de mensaje|El tipo de mensaje para buscar. Se trata de la misma propiedad que la propiedad de correo electrónico Tipo. Valores posibles: <ul><li>contactos</li><li>documentos</li><li>correo electrónico</li><li>externaldata</li><li>fax</li><li>mensajería instantánea</li><li>diarios</li><li>reuniones</li><li>microsoftteams</li><li>notas</li><li>entradas</li><li>fuentes rss</li><li>tareas</li><li>correo de voz</li></ul>|
 |Participantes|Todos los campos de personas de un mensaje de correo electrónico. Estos campos son From, To, Cc y Bcc. ([Consulte Expansión de destinatarios](keyword-queries-and-search-conditions.md#recipient-expansion))|
@@ -236,10 +236,10 @@ Cree una condición mediante propiedades de correo al buscar buzones o carpetas 
 
 Cree una condición mediante propiedades de documento al buscar documentos en SharePoint y OneDrive para la Empresa sitios. En la tabla siguiente se enumeran las propiedades del documento que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades del sitio que se describieron anteriormente. Estas descripciones se repiten para su comodidad.
 
-|Condición|Description|
+|Condición|Descripción|
 |---|---|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que luego lo carga en SharePoint, el documento conservará el autor original.|
-|Cargo|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
+|Título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
 |Fecha de creación|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|
 |Tipo de archivo|Extensión de un archivo; por ejemplo, docx, one, pptx o xlsx. Se trata de la misma propiedad que la propiedad del sitio FileExtension. <p> **Nota:** Si incluye una condición de tipo File mediante el operador **Equals** o **Equals en una consulta de** búsqueda, no puede usar una búsqueda de prefijo (incluyendo el carácter comodín ( \* ) al final del tipo de archivo) para devolver todas las versiones de un tipo de archivo. Si lo hace, se omitirá el carácter comodín. Por ejemplo, si incluye la condición `Equals any of doc*`, solo se devolverán los archivos con una extensión de `.doc` . Los archivos con una extensión de `.docx` no se devolverán. Para devolver todas las versiones de un tipo de archivo, se usa el par *property:value* en una consulta de palabras clave; por ejemplo, `filetype:doc*`.|

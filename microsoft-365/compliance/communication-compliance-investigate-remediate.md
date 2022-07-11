@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: daa8eeab7f62b760b45e6c1571972dcd0ee83ae6
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687134"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714495"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -87,28 +87,6 @@ En la tabla siguiente se describen los detalles del filtro:
 8. Si desea guardar los filtros seleccionados como una consulta de filtro, seleccione **Guardar el** control de consulta después de configurar al menos un valor de filtro. Escriba un nombre para la consulta de filtro y seleccione **Guardar**. Este filtro solo está disponible para usarse para esta directiva y se muestra en la sección **Consultas de filtro guardadas** de la página **Detalles de filtros** .
 
     ![Controles de detalle del filtro de cumplimiento de comunicaciones.](../media/communication-compliance-filter-detail-controls.png)
-
-### <a name="using-near-and-exact-duplicate-analysis"></a>Usar análisis duplicados cercanos y exactos
-
-Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticamente semiduplicados y duplicados exactos de mensaje sin pasos de configuración adicional. Esta vista le permite actuar rápidamente en mensajes similares uno por uno o como grupo, lo que reduce la carga de investigación de mensajes para los revisores. A medida que se detectan los duplicados, los controles de **Semiduplicados** y/o **Duplicados exactos** se muestran en la barra de herramientas de acción de corrección. Esta vista no está disponible si no se encuentran duplicados cercanos o exactos.
-
-#### <a name="to-remediate-duplicates"></a>Para corregir duplicados
-
-1. Inicie sesión en la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
-
-2. En el portal de cumplimiento Microsoft Purview, vaya a **Cumplimiento de comunicaciones**.
-
-3. Seleccione la pestaña **Directivas** y, a continuación, seleccione una directiva para la investigación y haga doble clic para abrir la página **Directiva** .
-
-4. En la página **Directiva** , seleccione la pestaña **Pendiente** o **Resuelta** para mostrar mensajes duplicados.
-
-5. Seleccione los controles **Near Duplicates (Duplicados cercanos** ) o **Exact Duplicates (Duplicados exactos** ) para abrir la página de detalles de duplicados.
-
-6. Seleccione uno o varios mensajes para los controles de acción de corrección de estos mensajes.
-
-7. Seleccione **Resolver**, **Notificar**, **Escalar** o **Descargar** para aplicar la acción a los mensajes duplicados seleccionados como filtro predeterminado.
-
-8. Seleccione **Cerrar** después de completar las acciones de corrección en los mensajes.
 
 ## <a name="remediate-alerts"></a>Corrección de alertas
 

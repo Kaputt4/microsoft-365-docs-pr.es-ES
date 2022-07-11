@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet AllowSelfServicePurchase de PowerShell para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530846"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714714"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Uso de AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
@@ -108,6 +108,10 @@ En la tabla siguiente se enumeran los productos disponibles y su **ProductId**.
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business con Ventaja híbrida de Windows | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N |
+| Asociación de marketing de Dynamics 365 | CFQ7TTC0LHWP | 
+| Aplicación adicional de marketing de Dynamics 365 | CFQ7TTC0LHVK |
+| Aplicación adicional no producción de Dynamics 365 Marketing | CFQ7TTC0LHWM |
 
 *Estos identificadores han cambiado. Si anteriormente bloqueó productos con los identificadores antiguos, se bloquearán automáticamente mediante los nuevos identificadores. No se requiere ningún trabajo adicional.
 

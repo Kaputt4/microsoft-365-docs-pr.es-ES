@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución eDiscovery (Premium) en Microsoft Purview. En este artículo se proporciona información general sobre eDiscovery (Premium) en Microsoft Purview, una herramienta que le ayudará a administrar investigaciones internas y externas. También se enmarcan los motivos empresariales para usar eDiscovery (Premium) para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5331ada9baf364f62c44c63a5e2e5b2b4d060292
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639850"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714583"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Información general de Microsoft Purview eDiscovery (Premium)
 
@@ -93,38 +93,9 @@ En un nivel alto, aquí se muestra cómo eDiscovery (Premium) admite el flujo de
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
-Las licencias para eDiscovery (Premium) requieren la suscripción de la organización adecuada y las licencias por usuario.
+Para obtener información sobre qué licencias proporcionan los derechos para que un usuario se beneficie de eDiscovery (Premium), consulte [guía de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) y vea la sección "eDiscovery and auditing" en la [tabla Comparación de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
 
-- **Suscripción a la organización:** Para acceder a eDiscovery (Premium) en el portal de cumplimiento Microsoft Purview, su organización debe tener uno de los siguientes elementos:
-
-  - Suscripciones a Microsoft 365 E5 u Office 365 E5.
-  
-  - Suscripción a Microsoft 365 E3 con complemento de cumplimiento E5
-
-  - Microsoft 365 E3 suscripción con el complemento E5 eDiscovery y Audit
-
-  - Microsoft 365 Educación suscripción A5 o Office 365 Educación A5
-
-   Si no tiene un plan de Microsoft 365 E5 existente y quiere probar eDiscovery (Premium), puede [agregar Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción existente o [registrarse para obtener una prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 E5.
-
-- **Licencias por usuario:** Para agregar un usuario como custodio en un caso de exhibición de documentos electrónicos avanzados, ese usuario debe tener asignada una de las licencias siguientes, en función de la suscripción de su organización:
-
-  - Microsoft 365: Se debe asignar a los usuarios una de las siguientes opciones:
-  
-    - Microsoft 365 E5 licencia, una licencia de complemento de cumplimiento E5 o un complemento E5 eDiscovery y Audit
-
-    - A los usuarios de primera línea de Microsoft 365 se les debe asignar un complemento de cumplimiento de F5 o cumplimiento de seguridad de F5 &
-
-    - Microsoft 365 Educación a los usuarios se les debe asignar una licencia A5
-
-  - Office 365: a los usuarios se les debe asignar una licencia Office 365 E5 o Office 365 Educación A5.
-
-Para obtener información sobre las licencias, descargue y vea la sección "eDiscovery and auditing" (Exhibición de documentos electrónicos y auditoría) en la [tabla Comparación de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
-
-Para obtener información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Los usuarios solo necesitan una licencia E5 o A5 (o la licencia de complemento adecuada) para agregarse como custodios a un caso de exhibición de documentos electrónicos (Premium). Los administradores de TI, administradores de eDiscovery, abogados, asistentes o investigadores que usan eDiscovery (Premium) para administrar casos y revisar los datos de casos no necesitan una licencia E5, A5 o complemento.
+Para obtener información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>Introducción a eDiscovery (Premium)
 

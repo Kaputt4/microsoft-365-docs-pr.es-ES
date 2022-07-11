@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679448"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714605"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratorio de evaluación de Microsoft Defender para punto de conexión
 
@@ -43,7 +43,7 @@ Con la experiencia de configuración simplificada, puede centrarse en la ejecuci
 
 Tendrá acceso completo a las eficaces funcionalidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que le permite probar la pila de protección completa que Ofrece Defender para punto de conexión.
 
-Puede agregar dispositivos Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu) preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office estándar de 2019.
+Puede agregar dispositivos Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu) preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office 2019 Standard.
 
 También puede instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las funcionalidades de Defender para punto de conexión sin tener que salir del portal.
 
@@ -66,7 +66,7 @@ Para obtener más información, consulte [Creación y administración de roles](
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
-## <a name="get-started-with-the-lab"></a>Comenzar con el laboratorio
+## <a name="get-started-with-the-lab"></a>Introducción al laboratorio
 
 Puede acceder al laboratorio desde el menú. En el menú de navegación, seleccione **Evaluación y tutoriales > laboratorio de evaluación**.
 
@@ -107,7 +107,7 @@ Una vez completado el proceso de instalación del laboratorio, puede agregar dis
 
 Al agregar un dispositivo a su entorno, Defender para punto de conexión configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
 
-El dispositivo se configurará con la versión más actualizada del sistema operativo y Office estándar de 2019, así como con otras aplicaciones como Java, Python y SysIntenals.
+El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals.
 
 Si decide agregar un simulador de amenazas durante la configuración del laboratorio, todos los dispositivos tendrán instalado el agente del simulador de amenazas en los dispositivos que agregue.
 
@@ -125,7 +125,7 @@ Los siguientes componentes de seguridad están preconfigurados en los dispositiv
 - [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus de Microsoft Defender estará activado (no en modo de auditoría). Si Antivirus de Microsoft Defender impide ejecutar la simulación, puede desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configurar la protección always-on](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Antivirus de Microsoft Defender estará activado (no en modo de auditoría). Si Antivirus de Microsoft Defender impide que ejecute la simulación, puede desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configurar la protección always-on](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 La configuración de investigación automatizada dependerá de la configuración del inquilino. Se configurará para que esté semiauto automatizado de forma predeterminada. Para obtener más información, consulte [Introducción a las investigaciones automatizadas](automated-investigations.md).
 
@@ -159,10 +159,7 @@ La configuración de investigación automatizada dependerá de la configuración
    > En la columna **Estado del simulador** , puede mantener el puntero sobre el icono de información para conocer el estado de instalación de un agente.
 
 
-## <a name="add-a-domain-controller-preview"></a>Agregar un controlador de dominio (versión preliminar)
-
-> [!IMPORTANT]
-> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+## <a name="add-a-domain-controller"></a>Agregar un controlador de dominio 
 
 Agregue un controlador de dominio para ejecutar escenarios complejos, como movimiento lateral y ataques de varias fases en varios dispositivos.
 
@@ -219,7 +216,7 @@ Si está buscando una simulación pre-hecha, puede usar nuestros escenarios de [
 > [!NOTE]
 > La conexión a los dispositivos de prueba se realiza mediante RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
-1. Conectar al dispositivo y ejecute una simulación de ataque seleccionando **Conectar**.
+1. Conéctese al dispositivo y ejecute una simulación de ataque seleccionando **Conectar**.
 
     :::image type="content" source="images/test-machine-table.png" alt-text="Botón Conectar para los dispositivos de prueba" lightbox="images/test-machine-table.png":::
 

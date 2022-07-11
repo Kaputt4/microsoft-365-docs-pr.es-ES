@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0b8b285573c9a2f78037e2d29ea3a57ddfa2b306
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 1cb523725eee6f8eec2330dee3ccd8bb8d6ab0f7
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686303"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714473"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
@@ -104,7 +104,6 @@ Los flujos de trabajo de corrección integrados le permiten identificar y tomar 
 - **Flujo de trabajo de corrección flexible**: el nuevo flujo de trabajo de corrección le ayuda a tomar medidas rápidamente en las coincidencias de directivas, incluidas las nuevas opciones para escalar los mensajes a otros revisores y enviar notificaciones por correo electrónico a los usuarios con coincidencias de directivas.
 - **Coincidencia de directivas de conversación**: los mensajes de las conversaciones se agrupan por coincidencias de directivas para proporcionarle más visibilidad sobre cómo se relacionan las conversaciones con las directivas de comunicación. Por ejemplo, la coincidencia de directivas de conversación en la vista *Alertas pendientes* mostrará automáticamente todos los mensajes de un canal de Teams que tengan coincidencias con la directiva de contenido inadecuado. No se mostrarán otros mensajes de la conversación que no coincidan con la directiva de contenido inadecuado.
 - **Resaltado de palabras clave**: Los términos que coinciden con las condiciones de la directiva se resaltan en la vista del texto del mensaje para ayudar a los revisores a localizar y corregir rápidamente las alertas de la directiva.
-- **Detección exacta y casi duplicada**: además de examinar los términos exactos que coinciden con las directivas de cumplimiento de comunicaciones, los grupos de detección de duplicados agrupan términos y mensajes textualmente similares para ayudar a acelerar el proceso de revisión.
 - **Reconocimiento óptico de caracteres (OCR) (versión preliminar):** escanee, detecte e investigue texto impreso y manuscrito dentro de imágenes incrustadas o adjuntas a mensajes de correo electrónico o de chat de Microsoft Teams.
 - **Nuevos filtros**: investigue y corrija las alertas de directiva más rápido con filtros de mensajes para varios campos, incluidos remitente, destinatario, fecha, dominios y muchos más.
 - **Vistas de mensaje mejoradas**: las acciones de investigación y corrección ahora son más rápidas con las nuevas vistas de texto y origen de mensajes. Los datos adjuntos de mensajes ahora se pueden ver para proporcionar un contexto completo al realizar acciones de corrección.

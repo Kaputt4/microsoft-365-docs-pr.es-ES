@@ -19,21 +19,21 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
-ms.date: 04/28/2022
-ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/11/2022
+ms.openlocfilehash: e6e24d56346f67c40f114cf7ab23345d4511b026
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485987"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714079"
 ---
 # <a name="understand-the-microsoft-proposal-workflow"></a>Descripción del flujo de trabajo de propuestas de Microsoft
 
-Una propuesta es una oferta formal de Microsoft para que su organización compre productos y servicios de Microsoft. Trabaja directamente con un representante de Microsoft para determinar los productos, servicios y términos específicos de su propuesta.
+Una propuesta es una oferta formal de Microsoft para que su organización compre productos y servicios de Microsoft. Las propuestas representan grandes pedidos que la adquisición de su organización o el departamento de TI realizan con Microsoft.
 
-Un representante de Microsoft redacta una propuesta que contiene los elementos que usted y su representante han analizado. El representante le envía un correo electrónico que tiene un vínculo al portal de Azure Marketplace. El sitio contiene la propuesta preparada específicamente para usted y su organización.
+Antes de que comience el flujo de trabajo de la propuesta, el departamento de adquisiciones trabaja directamente con un representante designado de Microsoft para determinar los productos y servicios específicos que necesita su organización. A continuación, el representante de Microsoft redacta una propuesta y envía al departamento de adquisiciones un correo electrónico con un vínculo para aceptar la propuesta en el portal de Azure Marketplace. El sitio contiene la propuesta preparada específicamente para usted y su organización.
 
-Después de recibir el correo electrónico de notificación, siga el vínculo al sitio de la propuesta. Después de iniciar sesión en el sitio, puede iniciar el proceso de revisión de propuestas.
+Después de seguir el vínculo e iniciar sesión en el sitio de propuesta, puede iniciar el proceso de revisión de la propuesta. Después de completar la revisión y el des check-out de la propuesta, recibirá una factura para los productos comprados según el plan de facturación seleccionado. Para obtener información sobre cómo funciona la facturación de las propuestas, consulte [Descripción de la facturación](#understand-invoicing) a continuación.
 
 ## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Requisitos previos para comprar artículos con una propuesta
 
@@ -75,7 +75,7 @@ Para obtener más información sobre los roles de cuenta de facturación, consul
 
 Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato, se convierte automáticamente en el propietario de la cuenta de facturación, siempre que:
 
-- ¿Es la persona nombrada en la propuesta **o**
+- ¿Es la persona nombrada en la propuesta o
 - Ya es [un administrador global de Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) para su organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
@@ -88,7 +88,7 @@ El flujo de trabajo general de la propuesta tiene este aspecto:
 - Revise la propuesta, acepte el MCA si es necesario y finalice el proceso de compra.
   > [!IMPORTANT]
   > Debe tener la autoridad para firmar una MCA en nombre de su organización. Si no tiene esa autoridad, alguien que lo haga debe realizar este paso.
-- Una vez finalizada la compra, se le proporcionan vínculos adicionales para configurar sus productos y servicios.
+- Una vez finalizada la compra, se le proporcionan más vínculos para configurar los productos y servicios.
 
 ## <a name="proposal-terms"></a>Términos de la propuesta
 
@@ -98,7 +98,7 @@ La tabla siguiente contiene términos y definiciones que aparecen en la propuest
 |---|---|
 | Cuenta de facturación | Una cuenta que se usa para administrar la configuración de la cuenta, las facturas, los métodos de pago y los productos. |
 | Perfil de facturación | Información sobre su organización que le permite personalizar qué elementos se incluyen en la factura y cómo se paga por las facturas. El perfil de facturación incluye el nombre de la cuenta de facturación, los métodos de pago usados para el perfil de facturación específico, la información de contacto, la configuración de la factura y los permisos que le permiten cambiar el perfil de facturación, pagar facturas y comprar productos y servicios. |
-| Acuerdos existentes | Cualquier acuerdo que su organización ya tenga en vigor con Microsoft. Esto puede incluir, entre otros, un Enterprise Agreement, un Contrato de servicios de & de productos de Microsoft o Contrato de cliente de Microsoft. |
+| Acuerdos existentes | Cualquier acuerdo que su organización ya tenga en vigor con Microsoft. Los contratos pueden incluir, entre otros, un Enterprise Agreement, un Contrato de servicios de & de productos de Microsoft o Contrato de cliente de Microsoft. |
 | Contrato de cliente de Microsoft (MCA) | Un acuerdo que describe los términos y condiciones de la cuenta que mantiene su organización con Microsoft. |
 | Representante de Microsoft | Un representante autorizado de Microsoft que prepara una propuesta para usted y su organización. |
 | Organización | Entidad jurídica que usa productos, tecnologías o servicios de Microsoft. |
@@ -113,7 +113,7 @@ Después de iniciar sesión, lo primero que hace es revisar la información de s
 
 En la sección **Su organización** se muestra la cuenta de facturación asociada a ella. La información de la cuenta de facturación se extrae de una cuenta de facturación existente o la crea automáticamente el representante de Microsoft. Si su organización es una filial de otra organización, también verá una sección **de organización de clientes potenciales** con el nombre y la dirección de esa organización.
 
-Si es la primera vez que su organización establece una relación comercial con Microsoft y aún no ha firmado una MCA, si la información de **su organización** o **organización de clientes potenciales** es incorrecta, póngase en contacto con el representante para realizar cambios. Una vez que haya aceptado una MCA, puede revisar y cambiar la dirección de la organización y la información de contacto en la página [Cuentas de facturación](https://go.microsoft.com/fwlink/p/?linkid=2084771) de la Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../admin/get-help-support.md).
+Si este pedido es la primera vez que su organización establece una relación comercial con Microsoft y aún no ha firmado una MCA, si la información de **su organización** o **organización de clientes potenciales** es incorrecta, póngase en contacto con el representante para realizar cambios. Una vez que haya aceptado una MCA, puede revisar y cambiar la dirección de la organización y la información de contacto en la página [Cuentas de facturación](https://go.microsoft.com/fwlink/p/?linkid=2084771) de la Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de soporte técnico para que se actualice. [Obtenga información sobre cómo abrir una solicitud de soporte técnico](../admin/get-help-support.md).
 
 ### <a name="your-information"></a>Su información
 
@@ -135,7 +135,7 @@ La propuesta contiene la siguiente información:
 |---|---|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | Fecha en la que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para informarle de que todavía le interesa la propuesta. |
-| Divisa | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
+| Moneda | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
 | Preparado para | El nombre de la cuenta de facturación, la dirección, la dirección de correo electrónico de contacto y el número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | Dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |
@@ -154,7 +154,7 @@ La página de desprotección contiene las secciones siguientes:
 
 En esta sección se muestra la cuenta de facturación utilizada para la propuesta. Si necesita cambiar cualquier información, seleccione el vínculo **Editar** . También puede usar el vínculo **Editar** para agregar el identificador de impuestos de su organización. El id. fiscal debe estar relacionado con el país que aparece en la sección **Vendido a** . Si tiene una exención fiscal, debe abrir una incidencia de soporte técnico para solicitar el estado exento de impuestos.
 
-Para obtener más información sobre los identificadores de impuestos y cómo solicitar el estado exento de impuestos, consulte [Información fiscal](billing-and-payments/tax-information.md).
+Para obtener más información sobre los identificadores de impuestos y cómo solicitar el estado de exención de impuestos, consulte [Información fiscal de Microsoft 365](billing-and-payments/tax-information.md).
 
 ### <a name="billed-to"></a>Facturado a
 
@@ -164,7 +164,7 @@ Para obtener información sobre los perfiles de facturación, consulte [Administ
 
 ### <a name="proposal-items-in-this-order"></a>Elementos de propuesta en este orden
 
-En esta sección se muestra una lista de todos los elementos incluidos en la propuesta. La lista puede incluir una o varias de las categorías siguientes:
+En esta sección se muestra una lista de todos los elementos incluidos en la propuesta, que pueden incluir una o varias de las categorías siguientes:
 
 - **Términos complementarios** Una lista de las enmiendas a la MCA que contienen términos para su organización. Por ejemplo, esta lista podría incluir términos HIPAA o RGPD.
 - **Comprar ahora** Una lista de los elementos que paga durante la compra al final del flujo de trabajo de aceptación de la propuesta.
@@ -190,6 +190,6 @@ Si es un cliente de Azure existente con un Enterprise Agreement y firma una MCA 
 
 ## <a name="understand-invoicing"></a>Descripción de la facturación
 
-Después de realizar el check-out y completar el pedido, se envía una factura inicial en un plazo de 24 a 48 horas. Después, recibirá facturas alrededor del día 5 de cada mes. La factura mensual contiene cargos del mes anterior. Si tiene créditos para su cuenta, se deducirán de los créditos monetarios de su perfil de facturación y se aplicarán al saldo de la factura. El saldo restante después de aplicar los créditos es el saldo vencido. Tiene 30 días a partir de la fecha de facturación para pagar la factura.
+Después de realizar el check-out y completar el pedido, se envía una factura inicial en un plazo de 24 a 48 horas. Después de eso, recibe facturas alrededor del quinto de cada mes. La factura mensual contiene cargos del mes anterior. Si tiene créditos para su cuenta, se deducirán de los créditos monetarios de su perfil de facturación y se aplicarán al saldo de la factura. El saldo restante después de aplicar los créditos es el saldo vencido. Tiene 30 días a partir de la fecha de facturación para pagar la factura.
 
 Las instrucciones de pago sobre dónde enviar cheques o transferencias bancarias se incluyen en la copia EN PDF de la factura. Para ver o descargar la factura, consulte [Ver la factura o la factura](billing-and-payments/view-your-bill-or-invoice.md).

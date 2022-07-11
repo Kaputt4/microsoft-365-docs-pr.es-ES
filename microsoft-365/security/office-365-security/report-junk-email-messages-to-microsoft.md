@@ -1,5 +1,5 @@
 ---
-title: Notificar mensajes de correo no deseado, no correo no deseado y suplantación de identidad (phishing) a Microsoft
+title: Informar de correo no deseado, no correo no deseado, suplantación de identidad (phishing) y correos electrónicos sospechosos a Microsoft
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre las distintas formas de informar a Microsoft de mensajes correctos y incorrectos, direcciones URL, datos adjuntos de correo electrónico y administradores.
+description: Cómo notificar un correo electrónico sospechoso a Microsoft? Informe de mensajes, direcciones URL y datos adjuntos de correo electrónico a Microsoft para su análisis. Aprenda a notificar correos electrónicos no deseados y correos electrónicos de suplantación de identidad (phishing).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29fd6b74901c6ad85d1ece759245f1b85e672a23
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 67b4d0a2dc3f52c66c1fea406a51005daa43093a
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663424"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714451"
 ---
-# <a name="report-items-to-microsoft"></a>Informar de elementos a Microsoft
+# <a name="how-do-i-report-a-suspicious-email-to-microsoft"></a>Cómo notificar un correo electrónico sospechoso a Microsoft?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,12 +33,14 @@ ms.locfileid: "66663424"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones de correo, los usuarios y administradores tienen varios métodos diferentes para notificar mensajes de correo electrónico, direcciones URL y datos adjuntos de correo electrónico a Microsoft. 
- 
+¿Te preguntas qué hacer con correos electrónicos sospechosos? En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones de correo, *los usuarios* y administradores tienen diferentes *maneras* de notificar un mensaje de correo electrónico sospechoso, una dirección URL o datos adjuntos de correo electrónico a Microsoft.
+
 Además, las organizaciones de Microsoft 365 con administradores de Microsoft Defender para punto de conexión también tienen varios métodos para informar de archivos.
 
 Vea este vídeo que muestra más información sobre la experiencia de envíos unificados.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
+
+## <a name="report-a-suspicious-email-to-microsoft"></a>Notificar un correo electrónico sospechoso a Microsoft
 
 |Método|Descripción|
 |---|---|

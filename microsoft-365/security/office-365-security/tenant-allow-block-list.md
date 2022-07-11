@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060946"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714517"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -33,7 +33,7 @@ ms.locfileid: "66060946"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje podría marcarse como incorrecto (un falso positivo) o un mensaje incorrecto podría permitirse a través de (un falso negativo).
+En las organizaciones de Microsoft 365 con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje podría marcarse como incorrecto (un falso positivo) o un mensaje incorrecto podría permitirse a través de (un falso negativo).
 
 La lista de permitidos o bloqueados de inquilinos del portal de Microsoft 365 Defender proporciona una manera de invalidar manualmente los veredictos de filtrado de Microsoft 365. La lista de permitidos o bloqueados de inquilinos se usa durante el flujo de correo para los mensajes entrantes (no se aplica a los mensajes dentro de la organización) y en el momento en que el usuario hace clic. Puede especificar los siguientes tipos de invalidaciones:
 
@@ -45,7 +45,10 @@ La lista de permitidos o bloqueados de inquilinos del portal de Microsoft 365 De
 - Archivos que se van a permitir.
 - Dominios o correos electrónicos del remitente que se van a permitir.
 
-En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones).
+En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online  buzones).
+
+> [!NOTE]
+> La [lista "Bloquear las siguientes direcciones URL" en las directivas de vínculos seguros](safe-links.md#block-the-following-urls-list-for-safe-links) está en desuso. Ahora puede administrar las entradas de dirección URL de bloque en la lista de permitidos o bloqueados de inquilinos. Intentaremos migrar las entradas existentes de la lista "Bloquear las siguientes direcciones URL" para bloquear las entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos. Los mensajes que contienen la dirección URL bloqueada se pondrán en cuarentena.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
