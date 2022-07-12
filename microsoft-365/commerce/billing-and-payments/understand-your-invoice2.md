@@ -20,14 +20,14 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Obtenga información sobre cómo interpretar los cargos, la facturación y la información de pago en la Microsoft 365 de factura o factura empresarial.
+description: Obtenga información sobre cómo interpretar los cargos, la facturación y la información de pago en la factura o factura de Microsoft 365 para empresas.
 ms.date: 05/24/2022
-ms.openlocfilehash: 594ad923c186410ad17085425fc0702d1a245ef9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 57120632cfe0b3543b228dfaca5955dfa31e4358
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670254"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717876"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
@@ -38,7 +38,7 @@ La factura o factura proporciona un resumen de los cargos de la suscripción e i
 
 ## <a name="how-often-and-when-am-i-billed"></a>¿Con qué frecuencia y cuándo se me factura?
 
-En función de la frecuencia de facturación que elija al comprar la suscripción, recibirá una factura mensual, trimestral, semestral o anual. El período de tiempo transcurrido desde la última fecha de factura se denomina *período de facturación* y se encuentra en la página uno de la factura. Esta hora representa el intervalo de fechas durante el cual se acumulan los cargos de la factura actual. Si ha realizado un cambio en su suscripción fuera de este intervalo de fechas, como agregar o quitar licencias, los cargos asociados aparecen en la factura para el siguiente período de facturación.
+En función de la frecuencia de facturación que elija al comprar la suscripción, recibirá una factura mensual o anual. El período de tiempo transcurrido desde la última fecha de factura se denomina *período de facturación* y se encuentra en la página uno de la factura. Esta hora representa el intervalo de fechas durante el cual se acumulan los cargos de la factura actual. Si ha realizado un cambio en su suscripción fuera de este intervalo de fechas, como agregar o quitar licencias, los cargos asociados aparecen en la factura para el siguiente período de facturación.
 
 A partir de la página dos de la factura, verá los cargos agrupados por su *período de servicio*. El período de servicio es el intervalo de fechas durante el cual se le cobra por usar el servicio.
 

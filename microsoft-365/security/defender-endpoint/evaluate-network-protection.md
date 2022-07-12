@@ -16,12 +16,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603954"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717854"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -35,12 +35,6 @@ ms.locfileid: "66603954"
 [La protección de red](network-protection.md) ayuda a evitar que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet.
 
 Este artículo le ayuda a evaluar la protección de red habilitando la característica y guiándole a un sitio de prueba. Los sitios de este artículo de evaluación no son malintencionados. Son sitios web especialmente creados que fingen ser malintencionados. El sitio replicará el comportamiento que se produciría si un usuario visitara un sitio o dominio malintencionados.
-
-> [!TIP]
-> También puede visitar el sitio web de escenarios de demostración de Microsoft Defender en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
-
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Habilitación de la protección de red en modo de auditoría
 
@@ -76,7 +70,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra Visor de eventos y
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección de red](network-protection.md)
 

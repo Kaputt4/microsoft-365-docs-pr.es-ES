@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554431"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717224"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -73,20 +73,20 @@ Los pasos siguientes son necesarios para habilitar esta integración:
 
 Revise los detalles siguientes para comprobar los requisitos mínimos del sistema:
 
-- Instalación del [paquete acumulativo de actualizaciones mensual de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Instalación del [paquete acumulativo de actualizaciones mensual de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598): el vínculo de descarga directa del catálogo de Windows Update está disponible [aquí](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)
+
+- Instale la actualización de la [pila de mantenimiento del 12 de marzo de 2019 (o posterior):](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba) el vínculo de descarga directa del catálogo de Windows Update está disponible [aquí.](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)
+
+- Instalación de la [actualización de compatibilidad con la firma de código SHA-2](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339): el vínculo de descarga directa del catálogo de Windows Update está disponible [aquí](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419).
 
   > [!NOTE]
   > Solo se aplica a Windows Server 2008 R2, Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
 
 - Instalación de la [actualización para la experiencia del cliente y la telemetría de diagnóstico](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- Instale [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (o posterior) o [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- Instalación de [Microsoft .Net Framework 4.5.2 o posterior](https://www.microsoft.com/en-US/download/details.aspx?id=42642)
 
     > [!NOTE]
-    > Solo se aplica a Windows Server 2008 R2, Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
-    >
-    > No instale .NET Framework 4.0.x, ya que negará la instalación anterior.
-    >
     > La instalación de .NET 4.5 puede requerir que reinicie el equipo después de la instalación.
 
 - Cumpla los requisitos mínimos del sistema del agente de Azure Log Analytics. Para obtener más información, consulte [Recopilación de datos de equipos de su entorno con Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).

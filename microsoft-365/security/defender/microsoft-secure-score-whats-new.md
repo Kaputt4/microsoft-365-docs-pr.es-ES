@@ -21,20 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617050"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717192"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Para que La puntuación segura de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿Qué viene en Puntuación de seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
+Para que La puntuación segura de Microsoft sea un mejor representante de su posición de seguridad, seguimos agregando nuevas características y acciones de mejora.
+
+Cuantos más acciones de mejora realice, mayor será la puntuación de seguridad. Para obtener más información, consulte [Puntuación segura de Microsoft](microsoft-secure-score.md).
 
 La Puntuación de seguridad de Microsoft se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="june-2022"></a>Junio de 2022
+
+- Ahora hay nuevas recomendaciones de Microsoft Defender para punto de conexión y Administración de vulnerabilidades de Microsoft Defender disponibles como acciones de mejora de puntuación segura:
+
+  - No permitir el acceso sin conexión a recursos compartidos
+  - Quitar el permiso de escritura compartido establecido en **Todos**
+  - Quitar recursos compartidos de la carpeta raíz
+  - Establecimiento de una enumeración basada en el acceso a carpetas para recursos compartidos
+  - Actualizar Microsoft Defender para punto de conexión componentes principales
+
+- Hay disponible una nueva recomendación de Microsoft Defender for Identity como una acción de mejora de puntuación segura:
+
+  - Resolución de configuraciones de dominio no seguras
+
+- Ahora hay disponible una nueva recomendación de [gobernanza](/defender-cloud-apps/app-governance-manage-app-governance) de aplicaciones como una acción de mejora de puntuación segura:
+
+  - Regular aplicaciones con consentimiento de cuentas prioritarias
+
+- Las nuevas recomendaciones de Salesforce y ServiceNow ahora están disponibles como acciones de mejora de puntuación segura para Microsoft Defender for Cloud Apps clientes. Para obtener más información, consulte [Información general sobre la administración de posturas de seguridad de SaaS](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>Los controles de Salesforce y ServiceNow ahora están disponibles en versión preliminar pública.
 
 ## <a name="april-2022"></a>Abril de 2022
 

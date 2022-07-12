@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo exportar, transferir o eliminar información personal de Microsoft Whiteboard.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e35aa6825814043eb91c2d24c7426e7b4489bb76
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
-ms.translationtype: HT
+ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687618"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717745"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Administrar las Solicitudes del interesado RGPD en Microsoft Whiteboard
 
@@ -28,9 +28,9 @@ Este artículo ofrece información sobre cómo exportar, transferir o eliminar i
 
 ## <a name="export-a-whiteboard"></a>Exportar una pizarra
 
-### <a name="on-windows-10"></a>En Windows 10
+### <a name="on-windows"></a>En Windows
 
-En Windows 10, siga estos pasos:
+En Windows, siga estos pasos:
 
 1. Seleccione el botón **Más** (**...**) de la pizarra que quiere exportar. 
 
@@ -66,6 +66,13 @@ Para eliminar una pizarra, siga estos pasos:
 
 2. Seleccione **Eliminar**.
 
+Para eliminar un archivo de pizarra en OneDrive para la Empresa, siga estos pasos:
+
+1.  Vaya a la carpeta Pizarras en OneDrive.
+
+2.  Haga clic con el botón derecho en el archivo de pizarra que desea eliminar.
+
+3. Seleccione **Eliminar**.
+
 >[!WARNING]
 > Se eliminará permanentemente la pizarra seleccionada.
-

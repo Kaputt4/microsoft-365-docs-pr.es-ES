@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f1a1517e072c3a1c07f8792281092392dd1ff210
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438869"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717104"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
@@ -42,17 +42,6 @@ Microsoft Defender para punto de conexión incluye servicios de protección de �
 
 > [!TIP]
 > La protección de última generación se incluye tanto en el plan 1 de Microsoft Defender para punto de conexión como en el plan 2. [Obtenga más información sobre Defender para punto de conexión plan 1 y plan 2](defender-endpoint-plan-1-2.md) La protección de última generación también se incluye en Microsoft Defender para Empresas y Microsoft 365 Empresa Premium. [Comparar las características de seguridad de los planes de Microsoft 365 para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md).
-
-## <a name="try-a-demo"></a>Pruebe una demostración.
-
-Visite el [sitio de demostración de Microsoft Defender para punto de conexión](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las siguientes características de protección están funcionando y explorarlas usando escenarios de demostración:
-
-- Protección entregada en la nube
-- Protección de bloqueo a primera vista (BAFS)
-- Protección contra aplicaciones potencialmente no deseadas (PUA)
-
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="configure-next-generation-protection-services"></a>Configurar los servicios de protección de última generación
 

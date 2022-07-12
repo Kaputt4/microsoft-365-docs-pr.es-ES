@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468314"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717766"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -87,12 +87,6 @@ La notificación aparece en la [lista habitual de cuarentena dentro de la aplica
 Puede habilitar la protección contra PUA con [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) o mediante [cmdlets de PowerShell](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
 También puede usar la protección contra PUA en modo de auditoría para detectar aplicaciones potencialmente no deseadas sin bloquearlas. Las detecciones se capturan en el registro de eventos de Windows.
-
-> [!TIP]
-> Visite el sitio web de demostración de Microsoft Defender para punto de conexión en [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) para confirmar que la característica funciona y verla en acción.
-
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 La protección contra PUA en el modo de auditoría es útil si su empresa está realizando una comprobación interna de cumplimiento de seguridad de software y quiere evitar falsos positivos.
 

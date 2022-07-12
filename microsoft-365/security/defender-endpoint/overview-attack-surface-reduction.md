@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438107"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717158"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Descripción y uso de funcionalidades de reducción de superficie expuesta a ataques
 
@@ -76,7 +76,7 @@ Para configurar la reducción de la superficie expuesta a ataques en el entorno,
 > [!TIP]
 > En la mayoría de los casos, al configurar funcionalidades de reducción de superficie expuesta a ataques, puede elegir entre varios métodos:
 >
-> - Microsoft Endpoint Manager (que ahora incluye Microsoft Intune y Microsoft Endpoint Configuration Manager)
+> - Microsoft Endpoint Manager (que ahora incluye Microsoft Intune y microsoft endpoint Configuration Manager)
 > - Directiva de grupo
 > - Cmdlets de PowerShell
 
@@ -95,17 +95,11 @@ Puede habilitar el modo de auditoría al probar cómo funcionarán las caracter�
 
 Las características no bloquearán ni impedirán que se modifiquen aplicaciones, scripts o archivos. Sin embargo, el registro de eventos de Windows registrará eventos como si las características estuvieran totalmente habilitadas. Con el modo de auditoría, puede revisar el registro de eventos para ver qué efecto habría tenido la característica si se hubiera habilitado.
 
-Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **de Microsoft** \> **Windows** \> **Windows Defender** \> **operativo**.
+Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
 
 Use Defender para punto de conexión para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar las reglas de reducción de superficie expuesta a ataques. El uso de la consola de Defender para punto de conexión le permite [investigar problemas como parte de la escala de tiempo de alertas y los escenarios de investigación](investigate-alerts.md).
 
 Puede habilitar el modo de auditoría mediante directiva de grupo, PowerShell y proveedores de servicios de configuración (CSP).
-
-> [!TIP]
-> También puede visitar el sitio web Windows Defender Testground en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las características funcionan y ver cómo funcionan.
-
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 | Opciones de auditoría | Habilitación del modo de auditoría | Visualización de eventos |
 |---|---|---|
@@ -136,7 +130,7 @@ Obtenga informes detallados sobre eventos, bloques y advertencias como parte de 
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Uso de vistas personalizadas para revisar las funcionalidades de reducción de superficie expuesta a ataques
 
-Cree vistas personalizadas en el Windows Visor de eventos para ver solo los eventos de funcionalidades y configuraciones específicas. La manera más fácil es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
+Cree vistas personalizadas en windows Visor de eventos para ver solo los eventos de funcionalidades y configuraciones específicas. La manera más fácil es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
 
 También puede navegar manualmente al área de eventos que corresponde a la característica.
 
@@ -148,7 +142,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
     - Vista personalizada de eventos de reducción de superficie expuesta a ataques: *asr-events.xml*
     - Vista personalizada de eventos de red y protección: *np-events.xml*
 
-2. Escriba **el visor de eventos** en el menú Inicio y abra **Visor de eventos**.
+2. Escriba **visor de eventos** en el menú Inicio y abra **Visor de eventos**.
 
 3. Seleccione **Importar acción** \> **vista personalizada...**
 
@@ -163,7 +157,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
 
 #### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **el visor de eventos** en el menú Inicio y abra el **Visor de eventos de Windows**.
+1. Escriba **el visor de eventos** en el menú Inicio y abra el **Visor de eventos** de Windows.
 
 2. En el panel izquierdo, en **Acciones**, seleccione **Crear vista personalizada...**
 
@@ -233,7 +227,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
 
 Todos los eventos de reducción de superficie expuesta a ataques se encuentran en **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor, como se muestra en la tabla siguiente.
 
-Puede acceder a estos eventos en Windows Visor de eventos:
+Puede acceder a estos eventos en el Visor de eventos de Windows:
 
 1. Abra el menú **Inicio** y escriba **visor de eventos** y, a continuación, seleccione el resultado **Visor de eventos**.
 2. Expanda **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor o origen** en la tabla siguiente.
@@ -247,31 +241,31 @@ Puede acceder a estos eventos en Windows Visor de eventos:
 
 |Característica|Proveedor u origen|Id. de evento|Descripción|
 |---|---|:---:|---|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1 |Auditoría de ACG|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5 |Bloquear auditoría de imágenes de integridad baja|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|9 |Deshabilitar auditoría de llamadas del sistema de Win32k|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|10|Deshabilitar bloqueo de llamadas del sistema de Win32k|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|11|Auditoría de protección de integridad de código|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|12 |Bloque de protección de integridad de código|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13 |Auditoría de EAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|14|Aplicación de EAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|15|Auditoría de EAF+|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|16|Aplicación de EAF+|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|17 |Auditoría de IAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|18 |Aplicación de IAF|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|19|Auditoría ROP StackPivot|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|20|Aplicación de ROP StackPivot|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)| 21|Auditoría ROP CallerCheck|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|22|Aplicación de ROP CallerCheck|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|23|Auditoría de ROP SimExec|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|24|Aplicación de ROP SimExec|
-|Protección contra vulnerabilidades de seguridad|Diagnósticos WER|5 |Bloque CFG|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|1|Auditoría de ACG|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|2|Aplicación de ACG|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|5|Bloquear auditoría de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|9 |Deshabilitar auditoría de llamadas del sistema de Win32k|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|10|Deshabilitar bloqueo de llamadas del sistema de Win32k|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|11|Auditoría de protección de integridad de código|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|12 |Bloque de protección de integridad de código|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|13 |Auditoría de EAF|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|14 |Aplicación de EAF|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|15 |Auditoría de EAF+|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|16 |Aplicación de EAF+|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|17 |Auditoría de IAF|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|18 |Aplicación de IAF|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|19|Auditoría ROP StackPivot|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|20|Aplicación de ROP StackPivot|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)| 21|Auditoría ROP CallerCheck|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|22|Aplicación de ROP CallerCheck|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|23|Auditoría de ROP SimExec|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|24|Aplicación de ROP SimExec|
+|Protección contra vulnerabilidades de seguridad|Diagnósticos WER|5|Bloque CFG|
 |Protección contra vulnerabilidades de seguridad|Win32K (operativo)|260|Fuente que no es de confianza|
 |Protección de red|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
 |Protección de red|Windows Defender (operativo)|1125|Evento cuando se activa la protección de red en modo de auditoría|
@@ -298,8 +292,8 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 |:---|:---|
 | [Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteja y mantenga la integridad de un sistema a medida que se inicia y mientras se ejecuta. Valide la integridad del sistema a través de la atestación local y remota. Use el aislamiento de contenedor para Microsoft Edge para ayudar a protegerse frente a sitios web malintencionados. |
 | [Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deberán ganar confianza para poder ejecutarse. |
-| [Acceso controlado a carpetas](controlled-folders.md) | Ayuda a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware de cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender). |
-| [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de la organización. (Requiere Antivirus de Microsoft Defender). |
+| [Acceso controlado a carpetas](controlled-folders.md) | Ayuda a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware de cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere antivirus de Microsoft Defender). |
+| [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de la organización. (Requiere antivirus de Microsoft Defender). |
 | [Protección contra vulnerabilidades de seguridad](exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para que no se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros. |
 | [Control de dispositivos](device-control-report.md) | Protege contra la pérdida de datos mediante la supervisión y el control de los medios que se usan en los dispositivos, como el almacenamiento extraíble y las unidades USB, en la organización. |
 | [ Guía de implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md) | Presenta información general y requisitos previos para implementar reglas de reducción de superficie expuesta a ataques. |
@@ -308,4 +302,4 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 | [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Muestra los pasos para realizar la transición de las reglas de reducción de la superficie expuesta a ataques del modo de prueba (auditoría) al modo activo y habilitado (bloquear). |
 | [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Proporciona información sobre las actividades diarias de revisión y mantenimiento. |
 | [Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md) | Proporciona detalles sobre cada regla de reducción de superficie expuesta a ataques. |
-| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere Antivirus de Microsoft Defender). |
+| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere antivirus de Microsoft Defender). |
