@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e5ab7630ad0e749eedb6ced8b9895c0a632a527f
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686149"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720509"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -152,7 +152,6 @@ Si su organización usa Microsoft Endpoint Manager (MEM), puede activar (o desac
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>Requisitos para administrar la protección contra alteraciones en Endpoint Manager
 
-- Los dispositivos deben [incorporarse a Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/onboarding).
 - Debe tener asignados [los permisos](/microsoft-365/security/defender-endpoint/assign-portal-access) adecuados, como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 - Su organización usa [Microsoft Endpoint Manager para administrar dispositivos](/mem/endpoint-manager-getting-started). (Se requieren licencias de Microsoft Endpoint Manager (MEM); MEM se incluye en Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Empresa Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5 y las licencias educativas correspondientes).
 - Los dispositivos Windows deben ejecutar Windows 11 o Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior. (Para obtener más información sobre las versiones, consulte [Windows 10 información de la versión](/windows/release-health/release-information)).

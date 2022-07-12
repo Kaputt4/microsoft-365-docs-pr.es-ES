@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Establezca cuánto tiempo durará la sesión del usuario en Microsoft 365 antes de que se agote el tiempo de espera.
-ms.openlocfilehash: 611541ebc16c3ee8c187b8fc1a5b33661b221897
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 3dd845d5488d2385297a87908253740ef774eb5d
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487485"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720421"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Tiempo de espera de sesión inactiva para Microsoft 365
 
@@ -31,7 +31,7 @@ Cuando un usuario alcanza la sesión de tiempo de espera de inactividad que ha e
 
 ## <a name="turn-on-idle-session-timeout"></a>Activar el tiempo de espera de la sesión inactiva
 
-Si no es un administrador global de Microsoft 365 o Office 365, no verá la pestaña **Seguridad & privacidad**.
+Debe ser miembro de los roles de administrador global, administrador de seguridad, administrador de aplicaciones o administrador de aplicaciones en la nube para ver la configuración de tiempo de espera de sesión inactiva.
 
 1. En el Centro de administración de Microsoft 365, seleccione **Seguridad de la configuración** **->** de la organización [& pestaña Privacidad](https://go.microsoft.com/fwlink/p/?linkid=2072756) y seleccione **Tiempo de espera de sesión inactivo**.  
 
@@ -95,7 +95,7 @@ Para que el tiempo de espera de la sesión inactiva se desencadene en dispositiv
 
 6. Active la directiva y seleccione **Crear**.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>¿Hay algún explorador o escenario de explorador en el que la característica de tiempo de espera de sesión inactiva no funcione?  
 

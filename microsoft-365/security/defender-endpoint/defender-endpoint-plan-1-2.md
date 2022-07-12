@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2022
+ms.date: 07/11/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e1cf2647ac8308d30b82e69cbb288fde330fdc5a
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: d90e39028f563c7b3913f6fd0dbf97222d1068d2
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612203"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720443"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Comparar planes de Microsoft Defender para punto de conexión
 
@@ -49,6 +49,16 @@ En la tabla siguiente se resume lo que se incluye en cada plan de Defender para 
 > [!IMPORTANT]
 > Las versiones independientes de Defender para el plan 1 y el plan 2 no incluyen licencias de servidor. Para incorporar servidores, como puntos de conexión que ejecutan Windows Server o Linux, necesitará El plan 1 o el plan 2 de Defender para servidores como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 
+Microsoft Defender para punto de conexión Plan 1 está disponible como licencia de suscripción de usuario independiente para clientes comerciales y educativos. También se incluye como parte de Microsoft 365 E3/A3.
+
+Microsoft Defender para punto de conexión Plan 2, que anteriormente se denominaba Microsoft Defender para punto de conexión, está disponible como licencia independiente y como parte de los siguientes planes:
+
+- Windows 11 Empresas E5/A5
+- Windows 10 Enterprise E5/A5
+- Microsoft 365 E5/A5/G5 (que incluye Windows 10 o Windows 11 Empresas E5)
+- seguridad Microsoft 365 E5/A5/G5/F5
+- Cumplimiento de & de seguridad de Microsoft 365 F5
+
 ## <a name="mixed-licensing-scenarios"></a>Escenarios de licencias mixtas
 
 Supongamos que su organización usa una combinación de suscripciones de seguridad de puntos de conexión de Microsoft, como Defender para el plan 1 de punto de conexión y El plan 2 de Defender para punto de conexión. **Actualmente, la suscripción de seguridad de punto de conexión de Microsoft más funcional establece la experiencia del inquilino**. En este ejemplo, la experiencia del inquilino sería defender para el plan 2 de punto de conexión para todos los usuarios.
@@ -65,10 +75,10 @@ Sin embargo, **puede ponerse en contacto con el soporte técnico y solicitar una
 
 ## <a name="start-a-trial"></a>Inicio de una prueba
 
-- Para probar el plan de Defender para punto de conexión, vaya a la [página de registro de prueba de Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
+- Para probar Defender para punto de conexión, vaya a la [página de registro de prueba de Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
 - Para probar el complemento de Administración de vulnerabilidades de Microsoft Defender para Defender para punto de conexión 2, visite [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Introducción a Microsoft Security (ofertas de prueba)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 
