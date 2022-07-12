@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e344c98fd136569015a032bcc83569bc38e06621
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438803"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720399"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus de Microsoft Defender en Windows
 
@@ -47,8 +47,6 @@ Si usa un producto antimalware o antivirus que no es de Microsoft en el disposit
 
 En la tabla siguiente se describe qué esperar cuando el Antivirus de Microsoft Defender está en modo activo, en modo pasivo o deshabilitado.
 
-<br/><br/>
-
 | Modo | Qué ocurre |
 |---|---|
 | Modo activo | En modo activo, el Antivirus de Microsoft Defender se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan, se corrigen las amenazas y las amenazas detectadas se enumeran en los informes de seguridad de la organización y en la aplicación de Seguridad de Windows. |
@@ -59,21 +57,21 @@ Para más información, consulte [Compatibilidad con Antivirus de Microsoft Defe
 
 ## <a name="check-the-state-of-microsoft-defender-antivirus-on-your-device"></a>Comprobar el estado del Antivirus de Microsoft Defender en el dispositivo
 
-Si quiere comprobar el estado del Antivirus de Microsoft Defender en el dispositivo, puede usar uno de varios métodos, como la aplicación Seguridad de Windows o Windows PowerShell.
+Puede usar uno de varios métodos, como la aplicación Seguridad de Windows o Windows PowerShell, para comprobar el estado de Antivirus de Microsoft Defender en el dispositivo.
 
-### <a name="use-the-windows-security-app-to-check-status-of-microsoft-defender-antivirus"></a>Usar la aplicación Seguridad de Windows para comprobar el estado del Antivirus de Microsoft Defender
+### <a name="use-the-windows-security-app-to-check-the-status-of-microsoft-defender-antivirus"></a>Usar la aplicación Seguridad de Windows para comprobar el estado del Antivirus de Microsoft Defender
 
-1. En el dispositivo Windows, seleccione el menú Inicio y empiece a escribir `Security`. A continuación, abra la aplicación Seguridad de Windows en los resultados.
+1. En el dispositivo Windows, seleccione el menú **Inicio** y empiece a escribir `Security`. A continuación, abra la aplicación Seguridad de Windows en los resultados.
 
 2. Seleccione **Protección antivirus y contra amenazas**.
 
-3. En **Configuración de antivirus y protección contra amenazas**, elija **Administrar la configuración**.
+3. En **¿Quién me protege?**, elija **Administrar proveedores**.
 
-Verá el nombre de la solución antivirus/antimalware en la página de configuración.
+Verá el nombre de la solución antivirus o antimalware en la página de proveedores de seguridad.
 
-### <a name="use-powershell-to-check-status-of-microsoft-defender-antivirus"></a>Usar PowerShell para comprobar el estado del Antivirus de Microsoft Defender
+### <a name="use-powershell-to-check-the-status-of-microsoft-defender-antivirus"></a>Usar PowerShell para comprobar el estado del Antivirus de Microsoft Defender
 
-1. Seleccione el menú Inicio y empiece a escribir `PowerShell`. A continuación, abra Windows PowerShell en los resultados.
+1. Seleccione el menú **Inicio** y empiece a escribir `PowerShell`. A continuación, abra Windows PowerShell en los resultados.
 
 2. Tipo `Get-MpComputerStatus`.
 
@@ -92,7 +90,7 @@ Verá el nombre de la solución antivirus/antimalware en la página de configura
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>Obtener actualizaciones de la plataforma malware/antivirus
 
-Es importante mantener actualizados el Antivirus de Microsoft Defender, o cualquier solución antivirus/antimalware. Microsoft publica actualizaciones periódicas para ayudar a garantizar que los dispositivos tengan la última tecnología  para protegerse contra nuevas técnicas de ataque y malware. Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).
+Es importante mantener actualizado el Antivirus de Microsoft Defender, o cualquier solución antivirus/antimalware. Microsoft publica actualizaciones periódicas para ayudar a garantizar que los dispositivos tengan la última tecnología  para protegerse contra nuevas técnicas de ataque y malware. Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

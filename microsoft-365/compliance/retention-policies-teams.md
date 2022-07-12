@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: c7f60dbb29d2755ba41661ab3aea6b20b97cef06
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640530"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714692"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -93,7 +93,7 @@ Cuando la directiva de retención es retener y luego eliminar:
 
 Para las dos rutas en el diagrama:
 
-1. **Si un usuario edita o elimina un mensaje de chat o canal** durante el período de retención, el mensaje original se copia (si se edita) o se mueve (si se elimina) a la carpeta SubstrateHolds. El mensaje se almacena allí durante al menos 1 día. Cuando expira el período de retención, el mensaje se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
+1. **Si un usuario edita o elimina un mensaje de chat o canal** durante el período de retención, el mensaje original se copia (si se edita) o se mueve (si se elimina) a la carpeta SubstrateHolds. Cuando un usuario elimina un mensaje de Teams, aunque el mensaje desaparece de la aplicación Teams, el mensaje no va a la carpeta SubstrateHolds durante 21 días. El mensaje se almacena en la carpeta SubstrateHolds durante al menos 1 día. Cuando expira el período de retención, el mensaje se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
 
 2. **Si no se elimina un mensaje del chat o de los canales**, o, en el caso de los mensajes actuales, después de editarlo, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención caduca. Esta acción suele tardar entre 1 y 7 días a partir de la fecha de vencimiento. Cuando el mensaje está en la carpeta SubstrateHolds, se almacena allí durante al menos 1 día y, a continuación, el mensaje se elimina de forma permanente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). 
 
@@ -111,13 +111,13 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
 
-1. Si un usuario **edita o borra un mensaje de chat o canal** durante el período de retención: El mensaje original se copia (si se edita) o se mueve (si se borra) a la carpeta SubstrateHolds y se conserva allí durante al menos 1 día. Si la política de retención está configurada para conservarse para siempre, el elemento permanece allí. Si la política de retención tiene una fecha de finalización para el período de retención y caduca, el mensaje se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
+1. **Si un usuario edita o elimina un mensaje de chat o canal** durante el período de retención: el mensaje original se copia (si se edita) o se mueve (si se elimina) a la carpeta SubstrateHolds. Cuando un usuario elimina un mensaje de Teams, aunque el mensaje desaparece de la aplicación Teams, el mensaje no va a la carpeta SubstrateHolds durante 21 días. El mensaje se almacena en la carpeta SubstrateHolds durante al menos 1 día. Si la política de retención está configurada para conservarse para siempre, el elemento permanece allí. Si la política de retención tiene una fecha de finalización para el período de retención y caduca, el mensaje se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
 
 2. **Si el mensaje de chat o canal no es modificado o eliminado** por un usuario y para los mensajes actuales después de la edición durante el período de retención: No ocurre nada antes y después del período de retención; el mensaje permanece en su ubicación original.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Rutas de contenido para la directiva de retención de sólo eliminar
 
-1. Si un usuario **edita o borra el mensaje de chat o canal** durante el período de retención: El mensaje original se copia (si se edita) o se mueve (si se borra) a la carpeta SubstrateHolds. El mensaje se conserva allí durante al menos 1 día y se elimina de forma permanente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
+1. Si un usuario **edita o borra el mensaje de chat o canal** durante el período de retención: El mensaje original se copia (si se edita) o se mueve (si se borra) a la carpeta SubstrateHolds.  Cuando un usuario elimina un mensaje de Teams, aunque el mensaje desaparece de la aplicación Teams, el mensaje no va a la carpeta SubstrateHolds durante 21 días. El mensaje se almacena en la carpeta SubstrateHolds durante al menos 1 día y se elimina permanentemente la próxima vez que se ejecute el trabajo del temporizador (normalmente entre 1 y 7 días).
 
 2. Si un usuario **no elimina un mensaje de chat o canal** durante el período de retención: Al final del período de retención, el mensaje se mueve a la carpeta SubstrateHolds. Esta acción suele tardar entre 1 y 7 días a partir de la fecha de vencimiento. El mensaje se conserva allí durante al menos 1 día y luego se elimina permanentemente la próxima vez que se ejecuta el trabajo del temporizador (generalmente entre 1 y 7 días).
 
@@ -145,9 +145,9 @@ Resultados de retención:
     - El día 5, el mensaje se copia en la carpeta SubstrateHolds, donde aún se puede buscar con herramientas de eDiscovery durante un mínimo de 7 años a partir del día 1 (el período de retención).
 
 - Para el mensaje actual (editado):
-    - El día 30, el mensaje se mueve a la carpeta SubstrateHolds donde aún se puede buscar con herramientas de eDiscovery durante un mínimo de 7 años a partir del día 1 (el período de retención).
+    - El día 30, el mensaje ya no se muestra en la aplicación Teams y se mueve a la carpeta SubstrateHolds después de 21 días, donde sigue permitiendo búsquedas con herramientas de exhibición de documentos electrónicos durante un mínimo de 7 años a partir del día 1 (el período de retención).
 
-Si el usuario hubiera eliminado el mensaje actual después del período de retención especificado, en lugar de dentro del período de retención, el mensaje aún se movería a la carpeta SubstrateHolds. Sin embargo, ahora que el período de retención ha expirado, el mensaje se eliminará permanentemente después del mínimo de 1 día y luego, por lo general, dentro de 1 a 7 días.
+Si el usuario hubiera eliminado el mensaje actual después del período de retención especificado, en lugar de dentro del período de retención, el mensaje se seguiría moviendo a la carpeta SubstrateHolds después de 21 días. Sin embargo, ahora que ha expirado el período de retención, el mensaje se eliminaría permanentemente después del mínimo de 1 día y, por lo general, en un plazo de 1 a 7 días.
 
 ##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Ejemplo 2: conservar durante 30 días y luego eliminar
 
