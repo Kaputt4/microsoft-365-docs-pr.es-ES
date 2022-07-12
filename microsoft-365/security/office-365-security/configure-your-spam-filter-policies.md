@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780b7bc788cb38578e3729fac88a7c9d081f6732
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128731"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714758"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -225,7 +225,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
    >
    > Agregar dominios a la lista de dominios bloqueados para bloquear manualmente los dominios no es peligroso, pero puede aumentar su carga de trabajo administrativa. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
    >
-   > Habrá ocasiones en las que un mensaje evada nuestros filtros, no esté de acuerdo con el veredicto de filtrado o nuestros sistemas tarden un poco en ponerse al día. En estos casos, la lista de permitidos y la lista de bloqueados están disponibles para anular los veredictos de filtrado actuales. Sin embargo, debe usar estas listas con moderación y de manera temporal: las listas largas pueden dejar de ser manejables y nuestra pila de filtrado debería funcionar como se espera. Si va a mantener un dominio permitido durante un largo período de tiempo, debe decirle al remitente que compruebe que su dominio esté autenticado y establecido en rechazar DMARC.
+   > Habrá ocasiones en las que un mensaje evada nuestros filtros, no esté de acuerdo con el veredicto de filtrado o nuestros sistemas tarden un poco en ponerse al día. En estos casos, la lista de permitidos y la lista de bloqueados están disponibles para anular los veredictos de filtrado actuales. Sin embargo, debe usar estas listas con moderación y de manera temporal: las listas largas pueden dejar de ser manejables y nuestra pila de filtrado debería funcionar como se espera. Si va a mantener un dominio permitido durante un largo período de tiempo, debe decirle al remitente que compruebe que su dominio esté autenticado y establecido en rechazar DMARC apropiadamente.
 
    Los pasos para agregar entradas a cualquiera de las listas son los mismos:
 

@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre directivas y etiquetas de retención para retener o eliminar automáticamente el contenido
+title: Más información sobre las directivas de retención y las etiquetas que se deben conservar o eliminar
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Obtenga información sobre las directivas y las etiquetas de retención para conservar lo que necesita y eliminar lo que no.
+ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622533"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714539"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 

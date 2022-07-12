@@ -22,12 +22,12 @@ description: Utilice las etiquetas de confidencialidad de Microsoft Purview Info
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687814"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714144"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -130,7 +130,7 @@ Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ám
 - Las opciones de etiqueta que puede configurar para esa etiqueta
 - El lugar en el que los usuarios verán la etiqueta
 
-Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de los recursos de la asignación de datos de Microsoft Purview:
+Esta configuración de ámbito le permite tener etiquetas de confidencialidad que son solo para elementos como documentos y correos electrónicos, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de los recursos de datos esquematizados para el Mapa de Datos de Microsoft Purview:
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
