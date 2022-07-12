@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
-ms.openlocfilehash: 72da8af8acd0725a5d7509b84f08e4220f7772d4
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: cf66d4b2b2aab903934a87f64f53fa485d82f572
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594717"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717654"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -63,7 +63,7 @@ Se puede tener acceso a los Grupos de Microsoft 365 a través de aplicaciones m�
 
 Los miembros del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del grupo si está opción ha sido [activada por el administrador](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Los Grupos de Microsoft 365 no admiten anidamiento con otros Grupos de Microsoft 365 o con grupos de distribución o de seguridad.
+Los grupos de Microsoft 365 admiten el anidamiento a través de [grupos dinámicos en Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
 
 Los Grupos de Microsoft 365 se pueden agregar a uno de los tres grupos de SharePoint (Propietarios, Miembros o Visitantes) para conceder permisos a los usuarios al sitio.
 

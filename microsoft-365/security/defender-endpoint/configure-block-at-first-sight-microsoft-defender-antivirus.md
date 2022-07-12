@@ -11,16 +11,16 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb65e1ad898427c3f0a2fc1ba9a13685c1617bc1
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c41b463c7262c5be6df43d1c9e808060a75d15c0
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416286"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717676"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -42,7 +42,7 @@ En este artículo se describe una característica de antivirus o antimalware con
 
 El bloqueo a primera vista es una característica de protección contra amenazas de protección de nueva generación que detecta nuevo malware y lo bloquea en pocos segundos. El bloqueo a primera vista se habilita cuando se habilitan determinadas opciones de configuración de seguridad. Entre estas opciones se incluyen:
 
-- Protección entregada en la nube;
+- [Protección en la nube](cloud-protection-microsoft-defender-antivirus.md);
 - Un tiempo de espera de envío de ejemplo especificado (como 50 segundos); y
 - Un nivel de bloqueo de archivos alto.
 
@@ -150,15 +150,6 @@ Puede confirmar que el bloqueo a primera vista está habilitado en dispositivos 
 >
 > - Si la configuración de requisitos previos se configura e implementa mediante la directiva de grupo, la configuración que se describe en esta sección aparecerá atenuada y su uso no estará disponible en los puntos de conexión individuales.
 > - Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows.
-
-## <a name="validate-block-at-first-sight-is-working"></a>Validar que esté funcionando el bloqueo a primera vista
-
-Para validar que la característica funciona, descargue el archivo de ejemplo [Bloquear a primera vista](https://demo.wd.microsoft.com/Page/BAFS). Para descargar el archivo, necesitará una cuenta en Azure AD que tenga asignado el rol Administrador de seguridad o Administrador global.
-
-Para validar que la protección habilitada para la nube funciona, siga las instrucciones de [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
-
-> [!NOTE]
-> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="turn-off-block-at-first-sight"></a>Desactivar el bloqueo a primera vista
 
