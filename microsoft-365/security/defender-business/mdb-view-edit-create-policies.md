@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090374"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772749"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Ver o editar directivas en Microsoft Defender para Empresas
 
-En Microsoft Defender para Empresas, la configuración de seguridad se configura mediante directivas que se aplican a los dispositivos. Para simplificar la experiencia de configuración y configuración, Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
+En Defender para empresas, la configuración de seguridad se configura a través de directivas que se aplican a los dispositivos. Para simplificar la experiencia de configuración y configuración, Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
 
 **En este artículo se describe cómo**:
 
@@ -69,7 +69,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
    - Para dejar el grupo de dispositivos seleccionado tal y como está, elija **Siguiente**.
    - Para quitar un grupo de dispositivos de la directiva, seleccione **Quitar**.
-   - Para configurar un nuevo grupo de dispositivos, seleccione **Crear nuevo grupo** y, a continuación, configure el grupo de dispositivos. (Para obtener ayuda con esta tarea, consulte [Grupos de dispositivos en Microsoft Defender para Empresas](mdb-create-edit-device-groups.md)).
+   - Para configurar un nuevo grupo de dispositivos, seleccione **Crear nuevo grupo** y, a continuación, configure el grupo de dispositivos. (Para obtener ayuda con esta tarea, consulte [Grupos de dispositivos en Defender para empresas](mdb-create-edit-device-groups.md)).
    - Para aplicar la directiva a otro grupo de dispositivos, seleccione **Usar grupo existente**.
 
    Después de especificar qué grupos de dispositivos deben recibir la directiva, elija **Siguiente**.
@@ -111,7 +111,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
    Para más información sobre los grupos de dispositivos, consulte [Grupos de dispositivos en Defender para empresas](mdb-create-edit-device-groups.md).
 
-8. En la pestaña **Opciones de configuración**, especifique la configuración de la directiva y, a continuación, elija **Siguiente**. Para obtener más información sobre la configuración individual, consulte [Configuración para Microsoft Defender para Empresas](mdb-next-gen-configuration-settings.md).
+8. En la pestaña **Opciones de configuración**, especifique la configuración de la directiva y, a continuación, elija **Siguiente**. Para obtener más información sobre la configuración individual, consulte [Configuración de Defender para empresas](mdb-next-gen-configuration-settings.md).
 
 9. En la pestaña **Revisar la directiva**, revise la información general, los dispositivos de destino y las opciones de configuración. 
 
@@ -124,7 +124,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 Elija una o varias de las siguientes tareas:
 
 - [Administrar dispositivos](mdb-manage-devices.md)
-- [Creación de una nueva directiva en Microsoft Defender para Empresas](mdb-create-new-policy.md)
-- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
+- [Creación de una nueva directiva en Defender para empresas](mdb-create-new-policy.md)
+- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

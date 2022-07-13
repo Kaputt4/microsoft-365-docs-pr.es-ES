@@ -14,12 +14,12 @@ description: Siga la ruta de acceso de un mensaje entrante a través de la pila 
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4548beaf8d3071006114a65fd95c16b06e8a875d
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648181"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772048"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -90,7 +90,7 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="El filtrado de fase 3 en MDO es filtrado de contenido" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
-1. **Las reglas de transporte** (también conocidas como reglas de flujo de correo o Exchange reglas de transporte) permiten a un administrador realizar una amplia gama de acciones cuando se cumple una gama igualmente amplia de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan en función de las reglas de flujo de correo o las reglas de transporte habilitadas.
+1. **Las reglas de transporte** (también conocidas como reglas de flujo de correo o reglas de transporte de Exchange) permiten a un administrador realizar una amplia gama de acciones cuando se cumple una gama igualmente amplia de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan en función de las reglas de flujo de correo o las reglas de transporte habilitadas.
 
 2. **Antivirus de Microsoft Defender** y dos *motores antivirus de terceros* se usan para detectar todo el malware conocido en los datos adjuntos.
 
@@ -106,7 +106,7 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 8. **Los heurísticos de contenido** pueden detectar mensajes sospechosos en función de la estructura y la frecuencia de palabras dentro del cuerpo del mensaje, mediante modelos de aprendizaje automático.
 
-9. **Caja fuerte Datos adjuntos** espacio aislado de todos los datos adjuntos de Defender para Office 365 clientes, mediante el análisis dinámico para detectar amenazas nunca antes vistas.
+9. **Los espacios aislados de datos adjuntos seguros** de cada dato adjunto para Defender para Office 365 clientes, mediante el análisis dinámico para detectar amenazas nunca antes vistas.
 
 10. **Detonación de contenido vinculado** trata todas las direcciones URL que se vinculan a un archivo de un correo electrónico como datos adjuntos, creando de forma asincrónica un espacio aislado en el archivo en el momento de la entrega.
 
@@ -118,7 +118,7 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="El filtrado de fase 4 en Defender para Office 365 es protección posterior a la entrega" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para que apunte a los servidores de Microsoft Caja fuerte Links. Cuando se hace clic en una dirección URL, se comprueba la reputación más reciente, antes de que se redirija al usuario al sitio de destino. La dirección URL está en espacio aislado asincrónicamente para actualizar su reputación.
+1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para que apunte a los servidores de Vínculos seguros de Microsoft. Cuando se hace clic en una dirección URL, se comprueba la reputación más reciente, antes de que se redirija al usuario al sitio de destino. La dirección URL está en espacio aislado asincrónicamente para actualizar su reputación.
 
 2. **La purga automática de cero horas (ZAP) para phishing** detecta y neutraliza de forma retroactiva los mensajes de phishing malintencionados que ya se han entregado a Exchange Online buzones.
 
@@ -130,9 +130,9 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 6. **Los complementos de mensaje** de informe permiten a los usuarios notificar fácilmente falsos positivos (buen correo electrónico, marcados erróneamente como *incorrectos*) o falsos negativos (correo electrónico incorrecto marcado como *bueno*) a Microsoft para su posterior análisis.
 
-7. **Caja fuerte Links for Office clients** ofrece la misma protección de tiempo de clic de Caja fuerte Links, de forma nativa, dentro de Office clientes como Word, PowerPoint y Excel.
+7. **Vínculos seguros para clientes de Office** ofrece la misma protección de tiempo de clic de Vínculos seguros, de forma nativa, dentro de aplicaciones de Office compatibles como Word, PowerPoint y Excel.
 
-8. **La protección para OneDrive, SharePoint y Teams** ofrece la misma protección de datos adjuntos Caja fuerte contra archivos malintencionados, de forma nativa, dentro de OneDrive, SharePoint y Microsoft Teams.
+8. **La protección para OneDrive, SharePoint y Teams** ofrece la misma protección de datos adjuntos seguros contra archivos malintencionados, de forma nativa, dentro de OneDrive, SharePoint y Microsoft Teams.
 
 9. Cuando se selecciona una dirección URL que apunta a un archivo después de la entrega, la **detonación de contenido vinculado** muestra una página de advertencia hasta que se completa el espacio aislado del archivo y se detecta que la dirección URL es segura.
 

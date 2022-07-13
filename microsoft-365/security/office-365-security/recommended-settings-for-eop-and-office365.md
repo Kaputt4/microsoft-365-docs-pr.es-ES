@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: f182b27c4d50ea16a289ac05adceb22c7fc9fd8d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756835"
+ms.locfileid: "66770963"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -267,7 +267,7 @@ En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](/powershell/module
 
 Vínculos seguros en Defender para Office 365 incluye la configuración global que se aplica a todos los usuarios que se incluyen en las directivas de vínculos seguros activas y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, consulte [Vínculos seguros en Defender para Office 365](safe-links.md).
 
-Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-links"></a>Configuración global de vínculos seguros
 
@@ -307,9 +307,8 @@ En PowerShell, se usan los [cmdlets New-SafeLinksPolicy](/powershell/module/exch
 |**No vuelva a escribir las siguientes URL en el correo electrónico** <p> _DoNotRewriteUrls_|No seleccionada <p> Blanco|No seleccionada <p> Blanco|No seleccionada <p> Blanco|No seleccionada <p> Blanco|No tenemos ninguna recomendación específica para esta configuración. <p> **Nota**: El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste vínculos seguros de las direcciones URL especificadas. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.|
 |**Acción para direcciones URL potencialmente malintencionadas en Microsoft Teams**||||||
 |**Activado: Vínculos seguros comprueba una lista de vínculos conocidos y malintencionados cuando los usuarios hacen clic en vínculos en Microsoft Teams** <p> _EnableSafeLinksForTeams_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
-|**Uso de vínculos seguros en aplicaciones Office 365** <p> _EnableSafeLinksForO365Clients_|Activado <p> `$true`|Activado <p> `$true`|Use Vínculos seguros en aplicaciones compatibles Office 365 de escritorio y móviles (iOS y Android). Para obtener más información, consulte [Configuración de vínculos seguros para aplicaciones Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**No realizar un seguimiento cuando los usuarios hacen clic en vínculos protegidos en Office 365 aplicaciones** <p> _TrackClicks_|Activada <p> `$false`|Desactivada <p> `$true`|Al desactivar esta configuración (establecer _TrackClicks_ `$true`en ) se realiza un seguimiento de los clics del usuario en las aplicaciones Office 365 admitidas.|
-|**No permitir que los usuarios hagan clic en la dirección URL original en Office 365 aplicaciones** <p> _AllowClickThrough_|Activado <p> `$false`|Activado <p> `$false`|Al activar esta configuración (establecer _AllowClickThrough_ `$false`en ) se impide hacer clic en la dirección URL original en las aplicaciones Office 365 admitidas.|
+|**Acción para direcciones URL potencialmente malintencionadas en aplicaciones de Microsoft Office**||||||
+|**Activado: vínculos seguros comprobará una lista de vínculos malintencionados conocidos cuando los usuarios hagan clic en vínculos de aplicaciones de Microsoft Office** <p> _EnableSafeLinksForO365Clients_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Use Vínculos seguros en aplicaciones compatibles Office 365 de escritorio y móviles (iOS y Android). Para obtener más información, vea [Configuración de vínculos seguros para aplicaciones de Office](safe-links.md#safe-links-settings-for-office-apps).|
 |**Configuración de protección de clics**||||||
 |**Seguimiento de clics de usuario** <p> _TrackUserClicks_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Permitir que los usuarios hagan clic en la dirección URL original** <p> _AllowClickThrough_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|No seleccionada <p> `$false`|No seleccionada <p> `$false`|Desactivar esta configuración (establecer _AllowClickThrough_ `$false`en ) impide hacer clic en la dirección URL original.|

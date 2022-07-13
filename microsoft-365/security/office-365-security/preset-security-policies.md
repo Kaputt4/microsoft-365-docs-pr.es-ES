@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607661"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772070"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -71,9 +71,9 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La directiva se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+  > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 - **Protección integrada** (solo Defender para Office 365): perfil que habilita solo la protección de vínculos seguros y datos adjuntos seguros. Este perfil proporciona de forma eficaz directivas predeterminadas para vínculos seguros y datos adjuntos seguros, que nunca tenían directivas predeterminadas.
 

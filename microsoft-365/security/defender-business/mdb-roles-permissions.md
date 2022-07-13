@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a21c3b1779c3a8ffa32ca4bbd777b377536ec870
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089470"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772629"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignación de roles y permisos en Microsoft Defender para Empresas
 
-Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Microsoft Defender para Empresas, ver informes o realizar acciones de respuesta sobre amenazas detectadas, se deben asignar permisos adecuados al equipo de seguridad. Los permisos se conceden a través de roles asignados en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o en [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Defender para empresas, ver informes o realizar acciones de respuesta sobre amenazas detectadas, se deben asignar permisos adecuados al equipo de seguridad. Los permisos se conceden a través de roles asignados en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o en [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Qué hacer
 
@@ -39,9 +39,9 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
 
 | Nivel de permisos | Descripción |
 |:---|:---|
-| **Administradores globales** (también conocidos como administradores globales) <br/><br/> *Como procedimiento recomendado, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que registró su empresa para Microsoft 365 o para Microsoft Defender para Empresas es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos los portales de Microsoft 365, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **Administradores de seguridad** (también conocidos como administradores de seguridad) | Los administradores de seguridad pueden realizar las siguientes tareas: <br/>- Visualización y administración de directivas de seguridad <br/>- Ver y administrar alertas y amenazas de seguridad (estas actividades incluyen la realización de acciones de respuesta en puntos de conexión) <br/>- Visualización de información de seguridad e informes |
-| **Lector de seguridad** | Los lectores de seguridad pueden realizar las siguientes tareas: <br/>- Visualización de directivas de seguridad <br/>- Visualización de amenazas y alertas de seguridad <br/>- Visualización de información de seguridad e informes  |
+| **Administradores globales** (también conocidos como administradores globales) <p> *Como procedimiento recomendado, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que registró su empresa para Microsoft 365 o para Defender para empresas es un administrador global de forma predeterminada. <p> Los administradores globales pueden modificar la configuración en todos los portales de Microsoft 365, como: <ul><li>El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **Administradores de seguridad** (también conocidos como administradores de seguridad) | Los administradores de seguridad pueden realizar las siguientes tareas: <ul><li>Visualización y administración de directivas de seguridad</li><li>Visualización y administración de amenazas y alertas de seguridad (estas actividades incluyen la realización de acciones de respuesta en puntos de conexión)</li><li>Visualización de información e informes de seguridad</li></ul> |
+| **Lector de seguridad** | Los lectores de seguridad pueden realizar las siguientes tareas:<ul><li>Ver directivas de seguridad</li><li>Visualización de amenazas y alertas de seguridad</li><li>Visualización de información e informes de seguridad</li></ul>  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>Visualización o edición de asignaciones de roles
@@ -57,9 +57,9 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
    - Lector de seguridad
 
    > [!IMPORTANT]
-   > Microsoft recomienda conceder a las personas acceso solo a lo que necesitan para realizar sus tareas. A este concepto se le llama *privilegio mínimo* para los permisos. Para obtener más información, consulte [Procedimientos recomendados para el acceso con privilegios mínimos para las aplicaciones](/azure/active-directory/develop/secure-least-privileged-access). 
+   > Microsoft recomienda conceder a los usuarios acceso solo a lo que necesitan para realizar sus tareas. A este concepto se le llama *privilegio mínimo* para los permisos. Para obtener más información, consulte [Procedimientos recomendados para el acceso con privilegios mínimos para las aplicaciones](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. En el panel lateral, seleccione el vínculo **Administrar miembros en Azure AD** . Esta acción le lleva a Azure Active Directory (Azure AD) donde puede ver y administrar las asignaciones de roles.
+4. En el panel lateral, seleccione el vínculo **Administrar miembros en Azure AD** . Esta acción le lleva a Azure Active Directory (Azure AD), donde puede ver y administrar las asignaciones de roles.
 
 5. Seleccione un usuario para abrir su perfil y, a continuación, elija **Roles asignados**.
 
@@ -72,7 +72,7 @@ Si aún no ha agregado usuarios a su suscripción, consulte [Agregar usuarios y 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Continúe con:
+Vete a:
 
 - [Paso 3: Configurar notificaciones por correo electrónico](mdb-email-notifications.md)
-- [Paso 4: Incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md)
+- [Paso 4: Incorporación de dispositivos a Defender for Business](mdb-onboard-devices.md)

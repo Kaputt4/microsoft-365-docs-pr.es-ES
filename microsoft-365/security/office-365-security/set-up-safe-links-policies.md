@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d006cd49392b80c826e23ef0d63f954d81249c0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487035"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771403"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -39,13 +39,13 @@ ms.locfileid: "66487035"
 
 Vínculos seguros en [Microsoft Defender para Office 365](defender-for-office-365.md) proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y la comprobación de la hora del clic de las direcciones URL y los vínculos en los mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](safe-links.md).
 
-Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de seguridad predefinidas estándar o estrictas o de vínculos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 También puede usar los procedimientos de este artículo para crear directivas de vínculos seguros que se apliquen a usuarios, grupos o dominios específicos.
 
 > [!NOTE]
 >
-> Los valores globales se configuran para la protección de vínculos seguros **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [Configuración global de vínculos seguros en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
+> Configure la lista "Bloquear las siguientes direcciones URL" en la configuración global para la protección de vínculos seguros **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [Configuración global de vínculos seguros en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
 >
 > Los administradores deben tener en cuenta las distintas opciones de configuración de Vínculos seguros. Una de las opciones disponibles es incluir información de identificación del usuario en Vínculos seguros. Esta característica permite a los equipos de operaciones de seguridad (SecOps) investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
@@ -78,7 +78,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   > [!NOTE]
   >
-  > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   . - El grupo **de roles View-Only Organization Management** de [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para ver nuestra configuración recomendada para las directivas de vínculos seguros, consulte [Configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -123,46 +123,79 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
-5. En la página **Configuración de protección** que aparece, configure los siguientes valores:
-   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **Activado** para habilitar la protección de vínculos seguros para los vínculos de los mensajes de correo electrónico. Si activa esta configuración, están disponibles las siguientes opciones:
-     - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: seleccione esta opción para habilitar el examen en tiempo real de los vínculos en los mensajes de correo electrónico. Si activa esta configuración, está disponible la siguiente configuración:
-       - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
-     - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: seleccione esta opción para aplicar la directiva Vínculos seguros a los mensajes entre remitentes internos y destinatarios internos.
-   - **Seleccione la acción para direcciones URL desconocidas o potencialmente malintencionadas en Microsoft Teams**: seleccione **Activado** para habilitar la protección de vínculos seguros para vínculos en Teams. Tenga en cuenta que esta configuración puede tardar hasta 24 horas en surtir efecto.
+5. En la **dirección URL & haga clic en la página configuración de protección** que aparece, configure las siguientes opciones:
+
+   - **Acción en direcciones URL potencialmente malintencionadas en la sección Correos electrónicos** :
+     - **Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: seleccione esta opción para activar la protección de vínculos seguros para los vínculos en los mensajes de correo electrónico. Si selecciona esta opción, están disponibles las opciones siguientes:
+       - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: seleccione esta opción para aplicar la directiva Vínculos seguros a los mensajes entre remitentes internos y destinatarios internos.
+       - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: seleccione esta opción para activar el examen en tiempo real de los vínculos en los mensajes de correo electrónico. Si selecciona esta opción, está disponible la siguiente configuración:
+         - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
+       - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: seleccione esta opción para evitar el ajuste de direcciones URL. Vínculos seguros se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL por parte de los clientes de Outlook que lo admiten.
+
+       - **No vuelva a escribir las siguientes direcciones URL en la sección de correo electrónico** : haga clic en **Administrar (nn) direcciones URL** para permitir el acceso a direcciones URL específicas que, de lo contrario, estarían bloqueadas por vínculos seguros.
+
+     > [!NOTE]
+     > El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste de vínculos seguros de esas direcciones URL. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.
+
+     1. En el control flotante **Administrar direcciones URL para no volver a escribir** que aparece, haga clic en ![el icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) **Agregar direcciones URL**.
+     2. En el control flotante **Agregar direcciones URL** que aparece, escriba la dirección URL o el valor que desee, seleccione la entrada que aparece debajo del cuadro y, a continuación, haga clic en **Guardar**. Repita este paso tantas veces como sea necesario.
+
+        Para obtener la sintaxis de entrada, consulte [Sintaxis de entrada para la lista "No volver a escribir las siguientes direcciones URL"](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+        Para quitar una entrada, haga clic en ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto a la entrada.
+
+        Cuando haya terminado, haga clic en **Guardar**.
+
+     3. De nuevo en el control flotante **Administrar direcciones URL para no volver a escribir** , haga clic en **Listo** o realice el mantenimiento en la lista de entradas:
+
+        Para quitar entradas de la lista, puede usar el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** para buscar la entrada.
+
+        Para seleccionar una sola entrada, haga clic en el valor de la columna **Direcciones URL** .
+
+        Para seleccionar varias entradas de una en una, haga clic en el área en blanco situada a la izquierda del valor.
+
+        Para seleccionar todas las entradas en una, haga clic en el área en blanco situada a la izquierda del encabezado de columna **de direcciones URL** .
+
+        Con una o varias entradas seleccionadas, haga clic en ![Icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) o ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) iconos que aparecen.
+
+        Cuando haya terminado, haga clic en **Listo**.
+
+   - **Acciones para direcciones URL potencialmente malintencionadas en la sección Microsoft Teams** :
+     - **Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en Microsoft Teams**: seleccione esta opción para habilitar la protección de vínculos seguros para vínculos en Teams. Tenga en cuenta que esta configuración puede tardar hasta 24 horas en surtir efecto.
 
      > [!NOTE]
      > Actualmente, la protección de vínculos seguros para Microsoft Teams no está disponible en Microsoft 365 GCC High o Microsoft 365 DoD.
 
-   - **Realizar un seguimiento de los clics del usuario**: deje esta opción seleccionada para habilitar que el usuario de seguimiento haga clic en las direcciones URL de los mensajes de correo electrónico.
-   - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta opción para impedir que los usuarios haga clic en la dirección URL original en [las páginas de advertencia](safe-links.md#warning-pages-from-safe-links).
-   - **No vuelva a escribir las siguientes direcciones URL**: permite acceder a las direcciones URL especificadas que, de lo contrario, estarían bloqueadas por vínculos seguros.
+   - **Acciones para direcciones URL potencialmente malintencionadas en la sección aplicaciones de Microsoft Office** :
+     - **Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en aplicaciones de Microsoft Office**: seleccione esta opción para habilitar la protección de vínculos seguros para vínculos en archivos en aplicaciones web, móviles y de escritorio de Office compatibles.
 
-     > [!NOTE]
-     > El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste vínculos seguros de las direcciones URL especificadas. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.
+   - **Haga clic en la sección configuración de protección** :
+     - **Realizar un seguimiento de los clics del usuario**: deje esta opción seleccionada para habilitar los clics del usuario de seguimiento en las direcciones URL. Si selecciona esta opción, están disponibles las siguientes opciones:
+       - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta opción para impedir que los usuarios haga clic en la dirección URL original en [las páginas de advertencia](safe-links.md#warning-pages-from-safe-links).
+       - **Mostrar la personalización de marca de la organización en las páginas de notificación y advertencia**: para obtener más información sobre la personalización de marca personalizada, vea [Personalizar el tema de Microsoft 365 para su organización](../../admin/setup/customize-your-organization-theme.md).
 
-     En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
+   Para obtener información detallada sobre esta configuración, consulte:
 
-     Para quitar una entrada existente, haga clic en ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto a la entrada.
-
-     Para obtener la sintaxis de entrada, consulte [Sintaxis de entrada para la lista "No volver a escribir las siguientes direcciones URL"](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
-
-   Para obtener información detallada sobre esta configuración, consulte [Configuración de vínculos seguros para mensajes de correo electrónico](safe-links.md#safe-links-settings-for-email-messages) y [Configuración de vínculos seguros para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [Configuración de vínculos seguros para mensajes de correo electrónico](safe-links.md#safe-links-settings-for-email-messages).
+   - [Configuración de vínculos seguros para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [Configuración de vínculos seguros para aplicaciones de Office](safe-links.md#safe-links-settings-for-office-apps).
+   - [Haga clic en Configuración de protección en Directivas de vínculos seguros](safe-links.md#click-protection-settings-in-safe-links-policies)
 
    Para obtener más información sobre los valores recomendados para la configuración de directivas estándar y estricta, consulte [Configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Cuando termine, haga clic en **Siguiente**.
 
-6. En la página **Notificación** que aparece, seleccione uno de los siguientes valores para **¿Cómo desea notificar a los usuarios?**:
-   - **Uso del texto de notificación predeterminado**
-   - **Usar texto de notificación personalizado**: si selecciona este valor (la longitud no puede superar los 200 caracteres), aparecerá la siguiente configuración:
-     - **Uso de Microsoft Translator para la localización automática**
-     - **Texto de notificación personalizado**: escriba el texto de notificación personalizado en este cuadro.
+6. En la página **Notificación** que aparezca, seleccione uno de los siguientes valores para **¿Cómo desea notificar a los usuarios?**:
+   - **Use el texto de notificación predeterminado**
+   - **Usar texto de notificación personalizado**: si selecciona este valor, aparecerá la siguiente configuración:
+     - **Utilizar el traductor de Microsoft para la localización automática**
+     - **Texto de notificación personalizado**: escriba el texto de notificación personalizado en este cuadro (la longitud no puede superar los 200 caracteres).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -273,7 +306,7 @@ La creación de una directiva de vínculos seguros en PowerShell es un proceso d
 Para crear una directiva de vínculos seguros, use esta sintaxis:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForOffice <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -284,16 +317,17 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 En este ejemplo se crea una directiva de vínculos seguros denominada Contoso All con los valores siguientes:
 
-- Active el examen y reescritura de direcciones URL en los mensajes de correo electrónico.
+- Active el examen de direcciones URL y la reescritura de direcciones URL en los mensajes de correo electrónico.
+  - Active el examen y reescritura de direcciones URL para los mensajes internos.
+  - Active el examen en tiempo real de las direcciones URL en las que se ha hecho clic, incluidos los vínculos en los que se ha hecho clic que apuntan a los archivos.
+    - Espere a que el análisis de URL se complete antes de entregar el mensaje.
 - Active el examen de direcciones URL en Teams.
-- Active el examen en tiempo real de las direcciones URL en las que se ha hecho clic, incluidos los vínculos en los que se ha hecho clic que apuntan a los archivos.
-- Espere a que el análisis de URL se complete antes de entregar el mensaje.
-- Active el examen y reescritura de direcciones URL para los mensajes internos.
+- Active el examen de direcciones URL en aplicaciones de Office compatibles.
 - Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos seguros (no se usa el parámetro _TrackUserClicks_ y el valor predeterminado es $true).
 - No permita que los usuarios hagan clic en la dirección URL original.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForOffice $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, consulte New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).

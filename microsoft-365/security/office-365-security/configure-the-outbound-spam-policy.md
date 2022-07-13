@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115837"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772092"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configuración del filtrado de correo no deseado saliente en EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "66115837"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, los mensajes de correo electrónico salientes que se envían a través de EOP se comprueban automáticamente en busca de correo no deseado y actividad de envío inusual.
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, los mensajes de correo electrónico salientes que se envían a través de EOP se comprueban automáticamente si hay spam y actividad de envío inusual.
 
-El correo no deseado saliente de un usuario de la organización suele indicar una cuenta en peligro. Los mensajes salientes sospechosos se marcan como correo no deseado (independientemente del nivel de confianza de correo no deseado o SCL) y se enrutan a través del [grupo de entrega de alto riesgo](high-risk-delivery-pool-for-outbound-messages.md) para ayudar a proteger la reputación del servicio (es decir, mantener Microsoft 365 servidores de correo electrónico de origen fuera de las listas de bloqueos IP). A los administradores se les notifica automáticamente la actividad de correo electrónico saliente sospechosa y los usuarios bloqueados a través de [directivas de alerta](../../compliance/alert-policies.md).
+El correo no deseado saliente de un usuario de la organización suele indicar una cuenta en peligro. Los mensajes salientes sospechosos se marcan como correo no deseado (independientemente del nivel de confianza de correo no deseado o SCL) y se enrutan a través del [grupo de entrega de alto riesgo](high-risk-delivery-pool-for-outbound-messages.md) para ayudar a proteger la reputación del servicio (es decir, mantener los servidores de correo electrónico de origen de Microsoft 365 fuera de las listas de bloqueos IP). A los administradores se les notifica automáticamente la actividad de correo electrónico saliente sospechosa y los usuarios bloqueados a través de [directivas de alerta](../../compliance/alert-policies.md).
 
 EOP usa directivas de correo no deseado saliente como parte de la defensa general de su organización contra el correo no deseado. Para obtener más información, consulte [Protección contra correo no deseado](anti-spam-protection.md).
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la directiva de correo no deseado saliente predeterminada. Para una mayor granularidad, también puede crear directivas de correo no deseado de salida personalizadas que se apliquen a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
-Puede configurar directivas de correo no deseado saliente en el portal de Microsoft 365 Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones).
+Puede configurar directivas de correo no deseado saliente en el portal de Microsoft 365 Defender de Microsoft 365 o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones).
 
 Los elementos básicos de una directiva de correo no deseado saliente en EOP son:
 
@@ -117,14 +117,14 @@ La creación de una directiva de correo no deseado de salida personalizada en el
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los remitentes internos a los que se aplica la directiva (excepciones de destinatario), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
 
    > [!IMPORTANT]
-   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -305,7 +305,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 En este ejemplo se crea una nueva directiva de filtro de correo no deseado saliente denominada Contoso Executives con la siguiente configuración:
 
-- Los límites de velocidad de destinatarios están restringidos a valores más pequeños que los valores predeterminados. Para obtener más información, consulte [Envío de límites entre Microsoft 365 opciones](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Los límites de velocidad de destinatarios están restringidos a valores más pequeños que los valores predeterminados. Para obtener más información, consulte [Envío de límites en las opciones de Microsoft 365](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - Una vez alcanzado uno de los límites, se impide que el usuario envíe mensajes.
 

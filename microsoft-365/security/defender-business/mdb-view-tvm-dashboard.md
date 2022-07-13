@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6b0c67aeac244b214e5c017511192225be05d454
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 6c7fdf4c7c2a2311d0a7651de4adb428d9c456cd
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663204"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772365"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Use el panel de administración de vulnerabilidades en Microsoft Defender para Empresas
 
-Microsoft Defender para Empresas incluye un panel de administración de vulnerabilidades diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, también puede ver información sobre los dispositivos expuestos y las recomendaciones de seguridad. Puede usar el panel de administración de vulnerabilidades & amenazas para:
+Defender for Business incluye un panel de administración de vulnerabilidades diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, también puede ver información sobre los dispositivos expuestos y las recomendaciones de seguridad. Puede usar el panel de administración de vulnerabilidades & amenazas para:
 
 - Visualización de la puntuación de exposición, que está asociada a los dispositivos de la empresa
 - Vea las principales recomendaciones de seguridad, como abordar las comunicaciones deterioradas con dispositivos, activar la protección del firewall o actualizar las definiciones del Antivirus de Microsoft Defender.
@@ -35,6 +35,6 @@ Microsoft Defender para Empresas incluye un panel de administración de vulnerab
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Tutoriales y simulaciones en Microsoft Defender para Empresas](mdb-tutorials.md)
-- [Incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md)
-- [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-create-policies.md)
+- [Tutoriales y simulaciones en Defender para empresas](mdb-tutorials.md)
+- [Incorporación de dispositivos a Defender for Business](mdb-onboard-devices.md)
+- [Visualización o edición de directivas en Defender para empresas](mdb-view-edit-create-policies.md)

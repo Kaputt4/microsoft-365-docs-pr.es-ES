@@ -1,5 +1,5 @@
 ---
-title: Protección contra amenazas en Microsoft Defender para Office 365, Antimalware, Anti-Phishing, Anti-spam, vínculos Caja fuerte, datos adjuntos Caja fuerte, Purga automática de cero horas (ZAP), configuración de seguridad de MDO
+title: Protección contra amenazas en Microsoft Defender para Office 365, Antimalware, Anti-Phishing, Anti-spam, Vínculos seguros, Datos adjuntos seguros, Purga automática de cero horas (ZAP), configuración de seguridad de MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,16 +20,16 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d067035d5eaf3c7a4febac6feeab0c56cd707728
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941443"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772136"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -58,7 +58,7 @@ Las características de protección contra amenazas se incluyen en *todas las* s
 |Protección antimalware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protección contra direcciones URL y archivos malintencionados en el correo electrónico y documentos Office (vínculos Caja fuerte y datos adjuntos de Caja fuerte)|[Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protección contra direcciones URL y archivos malintencionados en el correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
@@ -67,7 +67,7 @@ Para configurar directivas de Defender para Office 365, se le debe asignar un ro
 |Rol o grupo de roles|Dónde obtener más información|
 |---|---|
 |administrador global|[Acerca de los roles de administración de Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrador de seguridad|[Azure AD roles integrados](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Administrador de seguridad|[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
 Para más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
@@ -103,7 +103,7 @@ Para obtener instrucciones detalladas para configurar directivas antimalware, co
 
 Para obtener más información sobre la configuración recomendada para las directivas contra suplantación de identidad (phishing), consulte [Configuración de directivas contra suplantación de identidad (EOP)](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) y [Configuración de directivas anti phishing en Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-En el procedimiento siguiente se describe cómo configurar la directiva de anti phishing predeterminada. Configuración que solo están disponibles en Defender para Office 365 están claramente marcadas.
+En el procedimiento siguiente se describe cómo configurar la directiva de anti phishing predeterminada. La configuración que solo está disponible en Defender para Office 365 está marcada claramente.
 
 1. Abra la página **Anti-phishing** en el portal de Microsoft 365 Defender en <https://security.microsoft.com/antiphishing>.
 
@@ -130,10 +130,10 @@ En el procedimiento siguiente se describe cómo configurar la directiva de anti 
        - **Si la inteligencia del buzón detecta un usuario**<sup>\*</sup> suplantado: seleccione **Mover mensaje a las carpetas de correo no deseado** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto). Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección de inteligencia del buzón de correo.
        - **Si el mensaje se detecta como suplantación**: seleccione **Mover mensaje a las carpetas de correo no deseado** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto).  Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena mediante la protección de inteligencia contra suplantación de identidad.
      - **Sugerencias de seguridad & sección indicadores** : Configure los siguientes valores:
-       - **Mostrar el primer consejo de seguridad de contacto**: seleccione (activar).
-       - Mostrar consejo de seguridad <sup>\*</sup>de **suplantación de usuario**: seleccione (activar).
-       - **Mostrar consejo de seguridad**<sup>\*</sup> de suplantación de dominio: seleccione (activar).
-       - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad**<sup>\*</sup>: seleccionar (activar).
+       - **Mostrar la primera sugerencia de seguridad de contacto**: seleccione (activar).
+       - Mostrar sugerencia <sup>\*</sup>de **seguridad de suplantación de usuario**: seleccione (activar).
+       - Mostrar sugerencia <sup>\*</sup>de **seguridad de suplantación de dominio**: seleccione (activar).
+       - Mostrar sugerencia <sup>\*</sup>de **seguridad de caracteres inusuales de suplantación de usuario**: seleccione (activar).
        - **Mostrar (?) para remitentes no autenticados para la suplantación de identidad**: seleccione (activar).
        - **Mostrar etiqueta "via"**: seleccione (activar).
 
@@ -186,102 +186,89 @@ Para obtener más información sobre la configuración recomendada para la prote
 
 Para obtener instrucciones detalladas para configurar directivas contra correo no deseado, consulte [Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: Protección contra direcciones URL y archivos malintencionados (vínculos de Caja fuerte y datos adjuntos de Caja fuerte en Defender para Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: Protección contra direcciones URL y archivos malintencionados (vínculos seguros y datos adjuntos seguros en Defender para Office 365)
 
-La protección con tiempo de clic frente a direcciones URL y archivos malintencionados está disponible en suscripciones que incluyen [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se configura a través de [Caja fuerte directivas de datos adjuntos](safe-attachments.md) y [vínculos de Caja fuerte](safe-links.md).
+La protección con tiempo de clic frente a direcciones URL y archivos malintencionados está disponible en suscripciones que incluyen [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se configura a través de [directivas de datos adjuntos seguros](safe-attachments.md) y [vínculos seguros](safe-links.md) .
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>directivas de datos adjuntos de Caja fuerte en Microsoft Defender para Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
-Para obtener más información sobre la configuración recomendada para los datos adjuntos de Caja fuerte, vea .[ Caja fuerte configuración de datos adjuntos](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+Para obtener más información sobre la configuración recomendada para datos adjuntos seguros, vea . [Configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. Abra la página **datos adjuntos de Caja fuerte** en el portal de Microsoft 365 Defender en <https://security.microsoft.com/safeattachmentv2>.
+1. Abra la página **Datos adjuntos seguros** en el portal de Microsoft 365 Defender en <https://security.microsoft.com/safeattachmentv2>.
 
-2. En la página **datos adjuntos de Caja fuerte**, haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el control flotante que aparece:
+2. En la página **Datos adjuntos seguros** , haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el control flotante que aparece:
    - **Active Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**: active esta opción (![activar).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
-     > **Antes de activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams, compruebe que el registro de auditoría está activado en su organización**. Normalmente, esta acción la realiza alguien que tiene asignado el rol Registros de auditoría en Exchange Online. Para obtener más información, vea [Activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
+     > **Antes de activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams, compruebe que el registro de auditoría está activado en su organización**. Normalmente, esta acción la realiza alguien que tiene asignado el rol Registros de auditoría en Exchange Online. Para obtener más información, vea [Activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-   - **Active Caja fuerte Documentos para clientes de Office**: active esta opción (![activar).](../../media/scc-toggle-on.png) Tenga en cuenta que esta característica solo está disponible y es significativa con los tipos de licencia necesarios. Para obtener más información, consulte [Caja fuerte Documentos en Microsoft 365 E5](safe-docs.md).
-   - **Permitir a los usuarios hacer clic en la vista protegida incluso si Caja fuerte documentos identificaron el archivo como malintencionado**: compruebe que esta configuración está desactivada (![Desactivar).](../../media/scc-toggle-off.png)
+   - **Activar documentos seguros para clientes de Office**: active esta opción (![activar).](../../media/scc-toggle-on.png) Tenga en cuenta que esta característica solo está disponible y es significativa con los tipos de licencia necesarios. Para obtener más información, consulte [Documentos seguros en Microsoft 365 E5](safe-docs.md).
+   - **Permitir a los usuarios hacer clic en la vista protegida incluso si documentos seguros identificaron el archivo como malintencionado**: compruebe que esta configuración está desactivada (![Desactivar).](../../media/scc-toggle-off.png)
 
    Cuando haya terminado, haga clic en **Guardar.**
 
-3. De nuevo en la página **Datos adjuntos de Caja fuerte**, haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png)
+3. De nuevo en la página **Datos adjuntos seguros**, haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png)
 
-4. En el Asistente para **crear Caja fuerte directivas de datos adjuntos** que se abre, configure los siguientes valores:
+4. En el Asistente para **crear directivas de datos adjuntos seguros** que se abre, configure los siguientes valores:
    - **Asigne un nombre a la página de directiva** :
      - **Nombre**: escriba algo único y descriptivo.
      - **Descripción**: escriba una descripción opcional.
    - **Página Usuarios y dominios** : dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir [los dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) en el cuadro **Dominios** . De lo contrario, puede usar los cuadros **Usuarios** y **grupos** para un control más pormenorizado. Para especificar excepciones **, seleccione Excluir estos usuarios, grupos y dominios** y escriba valores.
-   - **página Configuración**:
-     - **Caja fuerte Respuesta de malware desconocida de datos adjuntos**: seleccione **Bloquear**.
+   - **Página Configuración** :
+     - **Respuesta de malware desconocida de datos adjuntos seguros**: seleccione **Bloquear**.
      - **Directiva de cuarentena**: el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen qué pueden hacer los usuarios en los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
      - **Redireccionamiento de datos adjuntos con datos adjuntos detectados** : **habilite el redireccionamiento**: active esta configuración (seleccione) y escriba una dirección de correo electrónico para recibir los mensajes detectados.
-     - **Aplique la respuesta de detección de datos adjuntos Caja fuerte si el examen no se puede completar (tiempo de espera o errores):** compruebe que esta configuración está seleccionada.
+     - **Aplique la respuesta de detección de datos adjuntos seguros si el examen no se puede completar (tiempo de espera o errores):** compruebe que esta configuración está seleccionada.
 
 5. Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
-6. (Recomendado) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido `$true` en en SharePoint PowerShell en línea.
+6. (Recomendado) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido `$true` en en PowerShell de SharePoint Online.
    - `$true` bloquea todas las acciones (excepto Eliminar) para los archivos detectados. Los usuarios no pueden abrir, mover, copiar ni compartir los archivos detectados.
    - `$false` bloquea todas las acciones excepto Eliminar y Descargar. Las personas pueden optar por aceptar el riesgo y descargar un archivo detectado.
 
-7. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de datos Microsoft 365.
+7. Espere hasta 30 minutos para que los cambios se distribuyan a todos los centros de datos de Microsoft 365.
 
-Para obtener instrucciones detalladas para configurar las directivas de datos adjuntos de Caja fuerte y la configuración global de Caja fuerte Datos adjuntos, consulte los temas siguientes:
+Para obtener instrucciones detalladas sobre cómo configurar directivas de datos adjuntos seguros y opciones globales para datos adjuntos seguros, consulte los temas siguientes:
 
-- [Configuración de directivas de datos adjuntos de Caja fuerte en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md)
+- [Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md)
 - [Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Documentos seguros en Microsoft 365 E5](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>directivas de vínculos de Caja fuerte en Microsoft Defender para Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Directivas de vínculos seguros en Microsoft Defender para Office 365
 
-Para obtener más información sobre la configuración recomendada para los vínculos de Caja fuerte, consulte [configuración de vínculos de Caja fuerte](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+Para obtener más información sobre la configuración recomendada para Vínculos seguros, consulte [Configuración de vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. Abra la página **Vínculos de Caja fuerte** en el portal de Microsoft 365 Defender en <https://security.microsoft.com/safelinksv2>.
+1. Abra la página **Vínculos seguros** en el portal de Microsoft 365 Defender en y, a <https://security.microsoft.com/safelinksv2>continuación, haga clic en ![Crear icono.](../../media/m365-cc-sc-create-icon.png)
 
-2. En la página **Vínculos Caja fuerte**, haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el control flotante que aparece:
-   - **Configuración que se aplican al contenido de la sección de aplicaciones Office 365 admitidas**:
-     - **Usar vínculos Caja fuerte en aplicaciones de Office 365**: compruebe que esta configuración está activada (![activar).](../../media/scc-toggle-on.png)
-     - **No realice un seguimiento cuando los usuarios hagan clic en vínculos protegidos en Office 365 aplicaciones**: desactive esta configuración (![Desactivar).](../../media/scc-toggle-off.png)
-     - **No permita que los usuarios hagan clic en la dirección URL original en Office 365 aplicaciones**: compruebe que esta configuración está activada (![activar).](../../media/scc-toggle-on.png)
-
-   Cuando haya terminado, haga clic en **Guardar.**
-
-3. De nuevo en la página **Vínculos Caja fuerte**, haga clic en ![El icono Crear.](../../media/m365-cc-sc-create-icon.png)
-
-4. En el Asistente para **crear directivas de vínculos Caja fuerte** que se abre, configure los siguientes valores:
+2. En el Asistente para **crear directivas de vínculos seguros** que se abre, configure los siguientes valores:
    - **Asigne un nombre a la página de directiva** :
      - **Nombre**: escriba algo único y descriptivo.
      - **Descripción**: escriba una descripción opcional.
    - **Página Usuarios y dominios** : dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir [los dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) en el cuadro **Dominios** . De lo contrario, puede usar los cuadros **Usuarios** y **grupos** para un control más pormenorizado. Para especificar excepciones **, seleccione Excluir estos usuarios, grupos y dominios** y escriba valores.
    - **Url & página configuración de protección** :
      - **Acción en direcciones URL potencialmente malintencionadas en la sección Correos electrónicos** :
-       - **Activado: Caja fuerte Vínculos comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: seleccione su configuración (activar).
-       - **Aplicar Caja fuerte Vínculos a mensajes de correo electrónico enviados dentro de la organización**: seleccione esta opción (activar).
+       - **Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico**: seleccione su configuración (activar).
+       - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: seleccione esta opción (activar).
        - **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: seleccione esta opción (activar).
-       - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: seleccione esta opción (activar).
-       - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de Caja fuerte API de vínculos**: compruebe que esta configuración no está seleccionada (desactivar).
-     - **No vuelva a escribir las siguientes direcciones URL en el correo electrónico**: no tenemos ninguna recomendación específica para esta configuración. Para obtener más información, consulte [las listas "No volver a escribir las siguientes direcciones URL" en Caja fuerte Directivas de vínculos](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
-     - **Acción para direcciones URL potencialmente malintencionadas en Microsoft Teams** sección:
-       - ***Activado: Caja fuerte Vínculos comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en Microsoft Teams**: seleccione esta opción (activar).
+         - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: seleccione esta opción (activar).
+       - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safe links API**: compruebe que esta configuración no está seleccionada (desactivar).
+     - **No vuelva a escribir las siguientes direcciones URL en el correo electrónico**: no tenemos ninguna recomendación específica para esta configuración. Para obtener más información, vea ["No volver a escribir las siguientes direcciones URL" en Directivas de vínculos seguros](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Acción para direcciones URL potencialmente malintencionadas en la sección Microsoft Teams** :
+       - ***Activado: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en Microsoft Teams**: seleccione esta opción (activar).
      - **Haga clic en la sección configuración de protección** :
        - **Realizar un seguimiento de los clics del usuario**: compruebe que esta configuración está seleccionada (activada).
-       - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta configuración (no seleccionada).
-       - **Mostrar la personalización de marca de la organización en las páginas de notificación y advertencia**: seleccionar esta configuración (activarla) solo es significativa después de haber seguido las instrucciones de [Personalización del tema de Microsoft 365 para que la organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo de la empresa.
+         - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta configuración (no seleccionada).
+         - **Mostrar la personalización de marca de la organización en las páginas de notificación y advertencia**: seleccionar esta configuración (activarla) solo es significativa después de haber seguido las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo de la empresa.
    - **Página de notificación** :
-     - **¿Cómo desea notificar a los usuarios?** sección: opcionalmente, puede seleccionar **Usar texto de notificación personalizado** para escribir el texto de notificación personalizado que se va a usar. También puede seleccionar **Usar Traductor de Microsoft para la localización automática** para traducir el texto de notificación personalizado al idioma del usuario. De lo contrario, deje **seleccionado Usar el texto de notificación predeterminado** .
+     - **¿Cómo desea notificar a los usuarios?** sección: opcionalmente, puede seleccionar **Usar texto de notificación personalizado** para escribir el texto de notificación personalizado que se va a usar. También puede seleccionar **Usar Microsoft Translator para la localización automática** para traducir el texto de notificación personalizado al idioma del usuario. De lo contrario, deje **seleccionado Usar el texto de notificación predeterminado** .
 
-5. Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+3. Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
-Para obtener instrucciones detalladas sobre cómo configurar directivas de vínculos de Caja fuerte y opciones globales para vínculos de Caja fuerte, consulte los temas siguientes:
-
-- [Configurar directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md)
-- [Configuración global de los vínculos de Caja fuerte en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md)
+Para obtener instrucciones detalladas sobre cómo configurar directivas de vínculos seguros y opciones globales para vínculos seguros, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Ahora configure alertas para los archivos detectados en SharePoint Online o OneDrive para la Empresa
 
-Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive para la Empresa se haya identificado como malintencionado, puede configurar una alerta como se describe en esta sección.
+Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive para la Empresa se ha identificado como malintencionado, puede configurar una alerta como se describe en esta sección.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & directivas** **de & directivas** \> de **alerta** de colaboración\>.
 
@@ -310,7 +297,7 @@ Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive
 
 6. En la página **Revisar la configuración**, revise la configuración, compruebe **que sí, activarla de inmediato** está seleccionada y, a continuación, haga clic en **Finalizar**.
 
-Para más información sobre las directivas de alertas, consulte [Directivas de alerta en el portal de cumplimiento de Microsoft Purview](../../compliance/alert-policies.md).
+Para obtener más información sobre las directivas de alerta, consulte [Directivas de alerta en el portal de cumplimiento Microsoft Purview](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > Cuando haya terminado de configurar, use estos vínculos para iniciar investigaciones de cargas de trabajo:
@@ -318,7 +305,7 @@ Para más información sobre las directivas de alertas, consulte [Directivas de 
 > - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 > - [Use el portal de Microsoft 365 Defender para administrar archivos en cuarentena en Defender para Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Administración de mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="post-setup-tasks-and-next-steps"></a>Tareas posteriores a la instalación y pasos siguientes
 
@@ -327,5 +314,5 @@ Después de configurar las características de protección contra amenazas, aseg
 |Qué hacer|Recursos para obtener más información|
 |---|---|
 |Vea cómo funcionan las características de protección contra amenazas para su organización mediante la visualización de informes|[Informes de seguridad de correo electrónico](view-email-security-reports.md) <p> [Informes para Microsoft Defender para Office 365](view-reports-for-mdo.md) <p> [Explorador de amenazas](threat-explorer.md)|
-|Revise y revise periódicamente las directivas de protección contra amenazas según sea necesario.|[Puntuación de seguridad](../defender/microsoft-secure-score.md) <p> [Microsoft 365 características de investigación y respuesta de amenazas](./office-365-ti.md)|
+|Revise y revise periódicamente las directivas de protección contra amenazas según sea necesario.|[Puntuación de seguridad](../defender/microsoft-secure-score.md) <p> [Características de investigación y respuesta de amenazas de Microsoft 365](./office-365-ti.md)|
 |Inspección de nuevas características y actualizaciones del servicio|[Opciones de versión estándar y de destino](../../admin/manage/release-options-in-office-365.md) <p> [Centro de mensajes](../../admin/manage/message-center.md) <p> [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descripciones del servicio](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

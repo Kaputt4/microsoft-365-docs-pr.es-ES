@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
-ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530497"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747888"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
@@ -71,7 +71,7 @@ La conexión directa B2B de Azure AD está deshabilitada de forma predeterminada
 Como parte de esta configuración, habilitamos la aplicación **Office 365**, que incluye Teams y servicios integrados en Teams, como SharePoint.
 
 > [!NOTE]
-> Los cambios en la configuración de acceso entre inquilinos pueden tardar hasta tres horas y quince minutos en surtir efecto.
+> Los cambios en la configuración de acceso entre espacios empresariales pueden tardar hasta seis horas en surtir efecto.
 
 > [!NOTE]
 > No se admiten canales compartidos entre nubes comerciales y de GCC.
@@ -82,7 +82,7 @@ Agregue cada organización con la que quiera participar en canales compartidos.
 
 Para agregar una organización
 1. Inicie sesión en [Azure Active Directory](https://aad.portal.azure.com) con una cuenta de administrador global o administrador de seguridad.
-1. Seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. Seleccione **Azure Active Directory for External Identities** y, a continuación, seleccione **Configuración de acceso entre espacios empresariales**.
 1. Seleccione **Configuración de la organización**.
 1. Seleccione **Agregar organización**.
 1. En el panel **Agregar organización**, escriba el nombre de dominio completo (o id. de inquilino) de la organización y presione Entrar.
@@ -94,7 +94,7 @@ Para agregar una organización
 Siga este procedimiento para cada organización en la que quiera invitar a participantes externos.
 
 Para configurar las opciones de entrada de una organización
-1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos**.
 1. Seleccione el vínculo de acceso de entrada para la organización que desea modificar.
 1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
 1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos externos**. (Puede elegir **Seleccionar usuarios y grupos externos** si desea limitar el acceso a usuarios y grupos específicos, por ejemplo, los que hayan firmado un acuerdo de confidencialidad).
@@ -108,7 +108,7 @@ Para configurar las opciones de entrada de una organización
 Siga este procedimiento para cada organización en la que quiera que los usuarios puedan participar en canales compartidos externos.
 
 Para configurar las opciones de salida de una organización
-1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos**.
 1. Seleccione el vínculo de acceso de salida de la organización que desea modificar.
 1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
 1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y establezca un **Aplicabl a** de todos los usuarios.

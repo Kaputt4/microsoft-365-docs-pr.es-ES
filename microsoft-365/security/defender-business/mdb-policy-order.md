@@ -15,20 +15,20 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8490793794d7cbd1ad7b3e660e2394edf870e2a7
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 361a1a08569f24c83498fddeb0e4c2b9bd8c5d02
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089636"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770885"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Descripción del orden de la directiva en Microsoft Defender para Empresas
 
-## <a name="policy-order-in-microsoft-defender-for-business"></a>Orden de la directiva en Microsoft Defender para Empresas
+## <a name="policy-order-in-defender-for-business"></a>Orden de directiva en Defender para empresas
 
-Microsoft Defender para Empresas incluye directivas predefinidas para ayudar a garantizar que los dispositivos que usan los empleados estén protegidos. El equipo de seguridad también puede agregar nuevas directivas. Por ejemplo, supongamos que desea aplicar ciertas configuraciones a algunos dispositivos y configuraciones diferentes a otros dispositivos. Para ello, agregue directivas, como directivas de protección de próxima generación o directivas de firewall.
+Defender for Business incluye directivas predefinidas para ayudar a garantizar que los dispositivos que usan los empleados están protegidos. El equipo de seguridad también puede agregar nuevas directivas. Por ejemplo, supongamos que desea aplicar ciertas configuraciones a algunos dispositivos y configuraciones diferentes a otros dispositivos. Para ello, agregue directivas, como directivas de protección de próxima generación o directivas de firewall.
 
-A medida que se agregan directivas, observará que se asigna un orden de prioridad. Puede editar el orden de prioridad de las directivas que defina, pero no puede cambiar el orden de prioridad de las directivas predeterminadas. Por ejemplo, supongamos que, para los dispositivos cliente Windows, tiene tres directivas de protección de próxima generación. En este caso, la directiva predeterminada es el número 3 en prioridad. Puede cambiar el orden de las directivas numeradas 1 y 2, pero la directiva predeterminada seguirá siendo el número 3 de la lista. 
+A medida que se agregan directivas, observará que se asigna un orden de prioridad. Puede editar el orden de prioridad de las directivas que defina, pero no puede cambiar el orden de prioridad de las directivas predeterminadas. Por ejemplo, supongamos que, para los dispositivos cliente de Windows, tiene tres directivas de protección de próxima generación. En este caso, la directiva predeterminada es el número 3 en prioridad. Puede cambiar el orden de las directivas numeradas 1 y 2, pero la directiva predeterminada seguirá siendo el número 3 de la lista. 
 
 **Lo importante que hay que recordar sobre varias directivas es que los dispositivos solo recibirán la primera directiva aplicada.** En referencia a nuestro ejemplo anterior de tres directivas de próxima generación, supongamos que tiene dispositivos destinados a las tres directivas. En este caso, esos dispositivos recibirán el número de directiva 1, pero no recibirán las directivas numeradas 2 y 3. 
 
@@ -42,8 +42,8 @@ A medida que se agregan directivas, observará que se asigna un orden de priorid
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Comenzar mediante Defender para empresas](mdb-get-started.md)
+- [Introducción al uso de Defender para empresas](mdb-get-started.md)
 - [Administrar dispositivos](mdb-manage-devices.md)
-- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
+- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

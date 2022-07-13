@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 735f9e04a9176ce1b6626a050429c0b7323a7c0b
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090022"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772935"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Administración de dispositivos en Microsoft Defender para Empresas
 
-En Microsoft Defender para Empresas, puede administrar los dispositivos de la siguiente manera:
+En Defender para empresas, puede administrar los dispositivos de la siguiente manera:
 
 - [Ver una lista de dispositivos incorporados](#view-the-list-of-onboarded-devices) para ver su nivel de riesgo, nivel de exposición y estado de mantenimiento
 - [Realizar acciones en un dispositivo](#take-action-on-a-device-that-has-threat-detections) que tenga detecciones de amenazas
@@ -35,7 +35,7 @@ En Microsoft Defender para Empresas, puede administrar los dispositivos de la si
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
-:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos":::
+:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Pantalla del inventario de dispositivos":::
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
@@ -43,7 +43,7 @@ En Microsoft Defender para Empresas, puede administrar los dispositivos de la si
 
 3. Seleccione un dispositivo para abrir su panel flotante, donde puede obtener más información sobre su estado y tomar medidas. 
 
-   Si aún no aparece ningún dispositivo, [incorpore dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md)
+   Si aún no aparece ningún dispositivo, [incorpore dispositivos a Defender for Business](mdb-onboard-devices.md).
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Realizar acciones en un dispositivo que tenga detecciones de amenazas
 
@@ -55,11 +55,11 @@ En Microsoft Defender para Empresas, puede administrar los dispositivos de la si
 
 3. Seleccione los puntos suspensivos (**...**) para abrir el menú acciones. 
 
-4. Seleccione una acción, como **Ejecutar examen antivirus** o **Iniciar investigación automatizada**. 
+4. Seleccione una acción, como **Ejecutar escaneo antivirus** o **Iniciar Investigación automatizada**. 
 
 ## <a name="onboard-a-device"></a>Incorporación de un dispositivo
 
-Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
+Consulte [Incorporación de dispositivos a Defender for Business](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Retirar un dispositivo
 
@@ -67,7 +67,7 @@ Consulte [Offboarding a device (Offboarding a device](mdb-offboard-devices.md)).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
+- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 - [Creación o edición de grupos de dispositivos](mdb-create-edit-device-groups.md)

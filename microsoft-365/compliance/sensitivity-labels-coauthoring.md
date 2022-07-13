@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: e82249f3d42eb71345bb998d16a6c2a24e11130c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628647"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749207"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -74,10 +74,10 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Las etiquetas de confidencialidad deben estar [habilitadas para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) para el espacio empresarial. Si esta característica no está ya habilitada, se habilitará automáticamente al seleccionar la configuración para activar la coautoría para los archivos con etiquetas de confidencialidad.
 
 - Aplicaciones de Microsoft 365 para empresas:
-    - **Windows**: versión mínima 2107 del Canal actual o canal empresarial mensual, o la versión mínima 2202 del Canal semestral para empresas (versión preliminar)
+    - **Windows**: versión mínima 2107 del Canal actual o canal empresarial mensual, o la versión mínima 2202 del Canal semestral para empresas
     - **macOS**: versión mínima 16.51
-    - **iOS**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
-    - **Android**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931
+    - **iOS**: En versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
+    - **Android**: En versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931
 
 - Todas las aplicaciones, servicios y herramientas operativas de su espacio empresarial deben admitir los nuevos [metadatos de etiquetado](#metadata-changes-for-sensitivity-labels). Si usa alguna de las siguientes, compruebe las versiones mínimas requeridas:
     

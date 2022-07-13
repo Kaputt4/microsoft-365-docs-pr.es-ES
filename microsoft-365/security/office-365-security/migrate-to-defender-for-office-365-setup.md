@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34e975be9a937177706fd7db6605d2ef25edcad3
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 899cf3894936ac154e61ef56204294d526aab33e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043553"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772026"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migración a Microsoft Defender para Office 365: fase 2: instalación
 
@@ -49,13 +49,13 @@ Bienvenido a **Fase 2: Configuración** de la **[migración a Microsoft Defender
 
 Los grupos de distribución son necesarios en Microsoft 365 para los siguientes aspectos de la migración:
 
-- **Excepciones para la regla de flujo de correo SCL=-1**: quiere que los usuarios piloto obtengan todo el efecto de Defender para Office 365 protección, por lo que necesita que Defender para Office 365 analicen sus mensajes entrantes. Para ello, defina los usuarios piloto en los grupos de distribución adecuados de Microsoft 365 y configure estos grupos como excepciones a la regla de flujo de correo SCL=-1.
+- **Excepciones para la regla de flujo de correo SCL=-1**: quiere que los usuarios piloto obtengan todo el efecto de Defender para Office 365 protección, por lo que necesita que Defender para Office 365 analicen sus mensajes entrantes. Para ello, defina los usuarios piloto en los grupos de distribución adecuados en Microsoft 365 y configure estos grupos como excepciones a la regla de flujo de correo SCL=-1.
 
   Como se describe en [Onboard Step 2: (Optional) Exempt pilot users from filtering by your existing protection service (Incorporar paso 2: (opcional) Eximir a los usuarios piloto del filtrado por el servicio de protección existente](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service), debe considerar la posibilidad de excluir a estos mismos usuarios piloto del examen por el servicio de protección existente. Eliminar la posibilidad de filtrar por el servicio de protección existente y confiar exclusivamente en Defender para Office 365 es la mejor y más cercana representación de lo que va a suceder una vez completada la migración.
 
 - **Pruebas de características específicas de protección Defender para Office 365**: incluso para los usuarios piloto, no desea activar todo a la vez. El uso de un enfoque preconfigurado para las características de protección que están en vigor para los usuarios piloto facilitará la solución de problemas y el ajuste. Teniendo en cuenta este enfoque, se recomiendan los siguientes grupos de distribución:
-  - **Un grupo piloto Caja fuerte Attachments**: por ejemplo, **SafeAttachments de MDOPilot\_**
-  - **Un grupo piloto de vínculos de Caja fuerte**: por ejemplo, **SafeLinks de MDOPilot\_**
+  - **Un grupo piloto de datos adjuntos seguros**: por ejemplo, **MDOPilot\_SafeAttachments**
+  - **Un grupo piloto de Vínculos seguros**: por ejemplo, **MDOPilot\_SafeLinks**
   - **Un grupo piloto para la configuración de directivas antispam y antispam estándar**: por ejemplo, **MDOPilot\_SpamPhish\_Standard**
   - **Un grupo piloto para la configuración estricta de directivas antispam y anti phishing**: por ejemplo, **MDOPilot\_SpamPhish\_Strict**
 
@@ -81,7 +81,7 @@ La capacidad de los usuarios para identificar falsos positivos o falsos negativo
 
 Puede especificar un buzón de Exchange Online para recibir mensajes que los usuarios informan como malintencionados o no malintencionados. Para obtener más instrucciones, consulte [Configuración de mensajes notificados por el usuario](user-submission.md). Este buzón puede recibir copias de los mensajes que los usuarios enviaron a Microsoft, o bien el buzón puede interceptar mensajes sin informar de ellos a Microsoft (el equipo de seguridad puede analizar y enviar manualmente los mensajes). Sin embargo, este enfoque de interceptación no permite que el servicio ajuste y aprenda automáticamente.
 
-También debe confirmar que todos los usuarios del piloto tienen instalada una aplicación de informes de mensajes compatible en Outlook compatible con el envío de usuarios. Estas aplicaciones incluyen:
+También debe confirmar que todos los usuarios del piloto tienen instalada en Outlook una aplicación de informes de mensajes compatible con el envío de usuarios. Estas aplicaciones incluyen:
 
 - [Complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
@@ -93,27 +93,27 @@ En lugar de basarse en datos respaldados por la experiencia de toda la organizac
 
 ## <a name="step-3-maintain-or-create-the-scl-1-mail-flow-rule"></a>Paso 3: Mantener o crear la regla de flujo de correo SCL=-1
 
-Dado que el correo electrónico entrante se enruta a través de otro servicio de protección que se encuentra delante de Microsoft 365, es muy probable que ya tenga una regla de flujo de correo (también conocida como regla de transporte) en Exchange Online que establezca el nivel de confianza de correo no deseado (SCL) de todo el correo entrante en el valor -1 (omitir el filtrado de correo no deseado). La mayoría de los servicios de protección de terceros fomentan esta regla de flujo de correo SCL=-1 para Microsoft 365 clientes que desean usar sus servicios.
+Dado que el correo electrónico entrante se enruta a través de otro servicio de protección que se encuentra delante de Microsoft 365, es muy probable que ya tenga una regla de flujo de correo (también conocida como regla de transporte) en Exchange Online que establezca el nivel de confianza de correo no deseado (SCL) de todo el correo entrante en el valor -1 (omitir el filtrado de correo no deseado). La mayoría de los servicios de protección de terceros fomentan esta regla de flujo de correo SCL=-1 para los clientes de Microsoft 365 que quieran usar sus servicios.
 
-Si usa algún otro mecanismo para invalidar la pila de filtrado de Microsoft (por ejemplo, una lista de direcciones IP permitidas), se recomienda cambiar al uso de una regla de flujo de correo SCL=-1 **siempre y cuando** todo el correo entrante de Internet en Microsoft 365 provenga del servicio de protección de terceros (ningún correo fluye directamente de Internet a Microsoft 365).
+Si usa algún otro mecanismo para invalidar la pila de filtrado de Microsoft (por ejemplo, una lista de direcciones IP permitidas), se recomienda cambiar al uso de una regla de flujo de correo SCL=-1 **siempre y cuando** todo el correo entrante de Internet en Microsoft 365 provenga del servicio de protección de terceros (ningún correo fluye directamente desde Internet a Microsoft 365).
 
 La regla de flujo de correo SCL=-1 es importante durante la migración por los siguientes motivos:
 
 - Puede usar [el Explorador de amenazas](email-security-in-microsoft-defender.md) para ver qué características de la pila de Microsoft *habrían* actuado en los mensajes sin afectar a los resultados del servicio de protección existente.
 - Puede ajustar gradualmente quién está protegido por la pila de filtrado de Microsoft 365 configurando excepciones a la regla de flujo de correo SCL=-1. Las excepciones serán los miembros de los grupos de distribución piloto que se recomiendan más adelante en este artículo.
 
-  Antes o durante la transición del registro MX a Microsoft 365, deshabilitará esta regla para activar la protección completa de la pila de protección de Microsoft 365 para todos los destinatarios de la organización.
+  Antes o durante la transición del registro MX a Microsoft 365, deshabilitará esta regla para activar la protección completa de la pila de protección de Microsoft 365 para todos los destinatarios de su organización.
 
 Para obtener más información, consulte [Uso de reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes de Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 **Notas**:
 
-- Si planea permitir que el correo de Internet fluya a través del servicio de protección existente **y** directamente a Microsoft 365 al mismo tiempo, debe restringir la regla de flujo de correo SCL=-1 (correo que omite el filtrado de correo no deseado) al correo que haya pasado solo por el servicio de protección existente. No desea que el correo de Internet no filtrado se desembarque en los buzones de usuario en Microsoft 365.
+- Si tiene previsto permitir que el correo de Internet fluya a través del servicio de protección existente **y** directamente a Microsoft 365 al mismo tiempo, debe restringir la regla de flujo de correo SCL=-1 (correo que omite el filtrado de correo no deseado) al correo que solo pasa por el servicio de protección existente. No quiere que el correo de Internet no filtrado se desembarque en los buzones de usuario de Microsoft 365.
 
   Para identificar correctamente el correo que ya ha examinado el servicio de protección existente, puede agregar una condición a la regla de flujo de correo SCL=-1. Por ejemplo:
 
-  - **Para los servicios de protección basada en la nube**: puede usar un valor de encabezado y encabezado único para su organización. Los mensajes que tienen el encabezado no se examinan por Microsoft 365. Los mensajes sin el encabezado son examinados por Microsoft 365
-  - **Para dispositivos o servicios de protección locales**: puede usar direcciones IP de origen. Los mensajes de las direcciones IP de origen no se examinan Microsoft 365. Los mensajes que no son de las direcciones IP de origen se examinan Microsoft 365.
+  - **Para los servicios de protección basada en la nube**: puede usar un valor de encabezado y encabezado único para su organización. Microsoft 365 no examina los mensajes que tienen el encabezado. Microsoft 365 examina los mensajes sin el encabezado
+  - **Para dispositivos o servicios de protección locales**: puede usar direcciones IP de origen. Microsoft 365 no examina los mensajes de las direcciones IP de origen. Microsoft 365 examina los mensajes que no proceden de las direcciones IP de origen.
 
 - No dependa exclusivamente de los registros MX para controlar si el correo se filtra. Los remitentes pueden omitir fácilmente el registro MX y enviar correo electrónico directamente a Microsoft 365.
 
@@ -137,34 +137,32 @@ Al crear directivas de producción, incluso si no se aplican a todos los usuario
 > [!IMPORTANT]
 > Las directivas se pueden limitar a usuarios, grupos o dominios. No se recomienda combinar los tres en una directiva, ya que solo los usuarios que coincidan con los tres estarán dentro del ámbito de la directiva. Para las directivas piloto, se recomienda usar grupos o usuarios. Para las directivas de producción, se recomienda usar dominios. Es muy importante comprender que **solo** el dominio de correo electrónico principal del usuario determina si el usuario está dentro del ámbito de la directiva. Por lo tanto, si cambia el registro MX del dominio secundario de un usuario, asegúrese de que su dominio principal también esté cubierto por una directiva.
 
-### <a name="create-pilot-safe-attachments-policies"></a>Creación de directivas piloto de datos adjuntos de Caja fuerte
+### <a name="create-pilot-safe-attachments-policies"></a>Creación de directivas de datos adjuntos seguros piloto
 
-[Caja fuerte Attachments](safe-attachments.md) es la característica de Defender para Office 365 más fácil de habilitar y probar antes de cambiar el registro MX. Caja fuerte Attachments tiene las siguientes ventajas:
+[Datos adjuntos seguros](safe-attachments.md) es la característica de Defender para Office 365 más fácil de habilitar y probar antes de cambiar el registro MX. Los datos adjuntos seguros tienen las siguientes ventajas:
 
 - Configuración mínima.
 - Muy baja probabilidad de falsos positivos.
 - Comportamiento similar a la protección contra malware, que siempre está activada y no se ve afectada por la regla de flujo de correo SCL=-1.
 
-Cree una directiva de datos adjuntos de Caja fuerte para los usuarios piloto.
+Cree una directiva de datos adjuntos seguros para los usuarios piloto.
 
-Para obtener la configuración recomendada, consulte [Configuración de directivas de datos adjuntos de Caja fuerte recomendados](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Tenga en cuenta que las recomendaciones Estándar y Estricta son las mismas. Para crear la directiva, consulte [Configuración de directivas de datos adjuntos de Caja fuerte](set-up-safe-attachments-policies.md). Asegúrese de usar el grupo **MDOPilot\_SafeAttachments** como condición de la directiva (a quién se aplica la directiva).
-
-> [!IMPORTANT]
-> En la actualidad, no hay ninguna directiva de datos adjuntos de Caja fuerte predeterminada. Antes de cambiar los registros MX, se recomienda tener una directiva de datos adjuntos de Caja fuerte que proteja toda la organización.
-
-### <a name="create-pilot-safe-links-policies"></a>Creación de directivas piloto de vínculos de Caja fuerte
+Para obtener la configuración recomendada, consulte [Configuración de directivas de datos adjuntos seguros recomendados](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Tenga en cuenta que las recomendaciones Estándar y Estricta son las mismas. Para crear la directiva, consulte [Configuración de directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md). Asegúrese de usar el grupo **MDOPilot\_SafeAttachments** como condición de la directiva (a quién se aplica la directiva).
 
 > [!NOTE]
-> No se admiten los vínculos de ajuste o reescritura ya ajustados o reescritos. Si el servicio de protección actual ya encapsula o vuelve a escribir vínculos en mensajes de correo electrónico, debe desactivar esta característica para los usuarios piloto. Una manera de asegurarse de que esto no sucede es excluir el dominio de dirección URL del otro servicio en la directiva de vínculos de Caja fuerte.
->
-> Caja fuerte La protección de vínculos para aplicaciones de Office compatibles es una configuración global que se aplica a todos los usuarios con licencia. Puede activarlo o desactivarlo globalmente, no para usuarios específicos. Para obtener más información, vea [Configurar la protección de vínculos de Caja fuerte para aplicaciones Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+> La directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios que no están definidos en ninguna directiva de datos adjuntos seguros. Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
-Cree una directiva de vínculos de Caja fuerte para los usuarios piloto. Las posibilidades de falsos positivos en los vínculos de Caja fuerte también son bastante bajas, pero debe considerar la posibilidad de probar la característica en un número menor de usuarios piloto que Caja fuerte Datos adjuntos. Dado que la característica afecta a la experiencia del usuario, debe tener en cuenta un plan para educar a los usuarios.
+### <a name="create-pilot-safe-links-policies"></a>Creación de directivas piloto de vínculos seguros
 
-Para obtener la configuración recomendada, consulte [Configuración de directivas de vínculos de Caja fuerte recomendados](recommended-settings-for-eop-and-office365.md#safe-links-settings). Tenga en cuenta que las recomendaciones Estándar y Estricta son las mismas. Para crear la directiva, consulte [Configuración de directivas de vínculos Caja fuerte](set-up-safe-links-policies.md). Asegúrese de usar el grupo **MDOPilot\_SafeLinks** como condición de la directiva (a quién se aplica la directiva).
+> [!NOTE]
+> No se admiten los vínculos de ajuste o reescritura ya ajustados o reescritos. Si el servicio de protección actual ya encapsula o vuelve a escribir vínculos en mensajes de correo electrónico, debe desactivar esta característica para los usuarios piloto. Una manera de asegurarse de que esto no sucede es excluir el dominio de dirección URL del otro servicio en la directiva vínculos seguros.
 
-> [!IMPORTANT]
-> En la actualidad, no hay ninguna directiva de vínculos de Caja fuerte predeterminada. Antes de cambiar los registros MX, se recomienda tener una directiva de vínculos de Caja fuerte que proteja toda la organización.
+Cree una directiva de vínculos seguros para los usuarios piloto. Las posibilidades de falsos positivos en Vínculos seguros también son bastante bajas, pero debe considerar la posibilidad de probar la característica en un número menor de usuarios piloto que los datos adjuntos seguros. Dado que la característica afecta a la experiencia del usuario, debe tener en cuenta un plan para educar a los usuarios.
+
+Para obtener la configuración recomendada, consulte [Configuración de directivas de vínculos seguros recomendados](recommended-settings-for-eop-and-office365.md#safe-links-settings). Tenga en cuenta que las recomendaciones Estándar y Estricta son las mismas. Para crear la directiva, consulte [Configuración de directivas de vínculos seguros](set-up-safe-links-policies.md). Asegúrese de usar el grupo **MDOPilot\_SafeLinks** como condición de la directiva (a quién se aplica la directiva).
+
+> [!NOTE]
+> La directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios que no están definidos en ninguna directiva de vínculos seguros. Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 ### <a name="create-pilot-anti-spam-policies"></a>Creación de directivas piloto contra correo no deseado
 

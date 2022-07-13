@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 84029946abe064219622fdd1b9ce0dd9a6dfc048
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090440"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773221"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Grupos de dispositivos en Microsoft Defender para Empresas
 
-En Microsoft Defender para Empresas, las directivas se aplican a los dispositivos a través de ciertas colecciones que se denominan grupos de dispositivos. 
+En Defender para empresas, las directivas se aplican a los dispositivos a través de ciertas colecciones que se denominan grupos de dispositivos. 
 
 **En este artículo se describe**:  
 
@@ -37,14 +37,14 @@ En Microsoft Defender para Empresas, las directivas se aplican a los dispositivo
 
 ## <a name="what-is-a-device-group"></a>¿Qué es un grupo de dispositivos?
 
-Un grupo de dispositivos es una colección de dispositivos que se agrupan por determinados criterios especificados, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que se excluyan. En Microsoft Defender para Empresas, las directivas se aplican a los dispositivos mediante grupos de dispositivos.
+Un grupo de dispositivos es una colección de dispositivos que se agrupan por determinados criterios especificados, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que se excluyan. En Defender para empresas, las directivas se aplican a los dispositivos mediante grupos de dispositivos.
 
-Defender for Business incluye grupos de dispositivos predeterminados que puede usar. Los grupos de dispositivos predeterminados incluyen todos los dispositivos que se incorporan a Defender para Empresas. Por ejemplo, hay un grupo de dispositivos predeterminado para Windows dispositivos. Cada vez que incorpore Windows dispositivos, se agregan automáticamente al grupo de dispositivos predeterminado.
+Defender for Business incluye grupos de dispositivos predeterminados que puede usar. Los grupos de dispositivos predeterminados incluyen todos los dispositivos que se incorporan a Defender para Empresas. Por ejemplo, hay un grupo de dispositivos predeterminado para dispositivos Windows. Cada vez que incorpores dispositivos Windows, se agregan automáticamente al grupo de dispositivos predeterminado.
 
-También puede crear nuevos grupos de dispositivos para asignar directivas con una configuración específica a determinados dispositivos. Por ejemplo, puede tener una directiva de firewall asignada a un conjunto de dispositivos Windows y una directiva de firewall diferente asignada a otro conjunto de dispositivos Windows. Puede definir grupos de dispositivos específicos para usarlos con las directivas.
+También puede crear nuevos grupos de dispositivos para asignar directivas con una configuración específica a determinados dispositivos. Por ejemplo, es posible que tenga una directiva de firewall asignada a un conjunto de dispositivos Windows y una directiva de firewall diferente asignada a otro conjunto de dispositivos Windows. Puede definir grupos de dispositivos específicos para usarlos con las directivas.
 
 > [!NOTE]
-> Al crear directivas en Defender para empresas, se asigna un orden de prioridad. Si aplica varias directivas a un conjunto determinado de dispositivos, estos solo recibirán la primera directiva aplicada. Para obtener más información, consulte [Descripción del orden de la directiva en Microsoft Defender para Empresas](mdb-policy-order.md).
+> Al crear directivas en Defender para empresas, se asigna un orden de prioridad. Si aplica varias directivas a un conjunto determinado de dispositivos, estos solo recibirán la primera directiva aplicada. Para obtener más información, consulte [Descripción del orden de las directivas en Defender para empresas](mdb-policy-order.md).
 
 Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterminados y los grupos de dispositivos personalizados que defina, se almacenan en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
@@ -62,7 +62,7 @@ Actualmente, en Defender para empresas, puede crear un nuevo grupo de dispositiv
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, vea [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, consulte [Ver o editar directivas en Defender para empresas](mdb-view-edit-policies.md).
 
 4. En el paso **Información general**, revise la información, edítela si es necesario y, a continuación, elija **Siguiente**.
 
@@ -92,7 +92,7 @@ Actualmente, en Defender para empresas, puede ver los grupos de dispositivos exi
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, vea [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, consulte [Ver o editar directivas en Defender para empresas](mdb-view-edit-policies.md).
 
 4. En el paso **Información general**, revise la información, edítela si es necesario y, a continuación, elija **Siguiente**.
 
@@ -112,6 +112,6 @@ Elija una o varias de las siguientes tareas:
 
 - [Ver o editar directivas](mdb-view-edit-policies.md)
 - [Crear una nueva directiva](mdb-create-new-policy.md)
-- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
+- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

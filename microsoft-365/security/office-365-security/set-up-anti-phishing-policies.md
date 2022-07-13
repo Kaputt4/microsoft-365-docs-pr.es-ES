@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115903"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771007"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "66115903"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Las directivas para configurar la protección contra phishing están disponibles en organizaciones Microsoft 365 con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online y Microsoft Defender para Office 365 organizaciones.
+Las directivas para configurar la protección contra suplantación de identidad (phishing) están disponibles en organizaciones de Microsoft 365 con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online y Microsoft Defender para Office 365 organizaciones.
 
 Algunos ejemplos de organizaciones Microsoft Defender para Office 365 son:
 
@@ -50,7 +50,7 @@ En la tabla siguiente se describen las diferencias de alto nivel entre las direc
 |Crear directivas personalizadas|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |Configuración de directiva común<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |Configuración de suplantación de identidad|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
-|Primer contacto consejo de seguridad|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Primer consejo de seguridad de contacto|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
 |Configuración de suplantación||![Marca de verificación](../../media/checkmark.png)|
 |Umbrales avanzados de phishing||![Marca de verificación](../../media/checkmark.png)|
 
@@ -87,14 +87,14 @@ La siguiente configuración de directiva está disponible en las directivas cont
   > [!NOTE]
   > Se requiere al menos una selección en la configuración **usuarios, grupos y dominios** en las directivas de anti-phishing personalizadas para identificar los destinatarios del mensaje a **los** <u>que se aplica la directiva</u>. Las directivas contra suplantación de identidad en Defender para Office 365 también tienen [una configuración de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en la que puede especificar direcciones de correo electrónico de remitente individuales o dominios de remitente <u>que recibirán protección de suplantación</u>, como se describe más adelante en este artículo.
   >
-  > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+  > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 ## <a name="spoof-settings"></a>Configuración de suplantación de identidad
 
@@ -112,16 +112,16 @@ La siguiente configuración de suplantación de identidad está disponible en la
   > [!NOTE]
   >
   > - La protección contra la suplantación de identidad está habilitada de forma predeterminada en la directiva predeterminada contra suplantación de identidad (phishing) y en las nuevas directivas personalizadas contra suplantación de identidad (phishing) que cree.
-  > - No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita el filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - Al deshabilitar la protección contra la suplantación de identidad solo se deshabilita la protección de suplantación _implícita_ de las comprobaciones de [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) . Si el remitente produce un error en las comprobaciones [de DMARC](use-dmarc-to-validate-email.md) _explícitas_ en las que la directiva está establecida en cuarentena o rechazo, el mensaje sigue en cuarentena o se rechaza.
 
 - **Indicadores de remitente no autenticados**: disponible en la sección **Consejos de seguridad & indicadores** solo cuando la inteligencia de suplantación de identidad está activada. Consulte los detalles de la sección siguiente.
 - **Acciones**: para los mensajes de remitentes falsificados bloqueados (bloqueados automáticamente por inteligencia de suplantación de identidad o bloqueados manualmente en la lista Permitir o bloquear inquilinos), también puede especificar la acción que debe realizar en los mensajes:
-  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
-    - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Administración de mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Búsqueda y liberación de mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
     Si selecciona **Poner en cuarentena el mensaje**, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que se pusieron en cuarentena mediante la protección de inteligencia de suplantación de identidad. Las directivas de cuarentena definen qué pueden hacer los usuarios en los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
@@ -142,23 +142,23 @@ Para evitar que el signo de interrogación o la etiqueta se agreguen a mensajes 
 
 Para obtener más información, consulte [Identificación de mensajes sospechosos en Outlook.com y Outlook en la Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="first-contact-safety-tip"></a>Primer contacto consejo de seguridad
+## <a name="first-contact-safety-tip"></a>Primer consejo de seguridad de contacto
 
-La configuración **Show first contact consejo de seguridad** está disponible en EOP y Defender para Office 365 organizaciones, y no depende de la configuración de inteligencia de suplantación o protección contra suplantación. El consejo de seguridad se muestra a los destinatarios en los siguientes escenarios:
+La configuración **mostrar la primera sugerencia de seguridad de contacto** está disponible en EOP y Defender para Office 365 organizaciones, y no depende de la configuración de inteligencia de suplantación o protección contra suplantación. La sugerencia de seguridad se muestra a los destinatarios en los siguientes escenarios:
 
 - La primera vez que recibe un mensaje de un remitente
 - A menudo no reciben mensajes del remitente.
 
-:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="El primer consejo de seguridad de contacto para los mensajes con un destinatario" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="La primera sugerencia de seguridad de contactos para los mensajes con un destinatario" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="El primer consejo de seguridad de contacto para mensajes con varios destinatarios" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="La primera sugerencia de seguridad de contactos para mensajes con varios destinatarios" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación, por lo que se recomienda activarla.
 
-El primer consejo de seguridad de contacto también reemplaza la necesidad de crear reglas de flujo de correo (también conocidas como reglas de transporte) que agreguen el encabezado denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con el valor **Habilitar** a los mensajes (aunque esta funcionalidad sigue estando disponible).
+La primera sugerencia de seguridad de contactos también reemplaza la necesidad de crear reglas de flujo de correo (también conocidas como reglas de transporte) que agreguen el encabezado denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con el valor **Habilitar** a los mensajes (aunque esta funcionalidad sigue estando disponible).
 
 > [!NOTE]
-> Si el mensaje tiene varios destinatarios, si se muestra la sugerencia y a quién se basa en un modelo mayoritario. Si la mayoría de los destinatarios nunca reciben o no suelen recibir mensajes del remitente, los destinatarios afectados recibirán la sugerencia **Algunas personas que recibieron este mensaje...** Si le preocupa que este comportamiento exponga los hábitos de comunicación de un destinatario a otro, no debe habilitar el primer consejo de seguridad de contacto y seguir usando reglas de flujo de correo en su lugar.
+> Si el mensaje tiene varios destinatarios, si se muestra la sugerencia y a quién se basa en un modelo mayoritario. Si la mayoría de los destinatarios nunca reciben o no suelen recibir mensajes del remitente, los destinatarios afectados recibirán la sugerencia **Algunas personas que recibieron este mensaje...** Si le preocupa que este comportamiento exponga los hábitos de comunicación de un destinatario a otro, no debe habilitar la primera sugerencia de seguridad de contactos y seguir usando reglas de flujo de correo en su lugar.
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración exclusiva en las directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -206,11 +206,11 @@ La siguiente configuración de suplantación solo está disponible en las direct
 - **Acciones**: elija la acción que se va a realizar en los mensajes entrantes que contienen intentos de suplantación contra los usuarios protegidos y los dominios protegidos de la directiva. Puede especificar diferentes acciones para la suplantación de usuarios protegidos frente a la suplantación de dominios protegidos:
   - **No aplicar ninguna acción**
   - **Redirigir el mensaje a otras direcciones de correo electrónico**: envía el mensaje a los destinatarios especificados en lugar de a los destinatarios previstos.
-  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: el mensaje se entrega al buzón y se mueve a la carpeta Correo electrónico no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: el mensaje se entrega al buzón y se mueve a la carpeta Correo electrónico no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
-    - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Administración de mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Búsqueda y liberación de mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
     Si selecciona **Poner en cuarentena el mensaje**, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 

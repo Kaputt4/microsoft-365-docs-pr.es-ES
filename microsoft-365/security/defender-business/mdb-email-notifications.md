@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6ffc1325eb71bf366761545c8e21bfe5da3b4fa
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090110"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770929"
 ---
 # <a name="set-up-email-notifications"></a>Configuración de notificaciones por correo electrónico
 
@@ -46,7 +46,7 @@ Al configurar notificaciones por correo electrónico, puede elegir entre dos tip
 > 
 > Las notificaciones por correo electrónico son una manera cómoda de ayudar a mantener informado a su equipo de seguridad, en tiempo real. ¡Pero hay otros! Por ejemplo, cada vez que el equipo de seguridad inicie sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verá tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender for Business está diseñado para resaltar la información importante que le importa al equipo de seguridad en cuanto inician sesión.
 > 
-> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para más información, consulte [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md).
+> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para más información, consulte [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>Visualización y edición de notificaciones por correo electrónico
 
@@ -71,4 +71,4 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
 Continúe con:
 
-- [Paso 4: Incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md)
+- [Paso 4: Incorporación de dispositivos a Defender for Business](mdb-onboard-devices.md)

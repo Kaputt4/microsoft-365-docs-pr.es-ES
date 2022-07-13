@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 276bcd6616abe3cf68731bad6f62b3d996557719
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 796320ce2a9b51a01663b553317318e387814d37
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490130"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772673"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse y Microsoft Defender para Empresas
 
@@ -34,14 +34,16 @@ Para acceder a la lista de incidentes, en Microsoft 365 Lighthouse, en la págin
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Más información sobre Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse permite a los proveedores de Microsoft Cloud Service proteger y administrar dispositivos, datos y usuarios a escala para clientes empresariales pequeños y medianos que usan una de las siguientes suscripciones:
+Microsoft 365 Lighthouse permite a los CSP de Microsoft proteger y administrar dispositivos, datos y usuarios a escala para los clientes que usan una de las siguientes suscripciones:
 
 - [Microsoft Defender para Empresas](/security/defender-business/mdb-overview.md)
 - [Microsoft 365 Empresa Premium](../../admin/admin-overview/what-is-microsoft-365.md)
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (que ahora incluye [Microsoft Defender para punto de conexión plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
+- [Microsoft 365 E5](../../enterprise/microsoft-365-overview.md) (que incluye [el plan 2 de Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md), [Defender para Office 365 plan 2](../office-365-security/defender-for-office-365.md), [Defender for Identity](/defender-for-identity/what-is) y [otras funcionalidades de seguridad](../defender/microsoft-365-defender.md))
+- [Windows 365 Business o Enterprise](/windows-365/overview)
 
 Para más información, consulte [Introducción a Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).
 
 ## <a name="see-also"></a>Vea también
 
-[recursos de proveedores de servicios administrados y de Microsoft Defender para Empresas](mdb-partners.md)
+[Microsoft Defender para Empresas y los recursos del proveedor de servicios administrados](mdb-partners.md) (proporciona información sobre la integración de RMM y PSA para MSP)

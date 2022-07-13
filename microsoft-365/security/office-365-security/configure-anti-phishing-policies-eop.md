@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de Exchange Online.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 8545eed078a676055206870e5c55ed3ca2e82a9a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115705"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773243"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "66115705"
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, hay una directiva predeterminada contra suplantación de identidad (phishing) que contiene un número limitado de características contra la suplantación de identidad que están habilitadas. de forma predeterminada. Para obtener más información, consulte [Configuración de suplantación de identidad en las directivas contra phishing](set-up-anti-phishing-policies.md#spoof-settings).
+En las organizaciones de Microsoft 365 con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones de correo, hay una directiva de anti-phishing predeterminada que contiene un número limitado de características contra la suplantación de identidad que están habilitadas de forma predeterminada. Para obtener más información, consulte [Configuración de suplantación de identidad en las directivas contra phishing](set-up-anti-phishing-policies.md#spoof-settings).
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la directiva predeterminada contra phishing. Para una mayor granularidad, también puede crear directivas personalizadas contra suplantación de identidad (phishing) que se apliquen a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
@@ -63,11 +63,11 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   No se pueden administrar directivas de anti phishing en PowerShell de EOP independiente.
 
-- Debe tener permisos asignados en la **Exchange Online** antes de poder realizar los procedimientos de este artículo:
+- Debe tener permisos asignados en **Exchange Online** antes de poder realizar los procedimientos de este artículo:
   - Para agregar, modificar y eliminar directivas contra phishing, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas contra phishing, debe ser miembro de los grupos de roles **Lector global** o **Lector de seguridad** .
 
@@ -114,14 +114,14 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -130,7 +130,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    Para desactivar la inteligencia de suplantación de identidad, desactive la casilla.
 
    > [!NOTE]
-   > No es necesario desactivar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+   > No es necesario desactivar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita el filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -142,8 +142,8 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
        Un valor en blanco **Aplicar directiva de cuarentena** significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para las detecciones de inteligencia de suplantación de identidad). Cuando más adelante edite la directiva contra suplantación de identidad (phishing) o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena. Para obtener más información sobre las directivas de cuarentena predeterminadas que se usan para veredictos de filtrado de protección admitidos, consulte [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Consejos de seguridad & indicadores**:
-     - **Mostrar la primera consejo de seguridad de contactos**: para obtener más información, consulte [Primera consejo de seguridad de contactos](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - **Mostrar (?) para remitentes no autenticados para suplantación de identidad**<sup>\*</sup>: agrega un signo de interrogación (?) a la foto del remitente en el cuadro De en Outlook si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa dmARC o [autenticación compuesta](email-validation-and-authentication.md#composite-authentication).
+     - **Mostrar la primera sugerencia de seguridad de contactos**: para obtener más información, consulte [La primera sugerencia de seguridad de contactos](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Mostrar (?) para remitentes no autenticados para suplantación de identidad**<sup>\*</sup>: agrega un signo de interrogación (?) a la foto del remitente en el cuadro Desde en Outlook si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa dmARC o [autenticación compuesta](email-validation-and-authentication.md#composite-authentication).
      - **Mostrar etiqueta**<sup>\*</sup> "via": agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección From si es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** .
 
      Para activar una configuración, active la casilla . Para desactivarlo, desactive la casilla.

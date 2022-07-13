@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: cb584d01f2ca135a25ef715fe7152c1fe33ce0f3
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090396"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772717"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para Empresas
 
-Microsoft Defender para Empresas incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
+Defender for Business incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
 
-Para más información sobre las directivas y la configuración del firewall, consulte [Firewall en Microsoft Defender para Empresas](mdb-firewall.md).
+Para más información sobre las directivas y la configuración del firewall, consulte [Firewall en Defender para empresas](mdb-firewall.md).
 
 **En este artículo se describe cómo**:
 
@@ -99,6 +99,6 @@ Para más información sobre las directivas y la configuración del firewall, co
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
+- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 086ea200b6f8519c487622d02ba2d2fc8347f68a
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554211"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773265"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la prueba de Microsoft Defender para Office 365
 
@@ -64,7 +64,7 @@ De forma predeterminada, estas directivas se limitan a todos los usuarios de la 
 > [!NOTE]
 > Es probable que las directivas antispam existentes estén configuradas con la acción **Mover mensaje a la carpeta Correo no deseado** para el veredicto de spam de alta confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas de seguridad preestablecidas usa el **mensaje de cuarentena** de acción para el correo no deseado de alta confianza, y las directivas de seguridad preestablecidas siempre se aplican antes que las directivas de antispam personalizadas o la directiva de antispam predeterminada. Para obtener más información sobre la configuración predeterminada, estándar y estricta, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
-Otras cargas de trabajo también están disponibles para la protección (por ejemplo, [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) y [vínculos seguros para aplicaciones Office 365 compatibles](safe-links.md#safe-links-settings-for-office-365-apps).
+Otras cargas de trabajo también están disponibles para la protección (por ejemplo, [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) y [vínculos seguros para aplicaciones de Office compatibles](safe-links.md#safe-links-settings-for-office-apps).
 
 Durante la configuración de la prueba, la funcionalidad de respuesta exclusiva de Defender para Office 365 plan 2 (por ejemplo, [AIR](office-365-air.md) y [el Explorador de amenazas](threat-explorer.md) también se configuran para toda la organización. No se requiere ningún ámbito de directiva.
 
@@ -92,7 +92,7 @@ La tarjeta de licencia de la prueba muestra la siguiente información:
 
 Para obtener información sobre los precios, consulte [Microsoft Defender para Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Para iniciar o finalizar la prueba, debe ser miembro de los roles **Administrador global** o Administrador de **seguridad** en Azure Active Directory. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
@@ -108,7 +108,7 @@ La prueba de Defender para Office 365 se está implementando gradualmente para l
 
 Para obtener más información, consulte [Microsoft Defender para Office 365 Términos de prueba & Condiciones](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: Cómo ampliar la prueba?
 

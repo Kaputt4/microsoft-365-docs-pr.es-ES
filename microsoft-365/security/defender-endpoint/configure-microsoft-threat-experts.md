@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7661619ccb60bb55020a8e241c341b11fe45abd1
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5883b5af4101f9227e43009a148344b82fdfb5ef
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487353"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772695"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -38,17 +38,17 @@ ms.locfileid: "66487353"
 ## <a name="before-you-begin"></a>Antes de empezar
 
 > [!NOTE]
-> Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar a Expertos en amenazas de Microsoft: servicio de búsqueda de amenazas administrada de notificación de ataque dirigida.
+> Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar al servicio de búsqueda de amenazas administrada de notificaciones de ataque de punto de conexión.
 
 Asegúrese de que defender para punto de conexión implementado en su entorno con dispositivos inscritos y no solo en una configuración de laboratorio.
 
-Si es cliente de Defender para punto de conexión, debe solicitar **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas, de modo que pueda responder a ellas rápidamente. Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft- Experts on Demand** para consultar a nuestros expertos en amenazas sobre las detecciones y adversarios pertinentes.
+Si es cliente de Defender para punto de conexión, debe solicitar **notificaciones de ataque de punto de conexión** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas, de modo que pueda responder a ellas rápidamente. Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft- Experts on Demand** para consultar a nuestros expertos en amenazas sobre las detecciones y adversarios pertinentes.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Solicitud para Expertos en amenazas de Microsoft: servicio de notificaciones de ataque dirigidas
+## <a name="apply-for-endpoint-attack-notifications-service"></a>Solicitud para el servicio de notificaciones de ataque de punto de conexión
 
 Si ya es cliente de Defender para punto de conexión, puede aplicar a través del portal de Microsoft 365 Defender.
 
-1. En el panel de navegación, vaya a **Configuración > General > Características avanzadas > Expertos en amenazas de Microsoft - Notificaciones de ataque dirigidas**.
+1. En el panel de navegación, vaya a **Configuración > General > Características avanzadas > Notificaciones de ataque de punto de conexión**.
 
 2. Haga clic en **Aplicar**.
 
@@ -62,9 +62,9 @@ Si ya es cliente de Defender para punto de conexión, puede aplicar a través de
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Mensaje de confirmación de la aplicación Expertos en amenazas de Microsoft" lightbox="images/mte-applicationconfirmation.png":::
 
-Cuando se acepte, recibirá un correo electrónico de bienvenida y verá que el botón **Aplicar** cambia a un botón de alternancia que está "activado". En caso de que quiera salir del servicio de notificaciones de ataque dirigidas, deslice el botón de alternancia "desactivar" y haga clic en **Guardar preferencias** en la parte inferior de la página.
+Cuando se acepte, recibirá un correo electrónico de bienvenida y verá que el botón **Aplicar** cambia a un botón de alternancia que está "activado". En caso de que quiera salir del servicio notificaciones de ataque de punto de conexión, deslice el botón de alternancia "desactivado" y haga clic en **Guardar preferencias** en la parte inferior de la página.
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Donde verá las notificaciones de ataque dirigidas desde Expertos en amenazas de Microsoft
+## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-threat-experts"></a>Donde verá las notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft
 
 Puede recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft a través del siguiente medio:
 
@@ -74,15 +74,15 @@ Puede recibir una notificación de ataque dirigida desde Expertos en amenazas de
 - [Tabla DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) en búsqueda avanzada
 - Su correo electrónico, si decide configurarlo
 
-Para recibir notificaciones de ataque dirigidas por correo electrónico, cree una regla de notificación por correo electrónico.
+Para recibir notificaciones de ataque de punto de conexión por correo electrónico, cree una regla de notificación por correo electrónico.
 
 ### <a name="create-an-email-notification-rule"></a>Creación de una regla de notificación por correo electrónico
 
 Puede crear reglas para enviar notificaciones por correo electrónico para los destinatarios de notificaciones. Consulte  [Configuración de notificaciones de alerta](configure-email-notifications.md) para crear, editar, eliminar o solucionar problemas de notificaciones por correo electrónico para obtener más información.
 
-## <a name="view-the-targeted-attack-notification"></a>Visualización de la notificación de ataque de destino
+## <a name="view-the-endpoint-attack-notifications"></a>Visualización de las notificaciones de ataque de punto de conexión
 
-Empezará a recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft en el correo electrónico después de haber configurado el sistema para recibir una notificación por correo electrónico.
+Empezará a recibir notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft en el correo electrónico después de haber configurado el sistema para recibir notificaciones por correo electrónico.
 
 1. Haga clic en el vínculo del correo electrónico para ir al contexto de alerta correspondiente en el panel etiquetado con **expertos en amenazas**.
 
@@ -137,21 +137,21 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 - Recibo una alerta impar hoy por el número anómalo de inicios de sesión erróneos desde el dispositivo de un usuario de alto perfil. No puedo encontrar más pruebas en torno a estos intentos de inicio de sesión. ¿Cómo puede Defender para punto de conexión ver estos intentos? ¿Qué tipo de inicios de sesión se están supervisando?
 - Puede proporcionar más contexto o conclusiones sobre esta alerta: "Se observó un comportamiento sospechoso por parte de una utilidad del sistema".
 
-### <a name="possible-machine-compromise"></a>Posible peligro de máquina
+### <a name="possible-device-compromise"></a>Posible peligro del dispositivo
 
 - ¿Puede ayudar a responder por qué vemos "Proceso desconocido observado?" Este mensaje o alerta se ve con frecuencia en muchos dispositivos. Agradecemos cualquier entrada para aclarar si este mensaje o alerta está relacionado con la actividad malintencionada.
 - ¿Puede ayudar a validar un posible riesgo en el siguiente sistema en [fecha] con comportamientos similares a los de la detección de malware anterior [nombre de malware] en el mismo sistema en [mes]?
 
 ### <a name="threat-intelligence-details"></a>Detalles de inteligencia sobre amenazas
 
-- Hemos detectado un correo electrónico de suplantación de identidad (phishing) que ha entregado un documento de Word malintencionado a un usuario. El documento malintencionado de Word produjo una serie de eventos sospechosos, que desencadenaron varias alertas de Defender para punto de conexión para malware [nombre de malware]. ¿Tiene alguna información sobre este malware? Si es así, ¿puedes enviarme un enlace?
+- Hemos detectado un correo electrónico de suplantación de identidad (phishing) que ha entregado un documento de Word malintencionado a un usuario. El documento malintencionado de Word produjo una serie de eventos sospechosos, que desencadenaron varias alertas de notificaciones de ataque de punto de conexión para el malware [nombre de malware]. ¿Tiene alguna información sobre este malware? Si es así, ¿puedes enviarme un enlace?
 - Recientemente vi una entrada [referencia de redes sociales, por ejemplo, Twitter o blog] sobre una amenaza que está dirigida a mi sector. ¿Puede ayudarme a comprender qué protección proporciona Defender para punto de conexión frente a este actor de amenazas?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Comunicaciones de alerta de Expertos en amenazas de Microsoft
 
-- ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de ataque dirigida que tenemos?
-- Recibí esta notificación de ataque dirigida de Expertos en amenazas de Microsoft. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
-- Recibí una notificación de ataque dirigida de Expertos en amenazas de Microsoft. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
+- ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar las notificaciones de ataque de punto de conexión que tenemos?
+- He recibido las notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
+- He recibido notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
 
   > [!NOTE]
   > Expertos en amenazas de Microsoft es un servicio administrado de búsqueda de ciberseguridad y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para abordar los problemas que requieren una respuesta a incidentes. Si no tiene su propio equipo de respuesta a incidentes y desea la ayuda de Microsoft, puede interactuar con el equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir una incidencia para ayudar a abordar su consulta.

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717766"
+ms.locfileid: "66747931"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -44,7 +44,9 @@ Estos son algunos ejemplos:
 > [!TIP]
 > Para obtener más ejemplos y una explicación de los criterios que usamos para etiquetar aplicaciones para que las características de seguridad les presten especial atención, consulte [Cómo identifica Microsoft el malware y las aplicaciones potencialmente no deseadas](/windows/security/threat-protection/intelligence/criteria).
 
-Las aplicaciones potencialmente no deseadas pueden aumentar el riesgo de que su red se infecte con malware real, puede hacer que sea más difícil identificar infecciones de malware o que se pierdan recursos de TI al limpiar las infecciones. La protección de PUA se admite en Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 y Windows Server 2016. En Windows 10 (versión 2004 y posteriores), Antivirus de Microsoft Defender bloquea las aplicaciones que se consideran PUA para dispositivos Enterprise (E5) de forma predeterminada.
+Las aplicaciones potencialmente no deseadas pueden aumentar el riesgo de que la red se infecte con malware real, hacer que las infecciones de malware sean más difíciles de identificar o costarle a los equipos de TI y seguridad tiempo y esfuerzo para limpiarlas. La protección de PUA se admite en Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 y Windows Server 2016. Si la suscripción de su organización incluye [Protección contra amenazas avanzada de Microsoft Defender](microsoft-defender-endpoint.md), Antivirus de Microsoft Defender bloquea las aplicaciones que se consideran PUA de forma predeterminada en dispositivos Windows. 
+
+[Obtenga más información sobre las suscripciones de Windows Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise).
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -76,7 +78,7 @@ Aunque Microsoft Defender para punto de conexión tiene su propia lista de bloqu
 La característica de protección contra aplicaciones potencialmente no deseadas (PUA) de Antivirus de Microsoft Defender puede detectar y bloquear PUA en los puntos de conexión de su red.
 
 > [!NOTE]
-> Esta característica está disponible en Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 y Windows Server 2016.
+> Esta característica está disponible en Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 y Windows Server 2016.
 
 Antivirus de Microsoft Defender bloquea los archivos PUA que se detecten y cualquier intento de descargarlos, moverlos, ejecutarlos o instalarlos. A continuación, los archivos PUA bloqueados se ponen en cuarentena. Cuando se detecta un archivo PUA en un punto de conexión, el Antivirus de Microsoft Defender envía una notificación al usuario ([a menos que se hayan deshabilitado las notificaciones](configure-notifications-microsoft-defender-antivirus.md)) en el mismo formato de otras detecciones de amenazas. A la notificación se antepone `PUA:` para indicar su contenido.
 
@@ -86,9 +88,7 @@ La notificación aparece en la [lista habitual de cuarentena dentro de la aplica
 
 Puede habilitar la protección contra PUA con [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) o mediante [cmdlets de PowerShell](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
-También puede usar la protección contra PUA en modo de auditoría para detectar aplicaciones potencialmente no deseadas sin bloquearlas. Las detecciones se capturan en el registro de eventos de Windows.
-
-La protección contra PUA en el modo de auditoría es útil si su empresa está realizando una comprobación interna de cumplimiento de seguridad de software y quiere evitar falsos positivos.
+También puede usar la protección contra PUA en modo de auditoría para detectar aplicaciones potencialmente no deseadas sin bloquearlas. Las detecciones se capturan en el registro de eventos de Windows. La protección contra PUA en el modo de auditoría es útil si su empresa está realizando una comprobación interna de cumplimiento de seguridad de software y quiere evitar falsos positivos.
 
 ### <a name="use-intune-to-configure-pua-protection"></a>Usar Intune para configurar la protección contra PUA
 

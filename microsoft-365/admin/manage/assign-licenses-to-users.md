@@ -25,13 +25,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
-ms.date: 06/23/2022
-ms.openlocfilehash: ecca89deaadd55182875e8d3a5d8d74e2aec17eb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/12/2022
+ms.openlocfilehash: bf315b0a13bdf0eebb2e38afa3eafb35d4a0361c
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487529"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748415"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Asignar licencias de Microsoft 365 a usuarios
 
@@ -54,12 +54,11 @@ Puede asignar licencias a los usuarios en la página **usuarios activos** o en l
 - Para usar las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Algunos servicios, como Sway, se asignan automáticamente a los usuarios y no es necesario que los asigne individualmente.
 
-
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Use la página de licencias para asignar licencias a los usuarios
 
-La página **Licencias** le permite asignar o cancelar la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos de su propiedad, el número de licencias disponibles para cada producto y el número de licencias asignadas del total de licencias disponibles. El número de licencias es un total agregado de licencias para todas las suscripciones para el mismo nombre de producto.
+La página **Licencias** le permite asignar o cancelar la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos de su propiedad, el número de licencias disponibles para cada producto y el número de licencias asignadas del total de licencias disponibles.
 
-Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
+La página de **licencias** muestra un total agregado de licencias para todas las suscripciones para el mismo nombre de producto. Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
 
 ::: moniker range="o365-worldwide"
 
@@ -79,7 +78,7 @@ Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium q
 
 4. En el panel **Asignar licencias a usuarios**, empiece a escribir un nombre y a continuación selecciónelo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
 
-4. Seleccione **activar o desactivar aplicaciones y servicios** para asignar o quitar el acceso a elementos específicos.
+5. Seleccione **activar o desactivar aplicaciones y servicios** para asignar o quitar el acceso a elementos específicos.
 
 6. Cuando haya terminado, seleccione **Asignar** y, a continuación, cierre el panel derecho.
 

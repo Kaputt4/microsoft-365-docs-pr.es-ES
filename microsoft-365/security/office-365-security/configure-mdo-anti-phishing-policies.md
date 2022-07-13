@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra phishing que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78eab2c8c6624764f65ed5db9abf5a6a0621af83
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: f36ed4c02c333480ed5cff5dc21db43d432ce5aa
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115595"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772409"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas contra phishing en Microsoft Defender para Office 365
 
@@ -113,14 +113,14 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Varias condiciones o excepciones diferentes no son aditivas; son inclusivos. La directiva _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, configure una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la directiva no se aplica a él.
+   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro de los grupos ejecutivos. Si no es miembro del grupo, la política se aplica a él.
+   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -209,7 +209,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
      Para desactivar la inteligencia de suplantación de identidad, desactive la casilla.
 
      > [!NOTE]
-     > No es necesario desactivar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > No es necesario desactivar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, habilita el filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -256,11 +256,11 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
          Un valor en blanco **Aplicar directiva de cuarentena** significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para las detecciones de inteligencia de suplantación de identidad). Cuando más adelante edite la directiva contra suplantación de identidad (phishing) o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
    - **Consejos de seguridad & indicadores**: Configure los siguientes valores:
-     - **Mostrar la primera consejo de seguridad de contactos**: para obtener más información, consulte [Primera consejo de seguridad de contactos](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - **Mostrar consejo de seguridad de suplantación de usuario**: esta configuración solo está disponible si seleccionó **Habilitar a los usuarios para proteger** en la página anterior.
-     - **Mostrar consejo de seguridad de suplantación de dominio**: esta configuración solo está disponible si seleccionó **Habilitar dominios para proteger** en la página anterior.
-     - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad** Esta configuración solo está disponible si seleccionó **Habilitar a los usuarios para proteger** o **Habilitar dominios para proteger** en la página anterior.
-     - **Mostrar (?) para remitentes no autenticados para suplantación de identidad**: esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación** de identidad en la página anterior. Agrega un signo de interrogación (?) a la foto del remitente en el cuadro De en Outlook si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) o DMARC.
+     - **Mostrar la primera sugerencia de seguridad de contactos**: para obtener más información, consulte [La primera sugerencia de seguridad de contactos](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Mostrar sugerencia de seguridad de suplantación de usuario**: esta configuración solo está disponible si seleccionó **Habilitar a los usuarios para proteger** en la página anterior.
+     - **Mostrar sugerencia de seguridad de suplantación de dominio**: esta configuración solo está disponible si seleccionó **Habilitar dominios para proteger** en la página anterior.
+     - **Mostrar sugerencia de seguridad de caracteres inusuales de suplantación de usuario** Esta configuración solo está disponible si seleccionó **Habilitar a los usuarios para proteger** o **Habilitar dominios para proteger** en la página anterior.
+     - **Mostrar (?) para remitentes no autenticados para suplantación de identidad**: esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación** de identidad en la página anterior. Agrega un signo de interrogación (?) a la foto del remitente en el cuadro Desde de Outlook si el mensaje no pasa comprobaciones SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) o DMARC.
      - **Mostrar etiqueta "via"**: esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación de identidad** en la página anterior. Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección From si es diferente del dominio de la firma DKIM o de la dirección **MAIL FROM** . El valor predeterminado está activado (seleccionado). Para desactivarlo, desactive la casilla.
 
      Para activar una configuración, active la casilla . Para desactivarlo, desactive la casilla.

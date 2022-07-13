@@ -16,51 +16,43 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f6cb1ff397233a60b0ad02a08486333790d079cc
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 7fd6f92e5d956adf43a75bac0e28f7ca79c0f930
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089448"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770907"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Proceso de configuración simplificado en Microsoft Defender para Empresas
 
-Microsoft Defender para Empresas cuenta con un proceso de configuración simplificado, diseñado especialmente para pequeñas y medianas empresas. Esta experiencia elimina las conjeturas de la incorporación y administración de dispositivos, con una experiencia similar a un asistente y directivas predeterminadas diseñadas para proteger los dispositivos de la empresa desde el primer día. **Se recomienda usar el proceso de configuración simplificado; sin embargo, no se limita a esta opción**.
+Microsoft Defender para Empresas cuenta con un proceso de configuración simplificado diseñado especialmente para pequeñas y medianas empresas. Una experiencia similar a un asistente elimina las conjeturas de la incorporación y administración de dispositivos. **Se recomienda usar el proceso de configuración simplificado, pero no se limita a esta opción**.
 
-Cuando se trata de incorporar dispositivos y configurar opciones de seguridad para los dispositivos de su empresa, puede elegir entre varias experiencias: 
+Para incorporar dispositivos y configurar opciones de seguridad para los dispositivos de su empresa, puede elegir entre estas experiencias:
 
-- Proceso de configuración simplificado en Microsoft Defender para Empresas (*recomendado*) 
-- Microsoft Intune (incluido en [Microsoft 365 Empresa Premium](../../business-premium/index.md))
+- Proceso de configuración simplificado en Microsoft Defender para Empresas (*recomendado*); o
+- Use Microsoft Intune (incluido en [Microsoft 365 Empresa Premium](../../business-premium/index.md)).
 
 ## <a name="what-to-do"></a>Qué hacer
 
-1. [Revise las opciones de configuración y configuración](#review-your-setup-and-configuration-options)
-2. [Más información sobre el proceso de configuración simplificado en Defender para empresas](#why-we-recommend-using-the-simplified-configuration-process)
-3. [Continúe con los pasos siguientes.](#next-steps)
+1. [Revise las opciones de configuración y configuración](#review-your-setup-and-configuration-options).
+2. [Obtenga más información sobre el proceso de configuración simplificado en Defender para empresas](#why-we-recommend-the-simplified-configuration-process).
+3. [Continúe con los pasos siguientes](#next-steps).
 
 
 ## <a name="review-your-setup-and-configuration-options"></a>Revise las opciones de configuración y configuración
 
-En la tabla siguiente se describe cada experiencia:
+En la tabla siguiente se describe cada experiencia.
 
 | Experiencia del portal  | Descripción  |
 |---------|---------|
-| La experiencia de configuración simplificada en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*Esta es la opción recomendada para la mayoría de los clientes*)  | La experiencia de configuración simplificada incluye una experiencia similar a un asistente para ayudarle a configurar Defender for Business. Para más información, consulte [Uso del asistente para configurar Microsoft Defender para Empresas](mdb-use-wizard.md).<br/><br/>La configuración simplificada también incluye directivas y opciones de seguridad predeterminadas para ayudarle a proteger los dispositivos de su empresa en cuanto se incorporan a Defender for Business. Puede ver las directivas predeterminadas y, si es necesario, editarlas para satisfacer sus necesidades empresariales. Para más información, consulte [Visualización o edición de directivas de dispositivo en Microsoft Defender para Empresas](mdb-view-edit-policies.md).<br/><br/>Con la experiencia simplificada, el equipo de seguridad usa el portal de Microsoft 365 Defender como tienda integral para: <br/>- Configuración y configuración de Defender para empresas <br/>- Visualización y administración de incidentes<br/>- Respuesta y mitigación de amenazas<br/>- Visualización de informes<br/>- Revisar acciones pendientes o completadas  |
-| Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune es un proveedor de administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) basado en la nube para aplicaciones y dispositivos. Intune no se incluye en la versión independiente de Defender for Business; sin embargo, [Microsoft 365 Empresa Premium](../../business-premium/index.md) incluye Intune.<br/><br/>Si ya usa Intune, puede usar el centro de administración de Endpoint Manager para administrar dispositivos, como teléfonos móviles, tabletas y portátiles. Consulte [Microsoft Intune: Administración de dispositivos](/mem/intune/fundamentals/what-is-device-management). |
+| La experiencia de configuración simplificada en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*Esta es la opción recomendada para la mayoría de los clientes).*  | La experiencia de configuración simplificada incluye una experiencia similar a un asistente para ayudarle a configurar Defender for Business. Para más información, consulte [Uso del asistente para configurar Microsoft Defender para Empresas](mdb-use-wizard.md).<br/><br/>La configuración simplificada también incluye directivas y opciones de seguridad predeterminadas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan a Defender for Business. Puede ver y editar las directivas predeterminadas para satisfacer sus necesidades empresariales. Para más información, consulte [Visualización o edición de directivas de dispositivo en Microsoft Defender para Empresas](mdb-view-edit-policies.md).<br/><br/>Con la experiencia simplificada, el equipo de seguridad usa el portal de Microsoft 365 Defender como tienda integral para: <ul><li>Configurar Defender para empresas</li><li>Ver y administrar incidentes</li><li>Responder a las amenazas y mitigarlas</li><li>Ver informes</li><li>Revisar acciones pendientes o completadas  |
+| Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune es un proveedor de administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) basado en la nube para aplicaciones y dispositivos. Si ya usa Intune, puede seguir usando el centro de administración de Endpoint Manager para administrar dispositivos como teléfonos móviles, tabletas y portátiles. Consulte [Microsoft Intune: Administración de dispositivos](/mem/intune/fundamentals/what-is-device-management). <br/><br/>Intune no se incluye en la versión independiente de Defender for Business, pero puede agregarla a su suscripción si es necesario. Si tiene [Microsoft 365 Empresa Premium](../../business-premium/index.md), ya tiene Intune. |
 
-## <a name="why-we-recommend-using-the-simplified-configuration-process"></a>Por qué se recomienda usar el proceso de configuración simplificado
+## <a name="why-we-recommend-the-simplified-configuration-process"></a>Por qué se recomienda el proceso de configuración simplificado
 
-**Se recomienda usar el proceso de configuración simplificado en Microsoft Defender para Empresas** para la mayoría de los clientes. 
-
-- El proceso de configuración simplificado se simplifica especialmente para pequeñas y medianas empresas. 
-- Defender for Business no requiere conocimientos técnicos ni conocimientos especiales profundos. 
-- Con las directivas y la configuración de seguridad predeterminadas, los dispositivos se protegen en cuanto se incorporan.
-- La experiencia simplificada en el portal de Microsoft 365 Defender facilita la incorporación de dispositivos y su administración. 
-- Las directivas predeterminadas se incluyen para que los dispositivos de la empresa estén protegidos en cuanto se incorporen.
-- Puede mantener la configuración predeterminada tal y como están o realizar cambios para satisfacer sus necesidades empresariales. 
-- Puede agregar directivas nuevas y personalizadas para satisfacer sus necesidades empresariales.
+Se recomienda el proceso de configuración simplificado en Defender para empresas, ya que se ha simplificado especialmente para pequeñas y medianas empresas. El asistente para la instalación le ayuda a incorporar dispositivos y administrarlos en el portal de Microsoft 365 Defender, donde también verá y administrará las amenazas detectadas. A medida que incorpora dispositivos, se protegen inmediatamente con las directivas y la configuración de seguridad predeterminadas. Puede mantener la configuración predeterminada tal y como están o realizar cambios para satisfacer sus necesidades empresariales. Además, puede agregar directivas nuevas y personalizadas para satisfacer sus necesidades empresariales.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Configuración y configuración de Microsoft Defender para Empresas](mdb-setup-configuration.md)
-- [Comenzar mediante Microsoft Defender para Empresas](mdb-get-started.md)
+- [Configure y configure Microsoft Defender para Empresas](mdb-setup-configuration.md).
+- [Empiece a usar Microsoft Defender para Empresas](mdb-get-started.md).

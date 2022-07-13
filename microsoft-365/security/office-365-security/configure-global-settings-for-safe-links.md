@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para vínculos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c8b40109f20215b86a2264ed1a9f69c8db43bda
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8914430808a5829732a7ea5ca86081774f7cb121
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487573"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771271"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configuración global de vínculos seguros en Microsoft Defender para Office 365
 
@@ -39,19 +39,17 @@ ms.locfileid: "66487573"
 
 Vínculos seguros es una característica de [Microsoft Defender para Office 365](defender-for-office-365.md) que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y la hora de verificación de clic de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](safe-links.md).
 
-La mayoría de los valores de Vínculos seguros se configuran en directivas de vínculos seguros. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+La mayoría de los valores de Vínculos seguros se configuran en directivas de vínculos seguros, incluida la [configuración de vínculos seguros para aplicaciones de Office compatibles](safe-links.md#safe-links-settings-for-office-apps). Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 Sin embargo, Vínculos seguros también usa las siguientes opciones globales que se configuran fuera de las directivas de vínculos seguros:
 
 - **La lista Bloquear las siguientes direcciones URL**. Esta configuración se aplica a todos los usuarios que se incluyen en las directivas de vínculos seguros activas. Para obtener más información, consulte [la lista "Bloquear las siguientes direcciones URL" para vínculos seguros](safe-links.md#block-the-following-urls-list-for-safe-links).
 
-- Protección de vínculos seguros para aplicaciones Office 365. Esta configuración se aplica a todos los usuarios de la organización que tienen licencia para Defender para Office 365, independientemente de si los usuarios están incluidos en las directivas de vínculos seguros activas o no. Para obtener más información, consulte [Configuración de vínculos seguros para aplicaciones Office 365](safe-links.md#safe-links-settings-for-office-365-apps).
-
 Puede configurar los valores globales de Vínculos seguros en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 aptas con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo, pero con Microsoft Defender para Office 365 suscripciones de complemento).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros para aplicarlas a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+- Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros para aplicarlas a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 
@@ -121,42 +119,6 @@ Puede usar el cmdlet **Get-AtpPolicyForO365** para ver las entradas existentes e
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
-
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Configuración de la protección de vínculos seguros para aplicaciones de Office 365 en el portal de Microsoft 365 Defender
-
-La protección de vínculos seguros para aplicaciones de Office 365 se aplica a los documentos de aplicaciones web, móviles y de escritorio de Office compatibles. Para obtener más información, consulte [Configuración de vínculos seguros para aplicaciones Office 365](safe-links.md#safe-links-settings-for-office-365-apps).
-
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
-
-2. En la página **Vínculos seguros** , haga clic en **Configuración global**. En la **directiva Vínculos seguros de su organización** que aparece, configure los siguientes valores en la sección **Configuración que se aplica al contenido de las aplicaciones Office 365 admitidas**:
-
-   - **Usar vínculos seguros en aplicaciones de Office 365**: compruebe que el botón de alternancia está a la derecha para habilitar Vínculos seguros para las aplicaciones Office 365 admitidas: ![Activar.](../../media/scc-toggle-on.png)
-
-   - **No realice un seguimiento cuando los usuarios hagan clic en vínculos protegidos en Office 365 aplicaciones**: mueva el botón de alternancia a la izquierda para realizar un seguimiento de los clics del usuario relacionados con las direcciones URL bloqueadas en las aplicaciones Office 365 admitidas: ![Desactivar.](../../media/scc-toggle-off.png)
-
-   - **No permita que los usuarios hagan clic en la dirección URL original en Office 365 aplicaciones**: compruebe que el botón de alternancia está a la derecha para evitar que los usuarios hagan clic en la dirección URL bloqueada original en las aplicaciones Office 365 admitidas: ![Activar.](../../media/scc-toggle-on.png)
-
-   Cuando haya terminado, haga clic en **Guardar**.
-
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>Configuración de la protección de vínculos seguros para aplicaciones Office 365 en PowerShell
-
-Si prefiere usar PowerShell para configurar la protección de vínculos seguros para aplicaciones Office 365, use la siguiente sintaxis en Exchange Online PowerShell o Exchange Online Protection PowerShell:
-
-```powershell
-Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
-```
-
-En este ejemplo se configuran los siguientes valores para la protección de vínculos seguros en Office 365 aplicaciones:
-
-- Vínculos seguros para aplicaciones de Office 365 está activado (no se usa el parámetro _EnableSafeLinksForO365Clients_ y el valor predeterminado es $true).
-- Se realiza un seguimiento de los clics de usuario relacionados con las direcciones URL bloqueadas en las aplicaciones Office 365 admitidas.
-- No se permite a los usuarios hacer clic en la dirección URL bloqueada original en las aplicaciones Office 365 admitidas (no se usa el parámetro _AllowClickThrough_ y el valor predeterminado es $false).
-
-```powershell
-Set-AtpPolicyForO365 -TrackClicks $true
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, vea [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
