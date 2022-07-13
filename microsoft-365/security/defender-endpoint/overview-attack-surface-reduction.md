@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717158"
+ms.locfileid: "66749009"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Descripción y uso de funcionalidades de reducción de superficie expuesta a ataques
 
@@ -53,21 +53,25 @@ Para configurar la reducción de la superficie expuesta a ataques en el entorno,
 
 1. [Habilite el aislamiento basado en hardware para Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. Habilitar el control de aplicación.
+2. [Habilitar las reglas de la reducción de superficie expuesta a ataques](attack-surface-reduction-rules-deployment.md)
+
+3. Habilitar el control de aplicación.
 
    1. Revise las directivas base en Windows. Consulte [Directivas base de ejemplo](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. Consulte la [guía de diseño de Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. Consulte [Implementación Windows Defender directivas de Control de aplicaciones (WDAC).](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
-3. [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md).
+4. [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md).
 
-4. [Active Protección de red](enable-network-protection.md).
+5. [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
 
-5. [Habilite la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md).
+6. [Active Protección de red](enable-network-protection.md).
 
-6. [Implementar reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-deployment.md).
+7. [Información general sobre la habilitación de la protección web](web-protection-overview.md)
 
-7. Configure el firewall de red.
+8. [Habilite la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md).
+
+9. Configure el firewall de red.
 
    1. Obtenga información general sobre [Firewall de Windows Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
    2. Use la [guía de diseño de Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) para decidir cómo desea diseñar las directivas de firewall.
@@ -296,7 +300,7 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 | [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de la organización. (Requiere antivirus de Microsoft Defender). |
 | [Protección contra vulnerabilidades de seguridad](exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para que no se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros. |
 | [Control de dispositivos](device-control-report.md) | Protege contra la pérdida de datos mediante la supervisión y el control de los medios que se usan en los dispositivos, como el almacenamiento extraíble y las unidades USB, en la organización. |
-| [ Guía de implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md) | Presenta información general y requisitos previos para implementar reglas de reducción de superficie expuesta a ataques. |
+| [ Guía de implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md) | Presenta información general y requisitos previos para implementar reglas de reducción de superficie expuesta a ataques, seguidas de instrucciones paso a paso para las pruebas, la habilitación y la supervisión. |
 | [Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Enumera los pasos recomendados para la implementación de reglas de reducción de superficie expuesta a ataques. |
 | [Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md) | Proporciona los pasos necesarios para usar el modo de auditoría para probar las reglas de reducción de superficie expuesta a ataques. |
 | [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Muestra los pasos para realizar la transición de las reglas de reducción de la superficie expuesta a ataques del modo de prueba (auditoría) al modo activo y habilitado (bloquear). |

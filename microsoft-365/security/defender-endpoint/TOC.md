@@ -262,6 +262,12 @@
 ##### [Evaluar acceso controlado a carpetas](evaluate-controlled-folder-access.md)
 ##### [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
+#### [Control de dispositivo]()
+##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
+##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
+##### [Instalación de dispositivo](mde-device-control-device-installation.md)
+##### [Protección de la impresora de control de dispositivo](printer-protection.md)
+##### [Informes de control de dispositivos](device-control-report.md)
 #### [Protección contra vulnerabilidades de seguridad]()
 ##### [Proteger los dispositivos contra vulnerabilidades de seguridad](exploit-protection.md)
 ##### [Evaluación de la protección contra vulnerabilidades de seguridad](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [Proteger la red](network-protection.md)
 ##### [Evaluar protección de red](evaluate-network-protection.md)
 ##### [Habilitar protección de red](enable-network-protection.md)
+#### [Protección web]()
+##### [Introducción a protección web](web-protection-overview.md)
+##### [Protección contra amenazas web]()
+###### [Introducción a la protección contra amenazas web](web-threat-protection.md)
+###### [Supervisar la seguridad web](web-protection-monitoring.md)
+###### [Responder a amenazas web](web-protection-response.md)
+##### [Filtrado de contenido web](web-content-filtering.md)
+
 
 ### Protección de última generación
 #### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Protección web]()
-##### [Introducción a protección web](web-protection-overview.md)
-##### [Protección contra amenazas web]()
-###### [Introducción a la protección contra amenazas web](web-threat-protection.md)
-###### [Supervisar la seguridad web](web-protection-monitoring.md)
-###### [Responder a amenazas web](web-protection-response.md)
-##### [Filtrado de contenido web](web-content-filtering.md)
-
-#### [Control de dispositivo]()
-##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
-##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
-##### [Instalación de dispositivo](mde-device-control-device-installation.md)
-##### [Protección de la impresora de control de dispositivo](printer-protection.md)
-##### [Informes de control de dispositivos](device-control-report.md)
-
 #### [Bloqueo y contención de comportamientos]()
 ##### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
 ##### [Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [Aumentar el cumplimiento de la línea base de seguridad](configure-machines-security-baseline.md)
 #### [Optimizar la implementación y las detecciones de la regla de reducción de la superficie expuesta a ataques](configure-machines-asr.md)
-
-## [Guía para amenazas y campañas activas]()
-### [Administrar la vulnerabilidad de Log4Shell](tvm-manage-log4shell-guidance.md)
 
 ## [Investigar y responder a amenazas]()
 ### [EDR]()

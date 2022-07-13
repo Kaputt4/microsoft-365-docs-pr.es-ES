@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo usar la puntuación de cumplimiento y el Administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947459"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748701"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Uso del Administrador de cumplimiento para administrar acciones de mejora
 
@@ -31,13 +32,13 @@ Microsoft Purview Compliance Manager puede ayudarle a administrar mejoras relaci
 En este artículo se proporcionan instrucciones sobre el uso de esta herramienta con fines de privacidad de datos.
 
 > [!NOTE]
-> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los [Términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Consulte también [Microsoft 365 guía de licencias para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los [Términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Consulte también [la guía de licencias de Microsoft 365 para obtener información sobre seguridad y cumplimiento.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
 #### <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-[El Administrador de cumplimiento](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de cumplimiento de Microsoft Purview para administrar las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción de Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
+[El Administrador de cumplimiento](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en la portal de cumplimiento Microsoft Purview para administrar las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de su suscripción de Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
 
 **Evaluaciones listas para usar**
 
@@ -58,14 +59,14 @@ La guía de [inicio rápido del Administrador](../compliance/compliance-manager-
 - [Primera visita: familiarizarse con el Administrador de cumplimiento](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Trabajar con el panel del Administrador de cumplimiento
     - Descripción de la puntuación de cumplimiento
-    - Learning sobre las acciones de mejora
+    - Información sobre las acciones de mejora
     - Descripción de las evaluaciones y plantillas
 - [Aumento: configuración del Administrador de cumplimiento para administrar las actividades de cumplimiento](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Creación y administración de la primera evaluación
     - Realización de trabajos de implementación y pruebas en acciones de mejora para completar controles en las evaluaciones
     - Descripción de cómo afectan las distintas acciones a la puntuación de cumplimiento
 - [Escalado vertical: use la funcionalidad avanzada para satisfacer sus necesidades personalizadas](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no son Microsoft 365
+    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no son de Microsoft 365
     - Modificación de plantillas existentes para agregar o quitar controles
     - Configuración de pruebas automatizadas de acciones de mejora
 
@@ -79,9 +80,9 @@ Como se presenta en el artículo de cálculo de la puntuación de cumplimiento, 
 
 La interfaz de usuario de administrador de puntuación de cumplimiento no enumera estos parámetros ni proporciona la capacidad de filtrar por ellos. Sin embargo, si descarga la plantilla asociada del Administrador de cumplimiento, el conjunto de datos resultante enumera estos parámetros para la mayoría de las regulaciones.
 
-En el caso de los controles técnicos, el Administrador de cumplimiento actualiza automáticamente la puntuación de acción de mejora una vez que la acción se ha implementado y probado correctamente. Otras acciones&mdash; de control no técnicas, como las que están operativas o relacionadas con la documentación&mdash;, deben registrarse manualmente como implementadas antes de que los puntos cuenten para la puntuación.
+En el caso de los controles técnicos, el Administrador de cumplimiento actualiza automáticamente la puntuación de acción de mejora una vez que la acción se ha implementado y probado correctamente. Otras acciones&mdash;de control no técnico, como las que son operativas o relacionadas con la documentación&mdash;, deben registrarse manualmente como implementadas antes de que los puntos cuenten para la puntuación.
 
-Muchos también están implementando ciertas acciones de mejora para otros fines&mdash;, por ejemplo, usando etiquetas de retención por motivos distintos del cumplimiento de&mdash; la normativa de privacidad de datoso obtendría crédito para usar dicha característica incluso si se usa para otros fines y no forma parte de una acción deliberada de cumplimiento.
+Muchos también están implementando ciertas acciones de mejora para otros fines&mdash;, por ejemplo, usar etiquetas de retención por razones distintas del cumplimiento de&mdash;la normativa de privacidad de datos, por lo que obtendría crédito para usar dicha característica incluso si se usa para otros fines y no forma parte de una acción deliberada de cumplimiento.
 
 La puntuación de cumplimiento debe considerarse una medida relativa para realizar un seguimiento de la mejora a gran escala. No deberías buscar una puntuación perfecta.
 

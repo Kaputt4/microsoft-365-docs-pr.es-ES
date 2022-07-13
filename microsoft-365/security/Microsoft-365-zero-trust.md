@@ -7,7 +7,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
-description: Obtenga información sobre cómo implementar Microsoft 365 Confianza cero seguridad en su entorno para defenderse frente a amenazas y proteger los datos confidenciales.
+description: Obtenga información sobre cómo implementar la seguridad de Microsoft 365 Confianza cero en su entorno para defenderse frente a amenazas y proteger la información confidencial.
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -18,12 +18,13 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 4056310eb8e0d22a9758dfa2a572a473c83a0775
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+- zerotrust-solution
+ms.openlocfilehash: fb11c74e1369ec81ad3bc54008e9391e462f583d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669746"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748063"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -59,7 +60,7 @@ For more information about this architecture, including deployment objectives fo
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de Confianza cero para Microsoft 365
 
-Microsoft 365 se crea intencionadamente con muchas funcionalidades de seguridad y protección de la información para ayudarle a crear Confianza cero en su entorno. Muchas de las funcionalidades se pueden ampliar para proteger el acceso a otras aplicaciones SaaS que usa su organización y los datos de estas aplicaciones.
+Microsoft 365 se ha creado intencionadamente con muchas funcionalidades de seguridad y protección de la información para ayudarle a crear Confianza cero en su entorno. Muchas de las funcionalidades se pueden ampliar para proteger el acceso a otras aplicaciones SaaS que usa su organización y los datos de estas aplicaciones.
 
 Esta ilustración representa el trabajo de implementación de funcionalidades de Confianza cero. Este trabajo se divide en unidades de trabajo que se pueden configurar juntas, empezando desde la parte inferior y trabajando hasta la parte superior para asegurarse de que el trabajo previo está completo.
 
@@ -72,7 +73,7 @@ En esta ilustración:
 - La protección de la información y la gobernanza proporcionan controles sofisticados dirigidos a tipos específicos de datos para proteger su información más valiosa y ayudarle a cumplir con los estándares de cumplimiento, incluida la protección de la información personal.
 
 
-En este artículo se supone que ya ha configurado la identidad en la nube. Si necesita instrucciones para este objetivo, consulte Implementación de la [**infraestructura de identidad para Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
+En este artículo se supone que ya ha configurado la identidad en la nube. Si necesita instrucciones para este objetivo, consulte [**Implementación de la infraestructura de identidad para Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
 ## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>Paso 1. Configuración de la protección de acceso a dispositivos e identidades de Confianza cero: directivas de punto de partida
 
@@ -80,7 +81,7 @@ El primer paso consiste en crear la base de Confianza cero mediante la configura
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Proceso para configurar Confianza cero protección de acceso a dispositivos e identidades" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
-Vaya a [**_Confianza cero protección de acceso a dispositivos e identidades_**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para ello. En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de Azure Active Directory (Azure AD) acceso condicional, Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365  para aplicaciones y servicios en la nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD Application Proxy.
+Vaya a [**_Confianza cero protección de acceso a dispositivos e identidades_**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para ello. En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365 para aplicaciones y servicios en la nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD Application Proxy.
 
 |Incluye|Requisitos previos|No incluye|
 |---------|---------|---------|
@@ -102,19 +103,19 @@ Vaya a [**_Administración de dispositivos con Intune_**](../solutions/manage-de
 |---------|---------|---------|
 |Inscribir dispositivos con Intune: <ul><li>Dispositivos de propiedad corporativa</li><li>Autopilot/automatizado</li><li>Inscripción</li></ul> <br> Configurar directivas: <ul><li>Directivas de App Protection</li><li>Directivas de cumplimiento</li><li>Directivas de perfil de dispositivo</li></ul>|Registro de puntos de conexión con Azure AD|Configuración de funcionalidades de protección de la información, entre las que se incluyen: <ul><li>Tipos de información confidencial</li><li>Etiquetas</li><li>Directivas DLP</li></ul> <br> Para obtener estas funcionalidades, consulte [el paso 5. Proteger y controlar la información confidencial](#step-5-protect-and-govern-sensitive-data) (más adelante en este artículo).|
 
-## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Paso 3. Incorporación de la protección de acceso a dispositivos e identidades de Confianza cero: directivas de Enterprise
+## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Paso 3. Agregar Confianza cero protección de identidad y acceso a dispositivos: directivas empresariales
 
 Con los dispositivos inscritos en la administración, ahora puede implementar el conjunto completo de directivas de acceso a dispositivos e identidades de Confianza cero recomendadas, que requieren dispositivos compatibles.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Las directivas de identidad y acceso de Confianza cero con la administración de dispositivos" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-Vuelva a [**_las directivas de acceso a dispositivos e identidades comunes_**](office-365-security/identity-access-policies.md) y agregue las directivas en el nivel de Enterprise.
+Vuelva a [**_las directivas de acceso a dispositivos e identidades comunes_**](office-365-security/identity-access-policies.md) y agregue las directivas en el nivel Enterprise.
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Las directivas de identidad y acceso de Confianza cero: nivel de Enterprise (recomendado)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Las directivas de identidad y acceso de Confianza cero: nivel Enterprise (recomendado)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
 ## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Paso 4. Evaluar, probar e implementar Microsoft 365 Defender
 
-Microsoft 365 Defender es una solución de detección y respuesta extendida (XDR) que recopila, correlaciona y analiza automáticamente datos de señales, amenazas y alertas de todo el entorno de Microsoft 365, incluidos el punto de conexión, el correo electrónico, las aplicaciones y las identidades.
+Microsoft 365 Defender es una solución de detección y respuesta extendida (XDR) que recopila, correlaciona y analiza automáticamente datos de señales, amenazas y alertas de todo el entorno de Microsoft 365, incluidos puntos de conexión, correo electrónico, aplicaciones e identidades.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Proceso de adición de Microsoft 365 Defender a la arquitectura de Confianza cero" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
@@ -128,7 +129,7 @@ Vaya a [**_Evaluación y Microsoft 365 Defender piloto_**](defender/eval-overvie
 
 Implemente Microsoft Purview Information Protection para ayudarle a detectar, clasificar y proteger información confidencial dondequiera que viva o viaje.
 
-Microsoft Purview Information Protection funcionalidades se incluyen con Microsoft Purview y proporcionan las herramientas para conocer los datos, proteger los datos y evitar la pérdida de datos.
+Microsoft Purview Information Protection funcionalidades se incluyen con Microsoft Purview y le proporcionan las herramientas para conocer los datos, proteger los datos y evitar la pérdida de datos.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Funcionalidades de protección de la información que protegen los datos mediante la aplicación de directivas" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 

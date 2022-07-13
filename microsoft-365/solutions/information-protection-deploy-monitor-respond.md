@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes de interesados para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2a19154b9b0602eded09e6521dc285c00fd56a10
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013274"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748294"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisión y respuesta a incidentes de privacidad de datos en su organización
 
-Microsoft 365 características están disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que pone en marcha las funcionalidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
+Las características de Microsoft 365 están disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que pone en funcionamiento las funcionalidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
 
-Incluyen: 
+Entre las que se incluyen: 
 
 - Directivas de auditoría y alertas
 - Solicitudes del interesado (incluida la búsqueda de contenido y eDiscovery)
@@ -61,7 +62,7 @@ Para ayudarle a empezar a trabajar con un esquema de supervisión y respuesta en
 - ¿Qué tipo de técnicas diarias de supervisión, investigación e informes están disponibles para los diferentes tipos de datos y orígenes?
 - Qué mecanismos serán necesarios para controlar las solicitudes del interesado (DSR) y las acciones correctivas, como anonimización, censura y eliminación.
 
-## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Directivas de auditoría y alertas en el portal de cumplimiento de Microsoft Purview
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Directivas de auditoría y alertas en el portal de cumplimiento Microsoft Purview
 
 Consulte estos artículos para configurar directivas de auditoría, auditoría avanzada y alertas:
 
@@ -76,8 +77,8 @@ Consulte [Solicitudes de interesados para el RGPD y CCPA](/compliance/regulatory
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Administración de usuarios eliminados en Microsoft Stream
 
-Por Microsoft Stream, cuando un usuario se elimina de Azure Active Directory (Azure AD), si su nombre estaba asociado a un vídeo de Stream publicado antes de ese momento, su dirección de correo electrónico permanece asociada al vídeo. Consulte [Administración de usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlos.
+Por Microsoft Stream, cuando se elimina un usuario de Azure Active Directory (Azure AD), si su nombre estaba asociado a un vídeo de Stream publicado antes de ese momento, su dirección de correo electrónico permanece asociada al vídeo. Consulte [Administración de usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlos.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Administración de riesgos internos como herramienta de investigación
 
-[La administración de riesgos](../compliance/insider-risk-management.md) internos es una característica del portal de cumplimiento de Microsoft Purview para ayudarle a minimizar el riesgo interno, ya que le permite detectar, investigar y tomar medidas sobre actividades de riesgo en su organización.
+[La administración de riesgos](../compliance/insider-risk-management.md) internos es una característica de la portal de cumplimiento Microsoft Purview para ayudarle a minimizar el riesgo interno, ya que le permite detectar, investigar y tomar medidas sobre actividades de riesgo en su organización.

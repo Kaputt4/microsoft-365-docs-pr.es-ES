@@ -1,5 +1,5 @@
 ---
-title: 'Directivas de correo electrónico seguras recomendadas: Microsoft 365 para la | empresarial Microsoft Docs'
+title: 'Directivas de correo electrónico seguras recomendadas: Microsoft 365 para empresas | Microsoft Docs'
 description: Describe las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de correo electrónico.
 ms.author: dansimp
 author: dansimp
@@ -19,13 +19,14 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1b3afc4988dc5d20a1c6c3e0b1a51c1ef1cf9987
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015222"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750174"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -33,7 +34,7 @@ En este artículo se describe cómo implementar las directivas de acceso a dispo
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus necesidades: **punto de partida**, **empresa** y **seguridad especializada**. Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
 
-Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones de Outlook móviles también están diseñadas con funcionalidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, consulte [Outlook para iOS y Android P+F](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, como Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones móviles de Outlook también están diseñadas con funcionalidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, vea [Preguntas más frecuentes sobre Outlook para iOS y Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
 ## <a name="update-common-policies-to-include-email"></a>Actualización de directivas comunes para incluir correo electrónico
 
@@ -41,7 +42,7 @@ Para proteger el correo electrónico, en el diagrama siguiente se muestran las d
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Resumen de las actualizaciones de directivas para proteger el acceso a Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
-Tenga en cuenta la adición de una nueva directiva para Exchange Online bloquear clientes de ActiveSync. Esto fuerza el uso de Outlook móvil.
+Tenga en cuenta la adición de una nueva directiva para Exchange Online bloquear clientes de ActiveSync. Esto fuerza el uso de Outlook mobile.
 
 Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tendrá que crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas en [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
 
@@ -68,7 +69,7 @@ También puede usar directivas de autenticación para [deshabilitar la autentica
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange Online desde Outlook en la Web
 
-Puede restringir la capacidad de los usuarios para descargar datos adjuntos de Outlook en la Web en dispositivos no administrados. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar ni almacenar los archivos en el dispositivo. También puede impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
+Puede restringir la capacidad de los usuarios para descargar datos adjuntos de Outlook en la Web en dispositivos no administrados. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin perder ni almacenar los archivos en el dispositivo. También puede impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
 
 Estos son los pasos:
 
@@ -94,21 +95,21 @@ Estos son los pasos:
 
    \> **Controles de acceso** **Sesión**: seleccione **Usar restricciones aplicadas por la aplicación**
 
-## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android deben usar Outlook
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android usen Outlook
 
 Para asegurarse de que los usuarios de dispositivos iOS y Android solo puedan acceder a contenido profesional o educativo mediante Outlook para iOS y Android, necesita una directiva de acceso condicional destinada a esos usuarios potenciales.
 
-Consulte los pasos para configurar esta directiva en [Administración del acceso de colaboración de mensajería mediante Outlook para iOS y Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+Consulte los pasos para configurar esta directiva en [Administración del acceso a la colaboración de mensajería mediante Outlook para iOS y Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
 
 ## <a name="set-up-message-encryption"></a>Configuración del cifrado de mensajes
 
-Con Microsoft Purview Message Encryption, que aprovecha las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier usuario de cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como con otros clientes mediante Outlook.com, Gmail y otros servicios de correo electrónico.
+Con Cifrado de mensajes de Microsoft Purview, que aprovecha las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier usuario de cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como con clientes que no usen Outlook.com, Gmail y otros servicios de correo electrónico.
 
 Para obtener más información, vea [Configurar nuevas funcionalidades de cifrado de mensajes Office 365](../../compliance/set-up-new-message-encryption-capabilities.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Directivas para Microsoft 365 aplicaciones en la nube" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Directivas para aplicaciones en la nube de Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configurar directivas de acceso condicional para:
 

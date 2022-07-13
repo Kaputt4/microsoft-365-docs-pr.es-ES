@@ -1,6 +1,6 @@
 ---
-title: Piloto de Microsoft Defender para identidad
-description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
+title: Microsoft Defender for Identity piloto
+description: Microsoft Defender for Identity piloto, establecer pruebas comparativas, realizar tutoriales sobre reconocimiento, credenciales comprometidas, movimiento lateral, dominación de dominio y alertas de filtración, entre otros.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,50 +19,51 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 4805c97d79d36879a7b5081c347bd81c655c58c4
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754552"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747909"
 ---
-# <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
+# <a name="pilot-microsoft-defender-for-identity"></a>Microsoft Defender for Identity piloto
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Este artículo es [el paso 3 de 3](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-identity-overview.md).
+Este artículo es el [paso 3 del 3](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información sobre este proceso, consulte el [artículo de información general](eval-defender-identity-overview.md).
 
-Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para la identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
+Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
 
 :::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Los pasos para pilotar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 En la tabla siguiente se describen los pasos de la ilustración.
 
-- [Paso 1: Configurar recomendaciones comparativas para su entorno de identidad](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
-- [Paso 2: Probar capacidades: tutoriales para identificar y corregir diferentes tipos de ataques ](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
+- [Paso 1: Configuración de recomendaciones de pruebas comparativas para el entorno de identidad](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
+- [Paso 2: Probar funcionalidades: tutoriales para identificar y corregir diferentes tipos de ataques ](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
 
-## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>Paso 1. Configurar recomendaciones de referencia para su entorno de identidad
+## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>Paso 1. Configuración de recomendaciones de pruebas comparativas para el entorno de identidad
 
-Microsoft proporciona recomendaciones de referencia de seguridad para los clientes que usan los servicios de Microsoft Cloud. Azure [Security Benchmark](/security/benchmark/azure/overview) (ASB) proporciona recomendaciones y procedimientos recomendados prescriptivos para ayudar a mejorar la seguridad de las cargas de trabajo, los datos y los servicios en Azure.
+Microsoft proporciona recomendaciones de pruebas comparativas de seguridad para los clientes que usan servicios de Microsoft Cloud. [Azure Security Benchmark](/security/benchmark/azure/overview) (ASB) proporciona procedimientos recomendados y recomendaciones prescriptivas para ayudar a mejorar la seguridad de las cargas de trabajo, los datos y los servicios en Azure.
 
-Estas recomendaciones de referencia incluyen la línea [base de seguridad de Azure para Microsoft Defender para Identity](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). La implementación de estas recomendaciones puede tardar algún tiempo en planearse e implementarse. Aunque aumentarán considerablemente la seguridad del entorno de identidad, no deben impedir que continúes evaluando e implementando Microsoft Defender para Identity. Estos se proporcionan aquí para su conocimiento.
+Estas recomendaciones de pruebas comparativas incluyen [la línea base de seguridad de Azure para Microsoft Defender for Identity](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). La implementación de estas recomendaciones puede tardar algún tiempo en planearse e implementarse. Aunque aumentarán considerablemente la seguridad del entorno de identidad, no deben impedir que continúe e implemente Microsoft Defender for Identity. Estos se proporcionan aquí para su conciencia.
 
-## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>Paso 2. Capacidades de prueba: tutoriales para identificar y corregir diferentes tipos de ataques
+## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>Paso 2. Probar funcionalidades: tutoriales para identificar y corregir diferentes tipos de ataque
 
-La documentación de Microsoft Defender para identidades incluye una serie de tutoriales que le guían por el proceso de identificación y corrección de varios tipos de ataques.
+La documentación Microsoft Defender for Identity incluye una serie de tutoriales que le guiarán por el proceso de identificación y corrección de varios tipos de ataque.
 
 Pruebe los tutoriales de Defender for Identity:
 - [Alertas de reconocimiento](/defender-for-identity/reconnaissance-alerts)
-- [Alertas de credenciales comprometidas](/defender-for-identity/compromised-credentials-alerts)
+- [Alertas de credenciales en peligro](/defender-for-identity/compromised-credentials-alerts)
 - [Alertas de movimiento lateral](/defender-for-identity/lateral-movement-alerts)
-- [Alertas de dominio dominante](/defender-for-identity/domain-dominance-alerts)
-- [Alertas de exfiltración](/defender-for-identity/exfiltration-alerts)
-- [Investigar a un usuario](/defender-for-identity/investigate-a-user)
-- [Investigar un equipo](/defender-for-identity/investigate-a-computer)
+- [Alertas de dominación de dominio](/defender-for-identity/domain-dominance-alerts)
+- [Alertas de filtración](/defender-for-identity/exfiltration-alerts)
+- [Investigación de un usuario](/defender-for-identity/investigate-a-user)
+- [Investigación de un equipo](/defender-for-identity/investigate-a-computer)
 - [Investigar rutas de movimiento lateral](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigar entidades](/defender-for-identity/investigate-entity)
 
@@ -70,6 +71,6 @@ Pruebe los tutoriales de Defender for Identity:
 
 [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 
-Vuelva a la introducción a [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
+Vuelva a la introducción para [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md)

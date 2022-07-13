@@ -1,6 +1,6 @@
 ---
-title: Revisar los requisitos y conceptos clave de la arquitectura de puntos de conexión de Microsoft Defender
-description: El diagrama técnico de Microsoft Defender para endpoint en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de crear el entorno piloto o el laboratorio de prueba.
+title: Revisión de los requisitos de arquitectura de Microsoft Defender para punto de conexión y los conceptos clave
+description: El diagrama técnico de Microsoft Defender para punto de conexión en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de compilar el laboratorio de prueba o el entorno piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,28 +19,29 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 5197acd8ceb3a2dea7c03b0ef076bca5dc9138dd
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755017"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749141"
 ---
-# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisar los requisitos y conceptos clave de la arquitectura de puntos de conexión de Microsoft Defender
+# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisión de los requisitos de arquitectura de Microsoft Defender para punto de conexión y los conceptos clave
 
 **Se aplica a:** Microsoft 365 Defender
 
-Este artículo le guiará en el proceso de configuración de la evaluación del entorno de Microsoft Defender para endpoints.
+Este artículo le guiará en el proceso de configuración de la evaluación para Microsoft Defender para punto de conexión entorno.
 
-Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-endpoint-overview.md).
+Para obtener más información sobre este proceso, consulte el [artículo de información general](eval-defender-endpoint-overview.md).
 
-Antes de habilitar Microsoft Defender para endpoint, asegúrese de comprender la arquitectura y de cumplir los requisitos.
+Antes de habilitar Microsoft Defender para punto de conexión, asegúrese de comprender la arquitectura y de que puede cumplir los requisitos.
 
 ## <a name="understand-the-architecture"></a>Información sobre la arquitectura
 
-En el siguiente diagrama se muestra Microsoft Defender para la arquitectura y las integraciones de puntos de conexión. 
+En el diagrama siguiente se muestra Microsoft Defender para punto de conexión arquitectura e integraciones. 
 
 :::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Los pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
@@ -48,39 +49,39 @@ En la tabla siguiente se describe la ilustración.
 
 Llamada | Descripción
 :---|:---|
-1 | Los dispositivos se abordo a través de una de las herramientas de administración admitidas. 
-2 | Los dispositivos abordo proporcionan y responden a Microsoft Defender para los datos de señal de punto de conexión.
+1 | Los dispositivos se abordan a través de una de las herramientas de administración admitidas. 
+2 | Los dispositivos integrados proporcionan y responden a Microsoft Defender para punto de conexión datos de señal.
 3 | Los dispositivos administrados se unen o se inscriben en Azure Active Directory.
-4 | Los dispositivos Windows unidos al dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Conectar.
-5 | Las alertas, investigaciones y respuestas de Microsoft Defender para puntos de conexión se administran en Microsoft 365 Defender.
+4  | Los dispositivos Windows unidos a un dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Connect.
+5 | Microsoft Defender para punto de conexión alertas, investigaciones y respuestas se administran en Microsoft 365 Defender.
 
-## <a name="understand-key-concepts"></a>Comprender conceptos clave
+## <a name="understand-key-concepts"></a>Descripción de los conceptos clave
 
-En la siguiente tabla se identificaron conceptos clave que son importantes para comprender al evaluar, configurar e implementar Microsoft Defender para endpoint: 
+En la tabla siguiente se identificaron conceptos clave que son importantes comprender al evaluar, configurar e implementar Microsoft Defender para punto de conexión: 
 
 Concepto | Descripción | Más información
 :---|:---|:---|
-Portal de administración | Microsoft 365 Defender para supervisar y ayudar a responder a las alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzada. | [Introducción al portal de Microsoft Defender para endpoints](/microsoft-365/security/defender-endpoint/portal-overview)
-Reducción de superficie de ataque | Ayuda a reducir las superficies de ataque minimizando los lugares donde tu organización es vulnerable a ciberamenazas y ataques. | [Introducción a la reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
-Detección y respuesta de extremos | Las capacidades de detección y respuesta de puntos de conexión proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. | [Información general sobre detección y respuesta de puntos de conexión funcionalidades](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
-Bloqueo y contención del comportamiento | Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. | [Bloqueo y contención de comportamientos](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
-Investigación y respuesta automatizadas | La investigación automatizada usa varios algoritmos de inspección basados en procesos que usan los analistas de seguridad y diseñados para examinar alertas y tomar medidas inmediatas para resolver infracciones. | [Usar investigaciones automatizadas para investigar y corregir amenazas](/microsoft-365/security/defender-endpoint/automated-investigations)
-Búsqueda avanzada | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para que pueda inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. | [Información general sobre la búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
-Análisis de amenazas | El análisis de amenazas es un conjunto de informes de investigadores expertos en seguridad de Microsoft que cubren las amenazas más relevantes. | [Seguir las amenazas emergentes y responder a ellas](/microsoft-365/security/defender-endpoint/threat-analytics)
+Portal de administración | Microsoft 365 Defender portal para supervisar y ayudar a responder a alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzadas. | [Introducción al portal de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/portal-overview)
+Reducción de la superficie expuesta a ataques | Ayude a reducir las superficies expuestas a ataques minimizando los lugares donde su organización es vulnerable a ciberataques y ataques. | [Introducción a la reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
+Detección y respuesta de puntos de conexión | Las funcionalidades de detección y respuesta de puntos de conexión proporcionan detecciones avanzadas de ataques casi en tiempo real y accionables. | [Introducción a las funcionalidades de detección y respuesta de puntos de conexión](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+Bloqueo y contención del comportamiento | Las funcionalidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener amenazas, en función de sus comportamientos y de los árboles de proceso, incluso cuando la amenaza ha comenzado a ejecutarse. | [Bloqueo y contención de comportamientos](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
+Investigación y respuesta automatizadas | La investigación automatizada usa varios algoritmos de inspección basados en procesos que usan los analistas de seguridad y están diseñados para examinar alertas y tomar medidas inmediatas para resolver infracciones. | [Uso de investigaciones automatizadas para investigar y corregir amenazas](/microsoft-365/security/defender-endpoint/automated-investigations)
+Búsqueda avanzada | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para poder inspeccionar de forma proactiva eventos en la red para localizar indicadores de amenazas y entidades. | [Introducción a la búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+Análisis de amenazas | Análisis de amenazas es un conjunto de informes de expertos investigadores de seguridad de Microsoft que cubren las amenazas más relevantes. | [Seguir las amenazas emergentes y responder a ellas](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
-Para obtener información más detallada acerca de las funcionalidades incluidas con Microsoft Defender para endpoint, consulta [What is Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+Para obtener información más detallada sobre las funcionalidades incluidas con Microsoft Defender para punto de conexión, consulte [¿Qué es Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)?
 
 ## <a name="siem-integration"></a>Integración de SIEM
 
-Puedes integrar Microsoft Defender para Endpoint con Microsoft Sentinel para analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata. 
+Puede integrar Microsoft Defender para punto de conexión con Microsoft Sentinel para analizar de forma más completa los eventos de seguridad en toda la organización y crear cuadernos de estrategias para una respuesta eficaz e inmediata. 
 
-Microsoft Defender para endpoint también se puede integrar en otras soluciones de administración de eventos y de información de seguridad (SIEM). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-siem-integration).
+Microsoft Defender para punto de conexión también se pueden integrar en otras soluciones de administración de eventos e información de seguridad (SIEM). Para obtener más información, consulte [Habilitación de la integración siem en Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/enable-siem-integration).
 
 
 ## <a name="next-steps"></a>Siguientes pasos
 [Habilitar la evaluación](eval-defender-endpoint-enable-eval.md)
 
-Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+Vuelva a la introducción para [Evaluar Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md)

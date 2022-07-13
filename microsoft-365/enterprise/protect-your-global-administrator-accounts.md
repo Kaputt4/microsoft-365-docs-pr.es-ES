@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +25,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso con privilegios al inquilino de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930205"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749339"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Paso 2. Protección de las cuentas con privilegios de Microsoft 365
 
@@ -45,7 +48,7 @@ Microsoft proporciona funcionalidades para ayudar a proteger su organización, p
     
 2. Configure la autenticación multifactor (MFA) para las cuentas con privilegios de Microsoft 365 dedicadas y use la forma más segura de autenticación secundaria.
 
-3. Proteja las cuentas con privilegios con las recomendaciones de acceso a dispositivos y identidad de confianza cero.
+3. Proteja las cuentas con privilegios con Confianza cero recomendaciones de acceso a dispositivos e identidades.
 
 > [!NOTE]
 > Para proteger los roles con privilegios, consulte [Procedimientos recomendados para roles de Azure AD](/azure/active-directory/roles/best-practices) para proteger el acceso con privilegios al inquilino.
@@ -86,7 +89,7 @@ Si la infraestructura de seguridad para el método de verificación más seguro 
   
 Para obtener más información, consulte [MFA para Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protección de cuentas de administrador con recomendaciones de acceso a dispositivos e identidad de confianza cero
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protección de cuentas de administrador con recomendaciones de acceso a dispositivos e identidades de Confianza cero
 
 Para ayudar a garantizar una fuerza de trabajo segura y productiva, Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md). Para la identidad, use las recomendaciones y la configuración de estos artículos:
 
@@ -119,7 +122,7 @@ PIM está disponible con Azure Active Directory Premium P2, que se incluye con M
   
 Para más información, vea:
 
-- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Privileged Identity Management de Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Proteger el acceso con privilegios para implementaciones híbridas y en la nube en Azure AD](/azure/active-directory/roles/security-planning)
   
 
@@ -141,7 +144,7 @@ Para obtener más información, consulte [Administración de acceso con privileg
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Software de administración de eventos e información de seguridad (SIEM) para el registro de Microsoft 365
 
-El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de alertas de seguridad y eventos creados por aplicaciones y hardware de red. Para permitir que el servidor SIEM incluya alertas y eventos de seguridad de Microsoft 365 en sus funciones de análisis e informes, integre Azure AD en el SEIM. Consulte [Introducción a la integración de registros de Azure](/azure/security/security-azure-log-integration-overview).
+El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de alertas de seguridad y eventos creados por aplicaciones y hardware de red. Para permitir que el servidor SIEM incluya alertas y eventos de seguridad de Microsoft 365 en sus funciones de análisis e informes, integre Azure AD en el SEIM. Consulte [Introducción a Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Paso siguiente
 

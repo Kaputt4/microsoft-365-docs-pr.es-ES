@@ -22,22 +22,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: El método que use para anular la asignación de licencias de productos depende de si anula la asignación de licencias de usuarios específicos o de un producto específico.
-ms.date: 06/23/2022
-ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.date: 07/12/2022
+ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663512"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748393"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Anulación de la asignación de licencias de Microsoft 365 de los usuarios
 
 Puede anular la asignación de licencias de los usuarios en la página **Usuarios activos** o en la página **Licencias** . El método que use dependerá de si desea anular la asignación de licencias de productos de usuarios específicos o de anular la asignación de licencias de usuarios de un producto específico.
 
 > [!NOTE]
-> 
+>
 > - Como administrador, no puede asignar o cancelar la asignación de licencias para una suscripción de compra de autoservicio adquirida por un usuario de su organización. Puede [apoderarse de una suscripción de compra de autoservicio](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) y, a continuación, asignar o cancelar la asignación de licencias.
-> 
+>
 > - Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -48,9 +48,9 @@ Puede anular la asignación de licencias de los usuarios en la página **Usuario
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Uso de la página Licencias para anular la asignación de licencias
 
-La página **Licencias** le permite asignar o cancelar la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos de su propiedad, el número de licencias disponibles para cada producto y el número de licencias asignadas del total de licencias disponibles. El número de licencias es un total agregado de licencias para todas las suscripciones para el mismo nombre de producto.
+La página **Licencias** le permite asignar o cancelar la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos de su propiedad, el número de licencias disponibles para cada producto y el número de licencias asignadas del total de licencias disponibles.
 
-Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
+La página **Licencias** muestra un total agregado de licencias para todas las suscripciones con el mismo nombre de producto. Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
 
 ::: moniker range="o365-worldwide"
 
@@ -64,13 +64,13 @@ Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium q
 
 ::: moniker-end
 
-1. Seleccione un producto.
+2. Seleccione un producto.
 
-2. Active las casillas de los usuarios para los que desea anular la asignación de licencias.
+3. Active las casillas de los usuarios para los que desea anular la asignación de licencias.
 
-3. Seleccione **Anular la asignación de licencias**.
+4. Seleccione **Anular la asignación de licencias**.
 
-4. En el cuadro **Unassign licenses (Anular la asignación de licencias** ), seleccione **Unassign (Quitar la asignación**).
+5. En el cuadro **Unassign licenses (Anular la asignación de licencias** ), seleccione **Unassign (Quitar la asignación**).
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Uso de la página Usuarios activos para anular la asignación de licencias
 
@@ -127,7 +127,7 @@ Cuando se usa la página **Usuarios activos** para anular la asignación de lice
 - Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
 - Si quita la licencia de un usuario y sigue teniendo instaladas aplicaciones de Office, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones de Office.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a [reasignar las licencias sin usar a otros usuarios](assign-licenses-to-users.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 

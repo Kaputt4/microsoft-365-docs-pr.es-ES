@@ -1,6 +1,6 @@
 ---
-title: Piloto de Microsoft Defender para punto de conexión
-description: Obtenga información sobre cómo ejecutar un piloto para Microsoft Defender para Endpoint(MDE), incluida la comprobación del grupo piloto y las capacidades de prueba.
+title: Microsoft Defender para punto de conexión piloto
+description: Obtenga información sobre cómo ejecutar un piloto para Microsoft Defender para punto de conexión (MDE), incluida la comprobación del grupo piloto y la prueba de funcionalidades.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,73 +19,74 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755476"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750415"
 ---
-# <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
+# <a name="pilot-microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión piloto
 
-Este artículo le guiará en el proceso de ejecución de un piloto para Microsoft Defender para Endpoint. 
+Este artículo le guiará en el proceso de ejecución de un piloto para Microsoft Defender para punto de conexión. 
 
-Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para endpoint. 
+Siga estos pasos para configurar y configurar el piloto para Microsoft Defender para punto de conexión. 
 
 :::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Los pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
-- Paso 1. Comprobar grupo piloto
-- Paso 2. Probar funcionalidades
+- Paso 1. Comprobación del grupo piloto
+- Paso 2. Probar las funcionalidades
 
-Cuando pilote Microsoft Defender para Endpoint, puede optar por incorporar algunos dispositivos al servicio antes de incorporar toda la organización.  
+Al pilotar Microsoft Defender para punto de conexión, puede optar por incorporar algunos dispositivos al servicio antes de incorporar toda la organización.  
 
-A continuación, puedes probar las funcionalidades disponibles, como ejecutar simulaciones de ataques y ver cómo Defender for Endpoint muestra actividades malintencionadas y te permite llevar a cabo una respuesta eficaz. 
+A continuación, puede probar las funcionalidades que están disponibles, como ejecutar simulaciones de ataque y ver cómo Defender for Endpoint expone actividades malintencionadas y le permite realizar una respuesta eficaz. 
 
-## <a name="step-1-verify-pilot-group"></a>Paso 1. Comprobar grupo piloto
-Después de completar los pasos de incorporación descritos en la sección [](eval-defender-endpoint-enable-eval.md) Habilitar evaluación, debes ver los dispositivos en la lista inventario de dispositivos aproximadamente después de una hora. 
+## <a name="step-1-verify-pilot-group"></a>Paso 1. Comprobación del grupo piloto
+Después de completar los pasos de incorporación descritos en la sección [Habilitar evaluación](eval-defender-endpoint-enable-eval.md) , debería ver los dispositivos en la lista Inventario de dispositivos aproximadamente después de una hora. 
 
-Cuando veas los dispositivos incorporados, puedes continuar con las funciones de probar. 
+Cuando vea los dispositivos incorporados, puede continuar con la prueba de funcionalidades. 
 
-## <a name="step-2-try-out-capabilities"></a>Paso 2. Probar funcionalidades
-Ahora que ha completado la incorporación de algunos dispositivos y ha comprobado que están informando al servicio, familiarícese con el producto probando las funciones eficaces que están disponibles desde el primer momento.
+## <a name="step-2-try-out-capabilities"></a>Paso 2. Probar las funcionalidades
+Ahora que ha completado la incorporación de algunos dispositivos y ha comprobado que están informando al servicio, familiarícese con el producto probando las eficaces funcionalidades que están disponibles inmediatamente.
 
-Durante el piloto, puede empezar fácilmente a probar algunas de las características para ver el producto en acción sin pasar por pasos complejos de configuración.
+Durante el piloto, puede empezar a probar fácilmente algunas de las características para ver el producto en acción sin pasar por pasos de configuración complejos.
 
-Empecemos por echar un vistazo a los paneles.
+Comencemos por la desprotejación de los paneles.
 
-### <a name="view-the-device-inventory"></a>Ver el inventario de dispositivos
-El inventario de dispositivos es donde verá la lista de puntos de conexión, dispositivos de red y dispositivos IoT de la red. No solo proporciona una vista de los dispositivos de la red, sino que también proporciona información detallada sobre ellos, como dominio, nivel de riesgo, plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
+### <a name="view-the-device-inventory"></a>Visualización del inventario de dispositivos
+El inventario de dispositivos es donde verá la lista de puntos de conexión, dispositivos de red y dispositivos IoT en la red. No solo proporciona una vista de los dispositivos de la red, sino que también proporciona información detallada sobre ellos, como el dominio, el nivel de riesgo, la plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Ver el panel amenazas y administración de vulnerabilidades panel 
-La amenaza administración de vulnerabilidades ayuda a centrarse en las debilidades que representan el riesgo más urgente y más alto para la organización. Desde el panel, obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de exposición de dispositivos, recomendaciones de seguridad superiores, software vulnerable superior, actividades de corrección superior y datos de dispositivos expuestos superiores. 
+### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Ver el panel de administración de amenazas y vulnerabilidades 
+La administración de amenazas y vulnerabilidades le ayuda a centrarse en las debilidades que suponen el riesgo más urgente y el más alto para la organización. En el panel, obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de la exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, principales actividades de corrección y datos de dispositivo expuestos. 
 
-### <a name="run-a-simulation"></a>Ejecutar una simulación
-Microsoft Defender para endpoint viene con [escenarios de ataque "Do It Yourself"](https://securitycenter.windows.com/tutorials) que puedes ejecutar en tus dispositivos piloto.  Cada documento incluye requisitos de sistema operativo y aplicación, así como instrucciones detalladas específicas para un escenario de ataque. Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
+### <a name="run-a-simulation"></a>Ejecución de una simulación
+Microsoft Defender para punto de conexión incluye [escenarios de ataque "Do It Yourself"](https://securitycenter.windows.com/tutorials) que puede ejecutar en los dispositivos piloto.  Cada documento incluye los requisitos del sistema operativo y de la aplicación, así como instrucciones detalladas específicas de un escenario de ataque. Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las funcionalidades de Defender para punto de conexión y le guiarán por la experiencia de investigación.
 
-Para ejecutar cualquiera de las simulaciones proporcionadas, necesitas al menos [un dispositivo incorporado](../defender-endpoint/onboard-configure.md).
+Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [un dispositivo incorporado](../defender-endpoint/onboard-configure.md).
 
-1. En **HelpSimulations** >  & tutoriales, seleccione cuál de los escenarios de ataque disponibles desea simular:
+1. En Simulaciones de **ayuda** > **& tutoriales**, seleccione cuál de los escenarios de ataque disponibles desea simular:
 
-   - **Escenario 1: El documento deja la puerta trasera** : simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
+   - **Escenario 1: El documento coloca la puerta trasera** : simula la entrega de un documento señuelo diseñado socialmente. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
 
-   - **Escenario 2: Script de PowerShell** en ataque sin archivos: simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de superficie de ataque y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
+   - **Escenario 2: Script de PowerShell en ataque sin archivos** : simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de la superficie expuesta a ataques y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
 
-   - **Escenario 3: Respuesta automatizada a incidentes:** desencadena la investigación automatizada, que busca y corrige automáticamente artefactos de infracción para escalar la capacidad de respuesta a incidentes.
+   - **Escenario 3: Respuesta a incidentes automatizada:** desencadena una investigación automatizada, que busca y corrige automáticamente los artefactos de infracción para escalar la capacidad de respuesta a incidentes.
 
 2. Descargue y lea el documento de tutorial correspondiente proporcionado con el escenario seleccionado.
 
-3. Descargue el archivo de simulación o copie el script de simulación navegando a **HelpSimulations** >  & tutoriales. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
+3. Descargue el archivo de simulación o copie el script de simulación; para ello, vaya a Simulaciones de **ayuda** > **& tutoriales**. Puede optar por descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
-4. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento del tutorial.
+4. Ejecute el archivo o script de simulación en el dispositivo de prueba como se indica en el documento del tutorial.
 
 > [!NOTE]
-> Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
+> Los archivos o scripts de simulación imitan la actividad de ataque, pero en realidad son benignos y no dañarán ni pondrán en peligro el dispositivo de prueba.
 
 ## <a name="next-steps"></a>Siguientes pasos
-[Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
+[Evaluar Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+Vuelva a la introducción para [Evaluar Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md)

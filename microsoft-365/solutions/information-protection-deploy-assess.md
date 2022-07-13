@@ -1,5 +1,5 @@
 ---
-title: Evaluar los riesgos de privacidad de los datos e identificar elementos confidenciales con Microsoft 365
+title: Evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales con Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -15,18 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
-description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en su entorno de Microsoft 365.
+ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129061"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748316"
 ---
-# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de los datos e identificar elementos confidenciales con Microsoft 365
+# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales con Microsoft 365
 
-Evaluar las regulaciones de privacidad de datos y los riesgos a los que está sujeta su organización es un primer paso antes de implementar las acciones de mejora relacionadas, incluidas las acciones que se pueden lograr con Microsoft 365 características y servicios.
+Evaluar las regulaciones de privacidad de datos y los riesgos a los que está sujeta su organización es un primer paso antes de implementar las acciones de mejora relacionadas, incluidas las acciones que se pueden lograr con las características y servicios de Microsoft 365.
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Normativas de privacidad de datos potencialmente aplicables
 
@@ -52,7 +53,7 @@ En el Estados Unidos, estos incluyen la Ley de Protección al Consumidor de Cali
 
 En todo el mundo, otros ejemplos incluyen la Ley nacional de implementación del RGPD (BDSG) de Alemania, la Ley de protección de datos de Brasil (LGPD) y muchos otros.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Asignación de normativas a Microsoft 365 categorías de control técnico
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Asignación de normativas a categorías de control técnico de Microsoft 365
 
 Muchas de las regulaciones relacionadas con la privacidad de datos tienen requisitos superpuestos, por lo que debe comprender a qué normativas están sujetas antes de desarrollar cualquier esquema de control técnico.
 
@@ -108,7 +109,7 @@ Si aún no ha evaluado la preparación general y el riesgo asociados a las regul
 
 Debe medir la exposición al riesgo de privacidad de los datos en función del tipo de datos personales que administra actualmente, dónde se almacenan, qué controles de protección se colocan en él, cómo se administra su ciclo de vida y quién tiene acceso a ellos.
 
-Como punto de partida, es importante hacer un inventario de los tipos de datos personales que existen en el entorno de Microsoft 365. Use estas categorías:
+Como punto de partida, es importante hacer un inventario de los tipos de datos personales que existen en su entorno de Microsoft 365. Use estas categorías:
 
 - Datos de empleados necesarios para llevar a cabo funciones empresariales diarias
 - Datos que la organización tiene sobre sus clientes empresariales, asociados y otras relaciones en el escenario de negocio a negocio (B2B)
@@ -118,9 +119,9 @@ Este es un ejemplo de los diferentes tipos de datos para los departamentos típi
 
 ![Tipos de datos personales.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Gran parte de los datos personales que están sujetos a la normativa de privacidad de datos se recopilan y almacenan normalmente fuera de Microsoft 365. Cualquier dato personal de aplicaciones web o móviles orientadas al consumidor tendría que haber sido exportado desde dichas aplicaciones a Microsoft 365 con el fin de estar sujeto al examen de privacidad de los datos dentro de Microsoft 365.
+Gran parte de los datos personales que están sujetos a la normativa de privacidad de datos se recopilan y almacenan normalmente fuera de Microsoft 365. Cualquier dato personal de aplicaciones web o móviles orientadas al consumidor tendría que haberse exportado desde dichas aplicaciones a Microsoft 365 para estar sujeto al examen de privacidad de los datos en Microsoft 365.
 
-La exposición a la privacidad de los datos en Microsoft 365 puede ser más limitada en relación con las aplicaciones web y los sistemas CRM, que esta solución no aborda.
+La exposición a la privacidad de los datos en Microsoft 365 puede estar más limitada en relación con las aplicaciones web y los sistemas CRM, que esta solución no aborda.
 
 También es importante pensar en los siguientes desafíos comunes de cumplimiento de privacidad de datos al evaluar el perfil de riesgo:
 
@@ -164,9 +165,9 @@ Si su organización no realiza una gran cantidad de recopilación de datos direc
 
 Comprender su exposición a la regulación de privacidad de datos y riesgos es un primer paso importante que se basa en una comprensión fundamental de los escenarios de datos personales de su organización.
 
-Si no tiene datos personales de los consumidores en su entorno de Microsoft 365 o se limita a ciertas partes del entorno y la necesidad de un control técnico se basa en la exposición de datos de tipo consumidor, es posible que ese control técnico solo tenga que emplearse en partes de alto riesgo del entorno, no en todas partes.
+Si no tiene datos personales de consumidores en su entorno de Microsoft 365 o se limita a ciertas partes del entorno y la necesidad de un control técnico se basa en la exposición de datos de tipo consumidor, es posible que ese control técnico solo tenga que emplearse en partes de alto riesgo del entorno, no en todas partes.
 
-Aunque una organización externa o una recomendación de conjunto de control estándar, como desde el Administrador de cumplimiento en Microsoft 365, puede ayudar a informar a su estrategia de control, la elección de la implementación debe basarse en el reconocimiento del inventario de datos para cuantificar la exposición real al riesgo.
+Aunque una organización externa o una recomendación de conjunto de control estándar, como desde el Administrador de cumplimiento de Microsoft 365, puede ayudar a informar a su estrategia de control, su elección de implementación debe basarse en el reconocimiento del inventario de datos para cuantificar la exposición real al riesgo.
 
 La mayoría de las organizaciones tendrán cierta exposición a uno de los escenarios anteriores. Es importante adoptar un enfoque holístico para la evaluación.
 
@@ -202,7 +203,7 @@ Si necesita identificar y proteger un tipo de elementos confidenciales específi
 
 - Security & Compliance PowerShell
 - Reglas personalizadas con coincidencia exacta de datos (EDM)
-- A través del portal de cumplimiento de Microsoft 365 Purview, como se resalta en el [artículo Uso de la puntuación de cumplimiento y el administrador de cumplimiento](information-protection-deploy-compliance.md)
+- A través del portal de cumplimiento de Microsoft 365 Purview, como se resalta en el [artículo Usar la puntuación de cumplimiento y el Administrador de cumplimiento](information-protection-deploy-compliance.md)
 
 También puede personalizar un tipo de información confidencial integrado existente.
 
@@ -216,11 +217,11 @@ Consulte estos artículos para obtener más información:
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el centro de administración de Microsoft Purview. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
+Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el Centro de administración de Microsoft Purview. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
 
 La nueva herramienta Explorador de contenido permite identificar rápidamente las ubicaciones de los elementos confidenciales de su entorno, ya sea mediante tipos de información confidencial integrados o personalizados. Esto puede implicar el establecimiento de un proceso y la responsabilidad asignada de investigar periódicamente la presencia y ubicación de elementos confidenciales.
 
-Junto con los otros pasos resaltados en este artículo, proporciona un punto de partida para identificar la exposición general al riesgo, la preparación y la ubicación de los elementos confidenciales que se protegerán a través de la configuración y supervisión Microsoft 365 planeada.
+Junto con los otros pasos resaltados en este artículo, proporciona un punto de partida para identificar la exposición general al riesgo, la preparación y la ubicación de los elementos confidenciales que se protegerán a través de la configuración y supervisión planeadas de Microsoft 365.
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Otros métodos para identificar datos personales en su entorno
 
@@ -228,7 +229,7 @@ Además del Explorador de contenido, las organizaciones tienen acceso a la funci
 
 En [este artículo](/compliance/regulatory/gdpr) se proporcionan instrucciones detalladas sobre el uso de Búsqueda de contenido para la detección de datos personales. Búsqueda de contenido y otras técnicas de detección también se exploran en [DSR para el RGPD y CCPA](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs).
 
-En el [artículo de supervisión y respuesta](information-protection-deploy-monitor-respond.md) se proporcionan conclusiones adicionales sobre técnicas de investigación y corrección de datos personales en Microsoft 365.
+En el [artículo supervisión y respuesta](information-protection-deploy-monitor-respond.md) se proporciona información adicional sobre las técnicas de investigación y corrección de datos personales de Microsoft 365.
 
 > [!NOTE]
 > Para encontrar la información confidencial que tiene en los archivos almacenados en el entorno local, consulte [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).

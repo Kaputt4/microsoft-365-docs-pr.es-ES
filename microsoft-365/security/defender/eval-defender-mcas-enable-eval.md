@@ -1,6 +1,6 @@
 ---
-title: Habilitar el entorno de evaluación para Microsoft Defender para aplicaciones en la nube
-description: Obtenga información sobre la arquitectura de Defender para aplicaciones en la nube en Microsoft Defender para obtener Office 365 y comprender las interacciones entre los Microsoft 365 Defender productos.
+title: Habilitación del entorno de evaluación para Microsoft Defender for Cloud Apps
+description: Conozca la arquitectura de Defender for Cloud Apps en Microsoft Defender para Office 365 y comprenda las interacciones entre los productos de Microsoft 365 Defender.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,88 +18,89 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a66a3563d01e8e4239a0f4815fec9234fd46e1fc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0c9f4687cf36d4db5f22cd6e1b95f55eebc84cf9
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498987"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749932"
 ---
-# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Habilitar el entorno de evaluación para Microsoft Defender para aplicaciones en la nube
+# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Habilitación del entorno de evaluación para Microsoft Defender for Cloud Apps
 
 **Se aplica a:**
 
 - Microsoft 365 Defender
 
-Este artículo es [el paso 2 de 2](eval-defender-mcas-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para aplicaciones en la nube. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-mcas-overview.md).
+Este artículo es el [paso 2 del 2](eval-defender-mcas-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Cloud Apps. Para obtener más información sobre este proceso, consulte el [artículo de información general](eval-defender-mcas-overview.md).
 
-En este artículo se explica el proceso de acceso al portal de Defender for Cloud Apps y la configuración de la integración necesaria para recopilar datos de tráfico de aplicaciones en la nube.
+Este artículo le guiará a través del proceso de acceso al portal de Defender for Cloud Apps y la configuración de la integración necesaria para recopilar datos de tráfico de aplicaciones en la nube.
 
-Para detectar las aplicaciones en la nube que se usan en el entorno, puedes implementar uno o ambos de los siguientes métodos:
+Para detectar las aplicaciones en la nube que se usan en su entorno, puede implementar uno o ambos de los métodos siguientes:
 
-- Para empezar a trabajar rápidamente con Cloud Discovery, integre con Microsoft Defender para Endpoint. Esta integración nativa le permite empezar inmediatamente a recopilar datos sobre el tráfico en la nube en Windows 10 y Windows 11 dispositivos, tanto en la red como fuera de la red.
-- Para descubrir todas las aplicaciones en la nube a las que acceden todos los dispositivos conectados a la red, implemente el recopilador de registros defender para aplicaciones en la nube en los firewalls y otros servidores proxy. Esta implementación ayuda a recopilar datos de los puntos de conexión y los envía a Defender for Cloud Apps para su análisis. Defender for Cloud Apps se integra de forma nativa con algunos servidores proxy de terceros para obtener aún más funcionalidades.
+- Empiece a trabajar rápidamente con Cloud Discovery mediante la integración con Microsoft Defender para punto de conexión. Esta integración nativa le permite empezar inmediatamente a recopilar datos sobre el tráfico en la nube en los dispositivos Windows 10 y Windows 11, dentro y fuera de la red.
+- Para detectar todas las aplicaciones en la nube a las que acceden todos los dispositivos conectados a la red, implemente el recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy. Esta implementación ayuda a recopilar datos de los puntos de conexión y los envía a Defender for Cloud Apps para su análisis. Defender for Cloud Apps se integra de forma nativa con algunos servidores proxy de terceros para obtener aún más funcionalidades.
 
 En este artículo se incluyen instrucciones para ambos métodos.
 
-Siga estos pasos para configurar Microsoft Defender para aplicaciones en la nube.
+Siga estos pasos para configurar Microsoft Defender for Cloud Apps.
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Microsoft Defender para aplicaciones en la nube en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Microsoft Defender for Cloud Apps en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
 
-- [Paso 1. Conectar al portal de Defender for Cloud Apps](#step-1)
-- [Paso 2. Integrar con Microsoft Defender para endpoint](#step-2)
-- [Paso 3. Implementar el recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy](#step-3)
-- [Paso 4. Ver el panel de detección en la nube para ver qué aplicaciones se usan en su organización](#step-4)
+- [Paso 1. Conexión al portal de Defender for Cloud Apps](#step-1)
+- [Paso 2. Integración con Microsoft Defender para punto de conexión](#step-2)
+- [Paso 3. Implementación del recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy](#step-3)
+- [Paso 4. Vea el panel de Cloud Discovery para ver qué aplicaciones se usan en su organización.](#step-4)
 
 <a name="step-1"></a>
 
-## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>Paso 1. Conectar al portal de Defender for Cloud Apps
+## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>Paso 1. Conexión al portal de Defender for Cloud Apps
 
-Para comprobar las licencias y conectarse al portal de Defender for Cloud Apps, consulta [Inicio rápido: Introducción a Microsoft Defender para aplicaciones en la nube](/cloud-app-security/getting-started-with-cloud-app-security).
+Para comprobar las licencias y conectarse al portal de Defender for Cloud Apps, consulte [Inicio rápido: Introducción a Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-Si no puede conectarse inmediatamente al portal, es posible que deba agregar la dirección IP a la lista de permitidos del firewall. Consulta [Configuración básica de Defender para aplicaciones en la nube](/cloud-app-security/general-setup).
+Si no puede conectarse inmediatamente al portal, es posible que tenga que agregar la dirección IP a la lista de permitidos del firewall. Consulte [Configuración básica para Defender for Cloud Apps](/cloud-app-security/general-setup).
 
-Si sigues teniendo problemas, revisa [Requisitos de red](/cloud-app-security/network-requirements).
+Si sigue teniendo problemas, revise [Requisitos de red](/cloud-app-security/network-requirements).
 
 <a name="step-2"></a>
 
-## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Paso 2. Integrar con Microsoft Defender para endpoint
+## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Paso 2. Integración con Microsoft Defender para punto de conexión
 
-Microsoft Defender para Aplicaciones en la nube se integra con Microsoft Defender para Endpoint de forma nativa. La integración simplifica el lanzamiento de Cloud Discovery, amplía las capacidades de Cloud Discovery más allá de la red corporativa y habilita la investigación basada en dispositivos. Esta integración muestra los servicios y aplicaciones en la nube a los que se accede desde dispositivos administrados por WINDOWS 10 y Windows 11 dispositivos.
+Microsoft Defender for Cloud Apps se integra con Microsoft Defender para punto de conexión de forma nativa. La integración simplifica la implementación de Cloud Discovery, amplía las funcionalidades de Cloud Discovery más allá de la red corporativa y permite la investigación basada en dispositivos. Esta integración revela las aplicaciones en la nube y los servicios a los que se accede desde dispositivos de Windows 10 y Windows 11 administrados por TI.
 
-Si ya has configurado Microsoft Defender para Endpoint, configurar la integración con Defender para Aplicaciones en la nube es una alternancia en Microsoft 365 Defender. Una vez activada la integración, puedes volver al portal de Defender for Cloud Apps y ver datos enriquecidos en el Panel de detección de nube.
+Si ya ha configurado Microsoft Defender para punto de conexión, la configuración de la integración con Defender for Cloud Apps es un botón de alternancia en Microsoft 365 Defender. Una vez activada la integración, puede volver al portal de Defender for Cloud Apps y ver datos enriquecidos en el panel de Cloud Discovery.
 
-Para realizar estas tareas, consulte [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
+Para realizar estas tareas, consulte [Microsoft Defender para punto de conexión integración con Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
 
 <a name="step-3"></a>
 
-## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Paso 3. Implementar el recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy
+## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Paso 3. Implementación del recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy
 
-Para obtener cobertura en todos los dispositivos conectados a la red, implemente el recopilador de registros defender para aplicaciones en la nube en los firewalls y otros servidores proxy para recopilar datos de los puntos de conexión y enviarlos a Defender para aplicaciones en la nube para su análisis.
+Para obtener cobertura en todos los dispositivos conectados a la red, implemente el recopilador de registros de Defender for Cloud Apps en los firewalls y otros servidores proxy para recopilar datos de los puntos de conexión y enviarlos a Defender for Cloud Apps para su análisis.
 
-Si usa una de las siguientes puertas de enlace web seguras (SWG), Defender for Cloud Apps proporciona una implementación e integración perfectas:
+Si usa una de las siguientes puertas de enlace web seguras (SWG), Defender for Cloud Apps proporciona una implementación e integración sin problemas:
 
 - Zscaler
 - iboss
 - Corrata
 - Menlo Security
 
-Para obtener más información sobre la integración con estos dispositivos de red, consulte [Configurar la detección en la nube](/cloud-app-security/set-up-cloud-discovery).
+Para obtener más información sobre la integración con estos dispositivos de red, consulte [Configuración de Cloud Discovery](/cloud-app-security/set-up-cloud-discovery).
 
 <a name="step-4"></a>
 
-## <a name="step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization"></a>Paso 4. Ver el panel de detección en la nube para ver qué aplicaciones se usan en su organización
+## <a name="step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization"></a>Paso 4. Vea el panel de Cloud Discovery para ver qué aplicaciones se usan en su organización.
 
-El panel de detección de nube está diseñado para ofrecerte más información sobre cómo se usan las aplicaciones en la nube en tu organización. Proporciona una visión general general de los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización.
+El panel de Cloud Discovery está diseñado para proporcionarle más información sobre cómo se usan las aplicaciones en la nube en su organización. Proporciona una visión general de los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de su organización.
 
-Para empezar a usar el panel de detección en la nube, consulta [Trabajar con aplicaciones detectadas](/cloud-app-security/discovered-apps).
+Para empezar a usar el panel de Cloud Discovery, consulte [Trabajar con aplicaciones detectadas](/cloud-app-security/discovered-apps).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-Paso 3 de 3: [Piloto de Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-pilot.md)
+Paso 3 de 3: [Microsoft Defender for Cloud Apps piloto](eval-defender-mcas-pilot.md)
 
-Vuelva a la introducción a [Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
+Vuelva a la introducción para [Evaluar Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md)
