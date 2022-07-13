@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637791"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756757"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -40,6 +40,47 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener información sobre las características de Microsoft 365 que se lanzaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
+
+## <a name="june-2022"></a>Junio de 2022
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview](compliance-manager-alert-policies.md) : se han agregado tres roles ADD que tienen permisos para crear o editar directivas de alertas.
+- [Analizador de configuración para Microsoft Purview](compliance-manager-mcca.md) : nuevo nombre y vínculos de referencia actualizados para esta herramienta de introducción para el Administrador de cumplimiento anteriormente denominada "Analizador de configuración de cumplimiento de Microsoft".
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- Numerosas actualizaciones de páginas para las capturas de pantalla de marca de Microsoft Purview.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- En versión preliminar: [Microsoft Graph API para la administración de registros](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Solicitudes de derechos del sujeto](/privacy/priva/subject-rights-requests) : actualizaciones importantes y reestructuración del contenido de SRR para ayudar mejor a los usuarios en cada paso de progreso; detalles a continuación.
+  - [Obtenga información sobre Solicitudes de los interesados Priva](/privacy/priva/subject-rights-requests): articulación más clara de la propiedad de valor del cliente y el esquema general del proceso de SRR.
+  - [Comprender las páginas de flujo de trabajo y detalles](/privacy/priva/subject-rights-requests-workflow) : articula los pasos para completar una solicitud, indicar la progresión manual frente a la automática y vincular a contenido detallado; En una sección se explica cómo interpretar y trabajar con la página de detalles de una solicitud, incluida la nueva pestaña "Historial".
+  - [Cree una solicitud y defina la configuración de búsqueda](/privacy/priva/subject-rights-requests-create) : una nueva trama con subtítulos que explican que ahora hay dos maneras de crear una solicitud: a través de un método personalizado mediante un proceso guiado y a través de la nueva característica de usar una plantilla, cuyos parámetros de búsqueda tienen como objetivo recuperar el contenido más relevante para la situación.
+  - [Estimación y recuperación de datos](/privacy/priva/subject-rights-requests-data-retrieval) : explica por qué algunas solicitudes se detienen en la fase de estimación de datos y cómo ajustar la búsqueda como resultado; también explica cómo establecer una solicitud para pausar primero antes de avanzar automáticamente a la recuperación de datos.
+  - [Revisar los datos de una solicitud de derechos del interesado](/privacy/priva/subject-rights-requests-data-review) : las nuevas características de archivo de importación permiten a los usuarios traer archivos de ubicaciones que no son de Microsoft 365, o archivos que la búsqueda no ha recogido en caso contrario, en la pestaña Datos recopilados.
+  - [Generar informes y cerrar solicitudes](/privacy/priva/subject-rights-requests-reports) : aclara cuándo se generan los paquetes de datos finales y qué tipos de archivos incluyen.
+  - [Integrar y ampliar a través de Microsoft Graph API y Power Automate](/privacy/priva/subject-rights-requests-automate): se ha revisado el título de esta página anterior de Power Automate y se ha ampliado el contenido de la página para incluir Graph API contenido y vínculos de referencia que anteriormente residían en otra página.
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+- [Obtenga información sobre los tipos de información confidencial basados en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md) : se ha agregado una sección sobre los servicios que admite EDM.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- En versión preliminar: [compatibilidad con PDF para aplicaciones de Office](sensitivity-labels-office-apps.md#pdf-support), que incluye la conversión de documentos al formato PDF, la heredación de la etiqueta con cualquier marcado visual y cifrado. No se admite la impresión en PDF y esta opción deja de estar disponible para los usuarios si su directiva de etiquetas está configurada para el etiquetado obligatorio.
+- En versión preliminar: el cuadro de diálogo que los usuarios ven cuando su directiva de etiqueta está configurada para requerir una justificación para quitar o degradar una etiqueta se actualiza para advertir a los usuarios de que su respuesta con tipo no debe incluir datos confidenciales. En la captura de pantalla de la sección [¿Qué directivas de etiquetas pueden hacer](sensitivity-labels.md#what-label-policies-can-do) ?, se muestra este cuadro de diálogo actualizado que se abrirá paso a los canales de implementación de Office para su uso en producción.
+- En versión preliminar: [la compatibilidad con Outlook para aplicar la protección S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) está empezando a implementarse en todas las plataformas cliente.
+- Para [las directivas de etiquetado automático](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy), una nueva configuración que puede activar automáticamente la directiva si no se edita dentro de un número establecido de días.
+
+### <a name="trainable-classifiers"></a>Clasificadores capacitados
+
+- [Obtenga información sobre los clasificadores entrenables](classifier-learn-about.md) : se ha agregado un clasificador de imágenes entrenables para adultos, Racy y Gory.
 
 ## <a name="may-2022"></a>Mayo de 2022
 
@@ -179,7 +220,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 Para satisfacer los desafíos del área de trabajo descentralizada y rica en datos de hoy en día, presentamos [Microsoft Purview](https://aka.ms/microsoftpurview), un completo conjunto de soluciones que le ayuda a comprender, gobernar y proteger todo el patrimonio de datos. Esta nueva familia de marcas combina las funcionalidades de la antigua Mapa de datos de Microsoft Purview y la cartera de cumplimiento de Microsoft 365 en la que ya confían los clientes, lo que proporciona una gobernanza de datos unificada y administración de riesgos para su organización.
 
-| **Nombre anterior** | **Nombre nuevo** | **Description** |
+| **Nombre anterior** | **Nombre nuevo** | **Descripción** |
 |:----------------|:-------------|:----------------|
 | Auditoría avanzada de Microsoft 365 <br><br> Auditoría básica de Microsoft 365 | Auditoría de Microsoft Purview (Premium) <br><br> Auditoría de Microsoft Purview (estándar)| Las soluciones de auditoría proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Para obtener más información, consulte [Auditoría avanzada de Microsoft Purview (Premium)](advanced-audit.md) y [Auditoría avanzada de Microsoft Purview (estándar).](set-up-basic-audit.md) |
 | Cumplimiento de comunicaciones de Microsoft 365 | Cumplimiento de comunicaciones de Microsoft Purview | El cumplimiento de comunicaciones ayuda a minimizar los riesgos, ya que le ayuda a detectar, capturar y tomar medidas correctivas rápidamente para los canales de comunicación de la empresa y las infracciones de directivas. Para más información, consulte [Cumplimiento de comunicaciones de Microsoft Purview](communication-compliance-solution-overview.md). |
@@ -293,32 +334,3 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 - Nuevas [funcionalidades de supervisión](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) para directivas de etiquetado automático.
 - Implementación ahora: etiqueta predeterminada para documentos existentes y texto de justificación para Office en la Web.
 - Anunciado para julio Semi-Annual Enterprise Channel con la versión 2202+: Coautoría y auditoría para Outlook.
-
-## <a name="december-2021"></a>Diciembre de 2021
-
-### <a name="compliance-and-service-assurance"></a>Cumplimiento y garantía de servicio
-
-- [Notificación de infracción de Azure, Dynamics 365 y Windows en virtud del RGPD](/compliance/regulatory/gdpr-breach-notification) : se ha actualizado para aclarar que los clientes no necesitan usar un servicio de pago como Defender for Cloud para recibir notificaciones de seguridad y privacidad.
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Flujo de trabajo de eDiscovery (Premium) para contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) : se ha actualizado con una nueva guía de referencia rápida descargable para administrar el contenido de Teams en eDiscovery (Premium)
-
-### <a name="data-lifecycle-management"></a>Administración del ciclo de vida de los datos
-
-- [Habilitar buzones de archivo en el centro de cumplimiento](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) : se ha agregado una sección sobre la nueva herramienta de diagnóstico para buzones de archivo.
-- [Uso de la carga de red para importar archivos PST de la organización a Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) : la importación de PST ahora admite AzCopy v10
-- [Restauración de un buzón inactivo](restore-an-inactive-mailbox.md) : procedimiento revisado para restaurar un buzón inactivo agregando primero LegacyExchangeDN del buzón inactivo al buzón de destino
-
-### <a name="information-protection"></a>Protección de la información
-
-- [Implementación de una solución de protección de la información con Microsoft Purview](information-protection-solution.md): nueva guía paso a paso para los clientes que buscan una hoja de ruta prescriptiva para implementar Microsoft Purview Information Protection
-
-### <a name="retention-and-records-management"></a>Retención y administración de registros
-
-- Nuevas instrucciones sobre [cuánto tiempo tardan las directivas de retención en surtir efecto](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- Nueva configuración de inquilino que se implementa: una configuración de administración de registros que impide la edición de propiedades para elementos de SharePoint etiquetados que están marcados como un registro y bloqueados, y otra configuración para evitar que los usuarios desbloqueen elementos marcados como un registro
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- El etiquetado obligatorio y una etiqueta predeterminada para Power BI ahora están disponibles con carácter general (GA)

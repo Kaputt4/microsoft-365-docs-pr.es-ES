@@ -1,8 +1,8 @@
 ---
 title: Expertos en amenazas de Microsoft
 ms.reviewer: ''
-description: Expertos en amenazas de Microsoft proporciona una capa adicional de conocimiento para Microsoft Defender para punto de conexión.
-keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, Notificación de ataque dirigida
+description: Expertos en amenazas de Microsoft proporciona una capa adicional de experiencia para Microsoft Defender para punto de conexión.
+keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, notificación de ataque de punto de conexión, notificación de ataque de punto de conexión
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38e0145d1df971d651aab0be02c08e46ea70fe70
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490330"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756779"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -37,7 +37,7 @@ ms.locfileid: "66490330"
 
 Expertos en amenazas de Microsoft es un servicio de búsqueda de amenazas administrado que proporciona a los centros de operaciones de seguridad (SOC) supervisión y análisis de nivel experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierdan.
 
-Este servicio administrado de búsqueda de amenazas proporciona información y datos basados en expertos a través de estas dos funcionalidades: notificación de ataque dirigida y acceso a expertos a petición.
+Este servicio administrado de búsqueda de amenazas proporciona información y datos basados en expertos a través de estas dos funcionalidades: notificación de ataque de punto de conexión y acceso a expertos a petición.
 
 Vea este vídeo para obtener información sobre cómo Expertos en amenazas de Microsoft proporciona a los centros de operaciones de seguridad (SOC) supervisión y análisis de nivel experto y garantiza que no se pierda ninguna amenaza crítica. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
@@ -48,17 +48,17 @@ Vea este vídeo para obtener información sobre cómo Expertos en amenazas de Mi
 > Analice los requisitos de idoneidad con el proveedor de servicios técnicos de Microsoft y el equipo de cuentas antes de aplicar al servicio de búsqueda de amenazas administrado.
 > Expertos en amenazas no está disponible actualmente en las nubes de Microsoft 365 para gobiernos de Ee. UU.
 
-Si es un cliente Microsoft Defender para punto de conexión, debe solicitar **Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas de su entorno para que pueda responder a ellas rápidamente.
+Si es un cliente Microsoft Defender para punto de conexión, debe solicitar **notificaciones de ataque** de punto de conexión para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas del entorno para que pueda responder a ellas rápidamente.
 
-Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya a **Configuración** \> **Puntos de conexión** **Características** \> **avanzadas** \> generales \> **Expertos en amenazas de Microsoft - Notificaciones de ataque dirigidas** para aplicarlas. Una vez aceptado, obtendrá las ventajas de Las notificaciones de ataque dirigidas.
+Para inscribirse en las ventajas de las notificaciones de ataque de punto de conexión, vaya a **Configuración** \> **Puntos de conexión** **Características** \> **avanzadas** \> generales \> **Notificaciones de ataque de punto de conexión** para aplicar. Una vez aceptado, obtendrá las ventajas de las notificaciones de ataque de punto de conexión.
 
 Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft- Experts on Demand** para consultar a nuestros expertos en amenazas sobre las detecciones y adversarios pertinentes a los que se enfrenta su organización.
 
 Consulte [Configuración de funcionalidades de Expertos en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) para obtener más información.
 
-## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Expertos en amenazas de Microsoft: notificación de ataque dirigido
+## <a name="endpoint-attack-notification"></a>Notificación de ataque de punto de conexión
 
-Expertos en amenazas de Microsoft: la notificación de ataque dirigido proporciona búsqueda proactiva de las amenazas más importantes para la red, incluidas intrusiones de adversarios humanos, ataques de teclado práctico o ataques avanzados como el ciberespionaje. Estas notificaciones se muestran como una nueva alerta. El servicio de búsqueda administrada incluye:
+La notificación de ataque de punto de conexión proporciona búsqueda proactiva de las amenazas más importantes para la red, incluidas las intrusiones de adversarios humanos, los ataques con teclado práctico o ataques avanzados, como el ciberespionaje. Estas notificaciones se muestran como una nueva alerta. El servicio de búsqueda administrada incluye:
 
 - Supervisión y análisis de amenazas, lo que reduce el tiempo de permanencia y el riesgo para la empresa
 - Inteligencia artificial entrenada por hunter para detectar y priorizar ataques conocidos y desconocidos
@@ -67,9 +67,9 @@ Expertos en amenazas de Microsoft: la notificación de ataque dirigido proporcio
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Expertos en amenazas de Microsoft: expertos a petición
 
-Los clientes pueden interactuar con nuestros expertos en seguridad directamente desde Microsoft 365 Defender portal para obtener su respuesta. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde consultas de alertas, dispositivos potencialmente comprometidos, causa principal de una conexión de red sospechosa, hasta inteligencia adicional sobre amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
+Los clientes pueden interactuar con nuestros expertos en seguridad directamente desde Microsoft 365 Defender portal para obtener su respuesta. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde consultas de alertas, dispositivos potencialmente comprometidos, causa principal de una conexión de red sospechosa, hasta más inteligencia sobre amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
 
-- Obtenga aclaraciones adicionales sobre las alertas, incluida la causa principal o el ámbito del incidente.
+- Obtenga más aclaraciones sobre las alertas, incluida la causa principal o el ámbito del incidente.
 - Obtenga claridad sobre el comportamiento sospechoso del dispositivo y los pasos siguientes si se enfrenta a un atacante avanzado.
 - Determinación del riesgo y la protección con respecto a los actores de amenazas, las campañas o las técnicas de atacantes emergentes
 
@@ -98,6 +98,6 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## <a name="related-topic"></a>Tema relacionado
+## <a name="see-also"></a>Vea también
 
 - [Configuración de funcionalidades de Expertos en amenazas de Microsoft](configure-microsoft-threat-experts.md)

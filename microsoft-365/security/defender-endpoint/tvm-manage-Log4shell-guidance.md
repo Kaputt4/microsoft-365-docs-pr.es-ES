@@ -21,11 +21,11 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416495"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66766568"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Aprenda a administrar la vulnerabilidad de Log4Shell en Microsoft Defender para punto de conexión
 
@@ -42,7 +42,7 @@ La vulnerabilidad de Log4Shell es una vulnerabilidad de ejecución remota de có
 
 ## <a name="overview-of-discovery-monitoring-and-mitigation-capabilities"></a>Introducción a las funcionalidades de detección, supervisión y mitigación
 
-Amenazas y administración de vulnerabilidades proporciona las siguientes funcionalidades para ayudarle a identificar, supervisar y mitigar la exposición de la organización a la vulnerabilidad de Log4Shell:
+La administración de amenazas y vulnerabilidades proporciona las siguientes funcionalidades para ayudarle a identificar, supervisar y mitigar la exposición de la organización a la vulnerabilidad de Log4Shell:
 
 - **Detección**: la detección de dispositivos expuestos, tanto Microsoft Defender para punto de conexión dispositivos incorporados como dispositivos que se han detectado pero que aún no se han incorporado, se basa en el software vulnerable y en los archivos vulnerables detectados en el disco.
 - **Reconocimiento de amenazas:** Una vista consolidada para evaluar la exposición de la organización. Esta vista muestra la exposición en el nivel de dispositivo y de software, y proporciona acceso a detalles sobre archivos vulnerables como, por ejemplo, la última vez que se vio, la última vez que se ejecutó y la última vez que se ejecutó con puertos abiertos. Puede usar esta información para priorizar las acciones de corrección. Los datos relacionados con dispositivos expuestos pueden tardar hasta 24 horas en aparecer en el panel.
@@ -54,7 +54,7 @@ Amenazas y administración de vulnerabilidades proporciona las siguientes funcio
 >
 > La compatibilidad con Linux requiere Microsoft Defender para punto de conexión cliente Linux versión 101.52.57 (30.121092.15257.0) o posterior.
 >
-> La compatibilidad con macOS requiere Microsoft Defender para punto de conexión macOS versión de cliente 20.121111.15416.0 o posterior.
+> La compatibilidad con macOS requiere Microsoft Defender para punto de conexión cliente de macOS versión 20.121111.15416.0 o posterior.
 >
 >Para obtener más información sobre las versiones [admitidas, consulte Plataformas y funcionalidades de sistemas operativos compatibles](tvm-supported-os.md).
 
@@ -64,11 +64,11 @@ Las funcionalidades de Administración de amenazas y vulnerabilidades insertadas
 
 Los dispositivos incorporados se evalúan mediante funcionalidades de Administración de amenazas y vulnerabilidades incrustadas existentes que pueden detectar archivos y software vulnerables.
 
-Para la detección en dispositivos detectados pero aún no incorporados, la detección de Log4j debe estar habilitada. Esto iniciará los sondeos de la misma manera que la detección de dispositivos sondea activamente la red. Esto incluye sondear desde varios puntos de conexión incorporados (dispositivos Windows 10+ y Windows Server 2019+) y solo sondear dentro de subredes, para detectar dispositivos vulnerables y expuestos de forma remota a CVE-2021-44228.
+Para la detección en dispositivos detectados pero aún no incorporados, la detección de Log4j debe estar habilitada. Esto iniciará los sondeos de la misma manera que la detección de dispositivos sondea activamente la red. Esto incluye sondeo desde varios puntos de conexión incorporados (dispositivos Windows 10+ y Windows Server 2019+) y solo sondeos dentro de subredes, para detectar dispositivos vulnerables y expuestos de forma remota a CVE-2021-44228.
 
 Para habilitar la detección de Log4:
 
-1. Vaya a **Configuración** >  **Configuración** **de detección de** dispositivos  > 
+1. Vaya a **Configuración Configuración de** > **detección de dispositivos** > 
 2. Seleccione **Habilitar detección de Log4j2 (CVE-2021-44228)**
 3. Seleccione **Guardar**.
 
@@ -83,12 +83,12 @@ Por ejemplo, User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} d
 
 ## <a name="vulnerable-software-and-files-detection"></a>Detección de archivos y software vulnerables
 
-Amenazas y administración de vulnerabilidades proporciona capas de detección para ayudarle a detectar:
+La administración de amenazas y vulnerabilidades proporciona capas de detección para ayudarle a detectar:
 
 - **Software vulnerable**: la detección se basa en las enumeraciones de Common Platform (CPE) de aplicaciones instaladas que se sabe que son vulnerables a la ejecución remota de código de Log4j.
 - **Archivos vulnerables:** Se evalúan tanto los archivos en memoria como los archivos del sistema de archivos. Estos archivos pueden ser archivos jar log4j-core con la versión vulnerable conocida o un Uber-JAR que contiene una clase de búsqueda jndi vulnerable o un archivo log4j-core vulnerable. En concreto, lo siguiente:
 
-  - determina si un archivo JAR contiene un archivo Log4j vulnerable examinando los archivos JAR y buscando el siguiente archivo: \\META-INFmavenorg.apache.logging.log4jlog4j-corepom.properties\\\\\\\\: si este archivo existe, la versión log4j se lee y extrae.
+  - determina si un archivo JAR contiene un archivo Log4j vulnerable examinando los archivos JAR y buscando el siguiente archivo:   \\META-INF\\maven\\org.apache.logging.log4j\\log4j log4j-core\\pom.properties: si este archivo existe, la versión de Log4j se lee y extrae.
   - busca el archivo JndiLookup.class dentro del archivo JAR buscando rutas de acceso que contengan la cadena "/log4j/core/lookup/JndiLookup.class": si el archivo JndiLookup.class existe, Administración de amenazas y vulnerabilidades determina si este archivo JAR contiene un archivo Log4j con la versión definida en pom.properties.
   - busca los archivos JAR de Log4j-core vulnerables insertados dentro de un archivo JAR anidado mediante la búsqueda de rutas de acceso que contengan cualquiera de estas cadenas:
     - lib/log4j-core-
@@ -97,7 +97,7 @@ Amenazas y administración de vulnerabilidades proporciona capas de detección p
 
 En esta tabla se describen las funcionalidades de búsqueda compatibles con plataformas y versiones:
 
-|Funcionalidad|Tipo de archivo|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux + macOS|
+|Funcionalidad|Tipo de archivo|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux y macOS|
 |:---|:---|:---|:---|:---|:---|
 |Buscar en memoria  | Log4j-core | Sí |Sí<sup>[1]| - | Sí |
 | |Uber-JARs | Sí |Sí<sup>[1]| - | Sí |
@@ -108,12 +108,12 @@ En esta tabla se describen las funcionalidades de búsqueda compatibles con plat
 
 ## <a name="learn-about-your-log4shell-exposure-and-mitigation-options"></a>Más información sobre las opciones de mitigación y exposición de Log4Shell
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Panel de amenazas y administración de vulnerabilidades
+### <a name="threat-and-vulnerability-management-dashboard"></a>Panel de administración de amenazas y vulnerabilidades
 
 Use el panel Administración de amenazas y vulnerabilidades para ver la exposición actual.
 
-1. En el portal de Microsoft 365 Defender, vaya a Administración  >  de **vulnerabilidadesDashboardThreat** >  **awareness:**
-:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness widget on the administración de vulnerabilidades dashboard" lightbox="images/awareness_dashboard.png"::: 
+1. En el portal de Microsoft 365 Defender, vaya a Reconocimiento de amenazas del **panel** >  **de administración** >  de vulnerabilidades **:**
+ :::image type="content" source="images/awareness_dashboard.png" alt-text="El widget de reconocimiento de amenazas en el panel de administración de vulnerabilidades" lightbox="images/awareness_dashboard.png":::
 2. Seleccione **Ver detalles de vulnerabilidad** para ver la vista consolidada de la exposición de la organización.
 :::image type="content" source="images/view_vulnerability_details.png" alt-text="Página de detalles de vulnerabilidad para CVE-2021-44228 (Log4j)" lightbox="images/view_vulnerability_details.png":::
 3. Elija la pestaña correspondiente para ver la exposición desglosada por:
@@ -145,8 +145,8 @@ En la tabla siguiente se enumeran los posibles estados de mitigación:
 |:---|:---|
 | Solución alternativa aplicada | _Windows_: se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS antes del reinicio del dispositivo más reciente. <br/><br/> _Linux + macOS_: todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
 | Solución alternativa pendiente de reinicio | Se establece la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS, pero no se ha detectado ningún reinicio siguiente. |
-| No aplicado | _Windows_: No se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS. <br/><br/> _Linux + macOS_: no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno y la acción de mitigación no se aplicó en el dispositivo. |
-| Parcialmente mitigado | _Linux + macOS_: aunque se aplicó una acción de mitigación en el dispositivo, no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
+| No aplicado | _Windows_: no se observó la variable de entorno LOG4J_FORMAT_MSG_NO_LOOKUPS. <br/><br/> _Linux y macOS_: no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno y la acción de mitigación no se aplicó en el dispositivo. |
+| Parcialmente mitigado | _Linux y macOS_: aunque se aplicó una acción de mitigación en el dispositivo, no todos los procesos en ejecución tienen LOG4J_FORMAT_MSG_NO_LOOKUPS=true en sus variables de entorno. |
 |No aplicable | Dispositivos que tienen archivos vulnerables que no están en el intervalo de versiones de la mitigación. |
 |Unknown | El estado de mitigación no se pudo determinar en este momento. |
 
@@ -160,7 +160,7 @@ En los casos en los que es necesario revertir la mitigación, siga estos pasos:
 **_Para Windows:_**
 
 1. Abrir una ventana de PowerShell con privilegios elevados
-2. Ejecute el siguiente comando:
+2. Ejecute el comando siguiente:
 
  ```Powershell
    [Environment]::SetEnvironmentVariable("LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS", $null,[EnvironmentVariableTarget]::Machine)
@@ -170,15 +170,15 @@ El cambio surtirá efecto después de reiniciar el dispositivo.
 
 **_Para Linux:_**
 
-1. Abra el archivo /etc/environment y elimine la línea LOG4JFORMATMSGNOLOOKUPS\_\_\_\_=true.
-2. Eliminar el archivo /etc/systemd/system.conf.d/log4jdisablejndilookups.conf\_\_\_
-3. Elimine el archivo /etc/systemd/user.conf.d/log4jdisablejndilookups.conf\_\_\_
+1. Abra el archivo /etc/environment y elimine la línea LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS=true
+2. Elimine el archivo /etc/systemd/system.conf.d/log4j\_disable\_jndi\_lookups.conf
+3. Elimine el archivo /etc/systemd/user.conf.d/log4j\_disable\_jndi\_lookups.conf
 
 El cambio surtirá efecto después de reiniciar el dispositivo.
 
 **_Para macOS:_**
 
-Quite el archivo setenv. LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ de las carpetas siguientes:
+Quite el archivo setenv. LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist de las carpetas siguientes:
 
 - */Library/LaunchDaemons/*
 - */Library/LaunchAgents/*
@@ -236,5 +236,5 @@ Puede usar la siguiente consulta de búsqueda avanzada para identificar vulnerab
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Información general sobre amenazas y administración de vulnerabilidades](http://next-gen-threat-and-vuln-mgt.md)
+- [Introducción a la administración de amenazas y vulnerabilidades](http://next-gen-threat-and-vuln-mgt.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d3b6cee3212ea7d98782a9e073343321c31c8990
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 860c1cd36568705b2646cf14b6fea071af4a19a5
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750328"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756613"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Compatibilidad del Antivirus de Microsoft Defender con otros productos de seguridad
 
@@ -107,6 +107,8 @@ En la tabla siguiente se resume el estado del Antivirus de Microsoft Defender en
 - Tipo: `REG_DWORD`
 - Valor: `1`
 
+Puede ver el estado de protección en PowerShell mediante el comando [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus). Compruebe el valor de `AMRunningMode`. Debería ver El modo de bloqueo **normal**, **pasivo** o **EDR** si antivirus de Microsoft Defender está habilitado en el punto de conexión. 
+
  > [!NOTE]
  > Para que el modo pasivo funcione en puntos de conexión que ejecutan Windows Server 2016 y Windows Server 2012 R2, esos puntos de conexión deben incorporarse con la solución moderna y unificada que se describe en [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
@@ -176,9 +178,14 @@ Defender para punto de conexión afecta a si el Antivirus de Microsoft Defender 
 
 ## <a name="how-to-confirm-the-state-of-microsoft-defender-antivirus"></a>Cómo confirmar el estado del Antivirus de Microsoft Defender
 
-Puede usar uno de varios métodos para confirmar el estado del Antivirus de Microsoft Defender:
+Puede usar uno de varios métodos para confirmar el estado del Antivirus de Microsoft Defender. Puede:
 
-### <a name="use-the-windows-security-app"></a>Uso de la aplicación Seguridad de Windows
+- [Use la aplicación Seguridad de Windows para identificar la aplicación antivirus](#use-the-windows-security-app-to-identify-your-antivirus-app).
+- [Use el Administrador de tareas para confirmar que el Antivirus de Microsoft Defender se está ejecutando](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell para confirmar que el Antivirus de Microsoft Defender se está ejecutando](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Use Windows PowerShell para confirmar que se está ejecutando la protección antivirus](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>Usar la aplicación Seguridad de Windows para identificar la aplicación antivirus
 
 1. En un dispositivo Windows, abra la aplicación Seguridad de Windows.
 
@@ -188,7 +195,7 @@ Puede usar uno de varios métodos para confirmar el estado del Antivirus de Micr
 
 4. En la página **Proveedores de seguridad** , en **Antivirus**, debería ver que **Antivirus de Microsoft Defender está activado**.
 
-### <a name="use-task-manager"></a>Uso del Administrador de tareas
+### <a name="use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running"></a>Uso del Administrador de tareas para confirmar que el Antivirus de Microsoft Defender se está ejecutando
 
 1. En un dispositivo Windows, abra la aplicación Administrador de tareas.
 

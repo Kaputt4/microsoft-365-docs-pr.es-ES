@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5440dcd91ac32dcc11f9f7c44c404b81d57a0c73
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641029"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756814"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Actualizar dispositivos Windows a Windows 10 Pro
 
@@ -81,6 +81,6 @@ Puede elegir entre varios métodos para actualizar:
 
 [Activar Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](../admin/admin-video-library.yml)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/?linkid=2197659)
 
 
