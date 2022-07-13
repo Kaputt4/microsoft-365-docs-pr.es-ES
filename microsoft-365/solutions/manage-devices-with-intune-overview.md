@@ -17,14 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-overview
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 1f5b512c18c1ca6014881f93714320a6887bd9df
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 40e4e87b7a0d955c41a130ae512913b3a1133688
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923376"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748041"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -65,7 +66,7 @@ En esta ilustración:
 
 |&nbsp;|Paso|Descripción|Requisitos de licencias|
 |---|---|---|---|
-|1 |Configurar el punto de partida de directivas de acceso de dispositivos e identidad de Confianza cero|Trabajar con el administrador de identidades para [**Implementar la protección de datos de directivas de protección de aplicaciones (APP) de nivel 2**](manage-devices-with-intune-app-protection.md). Estas directivas no requieren que administres dispositivos. Las directivas de APP se configuran en Intune. El administrador de identidades configura una directiva de acceso condicional para requerir las aplicaciones aprobadas.|E3, E5, F1, F3, F5|
+|1|Configurar el punto de partida de directivas de acceso de dispositivos e identidad de Confianza cero|Trabajar con el administrador de identidades para [**Implementar la protección de datos de directivas de protección de aplicaciones (APP) de nivel 2**](manage-devices-with-intune-app-protection.md). Estas directivas no requieren que administres dispositivos. Las directivas de APP se configuran en Intune. El administrador de identidades configura una directiva de acceso condicional para requerir las aplicaciones aprobadas.|E3, E5, F1, F3, F5|
 |2|Inscribir dispositivos en Intune|Esta tarea requiere más planeamiento y tiempo para implementar. Microsoft recomienda usar Intune para inscribir dispositivos, ya que esta herramienta proporciona una integración óptima. Hay varias opciones para inscribir dispositivos, en función de la plataforma. Por ejemplo, los dispositivos Windows se pueden inscribir mediante Azure AD Join o Autopilot. Debe revisar las opciones de cada plataforma y decidir qué opción de inscripción es la mejor para su entorno. Consulte [**Paso 2. Inscribir dispositivos en Intune**](manage-devices-with-intune-enroll.md) para obtener más información.|E3, E5, F1, F3, F5|
 |3|Configurar directivas de cumplimiento|Quieres asegurarte de que los dispositivos que tienen acceso a tus aplicaciones y datos cumplen los requisitos mínimos, por ejemplo, los dispositivos están protegidos con contraseña o patillas y el sistema operativo está actualizado. Las directivas de cumplimiento son la manera de definir los requisitos que los dispositivos deben cumplir. [**Paso 3. Configurar directivas de cumplimiento**](manage-devices-with-intune-compliance-policies.md) ayuda a configurar estas directivas.|E3, E5, F3, F5|
 |4 |Configurar directivas de acceso a dispositivos e identidades de Enterprise (recomendado) de Confianza cero|Ahora que los dispositivos están inscritos, puede trabajar con el administrador de identidades para [**ajustar directivas de acceso condicional y requerir dispositivos correctos y compatibles**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
