@@ -15,18 +15,19 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651375"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750306"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Paso 3. Configurar directivas de cumplimiento para dispositivos con Intune
 
-La inscripción de dispositivos para Intune le ofrece la capacidad de lograr una mayor seguridad y control de los datos en su entorno. [Paso 2. Inscriba dispositivos para Intune](manage-devices-with-intune-enroll.md) detalles sobre cómo hacerlo mediante Intune. En este artículo se describe el paso siguiente, que consiste en configurar directivas de cumplimiento de dispositivos. 
+La inscripción de dispositivos en Intune le ofrece la posibilidad de lograr una mayor seguridad y control de los datos en su entorno. [Paso 2. Inscribir dispositivos en Intune](manage-devices-with-intune-enroll.md) detalla cómo hacerlo mediante Intune. En este artículo se describe el paso siguiente, que consiste en configurar directivas de cumplimiento de dispositivos. 
 
 ![Pasos para administrar dispositivos](../media/devices/intune-mdm-step-2.png#lightbox)
 
