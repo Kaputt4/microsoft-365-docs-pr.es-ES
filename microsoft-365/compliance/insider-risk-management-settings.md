@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d830da841eb67db19e81cdf6a0e079c2161ae9d9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5e9f9eb04d2fb239c69aacd8927cde7f295c7716
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625201"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787548"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -85,7 +85,7 @@ Para definir los indicadores de directivas de riesgo internos que están habilit
 ### <a name="enable-device-indicators-and-onboard-windows-devices"></a>Habilitación de indicadores de dispositivo e incorporación de dispositivos Windows
 <a name="OnboardDevices"> </a>
 
-Para habilitar la supervisión de actividades de riesgo en dispositivos Windows e incluir indicadores de directivas para estas actividades, los dispositivos Windows deben cumplir los siguientes requisitos y debe completar los siguientes pasos de incorporación.
+Para habilitar la detección de actividades de riesgo en dispositivos Windows e incluir indicadores de directiva para estas actividades, los dispositivos Windows deben cumplir los siguientes requisitos y debe completar los siguientes pasos de incorporación.
 
 #### <a name="step-1-prepare-your-endpoints"></a>Paso 1: Preparación de los puntos de conexión
 
@@ -206,7 +206,7 @@ A las actividades de usuario detectadas por las directivas de riesgo internos se
 En función de los tipos de señales que le interesen, puede optar por importar alertas a la administración de riesgos internos en función del estado de evaluación de prioridades de alertas de Defender para punto de conexión. Puede definir uno o varios de los siguientes estados de evaluación de prioridad de alertas en la configuración global que se va a importar:
 
 - Unknown
-- Nueva
+- Nuevo
 - En curso
 - Resuelto
 
@@ -257,7 +257,7 @@ La información de alerta contiene información del esquema de alertas de seguri
 
 Los siguientes campos y valores se exportan para las alertas de administración de riesgos internos para el esquema de alertas de cumplimiento de seguridad &:
 
-| **Parámetro de alerta** | **Description** |
+| **Parámetro de alerta** | **Descripción** |
 |:------------------|:----------------|
 | AlertType | El tipo de la alerta es *Custom*.  |
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos internos son mutables. A medida que cambia el estado de la alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
@@ -348,7 +348,7 @@ La identificación del acceso a recursos físicos prioritarios y la correlación
 
 Con los recursos físicos prioritarios habilitados y el [conector de datos de badging físico](import-physical-badging-data.md) configurado, la administración de riesgos internos integra las señales de los sistemas de control físico y acceso con otras actividades de riesgo del usuario. Al examinar patrones de comportamiento en los sistemas de acceso físico y correlacionar estas actividades con otros eventos de riesgo internos, la administración de riesgos internos puede ayudar a los investigadores y analistas de cumplimiento a tomar decisiones de respuesta más informadas para las alertas. El acceso a los recursos físicos prioritarios se puntúa e identifica en la información de forma diferente del acceso a los recursos que no son prioritarios.
 
-Por ejemplo, su organización tiene un sistema de badging para los usuarios que supervisan y aprueban el acceso físico a áreas normales de trabajo y proyectos confidenciales. Tiene varios usuarios trabajando en un proyecto confidencial y estos usuarios volverán a otras áreas de la organización cuando se complete el proyecto. A medida que el proyecto confidencial está a punto de finalizar, quiere asegurarse de que el trabajo del proyecto sigue siendo confidencial y de que el acceso a las áreas del proyecto está estrechamente controlado.
+Por ejemplo, su organización tiene un sistema de badging para los usuarios que rigen y aprueban el acceso físico a áreas normales de trabajo y proyectos confidenciales. Tiene varios usuarios trabajando en un proyecto confidencial y estos usuarios volverán a otras áreas de la organización cuando se complete el proyecto. A medida que el proyecto confidencial está a punto de finalizar, quiere asegurarse de que el trabajo del proyecto sigue siendo confidencial y de que el acceso a las áreas del proyecto está estrechamente controlado.
 
 Elija habilitar el conector de datos de badging físico en Microsoft 365 para importar información de acceso desde el sistema de falsificación física y especificar los recursos físicos prioritarios en la administración de riesgos internos. Al importar información desde el sistema de desajuste y correlacionar la información de acceso físico con otras actividades de riesgo identificadas en la administración de riesgos internos, observa que uno de los usuarios del proyecto accede a las oficinas del proyecto después del horario laboral normal y también exporta grandes cantidades de datos a un servicio de almacenamiento en la nube personal desde su área de trabajo normal. Esta actividad de acceso físico asociada a la actividad en línea puede apuntar a posibles robos de datos y los investigadores y analistas de cumplimiento pueden tomar las acciones adecuadas según las circunstancias de este usuario.
 
