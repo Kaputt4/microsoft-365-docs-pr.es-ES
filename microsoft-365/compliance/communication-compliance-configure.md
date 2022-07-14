@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8030a842f36f30fdc267a81e4736abdf8f4328f5
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685907"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787680"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -159,11 +159,11 @@ Use el siguiente gráfico para ayudarle a configurar grupos en su organización 
 |Usuarios supervisados <br> Usuarios excluidos | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo <br> Grupos de Microsoft 365 con pertenencia dinámica |
 | Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo |
 
-Al asignar un *grupo de distribución* en la directiva, la directiva supervisa todos los correos electrónicos y chats de Teams de cada usuario del *grupo de distribución*. Al asignar un *grupo de Microsoft 365* en la directiva, la directiva detecta todos los correos electrónicos y chats de Teams enviados al *grupo de Microsoft 365*, no los correos electrónicos y chats individuales recibidos por cada miembro del grupo. Se recomienda usar grupos de distribución en directivas de cumplimiento de comunicaciones para que los correos electrónicos individuales y los chats de Teams de cada usuario se supervisen automáticamente.
+Al asignar un *grupo de distribución* en la directiva, la directiva detecta todos los correos electrónicos y chats de Teams de cada usuario del *grupo de distribución*. Al asignar un *grupo de Microsoft 365* en la directiva, la directiva detecta todos los correos electrónicos y chats de Teams enviados al *grupo de Microsoft 365*, no los correos electrónicos y chats individuales recibidos por cada miembro del grupo. Se recomienda usar grupos de distribución en directivas de cumplimiento de comunicaciones para que se detecten automáticamente correos electrónicos individuales y chats de Teams de cada usuario.
 
-Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea detectar chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Más adelante en estos pasos, asignará este grupo de distribución como la selección usuarios **y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea detectar chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para los usuarios con buzones locales o externos. Más adelante en estos pasos, asignará este grupo de distribución como la selección usuarios **y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que tenga que supervisar todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite supervisar miles de usuarios con una sola directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que los nuevos empleados se unan a su organización.
+Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que tenga que detectar mensajes para todos los usuarios de grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite detectar mensajes para miles de usuarios con una sola directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que nuevos empleados se unan a su organización.
 
 1. Cree un [grupo de distribución](/powershell/module/exchange/new-distributiongroup) dedicado para la directiva de cumplimiento de comunicaciones global con las siguientes propiedades: Asegúrese de que este grupo de distribución no se usa para otros fines u otros servicios de Office 365.
 
@@ -226,7 +226,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, con
 
     - Confirme o actualice el nombre de la directiva. Los nombres de las directivas no se pueden cambiar una vez se crea la directiva.
 
-    - Elija los usuarios o grupos que desea supervisar, incluidos los usuarios o grupos que desea excluir. Al usar la plantilla de conflicto de intereses, seleccionará dos grupos o dos usuarios para supervisar las comunicaciones internas.
+    - Elija los usuarios o grupos que desea supervisar, incluidos los usuarios o grupos que desea excluir. Al usar la plantilla de conflicto de intereses, seleccionará dos grupos o dos usuarios para detectar las comunicaciones internas.
 
     - Elija los revisores de la directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online. Los revisores agregados aquí son los revisores entre los que puede elegir al escalar una alerta en el flujo de trabajo de investigación y corrección. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
@@ -294,7 +294,7 @@ También puede optar por habilitar la anonimización de los nombres de usuario m
 
 4. Para habilitar la anonimización, seleccione **Mostrar versiones anónimas de nombres de usuario**.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Vaya a la pestaña **Plantillas de aviso** y seleccione **Crear plantilla de aviso**.
 

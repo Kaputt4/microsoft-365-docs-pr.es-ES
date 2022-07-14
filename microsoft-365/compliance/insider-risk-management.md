@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622841"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787218"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -89,7 +89,7 @@ La identificación y resolución de actividades de riesgo internas y problemas d
 
 ### <a name="policies"></a>Directivas
 
-[Las directivas de administración de riesgos](insider-risk-management-policies.md) internos se crean mediante plantillas predefinidas y condiciones de directiva que definen qué eventos desencadenantes e indicadores de riesgo se examinan en su organización. Estas condiciones incluyen cómo se usan los indicadores de riesgo para las alertas, qué usuarios se incluyen en la directiva, qué servicios se priorizan y el período de tiempo de supervisión.
+[Las directivas de administración de riesgos](insider-risk-management-policies.md) internos se crean mediante plantillas predefinidas y condiciones de directiva que definen qué eventos desencadenantes e indicadores de riesgo se examinan en su organización. Estas condiciones incluyen cómo se usan los indicadores de riesgo para las alertas, qué usuarios se incluyen en la directiva, qué servicios se priorizan y el período de tiempo de detección.
 
 Puede seleccionar entre las siguientes plantillas de directiva para empezar a trabajar rápidamente con la administración de riesgos internos:
 
@@ -141,7 +141,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo [registro de auditoría (versión preliminar)](insider-risk-management-audit-log.md) le permite mantenerse informado de las acciones que se realizaron en las características de administración de riesgos internos. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos internos.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez investigados los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente las condiciones de la directiva, se puede enviar al usuario un aviso sencillo desde las plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios simples o pueden dirigir al usuario a un entrenamiento de actualización o una guía para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

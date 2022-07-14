@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 544c31205469bcb810bd3f05d9f686d650df6269
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a671e25dabf5dc9c526e6e3a931a71035b908cc3
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638199"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787834"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos internos
 
@@ -25,9 +25,9 @@ El registro de auditoría de administración de riesgos internos le permite mant
 
 ![Registro de auditoría de administración de riesgos internos.](../media/insider-risk-audit-log.png)
 
-El registro de auditoría se actualiza de forma automática e inmediata cada vez que se producen actividades supervisadas y el registro conserva información sobre la actividad durante 180 días (aproximadamente seis meses). Después de 180 días, los datos de la actividad se eliminan permanentemente del registro.
+El registro de auditoría se actualiza de forma automática e inmediata cada vez que se producen actividades detectadas y el registro conserva información sobre la actividad durante 180 días (aproximadamente seis meses). Después de 180 días, los datos de la actividad se eliminan permanentemente del registro.
 
-Las áreas incluidas en la supervisión de la actividad incluyen:
+Las áreas incluidas en la detección de actividad incluyen:
 
 - Directivas
 - Casos
@@ -43,7 +43,7 @@ Para ver y exportar datos desde el registro de auditoría, los usuarios deben es
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Visualización de la actividad en el registro de auditoría de riesgos internos
 
-Para ver la actividad de características supervisada para la administración de riesgos internos, vaya a y seleccione el vínculo **Registro de auditoría de riesgos** internos en el área superior derecha de cualquier pestaña de administración de riesgos internos. De forma predeterminada, verá la siguiente información para las actividades de administración de riesgos internos:
+Para ver la actividad de características detectada para la administración de riesgos internos, vaya a y seleccione el vínculo **Registro de auditoría de riesgos** internos en el área superior derecha de cualquier pestaña de administración de riesgos internos. De forma predeterminada, verá la siguiente información para las actividades de administración de riesgos internos:
 
 - **Actividad:** Descripción de la actividad realizada dentro de la solución de administración de riesgos internos por un usuario.
 - **Categoría:** Área o elemento donde se realizó la actividad. Por ejemplo, verá *Directivas* como la categoría cuando se realizaron actividades de cambio de directiva.

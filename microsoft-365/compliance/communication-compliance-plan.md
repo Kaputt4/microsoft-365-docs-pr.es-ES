@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 71537e949d68d2171d3c3fb0f6dff5d55fe5b3bf
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686193"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787086"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -62,7 +62,7 @@ Identifique las partes interesadas adecuadas de su organización para colaborar 
 
 ### <a name="permissions"></a>Permisos
 
-Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos con una cadencia regular en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/). Asegúrese de comprender cómo va a asignar usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
+Seleccione partes interesadas dedicadas para investigar y revisar las alertas y los casos con una cadencia regular en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/). Asegúrese de comprender cómo va a asignar usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
 
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
@@ -111,7 +111,7 @@ Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos para usuarios y revisores supervisados
 
-Para simplificar la configuración, cree grupos para las personas que necesitan revisar sus comunicaciones y grupos para las personas que revisan esas comunicaciones. Si usa grupos, es posible que necesite varios. Por ejemplo, si quiere examinar las comunicaciones entre dos grupos distintos de personas, o si desea especificar un grupo que no esté supervisado. Al asignar un grupo de distribución en la directiva, la directiva supervisa todos los correos electrónicos de cada usuario del grupo distribución. Al asignar un grupo de Microsoft 365 en la directiva, la directiva supervisa todos los correos electrónicos enviados a ese grupo, no los correos electrónicos individuales recibidos por cada miembro del grupo.
+Para simplificar la configuración, cree grupos para las personas que necesitan revisar sus comunicaciones y grupos para las personas que revisan esas comunicaciones. Si usa grupos, es posible que necesite varios. Por ejemplo, si quiere examinar las comunicaciones entre dos grupos distintos de personas, o si desea especificar un grupo que no esté supervisado. Al asignar un grupo de distribución en la directiva, la directiva detecta todos los correos electrónicos de cada usuario del grupo distribución. Al asignar un grupo de Microsoft 365 en la directiva, la directiva detecta todos los correos electrónicos enviados a ese grupo, no los correos electrónicos individuales recibidos por cada miembro del grupo.
 
 La adición de grupos y listas de distribución a las directivas de cumplimiento de comunicaciones forma parte de las condiciones y reglas generales establecidas, por lo que el número máximo de grupos y listas de distribución que admite una directiva varía en función del número de condiciones que también se agreguen a la directiva. Cada directiva debe admitir aproximadamente 20 grupos o listas de distribución, en función del número de condiciones adicionales presentes en la directiva.
 
@@ -139,8 +139,8 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 
 - Considere la posibilidad de agregar todos los usuarios de la organización como en el ámbito de las directivas de cumplimiento de comunicaciones. La identificación de usuarios específicos como en el ámbito de las directivas individuales es útil en algunas circunstancias, pero la mayoría de las organizaciones deben incluir a todos los usuarios en las directivas de cumplimiento de comunicaciones optimizadas para la detección de acoso o discriminación.
 - Configure el porcentaje de comunicaciones que se van a revisar al 100 % para asegurarse de que las directivas detectan todos los problemas que preocupan en las comunicaciones de su organización.
-- Puede examinar las comunicaciones de [orígenes de terceros](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) en busca de datos importados en buzones de su organización de Microsoft 365. Para incluir la revisión de las comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que los mensajes que cumplan las condiciones de la directiva se supervisen mediante la directiva de comunicación.
-- Las directivas pueden admitir lenguajes de supervisión distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [diccionario de palabras clave personalizadas](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) de palabras ofensivas en el idioma que prefiera o cree su propio modelo de aprendizaje automático mediante [clasificadores entrenables](/microsoft-365/compliance/classifier-get-started-with) en Microsoft 365.
+- Puede examinar las comunicaciones de [orígenes de terceros](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) en busca de datos importados en buzones de su organización de Microsoft 365. Para incluir la revisión de las comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que la directiva de comunicación detecte los mensajes que cumplen las condiciones de la directiva.
+- Las directivas pueden admitir la detección de idiomas distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [diccionario de palabras clave personalizadas](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) de palabras ofensivas en el idioma que prefiera o cree su propio modelo de aprendizaje automático mediante [clasificadores entrenables](/microsoft-365/compliance/classifier-get-started-with) en Microsoft 365.
 - Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Detecte palabras clave específicas mediante [condiciones de directiva](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) de cumplimiento de comunicaciones o detecte tipos específicos de información con [tipos de información confidencial personalizados](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>Tutorial sobre la creación de una directiva de cumplimiento de comunicaciones

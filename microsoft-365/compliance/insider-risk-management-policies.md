@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 22682a801123d4f8c24cbc11e2d0e35d42228bba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627291"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787878"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -340,7 +340,7 @@ Siga los siguientes pasos para administrar una directiva existente:
 2. En el panel de directivas, seleccione la directiva que desea administrar.
 3. En la página de detalles de la directiva, seleccione **Editar directiva**
 4. En el Asistente para directivas, no puede editar lo siguiente:
-    - **Plantilla de la directiva**: la plantilla utilizada para definir los tipos de indicadores de riesgo supervisados por la directiva.
+    - **Plantilla de directiva**: plantilla que se usa para definir los tipos de indicadores de riesgo detectados por la directiva.
     - **Nombre**: el nombre amigable para la directiva.
 5. En la página **Nombre y descripción**, actualice la descripción de la directiva en el campo **Descripción**.
 6. Seleccione **Siguiente** para continuar.

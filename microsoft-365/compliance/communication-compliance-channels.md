@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: ccf46df1ecbe2fb2e55e461cc27a5b7af088e7b9
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686471"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787460"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
@@ -32,7 +32,7 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar los 
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Las comunicaciones de chat en canales de Microsoft Teams públicos y privados y chats individuales se pueden examinar. Cuando se asigna a los usuarios a una directiva de cumplimiento de comunicaciones con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los Equipos de Microsoft donde los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para las plantillas de directiva predefinidas y se selecciona de forma predeterminada en la plantilla de directiva personalizada. Los chats de Teams que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 48 horas en procesarse.
+Las comunicaciones de chat en canales de Microsoft Teams públicos y privados y chats individuales se pueden examinar. Cuando se asigna a los usuarios a una directiva de cumplimiento de comunicaciones con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se detectan automáticamente en todos los equipos de Microsoft en los que los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para las plantillas de directiva predefinidas y se selecciona de forma predeterminada en la plantilla de directiva personalizada. Los chats de Teams que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 48 horas en procesarse.
 
 Para chat privado y canales privados, las directivas de cumplimiento de comunicaciones admiten [canales compartidos](/MicrosoftTeams/shared-channels) y análisis de datos adjuntos modernos. La compatibilidad con canales compartidos en Teams se controla automáticamente y no requiere cambios adicionales en la configuración de cumplimiento de comunicaciones. En la tabla siguiente se resume el comportamiento de cumplimiento de la comunicación al compartir canales de Teams con grupos y usuarios:
 
@@ -59,7 +59,7 @@ Use las siguientes configuraciones de administración de grupos para supervisar 
 
 - **Para las comunicaciones de chat de Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
 - **Para las comunicaciones del canal de Teams:** Asigne todos los canales de Microsoft Teams o grupo de Microsoft 365 que quiera examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario supervisado dentro de una directiva y la dirección *de entrada* está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directivas (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de contenido inadecuado que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directivas para las conversaciones dentro del canal, aunque no estén supervisadas directamente en la directiva de contenido inadecuado. Las conversaciones de Teams entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de contenido inadecuado que incluye al usuario A. Para excluir a los miembros del canal de la supervisión cuando otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación *entrante* en la directiva de cumplimiento de comunicaciones aplicable.
-- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede detectar mensajes de chat para los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+- **Para las comunicaciones de chat de Teams con entornos de correo electrónico híbridos**: el cumplimiento de comunicaciones puede detectar mensajes de chat para los usuarios de las organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para los usuarios con buzones locales o externos. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección **Usuarios y grupos supervisados** en el Asistente para directivas. Para obtener más información sobre los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad de Teams con los usuarios locales, consulte [Búsqueda de datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="exchange-email"></a>Correo electrónico de Exchange
 
@@ -69,7 +69,7 @@ Los buzones hospedados en Exchange Online como parte de su suscripción de Micro
 
 Los mensajes privados y las conversaciones públicas y los datos adjuntos asociados en las comunidades de Yammer se pueden examinar. Cuando se agrega un usuario a la directiva de cumplimiento de comunicaciones que incluye Yammer como canal definido, las comunicaciones entre todas las comunidades de Yammer de las que el usuario es miembro se incluyen en el proceso de examen. Los chats y los datos adjuntos de Yammer que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. 
 
-Yammer debe estar en [modo nativo](/yammer/configure-your-yammer-network/overview-native-mode) para que las directivas de cumplimiento de comunicaciones supervisen las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
+Yammer debe estar en [modo nativo](/yammer/configure-your-yammer-network/overview-native-mode) para que las directivas de cumplimiento de comunicaciones detecten comunicaciones y datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
 
 ## <a name="third-party-sources"></a>Orígenes de terceros.
 

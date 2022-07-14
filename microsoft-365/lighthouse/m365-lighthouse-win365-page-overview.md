@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (PC en la nube).
-ms.openlocfilehash: b96660f2666d7edce383a1d2e222e23d9b17a5b3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dded3bc455a66a77ae325f1d6a54660a88846c1e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017474"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787240"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Información general de la página Windows 365 (PC en la nube) en Microsoft 365 Lighthouse  
   
@@ -35,7 +35,7 @@ Para obtener más información sobre Windows 365, consulte [¿Qué es Windows 36
 
 Una vez que haya aprovisionado equipos en la nube para el inquilino del cliente, la tarjeta de Windows 365 de la página principal de Microsoft 365 proporciona una breve alerta sobre los equipos en la nube que necesitan acción, como el número de equipos en la nube que no se pudieron aprovisionar y los errores de conexión de red de Azure. Para obtener un estado detallado, seleccione el botón de la tarjeta de Windows 365 (o seleccione **Windows 365** en el panel de navegación izquierdo) para abrir la página de Windows 365. En esta página, puede obtener información general sobre el estado de los equipos en la nube asignados a los inquilinos del cliente, ver una lista de todos los equipos en la nube que administra y los inquilinos a los que están asignados y ver las conexiones de red de Azure entre los inquilinos del cliente y Azure Active Directory (Azure AD) y su estado.
 
-## <a name="overview-tab"></a>Pestaña Información general
+## <a name="overview-tab"></a>‎Pestaña da Información general
 
 En la pestaña Información general, la barra de anotaciones de recuento de colores muestra el número total de equipos en la nube o conexiones de red de Azure en todos los inquilinos de cliente que tienen los siguientes estados: Conexiones de red con errores, No aprovisionadas, Error de aprovisionamiento y Desaprovisionamiento pronto.
 
@@ -46,7 +46,7 @@ Para obtener información detallada sobre el estado de un inquilino de cliente d
 La pestaña Información general también incluye las siguientes opciones:
 
 - **Actualizar:** Seleccione esta opción para recuperar los datos de PC en la nube más actuales.
-- **Exportar:** Seleccione esta opción para exportar los datos del equipo en la nube a un archivo de valores separados por comas (.csv) Excel.
+- **Exportar:** Seleccione esta opción para exportar los datos de Cloud PC a un archivo de valores separados por comas (.csv) de Excel.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente un equipo en la nube específico en la lista.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general de Windows 365." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
@@ -62,19 +62,20 @@ Puede ver todos los equipos en la nube y su estado de aprovisionamiento en la li
 - **Nombre del dispositivo:** Intune nombre del dispositivo, un identificador único para un equipo en la nube.
 - **Inquilino:** Inquilino del cliente en el que se aprovisionó un equipo en la nube.
 - **Estado:** Estado de aprovisionamiento del equipo en la nube.
-- **Tipo de licencia:** Enterprise o Business.
+- **Tipo de licencia:** Empresa o Empresa.
 - **Especificaciones:** Configuración de hardware de PC en la nube.
 
 Para ver qué inquilinos tienen equipos en la nube con un estado de aprovisionamiento específico, seleccione ese estado en la barra count-annotation para filtrar la lista. Para ver los estados de aprovisionamiento de equipos en la nube para uno o más inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
 Seleccione cualquier equipo en la nube en la lista para ver más detalles y ejecutar acciones de administración como:
 - **Reiniciar:** Seleccione esta opción para reiniciar el dispositivo. 
-- **Reprovision:** Seleccione esta opción para restablecer el dispositivo. También puede ver la directiva de aprovisionamiento en el vínculo Microsoft Endpoint Manager.
+- **Reprovision:** Seleccione esta opción para restablecer el dispositivo. También puede ver la directiva de aprovisionamiento en el vínculo microsoft Endpoint Manager.
 - **Renombrar:** Seleccione esta opción para cambiar el nombre del dispositivo asignado a un usuario.
+- **Cambiar tipo de cuenta:** Seleccione el tipo de cuenta para el usuario: Usuario estándar (recomendado) o Administrador local.
 
 La pestaña Todos los equipos en la nube también incluye las siguientes opciones:
 
-- **Exportar:** Seleccione esta opción para exportar los datos del equipo en la nube a un archivo de valores separados por comas (.csv) Excel.
+- **Exportar:** Seleccione esta opción para exportar los datos de Cloud PC a un archivo de valores separados por comas (.csv) de Excel.
 - **Actualizar:** Seleccione esta opción para recuperar los datos de PC en la nube más actuales.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente un equipo en la nube específico en la lista.
 
@@ -94,7 +95,7 @@ Si necesita realizar acciones o solucionar problemas de una conexión en la list
 
 La pestaña Conexiones de red de Azure también incluye las siguientes opciones:
 
-- **Exportar:** Seleccione esta opción para exportar los datos de conexión a un archivo Excel valores separados por comas (.csv).
+- **Exportar:** Seleccione esta opción para exportar los datos de conexión a un archivo de valores separados por comas (.csv) de Excel.
 - **Actualizar:** Seleccione esta opción para recuperar los datos de conexión más actuales.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente una conexión específica.
 

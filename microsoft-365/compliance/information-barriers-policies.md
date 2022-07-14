@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d2f2eb77dd143f82ced98f8fce424cc729e26df7
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632275"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787812"
 ---
 # <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
 
@@ -400,10 +400,11 @@ Los siguientes modos ib son compatibles con los recursos de Microsoft 365:
 
 | **Mode** | **Descripción** | **Ejemplo** |
 |:-----|:------------|:--------|
-| **Open** | No hay directivas o segmentos de IB asociados al recurso de Microsoft 365. Se puede invitar a cualquier persona a ser miembro del recurso. | Un sitio de equipo creado para un evento de picnic para su organización. |
+| **Abrir** | No hay directivas o segmentos de IB asociados al recurso de Microsoft 365. Se puede invitar a cualquier persona a ser miembro del recurso. | Un sitio de equipo creado para un evento de picnic para su organización. |
 | **Moderado por el propietario (versión preliminar)** | La directiva ib del recurso de Microsoft 365 se determina a partir de la directiva ib del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros según su directiva de IB. | El vicepresidente de RR. HH. quiere colaborar con los VPs de Ventas e Investigación. Un nuevo sitio de SharePoint que se establece con el modo IB *Propietario moderado* para agregar usuarios de segmento de ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
 | **Implícita** | La directiva de IB o los segmentos del recurso de Microsoft 365 se heredan de la directiva ib de los miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este modo es el modo IB predeterminado para Microsoft Teams. | El usuario del segmento Ventas crea un equipo de Microsoft Teams para colaborar con otros segmentos compatibles de la organización. |
-| **Explicit** | La directiva ib del recurso de Microsoft 365 se realiza según los segmentos asociados al recurso. El propietario del recurso o el administrador de SharePoint tiene la capacidad de administrar los segmentos del recurso.  | Un sitio creado solo para que los miembros del segmento Ventas colaboren asociando el segmento Ventas con el sitio.   |
+| **Explicit** | La directiva ib del recurso de Microsoft 365 se realiza según los segmentos asociados al recurso. El propietario del recurso o el administrador de SharePoint tiene la capacidad de administrar los segmentos del recurso. | Un sitio creado solo para que los miembros del segmento Ventas colaboren asociando el segmento Ventas con el sitio. |
+| **Mixto (versión preliminar)** | Solo se aplica a OneDrive. La directiva ib de OneDrive se realiza según los segmentos asociados a OneDrive. El propietario del recurso o el administrador de OneDrive tiene la capacidad de administrar los segmentos del recurso. | Un OneDrive creado para que los miembros del segmento Sales colaboren puede compartirse con usuarios noegmentados. |
 
 Para obtener más información sobre los modos de IB y cómo se configuran entre servicios, consulte los artículos siguientes:
 
@@ -419,8 +420,8 @@ Para ver cómo una organización podría abordar la definición de segmentos y d
 
 Contoso tiene cinco departamentos: *RR. HH*., *Ventas*, *Marketing*, *Investigación* y *Fabricación*. Para seguir siendo conformes con las regulaciones del sector, se supone que los usuarios de algunos departamentos no deben comunicarse con otros departamentos, como se muestra en la tabla siguiente:
 
-| Segmento | Puede comunicarse con | No se puede comunicar con |
-|:----------|:--------------|:-----------------|
+| **Segmento** | **Puede comunicarse con** | **No se puede comunicar con** |
+|:------------|:-------------------------|:---------------------------|
 | HR | Todos | (sin restricciones) |
 | Ventas | RR. HH., Marketing, Fabricación | Referencia |
 | Marketing | Todos | (sin restricciones) |

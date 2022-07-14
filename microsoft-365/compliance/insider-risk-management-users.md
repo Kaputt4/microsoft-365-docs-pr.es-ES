@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 05adeb86c5e4da5119a5aae184721ec667564b49
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 14c0d5127f4b370d78b54512d8780d1cc7dfbf67
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629495"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787658"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel usuarios de administración de riesgos internos
 
@@ -44,7 +44,7 @@ El **panel Usuarios** muestra automáticamente todos los usuarios con eventos de
 
 El **panel Usuarios** incluye usuarios agregados a directivas de administración de riesgos internos después de un evento inusual fuera del flujo de trabajo de administración de riesgos internos. Agregar usuarios temporalmente (desde el panel Directivas) también es una manera de empezar a puntuar la actividad de usuario para una directiva de administración de riesgos internos para probar la directiva, incluso si no se configura un conector necesario.
 
-Cuando un usuario se agrega manualmente a una directiva, las actividades de usuario de los 90 días anteriores se puntúan y se agregan a la escala de tiempo **de actividad de usuario** . Por ejemplo, tiene un usuario que no tiene actualmente puntuaciones de riesgo asignadas para una directiva de riesgo interno y el usuario tiene actividades de pérdida de datos notificadas al departamento legal de su organización. El departamento legal recomienda configurar nuevos requisitos de supervisión a corto plazo para el usuario. Puede asignar temporalmente el usuario a la directiva *de pérdidas de datos* durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente se muestran en el **panel Usuarios** porque se renuncia a los requisitos de eventos desencadenantes.
+Cuando un usuario se agrega manualmente a una directiva, las actividades de usuario de los 90 días anteriores se puntúan y se agregan a la escala de tiempo **de actividad de usuario** . Por ejemplo, tiene un usuario que no tiene actualmente puntuaciones de riesgo asignadas para una directiva de riesgo interno y el usuario tiene actividades de pérdida de datos notificadas al departamento legal de su organización. El departamento legal recomienda configurar nuevos requisitos de detección a corto plazo para el usuario. Puede asignar temporalmente el usuario a la directiva *de pérdidas de datos* durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente se muestran en el **panel Usuarios** porque se renuncia a los requisitos de eventos desencadenantes.
 
 > [!NOTE]
 > Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el **panel Usuarios**. Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el **panel Usuarios** y abra la pestaña **Actividad de usuario** en el panel de detalles.
