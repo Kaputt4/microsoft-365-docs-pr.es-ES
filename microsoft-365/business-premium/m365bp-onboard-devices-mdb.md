@@ -14,25 +14,26 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 70be4a5b7991d038dd1e34c00778de6bb3a67b84
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573977"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772278"
 ---
-# <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos inscritos a Microsoft Defender para empresas
+# <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos inscritos a Microsoft Defender para Empresas
 
-Microsoft 365 Empresa Premium incluye Microsoft Defender para Empresas, una solución de seguridad de punto de conexión para pequeñas y medianas empresas. Defender para empresas proporciona protección de próxima generación (antivirus, antimalware y protección de entrega en la nube), protección de firewall, filtrado de contenido web y mucho más para los dispositivos de su empresa. La protección se aplica al incorporar dispositivos. 
+Microsoft 365 Empresa Premium incluye [Microsoft Defender para Empresas](../security/defender-business/mdb-overview.md), una solución de seguridad de punto de conexión para pequeñas y medianas empresas. Defender para empresas proporciona protección de próxima generación (antivirus, antimalware y protección de entrega en la nube), protección de firewall, filtrado de contenido web y mucho más para los dispositivos de su empresa. La protección se aplica al incorporar dispositivos y aplicar directivas de seguridad a dichos dispositivos.
 
-Para incorporar dispositivos, puede elegir entre varias opciones:
+Para incorporar dispositivos a Defender para Empresas, puede elegir entre varias opciones:
 
-- [Incorporación automática para dispositivos Windows inscritos en Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
-- [Un script local para incorporar dispositivos Windows y macOS a Defender para empresas](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business)
-- [Intune para inscribir dispositivos, incluidos los dispositivos móviles](#use-intune-to-enroll-devices) (Windows, macOS, iOS y Android) y, a continuación, aplicar directivas de Defender para empresas a esos dispositivos
+- [Incorporación automática para dispositivos Windows ya inscritos en Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
+- [Un script local para incorporar dispositivos Windows y Mac a Defender para Empresas](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (para dispositivos que aún no están inscritos en Intune)
+- [Intune para inscribir dispositivos, incluidos los dispositivos móviles](#use-intune-to-enroll-devices) (Windows, Mac, iOS y Android) y, luego, aplicar directivas de Defender para Empresas a dichos dispositivos
 
 En este artículo también se incluyen:
 
+- [¿Qué ocurre con los servidores?](#what-about-servers) (NUEVO)
 - [Cómo ejecutar una prueba de detección en un dispositivo Windows](#run-a-detection-test-on-a-windows-device)
 - [Cómo incorporar dispositivos gradualmente](#onboard-devices-gradually)
 - [Cómo desincorporar un dispositivo](#offboard-a-device) si se reemplaza un dispositivo o alguien abandona la organización
@@ -42,40 +43,41 @@ En este artículo también se incluyen:
 
 ## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune"></a>Uso de la incorporación automática para dispositivos Windows que ya están inscritos en Intune
 
-Puede incorporar dispositivos Windows a Defender para empresas automáticamente si esos dispositivos ya están inscritos en Intune. Defender para empresas detecta los dispositivos cliente de Windows inscritos en Intune y le pide que elija si quiere incorporar esos dispositivos automáticamente. Las directivas de seguridad y la configuración de Defender para empresas se aplican a esos dispositivos. Este proceso se denomina *incorporación automática*. La opción de incorporación automática solo se aplica a dispositivos Windows. La incorporación automática está disponible si se cumplen las condiciones siguientes:
+Puede incorporar dispositivos cliente Windows a Defender para Empresas automáticamente si los dispositivos ya están inscritos en Intune. Defender para Empresas detecta los dispositivos cliente Windows inscritos en Intune y le pide que elija si prefiere incorporarlos automáticamente. Las directivas de seguridad y la configuración de Defender para empresas se aplican a esos dispositivos. Este proceso se denomina *incorporación automática*. 
 
-- Su organización ya usaba Microsoft Endpoint Manager, Microsoft Intune o Mobile Administración de dispositivos (MDM) en Microsoft Intune antes de obtener Defender para empresas (los clientes de Microsoft 365 Empresa Premium ya tienen Microsoft Intune).
-- Ya tiene dispositivos Windows inscritos en Intune.
+La incorporación automática ayuda a proteger los dispositivos prácticamente de inmediato. Tenga en cuenta que la opción de incorporación automática solo se aplica a los dispositivos cliente Windows y solo si se cumplen las condiciones siguientes:
+
+- Su organización ya usaba Intune o Administración de dispositivos móviles (MDM) en Intune antes de obtener Defender para Empresas (los clientes de Microsoft 365 Empresa Premium ya tienen Microsoft Intune y MDM).
+- Ya tiene dispositivos cliente Windows inscritos en Intune.
 
 > [!TIP]
-> Cuando se le pida que use la incorporación automática, se recomienda seleccionar los "todos los dispositivos inscritos". Opción. De este modo, cuando los dispositivos Windows se inscriban en Intune posteriormente, se incorporarán automáticamente a Defender para empresas.
+> Si se le pide que use la incorporación automática, se recomienda seleccionar la opción "todos los dispositivos inscritos". De este modo, cuando los dispositivos Windows se inscriban en Intune posteriormente, se incorporarán automáticamente a Defender para empresas.
 
 Para obtener más información sobre la incorporación automática, consulte el paso 2 de [Use el asistente para configurar Microsoft Defender para Empresas](../security/defender-business/mdb-use-wizard.md).
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business"></a>Usar un script local para incorporar dispositivos Windows y macOS a Defender para empresas
+## <a name="use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business"></a>Usar un script local para incorporar dispositivos Windows y Mac a Defender para Empresas
 
 Puede usar un script local para incorporar dispositivos Windows y Mac. Al ejecutar el script de incorporación en un dispositivo, crea una confianza con Azure Active Directory (si esa confianza aún no existe), inscribe el dispositivo en Intune (si aún no está inscrito) y, a continuación, incorpora el dispositivo a Defender para empresas. Puede incorporar hasta 10 dispositivos a la vez mediante el script local.
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
-
-2. En el panel de navegación, elija **Settings** > **Endpoints**, y, a continuación, en **Management**, elige **Incorporación**.
-
-3. Seleccione un sistema operativo, como **Windows 10 y 11** o **macOS**, y, a continuación, en la sección **Método de implementación**, elija **Script local**. 
-
-4. Seleccione **Descargar el paquete de incorporación** Se recomienda guardar el paquete de incorporación en una unidad extraíble. (Si seleccionó **macOS**, seleccione también **Descargue el paquete de instalación** y guárdelo en el dispositivo extraíble).
-
-5. Use las siguientes instrucciones:
-
-   - Dispositivos Windows: [Abordar dispositivos Windows mediante un script local](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-   - dispositivos macOS: [ Implementación manual para Microsoft Defender para punto de conexión en macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+Consulte [Incorporar dispositivos a Microsoft Defender para Empresas](../security/defender-business/mdb-onboard-devices.md) para obtener instrucciones detalladas.
 
 ## <a name="use-intune-to-enroll-devices"></a>Uso de Intune para inscribir dispositivos
 
-Para inscribir un dispositivo, inscríbase usted mismo o haga que los usuarios inicien sesión en el portal de empresa e inscriban e instalen las aplicaciones necesarias. 
+Para inscribir un dispositivo, puede hacerlo usted mismo o pedir a los usuarios que inicien sesión en la aplicación del portal de empresa, inscriban sus dispositivos y, luego, instalen las aplicaciones necesarias. 
 
 Si ya usaba Intune o Mobile Administración de dispositivos antes de obtener Defender para empresas, puede seguir usando Intune para incorporar los dispositivos de su organización. Con Intune, puede incorporar equipos, tabletas y teléfonos, incluidos dispositivos iOS y Android.
 
 Consultar [Habilitar la inscripción en Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
+
+## <a name="what-about-servers"></a>¿Qué ocurre con los servidores?
+
+Los servidores no se admiten de forma predeterminada en Microsoft 365 Empresa Premium y Defender para Empresas. Sin embargo, la capacidad de incorporar un servidor, como un punto de conexión que ejecuta Windows Server o Linux Server, ya está en versión preliminar. Asegúrese de revisar los requisitos antes de incorporar un servidor:
+
+- Tener una licencia de servidor para cada instancia de servidor en Microsoft 365 Empresa Premium o Defender para Empresas (independiente).
+- La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
+- El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** > **Puntos de conexión** > **Administración de configuración** > **Ámbito de cumplimiento**. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
+
+Consulte la pestaña **Servidores** en [Incorporar dispositivos a Microsoft Defender para Empresas](../security/defender-business/mdb-onboard-devices.md) para obtener instrucciones detalladas.
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Ejecutar una prueba de detección en un dispositivo Windows
 
@@ -127,7 +129,7 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 6. Ejecute el script en cada dispositivo que quiera desincorporar. ¿Necesita ayuda con esta tarea? Vea los siguientes recursos:   
 
    - Dispositivos Windows: [Desincorporar dispositivos Windows mediante un script local](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) 
-   - Dispositivos macOS: [Desinstalación en macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
+   - Mac: [Desinstalar en Mac](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
 > La desincorporación de un dispositivo hace que los dispositivos dejen de enviar datos a Defender para empresas. Sin embargo, los datos recibidos antes de la desincorporación se conservan durante un máximo de seis (6) meses.

@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c8847915fdf9ed587fea410670f5b37194dfa8ae
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663820"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787130"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -47,15 +47,15 @@ Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancar
 - Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - El método de pago que elija durante la finalización de la compra es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
 
-## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nuevas normativas del Banco de Reserva de India
+## <a name="directives-from-the-reserve-bank-of-india"></a>Directivas del Banco de Reserva de India
 
-A partir del 1 de octubre de 2021, los pagos automáticos en India podrían bloquear algunas transacciones de tarjetas de crédito, especialmente las transacciones que superan los 5000 INR. Debido a este reglamento, es posible que tenga que realizar pagos manualmente en el Centro de administración de Microsoft 365. Estas regulaciones no afectarán al importe total que se le cobrará por el uso.
+Actualmente, algunas transacciones con tarjeta de crédito, especialmente las transacciones que superan los 5 000 INR, están bloqueadas debido a una directiva del Banco de Reserva de India. Esto puede afectar a los pagos automáticos, lo que significa que es posible que tenga que realizar pagos manualmente en el Centro de administración de Microsoft 365. Esta directiva no afecta a los cargos de uso. 
 
-[Obtenga más información sobre el reglamento del Banco de Reserva de India para los pagos periódicos](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+[Obtenga más información sobre la directiva del Banco de Reserva de India para los pagos periódicos](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-El 30 de septiembre de 2022, Microsoft y otros comerciantes en línea ya no almacenarán la información de la tarjeta de crédito. Para cumplir con este reglamento, Microsoft quitará todos los detalles almacenados de tarjetas del Centro de administración de Microsoft 365. Para evitar la interrupción del servicio, debe agregar un método de pago y realizar un pago único para todas las suscripciones y perfiles de facturación.
+El 30 de septiembre de 2022, Microsoft y otros comerciantes en línea ya no almacenarán la información de la tarjeta de crédito. Microsoft quitará todos los detalles almacenados de tarjetas del Centro de administración de Microsoft 365. Para evitar la interrupción del servicio, debe agregar y comprobar un método de pago para todas las suscripciones y perfiles de facturación.
 
-[Obtenga información sobre el reglamento del Banco de Reserva de India para el almacenamiento de tarjetas](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+[Obtenga información sobre la directiva del Banco de Reserva de India para el almacenamiento de tarjetas](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito/débito o cuenta bancaria
 

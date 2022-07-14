@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685709"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795452"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -50,7 +50,7 @@ Si es un usuario individual, puede habilitar ambos complementos por sí mismo.
 
 Si es un administrador global o un administrador de Exchange Online, y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de informe y el complemento Suplantación de identidad de informe para su organización. Ambos complementos ya están disponibles a través de [la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tanto el complemento mensaje de informe como el complemento de suplantación de identidad de informe funcionan con la mayoría de las suscripciones de Microsoft 365 y los siguientes productos:
   - Outlook en la Web
@@ -205,3 +205,24 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Control flotante De suplantación de identidad de informe." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. Para quitar el complemento, seleccione **Quitar aplicación** en **Acciones** en el mismo control flotante.
+
+## <a name="get-the-report-message-or-the-report-phishing-add-ins-for-the-gcc-and-gcch-users"></a>Obtener el mensaje de informe o los complementos de suplantación de identidad de informe para los usuarios de GCC y GCCH
+
+Si es un administrador de Government Community Cloud High (GCCH) o de Government Community Cloud (GCC), siga estos pasos para obtener el mensaje de informe o los complementos de suplantación de identidad de informe para su organización. Tenga en cuenta que si es un usuario individual, no puede obtener el complemento mediante Microsoft AppSource.
+
+> [!NOTE]
+> El complemento puede tardar hasta 24 horas en aparecer en su organización. 
+
+1. En el Centro de administración de Microsoft 365, vaya a **Complementos de** **configuración** \> y seleccione **Implementar complemento**. 
+
+2. Se abre el control flotante **Implementar un nuevo complemento** . Haga clic en **Siguiente** y, a continuación, seleccione **Cargar aplicaciones personalizadas**.  
+
+3. Seleccione **Tengo una dirección URL para el archivo de manifiesto**. Use las siguientes direcciones URL para obtener el [mensaje de informe](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) y los complementos [de suplantación de identidad](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) de informe. 
+
+4. Elija qué usuarios tendrán acceso al complemento y seleccione un método de implementación y, a continuación, seleccione **Implementar**. 
+
+5. Para configurar completamente los valores, consulte [Configuración de mensajes notificados por el usuario](user-submission.md). 
+
+## <a name="use-the-report-message-or-the-report-phishing-add-ins"></a>Usar el mensaje de informe o los complementos de suplantación de identidad de informe
+
+Puede usar el mensaje de informe o los complementos de suplantación de identidad de informe para enviar falsos positivos (buen correo electrónico que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phish que se entregó en la bandeja de entrada) en Outlook. Para obtener más información, vea [Notificar falsos positivos y falsos negativos en Outlook](report-false-positives-and-false-negatives.md).

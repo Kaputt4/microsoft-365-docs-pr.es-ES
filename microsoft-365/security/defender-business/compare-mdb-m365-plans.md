@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772004"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795386"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
@@ -45,10 +45,10 @@ Defender for Business también está disponible como una suscripción independie
 
 |Característica o funcionalidad|[Microsoft Defender para Empresas](mdb-overview.md)<br/>(independiente)|[Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md)<br/>(incluye Defender para empresas)|
 |---|---|---|
-|Protección por correo electrónico|Sí <br/>[Examen de correo electrónico con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Sí <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Examen de correo electrónico con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
+|protección Email|Sí <br/>[examen de Email con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Sí <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[examen de Email con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |Protección contra correo no deseado|Sí<br/>Para dispositivos|Sí <ul><li>Para dispositivos</li><li>Para contenido de correo electrónico de Microsoft 365, como mensajes y datos adjuntos</li></ul>|
 |Protección antimalware|Sí<br/>Para dispositivos|Sí<ul><li>Para dispositivos</li><li>Para contenido de correo electrónico de Microsoft 365, como mensajes y datos adjuntos</li></ul>|
-|[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protección antivirus y antimalware)|Sí<br/>Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores|Sí <ul><li>Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores</li><li>Directivas de protección de última generación para dispositivos incorporados</li></ul>|
+|[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protección antivirus y antimalware para dispositivos incorporados)|Sí |Sí |
 |[Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Reglas de ASR en Windows 10 o versiones posteriores y protección del firewall)|Sí|Sí|
 |[EDR](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(detección basada en comportamiento y acciones de respuesta manual)|Sí|Sí|
 |[Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md)|Sí|Sí|
@@ -94,7 +94,7 @@ Defender for Business ofrece las funcionalidades de nivel empresarial de Defende
 
 (<a id="fn7">7</a>) La capacidad de ver incidentes entre inquilinos mediante Defender para punto de conexión es nueva.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

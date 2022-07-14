@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695875"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795430"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -298,11 +298,10 @@ Puede usar el [script del instalador](server-migration.md#installer-script) para
     ```
 
     > [!NOTE]
-    > Si necesita solucionar problemas de instalación del agente, agregue "-etl -log" a los parámetros de script de install.ps1.
-    >
+
     > La configuración de directiva de ejecución recomendada es `Allsigned`. Esto requiere la importación del certificado de firma del script en el almacén publicadores de confianza del equipo local si el script se ejecuta como SYSTEM en el punto de conexión.
 
-    Reemplace \\servername-or-dfs-space\share-name por la ruta de acceso UNC mediante el nombre de dominio completo (FQDN) del servidor de archivos del archivo *install.ps1* compartido. El paquete del instalador md4ws.msi debe colocarse en el mismo directorio.  Asegúrese también de que los permisos de la ruta de acceso UNC permiten el acceso de lectura a la cuenta de equipo que instala la plataforma.
+    Reemplace \\servername-or-dfs-space\share-name por la ruta de acceso UNC mediante el nombre de dominio completo (FQDN) del servidor de archivos del archivo *install.ps1* compartido. El paquete del instalador md4ws.msi debe colocarse en el mismo directorio.  Asegúrese de que los permisos de la ruta de acceso UNC permiten el acceso de escritura a la cuenta de equipo que instala el paquete para admitir la creación de archivos de registro. Si desea deshabilitar la creación de archivos de registro (no recomendados), puede usar los parámetros -noETL -noETW.
 
     Para escenarios en los que quiera que Antivirus de Microsoft Defender coexista con soluciones antimalware que no son de Microsoft, agregue el parámetro $Passive para establecer el modo pasivo durante la instalación.
 

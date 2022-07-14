@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 08385988da41d633d864a28637f9667887e6269e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714692"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787108"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -102,7 +102,7 @@ Para las dos rutas en el diagrama:
 
 Cuando el periodo de retención expira y mueve un mensaje a la carpeta SubstrateHolds, se comunica una operación de borrado al servicio de chat Azure backend, que a su vez retransmite la misma operación a la app cliente de Teams. Los retrasos en esta comunicación o almacenamiento en caché pueden explicar por qué, durante un breve período de tiempo, los usuarios siguen viendo estos mensajes en su aplicación de Teams.
 
-En este escenario, en el que el servicio de chat de Azure recibe un comando de eliminación debido a una directiva de retención, el mensaje correspondiente en la aplicación cliente de Teams se elimina para todos los usuarios de la conversación. Algunos de estos usuarios pueden ser de otra organización, tener una directiva de retención con un período de retención más largo o ninguna directiva de retención asignada a ellos. Para estos usuarios, las copias de los mensajes aún se almacenan en sus buzones y permanecen disponibles para la búsqueda en eDiscovery hasta que otra directiva de retención elimine permanentemente los mensajes.
+En este escenario, en el que el servicio de chat de Azure recibe un comando de eliminación debido a una directiva de retención, el mensaje correspondiente en la aplicación cliente de Teams se elimina para todos los usuarios de la conversación. A veces, este [comportamiento puede parecer inesperado](/microsoftteams/troubleshoot/teams-im-presence/messages-unexpectedly-deleted-retention-policy) porque algunos de estos usuarios pueden ser de otra organización, tener una directiva de retención con un período de retención más largo o no tener asignada ninguna directiva de retención. Para estos usuarios, las copias de los mensajes aún se almacenan en sus buzones y permanecen disponibles para la búsqueda en eDiscovery hasta que otra directiva de retención elimine permanentemente los mensajes.
 
 > [!IMPORTANT]
 > Los mensajes visibles en la aplicación Teams no son un reflejo exacto de si se conservan o eliminan permanentemente para cumplir con los requisitos.
