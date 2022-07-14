@@ -23,30 +23,30 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo configurar dispositivos administrados
-ms.openlocfilehash: 0ebaf9246daa9f364702954c657a1af7e7e262f2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a5498fc89a135a90d192b2b7ddb7165527e13123
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636999"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773124"
 ---
 # <a name="set-up-managed-devices"></a>Configurar dispositivos administrados
 
-Un dispositivo "administrado" es uno que está bajo control y supervisado por la organización y, por lo tanto, se actualiza periódicamente y es seguro. Tener dispositivos bajo control administrado es un objetivo crítico. Para controlar estos dispositivos, se inscriben en un administrador de dispositivos con Intune y Azure Active Directory Premium, que se incluyen con Microsoft Business Premium. 
-
-Un equipo Windows 10 u 11 se considera administrado después de que los usuarios hayan completado los dos pasos siguientes:
+Un dispositivo "administrado" es uno que está bajo control y supervisado por la organización y, por lo tanto, se actualiza periódicamente y es seguro. Tener dispositivos bajo control administrado es un objetivo crítico. Para controlar estos dispositivos, inscríbalos en un administrador de dispositivos con Microsoft Intune y Azure Active Directory, ambos incluidos con Microsoft Business Premium.
 
 1. Configure directivas de protección de datos y dispositivos en el [wizardsetup](../business/set-up.md).
 
 2. Conectó el equipo a [Azure Active Directory](../business/set-up-windows-devices.md) con su nombre de usuario y contraseña Microsoft 365. 
 
-## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Inscribir dispositivos en Microsoft Endpoint Manager
+## <a name="enroll-devices-in-intune"></a>Inscribir dispositivos para administrarlos en Intune
 
-Ahora puede inscribir dispositivos en Endpoint Manager. Vaya a https://endpoint.microsoft.com y seleccione **Dispositivos** > **Inscribir dispositivos**. 
+1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-:::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Usar Microsoft Endpoint Manager para inscribir los dispositivos."::: 
+2. Seleccione **Dispositivos** > **Inscribir dispositivos**. 
 
-Siga las instrucciones de inscripción de dispositivos específicas que se indican a continuación.
+   :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Usar Microsoft Endpoint Manager para inscribir los dispositivos."::: 
+
+3. Siga las instrucciones de inscripción de dispositivos específicas que se indican a continuación.
 
 ### <a name="for-windows-enrollment"></a>Inscripción de Windows:
 
@@ -76,5 +76,5 @@ Siga las instrucciones de inscripción de dispositivos específicas que se indic
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Use las siguientes instrucciones para [abordar los dispositivos](m365bp-onboard-devices-mdb.md).
+Use las siguientes instrucciones para [incorporar dispositivos a las funcionalidades de Microsoft Defender para Empresas](m365bp-onboard-devices-mdb.md).
 

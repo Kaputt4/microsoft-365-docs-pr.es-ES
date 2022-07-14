@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: d9a265ee291bce197fd59f6a27a2ad5c85392945
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5e8669b92297688119e9262e0d2f14d1ecfae3a2
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642643"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770942"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 
@@ -44,7 +44,7 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 | Suscripción  | Microsoft 365 Empresa Premium o Microsoft 365 para campañas. <br/><br/> Para iniciar una prueba o comprar su suscripción, consulte los artículos siguientes: <br/>- [Obtención de Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenga Microsoft 365 para Campañas](get-microsoft-365-campaigns.md) |
 | Permisos  | Para completar el proceso de configuración inicial, debe ser un administrador global. [Obtenga más información sobre los roles de administrador](../admin/add-users/about-admin-roles.md). |
 | Requisitos de los exploradores | Microsoft Edge, Safari, Chrome o Firefox. [Obtenga más información sobre los requisitos de los exploradores](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 o posterior, o Windows Server 2016<br/><br/>**macOS**: Una de las tres últimas versiones de macOS |
+| Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 o posterior, o Windows Server 2016<br/><br/>**Mac**: Una de las tres últimas versiones de macOS |
 
 > [!TIP]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -103,4 +103,4 @@ Para ayudar a su personal a conocer los pasos necesarios para proteger su campa�
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Una vez que haya logrado estos objetivos, vaya a [aumentar las protecciones de seguridad](m365bp-security-overview.md).
+Una vez que haya alcanzado estos objetivos, [aumente la seguridad](m365bp-security-overview.md).

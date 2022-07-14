@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f769d79baa2dc17abe179f09af3bdb6f4571440c
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686017"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771337"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -45,12 +45,13 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 
 ## <a name="guided-setup-process"></a>Proceso de configuración guiado
 
-Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración básica. En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Estándar, que también funciona para Microsoft 365 Empresa Premium.<br/><br/>
+Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración básica. En el vídeo siguiente se muestra el proceso de configuración guiado para Microsoft 365 Empresa Estándar, que también funciona para Microsoft 365 Empresa Premium. En cuanto haya completado el proceso de configuración guiado, asegúrese de continuar con [aumentar la seguridad](m365bp-security-overview.md).<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > Una vez que haya agregado usuarios, asígneles un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md). La guía le guía a través del inicio de sesión, la obtención de aplicaciones de Office y el almacenamiento, la copia y el uso compartido de archivos.
+> Asegúrese de continuar con [Aumentar la seguridad](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
 
