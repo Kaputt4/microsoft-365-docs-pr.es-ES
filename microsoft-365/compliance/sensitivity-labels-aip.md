@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696170"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756685"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -176,6 +176,7 @@ Las siguientes configuraciones del complemento AIP aún no son compatibles con e
 Aunque se agregan nuevas funcionalidades para el etiquetado integrado continuamente, el complemento de Office AIP admite las siguientes funcionalidades que no se planea que estén disponibles en futuras versiones para el etiquetado integrado:
 
 - Aplicación de etiquetas a formatos de Microsoft Office 97-2003, como archivos .doc
+- Registro de uso local en el registro de eventos de Windows
 - Equipos desconectados permanentemente
 - Ediciones independientes de Office (a veces denominadas "Office Perpetua") en lugar de basadas en suscripciones
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ecb341673d3cf9469cbf2814d8c4486a01d4fc3f
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624652"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772542"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
@@ -63,6 +63,9 @@ Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un 
 5. Si su proveedor de hospedaje es GoDaddy u otro host habilitado con conexión de dominio, el proceso es sencillo y se le pedirá automáticamente que inicie sesión y que permita que Microsoft autentique en su nombre.
 
 ## <a name="onboard-and-protect-devices"></a>Incorporación y protección de dispositivos
+
+> [!NOTE]
+> La capacidad de incorporar puntos de conexión que ejecutan Windows Server o Linux Server está ahora en versión preliminar. Consulte [Incorporación de dispositivos a Microsoft Defender para empresas](../security/defender-business/mdb-onboard-devices.md).
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 

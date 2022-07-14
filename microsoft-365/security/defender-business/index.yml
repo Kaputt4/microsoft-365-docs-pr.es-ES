@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Defender para Empresas
-summary: Simple, seguridad para puntos finales sencilla y completa que le ayudará a proteger su negocio, para que pueda centrarse en lo que es importante. Microsoft Defender para Empresas está disponible como suscripción independiente y se incluye en Microsoft 365 Empresa Premium.
+summary: Simple, seguridad para puntos finales sencilla y completa que le ayudará a proteger su negocio, para que pueda centrarse en lo que es importante. Defender para Empresas está disponible como suscripción independiente y se incluye en Microsoft 365 Empresa Premium.
 metadata:
   title: Documentación de Microsoft Defender para Empresas
   description: Microsoft Defender para Empresas es una solución de ciberseguridad para pequeñas y medianas empresas. Proteja los dispositivos con seguridad de nivel empresarial a un precio asequible.
@@ -14,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: d94aeed225105bf16f2fa057d7c0caf1730eec09
-  ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+  ms.openlocfilehash: 0db947d3a791618db0e6316f09dcd760b35d5c0b
+  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/15/2022
-  ms.locfileid: "66090528"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66771359"
 landingContent:
 - title: Información general
   linkLists:
@@ -31,6 +31,8 @@ landingContent:
       url: mdb-simplified-configuration.md
     - text: Comparar planes para pequeñas y medianas empresas
       url: compare-mdb-m365-plans.md
+    - text: Recursos para asociados de Microsoft
+      url: mdb-partners.md
     - text: Integración con Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
   - linkListType: how-to-guide
@@ -49,6 +51,8 @@ landingContent:
       url: trial-playbook-defender-business.md
     - text: Ejecutar el asistente para la instalación
       url: mdb-use-wizard.md
+    - text: Activar la versión preliminar de las características
+      url: mdb-preview.md
 - title: Ayuda y más recursos
   linkLists:
   - linkListType: how-to-guide
