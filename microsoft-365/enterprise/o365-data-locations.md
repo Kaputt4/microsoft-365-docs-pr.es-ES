@@ -3,7 +3,7 @@ title: Ubicaciones de datos de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 07/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874081"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787636"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -37,7 +37,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian, de forma predeter
 
 Obtenga información sobre los compromisos contractuales para la ubicación de almacenamiento de los datos de los clientes en reposo en la [Autoridad de protección de datos (DPA) de productos y servicios de Microsoft](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+Para las ubicaciones de datos de Azure Active Directory, visite [Residencia de datos en Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
 Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 Educación, independientemente de la sección "Ubicación de datos del cliente en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos del cliente a cualquier parte de Europa o Norteamérica y guardar Datos del cliente en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 Educación, independientemente de la sección "Ubicación de datos del cliente en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos del cliente a cualquier parte de la Unión Europea y guardar Datos del cliente en reposo en cualquier parte de la Unión Europea.
 
