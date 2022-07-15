@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) desde el sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624055"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822787"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
 
@@ -36,6 +36,8 @@ La configuración de un conector epic consta de las siguientes tareas:
 - Ejecución de un script para insertar registros de auditoría de Epic EHR en el punto de conexión de API.
 
 - Opcionalmente, puede programar el script para que se ejecute automáticamente para importar registros de auditoría.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
@@ -143,7 +145,7 @@ El último paso para configurar un conector de Epic es ejecutar un script de eje
 
 En la tabla siguiente se describen los parámetros que se usarán con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-|Parámetro  |Description|
+|Parámetro  |Descripción|
 |:----------|:----------|
 |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
 |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365.|

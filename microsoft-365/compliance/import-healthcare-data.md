@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) de su sistema sanitario a Microsoft 365. Esto le permite usar los datos de EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641392"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822965"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
@@ -36,6 +36,8 @@ La configuración de un conector de Healthcare consta de las siguientes tareas:
 - Ejecución de un script para insertar datos de auditoría de EHR de atención sanitaria en el punto de conexión de API.
 
 - Opcionalmente, programar el script para que se ejecute automáticamente para importar los datos de auditoría.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
@@ -71,7 +73,7 @@ En la tabla siguiente se enumeran los campos necesarios para habilitar escenario
 | *Nombre del evento de hora<br/>de* creación<br/>Id. de estación de trabajo<br/>Sección de eventos<br/>Categoría del evento |Estos campos se usan para identificar eventos de actividad de acceso en el sistema de EHR de atención sanitaria.|
 | Id. de reg del paciente<br/>Nombre del *<br/>paciente Nombre medio del paciente Apellido <br/>del paciente* <br/>Línea 1 de dirección del paciente* <br/>Línea 2 de dirección del paciente<br/>Ciudad del paciente* <br/>Código postal del paciente*  <br/>Estado del paciente <br/>País del paciente <br/>Departamento de pacientes              | Estos campos se usan para identificar la información del perfil del paciente.|
 | Motivo de acceso restringido*<br/> Comentario de acceso restringido | Estos campos se usan para identificar el acceso a registros restringidos.|
-| Dirección de correo electrónico (UPN) o SamAccountName*<br/>Nombre de usuario del empleado <br/> Id. de empleado <br/> Apellidos <sup>del empleado 1</sup> <br/> Nombre del empleado <sup>1</sup> | Estos campos se usan para identificar la información del perfil de empleado para la coincidencia de direcciones y nombres necesaria para determinar el acceso a los registros de familia, vecino o empleado. |
+| Email Address (UPN) o SamAccountName*<br/>Nombre de usuario del empleado <br/> Id. de empleado <br/> Apellidos <sup>del empleado 1</sup> <br/> Nombre del empleado <sup>1</sup> | Estos campos se usan para identificar la información del perfil de empleado para la coincidencia de direcciones y nombres necesaria para determinar el acceso a los registros de familia, vecino o empleado. |
 |||
 
 > [!NOTE] 
@@ -156,7 +158,7 @@ El último paso para configurar un conector de Healthcare es ejecutar un script 
 
 En la tabla siguiente se describen los parámetros que se usarán con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-|Parámetro  |Description|
+|Parámetro  |Descripción|
 |:----------|:----------|
 |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
 |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365.|

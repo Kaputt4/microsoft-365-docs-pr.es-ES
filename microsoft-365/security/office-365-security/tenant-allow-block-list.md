@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714517"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822233"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -72,7 +72,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Una entrada debe estar activa en un plazo de 30 minutos.
 
-- De forma predeterminada, las entradas de la lista de inquilinos permitidos o bloqueados expirarán después de 30 días. Puede especificar una fecha o establecerla para que nunca expire.
+- De forma predeterminada, las entradas de la lista de inquilinos permitidos o bloqueados expirarán después de 30 días. Puede especificar una fecha o establecerla para que nunca expire (solo para bloques).
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -490,6 +490,6 @@ Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden 
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Qué esperar después de agregar una entrada de permitir o bloquear
 
-Después de agregar una entrada de permitir a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente.
+Después de agregar una entrada de permitir a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente una vez que la entrada esté activa. La entrada estará activa principalmente en 30 minutos, pero a veces puede tardar hasta 24 horas.
 
 Se recomienda permitir que las entradas expiren automáticamente después de 30 días para ver si el sistema ha obtenido información sobre el permiso o el bloque. Si no es así, debe realizar otra entrada para dar al sistema otros 30 días para aprender.

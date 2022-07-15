@@ -1,5 +1,5 @@
 ---
-title: Mitigación de amenazas en Microsoft 365 Lighthouse con Antivirus de Microsoft Defender
+title: Mitigación de amenazas en Microsoft 365 Lighthouse con antivirus de Microsoft Defender
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,23 +16,23 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la mitigación de amenazas con Antivirus de Microsoft Defender.
-ms.openlocfilehash: 3c600c8119ba3d4a252efcf5675ab58138a69b83
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la mitigación de amenazas con el Antivirus de Microsoft Defender.
+ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016688"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822055"
 ---
-# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Mitigación de amenazas en Microsoft 365 Lighthouse con Antivirus de Microsoft Defender
+# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Mitigación de amenazas en Microsoft 365 Lighthouse con antivirus de Microsoft Defender
 
-Microsoft 365 Lighthouse permite a los partners investigar y mitigar las amenazas en todos los inquilinos. También puede iniciar exámenes antivirus en dispositivos, asegurarse de que los dispositivos obtienen las actualizaciones más recientes de Antivirus de Microsoft Defender y revisar las acciones pendientes después de los exámenes antivirus. Lighthouse solo admite dispositivos que ejecutan Windows 10 o posterior.
+Microsoft 365 Lighthouse permite a los partners investigar y mitigar las amenazas en todos los inquilinos. También puede iniciar exámenes antivirus en dispositivos, asegurarse de que los dispositivos obtienen las actualizaciones más recientes del Antivirus de Microsoft Defender y revisar las acciones pendientes después de los exámenes antivirus. Lighthouse solo admite dispositivos que ejecutan Windows 10 o posterior.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Microsoft 365 Lighthouse solo se implementa en el inquilino del asociado, no en los inquilinos del cliente, sino que se asegura de que usted y los inquilinos del cliente cumplen los requisitos enumerados en [los requisitos de Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-- Los usuarios deben ejecutar Antivirus de Microsoft Defender (incluido con Windows). Lighthouse no admite software antivirus que no sea de Microsoft. Para obtener más información, vea [Activar Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows).
+- Los usuarios deben ejecutar el Antivirus de Microsoft Defender (incluido con Windows). Lighthouse no admite software antivirus que no sea de Microsoft. Para obtener más información, consulte [Activar antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows).
 
 - Debe ser administrador global en el inquilino de asociado en el que está iniciando sesión.
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse permite a los partners investigar y mitigar las amenaza
 
 Para investigar una amenaza específica:
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Amenazas** .
 
@@ -62,7 +62,7 @@ El panel de detalles de amenazas proporciona la siguiente información:
 
 Para investigar las amenazas en un dispositivo específico:
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Protección antivirus** .
 
@@ -76,7 +76,7 @@ Lighthouse muestra todas las amenazas que se encuentran en el dispositivo. Para 
 
 Un examen rápido busca ubicaciones comunes en las que podría haber malware, como claves del Registro y carpetas de inicio conocidos. Un examen completo busca en todo el dispositivo. En la mayoría de los casos, un examen rápido es suficiente y es la opción recomendada para los exámenes programados.
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Protección antivirus** .
 
@@ -86,11 +86,11 @@ Un examen rápido busca ubicaciones comunes en las que podría haber malware, co
 
 También puede examinar varios dispositivos seleccionando la casilla situada junto a cada nombre de dispositivo de la lista y, a continuación, seleccione **Ejecutar examen completo** o **Ejecutar examen rápido**.
 
-## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtención de actualizaciones para Antivirus de Microsoft Defender
+## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtención de actualizaciones para el Antivirus de Microsoft Defender
 
-Para actualizar Antivirus de Microsoft Defender en un único dispositivo:
+Para actualizar el Antivirus de Microsoft Defender en un solo dispositivo:
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Protección antivirus** .
 
@@ -106,7 +106,7 @@ Si necesita crear una nueva directiva, seleccione **Actualizar directiva** en el
 
 Cuando se aplican acciones consecutivas a un dispositivo, recibirá un mensaje de acción pendiente. Para comprobar qué acciones están pendientes en un dispositivo:
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Protección antivirus** .
 
@@ -118,7 +118,7 @@ Cuando se aplican acciones consecutivas a un dispositivo, recibirá un mensaje d
 
 Algunas actualizaciones pueden requerir que un dispositivo se reinicie para instalarse correctamente.
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Administración de amenazas**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione Administración **de amenazas de** **dispositivos** > .
 
 2. Seleccione la pestaña **Protección antivirus** .
 
@@ -133,5 +133,5 @@ También puede reiniciar varios dispositivos si selecciona la casilla situada ju
 [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artículo)\
 [Información general de la página Administración de amenazas en Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artículo)\
 [Crear una directiva de cumplimiento en Microsoft Intune](/mem/intune/protect/create-compliance-policy) (artículo)\
-[Activar Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (artículo)\
+[Activar antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (artículo)\
 [Inteligencia de seguridad de Microsoft](https://www.microsoft.com/wdsi/threats) (página web)

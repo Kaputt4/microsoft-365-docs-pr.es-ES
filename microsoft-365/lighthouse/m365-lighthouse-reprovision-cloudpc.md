@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo volver a aprovisionar un PC en la nube Windows 365 en Microsoft 365 Lighthouse.
-ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9ce402d1db83b07653c3e93a5e1e1c25406ae3e9
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017531"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822944"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Reprovisione un PC en la nube Windows 365 en Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Debe ser administrador de PC en la nube en el inquilino del asociado.
 
 ## <a name="reprovision-a-windows-365-cloud-pc"></a>Reprovisione un PC en la nube Windows 365
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Windows 365**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** >  **Windows 365**.
 
 2. Seleccione la pestaña **Todos los equipos en la nube** .
 
@@ -51,7 +51,7 @@ Debe ser administrador de PC en la nube en el inquilino del asociado.
 
 ## <a name="check-the-device-action-status"></a>Comprobación del estado de la acción del dispositivo
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Windows 365**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** >  **Windows 365**.
 
 2. Seleccione la pestaña **Todos los equipos en la nube** .
 

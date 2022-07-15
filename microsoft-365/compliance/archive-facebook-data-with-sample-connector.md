@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -15,18 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
-ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 79238bbbdcea71cf83342894d3b61e8047f5897a
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623361"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822887"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configuración de un conector para archivar datos de Facebook (versión preliminar)
 
 Use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de páginas de Facebook Business a Microsoft 365. Después de configurar y configurar el conector, se conecta a la página Facebook Business (de forma programada), convierte el contenido de los elementos de Facebook en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
 
 Una vez importados los datos de Facebook, puede aplicar las características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Facebook. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Facebook con un custodio en un caso de Microsoft Purview eDiscovery (Premium). El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Requisitos previos para configurar un conector para páginas de Facebook Business
 

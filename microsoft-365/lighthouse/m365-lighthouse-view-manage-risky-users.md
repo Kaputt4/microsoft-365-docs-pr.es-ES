@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios de riesgo.
-ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011846"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823427"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Visualización y administración de usuarios de riesgo en Microsoft 365 Lighthouse
 
-Microsoft recopila y analiza billones de señales de inicio de sesión de usuario cada día. Estas señales se usan para ayudar a crear buenos patrones de comportamiento de inicio de sesión de usuario e identificar posibles intentos de inicio de sesión de riesgo. Azure Active Directory (Azure AD) Identity Protection usa estas señales para revisar los intentos de inicio de sesión de los usuarios y tomar medidas si hay actividad sospechosa.
+Microsoft recopila y analiza billones de señales de inicio de sesión de usuario cada día. Estas señales se usan para ayudar a crear buenos patrones de comportamiento de inicio de sesión de usuario e identificar posibles intentos de inicio de sesión de riesgo. Identity Protection de Azure Active Directory (Azure AD) usa estas señales para revisar los intentos de inicio de sesión de los usuarios y tomar medidas si hay actividad sospechosa.
 
 Microsoft 365 Lighthouse ayuda a administrar los riesgos detectados por Azure AD Identity Protection proporcionando una vista única de los usuarios de riesgo en todos los inquilinos administrados. Para proteger rápidamente a los usuarios de riesgo, restablezca su contraseña o bloquee el inicio de sesión en su cuenta de Microsoft 365. También puede ver información para comprender mejor el riesgo de un usuario y determinar los pasos siguientes.
 
@@ -51,15 +51,13 @@ Se deben cumplir las condiciones siguientes para que los usuarios puedan aparece
 
 En Azure AD Identity Protection, las detecciones de riesgos incluyen las acciones sospechosas identificadas relacionadas con las cuentas de usuario de Azure AD.
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. Seleccione la pestaña **Usuarios de riesgo** .
+2. En la pestaña **Usuarios de riesgo** , revise los usuarios de la lista con un estado de riesgo **De riesgo**.
 
-3. Revise los usuarios de la lista con un estado de riesgo de **En riesgo**.
+3. Seleccione **Ver detecciones de riesgos** para obtener información detallada sobre los riesgos detectados para cada usuario. Para obtener más información sobre los tipos de riesgo y la detección, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
-4. Seleccione **Ver detecciones de riesgos** para obtener información detallada sobre los riesgos detectados para cada usuario. Para obtener más información sobre los tipos de riesgo y la detección, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
-
-5. Para cada usuario, evalúe las detecciones de riesgo y seleccione una de las siguientes acciones, según corresponda:
+4. Para cada usuario, evalúe las detecciones de riesgo y seleccione una de las siguientes acciones, según corresponda:
 
     - Restablecer contraseña: cambie o restablezca la contraseña de usuario.
 
@@ -73,9 +71,11 @@ En Azure AD Identity Protection, las detecciones de riesgos incluyen las accione
 
 Para realizar acciones en varios usuarios afectados a la vez:
 
-1. En la pestaña **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. Elija una de las siguientes acciones para realizar:
+2. En la pestaña **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
+
+3. Elija una de las siguientes acciones para realizar:
 
     - Restablecer contraseña
 

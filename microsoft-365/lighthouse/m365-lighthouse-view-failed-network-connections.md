@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver una conexión de red con errores en un equipo en la nube empresarial.
-ms.openlocfilehash: 20ec4d5157e215de29f8777a7a177cf51f912383
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015725"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823406"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Visualización de una conexión de red con errores en un equipo en la nube empresarial en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos del cliente y Azure Active Directory (Azure AD). Cuando un equipo en la nube tiene una conexión de red errónea, puede ver información detallada en el centro de administración de Microsoft Endpoint Manager.
+Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos del cliente y Azure Active Directory (Azure AD). Cuando un equipo en la nube tiene una conexión de red errónea, puede ver información detallada en el Centro de administración de Microsoft Endpoint Manager.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -35,7 +35,7 @@ Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos
 
 ## <a name="view-a-failed-network-connection"></a>Visualización de una conexión de red con errores
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Windows 365**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** >  **Windows 365**.
 
 2. Seleccione la pestaña **Conexiones de red de Azure** .
 
@@ -43,7 +43,7 @@ Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos
 
 4. En la lista filtrada, seleccione **Ver detalles de conexión en Microsoft Endpoint Manager** junto a la conexión que desea investigar.
 
-5. En el centro de administración de Microsoft Endpoint Manager, seleccione **Ver detalles** para obtener más información sobre el error.
+5. En el Centro de administración de Microsoft Endpoint Manager, seleccione **Ver detalles** para obtener más información sobre el error.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
@@ -53,4 +53,4 @@ Para solucionar problemas de conexión, consulte [Solución de problemas de cone
 
 [Control de acceso basado en rol de PC en la nube ](/windows-365/enterprise/role-based-access)(artículo)\
 [Unión a dominio de Active Directory](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (artículo)\
-[Azure Active Directory device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (artículo)
+[Sincronización de dispositivos de Azure Active Directory](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (artículo)

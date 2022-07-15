@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e34706e7fc6be5d813d718e0d927859ca91d9ee8
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641436"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823117"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
 
@@ -37,6 +37,8 @@ La configuración de un conector de badging físico consta de las siguientes tar
 - Ejecución de un script para insertar los datos físicos incorrectos en el punto de conexión de API.
 
 - Opcionalmente, puede programar el script para que se ejecute automáticamente para importar datos de errores físicos actualmente.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
@@ -69,13 +71,13 @@ El siguiente paso consiste en crear un archivo JSON que contenga información so
 
 El archivo JSON debe cumplir la definición de esquema requerida por el conector. Estas son descripciones de las propiedades de esquema necesarias para el archivo JSON:
 
-|Propiedad|Description|Tipo de datos|
+|Propiedad|Descripción|Tipo de datos|
 |---|---|---|
 |UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador de Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|Identificador de referencia del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|Marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|Cadena|
+|AccessStatus|Valor de `Success` o `Failed`|String|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema necesario:
@@ -195,7 +197,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos físicos 
 
    En la tabla siguiente se describen los parámetros que se usarán con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   |Parámetro|Description|
+   |Parámetro|Descripción|
    |---|---|
    |tenantId|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el tenantId de su organización en la hoja **Información general** del Centro de administración de Azure AD. Esto se usa para identificar su organización.|
    |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta acceder a la organización de Microsoft 365.|
@@ -231,7 +233,7 @@ Después de crear el conector de badging físico e insertar los datos físicos i
 
    ![El archivo de registro del conector de badging físico muestra el número de objetos del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   El campo **RecordsSaved** indica el número de registros en el archivo JSON que se cargaron. Por ejemplo, si el archivo JSON contiene cuatro registros, el valor de los campos **RecordsSaved** es 4 si el script cargó correctamente todos los registros en el archivo JSON. El campo **RecordsSkipped** indica el número de registros en el archivo JSON que se omitieron. Antes de cargar registros en el archivo JSON, se validarán los identificadores de correo electrónico de los registros. Se omitirá cualquier registro con un identificador de correo electrónico no válido y se mostrará el identificador de correo electrónico correspondiente en el campo **EmailIdsNotSaved**.
+   El campo **RecordsSaved** indica el número de registros en el archivo JSON que se cargaron. Por ejemplo, si el archivo JSON contiene cuatro registros, el valor de los campos **RecordsSaved** es 4 si el script cargó correctamente todos los registros en el archivo JSON. El campo **RecordsSkipped** indica el número de registros en el archivo JSON que se omitieron. Antes de cargar registros en el archivo JSON, se validarán los identificadores de Email de los registros. Se omitirá cualquier registro con un identificador de Email no válido y se mostrará el identificador de Email correspondiente en el campo **EmailIdsNotSaved**
 
 Si no ha ejecutado el script en el paso 4, se muestra un vínculo para descargar el script en **Última importación**. Puede descargar el script y, a continuación, seguir los pasos del paso 4 para ejecutarlo.
 

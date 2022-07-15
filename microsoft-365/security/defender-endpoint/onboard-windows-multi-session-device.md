@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 63966b84fc2d5a57f9c8b405a97d61ba17450dfb
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607441"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822143"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Incorporación de dispositivos Windows en Azure Virtual Desktop
 
@@ -70,7 +70,7 @@ Siga las instrucciones de una sola entrada para cada dispositivo.
 
 En este escenario se usa un script de ubicación central y se ejecuta mediante una directiva de grupo basada en dominio. También puede colocar el script en la imagen dorada y ejecutarlo de la misma manera.
 
-##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-365-defender-portal"></a>Descargue el archivo WindowsDefenderATPOnboardingPackage.zip desde el portal de Windows 365 Defender.
+##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-microsoft-365-defender-portal"></a>Descargue el archivo WindowsDefenderATPOnboardingPackage.zip desde el portal de Microsoft 365 Defender.
 
 1. Abra el archivo de .zip del paquete de configuración de VDI (WindowsDefenderATPOnboardingPackage.zip)
 

@@ -5,23 +5,25 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos de Slack eDiscovery proporcionado por Microsoft para importar y archivar datos de mensajería instantánea.
-ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9068679ce612f811e899b6f37f6e57e4ac4ac1b4
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631489"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823449"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configuración de un conector para archivar datos de Slack eDiscovery (versión preliminar)
 
 El conector de datos de Slack eDiscovery proporcionado por Microsoft le ayuda a importar y archivar datos de mensajería instantánea (como mensajes, datos adjuntos, vínculos y revisiones) desde las áreas de trabajo de Slack de su organización a Microsoft 365. El conector de datos extrae datos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365. Una vez importados los datos de Slack, puede aplicar soluciones de cumplimiento, como suspensión por juicio, Microsoft Purview eDiscovery (Premium), cumplimiento de comunicaciones y configuración de retención al contenido de Slack. El uso de un conector de datos de Slack eDiscovery para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Información general sobre el archivado de datos de eDiscovery de Slack
 
@@ -89,7 +91,7 @@ Seleccione una de las siguientes opciones para especificar qué usuarios cuyos d
 
 1. Configure una o ambas opciones para asignar usuarios de Slack a sus buzones de Microsoft 365.
 
-   - **Asignación automática de usuarios**. Seleccione esta opción para asignar automáticamente nombres de usuario de Slack a buzones de Microsoft 365. El conector usa el valor de la propiedad *Email* , que contiene cada mensaje o elemento de Slack. Esta propiedad se rellena con una dirección de correo electrónico de cada participante del mensaje. Si el conector puede asociar las direcciones de correo electrónico a los usuarios de Microsoft 365 correspondientes, el elemento se importa al buzón de Microsoft 365 de esos usuarios. Para usar esta opción, debe tener el inicio de sesión único configurado para su organización de Slack.
+   - **Asignación automática de usuarios**. Seleccione esta opción para asignar automáticamente nombres de usuario de Slack a buzones de Microsoft 365. El conector usa el valor de la propiedad *Email*, que contiene cada mensaje o elemento de Slack. Esta propiedad se rellena con una dirección de correo electrónico de cada participante del mensaje. Si el conector puede asociar las direcciones de correo electrónico a los usuarios de Microsoft 365 correspondientes, el elemento se importa al buzón de Microsoft 365 de esos usuarios. Para usar esta opción, debe tener el inicio de sesión único configurado para su organización de Slack.
 
    - **Asignación de usuarios personalizada**. También tiene la opción de usar la asignación de usuarios personalizada en lugar de (o además de) la asignación automática de usuarios. Con esta opción, debe crear y cargar un archivo CSV que asigne el identificador de miembro de Slack de los usuarios a su dirección de correo electrónico de Microsoft 365. Para ello, haga clic en **Descargar plantilla de asignación CSV**, rellene el archivo CSV con el identificador de miembro de Slack y la dirección de correo electrónico de Microsoft 365 para todos los usuarios de su organización y, a continuación, seleccione y cargue el archivo CSV en el asistente. Asegúrese de no cambiar los encabezados de columna en el archivo CSV. Este es un ejemplo del archivo de asignación CSV:
 
@@ -103,7 +105,7 @@ Seleccione una de las siguientes opciones para especificar qué usuarios cuyos d
    > [!TIP]
    > Los identificadores de miembro para los usuarios se pueden obtener haciendo clic en ... Botón Más en el perfil de un usuario y, a continuación, seleccione **Copiar identificador de miembro**. Como alternativa, puede usar el [método de API users.list](https://api.slack.com/methods/users.list) de Slack para obtener los identificadores de todos los miembros de un equipo de Slack.
 
-   Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizado, el conector examinará primero el archivo de asignación personalizado para asignar el usuario de Slack a un buzón de Microsoft 365. Si el conector no encuentra un usuario válido de Microsoft 365 que se corresponda con el usuario de Slack, el conector usará la propiedad *Email* del elemento Slack. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *Email* del elemento de mensaje, el elemento no se importará.
+   Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizado, el conector examinará primero el archivo de asignación personalizado para asignar el usuario de Slack a un buzón de Microsoft 365. Si el conector no encuentra un usuario válido de Microsoft 365 que se corresponda con el usuario de Slack, el conector usará la propiedad *Email* del elemento de Slack. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *Email* del elemento de mensaje, el elemento no se importará.
 
 2. En la página **Seleccionar tipos de datos para importar** el asistente, seleccione los tipos de datos de Slack que desea importar. Si desea importar mensajes de todos los canales, seleccione todas las opciones. De lo contrario, seleccione solo los tipos de datos que desea importar.
 

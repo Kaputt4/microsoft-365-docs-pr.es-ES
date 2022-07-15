@@ -55,7 +55,6 @@
 #### [Incorporar al cliente Windows mediante un script local](configure-endpoints-script.md)
 #### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 #### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
 #### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Integración con Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
 ### [Ejecutar ataques simulados en dispositivos](attack-simulations.md)
+### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
 ### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 ### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
 

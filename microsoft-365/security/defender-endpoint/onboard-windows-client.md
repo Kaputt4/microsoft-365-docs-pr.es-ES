@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 95fcb9c86b6b733e0597768a1705aca2b971dc8c
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 60b7e78902dff29278e3fe960e016e38c10cf296
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532745"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822165"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-client"></a>Incorporación de Cliente windows de Defender para punto de conexión
 
@@ -44,7 +44,7 @@ En general, identificará el cliente que va a incorporar y, a continuación, seg
 :::image type="content" source="images/onboarddevices.png" alt-text="Incorporación de dispositivos" lightbox="images/onboarddevices.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporación de dispositivos Windows mediante Microsoft Intune](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)

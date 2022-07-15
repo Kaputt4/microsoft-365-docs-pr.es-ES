@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (PC en la nube).
-ms.openlocfilehash: dded3bc455a66a77ae325f1d6a54660a88846c1e
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 1698c9298981778cb01e01715b794dd43a4daf3c
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787240"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823483"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Información general de la página Windows 365 (PC en la nube) en Microsoft 365 Lighthouse  
   
@@ -33,7 +33,7 @@ Para obtener más información sobre Windows 365, consulte [¿Qué es Windows 36
 > [!IMPORTANT]
 > Debe ir a [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) para aprovisionar equipos en la nube para cada inquilino de cliente antes de poder administrarlos en Lighthouse. No se puede aprovisionar desde Lighthouse.
 
-Una vez que haya aprovisionado equipos en la nube para el inquilino del cliente, la tarjeta de Windows 365 de la página principal de Microsoft 365 proporciona una breve alerta sobre los equipos en la nube que necesitan acción, como el número de equipos en la nube que no se pudieron aprovisionar y los errores de conexión de red de Azure. Para obtener un estado detallado, seleccione el botón de la tarjeta de Windows 365 (o seleccione **Windows 365** en el panel de navegación izquierdo) para abrir la página de Windows 365. En esta página, puede obtener información general sobre el estado de los equipos en la nube asignados a los inquilinos del cliente, ver una lista de todos los equipos en la nube que administra y los inquilinos a los que están asignados y ver las conexiones de red de Azure entre los inquilinos del cliente y Azure Active Directory (Azure AD) y su estado.
+Una vez que haya aprovisionado equipos en la nube para el inquilino del cliente, la tarjeta de Windows 365 de la página principal de Microsoft 365 proporciona una breve alerta sobre los equipos en la nube que necesitan acción, como el número de equipos en la nube que no se pudieron aprovisionar y los errores de conexión de red de Azure. Para obtener un estado detallado, seleccione el botón de la tarjeta Windows 365 (o seleccione **Dispositivos** >  **Windows 365** en el panel de navegación izquierdo) para abrir la página de Windows 365. En esta página, puede obtener información general sobre el estado de los equipos en la nube asignados a los inquilinos del cliente, ver una lista de todos los equipos en la nube que administra y los inquilinos a los que están asignados y ver las conexiones de red de Azure entre los inquilinos del cliente y Azure Active Directory (Azure AD) y su estado.
 
 ## <a name="overview-tab"></a>‎Pestaña da Información general
 

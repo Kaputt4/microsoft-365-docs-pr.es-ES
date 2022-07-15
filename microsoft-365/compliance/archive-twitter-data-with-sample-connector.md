@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 83558b4a2f188853b4deac31cf636476480a2557
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625564"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822255"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configuración de un conector de Microsoft para archivar datos de Twitter (versión preliminar)
 
@@ -29,6 +29,8 @@ Use un conector en el portal de cumplimiento Microsoft Purview para importar y a
 Una vez importados los datos de Twitter, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, la búsqueda de contenido, el archivado de In-Place, la auditoría y las directivas de retención de Microsoft 365 a los datos de Twitter. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Twitter. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Twitter con un custodio en un caso de Microsoft Purview eDiscovery (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 Una vez importados los datos de Twitter, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos almacenados en el buzón. Por ejemplo, puede buscar datos de Twitter mediante búsqueda de contenido o asociar el buzón donde se almacenan los datos con un custodio en un caso de exhibición de documentos electrónicos (Premium). El uso de un conector para importar y archivar datos de Twitter en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 

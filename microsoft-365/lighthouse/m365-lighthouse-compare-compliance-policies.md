@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo comparar la configuración de directivas de cumplimiento de dispositivos.
-ms.openlocfilehash: 5b82067f7d06ddd599a0e8da73825e536cf2d3fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008427"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822909"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Comparar la configuración de la directiva de cumplimiento de dispositivos en Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Asegúrese de que los dispositivos tengan una licencia de Microsoft Intune y que
 
 ## <a name="compare-policy-settings"></a>Comparación de la configuración de directiva
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **de cumplimiento de dispositivos**.
 
 2. Seleccione la pestaña **Directivas**.
 
@@ -47,11 +47,11 @@ Asegúrese de que los dispositivos tengan una licencia de Microsoft Intune y que
 
 5. Seleccione **Comparar**.
 
-Puede filtrar los resultados para ver **Configuración que difieren**, **Configuración que coinciden** o **configuración configurada**.
+Puede filtrar los resultados para ver **Configuración diferente**, **Configuración que coincide** o **Configuración configurada**.
 
 ## <a name="configure-a-policy-setting"></a>Configuración de una directiva
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **de cumplimiento de dispositivos**.
 
 2. Seleccione la pestaña **Directivas**.
 

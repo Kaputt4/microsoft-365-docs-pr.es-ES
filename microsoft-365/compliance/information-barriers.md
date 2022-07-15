@@ -17,16 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621125"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823397"
 ---
 # <a name="learn-about-information-barriers"></a>Más información acerca de las barreras de información
 
-Microsoft Purview Information Barriers (IB) es una solución de cumplimiento que permite restringir la comunicación bidireccional y la colaboración entre grupos y usuarios en Microsoft Teams, SharePoint Online y OneDrive para la Empresa. A menudo utilizado en sectores altamente regulados, el IB puede ayudar a evitar conflictos de interés y a proteger la información interna entre los usuarios y las áreas organizativas.
+Microsoft Purview Information Barriers (IB) es una solución de cumplimiento que permite restringir la comunicación bidireccional y la colaboración entre grupos y usuarios en Microsoft Teams, SharePoint y OneDrive. A menudo utilizado en sectores altamente regulados, el IB puede ayudar a evitar conflictos de interés y a proteger la información interna entre los usuarios y las áreas organizativas.
 
 Cuando se aplican directivas de IB, los usuarios que no deben comunicarse o compartir archivos con otros usuarios específicos no podrán encontrar, seleccionar, chatear o llamar a esos usuarios. Las directivas de IB establecen automáticamente comprobaciones para detectar y evitar la comunicación y colaboración no autorizadas entre grupos y usuarios definidos. Las directivas de IB son independientes de [los límites de cumplimiento](/microsoft-365/compliance/set-up-compliance-boundaries) de las investigaciones de eDiscovery que controlan las ubicaciones de contenido de usuario que los administradores de eDiscovery pueden buscar.
 
@@ -61,7 +61,7 @@ Para obtener más información, consulte [Barreras de información en Microsoft 
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>Barreras de información y SharePoint y OneDrive
 
-En SharePoint Online y OneDrive, las directivas de IB detectan y evitan los siguientes tipos de colaboración no autorizada:
+En SharePoint y OneDrive, las directivas de IB detectan y evitan los siguientes tipos de colaboración no autorizada:
 
 - Adición de un miembro a un sitio
 - Acceso al sitio o al contenido por parte de un usuario

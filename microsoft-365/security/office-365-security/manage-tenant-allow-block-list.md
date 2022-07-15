@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1790b908389839b1fd35525d5f8e33b58192d67
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d8ac90e8e9b7b955457c9bd90cae68e18cb69915
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492169"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822202"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 
@@ -65,7 +65,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
   - Hash de archivo = 64
   - URL = 250
 
-- Una entrada debe estar activa en un plazo de 30 minutos.
+- Una entrada debe estar activa en un plazo de 30 minutos, pero la entrada puede tardar hasta 24 horas en estar activa.
 
 - De forma predeterminada, las entradas de la lista de inquilinos permitidos o bloqueados expirarán después de 30 días. Puede especificar una fecha o establecerla para que nunca expire (para el tipo de bloque de entradas).
 
@@ -150,20 +150,20 @@ Se recomienda permitir que las entradas expiren automáticamente después de 30 
    Haga clic en **Filtrar** para filtrar los resultados. Los valores que están disponibles en el control flotante **Filtro** que aparece dependen de la pestaña seleccionada:
 
    - **Remitentes**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
    - **Spoofing**
-     - **Action**
+     - **Acción**
      - **Tipo de suplantación de identidad**
    - **Url**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
    - **Files**
-     - **Action**
+     - **Acción**
      - **Nunca expirar**
      - **Actualizado por última vez**
      - **Quitar activado**
@@ -210,7 +210,7 @@ Se recomienda permitir que las entradas expiren automáticamente después de 30 
    - **Url**
    - **Files**
 
-3. Seleccione la entrada que desea quitar y, a continuación, haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+3. Seleccione la entrada que desea quitar y, a continuación, haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
 4. En el cuadro de diálogo de advertencia que aparece, haga clic en **Eliminar**.
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490517"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823172"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -154,7 +154,14 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
         - Elija **Perfil de trabajo solo** como Tipo de perfil.
         - Haga clic en **Seleccionar aplicación**, elija **ATP de Microsoft Defender**, seleccione **Aceptar** y, a continuación, **Siguiente**.
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" Panel de detalles de la aplicación asociada" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" Captura de pantalla del panel de detalles de la aplicación asociada." lightbox="images/android-create-app.png":::
+     
+    1. Seleccione **Permisos > Agregar**. En la lista, seleccione los permisos de aplicación disponibles > **Aceptar**.
+    2. Seleccione una opción para cada permiso que se conceda con esta directiva:
+
+       - **Preguntar** : solicita al usuario que acepte o deniegue.
+       - **Concesión automática** : se aprueba automáticamente sin notificar al usuario.
+       - **Denegación automática** : deniega automáticamente sin notificar al usuario. 
 
     1. En la página **Configuración** , vaya a la sección **Configuración** y elija **"Usar diseñador de configuración"** en Formato de configuración. 
 
@@ -231,7 +238,7 @@ Defender for Endpoint admite directivas de configuración de dispositivos para d
 
    En la página **Asignaciones** , seleccione el grupo de usuarios al que se asignaría esta directiva de configuración de aplicaciones. Elija **Seleccionar grupos** para incluir y seleccionar el grupo aplicable y, a continuación, seleccione **Siguiente**. El grupo seleccionado aquí suele ser el mismo grupo al que asignaría Microsoft Defender para punto de conexión aplicación Android.
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Panel Asignación del perfil de configuración de dispositivos en Restricciones de dispositivos" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Captura de pantalla del panel Asignación del perfil de configuración de dispositivos en Restricciones de dispositivos." lightbox="images/4autosetupofvpn.png":::
 
 5. En la página **Revisar y crear** que aparece a continuación, revise toda la información y, a continuación, seleccione **Crear**.
 El perfil de configuración del dispositivo ahora se asigna al grupo de usuarios seleccionado.
