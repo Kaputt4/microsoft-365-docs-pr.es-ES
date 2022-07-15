@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 06bcba129646eb7c3f820d95dae5fd3fc77805dd
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: fbcad753d88b3ead3c6a9b37330f29b1b1fbb7a9
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923267"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798113"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -51,7 +51,7 @@ También puede proporcionar registros adicionales al envío al soporte técnico 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Comprobación con el proveedor de exclusiones de antivirus
 
-Si puede identificar fácilmente el software que afecta al rendimiento del sistema, vaya a la base de conocimiento o al centro de soporte técnico del proveedor de software. Busque si tiene recomendaciones sobre exclusiones antivirus. Si el sitio web del proveedor no los tiene, puede abrir una incidencia de soporte técnico con ellos y pedirle que publique una.
+Si puede identificar fácilmente el software que afecta al rendimiento del sistema, vaya al centro de soporte técnico o knowledge base del proveedor de software. Busque si tiene recomendaciones sobre exclusiones antivirus. Si el sitio web del proveedor no los tiene, puede abrir una incidencia de soporte técnico con ellos y pedirle que publique una.
 
 Se recomienda que los proveedores de software sigan las distintas directrices de [Asociación con el sector para minimizar los falsos positivos](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). El proveedor puede enviar su software a través del [portal de Inteligencia de seguridad de Microsoft](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
@@ -84,7 +84,7 @@ Si el paso anterior no resuelve el problema, puede recopilar más información a
 
 Monitor de procesos (ProcMon) es una herramienta de supervisión avanzada que puede mostrar procesos en tiempo real. Puede usarlo para capturar el problema de rendimiento a medida que se está produciendo.
 
-1. Descargue [Process Monitor v3.60](/sysinternals/downloads/procmon) en una carpeta como `C:\temp`.
+1. Descargue [Process Monitor v3.89](/sysinternals/downloads/procmon) en una carpeta como `C:\temp`.
 
 2. Para quitar la marca del archivo de la web:
     1. Haga clic con el botón derecho en **ProcessMonitor.zip** y seleccione **Propiedades**.
@@ -161,11 +161,11 @@ Monitor de procesos (ProcMon) es una herramienta de supervisión avanzada que pu
 
 Puedes usar Windows Performance Recorder (WPR) para incluir información adicional en tu envío al soporte técnico de Microsoft. WPR es una potente herramienta de grabación que crea seguimiento de eventos para grabaciones de Windows.
 
-WPR forma parte del Kit de evaluación e implementación de Windows (Windows ADK) y se puede descargar desde [Descargar e instalar Windows ADK](/windows-hardware/get-started/adk-install). También puedes descargarlo como parte del Kit de desarrollo de software de Windows 10 en [el SDK de Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+WPR forma parte del Kit de evaluación e implementación de Windows (Windows ADK) y se puede descargar desde [Descargar e instalar Windows ADK](/windows-hardware/get-started/adk-install). También puede descargarlo como parte del kit de desarrollo de software de Windows 10 en [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 Puede usar la interfaz de usuario de WPR siguiendo los pasos descritos en [Capturar registros de rendimiento mediante la interfaz de usuario de WPR](#capture-performance-logs-using-the-wpr-ui).
 
-Como alternativa, también puede usar la herramienta de línea de comandos *wpr.exe*, que está disponible en Windows 8 y versiones posteriores siguiendo los pasos descritos en [Capturar registros de rendimiento mediante la CLI de WPR](#capture-performance-logs-using-the-wpr-cli).
+Como alternativa, también puede usar la herramienta de línea de comandos *wpr.exe*, que está disponible en Windows 8 y versiones posteriores siguiendo los pasos descritos en [Captura de registros de rendimiento mediante la CLI de WPR](#capture-performance-logs-using-the-wpr-cli).
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Captura de registros de rendimiento mediante la interfaz de usuario de WPR
 
@@ -184,7 +184,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
    :::image type="content" source="images/wpt-yes.png" alt-text="Página de UAC" lightbox="images/wpt-yes.png":::
 
-4. A continuación, descargue el perfil de [análisis de Microsoft Defender para punto de conexión](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) y guárdelo en `MDAV.wprp` una carpeta como `C:\temp`.
+4. A continuación, descargue el perfil [de análisis Microsoft Defender para punto de conexión](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) y guárdelo en `MDAV.wprp` una carpeta como `C:\temp`.
 
 5. En el cuadro de diálogo WPR, seleccione **Más opciones**.
 
@@ -193,7 +193,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
 6. Seleccione **Agregar perfiles...** y vaya a la ruta de acceso del `MDAV.wprp` archivo.
 
-7. Después de eso, debería ver un nuevo perfil establecido en *Medidas personalizadas* denominado *Análisis de Microsoft Defender para punto de conexión* debajo de él.
+7. Después, debería ver un nuevo perfil establecido en *Medidas personalizadas denominadas* *Microsoft Defender para punto de conexión análisis* debajo de él.
 
    :::image type="content" source="images/wpr-infile.png" alt-text="El archivo en" lightbox="images/wpr-infile.png":::
 
@@ -201,11 +201,11 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
     > Si Windows Server tiene 64 GB de RAM o más, use la medida `Microsoft Defender for Endpoint analysis for large servers` personalizada en lugar de `Microsoft Defender for Endpoint analysis`. De lo contrario, el sistema podría consumir una gran cantidad de memoria de grupo no paginado o búferes, lo que puede provocar inestabilidad en el sistema. Puede elegir qué perfiles agregar expandiendo **Análisis de recursos**.
     Este perfil personalizado proporciona el contexto necesario para un análisis detallado del rendimiento.
 
-8. Para usar el perfil de análisis detallado de Medida personalizada de Microsoft Defender para punto de conexión en la interfaz de usuario de WPR:
+8. Para usar la medición personalizada Microsoft Defender para punto de conexión perfil de análisis detallado en la interfaz de usuario de WPR:
 
     1. Asegúrese de que no hay perfiles seleccionados en los grupos De *evaluación de prioridades de primer nivel*, *Análisis de recursos* y *Análisis de escenarios* .
     2. Seleccione **Medidas personalizadas**.
-    3. Seleccione **Análisis de Microsoft Defender para punto de conexión**.
+    3. Seleccione **Microsoft Defender para punto de conexión análisis**.
     4. Seleccione **Detallado** en *Nivel de detalle* .
     5. Seleccione **Archivo** o **memoria** en Modo de registro.
 
@@ -247,7 +247,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
     :::image type="content" source="images/wpr-14.png" alt-text="Página que muestra la notificación de que se ha guardado el seguimiento de WPR" lightbox="images/wpr-14.png":::
 
-    Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
+    Incluya el archivo y la carpeta en el envío a Soporte técnico de Microsoft.
 
     :::image type="content" source="images/wpr-15.png" alt-text="Detalles del archivo y la carpeta" lightbox="images/wpr-15.png":::
 
@@ -255,13 +255,13 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
 La herramienta de línea de comandos *wpr.exe* forma parte del sistema operativo a partir de Windows 8. Para recopilar un seguimiento de WPR mediante la herramienta de línea de comandos wpr.exe:
 
-1. Descargue el perfil de **[análisis de Microsoft Defender para punto de conexión](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** para los seguimientos de rendimiento en un archivo denominado `MDAV.wprp` en un directorio local como `C:\traces`.
+1. Descargue **[Microsoft Defender para punto de conexión](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** perfil de análisis para los seguimientos de rendimiento en un archivo denominado `MDAV.wprp` en un directorio local como `C:\traces`.
 
-2. Haga clic con el botón derecho en el icono **menú Inicio** y seleccione **Windows PowerShell (administrador)** o **símbolo del sistema (administrador)** para abrir una ventana del símbolo del sistema de administración.
+2. Haga clic con el botón derecho en el icono **menú Inicio** y seleccione **Windows PowerShell (Administración)** o **símbolo del sistema (Administración)** para abrir una ventana del símbolo del sistema Administración.
 
 3. Cuando aparezca el cuadro de diálogo Control de cuentas de usuario, seleccione **Sí**.
 
-4. En el símbolo del sistema con privilegios elevados, ejecute el siguiente comando para iniciar un seguimiento de rendimiento de Microsoft Defender para punto de conexión:
+4. En el símbolo del sistema con privilegios elevados, ejecute el siguiente comando para iniciar un seguimiento de rendimiento Microsoft Defender para punto de conexión:
 
     ```console
     wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode

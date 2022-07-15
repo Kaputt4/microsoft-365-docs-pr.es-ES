@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo las herramientas de exhibición de documentos electrónicos de Microsoft 365 controlan documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 5e94c7b09745d017d5fa91d39a58c9d5351e911a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770863"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798091"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en herramientas de exhibición de documentos electrónicos de Microsoft 365
 
@@ -35,7 +35,7 @@ Antes de esta nueva funcionalidad, solo se descifraba el contenido de un mensaje
 
 ## <a name="supported-encryption-technologies"></a>Tecnologías de cifrado admitidas
 
-Para Exchange, las herramientas de Exhibición de documentos electrónicos de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías son Azure Rights Management (Azure RMS)<sup>3</sup> y Microsoft Purview Information Protection (específicamente las etiquetas de confidencialidad). Para obtener más información sobre las tecnologías de cifrado de Microsoft, consulte [Cifrado](encryption.md). No se admite el contenido cifrado por S/MIME o tecnologías de cifrado de terceros. Por ejemplo, no se admite la vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
+Para Exchange, las herramientas de Exhibición de documentos electrónicos de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías son Azure Rights Management (Azure RMS)<sup>3</sup> y Microsoft Purview Information Protection (específicamente las etiquetas de confidencialidad). Para obtener más información sobre las tecnologías de cifrado de Microsoft, consulte [Cifrado](encryption.md) y las distintas opciones de [cifrado de correo electrónico](email-encryption.md#comparing-email-encryption-options-available-in-office-365) disponibles. No se admite el contenido cifrado por S/MIME o tecnologías de cifrado de terceros. Por ejemplo, no se admite la vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
 
 > [!NOTE]
 > Las herramientas de Microsoft eDiscovery no admiten el descifrado de mensajes de correo electrónico enviados con una [plantilla de personalización de marca personalizada](add-your-organization-brand-to-encrypted-messages.md) Cifrado de mensajes de Microsoft Purview. Cuando se usa una plantilla de personalización de marca personalizada de OME, los mensajes de correo electrónico se entregan en el portal de OME en lugar del buzón del destinatario. Por lo tanto, no podrá usar herramientas de exhibición de documentos electrónicos para buscar mensajes cifrados porque el buzón del destinatario nunca recibe esos mensajes.
@@ -91,7 +91,7 @@ Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS)
 
 ## <a name="notes"></a>Notas
 
-<sup>1</sup> Los archivos cifrados ubicados en un equipo local y los datos adjuntos en la nube copiados en un mensaje de correo electrónico no se descifran e indexen para eDiscovery. 
+<sup>1</sup> Los archivos cifrados ubicados en un equipo local y copiados en un mensaje de correo electrónico no se descifran e indexen para eDiscovery. En el caso de eDiscovery (Premium), el correo electrónico cifrado y los datos adjuntos en el buzón de correo del destinatario deben estar indizados avanzados para descifrarse. Para obtener más información sobre la indexación avanzada, vea [Indexación avanzada de datos custodios](indexing-custodian-data.md).
 
 <sup>2</sup> Solo se descifrarán los elementos etiquetados dentro del servicio en línea de SharePoint, todo lo demás no se admite, incluido el etiquetado o cifrado en el cliente antes de la carga, las plantillas o la configuración de RMS de biblioteca de documentos heredadas, SMIME o cualquier otro estándar, etc. Consulte [Habilitación de etiquetas de confidencialidad para archivos de Office](sensitivity-labels-sharepoint-onedrive-files.md).
 

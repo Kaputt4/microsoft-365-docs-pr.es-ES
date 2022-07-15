@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490108"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798177"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -98,7 +98,9 @@ Para las nuevas organizaciones o organizaciones anteriores que nunca tenían hab
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Paso 1: Crear directivas de cuarentena en el portal de Microsoft 365 Defender
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& directivas** de **cuarentena** de reglas  \> \> en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **directivas de colaboración Email &**  **directivas de** colaboración \> & directivas de **cuarentena** de reglas \> \> directivas de cuarentena en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Página Directiva de cuarentena en el portal de Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-page.png":::
 
 2. En la página **Directivas de cuarentena** , haga clic en el ![icono Agregar directiva personalizada.](../../media/m365-cc-sc-create-icon.png) **Agregar directiva personalizada**.
 
@@ -160,8 +162,8 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToBlockSender|16 |00010000|
 |PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
 |PermissionToRelease<sup>\*\*\*</sup>|4 |00000100|
-|PermissionToPreview|2 |00000010|
-|PermissionToDelete|1 |00000001|
+|PermissionToPreview|2|00000010|
+|PermissionToDelete|1|00000001|
 
 <sup>\*</sup> El valor 0 no oculta el botón **Ver encabezado del mensaje** en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -176,11 +178,11 @@ Para los permisos de acceso limitado, los valores necesarios son:
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
-|PermissionToBlockSender|1 |
-|PermissionToRequestRelease|1 |
+|PermissionToBlockSender|1|
+|PermissionToRequestRelease|1|
 |PermissionToRelease|0|
-|PermissionToPreview|1 |
-|PermissionToDelete|1 |
+|PermissionToPreview|1|
+|PermissionToDelete|1|
 |Valor binario|00011011|
 |Valor decimal que se va a usar|27|
 
@@ -203,7 +205,7 @@ En las características _de protección admitidas_ que ponen en cuarentena los m
 |[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam de alta confianza** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de alta confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul>|
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección contra suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si el mensaje se detecta como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia del buzón detecta y suplanta a un usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>Protección contra suplantación:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Protección de datos adjuntos seguros](safe-attachments.md): <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos seguros (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Protección de datos adjuntos seguros](safe-attachments.md): <ul><li>Email mensajes con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos seguros (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
 |[Reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) con la acción: **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|No|No aplicable|
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo](#full-access-permissions-and-quarantine-notifications), su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena están activadas en NotificationEnabledPolicy y desactivadas en DefaultFullAccessPolicy.
@@ -220,7 +222,7 @@ Las directivas de cuarentena predeterminadas, los grupos de permisos preestablec
 
 ### <a name="anti-spam-policies"></a>Directivas contra correo electrónico no deseado
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas Directivas** \> \> de **amenazas** **Antispam** en la sección **Directivas**.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Directivas de colaboración Email &** **reglas de &** \> **Directivas** \> \> **de amenazas Antispam** en la sección **Directivas**.
 
    O bien, para ir directamente a la página **Directivas de correo no deseado de Ant** , use <https://security.microsoft.com/antispam>.
 
@@ -289,7 +291,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 La inteligencia sobre suplantación de identidad está disponible en EOP y Defender para Office 365. La protección de suplantación de usuario, la protección de suplantación de dominio y la inteligencia de buzones solo están disponibles en Defender para Office 365. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas Directivas** \> \> de **amenazas** **Anti-phishing** en la sección **Directivas**.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Directivas de colaboración** \> **Email & & reglas Directivas** \> \> de **amenazas** **Anti-phishing** en la sección **Directivas**.
 
    O bien, para ir directamente a la página **Directivas de correo no deseado de Ant** , use <https://security.microsoft.com/antiphishing>.
 
@@ -372,7 +374,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="anti-malware-policies"></a>Directivas antimalware
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Directivas de colaboración** \> **Email & & reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 
    O bien, para ir directamente a la página **Antimalware** , use <https://security.microsoft.com/antimalwarev2>.
 
@@ -428,7 +430,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Directivas de datos adjuntos seguros en Defender para Office 365
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Directivas de colaboración** \> **Email & & reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
 
    O bien, para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
@@ -492,7 +494,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 La configuración global de las directivas de cuarentena le permite personalizar las notificaciones de cuarentena que se envían a los destinatarios de los mensajes en cuarentena si las notificaciones de cuarentena están activadas en la directiva de cuarentena. Para obtener más información sobre estas notificaciones, consulte [Cuarentena de notificaciones](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas de colaboración** \> & correo electrónico **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+1. En el portal de Microsoft 365 Defender, vaya a **directivas de colaboración** \> de Email & **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
 
 2. En la página **Directivas de cuarentena** , seleccione **Configuración global**.
 
@@ -531,9 +533,11 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Control flotante de configuración de notificaciones de cuarentena en el portal de Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
+
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Ver directivas de cuarentena en el portal de Microsoft 365 Defender
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas de colaboración** \> & correo electrónico **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+1. En el portal de Microsoft 365 Defender, vaya a **directivas de colaboración** \> de Email & **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
 
 2. La página **Directivas de cuarentena** muestra la lista de directivas por **nombre** y **fecha de última actualización** .
 
@@ -569,7 +573,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 No puede modificar las directivas de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Puede modificar la directiva integrada denominada NotificationEnabledPolicy ([si la tiene](#full-access-permissions-and-quarantine-notifications)) y las directivas de cuarentena personalizadas.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas de colaboración** \> & correo electrónico **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+1. En el portal de Microsoft 365 Defender, vaya a **directivas de colaboración** \> de Email & **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
 
 2. En la página **Directivas de cuarentena** , seleccione la directiva haciendo clic en el nombre.
 
@@ -606,7 +610,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
   Si se usa la directiva de cuarentena, [reemplace la directiva de cuarentena asignada](#step-2-assign-a-quarantine-policy-to-supported-features) antes de quitarla.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas de colaboración** \> & correo electrónico **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
+1. En el portal de Microsoft 365 Defender, vaya a **directivas de colaboración** \> de Email & **& reglas** \>  \> Directivas de **cuarentena** de amenazas en la sección **Reglas**. O bien, para ir directamente a la página **Directivas de cuarentena** , use <https://security.microsoft.com/quarantinePolicies>.
 
 2. En la página **Directivas de cuarentena** , seleccione la directiva de cuarentena personalizada que desea quitar haciendo clic en el nombre.
 
@@ -686,7 +690,7 @@ Si la directiva de cuarentena asigna los permisos **de acceso completo** (todos 
 
 - **Notificaciones de cuarentena**: están disponibles los siguientes botones:
   - **Bloquear remitente**
-  - **Release**
+  - **Liberar**
   - **Revisar**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Los botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso completo" lightbox="../../media/quarantine-tags-esn-full-access.png":::
