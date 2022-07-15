@@ -341,7 +341,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
 
-:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
+:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos." lightbox="../media/manage-site-sensitivity-labels.png"
 
 Para obtener más información sobre la administración de sitios desde la página Sitios activos, incluido cómo agregar una columna, vea [Administrar sitios en el nuevo centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
