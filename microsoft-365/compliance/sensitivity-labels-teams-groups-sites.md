@@ -50,7 +50,7 @@ Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la 
 
 Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
-:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word". lightbox="../media/sensitivity-label-word.png"
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word." lightbox="../media/sensitivity-label-word.png"
 
 Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
@@ -341,7 +341,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
 
-:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
+:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
 
 Para obtener más información sobre la administración de sitios desde la página Sitios activos, incluido cómo agregar una columna, vea [Administrar sitios en el nuevo centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
