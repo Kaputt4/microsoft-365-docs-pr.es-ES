@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795430"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827210"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -150,7 +150,7 @@ Puede usar el comando de PowerShell: Import-Certificate -FilePath .\InterCA.cer 
 
 Microsoft Defender para punto de conexión se integra perfectamente con Microsoft Defender for Cloud. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Microsoft Defender for Cloud aparezcan en Defender para punto de conexión y realizar investigaciones detalladas como cliente de Microsoft Defender for Cloud. 
 
-Para obtener más información, consulte [Integración con Microsoft Defender for Cloud](azure-server-integration.md). Los servidores incorporados a través de Microsoft Defender for Cloud tendrán su configuración inicial establecida para ejecutar Antivirus de Defender en [modo pasivo](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+Para obtener más información, consulte [Integración con Microsoft Defender for Cloud](azure-server-integration.md). Los servidores Linux incorporados a través de Microsoft Defender for Cloud tendrán su configuración inicial establecida para ejecutar Antivirus de Defender en [modo pasivo](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 > [!NOTE]
 > - La integración entre Microsoft Defender para servidores y Microsoft Defender para punto de conexión se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)

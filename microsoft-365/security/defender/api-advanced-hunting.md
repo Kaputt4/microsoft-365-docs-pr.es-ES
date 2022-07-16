@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692769"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827188"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -67,7 +67,7 @@ Delegado (cuenta profesional o educativa) | AdvancedHunting.Read | Ejecución de
 >[!Note]
 > Al obtener un token con credenciales de usuario:
 >
->- El usuario debe tener el rol de AD "Ver datos".
+>- El usuario debe tener el rol "Ver datos".
 >- El usuario debe tener acceso al dispositivo, en función de la configuración del grupo de dispositivos.
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -89,7 +89,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros sig
 
 Parámetro | Tipo | Descripción
 -|-|-
-Consulta | Texto | Consulta que se va a ejecutar. **(obligatorio)**
+Query | Text | Consulta que se va a ejecutar. **(obligatorio)**
 
 ## <a name="response"></a>Respuesta
 
@@ -105,7 +105,7 @@ El objeto de respuesta contiene tres propiedades de nivel superior:
 
 En el ejemplo siguiente, un usuario envía la consulta siguiente y recibe un objeto de respuesta de API que contiene `Stats`, `Schema`y `Results`.
 
-### <a name="query"></a>Consulta
+### <a name="query"></a>Query
 
 ```json
 {
