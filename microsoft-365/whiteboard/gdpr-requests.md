@@ -15,7 +15,7 @@ description: Obtenga información sobre cómo exportar, transferir o eliminar in
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
 ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2022
 ms.locfileid: "66717745"
