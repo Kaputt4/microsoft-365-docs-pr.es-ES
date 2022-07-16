@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622137"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797959"
 ---
 # <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 
@@ -52,10 +52,9 @@ Para más información, vea:
 
 ### <a name="manually-activating-azure-rights-management"></a>Activar Azure Rights Management manualmente
 
-Si deshabilitó Azure RMS, o si no se activó automáticamente por algún motivo, puede activarlo manualmente en:
+Si deshabilitó Azure RMS o si no se activó automáticamente por cualquier motivo, puede activarlo manualmente. 
 
-- **El Centro de administración de Microsoft 365**: vea [Cómo activar Azure Rights Management desde el centro de administración](/azure/information-protection/activate-office365) para obtener instrucciones.
-- **Azure Portal**: vea [Cómo activar Azure Rights Management desde Azure Portal](/azure/information-protection/activate-azure) para obtener instrucciones.
+Para obtener instrucciones, consulte [Cómo activar o confirmar el estado del servicio de protección](/azure/information-protection/activate-service#how-to-activate-or-confirm-the-status-of-the-protection-service).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar la administración del espacio empresarial de Azure Information Protection
 
