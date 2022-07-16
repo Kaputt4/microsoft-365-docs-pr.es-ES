@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787504"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822277"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 
@@ -52,8 +52,8 @@ Si planea utilizar un entorno de Power Platform personalizado, debe [asignar cr�
 Vaya al [Centro de administración de la Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) para comprobar sus créditos y el uso.
   
 ## <a name="additional-term-store-features"></a>Características adicionales del almacén de términos
- 
-Una suscripción a SharePoint Syntex incluye las siguientes características adicionales del almacén de términos:
+
+Tener una o varias licencias de SharePoint Syntex en su organización habilita las siguientes características adicionales de almacén de términos para los administradores de SharePoint:
  
 - Importación del conjuntos de términos a partir de SKOS
 - Insertar tipos de contenido empresarial en un sitio concentrador, que también los agrega a los sitios asociados y a las listas o bibliotecas recién creadas

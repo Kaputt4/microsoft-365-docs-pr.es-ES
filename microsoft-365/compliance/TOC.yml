@@ -66,7 +66,7 @@
           href: archive-bloomberg-message-data.md
         - name: Datos de atención médica de la HCE de Epic (versión preliminar)
           href: import-epic-data.md
-        - name: Empresa de Facebook
+        - name: Facebook Business (versión preliminar)
           href: archive-facebook-data-with-sample-connector.md
         - name: Datos genéricos de atención médica de la HCE (versión preliminar)
           href: import-healthcare-data.md
@@ -78,11 +78,11 @@
           href: archive-instant-bloomberg-data.md
         - name: LinkedIn
           href: archive-linkedin-data.md
-        - name: Datos de los distintivos físicos
+        - name: Datos de concesión de insignias físicas (versión preliminar)
           href: import-physical-badging-data.md
         - name: Slack eDiscovery (versión preliminar)
           href: archive-slack-data-microsoft.md
-        - name: Twitter
+        - name: Twitter (versión preliminar)
           href: archive-twitter-data-with-sample-connector.md
     - name: Conectores de datos de Veritas
       items:
