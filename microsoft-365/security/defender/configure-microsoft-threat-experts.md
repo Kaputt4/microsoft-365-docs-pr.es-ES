@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e61a59e769052d69494d327b2e1770f643375ab9
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772114"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843465"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configuración y administración de funcionalidades de Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
@@ -51,8 +51,6 @@ Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender,
 1. En el panel de navegación, vaya a **Configuración > puntos de conexión > General > Características avanzadas > Notificaciones de ataque de punto de conexión**.
 
 2. Seleccione **Aplicar**.
-
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Página de configuración de Expertos en amenazas de Microsoft en el portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. Escriba su dirección de correo electrónico para que Microsoft pueda ponerse en contacto con usted sobre la aplicación.
 
@@ -94,7 +92,7 @@ Si ya es un cliente Microsoft Defender para punto de conexión, puede ponerse en
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades sospechosas de ciberseguridad en su organización.
 
-Puede ponerse en contacto con Expertos en amenazas de Microsoft desde el portal de Microsoft 365 Defender. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque dirigidas. Asóciate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre el control de riesgos. Obtenga información sobre el contexto de inteligencia sobre amenazas descrito por el panel del portal.
+Puede ponerse en contacto con Expertos en amenazas de Microsoft desde el portal de Microsoft 365 Defender. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque de punto de conexión. Asóciate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre el control de riesgos. Obtenga información sobre el contexto de inteligencia sobre amenazas descrito por el panel del portal.
 
 > [!NOTE]
 >

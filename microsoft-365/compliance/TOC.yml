@@ -969,6 +969,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Contenido almacenado en buzones para eDiscovery
               href: what-is-stored-in-exo-mailbox.md
+            - name: Conector de Graph de eDiscovery
+              href: ediscovery-graph-connector.md
             - name: Descifrado en las herramientas de eDiscovery
               href: ediscovery-decryption.md
             - name: Conjuntos de revisión de conversación

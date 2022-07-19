@@ -348,6 +348,8 @@
           items:
             - name: Información general
               href: defenderexpertsforhuntingprev.md
+            - name: Descripción de los informes de expertos de Defender para la búsqueda
+              href: defender-experts-report.md
         - name: Cuaderno de estrategias de ransomware
           items:
             - name: Detección de ataques de ransomware operados por personas con Microsoft 365 Defender

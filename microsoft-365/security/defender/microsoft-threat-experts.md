@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bf40aa8ede1f65d22bd319b3a2fcfe82c778e754
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 3d60edd7747bddf6afd9d075c051a29a11594edb
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756713"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843443"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Expertos en amenazas de Microsoft en Información general de Microsoft 365
 
@@ -45,8 +45,6 @@ Expertos en amenazas de Microsoft: Expertos a petición le permite obtener conse
 > Antes de aplicar, asegúrese de analizar los requisitos de idoneidad para las notificaciones de ataque de punto de conexión con el proveedor de servicios técnicos de Microsoft y el equipo de la cuenta.
 
 Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender, puede solicitar notificaciones de ataque de punto de conexión a través de su portal de Microsoft 365 Defender. Vaya a **Configuración > puntos de conexión > General > Características avanzadas > Notificaciones de ataque de punto de conexión** y seleccione **Aplicar**. Consulte [Configuración de funcionalidades de Expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md) para obtener una descripción completa.
-
-:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="La opción Características avanzadas del panel de navegación izquierdo de la página Puntos de conexión del portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 Una vez aprobada la aplicación, comenzará a recibir notificaciones de ataque de punto de conexión cada vez que los expertos en amenazas detecten una amenaza para su entorno.
 
@@ -74,24 +72,10 @@ También puede ponerse en contacto con expertos en amenazas de Microsoft directa
 La opción **para consultar a un experto en amenazas** está disponible en varios lugares del portal:
 
 - <i>**Menú acciones de página del dispositivo**</i><BR>
-
-:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="La opción de menú MTE-EOD del menú acción de página Dispositivo del portal de Microsoft 365 Defender" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
-
 - <i>**Menú flotante de la página de inventario de dispositivos**</i><BR>
-
-:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Inventario de dispositivos del portal de Microsoft 365 Defender" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
-
 - <i>**Menú flotante de la página Alertas**</i><BR>
-
-:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Alertas del portal de Microsoft 365 Defender" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
-
 - <i>**Menú acciones de la página Incidentes**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página Incidentes del portal de Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
-
 - <i>**Página de inventario de incidentes**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="Opción de menú MTE-EOD en la página de inventario de incidentes del portal de Microsoft 365 Defender" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
 > Si tiene una suscripción de soporte técnico Premier asignada a su licencia de Microsoft Defender para Office 365, puede realizar un seguimiento del estado de los casos de Expertos a petición a través de Microsoft Services Hub.

@@ -1,7 +1,7 @@
 ---
-title: Comparar planes de Microsoft Defender para punto de conexión
-description: Compare el plan 1 de Defender para punto de conexión con el plan 2. Obtenga información sobre las diferencias entre los planes y seleccione el plan que se adapte a las necesidades de su organización.
-keywords: Defender para punto de conexión, protección contra amenazas avanzada, endpoint protection
+title: Comparación de planes de seguridad de puntos de conexión de Microsoft
+description: Compare los planes de seguridad de puntos de conexión de Microsoft, como Defender para el plan de punto de conexión 1, con Defender para el plan de punto de conexión 2. Obtenga información sobre las diferencias entre los planes y seleccione el plan que se adapte a las necesidades de su organización.
+keywords: Defender for Endpoint, advanced threat protection, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d41c228ceeae0dcd373f98c6dcd89bf88b0feacd
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795408"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843487"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Comparación de planes de seguridad de puntos de conexión de Microsoft
 
@@ -68,8 +68,7 @@ En la tabla siguiente se resume lo que se incluye en los planes de seguridad de 
 
 Las versiones independientes de Defender para empresas, Defender para el plan 1 y 2 de punto de conexión y Microsoft 365 Empresa Premium no incluyen licencias de servidor. Para incorporar servidores, elija entre las siguientes opciones:
 
-- **El plan 1 o el plan 2 de Defender para servidores** forma parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
-
+- **Microsoft Defender para servidores Plan 1 o Plan 2** como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender para Empresas servidores (versión preliminar)** para pequeñas y medianas empresas. Consulte [Obtención de servidores Microsoft Defender para Empresas (versión preliminar).](../defender-business/get-defender-business-servers.md)
 
 ## <a name="mixed-licensing-scenarios"></a>Escenarios de licencias mixtas
@@ -94,5 +93,5 @@ Sin embargo, **puede ponerse en contacto con el soporte técnico y solicitar una
 ## <a name="see-also"></a>Vea también
 
 - [Introducción a Microsoft Security (ofertas de prueba)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-
+- [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)
 - [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) (endpoint protection para pequeñas y medianas empresas)
