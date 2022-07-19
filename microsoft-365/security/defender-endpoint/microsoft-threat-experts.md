@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756779"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855051"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -58,7 +58,7 @@ Consulte [Configuración de funcionalidades de Expertos en amenazas de Microsoft
 
 ## <a name="endpoint-attack-notification"></a>Notificación de ataque de punto de conexión
 
-La notificación de ataque de punto de conexión proporciona búsqueda proactiva de las amenazas más importantes para la red, incluidas las intrusiones de adversarios humanos, los ataques con teclado práctico o ataques avanzados, como el ciberespionaje. Estas notificaciones se muestran como una nueva alerta. El servicio de búsqueda administrada incluye:
+Las notificaciones de ataque de punto de conexión (anteriormente conocidas como Expertos en amenazas de Microsoft: notificación de ataque dirigido) proporcionan búsqueda proactiva de las amenazas más importantes para la red, incluidas intrusiones de adversarios humanos, ataques prácticos con teclado o ataques avanzados, como el ciberespionaje. Estas notificaciones se muestran como una nueva alerta. El servicio de búsqueda administrada incluye:
 
 - Supervisión y análisis de amenazas, lo que reduce el tiempo de permanencia y el riesgo para la empresa
 - Inteligencia artificial entrenada por hunter para detectar y priorizar ataques conocidos y desconocidos

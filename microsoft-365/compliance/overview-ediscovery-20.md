@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución eDiscovery (Premium) en Microsoft Purview. En este artículo se proporciona información general sobre eDiscovery (Premium) en Microsoft Purview, una herramienta que le ayudará a administrar investigaciones internas y externas. También se enmarcan los motivos empresariales para usar eDiscovery (Premium) para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714583"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855095"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Información general de Microsoft Purview eDiscovery (Premium)
 
@@ -83,7 +83,7 @@ En un nivel alto, aquí se muestra cómo eDiscovery (Premium) admite el flujo de
 
 - **Colección.** Después de identificar (y conservar) los orígenes de datos pertinentes para la investigación, puede usar la herramienta de búsqueda integrada en eDiscovery (Premium) para buscar y recopilar datos activos de los orígenes de datos de custodia (y orígenes de datos que no son de custodia, si procede) que pueden ser pertinentes para el caso.
 
-- **Tratamiento.** Una vez recopilados todos los datos relevantes para el caso, el siguiente paso es procesarlos para su posterior revisión y análisis. En eDiscovery (Premium), los datos locales que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada *conjunto de revisión*), lo que proporciona una vista estática de los datos del caso. 
+- **Tratamiento.** Una vez recopilados todos los datos relevantes para el caso, el siguiente paso es procesarlos para su posterior revisión y análisis. En eDiscovery (Premium), los datos locales que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada *conjunto de revisión*), lo que proporciona una vista estática de los datos del caso.
 
 - **Revisión.** Una vez agregados los datos a un conjunto de revisión, puede ver documentos específicos y ejecutar consultas adicionales para reducir los datos a lo más relevante para el caso. Además, puede anotar y etiquetar documentos específicos.
 
@@ -93,9 +93,9 @@ En un nivel alto, aquí se muestra cómo eDiscovery (Premium) admite el flujo de
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
-Para obtener información sobre qué licencias proporcionan los derechos para que un usuario se beneficie de eDiscovery (Premium), consulte [guía de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) y vea la sección "eDiscovery and auditing" en la [tabla Comparación de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
+Para obtener información sobre qué licencias proporcionan los derechos para que un usuario se beneficie de eDiscovery (Premium), consulte [guía de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) y vea la sección "eDiscovery and auditing" en la [tabla Comparación de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-Para obtener información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users).
+Para obtener información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>Introducción a eDiscovery (Premium)
 
