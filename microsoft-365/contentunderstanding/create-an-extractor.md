@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679622"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842130"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -48,6 +48,8 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
     > [!NOTE]
     > Para los extractores con el tipo **de columna Línea única de texto**, el límite máximo de caracteres es 255. Los caracteres que seleccione que superen el límite se truncan. Para seleccionar más de 255 caracteres, elija el tipo **de columna Varias líneas de texto** al crear el extractor.
+    >
+    >De forma predeterminada, **se crean varias columnas de líneas de texto** con un límite a la cantidad de texto que se puede agregar. En este caso, el texto extraído puede parecer truncado. Si esto ocurre, se puede usar la configuración de columna **Permitir longitud ilimitada en bibliotecas de documentos** para quitar el límite.
 
 3. Cuando haya terminado, seleccione **Crear**.
 
