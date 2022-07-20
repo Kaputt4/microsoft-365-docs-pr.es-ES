@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662544"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882283"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clasificar y proteger documentos y mensajes de correo electrónico, también puede usarlas para proteger el contenido en los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), y sitios de SharePoint. Para esta clasificación y protección de etiquetas, use la siguiente configuración de etiquetas:
+Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para proteger documentos y correos electrónicos, también puede usar etiquetas de confidencialidad para proteger el contenido de los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) y sitios de SharePoint. Para esta protección de nivel de contenedor, use la siguiente configuración de etiqueta:
 
 - Privacidad (pública o privada) de los sitios de equipos y Grupos de Microsoft 365
 - Acceso de usuarios externos
@@ -42,15 +42,17 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clas
 > [!IMPORTANT]
 > La configuración para dispositivos no administrados y contextos de autenticación funciona junto con el acceso condicional de Azure Active Directory. Debe configurar esta característica dependiente si desea usar una etiqueta de confidencialidad para esta configuración. Se incluye información adicional en las instrucciones siguientes.
 
-Cuando aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente la clasificación y la configuración de protección establecida al sitio o al grupo.
+Cuando se aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente a la categoría de sensibilidad y las opciones de protección configuradas al sitio o grupo.
 
-Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la clasificación y configuración de archivos y mensajes de correo electrónico, como las marcas visuales y el cifrado. Para que los usuarios puedan etiquetar sus documentos en los sitios de SharePoint o de grupos, asegúrese de [habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Sin embargo, el contenido de estos contenedores no hereda las etiquetas de la categoría de confidencialidad ni la configuración de archivos y correos electrónicos, como las marcas de contenido y el cifrado. Para que los usuarios puedan etiquetar sus documentos en los sitios de SharePoint o de grupos, asegúrese de [habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Las etiquetas de contenedor no admiten la visualización de [otros idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) y muestran el idioma original solo para el nombre y la descripción de la etiqueta.
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Uso de etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
 Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
-:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word." lightbox="../media/sensitivity-label-word.png"
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word". lightbox="../media/sensitivity-label-word.png"
 
 Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
@@ -341,7 +343,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
 
-:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos." lightbox="../media/manage-site-sensitivity-labels.png"
+:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
 
 Para obtener más información sobre la administración de sitios desde la página Sitios activos, incluido cómo agregar una columna, vea [Administrar sitios en el nuevo centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
