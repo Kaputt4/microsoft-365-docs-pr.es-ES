@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 24f4cbc8feda3689a3a6f7ee49a876cd205939f3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489176"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892735"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
@@ -39,8 +35,8 @@ Para obtener más información sobre los valores predeterminados de seguridad y 
 
 En este artículo se proporciona información acerca de:
 
-- [Valores predeterminados de seguridad](#security-defaults) (adecuados para la mayoría de las empresas)
-- [Acceso condicional](#conditional-access) (para empresas con requisitos de seguridad más estrictos)
+- **[Valores predeterminados de seguridad](#security-defaults)** (adecuados para la mayoría de las empresas)
+- **[Acceso condicional](#conditional-access)** (para empresas con requisitos de seguridad más estrictos)
 
 > [!NOTE]
 > Si ha estado usando directivas de acceso condicional, deberá desactivarlas antes de usar los valores predeterminados de seguridad. Puede usar los valores predeterminados de seguridad o las directivas de acceso condicional, pero no puede usar ambos al mismo tiempo.

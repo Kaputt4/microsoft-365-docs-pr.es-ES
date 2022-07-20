@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Cómo instalar Office en todos los dispositivos de Microsoft 365 Empresa Premium.
-ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637804"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894589"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Instalar aplicaciones de Office en todos los dispositivos
 
@@ -43,10 +39,10 @@ Para todos los miembros de la organización, las aplicaciones de Microsoft Offic
 
 Pídales que realicen lo siguiente:
 
-1. Vaya a office.com. Es posible que deba iniciar sesión con su cuenta profesional.
+1. Vaya a [https://office.com](https://office.com) e inicie sesión con su cuenta profesional.
 2. Seleccione **Instalar aplicaciones de Office**  >  **de Microsoft 365**  >  **Ejecutar** y, a continuación, seleccione **Sí**.
-3. Las aplicaciones de Office están instaladas. Es posible que este proceso tarde varios minutos. Cuando finalice, seleccione  **Cerrar**.
-4. Para instalar Microsoft Teams, vaya a la página office.com y elija  **Teams**.
+3. Las aplicaciones de Office están instaladas. El proceso puede tardar varios minutos. Cuando finalice, seleccione  **Cerrar**.
+4. Para instalar Microsoft Teams, vaya a la [página office.com](https://office.com) y, a continuación, elija **Teams**.
 5. Obtenga la aplicación de Windows y, a continuación, seleccione  **Ejecutar**. Teams le mostrará un mensaje al terminar la instalación.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Empresa Premium

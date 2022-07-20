@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 0578aa2e672a0d485057ac983ed85d10828c952d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772278"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893997"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos inscritos a Microsoft Defender para Empresas
 
@@ -71,13 +72,9 @@ Consultar [Habilitar la inscripción en Microsoft Intune](/mem/intune/enrollment
 
 ## <a name="what-about-servers"></a>¿Qué ocurre con los servidores?
 
-Los servidores no se admiten de forma predeterminada en Microsoft 365 Empresa Premium y Defender para Empresas. Sin embargo, la capacidad de incorporar un servidor, como un punto de conexión que ejecuta Windows Server o Linux Server, ya está en versión preliminar. Asegúrese de revisar los requisitos antes de incorporar un servidor:
+De forma predeterminada, los servidores no se admiten en Microsoft 365 Empresa Premium ni en la versión independiente de Defender para Empresas. Sin embargo, **la capacidad de incorporar un servidor, como un punto de conexión que ejecuta Windows Server o Linux Server, ya está en versión preliminar**. 
 
-- Tener una licencia de servidor para cada instancia de servidor en Microsoft 365 Empresa Premium o Defender para Empresas (independiente).
-- La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
-- El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** > **Puntos de conexión** > **Administración de configuración** > **Ámbito de cumplimiento**. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
-
-Consulte la pestaña **Servidores** en [Incorporar dispositivos a Microsoft Defender para Empresas](../security/defender-business/mdb-onboard-devices.md) para obtener instrucciones detalladas.
+Consulta [Cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar).](../security/defender-business/get-defender-business-servers.md)
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Ejecutar una prueba de detección en un dispositivo Windows
 

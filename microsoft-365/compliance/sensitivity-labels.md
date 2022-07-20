@@ -22,12 +22,12 @@ description: Utilice las etiquetas de confidencialidad de Microsoft Purview Info
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714144"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842168"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -148,7 +148,7 @@ En las páginas que no tengan opciones disponibles, seleccione **Siguiente** par
 
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
-Al crear las etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft Purview, aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
+Al crear las etiquetas de confidencialidad en el portal de cumplimiento de Microsoft Purview, aparecen en una lista en la pestaña **Confidencialidad** en la página **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
 Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un documento, un correo electrónico o un contenedor. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas que comparten la prioridad de su etiqueta primaria.
 
@@ -222,7 +222,7 @@ No hay límite en el número de etiquetas de confidencialidad que puede crear y 
 
 ### <a name="label-policy-priority-order-matters"></a>Prioridad de etiquetas de directivas (el orden importa)
 
-Para que los usuarios dispongan de sus etiquetas de confidencialidad, puede publicarlas en una directiva de etiqueta de confidencialidad, que se muestra en una lista en la pestaña de **Directivas de confidencialidad** en la página **Directivas de etiqueta**. Al igual que las etiquetas de confidencialidad (consulte [la sección anterior](#label-priority-order-matters) (el orden importa)), el orden de las directivas de etiqueta de confidencialidad es importante, puesto que refleja su prioridad. La directiva de etiqueta de menor prioridad se muestra en la parte **superior**, mientras que la directiva de mayor prioridad se muestra en la parte **inferior**.
+Para que los usuarios dispongan de las etiquetas de confidencialidad, puede publicarlas en una directiva de etiquetas de confidencialidad, que se muestra en una lista en la página **Directivas de etiquetas**. Al igual que para las etiquetas de confidencialidad (consulte [Prioridad de etiquetas (el orden importa)](#label-priority-order-matters)), el orden de las directivas de etiquetas de confidencialidad es importante porque refleja su prioridad: la directiva de etiquetas con menor prioridad se muestra en la parte superior de la lista con el número de orden **más bajo**, y la directiva de etiquetas con mayor prioridad se muestra en la parte inferior de la lista con el número de orden **más alto**.
 
 Una directiva de etiqueta consiste en lo siguiente:
 
@@ -230,14 +230,18 @@ Una directiva de etiqueta consiste en lo siguiente:
 - Los usuarios y grupos a los que se asignará la directiva con etiquetas.
 - El ámbito de la directiva y la configuración de directiva para ese ámbito (como la etiqueta predeterminada para los archivos y mensajes de correo electrónico).
 
-Puede incluir un usuario en varias directivas de etiquetas, y el usuario recibirá todas las etiquetas de confidencialidad y la configuración de esas directiva. Si hay un conflicto en la configuración de varias directivas, se aplicará el valor de la directiva con la prioridad más alta (la posición más baja). Es decir, la prioridad más alta gana en cada valor.
+Puede incluir un usuario en varias directivas de etiquetas, y el usuario recibirá todas las etiquetas de confidencialidad y la configuración de esas directiva. Si hay un conflicto en la configuración de varias directivas, se aplicará la configuración de la directiva con mayor prioridad (número de orden más alto). Es decir, la prioridad más alta gana en cada valor.
 
-Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiqueta de sensibilidad. Es posible que necesite mover la directiva hacia abajo. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
+Si el comportamiento de la configuración de la directiva de etiquetas no es el que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiquetas de confidencialidad. Es posible que necesite mover la directiva hacia abajo. Para cambiar el orden de las directivas de etiquetas, seleccione una directiva de etiquetas de confidencialidad > seleccione los puntos suspensivos de Acciones para esa entrada > **Mover hacia abajo** o **Mover hacia arriba**. Por ejemplo:
 
 ![Opción Mover en la página de directivas de etiquetas de confidencialidad.](../media/sensitivity-label-policy-priority.png)
 
+En nuestro ejemplo de la captura de pantalla que muestra tres directivas de etiquetas, a todos los usuarios se les asigna la directiva de etiquetas estándar, por lo que es adecuado que tenga la menor prioridad (el número de orden más bajo, 0). Solo a los usuarios del departamento de TI se les asigna la segunda directiva, que tiene el número de orden 1. Para estos usuarios, si hay conflictos en la configuración entre su directiva y la directiva estándar, la configuración de su directiva gana porque tiene un número de orden mayor. 
+
+Sucede algo parecido para los usuarios del departamento jurídico, a los que se les asigna la tercera directiva con una configuración distinta. Es probable que estos usuarios tengan una configuración más estricta, por lo que es adecuado que su directiva tenga el número de orden más alto. Es poco probable que un usuario del departamento jurídico esté en un grupo que también esté asignado a la directiva para el departamento de TI. Pero si lo está, el número de orden 2 (número de orden más alto) garantiza que la configuración del departamento jurídico siempre tenga prioridad si hay un conflicto.
+
 > [!NOTE]
-> Recuerde: Cuando haya un conflicto de configuración para un usuario que tiene varias directivas asignadas, se aplicará la configuración de la directiva con la prioridad más alta (la posición más baja).
+> Recuerde: si hay un conflicto de configuración para un usuario que tiene varias directivas asignadas, se aplicará la configuración de la directiva asignada con el número de orden más alto.
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etiquetas de confidencialidad y Azure Information Protection
 
