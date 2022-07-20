@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante las directivas y herramientas de prevención de pérdida de datos de Microsoft Purview y realice un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 2bcc82f0609f617219d626f8180e7f4c9df51060
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 46c29b8aa19ce9b70cdb9127ab2c6270c0009a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641918"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882420"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -60,8 +60,6 @@ Una implementación DLP suele seguir estas fases principales.
 - [Preparación para DLP](#prepare-for-dlp)
 - [Implementación de las directivas en producción](#deploy-your-policies-in-production)
 
-
-<!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
 ### <a name="plan-for-dlp"></a>Plan para DLP
 

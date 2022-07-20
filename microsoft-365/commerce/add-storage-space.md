@@ -1,11 +1,11 @@
 ---
-title: Agregar más SharePoint almacenamiento a la suscripción
+title: Agregar más almacenamiento de SharePoint a la suscripción
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinms, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,33 +23,33 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkSPO
 search.appverid: MET150
-description: Agregue almacenamiento de archivos en la suscripción de Microsoft 365. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint.
+description: Agregue almacenamiento de archivos en su suscripción de Microsoft 365. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint.
 ms.date: 05/24/2022
-ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a8029f9b51c678b80e4a8fde77d02663da6e89af
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043980"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882504"
 ---
-# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Agregar más SharePoint almacenamiento a la suscripción
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Agregar más almacenamiento de SharePoint a la suscripción
 
 Si empieza a agotarse el almacenamiento de los sitios de SharePoint, puede agregar almacenamiento a su suscripción si el plan es apto. Si no ve la **Office 365 Extra File Storage** en la lista de complementos disponibles, significa que el plan no es apto. Para obtener más información, consulte [¿Es apto mi plan?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > Si compró su suscripción a través de licencias por volumen o un CSP, no puede comprar **Office 365 Extra File Storage** para su organización directamente desde Microsoft. Póngase en contacto con su representante o asociado para obtener ayuda.
-> Para obtener información sobre OneDrive almacenamiento, vea [Establecer el espacio de almacenamiento predeterminado para los usuarios de OneDrive](/onedrive/set-default-storage-space).
+> Para obtener información sobre el almacenamiento de OneDrive, vea [Establecer el espacio de almacenamiento predeterminado para los usuarios de OneDrive](/onedrive/set-default-storage-space).
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser administrador global o de SharePoint para realizar las tareas de este artículo. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Visualización del almacenamiento disponible
 
-1. En el centro de administración de SharePoint, vaya a <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> e inicie sesión con una cuenta que tenga permisos de [administrador](/sharepoint/sharepoint-admin-role) para su organización.
+1. En el Centro de administración de SharePoint, vaya a <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> e inicie sesión con una cuenta que tenga [permisos de administrador](/sharepoint/sharepoint-admin-role) para su organización.
 
 2. En la esquina superior derecha de la página, puede ver la cantidad de almacenamiento empleado en todos los sitios, así como el almacenamiento total de su suscripción. Si su organización ha configurado Multi-Geo en Office 365, la barra también muestra la cantidad de almacenamiento que se usa en todas las ubicaciones geográficas.
 
@@ -70,7 +70,7 @@ Si aún no ha comprado almacenamiento adicional para su suscripción, puede hace
 4. Si es necesario, elija la suscripción base y escriba el número de gigabytes de almacenamiento que desea agregar.
 5. Seleccione **Desteger ahora**.
 6. En la página **¿Cómo se ve esto?** , compruebe el número de gigabytes de almacenamiento que seleccionó, revise la información de precios y, a continuación, seleccione **Siguiente**.
-7. En la página **Completar pedido** , compruebe el total. Si necesita realizar cambios, seleccione **Editar pedido**. Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione Place order Go to Admin Home ( **Realizar pedido** \> **Ir a la página principal del administrador**).
+7. En la página **Completar pedido** , compruebe el total. Si necesita realizar cambios, seleccione **Editar pedido**. Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione **Realizar pedido** \> **Ir a Administración Inicio**.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Aumentar o disminuir el almacenamiento adicional
 
@@ -94,8 +94,8 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 - Office 365 Enterprise E5
 - Office 365 A3 (profesores)
 - Office 365 A5 (profesores)
-- Office para la Web con SharePoint Plan 1
-- Office para la Web con SharePoint Plan 2
+- Office para la Web con el plan 1 de SharePoint
+- Office para la Web con el plan 2 de SharePoint
 - SharePoint Online Plan 1
 - SharePoint Online Plan 2
 - Microsoft 365 Empresa Básico

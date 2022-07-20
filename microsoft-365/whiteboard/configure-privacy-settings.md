@@ -13,17 +13,17 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre el cumplimiento y cómo configurar las opciones de privacidad en La pizarra de Microsoft.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcdd5a61e772d273fc9620219e7772afcdcc4312
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842109"
+ms.locfileid: "66882792"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configuración de la privacidad en La pizarra de Microsoft
 
 >[!NOTE]
-> Si los usuarios quieren obtener más información sobre la configuración de privacidad predeterminada y cómo se recopilan los datos de diagnóstico, indíntelos a [la privacidad y el cumplimiento de la Pizarra de Microsoft](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
+> Si usted o sus usuarios quieren obtener más información sobre la configuración de privacidad predeterminada, las experiencias conectadas opcionales y cómo se recopilan los datos de diagnóstico, conéctelos a [la privacidad y el cumplimiento de la Pizarra de Microsoft](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
 
 Si es el administrador de La pizarra de Microsoft para su organización, puede controlar lo siguiente:
 
@@ -31,13 +31,13 @@ Si es el administrador de La pizarra de Microsoft para su organización, puede c
 
 - Si las experiencias conectadas opcionales en Whiteboard están disponibles para los usuarios.
 
-Para configurar el nivel de datos de diagnóstico, inicie sesión en la [Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) con su cuenta de administrador. En la página principal del centro de administración, vaya a **Mostrar toda la configuración de > > configuración de la organización > Pizarra**.
+Para configurar el nivel de datos de diagnóstico, inicie sesión en la [Centro de administración de Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) con su cuenta de administrador. En la página principal del centro de administración, vaya a **Mostrar toda la configuración de > > configuración de la organización > Pizarra**.
 
-Para configurar la disponibilidad de experiencias conectadas opcionales, use el [servicio de directivas](https://docs.microsoft.com/deployoffice/admincenter/overview-office-cloud-policy-service) en la nube de Office en el [centro de administración de Aplicaciones Microsoft 365](https://config.office.com). Inicie sesión con su cuenta de administrador y vaya a **Personalización > Administración de directivas**. La directiva que desea configurar se denomina: **Permitir el uso de experiencias conectadas opcionales adicionales en Office**.
+Para configurar la disponibilidad de experiencias conectadas opcionales, use el [servicio de directivas](/deployoffice/admincenter/overview-office-cloud-policy-service) en la nube de Office en el [centro de administración de Aplicaciones Microsoft 365](https://config.office.com). Inicie sesión con su cuenta de administrador y vaya a **Personalización > Administración de directivas**. La directiva que desea configurar se denomina: **Permitir el uso de experiencias conectadas opcionales adicionales en Office**.
 
 ## <a name="diagnostic-data-setting-for-your-organization"></a>Configuración de datos de diagnóstico para su organización
 
-Puede elegir el nivel de [datos de diagnóstico](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1#diagnostic_data)que se recopilan y envían a Microsoft sobre el software cliente de Whiteboard que se ejecuta en los dispositivos de su organización. Los datos de diagnóstico opcionales se enviarán a Microsoft, a menos que cambie la configuración en el Centro de administración de Microsoft 365. Si elige enviarnos sus datos de diagnóstico opcionales, también se incluyen los datos de diagnósticos necesarios.
+Puede elegir el nivel de datos de diagnóstico que se recopilan y envían a Microsoft sobre el software cliente de Whiteboard que se ejecuta en los dispositivos de su organización. Los datos de diagnóstico opcionales se enviarán a Microsoft, a menos que cambie la configuración en el Centro de administración de Microsoft 365. Si elige enviarnos sus datos de diagnóstico opcionales, también se incluyen los datos de diagnósticos necesarios.
 
 Además de **Obligatorio** u **Opcional**, también hay una opción de **Ninguno**. Si elige esa opción, no se enviará a Microsoft ningún dato de diagnóstico sobre el software cliente whiteboard que se ejecuta en el dispositivo del usuario. Sin embargo, esta opción limita significativamente la capacidad de Microsoft para detectar, diagnosticar y corregir problemas que los usuarios pueden encontrar al usar Whiteboard.
 
@@ -45,7 +45,7 @@ Los usuarios no podrán cambiar el nivel de datos de diagnóstico de sus disposi
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>Configuración de experiencias conectadas opcionales para su organización
 
-Puede elegir si desea que [las experiencias conectadas opcionales](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1?storagetype=live#optional) de Whiteboard estén disponibles para los usuarios. Estas experiencias conectadas estarán disponibles para los usuarios a menos que cambie la configuración en el Centro de administración de Microsoft 365.
+Puede elegir si desea que las experiencias conectadas opcionales de Whiteboard estén disponibles para los usuarios. Estas experiencias conectadas estarán disponibles para los usuarios a menos que cambie la configuración en el Centro de administración de Microsoft 365. 
 
 Estas experiencias conectadas son diferentes porque no están cubiertas por el contrato comercial de su organización con Microsoft. Las experiencias conectadas opcionales ofrecidas por Microsoft directamente a los usuarios se rigen por el [Contrato de servicios de Microsoft](https://www.microsoft.com/servicesagreement) en lugar de los [Términos de servicios en línea](https://www.microsoft.com/licensing/product-licensing/products).
 

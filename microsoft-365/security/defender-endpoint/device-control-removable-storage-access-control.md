@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490761"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882127"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -155,6 +155,8 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 - Administrador global
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Implementación de Access Control de almacenamiento extraíble mediante Intune OMA-URI
+
+Para bloquear una clase de almacenamiento extraíble específica pero permitir medios específicos, puede usar "IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc."
 
 Vaya al Centro de administración de Microsoft Endpoint Manager () dispositivos **> > Crear perfil > Plataforma: Windows 10 y versiones posteriores, Tipo de perfil: Plantillas > Personalizado**<https://endpoint.microsoft.com/>
 
@@ -449,7 +451,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>¿Cómo generar GUID para el id. de grupo/PolicyRule Id/Entry Id?
 

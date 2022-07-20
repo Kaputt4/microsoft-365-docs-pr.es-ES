@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 32145a10aa908bb5395f0129f307ac3837a92d42
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798069"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882637"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -37,7 +37,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Microsoft Defender para punto de conexión en iOS](ios-whatsnew.md)</br>
 
 <details>
-  <summary>Jun-2022 (compilación: 101.71.18 | Versión: 20.122052.17118.0)</summary>
+  <summary>Jul-2022 (compilación: 101.71.18 | Versión: 20.122052.17118.0)</summary>
 
 &ensp;Fecha de lanzamiento: **7 de julio de 2022**<br/>
 &ensp;Publicado: **7 de julio de 2022**<br/>

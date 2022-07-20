@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac809f5a976da1d6c83d36f24e93c3aacd997850
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626587"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882025"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -309,6 +309,9 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 ##### <a name="conditions-devices-supports"></a>Condiciones que admiten los dispositivos
 
 - El contenido contiene
+- (versión preliminar) El usuario accedió a un sitio web confidencial desde Edge. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) para obtener más información.
+- La extensión de archivo es
+- El tipo de archivo es
 - Consulte las [actividades de punto de conexión en las que puede supervisar y tomar medidas.](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Condiciones Microsoft Defender for Cloud Apps admite
@@ -391,8 +394,8 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 - Agregar destinatario al cuadro CCO
 - Agregar el administrador del remitente como destinatario
 - Se ha quitado el cifrado de mensajes de O365 y la protección de derechos
-- Anteponer asunto de correo electrónico
-- Modificar asunto de correo electrónico
+- Anteponer Email asunto
+- Modificar Email asunto
 - Agregar declinación de responsabilidades html
 
 #### <a name="sharepoint-sites-location-actions"></a>Acciones de ubicación de sitios de SharePoint
@@ -409,9 +412,11 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 #### <a name="devices-actions"></a>Acciones de dispositivos
 
+<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- (versión preliminar) Auditoría o actividades restringidas cuando los usuarios acceden a sitios web confidenciales en el explorador Microsoft Edge en dispositivos Windows. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) para obtener más información.
 - Auditoría o restricción de actividades en dispositivos Windows
 
-Para usar esta configuración, debe configurar opciones en **la configuración dlp** y en la directiva en la que desea usarlas. Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información.
+Para usar `Audit or restrict activities on Windows devices`, tiene que configurar opciones en **la configuración dlp** y en la directiva en la que desea usarlas. Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información.
 
 La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para más información, consulte [Actividades de punto de conexión sobre las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
@@ -431,7 +436,7 @@ Con la opción **Actividades de archivo para todas las aplicaciones** , seleccio
 
 - **Copiar en el portapapeles**
 - **Copia en una unidad extraíble USB** 
-- **Copia en un recurso compartido de red**
+- **Copiar en un recurso compartido de red**
 - **Print**
 - **Copiar o mover mediante una aplicación Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
@@ -525,11 +530,11 @@ Por ejemplo, contenido como un libro de Excel en un sitio OneDrive para la Empre
 
 > [!IMPORTANT]
 > - Los correos electrónicos de notificación se envían desprotegidos.
-> - Las notificaciones por correo electrónico solo se admiten para los servicios de Microsoft 365.
+> - Email notificaciones solo se admiten para los servicios de Microsoft 365.
 
-#### <a name="email-notifications-support-by-selected-location"></a>Compatibilidad con notificaciones por correo electrónico por ubicación seleccionada
+#### <a name="email-notifications-support-by-selected-location"></a>Email compatibilidad con notificaciones por ubicación seleccionada
 
-|Ubicación seleccionada  |Notificaciones por correo electrónico admitidas  |
+|Ubicación seleccionada  |Email notificaciones admitidas  |
 |---------|---------|
 |Dispositivos     |- No compatible         |
 |Exchange y dispositivos     |- Compatible con Exchange </br>- No se admite para dispositivos  |
