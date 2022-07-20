@@ -1,7 +1,7 @@
 ---
 title: Activar Microsoft 365 Defender
 description: Obtenga información sobre cómo habilitar Microsoft 365 Defender y empezar a integrar el incidente de seguridad y la respuesta.
-keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
+keywords: introducción, habilitación de Microsoft 365 Defender, Microsoft 365 Defender, M365, seguridad, ubicación de datos, permisos necesarios, idoneidad de licencia, página de configuración
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,18 +14,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2a99dbaf50b582df4203fc9c8e1d04e0a3f6d807
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0fa1a47bb5a4a09c22649866bb6c5c6039dc2850
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498664"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895039"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -35,17 +37,17 @@ ms.locfileid: "64498664"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes integrando funciones clave en Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para identidad. Esta experiencia unificada agrega características eficaces a las que puede tener acceso en el portal Microsoft 365 Defender web.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes mediante la integración de funcionalidades clave en Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Cloud Apps y Microsoft Defender for Identity. Esta experiencia unificada agrega características eficaces a las que puede acceder en el portal de Microsoft 365 Defender.
 
-Microsoft 365 Defender se activa automáticamente cuando los clientes elegibles con los permisos necesarios visitan Microsoft 365 Defender portal. Lea este artículo para comprender varios requisitos previos y cómo Microsoft 365 Defender se aprovisiona.
+Microsoft 365 Defender se activa automáticamente cuando los clientes aptos con los permisos necesarios visitan Microsoft 365 Defender portal. Lea este artículo para comprender los distintos requisitos previos y cómo se aprovisiona Microsoft 365 Defender.
 
-## <a name="check-license-eligibility-and-required-permissions"></a>Comprobar la elegibilidad de la licencia y los permisos necesarios
+## <a name="check-license-eligibility-and-required-permissions"></a>Comprobación de la idoneidad de la licencia y los permisos necesarios
 
-Una licencia de un Microsoft 365 de seguridad por lo general le da derecho a usar Microsoft 365 Defender sin costo de licencia adicional. Se recomienda obtener una Microsoft 365 E5, una licencia de seguridad de E5, A5 o A5 o una combinación válida de licencias que proporciona acceso a todos los servicios compatibles.
+Por lo general, una licencia para un producto de seguridad de Microsoft 365 le da derecho a usar Microsoft 365 Defender sin costo de licencia adicional. Se recomienda obtener una licencia Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinación válida de licencias que proporcione acceso a todos los servicios admitidos.
 
 Para obtener información detallada sobre las licencias, [lee los requisitos de licencia](prerequisites.md#licensing-requirements).
 
-### <a name="check-your-role"></a>Comprobar el rol
+### <a name="check-your-role"></a>Comprobación del rol
 
 Debe ser uno de los siguientes roles para activar Microsoft 365 Defender:
 
@@ -59,25 +61,25 @@ Debe ser uno de los siguientes roles para activar Microsoft 365 Defender:
 - Administrador de la aplicación
 - Administrador de aplicaciones en la nube
 
-[Ver los roles en Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+[Visualización de los roles en Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
-## <a name="supported-services"></a>Servicios compatibles
+## <a name="supported-services"></a>Servicios admitidos
 
 Microsoft 365 Defender agrega datos de los distintos servicios compatibles que ya ha implementado. Procesará y almacenará los datos de forma centralizada para identificar nuevas conclusiones y hacer posibles flujos de trabajo de respuesta centralizados. Lo hace sin afectar a las implementaciones, la configuración o los datos existentes asociados a los servicios integrados.
 
-Para obtener la mejor protección y optimizar Microsoft 365 Defender, se recomienda implementar todos los servicios compatibles aplicables en la red. Para obtener más información, [lea acerca de la implementación de servicios compatibles](deploy-supported-services.md).
+Para obtener la mejor protección y optimizar Microsoft 365 Defender, se recomienda implementar todos los servicios admitidos aplicables en la red. Para obtener más información, [lea sobre la implementación de servicios admitidos](deploy-supported-services.md).
 
 ## <a name="onboard-to-the-service"></a>Incorporación al servicio
-La incorporación a Microsoft 365 Defender es sencilla. En el menú de navegación, seleccione cualquier elemento, como incidentes **& alertas****, búsqueda****, centro** de acción o análisis de amenazas  para iniciar el proceso de incorporación. 
+La incorporación a Microsoft 365 Defender es sencilla. En el menú de navegación, seleccione cualquier elemento, como **Incidentes & alertas**, **Búsqueda**, **Centro de acciones** o **Análisis de amenazas** para iniciar el proceso de incorporación. 
 
 ### <a name="data-center-location"></a>Ubicación del centro de datos
 
-Microsoft 365 Defender almacenará y procesará datos en la [misma ubicación usada por Microsoft Defender para Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene Microsoft Defender para endpoint, se selecciona automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad Microsoft 365 seguridad. La ubicación del centro de datos seleccionada se muestra en la pantalla.
+Microsoft 365 Defender almacenará y procesará los datos en la [misma ubicación usada por Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene Microsoft Defender para punto de conexión, se selecciona automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad de Microsoft 365 activos. La ubicación del centro de datos seleccionada se muestra en la pantalla.
 
-Seleccione **¿Necesita ayuda?** en el portal de Microsoft 365 Defender para ponerse en contacto con el soporte técnico de Microsoft sobre el Microsoft 365 Defender en una ubicación diferente del centro de datos.
+Seleccione **¿Necesita ayuda?** en el portal de Microsoft 365 Defender para ponerse en contacto con el soporte técnico de Microsoft sobre el aprovisionamiento de Microsoft 365 Defender en otra ubicación del centro de datos.
 
 > [!NOTE]
-> En el pasado, Microsoft Defender para Endpoint se aprovisionaba automáticamente en centros de datos de la Unión Europea (UE) cuando se activaba a través de Microsoft Defender para la nube. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Defender for Endpoint de esta manera en el pasado.
+> En el pasado, Microsoft Defender para punto de conexión aprovisionado automáticamente en centros de datos de la Unión Europea (UE) cuando se activa a través de Microsoft Defender for Cloud. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que hayan aprovisionado Defender para punto de conexión de esta manera en el pasado.
 
 ### <a name="confirm-that-the-service-is-on"></a>Confirme que el servicio está activado
 
@@ -86,29 +88,29 @@ Una vez que recibe el servicio, este agrega:
 - [Administración de incidentes](incidents-overview.md)
 - [Cola de alertas](investigate-alerts.md)
 - Un centro de actividades para administrar [una investigación y respuestas automáticas](m365d-autoir.md)
-- [Capacidades avanzadas de](advanced-hunting-overview.md) búsqueda
+- [Funcionalidades avanzadas de búsqueda](advanced-hunting-overview.md)
 - Análisis de amenazas
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="El panel de navegación del portal Microsoft 365 Defender con Microsoft 365 Defender características" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="Panel de navegación del portal de Microsoft 365 Defender con características Microsoft 365 Defender" lightbox="../../media/overview-incident.png":::
 *Microsoft 365 Defender portal con administración de incidentes y otras funcionalidades*
 
-### <a name="getting-microsoft-defender-for-identity-data"></a>Obtener datos de Microsoft Defender para identidades 
-Para habilitar la integración con Microsoft Defender para aplicaciones en la nube, tendrás que iniciar sesión en Microsoft Defender para Aplicaciones en la nube al menos una vez.
+### <a name="getting-microsoft-defender-for-identity-data"></a>Obtención de datos Microsoft Defender for Identity 
+Para habilitar la integración con Microsoft Defender for Cloud Apps, deberá iniciar sesión en el Microsoft Defender for Cloud Apps al menos una vez.
 
 ## <a name="get-assistance"></a>Cómo recibir asistencia
 
 Para obtener respuestas a las preguntas más frecuentes sobre cómo activar Microsoft 365 Defender, [lea las preguntas más frecuentes](m365d-enable-faq.md).
 
-El personal de soporte técnico de Microsoft puede ayudar a aprovisionar o desaprovisionar el servicio y los recursos relacionados en el espacio empresarial. Para obtener ayuda, seleccione **¿Necesita ayuda?** en Microsoft 365 Defender portal. Al ponerse en contacto con el soporte técnico, Microsoft 365 Defender.
+El personal de soporte técnico de Microsoft puede ayudar a aprovisionar o desaprovisionar el servicio y los recursos relacionados en el inquilino. Para obtener ayuda, seleccione **¿Necesita ayuda?** en el portal de Microsoft 365 Defender. Al ponerse en contacto con el soporte técnico, mencione Microsoft 365 Defender.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Preguntas más frecuentes](m365d-enable-faq.md)
 - [Requisitos de licencia y otros requisitos previos](prerequisites.md)
 - [Implementación de servicios compatibles](deploy-supported-services.md)
-- [Microsoft 365 Defender información general](microsoft-365-defender.md)
-- [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Información general Office 365 defender para Office 365 información general](../office-365-security/defender-for-office-365.md)
+- [introducción a Microsoft 365 Defender](microsoft-365-defender.md)
+- [introducción a Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
+- [introducción a Defender para Office 365](../office-365-security/defender-for-office-365.md)
 - [Introducción a Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
-- [Introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)
-- [Microsoft Defender para el almacenamiento de datos de punto de conexión](../defender-endpoint/data-storage-privacy.md)
+- [introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)
+- [almacenamiento de datos de Microsoft Defender para punto de conexión](../defender-endpoint/data-storage-privacy.md)

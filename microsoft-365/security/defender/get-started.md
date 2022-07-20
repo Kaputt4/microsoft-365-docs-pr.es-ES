@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739979"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893505"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Introducción a Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "65739979"
 
 Microsoft 365 Defender es una experiencia unificada en la que puede supervisar y administrar la seguridad en toda la empresa. Con las alertas integradas entre identidades, puntos de conexión, datos, aplicaciones, correo electrónico y herramientas de colaboración, la investigación y la respuesta a las amenazas ahora se producen en una ubicación central. 
 
-Vea este breve vídeo para aprender cómo Microsoft 365 Defender ayuda a prevenir, detectar, investigar y corregir amenazas en Microsoft 365.  
+Vea este breve vídeo para obtener información sobre cómo Microsoft 365 Defender ayuda a prevenir, detectar, investigar y corregir amenazas en Microsoft 365.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
 Tanto si no está familiarizado con el conjunto de productos de seguridad de Microsoft como si está familiarizado con flujos de trabajo individuales, este tema le guiará en los sencillos pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender.
@@ -62,6 +62,6 @@ Al activar Microsoft 365 Defender e implementar servicios, obtendrá acceso a la
 | Funcionalidad | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de Endpoint Protection basado en potentes sensores de comportamiento, análisis en la nube e inteligencia sobre amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para las aplicaciones y los datos en Office 365, incluidos el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para las aplicaciones y los datos en Office 365, incluidos el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades en peligro y usuarios internos malintencionados mediante señales correlacionadas de Active Directory |
 | Microsoft Defender for Cloud Apps | Identificar y combatir las ciberamenazas en los servicios en la nube de Microsoft y de terceros |

@@ -9,26 +9,22 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 description: Información general sobre el mantenimiento del entorno de seguridad de la red y los sistemas de la organización y la defensa contra ciberataques.
-ms.openlocfilehash: 92a234873babcb81b0c1f1e2a1e5145bec1b35ca
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3d1af0c30bdbe3d348f317784793e3235bfa3aa5
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641041"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894391"
 ---
 # <a name="maintain-your-environment"></a>Mantenimiento del entorno
 

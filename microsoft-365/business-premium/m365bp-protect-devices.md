@@ -9,26 +9,22 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo configurar y proteger dispositivos administrados frente a amenazas de seguridad y ciberataques. Implemente defensas de ciberseguridad y protección de puntos de conexión mediante la inscripción e incorporación de todos los dispositivos. Obtenga información sobre cómo configurar directivas de dispositivo y administrar grupos de dispositivos.
-ms.openlocfilehash: 119b54dd2a00e02fcef9a7caa0406638ec06a261
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 599ded6105f050cc1bd37c8214277f7a0f5ee091
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630840"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894413"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configuración y protección de dispositivos administrados
 

@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de un ataque de correo electrónico de suplantación de identidad
-description: Paso a paso por un análisis de ejemplo de un ataque de suplantación de identidad.
+title: Ejemplo de ataque de correo electrónico de suplantación de identidad
+description: Realice un análisis de ejemplo de un ataque de suplantación de identidad (phishing).
 keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,53 +16,53 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 413c4fadcc6de3527643be712713d37a1e2c346c
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: dcf620cfaeb1d33665538d16d080e72745b96e42
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501143"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892926"
 ---
-# <a name="example-of-a-phishing-email-attack"></a>Ejemplo de un ataque de correo electrónico de suplantación de identidad
+# <a name="example-of-a-phishing-email-attack"></a>Ejemplo de ataque de correo electrónico de suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados entregados por correo electrónico. Dado que [el Centro de](https://protection.office.com/) seguridad y cumplimiento de Office 365 se integra con Microsoft 365 Defender, los analistas de seguridad pueden tener visibilidad de las amenazas procedentes de Office 365, como los datos adjuntos de correo electrónico.
+Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados entregados por correo electrónico. Dado que el [Centro de seguridad y cumplimiento de Office 365](https://protection.office.com/) se integra con Microsoft 365 Defender, los analistas de seguridad pueden tener visibilidad sobre las amenazas procedentes de Office 365, como a través de datos adjuntos de correo electrónico.
 
 Por ejemplo, a un analista se le asignó un incidente de varias fases.
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Un incidente de varias fases" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-incident.png":::
 
-En la **pestaña Alertas** del incidente, se muestran las alertas de Defender para Office 365 y Microsoft Defender para aplicaciones en la nube. El analista puede explorar en profundidad las alertas de Defender Office 365 mediante la selección de las alertas de mensajes de correo electrónico. Los detalles de la alerta se muestran en el panel lateral.
+En la pestaña **Alertas** del incidente, se muestran las alertas de Defender para Office 365 y Microsoft Defender for Cloud Apps. El analista puede explorar en profundidad las alertas de Defender para Office 365 seleccionando las alertas de mensajes de correo electrónico. Los detalles de la alerta se muestran en el panel lateral.
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Una alerta de correo electrónico" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png":::
  
-Al desplazarse hacia abajo más adelante, se muestra más información, que muestra los archivos malintencionados y el usuario que se ha afectado.
+Al desplazarse más hacia abajo, se muestra más información, que muestra los archivos malintencionados y el usuario que se ha visto afectado.
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Impacto de usuario y archivo de una alerta de correo electrónico" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-impact.png":::
   
-Al seleccionar **Abrir página de alertas** , selecciona el vínculo para ver la alerta específica en la que se puede ver información diversa con mayor detalle. El mensaje de correo electrónico real se puede ver seleccionando Ver **mensajes en el Explorador** hacia la parte inferior del panel.
+Al seleccionar **abrir la página de alertas** , se le lleva a la alerta específica, donde se puede ver con mayor detalle información; para ello, seleccione el vínculo. Para ver el mensaje de correo electrónico real, seleccione **Ver mensajes en el Explorador** hacia la parte inferior del panel.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Los detalles de una alerta" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Detalles de una alerta" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png"::: 
 
-Esto lleva al analista a la página Administración de amenazas donde se muestran el asunto de correo electrónico, el destinatario, el remitente y otra información. **ZAP** en **Acciones especiales** indica al analista que se implementó la característica de purga automática de hora cero. ZAP detecta y quita automáticamente mensajes malintencionados y de correo no deseado de los buzones de toda la organización. Para obtener más información, vea [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md).
+Esto lleva al analista a la página Administración de amenazas donde se muestran el asunto del correo electrónico, el destinatario, el remitente y otra información. **ZAP** en **Acciones especiales** indica al analista que se implementó la característica de purga automática de hora cero. ZAP detecta y quita automáticamente los mensajes malintencionados y de correo no deseado de los buzones de correo de toda la organización. Para obtener más información, vea [Purga automática de hora cero (ZAP) en Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
-Otras acciones se pueden realizar en mensajes específicos seleccionando **Acciones**. 
+Para realizar otras acciones en mensajes específicos, seleccione **Acciones**. 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Las otras acciones que se pueden realizar en los mensajes de correo electrónico" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-actions.png"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Otras acciones que se pueden realizar en los mensajes de correo electrónico" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-actions.png"::: 
 
 ## <a name="next-step"></a>Paso siguiente
 
-Consulta la [ruta de investigación de ataques basada](first-incident-path-identity.md) en identidades.
+Consulte la ruta [de acceso de investigación de ataques basada en identidades](first-incident-path-identity.md) .
 
 ## <a name="see-also"></a>Vea también
 

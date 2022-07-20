@@ -9,34 +9,30 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o sus propios dispositivos (BYOD) frente a ciberataques con Microsoft 365 Empresa Premium. Cómo configurar la ciberseguridad para equipos Windows y Mac.
-ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: c6010661d11be2af064ddd3d5250f1cf9baacc09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773089"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894369"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows no administrados en Microsoft 365 para la Empresa Premium
 
 Este objetivo se centra en la creación de protección para los equipos Mac y Windows 10 no administrados que no estén inscritos en Microsoft Intune. Es muy probable que su pequeña empresa o campaña tenga personal que lleve sus propios dispositivos (BYOD) y estos dispositivos no estén administrados. Los BYOD incluyen teléfonos, tabletas y PC de propiedad personal.
 
->[!NOTE]
->Cada usuario BYOD debe instalar y ejecutar la aplicación Portal de empresa de Intune para inscribir estos dispositivos y recibir acceso a los recursos de la empresa.
+> [!NOTE]
+> Cada usuario BYOD debe instalar y ejecutar la aplicación Portal de empresa de Intune para inscribir estos dispositivos y recibir acceso a los recursos de la empresa.
 
 Es fundamental garantizar que los usuarios de primera línea siguen estas directrices para que las funcionalidades de seguridad mínimas estén configuradas en todos los dispositivos BYOD.
 
@@ -86,4 +82,4 @@ Use la configuración de firewall para impedir contactos no deseados con su Mac 
 
 ## <a name="next-mission"></a>Próxima misión
 
-¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
+¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el uso del correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.

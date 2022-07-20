@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664092"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893527"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparación de la posición de seguridad para el primer incidente
 
@@ -71,7 +71,7 @@ Para comprobar el progreso de la aplicación de revisiones de software, visite l
 
 ## <a name="4-understand-emerging-threats"></a>4. Comprender las amenazas emergentes
 
-Use [el análisis de amenazas](threat-analytics.md) en el portal de Microsoft 365 Defender para mantenerse al día con el panorama actual de amenazas de seguridad. Expertos investigadores de seguridad de Microsoft crean informes que describen las últimas ciberamenazas en detalle para que pueda comprender cómo podrían afectar a su suscripción Microsoft 365, dispositivos y usuarios. Estos informes pueden incluir:
+Use [el análisis de amenazas](threat-analytics.md) en el portal de Microsoft 365 Defender para mantenerse al día con el panorama actual de amenazas de seguridad. Expertos investigadores de seguridad de Microsoft crean informes que describen las últimas ciberamenazas en detalle para que pueda comprender cómo podrían afectar a su suscripción, dispositivos y usuarios de Microsoft 365. Estos informes pueden incluir:
 
 - Actores de amenazas activos y sus campañas
 - Técnicas de ataque populares y nuevas

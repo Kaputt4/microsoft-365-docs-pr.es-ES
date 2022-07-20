@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c58bc4eb30c819ae0cbc1654173e8d9dc4ecb7a7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664928"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893647"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Evaluación y análisis del primer incidente
 

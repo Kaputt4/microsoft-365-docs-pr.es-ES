@@ -17,16 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades de Compliance Manger y lo que va a venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: aab0ccefd6f139212e8e045eacd458e22f498f9b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638716"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894347"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft Purview
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="july-2022"></a>Julio de 2022
+
+El Administrador de cumplimiento ha publicado la siguiente nueva plantilla de evaluación:
+
+- Hong Kong- Código de práctica bancaria y tarjeta de pago
+
+Vea nuestra [lista completa de plantillas de evaluación](compliance-manager-templates-list.md).
+
 
 ## <a name="may-2022"></a>Mayo de 2022
 

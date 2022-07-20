@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El Administrador de cumplimiento de Microsoft Purview proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631213"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895105"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -295,7 +295,8 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Estándares de seguridad de datos de protección victoriana V2.0 (VPDSS 2.0)  
 - Estándar de administración de la información para el Gobierno de Australia - Archivos Nacionales de Australia (NAA)  
 - China: Especificación de seguridad de la información personal  
-- Ley de ciberseguridad de la República Popular China  
+- Ley de ciberseguridad de la República Popular China
+- Hong Kong- Código de práctica bancaria y tarjeta de pago
 - Hong Kong - Ordenanza de datos personales (privacidad)  
 - Reglas de tecnología de la información de la India (procedimientos y procedimientos de seguridad razonables y datos personales confidenciales o información)
 - India - Ley de Tecnología de la Información  

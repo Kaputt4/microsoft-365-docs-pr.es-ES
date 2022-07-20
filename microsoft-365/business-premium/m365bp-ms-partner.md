@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 267845607ddff1edb02d9007796d0481b6d6c444
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c36dd9b4f243964d93e44770d00de1a56975efb7
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486524"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893987"
 ---
 # <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
 
@@ -36,7 +37,6 @@ Si prefiere que un partner de Microsoft le ayude a obtener y configurar Microsof
 ## <a name="see-also"></a>Vea también
 
 - [Configurar las contraseñas de autoservicio](../admin/add-users/let-users-reset-passwords.md)
-
 - [Configurar la administración de grupos de autoservicio](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ## <a name="next-objectives"></a>Siguientes objetivos

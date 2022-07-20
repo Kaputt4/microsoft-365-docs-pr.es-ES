@@ -9,6 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -20,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685929"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894293"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium &mdash;, ciberseguridad para pequeñas empresas
 
-Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Empresa Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium proteger sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberataques, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
+Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Empresa Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberataques, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
 
 La tarea antes de que sea esto: deje que Microsoft 365 Empresa Premium ayudar a proteger el futuro de su organización. Aborde esta tarea adoptando las siguientes misiones que le ayudarán a fortalecer su entorno, entrenar a su equipo y proteger los dispositivos administrados. Las misiones se organizan de la siguiente manera:
 
@@ -83,7 +84,7 @@ Haga clic (o pulse) en la infografía para ver una versión más grande, o [desc
 
 Microsoft 365 Empresa Premium es una solución completa de seguridad y colaboración para pequeñas y medianas empresas. [Obtenga más información sobre las ventajas de Microsoft 365 Empresa Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora, vamos a [fortalecer su entorno contra los cyberattackers](m365bp-setup-overview.md)!
 

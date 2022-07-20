@@ -15,20 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-- incidentresponse
-- m365solution-incidentresponse
-- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 8138c07ab871ab1a6a8d89df980c914983bbb58e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 441f9ce5824c1de82a5629e4c0ba9192ed89a529
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666952"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895083"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes con Microsoft 365 Defender
 
@@ -177,9 +173,9 @@ Cada una de las entidades analizadas se marca con un veredicto (Malintencionado,
 
 ## <a name="graph-preview"></a>Graph (versión preliminar)
 
-En la pestaña **Graph** se muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red a lo largo del tiempo, dónde se inició y hasta dónde llegó el atacante. Conecta las distintas entidades sospechosas que forman parte del ataque con sus recursos relacionados, como usuarios, dispositivos y buzones. 
+En la pestaña **Gráfico** se muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red a lo largo del tiempo, dónde se inició y hasta dónde llegó el atacante. Conecta las distintas entidades sospechosas que forman parte del ataque con sus recursos relacionados, como usuarios, dispositivos y buzones. 
 
-En la pestaña **Graph**, puede hacer lo siguiente:
+En la pestaña **Gráfico** , puede hacer lo siguiente:
 
 1. Reproduzca las alertas y los nodos del gráfico a medida que se produjeron con el tiempo para comprender la cronología del ataque.
 
@@ -189,13 +185,13 @@ En la pestaña **Graph**, puede hacer lo siguiente:
 
 2. Abra un panel de entidades, lo que le permite revisar los detalles de la entidad y actuar sobre las acciones de corrección, como eliminar un archivo o aislar un dispositivo.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Panel de entidades de la página Graph del portal de Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Panel de entidades en la página Graph del portal de Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. Resalte las alertas basadas en la entidad a la que están relacionadas.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Resaltado de alerta en la página Graph" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Un resaltado de alerta en la página de Graph" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario:
 

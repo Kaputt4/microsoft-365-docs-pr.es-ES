@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664906"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893779"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -72,14 +72,14 @@ En la tabla siguiente se muestra cómo cada servicio compatible proporciona dato
 
 | Servicio | Datos (señales & información correlacionada) | Corrección & ámbito de respuesta |
 | ------ | ------ | ------ |
-| Microsoft Defender para punto de conexión |<ul><li>Estados de punto de conexión y eventos sin procesar</li><li>Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR, reducción de la superficie expuesta a ataques</li><li>Información sobre archivos y otras entidades observadas en puntos de conexión</li></ul> | Puntos de conexión |
-|Microsoft Defender para Office 365 |<ul><li>Estados de correo y buzón y eventos sin procesar</li><li>Detecciones de correo electrónico, datos adjuntos y vínculos</li></ul> | <ul><li>Buzones</li><li>cuentas de Microsoft 365</li></ul> |
+| Microsoft Defender para punto de conexión |<ul><li>Estados de punto de conexión y eventos sin procesar</li><li>Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR y reducción de la superficie expuesta a ataques</li><li>Información sobre archivos y otras entidades observadas en puntos de conexión</li></ul> | Puntos de conexión |
+|Microsoft Defender para Office 365 |<ul><li>Estados de correo y buzón y eventos sin procesar</li><li>detecciones de Email, datos adjuntos y vínculos</li></ul> | <ul><li>Buzones</li><li>Cuentas de Microsoft 365</li></ul> |
 | Microsoft Defender for Identity |<ul><li>Señales de Active Directory, incluidos los eventos de autenticación</li><li>Detecciones de comportamiento relacionadas con la identidad</li></ul> | Identidades |
 | Microsoft Defender for Cloud Apps |<ul><li>Detección de servicios y aplicaciones en la nube no autorizadas (shadow IT)</li><li>Exposición de datos a aplicaciones en la nube</li><li>Actividad de amenazas asociada a aplicaciones en la nube</li></ul> | Aplicaciones en la nube |
 
 ## <a name="deploy-the-services"></a>Implementar los servicios
 
-La implementación de cada servicio normalmente requiere el aprovisionamiento del espacio empresarial y alguna configuración inicial. Consulte la tabla siguiente para comprender cómo se implementan cada uno de estos servicios.
+La implementación de cada servicio normalmente requiere el aprovisionamiento del espacio empresarial y alguna configuración inicial. Consulte la tabla siguiente para comprender cómo se implementa cada uno de estos servicios.
 
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |

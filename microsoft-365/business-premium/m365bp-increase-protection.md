@@ -9,28 +9,22 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631945"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892867"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
@@ -40,6 +34,7 @@ En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Em
 - [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales.
 - [Cómo ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan.
+- [Pasos siguientes](#next-steps) (como la protección de dispositivos no administrados)
 
 ## <a name="review-and-apply-preset-security-policies"></a>Revisión y aplicación de directivas de seguridad preestablecidas
 
