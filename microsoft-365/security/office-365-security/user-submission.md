@@ -1,11 +1,11 @@
 ---
-title: Configuración del mensaje notificado por el usuario
+title: Configuración de correo electrónico notificada por el usuario para correo no deseado, phish, como correo malintencionado
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 07/19/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
+description: Cómo configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios. Cree un buzón para los mensajes que los usuarios informan como correo no deseado, fish, como malintencionados o no malintencionados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
+ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636433"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66885540"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -34,20 +34,22 @@ ms.locfileid: "66636433"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En las organizaciones de Microsoft 365 con buzones de Exchange Online, puede especificar un buzón para recibir mensajes que los usuarios notifican como malintencionados o no malintencionados. Cuando los usuarios notifican mensajes con las distintas opciones de informes, puede usar este buzón para interceptar mensajes (enviar solo al buzón personalizado) o recibir copias de mensajes (enviar al buzón personalizado y a Microsoft). Esta característica funciona con las siguientes opciones de informes de mensajes:
+En las organizaciones de Microsoft 365 con buzones de Exchange Online, puede dirigir el correo a un buzón cuando los usuarios informen de correo no deseado, phish, como mensajes malintencionados o incluso no malintencionados. Cuando los usuarios informan de correos electrónicos con varias opciones de informes, los administradores pueden usar este buzón para interceptar esos mensajes de correo electrónico (solo enviar al buzón personalizado) o recibir copias de mensajes (enviar al buzón personalizado y a Microsoft).
+
+Esta característica funciona con estas opciones de informes de mensajes:
 
 - [Complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
 - [Herramientas de informes de terceros](#third-party-reporting-tools)
 
-La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [Administración envío](admin-submission.md). Esta configuración se conocía anteriormente como directiva de envíos de usuarios.
+La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores informar de forma selectiva y manual de mensajes de correo electrónico a Microsoft mediante [Administración envío](admin-submission.md). *Esta configuración se conocía anteriormente como directiva de envíos de usuarios*.
 
   > [!NOTE]
   > Si los informes se han [deshabilitado en Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de los mensajes notificados por el usuario aquí invalidará esa configuración y permitirá a los usuarios informar de los mensajes en Outlook en la Web de nuevo.
 
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos del buzón personalizado
 
-Use los artículos siguientes para configurar los requisitos previos necesarios para que los mensajes notificados por el usuario vayan al buzón personalizado:
+Use los artículos siguientes para configurar los requisitos previos para que los mensajes de correo electrónico notificados por el usuario vayan al buzón personalizado:
 
 - [Identifique el buzón personalizado como un buzón de SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -55,7 +57,7 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
   - La purga automática de cero horas (ZAP) para malware está desactivada (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada).
   - La opción de filtro de datos adjuntos comunes está desactivada (no está seleccionada la sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes**).
 
-Si tiene Microsoft Defender para Office 365, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los mensajes notificados:
+**Si tiene Microsoft Defender para Office 365**, también debe configurar los siguientes valores para que nuestro filtrado avanzado no afecte a los correos electrónicos notificados:
 
 - Asegúrese de que el buzón personalizado no forma parte de ninguna directiva de [seguridad preestablecida](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies).
 
@@ -63,7 +65,7 @@ Si tiene Microsoft Defender para Office 365, también debe configurar los siguie
 
 - [Cree una directiva de datos adjuntos seguros](set-up-safe-attachments-policies.md) para el buzón personalizado en el que el examen de datos adjuntos seguros, incluida la entrega dinámica, esté desactivado (sección **De respuesta de malware desconocido de Datos adjuntos seguros** > **Desactivado**).
 
-Después de comprobar que el buzón cumple todos los requisitos previos aplicables, puede usar los procedimientos de este artículo para configurar el buzón de correo de envíos de usuario.
+Después de comprobar que el buzón cumple los requisitos previos, puede usar el resto de este artículo para configurar el buzón de correo de envíos de usuario.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -82,7 +84,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
   - [Habilitar o deshabilitar el acceso al PowerShell de Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Uso del portal de Microsoft 365 Defender para configurar el buzón de correo de envíos de usuario
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox-for-emails"></a>Uso del portal de Microsoft 365 Defender para configurar el buzón de correo electrónico de envíos de usuarios
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** > **Directivas** >  de amenazas **Configuración de mensajes notificadas por el usuario** en la sección **Otros**. Para ir directamente a la página **Envíos de usuarios** , use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
@@ -130,7 +132,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 3. Cuando haya terminado, haga clic en **Confirmar**. Para borrar estos valores, haga clic en **Restaurar**.
 
-## <a name="third-party-reporting-tools"></a>Herramientas de informes de terceros
+## <a name="third-party-email-reporting-tools"></a>Herramientas de informes de correo electrónico de terceros
 
 Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. Para ello, establezca el **botón Mensaje de informe de Microsoft Outlook** en **Desactivado** y establezca el **buzón de Mi organización** en un buzón Office 365 de su elección.
 

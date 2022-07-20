@@ -1,0 +1,119 @@
+### YamlMime:FAQ
+metadata:
+  title: Preguntas más frecuentes sobre el Programa de descuentos en El área de trabajo de Microsoft
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: tugu, jmueller
+  audience: Admin
+  ms.topic: faq
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - commerce_subscriptions
+  - okr_SMB
+  - AdminSurgePortfolio
+  search.appverid: MET150
+  description: Preguntas más frecuentes (P+F) sobre el Programa de descuentos de Microsoft Workplace.
+  ms.date: 07/19/2022
+  ms.openlocfilehash: 79420d82f778de953be436609140ba7a9cf6709d
+  ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66885560"
+title: Preguntas más frecuentes sobre el Programa de descuento en el área de trabajo de Microsoft
+summary: >
+  Los clientes de licencias por volumen usan el Programa de descuento de Microsoft Workplace (anteriormente conocido como Programa de uso doméstico o HUP) en el [sitio web de Microsoft Store para Empresas](https://go.microsoft.com/fwlink/?linkid=2139192) o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+
+
+  Todos los demás clientes acceden al Programa de descuento de Workplace mediante este paso:
+
+
+  - En el Centro de administración de Microsoft, vaya a la página **Facturación** > [**Sus productos**](https://go.microsoft.com/fwlink/p/?linkid=842054), seleccione la pestaña **Ventajas** y, a continuación, seleccione el **nombre de la ventaja** para el Programa de descuento en el área de trabajo de Microsoft.
+sections:
+- name: Ignorado
+  questions:
+  - question: >
+      ¿Qué es el Programa de descuento de Microsoft Workplace?
+    answer: >
+      El Programa de descuento de Microsoft Workplace permite a los empleados de las empresas elegibles comprar productos de consumidor de Microsoft con un descuento. Puede consultar los descuentos actuales para cada oferta de productos visitando la página de [productos del Programa de descuento](https://www.microsoft.com/workplace-discount-program) en el área de trabajo.
+  - question: >
+      ¿En qué mercados se ofrece el Programa de descuento en el área de trabajo?
+    answer: "Se ofrecen descuentos en suscripciones Microsoft 365 Familia y personales a empresas elegibles de todo el mundo con estas excepciones:\n\n- Líbano, Macao, Rusia y Venezuela: Esta oferta no está disponible en estos mercados.\n- China y Hong Kong: una suscripción de un año está disponible en estos mercados. Para China, visite [Microsoft 365 en China](https://www.microsoftstore.com.cn/home-use-program/invite). Para Hong Kong, visite [Comprar Microsoft 365 a un precio con descuento](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Los descuentos en algunos dispositivos Surface y accesorios se ofrecen a las empresas elegibles en mercados seleccionados. \n"
+  - question: >
+      ¿Cómo se califica una organización para obtener las ventajas del Programa de descuento en el área de trabajo de Microsoft?
+    answer: "Para que los empleados aprovechen la ventaja del Programa de descuento de Microsoft Workplace, deben tener una dirección de correo electrónico corporativa válida y una cuenta microsoft activa, y su organización debe cumplir uno de los siguientes criterios:\n\n- Clientes que tienen Software Assurance activo para las aplicaciones de Office aptas\n- Clientes que tienen Microsoft 365/Microsoft 365 E3/E5 de Software Assurance\n- Clientes comerciales y gubernamentales que han comprado 2000 o más licencias de uno o una combinación de Microsoft 365 E3/E5\n- Educación y clientes sin ánimo de lucro\n- Clientes comerciales y gubernamentales que han gastado 250 000 USD o más en los 12 meses anteriores en power BI, Office, dispositivos Surface aptos & accesorios, Windows y Enterprise Mobility \n"
+  - question: >
+      ¿Qué pasó con el Programa de uso doméstico?
+    answer: >
+      El Programa para el uso en el hogar de Microsoft sigue estando disponible. El nombre del programa ha cambiado al Programa de descuento de Microsoft Workplace. Los productos con descuento comprados anteriormente no se ven afectados por el cambio en el nombre del programa.  Seguirá recibiendo tarifas con descuento en suscripciones calificadas, siempre que mantenga activada la renovación automática.
+  - question: >
+      ¿Por qué tengo que crear una cuenta de Azure Active Directory (AAD) para usar el Programa de descuento en el área de trabajo?
+    answer: >
+      Para actualizar y modernizar el Programa de descuento en el área de trabajo a una gama más amplia de ventajas de licencias y productos, hemos cambiado la forma en que cumplimos el programa. Microsoft Store para Empresas se usa para la validación de idoneidad y para asignar las ventajas, y se basa en AAD para conectar información de VLSC y validar los dominios de correo electrónico en los que están los empleados de la organización. Para obtener más información, vea [Registrarse para Microsoft Store para Empresas o Microsoft Store para Educación](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Como alternativa, puede usar la pestaña **Beneficios** de la página **Sus productos** de la [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) para administrar las ventajas del programa.
+  - question: >
+      Cómo convertirse en el Administración de TI asignado de un inquilino administrado?
+    answer: >
+      Debe crear un registro especial en DNS para demostrar que es propietario de su dominio de empresa, por ejemplo, contoso.com.
+
+
+      Para ver un proceso paso a paso para convertirse en inquilino administrado, consulte [Administración de un directorio no administrado como administrador en Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+  - question: >
+      ¿Qué recursos están disponibles para ayudar a promover el beneficio del Programa de descuento en el área de trabajo para los empleados?
+    answer: >
+      Use los recursos que se encuentran en la página principal [del Programa de descuento](http://www.microsoft.com/workplace-discount-program/employer-resources) en el área de trabajo para ayudarle a promover el programa a sus empleados. Encontrará folletos digitales e imprimibles, verbiage para su uso en correos electrónicos y newsletters, e instrucciones sobre cómo promover mejor el Programa de descuento en el área de trabajo.
+  - question: >
+      ¿Cuáles son los pasos para que un empleado apto realice una compra del Programa de descuento en el área de trabajo de Microsoft?
+    answer: >
+      1. **Únete** Vaya a la [página Programa de descuento de Microsoft Workplace](http://www.microsoft.com/workplace-discount-program) y seleccione el botón **Introducción** . Los empleados escriben su dirección de correo electrónico corporativa.
+
+      2. **Confirmar**  Se envía un correo electrónico a la bandeja de entrada de su dirección de correo electrónico corporativa con un vínculo que autentica su elegibilidad para el programa.
+
+      3. **Inicia sesión** Una vez autenticados, comienzan el proceso de compra proporcionando la cuenta Microsoft asociada a su dirección de correo electrónico personal, lo que les permite ver los descuentos en los productos disponibles en función de la ventaja del Programa de descuentos en el área de trabajo de la organización. Para obtener más información, consulta [Cómo iniciar sesión en tu cuenta Microsoft](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+
+      4. **Tienda** La compra se procesa y se completa en Microsoft Store.
+  - question: >
+      Si un empleado se suscribe a Microsoft 365 a través del Programa de descuento de Microsoft Workplace, ¿cómo afecta esto a la suscripción empresarial de Microsoft 365 y al límite de dispositivos de nuestra organización?
+    answer: >
+      Las instalaciones realizadas a través del Programa de descuento en el área de trabajo no tienen ningún impacto en la suscripción empresarial de Microsoft 365 de su organización. Cuando los empleados activan Microsoft 365 en sus dispositivos personales, usan su cuenta de Microsoft personal, no su cuenta profesional. Los administradores de TI de su organización no administran ni admiten las compras realizadas a través del Programa de descuento en el área de trabajo.
+  - question: >
+      Tengo problemas para administrar la ventaja del Programa de descuento de Microsoft Workplace de mi organización. ¿Dónde puedo obtener soporte técnico?
+    answer: >
+      Para obtener soporte técnico para problemas al migrar desde el Centro de servicios de licencias por volumen o para acceder a Microsoft Store para Empresas, consulte [Compatibilidad con VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+
+
+      Para ver problemas al ver la ventaja después de que ya hayas accedido a Microsoft Store para Empresas, consulta [Soporte técnico de la Tienda para empresas Administración](/microsoft-store/)
+  - question: >
+      ¿Qué ocurre si mis empleados tienen preguntas sobre este programa o necesitan soporte técnico para la compra y la instalación?
+    answer: >
+      Si los empleados tienen preguntas, refiéralas a los siguientes recursos:
+
+
+      - [Preguntas más frecuentes sobre la compra y la instalación posteriores](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
+
+      - [Preguntas más frecuentes sobre empleados del Programa de descuentos en el área de trabajo](http://www.microsoft.com/workplace-discount-program/faq)
+
+       Para obtener ayuda con problemas técnicos, consulte [Soporte técnico de Microsoft](https://support.microsoft.com/). Encontrará ayuda para:
+
+      - Estado del pedido
+
+      - Facturación
+
+      - Instalación de Office
+
+      - Inicio de sesión en Office
+  - question: >
+      ¿Por qué debería participar mi empresa en el Programa de descuento en el área de trabajo?
+    answer: "El Programa de descuento en el área de trabajo ayuda a su empresa a maximizar el retorno de su inversión en Microsoft. Las ventajas de participar en el programa incluyen: \n\n- Reducción de la necesidad de formación de TI \n- Reducción de los costos de soporte técnico y formación \n- Permitir que los empleados se familiaricen con Microsoft 365 en casa \n- Aumento de la competencia de software, lo que puede aumentar la productividad \n"
+  - question: >
+      ¿Cómo beneficia el Programa de descuentos de Microsoft Workplace a los empleados?
+    answer: >
+      Cuando los empleados compran productos de Microsoft 365 con un descuento significativo, pueden usar el mismo software en casa que usan en la oficina. Esto ayuda a aumentar su productividad, mejorar sus aptitudes y mejorar la satisfacción del trabajo.
+  - question: >
+      ¿Qué ocurre cuando un empleado deja la empresa?
+    answer: "Para los empleados que califican para la oferta de suscripción de Microsoft 365 y han comprado a través del programa, el precio con descuento se aplica siempre y cuando la suscripción del empleado permanezca activa, independientemente de su estado de empleo con su organización. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>Contenido relacionado\n  [Preguntas más frecuentes sobre el Programa de descuento en el área de trabajo de Microsoft](http://www.microsoft.com/workplace-discount-program/faq). (artículo)\\\n  [Centro de servicios de licencias por volumen de Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (página de vínculos)\\\n  [Microsoft Store para Empresas Administración soporte](/microsoft-store/) técnico (página de vínculo)\\\n  [Microsoft Store para Empresas](https://go.microsoft.com/fwlink/?linkid=2139192) (página de vínculo)\\\n  [Tienda de empleados del Programa de descuentos en el lugar de trabajo](http://www.microsoft.com/workplace-discount-program/faq) (página de vínculos)\\\n  [Información general sobre licencias de Microsoft: Programa de descuento en el área de trabajo](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (página de vínculo)"
