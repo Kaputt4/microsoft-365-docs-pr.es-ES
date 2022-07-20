@@ -3,7 +3,7 @@
 ## [Información general]()
 ### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-endpoint.md)
 ### [Cuaderno de estrategias de prueba: saque el máximo partido de la versión de prueba](defender-endpoint-trial-playbook.md)
-### [Comparar planes de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
+### [Comparar planes de seguridad de puntos de conexión de Microsoft](defender-endpoint-plan-1-2.md)
 ### [Requisitos mínimos](minimum-requirements.md)
 ### [¿Cuáles son las novedades de Microsoft Defender para punto de conexión?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Versión preliminar de las características](preview.md)
