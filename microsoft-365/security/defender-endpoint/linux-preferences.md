@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089724"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943582"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para punto de conexión en Linux
 
@@ -93,6 +93,17 @@ Determina si la funcionalidad de bloqueo y supervisión del comportamiento está
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.45.00 o posterior.|
+
+#### <a name="configure-file-hash-computation-feature"></a>Configuración de la característica de cálculo de hash de archivos
+
+Habilita o deshabilita la característica de cálculo hash de archivos. Cuando esta característica está habilitada, Defender para punto de conexión calculará los hashes de los archivos que examina. Tenga en cuenta que la habilitación de esta característica podría afectar al rendimiento del dispositivo. Para obtener más información, consulte: [Crear indicadores para archivos](indicator-file.md).
+
+|Descripción|Valor|
+|---|---|
+|**Key**|enableFileHashComputation|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
+|**Comentarios**|Disponible en La versión 101.73.77 o posterior de Defender para punto de conexión.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecución de un examen después de actualizar las definiciones
 
@@ -320,13 +331,30 @@ Los datos de diagnóstico se usan para mantener Defender para punto de conexión
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|opcional <p> obligatorio (valor predeterminado)|
 |
+
+#### <a name="configure-cloud-block-level"></a>Configuración del nivel de bloque en la nube
+
+Esta configuración determina el grado de agresividad de Defender para punto de conexión al bloquear y examinar archivos sospechosos. Si esta configuración está activada, Defender para punto de conexión será más agresivo al identificar archivos sospechosos que bloquear y examinar; De lo contrario, será menos agresivo y, por lo tanto, bloqueará y examinará con menos frecuencia. Hay cinco valores para establecer el nivel de bloque en la nube:
+
+- Normal (`normal`): el nivel de bloqueo predeterminado.
+- Moderado (`moderate`): solo proporciona veredicto para las detecciones de alta confianza.
+- Alto (`high`): bloquea agresivamente los archivos desconocidos al tiempo que optimiza el rendimiento (mayor posibilidad de bloquear archivos no dañinos).
+- High Plus (`high_plus`): bloquea agresivamente los archivos desconocidos y aplica medidas de protección adicionales (podrían afectar al rendimiento del dispositivo cliente).
+- Tolerancia cero (`zero_tolerance`): bloquea todos los programas desconocidos.
+
+|Descripción|Valor|
+|---|---|
+|**Key**|cloudBlockLevel|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|normal (valor predeterminado) <p> Moderado <p> Alto <p> high_plus <p> zero_tolerance|
+|**Comentarios**|Disponible en Defender para punto de conexión, versión 101.56.62 o posterior.|
   
 #### <a name="enable--disable-automatic-sample-submissions"></a>Habilitar o deshabilitar envíos de ejemplo automáticos
 
 Determina si se envían muestras sospechosas (que probablemente contengan amenazas) a Microsoft. Hay tres niveles para controlar el envío de muestras:
 
 - **Ninguno**: no se envían muestras sospechosas a Microsoft.
-- **Caja fuerte**: solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.
+- **Seguro**: solo las muestras sospechosas que no contienen información de identificación personal (PII) se envían automáticamente. Este es el valor predeterminado para esta configuración.
 - **Todos:** todos los ejemplos sospechosos se envían a Microsoft.
 
 |Descripción|Valor|

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fe312e24a6d6acf174739f2ef45358ed136ec939
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014616"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942616"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -65,7 +65,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 > [!IMPORTANT]
 > - Estas acciones de respuesta solo están disponibles para dispositivos en Windows 10, versión 1703 o posterior, Windows 11, Windows Server 2019 y Windows Server 2022.
-> - En el caso de las plataformas que no son Windows, las funcionalidades de respuesta (como el aislamiento de dispositivos) dependen de las funcionalidades de terceros.
+> - En el caso de las plataformas que no son de Windows, las funcionalidades de respuesta (como el aislamiento de dispositivos) dependen de las funcionalidades de terceros.
 > - Para los agentes de primera entidad de Microsoft, consulte el vínculo "más información" de cada característica para conocer los requisitos mínimos del sistema operativo.
 
 ## <a name="manage-tags"></a>Administrar etiquetas
@@ -120,12 +120,12 @@ El paquete contiene las siguientes carpetas:
 |Autoruns|Contiene un conjunto de archivos que representan el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: El sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este archivo .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, vea [Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad con direcciones URL sospechosas, la infraestructura de comandos y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La caché arp puede revelar otros hosts en una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haberse usado para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la caché del solucionador de cliente DNS, que incluye ambas entradas precargadas desde el archivo hosts local y los registros de recursos obtenidos recientemente para las consultas de nombres resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico local.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, consulte [Configuración de la Firewall de Windows Defender con el registro de seguridad avanzada](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log).<div>|
-|Archivos de captura previa|Windows archivos de captura previa están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haberse eliminado, pero que todavía se pueden encontrar en la lista de archivos de captura previa. <ul><li>Carpeta de captura previa: contiene una copia de los archivos de captura previa de `%SystemRoot%\Prefetch`. NOTA: Se recomienda descargar un visor de archivos de captura previa para ver los archivos de captura previa.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento de si se produjo algún error de copia en la carpeta de captura previa.</li></ul>|
+|Archivos de captura previa|Los archivos de captura previa de Windows están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haberse eliminado, pero que todavía se pueden encontrar en la lista de archivos de captura previa. <ul><li>Carpeta de captura previa: contiene una copia de los archivos de captura previa de `%SystemRoot%\Prefetch`. NOTA: Se recomienda descargar un visor de archivos de captura previa para ver los archivos de captura previa.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento de si se produjo algún error de copia en la carpeta de captura previa.</li></ul>|
 |Procesos|Contiene un archivo .CSV que enumera los procesos en ejecución y proporciona la capacidad de identificar los procesos actuales que se ejecutan en el dispositivo. Esto puede ser útil al identificar un proceso sospechoso y su estado.|
 |Tareas programadas|Contiene un archivo .CSV que enumera las tareas programadas, que se pueden usar para identificar las rutinas realizadas automáticamente en un dispositivo elegido para buscar código sospechoso que se estableció para ejecutarse automáticamente.|
 |Registro de eventos de seguridad|Contiene el registro de eventos de seguridad, que contiene registros de actividad de inicio de sesión o cierre de sesión, u otros eventos relacionados con la seguridad especificados por la directiva de auditoría del sistema. <p><div class="alert"><b>NOTA:</b> Abra el archivo de registro de eventos mediante el Visor de eventos.</div>|
 |Servicios|Contiene un archivo .CSV que enumera los servicios y sus estados.|
-|sesiones de bloque de mensajes del servidor de Windows (SMB)|Enumera el acceso compartido a archivos, impresoras y puertos serie y las comunicaciones varias entre nodos de una red. Esto puede ayudar a identificar la filtración de datos o el movimiento lateral. <p> Contiene archivos para SMBInboundSessions y SMBOutboundSession. <p> <div class="alert"><b>NOTA:</b> Si no hay sesiones (entrantes o salientes), obtendrá un archivo de texto que le indicará que no se han encontrado sesiones SMB.</div>|
+|Sesiones de bloque de mensajes de Windows Server (SMB)|Enumera el acceso compartido a archivos, impresoras y puertos serie y las comunicaciones varias entre nodos de una red. Esto puede ayudar a identificar la filtración de datos o el movimiento lateral. <p> Contiene archivos para SMBInboundSessions y SMBOutboundSession. <p> <div class="alert"><b>NOTA:</b> Si no hay sesiones (entrantes o salientes), obtendrá un archivo de texto que le indicará que no se han encontrado sesiones SMB.</div>|
 |Información del sistema|Contiene un archivo SystemInformation.txt que muestra información del sistema, como la versión del sistema operativo y las tarjetas de red.|
 |Directorios temporales|Contiene un conjunto de archivos de texto que enumera los archivos ubicados en %Temp% para cada usuario del sistema. <p> Esto puede ayudar a realizar un seguimiento de los archivos sospechosos que un atacante puede haber eliminado en el sistema. <p> <div class="alert"><b>NOTA:</b> Si el archivo contiene el siguiente mensaje: "El sistema no encuentra la ruta de acceso especificada", significa que no hay ningún directorio temporal para este usuario y podría deberse a que el usuario no ha iniciar sesión en el sistema.</div>|
 |Usuarios y grupos|Proporciona una lista de archivos que representan cada uno de ellos un grupo y sus miembros.|
@@ -133,13 +133,13 @@ El paquete contiene las siguientes carpetas:
 |CollectionSummaryReport.xls|Este archivo es un resumen de la colección de paquetes de investigación, contiene la lista de puntos de datos, el comando usado para extraer los datos, el estado de ejecución y el código de error si se produce un error. Puede usar este informe para realizar un seguimiento de si el paquete incluye todos los datos esperados e identificar si se han producido errores.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Ejecución Antivirus de Microsoft Defender examen en dispositivos
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Ejecución del examen del Antivirus de Microsoft Defender en dispositivos
 
 Como parte del proceso de investigación o respuesta, puede iniciar de forma remota un examen antivirus para ayudar a identificar y corregir el malware que podría estar presente en un dispositivo en peligro.
 
 > [!IMPORTANT]
 > - Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
-> - Un examen de Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si El antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [compatibilidad Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Un examen del Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si El antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Una vez que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
@@ -158,7 +158,7 @@ Además de contener un ataque mediante la detención de procesos malintencionado
 
 > [!IMPORTANT]
 > - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, Windows 11 y Windows Server 2019 o posterior. 
-> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
+> - Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender Control de aplicaciones. Para obtener más información, vea [Formatos de directivas de integridad de código y firma](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Para impedir que una aplicación se ejecute, se aplica una directiva de integridad de código que solo permite que los archivos se ejecuten si están firmados por un certificado emitido por Microsoft. Este método de restricción puede ayudar a evitar que un atacante controle dispositivos en peligro y realice otras actividades malintencionadas.
@@ -187,11 +187,11 @@ En función de la gravedad del ataque y de la confidencialidad del dispositivo, 
 > - Actualmente no se admite el aislamiento de dispositivos de la red para dispositivos que ejecutan macOS o Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
 > - El aislamiento completo está disponible para los dispositivos que ejecutan Windows 11, Windows 10, versión 1703 o posterior, Windows Server 2022, Windows Server 2019 y Windows Server 2016.
 > - El aislamiento selectivo está disponible para los dispositivos que ejecutan Windows 10, versión 1709 o posterior y Windows 11.
-> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y el tráfico relacionado con la protección basada en la nube del Antivirus de Microsoft Defender.
 
 Esta característica de aislamiento de dispositivo desconecta el dispositivo en peligro de la red mientras conserva la conectividad con el servicio Defender para punto de conexión, que sigue supervisando el dispositivo.
 
-En Windows 10, versión 1709 o posterior, tendrá más control sobre el nivel de aislamiento de red. También puede optar por habilitar la conectividad Outlook, Microsoft Teams y Skype Empresarial (por ejemplo, "Aislamiento selectivo").
+En Windows 10, versión 1709 o posterior, tendrá más control sobre el nivel de aislamiento de red. También puede optar por habilitar Outlook, Microsoft Teams y Skype Empresarial conectividad (por ejemplo, "Aislamiento selectivo").
 
 > [!NOTE]
 > Podrá volver a conectar el dispositivo a la red en cualquier momento. El botón de la página del dispositivo cambiará para decir **Liberar del aislamiento** y, a continuación, realizará los mismos pasos que el aislamiento del dispositivo.
@@ -210,6 +210,9 @@ Cuando se aísla un dispositivo, se muestra la siguiente notificación para info
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="Un mensaje sin conexión de red" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="contain-devices-from-the-network"></a>Contener dispositivos de la red
+ 
+> [!NOTE]
+> Las funcionalidades de contenido están actualmente en versión preliminar pública. Para obtener información sobre las nuevas características de la versión preliminar de Microsoft 365 Defender y estar entre las primeras en probar las próximas características activando la experiencia de vista previa, consulte [Características de vista previa en Micrsoft 365 Defender](../defender/preview.md).
 
 Cuando haya identificado un dispositivo no administrado que está en peligro o potencialmente en peligro, es posible que desee contener ese dispositivo de la red. Cuando contenga un dispositivo, cualquier Microsoft Defender para punto de conexión dispositivo incorporado bloqueará la comunicación entrante y saliente con ese dispositivo. Esta acción puede ayudar a evitar que los dispositivos vecinos se pongan en peligro mientras el analista de operaciones de seguridad localiza, identifica y corrige la amenaza en el dispositivo en peligro.
 
@@ -217,7 +220,7 @@ Cuando haya identificado un dispositivo no administrado que está en peligro o p
 > El bloqueo de la comunicación entrante y saliente con un dispositivo "contenido" es compatible con dispositivos incorporados Microsoft Defender para punto de conexión Windows 10 y Windows Server 2019+.
 
 ### <a name="how-to-contain-a-device"></a>Cómo contener un dispositivo
-
+ 
 1. Vaya a la página **Inventario de** dispositivos y seleccione el dispositivo que va a contener.
 
 2. Seleccione **Contener dispositivo** en el menú acciones del control flotante del dispositivo.
@@ -272,7 +275,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, la fec
 :::image type="content" source="images/action-center-details.png" alt-text="Centro de acciones con información" lightbox="images/action-center-details.png":::
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manual en Microsoft Defender para punto de conexión Plan 1](defender-endpoint-plan-1.md#manual-response-actions)

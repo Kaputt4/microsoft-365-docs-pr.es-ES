@@ -12,16 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo llevar a cabo tareas clave de administración de la puerta de enlace de Microsoft LMS, incluida la visualización, eliminación, edición y solución de problemas.
-ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414799"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944117"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Administración de la puerta de enlace de Microsoft LMS para cualquier LMS
 
-Microsoft LMS Gateway se integra con varios LMS, como Canvas, Blackboard y Moodle.
+Microsoft LMS Gateway se integra con varios LMS, como Canvas, Blackboard, Moodle y Brightspace.
 
 En este artículo, los administradores de TI encontrarán instrucciones sobre las tareas clave de administración de la puerta de enlace de Microsoft LMS.
 

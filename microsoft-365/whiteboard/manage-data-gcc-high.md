@@ -1,7 +1,7 @@
 ---
 title: Administración de datos para Microsoft Whiteboard en entornos de GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar el acceso a Whiteboard.
-ms.openlocfilehash: 72da71d7d2c57fca9b4f006326e2d4bf506fe8bf
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917307"
+ms.locfileid: "66943428"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de datos para Microsoft Whiteboard en entornos de GCC High
 

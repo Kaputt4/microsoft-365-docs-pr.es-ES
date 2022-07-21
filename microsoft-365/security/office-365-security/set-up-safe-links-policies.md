@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5b6d69614adcc34f24450e51c3067a13922493c5
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771403"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943853"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -91,7 +91,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva de vínculos seguros personalizada en el portal de Microsoft 365 Defender crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 
 2. En la página **Vínculos seguros** , haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -123,9 +123,9 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -140,8 +140,8 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
 
        - **No vuelva a escribir las siguientes direcciones URL en la sección de correo electrónico** : haga clic en **Administrar (nn) direcciones URL** para permitir el acceso a direcciones URL específicas que, de lo contrario, estarían bloqueadas por vínculos seguros.
 
-     > [!NOTE]
-     > El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste de vínculos seguros de esas direcciones URL. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.
+         > [!NOTE]
+         > Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de dirección URL permitidas en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-allow-url-entries) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
 
      1. En el control flotante **Administrar direcciones URL para no volver a escribir** que aparece, haga clic en ![el icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) **Agregar direcciones URL**.
      2. En el control flotante **Agregar direcciones URL** que aparece, escriba la dirección URL o el valor que desee, seleccione la entrada que aparece debajo del cuadro y, a continuación, haga clic en **Guardar**. Repita este paso tantas veces como sea necesario.
@@ -207,7 +207,7 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Uso del portal de Microsoft 365 Defender para ver las directivas de vínculos seguros
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 
 2. En la página **Vínculos seguros** , se muestran las siguientes propiedades en la lista de directivas de vínculos seguros:
    - **Nombre**
@@ -228,7 +228,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Habilitación o deshabilitación de directivas de vínculos seguros
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 
 2. En la página **Vínculos seguros** , seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -253,7 +253,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 - En el portal de Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva Vínculos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (que puede afectar a la prioridad de las reglas existentes).
 - Las directivas de vínculos seguros se procesan en el orden en que se muestran (la primera directiva tiene el valor **de prioridad** 0). Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 
 2. En la página **Vínculos seguros** , seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -268,7 +268,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Uso del portal de Microsoft 365 Defender para quitar directivas de vínculos seguros
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Vínculos seguros de directivas** de **amenazas** \> en la sección **Directivas**.
+1. En el portal de Microsoft 365 Defender, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Vínculos seguros** de **directivas** \> de amenazas en la sección **Directivas**.
 
 2. En la página **Vínculos seguros** , seleccione una directiva de la lista haciendo clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en ![icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png)**Eliminar directiva**.
 

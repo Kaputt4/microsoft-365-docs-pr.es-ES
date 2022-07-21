@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35358ec572fbb6ed0a7256e9af6be73db04e5f59
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822077"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944073"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementación manual de Microsoft Defender para punto de conexión en Linux
 
@@ -79,7 +79,6 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     |---|---|
     |Para RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
     |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
-    <!--|Para RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Para Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Para Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -197,10 +196,10 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 - Instale la clave pública de Microsoft GPG:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- Instale el controlador https si aún no está presente:
+- Instale el controlador HTTPS si aún no está instalado:
 
     ```bash
     sudo apt-get install apt-transport-https
@@ -461,6 +460,6 @@ Consulte [Problemas de instalación](linux-resources.md#log-installation-issues)
 
 Consulte [Desinstalación](linux-resources.md#uninstall) para obtener más información sobre cómo quitar Defender para punto de conexión en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar problemas de estado del agente](health-status.md)
