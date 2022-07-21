@@ -138,6 +138,7 @@
 ###### [Solución de problemas de instalación de RHEL 6](linux-support-rhel.md)
 ###### [Solucionar problemas de rendimiento](linux-support-perf.md)
 ###### [Solucionar problemas de eventos que faltan](linux-support-events.md)
+###### [Solución de problemas de rendimiento de AuditD](troubleshoot-auditd-performance-issues.md)
 
 ##### [Privacidad](linux-privacy.md)
 ##### [Recursos](linux-resources.md)

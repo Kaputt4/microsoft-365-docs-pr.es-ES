@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e36bcdd5851b64ec035eaf8e4e3961c14df5c535
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535832"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912584"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
@@ -46,9 +47,9 @@ Las funcionalidades de investigación y corrección automatizadas (AIR) en Micro
 
 |Nivel de automatización|Descripción|
 |---|---|
-|**Completo: corrección automática de amenazas** <br> (también conocido como *automatización completa*)|Con la automatización completa, las acciones de corrección se realizan automáticamente. Todas las acciones de corrección que se realizan se pueden ver en el [Centro de acciones](auto-investigation-action-center.md) de la pestaña **Historial** . Si es necesario, se puede deshacer una acción de corrección. <p> **_Se recomienda la automatización completa_* y se selecciona de forma predeterminada para los inquilinos con Defender para punto de conexión que se crearon el 16 de agosto de 2020 o después, sin ningún grupo de dispositivos definido todavía.*<p>*La automatización completa se establece de forma predeterminada en Defender para empresas.*|
+|**Completo: corrección automática de amenazas** <br> (también conocido como *automatización completa*)|Con la automatización completa, las acciones de corrección se realizan automáticamente en entidades que se consideran malintencionadas. Todas las acciones de corrección que se realizan se pueden ver en el [Centro de acciones](auto-investigation-action-center.md) de la pestaña **Historial** . Si es necesario, se puede deshacer una acción de corrección. <p> **_Se recomienda la automatización completa_* y se selecciona de forma predeterminada para los inquilinos con Defender para punto de conexión que se crearon el 16 de agosto de 2020 o después, sin ningún grupo de dispositivos definido todavía.*<p>*La automatización completa se establece de forma predeterminada en Defender para empresas.*|
 |**Semi: requiere aprobación para cualquier corrección.** <br> (también conocido como *semiautomatización*)|Con este nivel de automatización parcial, se requiere aprobación para *cualquier* acción de corrección. Estas acciones pendientes se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la pestaña **Pendiente** . <p> *Este nivel de automatización se selecciona de forma predeterminada para los inquilinos creados antes del 16 de agosto de 2020 con Microsoft Defender para punto de conexión, sin grupos de dispositivos definidos.*|
-|**Semi: se requiere aprobación para la corrección de carpetas principales** <br> (también un tipo de *semiautomatización*)|Con este nivel de automatización parcial, se requiere aprobación para las acciones de corrección necesarias en archivos o ejecutables que se encuentran en carpetas principales. Las carpetas principales incluyen directorios del sistema operativo, como el **Windows** (`\windows\*`). <p> Las acciones de corrección se pueden realizar automáticamente en archivos o ejecutables que se encuentran en otras carpetas (no principales). <p> Las acciones pendientes para archivos o ejecutables en carpetas principales se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la pestaña **Pendiente** . <p> Las acciones realizadas en archivos o ejecutables de otras carpetas se pueden ver en el Centro de [acciones](auto-investigation-action-center.md), en la pestaña **Historial** .|
+|**Semi: se requiere aprobación para la corrección de carpetas principales** <br> (también un tipo de *semiautomatización*)|Con este nivel de automatización parcial, se requiere aprobación para las acciones de corrección necesarias en archivos o ejecutables que se encuentran en carpetas principales. Las carpetas principales incluyen directorios del sistema operativo, como **Windows** (`\windows\*`). <p> Las acciones de corrección se pueden realizar automáticamente en archivos o ejecutables que se encuentran en otras carpetas (no principales). <p> Las acciones pendientes para archivos o ejecutables en carpetas principales se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la pestaña **Pendiente** . <p> Las acciones realizadas en archivos o ejecutables de otras carpetas se pueden ver en el Centro de [acciones](auto-investigation-action-center.md), en la pestaña **Historial** .|
 |**Semi: se requiere aprobación para la corrección de carpetas no temporales** <br> (también un tipo de *semiautomatización*)|Con este nivel de automatización parcial, se requiere aprobación para las acciones de corrección necesarias en archivos o ejecutables que *no* están en carpetas temporales. <p> Las carpetas temporales pueden incluir los ejemplos siguientes: <ul><li>`\users\*\appdata\local\temp\*`</li><li>`\documents and settings\*\local settings\temp\*`</li><li>`\documents and settings\*\local settings\temporary\*`</li><li>`\windows\temp\*`</li><li>`\users\*\downloads\*`</li><li>`\program files\`</li><li>`\program files (x86)\*`</li><li>`\documents and settings\*\users\*`</li></ul> <p> Las acciones de corrección se pueden realizar automáticamente en archivos o ejecutables que se encuentran en carpetas temporales. <p> Las acciones pendientes para archivos o ejecutables que no están en carpetas temporales se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la pestaña **Pendiente** . <p> Las acciones que se realizaron en archivos o ejecutables en carpetas temporales se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la pestaña **Historial** .|
 |**Sin respuesta automatizada** <br> (también conocido como *sin automatización*)|Sin automatización, la investigación automatizada no se ejecuta en los dispositivos de la organización. Como resultado, no se realizan acciones de corrección ni están pendientes como resultado de una investigación automatizada. Sin embargo, otras características de protección contra amenazas, como la [protección contra aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus), pueden estar en vigor, en función de cómo se configuren el antivirus y las características de protección de próxima generación. <p> ***No se recomienda usar la opción *sin automatización***, ya que reduce la posición de seguridad de los dispositivos de la organización. [Considere la posibilidad de configurar el nivel de automatización en automatización completa (o al menos semiautomatización).](/microsoft-365/security/defender-endpoint/machine-groups)|
 
@@ -64,7 +65,7 @@ Las funcionalidades de investigación y corrección automatizadas (AIR) en Micro
 
 - Puede mantener la configuración de automatización predeterminada o cambiarla según sus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de funcionalidades automatizadas de investigación y corrección en Defender para punto de conexión](configure-automated-investigations-remediation.md)
 - [Visite el Centro de acciones.](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

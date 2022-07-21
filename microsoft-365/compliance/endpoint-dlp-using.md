@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de punto de conexión.
-ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632385"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882003"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -128,7 +128,6 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 En este escenario, se bloquea la sincronización de archivos con la etiqueta de confidencialidad **Extremadamente confidencial** para OneDrive. Se trata de un escenario complejo con varios componentes y procedimientos. Necesitará:
 
 - Una cuenta de usuario de AAD de destino y un equipo Windows 10 incorporado que ya esté sincronizando una carpeta local de OneDrive con el almacenamiento en la nube de OneDrive.
-- Microsoft Word instalado en el equipo Windows 10 de destino
 - Etiquetas de confidencialidad configuradas y publicadas. Vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 Hay tres pasos:
@@ -234,7 +233,7 @@ Hay tres pasos:
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Escenario 5: Restringir el uso compartido accidental a servicios y aplicaciones en la nube no permitidos
 
-Con DLP de puntos de conexión y el Explorador web Edge, puede restringir el uso compartido accidental de elementos confidenciales a las aplicaciones y servicios en la nube no permitidos. Edge sabe si un elemento está restringido por una directiva DLP de puntos de conexión y aplica las restricciones de acceso.
+Con DLP de puntos de conexión y el Explorador web Microsoft Edge, puede restringir el uso compartido accidental de elementos confidenciales a las aplicaciones y servicios en la nube no permitidos. Edge sabe si un elemento está restringido por una directiva DLP de puntos de conexión y aplica las restricciones de acceso.
 
 Al seleccionar **Dispositivos** como ubicación en una directiva DLP configurada correctamente y usar el explorador Microsoft Edge, los exploradores no permitidos que haya definido en esta configuración no podrán acceder a los elementos confidenciales que coincidan con los controles de directiva DLP. En su lugar, se redirigirá a los usuarios para que usen Microsoft Edge que, con su comprensión de las restricciones impuestas por DLP, puede bloquear o restringir las actividades cuando se cumplan las condiciones de la directiva DLP.
 
@@ -249,6 +248,58 @@ Para usar esta restricción, tendrá que configurar tres partes importantes:
 Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
 
 Esta configuración garantizará que sus datos estén seguros, evitando así las restricciones innecesarias que impiden o restringen a los usuarios el acceso y el uso compartido de elementos no confidenciales.
+
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidenciales (versión preliminar)
+
+Use este escenario cuando quiera auditar, bloquear con invalidación o bloquear estas actividades de usuario en un sitio web.
+
+- imprimir desde un sitio web
+- copiar datos de un sitio web
+- guardar un sitio web como archivos locales
+
+El usuario debe estar accediendo al sitio web a través de Microsoft Edge.
+
+### <a name="supported-syntax-for-designating-websites-in-a-website-group"></a>Sintaxis admitida para designar sitios web en un grupo de sitios web
+
+Puede usar una sintaxis flexible para incluir y excluir dominios, subdominios, sitios web y subsitios en los grupos de sitios web.
+
+- use `*` como carácter comodín para especificar todos los dominios o todos los subdominios.
+- use `/` como terminador al final de una dirección URL para limitar únicamente a ese sitio específico.
+
+Cuando agrega una dirección URL sin un `/` final, esa dirección URL se limita a ese sitio y a todos los subsitios.
+
+Esta sintaxis se aplica a todos los sitios web http/https.
+
+Estos son algunos ejemplos:
+
+
+|Dirección URL que se agrega al grupo de sitios web  |La dirección URL coincidirá  | La dirección URL no coincidirá|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/todoslossubsitios1 </br> //<!--nourl-->contoso.com/todoslossubsitios1/todoslossubsitios2|        //<!--nourl-->todoslossubdominios.contoso.com </br> //<!--nourl-->todoslossubdominios.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/todoslossubsitios1 </br> //<!--nourl-->contoso.com/todoslossubsitios1/todoslossubsitios2 </br> //<!--nourl-->todoslossubdominios.contoso.com </br> //<!--nourl-->todoslossubdominios.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/todoslossubsitios </br> //<!--nourl-->contoso.com/todoslossubsitios1/todoslossubsitios2 </br> //<!--nourl-->todoslossubdominios.contoso.com </br> //<!--nourl-->todoslossubdominios.contoso.com/todoslossubsitios </br> //<!--nourl-->todoslossubdominios1/todoslossubdominios2/contoso.com/todoslossubsitios1/todoslossubsitios2         | //<!--nourl-->todoslossubdominios.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/todoslossubsitios/ </br> //<!--nourl-->todoslossubdominios.contoso.com/xyz </br> //<!--nourl-->todoslossubdominios.contoso.com/xyz/todoslossubsitios </br> //<!--nourl-->todoslossubdominios1.todoslossubdominios2.contoso.com/xyz/todoslossubsitios </br> //<!--nourl-->todoslossubdominios1.todoslossubdominios2.contoso.com/xyz/todoslossubsitios1/todoslossubsitios2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->todoslossubdominios.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->todoslossubdominios.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/todoslossubsitios/ </br> //<!--nourl-->todoslossubdominios.contoso.com/xyz/todoslossubsitios/ </br> //<!--nourl-->todoslossubdominios1.todoslossubdominios2.contoso.com/xyz/todoslossubsitios/ </br> //<!--nourl-->todoslossubdominios1.todoslossubdominios2.contoso.com/xyz/todoslossubsitios1/todoslossubsitios2|
+
+
+### <a name="configure-sensitive-service-domains"></a>Configurar dominios de servicio confidencial
+
+1. En el portal de cumplimiento de Microsoft Purview, abra **Prevención de pérdida de datos** > **Configuración DLP de punto de conexión** > **Restricciones de dominio y explorador para datos confidenciales** > **Dominios de servicio confidencial**.
+1. Seleccione **Agregar un nuevo grupo de dominios de servicio confidencial**.
+1. Asigne un nombre al grupo.
+1. Seleccione el **Tipo de coincidencia** que quiera. Puede seleccionar entre **URL**, **Dirección IP**, **Intervalo de direcciones IP**.
+1. Escriba el valor adecuado en **Agregar nuevos dominios de servicio a este grupo**. Puede agregar varios sitios web a un grupo y usar caracteres comodín para cubrir subdominios.  Por ejemplo, www.contoso.com solo para el sitio web de nivel superior o *.contoso.com para corp.contoso.com, hr.contoso.com fin.contoso.com
+1. Haga clic en **Guardar**.
+1. Seleccione **Directivas**.
+1. Cree y defina el ámbito de una directiva que solo se aplica a **Dispositivos**. Vea, [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para más información sobre cómo crear una directiva.
+1. Cree una regla que use **el usuario accedió a un sitio confidencial desde Edge** y la acción **Auditar o restringir actividades cuando los usuarios accedan a sitios confidenciales en el explorador Microsoft Edge en dispositivos Windows**.
+1. En la acción, seleccione **Agregar o quitar grupos de sitios confidenciales**.
+1. Seleccione los **Grupos de sitios confidenciales** que quiera.
+1. Seleccione **Agregar**.
+1. Seleccione las actividades de usuario que quiera supervisar o restringir y las acciones que DLP realizará en respuesta a esas actividades.
+1. Termine de configurar la regla y la directiva y aplíquela.
+
+
 ## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)

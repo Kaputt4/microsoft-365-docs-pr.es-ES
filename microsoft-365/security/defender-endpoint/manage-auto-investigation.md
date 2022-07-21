@@ -9,6 +9,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 696787189ca14b4609681fb77308c38be206e269
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695624"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912616"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar las acciones de corrección después de una investigación automatizada
 
@@ -126,8 +127,7 @@ Los niveles de automatización afectan a si ciertas acciones de corrección se r
 
 |Configuración del grupo de dispositivos|Resultados de la investigación automatizada|Qué hacer|
 |---|---|---|
-|**Completo: corrección automática de amenazas**<br/>(recomendado)|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Revisar las acciones completadas](#review-completed-actions)|
-|**Completo: corrección automática de amenazas**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
+|**Completo: corrección automática de amenazas**<br/>(recomendado)|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Las acciones de corrección adecuadas se realizan automáticamente.|[Revisar las acciones completadas](#review-completed-actions) |
 |**Semi: requiere aprobación para cualquier corrección.**|Se llega a un veredicto de *malintencionada* o *sospechosa* para una prueba. <p> Las acciones de corrección están pendientes de aprobación para continuar.|[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)|
 |**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *Malintencionada* para una prueba. <p> Si el artefacto es un archivo o ejecutable y se encuentra en un directorio del sistema operativo, como la carpeta Windows o la carpeta Archivos de programa, las acciones de corrección están pendientes de aprobación. <p> Si el artefacto *no* está en un directorio del sistema operativo, las acciones de corrección se realizan automáticamente.|<ol><li>[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)</li><li>[Revisar las acciones completadas](#review-completed-actions)</li></ol>|
 |**Semi: se requiere aprobación para la corrección de carpetas principales**|Se llega a un veredicto de *sospechoso* para una prueba. <p> Las acciones de corrección están pendientes de aprobación.|[Aprobar (o rechazar) las acciones pendientes](#review-pending-actions).|
@@ -141,7 +141,7 @@ Se realiza un seguimiento de todos los veredictos en el [Centro de acción](auto
 > [!NOTE]
 > En [Defender para empresas](../defender-business/mdb-overview.md), las funcionalidades automatizadas de investigación y corrección están preestablecidas para usar **Full : corregir amenazas automáticamente**. Estas funcionalidades se aplican a todos los dispositivos de forma predeterminada.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre las funcionalidades de respuesta en vivo](live-response.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)

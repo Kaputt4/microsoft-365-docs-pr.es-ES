@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686237"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882398"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -257,6 +257,17 @@ Por ejemplo:
 | **CONTOSO.COM** |**Coincide con el nombre de dominio especificado y cualquier subsitio**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**No coincide con subdominios o dominios no especificados**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
 | ***.CONTOSO.COM** |**Coincide con el nombre de dominio especificado, cualquier subdominio y cualquier sitio**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc.) <p>**No coincide con dominios no especificados** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Coincide con el nombre de dominio especificado**: <p>`www.contoso.com` <p>**No coincide con dominios o subdominios no especificados** <p>*://anysubdomain.contoso.com/, en este caso, tiene que colocar el propio nombre de dominio FQDN `www.contoso.com`|
+
+#### <a name="sensitive-service-domains-preview"></a>Dominios de servicio confidencial (versión preliminar)
+
+Al enumerar un sitio web en dominios de servicios confidenciales, puede auditar, bloquear con invalidación o bloquear usuarios cuando intenten:
+
+- imprimir desde un sitio web
+- copiar datos de un sitio web
+- guardar un sitio web como archivos locales
+
+Cada sitio web debe aparecer en un grupo de sitios web y el usuario debe tener acceso al sitio web a través de Microsoft Edge. Los dominios de servicio confidencial (versión preliminar) se usan junto con una directiva DLP para dispositivos. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) para más información.
+
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
 

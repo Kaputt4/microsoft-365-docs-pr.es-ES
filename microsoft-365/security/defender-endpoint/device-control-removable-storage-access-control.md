@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 508bb081d2f5bfcc83538141d6abb28f857bda6e
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882127"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912810"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -36,7 +36,7 @@ Microsoft Defender para punto de conexión característica de almacenamiento ext
 
 |Privilegio|Permiso|
 |---|---|
-|Access|Lectura, Escritura, Ejecución|
+|Acceso|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditar, permitir, impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -312,6 +312,9 @@ Antes de empezar a usar el almacenamiento extraíble Access Control, debe confir
    - En la ventana **Control de dispositivos** , seleccione **Habilitado**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Captura de pantalla de habilitación de RSAC mediante directiva de grupo " lightbox="images/enable-rsac-gp.png":::
+
+> [!NOTE]
+> Si no ve estos objetos de directiva de grupo, debe agregar una plantilla administrativa de directiva de grupo. puede descargar la plantilla administrativa (WindowsDefender.adml y WindowsDefender.admx) desde https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
 
 2. Establecer aplicación predeterminada:
 
