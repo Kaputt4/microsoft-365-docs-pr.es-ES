@@ -322,7 +322,7 @@
               href: mfi-domain-mail-flow-status-insight.md
         - name: Notificar mensajes y archivos a Microsoft
           items:
-            - name: Notificar mensajes y archivos a Microsoft
+            - name: Cómo notificar un correo electrónico o archivo sospechoso a Microsoft
               href: report-junk-email-messages-to-microsoft.md
             - name: Envíos de administradores
               href: admin-submission.md
