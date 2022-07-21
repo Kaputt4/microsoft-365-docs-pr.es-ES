@@ -18,12 +18,12 @@ ms.custom: ''
 description: Cómo configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios. Cree un buzón para los mensajes que los usuarios informan como correo no deseado, fish, como malintencionados o no malintencionados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
-ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+ms.openlocfilehash: 02356f03f60e2bfc0c6c7de992fdc0c4331f3a4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66885540"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942524"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -40,7 +40,7 @@ Esta característica funciona con estas opciones de informes de mensajes:
 
 - [Complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
-- [Herramientas de informes de terceros](#third-party-reporting-tools)
+- [Herramientas de informes de terceros](user-submission.md#third-party-email-reporting-tools)
 
 La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores informar de forma selectiva y manual de mensajes de correo electrónico a Microsoft mediante [Administración envío](admin-submission.md). *Esta configuración se conocía anteriormente como directiva de envíos de usuarios*.
 

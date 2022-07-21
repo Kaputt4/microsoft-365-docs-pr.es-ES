@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
-description: Identifique los cmdlets de PowerShell para la retención que admiten la configuración a escala, la automatización o podría ser necesario para escenarios de configuración avanzada.
-ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Identifique los cmdlets de PowerShell para la retención de Microsoft 365 que admiten la configuración a escala, la automatización o que podrían ser necesarios para escenarios de configuración avanzados.
+ms.openlocfilehash: bdbda5de65421fa73f45a278e2346777835062d9
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625993"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942000"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 

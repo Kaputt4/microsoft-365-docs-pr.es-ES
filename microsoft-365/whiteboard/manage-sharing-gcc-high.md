@@ -1,7 +1,7 @@
 ---
 title: Administración del uso compartido para Microsoft Whiteboard en entornos de GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para Microsoft Whiteboard en entornos de GCC High.
-ms.openlocfilehash: c2223c82a4b55e6391d384d115965f7a4a9c46c7
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 0cd4dc8e4bf39cfbaab79a0140bac544de9e9015
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917175"
+ms.locfileid: "66943384"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración del uso compartido para Microsoft Whiteboard en entornos de GCC High
 

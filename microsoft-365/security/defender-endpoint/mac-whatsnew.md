@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882637"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943494"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -35,6 +35,26 @@ ms.locfileid: "66882637"
 Para obtener más información sobre Microsoft Defender para punto de conexión en otros sistemas operativos: 
 - [Novedades de Microsoft Defender para punto de conexión en Linux](linux-whatsnew.md) 
 - [Novedades de Microsoft Defender para punto de conexión en iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Jul-2022 (compilación: 101.73.77 | Versión de lanzamiento: 20.122062.17377.0)</summary>
+
+&ensp;Fecha de lanzamiento: **21 de julio de 2022**<br/>
+&ensp;Publicado: **21 de julio de 2022**<br/>
+&ensp;Compilación: **101.73.77**<br/>
+&ensp;Versión de lanzamiento: **20.122062.17377.0**<br/>
+&ensp;Versión del motor: **1.1.19200.3**<br/>
+&ensp;Versión de firma: **1.367.1011.0**<br/>
+
+**Novedades**
+
+- Se ha agregado una opción para [configurar el cálculo de hash de archivos](mac-preferences.md#configure-file-hash-computation-feature).
+- A partir de esta compilación, el producto tendrá el nuevo motor antimalware de forma predeterminada.
+- Mejoras de rendimiento para las operaciones de copia de archivos
+- Correcciones de errores
+
+<br/>
+</details>
 
 <details>
   <summary>Jul-2022 (compilación: 101.71.18 | Versión: 20.122052.17118.0)</summary>

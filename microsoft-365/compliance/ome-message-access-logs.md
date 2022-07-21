@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Los registros de acceso están disponibles para los mensajes cifrados recuperados a través del portal de mensajes cifrados.
-ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393229"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942638"
 ---
-# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>Registro de actividad del portal de mensajes cifrado mediante Microsoft Purview Cifrado avanzado de mensajes (versión preliminar)
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Registro de actividad del portal de mensajes cifrado por Cifrado avanzado de mensajes de Microsoft Purview
 
 Los registros de acceso están disponibles para los mensajes encriptados a través del portal de mensajes encriptados que permite a su organización determinar cuándo los mensajes son leídos, y reenviados por sus destinatarios externos. Para asegurarse de que los registros están disponibles para los destinatarios externos, debe aplicar una plantilla de personalización de marca personalizada a los correos electrónicos protegidos enviados por su organización a destinatarios externos que exijan una experiencia de portal. Consulte [Incorporación de la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md).
 

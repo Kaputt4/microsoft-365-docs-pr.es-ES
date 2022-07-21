@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador microsoft mediante el panel Informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662175"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942065"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del explorador microsoft
 
@@ -48,10 +48,10 @@ El gráfico **Usuarios activos** muestra el número total de usuarios que accede
 
 En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Username** | Dirección de correo electrónico del usuario que se conectó a los servicios de Microsoft 365 mediante Microsoft Edge.|
-| **Microsoft Edge usado**| D Muestra una marca de graduación si el usuario de servicios de Microsoft 365 conectado con Microsoft Edge.|
+| **Microsoft Edge usado**| Muestra una marca de graduación si el usuario de servicios de Microsoft 365 conectado con Microsoft Edge.|
 
 Seleccione el icono **Elegir columnas** para agregar o quitar columnas del informe.
 

@@ -1,7 +1,7 @@
 ---
 title: Administración del acceso a Microsoft Whiteboard para entornos de GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar datos de Pizarra.
-ms.openlocfilehash: e1a3ccfd08a4dab8115c8bedf7be49a6be34cd92
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 2f79f53ce68dd9179b2b652f46a4245b9ed6ffdb
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917364"
+ms.locfileid: "66942436"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>Administración del acceso a Microsoft Whiteboard para entornos de GCC High
 

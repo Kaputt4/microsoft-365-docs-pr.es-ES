@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: 1a9e899c1f3292dd0a665c7cbf7ccfd5e561c2aa
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372029"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943292"
 ---
 # <a name="enable-corelight-data-integration"></a>Habilitar la integración de datos de Corelight
 
@@ -40,6 +40,13 @@ Microsoft se ha asociado con [Corelight](https://corelight.com/integrations/iot-
 
 Con este origen de datos habilitado, todos los eventos de los dispositivos de red corelight se envían a Microsoft 365 Defender. Puede ver estas actividades en la escala de tiempo de dispositivos no administrados, disponible en el inventario de dispositivos Microsoft Defender para punto de conexión. Para obtener más información, consulte [Detección de dispositivos](device-discovery.md).
 
+## <a name="prerequisites"></a>Requisitos previos
+
+1. Para configurar la integración de datos de Corelight, el usuario debe tener los siguientes roles:
+   - Administrador global de inquilinos en Azure Active Directory
+   - Administrador de seguridad de la suscripción de Azure que se usará para la integración de Microsoft Defender para IoT
+2. Un plan de Defender para IoT incorporado. Para obtener más información, consulte [Incorporación de Microsoft Defender para IoT con Microsoft Defender para punto de conexión](enable-microsoft-defender-for-iot-integration.md).
+
 ## <a name="enabling-the-corelight-integration"></a>Habilitación de la integración de Corelight
 
 Para habilitar la integración de Corelight, deberá realizar los pasos siguientes:
@@ -50,9 +57,9 @@ Para habilitar la integración de Corelight, deberá realizar los pasos siguient
 
 ### <a name="step-1-turn-on-corelight-as-a-data-source"></a>Paso 1: Activar Corelight como origen de datos
 
-1. En el panel de navegación del [https://security.microsoft.com](https://security.microsoft.com/) portal, seleccione **Configuración** \> **Orígenes de datos de detección** \> de **dispositivos**.
+1. En el panel de navegación del [https://security.microsoft.com](https://security.microsoft.com/) portal, seleccione **Configuración Orígenes** \> de datos **de detección** \> de **dispositivos**.
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="Página orígenes de datos del portal de Microsoft 365 Defender" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="Página orígenes de datos del portal de Microsoft 365 Defender" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. Seleccione **Enviar datos de Corelight a M365D** y seleccione **Guardar**.
 
@@ -103,6 +110,6 @@ Para habilitar la integración de Corelight, deberá realizar los pasos siguient
     --bro.export.defender.filter=<logs_to_filter>
    ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)

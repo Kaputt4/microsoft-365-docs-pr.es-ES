@@ -6,17 +6,17 @@
   href: browser-cookies.md
 - name: Integraciones de Lienzo
   items:
-    - name: Uso de Microsoft OneDrive LTI con Canvas
+    - name: Uso de LTI de Microsoft OneDrive con Canvas
       href: onedrive-lti.md
     - name: Uso de clases de Microsoft Teams con Canvas
       href: teams-classes-with-canvas.md
-    - name: Uso de reuniones Microsoft Teams con Canvas
+    - name: Uso de reuniones de Microsoft Teams con Canvas
       href: teams-meetings-with-canvas.md
 - name: Integraciones de Blackboard
   items:
-    - name: Uso de Microsoft OneDrive LTI con Blackboard
+    - name: Uso de LTI de Microsoft OneDrive con Blackboard
       href: onedrive-lti-blackboard.md
-    - name: Uso de clases Microsoft Teams con Blackboard Learn Ultra
+    - name: Uso de clases de Microsoft Teams con Blackboard Learn Ultra
       href: teams-classes-with-blackboard.md
 - name: Integraciones de Moodle
   items:
@@ -30,3 +30,7 @@
       href: open-lms-plugin-configuration.md
     - name: Uso de clases y reuniones de Microsoft Teams con Open LMS
       href: open-lms-teams-classes-and-meetings.md
+- name: Integraciones de Desire2Learn Brightspace
+  items:
+    - name: Uso de clases y reuniones de Microsoft Teams con Brightspace
+      href: teams-classes-meetings-with-brightspace.md

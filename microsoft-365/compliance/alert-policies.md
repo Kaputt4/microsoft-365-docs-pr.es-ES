@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Cree directivas de alerta en el portal de cumplimiento Microsoft Purview o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: bf896a5c6b801631a96779ad2b1c099c6b89c6a8
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798003"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942087"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -155,7 +155,6 @@ La tabla también indica el Office 365 Enterprise y Office 365 plan del Gobierno
 |**Campaña de malware detectada y bloqueada**|Genera una alerta cuando alguien ha intentado enviar un número inusualmente grande de mensajes de correo electrónico que contienen un determinado tipo de malware a los usuarios de su organización. Si se produce este evento, Microsoft bloquea los mensajes infectados y no se entregan a los buzones. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Campaña de malware detectada en SharePoint y OneDrive**|Genera una alerta cuando se detecta un volumen inusualmente alto de malware o virus en archivos ubicados en sitios de SharePoint o cuentas de OneDrive de su organización. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Malware no zapped porque ZAP está deshabilitado**| Genera una alerta cuando Microsoft detecta la entrega de un mensaje de malware a un buzón porque Zero-Hour purga automática para mensajes phish está deshabilitada. Esta directiva tiene una configuración de gravedad **informativa** . |Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
-|**Phish entregado porque la carpeta correo no deseado de un usuario está deshabilitada**|Genera una alerta cuando Microsoft detecta que la carpeta correo no deseado de un usuario está deshabilitada, lo que permite la entrega de un mensaje de suplantación de identidad de alta confianza a un buzón. Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Phish entregado debido a una invalidación de ETR**|Genera una alerta cuando Microsoft detecta una regla de transporte de Exchange (ETR) que permite la entrega de un mensaje de suplantación de identidad de alta confianza a un buzón de correo. Esta directiva tiene una configuración de gravedad **informativa** . Para obtener más información sobre las reglas de transporte de Exchange (reglas de flujo de correo), vea [Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Phish entregado debido a una directiva de ip permitida**|Genera una alerta cuando Microsoft detecta una directiva de ip permitida que permite la entrega de un mensaje de suplantación de identidad de alta confianza a un buzón de correo. Esta directiva tiene una configuración de gravedad **informativa** . Para obtener más información sobre la directiva de permitir IP (filtrado de conexiones), vea [Configurar la directiva de filtro de conexión predeterminada: Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Phish no zapped porque ZAP está deshabilitado**| Genera una alerta cuando Microsoft detecta la entrega de un mensaje de suplantación de identidad de alta confianza a un buzón de correo porque Zero-Hour purga automática para mensajes phish está deshabilitada. Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|

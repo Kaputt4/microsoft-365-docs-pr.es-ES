@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 899cf3894936ac154e61ef56204294d526aab33e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 26eb779e3c1123d9c8586aebcaddea671c0c9c09
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772026"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943897"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migración a Microsoft Defender para Office 365: fase 2: instalación
 
@@ -71,7 +71,7 @@ Cuando esté listo para comenzar las pruebas, agregue estos grupos como excepcio
 
 - Si desea experimentar con configuraciones que difieren **significativamente** de nuestros valores recomendados Estándar o Estricto, debe considerar la posibilidad de crear y usar grupos de distribución adicionales y específicos para los usuarios piloto en esos escenarios. Puede usar el Analizador de configuración para ver la seguridad de la configuración. Para obtener instrucciones, consulte [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md).
 
-  Para la mayoría de las organizaciones, el mejor enfoque es empezar con directivas que se alineen estrechamente con nuestra configuración estándar recomendada. Después de tanta observación y comentarios como pueda hacer en el período de tiempo disponible, puede pasar a una configuración más agresiva más adelante. La protección de suplantación y la entrega a la carpeta correo no deseado frente a la entrega en cuarentena pueden requerir personalización.
+  Para la mayoría de las organizaciones, el mejor enfoque es empezar con directivas que se alineen estrechamente con nuestra configuración estándar recomendada. Después de tanta observación y comentarios como pueda hacer en el período de tiempo disponible, puede pasar a una configuración más agresiva más adelante. La protección de suplantación y la entrega a la carpeta de Email no deseado frente a la entrega en cuarentena pueden requerir personalización.
 
   Si usa directivas personalizadas, asegúrese de que se apliquen _antes_ de las directivas que contienen la configuración recomendada para la migración. Si un usuario se identifica en varias directivas del mismo tipo (por ejemplo, anti-phishing), solo se aplica una directiva de ese tipo al usuario (en función del valor de prioridad de la directiva). Para obtener más información, vea [Orden y prioridad de la protección por correo electrónico](how-policies-and-protections-are-combined.md).
 
@@ -85,7 +85,7 @@ También debe confirmar que todos los usuarios del piloto tienen instalada en Ou
 
 - [Complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
-- Herramientas de informes de terceros compatibles como se describe [aquí](user-submission.md#third-party-reporting-tools).
+- Herramientas de informes de terceros compatibles como se describe [aquí](user-submission.md#third-party-email-reporting-tools)
 
 No subestime la importancia de este paso. Los datos de envíos de usuarios le proporcionarán el bucle de comentarios que necesita para comprobar una buena experiencia de usuario final coherente antes y después de la migración. Estos comentarios le ayudan a tomar decisiones de configuración de directiva informadas, así como a proporcionar informes respaldados por datos a la administración de que la migración se realizó sin problemas.
 
@@ -180,7 +180,7 @@ Cree dos directivas anti-phishing para los usuarios piloto:
 - Directiva que usa la configuración Estándar, con la excepción de las acciones de detección de suplantación, como se describe a continuación. Use el grupo **MDOPilot\_SpamPhish\_Standard** como condición de la directiva (a quién se aplica la directiva).
 - Directiva que usa la configuración estricta, con la excepción de las acciones de detección de suplantación, como se describe a continuación. Use el grupo **MDOPilot\_SpamPhish\_Strict** como condición de la directiva (a quién se aplica la directiva). Esta directiva debe tener una prioridad más alta (menor número) que la directiva con la configuración Estándar.
 
-En el caso de las detecciones de suplantación de identidad, la acción estándar recomendada es **Mover mensaje a las carpetas de correo no deseado de los destinatarios** y la acción estricta recomendada es **Poner en cuarentena el mensaje**. Use la información de inteligencia de suplantación de identidad para observar los resultados. Las invalidaciones se explican en la sección siguiente. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
+Para las detecciones de suplantación de identidad, la acción Estándar recomendada es **Mover mensaje a las carpetas de Email no deseado de los destinatarios** y la acción estricta recomendada es **Poner en cuarentena el mensaje**. Use la información de inteligencia de suplantación de identidad para observar los resultados. Las invalidaciones se explican en la sección siguiente. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
 En el caso de las detecciones de suplantación, omita las acciones estándar y estrictas recomendadas para las directivas piloto. En su lugar, use el valor **No aplicar ninguna acción** para la siguiente configuración:
 
@@ -190,7 +190,7 @@ En el caso de las detecciones de suplantación, omita las acciones estándar y e
 
 Use la información de suplantación para observar los resultados. Para obtener más información, vea [Información de suplantación en Defender para Office 365](impersonation-insight.md).
 
-Ajustará la protección contra suplantación de identidad (ajustará los bloques y permite) y activará cada acción de protección de suplantación para poner en cuarentena o mover los mensajes a la carpeta Correo no deseado (según las recomendaciones Estándar o Estricta). Puede observar los resultados y ajustar su configuración según sea necesario.
+Ajustará la protección contra suplantación (ajustará los bloques y permite) y activará cada acción de protección de suplantación para poner en cuarentena o mover los mensajes a la carpeta Junk Email (en función de las recomendaciones Estándar o Estricta). Puede observar los resultados y ajustar su configuración según sea necesario.
 
 Para obtener más información, consulte los siguientes temas:
 

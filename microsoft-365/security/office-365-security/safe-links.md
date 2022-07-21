@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64fd5ec3086647c3cfa8a5719becc2e92af9867f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 27c9f6c36959394eadea727e81fe0dde35e66993
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772158"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943941"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -57,7 +57,7 @@ Vea este breve vídeo sobre cómo protegerse frente a vínculos malintencionados
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
-- **Mensajes de correo electrónico**: las directivas de vínculos seguros controlan las protecciones de vínculos seguros para los vínculos de los mensajes de correo electrónico.
+- **Email mensajes**: las directivas de vínculos seguros controlan las protecciones de vínculos seguros para los vínculos de los mensajes de correo electrónico.
 
   Para obtener más información sobre la protección de vínculos seguros para mensajes de correo electrónico, consulte la sección [Vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.
 
@@ -116,15 +116,22 @@ Solo puede usar una condición o excepción una vez, pero la condición o excepc
 > - El destinatario es: romain@contoso.com
 > - El destinatario es miembro de: Ejecutivos
 >
-> La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+> La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
 >
-> Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+> Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 ## <a name="safe-links-settings-for-email-messages"></a>Configuración de vínculos seguros para mensajes de correo electrónico
 
-Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL examinadas se reescriben con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com`. Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
+Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL examinadas se vuelven a escribir o _encapsulan_ con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com`. Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
 
-Luego de que Vínculos seguros reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir. Sin embargo, en el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que ese destinatario también esté protegido por vínculos seguros o que la dirección URL ya se haya reescrito en una comunicación anterior. Siempre que esté activado Vínculos seguros, las direcciones URL se seguirán analizando antes de la entrega, independientemente de si se han reescrito o no. Las direcciones URL no activadas también se comprobarán mediante una llamada API del lado cliente a Vínculos seguros en el momento de hacer clic en Outlook for Desktop versión 16.0.12513 o posterior.
+Luego de que Vínculos seguros reescriba una dirección URL, la dirección URL permanece reescrita incluso si el mensaje se reenvía o responde _manualmente_ (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido no se vuelven a escribir.
+
+En el caso del reenvío _automático_ por reglas de bandeja de entrada o reenvío SMTP, la dirección URL no se volverá a escribir en el mensaje destinado al destinatario final _a menos_ que se cumpla una de las siguientes instrucciones:
+
+- El destinatario también está protegido por vínculos seguros.
+- La dirección URL ya se reescribió en una comunicación anterior.
+
+Siempre que la protección de vínculos seguros esté activada, las direcciones URL se examinan antes de la entrega de mensajes, independientemente de si las direcciones URL se vuelven a escribir o no. En las versiones admitidas de Outlook (Outlook para escritorio, versión 16.0.12513 o posterior), las direcciones URL no codificadas se comprueban mediante una llamada API del lado cliente a Vínculos seguros en el momento de hacer clic.
 
 La configuración de las directivas de vínculos seguros que se aplican a los mensajes de correo electrónico se describe en la lista siguiente:
 
@@ -144,7 +151,7 @@ La configuración de las directivas de vínculos seguros que se aplican a los me
       - Seleccionado (activado): los mensajes que contienen direcciones URL se mantienen hasta que finaliza el examen. Los mensajes se entregan solo después de confirmar que las direcciones URL son seguras. Este es el valor recomendado.
       - No seleccionado (desactivado): si el examen de direcciones URL no se puede completar, entregue el mensaje de todos modos.
 
-  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está seleccionada (activada), no se produce ningún ajuste de dirección URL. Vínculos seguros se llama exclusivamente a través de las API en el momento de hacer clic en la dirección URL por parte de los clientes de Outlook que lo admiten. El valor de recomendación está seleccionado (activado).
+  - **No vuelva a escribir direcciones URL, realice comprobaciones solo a través de safeLinks API**: si esta configuración está seleccionada (activada), no se produce ningún ajuste de dirección URL. En las versiones compatibles de Outlook (Outlook para escritorio, versión 16.0.12513 o posterior), vínculos seguros se llama exclusivamente a través de LAS API en el momento de hacer clic en la dirección URL.
 
   Para obtener más información sobre los valores recomendados para la configuración de directivas Estándar y Estricta para las directivas de vínculos seguros, consulte [Configuración de directivas de Vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -306,7 +313,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos seguros
 
 > [!NOTE]
-> El propósito de la lista "No volver a escribir las siguientes direcciones URL" es omitir el ajuste vínculos seguros de las direcciones URL especificadas. En lugar de usar esta lista, ahora puede [crear entradas de direcciones URL permitidas en la lista de permitidos o bloqueados de](allow-block-urls.md#create-allow-url-entries) inquilinos.
+> Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de dirección URL permitidas en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-allow-url-entries) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
 
 Cada directiva de vínculos seguros contiene una lista **No volver a escribir las siguientes direcciones URL** que puede usar para especificar direcciones URL que no se reescriban mediante el examen de vínculos seguros. En otras palabras, la lista permite a los usuarios incluidos en la directiva acceder a las direcciones URL especificadas que, de lo contrario, estarían bloqueadas por vínculos seguros. Puede configurar diferentes listas en diferentes directivas de vínculos seguros. El procesamiento de directivas se detiene después de que se aplique al usuario la primera directiva (probablemente, la prioridad más alta). Por lo tanto, solo se aplica una opción **No volver a escribir la lista de direcciones URL siguientes** a un usuario que se incluye en varias directivas de vínculos seguros activas.
 

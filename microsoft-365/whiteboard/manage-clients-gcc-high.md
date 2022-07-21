@@ -1,7 +1,7 @@
 ---
 title: Administración de clientes para Microsoft Whiteboard en entornos de GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
-ms.openlocfilehash: bdf4edea4891aaed4d0325aca132818ea351c70e
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 2cfd74c16dc783bd316e2a5b985c94baa2bed28c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917263"
+ms.locfileid: "66942458"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC High
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según sus necesidades organizativas.
-ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624739"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943318"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -204,7 +204,7 @@ Las plantillas de directiva DLP no son perfectas inmediatamente. Es probable que
 
 Este es un ejemplo de falso positivo. Este correo electrónico es inofensivo. El usuario proporciona su número de teléfono móvil a alguien e incluye su firma de correo electrónico.
 
-![Correo electrónico que muestra información de falsos positivos.](../media/DLP-create-test-tune-false-positive-email.png)
+![Email mostrar información falsa positiva.](../media/DLP-create-test-tune-false-positive-email.png)
  
 Pero el usuario ve una sugerencia de directiva que le advierte de que el correo electrónico contiene información confidencial, específicamente, un número de licencia de conducir australiano.
 
@@ -225,7 +225,7 @@ Otra opción es aumentar el número de instancias, de modo que solo se detecte u
 
 Además de cambiar el número de instancias, también puede ajustar la precisión de coincidencia (o el nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de la coincidencia en la regla para que la regla coincida solo con patrones específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Para obtener más información sobre los niveles de confianza, consulte [Uso del nivel de confianza para ajustar las reglas](data-loss-prevention-policies.md#match-accuracy).
 
-Por último, si desea obtener incluso un poco más avanzado, puede personalizar cualquier tipo de información confidencial; por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el [número de licencia de conducir de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), para eliminar el falso positivo desencadenado anteriormente. Para obtener información sobre cómo hacerlo mediante XML y PowerShell, consulte [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
+Por último, si desea obtener incluso un poco más avanzado, puede personalizar cualquier tipo de información confidencial -- por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para [el número de licencia de conductores de Australia](sit-defn-australia-drivers-license-number.md), para eliminar el falso positivo desencadenado anteriormente. Para obtener información sobre cómo hacerlo mediante XML y PowerShell, consulte [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 
