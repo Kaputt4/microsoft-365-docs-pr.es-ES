@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 60d5188b9288b1e131e36e145f7abb98a34d5ead
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d4e520a236c3658106a8311df0beed7f6c54ac4e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627655"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918032"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configuración y visualización de alertas para las directivas de prevención de pérdida de datos
 
@@ -63,6 +63,7 @@ Los clientes que usan [DLP de punto de conexión](endpoint-dlp-learn-about.md) q
 
 - **Configuración de alertas de evento único**: las organizaciones que tienen una suscripción E1, F1 o G1 o una suscripción E3 o G3 solo pueden crear directivas de alertas cuando se desencadena una alerta cada vez que se produce una actividad.
 - **Configuración de alerta agregada**: para configurar directivas de alerta agregadas basadas en un umbral, debe tener cualquiera de las siguientes configuraciones:
+  - Una suscripción a A5
   - Una suscripción A5 o G5
   - Una suscripción E1, F1 o G1 o una suscripción E3 o G3 que incluya una de las siguientes características:
     - Protección contra amenazas avanzada de Office 365 (plan 2)
@@ -133,7 +134,7 @@ Para trabajar con el panel de administración de alertas DLP:
     |                   | Nombre de host                      | Nombre de host de la máquina donde se detectó la infracción de DLP              | Eventos de dispositivos                           |
     |                   | Dirección IP                    | Dirección IP de la máquina                                                  | Eventos de dispositivos                           |
     |                   | Ruta de acceso de archivo                     | Ruta de acceso absoluta del archivo implicado en la infracción                        | Eventos de SharePoint, OneDrive y Dispositivos |
-    |                   | Destinatarios de correo electrónico              | Destinatarios del correo electrónico que infringió la directiva DLP                       | Eventos de Exchange                          |
+    |                   | destinatarios Email              | Destinatarios del correo electrónico que infringió la directiva DLP                       | Eventos de Exchange                          |
     |                   | Asunto del correo electrónico                 | Asunto del correo electrónico que infringió la directiva DLP                          | Eventos de Exchange                          |
     |                   | Datos adjuntos de correo electrónico             | Nombres de los datos adjuntos en el correo electrónico que infringió la directiva DLP         | Eventos de Exchange                          |
     |                   | Propietario del sitio                    | Nombre del propietario del sitio                                                     | Eventos de SharePoint y OneDrive           |

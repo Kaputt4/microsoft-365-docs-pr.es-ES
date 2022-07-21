@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo implementar Microsoft Whiteboard en dispositivos que ejecutan Windows 10 o versiones posteriores.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ce1ff5b07774d07b3b67404e0b04d42b44759ba
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 31341bc446313c54d95e14efdf569ba6e0b5263f
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66553842"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917197"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Implementación de La pizarra de Microsoft en dispositivos Windows 10
 
@@ -51,7 +50,7 @@ La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versio
 
 6. Seleccione **Obtener la aplicación** y acepte los términos de licencia.
 
-7. Volver a la página de la aplicación.
+7. Go back a la página de la aplicación.
 
 8. En el menú desplegable **Tipo de licencia** , seleccione **Sin conexión**.
 

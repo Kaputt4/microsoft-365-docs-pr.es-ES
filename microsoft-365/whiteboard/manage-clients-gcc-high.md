@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f02be2f581199ee7025425edc8137ce68234e298
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: bdf4edea4891aaed4d0325aca132818ea351c70e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66553932"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917263"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC High
 

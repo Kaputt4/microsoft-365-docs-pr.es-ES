@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El Explorador de actividades le permite ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642028"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918010"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -99,7 +99,7 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
 
 El Explorador de actividades recopila información de actividad de los registros de auditoría en varios orígenes de actividades. Para obtener información más detallada sobre qué actividad de etiquetado hace que sea para el Explorador de actividad, vea [Eventos de etiquetado disponibles en el Explorador de actividad](data-classification-activity-explorer-available-events.md).
 
-**Actividades de etiqueta de confidencialidad** y **actividades de etiquetado de retención** de aplicaciones nativas de Office, complemento de Azure Information Protection, SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive. Por ejemplo:
+**Actividades de etiqueta de confidencialidad** y **actividades de etiquetado de retención** de aplicaciones nativas de Office, el cliente y escáner de etiquetado unificado de Azure Information Protection (AIP), SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive. Por ejemplo:
 
 - Etiqueta aplicada
 - Etiqueta cambiada (actualizada, degradada o eliminada)
@@ -132,7 +132,7 @@ Comprender qué acciones se realizan con el contenido etiquetado confidencial le
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
 - [Obtenga información sobre la clasificación de datos](data-classification-overview.md)

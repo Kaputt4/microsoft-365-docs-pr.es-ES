@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d21c9e80e2f5f44a135e0f252eb90dfae408275
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 22f5d80a914ce7b97765fca1e20f00a30732b820
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554168"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917615"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -55,7 +54,7 @@ Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el in
 |Escenario  |Almacenamiento y propiedad  |Configuración de uso compartido  |Experiencia de uso compartido  |
 |---------|---------|---------|---------|
 |Iniciar la pizarra desde un dispositivo móvil o de escritorio  |Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra  |Habilitado  |Usuarios en el inquilino: pueden crear, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión (el botón para compartir una pizarra no aparecerá para los usuarios externos)<br><br>Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.  |
-|Iniciar la pizarra desde un dispositivo móvil o de escritorio  |Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra  |Deshabilitado  |Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no se puede ver ni colaborar<br><br>Cuentas de dispositivo compartido: no se puede ver ni colaborar  |
+|Iniciar la pizarra desde un dispositivo móvil o de escritorio  |Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra  |Deshabilitada  |Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no se puede ver ni colaborar<br><br>Cuentas de dispositivo compartido: no se puede ver ni colaborar  |
 |Inicie la pizarra desde surface hub o Salas de Microsoft Teams  |Almacenamiento: Azure (se moverá a OneDrive para la Empresa en el futuro)<br><br>Propietario: Participante de la reunión   |No aplicable  |Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión.<br><br>Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.  |
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Agregar como pestaña en canales y chats de Teams

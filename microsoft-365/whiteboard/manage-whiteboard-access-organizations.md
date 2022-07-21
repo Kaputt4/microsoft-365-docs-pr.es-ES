@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar Microsoft Whiteboard para su organización en el Centro de administración de Microsoft 365.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1de0cd66a817a3db50b98bf6895be20184c974fc
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 3c75bbfe6b2babf130f8980fe627ec05a8b431e3
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554598"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917659"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Administración del acceso a La pizarra de Microsoft para su organización
 
@@ -63,7 +62,7 @@ Para habilitar o deshabilitar Whiteboard para el inquilino, siga estos pasos:
 
 4. En el panel Pizarra, active **o desactive Activar pizarra para toda la organización** en **Activado**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Conéctese a [PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 

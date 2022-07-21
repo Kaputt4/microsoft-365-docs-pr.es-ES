@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771315"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917900"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -30,7 +31,7 @@ Si aún no tiene Microsoft Defender para Empresas, puede elegir entre varias opc
 
 - [Pruebe o compre la versión independiente de Defender para empresas](#try-or-buy-microsoft-defender-for-business).
 - [Obtenga Microsoft 365 Empresa Premium](#get-microsoft-365-business-premium), que ahora incluye Defender para empresas.
-- [Trabaje con un proveedor de soluciones de Microsoft](#work-with-a-microsoft-solution-provider) que pueda ayudarle a configurar y configurar todo.
+- [Trabaje con un asociado de Microsoft](#work-with-a-microsoft-partner) que pueda ayudarle a configurar y configurar todo.
 
 Si se ha registrado para obtener una evaluación, después de recibir el correo electrónico de aceptación, puede [activar la prueba y asignar licencias de usuario](#how-to-activate-your-trial) y, a continuación, continuar con [los pasos siguientes](#next-steps).
 
@@ -56,17 +57,22 @@ Si se ha registrado para obtener una evaluación, después de recibir el correo 
 
 3. Después de registrarse en Microsoft 365 Empresa Premium, recibirá un correo electrónico con un vínculo para iniciar sesión y empezar. Procede a [Configurar Microsoft 365 Empresa Premium](../../business-premium/m365bp-setup.md).
 
-## <a name="work-with-a-microsoft-solution-provider"></a>Trabajar con un proveedor de soluciones de Microsoft
+## <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
 
 Microsoft tiene una lista de proveedores de soluciones autorizados para vender ofertas, incluidos Microsoft 365 Empresa Premium y Microsoft Defender para Empresas. Para buscar un proveedor de soluciones en su área, siga estos pasos:
 
-1. Ve a la página de **Microsoft Solution Providers**. ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers))
- 
-2. En el cuadro de búsqueda, rellene la ubicación y el tamaño de la empresa. 
+1. Vaya a [Examinar asociados](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. En el cuadro de **Búsqueda de productos, servicios, aptitudes, sectores**, coloque `Microsoft 365` y, a continuación, seleccione **Go**.
+2. En el panel **Filtros** , especifique criterios de búsqueda, como:
 
-4. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan. Su proveedor puede ayudarle a registrarse en Defender para empresas.
+   - Su ubicación
+   - Tamaño de la organización
+   - **Áreas de enfoque**, como **Seguridad** o **Protección contra amenazas** 
+   - **Servicios**, como **licencias** o **servicios administrados (MSP)**
+
+   En cuanto seleccione uno o varios criterios, se actualizará la lista de asociados.
+
+3. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
 
 ## <a name="how-to-activate-your-trial"></a>Activación de la prueba
 
@@ -98,7 +104,7 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 > Si tiene Microsoft 365 Empresa Premium, también tiene Microsoft Intune. Puede usar el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) para administrar dispositivos y configurar las opciones de seguridad. Para obtener más información sobre Intune, consulte [Microsoft Intune es un proveedor de MDM y MAM para los dispositivos](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).

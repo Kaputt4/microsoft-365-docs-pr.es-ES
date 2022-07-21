@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo exportar datos de origen para el tipo de información confidencial basado en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 913870afeef443c5b346172099b0cd47db13e52e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760699"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918076"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
 
@@ -33,7 +33,7 @@ Una vez exportados los datos en uno de los formatos admitidos, puede continuar c
 
 ## <a name="defining-your-edm-sensitive-type"></a>Definición del tipo confidencial de EDM
 
-Al definir el tipo confidencial de EDM, una de las decisiones más críticas es qué campos serán campos principales. Los campos principales deben seguir un patrón detectable y definirse como campos que se pueden buscar (columnas) en el esquema EDM. Los campos secundarios no necesitan seguir ningún patrón, ya que se compararán con todos los textos que rodean las coincidencias con los campos primarios.
+Al definir el tipo confidencial de EDM, una de las decisiones más críticas es definir qué campos serán campos principales. Los campos principales deben seguir un patrón detectable y definirse como campos que se pueden buscar (columnas) en el esquema EDM. Los campos secundarios no necesitan seguir ningún patrón, ya que se compararán con todos los textos que rodean las coincidencias con los campos primarios.
 
 Use estas reglas para ayudarle a decidir qué columnas debe usar como campos principales:
 
@@ -45,7 +45,7 @@ Por ejemplo, si tiene las columnas `full name`, , `date of birth``account number
 
 ## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Guardar datos confidenciales en .csv, .tsv o formato separado por canalización
 
-1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación, como Microsoft Excel, y guarde el archivo en un archivo de texto. El archivo se puede guardar en .csv (valores separados por comas), .tsv (valores separados por tabulaciones) o en formato separados por canalización (|). El formato .tsv se recomienda en los casos en los que los valores de datos pueden incluir comas, como direcciones postales.
+1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación como Microsoft Excel y guarde el archivo en un archivo de texto. El archivo se puede guardar en .csv (valores separados por comas), .tsv (valores separados por tabulaciones) o en formato separados por canalización (|). El formato .tsv se recomienda en los casos en los que los valores de datos pueden incluir comas, como direcciones postales.
 El archivo de datos puede incluir un máximo de:
    - Hasta 100 millones de filas de datos confidenciales
    - Hasta 32 columnas (campos) por origen de datos
@@ -53,13 +53,13 @@ El archivo de datos puede incluir un máximo de:
 
 2. Estructurar los datos confidenciales en el archivo .csv o .tsv de modo que la primera fila incluya los nombres de los campos usados para la clasificación basada en EDM. En el archivo, es posible que tenga nombres de campo como "ssn", "birthdate", "firstname", "lastname". Los nombres de encabezado de las columnas no pueden contener espacios ni guiones bajos. Por ejemplo, el archivo .csv de ejemplo que usamos en este artículo se denomina *RegistrosPacientes.csv* y sus columnas *IdPaciente*, *NEM*, *Apellido*, *Nombre*, *NSS*, etc.
 
-3. Preste atención al formato de los campos de datos confidenciales. En concreto, los campos que pueden contener comas en su contenido, por ejemplo, una dirección de calle que contiene el valor "Seattle,WA", se analizarían como dos campos independientes cuando se analizan si se selecciona el formato de .csv. Para evitarlo, use el formato .tsv o rodeado de la coma que contiene valores entre comillas dobles en la tabla de datos confidenciales. Si la coma que contiene valores también contiene espacios, debe crear una SIT personalizada que coincida con el formato correspondiente. Por ejemplo, una SIT que detecta una cadena de varias palabras con comas y espacios en ella.
+3. Preste atención al formato de los campos de datos confidenciales; en concreto, los campos que pueden contener comas en su contenido. Por ejemplo, una dirección de calle que contiene el valor "Seattle,WA" se analizaría como dos campos independientes cuando se analizara si se selecciona el formato de .csv. Para evitarlo, use el formato .tsv o rodeado de la coma que contiene valores entre comillas dobles en la tabla de datos confidenciales. Si la coma que contiene valores también contiene espacios, debe crear una SIT personalizada que coincida con el formato correspondiente. Por ejemplo, una SIT que detecta una cadena de varias palabras con comas y espacios en ella.
 
 ## <a name="next-step"></a>Paso siguiente
 
 - [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 - [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

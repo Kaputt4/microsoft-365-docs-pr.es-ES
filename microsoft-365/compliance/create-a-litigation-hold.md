@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4a1c7992952e10939aaa1029888455bb05fc4986
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631081"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918054"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
-Puede colocar un buzón en suspensión por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. Al colocar un buzón de usuario en suspensión por juicio, también se conserva el contenido del buzón de archivo del usuario (si está habilitado). Al crear una suspensión, puede especificar una duración de suspensión (también denominada *suspensión basada en tiempo*) para que los elementos eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O bien, puede conservar el contenido indefinidamente (denominada *suspensión infinita*) o hasta que se quite la suspensión por litigio. Si especifica un período de duración de retención, se calcula a partir de la fecha en que se recibe un mensaje o se crea un elemento de buzón. 
+Puede colocar un buzón en suspensión por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. Al colocar un buzón de usuario en suspensión por juicio, también se conserva el contenido del buzón de archivo del usuario (si está habilitado). Al crear una suspensión, puede especificar una duración de suspensión (también denominada *suspensión basada en tiempo*) para que los elementos eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O bien, puede conservar el contenido indefinidamente (denominada *suspensión infinita*) o hasta que se quite la suspensión por litigio. Si especifica un período de duración de retención, se calcula a partir de la fecha en que se recibe un mensaje o se crea un elemento de buzón.
   
 Esto es lo que sucede al crear una suspensión por litigio.
   
@@ -43,7 +43,7 @@ Esto es lo que sucede al crear una suspensión por litigio.
 Para colocar un buzón de Exchange Online en suspensión por litigio, se le debe asignar una licencia Exchange Online plan 2. Si a un buzón se le asigna una licencia de Exchange Online plan 1, tendría que asignarle una licencia de Archivado de Exchange Online independiente para ponerla en espera.
 
 > [!NOTE]
-> En el caso de las organizaciones Office 365 Educación, la suspensión por litigios se admite en las suscripciones de Office 365 A1, que incluyen una licencia Exchange Online plan 1 con características complementarias. Para obtener más información, consulte la sección "Características de Exchange Online" en la [descripción del servicio Office 365 Educación](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
+> En el caso de las organizaciones Office 365 Educación, la suspensión por litigios se admite en las suscripciones de Office 365 A1, que incluyen una licencia Exchange Online plan 2 con características complementarias. Para obtener más información, consulte la sección "Características de Exchange Online" en la [descripción del servicio Office 365 Educación](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Colocación de un buzón en suspensión por juicio
 

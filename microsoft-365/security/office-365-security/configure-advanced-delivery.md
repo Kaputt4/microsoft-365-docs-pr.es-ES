@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 109d711623d2a0355851414af3ef0cb1beadf6af
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490451"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917571"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -57,7 +57,7 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Administración experiencias mostrarán estos mensajes como debido a una invalidación del sistema de **simulación de suplantación de identidad (phishing)** o a una invalidación del sistema de **buzones de SecOps**. Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
 
 - [Explorador de amenazas/Detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad** o **Buzón de SecOps**.
-- La [página Entidad de correo electrónico del Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md): Administración puede ver un mensaje permitido por la directiva de la organización mediante **el buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones**.
+- La [página de entidad Email en explorador de amenazas o detecciones en tiempo real](mdo-email-entity-page.md): Administración puede ver un mensaje permitido por la directiva de la organización mediante **el buzón de SecOps** o **la simulación de suplantación de identidad** en **Invalidación de inquilinos** en la sección **Invalidaciones**.
 - El [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report): Administración puede filtrar por **ver los datos por invalidación del sistema** en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad (phishing). Para ver los mensajes permitidos por la invalidación del buzón de SecOps, puede seleccionar **desglose del gráfico por ubicación de entrega** en el menú desplegable **desglose del gráfico por motivo** .
 - [Búsqueda avanzada en Microsoft Defender para punto de conexión](../defender-endpoint/advanced-hunting-overview.md): la simulación de suplantación de identidad y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents.
 - [Vistas de campaña](campaigns.md): Administración puede filtrar por **el origen de invalidación del sistema** y seleccionar **simulación de suplantación de identidad (Phishing)** o **Buzón de SecOps**.
@@ -75,15 +75,15 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
   Para obtener más información, vea [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md) y [Permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Uso del portal de Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
 
 2. En la página **Entrega avanzada** , compruebe que la pestaña **Buzón de SecOps** está seleccionada y, a continuación, realice uno de los pasos siguientes:
    - Haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
-   - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
+   - Si no hay buzones de SecOps configurados, haga clic en **Agregar**.
 
 3. En el control flotante **Editar buzones de SecOps** que se abre, escriba un buzón de Exchange Online existente que quiera designar como buzón de SecOps mediante uno de los pasos siguientes:
    - Haga clic en el cuadro , deje que la lista de buzones se resuelva y, a continuación, seleccione el buzón.
@@ -99,7 +99,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buz
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Uso del portal de Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
 
 2. En la página **Entrega avanzada** , seleccione la pestaña **Simulación de suplantación de identidad** y, a continuación, realice uno de los pasos siguientes:
    - Haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
@@ -116,6 +116,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buz
      - Ip única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP CIDR: por ejemplo, 192.168.0.1/25.
+
    - **Direcciones URL de simulación que se van a permitir**: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que formen parte de la campaña de simulación de suplantación de identidad (phishing) que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y, a continuación, presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, consulte [Sintaxis de dirección URL para la lista de permitidos o bloques de inquilinos](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Estas direcciones URL se encapsulan en el momento de hacer clic, pero no se bloquean.
 
    Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.

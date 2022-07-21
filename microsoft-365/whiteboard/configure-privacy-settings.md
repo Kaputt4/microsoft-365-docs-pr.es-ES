@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre el cumplimiento y cómo configurar las opciones de privacidad en La pizarra de Microsoft.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882792"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917241"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configuración de la privacidad en La pizarra de Microsoft
 
@@ -31,7 +30,7 @@ Si es el administrador de La pizarra de Microsoft para su organización, puede c
 
 - Si las experiencias conectadas opcionales en Whiteboard están disponibles para los usuarios.
 
-Para configurar el nivel de datos de diagnóstico, inicie sesión en la [Centro de administración de Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) con su cuenta de administrador. En la página principal del centro de administración, vaya a **Mostrar toda la configuración de > > configuración de la organización > Pizarra**.
+Para configurar el nivel de datos de diagnóstico, inicie sesión en la [Centro de administración de Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview) con su cuenta de administrador. En la página principal del centro de administración, vaya a **Mostrar toda la configuración de > > configuración de la organización > Pizarra**.
 
 Para configurar la disponibilidad de experiencias conectadas opcionales, use el [servicio de directivas](/deployoffice/admincenter/overview-office-cloud-policy-service) en la nube de Office en el [centro de administración de Aplicaciones Microsoft 365](https://config.office.com). Inicie sesión con su cuenta de administrador y vaya a **Personalización > Administración de directivas**. La directiva que desea configurar se denomina: **Permitir el uso de experiencias conectadas opcionales adicionales en Office**.
 

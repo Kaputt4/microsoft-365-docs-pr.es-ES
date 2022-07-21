@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37cea2e88afacb14285e10960fba81989ffb387f
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686427"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917681"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -69,7 +69,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 > 
 > - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
 >
-> - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binarios del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary)
+> - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binario del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary). <br> Tenga en cuenta que el binario está sin signo actualmente. Para permitir que el paquete se ejecute en MacOS, deberá usar la sintaxis : "spctl --add /Path/To/Application.app".
 >
 > - Si el dispositivo está detrás de un proxy, simplemente puede pasar el servidor proxy como variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

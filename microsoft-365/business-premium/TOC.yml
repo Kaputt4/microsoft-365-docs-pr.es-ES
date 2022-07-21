@@ -108,12 +108,12 @@
       href: m365bp-maintain-environment.md
     - name: Guía de operaciones de seguridad
       href: m365bp-security-incident-quick-start.md
-    - name: Quitar usuarios
-      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Agregar usuarios
       href: m365bp-add-users.md
     - name: Restablecer contraseñas
       href: m365bp-reset-passwords.md
+    - name: Eliminación de los usuarios que se han ido
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Quitar datos de dispositivos
       href: m365bp-remove-company-data.md
     - name: Restablecer dispositivos a la configuración de fábrica

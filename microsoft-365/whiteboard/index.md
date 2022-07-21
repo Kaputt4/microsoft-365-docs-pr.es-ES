@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Busque recursos sobre cómo configurar y administrar Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70f1252d8a583fc317af30a6eaaa6ccaf0df7a1e
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554122"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917330"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Introducción a la pizarra de Microsoft
 
@@ -28,7 +27,7 @@ Microsoft Whiteboard en Microsoft 365 es un lienzo digital de forma libre en el 
 
 Los recursos de esta sección le ayudan a obtener más información sobre qué es Microsoft Whiteboard y cómo puede ayudar a su organización.
 
-| Si está buscando esta información | Vea este recurso |
+| Si busca esta información | Vea este recurso |
 |:-----|:-----|
 |Obtenga información sobre cómo obtener la pizarra de Microsoft|[Página del producto de La pizarra de Microsoft](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
 |Búsqueda de recursos en el Centro de recursos de Microsoft Tech Community|[Blog de pizarra de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
@@ -41,16 +40,19 @@ Los recursos de esta sección ayudan al administrador de su organización a conf
 
 ### <a name="for-organizations"></a>Para organizaciones
 
-| Si está buscando esta información | Vea este recurso |
+| Si busca esta información | Vea este recurso |
 |:-----|:-----|
-|Aprenda a configurar y administrar el acceso a Whiteboard para su organización.|[Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)|
+|Aprenda a configurar Whiteboard para su organización.|[Configuración y uso de Whiteboard](/surface-hub/whiteboard-collaboration)|
+|Implementación de Whiteboard en dispositivos que ejecutan Windows 10 o versiones posteriores mediante Microsoft Intune o Microsoft Configuration Manager|[Implementación de La pizarra de Microsoft en dispositivos Windows](deploy-on-windows-organizations.md)|
+|Aprenda a administrar el acceso a Whiteboard para su organización.|[Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)|
 |Busque dónde se almacenan el contenido y los datos de whiteboard en Azure y OneDrive para la Empresa  |[Administración de datos para Whiteboard](manage-data-organizations.md)  |
 |Más información sobre la experiencia de uso compartido en Teams y cómo compartir vínculos a usuarios específicos  |[Administración del uso compartido para Whiteboard](manage-sharing-organizations.md)  |
-|Implementación de Whiteboard en dispositivos que ejecutan Windows 10 o versiones posteriores mediante Microsoft Intune o Microsoft Configuration Manager  |[Implementación de pizarra en Windows](deploy-on-windows-organizations.md)  |
+|Obtenga información sobre cómo configurar la configuración de privacidad y los datos de diagnóstico para Whiteboard |[Configuración de la privacidad en Whiteboard](configure-privacy-settings.md)  |
+|Aprenda a administrar los requisitos del Reglamento general de protección de datos (RGPD) para los datos personales recopilados en la Pizarra. |[Administración de solicitudes del interesado del RGPD en la pizarra](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>Para el gobierno
 
-| Si está buscando esta información | Vea este recurso |
+| Si busca esta información | Vea este recurso |
 |:-----|:-----|
 |Obtenga información sobre cómo configurar y administrar el acceso a Whiteboard para entornos de GCC High del Gobierno de EE. UU.|[Administración del acceso a Whiteboard- GCC High](manage-whiteboard-access-gcc-high.md)|
 |Busque dónde se almacenan el contenido y los datos de la pizarra en Azure y OneDrive para la Empresa en entornos de GCC High del Gobierno de EE. UU.  |[Administración de datos para Pizarra: GCC High](manage-data-gcc-high.md)  |
@@ -59,7 +61,7 @@ Los recursos de esta sección ayudan al administrador de su organización a conf
 
 ## <a name="whiteboard-powershell"></a>Whiteboard PowerShell
 
-| Si está buscando esta información | Vea este recurso |
+| Si busca esta información | Vea este recurso |
 |:-----|:-----|
 |Búsqueda de referencias de ayuda del cmdlet de PowerShell para administrar Microsoft Whiteboard|[PowerShell para pizarra](/powershell/module/whiteboard/)|
 

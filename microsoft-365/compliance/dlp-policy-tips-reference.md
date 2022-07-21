@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638353"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917285"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referencia de sugerencias de directiva de prevención de pérdida de datos
 
@@ -82,7 +82,7 @@ La lista de tipos de información confidencial que se detectarán para mostrar s
 - Número de pasaporte de Australia
 - Número de archivo de impuestos de Australia
 - Clave de autenticación de Azure DocumentDB  
-- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de Azure SQL  
+- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de SQL do Azure  
 - Cadena de conexión de Azure IoT  
 - Contraseña de configuración de publicación de Azure  
 - Cadena de conexión de Azure Redis Cache  
@@ -196,7 +196,7 @@ La lista de tipos de información confidencial que se detectarán en los documen
 - Número de identificación fiscal de Austria 
 - Número del impuesto sobre el valor añadido (IVA) de Austria 
 - Clave de autenticación de Azure DocumentDB 
-- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de Azure SQL 
+- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de SQL do Azure 
 - Cadena de conexión de Azure IoT 
 - Contraseña de configuración de publicación de Azure 
 - Cadena de conexión de Azure Redis Cache 
@@ -404,4 +404,5 @@ Tenga en cuenta que los tipos de información confidencial personalizados tambi�
 |**Aplicaciones en la nube de terceros**|:::image type="icon" source="../media/crsmrk.png" border="false":::|ninguno|ninguno|Las sugerencias de directivas de prevención de pérdida de datos no se admiten en aplicaciones en la nube de terceros|
 |**Local**|:::image type="icon" source="../media/crsmrk.png" border="false":::|ninguno|ninguno||
 |**Cliente Win32 de Word, Excel y PowerPoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subconjunto|Subconjunto|Vea [Outlook 2013 y versiones posteriores y La compatibilidad con aplicaciones de Office en escritorio muestra sugerencias de directivas para algunos tipos de información confidencial para](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) la lista de tipos de información confidencial admitidos</br></br>Las sugerencias de directivas para las aplicaciones cliente WXP funcionarán para los documentos almacenados en SharePoint Online o OneDrive para la Empresa Sitios para todas las directivas DLP que tengan exactamente las siguientes condiciones o un subconjunto de condiciones o acciones en la directiva DLP:</br> <ul><li>El contenido contiene tipos de información confidencial</li><li>Ámbito de acceso (el contenido se comparte interna o externamente)</li><li>Notificar al usuario (sugerencias de directivas o notificaciones de usuario)</li><li>Bloquear a todos</li><li>Informes de incidentes</li></ul></br> Si hay alguna otra condición o acción, la sugerencia de directiva DLP para esa directiva no aparecerá en las aplicaciones de escritorio de Word, Excel o PowerPoint.</br>Consulte [Sugerencias de directiva en Excel, PowerPoint y Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) para obtener más detalles.|
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subconjunto|Subconjunto|Las directivas de prevención de pérdida de datos en Power BI se encuentran en versión preliminar pública. </br></br> Se admiten sugerencias de directivas y alertas de administración. |
 ||||||
