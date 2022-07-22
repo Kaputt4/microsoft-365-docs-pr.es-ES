@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33b539018f479c1b023a656ab056ca892d27e526
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9c3dc16904672d32ab8399e693c2066b8e04c187
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822189"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969822"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporación de dispositivos sin acceso a Internet a Microsoft Defender para punto de conexión
 
@@ -61,6 +61,19 @@ En función del sistema operativo, el proxy que se usará para Microsoft Defende
 
 [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
 
-### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud
+### <a name="azure-virtual-machines"></a>Máquinas virtuales de Azure
 
-- Revise la sección requisitos previos de [Protección de los puntos de conexión con la solución EDR integrada de Defender for Cloud: Microsoft Defender para punto de conexión](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
+- Para los dispositivos que ejecutan la solución anterior basada en MMA, configure Azure Log Analytics Gateway (anteriormente conocida como puerta de enlace de OMS) para que actúe como proxy o centro:
+    - [Puerta de enlace de Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Instalar y configurar el punto de Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) a la clave del área de trabajo de Defender para punto de conexión & id.
+- Máquinas virtuales de Azure sin conexión en la misma red de oms Gateway
+    - Configuración de la dirección IP de Azure Log Analytics como proxy
+    - Identificador de & clave del área de trabajo de Azure Log Analytics
+- Microsoft Defender for Cloud
+    - [Área de trabajo de Log Analytics de directivas \> de seguridad](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Detección de \> amenazas Permitir que Defender para punto de conexión acceda a mis datos](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    Para obtener más información, consulte [Trabajar con directivas de seguridad](/azure/security-center/tutorial-security-policy).
+
+> [!NOTE]
+> Cualquier cliente que no tenga acceso a Internet no se puede incorporar al punto de conexión de Microsoft Defender. Un cliente debe tener acceso directamente a las direcciones URL necesarias o debe tener acceso a través de un proxy.

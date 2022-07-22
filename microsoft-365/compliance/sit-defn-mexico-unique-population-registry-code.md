@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad del Código único de registro de población (CURP) de México
+title: Definición de entidad de Clave Única de Registro de Población (CURP) de México
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,28 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Definición de entidad de tipo de información confidencial del Código único de población de México (CURP).
+description: Definición de entidad de tipo de información confidencial de Clave Única de Registro de Población (CURP) de México.
 ms.openlocfilehash: 806f7e9b0d2dd797b17ad848d160c6f74c04e1e2
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66951268"
 ---
-# <a name="mexico-unique-population-registry-code-curp"></a>Código del Registro único de población de México (CURP)
+# <a name="mexico-unique-population-registry-code-curp"></a>Clave Única de Registro de Población (CURP) de México
 
 ## <a name="format"></a>Formato
 
-Patrón alfanumérico de 18 caracteres
+patrón alfanumérico de 18 caracteres
 
 ## <a name="pattern"></a>Patrón
 
 - cuatro letras (sin distinción entre mayúsculas y minúsculas)
 - seis dígitos que indican una fecha válida
-- una letra: H/h o M/m
-- dos letras que indican un código de estado mexicano válido
+- una letra - H/h o M/m
+- dos letras que indican un código de estado nacional válido
 - tres letras
-- una letra o dígito
+- una letra o un dígito
 - un dígito
 
 ## <a name="checksum"></a>Suma de comprobación
@@ -48,14 +48,14 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_mexico_population_registry_code` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keyword_mexico_population_registry_code` .
+- La función `Func_mexico_population_registry_code` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keyword_mexico_population_registry_code`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_mexico_population_registry_code` busca contenido que coincida con el patrón.
+- La función `Func_mexico_population_registry_code` encuentra contenido que coincide con el patrón.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -76,11 +76,11 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 - Clave Única de Registro de Población
 - Clave Unica de Registro de Poblacion
-- Código único del Registro de población
-- código de rellenado único
+- Unique Population Registry Code
+- unique population code
 - CURP
-- Identificador personal
-- Identificador único
+- Personal ID
+- Unique ID
 - personalid
 - personalidnumber
 - uniqueidkey
@@ -88,7 +88,7 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - clave única
 - clave unica
 - clave personal Identidad
-- personal Identidad Clave
+- clave de identidad personal
 - ClaveÚnica
 - claveunica
 - clavepersonalIdentidad

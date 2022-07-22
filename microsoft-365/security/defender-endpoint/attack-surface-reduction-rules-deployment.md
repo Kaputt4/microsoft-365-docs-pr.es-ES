@@ -18,13 +18,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
+- m365solution-asr-rules
 ms.date: 1/18/2022
-ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601210"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969318"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 
@@ -55,7 +56,7 @@ Como se describe en [Usar reglas de reducción de superficie expuesta a ataques 
 
 <br/>
 
-| Amenazas polimórficas | Movimiento lateral & robo de credenciales | Reglas de aplicaciones de productividad |  Reglas de correo electrónico | Reglas de script | Reglas incorrectas |
+| Amenazas polimórficas | Movimiento lateral & robo de credenciales | Reglas de aplicaciones de productividad |  reglas de Email | Reglas de script | Reglas incorrectas |
 |:---|:---|:---|:---|:---|:---|
 | Impedir que los archivos ejecutables se ejecuten a menos que cumplan una prevalencia (1000 máquinas), edad (24 horas) o criterios de lista de confianza | Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI | Impedir que las aplicaciones de Office creen contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código JS/VBS/PS/macro ofuscado | Bloquear el abuso de controladores <sup>firmados vulnerables explotados [[1](#fn1)]<sup></sup>  |
 | Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Impedir que las aplicaciones de Office creen procesos secundarios |  Impedir que solo las aplicaciones de comunicación de Office creen procesos secundarios | Impedir que JS/VBS inicie el contenido ejecutable descargado | |

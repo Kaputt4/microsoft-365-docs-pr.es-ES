@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: Complete los pasos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492134"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969416"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migración a Microsoft Defender para Office 365: Fase 3: Incorporación
 
@@ -79,9 +79,9 @@ Si su organización no tiene un equipo de respuesta de seguridad o flujos de pro
 Los permisos de Defender para Office 365 se basan en el control de acceso basado en rol (RBAC) y se explican en Permisos en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Estos son los puntos importantes a tener en cuenta:
 
 - Los roles de Azure AD conceden permisos a **todas las** cargas de trabajo de Microsoft 365. Por ejemplo, si agrega un usuario al administrador de seguridad en el Azure Portal, tiene permisos de administrador de seguridad en todas partes.
-- Los roles de colaboración & correo electrónico en el portal de Microsoft 365 Defender conceden permisos al portal de Microsoft 365 Defender, a la portal de cumplimiento Microsoft Purview y al Centro de cumplimiento de seguridad & anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el portal de Microsoft 365 Defender, **solo** tiene acceso de administrador de seguridad en el portal de Microsoft 365 Defender, el portal de cumplimiento Microsoft Purview y el cumplimiento de seguridad & Centro.
+- Email & roles de colaboración en el portal de Microsoft 365 Defender conceden permisos al portal de Microsoft 365 Defender, al portal de cumplimiento Microsoft Purview y al Centro de cumplimiento de seguridad & anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el portal de Microsoft 365 Defender, **solo** tiene acceso de administrador de seguridad en el portal de Microsoft 365 Defender, el portal de cumplimiento Microsoft Purview y el cumplimiento de seguridad & Centro.
 - Muchas características del portal de Microsoft 365 Defender se basan en Exchange Online cmdlets de PowerShell y, por tanto, requieren la pertenencia a grupos de roles en los roles correspondientes (técnicamente, grupos de roles) en Exchange Online (en particular, para acceder a los Exchange Online correspondientes).  Cmdlets de PowerShell).
-- Hay roles de colaboración & correo electrónico en el portal de Microsoft 365 Defender que no tienen ningún equivalente a los roles de Azure AD y son importantes para las operaciones de seguridad (por ejemplo, el rol De vista previa y el rol Buscar y purgar).
+- Hay Email & roles de colaboración en el portal de Microsoft 365 Defender que no tienen ningún equivalente a los roles de Azure AD y son importantes para las operaciones de seguridad (por ejemplo, el rol Vista previa y el rol Buscar y purgar).
 
 Normalmente, solo un subconjunto de personal de seguridad necesitará derechos adicionales para descargar mensajes directamente desde buzones de usuario. Esto requiere un permiso adicional que el Lector de seguridad no tiene de forma predeterminada.
 
@@ -110,7 +110,7 @@ Después de haber tenido suficiente tiempo para observar los resultados de la pr
 
 - Protección de suplantación de usuario: **ponga en cuarentena el mensaje** para Estándar y Estricto.
 - Protección de suplantación de dominio: **ponga en cuarentena el mensaje** para Estándar y Estricto.
-- Protección de inteligencia del buzón de correo: **mueva el mensaje a las carpetas de correo no deseado de los destinatarios** para Estándar; **Ponga en cuarentena el mensaje** para Strict.
+- Protección de inteligencia del buzón de correo: **mueva el mensaje a las carpetas de Email no deseado de los destinatarios** para Standard; **Ponga en cuarentena el mensaje** para Strict.
 
 Cuanto más tiempo supervise los resultados de la protección de suplantación sin actuar en los mensajes, más datos tendrá que identificar los permisos o bloques que podrían ser necesarios. Considere la posibilidad de usar un retraso entre activar cada protección lo suficientemente importante como para permitir la observación y el ajuste.
 
@@ -123,7 +123,7 @@ Aunque la inteligencia del buzón de correo se ha configurado para no realizar n
 
 Cuando esté listo, siga estos pasos para permitir que la inteligencia del buzón actúe sobre los mensajes que se detectan como intentos de suplantación:
 
-- En la directiva contra suplantación de identidad (phishing) con la configuración de protección estándar, cambie el valor de **Si la inteligencia del buzón detecta un usuario suplantado** para **mover el mensaje a las carpetas de correo no deseado de los destinatarios**.
+- En la directiva contra suplantación de identidad (phishing) con la configuración de protección estándar, cambie el valor de **If mailbox intelligence detects an impersonated user** to Move message to recipients'Junk Email folders (Si la inteligencia del buzón de correo detecta a un usuario suplantado) **para mover el mensaje a las carpetas de Email no deseado de los destinatarios**.
 
 - En la directiva contra suplantación de identidad (phishing) con la configuración de protección estricta, cambie el valor de **If mailbox intelligence detects and impersonated user (Si la inteligencia del buzón detecta y suplanta al usuario** ) de a **Poner en cuarentena el mensaje**.
 
@@ -159,8 +159,8 @@ Use las siguientes características para supervisar y recorrer en iteración la 
 
 - [Cuarentena](manage-quarantined-messages-and-files.md)
 - [Explorador de amenazas](email-security-in-microsoft-defender.md)
-- [Informes de seguridad de correo electrónico](view-email-security-reports.md)
-- [informes de Defender para Office 365](view-reports-for-mdo.md)
+- [Email informes de seguridad](view-email-security-reports.md)
+- [Informes de Defender para Office 365](view-reports-for-mdo.md)
 - [Conclusiones de flujo de correo](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Informes de flujo de correo](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 

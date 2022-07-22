@@ -12,13 +12,15 @@ ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.collection:
+- M365-security-compliance
+- m365solution-mdb-setup
+ms.openlocfilehash: 7b74a58601d5d6463d81d244a7f3cb2119486d15
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770929"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969362"
 ---
 # <a name="set-up-email-notifications"></a>Configuración de notificaciones por correo electrónico
 
@@ -42,9 +44,9 @@ Al configurar notificaciones por correo electrónico, puede elegir entre dos tip
 | Alertas & vulnerabilidades  | Cuando se generan alertas porque se detectan amenazas en los dispositivos o cuando se detectan nuevas vulnerabilidades o eventos de vulnerabilidad, los destinatarios reciben un correo electrónico. |
 
 > [!TIP]
-> **Las notificaciones por correo electrónico no son la única manera en que el equipo de seguridad puede averiguar sobre nuevas alertas o vulnerabilidades**.
+> **Email notificaciones no son la única manera en que el equipo de seguridad puede averiguar sobre nuevas alertas o vulnerabilidades**.
 > 
-> Las notificaciones por correo electrónico son una manera cómoda de ayudar a mantener informado a su equipo de seguridad, en tiempo real. ¡Pero hay otros! Por ejemplo, cada vez que el equipo de seguridad inicie sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verá tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender for Business está diseñado para resaltar la información importante que le importa al equipo de seguridad en cuanto inician sesión.
+> Email notificaciones son una manera cómoda de ayudar a mantener informado a su equipo de seguridad, en tiempo real. ¡Pero hay otros! Por ejemplo, cada vez que el equipo de seguridad inicie sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verá tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender for Business está diseñado para resaltar la información importante que le importa al equipo de seguridad en cuanto inician sesión.
 > 
 > El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para más información, consulte [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md).
 
@@ -54,7 +56,7 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. En el panel de navegación, seleccione **Configuración** y, a continuación, seleccione **Puntos de conexión**. A continuación, en **General**, seleccione **Notificaciones por correo electrónico**. 
+2. En el panel de navegación, seleccione **Configuración** y, a continuación, seleccione **Puntos de conexión**. A continuación, en **General**, seleccione **Email notificaciones**. 
 
 3. Revise la información de las pestañas **Alertas** y **vulnerabilidades** .
 

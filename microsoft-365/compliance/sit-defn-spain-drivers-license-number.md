@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de número de licencia de conducir de España
+title: Definición de entidad de número de permiso de conducir de España
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de España.
+description: Definición de entidad de tipo de información confidencial del número de permiso de conducir de España.
 ms.openlocfilehash: fa78c9490b68e7a178572767f47da095b9b6086c
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66951159"
 ---
-# <a name="spain-drivers-license-number"></a>Número de licencia de conducir de España
+# <a name="spain-drivers-license-number"></a>Número del permiso de conducir de España
 
 ## <a name="format"></a>Formato
 
@@ -37,7 +37,7 @@ ocho dígitos seguidos de un carácter
 ocho dígitos seguidos de un carácter:
 
 - ocho dígitos
-- un dígito o letra (no distingue mayúsculas de minúsculas)
+- un dígito o una letra (no distingue mayúsculas de minúsculas)
 
 ## <a name="checksum"></a>Suma de comprobación
 
@@ -45,14 +45,14 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_spain_eu_driver's_license_number` .
+- La función `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_spain_eu_driver's_license_number`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` busca contenido que coincida con el patrón.
+- La función `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -91,11 +91,11 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - driverlicence
 - driverlicences
 - driver lic
-- lics del conductor
+- driver lics
 - driver license
 - driver licenses
-- permiso de conducir
-- licencias de conducir
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
@@ -107,98 +107,98 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- licencias de conducir
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
-- licencias de conducir
-- permiso de conducir
-- licencias de conducir
-- lic del conductor
-- lics del conductor
-- licencia de conducir
-- licencias de conducir
-- permiso de conducir
-- licencias de conducir
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
-- slics del conductor
+- driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- lic del conductor
-- lics del conductor
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- licencias de conducir
-- Dl #
-- Dls #
-- driverlic #
-- driverlics #
-- driverlicense #
-- driverlicenses #
-- driverlicence #
-- driverlicences #
-- driver lic #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- licencias de conducir #
-- driverslic #
-- driverslics #
-- driverslicense #
-- driverslicenses #
-- driverslicence #
-- driverslicences #
-- drivers lic #
-- drivers lics #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- driver'lic #
-- driver'lics #
-- driver'license #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- lic del conductor #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- driver'slic #
-- slics del conductor #
-- driver'slicense #
-- driver'slicenses #
-- driver'slicence #
-- driver'slicences #
-- lic del conductor #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence
 - driving license
-- dlno #
+- dlno#
 - driv lic
 - driv licen
-- licencia driv
-- licencias de driv
-- licencia driv
-- licencias de driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
 - drivers licen
-- licencia de conductor
-- conducir lic
-- conducir licen
-- licencias de conducir
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permiso de conducir
+- driving permit
 - dl no
 - dlno
 - dl number

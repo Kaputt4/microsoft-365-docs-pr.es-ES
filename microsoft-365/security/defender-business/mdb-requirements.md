@@ -15,13 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 1114bebe4b57f89989b0e21a3d73a72fd1b3e99e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+- m365solution-mdb-setup
+ms.openlocfilehash: 1cb133a11bf0c59bcff117721badddc87e44a96c
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772891"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970086"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>requisitos de Microsoft Defender para Empresas
 
@@ -45,7 +45,7 @@ En la tabla siguiente se enumeran los requisitos básicos que necesita para conf
 | Permisos  | Para registrarse en Defender for Business, debe ser un Administración global.<p>Para acceder al portal de Microsoft 365 Defender, los usuarios deben tener asignado uno de los siguientes [roles en Azure AD](mdb-roles-permissions.md):<ul><li>Lector de seguridad</li><li>Administrador de seguridad</li><li>Administrador global</li></ul>Para más información, consulte [Roles y permisos en Defender para empresas](mdb-roles-permissions.md). |
 | Requisitos de los exploradores | Microsoft Edge o Google Chrome |
 | Sistema operativo del dispositivo cliente | Para administrar dispositivos en el portal de Microsoft 365 Defender, los dispositivos deben ejecutar uno de los siguientes sistemas operativos: <ul><li>Windows 10 o 11 Empresas</li><li>Windows 10 o 11 Profesional</li><li>Windows 10 o 11 Enterprise</li><li>Mac (se admiten las tres versiones más recientes)</li></ul><p>Asegúrese de que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) está instalado en los dispositivos Windows. <p>Si ya está administrando dispositivos en Microsoft Intune, puede seguir usando el Centro de administración de Microsoft Endpoint Manager. En ese caso, se admiten los siguientes sistemas operativos: <ul><li>iOS y iPadOS</li><li>Sistema operativo Android</li></ul> |
-| Requisitos de servidor | Si tiene previsto incorporar una instancia de Windows Server o Linux Server, debe cumplir los siguientes requisitos: <ul><li>La opción **Características de vista previa** está activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión****Características avanzadas** > **generales** >  Características  > **en versión preliminar**.</li><li>El ámbito de cumplimiento para Windows Server está activado. En el portal de Microsoft 365 Defender, vaya a Configuración **Endpoints** Configuration management **Enforcement scope (Ámbito de cumplimiento** de **administración de configuración** >  de puntos  >  de conexión **de configuración** > ). Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, a continuación, seleccione **Guardar**.</li><li>Los puntos de conexión de Linux Server cumplen los [requisitos previos para Microsoft Defender para punto de conexión en Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
+| Requisitos de servidor | Si tiene previsto incorporar una instancia de Windows Server o Linux Server, debe cumplir los siguientes requisitos: <ul><li>La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.</li><li>El ámbito de cumplimiento para Windows Server está activado. En el portal de Microsoft 365 Defender, vaya a Configuración **Endpoints** Configuration management **Enforcement scope (Ámbito de cumplimiento** de **administración de configuración** >  de puntos  >  de conexión **de configuración** > ). Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.</li><li>Los puntos de conexión de Linux Server cumplen los [requisitos previos para Microsoft Defender para punto de conexión en Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) se usa para administrar los permisos de usuario y los grupos de dispositivos. Azure AD se incluye en la suscripción de Defender para empresas. 

@@ -15,13 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 9b4228ba31594e8c6893d4bc45e2fc1994139231
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+- m365solution-mdb-setup
+ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772224"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969428"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
@@ -252,8 +252,8 @@ Elija el sistema operativo del servidor:
 
 > [!IMPORTANT]
 > **La capacidad de incorporar puntos de conexión de Windows Server está actualmente en versión preliminar**. Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Windows Server:
-> - La opción **Características de vista previa** está activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión****Características avanzadas** > **generales** >  Características  > **en versión preliminar**.
-> - El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** >  Ámbito de **administración de** >  configuración de **puntos** >  de conexión **.** Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, a continuación, seleccione **Guardar**.
+> - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
+> - El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** > **Puntos de conexión** > **Administración de configuración** > **Ámbito de cumplimiento**. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
 
 Puede incorporar una instancia de Windows Server a Defender para empresas mediante un script local.
 
@@ -307,7 +307,7 @@ Una vez que se ejecuta el comando, la ventana del símbolo del sistema se cerrar
 
 > [!IMPORTANT]
 > **La capacidad de incorporar puntos de conexión de Servidor Linux está actualmente en versión preliminar**. Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Servidor Linux:
-> - La opción **Características de vista previa** está activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión****Características avanzadas** > **generales** >  Características  > **en versión preliminar**.
+> - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
 > - Cumple los [requisitos previos para Microsoft Defender para punto de conexión en Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### <a name="onboard-linux-server-endpoints"></a>Incorporación de puntos de conexión del servidor Linux
