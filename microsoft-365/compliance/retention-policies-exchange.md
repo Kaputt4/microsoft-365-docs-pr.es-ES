@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: 1b4c255e2a228801ece0c98d0ac8686b3582ab30
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Obtenga información sobre cómo funciona la retención de Microsoft 365 para Exchange, mediante directivas de retención y etiquetas de retención para administrar la retención o la eliminación automáticas de datos de su organización.
+ms.openlocfilehash: 6337c1e23bf2d78ca1bd2c11ebbe8340e2045b5b
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626015"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942152"
 ---
-# <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
+# <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para el intercambio
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
