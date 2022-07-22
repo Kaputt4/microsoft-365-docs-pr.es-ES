@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: d2703947d2cebc5818793362e55b8eae9cec2ed8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Yammer para que pueda administrar la retención automática o la eliminación de mensajes de Yammer para su organización.
+ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639630"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944029"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
