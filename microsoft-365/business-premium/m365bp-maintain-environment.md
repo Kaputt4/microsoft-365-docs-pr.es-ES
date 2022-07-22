@@ -19,21 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre el mantenimiento del entorno de seguridad de la red y los sistemas de la organización y la defensa contra ciberataques.
-ms.openlocfilehash: 3d1af0c30bdbe3d348f317784793e3235bfa3aa5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: e25d093322001e01057afaf94b59f276785958a0
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894391"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917966"
 ---
 # <a name="maintain-your-environment"></a>Mantenimiento del entorno
 
-A medida que los usuarios de la red cambian con el tiempo, se debe mantener un entorno seguro. Las misiones que ha completado hasta ahora han sido para proteger el sistema. Pero además de esto, también debe ser capaz de quitar de forma segura y limpia a los usuarios del sistema, lo que elimina su acceso a todos los datos e información. Además, hay ciertas tareas de administración de seguridad que se deben realizar. 
+Además de la administración de incidentes de seguridad, su empresa necesita un plan de mantenimiento y operaciones. Las misiones que ha completado durante el proceso de instalación y configuración estaban relacionadas con proteger los sistemas. Sin embargo, además de esto, también debe poder realizar determinadas tareas, como agregar o quitar usuarios, restablecer contraseñas y restablecer dispositivos a la configuración de fábrica según sea necesario.
+
+Consulte los siguientes artículos para obtener más información: 
 
 - [Revisar la guía de operaciones de seguridad de Microsoft 365 Empresa Premium](m365bp-security-incident-quick-start.md).
-- [Quitar cuentas de usuario](m365bp-review-remediation-actions-devices.md).
 - [Agregar nuevos usuarios](m365bp-add-users.md).
 - [Restablecer las contraseñas (según sea necesario).](m365bp-reset-passwords.md)
+- [Quitar cuentas de usuario](m365bp-review-remediation-actions-devices.md).
 - [Quitar los datos de la empresa de los dispositivos (cuando sea necesario).](../admin/devices/remove-company-data.md)
 - [Restablecer los dispositivos a la configuración de fábrica (cuando sea necesario).](../admin/devices/reset-devices-to-factory-settings.md)
 

@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/20/2022
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,19 +24,19 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga Microsoft 365 Empresa Premium para que pueda proteger su empresa de amenazas de ciberseguridad a dispositivos, correo electrónico, datos y comunicaciones.
-ms.openlocfilehash: ad58a0578872cf7fcf38bec09cc383450c76a5ff
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2307f6476ee2cf9c27b4b3785c29f35991d30d91
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493750"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917949"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Cómo suscribirse a Microsoft 365 Empresa Premium
 
 Cuando esté listo para registrarse en Microsoft 365 Empresa Premium, tendrá varias opciones. Puede:
 
 - [Pruebe o compre Microsoft 365 Empresa Premium por su cuenta](#sign-up-for-microsoft-365-business-premium-on-your-own)
-- [Trabajar con un proveedor de soluciones](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
+- [Trabajar con un partner de Microsoft](#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > Si está buscando Microsoft 365 para campañas, consulte [Cómo obtener Microsoft 365 para campañas](get-microsoft-365-campaigns.md).
@@ -48,17 +49,22 @@ Cuando esté listo para registrarse en Microsoft 365 Empresa Premium, tendrá v
 
 3. Después de registrarse en Microsoft 365 Empresa Premium, recibirá un correo electrónico con un vínculo para iniciar sesión y empezar. Procede a [Configurar Microsoft 365 Empresa Premium](m365bp-setup.md).
 
-## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Trabajar con un proveedor de soluciones de Microsoft para obtener Microsoft 365 Empresa Premium
+## <a name="work-with-a-microsoft-partner-to-get-microsoft-365-business-premium"></a>Trabajar con un partner de Microsoft para obtener Microsoft 365 Empresa Premium
 
 Microsoft tiene una lista de proveedores de soluciones que están autorizados para vender ofertas, incluido Microsoft 365 Empresa Premium. Si aún no está trabajando con un proveedor de soluciones, puede encontrar uno siguiendo estos pasos: 
 
-1. Ve a la página de **Microsoft Solution Providers**. ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers))
- 
-2. En el cuadro de búsqueda, rellene la ubicación y el tamaño de la empresa. 
+1. Vaya a [Buscar partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. En el cuadro de **Búsqueda de productos, servicios, aptitudes, sectores**, coloque `Microsoft 365` y, a continuación, seleccione **Go**.
+2. En el panel **Filtros**, especifique criterios de búsqueda, como:
 
-4. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
+   - Su ubicación
+   - Tamaño de la organización
+   - **Áreas de enfoque**, como **Seguridad** y/o **Protección contra amenazas** 
+   - **Servicios**, como **Asignación de licencias** o **Servicios administrados (MSP)**
+
+   Tan pronto como seleccione uno o varios criterios, se actualizará la lista de partners.
+
+3. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

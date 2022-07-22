@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535600"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949511"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -48,14 +48,14 @@ Hay tres maneras de crear indicadores para los archivos:
 
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para los archivos:
 
-- Esta característica está disponible si su organización usa **Antivirus de Microsoft Defender (en modo activo)** y **la protección basada en la nube está habilitada**. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si su organización usa **el Antivirus de Microsoft Defender (en modo activo)** y **la protección basada en la nube está habilitada**. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La versión de cliente de Antimalware debe ser 4.18.1901.x o posterior. Consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 - Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivos personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en la [versión preliminar pública para las funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivo personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en la [versión preliminar pública para las funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Para empezar a bloquear archivos, primero debe [activar la característica "bloquear o permitir"](advanced-features.md) en Configuración.
 
@@ -66,7 +66,7 @@ Esta característica está diseñada para evitar que se descargue malware sospec
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Creación de un indicador para archivos desde la página de configuración
 
-1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** \> de **puntos de conexión** (en **Reglas**).
+1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** de **puntos** \> de conexión (en **Reglas**).
 
 2. Seleccione la pestaña **Hashes de archivo** .
 
@@ -90,9 +90,9 @@ Los archivos bloqueados automáticamente por un indicador no se mostrarán en el
 > [!IMPORTANT]
 > La información de esta sección (**versión preliminar pública para el motor de investigación y corrección automatizada**) se refiere al producto de versión preliminar que podría modificarse sustancialmente antes de que se publique comercialmente. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Las acciones admitidas actuales para la IOC de archivos son permitir, auditar y bloquear y corregir. Después de elegir bloquear un archivo, puede elegir si se necesita desencadenar una alerta. De este modo, podrá controlar el número de alertas que reciben los equipos de operaciones de seguridad y asegurarse de que solo se generan las alertas necesarias.
+Las acciones admitidas actuales para IOC de archivos son permitir, auditar y bloquear, y corregir. Después de elegir bloquear un archivo, puede elegir si se necesita desencadenar una alerta. De este modo, podrá controlar el número de alertas que reciben los equipos de operaciones de seguridad y asegurarse de que solo se generan las alertas necesarias.
 
-En Microsoft 365 Defender, vaya a **Configuración** >  EndpointsIndicatorsAgregar >  >  **nuevo hash de archivo**.
+En Microsoft 365 Defender, vaya a **Indicadores de puntos** >  de conexión **de** >  **configuración** > **Agregar nuevo hash de archivo**.
 
 Elija Bloquear y corregir el archivo.
 
@@ -114,6 +114,8 @@ Elija si desea Generar una alerta en el evento de bloque de archivos y defina la
 > - Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la habilitación `EnableFileHashComputation` puede afectar al rendimiento del dispositivo. Por ejemplo, la copia de archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, podría tener un efecto en el rendimiento del dispositivo.
 >
 > Para obtener más información sobre la directiva de grupo EnableFileHashComputation, consulte [CSP de Defender](/windows/client-management/mdm/defender-csp).
+>
+> Para obtener más información sobre cómo configurar esta característica en Defender para punto de conexión en Linux y macOS, vea [Configurar la característica de cálculo hash de archivos en Linux](linux-preferences.md#configure-file-hash-computation-feature) y [Configurar la característica de cálculo hash de archivos en macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>Versión preliminar pública: funcionalidades avanzadas de búsqueda
 
@@ -148,21 +150,21 @@ La actividad de acción de respuesta también se puede ver en la escala de tiemp
 El control de directivas de IoC de certificados y archivos seguirá el orden siguiente:
 
 - Si el archivo no está permitido por Windows Defender directivas o directivas de aplicación de Application Control y AppLocker, **bloquee**
-- De lo contrario, si el archivo está permitido por la exclusión de Antivirus de Microsoft Defender **, permitir**
+- De lo contrario, si el archivo está permitido por la exclusión del Antivirus de Microsoft Defender, **permitir**
 - De lo contrario, si el archivo está bloqueado o advertido por un bloque o un archivo de advertencia IoC, **bloquee o advierta**.
 - De lo contrario, si se permite el archivo mediante una directiva de IoC de archivo permitido **, permitir**
 - De lo contrario, si el archivo está bloqueado por reglas de ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**
 - De lo contrario **, permitir** (pasa Windows Defender control de aplicaciones & directiva de AppLocker, no se le aplican reglas de IoC)
 
 >[!NOTE]
-> En situaciones en las que Antivirus de Microsoft Defender se establece en **Bloquear**, pero Defender para punto de conexión está establecido en **Permitir**, la directiva tendrá como valor predeterminado **Permitir**.
+> En situaciones en las que Antivirus de Microsoft Defender está establecido en **Bloquear**, pero Defender para punto de conexión está establecido en **Permitir**, la directiva tendrá como valor predeterminado **Permitir**.
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de cumplimiento y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva ioC de hash de archivo SHA-256 obtendrá una directiva ioC de hash de archivo MD5 si ambos tipos hash definen el mismo archivo.
 
 > [!WARNING]
 > El control de conflictos de directivas para archivos y certificados difiere del control de conflictos de directivas para dominios, direcciones URL o direcciones IP.
 
-Las características de aplicación vulnerables a bloques de amenazas y administración de vulnerabilidades usan los ioC de archivo para la aplicación y seguirán el orden de control de conflictos anterior.
+Las características de aplicación vulnerables a bloques de administración de amenazas y vulnerabilidades usan los ioC de archivo para la aplicación y seguirán el orden de control de conflictos anterior.
 
 ### <a name="examples"></a>Ejemplos
 
@@ -176,7 +178,7 @@ Las características de aplicación vulnerables a bloques de amenazas y administ
 |Regla de reducción de superficie expuesta a ataques|Bloquear|Permitir|Permitir|
 |Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir|
 |Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear|
-|exclusión de Antivirus de Microsoft Defender|Permitir|Bloquear|Permitir|
+|Exclusión del Antivirus de Microsoft Defender|Permitir|Bloquear|Permitir|
 |
 
 ## <a name="see-also"></a>Consulte también

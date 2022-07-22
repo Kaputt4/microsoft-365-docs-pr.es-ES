@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre las directivas y las etiquetas de retención para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+description: Obtenga información sobre las directivas de retención y etiquetas de retención de Microsoft 365 para conservar lo que necesita y eliminar lo que no para administrar los datos de su organización.
+ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714539"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949313"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -292,13 +292,13 @@ Escenario: de forma predeterminada, el contenido de las cuentas de OneDrive de l
 
 2. Puede crear y configurar una etiqueta de retención que mantenga el contenido para siempre y agregarla a una directiva de etiquetas que publique en todas las cuentas de OneDrive. Debe explicar a los usuarios cómo aplicar manualmente esta etiqueta a documentos específicos que se deban excluir de la eliminación automática si no se modifican después de cinco años.
 
-Ejemplo para conservar los artículos durante más tiempo**
+#### <a name="example-to-retain-items-for-longer"></a>Ejemplo para conservar elementos durante más tiempo
 
 Escenario: de forma predeterminada, los elementos de SharePoint se conservan automáticamente y luego se eliminan después de cinco años, pero los documentos de bibliotecas específicas deben conservarse durante diez años.
 
 1. Cree y configure una directiva de retención que retenga y luego elimine automáticamente el contenido después de cinco años, y aplique la directiva a todas las instancias de SharePoint y Grupos de Microsoft 365.
 
-2. Cree y configure una etiqueta de retención que retenga automáticamente el contenido durante diez años. Esta etiqueta se publica para los administradores de sitios de SharePoint, de modo que puedan aplicarla como etiqueta predeterminada para que la hereden todos los elementos de bibliotecas de documentos específicas.
+2. Cree y configure una etiqueta de retención que retenga automáticamente el contenido durante diez años. Agregue esta etiqueta a una directiva de etiquetas que publique en todas las instancias de SharePoint y Grupos de Microsoft 365 para que los administradores de SharePoint puedan aplicarla como etiqueta predeterminada para que todos los elementos de bibliotecas de documentos específicas la hereden.
 
 #### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Ejemplo para eliminar elementos en un período de tiempo más corto
 

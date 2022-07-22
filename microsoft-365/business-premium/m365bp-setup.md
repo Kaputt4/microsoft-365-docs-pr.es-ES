@@ -9,26 +9,26 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: f20f0e918c7bb0d45a7e8319e9883373a112d7c5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893109"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917988"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
 Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurar todo. Tiene varias opciones disponibles. Puede:
 
-- Comience con la [experiencia de configuración guiada](m365bp-setup.md#guided-setup-process) para los ajustes y la configuración básicos; o
-- [Trabaje con un asociado](m365bp-setup.md#work-with-a-microsoft-partner), como un Proveedor de soluciones en la nube de Microsoft (CSP).
+- Comience con la [experiencia de configuración guiada](m365bp-setup.md#guided-setup-process) para la configuración básica, y luego proceda a [Incrementar seguridad ](m365bp-security-overview.md); o
+- [Trabaje con un partner de Microsoft](m365bp-setup.md#work-with-a-microsoft-partner) que pueda ayudarle a tener todo listo y configurado.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -41,7 +41,7 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 | Requisitos de los exploradores | Microsoft Edge, Safari, Chrome o Firefox. [Obtenga más información sobre los requisitos de los exploradores](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS**: Una de las tres últimas versiones de macOS <br/>Actualmente, Microsoft 365 Empresa Premium y la versión independiente de Microsoft Defender para Empresas no admiten servidores.  |
 
-> [!TIP]
+> [!NOTE]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="guided-setup-process"></a>Proceso de configuración guiado
@@ -51,27 +51,30 @@ Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración b
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
-> Una vez que haya agregado usuarios, asígneles un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md). La guía le guía a través del inicio de sesión, la obtención de aplicaciones de Office y el almacenamiento, la copia y el uso compartido de archivos.
-> Asegúrese de continuar con [Aumentar la seguridad](m365bp-security-overview.md).
+> - Una vez que haya agregado usuarios, asígneles un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md). La guía le guía a través del inicio de sesión, la obtención de aplicaciones de Office y el almacenamiento, la copia y el uso compartido de archivos.
+> - Continúe con [Incrementar seguridad](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
 
 Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microsoft 365, siga estos pasos:
 
-1. Ve a la página de **Microsoft Solution Providers**. ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers))
+1. Vaya a [Buscar partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
-2. En el cuadro de búsqueda, rellene la ubicación y el tamaño de la empresa.
+2. En el panel **Filtros**, especifique criterios de búsqueda, como:
 
-3. En el cuadro de **Búsqueda de productos, servicios, aptitudes, sectores**, coloque `Microsoft 365` y, a continuación, seleccione **Go**.
+   - Su ubicación
+   - Tamaño de la organización
+   - **Áreas de enfoque**, como **Seguridad** y/o **Protección contra amenazas** 
+   - **Servicios**, como **Asignación de licencias** o **Servicios administrados (MSP)**
 
-4. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
+   Tan pronto como seleccione uno o varios criterios, se actualizará la lista de partners.
+
+3. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
 
 ## <a name="see-also"></a>Vea también
 
-- [Buscar un asociado o distribuidor](../admin/manage/find-your-partner-or-reseller.md)
-
+- [Encontrar un partner o distribuidor de Microsoft](../admin/manage/find-your-partner-or-reseller.md)
 - [Configurar las contraseñas de autoservicio](../admin/add-users/let-users-reset-passwords.md)
-
 - [Configurar la administración de grupos de autoservicio](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ### <a name="next-objective"></a>Siguiente objetivo

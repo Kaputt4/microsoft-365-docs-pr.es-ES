@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756757"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949159"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -45,7 +45,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 ### <a name="compliance-manager"></a>Administrador de cumplimiento
 
-- [Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview](compliance-manager-alert-policies.md) : se han agregado tres roles ADD que tienen permisos para crear o editar directivas de alertas.
+- [Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview](compliance-manager-alert-policies.md) : se han agregado tres roles de AAD que tienen permisos para crear o editar directivas de alertas.
 - [Analizador de configuración para Microsoft Purview](compliance-manager-mcca.md) : nuevo nombre y vínculos de referencia actualizados para esta herramienta de introducción para el Administrador de cumplimiento anteriormente denominada "Analizador de configuración de cumplimiento de Microsoft".
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos

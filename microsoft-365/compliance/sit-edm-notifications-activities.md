@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear notificaciones para actividades de coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a9c629e5258efd096ce1412a7a42bc7bc672008
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 09bb41de09b6f44a9f556446c5a566322b44ad0d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641348"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949137"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Crear notificaciones para actividades de coincidencia exacta de datos
 
 Cuando se [crean tipos de información confidencial personalizados con coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), hay una serie de actividades que se crean en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). Puede utilizar el cmdlet de PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) para crear notificaciones que le permitan saber cuándo se producen estas actividades:
 
-- CreateSchema
-- EditSchema
-- RemoveSchema
-- UploadDataFailed
-- UploadDataCompleted
+- `CreateSchema`
+- `EditSchema`
+- `RemoveSchema`
+- `UploadDataFailed`
+- `UploadDataCompleted`
 
 > [!NOTE]
  La capacidad de crear notificaciones de actividades de EDM está disponible para las nubes de World Wide y GCC.
@@ -60,13 +60,13 @@ Para obtener más información sobre las licencias de DLP, consulte la [Guía de
 
 1. Conéctese al [PowerShell de Seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
-2. Ejecute el cmdlet `New-ProtectionAlert` con la actividad para la que desea crear la notificación.  Por ejemplo, si desea recibir una notificación cuando se produzca la acción **UploadDataCompleted**, ejecute:
+2. Ejecute el cmdlet `New-ProtectionAlert` con la actividad para la que desea crear la notificación.  Por ejemplo, si desea recibir una notificación cuando se produzca la acción `UploadDataCompleted`, ejecute:
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    Para **UploadDataFailed** puede ejecutar:
+    Para `UploadDataFailed` puede ejecutar:
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High

@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 828a5c5d61c1b662f42e34ae95825dbc5994c816
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689160"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917593"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
-Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerlo sin importar su ubicación y garantizar que se conserve y elimine en función de las necesidades de su organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
+Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerlo sin importar su ubicación y garantizar que se conserve y elimine en función de las necesidades de su organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
 - el número de elementos que se han clasificado como tipo de información sensible y cuáles son esas clasificaciones;
 - las etiquetas principales de confidencialidad aplicadas en Microsoft 365 y Azure Information Protection;

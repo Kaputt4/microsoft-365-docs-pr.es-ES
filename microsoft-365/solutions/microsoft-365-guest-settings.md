@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 4c472fb20a85c0f00f7623cc63c4d33556b511e2
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
-ms.translationtype: MT
+ms.openlocfilehash: 574e2ab6b3ca01de31d4489b80c5b6aefddd6a9f
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687266"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949467"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -50,30 +50,30 @@ Azure Active Directory es el servicio de directorio que usa Microsoft 365. La co
 |:-----|:-----|:-----|
 |Acceso de usuario invitado|Los usuarios invitados tienen acceso limitado a propiedades y pertenencia a objetos de directorio|Determina los [permisos que tienen los invitados en Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
 |Configuración de invitaciones para usuarios invitados|Cualquier persona de la organización puede invitar a usuarios invitados, incluidos los invitados y los no administradores|Determina si los invitados, miembros y administradores pueden invitar a usuarios invitados a la organización. <p> Esta configuración afecta a las experiencias de uso compartido de Microsoft 365 como Teams y SharePoint.|
-|Habilitar el registro de autoservicio de invitados a través de los flujos de usuario|No|Determina si puede crear flujos de usuario que permitan a alguien registrarse en una aplicación que ha creado y crear una cuenta de invitado.|
+|Habilitar el registro de invitados sin intervención del administrador a través de los flujos de usuario|No|Determina si puede crear flujos de usuario que permitan a alguien registrarse en una aplicación que ha creado y crear una cuenta de invitado.|
 |Restricciones de colaboración|Permitir el envío de invitaciones a cualquier dominio|Esta configuración le permite especificar una lista de dominios permitidos o bloqueados para el uso compartido. Si se especifican dominios permitidos, las invitaciones de uso compartido solo se pueden enviar a estos dominios. Si se especifican dominios denegados, las invitaciones de uso compartido no se pueden enviar a estos dominios. <p> Esta configuración afecta a las experiencias de uso compartido de Microsoft 365 como Teams y SharePoint. Puede permitir o bloquear dominios en un nivel más granular con el filtrado de dominios de SharePoint o Teams.|
 
 Esta configuración afecta al modo en que se invitan a los usuarios al directorio. No afecta al uso compartido de invitados que ya están en el directorio.
 
-### <a name="cross-tenant-access-settings"></a>Configuración de acceso entre inquilinos
+### <a name="cross-tenant-access-settings"></a>Configuración del acceso entre inquilinos
 
-**Navegación:** [Azure Active Directory centro de administración](https://aad.portal.azure.com) > Azure Active Directory > identidades externas > configuración de acceso entre inquilinos > pestaña Configuración predeterminada
+**Navegación:** [Centro de administración de Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identidades externas > Configuración de acceso entre inquilinos > Pestaña de configuración predeterminada
 
-La configuración predeterminada se aplica a todas las organizaciones Azure AD externas, excepto a aquellas con configuración específica de la organización. Configuración para una organización específica se puede configurar en la pestaña **Configuración de la organización**. Hay configuraciones independientes para los invitados (colaboración B2B) y Azure AD usuarios de [conexión directa B2B](/azure/active-directory/external-identities/b2b-direct-connect-overview).
+La configuración predeterminada se aplica a todas las organizaciones externas de Azure AD, excepto a las que tienen una configuración específica de la organización. La configuración de una organización específica se puede configurar en la pestaña **configuración organizacional**. Hay configuraciones independientes para invitados (colaboración B2B) y usuarios de [conexión directa de Azure AD B2B](/azure/active-directory/external-identities/b2b-direct-connect-overview).
 
-![Captura de pantalla de Azure Active Directory página configuración de acceso entre inquilinos.](../media/azure-ad-cross-tenant-default-settings.png)
+![Captura de pantalla de la páquina de configuración de acceso entre inquilinos de Azure Active Directory.](../media/azure-ad-cross-tenant-default-settings.png)
 
-**Configuración de acceso entrante**
+**Configuración de acceso de entrada**
 
-La configuración de acceso entrante controla si los usuarios de organizaciones Azure AD externas pueden acceder a los recursos de la organización.
+La configuración de acceso entrante controla si los usuarios de organizaciones externas de Azure AD pueden acceder a los recursos de su organización.
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Colaboración B2B: usuarios y grupos externos|Todos los permitidos|Determina a qué personas de otras organizaciones Azure AD se les puede conceder acceso a los recursos de su organización como invitados.|
-|Colaboración B2B: aplicaciones|Todos los permitidos|Determina a qué aplicaciones de la organización se puede conceder acceso a los invitados.|
-|Conexión directa B2B: usuarios y grupos externos|Todos bloqueados|Determina si a las personas de otras organizaciones Azure AD se les puede conceder acceso a los recursos de su organización a través de la conexión directa B2B.|
+|Colaboración B2B: usuarios y grupos externos|Todos Permitido|Determina a qué personas de otras organizaciones de Azure AD se les puede conceder acceso a los recursos de la organización como invitados.|
+|Colaboración B2B: aplicaciones|Todo permitido|Determina a qué aplicaciones de la organización se le puede conceder acceso a los invitados.|
+|Conexión directa B2B: usuarios y grupos externos|Todos bloqueados|Determina si a los usuarios de otras organizaciones de Azure AD se les puede conceder acceso a los recursos de la organización a través de la conexión directa B2B.|
 |Conexión directa B2B: aplicaciones|Todos bloqueados|Determina a qué aplicaciones de la organización se puede conceder acceso a los usuarios de conexión directa B2B.|
-|Configuración de confianza|Deshabilitado|Determina si las directivas de acceso condicional aceptarán notificaciones de otras organizaciones de Azure AD cuando personas de esas organizaciones accedan a los recursos.|
+|Configuración de confianza|Deshabilitada|Determina si las directivas de acceso condicional aceptarán notificaciones de otras organizaciones de Azure AD cuando los usuarios de esas organizaciones accedan a los recursos.|
 
 **Configuración de acceso saliente**
 
@@ -81,10 +81,10 @@ La configuración de acceso saliente controla si los usuarios pueden acceder a l
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Colaboración B2B: usuarios y grupos externos|Todos los permitidos|Determina qué usuarios de su organización pueden tener acceso a los recursos de otras organizaciones Azure AD como invitados.|
-|Colaboración B2B: aplicaciones|Todos los permitidos|Determina a qué aplicaciones de otras organizaciones Azure AD se puede conceder acceso a los usuarios como invitados.|
+|Colaboración B2B: usuarios y grupos externos|Todos Permitido|Determina qué usuarios de la organización pueden tener acceso a los recursos de otras organizaciones de Azure AD como invitados.|
+|Colaboración B2B: aplicaciones|Todo permitido|Determina a qué aplicaciones de otras organizaciones Azure AD se les puede conceder acceso a los usuarios como invitados.|
 |Conexión directa B2B: usuarios y grupos externos|Todos bloqueados|Determina qué usuarios de su organización pueden tener acceso a los recursos de otras organizaciones Azure AD a través de la conexión directa B2B.|
-|Conexión directa B2B: aplicaciones|Todos bloqueados|Determina a qué aplicaciones de otras organizaciones Azure AD se puede conceder acceso a los usuarios a través de la conexión directa B2B.|
+|Conexión directa B2B: aplicaciones|Todos bloqueados|Determina a qué aplicaciones de otras organizaciones de Azure AD se les puede conceder acceso a los usuarios a través de la conexión directa B2B.|
 
 ## <a name="microsoft-365"></a>Microsoft 365
 
@@ -117,7 +117,7 @@ Esta configuración se encuentra en el nivel de organización. Consulte [Crear c
 
 ## <a name="teams"></a>Teams
 
-El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de invitados en Teams**, debe estar **Activado** para que las demás opciones de configuración de invitados estén disponibles.
+El modificador de acceso de invitado de Teams, **Permitir el acceso del invitado en Teams**, debe estar **Activado** para que la otra configuración de invitado esté disponible.
 
 **Rol de administrador**: administrador de servicios de Teams
 
@@ -182,7 +182,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 **Navegación:** Centro de administración de SharePoint > **Directivas** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Compartir**</a>
 
-![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint.](../media/external-sharing.png)
+![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint.](../media/sharepoint-organization-external-sharing-controls.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|

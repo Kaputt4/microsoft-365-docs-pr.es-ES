@@ -18,19 +18,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: ¿Está listo para empezar a controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prescriptivas para empezar.
-ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que administran el ciclo de vida de los datos de la organización.
+ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629682"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942392"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Introducción a la administración del ciclo de vida de los datos
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-¿Está preparado? Ahora podrá empezar a controlar los datos de su organización, conservando el contenido que necesita mantener y eliminando el que ya no necesita. Para empezar, use las siguientes instrucciones para Administración del ciclo de vida de datos de Microsoft Purview (anteriormente Microsoft Information Governance):
+¿Está listo para empezar a administrar el ciclo de vida de los datos de su organización conservando el contenido que necesita conservar y eliminando el contenido que no necesita? Para empezar, use las siguientes instrucciones para Administración del ciclo de vida de datos de Microsoft Purview (anteriormente Microsoft Information Governance):
 
 1. **Comprenda cómo funcionan la retención y la eliminación** en Microsoft 365, y luego identifique las cargas de trabajo que necesitan una política de retención y si necesita crear etiquetas de retención para las excepciones: [Obtenga información sobre la retención](retention.md)
     

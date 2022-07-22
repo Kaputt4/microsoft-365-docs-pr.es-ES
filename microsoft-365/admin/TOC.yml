@@ -364,6 +364,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Administrar y supervisar cuentas de prioridad
           href: setup/priority-accounts.md
+        - name: "Aumentar la protección contra amenazas para Microsoft\_365 para empresas"
+          href: security-and-compliance/increase-threat-protection.md
         - name: Activar el tiempo de espera de la sesión inactiva
           href: manage/idle-session-timeout-web-apps.md
         - name: Habilitar la autenticación moderna para Office 2013

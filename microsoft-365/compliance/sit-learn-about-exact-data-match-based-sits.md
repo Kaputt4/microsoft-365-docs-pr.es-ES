@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre los tipos de información confidencial basados en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622005"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949291"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
 
@@ -97,7 +97,7 @@ Proximidad: número de caracteres entre el elemento principal y el elemento auxi
 
 ### <a name="primary-and-secondary-support-elements"></a>Elementos de soporte técnico principal y secundario
 
-Al crear una SIT de EDM, se define un campo de *elemento principal* en el paquete de reglas. Los campos principales son los elementos para los que se buscará todo el contenido y que deben seguir un patrón definido para poder identificarse. Cuando se encuentra el elemento principal en elementos examinados, EDM buscará los elementos *secundarios* o auxiliares, que no necesitan seguir un patrón y su proximidad al elemento principal. EDM requiere que el elemento principal se pueda detectar primero a través de una SIT existente. Consulte [Definiciones de entidades de tipo información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de los SIT disponibles. Tendrá que encontrar uno de los que detecta la clase que quiere que detecte el SIT de EDM. Por ejemplo, si el esquema sit de EDM tiene el número de seguridad social de EE. UU. como elemento principal, al crear el esquema EDM, lo asociaría con el número de [seguridad social (SSN) SIT de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)
+Al crear una SIT de EDM, se define un campo de *elemento principal* en el paquete de reglas. Los campos principales son los elementos para los que se buscará todo el contenido y que deben seguir un patrón definido para poder identificarse. Cuando se encuentra el elemento principal en elementos examinados, EDM buscará los elementos *secundarios* o auxiliares, que no necesitan seguir un patrón y su proximidad al elemento principal. EDM requiere que el elemento principal se pueda detectar primero a través de una SIT existente. Consulte [Definiciones de entidades de tipo información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de los SIT disponibles. Tendrá que encontrar uno de los que detecta la clase que quiere que detecte el SIT de EDM. Por ejemplo, si el esquema sit de EDM tiene el número de seguridad social de EE. UU. como elemento principal, al crear el esquema EDM, lo asociaría con el número de [seguridad social (SSN) SIT de EE. UU.](sit-defn-us-social-security-number.md)
 
 ## <a name="how-matching-works"></a>Funcionamiento de la coincidencia
 
@@ -119,6 +119,6 @@ EDM busca coincidencias comparando el contenido que encuentra con una tabla de d
 |eDiscovery     |- SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange  |
 |Administración de riesgos de Insider     |- SharePoint online </br>- OneDrive para la Empresa </br>- Chat de Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clientes de escritorio de Exchange      |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)

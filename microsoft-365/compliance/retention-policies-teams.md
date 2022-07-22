@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 08385988da41d633d864a28637f9667887e6269e
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
+ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787108"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943406"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 

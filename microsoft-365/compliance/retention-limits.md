@@ -1,5 +1,5 @@
 ---
-title: Límites de directivas de retención y directivas de etiqueta de retención.
+title: Límites de Microsoft 365 relacionados con las directivas de retención y directivas de etiqueta de retención.
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 hideEdit: true
-description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: fba8d0385831b4f05bbf0a967072d64eead5644a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Descripción del número máximo de directivas y elementos por directiva para las directivas de retención y directivas de etiquetas de retención de Microsoft 365
+ms.openlocfilehash: 768f2711c873696aabfc71df8817b0be6beec891
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633419"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942370"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 

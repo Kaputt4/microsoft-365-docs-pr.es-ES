@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: d711a61c1c61df94311dfd409e94330bb8696d88
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2adc24b4809689137ae067ce09cda8caebea2a0e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641754"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917153"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -42,7 +42,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft Purview para s
 
 DLP en punto de conexión permite auditar y administrar los siguientes tipos de actividades que los usuarios realizan en elementos confidenciales almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS.
 
-|Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15| Auditable/restringible|
+|Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15 y versiones posteriores | Auditable/restringible|
 |---------|---------|---------|---------|---------|
 |cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de Microsoft Edge. Por último, Microsoft Edge puede permitir o bloquear la carga o el acceso en función de la configuración de la directiva DLP.         |compatible | compatible|auditable y restringible|
 |copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.|compatible|compatible         | auditable y restringible|
