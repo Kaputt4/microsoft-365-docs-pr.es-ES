@@ -1,5 +1,5 @@
 ---
-title: Configurar las opciones de retención para conservar o eliminar contenido automáticamente
+title: Establecer la configuración de retención de Microsoft 365 para retener o eliminar contenido automáticamente
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+description: Comprenda las opciones de configuración que puede configurar para que las directivas de retención y las etiquetas de retención de Microsoft 365 conserven o eliminen los datos de su organización.
+ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695756"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943340"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
