@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utilice las etiquetas de confidencialidad de Microsoft Purview Information Protection para clasificar y proteger el contenido confidencial.
+description: Obtenga información sobre cómo las etiquetas de confidencialidad de Microsoft Purview Information Protection pueden proteger el contenido confidencial de su organización, dondequiera que se almacene.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 5a525e96529416aca0670873921eea7703506af4
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842168"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942790"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
