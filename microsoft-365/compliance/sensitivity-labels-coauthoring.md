@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749207"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944227"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -83,6 +83,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     
     - **Cliente de etiquetado unificado de Azure Information Protection para Windows y escáner:**
         - Versión mínima [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) que puede instalar desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - Para las aplicaciones de Office, requiere versiones mínimas enumeradas para Microsoft 365 Apps para empresas
     
     - **Aplicación de Sincronización de Microsoft OneDrive para Windows o macOS:**
         - Versión mínima de 19.002.0121.0008

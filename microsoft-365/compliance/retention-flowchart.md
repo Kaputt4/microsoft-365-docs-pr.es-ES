@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Usar un diagrama de flujo para determinar el resultado cuando un elemento tenga varias directivas de retención o una etiqueta de retención y directivas de retención
-ms.openlocfilehash: 4e5c1cf887144f89764e88a39ba14a95a2df576c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Usar un diagrama de flujo para determinar el resultado cuando un elemento en Microsoft 365 tenga varias directivas de retención o una etiqueta de retención y directivas de retención
+ms.openlocfilehash: 96c92dc8c0e9d87a152605dbe1dd74a220f20cc6
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633463"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942746"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Diagrama de flujo para determinar cuándo se conservará o eliminará permanentemente un elemento
 

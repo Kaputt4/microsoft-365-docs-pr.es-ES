@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que usan etiquetas de confidencialidad para ayudar a proteger los datos de la organización.
+ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641524"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949335"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
