@@ -372,8 +372,614 @@
               href: sit-common-scenarios.md
         - name: Referencia de tipo de información confidencial
           items:
-            - name: Definiciones de entidad de tipos de información confidencial
-              href: sensitive-information-type-entity-definitions.md
+            - name: Todas las definiciones de entidad de tipos de información confidencial
+              items:
+                - name: Definiciones de entidad de tipos de información confidencial
+                  href: sensitive-information-type-entity-definitions.md
+                - name: Número de enrutamiento ABA
+                  href: sit-defn-aba-routing.md
+                - name: Todos los nombres completos
+                  href: sit-defn-all-full-names.md
+                - name: Todas las enfermedades y términos médicos
+                  href: sit-defn-all-medical-terms-conditions.md
+                - name: Todas las direcciones físicas
+                  href: sit-defn-all-physical-addresses.md
+                - name: Clave de acceso de secreto de cliente de Amazon S3
+                  href: sit-defn-amazon-s3-client-secret-access-key.md
+                - name: Número del documento de identidad (DNI) de Argentina
+                  href: sit-defn-argentina-national-identity-numbers.md
+                - name: Clave Única de Identificación Tributaria de Argentina
+                  href: sit-defn-argentina-unique-tax-identification-key.md
+                - name: Clave de máquina ASP.NET
+                  href: sit-defn-asp-net-machine-key.md
+                - name: Número de cuenta bancaria de Australia
+                  href: sit-defn-australia-bank-account-number.md
+                - name: Código de identificación fiscal (ABN) de Australia
+                  href: sit-defn-australia-business-number.md
+                - name: Código de identificación fiscal (ACN) de Australia
+                  href: sit-defn-australia-company-number.md
+                - name: Número del permiso de conducir de Australia
+                  href: sit-defn-australia-drivers-license-number.md
+                - name: Número de la tarjeta sanitaria de Australia
+                  href: sit-defn-australia-medical-account-number.md
+                - name: Número de pasaporte de Australia
+                  href: sit-defn-australia-passport-number.md
+                - name: Direcciones físicas de Australia
+                  href: sit-defn-australia-physical-addresses.md
+                - name: Número de identificación fiscal (TFN) de Australia
+                  href: sit-defn-australia-tax-file-number.md
+                - name: Número del permiso de conducir de Austria
+                  href: sit-defn-austria-drivers-license-number.md
+                - name: Documento de identidad de Austria
+                  href: sit-defn-austria-identity-card.md
+                - name: Número de pasaporte de Austria
+                  href: sit-defn-austria-passport-number.md
+                - name: Direcciones físicas de Austria
+                  href: sit-defn-austria-physical-addresses.md
+                - name: Número de la seguridad social de Austria
+                  href: sit-defn-austria-social-security-number.md
+                - name: Número de identificación fiscal de Austria
+                  href: sit-defn-austria-tax-identification-number.md
+                - name: Impuesto sobre el valor añadido de Austria
+                  href: sit-defn-austria-value-added-tax.md
+                - name: Token de acceso de cliente de Azure AD
+                  href: sit-defn-azure-ad-client-access-token.md
+                - name: Secreto de cliente de Azure AD
+                  href: sit-defn-azure-ad-client-secret.md
+                - name: Credenciales de usuario de Azure AD
+                  href: sit-defn-azure-ad-user-credentials.md
+                - name: Contraseña de implementación de Azure App Service
+                  href: sit-defn-azure-app-service-deployment-password.md
+                - name: Clave de acceso compartido por lotes de Azure
+                  href: sit-defn-azure-batch-shared-access-key.md
+                - name: Clave secreta de Azure Bot Framework
+                  href: sit-defn-azure-bot-framework-secret-key.md
+                - name: Secreto de la aplicación de Azure Bot Service
+                  href: sit-defn-azure-bot-service-app-secret.md
+                - name: Clave de API de Azure Cognitive Search
+                  href: sit-defn-azure-cognitive-search-api-key.md
+                - name: Clave de Azure Cognitive Service
+                  href: sit-defn-azure-cognitive-service-key.md
+                - name: Clave de acceso de Azure Container Registry
+                  href: sit-defn-azure-container-registry-access-key.md
+                - name: Clave de acceso de la cuenta de Azure COSMOS DB
+                  href: sit-defn-azure-cosmos-db-account-access-key.md
+                - name: Token de acceso personal de Azure Databricks
+                  href: sit-defn-azure-databricks-personal-access-token.md
+                - name: Secreto de la aplicación de Azure DevOps
+                  href: sit-defn-azure-devops-app-secret.md
+                - name: "Token de acceso personal de Azure\_DevOps"
+                  href: sit-defn-azure-devops-personal-access-token.md
+                - name: Clave de autenticación de Azure DocumentDB
+                  href: sit-defn-azure-document-db-auth-key.md
+                - name: Clave de acceso de Azure EventGrid
+                  href: sit-defn-azure-eventgrid-access-key.md
+                - name: Clave de API o función maestra de Azure
+                  href: sit-defn-azure-function-master-api-key.md
+                - name: Cadena de conexión de base de datos IAAS de Azure y cadena de conexión SQL de Azure
+                  href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+                - name: Cadena de conexión de Azure IoT
+                  href: sit-defn-azure-iot-connection-string.md
+                - name: Clave de acceso compartido de Azure IoT
+                  href: sit-defn-azure-iot-shared-access-key.md
+                - name: Firma de acceso compartido de Azure Logic App
+                  href: sit-defn-azure-logic-app-shared-access-signature.md
+                - name: Clave de API del servicio web de Azure Machine Learning
+                  href: sit-defn-azure-machine-learning-web-service-api-key.md
+                - name: Clave de suscripción de Azure Maps
+                  href: sit-defn-azure-maps-subscription-key.md
+                - name: Contraseña de configuración de publicación de Azure
+                  href: sit-defn-azure-publish-setting-password.md
+                - name: Cadena de conexión Azure Redis Cache
+                  href: sit-defn-azure-redis-cache-connection-string.md
+                - name: Contraseña de la cadena de conexión de Azure Redis Cache
+                  href: sit-defn-azure-redis-cache-connection-string-password.md
+                - name: SAS de Azure
+                  href: sit-defn-azure-sas.md
+                - name: Cadena de conexión de Azure Service Bus
+                  href: sit-defn-azure-service-bus-connection-string.md
+                - name: Firma de acceso compartido de Azure Service Bus
+                  href: sit-defn-azure-service-bus-shared-access-signature.md
+                - name: Clave de acceso compartido o token de Webhook de Azure
+                  href: sit-defn-azure-shared-access-key-web-hook-token.md
+                - name: Clave de acceso de Azure SignalR
+                  href: sit-defn-azure-signalr-access-key.md
+                - name: Cadena de conexión de Azure SQL
+                  href: sit-defn-azure-sql-connection-string.md
+                - name: Clave de acceso de la cuenta de Azure Storage
+                  href: sit-defn-azure-storage-account-access-key.md
+                - name: Clave de cuenta de Azure Storage
+                  href: sit-defn-azure-storage-account-key.md
+                - name: Clave de cuenta de Azure Storage (genérica)
+                  href: sit-defn-azure-storage-account-key-generic.md
+                - name: Firma de acceso compartido de la cuenta de Azure Storage
+                  href: sit-defn-azure-storage-account-shared-access-signature.md
+                - name: Firma de acceso compartido de la cuenta de Azure Storage para recursos de alto riesgo
+                  href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+                - name: Certificado de administración de suscripciones de Azure
+                  href: sit-defn-azure-subscription-management-certificate.md
+                - name: Número del permiso de conducir de Bélgica
+                  href: sit-defn-belgium-drivers-license-number.md
+                - name: Número del documento nacional de identidad de Bélgica
+                  href: sit-defn-belgium-national-number.md
+                - name: Número de pasaporte de Bélgica
+                  href: sit-defn-belgium-passport-number.md
+                - name: Direcciones físicas de Bélgica
+                  href: sit-defn-belgium-physical-addresses.md
+                - name: Número del impuesto sobre el valor añadido de Bélgica
+                  href: sit-defn-belgium-value-added-tax-number.md
+                - name: Términos de análisis de sangre
+                  href: sit-defn-blood-test-terms.md
+                - name: Nombres de medicación de marca
+                  href: sit-defn-brand-medication-names.md
+                - name: Número CPF de Brasil
+                  href: sit-defn-brazil-cpf-number.md
+                - name: Código de identificación fiscal de Brasil (CNPJ)
+                  href: sit-defn-brazil-legal-entity-number.md
+                - name: Documento nacional de identidad de Brasil (RG)
+                  href: sit-defn-brazil-national-identification-card.md
+                - name: Direcciones físicas de Brasil
+                  href: sit-defn-brazil-physical-addresses.md
+                - name: Número del permiso de conducir de Bulgaria
+                  href: sit-defn-bulgaria-drivers-license-number.md
+                - name: Número de pasaporte de Bulgaria
+                  href: sit-defn-bulgaria-passport-number.md
+                - name: Direcciones físicas de Bulgaria
+                  href: sit-defn-bulgaria-physical-addresses.md
+                - name: Número del documento de identidad de Bulgaria
+                  href: sit-defn-bulgaria-uniform-civil-number.md
+                - name: Número de cuenta bancaria de Canadá
+                  href: sit-defn-canada-bank-account-number.md
+                - name: Número del permiso de conducir de Canadá
+                  href: sit-defn-canada-drivers-license-number.md
+                - name: Número del servicio de salud de Canadá
+                  href: sit-defn-canada-health-service-number.md
+                - name: Número de pasaporte de Canadá
+                  href: sit-defn-canada-passport-number.md
+                - name: Número de la tarjeta sanitaria personal de Canadá (PHIN)
+                  href: sit-defn-canada-personal-health-identification-number.md
+                - name: Direcciones físicas de Canadá
+                  href: sit-defn-canada-physical-addresses.md
+                - name: Número de seguridad social de Canadá
+                  href: sit-defn-canada-social-insurance-number.md
+                - name: Número del documento de identidad de Chile
+                  href: sit-defn-chile-identity-card-number.md
+                - name: Número del documento de identidad de residente de China (PRC)
+                  href: sit-defn-china-resident-identity-card-number.md
+                - name: Secreto de cliente / clave de API
+                  href: sit-defn-client-secret-api-key.md
+                - name: Credenciales de URL
+                  href: sit-defn-credentials-in-url.md
+                - name: Número de tarjeta de crédito
+                  href: sit-defn-credit-card-number.md
+                - name: Número del permiso de conducir de Croacia
+                  href: sit-defn-croatia-drivers-license-number.md
+                - name: Número del documento de identidad de Croacia
+                  href: sit-defn-croatia-identity-card-number.md
+                - name: Número de pasaporte de Croacia
+                  href: sit-defn-croatia-passport-number.md
+                - name: Número del documento de identidad de Croacia (OIB)
+                  href: sit-defn-croatia-personal-identification-number.md
+                - name: Direcciones físicas de Croacia
+                  href: sit-defn-croatia-physical-addresses.md
+                - name: Número del permiso de conducir de Chipre
+                  href: sit-defn-cyprus-drivers-license-number.md
+                - name: Documento de identidad de Chipre
+                  href: sit-defn-cyprus-identity-card.md
+                - name: Número de pasaporte de Chipre
+                  href: sit-defn-cyprus-passport-number.md
+                - name: Direcciones físicas de Chipre
+                  href: sit-defn-cyprus-physical-addresses.md
+                - name: Número de identificación fiscal de Chipre
+                  href: sit-defn-cyprus-tax-identification-number.md
+                - name: Número del permiso de conducir de la República Checa
+                  href: sit-defn-czech-drivers-license-number.md
+                - name: Número de pasaporte de la República Checa
+                  href: sit-defn-czech-passport-number.md
+                - name: Número del documento de identidad de la República Checa
+                  href: sit-defn-czech-personal-identity-number.md
+                - name: Direcciones físicas de la República Checa
+                  href: sit-defn-czech-republic-physical-addresses.md
+                - name: Número del permiso de conducir de Dinamarca
+                  href: sit-defn-denmark-drivers-license-number.md
+                - name: Número de pasaporte de Dinamarca
+                  href: sit-defn-denmark-passport-number.md
+                - name: Número del documento de identidad de Dinamarca
+                  href: sit-defn-denmark-personal-identification-number.md
+                - name: Direcciones físicas de Dinamarca
+                  href: sit-defn-denmark-physical-addresses.md
+                - name: Enfermedades
+                  href: sit-defn-diseases.md
+                - name: Número de la Administración de Control de Drogas (DEA)
+                  href: sit-defn-drug-enforcement-agency-number.md
+                - name: Número del permiso de conducir de Estonia
+                  href: sit-defn-estonia-drivers-license-number.md
+                - name: Número de pasaporte de Estonia
+                  href: sit-defn-estonia-passport-number.md
+                - name: Número del documento de identidad de Estonia
+                  href: sit-defn-estonia-personal-identification-code.md
+                - name: Direcciones físicas de Estonia
+                  href: sit-defn-estonia-physical-addresses.md
+                - name: Número de tarjeta de débito de la UE
+                  href: sit-defn-eu-debit-card-number.md
+                - name: Número del permiso de conducir de la UE
+                  href: sit-defn-eu-drivers-license-number.md
+                - name: Número del documento nacional de identidad de la UE
+                  href: sit-defn-eu-national-identification-number.md
+                - name: Número de pasaporte de la UE
+                  href: sit-defn-eu-passport-number.md
+                - name: 'Número de la seguridad social de la UE o identificación equivalente  '
+                  href: sit-defn-eu-social-security-number-equivalent-identification.md
+                - name: Número de identificación fiscal de la UE
+                  href: sit-defn-eu-tax-identification-number.md
+                - name: Número del permiso de conducir de Finlandia
+                  href: sit-defn-finland-drivers-license-number.md
+                - name: Número de la tarjeta sanitaria europea de Finlandia
+                  href: sit-defn-finland-european-health-insurance-number.md
+                - name: Documento de identidad de Finlandia
+                  href: sit-defn-finland-national-id.md
+                - name: Número de pasaporte de Finlandia
+                  href: sit-defn-finland-passport-number.md
+                - name: Direcciones físicas de Finlandia
+                  href: sit-defn-finland-physical-addresses.md
+                - name: Número del permiso de conducir de Francia
+                  href: sit-defn-france-drivers-license-number.md
+                - name: Número del seguro sanitario de Francia
+                  href: sit-defn-france-health-insurance-number.md
+                - name: Documento nacional de identidad de Francia (CNI)
+                  href: sit-defn-france-national-id-card.md
+                - name: Número de pasaporte de Francia
+                  href: sit-defn-france-passport-number.md
+                - name: Direcciones físicas de Francia
+                  href: sit-defn-france-physical-addresses.md
+                - name: Número de la seguridad social de Francia (INSEE)
+                  href: sit-defn-france-social-security-number.md
+                - name: Número de identificación fiscal de Francia
+                  href: sit-defn-france-tax-identification-number.md
+                - name: Número del impuesto sobre el valor añadido de Francia
+                  href: sit-defn-france-value-added-tax-number.md
+                - name: Contraseña general
+                  href: sit-defn-general-password.md
+                - name: Clave simétrica general
+                  href: sit-defn-general-symmetric-key.md
+                - name: Nombres de medicación genérica
+                  href: sit-defn-generic-medication-names.md
+                - name: Número del permiso de conducir de Alemania
+                  href: sit-defn-germany-drivers-license-number.md
+                - name: Número del documento de identidad de Alemania
+                  href: sit-defn-germany-identity-card-number.md
+                - name: Número de pasaporte de Alemania
+                  href: sit-defn-germany-passport-number.md
+                - name: Direcciones físicas de Alemania
+                  href: sit-defn-germany-physical-addresses.md
+                - name: Número de identificación fiscal de Alemania
+                  href: sit-defn-germany-tax-identification-number.md
+                - name: Número del impuesto sobre el valor añadido de Alemania
+                  href: sit-defn-germany-value-added-tax-number.md
+                - name: Token de acceso personal de GitHub
+                  href: sit-defn-github-personal-access-token.md
+                - name: Clave de API de Google
+                  href: sit-defn-google-api-key.md
+                - name: Número del permiso de conducir de Grecia
+                  href: sit-defn-greece-drivers-license-number.md
+                - name: Documento nacional de identidad de Grecia
+                  href: sit-defn-greece-national-id-card.md
+                - name: Número de pasaporte de Grecia
+                  href: sit-defn-greece-passport-number.md
+                - name: Direcciones físicas de Grecia
+                  href: sit-defn-greece-physical-addresses.md
+                - name: Número de la seguridad social de Grecia (AMKA)
+                  href: sit-defn-greece-social-security-number.md
+                - name: Número de identificación fiscal de Grecia
+                  href: sit-defn-greece-tax-identification-number.md
+                - name: Número del documento de identidad de Hong Kong (HKID)
+                  href: sit-defn-hong-kong-identity-card-number.md
+                - name: Encabezado de autorización HTTP
+                  href: sit-defn-http-authorization-header.md
+                - name: Número del permiso de conducir de Hungría
+                  href: sit-defn-hungary-drivers-license-number.md
+                - name: Número de pasaporte de Hungría
+                  href: sit-defn-hungary-passport-number.md
+                - name: Número del documento de identidad de Hungría
+                  href: sit-defn-hungary-personal-identification-number.md
+                - name: Direcciones físicas de Hungría
+                  href: sit-defn-hungary-physical-addresses.md
+                - name: Número de la seguridad social de Hungría (TAJ)
+                  href: sit-defn-hungary-social-security-number.md
+                - name: Número de identificación fiscal de Hungría
+                  href: sit-defn-hungary-tax-identification-number.md
+                - name: Número del impuesto sobre el valor añadido de Hungría
+                  href: sit-defn-hungary-value-added-tax-number.md
+                - name: Direcciones físicas de Islandia
+                  href: sit-defn-iceland-physical-addresses.md
+                - name: Deficiencias enumeradas en la Evaluación de discapacidad de la seguridad social de Estados Unidos
+                  href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+                - name: Número del permiso de conducir de India
+                  href: sit-defn-india-drivers-license-number.md
+                - name: Número GST de India
+                  href: sit-defn-india-gst-number.md
+                - name: Número de cuenta permanente de India (PAN)
+                  href: sit-defn-india-permanent-account-number.md
+                - name: Número de identificación único de India (Aadhaar)
+                  href: sit-defn-india-unique-identification-number.md
+                - name: Tarjeta de identificación de electoral de India
+                  href: sit-defn-india-voter-id-card.md
+                - name: Número del documento de identidad de Indonesia (KTP)
+                  href: sit-defn-indonesia-identity-card-number.md
+                - name: Número de cuenta bancaria internacional (IBAN)
+                  href: sit-defn-international-banking-account-number.md
+                - name: Clasificación Internacional de Enfermedades (CIE-10-MC)
+                  href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+                - name: Clasificación Internacional de Enfermedades (CIE-9-MC)
+                  href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+                - name: Dirección IP
+                  href: sit-defn-ip-address.md
+                - name: Dirección IP v4
+                  href: sit-defn-ip-address-v4.md
+                - name: Dirección IP v6
+                  href: sit-defn-ip-address-v6.md
+                - name: Número del permiso de conducir de Irlanda
+                  href: sit-defn-ireland-drivers-license-number.md
+                - name: Número de pasaporte de Irlanda
+                  href: sit-defn-ireland-passport-number.md
+                - name: Número de la seguridad social de Irlanda (PPS)
+                  href: sit-defn-ireland-personal-public-service-number.md
+                - name: Direcciones físicas de Irlanda
+                  href: sit-defn-ireland-physical-addresses.md
+                - name: Número de cuenta bancaria de Israel
+                  href: sit-defn-israel-bank-account-number.md
+                - name: Número de identidad nacional de Israel
+                  href: sit-defn-israel-national-identification-number.md
+                - name: Número del permiso de conducir de Italia
+                  href: sit-defn-italy-drivers-license-number.md
+                - name: Número de identificación fiscal de Italia
+                  href: sit-defn-italy-fiscal-code.md
+                - name: Número de pasaporte de Italia
+                  href: sit-defn-italy-passport-number.md
+                - name: Direcciones físicas de Italia
+                  href: sit-defn-italy-physical-addresses.md
+                - name: Número del impuesto sobre el valor añadido de Italia
+                  href: sit-defn-italy-value-added-tax-number.md
+                - name: Número de cuenta bancaria de Japón
+                  href: sit-defn-japan-bank-account-number.md
+                - name: Número del permiso de conducir de Japón
+                  href: sit-defn-japan-drivers-license-number.md
+                - name: Código de identificación fiscal de Japón
+                  href: sit-defn-japan-my-number-corporate.md
+                - name: Número de identificación fiscal de Japón
+                  href: sit-defn-japan-my-number-personal.md
+                - name: Número de pasaporte de Japón
+                  href: sit-defn-japan-passport-number.md
+                - name: Número de tarjeta de residencia de Japón
+                  href: sit-defn-japan-residence-card-number.md
+                - name: Número de registro de residente de Japón
+                  href: sit-defn-japan-resident-registration-number.md
+                - name: Número de la seguridad social de Japón (SIN)
+                  href: sit-defn-japan-social-insurance-number.md
+                - name: Términos de ensayos de laboratorio
+                  href: sit-defn-lab-test-terms.md
+                - name: Número del permiso de conducir de Letonia
+                  href: sit-defn-latvia-drivers-license-number.md
+                - name: Número de pasaporte de Letonia
+                  href: sit-defn-latvia-passport-number.md
+                - name: Número del documento de identidad de Letonia
+                  href: sit-defn-latvia-personal-code.md
+                - name: Direcciones físicas de Letonia
+                  href: sit-defn-latvia-physical-addresses.md
+                - name: Direcciones físicas de Liechtenstein
+                  href: sit-defn-liechtenstein-physical-addresses.md
+                - name: Estilos de vida relacionados con enfermedades
+                  href: sit-defn-lifestyles-relate-to-medical-conditions.md
+                - name: Número del permiso de conducir de Lituania
+                  href: sit-defn-lithuania-drivers-license-number.md
+                - name: Número de pasaporte de Lituania
+                  href: sit-defn-lithuania-passport-number.md
+                - name: Número del documento de identidad de Lituania
+                  href: sit-defn-lithuania-personal-code.md
+                - name: Direcciones físicas de Lituania
+                  href: sit-defn-lithuania-physical-addresses.md
+                - name: Número del permiso de conducir de Luxemburgo
+                  href: sit-defn-luxemburg-drivers-license-number.md
+                - name: Número del documento de identidad de Luxemburgo (personas físicas)
+                  href: sit-defn-luxemburg-national-identification-number-natural-persons.md
+                - name: Número del documento de identidad de Luxemburgo (personas jurídicas)
+                  href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+                - name: Número de pasaporte de Luxemburgo
+                  href: sit-defn-luxemburg-passport-number.md
+                - name: Direcciones físicas de Luxemburgo
+                  href: sit-defn-luxemburg-physical-addresses.md
+                - name: Número del documento de identidad de Malasia
+                  href: sit-defn-malaysia-identification-card-number.md
+                - name: Número del permiso de conducir de Malta
+                  href: sit-defn-malta-drivers-license-number.md
+                - name: Número del documento de identidad de Malta
+                  href: sit-defn-malta-identity-card-number.md
+                - name: Número de pasaporte de Malta
+                  href: sit-defn-malta-passport-number.md
+                - name: Direcciones físicas de Malta
+                  href: sit-defn-malta-physical-addresses.md
+                - name: Número de identificación fiscal de Malta
+                  href: sit-defn-malta-tax-identification-number.md
+                - name: Especialidades médicas
+                  href: sit-defn-medical-specialities.md
+                - name: Tarjeta de beneficiario de Medicare (MBI)
+                  href: sit-defn-medicare-beneficiary-Identifier-card.md
+                - name: "Clave Única de Registro de Población\_(CURP) de México"
+                  href: sit-defn-mexico-unique-population-registry-code.md
+                - name: Clave de Mapas de Microsoft Bing
+                  href: sit-defn-microsoft-bing-maps-key.md
+                - name: Número del documento de identidad (BSN) de Países Bajos
+                  href: sit-defn-netherlands-citizens-service-number.md
+                - name: Número del permiso de conducir de los Países Bajos
+                  href: sit-defn-netherlands-drivers-license-number.md
+                - name: Número de pasaporte de los Países Bajos
+                  href: sit-defn-netherlands-passport-number.md
+                - name: Direcciones físicas de los Países Bajos
+                  href: sit-defn-netherlands-physical-addresses.md
+                - name: Número de identificación fiscal de los Países Bajos
+                  href: sit-defn-netherlands-tax-identification-number.md
+                - name: Número del impuesto sobre el valor añadido de los Países Bajos
+                  href: sit-defn-netherlands-value-added-tax-number.md
+                - name: Número de cuenta bancaria de Nueva Zelanda
+                  href: sit-defn-new-zealand-bank-account-number.md
+                - name: Número del permiso de conducir de Nueva Zelanda
+                  href: sit-defn-new-zealand-drivers-license-number.md
+                - name: Número de identificación fiscal de Nueva Zelanda
+                  href: sit-defn-new-zealand-inland-revenue-number.md
+                - name: Número de la tarjeta sanitaria de Nueva Zelanda
+                  href: sit-defn-new-zealand-ministry-of-health-number.md
+                - name: Direcciones físicas de Nueva Zelanda
+                  href: sit-defn-new-zealand-physical-addresses.md
+                - name: Número de seguridad social de Nueva Zelanda
+                  href: sit-defn-new-zealand-social-welfare-number.md
+                - name: Número del documento de identidad de Noruega
+                  href: sit-defn-norway-identification-number.md
+                - name: Direcciones físicas de Noruega
+                  href: sit-defn-norway-physical-addresses.md
+                - name: Número de identidad universal unificado de Filipinas
+                  href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+                - name: Número del permiso de conducir de Polonia
+                  href: sit-defn-poland-drivers-license-number.md
+                - name: Documento de identidad de Polonia
+                  href: sit-defn-poland-identity-card.md
+                - name: Número del documento nacional de identidad de Polonia (PESEL)
+                  href: sit-defn-poland-national-id.md
+                - name: Número de pasaporte de Polonia
+                  href: sit-defn-poland-passport-number.md
+                - name: Direcciones físicas de Polonia
+                  href: sit-defn-poland-physical-addresses.md
+                - name: Número REGON de Polonia
+                  href: sit-defn-poland-regon-number.md
+                - name: Número de identificación fiscal de Polonia
+                  href: sit-defn-poland-tax-identification-number.md
+                - name: Número de la seguridad social de Portugal
+                  href: sit-defn-portugal-citizen-card-number.md
+                - name: Número del permiso de conducir de Portugal
+                  href: sit-defn-portugal-drivers-license-number.md
+                - name: Número de pasaporte de Portugal
+                  href: sit-defn-portugal-passport-number.md
+                - name: Direcciones físicas de Portugal
+                  href: sit-defn-portugal-physical-addresses.md
+                - name: Número de identificación fiscal de Portugal
+                  href: sit-defn-portugal-tax-identification-number.md
+                - name: Número del permiso de conducir de Rumanía
+                  href: sit-defn-romania-drivers-license-number.md
+                - name: Número de pasaporte de Rumanía
+                  href: sit-defn-romania-passport-number.md
+                - name: Número del documento de identidad de Rumania (CNP)
+                  href: sit-defn-romania-personal-numeric-code.md
+                - name: Direcciones físicas de Rumanía
+                  href: sit-defn-romania-physical-addresses.md
+                - name: Número de pasaporte de Rusia (nacional)
+                  href: sit-defn-russia-passport-number-domestic.md
+                - name: Número de pasaporte de Rusia (internacional)
+                  href: sit-defn-russia-passport-number-international.md
+                - name: Identificación nacional de Arabia Saudí
+                  href: sit-defn-saudi-arabia-national-id.md
+                - name: Número del documento de identidad del registro nacional de Singapur (NRIC)
+                  href: sit-defn-singapore-national-registration-identity-card-number.md
+                - name: Token de acceso de Slack
+                  href: sit-defn-slack-access-token.md
+                - name: Número del permiso de conducir de Eslovaquia
+                  href: sit-defn-slovakia-drivers-license-number.md
+                - name: Número de pasaporte de Eslovaquia
+                  href: sit-defn-slovakia-passport-number.md
+                - name: Número del documento de identidad de Eslovaquia
+                  href: sit-defn-slovakia-personal-number.md
+                - name: Direcciones físicas de Eslovaquia
+                  href: sit-defn-slovakia-physical-addresses.md
+                - name: Número del permiso de conducir de Eslovenia
+                  href: sit-defn-slovenia-drivers-license-number.md
+                - name: Número de pasaporte de Eslovenia
+                  href: sit-defn-slovenia-passport-number.md
+                - name: Direcciones físicas de Eslovenia
+                  href: sit-defn-slovenia-physical-addresses.md
+                - name: Número de identificación fiscal de Eslovenia
+                  href: sit-defn-slovenia-tax-identification-number.md
+                - name: Número del documento de identidad único de Eslovenia
+                  href: sit-defn-slovenia-unique-master-citizen-number.md
+                - name: Número del documento de identidad de Sudáfrica
+                  href: sit-defn-south-africa-identification-number.md
+                - name: Número de registro de residente de Corea del Sur
+                  href: sit-defn-south-korea-resident-registration-number.md
+                - name: DNI de España
+                  href: sit-defn-spain-dni.md
+                - name: Número del permiso de conducir de España
+                  href: sit-defn-spain-drivers-license-number.md
+                - name: Número de pasaporte de España
+                  href: sit-defn-spain-passport-number.md
+                - name: Direcciones físicas de España
+                  href: sit-defn-spain-physical-addresses.md
+                - name: Número de la seguridad social de España (NSS)
+                  href: sit-defn-spain-social-security-number.md
+                - name: Número de identificación fiscal de España
+                  href: sit-defn-spain-tax-identification-number.md
+                - name: Cadena de conexión de SQL Server
+                  href: sit-defn-sql-server-connection-string.md
+                - name: Procedimientos quirúrgicos
+                  href: sit-defn-surgical-procedures.md
+                - name: Número del permiso de conducir de Suecia
+                  href: sit-defn-sweden-drivers-license-number.md
+                - name: Número del documento nacional de identidad de Suecia
+                  href: sit-defn-sweden-national-id.md
+                - name: Número de pasaporte de Suecia
+                  href: sit-defn-sweden-passport-number.md
+                - name: Direcciones físicas de Suecia
+                  href: sit-defn-sweden-physical-addresses.md
+                - name: Número de identificación fiscal de Suecia
+                  href: sit-defn-sweden-tax-identification-number.md
+                - name: Código SWIFT
+                  href: sit-defn-swift-code.md
+                - name: Direcciones físicas de Suiza
+                  href: sit-defn-switzerland-physical-addresses.md
+                - name: Número SSN AHV de Suiza
+                  href: sit-defn-switzerland-ssn-ahv-number.md
+                - name: Número del documento nacional de identidad de Taiwán
+                  href: sit-defn-taiwan-national-identification-number.md
+                - name: Número de pasaporte de Taiwán
+                  href: sit-defn-taiwan-passport-number.md
+                - name: Número del certificado de residente de Taiwán (ARC/TARC)
+                  href: sit-defn-taiwan-resident-certificate-number.md
+                - name: Número del documento de identidad tailandés
+                  href: sit-defn-thai-population-identification-code.md
+                - name: Número del documento de identidad de Turquía
+                  href: sit-defn-turkey-national-identification-number.md
+                - name: Direcciones físicas de Turquía
+                  href: sit-defn-turkey-physical-addresses.md
+                - name: Tipos de medicación
+                  href: sit-defn-types-of-medication.md
+                - name: Reino Unido número del permiso de conducir
+                  href: sit-defn-uk-drivers-license-number.md
+                - name: Reino Unido número de la tarjeta electoral
+                  href: sit-defn-uk-electoral-roll-number.md
+                - name: Reino Unido número de la tarjeta sanitaria nacional
+                  href: sit-defn-uk-national-health-service-number.md
+                - name: Reino Unido número de la seguridad social (NINO)
+                  href: sit-defn-uk-national-insurance-number.md
+                - name: Reino Unido direcciones físicas
+                  href: sit-defn-uk-physical-addresses.md
+                - name: Reino Unido Número único de identificación fiscal
+                  href: sit-defn-uk-unique-taxpayer-reference-number.md
+                - name: Número de cuenta bancaria de EE. UU.
+                  href: sit-defn-us-bank-account-number.md
+                - name: Número del permiso de conducir de Estados Unidos
+                  href: sit-defn-us-drivers-license-number.md
+                - name: Número de identificación fiscal individual de EE. UU. (ITIN)
+                  href: sit-defn-us-individual-taxpayer-identification-number.md
+                - name: Direcciones físicas de Estados Unidos
+                  href: sit-defn-us-physical-addresses.md
+                - name: Número de seguridad social de EE. UU. (SSN)
+                  href: sit-defn-us-social-security-number.md
+                - name: EE. UU./Reino Unido passport number
+                  href: sit-defn-us-uk-passport-number.md
+                - name: Pasaporte de Ucrania (nacional)
+                  href: sit-defn-ukraine-passport-domestic.md
+                - name: Pasaporte de Ucrania (internacional)
+                  href: sit-defn-ukraine-passport-international.md
+                - name: Credenciales de inicio de sesión de usuario
+                  href: sit-defn-user-login-credentials.md
+                - name: Clave privada de certificado X.509
+                  href: sit-defn-x-509-certificate-private-key.md
             - name: Funciones de tipo de información confidencial
               href: sit-functions.md
             - name: Personalizar referencia de filtros de tipo de información confidencial
