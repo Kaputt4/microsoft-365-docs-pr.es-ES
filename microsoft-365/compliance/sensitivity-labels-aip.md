@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756685"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970174"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -110,7 +110,7 @@ Como alternativa, puede deshabilitar o quitar de forma interactiva el complement
 
 Independientemente del método que elija, los cambios surtirán efecto cuando se reinicien las aplicaciones de Office.
 
-Si, después de realizar estos cambios, el botón **Confidencialidad** no se muestra en la cinta de Office, compruebe si se ha [desactivado](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) el etiquetado de confidencialidad.  Aunque esta no es la configuración predeterminada, es posible que un administrador haya establecido explícitamente esta configuración mediante directiva de grupo o editando directamente el Registro.
+Si, después de realizar estos cambios, el botón **Confidencialidad** no se muestra en la cinta de Office, compruebe si se ha [desactivado](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) el etiquetado de confidencialidad. Aunque esta no es la configuración predeterminada, es posible que un administrador haya establecido explícitamente esta configuración mediante directiva de grupo o editando directamente el Registro.
 
 > [!NOTE]
 > Las etiquetas integradas requieren una edición de suscripción a las aplicaciones de Office. Si tiene ediciones independientes de Office, a veces denominadas "Office Perpetua", le recomendamos que actualice a Aplicaciones de Microsoft 365 para empresas para beneficiarse de las [capacidades de etiquetado más recientes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
@@ -150,7 +150,7 @@ Use la siguiente información para identificar si usa una característica del co
 | **Categoría: cifrado** | |
 |Permisos definidos por el administrador | ![Se admite.](../media/yes-icon.png) <br>[Más información](encryption-sensitivity-labels.md#assign-permissions-now) |
 |Permisos definidos por el usuario <br> - No reenviar para Outlook <br> - Permisos personalizados de usuario y grupo para Word, Excel y PowerPoint| ![Se admite.](../media/yes-icon.png) <br>[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|Permisos definidos por el usuario <br> - Permisos personalizados de toda la organización especificando dominios para Word, Excel y PowerPoint | En planificación o desarrollo |
+|Permisos definidos por el usuario <br> - Permisos personalizados de toda la organización especificando dominios para Word, Excel y PowerPoint | [En versión preliminar](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Coautoría y autoguardado | ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-coauthoring.md) |
 |Cifrado de claves doble | En planificación o desarrollo |
 |Revocación de documentos para usuarios | En revisión |

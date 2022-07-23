@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
-ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747888"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969800"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
-Si desea permitir que los usuarios colaboren con personas ajenas a la organización en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
+Si quiere permitir que los usuarios colaboren con personas de otras organizaciones de Microsoft 365 en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
 
 Al habilitar canales compartidos en Teams con otra organización:
 

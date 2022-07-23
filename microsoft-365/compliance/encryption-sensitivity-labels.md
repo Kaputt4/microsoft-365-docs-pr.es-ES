@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663796"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970238"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -288,7 +288,7 @@ Puede usar las siguientes opciones para que los usuarios puedan asignar permisos
 
     Esta opción es compatible con el cliente de etiquetado unificado de Azure Information Protection y por algunas aplicaciones que usan etiquetado integrado. Para las aplicaciones que no admiten esta función, la etiqueta no estará visible para los usuarios, o bien la etiqueta está visible para dar coherencia pero no se puede aplicar con un mensaje de explicación a los usuarios.
     
-    Para comprobar qué aplicaciones que usan etiquetas integradas admiten esta opción, use la [tabla de funciones para Word, Excel y PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) y la fila **Permitir que los usuarios asignen permisos: solicitar a los usuarios**.
+    Para comprobar qué aplicaciones que usan etiquetas integradas admiten esta opción, use la [tabla de funciones para Word, Excel y PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) y la fila **Permitir que los usuarios asignen permisos**.
 
 Cuando se admitan las opciones, use la tabla siguiente para identificar cuándo los usuarios ven la etiqueta de confidencialidad:
 
@@ -343,6 +343,16 @@ Para el etiquetado integrado y para el cliente de etiquetado unificado de Azure�
 
 > [!TIP]
 > Si los usuarios estaban familiarizados con la configuración de permisos personalizados con el cliente de etiquetado unificado de Azure Information Protection antes de [habilitar la co-autoría](sensitivity-labels-coauthoring.md), puede resultar útil revisar la asignación de niveles de permisos a derechos de uso individuales: [Derechos incluidos en los niveles de permisos](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### <a name="support-for-organization-wide-custom-permissions"></a>Compatibilidad con permisos personalizados para toda la organización
+
+Ahora, implementándose en versión preliminar para el etiquetado integrado en Windows, los usuarios pueden especificar un nombre de dominio que se aplicará a todos los usuarios de una organización propietaria del dominio y que se encuentra en Azure Active Directory. Esta funcionalidad proporciona [paridad con el cliente de etiquetado unificado Azure Information Protection](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![Cuadro de diálogo actualizado para admitir permisos personalizados para toda la organización.](../media/org-wide-custom-permissions-dialog.png)
+
+Por ejemplo, un usuario escribe "@contoso.com" (o "contoso.com") y concede acceso de lectura. Dado que Contoso Corporation posee el dominio contoso.com, se concederá acceso de lectura a todos los usuarios de ese dominio y a todos los demás dominios de los que es propietaria la organización en Azure Active Directory.
+
+Es importante informar a los usuarios de que el acceso no está restringido solo a los usuarios del dominio especificado. Por ejemplo, "@ventas.contoso.com" no restringiría el acceso a los usuarios solo en el subdominio de ventas, sino que también concedería acceso a los usuarios del dominio marketing.contoso.com e incluso a los usuarios con un espacio de nombres separado en el mismo inquilino de Azure Active Directory.
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Configuraciones de ejemplo para la configuración de cifrado
 
