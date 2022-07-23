@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que gestionan contenido de alto valor en Microsoft 365 para las obligaciones legales, empresariales o normativas.
+ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629693"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944205"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
