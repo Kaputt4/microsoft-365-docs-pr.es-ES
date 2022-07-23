@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622028"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983969"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -35,7 +35,7 @@ ms.locfileid: "65622028"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** \> de **puntos de conexión** (en **Reglas**).
+1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** de **puntos** \> de conexión (en **Reglas**).
 
 2. Seleccione la pestaña del tipo de entidad que desea administrar.
 
@@ -47,7 +47,7 @@ También puede elegir cargar un archivo CSV que defina los atributos de los indi
 
 Descargue el archivo CSV de ejemplo para conocer los atributos de columna admitidos.
 
-1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** \> de **puntos de conexión** (en **Reglas**).
+1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** de **puntos** \> de conexión (en **Reglas**).
 
 2. Seleccione la pestaña del tipo de entidad para la que desea importar indicadores.
 
@@ -65,17 +65,17 @@ En la tabla siguiente se muestran los parámetros admitidos.
 Parámetro|Tipo|Descripción
 :---|:---|:---
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
-indicatorValue|String|Identidad de la entidad [Indicator](ti-indicator.md) . **Required**
+indicatorValue|Cadena|Identidad de la entidad [Indicator](ti-indicator.md) . **Required**
 acción|Enum|Acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 title|String|Título de alerta de indicador. **Required**
-description|String| Descripción del indicador. **Required**
+description|Cadena| Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador con el siguiente formato AAAA-MM-DDTHH:MM:SS.0Z. El indicador se elimina si transcurre el tiempo de expiración y lo que ocurra en el momento de expiración se produce en el valor de segundos (SS). **Optional**
 severity|Enum|Gravedad del indicador. Los valores posibles son: "Informativo", "Bajo", "Medio" y "Alto". **Optional**
 recommendedActions|String|Acciones recomendadas de alerta de indicador de TI. **Optional**
-rbacGroupNames|String|Lista separada por comas de nombres de grupo de RBAC a los que se aplicaría el indicador. **Optional**
+rbacGroups|Cadena|Lista separada por comas de grupos de RBAC a los que se aplicaría el indicador. **Optional**
 categoría|String|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
-mitretechniques|String|Código/id de técnicas de MITRE (separados por comas). Para obtener más información, consulte [Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en la categoría cuando se trata de una técnica MITRE.
-GenerateAlert|String|Si se debe generar la alerta. Los valores posibles son: True o False. **Optional**
+mitretechniques|Cadena|Código/id de técnicas de MITRE (separados por comas). Para obtener más información, consulte [Tácticas empresariales](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en la categoría cuando se trata de una técnica MITRE.
+GenerateAlert|Cadena|Si se debe generar la alerta. Los valores posibles son: True o False. **Optional**
 
 > [!NOTE]
 > No se admite la notación de enrutamiento de Inter-Domain sin clase (CIDR) para direcciones IP.
