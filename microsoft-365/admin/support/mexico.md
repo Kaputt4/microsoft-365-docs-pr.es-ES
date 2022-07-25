@@ -14,7 +14,7 @@ description: Obtenga información acerca de cómo ponerse en contacto con el sop
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 7b39545eb075b68b9683b82a294fb9390718089d
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61373553"

@@ -22,7 +22,7 @@ monikerRange: o365-worldwide
 ms.date: 11/20/2020
 ms.openlocfilehash: 8248a9947f30edfa1db9dc002db6e8dd58ca9078
 ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/15/2022
 ms.locfileid: "66102490"
