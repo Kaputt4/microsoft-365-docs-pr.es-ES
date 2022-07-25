@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 28d1c3cd9ded0d2a4e0d2bf7444aaa5e0ac2ae37
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917681"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002502"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -35,7 +35,7 @@ ms.locfileid: "66917681"
 1. Descargue la herramienta [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "AC086D65202D31EBCF9DC76F7CA29A5B8B355CD6F78D31BBF89289EB7AA2B67D".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -70,6 +70,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 > - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
 >
 > - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binario del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary). <br> Tenga en cuenta que el binario está sin signo actualmente. Para permitir que el paquete se ejecute en MacOS, deberá usar la sintaxis : "spctl --add /Path/To/Application.app".
+> - El hash SHA256 actual de "XMDEClientAnalyzerBinary.zip" que se descarga del vínculo anterior es: "7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2"
 >
 > - Si el dispositivo está detrás de un proxy, simplemente puede pasar el servidor proxy como variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

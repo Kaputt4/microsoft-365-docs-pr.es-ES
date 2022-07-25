@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb771dbb4126cba1a5636e7ad3ad19fa267d7905
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1ea738bfec4f9779bae87a769b784f399e165a07
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714824"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002458"
 ---
 # <a name="export-incidents-queue-to-csv-files"></a>Exportación de la cola de incidentes a archivos CSV
 
@@ -49,5 +49,8 @@ Una vez que exporte los datos relacionados con la cola de incidentes en el archi
 Por ejemplo, para los datos del archivo CSV, puede aplicar filtros para ver los siguientes datos:
 - Datos sobre cuántos incidentes de gravedad alta ha tenido en los últimos 30 días.
 - Datos sobre quién es su analista más productivo.
+
+> [!NOTE]
+> El número máximo de registros que puede exportar a un archivo CSV es de 10 000. 
 
 Si tiene ideas o sugerencias sobre la nueva característica **Exportar** (el botón **Exportar**) de la cola de incidentes, póngase en contacto con el equipo de Microsoft o envíe sus comentarios a través del portal de Microsoft 365 Defender.
