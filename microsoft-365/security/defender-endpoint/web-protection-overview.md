@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4184948316e683a59b45b9397aaea74260e290ee
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664180"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020657"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -80,7 +81,7 @@ Para obtener más información, vea [Filtrado de contenido web](web-content-filt
 
 ## <a name="order-of-precedence"></a>Orden de precedencia
 
-La protección web se compone de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes lo exige el cliente SmartScreen en Microsoft Edge y el cliente de Network Protection en todos los demás exploradores y procesos.
+La protección web se compone de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes se aplica mediante el cliente SmartScreen en Microsoft Edge y el cliente de Network Protection en todos los demás exploradores y procesos.
 
 - Indicadores personalizados (ip/dirección URL, directivas de Microsoft Defender for Cloud Apps)
   - Permitir
@@ -106,18 +107,18 @@ En la tabla siguiente se resumen algunas configuraciones comunes que presentarí
 
 ****
 
-|Directiva de indicador personalizado|Directiva de amenazas web|Directiva de WCF|Directiva de aplicaciones de Defender for Cloud|Resultado|
+|Directiva de indicador personalizado|Directiva de amenazas web|Directiva de WCF|Directiva de Defender for Cloud Apps|Resultado|
 |---|---|---|---|---|
 |Permitir|Bloquear|Bloquear|Bloquear|Permitir (invalidación de protección web)|
 |Permitir|Permitir|Bloquear|Bloquear|Allow (excepción wcf)|
 |Advertir|Bloquear|Bloquear|Bloquear|Advertir (invalidar)|
 |
 
-Los indicadores personalizados no admiten las direcciones IP internas. Para una directiva de advertencia cuando el usuario final la omite, el sitio se desbloqueará durante 24 horas para ese usuario de forma predeterminada. El administrador puede modificar este período de tiempo y lo pasa el servicio en la nube SmartScreen. La capacidad de omitir una advertencia también se puede deshabilitar en Microsoft Edge mediante CSP para bloques de amenazas web (malware/phishing). Para obtener más información, vea [Microsoft Edge smartscreen Configuración](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+Los indicadores personalizados no admiten las direcciones IP internas. Para una directiva de advertencia cuando el usuario final la omite, el sitio se desbloqueará durante 24 horas para ese usuario de forma predeterminada. El Administración puede modificar este período de tiempo y lo pasa el servicio en la nube SmartScreen. La capacidad de omitir una advertencia también se puede deshabilitar en Microsoft Edge mediante CSP para bloques de amenazas web (malware/phishing). Para obtener más información, consulte [Configuración de SmartScreen de Microsoft Edge](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## <a name="protect-browsers"></a>Proteger exploradores
 
-En todos los escenarios de protección web, SmartScreen y Network Protection se pueden usar conjuntamente para garantizar la protección en los procesos y los exploradores de terceros. SmartScreen se integra directamente en Microsoft Edge, mientras que Protección de red supervisa el tráfico en exploradores y procesos de terceros. En el diagrama siguiente se muestra este concepto. Este diagrama de los dos clientes que trabajan juntos para proporcionar varias coberturas de explorador o aplicación es preciso para todas las características de Protección web (Indicadores, Amenazas web, Filtrado de contenido).
+En todos los escenarios de protección web, SmartScreen y Network Protection se pueden usar conjuntamente para garantizar la protección en los procesos y los exploradores de terceros. SmartScreen se integra directamente en Microsoft Edge, mientras que Network Protection supervisa el tráfico en exploradores y procesos de terceros. En el diagrama siguiente se muestra este concepto. Este diagrama de los dos clientes que trabajan juntos para proporcionar varias coberturas de explorador o aplicación es preciso para todas las características de Protección web (Indicadores, Amenazas web, Filtrado de contenido).
 
 :::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="El uso de smartScreen y Network Protection juntos" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -144,14 +145,14 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 
 ## <a name="advanced-hunting-for-web-protection"></a>Búsqueda avanzada para la protección web
 
-Kusto consultas de búsqueda avanzada se pueden usar para resumir los bloques de protección web de la organización durante un máximo de 30 días. Estas consultas usan la información enumerada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlos de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron a partir de Microsoft Edge.
+Las consultas de Kusto en la búsqueda avanzada se pueden usar para resumir los bloques de protección web de su organización durante un máximo de 30 días. Estas consultas usan la información enumerada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlos de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron en Microsoft Edge.
 
 ```kusto
 DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 Del mismo modo, puede usar la consulta siguiente para enumerar todos los bloques WCF que se originen en Network Protection (por ejemplo, un bloque WCF en un explorador de terceros). Tenga en cuenta que actiontype se ha actualizado y 'Experiencia' se ha cambiado a 'ResponseCategory'.
@@ -171,7 +172,7 @@ Para enumerar los bloques que se deben a otras características (como indicadore
 Si un usuario visita una página web que supone un riesgo de malware, suplantación de identidad (phishing) u otras amenazas web, Microsoft Edge desencadenará una página de bloque que lea "Este sitio se ha notificado como no seguro" junto con información relacionada con la amenaza.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="La página bloqueada por Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="Página bloqueada por Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 Si WCF o un indicador personalizado bloquean, se muestra una página de bloque en Microsoft Edge que indica al usuario que su organización bloquea este sitio.
 
@@ -185,7 +186,7 @@ En cualquier caso, no se muestran páginas en bloque en exploradores de terceros
 
 ## <a name="report-false-positives"></a>Notificar falsos positivos
 
-Para informar de un falso positivo para sitios que SmartScreen ha considerado peligrosos, use el vínculo que aparece en la página de bloques de Microsoft Edge (como se muestra anteriormente).
+Para notificar un falso positivo para sitios que SmartScreen ha considerado peligrosos, use el vínculo que aparece en la página de bloques de Microsoft Edge (como se muestra anteriormente).
 
 Para WCF, puede disputar la categoría de un dominio. Vaya a la pestaña **Dominios** de los informes wcf y, a continuación, haga clic en **Imprecisión del informe**. Se abrirá un control flotante. Establezca la prioridad del incidente y proporcione algunos detalles adicionales, como la categoría sugerida. Para obtener más información sobre cómo activar WCF y cómo disputar categorías, vea [Filtrado de contenido web](web-content-filtering.md).
 

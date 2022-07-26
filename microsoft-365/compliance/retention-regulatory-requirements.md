@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de los registros
-ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b3fe0a6c22645f67c99053a45e76e6dc9439e513
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638155"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019997"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Requisitos reglamentarios para la administración del ciclo de vida de los datos y de los registros
 
@@ -44,11 +44,11 @@ Este informe le ayuda a comprender cómo se pueden lograr los aspectos del siste
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f), FINRA 4511(c) y CFTC 1.31(c)-(d)
 
-**Evaluación de Cohasset, Microsoft 365, regla SEC 17a-4(f): almacenamiento inmutable para SharePoint, OneDrive, Teams, Exchange y Skype** - [Descargar evaluación](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**Evaluación de Cohasset, Microsoft 365, regla SEC 17a-4(f): almacenamiento inmutable para SharePoint, OneDrive, Exchange, Teams y Yammer** - [Descargar evaluación](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Cargas de trabajo aplicables: SharePoint, OneDrive, Teams, Exchange y Skype Empresarial
+Cargas de trabajo aplicables: SharePoint, OneDrive, Teams, Exchange y Yammer
 
-Publicado el 2020 de noviembre, este informe se elaboró en colaboración con Cohasset Associates, Inc. (Cohasset) para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en:  
+Última versión publicada en julio de 2022, este informe se elaboró en colaboración con Cohasset Associates, Inc. (Cohasset) para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en:  
 
 - Comisión de bolsa y valores (SEC) en 17 CFR § 240.17a-4(f), que regula a los miembros, corredores y agentes financieros.  
 

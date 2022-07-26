@@ -1,6 +1,6 @@
 ---
 title: Propiedades y métodos de la actividad de corrección
-description: La respuesta de LA API contiene actividades de corrección de amenazas & administración de vulnerabilidades creadas en el inquilino. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
+description: La respuesta de LA API contiene actividades de corrección de la administración de vulnerabilidades & amenazas creadas en el inquilino. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14f57d6590d580e0145abc2da788f184c88a721e
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 86218bb1dc3a30ab38e3df07496aa40a5775e88c
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840263"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020481"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -34,13 +34,15 @@ ms.locfileid: "65840263"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 [!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La respuesta de API contiene las actividades de corrección [de amenazas & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md) que se han creado en el inquilino.
+La respuesta de API contiene las actividades de corrección de [administración de vulnerabilidades & amenazas](next-gen-threat-and-vuln-mgt.md) que se han creado en el inquilino.
 
 ## <a name="methods"></a>Métodos
 
@@ -58,14 +60,14 @@ Id. de propiedad|Tipo de datos|Descripción
 :---|:---|:---
 Categoría|Cadena|Categoría de la actividad de corrección (configuración de software/seguridad)
 completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico.
-completerId|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
+completerId|String|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
 completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están revisados) o "manualmente" por una persona que selecciona "marcar como completado".
 createdOn|DateTime|Hora en que se creó esta actividad de corrección
 Descripción|Cadena|Descripción de esta actividad de corrección
 dueOn|DateTime|Fecha de vencimiento establecida por el creador para esta actividad de corrección
 fixedDevices||Número de dispositivos que se han corregido
 ID|Cadena|Identificador de esta actividad de corrección
-nameId|Cadena|Nombre del producto relacionado
+nameId|String|Nombre del producto relacionado
 Prioridad|Cadena|Prioridad del creador establecido para esta actividad de corrección (Alto\Medio\Bajo)
 Productid|Cadena|Identificador de producto relacionado
 productivityImpactRemediationType|Cadena|Solo se pueden solicitar algunos cambios de configuración para los dispositivos que no afectan a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo los dispositivos sin ningún impacto en el usuario".
@@ -83,9 +85,9 @@ statusLastModifiedOn|DateTime|Fecha en que se actualizó el campo de estado
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección
 Título|Cadena|Título de esta actividad de corrección
 Tipo|Cadena|Tipo de corrección
-vendorId|Cadena|Nombre del proveedor relacionado
+vendorId|String|Nombre del proveedor relacionado
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtener una actividad de corrección de acuerdo con su id](get-remediation-one-activity.md)
 
@@ -93,6 +95,6 @@ vendorId|Cadena|Nombre del proveedor relacionado
 
 - [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
 
-- [& administración de vulnerabilidades de amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

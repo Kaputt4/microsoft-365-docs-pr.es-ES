@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664510"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020591"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integración de las herramientas siem con Microsoft Defender para punto de conexión
 
@@ -38,7 +38,7 @@ ms.locfileid: "64664510"
 >
 > [Microsoft Defender para punto de conexión Alerta](alerts.md) se compone de uno o varios eventos sospechosos o malintencionados que se produjeron en el dispositivo y sus detalles relacionados. La API de alertas de Microsoft Defender para punto de conexión es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Métodos y propiedades de alerta](alerts.md) y [Lista de alertas](get-alerts.md).
 
-Microsoft Defender para punto de conexión admite herramientas de administración de eventos e información de seguridad (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para un AAD registrado  aplicación que representa la solución siem específica o el conector instalado en el entorno.
+Microsoft Defender para punto de conexión admite herramientas de administración de eventos e información de seguridad (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para una aplicación de AAD registrada que represente la solución SIEM o el conector específico instalado en su entorno.
 
 Para más información, vea:
 
@@ -73,6 +73,15 @@ Uso del complemento Microsoft 365 Defender para Splunk que admite:
 - Actualización de alertas en Microsoft Defender para punto de conexión desde Splunk
 
 Para obtener más información sobre el complemento de Microsoft 365 Defender para Splunk, consulte [splunkbase](https://splunkbase.splunk.com/app/4959/).
+
+### <a name="datadog"></a>Datadog
+
+Microsoft 365 Defender para la integración de puntos de conexión con Datadog admite:
+
+- Ingesta Microsoft Defender para punto de conexión alertas e incidentes
+- Paneles que habilitan la supervisión de métricas entre puntos de conexión, amenazas y vulnerabilidades y software
+
+Para obtener más información sobre la integración, consulte [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 

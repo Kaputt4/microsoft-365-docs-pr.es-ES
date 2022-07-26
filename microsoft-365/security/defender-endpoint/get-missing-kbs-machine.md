@@ -1,7 +1,7 @@
 ---
 title: Obtención de KB que faltan por identificador de dispositivo
 description: Recupera las actualizaciones de seguridad que faltan por identificador de dispositivo
-keywords: apis, graph api, api admitidas, get, list, file, information, device id, threat & administración de vulnerabilidades api, Microsoft Defender para punto de conexión tvm api
+keywords: apis, graph api, api admitidas, get, list, file, information, device id, threat & vulnerability management api, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a570851263b6a52193353e2c229e2df47b677e3
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2d8200d93b3cab7acff237113a2c98d8571be1a7
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840329"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020129"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtención de KB que faltan por identificador de dispositivo
 
@@ -32,6 +32,8 @@ ms.locfileid: "65840329"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,9 +58,9 @@ Aplicación | Software.Read.All | "Leer la información del software de administ
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 

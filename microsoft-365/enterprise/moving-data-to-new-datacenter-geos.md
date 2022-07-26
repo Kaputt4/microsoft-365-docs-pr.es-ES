@@ -1,5 +1,5 @@
 ---
-title: Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos
+title: Traslado de datos principales a nuevas geoáreas del centro de datos de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,23 +15,23 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 geos del centro de datos y cómo usar la opción de residencia de datos para solicitar el traslado de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873586"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020393"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Traslado de datos principales a nuevas Microsoft 365 geoáreas del centro de datos
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Traslado de datos principales a nuevas geoáreas del centro de datos de Microsoft 365
 
 Seguimos abriendo nuevas zonas geográficas del centro de datos para los servicios de Microsoft 365. Estas nuevas zonas geográficas del centro de datos agregan recursos de capacidad y proceso para dar soporte a nuestro crecimiento continuo de la demanda y el uso de los clientes. Además, las nuevas zonas geográficas del centro de datos ofrecen residencia de datos en la ubicación geográfica para los datos principales de los clientes.
 
 Los datos principales del cliente son un término que hace referencia a un subconjunto de datos de clientes, incluidos:
 
 - Exchange Online contenido del buzón (cuerpo del correo electrónico, entradas de calendario y contenido de datos adjuntos de correo electrónico)
-- SharePoint contenido del sitio en línea y los archivos almacenados en ese sitio
+- Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la Empresa
-- Teams mensajes de chat, incluidos mensajes privados, mensajes de canal e imágenes usadas en chats
+- Mensajes de chat de Teams, incluidos mensajes privados, mensajes de canal e imágenes que se usan en chats
   
 Los clientes existentes que tienen sus datos principales de cliente almacenados en una geolocalía de centro de datos ya existente no se ven afectados por el lanzamiento de una nueva ubicación geográfica del centro de datos. No presentamos funcionalidades, características ni certificaciones de cumplimiento únicos con la nueva ubicación geográfica del centro de datos. Como cliente en cualquiera de esas dos zonas geográficas, experimentará la misma calidad de servicio, rendimiento y controles de seguridad que antes. Ofrecemos a los clientes existentes que aparecen en la tabla siguiente una opción para solicitar la migración temprana de los datos principales de clientes de su organización en reposo a su nueva ubicación geográfica del centro de datos.
   
@@ -51,6 +51,7 @@ Los clientes existentes que tienen sus datos principales de cliente almacenados 
 |**Noruega**| Unión Europea | Noruega | Abril de 2020 |
 |**Brasil**| América | Brasil | Noviembre de 2020 |
 |**Suecia**| Unión Europea | Suecia | Noviembre de 2021 |
+|**Catar**| Unión Europea | Catar | Agosto de 2022 |
 
 A partir del 1 de octubre de 2020, los clientes con una suscripción Office 365 Educación incluida en el inquilino no son aptos para la migración.
 
@@ -58,7 +59,7 @@ Hay disponible una lista completa de todas las zonas geográficas del centro de 
   
 ## <a name="data-residency-option"></a>Opción de residencia de datos
 
-Proporcionamos una opción de residencia de datos para los clientes elegibles Microsoft 365 que están cubiertos por las zonas geográficas del centro de datos enumeradas en la tabla anterior. Con esta opción, los clientes aptos con requisitos de residencia de datos pueden solicitar la migración de los datos principales del cliente de su organización en reposo a su nueva ubicación geográfica del centro de datos.  Microsoft ofrecerá una fecha límite confirmada a todos los clientes aptos que soliciten la migración durante la ventana de inscripción.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más detalles sobre la ventana de inscripción abierta para la ubicación geográfica del centro de datos y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar en completarse hasta 24 meses tras el final del período de solicitud.
+Proporcionamos una opción de residencia de datos a los clientes aptos de Microsoft 365 que están cubiertos por las zonas geográficas del centro de datos enumeradas en la tabla anterior. Con esta opción, los clientes aptos con requisitos de residencia de datos pueden solicitar la migración de los datos principales del cliente de su organización en reposo a su nueva ubicación geográfica del centro de datos.  Microsoft ofrecerá una fecha límite confirmada a todos los clientes aptos que soliciten la migración durante la ventana de inscripción.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más detalles sobre la ventana de inscripción abierta para la ubicación geográfica del centro de datos y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar en completarse hasta 24 meses tras el final del período de solicitud.
 
 No presentamos funcionalidades, características ni certificaciones de cumplimiento únicos con la nueva ubicación geográfica del centro de datos.
 
@@ -78,4 +79,4 @@ Los movimientos de datos a la nueva ubicación geográfica del centro de datos s
   
 [Servicios de Azure por región](https://azure.microsoft.com/regions/)
 
-[Teams experiencia en un inquilino Microsoft 365 multigeográficamente habilitado](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Experiencia de Teams en un inquilino habilitado para varias zonas geográficas de Microsoft 365](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

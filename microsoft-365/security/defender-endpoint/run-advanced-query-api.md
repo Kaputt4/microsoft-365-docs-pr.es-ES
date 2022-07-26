@@ -1,7 +1,7 @@
 ---
 title: API de Búsqueda avanzada de amenazas
 ms.reviewer: ''
-description: Aprenda a usar la API de búsqueda avanzada para ejecutar consultas avanzadas en Microsoft Defender para endpoint. Descubra las limitaciones y vea un ejemplo.
+description: Aprenda a usar la API de búsqueda avanzada para ejecutar consultas avanzadas en Microsoft Defender para punto de conexión. Obtenga información sobre las limitaciones y vea un ejemplo.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e5898c0227128c099c7f0fe1ca99a6d9c8001ef
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283082"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020635"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -37,9 +37,12 @@ ms.locfileid: "61283082"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+> [!NOTE]
+> Esta API solo puede consultar tablas que pertenecen a Microsoft Defender para punto de conexión. Las tablas que pertenecen a otros servicios de Microsoft 365 Defender requieren el uso de Microsoft 365 Defender [API de búsqueda avanzada](/microsoft-365/security/defender/api-advanced-hunting).
+
 ## <a name="limitations"></a>Limitaciones
 
-1. Solo puede ejecutar una consulta de datos de los últimos 30 días.
+1. Solo puede ejecutar una consulta en los datos de los últimos 30 días.
 
 2. Los resultados incluirán un máximo de 100 000 filas.
 
@@ -51,22 +54,22 @@ ms.locfileid: "61283082"
 
 5. La respuesta 429 representará alcanzar el límite de cuota por número de solicitudes o por CPU. Lea el cuerpo de la respuesta para comprender qué límite se ha alcanzado.
 
-6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, HTTP 400 Bad Request con el mensaje "La ejecución de la consulta ha excedido el tamaño de resultado permitido. Optimizar la consulta limitando la cantidad de resultados e intentarlo de nuevo" aparecerá.
+6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, la solicitud HTTP 400 no es correcta con el mensaje "La ejecución de consultas ha superado el tamaño de resultado permitido. Optimizar la consulta limitando la cantidad de resultados e inténtelo de nuevo" aparecerá.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|AdvancedQuery.Read.All|'Ejecutar consultas avanzadas'
-Delegado (cuenta profesional o educativa)|AdvancedQuery.Read|'Ejecutar consultas avanzadas'
+Aplicación|AdvancedQuery.Read.All|"Ejecutar consultas avanzadas"
+Delegado (cuenta profesional o educativa)|AdvancedQuery.Read|"Ejecutar consultas avanzadas"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener el rol de AD "Ver datos"
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener el rol "Ver datos" de AD
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -81,17 +84,17 @@ Encabezado|Valor
 Authorization|Portador {token}. **Necesario**.
 Content-Type|application/json
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
 Parámetro|Tipo|Descripción
 :---|:---|:---
-Consulta|Texto|Consulta que se debe ejecutar. **Necesario**.
+Query|Text|Consulta que se va a ejecutar. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve 200 Ok y _el objeto QueryResponse_ en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 200 OK y el objeto _QueryResponse_ en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 
@@ -159,6 +162,6 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a las API de Microsoft Defender para puntos de conexión](apis-intro.md)
-- [Búsqueda avanzada desde portal](advanced-hunting-query-language.md)
+- [Introducción a las API de Microsoft Defender para punto de conexión](apis-intro.md)
+- [Búsqueda avanzada desde el portal](advanced-hunting-query-language.md)
 - [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)

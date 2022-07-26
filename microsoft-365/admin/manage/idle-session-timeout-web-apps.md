@@ -11,16 +11,19 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Establezca cuánto tiempo durará la sesión del usuario en Microsoft 365 antes de que se agote el tiempo de espera.
-ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756635"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019931"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Tiempo de espera de sesión inactiva para Microsoft 365
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> El tiempo de espera de la sesión inactiva no está disponible para Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
 
 Use el tiempo de espera de la sesión inactiva para configurar una directiva sobre cuánto tiempo los usuarios están inactivos en su organización antes de que se agote la sesión de las aplicaciones web de Microsoft 365. Esto ayuda a proteger los datos confidenciales de la empresa y agrega otro nivel de seguridad para los usuarios finales que trabajan en dispositivos no corporativos o compartidos.
 
@@ -74,10 +77,7 @@ Cuando un usuario ha estado inactivo en aplicaciones web de Microsoft 365 durant
 
 - En estos casos, los usuarios no podrán iniciar sesión.
     - Si obtienen el inicio de sesión único (SSO) en la aplicación web desde la cuenta unida al dispositivo o si selecciona **Mantener la sesión iniciada** en el momento del inicio de sesión. Para obtener más información sobre cómo ocultar esta opción para su organización, consulte [Agregar personalización de marca a la página de inicio de sesión de su organización](/azure/active-directory/fundamentals/customize-branding).
-    - Si están en un dispositivo administrado (uno que es compatible o unido a un dominio) y usa un explorador compatible como Microsoft Edge o Google Chrome (con la [extensión Cuentas de Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Para que esta característica no se desencadene en un dispositivo administrado, se requiere una suscripción de Azure AD Premium P1 o P2 apta y una directiva de acceso condicional específica. Consulte a continuación para obtener más detalles.
-
-> [!IMPORTANT]
-> El tiempo de espera de la sesión inactiva no está disponible para Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
+    - Si están en un dispositivo administrado (uno que es compatible o unido a un dominio) y usa un explorador compatible como Microsoft Edge o Google Chrome (con la [extensión Cuentas de Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Para que esta característica se desencadene en un dispositivo no administrado, se requiere una suscripción de Azure AD Premium P1 o P2 apta y una directiva de acceso condicional específica. Consulte a continuación para obtener más detalles.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Tiempo de espera de sesión inactiva en dispositivos no administrados  
 

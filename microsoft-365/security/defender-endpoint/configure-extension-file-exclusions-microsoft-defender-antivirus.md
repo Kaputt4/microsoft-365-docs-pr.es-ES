@@ -7,19 +7,20 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720487"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020431"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -30,9 +31,10 @@ ms.locfileid: "66720487"
 - Antivirus de Microsoft Defender
 
 **Plataformas**
+
 - Windows
 
-Puede definir exclusiones para antivirus de Microsoft Defender que se aplican a [exámenes programados](schedule-antivirus-scans.md), [exámenes a petición](run-scan-microsoft-defender-antivirus.md) y [protección y supervisión siempre activadas en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md). **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
+Puede definir exclusiones para antivirus de Microsoft Defender que se aplican a [exámenes programados](schedule-antivirus-scans.md), [exámenes a petición](run-scan-microsoft-defender-antivirus.md) y [protección y supervisión siempre activadas en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md). **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre lo siguiente:
 
 - Exclusiones basadas en extensiones de archivo y ubicaciones de carpeta (descritas en este artículo)
 - [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -73,9 +75,9 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 
 - No excluya las unidades de red asignadas. Especifique la ruta de acceso de red real.
 
-- Las carpetas que son puntos de reanálisis que se crean después de que se inicie el servicio Antivirus de Microsoft Defender y que se hayan agregado a la lista de exclusión no se incluirán. Reinicie el servicio (reiniciando Windows) para que los nuevos puntos de reanálisis se reconozcan como un destino de exclusión válido.
+- Las carpetas que son puntos de reanálisis se crean después de que se inicie el servicio Antivirus de Microsoft Defender y las que se hayan agregado a la lista de exclusión no se incluirán. Reinicie el servicio reiniciando Windows para que los nuevos puntos de reanálisis se reconozcan como un destino de exclusión válido.
 
-- Las exclusiones se aplican a [los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [a los exámenes a petición](run-scan-microsoft-defender-antivirus.md) y a la [protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md), pero no a defender para punto de conexión. Para definir exclusiones en Defender para punto de conexión, use [indicadores personalizados](manage-indicators.md).
+- Las exclusiones se aplican a [los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [a los exámenes a petición](run-scan-microsoft-defender-antivirus.md) y a la [protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md), pero no a todas las funcionalidades de Defender para punto de conexión. Para definir exclusiones en Defender para punto de conexión, use [indicadores personalizados](manage-indicators.md).
 
 - De forma predeterminada, los cambios locales realizados en las listas (por los usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por directiva de grupo, Configuration Manager o Intune. Las listas de directiva de grupo tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con directiva de grupo son visibles en la [aplicación de Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
@@ -103,7 +105,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
+2. En directiva de grupo **Editor de administración**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol a **componentes** \> **de Windows Antivirus de Windows Defender** \> **Exclusiones**.
 
@@ -130,7 +132,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 
 ### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>Uso de cmdlets de PowerShell para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
-El uso de PowerShell para agregar o quitar exclusiones de archivos basados en la extensión, la ubicación o el nombre de archivo requiere usar una combinación de tres cmdlets y el parámetro de lista de exclusión adecuado. Los cmdlets están todos en el [módulo de Defender](/powershell/module/defender/).
+El uso de PowerShell para agregar o quitar exclusiones de archivos en función de la extensión, ubicación o nombre de archivo requiere usar una combinación de tres cmdlets y el parámetro de lista de exclusión adecuado. Los cmdlets están todos en el [módulo de Defender](/powershell/module/defender/).
 
 El formato de los cmdlets es el siguiente:
 
@@ -151,7 +153,7 @@ En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion l
 |Tipo de exclusión|Parámetro de PowerShell|
 |---|---|
 |Todos los archivos con una extensión de archivo especificada|`-ExclusionExtension`|
-|Todos los archivos de una carpeta (incluidos los archivos en subdirectorios) o un archivo específico|`-ExclusionPath`|
+|Todos los archivos de una carpeta (incluidos los archivos de los subdirectorios) o un archivo específico|`-ExclusionPath`|
 
 > [!IMPORTANT]
 > Si ha creado una lista, con `Set-MpPreference` o `Add-MpPreference`, el uso del `Set-MpPreference` cmdlet volverá a sobrescribir la lista existente.
@@ -202,7 +204,7 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 |Carácter comodín|Ejemplos|
 |---|---|
-|`*` (asterisco) <p> En **las inclusiones de nombre de archivo y extensión de archivo**, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento . <p> En **las exclusiones de carpetas**, el asterisco reemplaza a una sola carpeta. Use varias `*` con barras diagonales `\` de carpeta para indicar varias carpetas anidadas. Después de coincidir con el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` Incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo en `C:\somepath\Archives\Data` y sus subcarpetas, y `C:\somepath\Authorized\Data` sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo en `C:\Serv\Primary\Denied\Backup` y sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
+|`*` (asterisco) <p> En **las inclusiones de nombre de archivo y extensión de archivo**, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento . <p> En **las exclusiones de carpetas**, el asterisco reemplaza a una sola carpeta. Use varias `*` con barras diagonales `\` de carpeta para indicar varias carpetas anidadas. Después de coincidir con el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` Incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo en `C:\somepath\Archives\Data` y sus subcarpetas, y `C:\somepath\Authorized\Data` sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo en `C:\Serv\Primary\Denied\Backup` y sus subcarpetas, y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
 |`?` (signo de interrogación)  <p> En **las inclusiones de nombre de archivo y extensión de archivo**, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento . <p> En **las exclusiones de carpetas**, el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de coincidir con el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\my?.zip` Incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas|
 |Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión.|`%ALLUSERSPROFILE%\CustomLogFiles` incluiría `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -219,7 +221,7 @@ En la tabla siguiente se enumeran y describen las variables de entorno de la cue
 
 |Esta variable de entorno del sistema...|Redirige a este|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -275,10 +277,10 @@ En la tabla siguiente se enumeran y describen las variables de entorno de la cue
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>Revisar la lista de exclusiones
 
@@ -291,10 +293,10 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los mét
 - [Aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Los cambios en la lista de exclusión realizados con directiva de grupo **se mostrarán** en las listas de la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
+> Los cambios en la lista de exclusión realizados con directiva de grupo **se mostrarán** en las listas de [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 > Los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de directiva de grupo.
 
-Si usa PowerShell, puede recuperar la lista de dos maneras:
+Si usa PowerShell, puede recuperar la lista de las dos maneras siguientes:
 
 - Recupere el estado de todas las preferencias del Antivirus de Microsoft Defender. Cada lista se muestra en líneas independientes, pero los elementos de cada lista se combinan en la misma línea.
 - Escriba el estado de todas las preferencias en una variable y use esa variable para llamar solo a la lista específica que le interesa. Cada uso de `Add-MpPreference` se escribe en una nueva línea.
