@@ -1,5 +1,5 @@
 ---
-title: Comparación de planes de seguridad de puntos de conexión de Microsoft
+title: Comparar planes de seguridad de puntos de conexión de Microsoft
 description: Compare los planes de seguridad de puntos de conexión de Microsoft, como Defender para el plan de punto de conexión 1, con Defender para el plan de punto de conexión 2. Obtenga información sobre las diferencias entre los planes y seleccione el plan que se adapte a las necesidades de su organización.
 keywords: Defender for Endpoint, advanced threat protection, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150
@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 07/14/2022
+ms.date: 07/25/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,14 +17,14 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 78d5e0c8b3b8405dcd4e0a33b315e000d661b7f4
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843487"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004483"
 ---
-# <a name="compare-microsoft-endpoint-security-plans"></a>Comparación de planes de seguridad de puntos de conexión de Microsoft
+# <a name="compare-microsoft-endpoint-security-plans"></a>Comparar planes de seguridad de puntos de conexión de Microsoft
 
 Los planes de seguridad de los puntos de conexión de Microsoft, como Microsoft Defender para punto de conexión y Microsoft 365 Defender, se diseñaron para ayudar a las organizaciones empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Microsoft Defender para Empresas y Microsoft 365 Empresa Premium proporcionan funcionalidades similares, optimizadas para pequeñas y medianas empresas. Estos planes proporcionan protección contra amenazas avanzada con protección antivirus y antimalware, mitigación de ransomware, etc., junto con la administración centralizada y la generación de informes. 
 
@@ -32,24 +32,21 @@ Este artículo ayuda a aclarar lo que se incluye en los siguientes planes:
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
-- [Microsoft 365 Empresa Premium](../../business-premium/index.md)
+- [complemento Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md) y [Microsoft 365 Empresa Premium](../../business-premium/index.md)
 
 > [!IMPORTANT]
 > En este artículo se proporciona un resumen de las funcionalidades de protección contra amenazas en los planes de seguridad de puntos de conexión de Microsoft; sin embargo, no está pensado para ser una descripción del servicio o un documento de contrato de licencia. Para obtener información más detallada, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="compare-microsoft-endpoint-security-plans"></a>Comparación de planes de seguridad de puntos de conexión de Microsoft
+## <a name="compare-microsoft-endpoint-security-plans"></a>Comparar planes de seguridad de puntos de conexión de Microsoft
 
 En la tabla siguiente se resume lo que se incluye en los planes de seguridad de puntos de conexión de Microsoft.
 
 | Plan | ¿Qué se incluye? |
 |:---|:---|
-| [Microsoft 365 Defender](../defender/microsoft-365-defender.md) | Los servicios incluyen: <ul><li>[Plan 2 de Defender para punto de conexión](microsoft-defender-endpoint.md)</li><li>[Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md)</li><li>[Microsoft Defender para Office 365](../office-365-security/overview.md)</li><li>[Microsoft Defender for Identity](/defender-for-identity/)</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/)</li></ul>|
 | [Plan 1 de Defender para punto de conexión](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) (incluye antimalware y antivirus)</li><li>[Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Acciones de contestación manual](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Administración centralizada](defender-endpoint-plan-1.md#centralized-management)</li><li>[Informes de seguridad](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Compatibilidad con dispositivos Windows 10, iOS, Android OS y macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
 | [Plan 2 de Defender para punto de conexión](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | Todas las funcionalidades del plan 1 de Defender para punto de conexión, además de:<ul><li>[Detección de dispositivo](device-discovery.md)</li><li>[Inventario de dispositivos](machines-view-overview.md)</li><li>[Funcionalidades de administración de vulnerabilidades de Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Análisis de amenazas](threat-analytics.md)</li><li>[Investigación y respuesta automatizadas](automated-investigations.md)</li><li>[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)</li><li>[EDR](overview-endpoint-detection-response.md)</li><li>[Expertos en amenazas de Microsoft](microsoft-threat-experts.md)</li><li>Compatibilidad con [Windows](configure-endpoints.md) (cliente y servidor) y [plataformas que no son de Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android y Linux)</li></ul> |
-| [Complemento de Administración de vulnerabilidades de Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Funcionalidades adicionales de Administración de vulnerabilidades de Defender para El plan 2 de Defender para punto de conexión:<ul><li>[Evaluación de líneas base de seguridad](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquear aplicaciones vulnerables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensiones del explorador](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Evaluación de certificados digitales](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Análisis de recursos compartidos de red](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Compatibilidad con [Windows](configure-endpoints.md) (cliente y servidor) y [plataformas que no son de Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android y Linux)</li></ul> |
+| [Complemento de Administración de vulnerabilidades de Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Más funcionalidades de Administración de vulnerabilidades de Defender para Defender para el plan de punto de conexión 2:<ul><li>[Evaluación de líneas base de seguridad](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquear aplicaciones vulnerables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensiones del explorador](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Evaluación de certificados digitales](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Análisis de recursos compartidos de red](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Compatibilidad con [Windows](configure-endpoints.md) (cliente y servidor) y [plataformas que no son de Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android y Linux)</li></ul> |
 | [Defender para empresas](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup> <br/>y<br/>[Microsoft 365 Empresa Premium](../../business-premium/index.md) | [Los servicios optimizados para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md) incluyen: <ul><li>protección Email</li><li>Protección contra correo no deseado</li><li>Protección antimalware</li><li>Protección de última generación</li><li>Reducción de la superficie expuesta a ataques</li><li>Detección y respuesta de puntos de conexión</li><li>Investigación y respuesta de amenazas </li><li>Administración de amenazas y vulnerabilidades.</li><li>Informes centralizados</li><li>API (para la integración con aplicaciones personalizadas o soluciones de informes)</li><li>[Integración con Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
 (<a id="fn1">1</a>) Microsoft Defender para punto de conexión Plan 1 está disponible como una suscripción independiente para clientes comerciales y educativos. También se incluye como parte de Microsoft 365 E3/A3.
@@ -66,10 +63,10 @@ En la tabla siguiente se resume lo que se incluye en los planes de seguridad de 
 
 ## <a name="options-for-onboarding-servers"></a>Opciones para la incorporación de servidores
 
-Las versiones independientes de Defender para empresas, Defender para el plan 1 y 2 de punto de conexión y Microsoft 365 Empresa Premium no incluyen licencias de servidor. Para incorporar servidores, elija entre las siguientes opciones:
+Los planes 1 y 2 de Defender para punto de conexión (independiente), Defender para la empresa (independiente) y Microsoft 365 Empresa Premium no incluyen licencias de servidor. Para incorporar servidores, elija entre las siguientes opciones:
 
 - **Microsoft Defender para servidores Plan 1 o Plan 2** como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
-- **Microsoft Defender para Empresas servidores (versión preliminar)** para pequeñas y medianas empresas. Consulte [Obtención de servidores Microsoft Defender para Empresas (versión preliminar).](../defender-business/get-defender-business-servers.md)
+- **Microsoft Defender para Empresas servidores (versión preliminar)** para pequeñas y medianas empresas. Consulta [Cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar).](../defender-business/get-defender-business-servers.md)
 
 ## <a name="mixed-licensing-scenarios"></a>Escenarios de licencias mixtas
 

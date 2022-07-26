@@ -19,55 +19,70 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener el informe de uso del buzón para averiguar los niveles de actividad de los usuarios con un buzón de usuario, así como información de almacenamiento y cuota para cada uno.
-ms.openlocfilehash: c30cb6e9cc593aba14902d81904f3e765faa4231
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 4df0859930d2fe8a11623a775c96454fd3c9aaa7
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663050"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004310"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del buzón
 
-El **informe de uso del buzón de correo** proporciona información sobre los usuarios con un buzón de usuario y el nivel de actividad de cada uno en función del envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión. También proporciona información sobre cuánto almacenamiento ha consumido cada buzón de usuario y cuántos de ellos se acercan a las cuotas de almacenamiento. 
+El **informe de uso del buzón de correo** proporciona información sobre los usuarios con un buzón de usuario y el nivel de actividad de cada uno en función del envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión. También proporciona información sobre cuánto almacenamiento ha consumido cada buzón de usuario y cuántos de ellos se acercan a las cuotas de almacenamiento. El informe de uso del buzón también contiene información sobre los buzones compartidos entre los usuarios, lo que proporciona datos de almacenamiento y cuota en buzones compartidos.
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Cómo obtener el informe de uso del buzón
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
-2. Seleccione **Ver más** en **Actividad de correo electrónico**. 
-3. En la lista desplegable **Actividad de correo electrónico**, seleccione **Uso del buzón de** **Exchange**\>.
+2. Seleccione **Ver más** en **Email actividad**. 
+3. En la lista desplegable **Email actividad**, seleccione **Uso del buzón de** **Exchange**\>.
 
-## <a name="interpret-the-mailbox-usage-report"></a>Interpretar el informe de uso del buzón
+## <a name="interpret-the-mailbox-usage-report"></a>Interpretación del informe de uso del buzón
 
-Para obtener una vista del **Uso del buzón** de la organización, consulte los gráficos **Buzón**, **Almacenamiento** y **Cuota**.
+Puede obtener una vista del uso del buzón de su organización examinando los gráficos **Buzón**, **Almacenamiento** y **Cuota** .
+
+Para acceder a la información del buzón compartido, cambie la selección desplegable de la parte superior derecha de los gráficos a **Compartido**.  Si el inquilino no tiene buzones compartidos, no podrá ver ninguna información de buzón compartido.  Tenga en cuenta también que si ha optado por ver gráficos compartidos, actualmente no podrá exportar la información del gráfico. Se trata de un problema conocido y se corregirá en una iteración futura.
   
 :::image type="content" alt-text="Informe de uso del buzón de correo." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
 Puede visualizar el informe **Uso del buzón** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe). Los datos de cada informe suelen cubrir hasta las últimas 24 a 48 horas.
 
-El gráfico **Buzón de correo** muestra el número total de buzones de usuario de su organización y el número total que están activos en cualquier día determinado del período de informes. Un buzón de usuario se considera activo si tenía un correo electrónico de envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión.
+### <a name="the-mailbox-chart"></a>Gráfico de buzones
 
-El gráfico **Almacenamiento** muestra la cantidad de almacenamiento usado en su organización. El gráfico de almacenamiento no incluye buzones de archivo. Para obtener más información sobre el archivado de expansión automática, consulte [Introducción al archivado de expansión automática en Microsoft 365](../../compliance/autoexpanding-archiving.md).
+En el gráfico **Buzón de correo** se muestra el número total de buzones de usuario o compartidos de la organización y el número total que están activos en un día determinado del período de informe. Un usuario o buzón compartido se considera activo si tenía un correo electrónico de envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión.
 
-El gráfico **Cuota** muestra el número de buzones de usuario en cada categoría de cuota. Hay cuatro categorías de cuota: 
-- Bueno: el número de usuarios cuyo almacenamiento usado está por debajo de la cuota de "advertencia de problema".
-- Advertencia: el número de usuarios cuyo almacenamiento usado está en o por encima de la cuota de "advertencia de problema", pero por debajo de la cuota "prohibir envío".
-- No se puede enviar: el número de usuarios cuyo almacenamiento usado está en o por encima de la cuota de prohibición de envío, pero por debajo de la cuota de prohibición de envío y recepción.
-- No se puede enviar o recibir: el número de usuarios cuyo almacenamiento usado está en la cuota "prohibir envío/recepción" o superior.
+En el gráfico buzón de correo:
+- El eje Y es el número de buzones de usuario o compartidos. 
+- El eje X es el intervalo de fechas seleccionado para este informe específico.
 
-En el gráfico Buzón, el eje Y es el número de buzones de usuario. 
+### <a name="the-storage-chart"></a>Gráfico de almacenamiento
 
-En el gráfico Almacenamiento, el eje Y es la cantidad de almacenamiento que usan los buzones de usuario de la organización.
+El gráfico **Almacenamiento** muestra la cantidad de almacenamiento que se usa en la organización por tipo de buzón de correo. El gráfico de almacenamiento no incluye buzones de archivo. Para obtener más información sobre el archivado de expansión automática, consulte [Introducción al archivado de expansión automática en Microsoft 365](../../compliance/autoexpanding-archiving.md).
 
-El eje X de los gráficos Buzón y Almacenamiento es el intervalo de fechas seleccionado para este informe específico.
+En el gráfico almacenamiento:
+- El eje Y es la cantidad de almacenamiento que usan los buzones de usuario o compartidos de la organización.
+- El eje X es el intervalo de fechas seleccionado para este informe específico.
 
-En el gráfico Cuota, el eje Y es el número de buzones de usuario en cada cuota de almacenamiento. Y el eje X es la categoría de cuota.
+### <a name="the-quota-chart"></a>Gráfico de cuota
+
+El gráfico **Cuota** muestra el número de buzones de usuario o compartidos en cada categoría de cuota. Hay cuatro categorías de cuota: 
+- Bueno: el número de usuarios o buzones compartidos cuyo almacenamiento usado está por debajo de la cuota de "advertencia de problema".
+- Advertencia: el número de usuarios o buzones compartidos cuyo almacenamiento usado está en o por encima de la cuota de "advertencia de problema", pero por debajo de la cuota "prohibir envío".
+- No se puede enviar: el número de usuarios o buzones compartidos cuyo almacenamiento usado está en o por encima de la cuota de prohibición de envío, pero por debajo de la cuota de prohibición de envío y recepción.
+- No se puede enviar o recibir: el número de usuarios o buzones compartidos cuyo almacenamiento usado está en o por encima de la cuota de "prohibir envío/recepción".
+
+En el gráfico Cuota:
+- El eje Y es el número de buzones de usuario o compartidos en cada cuota de almacenamiento.
+- El eje X es la categoría de cuota.
 
 Puede filtrar los gráficos que ve seleccionando un elemento en la leyenda.
 
-En la tabla se muestra un desglose del uso del buzón en el nivel de usuario. Puede agregar columnas adicionales a la tabla. 
+## <a name="mailbox-usage-per-mailbox-table"></a>Uso de buzones por tabla de buzón
 
-|Item|Descripción|
+En esta tabla se muestra un desglose del uso del buzón en el nivel por buzón. Puede agregar columnas adicionales a la tabla. 
+
+|Elemento|Descripción|
 |:-----|:-----|
+|Tipo de destinatario |Compartido o Usuario. |
 |Nombre de usuario |La dirección de correo electrónico del usuario. |
 |Nombre para mostrar  |Nombre completo del usuario. |
 |Deleted |Buzón cuyo estado actual se elimina, pero que estaba activo durante alguna parte del período de informes del informe.|
@@ -85,7 +100,7 @@ En la tabla se muestra un desglose del uso del buzón en el nivel de usuario. Pu
 |Tiene archivo|Muestra si el buzón tiene habilitado un archivo en línea. |
 
 
-Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **Ocultar los detalles del usuario en la sección de informes** de [Informes de actividad en el Centro de administración de Microsoft 365](activity-reports.md.
+Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **Ocultar los detalles del usuario en la** sección [informes de informes de actividad de la Centro de administración de Microsoft 365](activity-reports.md).
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> :::image type="content" alt-text="Informe de uso del buzón: elija columnas." source="../../media/ea3d0b18-6ac6-41b0-9bb9-4844f040ea75.png":::
 
