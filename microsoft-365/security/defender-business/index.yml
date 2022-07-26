@@ -14,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: b4862dee1c790e2a0b16975b48df516f73d1a2d0
-  ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+  ms.openlocfilehash: 32746cbb20f9a05d5928449cd6076eb0fa3321f5
+  ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/14/2022
-  ms.locfileid: "66787790"
+  ms.lasthandoff: 07/25/2022
+  ms.locfileid: "67004504"
 landingContent:
 - title: Información general
   linkLists:
@@ -43,7 +43,7 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: 'Guía interactiva: Introducción a Defender para Empresas'
+    - text: 'Guía interactiva: introducción a Defender para Empresas'
       url: https://aka.ms/MDB-GetStartedGuide
     - text: Obtener Defender para Empresas
       url: get-defender-business.md

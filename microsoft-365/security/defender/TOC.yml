@@ -10,6 +10,8 @@
           href: microsoft-365-defender-portal.md
         - name: Novedades de Microsoft 365 Defender
           href: whats-new.md
+        - name: Características en versión preliminar de Microsoft 365 Defender
+          href: preview.md
         - name: "Las API de Microsoft\_365 Defender"
           items:
             - name: Microsoft Defender para punto de conexión en Microsoft 365 Defender
@@ -384,6 +386,8 @@
               href: m365d-time-zone.md
             - name: Ver perfiles de dispositivo
               href: device-profile.md
+            - name: Solución de problemas del servicio Microsoft 365 Defender
+              href: troubleshoot.md
             - name: Enviar comentarios
               href: feedback.md
             - name: Proporcionar acceso de proveedor de servicios administrados (MSSP)

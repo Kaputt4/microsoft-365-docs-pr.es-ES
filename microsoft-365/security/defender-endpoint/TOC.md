@@ -16,6 +16,7 @@
 #### [Mantenimiento y funcionamiento](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU](gov.md)
 ### [Microsoft Defender para punto de conexión en plataformas que no sean de Windows](non-windows.md)
+### [Compatibilidad de soluciones antivirus con Defender para punto de conexión](defender-compatibility.md)
 
 
 ## [Funcionalidades de evaluación](evaluation-lab.md)
@@ -203,6 +204,7 @@
 
 #### [Permisos]()
 ##### [Uso de permisos básicos para acceder al portal](basic-permissions.md)
+##### [Asignar el acceso de usuario al Centro de seguridad de Microsoft Defender](assign-portal-access.md)
 ##### [Administrar el acceso al portal con RBAC](rbac.md)
 ###### [Crear y administrar roles](user-roles.md)
 ###### [Crear y administrar grupos de dispositivos](machine-groups.md)
@@ -256,8 +258,9 @@
 ###### [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+##### [Solucionar de problemas de reglas de reducción de la superficie expuesta a ataques (ASR)](troubleshoot-asr-rules.md)
 ##### [Habilitar métodos de configuración alternativos de reglas de ASR](enable-attack-surface-reduction.md)
-##### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
+#### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 #### [Acceso controlado a carpetas]()
 ##### [Proteger carpetas](controlled-folders.md)
 ##### [Evaluar acceso controlado a carpetas](evaluate-controlled-folder-access.md)
@@ -292,6 +295,7 @@
 ### Protección de última generación
 #### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
 ##### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
+##### [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluar Antivirus de Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
@@ -302,6 +306,7 @@
 ##### [Especificar el nivel de protección en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [Protección en la nube y envío de muestra](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)
+#### [Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md)
 #### [Configuración de seguridad de la protección con protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Activar el bloqueo a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [Configurar el período de espera de bloqueo en la nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
@@ -335,6 +340,7 @@
 ##### [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 ##### [Especificar si los usuarios pueden modificar localmente la configuración de directiva del Antivirus de Microsoft Defender](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 ##### [Especificar si los usuarios pueden ver o interactuar con la interfaz de usuario del Antivirus de Windows Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+##### [Activar la retirada de definiciones](turn-on-definition-retirement.md)
 
 #### [Implementación e informe en el Antivirus de Windows Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Implementación y habilitación en el Antivirus de Windows Defender](deploy-microsoft-defender-antivirus.md)
@@ -362,6 +368,8 @@
 ##### [Informes de cumplimiento y mantenimiento del dispositivo](machine-reports.md)
 ##### [Solucionar problemas de rendimiento relacionados con la protección en tiempo real](troubleshoot-performance-issues.md) 
 ##### [Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones](troubleshoot-reporting.md)
+##### [Recopilación de datos de diagnóstico de Antivirus de Microsoft Defender](collect-diagnostic-data.md)
+##### [Recopilación de datos de diagnóstico para las actualizaciones de cumplimiento y Antivirus de Microsoft Defender](collect-diagnostic-data-update-compliance.md)
 ##### [Optimizar el rendimiento de Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
 
 #### Solución de problemas del Antivirus de Microsoft Defender
@@ -454,12 +462,14 @@
 #### [Descripción de AIR](automated-investigations.md)
 #### [Automatización de niveles de AIR](automation-levels.md)
 #### [Configurar las funciones de AIR](configure-automated-investigations-remediation.md)
+#### [Ver los detalles y los resultados de una investigación automatizada](autoir-investigation-results.md)
 
 ### [Expertos en amenazas de Microsoft]()
 #### [Información general sobre Expertos en amenazas de Microsoft](microsoft-threat-experts.md)
 #### [Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft](configure-microsoft-threat-experts.md)
 
-
+### [Protección de última generación]()
+#### [Ejecución y personalización de exámenes programados y a petición](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## Referencia
 ### [Comprender conceptos de inteligencia sobre amenazas](threat-indicator-concepts.md)
@@ -547,11 +557,13 @@
 ####### [Obtener máquina por id](get-machine-by-id.md)
 ####### [Obtener registro de máquina en usuarios](get-machine-log-on-users.md)
 ####### [Obtener alertas relacionadas con máquina](get-machine-related-alerts.md)
+####### [Obtener la API de recopilación de estados de seguridad de máquinas](get-machinesecuritystates-collection.md)
 ####### [Obtener software instalado](get-installed-software.md)
 ####### [Obtener las vulnerabilidades detectadas](get-discovered-vulnerabilities.md)
 ####### [Obtener recomendaciones de seguridad](get-security-recommendations.md)
 ####### [Agregar o quitar etiquetas de máquina](add-or-remove-machine-tags.md)
 ####### [Buscar máquinas por IP](find-machines-by-ip.md)
+####### [Buscar información del dispositivo por IP interna](find-machine-info-by-ip.md)
 ####### [Buscar equipos por etiqueta](find-machines-by-tag.md)
 ####### [Obtener los kB que faltan](get-missing-kbs-machine.md)
 ####### [Establecer valor de dispositivo](set-device-value.md)
@@ -607,6 +619,7 @@
 ####### [Enumerar máquinas por software](get-machines-by-software.md)
 ####### [Enumerar vulnerabilidades por software](get-vuln-by-software.md)
 ####### [Obtener los kB que faltan](get-missing-kbs-software.md)
+####### [Obtener API de colección de KB](get-machinegroups-collection.md)
 
 ###### [Usuario]()
 ####### [Métodos de usuario](user.md)
@@ -618,6 +631,8 @@
 ####### [Enumerar vulnerabilidades](get-all-vulnerabilities.md)
 ####### [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 ####### [Obtener vulnerabilidad por identificación](get-vulnerability-by-id.md)
+####### [Obtener API de mapa de CVE-KB](get-cvekbmap-collection.md)
+####### [Obtener API de colección de KB](get-kbinfo-collection.md)
 ####### [Enumerar máquinas por vulnerabilidad](get-machines-by-vulnerability.md)
 
 ##### [Cómo usar las API: Ejemplos]()
@@ -626,6 +641,7 @@
 ###### [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)
 ###### [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Uso de consultas OData](exposed-apis-odata-samples.md)
+###### [Búsqueda avanzada con la guía de la API de PowerShell](exposed-apis-full-sample-powershell.md)
 
 
 #### [API de streaming de datos sin procesar]()

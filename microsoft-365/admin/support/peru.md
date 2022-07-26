@@ -14,12 +14,12 @@ description: Obtenga información acerca de cómo ponerse en contacto con el sop
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: c2071336c7072e25374e05bd246bab03fca6cdc7
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61370769"
 ---
-# <a name="contact-support-for-peru"></a>Póngase en contacto con el soporte técnico para Perú
+# <a name="contact-support-for-peru"></a>Ponerse en contacto con el soporte técnico de México
 
 [Buscar otro país o región](../get-help-support.md).
 
