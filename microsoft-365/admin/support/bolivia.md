@@ -14,12 +14,12 @@ description: Obtenga información acerca de cómo ponerse en contacto con el sop
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: a1b3a3f65fd363625ae6a7e2ec01fd4a1b9d9355
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372833"
 ---
-# <a name="contact-support-for-bolivia"></a>Póngase en contacto con el soporte técnico de Bolivia
+# <a name="contact-support-for-bolivia"></a>Póngase en contacto con el servicio de soporte técnico para Bolivia
 
 [Buscar otro país o región](../get-help-support.md).
 
