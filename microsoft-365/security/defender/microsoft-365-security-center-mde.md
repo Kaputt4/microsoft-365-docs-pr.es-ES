@@ -2,7 +2,7 @@
 title: Microsoft Defender para punto de conexión en Microsoft 365 Defender
 description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender a Microsoft 365 Defender
 keywords: Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, MDO, MDE, portal de seguridad, portal de seguridad de Defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617202"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051522"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para punto de conexión en Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ Históricamente, el [Centro de seguridad de Microsoft Defender](/windows/securit
 Microsoft Defender para punto de conexión en Microsoft 365 Defender admite [la concesión de acceso a proveedores de servicios de seguridad administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) de la misma manera [que se concede acceso en el Centro de seguridad de Microsoft Defender](mssp-access.md).
 
 > [!IMPORTANT]
-> Lo que vea en Microsoft 365 Defender depende de las suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección Colaboración & correo electrónico.
+> Lo que vea en Microsoft 365 Defender depende de las suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección colaboración de Email &.
 
 > [!Note]
 > Microsoft 365 Defender no está disponible para:
@@ -116,7 +116,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 |---------|---------|
 | Informes  | Consulte los informes de puntos de conexión y correo electrónico & colaboración, incluida la protección contra amenazas, el estado y el cumplimiento de dispositivos y los dispositivos vulnerables. |
 | Mantenimiento  |  Actualmente se vincula a la página "Estado del servicio" del [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
-| Configuraciones |  Administre la configuración de Microsoft 365 Defender, puntos de conexión, colaboración de correo electrónico &, identidades y detección de dispositivos.   |
+| Configuración |  Administre la configuración de Microsoft 365 Defender, puntos de conexión, colaboración Email &, identidades y detección de dispositivos.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Navegación y funcionalidades de seguridad de Microsoft 365
 
@@ -172,7 +172,7 @@ Ver informes, cambiar la configuración y modificar roles de usuario.
 
 Si usa la [API SIEM de Defender para punto de conexión](../defender-endpoint/enable-siem-integration.md), puede seguir haciéndolo. Hemos agregado nuevos vínculos en la carga de la API que apuntan a la página de alertas o a la página de incidentes en el portal de seguridad de Microsoft 365. Los nuevos campos de API incluyen LinkToMTP e IncidentLinkToMTP. Para obtener más información, vea [Redirigir cuentas de Microsoft Defender para punto de conexión a Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
-### <a name="email-alerts"></a>Alertas por correo electrónico
+### <a name="email-alerts"></a>alertas de Email
 
 Puede seguir usando alertas de correo electrónico para Defender para punto de conexión. Hemos agregado nuevos vínculos en los correos electrónicos que apuntan a la página de alerta o a la página de incidentes de Microsoft 365 Defender. Para obtener más información, vea [Redirigir cuentas de Microsoft Defender para punto de conexión a Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 

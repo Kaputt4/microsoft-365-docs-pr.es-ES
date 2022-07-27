@@ -1,10 +1,10 @@
 ---
-title: Api de respuesta admitidas de Microsoft Defender para puntos de conexión
-description: Obtenga información sobre las llamadas específicas de Microsoft Defender para api de extremo relacionadas con la respuesta.
-keywords: apis de respuesta, api de gráfico, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo
+title: API de respuesta de Microsoft Defender para punto de conexión admitidas
+description: Obtenga información sobre las llamadas API Microsoft Defender para punto de conexión específicas relacionadas con la respuesta.
+keywords: response apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,26 +15,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dcf73669ab780ec23cbd5551039dc8c74f0502ef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8dd36e06b90726a01168ccd3ebf12886c127b101
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165815"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050972"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Api de consulta de extremo admitidas de Microsoft Defender
+# <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de consulta de Microsoft Defender para punto de conexión admitidas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-supported-response-apis-abovefoldlink)
 
-Obtenga información sobre las llamadas API relacionadas con la respuesta admitidas que puede ejecutar y detalles como los encabezados de solicitud necesarios y la respuesta esperada de las llamadas.
+Obtenga información sobre las llamadas API compatibles relacionadas con la respuesta que puede ejecutar y detalles como los encabezados de solicitud necesarios y la respuesta esperada de las llamadas.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -44,20 +44,20 @@ Obtenga información sobre las llamadas API relacionadas con la respuesta admiti
 
 |Tema|Descripción|
 |---|---|
-|Recopilar el paquete de investigación|Ejecute esta API para recopilar un paquete de investigación desde un dispositivo.|
+|Recopilar el paquete de investigación|Ejecute esta API para recopilar un paquete de investigación de un dispositivo.|
 |Aislar el dispositivo|Ejecute esta API para aislar un dispositivo de la red.|
-|Unisolate device|Quita un dispositivo del aislamiento.|
-|Restringir la ejecución del código|Ejecute esta API para contener un ataque deteniendo procesos malintencionados. También puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.|
-|Ejecución de código sin restricto|Ejecute esto para revertir la restricción de la directiva de aplicaciones después de comprobar que el dispositivo en peligro se ha corregido.|
-|Ejecutar examen de antivirus|Inicie de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.|
-|Detener y poner en cuarentena un archivo|Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.|
-|Solicitar ejemplo|Ejecute esta llamada para solicitar una muestra de un archivo desde un dispositivo específico. El archivo se recopilará desde el dispositivo y se cargará en un almacenamiento seguro.|
-|Bloquear archivo|Ejecute esta API para evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso.|
-|Desbloquear archivo|Permitir que un archivo se ejecute en la organización mediante Antivirus de Microsoft Defender.|
-|Obtener EL URI de SAS del paquete|Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.|
-|Obtener objeto MachineAction|Ejecute esta API para obtener el objeto MachineAction.|
-|Obtener colección MachineActions|Ejecute esto para obtener la colección MachineAction.|
-|Obtener colección FileActions|Ejecute esta API para obtener la colección FileActions.|
-|Obtener objeto FileMachineAction|Ejecute esta API para obtener el objeto FileMachineAction.|
-|Obtener colección FileMachineActions|Ejecute esta API para obtener la colección FileMachineAction.|
+|Dispositivo unisolate|Quite un dispositivo del aislamiento.|
+|Restringir la ejecución del código|Ejecute esta API para contener un ataque mediante la detención de procesos malintencionados. También puede bloquear un dispositivo e impedir que se ejecuten intentos posteriores de programas potencialmente malintencionados.|
+|Anulación de la ejecución del código|Ejecute esto para revertir la restricción de la directiva de aplicaciones después de comprobar que el dispositivo en peligro se ha corregido.|
+|Ejecutar examen de antivirus|Inicie de forma remota un examen antivirus para ayudar a identificar y corregir el malware que podría estar presente en un dispositivo en peligro.|
+|Detener y poner en cuarentena un archivo|Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena los archivos y eliminar la persistencia, como las claves del Registro.|
+|Solicitar ejemplo|Ejecute esta llamada para solicitar un ejemplo de un archivo desde un dispositivo específico. El archivo se recopilará del dispositivo y se cargará en un almacenamiento seguro.|
+|Bloquear archivo|Ejecute esta API para evitar la propagación de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o sospechas de malware.|
+|Desbloquear archivo|Permitir la ejecución de un archivo en la organización mediante el Antivirus de Microsoft Defender.|
+|Obtención del URI de SAS del paquete|Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.|
+|Get MachineAction (objeto)|Ejecute esta API para obtener el objeto MachineAction.|
+|Obtención de la colección MachineActions|Ejecute esta opción para obtener la colección MachineAction.|
+|Obtención de la colección FileActions|Ejecute esta API para obtener la colección FileActions.|
+|Obtención del objeto FileMachineAction|Ejecute esta API para obtener el objeto FileMachineAction.|
+|Obtención de la colección FileMachineActions|Ejecute esta API para obtener la colección FileMachineAction.|
 |

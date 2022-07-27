@@ -1,8 +1,8 @@
 ---
 title: Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP)
-description: Obtenga información sobre los cambios del Centro de seguridad de Microsoft Defender al portal de Microsoft 365 Defender
+description: Más información sobre los cambios de la Centro de seguridad de Microsoft Defender al portal de Microsoft 365 Defender
 keywords: Introducción al portal de Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de Defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102380"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050763"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP) 
 

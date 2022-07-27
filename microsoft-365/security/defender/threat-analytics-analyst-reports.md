@@ -5,7 +5,7 @@ description: Obtenga información sobre la sección de informe de analistas de c
 keywords: informe de analistas, análisis de amenazas, detecciones, consultas de búsqueda avanzadas, mitigaciones,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 396be53e4c238a8de21082f025762a1a4243b57c
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731150"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051500"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Descripción del informe de analistas en análisis de amenazas en Microsoft 365 Defender
 
@@ -73,24 +73,24 @@ Aunque puede usar la pestaña **Mitigaciones & exposición** para evaluar la pos
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprender cómo se puede detectar cada amenaza
 
-El informe de analistas también proporciona las detecciones de las funcionalidades de Antivirus de Microsoft Defender y _detección y respuesta de puntos de conexión_ (EDR).
+El informe de analistas también proporciona las detecciones del Antivirus de Microsoft Defender y las funcionalidades _de detección y respuesta de puntos de conexión_ (EDR).
 
 ### <a name="antivirus-detections"></a>Detecciones antivirus
 
-Estas detecciones están disponibles en dispositivos con [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activadas. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para punto de conexión, también desencadenan alertas que iluminan los gráficos del informe.
+Estas detecciones están disponibles en dispositivos con [antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para punto de conexión, también desencadenan alertas que iluminan los gráficos del informe.
 
 >[!NOTE]
 >El informe de analistas también enumera **detecciones genéricas** que pueden identificar una amplia gama de amenazas, además de componentes o comportamientos específicos de la amenaza de seguimiento. Estas detecciones genéricas no se reflejan en los gráficos.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertas de detección y respuesta de puntos de conexión (EDR)
 
-EDR alertas se generan para [los dispositivos incorporados a Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Estas alertas suelen basarse en señales de seguridad recopiladas por el sensor de Microsoft Defender para punto de conexión y otras funcionalidades de punto de conexión(como antivirus, protección de red y protección contra alteraciones) que sirven como fuentes de señal eficaces.
+Se generan alertas de EDR para [los dispositivos incorporados a Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Estas alertas suelen basarse en señales de seguridad recopiladas por el sensor de Microsoft Defender para punto de conexión y otras funcionalidades de punto de conexión(como antivirus, protección de red y protección contra alteraciones) que sirven como fuentes de señal eficaces.
 
 Al igual que la lista de detecciones de antivirus, algunas alertas de EDR están diseñadas para marcar genéricamente el comportamiento sospechoso que podría no estar asociado a la amenaza de seguimiento. En tales casos, el informe identificará claramente la alerta como "genérica" y que no influye en ninguno de los gráficos del informe.
 
-### <a name="email-related-detections-and-mitigations"></a>Detecciones y mitigaciones relacionadas con el correo electrónico
+### <a name="email-related-detections-and-mitigations"></a>detecciones y mitigaciones relacionadas con Email
 
-Las detecciones y mitigaciones relacionadas con el correo electrónico de Microsoft Defender para Office 365 se incluyen en los informes de analistas, además de los datos de punto de conexión que ya están disponibles en Microsoft Defender para punto de conexión.
+las detecciones y mitigaciones relacionadas con Email de Microsoft Defender para Office 365 se incluyen en los informes de analistas, además de los datos de punto de conexión que ya están disponibles en Microsoft Defender para punto de conexión.
 
 La información de intento de correo electrónico evitada proporciona información sobre si su organización era un objetivo de la amenaza abordada en el informe del analista, incluso si el ataque se ha bloqueado de forma eficaz antes de la entrega o se ha entregado a la carpeta de correo no deseado.
 

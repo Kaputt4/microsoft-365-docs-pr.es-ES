@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre las directivas de expiración de grupos de Microsoft 365.
-ms.openlocfilehash: 41a179dc714063a66ba34aeb676321badfc5f947
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720465"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050664"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupos de Microsoft 365
 
@@ -51,7 +51,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>¿Quién puede configurar y usar la directiva de expiración de grupos de Microsoft 365?
 
-|Role|Qué pueden hacer|
+|Rol|Qué pueden hacer|
 |---------|---------|
 |Office 365 administrador global (en Azure, administrador de empresa), administrador de usuarios|Cree, lea, actualice o elimine la configuración de la directiva de expiración de grupos de Microsoft 365.|
 |User|Renovar o [restaurar](/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 de su propiedad|
@@ -64,7 +64,9 @@ La duración del grupo se especifica en días y se puede establecer en 180, 365 
 
 Si el grupo no tiene un propietario, los correos electrónicos de expiración se dirigirán al administrador especificado.
 
-Puede establecer la directiva para todos los grupos, solo los grupos seleccionados (hasta 500) o desactivarla completamente seleccionando **Ninguno**. Tenga en cuenta que actualmente no puede tener directivas diferentes para grupos diferentes.
+Puede establecer la directiva para todos los grupos, solo los grupos seleccionados (hasta 500) o desactivarla completamente seleccionando **Ninguno**. Al seleccionar **Ninguno** , todos los grupos que están activos y pendientes para la comprobación no tendrán fecha de expiración. Sin embargo, los grupos que ya han expirado no se ven afectados.
+
+Tenga en cuenta que actualmente no puede tener directivas diferentes para grupos diferentes.
 
 ![Captura de pantalla de la configuración de expiración de grupos en Azure Active Directory.](../media/azure-groups-expiration-settings.png)
 

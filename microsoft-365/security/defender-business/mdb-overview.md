@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: dd4dfa5bf173f0109eb9da993a18930c5b67f667
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e4210c2540e3d6d85dae38134148b5564d18fcf4
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771381"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051588"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>¿Qué es Microsoft Defender para Empresas?
 
@@ -31,7 +31,7 @@ Defender for Business es una nueva solución de seguridad de puntos de conexión
 En este artículo se describe lo que se incluye en Defender para empresas, con vínculos para obtener más información sobre estas características y funcionalidades.
 
 
-## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>Vídeo: Protección de nivel empresarial para pequeñas y medianas empresas
+## <a name="video-enterprise-grade-protection-for-small--and-medium-sized-businesses"></a>Vídeo: Protección de nivel empresarial para pequeñas y medianas empresas
 
 Vea el siguiente vídeo para obtener más información sobre Defender para empresas: <br/><br/>
 
@@ -39,7 +39,7 @@ Vea el siguiente vídeo para obtener más información sobre Defender para empre
 
 ## <a name="whats-included-with-defender-for-business"></a>Qué se incluye con Defender para empresas
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Características y funcionalidades de Defender for Business.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Datos y funcionalidades de Defender para Empresas.":::
 
 Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos que usa su empresa con:
 
@@ -72,7 +72,7 @@ Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos
    - [Supervisión o administración de dispositivos](mdb-manage-devices.md).
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Pruebe la guía interactiva: Introducción a Defender para empresas](https://aka.ms/MDB-GetStartedGuide)
 - [Más información sobre el proceso de configuración simplificado en Defender para empresas](mdb-simplified-configuration.md)

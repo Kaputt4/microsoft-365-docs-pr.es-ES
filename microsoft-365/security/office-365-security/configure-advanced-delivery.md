@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917571"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051192"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -38,10 +38,10 @@ Para mantener su organización [segura de forma predeterminada](secure-by-defaul
 - **Simulaciones de suplantación de identidad de terceros**: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real afecte a su organización.
 - **Buzones de operaciones de seguridad (SecOps**): buzones dedicados que usan los equipos de seguridad para recopilar y analizar mensajes sin filtrar (buenos y malos).
 
-La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se filtren los mensajes _entrantes en estos escenarios específicos_ .<sup>\*</sup> La directiva de entrega avanzada garantiza que los mensajes de estos escenarios alcancen los siguientes resultados:
+La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se filtren <sup>\*</sup> los mensajes _entrantes en estos escenarios específicos_. La directiva de entrega avanzada garantiza que los mensajes de estos escenarios alcancen los siguientes resultados:
 
 - Los filtros de EOP y Microsoft Defender para Office 365 no realizan ninguna acción en estos mensajes.<sup>\*</sup>
-- [La purga de cero horas (ZAP)](zero-hour-auto-purge.md) para el correo no deseado y la suplantación de identidad no realizan ninguna acción en estos mensajes.<sup>\*\*</sup>
+- [La purga de cero horas (ZAP)](zero-hour-auto-purge.md) para el correo no deseado y la suplantación de identidad no realizan ninguna acción en estos mensajes<sup>\*\*</sup>.
 - [Las alertas predeterminadas del sistema](/microsoft-365/compliance/alert-policies#default-alert-policies) no se desencadenan para estos escenarios.
 - [AIR y los clústeres de Defender para Office 365](office-365-air.md) omiten estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:

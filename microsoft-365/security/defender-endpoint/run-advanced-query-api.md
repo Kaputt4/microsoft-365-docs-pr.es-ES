@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020635"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051786"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -50,11 +50,11 @@ ms.locfileid: "67020635"
    - Llamadas API: hasta 45 llamadas por minuto, hasta 1500 llamadas por hora.
    - Tiempo de ejecución: 10 minutos de tiempo de ejecución cada hora y 3 horas de tiempo de ejecución al día.
 
-4. El tiempo máximo de ejecución de una sola solicitud es de 10 minutos.
+4. El tiempo máximo de ejecución de una sola solicitud es de 200 segundos.
 
 5. La respuesta 429 representará alcanzar el límite de cuota por número de solicitudes o por CPU. Lea el cuerpo de la respuesta para comprender qué límite se ha alcanzado.
 
-6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, la solicitud HTTP 400 no es correcta con el mensaje "La ejecución de consultas ha superado el tamaño de resultado permitido. Optimizar la consulta limitando la cantidad de resultados e inténtelo de nuevo" aparecerá.
+6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, la solicitud HTTP 400 no es correcta con el mensaje "La ejecución de consultas ha superado el tamaño de resultado permitido. Optimizar la consulta limitando el número de resultados e inténtelo de nuevo" aparecerá.
 
 ## <a name="permissions"></a>Permisos
 

@@ -18,12 +18,12 @@ ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647265"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051082"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
 
@@ -57,8 +57,8 @@ El plan de evaluación de prioridades para supervisar la cola de incidentes debe
 1. **Se detectó un clic de dirección URL potencialmente malintencionado**.
 2. **El usuario ha restringido el envío de correo electrónico**.
 3. **Se han detectado patrones de envío de correo electrónico sospechosos**.
-4. **Correo electrónico notificado por el usuario como malware o phish**, y **varios usuarios informaron de correo electrónico como malware o phish**.
-5. **Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega**, **mensajes de correo electrónico que contienen direcciones URL malintencionadas eliminadas después de la entrega** y **mensajes de correo electrónico de una campaña eliminada después de la entrega**.
+4. **Email notifica el usuario como malware o phish**, y **varios usuarios informaron de correo electrónico como malware o phish**.
+5. **Email mensajes que contienen archivos malintencionados quitados después de la entrega**, **Email mensajes que contienen direcciones URL malintencionadas eliminadas después** de la entrega y **Email mensajes de una campaña eliminada después de la entrega**.
 6. **Phish entregado debido a una invalidación de ETR**, **Phish entregado porque la carpeta correo no deseado de un usuario está deshabilitada** y **Phish se entrega debido a una directiva de ip permitida**
 7. **El malware no se zapped porque ZAP está deshabilitado** y **Phish no zapped porque ZAP está deshabilitado**.
 
@@ -123,11 +123,11 @@ Use la pestaña **[Usuarios de destino superior](threat-explorer.md#top-targeted
 
 |Actividad|Cadencia|Descripción|Persona|
 |---|---|---|---|
-|Revise la pestaña **Usuarios principales de destino** en el Explorador de amenazas en <https://security.microsoft.com/threatexplorer>.|Semanal|Use la información para decidir si necesita ajustar directivas o protecciones para estos usuarios. Agregue los usuarios afectados a [las cuentas de prioridad](/microsoft-365/admin/setup/priority-accounts) para obtener las siguientes ventajas: <ul><li>Visibilidad adicional cuando los incidentes les afectan.</li><li>Heurística personalizada para patrones de flujo de correo ejecutivo (protección de cuenta prioritaria).</li><li>[Informe de problemas de correo electrónico para cuentas prioritarias](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)</li></ul>|Administración de seguridad <br/><br/> Equipo de operaciones de seguridad|
+|Revise la pestaña **Usuarios principales de destino** en el Explorador de amenazas en <https://security.microsoft.com/threatexplorer>.|Semanal|Use la información para decidir si necesita ajustar directivas o protecciones para estos usuarios. Agregue los usuarios afectados a [las cuentas de prioridad](/microsoft-365/admin/setup/priority-accounts) para obtener las siguientes ventajas: <ul><li>Visibilidad adicional cuando los incidentes les afectan.</li><li>Heurística personalizada para patrones de flujo de correo ejecutivo (protección de cuenta prioritaria).</li><li>[informe de problemas de Email de cuentas prioritarias](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)</li></ul>|Administración de seguridad <br/><br/> Equipo de operaciones de seguridad|
 
 ### <a name="review-top-malware-and-phishing-campaigns-that-target-your-organization"></a>Revise las principales campañas de malware y phishing dirigidas a su organización.
 
-Las vistas de campaña revelan ataques de malware y suplantación de identidad (phishing) contra su organización. Para obtener más información, consulte [Vistas de campaña en Microsoft Defender para Office 365](campaigns.md).
+Las vistas de campaña revelan ataques de malware y suplantación de identidad (phishing) contra su organización. Para obtener más información, vea [Vistas de campaña en Microsoft Defender para Office 365](campaigns.md).
 
 |Actividad|Cadencia|Descripción|Persona|
 |---|---|---|---|
@@ -172,7 +172,7 @@ Las vistas de campaña revelan ataques de malware y suplantación de identidad (
 
 ### <a name="learn-about-microsoft-defender-for-office-365-tools-and-processes"></a>Más información sobre Microsoft Defender para Office 365 herramientas y procesos
 
-Los miembros del equipo de operaciones de seguridad y respuesta deben integrar Defender para Office 365 herramientas y características en las investigaciones y los procesos de respuesta existentes. Learning sobre las nuevas herramientas y funcionalidades puede tardar tiempo, pero es una parte fundamental del proceso de incorporación. La manera más sencilla de que los miembros del equipo de seguridad de SecOps y correo electrónico obtengan información sobre Defender para Office 365 es usar el contenido de entrenamiento que está disponible como parte del contenido de entrenamiento ninja en <https://aka.ms/mdoninja>.
+Los miembros del equipo de operaciones de seguridad y respuesta deben integrar Defender para Office 365 herramientas y características en las investigaciones y los procesos de respuesta existentes. El aprendizaje de las nuevas herramientas y funcionalidades puede tardar tiempo, pero es una parte fundamental del proceso de incorporación. La manera más sencilla de que los miembros del equipo de seguridad de SecOps y correo electrónico obtengan información sobre Defender para Office 365 es usar el contenido de entrenamiento que está disponible como parte del contenido de entrenamiento ninja en <https://aka.ms/mdoninja>.
 
 El contenido está estructurado para diferentes niveles de conocimiento (fundamentales, intermedios y avanzados) con varios módulos por nivel.
 
@@ -187,12 +187,12 @@ Los permisos para administrar Defender para Office 365 en el portal de Microsoft
 
 Los siguientes permisos (roles y grupos de roles) están disponibles en Defender para Office 365 y se pueden usar para conceder acceso a los miembros del equipo de seguridad:
 
-- **Roles de Azure AD**: roles centralizados que asignan permisos para _todos los_ servicios de Microsoft 365, incluidos los Defender para Office 365. Puede ver los roles de Azure AD y los usuarios asignados en el portal de Microsoft 365 Defender, pero no puede administrarlos directamente allí. En su lugar, administrará roles y miembros de Azure AD en <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Los roles más frecuentes que usan los equipos de seguridad son:
+- **Roles de Azure AD**: roles centralizados que asignan permisos para _todos los_ servicios de Microsoft 365, incluidos Defender para Office 365. Puede ver los roles de Azure AD y los usuarios asignados en el portal de Microsoft 365 Defender, pero no puede administrarlos directamente allí. En su lugar, administrará roles y miembros de Azure AD en <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Los roles más frecuentes que usan los equipos de seguridad son:
   - **Administrador de seguridad**
   - **Operador de seguridad**
   - **Lector de seguridad**
 
-- **Roles de colaboración de & por correo electrónico**: roles y grupos de roles que conceden permiso específico para Microsoft Defender para Office 365. Los siguientes roles no están disponibles en Azure AD, pero pueden ser importantes para los equipos de seguridad:
+- **Email & roles de colaboración**: roles y grupos de roles que conceden permiso específico para Microsoft Defender para Office 365. Los siguientes roles no están disponibles en Azure AD, pero pueden ser importantes para los equipos de seguridad:
 
   - **Rol de vista previa** : asigne este rol a los miembros del equipo que necesiten obtener una vista previa o descargar mensajes de correo electrónico como parte de las actividades de investigación. Permite a los usuarios [obtener una vista previa y descargar](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) mensajes de correo electrónico en buzones de correo en la nube mediante la [página de entidad de correo electrónico](mdo-email-entity-page.md#email-preview-for-cloud-mailboxes).
 
@@ -201,7 +201,7 @@ Los siguientes permisos (roles y grupos de roles) están disponibles en Defender
     - Investigador de datos
     - Supervisor de eDiscovery
 
-    Para asignar este rol a un grupo de roles nuevo o existente, consulte [Modificar correo electrónico & pertenencia a roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    Para asignar este rol a un grupo de roles nuevo o existente, consulte [Modificar Email & pertenencia a roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Rol de búsqueda y purga** : apruebe la eliminación de mensajes malintencionados según lo recomendado por AIR o realice acciones manuales en los mensajes en experiencias de búsqueda como el Explorador de amenazas.
 
@@ -210,7 +210,7 @@ Los siguientes permisos (roles y grupos de roles) están disponibles en Defender
     - Investigador de datos
     - Administración de la organización
 
-    Para asignar este rol a un grupo de roles nuevo o existente, consulte [Modificar correo electrónico & pertenencia a roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    Para asignar este rol a un grupo de roles nuevo o existente, consulte [Modificar Email & pertenencia a roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Administrador allowBlockList de inquilinos**: administre las entradas de permitir y bloquear en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). Bloquear direcciones URL, archivos (mediante hash de archivos) o remitentes es una acción de respuesta útil que se debe realizar al investigar el correo electrónico malintencionado que se ha entregado.
 
@@ -295,15 +295,15 @@ Designe el buzón personalizado donde se envían los mensajes notificados por el
 >
 > - El buzón personalizado es un buzón de Exchange Online.
 > - La herramienta de informes de terceros debe incluir el mensaje notificado original como un sin comprimir. EML o . Datos adjuntos MSG en el mensaje que se envía al buzón personalizado (no reenvíe el mensaje original al buzón personalizado).
-> - El buzón personalizado requiere requisitos previos específicos para permitir la entrega de mensajes potencialmente incorrectos. Para obtener más información, vea [Requisitos previos del buzón personalizado](user-submission.md#custom-mailbox-prerequisites).
+> - El buzón personalizado requiere requisitos previos específicos para permitir la entrega de mensajes potencialmente incorrectos. Para obtener más información, vea [Requisitos de configuración para el buzón de correo de envíos de usuario](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
-Cuando el correo electrónico notificado por el usuario llega al buzón personalizado, Defender para Office 365 genera automáticamente la alerta denominada **Correo electrónico notificada por el usuario como malware o phish**. Esta alerta inicia un [cuaderno de estrategias de AIR](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). El cuaderno de estrategias realiza una serie de pasos de investigaciones automatizadas:
+Cuando el correo electrónico notificado por el usuario llega al buzón personalizado, Defender para Office 365 genera automáticamente la alerta denominada **Email notificada por el usuario como malware o phish**. Esta alerta inicia un [cuaderno de estrategias de AIR](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). El cuaderno de estrategias realiza una serie de pasos de investigaciones automatizadas:
 
 - Recopile datos sobre el correo electrónico especificado.
 - Recopile datos sobre las amenazas y entidades relacionadas con ese correo electrónico. Las entidades pueden incluir archivos, direcciones URL y destinatarios.
 - Proporcione las acciones recomendadas para que el equipo de SecOps realice en función de los resultados de la investigación.
 
-**El correo electrónico notificado por el usuario como alertas de malware o phish**, investigaciones automatizadas y sus acciones recomendadas se correlacionan automáticamente con incidentes en Microsoft 365 Defender. Esta correlación simplifica aún más el proceso de evaluación y respuesta para los equipos de seguridad. Si varios usuarios notifican los mismos mensajes o similares, todos los usuarios y mensajes se correlacionan con el mismo incidente.
+**Email notifica el usuario como alertas de malware o phish**, las investigaciones automatizadas y sus acciones recomendadas se correlacionan automáticamente con incidentes en Microsoft 365 Defender. Esta correlación simplifica aún más el proceso de evaluación y respuesta para los equipos de seguridad. Si varios usuarios notifican los mismos mensajes o similares, todos los usuarios y mensajes se correlacionan con el mismo incidente.
 
 Los datos de alertas e investigaciones en Defender para Office 365 se comparan automáticamente con las alertas e investigaciones de los demás productos de Microsoft 365 Defender:
 

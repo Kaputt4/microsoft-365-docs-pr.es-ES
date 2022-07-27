@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 332802150235ec6f47c4bdea34b34edb94ea1b90
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: deb0a7be8dcf359c901d714006ea3b46862586fb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731337"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050774"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -90,7 +91,7 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 |:---------|:---------|
 |Dispositivos (también conocidos como puntos de conexión o máquinas) |[Defender para punto de conexión](../defender-endpoint/automated-investigations.md) |      
 |Usuarios locales de Active Directory, comportamiento de entidad y actividades     |[Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenido de correo electrónico (mensajes de correo electrónico que pueden contener archivos y direcciones URL)     |[Defender para Office 365](../office-365-security/defender-for-office-365.md) |
+|Email contenido (mensajes de correo electrónico que pueden contener archivos y direcciones URL)     |[Defender para Office 365](../office-365-security/defender-for-office-365.md) |
 
 > [!NOTE]
 > No todas las alertas desencadenan una investigación automatizada y no todas las investigaciones tienen como resultado acciones de corrección automatizadas. Depende de cómo se configure la investigación y la respuesta automatizadas para su organización. Consulte [Configuración de funcionalidades automatizadas de investigación y respuesta](m365d-configure-auto-investigation-response.md).
@@ -98,6 +99,15 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 ## <a name="viewing-a-list-of-investigations"></a>Visualización de una lista de investigaciones
 
 Para ver las investigaciones, vaya a la página **Incidentes** . Seleccione un incidente y, a continuación, seleccione la pestaña **Investigaciones** . Para más información, consulte [Detalles y resultados de una investigación automatizada](m365d-autoir-results.md).
+
+## <a name="automated-investigation--response-card"></a>Tarjeta de respuesta & investigación automatizada 
+
+La nueva tarjeta de respuesta & investigación automatizada está disponible en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Esta nueva tarjeta permite ver el número total de acciones de corrección disponibles. La tarjeta también proporciona información general sobre todas las alertas y el tiempo de aprobación necesario para cada alerta.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="Captura de pantalla que muestra la tarjeta de respuesta & investigación automatizada.":::
+
+Con la tarjeta De investigación automatizada & respuesta, el equipo de operaciones de seguridad puede navegar rápidamente al Centro de acciones seleccionando el vínculo **Aprobar en el Centro de acciones** y, a continuación, realizando las acciones adecuadas. La tarjeta permite al equipo de operaciones de seguridad administrar de forma más eficaz las acciones que están pendientes de aprobación. 
+
 
 ## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
 
@@ -110,7 +120,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo Microso
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/defender-self-healing/)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos previos para la investigación y la respuesta automatizadas.](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configuración de la investigación y la respuesta automatizadas para su organización](m365d-configure-auto-investigation-response.md)

@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,17 +23,14 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 631849997fffc0e4f90a9aa9d1850646b764a52a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b82d40a1bc12b480851de3ecaec639717b3c00c7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493495"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051808"
 ---
 # <a name="the-action-center"></a>El Centro de actividades
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -68,28 +66,34 @@ Puede usar el Centro de acciones unificado si tiene los permisos adecuados y una
 > [!TIP]
 > Para obtener más información, consulte [Requisitos](./prerequisites.md).
 
+Puede navegar a la lista de acciones pendientes de aprobación de dos maneras diferentes:
+
+- Vaya a [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); o
+- En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en la tarjeta de respuesta Investigación automatizada &, seleccione **Aprobar en el Centro de acciones**.
+
 ## <a name="using-the-action-center"></a>Uso del Centro de acciones
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> e inicie sesión. 
-2. En el panel de navegación, elija **Centro de actividades**. 
 
-Cuando visite el Centro de acciones, verá dos pestañas: **Acciones pendientes** e **Historial**. En la tabla siguiente se resume lo que verá en cada pestaña:
+2. En el panel de navegación, elija **Centro de actividades**. O bien, en la tarjeta Investigación automatizada & respuesta, seleccione **Aprobar en el Centro de acciones**.
 
-|Pestaña  |Descripción  |
-|---------|---------|
-|**Pending**     | Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el archivo de cuarentena). <p>**SUGERENCIA**: Asegúrese de revisar y aprobar (o rechazar) las acciones pendientes lo antes posible para que las investigaciones automatizadas puedan completarse de forma oportuna.       |
-|**Historial**     | Actúa como registro de auditoría para las acciones que se realizaron, como: <br/>- Acciones de corrección que se realizaron como resultado de investigaciones automatizadas <br/>- Acciones de corrección que se realizaron en mensajes de correo electrónico sospechosos o malintencionados, archivos o direcciones URL<br/>- Acciones de corrección aprobadas por el equipo de operaciones de seguridad <br/>- Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de live response<br/>- Acciones de corrección realizadas por la protección antivirus <p>Proporciona una manera de deshacer ciertas acciones (consulte [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions)).        |
+3. Use las **pestañas Acciones pendientes** e **Historial** . En la tabla siguiente se resume lo que verá en cada pestaña:
 
-Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
+   |Pestaña  |Descripción  |
+   |---------|---------|
+   |**Pending**     | Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el archivo de cuarentena). <br/><br/>Asegúrese de revisar y aprobar (o rechazar) las acciones pendientes lo antes posible para que las investigaciones automatizadas puedan completarse de forma oportuna.       |
+   |**Historial**     | Actúa como registro de auditoría para las acciones que se realizaron, como: <br/>- Acciones de corrección que se realizaron como resultado de investigaciones automatizadas <br/>- Acciones de corrección que se realizaron en mensajes de correo electrónico sospechosos o malintencionados, archivos o direcciones URL<br/>- Acciones de corrección aprobadas por el equipo de operaciones de seguridad <br/>- Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de live response<br/>- Acciones de corrección realizadas por la protección antivirus<br/><br/>Proporciona una manera de deshacer ciertas acciones (consulte [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions)).        |
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Las funcionalidades de ordenación, filtrado y personalización del Centro de acciones" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+4. Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 
-- Seleccione un encabezado de columna para ordenar los elementos en orden ascendente o descendente.
-- Use el filtro de período de tiempo para ver los datos del último día, semana, 30 días o 6 meses.
-- Elija las columnas que desea ver.
-- Especifique cuántos elementos se van a incluir en cada página de datos.
-- Use filtros para ver solo los elementos que desea ver.
-- Seleccione **Exportar** para exportar los resultados a un archivo .csv.
+   :::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Captura de pantalla que muestra las funcionalidades de ordenación, filtrado y personalización del Centro de acciones." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+
+   - Seleccione un encabezado de columna para ordenar los elementos en orden ascendente o descendente.
+   - Use el filtro de período de tiempo para ver los datos del último día, semana, 30 días o 6 meses.
+   - Elija las columnas que desea ver.
+   - Especifique cuántos elementos se van a incluir en cada página de datos.
+   - Use filtros para ver solo los elementos que desea ver.
+   - Seleccione **Exportar** para exportar los resultados a un archivo .csv.
 
 ## <a name="actions-tracked-in-the-action-center"></a>Acciones de las que se realiza un seguimiento en el Centro de acciones
 

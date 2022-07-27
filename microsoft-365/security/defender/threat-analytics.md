@@ -3,7 +3,7 @@ title: Análisis de amenazas en Microsoft 365 Defender
 ms.reviewer: ''
 description: Obtenga información sobre las amenazas emergentes y las técnicas de ataque y cómo detenerlas. Evalúe su impacto en la organización y evalúe la resistencia de la organización.
 keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para Office 365  análisis de amenazas, análisis de amenazas de MDO, datos integrados de análisis de amenazas de MDE y MDO, integración de datos de análisis de amenazas, análisis de amenazas integrado Microsoft 365 Defender análisis de amenazas
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b034445951a0b8f52e995ff3372a2b0404f8cbfb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731034"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050796"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Vea este breve vídeo para obtener más información sobre cómo el análisis de
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Puede acceder al análisis de amenazas desde la parte superior izquierda de Microsoft 365 barra de navegación del portal de seguridad o desde una tarjeta de panel dedicada que muestra las principales amenazas para su organización, tanto en términos de impacto como en términos de exposición.
+Puede acceder al análisis de amenazas desde la parte superior izquierda de la barra de navegación del portal de seguridad de Microsoft 365 o desde una tarjeta de panel dedicada que muestra las principales amenazas para su organización, tanto en términos de impacto como en términos de exposición.
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Página de aterrizaje de análisis de amenazas" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
@@ -209,7 +209,7 @@ Para configurar notificaciones por correo electrónico para informes de análisi
  
 ![Captura de pantalla con "Configuración" y "Microsoft 365 Defender" resaltados en rojo](../../media/threat-analytics/ta_create_notification_0.png)
 
-2. Elija Notificaciones  > **por correo electrónico** **Analyticsthreat** y seleccione el botón **+ Crear una regla de notificación**. Aparecerá un control flotante.
+2. Elija **Email notificaciones****Análisis** de amenazas  >  y seleccione el botón **+ Crear una regla de notificación**. Aparecerá un control flotante.
 
 ![Captura de pantalla con "+ Crear una regla de notificación" resaltado en rojo](../../media/threat-analytics/ta_create_notification_1.png)
 
@@ -238,7 +238,7 @@ Para configurar notificaciones por correo electrónico para informes de análisi
 
 8. La nueva regla aparecerá ahora en la lista de notificaciones por correo electrónico de Análisis de amenazas.
 
-![Captura de pantalla de la lista de reglas de notificación por correo electrónico en la pantalla de Configuración](../../media/threat-analytics/ta_create_notification_7.png)
+![Captura de pantalla de la lista de reglas de notificación por correo electrónico en la pantalla Configuración](../../media/threat-analytics/ta_create_notification_7.png)
 
 ## <a name="additional-report-details-and-limitations"></a>Detalles y limitaciones adicionales del informe
 
@@ -249,8 +249,8 @@ Para configurar notificaciones por correo electrónico para informes de análisi
 
 Para acceder a los informes de análisis de amenazas, necesita determinados roles y permisos. Consulte [Roles personalizados en el control de acceso basado en rol para obtener Microsoft 365 Defender](custom-roles.md) para obtener más información.
 
-- Para ver alertas, incidentes o datos de recursos afectados, debe tener permisos en Microsoft Defender para Office o Microsoft Defender para punto de conexión datos de alertas, o ambos.
-- Para ver los intentos de correo electrónico impedidos, debe tener permisos en Microsoft Defender para Office datos de búsqueda.
+- Para ver alertas, incidentes o datos de recursos afectados, debe tener permisos para Microsoft Defender para Office o Microsoft Defender para punto de conexión datos de alertas, o ambos.
+- Para ver los intentos de correo electrónico impedidos, debe tener permisos para los datos de búsqueda de Microsoft Defender para Office.
 - Para ver las mitigaciones, debe tener permisos para Administración de amenazas y vulnerabilidades datos en Microsoft Defender para punto de conexión.
 
 Al examinar los datos de análisis de amenazas, recuerde los siguientes factores:
@@ -258,7 +258,7 @@ Al examinar los datos de análisis de amenazas, recuerde los siguientes factores
 - Los gráficos solo reflejan las mitigaciones de las que se realiza el seguimiento. Compruebe la información general del informe para ver las mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con el antivirus se basan en Antivirus de Microsoft Defender configuración. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en la configuración del Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-articles"></a>Artículos relacionados
 

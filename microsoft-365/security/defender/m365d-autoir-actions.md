@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,17 +24,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 43c48081a86e33cd918bc4de8f01859bc1107583
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666842"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050686"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualización y administración de acciones en el Centro de acciones
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -47,7 +45,12 @@ Las características de protección contra amenazas de Microsoft 365 Defender pu
 > [!NOTE]
 > Debe tener [los permisos adecuados](m365d-action-center.md#required-permissions-for-action-center-tasks) para aprobar o rechazar acciones de corrección. Para obtener más información, consulte los [requisitos previos](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
-## <a name="review-pending-actions-in-the-action-center"></a>Revisión de las acciones pendientes en el Centro de acciones
+Para ir al Centro de acciones, realice uno de los pasos siguientes:
+
+- Vaya a [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); o
+- En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en la tarjeta de respuesta Investigación automatizada &, seleccione **Aprobar en el Centro de acciones**.
+
+## <a name="review-pending-actions-in-the-action-center"></a>Revisar las acciones pendientes en el centro de actividades
 
 Es importante aprobar (o rechazar) las acciones pendientes lo antes posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna. 
 
@@ -71,7 +74,7 @@ Si ha determinado que un dispositivo o un archivo no es una amenaza, puede desha
 
 | Origen de la acción | Acciones admitidas |
 |:---|:---|
-| - Investigación automatizada <br/>- Antivirus de Microsoft Defender <br/>- Acciones de respuesta manual | - Aislar el dispositivo <br/>- Restricción de la ejecución de código <br/>- Poner en cuarentena un archivo <br/>- Quitar una clave del Registro <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada |
+| - Investigación automatizada <br/>- Antivirus de Microsoft Defender <br/>- Acciones de respuesta manual | - Aislar el dispositivo <br/>- Restricción de la ejecución de código <br/>- Poner en cuarentena un archivo <br/>- Quitar una clave del registro <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada |
 
 ### <a name="undo-one-remediation-action"></a>Deshacer una acción de corrección
 

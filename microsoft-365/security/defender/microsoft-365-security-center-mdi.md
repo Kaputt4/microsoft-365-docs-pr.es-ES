@@ -2,7 +2,7 @@
 title: Microsoft Defender for Identity en Microsoft 365 Defender
 description: Obtenga información sobre los cambios de la Microsoft Defender for Identity a Microsoft 365 Defender
 keywords: Introducción a Microsoft 365 Defender, Microsoft Defender for Identity, NDI
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 53c43c3196a22a97b2f11105f5145bd62229b137
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714839"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051127"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender for Identity en Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran los cambios en la navegación entre Microsoft 
 | Búsqueda                     | búsqueda de Microsoft 365 Defender                                |
 | Centro de salud              | Configuración -> Identidades -sensores de >                            |
 | Actividades de entidad          | Búsqueda avanzada de amenazas                                             |
-| Configuraciones                   | Configuración -> identidades                                       |
+| Configuración                   | Configuración -> identidades                                       |
 | Usuarios y cuentas         | Recursos -> identidades                                         |
 | Posición de seguridad de identidad  | [evaluaciones de la posición de seguridad de Microsoft Defender for Identity](/defender-for-identity/security-assessment) |
 | Incorporación de un nuevo área de trabajo | Configuración -> identidades (automáticamente)                       |

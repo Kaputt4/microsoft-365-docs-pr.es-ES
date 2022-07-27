@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 69af51bbd39339b07af8f0832a113184afaf725b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969483"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051698"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migración a Microsoft Defender para Office 365: fase 2: instalación
 
@@ -85,7 +85,7 @@ También debe confirmar que todos los usuarios del piloto tienen instalada en Ou
 
 - [Complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [Complemento de suplantación de identidad de informe](enable-the-report-phish-add-in.md)
-- Herramientas de informes de terceros compatibles como se describe [aquí](user-submission.md#third-party-email-reporting-tools)
+- Herramientas de informes de terceros compatibles como se describe [aquí](user-submission.md#third-party-reporting-tools-options).
 
 No subestime la importancia de este paso. Los datos de envíos de usuarios le proporcionarán el bucle de comentarios que necesita para comprobar una buena experiencia de usuario final coherente antes y después de la migración. Estos comentarios le ayudan a tomar decisiones de configuración de directiva informadas, así como a proporcionar informes respaldados por datos a la administración de que la migración se realizó sin problemas.
 
