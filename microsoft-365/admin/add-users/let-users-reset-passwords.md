@@ -28,32 +28,33 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva en el Centro de administración de Microsoft 365 para permitir que los usuarios restablezcan sus propias contraseñas mediante la herramienta de autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 44cbcc5404727e22c62fc6345e03682ff0961543
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 917f04b7472204be4228d802975902c42ab8fce0
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601958"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037235"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Como administrador de Microsoft 365, puede permitir que los usuarios usen la [herramienta de autoservicio de restablecimiento de contraseña](https://go.microsoft.com/fwlink/p/?LinkId=522677) para que no tenga que restablecer las contraseñas para ellas. Así no tendrá tanto trabajo.
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
  
 ## <a name="watch-let-users-reset-their-own-passwords"></a>Ver: Permitir que los usuarios restablezcan sus propias contraseñas
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198214).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198214).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Configuración Configuración** > **Configuración de la organización** y, a continuación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad & privacidad**</a>.
-1. En **Permitir que los usuarios restablezcan sus propias contraseñas**, seleccione **Centro de administración de Azure AD**.
+1. En **Autoservicio de restablecimiento de contraseña**, seleccione **Ir al Azure Portal para activar el autoservicio de restablecimiento de contraseña**.
 1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la página **Usuarios: todos los usuarios** , seleccione **Restablecimiento de contraseña**.
 1. Seleccione **Todo** para habilitar el autoservicio de restablecimiento de contraseña y, a continuación, seleccione **Guardar**.
+1. En el panel de navegación izquierdo, seleccione **Métodos de autenticación** , seleccione el **número de métodos necesarios para restablecer** y los **métodos deseados disponibles para los usuarios** y, a continuación, seleccione **Guardar**. 
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
  
@@ -82,8 +83,10 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 4. En **Autoservicio de restablecimiento de contraseña**, seleccione **Ir al Azure Portal para activar el autoservicio de restablecimiento de contraseña**.
 
 5. En la página **Propiedades** , seleccione **Todo** para habilitarlo para todos los usuarios de su empresa y, a continuación, seleccione **Guardar**.
+
+6. En el panel de navegación izquierdo, seleccione **Métodos de autenticación** , seleccione el **número de métodos necesarios para restablecer** y los **métodos deseados disponibles para los usuarios** y, a continuación, seleccione **Guardar**. 
   
-6. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayudará a restablecer su contraseña en el futuro.
+7. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayudará a restablecer su contraseña en el futuro.
 
 ## <a name="related-content"></a>Contenido relacionado
 

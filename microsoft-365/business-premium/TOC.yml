@@ -2,7 +2,7 @@
   items:
     - name: Información general
       href: index.md
-    - name: Cómo Microsoft 365 ayuda a su empresa
+    - name: Ejecutar su negocio de forma más segura
       href: m365bp-secure-users.md
     - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -146,7 +146,7 @@
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender para Empresas
       href: ../security/defender-business/index.yml
-    - name: "Microsoft\_Defender para Office\_365"
+    - name: Microsoft Defender para Office 365
       href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md

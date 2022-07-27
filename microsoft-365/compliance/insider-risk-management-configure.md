@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787482"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037718"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -101,7 +101,7 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |Ver & exportar registros de auditoría|Sí|No|No|No|Sí|
 
 > [!IMPORTANT]
-> Asegúrese de que siempre tiene al menos un usuario en *insider Risk Management* o *Insider Risk Management Administración* grupos de roles (según la opción que elija) para que la configuración de administración de riesgos internos no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+> Asegúrese de tener siempre al menos un usuario en los grupos de roles *integrados Insider Risk Management* o *Insider Risk Management Administración* (según la opción que elija) para que la configuración de administración de riesgos internos no se incluya en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
 Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles de administración de riesgos internos y tener los mismos permisos de solución incluidos en el grupo de roles *insider Risk Management Administración*:
 

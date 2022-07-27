@@ -21,14 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894293"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037761"
 ---
-# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium &mdash;, ciberseguridad para pequeñas empresas
+# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium: ciberseguridad para pequeñas empresas
 
 Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Empresa Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberataques, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
 
@@ -84,7 +84,7 @@ Haga clic (o pulse) en la infografía para ver una versión más grande, o [desc
 
 Microsoft 365 Empresa Premium es una solución completa de seguridad y colaboración para pequeñas y medianas empresas. [Obtenga más información sobre las ventajas de Microsoft 365 Empresa Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora, vamos a [fortalecer su entorno contra los cyberattackers](m365bp-setup-overview.md)!
 

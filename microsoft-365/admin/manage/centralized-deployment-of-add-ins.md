@@ -21,42 +21,42 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
+ms.openlocfilehash: f6dd5972dedebfa21d5770a789ae9477c8263801
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043316"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037608"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
-La implementación centralizada es la manera recomendada y más enriquecida de características para que la mayoría de los clientes implementen complementos de Office en usuarios y grupos de la organización. Si es administrador, use esta guía para determinar si su organización y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
+La implementación centralizada es la manera recomendada y más rica en características para que la mayoría de los clientes implementen complementos de Office en usuarios y grupos de su organización. Si es administrador, use esta guía para determinar si su organización y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
 
 Implementación centralizada proporciona las siguientes ventajas:
 
-- Un administrador puede implementar y asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización (consulte la sección Requisitos de administrador para obtener información).
-- Cuando se inicia la aplicación de Office pertinente, el complemento se descarga automáticamente. Si el complemento admite comandos de complemento, el complemento aparece automáticamente en la cinta de opciones dentro de la aplicación Office.
+- Un administrador puede implementar y asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización (consulte Administración sección de requisitos para obtener información).
+- Cuando se inicia la aplicación de Office correspondiente, el complemento se descarga automáticamente. Si el complemento admite comandos de complemento, el complemento aparece automáticamente en la cinta de opciones dentro de la aplicación de Office.
 - Los complementos ya no aparecen para los usuarios si el administrador desactiva o elimina el complemento, o si el usuario se quita de Azure Active Directory o de un grupo al que está asignado el complemento.
 
-La implementación centralizada admite tres plataformas de escritorio Windows, Mac y aplicaciones de Office en línea. La implementación centralizada también admite iOS y Android (solo complementos móviles de Outlook).
+La implementación centralizada admite tres plataformas de escritorio aplicaciones de Windows, Mac y Office en línea. La implementación centralizada también admite iOS y Android (solo complementos de Outlook Mobile).
 
 Un complemento puede tardar hasta 24 horas en aparecer para el cliente para todos los usuarios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y se inicien sesión en). Office con su identificador organizativo), licencias de Office 365 Educación (A1/A3/A5) o licencias de Microsoft 365 Educación (A3/A5) y tienen buzones de Exchange Online activos y Exchange Online. El directorio de suscripción debe estar en o estar federado para Azure Active Directory.
-Puede ver los requisitos específicos para Office y Exchange a continuación, o usar el [Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
+La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y inicien sesión en Office con su identificador de organización), Office 365 Educación licencias (A1/A3/A5) o licencias de Microsoft 365 Educación (A3/A5) y tienen buzones de Exchange Online activos y Exchange Online. El directorio de suscripción debe estar en Azure Active Directory o estar federado en él.
+Puede ver los requisitos específicos de Office y Exchange a continuación, o usar el [Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
 
-- Complementos que tienen como destino Office versión de MSI (excepto Outlook 2016)
+- Complementos que tienen como destino la versión msi de Office (excepto Outlook 2016)
 - Un servicio de directorio local
 - Implementación de complementos en un buzón local de Exchange
 - Implementación de complemento a SharePoint
-- aplicaciones de Teams
+- Aplicaciones de Teams
 - Implementación de complementos de modelo de objetos componentes (COM) o Visual Studio Tools para Office (VSTO).
-- Implementaciones de Microsoft 365 que no incluyen Exchange Online como SKU: Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para Enterprise.
+- Implementaciones de Microsoft 365 que no incluyen Exchange Online como SKU: Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para empresas.
 
 ### <a name="office-requirements"></a>Requisitos de Office
 
@@ -65,15 +65,15 @@ La implementación centralizada no es compatible con lo siguiente:
   - En un Equipo Mac, versión 15.34 o posterior.
 
 - Para Outlook, los usuarios deben usar uno de los siguientes elementos:
-  - Versión 1701 o posterior de licencias de Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3).
+  - Versión 1701 o posterior de licencias empresariales de Microsoft 365 (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3).
   - Versión 1808 o posterior de Office Profesional Plus 2019 o Office Standard 2019.
   - Versión 16.0.4494.1000 o posterior de Office Profesional Plus 2016 (MSI) o Office Standard 2016 (MSI)\*
   - Versión 15.0.4937.1000 o posterior de Office Profesional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*
   - Versión 16.0.9318.1000 o posterior de Office 2016 para Mac
-- Versión 2.75.0 o posterior de Outlook móvil para iOS
-- Versión 2.2.145 o posterior de Outlook móvil para Android
+- Versión 2.75.0 o posterior de Outlook mobile para iOS
+- Versión 2.2.145 o posterior de Outlook mobile para Android
 
-    *Las versiones msi de Outlook muestran complementos instalados por el administrador en la cinta de opciones de Outlook adecuada, no en la sección "Mis complementos".
+    *Las versiones MSI de Outlook muestran complementos instalados por el administrador en la cinta de opciones de Outlook adecuada, no en la sección "Mis complementos".
 
 ### <a name="exchange-online-requirements"></a>requisitos de Exchange Online
 
@@ -86,7 +86,7 @@ Póngase en contacto con el administrador de Exchange de su organización para a
 Para implementar un complemento a través de la implementación centralizada, debe ser un administrador global o un administrador de Exchange en la organización.
 
 > [!NOTE]
-> Un administrador de Exchange puede implementar un complemento si se agrega el rol **Administrador** de aplicaciones o si la propiedad **Registros** de aplicaciones se establece en true en Azure Active Directory centro de administración, como se muestra en la siguiente imagen:
+> Un administrador de Exchange puede implementar un complemento si se agrega el rol **Administrador** de aplicaciones o si la propiedad **Registros** de aplicaciones está establecida en true en el Centro de administración de Azure Active Directory, como se muestra en la siguiente imagen:
 >
 > ![imagen](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
@@ -98,7 +98,7 @@ Con el Comprobador de compatibilidad de implementación centralizada, puede comp
 
 1. Inicie una ventana de PowerShell.exe con privilegios elevados.
 
-2. Ejecute el siguiente comando:
+2. Ejecute el comando siguiente:
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -120,18 +120,18 @@ Cuando la herramienta completa el proceso, genera un archivo de salida en format
 - Nombre de usuario
 - Id. de usuario (dirección de correo electrónico del usuario)
 - Preparado para la Implementación centralizada: si los elementos restantes son ciertos
-- plan de Office: el plan de Office para el que tienen licencia
+- Plan de Office: el plan de Office para el que tienen licencia
 - Office activado: si Office está activado
 - Buzón compatible: si están en un buzón habilitado para OAuth
 
-Si los informes de Microsoft 365 muestran nombres de usuario anónimos en lugar de nombres de usuario reales, corrija este problema cambiando la configuración de informes en Centro de administración de Microsoft 365. Para ver los pasos detallados, consulte [Microsoft 365 informes muestran nombres de usuario anónimos en lugar de nombres de usuario reales](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
+Si los informes de Microsoft 365 muestran nombres de usuario anónimos en lugar de nombres de usuario reales, corrija este problema cambiando la configuración de informes en Centro de administración de Microsoft 365. Para obtener pasos detallados, consulte [Informes de Microsoft 365 que muestran nombres de usuario anónimos en lugar de nombres de usuario reales](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
 
 > [!NOTE]
 > No se admite la autenticación multifactor cuando se usa el módulo de PowerShell de implementación central. El módulo solo funciona con la autenticación básica.
 
 ## <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
 
-La característica Implementación centralizada admite actualmente la mayoría de los grupos admitidos por Azure Active Directory, incluidos Microsoft 365 grupos, listas de distribución y grupos de seguridad.
+La característica Implementación centralizada admite actualmente la mayoría de los grupos admitidos por Azure Active Directory, incluidos los grupos de Microsoft 365, las listas de distribución, los grupos dinámicos y los grupos de seguridad.
 
 > [!NOTE]
 > Los grupos de seguridad no habilitados para correo no son compatibles en estos momentos.
@@ -146,7 +146,7 @@ Eche un vistazo al siguiente ejemplo, en el que Sandra, Sheila y el grupo del de
 
 La forma más sencilla de detectar si un grupo contiene grupos anidados es ver la tarjeta de contacto del grupo en Outlook. Si escribe el nombre del grupo en el campo **Para** de un correo electrónico y, a continuación, selecciona el nombre del grupo cuando se resuelve, se mostrará si contiene usuarios o grupos anidados. En el ejemplo siguiente, la pestaña **Miembros** de la tarjeta de contacto de Outlook del grupo de pruebas no muestra usuarios, solo dos subgrupos.
 
-![Pestaña Miembros de Outlook tarjeta de contacto.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Pestaña Miembros de la tarjeta de contacto de Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede ver en la pestaña **Miembros** de la tarjeta de contacto de Outlook que el Subgrupo 1 es miembro del grupo de pruebas.
 
@@ -156,7 +156,7 @@ De forma alternativa, puede usar la API de Graph Azure Active Directory para eje
 
 ### <a name="contacting-microsoft-for-support"></a>Ponerse en contacto con Microsoft para obtener soporte técnico
 
-Si usted o los usuarios encuentran problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que tenga que ponerse en contacto con el soporte técnico de Microsoft ([obtenga información sobre cómo](../../business-video/get-help-support.md) hacerlo). Proporcione la siguiente información sobre el entorno de Microsoft 365 en la incidencia de soporte técnico.
+Si usted o los usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que tenga que ponerse en contacto con el soporte técnico de Microsoft ([obtenga información sobre cómo](../../business-video/get-help-support.md) hacerlo. Proporcione la siguiente información sobre el entorno de Microsoft 365 en la incidencia de soporte técnico.
 
 |Plataforma|Información de depuración|
 |---|---|
@@ -168,4 +168,4 @@ Si usted o los usuarios encuentran problemas para cargar el complemento mientras
 [Implementar complementos en el centro de administración](../manage/manage-deployment-of-add-ins.md) (artículo)\
 [Administrar complementos en el Centro de administración](manage-addins-in-the-admin-center.md) (artículo)\
 [Preguntas más frecuentes sobre la implementación centralizada](../manage/centralized-deployment-faq.yml) (artículo)\
-[Actualice el Microsoft 365 para usuarios empresariales al cliente de Office más reciente](../setup/upgrade-users-to-latest-office-client.md) (artículo)
+[Actualice los usuarios de Microsoft 365 para empresas al cliente de Office más reciente](../setup/upgrade-users-to-latest-office-client.md) (artículo)

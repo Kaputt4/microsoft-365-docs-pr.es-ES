@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Datos adjuntos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd2a037ee8ffc87f64bf01b794b468242976fa0b
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 6ba76616e931810aadaeded61a30386c84e46029
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772607"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037542"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -39,6 +39,8 @@ Datos adjuntos seguros en [Microsoft Defender para Office 365](defender-for-offi
 
 La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en directivas de datos adjuntos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de datos adjuntos seguros que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configurar directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
+Si un archivo adjunto está cifrado o protegido con contraseña, no se puede examinar mediante datos adjuntos seguros. El mensaje con los datos adjuntos se entregará y el destinatario no recibirá ninguna advertencia de que los datos adjuntos seguros no hayan examinado el archivo.
+
 En la tabla siguiente se describen los escenarios de datos adjuntos seguros en Microsoft 365 y Office 365 organizaciones que incluyen Microsoft Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
 |Escenario|Resultado|
@@ -46,7 +48,7 @@ En la tabla siguiente se describen los escenarios de datos adjuntos seguros en M
 |La organización Microsoft 365 E5 pat no tiene configuradas directivas de datos adjuntos seguros.|Pat está protegido por datos adjuntos seguros debido a la directiva de seguridad preestablecida **de protección integrada** que se aplica a todos los destinatarios que no están definidos de otro modo en las directivas de datos adjuntos seguros.|
 |La organización de Lee tiene una directiva de datos adjuntos seguros que solo se aplica a los empleados financieros. Lee es miembro del departamento de ventas.|Lee y el resto del departamento de ventas están protegidos por datos adjuntos seguros debido a la directiva de seguridad preestablecida **de protección integrada** que se aplica a todos los destinatarios que no están definidos de otro modo en las directivas de datos adjuntos seguros.|
 |Ayer, un administrador de la organización de Jean creó una directiva de datos adjuntos seguros que se aplica a todos los empleados. A primera hora de hoy, Jean recibió un mensaje de correo electrónico que incluía un archivo adjunto.|Jean está protegido por datos adjuntos seguros debido a esa directiva de datos adjuntos seguros personalizados. <br/><br/> Normalmente, una nueva directiva tarda unos 30 minutos en surtir efecto.|
-|La organización de Chris tiene directivas de datos adjuntos seguros de larga duración para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por datos adjuntos seguros. <br/><br/> Si los destinatarios externos de una organización de Microsoft 365, los mensajes reenviados también están protegidos por datos adjuntos seguros.|
+|La organización de Chris tiene directivas de datos adjuntos seguros de larga duración para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por datos adjuntos seguros. <br/><br/> Si los destinatarios externos están en una organización de Microsoft 365, los mensajes reenviados también están protegidos por datos adjuntos seguros.|
 
 El análisis de datos adjuntos seguros tiene lugar en la misma región donde residen los datos de Microsoft 365. Para obtener más información sobre la geografía del centro de datos, consulte [¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
 
@@ -91,9 +93,9 @@ En esta sección se describe la configuración de directivas de datos adjuntos s
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+  > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+  > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 - **Prioridad**: si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 

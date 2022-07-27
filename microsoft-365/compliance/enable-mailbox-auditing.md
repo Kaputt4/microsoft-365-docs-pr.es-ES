@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominado "auditoría predeterminada de buzones" o "auditoría de buzones de correo de forma predeterminada"). Esta configuración significa que ciertas acciones realizadas por propietarios, delegados y administradores de buzones de correo se registran automáticamente en un registro de auditoría de buzones, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: c59e1e552f6598287c10adfb2661ec4d358529f9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627401"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037213"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -35,7 +35,7 @@ Estas son algunas ventajas de la auditoría de buzones de correo en de forma pre
 
 - La auditoría se habilita automáticamente al crear un nuevo buzón. No es necesario habilitarlo manualmente para los nuevos usuarios.
 - No es necesario administrar las acciones de buzón que se auditan. De forma predeterminada, se audita un conjunto predefinido de acciones de buzón para cada tipo de inicio de sesión (Administración, Delegado y Propietario).
-- Cuando Microsoft publica una nueva acción de buzón de correo, la acción podría agregarse automáticamente a la lista de acciones de buzón auditadas de forma predeterminada (siempre que el usuario tenga la licencia adecuada). Esto significa que no es necesario supervisar la incorporación de nuevas acciones en buzones de correo.
+- Cuando Microsoft publica una nueva acción de buzón de correo, es posible que la acción se agregue automáticamente a la lista de acciones de buzón auditadas de forma predeterminada (sujeto a que el usuario tenga la licencia adecuada). Esto significa que no es necesario supervisar la incorporación de nuevas acciones en buzones de correo.
 - Tiene una directiva de auditoría de buzones coherente en toda la organización (porque está auditando las mismas acciones para todos los buzones).
 
 > [!NOTE]
@@ -93,7 +93,7 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 - Un asterisco ( <sup>\*</sup> ) después de la marca de verificación indica que la acción del buzón se registra de forma predeterminada para el tipo de inicio de sesión.
 - Recuerde que un administrador con permiso de acceso completo a un buzón se considera un delegado.
 
-|Acción buzón|Descripción|Admin|Delegado|Owner|
+|Acción buzón|Descripción|Admin|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**ApplyRecord**|Un elemento se etiqueta como un registro.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|
@@ -116,7 +116,6 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 |**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**Actualizar**|Se ha cambiado un mensaje o cualquiera de sus propiedades.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Se asignó una delegación de calendario a un buzón de correo. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>||![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|Se aplica una etiqueta de retención diferente a un elemento de correo (un elemento solo puede tener una etiqueta de retención asignada).|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Se agregó, quitó o cambió una regla de bandeja de entrada. Las reglas de bandeja de entrada se usan para procesar mensajes en la Bandeja de entrada del usuario en función de las condiciones especificadas y realizar acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 
@@ -131,7 +130,7 @@ En la tabla siguiente se describen las acciones de buzón que se registran de fo
 
 Recuerde que un administrador con permiso de acceso completo para un buzón de correo de grupo de Microsoft 365 se considera un delegado.
 
-|Acción buzón|Descripción|Admin|Delegado|Owner|
+|Acción buzón|Descripción|Admin|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**Crear**|Creación de un elemento de calendario. No se audita la creación, el envío ni la recepción de un mensaje.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
