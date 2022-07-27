@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943875"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004375"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -67,8 +67,8 @@ Para crear y configurar directivas contra correo no deseado, consulte [Configura
 |**Umbral de correo electrónico masivo & propiedades de correo no deseado**|||||
 |**Umbral de correo electrónico masivo** <br><br> _BulkThreshold_|7 |6|4|Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Esta configuración solo está disponible en PowerShell.|
-|**Aumentar la configuración de puntuación de correo no deseado**|Desactivada|Desactivada|Desactivada|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
-|**Marcar como configuración de correo no deseado**|Desactivada|Desactivada|Desactivada|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
+|**Aumentar la configuración de puntuación de correo no deseado**|Desactivado|Desactivado|Desactivado|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
+|**Marcar como configuración de correo no deseado**|Desactivado|Desactivado|Desactivado|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
 |**Contiene idiomas específicos** <br><br> _EnableLanguageBlockList_ <br><br> _LanguageBlockList_|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes en lenguajes específicos en función de sus necesidades empresariales.|
 |**De estos países** <br><br> _EnableRegionBlockList_ <br><br> _RegionBlockList_|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes de países específicos en función de sus necesidades empresariales.|
 |**Modo de prueba** (_TestModeAction_)|**Ninguna**|**Ninguna**|**Ninguna**|Esta configuración forma parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
@@ -94,21 +94,21 @@ Para obtener más información sobre la configuración del filtro de correo no d
 
 |Nombre de la característica de seguridad|Predeterminado|Recomendado<br/>Estándar|Recomendado<br/>Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Vínculos de imagen a sitios remotos** <br><br> _IncreaseScoreWithImageLinks_|Desactivada|Desactivada|Desactivada||
-|**Dirección IP numérica en URL** <br><br> _IncreaseScoreWithNumericIps_|Desactivada|Desactivada|Desactivada||
-|**Redireccionamiento de direcciones URL a otro puerto** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Desactivada|Desactivada|Desactivada||
-|**Vínculos a sitios web .biz o .info** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Desactivada|Desactivada|Desactivada||
-|**Mensajes vacíos** <br><br> _MarkAsSpamEmptyMessages_|Desactivada|Desactivada|Desactivada||
-|**Etiquetas Embed en HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Desactivada|Desactivada|Desactivada||
-|**JavaScript o VBScript en HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Desactivada|Desactivada|Desactivada||
-|**Etiquetas Form en HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Desactivada|Desactivada|Desactivada||
-|**Etiquetas de marco o iframe en HTML** <br><br> _MarkAsSpamFramesInHtml_|Desactivada|Desactivada|Desactivada||
-|**Errores web en HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Desactivada|Desactivada|Desactivada||
-|**Etiquetas Object en HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Desactivada|Desactivada|Desactivada||
-|**Palabras confidenciales** <br><br> _MarkAsSpamSensitiveWordList_|Desactivada|Desactivada|Desactivada||
-|**Registro de SPF: error** <br><br> _MarkAsSpamSpfRecordHardFail_|Desactivada|Desactivada|Desactivada||
-|**Error de filtrado de identificador de remitente** <br><br> _MarkAsSpamFromAddressAuthFail_|Desactivada|Desactivada|Desactivada||
-|**Retrodispersión** <br><br> _MarkAsSpamNdrBackscatter_|Desactivada|Desactivada|Desactivada||
+|**Vínculos de imagen a sitios remotos** <br><br> _IncreaseScoreWithImageLinks_|Desactivado|Desactivado|Desactivado||
+|**Dirección IP numérica en URL** <br><br> _IncreaseScoreWithNumericIps_|Desactivado|Desactivado|Desactivado||
+|**Redireccionamiento de direcciones URL a otro puerto** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Desactivado|Desactivado|Desactivado||
+|**Vínculos a sitios web .biz o .info** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Desactivado|Desactivado|Desactivado||
+|**Mensajes vacíos** <br><br> _MarkAsSpamEmptyMessages_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas Embed en HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Desactivado|Desactivado|Desactivado||
+|**JavaScript o VBScript en HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas Form en HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas de marco o iframe en HTML** <br><br> _MarkAsSpamFramesInHtml_|Desactivado|Desactivado|Desactivado||
+|**Errores web en HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas Object en HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Desactivado|Desactivado|Desactivado||
+|**Palabras confidenciales** <br><br> _MarkAsSpamSensitiveWordList_|Desactivado|Desactivado|Desactivado||
+|**Registro de SPF: error** <br><br> _MarkAsSpamSpfRecordHardFail_|Desactivado|Desactivado|Desactivado||
+|**Error de filtrado de identificador de remitente** <br><br> _MarkAsSpamFromAddressAuthFail_|Desactivado|Desactivado|Desactivado||
+|**Retrodispersión** <br><br> _MarkAsSpamNdrBackscatter_|Desactivado|Desactivado|Desactivado||
 |**Modo de prueba** <br><br> _TestModeAction_)|Ninguno|Ninguno|Ninguno|En el caso de las opciones de ASF que admiten **Probar** como una acción, puede configurar la acción del modo de prueba en **Ninguno**, **Agregar texto de encabezado X predeterminado** o **Enviar mensaje cco** (`None`, `AddXHeader`o `BccMessage`). Para obtener más información, vea [Habilitar, deshabilitar o probar la configuración de ASF](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Configuración de la directiva de correo no deseado saliente de EOP
@@ -205,18 +205,18 @@ Para obtener más información sobre esta configuración, consulte [Configuraci�
 |**Protección & umbral de suplantación de identidad**|||||
 |**Permitir que los usuarios protejan** (protección de usuarios suplantados) <br><br> _EnableTargetedUserProtection_ <br><br> _TargetedUsersToProtect_|No seleccionada <br><br> `$false` <br><br> ninguno|Seleccionado <br><br> `$true` <br><br> \<list of users\>|Seleccionado <br><br> `$true` <br><br> \<list of users\>|Se recomienda agregar usuarios (remitentes de mensajes) en roles clave. Internamente, los remitentes protegidos pueden ser su director general, director financiero y otros líderes sénior. Externamente, los remitentes protegidos podrían incluir miembros del consejo o su consejo de administración.|
 |**Habilitar dominios para proteger** (protección de dominio suplantado)|No seleccionada|Seleccionado|Seleccionado||
-|**Incluir dominios de mi propiedad** <br><br> _EnableOrganizationDomainsProtection_|Desactivada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
-|**Incluir dominios personalizados** <br><br> _EnableTargetedDomainsProtection_ <br><br> _TargetedDomainsToProtect_|Desactivada <br><br> `$false` <br><br> ninguno|Seleccionado <br><br> `$true` <br><br> \<list of domains\>|Seleccionado <br><br> `$true` <br><br> \<list of domains\>|Se recomienda agregar dominios (dominios de remitente) que no posea, pero que interactúe con frecuencia.|
+|**Incluir dominios de mi propiedad** <br><br> _EnableOrganizationDomainsProtection_|Desactivado <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
+|**Incluir dominios personalizados** <br><br> _EnableTargetedDomainsProtection_ <br><br> _TargetedDomainsToProtect_|Desactivado <br><br> `$false` <br><br> ninguno|Seleccionado <br><br> `$true` <br><br> \<list of domains\>|Seleccionado <br><br> `$true` <br><br> \<list of domains\>|Se recomienda agregar dominios (dominios de remitente) que no posea, pero que interactúe con frecuencia.|
 |**Agregar dominios y remitentes de confianza** <br><br> _ExcludedSenders_ <br><br> _ExcludedDomains_|Ninguno|Ninguno|Ninguno|En función de su organización, se recomienda agregar remitentes o dominios que se identifiquen incorrectamente como intentos de suplantación.|
 |**Habilitar la inteligencia de buzones** <br><br> _EnableMailboxIntelligence_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
-|**Habilitación de la inteligencia para la protección contra suplantación** <br><br> _EnableMailboxIntelligenceProtection_|Desactivada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Esta configuración permite la acción especificada para las detecciones de suplantación por parte de la inteligencia del buzón de correo.|
+|**Habilitación de la inteligencia para la protección contra suplantación** <br><br> _EnableMailboxIntelligenceProtection_|Desactivado <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Esta configuración permite la acción especificada para las detecciones de suplantación por parte de la inteligencia del buzón de correo.|
 |**Acciones**||||Dondequiera que seleccione **Poner en cuarentena el mensaje**, hay disponible un cuadro **Seleccionar directiva de cuarentena** . Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. <br><br> Las directivas de seguridad preestablecidas estándar y estricta usan la directiva de cuarentena predeterminada (DefaultFullAccessPolicy sin notificaciones de cuarentena), como se describe en la tabla [aquí](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Cuando se crea una nueva directiva contra phishing, un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las funcionalidades históricas de los mensajes que ese veredicto ha puesto en cuarentena (DefaultFullAccessPolicy para todos los tipos de detección de suplantación). <br><br> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definan funcionalidades menos restrictivas o más restrictivas para los usuarios en las directivas de anti-phishing predeterminadas o personalizadas. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Si el mensaje se detecta como un usuario suplantado** <br><br> _TargetedUserProtectionAction_|**No aplicar ninguna acción** <br><br> `NoAction`|**Poner en cuarentena el mensaje** <br><br> `Quarantine`|**Poner en cuarentena el mensaje** <br><br> `Quarantine`||
 |**Si el mensaje se detecta como un dominio suplantado** <br><br> _TargetedDomainProtectionAction_|**No aplicar ninguna acción** <br><br> `NoAction`|**Poner en cuarentena el mensaje** <br><br> `Quarantine`|**Poner en cuarentena el mensaje** <br><br> `Quarantine`||
 |**Si la inteligencia del buzón detecta y suplanta al usuario** <br><br> _MailboxIntelligenceProtectionAction_|**No aplicar ninguna acción** <br><br> `NoAction`|**Mover el mensaje a las carpetas de Email no deseado de los destinatarios** <br><br> `MoveToJmf`|**Poner en cuarentena el mensaje** <br><br> `Quarantine`||
-|**Mostrar sugerencia de seguridad de suplantación de usuario** <br><br> _EnableSimilarUsersSafetyTips_|Desactivada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
-|**Mostrar sugerencia de seguridad de suplantación de dominio** <br><br> _EnableSimilarDomainsSafetyTips_|Desactivada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
-|**Mostrar sugerencia de seguridad de caracteres inusuales de suplantación de usuario** <br><br> _EnableUnusualCharactersSafetyTips_|Desactivada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
+|**Mostrar sugerencia de seguridad de suplantación de usuario** <br><br> _EnableSimilarUsersSafetyTips_|Desactivado <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
+|**Mostrar sugerencia de seguridad de suplantación de dominio** <br><br> _EnableSimilarDomainsSafetyTips_|Desactivado <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
+|**Mostrar sugerencia de seguridad de caracteres inusuales de suplantación de usuario** <br><br> _EnableUnusualCharactersSafetyTips_|Desactivado <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Configuración de directivas contra phishing de EOP en Microsoft Defender para Office 365
 
@@ -242,8 +242,8 @@ En PowerShell, se usa el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchan
 |Nombre de la característica de seguridad|Predeterminado|Protección integrada|Comentario|
 |---|:---:|:---:|---|
 |**Activar Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** <br><br> _EnableATPForSPOTeamsODB_|Desactivada <br><br> `$false`|Activada <br><br> `$true`|Para evitar que los usuarios descarguen archivos malintencionados, consulte [Uso de PowerShell de SharePoint Online para evitar que los usuarios descarguen archivos malintencionados](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Activar documentos seguros para clientes de Office** <br><br> _EnableSafeDocs_|Desactivada <br><br> `$false`|Activada <br><br> `$true`|Esta característica solo está disponible y es significativa con licencias que no se incluyen en Defender para Office 365 (por ejemplo, Microsoft 365 E5 o Seguridad de Microsoft 365 E5). Para obtener más información, consulte [Documentos seguros en Microsoft 365 E5](safe-docs.md).|
-|**Permitir a las personas hacer clic en la vista protegida incluso si documentos seguros identificaron el archivo como malintencionado** <br><br> _AllowSafeDocsOpen_|Desactivada <br><br> `$false`|Desactivada <br><br> `$false`|Esta configuración está relacionada con documentos seguros.|
+|**Activar documentos seguros para clientes de Office** <br><br> _EnableSafeDocs_|Desactivada <br><br> `$false`|Activada <br><br> `$true`|Esta característica solo está disponible y es significativa con licencias que no se incluyen en Defender para Office 365 (por ejemplo, Microsoft 365 A5 o Seguridad de Microsoft 365 E5). Para obtener más información, consulte [Documentos seguros en Microsoft 365 A5 o E5 Security](safe-docs.md).|
+|**Permitir a las personas hacer clic en la vista protegida incluso si documentos seguros identificaron el archivo como malintencionado** <br><br> _AllowSafeDocsOpen_|Desactivado <br><br> `$false`|Desactivado <br><br> `$false`|Esta configuración está relacionada con documentos seguros.|
 
 #### <a name="safe-attachments-policy-settings"></a>Configuración de directiva de datos adjuntos seguros
 
