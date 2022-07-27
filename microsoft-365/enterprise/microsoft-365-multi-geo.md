@@ -12,27 +12,27 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: En este artículo, aprenderá a expandir su presencia de Microsoft 365 a varias regiones geográficas con Microsoft 365 Multi-Geo.
+description: En este artículo, obtendrá información sobre cómo expandir la presencia de Microsoft 365 a varias regiones geográficas con Microsoft 365 Multi-Geo.
 ms.openlocfilehash: 154082785b71be8fbba55e00e2df8a1a3eacb500
 ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2022
 ms.locfileid: "66490218"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
-Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Microsoft 365 a varias regiones geográficas y países dentro de su espacio empresarial existente. Póngase en contacto con su equipo de cuentas de Microsoft para registrar su compañía multinacional a Microsoft 365 Multi-Geo.
+Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia de Microsoft 365 a varias regiones geográficas y/o países dentro de su inquilino existente. Póngase en contacto con su equipo de cuentas de Microsoft para registrar su compañía multinacional a Microsoft 365 Multi-Geo.
   
 Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar los datos en reposo en las ubicaciones geográficas que haya elegido para cumplir los requisitos de residencia de datos y, al mismo tiempo, puede permitir la implementación global de experiencias de productividad modernas para sus empleados.
 
-Para ver una introducción de vídeo a Microsoft 365 Multi-Geo, vea [SharePoint Online y OneDrive Multi-Geo para controlar dónde residen los datos](https://www.youtube.com/watch?v=Do9U3JuROhk).
+Para ver un vídeo de introducción a Microsoft 365 Multi-Geo, consulte [SharePoint Online and OneDrive Multi-Geo to control where your data resides](https://www.youtube.com/watch?v=Do9U3JuROhk).
 
-## <a name="multi-geo-architecture"></a>Arquitectura multigeográfica
+## <a name="multi-geo-architecture"></a>Arquitectura de Multi-Geo
 
 En un entorno multigeográfico, su espacio empresarial de Microsoft 365 cuenta con una ubicación central (donde se aprovisionó originalmente la suscripción a Microsoft 365) y una o varias ubicaciones satélites. En un espacio empresarial multigeográfico, la información sobre las ubicaciones geográficas, grupos y la información de usuario, se controla en Azure Active Directory (Azure AD). Como la información del espacio empresarial se controla de forma centralizada y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias que involucran a todos los empleados de su compañía comparten una conciencia global.
 
-![Captura de pantalla del mapa multigeográfica desde el Centro de administración de SharePoint.](../media/multi-geo-world-map.png)
+![Recorte de pantalla del mapa multigeográfico desde el Centro de administración de SharePoint](../media/multi-geo-world-map.png)
 
 Tenga en cuenta que Microsoft 365 Multi-Geo no está diseñado principalmente para optimizar el rendimiento, sino para cumplir con los requisitos de residencia de datos. Para obtener información sobre la optimización del rendimiento de Microsoft 365, vea [Network planning and performance tuning for Microsoft 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) (Planeamiento de red y ajuste de rendimiento para Microsoft 365) o póngase en contacto con su grupo de soporte técnico.
 
@@ -50,15 +50,15 @@ Estos son los términos clave utilizados para describir Microsoft 365 Multi-Geo:
 
 ## <a name="licensing"></a>Licencias
 
-Microsoft 365 Multi-Geo está disponible como complemento a los siguientes planes de suscripción de Microsoft 365 para Enterprise Agreement clientes con un mínimo de 250 puestos de Microsoft 365 en su inquilino y un mínimo del 5 % de esos puestos mediante multigeográfica. Las licencias de suscripción de usuario deben estar en el mismo Enterprise Agreement que las licencias de Multi-Geo Services. Póngase en contacto con el equipo de su cuenta de Microsoft para obtener más información.
+Microsoft 365 Multi-Geo está disponible como complemento en los siguientes planes de suscripción de Microsoft 365 para los clientes de Contrato Enterprise con un mínimo de 250 puestos de Microsoft 365 en su espacio empresarial y un mínimo del 5% de estos puestos con un entorno multigeográfico. Las licencias de suscripción del usuario deben estar en el mismo Contrato Enterprise que las licencias de Multi-Geo Services. Póngase en contacto con el equipo de su cuenta de Microsoft para obtener más información.
 
-- Microsoft 365 F1, F3, E3 o E5
-- Office 365 F3, E1, E3 o E5
+- Microsoft 365 F1, F3, E3 o E5
+- Office 365 F3, E1, E3 o E5
 - Exchange Online (plan 1 o plan 2)
 - OneDrive para la Empresa (plan 1 o plan 2)
 - SharePoint Online (plan 1 o plan 2)
 
-Si se asigna una licencia a un usuario y se quita más adelante, los datos de chat de usuario de Teams se ponen en cola para volver a la ubicación central. Los datos de SharePoint y Exchange no se mueven.
+Si se asigna una licencia a un usuario y más adelante se quita, los datos del chat de usuario de Teams se ponen en cola para volver a moverse a la ubicación central. Los datos de SharePoint y Exchange no se mueven.
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Disponibilidad de Microsoft 365 Multi-Geo
 
@@ -72,7 +72,7 @@ Siga estos pasos para empezar a usar Multi-Geo:
 
 1. Trabaje con el equipo de cuentas para agregar el plan de servicio _Funciones multigeográficas en Microsoft 365_. Le guiará para agregar el número de licencias necesarias. La característica multigeográfica está disponible actualmente para los clientes EA con un mínimo de 250 suscripciones a Microsoft 365.
 
-   Antes de empezar a usar Microsoft 365 Multi-Geo, Microsoft necesita configurar el espacio empresarial de Exchange Online para la compatibilidad con Multi-Geo. Este proceso de configuración única se activa después de pedir el plan de servicio de las *Capacidades multigeográficas de Microsoft 365* y después de que las licencias se muestren en el espacio empresarial. Recibirá notificaciones específicas de la carga de trabajo en el Centro de mensajes de [Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una vez que el inquilino haya completado el proceso de configuración de cada carga de trabajo y, a continuación, puede empezar a configurar y usar las funcionalidades multigeográficas de Microsoft 365. El tiempo necesario para configurar un inquilino para la compatibilidad multigeográfica varía de inquilino a inquilino, pero la mayoría de los inquilinos finalizan en un mes después de recibir las licencias de características. Los inquilinos más grandes o más complejos pueden requerir más tiempo para completar el proceso de configuración. Póngase en contacto con el equipo de su cuenta para obtener más información sobre su inquilino específico en caso de que lo necesite.
+   Antes de empezar a usar Microsoft 365 Multi-Geo, Microsoft necesita configurar el espacio empresarial de Exchange Online para la compatibilidad con Multi-Geo. Este proceso de configuración única se activa después de pedir el plan de servicio de las *Capacidades multigeográficas de Microsoft 365* y después de que las licencias se muestren en el espacio empresarial. Recibirá notificaciones específicas de las cargas de trabajo en el [Centro de mensajes de Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una vez que el espacio empresarial haya completado el proceso de configuración de cada una de ellas. A continuación, podrá empezar a configurar y usar Multi-Geo Capabilities de Microsoft 365. El tiempo necesario para configurar un espacio empresarial de modo que sea compatible con Multi-Geo varía en función del espacio empresarial, aunque normalmente se tarda un mes desde que se reciben las licencias de la característica. Es posible que los espacios empresariales más grandes o más complejos requieran más tiempo para completar el proceso de configuración. Ponte en contacto con el equipo de tu cuenta para obtener más información sobre tu espacio empresarial en caso de que lo necesites.
 
 2. Lea [Planificar el entorno multigeográfico](plan-for-multi-geo.md).
 
