@@ -12,11 +12,11 @@ metadata:
   ms.date: 05/23/2022
   ms.localizationpriority: high
   ms.openlocfilehash: 3c4dac9b2aebd3a766ef8fd57f5bcc6473dbc329
-  ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
-  ms.translationtype: MT
+  ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+  ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/05/2022
-  ms.locfileid: "66616901"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66998468"
 landingContent:
 - title: Introducción
   linkLists:
@@ -94,7 +94,7 @@ landingContent:
       url: add-users/change-a-user-name-and-email-address.md
     - text: Mover usuarios a una suscripción diferente
       url: ../commerce/try-or-buy-microsoft-365.md
-- title: Administración de licencias y facturación
+- title: Administrar licencias y facturación
   linkLists:
   - linkListType: video
     links:
@@ -150,13 +150,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Configuración de la migración de Microsoft 365 para Google Workspace
+    - text: Configurar Microsoft 365 para la migración a Google Workspace
       url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
     - text: Agregue su dominio de Google Workspace a Microsoft 365
       url: moveto-microsoft-365/add-google-domain.md
-    - text: Migración del calendario y el correo electrónico empresarial desde Google Workspace
+    - text: Migrar el calendario y el correo electrónico empresarial desde Google Workspace
       url: moveto-microsoft-365/migrate-email.md
-    - text: Conexión del dominio a Microsoft 365 para empresas
+    - text: Conectar el dominio a Microsoft 365 para empresas
       url: moveto-microsoft-365/connect-domain-tom365.md
-    - text: Migración de archivos de Google a Microsoft 365 para empresas con El Administrador de migración
+    - text: Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
       url: moveto-microsoft-365/migrate-files-migration-manager.md

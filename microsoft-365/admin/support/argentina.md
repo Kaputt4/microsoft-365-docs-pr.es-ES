@@ -14,12 +14,12 @@ description: Obtenga información acerca de cómo ponerse en contacto con el sop
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 3d4c3076b3c1090bade0706bbc8ab23f6716dcd7
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61371477"
 ---
-# <a name="contact-support-for-argentina"></a>Póngase en contacto con el soporte técnico de Argentina
+# <a name="contact-support-for-argentina"></a>Póngase en contacto con el soporte técnico para Argentina
 
 [Buscar otro país o región](../get-help-support.md).
 
@@ -35,6 +35,6 @@ Español: lunes a viernes de 9:00 a 17:00
 
 Español: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 011 5354 2347
+Número de teléfono alternativo: 011 5354 2347
 
 Se aplican tarifas de llamada local
