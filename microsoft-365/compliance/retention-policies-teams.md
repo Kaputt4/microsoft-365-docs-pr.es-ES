@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
-ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943406"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037524"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -44,7 +44,7 @@ Para otras cargas de trabajo, vea:
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 > [!NOTE]
-> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Los canales compartidos heredan la configuración de retención del canal primario.
+> Las directivas de retención admiten [ canales compartidos](/MicrosoftTeams/shared-channels). Los canales compartidos heredan la configuración de retención del canal primario.
 
 Los mensajes de los chats de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
 
