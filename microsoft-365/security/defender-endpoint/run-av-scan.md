@@ -1,7 +1,8 @@
 ---
 title: Ejecutar LA API de detección antivirus
 description: Usa esta API para crear llamadas relacionadas con la ejecución de un examen antivirus en un dispositivo.
-keywords: 'api, api de gráfico, api admitidas, quitar el dispositivo del aislamiento'
+keywords: api, api de gráfico, api admitidas, quitar el dispositivo del aislamiento
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,15 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
+ms.openlocfilehash: f72c9c21318e7a571a7f6f47e825675e772ce7af
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163223"
 ---
-
 # <a name="run-antivirus-scan-api"></a>Ejecutar LA API de detección antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,8 +49,8 @@ Inicie Antivirus de Microsoft Defender examen en un dispositivo.
 
 > [!IMPORTANT]
 >
-> - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior y en Windows 11.
-> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
+> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## <a name="permissions"></a>Permisos
 
@@ -58,8 +64,8 @@ Delegado (cuenta profesional o educativa)|Machine.Scan|'Máquina de digitalizaci
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y administrar roles](user-roles.md) para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta [Crear y administrar grupos de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -78,15 +84,15 @@ Content-Type|string|application/json
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-ScanType|String|Define el tipo de examen. **Necesario**.
+ScanType|Cadena|Define el tipo de examen. **Necesario**.
 
 **ScanType** controla el tipo de examen que se va a realizar y puede ser uno de los siguientes:
 
-- **Rápido**: realizar un examen rápido en el dispositivo
-- **Completo**: realizar un examen completo en el dispositivo
+- **Rápido:** realizar un examen rápido en el dispositivo
+- **Full**: Realizar un examen completo en el dispositivo
 
 ## <a name="response"></a>Respuesta
 
