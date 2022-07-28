@@ -1,7 +1,7 @@
 ---
-title: API de entidades de alerta de actualización por lotes
-description: Obtenga información sobre cómo actualizar alertas de Microsoft Defender para endpoints en un lote mediante esta API. Puede actualizar las propiedades status, determination, classification y assignedTo.
-keywords: apis, api de gráficos, api admitidas, get, alert, information, id
+title: API de entidades de alertas de actualización por lotes
+description: Obtenga información sobre cómo actualizar Microsoft Defender para punto de conexión alertas en un lote mediante esta API. Puede actualizar las propiedades status, determination, classification y assignedTo.
+keywords: apis, graph api, api admitidas, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283646"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059851"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -40,31 +40,31 @@ ms.locfileid: "61283646"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Actualiza las propiedades de un lote de alertas [existentes](alerts.md).
+Novedades propiedades de un lote de [alertas](alerts.md) existentes.
 
-El envío **de comentarios** está disponible con o sin actualizar propiedades.
+El envío de **comentario** está disponible con o sin actualizar las propiedades.
 
-Las propiedades actualizables son: `status` `determination` , y `classification` `assignedTo` .
+Las propiedades actualizables son: `status`, `determination``classification` y `assignedTo`.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puede actualizar las alertas que están disponibles en la API. Vea [Enumerar alertas](get-alerts.md) para obtener más información.
-2. Las limitaciones de velocidad para esta API son 10 llamadas por minuto y 500 llamadas por hora.
+1. Puede actualizar las alertas que están disponibles en la API. Consulte [Lista de alertas](get-alerts.md) para obtener más información.
+2. Las limitaciones de velocidad de esta API son 10 llamadas por minuto y 500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Aplicación | Alert.ReadWrite.All | "Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -79,26 +79,29 @@ Nombre|Tipo|Descripción
 Authorization | String | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
-En el cuerpo de la solicitud, proporcione los IDs de las alertas que se actualizarán y los valores de los campos relevantes que desea actualizar para estas alertas.
+En el cuerpo de la solicitud, proporcione los identificadores de las alertas que se van a actualizar y los valores de los campos pertinentes que desea actualizar para estas alertas.
 
 Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad.
 
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Descripción
+Propiedad | Tipo | Description
 :---|:---|:---
-alertIds | Cadena de &lt; lista&gt;| Una lista de los IDs de las alertas que se actualizarán. **Required**
-status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+alertIds | Cadena de lista&lt;&gt;| Una lista de los identificadores de las alertas que se van a actualizar. **Required**
+status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: "New", "InProgress" y "Resolved".
 assignedTo | Cadena | Propietario de las alertas especificadas
-classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
-determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
-comment | String | Comentario que se agregará a las alertas especificadas.
+classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: "True positive", "Informational, expected activity" y "False positive".
+Determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+comment | String | Comentario que se va a agregar a las alertas especificadas.
+
+>[!NOTE]
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok, con un cuerpo de respuesta vacío.
+Si se ejecuta correctamente, este método devuelve 200 OK, con un cuerpo de respuesta vacío.
 
 ## <a name="example"></a>Ejemplo
 

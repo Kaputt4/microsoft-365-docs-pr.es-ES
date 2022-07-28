@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 9b2e3e540538c3757d49264d93929b1dc9c836ca
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663719"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059785"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -112,7 +112,7 @@ Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defe
 
 | Origen de alerta | Carácter antepuesto |
 | :---|:--- |
-| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -121,7 +121,7 @@ Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defe
 
 La sección **Acciones realizadas** tiene una lista de recursos afectados, como buzones, dispositivos y usuarios afectados por esta alerta. 
 
-También puede seleccionar **Ver en el centro de acciones** para ver la pestaña **Historial** del **Centro de acciones** en el portal de Microsoft 365 Defender. 
+También puede seleccionar **Ver en el centro de acciones** para ver la pestaña **Historial** del **Centro de acciones** en el portal de Microsoft 365 Defender.
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alertas
 
@@ -147,16 +147,14 @@ El panel **Administrar alertas** permite ver o especificar:
 - Estado de la alerta (Nuevo, Resuelto, En curso).
 - La cuenta de usuario a la que se ha asignado la alerta.
 - Clasificación de la alerta:
-
-   - **No establecido** (valor predeterminado).
-
-   - **Verdadero positivo** con un tipo de amenaza. Use esta clasificación para las alertas que indican con precisión una amenaza real. La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos.
-
-   - **Actividad informativa y esperada** con un tipo de actividad. Use las opciones de esta categoría para clasificar las alertas de las pruebas de seguridad, la actividad del equipo rojo y el comportamiento inusual esperado de aplicaciones y usuarios de confianza.
-
-   - **Falso positivo** para los tipos de alertas que se crearon incluso cuando no hay ninguna actividad malintencionada. La clasificación de alertas como falsos positivos ayuda a Microsoft 365 Defender a mejorar su calidad de detección.
-
+     - **No establecido** (valor predeterminado).
+     - **Verdadero positivo** con un tipo de amenaza. Use esta clasificación para las alertas que indican con precisión una amenaza real. Al especificar este tipo de amenaza, el equipo de seguridad verá patrones de amenazas y actuará para defender su organización de ellos.
+     - **Actividad informativa y esperada** con un tipo de actividad. Use esta opción para las alertas que sean técnicamente precisas, pero que representen un comportamiento normal o una actividad de amenaza simulada. Por lo general, quiere omitir estas alertas, pero esperarlas para actividades similares en el futuro, donde las actividades las desencadenan atacantes o malware reales. Use las opciones de esta categoría para clasificar las alertas de las pruebas de seguridad, la actividad del equipo rojo y el comportamiento inusual esperado de aplicaciones y usuarios de confianza.
+     - **Falso positivo** para los tipos de alertas que se crearon incluso cuando no hay ninguna actividad malintencionada o para una falsa alarma. Use las opciones de esta categoría para clasificar las alertas que se identifican erróneamente como eventos o actividades normales como malintencionados o sospechosos. A diferencia de las alertas de "Actividad informativa y esperada", que también puede ser útil para detectar amenazas reales, por lo general no quiere volver a ver estas alertas. La clasificación de alertas como falsos positivos ayuda a Microsoft 365 Defender a mejorar su calidad de detección.
 - Comentario sobre la alerta.
+
+>[!NOTE]
+> Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
 
 > [!NOTE]
 > Una forma de administrar las alertas mediante el uso de etiquetas. La funcionalidad de etiquetado para Microsoft Defender para Office 365 se está implementando de forma incremental y se encuentra actualmente en versión preliminar. <br>
@@ -289,7 +287,7 @@ Para crear la automatización, necesitará un token de API para poder conectar P
 Vea este breve vídeo para obtener información sobre cómo funciona la automatización de forma eficaz para crear un flujo de trabajo fluido y cómo conectar Power Automate a Defender for Cloud Apps. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en proceso, continúe con la [investigación](investigate-incidents.md).
 

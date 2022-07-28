@@ -1,6 +1,6 @@
 ---
-title: ACTUALIZAR API de incidentes
-description: Obtenga información sobre cómo actualizar incidentes con Microsoft 365 Defender API
+title: Actualización de la API de incidentes
+description: Obtenga información sobre cómo actualizar incidentes mediante Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 447a4b5eb3f4eb521e7cc3bd2df23a42f16d2ef1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171855"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059752"
 ---
-# <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
+# <a name="update-incidents-api"></a>Actualización de la API de incidentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,20 +41,20 @@ ms.locfileid: "62171855"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Actualiza las propiedades del incidente existente. Las propiedades actualizables son: `status` , , , , y `determination` `classification` `assignedTo` `tags` `comments` .
+Novedades propiedades del incidente existente. Las propiedades actualizables son: `status`, `determination`, `classification`, `assignedTo`, `tags`y `comments`.
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Cuotas, asignación de recursos y otras restricciones
 
-1. Puede hacer hasta 50 llamadas por minuto o 1500 llamadas por hora antes de alcanzar el umbral de limitación.
-2. Solo puede establecer la `determination` propiedad si está establecida en `classification` TruePositive.
+1. Puede realizar hasta 50 llamadas por minuto o 1500 llamadas por hora antes de alcanzar el umbral de limitación.
+2. Solo puede establecer la `determination` propiedad si `classification` está establecida en TruePositive.
 
-Si la solicitud está limitada, devolverá un `429` código de respuesta. El cuerpo de la respuesta indicará la hora en que puede empezar a realizar llamadas nuevas.
+Si la solicitud está limitada, devolverá un código de `429` respuesta. El cuerpo de la respuesta indicará el momento en que puede empezar a realizar nuevas llamadas.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft 365 Defender API](api-access.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Acceso a las API de Microsoft 365 Defender](api-access.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
 Aplicación|Incident.ReadWrite.All|Leer y escribir todos los incidentes
 Delegado (cuenta profesional o educativa)|Incident.ReadWrite|Incidentes de lectura y escritura
@@ -72,25 +72,28 @@ PATCH /api/incidents/{id}
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|Cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 
-En el cuerpo de la solicitud, proporcione los valores de los campos que deben actualizarse. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a los cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
+En el cuerpo de la solicitud, proporcione los valores de los campos que se deben actualizar. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
 
-Propiedad|Tipo|Descripción
+Propiedad|Tipo|Description
 ---|---|---
-status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active` `Resolved` , y `Redirected` .
+status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active`, `Resolved`y `Redirected`.
 assignedTo|string|Propietario del incidente.
 classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
-determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
-tags|lista de cadenas|Lista de etiquetas de incidentes.
-comment|string|Comentario que se agregará al incidente.
+Determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
+tags|string List|Lista de etiquetas de incidentes.
+comment|string|Comentario que se va a agregar al incidente.
+
+>[!NOTE]
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve `200 OK` . El cuerpo de la respuesta contendrá la entidad incident con propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found` .
+Si se ejecuta correctamente, este método devuelve `200 OK`. El cuerpo de la respuesta contendrá la entidad de incidente con las propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found`.
 
 ## <a name="example"></a>Ejemplo
 
@@ -128,9 +131,9 @@ Este es un ejemplo de la solicitud.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
-- [Más información sobre los límites de api y las licencias](api-terms.md)
-- [Comprender códigos de error](api-error-codes.md)
+- [Acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Más información sobre los límites de API y las licencias](api-terms.md)
+- [Descripción de los códigos de error](api-error-codes.md)
 - [API de incidentes](api-incident.md)
 - [Lista de Incidentes](api-list-incidents.md)
 - [Información general sobre incidentes](incidents-overview.md)

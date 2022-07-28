@@ -1,7 +1,7 @@
 ---
-title: OBTENER API de alertas
-description: Obtenga información sobre los métodos y propiedades del tipo de recurso Alert en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, alerts, recent
+title: Obtención de la API de alertas
+description: Obtenga información sobre los métodos y propiedades del tipo de recurso Alert en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284390"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059840"
 ---
-# <a name="alert-resource-type"></a>Tipo de recurso Alert
+# <a name="alert-resource-type"></a>Tipo de recurso de alerta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,16 +43,16 @@ ms.locfileid: "61284390"
 
 |Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
-|[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único [objeto de](alerts.md) alerta.|
-|[Listar alertas](get-alerts.md)|[Colección Alert](alerts.md)|Enumerar [la colección de](alerts.md) alertas.|
-|[Update alert](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
-|[Alertas de actualización por lotes](batch-update-alerts.md)||Actualizar un lote de [alertas](alerts.md).|
-|[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).|
-|[Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain|Enumerar las direcciones URL asociadas con la alerta.|
-|[Enumerar archivos relacionados](get-alert-related-files-info.md)|[Colección de](files.md) archivos|Enumerar [las entidades](files.md) de archivo asociadas a la [alerta](alerts.md).|
-|[Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md)|Colección IP|Enumerar direcciones IP asociadas a la alerta.|
-|[Obtener máquinas relacionadas](get-alert-related-machine-info.md)|[Máquina](machine.md)|El [equipo](machine.md) asociado a la [alerta](alerts.md).|
-|[Obtener usuarios relacionados](get-alert-related-user-info.md)|[Usuario](user.md)|El [usuario](user.md) asociado a la [alerta](alerts.md).|
+|[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único objeto [de alerta](alerts.md) .|
+|[Listar alertas](get-alerts.md)|[Colección de alertas](alerts.md)|Enumera la colección de [alertas](alerts.md) .|
+|[Update alert](update-alert.md)|[Alerta](alerts.md)|Actualice [una alerta](alerts.md) específica.|
+|[Alertas de actualización por lotes](batch-update-alerts.md)||Actualice un lote de [alertas](alerts.md).|
+|[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Cree una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).|
+|[Enumeración de dominios relacionados](get-alert-related-domain-info.md)|Colección de dominios|Enumera las direcciones URL asociadas a la alerta.|
+|[Enumerar archivos relacionados](get-alert-related-files-info.md)|[Colección de archivos](files.md)|Enumere las entidades de [archivo](files.md) asociadas a la [alerta](alerts.md).|
+|[Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md)|Colección ip|Enumera las direcciones IP asociadas a la alerta.|
+|[Obtener máquinas relacionadas](get-alert-related-machine-info.md)|[Máquina](machine.md)|La [máquina](machine.md) asociada a la [alerta](alerts.md).|
+|[Obtener usuarios relacionados](get-alert-related-user-info.md)|[Usuario](user.md)|El [usuario](user.md) que está asociado a la [alerta](alerts.md).|
 |
 
 ## <a name="properties"></a>Propiedades
@@ -63,38 +63,41 @@ ms.locfileid: "61284390"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|String|Id. de alerta.|
+|id|String|Identificador de alerta.|
 |title|String|Título de la alerta.|
 |description|String|Descripción de la alerta.|
-|alertCreationTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) se creó la alerta.|
+|alertCreationTime|DateTimeOffset que admite valores NULL|Fecha y hora (en UTC) en la que se creó la alerta.|
 |lastEventTime|DateTimeOffset que admite valores NULL|La última aparición del evento que desencadenó la alerta en el mismo dispositivo.|
 |firstEventTime|DateTimeOffset que admite valores NULL|La primera aparición del evento que desencadenó la alerta en ese dispositivo.|
-|lastUpdateTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) la alerta se actualizó por última vez.|
-|resolvedTime|DateTimeOffset que admite valores NULL|La fecha y hora en que se cambió el estado de la alerta a "Resuelto".|
-|incidentId|Long que admite valores NULL|El [identificador de](view-incidents-queue.md) incidente de la alerta.|
-|investigationId|Long que admite valores NULL|El [identificador de](automated-investigations.md) investigación relacionado con la alerta.|
-|investigationState|Enumeración que admite valores null|El estado actual de la [investigación](automated-investigations.md). Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|lastUpdateTime|DateTimeOffset que admite valores NULL|Fecha y hora (en UTC) que la alerta se actualizó por última vez.|
+|resolvedTime|DateTimeOffset que admite valores NULL|Fecha y hora en que se cambió el estado de la alerta a "Resuelto".|
+|incidentId|Long que acepta valores NULL|Identificador [de incidente](view-incidents-queue.md) de la alerta.|
+|investigationId|Long que acepta valores NULL|Identificador [de investigación](automated-investigations.md) relacionado con la alerta.|
+|investigationState|Enumeración que acepta valores NULL|Estado actual de la [investigación](automated-investigations.md). Los valores posibles son: "Desconocido", 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
 |assignedTo|String|Propietario de la alerta.|
 |rbacGroupName|String|Nombre del grupo de dispositivos RBAC.|
-|mitreTechniques|String|Mitre Enterprise id. de técnica.|
-|relatedUser|String|Detalles del usuario relacionados con una alerta específica.|
-|severity|Enum|Gravedad de la alerta. Los valores posibles son: 'UnSpecified', 'Informational', 'Low', 'Medium' y 'High'.|
-|status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Desconocido", "Nuevo", "InProgress" y "Resuelto".|
-|classification|Enumeración que admite valores null|Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.|
-|determinación|Enumeración que admite valores null|Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|mitreTechniques|Cadena|Identificador de técnica de Mitre Enterprise.|
+|relatedUser|Cadena|Detalles del usuario relacionados con una alerta específica.|
+|severity|Enum|Gravedad de la alerta. Los valores posibles son: "UnSpecified", "Informational", "Low", "Medium" y "High".|
+|status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Unknown", "New", "InProgress" y "Resolved".|
+|classification|Enumeración que acepta valores NULL|Especificación de la alerta. Los valores posibles son: "Unknown", "FalsePositive", "TruePositive".|
+|Determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
 |categoría|Cadena|Categoría de la alerta.|
 |detectionSource|String|Origen de detección.|
 |threatFamilyName|String|Familia de amenazas.|
 |threatName|String|Nombre de la amenaza.|
-|machineId|String|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
-|computerDnsName|String|[nombre](machine.md) completo de la máquina.|
-|aadTenantId|String|El Azure Active Directory de usuario.|
-|detectorId|String|El identificador del detector que desencadenó la alerta.|
-|comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.|
+|machineId|String|Identificador de una entidad de [máquina](machine.md) asociada a la alerta.|
+|computerDnsName|String|nombre completo de [la máquina](machine.md).|
+|aadTenantId|String|Identificador de Azure Active Directory.|
+|detectorId|String|Identificador del detector que desencadenó la alerta.|
+|comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.|
 |Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
 |
 
-### <a name="response-example-for-getting-single-alert"></a>Ejemplo de respuesta para obtener una sola alerta:
+>[!NOTE]
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
+
+### <a name="response-example-for-getting-single-alert"></a>Ejemplo de respuesta para obtener una única alerta:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609

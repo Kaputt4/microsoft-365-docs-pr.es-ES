@@ -18,12 +18,12 @@ ms.custom:
 description: La cadena de recepción autenticada (ARC) es la autenticación del correo electrónico que intenta preservar los resultados de la autenticación a través de los dispositivos y cualquier flujo de correo indirecto que se interponga entre el remitente y el destinatario. Aquí se muestra cómo realizar excepciones para los remitentes ARC de confianza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66998153"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059653"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Crear una lista de remitentes ARC de confianza para confiar en los flujos de correo indirectos *legítimos* 
 
@@ -107,7 +107,7 @@ header.from=contoso.com;compauth=pass reason=130
 
 **Los administradores también pueden configurar las configuraciones ARC con Exchange Online PowerShell.**
 
-1. Conectarse a Exchange Online mediante PowerShell.
+1. Conéctese a Exchange Online PowerShell.
 2. Connect-ExchangeOnline.
 3. Para agregar o actualizar un dominio en un sealer ARC de confianza:
 </br>
@@ -140,6 +140,6 @@ Aquí verá la misma organización **después de aprovechar la capacidad de crea
 
 ## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>Próximos pasos: después de configurar ARC para Microsoft 365 Defender para Office
 
-Después de la configuración, compruebe los encabezados ARC con el [Analizador de encabezados de mensaje](/connectivity-analyzer/message-header-analyzer).
+Después de la configuración, compruebe los encabezados ARC con el [Analizador de encabezados de mensaje](https://mha.azurewebsites.net).
 
 Revise los pasos de configuración [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) y [DMARC](use-dmarc-to-validate-email.md).
