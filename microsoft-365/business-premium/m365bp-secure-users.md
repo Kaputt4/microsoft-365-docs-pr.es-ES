@@ -1,5 +1,5 @@
 ---
-title: Cómo Microsoft 365 Empresa Premium ayuda a su negocio
+title: 'Microsoft 365 Empresa Premium: productividad y seguridad'
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/26/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,20 +19,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Más información sobre Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad
-ms.openlocfilehash: 9d4faf1f954b750d2710a946ad1632e4913809fe
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: Más información sobre cómo Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad de manera más segura.
+ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892801"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037696"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Cómo Microsoft 365 Empresa Premium ayuda a su negocio
+# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>Productividad y seguridad para pequeñas y medianas empresas 
 
-Microsoft 365 Empresa Premium es una solución rentable que permite a las pequeñas y medianas empresas trabajar de forma más eficiente y segura que antes. En este artículo se describe cómo Microsoft 365 Empresa Premium puede ayudar a su empresa o campaña. En este artículo se incluyen las siguientes secciones:
+Microsoft 365 Empresa Premium es una solución completa de seguridad y productividad en la nube diseñada y creada para pequeñas y medianas empresas (de 1 a 300 empleados). Con Microsoft 365 Empresa Premium, será capaz de:
+
+- Permitir que los empleados estén conectados y sean productivos, ya trabajen de forma presencial como de forma remota, con las mejores herramientas de colaboración, como Microsoft Teams.
+- Proporcionar a sus empleados acceso seguro a sus aplicaciones y datos empresariales, y ayudar a garantizar que solo el personal autorizado pueda acceder a datos de trabajo confidenciales.
+- Defenderse contra ciberamenazas sofisticadas y proteger sus datos empresariales con protección contra la suplantación de identidad (phishing), el ransomware y la pérdida de datos.
+- Administrar y proteger los dispositivos (Windows, Mac, iOS y Android) que se conectan a los datos y mantener actualizados dichos dispositivos.
+
+Microsoft 365 Empresa Premium le ofrece una solución completa para la productividad y la seguridad. Como administrador o profesional de TI, tiene todo lo que necesita en un solo lugar para encargarse de la administración, la facturación y el soporte técnico ininterrumpido, a la vez que reduce los costes y simplifica su negocio. En este artículo se describe de qué manera puede ayudar Microsoft 365 Empresa Premium a su empresa o campaña, e incluye las secciones siguientes:
 
 - [Vídeo: Cinco principales ventajas de Microsoft 365 Empresa Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
-- [Funcionalidades de productividad y seguridad avanzadas](#productivity-and-security) que le permiten ejecutar su negocio de forma más segura, en todos los dispositivos y desde casi cualquier lugar
+- [Funcionalidades de productividad y seguridad avanzadas](#productivity-and-security) que le permiten llevar su negocio de forma más segura, en todos los dispositivos y desde casi cualquier lugar
 - [Recursos para entrenar a su equipo y a todo el personal](#resources-to-train-your-users) sobre cómo trabajar de forma productiva al tiempo que se mantiene un entorno más seguro
 - Una [guía de amenazas digitales descargables](#download-the-digital-threats-guide) que describe diferentes tipos de amenazas y cómo protegerse contra ellas en su trabajo diario
 - [Pasos siguientes](#next-steps)
@@ -48,7 +55,7 @@ Vea el siguiente vídeo para ver cómo Microsoft 365 Empresa Premium ayuda a su 
 
 ## <a name="productivity-and-security"></a>Productividad y seguridad
 
-Microsoft 365 Empresa Premium incluye sus aplicaciones de productividad de Office favoritas, herramientas de colaboración como Microsoft Teams y soluciones de seguridad, identidad y administración de dispositivos de nivel empresarial. Con Microsoft 365 Empresa Premium, puede ejecutar su negocio de forma más segura, en todos los dispositivos y desde prácticamente cualquier lugar. Microsoft 365 Empresa Premium incluye:
+Microsoft 365 Empresa Premium incluye sus aplicaciones de productividad de Office favoritas, herramientas de colaboración como Microsoft Teams y soluciones de seguridad, identidad y administración de dispositivos de nivel empresarial. Con Microsoft 365 Empresa Premium, puede llevar su negocio de forma más segura, en todos los dispositivos y desde prácticamente cualquier lugar. Microsoft 365 Empresa Premium incluye:
 
 - **Windows 10 y 11 Pro** para los dispositivos Windows de su empresa
 - **Office aplicaciones**, como Word, Excel y PowerPoint, que se pueden instalar en sus equipos (Windows y Mac) y en sus dispositivos móviles (Windows, iOS y Android). También obtiene Publisher y Acceso para sus dispositivos Windows.
