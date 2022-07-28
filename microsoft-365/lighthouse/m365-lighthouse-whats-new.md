@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602921"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056622"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -152,7 +152,7 @@ Ahora puede ver los datos de uso de los servicios de Microsoft 365 desde dentro 
 
 Esta información puede ayudar a informar a los clientes y ofrecer más valor a los clientes, ya que le permite ayudarles a comprender qué servicios usan activamente sus usuarios y dónde pueden haber oportunidades para mejorar su seguridad o productividad. 
 
-Para obtener más información, vea [Información general de la página Inquilinos en Microsoft 365 Lighthouse: Tarjeta de uso de Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+Para obtener más información, vea [Información general de la página Inquilinos de Microsoft 365 Lighthouse: Uso de servicios de Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>Exchange Online Protection y Microsoft 365 Defender para Office 365 paso de línea base predeterminado
 
@@ -194,7 +194,7 @@ Hemos facilitado la comunicación con los usuarios de los inquilinos del cliente
 
 ### <a name="capability-to-take-action-on-noncompliant-devices"></a>Funcionalidad para realizar acciones en dispositivos no compatibles
 
-Hemos introducido la funcionalidad para sincronizar o reiniciar uno o varios dispositivos en varios inquilinos de clientes. Esta funcionalidad ayuda a garantizar que los dispositivos de los clientes estén protegidos contra riesgos. Para comprobar esta funcionalidad, seleccione **Dispositivos** en el panel de navegación izquierdo de Microsoft 365 Lighthouse y, a continuación, seleccione la pestaña **Dispositivos**. Busque las opciones **Sincronizar** y **reiniciar** encima de la lista de dispositivos. También puede acceder a estas opciones desde el panel de detalles del dispositivo de cualquier dispositivo.
+Hemos introducido la funcionalidad para sincronizar o reiniciar uno o varios dispositivos en varios inquilinos de clientes. Esta funcionalidad ayuda a garantizar que los dispositivos de los clientes estén protegidos contra riesgos. Para comprobar esta funcionalidad, seleccione **Dispositivos** en el panel de navegación izquierdo de Microsoft 365 Lighthouse y, a continuación, seleccione la pestaña **Dispositivos**. Busque las opciones **Sincronizar** y **reiniciar** situadas encima de la lista de dispositivos. También puede acceder a estas opciones desde el panel de detalles del dispositivo de cualquier dispositivo.
 
 ### <a name="capability-to-monitor-and-manage-windows-365-cloud-pcs"></a>Funcionalidad para supervisar y administrar equipos en la nube Windows 365
 

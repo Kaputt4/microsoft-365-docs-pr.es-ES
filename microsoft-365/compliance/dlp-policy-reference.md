@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0185b214d0b566fd387d753988e76fef0ee675b8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943831"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056578"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -64,7 +64,7 @@ actualizado: 23/06/2021
 |Medicina y salud| Ley de información sobre salud (HIA) de Canadá |- [Número de pasaporte de Canadá](sit-defn-canada-passport-number.md) </br> - [Número de seguro social de Canadá](sit-defn-canada-social-insurance-number.md) </br> - [Número del servicio de mantenimiento de Canadá](sit-defn-canada-health-service-number.md) </br> - [Número de identificación de salud personal de Canadá](sit-defn-canada-personal-health-identification-number.md)|
 |Medicina y salud| Ley de Información de Salud Personal (PHIA) de Canadá Manitoba|- [Número de seguro social de Canadá](sit-defn-canada-social-insurance-number.md) </br> - [Número del servicio de mantenimiento de Canadá](sit-defn-canada-health-service-number.md) </br> - [Número de identificación de salud personal de Canadá](sit-defn-canada-personal-health-identification-number.md)|
 |Medicina y salud| Ley de Salud Personal del Canadá (PHIPA) Ontario |- [Número de pasaporte de Canadá](sit-defn-canada-passport-number.md) </br> - [Número de seguro social de Canadá](sit-defn-canada-social-insurance-number.md) </br> - [Número del servicio de mantenimiento de Canadá](sit-defn-canada-health-service-number.md) </br> - [Número de identificación de salud personal de Canadá](sit-defn-canada-personal-health-identification-number.md)|
-|Medicina y salud| ESPAÑA. Ley de acceso a informes médicos|- [Número del servicio nacional de salud del Reino Unido](sit-defn-uk-national-health-service-number.md) </br> - [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md)|
+|Medicina y salud| Reino Unido Ley de acceso a informes médicos|- [Número del servicio nacional de salud del Reino Unido](sit-defn-uk-national-health-service-number.md) </br> - [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md)|
 |Medicina y salud| Ley de seguro de salud (HIPAA) mejorada de EE. UU.|</br> - [Clasificación internacional de enfermedades (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Clasificación internacional de enfermedades (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md) </br> - [Todos los nombres completos](sit-defn-all-full-names.md) </br> - [Todos los términos y condiciones médicos](sit-defn-all-medical-terms-conditions.md) </br> - [Direcciones físicas de EE. UU.](sit-defn-us-physical-addresses.md)|
 |Medicina y salud| Ley de seguros de salud (HIPAA) de los EE. UU.| - [Clasificación internacional de enfermedades (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Clasificación internacional de enfermedades (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md)|
 |Privacidad| Ley de privacidad de Australia mejorada|- [Número de licencia de conducir de Australia](sit-defn-australia-drivers-license-number.md) </br> - [Número de pasaporte de Australia](sit-defn-australia-passport-number.md) </br> - [Todos los nombres completos](sit-defn-all-full-names.md) </br> - [Todos los términos y condiciones médicos](sit-defn-all-medical-terms-conditions.md) </br> - [Direcciones físicas de Australia](sit-defn-australia-physical-addresses.md)|
@@ -85,10 +85,10 @@ actualizado: 23/06/2021
 |Privacidad| Protección de la información personal mejorada en Japón|- [Número de seguro social de Japón (SIN)](sit-defn-japan-social-insurance-number.md) </br> - [Japón Mi número - Personal](sit-defn-japan-my-number-personal.md)</br> - [Número de pasaporte de Japón](sit-defn-japan-passport-number.md) </br> - [Número de licencia de conducir de Japón](sit-defn-japan-drivers-license-number.md)</br> - [Todos los nombres completos](sit-defn-all-full-names.md)</br> - [Direcciones físicas de Japón](sit-defn-all-physical-addresses.md)|
 |Privacidad| Protección de información personal de Japón|- [Número de registro de residente de Japón](sit-defn-japan-resident-registration-number.md)</br> - [Número de seguro social de Japón (SIN)](sit-defn-japan-social-insurance-number.md)|
 |Privacidad| Datos de identificación personal (PII) de Arabia Saudita|- [Id. nacional de Arabia Saudita](sit-defn-saudi-arabia-national-id.md)|
-|Privacidad| ESPAÑA. Ley de protección de datos|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número de pasaporte de EE. UU./Reino Unido](sit-defn-us-uk-passport-number.md) </br> - [Código SWIFT](sit-defn-swift-code.md)|
-|Privacidad| ESPAÑA. Reglamento de privacidad y comunicaciones electrónicas|- [Código SWIFT](sit-defn-swift-code.md)|
-|Privacidad| ESPAÑA. Datos de información de identificación personal (PII)|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número de pasaporte de EE. UU./Reino Unido](sit-defn-us-uk-passport-number.md)|
-|Privacidad| ESPAÑA. Código de práctica en línea de información personal (PIOCP)|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número del servicio nacional de salud del Reino Unido](sit-defn-uk-national-health-service-number.md) </br> - [Código SWIFT](sit-defn-swift-code.md)|
+|Privacidad| Reino Unido Ley de protección de datos|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número de pasaporte de EE. UU./Reino Unido](sit-defn-us-uk-passport-number.md) </br> - [Código SWIFT](sit-defn-swift-code.md)|
+|Privacidad| Reino Unido Reglamento de privacidad y comunicaciones electrónicas|- [Código SWIFT](sit-defn-swift-code.md)|
+|Privacidad| Reino Unido Datos de información de identificación personal (PII)|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número de pasaporte de EE. UU./Reino Unido](sit-defn-us-uk-passport-number.md)|
+|Privacidad| Reino Unido Código de práctica en línea de información personal (PIOCP)|- [Número de seguro nacional del Reino Unido (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Número del servicio nacional de salud del Reino Unido](sit-defn-uk-national-health-service-number.md) </br> - [Código SWIFT](sit-defn-swift-code.md)|
 |Privacidad| Ley Patriota de EE. UU. mejorada|- [Número de tarjeta de crédito](sit-defn-credit-card-number.md) </br> - [Número de cuenta bancaria de EE. UU.](sit-defn-us-bank-account-number.md)</br> - [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Número de seguro social (SSN) de EE. UU.](sit-defn-us-social-security-number.md)</br> - [Todos los nombres completos](sit-defn-all-full-names.md)</br> - [Direcciones físicas de EE. UU.](sit-defn-us-physical-addresses.md)|
 |Privacidad| Ley Patriota de los EE.UU.|- [Número de tarjeta de crédito](sit-defn-credit-card-number.md) </br> - [Número de cuenta bancaria de EE. UU.](sit-defn-us-bank-account-number.md)</br> - [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Número de seguro social (SSN) de EE. UU.](sit-defn-us-social-security-number.md)|
 |Privacidad| Datos de información de identificación personal (PII) de EE. UU. mejorados|- [Número de identificación individual de contribuyentes (ITIN) de EE. UU.](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Número de seguro social (SSN) de EE. UU.](sit-defn-us-social-security-number.md)</br> - [Número de pasaporte de EE. UU./Reino Unido](sit-defn-us-uk-passport-number.md)</br> - [Todos los nombres completos](sit-defn-all-full-names.md)</br> - [Direcciones físicas de EE. UU.](sit-defn-us-physical-addresses.md)|
@@ -104,13 +104,13 @@ Una directiva DLP puede buscar y proteger elementos que contienen información c
 |Ubicación  |Incluir o excluir ámbito  |Estado de los datos  |Requisitos previos adicionales |
 |---------|---------|---------|---------|
 |Correo electrónico de Exchange en línea |grupo de distribución | datos en movimiento| No |
-|Sitios en línea de SharePoint   |sites       | datos en reposo </br> datos en uso | No|
+|Sitios en línea de SharePoint   |sitios       | datos en reposo </br> datos en uso | No|
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |datos en reposo </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
 |Microsoft Defender for Cloud Apps   | instancia de aplicación en la nube       |datos en reposo         | - [Uso de directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Dispositivos  |usuario o grupo         |datos en reposo </br>  datos en uso </br>  datos en movimiento         |- [Más información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md) </br>- [Configuración del proxy de dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Repositorios locales (recursos compartidos de archivos y SharePoint)    |Repositorio         | datos en reposo         | - [Más información sobre el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md) </br> - [Introducción al analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| Espacios | datos en uso | No|
+|Power BI| Espacios | datos en uso | No|
 
 Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
 
@@ -134,10 +134,13 @@ Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de
 |Dispositivos |Sí | Sí|  No|
 |Microsoft Defender for Cloud Apps | Sí| Sí| Sí|
 |Repositorios locales| Sí| Sí| No|
-|PowerBI|Sí | Sí| No|
+|Power BI|Sí | Sí| No|
 
 > [!NOTE]
-> DLP admite la detección de etiquetas de confidencialidad en correos electrónicos y datos adjuntos Vea [Usar etiquetas de confidencialidad como condiciones en las directivas DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP admite (en versión preliminar) el uso de clasificadores entrenables como condición para detectar documentos confidenciales. El contenido se puede definir mediante clasificadores entrenables en Exchange Online, sitios de Sharepoint Online, cuentas de OneDrive para la Empresa, chat y canales de Teams y dispositivos. Para obtener más información, vea [Clasificadores entrenables](classifier-learn-about.md).
+
+> [!NOTE]
+> DLP admite la detección de etiquetas de confidencialidad en correos electrónicos y datos adjuntos. Para obtener más información, vea [Usar etiquetas de confidencialidad como condiciones en las directivas DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## <a name="rules"></a>Rules
 
@@ -154,7 +157,7 @@ Las reglas son la lógica de negocios de las directivas DLP. Constan de:
 - [**Condiciones**](#conditions) que, cuando coinciden, desencadenan la directiva
 - [**Excepciones**](#exceptions) a las condiciones
 - [**Acciones**](#actions) que se deben realizar cuando se desencadena la directiva
-- [**Notificaciones de usuario**](#user-notifications-and-policy-tips) para informar a los usuarios cuando están haciendo algo que desencadena una directiva y ayudarles a educarlos sobre cómo su organización quiere tratar la información confidencial.
+- [**Notificaciones de usuario**](#user-notifications-and-policy-tips) para informar a los usuarios cuando están haciendo algo que desencadena una directiva y ayudarles a educarlos sobre cómo su organización quiere que se trate la información confidencial.
 - [**Las invalidaciones de usuario**](#user-overrides) cuando las configura un administrador, permiten a los usuarios invalidar de forma selectiva una acción de bloqueo.
 - [**Informes de incidentes**](#incident-reports) que notifican a los administradores y a otras partes interesadas clave cuando se produce una coincidencia de regla
 - [**Opciones adicionales**](#additional-options) que definen la prioridad para la evaluación de reglas y pueden detener el procesamiento de reglas y directivas adicionales.
@@ -165,7 +168,7 @@ Las reglas son la lógica de negocios de las directivas DLP. Constan de:
 
 #### <a name="hosted-service-workloads"></a>Cargas de trabajo de servicio hospedadas
 
-Para las cargas de trabajo de servicio hospedadas, como Exchange Online, SharePoint Online y OneDrive para la Empresa, a cada regla se le asigna una prioridad en el orden en que se crea. Esto significa que la regla creada primero tiene la primera prioridad, la regla creada en segundo lugar tiene segunda prioridad, etc. 
+Para las cargas de trabajo de servicio hospedadas, como Exchange Online, SharePoint Online y OneDrive para la Empresa, a cada regla se le asigna una prioridad en el orden en que se crea. Esto significa que la regla creada primero tiene la primera prioridad, la regla creada en segundo lugar tiene segunda prioridad, etc.
   
 ![Reglas en orden de prioridad](../media/dlp-rules-in-priority-order.png)
 
@@ -173,7 +176,7 @@ Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de pr
   
 - Regla 1: solo notifica a los usuarios
 - Regla 2: notifica a los usuarios, restringe el acceso y permite invalidaciones de usuario
-- *Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario*
+- *Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario.*
 - Regla 4: restringe el acceso
 
 Las reglas 1, 2 y 4 se evaluarán, pero no se aplicarán. En este ejemplo, las coincidencias de todas las reglas se registran en los registros de auditoría y se muestran en los informes DLP, aunque solo se aplique la regla más restrictiva.
@@ -190,7 +193,7 @@ La prioridad de las reglas en los puntos de conexión también se asigna según 
 
 Cuando un archivo de un punto de conexión coincide con varias directivas DLP, la primera regla habilitada con la aplicación más restrictiva en las [actividades de punto de conexión](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) es la que se aplica en el contenido. Por ejemplo, si el contenido coincide con todas las reglas siguientes, la regla 2 tiene prioridad sobre las demás reglas, ya que es la más restrictiva.
 
-- Regla 1: solo audita toda la actividad 
+- Regla 1: solo audita toda la actividad
 - *Regla 2: bloquea toda la actividad*
 - Regla 3: bloquea toda la actividad con la opción para que el usuario final invalide
 
@@ -217,12 +220,13 @@ Las condiciones son inclusivas y son donde se define lo que quiere que busque la
 - [tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [etiquetas de confidencialidad](sensitivity-labels.md)
 - [etiquetas de retención](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [Clasificadores entrenables](classifier-learn-about.md) (en versión preliminar) 
 
-dependiendo de las [ubicaciones](#location-support-for-how-content-can-be-defined) a las que elija aplicar la directiva. 
+dependiendo de las [ubicaciones](#location-support-for-how-content-can-be-defined) a las que elija aplicar la directiva.
 
-La regla solo buscará la presencia de las **etiquetas de confidencialidad** y las **etiquetas de retención** que elija. 
+La regla solo buscará la presencia de las **etiquetas de confidencialidad** y las **etiquetas de retención** que elija.
 
-Los SIT tienen un [**nivel de confianza**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) predefinido que puede modificar si es necesario. Para obtener más información, consulte [Más información sobre los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+Los SIT tienen un [**nivel de confianza**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) predefinido que puede modificar si es necesario. Para obtener más información, consulte [Más información sobre los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > Los SIT tienen dos formas diferentes de definir los parámetros de recuento de instancias únicos máximos. Para obtener más información, consulte [Valores admitidos de recuento de instancias para SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
@@ -436,7 +440,7 @@ Con la opción **Actividades de archivo para todas las aplicaciones** , seleccio
 
 - **Copiar en el portapapeles**
 - **Copia en una unidad extraíble USB** 
-- **Copiar en un recurso compartido de red**
+- **Copia en un recurso compartido de red**
 - **Print**
 - **Copiar o mover mediante una aplicación Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
@@ -650,8 +654,8 @@ En esta tabla se muestra el comportamiento de bloqueo y notificación dlp para l
 |---------|---------|---------|---------|---------|
 |- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**     |No se configura ninguna acción         |- **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         |- **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** establecida **en Activado** </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**         |- Las notificaciones solo se enviarán cuando un archivo se comparta con un usuario externo y un usuario externo acceda al archivo.  |
 |- **El contenido se comparte desde Microsoft 365** </br>- **solo con personas dentro de mi organización**        | No se configura ninguna acción         |-  **Notificaciones de usuario establecidas** en **Activado**   </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva**  </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado    |  - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**       |- Las notificaciones se envían cuando se carga un archivo |
-|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**    | - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Se selecciona Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OndeDrive y Teams** . </br>- **Se selecciona Bloquear solo a personas ajenas a la organización**          |- **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado  |  - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**             | - El acceso a un archivo confidencial se bloquea en cuanto se carga </br>- Notificaciones enviadas cuando el contenido se comparte desde Microsoft 365 con personas ajenas a mi organización         |
-|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización** |  - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Se selecciona Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OndeDrive y Teams** . </br>- **Bloquear a todos está** seleccionado        | - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         | - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**        |Las notificaciones se envían cuando un archivo se comparte con un usuario externo y un usuario externo accede a ese archivo.         |
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**    | - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- Se ha seleccionado **Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OneDrive y Teams**. </br>- **Se selecciona Bloquear solo a personas ajenas a la organización**          |- **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado  |  - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**             | - El acceso a un archivo confidencial se bloquea en cuanto se carga </br>- Notificaciones enviadas cuando el contenido se comparte desde Microsoft 365 con personas ajenas a mi organización         |
+|- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización** |  - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- Se ha seleccionado **Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OneDrive y Teams**. </br>- **Bloquear a todos está** seleccionado        | - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         | - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**        |Las notificaciones se envían cuando un archivo se comparte con un usuario externo y un usuario externo accede a ese archivo.         |
 |- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**     |- Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Bloquear solo a las personas a las que se les dio acceso al contenido mediante la opción "Cualquiera con el vínculo"** está seleccionada.         |  - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios de Office 365 servicio con una sugerencia de directiva**.  </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado     |- **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado**   </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**       |Las notificaciones se envían en cuanto se carga un archivo         |
 
 
@@ -700,7 +704,7 @@ DLP examina el correo electrónico de forma diferente de lo que hace SharePoint 
 
 Si tiene varias reglas en una directiva, puede usar las **opciones Adicionales** para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

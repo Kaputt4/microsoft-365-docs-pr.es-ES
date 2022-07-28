@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: deba0800ee422982e7379d7797d23a977602bbb9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839785"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056535"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 
@@ -46,11 +46,11 @@ Para administrar las etiquetas de inquilino, debe:
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el panel **Administrar etiquetas** , seleccione **Agregar etiqueta**.
+3. En el panel **Administrar etiquetas** , seleccione **Crear etiqueta**.
 
 4. Escriba un nombre y una descripción.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="edit-a-tag"></a>Edición de una etiqueta
 
@@ -62,7 +62,7 @@ Para administrar las etiquetas de inquilino, debe:
 
 4. Edite el nombre o la descripción según sea necesario.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="assign-a-tag"></a>Asignación de una etiqueta
 
@@ -74,7 +74,7 @@ Para administrar las etiquetas de inquilino, debe:
 
 4. Seleccione una etiqueta de la lista. Solo puede seleccionar una etiqueta a la vez.
 
-Las etiquetas que ya están asignadas al inquilino tendrán una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando **Asignar etiquetas** y, a continuación, seleccionando una etiqueta de la lista.
+Las etiquetas que ya están asignadas al inquilino tienen una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando **Asignar etiquetas** y, a continuación, seleccionando una etiqueta de la lista.
 
 > [!NOTE]
 > Puede crear hasta 30 etiquetas únicas y asignarlas a tantos inquilinos como sea necesario.
@@ -87,7 +87,9 @@ Las etiquetas que ya están asignadas al inquilino tendrán una marca de verific
 
 3. En el panel **Administrar etiquetas** , seleccione la etiqueta que desea eliminar.
 
-4. Seleccione **Eliminar etiqueta**.
+4. Seleccione **Eliminar**.
+
+5. En el cuadro de diálogo de confirmación, seleccione **Confirmar**.
 
 ## <a name="remove-a-tag"></a>Quitar una etiqueta
 

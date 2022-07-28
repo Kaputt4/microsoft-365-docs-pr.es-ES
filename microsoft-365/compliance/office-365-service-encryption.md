@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprender la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 66899a337e9349a78178df67aa83e44b580c7148
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f6967905c97f83fda2f73fc61ddf96a4a02fbec8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629387"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055996"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
 Además de usar el cifrado de nivel de volumen, Exchange Online, Microsoft Teams, SharePoint Online y OneDrive para la Empresa también usan El cifrado de servicio para cifrar los datos del cliente. Service Encryption permite dos opciones de administración de claves:
 
 ## <a name="microsoft-managed-keys"></a>Claves administradas por Microsoft
-Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado de servicios. Esta opción está habilitada actualmente de forma predeterminada para Exchange Online, SharePoint Online OneDrive para la Empresa. Las claves administradas por Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarlas mediante la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos permanecen cifrados mediante las claves administradas por Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
+Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado de servicios. Esta opción está habilitada actualmente de forma predeterminada para Exchange Online, SharePoint Online OneDrive para la Empresa. Las claves administradas por Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarlas mediante la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos permanecen cifrados mediante las claves administradas por Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo.
 
 ## <a name="customer-key"></a>Clave de cliente
 Proporcione las claves raíz que se usan con el cifrado de servicio y administre estas claves mediante Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina Clave de cliente y está disponible actualmente para Exchange Online, SharePoint Online y OneDrive para la Empresa. (Anteriormente denominado Cifrado avanzado con BYOK. Consulte [Mejora de la transparencia y el control de los clientes Office 365](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para ver el anuncio original).

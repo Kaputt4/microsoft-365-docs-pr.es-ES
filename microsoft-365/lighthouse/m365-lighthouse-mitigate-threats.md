@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la mitigación de amenazas con el Antivirus de Microsoft Defender.
-ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822055"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055952"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Mitigación de amenazas en Microsoft 365 Lighthouse con antivirus de Microsoft Defender
 

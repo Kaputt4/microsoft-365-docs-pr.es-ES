@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a restablecer una contraseña para un solo usuario o para varios usuarios de riesgo en distintos inquilinos.
-ms.openlocfilehash: 9fd748a3ed79a0f22a9ea4360b9a9a2c90dfb0e0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822033"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055886"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Restablecer una contraseña de usuario en Microsoft 365 Lighthouse
 
@@ -38,7 +38,7 @@ Microsoft 365 Lighthouse permite cambiar o restablecer contraseñas de usuario. 
 
 4. En el panel de detalles del usuario, seleccione **Restablecer contraseña**.
 
-5. En el panel Restablecer contraseña, seleccione **Generar automáticamente una contraseña** o **Permitirme crear una contraseña**.
+5. En el panel **Restablecer contraseña** , seleccione **Generar automáticamente una contraseña** o **Permitirme crear una contraseña**.
 
     - Si decide crear una contraseña, escriba una contraseña.
 
@@ -54,7 +54,7 @@ Microsoft 365 Lighthouse permite cambiar o restablecer contraseñas de usuario. 
 
 3. Seleccione **Restablecer contraseña**.
 
-4. En el panel Restablecer contraseña, seleccione **Generar automáticamente una contraseña** o **Permitirme crear una contraseña**.
+4. En el panel **Restablecer contraseña** , seleccione **Generar automáticamente una contraseña** o **Permitirme crear una contraseña**.
 
    - Si decide crear una contraseña, escriba una contraseña.
 

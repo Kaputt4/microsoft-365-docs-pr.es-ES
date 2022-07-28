@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver una conexión de red con errores en un equipo en la nube empresarial.
-ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e557c2cd01851c77d11aadf75e20b394b2944987
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823406"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055864"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Visualización de una conexión de red con errores en un equipo en la nube empresarial en Microsoft 365 Lighthouse
 
@@ -39,7 +39,7 @@ Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos
 
 2. Seleccione la pestaña **Conexiones de red de Azure** .
 
-3. En la sección resumen de la conexión, seleccione **Conexiones con errores**.
+3. En la barra de anotaciones de recuento de colores, seleccione **Conexiones con errores**.
 
 4. En la lista filtrada, seleccione **Ver detalles de conexión en Microsoft Endpoint Manager** junto a la conexión que desea investigar.
 

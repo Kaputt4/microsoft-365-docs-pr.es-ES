@@ -16,13 +16,13 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: En el caso de los técnicos del proveedor de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de clientes que administra su organización.
-ms.openlocfilehash: 6f12bef7a1e7958b345a86dbc9d0e2ee76534885
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: En el caso de los técnicos del proveedor de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de cliente que administra su organización.
+ms.openlocfilehash: a2cb9349f0511d2c9891e7b8611ef13f0aad6ee1
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011825"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055820"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse
 

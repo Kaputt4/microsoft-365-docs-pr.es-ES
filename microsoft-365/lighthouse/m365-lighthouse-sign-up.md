@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489102"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056842"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrese para obtener Microsoft 365 Lighthouse
 
@@ -50,9 +50,9 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
 
     Para comprobar que Lighthouse se agregó correctamente al inquilino, busque Microsoft 365 Lighthouse en **Facturación > sus productos** en el Centro de administración de Microsoft 365.
 
-1. Si no se le redirige al portal de Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+5. Si no se le redirige al portal de Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de asociado.
+6. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de asociado.
 
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.

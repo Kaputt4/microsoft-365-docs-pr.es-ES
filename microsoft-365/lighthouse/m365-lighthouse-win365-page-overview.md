@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (PC en la nube).
-ms.openlocfilehash: 1698c9298981778cb01e01715b794dd43a4daf3c
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: f1f385032c33a2e7a9740e8bd6b363c5f135da23
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823483"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056688"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Información general de la página Windows 365 (PC en la nube) en Microsoft 365 Lighthouse  
   
@@ -39,9 +39,9 @@ Una vez que haya aprovisionado equipos en la nube para el inquilino del cliente,
 
 En la pestaña Información general, la barra de anotaciones de recuento de colores muestra el número total de equipos en la nube o conexiones de red de Azure en todos los inquilinos de cliente que tienen los siguientes estados: Conexiones de red con errores, No aprovisionadas, Error de aprovisionamiento y Desaprovisionamiento pronto.
 
-Puede ver un desglose de los estados del equipo en la nube para cada inquilino de cliente en la lista debajo de la barra de anotación. Para ver qué inquilinos tienen equipos en la nube con un estado específico, seleccione ese estado en la barra count-annotation para filtrar la lista. Para ver los estados del equipo en la nube para uno o más inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
+Puede ver un desglose de los estados del equipo en la nube para cada inquilino de cliente en la lista debajo de la barra de anotación de recuento. Para ver qué inquilinos tienen equipos en la nube con un estado específico, seleccione ese estado en la barra count-annotation para filtrar la lista. Para ver los estados del equipo en la nube para uno o más inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
-Para obtener información detallada sobre el estado de un inquilino de cliente determinado, seleccione un valor en cualquiera de las columnas de estado de ese inquilino. En función de la columna en la que se encuentra el valor, se abrirá la pestaña **Conexiones de red de Azure** o **Todos los equipos** en la nube y se mostrará más información.
+Para obtener información detallada sobre el estado de un inquilino de cliente determinado, seleccione un valor en cualquiera de las columnas de estado de ese inquilino. En función de la columna en la que se encuentra el valor, se abrirá la pestaña **Conexiones de red de Azure** o **Todos los equipos en la nube** y se mostrará más información.
 
 La pestaña Información general también incluye las siguientes opciones:
 
@@ -55,7 +55,7 @@ La pestaña Información general también incluye las siguientes opciones:
 
 En la pestaña Todos los equipos en la nube, la barra de anotaciones de recuento de colores muestra el número total de equipos en la nube en todos los inquilinos de cliente que tienen los siguientes estados: Aprovisionado, No aprovisionado, Error de aprovisionamiento y Desaprovisionamiento pronto.
 
-Puede ver todos los equipos en la nube y su estado de aprovisionamiento en la lista debajo de la barra de anotación. Se proporciona la siguiente información:
+Puede ver todos los equipos en la nube y su estado de aprovisionamiento en la lista debajo de la barra count-annotation. Se proporciona la siguiente información:
 
 - **Nombre del equipo en la nube:** Nombre asignado al equipo en la nube.
 - **Usuario:** Usuario para el que se ha aprovisionado o intentado aprovisionar un equipo en la nube.

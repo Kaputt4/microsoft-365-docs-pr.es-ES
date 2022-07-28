@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
-ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
+ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160828"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056864"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 

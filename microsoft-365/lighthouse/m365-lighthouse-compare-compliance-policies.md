@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo comparar la configuración de directivas de cumplimiento de dispositivos.
-ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9640fcb1438de70c6283c177e64c12fb6da57349
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822909"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056600"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Comparar la configuración de la directiva de cumplimiento de dispositivos en Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Asegúrese de que los dispositivos tengan una licencia de Microsoft Intune y que
 
 ## <a name="compare-policy-settings"></a>Comparación de la configuración de directiva
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **de cumplimiento de dispositivos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **cumplimiento de dispositivos**.
 
 2. Seleccione la pestaña **Directivas**.
 
@@ -51,13 +51,13 @@ Puede filtrar los resultados para ver **Configuración diferente**, **Configurac
 
 ## <a name="configure-a-policy-setting"></a>Configuración de una directiva
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **de cumplimiento de dispositivos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Dispositivos** > **cumplimiento de dispositivos**.
 
 2. Seleccione la pestaña **Directivas**.
 
-3. En la lista, seleccione un nombre de directiva.
+3. En la lista de directivas, seleccione la directiva que desea ver.
 
-4. En el panel Detalles de la directiva, seleccione **Ver esta directiva en Microsoft Endpoint Manager**.
+4. En el panel de detalles de la directiva, seleccione **Ver esta directiva en Microsoft Endpoint Manager**.
 
 5. En MEM, edite la configuración de directiva según sea necesario.
 

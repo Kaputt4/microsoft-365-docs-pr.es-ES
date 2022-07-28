@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a administrar los mensajes en cuarentena.
-ms.openlocfilehash: 3a295802ba806c48f01f6f64c8b148169fe28102
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: fcf9978ccbc72e1913e9015a8de40aa6da498394
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574389"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055908"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Introducción a los mensajes en cuarentena en Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse le permite ver información e información sobre los correos electrónicos en cuarentena en todos los inquilinos del cliente. Desde una sola vista, puede evaluar los correos electrónicos en cuarentena y realizar las acciones adecuadas. Los datos están disponibles si el inquilino ha implementado Exchange Online Protection (EOP) y Microsoft Defender para Office365 Plan 1 (MDO).
 
-Para acceder a la información, seleccione **Protección de datos** en el panel de navegación izquierdo o en la página **Inicio** .
+Puede acceder a la información seleccionando **Inicio** en el panel de navegación izquierdo o seleccionando Protección de **datos** en el panel de navegación izquierdo para abrir la página Mensajes en cuarentena.
 
 ## <a name="quarantined-messages-page"></a>Página mensajes en cuarentena
 
@@ -44,17 +44,17 @@ La sección **Estado de los mensajes** proporciona una vista consolidada entre l
 
 Los datos reflejan los últimos 30 días; sin embargo, puede usar el filtro **Intervalo de tiempo** para modificar la vista.
 
-El gráfico **motivo** de **cuarentena** contiene un desglose de los recuentos de cuarentena por Exchange Online Protection (EOP) y el tipo de directiva del plan 1 (MDO) de Microsoft Defender para Office365. Estos tipos incluyen
+La sección **Motivo de cuarentena** contiene un desglose de los recuentos de cuarentena por Exchange Online Protection (EOP) y el tipo de directiva del plan 1 (MDO) de Microsoft Defender para Office365. Estos tipos incluyen
 
 - Malware
 - Suplantación de identidad (phishing)
 - Suplantación de identidad de alta confianza
 - Correo no deseado
-- Correo electrónico masivo
+- Email masivas
 
 La lista de cuarentena es una vista ordenable de la información de cuarentena por inquilino. En esta vista, puede filtrar por la siguiente información:
 
-- **Motivo de cuarentena:** Cualquiera, Malware, Phish, Phish de alta confianza, Correo no deseado, Correo electrónico masivo
+- **Motivo de cuarentena:** Cualquiera, Malware, Phish, Phish de alta confianza, Spam, Bulk Email
 - **Tipo de directiva:** Cualquiera, Antimalware, Anti-phishing, Anti-spam, Datos adjuntos seguros, Regla de transporte, Desconocido
 - **A punto de expirar:** Cualquiera, Hoy, dentro de dos días, dentro de siete días
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Inquilinos.
-ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: e6da14bb6ad87b54f33b2c0a6bf612c2ba025725
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016529"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056754"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Información general de la página Inquilinos de Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse permite administrar cuentas de inquilino seleccionando 
 
 La página Inquilinos también incluye las siguientes opciones:
 
-- **Exportar:** Seleccione esta opción para exportar datos de inquilino a un archivo de valores separados por comas (.csv) Excel.
+- **Exportar:** Seleccione esta opción para exportar datos de inquilino a un archivo de valores separados por comas (.csv) de Excel.
 - **Administrar etiquetas:** Seleccione esta opción para agregar, editar o eliminar una etiqueta.
 - **Asignar etiquetas:** Seleccione esta opción para asignar una etiqueta a un inquilino.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente un inquilino específico en la lista.
@@ -84,13 +84,13 @@ Para ver información detallada del inquilino, seleccione un inquilino en la lis
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Captura de pantalla de la página Detalles del inquilino.":::
 
-### <a name="overview-tab"></a>Pestaña Información general
+### <a name="overview-tab"></a>‎Pestaña da Información general
 
-En la pestaña Información general, puede ver información general del inquilino, información de contacto y Microsoft 365 uso del servicio.
+En la pestaña Información general, puede ver información general del inquilino, información de contacto y uso del servicio Microsoft 365.
 
-#### <a name="tenant-overview-card"></a>Tarjeta de información general del inquilino
+#### <a name="tenant-overview-section"></a>Sección de información general del inquilino
 
-La tarjeta Información general del inquilino proporciona información sobre el inquilino de su cuenta de Microsoft 365.<br><br>
+La sección Información general del inquilino proporciona información sobre el inquilino de su cuenta de Microsoft 365.<br><br>
 
 | Información del inquilino    | Descripción|
 |-----------------------|------------------|
@@ -101,9 +101,9 @@ La tarjeta Información general del inquilino proporciona información sobre el 
 | Usuarios totales    |Número de usuarios asignados en el inquilino. Puede seleccionar este número para abrir la página Usuarios de ese inquilino.|
 | Total de dispositivos|Número de dispositivos inscritos en el inquilino. Puede seleccionar este número para abrir la página Dispositivos de ese inquilino.|
 
-#### <a name="contacts-card"></a>Tarjeta de contactos
+#### <a name="contacts-section"></a>Sección Contactos
 
-La tarjeta Contactos le permite especificar información para los contactos clave dentro de los inquilinos que administra, como:
+La sección Contactos proporciona información para los contactos clave dentro de los inquilinos que administra, como:
 
 - Nombre
 - El título
@@ -111,26 +111,26 @@ La tarjeta Contactos le permite especificar información para los contactos clav
 - Correo electrónico
 - Notas
 
-La sección Notas es un campo de texto que puede usar para registrar información clave del inquilino, como preferencias de interacción, ubicación, zona horaria y detalles sobre su rol dentro de la organización.
+La columna **Notas** muestra información para el inquilino, como preferencias de interacción, ubicación, zona horaria y detalles sobre su rol dentro de la organización.
 
-Para editar los detalles o eliminar un contacto existente, seleccione el nombre del contacto en la lista. En el panel **Editar contacto** , edite o elimine el contacto. Para agregar otro contacto, seleccione **+Agregar contacto**.
+Para editar detalles, agregar notas o eliminar un contacto existente, seleccione el nombre del contacto de la lista. En el panel **Editar contacto** , edite o elimine el contacto. Para agregar otro contacto, seleccione **+Agregar contacto**.
 
-#### <a name="microsoft-365-usage-card"></a>Microsoft 365 tarjeta de uso
+#### <a name="microsoft-365-services-usage-section"></a>Sección de uso de servicios de Microsoft 365
 
-Lighthouse proporciona información sobre el uso de Microsoft 365 servicios, incluido el número de usuarios de un inquilino con licencia y uso activo de cada servicio. Activo indica el número de usuarios o dispositivos que han iniciado sesión en el servicio al menos una vez en los últimos 28 días. El cambio indica el cambio en los usuarios y dispositivos activos desde el mes pasado.
+Lighthouse proporciona información sobre el uso de servicios de Microsoft 365, incluido el número de usuarios de un inquilino con licencia y uso activo de cada servicio. La columna **Usuarios activos & dispositivos** indica el número de usuarios o dispositivos que han iniciado sesión en el servicio al menos una vez en los últimos 28 días. La columna **Cambio en la actividad** indica el cambio en los usuarios y dispositivos activos desde el mes pasado.
 
-La tarjeta de uso de Microsoft 365 contiene dos secciones:
+La sección **uso de servicios de Microsoft 365** contiene dos subses:
 
 - **servicios habilitados para Microsoft 365 Lighthouse:** servicios que se pueden administrar en el portal de Lighthouse.
-- **Servicios de Microsoft 365 adicionales:** servicios que se incluyen en el conjunto de Microsoft 365 pero que no se pueden administrar en el portal de Microsoft 365 Lighthouse en este momento.
+- **Servicios adicionales de Microsoft 365:** Servicios que se incluyen en el conjunto de aplicaciones de Microsoft 365 pero que no se pueden administrar en el portal de Microsoft 365 Lighthouse en este momento.
 
-### <a name="deployment-plans-tab"></a>Pestaña Planes de implementación
+### <a name="deployment-plan-tab"></a>Pestaña Plan de implementación
 
 La pestaña Planes de implementación proporciona el estado del plan de implementación de un inquilino. Los pasos de implementación de la lista se basan en la línea base aplicada al inquilino. Para ver los detalles del paso de implementación, seleccione un paso de implementación de la lista.
 
-La pestaña Planes de implementación también incluye las siguientes opciones:
+La pestaña Plan de implementación también incluye las siguientes opciones:
 
-- **Exportar:** Seleccione esta opción para exportar los datos del paso de implementación a un archivo de valores separados por comas (.csv) Excel.
+- **Exportar:** Seleccione esta opción para exportar los datos del paso de implementación a un archivo de valores separados por comas (.csv) de Excel.
 - **Actualizar:** Seleccione esta opción para recuperar los datos del paso de implementación más actuales.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente un paso de implementación específico en la lista.
 

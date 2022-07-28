@@ -60,7 +60,7 @@
       href: m365-lighthouse-win365-page-overview.md
     - name: Reprovisione un PC en la nube Windows 365
       href: m365-lighthouse-reprovision-cloudpc.md
-    - name: Cambio de un tipo de cuenta de pc en la nube de Windows 365 Business
+    - name: Cambio de un tipo de cuenta de PC en la nube Windows 365
       href: m365-lighthouse-change-cloud-pc-account-type.md
     - name: Visualización de una conexión de red con errores en un equipo en la nube empresarial
       href: m365-lighthouse-view-failed-network-connections.md

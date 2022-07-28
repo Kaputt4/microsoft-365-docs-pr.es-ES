@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798177"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056886"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -161,7 +161,7 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
 |PermissionToBlockSender|16 |00010000|
 |PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
-|PermissionToRelease<sup>\*\*\*</sup>|4 |00000100|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
 
@@ -516,7 +516,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
      Siga estos pasos para personalizar las notificaciones de cuarentena en función del idioma del destinatario:
 
-     1. Seleccione el idioma en el cuadro **Elegir idioma** . El valor por defecto es **Default** que corresponde al idioma inglés.
+     1. Seleccione el idioma en el cuadro **Elegir idioma** . El valor predeterminado es **Predeterminado**, lo que significa el idioma predeterminado para la organización de Microsoft 365. Para obtener más información, vea [Cómo establecer la configuración de idioma y región para Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
      2. Escriba los valores de **Nombre para mostrar** y **Declinación de responsabilidades**. Los valores deben ser únicos para cada idioma. Si intenta reutilizar un **valor de Nombre para mostrar** o **Declinación de responsabilidades** para varios idiomas, recibirá un error al hacer clic en **Guardar**.
      3. Haga clic en el botón **Agregar**.
      4. Repita los pasos anteriores para crear un máximo de tres notificaciones de cuarentena personalizadas en función del idioma del destinatario. Un cuadro sin etiquetar muestra los idiomas que ha configurado:

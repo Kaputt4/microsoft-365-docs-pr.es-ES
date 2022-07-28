@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Usuarios.
-ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 0c4a0fd7f715fec45cbb359ef21b448941451a0a
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717600"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056721"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Información general de la página Usuarios de Microsoft 365 Lighthouse 
 
