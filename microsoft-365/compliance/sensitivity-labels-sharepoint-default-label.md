@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Configure una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint para documentos nuevos y sin etiquetar.
-ms.openlocfilehash: b0a94e3390533f5350f317316a811c17fc34aa28
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069818"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071336"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configuración de una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
 
@@ -29,6 +29,8 @@ ms.locfileid: "67069818"
 
 > [!NOTE]
 > Esta característica se está implementando gradualmente en versión preliminar y está sujeta a cambios. También es una característica premium con detalles de licencia que se proporcionarán cuando la característica esté disponible con carácter general (GA).
+> 
+> Para leer el anuncio de vista previa, consulte la [publicación de Yammer](https://www.yammer.com/askipteam/threads/1846702701985792).
 
 Cuando SharePoint está [habilitado para etiquetas de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md), puede configurar una etiqueta predeterminada para las bibliotecas de documentos. A continuación, los archivos nuevos cargados en esa biblioteca o los archivos existentes editados en la biblioteca tendrán esa etiqueta aplicada si aún no tienen una etiqueta de confidencialidad o tienen una etiqueta de confidencialidad pero con [prioridad inferior](sensitivity-labels.md#label-priority-order-matters).
 
@@ -59,6 +61,8 @@ Resumen de los resultados:
 ## <a name="requirements"></a>Requisitos
 
 - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+- [SharePoint Information Rights Management (IRM) no está habilitado para la biblioteca](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). Esta tecnología anterior no es compatible con el uso de una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint. Si una biblioteca está habilitada para IRM, no podrá seleccionar una etiqueta de confidencialidad predeterminada.
 
 ## <a name="limitations"></a>Limitaciones
 

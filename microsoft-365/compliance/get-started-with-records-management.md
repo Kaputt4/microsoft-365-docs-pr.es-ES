@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que gestionan contenido de alto valor en Microsoft 365 para las obligaciones legales, empresariales o normativas.
-ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944205"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069544"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -43,6 +43,9 @@ ms.locfileid: "66944205"
 
     - [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
     - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
+
+> [!TIP]
+> Si va a migrar registros a Microsoft 365 y necesita validar que no se han modificado, consulte [Validar registros migrados](records-management.md#validating-migrated-records).
 
 ## <a name="subscription-and-licensing-requirements"></a>Requisitos de suscripción y licencias
 
