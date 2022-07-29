@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696059"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069611"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -457,7 +457,9 @@ Para obtener más información sobre los cmdlets de PowerShell que son compatibl
 
 Aunque el etiquetado automático es una de las formas más eficaces de clasificar, etiquetar y proteger los archivos de Office que posee su organización, compruebe si es posible que pueda complementarlo con cualquiera de estos métodos adicionales para aumentar el alcance del etiquetado:
 
-- Con SharePoint Syntex, puede [aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), para que los documentos identificados en una biblioteca de SharePoint se etiqueten automáticamente.
+- Para las bibliotecas de documentos de SharePoint, puede aplicar una etiqueta de confidencialidad predeterminada para los archivos nuevos y editados. Para obtener más información, vea [Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint](sensitivity-labels-sharepoint-default-label.md).
+
+- Con SharePoint Syntex, puede [aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), de modo que los documentos identificados en una biblioteca de SharePoint se etiqueten automáticamente.
 
 - Cuando use el cliente de etiquetado unificado [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2):
 
