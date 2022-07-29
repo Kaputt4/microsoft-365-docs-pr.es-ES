@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 78d5e0c8b3b8405dcd4e0a33b315e000d661b7f4
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 43d07f2ec10117232e7ac1317bec1f8216bc62ae
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004483"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071621"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Comparar planes de seguridad de puntos de conexión de Microsoft
 
@@ -47,7 +47,7 @@ En la tabla siguiente se resume lo que se incluye en los planes de seguridad de 
 | [Plan 1 de Defender para punto de conexión](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) (incluye antimalware y antivirus)</li><li>[Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Acciones de contestación manual](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Administración centralizada](defender-endpoint-plan-1.md#centralized-management)</li><li>[Informes de seguridad](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Compatibilidad con dispositivos Windows 10, iOS, Android OS y macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
 | [Plan 2 de Defender para punto de conexión](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | Todas las funcionalidades del plan 1 de Defender para punto de conexión, además de:<ul><li>[Detección de dispositivo](device-discovery.md)</li><li>[Inventario de dispositivos](machines-view-overview.md)</li><li>[Funcionalidades de administración de vulnerabilidades de Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Análisis de amenazas](threat-analytics.md)</li><li>[Investigación y respuesta automatizadas](automated-investigations.md)</li><li>[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)</li><li>[EDR](overview-endpoint-detection-response.md)</li><li>[Expertos en amenazas de Microsoft](microsoft-threat-experts.md)</li><li>Compatibilidad con [Windows](configure-endpoints.md) (cliente y servidor) y [plataformas que no son de Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android y Linux)</li></ul> |
 | [Complemento de Administración de vulnerabilidades de Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Más funcionalidades de Administración de vulnerabilidades de Defender para Defender para el plan de punto de conexión 2:<ul><li>[Evaluación de líneas base de seguridad](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquear aplicaciones vulnerables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensiones del explorador](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Evaluación de certificados digitales](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Análisis de recursos compartidos de red](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Compatibilidad con [Windows](configure-endpoints.md) (cliente y servidor) y [plataformas que no son de Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android y Linux)</li></ul> |
-| [Defender para empresas](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup> <br/>y<br/>[Microsoft 365 Empresa Premium](../../business-premium/index.md) | [Los servicios optimizados para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md) incluyen: <ul><li>protección Email</li><li>Protección contra correo no deseado</li><li>Protección antimalware</li><li>Protección de última generación</li><li>Reducción de la superficie expuesta a ataques</li><li>Detección y respuesta de puntos de conexión</li><li>Investigación y respuesta de amenazas </li><li>Administración de amenazas y vulnerabilidades.</li><li>Informes centralizados</li><li>API (para la integración con aplicaciones personalizadas o soluciones de informes)</li><li>[Integración con Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
+| [Defender para empresas](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup>  | [Los servicios optimizados para pequeñas y medianas empresas](../defender-business/compare-mdb-m365-plans.md) incluyen: <ul><li>protección Email</li><li>Protección contra correo no deseado</li><li>Protección antimalware</li><li>Protección de última generación</li><li>Reducción de la superficie expuesta a ataques</li><li>Detección y respuesta de puntos de conexión</li><li>Investigación y respuesta de amenazas </li><li>Administración de amenazas y vulnerabilidades.</li><li>Informes centralizados</li><li>API (para la integración con aplicaciones personalizadas o soluciones de informes)</li><li>[Integración con Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
 (<a id="fn1">1</a>) Microsoft Defender para punto de conexión Plan 1 está disponible como una suscripción independiente para clientes comerciales y educativos. También se incluye como parte de Microsoft 365 E3/A3.
 
@@ -87,7 +87,7 @@ Sin embargo, **puede ponerse en contacto con el soporte técnico y solicitar una
 - Para probar Defender para punto de conexión, vaya a la [página de registro de prueba de Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
 - Para probar el complemento de Administración de vulnerabilidades de Microsoft Defender para Defender para punto de conexión 2, visite [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a Microsoft Security (ofertas de prueba)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

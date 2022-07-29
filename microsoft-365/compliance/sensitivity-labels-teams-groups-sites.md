@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882283"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037652"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -59,7 +59,7 @@ Después de habilitar y configurar las etiquetas de confidencialidad para los co
 ![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> Actualmente, las etiquetas de confidencialidad para contenedores admiten [canales compartidos de Teams](/MicrosoftTeams/shared-channels) en versión preliminar. Si un equipo tiene canales compartidos, heredará automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se podrá quitar ni reemplazar con una etiqueta diferente.
+> Las etiquetas de confidencialidad para contenedores son compatibles con [canales compartidos de Teams](/MicrosoftTeams/shared-channels). Si un equipo tiene canales compartidos, hereda automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se puede quitar ni reemplazar con una etiqueta diferente.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Cómo habilitar etiquetas de confidencialidad para contenedores y sincronizarlas
 

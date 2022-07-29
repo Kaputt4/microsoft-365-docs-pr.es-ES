@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632649"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071511"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tareas rápidas para empezar a trabajar con el cumplimiento en Microsoft Purview
 
@@ -37,7 +37,7 @@ Es importante administrar quién de su organización tiene acceso a la portal de
 
 Empiece por asignar permisos de cumplimiento a los usuarios de su organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas fuera de sus responsabilidades. Querrá asegurarse de que ha asignado a las personas adecuadas al **administrador de datos de cumplimiento** y a los roles de administrador de **cumplimiento** antes de empezar a configurar e implementar soluciones de cumplimiento incluidas con Microsoft 365. También tendrá que asignar usuarios al rol de lector global de Azure Active Directory para ver los datos en el Administrador de cumplimiento.
 
-Para obtener instrucciones paso a paso para configurar permisos y asignar personas a roles de administrador, consulte [Permisos en el Centro de cumplimiento de seguridad &](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Para obtener instrucciones paso a paso para configurar permisos y asignar personas a roles de administrador, consulte [Permisos en el portal de cumplimiento Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tarea 2: Conocer el estado de cumplimiento
 
@@ -130,7 +130,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividad, consulte [Introducción al explorador de actividades](/microsoft-365/compliance/data-classification-activity-explorer).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft Purview para ayudarle a proteger la información confidencial y a detectar y actuar sobre riesgos internos adicionales.
 

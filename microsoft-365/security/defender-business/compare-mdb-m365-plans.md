@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 32eb46a4acd51c65681607e1fb122ac4542f7dd9
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795386"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069633"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
@@ -30,31 +30,24 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 
 **Use este artículo para**:
 
-- [Compare Defender para empresas (independiente) con Microsoft 365 Empresa Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium).
+- [Compare Microsoft Defender para Empresas con Microsoft 365 Empresa Premium](#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
 - [Compare Defender para empresas (independiente) con las ofertas empresariales de Defender para punto de conexión](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > [!TIP]
-> Defender for Business está disponible como una solución de seguridad independiente para pequeñas y medianas empresas. También se incluye en Microsoft 365 Empresa Premium. Si ya tiene Microsoft 365 Empresa Básico o Estándar, considere la posibilidad de actualizar a Microsoft 365 Empresa Premium o agregar Defender for Business a su suscripción para obtener más funcionalidades de protección contra amenazas para los dispositivos.
+> Defender for Business está disponible como una solución de seguridad independiente para pequeñas y medianas empresas. Defender for Business ahora se incluye en Microsoft 365 Empresa Premium. Si ya tiene Microsoft 365 Empresa Básico o Estándar, considere la posibilidad de actualizar a Microsoft 365 Empresa Premium o agregar Defender for Business a la suscripción actual para obtener más funcionalidades de protección contra amenazas para los dispositivos.
 
-## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Compare las características de seguridad de Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
+## <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
 
 > [!NOTE]
-> En este artículo se proporciona información general de alto nivel sobre las características de protección contra amenazas incluidas en Microsoft Defender para Empresas (como un plan independiente) y Microsoft 365 Empresa Premium (que incluye Defender para empresas). No está pensado para ser una descripción del servicio o un documento de contrato de licencia. Para obtener información más detallada, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> En este artículo se proporciona información general de alto nivel de las características y funcionalidades que se incluyen en Microsoft Defender para Empresas (como un plan independiente) y Microsoft 365 Empresa Premium (que incluye Defender para empresas). No está pensado para ser una descripción del servicio o un documento de contrato de licencia. Para obtener información más detallada, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Defender for Business también está disponible como una suscripción independiente y también se incluye en Microsoft 365 Empresa Premium. En la tabla siguiente se comparan las características y funcionalidades de seguridad de Defender para empresas (independiente) con Microsoft 365 Empresa Premium.
+| Microsoft Defender para Empresas (independiente) | Microsoft 365 Empresa Premium |
+|:---|:---|
+| <br/>Entre las funcionalidades de protección antivirus, antimalware y ransomware para dispositivos se incluyen: <ul><li>[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (protección antivirus/antimalware en dispositivos junto con protección en la nube)</li><li>[Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) (protección de red, firewall y reglas de reducción de superficie expuesta a ataques) <sup>[[a](#fna)]</sup></li><li>[Detección y respuesta de puntos de conexión](../defender-endpoint/overview-endpoint-detection-response.md) (detección basada en comportamiento y acciones de respuesta manual)</li><li>[Investigación y respuesta automatizadas](../defender/m365d-autoir.md) (con recuperación automática para las amenazas detectadas)</li><li>[Administración de amenazas y vulnerabilidades](mdb-view-tvm-dashboard.md) (ver las recomendaciones y los dispositivos expuestos)</li><li>[Compatibilidad multiplataforma para dispositivos](mdb-onboard-devices.md) (Windows, Mac, iOS y Android) <sup>[[b](#fnb)]</sup></li><li>[Administración centralizada e informes](mdb-get-started.md) (portal de Microsoft 365 Defender)</li><li>[API para la integración](../defender-endpoint/management-apis.md) (para asociados de Microsoft o sus herramientas y aplicaciones personalizadas)</li></ul> | Entre las funcionalidades de productividad y seguridad se incluyen:<ul><li>[Microsoft 365 Empresa Estándar](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (aplicaciones y servicios de Office y Microsoft Teams)</li><li>[Activación de equipos compartidos](/deployoffice/overview-shared-computer-activation) (para implementar Aplicaciones Microsoft 365)</li><li>[Windows 10/11 Empresa](../../business-premium/m365bp-upgrade-windows-10-pro.md) (actualización de versiones anteriores de Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (para configurar y configurar dispositivos Windows)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware e inteligencia spoof para correo electrónico)</li><li>[Defender para empresas](mdb-overview.md) (antivirus, antimalware y protección contra ransomware para dispositivos) </li><li>[Microsoft Defender para Office 365 Plan 1](../office-365-security/overview.md) (antiphishing avanzado, detecciones en tiempo real, datos adjuntos seguros, vínculos seguros)</li><li>[Archivado de expansión automática](../../compliance/autoexpanding-archiving.md) (para correo electrónico)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (administración de identidades)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (incorporación y administración de dispositivos)</li><li>[Plan 1 de Azure Information Protection Premium](/azure/information-protection/what-is-information-protection) (protección para información confidencial)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (máquinas virtuales seguras y administradas de forma centralizada en la nube)</li></ul> |
 
-|Característica o funcionalidad|[Microsoft Defender para Empresas](mdb-overview.md)<br/>(independiente)|[Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md)<br/>(incluye Defender para empresas)|
-|---|---|---|
-|protección Email|Sí <br/>[examen de Email con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Sí <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[examen de Email con antivirus de Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
-|Protección contra correo no deseado|Sí<br/>Para dispositivos|Sí <ul><li>Para dispositivos</li><li>Para contenido de correo electrónico de Microsoft 365, como mensajes y datos adjuntos</li></ul>|
-|Protección antimalware|Sí<br/>Para dispositivos|Sí<ul><li>Para dispositivos</li><li>Para contenido de correo electrónico de Microsoft 365, como mensajes y datos adjuntos</li></ul>|
-|[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protección antivirus y antimalware para dispositivos incorporados)|Sí |Sí |
-|[Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Reglas de ASR en Windows 10 o versiones posteriores y protección del firewall)|Sí|Sí|
-|[EDR](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(detección basada en comportamiento y acciones de respuesta manual)|Sí|Sí|
-|[Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md)|Sí|Sí|
-|[Administración de vulnerabilidades y amenazas](../defender-endpoint/tvm-dashboard-insights.md)|Sí|Sí|
-|Administración centralizada e informes|Sí|Sí|
-|[API](../defender-endpoint/apis-intro.md) <br/>(para la integración con aplicaciones personalizadas o soluciones de informes)|Sí|Sí|
+(<a id="fna">a</a>) Microsoft Intune es necesario modificar o personalizar las reglas de reducción de superficie expuesta a ataques.
+
+(<a id="fnb">b</a>) se requiere Microsoft Intune para incorporar dispositivos iOS y Android. Consulte [Incorporación de dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md).
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Comparar Microsoft Defender para Empresas con los planes 1 y 2 de Microsoft Defender para punto de conexión
 
@@ -94,7 +87,9 @@ Defender for Business ofrece las funcionalidades de nivel empresarial de Defende
 
 (<a id="fn7">7</a>) La capacidad de ver incidentes entre inquilinos mediante Defender para punto de conexión es nueva.
 
-## <a name="next-steps"></a>Siguientes pasos
+Consulte también [Comparar planes de seguridad de puntos de conexión de Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
+
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 8ad247917a8dfdad7362576079edd9bdec7302ba
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056864"
+ms.locfileid: "67069568"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -33,6 +33,8 @@ En este artículo se enumeran los problemas conocidos de Microsoft 365 Lighthous
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |
 | **El agente del departamento de soporte técnico no puede restablecer una contraseña de usuario.** | Los técnicos del proveedor de servicios administrados (MSP) que son miembros del grupo agente del departamento de soporte técnico no pueden restablecer las contraseñas de los usuarios de los inquilinos del cliente. Cuando intenta restablecer la contraseña de un usuario, recibe el siguiente mensaje de error: "No tiene permiso para hacerlo. [Más información](m365-lighthouse-configure-portal-security.md)" | Para solucionar el problema de permisos, los agentes del departamento de soporte técnico deben restablecer las contraseñas mediante el Centro de administración de Microsoft 365 o Azure Active Directory. |
+| **No se muestra ningún dato en la pestaña OneDrive del panel de detalles del usuario** | Cuando un técnico de MSP intenta ver los datos de OneDrive en la pestaña OneDrive en el panel de detalles del usuario, ve el mensaje: "OneDrive no está configurado para este usuario. Pida a la persona que vaya a portal.office.com/onedrive para configurarlo. Puede tardar un tiempo. Si sigue viendo este mensaje 24 horas más tarde, póngase en contacto con el soporte técnico." | La pestaña OneDrive no admite la autenticación delegada en este momento. Para solucionar el problema, los técnicos de MSP deben ver los datos de OneDrive en el Centro de administración de Microsoft 365 iniciando sesión con las credenciales del cliente. |
+
 
 ## <a name="devices"></a>Dispositivos
 

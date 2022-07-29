@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687704"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069677"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -272,8 +272,11 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 Multi-Geo, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Después de habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para más información, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
+Después de habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente los archivos mediante cualquiera de los métodos de etiquetado siguientes o ambos:
+
+- Aplicar una etiqueta de confidencialidad predeterminada para bibliotecas de documentos, para archivos nuevos y editados en SharePoint. Para obtener más información, vea [Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint](sensitivity-labels-sharepoint-default-label.md).
+- Directivas de etiquetado automático que usan la inspección de contenido para archivos en SharePoint y OneDrive. Para más información, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
 ¿Necesita compartir los documentos etiquetados y cifrados con personas fuera de su organización?  Consulte [Compartir documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

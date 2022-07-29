@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627677"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037740"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -74,7 +74,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
 > [!NOTE]
-> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Al configurar las opciones de retención para la ubicación de **mensajes del canal de** Teams, si un equipo tiene canales compartidos, heredan la configuración de retención de su equipo primario.
+> Las directivas de retención son compatibles con [canales compartidos](/MicrosoftTeams/shared-channels). Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
 
 1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
 

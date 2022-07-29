@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos en buzones de Microsoft 365.
-ms.openlocfilehash: b27d45577b98c1eef0f3dab11412f048adff6bcd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 41a7b37980919e28ecb4dbfd6e28b5d08b905a3d
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637557"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071665"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Más información sobre los conectores para datos de terceros
 
@@ -48,7 +48,7 @@ El portal de cumplimiento Microsoft Purview proporciona conectores de datos nati
 
 - [CellTrust](#celltrust-data-connectors)
 
-Los datos de terceros enumerados en las secciones siguientes (excepto los datos de RR. HH. y los datos físicos incorrectos que se usan para la solución de administración de riesgos de Microsoft 365 Insider) se importan en buzones de usuario. Las soluciones de Microsoft Purview que admiten datos de terceros se aplican al buzón de usuario donde se almacenan los datos.
+Los datos de terceros enumerados en las secciones siguientes (excepto los datos de RR. HH. y los datos físicos incorrectos que se usan para la solución Administración de riesgos internos de Microsoft Purview) se importan en buzones de usuario. Las soluciones de Microsoft Purview que admiten datos de terceros se aplican al buzón de usuario donde se almacenan los datos.
 
 ### <a name="microsoft-data-connectors"></a>Conectores de datos de Microsoft
 

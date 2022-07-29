@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) de su sistema sanitario a Microsoft 365. Esto le permite usar los datos de EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 00d0419a2db39642b87797254f89dc1c721b69e2
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822965"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071533"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
-Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar datos de auditoría para la actividad del usuario en el sistema de registros electrónicos de atención sanitaria (EHR) de su organización. Los datos de auditoría del sistema ehr sanitario incluyen datos para eventos relacionados con el acceso a los registros de salud de un paciente. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los datos de auditoría de HEALTHCARE EHR para ayudar a proteger su organización contra el acceso no autorizado a la información de los pacientes.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar datos de auditoría para la actividad del usuario en el sistema de registros electrónicos de atención sanitaria (EHR) de su organización. Los datos de auditoría del sistema ehr sanitario incluyen datos para eventos relacionados con el acceso a los registros de salud de un paciente. La solución Microsoft Purview [Insider Risk Management](insider-risk-management.md) puede usar los datos de auditoría de HEALTHCARE EHR para ayudar a proteger su organización frente al acceso no autorizado a la información de los pacientes.
 
 La configuración de un conector de Healthcare consta de las siguientes tareas:
 

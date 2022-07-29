@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) desde el sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822787"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071599"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
 
-Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar registros de auditoría para la actividad del usuario en el sistema Epic Electronic Healthcare Records (EHR) de su organización. Los registros de auditoría del sistema EPIC EHR incluyen registros de eventos relacionados con el acceso a los registros de salud de un paciente. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los registros de auditoría de EPIC EHR para ayudar a proteger su organización contra el acceso no autorizado a la información del paciente.
+Puede configurar un conector de datos en el portal de cumplimiento Microsoft Purview para importar registros de auditoría para la actividad del usuario en el sistema Epic Electronic Healthcare Records (EHR) de su organización. Los registros de auditoría del sistema EPIC EHR incluyen registros de eventos relacionados con el acceso a los registros de salud de un paciente. La solución Microsoft Purview [Insider Risk Management](insider-risk-management.md) puede usar los registros de auditoría de EPIC EHR para ayudar a proteger su organización contra el acceso no autorizado a la información de los pacientes.
 
 La configuración de un conector epic consta de las siguientes tareas:
 

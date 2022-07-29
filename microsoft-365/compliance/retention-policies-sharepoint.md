@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo funciona la retención de Microsoft 365 para SharePoint y OneDrive, mediante directivas de retención y etiquetas de retención para administrar la retención o la eliminación automáticas de datos de su organización.
-ms.openlocfilehash: 2acfeb8dd370bc3e87f3efb25290434edc2a0152
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942922"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037170"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -144,11 +144,15 @@ Solo las páginas y secciones se verán afectadas por la configuración de reten
 
 El control de versiones es una característica de todas las listas de documentos y bibliotecas de SharePoint y OneDrive. De forma predeterminada, el control de versiones conserva un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, consulte [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) y [Cómo funciona el control de versiones en listas y bibliotecas](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Cuando un documento con versiones está sujeto a la configuración de retención que retiene el contenido, las versiones que se copian en la biblioteca de suspensión para conservación se encuentran como un elemento independiente. Si la configuración de retención se configura para eliminar al final del período de retención:
+Cuando un documento con versiones está sujeto a la configuración de retención para conservar ese contenido, la forma en que las versiones se almacenan en la biblioteca de suspensión para conservación cambió en julio de 2022 para mejorar el rendimiento. Actualmente se está implementando en los inquilinos. Todas las versiones del archivo se conservan en un único archivo en la biblioteca de suspensión para conservación. Antes del cambio, las versiones se copiaban a la biblioteca de suspensión para conservación como archivos independientes y, después del cambio, permanecen como archivos independientes.
+
+Si la configuración de retención se configura para eliminar al final del período de retención:
 
 - Si el período de retención se basa en la fecha de creación del contenido, cada versión tiene la misma fecha de vencimiento que el documento original. El documento original y sus versiones expiran al mismo tiempo.
 
-- Si el período de retención se basa en la fecha de última modificación del contenido, cada versión contará con su propia fecha de expiración en función de cuándo se modificó el documento original para crear esa versión. Los documentos originales y sus versiones expiran independientemente los unos de los otros.
+- Si el período de retención se basa en la fecha de última modificación del contenido:
+    - **Después del cambio en el que se conservan todas las versiones del archivo en un único archivo en la biblioteca de suspensión para conservación**: cada versión tiene la misma fecha de expiración que la última versión del documento. La última versión del documento y todas sus versiones expiran al mismo tiempo.
+    - **Antes del cambio en el que las versiones se copiaban a la biblioteca de suspensión para conservación como archivos independientes**: cada versión tiene su propia fecha de expiración en función de cuándo se modificó el documento original para crear esa versión. Los documentos originales y sus versiones expiran de forma independiente.
 
 Cuando la acción de retención es eliminar el documento, todas las versiones que no se encuentren en la biblioteca de suspensión para conservación se eliminarán al mismo tiempo de acuerdo con la versión actual.
 

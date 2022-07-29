@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar las soluciones de Microsoft Purview mediante conectores de datos de terceros y API de Microsoft Graph.
-ms.openlocfilehash: 8cda9ea3a5ef69af69ab802ca21aa8c4c0e716b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621191"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071555"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilidad de Microsoft Purview y Microsoft Priva
 
@@ -41,7 +41,7 @@ Hay dos bloques de creación clave para la extensibilidad de cumplimiento:
 
 Microsoft proporciona conectores de datos de terceros que se pueden configurar en el portal de cumplimiento Microsoft Purview. Para obtener una lista de los conectores de datos proporcionados por Microsoft, consulte la tabla [Conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors) . La tabla de conectores de datos de terceros también resume las soluciones de cumplimiento que puede aplicar a los datos de terceros después de importar y archivar datos en Microsoft 365, y vínculos a las instrucciones paso a paso para cada conector.
 
-Para más información sobre los conectores de datos de Microsoft 365, consulte [Archivado de datos de terceros](archiving-third-party-data.md). Si los conectores de datos disponibles en el portal de cumplimiento no admiten un tipo de datos de terceros, puede trabajar con un asociado que pueda proporcionarle un conector personalizado. Para obtener una lista de asociados con los que puede trabajar y el proceso paso a paso para este método, consulte [Trabajo con un asociado para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md).
+Para más información sobre los conectores de datos de Microsoft Purview, consulte [Archivado de datos de terceros](archiving-third-party-data.md). Si los conectores de datos disponibles en el portal de cumplimiento no admiten un tipo de datos de terceros, puede trabajar con un asociado que pueda proporcionarle un conector personalizado. Para obtener una lista de asociados con los que puede trabajar y el proceso paso a paso para este método, consulte [Trabajo con un asociado para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md).
 
 ### <a name="prerequisites-for-data-connectors"></a>Requisitos previos para conectores de datos
 
@@ -105,7 +105,7 @@ Para conocer los requisitos de licencias para el uso de las API de exportación 
 
 Con [los conectores de Microsoft Graph, las organizaciones](/microsoftsearch/connectors-overview) pueden indexar datos de terceros para que aparezcan en los resultados de Búsqueda de Microsoft. Esta característica expande los tipos de orígenes de contenido que se pueden buscar en las aplicaciones de productividad de Microsoft 365 y del ecosistema más amplio de Microsoft. Los datos de terceros se pueden hospedar de forma local o en nubes públicas o privadas. A partir de eDiscovery (Premium), estamos habilitando la versión preliminar para desarrolladores del valor de cumplimiento integrado de las aplicaciones conectadas a Microsoft 365. Esto permite el cumplimiento de las aplicaciones que se integran en el ecosistema de Microsoft 365 para capacitar a los usuarios con experiencias de cumplimiento sin problemas. Para obtener más información sobre cómo incorporar las API del conector de Microsoft Graph en la vista de aplicaciones, consulte [Creación, actualización y eliminación de conexiones en Microsoft Graph](/graph/connecting-external-content-connectors-api-overview).
 
-### <a name="microsoft-graph-api-for-records-management-preview"></a>Microsoft Graph API para la administración de registros (versión preliminar)
+### <a name="microsoft-graph-api-for-records-management-preview"></a>API de Microsoft Graph para la administración de registros (versión preliminar)
 
 Las organizaciones de todos los tipos requieren una solución de administración de registros para administrar registros críticos en sus datos. [Administración de registros de Microsoft Purview](records-management.md) ayuda a una organización a administrar sus obligaciones legales, proporciona la capacidad de demostrar el cumplimiento de las regulaciones y aumenta la eficacia con la eliminación regular de los elementos que ya no son necesarios.
 
