@@ -17,26 +17,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: Obtén información sobre qué es un dominio y cómo puedes comprar un dominio o usar el dominio predeterminado de tu empresa para empezar a usar OneDrive aplicaciones de Microsoft.
+description: Obtenga información sobre qué es un dominio y cómo puede comprar un dominio o usar el dominio predeterminado de su empresa para empezar a trabajar con Aplicaciones de OneDrive y Microsoft.
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eb7ba8a7f9ddcec9d222921e6e6171ea229e0064
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cc2f2469944e0b0602d27a136c7934687b14c5c5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316693"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084991"
 ---
 # <a name="what-is-a-domain"></a>¿Qué es un dominio?
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
-Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de su organización y un sufijo de Internet estándar, como *su empresa.<span> com* o *stateuniversity.<span> edu*. 
+Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de la organización y un sufijo estándar de Internet, como *su negocio.<span> com* o *stateuniversity.<span> edu*. 
   
-Usar un dominio personalizado como *rob@contoso.<span> com* con Microsoft 365 puede ayudar a crear la credibilidad y el reconocimiento de su marca. 
+Usar un dominio personalizado como *rob@contoso.<span> com* con Microsoft 365 puede ayudar a crear credibilidad y reconocimiento para su marca. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Seleccione la experiencia que se adapte mejor a sus necesidades:
 
@@ -46,21 +47,21 @@ Use Microsoft 365 para comprar un nuevo dominio: configuraremos todo. [Obtenga m
   
  **Use un dominio de su propiedad:**
   
-Si ya tienes un dominio como *you@yourcompany.<span> com* puedes agregarlo y empezar a usar OneDrive aplicaciones de Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
+Si ya posee un dominio como  *you@yourcompany.<span> com*  puede agregarlo y empezar a usar OneDrive y aplicaciones de Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
   
 > [!TIP]
-> ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md)
+> ¿No sabe dónde está registrado su dominio? - [Obtener ayuda para buscar el registrador de dominios](find-your-domain-registrar.md)
   
  **Use un dominio de Microsoft por ahora:**
   
 Puede usar un dominio de Microsoft como  *yourcompany.onmicrosoft.<span> com*  para iniciar sesión por ahora y agregar un dominio personalizado más adelante. 
   
 > [!IMPORTANT]
-> Si selecciona esta opción, el nombre que escriba para el dominio .onmicrosoft.com se usará en todas las direcciones URL SharePoint y OneDrive. Es posible que no pueda cambiar este nombre, así que asegúrese de que está escrito correctamente es el nombre que desea usar desde una perspectiva de personal de marca. 
+> Si selecciona esta opción, el nombre que escriba para el dominio .onmicrosoft.com se usará en todas las direcciones URL de SharePoint y OneDrive. Es posible que no pueda cambiar este nombre, por lo que asegúrese de que está escrito correctamente es el nombre que desea usar desde una perspectiva de personalización de marca. 
   
 ## <a name="feeling-stuck"></a>¿Está bloqueado?
 
-Llamar al soporte técnico de Microsoft [: obtener ayuda para configurar un dominio](../../business-video/get-help-support.md)
+Llamar a Soporte técnico de Microsoft: [obtener ayuda para configurar un dominio](../../business-video/get-help-support.md)
 
 ## <a name="related-content"></a>Contenido relacionado
 
@@ -68,6 +69,6 @@ Llamar al soporte técnico de Microsoft [: obtener ayuda para configurar un domi
 
 [Agregar un dominio a Microsoft 365](../setup/add-domain.md) (artículo)
 
-[Piloto Microsoft 365 desde mi dominio personalizado](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artículo)
+[Piloto de Microsoft 365 desde mi dominio personalizado](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artículo)
 
 

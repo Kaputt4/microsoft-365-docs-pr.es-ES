@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
 description: Obtenga información sobre cómo mover usuarios entre suscripciones.
 ms.date: 05/12/2022
-ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b8427e383e40a4061e92e4d02b64a6a16a4412db
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044331"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083979"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -67,4 +68,4 @@ Si no va a [reasignar las licencias sin usar a otros usuarios](../../managed-des
 [Quitar licencias de la suscripción](../licenses/buy-licenses.md) (artículo)\
 [Cambiar los planes manualmente](change-plans-manually.md) (artículo)\
 [Descripción de las suscripciones y licencias en Microsoft 365 para empresas](../licenses/subscriptions-and-licenses.md) (artículo)\
-[Comprar otra Microsoft 365 para una suscripción empresarial](../try-or-buy-microsoft-365.md) (artículo)
+[Comprar otra suscripción de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)

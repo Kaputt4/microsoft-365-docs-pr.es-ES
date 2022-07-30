@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,14 +27,14 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Obtenga información sobre los distintos tipos de grupos y cómo usarlos con las distintas características de colaboración de Microsoft 365.
-ms.openlocfilehash: ebbdb4400512ff2152167ab6cc894512fa50726b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 93bccf4ca5d6e70ffdaf9a613cd3f5c4eeaad4f5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437181"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084881"
 ---
-# <a name="email-collaboration-in-microsoft-365"></a>Colaboración por correo electrónico en Microsoft 365
+# <a name="email-collaboration-in-microsoft-365"></a>colaboración Email en Microsoft 365
 
 Microsoft 365 fomenta la colaboración a través de grupos en Outlook, listas de distribución (también denominadas grupos de distribución), buzones compartidos y carpetas públicas. Cada una de estas opciones presenta un propósito, una experiencia de usuario y un conjunto de características diferentes. Lo que se utilice dependerá de lo que tenga que hacer el usuario y de las herramientas que proporcione la organización.
   
@@ -42,9 +44,9 @@ En esta tabla se explican las distintas opciones de colaboración disponibles.
 
 |**Herramienta de colaboración**|**Descripción**|
 |:-----|:-----|
-|Grupos en Outlook  <br/> |Un área de trabajo compartida que funciona en todas las aplicaciones de Microsoft 365. Incluye una bandeja de entrada compartida, un calendario y un sitio de OneDrive para la Empresa para almacenar los archivos. Los usuarios pueden crear, buscar y unirse a grupos en Outlook directamente desde su correo electrónico o calendario. Los usuarios nuevos y existentes con una Exchange Online o una suscripción Microsoft 365 pueden usar Grupos en Outlook.  <br/> |
+|Grupos en Outlook  <br/> |Un área de trabajo compartida que funciona en todas las aplicaciones de Microsoft 365. Incluye una bandeja de entrada compartida, un calendario y un sitio de OneDrive para la Empresa para almacenar los archivos. Los usuarios pueden crear, buscar y unirse a grupos en Outlook directamente desde su correo electrónico o calendario. Los usuarios nuevos y existentes con una Exchange Online o una suscripción de Microsoft 365 pueden usar grupos en Outlook.  <br/> |
 |Buzón compartido  <br/> |Un buzón para determinados usuarios que permite leer y enviar mensajes de correo electrónico, además de compartir un calendario común. Los buzones de correo compartido también pueden servir como direcciones genéricas de correo electrónico (por ejemplo, info@contoso.com o ventas@contoso.com) que los clientes pueden utilizar a fin de obtener información sobre su compañía. Cuando el permiso Enviar como está habilitado en el buzón de correo compartido, en los correos electrónicos enviados desde el buzón se usará la dirección genérica (p. ej., ventas@contoso.com).  <br/> |
-|Lista de distribución (también denominada "grupo de distribución")  <br/> |Se utiliza para distribuir mensajes de correo electrónico a dos o más personas al mismo tiempo. Los grupos de distribución también se conocen como "grupos de distribución habilitados para correo". Una variante del grupo de distribución, que se denomina "grupo de distribución dinámica", es un objeto de grupo de Active Directory habilitado para correo que se usa para enviar correo electrónico a un grupo grande de destinatarios en constante cambio. Los destinatarios concretos se determinan mediante los filtros y las condiciones que se especifiquen, por ejemplo, todos los miembros de una configuración regional concreta o todos los empleados a tiempo completo.<br/><br/> Grupos de Microsoft 365 en Outlook ofrecen una solución más eficaz para la colaboración que los grupos de distribución. Para obtener más información, consulte [Por qué debe actualizar las listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) y [Migrar listas de distribución a Grupos de Microsoft 365](../manage/upgrade-distribution-lists.md).  <br/> |
+|Lista de distribución (también denominada "grupo de distribución")  <br/> |Se utiliza para distribuir mensajes de correo electrónico a dos o más personas al mismo tiempo. Los grupos de distribución también se conocen como "grupos de distribución habilitados para correo". Una variante del grupo de distribución, que se denomina "grupo de distribución dinámica", es un objeto de grupo de Active Directory habilitado para correo que se usa para enviar correo electrónico a un grupo grande de destinatarios en constante cambio. Los destinatarios concretos se determinan mediante los filtros y las condiciones que se especifiquen, por ejemplo, todos los miembros de una configuración regional concreta o todos los empleados a tiempo completo.<br/><br/> Grupos de Microsoft 365 en Outlook ofrecen una solución más eficaz para la colaboración que los grupos de distribución. Para obtener más información, vea [Por qué debe actualizar las listas de distribución a grupos en Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) y [Migrar listas de distribución a Grupos de Microsoft 365](../manage/upgrade-distribution-lists.md).  <br/> |
 |Carpeta pública  <br/> |Diseñadas para el acceso compartido, las carpetas públicas proporcionan una manera fácil y eficaz de recopilar, organizar y compartir información con otras personas de su organización. Las carpetas públicas organizan el contenido en una jerarquía profunda fácil de examinar y siempre visible en la vista de carpetas de Outlook. Una carpeta pública puede estar habilitada para correo y agregarse como un miembro del grupo de distribución. El correo electrónico enviado al grupo de distribución se agrega automáticamente a la carpeta pública para su archivado o para referencia futura. Las carpetas públicas también proporcionan funciones sencillas para el uso compartido de documentos cuando no se tenga una suscripción a SharePoint Online.  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>¿Qué herramienta de colaboración debo usar?

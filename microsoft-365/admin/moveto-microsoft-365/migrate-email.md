@@ -1,5 +1,5 @@
 ---
-title: Migración del calendario y el correo electrónico empresarial desde Google Workspace
+title: Migrar el calendario y el correo electrónico empresarial desde Google Workspace
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo migrar correo electrónico, contactos y calendario de Google Workspace a Microsoft 365 para empresas.
-ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602046"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087383"
 ---
-# <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migración del calendario y el correo electrónico empresarial desde Google Workspace
+# <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrar el calendario y el correo electrónico empresarial desde Google Workspace
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 ## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>Inspección: Migración del calendario y el correo electrónico empresarial desde Google Workspace
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 

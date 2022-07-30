@@ -1,5 +1,5 @@
 ---
-title: Actualizar listas de distribución a grupos de Microsoft 365 en Exchange Online
+title: Actualizar listas de distribución a Grupos de Microsoft 365 en Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Obtenga información sobre cómo actualizar una o varias listas de distribución a grupos de Microsoft 365 en Exchange Online y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
-ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Obtenga información sobre cómo actualizar una o varias listas de distribución a Grupos de Microsoft 365 en Exchange Online y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
+ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922183"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085233"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Actualizar listas de distribución a grupos de Microsoft 365 en Exchange Online
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Actualizar listas de distribución a Grupos de Microsoft 365 en Exchange Online
 
 Actualizar una lista de distribución a un grupo de Microsoft 365 es una excelente manera de mejorar las características y funcionalidades de los grupos de su organización. Para obtener más información, vea [Por qué debe actualizar las listas de distribución a grupos en Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188).
 
-Puede actualizar las listas de distribución de uno en uno o varias al mismo tiempo. Puede usar el Centro de administración de Exchange (EAC) o PowerShell de Exchange Online.
+Puede actualizar las listas de distribución de uno en uno o varias al mismo tiempo. Puede usar el Centro de administración de Exchange (EAC) o Exchange Online PowerShell.
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Actualizar uno o varios grupos de listas de distribución a grupos de Microsoft 365
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Actualice uno o varios grupos de listas de distribución a Grupos de Microsoft 365
 
-Debe ser administrador global o administrador de Exchange para actualizar una lista de distribución. Para actualizar a grupos de Microsoft 365, la lista de distribución debe tener un propietario designado y ese propietario debe ser un buzón de correo.
+Debe ser administrador global o administrador de Exchange para actualizar una lista de distribución. Para actualizar a Grupos de Microsoft 365, la lista de distribución debe tener un propietario designado y ese propietario debe ser un buzón de correo.
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uso del EAC clásico para actualizar uno o varios grupos de listas de distribución a grupos de Microsoft 365 en Outlook
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uso del EAC clásico para actualizar uno o varios grupos de listas de distribución a Grupos de Microsoft 365 en Outlook
 
 > [!NOTE]
 > Los procedimientos de esta sección no están disponibles en el nuevo EAC.
 
 1. Vaya al Centro de administración de Exchange > **Grupos de destinatarios**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>
 
-   Verá un aviso que indica que tiene listas de distribución (también denominadas **grupos de distribución**) que son aptas para actualizarse a grupos de Microsoft 365.
+   Verá un aviso que indica que tiene listas de distribución (también denominadas **grupos de distribución**) que son aptas para actualizarse a Grupos de Microsoft 365.
    
    ![Seleccione el botón Introducción.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
@@ -56,7 +56,7 @@ Debe ser administrador global o administrador de Exchange para actualizar una li
 
 1. Seleccione el icono de actualización.
 
-   ![Actualice al icono Grupos de Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+   ![Actualice al icono de Grupos de Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 1. En el cuadro de diálogo de información, seleccione **Sí** para confirmar la actualización. El proceso comienza inmediatamente. Según el tamaño y el número de iluminaciones de distribución que esté actualizando, el proceso puede tardar minutos o horas.
 
@@ -84,7 +84,7 @@ Si no se pueden actualizar una o varias listas de distribución **aptas** , siga
 
 ## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Cómo usar Exchange Online PowerShell para actualizar varias listas de distribución al mismo tiempo
 
-Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="upgrade-a-single-distribution-list"></a>Actualización de una lista de distribución única
 
@@ -113,7 +113,7 @@ Para actualizar varias listas de distribución al mismo tiempo, use la sintaxis 
 Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-En este ejemplo se actualizan las listas de distribución especificadas a grupos de Microsoft 365.
+En este ejemplo se actualizan las listas de distribución especificadas a Grupos de Microsoft 365.
 
 ```powershell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
@@ -123,7 +123,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [Up
 
 ### <a name="upgrade-all-eligible-distribution-lists"></a>Actualización de todas las listas de distribución aptas
 
-Use cualquiera de los métodos siguientes para actualizar todas las listas de distribución aptas a grupos de Microsoft 365:
+Use cualquiera de los métodos siguientes para actualizar todas las listas de distribución aptas a Grupos de Microsoft 365:
 
 - Actualice todas las listas de distribución aptas:
 
@@ -139,7 +139,7 @@ Use cualquiera de los métodos siguientes para actualizar todas las listas de di
    $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Preguntas más frecuentes sobre la actualización de listas de distribución a grupos de Microsoft 365 en Outlook
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Preguntas más frecuentes sobre la actualización de listas de distribución a Grupos de Microsoft 365 en Outlook
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>¿Qué listas de distribución no se pueden actualizar?
 
@@ -186,7 +186,7 @@ Personas con derechos de administrador global o administrador de Exchange.
   - El destinatario del grupo se resolverá como la lista de distribución en lugar del grupo de Microsoft 365.
   - La tarjeta de contacto será el contacto de la lista de distribución en lugar del grupo de Microsoft 365.
 
-- **Outlook en la web**: al igual que Outlook, la lista de distribución permanecerá en la caché de destinatarios. Siga los pasos de este artículo para actualizar la memoria caché para ver la tarjeta de contacto del grupo: [Quitar el nombre sugerido o la dirección de correo electrónico de la lista de autocompletar](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
+- **Outlook en la Web**: al igual que Outlook, la lista de distribución permanecerá en la caché de destinatarios. Siga los pasos de este artículo para actualizar la memoria caché para ver la tarjeta de contacto del grupo: [Quitar el nombre sugerido o la dirección de correo electrónico de la lista de autocompletar](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>¿Los nuevos miembros del grupo reciben un correo electrónico de bienvenida en su bandeja de entrada?
 
@@ -196,7 +196,7 @@ No. La configuración para habilitar los mensajes de bienvenida se establece en 
 
 Hay algunos casos en los que las listas de distribución aptas no se pueden actualizar. Por ejemplo:
 
-- Un administrador ha aplicado una directiva de **dirección de correo electrónico de grupo** y la lista de distribución no cumple los requisitos de la directiva.
+- Un administrador ha aplicado una directiva de **dirección de Email** grupo y la lista de distribución no cumple los requisitos de la directiva.
 
 - Una lista de distribución tiene **los valores MemberJoinRestriction** o **MemberDepartRestriction** establecidos en el valor **Closed**.
 
@@ -204,9 +204,9 @@ Hay algunos casos en los que las listas de distribución aptas no se pueden actu
 
   Use una de las siguientes soluciones alternativas para este problema específico:
 
-  - Asegúrese de que todos los propietarios de la lista de distribución pueden crear grupos de Microsoft 365 (es decir, los propietarios son miembros del grupo de seguridad al que se permite crear grupos de Microsoft 365).
+  - Asegúrese de que todos los propietarios de la lista de distribución pueden crear Grupos de Microsoft 365 (es decir, los propietarios son miembros del grupo de seguridad al que se permite crear Grupos de Microsoft 365).
 
-  - Reemplace temporalmente el propietario de la lista de distribución por un usuario que tenga permiso para crear grupos de Microsoft 365.
+  - Reemplace temporalmente el propietario de la lista de distribución por un usuario que tenga permiso para crear Grupos de Microsoft 365.
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>¿Qué ocurre con la dll si se produce un error en la actualización desde EAC?
 
@@ -219,5 +219,5 @@ La configuración de aprobación de mensajes (moderación) se conserva y sigue f
 ## <a name="related-content"></a>Contenido relacionado
 
 [Comparar grupos](../create-groups/compare-groups.md) (artículo)\
-[Explicación de grupos de Microsoft 365 a los usuarios](../create-groups/explain-groups-knowledge-worker.md) (artículo)\
+[Explicación de Grupos de Microsoft 365 a los usuarios](../create-groups/explain-groups-knowledge-worker.md) (artículo)\
 [Agregar o quitar miembros de grupos de Microsoft 365 mediante el Centro de administración](../create-groups/add-or-remove-members-from-groups.md)
