@@ -278,6 +278,7 @@
 ##### [Habilitar la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md)
 ##### [Personalizar la protección contra vulnerabilidades de seguridad](customize-exploit-protection.md)
 ##### [Importar, exportar e implementar configuraciones de protección de vulnerabilidades de seguridad](import-export-exploit-protection-emet-xml.md)
+##### [Solución de problemas de mitigaciones de protección contra vulnerabilidades](troubleshoot-exploit-protection-mitigations.md)
 ##### [Referencia de protección contra vulnerabilidades de seguridad](exploit-protection-reference.md)
 #### [Protección de red]()
 ##### [Proteger la red](network-protection.md)

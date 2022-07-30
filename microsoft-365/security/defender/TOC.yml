@@ -477,6 +477,8 @@
                   href: ../intelligence/macro-malware.md
                 - name: Suplantación de identidad (phishing)
                   href: ../intelligence/phishing.md
+                - name: Tendencias y técnicas de suplantación de identidad (phishing)
+                  href: ../intelligence/phishing-trends.md
                 - name: Ransomware
                   href: /security/compass/human-operated-ransomware
                 - name: Rootkits
@@ -487,6 +489,8 @@
                   href: ../intelligence/support-scams.md
                 - name: Troyanos
                   href: ../intelligence/trojans-malware.md
+                - name: Solución de problemas de errores del portal MSI causados por el bloqueo de administración
+                  href: ../intelligence/portal-submission-troubleshooting.md
                 - name: Software no deseado
                   href: ../intelligence/unwanted-software.md
                 - name: Gusanos
