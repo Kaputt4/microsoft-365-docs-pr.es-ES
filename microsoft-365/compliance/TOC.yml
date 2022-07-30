@@ -326,7 +326,7 @@
               href: named-entities-learn.md
         - name: Introducción a los tipos de información confidencial
           items:
-            - name: 'Creación de tipos personalizados de información confidencial: Centro de cumplimiento'
+            - name: Crear un tipo de información confidencial personalizada en el Centro de cumplimiento
               href: create-a-custom-sensitive-information-type.md
             - name: Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -1020,6 +1020,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Configurar una etiqueta de confidencialidad predeterminada para las bibliotecas de SharePoint
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Habilitar la coautoría para documentos cifrados por etiquetas de confidencialidad
           href: sensitivity-labels-coauthoring.md
         - name: Establecer el tipo de vínculo de uso compartido predeterminado mediante etiquetas de confidencialidad

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 2adc24b4809689137ae067ce09cda8caebea2a0e
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 37992558c1621ab476fa3a481776f0d3a7e55df4
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917153"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099489"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -143,7 +143,7 @@ La incorporación y la retirada se controlan mediante scripts que se descargan d
 
  Use los procedimientos descritos en [Introducción a DLP en punto de conexión de Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
 
-Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md), estos dispositivos se mostrarán automáticamente en la lista de dispositivos. Esto se debe a que la incorporación a Defender también incorpora dispositivos a DLP. Solo tiene que **activar la supervisión de dispositivos** para usar DLP de punto de conexión. .
+Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md), estos dispositivos se mostrarán automáticamente en la lista de dispositivos. Esto se debe a que la incorporación a Defender también incorpora dispositivos a DLP. Solo tiene que **activar la supervisión de dispositivos** para usar DLP de punto de conexión. .
 
 > [!div class="mx-imgBorder"]
 > ![lista de dispositivos administrados.](../media/endpoint-dlp-learn-about-2-device-list.png)
