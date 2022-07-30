@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Básico.
-ms.openlocfilehash: e7c616936f045bc4266c24b65342451ffeff43ef
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4ec614051eef61c51597da160b3030c6ba8aad07
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371093"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084859"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurar Microsoft 365 Empresa Básico
 

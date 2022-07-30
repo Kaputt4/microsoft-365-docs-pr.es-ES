@@ -1,5 +1,5 @@
 ---
-title: Aumento de la protección contra amenazas para Microsoft 365 para empresas
+title: Aumentar la protección contra amenazas para Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -24,16 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra phishing, malware y otras amenazas.
-ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603340"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085540"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Aumento de la protección contra amenazas para Microsoft 365 para empresas
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Aumentar la protección contra amenazas para Microsoft 365 para empresas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Este artículo le ayuda a aumentar la protección en su suscripción de Microsoft 365 para protegerse contra phishing, malware y otras amenazas. Estas recomendaciones son adecuadas para las organizaciones con una mayor necesidad de seguridad, como las oficinas legales y las clínicas de atención médica.
 
@@ -49,13 +50,13 @@ El entorno de Office 365 o Microsoft 365 incluye protección contra malware. Par
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Mostrar más**, **Administración centros** y, a continuación, **Seguridad**.
 
-1. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas de amenazas**.
+1. Vaya a **Email &** directivas de colaboración \> **& reglas Directivas** \> de **amenazas**.
 
 1. En las directivas disponibles, elija **Antimalware**.
 
 Para aumentar la protección contra malware en el correo electrónico:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Directivas de colaboración** \> **Email & & reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 
 1. En la página **Antimalware**, haga doble clic en **Predeterminado (predeterminado).** Aparece un control flotante. 
 
@@ -73,7 +74,7 @@ Para obtener más información, consulte [Protección contra malware en EOP](../
 
 ## <a name="watch-protect-against-ransomware"></a>Ver: Proteger contra ransomware
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198018).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198018).
 
 Ransomware restringe el acceso a los datos mediante el cifrado de archivos o el bloqueo de pantallas del equipo. A continuación, intenta extorsionar dinero de las víctimas pidiendo "rescate", normalmente en forma de criptomonedas como Bitcoin, a cambio de acceso a los datos.
 
@@ -103,7 +104,7 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración de la siguiente tabla para la regla. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 |Configuración|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
@@ -113,7 +114,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conozca porque podrían contener macros con código malintencionado.|
 
-Para obtener más información, consulte:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -135,7 +136,7 @@ Para crear una regla de transporte de correo, siga estos pasos:
 
 5. Aplique la configuración de la tabla siguiente. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 |Configuración|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
@@ -147,7 +148,7 @@ Para crear una regla de transporte de correo, siga estos pasos:
 
 ## <a name="watch-protect-your-email-from-phishing-attacks"></a>Inspección: Protección del correo electrónico frente a ataques de suplantación de identidad
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198014).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198014).
 
 Si ha configurado uno o varios dominios personalizados para el entorno de Office 365 o Microsoft 365, puede configurar la protección contra phishing dirigida. La protección contra suplantación de identidad (phishing), que forma parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización frente a ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.
 
@@ -157,7 +158,7 @@ Se recomienda empezar a trabajar con esta protección mediante la creación de u
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas** \> **de amenazas Anti-phishing** en la sección **Directivas** .
+2. Vaya a Email & **directivas de** **colaboración** \> & reglas \> **Directivas** \> **de amenazas Anti-phishing** en la sección **Directivas**.
 
 3. En la página **Anti-phishing** , seleccione **+ Crear**. Se inicia un asistente que le guiará a través de la definición de la directiva anti-phishing.
 
@@ -178,7 +179,7 @@ Se recomienda empezar a trabajar con esta protección mediante la creación de u
 
 ## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Vea: Protección contra archivos y datos adjuntos malintencionados con datos adjuntos seguros
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198019).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198019).
 
 Los usuarios envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si un archivo adjunto es seguro o malintencionado simplemente examinando un mensaje de correo electrónico. Microsoft Defender para Office 365, anteriormente denominada ATP de Microsoft 365 o Advanced Threat Protection, incluye protección de datos adjuntos seguros, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
@@ -191,7 +192,7 @@ Los usuarios envían, reciben y comparten datos adjuntos con regularidad, como d
 1. Desplácese hacia abajo. Elija **Habilitar redirección** y escriba su dirección de correo electrónico o la dirección de la persona que desea revisar los datos adjuntos bloqueados.
 1. Seleccione **aplicado a** y, a continuación, seleccione el nombre de dominio.
 1. Elija los dominios adicionales que posea (como el dominio de onmicrosoft.com) a los que le gustaría aplicar la regla. Seleccione **Agregar** y, a continuación, **Aceptar**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 La regla de datos adjuntos seguros de ATP se ha actualizado. Ahora que la protección está en vigor, no podrá abrir un archivo malintencionado desde Outlook, OneDrive, SharePoint o Teams. Los archivos afectados tendrán escudos rojos junto a ellos. Si alguien intenta abrir un archivo bloqueado, recibirá un mensaje de advertencia.
 
@@ -199,7 +200,7 @@ Una vez que la directiva haya estado en vigor durante un tiempo, visite la pági
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> e inicie sesión con su cuenta de administrador.
 
-2. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas** .
+2. Vaya a Email & **directivas de** **colaboración** \> & reglas \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 
 3. Seleccione **+ Crear** para crear una nueva directiva.
 
@@ -219,7 +220,7 @@ Para obtener más información, consulte [Configuración de directivas contra su
 
 ## <a name="watch-protect-against-phishing-attacks-with-safe-links"></a>Vea: Protección contra ataques de suplantación de identidad (phishing) con vínculos seguros
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198201).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198201).
 
 Los hackers a veces ocultan sitios web malintencionados en vínculos en el correo electrónico u otros archivos. Vínculos seguros, parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización proporcionando la verificación con el tiempo de clic de las direcciones web (DIRECCIONES URL) en mensajes de correo electrónico y documentos de Office. La protección se define mediante directivas de vínculos seguros.
 
@@ -243,7 +244,7 @@ Para configurar vínculos seguros, siga estos pasos:
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> e inicie sesión con su cuenta de administrador.
 
-2. o al **correo electrónico &** **directivas de** colaboración \> & reglas \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
+2. o para **Email &** directivas de colaboración \> **& reglas Directivas** \>  \> **de amenazas Antimalware** en la sección **Directivas**.
 
 3. Seleccione **+ Crear** para crear una nueva directiva o modifique la directiva predeterminada.
 

@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 description: Siga los pasos de este artículo para registrarse en Microsoft Teams como parte de una suscripción empresarial.
-ms.openlocfilehash: 9be7805e8b3ee29128eab2b99ee0f2f87f42b607
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 7acf40e6c4ba199abab8eb97c5d87b357f012830
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465852"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086111"
 ---
-# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Registrarse para Microsoft Teams como parte de una suscripción empresarial
+# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Registrarse en Microsoft Teams como parte de una suscripción empresarial
 
 Microsoft Teams Essentials y Microsoft 365 Empresa Básico 365 se ofrecen para uso comercial y están destinados a clientes empresariales. Este artículo sirve para ayudar a los clientes a elegir cuál es el adecuado para sus necesidades.  ¿No es una empresa?
 
@@ -29,7 +30,7 @@ Microsoft Teams Essentials y Microsoft 365 Empresa Básico 365 se ofrecen para u
 
 ## <a name="choosing-the-right-business-subscription"></a>Elección de la suscripción empresarial adecuada
 
-Al intentar comprar Microsoft Teams funcionalidad premium para reuniones y llamadas, tiene dos opciones de precio similar para empezar a trabajar: Microsoft Teams Essentials y Microsoft 365 Empresa Básico. Evalúe tres factores clave para elegir cuál se ajusta mejor a sus necesidades:
+Al intentar comprar la funcionalidad de llamadas y reuniones Premium de Microsoft Teams, tiene dos opciones de precio similar para empezar a trabajar: Microsoft Teams Essentials y Microsoft 365 Empresa Básico. Evalúe tres factores clave para elegir cuál se ajusta mejor a sus necesidades:
 
 1. ¿Qué aplicaciones y servicios desea?
 2. ¿Cuánta habilidad técnica tienes?  
@@ -39,11 +40,11 @@ Consulte la tabla siguiente para ver las opciones de registro y los servicios qu
 
 |&nbsp;|**Opción 1: Microsoft Teams Essentials** |**Opción 2: Microsoft 365 Empresa Básico** |
 |---|---|---|
-|Aplicaciones y servicios disponibles|Inicie sesión con su cuenta de correo electrónico existente (Hotmail, Gmail, Yahoo) mediante el nuevo proceso de registro de Business Standard. Microsoft Teams con almacenamiento en la nube en OneDrive. Versiones web gratuitas de Word, Excel, PowerPoint en Office.com para editar archivos compartidos en Teams. <br/><br/> **Este conjunto de aplicaciones es el mejor para empresas muy pequeñas que necesitan colaborar de forma eficaz a través de reuniones de vídeo y chat**. |Microsoft Teams y OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner y Lists. Premium Office versiones web de Word, Excel, PowerPoint en Office.com. <br/><br/> **Microsoft 365 Empresa Básico también le permite acceder a una amplia gama de servicios basados en web**: <ul><li>Cuentas de correo electrónico empresarial nuevas y de marca con calendarios compartidos Outlook dentro de su empresa.</li><li>Bookings, programación de citas y grabaciones de reuniones.</li><li>Almacenamiento de documentos compartidos y sitios de SharePoint.</li><li> Microsoft Planner y Listas Microsoft.</li></ul> <br/> Microsoft 365 Empresa Básico ofrecer servicios adicionales dentro de Teams con registro de cuenta de dominio: <ul><li>Grabaciones de reuniones y acceso anónimo a llamadas en Microsoft Teams.</li><li>Uso compartido de documentos más fácil dentro de su empresa.</li><li>Soporte técnico para las necesidades de cumplimiento de su sector.</li><li>Acceso y control sobre el uso de los servicios por parte de los empleados.</li><li>La gama más amplia de integraciones de aplicaciones que no son de Microsoft (por ejemplo, Salesforce, Adobe) que funcionan dentro de Teams y Office.</li></ul>|
+|Aplicaciones y servicios disponibles|Inicie sesión con su cuenta de correo electrónico existente (Hotmail, Gmail, Yahoo) mediante el nuevo proceso de registro de Business Standard. Microsoft Teams con almacenamiento en la nube en OneDrive. Versiones web gratuitas de Word, Excel y PowerPoint en Office.com para editar archivos compartidos en Teams. <br/><br/> **Este conjunto de aplicaciones es el mejor para empresas muy pequeñas que necesitan colaborar de forma eficaz a través de reuniones de vídeo y chat**. |Microsoft Teams y OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner y Lists. Versiones web premium de Office de Word, Excel y PowerPoint en Office.com. <br/><br/> **Microsoft 365 Empresa Básico también le permite acceder a una amplia gama de servicios basados en web**: <ul><li>Cuentas de correo electrónico empresarial nuevas y de marca con Outlook, calendarios compartidos dentro de su empresa.</li><li>Reservas, programación de citas y grabaciones de reuniones.</li><li>Almacenamiento de documentos compartido y sitios de SharePoint.</li><li> Microsoft Planner y Listas Microsoft.</li></ul> <br/> Microsoft 365 Empresa Básico ofrecer servicios adicionales en Teams con registro de cuenta de dominio: <ul><li>Grabaciones de reuniones y acceso anónimo a llamadas en Microsoft Teams.</li><li>Uso compartido de documentos más fácil dentro de su empresa.</li><li>Soporte técnico para las necesidades de cumplimiento de su sector.</li><li>Acceso y control sobre el uso de los servicios por parte de los empleados.</li><li>La gama más amplia de integraciones de aplicaciones que no son de Microsoft (por ejemplo, Salesforce, Adobe) que funcionan en Teams y Office.</li></ul>|
 |Conocimientos necesarios|Comencemos sin conocimientos técnicos necesarios para ejecutar un dominio.|Requiere que compre un dominio o que posea un dominio. Si desea usar un dominio existente, necesitará credenciales de acceso para el dominio y es posible que necesite conocimientos técnicos para demostrar la propiedad.|
 |Acuerdo de gobierno y control de datos|Disponible en el Complemento al [Contrato de Servicios de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) y **es mejor para empresas que desean algunas herramientas de trabajo y colaboración remotas y se sienten cómodos con Microsoft que actúa como controlador** de sus datos en virtud de la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Los suscriptores ("usted") a los servicios que usan esta opción no tendrán acceso al contenido ni a los datos de otro usuario invitado ("usuarios invitados). <br/><br/> Por ejemplo, si trabaja en colaboración con otros usuarios invitados en un documento almacenado en su cuenta, pueden optar por que esos documentos no sean accesibles para usted. <br/><br> Por separado, los usuarios invitados pueden optar por no transferir documentos en su cuenta de Sign-Up simplificada a la suscripción de la cuenta de dominio, incluso después de invitarlos a hacerlo. Esto significa que es posible que sus documentos no sean accesibles incluso si agrega una cuenta de dominio más adelante. Como tal, debe evaluar las consideraciones de propiedad de datos y derechos de propiedad intelectual en consecuencia.|Disponible en virtud del [Contrato de suscripción de Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) y es **mejor para las empresas que necesitan que Microsoft actúe como procesador** de sus datos en nuestro [Anexo de protección de datos](https://go.microsoft.com/fwlink/p/?linkid=2180314) y necesiten nuestro conjunto completo de herramientas de trabajo y colaboración remotas. **Los suscriptores que están en sectores regulados o buscan más control, tanto sobre el uso de los servicios por parte de los empleados como sobre el procesamiento de datos relacionados por parte de Microsoft, deben elegir Registrarse en la cuenta de dominio con Microsoft Business Business Basic** y registrarse en el contrato de nivel empresarial de la cuenta de dominio.|
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 

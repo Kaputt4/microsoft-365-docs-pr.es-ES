@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 551c3356adb0e5c3ded15d5bf942f0ac0bbd515d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772092"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087668"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configuración del filtrado de correo no deseado saliente en EOP
 
@@ -85,7 +85,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
 - Para ver nuestra configuración recomendada para las directivas de correo no deseado saliente, consulte [Configuración de la directiva de filtro de correo no deseado saliente de EOP](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
-- Se han superado [las directivas de alerta](../../compliance/alert-policies.md) predeterminadas **denominadas Límite de envío** de **correo electrónico, se han detectado patrones de envío de correo electrónico sospechoso** y **el usuario ha restringido el envío de correo electrónico** a los miembros del grupo **TenantAdmins** (**administradores globales**) sobre la actividad de correo electrónico saliente inusual y los usuarios bloqueados debido al correo no deseado saliente. Para obtener más información, consulte [Comprobación de la configuración de alertas para usuarios restringidos](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Se recomienda usar estas directivas de alerta en lugar de las opciones de notificación en las directivas de correo no deseado saliente.
+- Se han superado [las directivas de alerta](../../compliance/alert-policies.md) predeterminadas **denominadas Email límite de envío, se** **han detectado patrones de envío de correo electrónico sospechoso** y **el usuario ha restringido el envío de** notificaciones por correo electrónico a los miembros del grupo **TenantAdmins** (**administradores globales**) sobre la actividad de correo electrónico saliente inusual y los usuarios bloqueados debido al correo no deseado saliente. Para obtener más información, consulte [Comprobación de la configuración de alertas para usuarios restringidos](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Se recomienda usar estas directivas de alerta en lugar de las opciones de notificación en las directivas de correo no deseado saliente.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Uso del portal de Microsoft 365 Defender para crear directivas de correo no deseado saliente
 
@@ -117,14 +117,14 @@ La creación de una directiva de correo no deseado de salida personalizada en el
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los remitentes internos a los que se aplica la directiva (excepciones de destinatario), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
 
    > [!IMPORTANT]
-   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -142,12 +142,12 @@ La creación de una directiva de correo no deseado de salida personalizada en el
 
      Para todas las acciones, los remitentes especificados en la directiva **Usuario restringido de envío de** alertas de correo electrónico (y en el ahora redundante **Notificar a estos usuarios y grupos si un remitente está bloqueado debido a la configuración de envío de correo no deseado saliente** más adelante en esta página) reciben notificaciones por correo electrónico.
 
-     - **Restrinja al usuario el envío de correo hasta el día siguiente**: este es el valor predeterminado. Se envían notificaciones por correo electrónico y el usuario no podrá enviar más mensajes hasta el día siguiente, según la hora UTC. No hay ninguna manera de que el administrador invalide este bloque.
+     - **Restrinja al usuario el envío de correo hasta el día siguiente**: este es el valor predeterminado. Email se envían notificaciones y el usuario no podrá enviar más mensajes hasta el día siguiente, en función de la hora UTC. No hay ninguna manera de que el administrador invalide este bloque.
        - La directiva de alertas denominada **User restricted from sending email** notifica a los administradores (por correo electrónico y en la página **De visualización de alertas** \> de incidentes &).
        - También se notifica a todos los destinatarios especificados en la configuración **Notificar a personas específicas si un remitente está bloqueado debido al envío de correo no deseado** en la directiva.
        - El usuario no podrá enviar más mensajes hasta el día siguiente, según la hora UTC. No hay ninguna manera de que el administrador invalide este bloque.
-     - **Impedir que el usuario envíe correo:** se envían notificaciones por correo electrónico, el usuario se agrega a **usuarios** <https://security.microsoft.com/restrictedusers> restringidos en el portal de Microsoft 365 Defender y el usuario no puede enviar correo electrónico hasta que un administrador los quite de **los usuarios restringidos**. Después de que un administrador quite al usuario de la lista, el usuario no se restringirá de nuevo para ese día. Para obtener instrucciones, consulte [Eliminación de un usuario del portal Usuarios restringidos después de enviar correo electrónico no deseado](removing-user-from-restricted-users-portal-after-spam.md).
-     - **Sin acción, solo alerta**: se envían notificaciones por correo electrónico.
+     - **Impedir que el usuario envíe correo:** Email se envían notificaciones, el usuario se agrega a **usuarios** <https://security.microsoft.com/restrictedusers> restringidos en el portal de Microsoft 365 Defender y el usuario no puede enviar correo electrónico hasta que un administrador los quite de **los usuarios restringidos**. Después de que un administrador quite al usuario de la lista, el usuario no se restringirá de nuevo para ese día. Para obtener instrucciones, consulte [Eliminación de un usuario del portal Usuarios restringidos después de enviar correo electrónico no deseado](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Sin acción, solo alerta**: se envían las notificaciones Email.
 
    - **Reglas de reenvío**: use la configuración de esta sección para controlar el reenvío automático de correo electrónico Exchange Online **buzones** a remitentes externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md).
 

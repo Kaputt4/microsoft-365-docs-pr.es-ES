@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
 ms.date: 07/07/2022
-ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 9acaaff87e649342a073e2395edb41ca07dd1485
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695712"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084815"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Cancelar la suscripción a Microsoft
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
@@ -30,16 +31,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta de administrador de Microsoft 365 para restablecer las contraseñas de los usuarios cuando tenga una suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601682"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084661"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Restablecimiento de contraseñas en Microsoft 365 para empresas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 En este artículo se explica cómo restablecer las contraseñas para usted y para los usuarios cuando tiene una suscripción de Microsoft 365 para empresas.
 
@@ -47,7 +48,7 @@ En este artículo se explica cómo restablecer las contraseñas para usted y par
 > También puede configurar el autoservicio de restablecimiento de contraseña para los usuarios para que puedan restablecer sus propias contraseñas. Para más información, consulte [Permitir que los usuarios restablezcan sus propias contraseñas](let-users-reset-passwords.md).
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -57,7 +58,7 @@ Debe ser [administrador global o administrador de contraseñas](about-admin-role
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>Inspección: Restablecimiento de una contraseña empresarial para un usuario
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 

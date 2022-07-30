@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -21,17 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: Obtenga información sobre cómo agregar un usuario Microsoft 365 o un contacto como un empleado, asociado o proveedor a un grupo de distribución de correo electrónico.
-ms.openlocfilehash: e4054d73707d77297ae4f5e9f6f2fb406a829d55
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Obtenga información sobre cómo agregar un usuario o contacto de Microsoft 365, como un empleado, asociado o proveedor, a un grupo de distribución de correo electrónico.
+ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437225"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084089"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Agregar un usuario o un contacto a un grupo de distribución de Microsoft 365
 
-Como administrador de una organización, es posible que tenga que agregar uno de los usuarios o contactos a un grupo de distribución (consulte [Creación de grupos de distribución en Microsoft 365](../setup/create-distribution-lists.md). Por ejemplo, puede agregar empleados o asociados externos o proveedores a un grupo de distribución de correo electrónico.
+Como administrador de una organización, es posible que tenga que agregar uno de sus usuarios o contactos a un grupo de distribución (consulte [Creación de grupos de distribución en Microsoft 365](../setup/create-distribution-lists.md). Por ejemplo, puede agregar empleados o asociados externos o proveedores a un grupo de distribución de correo electrónico.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Adición de un usuario o contacto a un grupo de distribución
 
@@ -51,9 +52,9 @@ Como administrador de una organización, es posible que tenga que agregar uno de
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Siguientes pasos
 
-Aprenda a [enviar correo electrónico como grupo de distribución en Microsoft 365](../manage/send-email-as-distribution-list.md).
+Aprenda a [enviar correo electrónico como un grupo de distribución en Microsoft 365](../manage/send-email-as-distribution-list.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

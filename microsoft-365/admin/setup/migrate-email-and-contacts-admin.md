@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020
@@ -31,29 +32,29 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Aprenda a importar contactos, calendarios y correos electrónicos de Gmail u otro proveedor de correo electrónico y a migrarlos a Microsoft 365.
-ms.openlocfilehash: 14f4e1d630c19038f3bf9204d52f62b2f2f18d5d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 769ac7b2ee1a84767fe71d45ee9214927044213b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602986"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086921"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar correo y contactos a Microsoft 365
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Importe o migre el correo electrónico de Gmail u otro proveedor de correo electrónico a Microsoft 365.
   
  **¿Quieres ayuda con esto?**  [Póngase en contacto con Microsoft 365 para obtener soporte técnico empresarial](../../business-video/get-help-support.md). 
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
   
 Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de [los planes](https://go.microsoft.com/fwlink/p/?LinkId=723731) de Microsoft 365.
   
 ## <a name="watch-import-and-redirect-email"></a>Ver: Importar y redirigir correo electrónico
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -27,22 +28,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administre las firmas de correo electrónico, incluidas las declaraciones de divulgación o declinación de responsabilidades legales para todos los mensajes de correo electrónico que entran o salen de su organización.
-ms.openlocfilehash: 47e6a862441b5c2725a48cae20669541b8a69f87
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602820"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087295"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creación de firmas y declinaciones de responsabilidades para toda la organización
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
  Puede administrar las firmas de correo electrónico agregando una firma de correo electrónico, una declinación de responsabilidad legal o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de su organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
 
 ## <a name="watch-create-a-company-wide-email-signature"></a>Inspección: Creación de una firma de correo electrónico para toda la empresa
   
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 

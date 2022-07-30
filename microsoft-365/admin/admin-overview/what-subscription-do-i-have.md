@@ -1,5 +1,5 @@
 ---
-title: ¿Qué suscripción Microsoft 365 tengo?
+title: ¿Qué suscripción a Microsoft 365 tengo?
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -16,25 +16,26 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Aprenda a comprobar qué suscripciones Microsoft 365 tiene su organización, vaya a la página Sus productos.
+description: Para comprobar qué suscripciones de Microsoft 365 tiene su organización, vaya a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: fb2b3354bd9d12f50b2b70291b6ecba94dd4c9b3
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f7242af91fc3e5a5c5f45d0fc3bdfda6f220bc70
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101534"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084529"
 ---
-# <a name="which-microsoft-365-subscription-do-i-have"></a>¿Qué suscripción Microsoft 365 tengo?
+# <a name="which-microsoft-365-subscription-do-i-have"></a>¿Qué suscripción de Microsoft 365 tengo?
 
 Si es administrador, puede comprobar qué suscripciones tiene su organización yendo al Centro de administración.
   
-**¿No es un administrador?** Consulte [¿Qué Microsoft 365 para productos o licencias empresariales tengo?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**¿No es un administrador?** Consulte [¿Qué producto o licencia de Microsoft 365 para empresas tengo?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos** , verá todas las suscripciones. Cada línea de suscripción incluye información sobre licencias, estado de suscripción y facturación.

@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas de datos adjunt
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f93f264ac22be594bfb34601c3f243a2c7c145b4
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: ab34c9945bdf86369a338c1c7390500043798fb9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773167"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086045"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -83,7 +83,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva de datos adjuntos seguros personalizados en el portal de Microsoft 365 Defender crea la regla de datos adjuntos seguros y la directiva de datos adjuntos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** **Datos adjuntos seguros de directivas** \> de **amenazas** \> en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la página **Datos adjuntos seguros** , haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -109,14 +109,14 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -151,7 +151,7 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Uso del portal de Microsoft 365 Defender para ver las directivas de datos adjuntos seguros
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** **Datos adjuntos seguros de directivas** \> de **amenazas** \> en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la página **Datos adjuntos seguros** , se muestran las siguientes propiedades en la lista de directivas:
    - **Nombre**
@@ -162,7 +162,7 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Uso del portal de Microsoft 365 Defender para modificar las directivas de datos adjuntos seguros
 
-1. IIn the Microsoft 365 Defender portal at <https://security.microsoft.com>, go **to Email & Collaboration** \> **Policies & Rules** \> **Threat** \> **policies Safe Attachments** in the **Policies** section. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
+1. IIn the Microsoft 365 Defender portal at <https://security.microsoft.com>, vaya a **Email & Directivas de colaboración** \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la página **Datos adjuntos seguros** , haga clic en el nombre para seleccionar una directiva de la lista.
 
@@ -172,7 +172,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Habilitación o deshabilitación de directivas de datos adjuntos seguros
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** **Datos adjuntos seguros de directivas** \> de **amenazas** \> en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la página **Datos adjuntos seguros** , haga clic en el nombre para seleccionar una directiva de la lista.
 
@@ -198,7 +198,7 @@ Las directivas de datos adjuntos seguros se muestran en el orden en que se proce
 
 Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
+1. En el portal de Microsoft 365 Defender, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> Directivas de **amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
 
 2. En la página **Datos adjuntos seguros** , haga clic en el nombre para seleccionar una directiva de la lista.
 
@@ -213,7 +213,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Uso del portal de Microsoft 365 Defender para quitar directivas de datos adjuntos seguros
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** Directivas de colaboración \> **& Reglas** **Datos adjuntos seguros de directivas** \> de **amenazas** \> en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la página **Datos adjuntos seguros** , seleccione una directiva personalizada en la lista haciendo clic en el nombre de la directiva.
 

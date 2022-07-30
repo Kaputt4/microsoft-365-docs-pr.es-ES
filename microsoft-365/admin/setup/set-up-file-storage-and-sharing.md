@@ -1,5 +1,5 @@
 ---
-title: Configuración de OneDrive almacenamiento y uso compartido de archivos
+title: Configuración del almacenamiento y el uso compartido de archivos de OneDrive
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - SPO_Content
 ms.custom:
+- VSBFY23
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
@@ -30,12 +31,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: 8fa78b4acbba85932778194f1785bee3fd04315c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 7e8a56b6ad1199ddc857919eb6b00f6ef2538d3b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465940"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085693"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 

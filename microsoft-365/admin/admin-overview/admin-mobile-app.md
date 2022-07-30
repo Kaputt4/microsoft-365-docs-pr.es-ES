@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,18 +26,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación Administración de Microsoft 365, tu compañero de la Centro de administración de Microsoft 365 basada en web, para administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601704"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084639"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil Administración de Microsoft 365
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
-¿Es usted un administrador que suele estar de viaje? Incluso si no lo está, puede haber ocasiones en las que necesite administrar Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la [aplicación gratuita Administración de Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216), el complemento perfecto para la Centro de administración de Microsoft 365 basada en web. Puede descargar la aplicación desde el [App Store de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) y desde el [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), así como desde Administración de Microsoft 365 vínculo de la aplicación en la esquina superior derecha de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
+¿Es usted un administrador que suele estar de viaje? Incluso si no lo está, puede haber ocasiones en las que necesite administrar Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la [aplicación gratuita Administración de Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216), el complemento perfecto para la Centro de administración de Microsoft 365 basada en web. Puedes descargar la aplicación desde la [App Store de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) y desde [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), así como desde Administración de Microsoft 365 vínculo de la aplicación en la esquina superior derecha de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Captura de pantalla: Administración página principal de la aplicación móvil, que muestra la búsqueda, el centro de mensajes, el estado y los vínculos rápidos":::
 
@@ -57,7 +58,7 @@ Si es administrador y es responsable de más de una organización de Microsoft 3
 
 ## <a name="watch-install-the-admin-mobile-app"></a>Inspección: Instalación de la aplicación móvil de administración
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
@@ -129,7 +130,7 @@ En el menú de navegación izquierdo, vaya a **Notificaciones de configuración*
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>¿Qué hago si no encuentro la respuesta a mi pregunta?
 
-Envíe [feedback365@microsoft.com](mailto:feedback365@microsoft.com) por correo electrónico para notificar un problema con la aplicación. O bien, puede enviar comentarios en la parte inferior de este artículo.
+Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para notificar un problema con la aplicación. O bien, puede enviar comentarios en la parte inferior de este artículo.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

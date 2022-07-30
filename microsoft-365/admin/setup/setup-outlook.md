@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -20,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Outlook para el correo electrónico de Microsoft 365.
-ms.openlocfilehash: c7b1aa8890e3824e085bf2a8bc170f8f34010c88
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: da922bd4a82497e5bb5f37e5c2bc35247fe940bf
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602798"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084837"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configuración de Outlook para Microsoft 365 para correo electrónico empresarial 
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 ## <a name="watch-set-up-outlook-for-email"></a>Ver: Configurar Outlook para el correo electrónico
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198010).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198010).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 

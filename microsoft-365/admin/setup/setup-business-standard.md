@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
-ms.openlocfilehash: d5504edaff4c9d406d218d8ab8333b6d50af406e
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: e991118fd645c01e4cc733f80bde7d9424f297c1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573899"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085145"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurar Microsoft 365 Empresa Estándar con un dominio nuevo o existente
 

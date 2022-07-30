@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de Exchange Online.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8545eed078a676055206870e5c55ed3ca2e82a9a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 9a7fe8dbd700024fdeae6d354986c3844a49d4d0
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773243"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086067"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -88,7 +88,7 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 La creación de una directiva de anti-phishing personalizada en el portal de Microsoft 365 Defender crea la regla antiphish y la directiva anti-phish asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -114,14 +114,14 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
    >
-   > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >
-   > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -136,7 +136,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
 
 6. En la página **Acciones** que aparece, configure las opciones siguientes:
    - **Si el mensaje se detecta como suplantación de identidad**: esta configuración solo está disponible si seleccionó **Habilitar inteligencia de suplantación de identidad** en la página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes falsificados bloqueados:
-     - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
+     - **Mover el mensaje a las carpetas de Email no deseado de los destinatarios**
      - **Poner en cuarentena el mensaje**: si selecciona esta acción, aparece un cuadro **Aplicar directiva de cuarentena** donde se selecciona la directiva de cuarentena que se aplica a los mensajes que están en cuarentena mediante la protección de inteligencia de suplantación de identidad. Las directivas de cuarentena definen qué pueden hacer los usuarios en los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
        Un valor en blanco **Aplicar directiva de cuarentena** significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para las detecciones de inteligencia de suplantación de identidad). Cuando más adelante edite la directiva contra suplantación de identidad (phishing) o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena. Para obtener más información sobre las directivas de cuarentena predeterminadas que se usan para veredictos de filtrado de protección admitidos, consulte [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
@@ -160,7 +160,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Uso del portal de Microsoft 365 Defender para ver las directivas contra suplantación de identidad
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , se muestran las siguientes propiedades en la lista de directivas:
 
@@ -173,7 +173,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Uso del portal de Microsoft 365 Defender para modificar las directivas contra suplantación de identidad
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -187,7 +187,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 No se puede deshabilitar la directiva de anti phishing predeterminada.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , seleccione una directiva personalizada en la lista haciendo clic en el nombre.
 
@@ -212,7 +212,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 - En el portal de Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva contra suplantación de identidad después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla anti phish (que puede afectar a la prioridad de las reglas existentes).
 - Las directivas contra phishing se procesan en el orden en que se muestran (la primera directiva tiene el valor **de prioridad** 0). La directiva de anti phishing predeterminada tiene el valor de prioridad **Más bajo** y no se puede cambiar.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , seleccione una directiva personalizada en la lista haciendo clic en el nombre.
 
@@ -229,7 +229,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva antiphish personalizada, se eliminan la regla antiphish y la directiva anti-phish correspondiente. No puede quitar la directiva de anti-phishing predeterminada.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , seleccione una directiva personalizada en la lista haciendo clic en el nombre.
 

@@ -1,5 +1,5 @@
 ---
-title: Recopilar la información que necesita para crear registros DNS
+title: Recopilación de la información necesaria para crear registros DNS
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -23,15 +24,15 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: Recopila los valores/información que necesita para crear registros DNS para conectar su dominio a su Microsoft 365 suscripción.
-ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Recopile los valores o la información que necesita para crear registros DNS para conectar el dominio a su suscripción de Microsoft 365.
+ms.openlocfilehash: 653161734a8b0a2f188c8f8a54909ed86bf3fd5f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316805"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084024"
 ---
-# <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilar la información que necesita para crear registros DNS
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilación de la información necesaria para crear registros DNS
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
@@ -39,7 +40,7 @@ ms.locfileid: "63316805"
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración de Microsoft 365, vaya a la **página Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
+1. En el Centro de administración de Microsoft 365, vaya a la página **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 ::: moniker-end
 
@@ -49,13 +50,13 @@ ms.locfileid: "63316805"
 
 ::: moniker-end
     
-2. En la **página Dominios** , seleccione el dominio y, a continuación, **seleccione Iniciar configuración**. Volverá al asistente de configuración de dominios para ver el valor específico que debe agregar.
+2. En la página **Dominios** , seleccione el dominio y, a continuación, seleccione **Iniciar configuración**. Volverá al asistente de configuración de dominios para ver el valor específico que debe agregar.
     
-3. En la **página Verificación de dominio** , seleccione **Agregar un registro TXT a los registros DNS** del dominio y, a continuación, **seleccione Continuar**.
+3. En la página **Comprobación del dominio** , seleccione **Agregar un registro TXT a los registros DNS del dominio** y, a continuación, seleccione **Continuar**.
     
-4. Copie el **valor TXT que se** muestra. Tiene este aspecto: **MS=msXXXXXXXX**. 
+4. Copie el **valor TXT** que se muestra. Tiene este aspecto: **MS=msXXXXXXXX**. 
     
-5. Vaya a [Agregar registros DNS para conectar su dominio](create-dns-records-at-any-dns-hosting-provider.md) y siga los pasos para agregar registros en el sitio web del host DNS.
+5. Vaya a [Agregar registros DNS para conectar el dominio](create-dns-records-at-any-dns-hosting-provider.md) y siga los pasos para agregar registros en el sitio web del host DNS.
     
 6. Siga los pasos para crear el registro TXT (o registro MX) en el host DNS y, a continuación, compruebe el dominio de nuevo en Microsoft 365.
 
@@ -65,7 +66,7 @@ ms.locfileid: "63316805"
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración de Microsoft 365, vaya a la **página Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
+1. En el Centro de administración de Microsoft 365, vaya a la página **Dominios de configuración**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 ::: moniker-end
 
@@ -77,13 +78,13 @@ ms.locfileid: "63316805"
     
 2. En la página **Dominios**, seleccione su dominio.
     
-3. Elija **Administrar DNS**, **seleccione Más opcionesAgregue** >  **su propio DNS** y **seleccione** Continuar para ver los registros DNS que se agregarán.
+3. Elija  **Administrar DNS**, seleccione **Más opciones** > **Agregar su propio DNS** y seleccione **Continuar** para ver los registros DNS que se van a agregar.
     
     Querrá mantener esta información disponible mientras realiza cambios en su host DNS, para poder copiar y pegar los valores.
     
     Los grupos de registros DNS que aparecen en esta página varían en función de las opciones que se seleccionan en **Finalidad del dominio**.
     
-4. Vaya a [Agregar registros DNS para conectar su dominio](create-dns-records-at-any-dns-hosting-provider.md) y siga los pasos para agregar registros en el sitio web del host DNS.
+4. Vaya a [Agregar registros DNS para conectar el dominio](create-dns-records-at-any-dns-hosting-provider.md) y siga los pasos para agregar registros en el sitio web del host DNS.
 
 5. Si el host DNS no tiene un vínculo en la página, puede seguir las instrucciones generales.
 

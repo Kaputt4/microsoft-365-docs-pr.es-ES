@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: f616ed65879427c377333981841006b2b50b3515
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: dbba3f42bbe058229c0429cfaf8d790916228f46
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621274"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085585"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -218,7 +220,7 @@ En el RGPD, si recopila datos, se verá afectado hasta cierto punto. El RGPD tie
 
 Debe asegurarse de que sus clientes, incluso los que ha tenido durante años, hayan dado su consentimiento para utilizar sus datos para fines de marketing. Es posible que haya capturado anteriormente consentimiento, así como un registro para mostrarlo. Si es así, está listo para continuar con el marketing. De lo contrario, debe obtener el permiso del cliente para continuar comercializando con él. Esto generalmente implica enviar un correo electrónico pidiendo a los clientes que vayan a su sitio y seleccionen una opción para dar su consentimiento para recibir futuros correos electrónicos. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparme sobre el RGPD cuando tengo que contratar nuevos empleados?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparme del RGPD cuando tengo que contratar nuevos empleados? ¿Qué pasa con los empleados actuales?
 
 El RGPD no solo afecta a los datos de clientes; también se extiende a los datos de los empleados. Las nuevas empresas se suelen localizar con plataformas de medios sociales, como LinkedIn. Asegúrese de no almacenar ningún dato potencial para obtener datos sin su expreso consentimiento.
   

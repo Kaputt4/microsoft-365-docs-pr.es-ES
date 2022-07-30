@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c9f6c36959394eadea727e81fe0dde35e66993
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943941"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086525"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -111,7 +111,7 @@ Debe especificar las condiciones y excepciones del destinatario que determinan a
 Solo puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
 > [!IMPORTANT]
-> Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+> Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
 >
 > - El destinatario es: romain@contoso.com
 > - El destinatario es miembro de: Ejecutivos
@@ -305,7 +305,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com`, `https://sub.contoso.com`y `https://contoso.com/abc` están bloqueados.|
+|`contoso.com` <p> Otra posibilidad: <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com`, `https://sub.contoso.com`y `https://contoso.com/abc` están bloqueados.|
 |`https://contoso.com/a`|Bloquea `https://contoso.com/a` , pero no sube rutas secundarias adicionales como `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y rutas secundarias adicionales como `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloquea un subdominio (`toys` en este ejemplo), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com`).|

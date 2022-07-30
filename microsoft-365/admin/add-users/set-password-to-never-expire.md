@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Inicie sesión en la cuenta de administrador de Microsoft 365 para establecer que algunas contraseñas de usuario individuales nunca expiren mediante PowerShell de Azure AD.
-ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Inicie sesión en su cuenta de administrador de Microsoft 365 para establecer que algunas contraseñas de usuario individuales nunca expiren mediante PowerShell de Azure AD.
+ms.openlocfilehash: bd9960e0da7491b5f2db14618daa17b917310450
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010198"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084617"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 
@@ -40,7 +41,7 @@ Este artículo está dirigido a personas que establecen una política de caducid
 
 Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
-Un administrador global de un servicio en la nube de Microsoft puede usar la [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2) para establecer contraseñas que no expiren para usuarios específicos. También puede usar cmdlets de [AzureAD](/powershell/module/Azuread) para quitar la configuración de nunca expira o para ver qué contraseñas de usuario están establecidas para que nunca expiren.
+Un administrador global de un servicio en la nube de Microsoft puede usar [PowerShell de Azure Active Directory para Graph para](/powershell/azure/active-directory/install-adv2) establecer que las contraseñas no expiren para usuarios específicos. También puede usar cmdlets de [AzureAD](/powershell/module/Azuread) para quitar la configuración de nunca expira o para ver qué contraseñas de usuario están establecidas para que nunca expiren.
 
 Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de contraseña es la única parte de la directiva que se puede cambiar.
 

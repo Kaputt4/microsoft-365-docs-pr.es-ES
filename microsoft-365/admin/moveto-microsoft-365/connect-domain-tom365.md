@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo conectar su dominio a Microsoft 365.
-ms.openlocfilehash: 2b02687e8d62a40272ffa5dad8ccabec4fbde368
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b03f7fa149ed4abddeecb5ab3b89372a9f0e008f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603890"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085605"
 ---
-# <a name="connect-your-domain-to-microsoft-365-for-business"></a>Conexión del dominio a Microsoft 365 para empresas
+# <a name="connect-your-domain-to-microsoft-365-for-business"></a>Conectar el dominio a Microsoft 365 para empresas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 ## <a name="watch-connect-your-domain-to-microsoft-365"></a>Inspección: Conexión del dominio a Microsoft 365
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198216).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198216).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
 

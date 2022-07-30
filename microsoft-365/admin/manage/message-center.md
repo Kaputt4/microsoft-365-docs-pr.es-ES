@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Obtenga información general sobre Microsoft 365 Centro de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 498267d62dadef0ec9c0e8811708416dd138eb58
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Obtenga información general del Centro de mensajes de Microsoft 365 y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
+ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466798"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085671"
 ---
-# <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Seguimiento de características nuevas y modificadas en el centro de mensajes de Microsoft 365
+# <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Seguimiento de características nuevas y modificadas en el Centro de mensajes de Microsoft 365
 
 Para realizar un seguimiento de los próximos cambios, incluidas las características nuevas y modificadas, el mantenimiento planeado u otros anuncios importantes, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centro de</a> mensajes.
   
@@ -51,7 +51,7 @@ También puede usar la [aplicación Administración de Microsoft 365](https://go
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte [Cancelar la suscripción a los correos electrónicos del Centro de mensajes](#unsubscribe-from-message-center-emails) en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 <br>
 
@@ -59,21 +59,21 @@ Para cancelar la suscripción a los correos electrónicos del Centro de mensajes
 
 |Pregunta|Respuesta|
 |---|---|
-|Quién puede ver publicaciones en el Centro de mensajes?|La mayoría de los usuarios a los que se ha asignado cualquier rol de administrador en Microsoft 365 pueden ver las publicaciones del Centro de mensajes. [Esta es una lista](#admin-roles-that-dont-have-access-to-the-message-center) de roles de administrador que no tienen acceso al Centro de mensajes. También puede asignar el rol lector del Centro de mensajes a los usuarios que deben poder leer y compartir publicaciones del Centro de mensajes sin tener ningún otro privilegio de administrador.|
+|¿Quién puede ver las publicaciones en el Centro de mensajes?|La mayoría de los usuarios a los que se ha asignado cualquier rol de administrador en Microsoft 365 pueden ver las publicaciones del Centro de mensajes. [Esta es una lista](#admin-roles-that-dont-have-access-to-the-message-center) de roles de administrador que no tienen acceso al Centro de mensajes. También puede asignar el rol de lector del Centro de mensajes a los usuarios que deberían poder leer y compartir publicaciones del Centro de mensajes sin tener ningún otro privilegio de administrador.|
 |¿Es esta la única manera en que Microsoft comunicará los cambios sobre Microsoft 365?|No, pero el Centro de mensajes es la forma principal de comunicar el tiempo de los cambios individuales en Microsoft 365. Consulte [Mantenerse al tanto de los cambios de Microsoft 365](stay-on-top-of-updates.md) para obtener información sobre recursos adicionales.|
 |¿Cómo puedo ver las publicaciones en mi idioma?|Las publicaciones del centro de mensajes solo están escritas en inglés, pero puede controlar si, de forma predeterminada, las publicaciones se muestran en inglés o se traducen automáticamente a su idioma preferido. También puede seleccionar la traducción automática de publicaciones a cualquier idioma que admitamos. Consulte [Traducción de idioma para las publicaciones del Centro](language-translation-for-message-center-posts.md) de mensajes para obtener más detalles.|
-|¿Puedo obtener una vista previa de los cambios o las características antes de que se implementen en mi organización?|Para obtener una vista previa de algunos cambios y nuevas características, puede participar en el programa de versión dirigida. Para participar, en el centro de administración, vaya a **configuración de Configuración** >  **OrgConfiguración** >  **del perfil** >  de **organizaciónConfiguración preferencias de versión**. (En el centro de administración, es posible que deba seleccionar **Mostrar todo** en la parte inferior del panel de navegación izquierdo para ver **Configuración**). Puede elegir Versión dirigida para toda la organización o solo para los usuarios seleccionados. Consulte [Opciones de versión estándar o de destino en Microsoft 365](release-options-in-office-365.md) para obtener más información sobre el programa.|
+|¿Puedo obtener una vista previa de los cambios o las características antes de que se implementen en mi organización?|Para obtener una vista previa de algunos cambios y nuevas características, puede participar en el programa de versión dirigida. Para participar, en el Centro de administración, vaya a **Configuración Configuración** >  de  > **la organización****Perfil** >  de organización **Preferencias de versión**. (En el centro de administración, es posible que tenga que seleccionar **Mostrar todo** en la parte inferior del panel de navegación izquierdo para ver **Configuración**). Puede elegir Versión dirigida para toda la organización o solo para los usuarios seleccionados. Consulte [Opciones de versión estándar o de destino en Microsoft 365](release-options-in-office-365.md) para obtener más información sobre el programa.|
 |¿Puedo averiguar la fecha exacta en la que estará disponible un cambio para mi organización?|Desafortunadamente, no podemos indicarle la fecha exacta en que se realizará un cambio en su organización. En nuestra publicación del Centro de mensajes, proporcionaremos toda la información posible sobre el momento de la versión, en función de nuestro nivel de confianza. Estamos trabajando en mejoras para mejorar con ese nivel de detalle.|
-|¿Son estos mensajes específicos de mi organización?|Hacemos todo lo posible para asegurarnos de que solo vea las publicaciones del Centro de mensajes que afectan a su organización. La hoja de ruta de Microsoft 365 incluye todas las características en las que estamos trabajando e implementando actualmente, pero no todas estas características se aplican a todas las organizaciones.|
+|¿Son estos mensajes específicos de mi organización?|Hacemos todo lo posible para asegurarnos de que solo vea las publicaciones del Centro de mensajes que afectan a su organización. La hoja de ruta de Microsoft 365 incluye todas las características en las que estamos trabajando y implementando actualmente, pero no todas estas características se aplican a todas las organizaciones.|
 |¿Puedo enviar por correo electrónico las publicaciones del centro de mensajes en su lugar?|Sí. Puede seleccionar que se le envíe un resumen semanal por correo electrónico y hasta otras dos direcciones de correo electrónico. El resumen semanal por correo electrónico está activado de forma predeterminada. Si no recibe los resúmenes semanales, compruebe la carpeta de correo no deseado. Consulte la sección [Preferencias](#preferences) de este artículo para obtener más información sobre cómo configurar el resumen semanal.|
-|Cómo dejar de obtener el resumen del centro de mensajes?|Vaya al Centro de mensajes en el centro de administración y seleccione **Preferencias**. En la pestaña **Correo electrónico** , desactive la opción **Enviarme notificaciones por correo electrónico desde el centro de mensajes**.|
+|Cómo dejar de obtener el resumen del centro de mensajes?|Vaya al Centro de mensajes en el centro de administración y seleccione **Preferencias**. En la pestaña **Email**, desactive la opción **Enviarme notificaciones por correo electrónico desde el centro de mensajes**.|
 |¿Cómo puedo garantizar que los contactos adecuados de mi organización reciban notificaciones de privacidad de datos?|Como administrador global, recibirá mensajes de privacidad de datos para su organización. Además, puede asignar el rol lector de privacidad del Centro de mensajes a las personas que deben ver mensajes de privacidad de datos. Otros roles de administrador con acceso al Centro de mensajes no pueden ver los mensajes de privacidad de datos.   <br/><br/>Para obtener más información, consulte [Preferencias](#preferences) en este artículo.|
 |¿Por qué no puedo ver un mensaje que estaba allí anteriormente?|Para administrar el número de mensajes en el Centro de mensajes, cada mensaje expirará y se quitará después de un período de tiempo. Por lo general, los mensajes expiran 30 días después del período de tiempo descrito en el cuerpo del mensaje.|
 |
 
 ## <a name="filter-messages"></a>Filtrar mensajes
 
-El centro de mensajes presenta una vista de todos los mensajes activos en formato de tabla. De forma predeterminada, muestra el mensaje más reciente en la parte superior de la lista. Puede seleccionar **Servicio** para ver los mensajes de varios servicios, como Aplicaciones Microsoft 365, SharePoint Online, etc.   En **Etiqueta** puede seleccionar **Impacto del administrador**, **Privacidad de datos**, **Actualización de características**, **Actualización principal**, **Nueva característica**, **Retirada** o Mensajes **de impacto del usuario**. En **Estado del mensaje**, puede seleccionar Favoritos, **No leídos** o **Mensajes actualizados**.
+El centro de mensajes presenta una vista de todos los mensajes activos en formato de tabla. De forma predeterminada, muestra el mensaje más reciente en la parte superior de la lista. Puede seleccionar **Servicio** para ver los mensajes de varios servicios, como Aplicaciones Microsoft 365, SharePoint Online, etc.   En **Etiqueta** puede seleccionar **Administración impacto**, **Privacidad de datos**, **Actualización de características**, **Actualización principal**, **Nueva característica**, **Retirada** o **Mensajes de impacto del usuario**. En **Estado del mensaje**, puede seleccionar Favoritos, **No leídos** o **Mensajes actualizados**.
 
 La pestaña Archivo muestra los mensajes que ha archivado. Para archivar un mensaje, en el panel de mensajes, seleccione **Archivar**.
 
@@ -83,7 +83,7 @@ Use los menús desplegables **Servicio**, **Etiqueta** y **Estado del mensaje** 
 
 Puede seleccionar cualquier encabezado de columna, salvo **Servicio** y **Etiqueta** para ordenar los mensajes en orden ascendente o descendente.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del centro de mensajes ordenada por impacto del administrador.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del centro de mensajes ordenada por Administración impacto.":::
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Si la administración se distribuye en toda la organización, es posible que no 
 
 2. En la pestaña **Vista personalizada** , asegúrese de que la casilla está seleccionada para cada servicio que quiera supervisar. Desactive las casillas de los servicios que desea filtrar fuera de la vista del Centro de mensajes.
 
-3. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, desactive la casilla **Enviar notificaciones por correo electrónico desde el centro de mensajes** en la **pestaña Correo electrónico**. 
+3. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, desactive la casilla **Enviar notificaciones por correo electrónico desde el centro de mensajes** en **la pestaña Email**. 
 
    También puede escribir hasta dos direcciones de correo electrónico, separadas por un punto y coma.
 
@@ -142,7 +142,7 @@ Si la administración se distribuye en toda la organización, es posible que no 
 
 2. En la pestaña **Vista personalizada** , asegúrese de que la casilla está seleccionada para cada servicio que quiera supervisar. Desactive las casillas de los servicios que desea filtrar fuera de la vista del Centro de mensajes.
 
-3. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, desactive la casilla **Enviar notificaciones por correo electrónico desde el centro de mensajes** en la **pestaña Correo electrónico**.
+3. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, desactive la casilla **Enviar notificaciones por correo electrónico desde el centro de mensajes** en **la pestaña Email**.
 
    También puede escribir hasta dos direcciones de correo electrónico, separadas por un punto y coma.
 
@@ -161,11 +161,11 @@ Usamos la traducción automática para mostrar los mensajes en su idioma de pref
 
 ## <a name="monthly-active-users"></a>Usuarios activos mensuales
 
-Al abrir una publicación del centro de mensajes, le indicaremos el número de usuarios que han estado usando esa aplicación o servicio Microsoft 365 en la sección **Servicio & usuarios activos mensuales**. Los números son para los últimos 28 días. Esta información puede ayudarle a priorizar los cambios en los que debe trabajar.
+Al abrir una publicación del centro de mensajes, le indicaremos el número de usuarios que han estado usando esa aplicación o servicio de Microsoft 365 en la sección **Servicio & usuarios activos mensuales** . Los números son para los últimos 28 días. Esta información puede ayudarle a priorizar los cambios en los que debe trabajar.
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Captura de pantalla: Muestra la página de densidad de Microsoft Teams Chat en la publicación del centro de mensajes con datos de usuario activos mensuales":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Captura de pantalla: Muestra la página densidad del chat de Microsoft Teams en la publicación del centro de mensajes con datos de usuario activos mensuales":::
 
-El número de usuarios mensuales se aplica a todos los usuarios que han usado esa Microsoft 365 aplicación o servicio en cualquier dispositivo.
+El número de usuarios mensuales se aplica a todos los usuarios que han usado esa aplicación o servicio de Microsoft 365 en cualquier dispositivo.
 
 > [!NOTE]
 > Esta característica aún no está disponible para todas las aplicaciones y servicios de Microsoft 365. Le avisaremos cuando la característica no esté disponible.
@@ -188,14 +188,14 @@ Esta es una introducción rápida a la información que verá en cada columna.
 |Título del mensaje|Los títulos de los mensajes son breves descripciones de los próximos cambios. Si el título completo no se muestra, mantenga el cursor sobre él y todo el título aparecerá en un cuadro emergente.|
 |Servicio|Los iconos indican la aplicación a la que se aplica el mensaje.|
 |Más opciones|Más opciones le permiten descartar un mensaje, marcarlo como leído o no leído, o compartirlo con otro administrador. Para restaurar un mensaje archivado, seleccione la pestaña **Archivo** , seleccione la marca de verificación situada junto al mensaje y seleccione **Restaurar**.|
-|Etiquetas| Puede elegir etiquetas en la lista desplegable Etiqueta para filtrar los mensajes. <br> <p> **Privacidad de datos**: notificación de privacidad de datos (limitada a los roles de administrador global y lector de privacidad del Centro de mensajes). <p> **Actualización principal**: cambios comunicados con al menos 30 días de antelación ([actualizaciones principales](#major-updates)). <p> **Retirada**: retirada de un servicio o característica. <p> **Nueva característica**: nueva característica o servicio. <p> **Actualización de características**: actualice a una característica existente. <p> **Impacto del administrador**: cuando el cambio afecta claramente al administrador de las siguientes maneras: cambio de interfaz de usuario, cambio de flujo de trabajo, control disponible y Acción específica o potencial. <p> **Impacto del usuario**: cuando el cambio en el servicio afecta claramente al usuario: cambio de interfaz de usuario y cambio de flujo de trabajo. <p> **Mensaje actualizado**: cuando se actualiza un mensaje.|
-|Categoría| Esto no se muestra de forma predeterminada, pero se puede especificar en el panel **Elegir columnas** . Los mensajes se identifican mediante una de las tres categorías siguientes: <p> **Evitar o corregir problemas**: le informa de los problemas conocidos que afectan a su organización y puede requerir que tome medidas para evitar interrupciones en el servicio. Evitar o corregir problemas son diferentes de los mensajes de Estado del servicio porque le piden que sea proactivo para evitar problemas. <p> **Plan de cambio**: le informa de los cambios en Microsoft 365 que pueden requerir que actúe para evitar interrupciones en el servicio. Por ejemplo, le avisaremos sobre los cambios en los requisitos del sistema o sobre las características que se están quitando. Intentamos proporcionar al menos 30 días de aviso de cualquier cambio que requiera que un administrador actúe para mantener el servicio en funcionamiento con normalidad. <p> **Manténgase informado**: le informa sobre las características nuevas o actualizadas que estamos activando en su organización. Normalmente, las características se anuncian primero en la [hoja de ruta de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <p> También puede informarle sobre el mantenimiento planeado de acuerdo con nuestro Contrato de nivel de servicio. El mantenimiento planeado puede dar lugar a un tiempo de inactiva, donde usted o los usuarios no pueden acceder a Microsoft 365, una característica específica o un servicio como correo electrónico o OneDrive para la Empresa.|
+|Etiquetas| Puede elegir etiquetas en la lista desplegable Etiqueta para filtrar los mensajes. <br> <p> **Privacidad de datos**: notificación de privacidad de datos (limitada a los roles de administrador global y lector de privacidad del Centro de mensajes). <p> **Actualización principal**: cambios comunicados con al menos 30 días de antelación ([actualizaciones principales](#major-updates)). <p> **Retirada**: retirada de un servicio o característica. <p> **Nueva característica**: nueva característica o servicio. <p> **Actualización de características**: actualice a una característica existente. <p> **Administración impacto**: cuando el cambio afecta claramente al administrador de las siguientes maneras: cambio de interfaz de usuario, cambio de flujo de trabajo, control disponible y Acción específica o potencial. <p> **Impacto del usuario**: cuando el cambio en el servicio afecta claramente al usuario: cambio de interfaz de usuario y cambio de flujo de trabajo. <p> **Mensaje actualizado**: cuando se actualiza un mensaje.|
+|Categoría| Esto no se muestra de forma predeterminada, pero se puede especificar en el panel **Elegir columnas** . Los mensajes se identifican mediante una de las tres categorías siguientes: <p> **Evitar o corregir problemas**: le informa de los problemas conocidos que afectan a su organización y puede requerir que tome medidas para evitar interrupciones en el servicio. Evitar o corregir problemas son diferentes de los mensajes de Estado del servicio porque le piden que sea proactivo para evitar problemas. <p> **Plan de cambio**: le informa de los cambios en Microsoft 365 que pueden requerir que actúe para evitar interrupciones en el servicio. Por ejemplo, le avisaremos sobre los cambios en los requisitos del sistema o sobre las características que se están quitando. Intentamos proporcionar al menos 30 días de aviso de cualquier cambio que requiera que un administrador actúe para mantener el servicio en funcionamiento con normalidad. <p> **Manténgase informado**: le informa sobre las características nuevas o actualizadas que estamos activando en su organización. Normalmente, las características se anuncian primero en la [hoja de ruta de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <p> También puede informarle sobre el mantenimiento planeado de acuerdo con nuestro Contrato de nivel de servicio. El mantenimiento planeado puede dar lugar a tiempo de inactivación, donde usted o los usuarios no pueden acceder a Microsoft 365, a una característica específica o a un servicio como correo electrónico o OneDrive para la Empresa.|
 |Actuar por|Solo tendremos fechas aquí si estamos realizando un cambio que requiere que realice una acción antes de una fecha límite determinada. Dado que rara vez usamos la **ley por** columna, si ve algo aquí, debe prestarle especial atención.|
 |Actualizado por última vez|Fecha de publicación o última actualización del mensaje.|
 |Id. del mensaje|Microsoft realiza un seguimiento de las publicaciones del Centro de mensajes por identificador de mensaje. Puede hacer referencia a este identificador si desea enviar comentarios o si llama al soporte técnico sobre un mensaje determinado.|
 |
 
-### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Roles de administrador que no tienen acceso al Centro de mensajes
+### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administración roles que no tienen acceso al Centro de mensajes
 
 - Administrador de cumplimiento
 - Administrador de acceso condicional
@@ -215,7 +215,7 @@ En el Centro de mensajes, puede seleccionar un mensaje para ver los detalles.
 Si quiere enviar comentarios en el mensaje, en el panel de detalles seleccione el icono **Me gusta** o **No me gusta** en la parte inferior del panel de detalles del mensaje y proporcione comentarios opcionales en el cuadro de texto que aparece. La información personal no debe ser proporcionada. De manera opcional, **Puede ponerse en contacto conmigo para obtener estos comentarios** y después seleccionar **Enviar**.
 
 > [!NOTE]
-> Si usa Microsoft 365 para administración pública ( GCC, Microsoft 365 para Government - GCC High y Office 365 Administración Pública - DoD, no podrá proporcionar comentarios sobre una publicación.
+> Si usa Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High y Office 365 Administración Pública - DoD, no podrá proporcionar comentarios sobre una publicación.
 
 ## <a name="share-a-message"></a>Compartir un mensaje
 
@@ -274,9 +274,9 @@ Para obtener información general sobre el Centro de mensajes, vea [Centro de me
 
 ## <a name="unsubscribe-from-message-center-emails"></a>Cancelación de la suscripción a los correos electrónicos del Centro de mensajes
 
-1. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, seleccione **Preferencias** y, a continuación, **Correo electrónico**.
+1. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, seleccione **Preferencias** y, a continuación, **Email**.
     - Desactive la casilla **Enviar un resumen semanal de mis mensajes** .
-    - La notificación por correo electrónico de las actualizaciones principales es un control independiente. Si no desea recibir notificaciones por correo electrónico sobre las actualizaciones principales, compruebe que la casilla **Enviarme correos electrónicos para actualizaciones principales** no está seleccionada.
+    - Email notificación de actualizaciones principales es un control independiente. Si no desea recibir notificaciones por correo electrónico sobre las actualizaciones principales, compruebe que la casilla **Enviarme correos electrónicos para actualizaciones principales** no está seleccionada.
     - Para dejar de recibir notificaciones por correo electrónico sobre mensajes de privacidad de datos, compruebe que la casilla **Enviar correos electrónicos para mensajes de privacidad de datos** no está seleccionada.  (Los mensajes de privacidad de datos no se incluyen en el resumen semanal).
 
 2. Seleccione **Guardar** para conservar los cambios.
@@ -284,5 +284,5 @@ Para obtener información general sobre el Centro de mensajes, vea [Centro de me
 ## <a name="related-content"></a>Contenido relacionado
 
 [Configurar las opciones de las versiones estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)\
-[Administrar qué características Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)\
+[Administrar qué características de Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)\
 [Documentación sobre suscripciones empresariales y facturación](../../commerce/index.yml) (página de vínculos)

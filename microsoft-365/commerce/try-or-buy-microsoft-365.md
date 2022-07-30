@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,16 +24,16 @@ ms.custom:
 search.appverid: GEA150
 description: Regístrese para obtener una evaluación gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a47d956b614c6464a49af33c179609eeb0e42ac9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602544"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087690"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prueba o compra de una suscripción a Microsoft 365 para empresas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Microsoft 365 para empresas es un servicio de suscripción que le permite ejecutar su organización en la nube mientras Microsoft se encarga de ti. Microsoft administra dispositivos, protege contra amenazas del mundo real y proporciona a su organización lo último en software empresarial. Puede registrarse para obtener una suscripción de prueba gratuita para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios y probarla durante 30 días.
 
@@ -51,7 +52,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta microsoft existente para registrarse para obtener una evaluación gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta microsoft existente para registrarse para obtener una evaluación gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Prueba de una suscripción de prueba gratuita
 
@@ -111,7 +112,7 @@ Si ya tiene una suscripción de Microsoft 365 para empresas, puede pasar por el 
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>Inspección: Traslado de usuarios a una suscripción diferente
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -21,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo migrar archivos de Google a Microsoft 365 para empresas mediante el Administrador de migración de SharePoint.
-ms.openlocfilehash: 68b3a0455a2bf57e35308c428bf2b5de3e4b5983
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 55dd5740192914b89e7be1da070b97b4f6983c97
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602124"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085577"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migración de archivos de Google a Microsoft 365 para empresas con El Administrador de migración
+# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 ## <a name="watch-migrate-google-files-to-microsoft-365-for-business"></a>Inspección: Migración de archivos de Google a Microsoft 365 para empresas
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198217).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198217).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 

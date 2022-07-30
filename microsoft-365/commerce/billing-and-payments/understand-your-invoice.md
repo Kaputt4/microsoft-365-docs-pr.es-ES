@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 ms.date: 05/04/2021
-ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 40c278a5855bcb53808f812fc3b4383ecbea540b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101786"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084969"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
@@ -153,4 +154,4 @@ Si tiene preguntas o necesita ayuda con su factura en el Centro de administraci�
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
 [Seguimiento Contrato de cliente de Microsoft saldo de crédito de Azure](/azure/billing/billing-mca-check-azure-credits-balance) (artículo)\
 [Revise la factura de Contrato de cliente de Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (artículo)\
-[Comenzar con su cuenta de facturación de Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview) (artículo)
+[Introducción a la cuenta de facturación de Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview) (artículo)

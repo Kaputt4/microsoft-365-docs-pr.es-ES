@@ -1,5 +1,5 @@
 ---
-title: Introducción a la movilidad y la seguridad básicas para Microsoft 365
+title: Información general sobre la movilidad y la seguridad básicas para Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,27 +14,28 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Administre y proteja los dispositivos móviles conectados a su organización Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Administre y proteja los dispositivos móviles conectados a su organización de Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
+ms.openlocfilehash: b49b02b37df615aafb87b2fc520737d4ad16d515
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042240"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084507"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Introducción a la movilidad y la seguridad básicas para Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre la movilidad y la seguridad básicas para Microsoft 365
 
-Puede administrar y proteger dispositivos móviles cuando estén conectados a su organización Microsoft 365 mediante Basic Mobility and Security. Los dispositivos móviles como teléfonos inteligentes y tabletas que se usan para acceder al correo electrónico del trabajo, el calendario, los contactos y los documentos desempeñan un papel importante en asegurarse de que los empleados realizan su trabajo en cualquier momento, desde cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar Basic Mobility and Security para establecer directivas de seguridad de dispositivos y reglas de acceso, y para borrar los dispositivos móviles si se pierden o se roban.
+Puede administrar y proteger dispositivos móviles cuando estén conectados a su organización de Microsoft 365 mediante Basic Mobility and Security. Los dispositivos móviles como teléfonos inteligentes y tabletas que se usan para acceder al correo electrónico del trabajo, el calendario, los contactos y los documentos desempeñan un papel importante en asegurarse de que los empleados realizan su trabajo en cualquier momento, desde cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar Basic Mobility and Security para establecer directivas de seguridad de dispositivos y reglas de acceso, y para borrar los dispositivos móviles si se pierden o se roban.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuración básica de movilidad y seguridad.":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>¿Qué tipos de dispositivos se pueden administrar?
 
-Puede usar Basic Mobility and Security para administrar muchos tipos de dispositivos móviles, como Android, iPhone y iPad. Para administrar los dispositivos móviles que usan los usuarios de la organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe inscribirse en Basic Mobility and Security.
+Puede usar Basic Mobility and Security para administrar muchos tipos de dispositivos móviles, como Android, iPhone y iPad. Para administrar los dispositivos móviles que usan los usuarios de su organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe inscribirse en Basic Mobility and Security.
 
 Para ver qué admite Basic Mobility and Security para cada tipo de dispositivo, consulte [Funcionalidades de movilidad y seguridad básicas](capabilities.md).
 
@@ -46,7 +47,7 @@ Este es un resumen de los pasos:
 
 **Paso 1:** Active Basic Mobility and Security siguiendo los pasos descritos en [Configuración de Basic Mobility and Security](set-up.md).
 
-**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, crear un certificado APNs para administrar dispositivos iOS y agregar un registro del sistema de nombres de dominio (DNS) para el dominio.
+**Paso 2:** Configure Basic Mobility and Security mediante, por ejemplo, la creación de un certificado APNs para administrar dispositivos iOS y la adición de un registro del sistema de nombres de dominio (DNS) para el dominio.
 
 **Paso 3:** Cree directivas de dispositivo y aplíquelas a grupos de usuarios. Al hacerlo, los usuarios reciben un mensaje de inscripción en su dispositivo y, cuando han completado la inscripción, sus dispositivos están restringidos por las directivas que ha configurado para ellos. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md). 
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771007"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087602"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -87,14 +87,14 @@ La siguiente configuración de directiva está disponible en las directivas cont
   > [!NOTE]
   > Se requiere al menos una selección en la configuración **usuarios, grupos y dominios** en las directivas de anti-phishing personalizadas para identificar los destinatarios del mensaje a **los** <u>que se aplica la directiva</u>. Las directivas contra suplantación de identidad en Defender para Office 365 también tienen [una configuración de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en la que puede especificar direcciones de correo electrónico de remitente individuales o dominios de remitente <u>que recibirán protección de suplantación</u>, como se describe más adelante en este artículo.
   >
-  > Las diferentes condiciones o excepciones no son aditivas; son inclusivas. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
   >
-  > La política se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
+  > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
-  > Del mismo modo, si usa el mismo filtro de destinatario como excepción a la directiva, la directiva no se aplica a romain@contoso.com _solo_ si también es miembro del grupo Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
+  > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 ## <a name="spoof-settings"></a>Configuración de suplantación de identidad
 
@@ -117,7 +117,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 - **Indicadores de remitente no autenticados**: disponible en la sección **Consejos de seguridad & indicadores** solo cuando la inteligencia de suplantación de identidad está activada. Consulte los detalles de la sección siguiente.
 - **Acciones**: para los mensajes de remitentes falsificados bloqueados (bloqueados automáticamente por inteligencia de suplantación de identidad o bloqueados manualmente en la lista Permitir o bloquear inquilinos), también puede especificar la acción que debe realizar en los mensajes:
-  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Mover mensajes a las carpetas de Email no deseado de los destinatarios**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta de Email no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administración de mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -206,7 +206,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 - **Acciones**: elija la acción que se va a realizar en los mensajes entrantes que contienen intentos de suplantación contra los usuarios protegidos y los dominios protegidos de la directiva. Puede especificar diferentes acciones para la suplantación de usuarios protegidos frente a la suplantación de dominios protegidos:
   - **No aplicar ninguna acción**
   - **Redirigir el mensaje a otras direcciones de correo electrónico**: envía el mensaje a los destinatarios especificados en lugar de a los destinatarios previstos.
-  - **Mover mensajes a las carpetas de correo no deseado de los destinatarios**: el mensaje se entrega al buzón y se mueve a la carpeta Correo electrónico no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Mover mensajes a las carpetas de Email no deseado de los destinatarios**: el mensaje se entrega al buzón y se mueve a la carpeta de Email no deseado. Para obtener más información, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Correo en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administración de mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -231,7 +231,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 - **Habilitar la protección de suplantación de inteligencia**: active esta configuración para especificar la acción que se va a realizar en los mensajes para las detecciones de suplantación de los resultados de inteligencia del buzón:
   - **No aplique ninguna acción**: tenga en cuenta que este valor tiene el mismo resultado que activar la **inteligencia del buzón de correo** , pero desactivar **habilitar la protección de suplantación de inteligencia**.
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
-  - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
+  - **Mover el mensaje a las carpetas de Email no deseado de los destinatarios**
   - **Poner en cuarentena el mensaje**: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena mediante la protección de inteligencia del buzón de correo. Las directivas de cuarentena definen qué pueden hacer los usuarios en los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
   - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
   - **Eliminar el mensaje antes de entregarlo**

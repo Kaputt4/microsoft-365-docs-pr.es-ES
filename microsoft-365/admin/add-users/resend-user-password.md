@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- VSBFY23
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'Vuelva a enviar el correo electrónico de notificación a un nuevo usuario en Microsoft 365 restableciendo la contraseña del usuario si no recibe el correo electrónico original con su nueva contraseña. '
-ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: 'Vuelva a enviar el correo electrónico de notificación a un nuevo usuario de Microsoft 365 restableciendo la contraseña del usuario si no recibe el correo electrónico original con su nueva contraseña. '
+ms.openlocfilehash: a735f02000fade93f0d2824352f48abb01a27f61
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636160"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084705"
 ---
 # <a name="resend-a-microsoft-365-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario de Microsoft 365: ayuda Administración
 

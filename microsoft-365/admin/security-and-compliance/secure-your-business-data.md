@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -28,16 +29,16 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Proteja el correo electrónico y los datos empresariales de ciberamenazas, incluidos ransomware, suplantación de identidad (phishing) y datos adjuntos malintencionados.
-ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602942"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087449"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Procedimientos recomendados para proteger Microsoft 365 para empresas
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft, las instrucciones de este artículo le ayudarán a reforzar la seguridad de su organización. Entre sus opciones, Microsoft 365 Empresa Premium lidera el camino, ya que ahora incluye Microsoft Defender para Empresas y otras [protecciones de seguridad](../../business-premium/get-microsoft-365-business-premium.md). Las acciones recomendadas que se incluyen aquí le ayudarán a lograr los objetivos descritos en el [Manual de campañas de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard.
 
@@ -46,7 +47,7 @@ Si es una organización pequeña o mediana que usa uno de los planes de negocio 
 
 ## <a name="watch-a-quick-overview-of-security"></a>Vea: Introducción rápida a la seguridad
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
@@ -145,11 +146,11 @@ El entorno de Microsoft 365 incluye protección contra malware. Puede aumentar l
 
 Puede aumentar la protección contra malware bloqueando los datos adjuntos con los tipos de archivo que se usan normalmente para el malware. Para aumentar la protección contra malware en el correo electrónico, vea [Watch: Raise the level of protection against malware in mail (Ver: Aumentar el nivel de protección contra malware en el correo)](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail) o complete los pasos siguientes:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico &** directivas de colaboración \> **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Directivas de colaboración** \> **Email & & reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 2. En la página **Antimalware** , haga doble clic en **Predeterminado**. Aparece un control flotante.
 3. Seleccione **Editar configuración de protección** en la parte inferior del control flotante.
 4. En la página siguiente, en **Configuración de protección**, active la casilla situada junto a **Habilitar el filtro de datos adjuntos comunes**. Los tipos de archivo bloqueados se enumeran directamente debajo de esta opción. Para agregar o eliminar tipos de archivo, seleccione **Personalizar tipos de archivo** al final de la lista.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Para obtener más información, vea [Protección antimalware en EOP](../../security/office-365-security/anti-malware-protection.md).
 
@@ -193,7 +194,7 @@ Para crear una regla de transporte de correo, vea [Inspección: Proteger contra 
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiarlas.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 | Configuración | Advertir a los usuarios antes de abrir archivos adjuntos de Office | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
@@ -206,7 +207,7 @@ Para crear una regla de transporte de correo, vea [Inspección: Proteger contra 
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista antimalware en [Proteger contra malware](#protect-against-malware).
 
-Para obtener más información, consulte:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -229,7 +230,7 @@ Para cifrar el correo electrónico:
 1. Con un nuevo correo electrónico abierto, seleccione el menú **Opciones** .
 1. En la lista desplegable **Cifrar** , elija el nivel de permiso adecuado.
 
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Cifrado de mensajes de correo electrónico en Outlook":::
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Email cifrado de mensajes en Outlook":::
 
 ### <a name="receive-encrypted-email"></a>Recepción de correo electrónico cifrado
 
@@ -251,7 +252,7 @@ Se recomienda empezar a trabajar con esta protección mediante la creación de u
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas** \> **de amenazas Anti-phishing** en la sección **Directivas** .
+2. Vaya a Email & **directivas de** **colaboración** \> & reglas \> **Directivas** \> **de amenazas Anti-phishing** en la sección **Directivas**.
 
 3. En la página Anti-phishing, seleccione **+ Crear**. Se inicia un asistente que le guiará a través de la definición de la directiva anti-phishing.
 
@@ -283,7 +284,7 @@ Puede usar directivas de datos adjuntos seguros predefinidas o crear las suyas p
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> e inicie sesión con su cuenta de administrador.
 
-2. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas** .
+2. Vaya a Email & **directivas de** **colaboración** \> & reglas \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 
 3. Seleccione **+ Crear** para crear una nueva directiva.
 
@@ -316,7 +317,7 @@ Para acceder a Vínculos seguros, vea [Ver: Proteger el correo electrónico fren
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> e inicie sesión con su cuenta de administrador.
 
-2. Vaya a **Directivas de colaboración** \> & de correo electrónico **& reglas** \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas** .
+2. Vaya a Email & **directivas de** **colaboración** \> & reglas \> **Directivas** \> **de amenazas Antimalware** en la sección **Directivas**.
 
 3. Seleccione **+ Crear** para crear una nueva directiva o modifique la directiva predeterminada.
 
@@ -332,7 +333,7 @@ Para modificar la directiva predeterminada:
 |---|---|
 |Nombre|Directiva de vínculos seguros para todos los destinatarios del dominio|
 |Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes.|Seleccione **Activado: las direcciones URL se volverán a escribir y comprobarán en una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.|
-|Aplicar el examen de direcciones URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos|Seleccione este cuadro.|
+|Aplicar un análisis de URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
 > [!TIP]

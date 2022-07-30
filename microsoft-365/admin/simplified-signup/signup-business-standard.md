@@ -13,13 +13,14 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- VSBFY23
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: af69dee6db7300a229d4be7c2a2466d7603e849f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 83841af8a538b861b43003c39bfb92a24a4e47aa
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466248"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085079"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -28,9 +29,9 @@ ms.locfileid: "65466248"
 Hay un par de maneras de empezar:
 
 - **[Compre](https://go.microsoft.com/fwlink/?linkid=2109654) Microsoft 365 Empresa Estándar y complete su propia configuración**. Para comprar Microsoft 365 Empresa Estándar, [siga estos pasos](#sign-up-steps).
-- **Para asociados de Microsoft**: si es asociado, consulte [Obtener Microsoft 365 empresa](../../business/get-microsoft-365-business.md).
+- **Para asociados de Microsoft**: si es partner, consulte [Obtener Microsoft 365 Empresa](../../business/get-microsoft-365-business.md).
 
-## <a name="sign-up-for-microsoft-365-for-business"></a>Registrarse para Microsoft 365 para empresas
+## <a name="sign-up-for-microsoft-365-for-business"></a>Registrarse en Microsoft 365 para empresas
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
@@ -53,7 +54,7 @@ Para registrarse y comprar Microsoft 365 Empresa Estándar, siga estos pasos.
 5. Escriba el nombre, el número de teléfono de la empresa, el tamaño de la empresa, el nombre de la empresa y la ubicación. Seleccione **Siguiente**.
 
    > [!NOTE]
-   > Se muestra el nombre de la empresa en el centro de administración. Aquí es donde se administran Microsoft 365 usuarios, licencias y otras características y servicios. También lo incluimos en las direcciones URL internas del sitio de SharePoint.
+   > Se muestra el nombre de la empresa en el centro de administración. Aquí es donde se administran los usuarios, licencias y otras características y servicios de Microsoft 365. También lo incluimos en las direcciones URL internas del sitio de SharePoint.
 
 6. Ayúdanos a asegurarte de que eres tú. Escriba un número que podamos usar para ponerse en contacto con usted y seleccione **Enviar código de verificación**. Recibirá un texto. Escriba el código y seleccione **Comprobar**.
 
@@ -71,17 +72,17 @@ Al registrarse para Microsoft 365 Empresa Estándar, tiene dos opciones para emp
 
 En la tabla siguiente se describe cada opción.
 
-|&nbsp;|**Opción 1**: iniciar sesión con Outlook, Hotmail, Yahoo, Gmail u otra cuenta de correo electrónico [(registro simplificado)](#terms-of-service-update-for-simplified-sign-up-mode)|**Opción 2** : agregar un dominio empresarial y crear una nueva cuenta de correo electrónico empresarial |
+|&nbsp;|**Opción 1** : iniciar sesión con Outlook, Hotmail, Yahoo, Gmail u otra cuenta de correo electrónico [(registro simplificado)](#terms-of-service-update-for-simplified-sign-up-mode)|**Opción 2** : agregar un dominio empresarial y crear una nueva cuenta de correo electrónico empresarial |
 |---|---|---|
-|Aplicaciones y servicios disponibles|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Este conjunto de aplicaciones es mejor para empresas muy pequeñas que no necesitan correo electrónico de marca inmediatamente o que ya usan correo electrónico de marca de un proveedor diferente y no tienen la intención de cambiar para usar Microsoft Exchange. Usará Outlook con su cuenta de correo electrónico existente (ya sea outlook.com, Hotmail, Yahoo, Gmail u otro).|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Microsoft 365 Empresa Estándar con la opción 2 también le permite acceder a una amplia gama de servicios adicionales: cuentas de correo electrónico empresarial nuevas y de marca con Outlook, calendarios compartidos dentro de su empresa, Bookings programación de citas y grabaciones de reuniones. Almacenamiento compartido de documentos y sitios de SharePoint, Microsoft Planner y Listas Microsoft, Microsoft 365 Empresa Estándar y Aplicaciones Microsoft 365 para negocios ofrecer servicios adicionales con la opción 2. Uso compartido de documentos más fácil dentro de su empresa, soporte técnico para las necesidades de cumplimiento de su sector, acceso y control sobre el uso de los servicios por parte de los empleados y la amplia gama de integraciones de aplicaciones que no son de Microsoft (por ejemplo, Salesforce, Adobe) que funcionan dentro de Teams y Office.|
+|Aplicaciones y servicios disponibles|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Este conjunto de aplicaciones es mejor para empresas muy pequeñas que no necesitan correo electrónico de marca inmediatamente, o que ya usan correo electrónico de marca de un proveedor diferente y no tienen la intención de cambiar a usar Microsoft Exchange. Usará Outlook con su cuenta de correo electrónico existente (ya sea outlook.com, Hotmail, Yahoo, Gmail u otro).|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Microsoft 365 Empresa Estándar con la opción 2 también le permite acceder a una amplia gama de servicios adicionales: cuentas de correo electrónico empresarial nuevas y de marca con Outlook, calendarios compartidos dentro de su empresa, programación de citas de Bookings y grabaciones de reuniones. El almacenamiento de documentos compartido y los sitios de SharePoint, Microsoft Planner y Listas Microsoft, Microsoft 365 Empresa Estándar y Aplicaciones Microsoft 365 para negocios ofrecen servicios adicionales con la opción 2. Uso compartido de documentos más fácil dentro de su empresa, soporte técnico para las necesidades de cumplimiento de su sector, acceso y control sobre el uso de los servicios por parte de los empleados y la amplia gama de integraciones de aplicaciones que no son de Microsoft (por ejemplo, Salesforce, Adobe) que funcionan dentro de Teams y Office.|
 |Conocimientos necesarios|Comencemos sin conocimientos técnicos.|Requiere que compre un dominio o que posea un dominio. Es posible que necesite conocimientos técnicos para demostrar la propiedad del dominio.|
 |Control de datos|Disponible en el Complemento al [Contrato de Servicios de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) y es mejor para empresas que desean algunas herramientas de trabajo y colaboración remotas y se sienten cómodos con Microsoft que actúa como controlador de sus datos en virtud de la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Los suscriptores a servicios que usen esta opción no tendrán acceso al contenido o a los datos del usuario de una persona hasta que se adjunte un dominio. Los suscriptores deben evaluar las consideraciones sobre la propiedad de los datos y los derechos de propiedad intelectual en función de sus necesidades. Por ejemplo, si trabaja en colaboración con otros usuarios en un documento almacenado en su cuenta, pueden optar por que esos documentos no sean accesibles para usted. Como tal, debe evaluar las consideraciones de propiedad de datos y derechos de propiedad intelectual en consecuencia. Por separado, los usuarios pueden optar por no transferir documentos en su cuenta de Sign-Up simplificada a la suscripción de la cuenta de dominio, incluso después de invitarlos a hacerlo. Esto significa que es posible que sus documentos tampoco sean accesibles para usted, incluso si agrega una cuenta de dominio más adelante.|Disponible en virtud del [Contrato de suscripción en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180430) y es mejor para las empresas que necesitan que Microsoft actúe como procesador de sus datos en el [Anexo de protección de datos](https://go.microsoft.com/fwlink/p/?linkid=2180314) de Microsoft y necesiten nuestro conjunto completo de herramientas de trabajo y colaboración remotas. Los suscriptores que se encuentren en sectores regulados o busquen más control, tanto sobre el uso de los servicios por parte de sus empleados como sobre el procesamiento de datos relacionados por parte de Microsoft, deben elegir la opción 2 y adjuntar un dominio y registrarse en el contrato de nivel empresarial de la cuenta de dominio.|
 
 Use estos tres factores para determinar cuál de las dos opciones es la mejor para sus necesidades empresariales.
 
-### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>Opción 1: Iniciar sesión con su Outlook, Hotmail, Yahoo, Gmail u otra cuenta de correo electrónico
+### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>Opción 1: Iniciar sesión con su cuenta de correo electrónico de Outlook, Hotmail, Yahoo, Gmail u otra cuenta de correo electrónico
 
-Iniciará sesión para Microsoft 365 con esta dirección de correo electrónico. Por ejemplo, alliebellew@hotmail.com.
+Iniciará sesión en Microsoft 365 con esta dirección de correo electrónico. Por ejemplo, alliebellew@hotmail.com.
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Captura de pantalla: Inicie sesión con su correo electrónico personal.":::
 
@@ -89,19 +90,19 @@ Iniciará sesión para Microsoft 365 con esta dirección de correo electrónico.
 
 2. Seleccione cuántas licencias de Microsoft 365 Empresa Estándar desea para su organización y seleccione **Agregar método de pago** y continuar con la compra en **Realizar pedido**.
 
-3. En la página **Detalles de confirmación** , le proporcionaremos más información sobre su suscripción. Ahora puede ir a la Centro de administración de Microsoft 365 para agregar usuarios, instalar Office aplicaciones, invitar a su equipo a usar Microsoft 365 y mucho más. También le enviaremos un correo electrónico con los pasos de configuración para Microsoft 365 Empresa Estándar.
+3. En la página **Detalles de confirmación** , le proporcionaremos más información sobre su suscripción. Ahora puede ir a la Centro de administración de Microsoft 365 para agregar usuarios, instalar aplicaciones de Office, invitar a su equipo a usar Microsoft 365 y mucho más. También le enviaremos un correo electrónico con los pasos de configuración para Microsoft 365 Empresa Estándar.
 
-Recuerde que esta opción no proporciona correo electrónico de marca, control de administración para el uso de los servicios por parte de otros usuarios ni soporte técnico de cumplimiento específico del sector. Los suscriptores no tienen acceso ni control sobre el uso o los documentos de otros usuarios (empleados) bajo esta opción Los usuarios pueden optar por no transferir los datos creados en el almacenamiento, como OneDrive/Teams a la cuenta de dominio de nivel empresarial actualizada si no elige la opción 2 inmediatamente.
+Recuerde que esta opción no proporciona correo electrónico de marca, control de administración para el uso de los servicios por parte de otros usuarios ni soporte técnico de cumplimiento específico del sector. Los suscriptores no tienen acceso ni control sobre el uso de otros usuarios (empleados) o los documentos bajo esta opción Los usuarios pueden optar por no transferir los datos creados en el almacenamiento, como OneDrive o Teams, a la cuenta de dominio de nivel empresarial actualizada si no elige la opción 2 inmediatamente.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
 ### <a name="option-2-create-a-new-business-email-account-and-attach-a-domain"></a>Opción 2: Crear una nueva cuenta de correo electrónico empresarial y adjuntar un dominio
 
-Con esta opción, podrá usar Microsoft 365 Exchange como proveedor de correo electrónico profesional y de marca. Todos los usuarios tendrán una dirección de correo electrónico de dominio compartido. Por ejemplo, su nombre de usuario, seguido de @contoso.com. Usted y los usuarios inician sesión en Microsoft 365 con esta nueva dirección de correo electrónico. Al seguir este proceso (agregar un dominio y crear nuevas cuentas de correo electrónico empresarial), obtendrá acceso a todas las características proporcionadas en Microsoft 365 Empresa Estándar. Para obtener pasos sobre cómo comprar o agregar un dominio, consulte [Configuración de Microsoft 365 Empresa Estándar](../setup/setup-business-standard.md).
+Con esta opción, podrá usar Microsoft 365 Exchange como proveedor de correo electrónico profesional y de marca. Todos los usuarios tendrán una dirección de correo electrónico de dominio compartido. Por ejemplo, su nombre de usuario, seguido de @contoso.com. Usted y sus usuarios inician sesión en Microsoft 365 con esta nueva dirección de correo electrónico. Al seguir este proceso (agregar un dominio y crear nuevas cuentas de correo electrónico empresarial), obtendrá acceso a todas las características proporcionadas en Microsoft 365 Empresa Estándar. Para obtener pasos sobre cómo comprar o agregar un dominio, consulte [Configuración de Microsoft 365 Empresa Estándar](../setup/setup-business-standard.md).
 
 :::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Captura de pantalla: Inicie sesión con un nuevo correo electrónico empresarial.":::
 
-Esta opción proporciona acceso inmediato al conjunto completo de características de la suscripción de Microsoft 365 Business, pero puede que sea necesario completar los pasos técnicos por adelantado.
+Esta opción proporciona acceso inmediato al conjunto completo de características de la suscripción a Microsoft 365 Empresa, pero puede que sea necesario completar los pasos técnicos por adelantado.
 
 Si desea agregar un dominio y crear una cuenta de correo electrónico empresarial, puede seguir los pasos de los artículos siguientes:
 
@@ -112,13 +113,13 @@ Si desea agregar un dominio y crear una cuenta de correo electrónico empresaria
 
 **Se aplica a: suscriptores existentes de Microsoft 365 Empresa Estándar que compraron anteriormente mediante el modo de registro simplificado**.
 
-Si anteriormente usó el modo de registro simplificado para comprar una suscripción empresarial antes de octubre de 2021 sin agregar un dominio empresarial, es posible que tenga que aceptar nuevos términos de servicio para el servicio ininterrumpido y el uso de las aplicaciones Microsoft Office. Es posible que se te envíen correos electrónicos o que veas mensajes desde la aplicación al iniciar sesión en Microsoft 365 Centro de administración.
+Si anteriormente usó el modo de registro simplificado para comprar una suscripción empresarial antes de octubre de 2021 sin agregar un dominio empresarial, es posible que tenga que aceptar nuevos términos de servicio para el servicio ininterrumpido y el uso de las aplicaciones de Microsoft Office. Es posible que se te envíen correos electrónicos o que veas mensajes desde la aplicación al iniciar sesión en el Centro de administración de Microsoft 365.
 
-Los términos de uso del registro simplificado se han actualizado recientemente y, en particular, aclaran las licencias y la propiedad de los datos para las suscripciones empresariales de varios usuarios. Para continuar con el servicio de su suscripción empresarial, puede visitar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) y seguir usando el **registro simplificado** (y aceptar usar el Contrato de Servicios de Microsoft Complementario) o visitar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) y agregar un **dominio empresarial** (y usar el Contrato de Servicios en línea de Microsoft). Para ayudarle a elegir cuál de estos dos modos se adapta mejor a sus necesidades, consulte la tabla de la parte superior de este artículo.
+Los términos de uso del registro simplificado se han actualizado recientemente y, en particular, aclaran las licencias y la propiedad de los datos para las suscripciones empresariales de varios usuarios. Para continuar con el servicio de su suscripción empresarial, puede visitar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) y seguir usando el **registro simplificado** (y aceptar usar el Contrato de Servicios de Microsoft Complementario), o bien visitar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) y agregar un **dominio empresarial** (y usar el Contrato de Servicios en línea de Microsoft). Para ayudarle a elegir cuál de estos dos modos se adapta mejor a sus necesidades, consulte la tabla de la parte superior de este artículo.
 
-Si decide no aceptar los términos actualizados para el registro simplificado o agregar un dominio empresarial, su suscripción no se renovará automáticamente y, al final del contrato de suscripción actual, perderá el acceso a las aplicaciones Office. Los datos de OneDrive se conservarán durante 90 días para que realice copias de los datos y, a continuación, se eliminarán.
+Si decide no aceptar los términos actualizados para el registro simplificado o agregar un dominio empresarial, su suscripción no se renovará automáticamente y, al final del contrato de suscripción actual, perderá el acceso a las aplicaciones de Office. Los datos de OneDrive se conservarán durante 90 días para que pueda hacer copias de ellos y, a continuación, se eliminarán.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 
@@ -140,7 +141,7 @@ Si decide usar un dominio que ya posee, puede usarlo para su dirección de corre
 
 Para proporcionar a los clientes la mayor flexibilidad, hay disponibles diferentes opciones de pago.
 
-- Microsoft 365 Empresa Básico, los planes De aplicaciones para empresas, Estándar empresarial y Premium Empresarial están disponibles para el pago mensual del compromiso o el pago de compromiso anual.
+- Microsoft 365 Empresa Básico, los planes Apps for Business, Business Standard y Business Premium están disponibles para el pago mensual del compromiso o el pago de compromiso anual.
 - Pago de compromiso mensual: se paga mes a mes y se puede cancelar en cualquier momento.
 - Pago de compromiso anual: se registra para una suscripción de un año, pero puede optar por pagar mes a mes o pagar todo el año en el momento de registrarse. Hay un descuento por usar esta opción de pago.
 
