@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información sobre cómo la administración de registros de Microsoft Purview admite elementos de alto valor para requisitos empresariales, legales o de mantenimiento de registros normativos.
-ms.openlocfilehash: 1a9d37f138647a36fb7440f15fd74851957b542f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 326731a80659b58368c41bff7894567e14e2d000
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642336"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069543"
 ---
 # <a name="learn-about-records-management"></a>Más información sobre la administración de registros
 
@@ -114,6 +114,21 @@ Cuando se aplica una etiqueta de retención a un elemento de lista que tiene dat
 > Además, no se puede aplicar una etiqueta normativa a un documento que está desprotegido en SharePoint.
 >
 > Dado que se trata de acciones irreversibles y restricciones, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
+
+## <a name="validating-migrated-records"></a>Validación de registros migrados
+
+Si va a migrar registros a SharePoint o OneDrive, es posible que tenga que validar que estos registros no se han modificado y conservan su estado de inmutabilidad. Por ejemplo, está usando una solución de migración y necesita cumplir los requisitos de cadena de custodia para sus registros. Es posible que las propiedades y los métodos de archivo típicos que se usan para este tipo de validación, como el tamaño de archivo o el hash de archivo, no sean suficientes porque SharePoint actualiza automáticamente los metadatos de un archivo cuando se carga.
+
+En su lugar, para validar los registros migrados, puede usar el valor de la propiedad `vti_writevalidationtoken`, que es un hash XOR codificado en base64 del archivo antes de que SharePoint lo modifique. Siga estos pasos:
+
+1. Genere el hash XOR del archivo original mediante el algoritmo QuickXorHash. Para más información, vea el [fragmento de código del algoritmo QuickXorHash](/onedrive/developer/code-snippets/quickxorhash).
+
+2. Codifique en Base64 el hash XOR. Para más información, consulte la [documentación del método Base64Encode](/windows/win32/seccrypto/utilities-base64encode).
+
+3. Después de migrar el archivo, recupere el valor de la propiedad `vti_writevalidationtoken` del archivo cargado.
+
+4. Compare el valor generado en el paso 2 con el valor recuperado en el paso 3. Estos dos valores deben coincidir. Si lo hacen, ha validado que el registro no ha cambiado.
+
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
