@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Obtenga información sobre cómo integrar el conector EHR de Teams que permita a los proveedores de atención sanitaria de su organización realizar citas virtuales con pacientes u otros proveedores en Teams directamente desde el sistema CERNER EHR.
-ms.openlocfilehash: eeb851e0f040d714dd55c5d1b262507a6b5eaf83
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9388ec0fef16fb15221044e387c485586acc1a64
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822597"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099896"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Citas virtuales con Teams: integración en Cerner EHR
 
