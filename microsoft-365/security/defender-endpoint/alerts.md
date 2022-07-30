@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059840"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100007"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso de alerta
 
@@ -81,7 +81,7 @@ ms.locfileid: "67059840"
 |severity|Enum|Gravedad de la alerta. Los valores posibles son: "UnSpecified", "Informational", "Low", "Medium" y "High".|
 |status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Unknown", "New", "InProgress" y "Resolved".|
 |classification|Enumeración que acepta valores NULL|Especificación de la alerta. Los valores posibles son: "Unknown", "FalsePositive", "TruePositive".|
-|Determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
+|determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
 |categoría|Cadena|Categoría de la alerta.|
 |detectionSource|String|Origen de detección.|
 |threatFamilyName|String|Familia de amenazas.|

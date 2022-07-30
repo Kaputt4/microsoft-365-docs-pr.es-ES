@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf677fc81a20b7e86d9b66505dd8968c0a31272b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 08514bd1637a9619274bc45951af2dc2762881f5
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633133"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099907"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicación de Information Rights Management (IRM) a una lista o biblioteca
 
@@ -73,7 +73,7 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
 |Seleccione esta opción si desea restringir el acceso al contenido a un período de tiempo especificado. Si selecciona esta opción, las licencias de emisión de personas para acceder al contenido expirarán después del número de días especificado y las personas deberán volver al servidor para comprobar sus credenciales y descargar una nueva copia.|Active la casilla **Después de la descarga, los derechos de acceso al documento expirarán después de este número de días (1-365)** y, a continuación, especifique el número de días para los que desea que se pueda ver el documento.|
 | Impedir que las personas carguen documentos que no admitan IRM en esta lista o biblioteca. Si selecciona esta opción, las personas no podrán cargar ninguno de los siguientes tipos de archivo: Tipos de archivo que no tienen instalados los protectores IRM correspondientes en todos los servidores front-end web. Tipos de archivo que SharePoint Server 2010 no puede descifrar. Tipos de archivo que están protegidos por IRM en otro programa.|Active la casilla **No permitir que los usuarios carguen documentos que no admiten IRM** .|
 |Quite los permisos restringidos de esta lista o biblioteca en una fecha específica.|Active la casilla **Detener restricción de acceso a la biblioteca en** y, a continuación, seleccione la fecha que desee.|
-|Controle el intervalo en el que las credenciales se almacenan en caché para el programa con licencia para abrir el documento.|Active la casilla **Users must verify their credentials using this interval (days) (Los usuarios deben comprobar sus credenciales con este intervalo (días)** y escriba el intervalo para almacenar en caché las credenciales en número de días.|
+|Controle el intervalo en que las credenciales de Azure RMS se almacenan en caché para el programa con licencia para abrir el documento.|Active la casilla **Users must verify their credentials using this interval (days) (Los usuarios deben comprobar sus credenciales con este intervalo (días)** y escriba el intervalo para almacenar en caché las credenciales en número de días.|
 |Permitir la protección de grupos para que los usuarios puedan compartir con miembros del mismo grupo.|Seleccione **Permitir protección de grupos** y escriba el nombre del grupo para compartir.|
 
 8. Una vez que haya terminado de seleccionar las opciones que desee, seleccione **Aceptar**.
@@ -136,7 +136,7 @@ Los tipos de restricciones que se aplican a un archivo cuando se descargan de un
 |Administrar permisos, Administrar sitio web|**Control total** (tal como lo define el programa cliente): este permiso generalmente permite a un usuario leer, editar, copiar, guardar y modificar permisos de contenido administrado por derechos.|
 |Editar elementos, administrar listas, agregar y personalizar páginas|**Editar**, **copiar** y **guardar**: un usuario solo puede imprimir un archivo si la casilla **Permitir a los usuarios imprimir documentos** está seleccionada en la página Configuración de Information Rights Management de la lista o biblioteca.|
 |Ver elementos|**Lectura**: un usuario puede leer el documento, pero no puede copiar ni modificar su contenido. Un usuario solo puede imprimir si la casilla **Permitir a los usuarios imprimir documentos** está seleccionada en la página Configuración de Information Rights Management de la lista o biblioteca.|
-|Otros|Ningún otro permiso corresponde directamente a los permisos de IRM.|
+|Other|Ningún otro permiso corresponde directamente a los permisos de IRM.|
    
 Al habilitar IRM para una lista o biblioteca en SharePoint Server 2013, solo puede proteger los tipos de archivo de esa lista o biblioteca para la que está instalado un protector en todos los servidores front-end web. Un protector es un programa que controla el cifrado y descifrado de archivos administrados por derechos de un formato de archivo específico. SharePoint incluye protectores para los siguientes tipos de archivo:
   

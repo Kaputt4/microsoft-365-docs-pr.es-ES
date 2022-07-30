@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051830"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099291"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características iOS
 
@@ -79,7 +79,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
     - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
     - Asigne un nombre a la directiva, **Platform > iOS/iPadOS**.
     - Seleccione Microsoft Defender para punto de conexión como la aplicación de destino.
-    - En la página Configuración, seleccione Usar diseñador de configuración y agregue  **WebProtection** como tipo de clave y valor como **booleano**.
+    - En la página Configuración, seleccione Usar diseñador de configuración y agregue **WebProtection** como tipo de clave y valor como **booleano**.
         - De forma predeterminada, **WebProtection= true**.
         - Administración debe hacer **webProtection = false** para desactivar la protección web.
         - Defender enviará el latido al portal de Microsoft 365 Defender cada vez que el usuario abra la aplicación.
@@ -90,7 +90,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
     - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
     - Asignar a la directiva un nombre.
     - En Seleccionar aplicaciones públicas, elija Microsoft Defender para punto de conexión como aplicación de destino.
-    - En la página Configuración, en Configuración general, agregue  **WebProtection** como la clave y el valor como **false**, .
+    - En la página Configuración, en Configuración general, agregue **WebProtection** como la clave y el valor como **false**, .
         - De forma predeterminada, **WebProtection= true**.
         - Administración debe hacer **webProtection = false** para desactivar la protección web.
         - Defender enviará el latido al portal de Microsoft 365 Defender cada vez que el usuario abra la aplicación.

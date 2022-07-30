@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 141f57f50b8400c0fdf2b40e9d8190be96b0fe1b
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: c015372c9f0fcf6cf0e25af1902af970e11156d0
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059829"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099146"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -85,7 +85,7 @@ Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad|Tipo|Description
+Propiedad|Tipo|Descripción
 :---|:---|:---
 Estado|Cadena|Especifica el estado actual de la alerta. Los valores de propiedad son: "New", "InProgress" y "Resolved".
 assignedTo|String|Propietario de la alerta

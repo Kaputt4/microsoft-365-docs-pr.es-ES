@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1dc7f7f29206b7944120bc2b494beec575313336
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: HT
+ms.openlocfilehash: 4e141b9764a1e677cb252d59c7ea6e5e555ccb84
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632391"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099830"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender para punto de conexión para plataformas que no sean de Windows
 
@@ -49,7 +49,6 @@ Para obtener más información sobre cómo empezar, visite la [documentación](m
 > [!NOTE]
 > Las siguientes funcionalidades no se admiten actualmente en los puntos de conexión de macOS:
 >
-> - Prevención de pérdida de datos
 > - Administración de seguridad para Microsoft Defender para punto de conexión
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux

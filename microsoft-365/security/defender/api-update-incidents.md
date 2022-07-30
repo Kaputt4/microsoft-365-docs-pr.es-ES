@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059752"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100061"
 ---
 # <a name="update-incidents-api"></a>Actualización de la API de incidentes
 
@@ -79,12 +79,12 @@ Content-Type|Cadena|application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione los valores de los campos que se deben actualizar. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
 
-Propiedad|Tipo|Description
+Propiedad|Tipo|Descripción
 ---|---|---
 status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active`, `Resolved`y `Redirected`.
 assignedTo|string|Propietario del incidente.
 classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
-Determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
+determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|string List|Lista de etiquetas de incidentes.
 comment|string|Comentario que se va a agregar al incidente.
 
@@ -95,7 +95,7 @@ comment|string|Comentario que se va a agregar al incidente.
 
 Si se ejecuta correctamente, este método devuelve `200 OK`. El cuerpo de la respuesta contendrá la entidad de incidente con las propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found`.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554233"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100017"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 
@@ -41,6 +41,18 @@ La implementación de Microsoft Defender para punto de conexión es un proceso d
 - Configuración de las funcionalidades del servicio
 
 :::image type="content" source="images/deployment-steps.png" alt-text="Proceso de incorporación y configuración" lightbox="images/deployment-steps.png":::
+
+## <a name="role-based-access-control"></a>Control de acceso basado en roles
+
+Se recomienda usar Privileged Identity Management para administrar los roles a fin de proporcionar auditoría, control y revisión de acceso adicionales para los usuarios con permisos de directorio.
+
+Defender for Endpoint admite dos maneras de administrar permisos:
+
+- **Administración básica de permisos**: establece los permisos en acceso completo o de solo lectura. Los usuarios con roles de administrador global o administrador de seguridad en Azure Active Directory (Azure AD) tienen acceso total. El rol de lector de seguridad tiene acceso de solo lectura y no concede acceso para ver el inventario de máquinas o dispositivos.
+
+- **Control de acceso basado en rol (RBAC):** establece permisos granulares mediante la definición de roles, la asignación de grupos de usuarios de Azure AD a los roles y la concesión de acceso a los grupos de usuarios a los grupos de dispositivos. Para obtener más información. consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
+
+Se recomienda aprovechar RBAC para asegurarse de que solo los usuarios que tengan una justificación empresarial puedan acceder a Defender para punto de conexión.
 
 ## <a name="onboard-devices-to-the-service"></a>Dispositivos incorporados al servicio
 Tendrá que ir a la sección de incorporación del portal de Defender para punto de conexión para incorporar cualquiera de los dispositivos admitidos. En función del dispositivo, se le guiará con los pasos adecuados y se le proporcionarán opciones de herramientas de administración e implementación adecuadas para el dispositivo. 
@@ -62,7 +74,7 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del p
 | **Cliente Windows**  |     [Mobile Administración de dispositivos/Microsoft Intune](configure-endpoints-mdm.md) <br> [Directiva de grupo](configure-endpoints-gp.md) <br> [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>[Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
-| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Marioneta](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
+| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Títere](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
@@ -100,7 +112,7 @@ Después de incorporar los dispositivos, tendrá que configurar las otras funcio
 |Protección web     |       v   |    v     |     v    |    v    |    v   |
 |||||||
 |**Detección**     |         |         |         |||
-|Búsqueda avanzada     |      v   |    v     |     v    |    v    |    v   |
+|Búsqueda avanzada de amenazas     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de archivos personalizados     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de red personalizados     |      v   |    v     |     v    |    v    |    v   |
 |Bloquear EDR & modo pasivo     |      v   |    v     |     v    |    v    |    v   |

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: bd8c98d533fd5186285a099b4991d527a6302274
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059763"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100083"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -53,7 +53,7 @@ La API de incidentes requiere diferentes tipos de permisos para cada uno de sus 
 
 ## <a name="methods"></a>Métodos
 
-Método | Tipo de valor devuelto | Description
+Método | Tipo de valor devuelto | Descripción
 -|-|-
 [Lista de Incidentes](api-list-incidents.md) | [Lista de incidentes](api-incident.md) | Obtenga una lista de incidentes.
 [Incidente de actualización](api-update-incidents.md) | [Incidente](api-incident.md) | Actualice un incidente específico.
@@ -65,7 +65,7 @@ Consulte los artículos del método correspondiente para obtener más detalles s
 
 ## <a name="common-properties"></a>Propiedades comunes
 
-Propiedad | Tipo | Description
+Propiedad | Tipo | Descripción
 -|-|-
 incidentId | largo | Identificador único del incidente.
 redirectIncidentId | long que admite valores NULL | Identificador de incidente al que se combinó el incidente actual.
@@ -76,7 +76,7 @@ assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```y ```High```.
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son ```Active```, ```InProgress```, ```Resolved``` y ```Redirected```
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
-Determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | Lista de etiquetas de incidentes.
 comments | Lista de comentarios de incidentes | El objeto Incident Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.
 alertas | Lista de alertas | Lista de alertas relacionadas. Consulte ejemplos en [la documentación de la API De lista de incidentes](api-list-incidents.md) .

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31aaf297fd3622eede2e1532ad60a20666d1bd07
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882891"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099071"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de AuditD con Microsoft Defender para punto de conexión en Linux 
 
@@ -32,7 +32,7 @@ En este artículo se proporcionan instrucciones sobre cómo solucionar problemas
 
 - Microsoft Defender para punto de conexión en distribuciones del sistema operativo Linux usa el marco AuditD para recopilar determinados tipos de eventos de telemetría. 
 
-- Los eventos del sistema capturados por las reglas agregadas a `/etc/audit/rules.d/` se agregarán a audit.log(s) y podrían afectar a la auditoría del host y a la recopilación ascendente.  
+- Los eventos del sistema capturados por las reglas agregadas a `/etc/audit/rules.d/` se agregarán a la auditoría.log y podrían afectar a la auditoría del host y a la recopilación ascendente.  
 
 - Los eventos agregados por Microsoft Defender para punto de conexión en Linux se etiquetarán con `mdatp` clave. 
 
@@ -42,7 +42,7 @@ En determinadas cargas de trabajo de servidor, se pueden observar dos problemas:
 
 - **Consumo elevado** de recursos de CPU de **_mdatp_audisp_plugin_** proceso. 
 
-- ***/var/log/audit/audit.log*** se convierte en grande o gira con frecuencia. 
+- ***/var/log/audit/audit.log*** convirtiéndose en grande o rotando con frecuencia. 
 
 Estos problemas pueden producirse en servidores con muchos eventos que inundan AuditD.  
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0ef0cd210b405440c4dd16f9b8ea7a707d8f6197
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970282"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099269"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 
@@ -38,7 +38,7 @@ Logotipo |Nombre del asociado   | Descripción
 ![Imagen del logotipo de Accenture.](images/accenture-logo.png)|[Respuesta de & de detección administrada de Accenture (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | Administre, mantenga y mejore las operaciones de ciberseguridad globales con funcionalidades extendidas que detectan, buscan y responden de forma proactiva a ciberataques avanzados en entornos de TI y OT ubicados en la nube y en el entorno local.
 ![Imagen del logotipo de Aujas.](images/aujas-logo.png) | [Servicio MDE administrado por Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | La ciberseguridad de Aujas proporciona 24*7 servicios de seguridad administrados en todo el espectro empresarial, mediante Microsoft Defender para punto de conexión a través de sus Centros de ciberdefensa.
 ![Imagen del logotipo de BDO Digital.](images/bdo-logo.png)| [BDO Digital](/openspecs/ie_standards/ms-html401/ad459f6f-5219-4f68-829c-a58f7397a11f) | La defensa administrada de BDO Digital usa herramientas de procedimientos recomendados, inteligencia artificial y expertos en seguridad internos para la protección de identidades 24/7/365
-![Imagen del logotipo de BlueVoyant.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR para Microsoft Defender para punto de conexión proporciona compatibilidad para supervisar, investigar y mitigar ataques avanzados en puntos de conexión
+![Imagen del logotipo de BlueVoyant.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | Servicios MDR que ofrecen análisis de datos de amenazas completos y soluciones de tecnología avanzada con supervisión remota 24x7 y corrección de incidentes XDR en su entorno.
 :::image type="content" source="images/bt-logo.png" alt-text="! Imagen del logotipo de BT.":::|[Punto de conexión administrado Microsoft desde BT](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| Nos hemos defendido durante muchos años, esta experiencia nos ha permitido desarrollar productos comerciales únicos que usamos para proteger a los clientes de Microsoft. Proporcionaremos supervisión 24x7x365 de su patrimonio de Microsoft Defender para punto de conexión en nuestros centros de operaciones de seguridad globales.
 ![Imagen del logotipo de Cloud Defender for Cloud.](images/cloudsecuritycenter-logo.png)| [Cloud Defender for Cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | Cloud Defender for Cloud de InSpark es un servicio administrado 24x7 que ofrece funcionalidades de protección, detección & respuesta
 ![Imagen del logotipo de SOC en la nube.](images/cloudsoc-logo.png)| [SOC en la nube](https://go.microsoft.com/fwlink/?linkid=2104265) | Cloud SOC proporciona servicios de supervisión de seguridad 24/7 basados en la nube de Microsoft y le ayuda a mejorar continuamente su posición de seguridad.
