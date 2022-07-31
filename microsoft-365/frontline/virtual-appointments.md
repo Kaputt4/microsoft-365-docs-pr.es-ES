@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: f36d79aa4902991e07355fc6bfd3a6add1ae0fe0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998774"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100105"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Citas virtuales con Microsoft Teams
 
