@@ -20,22 +20,20 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099931"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107262"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Descripción del informe expertos de Defender para la búsqueda en Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Expertos de Microsoft Defender para la búsqueda de capas de inteligencia humana y tecnología entrenada por expertos para ayudar a Microsoft 365 Defender clientes a comprender las amenazas significativas a las que se enfrentan. Muestra cómo las aptitudes de búsqueda de amenazas de Defender Expert, la comprensión exhaustiva del panorama de amenazas y el conocimiento de las amenazas emergentes pueden ayudarle a identificar, priorizar y abordar esas amenazas en su entorno. 
 
@@ -57,13 +55,13 @@ Cada sección del informe está diseñada para proporcionar más información so
 
 Consulte la siguiente captura de pantalla de un informe de ejemplo:
 
-![informe de expertos de defender](../../media/mte/defender-experts-report.png)
+![Captura de pantalla de un informe de expertos de Microsoft Defender para la búsqueda en Microsoft 365 Defender portal.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Ver notificaciones de expertos de Defender
 
 Una notificación de expertos de Defender describe la actividad de amenaza significativa Expertos de Defender para la búsqueda observada en su entorno y proporciona recomendaciones para corregir y defender su organización.
 
-Los informes de expertos de Defender para la búsqueda le proporcionan el número total de notificaciones de expertos de Defender que nuestros expertos de Defender han enviado durante el tiempo que ha elegido. Para ver estas notificaciones, haga clic en **Ver notificación** junto a **Notificación**.
+Los informes de expertos de Defender para la búsqueda le proporcionan el número total de notificaciones de expertos de Defender que nuestros expertos de Defender han enviado durante el tiempo que ha elegido. Para ver estas notificaciones, seleccione **Ver notificación** junto a **Notificación**.
 
 Este vínculo le redirige a la página de incidentes de Microsoft 365 Defender. Las alertas de expertos de Defender para la búsqueda o las notificaciones de expertos de Defender se etiquetan con **expertos de Defender**.
 
@@ -77,16 +75,16 @@ Las tácticas MITRE ATT&CK representan objetivos adversarios, lo que intentan lo
 1.  Reconocimiento
 2.  Desarrollo de recursos
 3.  Acceso inicial
-4.  Ejecución   
-3.  Persistencia 
-4.  Escalación de privilegios    
-5.  Evasión de defensa 
+4.  Ejecución
+3.  Persistencia
+4.  Escalación de privilegios
+5.  Evasión de defensa
 6.  Acceso a credenciales
 7.  Descubrimiento
-8.  Movimiento lateral    
+8.  Movimiento lateral
 9.  Colección
 10. Comando y control
-11. Filtración    
+11. Filtración
 12. Impacto
 
 Las señales de Microsoft 365 Defender e investigaciones de expertos de Defender para la búsqueda ayudan a identificar estas tácticas, representadas en el gráfico de barras. Este gráfico le ayuda a visualizar dónde está el aumento y le proporciona la información que necesita para planear las acciones de contención y corrección correspondientes.
@@ -95,7 +93,7 @@ Las señales de Microsoft 365 Defender e investigaciones de expertos de Defender
 
 Las categorías de amenazas ayudan a identificar y organizar las amenazas de seguridad en clases para evaluar y evaluar su impacto y desarrollar estrategias para prevenir o mitigar estas amenazas en el entorno. En la sección **Categorías de amenazas observadas** del informe se muestra un gráfico de barras con riesgos y amenazas significativos detectados en su entorno, lo que le ayuda a comprender la amplitud y el ámbito de la exposición.
 
-Entre las distintas categorías de amenazas disponibles, las siguientes categorías se eligen cuidadosamente porque no están cubiertas bajo el ámbito del marco de MITRE ATT&CK:
+Entre las distintas categorías de amenazas disponibles, las siguientes categorías se eligen cuidadosamente porque no están cubiertas bajo el ámbito de MITRE ATT&marco CK:
 
 - Ransomware
 - Malware
@@ -104,3 +102,4 @@ Entre las distintas categorías de amenazas disponibles, las siguientes categor�
 - Delivery
 
 Puede priorizar la corrección en función de la categoría más afectada, como se muestra en el gráfico de barras.
+

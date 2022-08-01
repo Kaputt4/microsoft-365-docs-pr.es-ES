@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: e08e0543dca5c0e4b19995a92c31f34057de896c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185377"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106194"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada al centro de eventos de Azure
 
@@ -44,7 +44,7 @@ Antes de configurar Microsoft 365 Defender para transmitir datos a Event Hubs, a
 3. Agregue permisos a la entidad que tiene los privilegios de un **colaborador** para que esta entidad pueda exportar datos a Event Hubs. Para obtener más información sobre cómo agregar permisos, vea [Agregar permisos](configure-event-hub.md#add-permissions).
 
 > [!NOTE]
-> La API de streaming se puede integrar a través de Event Hubs o Azure Storage Account.
+> La API de streaming se puede integrar a través de Event Hubs o una cuenta de Azure Storage.
 
 ## <a name="enable-raw-data-streaming"></a>Habilitación del streaming de datos sin procesar
 
@@ -66,7 +66,7 @@ Antes de configurar Microsoft 365 Defender para transmitir datos a Event Hubs, a
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Un identificador de recurso del centro de eventos" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. Vaya a [los tipos de eventos Microsoft 365 Defender admitidos en la API de streaming](supported-event-types.md) de eventos para revisar el estado de soporte técnico de los tipos de eventos en Microsoft 365 Streaming API.
+8. Vaya a [los tipos de eventos de Microsoft 365 Defender admitidos en event streaming API](supported-event-types.md) para revisar el estado de soporte técnico de los tipos de eventos en la API de streaming de Microsoft 365.
 
 9. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 

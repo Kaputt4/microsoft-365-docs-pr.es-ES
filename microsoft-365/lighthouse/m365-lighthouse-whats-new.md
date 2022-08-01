@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056622"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106457"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -30,6 +30,20 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
+
+## <a name="july-2022"></a>Julio de 2022
+
+### <a name="enhanced-baseline-deployment"></a>Implementación de línea base mejorada
+
+Microsoft 365 Lighthouse ahora hace que la implementación de líneas base en todos los inquilinos administrados sea más rápida y fácil:
+
+- Detectar e informar automáticamente del estado de cada tarea asignada
+- Consolidación de los informes de estado y simplificación de la lógica que determina el estado de implementación
+- Informar de qué tareas están completas y qué tareas necesitan su atención
+- Notificación del estado de implementación de nivel de usuario para las tareas aplicables
+- Detección de configuraciones existentes desde el inquilino y comparación con la línea base
+- Proporcionar detalles sobre las tareas que se han descartado
+- Identificación de dónde se requieren licencias adicionales para completar una tarea asignada
 
 ## <a name="june-2022"></a>Junio de 2022
 
@@ -109,15 +123,15 @@ Microsoft 365 Lighthouse ahora puede probar las configuraciones de inquilino par
 
 Esta nueva funcionalidad detecta las directivas existentes dentro de los inquilinos del cliente que administra y las compara con el plan de implementación. Microsoft 365 Lighthouse, a continuación, proporciona designaciones de estado para los pasos de implementación y los procesos de paso de implementación para ayudarle a comprender qué procesos de implementación ya se han completado, cuáles deben abordarse y dónde la configuración prescrita por el plan de implementación es igual, falta o entra en conflicto con la configuración incluida en las directivas existentes. Conocer esta información hace que la identificación, priorización y resolución de conflictos de directivas sea más rápida, fácil y eficaz.
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Paso de implementación para configurar Firewall de Microsoft Defender
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Paso de implementación para configurar firewall de Microsoft Defender
 
-Microsoft 365 Lighthouse ha agregado el paso Configurar Firewall de Microsoft Defender implementación a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de inquilino del cliente a través de la configuración de firewall predeterminada para dispositivos Windows 10 (y versiones posteriores). Firewall de Microsoft Defender bloquea el tráfico de red no autorizado que fluye dentro o fuera de los dispositivos de inquilino del cliente y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de Firewall de Microsoft Defender.
+Microsoft 365 Lighthouse ha agregado el paso Configurar la implementación de Firewall de Microsoft Defender a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de inquilino del cliente a través de la configuración de firewall predeterminada para dispositivos Windows 10 (y versiones posteriores). Firewall de Microsoft Defender bloquea el tráfico de red no autorizado que entra o sale de los dispositivos de inquilino del cliente y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de firewall de Microsoft Defender.
 
 Firewall de Microsoft Defender está activado de forma predeterminada en Windows 10 (y versiones posteriores). Si el inquilino del cliente no tiene esto configurado, siga estos pasos:
 
 1. En la página **Inquilinos** de Microsoft 365 Lighthouse, seleccione el inquilino del cliente para abrir la página **Información general** del inquilino.
 2. Seleccione la pestaña **Plan de implementación** .
-3. En la lista de pasos de implementación, seleccione **Configurar Firewall de Microsoft Defender**.
+3. En la lista de pasos de implementación, seleccione **Configurar firewall de Microsoft Defender**.
 4. Seleccione **Revisar e implementar** para implementar esta configuración en el inquilino del cliente. 
 
 ### <a name="increase-in-maximum-license-limit"></a>Aumento del límite máximo de licencias

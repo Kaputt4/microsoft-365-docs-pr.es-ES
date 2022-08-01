@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar las soluciones de Microsoft Purview mediante conectores de datos de terceros y API de Microsoft Graph.
-ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071555"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106435"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilidad de Microsoft Purview y Microsoft Priva
 
@@ -129,4 +129,4 @@ Ahora, la primera versión de graph API para la administración de registros adm
 
 Para obtener más información sobre las API de Graph para la administración de registros, consulte [Uso de la API de administración de registros de Microsoft Graph](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-Para conocer los requisitos de licencia para usar estas API, consulte la sección administración de registros de [la guía de licencias de Microsoft 365 para obtener seguridad & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Para conocer los requisitos de licencia para usar estas API, consulte la información de administración de registros de la guía de Microsoft 365 para el cumplimiento de la seguridad &, [Administración del ciclo de vida de Microsoft Purview & Administración de registros de Microsoft Purview ](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) sección.

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga una lista de los requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057782"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105975"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -33,10 +33,10 @@ Los CSP deben inscribirse en el programa Proveedor de soluciones en la nube (CSP
 Además, cada inquilino del cliente MSP debe calificar para Lighthouse cumpliendo los siguientes requisitos:
 
 - Debe tener el acceso delegado configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
-- Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas Licencia
+- Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas licencia
 - No debe tener más de 2500 usuarios con licencia
 
-Se requiere privilegios de administrador delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.
+ \*Se requiere privilegios de Administración delegados granulares (GDAP) o una relación de privilegios de Administración delegados (DAP) para incorporar clientes a Lighthouse. Ya no se requiere una relación de revendedor indirecto para incorporarse a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP.
 
 ## <a name="requirements-for-enabling-device-management"></a>Requisitos para habilitar la administración de dispositivos
 
@@ -51,14 +51,14 @@ Para que los datos de los clientes se muestren en los informes de las páginas d
 
 ## <a name="requirements-for-enabling-threat-management"></a>Requisitos para habilitar la administración de amenazas
 
-Para ver las amenazas y los dispositivos de inquilino del cliente en las páginas de administración de amenazas, debe inscribir todos los dispositivos de inquilino del cliente en Microsoft Endpoint Manager (MEM) y protegerlos mediante la ejecución de Antivirus de Microsoft Defender.
+Para ver los dispositivos y amenazas de los inquilinos del cliente en las páginas de administración de amenazas, debe inscribir todos los dispositivos de inquilino del cliente en Microsoft Endpoint Manager (MEM) y protegerlos mediante la ejecución del Antivirus de Microsoft Defender.
 
 Para obtener más información, consulte [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/).
 
 Antivirus de Microsoft Defender forma parte del sistema operativo Windows y está habilitado de forma predeterminada en dispositivos que ejecutan Windows 10.
 
 > [!NOTE]
-> Si usa una solución antivirus que no es de Microsoft y no Antivirus de Microsoft Defender, Antivirus de Microsoft Defender se deshabilita automáticamente. Al desinstalar la solución antivirus que no es de Microsoft, Antivirus de Microsoft Defender se activa automáticamente para proteger los dispositivos Windows frente a amenazas.
+> Si usa una solución antivirus que no es de Microsoft y no antivirus de Microsoft Defender, antivirus de Microsoft Defender se deshabilita automáticamente. Al desinstalar la solución antivirus que no es de Microsoft, el Antivirus de Microsoft Defender se activa automáticamente para proteger los dispositivos Windows frente a amenazas.
 
 ## <a name="related-content"></a>Contenido relacionado
 

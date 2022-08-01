@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490240"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106763"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -36,7 +36,7 @@ Si es administrador global o de seguridad, ahora puede hospedar informes de fire
 
 - Debe ejecutar Windows 10 o Windows 11, o Windows Server 2019 o Windows Server 2022.
 - Para incorporar dispositivos al servicio Microsoft Defender para punto de conexión, consulte [aquí](onboard-configure.md).
-- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> empiece a recibir los datos, debe habilitar Eventos de **auditoría** para Firewall de Windows Defender con Advanced Security:
+- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> empiece a recibir los datos, debe habilitar **Eventos de auditoría** para Windows Defender Firewall con seguridad avanzada:
   - [Eliminación de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Habilite estos eventos mediante directiva de grupo Editor de objetos, Directiva de seguridad local o los comandos de auditpol.exe. Para obtener más información, consulte [aquí](/windows/win32/fwp/auditing-and-logging).
@@ -90,12 +90,10 @@ catch {
    - Nombre del equipo
    - Proceso entre conexiones entrantes y salientes
 - Los administradores ahora pueden ver la actividad del firewall del host [de Windows aquí](https://security.microsoft.com/firewall).
-   - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.
+   - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows Defender mediante Power BI.
    - Los datos pueden tardar hasta 12 horas en reflejarse.
 
 ## <a name="supported-scenarios"></a>Escenarios admitidos
-
-Los siguientes escenarios se admiten durante la versión preliminar de Ring0:
 
 - [Informes de firewall](#firewall-reporting)
 - [Desde "Equipos con una conexión bloqueada" al dispositivo](#from-computers-with-a-blocked-connection-to-device)
@@ -129,4 +127,4 @@ Los informes de firewall admiten la exploración desde la tarjeta directamente e
 
 Ahora se puede ejecutar la consulta y se pueden explorar todos los eventos de firewall relacionados de los últimos 30 días.
 
-Para obtener más informes o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar descargando el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de Firewall de Windows Defender mediante Power BI.
+Para obtener más informes o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar descargando el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows Defender mediante Power BI.

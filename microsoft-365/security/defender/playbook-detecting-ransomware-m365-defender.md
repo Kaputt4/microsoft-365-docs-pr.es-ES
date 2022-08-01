@@ -1,5 +1,5 @@
 ---
-title: Detección de ataques de ransomware operados por humanos con Microsoft 365 Defender
+title: Detección de ataques de ransomware operados por personas con Microsoft 365 Defender
 description: En este artículo se describe la detección proactiva de ataques de ransomware nuevos o en curso operados por personas con el portal de Microsoft 365 Defender
 search.appverid: MET150
 author: nic-name
@@ -12,14 +12,14 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a3a1d48ab9876215e2034279d036705bf4e1972
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811188"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107093"
 ---
-# <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Detección de ataques de ransomware operados por humanos con Microsoft 365 Defender
+# <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Detección de ataques de ransomware operados por personas con Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -135,7 +135,7 @@ El atacante está intentando poner en peligro una cuenta de usuario, un disposit
 Método de ataque |Origen de señal |Portales de seguridad alternativos
 |:---|:---|:---
 Fuerza bruta rdp|Defender para punto de conexión|Defender for Cloud Apps
-Sistema accesible desde Internet vulnerable|Windows características de seguridad, Microsoft Defender para servidores|
+Sistema accesible desde Internet vulnerable|Características de seguridad de Windows, Microsoft Defender para servidores|
 Configuración débil de la aplicación      |Defender for Cloud Apps, Defender for Cloud Apps con el complemento de gobernanza de aplicaciones|Defender for Cloud Apps |
 Actividad de aplicación malintencionada      |Defender for Cloud Apps, Defender for Cloud Apps con el complemento de gobernanza de aplicaciones|Defender for Cloud Apps |
 Correo de phishing        |Defender para Office 365
@@ -153,7 +153,7 @@ Categoría de pico        |Origen de señal                 |Portales de segurid
 |:---                    |:---                              |:---
 Inicios de sesión: numerosos intentos fallidos, intentos de inicio de sesión en varios dispositivos en un breve período, varios inicios de sesión por primera vez, etc. |Azure AD Identity Protection a través de Defender for Cloud Apps, Microsoft Defender for Identity |Defender for Cloud Apps
 Cuenta de usuario activa recientemente, grupo, cuenta de equipo, aplicación |Azure AD Identity Protection a través de Defender for Cloud Apps (Azure AD), Defender for Identity (Servicios de dominio de Active Directory [AD DS]) |Defender for Cloud Apps
-Actividad reciente de la aplicación, como el acceso a datos |Aplicaciones con aplicaciones Defender for Cloud con el complemento de gobernanza de aplicaciones |Defender for Cloud Apps
+Actividad reciente de la aplicación, como el acceso a datos |Aplicaciones con Defender for Cloud Apps con el complemento de gobernanza de aplicaciones |Defender for Cloud Apps
 
 #### <a name="new-activity"></a>Nueva actividad
 
@@ -161,7 +161,7 @@ El atacante está creando nuevas entidades para ampliar su alcance, instalar age
 
 Actividad     |Origen de señal           |Portal de seguridad alternativo
 |:---                |:---                        |:---
-Nuevas aplicaciones instaladas |Defender for Cloud Aplicaciones con el complemento de gobernanza de aplicaciones |Defender for Cloud Apps
+Nuevas aplicaciones instaladas |Defender for Cloud Apps con el complemento de gobernanza de aplicaciones |Defender for Cloud Apps
 Nuevas cuentas de usuario    |Azure Identity Protection         |Defender for Cloud Apps
 Cambios de rol      |Azure Identity Protection        |Defender for Cloud Apps
 
@@ -252,7 +252,7 @@ La integración de incidentes Microsoft 365 Defender de Microsoft Sentinel le pe
 Para el análisis proactivo de actividades de ransomware, debe ensamblar un catálogo de consultas de búsqueda avanzadas para métodos de ataque de ransomware de uso frecuente para identidades, puntos de conexión, aplicaciones y datos. Estos son algunos orígenes clave para consultas de búsqueda avanzadas listas para usar:
 
 * El artículo [Búsqueda de ransomware](/advanced-hunting-find-ransomware.md)
-* GitHub repositorio para consultas de búsqueda avanzadas:
+* Repositorio de GitHub para consultas de búsqueda avanzadas:
   * [Consultas específicas de ransomware](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware)
   * [Todas las categorías](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware) de consultas
 * Informes de análisis de amenazas
@@ -284,7 +284,7 @@ La preparación del equipo de SecOps para la detección proactiva de ransomware 
 Tenga en cuenta estos pasos para preparar el equipo y la organización de SecOps para la prevención de ataques de ransomware centrada:
 
 1. Configure su infraestructura de TI y la nube para la prevención de ransomware con la guía [De protección rápida contra ransomware y extorsión](/security/compass/protect-against-ransomware-phase3) . Las fases y tareas de esta guía se pueden realizar en paralelo con los pasos siguientes.
-2. Obtenga las licencias adecuadas para Defender para punto de conexión, Defender para Office 365, Defender for Identity, Defender for Cloud Apps, el complemento de gobernanza de aplicaciones, Defender para IoT y los servicios de Azure AD Identity Protection.
+2. Obtenga las licencias adecuadas para los servicios Defender para punto de conexión, Defender para Office 365, Defender for Identity, Defender for Cloud Apps, el complemento de gobernanza de aplicaciones, Defender para IoT y Azure AD Identity Protection.
 3. Ensamblar un catálogo de consultas de búsqueda avanzadas optimizadas para métodos de ataque de ransomware conocidos o fases de ataque.
 4. Cree el conjunto de reglas de detección personalizadas para consultas de búsqueda avanzadas específicas que creen alertas para métodos de ataque de ransomware conocidos, incluida su programación, nomenclatura de alertas y acciones automatizadas.
 5. Determine el conjunto de [etiquetas o estándares personalizados](/manage-incidents.md) para crear uno nuevo para identificar los incidentes que se sabe que forman parte de un ataque de ransomware más grande y coordinado.
@@ -313,7 +313,7 @@ Según sea necesario, puede proporcionar a los analistas de seguridad formación
 Como parte de la herramienta continua del equipo de SecOps y los procedimientos recomendados de procesos y las experiencias de los analistas de seguridad, debe:
 
 * Actualice el catálogo de consultas de búsqueda avanzadas con:
-  * Nuevas consultas basadas en los informes de análisis de amenazas más recientes en el portal de Microsoft 365 Defender o en el [repositorio de búsqueda avanzada GitHub](<https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware>).
+  * Nuevas consultas basadas en los informes de análisis de amenazas más recientes en el portal de Microsoft 365 Defender o en el [repositorio de GitHub de búsqueda avanzada](<https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware>).
   * Cambios en los existentes para optimizar la identificación de amenazas o para mejorar la calidad de las alertas.
 * Actualice las reglas de detección personalizadas basadas en consultas de búsqueda avanzadas nuevas o modificadas.
 * Actualice el conjunto de tareas operativas para la detección de ransomware.

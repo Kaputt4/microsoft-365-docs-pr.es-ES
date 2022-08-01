@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: 8ad247917a8dfdad7362576079edd9bdec7302ba
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 9f3c2bc86d64cbc99f280de3c668e84a402b3619
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069568"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106106"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -32,15 +32,7 @@ En este artículo se enumeran los problemas conocidos de Microsoft 365 Lighthous
 
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |
-| **El agente del departamento de soporte técnico no puede restablecer una contraseña de usuario.** | Los técnicos del proveedor de servicios administrados (MSP) que son miembros del grupo agente del departamento de soporte técnico no pueden restablecer las contraseñas de los usuarios de los inquilinos del cliente. Cuando intenta restablecer la contraseña de un usuario, recibe el siguiente mensaje de error: "No tiene permiso para hacerlo. [Más información](m365-lighthouse-configure-portal-security.md)" | Para solucionar el problema de permisos, los agentes del departamento de soporte técnico deben restablecer las contraseñas mediante el Centro de administración de Microsoft 365 o Azure Active Directory. |
 | **No se muestra ningún dato en la pestaña OneDrive del panel de detalles del usuario** | Cuando un técnico de MSP intenta ver los datos de OneDrive en la pestaña OneDrive en el panel de detalles del usuario, ve el mensaje: "OneDrive no está configurado para este usuario. Pida a la persona que vaya a portal.office.com/onedrive para configurarlo. Puede tardar un tiempo. Si sigue viendo este mensaje 24 horas más tarde, póngase en contacto con el soporte técnico." | La pestaña OneDrive no admite la autenticación delegada en este momento. Para solucionar el problema, los técnicos de MSP deben ver los datos de OneDrive en el Centro de administración de Microsoft 365 iniciando sesión con las credenciales del cliente. |
-
-
-## <a name="devices"></a>Dispositivos
-
-| Problema | Descripción | Solución |
-| ---------------- | ---------------- | ---------------- |
-| **Aparece la directiva eliminada** | Una vez que se haya eliminado una directiva de cumplimiento de dispositivos de Intune, seguirá siendo visible temporalmente en Lighthouse. Si los técnicos de MSP intentan realizar una comparación de directivas que incluya una directiva que se ha eliminado, los técnicos reciben el siguiente error: "Algo salió mal. Actualice la página e inténtelo de nuevo". | Para resolver el error, borre la directiva eliminada de la comparación de directivas y compare solo las directivas existentes. |
 
 ## <a name="threat-management"></a>Administración de amenazas
 

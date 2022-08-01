@@ -17,43 +17,46 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: dbe994ee0cba90f37acf7dcbd92c3b0d81d673a3
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 9705f0b11167e148dcc79a9913ae78e3e3828217
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798217"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106566"
 ---
 # <a name="how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains"></a>Cómo habilitar dmarc reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 
 El procedimiento recomendado para la protección de la seguridad del correo electrónico de dominio es protegerse contra la suplantación de identidad mediante la autenticación de mensajes basada en dominio, la generación de informes y la conformidad (DMARC). Si aún no ha habilitado DMARC para los dominios, debe ser el primer paso, que se detalla aquí: Autenticación de [mensajes basada en dominio, informes y conformidad (DMARC)](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
-Esta guía está diseñada para ayudarle a configurar DMARC para los dominios no tratados en la guía anterior, tanto la dirección de enrutamiento de Microsoft Online Email (MOERA) también conocida como contosocorp.onmicrosoft.com y los dominios aparcados que puede que aún no esté usando para el correo electrónico, pero que podrían aprovechar los atacantes hasta que estén protegidos.
+Esta guía está diseñada para ayudarle a configurar DMARC para dominios no cubiertos por el artículo principal de DMARC. Estos dominios incluyen dominios que no se usan para el correo electrónico, pero que los atacantes podrían aprovechar si permanecen desprotegidos:
+
+- Su `onmicrosoft.com` dominio, también conocido como dominio de direcciones de enrutamiento de Email (MOERA) de Microsoft Online.
+- Dominios personalizados estacionados que aún no está usando para el correo electrónico.
 
 ## <a name="what-youll-need"></a>Lo que necesitará
 
-- Centro de administración de Microsoft 365 y acceso a su proveedor DNS que hospeda sus dominios
-- Permisos suficientes como Administración global para realizar los cambios adecuados en el Centro de Administración de Microsoft 365
-- 10 minutos para completar los pasos siguientes
+- Centro de administración de Microsoft 365 y acceso al proveedor DNS que hospeda los dominios.
+- Permisos suficientes como Administración global para realizar los cambios adecuados en el Centro de administración de Microsoft 365.
+- 10 minutos para completar los pasos de este artículo.
 
 ## <a name="activate-dmarc-for-moera-domain"></a>Activación de DMARC para el dominio MOERA
 
-1. Inicie sesión en el [Centro de Administración de Microsoft 365](https://admin.microsoft.com).
+1. Abra el Centro de administración de Microsoft 365 en <https://admin.microsoft.com>.
 1. En el panel de navegación izquierdo, seleccione **Mostrar todo**.
-1. Expanda Configuración y presione **Dominios**.
-1. Seleccione el dominio de inquilino (contoso.onmicrosoft.com).
+1. Expanda **Configuración** y presione **Dominios**.
+1. Seleccione el dominio de inquilino (por ejemplo, contoso.onmicrosoft.com).
 1. En la página que se carga, seleccione **Registros DNS**.
 1. Seleccione **+ Agregar registro**.
-1. Aparecerá un control flotante a la derecha, asegúrese de que el tipo seleccionado es **TXT (texto).**
-1. Agregue _dmarc como nombre TXT.
+1. Aparecerá un control flotante a la derecha. Asegúrese de que el tipo seleccionado es **TXT (texto).**
+1. Agregue `_dmarc` como **nombre TXT**.
 1. Agregue el valor de DMARC específico.
 1. Presione **Guardar**.
 
 ## <a name="active-dmarc-for-parked-domains"></a>DMARC activo para dominios estacionados
 
-1. Compruebe si SPF ya está configurado para el dominio estacionado, siga esta guía: [Configuración de SPF para ayudar a evitar la suplantación de identidad: Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing#how-to-handle-subdomains)
+1. Compruebe si SPF ya está configurado para el dominio estacionado. Para obtener instrucciones, consulte [Configuración de SPF para ayudar a evitar la suplantación de identidad: Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing#how-to-handle-subdomains)
 1. Póngase en contacto con el proveedor de dominio DNS.
-1. Pida que agregue este registro txt de DMARC con las direcciones `v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com`de correo electrónico adecuadas.
+1. Pida que agregue este registro txt de DMARC con las direcciones de correo electrónico adecuadas: `v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com`.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -61,5 +64,6 @@ Espere hasta que se propaguen los cambios de DNS e intente suplantar los dominio
 
 ## <a name="more-information"></a>Más información
 
-[Configuración de SPF para ayudar a evitar la suplantación de identidad: Office 365 | ](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
- Microsoft Docs [Use DMARC para validar el correo electrónico y los pasos de instalación: Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Configuración de SPF para ayudar a evitar la suplantación de identidad: Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
+
+[Uso de DMARC para validar el correo electrónico y los pasos de configuración: Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)

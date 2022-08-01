@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: acc3f81c789722a460a43df56a3e2794855dad0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c6d887e7b50c3bfeddb967340045f6b2dbf96b0c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66998246"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107335"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Pasos para usar la corrección manual de correo electrónico en el Explorador de amenazas
 

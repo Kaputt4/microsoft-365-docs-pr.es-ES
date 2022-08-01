@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66998261"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106961"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Cómo configurar directivas y permisos de cuarentena
 

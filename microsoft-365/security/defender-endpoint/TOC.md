@@ -34,6 +34,7 @@
 #### [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Guías de migración](migration-guides.md)
+### [Inmigrar servidores de Defender para punto de conexión a Defender for Cloud](migrating-mde-server-to-cloud.md)
 ### [Mudar a Microsoft Defender para punto de conexión](switch-to-mde-overview.md)
 #### [Fase 1: Preparación](switch-to-mde-phase-1.md)
 #### [Fase 2: Configuración](switch-to-mde-phase-2.md)
