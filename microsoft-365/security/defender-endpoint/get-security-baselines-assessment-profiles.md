@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2f02243686c943ad38c410a23dabca666aa35a15
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 69f660fb355d5b93c538b92ed45b37c6cec61b9a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020448"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "66998180"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Enumerar todos los perfiles de evaluación de líneas de base de seguridad
 
@@ -32,7 +32,7 @@ ms.locfileid: "67020448"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? [Regístrese para obtener una evaluación gratuita.- Actualizar](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="1-get-security-baselines-assessment-profiles"></a>1. Obtención de perfiles de evaluación de líneas de base de seguridad
 

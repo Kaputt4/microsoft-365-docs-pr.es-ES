@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fa5ebe413baef991b412cd44d90239bfb72b0e2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099049"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66998345"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusiones contextuales de archivos y carpetas
 
@@ -46,11 +46,11 @@ Normalmente, las restricciones se aplican agregando el tipo de restricción a la
 | Restriction | TypeName | valor |
 |:---|:---|:---|
 | Archivo o carpeta  | PathType  | file <br> folder |
-| Tipo de examen | ScanType | rápido <br> lleno |
-| Desencadenador de examen | ScanTrigger | OnDemand <br> OnAccess <br> Bm |
+| Tipo de examen | ScanType | Rápido <br> Completo |
+| Desencadenador de examen | ScanTrigger | Ondemand <br> OnAccess <br> BM |
 | Proceso | Proceso | "<image_path>" |
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Esta funcionalidad requiere Antivirus de Windows Defender:
 
@@ -73,11 +73,11 @@ La cadena siguiente excluye "c:\documents\design.doc" solo si se trata de un arc
 
 La cadena siguiente excluye "c:\documents\design.doc" solo si se examina (a su acceso) debido a que un proceso que tiene el nombre de imagen "winword.exe":
 
-`c:\documents\design.doc\:{Process:"winword.exe"}`
+`c:\documents\design.doc\:{Process:”winword.exe”}`
 
 La ruta de acceso de la imagen de proceso puede contener caracteres comodín, como en el ejemplo siguiente:
 
-`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
+`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
 
 ### <a name="filefolder-restriction"></a>Restricción de archivos o carpetas
 
@@ -146,7 +146,7 @@ Esta restricción le permite definir que una exclusión solo se debe aplicar cua
 
 Para excluir un archivo o carpeta solo cuando un proceso específico acceda a él, cree un archivo o una exclusión de carpeta normales y agregue el proceso para restringir la exclusión a:  
 
-`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
+`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
 
 ### <a name="how-to-configure"></a>Cómo establecer la configuración
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69ba04d80a14e73550b65df19d17627616597b5b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: c5f89d92e754648dcaffb134de70516c7274625d
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020459"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "66998165"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exportación del inventario de certificados por dispositivo
 
@@ -32,7 +32,7 @@ ms.locfileid: "67020459"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? [Regístrese para obtener una evaluación gratuita.- Actualizar](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 
@@ -84,18 +84,18 @@ Propiedad (ID)|Tipo de datos|Descripción
 |DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 |Huella digital|Boolean|Identificador único para el certificado.
 |Ruta de acceso|String|Ubicación del certificado.
-|SignatureAlgorithm|String|Algoritmo hash y algoritmo de cifrado utilizados.
-|KeySize|Cadena|Tamaño de la clave usada en el algoritmo de firma.
+|SignatureAlgorithm|Cadena|Algoritmo hash y algoritmo de cifrado utilizados.
+|KeySize|String|Tamaño de la clave usada en el algoritmo de firma.
 |ExpirationDate|Cadena|Fecha y hora posteriores a la cual el certificado ya no es válido.
-|IssueDate|String|Fecha y hora más tempranas en que el certificado se convirtió en válido.
+|IssueDate|Cadena|Fecha y hora más tempranas en que el certificado se convirtió en válido.
 |SubjectType|Cadena|Indica si el titular del certificado es una entidad de certificación o una entidad final.
 |Número de serie.|Cadena|Identificador único del certificado dentro de los sistemas de una entidad de certificación.
 |IssuedTo|Objeto|Entidad a la que pertenece un certificado; puede ser un dispositivo, un individuo o una organización.
 |IssuedBy|Objeto|Entidad que comprobó la información y firmó el certificado.
 |KeyUsage|Cadena|Los usos criptográficos válidos de la clave pública del certificado.
-|ExtendedKeyUsage|Cadena|Otros usos válidos para el certificado.
+|ExtendedKeyUsage|String|Otros usos válidos para el certificado.
 |RbacGroupId|String|Identificador de grupo de control de acceso basado en rol (RBAC).
-|RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+|RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
 
 ## <a name="16-example"></a>Ejemplo 1.6
 
