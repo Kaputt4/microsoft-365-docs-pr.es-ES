@@ -1,59 +1,71 @@
 ---
-title: Respuesta y mitigación de amenazas en Microsoft Defender para Empresas
-description: A medida que se detectan amenazas en Defender para empresas, puede realizar acciones para responder a esas amenazas. Vea cómo usar la vista de inventario de dispositivos.
+title: Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)
+description: A medida que se detectan amenazas, puede tomar medidas para responder y mitigar esas amenazas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: shlomiakirav
+localization_priority: Normal
+ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9330584979bc6c47204809a0408be7950c0d5612
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e8ff5387d1297743b1cc0c058306a6852f013cb9
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772825"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464942"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Respuesta y mitigación de amenazas en Microsoft Defender para Empresas
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)
 
-El portal de Microsoft 365 Defender permite al equipo de seguridad responder y mitigar las amenazas detectadas. Este artículo le guiará a través de un ejemplo de cómo puede usar Defender para empresas.
+> [!IMPORTANT]
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
+El portal Microsoft 365 Defender permite al equipo de seguridad responder y mitigar las amenazas detectadas. Este artículo le guiará por un ejemplo de cómo puede usar Defender para empresas (versión preliminar).
 
-## <a name="view-detected-threats"></a>Visualización de las amenazas detectadas
+>
+> **¿Tiene un minuto?**
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
+
+## <a name="view-detected-threats"></a>Ver amenazas detectadas
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Observe las tarjetas en la página principal. Las tarjetas le indican de un vistazo cuántas amenazas se detectaron, junto con cuántas cuentas de usuario, puntos de conexión (dispositivos) y otros recursos se vieron afectados. La siguiente imagen es un ejemplo de tarjetas que puede ver:
+2. Tarjetas de aviso en la página principal. Las tarjetas te dicen de un vistazo cuántas amenazas se detectaron, junto con cuántas cuentas de usuario, puntos de conexión (dispositivos) y otros activos se vieron afectados. La siguiente imagen es un ejemplo de tarjetas que puede ver:
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Captura de pantalla de las tarjetas en el portal de Microsoft 365 Defender":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Captura de pantalla de tarjetas en Microsoft 365 Defender portal":::
 
-3. Seleccione un botón o vínculo en la tarjeta para ver más información y tomar medidas. Por ejemplo, nuestra tarjeta **Dispositivos en riesgo** incluye un botón **Ver detalles** . Al seleccionar ese botón, se nos lleva a la página **Inventario** de dispositivos, como se muestra en la siguiente imagen:
+3. Seleccione un botón o un vínculo en la tarjeta para ver más información y tomar medidas. Por ejemplo, nuestra tarjeta **Dispositivos en riesgo** incluye un **botón Ver detalles** . La selección de ese botón nos lleva a la **página Inventario de** dispositivos, como se muestra en la siguiente imagen:
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Pantalla del inventario de dispositivos":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos":::
 
-   En la página **Inventario de** dispositivos se enumeran los dispositivos de la empresa, junto con su nivel de riesgo y nivel de exposición.
+   La **página Inventario de dispositivos** enumera los dispositivos de la organización, junto con su nivel de riesgo y su nivel de exposición.
 
-4. Seleccione un elemento, como un dispositivo. Se abre un panel flotante y muestra más información sobre las alertas e incidentes generados para ese elemento, como se muestra en la siguiente imagen:  
+4. Selecciona un elemento, como un dispositivo. Se abre un panel desplegable y muestra más información sobre las alertas e incidentes generados para ese elemento, como se muestra en la siguiente imagen:  
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="Pantalla del panel flotante de un dispositivo seleccionado":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="Captura de pantalla del panel desplegable de un dispositivo seleccionado":::
 
-5. En el control flotante, vea la información que se muestra. Seleccione los puntos suspensivos (...) para abrir un menú que muestra las acciones disponibles, como se muestra en la siguiente imagen: 
+5. En el menú desplegable, vea la información que se muestra. Seleccione los puntos suspensivos (...) para abrir un menú que enumera las acciones disponibles, como se muestra en la siguiente imagen: 
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Pantalla de acciones disponibles para un dispositivo seleccionado":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Captura de pantalla de las acciones disponibles para un dispositivo seleccionado":::
 
-6. Seleccione una acción disponible. Por ejemplo, puede elegir **Ejecutar examen antivirus**, lo que hará que Antivirus de Microsoft Defender inicie un examen rápido en el dispositivo. O bien, puede seleccionar **Iniciar investigación automatizada** para desencadenar una investigación automatizada en el dispositivo.
+6. Seleccione una acción disponible. Por ejemplo, puedes elegir **Ejecutar examen antivirus**, lo que hará Antivirus de Microsoft Defender iniciar un examen rápido en el dispositivo. O bien, puedes seleccionar **Iniciar investigación automatizada** para desencadenar una investigación automatizada en el dispositivo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-- [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
-- [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)
-- [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)
+- [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
+
+- [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)
+
+- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)

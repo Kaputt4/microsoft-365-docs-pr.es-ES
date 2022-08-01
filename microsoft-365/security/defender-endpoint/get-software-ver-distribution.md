@@ -2,7 +2,8 @@
 title: Enumerar distribución de versión de software
 description: Recupera una lista de la distribución de versiones de software de su organización
 keywords: apis, api de gráficos, api admitidas, get, distribución de versiones de software, Api de Microsoft Defender para Endpoint tvm
-ms.prod: m365-security
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5c2c743981f27cb59250815cefa2ed4a34fda93f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: d9ed4730b54f92a8baafcce6e3f8e46bf9f5fc39
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300495"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165047"
 ---
 # <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -58,7 +59,7 @@ GET /api/Software/{Id}/distributions
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|String|Portador {token}. **Obligatorio**.
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -2,6 +2,7 @@
 title: Enviar o actualizar API de indicadores
 description: Obtenga información sobre cómo usar la API Enviar o Actualizar indicador para enviar o actualizar una nueva entidad Indicator en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, submit, ti, indicator, update
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: b7be84565c45263ef27f1e36da154a70c73956d0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214230"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166103"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -69,26 +70,26 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Necesario**. El parámetro "GenerateAlert" debe establecerse en "TRUE" al crear una acción con "Audit".
-aplicación|String|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
+aplicación|Cadena|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
 title|Cadena|Título de alerta del indicador. **Required**
 description|Cadena|Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador. **Optional**
-severity|Enum|Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
+severity|Enum|Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
-rbacGroupNames|String|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
-generateAlert|Enum|**True** si se requiere la generación de alertas, **False** si este indicador no debe generar una alerta.
+rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
+
 ## <a name="response"></a>Respuesta
 
 - Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar y la entidad [Indicator](ti-indicator.md) creada o actualizada en el cuerpo de la respuesta.

@@ -2,6 +2,7 @@
 title: Obtener resultados de respuesta en directo
 description: Obtenga información sobre cómo recuperar un resultado de comando de respuesta en directo específico por su índice.
 keywords: apis, api de gráficos, api admitidas, carga en biblioteca
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,23 +15,25 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314411"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163907"
 ---
 # <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -56,8 +59,6 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
-  - **Windows 11**
-  
   - **Windows 10**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -66,14 +67,14 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019: solo se aplica a la versión preliminar pública**
-    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) más adelante
-    - Versión 1809 ( [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
+    - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**  
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
@@ -100,11 +101,11 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200, Ok código de respuesta con el objeto que contiene el vínculo al resultado del comando en la *propiedad value* . Este vínculo es válido durante 30 minutos y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Otra llamada puede volver a crear un vínculo expirado y no es necesario volver a ejecutar la respuesta en directo.
+Si se realiza correctamente, este método devuelve 200, Ok código de respuesta con el objeto que contiene el vínculo al resultado del comando en la *propiedad value.* Este vínculo es válido durante 30 minutos y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Otra llamada puede volver a crear un vínculo expirado y no es necesario volver a ejecutar la respuesta en directo.
 
 *Propiedades de transcripción de Runscript:*
 
-|Propiedad|Descripción|
+|Propiedad|Description|
 |---|---|
 |script_name|Nombre de script ejecutado|
 |exit_code|Código de salida de script ejecutado|

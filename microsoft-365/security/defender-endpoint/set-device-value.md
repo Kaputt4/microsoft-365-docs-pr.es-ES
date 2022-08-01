@@ -2,6 +2,7 @@
 title: ESTABLECER API de valor de dispositivo
 description: Obtén información sobre cómo especificar el valor de un dispositivo mediante una API de Microsoft Defender para endpoints.
 keywords: apis, api de gráficos, api admitidas, etiquetas, etiquetas de máquina
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b85e7e9fc96b447c6e2528249e516c45ea3e66d1
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4d95dac6dfc147c1849ebf33ab386ce201faf9e6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301851"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165911"
 ---
 # <a name="set-device-value-api"></a>ESTABLECER API de valor de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -74,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

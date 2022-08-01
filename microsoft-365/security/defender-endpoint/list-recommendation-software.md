@@ -2,7 +2,8 @@
 title: Enumerar software por recomendación
 description: Recupera una recomendación de seguridad relacionada con un software específico.
 keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad para software, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
-ms.prod: m365-security
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d5ca404554d667ae9c36533fc1ad9cb866caff7
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 67ac6f1bb77df74c3c44cac57624c14e20625e7e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302403"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166259"
 ---
 # <a name="list-software-by-recommendation"></a>Enumerar software por recomendación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -59,7 +60,7 @@ GET /api/recommendations/{id}/software
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

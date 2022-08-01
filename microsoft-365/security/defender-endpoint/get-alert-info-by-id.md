@@ -2,6 +2,7 @@
 title: Obtener información de alerta por API de id.
 description: Obtenga información sobre cómo usar la API Obtener información de alerta por ID para recuperar una alerta específica por su identificador en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, get, alert, information, id
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 09866afa2b965f8587114d49f92d8068c535a0c7
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 76d7032b278a848fa74d149293c9a3d5d70dcc6f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283934"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168239"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtener información de alerta por API de id.
 
@@ -28,8 +29,8 @@ ms.locfileid: "61283934"
 
 
 **Se aplica a:** 
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

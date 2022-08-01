@@ -2,6 +2,8 @@
 title: Solucionar problemas de integración de herramientas SIEM en Microsoft Defender para endpoint
 description: Solucionar problemas que pueden surgir al usar herramientas SIEM con Microsoft Defender para endpoint.
 keywords: troubleshoot, siem, client secret, secret
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b6ed0342183734d9b4feb1c20a6c4059b77e64d6
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 59db066644a549cf52252602f494dd1267e216f9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213996"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165575"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
@@ -27,8 +29,8 @@ ms.locfileid: "62213996"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -83,5 +85,8 @@ Si se produce un error al intentar habilitar la aplicación de conector SIEM, co
 
 ## <a name="related-topics"></a>Temas relacionados
 
+- [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
+- [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer detecciones a las herramientas SIEM](configure-siem.md)
-
+- [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)
+- [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md)

@@ -2,6 +2,7 @@
 title: Restringir api de ejecución de aplicaciones
 description: Use esta API para crear llamadas relacionadas con la restricción de la ejecución de una aplicación.
 keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dee5ad9466793892d09af2f85faa9f3fd2348ca6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: ebf6680afdac98b0d001e46304fb626393c166aa
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302343"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164363"
 ---
 # <a name="restrict-app-execution-api"></a>Restringir api de ejecución de aplicaciones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -51,7 +52,7 @@ Restringir la ejecución de todas las aplicaciones en el dispositivo excepto un 
 
 > [!IMPORTANT]
 >
-> - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior y en Windows 11.
+> - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
 > - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender control de aplicaciones. Para obtener más información, vea [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
@@ -81,7 +82,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

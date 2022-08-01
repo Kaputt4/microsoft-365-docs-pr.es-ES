@@ -2,6 +2,7 @@
 title: Obtener API de máquinas relacionadas con el dominio
 description: Obtenga información sobre cómo usar la API Obtener máquinas relacionadas con el dominio para obtener máquinas que se comunican con o desde un dominio en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, get, domain, related, devices
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 179b3bf9ecd1ff7f7045f386d740eff4e83a12c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c36094dcbd8367f54d07b9d672fc46b1d617592b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373097"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168131"
 ---
 # <a name="get-domain-related-machines-api"></a>Obtener API de máquinas relacionadas con el dominio
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -60,8 +61,8 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir inf
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md)
-> - La respuesta incluirá solo los dispositivos a los que el usuario puede tener acceso, en función de la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md)
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md))
+> - La respuesta incluirá solo los dispositivos a los que el usuario puede tener acceso, en función de la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -73,7 +74,7 @@ GET /api/domains/{domain}/machines
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

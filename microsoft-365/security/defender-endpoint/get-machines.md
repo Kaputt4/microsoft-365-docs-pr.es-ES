@@ -2,7 +2,8 @@
 title: ENUMERAR API de máquinas
 description: Obtenga información sobre cómo usar la API enumerar máquinas para recuperar una colección de máquinas que se han comunicado con Microsoft Defender para la nube de puntos de conexión.
 keywords: api, api de gráfico, api admitidas, get, dispositivos
-ms.prod: m365-security
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,20 +16,20 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e522f2baac234097ed75d26eb1427719211a7de
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1f52bae335a50a901b4a9e8fca2f758434aa37b1
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284654"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163655"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -112,7 +113,7 @@ Content-type: application/json
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "version": "1709",
             "osProcessor": "x64",
             "lastIpAddress": "172.17.230.209",

@@ -1,7 +1,7 @@
 ---
 title: Evaluar protección de red
-description: Vea cómo funciona la protección de red mediante la prueba de escenarios comunes contra los que protege.
-keywords: Protección de red, vulnerabilidades de seguridad, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
+description: Vea cómo funciona la protección de red probando escenarios comunes contra los que protege.
+keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,58 +13,59 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection:
-- M365-security-compliance
-ms.date: ''
-ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 857f723012e88b03728de2b7d99f7c3bf852757b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717854"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163955"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[La protección de red](network-protection.md) ayuda a evitar que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet.
+[La protección de](network-protection.md) red ayuda a evitar que los empleados utilicen cualquier aplicación para tener acceso a dominios peligrosos que pueden hospedar estafas de suplantación de identidad(phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet.
 
-Este artículo le ayuda a evaluar la protección de red habilitando la característica y guiándole a un sitio de prueba. Los sitios de este artículo de evaluación no son malintencionados. Son sitios web especialmente creados que fingen ser malintencionados. El sitio replicará el comportamiento que se produciría si un usuario visitara un sitio o dominio malintencionados.
+Este artículo le ayuda a evaluar la protección de red habilitando la característica y guiándolo a un sitio de prueba. Los sitios de este artículo de evaluación no son malintencionados. Son sitios web especialmente creados que pretenden ser malintencionados. El sitio replicará el comportamiento que se produciría si un usuario visitase un sitio o dominio malintencionado.
 
-## <a name="enable-network-protection-in-audit-mode"></a>Habilitación de la protección de red en modo de auditoría
+> [!TIP]
+> También puede visitar el sitio web escenarios de demostración de Microsoft Defender [en demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
 
-Habilite la protección de red en modo de auditoría para ver qué direcciones IP y dominios se habrían bloqueado. Puede asegurarse de que no afecte a las aplicaciones de línea de negocio o hacerse una idea de la frecuencia con la que se producen los bloques.
+## <a name="enable-network-protection-in-audit-mode"></a>Habilitar la protección de red en modo auditoría
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón derecho en **Windows PowerShell** y seleccione **Ejecutar como administrador**.
+Habilite la protección de red en modo auditoría para ver qué direcciones IP y dominios se habrían bloqueado. Puedes asegurarte de que no afecta a las aplicaciones de línea de negocio u obtener una idea de la frecuencia con la que se producen los bloqueos.
+
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-### <a name="visit-a-fake-malicious-domain"></a>Visita de un dominio malintencionado (falso)
+### <a name="visit-a-fake-malicious-domain"></a>Visitar un dominio malintencionado (falso)
 
-1. Abra Internet Explorer, Google Chrome o cualquier otro navegador que prefiera.
+1. Abre Internet Explorer, Google Chrome o cualquier otro explorador de tu elección.
 
 2. Vaya a [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
     Se permitirá la conexión de red y se mostrará un mensaje de prueba.
     
-    :::image type="content" source="images/np-notif.png" alt-text="Notificación de bloqueo de conexión" lightbox="images/np-notif.png":::
+    ![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
 
 > [!NOTE]
-> Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para más información, consulte [Protección de red y protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
+> Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, vea [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revise los eventos de protección de red en Windows Visor de eventos
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
-Para revisar las aplicaciones que se habrían bloqueado, abra Visor de eventos y filtre por el identificador de evento 1125 en el registro Microsoft-Windows-Windows Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
+Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows-Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
-| Id. de evento | Proporcionar o origen | Descripción |
+| Id. de evento | Provide/Source | Description |
 |---|---|---|
 | 5007 | Windows Defender (operativo) | Evento cuando se cambia la configuración |
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
@@ -74,8 +75,8 @@ Para revisar las aplicaciones que se habrían bloqueado, abra Visor de eventos y
 
 - [Protección de red](network-protection.md)
 
-- [Protección de red y protocolo de enlace de tres vías TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protección de red y el protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
-- [Habilitación de la protección de red](enable-network-protection.md)
+- [Habilitar la protección de red](enable-network-protection.md)
 
-- [Solución de problemas de protección de red](troubleshoot-np.md)
+- [Solucionar problemas de protección de red](troubleshoot-np.md)

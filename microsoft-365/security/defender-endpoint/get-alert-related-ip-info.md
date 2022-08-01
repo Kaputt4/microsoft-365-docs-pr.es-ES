@@ -2,6 +2,7 @@
 title: Obtener información de ip relacionadas con alertas
 description: Recupera todas las IP relacionadas con una alerta específica mediante Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api compatibles, obtener información de alerta, información de alertas, ip relacionada
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2268658223ff0bce0e879e23ea4a5c1ce843aaf
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 00761e07dd0018236e58aaa5a36efec0cc16ebd5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371201"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168215"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Obtener la API de información de ip relacionadas con alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -59,8 +60,8 @@ Delegado (cuenta profesional o educativa)|Ip.Read.All|'Leer perfiles de direcci�
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md)
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md))
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
 
 ## <a name="http-request"></a>Solicitud HTTP
 

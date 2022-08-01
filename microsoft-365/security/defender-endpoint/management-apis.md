@@ -3,6 +3,8 @@ title: Introducción a la administración y las API
 ms.reviewer: ''
 description: Obtenga información sobre las herramientas de administración y las categorías de API en Microsoft Defender para endpoint
 keywords: incorporación, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +18,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6cb2045161133fb35e95fab3e7dfd469ea649545
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469787"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164963"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
@@ -55,7 +57,7 @@ La solución de Microsoft Defender para endpoint se basa en una plataforma lista
 
 Defender for Endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Defender para endpoints.
 
-:::image type="content" source="images/mdatp-apis.png" alt-text="Api e integración disponibles en Microsoft Defender para endpoint" lightbox="images/mdatp-apis.png":::
+![Imagen de la API e integración disponibles en Microsoft Defender para endpoint.](images/mdatp-apis.png)
 
 Las API de Defender for Endpoint se pueden agrupar en tres:
 
@@ -71,7 +73,7 @@ Vea este vídeo para obtener una introducción rápida a las API de Defender par
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [SUPPORTED API](exposed-apis-list.md).
+La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [Supported API](exposed-apis-list.md).
 
 La **API** de respuesta expone la capacidad de realizar acciones en el servicio y en los dispositivos, lo que permite a los clientes ingerir indicadores, administrar la configuración, el estado de alerta, así como realizar acciones de respuesta en dispositivos mediante programación, como aislar dispositivos de la red, archivos de cuarentena y otros.
 
@@ -81,14 +83,14 @@ La API de streaming de datos sin procesar de Defender for Endpoint ofrece a los 
 
 La información del evento Defender for Endpoint se inserta directamente en Azure Storage para la retención de datos a largo plazo, o en Azure Event Hubs para su consumo por parte de servicios de visualización o motores de procesamiento de datos adicionales.
 
-Para obtener más información, vea [RAW data streaming API](raw-data-export.md).
+Para obtener más información, vea [Raw data streaming API](raw-data-export.md).
 
 La nueva API Microsoft 365 Defender streaming incluye eventos de alerta y correo electrónico, además de eventos de dispositivo.
 Para obtener más información, [vea Microsoft 365 Defender API de streaming](../defender/streaming-api.md).
 
 ## <a name="siem-api"></a>SIEM API
 
-Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones de Microsoft 365 Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el espacio empresarial Azure Active Directory (Azure AD). 
+Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones de Centro de seguridad de Microsoft Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el espacio empresarial Azure Active Directory (Azure AD). Para obtener más información, vea [Integración siem](enable-siem-integration.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

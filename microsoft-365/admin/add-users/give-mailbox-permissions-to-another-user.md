@@ -17,29 +17,24 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-- admindeeplinkEXCHANGE
-- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: Dé a un usuario de Microsoft 365 el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Dé a un usuario el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
+ms.openlocfilehash: fe40e8d79f2ff677989f0dc3f8aacbebea1a41fa
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042382"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165527"
 ---
-# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Conceder permisos de buzón a otro usuario de Microsoft 365: Ayuda para administradores
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
 Como administrador, puede que la empresa le requiera que permita que algunos usuarios puedan acceder al buzón de otro usuario. Por ejemplo, puede que quiera habilitar que un asistente envíe o lea el correo electrónico del buzón de su jefe o bien que uno de los usuarios pueda enviar correo electrónico en nombre de otro. En este tema se muestra cómo hacerlo.
   
 Si está buscando información sobre cómo crear y administrar buzones compartidos, consulte [Crear un buzón compartido](../email/create-a-shared-mailbox.md).
-
-> [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>¿Desea configurar los permisos de buzón?
 
@@ -84,6 +79,20 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
  
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
+
+2. Seleccione el usuario que desee, expanda **Configuración de correo** y seleccione **Editar** junto a **Permisos del buzón**.
+
+3. Junto a **Enviar como**, seleccione **Editar**. 
+
+4. Seleccione **Agregar permisos** y elija el nombre de la persona en cuyo nombre desea que este usuario pueda enviar mensajes. 
+    
+5. Seleccione **Agregar**.
+
+::: moniker-end
+
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
@@ -116,7 +125,21 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 
 > [!NOTE]
-> Los permisos de **Lectura** y **Administración** se llaman **Acceso completo** cuando se otorgan en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Este permiso permite al buzón del usuario asignado leer y administrar correos electrónicos en el buzón del usuario al que se asigna el permiso. El permiso de acceso total no concede los permisos de **Enviar como** o **Enviar en nombre de**.
+> Los permisos de **Lectura** y **Administración** se llaman de **Acceso completo** cuando se otorgan en el Centro de administración de Exchange. El permiso de Acceso completo no concede permisos de **Enviar como** ni **Enviar en nombre de**.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
+  
+2. Seleccione el usuario que desee, expanda **Configuración de correo** y seleccione **Editar** junto a **Permisos del buzón**.
+    
+3. Junto a **Leer y administrar**, seleccione **Editar**. 
+    
+4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir leer el correo electrónico de este buzón.
+
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -153,6 +176,20 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
+
+2. Seleccione el usuario que desee, expanda **Configuración de correo** y seleccione **Editar** junto a **Permisos del buzón**.
+
+3. Junto a **Enviar en nombre de**, seleccione **Editar**.
+    
+4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir enviar el correo electrónico en nombre de este buzón.
+
+5. Seleccione **Agregar**.
+
+::: moniker-end
+
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
@@ -167,8 +204,6 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 ::: moniker-end
 
-> [!NOTE]
-> Los permisos **Enviar como** y **Enviar en nombre de** no funcionan en el cliente de escritorio de Outlook con el parámetro *HiddenFromAddressListsEnabled* en el buzón establecido en **True**, ya que requieren que el buzón esté visible en Outlook a través de la lista global de direcciones.
 
 ## <a name="related-content"></a>Contenido relacionado
   

@@ -15,22 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8cd930fcc74994abe91f4c13255f97bc21159202
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cc7af267b7512f3eeefcacaf0ca3a228e9749591
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765665"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164351"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,9 +41,9 @@ El servicio Defender for Endpoint se actualiza constantemente para incluir nueva
 Obtén información sobre las nuevas características en la versión preliminar de Defender para endpoint y sé uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
 
 > [!TIP]
-> Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, consulta [Novedades de Defender para endpoint](whats-new-in-microsoft-defender-endpoint.md).
+Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
 
 ## <a name="what-you-need-to-know"></a>Aspectos que debe saber
 
@@ -61,9 +62,9 @@ Tendrás acceso a las próximas características sobre las que puedes proporcion
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, seleccione **Configuración** \> **Características avanzadas de endpoints** \> **Características preliminares**\>.
+1. En el panel de navegación, seleccione **Configuración** \> **Endpoints** \> **Advanced features** Preview \> **features**.
 
-2. Alterna la configuración entre **Activar** y **Desactivar y** selecciona **Guardar preferencias**.
+2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

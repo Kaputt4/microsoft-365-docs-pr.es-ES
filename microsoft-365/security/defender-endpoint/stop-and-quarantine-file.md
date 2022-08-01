@@ -2,6 +2,7 @@
 title: API de archivos de detenerse y poner en cuarentena
 description: Obtén información sobre cómo dejar de ejecutar un archivo en un dispositivo y eliminar el archivo en Microsoft Defender para endpoint. Vea un ejemplo.
 keywords: api, api de gráfico, api admitidas, archivo de detenerse y poner en cuarentena
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f61e238030c5c8c31e514ef76cf90ffc4b5bd92
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: bcaf08f73316c5c0482bb611427f5a8f19127c02
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300951"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165839"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +50,7 @@ Detenga la ejecución de un archivo en un dispositivo y elimínelo.
 > [!IMPORTANT]
 > Solo puede realizar esta acción si:
 >
-> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior, o Windows 11
+> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
 > - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
@@ -81,8 +82,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:

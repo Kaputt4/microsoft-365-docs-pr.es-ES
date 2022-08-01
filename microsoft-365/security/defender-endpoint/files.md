@@ -2,6 +2,7 @@
 title: Tipo de recurso File
 description: Recupera alertas recientes de Microsoft Defender para puntos de conexión relacionadas con archivos.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283490"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167807"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -28,8 +29,8 @@ ms.locfileid: "61283490"
 
 
 **Se aplica a:** 
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -39,9 +40,9 @@ ms.locfileid: "61283490"
 
 Representa una entidad de archivo en Defender para endpoint.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-Método|Tipo de valor devuelto |Descripción
+Método|Tipo de valor devuelto |Description
 :---|:---|:---
 [Obtener archivo](get-file-information.md) | [file](files.md) | Obtener un solo archivo 
 [Enumerar alertas relacionadas con archivos](get-file-related-alerts.md) | Colección [alert](alerts.md) | Obtener las [entidades](alerts.md) de alerta asociadas al archivo.
@@ -51,24 +52,24 @@ Método|Tipo de valor devuelto |Descripción
 
 ## <a name="properties"></a>Propiedades
 
-|Propiedad | Tipo | Descripción |
+|Propiedad | Tipo | Description |
 |:---|:---|:---|
-|sha1 | String | Hash Sha1 del contenido del archivo |
-|sha256 | String | Hash Sha256 del contenido del archivo |
+|sha1 | Cadena | Hash Sha1 del contenido del archivo |
+|sha256 | Cadena | Hash Sha256 del contenido del archivo |
 |globalPrevalence | Long que admite valores NULL | Prevalencia de archivos en toda la organización |
 |globalFirstObserved | DateTimeOffset | Primera vez que se observó el archivo |
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
-|fileType | String | Tipo del archivo |
-|isPeFile | Booleano | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
-|filePublisher | String | Editor de archivos |
-|fileProductName | String | Nombre del producto |
+|fileType | Cadena | Tipo del archivo |
+|isPeFile | Boolean | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
+|filePublisher | Cadena | Editor de archivos |
+|fileProductName | Cadena | Nombre del producto |
 |firmante | Cadena | Firmante de archivos |
-|emisor | String | Emisor de archivos |
-|signerHash | String | Hash del certificado de firma |
-|isValidCertificate | Booleano | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
+|emisor | Cadena | Emisor de archivos |
+|signerHash | Cadena | Hash del certificado de firma |
+|isValidCertificate | Boolean | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
 |determinationType | Cadena | El tipo de determinación del archivo |
-|determinationValue | String | Valor de determinación |
+|determinationValue | Cadena | Valor de determinación |
 
 ## <a name="json-representation"></a>Representación json
 

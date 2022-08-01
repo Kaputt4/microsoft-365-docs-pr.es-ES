@@ -2,6 +2,7 @@
 title: Agregar o quitar API de etiquetas de máquina
 description: Obtenga información sobre cómo usar la API Agregar o quitar etiquetas de máquina para agregar o quitar una etiqueta para una máquina en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, etiquetas, etiquetas de máquina
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ec34011d00e77c5e32f58567a0b705cf7c0dc1c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 355b3360fd4a36e762cd834c3460b7884fe37f87
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301130"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166559"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Agregar o quitar API de etiquetas de máquina
 
@@ -72,8 +73,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

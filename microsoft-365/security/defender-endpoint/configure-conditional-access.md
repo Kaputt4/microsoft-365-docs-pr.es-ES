@@ -2,6 +2,8 @@
 title: Configurar el acceso condicional en Microsoft Defender para el extremo
 description: Obtenga información sobre los pasos que debe realizar en Intune, Microsoft 365 Defender y Azure para implementar el acceso condicional
 keywords: acceso condicional, condicional, acceso, riesgo de dispositivo, nivel de riesgo, integración, integración de Intune
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8706f756b4e8d0ba87a747396e8f7ef71d66460c
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0c0ae3d155024a6c0cb9efb541218689f8970a12
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284378"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164591"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurar el acceso condicional en Microsoft Defender para el extremo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -43,7 +45,7 @@ En esta sección se le guían todos los pasos que debe seguir para implementar c
 Debes asegurarte de que todos los dispositivos estén inscritos en Intune. Puede usar cualquiera de las siguientes opciones para inscribir dispositivos en Intune:
 
 - Administrador de TI: para obtener más información sobre cómo habilitar la inscripción automática, [vea Windows Enrollment](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- Usuario final: para obtener más información sobre cómo inscribir el dispositivo Windows 10 y Windows 11 en Intune, consulte Inscribir el dispositivo Windows 10 en [Intune](/intune/quickstart-enroll-windows-device)
+- Usuario final: para obtener más información sobre cómo inscribir el dispositivo Windows 10 en Intune, consulte Inscribir el [dispositivo Windows 10 en Intune](/intune/quickstart-enroll-windows-device)
 - Alternativa de usuario final: para obtener más información sobre cómo unirse a un dominio Azure AD, vea [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan).
 
 Hay pasos que deberá seguir en Microsoft 365 Defender, el portal de Intune y Azure AD portal.
@@ -55,7 +57,7 @@ Es importante tener en cuenta los roles necesarios para tener acceso a estos por
 - **Azure AD:** deberá iniciar sesión como administrador global, administrador de seguridad o administrador de acceso condicional.
 
 > [!NOTE]
-> Necesitarás un entorno Microsoft Intune, con Intune administrado y Azure AD unidos Windows 10 y Windows 11 dispositivos.
+> Necesitarás un entorno Microsoft Intune, con Intune administrado y Azure AD dispositivos Windows 10 unidos.
 
 Siga estos pasos para habilitar el acceso condicional:
 
