@@ -349,7 +349,11 @@
         - name: Colaborar con expertos de Microsoft Defender para la búsqueda
           items:
             - name: Información general
-              href: defenderexpertsforhuntingprev.md
+              href: defender-experts-for-hunting.md
+            - name: Antes de empezar
+              href: before-you-begin-defender-experts.md
+            - name: Empezar a usar expertos de Defender para la búsqueda
+              href: onboarding-defender-experts-for-hunting.md
             - name: Descripción de los informes de expertos de Defender para la búsqueda
               href: defender-experts-report.md
         - name: Cuaderno de estrategias de ransomware

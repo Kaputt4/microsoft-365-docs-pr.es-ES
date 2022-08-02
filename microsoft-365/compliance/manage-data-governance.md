@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implemente funcionalidades de Administración del ciclo de vida de los datos de Microsoft Purview y Administración de registros de Microsoft Purview para controlar los datos según los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 7578aad4bdbb44bf0937a58343fc05462449688f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5b23a81fcf19a985665b536f418c5a5de1d88cb6
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635993"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106172"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Controlar los datos con Microsoft Purview
 
@@ -74,8 +74,4 @@ Administre los elementos de gran valor para los requisitos de mantenimiento de r
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Para comprender los requisitos y opciones de licencia, consulte las siguientes secciones de la [documentación de licencias de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [Administración del ciclo de vida de datos de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-Los requisitos de licencias adicionales se incluirán en las instrucciones de documentación. Por ejemplo, las licencias específicas para administrar los buzones pueden requerir licencias de Exchange Online.
+Para saber cuáles son los requisitos y opciones de licencia, consulte la información de la guía de Microsoft 365 de seguridad y cumplimiento, en la sección [Administración del ciclo de vida de datos de Microsoft Purview y Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management), para conocer los requisitos de licencia de nivel de característica.
