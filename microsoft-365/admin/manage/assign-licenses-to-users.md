@@ -15,8 +15,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- VSBFY23
 - commerce_licensing
+- VSBFY23
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
@@ -27,12 +27,12 @@ ms.custom:
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 07/12/2022
-ms.openlocfilehash: e18cbae154a85f29194cd3d6c4e4f00d298a7d76
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c004364050c434666f1d0b2d872bddc9040dc1a7
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084771"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112381"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Asignar licencias de Microsoft 365 a usuarios
 

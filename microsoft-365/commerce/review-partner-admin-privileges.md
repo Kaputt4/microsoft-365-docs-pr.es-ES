@@ -15,15 +15,16 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- empty
 search.appverid: MET150
 description: Obtenga información sobre cómo revisar la lista de proveedores de soluciones certificados por Microsoft (asociados) para determinar qué privilegios de administrador tienen y cómo quitar esos privilegios.
 ms.date: 12/03/2021
-ms.openlocfilehash: eefbe2c8b70afee9c1e24e4335a73488906bf844
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0d4bac0ed9e0657700e5ac28e8ad9b3304eee979
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490705"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111941"
 ---
 # <a name="review-microsoft-certified-cloud-solution-provider-partner-administrative-privileges"></a>Revisión de los privilegios administrativos de asociados del proveedor de soluciones en la nube certificados por Microsoft
 

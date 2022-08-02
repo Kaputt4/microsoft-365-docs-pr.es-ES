@@ -10,7 +10,7 @@ ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid: MET150
 ROBOTS: noindex, nofollow
 description: Obtenga información sobre cómo comprar una suscripción con un plan de llamadas y habilitar el uso excesivo para llamadas de Microsoft Teams.
 ms.date: 07/15/2022
-ms.openlocfilehash: 18bea8cd0e7ea1306f6305e2e81b97cc229787ac
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ba0dd763d106a3f9147fae8ce22fbcd5d2f63017
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998840"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112007"
 ---
 # <a name="enable-pay-as-you-go-for-your-subscription"></a>Habilitación del pago por uso para la suscripción
 

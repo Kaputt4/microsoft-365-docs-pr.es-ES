@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Cree directivas de alerta en el portal de cumplimiento Microsoft Purview o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942087"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111787"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -169,7 +169,7 @@ La tabla también indica el Office 365 Enterprise y Office 365 plan del Gobierno
 |**Volumen inusual de eliminación de archivos**|Genera una alerta cuando se elimina un número inusualmente grande de archivos en SharePoint o OneDrive en un breve período de tiempo. Esta directiva tiene una configuración de gravedad **media** .|Administración del ciclo de vida de los datos|No|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
 |**Aumento inusual en el correo electrónico notificado como cebo**|Genera una alerta cuando hay un aumento significativo en el número de personas de su organización mediante el complemento Mensaje de informe en Outlook para informar de mensajes como correo de suplantación de identidad. Esta directiva tiene una configuración de gravedad **media** . Para obtener más información sobre este complemento, vea [Usar el complemento de mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) de informe.|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Phish de suplantación de usuario entregado a la bandeja de entrada/carpeta**<sup>1,2</sup><sup></sup>|Genera una alerta cuando Microsoft detecta que un administrador o una invalidación de usuario ha permitido la entrega de un mensaje de suplantación de identidad de usuario a la bandeja de entrada (u otra carpeta accesible por el usuario) de un buzón. Algunos ejemplos de invalidaciones son una regla de flujo de correo o bandeja de entrada que permite mensajes de un remitente o dominio específico, o una directiva antispam que permite mensajes de remitentes o dominios específicos. Esta directiva tiene una configuración de gravedad **media** .|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
-|**Usuario solicitado para liberar un mensaje en cuarentena**|Genera una alerta cuando un usuario solicita la liberación de un mensaje en cuarentena. Para solicitar la liberación de mensajes en cuarentena, se requiere el permiso **Permitir a los destinatarios solicitar que un mensaje se libere de la cuarentena** (_PermissionToRequestRelease_) en la directiva de cuarentena (por ejemplo, desde el grupo permisos preestablecidos **de acceso limitado** ). Para obtener más información, vea [Permitir que los destinatarios soliciten que se libere un mensaje del permiso de cuarentena](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Usuario solicitado para liberar un mensaje en cuarentena**|Genera una alerta cuando un usuario solicita la liberación de un mensaje en cuarentena. Para solicitar la liberación de mensajes en cuarentena, se requiere el permiso **Permitir a los destinatarios solicitar que un mensaje se libere de la cuarentena** (_PermissionToRequestRelease_) en la directiva de cuarentena (por ejemplo, desde el grupo permisos preestablecidos **de acceso limitado** ). Para obtener más información, vea [Permitir que los destinatarios soliciten que se libere un mensaje del permiso de cuarentena](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas|No| Microsoft Business Basic, Microsoft Business Standard, Microsoft Business Premium, E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Usuario restringido al envío de correo electrónico**|Genera una alerta cuando a alguien de su organización se le restringe el envío de correo saliente. Esto suele producirse cuando una cuenta está en peligro y el usuario aparece en la página **Usuarios restringidos** del portal de cumplimiento. (Para acceder a esta página, vaya a **Administración de amenazas > Revisar > Usuarios restringidos**). Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información sobre los usuarios restringidos, consulte [Eliminación de un usuario, dominio o dirección IP de una lista de bloqueos después de enviar correo electrónico no deseado](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Administración de amenazas|Sí|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**El usuario no puede compartir formularios ni recopilar respuestas**|Genera una alerta cuando a alguien de su organización se le ha restringido el uso compartido de formularios y la recopilación de respuestas mediante Microsoft Forms debido al comportamiento de intento de suplantación de identidad repetido detectado. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|No|E1, E3/F3 o E5|
 
@@ -260,7 +260,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver las alertas de l
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla en [Directivas de alertas predeterminadas](#default-alert-policies).
 
-|Role|Administración del ciclo de vida de los datos|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
+|Rol|Administración del ciclo de vida de los datos|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||

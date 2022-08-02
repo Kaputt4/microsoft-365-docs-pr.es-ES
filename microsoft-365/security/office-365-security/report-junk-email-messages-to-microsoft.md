@@ -17,12 +17,12 @@ ms.collection:
 description: Cómo notificar un correo electrónico o un archivo sospechosos a Microsoft? Informe de mensajes, direcciones URL, datos adjuntos de correo electrónico y archivos a Microsoft para su análisis. Aprenda a notificar correos electrónicos no deseados y correos electrónicos de suplantación de identidad (phishing).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: e57460766864ba27cec95e584d28a22c8b2c0229
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717788"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112491"
 ---
 # <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>Cómo notificar un correo electrónico o un archivo sospechosos a Microsoft?
 
@@ -48,7 +48,7 @@ Vea este vídeo que muestra más información sobre la experiencia de envíos un
 |[Habilitar los complementos Informar de mensajes o Informar de phishing](enable-the-report-message-add-in.md)|Funciona con Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App). <br/><br/> En función de la suscripción, los mensajes que los usuarios notificaron con los complementos están disponibles en [el portal de envíos de Administración](admin-submission.md), [los resultados de investigación y respuesta automatizadas (AIR](air-view-investigation-results.md)), el [informe de mensajes notificados](view-email-security-reports.md#user-reported-messages-report) por el usuario y [el Explorador](threat-explorer-views.md#email--submissions). <br/><br/> Puede configurar los mensajes notificados para copiarlos o redirigirlos a un buzón que especifique. Para obtener más información, consulte [Directivas de envío de usuarios](user-submission.md).
 |[Informar de falsos positivos y falsos negativos en Outlook](report-false-positives-and-false-negatives.md)|Envíe falsos positivos (correo electrónico correcto que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phishing que se entregó en la bandeja de entrada) a Exchange Online Protection (EOP) mediante la característica Notificar mensaje.|
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifique cuando los usuarios informen de mensajes a Microsoft para su análisis.|
-|[Envío de archivos sospechosos a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el sitio de Inteligencia de seguridad de Microsoft para enviar datos adjuntos y otros archivos.|
+|[Enviar archivos para su análisis](../intelligence/submission-guide.md)|Envíe datos adjuntos de correo electrónico y otros archivos sospechosos a Microsoft para su análisis.|
 
 > [!NOTE]
 > Al informar de una entidad de correo electrónico a Microsoft, hacemos una copia de todo lo asociado al correo electrónico para incluirla en nuestras revisiones continuas del algoritmo. Esta copia incluye el contenido del correo electrónico, los encabezados de correo electrónico y los datos relacionados sobre el enrutamiento de correo electrónico. También se incluyen los datos adjuntos del mensaje.

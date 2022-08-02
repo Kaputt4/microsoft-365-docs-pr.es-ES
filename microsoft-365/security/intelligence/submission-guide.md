@@ -15,24 +15,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: df2ab2b2019bb76af49f00d2751cdc76848705d1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663608"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112051"
 ---
 # <a name="submit-files-for-analysis"></a>Enviar archivos para su análisis
 
 Si tiene un archivo que sospecha que puede ser malware o se está detectando incorrectamente, puede enviarlo a nosotros para su análisis. Esta página tiene respuestas a algunas preguntas comunes sobre el envío de un archivo para su análisis.
 
-## <a name="how-do-i-send-a-malware-file-to-microsoft"></a>Cómo enviar un archivo de malware a Microsoft?
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Cómo enviar un archivo a Microsoft para su análisis?
 
-Puede enviarnos archivos que cree que pueden ser malware o archivos que se han detectado incorrectamente a través del [portal de envío de ejemplo](https://www.microsoft.com/wdsi/filesubmission).
+### <a name="send-a-malware-file"></a>Envío de un archivo de malware
 
-Recibimos un gran número de muestras de muchos orígenes. Nuestro análisis se prioriza por el número de detecciones de archivos y el tipo de envío. Puede ayudarnos a completar un análisis rápido proporcionando información detallada sobre el producto que estaba usando y lo que estaba haciendo cuando encontró el archivo.
+Puede enviar archivos que cree que podrían ser malware o archivos que se han detectado incorrectamente a través del [portal de envío de ejemplo](https://www.microsoft.com/wdsi/filesubmission).
+
+Puede completar un análisis rápido proporcionando información detallada sobre el producto que estaba usando y lo que estaba haciendo cuando encontró el archivo.
 
 Después de iniciar sesión, podrá realizar un seguimiento de los envíos.
+
+> [!NOTE]
+>
+> Puede usar la característica de envío WDSI incluso si no tiene Microsoft Defender para punto de conexión Plan 2 o Microsoft Defender para Office Plan 2.
+
+### <a name="submit-a-suspected-email-attachment"></a>Envío de datos adjuntos de correo electrónico sospechosos
+
+Use el [portal de Microsoft 365 Defender](https://security.microsoft.com/) para enviar datos adjuntos de correo electrónico sospechosos a Microsoft para su revisión. Para obtener más información, consulte [Envío de datos adjuntos de correo electrónico sospechosos a Microsoft](../office-365-security/admin-submission.md).
+
+### <a name="submit-a-file-or-file-hash"></a>Envío de un archivo o hash de archivo
+
+Use la característica de envíos unificados en Microsoft Defender para punto de conexión para enviar archivos y hash de archivos a Microsoft para su revisión. Para obtener más información, consulte [Envío de archivos en Microsoft Defender para punto de conexión](../defender-endpoint/admin-submissions-mde.md).
 
 ## <a name="can-i-send-a-sample-by-email"></a>¿Puedo enviar un ejemplo por correo electrónico?
 
