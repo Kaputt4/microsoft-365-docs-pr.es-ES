@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que administran el ciclo de vida de los datos de la organización.
-ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942392"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105997"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Introducción a la administración del ciclo de vida de los datos
 
@@ -57,7 +57,7 @@ ms.locfileid: "66942392"
 
 Varias suscripciones diferentes admiten funcionalidades de administración del ciclo de vida de los datos.
 
-Si desea ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para ver las características enumeradas en esta página, consulte la sección [Administración del ciclo de vida de los datos de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) y descargue el [PDF](https://go.microsoft.com/fwlink/?linkid=2139145) relacionado para conocer los requisitos de licencias de las características.
+Si desea ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para conocer las características que se enumeran en esta página, consulte la sección [Administración del ciclo de vida de los datos de Microsoft Purview > Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) para conocer los requisitos de licencia de nivel de característica.
 
 ## <a name="permissions"></a>Permisos
 
