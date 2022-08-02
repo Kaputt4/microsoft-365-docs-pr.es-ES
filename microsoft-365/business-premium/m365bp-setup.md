@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917988"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112469"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -52,13 +51,13 @@ Microsoft 365 Empresa Premium incluye un proceso guiado para la configuración b
 
 > [!TIP]
 > - Una vez que haya agregado usuarios, asígneles un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md). La guía le guía a través del inicio de sesión, la obtención de aplicaciones de Office y el almacenamiento, la copia y el uso compartido de archivos.
-> - Continúe con [Incrementar seguridad](m365bp-security-overview.md).
+> - Asegúrese de continuar con [Aumentar la seguridad](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
 
 Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microsoft 365, siga estos pasos:
 
-1. Vaya a [Buscar partners](https://appsource.microsoft.com/marketplace/partner-dir).
+1. Vaya a la página [Buscar partners](https://appsource.microsoft.com/marketplace/partner-dir).
 
 2. En el panel **Filtros**, especifique criterios de búsqueda, como:
 
@@ -79,4 +78,4 @@ Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microso
 
 ### <a name="next-objective"></a>Siguiente objetivo
 
-Una vez que haya logrado estos objetivos, vaya a [aumentar las protecciones de seguridad](m365bp-security-overview.md).
+Una vez que haya alcanzado estos objetivos, [aumente la seguridad](m365bp-security-overview.md).

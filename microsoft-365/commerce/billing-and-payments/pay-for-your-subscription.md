@@ -16,20 +16,20 @@ ms.collection:
 search.appverid: MET150
 description: Use una tarjeta de crédito o débito o una cuenta bancaria para pagar la suscripción de Microsoft 365 para empresas. O bien, en algunos casos puede pagar mediante factura.
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: ba6703be593f05c651c76b02e2fb1e8630f59355
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083913"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112359"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -73,14 +73,14 @@ En algunos casos, puede pagar la suscripción mediante factura con un cheque o E
 - Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, recibirá una notificación cuando compre la suscripción. Si acepta que se comuniquen con usted, recibirá un correo electrónico que incluye más información sobre cómo solicitar la aprobación de crédito. Las comprobaciones de crédito suelen completarse en un plazo de dos días laborables.
+Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
 > [!NOTE]
 > Los clientes que viven en Brasil pueden pagar una suscripción con un Boleto Bancario. Si ha seleccionado esta opción, la factura para el pago se envía al correo electrónico proporcionado durante la compra de la suscripción en los 10 días laborables posteriores a la fecha del pedido. La fecha de vencimiento es 30 días posterior a la fecha del pedido. Si no recibe su Boleto por correo electrónico, compruebe la carpeta de correo no deseado o póngase en contacto con el soporte técnico.
 >
 > Si lo prefiere, puede pagar mediante transferencia electrónica entre cuentas. El organismo y el número de cuenta aparecen en la parte inferior de la factura. Debe especificar el número de factura en el campo de identificación de transferencia.
 
-Si paga con factura su suscripción, recibirá un correo electrónico cuando el extracto de facturación esté listo para verlo. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye detalles sobre las opciones para realizar un pago y dónde enviarlo. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en el extracto de facturación. Para obtener información sobre el acceso a los extractos de facturación, consulte [Ver su orden o factura](view-your-bill-or-invoice.md).
+Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>¿Qué debo hacer si tengo un saldo pendiente?
 
