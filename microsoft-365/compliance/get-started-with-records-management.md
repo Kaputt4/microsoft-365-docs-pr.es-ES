@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que gestionan contenido de alto valor en Microsoft 365 para las obligaciones legales, empresariales o normativas.
-ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 4a0de19b7630ad89dadb071b80065ff44fde72bb
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069544"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106829"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -51,7 +51,7 @@ ms.locfileid: "67069544"
 
 Distintas suscripciones admiten diferentes administraciones de registros y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la administración de registros, consulte la sección de [Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) y las descargas relacionadas en PDF para obtener más información sobre los requisitos de licencias de nivel de características.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para conocer la administración de registros, consulte la sección [Administración del ciclo de vida de los datos de Microsoft Purview y Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) para conocer los requisitos de licencia de nivel de característica.
 
 ## <a name="permissions"></a>Permisos
 

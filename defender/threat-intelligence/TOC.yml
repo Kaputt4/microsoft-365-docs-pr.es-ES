@@ -1,2 +1,33 @@
-- name: Índice
-  href: index.md
+- name: Información general
+  expanded: true
+  items:
+    - name: "¿Qué es Inteligencia sobre amenazas de Microsoft\_Defender (Defender\_TI)?"
+      href: what-is-microsoft-defender-threat-intelligence-defender-tI.md
+    - name: Conjuntos de datos
+      href: data-sets.md
+    - name: Puntuación de reputación
+      href: reputation-scoring.md
+    - name: Conclusiones de analistas
+      href: analyst-insights.md
+- name: Concepto
+  items:
+    - name: Encadenamiento de infraestructura
+      href: infrastructure-chaining.md
+- name: Inicio rápido
+  items:
+    - name: "Obtenga información sobre cómo acceder a Inteligencia sobre amenazas de Microsoft\_Defender y realizar personalizaciones en el portal"
+      href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
+- name: Temas de procedimientos
+  items:
+    - name: Búsqueda y dinamización
+      href: searching-and-pivoting.md
+    - name: 'Ordenar, filtrar y descargar datos'
+      href: sorting-filtering-and-downloading-data.md
+    - name: Uso de etiquetas
+      href: using-tags.md
+    - name: Uso de proyectos
+      href: using-projects.md
+- name: Tutoriales
+  items:
+    - name: Recopilando inteligencia sobre amenazas y encadenamiento de infraestructura
+      href: gathering-threat-intelligence-and-infrastructure-chaining.md

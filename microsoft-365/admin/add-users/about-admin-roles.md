@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Obtenga información sobre los roles de administrador, como el rol de administrador global o el rol de administrador de servicio. Los roles se asignan a funciones empresariales específicas y conceden permisos para realizar tareas específicas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 644a426caedde06dcc910b527757acb631845655
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: df4f980237a25ee23b9f629f2db92e908797553a
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106304"
+ms.locfileid: "67111635"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Acerca de los roles de administrador en el Centro de administración de Microsoft 365
 

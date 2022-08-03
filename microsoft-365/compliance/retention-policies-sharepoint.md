@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo funciona la retención de Microsoft 365 para SharePoint y OneDrive, mediante directivas de retención y etiquetas de retención para administrar la retención o la eliminación automáticas de datos de su organización.
-ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037170"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112513"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -144,7 +144,7 @@ Solo las páginas y secciones se verán afectadas por la configuración de reten
 
 El control de versiones es una característica de todas las listas de documentos y bibliotecas de SharePoint y OneDrive. De forma predeterminada, el control de versiones conserva un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, consulte [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) y [Cómo funciona el control de versiones en listas y bibliotecas](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Cuando un documento con versiones está sujeto a la configuración de retención para conservar ese contenido, la forma en que las versiones se almacenan en la biblioteca de suspensión para conservación cambió en julio de 2022 para mejorar el rendimiento. Actualmente se está implementando en los inquilinos. Todas las versiones del archivo se conservan en un único archivo en la biblioteca de suspensión para conservación. Antes del cambio, las versiones se copiaban a la biblioteca de suspensión para conservación como archivos independientes y, después del cambio, permanecen como archivos independientes.
+Cuando un documento con versiones está sujeto a la configuración de retención para conservar ese contenido, la forma en que las versiones se almacenan en la biblioteca de suspensión para conservación cambió en julio de 2022 para mejorar el rendimiento. Ahora todas las versiones del archivo se conservan en un único archivo de la biblioteca de suspensión para conservación. Antes del cambio, las versiones se copiaban a la biblioteca de suspensión para conservación como archivos independientes y, después del cambio, permanecen como archivos independientes.
 
 Si la configuración de retención se configura para eliminar al final del período de retención:
 
