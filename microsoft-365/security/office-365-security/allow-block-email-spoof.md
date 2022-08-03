@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493229"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175012"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -40,10 +40,10 @@ Puede usar el portal de Microsoft 365 Defender o PowerShell para permitir o bloq
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Remitentes** está seleccionada y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Dominios & direcciones** está seleccionada y, a continuación, haga clic en ![icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
-3. En el control flotante **Bloquear remitentes** que aparece, configure los siguientes valores:
-   - **Dominios o direcciones de correo electrónico del remitente**: escriba un remitente (dirección de correo electrónico o dominio) por línea, hasta un máximo de 20.
+3. En el control flotante **Bloquear dominios & direcciones** que aparece, configure los siguientes valores:
+   - **Email direcciones o dominios**: escriba una dirección de correo electrónico o dominio por línea, hasta un máximo de 20.
    - **Nunca expire**: realice uno de los pasos siguientes:
      - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
 
@@ -56,6 +56,7 @@ Puede usar el portal de Microsoft 365 Defender o PowerShell para permitir o bloq
 
 > [!NOTE]
 > Los correos electrónicos de estos remitentes se bloquearán como _correo no deseado de alta confianza_ (SCL = 9).
+> Los usuarios de la organización no podrán enviar correos electrónicos a estos dominios y direcciones bloqueados. Recibirán un informe de no entrega que indicará lo siguiente: "5.7.1 El mensaje no se puede entregar porque uno o varios destinatarios están bloqueados por la directiva de lista de permitidos o bloques de inquilinos de su organización".
 
 ### <a name="use-powershell"></a>Usar PowerShell
 
@@ -174,7 +175,7 @@ Solo los mensajes de ese dominio _y_ el par de infraestructura de envío pueden 
 ### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
 
 > [!NOTE]
-> El correo electrónico de estos remitentes se bloqueará como _phish_.
+> Email de estos remitentes se bloquearán como _phish_.
 >
 > Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
 >
@@ -184,7 +185,7 @@ Solo los mensajes de ese dominio _y_ el par de infraestructura de envío pueden 
 
 1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
-2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Suplantación** de identidad y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Remitentes suplantados** y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
 3. En el control flotante **Agregar nuevos pares de dominio** que aparece, configure los siguientes valores:
    - **Agregar nuevos pares de dominio con caracteres comodín**: escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de remitente suplantadas, consulte [Administrar la lista de permitidos o bloques](tenant-allow-block-list.md) de inquilinos.
@@ -218,9 +219,9 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 > - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
 > - Las entradas para remitentes suplantados nunca expiran.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** directivas de colaboración \> **& reglas Directivas** \> de **amenazas** \> Listas de **inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & directivas de **colaboración** \> **& reglas Directivas** \> de **amenazas** \> **Listas de inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Suplantación** de identidad y, a continuación, haga clic en ![el icono Agregar.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Remitentes suplantados** y, a continuación, haga clic en ![el icono Agregar.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
 3. En el control flotante **Agregar nuevos pares de dominio** que aparece, configure los siguientes valores:
    - **Agregar nuevos pares de dominio con caracteres comodín**: escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de remitente suplantadas, consulte [Administrar la lista de permitidos o bloques](tenant-allow-block-list.md) de inquilinos.
@@ -260,7 +261,7 @@ Use [envíos de administrador](admin-submission.md) para enviar el mensaje bloqu
 
 > [!NOTE]
 >
-> - El par de dominio del remitente suplantado se creará y estará visible en la pestaña **Suplantado** en la página Lista de **permitidos o bloqueados de inquilinos** .
+> - El par de dominio del remitente suplantado se creará y estará visible en la pestaña **Remitentes suplantados** en la página Lista de **permitidos o bloqueados de inquilinos** .
 
 
 ### <a name="use-powershell"></a>Usar PowerShell

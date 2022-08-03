@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 231bd79e0c825b38d44ca45c078cbe4d7aa432c0
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100149"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175562"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para punto de conexión en características de Android
 
@@ -91,9 +91,6 @@ La protección de red en Microsoft Defender para punto de conexión está habili
 
 ## <a name="privacy-controls"></a>Controles de privacidad
 
-> [!IMPORTANT]
-> Los controles de privacidad para Microsoft Defender para punto de conexión en Android están en versión preliminar. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
-
 Los siguientes controles de privacidad están disponibles para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android:
 
 |Informe de amenazas     |Detalles      |
@@ -102,6 +99,42 @@ Los siguientes controles de privacidad están disponibles para configurar los da
 |Informe de phish |Los administradores pueden configurar el control de privacidad para el informe de phish: si la privacidad está habilitada, Defender para punto de conexión no enviará el nombre de dominio ni los detalles del sitio web no seguro como parte del informe de alertas de phish. |
 |Evaluación de vulnerabilidades de aplicaciones (solo Android) |De forma predeterminada, solo se envía información sobre las aplicaciones instaladas en el perfil de trabajo para la evaluación de vulnerabilidades. Los administradores pueden deshabilitar la privacidad para incluir aplicaciones personales|
 |Protección de red (versión preliminar)| Los administradores pueden habilitar o deshabilitar la privacidad en la protección de red: si están habilitados, Defender no enviará detalles de red.|
+
+### <a name="configure-privacy-alert-report"></a>Configurar el informe de alertas de privacidad
+Los administradores ahora pueden habilitar el control de privacidad para el informe de phish, el informe de malware y el informe de red enviados por Microsoft Defender para punto de conexión en Android. Esto garantizará que el nombre de dominio, los detalles de la aplicación y los detalles de red respectivamente no se envíen como parte de la alerta cada vez que se detecte una amenaza correspondiente.
+
+Administración Controles de privacidad (MDM) Siga estos pasos para habilitar la privacidad.
+
+1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar dispositivos administrados >**.
+
+2. Asigne un nombre a la directiva **, Platform > Android Enterprise, seleccione el tipo de perfil**.
+
+3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
+
+4. En la página Configuración, seleccione **Usar diseñador de configuración** y haga clic en **Agregar**. 
+5. Seleccione la configuración de privacidad necesaria:
+    - Ocultar direcciones URL en el informe
+    - Ocultar direcciones URL en el informe para el perfil personal
+    - Ocultar los detalles de la aplicación en el informe
+    - Ocultar los detalles de la aplicación en el informe para el perfil personal
+    - Habilitación de la privacidad de protección de red
+
+6. Para habilitar la privacidad, escriba el valor entero como 1 y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en 0 para MDE en el perfil de trabajo y 1 para MDE en perfil personal.
+
+7. Revise y asigne este perfil a los dispositivos o usuarios de destino.
+
+**Controles de privacidad del usuario final**
+
+Estos controles ayudan al usuario final a configurar la información compartida con su organización.
+
+1. En el **caso del perfil de trabajo de Android Enterprise**, los controles de usuario final no estarán visibles. Los administradores controlan esta configuración.
+2. Para el **perfil personal de Android Enterprise**, el control se muestra en **Configuración> privacidad**.
+3. Los usuarios verán un botón de alternancia para información de sitio no seguro, aplicaciones malintencionadas y protección de red.
+
+Estos alternancias solo estarán visibles si el administrador lo habilita. Los usuarios pueden decidir si quieren enviar la información a su organización o no.
+
+La habilitación o deshabilitación de los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
+
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configuración de la evaluación de vulnerabilidades de aplicaciones para dispositivos BYOD
 

@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
-ms.openlocfilehash: af8a2fcbd82d33d1b1050fd382ad8a7f7334c9a1
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 6ef41802afd47a2e265a2617ed0eb498c7a1708a
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108854"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174683"
 ---
 # <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Inicio rápido: Obtenga información sobre cómo acceder a Inteligencia contra amenazas de Microsoft Defender y realizar personalizaciones en el portal.
 
@@ -76,4 +76,4 @@ No hay recursos para limpiar en esta sección.
 
 Para más información, vea:
 
-[¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?"](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+[¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?"](index.md)

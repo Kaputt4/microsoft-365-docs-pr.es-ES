@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 7dbf52dd3d1f08d9c5321874a54db48b7ef2e835
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108529"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175518"
 ---
 # <a name="using-tags"></a>Uso de etiquetas
 las etiquetas Inteligencia contra amenazas de Microsoft Defender (TI de Defender) se usan para proporcionar información rápida sobre un artefacto, ya sea derivado por el sistema o generado por otros usuarios. Las etiquetas ayudan a los analistas a conectar los puntos entre incidentes e investigaciones actuales y su contexto histórico para mejorar el análisis.
@@ -41,7 +41,7 @@ Las etiquetas del sistema pueden incluir:
 
 ![Sistema de etiquetas](media/tagsSystem.png)
 
-## <a name="custom-tags"></a>Etiquetas personalizadas
+## <a name="custom-tags"></a>Etiquetas personalizadas 
 
 Etiquetas personalizadas dentro de Defender TI para poner contexto a los indicadores de riesgo (IOC) y simplificar aún más el análisis mediante la identificación de los dominios que se conocen como incorrectos de los informes públicos o que han sido clasificados por los analistas de la empresa. Los usuarios crean manualmente estas etiquetas en función de sus propias investigaciones. Estas etiquetas permiten a los usuarios compartir información clave sobre un artefacto con otros usuarios de licencia de Defender TI Premium dentro de su inquilino.
 
@@ -98,7 +98,7 @@ Flujo de trabajo de casos de uso de etiquetas comunes Supongamos que un analista
 
 Para más información, vea:
 
-- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
 - [Conjuntos de datos](data-sets.md)
 - [Ordenación, filtrado y descarga de datos](sorting-filtering-and-downloading-data.md)
 - [Puntuación de reputación](reputation-scoring.md)

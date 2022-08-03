@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 544725fcc359429fdd4d71059dd49719f7c3c601
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108609"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175584"
 ---
 # <a name="searching-and-pivoting"></a>Búsqueda y dinamización
 
@@ -196,7 +196,7 @@ Para obtener más información, consulte [Conclusiones de analistas](analyst-ins
 
 En la sección Artículos se muestran los artículos que pueden proporcionar información sobre cómo investigar mejor y, en última instancia, desarmar el artefacto afectado. Estos artículos están escritos por investigadores que estudian el comportamiento de los actores de amenazas conocidos y su infraestructura, con conclusiones clave que pueden ayudar a otros usuarios a mitigar el riesgo para su organización. En este ejemplo, la dirección IP buscada se ha identificado como una COI relacionada con los resultados del artículo.
 
-Para obtener más información, consulte [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Para obtener más información, consulte [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
 
 ![Artículos de la pestaña Resumen](media/summaryTabArticles.png)
 
@@ -496,7 +496,7 @@ En la sección de inteligencia se resalta cualquier información seleccionada en
 
 En la sección Artículos se muestran los artículos que pueden proporcionar información sobre cómo investigar mejor y, en última instancia, desarmar el artefacto afectado. Estos artículos están escritos por investigadores que estudian el comportamiento de los actores de amenazas conocidos y su infraestructura, con conclusiones clave que pueden ayudar a otros usuarios a mitigar el riesgo para su organización. En este ejemplo, la dirección IP buscada se ha identificado como una COI relacionada con los resultados del artículo.
 
-Para obtener más información, consulte [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Para obtener más información, consulte [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
 
 ![Artículos de inteligencia de pestañas de datos](media/dataTabIntelligenceArticles.png)
 
@@ -522,5 +522,5 @@ Para más información, vea:
 - [Conjuntos de datos](data-sets.md)
 - [Puntuación de reputación](reputation-scoring.md)
 - [Conclusiones de analistas](analyst-insights.md)
-- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
 - [Uso de proyectos](using-projects.md)

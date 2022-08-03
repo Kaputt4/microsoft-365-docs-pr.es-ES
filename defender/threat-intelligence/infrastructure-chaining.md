@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 5b094971d4004cb1c58dcf058af68c1182670f92
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108901"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174661"
 ---
 # <a name="infrastructure-chaining"></a>Encadenamiento de infraestructura
 
@@ -33,7 +33,7 @@ Vemos que las campañas de ataque emplean una amplia gama de técnicas de ofusca
 
 La perspectiva externa de un adversario les permite aprovechar su presencia móvil y web en continua expansión que funciona fuera del firewall.
 
-Aproximarse e interactuar con las propiedades web y móviles como un usuario real permite que la tecnología de rastreo, examen y aprendizaje automático de Microsoft desarme las técnicas de evasión de adversarios mediante la recopilación de datos de sesión de usuario, la detección de phishing, malware, aplicaciones no autorizadas, contenido no deseado e infracción de dominio a escala. Esto ayuda a ofrecer flujos de trabajo y alertas de amenazas accionables basadas en eventos en forma de [inteligencia sobre amenazas](what-is-microsoft-defender-threat-intelligence-defender-tI.md), [etiquetas del sistema](using-tags.md), [información de analistas](analyst-insights.md) y [puntuaciones de reputación asociadas](reputation-scoring.md) a la infraestructura de adversarios.
+Aproximarse e interactuar con las propiedades web y móviles como un usuario real permite que la tecnología de rastreo, examen y aprendizaje automático de Microsoft desarme las técnicas de evasión de adversarios mediante la recopilación de datos de sesión de usuario, la detección de phishing, malware, aplicaciones no autorizadas, contenido no deseado e infracción de dominio a escala. Esto ayuda a ofrecer flujos de trabajo y alertas de amenazas accionables basadas en eventos en forma de [inteligencia sobre amenazas](index.md), [etiquetas del sistema](using-tags.md), [información de analistas](analyst-insights.md) y [puntuaciones de reputación asociadas](reputation-scoring.md) a la infraestructura de adversarios.
 
 A medida que hay más datos de amenazas disponibles, se requieren más herramientas, educación y esfuerzo para que los analistas comprendan los conjuntos de datos y sus amenazas correspondientes. Inteligencia contra amenazas de Microsoft Defender (Ti de Defender) unifica estos esfuerzos proporcionando una vista única en varios orígenes de datos.
 

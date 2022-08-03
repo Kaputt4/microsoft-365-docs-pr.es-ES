@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: 6aa0d3ba9415bba32663cd868cfc94743f354fd4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2cbc3f02f72fd5ca0f08199de3513c38cefe0c73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943032"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175306"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -25,9 +25,9 @@ La experiencia de uso compartido difiere en función de si se encuentra en una r
 
 ## <a name="share-in-teams-meetings"></a>Compartir en reuniones de Teams
 
-Al compartir una pizarra en una reunión de Teams, Whiteboard crea un vínculo de uso compartido al que puede acceder cualquier persona de la organización. A continuación, comparte automáticamente la pizarra con cualquier usuario en el inquilino de la reunión.
+Al compartir una pizarra en una reunión de Teams, Whiteboard crea un vínculo de uso compartido al que puede acceder cualquier persona de la organización. Además, las pizarras se comparten automáticamente con los usuarios del inquilino de la reunión. Las pizarras se comparten mediante vínculos que se pueden compartir con la empresa, independientemente de la configuración predeterminada. Se planea la compatibilidad con el tipo de vínculo de uso compartido predeterminado.
 
-Hay una funcionalidad adicional para la colaboración temporal por parte de cuentas de dispositivos externos y compartidos durante una reunión. Esta funcionalidad permite a estos usuarios ver y colaborar temporalmente en pizarras cuando se comparten en una reunión de Teams, de forma similar a PowerPoint Live uso compartido.
+Hay una funcionalidad adicional para la colaboración temporal por parte de cuentas de dispositivo externas y compartidas durante una reunión de Teams. Los usuarios pueden ver y colaborar temporalmente en pizarras compartidas en una reunión, de forma similar a PowerPoint Live uso compartido.
 
 >[!NOTE]
 > Esto no es un vínculo de recurso compartido y no concede acceso al archivo. Proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams.
@@ -47,7 +47,7 @@ Si restringe el uso compartido externo para OneDrive para la Empresa, puede mant
 Esta configuración solo se aplica a las pizarras y reemplaza la configuración compartida anteriormente, **OneDriveLoopSharingCapability** y **CoreLoopSharingCapability**. Esa configuración ya no es aplicable y se puede omitir.
 
 >[!NOTE]
-> De forma predeterminada, la configuración de reunión de Teams **Usuarios anónimos pueden interactuar con aplicaciones en reuniones** está habilitada. Si la ha deshabilitado, los usuarios anónimos (en lugar de invitados o usuarios federados) no tendrán acceso a la pizarra durante la reunión.
+> Esto solo se aplica a invitados y usuarios federados. No se aplica a los usuarios de reuniones anónimos en este momento.
 
 Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el inquilino. 
 
@@ -78,7 +78,7 @@ Al compartir pizarras desde clientes web, de escritorio o móviles, puede elegir
 |Crear la pizarra a partir de un Surface Hub  |Almacenamiento: Local<br><br>Propietario: Ninguno (a menos que el usuario inicie sesión para guardar y compartir el panel, lo que se guarda en OneDrive para la Empresa. El uso compartido fácil se agregará de nuevo en el futuro.  |No aplicable (solo se aplica a reuniones)  |Usuarios en el inquilino: el usuario debe iniciar sesión para guardar y compartir el panel (el recurso compartido fácil se agregará en el futuro).<br><br>Usuarios externos: no se admite el uso compartido con usuarios externos en este momento fuera de una reunión de Teams  |
 |Creación de la pizarra a partir de Salas de Microsoft Teams  |Todavía no se admite  |No aplicable (solo se aplica a reuniones)  |Todavía no se admite  |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490583"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174945"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para punto de conexión
 
@@ -97,7 +97,7 @@ Los requisitos de hardware de Defender para punto de conexión en dispositivos s
 
 > Núcleos: 2 memorias mínimas y 4 preferidas: 1 GB como mínimo, 4 preferidas
 
-Para obtener más información sobre las versiones admitidas de Windows 10, vea (/windows/release-health/release-information).
+Para obtener más información sobre las versiones admitidas de Windows 10, consulte [Windows 10 información de versión](/windows/release-health/release-information).
 
 > [!NOTE]
 > - No se admiten los puntos de conexión que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile).

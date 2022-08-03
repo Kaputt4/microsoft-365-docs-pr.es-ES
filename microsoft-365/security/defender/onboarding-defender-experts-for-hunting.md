@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aab1c0661ce039e6a9fb561c2e93f71e2c5847d6
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109717"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175540"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Empezar a usar expertos de Microsoft Defender para la búsqueda
 
@@ -110,7 +110,7 @@ La opción **preguntar a expertos de Defender** está disponible en varios lugar
 ### <a name="alert-information"></a>Información de alerta
 
 - Vimos un nuevo tipo de alerta para un binario que vive fuera de la tierra. Podemos proporcionar el identificador de alerta. ¿Puede decirnos más sobre esta alerta y si está relacionada con algún incidente y cómo podemos investigarla más?
-- Hemos observado dos ataques similares, que intentan ejecutar scripts malintencionados de PowerShell pero generan alertas diferentes. Una es "Línea de comandos de PowerShell sospechosa" y la otra es "Se detectó un archivo malintencionado en función de la indicación proporcionada por O365". ¿Cuál es la diferencia?
+- Hemos observado dos ataques similares, que intentan ejecutar scripts malintencionados de PowerShell pero generan alertas diferentes. Una es "Línea de comandos sospechosa de PowerShell" y la otra es "Se detectó un archivo malintencionado en función de la indicación proporcionada por Office 365". ¿Cuál es la diferencia?
 - Hemos recibido una alerta impar hoy sobre un número anómalo de inicios de sesión erróneos desde el dispositivo de un usuario de alto perfil. No podemos encontrar más pruebas para estos intentos. ¿Cómo puede Microsoft 365 Defender ver estos intentos? ¿Qué tipo de inicios de sesión se están supervisando?
 - ¿Puede proporcionar más contexto o información sobre la alerta y cualquier incidente relacionado, "Se observó un comportamiento sospechoso por parte de una utilidad del sistema"?
 - Observé una alerta titulada "Creación de una regla de reenvío/redireccionamiento". Creo que la actividad es benigna. ¿Puede decirme por qué he recibido una alerta?
@@ -128,7 +128,7 @@ La opción **preguntar a expertos de Defender** está disponible en varios lugar
 
 ### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Comunicaciones de alertas de expertos de Microsoft Defender para la búsqueda
 
-- ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de ataque dirigida que tenemos?
+- ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de expertos de Defender que tenemos?
 - Hemos recibido esta notificación de expertos de Defender de expertos de Microsoft Defender para la búsqueda. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
 - Hemos recibido una notificación de expertos de Defender de expertos de Microsoft Defender para la búsqueda. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
 

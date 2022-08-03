@@ -1,6 +1,6 @@
 ---
-title: Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
-description: Cambia a Microsoft Defender para Endpoint, que incluye Antivirus de Microsoft Defender para la solución de protección de puntos de conexión.
+title: Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión
+description: Realice el cambio a Microsoft Defender para punto de conexión, que incluye Antivirus de Microsoft Defender para la solución de endpoint protection.
 keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,58 +23,61 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: e93e762501b942a67cef35a95bb2a9a2b1113e3a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465869"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174968"
 ---
-# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
+# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804) Si está considerando cambiar de una solución de protección de puntos de conexión que no sea de [Microsoft a Microsoft Defender para](microsoft-defender-endpoint.md) endpoint (Defender para endpoint) o está en la fase de planeación, use este artículo como guía. En este artículo se describe el proceso general de pasar a Defender para endpoint.
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="Proceso de migración para cambiar la solución de protección de puntos de conexión a Defender for Endpoint" lightbox="images/nonms-mde-migration.png":::
 
-Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus o antimalware que no es de Microsoft en modo activo. A continuación, configuras Antivirus de Microsoft Defender modo pasivo e incorporas tus dispositivos a Defender para endpoint. A continuación, configure las características de protección de puntos de conexión, establezca Antivirus de Microsoft Defender en modo activo y compruebe que todo funciona correctamente. Por último, se quita la solución que no es de Microsoft.
+Si está pensando en cambiar de una solución de protección de puntos de conexión que no es de Microsoft a [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md) (Defender para punto de conexión), o está en la fase de planeación, use este artículo como guía. En este artículo se describe el proceso general de traslado a Defender para punto de conexión.
 
-## <a name="the-migration-process"></a>Proceso de migración
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="Proceso de migración para cambiar la solución de Endpoint Protection a Defender para punto de conexión" lightbox="images/nonms-mde-migration.png":::
 
-El proceso de migración a Defender for Endpoint se puede dividir en tres fases, como se describe en la tabla siguiente:
+Al cambiar a Defender para punto de conexión, comienza con la protección antivirus o antimalware que no es de Microsoft en modo activo. A continuación, configurará Antivirus de Microsoft Defender en modo pasivo e incorpora los dispositivos a Defender para punto de conexión. A continuación, configure las características de Endpoint Protection, establezca Antivirus de Microsoft Defender en modo activo y compruebe que todo funciona correctamente. Por último, se quita la solución que no es de Microsoft.
 
-:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="El proceso de migración de MDE" lightbox="images/phase-diagrams/migration-phases.png":::
+## <a name="the-migration-process"></a>El proceso de migración
+
+El proceso de migración a Defender para punto de conexión se puede dividir en tres fases, como se describe en la tabla siguiente:
+
+:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="Proceso de migración de MDE" lightbox="images/phase-diagrams/migration-phases.png":::
 
 
 <br/><br/>
 
 |Fase|Descripción|
 |--|--|
-|[Preparar la migración](switch-to-mde-phase-1.md)|Durante [la **fase de** preparación](switch-to-mde-phase-1.md): <br/>1. Actualice los dispositivos de su organización.<br/>2. Obtener Defender para endpoint.<br/>3. Planee roles y permisos y conceda acceso al portal Microsoft 365 Defender web.<br/>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
-|[Configurar Defender para endpoint](switch-to-mde-phase-2.md)|Durante [la **fase de** instalación](switch-to-mde-phase-2.md): <br/>1. Habilite o vuelva a instalar Antivirus de Microsoft Defender y estabilite en modo pasivo.<br/>2. Configure Defender for Endpoint.<br/>3. Agregue Defender for Endpoint a la lista de exclusión de la solución existente.<br/>4. Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender.<br/>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas.<br/>6. Configure las directivas antimalware y la configuración de protección en tiempo real.|
-|[Incorporación a Defender para endpoint](switch-to-mde-phase-3.md)|Durante [la **fase de incorporación**](switch-to-mde-phase-3.md): <br/>1. Incorpore los dispositivos a Defender para endpoint.<br/>2. Ejecute una prueba de detección.<br/>3. Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.<br/>4. Obtener actualizaciones para Antivirus de Microsoft Defender.<br/>5. Desinstale la solución de protección de extremo existente.<br/>6. Asegúrese de que Defender for Endpoint funciona correctamente.|
+|[Preparación para la migración](switch-to-mde-phase-1.md)|Durante [la fase **de preparación**](switch-to-mde-phase-1.md): <br/>1. Actualice los dispositivos de la organización.<br/>2. Obtener Defender para punto de conexión.<br/>3. Planear roles y permisos, y conceder acceso al portal de Microsoft 365 Defender.<br/>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para punto de conexión. |
+|[Configuración de Defender para punto de conexión](switch-to-mde-phase-2.md)|Durante [la fase **de instalación**](switch-to-mde-phase-2.md): <br/>1. Habilite o vuelva a instalar antivirus de Microsoft Defender y establézcalo en modo pasivo.<br/>2. Configurar Defender para punto de conexión.<br/>3. Agregue Defender para punto de conexión a la lista de exclusión de la solución existente.<br/>4. Agregue la solución existente a la lista de exclusión del Antivirus de Microsoft Defender.<br/>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas.<br/>6. Configure las directivas de antimalware y las opciones de protección en tiempo real.|
+|[Incorporación a Defender para punto de conexión](switch-to-mde-phase-3.md)|Durante [la fase **de incorporación**](switch-to-mde-phase-3.md): <br/>1. Incorpore los dispositivos a Defender para punto de conexión.<br/>2. Ejecute una prueba de detección.<br/>3. Confirme que antivirus de Microsoft Defender se ejecuta en modo pasivo.<br/>4. Obtener actualizaciones para el Antivirus de Microsoft Defender.<br/>5. Desinstale la solución de endpoint protection existente.<br/>6. Asegúrese de que Defender para punto de conexión funciona correctamente.|
 
-## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>¿Qué se incluye en Microsoft Defender para endpoint?
+## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>¿Qué se incluye en Microsoft Defender para punto de conexión?
 
-En esta guía de migración, nos centramos en la protección de próxima generación y [detección y respuesta de puntos de conexión funcionalidades](overview-endpoint-detection-response.md) como punto de partida para pasar a Defender para endpoint.[](microsoft-defender-antivirus-in-windows-10.md) Sin embargo, Defender for Endpoint incluye mucho más que antivirus y protección de puntos de conexión. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. En la tabla siguiente se resumen las características y capacidades de Defender para endpoint.
+En esta guía de migración, nos centramos en la [protección de última generación](microsoft-defender-antivirus-in-windows-10.md) y en las funcionalidades [de detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) como punto de partida para pasar a Defender para punto de conexión. Sin embargo, Defender para punto de conexión incluye mucho más que antivirus y endpoint protection. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta. En la tabla siguiente se resumen las características y funcionalidades de Defender para punto de conexión.
 
 <br/><br/>
 
-|Característica/funcionalidad|Descripción|
+|Característica o funcionalidad|Descripción|
 |---|---|
-|[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)|Las & administración de vulnerabilidades de amenazas ayudan a identificar, evaluar y corregir las debilidades en los puntos de conexión (como los dispositivos).|
-|[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)|Las reglas de reducción de superficie de ataque ayudan a proteger los dispositivos y aplicaciones de la organización de ciberamenazas y ataques.|
-|[Protección de última generación](microsoft-defender-antivirus-in-windows-10.md)|La protección de última generación Antivirus de Microsoft Defender ayuda a bloquear amenazas y malware.|
-|[EDR](overview-endpoint-detection-response.md)|Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.|
-|[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)|Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales.|
-|[Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)|Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse.|
-|[Investigación y corrección automatizadas](automated-investigations.md)|Las capacidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver infracciones.|
-|[Servicio de búsqueda de](microsoft-threat-experts.md) amenazas (Expertos en amenazas de Microsoft)|Los servicios de búsqueda de amenazas proporcionan a los equipos de operaciones de seguridad supervisión y análisis de nivel de expertos, y para ayudar a garantizar que no se pierden las amenazas críticas.|
+|[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)|Las funcionalidades de administración de vulnerabilidades & amenazas ayudan a identificar, evaluar y corregir las debilidades en los puntos de conexión (como los dispositivos).|
+|[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)|Las reglas de reducción de superficie expuesta a ataques ayudan a proteger los dispositivos y las aplicaciones de su organización frente a ciberataques y ataques.|
+|[Protección de última generación](microsoft-defender-antivirus-in-windows-10.md)|La protección de última generación incluye antivirus de Microsoft Defender para ayudar a bloquear amenazas y malware.|
+|[EDR](overview-endpoint-detection-response.md)|Las funcionalidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusiones y infracciones activas.|
+|[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)|Las funcionalidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales.|
+|[Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)|Las funcionalidades de bloqueo y contención del comportamiento ayudan a identificar y detener amenazas, en función de sus comportamientos y de los árboles de proceso, incluso cuando la amenaza ha comenzado a ejecutarse.|
+|[Investigación y corrección automatizadas](automated-investigations.md)|Las funcionalidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver las infracciones.|
+|[Servicio de búsqueda de amenazas](microsoft-threat-experts.md) (Expertos en amenazas de Microsoft)|Los servicios de búsqueda de amenazas proporcionan a los equipos de operaciones de seguridad supervisión y análisis de nivel experto, y para ayudar a garantizar que no se pierdan amenazas críticas.|
 
-**¿Desea obtener más información? Consulta [Defender para endpoint](microsoft-defender-endpoint.md).**
+**¿Desea obtener más información? Consulte [Defender para punto de conexión](microsoft-defender-endpoint.md).**
 
 ## <a name="next-step"></a>Paso siguiente
 
-- Vaya a [Preparar la migración](switch-to-mde-phase-1.md).
+- Continúe con [Preparación para la migración](switch-to-mde-phase-1.md).

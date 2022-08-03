@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar los resultados de un registro de auditoría de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66928de026e95fbbb02f1a3e7d0efd3da0766afd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: af20836a6800dedfc1bd04d9b049c28038108875
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623283"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175364"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -45,7 +45,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |AzureActiveDirectoryEventType|Tipo de evento de Azure Active Directory. Los siguientes valores indican el tipo de evento.  <br/> **0** : indica un evento de inicio de sesión de cuenta.<br/> **1** : indica un evento de seguridad de la aplicación de Azure.|Azure Active Directory|
 |ChannelGuid|Identificador de un canal de Microsoft Teams. El equipo en el que se encuentra el canal se identifica mediante las propiedades **TeamName** y **TeamGuid** .|Microsoft Teams|
 |ChannelName|Nombre de un canal de Microsoft Teams. El equipo en el que se encuentra el canal se identifica mediante las propiedades **TeamName** y **TeamGuid** .|Microsoft Teams|
-|Cliente|El dispositivo cliente, el sistema operativo del dispositivo y el explorador de dispositivos utilizados para el evento de inicio de sesión (por ejemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
+|Client|El dispositivo cliente, el sistema operativo del dispositivo y el explorador de dispositivos utilizados para el evento de inicio de sesión (por ejemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Información sobre el cliente de correo electrónico que se usó para realizar la operación, como una versión del explorador, la versión de Outlook y la información del dispositivo móvil|Exchange (actividad de buzón)|
 |ClientIP|La dirección IP del dispositivo que se ha usado cuando la actividad se ha registrado. La dirección IP se muestra en el formato de dirección IPv4 o IPv6.<br/><br/> Para ciertos servicios, el valor que se visualiza en esta propiedad puede ser la dirección IP de una aplicación de confianza (por ejemplo, Office en las aplicaciones web) que llama al servicio en nombre de un usuario y no la dirección IP del dispositivo utilizado por la persona que realizó la actividad. <br/><br/>Además, para la actividad de administrador (o actividad realizada por una cuenta del sistema) para eventos relacionados con Azure Active Directory, la dirección IP no se registra y el valor de la propiedad ClientIP es `null`. |Azure Active Directory, Exchange, SharePoint|
 |CreationTime|La fecha y hora en formato Hora universal coordinada (UTC) en las que el usuario ha realizado la actividad.|Todo|
@@ -87,7 +87,6 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |UserDomain|Información de identidad sobre la organización del inquilino del usuario (actor) que realizó la acción.|Azure Active Directory|
 |UserId|El usuario que realizó la acción (especificada en la propiedad **Operation** ) que provocó que se registrara el registro. Los registros de auditoría de la actividad realizada por las cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para más información, vea:<br/> [El usuario de SharePoint de la aplicación\@en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en registros de auditoría de buzones de Exchange](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
 |UserKey|Un identificador alternativo para el usuario identificado en la propiedad **UserID** . Por ejemplo, esta propiedad se rellena con el identificador único de passport (PUID) para los eventos realizados por los usuarios en SharePoint. Esta propiedad también puede especificar el mismo valor que la propiedad **UserID** para los eventos que se producen en otros servicios y eventos realizados por cuentas del sistema.|Todo|
-|UserSharedWith|El usuario con el que se compartió un recurso. Esta propiedad se incluye si el valor de la propiedad **Operation** es **SharingSet**. Este usuario también aparece en la columna **Compartido con** del informe.|SharePoint|
 |UserType|El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario. <br/> <br/> **0** : un usuario normal. <br/>**2** : administrador de la organización de Microsoft 365. <sup>1</sup> <br/>**3** : una cuenta de sistema de centro de datos o administrador del centro de datos de Microsoft. <br/>**4** - Una cuenta del sistema. <br/>**5** - Una aplicación. <br/>**6** - Una entidad de servicio.<br/>**7** - Una directiva personalizada.<br/>**8** - Una directiva del sistema.|Todo|
 |Versión|Indica el número de versión de la actividad (identificada por la propiedad **Operation** ) que se registra.|Todo|
 |Carga de trabajo|Servicio de Microsoft 365 donde se produjo la actividad.|Todo|

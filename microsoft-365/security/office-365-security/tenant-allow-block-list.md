@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822233"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175481"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -39,11 +39,11 @@ La lista de permitidos o bloqueados de inquilinos del portal de Microsoft 365 De
 
 - Direcciones URL que se van a bloquear.
 - Archivos que se van a bloquear.
-- Correos electrónicos o dominios del remitente que se van a bloquear.
+- Email dominios o direcciones que se van a bloquear.
 - Remitentes suplantados para permitir o bloquear. Si invalida el veredicto de permitir o bloquear en la [información de inteligencia](learn-about-spoof-intelligence.md) sobre suplantación de identidad, el remitente suplantado se convierte en una entrada de bloqueo o permiso manual que solo aparece en la pestaña **Suplantación** de identidad de la lista de permitidos o bloqueados de inquilinos. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados aquí antes de que se detecten mediante inteligencia de suplantación de identidad.
 - Direcciones URL que se van a permitir.
 - Archivos que se van a permitir.
-- Dominios o correos electrónicos del remitente que se van a permitir.
+- Email dominios o direcciones que se van a permitir.
 
 En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online  buzones).
 
@@ -56,7 +56,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -64,13 +64,17 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Los valores de dirección URL disponibles se describen en la [sintaxis de dirección URL de la sección Lista de permitidos o bloqueados](#url-syntax-for-the-tenant-allowblock-list) de inquilinos más adelante en este artículo.
 
-- La lista de permitidos o bloqueados de inquilinos permite un máximo de 500 entradas para remitentes, 500 entradas para direcciones URL, 500 entradas para hashes de archivo y 1024 entradas para suplantación de identidad (remitentes suplantados).
+- La lista de permitidos o bloqueados de inquilinos tiene los límites siguientes:
+  - 500 entradas para dominios & direcciones.
+  - 500 entradas para direcciones URL.
+  - 500 entradas para hashes de archivo.
+  - Entradas 1024 para suplantación de identidad (remitentes suplantados).
 
-- El número máximo de caracteres para cada entrada es:
-  - Hash de archivo = 64
-  - URL = 250
+- Las entradas de la lista de permitidos o bloqueados de inquilinos tienen los límites siguientes:
+  - 64 caracteres para los hashes de archivo.
+  - 250 caracteres para direcciones URL.
 
-- Una entrada debe estar activa en un plazo de 30 minutos.
+- El 99,99 % de las entradas deben estar activas en un plazo de 30 minutos. Las entradas que no están activas en un plazo de 30 minutos pueden tardar hasta 24 horas. 
 
 - De forma predeterminada, las entradas de la lista de inquilinos permitidos o bloqueados expirarán después de 30 días. Puede especificar una fecha o establecerla para que nunca expire (solo para bloques).
 
@@ -116,14 +120,14 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
 2. Seleccione la pestaña que desee. Las columnas que están disponibles dependen de la pestaña seleccionada:
 
-   - **Remitentes**:
-     - **Valor**: dominio o dirección de correo electrónico del remitente.
+   - **Dominios & direcciones**:
+     - **Valor**: dominio o dirección de correo electrónico.
      - **Acción**: el valor **Permitir** o **Bloquear**.
      - **Modificado por**
      - **Actualizado por última vez**
      - **Quitar activado**
      - **Notas**
-   - **Spoofing**
+   - **Remitentes suplantados**
      - **Usuario con identidad suplantada**
      - **Infraestructura de envío**
      - **Tipo de suplantación:** el valor **Interno** o **Externo**.
@@ -147,8 +151,8 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
    Puede hacer clic en **Agrupar** para agrupar los resultados. Los valores que están disponibles dependen de la pestaña seleccionada:
 
-   - **Remitentes**: puede agrupar los resultados por **acción**.
-   - **Suplantación de identidad**: puede agrupar los resultados por **tipo de acción** o **suplantación de identidad**.
+   - **Dominios & direcciones**: puede agrupar los resultados por **acción**.
+   - **Remitentes suplantados**: puede agrupar los resultados por **tipo de acción** o **suplantación de identidad**.
    - **Direcciones URL**: puede agrupar los resultados por **acción**.
    - **Archivos**: puede agrupar los resultados por **acción**.
 
@@ -156,21 +160,21 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
    Haga clic en **Filtrar** para filtrar los resultados. Los valores que están disponibles en el control flotante **Filtro** que aparece dependen de la pestaña seleccionada:
 
-   - **Remitentes**
-     - **Acción**
+   - **Dominios & direcciones**
+     - **Action**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
-   - **Spoofing**
-     - **Acción**
+   - **Remitentes suplantados**
+     - **Action**
      - **Tipo de suplantación de identidad**
-   - **Url**
-     - **Acción**
+   - **Direcciones URL**
+     - **Action**
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
    - **Files**
-     - **Acción**
+     - **Action**
      - **Nunca expirar**
      - **Actualizado por última vez**
      - **Quitar activado**
@@ -179,9 +183,9 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
 3. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Visualización de entradas de remitente, archivo o dirección URL en la lista de permitidos o bloqueados de inquilinos
+## <a name="view-domains--addresses-file-or-url-entries-in-the-tenant-allowblock-list"></a>Ver dominios & direcciones, archivos o entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos
 
-Para ver las entradas de remitente de bloque, archivo o dirección URL en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
+Para ver dominios de bloque & direcciones, entradas de archivo o dirección URL en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -424,7 +428,7 @@ Las siguientes entradas no son válidas:
 
 - **Valores de dominio que faltan o no son válidos**:
 
-  - Contoso
+  - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -490,6 +494,6 @@ Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden 
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Qué esperar después de agregar una entrada de permitir o bloquear
 
-Después de agregar una entrada de permitir a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente una vez que la entrada esté activa. La entrada estará activa principalmente en 30 minutos, pero a veces puede tardar hasta 24 horas.
+Después de agregar una entrada de permitir a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente una vez que la entrada esté activa. El 99,99 % de las entradas deben estar activas en un plazo de 30 minutos. Las entradas que no están activas en un plazo de 30 minutos pueden tardar hasta 24 horas.
 
 Se recomienda permitir que las entradas expiren automáticamente después de 30 días para ver si el sistema ha obtenido información sobre el permiso o el bloque. Si no es así, debe realizar otra entrada para dar al sistema otros 30 días para aprender.

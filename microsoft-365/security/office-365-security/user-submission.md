@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a identificar un buzón personalizado (también conocido como buzón de envíos de usuario) para recopilar mensajes de spam y phishing que notifican los usuarios. Otras configuraciones completan la experiencia de generación de informes para los usuarios cuando notifican mensajes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e578b3c968659448a84d0f85f6b2347fe47a042
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087251"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175496"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -112,7 +112,7 @@ Cuando el **botón Mensaje de informe de Microsoft Outlook** está **Activado** 
 
 - **Enviar los mensajes notificados a la** sección: Seleccione una de las siguientes opciones:
 
-  - **Microsoft**: no se usa el buzón de correo de envíos de usuario (todos los mensajes notificados van a Microsoft para su análisis).
+  - **Microsoft**: los informes de usuario van directamente a Microsoft para su análisis. Solo los metadatos como el remitente, el destinatario y los detalles del mensaje de los informes de usuario se proporcionan al administrador de inquilinos a través del Centro de seguridad de Microsoft 365.
 
   - **Buzón de Microsoft y mi organización**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online existente que se usará como buzón de correo de envíos del usuario. No se permiten grupos de distribución. Los envíos de usuarios van a Microsoft para su análisis y al buzón de correo de envíos de usuario para que un equipo de operaciones de seguridad o administrador los analice.
 
