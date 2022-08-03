@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ed00d120d00253c1abbb6d0c0109fdce0b7ff863
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a9b22edb79de41ec9efe291db0192de888a3644
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948273"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175034"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -258,7 +258,7 @@ Previa solicitud, Microsoft proporcionará una carta de atestación del cumplimi
 
 Además, estas funciones también ayudan a que Microsoft 365 cumpla con los requisitos de almacenamiento de la [Regla 1.31 (c)-(d) de la CFTC](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) de la **Comisión de Negociación de Futuros de Productos Básicos de Estados Unidos** y la [Serie de reglas 4510 de FINRA](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) de la **Autoridad de Reglamentación del Sector Financiero.** De forma colectiva, estas reglas constituyen las directrices más prescriptivas a nivel global para que las instituciones financieras conserven registros.
 
-Los detalles adicionales sobre cómo Microsoft 365 cumple con la regla 17a-4 de la SEC y otras reglamentaciones están disponibles en [Evaluación de Office 365 Exchange Online, 17a-4(f) de la SEC/1.31 (c)-(d) de la CFTC, de Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
+Hay más información sobre cómo Microsoft 365 cumple con la regla SEC 17a-4 y otras normativas disponibles en el documento de descarga [Office 365 - Evaluación de Cohasset - regla SEC 17a-4(f) - Almacenamiento inmutable para SharePoint, OneDrive, Exchange, Teams y Yammer (2022)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
 ## <a name="establish-ethical-walls-with-information-barriers"></a>Establecer zona de protección de datos confidenciales con barreras de información
 
