@@ -4,7 +4,7 @@
       href: index.md
     - name: Ejecutar su negocio de forma más segura
       href: m365bp-secure-users.md
-    - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
+    - name: Microsoft 365 Business Premium cuaderno de estrategias de prueba
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
@@ -24,10 +24,10 @@
       items:
         - name: Información general
           href: m365bp-security-overview.md
-        - name: Proteger cuentas de administrador
-          href: m365bp-protect-admin-accounts.md
-        - name: Activar los valores predeterminados de seguridad
+        - name: Activar valores predeterminados de seguridad (MFA)
           href: m365bp-conditional-access.md
+        - name: Protección de las cuentas de administrador
+          href: m365bp-protect-admin-accounts.md
         - name: Protección contra malware y otras amenazas
           href: m365bp-increase-protection.md
 - name: Entrenamiento de su equipo

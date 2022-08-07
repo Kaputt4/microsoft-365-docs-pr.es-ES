@@ -1,7 +1,7 @@
 ---
-title: Novedades de Microsoft Defender para punto de conexión en Mac
-description: Obtenga información sobre los cambios principales de las versiones anteriores de Microsoft Defender para punto de conexión en Mac.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, macos, whatsnew
+title: Novedades de Pertahanan Microsoft untuk Titik Akhir en Mac
+description: Obtenga información sobre los cambios principales de las versiones anteriores de Pertahanan Microsoft untuk Titik Akhir en Mac.
+keywords: microsoft, defender, Pertahanan Microsoft untuk Titik Akhir, mac, installation, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969548"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275848"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Pertahanan Microsoft untuk Titik Akhir en Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,28 @@ ms.locfileid: "66969548"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Para obtener más información sobre Microsoft Defender para punto de conexión en otros sistemas operativos: 
-- [Novedades de Microsoft Defender para punto de conexión en Linux](linux-whatsnew.md) 
-- [Novedades de Microsoft Defender para punto de conexión en iOS](ios-whatsnew.md)</br>
+Para obtener más información sobre Pertahanan Microsoft untuk Titik Akhir en otros sistemas operativos: 
+- [Novedades de Pertahanan Microsoft untuk Titik Akhir en Linux](linux-whatsnew.md) 
+- [Novedades de Pertahanan Microsoft untuk Titik Akhir en iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Ago-2022 (compilación: 101.75.90 | Versión de lanzamiento: 20.122071.17590.0)</summary>
+
+&ensp;Fecha de lanzamiento: **3 de agosto de 2022**<br/>
+&ensp;Publicado: **3 de agosto de 2022**<br/>
+&ensp;Compilación: **101.75.90**<br/>
+&ensp;Versión de lanzamiento: **20.122071.17590.0**<br/>
+&ensp;Versión del motor: **1.1.19300.3**<br/>
+&ensp;Versión de firma: **1.369.395.0**<br/>
+
+**Novedades**
+
+- Se ha agregado un nuevo campo en la salida de `mdatp health` que se puede usar para consultar el nivel de cumplimiento de la característica de protección de red. Se llama al `network_protection_enforcement_level` nuevo campo y puede tomar uno de los siguientes valores: `audit`, `block`o `disabled`.
+- Se ha corregido un error de producto en el que varias detecciones del mismo contenido podían dar lugar a entradas duplicadas en el historial de amenazas.
+- Otras correcciones de errores.
+
+<br/>
+</details>
 
 <details>
   <summary>Jul-2022 (compilación: 101.73.77 | Versión de lanzamiento: 20.122062.17377.0)</summary>
@@ -138,7 +157,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 **Novedades**
 
 - Se ha corregido una regresión introducida en la versión 101.61.69 en la que el icono del menú de estado a veces mostraba un icono de error, aunque no se requería ninguna acción del usuario final.
-- Se ha mejorado el `conflicting_applications` campo en `mdatp health` para mostrar solo los 10 procesos más recientes y también para incluir los nombres de los procesos. Esto facilita la identificación de los procesos que pueden entrar en conflicto con Microsoft Defender para punto de conexión para Mac.
+- Se ha mejorado el `conflicting_applications` campo en `mdatp health` para mostrar solo los 10 procesos más recientes y también para incluir los nombres de los procesos. Esto facilita la identificación de los procesos que pueden entrar en conflicto con Pertahanan Microsoft untuk Titik Akhir para Mac.
 - Se ha corregido un error en el `mdatp device-control removable-media policy list` que el identificador de proveedor y el identificador de producto se mostraban como decimales en lugar de hexadecimales.
 - Mejoras de rendimiento & otras correcciones de errores
 
@@ -186,8 +205,8 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 **Novedades**
 
 - Esta versión agrega compatibilidad con macOS 12.3. A partir de macOS 12.3, [Apple está quitando Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). No habrá ninguna versión de Python preinstalada en macOS de forma predeterminada. **ACCIÓN NECESARIA**: 
-  - Los usuarios deben actualizar Microsoft Defender para punto de conexión para Mac a la versión 101.59.50 (o posterior) antes de actualizar sus dispositivos a macOS Monterey 12.3 (o posterior). Esta versión mínima 101.59.50 es un requisito previo para eliminar los problemas relacionados con Python con Microsoft Defender para punto de conexión para Mac en macOS Monterey.
-  - En el caso de las implementaciones remotas, las configuraciones de MDM existentes deben actualizarse a Microsoft Defender para punto de conexión para Mac versión 101.59.50 (o posterior). La inserción a través de MDM de una versión anterior de Microsoft Defender para punto de conexión para Mac en macOS Monterey 12.3 (o posterior) provocará un error de instalación.
+  - Los usuarios deben actualizar Pertahanan Microsoft untuk Titik Akhir para Mac a la versión 101.59.50 (o posterior) antes de actualizar sus dispositivos a macOS Monterey 12.3 (o posterior). Esta versión mínima 101.59.50 es un requisito previo para eliminar los problemas relacionados con Python con Pertahanan Microsoft untuk Titik Akhir para Mac en macOS Monterey.
+  - Para las implementaciones remotas, las configuraciones de MDM existentes deben actualizarse a Pertahanan Microsoft untuk Titik Akhir para Mac versión 101.59.50 (o posterior). La inserción a través de MDM de una versión anterior de Pertahanan Microsoft untuk Titik Akhir para Mac en macOS Monterey 12.3 (o posterior) provocará un error de instalación.
 
 <br/>
 </details>
@@ -238,10 +257,10 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - Se ha cambiado el nombre de la aplicación de "ATP de Microsoft Defender" a "Microsoft Defender". Los usuarios finales observarán los siguientes cambios:
 - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` a `/Applications/Microsoft Defender.app`.
 - Dentro de la experiencia del usuario, las apariciones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
-- Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Microsoft Defender para punto de conexión para Mac
-- Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que no se pudo abrir el paquete de instalación debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con ciertas características. Aunque parece que este cambio del sistema operativo no está incluido en la versión final de macOS 12.2, es probable que se vuelva a introducir en una versión futura de macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para punto de conexión en su consola de administración a esta versión del producto (o a una versión más reciente).
+- Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Pertahanan Microsoft untuk Titik Akhir para Mac.
+- Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que no se pudo abrir el paquete de instalación debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con ciertas características. Aunque parece que este cambio del sistema operativo no está incluido en la versión final de macOS 12.2, es probable que se vuelva a introducir en una versión futura de macOS. Por lo tanto, animamos a todos los administradores de empresa a actualizar el paquete de Pertahanan Microsoft untuk Titik Akhir en su consola de administración a esta versión del producto (o a una versión más reciente).
 - Se ha corregido un problema detectado en algunos dispositivos M1 en los que el producto se bloqueaba con definiciones antimalware no válidas y no se podía actualizar correctamente a un conjunto de definiciones de trabajo.
-- `mdatp health`la salida se ha ampliado con un atributo adicional llamado `full_disk_access_enabled` que se puede usar para determinar si se ha concedido el acceso completo al disco a todos los componentes de Microsoft Defender para punto de conexión para Mac.
+- `mdatp health`la salida se ha ampliado con un atributo adicional llamado `full_disk_access_enabled` que se puede usar para determinar si se ha concedido el acceso completo al disco a todos los componentes de Pertahanan Microsoft untuk Titik Akhir para Mac.
 - Mejoras de rendimiento & correcciones de errores
 
 <br/>
@@ -380,7 +399,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Versión: **20.121042.13269.0** <br/>
 
 **Novedades**
-- Se ha corregido un problema por el que el acceso simultáneo a la cadena de claves desde Microsoft Defender para punto de conexión y otras aplicaciones puede provocar daños en la cadena de claves.
+- Se ha corregido un problema por el que el acceso simultáneo a la cadena de claves desde Pertahanan Microsoft untuk Titik Akhir y otras aplicaciones puede provocar daños en la cadena de claves.
 
 <br/>
 </details>
@@ -417,7 +436,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Versión: **20.121022.12569.0** <br/> 
 
 **Novedades**
-- Microsoft Defender para punto de conexión en macOS ya está disponible en versión preliminar para los clientes del Gobierno de EE. UU. Para obtener más información, vea  [Microsoft Defender para punto de conexión para clientes del Gobierno de EE. UU](gov.md). . 
+- Pertahanan Microsoft untuk Titik Akhir en macOS ya está disponible en versión preliminar para los clientes del Gobierno de EE. UU. Para obtener más información, vea  [Pertahanan Microsoft untuk Titik Akhir para clientes del Gobierno de EE. UU](gov.md). . 
 - Las mejoras de rendimiento (específicamente para la situación en la que se usa la aplicación XCode Simulator) & correcciones de errores. 
 
 <br/>
@@ -467,7 +486,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 **Novedades**
 > [!NOTE]
 > La antigua sintaxis de la herramienta de línea de comandos ha quedado en desuso con esta versión. Para obtener información sobre la nueva sintaxis, vea [Recursos](mac-resources.md#configuring-from-the-command-line). 
-- Se ha agregado un nuevo modificador de línea de comandos para deshabilitar la extensión de red: `mdatp system-extension network-filter disable`. Este comando puede ser útil para solucionar problemas de red que podrían estar relacionados con Microsoft Defender para punto de conexión en Mac. 
+- Se ha agregado un nuevo modificador de línea de comandos para deshabilitar la extensión de red: `mdatp system-extension network-filter disable`. Este comando puede ser útil para solucionar problemas de red que podrían estar relacionados con Pertahanan Microsoft untuk Titik Akhir en Mac. 
 - Mejoras de rendimiento & correcciones de errores 
 
 <br/>
@@ -503,7 +522,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Versión: **20.120101.11375.0**<br>
 
 **Novedades** 
-- Se quitaron las condiciones cuando Microsoft Defender para punto de conexión desencadenaba un error de macOS 11 (Big Sur) que se manifiesta en un pánico del kernel. 
+- Se quitaron las condiciones cuando Pertahanan Microsoft untuk Titik Akhir desencadenaba un error de macOS 11 (Big Sur) que se manifiesta en un pánico del kernel. 
 - Se ha corregido una pérdida de memoria en la extensión del sistema Endpoint Security al ejecutarse en mac 11 (Big Sur). 
 - Correcciones de errores 
 
@@ -538,7 +557,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 **Novedades** 
 - Esta versión del producto se ha validado en macOS Big Sur 11 beta 9. 
-- La nueva sintaxis de la herramienta de línea de comandos mdatp es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, consulte [Recursos para Microsoft Defender para punto de conexión en macOS](mac-resources.md#configuring-from-the-command-line). 
+- La nueva sintaxis de la herramienta de línea de comandos mdatp es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, consulte [Recursos para Pertahanan Microsoft untuk Titik Akhir en macOS](mac-resources.md#configuring-from-the-command-line). 
 > [!NOTE]
 > La antigua sintaxis de la herramienta de línea de comandos se quitará del producto el **1 de enero de 2021**.
 - Extendido `mdatp diagnostic create` con un nuevo parámetro (`--path [directory]`) que permite guardar los registros de diagnóstico en un directorio diferente. 
@@ -638,7 +657,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 **Novedades** 
 - Experiencia mejorada [de incorporación de productos para usuarios Intune](/mem/intune/apps/apps-advanced-threat-protection-macos) 
 -  [Las exclusiones antivirus ahora admiten caracteres comodín](mac-exclusions.md#supported-exclusion-types)
-- Se ha agregado la capacidad de desencadenar exámenes antivirus desde el menú contextual de macOS. Ahora puede hacer clic con el botón derecho en un archivo o una carpeta en Finder y seleccionar **Examinar con Microsoft Defender para punto de conexión**. 
+- Se ha agregado la capacidad de desencadenar exámenes antivirus desde el menú contextual de macOS. Ahora puede hacer clic con el botón derecho en un archivo o una carpeta en Finder y seleccionar **Examinar con Pertahanan Microsoft untuk Titik Akhir**. 
 - Ahora el instalador no permite explícitamente las degradaciones de productos en contexto. Si necesita cambiar a una versión anterior, desinstale primero la versión existente y vuelva a configurar el dispositivo. 
 - Otras mejoras de rendimiento & correcciones de errores 
 
@@ -650,7 +669,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Compilación: **100.90.27** <br>   
 
 **Novedades** 
-- Ahora puede [establecer un canal](mac-updates.md#set-the-channel-name) de actualización para Microsoft Defender para punto de conexión en macOS que sea diferente del canal de actualización de todo el sistema. 
+- Ahora puede [establecer un canal](mac-updates.md#set-the-channel-name) de actualización para Pertahanan Microsoft untuk Titik Akhir en macOS que sea diferente del canal de actualización de todo el sistema. 
 - Icono de nuevo producto 
 - Otras mejoras de la experiencia del usuario 
 - Correcciones de errores 
@@ -723,7 +742,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Compilación: **100.79.42**<br>
 
 **Novedades**
-- Se ha corregido un problema que provocaba que Microsoft Defender para punto de conexión en Mac a veces interfiera con time machine. 
+- Se ha corregido un problema por el que Pertahanan Microsoft untuk Titik Akhir en Mac a veces interfiería con time machine. 
 - Se ha agregado un nuevo modificador a la utilidad de línea de comandos para probar la conectividad con el servicio back-end.
  
   ```bash
@@ -750,7 +769,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 &ensp;Compilación: **100.70.99**<br>
 
 **Novedades**
-- Se ha corregido un problema que afectaba a la capacidad de algunos usuarios de actualizar a macOS Catalina cuando la protección en tiempo real está habilitada. Este problema esporádico se debe a Microsoft Defender para punto de conexión bloqueo de archivos dentro del paquete de actualización de Catalina al examinarlos en busca de amenazas, lo que produjo errores en la secuencia de actualización.
+- Se ha corregido un problema que afectaba a la capacidad de algunos usuarios de actualizar a macOS Catalina cuando la protección en tiempo real está habilitada. Este problema esporádico se debe a Pertahanan Microsoft untuk Titik Akhir bloqueo de archivos dentro del paquete de actualización catalina mientras se examinan en busca de amenazas, lo que produjo errores en la secuencia de actualización.
 
 <br/>
 </details> 
@@ -773,9 +792,9 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 **Novedades**
 - Se ha agregado compatibilidad con macOS Catalina. 
 > [!CAUTION]
-> macOS 10.15 (Catalina) contiene nuevas mejoras de seguridad y privacidad. A partir de esta versión, de forma predeterminada, las aplicaciones no pueden acceder a determinadas ubicaciones del disco (como documentos, descargas, escritorio, etc.) sin consentimiento explícito. En ausencia de este consentimiento, Microsoft Defender para punto de conexión no puede proteger completamente el dispositivo.
+> macOS 10.15 (Catalina) contiene nuevas mejoras de seguridad y privacidad. A partir de esta versión, de forma predeterminada, las aplicaciones no pueden acceder a determinadas ubicaciones del disco (como documentos, descargas, escritorio, etc.) sin consentimiento explícito. En ausencia de este consentimiento, Pertahanan Microsoft untuk Titik Akhir no puede proteger completamente el dispositivo.
 > 
-> El mecanismo para conceder este consentimiento depende de cómo implementó Microsoft Defender para punto de conexión:
+> El mecanismo para conceder este consentimiento depende de cómo implementó Pertahanan Microsoft untuk Titik Akhir:
 > 
 > - Para las implementaciones manuales, consulte las instrucciones actualizadas en el [tema Implementación manual](mac-install-manually.md#how-to-allow-full-disk-access).
 > - Para las implementaciones administradas, consulte las instrucciones actualizadas en los temas de implementación   [basada en JAMF](mac-install-with-jamf.md)y  [Microsoft Intune.](mac-install-with-intune.md#create-system-configuration-profiles) 

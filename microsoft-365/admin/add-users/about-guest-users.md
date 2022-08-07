@@ -21,17 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo rellenar la lista de usuarios invitados en el Centro de administración de Microsoft 365 para que los invitados puedan asistir a reuniones, ver documentos y chatear en Teams a los que están invitados.
-ms.openlocfilehash: 5677492ca8607fd3034b62264897d397e1e65f32
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Obtenga información sobre cómo rellenar la lista de usuarios invitados en el Centro de administración de Microsoft 365 para que los invitados puedan asistir a reuniones, ver documentos y chat en Teams a los que están invitados.
+ms.openlocfilehash: 56bef3039a0e00cc0f0ae6914eac11dca3b06713
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466886"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274646"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en Centro de administración de Microsoft 365
 
-Los invitados que agregue a su Microsoft Teams, SharePoint o Azure Active Directory también se agregarán a la lista **Usuarios invitados** de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>. Los huéspedes pueden asistir a reuniones, ver documentos y chatear en Teams a las que están invitados.
+De forma predeterminada, el acceso de invitado para grupos de Microsoft 365 está activado para su organización. Los administradores pueden controlar si se permite el acceso de invitado a grupos para toda su organización o para grupos individuales.
+
+Los invitados que agregue a Microsoft Teams, SharePoint o Azure Active Directory también se agregarán a la lista **Usuarios invitados** de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>. Los invitados pueden asistir a reuniones, ver documentos y chatear en Teams a los que están invitados.
 Una vez que un usuario aparece en la lista **Usuarios invitados** , puede quitar su acceso allí.
 
 Para ver los usuarios invitados, en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, expanda **Usuarios** y, a continuación, elija **Usuarios invitados**.
@@ -40,7 +42,7 @@ Para ver los usuarios invitados, en el <a href="https://go.microsoft.com/fwlink/
 
 Debe ser administrador global para realizar esta tarea.
 
-## <a name="watch-add-guests-to-teams"></a>Ver: Agregar invitados a Teams
+## <a name="watch-add-guests-to-teams"></a>Inspección: Incorporación de invitados a Teams
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
@@ -48,26 +50,35 @@ Debe ser administrador global para realizar esta tarea.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="steps-add-guests-in-azure-active-directory"></a>Pasos: Agregar invitados en Azure Active Directory
+## <a name="understanding-guest-accounts-in-microsoft-365"></a>Descripción de las cuentas de invitado en Microsoft 365
 
-Para agregar invitados en el Azure Active Directory, consulte [Agregar usuarios invitados](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+La posibilidad de compartir fácilmente archivos y documentos con las personas adecuadas, a la vez que se evita el uso compartido excesivo, requiere un planeamiento. Los siguientes recursos proporcionan más información para ayudarle a crear un entorno de uso compartido de invitados seguro en Microsoft 365.
+- Planear la colaboración externa
+- Crear un entorno seguro de uso compartido para invitados
+- Configuración del uso compartido seguro de archivos y documentos y la colaboración con Teams en Microsoft 365
+- Acceso de invitado en Microsoft Teams
+
+Además de Microsoft Teams y SharePoint, Microsoft 365 también admite el acceso de invitado en otras aplicaciones. Los siguientes productos de Microsoft 365 admiten el acceso de invitado.
+
+- Power Apps (aplicaciones de Lienzo): comparta una aplicación de lienzo con los usuarios invitados.
+- Listas: uso compartido externo o invitado en OneDrive, SharePoint y listas.
+- OneDrive: uso compartido externo o invitado en OneDrive, SharePoint y listas.
+- Planner: se aplica a plataformas web y móviles. Acceso de invitado en Microsoft Planner.
+- Grupos de Microsoft 365: administre el acceso de invitado en grupos de Microsoft 365.
+- Yammer: trabaje con grupos externos en redes de Yammer que no estén alineadas con el modo nativo.
+
+Para aplicaciones de Microsoft Office como Microsoft Word y Excel, el acceso de invitado se controla mediante la ubicación del archivo de salida, por ejemplo, Microsoft SharePoint, Teams y OneDrive.
+
+## <a name="next-steps-add-guests-in-azure-active-directory"></a>Pasos siguientes: Incorporación de invitados en Azure Active Directory
+
+Para agregar invitados en Azure Active Directory, consulte [Incorporación de usuarios invitados](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
 Después de agregar un usuario, también puede asignarle a un grupo o darle acceso a una aplicación de su organización. Una vez que haya agregado un usuario en el portal de Azure AD, ese usuario también aparecerá en la página **Usuarios invitados** de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>.
-Una vez que se agrega un usuario a la lista **Usuarios invitados**, se pueden [agregar a grupos](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Consulte [Agregar invitados de forma masiva](/azure/active-directory/b2b/tutorial-bulk-invite) para invitar a varios invitados a colaborar con su organización.
 
-## <a name="next-steps-remove-a-guest"></a>Pasos siguientes: Quitar un invitado
-
-Una vez que haya terminado de colaborar con un usuario invitado, puede quitarlo y ya no tendrá acceso a su organización.
-
-1. En el Centro de administración de Microsoft 365, expanda **Usuarios** y, a continuación, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Usuarios invitados**</a>.
-1. En la página **Usuarios invitados** , elija el usuario que desea quitar y, a continuación, elija **Eliminar un usuario**.
-
-Para quitar usuarios en el portal de Azure AD, consulte [Eliminación de un usuario invitado y recursos](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
-
 ## <a name="related-content"></a>Contenido relacionado
 
-[usuarios invitados en el Centro de administración de Microsoft 365](about-guest-users.md)
-
-[impedir que los invitados se agreguen a un grupo específico de Microsoft 365 o a un equipo de Microsoft Teams](../../solutions/per-group-guest-access.md)
+[Administración del acceso de invitado en grupos de Microsoft 365](../create-groups/manage-guest-access-in-groups.md)\
+[Impedir que los invitados se agreguen a un grupo específico de Microsoft 365 o a Microsoft Teams](../../solutions/per-group-guest-access.md)\
+[Conmutador de organización en el Centro de administración de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-organization-switcher-in-the-microsoft-365-admin-center/ba-p/1165543) (artículo)

@@ -1,5 +1,5 @@
 ---
-title: Configuración de una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
+title: Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,21 +16,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Configure una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint para documentos nuevos y sin etiquetar.
-ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071336"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276445"
 ---
-# <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configuración de una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
+# <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Esta característica se está implementando gradualmente en versión preliminar y está sujeta a cambios. También es una característica premium con detalles de licencia que se proporcionarán cuando la característica esté disponible con carácter general (GA).
 > 
-> Para leer el anuncio de vista previa, consulte la [publicación de Yammer](https://www.yammer.com/askipteam/threads/1846702701985792).
+> Para leer el anuncio de vista previa, consulte la [entrada de blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
 Cuando SharePoint está [habilitado para etiquetas de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md), puede configurar una etiqueta predeterminada para las bibliotecas de documentos. A continuación, los archivos nuevos cargados en esa biblioteca o los archivos existentes editados en la biblioteca tendrán esa etiqueta aplicada si aún no tienen una etiqueta de confidencialidad o tienen una etiqueta de confidencialidad pero con [prioridad inferior](sensitivity-labels.md#label-priority-order-matters).
 
@@ -41,10 +41,10 @@ Una etiqueta predeterminada ofrece un nivel de protección de línea base y una 
 - **Etiqueta de confidencialidad predeterminada para una biblioteca de documentos**: etiquetado basado en ubicación, aplicable solo para SharePoint. Invalida una etiqueta de prioridad inferior a menos que se aplique manualmente.
 - **Etiqueta de confidencialidad predeterminada de una directiva**: siempre aplicable para todas las ubicaciones. Nunca invalida una etiqueta existente.
 
-Cuando se usa Office en la Web para crear o editar un archivo, la etiqueta de confidencialidad predeterminada para una biblioteca de documentos se puede aplicar sin retrasos. Sin embargo, el etiquetado no es inmediato si carga un archivo o lo crea mediante Aplicaciones Microsoft 365 en Windows, macOS, iOS o Android y, a continuación, guárdelo en SharePoint:
+Cuando se usa Office en la Web para crear o editar un archivo, la etiqueta de confidencialidad predeterminada para una biblioteca de documentos se puede aplicar sin retrasos. Sin embargo, el etiquetado no es inmediato si carga un archivo o lo crea mediante Microsoft 365 应用版 en Windows, macOS, iOS o Android y, a continuación, guárdelo en SharePoint:
 
 - Carga de archivos: la etiqueta puede tardar unos minutos en aplicarse.
-- Aplicaciones Microsoft 365: la etiqueta se aplica después de cerrar la aplicación.
+- Microsoft 365 应用版: la etiqueta se aplica después de cerrar la aplicación.
 
 ## <a name="will-an-existing-label-be-overridden"></a>¿Se invalidará una etiqueta ya existente?
 
@@ -70,7 +70,7 @@ Resumen de los resultados:
 
 - A menos que haya [habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md), verá un retraso en la aplicación de la etiqueta de confidencialidad predeterminada para una biblioteca de documentos cuando los usuarios **seleccionen la** \> opción **Guardar como** archivo.
 
-- Al igual que con las etiquetas de confidencialidad para Office para la Web, algunas [configuraciones de etiquetas que aplican cifrado](encryption-sensitivity-labels.md#configure-encryption-settings) no son adecuadas para SharePoint, por lo que no admiten una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint:
+- Al igual que con las etiquetas de confidencialidad para Office på nettet, algunas [configuraciones de etiquetas que aplican cifrado](encryption-sensitivity-labels.md#configure-encryption-settings) no son adecuadas para SharePoint, por lo que no admiten una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint:
     - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** seleccionada. A veces, esta configuración se conoce como "permisos definidos por el usuario".
     - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
     - **Cifrado de clave doble** seleccionado.
@@ -79,7 +79,7 @@ Resumen de los resultados:
 
 Para una biblioteca de documentos existente:
 
-1. En SharePoint, vaya a la biblioteca de documentos > **Configuración**.
+1. En SharePoint, vaya a la configuración de la biblioteca **de documentos Configuración** \> **de la biblioteca**\>.
 
 2. En el panel flotante **Configuración** de biblioteca, seleccione **Etiquetas de confidencialidad predeterminadas** y, a continuación, seleccione una etiqueta en el cuadro desplegable. Por ejemplo:
     

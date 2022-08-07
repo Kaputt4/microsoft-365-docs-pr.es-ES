@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f686777e32aac9bea4a9d45d365ff977bf0fb357
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109701"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276228"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Antes de empezar a usar Expertos de Defender para la búsqueda
 
@@ -61,7 +61,7 @@ Todos los datos usados para la búsqueda de servicios de Defender existentes seg
 
 Los expertos de Defender para la búsqueda de datos operativos, como vales de casos y notas de analistas, se generan y almacenan en un centro de datos de Microsoft en la región de EE. UU. durante la duración del servicio, independientemente de la ubicación de almacenamiento del servicio Microsoft 365 Defender. Los datos generados para el panel de informes se almacenan en la ubicación de almacenamiento del servicio Microsoft 365 Defender del cliente. Los datos de informes y los datos operativos se conservarán durante un período de gracia de no menos de 90 días después de que un cliente deje el servicio.
 
-Los expertos de Microsoft buscan [registros de búsqueda avanzados](../../security/defender/advanced-hunting-schema-tables.md) en Microsoft 365 Defender tablas de búsqueda avanzadas. Los datos de estas tablas dependen del conjunto de servicios de Defender para los que está habilitado el cliente (por ejemplo, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps y Azure Active Directory). Los expertos también usan un gran conjunto de datos internos de inteligencia sobre amenazas para informar sobre su búsqueda y automatización.
+Los expertos de Microsoft buscan [registros de búsqueda avanzados](../../security/defender/advanced-hunting-schema-tables.md) en Microsoft 365 Defender tablas de búsqueda avanzadas. Los datos de estas tablas dependen del conjunto de servicios de Defender para los que está habilitado el cliente (por ejemplo, Pertahanan Microsoft untuk Titik Akhir, Pertahanan Microsoft untuk Office 365, Pertahanan Microsoft untuk Identitas, Microsoft Defender for Cloud Apps y Azure Active Directory). Los expertos también usan un gran conjunto de datos internos de inteligencia sobre amenazas para informar sobre su búsqueda y automatización.
 
 ### <a name="security-and-compliance"></a>Seguridad y cumplimiento
 
@@ -81,8 +81,8 @@ Este servicio solo se ofrece actualmente en inglés.
 
 Si aún no lo ha hecho, puede completar el formulario de interés del cliente para expertos de Defender para la búsqueda:
 
-1. Complete el formulario de interés del cliente. Cualquier persona de su empresa puede solicitarlo, pero si se acepta, debe trabajar con su ejecutivo comercial para realizar transacciones con la SKU.
-2. Escriba el identificador de correo electrónico de su empresa.
+1. Complete el [formulario de interés del cliente](https://aka.ms/DEX4HuntingCustomerInterestForm). Cualquier persona de su empresa puede solicitarlo, pero si se acepta, debe trabajar con su ejecutivo comercial para realizar transacciones con la SKU.
+2. Escriba el nombre, el nombre de la empresa y el identificador de correo electrónico de la empresa.
 3. Seleccione **Enviar**. Alguien de nuestro equipo de ventas se pondrá en contacto con nosotros en un plazo de cinco días laborables.
 
 

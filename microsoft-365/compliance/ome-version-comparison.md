@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: En este artículo se explican las diferencias entre las distintas versiones del cifrado de mensajes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64a67ac9423463e4fcf1b5a3ff6c2262801933b0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629341"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276271"
 ---
 # <a name="compare-versions-of-message-encryption"></a>Comparar versiones del cifrado de mensajes
 
@@ -42,7 +42,7 @@ Para evaluar si este desuso afecta a su organización, consulte [Migración de A
 
 |           **Situación**           | **OME heredado**    | **IRM en AD RMS**        | **Cifrado de mensajes de Microsoft Purview** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|*Envío de un correo cifrado*        |A través de reglas de flujo de correo de Exchange|El usuario final iniciado desde el escritorio de Outlook o Outlook en la Web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la Web; a través de reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y prevención de pérdida de datos (DLP)|
+|*Envío de un correo cifrado*        |A través de reglas de flujo de correo de Exchange|El usuario final iniciado desde el escritorio de Outlook o Outlook en la Web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook til Mac o Outlook en la Web; a través de reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y prevención de pérdida de datos (DLP)|
 |*Plantilla de administración de derechos*       |   N/D      |Opción No reenviar y plantillas personalizadas|Opción No reenviar, opción de solo cifrado y plantillas personalizadas|
 |*Tipo de destinatario*                   |Destinatarios internos y externos|Solo destinatarios internos         |Destinatarios internos y externos|
 |*Experiencia para el destinatario interno*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador web o una aplicación móvil|Experiencia en línea nativa en clientes de Outlook|Experiencia insertada nativa para destinatarios de la misma organización con clientes de Outlook.  Los destinatarios pueden leer el mensaje desde el portal de OME mediante clientes distintos de Outlook (no se requiere ninguna descarga o aplicación).|
@@ -56,7 +56,7 @@ Para evaluar si este desuso afecta a su organización, consulte [Migración de A
 Las nuevas funcionalidades proporcionan las siguientes ventajas:
 
 - Capacidad de usar la opción de solo cifrado (que permite la colaboración segura), la opción No reenviar y las restricciones personalizadas.
-- Los remitentes pueden enviar correo cifrado con las nuevas funcionalidades manualmente desde Outlook Desktop, Outlook para Mac y Outlook en la Web clientes.
+- Los remitentes pueden enviar correo cifrado con las nuevas funcionalidades manualmente desde outlook Desktop, Outlook til Mac y Outlook na Web clientes.
 - Los destinatarios de Microsoft 365 pueden usar una experiencia insertada en clientes de Outlook compatibles. Como alternativa, los administradores pueden elegir mostrar a los destinatarios de Microsoft 365 una experiencia de marca.
 - Las cuentas fuera de Microsoft 365, como gmail, yahoo y cuentas de Microsoft, están federadas con el portal de OME, lo que proporciona una mejor experiencia de usuario para estos destinatarios. Todas las demás identidades usan un código de paso único para acceder a los mensajes cifrados.
 - Los administradores pueden personalizar la personalización de marca y crear varias plantillas de personalización de marca.
@@ -83,9 +83,9 @@ Si tiene previsto usar Cifrado de mensajes de Microsoft Purview en un entorno de
 
 ### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Correo electrónico cifrado entre destinatarios de GCC High y GCC High
 
-Los remitentes pueden cifrar manualmente los correos electrónicos en Outlook para PC y Mac y Outlook en la Web, o bien las organizaciones pueden configurar una directiva para cifrar los correos electrónicos mediante reglas de flujo de correo de Exchange.
+Los remitentes pueden cifrar manualmente los correos electrónicos en Outlook para PC y Mac y Outlook na Web, o bien las organizaciones pueden configurar una directiva para cifrar los correos electrónicos mediante reglas de flujo de correo de Exchange.
 
-Los destinatarios dentro de GCC High reciben la misma experiencia de lectura en línea en Outlook para PC y Mac y Outlook en la Web que todos los demás usuarios.
+Los destinatarios dentro de GCC High reciben la misma experiencia de lectura en línea en Outlook para PC y Mac y Outlook na Web que todos los demás usuarios.
 
 ### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Correo electrónico cifrado entre los destinatarios de GCC High y Non-GCC High
 
@@ -101,11 +101,11 @@ Puede usar OME heredado y Cifrado de mensajes de Microsoft Purview en el mismo i
 
 - Para especificar Cifrado de mensajes de Microsoft Purview, use la acción **De aplicación Office 365 cifrado de mensajes y protección de derechos** de la regla de flujo de correo de Exchange.
 
-Los usuarios pueden enviar manualmente correo cifrado con Cifrado de mensajes de Microsoft Purview desde Outlook Desktop, Outlook para Mac y Outlook en la Web.
+Los usuarios pueden enviar manualmente correo cifrado con Cifrado de mensajes de Microsoft Purview desde Outlook Desktop, Outlook til Mac y Outlook na Web.
 
 ## <a name="migrate-from-legacy-ome-to-microsoft-purview-message-encryption"></a>Migración de OME heredada a Cifrado de mensajes de Microsoft Purview
 
-Aunque ambas versiones pueden coexistir, se recomienda encarecidamente editar las reglas de flujo de correo antiguas que usan la acción **de regla Aplicar la versión anterior de OME** para usar Cifrado de mensajes de Microsoft Purview. Actualice estas reglas para usar la acción de regla de flujo de correo **Aplicar Office 365 cifrado de mensajes y protección de derechos**. Para obtener instrucciones, consulte [Definición de reglas de flujo de correo para cifrar los mensajes de correo electrónico](define-mail-flow-rules-to-encrypt-email.md).
+Aunque ambas versiones pueden coexistir, se recomienda encarecidamente editar las reglas de flujo de correo antiguas que usan la acción **de regla Aplicar la versión anterior de OME** para usar Cifrado de mensajes de Microsoft Purview. Actualice estas reglas para usar la acción de regla de flujo de correo **Aplicar Office 365 cifrado de mensajes y protección de derechos**, seleccione "Cifrar" en la lista de plantillas de RMS. Para obtener instrucciones, consulte [Definición de reglas de flujo de correo para cifrar los mensajes de correo electrónico](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="get-started-with-ome"></a>Introducción a OME
 

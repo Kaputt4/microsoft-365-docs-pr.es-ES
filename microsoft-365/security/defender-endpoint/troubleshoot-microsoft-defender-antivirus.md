@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb4551d703258c5fdfa3429b721ef3317e9d2c6d
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717290"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275862"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -981,7 +981,7 @@ Usuario de UAC</dt>
 <li>Configuración de Chrome</li>
 <li>Datos de control de arranque</li>
 <li>Regedit y la configuración del Registro del Administrador de tareas</li>
-<li>Windows Update, Servicio de transferencia inteligente en segundo plano y servicio de llamada a procedimiento remoto</li>
+<li>Windows Update, servicio de transferencia inteligente en segundo plano y servicio de llamada a procedimiento remoto</li>
 <li>Archivos del sistema operativo Windows</li></ul>
 El contexto anterior se aplica a las siguientes versiones de cliente y servidor:
 <table>
@@ -2607,7 +2607,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Si la protección contra alteraciones está habilitada, cualquier intento de cambiar cualquiera de la configuración de Defender si está bloqueado y se genera el identificador de evento 5013 que indica qué cambio de configuración se bloqueó.
+Si la protección contra alteraciones está habilitada, se bloquea cualquier intento de cambiar la configuración de Defender. Se genera el identificador de evento 5013 y se indica qué cambio de configuración se bloqueó.
 </td>
 </tr>
 <tr>
@@ -2675,8 +2675,7 @@ El período de gracia del Antivirus de Microsoft Defender ha expirado. La protec
 </table>
 
 <a id="error-codes"></a>
-## Códigos de error de cliente del Antivirus de Microsoft Defender Si Antivirus de Microsoft Defender experimenta algún problema, normalmente le proporcionará un código de error para ayudarle a solucionar el problema. Con frecuencia, un error significa que se produjo un problema al instalar una actualización.
-En esta sección se proporciona la siguiente información sobre los errores de cliente del Antivirus de Microsoft Defender.
+## Códigos de error de cliente del Antivirus de Microsoft Defender Si Antivirus de Microsoft Defender experimenta algún problema, normalmente le proporcionará un código de error para ayudarle a solucionar el problema. Con frecuencia, un error significa que se produjo un problema al instalar una actualización. En esta sección se proporciona la siguiente información sobre los errores de cliente del Antivirus de Microsoft Defender.
 - El código de - error El posible motivo del error - Consejo sobre lo que debe hacer ahora
 
 Use la información de estas tablas para ayudar a solucionar problemas de códigos de error del Antivirus de Microsoft Defender.
@@ -3200,7 +3199,7 @@ Se trata de un error interno. Es posible que se haya desencadenado cuando un exa
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 
 ## <a name="related-topics"></a>Temas relacionados

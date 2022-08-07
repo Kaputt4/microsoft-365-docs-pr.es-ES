@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892735"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276008"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
@@ -102,4 +102,4 @@ Para obtener más información sobre el acceso condicional, consulte [¿Qué es 
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Configure formas de [protección contra malware y otras amenazas](m365bp-increase-protection.md).
+[Proteger las cuentas de administrador en Microsoft 365 Empresa Premium](m365bp-protect-admin-accounts.md)

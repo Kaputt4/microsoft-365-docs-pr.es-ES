@@ -16,6 +16,8 @@
   items:
     - name: Uso de LTI de Microsoft OneDrive con Blackboard
       href: onedrive-lti-blackboard.md
+    - name: Uso de reuniones de Microsoft Teams con Blackboard Learn
+      href: teams-meetings-with-blackboard-learn.md
     - name: Uso de clases de Microsoft Teams con Blackboard Learn Ultra
       href: teams-classes-with-blackboard.md
 - name: Integraciones de Moodle

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3de665a941eb1f1922291b3188a6a7429b5330e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 899e7052d5091e8ef161dc122b83b6f34532de2c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109730"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275876"
 ---
 # <a name="microsoft-defender-experts-for-hunting"></a>Expertos de Microsoft Defender para la búsqueda
 
@@ -45,7 +45,7 @@ Las siguientes funcionalidades incluidas en este servicio de búsqueda de amenaz
 
 [Vea este breve vídeo](https://youtu.be/4t1JgE0X0jc) para obtener más información sobre cómo los expertos de Microsoft Defender para la búsqueda pueden ayudarle a realizar un seguimiento de las amenazas avanzadas más recientes en su entorno.
 
-Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender. Si es un cliente Microsoft 365 Defender y está interesado en comprar expertos de Defender para la búsqueda, complete un formulario de intercalación de clientes.
+Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender. Si es un cliente Microsoft 365 Defender y está interesado en comprar expertos de Defender para la búsqueda, complete un formulario de [interés para el cliente](https://aka.ms/DEX4HuntingCustomerInterestForm).
 
 ### <a name="next-step"></a>Paso siguiente
 

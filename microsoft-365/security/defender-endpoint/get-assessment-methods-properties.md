@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487297"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276948"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportación de métodos de evaluación y propiedades por dispositivo
 
@@ -36,7 +36,7 @@ ms.locfileid: "66487297"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Proporciona métodos y detalles de propiedades sobre las API que extraen Administración de amenazas y vulnerabilidades datos por dispositivo. Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
+Proporciona métodos y detalles de propiedades sobre las API que extraen datos de administración de vulnerabilidades por dispositivo. Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 
 > [!NOTE]
 > A menos que se indique lo contrario, todos los métodos de evaluación de exportación enumerados son **_de exportación completa_** y **_por dispositivo_** (también **_denominados por dispositivo_**).
@@ -46,6 +46,7 @@ Puede usar las API de evaluación de exportación para recuperar (exportar) dife
 - [1. Exportación de la evaluación de configuraciones seguras](#1-export-secure-configurations-assessment)
 - [2. Exportación de la evaluación del inventario de software](#2-export-software-inventory-assessment)
 - [3. Evaluación de vulnerabilidades de software de exportación](#3-export-software-vulnerabilities-assessment)
+- [4. Exportación de la evaluación del inventario de software que no es de código de producto](#4-export-non-product-code-software-inventory-assessment)
 
 Las API que corresponden a los tipos de información de exportación se describen en las secciones 1, 2 y 3.
 
@@ -74,29 +75,29 @@ Exportación de una evaluación de configuración segura **(a través de archivo
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
-configurationCategory|String|Categoría o agrupación a la que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad.
-configurationId|String|Identificador único de una configuración específica.
-configurationImpact|String|Efecto clasificado de la configuración en la puntuación de configuración general (1-10).
-configurationName|String|Nombre para mostrar de la configuración.
-configurationSubcategory|String|Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, funcionalidades o características específicas.
+configurationCategory|Cadena|Categoría o agrupación a la que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad.
+configurationId|Cadena|Identificador único de una configuración específica.
+configurationImpact|Cadena|Efecto clasificado de la configuración en la puntuación de configuración general (1-10).
+configurationName|Cadena|Nombre para mostrar de la configuración.
+configurationSubcategory|Cadena|Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, funcionalidades o características específicas.
 deviceId|Cadena|Identificador único del dispositivo en el servicio.
 deviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 isApplicable|Bool|Indica si la configuración o la directiva son aplicables.
 isCompliant|Bool|Indica si la configuración o directiva está configurada correctamente.
 isExpectedUserImpact|Bool|Indica si el usuario se ve afectado si se aplicará la configuración.
-osPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo. Sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte Sistemas operativos y plataformas compatibles con TVM para obtener más información.
+osPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos, plataformas y funcionalidades compatibles](../defender-vulnerability-management/tvm-supported-os.md) para obtener más información.
 osVersion|Cadena|Versión específica del sistema operativo que se ejecuta en el dispositivo.
-rbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si el dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
-rbacGroupId|String|Identificador de grupo de control de acceso basado en rol (RBAC).
-recommendationReference|String|Referencia al identificador de recomendación relacionado con el software.
-Timestamp|String|La última vez que se vio la configuración en el dispositivo.
+rbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si el dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+rbacGroupId|Cadena|Identificador de grupo de control de acceso basado en rol (RBAC).
+recommendationReference|Cadena|Referencia al identificador de recomendación relacionado con el software.
+Timestamp|Cadena|La última vez que se vio la configuración en el dispositivo.
 
 ### <a name="13-properties-via-files"></a>1.3 Propiedades (a través de archivos)
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
 Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.
-GeneratedTime|String|Hora en que se generó la exportación.
+GeneratedTime|Cadena|Hora en que se generó la exportación.
 
 ## <a name="2-export-software-inventory-assessment"></a>2. Exportación de la evaluación del inventario de software
 
@@ -113,27 +114,27 @@ Devuelve todo el software instalado y sus detalles en cada dispositivo.
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
-DeviceId|String|Identificador único del dispositivo en el servicio.
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 DiskPaths|Matriz[cadena]|Prueba de disco de que el producto está instalado en el dispositivo.
-EndOfSupportDate|String|La fecha en la que la compatibilidad con este software tiene o finalizará.
-EndOfSupportStatus|String|Fin del estado de soporte técnico. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+EndOfSupportDate|Cadena|La fecha en la que la compatibilidad con este software tiene o finalizará.
+EndOfSupportStatus|Cadena|Fin del estado de soporte técnico. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|Int|Número de puntos débiles en este software en este dispositivo.
-OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.
-RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
-rbacGroupId|String|Identificador de grupo de control de acceso basado en rol (RBAC).
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos, plataformas y funcionalidades compatibles](../defender-vulnerability-management/tvm-supported-os.md) para obtener más información.
+RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+rbacGroupId|Cadena|Identificador de grupo de control de acceso basado en rol (RBAC).
 RegistryPaths|Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
-SoftwareFirstSeenTimestamp|String|La primera vez que se vio este software en el dispositivo.
-SoftwareName|String|Nombre del producto de software.
-SoftwareVendor|String|Nombre del proveedor de software.
-SoftwareVersion|String|Número de versión del producto de software.
+SoftwareFirstSeenTimestamp|Cadena|La primera vez que se vio este software en el dispositivo.
+SoftwareName|Cadena|Nombre del producto de software.
+SoftwareVendor|Cadena|Nombre del proveedor de software.
+SoftwareVersion|Cadena|Número de versión del producto de software.
 
 ### <a name="23-properties-via-files"></a>2.3 Propiedades (a través de archivos)
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
 Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.
-GeneratedTime|String|Hora en que se generó la exportación.
+GeneratedTime|Cadena|Hora en que se generó la exportación.
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. Evaluación de vulnerabilidades de software de exportación
 
@@ -151,66 +152,99 @@ Evaluación de vulnerabilidades de software **de exportación delta** **(respues
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
-CveId|String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).
-CvssScore|String|La puntuación CVSS del CVE.
-DeviceId|String|Identificador único del dispositivo en el servicio.
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.
+CveId|Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).
+CvssScore|Cadena|La puntuación CVSS del CVE.
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 DiskPaths|Cadena de matriz\[\]|Prueba de disco de que el producto está instalado en el dispositivo.
-ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|String|La primera vez que se vio el CVE de este producto en el dispositivo.
-Id|String|Identificador único del registro.
-LastSeenTimestamp|String|La última vez que se vio el CVE en el dispositivo.
-OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.
-RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
-rbacGroupId|String|Identificador de grupo de control de acceso basado en rol (RBAC).
-RecommendationReference|String|Referencia al identificador de recomendación relacionado con este software.
-RecommendedSecurityUpdate|String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
-RecommendedSecurityUpdateId|String|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes.
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|Cadena|La primera vez que se vio el CVE de este producto en el dispositivo.
+Id|Cadena|Identificador único del registro.
+LastSeenTimestamp|Cadena|La última vez que se vio el CVE en el dispositivo.
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos, plataformas y funcionalidades compatibles](../defender-vulnerability-management/tvm-supported-os.md) para obtener más información.
+RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+rbacGroupId|Cadena|Identificador de grupo de control de acceso basado en rol (RBAC).
+RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.
+RecommendedSecurityUpdate|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
+RecommendedSecurityUpdateId|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes.
 Rutas de acceso del Registro|Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
 SecurityUpdateAvailable|Booleano|Indica si hay una actualización de seguridad disponible para el software.
-SoftwareName|String|Nombre del producto de software.
-SoftwareVendor|String|Nombre del proveedor de software.
-SoftwareVersion|String|Número de versión del producto de software.
-VulnerabilitySeverityLevel|String|Nivel de gravedad que se asigna a la vulnerabilidad de seguridad en función de la puntuación cvss y los factores dinámicos influenciados por el panorama de amenazas.
+SoftwareName|Cadena|Nombre del producto de software.
+SoftwareVendor|Cadena|Nombre del proveedor de software.
+SoftwareVersion|Cadena|Número de versión del producto de software.
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad que se asigna a la vulnerabilidad de seguridad en función de la puntuación cvss y los factores dinámicos influenciados por el panorama de amenazas.
 
 ### <a name="33-properties-via-files"></a>3.3 Propiedades (a través de archivos)
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
 Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.
-GeneratedTime|String|Hora en que se generó la exportación.
+GeneratedTime|Cadena|Hora en que se generó la exportación.
 
 ### <a name="34-properties-delta-export-json-response"></a>Propiedades 3.4 (respuesta JSON de exportación diferencial)
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
-CveId |String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).
-CvssScore|String|La puntuación CVSS del CVE.
-DeviceId|String|Identificador único del dispositivo en el servicio.
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.
+CveId |Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).
+CvssScore|Cadena|La puntuación CVSS del CVE.
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 DiskPaths|Matriz[cadena]|Prueba de disco de que el producto está instalado en el dispositivo.
-EventTimestamp|String|La hora en que se encontró el evento delta.
-ExploitabilityLevel|String|El nivel de vulnerabilidad de vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|String|La primera vez que se vio el CVE del producto en el dispositivo.
-Id|String|Identificador único del registro.  
-LastSeenTimestamp|String|La última vez que se vio el CVE en el dispositivo.
-OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.
-RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
-RecommendationReference|String|Referencia al identificador de recomendación relacionado con este software.
-RecommendedSecurityUpdate |String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
-RecommendedSecurityUpdateId |String|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes
+EventTimestamp|Cadena|La hora en que se encontró el evento delta.
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|Cadena|La primera vez que se vio el CVE del producto en el dispositivo.
+Id|Cadena|Identificador único del registro.  
+LastSeenTimestamp|Cadena|La última vez que se vio el CVE en el dispositivo.
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos, plataformas y funcionalidades compatibles](../defender-vulnerability-management/tvm-supported-os.md) para obtener más información.
+RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.
+RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
+RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes
 RegistryPaths |Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
-SoftwareName|String|Nombre del producto de software.
-SoftwareVendor|String|Nombre del proveedor de software.
-SoftwareVersion|String|Número de versión del producto de software.
-Estado|String|**Nuevo** (para una nueva vulnerabilidad introducida en un dispositivo). **Se ha corregido** (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se corrigió). **Se ha actualizado** (para una vulnerabilidad en un dispositivo que ha cambiado. Los cambios posibles son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|String|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.
+SoftwareName|Cadena|Nombre del producto de software.
+SoftwareVendor|Cadena|Nombre del proveedor de software.
+SoftwareVersion|Cadena|Número de versión del producto de software.
+Estado|Cadena|**Nuevo** (para una nueva vulnerabilidad introducida en un dispositivo). **Se ha corregido** (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se corrigió). **Se ha actualizado** (para una vulnerabilidad en un dispositivo que ha cambiado. Los cambios posibles son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.
 
-## <a name="see-also"></a>Vea también
+## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. Exportación de la evaluación del inventario de software que no es de código de producto
+
+Devuelve todo el software instalado que no tiene una [enumeración de plataforma común (CPE)](https://nvd.nist.gov/products/cpe) y sus detalles en cada dispositivo.
+
+### <a name="41-methods"></a>4.1 Métodos
+
+|Método|Tipo de datos|Descripción|
+|:---|:---|:---|
+|Exportación de la evaluación del inventario de software que no es de código de producto **(respuesta JSON)**|Inventario de software que no es de código de producto por recopilación de dispositivos. Consulte: [Propiedades 4.2 (respuesta JSON)](#42-properties-json-response)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. La API extrae todos los datos de la organización como respuestas JSON. Este método es mejor para organizaciones pequeñas con menos de 100 K dispositivos. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los resultados siguientes. |
+| Exportación de la evaluación del inventario de software que no es de código de producto **(a través de archivos)**|Inventario de software que no es de código de producto por archivos de dispositivo. Vea: [Propiedades 4.3 (a través de archivos)](#43-properties-via-files)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar datos de Azure Storage de la siguiente manera: <ol><li>Llame a la API para obtener una lista de direcciones URL de descarga con los datos de la organización.</li><li>Descargue los archivos mediante las direcciones URL de descarga y procese los datos como desee.</li></ol> |
+
+### <a name="42-properties-json-response"></a>Propiedades 4.2 (respuesta JSON)
+
+Propiedad (ID)|Tipo de datos|Descripción
+:---|:---|:---
+DeviceId|string|Identificador único del dispositivo en el servicio.
+DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.
+OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos, plataformas y funcionalidades compatibles](../defender-vulnerability-management/tvm-supported-os.md) para obtener más información.
+RbacGroupName|string|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
+RbacGroupId|string|Identificador de grupo de control de acceso basado en rol (RBAC).
+SoftwareLastSeenTimestamp|string|La última vez que se vio este software en el dispositivo.
+SoftwareName|string|Nombre del producto de software.
+SoftwareVendor|string|Nombre del proveedor de software.
+SoftwareVersion|string|Número de versión del producto de software.
+
+### <a name="43-properties-via-files"></a>4.3 Propiedades (a través de archivos)
+
+Propiedad (ID)|Tipo de datos|Descripción
+:---|:---|:---
+Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.
+GeneratedTime|Cadena|Hora en que se generó la exportación.
+
+## <a name="see-also"></a>Ver también
 
 - [Exportación de una evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)
 - [Exportación de la evaluación del inventario de software por dispositivo](get-assessment-software-inventory.md)
 - [Exportación de la evaluación de vulnerabilidades de software por dispositivo](get-assessment-software-vulnerabilities.md)
+- [Exportación de la evaluación del inventario de software que no es cpe por dispositivo](get-assessment-non-cpe-software-inventory.md)
 
 Otros relacionados
 

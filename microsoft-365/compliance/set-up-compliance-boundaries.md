@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que un administrador de eDiscovery puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 903992df71b82a7dc1081bb286871e0b7af72d37
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625069"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275986"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuración de límites de cumplimiento para las investigaciones de eDiscovery
 
@@ -125,7 +125,7 @@ Esta es una descripción de cada parámetro del comando:
   
 - `FilterName`: especifica el nombre del filtro. Use un nombre que describa o identifique la agencia en la que se usa el filtro.
 
-- `Users`: especifica los usuarios o grupos que obtienen este filtro aplicado a las acciones de búsqueda que realizan. Para los límites de cumplimiento, este parámetro especifica los grupos de roles (que creó en el paso 3) de la agencia para la que va a crear el filtro. Tenga en cuenta que se trata de un parámetro de varios valores, por lo que puede incluir uno o varios grupos de roles, separados por comas.
+- `Users`: especifica los usuarios o grupos que obtienen este filtro aplicado a las acciones de búsqueda que realizan. Para los límites de cumplimiento, este parámetro especifica los grupos de roles (que creó en el paso 2) en la agencia para la que va a crear el filtro. Tenga en cuenta que se trata de un parámetro de varios valores, por lo que puede incluir uno o varios grupos de roles, separados por comas.
 
 - `Filters`: especifica los criterios de búsqueda para el filtro. Para los límites de cumplimiento, defina los siguientes filtros. Cada una de ellas se aplica a diferentes ubicaciones de contenido.
 
@@ -220,9 +220,9 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |GBR  <br/> |Europa  <br/> |
     |JPN  <br/> |Asia Pacífico  <br/> |
     |IND  <br/> |Asia Pacífico  <br/> |
-    |LAM  <br/> |EE. UU.  <br/> |
-    |NI  <br/> |Europa |
-    |SUJETADOR  <br/> |Centros de datos de Norteamérica |
+    |Lam  <br/> |EE. UU.  <br/> |
+    |NOR  <br/> |Europa |
+    |BRA  <br/> |Centros de datos de Norteamérica |
     |||
 
    Si no especifica el parámetro *Region* para un filtro de permisos de búsqueda, se buscará la región principal de SharePoint de la organización. Los resultados de la búsqueda se exportan al centro de datos más cercano.
@@ -250,7 +250,7 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multigeo
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro *Region* dirige las búsquedas a la ubicación principal o satélite donde el administrador de exhibición de documentos electrónicos llevará a cabo investigaciones de eDiscovery. Si un administrador de eDiscovery busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelve ningún resultado de búsqueda.
 
-- Al exportar los resultados de la búsqueda desde eDiscovery (Estándar), el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que puede buscar mediante la herramienta Búsqueda de contenido) se carga en la ubicación de Azure Storage del centro de datos especificado por el parámetro *Region*. Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte entre fronteras controladas. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+- Al exportar los resultados de búsqueda desde eDiscovery (Estándar), el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype for Business, SharePoint, OneDrive y otros servicios que puede buscar mediante la herramienta Búsqueda de contenido) se carga en la ubicación de Azure Storage en el centro de datos especificado por el parámetro *Region*. Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte entre fronteras controladas. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
 
   Al exportar contenido desde eDiscovery (Premium), no se puede controlar dónde se carga el contenido mediante el parámetro *Region* . El contenido se carga en una ubicación de Azure Storage en un centro de datos de la ubicación central de la organización. Para obtener una lista de ubicaciones geográficas basadas en su ubicación central, consulte [Configuración de eDiscovery multigeográfica de Microsoft 365](../enterprise/multi-geo-ediscovery-configuration.md).
 
@@ -298,7 +298,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar `-not()` en un filtro de permisos de búsqueda) para un límite de cumplimiento basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indexado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Quién puede crear y administrar filtros de permisos de búsqueda (mediante cmdlets de New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter)?**
   

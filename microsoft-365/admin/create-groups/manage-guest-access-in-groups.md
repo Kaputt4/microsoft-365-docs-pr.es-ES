@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de Microsoft 365, ver invitados y usar PowerShell para controlar el acceso de invitado.
-ms.openlocfilehash: 59ec932aea516107f08570f899987c4d619aa66b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c2545c4b6e0d87f3f143139887ff50126bf41d06
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084221"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274756"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en grupos de Microsoft 365
 
@@ -50,9 +50,9 @@ El acceso de invitado en grupos se usa a menudo como parte de un escenario más 
 
 Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**grupos**</a>.
 
-1. En el Centro de administración, vaya a **Mostrar toda** \> la **configuración Configuración** \> **Configuración De la organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Grupos de Microsoft 365**.
+1. En el centro de administración, vaya a **Mostrar toda** \> la **configuración De** \> la **organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Microsoft 365 组**.
   
-2. En la página **Grupos de Microsoft 365**, elija si desea permitir que personas ajenas a su organización accedan a los recursos del grupo o permitir que los propietarios del grupo agreguen personas ajenas a la organización a grupos.
+2. En la página **Microsoft 365 组**, elija si desea permitir que personas ajenas a su organización accedan a los recursos del grupo o permitir que los propietarios del grupo agreguen personas ajenas a la organización a grupos.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Agregar invitados a un grupo de Microsoft 365 desde el Centro de administración
 
@@ -60,15 +60,25 @@ Si el invitado ya existe en el directorio, puede agregarlo a los grupos desde el
   
 1. En el centro de administración, vaya a **Grupos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**.**</a>
   
-2. Haga clic en el grupo al que desea agregar el invitado y seleccione **Ver todos los miembros y administrarlos** en la pestaña **Miembros** . 
+2. Seleccione el grupo al que desea agregar el invitado y seleccione **Ver todos los miembros y administrarlos** en la pestaña **Miembros** . 
   
-4. Seleccione **Agregar miembros** y elija el nombre del invitado que desea agregar.
-    
-5. Seleccione **Guardar**.
+3. Seleccione **Agregar miembros** y elija el nombre del invitado que desea agregar.
+
+4. Haga clic en **Guardar**.
 
 Si desea agregar un invitado directamente al directorio, puede [agregar usuarios de colaboración B2B de Azure Active Directory en el Azure Portal](/azure/active-directory/b2b/add-users-administrator).
 
 Si desea editar cualquiera de la información de un invitado, puede [agregar o actualizar la información de perfil de un usuario mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+## <a name="remove-a-guest"></a>Eliminación de un invitado
+
+Una vez que haya terminado de colaborar con un usuario invitado, puede quitarlo y ya no tendrá acceso a su organización.
+
+1. En el Centro de administración de Microsoft 365, expanda **Usuarios** y, a continuación, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Usuarios invitados**</a>.
+1. En la página **Usuarios invitados** , elija el usuario que desea quitar y, a continuación, elija **Eliminar un usuario**.
+
+Para quitar usuarios en el portal de Azure AD, consulte [Eliminación de un usuario invitado y recursos](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+
 
 ## <a name="related-content"></a>Contenido relacionado
 

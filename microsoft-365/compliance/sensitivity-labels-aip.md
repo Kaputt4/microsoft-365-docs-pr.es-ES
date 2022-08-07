@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d7cb00b476e31916139d3cdcf5dd53834bc5025a
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970174"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275942"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -121,7 +121,7 @@ Recuerde que, cuando use este método para deshabilitar el complemento de AIP, p
 
 Muchas de las características de etiquetado compatibles con el complemento de AIP ahora son compatibles con el etiquetado integrado. Para obtener una lista más detallada de las funcionalidades, las versiones mínimas que podrían ser necesarias e información de configuración, vea [Administrar etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
 
-Hay más características planeadas y en desarrollo. Si hay una característica específica que le interese, consulte el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) y considere la posibilidad de unirse a la [protección de la información de Microsoft en la versión preliminar privada de Office](https://aka.ms/MIP/PreviewRing).
+Hay más características planeadas y en desarrollo. Si hay una característica específica que le interese, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) y considere la posibilidad de unirse a la [protección de la información de Microsoft en la versión preliminar privada de Office](https://aka.ms/MIP/PreviewRing).
 
 Use la siguiente información para identificar si usa una característica del complemento de AIP que aún no es compatible con el etiquetado integrado:
 
