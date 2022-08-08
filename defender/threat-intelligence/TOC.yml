@@ -31,3 +31,5 @@
   items:
     - name: Recopilando inteligencia sobre amenazas y encadenamiento de infraestructura
       href: gathering-threat-intelligence-and-infrastructure-chaining.md
+    - name: Recopilando inteligencia de vulnerabilidades
+      href: gathering-vulnerability-intelligence.md

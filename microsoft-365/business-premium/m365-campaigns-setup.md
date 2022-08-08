@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: b22519c023b53a284611e7efe38f078bee70799f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 90de3294ffb7bfe1ebc2890375433ba432cdca4c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893043"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276840"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 
-Ahora que [se ha suscrito a Microsoft 365 para campañas](get-microsoft-365-campaigns.md), el siguiente paso es configurarlo todo.
+Después de que [se ha suscrito a Microsoft 365 para campañas](get-microsoft-365-campaigns.md), el siguiente paso es configurarlo todo.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -40,7 +40,8 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 | Suscripción  | Microsoft 365 Empresa Premium o Microsoft 365 para campañas. <br/><br/> Para iniciar una prueba o comprar su suscripción, consulte los artículos siguientes: <br/>- [Obtención de Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenga Microsoft 365 para Campañas](get-microsoft-365-campaigns.md) |
 | Permisos  | Para completar el proceso de configuración inicial, debe ser un administrador global. [Obtenga más información sobre los roles de administrador](../admin/add-users/about-admin-roles.md). |
 | Requisitos de los exploradores | Microsoft Edge, Safari, Chrome o Firefox. [Obtenga más información sobre los requisitos de los exploradores](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Sistema operativo | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 o posterior, o Windows Server 2016<br/><br/>**Mac**: Una de las tres últimas versiones de macOS |
+| Sistemas operativos (cliente) | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS**: Una de las tres últimas versiones de macOS 
+| Sistemas operativos (servidores) | Windows Server o Linux Server <br/>- Requiere servidores de Microsoft Defender para empresas (actualmente en versión preliminar)<br/>- Consulte [Cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar).](../security/defender-business/get-defender-business-servers.md)  |
 
 > [!TIP]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -99,4 +100,4 @@ Para ayudar a su personal a conocer los pasos necesarios para proteger su campa�
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Una vez que haya alcanzado estos objetivos, [aumente la seguridad](m365bp-security-overview.md).
+Continúe para [aumentar la seguridad](m365bp-security-overview.md).
