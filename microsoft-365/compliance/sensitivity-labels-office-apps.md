@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175320"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276467"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,7 +39,7 @@ Si no puede actualizar a Aplicaciones de Microsoft 365 para empresas para las v
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
-En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
+En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -104,7 +104,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
-|[Compatibilidad con PDF](#pdf-support) | En revisión|  En revisión | En revisión | En revisión | En revisión |
+|[Compatibilidad con PDF](#pdf-support) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider)|  En revisión | En revisión | En revisión | En revisión |
 |[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En revisión | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2226+ | Implementación: 4.2203+ | En revisión |
 
 **Notas al pie:**
@@ -447,11 +447,13 @@ Esta acción se registra con el evento de auditoría del **Archivo cuyo nombre s
 
 Cuando se crea el PDF, hereda la etiqueta con cualquier marca de contenido y cifrado. Los archivos PDF cifrados se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
+Outlook no admite actualmente datos adjuntos PDF que conserven el cifrado de un mensaje etiquetado. Sin embargo, Outlook ahora sí permite ofrecer una advertencia o impedir a los usuarios que impriman en PDF, como se describe a continuación.
+
 Escenarios de PDF no admitidos:
 
 - Imprimir en PDF
     
-    Si los usuarios seleccionan esta opción, se les advierte de que el documento perderá la protección de la etiqueta y el cifrado (si se aplica), y deben confirmar para continuar. Si la directiva de etiqueta de confidencialidad requiere justificación para quitar una etiqueta o reducir su clasificación, verá este mensaje.
+    Si los usuarios seleccionan esta opción, se les advertirá de que el documento perderá la protección de la etiqueta y el cifrado (si se aplica), y deberán confirmar para continuar. Si la directiva de etiqueta de confidencialidad requiere justificación para quitar una etiqueta o reducir su clasificación, verá este mensaje.
     
     Dado que esta opción quita la etiqueta de confidencialidad, esta opción no estará disponible para los usuarios si usa el etiquetado obligatorio. Esta configuración hace referencia a la configuración de directiva de etiqueta de confidencialidad que requiere que los usuarios apliquen una etiqueta a sus correos electrónicos y documentos.
 
