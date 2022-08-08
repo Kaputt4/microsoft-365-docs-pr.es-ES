@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892867"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274713"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Aumento de la protección contra amenazas para Microsoft 365 Empresa Premium
 
@@ -34,7 +34,7 @@ En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Em
 - [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales.
 - [Cómo ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan.
-- [Pasos siguientes](#next-steps) (como la protección de dispositivos no administrados)
+- [Siguiente objetivo](#next-objective) (protección de dispositivos no administrados)
 
 ## <a name="review-and-apply-preset-security-policies"></a>Revisión y aplicación de directivas de seguridad preestablecidas
 
@@ -207,6 +207,6 @@ Puede evitar que las personas de su organización compartan sus calendarios. Tam
 
 Si los usuarios pueden compartir sus calendarios, consulte [estas instrucciones](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) sobre cómo compartir desde Outlook en la Web.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-objective"></a>Siguiente objetivo
 
 Ahora vamos a [**configurar esos dispositivos BYOD no administrados**](m365bp-devices-overview.md).

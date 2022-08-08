@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure la autenticación multifactor para teléfonos en Microsoft Empresa Premium. Aumente la seguridad mediante las características de MFA de Microsoft Empresa Premium para su teléfono.
-ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894019"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274998"
 ---
 # <a name="set-up-mfa"></a>Configurar MFA
 
@@ -37,8 +37,8 @@ Obtenga más información en [Configurar la autenticación multifactor en Micros
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Usar la aplicación Outlook en sus dispositivos
 
-Después de que un administrador haya requerido a los usuarios de primera línea que usen MFA, la aplicación autenticadora actúa como segunda forma de autenticación. Le recomendamos que instale y use la aplicación de Outlook para acceder a su correo electrónico de Microsoft 365.
+Cuando se aplica MFA, la aplicación autenticadora actúa como una segunda forma de autenticación. También se recomienda que todos instalen y usen la aplicación Outlook para acceder a su correo electrónico de Microsoft 365 en sus dispositivos. Consulte [Descarga de Microsoft Outlook para iOS y Android](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
 
 ## <a name="next-objective"></a>Siguiente objetivo
 
-Para el siguiente objetivo, siga las instrucciones para [instalar aplicaciones de Office](m365bp-install-office-apps.md).
+Continúe con la [instalación de aplicaciones de Office](m365bp-install-office-apps.md).
