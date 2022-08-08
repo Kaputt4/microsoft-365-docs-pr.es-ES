@@ -23,12 +23,12 @@ description: Recursos personalizables e infografías que puede agregar a su siti
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cb2ed6e54c4d513db89440549e69e9bacb4bc636
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e0ac855943bb0cd9ddb7279252b1df6ae9440ffc
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822667"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277057"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments"></a>Ayude a sus clientes a usar citas virtuales
 
@@ -100,10 +100,12 @@ Puede vincular a sus clientes aquí Unirse a una cita de Bookings como asistente
 
 Saque el máximo partido de las citas virtuales asegurándose de que los miembros del personal sepan cómo realizarlas. Puede compartir estos artículos y vídeos con los miembros del equipo para ayudarles a comprender mejor las citas virtuales.
 
-- [Obtenga información sobre cómo usar la aplicación Bookings en Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
-- [Obtenga información sobre cómo unirse a una cita de Bookings](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0)
-- [Realizar una cita](bookings-virtual-visits.md#conduct-an-appointment)
-- [Ver un vídeo sobre citas virtuales](#help-your-clients-and-customers-use-virtual-appointments)
+- [Obtenga información sobre cómo usar la aplicación Bookings en Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
+- [Obtenga información sobre cómo unirse a una cita de Bookings](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
+- [Dirigir una cita](bookings-virtual-visits.md#conduct-an-appointment).
+- [Ver un vídeo sobre citas virtuales](#help-your-clients-and-customers-use-virtual-appointments).
+- [Ver un vídeo sobre cómo administrar la cola en citas virtuales](https://go.microsoft.com/fwlink/?linkid=2202615).
+- [Ver un vídeo sobre las características de la sala de espera en las citas virtuales](https://go.microsoft.com/fwlink/?linkid=2202614).
 
 ## <a name="resources-for-your-clients"></a>Recursos para los clientes
 
