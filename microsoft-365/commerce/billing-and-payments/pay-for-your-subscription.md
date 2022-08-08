@@ -23,13 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/26/2022
-ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/04/2022
+ms.openlocfilehash: 74b76a8719d57cfd2caabc02ace1e80583db0821
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112359"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276599"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -69,9 +69,14 @@ Puede pagar la suscripción con tarjeta de crédito/débito o cuenta bancaria. A
 
 En algunos casos, puede pagar la suscripción mediante factura con un cheque o EFT. Para poder pagar con factura, debe:
 
-- Ser un cliente establecido
-- Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
+- Haber sido cliente durante al menos seis meses y no tener saldos pendientes
+- Tener un gasto mínimo de 6 000 USD al mes, o haber comprado una cantidad mínima durante 3 meses cualesquiera de los últimos 12 (esta cantidad puede variar según la localización del servicio).
 - Pasar una comprobación de crédito
+
+Cuando solicita cambiar el método de pago a cheque o transferencia bancaria, hay dos resultados posibles:
+
+- Se le aprueba automáticamente y se le pide información sobre su empresa.
+- No se le aprueba automáticamente, pero puede enviar una [solicitud de asistencia al cliente](../../admin/get-help-support.md).
 
 Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
@@ -102,6 +107,18 @@ Si no agregó el método de pago usado para pagar la suscripción, debe reemplaz
 > [!NOTE]
 > - El pago con cheque solo está disponible en algunos países.
 > - Si debe pagar la cuota de suscripción para el programa Microsoft Partner Network (MPN) (suscripción a Action Pack, competencias Silver o Gold), consulte [Pagar tasas de competencia](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) para obtener información sobre cómo realizar un pago MPN.
+
+## <a name="check-or-wire-transfer-payment-processing-time"></a>Tiempo de procesamiento de pago por cheque o transferencia bancaria
+
+Los pagos por cheque se hacen efectivos entre tres y cinco días después de ser autorizados por su banco. Puede ponerse en contacto con su banco para comprobar el estado del cheque.
+
+El tiempo de procesamiento de los pagos por transferencia bancaria varía según el tipo de transferencia:
+
+- Transferencias nacionales ACH: cinco días laborables. De dos a tres días para llegar, más dos días para hacerse efectivas.
+- Transferencias bancarias (nacionales): cuatro días laborables. Dos días para llegar, más dos días para hacerse efectivas.
+- Transferencias bancarias (internacionales): siete días laborables. Cinco días para llegar, más dos días para hacerse efectivas.
+
+Si su cuenta ha sido aprobada para el pago por cheque o transferencia bancaria, las instrucciones para el pago estarán en la factura.
 
 ## <a name="can-i-pay-my-invoice-online"></a>¿Puedo pagar mi factura en línea?
 
