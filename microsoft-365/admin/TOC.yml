@@ -121,7 +121,7 @@
               href: manage/remove-licenses-from-users.md
             - name: Usuarios invitados
               href: add-users/about-guest-users.md
-            - name: Agregar usuarios invitados a un grupo de Microsoft 365
+            - name: Administrar el acceso de invitado en grupo en Microsoft 365
               href: create-groups/manage-guest-access-in-groups.md
             - name: Cambiar un nombre de usuario y una dirección de correo electrónico
               href: add-users/change-a-user-name-and-email-address.md
@@ -161,6 +161,8 @@
               href: create-groups/explain-groups-knowledge-worker.md
             - name: Administrar grupos
               href: create-groups/manage-groups.md
+            - name: Administración del tamaño del buzón de grupo de Microsoft 365
+              href: create-groups/group-mailbox-size-management.md
             - name: Agregar o quitar miembros del grupo
               href: create-groups/add-or-remove-members-from-groups.md
             - name: Restaurar un grupo eliminado
