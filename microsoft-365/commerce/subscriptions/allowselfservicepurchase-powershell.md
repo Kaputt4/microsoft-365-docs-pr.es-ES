@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el cmdlet AllowSelfServicePurchase de PowerShell para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.date: 08/09/2022
+ms.openlocfilehash: 080b12672607301b9dcc9977c1c93ad9b48d43cd
+ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714714"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301908"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Uso de AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
@@ -34,9 +34,10 @@ El módulo **de PowerShell MSCommerce** ya está disponible en [Galería de Powe
 
 Puede usar el módulo de PowerShell **MSCommerce** para:
 
-- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase** , independientemente de si está habilitado o deshabilitado.
-- Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
+- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase** , tanto si está habilitado, deshabilitado o si permite pruebas sin un método de pago
+- Ver una lista de productos aplicables y si la compra de autoservicio está habilitada, deshabilitada o permite pruebas sin un método de pago
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
+- Visualización o modificación de la configuración de las pruebas sin métodos de pago
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,7 +118,17 @@ En la tabla siguiente se enumeran los productos disponibles y su **ProductId**.
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 
-Después de ver la lista de productos disponibles para la compra de autoservicio, puede ver o modificar la configuración de un producto específico.
+Puede establecer el parámetro **Value** para **AllowSelfServicePurchase** para permitir o impedir que los usuarios realicen una compra de autoservicio. También puede usar el valor **OnlyTrialsWithoutPaymentMethod** para permitir que los usuarios prueben productos de la lista de productos aprobada. Los usuarios solo pueden comprar el producto una vez finalizada la prueba si **AllowSelfServicePurchase** está habilitado.
+
+El valor **OnlyTrialsWithoutPaymentMethod** permite pruebas temporales mientras se bloquean las compras.
+
+En la tabla siguiente se describen los valores del parámetro **Value** .
+
+| **Valor** | **Impacto** |
+|---|---|
+| Habilitado | Los usuarios pueden realizar compras de autoservicio y adquirir pruebas para el producto. |
+| OnlyTrialsWithoutPaymentMethod | Los usuarios no pueden realizar compras de autoservicio, pero pueden adquirir pruebas para el producto. No pueden comprar la versión completa después de que expire la prueba. |
+| Deshabilitada | Los usuarios no pueden realizar compras de autoservicio ni adquirir pruebas para el producto. |
 
 Para obtener la configuración de directiva para un producto específico, ejecute el siguiente comando:
 
@@ -128,13 +139,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Para habilitar la configuración de directiva para un producto específico, ejecute el siguiente comando:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 Para deshabilitar la configuración de directiva para un producto específico, ejecute el siguiente comando:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+Para permitir que los usuarios prueben un producto específico sin un método de pago, ejecute el siguiente comando:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Script de ejemplo para deshabilitar AllowSelfServicePurchase
@@ -145,16 +162,15 @@ En el ejemplo siguiente se explica cómo importar el módulo **MSCommerce** , in
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 Si hay varios valores para el producto, puede ejecutar el comando individualmente para cada valor, como se muestra en el ejemplo siguiente:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
-
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
@@ -189,6 +205,5 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administración de compras de autoservicio (Administración)](manage-self-service-purchases-admins.md) (artículo)
-
+[Administrar compras de autoservicio (Administración)](manage-self-service-purchases-admins.md) (artículo)\
 [Preguntas más frecuentes sobre compras de autoservicio](self-service-purchase-faq.yml) (artículo)

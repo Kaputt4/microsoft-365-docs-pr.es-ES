@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: e6b0f09b9b8785ef7e471a9c5269348b131b866b
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004375"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306600"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -65,7 +65,7 @@ Para crear y configurar directivas contra correo no deseado, consulte [Configura
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbral de correo electrónico masivo & propiedades de correo no deseado**|||||
-|**Umbral de correo electrónico masivo** <br><br> _BulkThreshold_|7 |6|4|Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
+|**Umbral de correo electrónico masivo** <br><br> _BulkThreshold_|7 |6|5|Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Esta configuración solo está disponible en PowerShell.|
 |**Aumentar la configuración de puntuación de correo no deseado**|Desactivado|Desactivado|Desactivado|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
 |**Marcar como configuración de correo no deseado**|Desactivado|Desactivado|Desactivado|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
@@ -78,7 +78,7 @@ Para crear y configurar directivas contra correo no deseado, consulte [Configura
 |Acción de detección de **suplantación de identidad** <br><br> _PhishSpamAction_|**Mover el mensaje a la carpeta de Email no deseado**<sup>\*</sup> <br><br> `MoveToJmf`|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`|<sup>\*</sup>El valor predeterminado es **Mover el mensaje a la carpeta de Email** no deseado en la directiva de correo no deseado predeterminada y en las nuevas directivas contra correo no deseado que cree en PowerShell. El valor predeterminado es **Mensaje de cuarentena** en las nuevas directivas de antispam que se crean en el portal de Microsoft 365 Defender.|
 |Acción de detección de **suplantación de identidad (phishing) de alta confianza** <br><br> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`||
 |**Acción** de detección masiva <br><br> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <br><br> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <br><br> `MoveToJmf`|**Colocar el mensaje en cuarentena** <br><br> `Quarantine`||
-|**Conservar el correo no deseado en cuarentena durante estos días** <br><br> _QuarantineRetentionPeriod_|15 días<sup>\*</sup>|30 días|30 días|<sup>\*</sup> El valor predeterminado es 15 días en la directiva predeterminada contra correo no deseado y en las nuevas directivas contra correo no deseado que cree en PowerShell. El valor predeterminado es 30 días en las nuevas directivas contra correo no deseado que cree en el portal de Microsoft 365 Defender. <br><br> Este valor también afecta a los mensajes que están en cuarentena mediante directivas anti phishing. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).|
+|**Conservar el correo no deseado en cuarentena durante estos días** <br><br> _QuarantineRetentionPeriod_|15 días|30 días|30 días|  <br><br> Este valor también afecta a los mensajes que están en cuarentena mediante directivas anti phishing. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).|
 |**Habilitar sugerencias de seguridad de correo no deseado** <br><br> _InlineSafetyTipsEnabled_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
 |Habilitación de la purga automática de cero horas (ZAP) para mensajes de suplantación de identidad <br><br> _PhishZapEnabled_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
 |Habilitación de ZAP para mensajes de correo no deseado <br><br> _SpamZapEnabled_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
@@ -94,21 +94,21 @@ Para obtener más información sobre la configuración del filtro de correo no d
 
 |Nombre de la característica de seguridad|Predeterminado|Recomendado<br/>Estándar|Recomendado<br/>Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Vínculos de imagen a sitios remotos** <br><br> _IncreaseScoreWithImageLinks_|Desactivado|Desactivado|Desactivado||
-|**Dirección IP numérica en URL** <br><br> _IncreaseScoreWithNumericIps_|Desactivado|Desactivado|Desactivado||
-|**Redireccionamiento de direcciones URL a otro puerto** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Desactivado|Desactivado|Desactivado||
-|**Vínculos a sitios web .biz o .info** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Desactivado|Desactivado|Desactivado||
-|**Mensajes vacíos** <br><br> _MarkAsSpamEmptyMessages_|Desactivado|Desactivado|Desactivado||
+|**Vínculos de imagen a sitios remotos** <br><br> _IncreaseScoreWithImageLinks_|Desactivado|Desactivada|Desactivado||
+|**Dirección IP numérica en URL** <br><br> _IncreaseScoreWithNumericIps_|Desactivado|Desactivada|Desactivado||
+|**Redireccionamiento de direcciones URL a otro puerto** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Desactivado|Desactivada|Desactivado||
+|**Vínculos a sitios web .biz o .info** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Desactivado|Desactivada|Desactivado||
+|**Mensajes vacíos** <br><br> _MarkAsSpamEmptyMessages_|Desactivado|Desactivada|Desactivado||
 |**Etiquetas Embed en HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Desactivado|Desactivado|Desactivado||
 |**JavaScript o VBScript en HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Desactivado|Desactivado|Desactivado||
 |**Etiquetas Form en HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Desactivado|Desactivado|Desactivado||
-|**Etiquetas de marco o iframe en HTML** <br><br> _MarkAsSpamFramesInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas de marco o iframe en HTML** <br><br> _MarkAsSpamFramesInHtml_|Desactivado|Desactivada|Desactivado||
 |**Errores web en HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Desactivado|Desactivado|Desactivado||
 |**Etiquetas Object en HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Desactivado|Desactivado|Desactivado||
-|**Palabras confidenciales** <br><br> _MarkAsSpamSensitiveWordList_|Desactivado|Desactivado|Desactivado||
-|**Registro de SPF: error** <br><br> _MarkAsSpamSpfRecordHardFail_|Desactivado|Desactivado|Desactivado||
-|**Error de filtrado de identificador de remitente** <br><br> _MarkAsSpamFromAddressAuthFail_|Desactivado|Desactivado|Desactivado||
-|**Retrodispersión** <br><br> _MarkAsSpamNdrBackscatter_|Desactivado|Desactivado|Desactivado||
+|**Palabras confidenciales** <br><br> _MarkAsSpamSensitiveWordList_|Desactivado|Desactivada|Desactivado||
+|**Registro de SPF: error** <br><br> _MarkAsSpamSpfRecordHardFail_|Desactivado|Desactivada|Desactivado||
+|**Error de filtrado de identificador de remitente** <br><br> _MarkAsSpamFromAddressAuthFail_|Desactivado|Desactivada|Desactivado||
+|**Retrodispersión** <br><br> _MarkAsSpamNdrBackscatter_|Desactivado|Desactivada|Desactivado||
 |**Modo de prueba** <br><br> _TestModeAction_)|Ninguno|Ninguno|Ninguno|En el caso de las opciones de ASF que admiten **Probar** como una acción, puede configurar la acción del modo de prueba en **Ninguno**, **Agregar texto de encabezado X predeterminado** o **Enviar mensaje cco** (`None`, `AddXHeader`o `BccMessage`). Para obtener más información, vea [Habilitar, deshabilitar o probar la configuración de ASF](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Configuración de la directiva de correo no deseado saliente de EOP
@@ -137,7 +137,8 @@ Para crear y configurar directivas antimalware, consulte [Configurar directivas 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Configuración de protección**|||||
-|**Habilitación del filtro de datos adjuntos comunes** <br><br> _EnableFileFilter_|No seleccionada <br><br> `$false`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos en función del tipo de archivo, independientemente del contenido de los datos adjuntos. Para obtener la lista de tipos de archivo, consulte [Directivas antimalware](anti-malware-protection.md#anti-malware-policies).|
+|**Habilitación del filtro de datos adjuntos comunes** <br><br> _EnableFileFilter_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos en función del tipo de archivo, independientemente del contenido de los datos adjuntos. Para obtener la lista de tipos de archivo, consulte [Directivas antimalware](anti-malware-protection.md#anti-malware-policies).|
+|Notificaciones de filtro de datos adjuntos comunes (**cuando se encuentran estos tipos de archivo**) <br><br> _FileTypeAction_|**Rechazar los mensajes con un recibo de no entrega (NDR)** <br><br> `Reject`|**Rechazar los mensajes con un recibo de no entrega (NDR)** <br><br> `Reject`|**Rechazar los mensajes con un recibo de no entrega (NDR)** <br><br> `Reject`||
 |**Habilitación de la purga automática de cero horas para malware** <br><br> _ZapEnabled_|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`|Seleccionado <br><br> `$true`||
 |**Directiva de cuarentena**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Al crear una nueva directiva antimalware, un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las funcionalidades históricas de los mensajes que se pusieron en cuarentena como malware (AdminOnlyAccessPolicy sin notificaciones de cuarentena). <br><br> Las directivas de seguridad preestablecidas estándar y estricta usan la directiva de cuarentena predeterminada (AdminOnlyAccessPolicy sin notificaciones de cuarentena), como se describe en la tabla [aquí](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definan más funcionalidades para los usuarios en las directivas antimalware predeterminadas o personalizadas. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**notificaciones de Administración**|||||

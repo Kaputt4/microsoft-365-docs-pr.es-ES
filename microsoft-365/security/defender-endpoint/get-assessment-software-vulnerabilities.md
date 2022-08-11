@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 52dc38d3675ffe15bd781aefaecede9d1783bac3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dba7f3d1512046c0788c72efb5b0ce9ac9ead1b6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487178"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280596"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportación de la evaluación de vulnerabilidades de software por dispositivo
 
@@ -97,8 +97,6 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 <br>
 
-****
-
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 CveId|String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
@@ -116,7 +114,7 @@ RecommendationReference|String|Referencia al identificador de recomendación rel
 RecommendedSecurityUpdate (opcional)|String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020
 RecommendedSecurityUpdateId (opcional)|String|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
 RegistryPaths|Cadena de matriz\[\]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SecurityUpdateAvailable|Booleano|Indica si hay una actualización de seguridad disponible para el software.| Los valores posibles son true o false.
+SecurityUpdateAvailable|Boolean|Indica si hay una actualización de seguridad disponible para el software.| Los valores posibles son true o false.
 SoftwareName|String|Nombre del producto de software.|Chrome
 SoftwareVendor|String|Nombre del proveedor de software.|Google
 SoftwareVersion|String|Número de versión del producto de software.|81.0.4044.138

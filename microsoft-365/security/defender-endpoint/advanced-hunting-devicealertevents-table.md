@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceAlertEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos de generación de alertas en la tabla DeviceAlertEvents del esquema de búsqueda avanzado
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, mdatp, atp de microsoft defender, microsoft defender para el punto de conexión, búsqueda wdatp, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, DeviceAlertEvents, alerta, gravedad, categoría
+description: Obtenga información sobre los eventos de generación de alertas en la tabla DeviceAlertEvents del esquema de búsqueda avanzada.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, mdatp, atp de microsoft defender, microsoft defender para punto de conexión, búsqueda wdatp, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, DeviceAlertEvents, alerta, gravedad, categoría
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 32dbff60a37c31cdbfd492eb5d746a10d9b7a185
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934386"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281847"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -29,11 +29,14 @@ ms.locfileid: "61934386"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> [!IMPORTANT]
+> Las `AlertInfo` tablas y `AlertEvidence` reemplazan la `DeviceAlertEvents` tabla en el esquema de Microsoft Defender para punto de conexión. Para obtener más información, consulte [Map DeviceAlertEvents Table](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
-La `DeviceAlertEvents` tabla del esquema de [búsqueda](advanced-hunting-overview.md) avanzada contiene información sobre las alertas de Microsoft 365 Defender. Use esta referencia para crear consultas que devuelvan información de la tabla.
+¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea la referencia de esquema [de búsqueda avanzada](advanced-hunting-schema-reference.md).
+La `DeviceAlertEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre las alertas de Microsoft 365 Defender. Use esta referencia para crear consultas que devuelvan información de la tabla.
+
+Para obtener información sobre otras tablas del esquema de búsqueda avanzada, consulte [la referencia del esquema de búsqueda avanzada](advanced-hunting-schema-reference.md).
 
 |Nombre de columna|Tipo de datos|Descripción|
 |---|---|---|
@@ -48,8 +51,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`SHA1`|cadena|SHA-1 del archivo donde fue aplicada la acción registrada|
 |`RemoteUrl`|cadena|La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado.|
 |`RemoteIP`|cadena|Dirección IP a la que se ha conectado|
-|`AttackTechniques`|string|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
-|`ReportId`|largo|Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse con las `DeviceName` columnas y `Timestamp`|
+|`AttackTechniques`|string|MITRE ATT&técnicas de CK asociadas a la actividad que desencadenó la alerta|
+|`ReportId`|largo|Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse con las `DeviceName` columnas y `Timestamp` .|
 |`Table`|cadena|Tabla con el contenido detallado del evento|
 
 ## <a name="related-topics"></a>Temas relacionados

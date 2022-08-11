@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial, como el seguro social, la tarjeta de crédito o los números de cuenta bancaria para identificar elementos confidenciales.
-ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944051"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309799"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -87,9 +87,9 @@ Cada entidad de tipo de información confidencial se define mediante estos campo
 
 ![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Obtenga más información sobre los niveles de confianza en este breve vídeo.
+<!--Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
 
 ### <a name="example-sensitive-information-type"></a>Ejemplo de tipo de información confidencial
 
@@ -115,7 +115,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - La expresión regular Regex_argentina_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_argentina_national_id.

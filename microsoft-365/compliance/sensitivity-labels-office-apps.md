@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276467"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306578"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,7 +39,7 @@ Si no puede actualizar a Aplicaciones de Microsoft 365 para empresas para las v
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
-En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
+En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 

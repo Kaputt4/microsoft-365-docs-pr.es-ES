@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 0f0065a65595279ab67141f8d4ddf31fc045e305
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: b8e884c207479a7d2781e1ea4e31b9ee91bd25db
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970130"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300900"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignación de roles y permisos en Microsoft Defender para Empresas
 
@@ -29,8 +30,8 @@ Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Def
 
 ## <a name="what-to-do"></a>Qué hacer
 
-1. [Obtenga información sobre los roles en Defender para empresas](#roles-in-defender-for-business).
-2. [Vea o edite las asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
+1. [Obtener información sobre los roles en Defender para Empresas](#roles-in-defender-for-business).
+2. [Ver o editar las asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
 3. [Continúe con los pasos siguientes](#next-steps).
 
 
@@ -71,7 +72,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
 
 Si aún no ha agregado usuarios a su suscripción, consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Vete a:
 

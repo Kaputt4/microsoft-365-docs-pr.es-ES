@@ -16,13 +16,13 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
-ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 08/10/2022
+ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493029"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306622"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -46,7 +46,7 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 - [Modos de regla de ASR](#asr-rule-modes)
 - [Descripciones por regla](#per-rule-descriptions)
 
-## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
+## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
 
 En la tabla siguiente se enumeran los sistemas operativos admitidos para las reglas que se publican actualmente para la disponibilidad general. Las reglas se enumeran en orden alfabético en esta tabla.
 
@@ -229,7 +229,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Impedir que todas las aplicaciones de Office creen procesos secundarios
 
@@ -248,7 +248,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows
 
@@ -273,7 +273,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web
 
@@ -293,7 +293,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 > [!NOTE]
 > La regla **Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web** tiene las siguientes descripciones alternativas, en función de la aplicación que use:
@@ -324,7 +324,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Dependencias: MDAV, Protección en la nube
+Dependencias: Antivirus de Microsoft Defender, Protección en la nube
 
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquear la ejecución de scripts potencialmente ofuscados
 
@@ -349,7 +349,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dependencias: MDAV, AMSI
+Dependencias: Antivirus de Microsoft Defender, AMSI
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
 
@@ -368,7 +368,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Dependencias: MDAV, AMSI
+Dependencias: Antivirus de Microsoft Defender, AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Impedir que las aplicaciones de Office creen contenido ejecutable
 
@@ -387,7 +387,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Dependencias: MDAV, RPC
+Dependencias: Antivirus de Microsoft Defender, RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Impedir que las aplicaciones de Office inserten código en otros procesos
 
@@ -410,7 +410,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Impedir que la aplicación de comunicación de Office cree procesos secundarios
 
@@ -432,7 +432,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquear la persistencia a través de la suscripción de eventos WMI
 
@@ -454,7 +454,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Dependencias: MDAV, RPC
+Dependencias: Antivirus de Microsoft Defender, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI
 
@@ -474,7 +474,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB
 
@@ -494,7 +494,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Dependencias: MDAV
+Dependencias: Antivirus de Microsoft Defender
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas API de Win32 desde macros de Office
 
@@ -520,7 +520,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Dependencias: MDAV, AMSI
+Dependencias: Antivirus de Microsoft Defender, AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Uso de protección avanzada contra ransomware
 
@@ -546,4 +546,4 @@ Tipo de acción de búsqueda avanzada:
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Dependencias: MDAV, Protección en la nube
+Dependencias: Antivirus de Microsoft Defender, Protección en la nube

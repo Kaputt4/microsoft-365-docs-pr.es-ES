@@ -4,12 +4,14 @@
       href: index.md
     - name: Ejecutar su negocio de forma más segura
       href: m365bp-secure-users.md
-    - name: Microsoft 365 Business Premium cuaderno de estrategias de prueba
+    - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
     - name: Obtenga Microsoft 365 para Campañas
       href: get-microsoft-365-campaigns.md
+    - name: Recursos para asociados
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortificar su entorno
   items:
     - name: Inicio de sesión y configuración
@@ -42,7 +44,7 @@
           href: m365bp-install-office-apps.md
         - name: Protección de dispositivos no administrados
           href: m365bp-protect-pcs-macs.md
-    - name: Uso seguro del correo electrónico
+    - name: Usar el correo electrónico de forma segura
       items:
         - name: Información general
           href: m365bp-protect-email-overview.md

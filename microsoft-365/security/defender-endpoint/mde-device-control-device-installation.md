@@ -8,24 +8,28 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/21/2022
+ms.date: 08/09/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42e31e8194464654176de02cb9f45f11066c6d4e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943670"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294619"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender para punto de conexión instalación del dispositivo de control de dispositivos
 
 **Se aplica a**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
+> [!NOTE]
+> Si administra el almacenamiento extraíble, consulte [Microsoft Defender para punto de conexión Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender para punto de conexión Instalación del dispositivo de control de dispositivos le permite realizar la siguiente tarea:
 
@@ -36,8 +40,8 @@ Microsoft Defender para punto de conexión Instalación del dispositivo de contr
 > Para encontrar la diferencia entre la instalación del dispositivo y el control de acceso de almacenamiento extraíble, consulte [Microsoft Defender para punto de conexión Protección de almacenamiento extraíble del control de dispositivos](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Privilegio|Permiso|
-|---|---|
-|Acceso|Instalación del dispositivo |
+|:---|:---|
+|Access|Instalación del dispositivo |
 |Modo de acción|Permitir, impedir |
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -56,7 +60,7 @@ La compatibilidad con la instalación de dispositivos admite las siguientes prop
 - Id. de hardware
 - Identificador compatible
 - Clase de dispositivo
-- Tipo de dispositivo "Dispositivo extraíble": algunos dispositivos se podrían clasificar como Dispositivo extraíble. Un dispositivo se considera extraíble cuando el controlador del dispositivo al que está conectado indica que el dispositivo es extraíble. Por ejemplo, los controladores del concentrador USB al que está conectado el dispositivo notifican que un dispositivo USB es extraíble.
+- Tipo de dispositivo extraíble: algunos dispositivos se podrían clasificar como dispositivos extraíbles. Un dispositivo se considera extraíble cuando el controlador del dispositivo al que está conectado indica que el dispositivo es extraíble. Por ejemplo, los controladores del concentrador USB al que está conectado el dispositivo notifican que un dispositivo USB es extraíble.
 
 Para obtener más información, vea [Instalación de dispositivos en Windows](/windows/client-management/manage-device-installation-with-group-policy).
 
@@ -74,7 +78,7 @@ Cuando esta configuración de directiva está habilitada junto con la opción **
 Si la opción **Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todos los criterios de coincidencia de dispositivo** no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
 
 > [!NOTE]
-> La configuración **de directiva Impedir la instalación de dispositivos no descrita por otras configuraciones de directiva** se ha reemplazado por la opción **Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todas las** directivas de criterios de coincidencia de dispositivos para las versiones de Windows 10 de destino y Windows 11 compatibles. Se recomienda usar la opción **Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todos los criterios de coincidencia de dispositivo** siempre que sea posible.
+> La configuración **de directiva Impedir la instalación de dispositivos no descrita por otras configuraciones de directiva** se ha reemplazado por la opción **Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todas las** directivas de criterios de coincidencia de dispositivos para las versiones de Windows 10 de destino y Windows 11 compatibles. Use la opción **Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todos los criterios de coincidencia de dispositivos** siempre que sea posible.
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Permitir la instalación de dispositivos que coincidan con cualquiera de estos identificadores de instancia de dispositivo
 
@@ -221,7 +225,7 @@ En Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
       :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="Un identificador en la página Control de dispositivos" lightbox="../../media/devicepolicy-devicecontrol.png":::
 
-    Agregar `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` como se muestra en la imagen anterior es porque no es suficiente habilitar solo un único identificador de hardware para habilitar una sola unidad usb. Debe asegurarse de que también no se bloqueen (permitidos) todos los dispositivos USB que preceden al de destino. Puede abrir Administrador de dispositivos y cambiar la vista a **Dispositivos por conexiones** para ver cómo se instalan los dispositivos en el árbol PnP. En este caso, se deben permitir los siguientes dispositivos para que también se pueda permitir la unidad usb de destino:
+    Hemos agregado `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` como se muestra en la imagen anterior porque no es suficiente habilitar un solo identificador de hardware para habilitar una sola unidad usb. Debe asegurarse de que también no se bloqueen (permitidos) todos los dispositivos USB que preceden al de destino. Puede abrir Administrador de dispositivos y cambiar la vista a **Dispositivos por conexiones** para ver cómo se instalan los dispositivos en el árbol PnP. En este caso, se deben permitir los siguientes dispositivos para que también se pueda permitir la unidad usb de destino:
 
     - "Controlador de host Intel(R) USB 3.0 eXtensible – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "Usb Root Hub (USB 3.0)" -> USB\ROOT_HUB30
@@ -268,7 +272,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="Almacenamiento en bloques" lightbox="../../media/block-removable-storage2.png":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="how-do-i-confirm-that-a-device-gets-a-deployed-policy"></a>Cómo confirmar que un dispositivo obtiene una directiva implementada?
 

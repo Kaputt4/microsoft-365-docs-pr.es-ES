@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: GEA150
 description: Regístrese para obtener una evaluación gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: 0d52c85230bb00c82cb924cbfda7ae69114b8bba
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111600"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281825"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prueba o compra de una suscripción a Microsoft 365 para empresas
 
@@ -61,7 +61,7 @@ No necesita una cuenta microsoft existente para registrarse para obtener una eva
 1. Vaya al <a href="https://www.aka.ms/office365signup" target="_blank">sitio productos de Microsoft 365</a>.
 2. Seleccione el plan para el que desea registrarse, como **Microsoft 365 Empresa Estándar**, desplácese hacia abajo por la página y seleccione **Probar gratis durante 1 mes**.
 3. En la página siguiente, siga los pasos para configurar la cuenta.
-4. El proceso de registro puede tardar varios minutos en completarse. Una vez completada\', estará listo para iniciar el asistente de instalación de la suscripción. Para obtener más información sobre cómo configurar la suscripción, consulte [Pasos siguientes](#next-steps).
+4. El proceso de registro puede tardar varios minutos en completarse. Una vez que se haya completado, estará listo para iniciar el asistente para la instalación de la suscripción. Para obtener más información sobre cómo configurar la suscripción, consulte [Pasos siguientes](#next-steps).
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>Comprar una suscripción a partir de la evaluación gratuita
 
@@ -72,7 +72,7 @@ Si quiere comprar la suscripción antes de que finalice la prueba, siga estos pa
 1. En el Centro de administración de Microsoft 365, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la página **Sus productos** , busque la suscripción que desea comprar.
 3. En la sección **Licencias** , seleccione **Comprar suscripción**.
-4. Elija un compromiso mensual o anual para su suscripción y, a continuación, seleccione **Checkout (Pago).**
+4. Elija una frecuencia de facturación para la suscripción y, a continuación, seleccione **Checkout (Desprotección).**
 5. En la página siguiente, compruebe la suscripción y seleccione **Desproteger**.
 6. En la página siguiente, compruebe la dirección **Vendido a** , la información **Facturada** a y **Elementos en este orden**. Si necesita realizar cambios, seleccione **Cambiar** junto a la sección aplicable.
 7. Cuando haya\'terminado, seleccione **Aceptar contrato & realizar el pedido**.

@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: d60d01bd2a77d992110f85967196390f3dceae3d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6a311d0fb1edeff8e8eb72148ffc08dfb945cbbe
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873718"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280837"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación de dispositivos Windows mediante Configuration Manager
 
@@ -32,7 +32,7 @@ ms.locfileid: "65873718"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Endpoint Configuration Manager rama actual
+- Punto de conexión de Microsoft Configuration Manager rama actual
 - Administrador de configuración de System Center 2012 R2
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -49,7 +49,7 @@ Hay varias opciones que puede usar para incorporar dispositivos mediante Configu
 Para Windows Server 2012 R2 y Windows Server 2016: después de completar los pasos de incorporación, deberá [configurar y actualizar System Center Endpoint Protection clientes](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender para punto de conexión no admite la incorporación durante la fase [de experiencia rápida (OOBE).](/windows-hardware/test/assessments/out-of-box-experience) Asegúrese de que los usuarios completan OOBE después de ejecutar Windows instalación o actualización.
+> Defender para punto de conexión no admite la incorporación durante la fase [de experiencia rápida (OOBE).](/windows-hardware/test/assessments/out-of-box-experience) Asegúrese de que los usuarios completen OOBE después de ejecutar la instalación o actualización de Windows.
 >
 > Tenga en cuenta que es posible crear una regla de detección en una aplicación Configuration Manager para comprobar continuamente si se ha incorporado un dispositivo. Una aplicación es un tipo de objeto diferente que un paquete y un programa.
 > Si un dispositivo aún no está incorporado (debido a la finalización de OOBE pendiente o por cualquier otro motivo), Configuration Manager volverá a intentar incorporarlo hasta que la regla detecte el cambio de estado.
@@ -118,6 +118,65 @@ Configure todas las reglas disponibles en Auditar.
 > [!NOTE]
 > Bloquear estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguras de activar y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
 
+Para implementar directivas de ANTIVIRUS y ASR a través de Microsoft System Center Configuration Manager (SCCM), siga estos pasos:
+
+- Habilite Endpoint Protection y configure opciones de cliente personalizadas.
+- Instale el cliente de Endpoint Protection desde un símbolo del sistema.
+- Compruebe la instalación del cliente de Endpoint Protection.
+
+##### <a name="enable-endpoint-protection-and-configure-custom-client-settings"></a>Habilitar Endpoint Protection y configurar opciones de cliente personalizadas
+Siga los pasos para habilitar la protección de puntos de conexión y la configuración de la configuración de cliente personalizada:
+
+1. En la consola de Configuration Manager, haga clic en **Administración.**
+1. En el área de trabajo **Administración** , haga clic en **Configuración de cliente.**
+1. En la pestaña **Inicio** , en el grupo **Crear** , haga clic en **Crear configuración de dispositivo cliente personalizada.**
+1. En el cuadro de diálogo **Crear configuración de dispositivo cliente personalizado** , proporcione un nombre y una descripción para el grupo de configuración y, a continuación, seleccione **Endpoint Protection.**
+1. Configure los valores de cliente de Endpoint Protection que necesite. Para obtener una lista completa de la configuración de cliente de Endpoint Protection que puede configurar, consulte la sección Endpoint Protection en Acerca de la [configuración de cliente.](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
+
+    > [!IMPORTANT]
+    > Instale el rol de sistema de sitio de Endpoint Protection antes de configurar los valores de cliente para Endpoint Protection.
+
+1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Crear configuración de dispositivo cliente personalizada** . La nueva configuración de cliente se muestra en el nodo **Configuración de cliente** del área de trabajo **Administración** .
+1. A continuación, implemente la configuración de cliente personalizada en una colección. Seleccione la configuración de cliente personalizada que desea implementar. En la pestaña **Inicio** , en el grupo **Configuración de cliente** , haga clic en **Implementar.**
+1. En el cuadro de diálogo **Seleccionar recopilación** , elija la colección en la que desea implementar la configuración de cliente y, a continuación, haga clic en **Aceptar.** La nueva implementación se muestra en la pestaña **Implementaciones** del panel de detalles.
+
+Los clientes se configuran con esta configuración cuando descargan la directiva de cliente. Para obtener más información, vea [Iniciar la recuperación de directivas para un cliente Configuration Manager.](/mem/configmgr/core/clients/manage/manage-clients)
+
+
+##### <a name="installation-of-endpoint-protection-client-from-a-command-prompt"></a>Instalación del cliente de Endpoint Protection desde un símbolo del sistema
+Siga los pasos para completar la instalación del cliente de Endpoint Protection desde el símbolo del sistema.
+
+1. Copie **scepinstall.exe** de la carpeta **Cliente** de la carpeta de instalación Configuration Manager en el equipo en el que desea instalar el software cliente de Endpoint Protection.
+1. Abra un símbolo del sistema como administrador. Cambie el directorio a la carpeta con el instalador. A continuación, ejecute ```scepinstall.exe```, agregando las propiedades adicionales de la línea de comandos que necesite:
+
+     |**Propiedad**  |**Descripción**  |
+     |---------|---------|
+     |```/s```      |Ejecutar el instalador de forma silenciosa|
+     |```/q```      |Extraer los archivos de instalación de forma silenciosa|
+     |```/i```      |Ejecutar el instalador con normalidad|
+     |```/policy``` |Especificar un archivo de directiva antimalware para configurar el cliente durante la instalación|
+     |```/sqmoptin```|Participar en el Programa de mejora de la experiencia del cliente (CEIP) de Microsoft|
+
+1. Siga las instrucciones en pantalla para completar la instalación del cliente.
+1. Si descargó el paquete de definición de actualización más reciente, copie el paquete en el equipo cliente y, a continuación, haga doble clic en el paquete de definición para instalarlo.
+
+     > [!NOTE]
+     > Una vez completada la instalación del cliente de Endpoint Protection, el cliente realiza automáticamente una comprobación de actualización de definición. Si esta comprobación de actualización se realiza correctamente, no es necesario instalar manualmente el paquete de actualización de definición más reciente.
+
+**Ejemplo: instalación del cliente con una directiva antimalware**
+
+```scepinstall.exe /policy <full path>\<policy file>```
+
+##### <a name="verify-the-endpoint-protection-client-installation"></a>Comprobación de la instalación del cliente de Endpoint Protection
+
+Después de instalar el cliente de Endpoint Protection en el equipo de referencia, compruebe que el cliente funciona correctamente.
+
+1. En el equipo de referencia, abra **System Center Endpoint Protection** desde el área de notificación de Windows.
+1. En la pestaña **Inicio** del cuadro de diálogo **System Center Endpoint Protection**, compruebe que **La protección en tiempo real** está establecida en **Activado.**
+1. Compruebe que se muestra **Actualizado** para **las definiciones de virus y spyware.**
+1. Para asegurarse de que el equipo de referencia está listo para la creación de imágenes, en **Opciones de examen,** seleccione **Completo y,** a continuación, haga clic en **Examinar ahora.**
+
+
 #### <a name="network-protection"></a>Protección de red
 
 Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegúrese de que ha instalado la actualización de la plataforma antimalware, que se puede obtener de la [página de soporte técnico](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
@@ -143,17 +202,17 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 
 Si usa Microsoft Endpoint Manager rama actual, consulte [Creación de un archivo de configuración de offboarding](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos fuera del panel con System Center 2012 R2 Configuration Manager
 
 1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
-    1. En el panel de navegación, seleccione **Configuración** \> **Endpoints** \> **Device management** \>**Offboarding (Offboarding administración de dispositivos**).  
+    1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** \> Administración **de** \>  **dispositivos Offboarding**.
     1. Seleccione Windows 10 o Windows 11 como sistema operativo.
     1. En el campo **Método de implementación**, seleccione **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Seleccione **Descargar paquete** y guarde el archivo .zip.
 
 2. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que puedan acceder los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas de System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)).
+3. Implemente el paquete siguiendo los pasos del artículo [Paquetes y programas en System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)).
 
    Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
@@ -186,7 +245,7 @@ Si usa System Center 2012 R2 Configuration Manager, la supervisión consta de do
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Compruebe que los dispositivos son compatibles con el servicio Microsoft Defender para punto de conexión
 
-Puede establecer una regla de cumplimiento para el elemento de configuración en System Center Configuration Manager de 2012 R2 para supervisar la implementación.
+Puede establecer una regla de cumplimiento para el elemento de configuración en System Center 2012 R2 Configuration Manager para supervisar la implementación.
 
 Esta regla debe ser un elemento de configuración de regla de cumplimiento no *correctivo* que supervise el valor de una clave del Registro en los dispositivos de destino.
 

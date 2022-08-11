@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949511"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306442"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -55,7 +56,7 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 - Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivo personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en la [versión preliminar pública para las funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. Los indicadores de archivos personalizados con las acciones Permitir, Bloquear y Corregir ahora también están disponibles en las [funcionalidades mejoradas del motor antimalware para macOS y Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Para empezar a bloquear archivos, primero debe [activar la característica "bloquear o permitir"](advanced-features.md) en Configuración.
 
@@ -132,7 +133,7 @@ Timestamp > ago(30d)
 
 Para obtener más información sobre la búsqueda avanzada, vea [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md).
 
-A continuación se muestran nombres de subproceso adicionales que se pueden usar en la consulta de ejemplo anterior:
+A continuación se muestran otros nombres de subproceso que se pueden usar en la consulta de ejemplo anterior:
 
 Archivos:
 
@@ -149,7 +150,7 @@ La actividad de acción de respuesta también se puede ver en la escala de tiemp
 
 El control de directivas de IoC de certificados y archivos seguirá el orden siguiente:
 
-- Si el archivo no está permitido por Windows Defender directivas o directivas de aplicación de Application Control y AppLocker, **bloquee**
+- Si el archivo no está permitido por Windows Defender directivas o directivas de aplicación de Control de aplicaciones y AppLocker, **bloquee**
 - De lo contrario, si el archivo está permitido por la exclusión del Antivirus de Microsoft Defender, **permitir**
 - De lo contrario, si el archivo está bloqueado o advertido por un bloque o un archivo de advertencia IoC, **bloquee o advierta**.
 - De lo contrario, si se permite el archivo mediante una directiva de IoC de archivo permitido **, permitir**
@@ -181,7 +182,7 @@ Las características de aplicación vulnerables a bloques de administración de 
 |Exclusión del Antivirus de Microsoft Defender|Permitir|Bloquear|Permitir|
 |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

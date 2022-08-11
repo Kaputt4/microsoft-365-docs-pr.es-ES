@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: a906a0ddebdfb96552b868587f466108d8f4dec9
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174945"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300878"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para punto de conexión
 
@@ -43,12 +43,13 @@ Hay algunos requisitos mínimos para incorporar dispositivos al servicio. Obteng
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
+Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md) no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
+
 Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión información de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 Para obtener información detallada sobre las licencias, consulte el [sitio términos del producto](https://www.microsoft.com/licensing/terms/) y trabaje con el equipo de su cuenta para obtener más información sobre los términos y condiciones.
 
 Para obtener más información sobre la matriz de características en las ediciones de Windows, consulta [Comparar ediciones de Windows](https://www.microsoft.com/windowsforbusiness/compare).
-
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 
 El acceso a Defender para punto de conexión se realiza a través de un explorador, lo que admite los siguientes exploradores:

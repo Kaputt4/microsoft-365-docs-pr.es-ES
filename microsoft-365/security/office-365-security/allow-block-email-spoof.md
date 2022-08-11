@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: b59a59367a047019a9c397c864662bceda06c240
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175012"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281737"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -169,6 +169,9 @@ Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 - **Infraestructura**: tms.mx.com
 
 Solo los mensajes de ese dominio _y_ el par de infraestructura de envío pueden suplantarse. No se permiten otros remitentes que intenten suplantar gmail.com. Los mensajes de remitentes de otros dominios que se originan en tms.mx.com se comprueban mediante inteligencia suplantada.
+
+> [!NOTE]
+> No puede usar caracteres comodín en la infraestructura de envío.
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>Creación de entradas de remitente suplantadas bloqueadas
 

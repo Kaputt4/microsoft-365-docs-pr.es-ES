@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador de Microsoft 365 es una herramienta que puede entrenar para reconocer diversos tipos de contenido al darle ejemplos a los que examinar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 16ae9e3d3ee7efc6d82be7b89f99b8b57cdb0845
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631389"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309821"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
@@ -38,7 +38,7 @@ Vea este vídeo para obtener un resumen rápido de la creación de un clasificad
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+<!-- [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]-->
 
 
 ## <a name="prerequisites"></a>Requisitos previos

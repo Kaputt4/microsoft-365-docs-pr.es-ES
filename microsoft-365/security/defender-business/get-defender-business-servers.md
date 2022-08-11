@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: c11a32ac4658750e3c5265ae42a91ad076efecd1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 8587b1fe90f003035d02afb7cf34cd9773e0d3ca
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773302"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300353"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Obtención de servidores Microsoft Defender para Empresas (versión preliminar)
 
@@ -34,7 +35,7 @@ ms.locfileid: "66773302"
 3. Active el ámbito de cumplimiento para Windows Server. 
 
    1. Vaya a **Configuración** \> Ámbito de **administración de** \> configuración de **puntos** \> de conexión **.** 
-   2. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, a continuación, seleccione **Guardar**.
+   2. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
 
 4. Siga las instrucciones de Windows Server y Linux Server en [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
 

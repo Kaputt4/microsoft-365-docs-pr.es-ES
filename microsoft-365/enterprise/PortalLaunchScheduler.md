@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal.
-ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: b76a61bb06c3f2bab7f92ad97cde0630011e487c
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941072"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306534"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal de SharePoint
 
@@ -47,8 +47,8 @@ Los permisos de sitio deben configurarse independientemente de las oleadas como 
 > - El número de ondas necesarias se determina automáticamente por el número esperado de usuarios.
 > - Antes de programar un inicio del portal, se debe ejecutar la [herramienta Diagnóstico de página para SharePoint](https://aka.ms/perftool) para comprobar que la página principal del sitio está en buen estado.
 > - Al final del inicio, todos los usuarios con permisos para el sitio podrán acceder al nuevo sitio.
-> - Si su organización usa [Conexiones Viva](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), es posible que los usuarios vean el icono de su organización en la barra de aplicaciones de Microsoft Teams, pero cuando se selecciona el icono, los usuarios no podrán acceder al portal hasta que se haya iniciado la ola.
-> - Esta característica no está disponible para los planes de Office 365 Alemania, Office 365 operados por 21Vianet (China) o Microsoft 365 US Government.
+> - Si su organización usa [Conexiones Viva](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), es posible que los usuarios vean el icono de su organización en la barra de aplicaciones de Microsoft Teams, pero cuando se seleccione el icono, los usuarios no podrán acceder al portal hasta que se inicie su oleada.
+> - Esta característica no está disponible para Office 365 Alemania, Office 365 operada por 21Vianet (China) o planes del Gobierno de Estados Unidos de Microsoft 365.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprenda las diferencias entre las opciones del programador de inicio del portal:
 
@@ -56,7 +56,7 @@ Anteriormente, los inicios del portal solo se podían programar a través de Sha
 
 **Versión de PowerShell de SharePoint:**
 
-- Se requieren credenciales de administrador para usar [PowerShell de SharePoint](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
+- Administración credenciales son necesarias para usar [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
 - Requisito mínimo de una ola
 - Programar el inicio en función de la zona horaria de hora universal coordinada (UTC)
 
@@ -99,7 +99,7 @@ Anteriormente, los inicios del portal solo se podían programar a través de Sha
    **Opción 1: Enviar usuarios a una página de SharePoint existente (bidireccional):** use esta opción al iniciar un nuevo portal de SharePoint moderno para reemplazar un portal de SharePoint existente. Los usuarios en oleadas activas se redirigirán al nuevo sitio independientemente de si navegan al sitio antiguo o al nuevo. Los usuarios de una ola no iniciada que intenten acceder al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie su ola.
 
    > [!NOTE]
-   > Cuando se usa la opción bidireccional, la persona que programa el inicio también debe tener permisos de propietario del sitio para el otro portal de SharePoint.
+   > Cuando se usa la opción bidireccional, la persona que programa el inicio debe tener permisos de propietario del sitio tanto para el nuevo portal de SharePoint como para el portal de SharePoint existente. Además, las dos direcciones URL de sitio deben existir dentro del mismo inquilino o dominio para validar los permisos adecuados. 
 
    **Opción 2: Enviar usuarios a una página temporal generada automáticamente (redireccionamiento temporal de páginas):** se debe usar el redireccionamiento temporal de páginas cuando no exista ningún portal de SharePoint existente. Los usuarios se dirigen a un nuevo portal de SharePoint moderno y, si un usuario está en una ola que no se ha iniciado, se les redirigirá a una página temporal.
 

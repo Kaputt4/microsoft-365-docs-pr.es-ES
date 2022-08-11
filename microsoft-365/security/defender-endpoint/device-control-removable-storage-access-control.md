@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 021556a1942619be8deeb4724507b1237c0a3f51
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112557"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280705"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -82,7 +82,7 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 
 |Nombre de propiedad|Descripción|Opciones|
 |---|---|---|
-|**GroupId**|GUID, un identificador único, representa el grupo y se usará en la directiva.||
+|**Groupid**|GUID, un identificador único, representa el grupo y se usará en la directiva.||
 |**DescriptorIdList**|Enumere las propiedades del dispositivo que desea usar para cubrir en el grupo. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: el identificador principal incluye `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`. <p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Es en `Device instance path` el Administrador de dispositivos. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de dispositivo a dispositivo. Para obtener los mejores resultados, use un carácter comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: para transformar `Device instance path` al formato de id. de dispositivo, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: cadena que identifica el dispositivo en el sistema, por ejemplo, `USBSTOR\DiskGeneric_Flash_Disk___8.07`, está `Hardware Ids` en el Administrador de dispositivos. <br>**Nota**: El id. de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.<p>**FriendlyNameId**: es una cadena adjunta al dispositivo, por ejemplo, `Generic Flash Disk USB Device`. Es en `Friendly name` el Administrador de dispositivos. <p>**BusId**: por ejemplo, USB, SCSI <p>**SerialNumberId**: puede encontrar SerialNumberId en `Device instance path` el Administrador de dispositivos, por ejemplo, `03003324080520232521` es SerialNumberId en USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo. Admite caracteres comodín. Para transformar `Device instance path` a id. de proveedor y formato de id. de producto, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers). Por ejemplo: <br>`0751_55E0`: coincide con este par VID/PID exacto<br>`_55E0`: coincide con cualquier medio con PID=55E0 <br>`0751_`: coincide con cualquier medio con VID=0751 <p> **Nota**: Vea [Cómo buscar la propiedad multimedia en el Administrador de dispositivos? en la](#how-do-i-find-the-media-property-in-the-device-manager) sección [Preguntas más frecuentes](#frequently-asked-questions) a continuación para comprender cómo encontrar la propiedad en Administrador de dispositivos.|
 |**MatchType**|Cuando se usan varias propiedades de `DescriptorIDList`dispositivo en , MatchType define la relación.|**MatchAll**: los atributos de la `DescriptorIdList` relación serán **Y** ; por ejemplo, si el administrador coloca `DeviceID` y `InstancePathID`, para cada USB conectado, el sistema comprobará si el USB cumple ambos valores. <p> **MatchAny**: los atributos de DescriptorIdList serán **O** relationship; por ejemplo, si el administrador coloca `DeviceID` y `InstancePathID`, para cada USB conectado, el sistema realizará la aplicación siempre y cuando el USB tenga un valor **de DeviceID** o **InstanceID** idéntico.|
 
@@ -173,7 +173,7 @@ Vaya al Centro de administración de Microsoft Endpoint Manager () ><https://end
        `Disable: 0`
        `Enable: 1`
 
-     - Seleccione **Guardar**.
+     - Haga clic en **Guardar**.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Captura de pantalla de la habilitación de la directiva de Access Control de almacenamiento extraíble" lightbox="images/enable-rsac.png":::
 
@@ -192,7 +192,7 @@ Vaya al Centro de administración de Microsoft Endpoint Manager () ><https://end
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - Seleccione **Guardar**.
+     - Haga clic en **Guardar**.
 
    :::image type="content" source="images/default-deny.png" alt-text="Captura de pantalla de la configuración de La aplicación predeterminada como Denegar" lightbox="images/default-deny.png":::
 
@@ -413,6 +413,8 @@ El [portal de Microsoft 365 Defender](https://security.microsoft.com/advanced-hu
 
 - Informes de Microsoft 365 para E5
 
+Si `AuditAllowed` o `AuditDenied` está configurado en la directiva y el **evento Send** está seleccionado en **Opciones**, se enviará un evento a búsqueda avanzada o al informe control dispositivo para cada acceso cubierto (`AccessMask` en la entrada), independientemente de si el sistema o el usuario que inició sesión lo iniciaron.
+
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
@@ -455,7 +457,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>¿Cómo generar GUID para el id. de grupo/PolicyRule Id/Entry Id?
 

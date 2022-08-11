@@ -43,7 +43,7 @@
           href: mdb-onboard-devices.md
         - name: 'Paso 5: Configuración de las directivas de seguridad'
           href: mdb-configure-security-settings.md
-    - name: Visualización y respuesta a amenazas detectadas
+    - name: Ver y responder a las amenazas detectadas
       items:
         - name: Visualización del panel de administración de vulnerabilidades
           href: mdb-view-tvm-dashboard.md
@@ -79,6 +79,8 @@
       items:
         - name: Obtención de servidores Microsoft Defender para Empresas (versión preliminar)
           href: get-defender-business-servers.md
+        - name: Glosario de términos de seguridad
+          href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
           href: mdb-get-help.md
         - name: Preguntas frecuentes

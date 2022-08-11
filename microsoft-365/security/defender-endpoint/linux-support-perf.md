@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 4afe94238a98cf168015c43946194205f0e20aa0
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873014"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309381"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de Microsoft Defender para punto de conexión en Linux
 
@@ -65,7 +65,7 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
     Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real mediante las instrucciones de [Establecer preferencias para Defender para punto de conexión en Linux](linux-preferences.md).
 
     > [!NOTE]
-    > Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente detección y respuesta de puntos de conexión (EDR). En este caso, siga los pasos de la sección **Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente** de este artículo.
+    > Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente de detección y respuesta de puntos de conexión (EDR). En este caso, siga los pasos de la sección **Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente** de este artículo.
 
 2. Para buscar las aplicaciones que desencadenan la mayoría de los exámenes, puede usar estadísticas en tiempo real recopiladas por Defender para punto de conexión en Linux.
 
@@ -162,99 +162,20 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente
 
+
 **Se aplica a:**
 - Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR  
 
-El analizador de cliente de Microsoft Defender para punto de conexión (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en [dispositivos incorporados](/microsoft-365/security/defender-endpoint/onboard-configure) en Linux.
+El Microsoft Defender para punto de conexión Client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en [dispositivos incorporados](/microsoft-365/security/defender-endpoint/onboard-configure) en macOS.
 
 > [!NOTE]
-> Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+>- Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+>- Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la  versión](mac-whatsnew.md)  más reciente disponible y confirmar que el problema persiste antes de investigar más. 
 
-### <a name="requirements"></a>Requisitos
+Para ejecutar el analizador de cliente para solucionar problemas de rendimiento, consulte [Ejecución del analizador de cliente en macOS y Linux](run-analyzer-macos-linux.md).
 
-- El analizador de cliente se puede ejecutar en distribuciones admitidas de [Linux](microsoft-defender-endpoint-linux.md#system-requirements) antes o después de la incorporación a Microsoft Defender para punto de conexión.
-- Descargue el analizador de cliente para Linux desde la última edición en versión preliminar disponible para su descarga aquí: <https://aka.ms/XMDEClientAnalyzer>
-- Si el dispositivo está detrás de un proxy, simplemente puede pasar el servidor proxy como variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-
-### <a name="run-the-client-analyzer-on-linux"></a>Ejecución del analizador de cliente en Linux
-
-Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes comandos:
-
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
-2. `unzip -q XMDEClientAnalyzer.zip`
-3. `cd XMDEClientAnalyzer`
-4. `chmod +x mde_support_tool.sh`
-5. Ejecute como uso no raíz para instalar los componentes pip y lxml necesarios: `./mde_support_tool.sh`
-6. Para recopilar el paquete de diagnóstico real y generar el archivo de archivo de resultados, vuelva a ejecutarse como raíz: `./mde_support_tool.sh -d` Ejemplo:
-
-   ![Imagen del ejemplo de línea de comandos.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
-
-> [!NOTE]
-> - El analizador requiere "lxml" para generar la salida del resultado. Si no está instalado, el analizador intentará capturarlo del repositorio oficial para los paquetes de Python siguientes: <https://pypi.org/search/?q=lxml>
-> 
-> - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
->
-> - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binarios del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary)
-
-### <a name="additional-syntax-help"></a>Ayuda de sintaxis adicional:
-
-**-h** \# Ayuda<br>
-\# Mostrar mensaje de ayuda
-
-**Rendimiento** \# Rendimiento<br>
-\# Recopila un seguimiento exhaustivo para analizar un problema de rendimiento que se puede reproducir a petición. Usar `--length=<seconds>` para especificar la duración de la prueba comparativa.
-
-**-o** \# Salida<br>
-\# Especificar la ruta de acceso de destino para el archivo de resultados
-
-**-nz** \# No-Zip<br>
-\# Si se establece, se creará un directorio en lugar de un archivo de archivo resultante.
-
-**-f** \# Fuerza<br>
-\# Sobrescribir si la salida ya existe en la ruta de acceso de destino
-
-### <a name="result-package-contents"></a>Contenido del paquete de resultados
-
-- report.html
-
-  Descripción: el archivo de salida HTML principal que contendrá los resultados y las instrucciones que puede generar el script del analizador que se ejecuta en la máquina.
-
-- mde_diagnostic.zip
-
-  Descripción: la misma salida de diagnóstico que se genera al ejecutar *mdatp diagnostic create* en [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
-
-- mde.xml
-
-  Descripción: salida XML que se genera durante la ejecución y se usa para compilar el archivo de informe html.
-
-- Processes_information.txt
-
-  Descripción: contiene los detalles de la ejecución Microsoft Defender para punto de conexión procesos relacionados en el sistema.
-
-- Log.txt
-
-  Descripción: contiene los mismos mensajes de registro escritos en pantalla durante la recopilación de datos.
-
-- Health.txt
-
-  Descripción: la misma salida de estado básico que se muestra al ejecutar *el comando de mantenimiento mdatp* .
-
-- Events.xml
-
-  Descripción: archivo XML adicional que usa el analizador al compilar el informe HTML.
-
-- Audited_info.txt
-
-  Descripción: detalles sobre el servicio auditado y los componentes relacionados para el sistema operativo [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
-
-- perf_benchmark.tar.gz
-
-  Descripción: los informes de pruebas de rendimiento. Solo verá esto si usa el parámetro de rendimiento.
-
-> [!NOTE]
-> En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación.
-
-
+>[!NOTE]
+>En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación. 
 
 ## <a name="see-also"></a>Vea también
 

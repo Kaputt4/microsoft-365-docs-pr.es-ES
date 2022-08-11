@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un sitio de SharePoint a otra ubicación geográfica dentro del entorno multigeográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b388b3fa869e6207c72f62aa2f50b832acab43a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940830"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306314"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -75,7 +75,7 @@ La hora para ambos parámetros debe especificarse según el Tiempo universal coo
 
 El movimiento geográfico del sitio de SharePoint requiere que se conecte y se realice desde la URL del administrador de SharePoint en la ubicación geográfica donde se encuentra el sitio.
 
-Por ejemplo, si la dirección URL del sitio es `https://contosohealthcare.sharepoint.com/sites/Turbines`, conéctese a la dirección URL de administrador de SharePoint en `https://contosohealthcare-admin.sharepoint.com`:
+Por ejemplo, si la dirección URL del sitio es `https://contosohealthcare.sharepoint.com/sites/Turbines`, conéctese a la dirección URL Administración de SharePoint en `https://contosohealthcare-admin.sharepoint.com`:
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -219,9 +219,9 @@ Los flujos de trabajo de SharePoint 2013 deben volver a publicarse después del 
 
 Si va a mover un sitio con aplicaciones, debe restablecer la aplicación en la nueva ubicación geográfica del sitio, ya que es posible que la aplicación y sus conexiones no estén disponibles en la ubicación geográfica de destino.
 
-### <a name="flow"></a>Flow
+### <a name="power-automate"></a>Power Automate
 
-En la mayoría de los casos, los flujos seguirán funcionando después de un movimiento geográfico del sitio de SharePoint. Se recomienda probarlos una vez completado el movimiento.
+En la mayoría de los casos, los flujos de Power Automate seguirán funcionando después de un movimiento geográfico del sitio de SharePoint. Se recomienda probarlos una vez completado el movimiento.
 
 ### <a name="power-apps"></a>Power Apps
 

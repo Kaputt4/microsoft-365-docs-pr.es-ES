@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056578"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306710"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -43,7 +43,7 @@ En esta tabla se enumeran todas las plantillas de directiva y los tipos de infor
 
 actualizado: 23/06/2021
 
-|Categoría|Plantilla | SENTARSE |
+|Categoría|Plantilla | Sentarse |
 |---------|---------|---------|
 |Financiera| Datos financieros de Australia| - [Código SWIFT](sit-defn-swift-code.md) </br> -  [Número de archivo de impuestos de Australia](sit-defn-australia-tax-file-number.md) </br> - [Número de cuenta bancaria de Australia](sit-defn-australia-bank-account-number.md) </br> - [Número de tarjeta de crédito](sit-defn-credit-card-number.md)|
 |Financiera| Datos financieros de Canadá |- [Número de tarjeta de crédito](sit-defn-credit-card-number.md) </br> - [Número de cuenta bancaria de Canadá](sit-defn-canada-bank-account-number.md)|
@@ -137,7 +137,7 @@ Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de
 |Power BI|Sí | Sí| No|
 
 > [!NOTE]
-> DLP admite (en versión preliminar) el uso de clasificadores entrenables como condición para detectar documentos confidenciales. El contenido se puede definir mediante clasificadores entrenables en Exchange Online, sitios de Sharepoint Online, cuentas de OneDrive para la Empresa, chat y canales de Teams y dispositivos. Para obtener más información, vea [Clasificadores entrenables](classifier-learn-about.md).
+> DLP admite (en versión preliminar) el uso de clasificadores entrenables como condición para detectar documentos confidenciales. El contenido se puede definir mediante clasificadores entrenables en Exchange Online, sitios de SharePoint Online, cuentas de OneDrive para la Empresa, chat y canales de Teams y dispositivos. Para obtener más información, vea [Clasificadores entrenables](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP admite la detección de etiquetas de confidencialidad en correos electrónicos y datos adjuntos. Para obtener más información, vea [Usar etiquetas de confidencialidad como condiciones en las directivas DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -584,7 +584,7 @@ Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están
 
 Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
 
-|Nombre común  |Parámetro  |Ejemplo
+|Nombre común  |Parámetro  |Ejemplo:
 |---------|---------|---------|
 |nombre de archivo     |%%FileName%% | Documento 1 de Contoso |
 |nombre del proceso     |%%ProcessName%% | Word |

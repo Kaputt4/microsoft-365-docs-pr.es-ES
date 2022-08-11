@@ -11,17 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106917"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306446"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidores de la solución de Microsoft Defender para punto de conexión anterior basada en MMA
 
@@ -42,7 +43,7 @@ Estas instrucciones se aplican al nuevo paquete de solución e instalador unific
 **Si usa Microsoft Defender for Cloud para realizar la implementación, puede automatizar la instalación y la actualización. Consulte [El plan 2 de Defender para servidores ahora se integra con la solución unificada MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534).**
 
 > [!NOTE]
-> No se admiten las actualizaciones del sistema operativo con Microsoft Defender para punto de conexión instalados. A continuación, desinstale antes de continuar con una actualización.
+> No se admiten las actualizaciones del sistema operativo con Microsoft Defender para punto de conexión instalados. Quite el panel y desinstale, actualice el sistema operativo y, a continuación, continúe con la instalación.
 
 > [!NOTE]
 > La automatización y la integración completa del punto de conexión de Microsoft Configuration Manager para realizar una actualización automatizada estarán disponibles en una versión posterior de MECM. Desde la versión 2107 con el paquete acumulativo de revisiones más reciente, puede usar el nodo Endpoint Protection para la configuración, así como directiva de grupo, PowerShell, Microsoft Endpoint Manager asociación de inquilinos o configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manual; métodos para los que se describen a continuación.
@@ -73,7 +74,7 @@ Para obtener instrucciones sobre cómo migrar con Microsoft Endpoint Configurati
 
 ## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>Si está ejecutando una solución antivirus que no es de Microsoft
 
-1. Actualice completamente la máquina, incluido el Antivirus de Microsoft Defender (Windows Server 2016), lo que garantiza que se cumplen [los requisitos previos](configure-server-endpoints.md#prerequisites).
+1. Actualice completamente la máquina, incluido el Antivirus de Microsoft Defender (Windows Server 2016), lo que garantiza que se cumplen [los requisitos previos](configure-server-endpoints.md#prerequisites). Para obtener más información sobre los requisitos previos que deben cumplirse, consulte [Requisitos previos para Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Asegúrese de que la administración de antivirus de terceros ya no inserta agentes antivirus en estas máquinas.*
 3. Cree las directivas para las capacidades de protección de Microsoft Defender para punto de conexión y apunte a ellas a la máquina de la herramienta que prefiera.*
 4. Instale el Microsoft Defender para punto de conexión para Windows Server 2012 paquete R2 y 2016 y **habilite el modo pasivo**. Consulte [Instalación del Antivirus de Microsoft Defender mediante la línea de comandos](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).

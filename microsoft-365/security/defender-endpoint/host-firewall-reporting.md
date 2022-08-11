@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 0d541fe3d129f1533c6642a0eb34547245faa489
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106763"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301318"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -30,11 +30,13 @@ ms.locfileid: "67106763"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si es administrador global o de seguridad, ahora puede hospedar informes de firewall en el [portal de Microsoft 365 Defender](https://security.microsoft.com). Esta característica le permite ver los informes de firewall de Windows 10, Windows 11, Windows Server 2019 y Windows Server 2022 desde una ubicación centralizada.
+Si es administrador global o de seguridad, ahora puede hospedar informes de firewall en el [portal de Microsoft 365 Defender](https://security.microsoft.com). Esta característica le permite ver los informes de firewall de Windows desde una ubicación centralizada.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Debe ejecutar Windows 10 o Windows 11, o Windows Server 2019 o Windows Server 2022.
+- Debe ejecutar Windows 10 o posterior, Windows Server 2012 R2 o posterior.
+     > [!NOTE]
+     > Para que Windows2012 R2 y Windows Server 2016 aparezcan en los informes de firewall, estos dispositivos deben incorporarse mediante el paquete de solución unificada moderna. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - Para incorporar dispositivos al servicio Microsoft Defender para punto de conexión, consulte [aquí](onboard-configure.md).
 - Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> empiece a recibir los datos, debe habilitar **Eventos de auditoría** para Windows Defender Firewall con seguridad avanzada:
   - [Eliminación de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

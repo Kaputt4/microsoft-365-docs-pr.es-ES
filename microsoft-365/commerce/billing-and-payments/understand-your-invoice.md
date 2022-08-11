@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
-ms.date: 05/04/2021
-ms.openlocfilehash: 5d905ec0b5ab9450b40c1e8be885307ce7a65a19
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/08/2022
+ms.openlocfilehash: 258c2dc0f2dd6f10330c400f78cfadb1d9f986e5
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111568"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281298"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
@@ -40,6 +40,14 @@ Para ver e imprimir la factura:
 Para obtener más información, consulte [Ver su factura o recibo](view-your-bill-or-invoice.md).
 
 Si solo tiene una suscripción a Microsoft 365, consulte [Comprender su factura o recibo de Microsoft 365 para empresas](understand-your-invoice2.md).
+
+## <a name="how-often-and-when-am-i-billed"></a>¿Con qué frecuencia y cuándo se me factura?
+
+Dependiendo de la frecuencia de facturación que elijas al comprar tu suscripción, recibirás una factura mensualmente, cada 3 meses, cada 6 meses o anualmente. La cantidad de tiempo transcurrido desde la última fecha de factura se denomina Período de facturación y se muestra en la página uno de la factura, encima de la sección Resumen de facturación. Esta hora representa el intervalo de fechas durante el cual se acumulan los cargos de la factura actual. Si ha realizado un cambio en su suscripción fuera de este intervalo de fechas, como agregar o quitar licencias, los cargos asociados aparecen en la factura para el siguiente período de facturación.
+
+A partir de la página dos de la factura, verá los cargos agrupados por pedido de producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de la factura.
+
+Al final de cada período de facturación, recibirá un correo electrónico que indica que la nueva factura está lista para ver o descargar en el Centro de administración de Microsoft 365. Si tiene más de un perfil de facturación, recibirá una factura por cada perfil de facturación. Obtenga información sobre cómo [buscar y ver su factura o factura](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Comprender el encabezado de la factura
 

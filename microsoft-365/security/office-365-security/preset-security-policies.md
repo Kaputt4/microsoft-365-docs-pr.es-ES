@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085255"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281627"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -66,7 +66,7 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
@@ -502,7 +502,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [En
 ### <a name="use-powershell-to-specify-recipient-conditions-and-exceptions-for-preset-security-policies"></a>Uso de PowerShell para especificar condiciones y excepciones de destinatarios para las directivas de seguridad preestablecidas
 
 > [!IMPORTANT]
-  > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
@@ -547,7 +547,7 @@ Incluso si no hay condiciones de destinatario o excepciones aplicadas a una dire
   Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
   ```
 
-  En este ejemplo se configuran las excepciones de las protecciones de Defender para Office 365 en la seguridad preestablecida estricta para los buzones de operaciones de seguridad (SecOps) especificados.
+  En este ejemplo se configuran excepciones de las protecciones de Defender para Office 365 en la directiva de seguridad preestablecida Strict para los buzones de operaciones de seguridad (SecOps) especificados.
 
   ```powershell
   Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"

@@ -11,6 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d83a5a3eba765099e58ff0f5086cb985697333d
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107401"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306438"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -102,7 +103,7 @@ El nuevo paquete de solución unificada facilita la incorporación de servidores
 
 En función del servidor que esté incorporando, la solución unificada instala antivirus de Microsoft Defender o el sensor EDR. En la tabla siguiente se indica qué componente está instalado y qué está integrado de forma predeterminada.
 
-|Versión del servidor|Av|EDR|
+|Versión del servidor|Av|Edr|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí.](images/svg/check-yes.svg)|
 |Windows Server 2016|Integrado|![Sí.](images/svg/check-yes.svg)|
@@ -114,14 +115,14 @@ Si previamente ha incorporado los servidores mediante MMA, siga las instruccione
 
 Los siguientes detalles se aplican al nuevo paquete de solución unificada para Windows Server 2012 R2 y 2016:
 
-- Asegúrese de que se cumplen los requisitos de conectividad especificados en [Habilitar el acceso a Microsoft Defender para punto de conexión direcciones URL del servicio en el servidor proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Son equivalentes a los de Windows Server 2019.
+- Asegúrese de que se cumplen los requisitos de conectividad especificados en [Habilitar el acceso a Microsoft Defender para punto de conexión direcciones URL del servicio en el servidor proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Son equivalentes a esos requisitos para Windows Server 2019.
 - Hemos identificado un problema con la conectividad de Windows Server 2012 R2 a la nube cuando se usa TelemetryProxyServer estático **y** no se puede acceder a las direcciones URL de la lista de revocación de certificados (CRL) desde el contexto de la cuenta system. La mitigación inmediata consiste en usar una opción de proxy alternativa ("todo el sistema") que proporcione dicha conectividad o configurar el mismo proxy mediante la configuración de WinInet en el contexto de la cuenta SYSTEM.
 Como alternativa, use las instrucciones proporcionadas en [Solución alternativa para un problema conocido con TelemetryProxyServer en máquinas desconectadas](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) para instalar un certificado como solución alternativa.
 - Anteriormente, el uso de Microsoft Monitoring Agent (MMA) en Windows Server 2016 y versiones posteriores permitía que la puerta de enlace de OMS/Log Analytics proporcionara conectividad a los servicios en la nube de Defender. La nueva solución, como Microsoft Defender para punto de conexión en Windows Server 2019, Windows Server 2022 y Windows 10, no admite esta puerta de enlace.
 - En Windows Server 2016, compruebe que Antivirus de Microsoft Defender está instalado, está activo y actualizado. Puede descargar e instalar la versión más reciente de la plataforma mediante Windows Update. Como alternativa, descargue el paquete de actualización manualmente desde el [catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) o desde [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 - En Windows Server 2012 R2, no hay ninguna interfaz de usuario para el Antivirus de Microsoft Defender. Además, la interfaz de usuario en Windows Server 2016 solo permite operaciones básicas. Para realizar operaciones en un dispositivo localmente, consulte [Administración de Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). Como resultado, es posible que las características que dependen específicamente de la interacción del usuario, como dónde se solicita al usuario que tome una decisión o realice una tarea específica, no funcionen según lo esperado. Se recomienda deshabilitar o no habilitar la interfaz de usuario ni requerir la interacción del usuario en cualquier servidor administrado, ya que puede afectar a la funcionalidad de protección.
 - No todas las reglas de reducción de superficie expuesta a ataques están disponibles en todos los sistemas operativos. Consulta [Reglas de reducción de superficie expuesta a ataques (ASR).](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
-- Para habilitar [La protección de red](/microsoft-365/security/defender-endpoint/network-protection), se requiere una configuración adicional:
+- Para habilitar [La protección de red](/microsoft-365/security/defender-endpoint/network-protection), se requieren más configuraciones:
   - `Set-MpPreference -EnableNetworkProtection Enabled`
   - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
   - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
@@ -132,7 +133,7 @@ Como alternativa, use las instrucciones proporcionadas en [Solución alternativa
 - No se admiten las actualizaciones del sistema operativo. Después, desinstale antes de actualizar.
 - Las exclusiones automáticas de **los roles de servidor** no se admiten en Windows Server 2012 R2; sin embargo, las exclusiones integradas para los archivos del sistema operativo son. Para obtener más información sobre cómo agregar exclusiones, consulte [Recomendaciones de análisis de virus para equipos enterprise que ejecutan versiones compatibles actualmente de Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 - En las máquinas que se han actualizado desde la solución anterior basada en MMA y el sensor EDR es una versión (versión preliminar) anterior a 10.8047.22439.1056, la desinstalación y reversión a la solución basada en MMA puede provocar bloqueos. Si está en una versión preliminar de este tipo, actualice con KB5005292.
-- Para implementar e incorporar la nueva solución mediante Microsoft Endpoint Manager, esto requiere actualmente la creación de un paquete. Para obtener más información sobre cómo implementar programas y scripts en Configuration Manager, consulte [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 con el paquete acumulativo de revisiones o posterior es necesario para admitir la administración de configuración de directivas mediante el nodo Endpoint Protection.
+- Para implementar e incorporar la nueva solución mediante Microsoft Endpoint Manager, este proceso requiere actualmente la creación de un paquete. Para obtener más información sobre cómo implementar programas y scripts en Configuration Manager, consulte [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 con el paquete acumulativo de revisiones o posterior es necesario para admitir la administración de configuración de directivas mediante el nodo Endpoint Protection.
 
 ## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>Solución alternativa para un problema conocido con TelemetryProxyServer en máquinas desconectadas
 
@@ -140,7 +141,7 @@ Descripción del problema: al usar la configuración TelemetryProxyServer para e
 
 Escenario afectado: -Microsoft Defender para punto de conexión con el número de versión de Sense 10.8048.22439.1065 o versiones preliminares anteriores que se ejecutan en Windows Server 2012 R2:Uso de la configuración del proxy TelemetryProxyServer; otros métodos no se ven afectados
 
-Solución alternativa:
+Solución:
 1. Asegúrese de que la máquina ejecuta sense versión 10.8048.22439.1065 o superior mediante la instalación con el paquete más reciente disponible en la página de incorporación o aplicando KB5005292.
 2. Descargar y descomprimir el certificado desde https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. Importe el certificado al almacén "Entidades de certificación intermedias" de confianza del equipo local.
@@ -162,7 +163,7 @@ Para obtener más información, consulte [Integración con Microsoft Defender fo
 
 #### <a name="prerequisites-for-windows-server-2012-r2"></a>Requisitos previos para Windows Server 2012 R2
 
-Si ha actualizado completamente las máquinas con el paquete [acumulativo mensual](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) más reciente, **no** hay requisitos previos adicionales.
+Si ha actualizado completamente las máquinas con el paquete [acumulativo mensual](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) más reciente, **no** hay otros requisitos previos.
 
 El paquete del instalador comprobará si los siguientes componentes ya se han instalado mediante una actualización:
 
@@ -172,14 +173,16 @@ El paquete del instalador comprobará si los siguientes componentes ya se han in
 #### <a name="prerequisites-for-windows-server-2016"></a>Requisitos previos para Windows Server 2016
 
 - Se debe instalar la actualización de pila de mantenimiento (SSU) del 14 de septiembre de 2021 o posterior.
-- Se debe instalar la última actualización acumulativa (LCU) del 20 de septiembre de 2018 o posterior.  Se recomienda instalar el SSU y LCU disponibles más recientes en el servidor.  - La característica Antivirus de Microsoft Defender debe estar habilitada o instalada y actualizada. Puede descargar e instalar la versión más reciente de la plataforma mediante Windows Update. Como alternativa, descargue el paquete de actualización manualmente desde el [catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) o desde [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+- Se debe instalar la última actualización acumulativa (LCU) del 20 de septiembre de 2018 o posterior.  Se recomienda instalar los SSU y LCU disponibles más recientes en el servidor.
+- Habilite la característica Antivirus de Microsoft Defender (MDAV) y asegúrese de que está actualizada. Para obtener más información sobre cómo habilitar antivirus de Defender en Windows Server, consulta [Volver a habilitar el Antivirus de Defender en Windows Server si se ha deshabilitado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) y [Volver a habilitar el Antivirus de Defender en Windows Server si se ha desinstalado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+- Descargue e instale la versión más reciente de la plataforma mediante Windows Update. Como alternativa, descargue el paquete de actualización manualmente desde el [catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) o desde [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Requisitos previos para la ejecución con soluciones de seguridad de terceros
 
 Si tiene previsto usar una solución antimalware de terceros, tendrá que ejecutar el Antivirus de Microsoft Defender en modo pasivo. Debe recordar establecer en modo pasivo durante el proceso de instalación e incorporación.
 
 > [!NOTE]
-> Si va a instalar Microsoft Defender para punto de conexión en servidores con McAfee Endpoint Security (ENS) o VirusScan Enterprise (VSE), es posible que sea necesario actualizar la versión de la plataforma de McAfee para asegurarse de que el Antivirus de Microsoft Defender no se quita ni deshabilita. Para obtener más información, incluidos los números de versión específicos necesarios, consulte el [artículo de McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
+> Si va a instalar Microsoft Defender para punto de conexión en servidores con McAfee Endpoint Security (ENS) o VirusScan Enterprise (VSE), es posible que sea necesario actualizar la versión de la plataforma de McAfee para asegurarse de que el Antivirus de Microsoft Defender no se quita ni deshabilita. Para obtener más información, incluidos los números de versión específicos necesarios, consulte el [artículo de McAfee Knowledge Center](https://kcm.trellix.com/corporate/index?page=content&id=KB88214).
 
 #### <a name="update-package-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016"></a>Paquete de actualización para Microsoft Defender para punto de conexión en Windows Server 2012 R2 y 2016
 
@@ -229,7 +232,7 @@ Siga estos pasos para descargar los paquetes:
 
 ### <a name="step-2-apply-the-installation-and-onboarding-package"></a>PASO 2: Aplicar el paquete de instalación e incorporación
 
-En este paso, instalará los componentes de prevención y detección necesarios antes de incorporar el dispositivo al entorno de Microsoft Defender para punto de conexión nube para preparar la máquina para la incorporación. Asegúrese de que se cumplen todos los [requisitos previos](#prerequisites) .
+En este paso, instalará los componentes de prevención y detección necesarios antes de incorporar el dispositivo al entorno de Microsoft Defender para punto de conexión nube, para preparar la máquina para la incorporación. Asegúrese de que se cumplen todos los [requisitos previos](#prerequisites) .
 
    > [!NOTE]
    > Antivirus de Microsoft Defender se instalará y estará activo a menos que lo establezca en modo pasivo.
@@ -277,7 +280,7 @@ Puede usar el [script del instalador](server-migration.md#installer-script) para
 > [!NOTE]
 > El script de instalación está firmado. Cualquier modificación en el script invalidará la firma. Al descargar el script desde GitHub, el enfoque recomendado para evitar modificaciones accidentales consiste en descargar los archivos de origen como un archivo zip y, a continuación, extraerlo para obtener el archivo install.ps1 (en la página principal código, haga clic en el menú desplegable Código y seleccione "Descargar ZIP").
 
-Este script se puede usar en una variedad de escenarios, incluidos los [descritos en Escenarios de migración del servidor de la solución de Microsoft Defender para punto de conexión anterior basada en MMA](/microsoft-365/security/defender-endpoint/server-migration) y para la implementación mediante directiva de grupo como se describe a continuación.
+Este script se puede usar en varios escenarios, incluidos los que se describen en [Escenarios de migración del servidor de la solución de Microsoft Defender para punto de conexión anterior basada en MMA](/microsoft-365/security/defender-endpoint/server-migration) y para la implementación mediante directiva de grupo como se describe a continuación.
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Aplicar los paquetes de instalación e incorporación de Microsoft Defender para punto de conexión mediante la directiva de grupo
 
@@ -313,7 +316,7 @@ Este script se puede usar en una variedad de escenarios, incluidos los [descrito
 
 10. Para vincular el GPO a una unidad organizativa (OU), haga clic con el botón derecho y seleccione **Vincular un GPO existente**. En el cuadro de diálogo que se muestra, seleccione el objeto directiva de grupo que desea vincular. Haga clic en **Aceptar**.
 
-Para obtener más opciones de configuración, consulte [Configuración de opciones de recopilación de ejemplo](configure-endpoints-gp.md#configure-sample-collection-settings) y [Otras opciones de configuración recomendadas](configure-endpoints-gp.md#other-recommended-configuration-settings).
+Para obtener más opciones de configuración, vea [Configurar opciones de recopilación de ejemplo](configure-endpoints-gp.md#configure-sample-collection-settings) y [Otras opciones de configuración recomendadas](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
 ### <a name="step-3-complete-the-onboarding-steps"></a>PASO 3: Completar los pasos de incorporación
 

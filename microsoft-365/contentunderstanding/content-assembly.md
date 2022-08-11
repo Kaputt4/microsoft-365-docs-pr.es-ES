@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772498"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309843"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
-Puede usar SharePoint Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto de forma más rápida, coherente y menos propensa a errores mediante el uso del ensamblado de contenido en SharePoint Syntex.
+Puede usar SharePoint Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto de forma más rápida, coherente y con menos errores mediante el uso del ensamblado de contenido en SharePoint Syntex.
 
-Con el ensamblado de contenido, puede usar un documento existente para crear una *plantilla moderna* y, a continuación, usar esa plantilla para generar automáticamente contenido nuevo mediante listas de SharePoint o entradas de usuario como origen de datos.
+Con el ensamblado de contenido, puede usar un documento existente para crear una *plantilla moderna* y, a continuación, usar esa plantilla para generar automáticamente contenido nuevo mediante listas de SharePoint o entradas manuales como origen de datos.
 
 > [!NOTE]
 > Debe ser un usuario con licencia SharePoint Syntex para acceder a las funcionalidades de ensamblado de contenido y usarlas. También debe tener permisos para administrar listas de SharePoint.
@@ -33,7 +33,7 @@ Con el ensamblado de contenido, puede usar un documento existente para crear una
 
 Siga estos pasos para crear una plantilla moderna.
 
-1. En una biblioteca de documentos SharePoint, seleccione **Nueva** > **plantilla moderna.**
+1. En una biblioteca de documentos de SharePoint, seleccione **Nueva** > **plantilla crear moderna**.
 
    ![Captura de pantalla de la biblioteca de documentos con la opción Crear plantilla moderna resaltada.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -42,7 +42,7 @@ Siga estos pasos para crear una plantilla moderna.
    ![Captura de pantalla de la página de carga en la que se selecciona un documento.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > Actualmente, solo puede cargar documentos de Word (extensión .docx) para crear plantillas. Upload documentos de Word desde el almacenamiento local o el escritorio.
+   > Actualmente, solo puede cargar documentos de Word (extensión .docx) para crear plantillas. Cargue documentos de Word desde el almacenamiento local o el escritorio.
 
 3. Después de cargar el documento, el documento se muestra en el estudio de plantillas, donde puede convertir el documento en una plantilla.
 
@@ -77,9 +77,12 @@ En el panel **Todos los marcadores de posición** :
 
 2. En la sección **How authors fill in this placeholder (Cómo rellenan los autores este marcador de posición** ), seleccione **Entrar texto o seleccione una fecha**.
 
-3. En el campo **Tipo de información** , seleccione el tipo de datos que desea asociar al marcador de posición. Actualmente, hay seis opciones disponibles: **Línea única de texto**, **Varias líneas de texto**, **Número**, **Fecha y hora**, **Correo electrónico** e **Hipervínculo**.
+3. En el campo **Tipo de información** , seleccione el tipo de datos que desea asociar al marcador de posición. Actualmente, hay seis opciones disponibles: **Línea única de texto**, **Varias líneas de texto**, **Número**, **Fecha y hora**, **Email** e **Hipervínculo**.
 
 4. Seleccione **Agregar**.
+
+   > [!NOTE]
+   > Puede configurar varios formateadores de fecha, como MM/DD/AAAA, DD/MM/AAAA, AAAA/MM/DD y DD de mes, incluida la hora de configuración en formato de 12 horas y 24 horas. 
 
 ### <a name="associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library"></a>Asociar un marcador de posición seleccionando entre las opciones de una columna de una lista o biblioteca
 
@@ -140,7 +143,7 @@ Puede crear tantos marcadores de posición como considere necesarios. Cuando hay
 
 Si necesita editar una plantilla existente o eliminar o anular la publicación de una plantilla, siga estos pasos.
 
-1. En una biblioteca de documentos SharePoint, seleccione **nuevo** > **editar nuevo menú**.
+1. En una biblioteca de documentos de SharePoint, seleccione **nuevo** > **editar nuevo menú**.
 
    ![Captura de pantalla de la biblioteca de documentos con la opción de menú Editar nuevo resaltada.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -162,7 +165,7 @@ Si necesita editar una plantilla existente o eliminar o anular la publicación d
 
 Puede usar una plantilla moderna *publicada* para crear rápidamente documentos similares sin tener que empezar desde cero. Para crear un documento mediante una plantilla publicada, siga estos pasos:
 
-1. En una biblioteca de documentos SharePoint, seleccione **Nuevo** y, a continuación, seleccione la plantilla moderna que desea usar.
+1. En una biblioteca de documentos de SharePoint, seleccione **Nuevo** y, a continuación, seleccione la plantilla moderna que desea usar.
 
    ![Captura de pantalla de la biblioteca de documentos que muestra las opciones de plantilla modernas en el menú Nuevo.](../media/content-understanding/content-assembly-create-document-1.png)
 
@@ -179,7 +182,7 @@ Puede usar una plantilla moderna *publicada* para crear rápidamente documentos 
 
 > [!NOTE]
 > **Limitaciones actuales de la versión**
->- Actualmente solo se admiten Microsoft Word documentos (extensión .docx) para crear una plantilla. Antes de cargar un documento de Word, asegúrese de que no incluya comentarios o que tenga habilitado **El seguimiento de cambios** . Si el documento contiene marcadores de posición de texto para imágenes, asegúrese de que no están encapsulados en texto. Actualmente no se admiten los controles de contenido de Word. Si desea crear una plantilla a partir de un documento de Word con controles de contenido, quítelos antes de crear una plantilla moderna.
+>- Actualmente solo se admiten documentos de Microsoft Word (extensión .docx) para crear una plantilla. Antes de cargar un documento de Word, asegúrese de que no incluya comentarios o que tenga habilitado **El seguimiento de cambios** . Si el documento contiene marcadores de posición de texto para imágenes, asegúrese de que no están encapsulados en texto. Actualmente no se admiten los controles de contenido de Word. Si desea crear una plantilla a partir de un documento de Word con controles de contenido, quítelos antes de crear una plantilla moderna.
 >- La plantilla y el documento están asociados a una biblioteca de documentos. Para usar la plantilla en otra biblioteca de documentos, deberá volver a crearla en esa biblioteca de documentos.
 >- El documento cargado que se usa para crear la plantilla moderna se guardará como una copia independiente y se colocará en el directorio /forms de la biblioteca de documentos. El archivo original del disco no se verá afectado.
 >- Puede crear marcadores de posición solo para texto. Actualmente no se admiten imágenes, arte inteligente, tablas y listas de viñetas.

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 31180e2366faa8e2d5dcbab2dfd4da8ba14fbb5e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175481"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280429"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -168,7 +168,7 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
    - **Remitentes suplantados**
      - **Action**
      - **Tipo de suplantación de identidad**
-   - **Direcciones URL**
+   - **Url**
      - **Action**
      - **Nunca expirar**
      - **Fecha de última actualización**
@@ -428,7 +428,7 @@ Las siguientes entradas no son válidas:
 
 - **Valores de dominio que faltan o no son válidos**:
 
-  - contoso
+  - Contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -474,6 +474,7 @@ Un par de dominios para un remitente suplantado en la lista de permitidos o bloq
 - **Infraestructura de envío**: este valor indica el origen de los mensajes del usuario suplantado. Los valores válidos son:
   - Dominio que se encuentra en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen (por ejemplo, fabrikam.com).
   - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\>/24 (por ejemplo, 192.168.100.100/24).
+  - Un dominio DKIM comprobado.
 
 Estos son algunos ejemplos de pares de dominio válidos para identificar remitentes suplantados:
 

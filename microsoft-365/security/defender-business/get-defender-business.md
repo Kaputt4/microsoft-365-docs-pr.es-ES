@@ -1,66 +1,112 @@
 ---
-title: Obtener Microsoft Defender para empresas
-description: Obtener Microsoft Defender para empresas
+title: Obtener Microsoft Defender para Empresas
+description: Obtenga información sobre cómo obtener Microsoft Defender para Empresas, endpoint protection para pequeñas y medianas empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: medium
+ms.date: 08/10/2022
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e4d418dcd7ab33fd8f01dfc64e31210fb358d95c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464607"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309755"
 ---
-# <a name="get-microsoft-defender-for-business-preview"></a>Obtener Microsoft Defender para empresas (versión preliminar)
+# <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
-> [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
-> 
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
+Defender for Business es una nueva solución de seguridad de puntos de conexión diseñada especialmente para pequeñas y medianas empresas (hasta 300 empleados). En este artículo se describe cómo obtener Defender para empresas.
 
-Microsoft Defender para empresas (versión preliminar) está disponible en versión preliminar. Participar en el programa de vista previa te permite probar Defender para empresas antes de que esté disponible en general. El programa de vista previa está disponible para:
+Si aún no tiene Microsoft Defender para Empresas, puede elegir entre varias opciones:
 
-- Partners de Microsoft que proporcionan servicios de IT a pequeñas y medianas empresas
-- Pequeñas y medianas empresas (hasta 300 empleados)
+- [Pruebe o compre la versión independiente de Defender para empresas](#try-or-buy-microsoft-defender-for-business).
+- [Obtenga Microsoft 365 Empresa Premium](#get-microsoft-365-business-premium), que ahora incluye Defender para empresas.
+- [Trabaje con un partner de Microsoft](#work-with-a-microsoft-partner) que pueda ayudarle a tener todo listo y configurado.
 
-## <a name="sign-up-for-the-preview-program"></a>Registrarse en el programa de vista previa
+Si se ha registrado para obtener una evaluación, después de recibir el correo electrónico de aceptación, puede [activar la prueba y asignar licencias de usuario](#how-to-activate-your-trial) y, a continuación, continuar con [los pasos siguientes](#next-steps).
 
-1. Visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-2. Seleccione **Cliente** o **Partner de Microsoft**.
+## <a name="try-or-buy-microsoft-defender-for-business"></a>Pruebe o compre Microsoft Defender para Empresas
 
-3. Revise y acepte los términos del Contrato de vista previa de Microsoft Defender para empresas y, a continuación, elija **Siguiente**.
+1. Vaya a la página web [Microsoft Defender para Empresas](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) y seleccione la opción para probar o comprar Defender para empresas.
 
-4. Rellene el formulario con su información de contacto. 
+2. Cuando reciba su correo electrónico con la información de su cuenta y suscripción, inicie sesión con el vínculo de su correo electrónico.
 
-   - Si es un cliente que trabaja con un partner de Microsoft, en el cuadro Otro, rellene el nombre de la organización del partner. A continuación, elija **Enviar**.
-   - Si eres un partner de Microsoft, asegúrate de indicar el tipo de asociación y la información sobre los clientes con los que planeas trabajar.
+3. Vaya a [Agregar usuarios y asigne licencias](mdb-add-users.md).
 
-5. Cuando haya terminado de rellenar el formulario, elija **Enviar**.
+> [!TIP]
+> Consulte el [cuaderno de estrategias de prueba para Defender para empresas](trial-playbook-defender-business.md).
 
-## <a name="what-to-expect-after-applying"></a>Qué esperar después de aplicar
+## <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
 
-Revisaremos la aplicación y tomaremos una determinación. A continuación, recibirás un correo electrónico que incluya el código de promoción o que explique por qué no podemos ofrecerte el programa de prueba en este momento.
+*A partir del 1 de marzo de 2022, Defender for Business se incluye en Microsoft 365 Empresa Premium*. 
 
-Si se te acepta, el correo electrónico contendrá un código de licencia que usarás para activar la versión de prueba de Defender para empresas.
+1. Visite la página del producto [Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-> [!IMPORTANT]
-> Si es socio, después de haber sido aceptado en el programa de vista previa, debe hacer que cada cliente complete el proceso descrito en la sección Registrarse para el [programa de vista previa](#sign-up-for-the-preview-program). Asegúrese de que el cliente especifica el nombre del partner de Microsoft en el **cuadro** Otros.
+2. Elige probar o comprar tu suscripción. Consulte [Probar o comprar una suscripción a Microsoft 365 para Empresas](../../commerce/try-or-buy-microsoft-365.md) En el [sitio Microsoft 365 Products](https://www.aka.ms/office365signup), elige **Microsoft 365 Empresa Premium**.
+
+3. Después de registrarse en Microsoft 365 Empresa Premium, recibirá un correo electrónico con un vínculo para iniciar sesión y empezar. Procede a [Configurar Microsoft 365 Empresa Premium](../../business-premium/m365bp-setup.md).
+
+## <a name="work-with-a-microsoft-partner"></a>Trabajar con un partner de Microsoft
+
+Microsoft tiene una lista de proveedores de soluciones autorizados para vender ofertas, incluidos Microsoft 365 Empresa Premium y Microsoft Defender para Empresas. Para buscar un proveedor de soluciones en su área, siga estos pasos:
+
+1. Vaya a [Buscar partners](https://appsource.microsoft.com/marketplace/partner-dir).
+
+2. En el panel **Filtros**, especifique criterios de búsqueda, como:
+
+   - Su ubicación
+   - Tamaño de la organización
+   - **Áreas de enfoque**, como **Seguridad** y/o **Protección contra amenazas** 
+   - **Servicios**, como **Asignación de licencias** o **Servicios administrados (MSP)**
+
+   Tan pronto como seleccione uno o varios criterios, se actualizará la lista de partners.
+
+3. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
+
+## <a name="how-to-activate-your-trial"></a>Activación de la prueba
+
+Cuando reciba el correo electrónico de aceptación, aquí le mostremos cómo activar la suscripción de prueba: 
+
+1. En el correo electrónico de aceptación, selecciona el vínculo que incluye tu código promocional. 
+
+2. Si ya tiene una suscripción a Microsoft 365, inicie sesión con su cuenta. Si aún no tiene una suscripción, siga las indicaciones para crear una nueva cuenta. 
+
+3. Cuando inicie sesión por primera vez, irá al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Consulte [Información general de la Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+
+4. Use uno de los procedimientos siguientes, en función de su escenario:<br/>
+
+   | Escenario | Procedure |
+   |:---|:---|
+   | Está configurando una suscripción a Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<ol><li>Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).</li><li>Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.</li><li>Agregar usuarios y asignar licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md).</li></ol> |
+   | Va a agregar una prueba a un inquilino de Microsoft 365 existente. | <ol><li>Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.</li><li>En el panel de navegación, elija **Usuarios** > **usuarios activos**. Revise la lista de usuarios. </li><li>Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+
+## <a name="two-portals-for-setup"></a>Dos portales para la instalación
+
+Cuando esté listo para empezar, trabajará con dos portales principales: el Centro de administración de Microsoft 365 y el portal de Microsoft 365 Defender.
+
+|Portal  |Descripción  |
+|---------|---------|
+| El Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use el Centro de administración de Microsoft 365 para activar la prueba e iniciar sesión por primera vez.<p> También usará el Centro de administración de Microsoft 365 para: <ul><li>Agregar o quitar usuarios.</li><li>Asignar licencias de usuario.</li><li>Vea sus productos y servicios.</li><li>Complete las tareas de instalación de la suscripción de Microsoft 365.</li></ul><p>Para obtener más información, consulte [Información general de la Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Use el portal de Microsoft 365 Defender para configurar Defender para empresas.<p>Usará el portal de Microsoft 365 Defender para: <ul><li>Vea los dispositivos y las directivas de protección de dispositivos.</li><li>Vea las amenazas detectadas y tome medidas.</li><li>Vea las recomendaciones de seguridad y administre la configuración de seguridad.</li></ul><p>Para más información, consulte [Introducción al uso del portal de Microsoft 365 Defender](mdb-get-started.md).        |
+
+> [!TIP]
+> Puede usar el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) para incorporar dispositivos y configurar las opciones de seguridad. Para obtener más información sobre Intune, consulte [Microsoft Intune es un proveedor de MDM y MAM para los dispositivos](/mem/intune/fundamentals/what-is-intune).
+
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Consulta el proceso de configuración y configuración de Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
-
-- [Obtenga información sobre cómo obtener ayuda y soporte técnico para Microsoft Defender para empresas (versión preliminar)](mdb-get-help.md)
+- [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
+- [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).
+- [Consulte el proceso de configuración y configuración de Defender para empresas](mdb-setup-configuration.md).
+- [Vea cómo obtener ayuda y soporte técnico para Defender para empresas](mdb-get-help.md) (por si necesita ayuda).

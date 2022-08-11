@@ -1,5 +1,5 @@
 ---
-title: Administración de grupos y equipos Microsoft 365 sin propietario
+title: Administración de grupos y equipos de Microsoft 365 sin propietario
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,15 +20,15 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Obtenga información sobre cómo invitar automáticamente a los miembros para que se conviertan en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Obtenga información sobre cómo invitar automáticamente a los miembros a convertirse en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
+ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008644"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280881"
 ---
-# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos Microsoft 365 sin propietario
+# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos de Microsoft 365 sin propietario
 
 Un equipo de Microsoft Teams o un grupo de Microsoft 365 y sus servicios relacionados pueden quedar sin propietario si la cuenta de un propietario se elimina o deshabilita en Microsoft 365. Los grupos y equipos requieren que un propietario agregue o quite miembros y cambie la configuración del grupo.
 
@@ -41,11 +41,11 @@ Al crear la directiva, puede especificar:
 - Qué grupos o equipos forman parte de la directiva
 
 > [!Note]
-> El uso de un grupo de seguridad para limitar a quién se puede invitar a ser propietario requiere que posea, pero no necesariamente asigne una licencia de Azure AD Premium para cada miembro del grupo Microsoft 365 de su organización.
+> El uso de un grupo de seguridad para limitar quién puede ser invitado a ser propietario requiere que posea, pero no necesariamente asigne una licencia premium de Azure AD para cada miembro del grupo de Microsoft 365 de su organización.
 
 Para establecer una directiva de grupo o equipo sin propietario
 
-1. En el centro de administración, vaya a **Mostrar todos los** \> **Configuración** \> **configuración de la organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Grupos de Microsoft 365**.
+1. En el Centro de administración, vaya a **Mostrar toda** \> la **configuración Configuración** \> **Configuración De la organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Grupos de Microsoft 365**.
 
 1. Active la casilla **Cuando no haya propietario, envíe un correo electrónico y pida a los miembros activos del grupo que se conviertan en propietarios** .
 
@@ -55,7 +55,7 @@ Para establecer una directiva de grupo o equipo sin propietario
 
 1. Escriba el número de miembros activos que desea notificar y seleccione el número de semanas para enviar la notificación. (La lista de notificaciones se crea durante la primera notificación y no cambia). Seleccione **Siguiente**.
 
-1. En la *Quién este correo electrónico procede de la* página, seleccione un remitente para el correo electrónico y, a continuación, seleccione **Siguiente**.
+1. En la página *Quién es este correo electrónico,* seleccione un remitente para el correo electrónico y, a continuación, seleccione **Siguiente**. Tenga en cuenta que no se admiten buzones compartidos. El remitente debe ser un buzón de usuario o un buzón de grupo.
 
 1. En la página *Asunto y mensaje* , personalice el correo electrónico y, opcionalmente, incluya una **dirección URL de orientación de directiva** y, a continuación, seleccione **Siguiente**.
 

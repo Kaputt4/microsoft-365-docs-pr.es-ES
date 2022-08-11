@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: cef25147a57cf7613d22fbf393d41ecc33730955
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969560"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309557"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de rendimiento para Microsoft Defender para punto de conexión en macOS
 
@@ -38,9 +38,17 @@ ms.locfileid: "66969560"
 
 En este tema se proporcionan algunos pasos generales que se pueden usar para restringir los problemas de rendimiento relacionados con Microsoft Defender para punto de conexión en macOS.
 
-La protección en tiempo real (RTP) es una característica de Microsoft Defender para punto de conexión en macOS que supervisa y protege continuamente el dispositivo frente a amenazas. Consta de supervisión de archivos y procesos y otras heurísticas.
 
 En función de las aplicaciones que ejecute y de las características del dispositivo, puede experimentar un rendimiento poco óptimo al ejecutar Microsoft Defender para punto de conexión en macOS. En concreto, las aplicaciones o los procesos del sistema que acceden a muchos recursos a través de un intervalo de tiempo corto pueden provocar problemas de rendimiento en Microsoft Defender para punto de conexión en macOS.
+
+>[!WARNING]
+>Antes de comenzar, asegúrese de que otros productos de seguridad no se ejecutan actualmente en el dispositivo. Varios productos de seguridad pueden entrar en conflicto e afectar al rendimiento del host. 
+
+## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Solución de problemas de rendimiento mediante estadísticas de protección en tiempo real
+**Se aplica a:**
+- Solo problemas de rendimiento relacionados con AV
+
+La protección en tiempo real (RTP) es una característica de Defender para punto de conexión en macOS que supervisa y protege continuamente el dispositivo frente a amenazas. Consta de supervisión de archivos y procesos y otras heurísticas.
 
 Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
 
@@ -157,3 +165,25 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
 6. Configure Microsoft Defender para punto de conexión en macOS con exclusiones para los procesos o ubicaciones de disco que contribuyen a los problemas de rendimiento y vuelvan a habilitar la protección en tiempo real.
 
      Consulte [Configuración y validación de exclusiones para Microsoft Defender para punto de conexión en macOS](mac-exclusions.md) para obtener más información.
+
+
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente
+
+**Se aplica a:**
+- Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR  
+
+El Microsoft Defender para punto de conexión Client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en [dispositivos incorporados](/microsoft-365/security/defender-endpoint/onboard-configure) en macOS.
+
+> [!NOTE]
+>- Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+>- Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la  versión](linux-whatsnew.md)  más reciente disponible y confirmar que el problema persiste antes de investigar más. 
+
+Para ejecutar el analizador de cliente para solucionar problemas de rendimiento, consulte [Ejecución del analizador de cliente en macOS y Linux](run-analyzer-macos-linux.md).
+
+>[!NOTE]
+>En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación. 
+
+
+## <a name="see-also"></a>Vea también
+
+- [Investigar problemas de estado del agente](health-status.md)

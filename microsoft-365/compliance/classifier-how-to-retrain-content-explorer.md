@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
-ms.openlocfilehash: bde570b8bbb104d7f89523eb12bd8b9ac9210ad7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e4cf09599d95d7e19f565a9bd0e30213e3057984
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637447"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309469"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
 Un clasificador que se puede entrenar de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido al darle ejemplos a los que examinar. Una vez entrenado, puede usarlo para identificar elementos para la aplicación de etiquetas de confidencialidad de Office, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
 
-En este artículo se muestra cómo mejorar el rendimiento de los clasificadores entrenables personalizados proporcionándoles comentarios adicionales.
+En este artículo se muestra cómo mejorar el rendimiento de los clasificadores entrenables personalizados proporcionándoles más comentarios.
 
 Para obtener más información sobre los distintos tipos de clasificadores, consulte [Más información sobre los clasificadores que se pueden entrenar](classifier-learn-about.md).
 
@@ -34,7 +34,7 @@ Vea este vídeo para obtener un resumen rápido del proceso de optimización y r
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]-->
 
 > [!NOTE]
 > Los clasificadores previamente entrenados no se pueden volver a entrenar.
@@ -69,7 +69,7 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 > [!IMPORTANT]
 > Los elementos agregados pueden tardar hasta ocho días en aparecer en el encabezado de clasificadores entrenables.
 
-3. Elija el clasificador entrenable que usó en la directiva de etiqueta de retención de aplicación automática. Este es el clasificador entrenable sobre el que se proporcionarán comentarios.
+3. Elija el clasificador entrenable que usó en la directiva de etiqueta de retención de aplicación automática. Este es el clasificador que se puede entrenar sobre el que se proporcionarán comentarios.
 
 > [!NOTE]
 > Si un elemento tiene una entrada en la columna **Etiqueta de retención**, significa que el elemento se clasificó como .`match`  Si un elemento no tiene una entrada en la columna **Etiqueta de retención** , significa que se clasificó como `close match`. Puede mejorar la precisión del clasificador al máximo si proporciona comentarios sobre `close match` los elementos. 
@@ -98,7 +98,7 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 
 12. Revise la acción recomendada y las comparaciones de predicción de las versiones reentrenadas y publicadas actualmente del clasificador.
 13. Si está satisfecho con los resultados del reentrenamiento, elija **Volver a publicar**.
-14. Si no está satisfecho con los resultados del reentrenamiento, puede optar por proporcionar comentarios adicionales al clasificador en la interfaz del Explorador de contenido e iniciar otro ciclo de reentrenamiento o no hacer nada en cuyo caso se seguirá usando la versión publicada actualmente del clasificador. 
+14. Si no está satisfecho con los resultados del reentrenamiento, puede optar por proporcionar más comentarios al clasificador en la interfaz del Explorador de contenido e iniciar otro ciclo de reentrenamiento o no hacer nada en cuyo caso se seguirá usando la versión publicada actualmente del clasificador. 
 
 ## <a name="details-on-republishing-recommendations"></a>Detalles sobre la nueva publicación de recomendaciones
 

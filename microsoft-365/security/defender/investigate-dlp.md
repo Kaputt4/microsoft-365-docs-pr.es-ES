@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: da53bc682d759de976283aed6502108cd9cda350
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b0f422175ae16bf1e3c6fb7138c235b79911e338
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106216"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306380"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Investigación de incidentes de pérdida de datos con Microsoft 365 Defender
 
@@ -71,7 +71,7 @@ Antes de empezar, [active las alertas de todas las directivas DLP](/microsoft-36
 
 6. Vea el contenido confidencial coincidente en la pestaña **Tipos de información confidencial** y el contenido del archivo en la pestaña **Origen** si tiene el permiso necesario (consulte los detalles <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">aquí</a>).
 
-7. También puede usar la búsqueda avanzada para buscar en registros de auditoría de usuarios, archivos y ubicaciones de sitio para la investigación. La tabla **CloudAppEvents** contiene todos los registros de auditoría en todas las ubicaciones, como Sharepoint, OneDrive, Exchange y Dispositivos.
+7. También puede usar la búsqueda avanzada para buscar en registros de auditoría de usuarios, archivos y ubicaciones de sitio para la investigación. La tabla **CloudAppEvents** contiene todos los registros de auditoría en todas las ubicaciones, como SharePoint, OneDrive, Exchange y Dispositivos.
 
 8. También puede descargar el correo electrónico seleccionando **Acciones** \> **Descargar correo electrónico**. 
 
@@ -80,7 +80,7 @@ Antes de empezar, [active las alertas de todas las directivas DLP](/microsoft-36
     - Aplicar etiqueta de retención
     - Aplicar etiqueta de confidencialidad
     - No compartir archivo
-    - Eliminar
+    - Delete
 
    Para las acciones de corrección, seleccione la **tarjeta Usuario** en la parte superior de la página de alertas para abrir los detalles del usuario.
 

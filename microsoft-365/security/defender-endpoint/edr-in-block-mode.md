@@ -1,7 +1,7 @@
 ---
-title: Detección y respuesta de puntos de conexión en modo de bloqueo
-description: Obtenga información sobre detección y respuesta de puntos de conexión en modo de bloque
-keywords: Microsoft Defender para endpoint, mde, EDR en modo de bloque, bloqueo de modo pasivo
+title: Detección y respuesta de puntos de conexión en modo de bloque
+description: Más información sobre la detección y respuesta de puntos de conexión en modo de bloque
+keywords: Microsoft Defender para punto de conexión, mde, EDR en modo de bloque, bloqueo de modo pasivo
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -14,156 +14,176 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-- admindeeplinkDEFENDER
-ms.date: 10/07/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+- admindeeplinkDEFENDER
+ms.date: 08/08/2022
 ms.technology: mde
-ms.openlocfilehash: 7fd400d2e640e234f593dbfda93be315ed00aeed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7f2241cfbdb96743787bc829443d1dacacd6880b
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164015"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281385"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus de Microsoft Defender
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+**Plataformas**
+- Windows
 
-## <a name="what-is-edr-in-block-mode"></a>¿Qué EDR en modo de bloqueo?
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[La detección](overview-endpoint-detection-response.md) y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección adicional contra artefactos malintencionados cuando Antivirus de Microsoft Defender no es el producto antivirus principal y se ejecuta en modo pasivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados por EDR funcionalidades. Es posible que el producto antivirus principal que no es Microsoft no haya perdido estos artefactos. Para los dispositivos que ejecutan Antivirus de Microsoft Defender como su antivirus principal, EDR en modo de bloqueo proporciona una capa adicional de defensa al permitir que Antivirus de Microsoft Defender tome acciones automáticas en detecciones de EDR comportamiento posteriores a la infracción.
+## <a name="what-is-edr-in-block-mode"></a>¿Qué es EDR en modo de bloque?
+
+[La detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) (EDR) en modo de bloque proporciona protección adicional contra artefactos malintencionados cuando Antivirus de Microsoft Defender (MDAV) no es el producto antivirus principal y se ejecuta en modo pasivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados detectados por las funcionalidades de EDR. Es posible que el producto antivirus principal que no es de Microsoft haya perdido estos artefactos. EDR en modo de bloque permite que Antivirus de Microsoft Defender realice acciones en detecciones de EDR posteriores a la vulneración y comportamiento. Consulte la sección [¿Tengo que activar EDR en modo de bloque si tengo antivirus de Microsoft Defender?](#do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices) en la sección **Preguntas más frecuentes** .
 
 > [!IMPORTANT]
-> EDR en modo de bloqueo no proporciona toda la protección disponible cuando Antivirus de Microsoft Defender la protección en tiempo real está habilitada. Todas las características que dependen de Antivirus de Microsoft Defender para ser la solución antivirus activa no funcionarán, incluidos los siguientes ejemplos clave:
->
-> - La protección en tiempo real, incluido el examen en tiempo real, no está disponible cuando Antivirus de Microsoft Defender está en modo pasivo. Para obtener más información acerca de las opciones de directiva de protección en tiempo real, vea Habilitar y configurar Antivirus de Microsoft Defender **[protección siempre activa.](configure-real-time-protection-microsoft-defender-antivirus.md)**
-> - Las características como **[la protección de](network-protection.md)** red y las reglas **[de](attack-surface-reduction.md)** reducción de superficie de ataque solo están disponibles cuando Antivirus de Microsoft Defender se ejecuta en modo activo.
->
-> Se espera que la solución antivirus que no sea de Microsoft proporciona estas funcionalidades.
+> EDR en modo de bloque no proporciona toda la protección que está disponible cuando está habilitada la protección en tiempo real del Antivirus de Microsoft Defender. Algunas funcionalidades dependen de Antivirus de Microsoft Defender para que sea la solución antivirus activa, como los ejemplos siguientes:
+> - La protección en tiempo real, incluido el examen a acceso, no está disponible cuando Antivirus de Microsoft Defender está en modo pasivo. Para más información sobre la configuración de directivas de protección en tiempo real, consulte **[Habilitación y configuración de la protección always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md)**.
+> - Las características como la **[protección de red](network-protection.md)** y **[las reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md)** solo están disponibles cuando el Antivirus de Microsoft Defender se ejecuta en modo activo.
+> Se espera que la solución antivirus que no es de Microsoft incluya estas funcionalidades.
 
-EDR en modo de bloque se integra con [la amenaza & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md). El equipo de seguridad de [](tvm-security-recommendation.md) la organización recibirá una recomendación de seguridad para activar EDR en modo de bloqueo si aún no está habilitado.
+EDR en modo de bloque se integra con las funcionalidades [de administración de vulnerabilidades & amenazas](next-gen-threat-and-vuln-mgt.md) . El equipo de seguridad de la organización recibirá una [recomendación de seguridad](tvm-security-recommendation.md) para activar EDR en modo de bloque si aún no está habilitada. Esta recomendación es principalmente para dispositivos que usan una solución antivirus activa que no es de Microsoft (con antivirus de Microsoft Defender en modo pasivo). La habilitación de EDR en modo de bloque es poca ventaja cuando Antivirus de Microsoft Defender es la solución antivirus principal en los dispositivos.  
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recomendación de activar el EDR en modo de bloqueo.":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="La recomendación de activar EDR en modo de bloque" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
-> Para obtener la mejor protección, asegúrese de implementar Las líneas base de **[Microsoft Defender para endpoint .](configure-machines-security-baseline.md)**
+> Para obtener la mejor protección, asegúrese de **[implementar Microsoft Defender para punto de conexión líneas base](configure-machines-security-baseline.md)**.
 
-## <a name="what-happens-when-something-is-detected"></a>¿Qué sucede cuando se detecta algo?
+Vea este vídeo para obtener información sobre por qué y cómo activar la detección y respuesta de puntos de conexión (EDR) en modo de bloque, habilitar el bloqueo de comportamiento y la contención en cada fase, desde la infracción previa hasta la posterior a la vulneración. 
 
-Cuando EDR en modo de bloque está activado y se detecta un artefacto malintencionado, Microsoft Defender para endpoint bloquea y corrige ese artefacto. El equipo de operaciones de seguridad verá el estado de detección como **Bloqueado** o **Impedido** en el Centro de [acciones,](respond-machine-alerts.md#check-activity-details-in-action-center)que aparece como acciones completadas.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
 
-La siguiente imagen muestra una instancia de software no deseado que se detectó y bloqueó a través EDR en modo de bloqueo:
+## <a name="what-happens-when-something-is-detected"></a>¿Qué ocurre cuando se detecta algo?
+
+Cuando se activa EDR en modo de bloque y se detecta un artefacto malintencionado, Defender para punto de conexión corrige ese artefacto. El equipo de operaciones de seguridad verá el estado de detección como **Bloqueado** o **Impedido** en el [Centro](respond-machine-alerts.md#check-activity-details-in-action-center) de acciones, que aparece como acciones completadas. En la imagen siguiente se muestra una instancia de software no deseado que se detectó y corrigieron a través de EDR en modo de bloque:
 
 :::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR en modo de bloque detectó algo.":::
 
+## <a name="enable-edr-in-block-mode"></a>Habilitación de EDR en modo de bloque
 
-## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloque
+> [!IMPORTANT]
+> A partir de la versión de plataforma 4.18.2202.X, ahora puede establecer EDR en modo de bloque para dirigirse a grupos de dispositivos específicos mediante Intune CSP. Puede seguir estableciendo EDR en el modo de bloque para todo el inquilino en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. EDR en modo de bloque se recomienda principalmente para los dispositivos que ejecutan antivirus de Microsoft Defender en modo pasivo (se instala una solución antivirus que no es de Microsoft y está activa en el dispositivo). 
 
 > [!TIP]
-> Asegúrese de que se [cumplen](#requirements-for-edr-in-block-mode) los requisitos antes de activar EDR en modo de bloque.
+> Asegúrese de que se cumplen [los requisitos](#requirements-for-edr-in-block-mode) antes de activar EDR en modo de bloque.
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com/](https://security.microsoft.com/) ) e inicie sesión.
-2. Elija **Configuración** \> **endpoints** \> **General** \> **Advanced .**
+### <a name="security-portal"></a>Portal de seguridad 
+
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) e inicie sesión.
+
+2. Elija **Configuración** \> **Puntos de conexión** **Características avanzadas**\> **generales**\>.
+
 3. Desplácese hacia abajo y, a continuación, active **Habilitar EDR en modo de bloque**.
 
-> [!NOTE]
-> EDR en modo de bloque solo se puede desactivar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> de Microsoft 365 Defender o en el antiguo Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
+### <a name="intune"></a>Intune
 
-## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
+Para crear una directiva personalizada en Intune, consulte [Implementación de OMA-URIs para dirigirse a un CSP a través de Intune y una comparación con el entorno local](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
+
+Para obtener más información sobre el CSP de Defender usado para EDR en bloque
+
+## <a name="requirements-for-edr-in-block-mode"></a>Requisitos de EDR en modo de bloque
+
+En la tabla siguiente se enumeran los requisitos de EDR en modo de bloque:
 
 |Requisito|Detalles|
 |---|---|
-|Permissions|Debe tener asignado el rol Administrador global o Administrador de seguridad en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Para obtener más información, vea [Basic permissions](basic-permissions.md).|
-|Sistema operativo|Los dispositivos deben ejecutar una de las siguientes versiones de Windows: <br/>- Windows 10 (todas las versiones)<br/>- Windows server, versión 1803 o posterior<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (solo cuando Antivirus de Microsoft Defender está en modo activo)|
-|Microsoft Defender para punto de conexión|Los dispositivos deben incorporarse a Defender for Endpoint. Consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md).|
-|Antivirus de Microsoft Defender|Los dispositivos deben Antivirus de Microsoft Defender instalados y en ejecución en modo activo o en modo pasivo. [Confirme Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
-|Protección entregada en la nube|Antivirus de Microsoft Defender debe configurarse de modo que [la protección entregada en la nube esté habilitada.](enable-cloud-protection-microsoft-defender-antivirus.md)|
-|Antivirus de Microsoft Defender plataforma|Los dispositivos deben estar actualizados. Para confirmar, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la **línea AMProductVersion,** debería ver **4.18.2001.10** o posterior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
-|Antivirus de Microsoft Defender motor|Los dispositivos deben estar actualizados. Para confirmar, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la **línea AMEngineVersion,** debería ver **1.1.16700.2** o posterior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
+|Permisos|Debe tener asignado el rol Administrador global o Administrador de seguridad en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Para obtener más información, consulte [Permisos básicos](basic-permissions.md).|
+|Sistema operativo|Los dispositivos deben ejecutar una de las siguientes versiones de Windows: <ul><li>Windows 11</li><li>Windows 10 (todas las versiones)</li><li>Windows Server 2019 o posterior</li><li>Windows Server, versión 1803 o posterior</li><li>Windows Server 2016 (solo cuando antivirus de Microsoft Defender está en modo activo)</li></ul>|
+|Microsoft Defender para punto de conexión|Los dispositivos deben incorporarse a Defender para punto de conexión. Consulte [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md).|
+|Antivirus de Microsoft Defender|Los dispositivos deben tener instalado el Antivirus de Microsoft Defender y ejecutarse en modo activo o pasivo. [Confirme que Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
+|Protección entregada en la nube|El Antivirus de Microsoft Defender debe configurarse de forma que [la protección entregada en la nube esté habilitada](enable-cloud-protection-microsoft-defender-antivirus.md).|
+|Plataforma antivirus de Microsoft Defender|Los dispositivos deben estar actualizados. Para confirmar que, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la línea **AMProductVersion** , debería ver **la versión 4.18.2001.10** o posterior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
+|Motor antivirus de Microsoft Defender|Los dispositivos deben estar actualizados. Para confirmar que, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la línea **AMEngineVersion** , debería ver **1.1.16700.2** o superior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
+
+(<a id="fn1">1</a>) Consulte [¿Se admite EDR en modo de bloque en Windows Server 2016 y Windows Server 2012 R2?](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
 
 > [!IMPORTANT]
-> Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender, pero no los indicadores [definidos](manage-indicators.md) para Microsoft Defender para endpoint.
+> Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales, y de que [las exclusiones están configuradas](configure-exclusions-microsoft-defender-antivirus.md). EDR en modo de bloque respeta las exclusiones definidas para el Antivirus de Microsoft Defender, pero no [los indicadores definidos](manage-indicators.md) para Microsoft Defender para punto de conexión.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
+### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>¿Puedo especificar exclusiones para EDR en modo de bloque?
 
-El objetivo principal de EDR en modo de bloqueo es corregir las detecciones posteriores a la infracción que no se han detectado en un producto antivirus que no es de Microsoft. Sin embargo, se recomienda mantener EDR en modo de bloque activado, tanto si Antivirus de Microsoft Defender se ejecuta en modo pasivo como en modo activo.
+Si obtiene un falso positivo, puede enviar el archivo para su análisis en el [sitio de envío de Inteligencia de seguridad de Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
-- Cuando Antivirus de Microsoft Defender está en modo pasivo, EDR en modo de bloque proporciona otra capa de defensa junto con Microsoft Defender para endpoint.
-- Cuando Antivirus de Microsoft Defender está en modo activo, EDR en modo de bloqueo no proporciona análisis adicional, pero permite a Antivirus de Microsoft Defender realizar acciones automáticas en detecciones posteriores a la infracción y de EDR comportamiento.
+También puede definir una exclusión para el Antivirus de Microsoft Defender. Consulte [Configuración y validación de exclusiones para exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>¿EDR en modo de bloqueo afectará a la protección antivirus de un usuario?
+### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Es necesario activar EDR en modo de bloque si tengo antivirus de Microsoft Defender en ejecución en dispositivos?
 
-EDR en modo de bloqueo no afecta a la protección antivirus de terceros que se ejecuta en los dispositivos de los usuarios. EDR en modo de bloqueo funciona si la solución antivirus principal falla algo o si hay una detección posterior a la infracción. EDR en modo de bloque funciona igual que Antivirus de Microsoft Defender en modo pasivo, excepto que EDR en modo de bloque también bloquea y corrige artefactos o comportamientos malintencionados detectados.
+El propósito principal de EDR en modo de bloque es corregir las detecciones posteriores a la infracción que un producto antivirus que no es de Microsoft ha perdido. Hay una ventaja mínima en la habilitación de EDR en modo de bloque cuando Antivirus de Microsoft Defender está en modo activo, ya que se espera que la protección en tiempo real detecte y corrija primero las detecciones. Se recomienda habilitar EDR en modo de bloque en puntos de conexión donde Microsoft Defender for Antivirus se ejecuta en modo pasivo. Las detecciones de EDR se pueden corregir automáticamente mediante la [protección pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) o mediante [una investigación automatizada & funcionalidades de corrección](automated-investigations.md) en modo de bloque.
 
-### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>¿Por qué necesito mantener la Antivirus de Microsoft Defender actualizada?
+### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>¿Afectará EDR en modo de bloque a la protección antivirus de un usuario?
 
-Dado Antivirus de Microsoft Defender detecta y corrige elementos malintencionados, es importante mantenerlo actualizado. Para EDR modo de bloqueo sea eficaz, usa los modelos de aprendizaje de dispositivos más recientes, detecciones de comportamiento y heurística. La [pila de funcionalidades](microsoft-defender-endpoint.md) de Defender for Endpoint funciona de forma integrada. Para obtener el mejor valor de protección, debe mantener Antivirus de Microsoft Defender actualizado. Consulte [Manage Antivirus de Microsoft Defender updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+EDR en modo de bloque no afecta a la protección antivirus de terceros que se ejecuta en los dispositivos de los usuarios. EDR en modo de bloque funciona si la solución antivirus principal omite algo o si hay una detección posterior a la vulneración. EDR en modo de bloque funciona igual que antivirus de Microsoft Defender en modo pasivo, salvo que EDR en modo de bloque también bloquea y corrige los artefactos malintencionados o comportamientos detectados.
 
-### <a name="why-do-we-need-cloud-protection-maps-on"></a>¿Por qué necesitamos protección en la nube (MAPS) en?
+### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>¿Por qué tengo que mantener actualizado el Antivirus de Microsoft Defender?
 
-Se necesita protección en la nube para activar la característica en el dispositivo. La protección en la nube permite a [Defender for Endpoint](microsoft-defender-endpoint.md) ofrecer la protección más reciente y la mejor basada en nuestra amplitud y profundidad de inteligencia de seguridad, junto con modelos de aprendizaje de dispositivos y comportamiento.
+Dado que Antivirus de Microsoft Defender detecta y corrige elementos malintencionados, es importante mantenerlo actualizado. Para que EDR en modo de bloque sea eficaz, usa los modelos de aprendizaje de dispositivos más recientes, las detecciones de comportamiento y la heurística. La pila de funcionalidades de [Defender para punto de conexión](microsoft-defender-endpoint.md) funciona de forma integrada. Para obtener el mejor valor de protección, debe mantener actualizado el Antivirus de Microsoft Defender. Consulte [Administración de actualizaciones del Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-### <a name="what-is-the-difference-between-active-and-passive-mode"></a>¿Cuál es la diferencia entre el modo activo y el pasivo?
+### <a name="why-do-we-need-cloud-protection-maps-on"></a>¿Por qué necesitamos protección en la nube (MAPS) activada?
 
-Para los puntos de conexión que ejecutan Windows 10, Windows 11, Windows Server, versión 1803 o posterior, Windows Server 2019 o Windows Server 2022 cuando Antivirus de Microsoft Defender está en modo activo, se usa como el antivirus principal del dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, las amenazas no se corrigen Antivirus de Microsoft Defender en tiempo real.
+La protección en la nube es necesaria para activar la característica en el dispositivo. La protección en la nube permite a [Defender para punto de conexión](microsoft-defender-endpoint.md) ofrecer la protección más reciente y más grande en función de nuestra amplitud y profundidad de inteligencia de seguridad, junto con los modelos de comportamiento y aprendizaje de dispositivos.
+
+### <a name="what-is-the-difference-between-active-and-passive-mode"></a>¿Cuál es la diferencia entre el modo activo y pasivo?
+
+Para los puntos de conexión que ejecutan Windows 10, Windows 11, Windows Server, versión 1803 o posterior, Windows Server 2019 o Windows Server 2022 cuando Antivirus de Microsoft Defender está en modo activo, se usa como antivirus principal en el dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, antivirus de Microsoft Defender no corrige las amenazas en tiempo real.
 
 > [!NOTE]
-> Antivirus de Microsoft Defender puede ejecutarse en modo pasivo solo cuando el dispositivo está incorporado a Microsoft Defender para Endpoint.
+> Antivirus de Microsoft Defender solo se puede ejecutar en modo pasivo cuando el dispositivo se incorpora a Microsoft Defender para punto de conexión.
 
-Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
+Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>¿Cómo confirmo Antivirus de Microsoft Defender está en modo activo o pasivo?
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Cómo confirmar que Antivirus de Microsoft Defender está en modo activo o pasivo?
 
-Para confirmar si Antivirus de Microsoft Defender se está ejecutando en modo activo o pasivo, puede usar el símbolo del sistema o PowerShell en un dispositivo que se Windows.
+Para confirmar si antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, puede usar el símbolo del sistema o PowerShell en un dispositivo que ejecute Windows.
 
-<br/><br/>
-
-|Method|Procedure|
+|Método|Procedure|
 |---|---|
-|PowerShell|1. Seleccione el menú Inicio, empiece a escribir y, a continuación, `PowerShell` abra Windows PowerShell en los resultados.<br/><br/>2. Escriba `Get-MpComputerStatus` .<br/><br/>3. En la lista de resultados, en la fila **AMRunningMode,** busque uno de los siguientes valores:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Para obtener más información, [vea Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
-|Símbolo del sistema|1. Seleccione el menú Inicio, empiece a escribir y, a continuación, abra Windows símbolo del `Command Prompt` sistema en los resultados.<br/><br/>2. Escriba `sc query windefend` .<br/><br/>3. En la lista de resultados, en la fila **STATE,** confirme que el servicio se está ejecutando. |
+|PowerShell|1. Seleccione el menú Inicio, comience a escribir `PowerShell`y, a continuación, abra Windows PowerShell en los resultados.<br/><br/>2. Escriba `Get-MpComputerStatus`.<br/><br/>3. En la lista de resultados, en la fila **AMRunningMode** , busque uno de los siguientes valores:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Para obtener más información, consulte [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
+|Símbolo del sistema|1. Seleccione el menú Inicio, comience a escribir `Command Prompt`y, a continuación, abra el símbolo del sistema de Windows en los resultados.<br/><br/>2. Escriba `sc query windefend`.<br/><br/>3. En la lista de resultados, en la fila **STATE** , confirme que el servicio se está ejecutando. |
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>¿Cómo confirmo que el EDR en modo de bloque está activado con Antivirus de Microsoft Defender en modo pasivo?
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Cómo confirmar que EDR en modo de bloque está activado con antivirus de Microsoft Defender en modo pasivo?
 
-Puede usar PowerShell para confirmar que el EDR en modo de bloque está activado Antivirus de Microsoft Defender en modo pasivo.
+Puede usar PowerShell para confirmar que EDR en modo de bloque está activado con antivirus de Microsoft Defender que se ejecuta en modo pasivo.
 
-1. Seleccione el menú Inicio, empiece a escribir y, a `PowerShell` continuación, abra Windows PowerShell en los resultados.
+1. Seleccione el menú Inicio, empiece a escribir `PowerShell`y, a continuación, abra Windows PowerShell en los resultados.
 
 2. Tipo `Get-MPComputerStatus|select AMRunningMode`.
 
-3. Confirme que se muestra `EDR Block Mode` el resultado, , .
+3. Confirme que se muestra el resultado, `EDR Block Mode`, .
 
    > [!TIP]
-   > Si Antivirus de Microsoft Defender está en modo activo, verá `Normal` en lugar de `EDR Block Mode` . Para obtener más información, [vea Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
+   > Si Antivirus de Microsoft Defender está en modo activo, verá `Normal` en lugar de `EDR Block Mode`. Para obtener más información, consulte [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
 
-### <a name="is-edr-in-block-mode-supported-on-windows-server-2016"></a>¿EDR en modo de bloque se admite en Windows Server 2016?
+### <a name="is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2"></a>¿Se admite EDR en modo de bloque en Windows Server 2016 y Windows Server 2012 R2?
 
-Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en modo de bloque se admite de las siguientes versiones de Windows:
+Si el Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en modo de bloque es compatible con las siguientes versiones de Windows:
 
+- Windows 11
 - Windows 10 (todas las versiones)
-- Windows server, versión 1803 o posterior 
+- Windows Server, versión 1803 o posterior 
 - Windows Server 2022
 - Windows Server 2019 
-- Windows Server 2016
-- Windows Server 2012 R2
-- Windows 11
+- Windows Server 2016 y Windows Server 2012 R2 (con la [nueva solución de cliente unificada](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution))
 
->[!NOTE]
->Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md) para que esta característica funcione. 
+Con la [nueva solución de cliente unificada](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) para Windows Server 2016 y Windows Server 2012 R2, puede ejecutar EDR en modo de bloque en modo pasivo o en modo activo.
 
-### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>¿Cuánto tiempo se necesita para deshabilitar EDR en modo de bloque?
+> [!NOTE]
+> Windows Server 2016 y Windows Server 2012 R2 deben incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md) para que esta característica funcione. 
 
-Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>¿Cuánto tiempo tarda EDR en modo de bloque en deshabilitarse?
 
-## <a name="see-also"></a>Recursos adicionales
+Si decide deshabilitar EDR en modo de bloque, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-- [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+## <a name="see-also"></a>Vea también
+
+- [Blog de Tech Community: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+
 - [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)

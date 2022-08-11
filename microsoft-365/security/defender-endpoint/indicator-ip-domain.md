@@ -15,18 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 955f11aa44bd0defb867c25124da7c5a3769c98d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840128"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301296"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -50,18 +51,18 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 - El bloqueo y la dirección URL/IP se basan en el componente de Defender para punto de conexión Network Protection para habilitarse en modo de bloque. Para obtener más información sobre la protección de red y las instrucciones de configuración, consulte [Habilitación de la protección de red](enable-network-protection.md).
 - La versión de cliente de Antimalware debe ser 4.18.1906.x o posterior. 
-- Compatible con máquinas en Windows 10, versión 1709 o posterior, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, Windows Server 2022 y Android y iOS dispositivos.
+- Compatible con máquinas en Windows 10, versión 1709 o posterior, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, Windows Server 2022 y dispositivos Android e iOS.
 
     > [!NOTE]
     > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
 
-- Asegúrese de que **los indicadores de red personalizados están habilitados** en **Microsoft 365 Defender** \> **Configuración** \> **características avanzadas**. Para obtener más información, consulte [Características avanzadas](advanced-features.md).
-- Para obtener soporte de indicadores sobre iOS, consulte [Microsoft Defender para punto de conexión sobre iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
-- Para obtener soporte de indicadores sobre Android, consulte [Microsoft Defender para punto de conexión sobre Android](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators).
+- Asegúrese de que **los indicadores de red personalizados están habilitados** en **Microsoft 365 Defender** \> **Configuración** \> **Características avanzadas**. Para obtener más información, consulte [Características avanzadas](advanced-features.md).
+- Para obtener compatibilidad con indicadores en iOS, consulte [Microsoft Defender para punto de conexión en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+- Para obtener compatibilidad con indicadores en Android, consulte [Microsoft Defender para punto de conexión en Android](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Solo se pueden agregar direcciones IP externas a la lista de indicadores. No se pueden crear indicadores para direcciones IP internas.
-> Para escenarios de protección web, se recomienda usar las funcionalidades integradas en Microsoft Edge. Microsoft Edge aprovecha [La protección de red](network-protection.md) para inspeccionar el tráfico de red y permite bloques de TCP, HTTP y HTTPS (TLS).
+> Para escenarios de protección web, se recomienda usar las funcionalidades integradas de Microsoft Edge. Microsoft Edge aprovecha [La protección de red](network-protection.md) para inspeccionar el tráfico de red y permite bloques de TCP, HTTP y HTTPS (TLS).
 > Si hay directivas de indicadores de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva `https://support.microsoft.com/office` de indicador de dirección URL tiene prioridad sobre la directiva `https://support.microsoft.com`de indicador de dirección URL .
 
 > [!NOTE]
@@ -94,7 +95,7 @@ Para obtener más información, consulte [Control de las aplicaciones detectadas
 
 ## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Creación de un indicador para direcciones IP, direcciones URL o dominios desde la página de configuración
 
-1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** \> de **puntos de conexión** (en **Reglas**).
+1. En el panel de navegación, seleccione **Configuración** \> **Indicadores** de **puntos** \> de conexión (en **Reglas**).
 
 2. Seleccione la pestaña **Direcciones IP, direcciones URL o dominios** .
 

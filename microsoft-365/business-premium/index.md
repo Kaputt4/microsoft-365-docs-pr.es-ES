@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -20,34 +20,27 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Business Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: 06655f049e62fc04b6521b9f7e801c312cbeeeaa
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
+ms.openlocfilehash: e046ebbf6e3609f1f5b13c89cad4261dab8da879
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276873"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300746"
 ---
-# <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium: productividad y ciberseguridad para pequeñas empresas
+# <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium: productividad y ciberseguridad para pequeñas empresas
 
-Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Business Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Business Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberataques, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
+Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Empresa Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberattackers, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
 
-La tarea anterior es la siguiente: Microsoft 365 Business Premium ayudar a proteger el futuro de su organización. Para abordar esta tarea, realice las siguientes misiones: 
+La tarea anterior es la siguiente: deje que Microsoft 365 Empresa Premium ayudar a proteger el futuro de su organización. Para abordar esta tarea, realice las siguientes misiones: 
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagrama en el que se enumeran seis misiones.":::
 
-
-| Misión  | Descripción  |
-|---------|---------|
-| **Fortificar su entorno**  | Estas son las tareas que el administrador completa. |
-| [**1. Inicie sesión y configure su entorno**](m365bp-setup-overview.md).    | Complete el proceso de configuración básico de Microsoft 365 para su empresa o campaña.   |
-| [**2. Aumente la protección de seguridad**](m365bp-security-overview.md).   |  Configure medidas de seguridad críticas de primera línea para evitar ciberataques.   |
-| **Entrenamiento de su equipo**  | Estas son tareas que todo el mundo realiza. |
-| [**3. Configurar dispositivos no administrados (BYOD).**](m365bp-protect-pcs-macs.md) | Configure todos los dispositivos no administrados ("traiga su propio dispositivo", también conocido como BYOD) para que formen parte del ecosistema de forma segura. |
-| [**4. Use el correo electrónico de forma segura**](m365bp-protect-email-overview.md). | Sepa lo que debe observar y siga los pasos necesarios para protegerse de los ataques a través de sistemas de correo electrónico. |
-| [**5. Colaborar y compartir de forma segura**](m365bp-collaborate-share-securely.md). | Obtenga información sobre cómo compartir archivos con otros usuarios y colaborar de forma más segura con Microsoft Teams, SharePoint y OneDrive. |
-| **Protección de dispositivos administrados**   | Estas son tareas que realiza el administrador o el equipo de seguridad. |
-| [**6. Configurar y proteger dispositivos administrados**](m365bp-protect-devices.md). | Inscriba y proteja los dispositivos de la empresa para que supervisen y protejan frente a amenazas. |
+| Qué hacer | Cómo hacerlo |
+|:---|:---|
+| **Fortificar su entorno** <br/> (Tareas que el administrador completa). | [**1. Inicie sesión y configure su entorno**](m365bp-setup-overview.md). Complete el proceso de configuración básico de Microsoft 365 para su empresa o campaña. Agregue usuarios, asigne licencias y configure el dominio para que funcione con Microsoft 365.<br/><br/>[**2. Aumente la protección de seguridad**](m365bp-security-overview.md). Configure medidas de seguridad críticas de primera línea para evitar ciberataques. Configure la autenticación multifactor (MFA), proteja las cuentas de administrador y proteja contra malware y otras amenazas. |
+| **Entrene a su equipo**.<br/>(Tareas que todo el mundo realiza). | [**3. Configurar dispositivos no administrados (BYOD).**](m365bp-protect-pcs-macs.md) Configure todos los dispositivos no administrados ("traiga su propio dispositivo", también conocido como BYOD) para que formen parte del ecosistema de forma segura.<br/><br/>[**4. Use el correo electrónico de forma segura**](m365bp-protect-email-overview.md). Sepa lo que debe observar en su correo electrónico y siga los pasos necesarios para protegerse de los ataques.<br/><br/>[**5. Colaborar y compartir de forma segura**](m365bp-collaborate-share-securely.md). Comparta archivos con otros usuarios y colabore de forma más segura con Microsoft Teams, SharePoint y OneDrive. |
+| **Proteja los dispositivos administrados**. <br/>(Tareas que realiza el administrador o el equipo de seguridad). | [**6. Configurar y proteger dispositivos administrados**](m365bp-protect-devices.md). Inscriba y proteja los dispositivos de la empresa para que supervisen y protejan frente a amenazas. |
 
 Completar las seis misiones es la manera más eficaz de frustrar a los hackers, protegerse contra ransomware y ayudar a garantizar que el futuro de su organización se proteja con las mejores defensas de ciberseguridad. Comencemos
 

@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 7f22d5d1162e01afe737e6e3f25450cc22e25c76
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695734"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306358"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 2: Configuración
 
@@ -55,52 +56,10 @@ Al realizar el cambio a Defender para punto de conexión, es posible que tenga q
 |Tipo de punto de conexión|Qué hacer|
 |---|---|
 |Clientes de Windows (como puntos de conexión que ejecutan Windows 10 y Windows 11)|En general, no es necesario realizar ninguna acción para los clientes de Windows (a menos que se haya desinstalado el Antivirus de Microsoft Defender). En general, el Antivirus de Microsoft Defender debe seguir instalado, pero lo más probable es que esté deshabilitado en este momento del proceso de migración. <br/><br/> Cuando se instala una solución antivirus o antimalware que no es de Microsoft y los clientes aún no están incorporados a Defender para punto de conexión, antivirus de Microsoft Defender se deshabilita automáticamente. Más adelante, cuando los puntos de conexión de cliente se incorporan a Defender para punto de conexión, si esos puntos de conexión ejecutan una solución antivirus que no es de Microsoft, antivirus de Microsoft Defender pasa al modo pasivo. <br/><br/> Si se desinstala la solución antivirus que no es de Microsoft, Antivirus de Microsoft Defender entra en modo activo automáticamente.|
-|Servidores Windows|En Windows Server, deberá volver a instalar antivirus de Microsoft Defender y establecerlo en modo pasivo manualmente. En los servidores Windows, cuando se instala un antivirus o antimalware que no es de Microsoft, el Antivirus de Microsoft Defender no se puede ejecutar junto con la solución antivirus que no es de Microsoft. En esos casos, antivirus de Microsoft Defender se deshabilita o desinstala manualmente. <br/><br/> Para volver a instalar o habilitar el Antivirus de Microsoft Defender en Windows Server, realice las siguientes tareas: <br/>- [Reinstale el Antivirus de Microsoft Defender en Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Reinstalación del Antivirus de Microsoft Defender en Windows Server, versión 1803 o posterior](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Establecer antivirus de Microsoft Defender en modo pasivo en Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si tiene problemas para volver a instalar o volver a habilitar el Antivirus de Microsoft Defender en Windows Server, consulte [Solución de problemas: Antivirus de Microsoft Defender se desinstala en Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Servidores Windows|En Windows Server, deberá volver a instalar antivirus de Microsoft Defender y establecerlo en modo pasivo manualmente. En servidores Windows, cuando se instala un antivirus o antimalware que no es de Microsoft, antivirus de Microsoft Defender no se puede ejecutar junto con la solución antivirus que no es de Microsoft. En esos casos, antivirus de Microsoft Defender se deshabilita o desinstala manualmente. <br/><br/> Para volver a instalar o habilitar el Antivirus de Microsoft Defender en Windows Server, realice las siguientes tareas: <br/>- [Volver a habilitar el Antivirus de Defender en Windows Server si se deshabilitó](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [Volver a habilitar el Antivirus de Defender en Windows Server si se ha desinstalado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Establecer antivirus de Microsoft Defender en modo pasivo en Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si tiene problemas para volver a instalar o volver a habilitar El antiviso de Microsoft Defender en Windows Server, consulte [Solución de problemas: Antivirus de Microsoft Defender se desinstala en Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > Para obtener más información sobre los estados del Antivirus de Microsoft Defender con protección antivirus que no es de Microsoft, consulte [Compatibilidad con antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Vuelva a habilitar el Antivirus de Microsoft Defender en Windows Server 2016
-
-Puede usar la [Utilidad de protección contra malware Command-Line](command-line-arguments-microsoft-defender-antivirus.md) para volver a habilitar el Antivirus de Microsoft Defender en Windows Server 2016.
-
-1. Como administrador local en el servidor, abra el símbolo del sistema.
-
-2. Ejecute el siguiente comando: `MpCmdRun.exe -wdenable`
-
-3. Reinicie el dispositivo.
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Volver a habilitar antivirus de Microsoft Defender en Windows Server, versión 1803 o posterior
-
-> [!IMPORTANT]
-> El procedimiento siguiente solo se aplica a los puntos de conexión o dispositivos que ejecutan las siguientes versiones de Windows:
-> - Windows Server 2022
-> - Windows Server 2019
-> - Windows Server, versión 1803 (modo solo núcleo)
-
-1. Como administrador local en el servidor, abra Windows PowerShell.
-
-2. Ejecute los siguientes cmdlets de PowerShell:
-
-   ```powershell
-   # For Windows Server 2016
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   
-   # For Windows Server 2019 and Windows Server 2022
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-   Cuando se usa el comando DISM dentro de una secuencia de tareas que ejecuta PowerShell, se requiere la siguiente ruta de acceso a cmd.exe.
-   Ejemplo:
-
-   ```powershell
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-3. Reinicie el dispositivo.
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Establecer antivirus de Microsoft Defender en modo pasivo en Windows Server
 
@@ -179,7 +138,7 @@ Los grupos de dispositivos, las recopilaciones de dispositivos y las unidades or
 
 |Tipo de colección|Qué hacer|
 |---|---|
-|[Los grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) (anteriormente denominados *grupos de máquinas*) permiten al equipo de operaciones de seguridad configurar funcionalidades de seguridad, como la investigación y la corrección automatizadas. <br/><br/> Los grupos de dispositivos también son útiles para asignar acceso a esos dispositivos para que el equipo de operaciones de seguridad pueda realizar acciones de corrección si es necesario. <br/><br/> Los grupos de dispositivos se crean en Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).|1. Vaya al portal de Microsoft 365 Defender (<https://security.microsoft.com>).<br/><br/>2. En el panel de navegación de la izquierda, elija **Configuración** \> **Permisos de puntos** \> de conexión **Grupos** \> **de dispositivos**.<br/><br/>3. Elija **+ Agregar grupo de dispositivos**.<br/><br/>4. Especifique un nombre y una descripción para el grupo de dispositivos.<br/><br/>5. En la lista **Nivel de automatización** , seleccione una opción. (Se recomienda **completo: corregir las amenazas automáticamente**). Para obtener más información sobre los distintos niveles de automatización, consulte [Cómo se corrigen las amenazas](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).<br/><br/>6. Especifique las condiciones de una regla coincidente para determinar qué dispositivos pertenecen al grupo de dispositivos. Por ejemplo, puede elegir un dominio, versiones del sistema operativo o incluso usar [etiquetas de dispositivo](/microsoft-365/security/defender-endpoint/machine-tags).<br/><br/>7. En la pestaña **Acceso de usuario** , especifique los roles que deben tener acceso a los dispositivos incluidos en el grupo de dispositivos.<br/><br/>8. Elija **Listo**.|
+|[Los grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) (anteriormente denominados *grupos de máquinas*) permiten al equipo de operaciones de seguridad configurar funcionalidades de seguridad, como la investigación y la corrección automatizadas. <br/><br/> Los grupos de dispositivos también son útiles para asignar acceso a esos dispositivos para que el equipo de operaciones de seguridad pueda realizar acciones de corrección si es necesario. <br/><br/> Los grupos de dispositivos se crean mientras se detecta y detiene el ataque, y las alertas, como una "alerta de acceso inicial", se desencadenan y aparecen en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).|1. Vaya al portal de Microsoft 365 Defender (<https://security.microsoft.com>).<br/><br/>2. En el panel de navegación de la izquierda, elija **Configuración** \> **Permisos de puntos** \> de conexión **Grupos** \> **de dispositivos**.<br/><br/>3. Elija **+ Agregar grupo de dispositivos**.<br/><br/>4. Especifique un nombre y una descripción para el grupo de dispositivos.<br/><br/>5. En la lista **Nivel de automatización** , seleccione una opción. (Se recomienda **completo: corregir las amenazas automáticamente**). Para obtener más información sobre los distintos niveles de automatización, consulte [Cómo se corrigen las amenazas](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).<br/><br/>6. Especifique las condiciones de una regla coincidente para determinar qué dispositivos pertenecen al grupo de dispositivos. Por ejemplo, puede elegir un dominio, versiones del sistema operativo o incluso usar [etiquetas de dispositivo](/microsoft-365/security/defender-endpoint/machine-tags).<br/><br/>7. En la pestaña **Acceso de usuario** , especifique los roles que deben tener acceso a los dispositivos incluidos en el grupo de dispositivos.<br/><br/>8. Elija **Listo**.|
 |[Las recopilaciones de](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) dispositivos permiten al equipo de operaciones de seguridad administrar aplicaciones, implementar la configuración de cumplimiento o instalar actualizaciones de software en los dispositivos de la organización. <br/><br/> Las colecciones de dispositivos se crean mediante [Configuration Manager](/mem/configmgr/).|Siga los pasos descritos en [Creación de una colección](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).|
 |[Las unidades organizativas](/azure/active-directory-domain-services/create-ou) permiten agrupar de forma lógica objetos como cuentas de usuario, cuentas de servicio o cuentas de equipo. <br/><br/> A continuación, puede asignar administradores a unidades organizativas específicas y aplicar la directiva de grupo para aplicar la configuración de destino. <br/><br/> Las unidades organizativas se definen en [Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services).|Siga los pasos descritos en [Creación de una unidad organizativa en un dominio administrado de Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/create-ou).|
 

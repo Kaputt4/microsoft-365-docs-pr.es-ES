@@ -21,16 +21,19 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo cambiar la frecuencia con la que se le factura por su suscripción empresarial.
 ms.date: 05/24/2022
-ms.openlocfilehash: 4b5c5e42f33e3ca36a89b694a4249296df6e200c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d3d226eea1972daf7bede15b47c87dad1442530c
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493007"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280859"
 ---
 # <a name="change-your-microsoft-365-subscription-billing-frequency"></a>Cambiar la frecuencia de facturación de la suscripción de Microsoft 365
 
 Al comprar una suscripción, selecciona una frecuencia de facturación. Para cambiar la frecuencia con la que se le factura una suscripción, siga estos pasos.
+
+> [!NOTE]
+> Si tiene un perfil de facturación, solo cambia la frecuencia de facturación al comprar o actualizar una suscripción. Para averiguar si tiene un perfil de facturación, consulte [Ver mis perfiles de facturación](manage-billing-profiles.md#view-my-billing-profiles).
 
 1. En el centro de administración, vaya a la página **Facturación**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> .
 2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.

@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
-ms.openlocfilehash: 2cfd74c16dc783bd316e2a5b985c94baa2bed28c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942458"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306336"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC High
 
->[!NOTE]
+> [!NOTE]
 > Esta guía se aplica a los entornos altos de la nube de la comunidad del gobierno de EE. UU. (GCC).
 
-Los clientes de pizarra se están actualizando actualmente para admitir One Drive for Business.
+Los clientes de pizarra se están actualizando actualmente para admitir OneDrive para la Empresa.
 
 ## <a name="clients-supported"></a>Clientes admitidos
 
@@ -44,10 +44,10 @@ Los siguientes clientes están previstos para futuras versiones de Whiteboard:
 - Pizarra en reuniones de Teams en Surface Hub y salas de reuniones de Teams
 - Pizarra en llamadas 1:1 en Teams
 
->[!NOTE]
+> [!NOTE]
 > Aunque los usuarios pueden instalar el cliente de Windows, no podrán iniciar sesión hasta que se actualice el cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración del acceso a Whiteboard- GCC High](manage-whiteboard-access-gcc-high.md)
 

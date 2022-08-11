@@ -7,14 +7,15 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 65a96d7fa37170c0ffaf10c4cb086660fef6e69e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 36648d50033cb00893e9f973641f421274e6e3d8
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108518"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280385"
 ---
-# <a name="sorting-filtering-and-downloading-data"></a>Ordenación, filtrado y descarga de datos
+# <a name="sorting-filtering-and-downloading-data"></a>Ordenar, filtrar y descargar datos
+
 La plataforma Inteligencia contra amenazas de Microsoft Defender (Defender TI) permite a los analistas acceder a nuestra amplia colección de datos de rastreo en un formato de tabla indexada y dinámica.  Estos conjuntos de datos pueden ser muy grandes y devolver grandes cantidades de datos históricos y recientes. Por lo tanto, permitir que los analistas ordene y filtre adecuadamente los datos proporciona la capacidad de exponer fácilmente las conexiones de interés.
 
 ![Captura de pantalla de Chrome de ordenación de conjuntos de datos](media/sortingDataSetsChromeScreenshot.png)
@@ -159,7 +160,7 @@ Los datos se pueden descargar en las secciones siguientes:
 
 Los encabezados siguientes se exportan como resultado de la descarga de resoluciones, DNS y datos DNS inversos:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **Resolver**                | Registro asociado al dominio buscado (resolución de dirección IP) o dominio que se ha resuelto en una dirección IP cuando se busca una dirección IP. |
 | **Ubicación**               | País en el que se hospeda la dirección IP |
@@ -172,37 +173,37 @@ Los encabezados siguientes se exportan como resultado de la descarga de resoluci
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de subdominios:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Subdominio del dominio buscado |
 | **Etiquetas**                   | Etiquetas personalizadas o del sistema asociadas al artefacto |
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de Trackers:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Nombre de host que observó o está observando actualmente el rastreador |
 | **firstSeen**              | Fecha y hora en que Microsoft observó por primera vez que el nombre de host usaba el rastreador (formato: mm/dd/aaaa hh:mm) |
 | **lastSeen**               | Fecha y hora en que Microsoft observó por primera vez que el nombre de host usaba el rastreador (formato: mm/dd/aaaa hh:mm) |
-| **attributeType**          | Tipo de seguimiento |
+| **Attributetype**          | Tipo de seguimiento |
 | **attributeValue**         | Valor de seguimiento |
 | **Tags**                   | Etiquetas personalizadas o del sistema asociadas al artefacto |
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de componentes:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Nombre de host que observó o está observando actualmente el componente |
 | **firstSeen**              | Fecha y hora en que Microsoft observó por primera vez que el nombre de host usaba el rastreador (formato: mm/dd/aaaa hh:mm |
 | **lastSeen**               | Fecha y hora en que Microsoft observó por última vez que el nombre de host usaba el componente (formato: mm/dd/aaaa hh:mm |
-| **categoría**               | Tipo de componente |
+| **Categoría**               | Tipo de componente |
 | **name**                   | Nombre del componente |
 | **version**                | Versión del componente |
 | **Tags**                   | Etiquetas personalizadas o del sistema asociadas al artefacto |
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de pares de host:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **parentHostname**         | Nombre de host que se está llegando al nombre de host secundario |
 | **childHostname**          | Nombre de host que alimenta los recursos que hospedan al nombre de host primario. |
@@ -213,15 +214,15 @@ Los encabezados siguientes se exportan como resultado de la descarga de datos de
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos Hashes:
 
-|                    |                            |
+| &nbsp;             | &nbsp;                     |
 |--------------------|----------------------------|
 | **source**         | Origen que observó el ejemplo de hash MD5 |
-| **muestra**                  | Hash md5 |
+| **Muestra**                  | Hash md5 |
 | **fecha de recopilación**         | Fecha de recopilación capturada por el origen |
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de cookies:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Nombre de host que observó el nombre de la cookie |
 | **firstSeen**              | Cuando se observó por primera vez el nombre de cookie en el nombre de host que se originó en el dominio de cookies (formato: mm/dd/aaaa hh:mm) |
@@ -232,7 +233,7 @@ Los encabezados siguientes se exportan como resultado de la descarga de datos de
 
 Los encabezados siguientes se exportan como resultado de la descarga de listas de proyectos para mis proyectos compartidos, equipos y :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **name**                   | Nombre del proyecto |
 | **artefactos (recuento)**      | Recuento de artefactos dentro del proyecto |
@@ -243,9 +244,9 @@ Los encabezados siguientes se exportan como resultado de la descarga de listas d
 
 Los encabezados siguientes se exportan como resultado de la descarga de detalles del proyecto (artefactos) de un proyecto:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **artefacto**               | Valor del artefacto (por ejemplo, dirección IP, dominio, host, valor WHOIS, certificado SHA-1, etc.) |
+| **Artefacto**               | Valor del artefacto (por ejemplo, dirección IP, dominio, host, valor WHOIS, certificado SHA-1, etc.) |
 | **type**                   | Tipo de artefacto (por ejemplo, IP, dominio, host, organización WHOIS, teléfono WHOIS, certificado SHA-1, etc.) |
 | **Creado**                | Fecha y hora en que se agregó el artefacto al proyecto (formato: mm/dd/aaaa hh:mm) |
 | **creador**                | Email dirección del usuario que agregó el artefacto |
@@ -255,7 +256,7 @@ Los encabezados siguientes se exportan como resultado de la descarga de detalles
 
 Los encabezados siguientes se exportan como resultado de la descarga de indicadores de inteligencia sobre amenazas pública o riskiq:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **type**                | Tipo de indicador (por ejemplo, ip, certificado, dominio, hash_sha256) |
 | **value**               | Valor del indicador (por ejemplo, dirección IP, dominio, nombre de host) |

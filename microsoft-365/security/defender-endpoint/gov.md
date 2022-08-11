@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 41a7cb8841d9cf36844d5302d3b4d6a16dda4870
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 5c509c046dfb50d8fefd0843535e77dbe49bd58a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159388"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306248"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -34,7 +34,7 @@ Microsoft Defender para punto de conexión para clientes del Gobierno de EE. UU.
 Esta oferta está disponible para los clientes de GCC, GCC High y DoD y se basa en la misma prevención, detección, investigación y corrección que la versión comercial. Sin embargo, hay algunas diferencias en la disponibilidad de las funcionalidades de esta oferta.
 
 > [!NOTE]
-> Si es un cliente GCC que usa Defender para punto de conexión en Comercial, consulte las páginas de documentación pública.
+> Si es un cliente de GCC que usa Defender para punto de conexión en comercial, consulte las páginas de documentación pública.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
@@ -49,10 +49,9 @@ Microsoft Defender para punto de conexión para los clientes del Gobierno de EE.
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 para GCC High|Microsoft 365 G5 para DOD|
-|Microsoft 365 GCC de seguridad G5|seguridad de Microsoft 365 G5 para GCC alta|seguridad de Microsoft 365 G5 para DOD|
-|Microsoft Defender para punto de conexión: GCC|Microsoft Defender para punto de conexión para GCC High|Microsoft Defender para punto de conexión para DOD|
-|Windows 10 Enterprise GCC E5|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
-|
+|GCC de seguridad de Microsoft 365 G5|Seguridad de Microsoft 365 G5 para GCC High|Seguridad de Microsoft 365 G5 para DOD|
+|Microsoft Defender para punto de conexión - GCC|Microsoft Defender para punto de conexión para GCC High|Microsoft Defender para punto de conexión para DOD|
+|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
 
 ### <a name="server-licensing"></a>Licencias de servidor
 
@@ -62,9 +61,8 @@ Microsoft Defender para punto de conexión para los clientes del Gobierno de EE.
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft Defender para punto de conexión Server GCC|Microsoft Defender para punto de conexión Server para GCC High|Microsoft Defender para punto de conexión Server for DOD|
+|GCC de Microsoft Defender para punto de conexión Server|Microsoft Defender para punto de conexión Server para GCC High|Microsoft Defender para punto de conexión Server for DOD|
 |Microsoft Defender para servidores|Microsoft Defender para servidores: Administración pública|Microsoft Defender para servidores: Administración pública|
-|
 
 ## <a name="portal-urls"></a>Direcciones URL del portal
 
@@ -79,9 +77,9 @@ A continuación se muestran las direcciones URL del portal de Microsoft Defender
 |GCC|<https://security.microsoft.com>|
 |GCC High|<https://security.microsoft.us>|
 |DoD|<https://security.apps.mil>|
-|
+
 > [!NOTE]
-> Si es un cliente GCC y está en proceso de pasar de Microsoft Defender para punto de conexión comercial a GCC, use https://transition.security.microsoft.com para acceder a sus datos comerciales Microsoft Defender para punto de conexión.
+> Si es cliente de GCC y está en proceso de pasar de Microsoft Defender para punto de conexión comercial a GCC, use https://transition.security.microsoft.com para acceder a sus datos comerciales Microsoft Defender para punto de conexión.
 
 ## <a name="endpoint-versions"></a>Versiones del punto de conexión
 
@@ -98,11 +96,11 @@ Versión del sistema operativo|GCC|GCC High|DoD
 Windows 11|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 21H1 y posteriores|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), actualice
+Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1909-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1909-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1909-end-of-servicing), actualice
+Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1903-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1903-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1903-end-of-servicing), actualice
+Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice
+Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice|![Sí](images/svg/check-yes.svg) <br /> Nota: [En desuso](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), actualice
 Windows 10, versión 1709|![No.](images/svg/check-no.svg) <br /> Nota: No se admitirá|![Sí](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Nota: [En desuso](/lifecycle/announcements/revised-end-of-service-windows-10-1709), actualice|![No](images/svg/check-no.svg) <br /> Nota: No se admitirá
 Windows 10, versión 1703 y anteriores|![No.](images/svg/check-no.svg) <br /> Nota: No se admitirá|![No](images/svg/check-no.svg) <br /> Nota: No se admitirá|![No](images/svg/check-no.svg) <br /> Nota: No se admitirá
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -120,14 +118,13 @@ Linux|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](
 macOS|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Android|![Sí.](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> 
 iOS|![Sí.](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> 
-|
 
 > [!NOTE]
 > <sup>1</sup> La revisión debe implementarse antes de la incorporación del dispositivo para configurar Defender para punto de conexión en el entorno correcto.
 >
 > <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si previamente ha incorporado los servidores mediante MMA, siga las instrucciones que se proporcionan en [Migración del servidor](server-migration.md) para migrar a la nueva solución.
 >
-> <sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation): establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
+> <sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) : establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
@@ -142,9 +139,8 @@ Versión del sistema operativo|GCC|GCC High|DoD
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-|
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
 
@@ -172,12 +168,10 @@ En lugar de los URI públicos que aparecen en la documentación de la [API](apis
 
 ****
 
-|Tipo de punto de conexión|GCC|GCC DoD & alto|
+|Tipo de punto de conexión|GCC|GCC High & DoD|
 |---|---|---|
 |Inicio de sesión|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |API de Defender para punto de conexión|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
-|SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
-|
 
 ## <a name="feature-parity-with-commercial"></a>Paridad de características con comercial
 
@@ -191,17 +185,15 @@ Estas son las brechas conocidas:
 
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Evaluaciones de red|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Detección de redes|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Informes: Control de dispositivos, Estado del dispositivo, Firewall|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Puntuación de seguridad de Microsoft|![Sí](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) No compatible|![No](images/svg/check-no.svg) No se admite|  
+|Informes: Estado del dispositivo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
+|Informes: Filtrado de contenido web|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
+|Puntuación de seguridad de Microsoft|![Sí](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 |Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 > [!NOTE]
-> <sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para GCC clientes, hay algunas recomendaciones de seguridad que no están disponibles.
+> <sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para los clientes de GCC, hay algunas recomendaciones de seguridad que no están disponibles.
 
 
-Estas son las características y brechas conocidas de [Mobile Threat Defense (Microsoft Defender para punto de conexión en Android & iOS):](mtd.md)
+Estas son las características y las brechas conocidas de [Mobile Threat Defense (Microsoft Defender para punto de conexión en Android & iOS):](mtd.md)
 
 <br />
 

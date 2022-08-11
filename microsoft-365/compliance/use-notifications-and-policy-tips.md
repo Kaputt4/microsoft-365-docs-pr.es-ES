@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 19ec7b5e359b32cc38310c51c6674968aecc666f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6a02cd488b3d7a0341c042c24f58329353b94bb7
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630949"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285316"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -94,11 +94,11 @@ Para cada regla en una directiva DLP, puede:
 
 > [!NOTE]
 >
-> - Las notificaciones por correo electrónico solo se pueden enviar a destinatarios individuales, no a grupos o listas de distribución.
+> - Email notificaciones solo se pueden enviar a destinatarios individuales, no a grupos o listas de distribución.
 > - Tenga en cuenta que solo el contenido nuevo desencadenará una notificación por correo electrónico. La edición del contenido existente desencadenará sugerencias de directiva, pero no notificaciones por correo electrónico.
 > - Los remitentes externos no reciben notificaciones. Las notificaciones solo van a usuarios internos.
 
-![Opciones de notificación por correo electrónico.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Email opciones de notificación.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>Notificación de correo electrónico predeterminada
 
@@ -161,7 +161,7 @@ Estos son algunos puntos clave para comprender el uso de una sugerencia de direc
 
 - Si las sugerencias de directiva en la regla más restrictiva permite que los usuarios invaliden la regla, la invalidación de esta regla invalida también otras reglas que coinciden con el contenido.
 
-- Si la acción NotifyAllowOverride se establece con WithoutJustification o WithJustification o FlasePositives, asegúrese de que BlockAccess esté establecido en true y que BlockAccessScope tenga el valor adecuado. De lo contrario, aparecerá una sugerencia de directiva, pero el usuario no encontrará una opción para invalidar el correo electrónico con justificación.
+- Si la acción NotifyAllowOverride se establece con WithoutJustification o WithJustification o FalsePositives, asegúrese de que BlockAccess esté establecido en true y que BlockAccessScope tenga el valor adecuado. De lo contrario, aparecerá una sugerencia de directiva, pero el usuario no encontrará una opción para invalidar el correo electrónico con justificación.
 
 #### <a name="availability-of-override"></a>Disponibilidad de invalidación
 
@@ -309,7 +309,7 @@ Puede personalizar el texto para sugerencias de directivas por separado de la no
 ## <a name="more-information"></a>Más información
 
 - [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
-- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Condiciones, excepciones y acciones de directiva DLP (versión preliminar)](./dlp-microsoft-teams.md)
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
