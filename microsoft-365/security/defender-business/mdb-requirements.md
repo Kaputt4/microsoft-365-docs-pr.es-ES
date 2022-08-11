@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 20de14ce0357ecb28a205d1699a8756b78e542aa
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 4968a6318138b4c3b6bd5958de195dcd1677106b
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301280"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309425"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>requisitos de Microsoft Defender para Empresas
 
@@ -52,7 +52,6 @@ En la tabla siguiente se enumeran los requisitos básicos que necesita para conf
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) se usa para administrar los permisos de usuario y los grupos de dispositivos. Azure AD se incluye en la suscripción de Defender para empresas. 
 > - Si no tiene una suscripción a Microsoft 365 antes de iniciar la prueba, Azure AD se aprovisionará automáticamente durante el proceso de activación. 
 > - Si tiene otra suscripción de Microsoft 365 al iniciar la prueba de Defender para empresas, puede usar el servicio de Azure AD existente. 
-> - Si usa [Microsoft 365 Empresa Premium](../../business/index.yml) al iniciar la prueba de Defender for Business, tiene la opción de administrar los dispositivos mediante Intune.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

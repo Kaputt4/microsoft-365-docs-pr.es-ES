@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: f7530cd06f2d41ed4ef3fcc12daa5f89e2903c94
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 336f253e16ab26c227001fd5a71e34c100ae97ea
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300441"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309733"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>Visualización y edición de directivas de seguridad y configuración en Microsoft Defender para Empresas
 
@@ -137,7 +137,7 @@ En la tabla siguiente se describe la configuración avanzada de características
 | **Mostrar los detalles del usuario**<br/>(activado de forma predeterminada) | Permite a los usuarios de su organización ver detalles, como las imágenes, los nombres, los títulos y los departamentos de los empleados. Estos detalles se almacenan en Azure Active Directory (Azure AD).<br/><br/>[Obtenga más información sobre los perfiles de usuario en Azure AD](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).  |
 | **integración Skype Empresarial**<br/>(activado de forma predeterminada) | Skype Empresarial se retiró en julio de 2021. Si aún no se ha movido a Microsoft Teams, consulte [Configuración de Microsoft Teams en su pequeña empresa](/microsoftteams/deploy-small-business). <br/><br/>La integración con Microsoft Teams (o el Skype Empresarial anterior) permite la comunicación con un solo clic entre las personas de su empresa.   |
 | **Filtrado de contenido web**<br/>(activado de forma predeterminada) | Bloquea el acceso a sitios web que contienen contenido no deseado y realiza un seguimiento de la actividad web en todos los dominios. Consulte [Configuración del filtrado de contenido web](#set-up-web-content-filtering). |
-| **conexión Microsoft Intune**<br/>(Se recomienda activar esta configuración si tiene Intune) | Si la suscripción de su organización incluye Microsoft Intune (incluida en [Microsoft 365 Empresa Premium](../../business/index.yml)), esta configuración permite a Defender for Business compartir información sobre los dispositivos con Intune.  |
+| **conexión Microsoft Intune**<br/>(Se recomienda activar esta configuración si tiene Intune) | Si la suscripción de su organización incluye Microsoft Intune, esta configuración permite a Defender for Business compartir información sobre los dispositivos con Intune.  |
 | **Detección de dispositivo**<br/>(activado de forma predeterminada) | Permite al equipo de seguridad encontrar dispositivos no administrados conectados a la red de la empresa. Los dispositivos desconocidos y no administrados presentan riesgos significativos para la red, ya sea una impresora no impresa, un dispositivo de red con una configuración de seguridad débil o un servidor sin controles de seguridad.<br/><br/>La detección de dispositivos usa dispositivos incorporados para detectar dispositivos no administrados, de modo que el equipo de seguridad pueda incorporar los dispositivos no administrados y reducir la vulnerabilidad. <br/><br/>[Obtenga más información sobre la detección de dispositivos](../defender-endpoint/device-discovery.md).    |
 | **Versión preliminar de las características** | Microsoft actualiza continuamente servicios como Defender para empresas para incluir nuevas mejoras y funcionalidades de características. Si opta por recibir características en versión preliminar, será uno de los primeros en probar las próximas características en la experiencia en versión preliminar. <br/><br/>[Obtenga más información sobre las características en versión preliminar](../defender-endpoint/preview.md).  |
 
