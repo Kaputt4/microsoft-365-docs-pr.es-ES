@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender para punto de conexión en otros sistemas operativos]()
 #### [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
 
@@ -521,6 +518,10 @@
 ####### [Enumerar investigaciones](get-investigation-collection.md)
 ####### [Obtener investigación](get-investigation-object.md)
 ####### [Iniciar investigación](initiate-autoir-investigation.md)
+
+###### [Estado del dispositivo]()
+####### [Exportar las propiedades y los métodos de estado del dispositivo](device-health-api-methods-properties.md)
+####### [Exportar informe de estado del antivirus del dispositivo](device-health-export-antivirus-health-report-api.md)
 
 ###### [Inventario de certificados]()
 ####### [Evaluación del inventario de certificados de exportación](export-certificate-inventory-assessment.md)

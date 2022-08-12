@@ -7,24 +7,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275678"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280727"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -91,6 +91,40 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Julio-2022 (Plataforma: 4.18.2205.TBD | Motor: 1.1.19500.2)</summary>
+
+*Esta sección contiene información de versión preliminar que todavía está en desarrollo activo. Se espera que se produzcan actualizaciones, incluido el número de versión de actualización de seguridad final.*
+
+&ensp;Versión de actualización de inteligencia de seguridad: *próximamente*<br/>
+&ensp;Fecha de lanzamiento: **8 de agosto de 2022**<br/>
+&ensp;Plataforma: *4.18.2205.TBD*<br/>
+&ensp;Motor: **1.1.19500.2**<br/>
+&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+
+Versión del motor: 1.1.19300.2<br/>
+Versión de actualización de inteligencia de seguridad: *próximamente*<br/>
+
+### <a name="whats-new"></a>Novedades
+
+- Mejora del rendimiento del retraso de [suspensión híbrida](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) cuando el Antivirus de Microsoft Defender está activo 
+- Se ha corregido el comportamiento de detección de clientes relacionado con [indicadores de riesgo de bloqueo de certificados personalizados](indicator-certificates.md) 
+- Mejora del rendimiento del almacenamiento en caché de la [interfaz de examen de antimalware (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) 
+- Detección y corrección mejoradas para macros relacionadas con [Microsoft Visual Basic para Aplicaciones](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 
+- Procesamiento mejorado de exclusiones de AMSI 
+- Se ha corregido la detección de interbloqueos en el procesamiento de reglas del Sistema de prevención de intrusiones de host (HIPS). (Para obtener información adicional sobre HIPS y Defender para punto de conexión, vea [Migrar de un HIPS de terceros a reglas de ASR](migrating-asr-rules.md)). 
+- Se ha corregido una fuga de memoria en la que `MsMpEng.exe` consumía bytes privados. (Si el uso elevado de CPU también es un problema, consulte [Uso elevado de CPU debido al Antivirus de Microsoft Defender](troubleshooting-mode-scenarios.md)). 
+- Se ha corregido el interbloqueo con la [supervisión del comportamiento](configure-real-time-protection-microsoft-defender-antivirus.md) 
+- Validación de confianza mejorada 
+- Se ha corregido un problema de bloqueo del motor en plataformas operativas heredadas 
+- Actualizaciones del analizador de rendimiento, versión 3: se ha agregado compatibilidad con la ruta de acceso principal, información de omisión de exámenes y compatibilidad con el examen bajo demanda. Consulte [Analizador de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md). 
+
+
+### <a name="known-issues"></a>Problemas conocidos
+
+No hay problemas conocidos
+
+<br/><br/>
+</details><details>
 <summary>Mayo de 2022 (Plataforma: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.369.88.0**<br/>
@@ -165,14 +199,21 @@ Versión de actualización de inteligencia de seguridad: 1.361.1449.0<br/>
 - Potencial para un uso elevado de recursos (CPU y/o memoria). Consulte la actualización plataforma 4.18.2203.5 y motor 1.1.19200.5 para marzo de 2022.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
+
+Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
+
+<details>
 <summary>Febrero de 2022 (plataforma: 4.18.2202.4 | Motor: 1.1.19000.8)</summary>
 
 &ensp;Versión actualizada de la inteligencia de seguridad: **1.361.14.0**<br/>
 &ensp;Publicado: **14 de marzo de 2022**<br/>
 &ensp;Plataforma: **4.18.2202.4**<br/>
 &ensp;Motor: **1.1.19000.8**<br/>
-&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (únicamente)**<br/>
 
 Versión del motor: 1.1.19000.8 <br/>
 Versión de actualización de inteligencia de seguridad: 1.361.14.0 <br/>
@@ -194,14 +235,7 @@ Versión de actualización de inteligencia de seguridad: 1.361.14.0 <br/>
 No hay problemas conocidos
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
-
-Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
-
-<details>
+</details><details>
 <summary>Enero-2022 (plataforma: 4.18.2201.10 | Motor: 1.1.18900.2)</summary>
 
 &ensp;Versión actualizada de inteligencia de seguridad: **1.357.8.0**<br/>

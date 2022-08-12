@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
-ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 61093530faad261059e68e02a496c485a765b99d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969800"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306490"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
@@ -33,6 +33,9 @@ Al habilitar canales compartidos en Teams con otra organización:
 - Los propietarios de equipos de su organización podrán invitar a personas de otras organizaciones a participar en canales compartidos.
 - Las aplicaciones personalizadas (línea de negocio) de su organización estarán disponibles en los canales compartidos y los participantes externos podrán acceder a ellas.
 - La lista de aplicaciones de su organización estará disponible en los canales compartidos y los participantes externos podrán acceder a ellas.
+
+> [!NOTE]
+> [La configuración de invitado de Grupos de Microsoft 365](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) debe estar habilitada para usar canales compartidos con participantes externos.
 
 ## <a name="video-demonstration"></a>Demostración de vídeo
 

@@ -18,12 +18,12 @@ ms.custom:
 description: La cadena de recepción autenticada (ARC) es la autenticación del correo electrónico que intenta preservar los resultados de la autenticación a través de los dispositivos y cualquier flujo de correo indirecto que se interponga entre el remitente y el destinatario. Aquí se muestra cómo realizar excepciones para los remitentes ARC de confianza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107313"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306644"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Crear una lista de remitentes ARC de confianza para confiar en los flujos de correo indirectos *legítimos* 
 
@@ -59,9 +59,9 @@ Al agregar un sellador ARC de confianza, Office 365 validará y confiará en los
 
 Los sellador ARC de confianza en el portal Microsoft 365 Defender muestran todos los selladores ARC conocidos y agregados al inquilino.
 
-**Para agregar un nuevo sellador ARC de confianza en el portal de administración:**
+**Para agregar un nuevo sellador ARC de confianza en el portal de Microsoft 365 Defender:**
 
-1. Vaya a la página [de configuración de autenticación de correo electrónico](https://security.microsoft.com/authentication?viewid=ARC).
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Configuración de autenticación de correo electrónico** en la sección **Reglas** \> **ARC**. Para ir directamente a la página de ARC, use la [configuración de autenticación de correo electrónico](https://security.microsoft.com/authentication?viewid=ARC).
 
 2. Si es la primera vez que agrega un sellador ARC de confianza, haga clic en el botón Agregar.
 3. Agregue selladores ARC de confianza en el cuadro de texto que se muestra.

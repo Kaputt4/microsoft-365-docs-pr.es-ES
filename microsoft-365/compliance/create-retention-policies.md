@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037740"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300966"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -89,7 +89,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
     - Si ha elegido **Estática**: en la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o más ubicaciones para Teams:
         - **mensajes de canal de Teams**: mensajes de chats de canales estándar y compartidos, y reuniones de canales estándar y compartidos, pero no de [canales privados](/microsoftteams/private-channels) que tienen su propia ubicación de directiva.
         - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
-        - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados.
+        - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados. Si selecciona esta opción, no podrá seleccionar las demás ubicaciones de Teams en la misma directiva de retención.
         
        De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](retention-settings.md#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 

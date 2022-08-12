@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87f565d5058edff9ebde5af6e2cf84ca3e8262b4
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: ce6550b442f4a863c87bfa5272e8d5b707b7f096
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772158"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281721"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -235,7 +235,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Para habilitar la firma DKIM para el dominio personalizado en el portal de Microsoft 365 Defender
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **DKIM** en la sección **Reglas**. Para ir directamente a la página de DKIM, use <https://security.microsoft.com/dkimv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas contra amenazas** \> **Configuración de autenticación de correo** en la sección **Reglas** \>**DKIM**. Para ir directamente a la página de DKIM, use <https://security.microsoft.com/dkimv2>.
 
 2. En la página **DKIM**, haga clic en el nombre para seleccionar el dominio.
 
@@ -410,6 +410,6 @@ A continuación, consulte [**Usar DMARC para validar el correo electrónico**](u
 
 Rotación de clave mediante PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Usar DMARC para validar el correo electrónico](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+[Usar DMARC para validar el correo electrónico](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
-[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)

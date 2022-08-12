@@ -19,13 +19,13 @@ ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 monikerRange: o365-worldwide
-ms.date: 11/20/2020
-ms.openlocfilehash: 8248a9947f30edfa1db9dc002db6e8dd58ca9078
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.date: 08/08/2022
+ms.openlocfilehash: 7e2a2f073f45bfb0d77392599abb4e2999960a23
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102490"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280683"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Información de facturación de Microsoft 365 para empresas en México
 
@@ -47,7 +47,7 @@ Durante el proceso de finalización de la compra, cuando llegue al paso **4. Pag
 Puede agregar o modificar el RFC para que la información se refleje en futuras compras de Microsoft 365 para empresas. Para agregar o modificar el RFC, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Cuentas de facturación</a>.
 
 > [!NOTE]
-> Si tiene una suscripción de facturación mensual o anual, la adición o modificación del RFC se reflejará en la factura del próximo cobro.
+> Si tiene una suscripción de facturación periódica, la adición o modificación del RFC se reflejará en la factura del próximo cobro.
 
 ## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. ¿Puedo agregar o modificar mi RFC en una factura que ya se ha generado?
 

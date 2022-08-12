@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general de seguridad para Microsoft 365 Empresa Premium, que proporciona herramientas de ciberseguridad, como es la autenticación multifactor, que puede usar para prevenir ciberataques.
-ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6302f38b70ed634237a83751d0026d2ef160695
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276501"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285173"
 ---
 # <a name="bump-up-security"></a>Aumentar la seguridad
 
@@ -36,7 +36,7 @@ Manténgase en alerta: la seguridad y confiabilidad del sistema depende de usted
 
 Sus objetivos son:
 
-- [Activar los valores predeterminados de seguridad](m365bp-conditional-access.md) (MFA).
+- [Activar los valores predeterminados de seguridad (MFA)](m365bp-conditional-access.md).
 - [Proteger sus cuentas de administrador](m365bp-protect-admin-accounts.md).
 - [Protección contra malware y otras amenazas](m365bp-increase-protection.md).
 

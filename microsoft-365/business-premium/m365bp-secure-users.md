@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Más información sobre cómo Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad de manera más segura.
-ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037696"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300637"
 ---
-# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>Productividad y seguridad para pequeñas y medianas empresas 
+# <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productividad y seguridad para pequeñas y medianas empresas 
 
 Microsoft 365 Empresa Premium es una solución completa de seguridad y productividad en la nube diseñada y creada para pequeñas y medianas empresas (de 1 a 300 empleados). Con Microsoft 365 Empresa Premium, será capaz de:
 

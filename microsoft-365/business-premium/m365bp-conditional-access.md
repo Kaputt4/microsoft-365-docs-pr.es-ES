@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,18 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2d4dc4af9f003245b25a85c5b18abf593db8fbe8
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276008"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285195"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
 Microsoft 365 Empresa Premium se diseñó para ayudar a proteger las cuentas de usuario de su empresa con la configuración de seguridad preconfigurada. Esta configuración incluye la habilitación de la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. En la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad adicional de inicio de sesión.
 
-Para obtener más información sobre los valores predeterminados de seguridad y las directivas que aplican, consulte [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+> [!TIP]
+> Para obtener más información sobre los valores predeterminados de seguridad y las directivas que aplican, consulte [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 En este artículo se proporciona información acerca de:
 
