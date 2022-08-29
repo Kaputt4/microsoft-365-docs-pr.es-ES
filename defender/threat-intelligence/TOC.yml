@@ -2,7 +2,7 @@
   expanded: true
   items:
     - name: "¿Qué es Inteligencia sobre amenazas de Microsoft\_Defender (Defender\_TI)?"
-      href: index.md
+      href: what-is-microsoft-defender-threat-intelligence-defender-ti.md
     - name: Conjuntos de datos
       href: data-sets.md
     - name: Puntuación de reputación
