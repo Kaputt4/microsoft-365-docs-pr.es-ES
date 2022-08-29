@@ -1,7 +1,7 @@
 ---
-title: RECOPILAR API de paquetes de investigación
-description: Usa esta API para crear llamadas relacionadas con la recopilación de un paquete de investigación desde un dispositivo.
-keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
+title: Recopilación de la API del paquete de investigación
+description: Use esta API para crear llamadas relacionadas con la recopilación de un paquete de investigación desde un dispositivo.
+keywords: apis, graph api, api admitidas, recopilar paquete de investigación
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13cc4e0a1c5a72beb6c5c65ceb4a408d7d43a6ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302223"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326175"
 ---
-# <a name="collect-investigation-package-api"></a>RECOPILAR API de paquetes de investigación
+# <a name="collect-investigation-package-api"></a>Recopilación de la API del paquete de investigación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,30 +40,30 @@ ms.locfileid: "61302223"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Recopilar el paquete de investigación de un dispositivo.
+Recopile el paquete de investigación de un dispositivo.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10, versión 1703 o posterior y en Windows 11.
+> - Estas acciones de respuesta solo están disponibles para dispositivos en Windows 10, versión 1703 o posterior y en Windows 11.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de Defender para API de punto de conexión](apis-intro.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.CollectForensics|'Recopilar forenses'
-Delegado (cuenta profesional o educativa)|Machine.CollectForensics|'Recopilar forenses'
+Application|Machine.CollectForensics|"Recopilar análisis forenses"
+Delegado (cuenta profesional o educativa)|Machine.CollectForensics|"Recopilar análisis forenses"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -75,20 +75,20 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
+Comentario|Cadena|Comentario que se va a asociar a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta. Si ya se está ejecutando una colección, se devuelve 400 Bad Request.
+Si se ejecuta correctamente, este método devuelve 201: código de respuesta creado y [Acción de máquina](machineaction.md) en el cuerpo de la respuesta. Si una colección ya se está ejecutando, devuelve 400 solicitud incorrecta.
 
 ## <a name="example"></a>Ejemplo
 

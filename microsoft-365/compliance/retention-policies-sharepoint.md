@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo funciona la retención de Microsoft 365 para SharePoint y OneDrive, mediante directivas de retención y etiquetas de retención para administrar la retención o la eliminación automáticas de datos de su organización.
-ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112513"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326439"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -133,6 +133,8 @@ Dado que la etiqueta de retención no se aplica al archivo original, un usuario 
 ![Cómo funciona la retención para los datos adjuntos de la nube almacenados en SharePoint y OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 La copia almacenada en la Biblioteca de suspensión para conservación normalmente se crea en una hora a partir del momento en que los datos adjuntos de la nube se comparten.
+
+Para evitar que los usuarios eliminen el archivo original antes de que se pueda crear y etiquetar la copia, los archivos de las ubicaciones incluidas en la directiva de etiquetado automático se copian automáticamente en la biblioteca de suspensión de conservación si se eliminan. Estos archivos tienen un período de retención temporal de un día y, a continuación, siguen el proceso de limpieza estándar descrito en esta página. Cuando se ha eliminado el archivo original, la copia para conservar los datos adjuntos en la nube usa esta versión del archivo. La retención automática y temporal de los archivos eliminados en la biblioteca de suspensión de conservación es única para las directivas de etiquetado automático para los datos adjuntos en la nube.
 
 ## <a name="how-retention-works-with-onenote-content"></a>Cómo funciona la retención con el contenido de OneNote
 

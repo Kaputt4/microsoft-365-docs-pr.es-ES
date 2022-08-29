@@ -19,22 +19,22 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de tarjeta de débito de la UE.
-ms.openlocfilehash: 53e7ea3475786032d2871092e3c7e6c39697958c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000514"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322813"
 ---
 # <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
 ## <a name="format"></a>Formato
 
-16 dígitos
+De 16 a 19 dígitos
 
 ## <a name="pattern"></a>Patrón
 
-Patrón complejo y robusto
+De 16 a 19 dígitos con formato o sin formato
 
 ## <a name="checksum"></a>Suma de comprobación
 
@@ -53,9 +53,14 @@ Una política de DLP tiene una gran confianza en que ha detectado este tipo de i
     - La función `Func_expiration_date` encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
+Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+
+- La función Func_eu_debit_card encuentra contenido que coincide con el patrón.
+- Se supera la suma de comprobación.
+
 ```xml
     <!-- EU Debit Card Number -->
-    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_eu_debit_card" />
         <Any minMatches="1">
@@ -65,6 +70,10 @@ Una política de DLP tiene una gran confianza en que ha detectado este tipo de i
           <Match idRef="Keyword_card_expiration_terms_dict" />
           <Match idRef="Func_expiration_date" />
         </Any>
+      </Pattern>
+        
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_eu_debit_card" />
       </Pattern>
     </Entity>
 ```

@@ -17,16 +17,21 @@ search.appverid:
 - MET150
 description: Haga un hash y cargue la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e443b583fa3db007d3c2448dca29b5795dd17ad2
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641304"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360049"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
 
 En este artículo se muestra cómo aplicar hash y cargar la tabla de origen de información confidencial.
+
+## <a name="applies-to"></a>Se aplica a
+
+- [Creación de una nueva experiencia de tipo de información confidencial de coincidencia exacta de datos](sit-create-edm-sit-unified-ux-workflow.md)
+- [Creación de una experiencia clásica de coincidencia exacta de datos con información confidencial](sit-create-edm-sit-classic-ux-workflow.md)
 
 ## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Hash y carga de la tabla de origen de información confidencial
 
@@ -80,6 +85,9 @@ Si la herramienta indica una falta de coincidencia en el número de columnas, pu
   - el archivo de elemento confidencial en formato de .csv, .tsv o canalización (|), **PatientRecords.csv** en nuestros ejemplos
   - los archivos hash de salida y salt creados en este procedimiento
   - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
+
+> [!IMPORTANT]
+Instale el [agente de carga de EDM](#links-to-edm-upload-agent-by-subscription-type) en una carpeta personalizada para que no necesite permisos de administrador. Si lo instala en el valor predeterminado (*Archivos de programa*), se requieren permisos de administrador.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configuración de la cuenta de usuario y del grupo de seguridad personalizado
 
@@ -233,6 +241,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 > [!NOTE]
 > Para automatizar el proceso de hash y carga después de crearlo la primera vez, consulte [Actualizar el archivo de tabla de origen de información confidencial de coincidencia de datos exactos](sit-use-exact-data-refresh-data.md).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-steps"></a>Siguientes pasos
 
-- [Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- **Para obtener una nueva experiencia**: [pruebe un tipo de información confidencial de coincidencia exacta de datos.](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+
+o
+
+- **Para la experiencia clásica**: [crear un paquete de reglas o tipo de información confidencial que coincida con datos exactos](sit-get-started-exact-data-match-create-rule-package.md)

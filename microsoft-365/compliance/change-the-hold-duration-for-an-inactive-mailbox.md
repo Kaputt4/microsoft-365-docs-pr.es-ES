@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Después de que un buzón de Office 365 esté inactivo, cambie la duración de la retención o Office 365 directiva de retención asignada al buzón inactivo.
-ms.openlocfilehash: 6fdb3993fd6b6503ab672a0c6465a394f3824c4b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c131aabd87b130a72c334ec2399f09e0d9910dab
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628889"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359917"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Un [buzón inactivo](inactive-mailboxes-in-office-365.md) es el estado del buzón que se usa para conservar el correo electrónico de un empleado anterior después de abandonar la organización. Un buzón se vuelve inactivo cuando se le aplica una suspensión aplicable antes de eliminar el objeto de usuario de Microsoft 365.  Los siguientes tipos de retenciones iniciarán la creación de un buzón inactivo tras la eliminación de la cuenta de usuario:
 
@@ -278,7 +280,7 @@ In-Place las retenciones se han retirado y ya no se pueden modificar. Si un buz�
 
     Por el contrario, se omiten las directivas de archivo (etiquetas de retención de MRM configuradas con una acción **MoveToArchive** ) que se incluyen en la directiva de retención de MRM asignada a un buzón inactivo. Eso significa que los elementos de un buzón inactivo etiquetados con una directiva de archivo permanecen en el buzón principal cuando expira el período de retención. No se mueven al buzón de archivo o a la carpeta Elementos recuperables en el buzón de archivo. Se conservarán indefinidamente.
     > [!NOTE]
-    > La aplicación de una directiva de retención de Exchange (la característica Administración de registros de mensajería o MRM en Exchange Online) no crea un buzón inactivo cuando se elimina la cuenta de usuario.
+    > La aplicación de una directiva de retención de Exchange (la característica de administración de registros de mensajería o MRM en Exchange Online) no crea un buzón inactivo cuando se elimina la cuenta de usuario.
 
 - **Al igual que con los buzones normales, Managed Folder Assistant (MFA) también procesa buzones inactivos.** En Exchange Online, MFA procesa buzones aproximadamente una vez cada siete días. Después de cambiar la duración de retención para un buzón inactivo, puede usar el cmdlet **Start-ManagedFolderAssistant** para empezar a procesar inmediatamente la nueva duración de retención para el buzón inactivo. Ejecute el comando siguiente. 
 

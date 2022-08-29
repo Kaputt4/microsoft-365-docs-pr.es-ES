@@ -17,21 +17,25 @@ search.appverid:
 - MET150
 description: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ff8a9d39dec1fe46924dc02f8e05473947fd61f
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628515"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359129"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
+
+## <a name="applies-to"></a>Se aplica a
+
+- [Experiencia clásica](sit-create-edm-sit-classic-ux-workflow.md)
 
 Puede crear un tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) mediante [el esquema EDM y el asistente sit](#use-the-edm-schema-and-sit-wizard) en el Centro de cumplimiento o crear [manualmente](#create-a-rule-package-manually) el archivo XML del paquete de reglas. También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con SITS basado en EDM o su implementación, debe familiarizarse con:
 
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 ## <a name="use-the-edm-schema-and-sit-wizard"></a>Uso del esquema EDM y el Asistente para SIT
@@ -103,7 +107,7 @@ Por motivos de rendimiento, es fundamental usar patrones que minimicen el númer
 
 Esto coincidiría con cada palabra o número individual en cualquier documento o correo electrónico. Esto provocaría que el servicio se sobrecargara con coincidencias y que se perdiese la detección de coincidencias verdaderas. El uso de patrones más precisos puede evitar esta situación. Estas son algunas recomendaciones para identificar la configuración adecuada para algunos tipos comunes de datos.
 
-**Direcciones de correo electrónico**: las direcciones de correo electrónico pueden ser fáciles de identificar, pero como son tan comunes en el contenido, pueden provocar una carga significativa en el sistema si se usan como campo principal. Úselas solo como evidencia secundaria. Si se deben usar como evidencia principal, intente definir un tipo de información confidencial personalizada que use lógica para excluir su uso como `From` o `To` campos en los correos electrónicos y excluir aquellos con la dirección de correo electrónico de su empresa para reducir el número de cadenas innecesarias que deben coincidir.
+**Email direcciones**: las direcciones de Email pueden ser fáciles de identificar, pero como son tan comunes en el contenido, pueden provocar una carga significativa en el sistema si se usan como campo principal. Úselas solo como evidencia secundaria. Si se deben usar como evidencia principal, intente definir un tipo de información confidencial personalizada que use lógica para excluir su uso como `From` o `To` campos en los correos electrónicos y excluir aquellos con la dirección de correo electrónico de su empresa para reducir el número de cadenas innecesarias que deben coincidir.
 
 **Números de teléfono**: los números de teléfono pueden tener muchos formatos diferentes, incluidos o excluidos prefijos de país, códigos de área y separadores. Para reducir los falsos negativos mientras se mantiene la carga al mínimo, úselos solo como elementos secundarios, excluya todos los separadores probables, como paréntesis y guiones, y solo incluya en la tabla de datos confidenciales la parte que siempre estará presente en el número de teléfono.
 
@@ -215,4 +219,4 @@ Este procedimiento muestra cómo crear un archivo en formato XML denominado paqu
 
 ## <a name="next-step"></a>Paso siguiente
 
-- [Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **Para una experiencia clásica**: [pruebe un tipo de información confidencial de coincidencia exacta de datos.](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

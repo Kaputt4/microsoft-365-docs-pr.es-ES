@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 7c3d61f038198ff331ece29bf17dea14aba12462
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050983"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343807"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para punto de conexión en iOS
 
@@ -63,9 +63,9 @@ Microsoft Defender para punto de conexión en iOS ahora tiene una capacidad espe
 
 Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en la tienda de aplicaciones. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU**. En función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a las características de Microsoft Defender para punto de conexión o a las características de Microsoft Defender para usuarios individuales. Para obtener más información, consulte [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
-## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
+## <a name="vulnerability-management"></a>Administración de vulnerabilidades
 
-El 25 de enero de 2022, anunciamos la disponibilidad general de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, consulte [la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+El 25 de enero de 2022, anunciamos la disponibilidad general de la administración de vulnerabilidades en Android e iOS. Para obtener más información, consulte [la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="1128250101"></a>1.1.28250101
 - **Integración con Tunnel**: Microsoft Defender para punto de conexión en iOS ahora se puede integrar con Microsoft Tunnel, una solución de puerta de enlace de VPN para habilitar la seguridad y la conectividad en una sola aplicación. Para obtener más información, consulte [Introducción a Microsoft Tunnel](/mem/intune/protect/microsoft-tunnel-overview).

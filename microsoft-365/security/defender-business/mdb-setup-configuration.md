@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 931dfb257902e17968df2621b5b8c374f4691a25
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 4dfd112af96bbb421ace15e3ac4bd9a8e4e2733a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300790"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328087"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configuración y configuración de Microsoft Defender para Empresas
 
@@ -32,7 +32,7 @@ Defender for Business proporciona una experiencia de configuración y configurac
 > Si usó el [asistente para la instalación](mdb-use-wizard.md), ya ha completado varios pasos del proceso de instalación básico. En este caso, puede:
 > - [Incorporación de más dispositivos](mdb-onboard-devices.md)
 > - [Configuración de directivas y opciones de seguridad](mdb-configure-security-settings.md)
-> - [Visite el panel de administración de vulnerabilidades.](mdb-view-tvm-dashboard.md)
+> - [Visite el panel de Administración de vulnerabilidades de Microsoft Defender](mdb-view-tvm-dashboard.md)
 
 
 ## <a name="the-setup-and-configuration-process"></a>Proceso de instalación y configuración

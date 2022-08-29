@@ -10,22 +10,23 @@ ms.topic: how-to
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0072cd6088d7fa560e5dbd6f449b766cb6afb694
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2c751289c9d365d72909433fe6534f3f00ba3638
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772651"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320424"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Visualización y administración de incidentes en Microsoft Defender para Empresas
 
-A medida que se detectan amenazas y se desencadenan alertas, se crean incidentes. El equipo de seguridad de la empresa puede ver y administrar incidentes en el portal de Microsoft 365 Defender.
+A medida que se detectan amenazas y se generan alertas, se crean incidentes. El equipo de seguridad de la empresa puede ver y administrar incidentes en el portal de Microsoft 365 Defender.
 
 **En este artículo se incluyen**:
 
@@ -55,12 +56,12 @@ Cuando Antivirus de Microsoft Defender asigna una gravedad de alerta basada en l
 
 | Escenario | Gravedad y motivo de la alerta |
 |:---|:---|
-| Antivirus de Microsoft Defender detecta y detiene una amenaza antes de que se produzcan daños. | Informativo <br/><br/>La amenaza se detuvo antes de que se realizara cualquier daño. |
-| Antivirus de Microsoft Defender detecta el malware que se estaba ejecutando en su empresa. El malware se detiene y se corrige. | Bajo <br/><br/>Aunque es posible que se haya producido algún daño en un punto de conexión individual, el malware no supone ninguna amenaza para su empresa. |
-| Defender for Business detecta el malware que se está ejecutando. El malware se bloquea casi inmediatamente. | Medio o alto <br/><br/>El malware supone una amenaza para puntos de conexión individuales y para su empresa. |
-| Se detecta un comportamiento sospechoso, pero aún no se realizan acciones correctivas. | Bajo, Medio o Alto <br/><br/>La gravedad depende del grado en que el comportamiento supone una amenaza para la empresa. |
+| Antivirus de Microsoft Defender detecta y detiene una amenaza antes de que se produzcan daños. | **Informativo**. La amenaza se detuvo antes de que se realizara cualquier daño. |
+| Antivirus de Microsoft Defender detecta el malware que se estaba ejecutando en su empresa. El malware se detiene y se corrige. | **Bajo**. Aunque es posible que se haya producido algún daño en un punto de conexión individual, el malware no supone ninguna amenaza para su empresa. |
+| Defender for Business detecta el malware que se está ejecutando. El malware se bloquea casi inmediatamente. | **Medio** o **Alto**. El malware supone una amenaza para puntos de conexión individuales y para su empresa. |
+| Se detecta un comportamiento sospechoso, pero aún no se realizan acciones correctivas. | **Bajo**, **Medio** o **Alto**. La gravedad depende del grado en que el comportamiento supone una amenaza para la empresa. |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

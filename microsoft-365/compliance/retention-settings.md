@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda las opciones de configuración que puede configurar para que las directivas de retención y las etiquetas de retención de Microsoft 365 conserven o eliminen los datos de su organización.
-ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
+ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943340"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336718"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -63,10 +63,10 @@ Si elige usar ámbitos adaptables, se le pedirá que seleccione qué tipo de ám
 
 Los nombres de propiedad de los sitios se basan en las propiedades administradas del sitio de SharePoint. Para obtener información sobre los atributos personalizados, vea [Usar propiedades personalizadas del sitio de SharePoint para aplicar la retención de Microsoft 365 con ámbitos de directiva adaptables](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-Los nombres de atributo de los usuarios y grupos se basan en [propiedades de destinatario filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) que se asignan a atributos de Azure AD. Por ejemplo:
+Los nombres de atributo para usuarios y grupos se basan en [propiedades de destinatario filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) que se asignan a atributos de Azure AD. Por ejemplo:
 
-- **Alias** se asigna al nombre LDAP **mailNickname**, que se muestra como **Correo electrónico** en el centro de administración de Azure AD.
-- Las **direcciones de correo electrónico** se asignan al nombre LDAP **proxyAddresses**, que se muestra como **otras direcciones de correo electrónico** en el centro de administración de Azure AD.
+- **Alias** se asigna al nombre LDAP **mailNickname** que se muestra como **Email** en el Centro de administración de Azure AD.
+- **Email direcciones** se asignan al **nombre LDAP proxyAddresses** que se muestra como **dirección proxy** en el Centro de administración de Azure AD.
 
 Los atributos y propiedades enumerados en la tabla se pueden especificar fácilmente al configurar un ámbito adaptable mediante el generador de consultas simple. Los atributos y propiedades adicionales se admiten con el generador de consultas avanzado, como se describe en la sección siguiente.
 
@@ -86,10 +86,10 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
 1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), navegue a una de las siguientes ubicaciones:
     
     - Si usa la solución de administración de registros:
-        - **Soluciones** > **Administración de registros** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
+        - **Soluciones** \> **Administración de** \> registros **Pestaña Ámbitos adaptables** \> + **Crear ámbito**
         
     - Si usa la solución de administración del ciclo de vida de los datos:
-       - **Soluciones** > **Administración del ciclo de vida de los datos** > Pestaña **Ámbitos de aplicación adaptables**> + **Crear ámbito de aplicación**
+       - **Soluciones** \> **Administración del ciclo de vida de los** \> datos **Microsoft 365** \> **Pestaña Ámbitos adaptables** \> + **Crear ámbito**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
 
@@ -127,7 +127,7 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
     
     - Para ámbitos de **sitios de SharePoint**, use Lenguaje de consulta de palabras clave (KQL). Es posible que ya esté familiarizado con el uso de KQL para búsquedas en SharePoint mediante propiedades de sitio indexadas. Para ayudarle a especificar estas consultas KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        Por ejemplo, dado que los ámbitos de los sitios de SharePoint incluyen todos los tipos de sitio de SharePoint de manera automática, que incluyen sitios de OneDrive y sitios conectados a grupos de Microsoft 365, puede usar la propiedad de sitio indexado **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
+        Por ejemplo, dado que los ámbitos de sitio de SharePoint incluyen automáticamente todos los tipos de sitio de SharePoint, que incluyen sitios conectados a grupos de Microsoft 365 y OneDrive, puede usar la propiedad de sitio indexada **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
         - `SITEPAGEPUBLISHING` para sitios de comunicación modernos
         - `GROUP` para sitios conectados a grupos de Microsoft 365
         - `TEAMCHANNEL` para sitios de canal privado de Microsoft Teams
@@ -302,6 +302,10 @@ Al configurar una directiva de retención que use ámbitos de directiva adaptabl
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
 Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **Grupos de Microsoft 365**. Para las directivas de retención, esta ubicación incluye el buzón de grupo y el sitio de equipos de SharePoint. Para las etiquetas de retención, esta ubicación solo incluye el sitio de equipos de SharePoint.
+
+Para obtener información detallada sobre qué elementos se incluyen y excluyen para Grupos de Microsoft 365:
+- Para los buzones de grupo, consulte [Qué se incluye para la retención y eliminación](retention-policies-exchange.md#whats-included-for-retention-and-deletion) de la retención de Exchange.
+- Para los sitios de equipos de SharePoint, consulte [Qué se incluye para la retención y eliminación](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) de la retención de SharePoint.
 
 Los buzones de correo de destino con esta ubicación de directiva requieren al menos 10 MB de datos antes de que se les aplique la configuración de retención.
 

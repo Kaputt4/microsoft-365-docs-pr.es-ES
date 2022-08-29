@@ -1,7 +1,7 @@
 ---
-title: Obtener la API de alertas relacionadas con el usuario
-description: Recupera una colección de alertas relacionadas con un identificador de usuario determinado mediante Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, user, related, alerts
+title: Obtención de la API de alertas relacionadas con el usuario
+description: Recupere una colección de alertas relacionadas con un identificador de usuario determinado mediante Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, user, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 11811996ef369c7850030871abdb6a5082546de8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0c318d1b877eaeea1ee8e189d7e07a4577d01432
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301875"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325889"
 ---
-# <a name="get-user-related-alerts-api"></a>Obtener la API de alertas relacionadas con el usuario
+# <a name="get-user-related-alerts-api"></a>Obtención de la API de alertas relacionadas con el usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "61301875"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,24 +43,24 @@ Recupera una colección de alertas relacionadas con un identificador de usuario 
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Alert.Read.All|'Leer todas las alertas'
-Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Application|Alert.Read.All|"Leer todas las alertas"
+Application|Alert.ReadWrite.All|"Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.Read | "Leer alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos". Para obtener más información, vea [Create and manage roles](user-roles.md).
-> - La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos". Para obtener más información, consulte [Creación y administración de roles](user-roles.md).
+> - La respuesta incluirá solo alertas asociadas a dispositivos a las que el usuario tenga acceso, según la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -68,21 +68,21 @@ Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir a
 GET /api/users/{id}/alerts
 ```
 
-**El identificador no es el UPN completo, sino solo el nombre de usuario. (por ejemplo, para recuperar alertas para user1@contoso.com usar /api/users/user1/alerts)**
+**El identificador no es el UPN completo, sino solo el nombre de usuario. (por ejemplo, para recuperar alertas de user1@contoso.com use /api/users/user1/alerts)**
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el usuario existe: 200 Aceptar. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
+Si es correcto y el usuario existe: 200 Correcto. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

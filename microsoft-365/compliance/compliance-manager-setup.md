@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634773"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357464"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -88,8 +88,7 @@ En la tabla siguiente se muestran las funciones permitidas por cada rol en el Ad
 | **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Lector global de Azure AD, lector de seguridad |
 | **Editar datos**| Contribución del administrador de cumplimiento | Administrador de cumplimiento |
 | **Edición de los resultados de las pruebas**| Evaluador de Administrador de cumplimiento | Administrador de cumplimiento |
-| **Administración de evaluaciones y datos de plantilla e inquilino**| Administración del administrador de cumplimiento | Administrador de cumplimiento, Administrador de datos de cumplimiento, Administrador de seguridad  |
-| **Asignación de usuarios**| Administrador global | Administrador global |
+| **Administrar evaluaciones, plantillas y datos de inquilino; asignar acciones de mejora**| Administración del administrador de cumplimiento | Administrador de cumplimiento, Administrador de datos de cumplimiento, Administrador de seguridad  |
 
 ## <a name="start-a-premium-assessments-trial"></a>Inicio de una evaluación premium
 

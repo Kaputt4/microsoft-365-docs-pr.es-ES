@@ -1,7 +1,7 @@
 ---
-title: Errores comunes de La API de Microsoft Defender para puntos de conexión
-description: Lista de errores comunes de La API de Microsoft Defender para puntos de conexión con descripciones.
-keywords: API, API de Microsoft Defender para endpoints, errores, solución de problemas
+title: Errores comunes Microsoft Defender para punto de conexión API
+description: Lista de errores comunes de api de Microsoft Defender para punto de conexión con descripciones.
+keywords: API, API de Microsoft Defender para punto de conexión, errores, solución de problemas
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d960091409a71fd23e52a098ae3d8164c7df5aef
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: dbbfd44f573e216015bfe586d5c309cc3ba12f5e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284606"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326153"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 
@@ -29,9 +29,9 @@ ms.locfileid: "61284606"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-* Los códigos de error enumerados en la tabla siguiente pueden devolverse mediante una operación en cualquiera de las API de Microsoft Defender para puntos de conexión.
+* Los códigos de error enumerados en la tabla siguiente pueden devolverse mediante una operación en cualquiera de Microsoft Defender para punto de conexión API.
 * Además del código de error, cada respuesta de error contiene un mensaje de error, que puede ayudar a resolver el problema.
-* El mensaje es un texto gratuito que se puede cambiar.
+* El mensaje es un texto libre que se puede cambiar.
 * En la parte inferior de la página, puede encontrar ejemplos de respuesta.
 
 **Se aplica a:**
@@ -39,46 +39,46 @@ ms.locfileid: "61284606"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Código de error|Código de estado HTTP|Mensaje
+Código de error|Código de estado HTTP|Message
 ---|---|---
-BadRequest|BadRequest (400)|Mensaje de error General Bad Request.
+BadRequest|BadRequest (400)|Mensaje de error de solicitud incorrecta general.
 ODataError|BadRequest (400)|Consulta URI de OData no válida (se especifica el error específico).
 InvalidInput|BadRequest (400)|Entrada no válida {la entrada no válida}.
 InvalidRequestBody|BadRequest (400)|Cuerpo de la solicitud no válido.
 InvalidHashValue|BadRequest (400)|El valor hash {el hash no válido} no es válido.
 InvalidDomainName|BadRequest (400)|El nombre de dominio {el dominio no válido} no es válido.
-InvalidIpAddress|BadRequest (400)|La dirección IP {la IP no válida} no es válida.
+InvalidIpAddress|BadRequest (400)|La dirección IP {la dirección IP no válida} no es válida.
 InvalidUrl|BadRequest (400)|La dirección URL {la dirección URL no válida} no es válida.
-MaximumBatchSizeExceeded|BadRequest (400)|Se ha superado el tamaño máximo de lote. Received: {batch size received}, allowed: {batch size allowed}.
+MaximumBatchSizeExceeded|BadRequest (400)|Se ha superado el tamaño máximo del lote. Recibido: {tamaño de lote recibido}, permitido: {tamaño de lote permitido}.
 MissingRequiredParameter|BadRequest (400)|Falta el parámetro {el parámetro que falta}.
-OsPlatformNotSupported|BadRequest (400)|La plataforma del sistema operativo {la plataforma del sistema operativo cliente} no es compatible con esta acción.
-ClientVersionNotSupported|BadRequest (400)|{La acción solicitada} se admite en la versión de cliente {versión de cliente admitida} y versiones posteriores.
+OsPlatformNotSupported|BadRequest (400)|La plataforma del sistema operativo {la plataforma del sistema operativo cliente} no se admite para esta acción.
+ClientVersionNotSupported|BadRequest (400)|{La acción solicitada} se admite en la versión de cliente {versión de cliente compatible} y versiones posteriores.
 No autorizado (Unauthorized)|No autorizado (401)|No autorizado (encabezado de autorización no válido o expirado).
 Prohibido (Forbidden)|Prohibido (403)|Prohibido (token válido pero permiso insuficiente para la acción).
-DisabledFeature|Prohibido (403)|La característica inquilino no está habilitada.
-DisallowedOperation|Prohibido (403)|{la operación no permitido y el motivo}.
-NotFound|No encontrado (404)|Mensaje de error General No encontrado.
+DisabledFeature|Prohibido (403)|La característica de inquilino no está habilitada.
+No permitidaOperation|Prohibido (403)|{la operación no permitida y el motivo}.
+NotFound|No encontrado (404)|Mensaje de error General no encontrado.
 ResourceNotFound|No encontrado (404)|No se encontró el recurso {el recurso solicitado}.
 InternalServerError|Error interno del servidor (500)|(Sin mensaje de error, vuelva a intentar la operación)
 TooManyRequests|Demasiadas solicitudes (429)|La respuesta representará alcanzar el límite de cuota por número de solicitudes o por CPU.
 
-## <a name="body-parameters-are-case-sensitive"></a>Los parámetros de cuerpo distinguen mayúsculas de minúsculas
+## <a name="body-parameters-are-case-sensitive"></a>Los parámetros del cuerpo distinguen mayúsculas de minúsculas
 
-Los parámetros de cuerpo enviados distinguen entre mayúsculas y minúsculas.
+Los parámetros del cuerpo enviados distinguen entre mayúsculas y minúsculas actualmente.
 
-Si experimenta errores **InvalidRequestBody** o **MissingRequiredParameter,** es posible que se deba a un capital de parámetro incorrecto o a una letra minúscula.
+Si experimenta errores **InvalidRequestBody** o **MissingRequiredParameter** , puede deberse a un mayúscula de parámetro incorrecto o a una letra minúscula.
 
-Revise la página de documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo correspondiente.
+Revise la página de documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo pertinente.
 
 ## <a name="correlation-request-id"></a>Identificador de solicitud de correlación
 
-Cada respuesta de error contiene un parámetro id. único para el seguimiento.
+Cada respuesta de error contiene un parámetro de identificador único para el seguimiento.
 
-El nombre de la propiedad de este parámetro es "target".
+El nombre de propiedad de este parámetro es "target".
 
-Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador ayudará a encontrar la causa raíz del problema.
+Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador le ayudará a encontrar la causa principal del problema.
 
 ## <a name="examples"></a>Ejemplos
 

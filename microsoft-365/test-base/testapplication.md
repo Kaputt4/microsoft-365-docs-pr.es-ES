@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/08/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811093"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315710"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>Creación y prueba de archivos binarios en la base de pruebas
 
@@ -65,7 +65,7 @@ En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **pa
 ### <a name="step-2-configure-test"></a>Paso 2. Configuración de la prueba
 
 1. Seleccione el **tipo de prueba**. Se admiten dos tipos de prueba:
-   - Una **prueba lista para usar (OOB)** realiza una instalación, inicio, cierre y desinstalación del paquete. Después de la instalación, la rutina de inicio y cierre se repite 30 veces antes de que se ejecute una sola desinstalación. La prueba de OOB proporciona telemetría estandarizada en el paquete para compararla entre Windows compilaciones.
+   - Una **prueba lista para usar (OOB)** realiza una instalación, inicio, cierre y desinstalación del paquete. Después de la instalación, la rutina de inicio y cierre se repite 30 veces antes de que se ejecute una sola desinstalación. La prueba de OOB proporciona telemetría estandarizada en el paquete para compararlo entre compilaciones de Windows.
    - Una **prueba funcional** ejecutaría los scripts de prueba cargados en el paquete. Los scripts se ejecutan en la secuencia especificada y un error en un script determinado impedirá la ejecución de scripts posteriores.
 
    > [!NOTE]
@@ -94,7 +94,7 @@ En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **pa
 2. En la **versión preliminar del paquete**, según sus necesidades, puede
    - Cree una nueva carpeta.
    - Cree un nuevo script.
-   - Upload un archivo nuevo.
+   - Cargue un archivo nuevo.
 
    > [!div class="mx-imgBorder"]
    > ![Creación de recursos](Media/testapplication10.png)
@@ -132,23 +132,23 @@ En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **pa
 ### <a name="step-4-test-matrix"></a>Paso 4. Matriz de prueba
 
 1. En la pestaña Matriz de pruebas, seleccione el **tipo de actualización del sistema operativo**. Se admiten dos tipos de actualización del sistema operativo.
-   - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de Windows actualizaciones de seguridad mensuales de versión preliminar.
-   - Las **actualizaciones de características** permiten probar el paquete con Windows compilaciones de actualizaciones de características bianuales anteriores a la versión desde el Windows Insider Program.
+   - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de actualizaciones de seguridad mensuales de versión preliminar de Windows.
+   - Las **actualizaciones de características** permiten probar el paquete con las compilaciones de actualizaciones de características bianuales de versión preliminar de Windows del Programa Windows Insider.
 
 2. Seleccione las versiones del sistema operativo para las pruebas de actualización de seguridad.
 
-   Si **se selecciona Actualizaciones de seguridad** en tipo de actualización del sistema operativo, debe seleccionar las versiones del sistema operativo de Windows se probará el paquete.
+   Si **se selecciona Actualizaciones de seguridad** en tipo de actualización del sistema operativo, deberá seleccionar las versiones del sistema operativo en las que se probará el paquete.
 
    > [!NOTE]
    > Si selecciona probar el paquete con los sistemas operativos servidor y cliente, asegúrese de que el paquete es compatible y se puede ejecutar en ambos sistemas operativos.
 
 3. Seleccione las opciones de Pruebas de actualización de características.
    - Si se selecciona **Actualizaciones de características** en tipo de actualización del sistema operativo, debe finalizar las siguientes opciones.
-   - En **Canal insider**, seleccione el canal de Windows Insider Program como la compilación en la que se deben probar los paquetes. Actualmente usamos compilaciones piloto en el **canal beta de Insider**.
-   - En **Línea base del sistema operativo para Insight**, seleccione la versión Windows del sistema operativo que se usará como línea base al comparar los resultados de las pruebas.
+   - En **Canal insider**, seleccione el canal del programa Windows Insider como la compilación en la que se deben probar los paquetes. Actualmente usamos compilaciones piloto en el **canal beta de Insider**.
+   - En **Línea base del sistema operativo para Insight**, seleccione la versión del sistema operativo Windows que se usará como línea base para comparar los resultados de la prueba.
 
    > [!div class="mx-imgBorder"]
-   > ![Seleccione la versión del sistema operativo Windows](Media/testapplication14.png)
+   > ![Seleccionar la versión del sistema operativo Windows](Media/testapplication14.png)
 
 4. Una vez rellenada toda la información necesaria, puede pasar al paso 5 (último paso) haciendo clic en el botón Siguiente situado en la parte inferior.
 

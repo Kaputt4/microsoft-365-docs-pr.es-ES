@@ -3,27 +3,27 @@ title: Prueba del SDK de & de la API base
 description: Prueba del SDK de & de la API base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5a3959e723dbf78f56de0b33b280de13b1c3b59e
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077445"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315929"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Administración del recurso con LAS API de & del SDK
 
-La automatización es un aspecto clave del desarrollo ágil y DevOps. ¿Desea administrar Test Base para Microsoft 365 recursos, obtener resultados de pruebas mediante programación e integrarlos con nuestras herramientas de CI? ¡Las API base de prueba y el SDK pueden ayudarle a lograr todas estas y más!
+La automatización es un aspecto clave de DevOps y el desarrollo ágil. ¿Desea administrar Test Base para recursos de Microsoft 365, obtener resultados de pruebas mediante programación e integrarlos con nuestras herramientas de CI? ¡Las API base de prueba y el SDK pueden ayudarle a lograr todas estas y más!
 
 Estas API o SDK permiten a los profesionales de TI y a los desarrolladores de aplicaciones:
 
@@ -32,7 +32,7 @@ Estas API o SDK permiten a los profesionales de TI y a los desarrolladores de ap
 - Obtenga el resumen de la prueba, los resultados detallados de las pruebas y los resultados del análisis. El resultado del análisis incluye análisis de regresión de CPU, análisis de uso de CPU, análisis de regresión de memoria y análisis de uso de memoria.
 - Descargue los resultados de las pruebas y la grabación de vídeo de ejecución de pruebas.
 
-Consulte el esquema paso a paso siguiente para averiguar cómo acceder a esta nueva funcionalidad en Base de pruebas para Microsoft 365 servicio.
+Consulte el esquema paso a paso siguiente para obtener información sobre cómo acceder a esta nueva funcionalidad en test base para el servicio Microsoft 365.
 
 ## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Ejemplo paso a paso de creación de cuentas base de prueba mediante el SDK de Python
 

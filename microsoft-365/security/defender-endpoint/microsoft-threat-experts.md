@@ -2,7 +2,7 @@
 title: Expertos en amenazas de Microsoft
 ms.reviewer: ''
 description: Expertos en amenazas de Microsoft proporciona una capa adicional de experiencia para Microsoft Defender para punto de conexión.
-keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, notificación de ataque de punto de conexión, notificación de ataque de punto de conexión
+keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, notificación de ataque de punto de conexión, Notificación de ataque de punto de conexión, Preguntar a expertos de Defender
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280749"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323986"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -34,6 +34,9 @@ ms.locfileid: "67280749"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> A partir de agosto de 2022, la opción Expertos a petición para **consultar a un experto en amenazas** se ha cambiado a **Preguntar a expertos de Defender**.
 
 Expertos en amenazas de Microsoft es un servicio de búsqueda de amenazas administrado que proporciona a los centros de operaciones de seguridad (SOC) supervisión y análisis de nivel experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierdan.
 
@@ -73,12 +76,22 @@ Los clientes pueden interactuar con nuestros expertos en seguridad directamente 
 - Obtenga claridad sobre el comportamiento sospechoso del dispositivo y los pasos siguientes si se enfrenta a un atacante avanzado.
 - Determinación del riesgo y la protección con respecto a los actores de amenazas, las campañas o las técnicas de atacantes emergentes
 
+> [!NOTE]
+> A partir de agosto de 2022, la opción Expertos a petición para **consultar a un experto en amenazas** se ha cambiado a **Preguntar a expertos de Defender**.
+
 La opción **preguntar a expertos de Defender** está disponible en varios lugares del portal para que pueda interactuar con expertos en el contexto de la investigación:
 
-- ***Menú Ayuda y soporte técnico***
 - ***Menú acciones de página del dispositivo***
+
+![Captura de pantalla de la opción de menú Preguntar a expertos de Defender en el menú acción de la página Dispositivo del portal de Microsoft 365 Defender.](../../media/mte/device-page-actions-menu.png)
+
 - ***Menú Acciones de página alertas***
+
+![Captura de pantalla de la opción de menú Preguntar a los expertos de Defender en el menú de acción de la página Alertas del portal de Microsoft 365 Defender.](../../media/mte/alerts-page-actions-menu.png)
+
 - ***Menú acciones de página de archivos***
+
+![Captura de pantalla de la opción de menú Preguntar a los expertos de Defender en el menú de acción de la página Incidentes del portal de Microsoft 365 Defender.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través de Microsoft Services Hub, póngase en contacto con el Administrador de cuentas de éxito del cliente.

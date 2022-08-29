@@ -1,7 +1,7 @@
 ---
-title: Buscar dispositivos por API de etiqueta
-description: Buscar todos los dispositivos que contienen etiqueta specifc
-keywords: apis, api compatibles, get, device, find, find device, by tag, tag, tag
+title: Buscar dispositivos por API de etiquetas
+description: Buscar todos los dispositivos que contienen la etiqueta specifc
+keywords: apis, api admitidas, get, device, find, find device, by tag, tag
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7926003a11c5aa27da5bbf4913feb54504a60d1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302199"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327825"
 ---
-# <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiqueta
+# <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiquetas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,25 +45,25 @@ Buscar [máquinas](machine.md) por [etiqueta](machine-tags.md).
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
-Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa)|Machine.Read|'Leer información de máquina'
-Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
+Application|Machine.Read.All|"Leer todos los perfiles de máquina"
+Application|Machine.ReadWrite.All|"Leer y escribir toda la información de la máquina"
+Delegado (cuenta profesional o educativa)|Machine.Read|"Leer información de la máquina"
+Delegado (cuenta profesional o educativa)|Machine.ReadWrite|"Leer y escribir información de la máquina"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulta [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulta [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
+> - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -77,20 +77,20 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
+## <a name="request-uri-parameters"></a>Parámetros de URI de solicitud
 
-Nombre|Tipo|Description
+Nombre|Tipo|Descripción
 :---|:---|:---
-tag|Cadena|El nombre de la etiqueta. **Necesario**.
-useStartsWithFilter|Booleano|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
+tag|Cadena|Nombre de la etiqueta. **Necesario**.
+useStartsWithFilter|Boolean|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comienza con la etiqueta especificada en la consulta. Valores predeterminados de falso. **Opcional**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente: 200 Aceptar con una lista de las máquinas en el cuerpo de la respuesta.
+Si se ejecuta correctamente: 200 Aceptar con la lista de máquinas en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 

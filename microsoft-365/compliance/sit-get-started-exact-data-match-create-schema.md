@@ -17,25 +17,28 @@ search.appverid:
 - MET150
 description: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622027"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359939"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
+
+## <a name="applies-to"></a>Se aplica a
+
+- Experiencia clásica
 
 Puede crear el esquema y EDM SIT mediante [el Asistente para usar el esquema exacto de coincidencia de datos y el patrón de tipo de información confidencial](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) o [manualmente](#create-exact-data-match-schema-manually-and-upload). También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con SITS basado en EDM o su implementación, debe familiarizarse con:
 
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 Un único esquema EDM se puede usar en varios tipos de información confidencial que usan la misma tabla de datos confidenciales. Puede crear hasta 10 esquemas EDM diferentes en un inquilino de Microsoft 365.
-
 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
@@ -69,7 +72,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
    > [!IMPORTANT]
    > Al menos uno, pero no más de cinco de los campos de su esquema deben ser designados como de búsqueda.
 
-7. Elija **Guardar**. El esquema ahora aparecerá en la lista y estará disponible para su uso.
+7. Seleccione **Guardar**. El esquema ahora aparecerá en la lista y estará disponible para su uso.
 
    > [!IMPORTANT]
    > Si desea eliminar un esquema, y ya está asociado a un tipo de información sensible EDM, primero debe borrar el tipo de información confidencial EDM, luego puede eliminar el esquema. Al eliminar un esquema que tiene asociado un almacén de datos, también se elimina el almacén de datos en un plazo de 24 horas.
@@ -143,6 +146,28 @@ El indicador `ignoredDelimiters` no es compatible con:
 > Al definir el tipo de información confidencial de EDM, *ignoreDelimiters* no afectará a cómo el tipo de información confidencial Clasificación asociado al elemento principal de un patrón EDM identifica el contenido de un elemento. Por lo tanto, si configura *ignoreDelimiters* para un campo que permite búsquedas, debe asegurarse de que el tipo de información confidencial que se usa para un elemento principal basado en ese campo seleccionará cadenas con y sin esos caracteres presentes.
 >
 > El número de columnas de la tabla de origen de información confidencial y el número de campos del esquema deben coincidir, el orden no importa.
+
+Los caracteres que se usan como *separadores de tokens* se comportan de forma diferente que los demás delimitadores. Estos son algunos ejemplos:
+- \ (espacio)
+- \\T
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\R
+- \\N  
+
+Cuando se incluye un *separador de tokens*, EDM interrumpirá el token donde se encuentra el separador. Por ejemplo, EDM verá el valor **Middle-Last Name** en **Middle-Last** y **Name** para el `LastName` campo. Si se incluye *ignoreDelimiters* para el `LastName` campo con el carácter '-', esa acción solo se produce después de que se rompa el valor. Al final, EDM vería los siguientes valores **MiddleLast** y **Name**.
+
+Para usar los siguientes caracteres como *ignoreDelimiters* y no *separadores de tokens*, debe asociarse al campo una SIT que coincida con el formato correspondiente. Por ejemplo, una SIT que detecta una cadena de varias palabras con guiones en ella debe asociarse al `LastName` campo.
+- \.
+- \;
+- \!
+- \?
+- \\
+
+Es posible asociar SIT a elementos secundarios mediante PowerShell.
 
 1. Defina el esquema en formato XML (similar al ejemplo siguiente). Asigne a este archivo de esquema **el nombreedm.xml** y configúrelo de modo que para cada columna de la tabla de origen de información confidencial, haya una línea que use la sintaxis :
 

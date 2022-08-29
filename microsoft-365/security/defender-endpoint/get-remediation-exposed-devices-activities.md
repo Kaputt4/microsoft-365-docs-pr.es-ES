@@ -2,7 +2,6 @@
 title: Lista de dispositivos expuestos de una actividad de corrección
 description: Devuelve información sobre los dispositivos expuestos para la tarea de corrección especificada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1bcd4f04ee48376d30b8b216de3efe49ab3a9db3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165275"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344797"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -29,7 +28,7 @@ ms.locfileid: "61165275"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,22 +45,22 @@ Devuelve información sobre los dispositivos expuestos para la tarea de correcci
 
 [Obtenga más información sobre las actividades de corrección](tvm-remediation.md).
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Enumerar los dispositivos expuestos asociados con una tarea de corrección (id)
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Enumerar los dispositivos expuestos asociados a una tarea de corrección (id)
 
-**DIRECCIÓN URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
+**URL:** GET: /api/remediationTasks/\{id\}/machineReferences
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API para obtener más información.](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|RemediationTasks.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
-Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Application|RemediationTasks.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
 
 ## <a name="properties-details"></a>Detalles de propiedades
 
-Propiedad (id)|Tipo de datos|Description|Ejemplo
+Propiedad (id)|Tipo de datos|Descripción|Ejemplo
 :---|:---|:---|:---
 id|Cadena|Id. de dispositivo|w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName|Cadena|Nombre del dispositivo|PC-SRV2012R2Foo.UserNameVldNet.local
@@ -114,10 +113,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
-- [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
+- [Métodos y propiedades de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)
-- [Amenazas basadas en riesgos & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
-- [Vulnerabilidades de la organización](tvm-weaknesses.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
+- [Vulnerabilidades en la organización](tvm-weaknesses.md)

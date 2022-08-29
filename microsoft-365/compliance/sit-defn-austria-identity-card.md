@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de la tarjeta de identidad de Austria.
-ms.openlocfilehash: 5a7cae0eabfa179bda83a09dc6a70a3e6e5048a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d180c3e46c3810997bfe54a3521c840f833aff02
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000175"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367629"
 ---
 # <a name="austria-identity-card"></a>Documento de identidad de Austria
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -56,7 +48,7 @@ No aplicable
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_austria_eu_national_id_card` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_austria_eu_national_id_card` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_austria_eu_national_id_card`.
 
 ```xml

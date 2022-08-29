@@ -1,8 +1,7 @@
 ---
 title: Obtener información de dominios relacionada con alertas
-description: Recupera todos los dominios relacionados con una alerta específica con Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, obtener información de alerta, información de alerta, dominio relacionado
-search.product: eADQiWindows 10XVcnh
+description: Recupere todos los dominios relacionados con una alerta específica mediante Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, obtener información de alertas, información de alertas, dominio relacionado
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +13,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9780379ee78989c718b4a017b16e26646a58d429
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1371aa1ec6ce53276300883b6e049db9457cfc19
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166391"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326659"
 ---
-# <a name="get-alert-related-domain-information-api"></a>Obtener API de información de dominio relacionada con alertas
+# <a name="get-alert-related-domain-information-api"></a>Obtención de la API de información de dominio relacionada con alertas
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -41,23 +40,23 @@ Recupera todos los dominios relacionados con una alerta específica.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Puede consultar las alertas actualizadas por última vez según el período de retención configurado.
+2. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
-Delegado (cuenta profesional o educativa)|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
+Application|Url. Read.All|"Leer direcciones URL"
+Delegado (cuenta profesional o educativa)|Url. Read.All|"Leer direcciones URL"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -71,13 +70,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y existen alertas y dominio: 200 Aceptar. Si no se encuentra la alerta: 404 No se encontró.
+Si se ejecuta correctamente, la alerta y el dominio existen: 200 Correcto. Si no se encuentra la alerta: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

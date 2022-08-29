@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 3c7c72597416bda80894f8d44fbf5dbba3d58808
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 1dca2fd171641f25e41057414cbaca784aee1007
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603910"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327231"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Administración de Microsoft Defender para punto de conexión con objetos directiva de grupo
 
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |**Configuración del acceso controlado a carpetas** para protegerse frente a ransomware <br/><br/> *[El acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders) también se conoce como protección contra antiransomware.*|[Habilitación del acceso controlado a carpetas mediante directiva de grupo](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
 |**Configure SmartScreen de Microsoft Defender** para protegerse frente a sitios y archivos malintencionados en Internet.|[Configuración de smartscreen de Microsoft Defender directiva de grupo y administración de dispositivos móviles (MDM) mediante directiva de grupo](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
 |**Configuración del cifrado y BitLocker** para proteger la información sobre los dispositivos de la organización que ejecutan Windows|[Configuración de directiva de grupo de BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
-|**Configuración de Credential Guard de Microsoft Defender** para protegerse frente a ataques de robo de credenciales|[Habilitar Credential Guard de Windows Defender mediante directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
+|**Configuración de Credential Guard de Microsoft Defender** para protegerse frente a ataques de robo de credenciales|[Habilitar Windows Defender Credential Guard mediante directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configuración del portal de Microsoft 365 Defender
 
@@ -65,6 +65,6 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel de operaciones de seguridad del portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Administración de Microsoft Defender para punto de conexión con Intune](manage-mde-post-migration-intune.md)

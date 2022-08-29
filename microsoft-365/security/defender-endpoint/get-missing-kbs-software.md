@@ -1,7 +1,7 @@
 ---
-title: Obtener KBs ausentes por id. de software
-description: Recupera las actualizaciones de seguridad que faltan por id. de software
-keywords: apis, api de gráficos, api admitidas, get, list, file, information, software id, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
+title: Obtención de KB que faltan por identificador de software
+description: Recupera las actualizaciones de seguridad que faltan por identificador de software
+keywords: api, graph api, api admitidas, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender para punto de conexión tvm api, mdvm, Administración de vulnerabilidades de Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 692d0ca44a46ef11bd7ab3e9bb32a0c98dd7e01a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: d587951bd201e921f48244a823a11747ceed776a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301443"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342929"
 ---
-# <a name="get-missing-kbs-by-software-id"></a>Obtener KBs ausentes por id. de software
+# <a name="get-missing-kbs-by-software-id"></a>Obtención de KB que faltan por identificador de software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,16 +35,16 @@ ms.locfileid: "61301443"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Recupera KBs ausentes (actualizaciones de seguridad) por identificador de software
+Recupera los KB que faltan (actualizaciones de seguridad) por identificador de software.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -56,15 +56,15 @@ GET /api/Software/{Id}/getmissingkbs
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok, con el software especificado que falta datos kb en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK, con los datos de kb que faltan en el software especificado en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -102,5 +102,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventario de software de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

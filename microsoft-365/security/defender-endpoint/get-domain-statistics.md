@@ -1,8 +1,7 @@
 ---
-title: Obtener API de estadísticas de dominio
-description: Obtenga información sobre cómo usar la API Obtener estadísticas de dominio para recuperar las estadísticas del dominio especificado en Microsoft Defender para endpoint.
-keywords: api, api de gráfico, api admitidas, obtener, dominio, dispositivos relacionados con el dominio
-search.product: eADQiWindows 10XVcnh
+title: Obtención de la API de estadísticas de dominio
+description: Obtenga información sobre cómo usar la API Get domain statistics para recuperar las estadísticas del dominio determinado en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, domain, domain related devices
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5cb8e5f47a84cad5a22df0cf13756e43e1baf370
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 945ca97d9492f9aad96603a7282c326186475613
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166379"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327077"
 ---
-# <a name="get-domain-statistics-api"></a>Obtener API de estadísticas de dominio
+# <a name="get-domain-statistics-api"></a>Obtención de la API de estadísticas de dominio
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,22 +43,22 @@ Recupera las estadísticas del dominio determinado.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
-2. El valor máximo `lookbackhours` para es 720 horas (30 días).
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. El valor máximo de `lookbackhours` es 720 horas (30 días).
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
-Delegado (cuenta profesional o educativa)|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
+Application|Url. Read.All|"Leer direcciones URL"
+Delegado (cuenta profesional o educativa)|Url. Read.All|"Leer direcciones URL"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -73,19 +72,19 @@ Encabezado|Valor
 :---|:---
 Authorization|Portador {token}. **Necesario**.
 
-## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
+## <a name="request-uri-parameters"></a>Parámetros de URI de solicitud
 
-Nombre|Tipo|Description
+Nombre|Tipo|Descripción
 :---|:---|:---
-lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
+lookBackHours|Int32|Define las horas que se buscan para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el dominio existe: 200 Ok, con el objeto statistics en el cuerpo de la respuesta. Si el dominio no existe: 200 Aceptar con una prevalencia establecida en 0.
+Si es correcto y el dominio existe: 200 Correcto, con el objeto de estadísticas en el cuerpo de la respuesta. Si el dominio no existe: 200 Correcto con una prevalencia establecida en 0.
 
 ## <a name="example"></a>Ejemplo
 

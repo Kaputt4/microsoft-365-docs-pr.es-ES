@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administración puede aprender a importar archivos PST de forma masiva a buzones de Microsoft 365 copiando archivos PST en un disco duro y enviándolo a Microsoft.
-ms.openlocfilehash: ac8b24c04823bf3635b7762d160cee71a356ebfd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a81755b4c36664f215387cfa11b149af03e307b3
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626081"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335790"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el envío de unidades para importar los archivos PST de su organización
 
@@ -113,7 +113,7 @@ El primer paso es descargar la herramienta y que se usa en el paso 2 para copiar
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** \> datos.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** \> datos **Importación** de **Microsoft 365**\>.
     
     > [!NOTE]
     > Como se indicó anteriormente, debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento.
@@ -168,7 +168,7 @@ El siguiente paso es usar la herramienta WAImportExport.exe para copiar archivos
     | `/t:` <br/> |Especifica la letra de la unidad de disco duro cuando se conecta a su equipo local.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Especifica el nombre de la sesión de copia. Cada vez que ejecuta la herramienta WAImportExport.exe para copiar los archivos en la unidad de disco duro, se define una sesión. Los archivos PST se copian en una carpeta cuyo nombre es el nombre de la sesión especificado por este parámetro.   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se copiarán durante la sesión. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/`. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en el disco duro (convertido a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro . Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs`. En este caso, todavía debe incluir  `ingestiondata` en la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> Si incluye el nombre de ruta de acceso opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo,  `FILESERVER01/PSTs/annb.pst`. Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst`, .           | `/dstdir:"ingestiondata/"` <br/> O bien  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/`. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en el disco duro (convertido a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro . Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs`. En este caso, todavía debe incluir  `ingestiondata` en la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Una razón para agregar la ruta de acceso de archivo adicional es si tiene archivos PST con el mismo nombre de archivo.  <br/> > [!NOTE]> Si incluye el nombre de ruta de acceso opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo,  `FILESERVER01/PSTs/annb.pst`. Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst`, .           | `/dstdir:"ingestiondata/"` <br/> O bien  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/blobtype:` <br/> |Especifica el tipo de blobs en el área de Azure Storage en la que se van a importar los archivos PST. Para importar archivos PST, use el valor **BlockBlob**. Este parámetro es obligatorio.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Este modificador activa BitLocker en la unidad de disco duro. Este parámetro es necesario la primera vez que ejecuta la herramienta WAImportExport.exe.  <br/> La clave de cifrado de BitLocker se copia en el archivo de diario y en el archivo de registro que se crea si usa el  `/logfile:` parámetro . Como se ha explicado anteriormente, el archivo de diario se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe.  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |Este parámetro opcional especifica una carpeta en la que se guardan los archivos de registro. Si no se especifica, los archivos de registro se guardan en la misma carpeta donde se encuentra la herramienta WAImportExport.exe. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
@@ -241,7 +241,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** \> datos.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** \> datos **Importación** de **Microsoft 365**\>.
 
 3. En la pestaña **Importar** , haga clic en ![Agregar icono.](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
 
@@ -351,7 +351,7 @@ Una vez cargados los archivos PST en Azure, el estado cambia a **Análisis en cu
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** \> datos **Importar****.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en Administración \> **del ciclo de vida de datos** **Microsoft 365** \> **Importar****.
 
 3. En la pestaña **Importar**, seleccione el trabajo de importación que creó en el paso 4 y haga clic en **Importar para Office 365**.
   

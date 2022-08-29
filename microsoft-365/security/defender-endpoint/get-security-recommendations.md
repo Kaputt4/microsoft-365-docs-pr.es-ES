@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: d2b4c57bda9084d1e76ad011869e27b05c5c1f4f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020063"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344753"
 ---
 # <a name="get-security-recommendations"></a>Obtener recomendaciones de seguridad
 
@@ -49,7 +49,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para más inf
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|SecurityRecommendation.Read.All|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
+Application|SecurityRecommendation.Read.All|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
 Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -62,7 +62,7 @@ GET /api/machines/{machineId}/recommendations
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 
@@ -118,5 +118,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades & amenazas basada en riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recomendación de seguridad de vulnerabilidad & amenazas](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recomendación de seguridad de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

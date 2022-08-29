@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 24c6e511b32b88ca72de7a7a0654fbea2761bf78
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66998474"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325647"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Desconectar un dispositivo de Microsoft Defender para Empresas
 
@@ -57,6 +58,6 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Use el panel de administración de vulnerabilidades de Threat & en Microsoft Defender para Empresas](mdb-view-tvm-dashboard.md)
+- [Use el panel de Administración de vulnerabilidades de Microsoft Defender en Microsoft Defender para Empresas](mdb-view-tvm-dashboard.md)
 - [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-create-policies.md)
 - [Administración de dispositivos en Microsoft Defender para Empresas](mdb-manage-devices.md)

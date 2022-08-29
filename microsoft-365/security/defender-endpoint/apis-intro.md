@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3638357d2c1440604858fabfa42e5df32569aed3
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 01c05b34ffdf2533ffffcde7cef366914fcbf887
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172269"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325691"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Acceder a las API de Microsoft Defender para punto de conexión
 
@@ -38,7 +38,7 @@ ms.locfileid: "65172269"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le permitirán automatizar flujos de trabajo e innovar en función de las funcionalidades de Defender para punto de conexión. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Código de autorización de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le permitirán automatizar flujos de trabajo e innovar en función de las funcionalidades de Defender para punto de conexión. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Vea este vídeo para obtener una introducción rápida a las API de Defender para punto de conexión.
 
@@ -72,7 +72,7 @@ Puede acceder a defender para la API de punto de conexión con **contexto de apl
 
   Pasos para acceder a Defender for Endpoint API con el contexto de usuario:
 
-  1. Cree AAD aplicación nativa.
+  1. Cree una aplicación nativa de AAD.
   2. Asigne el permiso deseado a la aplicación, por ejemplo, "Leer alertas", "Aislar máquinas", etc.
   3. Obtenga el token mediante la aplicación con credenciales de usuario.
   4. Uso del token para acceder a la API de Microsoft Defender para punto de conexión

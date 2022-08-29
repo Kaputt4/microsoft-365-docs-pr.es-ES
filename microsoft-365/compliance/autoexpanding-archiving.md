@@ -17,27 +17,29 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.
-ms.openlocfilehash: d039e63310ed7db92f2e625f8bbdd0ff4d0c97cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 1eb2aaf2593e9b5d2c1e254f7fa8e207cbc848d4
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632693"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359983"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>Información sobre el archivado de expansión automática
 
-En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento de buzones de correo adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzó la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ya no es así.
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-La característica de archivado de Microsoft 365 (denominada *archivado de expansión automática*) proporciona hasta 1,5 TB de almacenamiento adicional en buzones de archivo. Cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Microsoft 365 aumenta automáticamente (e incrementalmente) el tamaño del archivo hasta que el buzón de archivo alcanza los 1,5 TB.
+Los buzones de archivo de Microsoft Purview proporcionan a los usuarios espacio de almacenamiento de buzón adicional. Una vez habilitado el buzón de archivo de un usuario, estarán disponibles hasta 100 GB de almacenamiento adicional.
+
+Esta característica de archivado en Microsoft Purview (denominada *archivado de expansión automática*) proporciona hasta 1,5 TB de almacenamiento adicional en buzones de archivo. Cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Microsoft Purview aumenta automáticamente (e incrementalmente) el tamaño del archivo hasta que el buzón de archivo alcanza los 1,5 TB.
 
 Para obtener instrucciones paso a paso para activar el archivado de expansión automática, consulte [Habilitar el archivado de expansión automática](enable-autoexpanding-archiving.md).
 
 > [!NOTE]
-> El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se requiere una licencia de ExchangeOnline (plan 2) o de ExchangeOnline (plan 1) con una licencia de Archivado de ExchangeOnline.
+> El archivado de expansión automática también es compatible con los buzones compartidos.
 
 ## <a name="how-auto-expanding-archiving-works"></a>Cómo funciona el archivado de expansión automática
 
-Como se explicó anteriormente, se crea espacio de almacenamiento de buzones de correo adicional cuando se habilita el buzón de archivo de un usuario. Cuando se habilita el archivado de expansión automática, Microsoft 365 comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca a su límite de almacenamiento, Microsoft 365 automáticamente crea espacio de almacenamiento adicional para el archivo. Si el usuario se queda sin este espacio de almacenamiento adicional, Microsoft 365 agrega más espacio de almacenamiento al archivo del usuario. Este proceso continúa hasta que el archivo del usuario alcanza un tamaño de 1,5 TB. Este proceso se realiza automáticamente, lo que significa que los administradores no tienen que solicitar almacenamiento de archivo adicional ni administrar el archivado de expansión automática.
+Como se explica en la introducción, se crea espacio de almacenamiento de buzón de correo adicional cuando se habilita el buzón de archivo de un usuario. Cuando se habilita el archivado de expansión automática, Microsoft Purview comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca a su límite de almacenamiento, se crea automáticamente espacio de almacenamiento adicional para el archivo. Si el usuario se queda sin este espacio de almacenamiento adicional, se agrega automáticamente más espacio de almacenamiento al archivo del usuario. Este proceso continúa hasta que el archivo del usuario alcanza un tamaño de 1,5 TB. Este proceso se realiza automáticamente, lo que significa que los administradores no tienen que solicitar almacenamiento de archivo adicional ni administrar el archivado de expansión automática.
 
 Esta es una introducción rápida del proceso.
 
@@ -49,14 +51,14 @@ Esta es una introducción rápida del proceso.
     
     Después, cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza su cuota de almacenamiento, el buzón de archivo se convierte en un archivo de expansión automática. Se agrega espacio de almacenamiento adicional hasta que alcanza un tamaño máximo de 1,5 TB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
 
-3. Microsoft 365 agrega automáticamente más espacio de almacenamiento cuando sea necesario.
+3. Microsoft Purview agrega automáticamente más espacio de almacenamiento cuando sea necesario.
 
 > [!IMPORTANT]
 > El archivado de expansión automática solo se admite para buzones usados por usuarios individuales (o buzones compartidos) con una tasa de crecimiento que no supere 1 GB al día. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. No se permite el uso de registro en diario, reglas de transporte ni reglas de reenvío automático para copiar mensajes en un buzón de archivo. Microsoft se reserva el derecho de denegar el archivado adicional en los casos en los que se usa el buzón de archivo de un usuario para almacenar datos de archivo para otros usuarios o en otros casos de uso inadecuado.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento de archivo adicional?
 
-Para hacer un uso eficaz del almacenamiento de archivo de expansión automática, las carpetas pueden moverse. Microsoft 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original. La convención de nomenclatura que Microsoft 365 usa para asignar un nombre a estas subcarpetas es **\<folder name\>_yyyy (creado en mmm dd, yyyy h_mm)**, donde:
+Para hacer un uso eficaz del almacenamiento de archivo de expansión automática, las carpetas pueden moverse. Microsoft Purview determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original. La convención de nomenclatura que Microsoft 365 usa para asignar un nombre a estas subcarpetas es **\<folder name\>_yyyy (creado en mmm dd, yyyy h_mm)**, donde:
 
 - **yyyy es el** año en que se recibieron los mensajes de la carpeta.
 
@@ -73,7 +75,7 @@ Las capturas de pantalla siguientes muestran una lista de carpetas antes y despu
 ![Lista de carpetas del buzón de archivo después de aprovisionar el archivo de expansión automática.](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
-> Como se ha descrito anteriormente, Microsoft 365 mueve los elementos a subcarpetas (y los denomina mediante la convención de nomenclatura descrita anteriormente) para ayudar a distribuir contenido a un archivo auxiliar. Pero es posible que no siempre se muevan elementos a subcarpetas. A veces, se puede mover una carpeta completa a un archivo auxiliar. En este caso, la carpeta conservará su nombre original.  No se mostrará en la lista de carpetas de Outlook que la carpeta se movió a un archivo auxiliar.
+> Como se describió anteriormente, Microsoft Purview mueve los elementos a subcarpetas (y los asigna un nombre mediante la convención de nomenclatura descrita anteriormente) para ayudar a distribuir contenido a un archivo auxiliar. Pero es posible que no siempre se muevan elementos a subcarpetas. A veces, se puede mover una carpeta completa a un archivo auxiliar. En este caso, la carpeta conservará su nombre original. No se mostrará en la lista de carpetas de Outlook que la carpeta se movió a un archivo auxiliar.
 
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Requisitos de Outlook para acceder a los elementos de un archivo expandido automáticamente
 
@@ -85,7 +87,7 @@ Para acceder a los mensajes que se almacenan en un archivo expandido automática
 
 - Outlook 2016 o Outlook 2019 para Windows
 
-- Outlook en la Web
+- Outlook en la Web cuando el buzón principal está en Exchange Online en lugar de en el entorno local
 
 - Outlook 2016 o Outlook 2019 para Mac
 
@@ -97,7 +99,7 @@ Estos son algunos aspectos a tener en cuenta al usar Outlook o Outlook en la Web
 
 - Puede eliminar elementos de un área de almacenamiento expandida automáticamente. Sin embargo, no puede usar la característica Recuperar elementos eliminados para recuperar un elemento después de habilitar el archivado de expansión automática para un buzón.
 
-- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la web (OWA). De forma similar a Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional. Cuando se selecciona archivo como ámbito de búsqueda en OWA, se buscarán todos los archivos (incluidos los archivos expandidos automáticamente) y sus subcarpetas correspondientes. Tenga en cuenta que no se admite la búsqueda para la característica de archivos de expansión automática en una situación de archivo solo en la nube (el buzón principal sigue siendo local).
+- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la web (OWA). De forma similar a Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional. Cuando se selecciona archivo como ámbito de búsqueda en OWA, se buscarán todos los archivos (incluidos los archivos expandidos automáticamente) y sus subcarpetas correspondientes.
 
 - La búsqueda de archivos de expansión automática está disponible en Outlook para Windows en el Canal empresarial mensual. Con esta actualización, el ámbito buzón actual está disponible, lo que le permite buscar en el archivo expandido automáticamente. Tenga en cuenta que no se admite la búsqueda para la característica de archivos de expansión automática en una situación de archivo solo en la nube (el buzón principal sigue siendo local). Para obtener más información sobre esta y otras características de soporte técnico de Microsoft Search, vea [Cómo Outlook para Windows conectado a Exchange Online utiliza Búsqueda de Microsoft](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 

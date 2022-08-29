@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Obtenga información sobre cómo restaurar (o combinar) el contenido de un buzón inactivo en un buzón existente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b12df38ff1cf9ed5ffef748ea21a86aca742e3c5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629231"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359566"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurar un buzón inactivo
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa para conservar el correo electrónico de un antiguo empleado después de abandonar la organización. Si otro empleado asume las responsabilidades del empleado que se marchó o si dicho empleado vuelve a la organización, hay dos maneras en que puede hacer que el contenido del buzón inactivo esté disponible para un usuario:
 

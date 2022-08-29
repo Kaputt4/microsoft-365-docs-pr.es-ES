@@ -1,7 +1,7 @@
 ---
 title: Obtener puntuación segura para dispositivos
-description: Recupera la puntuación segura del dispositivo de la organización.
-keywords: apis, api de gráficos, api admitidas, get, alerts, recent
+description: Recupera la puntuación de seguridad del dispositivo de la organización.
+keywords: apis, graph api, api admitidas, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69385a5a1da4b9e91084b4fc524334956c2d8403
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 07651ed756d8229e6f0f4712b230875c11bf8007
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300207"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327693"
 ---
 # <a name="get-device-secure-score"></a>Obtener puntuación segura para dispositivos
 
@@ -36,16 +36,16 @@ ms.locfileid: "61300207"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Recupera la [puntuación segura de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md). Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad.
+Recupera la [puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md). Una puntuación de seguridad de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a ataques de amenazas de ciberseguridad.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Score.Read.All|'Leer puntuación de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Score.Read|'Leer puntuación de administración de amenazas y vulnerabilidades'
+Application|Score.Read.All|"Leer la puntuación de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Score.Read|"Leer la puntuación de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -57,15 +57,15 @@ GET /api/configurationScore
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 OK, con los datos de puntuación seguros del dispositivo en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 200 OK, con los datos de puntuación segura del dispositivo en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 
@@ -94,4 +94,4 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Vea también
 
-- [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
+- [Consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md)

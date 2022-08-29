@@ -1,8 +1,7 @@
 ---
 title: Eliminar API de indicador.
-description: Obtenga información sobre cómo usar la API Eliminar indicador para eliminar una entidad Indicator por id. en Microsoft Defender para endpoint.
-keywords: apis, api pública, api admitidas, delete, indicador ti, entidad, id
-search.product: eADQiWindows 10XVcnh
+description: Obtenga información sobre cómo usar Delete Indicator API para eliminar una entidad Indicator por identificador en Microsoft Defender para punto de conexión.
+keywords: apis, api pública, api admitidas, delete, ti indicator, entity, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab0c256331b6f4220a7e6f0b890dd5735530873f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1bfb5955a14f8f520ce66139b708f82d27e1f724
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165491"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326131"
 ---
 # <a name="delete-indicator-api"></a>Eliminar API de indicador
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,16 +44,16 @@ Elimina una entidad [Indicator](ti-indicator.md) por identificador.
 
 ## <a name="limitations"></a>Limitaciones
 
-Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Introducción](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación | Ti.ReadWrite | 'Leer y escribir indicadores de TI'
-Aplicación | Ti.ReadWrite.All | Indicadores de lectura y escritura
+Application | Ti.ReadWrite | "Indicadores de TI de lectura y escritura"
+Application | Ti.ReadWrite.All | "Indicadores de lectura y escritura"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -70,21 +69,21 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si el indicador existe y se elimina correctamente: 204 Aceptar sin contenido.
+Si el indicador existe y se ha eliminado correctamente: 204 Aceptar sin contenido
 
-Si no se encontró Indicator con el identificador especificado- 404 No se encontró.
+Si no se encontró el indicador con el identificador especificado: 404 No encontrado
 
 ## <a name="example"></a>Ejemplo
 
 ### <a name="request"></a>Solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050796"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328373"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender
 
@@ -191,7 +191,7 @@ En la sección **Mitigaciones de exposición &** , revise la lista de recomendac
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
 
-La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), que también proporciona información detallada de los distintos vínculos del informe.
+La información de mitigación de esta sección incorpora datos de [Administración de vulnerabilidades de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), que también proporciona información detallada de los distintos vínculos del informe.
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="La sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración seguros" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -251,7 +251,7 @@ Para acceder a los informes de análisis de amenazas, necesita determinados role
 
 - Para ver alertas, incidentes o datos de recursos afectados, debe tener permisos para Microsoft Defender para Office o Microsoft Defender para punto de conexión datos de alertas, o ambos.
 - Para ver los intentos de correo electrónico impedidos, debe tener permisos para los datos de búsqueda de Microsoft Defender para Office.
-- Para ver las mitigaciones, debe tener permisos para Administración de amenazas y vulnerabilidades datos en Microsoft Defender para punto de conexión.
+- Para ver las mitigaciones, debe tener permisos para los datos de Administración de vulnerabilidades de Defender en Microsoft Defender para punto de conexión.
 
 Al examinar los datos de análisis de amenazas, recuerde los siguientes factores:
 

@@ -1,7 +1,7 @@
 ---
-title: Conexión de API de Microsoft Defender para endpoint a Power BI
+title: conexión de api de Microsoft Defender para punto de conexión a Power BI
 ms.reviewer: ''
-description: Cree un informe de Power Business Intelligence (BI) sobre las API de Microsoft Defender para endpoints.
+description: Cree un informe de Power Business Intelligence (BI) sobre las API de Microsoft Defender para punto de conexión.
 keywords: apis, api admitidas, Power BI, informes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,16 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cad6fd5188745773ce561d1db697989598a1dc5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 086579f6923f59c12c5ef9f7494b539f24c19210
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472163"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328131"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
+# <a name="create-custom-reports-using-power-bi"></a>Creación de informes personalizados mediante Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,21 +38,21 @@ ms.locfileid: "64472163"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-En esta sección aprenderás a crear un informe Power BI en la parte superior de Defender para las API de punto de conexión.
+En esta sección aprenderá a crear un informe de Power BI sobre las API de Defender para punto de conexión.
 
-El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada y el segundo ejemplo muestra una conexión a nuestras API de OData, como acciones de máquina o alertas.
+En el primer ejemplo se muestra cómo conectar Power BI a Advanced Hunting API y en el segundo ejemplo se muestra una conexión a nuestras API de OData, como Acciones de máquina o Alertas.
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Conectar Power BI a la API de búsqueda avanzada
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Conexión de Power BI a Advanced Hunting API
 
 - Abra Microsoft Power BI.
 
-- Haga **clic en Obtener consulta en** \> **blanco de datos**.
+- Haga clic en Obtener **consulta en blanco** **de datos**\>.
 
   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="La opción Consulta en blanco en el elemento de menú Obtener datos" lightbox="images/power-bi-create-blank-query.png":::
 
-- Haga **clic en Editor avanzado**.
+- Haga clic en **Editor avanzado**.
 
-  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="El elemento de menú Editor avanzado" lightbox="images/power-bi-open-advanced-editor.png":::
+  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="Elemento de menú Editor avanzado" lightbox="images/power-bi-open-advanced-editor.png":::
 
 - Copie lo siguiente y péguelo en el editor:
 
@@ -96,26 +96,26 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 - Haga clic en **Listo**.
 
-- Haga clic **en Editar credenciales**.
+- Haga clic en **Editar credenciales**.
 
-    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="El elemento de menú Editar credenciales" lightbox="images/power-bi-edit-credentials.png":::
+    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Elemento de menú Editar credenciales" lightbox="images/power-bi-edit-credentials.png":::
     
 
 - Seleccione **Cuenta organizativa** \> **Iniciar sesión**.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="La opción Iniciar sesión en el elemento de menú Cuenta organizativa" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Escriba sus credenciales y espere a que haya iniciado sesión.
+- Escriba sus credenciales y espere a iniciar sesión.
 
 - Haga clic en **Conectar**.
 
-    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="El mensaje de confirmación de inicio de sesión en el elemento de menú Cuenta organizativa" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Mensaje de confirmación de inicio de sesión en el elemento de menú Cuenta organizativa" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Ahora los resultados de la consulta aparecerán como una tabla y puedes empezar a crear visualizaciones encima de ella.
+- Ahora los resultados de la consulta aparecerán como una tabla y puede empezar a crear visualizaciones encima de ella.
 
-- Puedes duplicar esta tabla, cambiar el nombre y editar la consulta de búsqueda avanzada dentro para obtener los datos que quieras.
+- Puede duplicar esta tabla, cambiarle el nombre y editar la consulta búsqueda avanzada dentro para obtener los datos que desee.
 
-## <a name="connect-power-bi-to-odata-apis"></a>Conectar Power BI a las API de OData
+## <a name="connect-power-bi-to-odata-apis"></a>Conexión de Power BI a las API de OData
 
 - La única diferencia con respecto al ejemplo anterior es la consulta dentro del editor.
 
@@ -131,19 +131,19 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
         Source
 ```
 
-- Puede hacer lo mismo con **alertas** y **máquinas**.
-- También puede usar consultas OData para filtros de consultas, vea [Using OData Queries](exposed-apis-odata-samples.md).
+- Puede hacer lo mismo para **alertas** y **máquinas**.
+- También puede usar consultas OData para filtros de consultas, consulte [Uso de consultas de OData](exposed-apis-odata-samples.md).
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Power BI ejemplos de panel en GitHub
+## <a name="power-bi-dashboard-samples-in-github"></a>Ejemplos de panel de Power BI en GitHub
 
-Para obtener más información, [vea el Power BI de informes.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
+Para obtener más información, consulte las [plantillas de informe de Power BI](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Informes de ejemplo
 
-Vea los ejemplos de informes de Microsoft Defender para Power BI punto de conexión. Para obtener más información, vea [Examinar ejemplos de código](/samples/browse/?products=mdatp).
+Vea los ejemplos de informes de Microsoft Defender para punto de conexión Power BI. Para obtener más información, vea [Examinar ejemplos de código](/samples/browse/?products=mdatp).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Defender para api de extremo](apis-intro.md)
+- [API de Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Uso de consultas OData](exposed-apis-odata-samples.md)

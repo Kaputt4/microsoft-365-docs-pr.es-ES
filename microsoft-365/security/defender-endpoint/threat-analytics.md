@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 455b80f590edf255362c7bb047c7aa1b23916666
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4a21b62e7ab8cad349dbcabebdd1e0d6eeceacd7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128574"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345159"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 
@@ -57,11 +57,11 @@ Vea este breve vídeo para obtener más información sobre cómo el análisis de
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
 ## <a name="required-roles-and-permissions"></a>Permisos y roles necesarios
-En la tabla siguiente se describen los roles y permisos necesarios para acceder a Threat Analytics. Los roles definidos en la tabla siguiente hacen referencia a roles personalizados en portales individuales y no están conectados a roles globales en Azure AD, incluso si tienen un nombre similar.
+En la tabla siguiente se describen los roles y permisos necesarios para acceder a Threat Analytics. Los roles definidos en la tabla siguiente hacen referencia a los roles personalizados en portales individuales y no están conectados a roles globales en Azure AD, aunque tenga un nombre similar.
 
-| **Se requiere uno de los siguientes roles para Microsoft 365 Defender**  | **Se requiere uno de los siguientes roles para Defender para punto de conexión.**  | **Se requiere uno de los siguientes roles para Defender para Office 365** | **Se requiere uno de los siguientes roles para Defender for Cloud Apps** | 
+| **Se requiere uno de los siguientes roles para Microsoft 365 Defender**  | **Se requiere uno de los siguientes roles para Defender para punto de conexión.**  | **Se requiere uno de los siguientes roles para Defender para Office 365** | **Se requiere uno de los siguientes roles para Defender for Cloud Apps.** | 
 |---------|---------|---------|---------|
-| Análisis de amenazas | Datos de alertas e incidentes: <ul><li>Ver operaciones de seguridad de datos</li></ul>Mitigaciones de TVM:<ul><li>Ver datos: amenazas y administración de vulnerabilidades</li></ul> | Datos de alertas e incidentes:<ul> <li>Ver solo las alertas de administración</li> <li>Administrar alertas</li> <li>Configuración de la organización</li><li>Registros de auditoría</li> <li>Visualización de registros de auditoría de solo visualización</li><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> </ul> Intentos de correo electrónico impedidos: <ul><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> | No disponible para Defender for Cloud Aplicaciones o usuarios de MDI |
+| Análisis de amenazas | Datos de alertas e incidentes: <ul><li>Ver operaciones de seguridad de datos</li></ul>Mitigaciones de Administración de vulnerabilidades de Defender:<ul><li>Visualización de datos: administración de amenazas y vulnerabilidades</li></ul> | Datos de alertas e incidentes:<ul> <li>Ver solo las alertas de administración</li> <li>Administrar alertas</li> <li>Configuración de la organización</li><li>Registros de auditoría</li> <li>Visualización de registros de auditoría de solo visualización</li><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> </ul> Intentos de correo electrónico impedidos: <ul><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> | No disponible para los usuarios de Defender for Cloud Apps o MDI |
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Visualización del panel de análisis de amenazas
 
@@ -111,13 +111,13 @@ Vaya a la sección **Informe de analistas** para leer la escritura detallada de 
 En la sección **Mitigaciones** , revise la lista de recomendaciones que requieren acción específicas que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones de seguimiento incluye:
 
 - **Actualizaciones de seguridad**: Implementación de actualizaciones de seguridad o revisiones para detectar vulnerabilidades
-- **configuración de Antivirus de Microsoft Defender**
+- **Configuración del Antivirus de Microsoft Defender**
   - Versión de inteligencia de seguridad
   - Protección entregada en la nube
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
 
-La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de los distintos vínculos del informe.
+La información de mitigación de esta sección incorpora datos de [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de los distintos vínculos del informe.
 
 :::image type="content" source="images/ta-mitigations.png" alt-text="La sección Mitigaciones de un informe de análisis de amenazas" lightbox="images/ta-mitigations.png":::
 
@@ -132,7 +132,7 @@ Al usar los informes, tenga en cuenta lo siguiente:
 - Los gráficos solo reflejan las mitigaciones de las que se realiza el seguimiento. Compruebe la información general del informe para ver mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con el antivirus se basan en Antivirus de Microsoft Defender configuración. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en la configuración del Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-topics"></a>Temas relacionados
 

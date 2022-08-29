@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 361a1a08569f24c83498fddeb0e4c2b9bd8c5d02
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 4d3f2f7a04891fdf3e08f06d6744894e18e944dd
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770885"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320358"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Descripción del orden de la directiva en Microsoft Defender para Empresas
 
@@ -32,7 +33,6 @@ A medida que se agregan directivas, observará que se asigna un orden de priorid
 
 **Lo importante que hay que recordar sobre varias directivas es que los dispositivos solo recibirán la primera directiva aplicada.** En referencia a nuestro ejemplo anterior de tres directivas de próxima generación, supongamos que tiene dispositivos destinados a las tres directivas. En este caso, esos dispositivos recibirán el número de directiva 1, pero no recibirán las directivas numeradas 2 y 3. 
 
-
 ## <a name="key-points-to-remember-about-policy-order"></a>Puntos clave para recordar sobre el orden de la directiva
 
 - A las directivas se les asigna un orden de prioridad.
@@ -40,7 +40,7 @@ A medida que se agregan directivas, observará que se asigna un orden de priorid
 - Puede cambiar el orden de prioridad de las directivas.
 - Las directivas predeterminadas tienen el orden de prioridad más bajo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción al uso de Defender para empresas](mdb-get-started.md)
 - [Administrar dispositivos](mdb-manage-devices.md)

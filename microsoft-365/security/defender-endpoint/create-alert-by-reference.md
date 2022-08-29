@@ -1,7 +1,7 @@
 ---
-title: Crear alerta desde la API de eventos
-description: Obtén información sobre cómo usar la API crear alertas para crear una nueva alerta encima del evento en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, alert, information, id
+title: Creación de una alerta a partir de event API
+description: Obtenga información sobre cómo usar la API De creación de alertas para crear una nueva alerta sobre el evento en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9a211034b164381226df0d5d79d0d709db3c2e98
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284510"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326747"
 ---
-# <a name="create-alert-api"></a>Crear API de alertas
+# <a name="create-alert-api"></a>Creación de la API de alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,32 +40,32 @@ ms.locfileid: "61284510"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Crea una [nueva alerta](alerts.md) en la parte superior del **evento**.
+Crea una nueva [alerta](alerts.md) sobre **el evento**.
 
-- **Se requiere Microsoft Defender para el evento endpoint** para la creación de alertas.
-- Debe proporcionar tres parámetros del evento en la solicitud: **Hora del** evento, **Id.** de máquina e **Id. de informe.** Vea el ejemplo abajo.
-- Puedes usar un evento que se encuentra en la API de búsqueda avanzada o portal.
+- **Microsoft Defender para punto de conexión evento** es necesario para la creación de alertas.
+- Debe proporcionar tres parámetros del evento en la solicitud: **Hora del evento**, Id. **de máquina** e **Id. de informe**. Vea el ejemplo abajo.
+- Puede usar un evento que se encuentra en Advanced Hunting API o Portal.
 - Si existe una alerta abierta en el mismo dispositivo con el mismo título, la nueva alerta creada se combinará con ella.
-- Una investigación automática se inicia automáticamente en alertas creadas a través de la API.
+- Una investigación automática se inicia automáticamente en las alertas creadas a través de la API.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 15 llamadas por minuto.
+1. Las limitaciones de velocidad de esta API son 15 llamadas por minuto.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Application | Alert.ReadWrite.All | "Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (Para obtener más información, vea [Crear y administrar roles](user-roles.md) )
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
+> - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (para obtener más información, vea [Crear y administrar roles](user-roles.md) )
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md)).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -80,24 +80,24 @@ Nombre|Tipo|Descripción
 Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione los siguientes valores (todos son necesarios):
 
 Propiedad | Tipo | Descripción
 :---|:---|:---
-eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obtiene de la búsqueda avanzada. Por ejemplo,  ```2018-08-03T16:45:21.7115183Z``` **Obligatorio**.
-reportId | String | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
-machineId | String | Id. del dispositivo en el que se identificó el evento. **Necesario**.
-severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
-title | String | Título de la alerta. **Necesario**.
+eventTime | DateTime(UTC) | Hora exacta del evento como cadena, obtenida de la búsqueda avanzada. Por ejemplo,  ```2018-08-03T16:45:21.7115183Z``` **Obligatorio**.
+reportId | Cadena | El reportId del evento, tal como se obtiene de la búsqueda avanzada. **Necesario**.
+machineId | Cadena | Identificador del dispositivo en el que se identificó el evento. **Necesario**.
+severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: "Low", "Medium" y "High". **Necesario**.
+title | Cadena | Título de la alerta. **Necesario**.
 description | Cadena | Descripción de la alerta. **Necesario**.
-recommendedAction| Cadena | El responsable de seguridad debe tomar esta acción al analizar la alerta. **Necesario**.
-categoría| String | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
+recommendedAction| Cadena | El responsable de seguridad debe realizar esta acción al analizar la alerta. **Necesario**.
+categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok y un nuevo [objeto alert](alerts.md) en el cuerpo de la respuesta. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
+Si se ejecuta correctamente, este método devuelve 200 OK y un nuevo objeto [de alerta](alerts.md) en el cuerpo de la respuesta. Si no se encontró el evento con las propiedades especificadas (_reportId_, _eventTime_ y _machineId_): 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

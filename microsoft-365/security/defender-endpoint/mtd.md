@@ -2,7 +2,7 @@
 title: 'Microsoft Defender para punto de conexión: Mobile Threat Defense'
 ms.reviewer: ''
 description: Introducción a Mobile Threat Defense en Microsoft Defender para punto de conexión
-keywords: mobile, defender, Microsoft Defender para punto de conexión, ios, mtd, android, seguridad
+keywords: mobile, defender, Microsoft Defender para punto de conexión, ios, mtd, android, security
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36b7703aeaf0fdf4ff30c9bd0dd1486ebe27f618
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: f02dc28eb3204922386d0fae26bc1191779641e6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923191"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327209"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para punto de conexión: Mobile Threat Defense
 
@@ -39,7 +39,7 @@ Microsoft Defender para punto de conexión en Android e iOS es nuestra **soluci�
 
 ## <a name="key-capabilities"></a>Principales funcionalidades
 
-Microsoft Defender para punto de conexión en Android e iOS proporciona las siguientes funcionalidades clave. Para obtener información sobre las características y [ventajas](https://aka.ms/mdeblog) más recientes, lea nuestros anuncios.
+Microsoft Defender para punto de conexión en Android e iOS proporciona las siguientes funcionalidades clave, para obtener información sobre las características y [ventajas](https://aka.ms/mdeblog) más recientes, lea nuestros anuncios.
 
 <br>
 
@@ -48,14 +48,14 @@ Microsoft Defender para punto de conexión en Android e iOS proporciona las sigu
 |Protección web|Protección contra phishing, bloqueo de conexiones de red no seguras y compatibilidad con indicadores personalizados.|
 |Protección contra malware (solo Android)|Examen de aplicaciones malintencionadas.|
 |Detección de jailbreak (solo iOS)|Detección de dispositivos jailbreak.|
-|Administración de amenazas y vulnerabilidades (TVM) |Evaluación de vulnerabilidades de dispositivos móviles incorporados. Visite esta [página](next-gen-threat-and-vuln-mgt.md) para obtener más información sobre la administración de amenazas y vulnerabilidades en Microsoft Defender para punto de conexión. *Tenga en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo en esta versión preliminar.*|
-|Protección de red *(versión preliminar pública)*| Protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados; la capacidad de permitir la lista de certificados de CA raíz y ca raíz privada en Intune; establecer confianza con puntos de conexión.|
+|Administración de vulnerabilidades de Microsoft Defender (MDVM) |Evaluación de vulnerabilidades de dispositivos móviles incorporados. Visite esta [página](next-gen-threat-and-vuln-mgt.md) para obtener más información sobre Administración de vulnerabilidades de Microsoft Defender en Microsoft Defender para punto de conexión. *Tenga en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo en esta versión preliminar.*|
+|Protección de red *(versión preliminar pública)*| Protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados; la capacidad de permitir la lista de certificados de CA raíz y ca raíz privada en Intune; establecer la confianza con los puntos de conexión.|
 |Alertas unificadas|Alertas de todas las plataformas en la consola de seguridad unificada de M365|
 |Acceso condicional, inicio condicional|Impedir que los dispositivos de riesgo accedan a los recursos corporativos. Las señales de riesgo de Defender para punto de conexión también se pueden agregar a las directivas de protección de aplicaciones (MAM)|
 |Controles de privacidad. En versión preliminar (vea la nota siguiente)|Configure la privacidad en los informes de amenazas mediante el control de los datos enviados por Microsoft Defender para punto de conexión. *Tenga en cuenta que los controles de privacidad solo están disponibles actualmente para dispositivos inscritos. Los controles para dispositivos no inscritos se agregarán más adelante.*|
 |Integración con Microsoft Tunnel|Se puede integrar con Microsoft Tunnel, una solución de puerta de enlace de VPN para habilitar la seguridad y la conectividad en una sola aplicación. Disponible en Android y ahora también está disponible con carácter general en iOS.|
 
-Todas estas funcionalidades están disponibles para los titulares de licencias de Microsoft Defender para punto de conexión. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
+Todas estas funcionalidades están disponibles para Microsoft Defender para punto de conexión titulares de licencias. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
 
 ## <a name="overview-and-deploy"></a>Información general e implementación
@@ -69,28 +69,28 @@ La implementación de Microsoft Defender para punto de conexión en dispositivos
 ### <a name="deploy"></a>Implementar
 
 En la tabla siguiente se resume cómo implementar Microsoft Defender para punto de conexión en Android e iOS. Para obtener documentación detallada, consulte 
-- [Información general de Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md) y
+- [Introducción a Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md) y
 - [Introducción a Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)
 
 **Android**
 
 |Tipo de inscripción     |Detalles      |
 |--------------------|-------------|
-|Android Enterprise con Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos en Android Enterprise](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Administrador de dispositivos con Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos por el administrador de dispositivos](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Android Enterprise con Intune unified Endpoint Manager (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos en Android Enterprise](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Administrador de dispositivos con Intune Endpoint Manager unificado (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos por el administrador de dispositivos](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |Dispositivos BYOD O no administrados administrados por otros administradores de puntos de conexión unificados o directiva de protección de aplicaciones de configuración (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](android-configure-mam.md)|
 
 **iOS**
 
 |Tipo de inscripción     |Detalles      |
 |--------------------|-------------|
-|Dispositivos supervisados con Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Implementación como aplicación de la tienda iOS](ios-install.md)<br/>2. [Configurar la protección web sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)|
+|Dispositivos supervisados con Intune Endpoint Manager unificado (Microsoft Endpoint Manager)|1. [Implementación como aplicación de la tienda iOS](ios-install.md)<br/>2. [Configurar la protección web sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)|
 |Dispositivos no supervisados (BYOD) inscritos con Intune UEM (Microsoft Endpoint Manager)|[Implementación como aplicación de la Tienda iOS](ios-install.md)|
 |Dispositivos BYOD O no administrados administrados por otros UEM o directiva de protección de aplicaciones de configuración (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Incorporación del usuario final
 
-- [Configuración de la incorporación zero-touch para dispositivos inscritos en iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): los administradores pueden configurar la instalación sin intervención táctil para incorporar Microsoft Defender para punto de conexión de forma silenciosa en dispositivos iOS inscritos sin necesidad de que el usuario abra la aplicación. 
+- [Configurar la incorporación zero-touch para dispositivos inscritos en iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): los administradores pueden configurar la instalación sin intervención táctil para incorporar de forma silenciosa Microsoft Defender para punto de conexión en dispositivos iOS inscritos sin necesidad de que el usuario abra la aplicación. 
 
 - [Configurar el acceso condicional para aplicar la incorporación de usuarios](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): esto se puede aplicar para garantizar que los usuarios finales se incorporen a la aplicación Microsoft Defender para punto de conexión después de la implementación. Vea este vídeo para ver una demostración rápida sobre la configuración del acceso condicional con señales de riesgo de Defender para punto de conexión. 
 
@@ -112,13 +112,13 @@ Esto ayuda a reducir los posibles problemas que podrían surgir al implementar e
 
 - Los dispositivos se muestran en la lista de inventario de dispositivos: después de incorporar correctamente Defender para punto de conexión en el dispositivo móvil, compruebe que el dispositivo aparece en inventario de dispositivos en la [consola de seguridad](https://security.microsoft.com).
 
-- Ejecutar una prueba de detección de malware en un dispositivo Android: instale cualquier aplicación de virus de prueba desde Google Play Store y compruebe que Microsoft Defender para punto de conexión la detecte. Esta es una aplicación de ejemplo que se puede usar para esta prueba: [Virus de prueba](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Tenga en cuenta que en Android Enterprise con un perfil de trabajo, solo se admite el perfil de trabajo.
+- Ejecutar una prueba de detección de malware en un dispositivo Android: instale cualquier aplicación de virus de prueba desde Google Play Store y compruebe que se detecta mediante Microsoft Defender para punto de conexión. Esta es una aplicación de ejemplo que se puede usar para esta prueba: [Virus de prueba](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Tenga en cuenta que en Android Enterprise con un perfil de trabajo, solo se admite el perfil de trabajo.
 
-- Ejecutar una prueba de suplantación de identidad (phishing): busque https://smartscreentestratings2.net y compruebe que Microsoft Defender para punto de conexión la bloquea. Tenga en cuenta que en Android Enterprise con un perfil de trabajo, solo se admite el perfil de trabajo.
+- Ejecutar una prueba de suplantación de identidad (phishing): vaya a https://smartscreentestratings2.net y compruebe que Microsoft Defender para punto de conexión la bloquea. Tenga en cuenta que en Android Enterprise con un perfil de trabajo, solo se admite el perfil de trabajo.
 
 - Las alertas aparecen en el panel: compruebe que las alertas de las pruebas de detección anteriores aparecen en la [consola de seguridad](https://security.microsoft.com).
 
-## <a name="configure"></a>Configuración
+## <a name="configure"></a>Configurar
 
 - [Configuración de características de Android](android-configure.md)
 - [Configurar características de iOS](ios-configure-features.md)

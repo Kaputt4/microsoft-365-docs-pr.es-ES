@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general del Centro de mensajes de Microsoft 365 y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085671"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322923"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Seguimiento de características nuevas y modificadas en el Centro de mensajes de Microsoft 365
 
@@ -51,7 +51,7 @@ También puede usar la [aplicación Administración de Microsoft 365](https://go
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte [Cancelar la suscripción a los correos electrónicos del Centro de mensajes](#unsubscribe-from-message-center-emails) en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 <br>
 
@@ -284,5 +284,4 @@ Para obtener información general sobre el Centro de mensajes, vea [Centro de me
 ## <a name="related-content"></a>Contenido relacionado
 
 [Configurar las opciones de las versiones estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)\
-[Administrar qué características de Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)\
 [Documentación sobre suscripciones empresariales y facturación](../../commerce/index.yml) (página de vínculos)

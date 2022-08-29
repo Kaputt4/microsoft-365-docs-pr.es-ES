@@ -23,14 +23,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo habilitar o deshabilitar buzones de archivo para que sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 67a134051d9c586b27fdc6168b2b1902a22d03d5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635543"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360268"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Habilitación de buzones de archivo en el portal de cumplimiento de Microsoft Purview
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 El archivado en Microsoft 365 (también llamado *Archivado local*) proporciona a los usuarios un espacio de almacenamiento adicional en el buzón. Para obtener más información, vea [Obtener información sobre los buzones de archivo](archive-mailboxes.md).
 
@@ -46,7 +48,7 @@ Si no ve la página **Archivo** en el portal de cumplimiento de Microsoft Purvie
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> e inicie sesión.
 
-2. En el panel izquierdo del portal de cumplimiento, seleccione **Administración del ciclo de vida de los datos** > **Archivo**.
+2. En el panel izquierdo del portal de cumplimiento, seleccione **Administración** >  del ciclo de vida de datos **Archivo** de **Microsoft 365** > .
 
    En la página **Archivo**, la columna **Buzón de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario.
 

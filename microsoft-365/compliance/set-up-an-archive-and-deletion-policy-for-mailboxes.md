@@ -22,13 +22,13 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Cómo crear una directiva personalizada de archivado y eliminación de la administración de registros de mensajería (MRM) para mover automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 7002f28d5926ac02cf01e7ab26b02cddfbd58404
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Cómo crear una directiva de archivado y eliminación de registros de mensajería personalizados (MRM) para mover automáticamente los elementos al buzón de archivo de un usuario.
+ms.openlocfilehash: d9a4af2b5518480e45ab98ca1a76b11aea36efd8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626059"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360421"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personalización de una directiva de archivo y eliminación para buzones de correo de la organización
 
@@ -53,7 +53,10 @@ Los pasos de este artículo configuraron una directiva de archivado y retención
 - Cree una nueva directiva de retención y agregue las nuevas etiquetas de retención personalizadas. Además, también agregará etiquetas de retención integradas a la nueva directiva de retención. Esto incluye etiquetas personales que los usuarios pueden asignar a los elementos de su buzón. También agregará una etiqueta de retención que mueve los elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables de su buzón de archivo. Esta acción ayuda a liberar espacio en la carpeta Elementos recuperables de un usuario cuando su buzón está en espera.
 
 Puede seguir algunos o todos los pasos de este artículo para configurar una directiva de archivo y eliminación para buzones de su propia organización. Se recomienda probar este proceso en algunos buzones antes de implementarlo en todos los buzones de su organización.
-  
+
+> [!NOTE]
+> Las instrucciones de este artículo usan el [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md) y el [nuevo Centro de administración de Exchange](/exchange/features-in-new-eac).
+
 ## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>Antes de configurar una directiva de archivo y eliminación
 
 - Debe ser administrador global de su organización para realizar los pasos de este artículo.
@@ -81,136 +84,133 @@ En este paso, creará las tres etiquetas de retención personalizadas que se des
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (etiqueta personalizada para la carpeta Elementos eliminados)
 
-Para crear nuevas etiquetas de retención, usará el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> en la organización de Exchange Online. Asegúrese de usar la versión clásica del EAC.
+Para crear nuevas etiquetas de retención, usará el [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md).
   
-1. Vaya a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e inicie sesión con sus credenciales.
+1. Vaya al [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/) e inicie sesión con sus credenciales.
   
-2. En el EAC, vaya a **Etiquetas** de **retención de administración de cumplimiento** > 
-
+2. En el portal de cumplimiento, vaya a **Soluciones** \> **Administración del ciclo de vida de** \> datos **Exchange (heredado)** > **Etiquetas de retención**
+    
     Se muestra una lista de las etiquetas de retención de su organización.
 
 ### <a name="create-a-custom-archive-default-policy-tag"></a>Creación de una etiqueta de directiva predeterminada de archivo personalizado
   
 En primer lugar, creará una etiqueta de directiva predeterminada de archivo (DPT) personalizada que moverá los elementos al buzón de archivo después de 3 años.
   
-1. En la página **Etiquetas de retención**, seleccione Nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Nueva **etiqueta**![y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
+1. En la página **Etiquetas de retención**, seleccione **+ Nueva etiqueta** y, a continuación, en la página **Definir cómo se aplicará la etiqueta**, seleccione **Automáticamente en todo el buzón (valor predeterminado).**
 
-2. En la página **Nueva etiqueta aplicada automáticamente a todo el buzón (valor predeterminado),** complete los campos siguientes: 
-
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de archivo.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+2. En la página **Definir configuración de retención** , complete los campos siguientes: 
   
-   1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
+   1. **Cuando los elementos alcanzan la edad siguiente (en días)** Escriba la duración del período de retención. En este escenario, los elementos se moverán al buzón de archivo después de 1095 días (3 años). 
 
-   2. **Acción de retención** Seleccione **Mover al archivo** para mover elementos al buzón de archivo cuando expire el período de retención.
+   2. Para la **acción de retención** , seleccione **Mover elemento al archivo** para mover elementos al buzón de archivo cuando expire el período de retención.
 
-   3. **Período de retención** Seleccione **Cuando el elemento alcance la edad siguiente (en días)** y, a continuación, escriba la duración del período de retención. En este escenario, los elementos se moverán al buzón de archivo después de 1095 días (3 años).
+3. En la página Nombre de la **etiqueta** , escriba un nombre para la nueva etiqueta de retención y una descripción opcional que explique el propósito de la etiqueta de retención personalizada. 
+    
+    En nuestro escenario de ejemplo, se denominará esta etiqueta "Alpine House 3 Year Move to Archive".
 
-   4. **Comentario** (opcional) Escriba un comentario que explique el propósito de la etiqueta de retención personalizada.
+4. Seleccione **Siguiente** y, a continuación, revise y envíe para crear el DPT de archivo personalizado.
 
-3. Seleccione **Guardar** para crear el archivo DPT personalizado.
-
-    El nuevo archivo DPT se muestra en la lista de etiquetas de retención.
+El nuevo archivo DPT se muestra en la lista de etiquetas de retención.
 
 ### <a name="create-a-custom-deletion-default-policy-tag"></a>Creación de una etiqueta de directiva predeterminada de eliminación personalizada
   
 A continuación, creará otro DPT personalizado, pero este será una directiva de eliminación que elimina de forma permanente los elementos después de 7 años.
   
-1. En la página **Etiquetas de retención**, seleccione Nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Nueva **etiqueta**![y, a continuación, seleccione **Aplicado automáticamente a todo el buzón (valor predeterminado).**
+1. De nuevo en la página **Etiquetas de retención**, seleccione **+ Nueva etiqueta** y, a continuación, en la página **Definir cómo se aplicará la etiqueta**, seleccione **Automáticamente en todo el buzón (valor predeterminado).**
 
-2. En la página **Nueva etiqueta aplicada automáticamente a todo el buzón (valor predeterminado),** complete los campos siguientes: 
-
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de eliminación.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+2. En la página **Definir configuración de retención** , complete los campos siguientes: 
   
-   1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
+   1. **Cuando los elementos alcanzan la edad siguiente (en días)** Escriba la duración del período de retención. En este escenario, los elementos se purgarán después de 2555 días (7 años). 
 
-   2. **Acción de retención** Seleccione **Eliminar permanentemente** para purgar elementos del buzón cuando expire el período de retención.
+   2. Para la **acción de retención** , seleccione **Eliminar permanentemente** para purgar elementos del buzón cuando expire el período de retención.
 
-   3. **Período de retención** Seleccione **Cuando el elemento alcance la edad siguiente (en días)** y, a continuación, escriba la duración del período de retención. En este escenario, los elementos se purgarán después de 2555 días (7 años).
+3. En la página Nombre de la **etiqueta** , escriba un nombre para la nueva etiqueta de retención y una descripción opcional que explique el propósito de la etiqueta de retención personalizada. 
+    
+    En nuestro escenario de ejemplo, denominaremos esta etiqueta "Alpine House 7 Year Permanently Delete".
 
-   4. **Comentario** (opcional) Escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
+4. Seleccione **Siguiente** y, a continuación, revise y envíe para crear el DPT de eliminación personalizada.
 
-3. Seleccione **Guardar** para crear el DPT de eliminación personalizada. 
-
-    El nuevo DPT de eliminación se muestra en la lista de etiquetas de retención.
+El nuevo DPT de eliminación se muestra en la lista de etiquetas de retención.
 
 ### <a name="create-a-custom-retention-policy-tag-for-the-deleted-items-folder"></a>Creación de una etiqueta de directiva de retención personalizada para la carpeta Elementos eliminados
   
 La última etiqueta de retención que se va a crear es una etiqueta de directiva de retención personalizada (RPT) para la carpeta Elementos eliminados. Esta etiqueta eliminará los elementos de la carpeta Elementos eliminados después de 5 años y proporciona un período de recuperación en el que los usuarios pueden usar la herramienta Recuperar elementos eliminados para recuperar un elemento.
+
+1. De nuevo en la página **Etiquetas de retención**, seleccione **+ Nueva etiqueta** y, a continuación, en la página **Definir cómo se aplicará la etiqueta**, seleccione **Automáticamente en todo el buzón (valor predeterminado).**
+
+2. En la página **Definir configuración de retención** , complete los campos siguientes: 
   
-1. En la página **Etiquetas de retención**, seleccione **Nuevo icono**](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Nueva etiqueta ![y, a continuación, seleccione **Aplicado automáticamente a una carpeta predeterminada**.
+   1. **Cuando los elementos alcanzan la edad siguiente (en días)** Escriba la duración del período de retención. En este escenario, los elementos se eliminarán después de 1825 días (5 años). 
 
-2. En la página **Nueva etiqueta aplicada automáticamente a una carpeta predeterminada** , complete los campos siguientes:
+   2. Para la **acción de retención** , seleccione **Eliminar y permita** que la recuperación elimine elementos cuando expire el período de retención, pero permita a los usuarios recuperar un elemento eliminado dentro del período de retención de elementos eliminados (que de forma predeterminada es de 14 días).
 
-    ![Configuración para crear una nueva etiqueta de directiva de retención para la carpeta Elementos eliminados.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
-  
-   1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
+3. En la página Nombre de la **etiqueta** , escriba un nombre para la nueva etiqueta de retención y una descripción opcional que explique el propósito de la etiqueta de retención personalizada.
+    
+    En nuestro escenario de ejemplo, denominaremos esta etiqueta "Alpine House Deleted Items 5 Years Delete and Allow Recovery".
 
-   2. **Aplicar esta etiqueta a la siguiente carpeta predeterminada** En la lista desplegable, seleccione **Elementos eliminados**.
+4. Seleccione **Siguiente** y, a continuación, revise y envíe para crear el DPT de eliminación personalizada.
 
-   3. **Acción de retención** Seleccione **Eliminar y Permitir que la recuperación** elimine elementos cuando expire el período de retención, pero permitir que los usuarios recuperen un elemento eliminado dentro del período de retención de elementos eliminados (que de forma predeterminada es de 14 días).
-
-   4. **Período de retención** Seleccione **Cuando el elemento alcance la edad siguiente (en días)** y, a continuación, escriba la duración del período de retención. En este escenario, los elementos se eliminarán después de 1825 días (5 años).
-
-   5. **Comentario** (opcional) Escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
-
-3. Seleccione **Guardar** para crear el RPT personalizado para la carpeta Elementos eliminados.
-
-    El nuevo RPT se muestra en la lista de etiquetas de retención.
+El nuevo RPT se muestra en la lista de etiquetas de retención.
 
 ## <a name="step-3-create-a-new-retention-policy"></a>Paso 3: Crear una nueva directiva de retención
 
 Después de crear las etiquetas de retención personalizadas, el siguiente paso es crear una nueva directiva de retención y agregar las etiquetas de retención. Agregará las tres etiquetas de retención personalizadas que creó en el paso 2 y las etiquetas integradas que se mencionaron en la primera sección. En el paso 4, asignará esta nueva directiva de retención a los buzones de usuario.
   
-1. En el EAC, vaya a **Directivas de retención de administración de cumplimiento** > .
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), vaya a **Administración del ciclo de vida** \> de datos **Exchange (heredado)** > **Directivas de retención**.
 
-2. En la página **Directivas de retención**, seleccione **Nuevo** ![nuevo icono.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)
+2. En la página **Directivas de retención** , seleccione **Nueva directiva**.
 
 3. En el cuadro **Nombre** , escriba un nombre para la nueva directiva de retención; por ejemplo, **Alpine House Archive and Deletion Policy**.
 
-4. En **Etiquetas de retención**, seleccione **Agregar** ![nuevo icono.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)
+4. Seleccione **+ Agregar etiqueta**.
 
-    Se muestra una lista de las etiquetas de retención de la organización. Tenga en cuenta que se muestran las etiquetas personalizadas que creó en el paso 2.
+    Se muestra una lista de las etiquetas de retención de su organización, que incluye las etiquetas personalizadas que creó en el paso 2.
 
-5. Agregue las 9 etiquetas de retención resaltadas en la captura de pantalla siguiente (estas etiquetas se describen con más detalle en la sección [Más información](#more-information) ). Para agregar una etiqueta de retención, selecciónela y, a continuación, seleccione **Agregar**.
+5. Agregue las 9 etiquetas de retención que se describen con más detalle en la sección [Más información](#more-information) :
+    
+    - **Alpine House 3 Year Move to Archive** : la etiqueta de directiva predeterminada de archivo personalizada creada en el paso 2 de estas instrucciones
+    - **Alpine House 7 Year Permanently Delete** : la etiqueta de eliminación personalizada creada en el paso 2 de estas instrucciones
+    - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
+    - **Elementos recuperables 14 días Mover al archivo**
+    - **Email no deseado**
+    - **Eliminar después de un mes**
+    - **Eliminar después de un año**
+    - **No eliminar nunca**
+    - **Mover al archivo después de 1 años en forma personal**
+    
+    Para agregar estas etiquetas de retención, selecciónelas y, a continuación, seleccione **Agregar**.
 
-    ![Agregue etiquetas de retención a la nueva directiva de retención.](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
-  
-    > [!TIP]
-    > Puede seleccionar varias etiquetas de retención manteniendo presionada la tecla **Ctrl** y, a continuación, haciendo clic en cada etiqueta. 
-  
-6. Después de agregar las etiquetas de retención, seleccione **Aceptar**.
+7. En la página **Configurar la directiva** , seleccione **Siguiente** para revisar y enviar la nueva directiva.
 
-7. En la página **Nueva directiva de retención** , seleccione **Guardar** para crear la nueva directiva.
+La nueva directiva de retención se muestra en la lista. Selecciónelo para mostrar las etiquetas de retención vinculadas a ella en el panel de detalles.
 
-    La nueva directiva de retención se muestra en la lista. Selecciónelo para mostrar las etiquetas de retención vinculadas a ella en el panel de detalles.
-
-    ![La nueva directiva de retención y la lista de etiquetas de retención vinculadas.](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
-  
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Paso 4: Asignar la nueva directiva de retención a buzones de usuario
 
-Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada una directiva de retención denominada Directiva de MRM predeterminada. En este paso, reemplazará esta directiva de retención asignando la nueva directiva de retención que creó en el paso 3 a los buzones de usuario de su organización. El reemplazo es necesario porque un buzón solo puede tener asignada una directiva de retención de MRM a la vez. En este paso se supone que asignará la nueva directiva a todos los buzones de correo de la organización.
+Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada una directiva de retención denominada Directiva de MRM predeterminada. En este paso, reemplazará esta directiva de retención asignando la nueva directiva de retención que creó en el paso 3 a los buzones de usuario de su organización. 
+
+El reemplazo es necesario porque un buzón solo puede tener asignada una directiva de retención de MRM a la vez. En este paso se supone que asignará la nueva directiva a todos los buzones de correo de la organización.
+
+Para seguir estos pasos, asegúrese de usar el [nuevo Centro de administración de Exchange](/exchange/features-in-new-eac), en lugar de la versión clásica.
   
-1. En el EAC, vaya a **Buzones de** **destinatarios** > .
+1. Inicie sesión en el nuevo [Centro de administración de Exchange (EAC)](https://admin.exchange.microsoft.com/) y vaya a **Buzones de destinatarios** > .
 
     Se muestra una lista de todos los buzones de correo de usuario de la organización.
 
-2. Seleccione todos los buzones haciendo clic en el primero de la lista, manteniendo presionada la tecla **Mayús** y, a continuación, haciendo clic en el último de la lista. 
+2. Seleccione todos los buzones seleccionando el cuadro Nombre para **mostrar**. 
 
-3. En el panel de detalles del EAC, en **Edición masiva**, seleccione **Más opciones**.
+3. Seleccione la opción **Directivas de buzón** .
 
-4. En **Directiva de retención**, seleccione **Actualizar**.
+4. En el panel flotante **Directivas de buzón** , en **Directiva de retención**, seleccione la directiva de retención que creó en el paso 3; por ejemplo, **Alpine House Archive y Retention Policy**.
 
-5. En la página Asignación masiva de directivas de **retención** , en la lista desplegable **Seleccionar la directiva de retención** , seleccione la directiva de retención que creó en el paso 3; por ejemplo, **Alpine House Archive y Retention Policy**.
+5. Seleccione **Guardar** para guardar la nueva asignación de directiva de retención.
 
-6. Seleccione **Guardar** para guardar la nueva asignación de directiva de retención.
+6. Para comprobar que la nueva directiva de retención se asignó a los buzones:
 
-7. Para comprobar que la nueva directiva de retención se asignó a los buzones:
+   1. Seleccione un buzón en la página **Buzones** .
 
-   1. Seleccione un buzón en la página **Buzones** y, a continuación, seleccione **Editar** ![edición](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
-
-   2. En la página de propiedades del buzón del usuario seleccionado, seleccione **Características del buzón**.
-
-   El nombre de la nueva directiva asignada al buzón se muestra en la lista desplegable **Directiva de retención** .
+   2. En la página de propiedades del buzón del usuario seleccionado, seleccione **Buzón**.
+    
+    El nombre de la nueva directiva asignada al buzón se muestra para la **directiva de retención**.
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Opcional) Paso 5: Ejecución del Asistente para carpetas administradas para aplicar la nueva configuración
 
@@ -280,7 +280,7 @@ Para ello, use Exchange Online PowerShell para actualizar el plan de buzón pred
     |Alpine House 7 Year Permanently Delete  <br/> |Elimina permanentemente los elementos del buzón principal o del buzón de archivo cuando tienen 7 años.  <br/> |Personalizado (consulte [Paso 2: Crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (eliminación); esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |
     |Alpine House elementos eliminados 5 años eliminar y permitir la recuperación  <br/> |Elimina elementos de la carpeta Elementos eliminados que tienen 5 años. Los usuarios pueden recuperar estos elementos durante un máximo de 14 días después de su eliminación.<sup>\*</sup> <br/> |Personalizado (consulte [Paso 2: Crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva de retención (elementos eliminados); esta etiqueta se aplica automáticamente a los elementos de la carpeta Elementos eliminados.  <br/> |
     |Elementos recuperables 14 días Mover al archivo  <br/> |Mueve los elementos que han estado en la carpeta Elementos recuperables durante 14 días a la carpeta Elementos recuperables del buzón de archivo.  <br/> |Integrado  <br/> |Etiqueta de directiva de retención (elementos recuperables); esta etiqueta se aplica automáticamente a los elementos de la carpeta Elementos recuperables.  <br/> |
-    |Correo electrónico no deseado  <br/> |Elimina permanentemente los elementos que han estado en la carpeta Correo no deseado durante 30 días. Los usuarios pueden recuperar estos elementos durante un máximo de 14 días después de su eliminación.<sup>\*</sup> <br/> |Integrado  <br/> |Etiqueta de directiva de retención (correo electrónico no deseado); esta etiqueta se aplica automáticamente a los elementos de la carpeta Correo no deseado.  <br/> |
+    |Email no deseado  <br/> |Elimina permanentemente los elementos que han estado en la carpeta de Email no deseado durante 30 días. Los usuarios pueden recuperar estos elementos durante un máximo de 14 días después de su eliminación.<sup>\*</sup> <br/> |Integrado  <br/> |Etiqueta de directiva de retención (Email no deseado); esta etiqueta se aplica automáticamente a los elementos de la carpeta Email no deseado.  <br/> |
     |Eliminar después de un mes  <br/> |Elimina permanentemente los elementos que tienen 30 días de antigüedad. Los usuarios pueden recuperar estos elementos durante un máximo de 14 días después de su eliminación.<sup>\*</sup> <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
     |Eliminar después de un año  <br/> |Elimina permanentemente los elementos que tienen 365 días de antigüedad. Los usuarios pueden recuperar estos elementos durante un máximo de 14 días después de su eliminación.<sup>\*</sup> <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
     |No eliminar nunca  <br/> |Esta etiqueta impide que una directiva de retención elimine los elementos.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
@@ -288,4 +288,4 @@ Para ello, use Exchange Online PowerShell para actualizar el plan de buzón pred
 
     > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la Web (anteriormente conocida como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Exchange Online PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: [Recuperar elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y [Cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- El uso de la etiqueta de retención **Mover a archivo de elementos recuperables durante 14 días** ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario se coloca en espera, lo que significa que nada se elimina permanentemente del buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables del buzón principal. Para obtener más información sobre esto y cómo evitarlo, consulte [Aumento de la cuota de elementos recuperables para buzones en espera](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+- El uso de la etiqueta de retención **Mover a archivo de elementos recuperables durante 14 días** ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario se coloca en espera o se aplica una directiva de retención que conserva los elementos. Ambas configuraciones impiden que los correos electrónicos se eliminen permanentemente del buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables del buzón principal. Para obtener más información sobre este escenario, consulte [Aumento de la cuota de elementos recuperables para buzones en espera](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

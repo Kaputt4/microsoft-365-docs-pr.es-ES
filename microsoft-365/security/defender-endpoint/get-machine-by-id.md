@@ -1,9 +1,8 @@
 ---
-title: Obtener api de máquina por id.
-description: Obtén información sobre cómo usar la API Obtener máquina por id. para recuperar una máquina por su id. de dispositivo o nombre de equipo en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, dispositivos, entidad, id
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+title: Obtención de la máquina por API de identificador
+description: Obtenga información sobre cómo usar la API Get machine by ID para recuperar una máquina por su identificador de dispositivo o nombre de equipo en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, devices, entity, id
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,54 +13,54 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e77074c94578c36373cb1aee208b48b097437451
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8b9186e37b102b9b27b0231167c119ce1a104048
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163823"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324153"
 ---
-# <a name="get-machine-by-id-api"></a>Obtener api de máquina por id.
+# <a name="get-machine-by-id-api"></a>Obtención de la máquina por API de identificador
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
-Recupera un equipo [específico por](machine.md) su identificador de dispositivo o el nombre del equipo.
+Recupera una [máquina](machine.md) específica por su identificador de dispositivo o nombre de equipo.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puedes obtener dispositivos vistos por última vez de acuerdo con la directiva de retención configurada.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Puede ver los dispositivos por última vez según la directiva de retención configurada.
+2. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
-Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa) | Machine.Read | 'Leer información de máquina'
-Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
+Application|Machine.Read.All|"Leer todos los perfiles de máquina"
+Application|Machine.ReadWrite.All|"Leer y escribir toda la información de la máquina"
+Delegado (cuenta profesional o educativa) | Machine.Read | "Leer información de la máquina"
+Delegado (cuenta profesional o educativa) | Machine.ReadWrite | "Leer y escribir información de la máquina"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -75,14 +74,14 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el dispositivo existe: 200 Aceptar con la [entidad de la](machine.md) máquina en el cuerpo.
-Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
+Si es correcto y el dispositivo existe: 200 Aceptar con la entidad [de máquina](machine.md) en el cuerpo.
+Si no se encontró la máquina con el identificador especificado: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 
@@ -107,7 +106,7 @@ Content-type: application/json
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11",
     "version": "1709",
     "osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",

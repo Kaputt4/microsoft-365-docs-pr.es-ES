@@ -1,9 +1,8 @@
 ---
 title: Enumerar software por recomendación
 description: Recupera una recomendación de seguridad relacionada con un software específico.
-keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad para software, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+keywords: apis, graph api, api admitidas, get, recomendación de seguridad, recomendación de seguridad para software, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67ac6f1bb77df74c3c44cac57624c14e20625e7e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 47006759937d8fb9130dc04c6669f064f4e4b9d7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166259"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342961"
 ---
 # <a name="list-software-by-recommendation"></a>Enumerar software por recomendación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,12 +42,12 @@ Recupera una recomendación de seguridad relacionada con un software específico
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -62,13 +61,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con el software asociado con las recomendaciones de seguridad en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con el software asociado a las recomendaciones de seguridad del cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -100,5 +99,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recomendación & seguridad de vulnerabilidades](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recomendación de seguridad de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

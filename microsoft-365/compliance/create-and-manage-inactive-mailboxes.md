@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cree y administre buzones inactivos que conserven el contenido de los buzones eliminados en Microsoft 365.
-ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4a4719d34b7e1097e43152644d3d0bedf53b293
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634629"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360312"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Los buzones inactivos le permiten conservar el correo electrónico de los antiguos empleados después de abandonar la organización y pueden acceder a ellos personas autorizadas a las que se les hayan concedido [permisos de exhibición](assign-ediscovery-permissions.md) de documentos electrónicos por motivos legales o de cumplimiento. Por ejemplo, los administradores, los responsables de cumplimiento y los administradores de registros que pueden usar búsqueda de contenido para buscar y exportar el contenido de un buzón inactivo. Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de su organización ni en otras listas.
 
@@ -38,7 +40,7 @@ Para obtener más información acerca de los buzones inactivos, consulte [Más i
 
 Hacer que un buzón esté inactivo requiere una suspensión en el buzón y, a continuación, eliminar el buzón o la cuenta de usuario correspondiente.
 
-Para que un buzón esté inactivo, se le debe asignar una licencia de Exchange Online Plan 2 (o una licencia de Exchange Online Plan 1 con una licencia de complemento de Archivado de Exchange Online) para que se pueda aplicar una suspensión al buzón antes de que se elimine. Una vez eliminada la cuenta de usuario, cualquier licencia de Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
+Para que un buzón esté inactivo, debe tener [una licencia correcta](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#email-archiving) para que se pueda aplicar una suspensión al buzón antes de que se elimine. Una vez eliminada la cuenta de usuario, cualquier licencia de Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
 
 Se recomienda usar la retención de Microsoft 365 para aplicar la suspensión en el buzón. Otros métodos se tratan en [Información sobre los buzones inactivos](inactive-mailboxes-in-office-365.md).
 
@@ -64,7 +66,7 @@ Para ver una lista de los buzones inactivos de la organización:
 
 1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de una Administrador global o una cuenta de administrador de cumplimiento de su organización.
 
-2. En el panel de navegación izquierdo, seleccione **Mostrar todo** y, a continuación, seleccione **Directivas de retención de administración del ciclo de** >  vida de **datos**.
+2. En el panel de navegación izquierdo, seleccione **Administración del ciclo de vida de** >  datos **Directivas de retención de** **Microsoft 365** > .
 
 3. Seleccione la opción **Buzón inactivo** :
 

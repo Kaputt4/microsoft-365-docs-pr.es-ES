@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
 ms.date: 09/16/2021
-ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
-ms.translationtype: HT
+ms.openlocfilehash: 74d2ff2a2df4ed24a0fb13512d1f320bf24d6b42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128709"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325735"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -59,7 +59,7 @@ La siguiente tabla muestra qué sucederá cuando expira una suscripción de pago
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>¿Qué pasa si cancelo una suscripción?
 
-Si cancela la suscripción antes de su fecha de finalización del período, la suscripción salta el estado de expirada y pasa directamente al estado de deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. Le recomendamos que [realice una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de la cancelación, aunque, como administrador, aún podrá tener acceso a los datos de la organización y hacer una copia de seguridad de ellos mientras la suscripción se encuentre en el estado de deshabilitada. Cualquier dato de cliente que deje fuera de esta copia puede eliminarse 90 días después de la cancelación y se eliminará a más tardar 180 días después de la cancelación.
+Si cancela la suscripción antes de su fecha de finalización del período, la suscripción salta el estado de expirada y pasa directamente al estado de deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. Le recomendamos que [realice una copia de seguridad de sus datos](move-users-different-subscription.md) antes de la cancelación, aunque, como administrador, aún podrá tener acceso a los datos de la organización y hacer una copia de seguridad de ellos mientras la suscripción se encuentre en el estado de deshabilitada. Cualquier dato de cliente que deje fuera de esta copia puede eliminarse 90 días después de la cancelación y se eliminará a más tardar 180 días después de la cancelación.
   
 Esto es lo que pasará con usted y sus usuarios si cancela una suscripción.
   
@@ -105,7 +105,7 @@ Esto es lo que puede ocurrir cuando su suscripción pase por cada estado.
 
 En este estado, los usuarios tienen acceso normal al portal de Microsoft 365, las aplicaciones de Office y servicios como el correo electrónico y SharePoint Online.
   
-Como administrador, tendrá acceso al centro de administración. No se preocupe, como administrador global o de facturación, puede [reactivar una suscripción](reactivate-your-subscription.md) y continuar usando Microsoft 365. Si no la reactiva, asegúrese de [realizar una copia de seguridad de sus datos](back-up-data-before-switching-plans.md).
+Como administrador, tendrá acceso al centro de administración. No se preocupe, como administrador global o de facturación, puede [reactivar una suscripción](reactivate-your-subscription.md) y continuar usando Microsoft 365. Si no la reactiva, asegúrese de [realizar una copia de seguridad de sus datos](move-users-different-subscription.md).
   
 ### <a name="state-disabled"></a>Estado: Deshabilitada
 
@@ -113,7 +113,7 @@ Como administrador, tendrá acceso al centro de administración. No se preocupe,
 
 En esta fase, el acceso se limita de forma significativa. Sus usuarios no podrán iniciar sesión ni tener acceso a los servicios como el correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura y con funcionalidad limitada y mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Aún podrá iniciar sesión y entrar en el centro de administración, pero no podrá asignar licencias a usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
 
-Como administrador global o de facturación, puede [reactivar la suscripción](reactivate-your-subscription.md) y continuar usando Microsoft 365 con todos los datos de cliente intactos. Si decide no volver a activar, [realice una copia de seguridad de los datos](back-up-data-before-switching-plans.md).
+Como administrador global o de facturación, puede [reactivar la suscripción](reactivate-your-subscription.md) y continuar usando Microsoft 365 con todos los datos de cliente intactos. Si decide no volver a activar, [realice una copia de seguridad de los datos](move-users-different-subscription.md).
 
 ### <a name="state-deleted"></a>Estado: Eliminada
   

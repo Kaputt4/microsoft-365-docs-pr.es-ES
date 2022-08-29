@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8c69e92390e6ed6515be6f399703124ece99cc39
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664026"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344467"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Paso 1. Planear la preparación de las operaciones Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ El SOC es la primera línea de defensa frente a eventos e incidentes de segurida
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>Centralización de la supervisión y el registro de los orígenes de seguridad de la organización
 
-Normalmente, la función principal del equipo de SOC es asegurarse de que todos los dispositivos de seguridad, como firewalls, sistemas de prevención de intrusiones, sistemas de prevención de pérdida de datos, sistemas de Administración de amenazas y vulnerabilidades y sistemas de identidad, funcionan correctamente y se supervisan. Los equipos de SOC trabajarán con las operaciones de red más amplias, como identidad, DevOps, nube, aplicación, ciencia de datos y otros equipos empresariales para garantizar que el análisis de la información de seguridad está centralizado y protegido. Además, el equipo de SOC es responsable de mantener los registros de los datos en formatos legibles y utilizables, lo que podría incluir el análisis y normalización de formatos dispares.
+Normalmente, la función principal del equipo de SOC es asegurarse de que todos los dispositivos de seguridad, como firewalls, sistemas de prevención de intrusiones, sistemas de prevención de pérdida de datos, sistemas de administración de vulnerabilidades y sistemas de identidad, funcionan correctamente y se supervisan. Los equipos de SOC trabajarán con las operaciones de red más amplias, como identidad, DevOps, nube, aplicación, ciencia de datos y otros equipos empresariales para garantizar que el análisis de la información de seguridad está centralizado y protegido. Además, el equipo de SOC es responsable de mantener los registros de los datos en formatos legibles y utilizables, lo que podría incluir el análisis y normalización de formatos dispares.
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>Establecimiento de la preparación operativa del equipo rojo, azul y púrpura
 

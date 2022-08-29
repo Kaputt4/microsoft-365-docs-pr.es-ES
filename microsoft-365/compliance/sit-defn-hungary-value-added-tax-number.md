@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad del tipo de información confidencial del número de impuestos agregado de Hungría.
-ms.openlocfilehash: 3ebc5921e0fd09fb98b1e86699aa3941bd214b96
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7523bc370177884d058faad4b6313552e8ba3964
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951039"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367409"
 ---
-# <a name="hungary-value-added-tax-number"></a>Número de impuestos sobre el valor añadido de Hungría
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
+# <a name="hungary-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Hungría
 
 ## <a name="format"></a>Formato
 
@@ -54,14 +46,14 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_hungarian_value_added_tax_number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_hungarian_value_added_tax_number` .
+- La función `Func_hungarian_value_added_tax_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_hungarian_value_added_tax_number`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_hungarian_value_added_tax_number` busca contenido que coincida con el patrón.
+- La función `Func_hungarian_value_added_tax_number` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->

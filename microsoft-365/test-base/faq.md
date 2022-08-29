@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: c7fd01b95d461332baaf4eac90aee4715da3e55e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5d84ea6e803fba5d5f355fecaa4f6ac6776d3f60
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953038"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315479"
 ---
 # <a name="test-base-faq"></a>Preguntas más frecuentes sobre la base de pruebas
 
@@ -37,7 +37,7 @@ Consulte la guía del usuario de incorporación para obtener más información o
 
 Los paquetes creados para Test Base tendrán los siguientes scripts de prueba: instalar, iniciar, cerrar y, opcionalmente, el script de desinstalación.
 
-Las pruebas integradas (OOB) proporcionan telemetría estandarizada en la aplicación para compararlas entre Windows compilaciones.
+Las pruebas integradas (OOB) proporcionan telemetría estandarizada en la aplicación para compararlas entre compilaciones de Windows.
 
 **P: ¿Podemos enviar pruebas fuera de las pruebas integradas (instalar, iniciar, cerrar, desinstalar scripts de prueba)?**
 
@@ -86,7 +86,7 @@ Mientras que para las pruebas funcionales, puede especificar si se requiere un r
 
 **P: ¿Qué versiones de Windows admite?**
 
-**Un:** Actualmente se admiten clientes Windows 10, Windows Server 2016, Windows Server 2016 versión Core, Windows Server 2019 y Windows Server 2019 Core.
+**Un:** Actualmente se admiten Windows 10 clientes, Windows Server 2016, Windows Server 2016 Core, Windows Server 2019 y Windows Server 2019 Core.
 
 **P: ¿Cuál es la diferencia entre las pruebas de actualización de seguridad y las pruebas de actualización de características?**
 
@@ -116,7 +116,7 @@ Siempre trabajamos estrechamente con nuestros clientes en la corrección conjunt
 
 **Un:** Actualmente no se proporciona compatibilidad con servidores locales. Sin embargo, si el servidor expone el punto de conexión HTTP, podemos conectarnos a él a través de Internet.
 
-**P: Quién hospeda las máquinas virtuales?**
+**P: ¿Quién hospeda las máquinas virtuales?**
 
 **Un:** Microsoft aprovisiona la máquina virtual para este servicio, tomando la carga de hacerlo desde el cliente.
 

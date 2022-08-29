@@ -1,7 +1,7 @@
 ---
-title: OBTENER API de objetos de investigación
-description: Usar esta API para crear llamadas relacionadas con obtener el objeto Investigation
-keywords: apis, api de gráfico, api admitidas, objeto Investigation
+title: Obtención de la API del objeto Investigation
+description: Uso de esta API para crear llamadas relacionadas con la obtención del objeto Investigation
+keywords: apis, graph api, api admitidas, objeto Investigation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fc4fea909fcaa2ebfd755d47a7282419c2860b9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d086ffb524038ea7a487508d1fbe387c859220b2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282819"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326593"
 ---
-# <a name="get-investigation-api"></a>Obtener API de investigación
+# <a name="get-investigation-api"></a>Get Investigation API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "61282819"
 
 
 ## <a name="api-description"></a>Descripción de la API
-Recupera investigación [específica por](investigation.md) su identificador.
-<br> Id. puede ser el identificador de investigación o el identificador de alerta desencadenante de la investigación.
+Recupera [una investigación](investigation.md) específica por su identificador.
+<br> El identificador puede ser el identificador de investigación o el identificador de alerta desencadenante de la investigación.
 
 
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Alert.Read.All|'Leer todas las alertas'
-Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Application|Alert.Read.All|"Leer todas las alertas"
+Application|Alert.ReadWrite.All|"Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.Read | "Leer alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -75,11 +75,11 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Investigations.](investigation.md)
+Si se ejecuta correctamente, este método devuelve el código de respuesta 200, Ok con una entidad [Investigations](investigation.md) .
 

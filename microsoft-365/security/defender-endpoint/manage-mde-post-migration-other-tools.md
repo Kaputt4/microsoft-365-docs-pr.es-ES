@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 4003f2a41674ec6dbaa875235ccc12412d23ddba
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607375"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327187"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administración de Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe
 
@@ -55,7 +55,7 @@ Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la pr
 |**Configuración de reglas de reducción de superficie expuesta a ataques** con PowerShell <br/><br/> *Puede usar PowerShell para excluir archivos y carpetas de las reglas de reducción de la superficie expuesta a ataques.*|[Personalización de reglas de reducción de superficie expuesta a ataques: use PowerShell para excluir archivos & carpetas](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> Además, consulte la [herramienta gráfica de interfaz de usuario de António Vasconcelo para establecer reglas de reducción de superficie expuesta a ataques con PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI).|
 |**Habilitación de la protección de red** con PowerShell <br/><br/> *Puede usar PowerShell para habilitar la protección de red.*|[Activar la protección de red con PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**Configuración del acceso controlado a carpetas** para protegerse frente a ransomware <br/><br/> *[El acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders) también se conoce como protección contra antiransomware.*|[Habilitación del acceso controlado a carpetas con PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|**Configurar Firewall de Microsoft Defender** para bloquear el tráfico de red no autorizado que fluye dentro o fuera de los dispositivos de la organización|[Firewall de Microsoft Defender con Advanced Security Administration mediante Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|**Configuración del firewall de Microsoft Defender** para bloquear el tráfico de red no autorizado que entra o sale de los dispositivos de la organización|[Firewall de Microsoft Defender con administración de seguridad avanzada mediante Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |**Configuración del cifrado y BitLocker** para proteger la información sobre los dispositivos de la organización que ejecutan Windows|[Guía de referencia de PowerShell de BitLocker](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Configuración de Microsoft Defender para punto de conexión con Instrumental de administración de Windows (WMI)
@@ -84,6 +84,6 @@ También puede configurar si y qué características pueden ver los usuarios fin
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel de operaciones de seguridad de Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Administración de Microsoft Defender para punto de conexión con Intune](manage-mde-post-migration-intune.md)

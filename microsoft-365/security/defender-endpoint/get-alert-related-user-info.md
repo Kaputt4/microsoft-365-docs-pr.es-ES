@@ -1,7 +1,7 @@
 ---
 title: Obtener información de usuario relacionada con alertas
-description: Obtenga información sobre cómo usar la API Obtener información del usuario relacionada con alertas para recuperar el usuario relacionado con una alerta específica en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api compatibles, get, alert, information, related, user
+description: Obtenga información sobre cómo usar la API De obtención de información de usuario relacionada con alertas para recuperar el usuario relacionado con una alerta específica en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, alert, information, related, user
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bbf417139a1bfb64f528df97d4d8d0ce9cbb2045
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 7650be579cc3276308044754be6720e6c6dcf0f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284486"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326109"
 ---
-# <a name="get-alert-related-user-information-api"></a>Obtener api de información de usuario relacionada con alertas
+# <a name="get-alert-related-user-information-api"></a>Obtención de la API de información de usuario relacionada con alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,23 +44,23 @@ Recupera el usuario relacionado con una alerta específica.
 
 ## <a name="limitations"></a>Limitaciones
 
-- Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
-- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Puede consultar las alertas actualizadas por última vez según el período de retención configurado.
+- Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Application|User.Read.All|'Leer perfiles de usuario'
-Delegado (cuenta profesional o educativa)|User.Read.All|'Leer perfiles de usuario'
+Application|User.Read.All|"Leer perfiles de usuario"
+Delegado (cuenta profesional o educativa)|User.Read.All|"Leer perfiles de usuario"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -72,15 +72,15 @@ GET /api/alerts/{id}/user
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y alerta y existe un usuario: 200 Aceptar con el usuario en el cuerpo. Si no se encuentra la alerta o el usuario: 404 No encontrado.
+Si se ejecuta correctamente y la alerta y existe un usuario: 200 Aceptar con el usuario en el cuerpo. Si no se encuentra la alerta o el usuario: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

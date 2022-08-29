@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607463"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327165"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administración de Microsoft Defender para punto de conexión con Intune
 
@@ -70,7 +70,7 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |**Configuración del acceso controlado a carpetas** para protegerse frente a ransomware <br/><br/> *[El acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders) también se conoce como protección contra antiransomware.*|[Endpoint Protection: acceso controlado a carpetas](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Habilitar el acceso controlado a carpetas en Intune](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)|
 |**Configurar la protección contra vulnerabilidades de seguridad** para proteger los dispositivos de la organización frente a malware que usa vulnerabilidades de seguridad para propagar e infectar otros dispositivos <br/><br/> *[Protección contra vulnerabilidades de seguridad](/microsoft-365/security/defender-endpoint/exploit-protection) también se conoce como Protección contra vulnerabilidades de seguridad.*|[Endpoint Protection: Protección contra vulnerabilidades de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/> [Habilitación de la protección contra vulnerabilidades de seguridad en Intune](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune)|
 |**Configure SmartScreen de Microsoft Defender** para protegerse frente a sitios y archivos malintencionados en Internet. <br/><br/> *Microsoft Edge debe instalarse en los dispositivos de la organización. Para la protección en los exploradores Google Chrome y FireFox, configure la protección contra vulnerabilidades de seguridad.*|[SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/> [Restricciones de dispositivos: SmartScreen de Microsoft Defender](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen) <br/><br/> [Configuración de directiva para administrar SmartScreen en Intune](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)|
-|**Configurar Firewall de Microsoft Defender** para bloquear el tráfico de red no autorizado que fluye dentro o fuera de los dispositivos de la organización|[Endpoint Protection: Firewall de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Firewall de Microsoft Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
+|**Configuración del firewall de Microsoft Defender** para bloquear el tráfico de red no autorizado que entra o sale de los dispositivos de la organización|[Endpoint protection: Microsoft Defender Firewall](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Firewall de Microsoft Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |**Configuración del cifrado y BitLocker** para proteger la información sobre los dispositivos de la organización que ejecutan Windows|[Endpoint Protection: Cifrado de Windows](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <br/><br/> [BitLocker para dispositivos Windows 10 y Windows 11](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |**Configuración de Credential Guard de Microsoft Defender** para protegerse frente a ataques de robo de credenciales|Para obtener Windows 10, Windows 11, Windows Server 2016 y Windows Server 2019 y Windows Server 2022, consulte [Endpoint Protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/> Para Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 y Windows Server 2012 R2, vea [Mitigación de ataques de paso a hash (PtH) y otros robos de credenciales, versiones 1 y 2](https://www.microsoft.com/download/details.aspx?id=36036).|
 |**Configuración del control de aplicaciones de Microsoft Defender** para elegir si auditar o confiar en aplicaciones en los dispositivos de la organización <br/><br/> *El control de aplicaciones de Microsoft Defender también se conoce como [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Implementación de directivas de Control de aplicaciones de Microsoft Defender mediante Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Endpoint Protection: Control de aplicaciones de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [CSP de AppLocker](/windows/client-management/mdm/applocker-csp)|
@@ -85,5 +85,5 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel de operaciones de seguridad del portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

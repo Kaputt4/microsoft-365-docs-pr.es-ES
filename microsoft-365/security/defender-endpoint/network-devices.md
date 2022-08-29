@@ -1,5 +1,5 @@
 ---
-title: Detección y administración de vulnerabilidades de dispositivos de red
+title: Detección de dispositivos de red y administración de vulnerabilidades
 description: Las recomendaciones de seguridad y la detección de vulnerabilidades ahora están disponibles para los sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls.
 keywords: dispositivos de red, detección de vulnerabilidades de dispositivos de red, sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls
 ms.prod: m365-security
@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1ff2bb5e7381f09d1a6bf448c18096f0f9263fe0
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438386"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323911"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Detección y administración de vulnerabilidades de dispositivos de red
+# <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Defender](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -40,7 +40,7 @@ ms.locfileid: "65438386"
 
 Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y Microsoft 365 Defender consolas.
 
-Se usará un dispositivo Microsoft Defender para punto de conexión designado en cada segmento de red para realizar exámenes autenticados periódicos de dispositivos de red preconfigurados. Una vez detectado, las capacidades de Administración de amenazas y vulnerabilidades de Defender para punto de conexión proporcionan flujos de trabajo integrados para proteger los conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace de VPN.
+Se usará un dispositivo Microsoft Defender para punto de conexión designado en cada segmento de red para realizar exámenes autenticados periódicos de dispositivos de red preconfigurados. Una vez detectado, las funcionalidades de administración de vulnerabilidades de Defender para punto de conexión proporcionan flujos de trabajo integrados para proteger los conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace de VPN.
 
 Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.
 
@@ -82,7 +82,7 @@ El primer paso consiste en seleccionar un dispositivo que realizará los exámen
 
 5. Obtenga las direcciones IP de los dispositivos de red que se van a examinar (o las subredes donde se implementan estos dispositivos).
 
-6. Obtenga las credenciales SNMP de los dispositivos de red (por ejemplo: Community String, noAuthNoPriv, authNoPriv, authPriv). Se le pedirá que proporcione las credenciales al configurar un nuevo trabajo de evaluación.
+6. Obtenga las credenciales snmp de los dispositivos de red (por ejemplo: Community String, noAuthNoPriv, authNoPriv, authPriv). Se le pedirá que proporcione las credenciales al configurar un nuevo trabajo de evaluación.
 
 7. Configuración del cliente proxy: no se requiere ninguna configuración adicional que no sea los requisitos de proxy de dispositivo de Defender para punto de conexión.
 
@@ -98,12 +98,12 @@ El primer paso consiste en seleccionar un dispositivo que realizará los exámen
 
 ## <a name="permissions"></a>Permisos
 
-Para configurar los trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **roles de Configuración** \> **.** Para obtener más información, consulte [Creación y administración de roles para el control de acceso basado en rol](user-roles.md).
+Para configurar los trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **Roles de configuración**\>. Para obtener más información, vea [Crear y administrar roles para el control de acceso basado en roles](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalación del analizador de red
 
-1. Vaya a **Microsoft 365 trabajos de evaluación de puntos** de **conexión** \> **de seguridad** \> Configuración \> **(en** **Evaluaciones de red**).
-    1. En el portal de Microsoft 365 Defender, vaya a Configuración > página Trabajos de evaluación.
+1. Vaya a Trabajos de **evaluación** de puntos de **conexión** \> de **configuración** \> de seguridad \> de **Microsoft 365** (en **Evaluaciones de red**).
+    1. En el portal de Microsoft 365 Defender, vaya a la página Configuración > Trabajos de evaluación.
 
 2. Descargue el escáner de red e instálelo en el dispositivo de evaluación de Defender for Endpoint designado.
 
@@ -189,7 +189,7 @@ Si sigue sin obtener resultados después de 5 minutos, reinicie el servicio.
 
 Compruebe que el escáner se ejecuta correctamente. A continuación, vaya a la definición del examen y seleccione "Ejecutar prueba". Compruebe qué mensajes de error se devuelven desde las direcciones IP pertinentes.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Permiso de usuario necesario Administración de amenazas y vulnerabilidades
+### <a name="required-defender-vulnerability-management-user-permission"></a>Permiso de usuario requerido de Administración de vulnerabilidades de Defender
 
 El registro terminó con un error: "Parece que no tiene permisos suficientes para agregar un nuevo agente. El permiso necesario es "Administrar la configuración de seguridad en Defender".
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprenda cómo Microsoft Purview Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para abordar los riesgos y mejorar su posición de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a33cbe9c4ea5b12ab0fec40068ba7dcd2f561e4e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 177f3eb5a16da6541c2331d68f4d2a3b8cf215ac
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635685"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357408"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de la puntuación de cumplimiento
 
@@ -33,15 +33,11 @@ ms.locfileid: "66635685"
 
 El panel administrador de cumplimiento muestra la puntuación de cumplimiento general. Esta puntuación mide el progreso al completar las acciones de mejora recomendadas dentro de los controles. La puntuación puede ayudarle a comprender la posición de cumplimiento actual. También puede ayudarle a priorizar las acciones en función de su potencial para reducir el riesgo.
 
-Un valor de puntuación se asigna en tres niveles:
+Se asigna un valor de puntuación en estos niveles:
 
-1. **Puntuación de acción de mejora**: cada acción tiene un impacto diferente en la puntuación en función del riesgo potencial implicado
+1. **Acción de mejora**: cada acción tiene un impacto diferente en la puntuación en función del riesgo potencial implicado. Consulte [Tipos y puntos de acción](#action-types-and-points) a continuación para obtener más información.
 
-2. **Puntuación de control**: esta puntuación es la suma de los puntos obtenidos al completar acciones de mejora dentro del control. Esta suma se aplica en su totalidad a la puntuación de cumplimiento general cuando el control cumple las dos condiciones siguientes:
-    - **El estado de implementación** es igual a implementación **implementada** o **alternativa**, y
-    - **El resultado de la prueba** es igual a **Pasado**.
-
-3. **Puntuación de evaluación**: esta puntuación es la suma de las puntuaciones de control. Se calcula mediante puntuaciones de acción. Cada acción de Microsoft y cada acción de mejora administrada por su organización se cuentan una vez, independientemente de la frecuencia con la que se haga referencia a ella en un control.
+2. **Evaluación**: esta puntuación se calcula mediante puntuaciones de acción de mejora. Cada acción de Microsoft y cada acción de mejora administrada por su organización se cuentan una vez, independientemente de la frecuencia con la que se haga referencia a ella en un control.
 
 La puntuación de cumplimiento general se calcula mediante puntuaciones de acción, donde cada acción de Microsoft se cuenta una vez, cada acción técnica que administra se cuenta una vez y cada acción no técnica que administra se cuenta una vez por grupo. Esta lógica está diseñada para proporcionar la contabilidad más precisa de cómo se implementan y prueban las acciones en su organización. Es posible que observe que esto puede hacer que la puntuación de cumplimiento general difiera del promedio de las puntuaciones de evaluación. Obtenga más información a continuación sobre [cómo se puntúan las acciones](#action-types-and-points).
 
@@ -67,8 +63,8 @@ Obtenga más información sobre [la puntuación segura y cómo funciona](../secu
 
 El Administrador de cumplimiento realiza un seguimiento de dos tipos de acciones:
 
-1. **Acciones de mejora**: acciones que la organización administra.
-2. **Acciones de Microsoft**: acciones que administra Microsoft.
+1. **Acciones de mejora**: administradas por su organización
+2. **Acciones de Microsoft**: administradas por Microsoft
 
 Ambos tipos de acciones tienen puntos que cuentan para la puntuación general cuando se completan.
 
@@ -114,9 +110,9 @@ Cada acción tiene un valor asignado en el Administrador de cumplimiento en func
 |:-----|:-----|
 | Obligatorio preventivo | 27 |
 | Discrecional preventiva | 9  |
-| Detective obligatorio | 3  |
-| Detective discrecional | 1  |
-| Correctiva obligatoria | 3  |
-| Discreción correctiva | 1  |
+| Detective obligatorio | 3 |
+| Detective discrecional | 1 |
+| Correctiva obligatoria | 3 |
+| Discreción correctiva | 1 |
   
 ![Valores de punto de acción del Administrador de cumplimiento.](../media/compliance-score-action-scoring.png "Valores de punto de acción del Administrador de cumplimiento")

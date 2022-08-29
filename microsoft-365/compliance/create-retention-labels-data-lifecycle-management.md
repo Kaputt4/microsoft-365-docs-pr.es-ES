@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear etiquetas de retención para excepciones a las directivas de retención para la administración del ciclo de vida de los datos, de modo que pueda conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: ca78c4df6decaf71bfddd899ac13afaa9ada5df6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632583"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336230"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Crear etiquetas de retención para excepciones a las directivas de retención
 
@@ -51,7 +51,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ## <a name="how-to-create-retention-labels-for-data-lifecycle-management"></a>Creación de etiquetas de retención para la administración del ciclo de vida de los datos
 
-1. En el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), vaya a: pestaña **Soluciones** > **Administración del ciclo de vida de los datos** > **Etiquetas** > + **Crear una etiqueta**
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), vaya a: Administración **del ciclo de vida** >  de los datos **de soluciones** >  pestaña **Etiquetas** de **Microsoft 365** >  > + **Crear una etiqueta**
     
     ¿No ve inmediatamente la solución **Administración del ciclo de vida de los datos**? Primero seleccione **Mostrar todo**. 
 

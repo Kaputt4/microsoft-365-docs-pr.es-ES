@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en el Administrador de cumplimiento de Microsoft Purview para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 187820e789f376b990414bb7208b1eaa004a4be2
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633573"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357342"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Compilación y administración de evaluaciones en el Administrador de cumplimiento
 
@@ -212,7 +212,7 @@ Después de seleccionar **Revisar actualización** en la página de detalles de 
 - Información general que explica la actualización
 - Detalles específicos sobre los cambios, incluido el impacto en la puntuación de cumplimiento, la cantidad de progreso hacia la finalización de la evaluación y el número específico de cambios en las acciones y controles de mejora.
 
-Al seleccionar el vínculo **Plantilla actualizada** , se descargará un archivo de Excel que contiene datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el vínculo **Plantilla actual** se descarga un archivo de la plantilla existente sin los cambios.
+Al seleccionar el comando **Plantilla actualizada** , se descargará un archivo de Excel que contiene datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el comando **Plantilla actual** se descarga un archivo de la plantilla existente sin las actualizaciones.
 
 Para aceptar la actualización y realizar los cambios en la evaluación, seleccione **Aceptar actualización**. Los cambios aceptados son permanentes.
 

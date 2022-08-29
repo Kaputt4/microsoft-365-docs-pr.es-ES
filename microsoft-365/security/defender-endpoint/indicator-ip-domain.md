@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: e7858fb525bbe55859897764f930251c2159e4e5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301296"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326470"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -66,13 +66,13 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 > Si hay directivas de indicadores de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva `https://support.microsoft.com/office` de indicador de dirección URL tiene prioridad sobre la directiva `https://support.microsoft.com`de indicador de dirección URL .
 
 > [!NOTE]
-> Para todos los demás procesos, los escenarios de protección web aprovechan la protección de red para la inspección y el cumplimiento:
+> En el caso de procesos distintos de Microsoft Edge e Internet Explorer, los escenarios de protección web aprovechan la protección de red para la inspección y el cumplimiento:
 >
-> - Ip es compatible con los tres protocolos
-> - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP)
+> - Ip es compatible con los tres protocolos (TCP, HTTP y HTTPS (TLS))
+> - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP) en indicadores personalizados
 > - Las direcciones URL cifradas (ruta de acceso completa) solo se pueden bloquear en exploradores de primera entidad (Internet Explorer, Edge)
-> - Las direcciones URL cifradas (solo FQDN) se pueden bloquear fuera de los exploradores de primera entidad (Internet Explorer, Edge)
-> - Los bloques de ruta de acceso de dirección URL completa se pueden aplicar en el nivel de dominio y todas las direcciones URL sin cifrar
+> - Las direcciones URL cifradas (solo FQDN) se pueden bloquear en exploradores de terceros (es decir, distintas de Internet Explorer, Edge)
+> - Se pueden aplicar bloques de ruta de acceso de dirección URL completa para direcciones URL sin cifrar
 >
 > Puede haber hasta 2 horas de latencia (normalmente menos) entre el momento en que se realiza la acción y la dirección URL y la dirección IP bloqueadas.
 

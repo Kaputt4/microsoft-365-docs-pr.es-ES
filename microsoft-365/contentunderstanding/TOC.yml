@@ -70,6 +70,8 @@
   items:
     - name: Crear documentos mediante el ensamble de contenidos
       href: content-assembly.md
+    - name: Generación de documentos mediante Power Automate
+      href: automate-document-generation.md
 - name: Búsqueda de metadatos
   items:
     - name: Búsqueda de metadatos en bibliotecas de documentos

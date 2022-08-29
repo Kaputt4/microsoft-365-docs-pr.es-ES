@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de seguro médico europeo de Finlandia.
-ms.openlocfilehash: 200b580804d60ef3adfaeead21e7c3ab8d51f139
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 799f664f03f91fa35c01cc87701046faddab5dde
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951068"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367387"
 ---
-# <a name="finland-european-health-insurance-number"></a>Número de seguro médico europeo de Finlandia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
+# <a name="finland-european-health-insurance-number"></a>Número de la tarjeta sanitaria europea de Finlandia
 
 ## <a name="format"></a>Formato
 
@@ -54,10 +46,10 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - El regex `Regex_Finland_European_Health_Insurance_Number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keyword_Finland_European_Health_Insurance_Number` .
+- Se encuentra una palabra clave de `Keyword_Finland_European_Health_Insurance_Number`.
 
 ```xml
       <!-- Finland European Health Insurance Number -->

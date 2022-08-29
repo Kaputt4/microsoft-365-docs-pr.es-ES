@@ -1,7 +1,7 @@
 ---
-title: OBTENER API de estadísticas de archivos
-description: Obtenga información sobre cómo usar la API Obtener estadísticas de archivos para recuperar las estadísticas del archivo especificado en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, file, statistics
+title: Obtención de la API de estadísticas de archivos
+description: Obtenga información sobre cómo usar la API Get file statistics para recuperar las estadísticas del archivo determinado en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, file, statistics
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3a7880b9a148ca971be8fb588d4823e85c30db99
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284210"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325443"
 ---
-# <a name="get-file-statistics-api"></a>OBTENER API de estadísticas de archivos
+# <a name="get-file-statistics-api"></a>Obtención de la API de estadísticas de archivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,26 +39,26 @@ ms.locfileid: "61284210"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Recupera las estadísticas del archivo dado.
+Recupera las estadísticas del archivo especificado.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
-2. El valor máximo para `lookbackhours` es 720 Horas(30 días).
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. El valor máximo de `lookbackhours` es 720 Horas (30 días).
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|File.Read.All|'Leer perfiles de archivo'
-Delegado (cuenta profesional o educativa)|File.Read.All|'Leer perfiles de archivo'
+Application|File.Read.All|"Leer perfiles de archivo"
+Delegado (cuenta profesional o educativa)|File.Read.All|"Leer perfiles de archivo"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -72,19 +72,19 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
+## <a name="request-uri-parameters"></a>Parámetros de URI de solicitud
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
+lookBackHours|Int32|Define las horas que se buscan para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el archivo existe: 200 Aceptar con datos estadísticos en el cuerpo. Si el archivo no existe: 404 No encontrado.
+Si es correcto y el archivo existe: 200 Correcto con datos estadísticos en el cuerpo. Si el archivo no existe: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

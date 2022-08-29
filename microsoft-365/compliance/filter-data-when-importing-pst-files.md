@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el servicio de importación de Microsoft 365 al importar archivos PST a Microsoft 365.
-ms.openlocfilehash: 1a9483d77ff575b643d4ab9717d286b608bea35d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b18db6e684df522e863219cac5c7dc5f0ec3179e
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640080"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360356"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use la nueva característica de importación inteligente en el servicio de importación de Microsoft 365 para filtrar los elementos de los archivos PST que realmente se importan a los buzones de destino. Aquí se muestra cómo funciona:
   
@@ -68,7 +70,7 @@ Después de crear un trabajo de importación PST, siga estos pasos para filtrar 
   
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de una cuenta de administrador en su organización.
     
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de los datos** \> **Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** \> datos **Importación de Microsoft 365**\>.
     
     Los trabajos de importación de su organización aparecen en la pestaña **Importar** . El valor **Análisis completado** de la columna **Estado** indica los trabajos de importación que ha analizado Microsoft 365 y que están listos para importar.
     
@@ -107,7 +109,7 @@ Después de crear un trabajo de importación PST, siga estos pasos para filtrar 
       - **Usuarios** : puede excluir los mensajes enviados o recibidos por personas específicas. Para excluir a las personas que aparecen en el campo Desde: , En: o en el campo Cc: de mensajes, haga clic en **Excluir usuarios** junto a ese tipo de destinatario. Escriba la dirección de correo electrónico (dirección SMTP) de la persona y haga clic en **el icono Agregar**![nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) para agregarlos a la lista de usuarios excluidos para ese tipo de destinatario y, a continuación, haga clic en **Guardar** para guardar la lista de usuarios excluidos. 
   
         > [!NOTE]
-        > Microsoft 365 no muestra información de datos que resulta de la configuración del filtro **Personas** . Sin embargo, si establece este filtro para excluir los mensajes enviados o recibidos por personas específicas, esos mensajes se excluirán durante el proceso de importación real. 
+        > Microsoft 365 no muestra información de datos que resulte de establecer el filtro **de Personas**. Sin embargo, si establece este filtro para excluir los mensajes enviados o recibidos por personas específicas, esos mensajes se excluirán durante el proceso de importación real. 
   
     c. Haga clic en **Aplicar** en la página desplegable **Más opciones de filtrado** para guardar la configuración del filtro. 
   
@@ -141,10 +143,10 @@ Después de crear un trabajo de importación PST, siga estos pasos para filtrar 
     |:-----|:-----|
     |IPM.Activity  <br/> |Entradas del Diario  <br/> |
     |IPM.Document  <br/> |Documentos y archivos (no adjuntos a un mensaje de correo electrónico)  <br/> |
-    |IPM. Archivo  <br/> |(igual que IPM. Documento)  <br/> |
+    |Ipm. Archivo  <br/> |(igual que IPM. Documento)  <br/> |
     |IPM. Note.IMC.Notification  <br/> |Informes enviados por Internet Mail Connect, que es la puerta de enlace de Exchange Server a Internet  <br/> |
-    |IPM. Note.Microsoft.Fax  <br/> |Mensajes de fax  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Mensajes de autorrereply fuera de la oficina  <br/> |
+    |Ipm. Note.Microsoft.Fax  <br/> |Mensajes de fax  <br/> |
+    |Ipm. Note.Rules.Oof.Template.Microsoft  <br/> |Mensajes de autorrereply fuera de la oficina  <br/> |
     |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Respuestas enviadas por una regla de bandeja de entrada  <br/> |
     |IPM.OLE.Class  <br/> |Excepciones para una serie periódica  <br/> |
     |IPM. Recall.Report  <br/> |Informes de recuperación de mensajes  <br/> |

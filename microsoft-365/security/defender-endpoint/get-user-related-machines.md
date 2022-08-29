@@ -1,7 +1,7 @@
 ---
-title: Obtener api de máquinas relacionadas con el usuario
-description: Obtenga información sobre cómo usar la API Obtener máquinas relacionadas con el usuario para recuperar una colección de dispositivos relacionados con un identificador de usuario en Microsoft Defender para endpoint.
-keywords: api, api de gráfico, api admitidas, obtener, usuario, alertas relacionadas con el usuario
+title: Obtención de la API de máquinas relacionadas con el usuario
+description: Obtenga información sobre cómo usar la API Obtener máquinas relacionadas con el usuario para recuperar una colección de dispositivos relacionados con un identificador de usuario en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, user, user related alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5dd8cbd36fdac4aa3d0661a9b418a30ec2bae44f
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7cb4091f86383e7751c8837cbecafe895f22e5bc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369869"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327583"
 ---
-# <a name="get-user-related-machines-api"></a>Obtener api de máquinas relacionadas con el usuario
+# <a name="get-user-related-machines-api"></a>Obtención de la API de máquinas relacionadas con el usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "61369869"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -43,24 +43,24 @@ Recupera una colección de dispositivos relacionados con un identificador de usu
 
 ## <a name="limitations"></a>Limitaciones
 
-Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación |Machine.Read.All|'Leer todos los perfiles de máquina'
-Aplicación |Machine.ReadWrite.All |'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa) | Machine.Read | 'Leer información de máquina'
-Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
+Application |Machine.Read.All|"Leer todos los perfiles de máquina"
+Application |Machine.ReadWrite.All |"Leer y escribir toda la información de la máquina"
+Delegado (cuenta profesional o educativa) | Machine.Read | "Leer información de la máquina"
+Delegado (cuenta profesional o educativa) | Machine.ReadWrite | "Leer y escribir información de la máquina"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos". Para obtener más información, vea [Create and manage roles](user-roles.md)
-> - La respuesta incluirá solo los dispositivos a los que el usuario pueda tener acceso, en función de la configuración del grupo de dispositivos. Para obtener más información, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos". Para obtener más información, consulte [Creación y administración de roles](user-roles.md).
+> - La respuesta incluirá solo los dispositivos a los que el usuario pueda acceder, en función de la configuración del grupo de dispositivos. Para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -68,21 +68,21 @@ Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir
 GET /api/users/{id}/machines
 ```
 
-**El identificador no es el UPN completo, sino solo el nombre de usuario. (por ejemplo, para recuperar máquinas para user1@contoso.com usar /api/users/user1/machines)**
+**El identificador no es el UPN completo, sino solo el nombre de usuario. (por ejemplo, para recuperar máquinas para user1@contoso.com use /api/users/user1/machines)**
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el usuario existe: 200 Aceptar con la lista de [entidades](machine.md) de máquina en el cuerpo. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
+Si es correcto y el usuario existe: 200 Aceptar con la lista de entidades de [máquina](machine.md) en el cuerpo. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

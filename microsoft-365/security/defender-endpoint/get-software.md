@@ -1,7 +1,7 @@
 ---
 title: Enumerar software
 description: Recupera una lista de inventario de software
-keywords: apis, api de gráficos, api compatibles, get, list, file, information, software inventory, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
+keywords: api, graph api, api admitidas, get, list, file, information, software inventory, threat & vulnerability management api, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f2db10e24212808253e197c562468c03f3ae293
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e58abcb2f7e3f7432d3c855422d07182020596f9
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300903"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342925"
 ---
-# <a name="list-software-inventory-api"></a>Enumerar API de inventario de software
+# <a name="list-software-inventory-api"></a>Api de inventario de software de lista
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,19 +40,19 @@ ms.locfileid: "61300903"
 Recupera el inventario de software de la organización.
 <br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
 <br>Operadores compatibles con OData:
-<br>```$filter``` on:  ```id``` ```name``` , y ```vendor``` properties.
+<br>```$filter``` on:  ```id```, ```name```y ```vendor``` propiedades.
 <br>```$top``` con un valor máximo de 10 000.
 <br>```$skip```.
-<br>Vea ejemplos en [consultas de OData con Microsoft Defender para Endpoint](exposed-apis-odata-samples.md).
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -64,15 +64,15 @@ GET /api/Software
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Aceptar con el inventario de software en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con el inventario de software en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -109,5 +109,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventario de software de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

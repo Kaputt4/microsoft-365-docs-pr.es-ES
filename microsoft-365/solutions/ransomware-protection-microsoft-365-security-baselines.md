@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por seres humanos, HumOR, ataque de extorsión, ataque ransomware, cifrado, criptovirología, confianza cero
 description: Use las líneas base de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 925a64e1d7852aeed6f596e99b20dbff8b34d1be
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
-ms.translationtype: HT
+ms.openlocfilehash: 50e18f41f14964f1856519a444a6f3e9be13ed09
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825110"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325344"
 ---
 # <a name="step-1-configure-security-baselines"></a>Paso 1. Configurar las líneas base de seguridad
 
@@ -73,7 +73,7 @@ Aplique [líneas base de seguridad](https://techcommunity.microsoft.com/t5/micro
 
 ## <a name="impact-on-users-and-change-management"></a>Impacto en los usuarios y administración de cambios
 
-Como procedimiento recomendado para una regla de reducción de la superficie expuesta a ataques, evalúe cómo una regla podría afectar a la red abriendo la recomendación de seguridad para esa regla en la administración de amenazas y vulnerabilidades. El panel de detalles de la recomendación describe el impacto en el usuario, que puede usar para determinar qué porcentaje de los dispositivos pueden aceptar una nueva directiva que habilita la regla en modo de bloqueo sin afectar negativamente a la productividad del usuario.
+Como procedimiento recomendado para una regla de reducción de superficie expuesta a ataques, evalúe cómo podría afectar una regla a la red abriendo la recomendación de seguridad para esa regla en Administración de vulnerabilidades de Defender. El panel de detalles de la recomendación describe el impacto en el usuario, que puede usar para determinar qué porcentaje de los dispositivos pueden aceptar una nueva directiva que habilita la regla en modo de bloqueo sin afectar negativamente a la productividad del usuario.
 
 Además, la configuración de línea base de correo electrónico de Exchange puede bloquear el correo electrónico entrante e impedir el envío de correo electrónico o el hacer clic en vínculos dentro del correo electrónico. Informe a sus trabajadores sobre este comportamiento y el motivo por el que se toman estas precauciones.
 

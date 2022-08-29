@@ -1,7 +1,7 @@
 ---
-title: API enumerar investigaciones
-description: Usar esta API para crear llamadas relacionadas con obtener la colección Investigations
-keywords: apis, api de gráficos, api admitidas, colección Investigations
+title: API de investigaciones de lista
+description: Uso de esta API para crear llamadas relacionadas con la obtención de la colección Investigations
+keywords: apis, graph api, api admitidas, colección Investigations
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a37d8cbbaeca3dd14c51e1d5c6adcefabf2db8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 746cf78bce54651cc24dd07a90c5fc11772903d2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284198"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325999"
 ---
-# <a name="list-investigations-api"></a>API enumerar investigaciones
+# <a name="list-investigations-api"></a>API de investigaciones de lista
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,36 +39,36 @@ ms.locfileid: "61284198"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Recupera una colección de [Investigaciones](investigation.md).
+Recupera una colección de [investigaciones](investigation.md).
 
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
-La consulta de OData `$filter` se admite en: `startTime` , , y `id` `state` `machineId` `triggeringAlertId` propiedades.
+La consulta de `$filter` OData se admite en las propiedades : `startTime`, `id`, `machineId` `state`y `triggeringAlertId` .
 <br>```$stop``` con un valor máximo de 10 000
 <br>```$skip```
 
-Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
+Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limitaciones
 
-1. El tamaño máximo de página es 10.000.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. El tamaño máximo de página es de 10 000.
+2. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Alert.Read.All|'Leer todas las alertas'
-Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa)|Alert.Read|'Leer alertas'
-Delegado (cuenta profesional o educativa)|Alert.ReadWrite|'Leer y escribir alertas'
+Application|Alert.Read.All|"Leer todas las alertas"
+Application|Alert.ReadWrite.All|"Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa)|Alert.Read|"Leer alertas"
+Delegado (cuenta profesional o educativa)|Alert.ReadWrite|"Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -82,13 +82,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 código de respuesta Ok con una colección de entidades [investigations.](investigation.md)
+Si se ejecuta correctamente, este método devuelve el código de respuesta 200, Ok con una colección de entidades [Investigations](investigation.md) .
 
 ## <a name="example"></a>Ejemplo
 

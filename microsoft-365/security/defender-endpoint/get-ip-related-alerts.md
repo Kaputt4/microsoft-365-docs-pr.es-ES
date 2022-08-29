@@ -1,7 +1,7 @@
 ---
-title: Obtener API de alertas relacionadas con IP
-description: Recuperar una colección de alertas relacionadas con una dirección IP determinada con Microsoft Defender para endpoint
-keywords: apis, api de gráficos, api admitidas, get, ip, related, alerts
+title: Obtención de la API de alertas relacionadas con IP
+description: Recuperar una colección de alertas relacionadas con una dirección IP determinada mediante Microsoft Defender para punto de conexión
+keywords: apis, graph api, api admitidas, get, ip, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b46e67a6fe2d30a4b6480b88ea3a40f842227669
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 71f8a51e97e8bdfa4c68fde86f37aafa80c994b9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283790"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325977"
 ---
-# <a name="get-ip-related-alerts-api"></a>Obtener API de alertas relacionadas con IP
+# <a name="get-ip-related-alerts-api"></a>Obtención de la API de alertas relacionadas con IP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "61283790"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,25 +42,25 @@ Recupera una colección de alertas relacionadas con una dirección IP determinad
 
 
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de Defender para API de punto de conexión](apis-intro.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Alert.Read.All|'Leer todas las alertas'
-Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Application|Alert.Read.All|"Leer todas las alertas"
+Application|Alert.ReadWrite.All|"Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.Read | "Leer alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - La respuesta incluirá solo alertas asociadas a dispositivos a las que el usuario tenga acceso, según la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -74,13 +74,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente e IP existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta en el cuerpo. Si la dirección IP es desconocida pero válida, devolverá un conjunto vacío.
+Si se ejecuta correctamente y la dirección IP existe: 200 Aceptar con la lista de entidades de [alerta](alerts.md) en el cuerpo. Si la dirección IP es desconocida pero válida, devolverá un conjunto vacío.
 Si la dirección IP no es válida, devolverá HTTP 400.
 
 ## <a name="example"></a>Ejemplo

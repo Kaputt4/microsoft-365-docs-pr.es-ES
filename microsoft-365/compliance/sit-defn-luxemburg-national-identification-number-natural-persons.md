@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Número de identificación nacional de Luxemburgo (personas físicas) definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: d70052fdccfae70302a89069b5292c0daf5b8b2f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3640f35086c72262013ad3e25b5aec1bfe8b6fa3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000479"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367233"
 ---
 # <a name="luxemburg-national-identification-number-natural-persons"></a>Número del documento de identidad de Luxemburgo (personas naturales)
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

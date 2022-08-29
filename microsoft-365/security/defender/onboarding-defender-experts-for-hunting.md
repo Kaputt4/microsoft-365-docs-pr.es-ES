@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 5165adfd402415ddd7bd5a0fd6b5acb098fd49f1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175540"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328461"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Empezar a usar expertos de Microsoft Defender para la búsqueda
 

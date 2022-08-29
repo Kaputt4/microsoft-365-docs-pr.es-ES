@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención y etiquetas de retención de Microsoft 365 para conservar lo que necesita y eliminar lo que no para administrar los datos de su organización.
-ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 7e4c0384cd2678d666be4d65f59a1651d1e2d03e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949313"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336274"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -150,7 +150,7 @@ Con las etiquetas de retención, puede:
 
 - **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook, Outlook en la Web, OneDrive, SharePoint y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la configuración de retención adecuada.
 
-- **Aplicar etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene:
+- **Aplique etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene:
   - Tipos específicos de información confidencial.
   - Palabras clave específicas que coinciden con una consulta que haya creado.
   - Coincidencias de patrón para un clasificador que se puede entrenar.
@@ -586,7 +586,7 @@ Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los si
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Usar directivas de retención y etiquetas de retención en lugar de características más antiguas
 
-Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la administración del ciclo de vida de datos, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas.
+Si necesita conservar o eliminar de forma proactiva el contenido de Microsoft 365 para la administración del ciclo de vida de los datos, se recomienda usar directivas de retención y etiquetas de retención de Microsoft 365 en lugar de las siguientes características anteriores.
 
 Si actualmente usa esas características más antiguas, estas seguirán funcionando en paralelo con las etiquetas de retención y directivas de Microsoft 365. Sin embargo, se recomienda que, a partir de ahora, use directivas y etiquetas de retención de Microsoft 365 para beneficiarse de una única solución para administrar tanto la retención como la eliminación de contenido en distintas cargas de trabajo en Microsoft 365.
 
@@ -599,6 +599,10 @@ Si actualmente usa esas características más antiguas, estas seguirán funciona
   - Una directiva de archivo para [buzones de archivo](enable-archive-mailboxes.md) para mover automáticamente los correos electrónicos del buzón principal de un usuario a su buzón de archivo después de un período de tiempo especificado. Una directiva de archivo (con cualquier configuración) se puede usar junto con una directiva de retención de Microsoft 365 que se aplica al buzón principal y de archivo de un usuario.
 
   - Directivas de retención aplicadas por un administrador a carpetas específicas dentro de un buzón. Una directiva de retención de Microsoft 365 se aplica a todas las carpetas del buzón. Sin embargo, un administrador puede configurar diferentes opciones de retención mediante etiquetas de retención que un usuario puede aplicar a las carpetas de Outlook como una [etiqueta de retención predeterminada](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Registro en diario](/exchange/security-and-compliance/journaling/journaling) (retención y archivo)
+    
+    Es posible que sea necesario integrar con soluciones de terceros y copias de mensajes de correo electrónico y su comunicación de datos se almacena fuera de Exchange Online. Dado que va a mover datos fuera de Microsoft 365, debe tomar precauciones adicionales para protegerlos y resolver también las duplicaciones que puedan resultar de esta solución. Será su responsabilidad supervisar y realizar un seguimiento de los recibos de no entrega en el buzón de registro en diario que puedan producirse debido a servicios externos y dependientes. No tiene estas sobrecargas administrativas adicionales al usar la retención de Microsoft 365 y otras soluciones de cumplimiento de Microsoft Purview que tampoco se limitan solo a los mensajes de correo electrónico.
 
 - [Retención por juicio](create-a-litigation-hold.md) (solo retención)
 

@@ -19,28 +19,28 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de Polonia.
-ms.openlocfilehash: e0bb04fb1d6e7dc6a56fc0a487bba3dc9cf60b49
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 120e000e5d7666d213062d812b2b5d6b6555c18e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000160"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325713"
 ---
 # <a name="poland-drivers-license-number"></a>Número del permiso de conducir de Polonia
 
 ## <a name="format"></a>Formato
 
-14 dígitos que contienen dos barras diagonales
+11 o 14 dígitos que contienen dos barras diagonales
 
 ## <a name="pattern"></a>Patrón
 
-14 dígitos y dos barras diagonales:
+11 o 14 dígitos que contienen dos barras diagonales
 
 - cinco dígitos
 - una barra diagonal
 - dos dígitos
 - una barra diagonal
-- siete dígitos
+- cuatro o siete dígitos
 
 ## <a name="checksum"></a>Suma de comprobación
 
@@ -50,7 +50,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_poland_eu_driver's_license_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_poland_eu_driver's_license_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_poland_eu_driver's_license_number`.
 
 ```xml

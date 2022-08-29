@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar la red de entrega de contenido (CDN) Office 365 para acelerar la entrega de los recursos de SharePoint Online.
-ms.openlocfilehash: 19a6ef51c73340c9f048ffa60208a5216a1959db
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ca3d6c1158c93c9f897540e4b73565fd5a518e2a
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492521"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336208"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -163,7 +163,6 @@ A menos que especifique lo contrario, Office 365 configura algunos orígenes pre
 
 Orígenes de CDN privados predeterminados:
 
-+ \*/userphoto.aspx
 + \*/siteassets
 
 Orígenes de red CDN pública predeterminados:
@@ -975,7 +974,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Es importante tener en cuenta que SharePoint Online no admite permisos de nivel de elemento para los recursos en orígenes privados. Por ejemplo, para un archivo ubicado en `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, los usuarios tienen acceso efectivo al archivo dadas las condiciones siguientes:
 
-|Usuario  |Permisos  |Acceso efectivo  |
+|User  |Permisos  |Acceso efectivo  |
 |---------|---------|---------|
 |Usuario 1     |Tiene acceso a folder1         |Puede acceder a image1.jpg desde la red CDN.         |
 |Usuario 2     |No tiene acceso a folder1         |No se puede acceder a image1.jpg desde la red CDN         |
@@ -1047,7 +1046,7 @@ Puede optar por trabajar con la red CDN de Office 365 mediante el módulo de Pow
 + [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [Instalar Office 365 CLI](https://pnp.github.io/cli-microsoft365/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Redes de entrega de contenido](./content-delivery-networks.md)
 

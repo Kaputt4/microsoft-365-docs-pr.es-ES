@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b24dc0ddc69c9af7516ee844af3899ff92fe4c4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 585da60b92e57c0a1835d0d732d7abc8b228053c
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626037"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359719"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -90,7 +92,7 @@ El primer paso es descargar la herramienta AzCopy, que es la herramienta que se 
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de los datos** \> **Importar**.
+2. En el panel izquierdo del portal de cumplimiento, seleccione **Administración** \> del ciclo de vida de datos **Microsoft 365** \> **Microsoft 365** \> **Importar**.
 
     > [!NOTE]
     > Debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento. Consulte la sección **Antes de comenzar** para obtener más información. 
@@ -258,7 +260,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **Management del ciclo de vida de los datos > Importar**.
+2. En el panel izquierdo del portal de cumplimiento, seleccione **Administración** >  del ciclo de vida de datos **Microsoft 365** > Importar**.
 
 3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
 

@@ -10,18 +10,19 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a6a31317ec95a4767f36cf6db21ec2e146f9eda8
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943582"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320227"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para punto de conexión en Linux
 
@@ -55,7 +56,7 @@ La sección *antivirusEngine* del perfil de configuración se usa para administr
 
 |Descripción|Valor|
 |---|---|
-|**Key**|antivirusEngine|
+|**Clave**|antivirusEngine|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comentarios**|Consulte las secciones siguientes para obtener una descripción del contenido del diccionario.|
 
@@ -74,7 +75,7 @@ Especifica la preferencia de cumplimiento del motor antivirus. Hay tres valores 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|enforcementLevel|
+|**Clave**|enforcementLevel|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|real_time (valor predeterminado) <p> on_demand <p> Pasiva|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.10.72 o posterior.|
@@ -89,7 +90,7 @@ Determina si la funcionalidad de bloqueo y supervisión del comportamiento está
 
 |Descripción|Valor|
 |---|---|
-|**Key**|behaviorMonitoring|
+|**Clave**|behaviorMonitoring|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.45.00 o posterior.|
@@ -100,7 +101,7 @@ Habilita o deshabilita la característica de cálculo hash de archivos. Cuando e
 
 |Descripción|Valor|
 |---|---|
-|**Key**|enableFileHashComputation|
+|**Clave**|enableFileHashComputation|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
 |**Comentarios**|Disponible en La versión 101.73.77 o posterior de Defender para punto de conexión.|
@@ -111,7 +112,7 @@ Especifica si se debe iniciar un examen del proceso después de que se descargue
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanAfterDefinitionUpdate|
+|**Clave**|scanAfterDefinitionUpdate|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.45.00 o posterior.|
@@ -122,7 +123,7 @@ Especifica si se deben examinar los archivos durante los exámenes antivirus a p
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanArchives|
+|**Clave**|scanArchives|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |**Comentarios**|Disponible en Microsoft Defender para punto de conexión versión 101.45.00 o posterior.|
@@ -133,7 +134,7 @@ Especifica el grado de paralelismo para los exámenes a petición. Esto correspo
 
 |Descripción|Valor|
 |---|---|
-|**Key**|maximumOnDemandScanThreads|
+|**Clave**|maximumOnDemandScanThreads|
 |**Tipo de datos**|Entero|
 |**Posibles valores**|2 (valor predeterminado). Los valores permitidos son enteros entre 1 y 64.|
 |**Comentarios**|Disponible en Microsoft Defender para punto de conexión versión 101.45.00 o posterior.|
@@ -144,7 +145,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 
 |Descripción|Valor|
 |---|---|
-|**Key**|exclusionesMergePolicy|
+|**Clave**|exclusionesMergePolicy|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|merge (valor predeterminado) <p> admin_only|
 |**Comentarios**|Disponible en La versión 100.83.73 o posterior de Defender para punto de conexión.|
@@ -156,7 +157,7 @@ Entidades que se han excluido del examen. Las exclusiones se pueden especificar 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|Exclusiones|
+|**Clave**|Exclusiones|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comentarios**|Consulte las secciones siguientes para obtener una descripción del contenido del diccionario.|
 
@@ -166,7 +167,7 @@ Especifica el tipo de contenido excluido del examen.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|$type|
+|**Clave**|$type|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 
@@ -176,7 +177,7 @@ Se usa para excluir contenido del examen por ruta de acceso completa del archivo
 
 |Descripción|Valor|
 |---|---|
-|**Key**|ruta de acceso|
+|**Clave**|ruta de acceso|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|rutas de acceso válidas|
 |**Comentarios**|Aplicable solo si *$type* está *excluidoPath*|
@@ -187,7 +188,7 @@ Indica si la propiedad *path* hace referencia a un archivo o directorio.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|isDirectory|
+|**Clave**|isDirectory|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comentarios**|Aplicable solo si *$type* está *excluidoPath*|
@@ -198,7 +199,7 @@ Se usa para excluir contenido del examen por extensión de archivo.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|Extensión|
+|**Clave**|Extensión|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|extensiones de archivo válidas|
 |**Comentarios**|Solo se aplica si *$type* es *excludedFileExtension*|
@@ -209,7 +210,7 @@ Especifica un proceso para el que toda la actividad de archivo se excluye del ex
 
 |Descripción|Valor|
 |---|---|
-|**Key**|name|
+|**Clave**|name|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|cualquier cadena|
 |**Comentarios**|Aplicable solo si *$type* es *excludedFileName*|
@@ -220,7 +221,7 @@ Lista de amenazas (identificadas por su nombre) que no están bloqueadas por el 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|allowedThreats|
+|**Clave**|allowedThreats|
 |**Tipo de datos**|Matriz de cadenas|
 
 #### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidas
@@ -229,7 +230,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 
 |Descripción|Valor|
 |---|---|
-|**Key**|disallowedThreatActions|
+|**Clave**|disallowedThreatActions|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|allow (impide que los usuarios permitan amenazas) <p> restore (restringe a los usuarios la restauración de amenazas desde la cuarentena)|
 |**Comentarios**|Disponible en La versión 100.83.73 o posterior de Defender para punto de conexión.|
@@ -240,7 +241,7 @@ La preferencia *threatTypeSettings* en el motor antivirus se usa para controlar 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|threatTypeSettings|
+|**Clave**|threatTypeSettings|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comentarios**|Consulte las secciones siguientes para obtener una descripción del contenido del diccionario.|
 
@@ -250,7 +251,7 @@ Tipo de amenaza para la que está configurado el comportamiento.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|clave|
+|**Clave**|clave|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|potentially_unwanted_application <p> archive_bomb|
 
@@ -264,7 +265,7 @@ Acción que se debe realizar al encontrarse con una amenaza del tipo especificad
 
 |Descripción|Valor|
 |---|---|
-|**Key**|valor|
+|**Clave**|valor|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|audit (valor predeterminado) <p> Bloquear <p> desactivado|
 
@@ -274,7 +275,7 @@ Especifica la directiva de combinación para la configuración del tipo de amena
 
 |Descripción|Valor|
 |---|---|
-|**Key**|threatTypeSettingsMergePolicy|
+|**Clave**|threatTypeSettingsMergePolicy|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|merge (valor predeterminado) <p> admin_only|
 |**Comentarios**|Disponible en La versión 100.83.73 o posterior de Defender para punto de conexión.|
@@ -285,7 +286,7 @@ Especifique el número de días que los resultados se conservan en el historial 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanResultsRetentionDays|
+|**Clave**|scanResultsRetentionDays|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|90 (valor predeterminado). Los valores permitidos van de 1 día a 180 días.|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.04.76 o posterior.|
@@ -296,7 +297,7 @@ Especifique el número máximo de entradas que se conservarán en el historial d
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanHistoryMaximumItems|
+|**Clave**|scanHistoryMaximumItems|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|10000 (valor predeterminado). Los valores permitidos van de 5000 elementos a 15000 elementos.|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.04.76 o posterior.|
@@ -307,7 +308,7 @@ La entrada *cloudService* del perfil de configuración se usa para configurar la
 
 |Descripción|Valor|
 |---|---|
-|**Key**|cloudService|
+|**Clave**|cloudService|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comentarios**|Consulte las secciones siguientes para obtener una descripción del contenido del diccionario.|
 
@@ -317,7 +318,7 @@ Determina si la protección entregada en la nube está habilitada en el disposit
 
 |Descripción|Valor|
 |---|---|
-|**Key**|habilitado|
+|**Clave**|habilitado|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 
@@ -327,7 +328,7 @@ Los datos de diagnóstico se usan para mantener Defender para punto de conexión
 
 |Descripción|Valor|
 |---|---|
-|**Key**|diagnosticLevel|
+|**Clave**|diagnosticLevel|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|opcional <p> obligatorio (valor predeterminado)|
 |
@@ -344,7 +345,7 @@ Esta configuración determina el grado de agresividad de Defender para punto de 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|cloudBlockLevel|
+|**Clave**|cloudBlockLevel|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|normal (valor predeterminado) <p> Moderado <p> Alto <p> high_plus <p> zero_tolerance|
 |**Comentarios**|Disponible en Defender para punto de conexión, versión 101.56.62 o posterior.|
@@ -359,7 +360,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 
 |Descripción|Valor|
 |---|---|
-|**Key**|automaticSampleSubmissionConsent|
+|**Clave**|automaticSampleSubmissionConsent|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|ninguno <p> safe (valor predeterminado) <p> todo|
 
@@ -369,7 +370,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 
 |Descripción|Valor|
 |---|---|
-|**Key**|automaticDefinitionUpdateEnabled|
+|**Clave**|automaticDefinitionUpdateEnabled|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 
@@ -432,25 +433,25 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
          {
             "$type":"excludedPath",
             "isDirectory":false,
-            "path":"/var/log/system.log"
+            "path":"/var/log/system.log<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/run"
+            "path":"/run<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home/*/git"
+            "path":"/home/*/git<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":".pdf"
+            "extension":".pdf<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileName",
-            "name":"cat"
+            "name":"cat<EXAMPLE DO NOT USE>"
          }
       ],
       "allowedThreats":[

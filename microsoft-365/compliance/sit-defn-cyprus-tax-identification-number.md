@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad del tipo de información confidencial del número de identificación fiscal de Chipre.
-ms.openlocfilehash: ef2b1d1790993a7ed9b42ccf1bfd662f20b662df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fb24f1841483e48b6cfec5167772be13743297e0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951017"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367607"
 ---
 # <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -54,14 +46,14 @@ no aplicable
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_cyprus_eu_tax_file_number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_cyprus_eu_tax_file_number` .
+- La función `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_cyprus_eu_tax_file_number`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_cyprus_eu_tax_file_number` busca contenido que coincida con el patrón.
+- La función `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -82,23 +74,23 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 - tax id
 - código de identificación fiscal
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
 - Tic #
 - Tic
-- tin id
-- tin no
-- Lata #
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria
 - vergi kimlik kodu
 - vergi kimlik numarası
 - αριθμός φορολογικού μητρώου

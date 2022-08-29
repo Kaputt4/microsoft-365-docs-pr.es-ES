@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: d16be2d9a072b43fba591a65b78eaa3111b25f65
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306442"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325785"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -165,7 +165,7 @@ Si hay directivas de IoC de archivos en conflicto con el mismo tipo de cumplimie
 > [!WARNING]
 > El control de conflictos de directivas para archivos y certificados difiere del control de conflictos de directivas para dominios, direcciones URL o direcciones IP.
 
-Las características de aplicación vulnerables a bloques de administración de amenazas y vulnerabilidades usan los ioC de archivo para la aplicación y seguirán el orden de control de conflictos anterior.
+las características de aplicación vulnerables a bloques de Administración de vulnerabilidades de Microsoft Defender usan los ioC de archivo para la aplicación y seguirán el orden de control de conflictos anterior.
 
 ### <a name="examples"></a>Ejemplos
 

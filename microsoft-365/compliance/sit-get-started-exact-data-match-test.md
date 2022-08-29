@@ -17,14 +17,19 @@ search.appverid:
 - MET150
 description: configurar servicios
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 31f51a0bfe3833fb45132d1a9f9093b1dcccf285
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0c8e43e9d732535bc15b7c231cc7ac91dabe3898
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622093"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359851"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>Probar un tipo de información confidencial de coincidencia exacta de datos
+
+## <a name="applies-to"></a>Se aplica a
+
+- [Nueva experiencia](sit-create-edm-sit-unified-ux-workflow.md)
+- [Experiencia clásica](sit-create-edm-sit-classic-ux-workflow.md)
 
 Una vez creado el tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) y una hora después de comprobar que la tabla de información confidencial ha terminado de cargarse e indexarse, puede probar que detecta la información que desea detectar mediante la función de prueba en la sección Tipos de información confidencial del Centro de cumplimiento.
  

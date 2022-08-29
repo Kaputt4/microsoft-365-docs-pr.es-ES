@@ -20,14 +20,16 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido del buzón de correo de los empleados anteriores convirtiendo el buzón en un buzón inactivo.
-ms.openlocfilehash: 981675f64015e0320805e2be8e955cbd6d98769a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9043c71118b00638d8671063c623ada7dcf25bcd
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627225"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359195"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>Más información sobre los buzones inactivos
+
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Es posible que la organización tenga que conservar el correo electrónico de los empleados anteriores después de abandonar la organización. En función de los requisitos de retención de su organización, es posible que tenga que conservar el contenido del buzón durante unos meses o años después de que finalice el empleo, o puede que tenga que conservar el contenido del buzón indefinidamente. Independientemente de cuánto tiempo necesites retener el correo electrónico, puedes crear buzones inactivos para conservar el buzón de correo de antiguos empleados.
 
@@ -128,12 +130,12 @@ No se puede recuperar ni restaurar un buzón inactivo configurado con un archivo
 
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Buzones inactivos y directivas de retención de Exchange MRM
 
-La aplicación de una directiva de retención de Exchange (la característica Administración de registros de mensajería o MRM en Exchange Online) no crea un buzón inactivo cuando se elimina la cuenta de usuario.
+La aplicación de una directiva de retención de Exchange (la característica de administración de registros de mensajería o MRM en Exchange Online) no crea un buzón inactivo cuando se elimina la cuenta de usuario.
 
 Sin embargo, si esta directiva de retención de MRM se aplicó a un buzón antes de que se inactiva, las directivas de eliminación (etiquetas de retención de MRM configuradas con una acción **Eliminar** ) se seguirán procesando en el buzón inactivo. Esto significa que los elementos etiquetados con una directiva de eliminación de MRM se moverán a la [carpeta Elementos recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) cuando expire el período de retención. Esos elementos se purgan del buzón inactivo cuando expira la duración de retención. Si no se especifica una duración de retención para el buzón inactivo, los elementos de la carpeta Recuperar elementos se conservarán indefinidamente.
 
 Por el contrario, se omiten las directivas de archivo (etiquetas de retención de MRM configuradas con una acción **MoveToArchive** ) que se incluyen en la directiva de retención de MRM asignada a un buzón inactivo. Eso significa que los elementos de un buzón inactivo etiquetados con una directiva de archivo permanecen en el buzón principal cuando expira el período de retención. No se mueven al buzón de archivo o a la carpeta Elementos recuperables en el buzón de archivo. Se conservarán indefinidamente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para que un buzón esté inactivo y administrarlo, como recuperarlo, restaurarlo y eliminarlo, consulte [Creación y administración de buzones inactivos](create-and-manage-inactive-mailboxes.md).

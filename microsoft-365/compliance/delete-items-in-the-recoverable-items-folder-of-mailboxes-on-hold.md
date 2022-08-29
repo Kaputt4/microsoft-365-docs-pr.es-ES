@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo los administradores pueden elimina
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 3878d68504264433f583bb26ccc74eb844afac42
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 717ecf671635713b2bd7a39eb80c16fc998038c6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641896"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335636"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -212,7 +212,7 @@ Ejecute el siguiente comando en [PowerShell de cumplimiento de seguridad &](/pow
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar la directiva de retención, vaya a la página Data **lifecycle management****Retention (Retención** de administración  >  del ciclo de vida de datos) del portal de cumplimiento, edite la directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la directiva de retención.
+Después de identificar la directiva de retención, vaya a la página **Administración** >  del ciclo de vida de datos **de Microsoft 365** > **Retención** en el portal de cumplimiento, edite la directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la directiva de retención.
   
 ### <a name="organization-wide-retention-policies"></a>Directivas de retención para toda la organización
   
@@ -222,7 +222,7 @@ Las directivas de retención de toda la organización, de Toda Exchange y de Tea
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar las directivas de retención de toda la organización, vaya a la página **Retención** de **administración** >  del ciclo de vida de datos en el portal de cumplimiento, edite cada directiva de retención de toda la organización que haya identificado en el paso anterior y agregue el buzón a la lista de destinatarios excluidos. Al hacerlo, se quitará el buzón de correo del usuario de la directiva de retención.
+Después de identificar las directivas de retención de toda la organización, vaya a la página **Data lifecycle management** >  Microsoft 365 Retention (Administración del ciclo de vida de datos **de Microsoft 365** > **Retención**) en el portal de cumplimiento, edite cada directiva de retención de toda la organización que haya identificado en el paso anterior y agregue el buzón a la lista de destinatarios excluidos. Al hacerlo, se quitará el buzón de correo del usuario de la directiva de retención.
 
 > [!IMPORTANT]
 > Después de excluir un buzón de una directiva de retención de toda la organización, puede tardar hasta 24 horas en sincronizar este cambio y quitar el buzón de la directiva.
@@ -237,7 +237,7 @@ Para ver el valor de la propiedad *ComplianceTagHoldApplied*, ejecute el siguien
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Una vez que haya identificado que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta búsqueda de contenido en el portal de cumplimiento para buscar elementos etiquetados mediante la condición **Etiqueta de retención** . Para más información, vea:
+Una vez que haya identificado que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta búsqueda de contenido en el portal de cumplimiento para buscar elementos etiquetados mediante la condición **Etiqueta de retención** . Para obtener más información, consulte:
 
 - La sección "Uso de búsqueda de contenido para buscar todo el contenido con una etiqueta de retención específica" en [Información sobre las directivas de retención y las etiquetas de retención](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 
@@ -397,11 +397,11 @@ Realice los pasos siguientes (en la secuencia especificada) en Exchange Online P
 
     **Directivas de retención aplicadas a buzones específicos**
 
-    Use el portal de cumplimiento para volver a agregar el buzón a la directiva de retención. Vaya a la página **Retención** de **administración** >  del ciclo de vida de datos en el centro de cumplimiento, edite la directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la directiva de retención.
+    Use el portal de cumplimiento para volver a agregar el buzón a la directiva de retención. Vaya a la página **Data lifecycle management** >  Microsoft 365 Retention (Administración del ciclo de vida de datos de **Microsoft 365** > **Retención**) en el centro de cumplimiento, edite la directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la directiva de retención.
 
     **Directivas de retención para toda la organización**
 
-    Si quitó una directiva de retención de toda la organización o de Exchange al excluirla de la directiva, use el portal de cumplimiento para quitar el buzón de la lista de usuarios excluidos. Vaya a la página **Retención** de **administración** >  del ciclo de vida de datos en el centro de cumplimiento, edite la directiva de retención de toda la organización y quite el buzón de la lista de destinatarios excluidos. Al hacerlo, se volverá a aplicar la directiva de retención al buzón del usuario.
+    Si quitó una directiva de retención de toda la organización o de Exchange al excluirla de la directiva, use el portal de cumplimiento para quitar el buzón de la lista de usuarios excluidos. Vaya a la página **Data lifecycle management** >  Microsoft 365 Retention (Administración del ciclo de vida de datos **de Microsoft 365** > **Retención**) en el centro de cumplimiento, edite la directiva de retención de toda la organización y quite el buzón de la lista de destinatarios excluidos. Al hacerlo, se volverá a aplicar la directiva de retención al buzón del usuario.
 
     **EDiscovery case holds**
 

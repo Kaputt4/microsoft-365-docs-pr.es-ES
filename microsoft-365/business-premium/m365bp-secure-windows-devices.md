@@ -11,24 +11,24 @@ f1_keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/16/2022
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo configurar las opciones de la directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: f497dab832b9980225be2e689d2c980860a01454
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+description: Obtenga información sobre cómo proteger los dispositivos Windows de su empresa mediante la configuración integrada.
+ms.openlocfilehash: 76f7321f916c6c65c01906d1c1ad69e559b3c084
+ms.sourcegitcommit: 9a7e853bb2f9d0ea377961d854d36b644799e5f8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894885"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67364532"
 ---
 # <a name="secure-windows-devices"></a>Proteger dispositivos Windows
 
-El objetivo aquí es configurar las opciones que forman parte de la directiva de dispositivo predeterminada para Windows 10 o 11. Todos los usuarios que se conecten a un dispositivo Windows, incluidos dispositivos móviles y equipos PC, recibirán automáticamente esta configuración al iniciar sesión con su cuenta profesional. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
+El objetivo aquí es configurar las opciones que forman parte de la directiva de dispositivo predeterminada para Windows 10 o 11. Todos los usuarios que conecten un dispositivo Windows, incluidos los dispositivos móviles y los equipos, iniciando sesión con su cuenta profesional recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -46,14 +46,14 @@ Para obtener más información sobre cómo actualizar dispositivos Windows, vea 
 
 ## <a name="secure-your-windows-10-and-11-devices"></a>Proteger los dispositivos Windows 10 y 11
 
-De forma predeterminada, todas las opciones de configuración están **activadas**. Estas son las opciones de configuración disponibles:<br/><br/>
+De forma predeterminada, todas las opciones de configuración están **activadas**. Estas son las opciones de configuración disponibles:
 
-|Configuración  <br/> |Descripción  <br/> |
+|Configuración |Descripción |
 |:-----|:-----|
-|Ayudar a proteger los equipos frente a virus y otras amenazas mediante Antivirus de Microsoft Defender  <br/> |Es necesario que el antivirus Microsoft Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
-|Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
-|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso de robo o pérdida de un equipo. Para más información, vea [Preguntas más frecuentes sobre BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
-|Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |
+|Ayudar a proteger los equipos frente a virus y otras amenazas mediante el Antivirus de Microsoft Defender  |Requiere que Antivirus de Microsoft Defender esté activado para proteger los equipos de los peligros de estar conectados a Internet.   |
+|Ayudar a proteger los equipos frente a amenazas basadas en web en Microsoft Edge   |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  |
+|Ayudar a proteger archivos y carpetas en equipos contra el acceso no autorizado con BitLocker  |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso de robo o pérdida de un equipo. Para más información, vea [Preguntas más frecuentes sobre BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).    |
+|Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  |
 
 ## <a name="next-objective"></a>Siguiente objetivo
 

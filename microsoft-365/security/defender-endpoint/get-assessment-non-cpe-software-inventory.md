@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cafdfad60a3d3f523b731f5e3b83752a64ffdd1a
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 223ca8ab9eac14b456c62dad3d644ad067092766
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277291"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344552"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exportación de la evaluación del inventario de software que no es de código de producto por dispositivo
 
@@ -65,7 +65,7 @@ Esta respuesta de API contiene todos los datos del software instalado que no tie
 
 ### <a name="12-permissions"></a>1.2 Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de las API de Pertahanan Microsoft untuk Titik Akhir para obtener más información.](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
@@ -170,7 +170,7 @@ Las limitaciones de frecuencia de esta API son 5 llamadas por minuto y 20 llamad
 
 ### <a name="22-permissions"></a>2.2 Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de las API de Pertahanan Microsoft untuk Titik Akhir para obtener más información.](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
@@ -229,7 +229,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Exportación de la evaluación de software por dispositivo](get-assessment-software-inventory.md)
 - [Exportación de métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
@@ -237,6 +237,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 - [Exportación de la evaluación de vulnerabilidades de software por dispositivo](get-assessment-software-vulnerabilities.md)
 
 Otros relacionados
-
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

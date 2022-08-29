@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeamiento de seguridad y cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: acc98ae381af6035be46eb6708d26213c4540d22
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639828"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360027"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planeamiento del cumplimiento de seguridad &amp;
 
@@ -38,7 +38,7 @@ Orientarse a las capacidades de protección de la información en el Information
 
 Después de configurar la suscripción de Microsoft 365, tome nota de la puntuación inicial. Puntuación segura proporciona sugerencias de configuración que puede tomar para aumentar la puntuación. El objetivo es tener en cuenta las oportunidades que puede aprovechar para proteger el entorno, lo que no afectará negativamente a la productividad de los usuarios.
   
-- [Introducción a la puntuación segura de Office 365](../security/defender/microsoft-secure-score.md)
+- [Puntuación de seguridad de Microsoft](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Paso 3: Planear la protección de acceso para identidades y dispositivos
 

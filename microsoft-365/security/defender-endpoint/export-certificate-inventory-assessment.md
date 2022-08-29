@@ -1,6 +1,6 @@
 ---
 title: Métodos y propiedades de evaluación de certificados por dispositivo
-description: Proporciona información sobre las API de certificados que extraen datos "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
+description: Proporciona información sobre las API de certificados que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5f89d92e754648dcaffb134de70516c7274625d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66998165"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344929"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exportación del inventario de certificados por dispositivo
 
@@ -32,7 +32,7 @@ ms.locfileid: "66998165"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? [Regístrese para obtener una evaluación gratuita.- Actualizar](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 
@@ -80,12 +80,12 @@ GET /api/machines/certificateAssessmentByMachine
 
 Propiedad (ID)|Tipo de datos|Descripción
 :---|:---|:---
-|DeviceId|String|Identificador único del dispositivo en el servicio.
+|DeviceId|Cadena|Identificador único del dispositivo en el servicio.
 |DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.
 |Huella digital|Boolean|Identificador único para el certificado.
-|Ruta de acceso|String|Ubicación del certificado.
+|Path|Cadena|Ubicación del certificado.
 |SignatureAlgorithm|Cadena|Algoritmo hash y algoritmo de cifrado utilizados.
-|KeySize|String|Tamaño de la clave usada en el algoritmo de firma.
+|KeySize|Cadena|Tamaño de la clave usada en el algoritmo de firma.
 |ExpirationDate|Cadena|Fecha y hora posteriores a la cual el certificado ya no es válido.
 |IssueDate|Cadena|Fecha y hora más tempranas en que el certificado se convirtió en válido.
 |SubjectType|Cadena|Indica si el titular del certificado es una entidad de certificación o una entidad final.
@@ -93,8 +93,8 @@ Propiedad (ID)|Tipo de datos|Descripción
 |IssuedTo|Objeto|Entidad a la que pertenece un certificado; puede ser un dispositivo, un individuo o una organización.
 |IssuedBy|Objeto|Entidad que comprobó la información y firmó el certificado.
 |KeyUsage|Cadena|Los usos criptográficos válidos de la clave pública del certificado.
-|ExtendedKeyUsage|String|Otros usos válidos para el certificado.
-|RbacGroupId|String|Identificador de grupo de control de acceso basado en rol (RBAC).
+|ExtendedKeyUsage|Cadena|Otros usos válidos para el certificado.
+|RbacGroupId|Cadena|Identificador de grupo de control de acceso basado en rol (RBAC).
 |RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
 
 ## <a name="16-example"></a>Ejemplo 1.6

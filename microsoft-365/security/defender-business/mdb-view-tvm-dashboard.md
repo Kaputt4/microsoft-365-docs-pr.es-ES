@@ -1,6 +1,6 @@
 ---
-title: Vea el panel de administración de vulnerabilidades & amenazas en Microsoft Defender para Empresas
-description: Use el panel de Administración de vulnerabilidades & amenazas para ver los elementos importantes a abordar en Defender para empresas.
+title: Vea el panel de Administración de vulnerabilidades de Microsoft Defender en Microsoft Defender para Empresas
+description: Use el panel de Administración de vulnerabilidades de Microsoft Defender para ver los elementos importantes a abordar en Defender para empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 332128566bb117dec10420fff3e7dc0d529071ac
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: dc1fea2a1bcbf05b0f32519221a68686a85e85f6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175428"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326351"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Use el panel de administración de vulnerabilidades en Microsoft Defender para Empresas
 
-Defender for Business incluye un panel de administración de vulnerabilidades diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, ese panel le permite ver información sobre los dispositivos expuestos y ver las recomendaciones de seguridad pertinentes. Puede usar el panel de administración de vulnerabilidades & amenazas para:
+Defender for Business incluye un panel de administración de vulnerabilidades diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, ese panel le permite ver información sobre los dispositivos expuestos y ver las recomendaciones de seguridad pertinentes. Puede usar el panel de Administración de vulnerabilidades de Defender para:
 
 - Vea la puntuación de exposición, que está asociada a los dispositivos de su empresa.
 - Vea las principales recomendaciones de seguridad, como solucionar problemas de comunicación con dispositivos, activar la protección del firewall o actualizar las definiciones del Antivirus de Microsoft Defender.

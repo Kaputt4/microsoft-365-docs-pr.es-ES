@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
-ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 41afd4f726ecef8b63003a1e639f8430a759e5e7
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306622"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325317"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -69,7 +69,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 | [Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
 | [Impedir que las aplicaciones de Office inserten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
 | [Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
-| [Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br> \*_No se admiten las exclusiones de archivos y carpetas._ | v <br> versión 1903 (compilación 18362) o posterior <sup>[[3](#fn1)]<sup></sup> | v | v <br> versión 1903 (compilación 18362) o posterior | N | N |
+| [Bloquear la persistencia a través de la suscripción de eventos de Instrumental de administración de Windows (WMI)](#block-persistence-through-wmi-event-subscription) <br> \*_No se admiten las exclusiones de archivos y carpetas._ | v <br> versión 1903 (compilación 18362) o posterior <sup>[[3](#fn1)]<sup></sup> | v | v <br> versión 1903 (compilación 18362) o posterior | N | N |
 | [Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> versión 1803 o posterior <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v | v | v |
 | [Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | v | v | v | N | N |
@@ -349,7 +349,7 @@ Tipo de acción de búsqueda avanzada:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dependencias: Antivirus de Microsoft Defender, AMSI
+Dependencias: Antivirus de Microsoft Defender, interfaz de examen antimalware (AMSI)
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
 

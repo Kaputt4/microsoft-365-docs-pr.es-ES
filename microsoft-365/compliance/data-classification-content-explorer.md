@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637359"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360465"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -95,7 +95,7 @@ El explorador de contenido muestra una instantánea actual de los elementos que 
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Una [directiva DLP](dlp-learn-about-dlp.md) puede ayudar a proteger la información confidencial, que se define como un **tipo de información confidencial**. Microsoft 365 incluye definiciones de [para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md) de muchas regiones diferentes que están listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria, números de identificación nacional y números de servicio de Windows Live ID.
+Una [directiva DLP](dlp-learn-about-dlp.md) puede ayudar a proteger información confidencial, lo que se define como un **tipo de información confidencial**. Microsoft 365 incluye [definiciones para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md) de muchas regiones diferentes y listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria y números de identificación nacional.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

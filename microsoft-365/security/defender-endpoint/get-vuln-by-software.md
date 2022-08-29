@@ -1,8 +1,7 @@
 ---
 title: Enumerar vulnerabilidades por software
-description: Recupera una lista de vulnerabilidades en el software instalado.
-keywords: apis, graph api, apis compatibles, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
+description: Recupere una lista de vulnerabilidades en el software instalado.
+keywords: apis, graph api, api admitidas, get, lista de vulnerabilidades, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 10dae89bdc902147022a886ce5015e69444b0063
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167783"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327649"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Enumerar vulnerabilidades por software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,16 +38,16 @@ ms.locfileid: "61167783"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una lista de vulnerabilidades en el software instalado.
+Recupere una lista de vulnerabilidades en el software instalado.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Vulnerability.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Vulnerability.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Application|Vulnerability.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -62,13 +61,13 @@ GET /api/Software/{Id}/vulnerabilities
 |---|---|---|
 |Authorization|Cadena|Portador {token}. **Obligatorio**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con una lista de vulnerabilidades expuestas por el software especificado.
+Si se ejecuta correctamente, este método devuelve 200 OK con una lista de vulnerabilidades expuestas por el software especificado.
 
 ## <a name="example"></a>Ejemplo
 

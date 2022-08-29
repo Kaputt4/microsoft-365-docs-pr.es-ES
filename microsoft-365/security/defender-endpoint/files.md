@@ -1,8 +1,7 @@
 ---
 title: Tipo de recurso File
-description: Recupera alertas recientes de Microsoft Defender para puntos de conexión relacionadas con archivos.
-keywords: apis, api de gráficos, api admitidas, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
+description: Recupere las alertas de Microsoft Defender para punto de conexión recientes relacionadas con los archivos.
+keywords: apis, graph api, api admitidas, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 85ce81f3d99aa789c68e9967f6bcafb68ca681f2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167807"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323450"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -29,8 +28,8 @@ ms.locfileid: "61167807"
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -38,21 +37,21 @@ ms.locfileid: "61167807"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Representa una entidad de archivo en Defender para endpoint.
+Representa una entidad de archivo en Defender para punto de conexión.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto |Description
+Método|Tipo de valor devuelto |Descripción
 :---|:---|:---
-[Obtener archivo](get-file-information.md) | [file](files.md) | Obtener un solo archivo 
-[Enumerar alertas relacionadas con archivos](get-file-related-alerts.md) | Colección [alert](alerts.md) | Obtener las [entidades](alerts.md) de alerta asociadas al archivo.
-[Enumerar máquinas relacionadas con archivos](get-file-related-machines.md) | [colección machine](machine.md) | Obtener las [entidades](machine.md) del equipo asociadas con la alerta.
-[estadísticas de archivos](get-file-statistics.md) | Resumen de estadísticas | Recupera la prevalencia del archivo determinado.
+[Obtener archivo](get-file-information.md) | [file](files.md) | Obtención de un único archivo 
+[Enumerar alertas relacionadas con archivos](get-file-related-alerts.md) | Colección [alert](alerts.md) | Obtenga las entidades de [alerta](alerts.md) asociadas al archivo.
+[Enumerar máquinas relacionadas con archivos](get-file-related-machines.md) | [colección de máquinas](machine.md) | Obtenga las entidades de [máquina](machine.md) asociadas a la alerta.
+[estadísticas de archivos](get-file-statistics.md) | Resumen de estadísticas | Recupera la prevalencia del archivo especificado.
 
 
 ## <a name="properties"></a>Propiedades
 
-|Propiedad | Tipo | Description |
+|Propiedad | Tipo | Descripción |
 |:---|:---|:---|
 |sha1 | Cadena | Hash Sha1 del contenido del archivo |
 |sha256 | Cadena | Hash Sha256 del contenido del archivo |
@@ -60,15 +59,15 @@ Método|Tipo de valor devuelto |Description
 |globalFirstObserved | DateTimeOffset | Primera vez que se observó el archivo |
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
-|fileType | Cadena | Tipo del archivo |
+|Eltipo | Cadena | Tipo del archivo |
 |isPeFile | Boolean | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
 |filePublisher | Cadena | Editor de archivos |
 |fileProductName | Cadena | Nombre del producto |
-|firmante | Cadena | Firmante de archivos |
-|emisor | Cadena | Emisor de archivos |
+|Firmante | Cadena | Firmante de archivos |
+|Emisor | Cadena | Emisor de archivos |
 |signerHash | Cadena | Hash del certificado de firma |
-|isValidCertificate | Boolean | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
-|determinationType | Cadena | El tipo de determinación del archivo |
+|isValidCertificate | Boolean | El agente de Microsoft Defender para punto de conexión ha comprobado correctamente el certificado de firma |
+|determinationType | Cadena | Tipo de determinación del archivo |
 |determinationValue | Cadena | Valor de determinación |
 
 ## <a name="json-representation"></a>Representación json

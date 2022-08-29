@@ -1,7 +1,7 @@
 ---
-title: Obtener recomendación por id.
+title: Obtener recomendación por identificador
 description: Recupera una recomendación de seguridad por su identificador.
-keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad por identificador, Administración de amenazas y vulnerabilidades, api Administración de amenazas y vulnerabilidades api
+keywords: api, graph api, api admitidas, get, recomendación de seguridad, recomendación de seguridad por identificador, Administración de amenazas y vulnerabilidades, api de Administración de amenazas y vulnerabilidades
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea02c3a102f88418b146eba24d7db34c2bd07ed4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6983ed109357bef89209c689a12a8e90ea11c797
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302235"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344793"
 ---
 # <a name="get-recommendation-by-id"></a>Obtener recomendación por identificación
 
@@ -41,12 +41,12 @@ Recupera una recomendación de seguridad por su identificador.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|SecurityRecommendation.Read.All|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Application|SecurityRecommendation.Read.All|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -58,15 +58,15 @@ GET /api/recommendations/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Aceptar con las recomendaciones de seguridad del cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 Ok con las recomendaciones de seguridad en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -110,5 +110,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recomendación & seguridad de vulnerabilidades](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recomendación de seguridad de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

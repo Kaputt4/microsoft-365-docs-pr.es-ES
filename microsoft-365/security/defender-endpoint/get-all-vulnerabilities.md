@@ -1,8 +1,7 @@
 ---
-title: Obtener todas las vulnerabilidades
-description: Recupera una lista de todas las vulnerabilidades que afectan a la organización
-keywords: apis, graph api, apis admitidas, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
+title: Obtención de todas las vulnerabilidades
+description: Recupera una lista de todas las vulnerabilidades que afectan a la organización.
+keywords: apis, graph api, api admitidas, get, información de vulnerabilidades, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,21 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 05101885405e8646a37857afde4a18c57cfdcd78
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 25f7e51555bcd4348185eb91fa004ccbb8395419
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167795"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342965"
 ---
 # <a name="list-vulnerabilities"></a>Enumerar vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,19 +43,19 @@ ms.locfileid: "61167795"
 Recupera una lista de todas las vulnerabilidades.
 <br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
 <br>Operadores compatibles con OData:
-<br>```$filter``` on:  ```id``` , , , , , y ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>```$filter``` on:  ```id```propiedades , ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```y ```updatedOn``` .
 <br>```$top``` con un valor máximo de 10 000.
 <br>```$skip```.
-<br>Vea ejemplos en [consultas de OData con Microsoft Defender para Endpoint](exposed-apis-odata-samples.md).
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Vulnerability.Read.All|'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Vulnerability.Read|'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
+Application|Vulnerability.Read.All|"Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|"Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -70,13 +69,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con la lista de vulnerabilidades en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con la lista de vulnerabilidades en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -119,5 +118,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Consulte también
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilidades de la organización](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilidades en la organización](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

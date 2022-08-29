@@ -17,15 +17,19 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo exportar datos de origen para el tipo de información confidencial basado en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 4c79123ab44e9be20a96d19c058df6aecfb6aeeb
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918076"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359873"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
 
+## <a name="applies-to"></a>Se aplica a
+
+- [Nueva experiencia](sit-create-edm-sit-unified-ux-workflow.md)
+- [Experiencia clásica](sit-create-edm-sit-classic-ux-workflow.md)
 
 La tabla de datos confidenciales es un archivo de texto que contiene filas de valores con los que se comparará el contenido de los documentos para identificar datos confidenciales. Estos valores pueden ser información de identificación personal, registros de productos u otros datos confidenciales en forma de texto que quiera detectar en el contenido y tomar medidas de protección.
 
@@ -57,9 +61,13 @@ El archivo de datos puede incluir un máximo de:
 
 ## <a name="next-step"></a>Paso siguiente
 
-- [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **Para una nueva experiencia**: [Creación de un archivo de ejemplo sit de EDM para la nueva experiencia](sit-create-edm-sit-unified-ux-sample-file.md)
 
-## <a name="see-also"></a>Consulte también
+o
+
+- **Para la experiencia clásica**: [cree el esquema para los tipos de información confidencial basados en coincidencias de datos exactas](sit-get-started-exact-data-match-create-schema.md).
+
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 - [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

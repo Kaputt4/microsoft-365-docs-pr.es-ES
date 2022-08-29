@@ -8,18 +8,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: 5b336a0650bc30eb1ebf23f8356b6c3c1ebb4e79
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294619"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324175"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender para punto de conexión instalación del dispositivo de control de dispositivos
 
@@ -29,7 +29,7 @@ ms.locfileid: "67294619"
 
 
 > [!NOTE]
-> Si administra el almacenamiento extraíble, consulte [Microsoft Defender para punto de conexión Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> Si desea administrar el almacenamiento extraíble, consulte [Microsoft Defender para punto de conexión Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender para punto de conexión Instalación del dispositivo de control de dispositivos le permite realizar la siguiente tarea:
 
@@ -41,12 +41,12 @@ Microsoft Defender para punto de conexión Instalación del dispositivo de contr
 
 |Privilegio|Permiso|
 |:---|:---|
-|Access|Instalación del dispositivo |
+|Acceso|Instalación del dispositivo |
 |Modo de acción|Permitir, impedir |
-|Compatibilidad con CSP|Sí|
-|Compatibilidad con GPO|Sí|
+|Compatibilidad con CSP|Yes|
+|Compatibilidad con GPO|Yes|
 |Soporte técnico basado en el usuario|No|
-|Compatibilidad basada en máquinas|Sí|
+|Compatibilidad basada en máquinas|Yes|
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 

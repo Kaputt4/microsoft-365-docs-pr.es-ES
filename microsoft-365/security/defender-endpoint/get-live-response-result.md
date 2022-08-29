@@ -1,8 +1,7 @@
 ---
-title: Obtener resultados de respuesta en directo
-description: Obtenga información sobre cómo recuperar un resultado de comando de respuesta en directo específico por su índice.
-keywords: apis, api de gráficos, api admitidas, carga en biblioteca
-search.product: eADQiWindows 10XVcnh
+title: Obtención de resultados de respuesta en directo
+description: Obtenga información sobre cómo recuperar un resultado de comando de respuesta dinámica específico por su índice.
+keywords: api, graph api, api admitidas, carga en la biblioteca
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,25 +14,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fb001d0212b6eabcbabd0a2f5c3a108e7a1a9c33
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163907"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324438"
 ---
-# <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
+# <a name="get-live-response-results"></a>Obtención de resultados de respuesta en directo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -45,28 +42,30 @@ ms.locfileid: "61163907"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Recupera un resultado de comando de respuesta en directo específico por su índice.
+Recupera un resultado de comando de respuesta dinámica específico por su índice.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
-Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguientes requisitos:
+Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguientes requisitos:
 
 - **Compruebe que está ejecutando una versión compatible de Windows**.
 
   Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Server 2019: solo se aplica a la versión preliminar pública**
+  - **Windows Server 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
@@ -74,13 +73,13 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
-|Tipo de permiso|Permiso|Nombre para mostrar de permisos|
+|Tipo de permiso|Permiso|Nombre para mostrar del permiso|
 |---|---|---|
-Aplicación|Machine.Read.All|''Leer todos los perfiles de máquina''
-Aplicación|"Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
-|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
+Application|Machine.Read.All|''Leer todos los perfiles de máquina''
+Application|"Machine.ReadWrite.All|"Leer y escribir toda la información de la máquina"
+|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecución de una respuesta en directo en una máquina específica|
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -95,22 +94,22 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 |---|---|---|
 |Authorization|Cadena|{token} de portador. Obligatorio.|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200, Ok código de respuesta con el objeto que contiene el vínculo al resultado del comando en la *propiedad value.* Este vínculo es válido durante 30 minutos y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Otra llamada puede volver a crear un vínculo expirado y no es necesario volver a ejecutar la respuesta en directo.
+Si se ejecuta correctamente, este método devuelve el código de respuesta 200, Ok con el objeto que contiene el vínculo al comando da como resultado la propiedad *value* . Este vínculo es válido durante 30 minutos y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Otra llamada puede volver a crear un vínculo expirado y no es necesario volver a ejecutar la respuesta en directo.
 
 *Propiedades de transcripción de Runscript:*
 
-|Propiedad|Description|
+|Propiedad|Descripción|
 |---|---|
-|script_name|Nombre de script ejecutado|
-|exit_code|Código de salida de script ejecutado|
-|script_output|Salida estándar de script ejecutada|
-|script_errors|Salida de error estándar de script ejecutada|
+|script_name|Nombre del script ejecutado|
+|exit_code|Código de salida del script ejecutado|
+|script_output|Salida estándar del script ejecutado|
+|script_errors|Salida de error estándar del script ejecutado|
 
 ## <a name="example"></a>Ejemplo
 
@@ -151,6 +150,6 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Obtener API de acción de máquina](get-machineaction-object.md)
+- [Obtención de la API de acción de la máquina](get-machineaction-object.md)
 - [Cancelar acción de máquina](cancel-machine-action.md)
 - [Ejecutar respuesta directa](run-live-response.md) 
