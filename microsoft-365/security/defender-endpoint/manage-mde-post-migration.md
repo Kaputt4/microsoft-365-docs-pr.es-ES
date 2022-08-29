@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 3158f75d98d1536f54f9c5387c1515fe64be1c25
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607573"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324043"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>Administración de Microsoft Defender para punto de conexión después de la instalación o migración iniciales
 
@@ -39,7 +39,7 @@ En la tabla siguiente se enumeran varias herramientas o métodos que puede usar,
 
 |Herramienta o método|Descripción|
 |---|---|
-|**[Información del panel de administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** en el portal [de Microsoft 365 Defender](https://security.microsoft.com/)|El panel de administración de amenazas & vulnerabilidades proporciona información accionable que el equipo de operaciones de seguridad puede usar para reducir la exposición y mejorar la posición de seguridad de la organización. <br/><br/> Consulte [Administración de vulnerabilidades & amenazas](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) e [Información general de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
+|**[Administración de vulnerabilidades de Microsoft Defender información del panel](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** en el portal [de Microsoft 365 Defender](https://security.microsoft.com/)|El panel de Administración de vulnerabilidades de Defender proporciona información accionable que el equipo de operaciones de seguridad puede usar para reducir la exposición y mejorar la posición de seguridad de la organización. <br/><br/> Consulte [Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) e [Información general de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (recomendado)|Microsoft Intune (Intune), un componente de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Con Intune, puede controlar cómo se usan los dispositivos de su organización, incluidos teléfonos móviles, tabletas y portátiles. También puede configurar directivas específicas para controlar las aplicaciones. <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión mediante Intune](manage-mde-post-migration-intune.md).|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft Endpoint Manager (Configuration Manager), anteriormente conocido como System Center Configuration Manager, es un componente de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). Configuration Manager es una herramienta eficaz para administrar los usuarios, dispositivos y software. <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión con Configuration Manager](manage-mde-post-migration-configuration-manager.md).|
 |**[objetos directiva de grupo en Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/overview) incluye objetos directiva de grupo integrados para usuarios y dispositivos. Puede personalizar los objetos de directiva de grupo integrados según sea necesario para su entorno, así como crear objetos de directiva de grupo personalizados y unidades organizativas (OU). <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión con objetos directiva de grupo](manage-mde-post-migration-group-policy-objects.md).|

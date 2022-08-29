@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280771"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324394"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -69,7 +69,7 @@ Tema | Descripción
 [Métodos y propiedades **de alerta**](alerts.md) | Ejecute llamadas API, como \- obtener alertas, crear alertas, actualizar alertas, etc.
 [Exportación de métodos y propiedades de **evaluación** por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas API para recopilar evaluaciones de vulnerabilidades por dispositivo, como: \- evaluación de configuración segura de exportación, evaluación del inventario de software de exportación, evaluación de vulnerabilidades de software de exportación y evaluación de vulnerabilidades de software de exportación diferencial.
 [Propiedades y métodos **de investigación automatizados**](investigation.md) | Ejecute llamadas API, como \- get collection of Investigation.
-[Exportación de propiedades y métodos de mantenimiento del dispositivo](device-health-api-methods-properties.md) | Ejecutar llamadas API como - GET /api/public/avdeviceshealth.
+[Exportar las propiedades y los métodos de estado del dispositivo](device-health-api-methods-properties.md) | Ejecutar llamadas API como - GET /api/public/avdeviceshealth.
 [Alertas relacionadas con **el dominio**](get-domain-related-alerts.md) | Ejecute llamadas API, como \- obtener dispositivos relacionados con el dominio, estadísticas de dominio, etc.
 [Propiedades y métodos **de archivo**](files.md) | Ejecute llamadas API, como \- obtener información de archivos, alertas relacionadas con archivos, dispositivos relacionados con archivos y estadísticas de archivos.
 [Métodos y propiedades **de indicadores**](ti-indicator.md) | Ejecute una llamada API, como \- obtener indicadores, crear indicador y eliminar indicadores.

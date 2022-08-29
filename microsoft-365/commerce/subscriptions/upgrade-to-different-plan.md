@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: La manera más fácil de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, no siempre se admite la pestaña Actualizar.
 ms.date: 04/21/2021
-ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 18e5da20b67068b2834793a0b7013bb27e6c5adf
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489154"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324569"
 ---
 # <a name="upgrade-to-a-different-microsoft-plan"></a>Actualización a otro plan de Microsoft
 
@@ -165,4 +165,4 @@ El día que se complete la actualización del plan, se desactivará la facturaci
 ## <a name="related-content"></a>Contenido relacionado
 
 [Cambiar los planes manualmente](change-plans-manually.md) (artículo)\
-[Copia de seguridad de datos antes de cambiar Microsoft 365 para planes empresariales](back-up-data-before-switching-plans.md) (artículo)
+[Copia de seguridad de datos antes de cambiar Microsoft 365 para planes empresariales](move-users-different-subscription.md) (artículo)

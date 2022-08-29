@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fec93e45fbdced0cc6c4106d24a29eb13087d02
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531053"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323669"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Dispositivos fuera del panel del servicio Microsoft Defender para punto de conexión
 
@@ -47,7 +47,7 @@ Siga las instrucciones correspondientes en función del método de implementaci�
 >
 > El perfil del dispositivo (sin datos) permanecerá en la lista de [dispositivos](machines-view-overview.md) durante no más de 180 días.
 >
-> Además, los dispositivos que no están activos en los últimos 30 días no se tienen en cuenta en los datos que reflejan la [puntuación de exposición](tvm-exposure-score.md) Administración de amenazas y vulnerabilidades de la organización y la puntuación de seguridad de Microsoft para dispositivos.
+> Además, los dispositivos que no están activos en los últimos 30 días no se tienen en cuenta en los datos que reflejan la [puntuación de exposición](tvm-exposure-score.md) de Defender Vulnerability Management de su organización y la Puntuación de seguridad de Microsoft para dispositivos.
 >
 > Para ver solo los dispositivos activos, puede filtrar por [estado de mantenimiento del sensor](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [etiquetas de dispositivo](machine-tags.md) o [grupos de máquinas](machine-groups.md).
 

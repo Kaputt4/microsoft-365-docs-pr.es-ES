@@ -10,15 +10,16 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/24/2022
 ms.collection: M365-security-compliance
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 7d1715352ab1a1392b06cae5bfc3ee81196bf3e2
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e2e6ec0fca05aabe49ad720f1991d1b846c1678a
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66998480"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433689"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>Agregar usuarios y asignar licencias en Microsoft Defender para Empresas
 
@@ -43,11 +44,11 @@ En cuanto se haya registrado en Defender para empresas, el primer paso es agrega
 
    Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales. Para obtener más información sobre cómo agregar usuarios, vea [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md).
 
-5. En la página **Configuración opcional** , puede expandir **Información del perfil** y rellenar los detalles, como el título de jo del usuario, el departamento, la ubicación, etc. A continuación, elija **Siguiente**.
+5. En la página **Configuración opcional** , puede expandir **Información del perfil** y rellenar los detalles, como el puesto de trabajo del usuario, el departamento, la ubicación, etc. A continuación, elija **Siguiente**.
 
 6. En la página **Revisar y finalizar** , revise los detalles y, a continuación, seleccione **Finalizar la adición** para agregar el usuario. Si necesita realizar cambios, elija **Atrás** para volver a una página anterior.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Visitar el portal de Microsoft 365 Defender](mdb-get-started.md)
+- [Visite el portal de Microsoft 365 Defender](mdb-get-started.md)
 - [Use el asistente de configuración en Defender para empresas](mdb-use-wizard.md).
