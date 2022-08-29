@@ -13,6 +13,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,12 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: cc53717feed347019540ffcb8c85687a6c28537f
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 591c7a8aca882c0674eaa3ba4b3eacc89817e859
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607485"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388625"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -43,7 +44,7 @@ Con Microsoft 365 Defender, cuando se ejecuta una [investigación automatizada](
 
 La página de investigación se ha actualizado recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un lenguaje común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) y [Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo en el que verá:
 
-- Cualquier página de investigación en Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Security & Compliance Center</a>
+- Cualquier página de investigación del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">portal de cumplimiento Microsoft Purview</a>
 - Cualquier página de investigación en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))
 - Cualquier incidente o experiencia del Centro de acción en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>
 
@@ -105,7 +106,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 | Pestaña | Descripción |
 |:--------|:--------|
 | **Gráfico de investigación** | Proporciona una representación visual de la investigación. Muestra una lista de las entidades y enumera las amenazas encontradas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono **Evidencia** , se le lleva a la pestaña **Evidencia** , donde puede ver las entidades detectadas y sus veredictos. |
-| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden provenir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones de Office, Microsoft Defender for Cloud Apps y otras características de Microsoft 365 Defender. <br> <br> Tenga en cuenta que si ve *tipo de alerta no compatible*, significa que las funcionalidades de investigación automatizada no pueden recoger esa alerta para ejecutar una investigación automatizada. Sin embargo, puede [investigar estas alertas manualmente](investigate-incidents.md#alerts).
+| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden provenir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones de Office, Microsoft Defender for Cloud Apps y otras características de Microsoft 365 Defender. <br> <br> Si ve *tipo de alerta no compatible*, significa que las funcionalidades de investigación automatizada no pueden recoger esa alerta para ejecutar una investigación automatizada. Sin embargo, puede [investigar estas alertas manualmente](investigate-incidents.md#alerts).
 | **Devices** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)). |
 | **Buzones** |Enumera los buzones que se ven afectados por las amenazas detectadas.  |
 | **Usuarios**  | Enumera las cuentas de usuario que se ven afectadas por las amenazas detectadas. |
@@ -113,6 +114,59 @@ En la vista de detalles de la investigación, puede ver información en las pest
 | **Entities** | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad (*malintencionada*, *sospechosa* o *Sin amenazas encontradas*).|
 |**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de que se desencadenó una alerta.|
 | **Historial de acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) para aprobar las acciones pendientes. |
+
+
+## <a name="investigation-states"></a>Estados de investigación
+
+En la tabla siguiente se enumeran los estados de investigación y lo que indican.
+
+
+|Estado de investigación  |Definición  |
+|---------|---------|
+|Benigno   | Se investigaron los artefactos y se estableció que no se encontraron amenazas.|
+|PendingResource     | Una investigación automatizada se pausa porque una acción de corrección está pendiente de aprobación o el dispositivo en el que se encontró un artefacto no está disponible temporalmente.|
+|UnsupportedAlertType     | No hay disponible una investigación automatizada para este tipo de alerta. Se puede realizar una investigación adicional manualmente mediante la búsqueda avanzada. |
+|Error     | Al menos un analizador de investigación se encontró con un problema en el que no pudo completar la investigación. Si se produce un error en una investigación después de aprobar las acciones de corrección, es posible que las acciones de corrección se hayan realizado correctamente.|
+|Corrección correcta| Se completó una investigación automatizada y se completaron o aprobaron todas las acciones de corrección.|
+
+Para proporcionar más contexto sobre cómo se muestran los estados de investigación, en la tabla siguiente se enumeran las alertas y su estado de investigación automatizado correspondiente. Esta tabla se incluye como ejemplo de lo que un equipo de operaciones de seguridad podría ver en el portal de Microsoft 365 Defender.
+
+|Nombre de alerta | Severity | Estado de investigación | Estado | Categoría |
+|-----------|----------|---------------------|--------|----------|
+|Se detectó malware en un archivo de imagen de disco wim|Informativo|Benigno|Resuelto|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
+|Wpakill hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
+|GendowsBatch hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
+|Keygen hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|MediaGet detectado|Mediano|Parcialmente invertido|Nuevo|Malware|
+|TrojanEmailFile|Mediano|CorrectamenteRemediated|Resuelto|Malware|
+|Se ha evitado el malware CustomEnterpriseBlock|Informativo|CorrectamenteRemediated|Resuelto|Malware|
+|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|CorrectamenteRemediated|Resuelto|Malware|
+|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|CorrectamenteRemediated|Resuelto|Malware|
+|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|CorrectamenteRemediated|Resuelto|Malware|
+|TrojanEmailFile|Mediano|Benigno|Resuelto|Malware|
+|Se ha evitado el malware CustomEnterpriseBlock|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|Se ha evitado el malware CustomEnterpriseBlock|Informativo|CorrectamenteRemediated|Resuelto|Malware|
+|TrojanEmailFile|Mediano|CorrectamenteRemediated|Resuelto|Malware|
+|TrojanEmailFile|Mediano|Benigno|Resuelto|Malware|
+|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|PendingResource|Nuevo|Malware|
 
 ## <a name="next-steps"></a>Siguientes pasos
 

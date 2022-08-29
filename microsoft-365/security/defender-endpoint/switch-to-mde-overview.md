@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 63b932df7337a757a0358719e32409ab8c6ea117
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174968"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331305"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión
 
@@ -67,7 +67,7 @@ En esta guía de migración, nos centramos en la [protección de última generac
 
 |Característica o funcionalidad|Descripción|
 |---|---|
-|[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)|Las funcionalidades de administración de vulnerabilidades & amenazas ayudan a identificar, evaluar y corregir las debilidades en los puntos de conexión (como los dispositivos).|
+|[Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)|Las funcionalidades de Administración de vulnerabilidades de Defender ayudan a identificar, evaluar y corregir las debilidades en los puntos de conexión (como los dispositivos).|
 |[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)|Las reglas de reducción de superficie expuesta a ataques ayudan a proteger los dispositivos y las aplicaciones de su organización frente a ciberataques y ataques.|
 |[Protección de última generación](microsoft-defender-antivirus-in-windows-10.md)|La protección de última generación incluye antivirus de Microsoft Defender para ayudar a bloquear amenazas y malware.|
 |[EDR](overview-endpoint-detection-response.md)|Las funcionalidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusiones y infracciones activas.|

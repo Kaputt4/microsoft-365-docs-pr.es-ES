@@ -16,26 +16,26 @@ ms.custom:
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19bf82a530cd61b253047261bb44893266a240d8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 90d0e4293a08b77347aace9098cc9c65851a4cab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941575"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388471"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege a su organización contra el correo no deseado, el malware y otras amenazas de correo electrónico. EOP se incluye en todas las organizaciones Microsoft 365 con buzones Exchange Online.
+Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege a su organización contra el correo no deseado, el malware y otras amenazas de correo electrónico. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones Exchange Online.
 
 > [!NOTE]
-> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones locales Exchange. Para obtener más información, vea [Exchange Online Protection independiente](/exchange/standalone-eop/standalone-eop).
+> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones de Exchange locales. Para obtener más información, vea [Exchange Online Protection independiente](/exchange/standalone-eop/standalone-eop).
 
 Los pasos para configurar las características de seguridad de EOP y una comparación con la seguridad agregada que obtiene en Microsoft Defender para Office 365, consulte [Protección contra amenazas](protect-against-threats.md). La configuración recomendada para las características de EOP está disponible en [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
@@ -55,7 +55,7 @@ Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el c
 
    En la organización local con Exchange Enterprise CAL con licencias de servicios, las [comprobaciones de prevención de pérdida de datos (DLP) de Microsoft Purview](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) en EOP también se producen en este momento.
 
-4. El mensaje pasa por el filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, spam de alta confianza, phishing, suplantación de identidad de alta confianza o en masa (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, traslado a la carpeta Correo no deseado, etc.) y lo que los usuarios pueden hacer a los mensajes en cuarentena mediante [directivas de cuarentena](quarantine-policies.md). Para obtener más información, vea [Configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md) y [Configurar directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
+4. El mensaje pasa por el filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, spam de alta confianza, phishing, suplantación de identidad de alta confianza o en masa (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, traslado a la carpeta de Email no deseado, etc.) y lo que los usuarios pueden hacer a los mensajes en cuarentena mediante [directivas de cuarentena](quarantine-policies.md). Para obtener más información, vea [Configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md) y [Configurar directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
 Se entrega a los destinatarios un mensaje que pasa correctamente todas estas capas de protección.
 
@@ -87,35 +87,35 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |**Protection**||
 |Antimalware|[Protección contra malware en EOP](anti-malware-protection.md) <p> [Preguntas más frecuentes sobre la protección antimalware](anti-malware-protection-faq-eop.yml) <p> [Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md)|
 |Antispam entrante|[Protección contra correo no deseado en EOP](anti-spam-protection.md) <p> [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.yml) <p> [Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-|Antispam saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
+|Antispam saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Control del reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
 |Filtrado de la conexión|[Configurar el filtrado de la conexión](configure-the-connection-filter-policy.md)|
 |Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
-|Protección contra la suplantación de identidad|[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
+|Protección contra la suplantación de identidad|[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](manage-tenant-allow-block-list.md)|
 |Purga automática de cero horas (ZAP) para mensajes de malware, spam y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
 |Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
-|Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
+|Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](manage-tenant-allow-block-list.md)|
 |Listas de bloques para remitentes de mensajes|[Creación de listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Creación de listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
 |**Cuarentena y envíos**||
-|Envío de administrador|[Uso del envío de administrador para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md)|
+|envío de Administración|[Usar Administración envío para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md)|
 |Envíos de usuarios (buzón personalizado)|[Directiva de envíos de usuarios](user-submission.md)|
 |Cuarentena: administradores|[Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md) <p> [Preguntas más frecuentes sobre mensajes en cuarentena](quarantine-faq.yml) <p> [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md) <p> Puede analizar los encabezados de mensaje de los mensajes en cuarentena mediante el [Analizador de encabezados](https://mha.azurewebsites.net/) de mensaje en .|
 |Cuarentena: usuarios finales|[Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Uso de notificaciones de cuarentena para liberar e informar de mensajes en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Directivas de cuarentena](quarantine-policies.md)|
 |**Flujo de correo**||
-|Reglas de flujo de correo|[Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Condiciones y excepciones de regla de flujo de correo (predicados) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Acciones de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Administrar reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedimientos de regla de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
+|Reglas de flujo de correo|[Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Condiciones y excepciones de regla de flujo de correo (predicados) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Acciones de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Administrar reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedimientos de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Dominios aceptados|[Administrar dominios aceptados en Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|
 |Conectores|[Configuración del flujo de correo mediante conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Filtrado avanzado para conectores|[Filtrado mejorado para conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Supervisión**||
-|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el centro de administración de Exchange](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
-|Informes de colaboración de & por correo electrónico|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md)|
-|Informes de flujo de correo|[Ver informes de flujo de correo](view-mail-flow-reports.md) <p> [Informes de flujo de correo en el centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Conclusiones de flujo de correo|[Conclusiones de flujo de correo](mail-flow-insights-v2.md) <p> [Información del flujo de correo en el centro de administración de Exchange](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
-|Informes de auditoría|[Informes de auditoría en el centro de administración de Exchange](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
+|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el Centro de administración de Exchange](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|informes de colaboración de Email &|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md)|
+|Informes de flujo de correo|[Ver informes de flujo de correo](view-mail-flow-reports.md) <p> [Informes de flujo de correo en el Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|Conclusiones de flujo de correo|[Conclusiones de flujo de correo](mail-flow-insights-v2.md) <p> [Información de flujo de correo en el Centro de administración de Exchange](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Informes de auditoría|[Informes de auditoría en el Centro de administración de Exchange](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Directivas de alerta|[Directivas de alerta](../../compliance/alert-policies.md)|
 |**Acuerdos de nivel de servicio (SLA) y soporte técnico**||
-|SLA de efectividad en cuanto a correo no deseado|\> 99%|
+|SLA de efectividad en cuanto a correo no deseado|\> 99 %|
 |SLA sobre proporción de falsos positivos|\< 1:250,000|
 |SLA sobre detección y bloqueo de virus|100% de virus conocidos|
 |SLA sobre el tiempo de actividad mensual|99,999%|

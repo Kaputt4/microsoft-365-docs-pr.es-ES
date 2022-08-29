@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/18/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: 24e92f47586e9576d8cfbb0616d3b25f28f7482a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300659"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386547"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Protección contra malware y otras ciberamenazas con Microsoft 365 Empresa Premium
 
@@ -34,6 +34,7 @@ En este objetivo, aumentará la protección contra amenazas con Microsoft 365 Em
 - [Directivas de seguridad personalizadas](#create-custom-security-policies) que puede definir para satisfacer sus necesidades empresariales.
 - [Cómo ajustar la configuración de uso compartido para archivos y carpetas de SharePoint y OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Directivas de alerta](#review-your-alert-policies) que supervisan archivos específicos y cómo se usan.
+- [Administre el uso compartido de calendarios](#manage-calendar-sharing) para permitir que los usuarios programe las reuniones correctamente.
 - [Sus próximos objetivos](#next-objectives).
 
 ## <a name="review-and-apply-preset-security-policies"></a>Revisión y aplicación de directivas de seguridad preestablecidas
@@ -70,11 +71,11 @@ Si a los usuarios se les asignan varias directivas, se usa un orden de prioridad
 
 1. **La protección estricta** recibe la prioridad más alta e invalida todas las demás directivas.
 
-1. **Protección estándar** 
+2. **Protección estándar** 
 
-1. **Directivas de seguridad personalizadas**
+3. **Directivas de seguridad personalizadas**
 
-1. **La protección integrada** recibe la prioridad más baja y se invalida por la protección estricta, la protección estándar y las directivas personalizadas.
+4. **La protección integrada** recibe la prioridad más baja y se invalida por la protección estricta, la protección estándar y las directivas personalizadas.
 
 La protección estricta invalida el resto de directivas y las demás directivas invalidan la protección integrada. 
 
@@ -95,11 +96,11 @@ Para asignar directivas de seguridad preestablecidas, siga estos pasos:
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-1. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Directivas de seguridad prestablecidas** en la sección **Directivas con plantilla**. (Para ir directamente a la página de **Directivas de seguridad preestablecidas**, use <https://security.microsoft.com/presetSecurityPolicies>.)
+2. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Directivas de seguridad prestablecidas** en la sección **Directivas con plantilla**. (Para ir directamente a la página de **Directivas de seguridad preestablecidas**, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-1. En la página **Directivas de seguridad preestablecidas**, en la sección **Protección estándar** o **Protección estricta**, cambie el botón de alternancia de **Deshabilitado** a **Habilitado** y, a continuación, seleccione **Administrar**.
+3. En la página **Directivas de seguridad preestablecidas**, en la sección **Protección estándar** o **Protección estricta**, cambie el botón de alternancia de **Deshabilitado** a **Habilitado** y, a continuación, seleccione **Administrar**.
 
-1. El asistente **Aplicar protección estándar** o **Aplicar protección estricta** se inicia en un control flotante. En la página **Protecciones de EOP que se aplican a**, identifique los destinatarios internos a los que se aplican las directivas (condiciones de destinatario):
+4. El asistente **Aplicar protección estándar** o **Aplicar protección estricta** se inicia en un control flotante. En la página **Protecciones de EOP que se aplican a**, identifique los destinatarios internos a los que se aplican las directivas (condiciones de destinatario):
    - **Usuarios**
    - **Grupos**
    - **Dominios**
@@ -112,11 +113,11 @@ Para asignar directivas de seguridad preestablecidas, siga estos pasos:
 
    Cuando termine, haga clic en **Siguiente**.
 
-1. En la página **Defender para Office 365 las protecciones se aplican a** para identificar los destinatarios internos a los que se aplican las directivas (condiciones de destinatario). Especifique usuarios, grupos y dominios igual que hizo en el paso anterior.
+5. En la página **Defender para Office 365 las protecciones se aplican a** para identificar los destinatarios internos a los que se aplican las directivas (condiciones de destinatario). Especifique usuarios, grupos y dominios igual que hizo en el paso anterior.
 
    Cuando termine, haga clic en **Siguiente**.
 
-1. En la página **Revisar y confirmar los cambios**, compruebe las selecciones y, a continuación, seleccione **Confirmar**.
+6. En la página **Revisar y confirmar los cambios**, compruebe las selecciones y, a continuación, seleccione **Confirmar**.
 
 > [!TIP]
 > Para obtener más información sobre la asignación de directivas de seguridad preestablecidas, consulte los artículos siguientes:
@@ -140,13 +141,13 @@ De forma predeterminada, los niveles de uso compartido se establecen en el nivel
 
 1. Vaya a <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido** en el Centro de administración de SharePoint</a>, e inicie sesión con una cuenta que tenga [permisos de administrador](/sharepoint/sharepoint-admin-role) en su organización.
 
-1. En **Uso compartido externo**, especifique el nivel de uso compartido. (Se recomienda usar **Menos permisivo** para evitar el uso compartido externo).
+2. En **Uso compartido externo**, especifique el nivel de uso compartido. (Se recomienda usar **Menos permisivo** para evitar el uso compartido externo).
 
-1. En **Vínculos de archivos y carpetas**, seleccione una opción (por ejemplo, **Personas específicas**). A continuación, elija si desea conceder permisos de Vista o Edición de forma predeterminada para los vínculos compartidos (por ejemplo, **Ver**).
+3. En **Vínculos de archivos y carpetas**, seleccione una opción (por ejemplo, **Personas específicas**). A continuación, elija si desea conceder permisos de Vista o Edición de forma predeterminada para los vínculos compartidos (por ejemplo, **Ver**).
 
-1. En **Otras opciones**, seleccione las opciones que desea usar.
+4. En **Otras opciones**, seleccione las opciones que desea usar.
 
-1. A continuación, elija **Guardar**.
+5. A continuación, elija **Guardar**.
 
 > [!TIP]
 > Para más información sobre esta configuración, consulte[Administrar configuración de uso compartido.](/sharepoint/turn-external-sharing-on-or-off).
@@ -163,9 +164,9 @@ En la imagen siguiente se muestran algunas de las directivas predeterminadas que
 
 1. Vaya al portal de cumplimiento de Microsoft Purview en [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.
 
-1. En el panel de navegación, elija **Directivas** y, a continuación, elija **Directivas de alerta**.
+2. En el panel de navegación, elija **Directivas** y, a continuación, elija **Directivas de alerta**.
 
-1. Seleccione una directiva individual para ver más detalles o editarla. En la imagen siguiente se muestra una lista de directivas de alerta con una directiva seleccionada:
+3. Seleccione una directiva individual para ver más detalles o editarla. En la imagen siguiente se muestra una lista de directivas de alerta con una directiva seleccionada:
 
    :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Captura de pantalla de una directiva de alerta seleccionada.":::
 
@@ -183,19 +184,15 @@ Puede ver las alertas en el portal de Microsoft 365 Defender o en el portal de c
 
 Para obtener más información, vea [Ver alertas](../compliance/alert-policies.md#view-alerts).
 
-## <a name="disable-or-manage-calendar-sharing"></a>Deshabilitar o administrar el uso compartido del calendario
+## <a name="manage-calendar-sharing"></a>Administración del uso compartido de calendarios
 
-Puede evitar que las personas de su organización compartan sus calendarios. También puede administrar qué nivel de detalle pueden compartir. Por ejemplo, puede restringir el uso compartido solo a horas de mucho o poco trabajo.
+Puede ayudar a los usuarios de su organización a compartir sus calendarios adecuadamente para una mejor colaboración. Puede administrar qué nivel de detalle pueden compartir, por ejemplo, limitando los detalles que se comparten solo a los tiempos de disponibilidad.
 
 1. Vaya a [Configuración de la organización en el Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) e inicie sesión.
 
-1. Elija **Calendario** y elija si las personas de su organización pueden compartir sus calendarios con personas de fuera que tengan Office 365 o Exchange, o con cualquier persona.
+2. Elija **Calendario** y elija si las personas de su organización pueden compartir sus calendarios con personas de fuera que tengan Office 365 o Exchange, o con cualquier persona. Se recomienda borrar la opción de **Uso compartido externo**. Si decide compartir calendarios con cualquier opción, puede optar por compartir también solo información de disponibilidad.
 
-   Se recomienda borrar la opción de **Uso compartido externo**.
-
-   Si elige la opción compartir con cualquier persona, puede decidir si se puede compartir la información de libre/ocupado.
-
-1. Elija **Guardar cambios** en la parte inferior de la página.
+3. Elija **Guardar cambios** en la parte inferior de la página.
 
    En la imagen siguiente se muestra que no se permite el uso compartido de calendarios.
 

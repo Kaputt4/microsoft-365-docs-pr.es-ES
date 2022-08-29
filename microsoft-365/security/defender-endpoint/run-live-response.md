@@ -1,7 +1,7 @@
 ---
-title: Ejecutar comandos de respuesta en directo en un dispositivo
-description: Aprende a ejecutar una secuencia de comandos de respuesta en directo en un dispositivo.
-keywords: apis, api de gráficos, api admitidas, carga en biblioteca
+title: Ejecución de comandos de respuesta en directo en un dispositivo
+description: Obtenga información sobre cómo ejecutar una secuencia de comandos de respuesta dinámica en un dispositivo.
+keywords: api, graph api, api admitidas, carga en la biblioteca
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e81c235105a7c7479a917c7cb7cc404e2553f2f1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ffed96a1587a656687826c8faee54dc57826a14
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323525"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331437"
 ---
-# <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
+# <a name="run-live-response-commands-on-a-device"></a>Ejecución de comandos de respuesta en directo en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,27 +43,27 @@ ms.locfileid: "63323525"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
+Ejecuta una secuencia de comandos de respuesta dinámica en un dispositivo.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 10 llamadas por minuto (las solicitudes adicionales se responden con HTTP 429).
+1. Las limitaciones de velocidad de esta API son de 10 llamadas por minuto (las solicitudes adicionales se responden con HTTP 429).
 
 2. 25 sesiones en ejecución simultánea (las solicitudes que superen el límite de limitación recibirán una respuesta "429 - Demasiadas solicitudes").
 
-3. Si el equipo no está disponible, la sesión se pondrá en cola durante un máximo de 3 días.
+3. Si la máquina no está disponible, la sesión se pondrá en cola durante un máximo de 3 días.
 
-4. Los tiempos de espera del comando RunScript se agotan después de 10 minutos.
+4. Tiempos de espera del comando RunScript después de 10 minutos.
 
-5. Los comandos de respuesta activa no se pueden poner en cola y solo se pueden ejecutar uno a la vez.
+5. Los comandos de respuesta dinámica no se pueden poner en cola y solo se pueden ejecutar de uno en uno.
 
-6. Si la máquina que intenta ejecutar esta llamada a la API se encuentra en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel mínimo de corrección para un grupo de dispositivos determinado.
+6. Si la máquina que intenta ejecutar esta llamada API está en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel de corrección mínimo para un grupo de dispositivos determinado.
 
-7. Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones posteriores.
+7. Se pueden ejecutar varios comandos de respuesta dinámica en una sola llamada API. Sin embargo, cuando se produce un error en un comando de respuesta dinámica, no se ejecutarán todas las acciones posteriores.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
-Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguientes requisitos:
+Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguientes requisitos:
 
 - **Compruebe que está ejecutando una versión compatible de Windows**.
 
@@ -74,24 +74,24 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows 10**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Server 2019: solo se aplica a la versión preliminar pública**
-    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) más adelante
-    - Versión 1809 ( [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+  - **Windows Server 2019: solo aplicable para la versión preliminar pública**
+    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
+    - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
-|Tipo de permiso|Permiso|Nombre para mostrar de permisos|
+|Tipo de permiso|Permiso|Nombre para mostrar del permiso|
 |---|---|---|
-|Aplicación|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
-|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
+|Application|Machine.LiveResponse|Ejecución de una respuesta en directo en una máquina específica|
+|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecución de una respuesta en directo en una máquina específica|
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -103,29 +103,29 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|Portador\<token>\. Obligatorio.|
+|Authorization|Cadena|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 |Parámetro|Tipo|Descripción|
 |---|---|---|
-|Comentario|Cadena|Comentario para asociarlo a la acción.|
-|Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
+|Comentario|Cadena|Comentario que se va a asociar a la acción.|
+|Comandos|Matriz|Comandos que se van a ejecutar. Los valores permitidos son PutFile, RunScript y GetFile.|
 
 ## <a name="commands"></a>Comandos
 
 |Tipo de comando|Parámetros|Description|
 |---|---|---|
 |PutFile|Clave: FileName <p> Valor: \<file name\>|Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.
-|RunScript|Clave: ScriptName <br> Valor: \<Script from library\> <p> Clave: Args <br> Valor: \<Script arguments\>|Ejecuta un script de la biblioteca en un dispositivo. <p>  El parámetro Args se pasa al script. <p> Tiempo de espera después de 10 minutos.|
-|GetFile|Clave: Ruta de acceso <br> Valor: \<File path\>|Recopilar archivo de un dispositivo. NOTA: Las barras diagonales inversas en la ruta de acceso deben ser de escape.|
+|Runscript|Clave: ScriptName <br> Valor: \<Script from library\> <p> Clave: Args <br> Valor: \<Script arguments\>|Ejecuta un script desde la biblioteca en un dispositivo. <p>  El parámetro Args se pasa al script. <p> Tiempos de espera después de 10 minutos.|
+|GetFile|Clave: Ruta de acceso <br> Valor: \<File path\>|Recopilar archivo de un dispositivo. NOTA: Las barras diagonales inversas en la ruta de acceso deben tener escape.|
 
 ## <a name="response"></a>Respuesta
 
-- Si se realiza correctamente, este método devuelve 201 Created.
+- Si se ejecuta correctamente, este método devuelve 201 Created.
 
-  Entidad Action. Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
+  Entidad Action. Si no se encontró la máquina con el identificador especificado: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 
@@ -229,6 +229,6 @@ Tipo de contenido: application/json
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Obtener API de acción de máquina](get-machineaction-object.md)
+- [Obtención de la API de acción de la máquina](get-machineaction-object.md)
 - [Obtener resultado de respuesta en directo](get-live-response-result.md)
 - [Cancelar acción de máquina](cancel-machine-action.md)

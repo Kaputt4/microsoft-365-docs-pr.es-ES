@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 90e29a5ec2ddf70afb299398113be034580eda85
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 81ebf6305ca4e60a33eb262fc277efe298d19c43
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66998876"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331849"
 ---
 # <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-365-f-plan"></a>Cambio de un plan de Microsoft 365 E a un plan de Microsoft 365 F
 
@@ -209,7 +209,7 @@ Identifique y realice copias de seguridad o prepare los datos que los usuarios d
 - Teams
 - OneDrive
 
-Para obtener más información, consulte [Copia de seguridad de los datos antes de cambiar de plan](/microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans).
+Para obtener más información, consulte [Copia de seguridad de los datos antes de cambiar de plan](/microsoft-365/commerce/subscriptions/move-users-different-subscription).
 
 ## <a name="switch-users-to-a-microsoft-365-f-plan"></a>Cambiar usuarios a un plan de Microsoft 365 F
 

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del código fiscal de Italia.
-ms.openlocfilehash: 1a27af7f33aba799a37c64c37e53eef01555ec3c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dd7fae7b927532d9224cc852419f01e31f5dbef4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000391"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368573"
 ---
 # <a name="italy-fiscal-code"></a>Número de identificación fiscal de Italia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -100,19 +92,19 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - personalcodeno #
 - Código fiscal
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
 - número de identidad fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

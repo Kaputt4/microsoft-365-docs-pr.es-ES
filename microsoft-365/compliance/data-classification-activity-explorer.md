@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El Explorador de actividades le permite ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918010"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417398"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -36,7 +36,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 - Intervalo de fechas
 - Tipo de actividad
 - Ubicación
-- Usuario
+- User
 - Etiqueta de confidencialidad
 - Etiqueta de retención
 - Ruta de acceso de archivo
@@ -59,18 +59,18 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 
 Una cuenta debe tener asignada explícitamente la pertenencia a cualquiera de estos grupos de roles o conceder explícitamente el rol.
 
-### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+### <a name="roles-and-role-groups"></a>Roles y grupos de roles
 
-Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+Hay roles y grupos de roles que puede usar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que puede usar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que puede usar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
@@ -132,7 +132,7 @@ Comprender qué acciones se realizan con el contenido etiquetado confidencial le
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
 - [Obtenga información sobre la clasificación de datos](data-classification-overview.md)

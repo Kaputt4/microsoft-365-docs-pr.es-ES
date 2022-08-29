@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: 7417592f4000d344fe6a093de4de02bcecba573e
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037652"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417464"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -43,6 +43,8 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para prot
 > La configuración para dispositivos no administrados y contextos de autenticación funciona junto con el acceso condicional de Azure Active Directory. Debe configurar esta característica dependiente si desea usar una etiqueta de confidencialidad para esta configuración. Se incluye información adicional en las instrucciones siguientes.
 
 Cuando se aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente a la categoría de sensibilidad y las opciones de protección configuradas al sitio o grupo.
+
+Tenga en cuenta que algunas opciones de etiqueta pueden ampliar la configuración a los propietarios del sitio, que de lo contrario están restringidas a los administradores. Al configurar y publicar la configuración de etiqueta para las opciones de uso compartido externo y el contexto de autenticación, el propietario del sitio ahora puede establecer y cambiar estas opciones para un sitio aplicando o cambiando la etiqueta de confidencialidad de un equipo o sitio. No configure estas opciones de etiqueta específicas si no quiere que los propietarios del sitio puedan realizar estos cambios.
 
 Sin embargo, el contenido de estos contenedores no hereda las etiquetas de la categoría de confidencialidad ni la configuración de archivos y correos electrónicos, como las marcas de contenido y el cifrado. Para que los usuarios puedan etiquetar sus documentos en los sitios de SharePoint o de grupos, asegúrese de [habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 

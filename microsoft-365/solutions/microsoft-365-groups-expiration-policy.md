@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre las directivas de expiración de grupos de Microsoft 365.
-ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: d91f3f09ccc1ffd562d87f5018953a6cd4fc8574
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050664"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388405"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupos de Microsoft 365
 
 Con el aumento del uso de los grupos de Microsoft 365 y Microsoft Teams, los administradores y los usuarios necesitan una forma de limpiar los grupos y equipos que no usen. Una directiva de expiración de los grupos de Microsoft 365 de expiración puede ayudar a quitar grupos inactivos del sistema y a tener las cosas más limpias.
 
-Cuando un grupo expire, también se eliminarán todos los servicios asociados (el buzón, Planner, el sitio de SharePoint, equipo, etc.).
+Cuando un grupo expira, [casi todos sus servicios asociados (el buzón, Planner, el sitio de SharePoint, el equipo, etc.) también se eliminan](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer).
 
 Cuando un grupo expira, se "elimina temporalmente", lo que significa que todavía se puede recuperar durante un máximo de 30 días.
 
-Los administradores pueden especificar un período de expiración y se eliminará cualquier grupo inactivo que llegue al final de ese período y no se renueve. (Esto incluye equipos archivados). El período de expiración comienza cuando se crea el grupo o en la fecha en que se renovó por última vez. A los propietarios del grupo se les enviará automáticamente un correo electrónico antes de la expiración, lo que les permitirá renovar el grupo para otro intervalo de expiración. Los usuarios de Teams verán notificaciones persistentes en Teams.
+Los administradores pueden especificar un período de expiración y se eliminará cualquier grupo inactivo que llegue al final de ese período y no se renueve. (Esto incluye equipos archivados). El período de expiración comienza cuando se crea el grupo o en la fecha en que se renovó por última vez. Los propietarios del grupo recibirán automáticamente una notificación antes de la expiración que les permita renovar el grupo para otro intervalo de expiración. Los avisos de expiración de los grupos usados en Teams aparecen en la fuente Propietarios de Teams.
 
 Los grupos que se usen activamente se renovarán automáticamente. Cualquiera de las siguientes acciones hará que se renueve automáticamente un grupo:
 - SharePoint: ver, editar, descargar, mover, compartir o cargar archivos. (Ver una página de SharePoint no contará como una acción para la renovación automática).
@@ -58,11 +58,11 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la directiva de expiración
 
-Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarlo, vaya a **Expiración** de **grupos** >  de **Azure Active Directory** > . Aquí puede establecer la duración predeterminada del grupo y especificar con qué antelación quiere que las notificaciones de expiración primera y segunda vayan al propietario del grupo.
+Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarlo, vaya a **Expiración** de **grupos** >  de **Azure Active Directory** > . Aquí puede establecer la duración predeterminada del grupo.
 
 La duración del grupo se especifica en días y se puede establecer en 180, 365 o en un valor personalizado que especifique. El valor personalizado debe ser de al menos 30 días.
 
-Si el grupo no tiene un propietario, los correos electrónicos de expiración se dirigirán al administrador especificado.
+Si el grupo no tiene un propietario, los correos electrónicos de expiración se dirigirán al correo electrónico especificado.
 
 Puede establecer la directiva para todos los grupos, solo los grupos seleccionados (hasta 500) o desactivarla completamente seleccionando **Ninguno**. Al seleccionar **Ninguno** , todos los grupos que están activos y pendientes para la comprobación no tendrán fecha de expiración. Sin embargo, los grupos que ya han expirado no se ven afectados.
 

@@ -1,6 +1,6 @@
 ---
-title: Aplicar actualizaciones Antivirus de Microsoft Defender después de ciertos eventos
-description: Administre cómo Antivirus de Microsoft Defender aplica las actualizaciones de inteligencia de seguridad después de iniciar o recibir informes de detección entregados en la nube.
+title: Aplicación de actualizaciones del Antivirus de Microsoft Defender después de determinados eventos
+description: Administre cómo el Antivirus de Microsoft Defender aplica las actualizaciones de inteligencia de seguridad después de iniciar o recibir informes de detección entregados en la nube.
 keywords: updates, protection, force updates, events, startup, check for latest, notifications
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 813dfe410a3e6cf198d6d4a36afd6d2987f6d376
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 315e3e41e78ad29042eadf60ec1a01dba1517583
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415604"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387603"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 
@@ -40,11 +40,11 @@ Antivirus de Microsoft Defender permite determinar si las actualizaciones deben 
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Comprobación de actualizaciones de protección antes de ejecutar un examen
 
-Puede usar Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell y WMI para forzar a Antivirus de Microsoft Defender a comprobar y descargar las actualizaciones de protección antes de ejecutar un examen programado.
+Puede usar microsoft endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell y WMI para forzar a Antivirus de Microsoft Defender a comprobar y descargar las actualizaciones de protección antes de ejecutar un examen programado.
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Usar Configuration Manager para comprobar si hay actualizaciones de protección antes de ejecutar un examen
 
-1. En la consola de Microsoft Endpoint Manager, abra la directiva antimalware que desea cambiar (haga clic en **Activos y compatibilidad** en el panel de navegación de la izquierda y, a continuación, expanda el árbol a **Información general** \> **Endpoint Protection** \> **directivas antimalware**)
+1. En la consola de Microsoft Endpoint Manager, abra la directiva antimalware que desea cambiar (haga clic en **Activos y compatibilidad** en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Directivas **de antimalware** de **Endpoint Protection** \> **de información general**\>).
 
 2. Vaya a la sección **Exámenes programados** y establezca **Buscar las últimas actualizaciones de inteligencia de seguridad antes de ejecutar un examen** en **Sí**.
 
@@ -60,7 +60,7 @@ Puede usar Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **Examen**.
+4. Expanda el árbol a **Componentes** \> de Windows **Examen del Antivirus** \> de Microsoft Defender **.**
 
 5. Haga doble clic en **Comprobar las definiciones de virus y spyware más recientes antes de ejecutar un examen programado** y establezca la opción **en Habilitado**.
 
@@ -76,7 +76,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 
 Para obtener más información, vea [Usar cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender/index).
 
-### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Use Windows Management Instruction (WMI) para comprobar si hay actualizaciones de protección antes de ejecutar un examen.
+### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Uso de Instrucciones de administración de Windows (WMI) para comprobar si hay actualizaciones de protección antes de ejecutar un examen
 
 Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -96,15 +96,15 @@ Puede usar directiva de grupo para forzar a Antivirus de Microsoft Defender a co
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **actualizaciones de inteligencia de seguridad**.
+4. Expanda el árbol a **componentes** \> de Windows **Novedades de Inteligencia de seguridad** **del Antivirus** \> de Microsoft Defender.
 
 5. Haga doble clic en **Comprobar si hay las definiciones de virus y spyware más recientes en el inicio** y establezca la opción **en Habilitado**.
 
 6. Haga clic en **Aceptar**.
 
-También puede usar directiva de grupo, PowerShell o WMI para configurar Antivirus de Microsoft Defender para comprobar si hay actualizaciones en el inicio, incluso cuando no se está ejecutando.
+También puede usar directiva de grupo, PowerShell o WMI para configurar antivirus de Microsoft Defender para comprobar si hay actualizaciones en el inicio, incluso cuando no se está ejecutando.
 
-### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Usar directiva de grupo para descargar actualizaciones cuando no haya Antivirus de Microsoft Defender
+### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Uso de directiva de grupo para descargar actualizaciones cuando el Antivirus de Microsoft Defender no está presente
 
 1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
 
@@ -112,13 +112,13 @@ También puede usar directiva de grupo, PowerShell o WMI para configurar Antivir
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **actualizaciones de inteligencia de seguridad**.
+4. Expanda el árbol a **componentes** \> de Windows **Novedades de Inteligencia de seguridad** **del Antivirus** \> de Microsoft Defender.
 
 5. Haga doble clic en **Iniciar actualización de inteligencia de seguridad al iniciar** y establezca la opción **en Habilitado**.
 
 6. Haga clic en **Aceptar**.
 
-### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Uso de cmdlets de PowerShell para descargar actualizaciones cuando Antivirus de Microsoft Defender no está presente
+### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Uso de cmdlets de PowerShell para descargar actualizaciones cuando el Antivirus de Microsoft Defender no está presente
 
 Use los siguientes cmdlets:
 
@@ -126,9 +126,9 @@ Use los siguientes cmdlets:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Para obtener más información, consulte [Uso de cmdlets de PowerShell para administrar cmdlets Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Antivirus de Defender](/powershell/module/defender/index) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
+Para obtener más información, consulte [Uso de cmdlets de PowerShell para administrar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [los cmdlets del Antivirus de Defender](/powershell/module/defender/index) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Use Windows Management Instruction (WMI) para descargar actualizaciones cuando Antivirus de Microsoft Defender no esté presente
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Uso de Instrucciones de administración de Windows (WMI) para descargar actualizaciones cuando el Antivirus de Microsoft Defender no está presente
 
 Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -144,7 +144,7 @@ Para obtener más información, consulte [Windows Defender API WMIv2](/previous-
 
 Antivirus de Microsoft Defender puede realizar cambios en su protección en función de la protección proporcionada en la nube. Estos cambios pueden producirse fuera de las actualizaciones de protección normales o programadas.
 
-Si ha habilitado la protección entregada en la nube, El antivirus de Microsoft Defender enviará archivos sospechosos a la nube de Windows Defender. Si el servicio en la nube informa de que el archivo es malintencionado y el archivo se detecta en una actualización de protección reciente, puede usar directiva de grupo para configurar El antivirus de Microsoft Defender para recibir automáticamente esa actualización de protección. También se pueden aplicar otras actualizaciones de protección importantes.
+Si ha habilitado la protección proporcionada en la nube, Antivirus de Microsoft Defender enviará archivos sospechosos a la nube de Windows Defender. Si el servicio en la nube informa de que el archivo es malintencionado y el archivo se detecta en una actualización de protección reciente, puede usar directiva de grupo para configurar antivirus de Microsoft Defender para recibir automáticamente esa actualización de protección. También se pueden aplicar otras actualizaciones de protección importantes.
 
 ### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Uso de directiva de grupo para descargar automáticamente actualizaciones recientes basadas en la protección proporcionada en la nube
 
@@ -154,7 +154,7 @@ Si ha habilitado la protección entregada en la nube, El antivirus de Microsoft 
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **actualizaciones de inteligencia de seguridad**.
+4. Expanda el árbol a **componentes** \> de Windows **Novedades de Inteligencia de seguridad** **del Antivirus** \> de Microsoft Defender.
 
 5. Haga doble clic en **Permitir actualizaciones de inteligencia de seguridad en tiempo real basadas en informes de Microsoft MAPS** y establezca la opción **en Habilitado**. Después, haga clic en **Aceptar**.
 
@@ -164,7 +164,7 @@ Si ha habilitado la protección entregada en la nube, El antivirus de Microsoft 
 > **Permitir que las notificaciones deshabiliten informes basados en definiciones** permite que Microsoft MAPS deshabilite esas definiciones conocidas por provocar informes falsos positivos. Debe configurar el equipo para que se una a Microsoft MAPS para que esta función funcione.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -175,7 +175,7 @@ Si ha habilitado la protección entregada en la nube, El antivirus de Microsoft 
 
 ## <a name="see-also"></a>Vea también
 
-- [Implementación de Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Implementación del Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Administre cuándo deben descargarse y aplicarse las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Administrar actualizaciones para puntos finales que están desactualizados](manage-outdated-endpoints-microsoft-defender-antivirus.md)

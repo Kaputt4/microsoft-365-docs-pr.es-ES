@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: o365-administration
 ms.collection: ''
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/18/2022
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprenda a usar Windows AutoPilot para configurar nuevos dispositivos de Windows 10 para su empresa para que estén listos para su uso por parte de los empleados.
-ms.openlocfilehash: 72a35557d3ab70c5e11f91f366b9cbe003b0c4c6
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893263"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388594"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar esta guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 
@@ -46,11 +46,11 @@ Si todavía no ha creado grupos de dispositivos ni perfiles, la mejor forma de e
 
 2. En el panel de navegación izquierdo, elija **Dispositivos** \> **AutoPilot**.
 
-    ![En el Centro de administración, elija Dispositivos y, a continuación, AutoPilot.](../media/Autopilot.png)
+    :::image type="content" source="../media/Autopilot.png" alt-text="En el Centro de administración de Microsoft 365, elija dispositivos y, a continuación, Autopilot.":::
   
 3. En la página **AutoPilot**, pulse o haga clic en **Guía de inicio**.
 
-    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    :::image type="content" source="../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png" alt-text="Haga clic en Guía de inicio para obtener instrucciones paso a paso para Autopilot.":::
   
 4. En la página **Cargar archivo .csv con la lista de dispositivos**, vaya a la ubicación donde tenga el archivo .CSV preparado y haga clic en **Abrir** \> **Siguiente**. El archivo debe tener tres encabezados:
 
@@ -87,6 +87,6 @@ Para más información, vea [Device list CSV-file](../admin/misc/device-list.md)
 
 ## <a name="related-content"></a>Contenido relacionado
 
-- [Acerca de la configuración de perfiles de AutoPilot](../business-premium/m365bp-Autopilot-profile-settings.md) (artículo)\
-- [Opciones para proteger los dispositivos y los datos de la aplicación](../admin/devices/choose-device-security.md) (artículo)
-- [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[Acerca de la configuración de perfiles de AutoPilot](../business-premium/m365bp-Autopilot-profile-settings.md) (artículo)\
+[Opciones para proteger los dispositivos y los datos de la aplicación](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (artículo)\
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

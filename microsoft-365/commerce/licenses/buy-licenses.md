@@ -22,17 +22,17 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: Siga estos pasos para comprar más licencias o reducir el número de licencias para su suscripción de Microsoft 365 para empresas.
-ms.date: 06/06/2022
-ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.date: 08/18/2022
+ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602378"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388064"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Compra o eliminación de licencias de Microsoft 365 para una suscripción
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Puede comprar más licencias o reducir el número de licencias para sus suscripciones mediante los pasos siguientes.
 
@@ -41,13 +41,13 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser administrador global o de facturación para realizar las tareas descritas en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede [agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md).
 - Si compró su plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un asociado de terceros, debe comprar licencias adicionales a través de ese asociado.
 
 ## <a name="watch-buy-new-licenses"></a>Ver: Comprar nuevas licencias
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -64,11 +64,13 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es [eli
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 2. En la pestaña **Productos** , busque la suscripción para la que desea comprar o quitar licencias. Seleccione los tres puntos (más acciones) y, a continuación, seleccione **Comprar licencias**. [¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -81,6 +83,37 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es [eli
 
 > [!NOTE]
 > No puede reducir el número de licencias de su suscripción si todas las licencias están asignadas actualmente a los usuarios. Para reducir el número de licencias, quite primero [una o varias licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md) y, a continuación, quite las licencias de la suscripción.
+
+## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Adición de licencias a una suscripción de prepago mediante una clave de producto de Microsoft 365
+
+Las licencias de productos prepagados se emiten como un código alfanumérico de 25 caracteres, denominado clave de producto. Después de comprar las licencias que necesita, puede agregarlas a su suscripción mediante los pasos siguientes. También puede usar una clave de producto para [ampliar la fecha de expiración de la suscripción](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+> [!NOTE]
+> Si no quiere comprar una nueva clave de producto, siempre puede elegir agregar una tarjeta de crédito o una cuenta bancaria a su suscripción para pagar más licencias. Para obtener más información, consulte [Renovación de la suscripción](../subscriptions/renew-your-subscription.md).
+  
+::: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+2. En la pestaña **Productos** , seleccione la suscripción a la que desea agregar licencias.
+
+3. En la página de detalles de la suscripción, en la sección **Licencias** , seleccione **Agregar más licencias**.
+
+4. En el **panel Agregar más licencias**, seleccione **Usar una clave de producto nueva y sin usar y**, a continuación, seleccione **Siguiente**.
+
+5. Escriba la clave de producto y, a continuación, seleccione **Siguiente**.
+    > [!NOTE]
+    > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
+
+6. Revise los detalles del pedido y, a continuación, seleccione **Canjear**.
 
 ## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?
 

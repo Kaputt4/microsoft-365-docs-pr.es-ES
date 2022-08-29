@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 37992558c1621ab476fa3a481776f0d3a7e55df4
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: f6c966b13dc5671c1ba95cd54d3c2c99f782a7f8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099489"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388327"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -45,7 +45,7 @@ DLP en punto de conexión permite auditar y administrar los siguientes tipos de 
 |Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15 y versiones posteriores | Auditable/restringible|
 |---------|---------|---------|---------|---------|
 |cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de Microsoft Edge. Por último, Microsoft Edge puede permitir o bloquear la carga o el acceso en función de la configuración de la directiva DLP.         |compatible | compatible|auditable y restringible|
-|copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.|compatible|compatible         | auditable y restringible|
+|copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. También detecta cuándo un usuario copia y pega contenido entre los archivos de la misma aplicación, proceso o elemento para Word, Excel y PowerPoint.|compatible|compatible         | auditable y restringible|
 |copiar en un medio extraíble USB |Detecta cuando un usuario intenta copiar un elemento o información en un medio extraíble o un dispositivo USB.|compatible|compatible         | auditable y restringible|
 |Copiar en un recurso compartido de red    |Detecta cuando un usuario intenta copiar un elemento en un recurso compartido de red o en una unidad de red asignada |compatible|compatible         |auditable y restringible|
 |imprimir un documento    |Detecta cuando un usuario intenta imprimir un elemento protegido en una impresora local o de red.|compatible|compatible|auditable y restringible         |
@@ -66,7 +66,7 @@ Vea, [Diseñar una directiva de prevención de pérdida de datos](dlp-policy-des
 
 ## <a name="monitored-files"></a>Archivos supervisados
 
-La DLP en punto de conexión admite la supervisión de estos tipos de archivo. La DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. 
+DLP de punto de conexión admite la supervisión de estos tipos de archivo a través de la directiva:
 
 - archivos de Word
 - archivos de PowerPoint
@@ -83,6 +83,13 @@ La DLP en punto de conexión admite la supervisión de estos tipos de archivo. L
 - archivos .h
 - archivos .java
  
+DLP audita las actividades de estos tipos de archivo, incluso si no hay ninguna coincidencia de directiva: 
+
+- archivos de Word
+- archivos de PowerPoint
+- archivos de Excel
+- archivos PDF
+
 Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión.
 
 > [!NOTE]
@@ -213,5 +220,5 @@ Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
-- [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
+- [Microsoft Defender para punto de conexión](../security/defender-endpoint/configure-machines-onboarding.md)
 - [Administración de riesgos internos](insider-risk-management.md)

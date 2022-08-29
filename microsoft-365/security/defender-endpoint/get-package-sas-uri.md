@@ -1,7 +1,7 @@
 ---
-title: Obtener api de URI de SAS del paquete
+title: Obtención de la API de URI de SAS del paquete
 description: Use esta API para obtener un URI que permita descargar un paquete de investigación.
-keywords: apis, graph api, apis admitidas, get package, sas, uri
+keywords: apis, graph api, api admitidas, get package, sas, uri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302415"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331695"
 ---
-# <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
+# <a name="get-package-sas-uri-api"></a>Obtención de la API de URI de SAS del paquete
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,31 +37,31 @@ ms.locfileid: "61302415"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
-Obtener un URI que permite descargar un [paquete de investigación](collect-investigation-package.md).
+Obtenga un URI que permita la descarga de un [paquete de investigación](collect-investigation-package.md).
 
 > [!IMPORTANT]
 >
-> - Estas acciones solo están disponibles para dispositivos Windows 10, versión 1703 o posterior y en Windows 11.
+> - Estas acciones solo están disponibles para dispositivos en Windows 10, versión 1703 o posterior y en Windows 11.
 
 ## <a name="limitations"></a>Limitaciones
 
-Las limitaciones de velocidad para esta API son 2 llamadas por minuto y 120 llamadas por hora. 
+Las limitaciones de velocidad de esta API son 2 llamadas por minuto y 120 llamadas por hora. 
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Acceso a las API de Microsoft Defender para punto de conexión](apis-intro.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.Read.All|''Leer todos los perfiles de máquina''
-Aplicación|"Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa)|Machine.CollectForensics|'Recopilar forenses'
+Application|Machine.Read.All|''Leer todos los perfiles de máquina''
+Application|"Machine.ReadWrite.All|"Leer y escribir toda la información de la máquina"
+Delegado (cuenta profesional o educativa)|Machine.CollectForensics|"Recopilar análisis forenses"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -75,19 +75,19 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 código de respuesta Ok con el objeto que contiene el vínculo al paquete en el parámetro "value". Este vínculo es válido durante un tiempo muy corto y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Si la acción del equipo para la colección existe pero no está completa, devuelve 404 No encontrado.
+Si se ejecuta correctamente, este método devuelve el código de respuesta 200, Ok con el objeto que contiene el vínculo al paquete en el parámetro "value". Este vínculo es válido durante un breve período de tiempo y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Si la acción de la máquina para la colección existe pero no está completa, devuelve 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
@@ -95,7 +95,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525c
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 ```json
 HTTP/1.1 200 Ok

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender sin conexión en Windows
-description: Puede usar Microsoft Defender Sin conexión directamente desde la aplicación Antivirus de Windows Defender. También puede administrar cómo se implementa en la red.
+description: Puede usar Microsoft Defender Sin conexión directamente desde la aplicación Antivirus de Microsoft Defender. También puede administrar cómo se implementa en la red.
 keywords: examen, defender, sin conexión
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc01b6d81d272bfd0ee808131804cf59d4502350
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051852"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387449"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Ejecutar y revisar los resultados de un análisis de Microsoft Defender sin Conexión
 
@@ -55,7 +55,7 @@ Para ejecutar Microsoft Defender sin conexión desde el punto de conexión, el u
 
 ## <a name="microsoft-defender-offline-updates"></a>Actualizaciones sin conexión de Microsoft Defender
 
-Microsoft Defender Sin conexión usa las actualizaciones de protección más recientes disponibles en el punto de conexión; se actualiza cada vez que se actualiza Antivirus de Windows Defender.
+Microsoft Defender Sin conexión usa las actualizaciones de protección más recientes disponibles en el punto de conexión; se actualiza cada vez que se actualiza el Antivirus de Microsoft Defender.
 
 > [!NOTE]
 > Antes de ejecutar un examen sin conexión, debe intentar actualizar la protección antivirus de Microsoft Defender. Puede forzar una actualización con directiva de grupo o, sin embargo, normalmente implementa actualizaciones en puntos de conexión, o puede descargar e instalar manualmente las actualizaciones de protección más recientes desde el [Centro de protección contra malware de Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx).
@@ -82,7 +82,7 @@ Los exámenes sin conexión de Microsoft Defender se indican en **Estado de corr
 
 ## <a name="configure-notifications"></a>Configuración de notificaciones
 
-Las notificaciones sin conexión de Microsoft Defender se configuran en la misma configuración de directiva que otras notificaciones de Antivirus de Microsoft Defender.
+Las notificaciones sin conexión de Microsoft Defender se configuran en la misma configuración de directiva que otras notificaciones del Antivirus de Microsoft Defender.
 
 Para obtener más información sobre las notificaciones en Windows Defender, vea el tema [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md).
 
@@ -140,7 +140,7 @@ Consulte lo siguiente para obtener más información:
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

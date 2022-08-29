@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1db4f7397eb700d9cee48de27a9b757d8f6a9472
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573929"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388713"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager
 
@@ -73,7 +73,7 @@ Siga estos pasos para validar que los puntos de conexión han completado correct
 Para dispositivos fuera del panel que se han incorporado a través de Security Management para Microsoft Defender para punto de conexión, consulte [Dispositivos fuera del panel del servicio de Microsoft Defender para punto de conexión](offboard-machines.md).
 
 >[!NOTE]
->La desactivación [deshabilitará la protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) si está habilitada.
+>La desactivación [deshabilitará la protección contra alteraciones](manage-tamper-protection-microsoft-365-defender.md) si está habilitada.
 
 ## <a name="troubleshooting-security-management"></a>Solución de problemas de administración de seguridad 
 Para solucionar problemas de administración de seguridad para Microsoft Defender para punto de conexión problemas de inscripción, consulte [Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión](troubleshoot-security-config-mgt.md).

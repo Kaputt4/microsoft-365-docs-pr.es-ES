@@ -18,12 +18,12 @@ ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 32beb27564475c988b95da1a1f41f1943de1220e
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051082"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441710"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
 
@@ -40,6 +40,8 @@ En el resto de esta guía se describen las actividades necesarias para el person
 Un artículo complementario de esta guía proporciona información general para [administrar incidentes y alertas de Defender para Office 365 en la página Incidentes del portal de Microsoft 365 Defender](mdo-sec-ops-manage-incidents-and-alerts.md).
 
 La [guía de operaciones de seguridad de Microsoft 365 Defender](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contiene información adicional que puede usar para planear y desarrollar.
+
+Para obtener un vídeo sobre esta información, vea <https://youtu.be/eQanpq9N1Ps>.
 
 ## <a name="daily-activities"></a>Actividades diarias
 
@@ -76,7 +78,7 @@ La administración de colas de incidentes y los roles responsables se describen 
 En Defender para Office 365, se administran falsos positivos (buen correo marcado como incorrecto) y falsos negativos (se permite correo incorrecto) en las siguientes ubicaciones:
 
 - Portal [de envíos (envíos de administradores).](admin-submission.md)
-- Lista [de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md)
+- Lista [de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md)
 - [Explorador de amenazas](threat-explorer.md)
 
 Para obtener más información, consulte la sección [Administrar detecciones de falsos positivos y falsos negativos](#manage-false-positive-and-false-negative-detections) más adelante en este artículo.
@@ -147,7 +149,7 @@ Las vistas de campaña revelan ataques de malware y suplantación de identidad (
 |---|---|---|---|
 |Búsqueda periódica y proactiva de amenazas en: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad hoc|Busque amenazas mediante [el Explorador de amenazas](threat-explorer.md) y la [búsqueda avanzada](../defender-endpoint/advanced-hunting-overview.md).|Equipo de operaciones de seguridad <br/><br/> Equipo de búsqueda de amenazas|
 |Compartir consultas de búsqueda.|Ad hoc|Comparta activamente consultas útiles y usadas con frecuencia dentro del equipo de seguridad para una búsqueda y corrección de amenazas manuales más rápidas. <br/><br/> Use [seguimientos de amenazas](threat-trackers.md) y [consultas compartidas en búsqueda avanzada](/microsoft-365/security/defender/advanced-hunting-shared-queries).|Equipo de operaciones de seguridad <br/><br/> Equipo de búsqueda de amenazas|
-|Cree reglas de detección personalizadas en <https://security.microsoft.com/custom_detection>.|Ad hoc|[Cree reglas de detección personalizadas](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting) para supervisar de forma proactiva eventos, patrones y amenazas en función de Defender para Office 365 datos en La búsqueda anticipada. Las reglas de detección contienen consultas de búsqueda avanzadas que generan alertas basadas en los criterios coincidentes.|Equipo de operaciones de seguridad <br/><br/> Equipo de búsqueda de amenazas|
+|Cree reglas de detección personalizadas en <https://security.microsoft.com/custom_detection>.|Ad hoc|[Cree reglas de detección personalizadas](../defender/custom-detections-overview.md) para supervisar de forma proactiva eventos, patrones y amenazas en función de Defender para Office 365 datos en La búsqueda anticipada. Las reglas de detección contienen consultas de búsqueda avanzadas que generan alertas basadas en los criterios coincidentes.|Equipo de operaciones de seguridad <br/><br/> Equipo de búsqueda de amenazas|
 
 ### <a name="review-defender-for-office-365-policy-configurations"></a>Revisión de las configuraciones de directiva de Defender para Office 365
 
@@ -212,7 +214,7 @@ Los siguientes permisos (roles y grupos de roles) están disponibles en Defender
 
     Para asignar este rol a un grupo de roles nuevo o existente, consulte [Modificar Email & pertenencia a roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Administrador allowBlockList de inquilinos**: administre las entradas de permitir y bloquear en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). Bloquear direcciones URL, archivos (mediante hash de archivos) o remitentes es una acción de respuesta útil que se debe realizar al investigar el correo electrónico malintencionado que se ha entregado.
+  - **Administrador allowBlockList de inquilinos**: administre las entradas de permitir y bloquear en la [lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md). Bloquear direcciones URL, archivos (mediante hash de archivos) o remitentes es una acción de respuesta útil que se debe realizar al investigar el correo electrónico malintencionado que se ha entregado.
 
     De forma predeterminada, este rol solo se asigna al grupo de roles **Operador de seguridad** . Sin embargo, los miembros de los grupos de **roles Administradores de seguridad** y **Administración de la organización** también pueden administrar entradas en la lista de permitidos o bloqueados de inquilinos.
 
@@ -275,9 +277,9 @@ Los miembros del equipo de seguridad pueden realizar envíos desde varias ubicac
 
   Puede seleccionar hasta 10 mensajes para realizar un envío masivo. Administración envíos creados de esta manera también visibles en el portal envío.
 
-Para la mitigación a corto plazo de falsos negativos, los equipos de seguridad pueden administrar directamente [entradas de bloque](manage-tenant-blocks.md) para archivos, direcciones URL y remitentes en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+Para la mitigación a corto plazo de falsos negativos, los equipos de seguridad pueden administrar directamente entradas de bloque para archivos, direcciones URL y dominios o direcciones de correo electrónico en la [lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).
 
-Para la mitigación a corto plazo de falsos positivos, los equipos de seguridad no pueden administrar directamente [las entradas permitidas](manage-tenant-allows.md) en la lista de permitidos o bloqueados de inquilinos. En su lugar, deben usar [envíos de administrador](admin-submission.md) y la opción **Permitir mensajes como esta** .
+Para la mitigación a corto plazo de falsos positivos, los equipos de seguridad no pueden administrar directamente entradas permitidas para dominios y direcciones de correo electrónico en la lista de permitidos o bloqueados de inquilinos. En su lugar, deben usar [envíos de administrador](admin-submission.md) para notificar el mensaje de correo electrónico como falso positivo. Para obtener instrucciones, consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal envíos](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 [La cuarentena](manage-quarantined-messages-and-files.md) en Defender para Office 365 contiene mensajes y archivos potencialmente peligrosos o no deseados. Los equipos de seguridad pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Esta funcionalidad permite a los equipos de seguridad responder de forma eficaz cuando se pone en cuarentena un mensaje o archivo falso positivo.
 

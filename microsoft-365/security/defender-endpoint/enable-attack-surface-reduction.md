@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601232"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388647"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -59,7 +59,7 @@ Puede establecer reglas de reducción de superficie expuesta a ataques para disp
 
 Para usar todo el conjunto de características de las reglas de reducción de superficie expuesta a ataques, necesita:
 
-- Antivirus de Windows Defender como antivirus principal (protección en tiempo real activada)
+- Antivirus de Microsoft Defender como antivirus principal (protección en tiempo real activada)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) en (algunas reglas lo requieren)
 - Windows 10 Enterprise licencia E5 o E3
 
@@ -119,7 +119,7 @@ Las reglas de ASR admiten variables de entorno y caracteres comodín. Para obten
 En esta sección se proporcionan detalles de configuración para los siguientes métodos de configuración:
 
 - [Intune](#intune)
-- [MEM](#mem)
+- [Mem](#mem)
 - [MDM](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Directiva de grupo](#group-policy)
@@ -153,7 +153,7 @@ Los procedimientos siguientes para habilitar las reglas de ASR incluyen instrucc
 
 4. Seleccione **Siguiente** en los tres paneles de configuración y, a continuación, seleccione **Crear** si va a crear una nueva directiva o **Guardar** si está editando una directiva existente.
 
-### <a name="mem"></a>MEM
+### <a name="mem"></a>Mem
 
 Puede usar OMA-URI de Microsoft Endpoint Manager (MEM) para configurar reglas ASR personalizadas. En el procedimiento siguiente se usa la regla [Bloquear el abuso de controladores firmados vulnerables explotados](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) para el ejemplo.
 

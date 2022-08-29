@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft 365.
-ms.openlocfilehash: 75fc048db9ebe0dfb16f772bd899306ce619096a
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285250"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439648"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para eDiscovery
 
@@ -93,7 +93,7 @@ En la tabla siguiente se enumeran algunas de las propiedades de SharePoint y One
 
 Para obtener una lista completa de las propiedades de SharePoint que se pueden buscar, vea [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Se pueden buscar propiedades marcadas con **sí** en la columna **Consultable** .
 
-|Propiedad|Descripción de la propiedad|Ejemplo:|Resultados de la búsqueda devueltos por los ejemplos|
+|Propiedad|Descripción de la propiedad|Ejemplo|Resultados de la búsqueda devueltos por los ejemplos|
 |---|---|---|---|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que luego lo carga en SharePoint, el documento conservará el autor original. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`author:"Garth Fort"`|Todos los documentos que se han creado por Juan Casanova.|
 |ContentType|Tipo de contenido de SharePoint de un elemento, como Item, Document o Video.|`contenttype:document`|Se devolverán todos los documentos.|
@@ -282,7 +282,7 @@ Tenga en cuenta lo siguiente al usar condiciones de búsqueda.
 
 - La consulta de búsqueda que se crea mediante el cuadro de palabras clave y las condiciones se muestra en la página **Buscar** , en el panel de detalles de la búsqueda seleccionada. En una consulta, todo a la derecha de la notación  `(c:c)` indica las condiciones que se agregan a la consulta.
 
-- Las condiciones solo agregan propiedades a la consulta de búsqueda, no agregan operadores. Por este motivo, la consulta mostrada en el panel de detalles no muestra operadores a la derecha de la  `(c:c)` notación. KQL agrega operadores lógicos (según las reglas explicadas anteriormente) al ejecutar la consulta.
+- Las condiciones solo agregan propiedades a la consulta de búsqueda; no agregan operadores. Por este motivo, la consulta mostrada en el panel de detalles no muestra operadores a la derecha de la  `(c:c)` notación. KQL agrega operadores lógicos (según las reglas explicadas anteriormente) al ejecutar la consulta.
 
 - Puede usar el control de arrastrar y colocar para volver a secuenciar el orden de las condiciones. Haga clic en el control de una condición y muévalo hacia arriba o hacia abajo.
 

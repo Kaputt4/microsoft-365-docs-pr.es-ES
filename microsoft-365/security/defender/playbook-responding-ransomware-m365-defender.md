@@ -11,13 +11,14 @@ ms.date: 05/30/2022
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
+ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: a7c03947cc159ed9933854c9fd1041af63c3f55c
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: aaf672f8ec913b8d0e206f9d630452bac36185ee
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811185"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445102"
 ---
 # <a name="responding-to-ransomware-attacks"></a>Respuesta a ataques de ransomware
 
@@ -37,7 +38,7 @@ La contención y la investigación deben producirse lo más simultáneamente pos
 
 ### <a name="step-1-assess-the-scope-of-the-incident"></a>Paso 1: Evaluar el ámbito del incidente
 
-Ejecute esta lista de preguntas y tareas para detectar la extensión del ataque. Microsoft 365 Defender puede proporcionar una vista consolidada de todos los recursos afectados o en riesgo para ayudar en la evaluación de la respuesta a incidentes. Consulte [Respuesta a incidentes con Microsoft 365 Defender | Microsoft Docs](/incidents-overview.md). Puede usar las alertas y la lista de pruebas del incidente para determinar:
+Ejecute esta lista de preguntas y tareas para detectar la extensión del ataque. Microsoft 365 Defender puede proporcionar una vista consolidada de todos los recursos afectados o en riesgo para ayudar en la evaluación de la respuesta a incidentes. Consulte [Respuesta a incidentes con Microsoft 365 Defender](incidents-overview.md). Puede usar las alertas y la lista de pruebas del incidente para determinar:
 
 * ¿Qué cuentas de usuario pueden estar en peligro?
   * ¿Qué cuentas se usaron para entregar la carga útil?
@@ -62,7 +63,7 @@ Ejecute esta lista de tareas y preguntas para proteger los sistemas existentes f
   * Detenga todas [las sesiones de inicio de sesión remoto](/defender-for-identity/playbook-domain-dominance).
   * Restablezca las contraseñas de cuenta de usuario en peligro y exija a los usuarios de cuentas de usuario en peligro que vuelvan a iniciar sesión.
   * Haga lo mismo con las cuentas de usuario que puedan estar en peligro.
-  * Si las cuentas locales compartidas están en peligro, haga que el administrador de TI le ayude a aplicar un cambio de contraseña en todos los dispositivos expuestos. Ejemplo Kusto consulta:
+  * Si las cuentas locales compartidas están en peligro, haga que el administrador de TI le ayude a aplicar un cambio de contraseña en todos los dispositivos expuestos. Consulta kusto de ejemplo:
 
 ```kusto
 DeviceLogonEvents | where DeviceName  contains (AccountDomain) | take 10 
@@ -78,7 +79,7 @@ DeviceLogonEvents | where DeviceName  contains (AccountDomain) | take 10
 Use esta lista para evitar que el ataque se propague a entidades adicionales.
 
 * Si se usan cuentas locales compartidas en el ataque, considere la posibilidad [de bloquear el uso remoto de cuentas locales](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/blocking-remote-use-of-local-accounts/ba-p/701042).
-  * Kusto consulta de todos los inicios de sesión de red que son administradores locales:
+  * Consulta de Kusto para todos los inicios de sesión de red que son administradores locales:
 
 ```kusto
 DeviceLogonEvents
@@ -87,7 +88,7 @@ DeviceLogonEvents
 | where IsLocalLogon==false
 ```
 
-* Kusto consulta de inicios de sesión que no son RDP (más realistas para la mayoría de las redes):
+* Consulta de Kusto para inicios de sesión que no son RDP (más realista para la mayoría de las redes):
 
 ```kusto
 DeviceLogonEvents
@@ -97,9 +98,9 @@ DeviceLogonEvents
 ```
 
 * Ponga en cuarentena y agregue indicadores para los archivos infectados.
-* Asegúrese de que la solución antivirus se puede configurar en su estado de protección óptimo. Para Antivirus de Microsoft Defender, esto incluye:
+* Asegúrese de que la solución antivirus se puede configurar en su estado de protección óptimo. En el caso del Antivirus de Microsoft Defender, esto incluye:
   * [La protección en tiempo real](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) está habilitada.
-  * [La protección contra alteraciones](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) está habilitada. En el portal de Microsoft 365 Defender, seleccione **Configuración > Puntos de conexión > Características avanzadas > Protección contra alteraciones**.
+  * [La protección contra alteraciones](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) está habilitada. En el portal de Microsoft 365 Defender, seleccione **Configuración > puntos de conexión > Características avanzadas > Protección contra alteraciones**.
   * Las reglas de [reducción de superficie expuesta a ataques (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) están habilitadas.
   * [La protección en la nube](../defender-endpoint/enable-attack-surface-reduction.md) está habilitada.
 * Deshabilite Exchange ActiveSync y Sincronización de OneDrive.
@@ -119,7 +120,7 @@ Use esta sección para investigar el ataque y planear la respuesta.
 ### <a name="assess-your-current-situation"></a>Evaluación de la situación actual
 
 * ¿Qué inicialmente le hizo consciente del ataque ransomware?
-  * Si el personal de TI identificó la amenaza inicial, como la eliminación de copias de seguridad, las alertas antivirus, las alertas de detección y respuesta de puntos de conexión (EDR) o los cambios sospechosos del sistema, a menudo es posible tomar medidas decisivas rápidas para frustrar el ataque, normalmente por las acciones de contención descritas en este artículo.
+  * Si el personal de TI identificó la amenaza inicial, como la eliminación de copias de seguridad, alertas antivirus, alertas de detección y respuesta de puntos de conexión (EDR) o cambios sospechosos del sistema, a menudo es posible tomar medidas decisivas rápidas para frustrar el ataque, normalmente por las acciones de contención descritas en este artículo.
 * ¿Qué fecha y hora se enteró por primera vez del incidente?
   * ¿Qué actualizaciones del sistema y de seguridad no se instalaron en los dispositivos en esa fecha? Esto es importante para comprender qué vulnerabilidades podrían haberse aprovechado para que se puedan abordar en otros dispositivos.
   * ¿Qué cuentas de usuario se usaron en esa fecha?
@@ -192,7 +193,7 @@ Use esta sección para investigar el ataque y planear la respuesta.
 * Scuba-SuspiciousWebScriptFileDrop
 * Registro dll sospechoso por odbcconf
 * Actividad de DPAPI sospechosa
-* Ejecución sospechosa Exchange proceso
+* Ejecución sospechosa del proceso de Exchange
 * Inicio de tarea programada sospechosa
 * SuspiciousLdapQueryDetector
 * SuspiciousScheduledTaskRegistration
@@ -242,7 +243,7 @@ Quite el malware de los dispositivos afectados.
 
 Recuperar archivos en un dispositivo limpio.
 
-* Puede usar [el historial de](https://support.microsoft.com/help/17128) archivos en Windows 11, Windows 10, Windows 8.1 y Protección del sistema en Windows 7 para intentar recuperar los archivos y carpetas locales.
+* Puedes usar [el historial de](https://support.microsoft.com/help/17128) archivos en Windows 11, Windows 10, Windows 8.1 y Protección del sistema en Windows 7 para intentar recuperar tus archivos y carpetas locales.
 
 ### <a name="step-7-recover-files-in-onedrive-for-business"></a>Paso 7: Recuperación de archivos en OneDrive para la Empresa
 

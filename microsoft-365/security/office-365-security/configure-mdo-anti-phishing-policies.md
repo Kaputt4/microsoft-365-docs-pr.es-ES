@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra phishing que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b641fe1fb4de8dcb7d7ec299a0e8b19a064efad
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8311da9d67a9835163ee3eaa34a38a7132977055
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084133"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386590"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas contra phishing en Microsoft Defender para Office 365
 
@@ -113,7 +113,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
@@ -188,6 +188,13 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
         En el control flotante **Agregar dominios de confianza** que aparece, haga clic en el cuadro **Dominio** , escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
         Cuando haya terminado, haga clic en **Agregar**.
+
+     > [!NOTE]
+     > Si los mensajes del sistema de Microsoft 365 de los siguientes remitentes se identifican como intentos de suplantación, puede agregar los remitentes a la lista de remitentes de confianza:
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      De nuevo en el control flotante **Administrar dominios personalizados para suplantación** , puede quitar entradas de las pestañas **Remitente** y **Dominio** seleccionando una o varias entradas de la lista. Puede buscar entradas mediante el ![icono Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro de búsqueda** .
 

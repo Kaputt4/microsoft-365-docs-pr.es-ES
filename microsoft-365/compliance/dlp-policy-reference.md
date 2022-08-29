@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 1ddae6821c528d14b603668d943cc70abc069cdd
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306710"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450133"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -130,7 +130,7 @@ Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de
 |Correo electrónico de Exchange en línea|Sí| Sí| No|
 |Sitios en línea de SharePoint| Sí| Sí| Sí|
 |Cuentas de OneDrive para la Empresa| Sí| Sí| Sí|
-|Mensajes de chat y canal de Teams | Sí| No| No|
+|Mensajes de chat y canal de Teams | Yes| No| No|
 |Dispositivos |Sí | Sí|  No|
 |Microsoft Defender for Cloud Apps | Sí| Sí| Sí|
 |Repositorios locales| Sí| Sí| No|
@@ -229,7 +229,7 @@ La regla solo buscará la presencia de las **etiquetas de confidencialidad** y l
 Los SIT tienen un [**nivel de confianza**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) predefinido que puede modificar si es necesario. Para obtener más información, consulte [Más información sobre los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
-> Los SIT tienen dos formas diferentes de definir los parámetros de recuento de instancias únicos máximos. Para obtener más información, consulte [Valores admitidos de recuento de instancias para SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Los SIT tienen dos formas diferentes de definir los parámetros de recuento de instancias únicos máximos. Para obtener más información, consulte [Valores admitidos de recuento de instancias para SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexto de condición
 
@@ -313,7 +313,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 ##### <a name="conditions-devices-supports"></a>Condiciones que admiten los dispositivos
 
 - El contenido contiene
-- (versión preliminar) El usuario accedió a un sitio web confidencial desde Edge. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) para más información.
+- El usuario accedió a un sitio web confidencial desde Edge. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para obtener más información.
 - La extensión de archivo es
 - El tipo de archivo es
 - Consulte las [actividades de punto de conexión en las que puede supervisar y tomar medidas.](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -417,7 +417,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 #### <a name="devices-actions"></a>Acciones de dispositivos
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (versión preliminar) Auditoría o actividades restringidas cuando los usuarios acceden a sitios web confidenciales en el explorador Microsoft Edge en dispositivos Windows. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) para más información.
+- Auditoría o actividades restringidas cuando los usuarios acceden a sitios web confidenciales en el explorador Microsoft Edge en dispositivos Windows. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para obtener más información.
 - Auditoría o restricción de actividades en dispositivos Windows
 
 Para usar `Audit or restrict activities on Windows devices`, tiene que configurar opciones en **la configuración dlp** y en la directiva en la que desea usarlas. Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información.
@@ -584,7 +584,7 @@ Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están
 
 Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
 
-|Nombre común  |Parámetro  |Ejemplo:
+|Nombre común  |Parámetro  |Ejemplo
 |---------|---------|---------|
 |nombre de archivo     |%%FileName%% | Documento 1 de Contoso |
 |nombre del proceso     |%%ProcessName%% | Word |

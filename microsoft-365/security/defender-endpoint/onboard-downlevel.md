@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 73330ff3dde5daa8d8ec9b2e3f1500e125135db5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717224"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388152"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -152,16 +152,16 @@ Después de completar los pasos de incorporación, deberá [configurar y actuali
 
 ## <a name="verify-onboarding"></a>Comprobación de la incorporación
 
-Compruebe que el Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión están en ejecución. 
+Compruebe que antivirus de Microsoft Defender y Microsoft Defender para punto de conexión están en ejecución. 
 
 > [!NOTE]
-> No es necesario ejecutar el antivirus de Microsoft Defender, pero se recomienda. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo. Solo puede confirmar que el modo pasivo está activado después de comprobar que se está ejecutando Microsoft Defender para punto de conexión sensor (SENSE). 
+> La ejecución del Antivirus de Microsoft Defender no es necesaria, pero se recomienda. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo. Solo puede confirmar que el modo pasivo está activado después de comprobar que se está ejecutando Microsoft Defender para punto de conexión sensor (SENSE). 
 
-1. Ejecute el siguiente comando para comprobar que el Antivirus de Microsoft Defender está instalado:
+1. Ejecute el siguiente comando para comprobar que antivirus de Microsoft Defender está instalado:
 
    ```sc.exe query Windefend```
 
-    Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar El antivirus de Microsoft Defender. Para obtener más información, consulte [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-windows.md).
+    Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar el Antivirus de Microsoft Defender. Para obtener más información, consulte [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-windows.md).
 
     Para obtener información sobre cómo usar directiva de grupo para configurar y administrar el Antivirus de Microsoft Defender en los servidores de Windows, consulte [Uso de directiva de grupo configuración para configurar y administrar el Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 

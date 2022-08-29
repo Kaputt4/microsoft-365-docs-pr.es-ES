@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Complete los pasos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969416"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388095"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migración a Microsoft Defender para Office 365: Fase 3: Incorporación
 
@@ -175,7 +175,7 @@ A medida que encuentre y corrija los problemas, puede agregar más usuarios a lo
   - Filtre en el Explorador de amenazas para identificar los mensajes.
   - Filtre en Búsqueda avanzada para identificar los mensajes.
 
-  Informe de los falsos positivos a Microsoft lo antes posible a través de envíos de administrador, use la característica [Permitir o bloquear lista](tenant-allow-block-list.md) de inquilinos para configurar invalidaciones seguras para esos falsos positivos.
+  Informe de los falsos positivos a Microsoft lo antes posible a través de envíos de administrador, use la característica [Permitir o bloquear lista](manage-tenant-allow-block-list.md) de inquilinos para configurar invalidaciones seguras para esos falsos positivos.
 
 - También es una buena idea examinar invalidaciones innecesarias. En otras palabras, examine los veredictos que Microsoft 365 habría proporcionado en los mensajes. Si Microsoft365 representó el veredicto correcto, la necesidad de invalidación se reduce o elimina en gran medida.
 
@@ -213,7 +213,7 @@ Cuando esté listo, cambie el registro MX de los dominios. Puede migrar todos lo
 
 No dude en pausar y evaluar aquí en cualquier momento. Pero recuerde: una vez que desactive la regla de flujo de correo SCL=-1, los usuarios pueden tener dos experiencias diferentes para comprobar falsos positivos. Cuanto antes pueda proporcionar una experiencia única y coherente, más felices serán los usuarios y los equipos de soporte técnico cuando tengan que solucionar un mensaje que falta.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ¡Enhorabuena! Ha completado [la migración a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process). Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 debe ser mucho más sencillo.
 

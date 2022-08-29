@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ba440b028b1f56f3375e46f57c0b347f63eeed3f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281627"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439670"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -61,6 +61,10 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
   - **Grupos**:
     - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
     - Los Grupos de Microsoft 365 especificados.
+
+    > [!NOTE]
+    >  No se admiten grupos de distribución dinámicos.
+    
   - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
@@ -166,8 +170,13 @@ Es posible que quiera aplicar las directivas de seguridad preestablecidas **Est�
    - **Todos los destinatarios**
    - **Destinatarios específicos**:
      - **Usuarios**
-     - **Grupos**
-     - **Dominios**
+     - **Grupos**:
+       - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+       - Los Grupos de Microsoft 365 especificados.
+
+       No se admiten grupos de distribución dinámicos.
+
+   - **Dominios**
 
      Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
@@ -248,7 +257,12 @@ Por lo tanto, normalmente no se recomiendan excepciones a la directiva de seguri
 
 3. En el control flotante **Excluir de la protección integrada** que aparece, identifique los destinatarios internos que se excluyen de la protección integrada de vínculos seguros y datos adjuntos seguros:
    - **Usuarios**
-   - **Grupos**
+   - **Grupos**:
+       - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+       - Los Grupos de Microsoft 365 especificados.
+
+     No se admiten grupos de distribución dinámicos.
+
    - **Dominios**
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar exclusiones del icono de protección integrada.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.

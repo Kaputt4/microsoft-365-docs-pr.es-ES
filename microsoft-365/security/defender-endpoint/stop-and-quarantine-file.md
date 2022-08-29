@@ -1,8 +1,7 @@
 ---
-title: API de archivos de detenerse y poner en cuarentena
-description: Obtén información sobre cómo dejar de ejecutar un archivo en un dispositivo y eliminar el archivo en Microsoft Defender para endpoint. Vea un ejemplo.
-keywords: api, api de gráfico, api admitidas, archivo de detenerse y poner en cuarentena
-search.product: eADQiWindows 10XVcnh
+title: API de archivo de detención y cuarentena
+description: Obtenga información sobre cómo detener la ejecución de un archivo en un dispositivo y eliminar el archivo en Microsoft Defender para punto de conexión. Consulte un ejemplo.
+keywords: apis, graph api, api admitidas, archivo de detención y cuarentena
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcaf08f73316c5c0482bb611427f5a8f19127c02
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3c259316952118b990b7a0509cbe99949dc73e1b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165839"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331349"
 ---
-# <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
+# <a name="stop-and-quarantine-file-api"></a>API de archivo de detención y cuarentena
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,34 +42,34 @@ Detenga la ejecución de un archivo en un dispositivo y elimínelo.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 > [!IMPORTANT]
 > Solo puede realizar esta acción si:
 >
-> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior
+> - El dispositivo en el que va a realizar la acción ejecuta Windows 10, versión 1703 o posterior, o Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.StopAndQuarantine|'Detener y poner en cuarentena'
-Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
-Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa)|Machine.StopAndQuarantine|'Detener y poner en cuarentena'
+Application|Machine.StopAndQuarantine|"Detener y poner en cuarentena"
+Application|Machine.Read.All|"Leer todos los perfiles de máquina"
+Application|Machine.ReadWrite.All|"Leer y escribir toda la información de la máquina"
+Delegado (cuenta profesional o educativa)|Machine.StopAndQuarantine|"Detener y poner en cuarentena"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -85,17 +84,17 @@ Nombre|Tipo|Descripción
 Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+## <a name="request-body"></a>Cuerpo de solicitud
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-Sha1|Cadena|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
+Comentario|Cadena|Comentario que se va a asociar a la acción. **Necesario**.
+Sha1|Cadena|Sha1 del archivo que se va a detener y poner en cuarentena en el dispositivo. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 201: código de respuesta creado y [Acción de máquina](machineaction.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 

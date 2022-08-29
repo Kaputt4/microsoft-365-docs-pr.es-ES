@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175584"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387207"
 ---
 # <a name="searching-and-pivoting"></a>Búsqueda y dinamización
 
@@ -29,7 +29,7 @@ Inteligencia contra amenazas de Microsoft Defender (Ti de Defender) ofrece un mo
 
 ## <a name="open-defender-tis-threat-intelligence-home-page"></a>Abrir la página principal de Inteligencia sobre amenazas de Defender TI
 
-1. Acceda al [portal de Inteligencia sobre amenazas de Defender](https://defender.microsoft.com/).
+1. Acceda al [portal de Inteligencia sobre amenazas de Defender](https://ti.defender.microsoft.com/).
 2. Complete la autenticación de Microsoft para acceder al portal.
 
 ## <a name="performing-threat-intelligence-searches-and-pivots"></a>Realización de búsquedas y dinámicas de inteligencia sobre amenazas
@@ -45,7 +45,7 @@ La búsqueda de inteligencia sobre amenazas de Defender TI es sencilla y eficaz,
 
     ![Dominio de búsqueda](media/searchDomain.png)
 
-3. **Anfitrión:** Busque `canary.fabrikam.com` en la barra de búsqueda de Inteligencia sobre amenazas. Esta acción da como resultado una búsqueda de host.
+3. **Host:** Busque `canary.fabrikam.com` en la barra de búsqueda de Inteligencia sobre amenazas. Esta acción da como resultado una búsqueda de host.
 
     ![Host de búsqueda](media/searchHost.png)
 
@@ -70,7 +70,7 @@ La búsqueda de inteligencia sobre amenazas de Defender TI es sencilla y eficaz,
 
     ![Componente de búsqueda](media/searchComponent.png)
 
-9. **Rastreador:** Seleccione "Trackers" en la lista desplegable Threat Intelligence Search y escriba "07d14d16d21d21d00042d41d00041d47e4e4e17960b2a5b4fd6107fbb0926" en la barra de búsqueda de inteligencia sobre amenazas. Presione Entrar o seleccione la flecha derecha para realizar la búsqueda. Esta acción da como resultado una búsqueda de seguimiento. Nota: En este ejemplo, este era un tipo de rastreador jarmHash.
+9. **Tracker:** Seleccione "Trackers" en la lista desplegable Threat Intelligence Search y escriba "07d14d16d21d21d00042d41d00041d47e4e4e17960b2a5b4fd6107fbb0926" en la barra de búsqueda de inteligencia sobre amenazas. Presione Entrar o seleccione la flecha derecha para realizar la búsqueda. Esta acción da como resultado una búsqueda de seguimiento. Nota: En este ejemplo, este era un tipo de rastreador jarmHash.
 
     > [!NOTE]
     > En este ejemplo, se trataba de un tipo De seguimiento de JarmHash.
@@ -178,7 +178,7 @@ Los resultados de una búsqueda de Inteligencia sobre amenazas se agrupan en dos
 
 ### <a name="reputation"></a>Reputación
 
-Defender TI proporciona puntuaciones de reputación propias para cualquier host, dominio o dirección IP. Tanto si se valida la reputación de una entidad conocida como desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados con una infraestructura malintencionada o sospechosa. Las puntuaciones de reputación se muestran como una puntuación numérica con un intervalo de 0 a 100. Una entidad con una puntuación de "0" no tiene asociaciones conocidas a actividades sospechosas o indicadores conocidos de riesgo; una puntuación de "100" indica que la entidad es malintencionada. La plataforma proporciona una lista de reglas con una descripción y una clasificación de gravedad. En el ejemplo siguiente, vemos cuatro reglas de "gravedad alta" que se aplican a este dominio.
+TI de Defender proporciona puntuaciones de reputación de propiedad para cualquier host, dominio o dirección IP. Si se valida la reputación de una entidad conocida o desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados a una infraestructura malintencionada o sospechosa. Las puntuaciones de reputación se muestran como una puntuación numérica con un intervalo de 0 a 100. Una entidad con una puntuación de "0" no tiene asociaciones conocidas a actividades sospechosas o indicadores conocidos de riesgo; una puntuación de "100" indica que la entidad es malintencionada. La plataforma proporciona una lista de reglas con una descripción y una clasificación de gravedad. En el ejemplo siguiente, vemos cuatro reglas de "gravedad alta" que se aplican a este dominio.
 
 Para obtener más información, consulte [Puntuación de reputación](reputation-scoring.md).
 
@@ -188,9 +188,9 @@ Para obtener más información, consulte [Puntuación de reputación](reputation
 
 La sección Analyst Insights proporciona información rápida sobre el artefacto que puede ayudar a determinar el siguiente paso de una investigación. En esta sección se enumeran las conclusiones que se aplican al artefacto y las que no se aplican para obtener visibilidad adicional. En el ejemplo siguiente, podemos determinar rápidamente que la dirección IP es enrutable, hospeda un servidor web y tenía un puerto abierto en los últimos cinco días. Además, el sistema muestra reglas que no se desencadenaron, lo que puede ser igual de útil al iniciar una investigación.
 
-Para obtener más información, consulte [Conclusiones de analistas](analyst-insights.md).
+Para obtener más información, consulte [Información del analista](analyst-insights.md).
 
-![Conclusiones de analistas de pestaña de resumen](media/summaryTabAnalystInsights.png)
+![Información del analista de la pestaña Resumen](media/summaryTabAnalystInsights.png)
 
 ### <a name="articles"></a>Artículos
 
@@ -224,7 +224,7 @@ La plataforma de TI de Defender permite a los usuarios crear proyectos para orga
 
 Cuando un usuario busca una dirección IP, dominio o host, si ese indicador aparece en un proyecto al que el usuario tiene acceso, puede seleccionar la pestaña Proyectos y navegar a los detalles del proyecto para obtener más contexto sobre el indicador antes de revisar los demás conjuntos de datos para obtener más información.
 
-Para obtener más información, consulte [Uso de proyectos](using-projects.md).
+Para obtener más información, consulte [Usar proyectos](using-projects.md).
 
 ![Proyectos de pestaña Resumen](media/summaryTabProjects.png)
 
@@ -510,7 +510,7 @@ Al visitar los detalles de un proyecto se muestra una lista de todos los artefac
 
 La plataforma de TI de Defender permite a los usuarios desarrollar varios tipos de proyecto para organizar indicadores de interés e indicadores de riesgo a partir de una investigación.
 
-Para obtener más información, consulte [Uso de proyectos](using-projects.md).
+Para obtener más información, consulte [Usar proyectos](using-projects.md).
 
 ![Proyectos de inteligencia de pestaña de datos](media/dataTabIntelligenceProjects.png)
 
@@ -518,9 +518,9 @@ Para obtener más información, consulte [Uso de proyectos](using-projects.md).
 
 Para más información, vea:
 
-- [Ordenación, filtrado y descarga de datos](sorting-filtering-and-downloading-data.md)
+- [Ordenar, filtrar y descargar datos](sorting-filtering-and-downloading-data.md)
 - [Conjuntos de datos](data-sets.md)
 - [Puntuación de reputación](reputation-scoring.md)
 - [Conclusiones de analistas](analyst-insights.md)
-- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
+- [¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?](index.md)
 - [Uso de proyectos](using-projects.md)

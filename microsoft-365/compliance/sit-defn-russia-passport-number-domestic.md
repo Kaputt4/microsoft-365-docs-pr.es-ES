@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Número de pasaporte de Rusia Definición de entidad de tipo de información confidencial nacional.
-ms.openlocfilehash: 0e74f6f8f268591cdf69148390e94e287f0e9686
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 186f5fc3e231a311ef8d9de4a87dd18c7b47972b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999644"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368859"
 ---
 # <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia (nacional)
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -76,8 +68,8 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 ### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - passport number
-- passport no
-- Pasaporte #
+- pasaporte no
+- pasaporte #
 - id. de passport
 - passportno #
 - passportnumber #

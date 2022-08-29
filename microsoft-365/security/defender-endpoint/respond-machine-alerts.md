@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d61e7732b48fdb9738133929735b6538c67032b2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099973"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387229"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -117,7 +117,7 @@ El paquete contiene las siguientes carpetas:
 
 |Folder|Descripción|
 |---|---|
-|Ejecuciones automáticas|Contiene un conjunto de archivos que representan el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: El sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
+|Autoruns|Contiene un conjunto de archivos que representan el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: El sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este archivo .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, vea [Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad con direcciones URL sospechosas, la infraestructura de comandos y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La caché arp puede revelar otros hosts en una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haberse usado para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la caché del solucionador de cliente DNS, que incluye ambas entradas precargadas desde el archivo hosts local y los registros de recursos obtenidos recientemente para las consultas de nombres resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico local.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, consulte [Configuración del firewall de Windows Defender con el registro de seguridad avanzada](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log).<div>|
 |Archivos de captura previa|Los archivos de captura previa de Windows están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haberse eliminado, pero que todavía se pueden encontrar en la lista de archivos de captura previa. <ul><li>Carpeta de captura previa: contiene una copia de los archivos de captura previa de `%SystemRoot%\Prefetch`. NOTA: Se recomienda descargar un visor de archivos de captura previa para ver los archivos de captura previa.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento de si se produjo algún error de copia en la carpeta de captura previa.</li></ul>|
@@ -139,13 +139,13 @@ Como parte del proceso de investigación o respuesta, puede iniciar de forma rem
 
 > [!IMPORTANT]
 > - Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
-> - Un examen del Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si El antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Un examen del Antivirus de Microsoft Defender se puede ejecutar junto con otras soluciones antivirus, independientemente de si antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Una vez que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
 :::image type="content" source="images/run-antivirus.png" alt-text="Notificación para seleccionar examen rápido o examen completo y agregar comentario" lightbox="images/run-antivirus.png":::
 
-El Centro de acciones mostrará la información de examen y la escala de tiempo del dispositivo incluirá un nuevo evento, lo que refleja que se envió una acción de examen en el dispositivo. Las alertas de Antivirus de Microsoft Defender reflejarán las detecciones que aparecen durante el examen.
+El Centro de acciones mostrará la información de examen y la escala de tiempo del dispositivo incluirá un nuevo evento, lo que refleja que se envió una acción de examen en el dispositivo. Las alertas del Antivirus de Microsoft Defender reflejarán las detecciones que aparecen durante el examen.
 
 > [!NOTE]
 > Al desencadenar un examen mediante la acción de respuesta de Defender para punto de conexión, el valor "ScanAvgCPULoadFactor" del antivirus de Microsoft Defender sigue aplicando y limita el impacto de la CPU del examen.
@@ -275,7 +275,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, la fec
 :::image type="content" source="images/action-center-details.png" alt-text="Centro de acciones con información" lightbox="images/action-center-details.png":::
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manual en Microsoft Defender para punto de conexión Plan 1](defender-endpoint-plan-1.md#manual-response-actions)

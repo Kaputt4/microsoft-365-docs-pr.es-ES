@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e68e1e49dd855356840eb732c6050178ae1c147
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 0c0e09bb69cd4b7ad30276a54e002be568b85c5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669724"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387581"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -48,7 +48,7 @@ El motor de detección en la nube de Defender para punto de conexión examina pe
 
 ## <a name="endpoint-prevention-engine"></a>Motor de prevención de puntos de conexión
 
-El agente de prevención respeta la misma lista de indicadores. Es decir, si El antivirus de Microsoft Defender es el antivirus principal configurado, los indicadores coincidentes se tratarán según la configuración. Por ejemplo, si la acción es "Alerta y bloqueo", Av. de Microsoft Defender impedirá las ejecuciones de archivos (bloquear y corregir) y se generará una alerta correspondiente. Por otro lado, si la acción está establecida en "Permitir", EL ANTIVIRUS de Microsoft Defender no detectará ni bloqueará la ejecución del archivo.
+El agente de prevención respeta la misma lista de indicadores. Es decir, si Antivirus de Microsoft Defender es el antivirus principal configurado, los indicadores coincidentes se tratarán según la configuración. Por ejemplo, si la acción es "Alerta y Bloqueo", Antivirus de Microsoft Defender impedirá las ejecuciones de archivos (bloquear y corregir) y se generará una alerta correspondiente. Por otro lado, si la acción está establecida en "Permitir", Antivirus de Microsoft Defender no detectará ni bloqueará la ejecución del archivo.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Motor de investigación y corrección automatizado
 
@@ -90,7 +90,7 @@ La funcionalidad de los ioC preexistebles no cambiará. Sin embargo, se cambió 
 El esquema de la API de IoC y los identificadores de amenazas en la búsqueda anticipada se han actualizado para alinearse con el cambio de nombre de las acciones de respuesta de IoC. Los cambios del esquema de API se aplican a todos los tipos de IoC.
 
 > [!Note]
-> Hay un límite de 15 000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Antivirus de Microsoft Defender cuando está en modo pasivo.
+> Hay un límite de 15 000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para el Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en el Antivirus de Microsoft Defender cuando están en modo pasivo.
 >
 > El formato para importar nuevos indicadores (IoC) ha cambiado según la nueva configuración de alertas y acciones actualizadas. Se recomienda descargar el nuevo formato CSV que se encuentra en la parte inferior del panel de importación.
 

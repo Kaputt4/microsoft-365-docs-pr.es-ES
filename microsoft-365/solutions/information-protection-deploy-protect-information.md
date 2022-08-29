@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Implemente las características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: ca2f500c5a6f09bf051137de2b637feb5a00f391
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 893e989f0040523645fc5fc91e3acd4176f77eb6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750284"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368740"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protección de la información sujeta a la normativa de privacidad de datos
 
@@ -111,7 +111,7 @@ Complete estas actividades antes de implementar cualquiera de las funcionalidade
    - Azure Information Protection
 
       Es posible que sea necesario conciliar el esquema de etiquetado de confidencialidad actual con cualquier implementación de etiquetado [de Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) existente.
-   - OME
+   - Ome
 
       Si tiene previsto usar el etiquetado de confidencialidad moderno para la protección del correo electrónico y existen métodos de cifrado de correo electrónico como OME, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de ellas. Consulte [Office 365 nuevas funcionalidades de cifrado de mensajes (OME),](#office-365-message-encryption-ome-new-capabilities) que incluye una tabla que compara la protección moderna del tipo de etiqueta de confidencialidad con la protección basada en OME.
 
@@ -198,7 +198,7 @@ Para la privacidad de los datos dentro de los sitios de interés, inserte etique
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
-Puede usar la [prevención de pérdida de datos (DLP)](../compliance/dlp-learn-about-dlp.md) en Microsoft 365 para detectar, advertir y bloquear el uso compartido de riesgos, involuntarios o inadecuados, como el uso compartido de datos que contienen información personal, tanto interna como externamente.
+Puede usar la [prevención de pérdida de datos (DLP)](../compliance/dlp-learn-about-dlp.md) en Microsoft Purview para detectar, advertir y bloquear el uso compartido de riesgos, involuntarios o inadecuados, como el uso compartido de datos que contienen información personal, tanto interna como externamente.
 
 DLP le permite:
 
@@ -227,41 +227,57 @@ DLP se usa para identificar un documento o correo electrónico que contiene un r
 
 ### <a name="planning-for-dlp"></a>Planeamiento de DLP
 
-Planee las directivas DLP para:
+Consulte [Planear la prevención de pérdida de datos (DLP)](../compliance/dlp-overview-plan-for-dlp.md) para obtener instrucciones completas sobre cómo planear la implementación de DLP.
 
-- Sus requisitos empresariales.
+<!-- Plan your DLP policies for:
 
-- Una evaluación basada en riesgos de la organización como se describe en el [artículo evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales](information-protection-deploy-assess.md).
+- Your business requirements.
 
-- Otros mecanismos de protección y gobernanza de la información implementados o en la planificación de la privacidad de los datos.
+- A risk-based assessment of the organization as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md).
 
-- Los tipos de información confidencial que ha identificado para los datos personales en función del trabajo de evaluación, tal como se describe en el [artículo evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales](information-protection-deploy-assess.md). Las condiciones de directiva DLP se pueden basar tanto en tipos de información confidencial como en etiquetas de retención.
+- Other information protection and governance mechanisms in place or in planning for data privacy.
 
-- Las etiquetas de retención que necesitará para especificar condiciones DLP. Para obtener más información, consulte el artículo [sobre la información de gobernanza sujeta a la regulación de privacidad de datos de su organización](information-protection-deploy-govern.md) .
+- The sensitive information types that you’ve identified for personal data based on your assessment work as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md). DLP policy conditions can be based on both sensitive information types and retention labels.
 
-- Administración continua de directivas DLP, que requiere que alguien de la organización opere y ajuste las directivas para los cambios en los tipos de información confidencial, las etiquetas de retención, las regulaciones y las directivas de cumplimiento.
+- The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
 
-Aunque las etiquetas de confidencialidad no se pueden usar en condiciones de directiva DLP, es posible que determinados escenarios de protección para evitar el acceso se puedan lograr con etiquetas de confidencialidad que se pueden aplicar automáticamente en función de tipos de información confidencial. Si hay un etiquetado de confidencialidad sólido, considere si se debe usar DLP para aumentar la protección porque:
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for changes in sensitive information types, retention labels, regulations, and compliance policies.
 
-  - DLP puede impedir el uso compartido de archivos. Las etiquetas de confidencialidad solo pueden impedir el acceso.
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios to prevent access may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types. If robust sensitivity labeling is in place, consider whether DLP should be used to augment protection because:
 
-  - DLP tiene niveles de control más granulares en términos de reglas, condiciones y acciones.
+  - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
 
-  - Las directivas DLP se pueden aplicar a los mensajes de chat y canal de Teams. Las etiquetas de confidencialidad solo se pueden aplicar a documentos y correo electrónico.
+  - DLP has more granular levels of control in terms of rules, conditions, and actions.
+
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email. -->
 
 
 ### <a name="dlp-policies"></a>Directivas DLP
 
-Las directivas DLP se configuran en el portal de cumplimiento Microsoft Purview y especifican el nivel de protección, el tipo de información confidencial que busca la directiva y las cargas de trabajo de destino. Sus componentes básicos consisten en identificar la protección y los tipos de datos.
+Las directivas DLP se configuran en el portal de cumplimiento Microsoft Purview y especifican el nivel de protección, la información que busca la directiva y las cargas de trabajo de destino. Cada directiva DLP requiere lo siguiente:
+
+1. Elija lo que quiere supervisar.
+1. Elija dónde supervisar.
+1. Elija las condiciones que deben coincidir para que una directiva se aplique a un elemento.
+1. Elija la acción que se va a realizar cuando se cumplan las condiciones de la directiva.
+
+Para obtener más información sobre las directivas DLP y cómo diseñarlas, consulte:
+
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](../compliance/dlp-learn-about-dlp.md)
+- [Diseño de una directiva de prevención de pérdida de datos](../compliance/dlp-policy-design.md)
+- [Referencia de directiva de prevención de pérdida de datos](../compliance/dlp-policy-reference.md)
+
+
+<!--
 
 > [!div class="mx-imgBorder"]
-> ![Configuración de directiva DLP en Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-Este es un ejemplo de directiva DLP para el reconocimiento del RGPD.
+Here is an example DLP policy for awareness of GDPR.
 
-![Ejemplo de directiva DLP para el reconocimiento del RGPD.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-Consulte [este artículo](../compliance/create-test-tune-dlp-policy.md) para obtener más información sobre cómo crear y aplicar directivas DLP.
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.-->
 
 ### <a name="protection-levels-for-data-privacy"></a>Niveles de protección para la privacidad de los datos
 
@@ -304,7 +320,7 @@ Estos son algunos escenarios de protección de datos que usan dlp y etiquetas de
 
 ## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 nuevas funcionalidades de cifrado de mensajes (OME)
 
-Las personas suelen usar el correo electrónico para intercambiar elementos confidenciales, como información de salud del paciente o información de clientes y empleados. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
+Personas a menudo usan el correo electrónico para intercambiar elementos confidenciales, como información de salud del paciente o información de clientes y empleados. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
 
 Con [OME](../compliance/ome.md), puede enviar y recibir mensajes cifrados entre personas dentro y fuera de su organización. OME funciona con Outlook.com, Yahoo!, Gmail y otros servicios de correo electrónico. OME ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
 
@@ -320,7 +336,7 @@ Para la privacidad de los datos, si necesita compartir correo electrónico con u
 
 Las etiquetas de OME y confidencialidad aplicadas al correo electrónico con cifrado tienen cierta superposición, por lo que es importante comprender a qué escenarios se pueden aplicar, como se muestra en esta tabla.
 
-| Escenario | Etiquetas de confidencialidad | OME |
+| Escenario | Etiquetas de confidencialidad | Ome |
 |:-------|:-----|:-------|
 | Interno y asociados <br> Comunicación y colaboración seguras entre usuarios internos y asociados de confianza | Recomendación: etiquetas con clasificación y protección totalmente personalizadas | Sí: cifre solo o no reenvíe la protección sin clasificación |
 | Partes externas <br> Comunicarse y colaborar de forma segura con cualquier usuario externo o consumidor | Sí: predefinidos destinatarios en la etiqueta | Recomendación: protección Just-In-Time basada en destinatarios |

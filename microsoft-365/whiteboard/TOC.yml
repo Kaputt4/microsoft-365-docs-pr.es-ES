@@ -14,8 +14,6 @@
       href: manage-data-organizations.md
     - name: Administrar el uso compartido
       href: manage-sharing-organizations.md
-    - name: Implementar en dispositivos Windows
-      href: deploy-on-windows-organizations.md
 - name: Privacidad y cumplimiento
   items:
     - name: Ajustar la configuración de privacidad
@@ -24,13 +22,15 @@
       href: gdpr-requests.md
 - name: Whiteboard para administración pública
   items:
-    - name: 'Administración del acceso: GCC High'
-      href: manage-whiteboard-access-gcc-high.md
-    - name: 'Administración de datos: GCC High'
-      href: manage-data-gcc-high.md
-    - name: 'Administración del uso compartido: GCC High'
-      href: manage-sharing-gcc-high.md
-    - name: 'Administración de clientes: GCC High'
-      href: manage-clients-gcc-high.md
+    - name: GCC High
+      items:
+        - name: 'Administración del acceso: GCC High'
+          href: manage-whiteboard-access-gcc-high.md
+        - name: 'Administración de datos: GCC High'
+          href: manage-data-gcc-high.md
+        - name: 'Administración del uso compartido: GCC High'
+          href: manage-sharing-gcc-high.md
+        - name: 'Administración de clientes: GCC High'
+          href: manage-clients-gcc-high.md
 - name: Whiteboard PowerShell
   href: /powershell/module/whiteboard/

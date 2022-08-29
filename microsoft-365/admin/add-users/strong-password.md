@@ -21,26 +21,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Si es un administrador que administra la directiva de contraseñas para una empresa, una escuela o una organización sin ánimo de lucro, puede establecer requisitos de contraseña seguros mediante Azure AD PowerShell.
-ms.openlocfilehash: e98c9a3f7b31cbb53d4c853487f4908a6dec72d5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 72f7e5dd36cf011592daf4bac2e57c438106319a
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010264"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441688"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Desactivar los requisitos de contraseña seguros para los usuarios
 
-En este artículo se explica cómo desactivar los requisitos de contraseña seguros para los usuarios. Los requisitos de contraseña seguros están activados de forma predeterminada en la Microsoft 365 para la organización empresarial. Es posible que la organización tenga requisitos para deshabilitar contraseñas seguras. Siga los pasos siguientes para desactivar los requisitos de contraseña seguros. Debe completar estos pasos mediante PowerShell.
+En este artículo se explica cómo desactivar los requisitos de contraseña seguros para los usuarios. Los requisitos de contraseña seguros están activados de forma predeterminada en la organización de Microsoft 365 para empresas. Es posible que la organización tenga requisitos para deshabilitar contraseñas seguras. Siga los pasos siguientes para desactivar los requisitos de contraseña seguros. Debe completar estos pasos mediante PowerShell.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está destinado a personas que administran la directiva de contraseñas para empresas, escuelas o organizaciones sin ánimo de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Información general de la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
+Este artículo está destinado a personas que administran la directiva de contraseñas para empresas, escuelas o organizaciones sin ánimo de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../admin-overview/admin-center-overview.md#overview-of-the-microsoft-365-admin-center) Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
 También debe conectarse a Microsoft 365 con PowerShell.
 
 ## <a name="set-strong-passwords"></a>Establecimiento de contraseñas seguras
 
-1. [Conectar para Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [Conéctese a Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 2. Con PowerShell, puede desactivar los requisitos de contraseña seguros para todos los usuarios con el siguiente comando:
 

@@ -1,7 +1,7 @@
 ---
-title: Habilitación y configuración de características de protección de Antivirus de Microsoft Defender
-description: Habilite la protección basada en comportamientos, heurística y en tiempo real en El antivirus de Microsoft Defender.
-keywords: heurístico, aprendizaje automático, monitor de comportamiento, protección en tiempo real, always-on, Antivirus de Microsoft Defender, antimalware, security, defender
+title: Habilitación y configuración de las características de protección del Antivirus de Microsoft Defender
+description: Habilite la protección basada en comportamientos, heurística y en tiempo real en el Antivirus de Microsoft Defender.
+keywords: heurístico, aprendizaje automático, monitor de comportamiento, protección en tiempo real, always-on, Antivirus de Microsoft Defender, antimalware, seguridad, defender
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57f66dd4643ea04c505e61ea2db40a7ac9a61e68
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0c67af35776d5fdc55dcc06472b9121ead19a571
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419206"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387779"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurar la protección en tiempo real, heurística y de comportamiento
 
@@ -40,21 +40,21 @@ Antivirus de Microsoft Defender usa varios métodos para proporcionar protecció
 - Análisis siempre activado, mediante la supervisión del comportamiento de archivos y procesos y otras heurísticas (también conocida como "protección en tiempo real")
 - Actualizaciones de protección dedicadas basadas en el aprendizaje automático, el análisis de macrodatos humanos y automatizados y la investigación en profundidad de la resistencia a amenazas
 
-Puede configurar cómo usa Antivirus de Microsoft Defender estos métodos con directiva de grupo, System Center Configuration Manage, cmdlets de PowerShell y Windows Management Instrumentation (WMI).
+Puede configurar cómo antivirus de Microsoft Defender usa estos métodos con directiva de grupo, System Center Configuration Manage, cmdlets de PowerShell e Instrumental de administración de Windows (WMI).
 
 En esta sección se describe la configuración para el examen siempre activo, incluido cómo detectar y bloquear aplicaciones que se consideran no seguras, pero que pueden no detectarse como malware.
 
-Consulte [Uso de tecnologías de Antivirus de Microsoft Defender de última generación a través de la protección](cloud-protection-microsoft-defender-antivirus.md) en la nube para obtener información sobre cómo habilitar y configurar Antivirus de Microsoft Defender protección en la nube.
+Consulte [Uso de tecnologías antivirus de Microsoft Defender de última generación a través de la protección](cloud-protection-microsoft-defender-antivirus.md) en la nube para obtener información sobre cómo habilitar y configurar la protección en la nube del Antivirus de Microsoft Defender.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema|Descripción |
 |---|---|
 | [Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)| Detectar y bloquear aplicaciones que pueden no ser deseadas en la red, como adware, modificadores de navegador y barras de herramientas, y aplicaciones antivirus falsas o no autorizadas |
-| [Habilitación y configuración de funcionalidades de protección de Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md)|Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión de Antivirus de Microsoft Defender siempre activadas |
+| [Habilitación y configuración de las funcionalidades de protección del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md)|Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión del Antivirus de Microsoft Defender siempre activadas |
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

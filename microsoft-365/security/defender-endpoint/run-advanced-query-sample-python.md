@@ -1,9 +1,8 @@
 ---
-title: Guía avanzada de la API de Python
+title: Guía de búsqueda avanzada con API de Python
 ms.reviewer: ''
-description: Obtenga información sobre cómo consultar con la API de Microsoft Defender para endpoint mediante Python, con ejemplos.
+description: Obtenga información sobre cómo consultar mediante la API de Microsoft Defender para punto de conexión, mediante Python, con ejemplos.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fbd8c802ac528407a40249b553c76374d057369d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6751098c58e53c06cf9b62f7b93cd48aa35f5374
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165959"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331387"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -41,7 +40,7 @@ Ejecute consultas avanzadas con Python, consulte [Advanced Hunting API](run-adva
 
 En esta sección, compartimos ejemplos de Python para recuperar un token y usarlo para ejecutar una consulta.
 
-> **Requisito** previo: primero debes [crear una aplicación](apis-intro.md).
+> **Requisito previo**: primero debe [crear una aplicación](apis-intro.md).
 
 ## <a name="get-token"></a>Obtener token
 
@@ -75,18 +74,18 @@ jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
 ```
 
-donde
+Dónde
 
-- tenantId: identificador del espacio empresarial en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este espacio empresarial)
-- appId: id. de la aplicación Azure AD (la aplicación debe tener permiso "Ejecutar consultas avanzadas" en Microsoft Defender para endpoint)
-- appSecret: secreto de la aplicación Azure AD aplicación
+- tenantId: identificador del inquilino en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino).
+- appId: identificador de la aplicación de Azure AD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" para Microsoft Defender para punto de conexión)
+- appSecret: secreto de la aplicación de Azure AD
 
 ## <a name="run-query"></a>Ejecutar consulta
 
- Ejecute la siguiente consulta:
+ Ejecute la consulta siguiente:
 
 ```python
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
@@ -104,7 +103,7 @@ schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
 ```
 
-- schema contiene el esquema de los resultados de la consulta
+- esquema contiene el esquema de los resultados de la consulta
 - los resultados contienen los resultados de la consulta
 
 ### <a name="complex-queries"></a>Consultas complejas
@@ -143,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-Para generar los resultados de la consulta en formato JSON en file file1.json, haga lo siguiente:
+Para generar los resultados de la consulta en formato JSON en el archivo file1.json, haga lo siguiente:
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
@@ -153,6 +152,6 @@ outputFile.close()
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Microsoft Defender para api de punto de conexión](apis-intro.md)
+- [API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)

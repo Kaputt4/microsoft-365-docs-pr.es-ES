@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9918763732fa828f17b395a3f96b24e8fbed46f2
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d6d9561f381771fb322a281f33f840c27ce61f90
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174990"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437806"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configuración de señales de riesgo Microsoft Defender para punto de conexión mediante directivas de protección de aplicaciones (MAM)
 
@@ -133,7 +133,11 @@ Seleccione **Establecer > nivel máximo de amenaza de dispositivo permitido** en
 
 6. Seleccione **Continuar** para iniciar sesión en la aplicación administrada. 
 
-### <a name="configure-privacy-controls"></a>Configuración de controles de privacidad 
+## <a name="configure-privacy-controls"></a>Configuración de controles de privacidad 
+>[!IMPORTANT]
+>Los controles de privacidad en Microsoft Defender para punto de conexión en MAM están en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+>**Si desea probar esta característica o proporcionar comentarios, póngase en contacto con nosotros en mdatpmobile@microsoft.com.**
+
 Los administradores pueden usar los pasos siguientes para habilitar la privacidad y no recopilar el nombre de dominio, los detalles de la aplicación y la información de red como parte del informe de alertas de las amenazas correspondientes.
 
 1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar aplicaciones administradas >**.
@@ -149,6 +153,9 @@ Los administradores pueden usar los pasos siguientes para habilitar la privacida
 6. Revise y cree la directiva.
 
 ## <a name="optional-permissions"></a>Permisos opcionales 
+>[!IMPORTANT]
+>Permisos opcionales en Microsoft Defender para punto de conexión está en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+>**Si desea probar esta característica o proporcionar comentarios, póngase en contacto con nosotros en mdatpmobile@microsoft.com.**
 
 Microsoft Defender para punto de conexión en Android habilita permisos opcionales en el flujo de incorporación. Actualmente, los permisos requeridos por MDE son obligatorios en el flujo de incorporación. Con esta característica, el administrador puede implementar MDE en dispositivos Android con directivas MAM sin aplicar los permisos obligatorios de VPN y accesibilidad durante la incorporación. Los usuarios finales pueden incorporar la aplicación sin los permisos obligatorios y pueden revisarlos más adelante. 
 

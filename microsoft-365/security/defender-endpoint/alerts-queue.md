@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 13959666f0c44f83fcb938db010ed30d5e5056b4
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 30d42c9ca69c75675f453eefd2714b6820dd5384
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607540"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388218"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -57,13 +57,13 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 Gravedad de la alerta|Descripción
 ---|---
 Alto <br> (Rojo)|Alertas que se suelen ver asociadas a amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad de los daños que pueden infligir en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas a ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada que indica un adversario humano.
-Medio <br> (Naranja)|Alertas de comportamientos posteriores a la vulneración y de detección de puntos de conexión que podrían formar parte de una amenaza persistente avanzada (APT). Estos comportamientos incluyen comportamientos observados típicos de las fases de ataque, cambio anómalo del Registro, ejecución de archivos sospechosos, etc. Aunque algunas podrían formar parte de pruebas de seguridad internas, requiere investigación, ya que también podría formar parte de un ataque avanzado.
+Mediano <br> (Naranja)|Alertas de comportamientos posteriores a la vulneración y de detección de puntos de conexión que podrían formar parte de una amenaza persistente avanzada (APT). Estos comportamientos incluyen comportamientos observados típicos de las fases de ataque, cambio anómalo del Registro, ejecución de archivos sospechosos, etc. Aunque algunas podrían formar parte de pruebas de seguridad internas, requiere investigación, ya que también podría formar parte de un ataque avanzado.
 Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas a malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería que no son de malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría proceder de una prueba de herramientas de seguridad aisladas por parte de un usuario de su organización.
 Informativo <br> (Gris)|Alertas que podrían no considerarse perjudiciales para la red, pero que pueden impulsar el reconocimiento de la seguridad de la organización sobre posibles problemas de seguridad.
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
 
-Las gravedades de las alertas antivirus de Microsoft Defender (Antivirus de Microsoft Defender) y Defender para punto de conexión son diferentes porque representan ámbitos diferentes.
+Las gravedades de las alertas de Antivirus de Microsoft Defender y Defender para punto de conexión son diferentes porque representan ámbitos diferentes.
 
 La gravedad de la amenaza del Antivirus de Microsoft Defender representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
 
@@ -83,7 +83,7 @@ Puede elegir filtrar la lista de alertas en función de su estado.
 > [!NOTE]
 > Si ve un estado de *alerta de tipo de alerta no compatible* , significa que las funcionalidades de investigación automatizada no pueden recoger esa alerta para ejecutar una investigación automatizada. Sin embargo, puede [investigar estas alertas manualmente](../defender/investigate-incidents.md#alerts).
 
-### <a name="categories"></a>Categorías
+### <a name="categories"></a>Categories
 
 Hemos redefinido las categorías de alertas para que se alineen con las [tácticas de ataque empresariales](https://attack.mitre.org/tactics/enterprise/) en la [matriz de MITRE ATT&CK](https://attack.mitre.org/). Los nuevos nombres de categoría se aplican a todas las alertas nuevas. Las alertas existentes conservarán los nombres de categoría anteriores.
 
@@ -119,9 +119,9 @@ Puede filtrar las alertas en función de las siguientes directivas:
 |Investigación automatizada|AutomatedInvestigation|
 |Detección personalizada|CustomDetection|
 |TI personalizado|CustomerTI|
-|EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
-|Microsoft Defender para Office 365|OfficeATP|
+|Edr|WindowsDefenderAtp|
+|Microsoft 365 Defender|Mtp|
+|Microsoft Defender para Office 365|OfficeATP|
 |Expertos en amenazas de Microsoft|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 

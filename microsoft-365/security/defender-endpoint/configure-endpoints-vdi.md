@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 7ef410beaacbc899c6f52e688ee38b3b545b8997
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 8bf3dda061b582adb7b21029022e61bc890aeec7
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823095"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441648"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistente en Microsoft 365 Defender
 
@@ -59,7 +59,6 @@ En un entorno de VDI, las instancias de VDI pueden tener una duración corta. Lo
 
 
 - Entrada de portal única para cada instancia de VDI. Si la instancia de VDI ya se ha incorporado a Microsoft Defender para punto de conexión y, en algún momento, se ha eliminado y, a continuación, se vuelve a crear con el mismo nombre de host, no se creará un nuevo objeto que represente esta instancia de VDI en el portal. 
-
 
   > [!NOTE]
   > En este caso, se debe configurar el *mismo* nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendida.
@@ -143,14 +142,14 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
 
 2. Siga el [proceso de incorporación del servidor](configure-server-endpoints.md). 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Actualización de imágenes de infraestructura de escritorio virtual (VDI) no persistentes
+## <a name="updating-virtual-desktop-infrastructure-vdi-images-persistent-or-non-persistent"></a>Actualización de imágenes de infraestructura de escritorio virtual (VDI) (persistentes o no persistentes)
 
 Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
 Para obtener más información, siga las instrucciones de la [Guía de implementación de Antivirus de Microsoft Defender en un entorno de Infraestructura de escritorio virtual (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
    > [!NOTE]
-   > Si ha incorporado la imagen maestra del entorno de VDI no persistente (se está ejecutando el servicio SENSE), debe desconectar y borrar algunos datos antes de volver a poner la imagen en producción.
+   > Si ha incorporado la imagen maestra del entorno de VDI (se está ejecutando el servicio SENSE), debe desconectar y borrar algunos datos antes de volver a poner la imagen en producción.
    > 1. Asegúrese de que el sensor se detiene ejecutando el siguiente comando en una ventana CMD:
    >  ```console
    >  sc query sense
@@ -165,11 +164,9 @@ Para obtener más información, siga las instrucciones de la [Guía de implement
    >  exit
    >  ```
 
-
 ## <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas
 
 Después de incorporar dispositivos al servicio, es importante aprovechar las funcionalidades de protección contra amenazas incluidas al habilitarlos con las siguientes opciones de configuración recomendadas.
-
 
 ### <a name="next-generation-protection-configuration"></a>Configuración de protección de próxima generación
 
@@ -181,14 +178,12 @@ Se recomiendan los siguientes valores de configuración:
 - Nivel de protección proporcionada en la nube: no configurado
 - Tiempo de espera extendido en la nube de Defender en segundos: 20
 
-
 #### <a name="exclusions"></a>Exclusiones
 - Deshabilitar combinación de administración local: no configurado
 - Procesos de Defender que se van a excluir:
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
 
 - Extensiones de archivo para excluir de exámenes y protección en tiempo real:
   -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
@@ -201,7 +196,6 @@ Se recomiendan los siguientes valores de configuración:
   - `\\stroageaccount.file.core.windows.net\share**.VHD`
   -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
 
-
 #### <a name="real-time-protection"></a>Protección en tiempo real
 
 - Activar toda la configuración y establecer para supervisar todos los archivos
@@ -213,8 +207,6 @@ Se recomiendan los siguientes valores de configuración:
 - Acciones para las amenazas detectadas:
   - Amenaza baja: Limpiar
   - Amenaza moderada, Amenaza alta, Amenaza grave: Cuarentena
-
-
 
 #### <a name="scan"></a>Examinar
 
@@ -237,7 +229,6 @@ Se recomiendan los siguientes valores de configuración:
 #### <a name="user-experience"></a>Experiencia del usuario
 - Permitir el acceso del usuario a la aplicación Microsoft Defender: No configurado
 
-
 #### <a name="enable-tamper-protection"></a>Habilitación de la protección contra alteraciones
 - Habilitar la protección contra alteraciones para evitar que Microsoft Defender se deshabilite: Habilitar
 
@@ -245,20 +236,14 @@ Se recomiendan los siguientes valores de configuración:
 
 - Habilitación de la protección de red: modo de auditoría
 - Requerir SmartScreen para Microsoft Edge: Sí
-- Bloquear el acceso al sitio maclious: Sí
+- Bloquear el acceso a sitios malintencionados: Sí
 - Bloquear la descarga de archivos no comprobados: Sí
 
 #### <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 - Configure todas las reglas disponibles en Auditar.
 
-
 > [!NOTE]
 > Bloquear estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguras de activar y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
-
-
-
-
-
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)

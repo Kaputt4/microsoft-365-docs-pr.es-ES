@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo SharePoint Online detecta virus en
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b04e9a1ca2e722a2f581441f44716c22be7a1635
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: e57865d0c8ec3993080c822438b7c4037ccab765
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059697"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450067"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protección antivirus integrada en SharePoint Online, OneDrive y Microsoft Teams
 
@@ -42,7 +42,7 @@ Microsoft 365 usa un motor de detección de virus común para examinar archivos 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>¿Qué ocurre si se carga un archivo infectado en SharePoint Online?
 
-El motor de detección de virus de Microsoft 365 se ejecuta de forma asincrónica (independiente de las cargas de archivos) en SharePoint Online. **Todos los archivos no se examinan automáticamente**. La heurística determina los archivos que se van a examinar. Cuando se detecta que un archivo contiene un virus, el archivo se marca. En abril de 2018, se quitó el límite de 25 MB para los archivos escaneados.
+El motor de detección de virus de Microsoft 365 examina los archivos de forma asincrónica (en algún momento después de la carga). Si el proceso de detección de virus asincrónico aún no ha examinado un archivo y un usuario intenta descargar el archivo desde el explorador o desde Teams, SharePoint desencadena un examen al descargarlo antes de que se permita la descarga. **Todos los tipos de archivo no se examinan automáticamente**. La heurística determina los archivos que se van a examinar. Cuando se detecta que un archivo contiene un virus, el archivo se marca. 
 
 Esto es lo que sucede:
 

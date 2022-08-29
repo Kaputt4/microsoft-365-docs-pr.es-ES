@@ -14,12 +14,12 @@ description: Siga la ruta de acceso de un mensaje entrante a través de la pila 
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 96e7fb9a4e774b51b1d2138cd72ea468bc23ee7b
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772048"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450155"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -62,11 +62,11 @@ Las características de la inteligencia del remitente son fundamentales para det
 
 1. Los desencadenadores y alertas **de detección de riesgos** de cuenta se generan cuando una cuenta tiene un comportamiento anómalo, coherente con el riesgo. En algunos casos, la cuenta de usuario se bloquea y no se puede enviar más mensajes de correo electrónico hasta que el equipo de operaciones de seguridad de una organización resuelva el problema.
 
-2. **La autenticación por correo electrónico** implica tanto métodos configurados por el cliente como métodos configurados en la nube, con el objetivo de garantizar que los remitentes son enviadores autorizados y auténticos. Estos métodos resisten la suplantación de identidad.
+2. **Email La autenticación** implica tanto métodos configurados por el cliente como métodos configurados en la nube, con el objetivo de garantizar que los remitentes estén autorizados y sean auténticos. Estos métodos resisten la suplantación de identidad.
     - **SPF** puede rechazar los correos basados en registros TXT de DNS que enumeran las direcciones IP y los servidores que pueden enviar correo en nombre de la organización.
     - **DKIM** proporciona una firma cifrada que autentica al remitente.
     - **DMARC** permite a los administradores marcar SPF y DKIM según sea necesario en su dominio y exige la alineación entre los resultados de estas dos tecnologías.
-    - **ARC** no está configurado por el cliente, pero se basa en DMARC para trabajar con el reenvío en listas de correo, mientras se registra una cadena de autenticación.
+    - **ARC** se basa en DMARC para trabajar con el reenvío en listas de correo mientras se registra una cadena de autenticación.
 
 3. **La inteligencia de suplantación** de identidad es capaz de filtrar aquellos a los que se les permite "suplantar" (es decir, aquellos que envían correo en nombre de otra cuenta o reenvía para una lista de correo) desde remitentes malintencionados que imitan dominios externos conocidos o de la organización. Separa el correo legítimo "en nombre de" de los remitentes que suplantan para entregar mensajes de spam y phishing.
 

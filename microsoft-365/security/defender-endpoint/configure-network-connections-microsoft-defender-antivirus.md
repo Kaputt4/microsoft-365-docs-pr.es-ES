@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 163929596d826eb1f7a04af4d9baea5d6a975c3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717832"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386481"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -99,7 +99,7 @@ Si usa Microsoft Edge, también verá un mensaje de notificación:
 
 Se produce un mensaje similar si usa Internet Explorer:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="La notificación del antivirus de Microsoft Defender de que se encontró malware" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notificación del Antivirus de Microsoft Defender de que se encontró malware" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Visualización de la detección de malware falso en la aplicación Seguridad de Windows
 

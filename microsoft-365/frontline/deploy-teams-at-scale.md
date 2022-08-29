@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 28232f888b925b6a0f930d464b1dcdfca00b2c3b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-ms.translationtype: HT
+ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004244"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439594"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Implementar equipos a escala para los trabajadores de primera línea en Microsoft Teams
 
@@ -162,7 +162,7 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
 1. Ejecute lo siguiente para comprobar el estado del lote que envió.
 
     ```powershell
-    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>Enviarnos comentarios

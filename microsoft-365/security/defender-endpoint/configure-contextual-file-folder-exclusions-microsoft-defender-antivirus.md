@@ -1,6 +1,6 @@
 ---
 title: Exclusiones contextuales de archivos y carpetas
-description: Describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Antivirus de Windows Defender. Esta funcionalidad le permite ser más específico al definir en qué contexto Antivirus de Windows Defender no debe examinar un archivo o carpeta, mediante la aplicación de restricciones
+description: Describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Antivirus de Microsoft Defender en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto el Antivirus de Microsoft Defender no debe examinar un archivo o carpeta, aplicando restricciones.
 keywords: Antivirus de Microsoft Defender, proceso, exclusión, archivos, exámenes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,25 +9,26 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66998345"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439572"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusiones contextuales de archivos y carpetas
 
-En este artículo o sección se describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Antivirus de Windows Defender. Esta funcionalidad le permite ser más específico al definir en qué contexto Antivirus de Windows Defender no debe examinar un archivo o carpeta mediante la aplicación de restricciones.
+En este artículo o sección se describe la funcionalidad de exclusiones de archivos y carpetas contextuales para antivirus de Microsoft Defender en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto el Antivirus de Microsoft Defender no debe examinar un archivo o carpeta mediante la aplicación de restricciones.
 
 ## <a name="overview"></a>Información general
 
-Las exclusiones están pensadas principalmente para mitigar los efectos en el rendimiento. Se ven penalizado por un valor de protección reducido. Estas restricciones permiten limitar esta reducción de protección especificando las circunstancias en las que se debe aplicar la exclusión. Las exclusiones contextuales no son adecuadas para abordar falsos positivos de forma confiable. Si encuentra un falso positivo, puede enviar archivos para su análisis a través del portal [de Microsoft 365 Defender](https://security.microsoft.com/) (se requiere suscripción) o a través del sitio web [de Inteligencia de seguridad de Microsoft](https://www.microsoft.com/wdsi/filesubmission). Para un método de supresión temporal, considere la posibilidad de crear un indicador _de permiso_ personalizado.
+Las exclusiones están pensadas principalmente para mitigar los efectos en el rendimiento. Se ven penalizado por un valor de protección reducido. Estas restricciones permiten limitar esta reducción de protección especificando las circunstancias en las que se debe aplicar la exclusión. Las exclusiones contextuales no son adecuadas para abordar falsos positivos de forma confiable. Si encuentra un falso positivo, puede enviar archivos para su análisis a través del portal [de Microsoft 365 Defender](https://security.microsoft.com/) (se requiere suscripción) o a través del sitio web [de Inteligencia de seguridad de Microsoft](https://www.microsoft.com/wdsi/filesubmission). Para un método de supresión temporal, considere la posibilidad de crear un indicador _de permiso_ personalizado en [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/indicator-file).
 
 Hay cuatro restricciones que puede aplicar para limitar la aplicabilidad de una exclusión:
 
@@ -47,12 +48,12 @@ Normalmente, las restricciones se aplican agregando el tipo de restricción a la
 |:---|:---|:---|
 | Archivo o carpeta  | PathType  | file <br> folder |
 | Tipo de examen | ScanType | Rápido <br> Completo |
-| Desencadenador de examen | ScanTrigger | Ondemand <br> OnAccess <br> BM |
+| Desencadenador de examen | ScanTrigger | Ondemand <br> OnAccess <br> Bm |
 | Proceso | Proceso | "<image_path>" |
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
-Esta funcionalidad requiere Antivirus de Windows Defender:
+Esta funcionalidad requiere antivirus de Microsoft Defender:
 
 - Plataforma: **4.18.2205.7** o posterior
 - Motor: **1.1.19300.2** o posterior
@@ -65,6 +66,10 @@ Como punto de partida, es posible que ya tenga exclusiones en su lugar que desee
 
 Tenga en cuenta que _todos los_ **tipos** y **valores** distinguen mayúsculas de minúsculas.
 
+> [!NOTE]  
+> Las condiciones dentro `{}` de DEBEN ser true para que la restricción coincida. Por ejemplo, si especifica dos desencadenadores de examen, esto no puede ser true y la exclusión no se aplicará. Para especificar dos restricciones del mismo tipo, cree dos exclusiones independientes.
+
+
 ### <a name="examples"></a>Ejemplos
 
 La cadena siguiente excluye "c:\documents\design.doc" solo si se trata de un archivo y solo en los exámenes en el acceso:
@@ -73,11 +78,11 @@ La cadena siguiente excluye "c:\documents\design.doc" solo si se trata de un arc
 
 La cadena siguiente excluye "c:\documents\design.doc" solo si se examina (a su acceso) debido a que un proceso que tiene el nombre de imagen "winword.exe":
 
-`c:\documents\design.doc\:{Process:”winword.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe"}`
 
 La ruta de acceso de la imagen de proceso puede contener caracteres comodín, como en el ejemplo siguiente:
 
-`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
+`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### <a name="filefolder-restriction"></a>Restricción de archivos o carpetas
 
@@ -146,7 +151,7 @@ Esta restricción le permite definir que una exclusión solo se debe aplicar cua
 
 Para excluir un archivo o carpeta solo cuando un proceso específico acceda a él, cree un archivo o una exclusión de carpeta normales y agregue el proceso para restringir la exclusión a:  
 
-`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
 
 ### <a name="how-to-configure"></a>Cómo establecer la configuración
 

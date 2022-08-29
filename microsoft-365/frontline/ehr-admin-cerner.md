@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Obtenga información sobre cómo integrar el conector EHR de Teams que permita a los proveedores de atención sanitaria de su organización realizar citas virtuales con pacientes u otros proveedores en Teams directamente desde el sistema CERNER EHR.
-ms.openlocfilehash: 9388ec0fef16fb15221044e387c485586acc1a64
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: 856447ac9036be5a707788e333892aba106800c7
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099896"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333728"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Citas virtuales con Teams: integración en Cerner EHR
 
@@ -56,6 +56,7 @@ Antes de integrar el conector HCE de Teams en su organización sanitaria, debe t
 - Una suscripción activa para Microsoft en la nube para la atención sanitaria o una suscripción a la oferta independiente del conector EHR de Microsoft Teams.
 - Los usuarios tienen un Microsoft 365 adecuado o una licencia de Office 365 que incluye reuniones de Teams.
 - Teams se adopta y usa en su organización de atención sanitaria.
+- Se ha identificado a una persona de su organización que es un administrador global de Microsoft 365 con acceso al [Centro de administración de Teams](https://admin.teams.microsoft.com).
 - Los sistemas cumplen todos los [requisitos de software y explorador](/microsoftteams/hardware-requirements-for-the-teams-app) para Teams.
 - Versión de Cerner de noviembre de 2018 o posterior
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la información de inteligencia sobre suplantación de identidad en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 4bd690b9adae76f6920389ab59fda2210f9fc681
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281759"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388449"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Información de inteligencia sobre suplantación de identidad en EOP
 
@@ -60,9 +60,9 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 > [!NOTE]
 >
-> - En la información de inteligencia sobre suplantación de identidad solo aparecen los remitentes suplantados detectados por la inteligencia suplantada. Al invalidar el veredicto de permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que aparece solo en la pestaña **Suplantación** de identidad en la lista de permitidos o bloqueados de inquilinos. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que se detecten mediante inteligencia de suplantación de identidad. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
+> - En la información de inteligencia sobre suplantación de identidad solo aparecen los remitentes suplantados detectados por la inteligencia suplantada. Cuando se invalida el veredicto de permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que aparece solo en la pestaña **Remitentes suplantados de la Lista de permitidos o bloqueados de inquilinos** . También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que se detecten mediante inteligencia de suplantación de identidad. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](manage-tenant-allow-block-list.md).
 >
-> - La información de inteligencia de suplantación y la pestaña **Suplantación** de identidad de la lista Permitir o bloquear inquilino reemplazan la funcionalidad de la directiva de inteligencia de suplantación de identidad que estaba disponible en la página de directivas contra correo no deseado en el Centro de cumplimiento de seguridad &.
+> - La información de inteligencia de suplantación y la pestaña **Remitentes suplantados** de la lista Permitir o bloquear inquilino reemplazan la funcionalidad de la directiva de inteligencia de suplantación que estaba disponible en la página de directivas contra correo no deseado del Centro de cumplimiento de seguridad &.
 >
 > - La información de inteligencia de suplantación muestra 7 días de datos. El cmdlet **Get-SpoofIntelligenceInsight** muestra datos de 30 días.
 >
@@ -70,7 +70,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la pestaña **Suplantación de** identidad en la página **Lista de inquilinos permitidos o bloqueados** , use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Para ir directamente a la página **Spoof intelligence insight (Información de inteligencia de suplantación** de identidad), use <https://security.microsoft.com/spoofintelligence>.
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la pestaña Remitentes suplantados de la página **Lista de inquilinos permitidos o bloqueados**, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Para ir directamente a la página **Spoof intelligence insight (Información de inteligencia de suplantación** de identidad), use <https://security.microsoft.com/spoofintelligence>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -93,7 +93,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de inteligencia sobre suplantación de identidad en el portal de Microsoft 365 Defender
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Listas de inquilinos permitidos o bloqueados** en la sección **Reglas**. Para ir directamente a la pestaña **Suplantación de** identidad en la página **Lista de inquilinos permitidos o bloqueados** , use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Listas de inquilinos permitidos o bloqueados** en la sección **Reglas**. Para ir directamente a la pestaña Remitentes suplantados de la página **Lista de inquilinos permitidos o bloqueados**, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. En la página **Listas de permitidos o bloqueados** de inquilinos, la información de inteligencia de suplantación es similar a la siguiente:
 
@@ -109,7 +109,7 @@ Para ver información sobre las detecciones de inteligencia de suplantación de 
 ### <a name="view-information-about-spoofed-messages"></a>Visualización de información sobre mensajes suplantados
 
 > [!NOTE]
-> Recuerde que solo aparecen en esta página los remitentes suplantados detectados por inteligencia de suplantación de identidad. Al invalidar el veredicto de permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que aparece solo en la pestaña **Suplantación** de identidad en la lista de permitidos o bloqueados de inquilinos.
+> Recuerde que solo aparecen en esta página los remitentes suplantados detectados por inteligencia de suplantación de identidad. Cuando se invalida el veredicto de permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que aparece solo en la pestaña **Remitentes suplantados de la Lista de permitidos o bloqueados de inquilinos** .
 
 En la página **Información de inteligencia de** suplantación que aparece después de hacer clic en **Ver actividad de suplantación** de identidad en la información de inteligencia de suplantación, la página contiene la siguiente información:
 
@@ -161,7 +161,7 @@ Solo se permitirá la suplantación de correo electrónico de ese par de infraes
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Uso de la información de inteligencia de suplantación de identidad en Exchange Online PowerShell o PowerShell de EOP independiente
 
-En PowerShell, se usa el cmdlet **Get-SpoofIntelligenceInsight** para **ver** los remitentes suplantados permitidos y bloqueados detectados por la inteligencia de suplantación de identidad. Para permitir o bloquear manualmente los remitentes suplantados, debe usar el cmdlet **New-TenantAllowBlockListSpoofItems** . Para obtener más información, consulte [Uso de PowerShell para administrar entradas de remitente suplantadas en la lista de permitidos o bloqueados](tenant-allow-block-list.md) de inquilinos.
+En PowerShell, se usa el cmdlet **Get-SpoofIntelligenceInsight** para **ver** los remitentes suplantados permitidos y bloqueados detectados por la inteligencia de suplantación de identidad. Para permitir o bloquear manualmente los remitentes suplantados, debe usar el cmdlet **New-TenantAllowBlockListSpoofItems** . Para obtener más información, consulte [Uso de PowerShell para administrar entradas de remitente suplantadas en la lista de permitidos o bloqueados](manage-tenant-allow-block-list.md) de inquilinos.
 
 Para ver la información en la información de inteligencia de suplantación, ejecute el siguiente comando:
 

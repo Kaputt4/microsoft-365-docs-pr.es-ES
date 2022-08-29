@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
-ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037524"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441826"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -190,17 +190,13 @@ Cuando una conversación de Skype Empresarial llega a Teams, se convierte en un 
 
 Sin embargo, si el historial de conversaciones está activado para Skype Empresarial y desde el lado del cliente de Skype Empresarial, ese historial se guarda en un buzón de correo, los datos de chat no se controlan mediante una directiva de retención de Teams. Para este contenido, use una directiva de retención configurada para Skype Empresarial.
 
-## <a name="meetings-and-external-users"></a>Reuniones y usuarios externos
+## <a name="messages-and-external-users"></a>Mensajes y usuarios externos
 
-Los mensajes de reunión del canal se almacenan de la misma manera que los mensajes del canal, así que para estos datos, seleccione la ubicación de los **mensajes del canal de Teams** cuando configure su directiva de retención.
+Cuando se incluyen usuarios externos en una reunión o chat que la organización hospeda:
 
-Los mensajes de reuniones improvisadas y programadas se almacenan de la misma manera que los mensajes de chat del grupo, por lo que para estos datos, seleccione la ubicación de los **chats de Teams** cuando configure su directiva de retención.
+- Si un usuario externo se une mediante una cuenta de invitado en el inquilino, los mensajes de Teams se almacenan en el buzón de los usuarios y en un buzón de correo alternativo que se concede a la cuenta de invitado. Sin embargo, las directivas de retención no se admiten para los buzones de correo de sombras paralelas, aunque se puedan notificar como incluidas en una directiva de retención para toda la ubicación (a veces conocida como "directiva de toda la organización").
 
-Cuando se incluyen usuarios externos en una reunión que su organización organiza:
-
-- Si un usuario externo se une mediante una cuenta de invitado en su espacio empresarial, los mensajes de la reunión se almacenan tanto en el buzón de correo de los usuarios como en un buzón de correo de instantáneas que se concede a la cuenta de invitado. Sin embargo, las directivas de retención no se admiten para los buzones de correo de sombras paralelas, aunque se puedan notificar como incluidas en una directiva de retención para toda la ubicación (a veces conocida como "directiva de toda la organización").
-
-- Si un usuario externo se une mediante el uso de una cuenta de otra organización de Microsoft 365, sus directivas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro arrendatario. Sin embargo, para la misma reunión, sus directivas de retención pueden eliminar los mensajes de sus usuarios.
+- Si un usuario externo se une mediante el uso de una cuenta de otra organización de Microsoft 365, sus directivas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro arrendatario. Sin embargo, para la misma reunión o chat, las directivas de retención pueden eliminar mensajes para los usuarios.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 

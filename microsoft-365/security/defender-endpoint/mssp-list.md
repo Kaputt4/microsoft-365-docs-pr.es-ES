@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: bade400bfd794371f294df28320d3a8a11aa30b4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099269"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445054"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 
@@ -46,7 +46,7 @@ Logotipo |Nombre del asociado   | Descripción
 ![Imagen del logotipo de CyberProof.](images/cyberproof-logo.png) |[Respuesta de & de detección administrada cibera prueba cibernética (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | Servicios de respuesta y detección de amenazas administrados 24x7 totalmente integrados con Microsoft Sentinel y Defender para punto de conexión.
 ![Imagen del logotipo de Dell Technologies Advanced Threat Protection.](images/dell-logo.png)| [Protección contra amenazas avanzada de Dell Technologies](https://go.microsoft.com/fwlink/?linkid=2091004) | Servicio de supervisión profesional para comportamientos malintencionados y anomalías con funcionalidad 24/7
 :::image type="content" source="images/dxc-logo.png" alt-text="Imagen del logotipo de detección y respuesta de amenazas de DXC-Managed punto de conexión.":::| [Detección y respuesta de amenazas de puntos de conexión administrados por DXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifique las amenazas de punto de conexión que evaden las defensas de seguridad tradicionales y las contengan en horas o minutos, no en días.
-![Imagen del registro de eSentire.](images/esentire-logo.png) | [ESentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Investigaciones de amenazas 24x7 y respuesta a través de Microsoft Defender para punto de conexión.
+![Imagen del registro de eSentire.](images/esentire-logo.png) | [ESentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Búsqueda, investigación y respuesta completa de amenazas 24/7 con experiencia en MDR certificada en todo el ecosistema de Microsoft, incluido Microsoft 365 Defender & tiempo medio de 15 minutos y más de Sentinel.
 ![Imagen del logotipo de expulsión.](images/expel-logo.png)| [Expulse la detección y respuesta administradas para Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2162430) | La expulsión ayuda a mantener la seguridad al detectar riesgos de seguridad en Microsoft Defender para punto de conexión.
 ![Imagen del logotipo de Mandiant.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) para Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortalezca defender para punto de conexión con la inteligencia mdr de primera línea 24/7 y la experiencia de Mandiant.
 ![Imagen del logotipo de seguridad de NTT.](images/ntt-logo.png)| [Seguridad NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | El servicio EDR de NTT proporciona una supervisión de seguridad 24/7 & respuesta en el punto de conexión y la red

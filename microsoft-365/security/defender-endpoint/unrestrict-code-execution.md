@@ -1,7 +1,7 @@
 ---
-title: Quitar la API de restricción de aplicaciones
+title: Eliminación de la API de restricción de aplicaciones
 description: Use esta API para crear llamadas relacionadas con la eliminación de una restricción de la ejecución de aplicaciones.
-keywords: api, api de gráfico, api admitidas, quitar el dispositivo del aislamiento
+keywords: apis, graph api, api admitidas, quitar el dispositivo del aislamiento
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,22 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2fe35d73cd9abf3483c32067bf59334c6ad016b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 12cb0aa2e6ab980c02d154d72b8df6e953051a29
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167963"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330705"
 ---
-# <a name="remove-app-restriction-api"></a>Quitar la API de restricción de aplicaciones
+# <a name="remove-app-restriction-api"></a>Eliminación de la API de restricción de aplicaciones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -41,34 +41,34 @@ ms.locfileid: "61167963"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Habilitar la ejecución de cualquier aplicación en el dispositivo.
+Habilite la ejecución de cualquier aplicación en el dispositivo.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 > [!IMPORTANT]
 >
-> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703.
-> - El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
-> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
+> - El aislamiento completo está disponible para los dispositivos en Windows 10, versión 1703.
+> - El aislamiento selectivo está disponible para dispositivos en Windows 10, versión 1709 o posterior.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y el tráfico relacionado con la protección basada en la nube del Antivirus de Microsoft Defender.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Machine.RestrictExecution|'Restringir la ejecución de código'
-Delegado (cuenta profesional o educativa)|Machine.RestrictExecution|'Restringir la ejecución de código'
+Application|Machine.RestrictExecution|"Restringir la ejecución de código"
+Delegado (cuenta profesional o educativa)|Machine.RestrictExecution|"Restringir la ejecución de código"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -83,19 +83,19 @@ Nombre|Tipo|Descripción
 Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
+Comentario|Cadena|Comentario que se va a asociar a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 201: código de respuesta creado y [Acción de máquina](machineaction.md) en el cuerpo de la respuesta.
 
-Si envías varias llamadas a la API para quitar las restricciones de la aplicación para el mismo dispositivo, devuelve "acción del equipo pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
+Si envía varias llamadas API para quitar restricciones de aplicación para el mismo dispositivo, devuelve "acción de máquina pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
 
 ## <a name="example"></a>Ejemplo
 
@@ -114,4 +114,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 
 ```
 
-Para restringir la ejecución de código en un dispositivo, consulta [Restringir la ejecución de la aplicación](restrict-code-execution.md).
+Para restringir la ejecución de código en un dispositivo, consulte [Restricción de la ejecución de aplicaciones](restrict-code-execution.md).

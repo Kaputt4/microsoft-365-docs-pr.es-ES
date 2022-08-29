@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 48e873550c83154827d7deaa430b75d82ff80acc
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 41014ce0960d7973ddd7b90382c55ba7156070fd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087273"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388108"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -118,7 +118,7 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
    - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    > [!IMPORTANT]
-   > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+   > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
    > - El destinatario es: romain@contoso.com
    > - El destinatario es miembro de: Ejecutivos
@@ -141,7 +141,7 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
        - **No vuelva a escribir las siguientes direcciones URL en la sección de correo electrónico** : haga clic en **Administrar (nn) direcciones URL** para permitir el acceso a direcciones URL específicas que, de lo contrario, estarían bloqueadas por vínculos seguros.
 
          > [!NOTE]
-         > Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de dirección URL permitidas en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-allow-url-entries) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
+         > Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [las entradas de permiso de dirección URL en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
 
      1. En el control flotante **Administrar direcciones URL para no volver a escribir** que aparece, haga clic en ![el icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) **Agregar direcciones URL**.
      2. En el control flotante **Agregar direcciones URL** que aparece, escriba la dirección URL o el valor que desee, seleccione la entrada que aparece debajo del cuadro y, a continuación, haga clic en **Guardar**. Repita este paso tantas veces como sea necesario.
@@ -162,7 +162,7 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
 
         Para seleccionar todas las entradas en una, haga clic en el área en blanco situada a la izquierda del encabezado de columna **de direcciones URL** .
 
-        Con una o varias entradas seleccionadas, haga clic en ![Icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) Otra posibilidad: ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) iconos que aparecen.
+        Con una o varias entradas seleccionadas, haga clic en ![Icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) o ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) iconos que aparecen.
 
         Cuando haya terminado, haga clic en **Listo**.
 

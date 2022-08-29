@@ -10,7 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 787b636ec3834d258125e724be63aa9487c99081
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912584"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450111"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
@@ -59,13 +59,13 @@ Las funcionalidades de investigación y corrección automatizadas (AIR) en Micro
 
 - Los nuevos inquilinos (que incluyen los inquilinos creados el 16 de agosto de 2020 o después de él) con Defender para punto de conexión se establecen en automatización completa de forma predeterminada.
 
-- [Defender for Business](../defender-business/compare-mdb-m365-plans.md) usa la automatización completa de forma predeterminada. Defender for Business no usa grupos de dispositivos de la misma manera que Defender para empresas. Por lo tanto, la automatización completa se activa y se aplica a todos los dispositivos de Defender para empresas.
+- [Defender for Business](../defender-business/compare-mdb-m365-plans.md) usa la automatización completa de forma predeterminada. Defender for Business no usa grupos de dispositivos de la misma manera que Defender para punto de conexión. Por lo tanto, la automatización completa se activa y se aplica a todos los dispositivos de Defender para empresas.
 
 - Si el equipo de seguridad ha definido grupos de dispositivos con un nivel de automatización, la nueva configuración predeterminada que se va a implementar no cambiará esa configuración.
 
 - Puede mantener la configuración de automatización predeterminada o cambiarla según sus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configuración de funcionalidades automatizadas de investigación y corrección en Defender para punto de conexión](configure-automated-investigations-remediation.md)
 - [Visite el Centro de acciones.](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

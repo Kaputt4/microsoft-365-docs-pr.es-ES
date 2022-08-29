@@ -1,7 +1,7 @@
 ---
 title: Tipo de recurso de usuario
-description: Recupera alertas recientes de Microsoft Defender para puntos de conexión relacionadas con los usuarios.
-keywords: apis, api de gráficos, api admitidas, get, alerts, recent
+description: Recupere las alertas de Microsoft Defender para punto de conexión recientes relacionadas con los usuarios.
+keywords: apis, graph api, api admitidas, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01b7eb32415e431dce37935abb4a1a69776db0f9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: da2032da79666016a03323c22cbf29030b920921
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301983"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330595"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuario
 
@@ -37,7 +37,7 @@ ms.locfileid: "61301983"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Método|Tipo de valor devuelto|Description
+Método|Tipo de valor devuelto|Descripción
 ---|---|---
-[Enumerar alertas relacionadas con el usuario](get-user-related-alerts.md)|Colección [alert](alerts.md)|Enumerar todas las alertas asociadas a un [usuario](user.md).
-[Enumerar dispositivos relacionados con el usuario](get-user-related-machines.md)|[colección machine](machine.md)|Enumerar todos los dispositivos que un usuario ha iniciado [sesión.](user.md)
+[Enumerar alertas relacionadas con el usuario](get-user-related-alerts.md)|Colección [alert](alerts.md)|Enumere todas las alertas asociadas a un [usuario](user.md).
+[Enumerar dispositivos relacionados con el usuario](get-user-related-machines.md)|[colección de máquinas](machine.md)|Enumere todos los dispositivos que ha iniciado sesión un [usuario](user.md).

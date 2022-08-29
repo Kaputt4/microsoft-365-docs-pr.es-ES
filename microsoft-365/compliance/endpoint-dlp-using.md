@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de punto de conexión.
-ms.openlocfilehash: 2fef9c2d89d741c70f3d2d903f41fa8a354d4a79
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
-ms.translationtype: HT
+ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912638"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450089"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -256,7 +256,7 @@ Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampli
 
 Esta configuración garantizará que sus datos estén seguros, evitando así las restricciones innecesarias que impiden o restringen a los usuarios el acceso y el uso compartido de elementos no confidenciales.
 
-## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidenciales (versión preliminar)
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains"></a>Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales
 
 Use este escenario cuando quiera auditar, bloquear con invalidación o bloquear estas actividades de usuario en un sitio web.
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306438"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387691"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -174,7 +174,7 @@ El paquete del instalador comprobará si los siguientes componentes ya se han in
 
 - Se debe instalar la actualización de pila de mantenimiento (SSU) del 14 de septiembre de 2021 o posterior.
 - Se debe instalar la última actualización acumulativa (LCU) del 20 de septiembre de 2018 o posterior.  Se recomienda instalar los SSU y LCU disponibles más recientes en el servidor.
-- Habilite la característica Antivirus de Microsoft Defender (MDAV) y asegúrese de que está actualizada. Para obtener más información sobre cómo habilitar antivirus de Defender en Windows Server, consulta [Volver a habilitar el Antivirus de Defender en Windows Server si se ha deshabilitado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) y [Volver a habilitar el Antivirus de Defender en Windows Server si se ha desinstalado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+- Habilite la característica Antivirus de Microsoft Defender y asegúrese de que está actualizada. Para obtener más información sobre cómo habilitar antivirus de Defender en Windows Server, consulta [Volver a habilitar el Antivirus de Defender en Windows Server si se ha deshabilitado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) y [Volver a habilitar el Antivirus de Defender en Windows Server si se ha desinstalado](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 - Descargue e instale la versión más reciente de la plataforma mediante Windows Update. Como alternativa, descargue el paquete de actualización manualmente desde el [catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) o desde [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Requisitos previos para la ejecución con soluciones de seguridad de terceros

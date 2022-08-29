@@ -1,8 +1,7 @@
 ---
-title: OBTENER API de información de archivos
-description: Obtenga información sobre cómo usar la API Obtener información de archivos para obtener un archivo mediante el identificador Sha1, Sha256 o MD5 en Microsoft Defender para endpoint.
-keywords: apis, graph api, apis admitidas, get, file, information, sha1, sha256, md5
-search.product: eADQiWindows 10XVcnh
+title: Obtención de la API de información de archivos
+description: Obtenga información sobre cómo usar la API Get file information para obtener un archivo mediante el identificador Sha1, Sha256 o MD5 en Microsoft Defender para punto de conexión.
+keywords: api, graph api, api admitidas, get, file, information, sha1, sha256, md5
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c500c2f08d756aa34c16ec94a84c5716a19e62f3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 54f5cc3055f4d652a5dc74396d1e2d322c23213d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163895"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331827"
 ---
-# <a name="get-file-information-api"></a>OBTENER API de información de archivos
+# <a name="get-file-information-api"></a>Obtención de la API de información de archivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,25 +39,25 @@ ms.locfileid: "61163895"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Recupera un [archivo por](files.md) identificador Sha1 o Sha256
+Recupera un [archivo](files.md) por identificador Sha1 o Sha256
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Use Microsoft Defender for Endpoint API](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md).
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|File.Read.All|'Leer todos los perfiles de archivo'
-Delegado (cuenta profesional o educativa)|File.Read.All|'Leer todos los perfiles de archivo'
+Application|File.Read.All|"Leer todos los perfiles de archivo"
+Delegado (cuenta profesional o educativa)|File.Read.All|"Leer todos los perfiles de archivo"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -72,13 +71,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el archivo existe: 200 Aceptar con la [entidad de](files.md) archivo en el cuerpo. Si el archivo no existe: 404 No encontrado.
+Si es correcto y el archivo existe: 200 Aceptar con la entidad [de archivo](files.md) en el cuerpo. Si el archivo no existe: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

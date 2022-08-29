@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador microsoft mediante el panel Informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2444a93a1a68cd994da19325a8a00af868b6ba16
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942065"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386525"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del explorador microsoft
 
-El panel Informes de Microsoft 365 muestra información general sobre la actividad en los productos de su organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador microsoft, puede obtener información sobre el nuevo uso de Microsoft Edge. Los informes de uso se basan en un recuento agregado de usuarios de su organización que inician sesión en su cuenta de Microsoft 365 y usan el explorador Microsoft Edge para acceder a los servicios de Microsoft 365.
+El panel Informes de Microsoft 365 muestra información general sobre la actividad en los productos de su organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). 
+
+El **informe uso de Microsoft Browser** en el Centro de Administración de Microsoft 365 le permite ver si los usuarios acceden a Microsoft 365 servicios en línea a través de Microsoft Edge. Esta información del informe puede ayudarle a migrar su organización a Microsoft Edge. Los informes de uso se basan en un recuento agregado de usuarios de su organización que inician sesión en su cuenta de Microsoft 365 y usan el explorador Microsoft Edge para acceder a los servicios de Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Cómo acceder al informe de uso del explorador Microsoft
 
@@ -46,7 +48,11 @@ El gráfico **Usuarios activos diarios** muestra el recuento diario de usuarios 
 
 El gráfico **Usuarios activos** muestra el número total de usuarios que acceden a los servicios de Microsoft 365 mientras usan Microsoft Edge durante el período de tiempo seleccionado.
 
-En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.
+El informe es interno de la organización con permisos limitados a los administradores de TI con acceso existente a los informes de actividad en el panel de uso del Centro de Administración de Microsoft 365.
+
+> [!NOTE]
+> El uso agregado del explorador microsoft y los informes de nivel de usuario están disponibles. La identificación de nivel de usuario se puede [quitar según las directivas de la organización](activity-reports.md#show-user-details-in-the-reports) y se pueden usar [controles de acceso basados en roles](../../admin/add-users/assign-admin-roles.md) para ajustar el acceso al informe.
+
 
 |Elemento|Descripción|
 |:-----|:-----|

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo implementar y probar controles trabajando con acciones de mejora en el Administrador de cumplimiento de Microsoft Purview. Asigne trabajo, almacene documentación y exporte informes.
-ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625509"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333772"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Trabajar con acciones de mejora en el Administrador de cumplimiento
 
@@ -184,18 +184,19 @@ La sección **de estándares y regulaciones** proporciona una lista filtrable y 
 
 ## <a name="perform-work-and-store-documentation"></a>Documentación de trabajo y almacenamiento
 
-Puede cargar archivos y notas relacionados con el trabajo de implementación y pruebas directamente en la sección **Documentos** . Este entorno es un repositorio seguro y centralizado que le ayudará a demostrar la satisfacción de los controles para cumplir los estándares y las regulaciones de cumplimiento. Cualquier usuario con acceso de solo lectura puede leer contenido en esta sección. Solo los usuarios con derechos de edición pueden cargar y descargar archivos.
+Puede cargar pruebas en forma de archivos y vínculos relacionados con el trabajo de implementación y pruebas directamente en la sección **Documentos** . Este entorno es un repositorio seguro y centralizado que le ayudará a demostrar la satisfacción de los controles para cumplir los estándares y las regulaciones de cumplimiento. Cualquier usuario con acceso de solo lectura puede leer contenido en esta sección. Solo los usuarios con derechos de edición pueden cargar y descargar archivos.
 
-#### <a name="uploaded-documents"></a>Documentos cargados
+#### <a name="upload-evidence"></a>Carga de pruebas
 
-- Seleccione **Administrar documentos** para cargar los archivos pertinentes.
-- Cuando se abra el panel flotante Administrar documentos, seleccione **Agregar documento** y, a continuación, seleccione el archivo del sistema. Tipos de archivo aceptados:
+- En la página de detalles de la acción de mejora, vaya a la pestaña **Documentos** y seleccione **Agregar evidencia**.
+- En el panel flotante **Agregar evidencia** , elija si desea agregar un **documento** o **un vínculo**. Los tipos de archivo aceptados para **Document** son:
   - Documentos (.doc, .xls, .ppt, .txt, .pdf)
   - Imágenes (.jpg, .png)
   - Vídeo (.mkv)
   - Archivos comprimidos (.zip, .rar)
-- Una vez que el archivo se resuelva en el panel, seleccione **Cerrar**, lo que guarda automáticamente los datos adjuntos del archivo. A continuación, verá el archivo que aparece debajo de **Documentos cargados**.
-- Para descargar o eliminar el documento, seleccione **Administrar documentos** de debajo de la lista de documentos. En el panel flotante, seleccione la fila del documento para resaltarla y, a continuación, seleccione **Descargar** o **Eliminar**.
+- Vaya a para seleccionar el archivo que desea cargar. Si carga un vínculo, escriba un nombre para el vínculo y su dirección URL. Cuando haya terminado, seleccione **Agregar**. El elemento se mostrará ahora en la pestaña **Documentos** .
+
+Para eliminar archivos o vínculos de evidencia, seleccione el menú de acción (los tres puntos) a la derecha del nombre del elemento y seleccione **Eliminar**. Confirme la eliminación cuando se le solicite.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Asignación de una acción de mejora al evaluador para la finalización
 
@@ -251,3 +252,5 @@ Puede configurar alertas para notificarle inmediatamente cuando se produzcan det
 ## <a name="export-a-report"></a>Exportación de un informe
 
 Seleccione **Exportar** en la esquina superior izquierda de la pantalla para descargar una hoja de cálculo de Excel que contenga todas las acciones de mejora y las categorías de filtro que se muestran en la página acciones de mejora.
+
+El archivo de Excel exportado también es lo que se usa para actualizar varias acciones de mejora a la vez. Obtenga detalles sobre cómo editar el archivo de exportación para [actualizar varias acciones de mejora](compliance-manager-update-actions.md).

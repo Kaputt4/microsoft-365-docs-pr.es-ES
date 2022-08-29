@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 35f9329756fde82a6ac0762d30041a3d30cd2c8b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 46deff4933055e4a76fa2e45663243ceca53f6d1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492477"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388130"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 
@@ -55,7 +55,7 @@ También puede aleatorizar las veces en que cada punto de conexión comprueba y 
 3. Para comprobar y descargar actualizaciones en un momento determinado:
       1. Establezca **Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection en un intervalo específico...** en **0**.
       2. Establezca **Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection diariamente en... en** el momento en que se deben comprobar las actualizaciones.
-      3 
+      3
 4. Para comprobar y descargar actualizaciones en un intervalo continuo, establezca **Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection en un intervalo específico...** en el número de horas que deben producirse entre las actualizaciones.
 
 5. [Implemente la directiva actualizada como de costumbre](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
@@ -72,7 +72,7 @@ La habilitación de esta configuración invalidará ese valor predeterminado.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol a **componentes** \> **de Windows Antivirus de Windows Defender** \> **signature Novedades** y configure los siguientes valores:
+4. Expanda el árbol a **componentes** \> de Windows **Novedades Firma** **del Antivirus** \> de Microsoft Defender y configure los siguientes valores:
 
     1. Haga doble clic en **la opción Especificar el día de la semana para comprobar si hay actualizaciones de inteligencia de seguridad** y establezca la opción **en Habilitado**. Escriba el día de la semana para comprobar si hay actualizaciones. Haga clic en **Aceptar**.
 

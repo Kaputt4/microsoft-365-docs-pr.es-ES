@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, Grupos de Microsoft 365, Microsoft Teams y conversaciones Skype Empresarial. eDiscovery (Estándar) y eDiscovery (Premium) proporcionan muchas características adicionales para ayudarle a administrar las investigaciones.
-ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306556"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445168"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 
@@ -38,7 +38,13 @@ La exhibición de documentos electrónicos, o eDiscovery, es el proceso de ident
 
 Microsoft Purview proporciona tres soluciones de exhibición de documentos electrónicos: búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium).
 
-![Funcionalidades clave de las herramientas de Microsoft Purview eDiscovery.](..\media\m365-ediscovery-solution-graphic.png)
+<!--
+![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|Búsqueda de contenido|eDiscovery (Estándar)|eDiscovery (Premium)|
+|---------|---------|---------|
+|Buscar contenido </br> Consultas de palabras clave y condiciones de búsqueda </br> Exportar resultados de búsqueda </br> Permisos basados en roles|Búsqueda y exportación </br> Administración de casos </br>Suspensión legal|La administración de los administradores </br> Notificaciones de suspensión legal </br> Indexación avanzada </br> Revisión del filtrado de conjuntos </br> Etiquetado </br> Análisis </br> Modelos de codificación predictiva </br> Y más...|
 
 - **Búsqueda de contenido**. Use la herramienta de búsqueda de contenido para buscar contenido en fuentes de datos de Microsoft 365 y exporte los resultados de la búsqueda al equipo local.
 

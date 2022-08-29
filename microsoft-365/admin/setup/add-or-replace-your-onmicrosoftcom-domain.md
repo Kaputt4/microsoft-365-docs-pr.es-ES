@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Obtenga información sobre cómo crear un nuevo dominio onmicrosoft.com y convertirlo en el nuevo dominio de reserva.
-ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 9382921fcb8d93770c056b11b2c3bb89ceb01a2d
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087317"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445190"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Agregar y reemplazar el dominio de reserva de onmicrosoft.com en Microsoft 365
 
@@ -92,7 +92,7 @@ Para agregar, modificar o quitar dominios, **debe** ser un administrador **de no
 
 
 > [!NOTE]
-> Antes de cambiar el dominio de reserva a un nuevo dominio de onmicrosoft.com, es posible que desee considerar la posibilidad de cambiar el dominio de SharePoint onmicrosoft.com. Crear un dominio onmicrosoft adicional y usarlo como dominio de reserva no cambiará el nombre de SharePoint Online. Las direcciones URL de SharePoint y OneDrive existentes seguirán siendo las mismas.  Puede cambiar el dominio de SharePoint.onmicrosoft mediante los pasos de PowerShell proporcionados en [la versión preliminar del cambio de nombre de dominio de SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actualmente disponible para cualquier inquilino con menos de 1000 sitios).
+> Antes de cambiar el dominio de reserva a un nuevo dominio de onmicrosoft.com, es posible que desee considerar la posibilidad de cambiar el dominio de SharePoint onmicrosoft.com. Crear un dominio onmicrosoft adicional y usarlo como dominio de reserva no cambiará el nombre de SharePoint Online. Las direcciones URL de SharePoint y OneDrive existentes seguirán siendo las mismas.  Puede cambiar el dominio de SharePoint de.onmicrosoft mediante los pasos de PowerShell proporcionados en [la versión preliminar del cambio de nombre de dominio de SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actualmente disponible para cualquier inquilino con menos de 10 000 sitios).
 
 Después de crear el nuevo dominio de onmicrosoft.com, haga lo siguiente para cambiarlo al dominio de reserva.
 

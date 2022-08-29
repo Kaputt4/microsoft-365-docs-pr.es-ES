@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7215beeec25f4d343e574b8e2bcda22a43f0f45e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943626"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386810"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para punto de conexión en macOS
 
@@ -120,6 +120,7 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Activar o desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Configuración|Activar o desactivar el examen de archivos (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Configuración|Activación o desactivación del cálculo de hash de archivos|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|Configuración|Activar o desactivar data_loss_prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |Diagnóstico|Cambio del nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnóstico|Generación de registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
 |Mantenimiento|Comprobar el estado del producto|`mdatp health`|
@@ -129,9 +130,9 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Protección|Realizar un examen completo|`mdatp scan full`|
 |Protección|Cancelación de un examen a petición en curso|`mdatp scan cancel`|
 |Protección|Solicitud de una actualización de inteligencia de seguridad|`mdatp definitions update`|
-|EDR|Establecer o quitar etiqueta, solo se admite GROUP|`mdatp edr tag set --name GROUP --value [name]`|
-|EDR|Eliminación de la etiqueta de grupo del dispositivo|`mdatp edr tag remove --tag-name [name]`|
-|EDR|Agregar id. de grupo|`mdatp edr group-ids --group-id [group]`|
+|Edr|Establecer o quitar etiqueta, solo se admite GROUP|`mdatp edr tag set --name GROUP --value [name]`|
+|Edr|Eliminación de la etiqueta de grupo del dispositivo|`mdatp edr tag remove --tag-name [name]`|
+|Edr|Agregar id. de grupo|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>Habilitación de lacompletar automática
 

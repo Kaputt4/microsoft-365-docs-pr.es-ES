@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de la tarjeta de identidad de Chipre.
-ms.openlocfilehash: 6f12c519c2c5a96aded26a3591f864590b6f9fb9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9797776342161365643aa48add071faa5b00f310
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000109"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368547"
 ---
 # <a name="cyprus-identity-card"></a>Documento de identidad de Chipre
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -52,7 +44,7 @@ no aplicable
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_cyprus_eu_national_id_card` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_cyprus_eu_national_id_card` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_cyprus_eu_national_id_card`.
 
 ```xml

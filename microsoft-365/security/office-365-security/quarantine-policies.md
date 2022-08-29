@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056886"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445146"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -32,7 +32,7 @@ ms.locfileid: "67056886"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Las directivas de cuarentena (anteriormente _conocidas como etiquetas de cuarentena_) en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer en los mensajes en cuarentena en función de por qué se puso en cuarentena el mensaje.
+Las directivas de cuarentena (anteriormente _conocidas como etiquetas de cuarentena_) en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer en los mensajes en cuarentena en función de por qué se puso en cuarentena el mensaje. Esta característica está disponible en todas las organizaciones de Microsoft 365 con buzones Exchange Online.
 
 Tradicionalmente, se han permitido o denegado los niveles de interactividad de los mensajes de cuarentena en función de por qué se puso en cuarentena el mensaje. Por ejemplo, los usuarios pueden ver y liberar mensajes que se pusieron en cuarentena mediante el filtrado antispam como correo no deseado o de forma masiva, pero no pueden ver ni liberar mensajes que se pusieron en cuarentena como phishing o malware de alta confianza.
 
@@ -64,7 +64,7 @@ En la tabla siguiente se describen las directivas de cuarentena predeterminadas,
 |---|:---:|:---:|
 |AdminOnlyAccessPolicy|Sin acceso|No|
 |DefaultFullAccessPolicy|Acceso completo|No|
-|NotificationEnabledPolicy<sup>\*</sup>|Acceso completo|Sí|
+|NotificationEnabledPolicy<sup>\*</sup>|Acceso completo|Yes|
 
 Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos o si desea habilitar las notificaciones de cuarentena, cree y use directivas de cuarentena personalizadas. Para obtener más información sobre lo que hace cada permiso, consulte la sección [Detalles del permiso de directiva de cuarentena](#quarantine-policy-permission-details) más adelante en este artículo.
 
@@ -202,10 +202,10 @@ En las características _de protección admitidas_ que ponen en cuarentena los m
 
 |Característica|¿Se admiten directivas de cuarentena?|Directivas de cuarentena predeterminadas usadas|
 |---|:---:|---|
-|[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam de alta confianza** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de alta confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul>|
-|Directivas de protección contra phishing: <ul><li>[Protección de inteligencia contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección contra suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si el mensaje se detecta como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia del buzón detecta y suplanta a un usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>Protección contra suplantación:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul></li></ul>|
-|[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Protección de datos adjuntos seguros](safe-attachments.md): <ul><li>Email mensajes con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos seguros (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam de alta confianza** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de alta confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul>|
+|Directivas de protección contra phishing: <ul><li>[Protección de inteligencia contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección contra suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si el mensaje se detecta como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia del buzón detecta y suplanta a un usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>Protección contra suplantación:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul></li></ul>|
+|[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|Yes|AdminOnlyAccessPolicy (sin acceso)|
+|[Protección de datos adjuntos seguros](safe-attachments.md): <ul><li>Email mensajes con datos adjuntos que se ponen en cuarentena como malware mediante directivas de datos adjuntos seguros (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Yes</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
 |[Reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) con la acción: **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|No|No aplicable|
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo](#full-access-permissions-and-quarantine-notifications), su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena están activadas en NotificationEnabledPolicy y desactivadas en DefaultFullAccessPolicy.
@@ -523,7 +523,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Los idiomas seleccionados en la configuración de notificación de cuarentena global de las directivas de cuarentena." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Usar el logotipo de mi empresa**: seleccione esta opción para reemplazar el logotipo de Microsoft predeterminado que se usa en la parte superior de las notificaciones de cuarentena. Antes de realizar este paso, debe seguir las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado.
+   - **Usar el logotipo de mi empresa**: seleccione esta opción para reemplazar el logotipo de Microsoft predeterminado que se usa en la parte superior de las notificaciones de cuarentena. Antes de realizar este paso, debe seguir las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado. Esta opción no se admite si su organización tiene un logotipo personalizado que apunta a una dirección URL en lugar de a un archivo de logotipo personalizado cargado. 
 
      En la captura de pantalla siguiente se muestra un logotipo personalizado en una notificación de cuarentena:
 
@@ -690,7 +690,7 @@ Si la directiva de cuarentena asigna los permisos **de acceso completo** (todos 
 
 - **Notificaciones de cuarentena**: están disponibles los siguientes botones:
   - **Bloquear remitente**
-  - **Liberar**
+  - **Release**
   - **Revisar**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Los botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso completo" lightbox="../../media/quarantine-tags-esn-full-access.png":::

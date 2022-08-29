@@ -1,6 +1,6 @@
 ---
 title: Configuración de invalidaciones locales para la configuración del Antivirus de Microsoft Defender
-description: Habilite o deshabilite a los usuarios para que cambien localmente la configuración en El antivirus de Microsoft Defender.
+description: Habilite o deshabilite a los usuarios para que cambien localmente la configuración en el Antivirus de Microsoft Defender.
 keywords: invalidación local, directiva local, directiva de grupo, gpo, bloqueo, combinación, listas
 ms.prod: m365-security
 ms.technology: mde
@@ -16,12 +16,12 @@ ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6281426f284b8a75f316a1e9e808176f89defc36
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 397fb835d73c2e18c3cc044f95d8b294e2ef762d
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276336"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388174"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva del Antivirus de Microsoft Defender
 
@@ -112,7 +112,7 @@ De forma predeterminada, las listas que se han configurado en la directiva de gr
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

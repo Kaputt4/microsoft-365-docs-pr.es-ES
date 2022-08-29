@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7a44fe74c3d0262737d5af52e226a3aa942a412f
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949159"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450177"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -40,6 +40,46 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener información sobre las características de Microsoft 365 que se lanzaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
+
+## <a name="july-2022"></a>Julio de 2022
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Lista de plantillas de Administrador de cumplimiento](compliance-manager-templates-list.md) : se ha agregado una nueva plantilla Premium en la categoría de países Asia-Pacific para "Hong Kong - Código de práctica bancaria y tarjeta de pago".
+
+### <a name="compliance-offerings--service-assurance"></a>Ofertas de cumplimiento & garantía de servicio
+
+- [Resistencia de datos de SharePoint y OneDrive en Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) : cambios en la sección resistencia del almacenamiento de blobs.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- [Sección de licencias combinadas](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) con detalles agregados para escenarios.
+- La retención de versiones de documentos de SharePoint ya no usa archivos independientes en la biblioteca de suspensión de conservación. Para obtener más información, consulte la documentación actualizada Sobre [cómo funciona la retención con las versiones del documento](retention-policies-sharepoint.md#how-retention-works-with-document-versions).
+- Instrucciones sobre cómo [validar los registros que ha migrado a SharePoint o OneDrive](records-management.md#validating-migrated-records).
+- Se ha actualizado el informe de evaluación de Cohasset para [SEC 17a-4(f), FINRA 4511(c) y CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d).
+- Se han quitado las declinaciones de responsabilidades de versión preliminar de las directivas de retención para los canales compartidos de Teams ahora que esta característica se está implementando en disponibilidad general.
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- [Referencia de directiva DLP](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business): se ha agregado una nueva sección sobre bloqueo y notificaciones en SharePoint Online y OneDrive para la Empresa en respuesta a las escalaciones de clientes. Se ha actualizado para admitir la versión preliminar pública de los dominios de servicios confidenciales. Se ha actualizado la compatibilidad con Power BI. Se ha actualizado la compatibilidad con clasificadores entrenables.
+- [Configuración de los valores de DLP de punto de conexión](dlp-configure-endpoint-settings.md#sensitive-service-domains) : se ha agregado nuevo contenido para admitir la versión preliminar pública de la versión preliminar pública de los dominios de servicio confidenciales en versión preliminar pública. Se ha actualizado el comportamiento de coincidencia de direcciones URL.
+- [Uso de DLP de punto de conexión](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) : nuevo contenido de escenario que admite la versión preliminar pública de los dominios de servicios confidenciales. Se ha actualizado la información de la suscripción.
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md) : se ha quitado la información sustituida.
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+- [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md) : hemos agregado 41 nuevas definiciones de entidad sit para admitir los 41 nuevos SIT de examen de credenciales. El contenido de las definiciones de entidad de SIT se retrabajo completamente de un único artículo monolítico en artículos individuales más fáciles de hacer referencia y compatibles. Ahora hay 303 artículos en total, incluidos los 42 nuevos SIT de examen de credenciales.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- En versión preliminar: [etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint](sensitivity-labels-sharepoint-default-label.md).
+- En versión preliminar: [permisos personalizados de toda la organización](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) para Windows cuando se configura una etiqueta de confidencialidad para permitir a los usuarios asignar permisos. Para obtener más información, consulte  [Compatibilidad con permisos personalizados de toda la organización](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions).
+- Ahora se implementa en Canal actual (versión preliminar) para Windows: etiqueta predeterminada para los documentos existentes.
+- Ahora disponible con el canal Semi-Annual Enterprise: [coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md).
+- El [nombre del ámbito de la etiqueta](sensitivity-labels.md#label-scopes) "Archivos & correos electrónicos" que ve al configurar una etiqueta de confidencialidad ahora es "Elementos".
 
 ## <a name="june-2022"></a>Junio de 2022
 
@@ -84,7 +124,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 ## <a name="may-2022"></a>Mayo de 2022
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 - [Informes y auditorías de cumplimiento de comunicaciones](communication-compliance-reports-audits.md) : se han actualizado los límites de tamaño de archivo para los informes exportados.
 - [Directivas de cumplimiento de comunicaciones](communication-compliance-policies.md) : los mensajes notificados por el usuario aclarados deshabilitan o habilitan el proceso y el procesamiento aclarado para Teams y Exchange.
@@ -143,7 +183,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 ## <a name="april-2022"></a>Abril de 2022
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 - [Crear y administrar directivas de cumplimiento de comunicaciones](communication-compliance-policies.md) : se ha actualizado con las instrucciones agregadas para la nueva característica de directiva de mensajes notificada por el usuario para la integración de Microsoft Teams.
 - [Introducción al cumplimiento de comunicaciones](communication-compliance-configure.md) : se ha actualizado para agregar aclaraciones sobre la suscripción y las licencias de F5.
@@ -241,7 +281,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 ## <a name="march-2022"></a>Marzo de 2022
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 - [Investigar y corregir alertas de cumplimiento de comunicaciones](communication-compliance-investigate-remediate.md) : se han quitado las instrucciones para la vista de anotación en desuso.
 
@@ -313,24 +353,3 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 - Ahora en versión preliminar: los dispositivos móviles (iOS y Android) admiten [la coautoría](sensitivity-labels-coauthoring.md) cuando tiene versiones mínimas y opta por esta versión preliminar.
 - La compatibilidad para establecer el tipo de vínculo de uso compartido predeterminado se extiende a documentos individuales en SharePoint y OneDrive. Para obtener más información, vea el nuevo artículo [Uso de etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive]( sensitivity-labels-default-sharing-link.md).
 - El Centro de administración de Teams ahora admite etiquetas de contenedor (etiquetas de confidencialidad con el ámbito de Grupos & sitios).
-
-## <a name="january-2022"></a>Enero de 2022
-
-### <a name="microsoft-purview-data-lifecycle-management"></a>Administración del ciclo de vida de datos de Microsoft Purview
-
-- La documentación de lo que anteriormente era Microsoft Information Governance se ha revisado y reestructurado sustancialmente para ayudarle a encontrar más fácilmente información relacionada con las soluciones que se configuran en la portal de cumplimiento Microsoft Purview: Data Connectors, Data Lifecycle Management y Records Management. Como parte de esta revisión, la documentación proporciona una distinción más clara para los escenarios de retención para la administración del ciclo de vida de datos frente a la administración de registros.
-- [Obtenga información sobre la administración del ciclo de vida de los datos](data-lifecycle-management.md) : novedades, para admitir la reestructuración.
-- [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md) : novedad para reemplazar "Introducción a la retención", en este artículo se incluyen los pasos de introducción a todas las funcionalidades de administración del ciclo de vida de datos, que incluyen la retención.
-- [Cree etiquetas de retención para excepciones a las directivas de retención](create-retention-labels-data-lifecycle-management.md) : escenario nuevo e identificado para usar etiquetas de retención para la administración del ciclo de vida de datos en lugar de la administración de registros.
-- [Obtenga información sobre los buzones de archivo](archive-mailboxes.md) : nuevo, para admitir la reestructuración, contiene información conceptual que se encontraba anteriormente en el artículo "Habilitar buzones de archivo".
-
-### <a name="microsoft-priva"></a>Microsoft Priva
-
-- [La administración de la privacidad está ahora Microsoft Priva](/privacy/priva/priva-overview): se ha actualizado para cambiar el nombre del producto y sus soluciones, Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- Compatibilidad con nuevos [roles y grupos de roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), ahora en versión preliminar.
-- Nuevas [funcionalidades de supervisión](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) para directivas de etiquetado automático.
-- Implementación ahora: etiqueta predeterminada para documentos existentes y texto de justificación para Office en la Web.
-- Anunciado para julio Semi-Annual Enterprise Channel con la versión 2202+: Coautoría y auditoría para Outlook.

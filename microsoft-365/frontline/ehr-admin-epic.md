@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Obtenga información sobre cómo integrar el conector HCE de Teams que permita a los proveedores de atención sanitaria de su organización realizar citas virtuales con pacientes u otros proveedores en Teams directamente desde el sistema de HCE de Epic.
-ms.openlocfilehash: 0d3a4818b327171a03506425d1fbd849eeafdd88
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6cf48c01e804a6a8a473ae42883c000a9577ea01
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998747"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333794"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-epic-ehr"></a>Citas virtuales con Teams: integración en Epic EHR
 
@@ -81,6 +81,7 @@ Revise la [integración de teleasistencia sanitaria de Epic-Microsoft Teams](ht
 - Versión de Epic de noviembre de 2018 o posterior.
 - Los usuarios tienen un Microsoft 365 adecuado o una licencia de Office 365 que incluye reuniones de Teams.
 - Teams se adopta y usa en su organización de atención sanitaria.
+- Se ha identificado a una persona de su organización que es un administrador global de Microsoft 365 con acceso al [Centro de administración de Teams](https://admin.teams.microsoft.com).
 - Los sistemas cumplen todos los [requisitos de software y explorador](/microsoftteams/hardware-requirements-for-the-teams-app) para Teams.
 
 > [!IMPORTANT]

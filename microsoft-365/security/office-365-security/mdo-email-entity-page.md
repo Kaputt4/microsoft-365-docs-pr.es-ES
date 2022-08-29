@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 04/01/2022
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender para Office 365 clientes de E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con la página de entidad de correo electrónico.
-ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 9e4546f6ed8689ed218b4b7fc209918c44d53cb9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648775"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368931"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -38,11 +38,11 @@ ms.locfileid: "65648775"
 - [Usar pestañas de página de entidad de correo electrónico](#use-email-entity-page-tabs)
 - [Nuevo en la página de entidad de correo electrónico](#new-to-the-email-entity-page)
 
-Los administradores de Microsoft Defender para Office 365 E5 y Defender para Office P1 y P2 tienen una vista de correo electrónico de 360 grados mediante la **página de entidad Correo electrónico**. Esta página de correo electrónico de acceso se creó para mejorar la información proporcionada en el [control flotante "detalles de correo electrónico" del Explorador de amenazas](threat-explorer-views.md).
+Los administradores de Microsoft Defender para Office 365 E5 y Defender para Office P1 y P2 tienen una vista de correo electrónico de 360 grados mediante la **página de entidad Email**. Esta página de correo electrónico de acceso se creó para mejorar la información proporcionada en el [control flotante "detalles de correo electrónico" del Explorador de amenazas](threat-explorer-views.md).
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de la entidad de correo electrónico
 
-La página de la entidad de correo electrónico está disponible en el portal de Microsoft 365 Defender en <https://security.microsoft.com> **Correo electrónico &** **explorador** de colaboración\>. O bien, para ir directamente a la página **Explorador** , use <https://security.microsoft.com/threatexplorer>.
+La página de la entidad de correo electrónico está disponible en el portal de Microsoft 365 Defender en <https://security.microsoft.com> Email & **Explorador** de **colaboración**\>. O bien, para ir directamente a la página **Explorador** , use <https://security.microsoft.com/threatexplorer>.
 
 En **el Explorador**, seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del control flotante del correo electrónico para ese correo. Esta invitación a la nueva página, lee "Probar nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 
@@ -83,12 +83,12 @@ Las pestañas de la parte superior de la página de entidad le permitirán inves
 
 Hay nuevas funcionalidades que vienen con esta página de entidad de correo electrónico. Esta es la lista.
 
-### <a name="email-preview-for-cloud-mailboxes"></a>Versión preliminar de correo electrónico para buzones en la nube
+### <a name="email-preview-for-cloud-mailboxes"></a>Email versión preliminar para buzones en la nube
 
 Los administradores pueden obtener una vista previa de los correos electrónicos en buzones en la nube ***, si*** los correos siguen presentes en la nube. En caso de una eliminación temporal (por parte de un administrador o usuario) o ZAP (para poner en cuarentena), los correos electrónicos ya no están presentes en la ubicación de la nube. En ese caso, los administradores no podrán obtener una vista previa de esos correos específicos. Los correos electrónicos que se quitaron o en los que se produjo un error en la entrega nunca lo hicieron en el buzón de correo. Como resultado, los administradores tampoco podrán obtener una vista previa de esos correos electrónicos.
 
 > [!WARNING]
-> La vista previa de los correos electrónicos requiere un rol especial denominado **Versión preliminar**. Puede agregar este rol en el portal de Microsoft 365 Defender, tal como se describe en Roles de colaboración & correo [electrónico en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Es posible que tenga que crear un nuevo grupo de roles de **colaboración & correo electrónico** allí y agregar el rol **De vista previa** a ese nuevo grupo de roles o agregar el rol **Vista previa** a un grupo de roles que permita a los administradores de su organización trabajar en **el Explorador**.
+> La vista previa de los correos electrónicos requiere un rol especial denominado **Versión preliminar**. Puede agregar este rol en el portal de Microsoft 365 Defender como se describe en [Email & roles de colaboración en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Es posible que tenga que crear un nuevo Email & grupo de roles de **colaboración** allí y agregar el rol **De vista previa** a ese nuevo grupo de roles o agregar el rol **Vista previa** a un grupo de roles que permita a los administradores de su organización trabajar en **el Explorador**.
 
 ### <a name="detonation-details"></a>Detalles de la detonación
 
@@ -116,11 +116,11 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 
 *Ubicación de entrega más reciente*: la ubicación de entrega más reciente es la ubicación donde aterrizó un correo electrónico después de que finalicen acciones del sistema como ZAP o acciones de administrador como Mover a elementos eliminados. La ubicación de entrega más reciente no está pensada para informar a los administradores de la ubicación *actual* del mensaje. Por ejemplo, si un usuario elimina un mensaje o lo mueve al archivo, la ubicación de entrega no se actualizará. Sin embargo, si se ha realizado una acción del sistema y se ha actualizado la ubicación (como un ZAP que da como resultado un correo electrónico que se mueve a cuarentena), se actualizaría la ubicación de entrega más reciente a la cuarentena.
 
-*Detalles del correo electrónico*: detalles necesarios para comprender mejor el correo electrónico disponible en la pestaña *Análisis* .
+*Email detalles*: detalles necesarios para comprender mejor el correo electrónico disponible en la pestaña *Análisis*.
 
-- *Exchange reglas de transporte (también conocidas como reglas de flujo de correo o ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de phish y spam. Las reglas de flujo de correo se crean y modifican en el centro de administración de Exchange en <https://admin.exchange.microsoft.com/#/transportrules>, pero si alguna regla de flujo de correo se aplica a un mensaje, el nombre de la regla y el GUID se mostrarán aquí. Información valiosa con fines de seguimiento.
+- *Reglas de transporte de Exchange (también conocidas como reglas de flujo de correo o ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de phish y spam. Las reglas de flujo de correo se crean y modifican en el Centro de administración de Exchange en <https://admin.exchange.microsoft.com/#/transportrules>, pero si alguna regla de flujo de correo se aplica a un mensaje, el nombre de la regla y el GUID se mostrarán aquí. Información valiosa con fines de seguimiento.
 
-- *Invalidación principal: origen*: la invalidación principal y el origen hacen referencia a la configuración de inquilino o usuario que ha afectado a la entrega del correo electrónico, reemplazando la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección). Por ejemplo, podría tratarse de un correo electrónico bloqueado debido a una regla de transporte configurada por el inquilino o a un correo electrónico permitido debido a una configuración de usuario final para Caja fuerte remitentes. 
+- *Invalidación principal: origen*: la invalidación principal y el origen hacen referencia a la configuración de inquilino o usuario que ha afectado a la entrega del correo electrónico, reemplazando la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección). Por ejemplo, podría tratarse de un correo electrónico bloqueado debido a una regla de transporte configurada por el inquilino o a un correo electrónico permitido debido a una configuración de usuario final para remitentes seguros. 
 
 - *Todas las invalidaciones*: todas las invalidaciones hacen referencia a la lista de invalidaciones (configuración de inquilino o usuario) que se aplicó en el correo electrónico, lo que puede o no haber afectado a la entrega de un correo electrónico. Por ejemplo, si una regla de transporte configurada por un inquilino, así como una configuración de directiva configurada por el inquilino (por ejemplo, de la lista Permitir bloque de inquilinos), se aplica a un correo electrónico, ambos aparecerán en este campo. Puede comprobar el campo de invalidación principal para determinar la configuración que ha afectado a la entrega del correo electrónico. 
 
@@ -144,7 +144,7 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 
 - *Fecha de creación del dominio*: especifica la fecha de creación del dominio de envío. Un dominio recién creado es algo que podría tener cuidado si otras señales indican algún comportamiento sospechoso.
 
-*Autenticación por correo electrónico*: los métodos de autenticación por correo electrónico usados por Microsoft 365 incluyen SPF, DKIM y DMARC.
+*autenticación de Email*: Email métodos de autenticación usados por Microsoft 365 incluyen SPF, DKIM y DMARC.
 
 - Marco de directivas de remitente (**SPF**): describe los resultados de la comprobación de SPF para el mensaje. Los valores posibles pueden ser:
   - Pasar (dirección IP): la comprobación SPF del mensaje pasado e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.
@@ -166,9 +166,23 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
   - Bestguesspass: indica que no existe ningún registro TXT de DMARC para el dominio, pero si hubiera existido, la comprobación de DMARC para el mensaje habría pasado.
   - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
 
-*Autenticación compuesta*: este es un valor utilizado por Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el dominio *From:* del correo como base de evaluación.
+*Autenticación compuesta*: este es un valor usado por Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el dominio *From:* del correo como base de evaluación.
+## <a name="actions-into-email-entity-page"></a>Acciones en Email página de entidad
 
-### <a name="email-summary-panel"></a>Panel de resumen de correo electrónico
+Los equipos de seguridad ahora pueden realizar acciones de correo electrónico, como la eliminación temporal y la eliminación rígida, pasar a correo no deseado, pasar a la bandeja de entrada, desencadenar una investigación, enviar a Microsoft para su revisión en línea y et cetera. **Las** acciones de bloque de nivel de inquilino, como el archivo y la dirección URL o el remitente, también se pueden clasificar desde Email página de entidad.  
+
+Podrá hacer clic en **Realizar acciones** desde la esquina superior derecha de la página de entidad y se abrirá el Asistente para acciones para que seleccione la acción específica que necesita. 
+![Realice una acción desde la página de la entidad.](../../media/Take-ActionWizard-Email-entity.png)
+
+En el Asistente para acciones, puede realizar acciones de correo electrónico, envíos de correo electrónico, bloquear el dominio remitente y remitente, acciones de investigación y aprobación en dos pasos (agregar a la corrección) en el mismo panel lateral. Esto sigue un flujo coherente para facilitar su uso. El Asistente para acciones usa el mismo sistema que las acciones del Explorador (para las acciones Eliminar, Envíos e Investigación), por ejemplo. Podrá ver y realizar un seguimiento de estas acciones en el [Centro de acciones unificadas](https://security.microsoft.com/action-center/history) (para correos electrónicos eliminados), en el [portal de envío](https://security.microsoft.com/reportsubmission) (para envíos) y en la página Listas de [permitidos o bloqueados de inquilinos](https://security.microsoft.com/tenantAllowBlockList) para (bloques TABL). 
+
+También vamos a incorporar la dirección URL del bloque de nivel de inquilino y los datos adjuntos a las respectivas pestañas URL de entidad Email y Datos adjuntos. Tras la aprobación, se puede realizar un seguimiento de todas las direcciones URL de bloque de listas de inquilinos y listas de bloques (o TABL) y los datos adjuntos de bloque en las páginas TABL/URL y TABL/file. 
+![Realice una acción de dirección URL de bloque desde la página de entidad.](../../media/Block-URL-Email-entity.png)
+
+Consulte [los permisos](permissions-microsoft-365-security-center.md) necesarios para realizar estas acciones. 
+
+ 
+### <a name="email-summary-panel"></a>Email panel de resumen
 
 El panel de resumen de correo electrónico es una vista resumida de la página completa de la entidad de correo electrónico. Contiene detalles estandarizados sobre el correo electrónico (por ejemplo, detecciones), así como información específica del contexto (por ejemplo, para metadatos de cuarentena o envíos). El panel de resumen de correo electrónico reemplaza los controles flotantes tradicionales Detecciones en tiempo real, Explorador de amenazas, Envíos y Informes.
 
@@ -182,7 +196,7 @@ El panel de resumen de correo electrónico se divide en las secciones siguientes
 
 - *Detalles de entrega*: contiene información sobre amenazas y el nivel de confianza correspondiente, las tecnologías de detección y la ubicación de entrega original y más reciente.
 
-- *Detalles del correo electrónico*: contiene información sobre las propiedades de correo electrónico, como el nombre del remitente, la dirección del remitente, la hora recibida, los detalles de autenticación y otros detalles.
+- *Email detalles*: contiene información sobre las propiedades de correo electrónico, como el nombre del remitente, la dirección del remitente, la hora recibida, los detalles de autenticación y otros detalles.
 
 - *Direcciones URL*: de forma predeterminada, verá tres direcciones URL y sus amenazas correspondientes. Siempre puede hacer clic en **Ver todas las direcciones URL** para expandir y ver todas las direcciones URL y exportarlas.  
 

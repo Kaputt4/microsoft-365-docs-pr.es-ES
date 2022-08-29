@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
-ms.translationtype: HT
+ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663402"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388427"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -234,7 +234,7 @@ Microsoft 365 está configurado así porque algunos mensajes de correo legítimo
 
 - Los usuarios agregan a los remitentes seguros de manera individual mediante el cliente de correo electrónico
 
-- Los administradores pueden usar la [Información de la inteligencia contra la suplantación de identidad](learn-about-spoof-intelligence.md) o la [Lista de bloqueados y permitidos de espacio empresarial](tenant-allow-block-list.md) para permitir los mensajes del remitente al que le han suplantado la identidad.
+- Los administradores pueden usar la [Información de la inteligencia contra la suplantación de identidad](learn-about-spoof-intelligence.md) o la [Lista de bloqueados y permitidos de espacio empresarial](manage-tenant-allow-block-list.md) para permitir los mensajes del remitente al que le han suplantado la identidad.
 
 - Los administradores crean una regla de flujo de correo (también conocida como regla de transporte) de Exchange para todos los usuarios que permite los mensajes de esos remitentes concretos.
 
@@ -281,4 +281,4 @@ Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso
 
 [**Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado en Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
+[Use remitentes ARC de confianza para los flujos de correo legítimos](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)

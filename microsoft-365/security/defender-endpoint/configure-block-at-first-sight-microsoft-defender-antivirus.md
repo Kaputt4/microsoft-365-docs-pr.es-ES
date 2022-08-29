@@ -15,12 +15,12 @@ ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c41b463c7262c5be6df43d1c9e808060a75d15c0
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: HT
+ms.openlocfilehash: 945c1c84559b6022790c47890494998d1027ce56
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717676"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387801"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -54,7 +54,7 @@ Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso pero no d
 
 Antivirus de Microsoft Defender usa varias tecnologías de detección y prevención para ofrecer una protección inteligente, en tiempo real y precisa.
 
-:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Lista de motores AV de Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="La lista de motores del Antivirus de Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > Para más información, consulte este blog: [Conozca las tecnologías avanzadas en el núcleo de la protección de última generación de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).

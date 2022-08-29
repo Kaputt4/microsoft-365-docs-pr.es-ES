@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2fd9dc7e8d597890e8d07ce783938bc1d69b6c78
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: db3a005b80a69695da5936d60cb512b8fc46cfcb
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748767"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387075"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecución de una simulación de ataque en un entorno piloto de Microsoft 365 Defender
 
@@ -49,15 +49,15 @@ Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un e
 
 El portal de Microsoft 365 Defender tiene funcionalidades integradas para crear ataques simulados en el entorno piloto:
 
-- Entrenamiento de simulación de ataques para Microsoft 365 Defender para Office 365 en [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
+- Entrenamiento de simulación de ataque para Microsoft 365 Defender para Office 365 en [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
   
-  En el portal de Microsoft 365 Defender, seleccione **Email & collaboration > Attack simulation training (Correo electrónico & colaboración > entrenamiento de simulación de ataques**).
+  En el portal de Microsoft 365 Defender, seleccione **Email & > Entrenamiento de simulación de ataque de colaboración**.
 
 - Los tutoriales de ataque & simulaciones de Microsoft 365 Defender para punto de conexión en [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
   En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione Puntos de **conexión > Tutoriales & simulaciones**.
 
-### <a name="defender-for-office-365-attack-simulation-training"></a>Defender para Office 365 entrenamiento de simulación de ataques
+### <a name="defender-for-office-365-attack-simulation-training"></a>Defender para Office 365 Entrenamiento de simulación de ataque
 
 Defender para Office 365 con Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 incluye entrenamiento de simulación de ataques para ataques de phishing. Los pasos básicos son:
 
@@ -119,7 +119,7 @@ En primer lugar, debe agregar un controlador de dominio de AD DS aislado y un di
 
    - Ejecuta Windows 10 versión 1903 o una versión posterior.
    - Está unido al dominio del controlador de dominio de AD DS.
-   - Tiene [Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) habilitado. Si tiene problemas para habilitar Antivirus de Windows Defender, consulte este [tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - Tiene el [Antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) habilitado. Si tiene problemas para habilitar el Antivirus de Microsoft Defender, consulte este [tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - Se [incorpora a Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Si usa grupos de inquilinos y dispositivos, cree un grupo de dispositivos dedicado para el dispositivo de prueba e insérelo en el nivel superior.
