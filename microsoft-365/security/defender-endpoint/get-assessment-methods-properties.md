@@ -1,6 +1,6 @@
 ---
 title: Exportación de métodos de evaluación y propiedades por dispositivo
-description: Proporciona información sobre las API que extraen datos "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
+description: Proporciona información sobre las API que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6a542f07e77a35661cab10b64133f6cfa2a26ed
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276948"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408361"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportación de métodos de evaluación y propiedades por dispositivo
 
@@ -168,11 +168,11 @@ RecommendationReference|Cadena|Referencia al identificador de recomendación rel
 RecommendedSecurityUpdate|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
 RecommendedSecurityUpdateId|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes.
 Rutas de acceso del Registro|Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
-SecurityUpdateAvailable|Booleano|Indica si hay una actualización de seguridad disponible para el software.
+SecurityUpdateAvailable|Boolean|Indica si hay una actualización de seguridad disponible para el software.
 SoftwareName|Cadena|Nombre del producto de software.
 SoftwareVendor|Cadena|Nombre del proveedor de software.
 SoftwareVersion|Cadena|Número de versión del producto de software.
-VulnerabilitySeverityLevel|Cadena|Nivel de gravedad que se asigna a la vulnerabilidad de seguridad en función de la puntuación cvss y los factores dinámicos influenciados por el panorama de amenazas.
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS.
 
 ### <a name="33-properties-via-files"></a>3.3 Propiedades (a través de archivos)
 
@@ -205,7 +205,7 @@ SoftwareName|Cadena|Nombre del producto de software.
 SoftwareVendor|Cadena|Nombre del proveedor de software.
 SoftwareVersion|Cadena|Número de versión del producto de software.
 Estado|Cadena|**Nuevo** (para una nueva vulnerabilidad introducida en un dispositivo). **Se ha corregido** (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se corrigió). **Se ha actualizado** (para una vulnerabilidad en un dispositivo que ha cambiado. Los cambios posibles son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS.
 
 ## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. Exportación de la evaluación del inventario de software que no es de código de producto
 
@@ -239,7 +239,7 @@ Propiedad (ID)|Tipo de datos|Descripción
 Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.
 GeneratedTime|Cadena|Hora en que se generó la exportación.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Exportación de una evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)
 - [Exportación de la evaluación del inventario de software por dispositivo](get-assessment-software-inventory.md)
@@ -248,5 +248,5 @@ GeneratedTime|Cadena|Hora en que se generó la exportación.
 
 Otros relacionados
 
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

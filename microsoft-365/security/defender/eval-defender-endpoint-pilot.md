@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750415"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328967"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión piloto
 
@@ -59,8 +59,8 @@ Comencemos por la desprotejación de los paneles.
 ### <a name="view-the-device-inventory"></a>Visualización del inventario de dispositivos
 El inventario de dispositivos es donde verá la lista de puntos de conexión, dispositivos de red y dispositivos IoT en la red. No solo proporciona una vista de los dispositivos de la red, sino que también proporciona información detallada sobre ellos, como el dominio, el nivel de riesgo, la plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Ver el panel de administración de amenazas y vulnerabilidades 
-La administración de amenazas y vulnerabilidades le ayuda a centrarse en las debilidades que suponen el riesgo más urgente y el más alto para la organización. En el panel, obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de la exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, principales actividades de corrección y datos de dispositivo expuestos. 
+### <a name="view-the-microsoft-defender-vulnerability-management-dashboard"></a>Ver el panel de Administración de vulnerabilidades de Microsoft Defender 
+La administración de La administración de vulnerabilidades de Defender le ayuda a centrarse en las debilidades que suponen el riesgo más urgente y el más alto para la organización. En el panel, obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de la exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, principales actividades de corrección y datos de dispositivo expuestos. 
 
 ### <a name="run-a-simulation"></a>Ejecución de una simulación
 Microsoft Defender para punto de conexión incluye [escenarios de ataque "Do It Yourself"](https://securitycenter.windows.com/tutorials) que puede ejecutar en los dispositivos piloto.  Cada documento incluye los requisitos del sistema operativo y de la aplicación, así como instrucciones detalladas específicas de un escenario de ataque. Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las funcionalidades de Defender para punto de conexión y le guiarán por la experiencia de investigación.

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la prevención de pérdida de datos de punto de conexión para supervisar las actividades de archivo e implementar acciones de protección para esos archivos en los puntos de conexión.
-ms.openlocfilehash: 7b9999b180262eb35f1b2b36c4059b5b34855e1e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 6800eaeec80bddda35a3b297d6fb9689800cc244
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624165"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343445"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -78,10 +78,10 @@ Para obtener instrucciones específicas sobre la incorporación de dispositivos 
 
 Tema | Descripción
 :---|:---
-|[Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
-|[Incorporar y retirar dispositivos macOS en soluciones de Microsoft Purview con JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con JAMF Pro para clientes de Microsoft Defender para punto de conexión)](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
+|[Intune para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
+|[JAMF Pro para clientes Microsoft Defender para punto de conexión)](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
 Una vez incorporado el dispositivo, debería aparecer en la lista de dispositivos y empezar a crear informes de la actividad de auditoría al Explorador de actividades.
 

@@ -19,22 +19,16 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de empresa de Australia.
-ms.openlocfilehash: a10addd7dee6bc481adbf9edf1380cdedf09bdd0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 86b9167340d4730f6c1726d57e94c16b3ef9993c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999209"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368460"
 ---
 # <a name="australia-company-number"></a>Código de identificación fiscal (ACN) de Australia
 
-Este tipo de información confidencial solo está disponible para su uso en:
 
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

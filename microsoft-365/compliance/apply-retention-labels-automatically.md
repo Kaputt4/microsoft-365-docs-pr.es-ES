@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
-ms.translationtype: HT
+ms.openlocfilehash: 8653d60faaa2ae58088c8216b1286f7ff6a0a197
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695996"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434490"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -77,7 +77,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
         - **Soluciones** \> **Administración de registros** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
 
     - Si utiliza la administración del ciclo de vida de los datos:
-        - **Soluciones** \> **Administración del ciclo de vida de los datos** \> **Directivas de etiquetas** \> **Aplicación automática de una etiqueta**
+        - **Soluciones** \> **Administración del ciclo de vida de los** \> datos **Microsoft 365** \> **Pestaña Directivas** \> **de etiqueta aplicar automáticamente una etiqueta**
 
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**.
 
@@ -160,7 +160,7 @@ Después de seleccionar una plantilla de política, puede añadir o eliminar cua
 Para obtener más información sobre estas opciones, consulte las siguientes instrucciones de la documentación DLP: [Ajustar las reglas para que sea más o menos fácil que coincidan](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Los tipos de información confidencial tienen dos formas diferentes de definir los parámetros máximos de recuento de instancias únicas. Para obtener más información, consulte [Valores admitidos de recuento de instancias para SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Los tipos de información confidencial tienen dos formas diferentes de definir los parámetros máximos de recuento de instancias únicas. Para obtener más información, consulte [Valores admitidos de recuento de instancias para SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 Que debe tener en cuenta al usar tipos de información confidencial para aplicar las etiquetas de retención automáticamente:
 

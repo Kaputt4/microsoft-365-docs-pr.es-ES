@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008875"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385735"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -164,12 +164,13 @@ Una vez que haya empezado con una directiva de reserva SPF de `?all`, puede desc
 
 ### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Configurar remitentes permitidos de correo electrónico no autenticado
 
-También puede usar las [conclusiones de la inteligencia contra la suplantación de identidad](learn-about-spoof-intelligence.md) y la [Lista de permitidos/bloqueados del espacio empresarial](tenant-allow-block-list.md) para permitir a los remitentes transmitir mensajes no autenticados a su organización.
+También puede usar las [conclusiones de la inteligencia contra la suplantación de identidad](learn-about-spoof-intelligence.md) y la [Lista de permitidos/bloqueados del espacio empresarial](manage-tenant-allow-block-list.md) para permitir a los remitentes transmitir mensajes no autenticados a su organización.
 
 En el caso de los dominios externos, el usuario suplantado es el dominio de la dirección de, mientras que la infraestructura de envío es uno de los siguientes valores:
 
 - La dirección IP de origen (dividida en /24 intervalos CIDR)
 - Dominio organizativo del registro DNS inverso (PTR).
+- Un dominio DKIM comprobado.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creación de una entrada de permiso para el par de remitente y destinatario
 

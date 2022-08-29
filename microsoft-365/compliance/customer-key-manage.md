@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637337"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433474"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -41,9 +41,9 @@ Para crear un DEP de varias cargas de trabajo, siga estos pasos:
 
    - *PolicyName* es el nombre que desea usar para la directiva. Los nombres no pueden contener espacios. Por ejemplo, Contoso_Global.
 
-   - *KeyVaultURI1* es el URI de la primera clave de la directiva. Por ejemplo, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1* es el URI de la primera clave de la directiva. Por ejemplo, `https://contosoWestUSvault1.vault.azure.net/keys/Key_01`.
 
-   - *KeyVaultURI2* es el URI de la segunda clave de la directiva. Por ejemplo, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Separe los dos URI por una coma y un espacio.
+   - *KeyVaultURI2* es el URI de la segunda clave de la directiva. Por ejemplo, `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. Separe los dos URI por una coma y un espacio.
 
    - *Descripción* de la directiva es una descripción fácil de usar de la directiva que le ayudará a recordar para qué sirve la directiva. Puede incluir espacios en la descripción. Por ejemplo, "Directiva raíz para varias cargas de trabajo para todos los usuarios del inquilino".
 
@@ -93,9 +93,9 @@ Para crear un DEP que se usará con un buzón de correo, siga estos pasos:
 
    - *Descripción* de la directiva es una descripción fácil de usar de la directiva que le ayudará a recordar para qué sirve la directiva. Puede incluir espacios en la descripción. Por ejemplo, "Clave raíz para buzones en EE. UU. y sus territorios".
 
-   - *KeyVaultURI1* es el URI de la primera clave de la directiva. Por ejemplo, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* es el URI de la primera clave de la directiva. Por ejemplo, `https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01`.
 
-   - *KeyVaultURI2* es el URI de la segunda clave de la directiva. Por ejemplo, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separe los dos URI por una coma y un espacio.
+   - *KeyVaultURI2* es el URI de la segunda clave de la directiva. Por ejemplo, `https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02`. Separe los dos URI por una coma y un espacio.
 
    Ejemplo:
 

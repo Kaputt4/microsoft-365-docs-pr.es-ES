@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 4300aadd6ab57561592621a0d1aeb54887d70320
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174902"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437791"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para punto de conexión en Android
 
@@ -31,10 +31,18 @@ ms.locfileid: "67174902"
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->[!NOTE]
+>[!IMPORTANT]
 > el **motor antimalware** de Microsoft Defender para punto de conexión ya está disponible con carácter general. Todos los usuarios deben tener una versión de Microsoft Defender para punto de conexión superior a **la 1.0.3815.0000** para usar esta nueva funcionalidad de protección contra malware. A los usuarios de Microsoft Defender para punto de conexión versión inferior a la 1.0.3815.0000 se les enviarán notificaciones y mensajes de superposición desde la aplicación para actualizar sus Microsoft Defender para punto de conexión aplicación. Los usuarios pueden hacer clic en el vínculo proporcionado en el mensaje de superposición para ir al almacén de reproducción administrado y actualizar la aplicación. 
 >
 > Si los usuarios no pueden acceder a play store, la aplicación se puede actualizar a través del portal de empresa. 
+
+## <a name="privacy-controls"></a>Controles de privacidad
+
+Microsoft Defender para punto de conexión en Android habilita los controles de privacidad tanto para los administradores como para los usuarios finales. Esto incluye los controles para dispositivos inscritos (MDM) y no inscritos (MAM) (en versión preliminar). Los administradores pueden configurar la privacidad en el informe de alertas, mientras que los usuarios finales pueden configurar la información compartida con su organización. Para obtener más información, consulte [Controles de privacidad (MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) y [controles de privacidad (MAM).](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls)
+
+## <a name="optional-permissions-and-disable-web-protection"></a>Permisos opcionales y deshabilitación de la protección web
+
+Microsoft Defender para punto de conexión en Android habilita **permisos opcionales** en el flujo de incorporación. Actualmente, los permisos requeridos por MDE son obligatorios en el flujo de incorporación. Con esta característica, el administrador puede implementar MDE en dispositivos sin aplicar los permisos **obligatorios de VPN** y **accesibilidad** durante la incorporación. Los usuarios finales pueden incorporar la aplicación sin los permisos obligatorios y pueden revisarlos más adelante. Esta característica solo está presente actualmente para dispositivos no inscritos (MAM). Para obtener más información, consulte [permisos opcionales](/microsoft-365/security/defender-endpoint/android-configure-mam#optional-permissions).
 
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Perfil personal byod de Microsoft Defender en Android Enterprise
@@ -60,9 +68,9 @@ Para actualizar, los usuarios pueden seguir estos pasos:
 
 Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en el almacén de juegos. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU.**; en función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a características para Microsoft Defender para punto de conexión o a características de Microsoft Defender para personas. Consulte [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) para obtener más detalles.
 
-## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
+## <a name="vulnerability-management"></a>Administración de vulnerabilidades
 
-El 25 de enero de 2022, anunciamos la disponibilidad general de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, consulte [la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+El 25 de enero de 2022, anunciamos la disponibilidad general de la administración de vulnerabilidades en Android e iOS. Para obtener más información, consulte [la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Próximos cambios de permisos para Microsoft Defender para punto de conexión que ejecutan Android 11 o posterior (noviembre de 2021)
 

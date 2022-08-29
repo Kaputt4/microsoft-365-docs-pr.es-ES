@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número personal de Eslovaquia.
-ms.openlocfilehash: 4f923c714cf94543828d184164631d5e0c60e9e8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 4e576d4b4ac1c65ca72e2955c7617fe7d2badd22
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950909"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367651"
 ---
-# <a name="slovakia-personal-number"></a>Número personal de Eslovaquia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
+# <a name="slovakia-personal-number"></a>Número del documento de identidad de Eslovaquia
 
 ## <a name="format"></a>Formato
 
@@ -53,14 +45,14 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_slovakia_eu_national_id_card` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_slovakia_eu_national_id_card` .
+- La función `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_slovakia_eu_national_id_card`.
 
 Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_slovakia_eu_national_id_card` busca contenido que coincida con el patrón.
+- La función `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -101,26 +93,26 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - rodne cislo
 - rodné číslo
 - social security number
-- Ssn #
-- Ssn
+- númeroseguridadsocial#
+- ssn
 - személyi igazolvány szám
 - személyi igazolvány száma
 - személyigazolvány szám
-- archivo de impuestos no
+- archivo fiscal no
 - tax file number
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0cc623bb7ca19620aaf9305a403e709d723f7ac3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087602"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385151"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -87,7 +87,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
   > [!NOTE]
   > Se requiere al menos una selección en la configuración **usuarios, grupos y dominios** en las directivas de anti-phishing personalizadas para identificar los destinatarios del mensaje a **los** <u>que se aplica la directiva</u>. Las directivas contra suplantación de identidad en Defender para Office 365 también tienen [una configuración de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en la que puede especificar direcciones de correo electrónico de remitente individuales o dominios de remitente <u>que recibirán protección de suplantación</u>, como se describe más adelante en este artículo.
   >
-  > Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+  > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
   > - El destinatario es: romain@contoso.com
   > - El destinatario es miembro de: Ejecutivos
@@ -104,10 +104,10 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 - **Habilitar inteligencia suplantada**: activa o desactiva la inteligencia de suplantación de identidad. Se recomienda que lo deje activado.
 
-  Cuando se habilita la inteligencia de suplantación de identidad, la **información de inteligencia sobre** suplantación de identidad muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante inteligencia suplantada. Puede invalidar manualmente el veredicto de inteligencia de suplantación para permitir o bloquear a los remitentes suplantados detectados desde dentro de la información. Pero cuando lo hace, el remitente suplantado desaparece de la información de inteligencia de suplantación de identidad y ahora solo está visible en la pestaña **Suplantación de identidad** en la lista De inquilinos permitidos o bloqueados. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de permitidos o bloqueados de inquilinos. Para más información, consulte los siguientes artículos:
+  Cuando se habilita la inteligencia de suplantación de identidad, la **información de inteligencia sobre** suplantación de identidad muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante inteligencia suplantada. Puede invalidar manualmente el veredicto de inteligencia de suplantación para permitir o bloquear a los remitentes suplantados detectados desde dentro de la información. Pero cuando lo hace, el remitente suplantado desaparece de la información de inteligencia de suplantación de identidad y ahora solo está visible en la pestaña **Remitentes suplantados de la Lista de permitidos o bloqueados de inquilinos** . También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de permitidos o bloqueados de inquilinos. Para más información, consulte los siguientes artículos:
 
   - [Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md)
-  - [Administrar la lista de inquilinos permitidos o bloqueados en EOP](tenant-allow-block-list.md)
+  - [Administrar la lista de inquilinos permitidos o bloqueados en EOP](manage-tenant-allow-block-list.md)
 
   > [!NOTE]
   >
@@ -135,7 +135,7 @@ Los indicadores de remitente no autenticados forman parte de la [configuración 
 
 Para evitar que el signo de interrogación o la etiqueta se agreguen a mensajes de remitentes específicos, tiene las siguientes opciones:
 
-- Permitir al remitente suplantado en la [información de inteligencia de suplantación](learn-about-spoof-intelligence.md) o manualmente en la [lista de permitidos o bloqueados](tenant-allow-block-list.md) de inquilinos. Permitir que el remitente suplantado impida que la etiqueta via aparezca en los mensajes del remitente, incluso si la opción **Mostrar etiqueta "a través"** está activada en la directiva.
+- Permitir al remitente suplantado en la [información de inteligencia de suplantación](learn-about-spoof-intelligence.md) o manualmente en la [lista de permitidos o bloqueados](manage-tenant-allow-block-list.md) de inquilinos. Permitir que el remitente suplantado impida que la etiqueta via aparezca en los mensajes del remitente, incluso si la opción **Mostrar etiqueta "a través"** está activada en la directiva.
 - [Configure la autenticación por correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio remitente.
   - Para el signo de interrogación en la foto del remitente, SPF o DKIM son los más importantes.
   - En el caso de la etiqueta via, confirme que el dominio de la firma DKIM o la dirección **MAIL FROM** coinciden (o es un subdominio de) con el dominio en la dirección From.
@@ -237,6 +237,13 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Eliminar el mensaje antes de entregarlo**
 
 - **Agregar remitentes y dominios de confianza**: excepciones a la configuración de protección de suplantación. La directiva nunca clasifica los mensajes de los remitentes y dominios de remitente especificados como ataques basados en suplantación. En otras palabras, la acción para remitentes protegidos, dominios protegidos o protección de inteligencia de buzones no se aplica a estos remitentes o dominios de remitente de confianza. El límite máximo para estas listas es de 1024 entradas.
+
+  > [!NOTE]
+  > Si los mensajes del sistema de Microsoft 365 de los siguientes remitentes se identifican como intentos de suplantación, puede agregar los remitentes a la lista de remitentes de confianza:
+  >
+  > - `⁠noreply@email.teams.microsoft.com`
+  > - `noreply@emeaemail.teams.microsoft.com`
+  > - `no-reply@sharepointonline.com`
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Umbrales avanzados de suplantación de identidad (phishing) en las directivas contra suplantación de identidad (phishing) en Microsoft Defender para Office 365
 

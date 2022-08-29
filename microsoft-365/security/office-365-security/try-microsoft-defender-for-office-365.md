@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: e46e5f3af06cc94cea4ff2e76208f3ccadc53586
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530619"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385625"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
 
@@ -63,7 +63,7 @@ También puede obtener más información sobre Defender para Office 365 en esta 
 
 Al evaluar Defender para Office 365, están presentes las directivas que controlan las características de protección de Microsoft 365:
 
-- **Exchange Online Protection (EOP):** no se crean directivas nuevas o especiales. Las directivas de EOP existentes pueden actuar sobre los mensajes (por ejemplo, enviar mensajes a la carpeta Correo no deseado o poner en cuarentena):
+- **Exchange Online Protection (EOP):** no se crean directivas nuevas o especiales. Las directivas de EOP existentes pueden actuar sobre los mensajes (por ejemplo, enviar mensajes a la carpeta Email no deseado o poner en cuarentena):
 
   - [Directivas antimalware](anti-malware-protection.md)
   - [Protección contra correo no deseado entrante](anti-spam-protection.md)
@@ -87,7 +87,7 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
 **Notas**:
 
-- Vínculos seguros detonarán las direcciones URL en el flujo de correo. Para evitar que se detonen direcciones URL específicas, use la lista de permitidos o bloqueados de inquilinos. Para obtener más información, vea [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+- Vínculos seguros detonarán las direcciones URL en el flujo de correo. Para evitar que se detonen direcciones URL específicas, use la lista de permitidos o bloqueados de inquilinos. Para obtener más información, vea [Administrar la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).
 - Vínculos seguros no encapsula los vínculos URL en los cuerpos de mensajes de correo electrónico.
 - La configuración de la directiva de evaluación se describe en la sección [Configuración de directivas de evaluación](#evaluation-policy-settings) más adelante en este artículo.
 
@@ -152,7 +152,7 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
           Como se explicó en el paso anterior, el filtrado mejorado para conectores se configura automáticamente en el conector que especifique como origen de correo del servicio de protección.
 
-          Activar el filtrado mejorado para conectores sin una regla SCL=-1 para el correo entrante desde el servicio de protección mejorará enormemente las capacidades de detección de las características de protección de EOP, como la [inteligencia de suplantación](anti-spoofing-protection.md) de identidad, y podría afectar a la entrega de esos mensajes recién detectados (por ejemplo, pasar a la carpeta Correo no deseado o poner en cuarentena). Este impacto se limita a las directivas de EOP; como se explicó anteriormente, las directivas de Defender para Office 365 se crean en modo de auditoría.
+          Activar el filtrado mejorado para conectores sin una regla SCL=-1 para el correo entrante desde el servicio de protección mejorará enormemente las capacidades de detección de las características de protección de EOP, como la [inteligencia de suplantación](anti-spoofing-protection.md) de identidad, y podría afectar a la entrega de esos mensajes recién detectados (por ejemplo, pasar a la carpeta Email correo no deseado o poner en cuarentena). Este impacto se limita a las directivas de EOP; como se explicó anteriormente, las directivas de Defender para Office 365 se crean en modo de auditoría.
 
           Para crear una regla de flujo de correo SCL=-1 o para revisar las reglas existentes, haga clic en el botón **Ir al Centro de administración de Exchange** de la página. Para obtener más información, consulte [Uso de reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes de Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
@@ -192,8 +192,8 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 ## <a name="reporting-in-audit-mode"></a>Informes en modo de auditoría
 
 - El [informe de estado de protección contra](view-email-security-reports.md#threat-protection-status-report) amenazas muestra las detecciones por Defender para Office 365 en las vistas siguientes:
-  - [Visualización de datos por correo electrónico \> Malware y desglose de gráficos por tecnología de detección](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [Visualización de datos por correo electrónico \> y desglose de gráficos por tecnología de detección](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [Visualización de datos por Email \> malware y desglose de gráficos por tecnología de detección](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [Visualización de datos por Email \> phish y desglose de gráficos por tecnología de detección](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - En [el Explorador de amenazas](threat-explorer.md), los mensajes detectados por la evaluación de Defender para Office 365 muestran el siguiente banner en los detalles de la entrada:
 
@@ -256,7 +256,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
 |Nombre|Directiva de evaluación|
-|PhishThresholdLevel|1 |
+|PhishThresholdLevel|1|
 |RecommendedPolicyType|Evaluation|
 |SpoofQuarantineTag|DefaultFullAccessPolicy|
 |TargetedDomainActionRecipients|{}|

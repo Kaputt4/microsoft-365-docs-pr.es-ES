@@ -18,12 +18,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5ef0ddc2d6a47e22120b3cfbc205cd4aa4da31b0
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274866"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383818"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creación de listas de remitentes seguros en EOP
 
@@ -53,7 +53,7 @@ Las reglas de flujo de correo permiten la máxima flexibilidad para garantizar q
 >
 > - Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (un buen correo electrónico marcado como incorrecto), debe considerar el uso de listas de remitentes seguros como una solución temporal que se debe evitar si es posible. No se recomienda administrar falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a la suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener listo el tema [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md) .
 >
-> - Para permitir que un dominio envíe correo electrónico no autenticado (omitir la protección contra la suplantación de identidad) pero no omitir el correo no deseado y otras protecciones, puede usar la [información de inteligencia de](learn-about-spoof-intelligence.md) suplantación y la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+> - Para permitir que un dominio envíe correo electrónico no autenticado (omitir la protección contra la suplantación de identidad) pero no omitir el correo no deseado y otras protecciones, puede usar la [información de inteligencia de](learn-about-spoof-intelligence.md) suplantación y la [lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).
 >
 > - EOP y Outlook inspeccionan diferentes propiedades de mensaje para determinar el remitente del mensaje. Para obtener más información, consulte la sección [Consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este artículo.
 >

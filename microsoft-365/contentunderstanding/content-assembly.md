@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
-ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: bce344a5a8daf36c9408a846f2ab289f14695d82
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309843"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420120"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
@@ -65,7 +65,9 @@ Siga estos pasos para crear una plantilla moderna.
    - [Selección de un término o conjunto de términos de metadatos administrados](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > Puede crear marcadores de posición solo para texto. Actualmente no se admiten imágenes, arte inteligente, tablas y listas de viñetas.   
+   > Puede crear marcadores de posición para texto y también marcadores de posición para texto dentro de las celdas de una tabla. Sin embargo, actualmente no se admiten imágenes, arte inteligente, tablas completas y listas con viñetas.   
+
+
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Asociar un marcador de posición escribiendo texto o seleccionando una fecha
 
@@ -185,7 +187,7 @@ Puede usar una plantilla moderna *publicada* para crear rápidamente documentos 
 >- Actualmente solo se admiten documentos de Microsoft Word (extensión .docx) para crear una plantilla. Antes de cargar un documento de Word, asegúrese de que no incluya comentarios o que tenga habilitado **El seguimiento de cambios** . Si el documento contiene marcadores de posición de texto para imágenes, asegúrese de que no están encapsulados en texto. Actualmente no se admiten los controles de contenido de Word. Si desea crear una plantilla a partir de un documento de Word con controles de contenido, quítelos antes de crear una plantilla moderna.
 >- La plantilla y el documento están asociados a una biblioteca de documentos. Para usar la plantilla en otra biblioteca de documentos, deberá volver a crearla en esa biblioteca de documentos.
 >- El documento cargado que se usa para crear la plantilla moderna se guardará como una copia independiente y se colocará en el directorio /forms de la biblioteca de documentos. El archivo original del disco no se verá afectado.
->- Puede crear marcadores de posición solo para texto. Actualmente no se admiten imágenes, arte inteligente, tablas y listas de viñetas.
+>- Puede crear marcadores de posición para texto y también marcadores de posición para texto dentro de las celdas de una tabla. Sin embargo, actualmente no se admiten imágenes, arte inteligente, tablas completas y listas con viñetas.
 >- Una vez que se crea un documento a partir de una plantilla, no está asociado a la plantilla.
 
 

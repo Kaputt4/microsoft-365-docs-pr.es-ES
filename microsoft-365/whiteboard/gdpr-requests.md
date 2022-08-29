@@ -12,18 +12,20 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo exportar, transferir o eliminar información personal de Microsoft Whiteboard.
-ms.openlocfilehash: 97b960082621c6a728740d5fd747da73540b2ac7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 696e21ef3b48a9823554746fa7cc24b11e421af7
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943019"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369819"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Administrar las Solicitudes del interesado RGPD en Microsoft Whiteboard
 
 El reglamento general de protección de datos (RGPD) otorga derechos a los usuarios para administrar los datos personales recopilados por una organización. Estos derechos se pueden ejercer a través de una solicitud del interesado (STD).
 
 Este artículo ofrece información sobre cómo exportar, transferir o eliminar información personal de Microsoft Whiteboard.
+
+Para administrar la información personal, primero debe asegurarse de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-organizations.md).
 
 ## <a name="export-a-whiteboard"></a>Exportar una pizarra
 
@@ -45,7 +47,7 @@ En iOS o en la Web, siga estos pasos:
 
 2. Seleccione el icono de **Configuración**.
 
-3. Realiza una de las siguientes acciones:
+3. Realice uno de los pasos siguientes:
 
    - En Whiteboard para iOS, seleccione **Exportar imagen (png)**.
 

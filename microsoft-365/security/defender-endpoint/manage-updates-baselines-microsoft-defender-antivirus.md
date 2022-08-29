@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/15/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
-ms.translationtype: HT
+ms.openlocfilehash: c3856209c510c67bb9054e9567f78ff8ed978b2b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280727"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427254"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -91,18 +91,16 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Julio-2022 (Plataforma: 4.18.2205.TBD | Motor: 1.1.19500.2)</summary>
+<summary>Julio-2022 (Plataforma: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
-*Esta sección contiene información de versión preliminar que todavía está en desarrollo activo. Se espera que se produzcan actualizaciones, incluido el número de versión de actualización de seguridad final.*
-
-&ensp;Versión de actualización de inteligencia de seguridad: *próximamente*<br/>
-&ensp;Fecha de lanzamiento: **8 de agosto de 2022**<br/>
-&ensp;Plataforma: *4.18.2205.TBD*<br/>
+&ensp;Versión de actualización de inteligencia de seguridad: **1.373.219.0**<br/>
+&ensp;Fecha de lanzamiento: **15 de agosto de 2022**<br/>
+&ensp;Plataforma: **4.18.2207.5**<br/>
 &ensp;Motor: **1.1.19500.2**<br/>
 &ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
 
 Versión del motor: 1.1.19300.2<br/>
-Versión de actualización de inteligencia de seguridad: *próximamente*<br/>
+Versión de actualización de inteligencia de seguridad: 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -117,11 +115,17 @@ Versión de actualización de inteligencia de seguridad: *próximamente*<br/>
 - Validación de confianza mejorada 
 - Se ha corregido un problema de bloqueo del motor en plataformas operativas heredadas 
 - Actualizaciones del analizador de rendimiento, versión 3: se ha agregado compatibilidad con la ruta de acceso principal, información de omisión de exámenes y compatibilidad con el examen bajo demanda. Consulte [Analizador de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md). 
+- Mejoras en el rendimiento de Defender durante las operaciones de copia de archivos
+- Mejoras agregadas para el [modo de solución de problemas](enable-troubleshooting-mode.md)  
+- Se ha agregado una corrección para los canales WINEVT de Defender en las actualizaciones o reinicios. (Consulte [Registro de eventos de Windows](/windows/win32/api/_wes/) para obtener más información sobre WINEVT).
+- Se ha agregado una corrección para el error [de administración de WMI de Defender](use-wmi-microsoft-defender-antivirus.md) durante el inicio o las actualizaciones. 
+- Se ha agregado una corrección para la versión 2010/2011 duplicada en los [eventos operativos de Windows Visor de eventos](troubleshoot-microsoft-defender-antivirus.md) 
+- Se ha agregado compatibilidad con la protección de tokens de procesos de pila de [Defender para punto de conexión](microsoft-defender-endpoint.md) . 
 
 
 ### <a name="known-issues"></a>Problemas conocidos
 
-No hay problemas conocidos
+- Los clientes que implementan la actualización de plataforma 4.18.2207.5 pueden experimentar retrasos en el rendimiento de red que podrían afectar a las aplicaciones.
 
 <br/><br/>
 </details><details>

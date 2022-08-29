@@ -15,25 +15,29 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 8f8f189e3cf340c0056eb6e9cbbbfefe6f4e148d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574011"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405824"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus de Microsoft Defender
 
 **Plataformas**
+
 - Windows
+- Linux \(Consulte [Protección de red para Linux](network-protection-linux.md)\)
+- macOS \(Consulte [Protección de red para macOS](network-protection-macos.md)\)
 
 > [!TIP]
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -95,7 +99,6 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (CSP) para habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
 
 [Actualice la plataforma antimalware de Microsoft Defender a la versión más reciente](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) antes de habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
-
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -180,11 +183,10 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
    - **Bloquear**
    - **Auditoría**
    - **Disabled**
-   
-6. Complete el resto de los pasos y guarde la directiva. 
+
+6. Complete el resto de los pasos y guarde la directiva.
 
 7. En la cinta de opciones, seleccione **Implementar** para implementar la directiva en una colección.
-
 
 > [!IMPORTANT]
 > Una vez que implemente una directiva de Protección contra vulnerabilidades de seguridad de Configuration Manager, la configuración de Protección contra vulnerabilidades de seguridad no se quitará de los clientes si quita la implementación. `Delete not supported`se registra en el archivo ExploitGuardHandler.log del cliente de Configuration Manager si quita la implementación de Exploit Guard del cliente. <!--CMADO8538577-->
@@ -208,6 +210,10 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 ## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
+
+- [Protección de red para Linux](network-protection-linux.md)
+
+- [Protección de red para macOS](network-protection-macos.md)
 
 - [Protección de red y protocolo de enlace de tres vías TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

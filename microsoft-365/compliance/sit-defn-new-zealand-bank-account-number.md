@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de cuenta bancaria de Nueva Zelanda.
-ms.openlocfilehash: b33eeb1e83f5efc9dd805c9ea036c6f30de600a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3e682641abeee0c6e48fa1df70c767f029d0af4c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999545"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369720"
 ---
 # <a name="new-zealand-bank-account-number"></a>Número de cuenta bancaria de Nueva Zelanda
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

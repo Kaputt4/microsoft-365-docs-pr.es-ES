@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: 18153facee37f52ea0bcc5baa5e5193f63e06360
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306578"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67419965"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -76,9 +76,8 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actual: 2101+ <br /><br> Canal mensual para empresas: 2101+ <br /><br> Canal semestral para empresas: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Canal actual: 2107+ <br /><br> Canal mensual para empresas: 2107+ <br /><br> Canal semestral para empresas: 2202+ |  16.51+ | Versión preliminar: 2.58+ cuando usted [acepta](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Versión preliminar: 16.0.14931+ cuando usted [acepta](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Compatibilidad con PDF](#pdf-support)| Vista previa: [Canal Beta](https://office.com/insider) |  En revisión | En revisión | En revisión | En revisión |
-
+|[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Canal actual: 2107+ <br /><br> Canal mensual para empresas: 2107+ <br /><br> Canal semestral para empresas: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Compatibilidad con PDF](#pdf-support)| Vista previa: [canal actual (vista previa)](https://office.com/insider) |  En revisión | En revisión | En revisión | En revisión |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funciones de la etiqueta de confidencialidad en Outlook
 
@@ -231,41 +230,13 @@ Esto significa que si comparte documentos con otra organización que utiliza nom
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Compartir documentos encriptados con usuarios externos
 
-Además de restringir el acceso a los usuarios de su propia organización, puede ampliar el acceso a cualquier otro usuario que tenga una cuenta en Azure Active Directory. Sin embargo, si su organización utiliza directivas de acceso condicional, consulte la [siguiente sección](#conditional-access-policies) para obtener consideraciones adicionales.
+Aunque puede restringir el acceso a los usuarios de su propia organización, también puede ampliar el acceso a cualquier otro usuario que tenga una cuenta en Azure Active Directory (Azure AD). De forma predeterminada, estos usuarios externos se autenticarán sin ninguna configuración adicional. Sin embargo, es posible que se requiera una configuración adicional para [la configuración de acceso entre inquilinos de Identidades externas](/azure/active-directory/external-identities/cross-tenant-access-overview) de Azure AD y el [acceso condicional](/azure/active-directory/conditional-access/overview). 
+
+Si los usuarios externos no tienen una cuenta en Azure AD, pueden autenticarse mediante cuentas de invitado en el inquilino. Estas cuentas de invitado también se pueden usar para acceder a documentos compartidos en SharePoint o OneDrive cuando se han [habilitado etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Para obtener más información sobre las características opcionales de Azure AD y el uso de cuentas de invitado para los requisitos de autenticación, consulte [Configuración de Azure AD para el contenido de cifrado](encryption-azure-ad-configuration.md).
 
 Todas las aplicaciones de Office y [otras aplicaciones con RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) pueden abrir documentos encriptados después de que el usuario se haya autenticado correctamente. 
-
-Si los usuarios externos no tienen una cuenta en Azure Active Directory, pueden autenticarse utilizando cuentas de invitados en su tenant. Estas cuentas de invitados también se pueden utilizar para acceder a los documentos compartidos en SharePoint o OneDrive cuando se han [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
-
-- Una opción es crear por usted mismo estas cuentas de invitado. Puede especificar cualquier dirección de correo electrónico que estos usuarios ya utilicen. Por ejemplo, su dirección de Gmail.
-    
-    La ventaja de esta opción es que puedes restringir el acceso y los derechos a usuarios específicos especificando su dirección de correo electrónico en la configuración de cifrado. El inconveniente es la sobrecarga administrativa para la creación de la cuenta y la coordinación con la configuración de la etiqueta.
-
-- Otra opción es usar la [integración de SharePoint y OneDrive con Azure AD B2B ](/sharepoint/sharepoint-azureb2b-integration) para que las cuentas de invitados se creen automáticamente cuando sus usuarios compartan enlaces.
-    
-    La ventaja de esta opción es que la carga administrativa es mínima, ya que las cuentas se crean automáticamente, y la configuración de las etiquetas es más sencilla. Para este escenario, debe seleccionar la opción de encriptación [Agregar cualquier usuario autentificado](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) porque no conocerá las direcciones de correo electrónico de antemano. El inconveniente es que esta configuración no permite restringir los derechos de acceso y uso a usuarios específicos.
-
-Los usuarios externos también pueden utilizar una cuenta de Microsoft para abrir documentos encriptados cuando utilizan Windows y las Aplicaciones de Microsoft 365 ([las que antes eran aplicaciones de Office 365](/deployoffice/name-change)) o la edición independiente de Office 2019. Más recientemente, las cuentas de Microsoft también son compatibles con la apertura de documentos cifrados en macOS (Aplicaciones de Microsoft 365, versión 16.42+), Android (versión 16.0.13029+) e iOS (versión 2.42+). Por ejemplo, un usuario de su organización comparte un documento encriptado con un usuario externo a su organización, y la configuración de encriptación especifica una dirección de correo electrónico de Gmail para el usuario externo. Este usuario externo puede crear su propia cuenta de Microsoft que utiliza su dirección de correo electrónico de Gmail. A continuación, tras iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, según las restricciones de uso especificadas para ellos. Para ver un ejemplo de este escenario, consulte [Abrir y editar el documento protegido](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
-
-> [!NOTE]
-> La dirección de correo electrónico de la cuenta de Microsoft debe coincidir con la dirección de correo electrónico especificada para restringir el acceso a la configuración de cifrado.
-
-Cuando un usuario con una cuenta de Microsoft abre un documento encriptado de esta manera, se crea automáticamente una cuenta de invitado para el inquilino si no existe ya una cuenta de invitado con el mismo nombre. Cuando existe una cuenta de invitado, se puede utilizar para abrir documentos en SharePoint y OneDrive utilizando Office en la web, además de abrir documentos encriptados desde las aplicaciones de escritorio y móviles de Office compatibles.
-
-Sin embargo, la cuenta automática de invitado no se crea inmediatamente en este escenario, debido a la latencia de la replicación. Si especifica direcciones de correo electrónico personales como parte de la configuración del cifrado de etiquetas, le recomendamos que cree las correspondientes cuentas de invitado en Azure Active Directory. A continuación, comunique a estos usuarios que deben utilizar esta cuenta para abrir un documento cifrado de su organización.
-
-> [!TIP]
-> Dado que no puede estar seguro de que los usuarios externos vayan a utilizar una aplicación cliente de Office compatible, compartir enlaces desde SharePoint y OneDrive después de crear cuentas de invitado (para usuarios específicos) o cuando use la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (para cualquier usuario autenticado) es un método más fiable para admitir la colaboración segura con usuarios externos.
-
-### <a name="conditional-access-policies"></a>Directivas de acceso condicional
-
-Si su organización ha implementado [Azure Active Directory con directivas de acceso condicional](/azure/active-directory/conditional-access/overview), compruebe la configuración de esas directivas. Si las directivas incluyen **Microsoft Azure Information Protection** y la directiva se extiende a usuarios externos, esos usuarios externos deben tener una cuenta de invitado en su cuenta empresarial, incluso si tienen una cuenta de Azure AD en su propia cuenta empresarial.
-
-Sin esta cuenta de invitado, no pueden abrir el documento cifrado y ver un mensaje de error. El texto del mensaje podría informarles de que su cuenta debe agregarse como usuario externo en la cuenta empresarial, con la instrucción incorrecta para este escenario de **cerrar sesión e iniciar sesión de nuevo con una cuenta de usuario Azure Active Directory diferente**.
-
-Si no puede crear y configurar cuentas de invitado en su inquilino para usuarios externos que necesiten abrir documentos cifrados por sus etiquetas, debe eliminar Azure Information Protection de las directivas de acceso condicional o excluir a los usuarios externos de las directivas.
-
-Para obtener más información sobre el acceso condicional y Azure Information Protection, el servicio de cifrado utilizado por las etiquetas de confidencialidad, consulte la pregunta frecuente, [Veo que Azure Information Protection aparece como una aplicación en la nube disponible para el acceso condicional, ¿cómo funciona?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Cuando las aplicaciones de Office aplican el marcado y el cifrado de contenidos
 

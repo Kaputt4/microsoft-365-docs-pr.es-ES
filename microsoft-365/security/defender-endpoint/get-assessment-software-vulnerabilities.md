@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dba7f3d1512046c0788c72efb5b0ce9ac9ead1b6
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: aba3078a31428e837bacaf65f0d03b3d6019521a
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280596"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405807"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportación de la evaluación de vulnerabilidades de software por dispositivo
 
@@ -99,26 +99,26 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-CveId|String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
-CvssScore|String|La puntuación CVSS del CVE.|6.2
-DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+CveId|Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
+CvssScore|Cadena|La puntuación CVSS del CVE.|6.2
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 DiskPaths|Cadena de matriz\[\]|Prueba de disco de que el producto está instalado en el dispositivo.|[ "C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|String|La primera vez que se vio el CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
-Id|String|Identificador único del registro.|123ABG55_573AG&mnp!
-LastSeenTimestamp|String|La última vez que se vio el CVE en el dispositivo.|2020-11-03 10:13:34.8476880
-OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11
-RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores
-RecommendationReference|String|Referencia al identificador de recomendación relacionado con este software.|_va-microsoft-silverlight_
-RecommendedSecurityUpdate (opcional)|String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020
-RecommendedSecurityUpdateId (opcional)|String|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+FirstSeenTimestamp|Cadena|La primera vez que se vio el CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
+Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!
+LastSeenTimestamp|Cadena|La última vez que se vio el CVE en el dispositivo.|2020-11-03 10:13:34.8476880
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte Administración de vulnerabilidades de Microsoft Defender sistemas operativos y plataformas compatibles para obtener más información.|Windows10 y Windows 11
+RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores
+RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.|_va-microsoft-silverlight_
+RecommendedSecurityUpdate (opcional)|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020
+RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
 RegistryPaths|Cadena de matriz\[\]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SecurityUpdateAvailable|Boolean|Indica si hay una actualización de seguridad disponible para el software.| Los valores posibles son true o false.
-SoftwareName|String|Nombre del producto de software.|Chrome
-SoftwareVendor|String|Nombre del proveedor de software.|Google
-SoftwareVersion|String|Número de versión del producto de software.|81.0.4044.138
-VulnerabilitySeverityLevel|String|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
+SoftwareName|Cadena|Nombre del producto de software.|Chrome
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google
+SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS.|Mediano
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -313,7 +313,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportación de archivos|cadena de matriz\[\]|Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|String|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|Cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos
@@ -389,27 +389,27 @@ Cada registro devuelto contiene todos los datos de la evaluación completa de vu
 
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de valor devuelto
 :---|:---|:---|:---
-CveId |String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
-CvssScore|String|La puntuación CVSS del CVE.|6.2  
-DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
+CveId |Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
+CvssScore|Cadena|La puntuación CVSS del CVE.|6.2  
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
 DiskPaths|Matriz[cadena]|Prueba de disco de que el producto está instalado en el dispositivo.|["C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
-EventTimestamp|String|La hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|String|La primera vez que se vio el CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
-Id|String|Identificador único del registro.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|String|La última vez que se vio el CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
-OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11 
-RbacGroupName|String|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores  
+EventTimestamp|Cadena|La hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|Cadena|La primera vez que se vio el CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
+Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|Cadena|La última vez que se vio el CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte Administración de vulnerabilidades de Microsoft Defender sistemas operativos y plataformas compatibles para obtener más información.|Windows10 y Windows 11 
+RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores  
 RecommendationReference|string|Referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020  
-RecommendedSecurityUpdateId |String|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
+RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020  
+RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
 RegistryPaths |Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|String|Nombre del producto de software.|Chrome  
-SoftwareVendor|String|Nombre del proveedor de software.|Google  
-SoftwareVersion|String|Número de versión del producto de software.|81.0.4044.138  
-Estado|String|**Nuevo** (para una nueva vulnerabilidad introducida en un dispositivo) (1) **Corregido** (si esta vulnerabilidad ya no existe en el dispositivo, lo que significa que se corrigió). (2) **Actualizado** (si ha cambiado una vulnerabilidad en un dispositivo. Los cambios posibles son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
-VulnerabilitySeverityLevel|String|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación cvss y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
+SoftwareName|Cadena|Nombre del producto de software.|Chrome  
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google  
+SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138  
+Estado|Cadena|**Nuevo** (para una nueva vulnerabilidad introducida en un dispositivo) (1) **Corregido** (si esta vulnerabilidad ya no existe en el dispositivo, lo que significa que se corrigió). (2) **Actualizado** (si ha cambiado una vulnerabilidad en un dispositivo. Los cambios posibles son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación cvss.|Mediano
 |
 
 #### <a name="clarifications"></a>Aclaraciones
@@ -590,5 +590,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Otros relacionados
 
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0c5dd2cc372ad1d8e37713360561f41be9b05209
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998549"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432405"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Elija los escenarios para Microsoft 365 para trabajadores de primera línea
 
@@ -34,7 +34,7 @@ Use la información general de estos escenarios para empezar a prever lo que su 
 
 ## <a name="communications"></a>Comunicaciones
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 Las soluciones de comunicaciones conectan a los trabajadores de primera línea y les permiten colaborar entre sí, con otros usuarios de la organización y con sus clientes.
 
@@ -47,7 +47,7 @@ Consulte también estos recursos para obtener información sobre cómo puede fun
 
 ## <a name="wellbeing--engagement"></a>Bienestar y compromiso
 
-:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png":::
 
 Fomente la sensación de pertenencia con sus empleados de primera línea ayudándoles a interactuar con toda su organización.
 
@@ -59,18 +59,18 @@ Portada: [Traducción en línea](/microsoftteams/inline-message-translation-team
 
 ## <a name="training--onboarding"></a>Entrenamiento e incorporación
 
-:::image type="icon" source="/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png":::
 
 Promueva el crecimiento continuo de sus empleados y fomente el uso compartido y el intercambio de conocimientos.
 
 | Escenario | Descripción | Servicios | Aplicaciones de Teams |
 | --- | --- | --- |--- |
 | [Incorporación de nuevos empleados a la organización](flw-onboarding-training.md) | Haga que la incorporación de nuevos empleados sea una gran experiencia fomentando un entorno de trabajo híbrido todo en uno donde los nuevos empleados puedan encontrar recursos importantes, reunirse con personas de su organización y prepararse para tener éxito en su nuevo rol.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Listas <br>Reuniones en directo |
-| [Aprendizaje continuo](flw-onboarding-training.md#ongoing-training) | Una vez incorporados, ayude a sus empleados a mantener sus aptitudes actualizadas con la formación continua en Aprendizaje Viva. | SharePoint <br> Viva Learning <br> Viva Connections | |
+| [Aprendizaje continuo](flw-onboarding-training.md#ongoing-training) | Una vez incorporados, ayude a sus empleados a mantener sus aptitudes actualizadas con la formación continua en Aprendizaje Viva. | SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer| |
 
 ## <a name="schedule-management"></a>Administración de horarios
 
-:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png":::
 
 Simplifique y optimice la coordinación de los horarios con los empleados de primera línea. Obtenga visibilidad sobre sus horarios y permítales organizar las coberturas y los permisos.
 
@@ -80,7 +80,7 @@ Simplifique y optimice la coordinación de los horarios con los empleados de pri
 
 ## <a name="digitized-processes"></a>Procesos digitalizados
 
-:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::
 
 Impulse la eficiencia operativa mediante la digitalización de procesos basados en papel y la automatización de pasos rutinarios y repetitivos.
 
@@ -91,11 +91,21 @@ Impulse la eficiencia operativa mediante la digitalización de procesos basados 
 
 ## <a name="virtual-appointments"></a>Citas virtuales
 
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+:::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Use Microsoft Bookings y Microsoft Teams para programar y hospedar citas virtuales con clientes y clientes. Puede integrar Forms con su experiencia de citas virtuales para obtener la información adecuada sobre sus clientes o como parte de su experiencia de soporte al cliente para aprender lo que sus clientes necesitan.
 
 Más información: [Citas virtuales con Microsoft Teams y la aplicación Bookings](bookings-virtual-visits.md)
+
+## <a name="help-your-team-clients-and-customers"></a>Ayuda a tu equipo, clientes y clientes
+
+Busque recursos para compartir con su equipo para ayudarle a sentirse cómodo con las aplicaciones y características de Teams. Obtenga infografías personalizables y contenido web para ayudar a los clientes y clientes a usar citas virtuales con su organización.
+
+| Escenario | Descripción |
+| --- | --- |
+|[Ayude a sus clientes a usar citas virtuales](virtual-appointments-toolkit.md) |Infografías personalizables y preguntas frecuentes que puede agregar a su sitio web para facilitar a los clientes el uso de citas virtuales con su organización. |
+|[Ayudar a los trabajadores de primera línea a realizar un seguimiento del tiempo y la asistencia](shifts-toolkit.md) |Vídeos para ayudar a los administradores y empleados de primera línea a aprender a usar turnos en Microsoft Teams. |
+|[Ayuda a los trabajadores de primera línea a usar aplicaciones y características de colaboración](collab-features-apps-toolkit.md) |Vídeos para ayudar al equipo de primera línea a usar aplicaciones y características de Microsoft Teams. |
 
 ## <a name="more-scenarios-and-solutions-with-the-digital-ecosystem"></a>Más escenarios y soluciones con el ecosistema digital
 

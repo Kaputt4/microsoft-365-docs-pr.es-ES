@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: eeaa5c663d7f35a1a43f883953cd08c5aa1920aa
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893527"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329055"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparación de la posición de seguridad para el primer incidente
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender puede ayudar a abordar varios aspectos de la prevención 
 
 - Implementación de un marco [de Confianza cero](/security/zero-trust/)
 - Determinación de la posición de seguridad mediante la asignación de una puntuación con [puntuación segura de Microsoft](microsoft-secure-score.md)
-- Prevención de amenazas mediante evaluaciones de vulnerabilidades en [Administración de amenazas y vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Prevención de amenazas mediante evaluaciones de vulnerabilidades en [Defender Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Descripción de las amenazas de seguridad más recientes para que pueda prepararse para ellas con [el análisis de amenazas](threat-analytics.md)
 
 ## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementación de Confianza cero
@@ -51,7 +51,7 @@ Microsoft 365 Defender puede ayudar a abordar varios aspectos de la prevención 
 
 Los componentes de Microsoft 365 Defender pueden mostrar infracciones de las reglas que se han implementado para establecer directivas de acceso condicional para Confianza cero mediante la integración de datos de Microsoft Defender para punto de conexión  u otros proveedores de seguridad móviles como origen de información para las directivas de cumplimiento de dispositivos y la implementación de directivas de acceso condicional basadas en dispositivos.
 
-El riesgo del dispositivo influye directamente en qué recursos será accesible el usuario de ese dispositivo. La denegación de acceso a los recursos en función de determinados criterios es el tema principal de Confianza cero y Microsoft 365 Defender proporciona información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender puede proporcionar el nivel de versión de software de un dispositivo a través de la página Administración de amenazas y vulnerabilidades, mientras que las directivas de acceso condicional restringen los dispositivos que tienen versiones obsoletas o vulnerables.
+El riesgo del dispositivo influye directamente en qué recursos será accesible el usuario de ese dispositivo. La denegación de acceso a los recursos en función de determinados criterios es el tema principal de Confianza cero y Microsoft 365 Defender proporciona información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender puede proporcionar el nivel de versión de software de un dispositivo a través de la Administración de vulnerabilidades de Microsoft Defender, anteriormente conocida como página Administración de vulnerabilidades & amenazas, mientras que las directivas de acceso condicional restringen los dispositivos que tienen dispositivos obsoletos o vulnerables. Versiones.
 
 La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de Confianza cero, a la vez que reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender se pueden automatizar, como [acciones de corrección](m365d-autoir.md) (conocidas como investigaciones de un incidente en el portal de Microsoft 365 Defender), acciones de notificación e incluso la creación de vales de soporte técnico, como en [ServiceNow](https://microsoft.service-now.com/sp/).
 
@@ -65,7 +65,7 @@ A continuación, las organizaciones pueden usar la [Puntuación de seguridad de 
 
 La prevención de incidentes puede ayudar a simplificar los esfuerzos de las operaciones de seguridad para centrarse en incidentes de seguridad críticos e importantes. Las vulnerabilidades de software suelen ser un punto de entrada evitable para los ataques que pueden provocar el robo de datos, la pérdida de datos o la interrupción de las operaciones empresariales. Si no hay ataques en marcha, las operaciones de seguridad deben esforzarse por lograr y mantener un nivel aceptable de [exposición a vulnerabilidades](../defender-endpoint/tvm-exposure-score.md) en su organización.
 
-Para comprobar el progreso de la aplicación de revisiones de software, visite la página [Administración de amenazas y vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) de Defender para punto de conexión, a la que puede acceder desde Microsoft 365 Defender a través de la pestaña **Más recursos**.
+Para comprobar el progreso de la aplicación de revisiones de software, visite la página [Administración de vulnerabilidades de Microsoft Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) de Defender para punto de conexión, a la que puede acceder desde Microsoft 365 Defender a través de la pestaña **Más recursos**.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Página Amenazas y vulnerabilidades del portal de Microsoft 365 Defender" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
 

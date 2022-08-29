@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6438c7af3d3dbb8f4b2c19fdfdd04640cc8b4d2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174978"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para punto de conexión en Mac
 
@@ -49,7 +49,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 > [!TIP]
 > Si tiene algún comentario que le gustaría compartir, envíelo abriendo Microsoft Defender para punto de conexión en Mac en el dispositivo y navegando a **Ayuda** \> **para enviar comentarios**.
 
-Para obtener las características más recientes, incluidas las funcionalidades de versión preliminar (como detección y respuesta de puntos de conexión para los dispositivos Mac), configure el dispositivo macOS que ejecuta Microsoft Defender para punto de conexión para que sea un dispositivo "Insider".
+Para obtener las características más recientes, incluidas las funcionalidades de vista previa (como la detección de puntos de conexión y la respuesta para los dispositivos Mac), configure el dispositivo macOS que ejecuta Microsoft Defender para punto de conexión para que sea un dispositivo "Insider".
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Instalación de Microsoft Defender para punto de conexión en Mac
 
@@ -101,7 +101,7 @@ Microsoft Defender para punto de conexión en Mac requiere una de las siguientes
 
 > [!NOTE]
 > Los usuarios con licencia aptos pueden usar Microsoft Defender para punto de conexión en hasta cinco dispositivos simultáneos.
-> Microsoft Defender para punto de conexión también está disponible para su compra en un Proveedor de soluciones en la nube (CSP). Cuando se compra a través de un CSP, no requiere ofertas de licencias por volumen de Microsoft enumeradas.
+> Microsoft Defender para punto de conexión también está disponible para su compra desde un proveedor de soluciones en la nube (CSP). Cuando se compra a través de un CSP, no requiere ofertas de licencias por volumen de Microsoft enumeradas.
 
 ### <a name="configuring-exclusions"></a>Configuración de exclusiones
 
@@ -169,3 +169,4 @@ A partir de macOS 11 (Big Sur), Microsoft Defender para punto de conexión se ha
 
 - Para obtener más información sobre el registro, la desinstalación u otros temas, consulte [Recursos para Microsoft Defender para punto de conexión en Mac](mac-resources.md).
 - [Privacidad para Microsoft Defender para punto de conexión en Mac](mac-privacy.md).
+- [Activar la protección de red para macOS](network-protection-macos.md)

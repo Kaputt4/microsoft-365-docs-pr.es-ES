@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051192"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420992"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -46,7 +46,7 @@ La directiva de _entrega avanzada_ se usa en Microsoft 365 para evitar que se fi
 - [AIR y los clústeres de Defender para Office 365](office-365-air.md) omiten estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
   - [Administración envíos](admin-submission.md) genera una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administradores mostrará estos mensajes como una amenaza simulada.
-  - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad mediante el mensaje de informe [o los complementos de suplantación de identidad](enable-the-report-message-add-in.md) de informe, el sistema no generará una alerta, una investigación o un incidente. Los vínculos o archivos no se detonarán, pero el mensaje también se mostrará en la pestaña **Mensajes notificados** por el usuario de la página **Envíos** .
+  - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad mediante el mensaje de informe [o los complementos de suplantación de identidad](enable-the-report-message-add-in.md) de informe, el sistema no generará una alerta, una investigación o un incidente. Los vínculos o archivos no se detonarán, pero el mensaje aparecerá en la pestaña **Mensajes notificados** por el usuario de la página **Envíos** .
   - [Vínculos seguros en Defender para Office 365](safe-links.md) no bloquea ni detona las direcciones URL específicamente identificadas en estos mensajes en el momento de hacer clic. Las direcciones URL siguen encapsuladas, pero no se bloquean.
   - [Los datos adjuntos seguros de Defender para Office 365](safe-attachments.md) no detonan los datos adjuntos en estos mensajes.
 
@@ -66,7 +66,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Entrega avanzada** , abra <https://security.microsoft.com/advanceddelivery>.
 
-- Para conectarse a PowerShell de cumplimiento de & de seguridad, consulte [Conexión a PowerShell de cumplimiento de & de seguridad](/powershell/exchange/connect-to-scc-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener asignados permisos para poder realizar los procedimientos de este artículo:
   - Para crear, modificar o quitar la configuración configurada en la directiva de entrega avanzada, debe ser miembro del grupo de roles **Administrador de seguridad** en el **portal de Microsoft 365 Defender** y miembro del grupo de roles Administración de la **organización** en **Exchange Online**.
@@ -93,9 +93,23 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
      Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-4. Cuando haya terminado, haga clic en **Guardar**.
+4. Cuando haya terminado, haga clic en **Agregary**, a continuación, haga clic en **Cerrar**.
 
-Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buzón de SecOps** . Para realizar cambios, haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edite** en la pestaña .
+Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buzón de SecOps** .
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy"></a>Use el portal de Microsoft 365 Defender para modificar o quitar buzones de SecOps en la directiva de entrega avanzada.
+
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
+
+2. En la página **Entrega avanzada** , compruebe que la pestaña **Buzón de SecOps** está seleccionada y, a continuación, haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
+
+3. En el control flotante **Editar buzones de SecOps** que se abre, agregue o quite buzones como se describe en la sección anterior.
+
+   Para quitar todos los buzones de correo, haga clic en Quitar. ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto a cada valor hasta que no haya más buzones seleccionados.
+
+4. Cuando haya terminado, haga clic en **Guardar** y, a continuación, en **Cerrar**.
+
+Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buzón de SecOps** . Si ha quitado todas las entradas de buzón de SecOps, la lista estará vacía.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Uso del portal de Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
@@ -117,7 +131,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buz
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP CIDR: por ejemplo, 192.168.0.1/25.
 
-   - **Direcciones URL de simulación que se van a permitir**: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que formen parte de la campaña de simulación de suplantación de identidad (phishing) que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y, a continuación, presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, consulte [Sintaxis de dirección URL para la lista de permitidos o bloques de inquilinos](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Estas direcciones URL se encapsulan en el momento de hacer clic, pero no se bloquean.
+   - **Direcciones URL de simulación que se van a permitir**: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que formen parte de la campaña de simulación de suplantación de identidad (phishing) que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y, a continuación, presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, consulte [Sintaxis de dirección URL para la lista de permitidos o bloques de inquilinos](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list). Estas direcciones URL se encapsulan en el momento de hacer clic, pero no se bloquean.
 
    Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
@@ -129,27 +143,39 @@ Las entradas de buzón de SecOps que configuró se muestran en la pestaña **buz
    >   - Dominio DKIM.
    > - Al menos una **dirección IP de envío**.
    >
-   > Opcionalmente, puede incluir **direcciones URL de simulación para asegurarse** de que las direcciones URL de los mensajes de simulación no están bloqueadas.
+   > Opcionalmente, puede incluir **direcciones URL de simulación para asegurarse** de que las direcciones URL de los mensajes de simulación no estén bloqueadas.
+   >
    > Puede especificar hasta 10 entradas para cada campo.
+   >
    > Debe haber una coincidencia en al menos un **dominio** y una **dirección IP de envío**, pero no se mantiene ninguna asociación entre los valores.
 
-4. Cuando haya terminado, realice uno de los pasos siguientes:
-   - **Primera vez**: haga clic en **Agregary**, a continuación, haga clic en **Cerrar**.
-   - **Editar existente**: haga clic en **Guardar** y, a continuación, haga clic en **Cerrar**.
+4. Cuando haya terminado, haga clic en **Agregary**, a continuación, haga clic en **Cerrar**.
 
-Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de identidad (Phishing).** Para realizar cambios, haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edite** en la pestaña .
+Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de identidad (Phishing).**
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Uso del portal de Microsoft 365 Defender para modificar o quitar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas de amenazas**  \> de reglas \> **Entrega avanzada** en la sección **Reglas**. Para ir directamente a la página **Entrega avanzada** , use <https://security.microsoft.com/advanceddelivery>.
+
+2. En la página **Entrega avanzada** , seleccione la pestaña **Simulación de suplantación de identidad** y, a continuación, haga clic en ![el icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
+
+3. En el control flotante **Editar simulación de suplantación de identidad de terceros** que se abre, se agregan o quitan entradas para **dominio**, **dirección IP de envío** y **direcciones URL de simulación** , como se describe en la sección anterior.
+
+   Para quitar todas las entradas, haga clic en Quitar. ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto a cada valor hasta que no haya más dominios, direcciones IP o direcciones URL seleccionados.
+
+4. Cuando haya terminado, haga clic en **Guardar** y, a continuación, en **Cerrar**.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Escenarios adicionales que requieren omisión de filtrado
 
-Además de los dos escenarios con los que la directiva de entrega avanzada puede ayudarle, hay otros escenarios que pueden requerir la omisión del filtrado:
+Además de los dos escenarios con los que la directiva de entrega avanzada puede ayudarle, hay otros escenarios en los que es posible que tenga que omitir el filtrado:
 
 - **Filtros de terceros**: si el registro MX del dominio _no_ apunta a Office 365 (los mensajes se enrutan primero a otro lugar), [seguro de forma predeterminada](secure-by-default.md) _no está disponible_. Si desea agregar protección, deberá habilitar el filtrado mejorado para conectores (también conocido como _omitir lista_). Para obtener más información, consulte [Administración del flujo de correo mediante un servicio en la nube de terceros con Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). Si no desea el filtrado mejorado para conectores, use reglas de flujo de correo (también conocidas como reglas de transporte) para omitir el filtrado de Microsoft para los mensajes que ya se han evaluado mediante el filtrado de terceros. Para obtener más información, consulte [Uso de reglas de flujo de correo para establecer la SCL en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 - **Falsos positivos en revisión**: es posible que quiera permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos de administradores](admin-submission.md) informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, _**se recomienda encarecidamente**_ que estas asignaciones sean temporales.
 
-## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell de cumplimiento de & seguridad para buzones de SecOps en la directiva de entrega avanzada
+## <a name="powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell para buzones de SecOps en la directiva de entrega avanzada
 
-En Security & Compliance PowerShell, los elementos básicos de los buzones de SecOps en la directiva de entrega avanzada son:
+En PowerShell, los elementos básicos de los buzones de SecOps en la directiva de entrega avanzada son:
 
 - **Directiva de invalidación de SecOps**: controlada por los **\*cmdlets -SecOpsOverridePolicy** .
 - **Regla de invalidación de SecOps**: controlada por los **\*cmdlets -SecOpsOverrideRule** .
@@ -169,7 +195,7 @@ La configuración de un buzón de SecOps en la directiva de entrega avanzada en 
 
 #### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>Paso 1: Uso de PowerShell para crear la directiva de invalidación de SecOps
 
-Para crear la directiva de invalidación de SecOps, use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
@@ -188,7 +214,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 #### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>Paso 2: Uso de PowerShell para crear la regla de invalidación de SecOps
 
-En este ejemplo se crea la regla de buzón de SecOps con la configuración especificada.
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), ejecute el siguiente comando:
 
 ```powershell
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
@@ -201,7 +227,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-view-the-secops-override-policy"></a>Uso de PowerShell para ver la directiva de invalidación de SecOps
 
-En este ejemplo se devuelve información detallada sobre la directiva de buzón de uno y solo SecOps.
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se devuelve información detallada sobre la directiva de buzón de Uno y solo SecOps.
 
 ```powershell
 Get-SecOpsOverridePolicy
@@ -211,7 +237,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-view-secops-override-rules"></a>Uso de PowerShell para ver las reglas de invalidación de SecOps
 
-En este ejemplo se devuelve información detallada sobre las reglas de invalidación de SecOps.
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), este ejemplo devuelve información detallada sobre las reglas de invalidación de SecOps.
 
 ```powershell
 Get-SecOpsOverrideRule
@@ -231,7 +257,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>Uso de PowerShell para modificar la directiva de invalidación de SecOps
 
-Para modificar la directiva de invalidación de SecOps, use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
@@ -256,7 +282,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-remove-the-secops-override-policy"></a>Uso de PowerShell para quitar la directiva de invalidación de SecOps
 
-En este ejemplo se quita la directiva de buzón de SecOps y la regla correspondiente.
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se quita la directiva de buzón de SecOps y la regla correspondiente.
 
 ```powershell
 Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
@@ -266,7 +292,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-remove-secops-override-rules"></a>Uso de PowerShell para quitar reglas de invalidación de SecOps
 
-Para quitar una regla de invalidación de SecOps, use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Remove-SecOpsOverrideRule -Identity <RuleIdentity>
@@ -280,9 +306,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, consulte [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell de cumplimiento de & seguridad para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+## <a name="powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedimientos de PowerShell para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-En Security & Compliance PowerShell, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
+En PowerShell, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
 
 - **Directiva de invalidación de simulación de suplantación de identidad**: controlada por los **\*cmdlets -PhishSimOverridePolicy** .
 - **Regla de invalidación de simulación de suplantación de identidad**: controlada por los **\*cmdlets -PhishSimOverrideRule** .
@@ -307,7 +333,7 @@ La configuración de una simulación de suplantación de identidad de terceros e
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Paso 1: Uso de PowerShell para crear la directiva de invalidación de simulación de suplantación de identidad
 
-En este ejemplo se crea la directiva de invalidación de simulación de suplantación de identidad (phishing).
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se crea la directiva de invalidación de simulación de phishing.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -319,7 +345,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>Paso 2: Uso de PowerShell para crear la regla de invalidación de simulación de suplantación de identidad
 
-Utilice la siguiente sintaxis:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -343,13 +369,13 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 #### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>Paso 3: (Opcional) Uso de PowerShell para identificar las direcciones URL de simulación de suplantación de identidad para permitir
 
-Utilice la siguiente sintaxis:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-Para obtener más información sobre la sintaxis de dirección URL, consulte [Sintaxis de direcciones URL para la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+Para obtener más información sobre la sintaxis de dirección URL, consulte [Sintaxis de direcciones URL para la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list).
 
 En este ejemplo se agrega una entrada de permiso de dirección URL para la dirección URL de simulación de suplantación de identidad de terceros especificada sin expiración.
 
@@ -361,7 +387,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Uso de PowerShell para ver la directiva de invalidación de simulación de suplantación de identidad
 
-En este ejemplo se devuelve información detallada sobre la única directiva de invalidación de simulación de suplantación de identidad (phishing).
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), este ejemplo devuelve información detallada sobre la única directiva de invalidación de simulación de suplantación de identidad (phishing).
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -371,7 +397,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Uso de PowerShell para ver las reglas de invalidación de simulación de suplantación de identidad
 
-En este ejemplo se devuelve información detallada sobre las reglas de invalidación de simulación de suplantación de identidad (phishing).
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), este ejemplo devuelve información detallada sobre las reglas de invalidación de simulación de suplantación de identidad (phishing).
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -391,7 +417,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>Uso de PowerShell para ver las entradas de url de simulación de suplantación de identidad permitidas
 
-Para ver las direcciones URL de simulación de suplantación de identidad permitidas, ejecute el siguiente comando:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), ejecute el siguiente comando:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
@@ -401,7 +427,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ge
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Uso de PowerShell para modificar la directiva de invalidación de simulación de suplantación de identidad
 
-Para modificar la directiva de invalidación de simulación de suplantación de identidad (phishing), use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -417,7 +443,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Uso de PowerShell para modificar las reglas de invalidación de simulación de suplantación de identidad
 
-Para modificar la regla de invalidación de simulación de suplantación de identidad (phishing), use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -440,7 +466,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 No se pueden modificar los valores de dirección URL directamente. Puede [quitar las entradas de dirección URL existentes](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) y [agregar nuevas entradas de dirección URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) , como se describe en este artículo.
 
-Para modificar otras propiedades de una entrada url de simulación de suplantación de identidad permitida (por ejemplo, la fecha de expiración o los comentarios), use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), para modificar otras propiedades de una entrada url de simulación de suplantación de identidad permitida (por ejemplo, la fecha de expiración o los comentarios), use la sintaxis siguiente:
 
 ```powershell
 Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
@@ -458,7 +484,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Se
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Uso de PowerShell para quitar una directiva de invalidación de simulación de suplantación de identidad
 
-En este ejemplo se quita la directiva de invalidación de simulación de suplantación de identidad (phishing) y la regla correspondiente.
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se quita la directiva de invalidación de simulación de suplantación de identidad (phishing) y la regla correspondiente.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -468,7 +494,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Uso de PowerShell para quitar reglas de invalidación de simulación de suplantación de identidad
 
-Para quitar una regla de invalidación de simulación de suplantación de identidad (phishing), use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>
@@ -484,7 +510,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>Uso de PowerShell para quitar las entradas de url de simulación de suplantación de identidad permitidas
 
-Para quitar una entrada de dirección URL de simulación de suplantación de identidad existente, use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery

@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 01a88ff4f31e6a85c9fe6c52ee3968def1cc4ce1
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 3facbf62dcc6fc572ea46322c8969b4af2dcd68e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276380"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329011"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configuración y administración de funcionalidades de Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
@@ -46,7 +47,7 @@ Póngase en contacto con el equipo de su cuenta o con el representante de Micros
 
 ## <a name="apply-for-endpoint-attack-notifications-service"></a>Solicitud para el servicio de notificaciones de ataque de punto de conexión
 
-Si ya tiene Pertahanan Microsoft untuk Titik Akhir y Microsoft 365 Defender, puede solicitar notificaciones de ataque de punto de conexión a través del portal de Microsoft 365 Defender.  Las notificaciones de ataque de punto de conexión le conceden información y análisis especiales para ayudar a identificar las amenazas más críticas para su organización, de modo que pueda responder a ellas rápidamente.
+Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender, puede solicitar notificaciones de ataque de punto de conexión a través del portal de Microsoft 365 Defender.  Las notificaciones de ataque de punto de conexión le conceden información y análisis especiales para ayudar a identificar las amenazas más críticas para su organización, de modo que pueda responder a ellas rápidamente.
 
 1. En el panel de navegación, vaya a **Configuración > puntos de conexión > General > Características avanzadas > Notificaciones de ataque de punto de conexión**.
 
@@ -96,7 +97,7 @@ Puede filtrar los incidentes y las alertas si solo quiere ver las notificaciones
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a Expertos en amenazas de Microsoft: expertos a petición
 
-Si ya es un cliente Pertahanan Microsoft untuk Titik Akhir, puede ponerse en contacto con su representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft expertos a petición.
+Si ya es un cliente Microsoft Defender para punto de conexión, puede ponerse en contacto con su representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft - Expertos a petición.
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades sospechosas de ciberseguridad en su organización.
 

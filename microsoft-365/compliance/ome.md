@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de su organización.
-ms.openlocfilehash: 746a1cbb1d4fa5e98fb3fc3cbba529232178987c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640574"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427122"
 ---
 # <a name="message-encryption"></a>Cifrado de mensajes
 
@@ -38,7 +38,7 @@ El resto de este artículo se aplica a la Cifrado de mensajes de Microsoft Purvi
 
 Cifrado de mensajes de Microsoft Purview es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS) que forma parte de Azure Information Protection. Este servicio incluye directivas de cifrado, identidad y autorización para ayudar a proteger el correo electrónico. Puede cifrar los mensajes mediante plantillas de administración de derechos, la [opción No reenviar](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) y la [opción de solo cifrado](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-A continuación, los usuarios pueden cifrar mensajes de correo electrónico y varios datos adjuntos mediante estas opciones. Para obtener una lista completa de los tipos de datos adjuntos admitidos, consulte ["Tipos de archivo cubiertos por directivas IRM cuando se adjuntan a mensajes" en Introducción a IRM para mensajes de correo electrónico](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
+A continuación, los usuarios pueden cifrar mensajes de correo electrónico y varios datos adjuntos mediante estas opciones. Para obtener una lista completa de los tipos de datos adjuntos admitidos, consulte ["Tipos de archivo cubiertos por directivas de IRM cuando se adjuntan a mensajes" en Introducción a IRM para mensajes de correo electrónico](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
 
 Como administrador, también puede definir reglas de flujo de correo para aplicar esta protección. Por ejemplo, puede crear una regla que requiera el cifrado de todos los mensajes dirigidos a un destinatario específico, o que contenga palabras específicas en la línea de asunto, y también especificar que los destinatarios no puedan copiar ni imprimir el contenido del mensaje.
 
@@ -48,11 +48,11 @@ Para obtener una lista detallada de las diferencias entre la versión anterior d
 
 Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de enviarlo. Todos los usuarios finales de Microsoft 365 que usan clientes de Outlook para leer correo reciben experiencias de lectura nativas de primera clase para el correo cifrado y protegido con derechos, incluso si no están en la misma organización que el remitente. Los clientes de Outlook compatibles incluyen escritorio de Outlook, Outlook Mac, Outlook mobile en iOS y Android, y Outlook en la Web (anteriormente conocido como Outlook Web App).
 
-Los destinatarios de mensajes cifrados que reciben correo cifrado o protegido por derechos enviados a sus cuentas de Outlook.com, Gmail y Yahoo reciben un correo contenedor que los dirige al Portal de OME, donde pueden autenticarse fácilmente con una cuenta de Microsoft, Gmail o credenciales de Yahoo.
+Los destinatarios de mensajes cifrados que reciben correo cifrado o protegido por derechos enviados a sus cuentas de Outlook.com, Gmail y Yahoo reciben un correo contenedor que los dirige al portal de mensajes cifrados, donde pueden autenticarse fácilmente con una cuenta de Microsoft, Gmail o credenciales de Yahoo.
 
-Los usuarios finales que leen correo cifrado o protegido por derechos en clientes distintos de Outlook también usan el portal de OME para ver los mensajes cifrados y protegidos por derechos que reciben.
+Los usuarios finales que leen correo cifrado o protegido por derechos en clientes distintos de Outlook también usan el portal de mensajes cifrados para ver los mensajes cifrados y protegidos por derechos que reciben.
 
-Si el remitente del correo protegido está en GCC High y el destinatario está fuera de GCC High, incluidos los usuarios comerciales, Outlook.com usuarios y usuarios de otros proveedores de correo electrónico como Gmail, el destinatario recibe un correo contenedor. El correo contenedor dirige al destinatario al portal de OME, donde el destinatario puede leer y responder al mensaje. De lo contrario, si el remitente y el destinatario están en el entorno de GCC High, incluso si no están en la misma organización, los destinatarios que usan clientes de Outlook para leer el correo reciben experiencias de lectura nativas de primera clase para el correo cifrado y protegido por derechos. Para obtener más información sobre la experiencia diferente en GCC High, consulte [Comparación de versiones de OME](ome-version-comparison.md).
+Si el remitente del correo protegido está en GCC High y el destinatario está fuera de GCC High, incluidos los usuarios comerciales, Outlook.com usuarios y usuarios de otros proveedores de correo electrónico como Gmail, el destinatario recibe un correo contenedor. El correo contenedor dirige al destinatario al portal de mensajes cifrados donde el destinatario puede leer y responder al mensaje. De lo contrario, si el remitente y el destinatario están en el entorno de GCC High, incluso si no están en la misma organización, los destinatarios que usan clientes de Outlook para leer el correo reciben experiencias de lectura nativas de primera clase para el correo cifrado y protegido por derechos. Para obtener más información sobre la experiencia diferente en GCC High, consulte [Comparación de versiones de OME](ome-version-comparison.md).
 
 Para obtener más información sobre los límites de tamaño de los mensajes y los datos adjuntos que puede cifrar mediante OME, consulte [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
@@ -68,7 +68,7 @@ La revocación y expiración de mensajes solo funcionan para los correos electr�
 
 Una manera de habilitar Cifrado de mensajes de Microsoft Purview es que los administradores de Exchange Online y Exchange Online Protection definan reglas de flujo de correo. Estas reglas determinan en qué condiciones se deben cifrar los mensajes de correo electrónico. Cuando se establece una acción de cifrado para una regla, los mensajes que coincidan con las condiciones de regla se cifran antes de que se envíen.
 
-Las reglas de flujo de correo son flexibles, lo que le permite combinar condiciones para que pueda cumplir requisitos de seguridad específicos en una sola regla. Por ejemplo, puede crear una regla para cifrar todos los mensajes que contienen palabras clave especificadas y que se dirigen a destinatarios externos. Cifrado de mensajes de Microsoft Purview también cifrar las respuestas de los destinatarios del correo electrónico cifrado.
+Las reglas de flujo de correo son flexibles, lo que le permite combinar condiciones para que pueda cumplir requisitos de seguridad específicos en una sola regla. Por ejemplo, puede crear una regla para cifrar todos los mensajes que contienen palabras clave especificadas y que se dirigen a destinatarios externos. Cifrado de mensajes de Microsoft Purview también cifra las respuestas de los destinatarios del correo electrónico cifrado.
 
 Para obtener más información sobre cómo crear reglas de flujo de correo para aprovechar las ventajas de Cifrado de mensajes de Microsoft Purview, consulte [Definición de reglas de flujo de correo para cifrar mensajes de correo electrónico](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -80,7 +80,7 @@ Si está listo para empezar a usar Cifrado de mensajes de Microsoft Purview dent
 
 Con Cifrado de mensajes de Microsoft Purview, los usuarios pueden enviar correo electrónico cifrado desde Outlook y Outlook en la Web. Además, los administradores pueden configurar reglas de flujo de correo en Microsoft 365 para cifrar automáticamente los correos electrónicos en función de la coincidencia de palabras clave u otras condiciones.
 
-Los destinatarios de mensajes cifrados que se encuentren en organizaciones podrán leer esos mensajes sin problemas en cualquier versión de Outlook, incluido Outlook para PC, Outlook para Mac, Outlook en la Web, Outlook para iOS y Outlook para Android. Los usuarios que reciben mensajes cifrados en otros clientes de correo electrónico pueden ver los mensajes en el portal de OME.
+Los destinatarios de mensajes cifrados que se encuentren en organizaciones podrán leer esos mensajes sin problemas en cualquier versión de Outlook, incluido Outlook para PC, Outlook para Mac, Outlook en la Web, Outlook para iOS y Outlook para Android. Los usuarios que reciben mensajes cifrados en otros clientes de correo electrónico pueden ver los mensajes en el portal de mensajes cifrados.
 
 Para obtener instrucciones detalladas sobre cómo enviar y ver mensajes cifrados, eche un vistazo a estos artículos.
 

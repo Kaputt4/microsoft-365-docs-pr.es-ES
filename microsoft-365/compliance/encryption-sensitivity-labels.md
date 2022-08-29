@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
-ms.translationtype: HT
+ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970238"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434381"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -91,7 +91,7 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 
 4.  En la página **Cifrado**, seleccione una de las siguientes opciones:
     
-    - **Quitar el cifrado del archivo (si lo tiene)**: esta opción solo es compatible con el cliente de etiquetas unificado de Azure Information Protection. Si selecciona esta opción y usa etiquetas integradas, es posible que la etiqueta no se muestre en las aplicaciones o que se muestre, pero no se realicen cambios de cifrado.
+    - **Quite el cifrado si el archivo o el correo electrónico están cifrados**: esta opción solo es compatible con azure Information Protection cliente de etiquetado unificado. Si selecciona esta opción y usa etiquetas integradas, es posible que la etiqueta no se muestre en las aplicaciones o que se muestre, pero no se realicen cambios de cifrado.
         
         Para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied) Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
     
@@ -102,6 +102,9 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
         Las instrucciones para estas opciones de configuración están en la sección [Establecer la configuración de cifrado](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qué sucede con el cifrado existente al aplicar una etiqueta
+
+> [!NOTE]
+> La opción **Quitar cifrado si el archivo o correo electrónico está cifrado solo es** compatible con Azure Information Protection cliente de etiquetado unificado. Puede lograr el mismo efecto para los correos electrónicos mediante la [configuración de una regla de flujo de correo](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption).
 
 Si se aplica una etiqueta de confidencialidad a contenido sin cifrar, el resultado de las opciones de cifrado que puede seleccionar se explica por sí mismo. Por ejemplo, si no ha seleccionado **Cifrar archivos y mensajes de correo electrónico**, el contenido permanecerá sin cifrar.
 

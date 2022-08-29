@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106457"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432296"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -30,6 +30,30 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
+
+## <a name="august-2022"></a>Agosto de 2022
+
+### <a name="view-and-manage-inactive-user-accounts"></a>Visualización y administración de cuentas de usuario inactivas 
+
+Microsoft 365 Lighthouse ahora proporciona una lista de todas las cuentas de usuario inactivas de los inquilinos administrados. Para acceder a la lista, seleccione **Usuarios** > **inactivos en** el panel de navegación izquierdo de Microsoft 365 Lighthouse. Puede reducir los riesgos de seguridad mediante esta lista para realizar un seguimiento y limpiar las cuentas que todavía están habilitadas, pero que no se han usado en los últimos seis meses. 
+
+### <a name="microsoft-edge-policy-deployment"></a>Implementación de directivas de Microsoft Edge   
+
+Hemos agregado una tarea de implementación de directivas de Microsoft Edge a la línea base predeterminada. Esta tarea de implementación le permite proteger los exploradores del inquilino del cliente con la configuración de seguridad de Edge, que incluye protección integrada contra phishing y malware. Microsoft Edge ha demostrado ser más seguro que Google Chromium para pequeñas y medianas empresas con dispositivos que ejecutan Windows 10 o posterior.
+
+Para obtener más información, consulte [Seguridad de Microsoft Edge para su empresa](/deployedge/ms-edge-security-for-business).
+
+### <a name="deployment-status-reporting"></a>Informes de estado de implementación 
+
+Microsoft 365 Lighthouse ahora proporciona un estado de implementación para cada plan de implementación para ayudarle a optimizar y priorizar los esfuerzos de implementación en consecuencia.
+
+### <a name="enhanced-deployment-insights-for-licensing"></a>Información de implementación mejorada para licencias
+
+Microsoft 365 Lighthouse ahora proporciona información sobre qué tareas de implementación no se pueden completar para qué usuarios debido a licencias insuficientes. Estas conclusiones le ayudan a ajustar las licencias o el plan de implementación en consecuencia para completar el plan de implementación.
+
+### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>Implementación de línea base mejorada con vínculos directos a configuraciones existentes
+
+Hemos mejorado la experiencia de implementación de línea base para que sea más rápido y fácil garantizar que los inquilinos de los clientes estén en buen estado y sean seguros. Hemos agregado vínculos a configuraciones de inquilino de clientes detectadas, para que pueda encontrar, revisar y modificar fácilmente estas configuraciones de inquilino en el portal de administración aplicable.
 
 ## <a name="july-2022"></a>Julio de 2022
 
@@ -83,7 +107,7 @@ Hemos rediseñado el panel de detalles del usuario para incluir más informació
 
 ### <a name="delegated-access-type-and-roles-on-tenants-page"></a>Tipo de acceso delegado y roles en la página Inquilinos
 
-Hemos actualizado la página Inquilinos para mostrar el tipo de acceso delegado del proveedor de servicios **administrados** (MSP) (None, DAP, GDAP o Ambos DAP & GDAP) por cliente en la columna **Acceso delegado** . También hemos agregado una nueva columna titulada **Sus roles** que enumera los roles DAP y GDAP por cliente para un usuario que ha iniciado sesión. Estas dos mejoras en la página **Inquilinos** facilitarán a los técnicos de asociados comprender qué tipos de permisos administrativos delegados están disponibles para cada cliente y qué roles delegados se les han concedido explícitamente.
+Hemos actualizado la página Inquilinos para mostrar el tipo de acceso delegado del proveedor de servicios **administrados** (MSP) (None, DAP, GDAP o Ambos DAP & GDAP) por cliente en la columna **Acceso delegado** . También hemos agregado una nueva columna titulada **Sus roles** que enumera los roles DAP y GDAP por cliente para un usuario que ha iniciado sesión. Estas dos mejoras en la página **Inquilinos** facilitarán a los técnicos de MSP comprender qué tipos de permisos administrativos delegados están disponibles para cada cliente y qué roles delegados se les han concedido explícitamente.
 
 Para más información, consulte [Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 

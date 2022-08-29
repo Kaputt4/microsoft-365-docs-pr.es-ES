@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/24/2022
 ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: fd1871d6902fa7d39a755ea8d7d857baabff2413
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894912"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433452"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft Business Premium
 
@@ -61,12 +61,11 @@ Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un 
 
 4. Siga los pasos del asistente para [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) a fin de verificar que es el propietario del dominio. Si conoce el host de dominio, consulte [Agregar un dominio a Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-5. Si su proveedor de hospedaje es GoDaddy u otro host habilitado con conexión de dominio, el proceso es sencillo y se le pedirá automáticamente que inicie sesión y que permita que Microsoft autentique en su nombre.
+5. Si el proveedor de hospedaje es GoDaddy u otro host habilitado con la conexión de dominio, se le pedirá que inicie sesión y deje que Microsoft se autentique automáticamente en su nombre.
 
 ## <a name="onboard-and-protect-devices"></a>Incorporación y protección de dispositivos
 
-> [!NOTE]
-> La capacidad de incorporar puntos de conexión que ejecutan Windows Server o Linux Server está ahora en versión preliminar. Consulte [Incorporación de dispositivos a Microsoft Defender para empresas](../security/defender-business/mdb-onboard-devices.md).
+Microsoft 365 Empresa Premium incluye Defender para empresas, una nueva solución de seguridad para proteger los dispositivos. Consulte [Incorporación de dispositivos a Microsoft Defender para empresas](../security/defender-business/mdb-onboard-devices.md).
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
@@ -76,11 +75,11 @@ Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un 
 
 4. [Revisar las directivas de seguridad](../security/defender-business/mdb-configure-security-settings.md).
 
-## <a name="use-office-apps-on-devices"></a>Usar aplicaciones de Office en dispositivos
+## <a name="use-microsoft-365-apps-on-devices"></a>Uso de Aplicaciones Microsoft 365 en dispositivos
 
-1. En primer lugar, tendrá que [instalar Office](m365bp-install-office-apps.md).
+1. En primer lugar, tendrá que [instalar Aplicaciones Microsoft 365](m365bp-install-office-apps.md).
 
-2. Vaya a office.com e [inicie sesión](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+2. Vaya a [https://office.com](https://office.com) e inicie sesión. (Vea [Introducción en Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804)).
 
 3. Crear un documento de Office, como un [documento de Word](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 
@@ -92,12 +91,13 @@ Al probar o comprar Microsoft 365 Empresa Premium, tiene la opción de usar un 
 
 2. Dedique algo de tiempo a [familiarizarse con el portal](../security/defender-business/mdb-get-started.md).
 
-3. Ahora, [evalúe su posición de seguridad](../security/defender/microsoft-secure-score.md).
+3. Ahora, [evalúe su posición de seguridad](../security/defender/microsoft-secure-score.md) y vea cómo puede mejorar la puntuación.
 
-4. Familiarícese con [cómo responder ante un incidente de seguridad](../security/defender-business/mdb-respond-mitigate-threats.md).
+4. Obtenga información sobre cómo [responder a un incidente de seguridad](../security/defender-business/mdb-respond-mitigate-threats.md).
 
 5. Por último, [revise las acciones de corrección](../security/defender-business/mdb-review-remediation-actions.md).
 
 ## <a name="see-also"></a>Consulte también
 
-- [Microsoft 365 Empresa Premium &mdash;, ciberseguridad para pequeñas empresas](index.md)
+- [Microsoft 365 Empresa Premium: ciberseguridad para pequeñas empresas](index.md)
+- [¿Qué es Microsoft Defender para Empresas?](../security/defender-business/mdb-overview.md)

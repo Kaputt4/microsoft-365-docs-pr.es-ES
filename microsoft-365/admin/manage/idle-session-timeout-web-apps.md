@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Establezca cuánto tiempo durará la sesión del usuario en Microsoft 365 antes de que se agote el tiempo de espera.
-ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019931"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420098"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Tiempo de espera de sesión inactiva para Microsoft 365
 
@@ -76,12 +76,17 @@ Cuando un usuario ha estado inactivo en aplicaciones web de Microsoft 365 durant
 - Los usuarios deben estar inactivos en todas las pestañas de aplicaciones web de Microsoft 365 durante la duración configurada. Si el usuario está activo en una pestaña (por ejemplo, OWA) mientras está inactivo en otra pestaña (por ejemplo, SPO), se considerará activo y no se iniciará sesión.  
 
 - En estos casos, los usuarios no podrán iniciar sesión.
-    - Si obtienen el inicio de sesión único (SSO) en la aplicación web desde la cuenta unida al dispositivo o si selecciona **Mantener la sesión iniciada** en el momento del inicio de sesión. Para obtener más información sobre cómo ocultar esta opción para su organización, consulte [Agregar personalización de marca a la página de inicio de sesión de su organización](/azure/active-directory/fundamentals/customize-branding).
-    - Si están en un dispositivo administrado (uno que es compatible o unido a un dominio) y usa un explorador compatible como Microsoft Edge o Google Chrome (con la [extensión Cuentas de Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Para que esta característica se desencadene en un dispositivo no administrado, se requiere una suscripción de Azure AD Premium P1 o P2 apta y una directiva de acceso condicional específica. Consulte a continuación para obtener más detalles.
+    - Si obtienen el inicio de sesión único (SSO) en la aplicación web desde la cuenta unida al dispositivo.
+    - Si seleccionaron **Mantener la sesión iniciada** en el momento del inicio de sesión. Para obtener más información sobre cómo ocultar esta opción para su organización, consulte [Agregar personalización de marca a la página de inicio de sesión de su organización](/azure/active-directory/fundamentals/customize-branding).
+    - Si están en un dispositivo administrado (uno que es compatible o unido a un dominio) y usa un explorador compatible como Microsoft Edge o Google Chrome (con la [extensión Cuentas de Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
+
+## <a name="trigger-idle-session-timeout-only-on-unmanaged-devices"></a>Desencadenar el tiempo de espera de sesión inactiva solo en dispositivos no administrados
+
+De forma predeterminada, la característica de tiempo de espera de sesión inactiva se desencadena en todos los tipos de dispositivo si se cumplen las otras condiciones. Para que esta característica se desencadene solo en un dispositivo no administrado, se requiere una suscripción de Azure AD Premium P1 o P2 válida. También tendrá que agregar una directiva de acceso condicional en el Centro de administración de Azure AD.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Tiempo de espera de sesión inactiva en dispositivos no administrados  
 
-Para que el tiempo de espera de la sesión inactiva se desencadene en dispositivos no administrados, deberá agregar una directiva de acceso condicional en el Centro de administración de Azure AD.
+Para que el tiempo de espera de la sesión inactiva se desencadene solo en dispositivos no administrados, deberá agregar una directiva de acceso condicional en el Centro de administración de Azure AD.
 
 1. En el **acceso condicional | Página Directivas** del Centro de administración de Azure AD, seleccione **Nueva directiva** y escriba un nombre para la directiva.
 
@@ -95,7 +100,7 @@ Para que el tiempo de espera de la sesión inactiva se desencadene en dispositiv
 
 6. Active la directiva y seleccione **Crear**.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>¿Hay algún explorador o escenario de explorador en el que la característica de tiempo de espera de sesión inactiva no funcione?  
 

@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0d9a0104e601b31448b586e3958df0c8d17cad7e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ce2c8da70b2fa6908518fc2f7d9489a2fdf578cd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998813"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405736"
 ---
 # <a name="shifts-for-frontline-workers"></a>Turnos para trabajadores de primera línea
 
@@ -47,7 +47,7 @@ Use los siguientes recursos para ayudarse a configurar y administrar turnos en s
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Administrar turnos](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenga información sobre cómo administrar turnos para su organización.         |
+|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Administrar turnos](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenga información general sobre cómo administrar turnos para su organización. Obtenga información sobre cómo controlar el acceso a turnos, anclar turnos a la barra de aplicaciones de Teams para facilitar el acceso, habilitar etiquetas basadas en turnos, etc. |
 |<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Administrar propietarios de programación para la administración de turnos](schedule-owner-for-shift-management.md)** Esta característica le permite elevar los permisos de un miembro del equipo a un propietario de programación sin convertir al empleado en propietario del equipo.         |
 |<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Preguntas más frecuentes sobre datos de turnos](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenga información sobre dónde se almacenan los datos de Turnos y otros temas relacionados con los datos de Turnos, lo que incluye retención, recuperación y cifrado.        |
 

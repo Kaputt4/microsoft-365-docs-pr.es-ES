@@ -18,12 +18,12 @@ ms.custom:
 description: La cadena de recepción autenticada (ARC) es la autenticación del correo electrónico que intenta preservar los resultados de la autenticación a través de los dispositivos y cualquier flujo de correo indirecto que se interponga entre el remitente y el destinatario. Aquí se muestra cómo realizar excepciones para los remitentes ARC de confianza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: c6845fd9137029ebebd031550e145aef8ffc1440
+ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306644"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423745"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Crear una lista de remitentes ARC de confianza para confiar en los flujos de correo indirectos *legítimos* 
 
@@ -37,7 +37,7 @@ Los mecanismos de autenticación de los correos electrónicos como [SPF](set-up-
 
 ## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Cadena de recepción autenticada (ARC) en Microsoft 365 Defender para Office
 
-Los servicios que modifican el contenido durante el transporte del mensaje antes de la entrega a la organización pueden invalidar la firma de correo electrónico DKIM y afectar a la autenticación del mensaje. Cuando estos servicios intermedios, realizan tales acciones, pueden utilizar ARC para proporcionar detalles de la autenticación original antes de que se produzcan las modificaciones, que su organización puede entonces confiar para ayudar con la autenticación del mensaje.  
+Los servicios que modifican el contenido del mensaje en tránsito antes de la entrega a su organización pueden invalidar las firmas de correo electrónico DKIM y afectar a la autenticación del mensaje. Cuando estos servicios intermediarios realizan estas acciones, pueden usar ARC para proporcionar detalles de la autenticación original antes de que se produjeran las modificaciones. Su organización puede confiar en estos detalles para ayudar a autenticar el mensaje.  
 
 **Los selladores ARC de confianza permiten a los administradores agregar una lista de intermediarios de *confianza* en el portal de Microsoft 365 Defender.** Los selladores ARC de confianza permiten a Microsoft respetar las firmas ARC de estos intermediarios de confianza, lo que impide que estos mensajes legítimos produzcan errores en la cadena de autenticación.
 

@@ -24,12 +24,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748483"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384544"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender capacidades de respuesta a incidentes en un entorno piloto
 
@@ -157,7 +157,7 @@ Hay un único buzón interno y dispositivo necesarios para esta simulación. Tam
 
     b. Unir el dispositivo de prueba al dominio de prueba.
 
-    c. [Active Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Active antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar el Antivirus de Microsoft Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Incorporación a Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -177,7 +177,7 @@ Hay un único buzón interno y dispositivo necesarios para esta simulación. Tam
 
    1. Seleccione **Query > New (Consultar > nuevo).**
 
-   1. En Grupos **de correo electrónico** en **Búsqueda avanzada**, haga doble clic en **EmailEvents**. Debería ver esto en la ventana de consulta.
+   1. En el **Email** grupos en **Búsqueda avanzada**, haga doble clic en **EmailEvents**. Debería ver esto en la ventana de consulta.
 
       ```console
       EmailEvents

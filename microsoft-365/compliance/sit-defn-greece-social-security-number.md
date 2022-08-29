@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de seguro social (AMKA) de Grecia.
-ms.openlocfilehash: c28819240da0fe67a93f848502a9f274fc7f9229
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f7f313987f647efcb066ac95d64e8aeaec2fa44e
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000217"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369837"
 ---
 # <a name="greece-social-security-number-amka"></a>Número de la seguridad social de Grecia (AMKA)
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -78,9 +70,9 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 
 ### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
-- Ssn
-- Ssn #
-- seguridad social no
+- ssn
+- númeroseguridadsocial#
+- nro. seguridad social
 - socialsecurityno #
 - social security number
 - Amka

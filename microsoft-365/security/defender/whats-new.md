@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106983"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405628"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -46,6 +46,7 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 ## <a name="august-2022"></a>Agosto de 2022
 - (GA) [Expertos de Microsoft Defender para la búsqueda](defender-experts-for-hunting.md) ya está disponible con carácter general. Si es un cliente Microsoft 365 Defender con un sólido centro de operaciones de seguridad, pero quiere que Microsoft le ayude a buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad mediante datos de Microsoft Defender, obtenga más información sobre cómo aplicar, configurar y usar el servicio. Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender.
+- (versión preliminar) [El modo guiado](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) ya está disponible para la versión preliminar pública en la búsqueda avanzada. Los analistas ahora pueden empezar a consultar su base de datos en busca de puntos de conexión, identidades, correo electrónico & colaboración y datos de aplicaciones en la nube *sin conocer Lenguaje de consulta Kusto (KQL).*  El modo guiado cuenta con un estilo de bloque de creación sencillo y fácil de usar de construir consultas a través de menús desplegables que contienen filtros y condiciones disponibles. Consulte [Introducción al generador de consultas](advanced-hunting-query-builder.md).
 
 ## <a name="july-2022"></a>Julio de 2022
 - (versión preliminar) Los participantes de la versión preliminar pública de Microsoft Defender Experts for Hunting ahora pueden esperar recibir informes mensuales para ayudarles a comprender las amenazas que el servicio de búsqueda anunció en su entorno, junto con las alertas generadas por sus productos de Microsoft 365 Defender. Para obtener más información, consulte [Descripción del informe de expertos de Defender para la búsqueda en Microsoft 365 Defender](defender-experts-report.md).

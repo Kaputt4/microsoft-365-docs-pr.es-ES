@@ -1,7 +1,7 @@
 ---
-title: Obtener API de incidentes
-description: Obtenga información sobre cómo usar la API Obtener incidentes para obtener un único incidente en Microsoft 365 Defender.
-keywords: apis, api de gráficos, api admitidas, get, file, hash
+title: Obtención de la API de incidentes
+description: Obtenga información sobre cómo usar la API Get incidents para obtener un único incidente en Microsoft 365 Defender.
+keywords: api, graph api, api admitidas, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,16 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+MS.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 8861dc3752d2c4cc798bc83475f6a51f8245191a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: af54daf82ca8f4fbd50c5aaeafd4482f2ce6b0ca
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159059"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329099"
 ---
-# <a name="get-incident-information-api"></a>Obtener API de información de incidentes
+# <a name="get-incident-information-api"></a>Obtención de la API de información de incidentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,25 +42,25 @@ Recupera un incidente específico por su identificador
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API.
+Se requiere uno de los permisos siguientes para llamar a esta API.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Aplicación|Incident.Read.All|'Leer todos los incidentes'
-Aplicación|Incident.ReadWrite.All|'Leer y escribir todos los incidentes'
-Delegado (cuenta profesional o educativa)|Incident.Read|'Leer incidentes'
-Delegado (cuenta profesional o educativa)|Incident.ReadWrite|'Leer y escribir incidentes'
+Application|Incident.Read.All|"Leer todos los incidentes"
+Application|Incident.ReadWrite.All|"Leer y escribir todos los incidentes"
+Delegado (cuenta profesional o educativa)|Incident.Read|"Leer incidentes"
+Delegado (cuenta profesional o educativa)|Incident.ReadWrite|"Incidentes de lectura y escritura"
 
 > [!NOTE]
 >
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: 'Ver datos'
-> - La respuesta solo incluirá incidentes a los que el usuario esté expuesto
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos".
+> - La respuesta solo incluirá los incidentes a los que está expuesto el usuario.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -74,14 +74,14 @@ Nombre|Tipo|Descripción
 ---|---|---
 Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok y la entidad incident en el cuerpo de la respuesta.
-Si no se encontró un incidente con el identificador especificado: 404 No encontrado.
+Si se ejecuta correctamente, este método devuelve 200 OK y la entidad incident en el cuerpo de la respuesta.
+Si no se encontró el incidente con el identificador especificado: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

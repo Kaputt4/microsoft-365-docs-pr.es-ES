@@ -22,16 +22,16 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 446b82d668041a476d748956008002c42a92a7f3
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: c342dd6a3e33c77b2c6b729ac389b7ea979b0fb7
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435465"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385823"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
 - **Información de la inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos durante los últimos 7 días, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
-- **Permitir o bloquear remitentes a los que se les ha suplantado la identidad en la lista de permitidos y bloqueados del espacio empresarial**: al invalidar el veredicto en la información de inteligencia contra la suplantación de identidad, el remitente a que se la ha suplantado la identidad se convierte en una entrada manual de permitido o bloqueado que solo aparece en la pestaña **Suplantación de identidad** en la lista de permitidos o bloqueados del espacio empresarial. También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
+- **Permitir o bloquear remitentes suplantados en la lista de permitidos o bloqueados** de inquilinos: al invalidar el veredicto en la información de inteligencia de suplantación de identidad, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña **Remitentes suplantados de la lista de permitidos o bloqueados de inquilinos** . También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](manage-tenant-allow-block-list.md).
 
 - **Directivas contra el phishing**: En EOP y Microsoft Defender para Office 365, las directivas contra el phishing contienen las siguientes opciones de configuración contra suplantación de identidad:
   - Activar o desactivar la inteligencia contra la suplantación de identidad.
@@ -166,9 +166,9 @@ Para ayudar a que los mensajes de la lista de distribución de correo pasen las 
 
     Cuando hay suficientes remitentes que responden a los propietarios de dominios pidiéndoles que configuren los registros de autenticación de correo electrónico, es más probable que tomen medidas. Aunque Microsoft también trabaja con los propietarios de dominios para publicar los registros necesarios, es aún más efectivo cuando los usuarios individuales lo solicitan.
 
-  - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a sus administradores que configuren reemplazos tal y como se describe en [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md) y [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md).
+  - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a sus administradores que configuren reemplazos tal y como se describe en [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md) y [Administrar la lista de permitidos o bloqueados del espacio empresarial](manage-tenant-allow-block-list.md).
 
-  - Use la lista de Permitir/Bloquear inquilinos para invalidar que la lista de distribución de correo la trate como legítima. Para obtener más información, vea [Agregar permisos en la lista Permitir/Bloquear inquilinos](manage-tenant-allows.md).
+  - Use la lista de Permitir/Bloquear inquilinos para invalidar que la lista de distribución de correo la trate como legítima. Para obtener más información, consulte [Creación de entradas permitidas para remitentes suplantados](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders).
 
 Si todos los demás falla, puede notificar el mensaje como falso positivo a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 

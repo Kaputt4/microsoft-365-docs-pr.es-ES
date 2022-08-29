@@ -11,24 +11,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los administradores pueden aprender a crear y administrar cargas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
+description: Los administradores pueden aprender a crear y administrar cargas de Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f763bc7c0fc47e845beabedfe6eff4968338934
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621301"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408449"
 ---
-# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Cargas en el entrenamiento de simulación de ataques en Defender para Office 365
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Cargas en Entrenamiento de simulación de ataque en Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En Entrenamiento de simulación de ataques, una _carga_ es el mensaje de correo electrónico de suplantación de identidad (phishing) y vínculos o contenido adjunto que se presentan a los usuarios en simulaciones. El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 ofrece un sólido catálogo de cargas integradas para las técnicas de ingeniería social disponibles. Sin embargo, es posible que quiera crear cargas personalizadas que funcionen mejor para su organización.
+En Entrenamiento de simulación de ataque, una _carga útil_ es el mensaje de correo electrónico de suplantación de identidad (phishing) y los vínculos o contenido adjunto que se presentan a los usuarios en simulaciones. Entrenamiento de simulación de ataque en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 ofrece un sólido catálogo de cargas integradas para las técnicas de ingeniería social disponibles. Sin embargo, es posible que quiera crear cargas personalizadas que funcionen mejor para su organización.
 
-Para ver las cargas disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a correo **electrónico &** pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de colaboración \> y, a continuación, seleccione **Cargas.** Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Cargas útiles**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Para ver las cargas disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & pestaña \> **De colaboración** \> **Entrenamiento de simulación de ataque** \> **biblioteca de contenido simulación** y, a continuación, seleccione **Cargas útiles**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Cargas útiles**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Las cargas de** la pestaña **Biblioteca de contenido de simulación** tienen dos pestañas:
 
@@ -42,7 +42,7 @@ Se muestra la siguiente información para cada carga:
 - **Idioma**: si la carga contiene varias traducciones, los dos primeros idiomas se muestran directamente. Para ver los idiomas restantes, mantenga el puntero sobre el icono numérico (por ejemplo, **+10**).
 - **Origen**: en el caso de las cargas integradas, el valor es **Global**. En el caso de las cargas personalizadas, el valor es **Tenant**.
 - **Simulaciones iniciadas**: el número de simulaciones iniciadas que usan la carga útil.
-- **Tasa de riesgo (%)**: en el caso de las cargas integradas, este valor es la tasa de riesgo promedio prevista para las simulaciones de entrenamiento de simulación de ataques que usan el mismo tipo de carga en todas las demás organizaciones de Microsoft 365.
+- **Tasa de riesgo (%)**: en el caso de las cargas integradas, este valor es la tasa de compromiso media prevista para las simulaciones de Entrenamiento de simulación de ataque que usan el mismo tipo de carga en todas las demás organizaciones de Microsoft 365.
 - **Creado por**: para cargas integradas, el valor es **Microsoft**. En el caso de las cargas personalizadas, el valor es el UPN del usuario que creó la carga.
 - **Última modificación**
 - **Técnica**: Una de las [técnicas de ingeniería social](attack-simulation-training.md#select-a-social-engineering-technique) disponibles:
@@ -51,6 +51,7 @@ Se muestra la siguiente información para cada carga:
   - **Vínculo en datos adjuntos**
   - **Vínculo a malware**
   - **Dirección URL de unidad por**
+  - **Concesión de consentimiento de OAuth**
 - **Estado**: el valor es **Listo** o **Borrador**. En la pestaña **Cargas globales** , el valor siempre está **listo**.
 
 Para buscar una carga en la lista, use el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** para buscar el nombre de la carga.
@@ -66,7 +67,7 @@ Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) para fi
 - **Evento actual**: **Sí** o **No**.
 - **Polémico**: **Sí** o **No**.
 
-Para quitar una o varias columnas que se muestran, haga clic en ![el icono Personalizar columnas.](../../media/m365-cc-sc-customize-icon.png) **Personalizar columnas**. De forma predeterminada, la única columna que no se muestra es **Plataforma** y ese valor es actualmente siempre **Correo electrónico**.
+Para quitar una o varias columnas que se muestran, haga clic en ![el icono Personalizar columnas.](../../media/m365-cc-sc-customize-icon.png) **Personalizar columnas**. De forma predeterminada, la única columna que no se muestra es **Plataforma** y ese valor siempre está **Email**.
 
 Al seleccionar una carga de la lista, aparece un control flotante de detalles con la siguiente información:
 
@@ -87,25 +88,25 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
   - **Nombre de la simulación**
   - **Tasa de clics**
   - **Tasa en peligro**
-  - **Acción**
+  - **Action**
 
 ## <a name="create-payloads"></a>Creación de cargas útiles
 
 > [!NOTE]
 > Ciertas marcas comerciales, logotipos, símbolos, insignias y otros identificadores de origen reciben una protección mayor en virtud de leyes y leyes locales, estatales y federales. El uso no autorizado de dichos indicadores puede someter a los usuarios a sanciones, incluidas las multas penales. Aunque no es una lista extensa, esto incluye los sellos presidencial, vicepresidencial y del Congreso, la CIA, el FBI, el Seguro Social, Medicare y Medicaid, el Servicio de Ingresos Internos de Estados Unidos y los Juegos Olímpicos. Más allá de estas categorías de marcas comerciales, el uso y la modificación de cualquier marca comercial de terceros conlleva una cantidad inherente de riesgo. El uso de sus propias marcas comerciales y logotipos en una carga sería menos arriesgado, especialmente cuando su organización permite el uso. Si tiene más preguntas sobre lo que es o no es adecuado usar al crear o configurar una carga, debe consultar con sus asesores legales.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de colaboración \> **. Pestaña Cargas útiles** \> De **inquilino** pestaña. Para ir directamente a la pestaña **Biblioteca de contenido de simulación**, donde puede seleccionar **Cargas útiles** y la pestaña **Cargas de inquilino**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & pestaña De colaboración** \> **Entrenamiento de simulación de ataque** \> biblioteca \> de **contenido de simulación** **Cargas de inquilino pestaña Cargas útiles**\>. Para ir directamente a la pestaña **Biblioteca de contenido de simulación**, donde puede seleccionar **Cargas útiles** y la pestaña **Cargas de inquilino**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
    Haga clic en ![el icono Crear una carga.](../../media/m365-cc-sc-create-icon.png) **Cree una carga** en la pestaña **Cargas de inquilino en** **Cargas** para iniciar el Asistente para crear carga.
 
-   ![Cree una carga en la pestaña Cargas de inquilino en Cargas en el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
+   ![Cree una carga en la pestaña Cargas de inquilino en Cargas en Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
    > ![Cree un icono de carga.](../../media/m365-cc-sc-create-icon.png) **La creación de una carga** también está disponible en el paso **Seleccionar carga y página de inicio de sesión** del Asistente para la creación de simulación. Para obtener más información, vea [Crear una simulación: Seleccionar una carga y una página de inicio de sesión](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > En cualquier momento durante el asistente para la creación, puede hacer clic en **Guardar y cerrar** para guardar el progreso y seguir configurando la carga más adelante. Para seleccionar dónde lo dejó, seleccione la notificación en la pestaña **Cargas de inquilino en** **Cargas útiles** y, a continuación, haga clic en ![el icono Editar carga útil.](../../media/m365-cc-sc-edit-icon.png) **Edite la carga útil**. La carga parcialmente completada tendrá el valor **Estado** **Borrador**.
 
-2. En la página **Seleccionar tipo** , el único valor que puede seleccionar actualmente es **Correo electrónico**.
+2. En la página **Seleccionar tipo**, el único valor que puede seleccionar actualmente es **Email**.
 
    Haga clic en **Siguiente**.
 
@@ -116,8 +117,9 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
    - **Vínculo en datos adjuntos**
    - **Vínculo a malware**
    - **Dirección URL de unidad por**
+   - **Concesión de consentimiento de OAuth**
 
-   Para obtener más información, consulte [Simulación de un ataque de suplantación de identidad con entrenamiento de simulación de ataques en Defender para Office 365](attack-simulation-training.md).
+   Para obtener más información, consulte [Simulación de un ataque de suplantación de identidad con Entrenamiento de simulación de ataque en Defender para Office 365](attack-simulation-training.md).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -135,6 +137,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
      - **Use el nombre como nombre para mostrar**: de forma predeterminada, esta configuración no está seleccionada.
      - **Desde el correo electrónico**: si elige una dirección de correo electrónico interna para el remitente de la carga, parecerá que la carga procederá de un compañero empleado. Esta dirección de correo electrónico del remitente aumentará la susceptibilidad de un usuario a la carga útil y ayudará a educar a los empleados sobre el riesgo de amenazas internas.
      - **Asunto del correo electrónico**
+     - **Agregar etiqueta externa al correo electrónico**: de forma predeterminada, esta configuración no está seleccionada.
 
    - **Sección detalles de datos adjuntos** : esta sección solo está disponible si seleccionó **Datos adjuntos de malware**, **Vínculo a datos adjuntos** o **Vínculo a malware** en la página **Seleccionar técnica** . Configure las siguientes opciones:
      - **Asignar un nombre a los datos adjuntos**
@@ -144,9 +147,9 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
      Más adelante, insertará la dirección URL en el cuerpo del mensaje.
 
-   - Sección **de vínculo de phishing**: esta sección solo está disponible si seleccionó **Cosecha de credenciales**, **Vínculo en datos adjuntos** o **Dirección URL de unidad por** en la página **Seleccionar técnica**.
+   - Sección **de vínculo de phishing**: esta sección solo está disponible si seleccionó **Cosecha de credenciales**, **Vínculo en datos adjuntos**, **Dirección URL de unidad por** o **Concesión de consentimiento de OAuth** en la página **Seleccionar técnica**.
 
-     Para **la recopilación de credenciales** o la **dirección URL de unidad por**, el nombre del cuadro es **Seleccionar una dirección URL que quiera que sea el vínculo de suplantación de identidad**. Más adelante, insertará la dirección URL en el cuerpo del mensaje.
+     Para **la recopilación de credenciales**, la **dirección URL de drive-by** o la **concesión de consentimiento de OAuth**, el nombre del cuadro es **Seleccionar una dirección URL que quiera que sea el vínculo de suplantación de identidad**. Más adelante, insertará la dirección URL en el cuerpo del mensaje.
 
      En **Vínculo en datos adjuntos**, el nombre del cuadro es **Seleccionar una dirección URL en este archivo adjunto que desea que sea el vínculo de suplantación de identidad**. Más adelante, insertará la dirección URL en los datos adjuntos.
 
@@ -202,7 +205,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
    - **Sección idioma** : seleccione el idioma de la carga. Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** u **otro**.
 
-   - **Sección de mensaje de correo electrónico** :
+   - **Email sección del mensaje**:
 
      - Puede hacer clic en **Importar correo electrónico** y, a continuación, **elegir archivo** para importar un archivo de mensaje de texto sin formato existente.
 
@@ -220,9 +223,9 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
          - **Insertar ciudad**: el valor que se agrega en el cuerpo del mensaje es `${city}`.
          - **Insertar fecha**: el valor que se agrega en el cuerpo del mensaje es `${date|MM/dd/yyyy|offset}`.
 
-         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="La sección Mensaje de correo electrónico de la página Configurar carga útil del Asistente para la creación de carga en Entrenamiento de simulación de ataques en Microsoft Defender para Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
+         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="La sección Email mensaje de la página Configurar carga útil del Asistente para la creación de cargas en Entrenamiento de simulación de ataque en Microsoft Defender para Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
-       - **Control de vínculo de suplantación de identidad** : este control solo está disponible si seleccionó **Recopilación de credenciales**, **Vínculo en datos adjuntos** o **Dirección URL de unidad por** en la página **Seleccionar técnica** . Use este control para asignar un nombre e insertar la dirección URL que seleccionó anteriormente en la sección **Vínculo de phishing** .
+       - **Control de vínculo de phishing** : este control solo está disponible si seleccionó **Recopilación de credenciales**, **Vínculo en datos adjuntos**, **Dirección URL de unidad por** o **Concesión de consentimiento de OAuth** en la página **Seleccionar técnica** . Use este control para asignar un nombre e insertar la dirección URL que seleccionó anteriormente en la sección **Vínculo de phishing** .
 
        - **Control de vínculo de datos adjuntos de malware** : este control solo está disponible si seleccionó **Vincular a malware** en la página **Seleccionar técnica** . Use este control para asignar un nombre e insertar la dirección URL que seleccionó anteriormente en la sección **Vínculo para datos adjuntos** .
 
@@ -232,11 +235,11 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
      - En la pestaña **Código** , puede ver y modificar el código HTML directamente. El formato y otros controles como **la etiqueta dinámica** y el **vínculo phishing** o **el vínculo de datos adjuntos de malware** no están disponibles.
 
-     - El botón **Reemplazar todos los vínculos del mensaje de correo electrónico con el botón** de alternancia de vínculo de suplantación de identidad solo está disponible si seleccionó **Cosecha de credenciales**, **Vínculo a malware** o **Dirección URL de unidad por** en la página **Seleccionar técnica** . Este botón de alternancia puede ahorrar tiempo reemplazando todos los vínculos del mensaje por el **vínculo phishing** seleccionado anteriormente o vínculo para la dirección URL **de datos adjuntos** . Para ello, cambie la configuración a En el ![icono Alternar en .](../../media/scc-toggle-on.png)
+     - El botón **Reemplazar todos los vínculos del mensaje de correo electrónico con el botón** de alternancia de vínculo de suplantación de identidad solo está disponible si seleccionó **Recopilación de credenciales**, **Vínculo a malware**, **Dirección URL de unidad** o **Concesión de consentimiento de OAuth** en la página **Seleccionar técnica** . Este botón de alternancia puede ahorrar tiempo reemplazando todos los vínculos del mensaje por el **vínculo phishing** seleccionado anteriormente o vínculo para la dirección URL **de datos adjuntos** . Para ello, cambie la configuración a En el ![icono Alternar en .](../../media/scc-toggle-on.png)
 
    Cuando termine, haga clic en **Siguiente**.
 
-6. La página **Agregar indicadores** solo está disponible si seleccionó **Cosecha de credenciales**, **Vínculo en datos adjuntos** o **Dirección URL de unidad por** en la página **Seleccionar técnica** .
+6. La página **Agregar indicadores** solo está disponible si seleccionó **Cosecha de credenciales**, **Vínculo en datos adjuntos**, **Dirección URL de unidad** o **Concesión de consentimiento de OAuth** en la página **Seleccionar técnica** .
 
    Los indicadores ayudan a los empleados a identificar los signos de los mensajes de phishing.
 
@@ -250,7 +253,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
      |---|---|
      |**Tipo de datos adjuntos**|Cuerpo del mensaje|
      |**Detalles que distraen**|Cuerpo del mensaje|
-     |**Suplantación de dominio**|Cuerpo del mensaje <p> Desde la dirección de correo electrónico|
+     |**Suplantación de dominio**|Cuerpo del mensaje <br/><br/> Desde la dirección de correo electrónico|
      |**Saludo genérico**|Cuerpo del mensaje|
      |**Llamamientos humanitarios**|Cuerpo del mensaje|
      |**Inconsistencia**|Cuerpo del mensaje|
@@ -262,11 +265,11 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
      |**Personalización de marca mínima o nula**|Cuerpo del mensaje|
      |**Se hace pasar por amigo, compañero, supervisor o figura de autoridad**|Cuerpo del mensaje|
      |**Solicitud de información confidencial**|Cuerpo del mensaje|
-     |**Indicadores e iconos de seguridad**|Cuerpo del mensaje <p> Asunto de mensaje|
-     |**Nombre para mostrar del remitente y dirección de correo electrónico**|Nombre De <p> Desde la dirección de correo electrónico|
-     |**Sentido de urgencia**|Cuerpo del mensaje <p> Asunto de mensaje|
-     |**Errores ortográficos y gramaticales**|Cuerpo del mensaje <p> Asunto de mensaje|
-     |**Lenguaje amenazante**|Cuerpo del mensaje <p> Asunto de mensaje|
+     |**Indicadores e iconos de seguridad**|Cuerpo del mensaje <br/><br/> Asunto de mensaje|
+     |**Nombre para mostrar del remitente y dirección de correo electrónico**|Nombre De <br/><br/> Desde la dirección de correo electrónico|
+     |**Sentido de urgencia**|Cuerpo del mensaje <br/><br/> Asunto de mensaje|
+     |**Errores ortográficos y gramaticales**|Cuerpo del mensaje <br/><br/> Asunto de mensaje|
+     |**Lenguaje amenazante**|Cuerpo del mensaje <br/><br/> Asunto de mensaje|
      |**Demasiado bueno para ser verdaderas ofertas**|Cuerpo del mensaje|
      |**Diseño o formato de aspecto no profesional**|Cuerpo del mensaje|
      |**Hipervínculo de dirección URL**|Cuerpo del mensaje|
@@ -276,7 +279,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
      Si selecciona el asunto del mensaje de correo electrónico o el cuerpo del mensaje como la ubicación del indicador, aparece un botón **Seleccionar texto** . Haga clic en este botón para seleccionar el texto del asunto del mensaje o el cuerpo del mensaje donde desea que aparezca el indicador. Cuando haya terminado, haga clic en **Seleccionar**.
 
-     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Ubicación de texto seleccionada en el cuerpo del mensaje que se va a agregar a un indicador en el Asistente para la creación de cargas en el entrenamiento de simulación de ataques" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
+     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Ubicación de texto seleccionada en el cuerpo del mensaje que se va a agregar a un indicador en el Asistente para la creación de cargas en Entrenamiento de simulación de ataque" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
      - **Descripción del indicador**: puede aceptar la descripción predeterminada del indicador o puede personalizarlo.
 
@@ -290,7 +293,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
    - Para editar un indicador existente, selecciónelo en la lista y, a continuación, haga clic en ![el icono Editar indicador.](../../media/m365-cc-sc-edit-icon.png) **Editar indicador**.
 
-   - Para eliminar un indicador existente, selecciónelo de la lista y haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - Para eliminar un indicador existente, selecciónelo de la lista y haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
    - Para mover los indicadores hacia arriba o hacia abajo en la lista, seleccione el indicador de la lista y, a continuación, haga clic en ![el icono Subir.](../../media/m365-cc-sc-increase-icon.png) **Icono Subir** o ![Bajar.](../../media/m365-cc-sc-decrease-icon.png) **Muévete hacia abajo**.
 
@@ -306,7 +309,7 @@ Al seleccionar una carga de la lista, aparece un control flotante de detalles co
 
    Cuando haya terminado, haga clic en **Enviar**. En la página de confirmación que aparece, haga clic en **Listo**.
 
-   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="La página Revisar carga útil del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
+   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="La página Revisar carga útil de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 ## <a name="modify-payloads"></a>Modificación de cargas
 

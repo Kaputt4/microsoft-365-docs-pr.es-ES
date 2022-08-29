@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios, como el correo electrónico y Skype Empresarial Online, usen su propio nombre de dominio.
-ms.openlocfilehash: e33bfad12c3785e95ca328c4f0e82ab640d549d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fecd9a5171586eb61a96be7f8d4f1f6a422d212e
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085957"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406176"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominios
 
@@ -183,9 +183,9 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
 1. Seleccione **Agregar registro**.
 2. En el panel **Agregar un registro DNS personalizado** , en la lista desplegable **Tipo** , seleccione **CNAME (Alias).**.
 3. En el cuadro **Nombre de host o Alias** , escriba **www**.
-4. En el cuadro **Puntos a dirección** , escriba el nombre de dominio completo (FQDN) del sitio web. Por ejemplo, **contoso.5om**.
+4. En el cuadro **Puntos a dirección** , escriba el nombre de dominio completo (FQDN) del sitio web. Por ejemplo, **contoso.com**.
 5. Si desea cambiar la configuración de TTL para el registro, seleccione una nueva longitud de tiempo en la lista desplegable **TTL** . De lo contrario, continúe con el paso 6.
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 Una vez actualizados los registros nameserver para que apunten a Microsoft, se completa la configuración del dominio. Email se enruta a Microsoft y el tráfico a la dirección del sitio web continúa a su host del sitio web actual."
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: 93f71e38e3063aeec0c423dbfea25ac463a3e46f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641568"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432339"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 
@@ -31,9 +31,9 @@ Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad 
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Conceptos básicos de TLS para Microsoft 365 y Exchange Online
 
-TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza a Capa de sockets seguros (SSL) y a menudo se conoce como SSL 3.1. Exchange Online usa TLS para cifrar las conexiones entre los servidores de Exchange y las conexiones entre los servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS, ese mensaje no se cifra necesariamente. TLS no cifra el mensaje, solo la conexión.
+TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza a Capa de sockets seguros (SSL) y a menudo se conoce como SSL 3.1. Exchange Online usa TLS para cifrar las conexiones entre los servidores de Exchange y las conexiones entre los servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS a una organización de destinatarios que no admite el cifrado TLS, ese mensaje no se cifra necesariamente. TLS no cifra el mensaje, solo la conexión.
   
-Si desea cifrar el mensaje, use una tecnología de cifrado que cifre el contenido del mensaje. Por ejemplo, puede usar Cifrado de mensajes de Microsoft Purview o S/MIME. Consulte [Cifrado de correo electrónico en Office 365](email-encryption.md) y [Cifrado de](ome.md) mensajes para obtener información sobre el cifrado de mensajes en Office 365.
+Si desea cifrar el mensaje, use una tecnología de cifrado que cifre el contenido del mensaje. Por ejemplo, puede usar Cifrado de mensajes de Microsoft Purview o S/MIME. Consulte [Email cifrado en Office 365](email-encryption.md) y [Cifrado](ome.md) de mensajes para obtener información sobre el cifrado de mensajes en Office 365.
   
 Use TLS en situaciones en las que quiera configurar un canal seguro de correspondencia entre Microsoft y su organización local u otra organización, como un asociado. Exchange Online siempre intenta usar TLS primero para proteger el correo electrónico, pero no puede hacerlo si la otra parte no ofrece seguridad TLS. Siga leyendo para obtener información sobre cómo proteger todo el correo que va a los servidores locales o a asociados importantes con *conectores*.
 

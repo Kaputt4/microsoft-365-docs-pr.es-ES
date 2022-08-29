@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los registros de acceso están disponibles para los mensajes cifrados recuperados a través del portal de mensajes cifrados.
-ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fe45757eb6ca89f55a1b796d3752b1e3bcb1b89b
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942638"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420840"
 ---
 # <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Registro de actividad del portal de mensajes cifrado por Cifrado avanzado de mensajes de Microsoft Purview
 
@@ -29,7 +29,7 @@ Los registros de acceso están disponibles para los mensajes encriptados a trav�
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>Habilitación de registros de auditoría de acceso a mensajes en PowerShell
 
-El registro de acceso se puede habilitar mediante Exchange Online PowerShell. El parámetro *-EnablePortalTrackingLogs* de Set-IrmConfiguration especifica si se deben habilitar los registros de auditoría de acceso al portal de mensajes cifrados. Los valores admitidos son:
+El registro de acceso se puede habilitar mediante [Exchange Online módulo de PowerShell V2](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). El parámetro *-EnablePortalTrackingLogs* de Set-IrmConfiguration especifica si se deben habilitar los registros de auditoría de acceso al portal de mensajes cifrados. Los valores admitidos son:
 
 - $true: Activar la característica de auditoría.
 - $false: Desactivar la característica de auditoría

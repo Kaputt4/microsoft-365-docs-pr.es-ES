@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6da9ec9f0d59d04d61d4a957f5a914b06b140fac
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: ecc62eb22f60a13d249374f1d00896ad0e1693ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099225"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328725"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -201,6 +201,9 @@ Para crear una regla de supresión para las alertas:
     Sin embargo, para aplicar la regla en cualquier tipo de alerta que cumpla las condiciones de regla, seleccione **Cualquier tipo de alerta en función de las condiciones de IOC**.
  
     Los IOC son indicadores como archivos, procesos, tareas programadas y otros tipos de evidencia que desencadenan la alerta.
+    
+    > [!NOTE]
+    > Ya no puede suprimir una alerta desencadenada por el origen de "detección personalizada". No se puede crear una regla de supresión para esta alerta.
      
 3. En la sección **IOC** , seleccione **Any IOC (Cualquier IOC** ) para suprimir la alerta, independientemente de la "evidencia" que haya causado la alerta. 
 
@@ -218,9 +221,9 @@ Para crear una regla de supresión para las alertas:
 
     3. Puede editar o eliminar propiedades de esta "evidencia" según sus necesidades (con caracteres comodín, cuando se admiten).
 
-    4. Aparte de los archivos y procesos, el script de AMSI, el evento WMI y las tareas programadas son algunos de los tipos de evidencia recién agregados que puede seleccionar en la lista desplegable tipos de evidencia.
+    4. Aparte de los archivos y procesos, el script de la Interfaz de examen de AntiMalware (AMSI), el evento instrumental de administración de Windows (WMI) y las tareas programadas son algunos de los tipos de evidencia recién agregados que puede seleccionar en la lista desplegable Tipos de evidencia.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Captura de pantalla de otros tipos de pruebas." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. Para agregar otro IOC, haga clic en **Agregar filtro**. 
     > [!NOTE]
     > Es necesario agregar al menos un IOC a la condición de regla para suprimir cualquier tipo de alerta.
@@ -248,8 +251,11 @@ Las IOC que se seleccionaron en las condiciones de supresión se seleccionarán 
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Captura de pantalla de la creación correcta de reglas de supresión. ":::
 
 8.  La nueva funcionalidad de alerta de supresión está disponible de forma predeterminada. <br> Sin embargo, puede volver a la experiencia anterior en Microsoft 365 Defender portal; para ello, vaya a **Configuración > Puntos de conexión > Supresión de alertas** y desactive el botón de alternancia **Nueva creación de reglas de supresión habilitada**. 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Captura de pantalla de alternancia para activar o desactivar la característica de creación de reglas de supresión.":::
+    > [!NOTE]
+    > Pronto, solo estará disponible la nueva experiencia de supresión de alertas. No podrá volver a la experiencia anterior.
 
 9.  **Editar reglas existentes:** <br> Siempre puede agregar o cambiar las condiciones de regla y el ámbito de las reglas nuevas o existentes en el portal de Microsoft Defender; para ello, seleccione la regla pertinente y haga clic en **Editar regla**.    
     Para editar las reglas existentes, asegúrese de que el botón de alternancia **Nueva creación de reglas de supresión habilitada** esté habilitado.         
@@ -291,7 +297,7 @@ Vea este breve vídeo para obtener información sobre cómo funciona la automati
 
 Según sea necesario para incidentes en proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de bienestar social de Nueva Zelanda.
-ms.openlocfilehash: 9885956e7011f2c52a8b78d4e03822f8201c1b3a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2bb68114bf2c6a175827f7ac33b48b8c1f240ba3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000334"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368507"
 ---
 # <a name="new-zealand-social-welfare-number"></a>Número de seguridad social de Nueva Zelanda
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

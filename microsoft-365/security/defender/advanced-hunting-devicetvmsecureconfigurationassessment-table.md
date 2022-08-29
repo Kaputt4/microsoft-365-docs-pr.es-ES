@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceTvmSecureConfigurationAssessmentKB en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos de evaluación de seguridad en la tabla DeviceTvmSecureConfigurationAssessment del esquema de búsqueda avanzado. Estos eventos proporcionan información del dispositivo, detalles de configuración de seguridad, impacto e información de cumplimiento.
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, amenaza & administración de vulnerabilidades, TVM, administración de dispositivos, configuración de seguridad, DeviceTvmSecureConfigurationAssessment
+description: Obtenga información sobre los eventos de evaluación de seguridad en la tabla DeviceTvmSecureConfigurationAssessment del esquema de búsqueda avanzada. Estos eventos proporcionan información del dispositivo, detalles de configuración de seguridad, impacto e información de cumplimiento.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b3d5fdfb79d814855f119abb42593a6066d6019a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530708"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329451"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -34,14 +34,13 @@ ms.locfileid: "61530708"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
+Cada fila de la `DeviceTvmSecureConfigurationAssessment` tabla contiene un evento de evaluación para una configuración de seguridad específica de [Administración de vulnerabilidades de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Utilice esta referencia para comprobar los últimos resultados de la evaluación y determinar si los dispositivos son compatibles.
 
-Cada una de las filas de la tabla `DeviceTvmSecureConfigurationAssessment`contiene un evento de evaluación para una configuración de seguridad específica de la administración de [amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Utilice esta referencia para comprobar los últimos resultados de la evaluación y determinar si los dispositivos son compatibles.
-
-Puede unir esta tabla a la tabla [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) con el fin de poder, por ejemplo, ver la descripción de texto de la configuración desde la columna de la tabla, en los resultados de la evaluación de `ConfigurationId` `ConfigurationDescription` `DeviceTvmSecureConfigurationAssessmentKB` configuración.
+Puede combinar esta tabla con la tabla [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) mediante `ConfigurationId` para, por ejemplo, ver la descripción del texto de la configuración desde la `ConfigurationDescription` columna de la `DeviceTvmSecureConfigurationAssessmentKB` tabla, en los resultados de la evaluación de la configuración.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `DeviceId` | `string` | Identificador único del dispositivo en el servicio |
 | `DeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo |
@@ -49,14 +48,14 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | `datetime` | Fecha y hora en que se generó el registro |
 | `ConfigurationId` | `string` | Identificador único para una configuración específica |
 | `ConfigurationCategory` | `string` | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
-| `ConfigurationSubcategory` | `string` | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, la cadena describe funciones o características específicas. |
+| `ConfigurationSubcategory` | `string` | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, la cadena describe funcionalidades o características específicas. |
 | `ConfigurationImpact` | `string` | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | `boolean` | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | `boolean` | Indica si la configuración o directiva se aplica al dispositivo |
-| `Context` | `string` | Información contextual adicional sobre la configuración o la directiva |
-| `IsExpectedUserImpact` | `boolean` | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
+| `IsApplicable` | `boolean` | Indica si la configuración o directiva se aplica al dispositivo. |
+| `Context` | `string` | Información contextual adicional sobre la configuración o directiva |
+| `IsExpectedUserImpact` | `boolean` | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva. |
 
-Puede probar esta consulta de ejemplo para devolver información sobre dispositivos con configuraciones antivirus no compatibles junto con los metadatos de configuración relevantes de la `DeviceTvmSecureConfigurationAssessmentKB` tabla:
+Puede probar esta consulta de ejemplo para devolver información sobre dispositivos con configuraciones de antivirus no compatibles junto con los metadatos de configuración pertinentes de la `DeviceTvmSecureConfigurationAssessmentKB` tabla:
 
 ```kusto
 // Get information on devices with antivirus configurations issues
@@ -77,4 +76,4 @@ DeviceTvmSecureConfigurationAssessment
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
-- [Información general sobre la Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Introducción a Administración de vulnerabilidades de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

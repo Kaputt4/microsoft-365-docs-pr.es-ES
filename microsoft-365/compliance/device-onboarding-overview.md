@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
-ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 867a3e356592c054dd3badbc960a5ae4b7edc80a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635587"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343467"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
 
@@ -133,13 +133,13 @@ En este escenario de implementación, incorporarás dispositivos Windows 10 o Wi
 
 6. Elija el procedimiento adecuado que se debe seguir en la tabla siguiente:
 
-Tema | Descripción
-:---|:---
-[Incorporación de dispositivos Windows 10 o 11 con directiva de grupo](device-onboarding-gp.md) | Utilice Directiva de grupo para implementar el paquete de configuración en los dispositivos.
-[Incorpore dispositivos Windows 10 o 11 con Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Puede usar Microsoft Endpoint Configuration Manager (rama actual) versión 1606 o Microsoft Endpoint Configuration Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
-[Incorpore los dispositivos Windows 10 o 11 con herramientas de administración de dispositivos móviles](device-onboarding-mdm.md) | Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
-[Incorpore los dispositivos Windows 10 o 11 con un script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
-[Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](device-onboarding-vdi.md) | Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
+|Tema | Descripción|
+|:---|:---|
+[Intune](device-onboarding-mdm.md) | Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.|
+|[Configuration Manager](device-onboarding-sccm.md) | Puede usar Microsoft Endpoint Configuration Manager (rama actual) versión 1606 o Microsoft Endpoint Configuration Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.|
+|[Directiva de grupo](device-onboarding-gp.md) | Utilice Directiva de grupo para implementar el paquete de configuración en los dispositivos.
+[Script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
+[Dispositivos de infraestructura de escritorio virtual (VDI)](device-onboarding-vdi.md) | Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
 ## <a name="see-also"></a>Vea también
 

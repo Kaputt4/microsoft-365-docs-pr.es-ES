@@ -271,21 +271,21 @@
       items:
         - name: Supervisar la actividad de Microsoft 365 mediante informes
           href: activity-reports/activity-reports.md
-        - name: 'Puntuación de productividad de Microsoft: información general'
-          href: productivity/productivity-score.md
+        - name: 'Puntuación de adopción de Microsoft: introducción'
+          href: adoption/adoption-score.md
           items:
             - name: Colaboración de contenido
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: Comunicación
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: Movilidad
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: Trabajo en equipo
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: Reuniones
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Estado de las Aplicaciones de Microsoft 365
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: Análisis de puntos de conexión
               href: /mem/analytics/productivity-score
         - name: Cambiar la información de contacto de la organización
@@ -320,8 +320,6 @@
           href: /admin/manage/manage-feedback-ms-org.md
         - name: Configurar opciones de lanzamiento
           href: manage/release-options-in-office-365.md
-        - name: Mostrar u ocultar nuevas características
-          href: manage/show-hide-new-features.md
         - name: Análisis de uso de Power BI
           items:
             - name: Sobre análisis de uso
@@ -358,7 +356,7 @@
       href: ../commerce/index.yml
     - name: Proteger su organización
       items:
-        - name: Procedimientos recomendados para proteger sus datos
+        - name: Las 10 mejores formas de proteger los datos
           href: security-and-compliance/secure-your-business-data.md
         - name: Autenticación multifactor para Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -377,7 +375,7 @@
     - name: Administra los dispositivos y datos de las aplicaciones
       items:
         - name: Métodos de protección de datos de dispositivos y aplicaciones
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Movilidad y seguridad básicas
           items:
             - name: Información general sobre Movilidad y seguridad básicas

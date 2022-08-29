@@ -21,18 +21,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, obtenga información sobre cómo canjear la clave de producto y activar la suscripción.
-ms.date: 11/13/2020
-ms.openlocfilehash: 880a339549a6bde1987aec9200f17476ca518497
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+description: Si ha comprado Microsoft 365 Empresa Estándar en una tienda minorista, obtenga información sobre cómo canjear la clave de producto y activar su suscripción.
+ms.date: 08/18/2022
+ms.openlocfilehash: 57208bc75a70f423e69065ae72eda6816145601b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112435"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384734"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
 
-Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, este artículo le ayudará a activar la suscripción.
+Si ha comprado Microsoft 365 Empresa Estándar en una tienda minorista, este artículo le ayudará a activar la suscripción.
   
  **¿Necesita algo más?** **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **¿Es un cliente de licencias por volumen?** Si ha comprado Microsoft 365 para empresas a través de un [Programa de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), consulte el artículo [Introducir la clave de producto adquirida en Microsoft Open](purchases-from-microsoft-open.md).
@@ -56,7 +56,7 @@ Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio a
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Ampliar la fecha de expiración o agregar una licencia a una suscripción existente
 
-Para ampliar la fecha de expiración o agregar una licencia a la suscripción de Microsoft 365 Empresa Estándar existente, use una clave nueva que no haya sido usada para el mismo plan de Microsoft 365. Aunque escriba la clave del producto de Microsoft 365 original, esto no funcionará porque no se puede volver a usar una clave que ya se haya canjeado. Consulte [Agregar licencias o ampliar una suscripción pagada por el uso de una clave de producto](licenses/add-licenses-using-product-key.md).
+Para ampliar la fecha de expiración o agregar una licencia a la suscripción Microsoft 365 Empresa Estándar existente, use una clave de producto nueva y sin usar para el mismo plan de Microsoft 365. Aunque escriba la clave del producto de Microsoft 365 original, esto no funcionará porque no se puede volver a usar una clave que ya se haya canjeado. Para obtener más información, consulte [Extender la fecha de expiración de la suscripción de prepago mediante una clave de producto de Microsoft 365](subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key) o [Agregar licencias a una suscripción de prepago mediante una clave de producto de Microsoft 365](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 ## <a name="next-steps"></a>Próximos pasos
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 9669e0788197f59f6d46c0475a89c67310e32ec9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051522"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328615"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para punto de conexión en Microsoft 365 Defender
 
@@ -52,7 +52,7 @@ La imagen y la tabla siguiente muestran los cambios en la navegación entre el C
 | Búsqueda avanzada de amenazas | Búsqueda |
 | Informes | Informes |
 | API de & asociados | API de & asociados |
-| Administración de vulnerabilidades & amenazas | Administración de amenazas y vulnerabilidades |
+| Administración de vulnerabilidades de Microsoft Defender | Administración de amenazas y vulnerabilidades |
 | Evaluación y tutoriales | Tutoriales de evaluación & |
 | Administración de la configuración | Administración de la configuración |
 | Configuración | Configuración | 
@@ -96,10 +96,10 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 
 | Área | Descripción de cambio |
 |---------|---------|
-|Búsqueda   |  La barra de búsqueda se encuentra en la parte superior de la página. Las sugerencias se proporcionan a medida que escribe. Puede buscar en las siguientes entidades en Defender para punto de conexión y Defender for Identity: <br><br> - **Dispositivos** : compatible con Defender para punto de conexión y Defender for Identity. Incluso puede usar operadores de búsqueda, por ejemplo, puede usar "contains" para buscar parte de un nombre de host. <br><br> - **Usuarios** : compatible con Defender para punto de conexión y Defender for Identity. <br><br> - **Archivos, direcciones IP y direcciones URL:** las mismas funcionalidades que en Defender para punto de conexión. <br> NOTA: *Las búsquedas de DIRECCIONES IP y URL coinciden exactamente y no aparecen en la página de resultados de búsqueda; conducen directamente a la página de entidad.  <br><br> - **TVM** : las mismas funcionalidades que en Defender para punto de conexión (vulnerabilidades, software y recomendaciones). <br><br>  La página de resultados de búsqueda mejorada centraliza los resultados de todas las entidades.  |
+|Búsqueda   |  La barra de búsqueda se encuentra en la parte superior de la página. Las sugerencias se proporcionan a medida que escribe. Puede buscar en las siguientes entidades en Defender para punto de conexión y Defender for Identity: <br><br> - **Dispositivos** : compatible con Defender para punto de conexión y Defender for Identity. Incluso puede usar operadores de búsqueda, por ejemplo, puede usar "contains" para buscar parte de un nombre de host. <br><br> - **Usuarios** : compatible con Defender para punto de conexión y Defender for Identity. <br><br> - **Archivos, direcciones IP y direcciones URL:** las mismas funcionalidades que en Defender para punto de conexión. <br> NOTA: *Las búsquedas de DIRECCIONES IP y URL coinciden exactamente y no aparecen en la página de resultados de búsqueda; conducen directamente a la página de entidad.  <br><br> - **MDVM** : las mismas funcionalidades que en Defender para punto de conexión (vulnerabilidades, software y recomendaciones). <br><br>  La página de resultados de búsqueda mejorada centraliza los resultados de todas las entidades.  |
 |[Panel](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Este es el panel de operaciones de seguridad. Consulte información general sobre cuántas alertas activas se desencadenaron, qué dispositivos están en riesgo, qué usuarios están en riesgo y el nivel de gravedad de las alertas, dispositivos y usuarios. También puede ver si algún dispositivo tiene problemas con el sensor, el estado general del servicio y cómo se detectaron alertas sin resolver. |
 |Inventario de dispositivos | Sin cambios. |
-|[Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    El nombre se acortó para ajustarse al panel de navegación. Es lo mismo que la sección Administración de amenazas y vulnerabilidades, con todas las páginas debajo.     |
+|[Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    El nombre se acortó para ajustarse al panel de navegación. Es lo mismo que la sección Administración de vulnerabilidades de Microsoft Defender, con todas las páginas debajo.     |
 | Asociados y API | Sin cambios. |
 | Evaluaciones & tutoriales    |     Nuevas funcionalidades de pruebas y aprendizaje.     |
 | Administración de la configuración   |  Sin cambios.  |

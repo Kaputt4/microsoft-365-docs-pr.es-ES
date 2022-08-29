@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 3d48a51311be9bf3324399a582fbb39bc4c38b8d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917285"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405780"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referencia de sugerencias de directiva de prevención de pérdida de datos
 
@@ -73,7 +73,7 @@ Tenga en cuenta que todas las condiciones funcionan para los correos electrónic
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 y versiones posteriores y aplicaciones de Office en escritorio que muestran sugerencias de directiva para solo algunos tipos de información confidencial
 
-La lista de tipos de información confidencial que se detectarán para mostrar sugerencias de directiva DLP en Outlook en el escritorio (2013 y versiones posteriores) y aplicaciones de Office (Word, Excel, PowerPoint) en el escritorio son las siguientes:
+La lista de tipos de información confidencial que se detectarán para mostrar sugerencias de directiva DLP en Outlook on Desktop (2013 y versiones posteriores) y aplicaciones de Office (Word, Excel, PowerPoint) en el escritorio son las siguientes:
 
 - Número de enrutamiento ABA
 - Número de identidad nacional (DNI) de Argentina
@@ -82,7 +82,7 @@ La lista de tipos de información confidencial que se detectarán para mostrar s
 - Número de pasaporte de Australia
 - Número de archivo de impuestos de Australia
 - Clave de autenticación de Azure DocumentDB  
-- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de SQL do Azure  
+- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de Azure SQL  
 - Cadena de conexión de Azure IoT  
 - Contraseña de configuración de publicación de Azure  
 - Cadena de conexión de Azure Redis Cache  
@@ -175,7 +175,10 @@ La lista de tipos de información confidencial que se detectarán para mostrar s
 - Número de identificación de contribuyente individual (ITIN) de EE. UU.
 - Número de seguridad social (SSN) de EE. UU.
 
-Tenga en cuenta que los tipos de información confidencial personalizados también se admiten para sugerencias de directiva DLP, además de los tipos de información confidencial integrados anteriormente.
+Tenga en cuenta que algunos tipos de información confidencial personalizados también se admiten para sugerencias de directiva DLP, además de los tipos de información confidencial integrados anteriormente.
+
+> [!NOTE]
+> No todos los elementos de tipos de información confidencial personalizados son compatibles con todas las versiones de Office. Los elementos de entidad para los SIT personalizados, como Functions, pueden provocar incompatibilidad.
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>Prevención de pérdida de datos en dispositivos de punto de conexión admite sugerencias de directiva solo para algunos tipos de información confidencial
 
@@ -196,7 +199,7 @@ La lista de tipos de información confidencial que se detectarán en los documen
 - Número de identificación fiscal de Austria 
 - Número del impuesto sobre el valor añadido (IVA) de Austria 
 - Clave de autenticación de Azure DocumentDB 
-- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de SQL do Azure 
+- Cadena de conexión de base de datos iaas de Azure y cadena de conexión de Azure SQL 
 - Cadena de conexión de Azure IoT 
 - Contraseña de configuración de publicación de Azure 
 - Cadena de conexión de Azure Redis Cache 
@@ -269,7 +272,7 @@ La lista de tipos de información confidencial que se detectarán en los documen
 - Número de licencia de conducir de Grecia 
 - Tarjeta de identificación nacional de Grecia 
 - Número de pasaporte de Grecia 
-- Número de seguro social de Grecia (AMKA) 
+- Número de la seguridad social de Grecia (AMKA) 
 - Número de identificación fiscal griega 
 - Número de tarjeta de identidad de Hong Kong (HKID) 
 - Número de seguro social húngaro (TAJ) 
@@ -352,7 +355,7 @@ La lista de tipos de información confidencial que se detectarán en los documen
 - Número de licencia de conducir de Eslovenia 
 - Número de pasaporte de Eslovenia 
 - Número de identificación fiscal de Eslovenia 
-- Número de ciudadano maestro único de Eslovenia 
+- Número del documento de identidad único de Eslovenia 
 - Número de identificación de Sudáfrica 
 - Número de registro de residente de Corea del Sur 
 - DNI de España 
@@ -376,7 +379,7 @@ La lista de tipos de información confidencial que se detectarán en los documen
 - Número de registro electoral de Reino Unido 
 - Número de Servicio Nacional de Salud de Reino Unido 
 - Número de seguro nacional de Reino Unido (NINO) 
-- ESPAÑA. Número de referencia de contribuyente único 
+- Reino Unido Número único de identificación fiscal 
 - Estados Unidos/ Reino Unido Passport Number 
 - Número de cuenta bancaria de EE. UU. 
 - Número de licencia de conductor de EE. UU. 
@@ -405,4 +408,3 @@ Tenga en cuenta que los tipos de información confidencial personalizados tambi�
 |**Local**|:::image type="icon" source="../media/crsmrk.png" border="false":::|ninguno|ninguno||
 |**Cliente Win32 de Word, Excel y PowerPoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subconjunto|Subconjunto|Vea [Outlook 2013 y versiones posteriores y La compatibilidad con aplicaciones de Office en escritorio muestra sugerencias de directivas para algunos tipos de información confidencial para](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) la lista de tipos de información confidencial admitidos</br></br>Las sugerencias de directivas para las aplicaciones cliente WXP funcionarán para los documentos almacenados en SharePoint Online o OneDrive para la Empresa Sitios para todas las directivas DLP que tengan exactamente las siguientes condiciones o un subconjunto de condiciones o acciones en la directiva DLP:</br> <ul><li>El contenido contiene tipos de información confidencial</li><li>Ámbito de acceso (el contenido se comparte interna o externamente)</li><li>Notificar al usuario (sugerencias de directivas o notificaciones de usuario)</li><li>Bloquear a todos</li><li>Informes de incidentes</li></ul></br> Si hay alguna otra condición o acción, la sugerencia de directiva DLP para esa directiva no aparecerá en las aplicaciones de escritorio de Word, Excel o PowerPoint.</br>Consulte [Sugerencias de directiva en Excel, PowerPoint y Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) para obtener más detalles.|
 |**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subconjunto|Subconjunto|Las directivas de prevención de pérdida de datos en Power BI se encuentran en versión preliminar pública. </br></br> Se admiten sugerencias de directivas y alertas de administración. |
-||||||

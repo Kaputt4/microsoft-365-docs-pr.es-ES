@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad del tipo de información confidencial del número de impuestos agregado de Italia.
-ms.openlocfilehash: d370ef3c46cf773791b3b0d599d546ea695a6e97
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9e45fda7fe698e4059ec1f3af79ef7625f8f81a8
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000058"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369920"
 ---
 # <a name="italy-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Italia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

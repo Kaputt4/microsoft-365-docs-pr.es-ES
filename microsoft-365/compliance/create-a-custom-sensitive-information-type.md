@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos de información confidencial personalizados en el Centro de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6f421a4bbeda0362d5b64be2cbeae70cf1b93bcf
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638618"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434338"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Creación de tipos de información confidencial personalizados en el Centro de cumplimiento
 
@@ -44,6 +44,8 @@ Hay dos formas de crear un tipo de información confidencial:
   - [Diccionario de palabras clave](create-a-keyword-dictionary.md)
   - [Funciones de tipo de información confidencial](sit-functions.md)
   - [Niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+
+- Familiarícese con [los límites de tipos de información confidencial](sit-limits.md).
 
 - La organización debe tener una suscripción, como Office 365 Enterprise, que incluya Prevención de pérdida de datos de Microsoft Purview (DLP). [Ver Política de Mensajería y Servicio de ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc) 
 
@@ -94,18 +96,18 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 >
 > - Número de licencia de conducir de Canadá
 > - Número de licencia de conducir de la UE
-> - Número de identificación nacional de la UE
+> - Número del documento nacional de identidad de la UE
 > - Número de pasaporte de la UE
-> - Número de seguridad social de la UE o identificación equivalente
+> - Número de la seguridad social de la UE o identificación equivalente  
 > - Número de identificación fiscal de la UE
-> - Clasificación internacional de enfermedades (ICD-10-CM)
-> - Clasificación internacional de enfermedades (ICD-9-CM)
+> - Clasificación Internacional de Enfermedades (CIE-10-MC)
+> - Clasificación Internacional de Enfermedades (CIE-9-MC)
 > - Número de licencia de conducir de EE. UU.
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 
 - [Creación de un tipo de información confidencial personalizada en PowerShell de Microsoft Purview](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
 
@@ -147,47 +149,8 @@ Puede probar cualquier tipo de información confidencial en la lista. Le recomen
 
 4. En la página **Resultados de coincidencia**, revise los resultados y, después, seleccione **Finalizar**.
 
-## <a name="custom-sensitive-information-types-limits"></a>Límites de tipos de información confidencial personalizados
-
-Para garantizar un alto rendimiento y una menor latencia, hay limitaciones en las configuraciones de SIT personalizadas.
-
-|Límite|Valor|
-|---|---|
-|número máximo de SIT personalizados creados a través del Centro de cumplimiento| 500 |
-|longitud máxima de la expresión regular| 1024 caracteres|
-|longitud máxima de un término determinado en una lista de palabras clave| 50 caracteres|
-|número máximo de términos en la lista de palabras clave| 2048|
-|número máximo de expresiones regulares distintas por tipo de información confidencial| 20|
-|tamaño máximo de un diccionario de palabras clave (compresión posterior)| 1 MB (aproximadamente 1000 000 caracteres)|
-|número máximo de SIT basados en diccionarios de palabras clave en un inquilino|50 |
-
 > [!NOTE]
-> Si tiene una necesidad empresarial de crear más de 500 SIT personalizados, genere una incidencia de soporte técnico.
-
-### <a name="instance-count-supported-values-for-sit"></a>Recuento de instancias de valores admitidos para SIT
-
-El límite de recuento de instancias de SIT se aplica cuando se usan SIT en estas soluciones:
-
-- Directivas DLP
-- Protección de la información
-- Administración del ciclo de vida de los datos
-- Cumplimiento de la comunicación
-- Records Management
-- Microsoft Defender for Cloud Apps
-- Microsoft Priva
-
-Para que un elemento examinado cumpla los criterios de regla, el número de instancias únicas de una SIT en cualquier elemento único debe estar comprendido entre los valores mínimo y máximo. Esto se denomina **recuento de instancias**.
-
-- **Campo mínimo** : límite inferior (número mínimo) de instancias únicas de una SIT que se deben encontrar en un elemento para desencadenar una coincidencia. El campo min admite valores de:
-  - De 1 a 500
-- **Campo máximo** : límite superior en el número de instancias únicas de una SIT que se pueden encontrar en un elemento y que siguen desencadenando una coincidencia. El campo max admite valores de:
-  - 1 a 500: use esta opción cuando desee establecer un límite superior específico de 500 o menos en el número de instancias de una SIT en un elemento.
-  - Cualquiera: use `Any` cuando desee que se cumplan los criterios de recuento de instancias únicos cuando se encuentre un número indefinido de instancias únicas de una SIT en un elemento examinado y ese número de instancias únicas cumpla o supere el número mínimo de valores de instancias únicas. En otras palabras, los criterios de recuento de instancias únicos se cumplen siempre y cuando se cumpla el valor mínimo.
-
-Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuentren al menos 500 instancias únicas de una SIT en un solo elemento, establezca el valor `500` **mínimo** en y el valor **máximo** en `Any`.
-
-> [!NOTE]
-> Microsoft 365 Information Protection es compatible con los idiomas del juego de caracteres de doble byte para:
+> La protección de información de Microsoft Purview admite idiomas de juego de caracteres de doble byte para:
 >
 > - Chino (simplificado)
 > - Chino (tradicional)

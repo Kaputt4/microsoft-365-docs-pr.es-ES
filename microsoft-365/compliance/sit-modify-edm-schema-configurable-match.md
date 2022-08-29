@@ -17,16 +17,20 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 107a910068f3f0dfbae56530c5b589e19e0d2621
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622071"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405650"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
-La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir el uso de variantes de una cadena exacta, puede usar la *coincidencia configurable* para indicar a Microsoft Purview que omita mayúsculas y minúsculas y otros delimitadores.
+## <a name="applies-to"></a>Se aplica a
+
+- Creación del tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) mediante PowerShell.
+
+La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir variantes de una cadena exacta, puede usar *la coincidencia configurable* para indicar a Microsoft Purview que ignore mayúsculas y minúsculas y algunos delimitadores.
 
 > [!IMPORTANT]
 > Use este procedimiento para modificar un esquema EDM y un archivo de datos existentes.
@@ -121,7 +125,9 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
     > [!TIP]
     > De forma opcional, puede ejecutar una validación en el archivo CSV antes de cargarlo ejecutando lo siguiente:
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+    >
+    > Por ejemplo: `EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
     >
     > Para más información sobre todos los parámetros compatibles con EdmUploadAgent.exe, ejecute
     >

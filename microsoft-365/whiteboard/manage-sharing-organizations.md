@@ -12,16 +12,16 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: 61f8a79cd17721d1a383038bd8912d87c625ac4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: b5455886067bb343a0a3bbd499f4271bc72971b6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275964"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383774"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
-La experiencia de uso compartido difiere en función de si se encuentra en una reunión de Teams, si usa un dispositivo compartido o si la configuración de uso compartido de nivel de inquilino está habilitada. Los siguientes escenarios solo se aplican a las nuevas pizarras creadas después de que Whiteboard cambie al uso de OneDrive Entreprise almacenamiento. No hay ningún cambio en los paneles creados anteriormente todavía almacenados en Azure.
+La experiencia de uso compartido difiere en función de si se encuentra en una reunión de Teams, si usa un dispositivo compartido o si la configuración de uso compartido de nivel de inquilino está habilitada. Los siguientes escenarios solo se aplican a las nuevas pizarras creadas después de que Whiteboard cambie al uso de OneDrive para la Empresa almacenamiento. No hay ningún cambio en los paneles creados anteriormente todavía almacenados en Azure.
 
 ## <a name="share-in-teams-meetings"></a>Compartir en reuniones de Teams
 
@@ -31,9 +31,9 @@ Hay más capacidad para la colaboración temporal por parte de cuentas de dispos
 
 En este caso, Whiteboard proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams. No se crea un vínculo de recurso compartido y Whiteboard no concede acceso al archivo.
 
-Si tiene habilitado el uso compartido externo para OneDrive Entreprise, no se requiere ninguna acción adicional.
+Si tiene habilitado el uso compartido externo para OneDrive para la Empresa, no se requiere ninguna acción adicional.
 
-Si restringe el uso compartido externo para OneDrive Entreprise, puede mantenerlo restringido y simplemente habilitar una nueva configuración para que funcionen las cuentas de dispositivo externas y compartidas. Para hacerlo, siga estos pasos:
+Si restringe el uso compartido externo para OneDrive para la Empresa, puede mantenerlo restringido y simplemente habilitar una nueva configuración para que funcionen las cuentas de dispositivo externas y compartidas. Para hacerlo, siga estos pasos:
 
 1. Asegúrese de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-organizations.md).
 
@@ -60,9 +60,9 @@ Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el in
 
 |Escenario|Almacenamiento y propiedad|Configuración de uso compartido|Experiencia de uso compartido|
 |---|---|---|---|
-|Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive Entreprise<br><br>Propietario: usuario que crea la pizarra|Habilitado|Usuarios en el inquilino: pueden crear, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión (el botón para compartir una pizarra no aparecerá para los usuarios externos)<br><br>Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
-|Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive Entreprise<br><br>Propietario: usuario que crea la pizarra|Deshabilitada|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no se puede ver ni colaborar<br><br>Cuentas de dispositivo compartido: no se puede ver ni colaborar|
-|Inicie la pizarra desde surface hub o Salas de Microsoft Teams|Almacenamiento: Azure (los archivos de pizarra se moverán a OneDrive Entreprise en el futuro)<br><br>Propietario: Participante de la reunión|No aplicable|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión.<br><br> Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
+|Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|Habilitado|Usuarios en el inquilino: pueden crear, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión (el botón para compartir una pizarra no aparecerá para los usuarios externos)<br><br>Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
+|Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|Deshabilitada|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no se puede ver ni colaborar<br><br>Cuentas de dispositivo compartido: no se puede ver ni colaborar|
+|Inicie la pizarra desde surface hub o Salas de Microsoft Teams|Almacenamiento: Azure (los archivos de pizarra se moverán a OneDrive para la Empresa en el futuro)<br><br>Propietario: Participante de la reunión|No aplicable|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión.<br><br> Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Agregar como pestaña en canales y chats de Teams
 
@@ -70,7 +70,7 @@ Al agregar una pizarra como una pestaña en un canal o chat de Teams, Whiteboard
 
 |Escenario|Almacenamiento y propiedad|Configuración de uso compartido|Experiencia de uso compartido|
 |---|---|---|---|
-|Agregar la pizarra a un canal o chat desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive Entreprise<br><br>Propietario: usuario que crea la pizarra|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no admitidos<br><br>Invitados de Teams: puede ver y colaborar<br><br>Cuentas de dispositivo compartido: no aplicables|
+|Agregar la pizarra a un canal o chat desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no admitidos<br><br>Invitados de Teams: no compatible<br><br>Cuentas de dispositivo compartido: no aplicables|
 
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Creación y uso compartido en clientes nativos de Whiteboard
 
@@ -81,11 +81,11 @@ Al compartir pizarras desde clientes web, de escritorio o móviles, puede elegir
 
 |Escenario|Almacenamiento y propiedad|Configuración de uso compartido|Experiencia de uso compartido|
 |---|---|---|---|
-|Creación de la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive Entreprise<br><br>Propietario: usuario que crea la pizarra|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: pueden compartir dentro de su organización<br><br>Usuarios externos: no se admite el uso compartido con usuarios externos en este momento|
-|Crear la pizarra a partir de un Surface Hub|Almacenamiento: Local<br><br>Propietario: Ninguno (a menos que el usuario inicie sesión para guardar y compartir el panel, lo que se guarda en OneDrive Entreprise. El uso compartido fácil se agregará de nuevo en el futuro.|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: el usuario debe iniciar sesión para guardar y compartir el panel (el recurso compartido fácil se agregará en el futuro).<br><br>Usuarios externos: no se admite el uso compartido con usuarios externos en este momento fuera de una reunión de Teams|
+|Creación de la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: pueden compartir dentro de su organización<br><br>Usuarios externos: no se admite el uso compartido con usuarios externos en este momento|
+|Crear la pizarra a partir de un Surface Hub|Almacenamiento: Local<br><br>Propietario: Ninguno (a menos que el usuario inicie sesión para guardar y compartir el panel, lo que se guarda en OneDrive para la Empresa. El uso compartido fácil se agregará de nuevo en el futuro.|No aplicable (solo se aplica a reuniones)|Usuarios en el inquilino: el usuario debe iniciar sesión para guardar y compartir el panel (el recurso compartido fácil se agregará en el futuro).<br><br>Usuarios externos: no se admite el uso compartido con usuarios externos en este momento fuera de una reunión de Teams|
 |Creación de la pizarra a partir de Salas de Microsoft Teams|Todavía no se admite|No aplicable (solo se aplica a reuniones)|Todavía no se admite|
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 

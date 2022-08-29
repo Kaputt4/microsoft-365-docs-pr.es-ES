@@ -24,12 +24,12 @@ ms.custom:
 ms.topic: conceptual
 ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: c2915adc7b9b49015cdb436886563c4eba74d989
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: f55172bf0a7df4e15e690a5e0847c81b3cc537dc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617368"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328593"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
@@ -124,7 +124,7 @@ Puede buscar en las siguientes entidades en Defender para punto de conexión y D
     >[!NOTE]
     >Las búsquedas de direcciones IP y URL coinciden exactamente y no aparecen en la página de resultados de búsqueda; conducen directamente a la página de entidad. 
 
-- **TVM** : las mismas funcionalidades que en Defender para punto de conexión (vulnerabilidades, software y recomendaciones). 
+- **MDVM** : las mismas funcionalidades que en Defender para punto de conexión (vulnerabilidades, software y recomendaciones). 
 
 ## <a name="threat-analytics"></a>Análisis de amenazas
 

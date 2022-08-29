@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial número de ciudadano maestro único de Eslovenia.
-ms.openlocfilehash: 23c484946c8e73e7f21b251aa35935dba37b110b
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 415331565d78813363cb21a1cbecb7722b997c70
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999761"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368419"
 ---
 # <a name="slovenia-unique-master-citizen-number"></a>Número del documento de identidad único de Eslovenia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 

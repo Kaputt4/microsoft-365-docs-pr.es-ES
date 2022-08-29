@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Reglas sospechosas de manipulación de la bandeja de entrada
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Dirección IP sospechosa relacionada con la difusión de contraseñas
+                      href: alert-grading-password-spray.md
                     - name: Conectores de intercambio malintencionados
                       href: alert-grading-for-malicious-exchange-connectors.md
                 - name: Usuarios
@@ -216,40 +218,54 @@
           items:
             - name: Información general
               href: advanced-hunting-overview.md
-            - name: 'Aprender, entrenar y obtener ejemplos'
+            - name: Modos guiados y avanzados
+              href: advanced-hunting-modes.md
+            - name: Compilación de consultas mediante el modo guiado
               items:
-                - name: Aprender el lenguaje de consulta
-                  href: advanced-hunting-query-language.md
-                - name: Obtener formación experta
-                  href: advanced-hunting-expert-training.md
-                - name: Usar consultas compartidas
-                  href: advanced-hunting-shared-queries.md
-                - name: 'Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades'
-                  href: advanced-hunting-query-emails-devices.md
-                - name: Buscar ransomware
-                  href: advanced-hunting-find-ransomware.md
-                - name: Ejemplo de búsqueda avanzada
-                  href: advanced-hunting-example.md
-                - name: Microsoft Defender para punto de conexión
-                  href: advanced-hunting-migrate-from-mde.md
-            - name: Trabajar con resultados de consulta
-              href: advanced-hunting-query-results.md
-            - name: Realizar una acción en los resultados de consulta
-              href: advanced-hunting-take-action.md
-            - name: Investigue de manera rápida con go hunt
-              href: advanced-hunting-go-hunt.md
-            - name: Vincular los resultados de la consulta a un incidente
-              href: advanced-hunting-link-to-incident.md
-            - name: Optimizar y controlar errores
+                - name: Introducción al generador de consultas
+                  href: advanced-hunting-query-builder.md
+                - name: Refinar la consulta en modo guiado
+                  href: advanced-hunting-query-builder-details.md
+                - name: Trabajar con resultados de consulta en modo guiado
+                  href: advanced-hunting-query-builder-results.md
+            - name: Creación de consultas mediante el modo avanzado
               items:
-                - name: Aplicar procedimientos recomendados de consulta
-                  href: advanced-hunting-best-practices.md
-                - name: Controlar los errores
-                  href: advanced-hunting-errors.md
-                - name: Parámetros de uso y cuotas
-                  href: advanced-hunting-limits.md
-                - name: Ampliar la cobertura de los datos
-                  href: advanced-hunting-extend-data.md
+                - name: 'Aprender, entrenar y obtener ejemplos'
+                  items:
+                    - name: Aprender el lenguaje de consulta
+                      href: advanced-hunting-query-language.md
+                    - name: Obtener formación experta
+                      href: advanced-hunting-expert-training.md
+                    - name: Usar consultas compartidas
+                      href: advanced-hunting-shared-queries.md
+                    - name: 'Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades'
+                      href: advanced-hunting-query-emails-devices.md
+                    - name: Buscar ransomware
+                      href: advanced-hunting-find-ransomware.md
+                    - name: Ejemplo de búsqueda avanzada
+                      href: advanced-hunting-example.md
+                    - name: Microsoft Defender para punto de conexión
+                      href: advanced-hunting-migrate-from-mde.md
+                - name: Trabajar con resultados de consulta
+                  href: advanced-hunting-query-results.md
+                - name: Investigue de manera rápida con go hunt
+                  href: advanced-hunting-go-hunt.md
+                - name: Funciones
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                    - name: SeenBy()
+                      href: advanced-hunting-seenby-function.md
+                - name: Optimizar y controlar errores
+                  items:
+                    - name: Aplicar procedimientos recomendados de consulta
+                      href: advanced-hunting-best-practices.md
+                    - name: Controlar los errores
+                      href: advanced-hunting-errors.md
             - name: Esquema de datos
               items:
                 - name: Entender el esquema
@@ -320,22 +336,20 @@
                   href: advanced-hunting-identityqueryevents-table.md
                 - name: UrlClickEvents
                   href: advanced-hunting-urlclickevents-table.md
-            - name: Funciones
-              items:
-                - name: AssignedIPAddresses()
-                  href: advanced-hunting-assignedipaddresses-function.md
-                - name: DeviceFromIP()
-                  href: advanced-hunting-devicefromip-function.md
-                - name: FileProfile()
-                  href: advanced-hunting-fileprofile-function.md
-                - name: SeenBy()
-                  href: advanced-hunting-seenby-function.md
             - name: Detecciones personalizadas
               items:
                 - name: Introducción a las detecciones personalizadas
                   href: custom-detections-overview.md
                 - name: Crear y administrar reglas de detección
                   href: custom-detection-rules.md
+            - name: Realizar una acción en los resultados de consulta
+              href: advanced-hunting-take-action.md
+            - name: Vincular los resultados de la consulta a un incidente
+              href: advanced-hunting-link-to-incident.md
+            - name: Parámetros de uso y cuotas
+              href: advanced-hunting-limits.md
+            - name: Ampliar la cobertura de los datos
+              href: advanced-hunting-extend-data.md
         - name: Seguir las amenazas emergentes y responder a ellas
           items:
             - name: Información general sobre el análisis de amenazas

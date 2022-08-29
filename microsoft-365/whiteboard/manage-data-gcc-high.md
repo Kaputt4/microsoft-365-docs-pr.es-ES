@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar el acceso a Whiteboard.
-ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 934036417e0879cdec9c21bacefd51b9753336b4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943428"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367695"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de datos para Microsoft Whiteboard en entornos de GCC High
 
@@ -25,6 +25,8 @@ ms.locfileid: "66943428"
 > Esta guía se aplica a los entornos altos de la nube de la comunidad del gobierno de EE. UU. (GCC).
 
 Los datos se almacenan como archivos .whiteboard en OneDrive para la Empresa. Una pizarra promedio podría tener un tamaño de entre 50 KB y 1 MB y estar ubicada donde resida el contenido OneDrive para la Empresa. Para comprobar dónde se crean los nuevos datos, consulte [Dónde se almacenan los datos del cliente de Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examine la ubicación de OneDrive para la Empresa. Todas las propiedades que se aplican a los archivos generales de OneDrive para la Empresa también se aplican a Whiteboard, excepto para el uso compartido externo.
+
+Para administrar los datos, primero debe asegurarse de que Whiteboard está habilitado para su organización. Para obtener más información, consulte [Administración del acceso a Whiteboard en entornos de GCC High](manage-whiteboard-access-gcc-high.md).
 
 Puede administrar datos de Pizarra mediante controles de OneDrive para la Empresa existentes. Para obtener más información, vea [Guía de OneDrive para empresas](/onedrive/plan-onedrive-enterprise).
 
@@ -49,7 +51,7 @@ Los siguientes controles de datos están planeados para futuras versiones de Whi
 - Análisis
 - Almacenamiento de pizarras en sitios de SharePoint
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración del acceso a Whiteboard- GCC High](manage-whiteboard-access-gcc-high.md)
 

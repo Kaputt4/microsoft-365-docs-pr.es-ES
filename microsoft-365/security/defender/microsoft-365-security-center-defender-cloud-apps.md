@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 05/03/2022
+ms.date: 08/21/2022
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13d178f77efa19ed53c93afa454ddaf6e481a8a6
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106282"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408427"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps en Microsoft 365 Defender (versión preliminar)
 
@@ -74,8 +74,9 @@ La imagen y la tabla siguiente muestran los cambios en la navegación entre Micr
 
 > [!NOTE]
 > La nueva experiencia de Defender for Cloud Apps en el portal de Microsoft 365 Defender está disponible actualmente para todos los usuarios detallados en [Administración del acceso de administrador](/defender-cloud-apps/manage-admins), excepto para:
-> * **Administrador de aplicaciones o instancias**, **administrador de grupos** de usuarios, **administrador global de Cloud Discovery** y **administrador de informes de Cloud Discovery**, tal como se define [en Roles de administrador integrados en Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-> * Grupos de privacidad de usuario definidos en [Privacidad de la actividad](/defender-cloud-apps/activity-privacy)
+>
+> - **Administrador de aplicaciones o instancias**, **administrador de grupos** de usuarios, **administrador global de Cloud Discovery** y **administrador de informes de Cloud Discovery**, tal como se define [en Roles de administrador integrados en Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> - Grupos de privacidad de usuario definidos en [Privacidad de la actividad](/defender-cloud-apps/activity-privacy)
 
 ## <a name="whats-changed"></a>Modificaciones
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d283876f8e68943d45ab2dbca4ef8455a5dce038
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949067"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328923"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -165,7 +165,7 @@ Las tareas diarias pueden incluir:
 Las tareas mensuales pueden incluir:
 
 - Revisión de la [configuración de AIR](m365d-configure-auto-investigation-response.md)
-- Revisión de [la puntuación de seguridad](microsoft-secure-score-improvement-actions.md) y [la administración de vulnerabilidades de & amenazas](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Revisión de [la puntuación segura](microsoft-secure-score-improvement-actions.md) y [la Administración de vulnerabilidades de Microsoft Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Informes a la cadena de administración de seguridad de TI
 
 Las tareas trimestrales pueden incluir un informe y un informe de los resultados de seguridad al director de seguridad de la información (CISO).
@@ -259,7 +259,7 @@ Siga esta tabla para conocer el nivel de experiencia con el análisis de segurid
 
 Siga esta tabla en función del rol de equipo de seguridad.
 
-| Role | Pasos |
+| Rol | Pasos |
 |---|---|
 | Respondedor de incidentes (nivel 1) | Empiece a trabajar con la cola de incidentes desde la página **Incidentes** del portal de Microsoft 365 Defender. Desde allí, puedes hacer lo siguiente: <ul><li> Vea qué incidentes deben [priorizarse](incident-queue.md) en función de la gravedad y otros factores. </li><li> [Administrar incidentes](manage-incidents.md), lo que incluye el cambio de nombre, la asignación, la clasificación y la adición de etiquetas y comentarios en función del flujo de trabajo de administración de incidentes. </li></ul> |
 | Investigador o analista de seguridad (nivel 2) | <ol><li> Realice [investigaciones](investigate-incidents.md) de incidentes desde la página **Incidentes** del portal de Microsoft 365 Defender. </li><li> Consulte estos [cuadernos de estrategias de respuesta a incidentes](/security/compass/incident-response-playbooks) para obtener instrucciones detalladas sobre phishing, difusión de contraseñas y ataques de concesión de consentimiento de aplicaciones. </li></ol> |

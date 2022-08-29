@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855029"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369145"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -37,6 +37,39 @@ Para que La puntuación segura de Microsoft sea un mejor representante de su pos
 Cuantos más acciones de mejora realice, mayor será la puntuación de seguridad. Para obtener más información, consulte [Puntuación segura de Microsoft](microsoft-secure-score.md).
 
 La Puntuación de seguridad de Microsoft se puede encontrar en <https://security.microsoft.com/securescore> el [portal de Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="august-2022"></a>Agosto de 2022
+
+Ahora hay nuevas recomendaciones de Microsoft Information Protection disponibles como acciones de mejora de puntuación segura:
+
+- **Etiquetar**
+  - Extensión del etiquetado de confidencialidad de M365 a los recursos del mapa de datos de Azure Purview
+  - Asegúrese de que las directivas de clasificación de datos de etiquetado automático se configuran y usan.
+  - Publicación de directivas de clasificación de datos de etiquetas de confidencialidad de M365
+  - Creación de directivas de prevención de pérdida de datos (DLP)
+
+Ahora hay nuevas recomendaciones de Microsoft Defender para Office 365 disponibles como acciones de mejora de puntuación segura:
+
+- **Antispam: directiva de entrada**
+  - Establecer el umbral de nivel de queja masiva de correo electrónico (BCL) en 6 o inferior
+  - Establecer la acción que se va a realizar en la detección de correo no deseado
+  - Establecer la acción para realizar la detección de correo no deseado de alta confianza
+  - Establecer la acción que se va a realizar en la detección de suplantación de identidad (phishing)
+  - Establecer la acción para realizar la detección de suplantación de identidad de alta confianza
+  - Establecer acción para realizar la detección masiva de correo no deseado
+  - Conservar el correo no deseado en cuarentena durante 30 días
+  - Asegúrese de que las sugerencias de seguridad de correo no deseado estén habilitadas
+  - Asegúrese de que no se permiten dominios de remitente para las directivas de antispam (reemplazará "Asegúrese de que no hay dominios de remitente permitidos para las directivas antispam" para ampliar la funcionalidad también para remitentes específicos).
+
+- **Antispam: directiva de salida**
+  - Establecer el número máximo de destinatarios externos que un usuario puede enviar por correo electrónico por hora
+  - Establecer el número máximo de destinatarios internos a los que un usuario puede enviar en un plazo de una hora
+  - Establecer un límite de mensajes diario
+  - Bloquear usuarios que alcanzaron el límite de mensajes
+  - Establecer reglas de reenvío automático de correo electrónico para que estén controladas por el sistema
+
+- **Antispam: filtro de conexión**
+  - No agregar direcciones IP permitidas en la directiva de filtro de conexión
 
 ## <a name="june-2022"></a>Junio de 2022
 

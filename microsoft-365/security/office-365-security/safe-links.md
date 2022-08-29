@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5507ac8dbedf1bd3adaf8fcebb95d71810940cb2
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086525"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385217"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -111,7 +111,7 @@ Debe especificar las condiciones y excepciones del destinatario que determinan a
 Solo puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
 > [!IMPORTANT]
-> Varios tipos diferentes de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
+> Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
 >
 > - El destinatario es: romain@contoso.com
 > - El destinatario es miembro de: Ejecutivos
@@ -275,7 +275,7 @@ Para obtener más información sobre el orden de precedencia y cómo se evalúan
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Bloquear las siguientes direcciones URL" para vínculos seguros
 
 > [!NOTE]
-> Ahora puede administrar las entradas de dirección URL de bloque en la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). La lista "Bloquear las siguientes direcciones URL" está en desuso. Intentaremos migrar las entradas existentes de la lista "Bloquear las siguientes direcciones URL" para bloquear las entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos. Los mensajes que contienen la dirección URL bloqueada se pondrán en cuarentena.
+> Ahora puede administrar las entradas de dirección URL de bloque en la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). La lista "Bloquear las siguientes direcciones URL" está en desuso. Intentaremos migrar las entradas existentes de la lista "Bloquear las siguientes direcciones URL" para bloquear las entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos. Los mensajes que contienen la dirección URL bloqueada se pondrán en cuarentena.
 
 La lista **Bloquear las siguientes direcciones URL** define los vínculos que siempre están bloqueados por el examen de vínculos seguros en las siguientes ubicaciones:
 
@@ -289,7 +289,7 @@ La lista de direcciones URL se configura en la configuración global de Vínculo
 
 **Notas**:
 
-- Para obtener una lista verdaderamente universal de direcciones URL que están bloqueadas en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+- Para obtener una lista verdaderamente universal de direcciones URL que están bloqueadas en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).
 - Límites de la lista **Bloquear las siguientes direcciones URL** :
   - El número máximo de entradas es 500.
   - La longitud máxima de una entrada es de 128 caracteres.
@@ -305,7 +305,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <p> Otra posibilidad: <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com`, `https://sub.contoso.com`y `https://contoso.com/abc` están bloqueados.|
+|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com`, `https://sub.contoso.com`y `https://contoso.com/abc` están bloqueados.|
 |`https://contoso.com/a`|Bloquea `https://contoso.com/a` , pero no sube rutas secundarias adicionales como `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y rutas secundarias adicionales como `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloquea un subdominio (`toys` en este ejemplo), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com`).|
@@ -313,7 +313,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listas de "No volver a escribir las siguientes direcciones URL" en las directivas de vínculos seguros
 
 > [!NOTE]
-> Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de dirección URL permitidas en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#create-allow-url-entries) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
+> Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de dirección URL permitidas en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
 
 Cada directiva de vínculos seguros contiene una lista **No volver a escribir las siguientes direcciones URL** que puede usar para especificar direcciones URL que no se reescriban mediante el examen de vínculos seguros. En otras palabras, la lista permite a los usuarios incluidos en la directiva acceder a las direcciones URL especificadas que, de lo contrario, estarían bloqueadas por vínculos seguros. Puede configurar diferentes listas en diferentes directivas de vínculos seguros. El procesamiento de directivas se detiene después de que se aplique al usuario la primera directiva (probablemente, la prioridad más alta). Por lo tanto, solo se aplica una opción **No volver a escribir la lista de direcciones URL siguientes** a un usuario que se incluye en varias directivas de vínculos seguros activas.
 
@@ -325,7 +325,7 @@ Para agregar entradas a la lista en directivas de vínculos seguros nuevas o exi
   - Microsoft Teams
   - Aplicaciones web de Office
 
-  Para obtener una lista verdaderamente universal de direcciones URL que se permiten en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md). Sin embargo, tenga en cuenta que las direcciones URL agregadas no se excluirán de la reescritura de vínculos seguros, como debe hacerse en una directiva de vínculos seguros.
+  Para obtener una lista verdaderamente universal de direcciones URL que se permiten en todas partes, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md). Sin embargo, tenga en cuenta que las direcciones URL agregadas no se excluirán de la reescritura de vínculos seguros, como debe hacerse en una directiva de vínculos seguros.
 
 - Considere la posibilidad de agregar direcciones URL internas de uso frecuente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
 - Si ya tiene **no volver a escribir las siguientes entradas de direcciones URL** en las directivas de vínculos seguros, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como `https://contoso.com/a` y, más adelante, decide incluir subpaths como `https://contoso.com/a/b`. En lugar de agregar una nueva entrada, agregue un carácter comodín a la entrada existente para que se convierta en `https://contoso.com/a/*`.

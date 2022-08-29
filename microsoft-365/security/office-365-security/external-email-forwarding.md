@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/17/2021
+ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: En este artículo se tratan temas como el reenvío de correo electrónico externo, el reenvío automático, los mensajes de acceso denegado 5.7.520, la deshabilitación del reenvío externo, los mensajes "Su administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487156"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385239"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Control del reenvío automático de correo electrónico externo en Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "66487156"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Como administrador, es posible que tenga los requisitos de la empresa para restringir o controlar los mensajes reenviados automáticamente a destinatarios externos (destinatarios fuera de su organización). El reenvío de correo electrónico puede ser útil, pero también puede suponer un riesgo de seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o asociados.
+Como administrador, es posible que tenga los requisitos de la empresa para restringir o controlar los mensajes reenviados automáticamente a destinatarios externos (destinatarios fuera de su organización). Email reenvío puede ser útil, pero también puede suponer un riesgo de seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o asociados.
 
 Los siguientes tipos de reenvío automático están disponibles en Microsoft 365:
 

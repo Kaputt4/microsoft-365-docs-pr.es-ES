@@ -2,7 +2,7 @@
 title: Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 f1.keywords:
 - NOCSH
-ms.author: dansimp
+ms.author: chrisda
 author: dansimp
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear direcciones URL en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 69d9b4725e0a2c57dac8bb711655b9e0ff02e3e5
-ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
+ms.openlocfilehash: 417d518832ff56c23a09758613270ebf3e6046e5
+ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185817"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423638"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,7 +32,261 @@ ms.locfileid: "66185817"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Puede usar el portal de Microsoft 365 Defender o PowerShell para permitir o bloquear direcciones URL en la lista de permitidos o bloqueados de inquilinos.
+En este artículo se describe cómo crear y administrar direcciones URL para permitir y bloquear entradas que están disponibles en la lista de permitidos o bloqueados de inquilinos. Para obtener más información sobre la lista de permitidos o bloqueados de inquilinos, vea [Administrar los bloques y permitidos en la lista de permitidos o bloques de inquilinos](manage-tenant-allow-block-list.md).
+
+Puede administrar las entradas de permitir y bloquear para las direcciones URL en Microsoft 365 Defender Portal o en Exchange Online PowerShell.
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>. Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+
+- Para ver la sintaxis de entrada de dirección URL, consulte la [sección Sintaxis de dirección URL para la lista de permitidos o bloqueados](#url-syntax-for-the-tenant-allowblock-list) de inquilinos más adelante en este artículo.
+
+- En el caso de las direcciones URL, el número máximo de entradas permitidas es 500 y el número máximo de entradas de bloque es 500 (1000 entradas url en total).
+
+- Puede escribir un máximo de 250 caracteres en una entrada de dirección URL.
+
+- Una entrada debe estar activa en un plazo de 30 minutos, pero la entrada puede tardar hasta 24 horas en estar activa.
+
+- Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
+  - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
+    - **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
+  - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Grupo de roles lector global**
+    - **Grupo de roles lector de seguridad**
+    - **Grupo de roles de configuración de solo vista**
+
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+
+  **Notas**:
+
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios *y* los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+
+## <a name="create-block-entries-for-urls"></a>Creación de entradas de bloque para direcciones URL
+
+Tiene las siguientes opciones para crear entradas de bloque para direcciones URL:
+
+- [Página Envíos del portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-submissions-portal)
+- Lista de inquilinos permitidos o bloqueados en [el portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) o en [PowerShell](#use-powershell-to-create-block-entries-for-urls-in-the-tenant-allowblock-list)
+
+### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para direcciones URL en el portal envíos.
+
+Cuando use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar direcciones URL como **Debería haberse bloqueado (Falso negativo),** puede seleccionar **Bloquear este archivo** para agregar una entrada de bloque para la dirección URL en la Lista de inquilinos permitidos o bloqueados.
+
+Para obtener instrucciones, consulte [Notificar direcciones URL cuestionables a Microsoft](admin-submission.md#report-questionable-urls-to-microsoft).
+
+### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para direcciones URL en la lista de permitidos o bloques de inquilinos.
+
+Las entradas de bloque se crean para las direcciones URL directamente en la lista de permitidos o bloqueados de inquilinos.
+
+> [!NOTE]
+> Email mensajes que contienen estas direcciones URL bloqueadas se bloquean como *suplantación de identidad de alta confianza*.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Direcciones URL** .
+
+3. En la pestaña **Direcciones URL** , haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+
+4. En el control flotante **Bloquear direcciones URL** que aparece, configure los siguientes valores:
+
+   - **Agregar direcciones URL con caracteres comodín**: escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de dirección URL, consulte la sección [Sintaxis de dirección URL de la lista de permitidos o bloques](#url-syntax-for-the-tenant-allowblock-list) de inquilinos más adelante en este artículo.
+
+   - **Quitar entrada de bloque después**: El valor predeterminado es **30 días**, pero puede seleccionar entre los siguientes valores:
+     - **Nunca expirar**
+     - **1 día**
+     - **7 días**
+     - **30 días**
+     - **Fecha específica**: el valor máximo es de 90 días a partir de hoy.
+
+   - **Nota opcional**: escriba texto descriptivo para las entradas.
+
+5. Cuando haya terminado, haga clic en **Agregar**.
+
+#### <a name="use-powershell-to-create-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Uso de PowerShell para crear entradas de bloque para direcciones URL en la lista de inquilinos permitidos o bloqueados
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+
+```powershell
+New-TenantAllowBlockListItems -ListType Url -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate <Date> | -NoExpiration> [-Notes <String>]
+```
+
+En este ejemplo se agrega una entrada de dirección URL de bloque para contoso.com y todos los subdominios (por ejemplo, contoso.com y xyz.abc.contoso.com). Dado que no usamos los parámetros ExpirationDate o NoExpiration, la entrada expira después de 30 días.
+
+```powershell
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
+```
+
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas permitidas para direcciones URL en el portal envíos.
+
+No se pueden crear entradas de permitir direcciones URL directamente en la lista de permitidos o bloqueados de inquilinos. En su lugar, use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar el mensaje como falso positivo. Para obtener más información sobre los envíos de administradores, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, fish, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft](admin-submission.md).
+
+Al notificar la dirección URL como un falso positivo en la página Envíos, se agrega una entrada allow para la dirección URL en la lista de **permitidos o bloqueados** de inquilinos.
+
+> [!IMPORTANT]
+> Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas permitidas de direcciones URL innecesarias. Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué una dirección URL todavía se considera incorrecta.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , seleccione la pestaña **Direcciones URL** .
+
+3. En la pestaña **Direcciones URL** , haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
+
+   - **Seleccione el tipo de envío**: compruebe que la **dirección URL** del valor está seleccionada.
+
+   - **DIRECCIÓN URL**: escriba la dirección URL completa (por ejemplo, ) y selecciónela `https://www.fabrikam.com/marketing.html`en el cuadro que aparece.
+
+   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
+
+     - **Permitir esta dirección URL**: active esta opción ![Activar.](../../media/scc-toggle-on.png)
+
+         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
+           - **1 día**
+           - **7 días**
+           - **30 días**
+           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
+
+         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo esta dirección URL.
+
+   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+
+   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Envíe una dirección URL falsa positiva (buena) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-url-allow.png":::
+
+5. Transcurridos unos instantes, la entrada url allow aparecerá en la pestaña **URL** de la página **Lista de permitidos o bloqueados de inquilinos** .
+
+> [!NOTE]
+>
+> - Cuando se detecta de nuevo la dirección URL, no se envía para las comprobaciones de reputación de url o de detonación de [vínculos seguros](safe-links.md) , y se omiten todos los demás filtros basados en direcciones URL.
+> - Durante el flujo de correo, si los mensajes que contienen la dirección URL pasan otras comprobaciones que no son de dirección URL en la pila de filtrado, se entregarán los mensajes.
+
+## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para ver las entradas de permitir o bloquear las direcciones URL en la lista de permitidos o bloqueados de inquilinos
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **URL** . Las columnas siguientes están disponibles:
+
+   - **Valor**: la dirección URL.
+   - **Acción**: el valor **Permitir** o **Bloquear**.
+   - **Modificado por**
+   - **Actualizado por última vez**
+   - **Quitar en**: fecha de expiración.
+   - **Notas**
+
+   Haga clic en un encabezado de columna para ordenar en orden ascendente o descendente.
+
+   Haga clic en ![Icono de grupo.](../../media/m365-cc-sc-group-icon.png) **Agrupar** para agrupar los resultados por **Ninguno** o **Acción**.
+
+   Haga clic en el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Busque**, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![el icono Borrar búsqueda.](../../media/m365-cc-sc-close-icon.png) para borrar la búsqueda.
+
+   Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtre** para filtrar los resultados. Los siguientes valores están disponibles en el control flotante **Filtro** que aparece:
+
+   - **Acción**: **Permitir** y **bloquear**.
+   - **Nunca expirar**: ![activar.](../../media/scc-toggle-on.png) o ![desactivar.](../../media/scc-toggle-off.png)
+   - **Última actualización**: seleccione **Las** fechas De y **A** .
+   - **Quitar en**: seleccione **Las** fechas De y **A** .
+
+   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic en ![el icono](../../media/m365-cc-sc-clear-filters-icon.png) Borrar filtros **Borrar filtros** en el control flotante **Filtro** .
+
+### <a name="use-powershell-to-view-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Use PowerShell para ver las entradas de permitir o bloquear para direcciones URL en la lista de permitidos o bloqueados de inquilinos.
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url [-Allow] [-Block] [-Entry <URLValue>] [<-ExpirationDate <Date> | -NoExpiration>]
+```
+
+En este ejemplo se devuelven todas las direcciones URL permitidas y bloqueadas.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url
+```
+
+En este ejemplo se filtran los resultados mediante direcciones URL bloqueadas.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para modificar las entradas de permitir o bloquear para las direcciones URL en la lista de permitidos o bloqueados de inquilinos.
+
+Al modificar una entrada de dirección URL de permitir o bloquear en la lista Permitir o bloquear inquilinos, solo puede modificar la fecha de expiración y las notas.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **Direcciones URL.**
+
+3. En la pestaña **Direcciones URL** , active la casilla de la entrada que desea modificar y, a continuación, haga clic en el ![icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Botón Editar** que aparece.
+
+4. Los siguientes valores están disponibles en el control flotante **Editar dirección URL** que aparece:
+
+   - **Quite allow entry after (Permitir entrada) o** **Remove block entry after (Quitar entrada de bloque) después de**:
+     - Puede ampliar las entradas permitidas durante un máximo de 30 días después de la fecha de creación.
+     - Puede ampliar las entradas de bloque durante un máximo de 90 días después de la fecha de creación o establecerlas en **Nunca expirar**.
+
+   - **Nota opcional**
+
+   Cuando haya terminado, haga clic en **Guardar**.
+
+> [!NOTE]
+> Para permitir solo entradas, si selecciona la entrada haciendo clic en cualquier lugar de la fila que no sea la casilla, puede seleccionar ![Ver icono de envío.](../../media/m365-cc-sc-view-submission-icon.png) **Vea el envío** en el control flotante de detalles que parece ir a la página **Envíos** en <https://security.microsoft.com/reportsubmission>.
+
+### <a name="use-powershell-to-modify-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Uso de PowerShell para modificar entradas de permitir o bloquear para direcciones URL en la lista de permitidos o bloqueados de inquilinos
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+```
+
+En este ejemplo se cambia la fecha de expiración de la entrada de dirección URL de bloque especificada.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationDate "9/1/2022"
+```
+
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
+
+## <a name="use-the-microsoft-365-defender-portal-to-remove-allow-or-block-entries-for-urls-from-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para quitar entradas de permitir o bloquear para direcciones URL de la lista de permitidos o bloqueados de inquilinos
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **Direcciones URL** .
+
+3. En la pestaña **Direcciones URL** , realice uno de los pasos siguientes:
+
+   - Active la casilla de la entrada que desea quitar y, a continuación, haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Icono de eliminación** que aparece.
+   - Seleccione la entrada que desea quitar haciendo clic en cualquier lugar de la fila que no sea la casilla. En el control flotante de detalles que aparece, haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
+
+4. En el cuadro de diálogo de advertencia que aparece, haga clic en **Eliminar**.
+
+> [!NOTE]
+> Para seleccionar varias entradas, active cada casilla o seleccione todas las entradas seleccionando la casilla situada junto al encabezado **de columna Valor** .
+
+### <a name="use-powershell-to-remove-allow-or-block-entries-for-urls-from-the-tenant-allowblock-list"></a>Uso de PowerShell para quitar entradas de permitir o bloquear para direcciones URL de la lista de permitidos o bloqueados de inquilinos
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>>
+```
+
+En este ejemplo se quita la entrada de dirección URL de bloque especificada de la lista de permitidos o bloques de inquilinos.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -Entries "~cohovineyard.com
+```
+
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Sintaxis de dirección URL para la lista de permitidos o bloqueados de inquilinos
 
@@ -263,124 +517,9 @@ Las siguientes entradas no son válidas:
   - contoso.com/\*\*
   - contoso.com/\*/\*
 
-## <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de dirección URL de bloque en la lista de permitidos o bloqueados de inquilinos
-
-### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
-
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Direcciones URL** está seleccionada y, a continuación, haga clic en ![icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
-
-3. En el control flotante **Bloquear direcciones URL** que aparece, configure los siguientes valores:
-   - **Agregar direcciones URL con caracteres comodín**: escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de dirección URL, consulte la sección Sintaxis de dirección URL en [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
-   - **Nunca expire**: realice uno de los pasos siguientes:
-     - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
-
-       o
-
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Activar.](../../media/scc-toggle-on.png).
-   - **Nota opcional**: escriba texto descriptivo para las entradas.
-
-4. Cuando haya terminado, haga clic en **Agregar**.
-
-> [!NOTE]
-> Los correos electrónicos que contienen estas direcciones URL se bloquearán como _phish_.
-
-### <a name="use-powershell"></a>Usar PowerShell
-
-Para agregar entradas de dirección URL de bloque en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
-
-```powershell
-New-TenantAllowBlockListItems -ListType <Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-En este ejemplo se agrega una entrada de dirección URL de bloque para contoso.com y todos los subdominios (por ejemplo, contoso.com y xyz.abc.contoso.com). Dado que no usamos los parámetros ExpirationDate o NoExpiration, la entrada expira después de 30 días.
-
-```powershell
-New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
-```
-
-Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-## <a name="create-allow-url-entries"></a>Creación de entradas de direcciones URL permitidas
-
-### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
-
-Permitir direcciones URL en la página **Envíos** de Microsoft 365 Defender.
-
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Acciones & envíos envíos**\>. O bien, para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
-
-2. En la página **Envíos** , seleccione la pestaña **Direcciones URL** y, a continuación, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
-
-3. Use el control flotante **Enviar a Microsoft para revisar** para enviar un mensaje agregando la dirección URL.
-
-4. En la sección **Seleccionar un motivo para enviar a Microsoft**, seleccione **No debería haberse bloqueado (falso positivo).**
-
-5. Active la opción **Permitir direcciones URL como esta** .
-
-6. En la lista desplegable **Quitar después**, especifique cuánto tiempo desea que funcione la opción Permitir.
-
-7. Agregue por qué va a agregar allow mediante la **nota opcional**. 
-
-8. Cuando haya terminado, haga clic en el botón **Enviar** .
-
-    :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Enviar dirección URL para el análisis" lightbox="../../media/submit-url-for-analysis.png":::
-
-> [!NOTE]
->
-> - Cuando se vuelve a encontrar la dirección URL, la dirección URL no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en direcciones URL.
-> - Por lo tanto, para un correo electrónico (que contiene esta dirección URL), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
-
-## <a name="view-url-entries"></a>Ver entradas de dirección URL
-
-Para ver las entradas de direcciones URL de bloque en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType <URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-En este ejemplo se devuelven todas las direcciones URL bloqueadas.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-Para obtener información detallada sobre la sintaxis y los [parámetros, vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-## <a name="modify-url-entries"></a>Modificar entradas de dirección URL 
-
-Para modificar las entradas de dirección URL de permitir o bloquear en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
-
-```powershell
-Set-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-En este ejemplo se cambia la fecha de expiración de la entrada de dirección URL de bloque especificada.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
-```
-
-Para obtener información detallada sobre la sintaxis y los [parámetros, vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-## <a name="remove-url-entries"></a>Quitar entradas de dirección URL 
-
-Para quitar las entradas de dirección URL de permitir o bloquear de la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType <URL> -Ids <"Id1","Id2",..."IdN">
-```
-En este ejemplo se quita la entrada de dirección URL de bloque especificada de la lista de permitidos o bloques de inquilinos.
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
-```
-
-Para obtener información detallada sobre la sintaxis y los [parámetros, vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Envíos de administradores](admin-submission.md)
+- [Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.](admin-submission.md)
 - [Notificar falsos positivos y falsos negativos](report-false-positives-and-false-negatives.md)
 - [Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md)
 - [Permitir o bloquear archivos en la lista de inquilinos permitidos o bloqueados](allow-block-files.md)

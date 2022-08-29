@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de ingresos interiores de Nueva Zelanda.
-ms.openlocfilehash: 26604014771674a2177f3fee6c062e3bfcee4175
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7df444660c59bd12526d979dd93d5313814083f3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951207"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368085"
 ---
-# <a name="new-zealand-inland-revenue-number"></a>Número de ingresos interiores de Nueva Zelanda
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
+# <a name="new-zealand-inland-revenue-number"></a>Número de identificación fiscal de Nueva Zelanda
 
 ## <a name="format"></a>Formato
 
@@ -56,14 +48,14 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_new_zealand_inland_revenue_number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_new_zealand_inland_revenue_number` .
+- La función `Func_new_zealand_inland_revenue_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_new_zealand_inland_revenue_number`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_new_zealand_inland_revenue_number` busca contenido que coincida con el patrón.
+- La función `Func_new_zealand_inland_revenue_number` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->

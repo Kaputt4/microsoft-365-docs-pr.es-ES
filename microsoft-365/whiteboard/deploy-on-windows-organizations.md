@@ -12,16 +12,18 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo implementar Microsoft Whiteboard en dispositivos que ejecutan Windows 10 o versiones posteriores.
-ms.openlocfilehash: 96670b594babd8a2c61723ceab6ef826c1229764
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bdea83d61a22ecfa3b26feecf7d7711549ace463
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943472"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367717"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Implementación de La pizarra de Microsoft en dispositivos Windows 10
 
 La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versiones posteriores mediante Microsoft Intune o Microsoft Configuration Manager (anteriormente System Center Configuration Manager). La pizarra no se admite en Windows Server.
+
+Para implementar Whiteboard, primero debe asegurarse de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-organizations.md).
 
 - **Microsoft Intune mediante un modo de licencia en línea**: este proceso le permite especificar grupos de usuarios que recibirán acceso a la aplicación Whiteboard.
 
@@ -64,7 +66,7 @@ La pizarra se puede implementar en dispositivos que ejecutan Windows 10 o versio
 
 13. Para obtener más información, consulte [Instalación de aplicaciones para un dispositivo](/mem/configmgr/apps/deploy-use/install-app-for-device).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 

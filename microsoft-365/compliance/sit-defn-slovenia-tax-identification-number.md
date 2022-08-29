@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de identificación fiscal de Eslovenia.
-ms.openlocfilehash: baf6cef29b98b2963a4d3286e68c4d10008c415c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a7a27b7f0c63b8409bdaff18513ec760d0d704f9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950897"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368461"
 ---
 # <a name="slovenia-tax-identification-number"></a>Número de identificación fiscal de Eslovenia
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -52,14 +44,14 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_slovenia_eu_tax_file_number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_slovenia_eu_tax_file_number` .
+- La función `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_slovenia_eu_tax_file_number`.
 
 Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_slovenia_eu_tax_file_number` busca contenido que coincida con el patrón.
+- La función `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -81,21 +73,21 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - davčna številka
 - identifikacijska številka davka
 - številka davčne datoteke
-- archivo de impuestos no
+- archivo fiscal no
 - tax file number
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

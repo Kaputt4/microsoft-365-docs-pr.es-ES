@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configuración del analizador local de prevención de pérdidas de datos
-ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625443"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359173"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
@@ -126,7 +126,7 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
 
 1. Abra la [página Prevención de pérdidas de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el portal de cumplimiento normativo de Microsoft Purview y seleccione **Alertas**.
 
-2. Vea los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
+2. Consulte los procedimientos descritos en [Configuración y visualización de alertas de las directivas DLP para](dlp-configure-view-alerts-policies.md) ver las alertas de las directivas DLP locales.
 
 ### <a name="viewing-dlp-on-premises-scanner-in-activity-explorer-and-audit-log"></a>Ver el examinador local de DLP en el explorador de actividades y el registro de auditoría
 

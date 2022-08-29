@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre la administración de incidentes de seguridad
-ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
-ms.translationtype: HT
+ms.openlocfilehash: 1637ba7ca349916588d2f75369a1a5b849596285
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917941"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433437"
 ---
 # <a name="security-incident-management"></a>Administración de incidentes de seguridad
 
@@ -36,10 +36,7 @@ Después de configurar las funcionalidades de seguridad en Microsoft 365 Empre
 
 Para obtener más información sobre las respuestas a incidentes, consulte estos artículos:
 
-1. [Revise las recomendaciones de seguridad](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
-
-2. [Revisar las amenazas detectadas y tomar acciones](m365bp-review-threats-take-action.md).
-
-3. [Revisar las acciones de corrección](m365bp-review-remediation-actions-devices.md).
-
-4. [Responder a una cuenta de correo electrónico en peligro](../security/office-365-security/responding-to-a-compromised-email-account.md).
+- [Revise las recomendaciones de seguridad](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+- [Revisar las amenazas detectadas y tomar acciones](m365bp-review-threats-take-action.md).
+- [Revisar las acciones de corrección](m365bp-review-remediation-actions-devices.md).
+- [Responder a una cuenta de correo electrónico en peligro](../security/office-365-security/responding-to-a-compromised-email-account.md).

@@ -15,24 +15,24 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Obtenga información sobre dónde acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 63ec41e1865647caac60aa6fe91f69ed6c878e74
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Obtenga información sobre dónde acceder al Kit de laboratorio de implementación de Windows y Office.
+ms.openlocfilehash: fcb0b24480c61dcd5d3856aa800d6a30566d3b02
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115925"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433692"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
-El kit de laboratorio de implementación Windows y Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise o Windows 11 Empresas y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, etc. Este kit es muy recomendable para las organizaciones que se preparan para las actualizaciones de escritorio. Como entorno aislado, el laboratorio también es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
+El kit de laboratorio de implementación de Windows y Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise o Windows 11 Empresas y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot y mucho más. Este kit es muy recomendable para las organizaciones que se preparan para las actualizaciones de escritorio. Como entorno aislado, el laboratorio también es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
 Hay dos versiones del laboratorio disponibles para descarga gratuita:  
 
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
-|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_guides.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
+|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
@@ -41,14 +41,14 @@ El laboratorio proporciona un entorno de laboratorio virtual aprovisionado autom
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
 |Windows 10 Enterprise, versión 21H2|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager, versión 2203|Microsoft Endpoint Configuration Manager, versión 2203|
+|Microsoft Endpoint Configuration Manager, versión 2103|Microsoft Endpoint Configuration Manager, versión 2203|
 |Windows Assessment and Deployment Kit para Windows 10|Kit de evaluación e implementación de Windows para Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
 Los laboratorios también están diseñados para conectarse a pruebas para:
 
 - Microsoft 365 E5
-- Aplicaciones de Microsoft 365 para empresas
+- Microsoft 365 Apps para empresas
 - Office 365 E5 con Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Prácticas paso a paso
@@ -69,8 +69,8 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="service-windows"></a>Windows de servicio
 
-- Mantenimiento Windows mediante directiva de grupo
-- Mantenimiento Windows mediante Microsoft Intune
+- Mantenimiento de Windows mediante directiva de grupo
+- Mantenimiento de Windows mediante Microsoft Intune
 - Mantenimiento de Windows con Configuration Manager
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Implementación de Aplicaciones de Microsoft 365 para empresas
@@ -78,8 +78,8 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 - Implementación administrada en la nube
 - Implementación administrada localmente
 - Implementación de Aplicaciones Microsoft 365 para empresas en dispositivos no unidos a AD
-- Enterprise implementación administrada mediante Configuration Manager
-- Enterprise implementación administrada mediante Microsoft Intune
+- Implementación administrada de empresa mediante Configuration Manager
+- Implementación administrada por la empresa mediante Microsoft Intune
 - Mantenimiento Aplicaciones Microsoft 365 para empresas mediante Configuration Manager
 - Mantenimiento Aplicaciones Microsoft 365 para empresas mediante Intune
 - Implementación y administración de LOB con Microsoft Intune
@@ -90,7 +90,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 - Implementación y actualización de Edge
 - Modo IE
-- Configurar Enterprise página nueva pestaña
+- Página Configurar nueva pestaña De empresa
 
 ### <a name="security-and-compliance"></a>Seguridad y cumplimiento
 
@@ -105,11 +105,11 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. Los clientes virtuales expiran 90 días después de la activación del laboratorio. Los servidores virtuales expiran el 11 de septiembre de 2022. Las nuevas versiones de los laboratorios se publicarán antes de la expiración. 
+> Use una conexión a Internet de banda ancha para descargar este contenido y espere aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. Las máquinas virtuales cliente de Windows expiran 90 días después de la activación del laboratorio. Las nuevas versiones de los laboratorios se publicarán el 5 de noviembre de 2022 o antes. 
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
-- [Windows documentación y recursos de implementación de cliente](/windows/deployment)
+- [Documentación y recursos de implementación de cliente de Windows](/windows/deployment)
 - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Guía de implementación de Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)

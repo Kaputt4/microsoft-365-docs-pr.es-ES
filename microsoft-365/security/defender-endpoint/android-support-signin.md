@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 53c04c70291f20ccb23ed54d1de552efb8a7619e
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783433"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437776"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
@@ -67,7 +67,7 @@ Instale la versión más reciente y de [Microsoft Authenticator](https://play.go
 
 **Causa:**
 
-No tiene asignada Microsoft 365 licencia o su organización no tiene una licencia para Microsoft 365 Enterprise suscripción.
+No tiene asignada la licencia de Microsoft 365 o su organización no tiene una licencia para Microsoft 365 Enterprise suscripción.
 
 **Solución:**
 
@@ -103,9 +103,10 @@ Habilite el permiso necesario en dispositivos Xiaomi.
 
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>No se puede permitir el permiso para la "protección permanente" durante la incorporación en algunos dispositivos OEM
 
+
 **Se aplica a:** Solo dispositivos OEM específicos.
 
-- **Xiaomi con Android 11**
+- **Xiaomi**
 
 La aplicación Defender solicita el permiso Optimización de batería/Protección permanente en los dispositivos como parte de la incorporación de aplicaciones y al seleccionar **Permitir** se devuelve un error que indica que no se pudo establecer el permiso. Solo afecta al último permiso denominado "Protección permanente". 
 
@@ -115,30 +116,9 @@ Xiaomi cambió los permisos de optimización de batería en Android 11. Defender
 
 **Solución:**
 
-Estamos trabajando con OEM para encontrar una solución que habilite este permiso desde la pantalla de incorporación de aplicaciones. Actualizaremos la documentación cuando esto se resuelva.
-Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde la configuración del dispositivo: 
+>[!IMPORTANT]
+>Este problema se ha resuelto. Actualice a la versión más reciente de la aplicación para completar el proceso de incorporación. Si el problema persiste, envíe un **[comentario desde la aplicación](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
 
-1. Vaya a **Configuración** en el dispositivo.
-
-2. Busque y seleccione **Optimización de batería**.
-
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="Página en la que puede buscar y seleccionar Optimización de batería" lightbox="images/search-battery-optimisation.png":::
-
-3. En **Acceso especial a aplicaciones**, seleccione **Optimización de batería**.
-
-   :::image type="content" source="images/special-app-access.png" alt-text="El panel Acceso a la aplicación especial desde el que puede seleccionar Optimización de batería" lightbox="images/special-app-access.png":::
-
-4. Cambie el menú desplegable para mostrar **Todas las aplicaciones**.
-
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="La lista desplegable desde la que puede cambiar el valor a Todas las aplicaciones en el panel Optimización de batería" lightbox="images/show-all-apps-2.png":::
-
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="Lista desplegable que muestra la opción Todas las aplicaciones en el panel Optimización de batería" lightbox="images/show-all-apps-1.png":::
-
-5. Busque "Microsoft Defender para punto de conexión" y seleccione **No optimizar**.
-
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="Página que habilita la ubicación de la opción Microsoft Defender para punto de conexión y la selección de No optimizar" lightbox="images/select-dont-optimise.png":::
-
-Vuelva a la pantalla de incorporación Microsoft Defender para punto de conexión, seleccione **Permitir** y se le redirigirá a la pantalla del panel.
 
 ## <a name="send-in-app-feedback"></a>Enviar comentarios desde la aplicación
 

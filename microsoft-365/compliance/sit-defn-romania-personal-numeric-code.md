@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de código numérico personal (CNP) de Rumania.
-ms.openlocfilehash: 17650dd36a674a1b4af2bc68eb92c98f7ee345ec
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fdf0278c4d2dcfef43563285f6096b123cc4a5a5
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999650"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368331"
 ---
 # <a name="romania-personal-numeric-code-cnp"></a>Número del documento de identidad de Rumania (CNP)
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -105,24 +97,24 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - código numérico personal
 - anclar #
 - anclar
-- archivo de impuestos no
+- archivo fiscal no
 - tax file number
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria
 - número de identificación único
 - número de identidad único
 - uniqueidentityno #

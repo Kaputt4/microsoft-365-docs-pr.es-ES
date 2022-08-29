@@ -15,12 +15,12 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 90e116511f01f0e2a846ca32bcd21675c4b632fb
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ac8bb15d38e7eb517911ba2c63e25a50e4918e7e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275810"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383862"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para antivirus de Microsoft Defender
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-En la sección siguiente se describe el cmdlet de PowerShell Get-MpPerformanceReport. Analiza e informa sobre la grabación de rendimiento del Antivirus de Microsoft Defender (MDAV).
+En la sección siguiente se describe el cmdlet de PowerShell Get-MpPerformanceReport. Analiza e informa sobre la grabación de rendimiento del Antivirus de Microsoft Defender.
 
 #### <a name="syntax-get-mpperformancereport"></a>Sintaxis: Get-MpPerformanceReport
 
@@ -612,4 +612,4 @@ Si busca información relacionada con antivirus para otras plataformas, consulte
 - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-- [Configuración de características de Defender para punto de conexión en Android](android-configure.md)-  [Configuración de Pertahanan Microsoft untuk Titik Akhir en las características de iOS](ios-configure-features.md)
+- [Configuración de características de Defender para punto de conexión en Android](android-configure.md)-  [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

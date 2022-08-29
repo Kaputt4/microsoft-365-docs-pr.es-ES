@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00a43da0c6b817c6e53ef93ae27fa8e59d7c5341
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 19b7546f4c1730b4077d29d43d450a0701c5ae62
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300463"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385085"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -61,6 +61,26 @@ El panel Estado y cumplimiento del dispositivo se estructura en dos pestañas:
   - [Tarjeta de actualizaciones del motor antivirus](#antivirus-engine-updates-card)
   - [Tarjeta de actualizaciones de inteligencia de seguridad](#security-intelligence-updates-card)
   - [Tarjeta de actualizaciones de la plataforma antivirus](#antivirus-platform-updates-card)
+
+### <a name="report-access-permissions"></a>Permisos de acceso de informes
+
+Para acceder al informe de cumplimiento de antivirus y estado del dispositivo en el panel seguridad de Microsoft 365, se requieren los siguientes permisos:
+
+| Nombre del permiso | Tipo de permiso |
+|:---|:---|
+| Ver datos | Administración de amenazas y vulnerabilidades (TVM) |
+
+Para asignar estos permisos:
+
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el administrador de seguridad o Administrador global rol asignado.
+1. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
+1. Seleccione el rol que desea editar.
+1. Haga clic en **Editar**.
+1. En **Editar rol**, en la pestaña **General** , en **Nombre del** rol, escriba un nombre para el rol.
+1. En **Descripción** , escriba un breve resumen del rol.
+1. En **Permisos**, seleccione **Ver datos** y, en **Ver datos** , seleccione **Administración de amenazas y vulnerabilidades** (TVM).
+
+Para obtener más información sobre la administración de roles de usuario, consulte [Creación y administración de roles para el control de acceso basado en rol](user-roles.md).
 
 ### <a name="sensor-health--os-tab"></a>Pestaña del sistema operativo & estado del sensor
 
@@ -172,7 +192,7 @@ Puede usar el botón **Exportar** en el control flotante _de detalles del Antivi
 
 Para obtener más información sobre la exportación mediante la API, consulte los artículos siguientes:
 
-- [Exportación del informe de estado del antivirus de dispositivos](device-health-export-antivirus-health-report-api.md)
+- [Exportar informe de estado del antivirus del dispositivo](device-health-export-antivirus-health-report-api.md)
 - [Exportación de propiedades y métodos de API de detalles de estado del antivirus de dispositivo](device-health-api-methods-properties.md)
 
 #### <a name="microsoft-defender-antivirus-version-and-update-cards-functionality"></a>Versión del Antivirus de Microsoft Defender y funcionalidad de actualización de tarjetas

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f7a207d28fdc2afe046bc4f53e524dde2ef328a0
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102578"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67407985"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender
 
@@ -36,25 +36,25 @@ ms.locfileid: "66102578"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender para Office 365 organizaciones (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para Office 365 complementos del plan 2) contienen una variedad de informes relacionados con la seguridad. Si tiene los [permisos necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver y descargar estos informes en el portal de Microsoft 365 Defender.
+Microsoft Defender para Office 365 organizaciones (por ejemplo, Microsoft 365 E5 suscripciones o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para Office 365 complementos del plan 2) contienen una variedad de informes relacionados con la seguridad. Si tiene los [permisos necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver y descargar estos informes en el portal de Microsoft 365 Defender.
 
 ## <a name="view-and-download-reports"></a>Ver o descargar informes
 
 ### <a name="view-reports"></a>Ver informes
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** \> **correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. Para ir directamente a la página **De informes de colaboración & correo electrónico** , use <https://security.microsoft.com/emailandcollabreport>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a **Informes** \> **Email & colaboración** \> **Email & informes de colaboración**. Para ir directamente a la página **Email & informes de colaboración**, use <https://security.microsoft.com/emailandcollabreport>.
 
 1. Elija el informe que desea ver y, a continuación, seleccione **Ver detalles**.
 
 ### <a name="download-reports"></a>Descargar informes
 
-En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** > **por correo electrónico &** informes de colaboración \> **para su descarga**. Para ir directamente a la página **Informes para descarga** , use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** >  Email & informes de **colaboración** \> **para su descarga**. Para ir directamente a la página **Informes para descarga** , use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="La página Informes de colaboración por correo electrónico & en el portal de Microsoft 365 Defender" lightbox="../../media/email-collaboration-download-reports.png":::
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Página Email & informes de colaboración en el portal de Microsoft 365 Defender" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
-> Los informes de seguridad de correo electrónico que no requieren Defender para Office 365 se describen en [Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md).
+> Email informes de seguridad que no requieren Defender para Office 365 se describen en [Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md).
 >
 > Los informes relacionados con el flujo de correo están ahora en el Centro de administración de Exchange (EAC). Para obtener más información sobre estos informes, vea [Informes de flujo de correo en el nuevo Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -74,11 +74,11 @@ El **informe Latencia de correo** muestra una vista agregada de la latencia de e
 
 No se incluyen el lado cliente ni la latencia de red.
 
-Para ver el informe, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** \> **por correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. Para ir directamente a la página **De informes de colaboración & correo electrónico** , use <https://security.microsoft.com/emailandcollabreport>.
+Para ver el informe, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Informes** \> **Email & colaboración** \> **Email & informes de colaboración**. Para ir directamente a la página **Email & informes de colaboración**, use <https://security.microsoft.com/emailandcollabreport>.
 
-En la página **Informes de colaboración por correo electrónico &** , busque **Informe de latencia de correo** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, use <https://security.microsoft.com/mailLatencyReport>.
+En la página **Email & informes de colaboración**, busque **Informe de latencia de correo** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, use <https://security.microsoft.com/mailLatencyReport>.
 
-:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="Widget Informe de latencia de correo en la página Informes de colaboración de & correo electrónico" lightbox="../../media/mail-latency-report-widget.png":::
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="Widget informe de latencia de correo en la página informes de colaboración de Email &" lightbox="../../media/mail-latency-report-widget.png":::
 
 En la página **Informe de latencia de correo** , las pestañas siguientes están disponibles en la página **Informe de latencia de correo** :
 
@@ -104,7 +104,7 @@ Si hace clic en **Filtrar**, puede filtrar el gráfico y la tabla de detalles po
     - **Detonación en línea**: incluye mensajes que se prueban completamente antes de la entrega.
     - **Detonación asincrónica**
 
-Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
+Cuando haya terminado de configurar los filtros, haga clic en **el** icono](../../media/m365-cc-sc-clear-filters-icon.png) Aplicar, **Cancelar** o ![Borrar filtros **Borrar filtros**.
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
@@ -129,9 +129,9 @@ El informe **Principales remitentes y destinatarios** muestra los destinatarios 
 
 El **informe de protección de direcciones URL** proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como parte de [vínculos seguros](safe-links.md). Este informe no tendrá datos de clic de usuarios en los que se aplicó la directiva Vínculos seguros cuando no está seleccionada la opción **Seguimiento de clics de usuario** .
 
-Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Informes** \> **por correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. En la página **Informes de colaboración de & por correo electrónico** , busque **la página Protección de direcciones URL** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/URLProtectionActionReport>.
+Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com) y vaya a **Informes** \> **Email & informes de colaboración** \> **Email & colaboración**. En la página **Email & informes de colaboración**, busque **la página Protección de direcciones URL** y haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="Widget de informe de protección de direcciones URL en la página Informes de colaboración & correo electrónico" lightbox="../../media/url-protection-report-widget.png":::
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="Widget de informe de protección de direcciones URL en la página informes de colaboración de Email &" lightbox="../../media/url-protection-report-widget.png":::
 
 Las vistas disponibles en la página del informe **de protección de direcciones URL** se describen en las secciones siguientes.
 
@@ -149,7 +149,7 @@ En la vista **Ver datos por acción de protección de clics de dirección URL** 
 - **Bloqueado**: haga clic en Bloqueado.
 - **Bloqueado por el administrador de inquilinos**: los clics bloqueados en las directivas de vínculos seguros.
 - **Bloqueado y en el que se ha hecho clic**: clics bloqueados en los que los usuarios hacen clic en la dirección URL bloqueada.
-- **Bloqueado por el administrador de inquilinos y ha hecho clic en**: el administrador ha bloqueado el vínculo, pero el usuario ha hecho clic a través de.
+- **Bloqueado por el administrador de inquilinos y ha hecho clic en:** Administración ha bloqueado el vínculo, pero el usuario ha hecho clic.
 - **Se ha hecho clic durante el examen**: hace clic en el lugar donde los usuarios hacen clic en la página de examen pendiente en la dirección URL.
 - **Examen pendiente**: hace clic en las direcciones URL que están pendientes de un veredicto de examen.
 
@@ -169,7 +169,7 @@ Si hace clic en **Filtros**, puede modificar el informe y la tabla de detalles s
 - **Dominios**: los dominios de dirección URL que aparecen en los resultados del informe.
 - **Destinatarios**
 
-Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
+Cuando haya terminado de configurar los filtros, haga clic en **el** icono](../../media/m365-cc-sc-clear-filters-icon.png) Aplicar, **Cancelar** o ![Borrar filtros **Borrar filtros**.
 
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
@@ -198,7 +198,7 @@ Si hace clic en **Filtros**, puede modificar el informe y la tabla de detalles s
 - **Dominios**: los dominios de dirección URL que aparecen en los resultados del informe.
 - **Destinatarios**
 
-Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
+Cuando haya terminado de configurar los filtros, haga clic en **el** icono](../../media/m365-cc-sc-clear-filters-icon.png) Aplicar, **Cancelar** o ![Borrar filtros **Borrar filtros**.
 
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
@@ -217,7 +217,7 @@ Además de los informes descritos en este artículo, hay varios informes disponi
 |Informe|Tema|
 |---|---|
 |**Explorador** (Microsoft Defender para Office 365 Plan 2) o **detecciones en tiempo real** (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
-|Informes de seguridad de correo electrónico que no requieren Defender para Office 365|[Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md)|
+|Email informes de seguridad que no requieren Defender para Office 365|[Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md)|
 |Informes de flujo de correo en el Centro de administración de Exchange (EAC)|[Informes de flujo de correo en el nuevo Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 Cmdlets de informes de PowerShell:
@@ -243,7 +243,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota**: La adición de usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota**: La adición de usuarios al rol de Azure Active Directory correspondiente en la Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el portal de Microsoft 365 Defender _y_ permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

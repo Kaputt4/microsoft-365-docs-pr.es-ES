@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número SSN AHV de Suiza.
-ms.openlocfilehash: e06ef00d0d8c919f4506d829899b0f6150394854
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d4f5971a1ee2d0dcf96ee023ff609ba70f6ec052
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000064"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368177"
 ---
 # <a name="switzerland-ssn-ahv-number"></a>Número SSN AHV de Suiza
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -85,7 +77,7 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 ### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
 - Ahv
-- Ssn
+- ssn
 - pid
 - número de seguro
 - personalidno #

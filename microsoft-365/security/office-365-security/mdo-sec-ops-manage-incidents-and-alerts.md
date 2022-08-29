@@ -18,12 +18,12 @@ ms.custom: ''
 description: El personal de SecOps puede aprender a usar la cola incidentes de Microsoft 365 Defender para administrar incidentes en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ef744ec88f8ee81d33e537b5ffc9d128c724f84f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649374"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383840"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Administrar incidentes y alertas desde Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -120,7 +120,7 @@ Los equipos de seguridad pueden realizar una amplia variedad de acciones de resp
 
 - Puede notificar detecciones de falsos positivos o falsos negativos directamente a Microsoft mediante el [Explorador de amenazas](threat-explorer.md) o [los envíos de administrador](admin-submission.md).
 
-- Puede bloquear archivos malintencionados, direcciones URL o remitentes no detectados mediante la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+- Puede bloquear archivos malintencionados, direcciones URL o remitentes no detectados mediante la [lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).
 
 Defender para Office 365 acciones se integran sin problemas en las experiencias de búsqueda y el historial de acciones se ve en la pestaña **Historial** del **Centro de acciones** unificado en <https://security.microsoft.com/action-center/history>.
 
