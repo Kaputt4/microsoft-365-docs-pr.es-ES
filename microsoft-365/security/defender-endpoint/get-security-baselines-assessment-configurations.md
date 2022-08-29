@@ -1,6 +1,6 @@
 ---
 title: Configuraciones de evaluación de líneas base de seguridad
-description: Proporciona información sobre las configuraciones de evaluación de líneas base de seguridad que extraen datos "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
+description: Proporciona información sobre las configuraciones de evaluación de líneas base de seguridad que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cef91fd3aabb8d857abe8386933c986d62953c42
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 396f5f83123ec3040cd773e1fe2abd201bd8a3ae
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66998171"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344555"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Lista de configuraciones de evaluación de líneas base de seguridad
 
@@ -32,7 +32,7 @@ ms.locfileid: "66998171"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? [Regístrese para obtener una evaluación gratuita.- Actualizar](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## <a name="1-get-all-security-baselines-assessment-configurations"></a>1. Obtención de todas las configuraciones de evaluación de líneas de base de seguridad
 
@@ -67,9 +67,9 @@ Si se ejecuta correctamente, este método devuelve 200 Ok con la lista de config
 |Propiedad | Tipo | Descripción |
 |:---|:---|:---|
 |Id | Cadena | Identificador único de la configuración específica en la referencia comparativa de línea base.
-|name | String | El nombre de configuración en él aparece en la prueba comparativa.
+|name | Cadena | El nombre de configuración en él aparece en la prueba comparativa.
 |description | Cadena | Descripción de la configuración tal como aparece en la prueba comparativa.
-|categoría | String | La categoría de configuración tal como aparece en la prueba comparativa.
+|categoría | Cadena | La categoría de configuración tal como aparece en la prueba comparativa.
 |complianceLevel|Cadena|Nivel de cumplimiento de la prueba comparativa en la que aparece esta configuración.
 |`cce`|Int|El CCE para esta configuración tal como aparece en el punto de referencia.
 |Fundamento |Cadena|La justificación de esta configuración tal como aparece en la prueba comparativa. Para la prueba comparativa de STIG, esto no se proporciona para esta configuración.

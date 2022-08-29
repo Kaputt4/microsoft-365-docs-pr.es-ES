@@ -1,6 +1,6 @@
 ---
-title: Crear y administrar roles para el control de acceso basado en roles
-description: Cree roles y defina los permisos asignados al rol como parte de la implementación de control de acceso basada en roles en el Microsoft 365 Defender
+title: Creación y administración de roles para el control de acceso basado en rol
+description: Cree roles y defina los permisos asignados al rol como parte de la implementación del control de acceso basado en rol en el Microsoft 365 Defender
 keywords: roles de usuario, roles, acceso a rbac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91f9f7c48d63b200db28b29530d5c1f398877283
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324079"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345061"
 ---
-# <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
+# <a name="create-and-manage-roles-for-role-based-access-control"></a>Creación y administración de roles para el control de acceso basado en rol
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,67 +35,67 @@ ms.locfileid: "63324079"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Crear roles y asignar el rol a un Azure Active Directory grupo
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Creación de roles y asignación del rol a un grupo de Azure Active Directory
 
-Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender. Se supone que ya ha creado Azure Active Directory grupos de usuarios.
+Los pasos siguientes le guían sobre cómo crear roles en Microsoft 365 Defender. Se supone que ya ha creado grupos de usuarios de Azure Active Directory.
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con un administrador de seguridad o un rol de administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta con un administrador de seguridad o Administrador global rol asignado.
 
-2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
+2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 
 3. Seleccione **Agregar elemento**.
 
-4. Escriba el nombre, la descripción y los permisos del rol que desee asignar al rol.
+4. Escriba el nombre del rol, la descripción y los permisos que desea asignar al rol.
 
-5. Seleccione **Siguiente** para asignar el rol a un grupo Azure AD seguridad.
+5. Seleccione **Siguiente** para asignar el rol a un grupo de seguridad de Azure AD.
 
-6. Use el filtro para seleccionar el Azure AD que desea agregar a este rol.
+6. Use el filtro para seleccionar el grupo de Azure AD al que desea agregar este rol.
 
-7. **Guardar y cerrar**.
+7. **Guarde y cierre**.
 
-8. Aplica las opciones de configuración.
+8. Aplique los valores de configuración.
 
 > [!IMPORTANT]
-> Después de crear roles, tendrás que crear un grupo de dispositivos y proporcionar acceso al grupo de dispositivos al asignarlo a un rol que acaba de crear.
+> Después de crear roles, deberá crear un grupo de dispositivos y proporcionar acceso al grupo de dispositivos mediante su asignación a un rol que acaba de crear.
 
 ### <a name="permission-options"></a>Opciones de permiso
 
 - **Ver datos**
-  - **Operaciones de seguridad** : ver todos los datos de operaciones de seguridad en el portal
-  - **Amenaza y administración de vulnerabilidades**: ver Administración de amenazas y vulnerabilidades datos en el portal
+  - **Operaciones de seguridad** : visualización de todos los datos de operaciones de seguridad en el portal
+  - **Administración de amenazas y vulnerabilidades** : visualización de datos de Administración de vulnerabilidades de Defender en el portal
 
 - **Acciones de corrección activas**
-  - **Operaciones de seguridad** : realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
-  - **Amenazas y administración de vulnerabilidades: control de excepciones**: crear nuevas excepciones y administrar excepciones activas
-  - **Amenazas y administración de vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
+  - **Operaciones de seguridad** : realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para la automatización e indicadores
+  - **Administración de amenazas y vulnerabilidades: control de excepciones** : creación de nuevas excepciones y administración de excepciones activas
+  - **Administración de amenazas y vulnerabilidades: control de correcciones** : envío de nuevas solicitudes de corrección, creación de vales y administración de actividades de corrección existentes
 
-- **Investigación de alertas** : administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE)
+- **Investigación de alertas** : administre alertas, inicie investigaciones automatizadas, ejecute exámenes, recopile paquetes de investigación, administre etiquetas de dispositivo y descargue solo archivos ejecutables portátiles (PE).
 
-- **Administrar la configuración del** sistema del portal: configurar las opciones de almacenamiento, SIEM y la API intel de amenazas (se aplica globalmente), la configuración avanzada, las cargas automatizadas de archivos, los roles y los grupos de dispositivos
+- **Administración de la configuración del sistema del portal** : configuración de la configuración de almacenamiento, SIEM y amenazas de la API intel (se aplica globalmente), opciones avanzadas, cargas de archivos automatizadas, roles y grupos de dispositivos
 
     > [!NOTE]
-    > Esta configuración solo está disponible en el rol Administrador de Microsoft Defender para puntos de conexión (predeterminado).
+    > Esta configuración solo está disponible en el rol de administrador de Microsoft Defender para punto de conexión (valor predeterminado).
 
-- **Administrar la configuración de seguridad** en el Centro de seguridad: configure la configuración de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, administre las notificaciones de correo electrónico y administre el laboratorio de evaluación
+- **Administración de la configuración de seguridad en Security Center** : configuración de la supresión de alertas, administración de exclusiones de carpetas para la automatización, incorporación y eliminación de dispositivos, administración de notificaciones por correo electrónico y administración del laboratorio de evaluación
 
-- **Capacidades de respuesta en directo**
-  - **Comandos** básicos:
-    - Iniciar una sesión de respuesta en directo
-    - Realizar comandos de solo lectura de respuesta en directo en dispositivo remoto (excepto copia y ejecución de archivos)
-    - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
-  - **Comandos** avanzados:
-    - Descargar archivos PE y que no son PE de la página de archivos
-    - Upload un archivo al dispositivo remoto
-    - Ver un script desde la biblioteca de archivos
-    - Ejecutar un script en el dispositivo remoto desde la biblioteca de archivos
+- **Funcionalidades de respuesta dinámica**
+  - **Comandos básicos** :
+    - Inicio de una sesión de respuesta dinámica
+    - Realizar comandos de respuesta dinámica de solo lectura en el dispositivo remoto (excepto la copia y ejecución de archivos)
+    - Descarga de un archivo desde el dispositivo remoto a través de una respuesta en directo
+  - **Comandos avanzados** :
+    - Descarga de archivos PE y no PE desde la página de archivos
+    - Carga de un archivo en el dispositivo remoto
+    - Visualización de un script desde la biblioteca de archivos
+    - Ejecución de un script en el dispositivo remoto desde la biblioteca de archivos
 
-Para obtener más información sobre los comandos disponibles, consulta [Investigar dispositivos con live response](live-response.md).
+Para obtener más información sobre los comandos disponibles, consulte [Investigación de dispositivos con respuesta dinámica](live-response.md).
 
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el administrador de seguridad o Administrador global rol asignado.
 
-2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
+2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 
 3. Seleccione el rol que desea editar.
 
@@ -103,13 +103,13 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 5. Modifique los detalles o los grupos asignados al rol.
 
-6. Haga **clic en Guardar y cerrar**.
+6. Haga clic en **Guardar y cerrar**.
 
-## <a name="delete-roles"></a>Eliminar roles
+## <a name="delete-roles"></a>Eliminación de roles
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el administrador de seguridad o Administrador global rol asignado.
 
-2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
+2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 
 3. Seleccione el rol que desea eliminar.
 

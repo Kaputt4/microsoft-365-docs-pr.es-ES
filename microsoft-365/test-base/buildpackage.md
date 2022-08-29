@@ -8,24 +8,24 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 02/28/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: db09d1b182965c0a21945b025601c21d5100212b
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 75de203a09b27870287ec1253d2f485575d188ee
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952916"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315534"
 ---
 # <a name="build-a-package"></a>Compilación de un paquete
 
 Un paquete es un archivo .zip que contiene los scripts binarios y de prueba de la aplicación, que es el requisito previo para usar Test Base. Este inicio rápido le guiará para compilar el primer paquete, con el que puede realizar pruebas rápidas en la aplicación.
 
-- *Una prueba lista para usar **(OOB)** realiza una instalación, inicio, cierre y desinstalación de la aplicación. Después de la instalación, la rutina de inicio y cierre se repite 30 veces antes de que se ejecute una sola desinstalación. La prueba de OOB proporciona telemetría estandarizada en el paquete para compararla entre Windows compilaciones.*
+- *Una prueba lista para usar **(OOB)** realiza una instalación, inicio, cierre y desinstalación de la aplicación. Después de la instalación, la rutina de inicio y cierre se repite 30 veces antes de que se ejecute una sola desinstalación. La prueba de OOB proporciona telemetría estandarizada en el paquete para compararlo entre compilaciones de Windows.*
 
 Opcionalmente, puede descargar nuestro [paquete de ejemplo](https://aka.ms/testbase-sample-package) para hacer referencia y empezar por.
 
@@ -165,7 +165,7 @@ Sin embargo, se recomienda ejecutar la prueba localmente para asegurarse de que 
 
 1. Preparación de una máquina virtual (máquina virtual)
 
-   Se recomienda usar una máquina virtual para esta prueba local, ya que actualmente se necesita un entorno de Windows limpio para cada prueba. Es fácil crear una máquina virtual Windows en Azure ([inicio rápido: Windows máquina virtual](/azure/virtual-machines/windows/quick-create-portal)), puede seleccionar una versión de Windows adecuada (imagen) para la prueba, por ejemplo, *Windows 10 Pro, versión 21H2.*<br>
+   Se recomienda usar una máquina virtual para esta prueba local, ya que actualmente se necesita un entorno de Windows limpio para cada prueba. Es fácil crear una máquina virtual Windows en Azure ([inicio rápido: Máquina virtual Windows](/azure/virtual-machines/windows/quick-create-portal)), puede seleccionar una versión adecuada de Windows (imagen) para la prueba, por ejemplo, *Windows 10 Pro, versión 21H2.*<br>
 
 2. Copia del paquete en la máquina virtual
 
@@ -216,4 +216,4 @@ Después de cada paso, puede comprobar si hay algún problema en el script. Si t
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-[Upload un paquete](uploadApplication.md)
+[Carga de un paquete](uploadApplication.md)

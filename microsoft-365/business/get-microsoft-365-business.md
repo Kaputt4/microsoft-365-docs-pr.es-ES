@@ -1,5 +1,5 @@
 ---
-title: Obtener Microsoft 365 Empresa Premium desde el centro de partners
+title: Obtener Microsoft 365 Empresa Premium del centro de partners
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,23 +24,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Descubra las opciones para comprar Microsoft 365 Empresa Premium instrucciones paso a paso para comprarla en el Centro de partners de Microsoft.
-ms.openlocfilehash: f22fc831cb52e23a61e64950a2b9396d85a15dca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Descubra las opciones para comprar Microsoft 365 Empresa Premium e instrucciones paso a paso para comprarlo en el Centro de partners de Microsoft.
+ms.openlocfilehash: 98e3253002681721d888363d6ce984bd6eeb2c09
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175664"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343707"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
 
 ## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Obtener Microsoft 365 Empresa Premium de Microsoft
 
-Si no tiene un socio y desea obtener Microsoft 365 Empresa Premium, puede [comprarlo aquí](https://www.microsoft.com/en-US/microsoft-365/business).
+Si no tiene un socio y quiere obtener Microsoft 365 Empresa Premium, puede [comprarlo aquí](https://www.microsoft.com/microsoft-365/business).
 
-Consulta [Registrarse para obtener Microsoft 365 Empresa Premium](sign-up.md) instrucciones detalladas.
+Consulte [Registrarse para obtener Microsoft 365 Empresa Premium](sign-up.md) para obtener instrucciones detalladas.
 
-También puedes dirigirte [a](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) un Microsoft Store para comprar Microsoft 365 Empresa Premium y obtener ayuda de configuración.
+También puedes ir a una [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en_US_Store_UH_FAS) para comprar Microsoft 365 Empresa Premium y obtener ayuda para la configuración.
   
 ## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Obtener Microsoft 365 Empresa Premium del Centro de partners de Microsoft
 
@@ -50,9 +50,9 @@ También puedes dirigirte [a](https://www.microsoft.com/en-us/store/locations/fi
     
     ![En el Centro de partners de Microsoft, agregue un cliente.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. En la página Suscripción **del** cliente, seleccione **Agregar** **suscripción,** elija la opción Pequeña empresa en Catálogo y, a continuación, elija Microsoft 365 Empresa Premium .
+3. En la página **Suscripción** del cliente, seleccione **Agregar suscripción**, elija la opción Pequeña empresa en Catálogo y, a continuación, elija **Microsoft 365 Empresa Premium**.
     
-    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, vea [Microsoft 365 Enterprise](../enterprise/index.yml) en su lugar. 
+    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, consulte [Microsoft 365 Enterprise](../enterprise/index.yml) en su lugar. 
     
     ![En la página Nueva suscripción, elija pequeña empresa.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

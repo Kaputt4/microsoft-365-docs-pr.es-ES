@@ -402,32 +402,46 @@
       items:
         - name: Guías paso a paso de Microsoft Defender para Office 365 y cómo usarlas
           href: step-by-step-guides/step-by-step-guide-overview.md
-        - name: "(Falsos negativos) Cómo controlar los correos electrónicos malintencionados que se entregan a los destinatarios mediante Microsoft\_Defender para Office\_365"
-          href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
-        - name: "(Falsos positivos) Cómo controlar los correos electrónicos legítimos que se bloquean para que no se entreguen con Microsoft\_Defender para Office\_365"
-          href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
-        - name: Cómo configurar directivas y permisos de cuarentena
-          href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-        - name: Manténgase informado de los próximos cambios en Microsoft Defender para Office 365 mediante el centro de mensajes
-          href: step-by-step-guides/stay-informed-with-message-center.md
-        - name: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
-          href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
-        - name: 'Cómo priorizar, administrar, investigar y actuar ante incidentes en Microsoft 365 Defender'
-          href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
-        - name: Cómo ejecutar simulaciones de ataques para su equipo
-          href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
-        - name: Cómo configurar ataques automatizados y aprendizaje con Aprendizaje de simulación de ataques
-          href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
-        - name: Optimización y corrección de directivas de seguridad con el analizador de configuración
-          href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
-        - name: Proteja su c-suite con la protección de cuentas prioritaria
-          href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
-        - name: "Buscar correos electrónicos y corregir amenazas mediante el Explorador de amenazas en Microsoft\_365\_Defender"
-          href: step-by-step-guides/search-for-emails-and-remediate-threats.md
-        - name: "Conectar Microsoft\_Defender para Office\_365 a Microsoft\_Sentinel"
-          href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
-        - name: Cómo priorizar y administrar las investigaciones y respuestas automatizadas (AIR)
-          href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
+        - name: Configurar
+          items:
+            - name: Cómo configurar directivas y permisos de cuarentena
+              href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+            - name: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
+              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+            - name: "Conectar Microsoft\_Defender para Office\_365 a Microsoft\_Sentinel"
+              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: "Conectar Microsoft\_Defender para Office\_365 a Microsoft\_Sentinel"
+              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: Implementación y configuración del complemento de mensaje de informe
+              href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
+            - name: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
+              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: Utilice
+          items:
+            - name: Manténgase informado de los próximos cambios en Microsoft Defender para Office 365 mediante el centro de mensajes
+              href: step-by-step-guides/stay-informed-with-message-center.md
+            - name: 'Cómo priorizar, administrar, investigar y actuar ante incidentes en Microsoft 365 Defender'
+              href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
+            - name: Cómo ejecutar simulaciones de ataques para su equipo
+              href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+            - name: Cómo configurar ataques automatizados y aprendizaje con Aprendizaje de simulación de ataques
+              href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+            - name: Optimización y corrección de directivas de seguridad con el analizador de configuración
+              href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+            - name: Proteja su c-suite con la protección de cuentas prioritaria
+              href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+            - name: "Buscar correos electrónicos y corregir amenazas mediante el Explorador de amenazas en Microsoft\_365\_Defender"
+              href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+            - name: Cómo priorizar y administrar las investigaciones y respuestas automatizadas (AIR)
+              href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
+        - name: Diagnóstico
+          items:
+            - name: "(Falsos negativos) Cómo controlar los correos electrónicos malintencionados que se entregan a los destinatarios mediante Microsoft\_Defender para Office\_365"
+              href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+            - name: "(Falsos positivos) Cómo controlar los correos electrónicos legítimos que se bloquean para que no se entreguen con Microsoft\_Defender para Office\_365"
+              href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+            - name: Evaluación del impacto de los cambios de configuración de seguridad con el Explorador
+              href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
     - name: Referencia
       items:
         - name: Retención de datos de Defender para Office 365

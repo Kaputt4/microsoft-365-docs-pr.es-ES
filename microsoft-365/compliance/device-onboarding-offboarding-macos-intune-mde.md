@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante Microsoft Intune para clientes de MDE
-ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b14b8c8385bd1a67265b36006c35d35612a32e3c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623039"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385515"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión
 
@@ -86,22 +86,28 @@ acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. En la página **Perfiles de configuración** , elija el perfil que acaba de crear, en este ejemplo *AccessibilityformacOS* y elija **Estado del dispositivo** para ver una lista de dispositivos y el estado de implementación del perfil de configuración.
 
-### <a name="update-configuration-profiles"></a>Actualizar perfiles de configuración
+### <a name="update-existing-system-configuration-profiles"></a>Actualización de perfiles de configuración del sistema existentes
 
-1. Actualice el perfil de acceso al disco completo existente con el archivo **fulldisk.mobileconfig** .
 
-1. Actualizar el perfil de preferencias de MDE con estos valores
-   
+1. Se debería haber creado e implementado previamente un perfil de configuración de acceso a disco completo para MDE.  Consulte [Implementación basada en Intune para Microsoft Defender para punto de conexión en Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access). DLP de punto de conexión requiere un permiso de acceso de disco completo adicional para una nueva aplicación: `com.microsoft.dlp.daemon`. 
+    1. Actualice el perfil de configuración de Fullfull Disk Access existente con el archivo fulldisk.mobileconfig. 
+
+
+1. Busque el perfil de configuración de preferencias MDE existente. Consulte [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
+    1. Agregue una nueva clave al perfil con estos valores:
+
 ```xml
-<key>features</key>
-<dict>
-    <key>systemExtensions</key>
-    <string>enabled</string>
-    <key>dataLossPrevention</key>
-    <string>enabled</string>
-</dict>
-```
+<key>features</key> 
+<dict> 
+    <key>systemExtensions</key> 
+    <string>enabled</string> 
+    <key>dataLossPrevention</key> 
+    <string>enabled</string> 
+</dict> 
+``` 
 
+Este es un [ejemplo de mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+ 
 ## <a name="offboard-macos-devices-using-intune"></a>Dispositivos macOS fuera del panel con Intune
 
 > [!IMPORTANT]

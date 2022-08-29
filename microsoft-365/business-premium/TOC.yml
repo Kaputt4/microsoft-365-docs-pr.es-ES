@@ -2,7 +2,7 @@
   items:
     - name: Información general
       href: index.md
-    - name: Ejecutar su negocio de forma más segura
+    - name: Productividad y seguridad
       href: m365bp-secure-users.md
     - name: cuaderno de estrategias de prueba de Microsoft 365 Empresa Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -76,10 +76,10 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protección de dispositivos Windows
           items:
-            - name: Actualizar a Windows 10 Pro (si es necesario)
-              href: m365bp-upgrade-windows-10-pro.md
             - name: Proteger dispositivos Windows
               href: m365bp-secure-windows-devices.md
+            - name: Actualizar a Windows 10 Pro (si es necesario)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Administrar dispositivos Windows
               href: m365bp-manage-windows-devices.md
             - name: Preparar la implementación del cliente Office
@@ -128,7 +128,21 @@
       href: microsoft-365-business-faqs.yml
     - name: Contenido de administrador de Microsoft 365
       href: /microsoft-365/admin/
-    - name: Configuración de Autopilot
+    - name: Microsoft Defender para Empresas
+      href: ../security/defender-business/index.yml
+    - name: Microsoft Defender para Office 365
+      href: ../security/office-365-security/overview.md
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md
+    - name: Protección contra amenazas por antivirus de Microsoft Defender
+      href: m365bp-threats-detected-defender-av.md
+    - name: Intune roles de administrador
+      href: m365bp-intune-admin-roles-in-the-mac.md
+    - name: Asignar funciones de protección a la configuración de Intune
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Administrador de cumplimiento
+      href: m365bp-set-up-compliance.md
+    - name: Windows Autopilot
       items:
         - name: Agregar dispositivos y perfil de Autopilot
           href: m365bp-add-Autopilot-devices-and-profile.md
@@ -140,15 +154,3 @@
       href: m365bp-app-protection-settings-for-android-and-ios.md
     - name: Validación de la configuración de la aplicación en Android e iOS
       href: m365bp-validate-settings-on-android-or-ios.md
-    - name: Asignar funciones de protección a la configuración de Intune
-      href: m365bp-map-protection-features-to-intune-settings.md
-    - name: Intune roles de administrador
-      href: m365bp-intune-admin-roles-in-the-mac.md
-    - name: Configuración del Administrador de cumplimiento
-      href: m365bp-set-up-compliance.md
-    - name: Microsoft Defender para Empresas
-      href: ../security/defender-business/index.yml
-    - name: Microsoft Defender para Office 365
-      href: ../security/office-365-security/overview.md
-    - name: Microsoft 365 Lighthouse
-      href: ../lighthouse/m365-lighthouse-overview.md

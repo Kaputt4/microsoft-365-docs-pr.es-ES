@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 392b6d2b8a64908c66a7c84302f893d8f61a4680
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607309"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343851"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -64,7 +64,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
 
   - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
-  - <sup>\*</sup>Los miembros del grupo de roles **Administrador de cuarentena** en **Correo electrónico &** roles de colaboración en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) también deben ser miembros del grupo de roles **Administración de higiene** de [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para realizar procedimientos de cuarentena en Exchange Online PowerShell.
+  - <sup>\*</sup>Los miembros del grupo de roles **Administrador de cuarentena** de Email & roles de **colaboración** en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) también deben ser miembros del grupo de roles Administración de **higiene** de [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para realizar procedimientos de cuarentena en Exchange Online PowerShell .
 
 - Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado en función del motivo por el que se pusieron en cuarentena. Una vez expirado el período de retención, los mensajes se eliminan automáticamente y no se pueden recuperar. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en EOP y Defender para Office 365](quarantine-email-messages.md).
 
@@ -74,7 +74,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Colaboración y correos electrónicos** \> **Revisar** \> **Cuarentena**. Para ir directamente a la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
 
-2. En la página **Cuarentena** , compruebe que la pestaña **Correo electrónico** está seleccionada.
+2. En la página **Cuarentena**, compruebe que la pestaña **Email** está seleccionada.
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas**  para cambiar las columnas que se muestran. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
@@ -114,7 +114,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
      - **Masivo**
      - **Correo no deseado**
      - **Malware**: directivas antimalware en EOP o directivas de datos adjuntos seguros en Defender para Office 365. El valor **tipo de directiva** indica qué característica se usó.
-     - **Phishing**: el veredicto de filtro de correo no deseado era **suplantación de identidad (phishing** ) o protección contra suplantación de identidad puso en cuarentena el mensaje ([configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) o [protección contra suplantación] (set-up-anti-phishing-policies).
+     - **Phishing**: El veredicto de seguridad del filtro de correo no deseado fue **suplantado** o la protección contra suplantación de identidad puso el mensaje en cuarentena ([configuración de suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) o [protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Suplantación de identidad de alta confianza**
    - **Destinatario**: **todos los usuarios** o **Solo yo**. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
    - **Estado de versión**: Cualquiera de los siguientes valores:
@@ -139,7 +139,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
    Cuando haya introducido los criterios de búsqueda, pulse Entrar para filtrar los resultados.
 
    > [!NOTE]
-   > El cuadro **Buscar** de la página **cuarentena** principal buscará solo los elementos en cuarentena en la vista actual, no en toda la cuarentena. Para buscar en todos los elementos en cuarentena, use **El filtro** y el control flotante **Filtros** resultante. 
+   > El cuadro **Buscar** de la página **Cuarentena** principal buscará solo los elementos en cuarentena en la vista actual, no en toda la cuarentena. Para buscar en todos los elementos en cuarentena, use **Filtrar** y el control flotante **Filtros** resultante. 
 
 Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje para ver los detalles del mismo y para realizar una acción (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
 
@@ -219,7 +219,7 @@ Las siguientes acciones están disponibles después de hacer clic en ![el icono 
 - ![Icono Bloquear remitente.](../../media/m365-cc-sc-block-sender-icon.png) Icono Bloquear remitente **Bloquear remitente**: añade el remitente a la lista de remitentes bloqueados del **Buzón**. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - ![Icono Enviar solo.](../../media/m365-cc-sc-create-icon.png) **Enviar solo**: informa del mensaje a Microsoft para su análisis. En el control flotante que aparece, elija las siguientes opciones:
-  - **Seleccione el tipo de envío**: **Correo electrónico** (valor predeterminado), **DIRECCIÓN URL** o **Archivo**.
+  - **Seleccione el tipo de envío**: **Email** (valor predeterminado), **DIRECCIÓN URL** o **Archivo**.
   - **Agregue el identificador de mensaje de red o cargue el archivo de correo electrónico**: seleccione una de las siguientes opciones:
     - **Agregue el identificador de mensaje de red de correo electrónico** (valor predeterminado, con el valor correspondiente en el cuadro)
     - **Cargar el archivo de correo electrónico (.msg o eml):** haga clic en **Examinar archivos** para buscar y seleccione el archivo de mensajes .msg o .eml que se va a enviar.
@@ -289,7 +289,7 @@ En las organizaciones con Defender para Office 365, los administradores pueden a
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Colaboración y correos electrónicos** \> **Revisar** \> **Cuarentena**. Para ir directamente a la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
 
-2. En la página **Cuarentena** , seleccione la pestaña **Archivos** (**Correo electrónico** es la pestaña predeterminada).
+2. En la página **Cuarentena**, seleccione la pestaña **Archivos** (**Email** es la pestaña predeterminada).
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas** para cambiar las columnas que se muestran. Las columnas predeterminadas se marcan con un asterisco (<sup>\*</sup>):
    - **Usuario**<sup>\*</sup>

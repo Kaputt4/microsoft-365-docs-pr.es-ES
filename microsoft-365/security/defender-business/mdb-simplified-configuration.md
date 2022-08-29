@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c28dd807a2f2391f3360b1ca459d6efe42d14c6f
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: f73543937b1569db337703b52c5fa9efeb8292a2
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309579"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319482"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Proceso de configuración simplificado en Microsoft Defender para Empresas
 
@@ -37,7 +37,6 @@ Para incorporar dispositivos y configurar opciones de seguridad para los disposi
 
 1. [Revise las opciones de configuración y configuración](#review-your-setup-and-configuration-options).
 2. [Continúe con los pasos siguientes](#next-steps).
-
 
 ## <a name="review-your-setup-and-configuration-options"></a>Revise las opciones de configuración y configuración
 

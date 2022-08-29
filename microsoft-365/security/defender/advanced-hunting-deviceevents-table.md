@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre antivirus, firewall y otros tipos de eventos en la tabla eventos de dispositivos varios (DeviceEvents) del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos de seguridad, antivirus, firewall, protección contra vulnerabilidades de seguridad, DeviceEvents
+description: Obtenga información sobre antivirus, firewall y otros tipos de eventos en la tabla de eventos de dispositivo varios (DeviceEvents) del esquema de búsqueda avanzada.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos de seguridad, antivirus, firewall, protección contra vulnerabilidades de seguridad, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 54eef2d828f9a236ae457769c8c4ff9ba429dac9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 423e7934702197b97f148ff5285e5f51b4a5da54
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531116"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384888"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,44 +33,44 @@ ms.locfileid: "61531116"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-La tabla o eventos de dispositivos varios del esquema de búsqueda avanzada contiene información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como Antivirus de Windows Defender protección contra vulnerabilidades de `DeviceEvents` seguridad. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+Los diversos eventos de dispositivo o `DeviceEvents` la tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como antivirus de Microsoft Defender y protección contra vulnerabilidades de seguridad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
+> Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
 | `DeviceId` | `string` | Identificador único para el equipo en servicio |
 | `DeviceName` | `string` | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
+| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Consulte la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información. |
 | `FileName` | `string` | Nombre del archivo donde se aplicó la acción registrada |
-| `FolderPath` | `string` | Carpeta que contiene el archivo al que se aplicó la acción grabada |
+| `FolderPath` | `string` | Carpeta que contiene el archivo al que se aplicó la acción registrada |
 | `SHA1` | `string` | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | `string` | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
-| `MD5` | `string` | Hash MD5 del archivo al que se aplicó la acción grabada |
+| `MD5` | `string` | Hash MD5 del archivo al que se aplicó la acción registrada |
 | `FileSize` | `long` | Tamaño del archivo en bytes |
 | `AccountDomain` | `string` | Dominio de la cuenta |
 | `AccountName` | `string` | Nombre de usuario de la cuenta |
 | `AccountSid` | `string` | Identificador de seguridad (SID) de la cuenta |
 | `RemoteUrl` | `string` | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
-| `RemoteDeviceName` | `string` | Nombre de la máquina que realizó una operación remota en la máquina afectada. Según el evento notificado, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio |
+| `RemoteDeviceName` | `string` | Nombre de la máquina que realizó una operación remota en la máquina afectada. En función del evento que se notifica, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio. |
 | `ProcessId` | `int` | Identificador de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | `string` | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | `datetime` | Fecha y hora en que se creó el proceso |
-| `ProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso recién creado |
-| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
-| `RegistryKey` | `string` | Clave del Registro a la que se aplicó la acción grabada |
-| `RegistryValueName` | `string` | Nombre del valor del Registro al que se aplicó la acción grabada |
-| `RegistryValueData` | `string` | Datos del valor del Registro al que se aplicó la acción grabada |
+| `ProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso recién creado |
+| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en la misma máquina solo entre reinicios |
+| `RegistryKey` | `string` | Clave del Registro a la que se aplicó la acción registrada |
+| `RegistryValueName` | `string` | Nombre del valor del Registro al que se aplicó la acción registrada |
+| `RegistryValueData` | `string` | Datos del valor del Registro al que se aplicó la acción registrada |
 | `RemoteIP` | `string` | Dirección IP a la que se ha conectado |
 | `RemotePort` | `int` | Puerto TCP en el dispositivo remoto al que se estaba conectando |
-| `LocalIP` | `string` | Dirección IP asignada al equipo local usado durante la comunicación |
-| `LocalPort` | `int` | Puerto TCP en el equipo local usado durante la comunicación |
-| `FileOriginUrl` | `string` | DIRECCIÓN URL desde la que se descargó el archivo |
+| `LocalIP` | `string` | Dirección IP asignada a la máquina local utilizada durante la comunicación |
+| `LocalPort` | `int` | Puerto TCP en la máquina local usada durante la comunicación |
+| `FileOriginUrl` | `string` | Dirección URL desde la que se descargó el archivo |
 | `FileOriginIP` | `string` | Dirección IP desde la que se descargó el archivo |
 | `InitiatingProcessSHA1` | `string` | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | `string` | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
@@ -85,18 +85,18 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessAccountName` | `string` | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | `string` | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessAccountObjectId` | `string` | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la empresa de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoProductName` | `string` | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
 |` InitiatingProcessVersionInfoInternalFileName` | `string` | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoOriginalFileName` | `string` | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoFileDescription` | `string` | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessParentId` | `int` | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | `string` | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | `datetime` | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
-| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en la misma máquina solo entre reinicios |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | `string` | Información adicional sobre el evento en formato de matriz JSON |
 

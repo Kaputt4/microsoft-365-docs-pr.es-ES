@@ -53,6 +53,8 @@
           href: flw-team-collaboration.md
         - name: Comunicaciones corporativas con trabajadores de primera línea
           href: flw-corp-comms.md
+        - name: Ayudar a los empleados a usar aplicaciones y características de colaboración
+          href: collab-features-apps-toolkit.md
     - name: Bienestar y compromiso
       items:
         - name: Interactúe con sus empleados y céntrese en el bienestar
@@ -69,6 +71,8 @@
           href: schedule-owner-for-shift-management.md
         - name: Administrar el acceso basado en turnos en Teams
           href: manage-shift-based-access-flw.md
+        - name: Ayudar a los empleados a realizar un seguimiento del tiempo y la asistencia
+          href: shifts-toolkit.md
         - name: Conectores de Turnos
           items:
             - name: Información general

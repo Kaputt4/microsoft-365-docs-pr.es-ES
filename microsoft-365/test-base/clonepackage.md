@@ -1,5 +1,5 @@
 ---
-title: Clonación de un paquete existente
+title: Clonar un paquete existente
 description: Clonación de un paquete existente
 search.appverid: MET150
 author: Tinacyt
@@ -8,20 +8,20 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 05/27/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 1e0f4ca8939a965347126076f5fef7e85a103c9c
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 47779c5baa96d9a5bcc98740ec89ba735a9da449
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863747"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316455"
 ---
-# <a name="clone-an-existing-package"></a>Clonación de un paquete existente
+# <a name="clone-an-existing-package"></a>Clonar un paquete existente
 
 En esta sección, aprenderá a crear un nuevo paquete duplicando el paquete publicado anteriormente como punto de partida. Hay varias entradas en el portal de Test Base para que pueda iniciar el recorrido del paquete clonado.
 

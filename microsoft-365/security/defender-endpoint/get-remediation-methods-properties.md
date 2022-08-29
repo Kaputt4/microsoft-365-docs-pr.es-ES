@@ -1,6 +1,6 @@
 ---
 title: Propiedades y métodos de la actividad de corrección
-description: La respuesta de LA API contiene actividades de corrección de la administración de vulnerabilidades & amenazas creadas en el inquilino. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
+description: La respuesta de API contiene Administración de vulnerabilidades de Microsoft Defender actividades de corrección creadas en el inquilino. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86218bb1dc3a30ab38e3df07496aa40a5775e88c
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: c39153ce23adeec598fef7234c4b90592067d116
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020481"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344863"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -42,7 +42,7 @@ ms.locfileid: "67020481"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La respuesta de API contiene las actividades de corrección de [administración de vulnerabilidades & amenazas](next-gen-threat-and-vuln-mgt.md) que se han creado en el inquilino.
+La respuesta de API contiene [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md) actividades de corrección que se han creado en el inquilino.
 
 ## <a name="methods"></a>Métodos
 
@@ -60,14 +60,14 @@ Id. de propiedad|Tipo de datos|Descripción
 :---|:---|:---
 Categoría|Cadena|Categoría de la actividad de corrección (configuración de software/seguridad)
 completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico.
-completerId|String|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
+completerId|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
 completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están revisados) o "manualmente" por una persona que selecciona "marcar como completado".
 createdOn|DateTime|Hora en que se creó esta actividad de corrección
 Descripción|Cadena|Descripción de esta actividad de corrección
 dueOn|DateTime|Fecha de vencimiento establecida por el creador para esta actividad de corrección
 fixedDevices||Número de dispositivos que se han corregido
-ID|Cadena|Identificador de esta actividad de corrección
-nameId|String|Nombre del producto relacionado
+Id.|Cadena|Identificador de esta actividad de corrección
+nameId|Cadena|Nombre del producto relacionado
 Prioridad|Cadena|Prioridad del creador establecido para esta actividad de corrección (Alto\Medio\Bajo)
 Productid|Cadena|Identificador de producto relacionado
 productivityImpactRemediationType|Cadena|Solo se pueden solicitar algunos cambios de configuración para los dispositivos que no afectan a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo los dispositivos sin ningún impacto en el usuario".
@@ -85,7 +85,7 @@ statusLastModifiedOn|DateTime|Fecha en que se actualizó el campo de estado
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección
 Título|Cadena|Título de esta actividad de corrección
 Tipo|Cadena|Tipo de corrección
-vendorId|String|Nombre del proveedor relacionado
+vendorId|Cadena|Nombre del proveedor relacionado
 
 ## <a name="see-also"></a>Vea también
 
@@ -95,6 +95,6 @@ vendorId|String|Nombre del proveedor relacionado
 
 - [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
 
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

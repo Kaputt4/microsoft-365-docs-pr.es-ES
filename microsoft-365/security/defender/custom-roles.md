@@ -1,7 +1,7 @@
 ---
 title: Roles personalizados para el control de acceso basado en rol
 description: Aprenda a administrar roles personalizados en el portal de Microsoft 365 Defender
-keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender para punto de conexión , ámbito, ámbito, RBAC, acceso basado en roles, acceso basado en roles personalizados, autenticación basada en roles, RBAC en MDO, roles, grupos de roles, herencia de permisos, permisos específicos
+keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender para punto de conexión, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions herencia, permisos específicos
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 94330e319eeb44618c1e11b27da7b3d63c08d203
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f36e57af9cf1c593ba157454bdfe90b840094c02
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731359"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344589"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Roles personalizados en el control de acceso basado en rol para Microsoft 365 Defender
 
@@ -38,14 +38,14 @@ ms.locfileid: "64731359"
 - Microsoft 365 Defender
  
 Hay dos tipos de roles que se pueden usar para acceder a Microsoft 365 Defender:
-- **Roles de Azure Active Directory globales (AD)**
+- **Roles globales de Azure Active Directory (AD)**
 - **Roles personalizados**
 
 El acceso a Microsoft 365 Defender se puede administrar colectivamente mediante [roles globales en Azure Active Directory (AAD)](m365d-permissions.md)
 
 Si necesita mayor flexibilidad y control sobre el acceso a datos de productos específicos, Microsoft 365 Defender acceso también se puede administrar con la creación de roles personalizados a través de cada portal de seguridad respectivo.  
 
-Por ejemplo, un rol personalizado creado a través de Microsoft Defender para punto de conexión permitiría el acceso a los datos de producto pertinentes, incluidos los datos de punto de conexión en el portal de Microsoft 365 Defender. De forma similar, un rol personalizado creado a través de Microsoft Defender para Office 365 permitiría el acceso a los datos de producto pertinentes, incluidos los datos de colaboración & correo electrónico en el portal de Microsoft 365 Defender.
+Por ejemplo, un rol personalizado creado a través de Microsoft Defender para punto de conexión permitiría el acceso a los datos de producto pertinentes, incluidos los datos de punto de conexión en el portal de Microsoft 365 Defender. De forma similar, un rol personalizado creado a través de Microsoft Defender para Office 365 permitiría el acceso a los datos de producto pertinentes, incluidos Email & datos de colaboración en el portal de Microsoft 365 Defender.
 
 Los usuarios con roles personalizados existentes pueden acceder a los datos del portal de Microsoft 365 Defender según sus permisos de carga de trabajo existentes sin que se requiera ninguna configuración adicional.
 
@@ -59,7 +59,7 @@ Los roles y permisos personalizados se pueden crear y administrar individualment
 Cada rol personalizado creado a través de un portal individual permite el acceso a los datos del portal de productos correspondiente. Por ejemplo, un rol personalizado creado a través de Microsoft Defender para punto de conexión solo permitirá el acceso a los datos de Defender para punto de conexión.
 
 > [!TIP]
-> También se puede acceder a los permisos y roles a través del portal de Microsoft 365 Defender seleccionando Permisos & roles en el panel de navegación. El acceso a Microsoft Defender for Cloud Apps se administra a través del portal de aplicaciones de Defender for Cloud y controla también el acceso a Microsoft Defender for Identity.  Consulte [Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
+> También se puede acceder a los permisos y roles a través del portal de Microsoft 365 Defender seleccionando Permisos & roles en el panel de navegación. El acceso a Microsoft Defender for Cloud Apps se administra a través del portal de Defender for Cloud Apps y controla también el acceso a Microsoft Defender for Identity.  Consulte [Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
 
 > [!NOTE]
 > Los roles personalizados creados en Microsoft Defender for Cloud Apps también tienen acceso a Microsoft Defender for Identity datos. Los usuarios con roles de Microsoft Defender for Cloud Apps administrador de grupos de usuarios o administrador de aplicaciones o instancias no pueden acceder a Microsoft Defender for Cloud Apps datos a través del portal de Microsoft 365 Defender.
@@ -76,19 +76,19 @@ Los permisos y roles también se pueden administrar en el portal de Microsoft 36
 
 
 ## <a name="required-roles-and-permissions"></a>Permisos y roles necesarios
-En la tabla siguiente se describen los roles y permisos necesarios para acceder a cada experiencia unificada de cada carga de trabajo. Los roles definidos en la tabla siguiente hacen referencia a roles personalizados en portales individuales y no están conectados a roles globales en Azure AD, incluso si tienen un nombre similar.
+En la tabla siguiente se describen los roles y permisos necesarios para acceder a cada experiencia unificada de cada carga de trabajo. Los roles definidos en la tabla siguiente hacen referencia a los roles personalizados en portales individuales y no están conectados a roles globales en Azure AD, aunque tenga un nombre similar.
 
 > [!NOTE]
 > La administración de incidentes requiere permisos de administración para todos los productos que forman parte del incidente.
  
-| **Se requiere uno de los siguientes roles para Microsoft 365 Defender**  | **Se requiere uno de los siguientes roles para Defender para punto de conexión.**  | **Se requiere uno de los siguientes roles para Defender para Office 365** | **Se requiere uno de los siguientes roles para Defender for Cloud Apps** | 
+| **Se requiere uno de los siguientes roles para Microsoft 365 Defender**  | **Se requiere uno de los siguientes roles para Defender para punto de conexión.**  | **Se requiere uno de los siguientes roles para Defender para Office 365** | **Se requiere uno de los siguientes roles para Defender for Cloud Apps.** | 
 |---------|---------|---------|---------|
 | Visualización de datos de investigación: <ul><li>Página alerta</li> <li>Cola de alertas</li> <li>Incidentes</li>  <li>Cola de incidentes</li> <li>Centro de actividades</li></ul>| Ver operaciones de seguridad de datos | <ul><li>Ver solo administrar alertas </li> <li>Configuración de la organización</li><li>Registros de auditoría</li> <li>Visualización de registros de auditoría de solo visualización</li> <li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li></ul>  | <ul><li>Administrador global</li> <li>Administrador de seguridad</li> <li>Administrador de cumplimiento</li> <li>Operador de seguridad</li> <li>Lector de seguridad</li> <li>Lector global</li></ul> |
 | Visualización de datos de búsqueda | Ver operaciones de seguridad de datos | <ul><li>Lector de seguridad</li> <li>Administrador de seguridad</li> <li>Destinatarios de solo visualización</li> | <ul><li>Administrador global</li> <li>Administrador de seguridad</li> <li>Administrador de cumplimiento</li> <li>Operador de seguridad</li> <li>Lector de seguridad</li> <li>Lector global</li></ul> |
 | Administración de alertas e incidentes | Investigación de alertas | <ul><li>Administrar alertas</li> <li>Administrador de seguridad</li> | <ul><li>Administrador global</li> <li>Administrador de seguridad</li> <li>Administrador de cumplimiento</li> <li>Operador de seguridad</li> <li>Lector de seguridad</li></ul> |
 | Corrección del centro de acciones | Acciones de corrección activas: operaciones de seguridad | Búsqueda y purga | |
 | Configuración de detecciones personalizadas | Administrar la configuración de seguridad |<ul><li>Administrar alertas</li> <li>Administrador de seguridad</li></ul> | <ul><li>Administrador global</li> <li>Administrador de seguridad</li> <li>Administrador de cumplimiento</li> <li>Operador de seguridad</li> <li>Lector de seguridad</li> <li>Lector global</li></ul> |
-| Análisis de amenazas | Datos de alertas e incidentes: <ul><li>Ver operaciones de seguridad de datos</li></ul>Mitigaciones de TVM:<ul><li>Ver datos: amenazas y administración de vulnerabilidades</li></ul> | Datos de alertas e incidentes:<ul> <li>Ver solo administrar alertas</li> <li>Administrar alertas</li> <li>Configuración de la organización</li><li>Registros de auditoría</li> <li>Visualización de registros de auditoría de solo visualización</li><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> </ul> Intentos de correo electrónico impedidos: <ul><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> | No disponible para Defender for Cloud Aplicaciones o usuarios de MDI |
+| Análisis de amenazas | Datos de alertas e incidentes: <ul><li>Ver operaciones de seguridad de datos</li></ul>Mitigaciones de Administración de vulnerabilidades de Defender:<ul><li>Visualización de datos: administración de amenazas y vulnerabilidades</li></ul> | Datos de alertas e incidentes:<ul> <li>Ver solo administrar alertas</li> <li>Administrar alertas</li> <li>Configuración de la organización</li><li>Registros de auditoría</li> <li>Visualización de registros de auditoría de solo visualización</li><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> </ul> Intentos de correo electrónico impedidos: <ul><li>Lector de seguridad</li> <li>Administrador de seguridad</li><li>Destinatarios de solo visualización</li> | No disponible para los usuarios de Defender for Cloud Apps o MDI |
 
 Por ejemplo, para ver los datos de búsqueda de Microsoft Defender para punto de conexión, se requieren permisos para ver las operaciones de seguridad de datos.  
 
@@ -102,4 +102,4 @@ De forma similar, para ver los datos de búsqueda de Microsoft Defender para Off
 ## <a name="related-topics"></a>Temas relacionados
 - [Roles de RBAC](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Administrar el acceso a Microsoft 365 Defender](m365d-permissions.md)
-- [Administración del acceso de administrador para aplicaciones de Defender for Cloud](/cloud-app-security/manage-admins)
+- [Administración del acceso de administrador para Defender for Cloud Apps](/cloud-app-security/manage-admins)

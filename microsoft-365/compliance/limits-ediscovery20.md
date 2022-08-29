@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indexación y los límites de búsqueda vigentes para la solución eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 5bf7e2be459f6238802b28da66650e238b2c4926
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ed00c6e508ce293a0327441c978928310157d996
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636037"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357552"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Límites en eDiscovery (Premium)
 
@@ -35,13 +35,10 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 |---|---|---|
 |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).|3 millones|40 millones|
 |Tamaño total de archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.|300 GB|1 TB|
-|Cantidad total de datos cargados en todos los conjuntos de revisión de la organización al día.<br/>|2 TB|2 TB|
 |Número máximo de conjuntos de carga por caso.|200|200|
 |Número máximo de conjuntos de revisión por caso.|20|20|
 |Número máximo de grupos de etiquetas por caso.|1,000|1,000|
 |Número máximo de etiquetas únicas por caso.|1000<sup>1</sup>|1000<sup>1</sup>|
-|Número máximo de trabajos simultáneos en su organización para agregar contenido a un conjunto de revisión. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|10<sup>2</sup>|10<sup>2</sup>|
-|Número máximo de trabajos simultáneos para agregar contenido a un conjunto de revisión por usuario. Estos trabajos se denominan **Adición de datos a un conjunto de revisión** y se muestran en la pestaña **Trabajos** en un caso.|3 |3 |
 
 ## <a name="hold-limits"></a>Límites de retención
 
@@ -65,6 +62,15 @@ En la tabla siguiente se enumeran los límites de indexación en eDiscovery (Pre
 |Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).|24 MB<sup>4</sup> <br/> |
 |Rendimiento máximo de indexación avanzada | 2 GB por hora |
 
+## <a name="jobs-limits"></a>Límites de trabajos
+
+|Descripción del límite|Límite|
+|---|---|
+|Número máximo de trabajos simultáneos en la organización.|100|
+|Número máximo de trabajos simultáneos que un solo usuario puede iniciar a la vez.|50|
+|Número máximo de trabajos simultáneos en todo el inquilino (por ejemplo, búsquedas en todo el inquilino) en su organización.|50|
+|Número máximo de trabajos simultáneos en todo el inquilino (por ejemplo, búsquedas en todo el inquilino) que un único usuario puede iniciar a la vez.|25|
+
 ## <a name="search-limits"></a>Límites de búsqueda
 
 Los límites descritos en esta sección están relacionados con el uso de la herramienta de búsqueda en la pestaña **Búsquedas** para recopilar datos de un caso. Para obtener más información, vea [Recopilar datos de un caso en eDiscovery (Premium).](collecting-data-for-ediscovery.md)
@@ -73,10 +79,9 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |---|---|
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda.|Sin límite|
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.|Sin límite|
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.|10 |
 |Número máximo de caracteres para una consulta de búsqueda (incluidos operadores y condiciones).|10 000<sup>5</sup>|
 |Número máximo de caracteres para una consulta de búsqueda para SharePoint y sitios OneDrive para la Empresa (incluidos operadores y condiciones).|10,000<br>4000 con caracteres comodín<sup>5</sup>|
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **one\**_ o _* set\***.|3 |
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **one\**_ o _* set\***.|3|
 |Número máximo de variantes devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un carácter comodín de prefijo y el operador booleano **NEAR** .|10 000<sup>6</sup>|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.|100|
 |Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|
@@ -114,7 +119,6 @@ Los límites descritos en esta sección están relacionados con la exportación 
 |Descripción del límite|Límite|
 |---|---|
 |Tamaño máximo de una sola exportación.|5 millones de documentos o 500 GB, lo que sea más pequeño|
-|Número máximo de exportaciones simultáneas por conjunto de revisión.|1 |
 
 ## <a name="review-set-download-limits"></a>Revisión de los límites de descarga establecidos
 

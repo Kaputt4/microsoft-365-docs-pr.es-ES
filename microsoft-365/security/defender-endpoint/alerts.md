@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100007"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322395"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso de alerta
 
@@ -63,7 +63,7 @@ ms.locfileid: "67100007"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|String|Identificador de alerta.|
+|id|Cadena|Identificador de alerta.|
 |title|String|Título de la alerta.|
 |description|String|Descripción de la alerta.|
 |alertCreationTime|DateTimeOffset que admite valores NULL|Fecha y hora (en UTC) en la que se creó la alerta.|
@@ -74,22 +74,22 @@ ms.locfileid: "67100007"
 |incidentId|Long que acepta valores NULL|Identificador [de incidente](view-incidents-queue.md) de la alerta.|
 |investigationId|Long que acepta valores NULL|Identificador [de investigación](automated-investigations.md) relacionado con la alerta.|
 |investigationState|Enumeración que acepta valores NULL|Estado actual de la [investigación](automated-investigations.md). Los valores posibles son: "Desconocido", 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|assignedTo|String|Propietario de la alerta.|
-|rbacGroupName|String|Nombre del grupo de dispositivos RBAC.|
+|assignedTo|Cadena|Propietario de la alerta.|
+|rbacGroupName|Cadena|Nombre del grupo de dispositivos RBAC.|
 |mitreTechniques|Cadena|Identificador de técnica de Mitre Enterprise.|
 |relatedUser|Cadena|Detalles del usuario relacionados con una alerta específica.|
 |severity|Enum|Gravedad de la alerta. Los valores posibles son: "UnSpecified", "Informational", "Low", "Medium" y "High".|
 |status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Unknown", "New", "InProgress" y "Resolved".|
 |classification|Enumeración que acepta valores NULL|Especificación de la alerta. Los valores posibles son: "Unknown", "FalsePositive", "TruePositive".|
-|determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
+|Determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
 |categoría|Cadena|Categoría de la alerta.|
-|detectionSource|String|Origen de detección.|
-|threatFamilyName|String|Familia de amenazas.|
-|threatName|String|Nombre de la amenaza.|
-|machineId|String|Identificador de una entidad de [máquina](machine.md) asociada a la alerta.|
-|computerDnsName|String|nombre completo de [la máquina](machine.md).|
-|aadTenantId|String|Identificador de Azure Active Directory.|
-|detectorId|String|Identificador del detector que desencadenó la alerta.|
+|detectionSource|Cadena|Origen de detección.|
+|threatFamilyName|Cadena|Familia de amenazas.|
+|threatName|Cadena|Nombre de la amenaza.|
+|machineId|Cadena|Identificador de una entidad de [máquina](machine.md) asociada a la alerta.|
+|computerDnsName|Cadena|nombre completo de [la máquina](machine.md).|
+|aadTenantId|Cadena|Identificador de Azure Active Directory.|
+|detectorId|Cadena|Identificador del detector que desencadenó la alerta.|
 |comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.|
 |Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
 |

@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: e046ebbf6e3609f1f5b13c89cad4261dab8da879
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 799f491f99143df2e12d7852bb6e6bf28d3e70b5
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300746"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433583"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium: productividad y ciberseguridad para pequeñas empresas
 
-Comencemos diciendo que usted tomó una decisión acertada al adoptar Microsoft 365 Empresa Premium y sus herramientas de productividad de clase mundial. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberattackers, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
+Microsoft 365 Empresa Premium con sus herramientas de productividad de clase mundial es una elección inteligente para pequeñas y medianas empresas. Diseñado teniendo en cuenta la ciberseguridad, Microsoft 365 Empresa Premium protege sus datos, dispositivos e información. Usted es la primera y mejor defensa de su organización contra hackers y ciberattackers, incluidos individuos aleatorios, crimen organizado o estados nación altamente sofisticados.
 
-La tarea anterior es la siguiente: deje que Microsoft 365 Empresa Premium ayudar a proteger el futuro de su organización. Para abordar esta tarea, realice las siguientes misiones: 
+La tarea anterior es la siguiente: deje que Microsoft 365 Empresa Premium ayudar a proteger el futuro de su organización. Para abordar esta tarea, realice las seis misiones siguientes: 
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagrama en el que se enumeran seis misiones.":::
 
@@ -49,7 +49,7 @@ Completar las seis misiones es la manera más eficaz de frustrar a los hackers, 
 
 ## <a name="cybersecurity-playbook"></a>Cuaderno de estrategias sobre ciberseguridad
 
-La guía de estas misiones se basa en la metodología de confianza cero y ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen ([obtenga el PDF aquí](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
+Las instrucciones de estas misiones se basan en el [modelo de seguridad Confianza cero](../security/office-365-security/microsoft-365-policies-configurations.md) y se resumen en un cuaderno de estrategias de [ciberseguridad](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) descargable).
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cuaderno de estrategias de ciberseguridad. Descargue esta guía.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

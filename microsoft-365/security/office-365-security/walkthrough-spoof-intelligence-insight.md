@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: e9cb7fc02a3e84f7fa0909e509f47c21b63050ab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772005"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384866"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administración de remitentes suplantados mediante la directiva de inteligencia de suplantación de identidad y la información de inteligencia de suplantación de identidad en EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "65772005"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> La administración de remitentes suplantados en el portal de Microsoft 365 Defender ahora solo está disponible en la pestaña **Suplantación de** identidad de la Lista de permitidos o bloqueados de inquilinos. Para ver los procedimientos actuales en el portal de Microsoft 365 Defender, consulte [Spoof intelligence insight in EOP (Información de inteligencia de suplantación de identidad en EOP](learn-about-spoof-intelligence.md)).
+> La administración de remitentes suplantados en el portal de Microsoft 365 Defender ahora solo está disponible en la pestaña **Remitentes suplantados de la lista de permitidos o bloqueados de inquilinos**. Para ver los procedimientos actuales en el portal de Microsoft 365 Defender, consulte [Spoof intelligence insight in EOP (Información de inteligencia de suplantación de identidad en EOP](learn-about-spoof-intelligence.md)).
 >
 > La administración de remitentes suplantados en Exchange Online PowerShell o PowerShell EOP independiente está en proceso de migración exclusiva a los cmdlets **-TenantAllowBlockListSpoofItems, Get-SpoofIntelligenceInsight y Get-SpoofMailReport relacionados\***.  Para conocer los procedimientos que usan estos cmdlets, consulte los artículos siguientes:
 >
-> - [Visualización de entradas de remitente suplantadas mediante PowerShell](tenant-allow-block-list.md#view-spoofed-sender-entries)
-> - [Adición de entradas permitidas del remitente suplantado mediante PowerShell](manage-tenant-allows.md#add-spoofed-sender-allow-entries-using-powershell)
-> - [Adición de entradas de bloque de remitentes falsificados mediante PowerShell](manage-tenant-blocks.md#add-spoofed-sender-block-entries)
-> - [Modificación de entradas de remitente suplantadas mediante PowerShell](modify-remove-entries-tenant-allow-block.md#modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
-> - [Eliminación de entradas de remitente suplantadas mediante PowerShell](modify-remove-entries-tenant-allow-block.md#remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
+> - [Uso de PowerShell para ver las entradas de permitir o bloquear para remitentes suplantados en la lista de permitidos o bloqueados de inquilinos](allow-block-email-spoof.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Uso de PowerShell para crear entradas permitidas para remitentes suplantados](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Uso de PowerShell para crear entradas de bloque para remitentes suplantados](allow-block-email-spoof.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Uso de PowerShell para modificar entradas de permitir o bloquear para remitentes suplantados en la lista de permitidos o bloqueados de inquilinos](allow-block-email-spoof.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Uso de PowerShell para quitar entradas de permitir o bloquear para remitentes suplantados de la lista de permitidos o bloqueados de inquilinos](allow-block-email-spoof.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > La experiencia anterior de administración de remitentes suplantados mediante los cmdlets **Get-PhishFilterPolicy** y **Set-PhishFilterPolicy** está en desuso, pero todavía se presenta en este artículo para mayor integridad hasta que los cmdlets se quitan en todas partes.
 

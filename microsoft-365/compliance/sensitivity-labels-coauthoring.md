@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944227"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408383"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -76,8 +76,8 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Aplicaciones de Microsoft 365 para empresas:
     - **Windows**: versión mínima 2107 del Canal actual o canal empresarial mensual, o la versión mínima 2202 del Canal semestral para empresas
     - **macOS**: versión mínima 16.51
-    - **iOS**: En versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
-    - **Android**: En versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931
+    - **iOS**: versión mínima 2.58
+    - **Android**: versión mínima 16.0.14931
 
 - Todas las aplicaciones, servicios y herramientas operativas de su espacio empresarial deben admitir los nuevos [metadatos de etiquetado](#metadata-changes-for-sensitivity-labels). Si usa alguna de las siguientes, compruebe las versiones mínimas requeridas:
     
@@ -103,12 +103,6 @@ Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de 
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configurado para aplicar etiquetas de confidencialidad](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
-### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>Participar en la versión preliminar de la coautoría para iOS y Android
-
-Para probar la versión preliminar de la coautoría para iOS y Android, debe tener las versiones mínimas indicadas en la sección anterior y también solicitar que el inquilino se agregue a la versión preliminar: [Consentimiento para habilitar la coautoría de archivos cifrados con etiquetas de confidencialidad en dispositivos móviles](https://ncv.microsoft.com/5Oob3oDj1O)
-
-Para más información, vea el siguiente anuncio de entrada de blog: [La coautoría en documentos cifrados de Microsoft Information Protection está ahora en versión preliminar pública en dispositivos móviles](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
-
 ## <a name="limitations"></a>Limitaciones
 
 Antes de habilitar la configuración de espacio empresarial para la coautoría de archivos cifrados con etiquetas de confidencialidad, asegúrese de comprender las siguientes limitaciones de esta característica.
@@ -116,8 +110,6 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
 - Debido a los [cambios en los metadatos de etiquetado](#metadata-changes-for-sensitivity-labels), todas las aplicaciones, servicios y herramientas operativas de su espacio empresarial deben admitir los nuevos metadatos de etiquetado para una experiencia de etiquetación coherente y confiable.
     
     Específico de Excel: Los metadatos para una etiqueta de confidencialidad que no aplica cifrado pueden eliminarse de un archivo si alguien edita y guarda el archivo con una versión de Excel que no admite los cambios de metadatos de etiquetado para etiquetas de confidencialidad.
-
-- Las aplicaciones de Office compatibles con iOS y Android se encuentran actualmente en [versión preliminar](https://office.com/insider).
 
 - La coautoría y el autoguardado no son compatibles y no funcionan en documentos de Office etiquetados y cifrados que usan cualquiera de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Permitir a los usuarios asignar permisos cuando aplican la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos** está seleccionada. Esta configuración se denomina a veces "permisos definidos por el usuario".
@@ -134,8 +126,6 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
 
 > [!CAUTION]
 > Habilitar este valor es una acción unidireccional. Habilítela solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
-
-Si ya ha activado esta configuración durante el período de versión preliminar, no es necesario realizar ninguna otra acción y puede saltarse este procedimiento.
 
 1. Inicie sesión en el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
 

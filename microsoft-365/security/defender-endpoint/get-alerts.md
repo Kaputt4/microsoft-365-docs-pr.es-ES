@@ -1,7 +1,7 @@
 ---
-title: API de listas de alertas
-description: Obtenga información sobre cómo usar la API de alertas de lista para recuperar una colección de alertas en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, alerts, recent
+title: API de alertas de lista
+description: Obtenga información sobre cómo usar list alerts API para recuperar una colección de alertas en Microsoft Defender para punto de conexión.
+keywords: apis, graph api, api admitidas, get, alerts, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c720e7743fda39f7950a7df44bea0007988b94b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 231894a707b476f3c2ab52ef8198dad5fe1713c5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283502"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323121"
 ---
-# <a name="list-alerts-api"></a>API de listas de alertas
+# <a name="list-alerts-api"></a>API de alertas de lista
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,35 +43,35 @@ ms.locfileid: "61283502"
 Recupera una colección de alertas.
 <br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
 <br>Operadores compatibles con OData:
-<br>```$filter``` on: ```alertCreationTime``` , , , , , , , , y ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
+<br>```$filter```on: ```alertCreationTime```propiedades , ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id```, ```asssignedTo```, ```detectionSource```, ```lastEventTime```, ```severity``` ```status```y ```category``` .
 <br>```$top``` con un valor máximo de 10 000
 <br>```$skip```
-<br>```$expand``` de ```evidence```
-<br>Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
+<br>```$expand``` De ```evidence```
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md)
 
 
 ## <a name="limitations"></a>Limitaciones
-1. Puede obtener las alertas por última vez actualizadas según el período de retención configurado.
-2. El tamaño máximo de página es 10.000.
-3. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora. 
+1. Puede obtener las alertas actualizadas por última vez según el período de retención configurado.
+2. El tamaño máximo de página es de 10 000.
+3. Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora. 
 
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de api de Microsoft Defender para punto de conexión](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación | Alert.Read.All | 'Leer todas las alertas'
-Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Application | Alert.Read.All | "Leer todas las alertas"
+Application | Alert.ReadWrite.All | "Leer y escribir todas las alertas"
+Delegado (cuenta profesional o educativa) | Alert.Read | "Leer alertas"
+Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - La respuesta incluirá solo alertas asociadas a dispositivos a los que el usuario pueda tener acceso, en función de la configuración del grupo de dispositivos (vea [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
+> - La respuesta incluirá solo las alertas asociadas a los dispositivos a los que el usuario puede acceder, en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -85,13 +85,13 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok y una lista de objetos [de alerta](alerts.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve 200 OK y una lista de objetos de [alerta](alerts.md) en el cuerpo de la respuesta.
 
 ## <a name="example-1---default"></a>Ejemplo 1: valor predeterminado
 
@@ -162,7 +162,7 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Ejemplo 2: Obtener 10 alertas más recientes con evidencia relacionada
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Ejemplo 2: Obtención de 10 alertas más recientes con evidencia relacionada
 
 ### <a name="request"></a>Solicitud
 
@@ -316,4 +316,4 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Vea también
 
-[Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
+[Consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md)

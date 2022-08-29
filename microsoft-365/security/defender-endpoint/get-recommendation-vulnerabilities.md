@@ -1,7 +1,7 @@
 ---
 title: Enumerar vulnerabilidades por recomendación
-description: Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad.
-keywords: apis, api de gráficos, api admitidas, obtener, lista de vulnerabilidades, recomendación de seguridad, recomendación de seguridad para vulnerabilidades, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
+description: Recupera una lista de vulnerabilidades asociadas a la recomendación de seguridad.
+keywords: apis, graph api, api admitidas, get, lista de vulnerabilidades, recomendación de seguridad, recomendación de seguridad para vulnerabilidades, Administración de amenazas y vulnerabilidades, api de Administración de amenazas y vulnerabilidades
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 05e4719e69601024af25b2b797477506f195d328
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b2c87047a0252bba643b2f6280b74f64c5de2d16
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300235"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344907"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Enumerar vulnerabilidades por recomendación
 
@@ -29,7 +29,7 @@ ms.locfileid: "61300235"
 **Se aplica a:** 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,16 +37,16 @@ ms.locfileid: "61300235"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad.
+Recupera una lista de vulnerabilidades asociadas a la recomendación de seguridad.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Vulnerability.Read.All|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Vulnerability.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Application|Vulnerability.Read.All|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|"Leer la información de recomendaciones de seguridad de Administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -58,15 +58,15 @@ GET /api/recommendations/{id}/vulnerabilities
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok, con la lista de vulnerabilidades asociadas con la recomendación de seguridad.
+Si se ejecuta correctamente, este método devuelve 200 OK, con la lista de vulnerabilidades asociada a la recomendación de seguridad.
 
 ## <a name="example"></a>Ejemplo
 
@@ -108,5 +108,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recomendación & seguridad de vulnerabilidades](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recomendación de seguridad de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -9,6 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82b23047b8013f9916168d46b5b595b326f6d1e5
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 6c714e15cfb37116fe23f51c4e47214d69961120
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530540"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385559"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -46,19 +47,43 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="august-2022"></a>Agosto de 2022
+
+**Redireccionamiento automático de Office 365 Centro de seguridad y cumplimiento a Microsoft 365 Defender portal:** el redireccionamiento automático comienza para los usuarios que acceden a las soluciones de seguridad de Office 365 Centro de seguridad y cumplimiento (protection.office.com) a las soluciones adecuadas en Microsoft 365 Defender portal (security.microsoft.com). Esto es para todos los flujos de trabajo de seguridad, como alertas, administración de amenazas e informes. 
+- Direcciones URL de redireccionamiento:
+    - Entorno GCC:
+        - Desde la dirección URL del Centro de cumplimiento de Office 365 Security &: protection.office.com
+        - Para Microsoft 365 Defender dirección URL: security.microsoft.com
+    - entorno de GCC-High:
+        - Desde la dirección URL del Centro de cumplimiento de Office 365 Security &: scc.office365.us
+        - Para Microsoft 365 Defender dirección URL: security.microsoft.us
+    - Entorno de DoD:
+        - Desde la dirección URL del Centro de cumplimiento de Office 365 Security &: scc.protection.apps.mil
+        - Para Microsoft 365 Defender dirección URL: security.apps.mil
+- Los elementos del Centro de seguridad y cumplimiento de Office 365 que no están relacionados con la seguridad no se redirigen a Microsoft 365 Defender. Para ver el redireccionamiento de soluciones de cumplimiento al Centro de cumplimiento de Microsoft 365, consulte El Centro de mensajes publica 244886. 
+- Esta es una continuación de [Microsoft 365 Defender ofrece una experiencia unificada de XDR a los clientes de GCC, GCC High y DoD, Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), anunciada en marzo de 2022.
+- Este cambio permite a los usuarios ver y administrar soluciones de seguridad de Microsoft 365 Defender adicionales en un portal.
+- Este cambio afecta a todos los clientes que usan el Centro de seguridad y cumplimiento de Office 365 (protection.office.com), incluido Microsoft Defender para Office (plan 1 o plan 2), Microsoft 365 E3/E5, Office 365 E3/E5 y Exchange Online Protection. Para obtener la lista completa, consulte [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- Este cambio afecta a todos los usuarios que inician sesión en el portal de seguridad y cumplimiento de Office 365 (protection.office.com), incluidos los equipos de seguridad y los usuarios finales que acceden a la experiencia de cuarentena de Email, en la **cuarentena** **de revisión** >  del portal  >  de **Microsoft Defender**.
+- El redireccionamiento está habilitado de forma predeterminada y afecta a todos los usuarios del inquilino.
+- Los administradores globales y administradores de seguridad pueden activar o desactivar el redireccionamiento en el portal de Microsoft 365 Defender; para ello, vaya a **Configuración** >  Email &**redirección del portal** de **colaboración** >  y cambie el botón de alternancia de redirección.
+
+## <a name="july-2022"></a>Julio de 2022
+
+- [Introducción a acciones en la página de entidad de correo electrónico](mdo-email-entity-page.md): los administradores pueden realizar acciones preventivas, correctivas y de envío desde la página de entidad de correo electrónico.
 
 ## <a name="june-2022"></a>Junio de 2022
 
-- [La suplantación permite usar el envío de administrador](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): cree entradas de remitente suplantadas permitidas mediante la lista de permitidos o bloqueados de inquilinos.
+- [Use el portal de Microsoft 365 Defender para crear entradas permitidas para remitentes suplantados en el portal envíos](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal): cree entradas de remitente suplantadas permitidas mediante la lista de permitidos o bloqueados de inquilinos.
 
-- [La suplantación permite usar el envío de administrador](allow-block-email-spoof.md#create-impersonated-sender-entries): Agregar permite remitentes suplantados mediante la página Envíos de Microsoft 365 Defender.
+- [La suplantación permite usar el envío de administrador](allow-block-email-spoof.md#about-impersonated-domains-or-senders): Agregar permite remitentes suplantados mediante la página Envíos de Microsoft 365 Defender.
 
 - [Ver el envío de administrador convertido desde el envío del usuario](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): configure el buzón personalizado para interceptar los mensajes notificados por el usuario sin enviar los mensajes a Microsoft para su análisis.
 
-- [Ver alerta asociada para envíos de usuarios y administradores](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): vea la alerta correspondiente para cada mensaje de phish notificado por el usuario y el envío de correo electrónico de administrador. 
+- [Ver alerta asociada para envíos de usuarios y administradores](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): vea la alerta correspondiente para cada mensaje de phish notificado por el usuario y el envío de correo electrónico de administrador.
 
 - [Protección de suplantación configurable para usuarios y dominios personalizados y un mayor ámbito dentro de directivas predefinidas](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
-  - (Elija) Aplique directivas estrictas o estándar preestablecidas a toda la organización y evite la molestia de seleccionar usuarios, grupos o dominios de destinatarios específicos, lo que protege a todos los usuarios destinatarios de su organización. 
+  - (Elija) Aplique directivas estrictas o estándar preestablecidas a toda la organización y evite la molestia de seleccionar usuarios, grupos o dominios de destinatarios específicos, lo que protege a todos los usuarios destinatarios de su organización.
   - Configure las opciones de protección de suplantación para usuarios personalizados y dominios personalizados dentro de directivas estrictas y estándar preestablecidas y proteja automáticamente a los usuarios de destino y al dominio de destino frente a ataques de suplantación.
 
 - [Simplificación de la experiencia de cuarentena (parte dos) en Microsoft 365 Defender para office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): resalta características adicionales para que la experiencia de cuarentena sea aún más fácil de usar.
@@ -67,8 +92,8 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 - [Presentación de la tabla URLClickEvents en Microsoft 365 Defender búsqueda avanzada](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): introducción a la tabla UrlClickEvents en la búsqueda avanzada con Microsoft Defender para Office 365.
 - [Mejoras de corrección manual del correo electrónico](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): llevar las acciones de purga de correo electrónico manual realizadas en Microsoft Defender para Office 365 al Centro de acciones unificado de Microsoft 365 Defender (M365D) mediante una nueva investigación centrada en la acción.
-- [Introducción a la protección diferenciada para las cuentas prioritarias en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducción a la disponibilidad general de la protección diferenciada para las cuentas prioritarias. 
- 
+- [Introducción a la protección diferenciada para las cuentas prioritarias en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducción a la disponibilidad general de la protección diferenciada para las cuentas prioritarias.
+
 ## <a name="march-2022"></a>Marzo de 2022
 
 - [Simplifica la experiencia de envío en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Presentamos el nuevo proceso de envío unificado y simplificado para simplificar tu experiencia.
@@ -94,11 +119,14 @@ Para obtener más información sobre las novedades de otros productos de segurid
 ## <a name="august-2021"></a>Agosto de 2021
 
 - [Administración revisión de los mensajes notificados](admin-review-reported-message.md): los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Las plantillas se pueden personalizar para su organización y también en función del veredicto del administrador.
-- [Agregar permite en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allows.md): ahora puede agregar entradas permitidas a la lista de permitidos o bloqueados de inquilinos si el mensaje bloqueado se envió como parte del proceso de envío del administrador. En función de la naturaleza del bloque, la dirección URL, el archivo o el remitente enviados se agregarán a la lista de permitidos o bloqueados de inquilinos. En la mayoría de los casos, los permite se agregan para dar al sistema algún tiempo y permitirlo naturalmente si se garantiza. En algunos casos, Microsoft administra el permiso para usted.
+- Ou ahora puede agregar entradas allow a la lista de permitidos o bloqueados de inquilinos si el mensaje bloqueado se envió como parte del proceso de envío del administrador. En función de la naturaleza del bloque, la dirección URL, el archivo o el remitente enviados se agregarán a la lista de permitidos o bloqueados de inquilinos. En la mayoría de los casos, los permite se agregan para dar al sistema algún tiempo y permitirlo naturalmente si se garantiza. En algunos casos, Microsoft administra el permiso para usted. Para obtener más información, consulte:
+  - [Use el portal de Microsoft 365 Defender para crear entradas permitidas para direcciones URL en el portal envíos.](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal)
+  - [Use el portal de Microsoft 365 Defender para crear entradas permitidas para los archivos en el portal envíos.](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal)
+  - [Use el portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal envíos.](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)
 
 ## <a name="july-2021"></a>Julio de 2021
 
-- [Mejoras en el análisis de correo electrónico en investigaciones automatizadas](email-analysis-investigations.md)
+- [mejoras de análisis de Email en investigaciones automatizadas](email-analysis-investigations.md)
 - [Entrega avanzada](configure-advanced-delivery.md): introducción a una nueva funcionalidad para configurar la entrega de simulaciones de suplantación de identidad (phishing) de terceros a los usuarios y mensajes sin filtrar a buzones de operaciones de seguridad.
 - [Vínculos seguros para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nuevas directivas de alerta para los siguientes escenarios: buzones en peligro, suplantación de identidad de formularios, correos malintencionados entregados debido a invalidaciones y redondeo de ZAP
@@ -120,7 +148,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ## <a name="aprilmay-2021"></a>Abril/mayo de 2021
 
-- [Página de entidad de correo electrónico](mdo-email-entity-page.md): una vista unificada en 360 grados de un correo electrónico con información enriquecida sobre amenazas, autenticación y detecciones, detalles de detonación y una experiencia de vista previa de correo electrónico completamente nueva.
+- [Email página de entidad](mdo-email-entity-page.md): una vista unificada de 360 grados de un correo electrónico con información enriquecida sobre amenazas, autenticación y detecciones, detalles de detonación y una experiencia de vista previa de correo electrónico completamente nueva.
 - [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Novedades a EmailEvents (RecordType 28) para agregar la acción de entrega, las ubicaciones de entrega originales y más recientes y los detalles de detección actualizados.
 - [Análisis de amenazas para Defender para Office 365](/microsoft-365/security/defender/threat-analytics): vea actores de amenazas activos, técnicas populares y superficies de ataque, junto con amplios informes de investigadores de Microsoft sobre campañas en curso.
 

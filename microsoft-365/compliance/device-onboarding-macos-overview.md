@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Más información sobre la incorporación de dispositivos macOS a soluciones de cumplimiento
-ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912767"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343511"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos macOS a Microsoft 365
 
@@ -98,16 +98,16 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
 
 2. Abra la página de configuración del Centro de cumplimiento y elija **Activar la supervisión de dispositivos macOS**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 La incorporación de dispositivos a las soluciones de Microsoft Purview es necesaria para recibir telemetría del sensor DLP y aplicar directivas de prevención de pérdida de datos. 
 
 Tema | Descripción
 :---|:---
-|[Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
-|[Incorporación y eliminación de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
-|[Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
+|[Intune para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
+|[JAMF Pro para Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
 
 ## <a name="related-topics"></a>Temas relacionados

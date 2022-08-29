@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,19 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 2d4dc4af9f003245b25a85c5b18abf593db8fbe8
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
-ms.translationtype: HT
+ms.openlocfilehash: e054361e015f6dbfad8e6e4dd6e212814f43d552
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285195"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433496"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
-Microsoft 365 Empresa Premium se diseñó para ayudar a proteger las cuentas de usuario de su empresa con la configuración de seguridad preconfigurada. Esta configuración incluye la habilitación de la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. En la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad adicional de inicio de sesión.
-
-> [!TIP]
-> Para obtener más información sobre los valores predeterminados de seguridad y las directivas que aplican, consulte [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Microsoft 365 Empresa Premium se diseñó para ayudar a proteger las cuentas de usuario de su empresa con la configuración de seguridad preconfigurada. Esta configuración incluye la habilitación de la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. En la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad adicional de inicio de sesión. Para las organizaciones que deben cumplir requisitos más estrictos, se puede usar el acceso condicional.
 
 En este artículo se proporciona información acerca de:
 
@@ -40,7 +37,7 @@ En este artículo se proporciona información acerca de:
 - **[Acceso condicional](#conditional-access)** (para empresas con requisitos de seguridad más estrictos)
 
 > [!NOTE]
-> Si ha estado usando directivas de acceso condicional, deberá desactivarlas antes de usar los valores predeterminados de seguridad. Puede usar los valores predeterminados de seguridad o las directivas de acceso condicional, pero no puede usar ambos al mismo tiempo.
+> Puede usar valores predeterminados *de* seguridad *o* directivas de acceso condicional, pero no puede usar ambas al mismo tiempo.
 
 ## <a name="security-defaults"></a>Valores predeterminados de seguridad
 

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 029be738b8c916ec4eb16970ae2d2ff3c460f639
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2116306529530561fab9e4c8107a7b97e64fb5a1
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771982"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344709"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Tutoriales y simulaciones en Microsoft Defender para Empresas
 
@@ -48,7 +48,7 @@ En la tabla siguiente se describen los tutoriales recomendados para los clientes
 |---------|---------|
 | **Puerta trasera de eliminación de documentos**     | Simular un ataque que introduce malware basado en archivos en un dispositivo de prueba. En el tutorial se describe cómo usar el archivo de simulación y qué se debe observar en el portal de Microsoft 365 Defender. <p>Este tutorial requiere que Microsoft Word esté instalado en el dispositivo de prueba.   |
 | **Respuesta dinámica**     | Obtenga información sobre cómo usar comandos básicos y avanzados con Live Response. Obtenga información sobre cómo buscar un archivo sospechoso, corregirlo y recopilar información en un dispositivo.   |
-| **Administración de vulnerabilidades de & amenazas (escenarios principales)**     | Obtenga información sobre Administración de amenazas y vulnerabilidades a través de tres escenarios:<ol><li>Reduzca la exposición a amenazas y vulnerabilidades de su empresa.</li><li>Solicite una corrección.</li><li>Cree una excepción para las recomendaciones de seguridad.</li></ol> <p> Threat & Vulnerability Management usa un enfoque basado en riesgos para la detección, priorización y corrección de vulnerabilidades de punto de conexión y configuraciones incorrectas.      |
+| **Administración de vulnerabilidades de Microsoft Defender(escenarios principales)**     | Obtenga información sobre la administración de vulnerabilidades de Defender a través de tres escenarios:<ol><li>Reduzca la exposición a amenazas y vulnerabilidades de su empresa.</li><li>Solicite una corrección.</li><li>Cree una excepción para las recomendaciones de seguridad.</li></ol> <p> Defender Vulnerability Management usa un enfoque basado en riesgos para la detección, priorización y corrección de vulnerabilidades de punto de conexión y configuraciones incorrectas.      |
 
 Cada tutorial incluye un documento de tutorial que explica el escenario, cómo funciona y qué hacer.
 
@@ -65,9 +65,9 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
 
    - **Puerta trasera de eliminación de documentos**
    - **Respuesta dinámica**
-   - **Administración de vulnerabilidades de & amenazas (escenarios principales)**
+   - **Administración de vulnerabilidades de Microsoft Defender (escenarios principales)**
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)
 - [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)

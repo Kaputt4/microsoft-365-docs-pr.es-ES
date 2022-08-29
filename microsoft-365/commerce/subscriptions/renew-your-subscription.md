@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la mayoría de la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
-ms.date: 05/04/2021
-ms.openlocfilehash: b180b5be5427832070680f00b9cd804a650e603e
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.date: 08/18/2022
+ms.openlocfilehash: 0f7722eda2f7b7fc4f9e24d30be4442c106ff640
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112095"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384566"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -60,8 +60,11 @@ Si ha pagado por adelantado su suscripción con una clave de producto, la suscri
 ::: moniker-end
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
+
 3. En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.
+
 4. En el panel **Editar facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.
+
 5. Seleccione **Guardar**.
 
     > [!NOTE]
@@ -70,6 +73,34 @@ Si ha pagado por adelantado su suscripción con una clave de producto, la suscri
     > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Si desea mantener la suscripción activada, debe pagar la factura manualmente.
     > - Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira. Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.
     > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
+
+## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Ampliar la fecha de expiración de la suscripción de prepago mediante una clave de producto de Microsoft 365
+
+Las licencias de productos prepagados se emiten como un código alfanumérico de 25 caracteres, denominado clave de producto. Si compra otra suscripción de pago por adelantado para un producto que ya posee, puede usar la clave de producto para ampliar la fecha de expiración de la suscripción. También puede usar una clave de producto para [agregar más licencias a la suscripción](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+::: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+2. En la pestaña **Productos** , seleccione la suscripción que desea ampliar.
+
+3. En la página de detalles de la suscripción, en la sección **Configuración de suscripción y pago** , seleccione **Extender fecha de finalización**.
+
+4. En la página **Renovar o agregar licencias de usuario** , seleccione **Usar una clave de producto nueva y sin usar y**, a continuación, seleccione **Siguiente**.
+
+5. Escriba la clave de producto y, a continuación, seleccione **Siguiente**.
+    > [!NOTE]
+    > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
+
+6. Revise los detalles del pedido y, a continuación, seleccione **Canjear**.
 
 ## <a name="related-content"></a>Contenido relacionado
 

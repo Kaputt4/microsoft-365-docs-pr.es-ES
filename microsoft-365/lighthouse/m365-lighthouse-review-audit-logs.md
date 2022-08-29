@@ -17,24 +17,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c24e321cae13e6e604f7daba79f820d0b1bc6bb3
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017518"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315622"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Revisión de los registros de auditoría en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse las acciones de registro de registros de auditoría que generan un cambio en Lighthouse u otros servicios de Microsoft 365. Crear, editar, eliminar, asignar y acciones remotas crean eventos de auditoría que puede revisar. La auditoría está habilitada de forma predeterminada para todos los clientes. No se puede deshabilitar.
+Microsoft 365 Lighthouse registros de auditoría registran acciones que generan un cambio en Lighthouse u otros servicios de Microsoft 365. Crear, editar, eliminar, asignar y acciones remotas crean eventos de auditoría que puede revisar. La auditoría está habilitada de forma predeterminada para todos los clientes. No se puede deshabilitar.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Para ver los registros de auditoría, debe tener uno de los permisos siguientes:
 
-- rol de Azure Active Directory (Azure AD): administrador global del inquilino del asociado
+- Rol de Azure Active Directory (Azure AD): administrador global del inquilino del asociado
 
-- Rol del Centro de partners de Microsoft: Agente de administración
+- Rol del Centro de partners de Microsoft: agente de Administración
 
 ## <a name="review-audit-logs"></a>Revisión de los registros de auditoría
 
@@ -47,8 +47,8 @@ Para ver los registros de auditoría, debe tener uno de los permisos siguientes:
 
     - **Intervalo de fechas** : mes, semana o día anteriores.
     - **Inquilinos: etiquetas** de inquilino o nombres de inquilino de cliente.
-    - **Actividad**: Microsoft 365 tipo de actividad que corresponde a la acción realizada. Para obtener más información, vea la tabla [Actividades](#activities) .
-    - **Iniciado por** : Quién inició la acción.
+    - **Actividad** : tipo de actividad de Microsoft 365 que corresponde a la acción realizada. Para obtener más información, vea la tabla [Actividades](#activities) .
+    - **Iniciado por** : quién inició la acción.
 
 3. Seleccione un registro de la lista para ver los detalles completos, incluido el cuerpo **de la solicitud** .
 
@@ -63,7 +63,6 @@ En la tabla siguiente se enumeran las actividades capturadas en los registros de
 | **aplicar** o **implementar** | Espacios empresariales | Aplicación de un plan de implementación | Azure AD, Microsoft Endpoint Manager (MEM) |
 | **assignTag** | Espacios empresariales | Aplicación de una etiqueta desde un cliente | Faro |
 | **changeDeploymentStatus** o **assign** | Espacios empresariales | Actualización del estado del plan de acción para el plan de implementación | Faro |
-| **managedTenantOperations** | Espacios empresariales | Visualización de información sobre un plan de implementación | Azure AD |
 | **offboardTenant** | Espacios empresariales | Inactivar un cliente | Faro |
 | **resetTenantOnboardingStatus** | Espacios empresariales | Reactivación de un cliente | Faro |
 | **tenantTags** | Espacios empresariales | Creación o eliminación de una etiqueta | Faro |
@@ -74,26 +73,14 @@ En la tabla siguiente se enumeran las actividades capturadas en los registros de
 | **confirmUsersCompromised** | Usuarios | Confirmación de que un usuario está en peligro | Azure AD |
 | **dismissUsersRisk** | Usuarios | Descartar el riesgo del usuario | Azure AD |
 | **resetUserPassword** | Usuarios | Restablecer contraseña | Azure AD |
-| **getConditionalAccessPolicies** | Usuarios | Visualización de directivas de CA que requieren MFA | Azure AD |
-| **getTenantIDToTenantNameMap** | Usuarios | Búsqueda de identificadores | Azure AD |
-| **getUsers** | Usuarios | Búsqueda de usuarios | Azure AD |
-| **getUsersWithoutMfa** | Usuarios | Visualización de usuarios no registrados para MFA | Azure AD |
-| **getSsprEnabledButNotRegisteredUsers** | Usuarios | Visualización de usuarios no registrados para SSPR | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Usuarios | Habilitación de la autenticación multifactor (MFA) con valores predeterminados de seguridad | Azure AD |
-|**getCompliancePolicyInfo** | Dispositivos | Visualización de una directiva | MEM
-|**getDeviceCompliancePolicyStates** | Dispositivos | Visualización de los estados de directiva | MEM
-|**getDeviceCompliancePolicySettingStates** | Dispositivos | Visualización de la configuración no compatible | MEM
-|**getDeviceCompliancePolicySettingStateSummaries** | Dispositivos | Visualización de dispositivos no compatibles | MEM
-|**getTenantsDeviceCompliancePolicies** | Dispositivos | Comparación de directivas | MEM
-| **restartDevice** | Dispositivos | Restart | MEM |
-| **syncDevice** | Dispositivos | Sincronizar | MEM |
-| **rebootNow** | Administración de amenazas | Reiniciar | MEM |
+| **restartDevice** | Dispositivos | Restart | Mem |
+| **syncDevice** | Dispositivos | Sincronizar | Mem |
+| **rebootNow** | Administración de amenazas | Reiniciar | Mem |
 | **reprovision** | Windows 365 | Reintentar el aprovisionamiento | Windows 365 |
-| **getDeviceUserInfo** | Administración de amenazas | Visualización de la información de usuario del dispositivo administrado  | MEM |
-| **getManagedDevice**, **remoteActionAudits** o **deviceActionResults** | Administración de amenazas | Visualización de la información del dispositivo administrado  | MEM |
-| **windowsDefenderScanFull** | Administración de amenazas | Examen completo | MEM |
-| **windowsDefenderScan** | Administración de amenazas | Examen rápido | MEM |
-| **windowsDefenderUpdateSignatures** | Administración de amenazas | Actualización del antivirus | MEM |
+| **windowsDefenderScanFull** | Administración de amenazas | Examen completo | Mem |
+| **windowsDefenderScan** | Administración de amenazas | Examen rápido | Mem |
+| **windowsDefenderUpdateSignatures** | Administración de amenazas | Actualización del antivirus | Mem |
 
 ## <a name="next-steps"></a>Siguientes pasos
 
@@ -102,4 +89,4 @@ Use Microsoft Graph API para acceder a más eventos de auditoría, si es necesar
 ## <a name="related-content"></a>Contenido relacionado
 
 [preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
-[Ver los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)
+[Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)

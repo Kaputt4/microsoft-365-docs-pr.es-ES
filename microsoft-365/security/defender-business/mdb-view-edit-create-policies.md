@@ -10,30 +10,33 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: a7281605f4bc47c2ce39ef3b067a5db39aa33142
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772749"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319941"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Ver o editar directivas en Microsoft Defender para Empresas
 
-En Defender para empresas, la configuración de seguridad se configura a través de directivas que se aplican a los dispositivos. Para simplificar la experiencia de configuración y configuración, Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
+En Defender para Empresas, la configuración de seguridad se ajusta mediante directivas que se aplican a los dispositivos. Para simplificar la experiencia de configuración y configuración, Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
 
 **En este artículo se describe cómo**:
 
 - [Obtener información general de las directivas predeterminadas](#default-policies-in-defender-for-business)
-- [Ver las directivas existentes](#view-your-existing-policies)
+- [Visualización de las directivas existentes](#view-your-existing-policies)
 - [Editar una directiva existente](#edit-an-existing-policy)
 - [Crear una nueva directiva](#create-a-new-policy)
 
+> [!NOTE]
+> En los procedimientos de este artículo se describe cómo ver, editar y crear directivas de seguridad en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Si usa Microsoft Intune, consulte [Administración de la seguridad del punto de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 ## <a name="default-policies-in-defender-for-business"></a>Directivas predeterminadas en Defender para empresas
 
@@ -41,7 +44,6 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 
 - **Directivas de protección de última generación**, que determinan la configuración de Antivirus de Microsoft Defender y otras características de protección contra amenazas
 - **Directivas de firewall**, que determinan qué tráfico de red puede fluir hacia y desde los dispositivos de la empresa
-
 
 ## <a name="view-your-existing-policies"></a>Ver las directivas existentes
 
@@ -119,7 +121,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Elija una o varias de las siguientes tareas:
 

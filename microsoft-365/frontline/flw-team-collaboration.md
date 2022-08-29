@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 07471ac0d253df36f60882bd551769fe2868e195
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998627"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432383"
 ---
 # <a name="frontline-team-collaboration"></a>Colaboración de equipos de primera línea
 
@@ -44,7 +44,7 @@ Teams incluye las siguientes formas de comunicar y compartir información:
 
 |Tarea |Descripción |Administrar esta funcionalidad |Aprendizaje para usuarios finales |
 |-----|------------|-----------------------|------------------|
-|Chatear, publicar mensajes y comunicarse |Los trabajadores de primera línea pueden comunicarse sin problemas dentro y entre ubicaciones con mensajes de chat individuales y de canal. Teams proporciona una experiencia de colaboración excelente para su organización y la configuración predeterminada parece funcionar para la mayoría de organizaciones. |[Administrar chat, equipos, canales y aplicaciones](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Iniciar chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) y [Trabajar con publicaciones y mensajes](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). |
+|Chatear, publicar mensajes y comunicarse |Los trabajadores de primera línea pueden comunicarse sin problemas dentro y entre ubicaciones con mensajes de chat individuales y de canal. Teams proporciona una experiencia de colaboración excelente para su organización y la configuración predeterminada parece funcionar para la mayoría de organizaciones. |[Administrar chat, equipos, canales y aplicaciones](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Iniciar chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) y [Trabajar con publicaciones y mensajes](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). Vea el [vídeo Etiquetas en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=2202727). |
 |Llamar y reunirse con los miembros del equipo |Los administradores pueden configurar reuniones individuales o usar reuniones de canal para administrar reuniones diarias, con la potencia de las características de audio, vídeo, pantalla compartida, grabación y transcripción de Teams. Tendrá que configurar las opciones de reuniones y conferencias, y habilitar una solución de voz para usar las llamadas. |[Administrar llamadas y reuniones en Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) y [Planear su solución de voz de Teams](/microsoftteams/cloud-voice-landing-page) |[Realizar llamadas](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) y [Unirse a una reunión](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
 |Almacenar y compartir archivos y documentos |Compartir archivos permite al personal de la tienda acceder fácilmente a información como diagramas de mercadotecnia sin tener que abandonar del piso de ventas ni obtener ayuda de un administrador. Todos los equipos vienen automáticamente con una pestaña Archivos que puede usar para almacenar y compartir documentos. Esta pestaña representa realmente una carpeta dentro de la biblioteca de documentos de sitio de grupo predeterminada en SharePoint que se crea automáticamente al crear el equipo. |[Información general sobre la integración de Teams y SharePoint](/sharepoint/teams-connected-sites) |[Cargar y compartir archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
@@ -84,13 +84,19 @@ Las organizaciones de servicios financieros también pueden usar el [Administrad
 > [!TIP]
 > Se proporcionan ejemplos para los sectores de servicios financieros, asistencia sanitaria, ONG y comercio minorista, pero puede usar estas aplicaciones para una organización en cualquier sector.
 
+[Vea vídeos y recursos](collab-features-apps-toolkit.md) para compartirlos con su equipo para ayudarle a usar aplicaciones y características de colaboración en Teams.
+
 ### <a name="create-manage-and-share-schedules-with-shifts"></a>Crear, administrar y compartir programaciones con Turnos
 
 Use Turnos para administrar y compartir programaciones sin problemas. Los administradores pueden crear grupos personalizados, como cajeros, enfermeros o especialistas en préstamos, asignar turnos a los empleados, agregar etiquetas y descansos personalizados y agregar turnos abiertos que los empleados pueden solicitar realizar. Los empleados pueden usar Turnos para establecer su disponibilidad, ver sus programaciones, intercambiar turnos con compañeros de trabajo y registrar la entrada y la salida. Los administradores también pueden crear turnos abiertos que los empleados pueden solicitar. Por ejemplo, un coordinador de voluntarios de una organización sin fines de lucro podría crear turnos abiertos que los voluntarios puedan solicitar.
 
-[Obtenga información sobre cómo administrar Turnos para su organización](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar turnos para su organización](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+
+Obtenga información sobre cómo [ayudar a sus empleados a realizar un seguimiento del tiempo y la asistencia con turnos](shifts-toolkit.md).
 
 Comparta este [vídeo de aprendizaje de Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) con los usuarios.
+
+[Vea vídeos y recursos](shifts-toolkit.md) para compartirlos con su equipo para ayudarle a usar características en Turnos.
 
 ### <a name="keep-in-touch-with-walkie-talkie"></a>Mantenerse en contacto con Walkie-talkie
 
@@ -103,9 +109,11 @@ La aplicación Walkie-talkie proporciona una comunicación instantánea entre pe
 |Servicios financieros |Un empleado del banco que analice las opciones de préstamo con un cliente puede usar Walkie-talkie para consultar a un experto en préstamos y determinar la mejor opción para el cliente. |
 |Industria |Un técnico puede usar Walkie-talkie para consultar con un experto en otra ubicación mientras realiza tareas de mantenimiento o reparación de equipos. |
 
-[Obtenga información sobre cómo administrar Walkie-talkie para su organización](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar Walkie Talkie para su organización](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Comparta este [vídeo de aprendizaje de Walkie-talkie](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) con los usuarios.
+
+Vea el [vídeo de walkie talkie featurette](https://go.microsoft.com/fwlink/?linkid=2202710).
 
 ### <a name="boost-morale-with-praise"></a>Aumentar la motivación con Elogio
 
@@ -116,15 +124,15 @@ La aplicación Elogio permite a los miembros del equipo de administración y de 
 |Venta minorista |Un administrador de la tienda puede enviar el distintivo **Increíble** a un asociado que cumpla sus objetivos de ventas. |
 |Salud |Un trabajador sanitario puede enviar el distintivo **Gran corazón** a un compañero que ponga un esfuerzo adicional en la atención al paciente. |
 |Servicios financieros |Un administrador bancario puede enviar el distintivo **Triunfador** a un administrador de relaciones que ayude a conservar un cliente importante. |
-|Industria |Un supervisor puede enviar el distintivo **Liderazgo** a un encargado cuyo equipo funciona bien. |
+|Industria |Un supervisor puede enviar la insignia **de liderazgo** a un capataz cuyo equipo está funcionando bien. |
 
-[Obtenga información sobre cómo administrar la aplicación Elogiar para su organización](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar la aplicación Praise para su organización](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Comparta este [vídeo de aprendizaje de Elogio](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) con los usuarios.
 
 ### <a name="track-and-monitor-work-with-tasks"></a>Seguimiento y supervisión del trabajo con Tareas
 
-Use Tareas en Teams para realizar un seguimiento de las tareas pendientes de todo el equipo minorista. Los administradores y empleados de la tienda pueden crear, asignar y programar tareas, clasificarlas y actualizar su estado en cualquier momento desde cualquier dispositivo que use Teams. Los administradores y profesionales de TI también pueden publicar tareas en equipos específicos para su organización. Por ejemplo, podría publicar un conjunto de tareas para la limpieza diaria o los pasos para configurar un nuevo mostrador.
+Use Tareas en Teams para realizar un seguimiento de los elementos pendientes de todo el equipo de primera línea. Los administradores y empleados de la tienda pueden crear, asignar y programar tareas, clasificarlas y actualizar su estado en cualquier momento desde cualquier dispositivo que use Teams. Los administradores y profesionales de TI también pueden publicar tareas en equipos específicos para su organización. Por ejemplo, podría publicar un conjunto de tareas para la limpieza diaria o los pasos para configurar un nuevo mostrador.
 
 |Industria |Ejemplo |
 |:--------|:-------|
@@ -133,9 +141,11 @@ Use Tareas en Teams para realizar un seguimiento de las tareas pendientes de tod
 |Servicios financieros |Un administrador bancario puede asignar a los especialistas en préstamos una tarea para revisar y familiarizarse con nuevas tarifas o directivas. |
 |Industria |Un supervisor puede asignar a un trabajador una tarea para inspeccionar un nuevo lote de productos. |
 
-[Obtenga información sobre cómo administrar la aplicación Tareas para su organización](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar la aplicación Tareas para su organización](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Comparta este [vídeo de aprendizaje de Tareas](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) con los usuarios.
+
+Vea el [vídeo de la característica Tareas](https://go.microsoft.com/fwlink/?linkid=2202616).
 
 ### <a name="streamline-approvals-with-approvals"></a>Simplificar las aprobaciones con Aprobaciones
 
@@ -148,9 +158,11 @@ Use Aprobaciones para simplificar las solicitudes y los procesos con su equipo. 
 |Servicios financieros |Un especialista en préstamos podría enviar una solicitud de aprobación a un supervisor para ofrecer una tasa de interés especial. |
 |Industria |Un operador de máquina puede enviar una solicitud de aprobación para ajustar la configuración en un equipo. |
 
-[Obtenga información sobre cómo administrar la aplicación Aprobaciones para su organización](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar la aplicación Aprobaciones para su organización](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Comparta este [vídeo de aprendizaje de Aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) con los usuarios.
+
+Vea el vídeo de la [característica Aprobaciones](https://go.microsoft.com/fwlink/?linkid=2202800).
 
 ### <a name="check-in-on-progress-with-updates"></a>Comprobar el progreso con Novedades
 
@@ -163,9 +175,11 @@ La aplicación Actualizaciones de Microsoft Teams proporciona un lugar centraliz
 |Servicios financieros |Un administrador bancario podría crear y asignar una plantilla diaria periódica para que los contadores confirmen los recuentos de la mañana. |
 |Industria |Un supervisor puede crear y asignar una plantilla para realizar un seguimiento del progreso en la producción de un nuevo lote de elementos. |
 
-[Obtenga información sobre cómo administrar la aplicación Actualizaciones de su organización](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Obtenga información sobre cómo [administrar la aplicación de Novedades para su organización](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Comparta este [vídeo de aprendizaje de Actualizaciones](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) con los usuarios.
+
+Vea el [vídeo Novedades featurette](https://go.microsoft.com/fwlink/?linkid=2202831).
 
 ## <a name="set-up-your-teams-channels-and-apps"></a>Configurar equipos, canales y aplicaciones
 
@@ -187,6 +201,23 @@ Más información: [Crear un equipo con plantillas](https://support.microsoft.co
 Restrinja lo que hay en su equipo mediante aplicaciones. Puede permitir o bloquear aplicaciones para su organización, o configurar las opciones de las aplicaciones, en el centro de administración de Microsoft Teams. Para obtener más información sobre la administración de aplicaciones, vea [Administrar aplicaciones en el centro de administración de Microsoft Teams](/microsoftteams/manage-apps).
 
 Los usuarios pueden agregar las aplicaciones que haya permitido a sus equipos. Comparta este aprendizaje con los usuarios para mostrarles cómo: [Buscar y usar aplicaciones](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
+
+
+### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Uso de Conexiones Viva para crear una experiencia personalizada
+
+Conexiones Viva forma parte del [conjunto microsoft Viva](/viva/microsoft-viva-overview) y le permite crear una experiencia de aterrizaje personalizada en Teams. 
+
+![Captura de pantalla del panel de Conexiones Viva en un dispositivo móvil.](media/flw-shifts-praise-tasks-approvals.png)
+
+
+Use el panel de Conexiones Viva y agregue las tarjetas Turnos, Tareas y Aprobaciones. Las tarjetas están conectadas a las aplicaciones Turnos, Tareas y Aprobaciones de Teams. El contenido de las tarjetas es dinámico y personalizado para el usuario. 
+
+Obtenga más información sobre [cómo obtener Conexiones Viva](/viva/connections/viva-connections-overview) y [cómo crear un panel de Conexiones Viva](/viva/connections/create-dashboard). 
+
+
+
+
+
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>Más información sobre las capacidades de Teams para sectores específicos
 

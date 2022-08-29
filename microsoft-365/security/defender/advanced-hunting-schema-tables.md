@@ -1,7 +1,7 @@
 ---
-title: Tablas de datos del esquema Microsoft 365 Defender búsqueda avanzada
+title: Tablas de datos del esquema de búsqueda avanzada Microsoft 365 Defender
 description: Obtenga información sobre las tablas del esquema de búsqueda avanzada para saber sobre qué datos puede ejecutar consultas de búsqueda avanzada de amenazas.
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f84e0e0ad95d45cefabdfb87b824d6afd2385638
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755529"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384236"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -35,33 +35,33 @@ ms.locfileid: "63755529"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-El [esquema de búsqueda](advanced-hunting-overview.md) avanzada está hecho de varias tablas que proporcionan información sobre eventos o información sobre dispositivos, alertas, identidades y otros tipos de entidad. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
+El esquema de [búsqueda avanzada](advanced-hunting-overview.md) se compone de varias tablas que proporcionan información de eventos o información sobre dispositivos, alertas, identidades y otros tipos de entidad. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
 
 <a name="get-schema-information-in-the-security-center"></a>
 
 ## <a name="get-schema-information"></a>Obtener información de esquema
 
-Al crear consultas, use la referencia de esquema integrado para obtener rápidamente la siguiente información sobre cada tabla del esquema:
+Al crear consultas, use la referencia de esquema integrada para obtener rápidamente la siguiente información sobre cada tabla del esquema:
 
-- **Descripción de tablas**: tipo de datos contenidos en la tabla y el origen de los datos.
+- **Descripción de las tablas**: tipo de datos contenidos en la tabla y el origen de esos datos.
 - **Columnas**: todas las columnas de la tabla.
 - **Tipos de acción**: valores posibles en la `ActionType` columna que representan los tipos de evento admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
-- **Consulta de** ejemplo: consultas de ejemplo que ofrecen cómo se puede usar la tabla.
+- **Consulta de** ejemplo: consultas de ejemplo que incluyen cómo se puede usar la tabla.
 
-### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema
-Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver** referencia junto al nombre de tabla en la representación del esquema. También puede seleccionar Referencia **de esquema para** buscar una tabla.
+### <a name="access-the-schema-reference"></a>Acceso a la referencia de esquema
+Para acceder rápidamente a la referencia de esquema, seleccione la acción **Ver referencia** junto al nombre de la tabla en la representación del esquema. También puede seleccionar **Referencia de esquema** para buscar una tabla.
 
-:::image type="content" source="../../media/understand-schema-1.png" alt-text="La página Referencia de esquema de la página Búsqueda avanzada del portal Microsoft 365 Defender búsqueda" lightbox="../../media/understand-schema-1.png":::
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="La página Referencia de esquema de la página Búsqueda avanzada del portal de Microsoft 365 Defender" lightbox="../../media/understand-schema-1.png":::
 
 ## <a name="learn-the-schema-tables"></a>Obtenga información sobre las tablas de esquema
-A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna también se enumeran en defender para la nube como parte de la representación del esquema en la pantalla de búsqueda avanzada.
+A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna también se muestran en Defender for Cloud como parte de la representación de esquema en la pantalla de búsqueda avanzada.
 
 | Nombre de tabla | Descripción |
 |------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados con alertas |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identidad, incluida información de gravedad y categorización de amenazas  |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados a alertas |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Cloud Apps y Microsoft Defender for Identity , incluida la información de gravedad y la categorización de amenazas  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventos relacionados con cuentas y objetos en Office 365 y otras aplicaciones y servicios en la nube |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como el Antivirus de Windows Defender y la protección contra vulnerabilidades |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como Antivirus de Microsoft Defender y protección contra vulnerabilidades de seguridad |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Información de certificados de archivos firmados obtenidos de los eventos de comprobación de certificados en puntos de conexión |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Creación y modificación de archivos y otros eventos del sistema de archivos |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Eventos de carga de DLL |
@@ -71,8 +71,8 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de dispositivos, incluyendo adaptadores físicos, direcciones IP y MAC, así como redes y dominios conectados |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creación de procesos y eventos relacionados |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creación y modificación de entradas de Registro |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Eventos de evaluación de administración de amenazas y vulnerabilidades, donde se indica el estado de las distintas configuraciones de seguridad de los dispositivos |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de conocimiento de las configuraciones de seguridad utilizadas por la administración de amenazas y vulnerabilidades para evaluar dispositivos, incluidas las asignaciones a diferentes estándares y criterios de referencia  |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Administración de vulnerabilidades de Microsoft Defender eventos de evaluación, que indican el estado de varias configuraciones de seguridad en los dispositivos |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de conocimiento de varias configuraciones de seguridad usadas por Administración de vulnerabilidades de Microsoft Defender para evaluar dispositivos; incluye asignaciones a diversos estándares y pruebas comparativas  |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventario del software instalado en dispositivos, incluida la información de la versión y el estado de finalización del soporte técnico |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilidades de software encontradas en los dispositivos y lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | La base de conocimiento de vulnerabilidades de la que se ha informado públicamente, incluyendo si el código que aprovecha la vulnerabilidad está disponible para el público |

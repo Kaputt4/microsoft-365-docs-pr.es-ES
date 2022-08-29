@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de cuenta bancaria internacional (IBAN).
-ms.openlocfilehash: 739c0a1fd90da1da817f46019cd1023be8ab27a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 016196af1d36c3d246d275848f7339a74d0878a2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999857"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322351"
 ---
 # <a name="international-banking-account-number-iban"></a>Número de cuenta bancaria internacional (IBAN)
 
@@ -42,7 +42,7 @@ El patrón debe incluir todo lo siguiente:
 - 1-7 grupos de cuatro letras o dígitos (pueden estar separados por espacios)
 - 1-3 letras o dígitos
 
-El formato de cada país es ligeramente diferente. El tipo de información confidencial del IBAN cubre estos 60 países:
+El formato de cada país es ligeramente diferente. El tipo de información confidencial IBAN abarca estos 68 países:
 
 - ad
 - Ae
@@ -53,6 +53,7 @@ El formato de cada país es ligeramente diferente. El tipo de información confi
 - Ser
 - bg
 - Bh
+- br
 - Ch
 - Cr
 - Cy
@@ -70,12 +71,14 @@ El formato de cada país es ligeramente diferente. El tipo de información confi
 - Gi
 - gl
 - Gr
+- gt
 - hr
 - hu
 - Ie
 - Il
 - is
 - it
+- Jo
 - Kw
 - Kz
 - Lb
@@ -83,7 +86,7 @@ El formato de cada país es ligeramente diferente. El tipo de información confi
 - lt
 - Lu
 - lv
-- Mc
+- mc
 - md
 - me
 - mk
@@ -92,8 +95,11 @@ El formato de cada país es ligeramente diferente. El tipo de información confi
 - Mu
 - nl
 - no
+- Pk
 - pl
+- Ps
 - pt
+- Qa
 - ro
 - rs
 - Sa
@@ -101,9 +107,12 @@ El formato de cada país es ligeramente diferente. El tipo de información confi
 - si
 - sk
 - Sm
+- Tl
 - Tn
 - tr
 - Vg
+- Xk
+
 
 ## <a name="checksum"></a>Suma de comprobación
 

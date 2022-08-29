@@ -1,7 +1,7 @@
 ---
 title: Obtener software por identificación
 description: Recupera una lista de detalles de software por identificador.
-keywords: apis, api de gráficos, api admitidas, get, software, Api de Microsoft Defender para Endpoint tvm
+keywords: api, graph api, api admitidas, get, software, Microsoft Defender para punto de conexión tvm api, mdvm, Administración de vulnerabilidades de Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f5749fcb98253feda4bec1dde08f7765227f676
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 25875a0be2a632ae0d0d02a8633757216a8bcb2f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301911"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344841"
 ---
 # <a name="get-software-by-id"></a>Obtener software por identificación
 
@@ -41,12 +41,12 @@ Recupera los detalles del software por identificador.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -58,15 +58,15 @@ GET /api/Software/{Id}
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|String|Portador {token}. **Obligatorio**.
+Authorization|Cadena|Portador {token}. **Obligatorio**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Aceptar con los datos de software especificados en el cuerpo.
+Si se ejecuta correctamente, este método devuelve 200 OK con los datos de software especificados en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -98,5 +98,5 @@ Este es un ejemplo de la respuesta:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventario de software de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

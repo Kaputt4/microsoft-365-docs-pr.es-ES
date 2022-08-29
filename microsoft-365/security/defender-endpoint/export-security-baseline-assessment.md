@@ -1,6 +1,6 @@
 ---
 title: Métodos y propiedades de evaluación de línea base de seguridad por dispositivo
-description: Proporciona información sobre las API de líneas base de seguridad que extraen datos "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
+description: Proporciona información sobre las API de líneas base de seguridad que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5fd673f37dd35a83a714c0f3dd1c6ac3b0a049ca
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: fb7dd6ff2f752fdbd8eff644ba728391d1f1dfa0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66998177"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343359"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Exportación de la evaluación de líneas base de seguridad por dispositivo
 
@@ -32,7 +32,7 @@ ms.locfileid: "66998177"
 - [Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? [Regístrese para obtener una evaluación gratuita.- Actualizar](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quieres experimentar Administración de vulnerabilidades de Microsoft Defender? Obtenga más información sobre cómo puede registrarse en la [versión de prueba de Administración de vulnerabilidades de Microsoft Defender versión preliminar pública](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 
@@ -59,7 +59,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|SecurityBaselinesAssessment.Read.All |"Leer toda la información de las evaluaciones de líneas de base de seguridad"
+Application|SecurityBaselinesAssessment.Read.All |"Leer toda la información de las evaluaciones de líneas de base de seguridad"
 Delegado (cuenta profesional o educativa)|SecurityBaselinesAssessment.Read|"Leer la información de las evaluaciones de líneas de base de seguridad"
 
 ### <a name="13-limitations"></a>1.3 Limitaciones
@@ -97,7 +97,7 @@ Propiedad (ID)|Tipo de datos|Descripción
 |isCompliant|Boolean|Indica si el dispositivo es compatible con la configuración.
 |id|Cadena|Identificador único del registro, que es una combinación de DeviceId, ProfileId y ConfigurationId.
 |osVersion|Cadena|Versión específica del sistema operativo que se ejecuta en el dispositivo.
-|osPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte Sistemas [operativos y plataformas compatibles con TVM](tvm-supported-os.md) para obtener más información.
+|osPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte [Sistemas operativos y plataformas compatibles con MDVM](tvm-supported-os.md) para obtener más información.
 |rbacGroupId|Int|Identificador del grupo de control de acceso basado en rol (RBAC). Si el dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
 |rbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si el dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
 |DataCollectionTimeOffset|DateTime|El momento en que se recopilaron los datos del dispositivo. Es posible que este campo no aparezca si no se recopilaron datos.

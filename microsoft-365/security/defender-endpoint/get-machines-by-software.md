@@ -1,7 +1,7 @@
 ---
 title: Enumerar dispositivos por software
-description: Recupera una lista de dispositivos que tienen instalado este software.
-keywords: apis, api de gráficos, api admitidas, get, dispositivos de lista, lista de dispositivos, lista de dispositivos por software, Api de Microsoft Defender para Endpoint tvm
+description: Recupere una lista de dispositivos que tengan instalado este software.
+keywords: apis, graph api, api admitidas, get, list devices, devices list, list devices by software, Microsoft Defender para punto de conexión tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fba7fc216f126a9b6f166fe0287a75f5a3b38214
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301587"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345105"
 ---
 # <a name="list-devices-by-software"></a>Enumerar dispositivos por software
 
@@ -37,16 +37,16 @@ ms.locfileid: "61301587"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una lista de referencias de dispositivo que tiene instalado este software.
+Recupere una lista de referencias de dispositivo que tenga instalado este software.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API](apis-intro.md) para obtener más información.
 
-Tipo de permiso|Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -58,15 +58,15 @@ GET /api/Software/{Id}/machineReferences
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|String|Portador {token}. **Obligatorio**.
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 OK y una lista de dispositivos con el software instalado en el cuerpo. 
+Si se ejecuta correctamente, este método devuelve 200 OK y una lista de dispositivos con el software instalado en el cuerpo. 
 
 ## <a name="example"></a>Ejemplo
 
@@ -106,5 +106,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Administración de vulnerabilidades de Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventario de software de Administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276774"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344563"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportación de la evaluación del inventario de software por dispositivo
 
@@ -62,7 +62,7 @@ Esta respuesta de API contiene todos los datos del software instalado que tiene 
 
 ### <a name="12-permissions"></a>1.2 Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de las API de Pertahanan Microsoft untuk Titik Akhir para obtener más información.](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
@@ -101,7 +101,7 @@ EndOfSupportDate|string|La fecha en la que la compatibilidad con este software t
 EndOfSupportStatus|string|Fin del estado de soporte técnico. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Próximo EOS
 Id|string|Identificador único del registro.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|Entero|Número de puntos débiles en este software en este dispositivo|3
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte los sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11
+OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulte Administración de vulnerabilidades de Microsoft Defender sistemas operativos y plataformas compatibles para obtener más información.|Windows10 y Windows 11
 RbacGroupName|string|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores
 RegistryPaths|Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|string|La primera vez que se vio este software en el dispositivo.|2019-04-07 02:06:47
@@ -227,7 +227,7 @@ Las limitaciones de frecuencia de esta API son 5 llamadas por minuto y 20 llamad
 
 ### <a name="22-permissions"></a>2.2 Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de las API de Pertahanan Microsoft untuk Titik Akhir para obtener más información.](apis-intro.md)
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
@@ -284,14 +284,14 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Exportación de métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportación de una evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)
 - [Exportación de la evaluación de vulnerabilidades de software por dispositivo](get-assessment-software-vulnerabilities.md)
-- [Exportación de la evaluación del inventario de software que no es de código de producto](get-assessment-non-cpe-software-inventory.md)
+- [Exportar evaluación de inventario de software sin código de producto](get-assessment-non-cpe-software-inventory.md)
 
 Otros relacionados
 
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)

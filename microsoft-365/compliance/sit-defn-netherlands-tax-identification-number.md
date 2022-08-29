@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad del tipo de información confidencial del número de identificación fiscal de Los Países Bajos.
-ms.openlocfilehash: 03dc229b91636644075428b9b01fee1503c80da1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 5aebedbcedd04fcf63e9c365329f7eb46fa80740
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000121"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369836"
 ---
 # <a name="netherlands-tax-identification-number"></a>Número de identificación fiscal de los Países Bajos
-
-Este tipo de información confidencial solo está disponible para su uso en:
-
-- directivas de prevención de pérdida de datos
-- directivas de cumplimiento de comunicación
-- administración del ciclo de vida de los datos
-- administración de registros
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Formato
 
@@ -94,20 +86,20 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - estaño neerlandés
 - lata de netherland
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
 - tal de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
 - recuento de impuestos
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

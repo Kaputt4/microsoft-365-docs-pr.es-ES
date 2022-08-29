@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
+ms.technology: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f19499a3c00fc1520d8bffb64336a789c017d28
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
-ms.translationtype: HT
+ms.openlocfilehash: 942752a8fc13a9644558f20567d7dd32e991867b
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687768"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408073"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 
@@ -146,7 +147,7 @@ Responde de forma eficaz mediante la investigación y respuesta automatizadas (A
 
 Usa la búsqueda avanzada para escribir reglas de detección personalizadas, inspeccionar proactivamente los eventos de tu entorno y localizar indicadores de amenazas. Explora los datos sin procesar del entorno.
 
-- [Crea reglas de detección personalizadas](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Crea reglas de detección personalizadas](../defender/custom-detections-overview.md).
 - [Accede a consultas compartidas](../defender/advanced-hunting-shared-queries.md) creadas por otros usuarios.
 
 Mira este vídeo para obtener más información: [Búsqueda de amenazas con Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).

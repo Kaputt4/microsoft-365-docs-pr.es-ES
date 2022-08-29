@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas están enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f9e1a6eed45da6a125917a3ba6b181537248c9c6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493561"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322945"
 ---
 # <a name="manually-change-microsoft-plans"></a>Cambiar manualmente los planes de Microsoft
 
@@ -42,7 +42,7 @@ La mejor manera de cambiar todos los usuarios de un plan a otro es [usar la pest
 Para continuar con un cambio manual, lea [Paso 2: Comprar una nueva suscripción](#step-2-buy-a-new-subscription) en este tema.
 
 > [!IMPORTANT]
-> Si va a cambiar a un plan con menos servicios relacionados con datos que el plan actual (degradación), debe realizar manualmente una copia de seguridad de los datos que desee conservar. Para obtener más información, consulte [Copia de seguridad de datos antes de cambiar de plan](back-up-data-before-switching-plans.md).
+> Si va a cambiar a un plan con menos servicios relacionados con datos que el plan actual (degradación), debe realizar manualmente una copia de seguridad de los datos que desee conservar. Para obtener más información, consulte [Copia de seguridad de datos antes de cambiar de plan](move-users-different-subscription.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Paso 2: Comprar una nueva suscripción
 

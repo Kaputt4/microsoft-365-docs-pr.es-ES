@@ -10,20 +10,24 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 8587b1fe90f003035d02afb7cf34cd9773e0d3ca
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 55e429351a45b461d8a55dfcebe56a17cf6ef35e
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300353"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320336"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Obtención de servidores Microsoft Defender para Empresas (versión preliminar)
+
+Microsoft Defender para Empresas servidores (versión preliminar) permite incorporar un dispositivo que ejecuta Windows Server o Linux Server a Defender para empresas o Microsoft 365 Empresa Premium. Cuando la licencia de Microsoft Defender para Empresas servidores esté disponible con carácter general, necesitará una licencia para cada instancia de servidor.
+
+A continuación se muestra cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar):
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
 

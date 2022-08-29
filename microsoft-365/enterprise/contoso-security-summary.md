@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: 7ffde6eec3e5f294311926fa013d9e089ad67e0f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46611f5321c893466448b39a9990501d9b3fafc2
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091333"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385471"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 
@@ -34,7 +34,7 @@ Para obtener la aprobación para implementar Microsoft 365 para empresas, el dep
 - Los recursos digitales altamente regulados están protegidos con cifrado y permisos adicionales.
 - El personal de seguridad de TI puede supervisar la posición de seguridad actual desde los paneles centrales y recibir notificaciones de eventos de seguridad para una respuesta y mitigación rápidas.
 
-## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Ruta de acceso de Contoso para Microsoft 365 preparación de seguridad
+## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>La ruta de acceso de Contoso a la preparación de seguridad de Microsoft 365
 
 Contoso ha seguido estos pasos para preparar su seguridad para la implementación de Microsoft 365 para empresas:
 
@@ -44,7 +44,7 @@ Contoso ha seguido estos pasos para preparar su seguridad para la implementació
 
 2. Clasificación de datos en tres niveles de seguridad
 
-   Contoso realizó una revisión cuidadosa y determinó los tres niveles, que se usaron para identificar el Microsoft 365 de las características empresariales a fin de proteger los datos más valiosos.
+   Contoso realizó una revisión cuidadosa y determinó los tres niveles, que se usaron para identificar las características de Microsoft 365 para empresas con el fin de proteger los datos más valiosos.
 
 3. Determinar las directivas de acceso, retención y protección de la información para los niveles de datos
 
@@ -58,7 +58,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   En lugar de asignar el rol de administrador global a cuentas de usuario diarias, Contoso creó tres cuentas de administrador global dedicadas con contraseñas seguras. Las cuentas están protegidas por Azure AD Multi-Factor Authentication (MFA) y Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM solo está disponible con Microsoft 365 E5.*
 
-  El inicio de sesión con un **administrador de controlador de dominio de Azure AD** o una cuenta **de administrador global** solo se realiza para tareas administrativas específicas. Las contraseñas solo son conocidas por el personal designado y solo se pueden usar en un período de tiempo configurado en Azure AD PIM.
+  El inicio de sesión con un administrador de Controlador de dominio de **Azure AD** o una cuenta **de administrador global** solo se realiza para tareas administrativas específicas. Las contraseñas solo son conocidas por el personal designado y solo se pueden usar en un período de tiempo configurado en PIM de Azure AD.
 
   Los administradores de seguridad de Contoso asignaron roles de administrador menores a las cuentas que son adecuadas para la función de trabajo del trabajador de TI.
 
@@ -66,9 +66,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - MFA para todas las cuentas de usuario
 
-  MFA agrega una capa adicional de protección al proceso de inicio de sesión. Requiere que los usuarios confirmen una llamada telefónica, un mensaje de texto o una notificación de aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA, Azure AD cuentas de usuario están protegidas contra el inicio de sesión no autorizado, incluso si una contraseña de cuenta está en peligro.
+  MFA agrega una capa adicional de protección al proceso de inicio de sesión. Requiere que los usuarios confirmen una llamada telefónica, un mensaje de texto o una notificación de aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA, las cuentas de usuario de Azure AD están protegidas contra el inicio de sesión no autorizado, incluso si una contraseña de cuenta está en peligro.
 
-   - Para protegerse frente a los riesgos de la suscripción de Microsoft 365, Contoso requiere MFA en todas **las cuentas de administrador de controlador** de dominio Azure AD o **global**.
+   - Para protegerse frente a los riesgos de la suscripción de Microsoft 365, Contoso requiere MFA en todos los **administradores de Azure AD DC** o cuentas **de administrador global** .
    - Para protegerse contra los ataques de suplantación de identidad (phishing), en los que un atacante pone en peligro las credenciales de una persona de confianza de la organización y envía mensajes de correo electrónico malintencionados, Contoso habilitó MFA en todas las cuentas de usuario, incluidos los administradores y ejecutivos.
 
 - Acceso de dispositivos y aplicaciones más seguro con las directivas de Acceso Condicional
@@ -85,9 +85,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 ## <a name="threat-protection"></a>Protección contra amenazas
 
-- Protección contra malware con Antivirus de Windows Defender
+- Protección contra malware con antivirus de Microsoft Defender
 
-  Contoso usa [Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) para la protección contra malware y la administración antimalware en los equipos y dispositivos que ejecutan Windows 10 Enterprise.
+  Contoso usa [el Antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) para la protección contra malware y la administración contra malware para equipos y dispositivos que ejecutan Windows 10 Enterprise.
 
 - Proteger el flujo de correo electrónico y el registro de auditoría de buzones con Microsoft Defender para Office 365 
 
@@ -107,15 +107,15 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Protección de los activos digitales confidenciales y altamente regulados con etiquetas de Azure Information Protection
 
-  Contoso determinó tres niveles de protección de datos e implementó [Microsoft 365 etiquetas de confidencialidad](../compliance/sensitivity-labels.md) que los usuarios aplican a los recursos digitales. Por sus secretos comerciales y otras propiedades intelectuales, Contoso usa subetiquetas de confidencialidad para datos altamente regulados. Este proceso cifra el contenido y restringe el acceso a cuentas de usuario y grupos específicos.
+  Contoso determinó tres niveles de protección de datos e implementó [etiquetas de confidencialidad de Microsoft 365](../compliance/sensitivity-labels.md) que los usuarios aplican a los recursos digitales. Por sus secretos comerciales y otras propiedades intelectuales, Contoso usa subetiquetas de confidencialidad para datos altamente regulados. Este proceso cifra el contenido y restringe el acceso a cuentas de usuario y grupos específicos.
 
 - Evitar filtraciones de datos de la intranet con Prevención de pérdida de datos
 
-  Contoso configuró [directivas de prevención de pérdida de datos de Microsoft Purview](../compliance/dlp-learn-about-dlp.md) para Exchange Online, SharePoint y OneDrive para la Empresa para evitar que los usuarios compartan información confidencial accidental o intencionadamente.
+  Contoso configuró [directivas de Prevención de pérdida de datos de Microsoft Purview](../compliance/dlp-learn-about-dlp.md) para Exchange Online, SharePoint y OneDrive para la Empresa para evitar que los usuarios compartan información confidencial accidental o intencionadamente.
 
 - Evitar pérdidas de datos de dispositivo con Windows Information Protection
 
-  Contoso usa [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) para protegerse contra la pérdida de datos a través de aplicaciones y servicios basados en Internet y aplicaciones empresariales y datos en dispositivos de propiedad empresarial y dispositivos personales que los empleados traen a trabajar.
+  Contoso usa [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) para protegerse frente a la pérdida de datos a través de aplicaciones y servicios basados en Internet y aplicaciones empresariales y datos en dispositivos de propiedad empresarial y dispositivos personales que los empleados traen al trabajo.
 
 - Supervisión en la nube con Microsoft Defender for Cloud Apps
 
@@ -129,7 +129,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Panel de seguridad central para TI con Microsoft Defender for Cloud
 
-  Contoso usa la [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) para presentar una visión unificada de la seguridad y la protección contra amenazas, para administrar las directivas de seguridad en sus cargas de trabajo y para responder a los ciberataques.
+  Contoso usa [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) para presentar una visión unificada de la seguridad y la protección contra amenazas, para administrar directivas de seguridad en sus cargas de trabajo y para responder a ciberataques.
 
 - Panel de seguridad central para los usuarios con Seguridad de Windows
 

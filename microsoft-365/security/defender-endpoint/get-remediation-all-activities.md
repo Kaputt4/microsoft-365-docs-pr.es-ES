@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2540e1d9521771bd9ae4d49b96384fefd8766aec
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: bda1edfd4e5744ab171e86bf01f6b7e30efea22c
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020074"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342951"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -62,7 +62,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación|RemediationTasks.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Application|RemediationTasks.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
 Delegado (cuenta profesional o educativa)|RemediationTask.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
 
 ## <a name="properties"></a>Propiedades
@@ -77,10 +77,10 @@ createdOn|DateTime|Hora en que se creó esta actividad de corrección|2021-01-12
 Descripción|Cadena|Descripción de esta actividad de corrección|Actualice Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
 dueOn|DateTime|Fecha de vencimiento establecida por el creador para esta actividad de corrección|2021-01-13T00:00:00Z
 fixedDevices|.|Número de dispositivos que se han corregido|2
-ID|String|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
+Id.|Cadena|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
 nameId|Cadena|Nombre del producto relacionado|Microsoft Silverlight
 Prioridad|Cadena|Prioridad del creador establecido para esta actividad de corrección (Alto\Medio\Bajo)|Alto
-Productid|String|Identificador de producto relacionado|microsoft-_-silverlight
+Productid|Cadena|Identificador de producto relacionado|microsoft-_-silverlight
 productivityImpactRemediationType|Cadena|Solo se pueden solicitar algunos cambios de configuración para los dispositivos que no afectan a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo los dispositivos sin ningún impacto en el usuario".|AllExposedAssets
 rbacGroupNames|Cadena|Nombres de grupos de dispositivos relacionados|[ "Servidores Windows", "Windows 11", "Windows 10" ]
 recommendedProgram|Cadena|Programa recomendado para actualizar a|Null
@@ -96,7 +96,7 @@ statusLastModifiedOn|DateTime|Fecha en que se actualizó el campo de estado|2021
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 Título|Cadena|Título de esta actividad de corrección|Actualización de Microsoft Silverlight
 Tipo|Cadena|Tipo de corrección|Actualizar
-vendorId|String|Nombre del proveedor relacionado|Microsoft
+vendorId|Cadena|Nombre del proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
 
@@ -154,5 +154,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [Métodos y propiedades de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección de acuerdo con su id](get-remediation-one-activity.md)
 - [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Administración de vulnerabilidades de Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilidades en la organización](tvm-weaknesses.md)
