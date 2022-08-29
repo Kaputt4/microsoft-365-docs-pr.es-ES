@@ -4,7 +4,7 @@
   items:
     - name: ¿Qué es la base de pruebas?
       href: overview.md
-- name: Tutoriales rápidos
+- name: Guías de inicio rápido
   items:
     - name: Creación de una cuenta base de prueba
       href: createaccount.md
@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: Comprender el costo de uso
       href: usagecost.md
+    - name: Ejecución de la prueba a petición
+      href: ondemandrun.md
     - name: Reglas de aplicación o prueba
       href: rules.md
 - name: Guías de procedimientos
