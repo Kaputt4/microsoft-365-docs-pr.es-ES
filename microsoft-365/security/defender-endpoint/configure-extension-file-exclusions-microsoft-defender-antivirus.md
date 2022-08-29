@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 26338be73c034c02ed285b7098d49547c4f8b54a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020431"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388779"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -107,7 +107,7 @@ Consulte [Creación e implementación de directivas antimalware: configuración 
 
 2. En directiva de grupo **Editor de administración**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> **de Windows Antivirus de Windows Defender** \> **Exclusiones**.
+3. Expanda el árbol a **componentes** \> de Windows **Exclusiones** **del Antivirus** \> de Microsoft Defender.
 
 4. Abra la opción **Exclusiones de ruta de acceso** para su edición y agregue las exclusiones.
 

@@ -2,8 +2,8 @@
 title: Permitir o bloquear archivos mediante la lista de bloqueados y permitidos del espacio empresarial
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear archivos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a85af4beda791fb9cc2382a48a701406941d0325
-ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
+ms.openlocfilehash: 415dc4605c0e519052c3f03e6843cf7a41bd3a56
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185805"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67393087"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Permitir o bloquear archivos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,34 +32,90 @@ ms.locfileid: "66185805"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Puede usar el portal de Microsoft 365 Defender o PowerShell para permitir o bloquear archivos en la lista de permitidos o bloqueados de inquilinos.
+En este artículo se describe cómo administrar las entradas de bloqueo y permitir archivos que están disponibles en la lista de permitidos o bloqueados de inquilinos. Para obtener más información sobre la lista de permitidos o bloqueados de inquilinos, vea [Administrar los bloques y permitidos en la lista de permitidos o bloques de inquilinos](manage-tenant-allow-block-list.md).
 
-## <a name="create-block-file-entries"></a>Creación de entradas de archivo de bloque 
+Puede administrar entradas de permitir y bloquear para archivos en el portal de Microsoft 365 Defender o en Exchange Online PowerShell.
 
-### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>. Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+
+- Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
+
+  ```DOS
+  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+  ```
+
+  Un valor de ejemplo es `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. No se admiten los valores de hash perceptual (pHash).
+
+- Para los archivos, el número máximo de entradas permitidas es 500 y el número máximo de entradas de bloque es 500 (1000 entradas de archivo en total).
+
+- Puede escribir un máximo de 64 caracteres en una entrada de archivo.
+
+- Una entrada debe estar activa en un plazo de 30 minutos, pero la entrada puede tardar hasta 24 horas en estar activa.
+
+- Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
+  - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
+    - **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
+  - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de uno de los siguientes grupos de roles:
+    - **Grupo de roles lector global**
+    - **Grupo de roles lector de seguridad**
+    - **Grupo de roles de configuración de solo vista**
+
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+
+  **Notas**:
+
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios *y* los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+
+## <a name="create-block-entries-for-files"></a>Creación de entradas de bloque para archivos
+
+Tiene las siguientes opciones para crear entradas de bloque para los archivos:
+
+- [Página Envíos del portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal)
+- Lista de inquilinos permitidos o bloqueados en [el portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list) o en [PowerShell](#use-powershell-to-create-block-entries-for-files-in-the-tenant-allowblock-list)
+
+### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para archivos en el portal envíos.
+
+Cuando use el portal Envíos en <https://security.microsoft.com/reportsubmission> para informar de los archivos como **Debería haberse bloqueado (Falso negativo),** puede seleccionar **Bloquear este archivo** para agregar una entrada de bloque para el archivo en la Lista de inquilinos permitidos o bloqueados.
+
+Para obtener instrucciones, consulte [Informe de datos adjuntos de correo electrónico cuestionables a Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
+
+### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para los archivos de la lista de permitidos o bloqueados de inquilinos.
+
+Las entradas de bloque se crean para los archivos directamente en la lista de permitidos o bloqueados de inquilinos.
+
+> [!NOTE]
+> Email mensajes que contienen estos archivos bloqueados se bloquean como *malware*.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Archivos** y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Archivos** .
 
-3. En el control flotante **Bloquear archivos** que aparece, configure los siguientes valores:
+3. En la pestaña **Archivos** , haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+
+4. En el control flotante **Bloquear archivos** que aparece, configure los siguientes valores:
+
    - **Agregar hash de archivo**: escriba un valor hash SHA256 por línea, hasta un máximo de 20.
-   - **Nunca expire**: realice uno de los pasos siguientes:
-     - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
 
-     o
+   - **Quitar entrada de bloque después**: El valor predeterminado es **30 días**, pero puede seleccionar entre los siguientes valores:
+     - **1 día**
+     - **7 días**
+     - **30 días**
+     - **Nunca expirar**
+     - **Fecha específica**: el valor máximo es de 90 días a partir de hoy.
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Activar.](../../media/scc-toggle-on.png).
    - **Nota opcional**: escriba texto descriptivo para las entradas.
 
-4. Cuando haya terminado, haga clic en **Agregar**.
+5. Cuando haya terminado, haga clic en **Agregar**.
 
-> [!NOTE]
-> Los correos electrónicos que contienen estos archivos se bloquearán como _malware_.
+#### <a name="use-powershell-to-create-block-entries-for-files-in-the-tenant-allowblock-list"></a>Uso de PowerShell para crear entradas de bloque para archivos en la lista de inquilinos permitidos o bloqueados
 
-### <a name="use-powershell"></a>Usar PowerShell
-
-Para agregar entradas de archivo de bloque en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <FileHash> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
@@ -73,40 +129,88 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-## <a name="create-allow-file-entries"></a>Creación de entradas de archivo allow
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas permitidas para los archivos en el portal envíos.
 
-### <a name="use-microsoft-365-defender"></a>Uso de Microsoft 365 Defender
+No puede crear entradas permitidas para archivos directamente en la lista de permitidos o bloqueados de inquilinos. En su lugar, use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar el mensaje como falso positivo. Para obtener más información sobre los envíos de administradores, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, fish, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft](admin-submission.md).
 
-Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
+Al notificar el archivo como falso positivo en la página Envíos, se agrega una entrada allow para el archivo en la lista de **permitidos o bloqueados** de inquilinos.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Acciones & envíos envíos**\>. O bien, para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+> [!IMPORTANT]
+> Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas permitidas innecesarias para los archivos. Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué un archivo todavía se considera incorrecto.
 
-2. En la página **Envíos** , seleccione la pestaña **Datos adjuntos de correo electrónico** y, a continuación, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-3. Use el control flotante **Enviar a Microsoft para revisar** para enviar un mensaje agregando el archivo o los archivos.
+2. En la página **Envíos**, seleccione la pestaña **Email datos adjuntos**.
 
-4. En la sección **Seleccionar un motivo para enviar a Microsoft**, seleccione **No debería haberse bloqueado (falso positivo).**
+3. En la pestaña **Email datos adjuntos**, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
 
-5. Active la opción **Permitir archivos como esta** .
+4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
 
-6. En la lista desplegable **Quitar después**, especifique cuánto tiempo desea que funcione la opción Permitir.
+   - **Seleccione el tipo de envío**: compruebe que el valor **Email datos adjuntos** está seleccionado.
 
-7. Agregue por qué va a agregar allow mediante la **nota opcional**. 
+   - **Archivo**: haga clic en **Examinar archivos** para buscar y seleccionar el archivo que se va a enviar.
 
-8. Cuando haya terminado, haga clic en el botón **Enviar** .
+   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
 
-  :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="Enviar correo electrónico para su análisis." lightbox="../../media/submit-email-for-analysis.png":::
+     - **Permitir este archivo**: active esta opción ![Activar.](../../media/scc-toggle-on.png)
+
+         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
+           - **1 día**
+           - **7 días**
+           - **30 días**
+           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
+
+         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo este archivo.
+
+   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+
+   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Envíe un archivo adjunto de correo electrónico falso positivo (correcto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-file-allow.png":::
+
+5. Transcurridos unos instantes, la entrada allow aparecerá en la pestaña **Archivos** de la página **Lista de inquilinos permitidos o bloqueados** .
 
 > [!NOTE]
->
-> Cuando se vuelve a encontrar el archivo, no se envía para las comprobaciones de detonación o reputación, y se omiten todos los demás filtros basados en archivos. Durante el flujo de correo, si el resto de los filtros encuentran el correo electrónico que contiene el archivo que se va a limpiar, se entregará el correo electrónico.
+> Cuando se vuelve a encontrar el archivo, no se envía para la detonación de [datos adjuntos seguros](safe-attachments.md) o las comprobaciones de reputación de archivos, y se omiten todos los demás filtros basados en archivos. Durante el flujo de correo, si los mensajes que contienen el archivo pasan otras comprobaciones que no son de archivo en la pila de filtrado, se entregarán los mensajes.
 
-## <a name="view-file-entries"></a>Visualización de entradas de archivo 
+## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para ver las entradas de permitir o bloquear para los archivos de la lista de permitidos o bloqueados de inquilinos.
 
-Para ver las entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **Archivos** . Las columnas siguientes están disponibles:
+
+   - **Valor**: el hash de archivo.
+   - **Acción**: el valor **Permitir** o **Bloquear**.
+   - **Modificado por**
+   - **Actualizado por última vez**
+   - **Quitar en**: fecha de expiración.
+   - **Notas**
+
+   Puede hacer clic en un encabezado de columna para ordenar en orden ascendente o descendente.
+
+   Haga clic en ![Icono de grupo.](../../media/m365-cc-sc-group-icon.png) **Agrupar** para agrupar los resultados por **Ninguno** o **Acción**.
+
+   Haga clic en el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Busque**, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![el icono Borrar búsqueda.](../../media/m365-cc-sc-close-icon.png) **Borrar búsqueda**.
+
+   Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtre** para filtrar los resultados. Los siguientes valores están disponibles en el control flotante **Filtro** que aparece:
+
+   - **Acción**: **Permitir** y **bloquear**.
+   - **Nunca expirar**: ![activar.](../../media/scc-toggle-on.png) o ![desactivar.](../../media/scc-toggle-off.png)
+   - **Última actualización**: seleccione **Las** fechas De y **A** .
+   - **Quitar en**: seleccione **Las** fechas De y **A** .
+
+   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic en ![el icono](../../media/m365-cc-sc-clear-filters-icon.png) Borrar filtros **Borrar filtros** en el control flotante **Filtro** .
+
+### <a name="use-powershell-to-view-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Use PowerShell para ver las entradas de permitir o bloquear para los archivos de la lista de permitidos o bloqueados de inquilinos.
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <FileHash> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+Get-TenantAllowBlockListItems -ListType FileHash [-Allow] [-Block] [-Entry <FileHashValue>] [<-ExpirationDate Date | -NoExpiration>]
+```
+
+En este ejemplo se devuelven todos los archivos permitidos y bloqueados.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash
 ```
 
 En este ejemplo se devuelve información del valor hash de archivo especificado.
@@ -115,31 +219,88 @@ En este ejemplo se devuelve información del valor hash de archivo especificado.
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-Para obtener información detallada sobre la sintaxis y los [parámetros, vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-## <a name="modify-file-entries"></a>Modificar entradas de archivo
-
-Para modificar las entradas de archivo allow o block en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
+En este ejemplo se filtran los resultados mediante archivos bloqueados.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+Get-TenantAllowBlockListItems -ListType FileHash -Block
+```
+
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para modificar las entradas allow o block de los archivos de la lista de permitidos o bloqueados de inquilinos.
+
+Al modificar una entrada de archivo allow o block en la lista Permitir o bloquear inquilinos, solo puede modificar la fecha de expiración y las notas.
+
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **Archivos.**
+
+3. En la pestaña **Archivos** , active la casilla de la entrada que desea modificar y, a continuación, haga clic en el ![icono Editar.](../../media/m365-cc-sc-edit-icon.png) **Botón Editar** que aparece.
+
+4. La siguiente configuración está disponible en el control flotante **Editar archivo** que aparece:
+
+   - **Quite allow entry after (Permitir entrada) o** **Remove block entry after (Quitar entrada de bloque) después de**:
+     - Puede ampliar las entradas permitidas durante un máximo de 30 días después de la fecha de creación.
+     - Puede ampliar las entradas de bloque durante un máximo de 90 días después de la fecha de creación o establecerlas en **Nunca expirar**.
+
+   - **Nota opcional**
+
+   Cuando haya terminado, haga clic en **Guardar**.
+
+> [!NOTE]
+> Para permitir solo entradas, si selecciona la entrada haciendo clic en cualquier lugar de la fila que no sea la casilla, puede seleccionar ![Ver icono de envío.](../../media/m365-cc-sc-view-submission-icon.png) **Vea el envío** en el control flotante de detalles que parece ir a la página **Envíos** en <https://security.microsoft.com/reportsubmission>.
+
+### <a name="use-powershell-to-modify-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Uso de PowerShell para modificar las entradas de permitir o bloquear para los archivos de la lista de permitidos o bloqueados de inquilinos
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+
+```powershell
+Set-TenantAllowBlockListItems -ListType <FileHash> <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+```
+
+En este ejemplo se cambia la fecha de expiración de la entrada de bloque de archivos especificada.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01114a0f39e2cbcd2f868d08cedb3e210ab3ece102214" -ExpirationDate "9/1/2022"
 ```
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-## <a name="remove-file-entries"></a>Quitar entradas de archivo 
+## <a name="use-the-microsoft-365-defender-portal-to-remove-allow-or-block-entries-for-files-from-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para quitar entradas de permitir o bloquear archivos de la lista de permitidos o bloqueados de inquilinos
 
-Para quitar las entradas de archivo allow o block de la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+
+2. Seleccione la pestaña **Archivos** .
+
+3. En la pestaña **Archivos** , realice uno de los pasos siguientes:
+
+   - Active la casilla de la entrada que desea quitar y, a continuación, haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Icono de eliminación** que aparece.
+   - Seleccione la entrada que desea quitar haciendo clic en cualquier lugar de la fila que no sea la casilla. En el control flotante de detalles que aparece, haga clic en ![el icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
+
+4. En el cuadro de diálogo de advertencia que aparece, haga clic en **Eliminar**.
+
+> [!NOTE]
+> Para seleccionar varias entradas, active cada casilla o seleccione todas las entradas seleccionando la casilla situada junto al encabezado **de columna Valor** .
+
+### <a name="use-powershell-to-remove-allow-or-block-entries-for-files-from-the-tenant-allowblock-list"></a>Uso de PowerShell para quitar entradas de permitir o bloquear archivos de la lista de permitidos o bloqueados de inquilinos
+
+En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <FileHash> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType FileHash <-Ids <Identity value> | -Entries <Value value>>
+```
+
+En este ejemplo se quita el bloque de archivos especificado de la lista de permitidos o bloqueados de inquilinos.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01114a0f39e2cbcd2f868d08cedb3e210ab3ece102214"
 ```
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Envíos de administradores](admin-submission.md)
+- [Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.](admin-submission.md)
 - [Notificar falsos positivos y falsos negativos](report-false-positives-and-false-negatives.md)
 - [Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md)
 - [Permitir o bloquear correos electrónicos en la lista de permitidos o bloqueados de inquilinos](allow-block-email-spoof.md)

@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 897a443be70afb8248e6a49f24f32b678060b976
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102336"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388757"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configuración de exclusiones para archivos abiertos por procesos
 
@@ -66,7 +66,7 @@ Puede [configurar cómo se combinan las listas de exclusiones definidas local y 
 
 Consulte [Configurar la configuración de restricciones de dispositivo en Microsoft Intune](/intune/device-restrictions-configure) y la [Configuración de restricciones de dispositivo de Antivirus de Microsoft Defender para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) para más información.
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Use Microsoft Endpoint Manager para excluir los archivos abiertos por procesos especificados de los exámenes.
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Uso de Microsoft Endpoint Manager para excluir de los exámenes los archivos abiertos por procesos especificados
 
 Consulte [Creación e implementación de directivas antimalware: configuración de exclusión](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) para obtener más información sobre cómo configurar Microsoft Endpoint Manager (rama actual).
 
@@ -106,7 +106,7 @@ Se permite lo siguiente como \<cmdlet\>:
 > [!IMPORTANT]
 > Si ha creado una lista, con `Set-MpPreference` o `Add-MpPreference`, el uso del `Set-MpPreference` cmdlet volverá a sobrescribir la lista existente.
 
-Por ejemplo, el siguiente fragmento de código haría que los exámenes del antivirus de Microsoft Defender excluyan cualquier archivo abierto por el proceso especificado:
+Por ejemplo, el siguiente fragmento de código haría que los exámenes del Antivirus de Microsoft Defender excluyesen cualquier archivo abierto por el proceso especificado:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"

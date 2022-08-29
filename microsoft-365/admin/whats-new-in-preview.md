@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: 'El Centro de administración de Microsoft 365: obtenga información sobre las características que se agregaron este mes.'
-ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602588"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388889"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "66602588"
 
 ::: moniker-end
 
-Estamos agregando continuamente nuevas características a [la Centro de administración de Microsoft 365](Información general de la Centro de administración de Microsoft 365](admin-overview/admin-center-overview.md), solucionamos problemas que aprendemos y realizamos cambios en función de sus comentarios. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, [intente agregarse a la versión de destino](manage/release-options-in-office-365.md).
+Estamos agregando continuamente nuevas características a [la Centro de administración de Microsoft 365](admin-overview/admin-center-overview.md), solucionando problemas que aprendemos y realizando cambios en función de sus comentarios. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, [intente agregarse a la versión de destino](manage/release-options-in-office-365.md).
 
 Y si desea saber las novedades de otros servicios en la nube de Microsoft:
 

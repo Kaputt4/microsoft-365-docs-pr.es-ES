@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300966"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336318"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -76,7 +76,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 > [!NOTE]
 > Las directivas de retención son compatibles con [canales compartidos](/MicrosoftTeams/shared-channels). Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
+1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración** >  del ciclo de vida de datos **Directivas de retención** de **Microsoft 365** > .
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 
@@ -132,7 +132,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
+1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración** >  del ciclo de vida de datos **Directivas de retención** de **Microsoft 365** > .
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
@@ -176,7 +176,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 - Grupos de Microsoft 365
 - Skype Empresarial
 
-1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
+1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración** >  del ciclo de vida de datos **Directivas de retención** de **Microsoft 365** > .
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 

@@ -1,5 +1,5 @@
 ---
-title: Ideas e informes entrenamiento de simulación de ataques
+title: Conclusiones e informes Entrenamiento de simulación de ataque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,37 +11,37 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los administradores pueden aprender cómo el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender afecta a los usuarios y puede obtener información sobre los resultados de simulación y entrenamiento.
+description: Los administradores pueden aprender cómo Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender afecta a los usuarios y pueden obtener información sobre los resultados de simulación y entrenamiento.
 ms.technology: mdo
-ms.openlocfilehash: fb08de05e0a1f31187fc4dd045d0f1ce45db2aea
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f3ec93de3790791bbec7b02faac4d2885edc5759
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839376"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67409188"
 ---
-# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Ideas e informes para el entrenamiento de simulación de ataques en Defender para Office 365
+# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Conclusiones e informes para Entrenamiento de simulación de ataque en Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En El entrenamiento de simulación de ataques en Microsoft Defender para Office Plan 2 o Microsoft 365 E5, Microsoft proporciona información e informes de los resultados de las simulaciones y los entrenamientos correspondientes. Esta información le mantiene informado sobre el progreso de preparación de amenazas de los usuarios, así como los pasos siguientes recomendados para preparar mejor a los usuarios para futuros ataques.
+En Entrenamiento de simulación de ataque en El plan 2 o Microsoft 365 E5 de Microsoft Defender para Office, Microsoft proporciona información e informes de los resultados de las simulaciones y los entrenamientos correspondientes. Esta información le mantiene informado sobre el progreso de preparación de amenazas de los usuarios, así como los pasos siguientes recomendados para preparar mejor a los usuarios para futuros ataques.
 
-Ideas e informes están disponibles en las siguientes ubicaciones del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender:
+Las conclusiones y los informes están disponibles en las siguientes ubicaciones de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender:
 
 - Pestaña **Información general** .
 - Detalles de simulación en la pestaña **Simulaciones** .
 
 En el resto de este artículo se describe la información disponible.
 
-Para obtener información de introducción sobre el entrenamiento de simulación de ataques, consulte [Comenzar uso del entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
+Para obtener información de introducción sobre Entrenamiento de simulación de ataque, consulte [Introducción al uso de Entrenamiento de simulación de ataque](attack-simulation-training-get-started.md).
 
-## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Ideas e informes en la pestaña Información general del entrenamiento de simulación de ataques
+## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Conclusiones e informes en la pestaña Información general de Entrenamiento de simulación de ataque
 
-Para ir a la pestaña **Información general**, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & collaboration** Attack simulation training (Correo electrónico & **entrenamiento de simulación de ataques** de colaboración\>) y compruebe que la pestaña **Información general** está seleccionada (es el valor predeterminado). Para ir directamente a la pestaña **Información general** de la página **Entrenamiento de simulación de ataque** , use <https://security.microsoft.com/attacksimulator?viewid=overview>.
+Para ir a la pestaña **Información general**, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & **Entrenamiento de simulación de ataque** de **colaboración** \> y compruebe que la pestaña **Información general** está seleccionada (es la predeterminada). Para ir directamente a la pestaña **Información general** de la página **Entrenamiento de simulación de ataque**, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
-En el resto de esta sección se describe la información disponible en la pestaña **Información general** del entrenamiento de simulación de ataques.
+En el resto de esta sección se describe la información disponible en la pestaña **Información general** de Entrenamiento de simulación de ataque.
 
 ### <a name="recent-simulations-card"></a>Tarjeta de simulaciones recientes
 
@@ -53,7 +53,7 @@ Al seleccionar **Ver todas las simulaciones** , se le lleva a la pestaña **Simu
 
 Al seleccionar **Iniciar una simulación** , se inicia el asistente para la creación de la simulación. Para obtener más información, vea [Simular un ataque de suplantación de identidad (phishing) en Defender para Office 365](attack-simulation-training.md).
 
-:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="La tarjeta Simulaciones recientes de la pestaña Información general del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="La tarjeta Simulaciones recientes de la pestaña Información general de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
 ### <a name="behavior-impact-on-compromise-rate-card"></a>Impacto del comportamiento en la tarjeta de velocidad de riesgo
 
@@ -61,7 +61,7 @@ La tarjeta **Impacto del comportamiento en la tasa de riesgo** de la pestaña **
 
 Los propios datos del gráfico muestran la siguiente información:
 
-- Tasa <sup>\*</sup>**de compromiso prevista**: la tasa de riesgo promedio para simulaciones de entrenamiento de simulación de ataque que usan el mismo tipo de carga en todas las demás organizaciones Microsoft 365.
+- **Tasa**<sup>\*</sup> de riesgo prevista: la tasa de riesgo promedio para Entrenamiento de simulación de ataque simulaciones que usan el mismo tipo de carga en todas las demás organizaciones de Microsoft 365.
 - Tasa <sup>\*</sup>**de compromiso real**: el porcentaje real de usuarios que se redujo para la simulación.
 
 Si mantiene el puntero sobre un punto de datos del gráfico, se muestran los valores de porcentaje reales.
@@ -71,7 +71,7 @@ La siguiente información de resumen también se muestra en la tarjeta:
 - **usuarios menos susceptibles a la suplantación de identidad (phishing**): la diferencia entre el número real de usuarios en peligro por el ataque simulado y la tasa de riesgo prevista. Es menos probable que este número de usuarios se vea comprometido por ataques similares en el futuro.
 - **x% mejor que la tasa prevista**: indica cómo lo hicieron los usuarios en general en contraste con la tasa de riesgo prevista.
 
-:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="El impacto en el comportamiento en la tarjeta de velocidad de riesgo en la pestaña Información general del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="El impacto en el comportamiento en la tarjeta de velocidad de riesgo en la pestaña Información general de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
 Para ver un informe más detallado, haga clic en **Ver simulaciones y informe de eficacia de entrenamiento**. Este informe se explica [más adelante en este artículo](#training-efficacy-tab-for-the-attack-simulation-report).
 
@@ -83,7 +83,7 @@ Al seleccionar **Iniciar simulación para usuarios no simulados,** se inicia el 
 
 Al seleccionar **Ver informe de cobertura de simulación** , se le lleva a la [pestaña Cobertura de usuario del informe Simulación de ataque](#user-coverage-tab-for-the-attack-simulation-report).
 
-:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="La tarjeta Cobertura de simulación de la pestaña Información general del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="La tarjeta Cobertura de simulación de la pestaña Información general de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
 
 ### <a name="training-completion-card"></a>Tarjeta de finalización del entrenamiento
 
@@ -99,7 +99,7 @@ Al seleccionar **Ver informe de finalización de entrenamiento** , se le llevar�
 
 ### <a name="repeat-offenders-card"></a>Tarjeta de reincidentes
 
-La tarjeta **Reincidentes** de la pestaña **Información general** muestra la información sobre los reincidentes. Un _delincuente reincidente_ es un usuario que se vio comprometido por simulaciones consecutivas. El número predeterminado de simulaciones consecutivas es dos, pero puede cambiar el valor en la pestaña **Configuración** del entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=setting>.
+La tarjeta **Reincidentes** de la pestaña **Información general** muestra la información sobre los reincidentes. Un _delincuente reincidente_ es un usuario que se vio comprometido por simulaciones consecutivas. El número predeterminado de simulaciones consecutivas es dos, pero puede cambiar el valor en la pestaña **Configuración** de Entrenamiento de simulación de ataque en <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
 El gráfico organiza los datos de reincidentes por [tipo de simulación](attack-simulation-training.md#select-a-social-engineering-technique):
 
@@ -112,13 +112,13 @@ El gráfico organiza los datos de reincidentes por [tipo de simulación](attack-
 
 Al seleccionar **Ver informe de reincidentes** , se le lleva a la [pestaña Reincidentes del informe Simulación de ataque](#repeat-offenders-tab-for-the-attack-simulation-report).
 
-### <a name="recommendations-card"></a>tarjeta Recomendaciones
+### <a name="recommendations-card"></a>Tarjeta de recomendaciones
 
-La **tarjeta Recomendaciones** de la pestaña **Información general** sugiere que se ejecuten diferentes tipos de simulaciones.
+La tarjeta **Recomendaciones** de la pestaña **Información general** sugiere diferentes tipos de simulaciones que se van a ejecutar.
 
 Al seleccionar **Iniciar ahora** se inicia el asistente para la creación de simulación con el tipo de simulación especificado seleccionado automáticamente en la página **Seleccionar técnica** . Para obtener más información, vea [Simular un ataque de suplantación de identidad (phishing) en Defender para Office 365](attack-simulation-training.md).
 
-:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="La tarjeta Recomendaciones de la pestaña Información general del entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="La tarjeta Recomendaciones de la pestaña Información general de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### <a name="attack-simulation-report"></a>Informe de simulación de ataques
 
@@ -170,7 +170,7 @@ Para ordenar los resultados, haga clic en un encabezado de columna disponible.
 
 Haga clic en **Personalizar columnas** para quitar las columnas que se muestran. Cuando haya terminado, haga clic en **Aplicar**.
 
-Use ![el icono](../../media/m365-cc-sc-search-icon.png) **Buscar Cuadro de búsqueda** para filtrar los resultados por **nombre de usuario** o **dirección de correo electrónico**. No se admiten los caracteres comodín.
+Use ![el icono](../../media/m365-cc-sc-search-icon.png) **buscar cuadro de búsqueda** para filtrar los resultados por **nombre de usuario** o **Email dirección**. No se admiten los caracteres comodín.
 
 Si hace clic en el ![icono Exportar.](../../media/m365-cc-sc-download-icon.png) **El botón Exportar informe** , el progreso de generación de informes se muestra como un porcentaje de completado. En el cuadro de diálogo que se abre, puede elegir abrir el archivo .csv, guardar el archivo .csv y recordar la selección.
 
@@ -201,9 +201,9 @@ Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtr
 - **En curso**
 - **Todo**
 
-Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
+Cuando haya terminado de configurar los filtros, haga clic en **el** icono](../../media/m365-cc-sc-clear-filters-icon.png) Aplicar, **Cancelar** o ![Borrar filtros **Borrar filtros**.
 
-Use ![el icono](../../media/m365-cc-sc-search-icon.png) **Buscar Cuadro de búsqueda** para filtrar los resultados por **nombre de usuario** o **dirección de correo electrónico**. No se admiten los caracteres comodín.
+Use ![el icono](../../media/m365-cc-sc-search-icon.png) **buscar cuadro de búsqueda** para filtrar los resultados por **nombre de usuario** o **Email dirección**. No se admiten los caracteres comodín.
 
 Si hace clic en el ![icono Exportar.](../../media/m365-cc-sc-download-icon.png) **El botón Exportar informe** , el progreso de generación de informes se muestra como un porcentaje de completado. En el cuadro de diálogo que se abre, puede elegir abrir el archivo .csv, guardar el archivo .csv y recordar la selección.
 
@@ -211,7 +211,7 @@ Si hace clic en el ![icono Exportar.](../../media/m365-cc-sc-download-icon.png) 
 
 :::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="Pestaña Repetición de delincuentes en el informe Simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
-Un _delincuente reincidente_ es un usuario que se vio comprometido por simulaciones consecutivas. El número predeterminado de simulaciones consecutivas es dos, pero puede cambiar el valor en la pestaña **Configuración** del entrenamiento de simulación de ataques en <https://security.microsoft.com/attacksimulator?viewid=setting>.
+Un _delincuente reincidente_ es un usuario que se vio comprometido por simulaciones consecutivas. El número predeterminado de simulaciones consecutivas es dos, pero puede cambiar el valor en la pestaña **Configuración** de Entrenamiento de simulación de ataque en <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
 En la pestaña **Reincidentes** , el gráfico organiza los datos de reincidentes por [tipo de simulación](attack-simulation-training.md#select-a-social-engineering-technique):
 
@@ -241,17 +241,16 @@ Haga clic en ![Icono de filtro.](../../media/m365-cc-sc-filter-icon.png) **Filtr
 - **Datos adjuntos de malware**
 - **Vínculo en datos adjuntos**
 - **Vínculo a malware**
-- **Dirección URL de unidad por**
 
-Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
+Cuando haya terminado de configurar los filtros, haga clic en **el** icono](../../media/m365-cc-sc-clear-filters-icon.png) Aplicar, **Cancelar** o ![Borrar filtros **Borrar filtros**.
 
 Use ![el icono](../../media/m365-cc-sc-search-icon.png) **Buscar Cuadro de búsqueda** para filtrar los resultados por cualquiera de los valores de columna. No se admiten los caracteres comodín.
 
 Si hace clic en el ![icono Exportar.](../../media/m365-cc-sc-download-icon.png) **El botón Exportar informe** , el progreso de generación de informes se muestra como un porcentaje de completado. En el cuadro de diálogo que se abre, puede elegir abrir el archivo .csv, guardar el archivo .csv y recordar la selección.
 
-## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Ideas e informes en los detalles de simulación del entrenamiento de simulación de ataques
+## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Conclusiones e informes en los detalles de simulación de Entrenamiento de simulación de ataque
 
-Para ir a la pestaña **Simulaciones**, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & collaboration **Attack simulation training** (**Enviar por correo electrónico &** entrenamiento de simulación de ataques de colaboración\>) y, a continuación, seleccione la pestaña **Simulaciones**. Para ir directamente a la pestaña **Simulaciones** de la página **Entrenamiento de simulación de ataque**, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+Para ir a la pestaña **Simulaciones**, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & **Entrenamiento de simulación de ataque** de **colaboración** \> y, a continuación, seleccione la pestaña **Simulaciones**. Para ir directamente a la pestaña **Simulaciones** de la página **Entrenamiento de simulación de ataque**, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 Al seleccionar una simulación de la lista, se abre una página de detalles. Esta página contiene los valores de configuración de la simulación que esperaría ver (estado, fecha de inicio, carga usada, etc.).
 
@@ -298,7 +297,7 @@ En la sección **Finalización del entrenamiento** de la página de detalles de 
 
 En la sección **Acciones recomendadas** de la página de detalles de la simulación se muestran las acciones de recomendación de [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md) y el efecto que tendrá la acción en la puntuación de seguridad. Estas recomendaciones se basan en la carga útil que se usó en la simulación y ayudarán a proteger a los usuarios y al entorno. Al seleccionar una **acción de mejora** de la lista, se le llevará a la ubicación para implementar la acción sugerida.
 
-:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="La sección Acciones de recomendación sobre el entrenamiento de simulación de ataques" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
+:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="La sección Acciones de recomendación de Entrenamiento de simulación de ataque" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
 
 ## <a name="related-links"></a>Vínculos relacionados
 

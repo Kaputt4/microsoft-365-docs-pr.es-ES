@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
-ms.translationtype: HT
+ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787636"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67393118"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -161,13 +161,13 @@ En la tabla siguiente se define la ubicación de los datos para varios servicios
 
 ### <a name="data-center-geographies"></a>Ubicaciones geográficas de los centros de datos
 
-Las siguientes ubicaciones geográficas globales pueden almacenar datos en reposo. Las ubicaciones en las que se almacenan los datos de los clientes pueden cambiar.
+Las siguientes zonas geográficas regionales pueden almacenar datos en reposo. Las ubicaciones en las que se almacenan los datos de los clientes pueden cambiar.
 
-| Ubicaciones geográficas globales | Ubicaciones en las que se almacenan los datos de los clientes |
+| Zonas geográficas regionales | Ubicaciones en las que se almacenan los datos de los clientes |
 | --- | --- |
-| Geografía global 1: EMEA (Europa, Oriente Medio y África) | Austria, Finlandia, Francia, Irlanda, Países Bajos, Suecia |
-| Geografía global 2: Asia Pacífico | RAE de Hong Kong, Japón, Malasia, Singapur, Corea del Sur |
-| Geografía global 3: América | Brasil, Chile, Estados Unidos |
+| Geografía regional 1 – EMEA (Europa, Oriente Medio y África) | Austria, Finlandia, Francia, Irlanda, Países Bajos, Suecia |
+| Geografía regional 2: Asia Pacífico | RAE de Hong Kong, Japón, Malasia, Singapur, Corea del Sur |
+| Geografía regional 3 - América | Brasil, Chile, Estados Unidos |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>Ubicaciones de ciudades de centros de datos específicos por país o región
 
@@ -183,6 +183,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | Alemania | Frankfurt, Berlín |
 | India | Chennai, Mumbai, Pune |
 | Japón | Osaka, Tokio |
+| Qatar | Doha |
 | Corea del Sur | Busan, Seúl |
 | Noruega | Oslo, Stavanger |
 | Sudáfrica | Ciudad del Cabo, Johannesburgo |
@@ -632,7 +633,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -688,7 +689,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3180,7 +3181,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3264,7 +3265,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3404,7 +3405,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3432,7 +3433,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3544,7 +3545,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3572,7 +3573,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3600,7 +3601,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -3684,7 +3685,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -4244,7 +4245,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -4833,7 +4834,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -4861,7 +4862,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -5184,27 +5185,31 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Geografía global 1: EMEA |
-| OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
-| Microsoft Teams | Geografía global 1: EMEA |
-| Office Online y Office Mobile | Geografía global 1: EMEA |
-| EOP | Geografía global 1: EMEA |
-| Intune | Geografía global 1: EMEA |
-| Planner | Geografía global 1: EMEA |
-| Sway | Estados Unidos |
-| Yammer | Geografía global 1: EMEA |
-| Servicios de OneNote | Geografía global 1: EMEA |
-| Stream | Geografía global 1: EMEA |
-| Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
-| Viva Connections | Geografía global 1: EMEA |
-| Temas Viva | Geografía global 1: EMEA |
-| Viva Learning | Geografía global 1: EMEA |
-| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
-| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
-| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
-| Ideas Microsoft Viva: Avanzado | Estados Unidos |
+| Exchange Online | Qatar* |
+| OneDrive para la Empresa | Qatar* |
+| SharePoint Online | Qatar* |
+| Exchange Online Protection | Qatar* |
+| Microsoft Defender para Office P1 | Qatar* |
+| Microsoft Teams | Qatar* |
+| Office para la Web | Qatar* |
+| Office para dispositivos móviles | Qatar* |
+| Servicios de OneNote | Qatar* |
+| Stream | Qatar* |
+| Whiteboard | Qatar* |
+| Viva Connections | Qatar* |
+| Ideas Viva: Información personal | Qatar* |
+| Temas Viva | Qatar* |
+| Azure Active Directory | Unión Europea |
+| Dataverse para Teams | Unión Europea |
+| Intune | Unión Europea |
+| Planner | Unión Europea |
+| Power Automate Desktop | Unión Europea |
+| Power Virtual Agent para Teams | Unión Europea |
+| Ideas Viva: Mgr/Leader/Advanced | Unión Europea |
+| Aprendizaje Viva | Unión Europea |
+| Yammer | Unión Europea |
+| Formularios | Estados Unidos |
+*Todos los servicios que almacenan los datos del cliente en reposo en Exchange Online, SharePoint Online o OneDrive para la Empresa, o se implementan localmente.
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>República de Macedonia
@@ -5225,7 +5230,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -5645,7 +5650,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -6513,7 +6518,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -6681,7 +6686,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Emiratos Árabes Unidos |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Emiratos Árabes Unidos |
 | Temas Viva | Emiratos Árabes Unidos |
 | Viva Learning | Geografía global 1: EMEA |
@@ -6821,7 +6826,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
@@ -6988,7 +6993,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
+| Formularios | Estados Unidos |
 | Viva Connections | Geografía global 1: EMEA |
 | Temas Viva | Geografía global 1: EMEA |
 | Viva Learning | Geografía global 1: EMEA |
